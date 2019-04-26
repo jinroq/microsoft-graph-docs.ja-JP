@@ -6,11 +6,11 @@ title: ファイルまたはフォルダーを移動する
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 385c2d9013544b60be5d11fd13ce29df1a6a8ee0
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481833"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548041"
 ---
 # <a name="move-a-driveitem-to-a-new-folder"></a>DriveItem を新しいフォルダーに移動する
 
@@ -44,7 +44,7 @@ PATCH /users/{user-id}/drive/items/{item-id}
 
 ## <a name="optional-request-headers"></a>オプションの要求ヘッダー
 
-| 名前          | 種類   | 説明                                                                                                                                                         |
+| 名前          | 型   | 説明                                                                                                                                                         |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-match      | String | この要求ヘッダーが含まれていて、指定された eTag (または cTag) がフォルダーの現在の eTag に一致しない場合には、`412 Precondition Failed` 応答が返されます。 |
 

@@ -1,21 +1,21 @@
 ---
 title: ドメインを更新する
-description: ドメイン オブジェクトのプロパティを更新します。
+description: domain オブジェクトのプロパティを更新します。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: da51badb52b5047c6d5eb1d52004104d0395fcf2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27923783"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551492"
 ---
 # <a name="update-domain"></a>ドメインを更新する
 
-ドメイン オブジェクトのプロパティを更新します。
+domain オブジェクトのプロパティを更新します。
 
-> **重要:** 検証済みのドメインのみを更新できます。
+> **重要:** 確認済みのドメインのみを更新できます。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -45,11 +45,11 @@ PATCH /domains/{id}
 
 ## <a name="request-body"></a>要求本文
 
-要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るには、変更する値のみを含めます。
+要求本文で、更新する関連フィールドの値を指定します。 要求本文に含まれていない既存のプロパティは、以前の値を維持するか、他のプロパティ値の変更に基づいて再計算されます。 最適なパフォーマンスを得るために、変更された値のみを含めます。
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `204 No Content` 応答コードを返しますが、応答本文は返しません。
+成功した場合、このメソッド`204 No Content`は応答コードを返しますが、応答本文は返しません。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

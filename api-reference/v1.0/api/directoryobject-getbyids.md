@@ -5,11 +5,11 @@ author: lleonard-msft
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: a209d391c72edd453bbfe9232b7d02121ca98128
-ms.sourcegitcommit: 7412dd2f2d5ed66afa2b0759c861ad23b4c6ecdf
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30212390"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32572011"
 ---
 # <a name="get-directory-objects-from-a-list-of-ids"></a>ID のリストからディレクトリ オブジェクトを取得します。
 

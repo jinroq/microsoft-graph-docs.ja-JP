@@ -1,30 +1,30 @@
 ---
 title: teamsAppDefinition リソースの種類
-description: TeamsApp の 1 つのバージョンの詳細。
+description: 1つのバージョンの teamsapp の詳細。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 94e2c790f8bf4623e56ca76bde164b718ee6fa38
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509981"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554026"
 ---
 # <a name="teamsappdefinition-resource-type"></a>teamsAppDefinition リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-の[teamsApp](teamsapp.md)の 1 つのバージョンの詳細。
+1つのバージョンの[teamsapp](teamsapp.md)の詳細。
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ            | 型     | 説明 |
 |:------------------- |:-------- |:----------- |
-| id                  | 文字列   | 一意の id (チームの appid とは異なる)。 |
-| teamsAppId          | string   | チームのアプリケーション マニフェストの id です。 |
-| displayName         | string   | アプリケーション開発者によって提供されるアプリケーションの名前。 |
-| version             | string   | アプリケーションのバージョン番号です。 |
+| id                  | string   | 一意の id (teams appid ではない)。 |
+| teamsAppId          | string   | Teams アプリマニフェストからの id。 |
+| displayName         | string   | アプリ開発者によって提供されるアプリの名前。 |
+| バージョン             | string   | アプリケーションのバージョン番号。 |
 
 ## <a name="json-representation"></a>JSON 表記
 

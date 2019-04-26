@@ -2,14 +2,14 @@
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Shared
+title: 共有
 localization_priority: Normal
 ms.openlocfilehash: af426d5e51f87b9fd8894c6e956947cc75f1a38d
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481798"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549623"
 ---
 # <a name="shared-resource-type"></a>Shared リソースの種類
 
@@ -36,7 +36,7 @@ ms.locfileid: "30481798"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ       | 種類                          | 説明
+| プロパティ       | 型                          | 説明
 | :------------- |:------------------------------|:----------------------------
 | owner          | [IdentitySet](identityset.md) | 共有項目の所有者の ID。読み取り専用。
 | scope          | String                        | `anonymous`、`organization`、や `users` など、項目がどのように共有されているかのスコープを示します。 読み取り専用。

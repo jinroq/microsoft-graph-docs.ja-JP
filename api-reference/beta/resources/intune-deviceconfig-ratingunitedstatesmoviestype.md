@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 804110ee07c85a1ca68f259e8b4ae9a206f5f29b
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31801436"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32555228"
 ---
 # <a name="ratingunitedstatesmoviestype-enum-type"></a>ratingUnitedStatesMoviesType 列挙型
 
@@ -23,12 +23,12 @@ ms.locfileid: "31801436"
 |メンバー|値|説明|
 |:---|:---|:---|
 |allallowed|.0|既定値。すべてのムービーコンテンツを許可する|
-|allblocked|1-d|任意の映画コンテンツを許可しない|
-|元帳|pbm-2|G、すべての年齢が許可|
-|parentalguidance|1/3|PG では、一部の素材が子供に適さない場合があります。|
-|parentalGuidance13|2/4|PG13 では、いくつかの素材が13の子に対して不適切な場合があります。|
-|しか|5|R、17の下の閲覧者には、親または成人のガーディアンが必要です|
-|保護者|シックス|NC17、大人のみ|
+|allblocked|1 |任意の映画コンテンツを許可しない|
+|元帳|2 |G、すべての年齢が許可|
+|parentalguidance|3 |PG では、一部の素材が子供に適さない場合があります。|
+|parentalGuidance13|4 |PG13 では、いくつかの素材が13の子に対して不適切な場合があります。|
+|しか|5 |R、17の下の閲覧者には、親または成人のガーディアンが必要です|
+|保護者|6 |NC17、大人のみ|
 
 
 

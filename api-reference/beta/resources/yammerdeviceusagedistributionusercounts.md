@@ -5,11 +5,11 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: 1797facecb5047badb35c0a4d876680e817cc643
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576802"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32555081"
 ---
 # <a name="yammerdeviceusagedistributionusercounts-resource-type"></a>yammerDeviceUsageDistributionUserCounts リソースの種類
 
@@ -17,14 +17,14 @@ ms.locfileid: "29576802"
 
 | プロパティ          | 型   |
 | :---------------- | :----- |
-| reportRefreshDate | 日付   |
+| reportrefreshdate | Date   |
 | web               | Int32  |
 | windowsPhone      | Int32  |
-| androidPhone      | Int32  |
+| androidphone      | Int32  |
 | iPhone            | Int32  |
 | iPad              | Int32  |
-| その他の             | Int32  |
-| reportPeriod      | String |
+| も             | Int32  |
+| reportperiod      | String |
 
 ## <a name="json-representation"></a>JSON 表記
 

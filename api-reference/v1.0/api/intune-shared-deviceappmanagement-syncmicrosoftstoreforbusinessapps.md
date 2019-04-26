@@ -1,15 +1,15 @@
 ---
 title: syncMicrosoftStoreForBusinessApps アクション
-description: ビジネス向け Microsoft Store と Intune アカウントを同期します
+description: ビジネス向け Microsoft Store と Intune アカウントを同期する
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: e71bfb1e4ac6d4ce6c31344289eab7fb15b65594
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30254269"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551401"
 ---
 # <a name="syncmicrosoftstoreforbusinessapps-action"></a>syncMicrosoftStoreForBusinessApps アクション
 
@@ -39,7 +39,7 @@ POST /deviceAppManagement/syncMicrosoftStoreForBusinessApps
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -56,7 +56,7 @@ POST https://graph.microsoft.com/v1.0/deviceAppManagement/syncMicrosoftStoreForB
 
 ### <a name="response"></a>応答
 
-簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
+簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 すべてのプロパティは実際の呼び出しから返されます。
 
 ``` http
 HTTP/1.1 204 No Content

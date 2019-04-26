@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c203b47235d94a3742c5cb0cee401d824feafb46
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30257863"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32553989"
 ---
 # <a name="resourceoperation-resource-type"></a>resourceOperation リソース タイプ
 
@@ -29,10 +29,10 @@ Intune リソース (またはエンティティ) で実行できる操作また
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|リソース操作のキー。 読み取り専用で、自動生成されます。|
+|id|String|リソース操作のキー。 読み取り専用で、自動生成されます。|
 |resourceName|String|この操作が実行されるリソースの名前。|
-|actionName|String|この操作が実行するアクションの種類。 actionName は簡潔で、できるだけ少ない単語にする必要があります。|
-|説明|String|リソース操作の説明。 Azure Portal で操作にカーソルを合わせると、その操作の説明がテキストで表示されます。|
+|actionName|文字列型 (String)|この操作が実行するアクションの種類。 actionName は簡潔で、できるだけ少ない単語にする必要があります。|
+|description|String|リソース操作の説明。 Azure Portal で操作にカーソルを合わせると、その操作の説明がテキストで表示されます。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

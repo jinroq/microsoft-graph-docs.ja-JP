@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 2933889c15f8bd849922bc5268a0e2beeec78357
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30261461"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554535"
 ---
 # <a name="webbrowsercookiesettings-enum-type"></a>webbrowsercookiesettings 列挙型
 
@@ -21,10 +21,10 @@ Web ブラウザーの Cookie 設定。
 |メンバー|値|説明|
 |:---|:---|:---|
 |browserdefault|.0|ブラウザーの既定値。意図的ではありません。|
-|blockalways|1-d|常に cookie をブロックします。|
-|allowcurrentwebsite サイト|pbm-2|現在の Web サイトからの cookie を許可します。|
-|allowfromwebsitesvisited た|1/3|アクセスした web サイトの cookie を許可します。|
-|allowalways|2/4|常に cookie を許可します。|
+|blockalways|1 |常に cookie をブロックします。|
+|allowcurrentwebsite サイト|2 |現在の Web サイトからの cookie を許可します。|
+|allowfromwebsitesvisited た|3 |アクセスした web サイトの cookie を許可します。|
+|allowalways|4 |常に cookie を許可します。|
 
 
 

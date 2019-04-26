@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: f08031e970f56c071a4dd01af0542bd56924edd5
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31789746"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549384"
 ---
 # <a name="browsersyncsetting-enum-type"></a>browsersyncsetting 列挙型
 
@@ -23,8 +23,8 @@ Microsoft Edge ブラウザーの設定の同期を許可 (未構成) または�
 |メンバー|値|説明|
 |:---|:---|:---|
 |notConfigured|.0|Default –デバイス間でのブラウザー設定の同期を許可します。|
-|blockedWithUserOverride|1-d|ユーザーのデバイス間でブラウザー設定を同期できないようにして、ユーザーが設定を上書きできるようにします。|
-|ブロック|pbm-2|ユーザーデバイス間でのブラウザー設定の同期を完全に防止します。|
+|blockedWithUserOverride|1 |ユーザーのデバイス間でブラウザー設定を同期できないようにして、ユーザーが設定を上書きできるようにします。|
+|ブロック|2 |ユーザーデバイス間でのブラウザー設定の同期を完全に防止します。|
 
 
 

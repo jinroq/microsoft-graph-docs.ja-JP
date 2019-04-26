@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 268b5ab7030eae72cb9af4630b30bb8a2db8cdfc
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30987525"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551408"
 ---
 # <a name="update-windowsphone81generalconfiguration"></a>Update windowsPhone81GeneralConfiguration
 
@@ -54,18 +54,18 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |description|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|管理者が指定した、デバイス構成の名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|applyOnlyToWindowsPhone81|Boolean|このポリシーを Windows Phone 8.1 にのみ適用するかどうかを示す値。 このプロパティは読み取り専用です。|
-|appsBlockCopyPaste|Boolean|コピー/貼り付けを禁止するかどうかを示します。|
-|bluetoothBlocked|Boolean|Bluetooth をブロックするかどうかを示します。|
-|cameraBlocked|Boolean|カメラをブロックするかどうかを示します。|
-|cellularBlockWifiTethering|Boolean|Wi-Fi テザリングをブロックするかどうかを示します。 Wi-Fi がブロックされていれば、この値は関係ありません。|
+|applyOnlyToWindowsPhone81|ブール値|このポリシーを Windows Phone 8.1 にのみ適用するかどうかを示す値。 このプロパティは読み取り専用です。|
+|appsBlockCopyPaste|ブール値|コピー/貼り付けを禁止するかどうかを示します。|
+|bluetoothBlocked|ブール値|Bluetooth をブロックするかどうかを示します。|
+|cameraBlocked|ブール値|カメラをブロックするかどうかを示します。|
+|cellularBlockWifiTethering|ブール値|Wi-Fi テザリングをブロックするかどうかを示します。 Wi-Fi がブロックされていれば、この値は関係ありません。|
 |compliantAppsList|[appListItem](../resources/intune-deviceconfig-applistitem.md) コレクション|コンプライアンス内のアプリのリスト (CompliantAppListType によって制御される、許可リストまたは禁止リスト)。 このコレクションには、最大で 10000 個の要素を含めることができます。|
 |compliantAppListType|[アプライアンスの種類](../resources/intune-deviceconfig-applisttype.md)|AppComplianceList 内にあるリスト。 使用可能な値は、`none`、`appsInListCompliant`、`appsNotInListCompliant` です。|
-|diagnosticDataBlockSubmission|Boolean|診断データの送信をブロックするかどうかを示します。|
+|diagnosticDataBlockSubmission|ブール値|診断データの送信をブロックするかどうかを示します。|
 |emailBlockAddingAccounts|Boolean|カスタム電子メール アカウントをブロックするかどうかを示します。|
-|locationServicesBlocked|Boolean|位置情報サービスをブロックするかどうかを示します。|
-|microsoftAccountBlocked|Boolean|Microsoft アカウントの使用を禁止するかどうかを示します。|
-|nfcBlocked|Boolean|近距離無線通信をブロックするかどうかを示します。|
+|locationServicesBlocked|ブール値|位置情報サービスをブロックするかどうかを示します。|
+|microsoftAccountBlocked|ブール値|Microsoft アカウントの使用を禁止するかどうかを示します。|
+|nfcBlocked|ブール値|近距離無線通信をブロックするかどうかを示します。|
 |passwordBlockSimple|Boolean|カレンダーの同期を禁止するかどうかを示します。|
 |passwordExpirationDays|Int32|パスワードの有効期限が切れるまでの日数。|
 |passwordMinimumLength|Int32|パスワードの最小の長さ。|
@@ -74,13 +74,13 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |passwordPreviousPasswordBlockCount|Int32|ブロックする、以前のパスワードの数。 有効な値は 0 から 24 までです|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|出荷時の設定にリセットされるまでの、失敗が許可されるサインインの回数。|
 |passwordRequiredType|[requiredpasswordtype](../resources/intune-deviceconfig-requiredpasswordtype.md)|必要なパスワードの種類。 可能な値は、`deviceDefault`、`alphanumeric`、`numeric` です。|
-|passwordRequired|Boolean|パスワードを要求するかどうかを指定します。|
-|screenCaptureBlocked|Boolean|スクリーンショットを禁止するかどうかを示します。|
-|storageBlockRemovableStorage|Boolean|リムーバブル記憶域をブロックするかどうかを示します。|
-|storageRequireEncryption|Boolean|暗号化が必要かどうかを示します。|
-|webBrowserBlocked|Boolean|Web ブラウザーをブロックするかどうかを示します。|
-|wifiBlocked|Boolean|Wi-Fi をブロックするかどうかを示します。|
-|wifiBlockAutomaticConnectHotspots|Boolean|Wi-Fi ホットスポットへの自動接続をブロックするかどうかを示します。 Wi-Fi がブロックされていれば、この値は関係ありません。|
+|passwordRequired|ブール値|パスワードを要求するかどうかを指定します。|
+|screenCaptureBlocked|ブール値|スクリーンショットを禁止するかどうかを示します。|
+|storageBlockRemovableStorage|ブール値|リムーバブル記憶域をブロックするかどうかを示します。|
+|storageRequireEncryption|ブール値|暗号化が必要かどうかを示します。|
+|webBrowserBlocked|ブール値|Web ブラウザーをブロックするかどうかを示します。|
+|wifiBlocked|ブール値|Wi-Fi をブロックするかどうかを示します。|
+|wifiBlockAutomaticConnectHotspots|ブール値|Wi-Fi ホットスポットへの自動接続をブロックするかどうかを示します。 Wi-Fi がブロックされていれば、この値は関係ありません。|
 |wifiBlockHotspotReporting|Boolean|Wi-Fi ホットスポット レポートをブロックするかどうかを示します。 Wi-Fi がブロックされていれば、この値は関係ありません。|
 |windowsStoreBlocked|Boolean|Windows ストアをブロックするかどうかを示します。|
 

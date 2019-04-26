@@ -1,26 +1,26 @@
 ---
-title: PrivilegedRoleAssignmentRequest をキャンセルします。
-description: PrivilegedRoleAssignmentRequest をキャンセルします。
+title: privilegedRoleAssignmentRequest のキャンセル
+description: privilegedRoleAssignmentRequest を取り消します。
 localization_priority: Normal
 ms.openlocfilehash: 0cca3f33e6e027c18e24862dc4736006058f8e41
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642808"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546529"
 ---
-# <a name="cancel-privilegedroleassignmentrequest"></a>PrivilegedRoleAssignmentRequest をキャンセルします。
+# <a name="cancel-privilegedroleassignmentrequest"></a>privilegedRoleAssignmentRequest のキャンセル
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-の[privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md)をキャンセルします。
+[privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md)を取り消します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | PrivilegedAccess.ReadWrite.AzureAD、Directory.AccessAsUser.All    |
+|委任 (職場または学校のアカウント) | PrivilegedAccess、AzureAD、および directory.accessasuser.all。    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
 |アプリケーション                            | サポートされていません。 |
 
@@ -40,17 +40,17 @@ POST /privilegedRoleAssignmentRequests({requestid})/cancel
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-成功した場合、このメソッドは `200 Ok` 応答コードを返します。 [PrivilegedRoleAssignmentRequest] が返されます (../resources/privilegedRoleAssignmentRequest.md)、応答の本文にします。
+成功した場合、このメソッドは `200 Ok` 応答コードを返します。 このメソッドは [privilegedRoleAssignmentRequest] (..) を返します。応答本文で/resources/privilegedRoleAssignmentRequest.md)。
 
 ### <a name="error-codes"></a>エラー コード
-この API では、標準の HTTP エラー コードを返します。 さらに、次の表に記載されているカスタムのエラー コードを返します。
+この API は、標準の HTTP エラーコードを返します。 さらに、次の表に示すカスタムエラーコードを返します。
 
 |エラー コード     | エラー メッセージ              |
 |:--------------------| :---------------------|
-| 400 BadRequest | 要求 Id は、Null にすることはできません。 |
-| 400 BadRequest | 要求 ID が見つからないと要求します。 |
-| 400 BadRequest | キャンセルは、スケジュールおよび PendingApproval の状態でのみ実行できます。 |
-| 403 許可されていません。 | 依頼者がするには [キャンセル] の呼び出し、または見つかりません要求は許可されません。 |
+| 400 badrequest | RequestId を Null にすることはできません。 |
+| 400 badrequest | 要求 ID の要求が見つかりません。 |
+| 400 badrequest | 取り消しは、スケジュールされた状態と pendingapproval に対してのみ行うことができます。 |
+| 403権限がありません | 要求者が取り消し通話を行うことが許可されていないか、または要求が見つかりません。 |
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

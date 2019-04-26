@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: f6ff72ab99d20eba9880630248e4b61fca5c2521
-ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30057016"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554059"
 ---
 # <a name="teamsappinstallation-resource-type"></a>teamsAppInstallation リソースの種類
 
@@ -28,7 +28,7 @@ ms.locfileid: "30057016"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ            | 種類     | 説明 |
+| プロパティ            | 型     | 説明 |
 |:------------------- |:-------- |:----------- |
 | id                  | string   | 一意の id (teams appid ではない)。 |
 

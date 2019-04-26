@@ -1,30 +1,28 @@
 ---
-title: 'ユーザー: getMailTips'
-description: サインイン中のユーザーに利用可能な 1 つまたは複数の受信者のメール ヒントを取得します。
+title: 'ユーザー: getmailtips ヒント'
+description: サインインしているユーザーが使用できる1人以上の受信者のメールヒントを取得します。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: e3397bade518cde6e17759096601f364f84e918e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516141"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547922"
 ---
-# <a name="user-getmailtips"></a>ユーザー: getMailTips
+# <a name="user-getmailtips"></a>ユーザー: getmailtips ヒント
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+サインインしている[ユーザー](../resources/user.md)が使用できる1人以上の受信者のメールヒントを取得します。
 
-サインインしている[ユーザー](../resources/user.md)に利用可能な 1 つまたは複数の受信者のメール ヒントを取得します。
-
-注意することにより、`POST`を呼び出して、`getMailTips`アクション、同時に複数の受信者に返されるメール ヒントの特定の種類を要求することができます。 [メール ヒント](../resources/mailtips.md)のコレクションでは、要求されたメール ヒントが返されます。
+`getMailTips`アクションを`POST`呼び出すことによって、複数の受信者に対して特定の種類のメールヒントが一度に返されるように要求することができることに注意してください。 要求されたメールヒントが[メールヒント](../resources/mailtips.md)コレクションに返されます。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Mail.Read、Mail.Read.Shared    |
+|委任 (職場または学校のアカウント) | メール。読み取り、共有    |
 |委任 (個人用 Microsoft アカウント) | Mail.Read    |
 |アプリケーション | Mail.Read |
 
@@ -47,22 +45,22 @@ POST /users/{id|userPrincipalName}/getMailTips
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|EmailAddresses|String コレクション|メール ヒントを取得する受信者の SMTP アドレスのコレクションです。|
-|MailTipsOptions|String|要求されたメールヒントを表すフラグの列挙型。 使用可能な値: `automaticReplies`、 `customMailTip`、 `deliveryRestriction`、 `externalMemberCount`、 `mailboxFullStatus`、 `maxMessageSize`、 `moderationStatus`、 `recipientScope`、`recipientSuggestions`と`totalMemberCount`。|
+|EmailAddresses|String collection|メール ヒントを取得する受信者の SMTP アドレスのコレクションです。|
+|MailTipsOptions|String|要求されたメールヒントを表すフラグの列挙。 可能な値は`automaticReplies`、 `customMailTip`、 `deliveryRestriction` `externalMemberCount` `mailboxFullStatus` `maxMessageSize` `moderationStatus` `recipientScope`、、、、、、、、および`totalMemberCount` `recipientSuggestions`です。|
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文の[メール ヒント](../resources/mailtips.md)オブジェクトのコレクションです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[メールヒント](../resources/mailtips.md)オブジェクトのコレクションを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
-次の使用例は、自動応答の設定、およびメールボックスのすべての状態を指定された受信者のメール ヒントを取得します。
+次の例では、指定された受信者のメールヒントを取得します。すべての自動応答の設定と、メールボックスの状態が [完全] になっています。
 
 <!-- {
   "blockType": "request",
   "name": "user_getmailtips"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/getMailTips
+POST https://graph.microsoft.com/v1.0/me/getMailTips
 Content-Type: application/json
 
 {
@@ -87,7 +85,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.mailTips)",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.mailTips)",
     "value":[
         {
             "emailAddress":{
@@ -128,15 +126,10 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "user: getMailTips",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/user-getmailtips.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

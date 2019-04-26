@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 22adbc6be90718f95a574443c8bd2f96a55f2ee4
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31784643"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32572207"
 ---
 # <a name="windows10associatedapps-resource-type"></a>windows10AssociatedApps リソースの種類
 
@@ -23,9 +23,9 @@ Windows 10 関連アプリケーションの定義。
 |プロパティ|型|説明|
 |:---|:---|:---|
 |appType|[windows10AppType](../resources/intune-deviceconfig-windows10apptype.md)|アプリケーションの種類。 可能な値は、`desktop`、`universal` です。|
-|識別子|文字列|識別子.|
+|識別子|String|識別子.|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記

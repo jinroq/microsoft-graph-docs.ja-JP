@@ -5,11 +5,11 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: c5b580f643686c27497fd24a6fe00c7750a6a938
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573264"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551422"
 ---
 # <a name="yammergroupsactivitydetail-resource-type"></a>yammerGroupsActivityDetail リソースの種類
 
@@ -17,18 +17,18 @@ ms.locfileid: "29573264"
 
 | プロパティ           | 型    |
 | :----------------- | :------ |
-| reportRefreshDate  | 日付    |
-| groupDisplayName   | String  |
-| isDeleted          | Boolean |
+| reportrefreshdate  | Date    |
+| groupdisplayname   | String  |
+| isDeleted          | ブール値 |
 | ownerPrincipalName | String  |
-| lastActivityDate   | 日付    |
+| lastactivitydate   | Date    |
 | groupType          | String  |
-| office365Connected | Boolean |
-| membercount プロパティ        | Int64   |
+| office365Connected | ブール値 |
+| memberCount        | Int64   |
 | postedCount        | Int64   |
-| readCount          | Int64   |
-| likedCount         | Int64   |
-| reportPeriod       | String  |
+| readcount          | Int64   |
+| dcount         | Int64   |
+| reportperiod       | String  |
 
 ## <a name="json-representation"></a>JSON 表記
 

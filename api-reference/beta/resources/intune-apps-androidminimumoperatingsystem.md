@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 5df2e8d124c5a03794672e162714f36bb18d0e7f
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31790775"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32552374"
 ---
 # <a name="androidminimumoperatingsystem-resource-type"></a>androidMinimumOperatingSystem リソースの種類
 
@@ -22,18 +22,18 @@ Android モバイル アプリに必要な最小限のオペレーティング �
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|v4_0|Boolean|バージョン 4.0 以降。|
-|v4_0_3|Boolean|バージョン 4.0.3 以降。|
-|v4_1|Boolean|バージョン 4.1 以降。|
-|v4_2|Boolean|バージョン 4.2 以降。|
-|v4_3|Boolean|バージョン 4.3 以降。|
-|v4_4|Boolean|バージョン 4.4 以降。|
-|v5_0|Boolean|バージョン 5.0 以降。|
-|v5_1|Boolean|バージョン 5.1 以降。|
-|v6_0|Boolean|バージョン6.0 以降。|
-|v7_0|Boolean|バージョン7.0 以降。|
-|v7_1|Boolean|バージョン7.1 以降。|
-|v8_0|Boolean|バージョン 8.0 以降。|
+|v4_0|ブール値|バージョン 4.0 以降。|
+|v4_0_3|ブール値|バージョン 4.0.3 以降。|
+|v4_1|ブール値|バージョン 4.1 以降。|
+|v4_2|ブール値|バージョン 4.2 以降。|
+|v4_3|ブール値|バージョン 4.3 以降。|
+|v4_4|ブール値|バージョン 4.4 以降。|
+|v5_0|ブール値|バージョン 5.0 以降。|
+|v5_1|ブール値|バージョン 5.1 以降。|
+|v6_0|ブール値|バージョン6.0 以降。|
+|v7_0|ブール値|バージョン7.0 以降。|
+|v7_1|ブール値|バージョン7.1 以降。|
+|v8_0|ブール値|バージョン 8.0 以降。|
 |v8_1|ブール型 (Boolean)|バージョン8.1 以降。|
 |v9_0|ブール型 (Boolean)|バージョン 9.0 以降。|
 

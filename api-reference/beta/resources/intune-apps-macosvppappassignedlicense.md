@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 31f8e078f7695a115ce92d6d3f687d41a13831fc
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31806301"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32553919"
 ---
 # <a name="macosvppappassignedlicense-resource-type"></a>macOsVppAppAssignedLicense リソースの種類
 
@@ -32,7 +32,7 @@ MacOS ボリューム購入プログラムのライセンス割り当てです�
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティのキー。|
-|userEmailAddress|文字列|ユーザーの電子メールアドレス。|
+|userEmailAddress|String|ユーザーの電子メールアドレス。|
 |userId|String|ユーザー ID。|
 |userName|文字列型 (String)|ユーザー名。|
 |userPrincipalName|String|ユーザー プリンシパル名。|

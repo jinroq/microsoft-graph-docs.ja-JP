@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: e7f3dcbbc2544a4231cd5da102985d7142feb03a
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31809278"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551800"
 ---
 # <a name="mobileapprelationshipstate-resource-type"></a>mobileAppRelationshipState リソースの種類
 
@@ -22,9 +22,9 @@ UPN とデバイス id のコンテキストでの子アプリのインストー
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|sourceIds|String コレクション|送信元モバイルアプリの id のコレクション。|
-|targetId|文字列|関連するターゲットアプリの id。|
-|targetdisplayname|文字列|関連するターゲットアプリの表示名。|
+|sourceIds|String collection|送信元モバイルアプリの id のコレクション。|
+|targetId|String|関連するターゲットアプリの id。|
+|targetdisplayname|String|関連するターゲットアプリの表示名。|
 |deviceId|String|対応するデバイス id。|
 |installState|[resultappstate](../resources/intune-shared-resultantappstate.md)|ターゲットアプリのアプリのインストール状態。 可能な値は、`installed`、`failed`、`notInstalled`、`uninstallFailed`、`pendingInstall`、`unknown`、`notApplicable` です。|
 |installstatedetail|[resultantAppStateDetail](../resources/intune-apps-resultantappstatedetail.md)|アプリのインストール状態の詳細。 可能な値: `noAdditionalDetails`、 `dependencyFailedToInstall` `dependencyWithRequirementsNotMet` `dependencyPendingReboot` `dependencyWithAutoInstallDisabled` `seeInstallErrorCode` `autoInstallDisabled` `seeUninstallErrorCode` `pendingReboot` `installingDependencies` `powerShellScriptRequirementNotMet` `registryRequirementNotMet`、、、、、、、、、、、、 `fileSystemRequirementNotMet` `platformNotApplicable` `minimumCpuSpeedNotMet` `minimumLogicalProcessorCountNotMet` `minimumPhysicalMemoryNotMet` `minimumOsVersionNotMet` `minimumDiskSpaceNotMet`, `processorArchitectureNotApplicable`.|

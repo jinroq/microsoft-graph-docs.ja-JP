@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c22ead3b037ff18dbd9c1dedbf68b11f2b55a3bc
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31771888"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32555011"
 ---
 # <a name="vpntrafficrule-resource-type"></a>vpnTrafficRule リソースの種類
 
@@ -31,7 +31,7 @@ VPN トラフィックルールの定義。
 |appId|String|アプリ識別子。このトラフィックルールがアプリによってトリガーされた場合。|
 |appType|[vpnTrafficRuleAppType](../resources/intune-deviceconfig-vpntrafficruleapptype.md)|アプリの種類。このトラフィックルールがアプリによってトリガーされた場合。 使用可能な値は、`none`、`desktop`、`universal` です。|
 |routingPolicyType|[vpnTrafficRuleRoutingPolicyType](../resources/intune-deviceconfig-vpntrafficruleroutingpolicytype.md)|アプリがトリガーされたときに、このルートに沿った分割トンネリングを有効にするかどうかを示します。 使用可能な値は、`none`、`splitTunnel`、`forceTunnel` です。|
-|差出人|文字列|このトラフィック規則に関連付けられているクレーム。|
+|差出人|String|このトラフィック規則に関連付けられているクレーム。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

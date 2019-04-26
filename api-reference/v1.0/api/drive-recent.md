@@ -6,11 +6,11 @@ title: 最近使用したファイルを一覧表示する
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: be4f6632f86c62a8672bb94728dee9771aafc540
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482127"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551394"
 ---
 # <a name="list-recent-files"></a>最近使用したファイルを一覧表示する
 

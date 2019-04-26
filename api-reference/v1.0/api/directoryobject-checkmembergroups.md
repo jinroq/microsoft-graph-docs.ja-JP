@@ -1,15 +1,15 @@
 ---
 title: メンバー グループをチェックする
-description: メンバーシップのグループ、およびそのリストから指定されたリスト内のそれらのグループを確認します。
+description: 指定したグループの一覧のメンバーシップを確認し、それらのグループをリストから返します。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 99ebf38b8f230233b50fa642f7503302afd02b33
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27941787"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32555130"
 ---
 # <a name="check-member-groups"></a>メンバー グループをチェックする
 
@@ -33,7 +33,7 @@ POST /groups/{id}/checkMemberGroups
 POST /directoryObjects/{id}/checkMemberGroups
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type  | string | application/json  |
@@ -41,9 +41,9 @@ POST /directoryObjects/{id}/checkMemberGroups
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|groupIds|String コレクション|メンバーシップを確認するためのグループのオブジェクト ID を含むコレクションです。最大 20 グループを指定することが可能です。|
+|groupIds|String collection|メンバーシップを確認するためのグループのオブジェクト ID を含むコレクションです。最大 20 グループを指定することが可能です。|
 
 ## <a name="response"></a>応答
 
@@ -70,7 +70,7 @@ Content-type: application/json
 ```
 
 ##### <a name="response"></a>応答
-注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

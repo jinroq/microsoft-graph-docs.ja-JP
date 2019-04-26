@@ -6,11 +6,11 @@ title: 共有アイテムのファイルの表示
 localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: 6d1b08de1c5a55f85fc54f5666dafcb9db346fc3
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480188"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32576088"
 ---
 # <a name="list-items-shared-with-the-signed-in-user"></a>サインイン ユーザーと共有しているアイテムを一覧表示する
 

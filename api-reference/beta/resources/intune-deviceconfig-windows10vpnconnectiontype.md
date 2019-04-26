@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 5ac61b494fc261832a864c4c87998532a863f87b
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31774142"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32572032"
 ---
 # <a name="windows10vpnconnectiontype-enum-type"></a>windows10VpnConnectionType 列挙型
 
@@ -23,15 +23,15 @@ VPN 接続の種類。
 |メンバー|値|説明|
 |:---|:---|:---|
 |pulseSecure|.0|パルスがセキュリティで保護されています。|
-|f5EdgeClient|1-d|F5 キーを押したエッジクライアント。|
-|dellSonicWallMobileConnect|pbm-2|Dell SonicWALL モバイル接続。|
-|checkPointCapsuleVpn|1/3|[カプセル接続] VPN をチェックします。|
-|自動|2/4|自動|
-|対する|5|対する.|
-|l2tp|シックス|L2TP.|
-|pptp|7|PPTP.|
-|社|~|社.|
-|paloAltoGlobalProtect|i-9|Palo Alto Networks globalprotect。|
+|f5EdgeClient|1 |F5 キーを押したエッジクライアント。|
+|dellSonicWallMobileConnect|2 |Dell SonicWALL モバイル接続。|
+|checkPointCapsuleVpn|3 |[カプセル接続] VPN をチェックします。|
+|自動|4 |自動|
+|対する|5 |対する.|
+|l2tp|6 |L2TP.|
+|pptp|7 |PPTP.|
+|社|8 |社.|
+|paloAltoGlobalProtect|9 |Palo Alto Networks globalprotect。|
 
 
 

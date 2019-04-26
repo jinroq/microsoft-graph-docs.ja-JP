@@ -5,11 +5,11 @@ localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 2583cbf5fd8feee12b18482c515490d2de8ce8be
-ms.sourcegitcommit: d264fa064215879fa88a4680402cd57a470d73db
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31989402"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548055"
 ---
 # <a name="delete-trustframeworkpolicy"></a>trustframeworkpolicy の削除
 
@@ -23,7 +23,7 @@ ms.locfileid: "31989402"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント)|ポリシー。 trustframework|
+|委任 (職場または学校のアカウント)|Policy.ReadWrite.TrustFramework|
 |委任 (個人用 Microsoft アカウント)| サポートされていません。|
 |アプリケーション|サポートされていません。|
 

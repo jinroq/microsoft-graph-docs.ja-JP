@@ -1,26 +1,26 @@
 ---
 title: servicePlanInfo リソースの種類
-description: 購読している SKU に関連付けられているサービス プランに関する情報が含まれています。subscribedSku エンティティの **servicePlans** プロパティは、**servicePlanInfo** のコレクションです。
+description: 購読済み SKU に関連付けられているサービスプランに関する情報が含まれます。 subscribedSku **** エンティティの serviceplans プロパティは、 **serviceplans info**のコレクションです。
 localization_priority: Normal
 ms.openlocfilehash: 837170881c7c093d26c5b59662e20e87b399a029
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845452"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549630"
 ---
 # <a name="serviceplaninfo-resource-type"></a>servicePlanInfo リソースの種類
 
-購読している SKU に関連付けられているサービス プランに関する情報が含まれています。[subscribedSku](subscribedsku.md) エンティティの **servicePlans** プロパティは、**servicePlanInfo** のコレクションです。
+購読済み SKU に関連付けられているサービスプランに関する情報が含まれます。 [subscribedSku](subscribedsku.md)エンティティの**serviceplans**プロパティは、 **serviceplans info**のコレクションです。
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |servicePlanId|Guid|サービス プランの一意識別子。|
-|servicePlanName|String|サービス プランの名前。|
-|provisioningStatus|String|サービス プランのプロビジョニング状況。可能な値:<br/>Success - サービスは完全にプロビジョニングされます。<br/>Disabled - サービスは無効になっています。<br/>PendingInput - サービスはまだプロビジョニングされていません。サービスの確認を待っています。<br/>PendingActivation - サービスはプロビジョニングされていますが、管理者による明示的なアクティブ化が必要です (Intune_O365 サービスプランなど)<br/>PendingProvisioning - Microsoft では製品の SKU に新しいサービスを追加していますが、テナント側でまだアクティブ化されていません。|
-|appliesTo|String|サービス プランを割り当てることができるオブジェクト。可能な値:<br/>User - サービス プランを個別のユーザーに割り当てることができます。<br/>Company - サービス プランをテナント全体に割り当てることができます。|
+|serviceplan の名前|String|サービス プランの名前。|
+|プロビジョニング状態|String|サービス プランのプロビジョニング状況。 可能な値:<br/>"Success"-サービスは完全にプロビジョニングされています。<br/>[無効]-サービスが無効になっています。<br/>"pendinginput"-サービスはまだ準備されていません。サービスの確認を待っている。<br/>"pendingactivation"-サービスはプロビジョニングされていますが、管理者による明示的なライセンス認証が必要です (たとえば、Intune_O365 Service plan)。<br/>"pendingprovisioning"-Microsoft では、製品 SKU に新しいサービスが追加されていますが、テナントではまだアクティブ化されていません。|
+|appliesTo|String|サービスプランを割り当てることができるオブジェクトです。 可能な値:<br/>"User"-サービスプランを個々のユーザーに割り当てることができます。<br/>"Company"-サービスプランは、テナント全体に割り当てることができます。|
 
 ## <a name="json-representation"></a>JSON 表記
 

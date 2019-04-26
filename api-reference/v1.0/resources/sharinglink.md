@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: SharingLink
 localization_priority: Normal
 ms.openlocfilehash: f16f8240800be4b9c1780a4057583381b736f079
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481427"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549665"
 ---
 # <a name="sharinglink-resource-type"></a>SharingLink リソースの種類
 
@@ -39,12 +39,11 @@ ms.locfileid: "30481427"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ    | 種類          | 説明
+| プロパティ    | 型          | 説明
 |:------------|:--------------|:-------------------------------------
 | application | [identity][]  | リンクが関連付けられているアプリケーションです。
 | type        | String        | 作成されたリンクの種類。
-| scope       | String
-        | このアクセス許可によって表されるリンクの範囲です。値 `anonymous` は、すべてのユーザーがリンクを使用できることを示し、`organization` は同じテナントにサインインしたユーザーのみがリンクを使用できることを示します。
+| scope       | String        | このアクセス許可によって表されるリンクの範囲です。値 `anonymous` は、すべてのユーザーがリンクを使用できることを示し、`organization` は同じテナントにサインインしたユーザーのみがリンクを使用できることを示します。
 | webHtml     | String        | `embed` リンクの場合、このプロパティには、Web ページに項目を埋め込む `<iframe>` 要素の HTML コードが格納されます。
 | webUrl      | 文字列        | OneDrive の web サイト上で、項目をブラウザーに開く URL です。
 
