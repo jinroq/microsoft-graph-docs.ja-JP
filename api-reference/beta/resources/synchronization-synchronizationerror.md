@@ -2,31 +2,31 @@
 title: 同期エラーリソースの種類
 description: 同期処理中に発生したエラーを表します。
 localization_priority: Normal
-ms.openlocfilehash: f37dca5b65a67eb36b2b6a130eee8feb692cd271
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7f678cdbd48a3d5f013c22120d01c28bb61738e6
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32525979"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324747"
 ---
-# <a name="synchronizationerror-resource-type"></a><span data-ttu-id="b033d-103">同期エラーリソースの種類</span><span class="sxs-lookup"><span data-stu-id="b033d-103">synchronizationError resource type</span></span>
+# <a name="synchronizationerror-resource-type"></a><span data-ttu-id="67d6e-103">同期エラーリソースの種類</span><span class="sxs-lookup"><span data-stu-id="67d6e-103">synchronizationError resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b033d-104">同期処理中に発生したエラーを表します。</span><span class="sxs-lookup"><span data-stu-id="b033d-104">Represents an error that occurred during the synchronization process.</span></span>
+<span data-ttu-id="67d6e-104">同期処理中に発生したエラーを表します。</span><span class="sxs-lookup"><span data-stu-id="67d6e-104">Represents an error that occurred during the synchronization process.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="b033d-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="b033d-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="67d6e-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="67d6e-105">Properties</span></span>
 
 <!-- Add descriptions for the properties. -->
-| <span data-ttu-id="b033d-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="b033d-106">Property</span></span>     | <span data-ttu-id="b033d-107">型</span><span class="sxs-lookup"><span data-stu-id="b033d-107">Type</span></span>   |<span data-ttu-id="b033d-108">説明</span><span class="sxs-lookup"><span data-stu-id="b033d-108">Description</span></span>|
+| <span data-ttu-id="67d6e-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="67d6e-106">Property</span></span>     | <span data-ttu-id="67d6e-107">型</span><span class="sxs-lookup"><span data-stu-id="67d6e-107">Type</span></span>   |<span data-ttu-id="67d6e-108">説明</span><span class="sxs-lookup"><span data-stu-id="67d6e-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="b033d-109">code</span><span class="sxs-lookup"><span data-stu-id="b033d-109">code</span></span>|<span data-ttu-id="b033d-110">String</span><span class="sxs-lookup"><span data-stu-id="b033d-110">String</span></span>||
-|<span data-ttu-id="b033d-111">message</span><span class="sxs-lookup"><span data-stu-id="b033d-111">message</span></span>|<span data-ttu-id="b033d-112">String</span><span class="sxs-lookup"><span data-stu-id="b033d-112">String</span></span>||
-|<span data-ttu-id="b033d-113">tenantactionable 可能</span><span class="sxs-lookup"><span data-stu-id="b033d-113">tenantActionable</span></span>|<span data-ttu-id="b033d-114">ブール値</span><span class="sxs-lookup"><span data-stu-id="b033d-114">Boolean</span></span>||
+|<span data-ttu-id="67d6e-109">code</span><span class="sxs-lookup"><span data-stu-id="67d6e-109">code</span></span>|<span data-ttu-id="67d6e-110">String</span><span class="sxs-lookup"><span data-stu-id="67d6e-110">String</span></span>||
+|<span data-ttu-id="67d6e-111">message</span><span class="sxs-lookup"><span data-stu-id="67d6e-111">message</span></span>|<span data-ttu-id="67d6e-112">String</span><span class="sxs-lookup"><span data-stu-id="67d6e-112">String</span></span>||
+|<span data-ttu-id="67d6e-113">tenantactionable 可能</span><span class="sxs-lookup"><span data-stu-id="67d6e-113">tenantActionable</span></span>|<span data-ttu-id="67d6e-114">Boolean</span><span class="sxs-lookup"><span data-stu-id="67d6e-114">Boolean</span></span>||
 
-## <a name="json-representation"></a><span data-ttu-id="b033d-115">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="b033d-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="67d6e-115">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="67d6e-115">JSON representation</span></span>
 
-<span data-ttu-id="b033d-116">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="b033d-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="67d6e-116">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="67d6e-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -54,8 +54,6 @@ ms.locfileid: "32525979"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-synchronizationerror.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

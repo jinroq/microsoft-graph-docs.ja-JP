@@ -3,32 +3,34 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: サイズの小さいファイルをアップロードする
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 151d7c9479068c5fdcecfb5a04166900bd527230
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 35807150fc1aaca862e32787916be8fcf7719d92
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454399"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325368"
 ---
-# <a name="upload-or-replace-the-contents-of-a-driveitem"></a><span data-ttu-id="38d6f-102">DriveItem の内容をアップロードまたは置換する</span><span class="sxs-lookup"><span data-stu-id="38d6f-102">Upload or replace the contents of a DriveItem</span></span>
+# <a name="upload-or-replace-the-contents-of-a-driveitem"></a><span data-ttu-id="49497-102">DriveItem の内容をアップロードまたは置換する</span><span class="sxs-lookup"><span data-stu-id="49497-102">Upload or replace the contents of a DriveItem</span></span>
 
-<span data-ttu-id="38d6f-p101">簡単なアップロード API を使用すると、新しいファイルの内容を提供したり、単一の API 呼び出しで既存のファイルの内容を更新したりすることができます。このメソッドは、サイズが 4MB までのファイルのみをサポートしています。</span><span class="sxs-lookup"><span data-stu-id="38d6f-p101">The simple upload API allows you to provide the contents of a new file or update the contents of an existing file in a single API call. This method only supports files up to 4MB in size.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="38d6f-105">大きなファイルをアップロードする場合は、「[アップロード セッションを使ってサイズの大きなファイルをアップロードする](driveitem-createuploadsession.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="38d6f-105">To upload large files see [Upload large files with an upload session](driveitem-createuploadsession.md).</span></span>
+<span data-ttu-id="49497-p101">簡単なアップロード API を使用すると、新しいファイルの内容を提供したり、単一の API 呼び出しで既存のファイルの内容を更新したりすることができます。このメソッドは、サイズが 4MB までのファイルのみをサポートしています。</span><span class="sxs-lookup"><span data-stu-id="49497-p101">The simple upload API allows you to provide the contents of a new file or update the contents of an existing file in a single API call. This method only supports files up to 4MB in size.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="38d6f-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="38d6f-106">Permissions</span></span>
+<span data-ttu-id="49497-105">大きなファイルをアップロードする場合は、「[アップロード セッションを使ってサイズの大きなファイルをアップロードする](driveitem-createuploadsession.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="49497-105">To upload large files see [Upload large files with an upload session](driveitem-createuploadsession.md).</span></span>
 
-<span data-ttu-id="38d6f-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="38d6f-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="49497-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="49497-106">Permissions</span></span>
 
-|<span data-ttu-id="38d6f-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="38d6f-109">Permission type</span></span>      | <span data-ttu-id="38d6f-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="38d6f-110">Permissions (from least to most privileged)</span></span>              |
+<span data-ttu-id="49497-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="49497-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="49497-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="49497-109">Permission type</span></span>      | <span data-ttu-id="49497-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="49497-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="38d6f-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="38d6f-111">Delegated (work or school account)</span></span> | <span data-ttu-id="38d6f-112">Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="38d6f-112">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="38d6f-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="38d6f-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="38d6f-114">Files.ReadWrite、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="38d6f-114">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="38d6f-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="38d6f-115">Application</span></span> | <span data-ttu-id="38d6f-116">Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="38d6f-116">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="49497-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="49497-111">Delegated (work or school account)</span></span> | <span data-ttu-id="49497-112">Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="49497-112">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="49497-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="49497-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="49497-114">Files.ReadWrite、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="49497-114">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="49497-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="49497-115">Application</span></span> | <span data-ttu-id="49497-116">Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="49497-116">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request-to-replace-an-existing-item"></a><span data-ttu-id="38d6f-117">HTTP 要求 (既存アイテムを置換する場合)</span><span class="sxs-lookup"><span data-stu-id="38d6f-117">HTTP request (to replace an existing item)</span></span>
+## <a name="http-request-to-replace-an-existing-item"></a><span data-ttu-id="49497-117">HTTP 要求 (既存アイテムを置換する場合)</span><span class="sxs-lookup"><span data-stu-id="49497-117">HTTP request (to replace an existing item)</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -40,7 +42,7 @@ PUT /sites/{site-id}/drive/items/{item-id}/content
 PUT /users/{user-id}/drive/items/{item-id}/content
 ```
 
-## <a name="http-request-to-upload-a-new-file"></a><span data-ttu-id="38d6f-118">HTTP 要求 (新しいファイルをアップロードする場合)</span><span class="sxs-lookup"><span data-stu-id="38d6f-118">HTTP request (to upload a new file)</span></span>
+## <a name="http-request-to-upload-a-new-file"></a><span data-ttu-id="49497-118">HTTP 要求 (新しいファイルをアップロードする場合)</span><span class="sxs-lookup"><span data-stu-id="49497-118">HTTP request (to upload a new file)</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -52,17 +54,17 @@ PUT /sites/{site-id}/drive/items/{parent-id}:/{filename}:/content
 PUT /users/{user-id}/drive/items/{parent-id}:/{filename}:/content
 ```
 
-## <a name="request-body"></a><span data-ttu-id="38d6f-119">要求本文</span><span class="sxs-lookup"><span data-stu-id="38d6f-119">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="49497-119">要求本文</span><span class="sxs-lookup"><span data-stu-id="49497-119">Request body</span></span>
 
-<span data-ttu-id="38d6f-120">要求の本文の内容は、アップロードするファイルのバイナリ ストリームである必要があります。</span><span class="sxs-lookup"><span data-stu-id="38d6f-120">The contents of the request body should be the binary stream of the file to be uploaded.</span></span>
+<span data-ttu-id="49497-120">要求の本文の内容は、アップロードするファイルのバイナリ ストリームである必要があります。</span><span class="sxs-lookup"><span data-stu-id="49497-120">The contents of the request body should be the binary stream of the file to be uploaded.</span></span>
 
-## <a name="response"></a><span data-ttu-id="38d6f-121">応答</span><span class="sxs-lookup"><span data-stu-id="38d6f-121">Response</span></span>
+## <a name="response"></a><span data-ttu-id="49497-121">応答</span><span class="sxs-lookup"><span data-stu-id="49497-121">Response</span></span>
 
-<span data-ttu-id="38d6f-122">成功した場合、このメソッドは、新しく作成されたファイルまたは更新されたファイルの応答本文で [driveItem](../resources/driveitem.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="38d6f-122">If successful, this method returns a [driveItem](../resources/driveitem.md) object in the response body for the newly created or updated file.</span></span>
+<span data-ttu-id="49497-122">成功した場合、このメソッドは、新しく作成されたファイルまたは更新されたファイルの応答本文で [driveItem](../resources/driveitem.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="49497-122">If successful, this method returns a [driveItem](../resources/driveitem.md) object in the response body for the newly created or updated file.</span></span>
 
-## <a name="example-upload-a-new-file"></a><span data-ttu-id="38d6f-123">例 (新しいファイルのアップロード)</span><span class="sxs-lookup"><span data-stu-id="38d6f-123">Example (upload a new file)</span></span>
+## <a name="example-upload-a-new-file"></a><span data-ttu-id="49497-123">例 (新しいファイルのアップロード)</span><span class="sxs-lookup"><span data-stu-id="49497-123">Example (upload a new file)</span></span>
 
-<span data-ttu-id="38d6f-124">この例では、"The contents of the file goes here."(ファイルの内容がここに入ります。) という文字列を、</span><span class="sxs-lookup"><span data-stu-id="38d6f-124">This example uploads the string "The contents of the file goes here."</span></span> <span data-ttu-id="38d6f-125">サインインしたユーザーのドライブの FolderA の下の FileB.txt という名前のファイルにアップロードします。</span><span class="sxs-lookup"><span data-stu-id="38d6f-125">to a file in the signed-in user's drive under FolderA named FileB.txt.</span></span>
+<span data-ttu-id="49497-124">この例では、"The contents of the file goes here."(ファイルの内容がここに入ります。) という文字列を、</span><span class="sxs-lookup"><span data-stu-id="49497-124">This example uploads the string "The contents of the file goes here."</span></span> <span data-ttu-id="49497-125">サインインしたユーザーのドライブの FolderA の下の FileB.txt という名前のファイルにアップロードします。</span><span class="sxs-lookup"><span data-stu-id="49497-125">to a file in the signed-in user's drive under FolderA named FileB.txt.</span></span>
 
 <!-- { "blockType": "request", "name": "upload-via-put", "scopes": "files.readwrite" } -->
 
@@ -73,9 +75,9 @@ Content-Type: text/plain
 The contents of the file goes here.
 ```
 
-### <a name="response"></a><span data-ttu-id="38d6f-126">応答</span><span class="sxs-lookup"><span data-stu-id="38d6f-126">Response</span></span>
+### <a name="response"></a><span data-ttu-id="49497-126">応答</span><span class="sxs-lookup"><span data-stu-id="49497-126">Response</span></span>
 
-<span data-ttu-id="38d6f-127">成功した場合、このメソッドは、新しく作成されたファイルの応答本文で [driveItem][item-resource] リソースを返します。</span><span class="sxs-lookup"><span data-stu-id="38d6f-127">If successful, this method returns an [driveItem][item-resource] resource in the response body for the newly created file.</span></span>
+<span data-ttu-id="49497-127">成功した場合、このメソッドは、新しく作成されたファイルの応答本文で [driveItem][item-resource] リソースを返します。</span><span class="sxs-lookup"><span data-stu-id="49497-127">If successful, this method returns an [driveItem][item-resource] resource in the response body for the newly created file.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -91,9 +93,9 @@ Content-Type: application/json
 }
 ```
 
-## <a name="example-updating-an-existing-file"></a><span data-ttu-id="38d6f-128">例 (既存ファイルの更新)</span><span class="sxs-lookup"><span data-stu-id="38d6f-128">Example (updating an existing file)</span></span>
+## <a name="example-updating-an-existing-file"></a><span data-ttu-id="49497-128">例 (既存ファイルの更新)</span><span class="sxs-lookup"><span data-stu-id="49497-128">Example (updating an existing file)</span></span>
 
-<span data-ttu-id="38d6f-129">この例では、既知の ID を持つファイルの内容を置き換えます。</span><span class="sxs-lookup"><span data-stu-id="38d6f-129">This example replaces the contents of a file with a known ID.</span></span>
+<span data-ttu-id="49497-129">この例では、既知の ID を持つファイルの内容を置き換えます。</span><span class="sxs-lookup"><span data-stu-id="49497-129">This example replaces the contents of a file with a known ID.</span></span>
 
 <!-- { "blockType": "request", "name": "upload-via-put-id", "scopes": "files.readwrite" } -->
 
@@ -104,9 +106,9 @@ Content-Type: text/plain
 The contents of the file goes here.
 ```
 
-### <a name="response"></a><span data-ttu-id="38d6f-130">応答</span><span class="sxs-lookup"><span data-stu-id="38d6f-130">Response</span></span>
+### <a name="response"></a><span data-ttu-id="49497-130">応答</span><span class="sxs-lookup"><span data-stu-id="49497-130">Response</span></span>
 
-<span data-ttu-id="38d6f-131">成功した場合、このメソッドは、新しく作成されたファイルの応答本文で [driveItem][item-resource] リソースを返します。</span><span class="sxs-lookup"><span data-stu-id="38d6f-131">If successful, this method returns an [driveItem][item-resource] resource in the response body for the newly created file.</span></span>
+<span data-ttu-id="49497-131">成功した場合、このメソッドは、新しく作成されたファイルの応答本文で [driveItem][item-resource] リソースを返します。</span><span class="sxs-lookup"><span data-stu-id="49497-131">If successful, this method returns an [driveItem][item-resource] resource in the response body for the newly created file.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -122,16 +124,19 @@ Content-Type: application/json
 }
 ```
 
-## <a name="error-responses"></a><span data-ttu-id="38d6f-132">エラー応答</span><span class="sxs-lookup"><span data-stu-id="38d6f-132">Error responses</span></span>
+## <a name="error-responses"></a><span data-ttu-id="49497-132">エラー応答</span><span class="sxs-lookup"><span data-stu-id="49497-132">Error responses</span></span>
 
-<span data-ttu-id="38d6f-133">エラーがどのように返されるかについては、「[エラー応答][error-response]」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="38d6f-133">See [Error Responses][error-response] for details about how errors are returned.</span></span>
+<span data-ttu-id="49497-133">エラーがどのように返されるかについては、「[エラー応答][error-response]」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="49497-133">See [Error Responses][error-response] for details about how errors are returned.</span></span>
 
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create a new file with content or update a file's content.",
   "keywords": "insert,upsert,update,upload",
-  "section": "documentation"
-} -->
+  "section": "documentation",
+  "suppressions": []
+}
+-->

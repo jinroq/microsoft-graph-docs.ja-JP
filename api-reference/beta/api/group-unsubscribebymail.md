@@ -4,49 +4,49 @@ description: 'このメソッドを呼び出すと、現在のユーザーは、
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: f7790ad68a99e13454add6db9a9e80229ab21254
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5df9934706d32ff4c2103ee350b31fee37d432b1
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32501999"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324101"
 ---
-# <a name="group-unsubscribebymail"></a><span data-ttu-id="1e503-104">グループ: unsubscribeByMail</span><span class="sxs-lookup"><span data-stu-id="1e503-104">group: unsubscribeByMail</span></span>
+# <a name="group-unsubscribebymail"></a><span data-ttu-id="86950-104">グループ: unsubscribeByMail</span><span class="sxs-lookup"><span data-stu-id="86950-104">group: unsubscribeByMail</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1e503-105">このメソッドを呼び出すと、現在のユーザーは、そのグループの新しい投稿、イベント、およびファイルに関するこのグループの電子メール通知を受信することを無効にします。</span><span class="sxs-lookup"><span data-stu-id="1e503-105">Calling this method will disable the current user to receive email notifications for this group about new posts, events, and files in that group.</span></span> <span data-ttu-id="1e503-106">Office 365 グループに対してのみサポートされています。</span><span class="sxs-lookup"><span data-stu-id="1e503-106">Supported for Office 365 groups only.</span></span> 
+<span data-ttu-id="86950-105">このメソッドを呼び出すと、現在のユーザーは、そのグループの新しい投稿、イベント、およびファイルに関するこのグループの電子メール通知を受信することを無効にします。</span><span class="sxs-lookup"><span data-stu-id="86950-105">Calling this method will disable the current user to receive email notifications for this group about new posts, events, and files in that group.</span></span> <span data-ttu-id="86950-106">Office 365 グループに対してのみサポートされています。</span><span class="sxs-lookup"><span data-stu-id="86950-106">Supported for Office 365 groups only.</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="1e503-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="1e503-107">Permissions</span></span>
-<span data-ttu-id="1e503-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1e503-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="86950-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="86950-107">Permissions</span></span>
+<span data-ttu-id="86950-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="86950-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1e503-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="1e503-110">Permission type</span></span>      | <span data-ttu-id="1e503-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="1e503-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="86950-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="86950-110">Permission type</span></span>      | <span data-ttu-id="86950-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="86950-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1e503-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="1e503-112">Delegated (work or school account)</span></span> | <span data-ttu-id="1e503-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1e503-113">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="1e503-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="1e503-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1e503-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="1e503-115">Not supported.</span></span>    |
-|<span data-ttu-id="1e503-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="1e503-116">Application</span></span> | <span data-ttu-id="1e503-117">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1e503-117">Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="86950-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="86950-112">Delegated (work or school account)</span></span> | <span data-ttu-id="86950-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="86950-113">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="86950-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="86950-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="86950-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="86950-115">Not supported.</span></span>    |
+|<span data-ttu-id="86950-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="86950-116">Application</span></span> | <span data-ttu-id="86950-117">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="86950-117">Group.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1e503-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="1e503-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="86950-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="86950-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/unsubscribeByMail
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="1e503-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="1e503-119">Request headers</span></span>
-| <span data-ttu-id="1e503-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="1e503-120">Header</span></span>       | <span data-ttu-id="1e503-121">値</span><span class="sxs-lookup"><span data-stu-id="1e503-121">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="86950-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="86950-119">Request headers</span></span>
+| <span data-ttu-id="86950-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="86950-120">Header</span></span>       | <span data-ttu-id="86950-121">値</span><span class="sxs-lookup"><span data-stu-id="86950-121">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="1e503-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="1e503-122">Authorization</span></span>  | <span data-ttu-id="1e503-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="1e503-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="1e503-125">Prefer</span><span class="sxs-lookup"><span data-stu-id="1e503-125">Prefer</span></span> | <span data-ttu-id="1e503-126">return=minimal.</span><span class="sxs-lookup"><span data-stu-id="1e503-126">return=minimal.</span></span> <span data-ttu-id="1e503-127">最小応答ヘッダーが要求ヘッダーに含まれている場合、正常な応答で `204 No Content` コードが返されます。</span><span class="sxs-lookup"><span data-stu-id="1e503-127">If minimal response header is included in the request header, then a successful response returns `204 No Content` code.</span></span> <span data-ttu-id="1e503-128">省略可能。</span><span class="sxs-lookup"><span data-stu-id="1e503-128">Optional.</span></span>  | 
+| <span data-ttu-id="86950-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="86950-122">Authorization</span></span>  | <span data-ttu-id="86950-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="86950-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="86950-125">Prefer</span><span class="sxs-lookup"><span data-stu-id="86950-125">Prefer</span></span> | <span data-ttu-id="86950-126">return=minimal.</span><span class="sxs-lookup"><span data-stu-id="86950-126">return=minimal.</span></span> <span data-ttu-id="86950-127">最小応答ヘッダーが要求ヘッダーに含まれている場合、正常な応答で `204 No Content` コードが返されます。</span><span class="sxs-lookup"><span data-stu-id="86950-127">If minimal response header is included in the request header, then a successful response returns `204 No Content` code.</span></span> <span data-ttu-id="86950-128">省略可能。</span><span class="sxs-lookup"><span data-stu-id="86950-128">Optional.</span></span>  | 
 
-## <a name="request-body"></a><span data-ttu-id="1e503-129">要求本文</span><span class="sxs-lookup"><span data-stu-id="1e503-129">Request body</span></span>
- <span data-ttu-id="1e503-130">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="1e503-130">Do not supply a request body for this method.</span></span> 
+## <a name="request-body"></a><span data-ttu-id="86950-129">要求本文</span><span class="sxs-lookup"><span data-stu-id="86950-129">Request body</span></span>
+ <span data-ttu-id="86950-130">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="86950-130">Do not supply a request body for this method.</span></span> 
 
-## <a name="response"></a><span data-ttu-id="1e503-131">応答</span><span class="sxs-lookup"><span data-stu-id="1e503-131">Response</span></span>
-<span data-ttu-id="1e503-p106">成功した場合、このメソッドは `200 OK` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="1e503-p106">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="86950-131">応答</span><span class="sxs-lookup"><span data-stu-id="86950-131">Response</span></span>
+<span data-ttu-id="86950-p106">成功した場合、このメソッドは `200 OK` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="86950-p106">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1e503-134">例</span><span class="sxs-lookup"><span data-stu-id="1e503-134">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="1e503-135">要求</span><span class="sxs-lookup"><span data-stu-id="1e503-135">Request</span></span>
-<span data-ttu-id="1e503-136">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="1e503-136">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="86950-134">例</span><span class="sxs-lookup"><span data-stu-id="86950-134">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="86950-135">要求</span><span class="sxs-lookup"><span data-stu-id="86950-135">Request</span></span>
+<span data-ttu-id="86950-136">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="86950-136">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "group_unsubscribebymail"
@@ -55,8 +55,8 @@ POST /groups/{id}/unsubscribeByMail
 POST https://graph.microsoft.com/beta/groups/{id}/unsubscribeByMail
 ```
 
-#### <a name="response"></a><span data-ttu-id="1e503-137">応答</span><span class="sxs-lookup"><span data-stu-id="1e503-137">Response</span></span>
-<span data-ttu-id="1e503-138">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="1e503-138">The following is an example of the response.</span></span> 
+#### <a name="response"></a><span data-ttu-id="86950-137">応答</span><span class="sxs-lookup"><span data-stu-id="86950-137">Response</span></span>
+<span data-ttu-id="86950-138">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="86950-138">The following is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -74,8 +74,6 @@ HTTP/1.1 200 OK
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/group-unsubscribebymail.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

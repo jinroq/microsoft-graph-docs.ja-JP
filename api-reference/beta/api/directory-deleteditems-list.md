@@ -4,53 +4,53 @@ description: '[削除済みアイテム] から、最近削除されたアイテ
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 72a7e810f26b281158cc83c91627d6abf7982301
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 17bcf6c1d40afe1d1983141120ba8134a75e5c8a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455199"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33326030"
 ---
-# <a name="list-deleted-items"></a><span data-ttu-id="9b952-103">削除済みアイテムを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="9b952-103">List deleted items</span></span>
+# <a name="list-deleted-items"></a><span data-ttu-id="45cad-103">削除済みアイテムを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="45cad-103">List deleted items</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9b952-104">[[削除済みアイテム]](../resources/directory.md) から、最近削除されたアイテムのリストを取得します。</span><span class="sxs-lookup"><span data-stu-id="9b952-104">Retrieve a list of recently deleted items from [deleted items](../resources/directory.md).</span></span>
+<span data-ttu-id="45cad-104">[[削除済みアイテム]](../resources/directory.md) から、最近削除されたアイテムのリストを取得します。</span><span class="sxs-lookup"><span data-stu-id="45cad-104">Retrieve a list of recently deleted items from [deleted items](../resources/directory.md).</span></span>
 
-<span data-ttu-id="9b952-105">現在、[削除済みアイテム] 機能は [group](../resources/group.md) および [user](../resources/user.md) リソースに対してのみサポートされています。</span><span class="sxs-lookup"><span data-stu-id="9b952-105">Currently, deleted items functionality is only supported for the [group](../resources/group.md) and [user](../resources/user.md) resources.</span></span>
+<span data-ttu-id="45cad-105">現在、[削除済みアイテム] 機能は [group](../resources/group.md) および [user](../resources/user.md) リソースに対してのみサポートされています。</span><span class="sxs-lookup"><span data-stu-id="45cad-105">Currently, deleted items functionality is only supported for the [group](../resources/group.md) and [user](../resources/user.md) resources.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="9b952-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="9b952-106">Permissions</span></span>
-<span data-ttu-id="9b952-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="9b952-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="45cad-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="45cad-106">Permissions</span></span>
+<span data-ttu-id="45cad-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="45cad-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-* <span data-ttu-id="9b952-109">user. all、directory.accessasuser.all、および all。すべてのユーザーの場合、すべてのユーザーが対象となります。</span><span class="sxs-lookup"><span data-stu-id="9b952-109">For users: User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.AccessAsUser.All</span></span>
-* <span data-ttu-id="9b952-110">グループの場合は、すべての directory.accessasuser.all、およびすべてのディレクトリを取得します。すべてのグループについて、</span><span class="sxs-lookup"><span data-stu-id="9b952-110">For groups: Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.AccessAsUser.All</span></span>
+* <span data-ttu-id="45cad-109">user. all、directory.accessasuser.all、および all。すべてのユーザーの場合、すべてのユーザーが対象となります。</span><span class="sxs-lookup"><span data-stu-id="45cad-109">For users: User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.AccessAsUser.All</span></span>
+* <span data-ttu-id="45cad-110">グループの場合は、すべての directory.accessasuser.all、およびすべてのディレクトリを取得します。すべてのグループについて、</span><span class="sxs-lookup"><span data-stu-id="45cad-110">For groups: Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.AccessAsUser.All</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="9b952-111">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="9b952-111">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="45cad-111">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="45cad-111">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http 
 GET /directory/deleteditems/microsoft.graph.group
 GET /directory/deletedItems/microsoft.graph.user
 ```
 
-<span data-ttu-id="9b952-112">この API は現在、削除済みアイテムからのグループ (microsoft.graph.group) またはユーザー (microsoft.graph.user) のオブジェクト タイプの取得をサポートしています。</span><span class="sxs-lookup"><span data-stu-id="9b952-112">This API currently supports retrieving object types of groups (microsoft.graph.group) or users (microsoft.graph.user) from deleted items.</span></span> <span data-ttu-id="9b952-113">タイムは、URI の必須部分として指定します。</span><span class="sxs-lookup"><span data-stu-id="9b952-113">The type is specified as a required part of the URI.</span></span> <span data-ttu-id="9b952-114">タイプが指定されていない GET /directory/deleteditems の呼び出しはサポートされません。</span><span class="sxs-lookup"><span data-stu-id="9b952-114">Calling GET /directory/deleteditems without a type is not supported.</span></span>
+<span data-ttu-id="45cad-112">この API は現在、削除済みアイテムからのグループ (microsoft.graph.group) またはユーザー (microsoft.graph.user) のオブジェクト タイプの取得をサポートしています。</span><span class="sxs-lookup"><span data-stu-id="45cad-112">This API currently supports retrieving object types of groups (microsoft.graph.group) or users (microsoft.graph.user) from deleted items.</span></span> <span data-ttu-id="45cad-113">タイムは、URI の必須部分として指定します。</span><span class="sxs-lookup"><span data-stu-id="45cad-113">The type is specified as a required part of the URI.</span></span> <span data-ttu-id="45cad-114">タイプが指定されていない GET /directory/deleteditems の呼び出しはサポートされません。</span><span class="sxs-lookup"><span data-stu-id="45cad-114">Calling GET /directory/deleteditems without a type is not supported.</span></span>
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="9b952-115">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="9b952-115">Optional query parameters</span></span>
-<span data-ttu-id="9b952-116">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="9b952-116">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="45cad-115">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="45cad-115">Optional query parameters</span></span>
+<span data-ttu-id="45cad-116">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="45cad-116">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="9b952-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="9b952-117">Request headers</span></span>
-| <span data-ttu-id="9b952-118">名前</span><span class="sxs-lookup"><span data-stu-id="9b952-118">Name</span></span>      |<span data-ttu-id="9b952-119">説明</span><span class="sxs-lookup"><span data-stu-id="9b952-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="45cad-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="45cad-117">Request headers</span></span>
+| <span data-ttu-id="45cad-118">名前</span><span class="sxs-lookup"><span data-stu-id="45cad-118">Name</span></span>      |<span data-ttu-id="45cad-119">説明</span><span class="sxs-lookup"><span data-stu-id="45cad-119">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="9b952-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="9b952-120">Authorization</span></span>  | <span data-ttu-id="9b952-121">ベアラー &lt;コード&gt; が*必要*</span><span class="sxs-lookup"><span data-stu-id="9b952-121">Bearer &lt;code&gt; *Required*</span></span>|
-| <span data-ttu-id="9b952-122">承諾</span><span class="sxs-lookup"><span data-stu-id="9b952-122">Accept</span></span>  | <span data-ttu-id="9b952-123">application/json</span><span class="sxs-lookup"><span data-stu-id="9b952-123">application/json</span></span> |
+| <span data-ttu-id="45cad-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="45cad-120">Authorization</span></span>  | <span data-ttu-id="45cad-121">ベアラー &lt;コード&gt; が*必要*</span><span class="sxs-lookup"><span data-stu-id="45cad-121">Bearer &lt;code&gt; *Required*</span></span>|
+| <span data-ttu-id="45cad-122">承諾</span><span class="sxs-lookup"><span data-stu-id="45cad-122">Accept</span></span>  | <span data-ttu-id="45cad-123">application/json</span><span class="sxs-lookup"><span data-stu-id="45cad-123">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="9b952-124">要求本文</span><span class="sxs-lookup"><span data-stu-id="9b952-124">Request body</span></span>
-<span data-ttu-id="9b952-125">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="9b952-125">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="45cad-124">要求本文</span><span class="sxs-lookup"><span data-stu-id="45cad-124">Request body</span></span>
+<span data-ttu-id="45cad-125">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="45cad-125">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="9b952-126">応答</span><span class="sxs-lookup"><span data-stu-id="9b952-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="45cad-126">応答</span><span class="sxs-lookup"><span data-stu-id="45cad-126">Response</span></span>
 
-<span data-ttu-id="9b952-127">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [directoryObject](../resources/directoryobject.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="9b952-127">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="9b952-128">例</span><span class="sxs-lookup"><span data-stu-id="9b952-128">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="9b952-129">要求</span><span class="sxs-lookup"><span data-stu-id="9b952-129">Request</span></span>
+<span data-ttu-id="45cad-127">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [directoryObject](../resources/directoryobject.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="45cad-127">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="45cad-128">例</span><span class="sxs-lookup"><span data-stu-id="45cad-128">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="45cad-129">要求</span><span class="sxs-lookup"><span data-stu-id="45cad-129">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -59,8 +59,8 @@ GET /directory/deletedItems/microsoft.graph.user
 ```http
 GET https://graph.microsoft.com/beta/directory/deleteditems/microsoft.graph.group
 ```
-##### <a name="response"></a><span data-ttu-id="9b952-130">応答</span><span class="sxs-lookup"><span data-stu-id="9b952-130">Response</span></span>
-<span data-ttu-id="9b952-p103">注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="9b952-p103">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="45cad-130">応答</span><span class="sxs-lookup"><span data-stu-id="45cad-130">Response</span></span>
+<span data-ttu-id="45cad-p103">注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="45cad-p103">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -97,8 +97,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/directory-deleteditems-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
