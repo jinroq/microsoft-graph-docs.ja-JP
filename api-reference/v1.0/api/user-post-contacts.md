@@ -5,25 +5,25 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: bd2bdfdbfc5242a49085c236171b86cd7aa29f3a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27935641"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32564072"
 ---
-# <a name="create-contact"></a><span data-ttu-id="f6d41-103">連絡先を作成する</span><span class="sxs-lookup"><span data-stu-id="f6d41-103">Create Contact</span></span>
+# <a name="create-contact"></a><span data-ttu-id="69adc-103">連絡先を作成する</span><span class="sxs-lookup"><span data-stu-id="69adc-103">Create Contact</span></span>
 
-<span data-ttu-id="f6d41-104">連絡先をルート連絡先フォルダーまたは別の連絡先フォルダーの連絡先エンドポイントに追加します。</span><span class="sxs-lookup"><span data-stu-id="f6d41-104">Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.</span></span>
-## <a name="permissions"></a><span data-ttu-id="f6d41-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="f6d41-105">Permissions</span></span>
-<span data-ttu-id="f6d41-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f6d41-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="69adc-104">連絡先をルート連絡先フォルダーまたは別の連絡先フォルダーの連絡先エンドポイントに追加します。</span><span class="sxs-lookup"><span data-stu-id="69adc-104">Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.</span></span>
+## <a name="permissions"></a><span data-ttu-id="69adc-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="69adc-105">Permissions</span></span>
+<span data-ttu-id="69adc-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="69adc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f6d41-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="f6d41-108">Permission type</span></span>      | <span data-ttu-id="f6d41-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="f6d41-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="69adc-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="69adc-108">Permission type</span></span>      | <span data-ttu-id="69adc-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="69adc-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f6d41-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="f6d41-110">Delegated (work or school account)</span></span> | <span data-ttu-id="f6d41-111">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f6d41-111">Contacts.ReadWrite</span></span>    |
-|<span data-ttu-id="f6d41-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="f6d41-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f6d41-113">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f6d41-113">Contacts.ReadWrite</span></span>    |
-|<span data-ttu-id="f6d41-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="f6d41-114">Application</span></span> | <span data-ttu-id="f6d41-115">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f6d41-115">Contacts.ReadWrite</span></span> |
+|<span data-ttu-id="69adc-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="69adc-110">Delegated (work or school account)</span></span> | <span data-ttu-id="69adc-111">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="69adc-111">Contacts.ReadWrite</span></span>    |
+|<span data-ttu-id="69adc-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="69adc-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="69adc-113">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="69adc-113">Contacts.ReadWrite</span></span>    |
+|<span data-ttu-id="69adc-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="69adc-114">Application</span></span> | <span data-ttu-id="69adc-115">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="69adc-115">Contacts.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f6d41-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="f6d41-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="69adc-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="69adc-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/contacts
@@ -31,22 +31,22 @@ POST /users/{id | userPrincipalName}/contacts
 POST /me/contactFolders/{contactFolderId}/contacts
 POST /users/{id | userPrincipalName}/contactFolders/{contactFolderId}/contacts
 ```
-## <a name="request-headers"></a><span data-ttu-id="f6d41-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f6d41-117">Request headers</span></span>
-| <span data-ttu-id="f6d41-118">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f6d41-118">Header</span></span>       | <span data-ttu-id="f6d41-119">値</span><span class="sxs-lookup"><span data-stu-id="f6d41-119">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="69adc-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="69adc-117">Request headers</span></span>
+| <span data-ttu-id="69adc-118">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="69adc-118">Header</span></span>       | <span data-ttu-id="69adc-119">値</span><span class="sxs-lookup"><span data-stu-id="69adc-119">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="f6d41-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="f6d41-120">Authorization</span></span>  | <span data-ttu-id="f6d41-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="f6d41-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="f6d41-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="f6d41-123">Content-Type</span></span>  | <span data-ttu-id="f6d41-124">application/json</span><span class="sxs-lookup"><span data-stu-id="f6d41-124">application/json</span></span>  |
+| <span data-ttu-id="69adc-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="69adc-120">Authorization</span></span>  | <span data-ttu-id="69adc-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="69adc-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="69adc-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="69adc-123">Content-Type</span></span>  | <span data-ttu-id="69adc-124">application/json</span><span class="sxs-lookup"><span data-stu-id="69adc-124">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="f6d41-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="f6d41-125">Request body</span></span>
-<span data-ttu-id="f6d41-126">要求本文で、[連絡先](../resources/contact.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="f6d41-126">In the request body, supply a JSON representation of [Contact](../resources/contact.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="69adc-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="69adc-125">Request body</span></span>
+<span data-ttu-id="69adc-126">要求本文で、[連絡先](../resources/contact.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="69adc-126">In the request body, supply a JSON representation of [Contact](../resources/contact.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f6d41-127">応答</span><span class="sxs-lookup"><span data-stu-id="f6d41-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="69adc-127">応答</span><span class="sxs-lookup"><span data-stu-id="69adc-127">Response</span></span>
 
-<span data-ttu-id="f6d41-128">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で[連絡先](../resources/contact.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="f6d41-128">If successful, this method returns `201 Created` response code and [Contact](../resources/contact.md) object in the response body.</span></span>
+<span data-ttu-id="69adc-128">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で[連絡先](../resources/contact.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="69adc-128">If successful, this method returns `201 Created` response code and [Contact](../resources/contact.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f6d41-129">例</span><span class="sxs-lookup"><span data-stu-id="f6d41-129">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="f6d41-130">要求</span><span class="sxs-lookup"><span data-stu-id="f6d41-130">Request</span></span>
-<span data-ttu-id="f6d41-131">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="f6d41-131">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="69adc-129">例</span><span class="sxs-lookup"><span data-stu-id="69adc-129">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="69adc-130">要求</span><span class="sxs-lookup"><span data-stu-id="69adc-130">Request</span></span>
+<span data-ttu-id="69adc-131">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="69adc-131">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_contact_from_user"
@@ -69,10 +69,10 @@ Content-type: application/json
   ]
 }
 ```
-<span data-ttu-id="f6d41-132">要求本文で、[連絡先](../resources/contact.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="f6d41-132">In the request body, supply a JSON representation of [contact](../resources/contact.md) object.</span></span>
+<span data-ttu-id="69adc-132">要求本文で、[連絡先](../resources/contact.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="69adc-132">In the request body, supply a JSON representation of [contact](../resources/contact.md) object.</span></span>
 
-##### <a name="response"></a><span data-ttu-id="f6d41-133">応答</span><span class="sxs-lookup"><span data-stu-id="f6d41-133">Response</span></span>
-<span data-ttu-id="f6d41-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="f6d41-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="69adc-133">応答</span><span class="sxs-lookup"><span data-stu-id="69adc-133">Response</span></span>
+<span data-ttu-id="69adc-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="69adc-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
