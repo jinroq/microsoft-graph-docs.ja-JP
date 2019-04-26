@@ -1,33 +1,33 @@
 ---
-title: skypeForBusinessDeviceUsageUserDetail リソースの種類
+title: skypeforbusinessdevice使い方 userdetail リソースの種類
 description: リソースの JSON 表記を次に示します。
 localization_priority: Normal
 ms.openlocfilehash: 95f2f6cf1f3f6c54c4b6b4b39a7118cd8a94b224
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858381"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32555935"
 ---
-# <a name="skypeforbusinessdeviceusageuserdetail-resource-type"></a><span data-ttu-id="b772c-103">skypeForBusinessDeviceUsageUserDetail リソースの種類</span><span class="sxs-lookup"><span data-stu-id="b772c-103">skypeForBusinessDeviceUsageUserDetail resource type</span></span>
+# <a name="skypeforbusinessdeviceusageuserdetail-resource-type"></a><span data-ttu-id="78ff8-103">skypeforbusinessdevice使い方 userdetail リソースの種類</span><span class="sxs-lookup"><span data-stu-id="78ff8-103">skypeForBusinessDeviceUsageUserDetail resource type</span></span>
 
-## <a name="properties"></a><span data-ttu-id="b772c-104">プロパティ</span><span class="sxs-lookup"><span data-stu-id="b772c-104">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="78ff8-104">プロパティ</span><span class="sxs-lookup"><span data-stu-id="78ff8-104">Properties</span></span>
 
-| <span data-ttu-id="b772c-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="b772c-105">Property</span></span>          | <span data-ttu-id="b772c-106">種類</span><span class="sxs-lookup"><span data-stu-id="b772c-106">Type</span></span>    |
+| <span data-ttu-id="78ff8-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="78ff8-105">Property</span></span>          | <span data-ttu-id="78ff8-106">型</span><span class="sxs-lookup"><span data-stu-id="78ff8-106">Type</span></span>    |
 | :---------------- | :------ |
-| <span data-ttu-id="b772c-107">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="b772c-107">reportRefreshDate</span></span> | <span data-ttu-id="b772c-108">日付</span><span class="sxs-lookup"><span data-stu-id="b772c-108">Date</span></span>    |
-| <span data-ttu-id="b772c-109">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="b772c-109">userPrincipalName</span></span> | <span data-ttu-id="b772c-110">String</span><span class="sxs-lookup"><span data-stu-id="b772c-110">String</span></span>  |
-| <span data-ttu-id="b772c-111">lastActivityDate</span><span class="sxs-lookup"><span data-stu-id="b772c-111">lastActivityDate</span></span>  | <span data-ttu-id="b772c-112">日付</span><span class="sxs-lookup"><span data-stu-id="b772c-112">Date</span></span>    |
-| <span data-ttu-id="b772c-113">usedWindows</span><span class="sxs-lookup"><span data-stu-id="b772c-113">usedWindows</span></span>       | <span data-ttu-id="b772c-114">ブール型</span><span class="sxs-lookup"><span data-stu-id="b772c-114">Boolean</span></span> |
-| <span data-ttu-id="b772c-115">usedWindowsPhone</span><span class="sxs-lookup"><span data-stu-id="b772c-115">usedWindowsPhone</span></span>  | <span data-ttu-id="b772c-116">ブール型</span><span class="sxs-lookup"><span data-stu-id="b772c-116">Boolean</span></span> |
-| <span data-ttu-id="b772c-117">usedAndroidPhone</span><span class="sxs-lookup"><span data-stu-id="b772c-117">usedAndroidPhone</span></span>  | <span data-ttu-id="b772c-118">ブール型</span><span class="sxs-lookup"><span data-stu-id="b772c-118">Boolean</span></span> |
-| <span data-ttu-id="b772c-119">usediPhone</span><span class="sxs-lookup"><span data-stu-id="b772c-119">usediPhone</span></span>        | <span data-ttu-id="b772c-120">ブール型</span><span class="sxs-lookup"><span data-stu-id="b772c-120">Boolean</span></span> |
-| <span data-ttu-id="b772c-121">usediPad</span><span class="sxs-lookup"><span data-stu-id="b772c-121">usediPad</span></span>          | <span data-ttu-id="b772c-122">ブール型</span><span class="sxs-lookup"><span data-stu-id="b772c-122">Boolean</span></span> |
-| <span data-ttu-id="b772c-123">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="b772c-123">reportPeriod</span></span>      | <span data-ttu-id="b772c-124">String</span><span class="sxs-lookup"><span data-stu-id="b772c-124">String</span></span>  |
+| <span data-ttu-id="78ff8-107">reportrefreshdate</span><span class="sxs-lookup"><span data-stu-id="78ff8-107">reportRefreshDate</span></span> | <span data-ttu-id="78ff8-108">Date</span><span class="sxs-lookup"><span data-stu-id="78ff8-108">Date</span></span>    |
+| <span data-ttu-id="78ff8-109">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="78ff8-109">userPrincipalName</span></span> | <span data-ttu-id="78ff8-110">String</span><span class="sxs-lookup"><span data-stu-id="78ff8-110">String</span></span>  |
+| <span data-ttu-id="78ff8-111">lastactivitydate</span><span class="sxs-lookup"><span data-stu-id="78ff8-111">lastActivityDate</span></span>  | <span data-ttu-id="78ff8-112">Date</span><span class="sxs-lookup"><span data-stu-id="78ff8-112">Date</span></span>    |
+| <span data-ttu-id="78ff8-113">未使用のウィンドウ</span><span class="sxs-lookup"><span data-stu-id="78ff8-113">usedWindows</span></span>       | <span data-ttu-id="78ff8-114">ブール値</span><span class="sxs-lookup"><span data-stu-id="78ff8-114">Boolean</span></span> |
+| <span data-ttu-id="78ff8-115">usedWindowsPhone</span><span class="sxs-lookup"><span data-stu-id="78ff8-115">usedWindowsPhone</span></span>  | <span data-ttu-id="78ff8-116">ブール値</span><span class="sxs-lookup"><span data-stu-id="78ff8-116">Boolean</span></span> |
+| <span data-ttu-id="78ff8-117">used androidphone</span><span class="sxs-lookup"><span data-stu-id="78ff8-117">usedAndroidPhone</span></span>  | <span data-ttu-id="78ff8-118">ブール値</span><span class="sxs-lookup"><span data-stu-id="78ff8-118">Boolean</span></span> |
+| <span data-ttu-id="78ff8-119">usediphone</span><span class="sxs-lookup"><span data-stu-id="78ff8-119">usediPhone</span></span>        | <span data-ttu-id="78ff8-120">ブール値</span><span class="sxs-lookup"><span data-stu-id="78ff8-120">Boolean</span></span> |
+| <span data-ttu-id="78ff8-121">usedipad</span><span class="sxs-lookup"><span data-stu-id="78ff8-121">usediPad</span></span>          | <span data-ttu-id="78ff8-122">ブール値</span><span class="sxs-lookup"><span data-stu-id="78ff8-122">Boolean</span></span> |
+| <span data-ttu-id="78ff8-123">reportperiod</span><span class="sxs-lookup"><span data-stu-id="78ff8-123">reportPeriod</span></span>      | <span data-ttu-id="78ff8-124">String</span><span class="sxs-lookup"><span data-stu-id="78ff8-124">String</span></span>  |
 
-## <a name="json-representation"></a><span data-ttu-id="b772c-125">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="b772c-125">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="78ff8-125">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="78ff8-125">JSON representation</span></span>
 
-<span data-ttu-id="b772c-126">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="b772c-126">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="78ff8-126">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="78ff8-126">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

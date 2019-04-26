@@ -2,29 +2,29 @@
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: アクセス許可
+title: Permission
 localization_priority: Normal
 ms.openlocfilehash: 12390583dcb1a87a5c9492ae3dcbcb132a66f69c
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482078"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568257"
 ---
-# <a name="permission-resource-type"></a><span data-ttu-id="12384-102">permission リソースの種類</span><span class="sxs-lookup"><span data-stu-id="12384-102">permission resource type</span></span>
+# <a name="permission-resource-type"></a><span data-ttu-id="225e4-102">permission リソースの種類</span><span class="sxs-lookup"><span data-stu-id="225e4-102">permission resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="12384-103">**permission**リソースは、[ドライブ項目](driveitem.md)リソースに対して付与された共有アクセス許可に関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="12384-103">The **permission** resource provides information about a sharing permission granted for a [driveItem](driveitem.md) resource.</span></span>
+<span data-ttu-id="225e4-103">**permission**リソースは、[ドライブ項目](driveitem.md)リソースに対して付与された共有アクセス許可に関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="225e4-103">The **permission** resource provides information about a sharing permission granted for a [driveItem](driveitem.md) resource.</span></span>
 
-<span data-ttu-id="12384-104">共有アクセス許可にはさまざまなフォームがあります。</span><span class="sxs-lookup"><span data-stu-id="12384-104">Sharing permissions have a number of different forms.</span></span>
-<span data-ttu-id="12384-105">**permission**リソースは、リソースのファセットを使用して、これらのさまざまなフォームを表します。</span><span class="sxs-lookup"><span data-stu-id="12384-105">The **permission** resource represents these different forms through facets on the resource.</span></span>
+<span data-ttu-id="225e4-104">共有アクセス許可にはさまざまなフォームがあります。</span><span class="sxs-lookup"><span data-stu-id="225e4-104">Sharing permissions have a number of different forms.</span></span>
+<span data-ttu-id="225e4-105">**permission**リソースは、リソースのファセットを使用して、これらのさまざまなフォームを表します。</span><span class="sxs-lookup"><span data-stu-id="225e4-105">The **permission** resource represents these different forms through facets on the resource.</span></span>
 
-><span data-ttu-id="12384-106">**注:** OneDrive for business および SharePoint のドキュメントライブラリは、 **inheritedfrom**プロパティを返しません。</span><span class="sxs-lookup"><span data-stu-id="12384-106">**Note:** OneDrive for Business and SharePoint document libraries do not return the **inheritedFrom** property.</span></span>
+><span data-ttu-id="225e4-106">**注:** OneDrive for business および SharePoint のドキュメントライブラリは、 **inheritedfrom**プロパティを返しません。</span><span class="sxs-lookup"><span data-stu-id="225e4-106">**Note:** OneDrive for Business and SharePoint document libraries do not return the **inheritedFrom** property.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="12384-107">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="12384-107">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="225e4-107">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="225e4-107">JSON representation</span></span>
 
-<span data-ttu-id="12384-108">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="12384-108">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="225e4-108">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="225e4-108">Here is a JSON representation of the resource.</span></span>
 
 <!--{
   "blockType": "resource",
@@ -58,50 +58,50 @@ ms.locfileid: "30482078"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="12384-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="12384-109">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="225e4-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="225e4-109">Properties</span></span>
 
-| <span data-ttu-id="12384-110">プロパティ</span><span class="sxs-lookup"><span data-stu-id="12384-110">Property</span></span>            | <span data-ttu-id="12384-111">種類</span><span class="sxs-lookup"><span data-stu-id="12384-111">Type</span></span>                        | <span data-ttu-id="12384-112">説明</span><span class="sxs-lookup"><span data-stu-id="12384-112">Description</span></span>
+| <span data-ttu-id="225e4-110">プロパティ</span><span class="sxs-lookup"><span data-stu-id="225e4-110">Property</span></span>            | <span data-ttu-id="225e4-111">型</span><span class="sxs-lookup"><span data-stu-id="225e4-111">Type</span></span>                        | <span data-ttu-id="225e4-112">説明</span><span class="sxs-lookup"><span data-stu-id="225e4-112">Description</span></span>
 |:--------------------|:----------------------------|:-------------------------
-| <span data-ttu-id="12384-113">id</span><span class="sxs-lookup"><span data-stu-id="12384-113">id</span></span>                  | <span data-ttu-id="12384-114">String</span><span class="sxs-lookup"><span data-stu-id="12384-114">String</span></span>                      | <span data-ttu-id="12384-p102">項目の全アクセス許可の中の、アクセス許可の一意の識別子です。読み取り専用。</span><span class="sxs-lookup"><span data-stu-id="12384-p102">The unique identifier of the permission among all permissions on the item. Read-only.</span></span>
-| <span data-ttu-id="12384-117">grantedTo</span><span class="sxs-lookup"><span data-stu-id="12384-117">grantedTo</span></span>           | <span data-ttu-id="12384-118">[IdentitySet][]</span><span class="sxs-lookup"><span data-stu-id="12384-118">[IdentitySet][]</span></span>             | <span data-ttu-id="12384-p103">ユーザー タイプのアクセス許可、ユーザーとこのアクセス許可のアプリケーションの詳細。読み取り専用。</span><span class="sxs-lookup"><span data-stu-id="12384-p103">For user type permissions, the details of the users & applications for this permission. Read-only.</span></span>
-| <span data-ttu-id="12384-121">grantedToIdentities</span><span class="sxs-lookup"><span data-stu-id="12384-121">grantedToIdentities</span></span> | <span data-ttu-id="12384-122">コレクション (id[セット][])</span><span class="sxs-lookup"><span data-stu-id="12384-122">Collection([IdentitySet][])</span></span> | <span data-ttu-id="12384-123">リンクの種類のアクセス許可では、アクセス許可が付与されたユーザーの詳細。</span><span class="sxs-lookup"><span data-stu-id="12384-123">For link type permissions, the details of the users to whom permission was granted.</span></span> <span data-ttu-id="12384-124">読み取り専用。</span><span class="sxs-lookup"><span data-stu-id="12384-124">Read-only.</span></span>
-| <span data-ttu-id="12384-125">invitation</span><span class="sxs-lookup"><span data-stu-id="12384-125">invitation</span></span>          | <span data-ttu-id="12384-126">[SharingInvitation][]</span><span class="sxs-lookup"><span data-stu-id="12384-126">[SharingInvitation][]</span></span>       | <span data-ttu-id="12384-p105">このアクセス許可に任意に関連付けられた共有招待状の詳細情報です。読み取り専用。</span><span class="sxs-lookup"><span data-stu-id="12384-p105">Details of any associated sharing invitation for this permission. Read-only.</span></span>
-| <span data-ttu-id="12384-129">inheritedFrom</span><span class="sxs-lookup"><span data-stu-id="12384-129">inheritedFrom</span></span>       | <span data-ttu-id="12384-130">[ItemReference][]</span><span class="sxs-lookup"><span data-stu-id="12384-130">[ItemReference][]</span></span>           | <span data-ttu-id="12384-p106">現在のアクセス許可が先祖から継承されている場合、その先祖への参照を提供します。読み取り専用。</span><span class="sxs-lookup"><span data-stu-id="12384-p106">Provides a reference to the ancestor of the current permission, if it is inherited from an ancestor. Read-only.</span></span>
-| <span data-ttu-id="12384-133">link</span><span class="sxs-lookup"><span data-stu-id="12384-133">link</span></span>                | <span data-ttu-id="12384-134">[SharingLink][]</span><span class="sxs-lookup"><span data-stu-id="12384-134">[SharingLink][]</span></span>             | <span data-ttu-id="12384-p107">現在のアクセス許可がリンク タイプのアクセス許可である場合は、そのリンクの詳細を提供します。読み取り専用。</span><span class="sxs-lookup"><span data-stu-id="12384-p107">Provides the link details of the current permission, if it is a link type permissions. Read-only.</span></span>
-| <span data-ttu-id="12384-137">roles</span><span class="sxs-lookup"><span data-stu-id="12384-137">roles</span></span>               | <span data-ttu-id="12384-138">Collection(String)</span><span class="sxs-lookup"><span data-stu-id="12384-138">Collection(String)</span></span>          | <span data-ttu-id="12384-p108">`read` など、アクセス許可の種類。ロールの完全なリストは以下を参照してください。読み取り専用。</span><span class="sxs-lookup"><span data-stu-id="12384-p108">The type of permission, e.g. `read`. See below for the full list of roles. Read-only.</span></span>
-| <span data-ttu-id="12384-142">shareId</span><span class="sxs-lookup"><span data-stu-id="12384-142">shareId</span></span>             | <span data-ttu-id="12384-143">String</span><span class="sxs-lookup"><span data-stu-id="12384-143">String</span></span>                      | <span data-ttu-id="12384-144">共有**[API][]** を介してこの共有アイテムにアクセスするために使用できる一意のトークン。</span><span class="sxs-lookup"><span data-stu-id="12384-144">A unique token that can be used to access this shared item via the **[shares API][]**.</span></span> <span data-ttu-id="12384-145">値の取得のみ可能です。</span><span class="sxs-lookup"><span data-stu-id="12384-145">Read-only.</span></span>
-| <span data-ttu-id="12384-146">expirationDateTime</span><span class="sxs-lookup"><span data-stu-id="12384-146">expirationDateTime</span></span>  | <span data-ttu-id="12384-147">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="12384-147">DateTimeOffset</span></span>              | <span data-ttu-id="12384-148">yyyy-mm-yyyy-mm-ddthh: mm: ssz の形式は、アクセス許可の有効期限を示します。</span><span class="sxs-lookup"><span data-stu-id="12384-148">A format of yyyy-MM-ddTHH:mm:ssZ of DateTimeOffset indicates the expiration time of the permission.</span></span> <span data-ttu-id="12384-149">MinValue は、このアクセス許可に有効期限が設定されていないことを示します。</span><span class="sxs-lookup"><span data-stu-id="12384-149">DateTime.MinValue indicates there is no expiration set for this permission.</span></span> <span data-ttu-id="12384-150">省略可能。</span><span class="sxs-lookup"><span data-stu-id="12384-150">Optional.</span></span>
-| <span data-ttu-id="12384-151">hasPassword</span><span class="sxs-lookup"><span data-stu-id="12384-151">hasPassword</span></span>         | <span data-ttu-id="12384-152">ブール型</span><span class="sxs-lookup"><span data-stu-id="12384-152">Boolean</span></span>                     | <span data-ttu-id="12384-153">これは、このアクセス許可に対してパスワードが設定されているかどうかを示します。これは応答でのみ表示されます。</span><span class="sxs-lookup"><span data-stu-id="12384-153">This indicates whether password is set for this permission, it's only showing in response.</span></span> <span data-ttu-id="12384-154">省略可能で、読み取り専用で、OneDrive 個人用のみです。</span><span class="sxs-lookup"><span data-stu-id="12384-154">Optional and Read-only and for OneDrive Personal only.</span></span>
+| <span data-ttu-id="225e4-113">id</span><span class="sxs-lookup"><span data-stu-id="225e4-113">id</span></span>                  | <span data-ttu-id="225e4-114">String</span><span class="sxs-lookup"><span data-stu-id="225e4-114">String</span></span>                      | <span data-ttu-id="225e4-p102">項目の全アクセス許可の中の、アクセス許可の一意の識別子です。読み取り専用。</span><span class="sxs-lookup"><span data-stu-id="225e4-p102">The unique identifier of the permission among all permissions on the item. Read-only.</span></span>
+| <span data-ttu-id="225e4-117">grantedTo</span><span class="sxs-lookup"><span data-stu-id="225e4-117">grantedTo</span></span>           | <span data-ttu-id="225e4-118">[IdentitySet][]</span><span class="sxs-lookup"><span data-stu-id="225e4-118">[IdentitySet][]</span></span>             | <span data-ttu-id="225e4-p103">ユーザー タイプのアクセス許可、ユーザーとこのアクセス許可のアプリケーションの詳細。読み取り専用。</span><span class="sxs-lookup"><span data-stu-id="225e4-p103">For user type permissions, the details of the users & applications for this permission. Read-only.</span></span>
+| <span data-ttu-id="225e4-121">grantedToIdentities</span><span class="sxs-lookup"><span data-stu-id="225e4-121">grantedToIdentities</span></span> | <span data-ttu-id="225e4-122">コレクション (id[セット][])</span><span class="sxs-lookup"><span data-stu-id="225e4-122">Collection([IdentitySet][])</span></span> | <span data-ttu-id="225e4-123">リンクの種類のアクセス許可では、アクセス許可が付与されたユーザーの詳細。</span><span class="sxs-lookup"><span data-stu-id="225e4-123">For link type permissions, the details of the users to whom permission was granted.</span></span> <span data-ttu-id="225e4-124">読み取り専用。</span><span class="sxs-lookup"><span data-stu-id="225e4-124">Read-only.</span></span>
+| <span data-ttu-id="225e4-125">invitation</span><span class="sxs-lookup"><span data-stu-id="225e4-125">invitation</span></span>          | <span data-ttu-id="225e4-126">[SharingInvitation][]</span><span class="sxs-lookup"><span data-stu-id="225e4-126">[SharingInvitation][]</span></span>       | <span data-ttu-id="225e4-p105">このアクセス許可に任意に関連付けられた共有招待状の詳細情報です。読み取り専用。</span><span class="sxs-lookup"><span data-stu-id="225e4-p105">Details of any associated sharing invitation for this permission. Read-only.</span></span>
+| <span data-ttu-id="225e4-129">inheritedFrom</span><span class="sxs-lookup"><span data-stu-id="225e4-129">inheritedFrom</span></span>       | <span data-ttu-id="225e4-130">[ItemReference][]</span><span class="sxs-lookup"><span data-stu-id="225e4-130">[ItemReference][]</span></span>           | <span data-ttu-id="225e4-p106">現在のアクセス許可が先祖から継承されている場合、その先祖への参照を提供します。読み取り専用。</span><span class="sxs-lookup"><span data-stu-id="225e4-p106">Provides a reference to the ancestor of the current permission, if it is inherited from an ancestor. Read-only.</span></span>
+| <span data-ttu-id="225e4-133">link</span><span class="sxs-lookup"><span data-stu-id="225e4-133">link</span></span>                | <span data-ttu-id="225e4-134">[SharingLink][]</span><span class="sxs-lookup"><span data-stu-id="225e4-134">[SharingLink][]</span></span>             | <span data-ttu-id="225e4-p107">現在のアクセス許可がリンク タイプのアクセス許可である場合は、そのリンクの詳細を提供します。読み取り専用。</span><span class="sxs-lookup"><span data-stu-id="225e4-p107">Provides the link details of the current permission, if it is a link type permissions. Read-only.</span></span>
+| <span data-ttu-id="225e4-137">roles</span><span class="sxs-lookup"><span data-stu-id="225e4-137">roles</span></span>               | <span data-ttu-id="225e4-138">Collection(String)</span><span class="sxs-lookup"><span data-stu-id="225e4-138">Collection(String)</span></span>          | <span data-ttu-id="225e4-p108">`read` など、アクセス許可の種類。ロールの完全なリストは以下を参照してください。読み取り専用。</span><span class="sxs-lookup"><span data-stu-id="225e4-p108">The type of permission, e.g. `read`. See below for the full list of roles. Read-only.</span></span>
+| <span data-ttu-id="225e4-142">shareId</span><span class="sxs-lookup"><span data-stu-id="225e4-142">shareId</span></span>             | <span data-ttu-id="225e4-143">String</span><span class="sxs-lookup"><span data-stu-id="225e4-143">String</span></span>                      | <span data-ttu-id="225e4-144">共有**[API][]** を介してこの共有アイテムにアクセスするために使用できる一意のトークン。</span><span class="sxs-lookup"><span data-stu-id="225e4-144">A unique token that can be used to access this shared item via the **[shares API][]**.</span></span> <span data-ttu-id="225e4-145">読み取り専用。</span><span class="sxs-lookup"><span data-stu-id="225e4-145">Read-only.</span></span>
+| <span data-ttu-id="225e4-146">expirationDateTime</span><span class="sxs-lookup"><span data-stu-id="225e4-146">expirationDateTime</span></span>  | <span data-ttu-id="225e4-147">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="225e4-147">DateTimeOffset</span></span>              | <span data-ttu-id="225e4-148">yyyy-mm-yyyy-mm-ddthh: mm: ssz の形式は、アクセス許可の有効期限を示します。</span><span class="sxs-lookup"><span data-stu-id="225e4-148">A format of yyyy-MM-ddTHH:mm:ssZ of DateTimeOffset indicates the expiration time of the permission.</span></span> <span data-ttu-id="225e4-149">MinValue は、このアクセス許可に有効期限が設定されていないことを示します。</span><span class="sxs-lookup"><span data-stu-id="225e4-149">DateTime.MinValue indicates there is no expiration set for this permission.</span></span> <span data-ttu-id="225e4-150">省略可能。</span><span class="sxs-lookup"><span data-stu-id="225e4-150">Optional.</span></span>
+| <span data-ttu-id="225e4-151">hasPassword</span><span class="sxs-lookup"><span data-stu-id="225e4-151">hasPassword</span></span>         | <span data-ttu-id="225e4-152">Boolean</span><span class="sxs-lookup"><span data-stu-id="225e4-152">Boolean</span></span>                     | <span data-ttu-id="225e4-153">これは、このアクセス許可に対してパスワードが設定されているかどうかを示します。これは応答でのみ表示されます。</span><span class="sxs-lookup"><span data-stu-id="225e4-153">This indicates whether password is set for this permission, it's only showing in response.</span></span> <span data-ttu-id="225e4-154">省略可能で、読み取り専用で、OneDrive 個人用のみです。</span><span class="sxs-lookup"><span data-stu-id="225e4-154">Optional and Read-only and for OneDrive Personal only.</span></span>
 
-### <a name="roles-enumeration-values"></a><span data-ttu-id="12384-155">Roles 列挙値</span><span class="sxs-lookup"><span data-stu-id="12384-155">Roles enumeration values</span></span>
+### <a name="roles-enumeration-values"></a><span data-ttu-id="225e4-155">Roles 列挙値</span><span class="sxs-lookup"><span data-stu-id="225e4-155">Roles enumeration values</span></span>
 
-| <span data-ttu-id="12384-156">値</span><span class="sxs-lookup"><span data-stu-id="12384-156">Value</span></span>        | <span data-ttu-id="12384-157">詳細</span><span class="sxs-lookup"><span data-stu-id="12384-157">Details</span></span>                                                                        |
+| <span data-ttu-id="225e4-156">値</span><span class="sxs-lookup"><span data-stu-id="225e4-156">Value</span></span>        | <span data-ttu-id="225e4-157">詳細</span><span class="sxs-lookup"><span data-stu-id="225e4-157">Details</span></span>                                                                        |
 |:------------|:-------------------------------------------------------------------------------|
-| `read`      | <span data-ttu-id="12384-158">項目のメタデータと内容を読み取る機能を提供します。</span><span class="sxs-lookup"><span data-stu-id="12384-158">Provides the ability to read the metadata and contents of the item.</span></span>            |
-| `write`     | <span data-ttu-id="12384-159">項目のメタデータと内容の読み取りと変更の機能を提供します。</span><span class="sxs-lookup"><span data-stu-id="12384-159">Provides the ability to read and modify the metadata and contents of the item.</span></span> |
-| `sp.owner`  | <span data-ttu-id="12384-160">SharePoint および OneDrive for Business の場合、これは所有者ロールを表します。</span><span class="sxs-lookup"><span data-stu-id="12384-160">For SharePoint and OneDrive for Business this represents the owner role.</span></span>       |
-| `sp.member` | <span data-ttu-id="12384-161">SharePoint および OneDrive for Business の場合、これはメンバー ロールを表します。</span><span class="sxs-lookup"><span data-stu-id="12384-161">For SharePoint and OneDrive for Business this represents the member role.</span></span>      |
+| `read`      | <span data-ttu-id="225e4-158">項目のメタデータと内容を読み取る機能を提供します。</span><span class="sxs-lookup"><span data-stu-id="225e4-158">Provides the ability to read the metadata and contents of the item.</span></span>            |
+| `write`     | <span data-ttu-id="225e4-159">項目のメタデータと内容の読み取りと変更の機能を提供します。</span><span class="sxs-lookup"><span data-stu-id="225e4-159">Provides the ability to read and modify the metadata and contents of the item.</span></span> |
+| `sp.owner`  | <span data-ttu-id="225e4-160">SharePoint および OneDrive for Business の場合、これは所有者ロールを表します。</span><span class="sxs-lookup"><span data-stu-id="225e4-160">For SharePoint and OneDrive for Business this represents the owner role.</span></span>       |
+| `sp.member` | <span data-ttu-id="225e4-161">SharePoint および OneDrive for Business の場合、これはメンバー ロールを表します。</span><span class="sxs-lookup"><span data-stu-id="225e4-161">For SharePoint and OneDrive for Business this represents the member role.</span></span>      |
 
-<span data-ttu-id="12384-162">permission リソースは、_ファセット_ を使用して、リソースによって表されるアクセス許可の種類に関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="12384-162">The permission resource uses _facets_ to provide information about the kind of permission represented by the resource.</span></span>
+<span data-ttu-id="225e4-162">permission リソースは、_ファセット_ を使用して、リソースによって表されるアクセス許可の種類に関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="225e4-162">The permission resource uses _facets_ to provide information about the kind of permission represented by the resource.</span></span>
 
-<span data-ttu-id="12384-163">共有リンクには、アイテムへのアクセスに必要な一意のトークンが含まれています。</span><span class="sxs-lookup"><span data-stu-id="12384-163">Sharing links contain a unique token required to access the item.</span></span>
+<span data-ttu-id="225e4-163">共有リンクには、アイテムへのアクセスに必要な一意のトークンが含まれています。</span><span class="sxs-lookup"><span data-stu-id="225e4-163">Sharing links contain a unique token required to access the item.</span></span>
 
-<span data-ttu-id="12384-164">[**招待**][SharingInvitation] ファセットを持つアクセス許可は、特定のユーザーやグループをファイルへのアクセスへ招待することで追加されたアクセス許可を表します。</span><span class="sxs-lookup"><span data-stu-id="12384-164">Permissions with an [**invitation**][SharingInvitation] facet represent permissions added by inviting specific users or groups to have access to the file.</span></span>
+<span data-ttu-id="225e4-164">[**招待**][SharingInvitation] ファセットを持つアクセス許可は、特定のユーザーやグループをファイルへのアクセスへ招待することで追加されたアクセス許可を表します。</span><span class="sxs-lookup"><span data-stu-id="225e4-164">Permissions with an [**invitation**][SharingInvitation] facet represent permissions added by inviting specific users or groups to have access to the file.</span></span>
 
-## <a name="sharing-links"></a><span data-ttu-id="12384-165">共有リンク</span><span class="sxs-lookup"><span data-stu-id="12384-165">Sharing links</span></span>
+## <a name="sharing-links"></a><span data-ttu-id="225e4-165">共有リンク</span><span class="sxs-lookup"><span data-stu-id="225e4-165">Sharing links</span></span>
 
-<span data-ttu-id="12384-166">[**リンク**][SharingLink] ファセットのあるアクセス許可は、項目上に作成された共有リンクを表します。</span><span class="sxs-lookup"><span data-stu-id="12384-166">Permissions with a [**link**][SharingLink] facet represent sharing links created on the item.</span></span>
-<span data-ttu-id="12384-167">最も一般的なアクセス許可の種類を次に示します。</span><span class="sxs-lookup"><span data-stu-id="12384-167">These are the most common kinds of permissions.</span></span>
-<span data-ttu-id="12384-168">共有リンクは、ファイルまたはフォルダーへのアクセスに使用できる一意の URL を提供します。</span><span class="sxs-lookup"><span data-stu-id="12384-168">Sharing links provide a unique URL that can be used to access a file or folder.</span></span>
-<span data-ttu-id="12384-169">さまざまな方法でアクセスを許可するように設定できます。</span><span class="sxs-lookup"><span data-stu-id="12384-169">They can be set up to grant access in a variety of ways.</span></span>
-<span data-ttu-id="12384-170">たとえば、 [createlink][] API を使用して、組織にサインインしているユーザーに対して機能するリンクを作成したり、サインインを必要とせずにすべてのユーザーに対して機能するリンクを作成したりできます。</span><span class="sxs-lookup"><span data-stu-id="12384-170">For example, you can use the [createLink][] API to create a link that works for anyone signed into your organization, or you can create a link that works for anyone, without needing to sign in.</span></span>
-<span data-ttu-id="12384-171">[invite][] API を使用すると、社内にいるかどうかに関係なく、特定のユーザーに対してのみ機能するリンクを作成することができます。</span><span class="sxs-lookup"><span data-stu-id="12384-171">You can use the [invite][] API to create a link that only works for specific people, whether they're in your company or not.</span></span>
+<span data-ttu-id="225e4-166">[**リンク**][SharingLink] ファセットのあるアクセス許可は、項目上に作成された共有リンクを表します。</span><span class="sxs-lookup"><span data-stu-id="225e4-166">Permissions with a [**link**][SharingLink] facet represent sharing links created on the item.</span></span>
+<span data-ttu-id="225e4-167">最も一般的なアクセス許可の種類を次に示します。</span><span class="sxs-lookup"><span data-stu-id="225e4-167">These are the most common kinds of permissions.</span></span>
+<span data-ttu-id="225e4-168">共有リンクは、ファイルまたはフォルダーへのアクセスに使用できる一意の URL を提供します。</span><span class="sxs-lookup"><span data-stu-id="225e4-168">Sharing links provide a unique URL that can be used to access a file or folder.</span></span>
+<span data-ttu-id="225e4-169">さまざまな方法でアクセスを許可するように設定できます。</span><span class="sxs-lookup"><span data-stu-id="225e4-169">They can be set up to grant access in a variety of ways.</span></span>
+<span data-ttu-id="225e4-170">たとえば、 [createlink][] API を使用して、組織にサインインしているユーザーに対して機能するリンクを作成したり、サインインを必要とせずにすべてのユーザーに対して機能するリンクを作成したりできます。</span><span class="sxs-lookup"><span data-stu-id="225e4-170">For example, you can use the [createLink][] API to create a link that works for anyone signed into your organization, or you can create a link that works for anyone, without needing to sign in.</span></span>
+<span data-ttu-id="225e4-171">[invite][] API を使用すると、社内にいるかどうかに関係なく、特定のユーザーに対してのみ機能するリンクを作成することができます。</span><span class="sxs-lookup"><span data-stu-id="225e4-171">You can use the [invite][] API to create a link that only works for specific people, whether they're in your company or not.</span></span>
 
-<span data-ttu-id="12384-172">共有リンクの例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="12384-172">Here are some examples of sharing links.</span></span>
+<span data-ttu-id="225e4-172">共有リンクの例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="225e4-172">Here are some examples of sharing links.</span></span>
 
-### <a name="view-link"></a><span data-ttu-id="12384-173">表示リンク</span><span class="sxs-lookup"><span data-stu-id="12384-173">View link</span></span>
+### <a name="view-link"></a><span data-ttu-id="225e4-173">表示リンク</span><span class="sxs-lookup"><span data-stu-id="225e4-173">View link</span></span>
 
-<span data-ttu-id="12384-174">このビューリンクは、リンクを持つすべてのユーザーに読み取り専用アクセスを提供します。</span><span class="sxs-lookup"><span data-stu-id="12384-174">This view link provides read-only access to anyone with the link.</span></span>
+<span data-ttu-id="225e4-174">このビューリンクは、リンクを持つすべてのユーザーに読み取り専用アクセスを提供します。</span><span class="sxs-lookup"><span data-stu-id="225e4-174">This view link provides read-only access to anyone with the link.</span></span>
 
 <!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-view-link" } -->
 
@@ -120,9 +120,9 @@ ms.locfileid: "30482078"
 }
 ```
 
-### <a name="edit-link"></a><span data-ttu-id="12384-175">編集リンク</span><span class="sxs-lookup"><span data-stu-id="12384-175">Edit link</span></span>
+### <a name="edit-link"></a><span data-ttu-id="225e4-175">編集リンク</span><span class="sxs-lookup"><span data-stu-id="225e4-175">Edit link</span></span>
 
-<span data-ttu-id="12384-176">この編集リンクは、リンクを使用して組織内のすべてのユーザーに読み取り/書き込みアクセスを提供します。</span><span class="sxs-lookup"><span data-stu-id="12384-176">This edit link provides read and write access to anyone in the organization with the link.</span></span>
+<span data-ttu-id="225e4-176">この編集リンクは、リンクを使用して組織内のすべてのユーザーに読み取り/書き込みアクセスを提供します。</span><span class="sxs-lookup"><span data-stu-id="225e4-176">This edit link provides read and write access to anyone in the organization with the link.</span></span>
 
 <!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-edit-link" } -->
 
@@ -141,9 +141,9 @@ ms.locfileid: "30482078"
 }
 ```
 
-### <a name="specific-people-link"></a><span data-ttu-id="12384-177">特定の人物リンク</span><span class="sxs-lookup"><span data-stu-id="12384-177">Specific people link</span></span>
+### <a name="specific-people-link"></a><span data-ttu-id="225e4-177">特定の人物リンク</span><span class="sxs-lookup"><span data-stu-id="225e4-177">Specific people link</span></span>
 
-<span data-ttu-id="12384-178">このリンクにより、 `grantedToIdentities`コレクション内の特定のユーザーに対する読み取りおよび書き込みアクセス権が提供されます。</span><span class="sxs-lookup"><span data-stu-id="12384-178">This link provides read and write access to the specific people in the `grantedToIdentities` collection.</span></span>
+<span data-ttu-id="225e4-178">このリンクにより、 `grantedToIdentities`コレクション内の特定のユーザーに対する読み取りおよび書き込みアクセス権が提供されます。</span><span class="sxs-lookup"><span data-stu-id="225e4-178">This link provides read and write access to the specific people in the `grantedToIdentities` collection.</span></span>
 
 <!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-people-link" } -->
 
@@ -174,10 +174,10 @@ ms.locfileid: "30482078"
 }
 ```
 
-## <a name="sharing-invitations"></a><span data-ttu-id="12384-179">共有への招待</span><span class="sxs-lookup"><span data-stu-id="12384-179">Sharing invitations</span></span>
+## <a name="sharing-invitations"></a><span data-ttu-id="225e4-179">共有への招待</span><span class="sxs-lookup"><span data-stu-id="225e4-179">Sharing invitations</span></span>
 
-<span data-ttu-id="12384-180">[invite][] API によって送信されるアクセス許可には、[招待][sharinginvitation]ファセットに追加情報が含まれている場合があります。</span><span class="sxs-lookup"><span data-stu-id="12384-180">Permissions sent by the [invite][] API may have additional information in the [invitation][SharingInvitation] facet.</span></span>
-<span data-ttu-id="12384-181">招待状が既知のアカウントに一致しない電子メールアドレスに送信された場合、招待が引き換えられるまで、 **grantedTo**プロパティは設定されません。これは、ユーザーが最初にリンクをクリックしてサインインするときに発生します。</span><span class="sxs-lookup"><span data-stu-id="12384-181">If an invitation was sent to an email address that doesn't match a known account, the **grantedTo** property may not be set until the invitation is redeemed, which occurs the first time the user clicks the link and signs in.</span></span>
+<span data-ttu-id="225e4-180">[invite][] API によって送信されるアクセス許可には、[招待][sharinginvitation]ファセットに追加情報が含まれている場合があります。</span><span class="sxs-lookup"><span data-stu-id="225e4-180">Permissions sent by the [invite][] API may have additional information in the [invitation][SharingInvitation] facet.</span></span>
+<span data-ttu-id="225e4-181">招待状が既知のアカウントに一致しない電子メールアドレスに送信された場合、招待が引き換えられるまで、 **grantedTo**プロパティは設定されません。これは、ユーザーが最初にリンクをクリックしてサインインするときに発生します。</span><span class="sxs-lookup"><span data-stu-id="225e4-181">If an invitation was sent to an email address that doesn't match a known account, the **grantedTo** property may not be set until the invitation is redeemed, which occurs the first time the user clicks the link and signs in.</span></span>
 
 <!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-invite-email" } -->
 
@@ -194,7 +194,7 @@ ms.locfileid: "30482078"
 }
 ```
 
-<span data-ttu-id="12384-182">ユーザーによって共有の招待状が引き換えられると、**grantedTo** プロパティにはアクセス許可を引き換えたアカウントに関する情報が格納されます。</span><span class="sxs-lookup"><span data-stu-id="12384-182">After the sharing invitation has been redeemed by a user, the **grantedTo** property will contain the information about the account that redeemed the permissions:</span></span>
+<span data-ttu-id="225e4-182">ユーザーによって共有の招待状が引き換えられると、**grantedTo** プロパティにはアクセス許可を引き換えたアカウントに関する情報が格納されます。</span><span class="sxs-lookup"><span data-stu-id="225e4-182">After the sharing invitation has been redeemed by a user, the **grantedTo** property will contain the information about the account that redeemed the permissions:</span></span>
 
 <!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-invite-redeemed" } -->
 
@@ -217,16 +217,16 @@ ms.locfileid: "30482078"
 }
 ```
 
-## <a name="methods"></a><span data-ttu-id="12384-183">メソッド</span><span class="sxs-lookup"><span data-stu-id="12384-183">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="225e4-183">メソッド</span><span class="sxs-lookup"><span data-stu-id="225e4-183">Methods</span></span>
 
-| <span data-ttu-id="12384-184">メソッド</span><span class="sxs-lookup"><span data-stu-id="12384-184">Method</span></span>                                                   | <span data-ttu-id="12384-185">REST パス</span><span class="sxs-lookup"><span data-stu-id="12384-185">REST Path</span></span>
+| <span data-ttu-id="225e4-184">Method</span><span class="sxs-lookup"><span data-stu-id="225e4-184">Method</span></span>                                                   | <span data-ttu-id="225e4-185">REST パス</span><span class="sxs-lookup"><span data-stu-id="225e4-185">REST Path</span></span>
 |:---------------------------------------------------------|:-----------------------
-| [<span data-ttu-id="12384-186">アクセス許可を一覧表示する</span><span class="sxs-lookup"><span data-stu-id="12384-186">List permissions</span></span>](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
-| [<span data-ttu-id="12384-187">アクセス許可を取得する</span><span class="sxs-lookup"><span data-stu-id="12384-187">Get permission</span></span>](../api/permission-get.md)               | `GET /drive/items/{item-id}/permissions/{id}`
-| <span data-ttu-id="12384-188">[リンクの作成][createlink]</span><span class="sxs-lookup"><span data-stu-id="12384-188">[Create link][createLink]</span></span>                                | `POST /drive/items/{item-id}/createLink`
-| <span data-ttu-id="12384-189">[ユーザーを招待]する[invite]</span><span class="sxs-lookup"><span data-stu-id="12384-189">[Invite people][invite]</span></span>                                  | `POST /drive/items/{item-id}/invite`
-| [<span data-ttu-id="12384-190">Update</span><span class="sxs-lookup"><span data-stu-id="12384-190">Update</span></span>](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
-| [<span data-ttu-id="12384-191">Delete</span><span class="sxs-lookup"><span data-stu-id="12384-191">Delete</span></span>](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
+| [<span data-ttu-id="225e4-186">アクセス許可を一覧表示する</span><span class="sxs-lookup"><span data-stu-id="225e4-186">List permissions</span></span>](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
+| [<span data-ttu-id="225e4-187">アクセス許可を取得する</span><span class="sxs-lookup"><span data-stu-id="225e4-187">Get permission</span></span>](../api/permission-get.md)               | `GET /drive/items/{item-id}/permissions/{id}`
+| <span data-ttu-id="225e4-188">[リンクの作成][createlink]</span><span class="sxs-lookup"><span data-stu-id="225e4-188">[Create link][createLink]</span></span>                                | `POST /drive/items/{item-id}/createLink`
+| <span data-ttu-id="225e4-189">[ユーザーを招待]する[invite]</span><span class="sxs-lookup"><span data-stu-id="225e4-189">[Invite people][invite]</span></span>                                  | `POST /drive/items/{item-id}/invite`
+| [<span data-ttu-id="225e4-190">更新する</span><span class="sxs-lookup"><span data-stu-id="225e4-190">Update</span></span>](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
+| [<span data-ttu-id="225e4-191">削除</span><span class="sxs-lookup"><span data-stu-id="225e4-191">Delete</span></span>](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
 
 
 

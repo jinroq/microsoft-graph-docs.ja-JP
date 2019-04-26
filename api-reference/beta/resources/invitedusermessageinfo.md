@@ -1,30 +1,30 @@
 ---
 title: 招待メッセージの構成
-description: invitedUserMessageInfo オブジェクトでは、招待メッセージを構成できます。
+description: invitedUserMessageInfo オブジェクトを使用すると、招待メッセージを構成できます。
 localization_priority: Normal
 ms.openlocfilehash: fa7ead6938ddfaca78322f56f4638c45d3f2df14
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643791"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569971"
 ---
-# <a name="configuring-the-invitation-message"></a><span data-ttu-id="d1591-103">招待メッセージの構成</span><span class="sxs-lookup"><span data-stu-id="d1591-103">Configuring the invitation message</span></span>
+# <a name="configuring-the-invitation-message"></a><span data-ttu-id="9afed-103">招待メッセージの構成</span><span class="sxs-lookup"><span data-stu-id="9afed-103">Configuring the invitation message</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d1591-104">invitedUserMessageInfo オブジェクトでは、[招待](invitation.md)メッセージを構成できます。</span><span class="sxs-lookup"><span data-stu-id="d1591-104">The invitedUserMessageInfo object allows you to configure the [invitation](invitation.md) message.</span></span>
+<span data-ttu-id="9afed-104">invitedUserMessageInfo オブジェクトを使用すると、[招待](invitation.md)メッセージを構成できます。</span><span class="sxs-lookup"><span data-stu-id="9afed-104">The invitedUserMessageInfo object allows you to configure the [invitation](invitation.md) message.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="d1591-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="d1591-105">Properties</span></span>
-| <span data-ttu-id="d1591-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="d1591-106">Property</span></span>     | <span data-ttu-id="d1591-107">型</span><span class="sxs-lookup"><span data-stu-id="d1591-107">Type</span></span>   |<span data-ttu-id="d1591-108">説明</span><span class="sxs-lookup"><span data-stu-id="d1591-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="9afed-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="9afed-105">Properties</span></span>
+| <span data-ttu-id="9afed-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="9afed-106">Property</span></span>     | <span data-ttu-id="9afed-107">型</span><span class="sxs-lookup"><span data-stu-id="9afed-107">Type</span></span>   |<span data-ttu-id="9afed-108">説明</span><span class="sxs-lookup"><span data-stu-id="9afed-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="d1591-109">ccRecipients</span><span class="sxs-lookup"><span data-stu-id="d1591-109">ccRecipients</span></span>|[<span data-ttu-id="d1591-110">受信者</span><span class="sxs-lookup"><span data-stu-id="d1591-110">Recipients</span></span>](recipient.md)|<span data-ttu-id="d1591-p101">招待メッセージの送信先にする必要がある追加の受信者。現在、サポートされている追加の受信者は 1 人のみです。</span><span class="sxs-lookup"><span data-stu-id="d1591-p101">Additional recipients the invitation message should be sent to. Currently only 1 additional recipient is supported.</span></span>|
-|<span data-ttu-id="d1591-113">customizedMessageBody</span><span class="sxs-lookup"><span data-stu-id="d1591-113">customizedMessageBody</span></span>|<span data-ttu-id="d1591-114">String</span><span class="sxs-lookup"><span data-stu-id="d1591-114">String</span></span>|<span data-ttu-id="d1591-115">既定のメッセージを使用しない場合に送信するカスタマイズされたメッセージ本文。</span><span class="sxs-lookup"><span data-stu-id="d1591-115">Customized message body you want to send if you don't want the default message.</span></span>|
-|<span data-ttu-id="d1591-116">messageLanguage</span><span class="sxs-lookup"><span data-stu-id="d1591-116">messageLanguage</span></span>|<span data-ttu-id="d1591-117">String</span><span class="sxs-lookup"><span data-stu-id="d1591-117">String</span></span>|<span data-ttu-id="d1591-p102">既定のメッセージを送信する言語。customizedMessageBody が指定されている場合、このプロパティは無視され、メッセージは ustomizedMessageBody を使用して送信されます。言語書式は ISO 639 である必要があります。既定では ja-JP です。</span><span class="sxs-lookup"><span data-stu-id="d1591-p102">The language you want to send the default message in. If the customizedMessageBody is specified, this property is ignored, and the message is sent using the customizedMessageBody. The language format should be in ISO 639. The default is en-US.</span></span>|
+|<span data-ttu-id="9afed-109">ccRecipients</span><span class="sxs-lookup"><span data-stu-id="9afed-109">ccRecipients</span></span>|[<span data-ttu-id="9afed-110">受信者</span><span class="sxs-lookup"><span data-stu-id="9afed-110">Recipients</span></span>](recipient.md)|<span data-ttu-id="9afed-111">その他の受信者に招待メッセージを送信する必要があります。</span><span class="sxs-lookup"><span data-stu-id="9afed-111">Additional recipients the invitation message should be sent to.</span></span> <span data-ttu-id="9afed-112">現時点では、1つの追加の受信者のみがサポートされています。</span><span class="sxs-lookup"><span data-stu-id="9afed-112">Currently only 1 additional recipient is supported.</span></span>|
+|<span data-ttu-id="9afed-113">customizedmessagebody</span><span class="sxs-lookup"><span data-stu-id="9afed-113">customizedMessageBody</span></span>|<span data-ttu-id="9afed-114">String</span><span class="sxs-lookup"><span data-stu-id="9afed-114">String</span></span>|<span data-ttu-id="9afed-115">既定のメッセージを必要としない場合に送信する、カスタマイズされたメッセージ本文。</span><span class="sxs-lookup"><span data-stu-id="9afed-115">Customized message body you want to send if you don't want the default message.</span></span>|
+|<span data-ttu-id="9afed-116">messageLanguage</span><span class="sxs-lookup"><span data-stu-id="9afed-116">messageLanguage</span></span>|<span data-ttu-id="9afed-117">String</span><span class="sxs-lookup"><span data-stu-id="9afed-117">String</span></span>|<span data-ttu-id="9afed-118">既定のメッセージを送信する言語を指定します。</span><span class="sxs-lookup"><span data-stu-id="9afed-118">The language you want to send the default message in.</span></span> <span data-ttu-id="9afed-119">customizedmessagebody が指定されている場合、このプロパティは無視され、customizedmessagebody を使用してメッセージが送信されます。</span><span class="sxs-lookup"><span data-stu-id="9afed-119">If the customizedMessageBody is specified, this property is ignored, and the message is sent using the customizedMessageBody.</span></span> <span data-ttu-id="9afed-120">言語の形式は ISO 639 である必要があります。</span><span class="sxs-lookup"><span data-stu-id="9afed-120">The language format should be in ISO 639.</span></span> <span data-ttu-id="9afed-121">既定値は en-us です。</span><span class="sxs-lookup"><span data-stu-id="9afed-121">The default is en-US.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="d1591-122">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="d1591-122">JSON representation</span></span>
-<span data-ttu-id="d1591-123">以下は、リソースの JSON 表記です</span><span class="sxs-lookup"><span data-stu-id="d1591-123">Here is a JSON representation of the resource</span></span>
+## <a name="json-representation"></a><span data-ttu-id="9afed-122">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="9afed-122">JSON representation</span></span>
+<span data-ttu-id="9afed-123">以下は、リソースの JSON 表記です</span><span class="sxs-lookup"><span data-stu-id="9afed-123">Here is a JSON representation of the resource</span></span>
 
 <!-- {"blockType": "resource", "@odata.type": "microsoft.graph.invitedUserMessageInfo"} -->
 ```json

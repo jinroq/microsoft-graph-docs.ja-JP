@@ -5,19 +5,19 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 8a44f9a2e568991c6803ebf72baf5f712f39ba64
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643798"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568651"
 ---
-# <a name="outlookitem-resource-type"></a><span data-ttu-id="63694-103">outlookItem リソースの種類</span><span class="sxs-lookup"><span data-stu-id="63694-103">outlookItem resource type</span></span>
+# <a name="outlookitem-resource-type"></a><span data-ttu-id="936ed-103">outlookItem リソースの種類</span><span class="sxs-lookup"><span data-stu-id="936ed-103">outlookItem resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-## <a name="json-representation"></a><span data-ttu-id="63694-104">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="63694-104">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="936ed-104">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="936ed-104">JSON representation</span></span>
 
-<span data-ttu-id="63694-105">以下は、リソースの JSON 表記です</span><span class="sxs-lookup"><span data-stu-id="63694-105">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="936ed-105">以下は、リソースの JSON 表記です</span><span class="sxs-lookup"><span data-stu-id="936ed-105">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -37,17 +37,17 @@ ms.locfileid: "29643798"
 }
 
 ```
-## <a name="properties"></a><span data-ttu-id="63694-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="63694-106">Properties</span></span>
-| <span data-ttu-id="63694-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="63694-107">Property</span></span>     | <span data-ttu-id="63694-108">型</span><span class="sxs-lookup"><span data-stu-id="63694-108">Type</span></span>   |<span data-ttu-id="63694-109">説明</span><span class="sxs-lookup"><span data-stu-id="63694-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="936ed-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="936ed-106">Properties</span></span>
+| <span data-ttu-id="936ed-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="936ed-107">Property</span></span>     | <span data-ttu-id="936ed-108">型</span><span class="sxs-lookup"><span data-stu-id="936ed-108">Type</span></span>   |<span data-ttu-id="936ed-109">説明</span><span class="sxs-lookup"><span data-stu-id="936ed-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="63694-110">categories</span><span class="sxs-lookup"><span data-stu-id="63694-110">categories</span></span>|<span data-ttu-id="63694-111">String コレクション</span><span class="sxs-lookup"><span data-stu-id="63694-111">String collection</span></span>||
-|<span data-ttu-id="63694-112">changeKey</span><span class="sxs-lookup"><span data-stu-id="63694-112">changeKey</span></span>|<span data-ttu-id="63694-113">String</span><span class="sxs-lookup"><span data-stu-id="63694-113">String</span></span>||
-|<span data-ttu-id="63694-114">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="63694-114">createdDateTime</span></span>|<span data-ttu-id="63694-115">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="63694-115">DateTimeOffset</span></span>|<span data-ttu-id="63694-p101">Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`</span><span class="sxs-lookup"><span data-stu-id="63694-p101">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>|
-|<span data-ttu-id="63694-118">id</span><span class="sxs-lookup"><span data-stu-id="63694-118">id</span></span>|<span data-ttu-id="63694-119">String</span><span class="sxs-lookup"><span data-stu-id="63694-119">String</span></span>| <span data-ttu-id="63694-120">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="63694-120">Read-only.</span></span>|
-|<span data-ttu-id="63694-121">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="63694-121">lastModifiedDateTime</span></span>|<span data-ttu-id="63694-122">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="63694-122">DateTimeOffset</span></span>|<span data-ttu-id="63694-p102">Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`</span><span class="sxs-lookup"><span data-stu-id="63694-p102">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>|
+|<span data-ttu-id="936ed-110">categories</span><span class="sxs-lookup"><span data-stu-id="936ed-110">categories</span></span>|<span data-ttu-id="936ed-111">String collection</span><span class="sxs-lookup"><span data-stu-id="936ed-111">String collection</span></span>||
+|<span data-ttu-id="936ed-112">changeKey</span><span class="sxs-lookup"><span data-stu-id="936ed-112">changeKey</span></span>|<span data-ttu-id="936ed-113">String</span><span class="sxs-lookup"><span data-stu-id="936ed-113">String</span></span>||
+|<span data-ttu-id="936ed-114">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="936ed-114">createdDateTime</span></span>|<span data-ttu-id="936ed-115">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="936ed-115">DateTimeOffset</span></span>|<span data-ttu-id="936ed-p101">Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`</span><span class="sxs-lookup"><span data-stu-id="936ed-p101">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>|
+|<span data-ttu-id="936ed-118">id</span><span class="sxs-lookup"><span data-stu-id="936ed-118">id</span></span>|<span data-ttu-id="936ed-119">String</span><span class="sxs-lookup"><span data-stu-id="936ed-119">String</span></span>| <span data-ttu-id="936ed-120">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="936ed-120">Read-only.</span></span>|
+|<span data-ttu-id="936ed-121">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="936ed-121">lastModifiedDateTime</span></span>|<span data-ttu-id="936ed-122">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="936ed-122">DateTimeOffset</span></span>|<span data-ttu-id="936ed-p102">Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`</span><span class="sxs-lookup"><span data-stu-id="936ed-p102">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="63694-125">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="63694-125">Relationships</span></span>
-<span data-ttu-id="63694-126">なし</span><span class="sxs-lookup"><span data-stu-id="63694-126">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="936ed-125">関係</span><span class="sxs-lookup"><span data-stu-id="936ed-125">Relationships</span></span>
+<span data-ttu-id="936ed-126">なし</span><span class="sxs-lookup"><span data-stu-id="936ed-126">None</span></span>
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

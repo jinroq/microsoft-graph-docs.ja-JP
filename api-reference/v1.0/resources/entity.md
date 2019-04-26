@@ -3,25 +3,25 @@ title: エンティティ リソースの種類
 description: なし
 localization_priority: Normal
 ms.openlocfilehash: e0903ef3b90a0c176881bbee2aa5aafca4032ccc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810956"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32555879"
 ---
-# <a name="entity-resource-type"></a><span data-ttu-id="07140-103">エンティティ リソースの種類</span><span class="sxs-lookup"><span data-stu-id="07140-103">entity resource type</span></span>
+# <a name="entity-resource-type"></a><span data-ttu-id="bd3e4-103">エンティティ リソースの種類</span><span class="sxs-lookup"><span data-stu-id="bd3e4-103">entity resource type</span></span>
 
-## <a name="properties"></a><span data-ttu-id="07140-104">プロパティ</span><span class="sxs-lookup"><span data-stu-id="07140-104">Properties</span></span>
-| <span data-ttu-id="07140-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="07140-105">Property</span></span>     | <span data-ttu-id="07140-106">種類</span><span class="sxs-lookup"><span data-stu-id="07140-106">Type</span></span>   |<span data-ttu-id="07140-107">説明</span><span class="sxs-lookup"><span data-stu-id="07140-107">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="bd3e4-104">プロパティ</span><span class="sxs-lookup"><span data-stu-id="bd3e4-104">Properties</span></span>
+| <span data-ttu-id="bd3e4-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="bd3e4-105">Property</span></span>     | <span data-ttu-id="bd3e4-106">型</span><span class="sxs-lookup"><span data-stu-id="bd3e4-106">Type</span></span>   |<span data-ttu-id="bd3e4-107">説明</span><span class="sxs-lookup"><span data-stu-id="bd3e4-107">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="07140-108">ID</span><span class="sxs-lookup"><span data-stu-id="07140-108">id</span></span>|<span data-ttu-id="07140-109">String</span><span class="sxs-lookup"><span data-stu-id="07140-109">String</span></span>| <span data-ttu-id="07140-110">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="07140-110">Read-only.</span></span>|
+|<span data-ttu-id="bd3e4-108">id</span><span class="sxs-lookup"><span data-stu-id="bd3e4-108">id</span></span>|<span data-ttu-id="bd3e4-109">String</span><span class="sxs-lookup"><span data-stu-id="bd3e4-109">String</span></span>| <span data-ttu-id="bd3e4-110">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="bd3e4-110">Read-only.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="07140-111">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="07140-111">Relationships</span></span>
-<span data-ttu-id="07140-112">なし</span><span class="sxs-lookup"><span data-stu-id="07140-112">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="bd3e4-111">関係</span><span class="sxs-lookup"><span data-stu-id="bd3e4-111">Relationships</span></span>
+<span data-ttu-id="bd3e4-112">なし</span><span class="sxs-lookup"><span data-stu-id="bd3e4-112">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="07140-113">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="07140-113">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="bd3e4-113">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="bd3e4-113">JSON representation</span></span>
 
-<span data-ttu-id="07140-114">以下は、リソースの JSON 表記です</span><span class="sxs-lookup"><span data-stu-id="07140-114">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="bd3e4-114">以下は、リソースの JSON 表記です</span><span class="sxs-lookup"><span data-stu-id="bd3e4-114">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
