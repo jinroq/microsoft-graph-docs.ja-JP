@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 2228e28b2edb3584a0861628644188d6fd54495b
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31802626"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32567222"
 ---
 # <a name="devicemanagementuserrightssetting-resource-type"></a>deviceManagementUserRightsSetting リソースの種類
 
@@ -22,10 +22,10 @@ ms.locfileid: "31802626"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|state|[statemanagementsetting](../resources/intune-deviceconfig-statemanagementsetting.md)|このユーザー権限設定の現在の状態を表します。 使用可能な値は、`notConfigured`、`blocked`、`allowed` です。|
+|state|[statemanagementsetting](../resources/intune-deviceconfig-statemanagementsetting.md)|このユーザー権限設定の現在の状態を表します。 可能な値は `notConfigured`、`blocked`、`allowed` です。|
 |localusersorgroups|[deviceManagementUserRightsLocalUserOrGroup](../resources/intune-deviceconfig-devicemanagementuserrightslocaluserorgroup.md)コレクション|この設定の状態が許可されている場合は、デバイスに設定されるローカルユーザーまたはグループのコレクションを表します。 このコレクションには、最大で 500 個の要素を含めることができます。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記

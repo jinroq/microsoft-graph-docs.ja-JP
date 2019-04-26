@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 4414aceaa9ce2a317389660959a2b73234e82185
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31785385"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556691"
 ---
 # <a name="advancedbitlockerstate-enum-type"></a>advanced bitlockerstate 列挙型
 
@@ -23,11 +23,11 @@ ms.locfileid: "31785385"
 |メンバー|値|説明|
 |:---|:---|:---|
 |success|.0|高度な BitLocker 状態の成功|
-|noUserConsent|1-d|ユーザーが暗号化の同意を与えていません|
-|osvolumeencryptionmethodmismatch|pbm-2|OS ボリュームの暗号化方法がポリシーで設定されたものと異なります|
-|osvolumetpmrequired|2/4|TPM は OS ボリュームの保護には使用されませんが、ポリシーによって必要になります。|
-|osvolumetpmonrequired が必要です|~|TPM のみの保護は OS ボリュームには使用されませんが、ポリシーによって必要になります。|
-|osvolumetpmpinrequired|16|TPM + PIN 保護は OS ボリュームには使用されませんが、ポリシーによって必要になります。|
+|noUserConsent|1 |ユーザーが暗号化の同意を与えていません|
+|osvolumeencryptionmethodmismatch|2 |OS ボリュームの暗号化方法がポリシーで設定されたものと異なります|
+|osvolumetpmrequired|4 |TPM は OS ボリュームの保護には使用されませんが、ポリシーによって必要になります。|
+|osvolumetpmonrequired が必要です|8 |TPM のみの保護は OS ボリュームには使用されませんが、ポリシーによって必要になります。|
+|osvolumetpmpinrequired|16 |TPM + PIN 保護は OS ボリュームには使用されませんが、ポリシーによって必要になります。|
 |osvolumetpmstartupkeyrequired|32|TPM + スタートアップキー保護は OS ボリュームには使用されませんが、ポリシーによって必要になります。|
 |osvolumetpmpinstartupkeyrequired|64|TPM + PIN + スタートアップキーは OS ボリュームでは使用されませんが、ポリシーによって必要になります。|
 |osvolumeunprotected なし|128|保護されていない OS ボリュームが検出された|

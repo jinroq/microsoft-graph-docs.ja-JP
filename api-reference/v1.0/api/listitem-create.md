@@ -6,11 +6,11 @@ title: SharePoint リストに新しいエントリを作成する
 localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: 48cccb9c4200c80a0f37a04493b4df0f2d4066d0
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481028"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32557104"
 ---
 # <a name="create-a-new-item-in-a-list"></a>リストに新しいアイテムを作成する
 

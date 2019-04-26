@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: SharedDriveItem
 localization_priority: Normal
 ms.openlocfilehash: 0d0c5a34d12fe467196c0616befc7376835b632c
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481728"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549637"
 ---
 # <a name="shareddriveitem-resource-type"></a>SharedDriveItem リソースの種類
 
@@ -45,9 +45,9 @@ ms.locfileid: "30481728"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 種類                          | 説明                                                      |
+| プロパティ | 型                          | 説明                                                      |
 | :------- | :---------------------------- | :--------------------------------------------------------------- |
-| id       | 文字列型 (String)                        | アクセスされている共有の一意識別子。              |
+| id       | String                        | アクセスされている共有の一意識別子。              |
 | name     | String                        | 共有項目の表示名。                             |
 | owner    | [IdentitySet](identityset.md) | 参照されている共有アイテムの所有者に関する情報。 |
 
@@ -74,7 +74,7 @@ ms.locfileid: "30481728"
 
 ## <a name="methods"></a>メソッド
 
-| メソッド                                  | REST パス                |
+| Method                                  | REST パス                |
 | :-------------------------------------- | :----------------------- |
 | [共有アイテムを取得する](../api/shares-get.md) | `GET /shares/{share-id}` |
 

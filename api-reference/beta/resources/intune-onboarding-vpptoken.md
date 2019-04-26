@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 806c652e7d1d75de16dd40f4db1dfc39ae4f442a
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31774121"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566494"
 ---
 # <a name="vpptoken-resource-type"></a>vppToken リソースの種類
 
@@ -22,11 +22,11 @@ ms.locfileid: "31774121"
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[List vppTokens](../api/intune-onboarding-vpptoken-list.md)|[vppToken](../resources/intune-onboarding-vpptoken.md) コレクション|[vppToken](../resources/intune-onboarding-vpptoken.md) オブジェクトのプロパティとリレーションシップのリストを作成します。|
-|[Get vppToken](../api/intune-onboarding-vpptoken-get.md)|[vppToken](../resources/intune-onboarding-vpptoken.md)|[vppToken](../resources/intune-onboarding-vpptoken.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[Create vppToken](../api/intune-onboarding-vpptoken-create.md)|[vppToken](../resources/intune-onboarding-vpptoken.md)|新規に[vppToken](../resources/intune-onboarding-vpptoken.md)オブジェクトを作成します。|
-|[VppTokenを削除します。](../api/intune-onboarding-vpptoken-delete.md)|なし|[vppToken](../resources/intune-onboarding-vpptoken.md) を削除します。|
-|[VPPトークンの更新](../api/intune-onboarding-vpptoken-update.md)|[vppToken](../resources/intune-onboarding-vpptoken.md)|[VPPトークン](../resources/intune-onboarding-vpptoken.md) オブジェクトのプロパティを更新します。|
+|[vppToken のリスト](../api/intune-onboarding-vpptoken-list.md)|[vppToken](../resources/intune-onboarding-vpptoken.md) コレクション|[vppToken](../resources/intune-onboarding-vpptoken.md) オブジェクトのプロパティとリレーションシップのリストを作成します。|
+|[vppToken の取得](../api/intune-onboarding-vpptoken-get.md)|[vppToken](../resources/intune-onboarding-vpptoken.md)|[vppToken](../resources/intune-onboarding-vpptoken.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[vppToken の作成](../api/intune-onboarding-vpptoken-create.md)|[vppToken](../resources/intune-onboarding-vpptoken.md)|新規に[vppToken](../resources/intune-onboarding-vpptoken.md) オブジェクトを作成します。|
+|[vppToken の削除](../api/intune-onboarding-vpptoken-delete.md)|なし|[vppToken](../resources/intune-onboarding-vpptoken.md) を削除します。|
+|[vppToken の更新](../api/intune-onboarding-vpptoken-update.md)|[vppToken](../resources/intune-onboarding-vpptoken.md)|[vppToken](../resources/intune-onboarding-vpptoken.md) オブジェクトのプロパティを更新します。|
 |[syncLicenses アクション](../api/intune-onboarding-vpptoken-synclicenses.md)|[vppToken](../resources/intune-onboarding-vpptoken.md)|特定の appleVolumePurchaseProgramToken に関連付けられたライセンスを同期します|
 |[revokeLicenses アクション](../api/intune-onboarding-vpptoken-revokelicenses.md)|なし|特定の appleVolumePurchaseProgramToken に関連付けられているライセンスを取り消す|
 |[getLicensesForApp 関数](../api/intune-onboarding-vpptoken-getlicensesforapp.md)|[vpptokenlicensesummary](../resources/intune-onboarding-vpptokenlicensesummary.md)コレクション|まだ文書化されていません|
@@ -35,9 +35,9 @@ ms.locfileid: "31774121"
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|appleVolumePurchaseProgramToken 作成時に自動的に生成されます。 エンティティのキーになります。|
-|organizationName|文字列|Apple ボリューム購入プログラムのトークンに関連付けられている組織|
+|organizationName|String|Apple ボリューム購入プログラムのトークンに関連付けられている組織|
 |vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|特定の Apple ボリューム購入プログラムのトークンが関連付けられている、ボリューム購入プログラムの種類。 可能な値は、`business`、`education` です。 可能な値は、`business`、`education` です。|
-|appleId|文字列|特定の Apple ボリューム購入プログラムのトークンに関連付けられている Apple ID。|
+|appleId|String|特定の Apple ボリューム購入プログラムのトークンに関連付けられている Apple ID。|
 |expirationDateTime|DateTimeOffset|Apple ボリューム購入プログラムのトークンの有効期限。|
 |lastSyncDateTime|DateTimeOffset|Apple ボリューム購入プログラムのトークンを使用して、Apple ボリューム購入プログラム サービスと最後にアプリケーションの同期を行った日時。|
 |token|String|Apple ボリューム購入プログラムからダウンロードした Apple ボリューム購入プログラムのトークン文字列。|
@@ -49,11 +49,11 @@ ms.locfileid: "31774121"
 |countryOrRegion|文字列|VPP トークンのアプリを自動で更新するかどうか。|
 |dataSharingConsentGranted|Boolean|Apple volume purchase program でのデータ共有に対して付与される同意。|
 |displayName|String|管理者が指定したトークンのフレンドリ名。|
-|msrtcsip-locationname|文字列|Apple VPP から返されるトークンの場所。|
+|msrtcsip-locationname|String|Apple VPP から返されるトークンの場所。|
 |claimtokenmanagementfromexternalmdm|Boolean|管理者の同意を得て、外部 MDM からのトークン管理を許可します。|
-|roleScopeTagIds|String コレクション|このエンティティに割り当てられているロールスコープタグ id。|
+|roleScopeTagIds|String collection|このエンティティに割り当てられているロールスコープタグ id。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記

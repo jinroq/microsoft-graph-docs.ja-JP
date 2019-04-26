@@ -1,16 +1,16 @@
 ---
-title: リスト アイテムのバージョンを一覧表示
+title: ListItem のバージョンの一覧表示
 description: SharePoint は、リスト アイテムの履歴を保持するように構成できます。
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 0da37c65c4f7cf737d7e37b0ed50305aa19b3e53
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27921375"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568034"
 ---
-# <a name="listing-versions-of-a-listitem"></a>リスト アイテムのバージョンを一覧表示
+# <a name="listing-versions-of-a-listitem"></a>ListItem のバージョンの一覧表示
 
 SharePoint は、リスト アイテムの履歴を保持するように構成できます。
 

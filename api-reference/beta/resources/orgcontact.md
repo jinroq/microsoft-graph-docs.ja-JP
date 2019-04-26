@@ -1,17 +1,17 @@
 ---
-title: orgContact リソースの種類
+title: orgcontact リソースの種類
 description: 以下は、リソースの JSON 表記です
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 01f606e8fb1f6ae51608853eed3bc39e0ec124df
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643532"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568646"
 ---
-# <a name="orgcontact-resource-type"></a>orgContact リソースの種類
+# <a name="orgcontact-resource-type"></a>orgcontact リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -19,43 +19,43 @@ ms.locfileid: "29643532"
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[OrgContact を取得します。](../api/orgcontact-get.md) | [orgContact](orgcontact.md) |OrgContact オブジェクトのプロパティと関係を参照してください。|
-|[マネージャーを取得します。](../api/orgcontact-get-manager.md) |[directoryObject](directoryobject.md)| 連絡先のマネージャーを取得します。|
-|[List directReports](../api/orgcontact-list-directreports.md) |[directoryObject](directoryobject.md) collection| 連絡先の直属の部下の一覧を表示します。|
-|[memberOf を一覧表示する](../api/orgcontact-list-memberof.md) |[directoryObject](directoryobject.md) コレクション| MemberOf オブジェクトのコレクションを取得します。|
-|[削除する](../api/orgcontact-delete.md) | なし |OrgContact オブジェクトを削除します。 |
-|[checkMemberGroups](../api/orgcontact-checkmembergroups.md)|String コレクション| グループのメンバーシップを確認します。 |
-|[getMemberGroups](../api/orgcontact-getmembergroups.md)|String コレクション| メンバーである、指定した連絡先のすべてのグループを返します。 |
-|[getMemberObjects](../api/orgcontact-getmemberobjects.md)|String コレクション| DirectoryObjects のメンバーである連絡先の一覧を返します。 |
+|[orgcontact の取得](../api/orgcontact-get.md) | [orgcontact へ](orgcontact.md) |orgcontact オブジェクトのプロパティと関係を読み取ります。|
+|[マネージャーを取得する](../api/orgcontact-get-manager.md) |[directoryObject](directoryobject.md)| 連絡先の上司を取得します。|
+|[List directReports](../api/orgcontact-list-directreports.md) |[directoryObject](directoryobject.md) collection| 連絡先の直属の部下を一覧表示します。|
+|[List memberOf](../api/orgcontact-list-memberof.md) |[directoryObject](directoryobject.md) コレクション| memberOf オブジェクトのコレクションを取得します。|
+|[削除](../api/orgcontact-delete.md) | なし |orgcontact オブジェクトを削除します。 |
+|[checkMemberGroups](../api/orgcontact-checkmembergroups.md)|String collection| グループのメンバーシップを確認します。 |
+|[getMemberGroups](../api/orgcontact-getmembergroups.md)|String collection| 指定した連絡先がメンバーであるすべてのグループを取得します。 |
+|[getMemberObjects](../api/orgcontact-getmemberobjects.md)|String コレクション| 連絡先がメンバーである directoryobjects の一覧を返します。 |
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-| アドレス                    | [physicalOfficeAddress](physicalofficeaddress.md)            | この組織の連絡先の郵送先住所です。 ここでは、取引先担当者は、1 つの物理アドレスにだけ配置できます。 |
-| companyName                  | String                                                    | この組織の連絡先が所属する会社の名前です。                                                                                                                                                                                                                                                                                                                 |
-| department                   | String                                                     | 窓口担当者の部署の名前です。                                                                                                                                                                                                                                                                                                                                |
-| displayName                  | String                                                     | この組織の連絡先の名前を表示します。                                                                                                                                                                                                                                                                                                                                   |
-| givenName                    | String                                                     | この組織の連絡先の名です。                                                                                                                                                                                                                                                                                                                                     |
-| id                           | String                                                     | この組織の連絡先の一意の識別子です。                                                                                                                                                                                                                                                                                                                             |
-| imAddresses                  | String コレクション                          | この組織の連絡先の IM アドレス] ボックスの一覧です。 ここでは、取引先担当者はのみ 1 つの SIP アドレスを持つことができます。                                                                                                                                                                                                                        |
-| jobTitle                     | String                                                     | この組織の連絡先の役職です。                                                                                                                                                                                                                                                                                                                                      |
-|mail|String| "Jeff@contoso.onmicrosoft.com"など、連絡先の SMTP アドレスです。 |
-| mailNickname                 | String                                                     | 電子メール エイリアス (電子メール アドレスの前に保留中の部分、@ 記号) この組織の連絡先の。                                                                                                                                                                                                                                                                                |
-| onPremisesLastSyncDateTime   | DateTimeOffset                                             | 日付と時刻がこの組織のメンバーが前回との同期、オンプレミス AD。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日に UTC 午前 0 時が、これのようになります。: ' 2014-01-01T00:00:00Z' です。   |
-| onPremisesProvisioningErrors |[onPremisesProvisioningError](onpremisesprovisioningerror.md) コレクション       | プロビジョニング エラーがこの組織の連絡先の同期の一覧です。                                                                                                                                                                                                                                                                                                |
-|onPremisesSyncEnabled|Boolean|**true の**場合は、オンプレミス ディレクトリからは、このオブジェクトを同期してください。**false**場合は、このオブジェクトがもともと設置ディレクトリからの同期が不要になった同期され、Exchange にもう**null**の場合は、オンプレミス ディレクトリ (既定値) からこのオブジェクトが同期されていません。|
-| phones                       | [phone](phone.md) コレクション                            | この組織の連絡先の電話のリストです。 電話の種類は、モバイル、ビジネス、および businessFax にあります。 各タイプの 1 つだけというものは、コレクション内に存在します。                                                                                                                       |
-| proxyAddresses               | String コレクション                                         | たとえば: ["SMTP: bob@contoso.com"、"smtp: bob@sales.contoso.com"]。 複数値プロパティのフィルター式には **any** 演算子が必要です。 サポートしています\$フィルターです。                                                                                                                                                                               |
-| surname                      | String                                                     | この組織の連絡先の姓を入力します。                          |
+| 解決                    | [physicalOfficeAddress](physicalofficeaddress.md)            | この組織の連絡先の住所。 現時点では、連絡先には1つの物理的な住所しかありません。 |
+| companyName                  | String                                                    | この組織の連絡先が所属する会社の名前。                                                                                                                                                                                                                                                                                                                 |
+| department                   | String                                                     | 連絡先が機能する部署の名前。                                                                                                                                                                                                                                                                                                                                |
+| displayName                  | 文字列型 (String)                                                     | この組織の連絡先の表示名。                                                                                                                                                                                                                                                                                                                                   |
+| givenName                    | String                                                     | この組織の連絡先の最初の名前。                                                                                                                                                                                                                                                                                                                                     |
+| id                           | String                                                     | この組織の連絡先の一意の識別子。                                                                                                                                                                                                                                                                                                                             |
+| imAddresses                  | String collection                          | この組織の連絡先の IM アドレスのリスト。 現時点では、連絡先は SIP アドレスを1つだけ持つことができます。                                                                                                                                                                                                                        |
+| jobTitle                     | 文字列                                                     | この組織の連絡先の役職。                                                                                                                                                                                                                                                                                                                                      |
+|mail|String| 連絡先の SMTP アドレス (例: "jeff@contoso.onmicrosoft.com")。 |
+| mailNickname                 | String                                                     | この組織の連絡先の電子メールエイリアス (電子メールアドレスの保留中の @ 記号の前にある部分)。                                                                                                                                                                                                                                                                                |
+| onPremisesLastSyncDateTime   | DateTimeOffset                                             | この組織の連絡先が、オンプレミスの AD から最後に同期された日時。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表します。これは常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、'2014-01-01T00:00:00Z'.のようになります。   |
+| onPremisesProvisioningErrors |[onPremisesProvisioningError](onpremisesprovisioningerror.md) コレクション       | この組織の連絡先の同期プロビジョニングエラーの一覧。                                                                                                                                                                                                                                                                                                |
+|onPremisesSyncEnabled|Boolean|このオブジェクトがオンプレミスのディレクトリから同期されている場合は**true** 。このオブジェクトがオンプレミスのディレクトリから最初に同期されていて、同期されておらず Exchange にある場合は、 **false**になります。このオブジェクトがオンプレミスのディレクトリから同期されたことがない場合は**null** (既定値)。|
+| phones                       | [phone](phone.md) コレクション                            | この組織の連絡先の電話のリスト。 電話の種類は、mobile、business、および businessfax にすることができます。 コレクションには、それぞれの種類のうち1つだけ存在できます。                                                                                                                       |
+| proxyAddresses               | String collection                                         | たとえば、["smtp: bob@contoso.com", "smtp: bob@sales.contoso.com"] のようになります。 複数値プロパティのフィルター式には **any** 演算子が必要です。 フィルター \$をサポートします。                                                                                                                                                                               |
+| surname                      | String                                                     | この組織の連絡先の姓。                          |
 
 ## <a name="relationships"></a>リレーションシップ
 
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|directReports|[directoryObject](directoryobject.md) collection| 連絡先の直属の部下。 (、ユーザーおよび連絡先のマネージャー プロパティが設定された連絡先にします。) 読み取り専用です。 Null 許容型。|
-|manager|[directoryObject](directoryobject.md)| ユーザーまたは連絡先は、この連絡先のマネージャーです。 読み取り専用です。|
-|memberOf|[directoryObject](directoryobject.md) コレクション| メンバーである連絡先のグループです。 読み取り専用です。 Null 許容型。|
+|directReports|[directoryObject](directoryobject.md) collection| 連絡先の直属の部下。 (上司プロパティがこの連絡先に設定されているユーザーと連絡先) 読み取り専用です。 Null 許容型。|
+|manager|[directoryObject](directoryobject.md)| この連絡先の上司であるユーザーまたは連絡先。 読み取り専用。|
+|memberOf|[directoryObject](directoryobject.md) コレクション| この連絡先がメンバーになっているグループ。 読み取り専用。 Null 許容型。|
 
 ## <a name="json-representation"></a>JSON 表記
 

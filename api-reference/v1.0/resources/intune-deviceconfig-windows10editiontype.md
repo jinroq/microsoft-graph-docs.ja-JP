@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: f2840d0de59c154073c0116a6188980f83d585b7
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30259690"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554266"
 ---
 # <a name="windows10editiontype-enum-type"></a>windows10EditionType 列挙型
 
@@ -21,17 +21,17 @@ Windows 10 エディションの種類。
 |メンバー|値|説明|
 |:---|:---|:---|
 |windows10Enterprise|.0|Windows 10 Enterprise|
-|windows10EnterpriseN|1-d|Windows 10 EnterpriseN|
-|windows10Education|pbm-2|Windows 10 のエデュケーション|
-|windows10EducationN|1/3|Windows 10 EducationN|
-|windows10MobileEnterprise|2/4|Windows 10 Mobile Enterprise|
-|windows10HolographicEnterprise|5|Windows 10 Holographic Enterprise|
-|windows10Professional|シックス|Windows 10 Professional|
-|windows10ProfessionalN|7|Windows 10 ProfessionalN|
-|windows10ProfessionalEducation|~|Windows 10 Professional エデュケーション|
-|windows10ProfessionalEducationN|i-9|Windows 10 Professional EducationN|
-|windows10ProfessionalWorkstation|個|Windows 10 Professional for workstation|
-|windows10ProfessionalWorkstationN|#|Windows 10 Professional ワークステーション N|
+|windows10EnterpriseN|1 |Windows 10 EnterpriseN|
+|windows10Education|2 |Windows 10 のエデュケーション|
+|windows10EducationN|3 |Windows 10 EducationN|
+|windows10MobileEnterprise|4 |Windows 10 Mobile Enterprise|
+|windows10HolographicEnterprise|5 |Windows 10 Holographic Enterprise|
+|windows10Professional|6 |Windows 10 Professional|
+|windows10ProfessionalN|7 |Windows 10 ProfessionalN|
+|windows10ProfessionalEducation|8 |Windows 10 Professional エデュケーション|
+|windows10ProfessionalEducationN|9 |Windows 10 Professional EducationN|
+|windows10ProfessionalWorkstation|10  |Windows 10 Professional for workstation|
+|windows10ProfessionalWorkstationN|11 |Windows 10 Professional ワークステーション N|
 
 
 

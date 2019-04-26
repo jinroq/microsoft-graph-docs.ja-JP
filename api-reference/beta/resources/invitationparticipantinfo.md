@@ -1,31 +1,31 @@
 ---
 title: invitationParticipantInfo リソースの種類
-description: '**InvitationParticipant**は、会話への招待に関連付けられている id のセットを表すために使用し、招待状の追加のパラメーターを提供します。'
+description: '**InvitationParticipant**は、会話出席依頼に関連付けられている id のセットを表すために使用され、追加の招待パラメーターを提供します。'
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: cb20dde1a74472695755e65dc404a6709f79c8b0
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641919"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569964"
 ---
 # <a name="invitationparticipantinfo-resource-type"></a>invitationParticipantInfo リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**InvitationParticipant**は、会話への招待に関連付けられている id のセットを表すために使用し、招待状の追加のパラメーターを提供します。
+**InvitationParticipant**は、会話出席依頼に関連付けられている id のセットを表すために使用され、追加の招待パラメーターを提供します。
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ                           | 型                          | 説明                                                                          |
 | :--------------------------------- | :---------------------------- | :----------------------------------------------------------------------------------- |
-| endpointType                       | String                        | 使用可能な値は、`default`、`voicemail` です。 |
-| identity                           | [identitySet](identityset.md) | この招待状に関連付けられている[identitySet](identityset.md) 。                   |
-| languageId                         | String                        | 言語カルチャの文字列です。                                                                                     |
-| 地域                             | String                        | 参加者の領域です。                                                           |
-| replacesCallId                     | String                        | 省略可能。 ターゲットの idenity がの一部である現在の呼び出しです。 参加者を追加するには、この呼び出しが削除されます。 |
+| endpointtype                       | String                        | 使用可能な値は、`default`、`voicemail` です。 |
+| 独自性                           | [identitySet](identityset.md) | この招待に関連付けられている id[セット](identityset.md)。                   |
+| languageId                         | String                        | 言語のカルチャ文字列。                                                                                     |
+| エリア                             | String                        | 参加者の地域。                                                           |
+| replacesCallId                     | 文字列                        | 省略可能。 ターゲット id が現在一部である通話。 この呼び出しは、参加者が追加されると削除されます。 |
 
 ## <a name="json-representation"></a>JSON 表記
 

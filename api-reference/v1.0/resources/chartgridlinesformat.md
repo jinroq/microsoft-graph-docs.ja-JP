@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: dd1e6d7f0a4ae9c17794035c8103cda8d189d5ca
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27959609"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569061"
 ---
 # <a name="chartgridlinesformat-resource-type"></a>ChartGridlinesFormat リソースの種類
 
@@ -22,10 +22,10 @@ ms.locfileid: "27959609"
 ## <a name="properties"></a>プロパティ
 なし
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|line|[WorkbookChartLineFormat](chartlineformat.md)|グラフの線の書式設定を表します。読み取り専用。|
+|line|[WorkbookChartLineFormat](chartlineformat.md)|グラフの線の書式設定を表します。 値の取得のみ可能です。|
 
 
 ## <a name="json-representation"></a>JSON 表記

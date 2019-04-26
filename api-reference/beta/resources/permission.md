@@ -2,14 +2,14 @@
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: アクセス許可
+title: Permission
 localization_priority: Normal
 ms.openlocfilehash: 12390583dcb1a87a5c9492ae3dcbcb132a66f69c
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482078"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568257"
 ---
 # <a name="permission-resource-type"></a>permission リソースの種類
 
@@ -60,7 +60,7 @@ ms.locfileid: "30482078"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ            | 種類                        | 説明
+| プロパティ            | 型                        | 説明
 |:--------------------|:----------------------------|:-------------------------
 | id                  | String                      | 項目の全アクセス許可の中の、アクセス許可の一意の識別子です。読み取り専用。
 | grantedTo           | [IdentitySet][]             | ユーザー タイプのアクセス許可、ユーザーとこのアクセス許可のアプリケーションの詳細。読み取り専用。
@@ -69,9 +69,9 @@ ms.locfileid: "30482078"
 | inheritedFrom       | [ItemReference][]           | 現在のアクセス許可が先祖から継承されている場合、その先祖への参照を提供します。読み取り専用。
 | link                | [SharingLink][]             | 現在のアクセス許可がリンク タイプのアクセス許可である場合は、そのリンクの詳細を提供します。読み取り専用。
 | roles               | Collection(String)          | `read` など、アクセス許可の種類。ロールの完全なリストは以下を参照してください。読み取り専用。
-| shareId             | String                      | 共有**[API][]** を介してこの共有アイテムにアクセスするために使用できる一意のトークン。 値の取得のみ可能です。
+| shareId             | String                      | 共有**[API][]** を介してこの共有アイテムにアクセスするために使用できる一意のトークン。 読み取り専用。
 | expirationDateTime  | DateTimeOffset              | yyyy-mm-yyyy-mm-ddthh: mm: ssz の形式は、アクセス許可の有効期限を示します。 MinValue は、このアクセス許可に有効期限が設定されていないことを示します。 省略可能。
-| hasPassword         | ブール型                     | これは、このアクセス許可に対してパスワードが設定されているかどうかを示します。これは応答でのみ表示されます。 省略可能で、読み取り専用で、OneDrive 個人用のみです。
+| hasPassword         | Boolean                     | これは、このアクセス許可に対してパスワードが設定されているかどうかを示します。これは応答でのみ表示されます。 省略可能で、読み取り専用で、OneDrive 個人用のみです。
 
 ### <a name="roles-enumeration-values"></a>Roles 列挙値
 
@@ -219,14 +219,14 @@ permission リソースは、_ファセット_ を使用して、リソースに
 
 ## <a name="methods"></a>メソッド
 
-| メソッド                                                   | REST パス
+| Method                                                   | REST パス
 |:---------------------------------------------------------|:-----------------------
 | [アクセス許可を一覧表示する](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
 | [アクセス許可を取得する](../api/permission-get.md)               | `GET /drive/items/{item-id}/permissions/{id}`
 | [リンクの作成][createlink]                                | `POST /drive/items/{item-id}/createLink`
 | [ユーザーを招待]する[invite]                                  | `POST /drive/items/{item-id}/invite`
-| [Update](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
-| [Delete](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
+| [更新する](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
+| [削除](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
 
 
 

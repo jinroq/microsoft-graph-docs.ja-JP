@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: e7dade7e0c83808aa10700e87dd54a1e8fe9bb7c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27971971"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569691"
 ---
 # <a name="worksheet-range"></a>ワークシート:Range
 
@@ -39,7 +39,7 @@ GET /workbook/worksheets/{id|name}/range
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|address|文字列|省略可能。範囲のアドレスまたは名前。指定されていない場合は、ワークシート全体の範囲が返されます。|
+|address|string|省略可能。範囲のアドレスまたは名前。指定されていない場合は、ワークシート全体の範囲が返されます。|
 
 ## <a name="response"></a>応答
 
@@ -79,7 +79,7 @@ Content-length: 169
 }
 ```
 
-場合、省略可能な`address`パラメーターが指定されていない、この関数は、全体のワークシートのセル範囲を返します。
+オプション`address`のパラメーターが指定されていない場合、この関数はワークシートの範囲全体を返します。
 
 ##### <a name="request"></a>要求
 

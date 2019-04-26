@@ -6,11 +6,11 @@ title: アイテムにアクセスするための招待状を送信する
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: f7d3a974143b738b966a8953848f4837c16cd6c8
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480741"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548097"
 ---
 # <a name="send-a-sharing-invitation"></a>共有の招待状を送信する
 
@@ -62,7 +62,7 @@ POST /users/{userId}/drive/items/{itemId}/invite
 |:-----------------|:-------------------------------|:-------------------------
 | Recipients       | Collection([DriveRecipient][]) | アクセスおよび共有の招待状を受信する、受信者のコレクション。
 | message          | String                         | 共有の招待状に含まれるプレーンテキスト形式のメッセージ。最大の長さは 2000 文字です。
-| requireSignIn    | ブール型                        | 共有アイテムを表示するために、招待状の受信者がサインインする必要があるかどうかを指定します。
+| requireSignIn    | ブール値                        | 共有アイテムを表示するために、招待状の受信者がサインインする必要があるかどうかを指定します。
 | sendInvitation   | ブール値                        | true の場合、[共有リンク][]は受信者に送信されます。 それ以外の場合は、通知を送信することなく、直接アクセス許可が付与されます。
 | roles            | Collection(String)             | 共有への招待の受信者に付与する役割を指定します。
 

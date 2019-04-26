@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 831cea99e2eefaf87db814b149798506950bf407
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986594"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569446"
 ---
 # <a name="chart-resource-type"></a>グラフ リソースの種類
 
@@ -25,7 +25,7 @@ ms.locfileid: "27986594"
 |[データ系列を一覧表示する](../api/chart-list-series.md) |[WorkbookChartSeries](chartseries.md)コレクション| ChartSeries オブジェクトのコレクションを取得します。|
 |[Update](../api/chart-update.md) | [WorkbookChart](chart.md)   |グラフ オブジェクトを更新します。 |
 |[Image](../api/chart-image.md)|Base64 でエンコードされた文字列の画像|指定したサイズに合わせてグラフを拡大・縮小することで、グラフを Base64 でエンコードされた画像としてレンダリングします。|
-|[Delete](../api/chart-delete.md)|なし|グラフ オブジェクトを削除します。|
+|[削除](../api/chart-delete.md)|なし|グラフ オブジェクトを削除します。|
 |[Setdata](../api/chart-setdata.md)|なし|グラフの元データをリセットします。|
 |[Setposition](../api/chart-setposition.md)|なし|ワークシート上のセルを基準にしてグラフを配置します。|
 |[List](../api/chart-list.md) | [WorkbookChart](chart.md)コレクション |グラフ オブジェクトのコレクションを取得します。 |
@@ -33,16 +33,16 @@ ms.locfileid: "27986594"
 |[Add](../api/chartcollection-add.md)|[WorkbookChart](chart.md)|新しいグラフを作成します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |height|double|グラフ オブジェクトの高さをポイント単位で表します。|
-|ID|文字列|コレクション内での位置を基にグラフを取得します。読み取り専用です。|
+|id|string|コレクション内での位置を基にグラフを取得します。読み取り専用です。|
 |left|double|グラフの左側からワークシートの原点までの距離 (ポイント単位)。|
-|name|文字列| グラフ オブジェクトの名前を表します。|
+|name|string|グラフ オブジェクトの名前を表します。|
 |top|double|オブジェクトの上端から (ワークシートの) 1 行目の上部または (グラフの) グラフ領域の上部までの距離をポイント単位で表します。|
 |width|double|グラフ オブジェクトの幅をポイント単位で表します。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |axes|[WorkbookChartAxes](chartaxes.md)|グラフの軸を表します。値の取得のみ可能です。|
@@ -50,8 +50,8 @@ ms.locfileid: "27986594"
 |format|[WorkbookChartAreaFormat](chartareaformat.md)|グラフ領域の書式設定プロパティをカプセル化します。値の取得のみ可能です。|
 |legend|[WorkbookChartLegend](chartlegend.md)|グラフの凡例を表します。値の取得のみ可能です。|
 |series|[WorkbookChartSeries](chartseries.md)コレクション|グラフの 1 つのデータ系列またはデータ系列のコレクションを表します。値の取得のみ可能です。|
-|役職|[WorkbookChartTitle](charttitle.md)|指定したグラフのタイトル (タイトルのテキスト、表示/非表示、位置、書式設定など) を表します。値の取得のみ可能です。|
-|worksheet|[WorkbookWorksheet](worksheet.md)|現在のグラフを含んでいるワークシート。読み取り専用。|
+|title|[WorkbookChartTitle](charttitle.md)|指定したグラフのタイトル (タイトルのテキスト、表示/非表示、位置、書式設定など) を表します。値の取得のみ可能です。|
+|worksheet|[WorkbookWorksheet](worksheet.md)|現在のグラフを含んでいるワークシート。 読み取り専用です。|
 
 ## <a name="json-representation"></a>JSON 表記
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 2808d92ac68fd6193381fccfd0d118f36e602677
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31796081"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571724"
 ---
 # <a name="ioscompliancepolicy-resource-type"></a>iosCompliancePolicy リソースの種類
 
@@ -26,15 +26,15 @@ ms.locfileid: "31796081"
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
 |[iosCompliancePolicies のリスト](../api/intune-deviceconfig-ioscompliancepolicy-list.md)|[iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md) コレクション|[iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md) オブジェクトのプロパティとリレーションシップをリストします。|
-|[Get iosCompliancePolicy](../api/intune-deviceconfig-ioscompliancepolicy-get.md)|[iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md)|[iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[Create iosCompliancePolicy](../api/intune-deviceconfig-ioscompliancepolicy-create.md)|[iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md)|新しい [iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md) オブジェクトを作成します。|
-|[Delete iosCompliancePolicy](../api/intune-deviceconfig-ioscompliancepolicy-delete.md)|なし|[iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md) を削除します。|
+|[iosCompliancePolicy の取得](../api/intune-deviceconfig-ioscompliancepolicy-get.md)|[iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md)|[iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[iosCompliancePolicy の作成](../api/intune-deviceconfig-ioscompliancepolicy-create.md)|[iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md)|新しい [iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md) オブジェクトを作成します。|
+|[iosCompliancePolicy の削除](../api/intune-deviceconfig-ioscompliancepolicy-delete.md)|なし|[iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md) を削除します。|
 |[iosCompliancePolicy の更新](../api/intune-deviceconfig-ioscompliancepolicy-update.md)|[iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md)|[iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|roleScopeTagIds|String コレクション|このエンティティインスタンスの範囲タグのリスト。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
+|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |id|文字列型 (String)|エンティティのキー。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |説明|String|管理者が指定した、デバイス構成についての説明。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
@@ -50,10 +50,10 @@ ms.locfileid: "31796081"
 |passcodeMinimumCharacterSetCount|Int32|パスワードに必要な文字セットの数。|
 |passcodeRequiredType|[requiredpasswordtype](../resources/intune-deviceconfig-requiredpasswordtype.md)|必要なパスコードの種類。 可能な値は、`deviceDefault`、`alphanumeric`、`numeric` です。|
 |passcodeRequired|Boolean|パスコードを要求するかどうかを指定します。|
-|osMinimumVersion|文字列|最小の iOS バージョン。|
+|osMinimumVersion|String|最小の iOS バージョン。|
 |osMaximumVersion|String|最大の iOS バージョン。|
-|osminimumbuildversion|文字列|最小の IOS ビルドバージョン。|
-|osmaximumbuildversion|文字列|IOS ビルドの最大バージョン。|
+|osminimumbuildversion|String|最小の IOS ビルドバージョン。|
+|osmaximumbuildversion|String|IOS ビルドの最大バージョン。|
 |securityBlockJailbrokenDevices|Boolean|デバイスの脱獄またはルート化を認めません。|
 |deviceThreatProtectionEnabled|Boolean|デバイスの脅威保護が有効になっている必要があります。|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Mobile Threat Protection に、コンプライアンス違反をレポートするための最小のリスク レベルを要求します。 可能な値は、`unavailable`、`secured`、`low`、`medium`、`high`、`notSet` です。|

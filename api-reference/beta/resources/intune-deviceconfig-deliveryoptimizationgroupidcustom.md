@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 2d4f369c9a3b62480549f19d4a7c1d7b1d0bb196
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31796592"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556166"
 ---
 # <a name="deliveryoptimizationgroupidcustom-resource-type"></a>deliveryOptimizationGroupIdCustom リソースの種類
 
@@ -25,7 +25,7 @@ ms.locfileid: "31796592"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|groupidcustom|文字列|デバイスが属する任意のグループ ID を指定します。|
+|groupidcustom|String|デバイスが属する任意のグループ ID を指定します。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

@@ -1,36 +1,34 @@
 ---
 title: domainDnsMxRecord リソースの種類
-description: テナント内の特定のドメインの DNS ゾーン ファイルに追加された MX レコードを表します。DomainDnsRecord エンティティから継承されます。
+description: テナント内の特定のドメインの DNS ゾーンファイルに追加された MX レコードを表します。 domaindnsrecord エンティティから継承されます。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 09af66a522d99645540ec24324c82f565eaedb1e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508420"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535124"
 ---
 # <a name="domaindnsmxrecord-resource-type"></a>domainDnsMxRecord リソースの種類
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-テナント内の特定のドメインの DNS ゾーン ファイルに追加された MX レコードを表します。[DomainDnsRecord](domaindnsrecord.md) エンティティから継承されます。
+テナント内の特定のドメインの DNS ゾーンファイルに追加された MX レコードを表します。 [domaindnsrecord](domaindnsrecord.md)エンティティから継承されます。
 
 ## <a name="methods"></a>メソッド
-このリソースへの直接クエリはサポートされていません。ドメイン サービス レコードのクエリを実行する方法の詳細については、[ドメイン](domain.md)のトピックを参照してください。
+このリソースへの直接クエリはサポートされていません。 ドメインサービスレコードを照会する方法については、「 [domain](domain.md) 」のトピックを参照してください。
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|id|String| このエンティティに割り当てられた一意の識別子。null 許容ではありません。読み取り専用です。|
-|isOptional|Boolean| False の場合、MX レコードは Microsoft オンライン サービスでドメインを正しく操作するために、DNS ホストで顧客によって構成されている必要があります。 |
-|label|文字列| DNS ホストで MX レコードの *alias/host/name* プロパティを構成する場合に使用される値です。 |
-|mailExchange|String| DNS ホストで MX レコードの *answer/destination/value* を構成する場合に使用される値です。|
-|preference|Int32| DNS ホストで MX レコードの *Preference/Priority* プロパティを構成する場合に使用される値です。 |
-|recordType|String| DNS レコードの種類。この値は常に *Mx* です。キー |
-|supportedService|String| Microsoft オンライン サービスまたはこの MX レコードに依存している機能。</br></br>次のいずれかの値を指定できます。**null**、*Email*、*Sharepoint*、*EmailInternalRelayOnly*、*OfficeCommunicationsOnline*、*SharePointDefaultDomain*、*FullRedelegation*、*SharePointPublic*、*OrgIdAuthentication*、*Yammer*、*Intune* |
-|ttl|Int32| DNS ホストで MX レコードの *Time To Live (ttl)* プロパティを設定するときに使用する値。null 許容ではありません |
+|id|String| このエンティティに割り当てられている一意の識別子。 null 許容ではありません。読み取り専用です。|
+|isoptional|ブール値| false の場合、MX レコードは、Microsoft Online Services がドメインで正しく動作するように、DNS ホストで顧客によって構成されている必要があります。 |
+|label|String| DNS ホストで MX レコードの*alias/host/name*プロパティを構成する場合に使用される値です。 |
+|mailexchange|String| DNS ホストで MX レコードの*応答/宛先/値*を構成する場合に使用される値です。|
+|優先順位|Int32| DNS ホストで MX レコードの*Preference/Priority*プロパティを構成する場合に使用される値です。 |
+|recordType|String| DNS レコードの種類。 値は常に*Mx*です。 キー |
+|supportedservice|String| この MX レコードに依存している Microsoft Online サービスまたは機能。</br></br>**null**、 *Email*、 *Sharepoint*、 *emailinternalrelayonly*、 *OfficeCommunicationsOnline*、 *sharepointdefaultdomain*、 *fullredelegation*、sharepointpublic のいずれかの値を使用できます。 **、 *orgidauthentication*、 *Yammer*、 *Intune* |
+|ttl|Int32| DNS ホストで MX レコードの*time to live (ttl)* プロパティを構成する場合に使用する値です。 null 許容ではない |
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -40,6 +38,7 @@ ms.locfileid: "29508420"
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.domainDnsRecord",
   "optionalProperties": [
 
   ],
@@ -48,7 +47,6 @@ ms.locfileid: "29508420"
 
 ```json
 {
-  "canonicalName": "String",
   "id": "String (identifier)",
   "isOptional": true,
   "label": "String",
@@ -63,15 +61,10 @@ ms.locfileid: "29508420"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "domainDnsMxRecord resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/domaindnsmxrecord.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

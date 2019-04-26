@@ -1,39 +1,39 @@
 ---
 title: onPremisesExtensionAttributes リソースの種類
-description: ユーザー エンティティの**onPremisesExtensionAttributes**プロパティには、15 個のカスタム拡張機能属性のプロパティが含まれています。 onPremisesSyncEnabled ユーザーの場合、このプロパティ セットはオンプレミスの Active Directory でマスター管理され、Azure AD に同期され、読み取り専用となります。 クラウド専用ユーザー (onPremisesSyncEnabled が false) の場合、これらのプロパティは作成時または更新時に設定される可能性があります。
+description: user エンティティの**onPremisesExtensionAttributes**プロパティには、15個のカスタム拡張属性プロパティが含まれています。 **onPremisesSyncEnabled**ユーザーの場合、このプロパティのセットはオンプレミスの Active Directory でマスターされ、Azure AD に同期され、読み取り専用になります。 クラウドのみのユーザー ( **onPremisesSyncEnabled**が false) の場合、これらのプロパティは作成時または更新時に設定できます。
 localization_priority: Normal
 ms.openlocfilehash: f44f71fdcd86d2165289282568a2d7153ccc99b1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518241"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568893"
 ---
 # <a name="onpremisesextensionattributes-resource-type"></a>onPremisesExtensionAttributes リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[ユーザー](user.md)エンティティの**onPremisesExtensionAttributes**プロパティには、15 個のカスタム拡張機能属性のプロパティが含まれています。 onPremisesSyncEnabled ユーザーの場合、このプロパティ セットはオンプレミスの Active Directory でマスター管理され、Azure AD に同期され、読み取り専用となります。 クラウド専用ユーザー (onPremisesSyncEnabled が false) の場合、これらのプロパティは作成時または更新時に設定される可能性があります。
+[user](user.md)エンティティの**onPremisesExtensionAttributes**プロパティには、15個のカスタム拡張属性プロパティが含まれています。 **onPremisesSyncEnabled**ユーザーの場合、このプロパティのセットはオンプレミスの Active Directory でマスターされ、Azure AD に同期され、読み取り専用になります。 クラウドのみのユーザー ( **onPremisesSyncEnabled**が false) の場合、これらのプロパティは作成時または更新時に設定できます。
 
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|extensionAttribute1|String| 最初の拡張機能のカスタマイズ可能な属性です。 |
-|extensionAttribute2|String| 2 つ目の拡張機能のカスタマイズ可能な属性です。 |
-|extensionAttribute3|String| 3 番目の拡張機能のカスタマイズ可能な属性です。 |
-|extensionAttribute4|String| 4 番目の拡張機能のカスタマイズ可能な属性です。 |
-|extensionAttribute5|String| 5 番目の拡張機能のカスタマイズ可能な属性です。 |
-|extensionAttribute6|String| 6 番目の拡張機能のカスタマイズ可能な属性です。 |
-|extensionAttribute7|String| 7 番目の拡張機能のカスタマイズ可能な属性です。 |
-|extensionAttribute8|String| 8 番目の拡張機能のカスタマイズ可能な属性です。 |
-|extensionAttribute9|String| 9 番目の拡張機能のカスタマイズ可能な属性です。 |
-|extensionAttribute10|String| 10 番目のカスタマイズ可能な拡張機能の属性です。 |
-|extensionAttribute11|String| 11 番目のカスタマイズ可能な拡張機能の属性です。 |
-|extensionAttribute12|String| 12 番目にカスタマイズ可能な拡張機能の属性です。 |
-|extensionAttribute13|String| 13 番目にカスタマイズ可能な拡張機能の属性です。 |
-|extensionAttribute14|String| 14 番目にカスタマイズ可能な拡張機能の属性です。 |
-|extensionAttribute15|String| 15 番目のカスタマイズ可能な拡張機能の属性です。 |
+|extensionAttribute1|String| 最初のカスタマイズ可能な拡張属性。 |
+|extensionAttribute2|String| 2番目のカスタマイズ可能な拡張属性。 |
+|extensionAttribute3|String| 3番目のカスタマイズ可能な拡張属性。 |
+|extensionAttribute4|String| 4番目のカスタマイズ可能な拡張属性。 |
+|extensionAttribute5|String| 5番目のカスタマイズ可能な拡張属性。 |
+|extensionAttribute6|String| 6番目のカスタマイズ可能な拡張属性。 |
+|extensionAttribute7|String| 7番目にカスタマイズ可能な拡張属性。 |
+|extensionAttribute8|String| 8番目にカスタマイズ可能な拡張属性。 |
+|extensionAttribute9|String| 9番目にカスタマイズ可能な拡張属性。 |
+|extensionAttribute10|String| 10番目にカスタマイズ可能な拡張属性。 |
+|extensionAttribute11|String| 11番目にカスタマイズ可能な拡張属性。 |
+|extensionAttribute12|String| 12番目にカスタマイズ可能な拡張属性。 |
+|extensionAttribute13|String| 13番目にカスタマイズ可能な拡張属性。 |
+|extensionAttribute14|String| 14番目のカスタマイズ可能な拡張属性。 |
+|extensionAttribute15|String| 15番目のカスタマイズ可能な拡張属性。 |
 
 ## <a name="json-representation"></a>JSON 表記
 

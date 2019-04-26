@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 6e737a58fc9547d54feeeeef47136286285c1e99
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30255060"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32565983"
 ---
 # <a name="deviceinstallstate-resource-type"></a>deviceInstallState リソースの種類
 
@@ -29,7 +29,7 @@ ms.locfileid: "30255060"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|エンティティのキー。|
+|id|String|エンティティのキー。|
 |deviceName|String|デバイス名。|
 |deviceId|String|デバイス ID。|
 |lastSyncDateTime|DateTimeOffset|最後の同期日時。|
@@ -39,7 +39,7 @@ ms.locfileid: "30255060"
 |osDescription|String|OS の説明。|
 |userName|String|デバイスのユーザー名です。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記

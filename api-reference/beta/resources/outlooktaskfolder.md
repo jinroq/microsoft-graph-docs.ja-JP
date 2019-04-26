@@ -1,21 +1,21 @@
 ---
-title: outlookTaskFolder リソースの種類
-description: 'Outlook のタスク (outlookTask オブジェクトのコレクション) を含むフォルダーです。 '
+title: outlooktaskfolder リソースの種類
+description: 'Outlook のタスク (outlooktask オブジェクトのコレクション) が格納されているフォルダー。 '
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: eb61936b9ede67d35127db07c92ba8b7517fe623
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643924"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568605"
 ---
-# <a name="outlooktaskfolder-resource-type"></a>outlookTaskFolder リソースの種類
+# <a name="outlooktaskfolder-resource-type"></a>outlooktaskfolder リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Outlook のタスク ( [outlookTask](outlooktask.md)オブジェクトのコレクション) を含むフォルダーです。 
+Outlook のタスク ( [outlooktask](outlooktask.md)オブジェクトのコレクション) が格納されているフォルダー。 
 
 Outlook では、既定のタスク グループ `My Tasks` には、ユーザーのメールボックス用の既定のタスク フォルダー `Tasks` が含まれています。 これらの既定のタスク グループとフォルダーの名前を変更したり削除したりすることはできませんが、タスク グループとタスク フォルダーを作成することはできます。
 
@@ -24,32 +24,32 @@ Outlook では、既定のタスク グループ `My Tasks` には、ユーザ�
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[OutlookTaskFolder を取得します。](../api/outlooktaskfolder-get.md) | [outlookTaskFolder](outlooktaskfolder.md) |プロパティと指定した Outlook の仕事フォルダーの関係を取得します。|
-|[OutlookTask を作成します。](../api/outlooktaskfolder-post-tasks.md) |[outlookTask](outlooktask.md)| 指定されたタスクのフォルダーに Outlook のタスクを作成します。|
-|[List tasks](../api/outlooktaskfolder-list-tasks.md) |[outlookTask](outlooktask.md) コレクション| 指定したフォルダーに Outlook のすべてのタスクを取得します。|
-|[更新する](../api/outlooktaskfolder-update.md) | [outlookTaskFolder](outlooktaskfolder.md)   |Outlook の仕事フォルダーの書き込み可能なプロパティを更新します。 |
-|[削除する](../api/outlooktaskfolder-delete.md) | なし |指定した Outlook の仕事フォルダーを削除します。|
+|[outlooktaskfolder の取得](../api/outlooktaskfolder-get.md) | [outlookTaskFolder](outlooktaskfolder.md) |指定された Outlook タスクフォルダーのプロパティとリレーションシップを取得します。|
+|[outlooktask の作成](../api/outlooktaskfolder-post-tasks.md) |[outlookTask](outlooktask.md)| 指定したタスクフォルダーに Outlook のタスクを作成します。|
+|[タスクを一覧表示する](../api/outlooktaskfolder-list-tasks.md) |[outlookTask](outlooktask.md) コレクション| 指定したフォルダー内のすべての Outlook タスクを取得します。|
+|[更新する](../api/outlooktaskfolder-update.md) | [outlookTaskFolder](outlooktaskfolder.md)   |Outlook タスクフォルダーの書き込み可能なプロパティを更新します。 |
+|[削除](../api/outlooktaskfolder-delete.md) | なし |指定された Outlook タスクフォルダーを削除します。|
 |**拡張プロパティ**| | |
-|[単一値の拡張プロパティを作成する](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[outlookTaskFolder](outlooktaskfolder.md)  |新規または既存の Outlook タスク フォルダー内の 1 つまたは複数の単一値の拡張プロパティを作成します。   |
-|[拡張プロパティを単一値を持つタスク フォルダーを取得します。](../api/singlevaluelegacyextendedproperty-get.md)  | [outlookTaskFolder](outlooktaskfolder.md) | 拡張プロパティを使用して単一の値が含まれている Outlook の仕事フォルダーを取得する`$expand`または`$filter`。 |
-|[複数値の拡張プロパティを作成する](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [outlookTaskFolder](outlooktaskfolder.md) | 新規または既存の Outlook タスク フォルダー内の 1 つまたは複数の値を複数の拡張プロパティを作成します。  |
-|[拡張プロパティ値を複数の作業フォルダーを取得します。](../api/multivaluelegacyextendedproperty-get.md)  | [outlookTaskFolder](outlooktaskfolder.md) | 使用して複数の値の拡張プロパティを含む Outlook の仕事フォルダーを取得する`$expand`。 |
+|[単一値の拡張プロパティを作成する](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[outlookTaskFolder](outlooktaskfolder.md)  |新規または既存の Outlook タスクフォルダーに、1つ以上の単一値の拡張プロパティを作成します。   |
+|[単一値の拡張プロパティを持つタスクフォルダーを取得する](../api/singlevaluelegacyextendedproperty-get.md)  | [outlookTaskFolder](outlooktaskfolder.md) | または`$expand` `$filter`を使用して、単一値の拡張プロパティを含む Outlook タスクフォルダーを取得します。 |
+|[複数値の拡張プロパティを作成する](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [outlookTaskFolder](outlooktaskfolder.md) | 新規または既存の Outlook タスクフォルダーに、1つ以上の複数値の拡張プロパティを作成します。  |
+|[複数値の拡張プロパティを持つタスクフォルダーを取得する](../api/multivaluelegacyextendedproperty-get.md)  | [outlookTaskFolder](outlooktaskfolder.md) | を使用`$expand`して、複数値の拡張プロパティを含む Outlook のタスクフォルダーを取得します。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |changeKey|String|タスク フォルダーのバージョン。|
-|id|String|タスク フォルダーでは、ユーザーのメールボックス内で一意の識別子です。 読み取り専用です。|
-|isDefaultFolder|Boolean|フォルダーが既定のタスク フォルダーである場合は true。|
+|id|文字列型 (String)|ユーザーのメールボックス内で一意のタスクフォルダーの識別子。 読み取り専用。|
+|isdefaultfolder|Boolean|フォルダーが既定のタスク フォルダーである場合は true。|
 |name|String|タスク フォルダーの名前。|
-|parentGroupKey|Guid|タスク フォルダーの親グループの一意の GUID 識別子。|
+|parentgroupkey|Guid|タスク フォルダーの親グループの一意の GUID 識別子。|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) コレクション|複数値のコレクションでは、仕事フォルダーに対して定義されたプロパティを拡張できます。 読み取り専用です。 Null 許容型。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) コレクション|仕事フォルダーに対して定義されている拡張プロパティを単一値のコレクションです。 読み取り専用です。 Null 許容型。|
-|tasks|[outlookTask](outlooktask.md) コレクション|対象タスク フォルダー内のタスク。 読み取り専用です。 Null 許容型。|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection|タスクフォルダーに対して定義されている複数値の拡張プロパティのコレクション。 読み取り専用。 Null 許容型。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection|タスクフォルダーに対して定義されている単一値の拡張プロパティのコレクションです。 読み取り専用。 Null 許容型。|
+|tasks|[outlookTask](outlooktask.md) コレクション|対象タスク フォルダー内のタスク。 読み取り専用。 Null 許容型。|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。

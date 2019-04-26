@@ -5,11 +5,11 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 ms.openlocfilehash: fb1067b2b564e8431aaa8a4bf8ca094a2b5d127d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: HT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981281"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32555462"
 ---
 # <a name="use-note-tags-in-onenote-pages"></a>OneNote ページでノート シールを使用する
 
@@ -17,7 +17,7 @@ ms.locfileid: "27981281"
 
 次の図に示すように、`data-tag` 属性を使用してチェック ボックス、星、その他の組み込みノート シールを OneNote ページに追加したり、更新したりします。
 
-![OneNote ページに表示される 3 つのノート シール。](images/note-tags-example.png)
+![OneNote ページに表示される 3 つのノート シール](images/note-tags-example.png)
 
 
 <a name="attributes"></a>
@@ -36,7 +36,7 @@ OneNote ページの HTML では、ノート シールは `data-tag` 属性と�
 
 | プロパティ | 説明 |  
 |:------|:------|  
-| shape | ノート シールの識別子 (例: `to-do` または `important`)。 |  
+| shape | ノート シールの識別子 (例: to-do`to-do` または important`important`)。 |  
 | status | チェック ボックス ノート シールの状態。 チェック ボックスを完了状態に設定する場合にのみ使用します。 |  
  
 
@@ -44,7 +44,7 @@ OneNote ページの HTML では、ノート シールは `data-tag` 属性と�
 
 ## <a name="add-or-update-note-tags"></a>ノート シールの追加または更新
 
-組み込みのノート シールは、サポートされた要素で `data-tag` 属性を使用するだけで、追加したり更新したりすることができます。例として、important というマークが付けられた段落を次に示します。
+組み込みのノート シールは、サポートされた要素で data-tag`data-tag` 属性を使用するだけで、追加したり更新したりすることができます。たとえば、重要としてマークされた段落があるとします。 For example, here's a paragraph marked as important:
 
 ```html
 <p data-tag="important">...</p>
@@ -56,12 +56,12 @@ OneNote ページの HTML では、ノート シールは `data-tag` 属性と�
 <p data-tag="important, critical">...</p>
 ```
 
-次に示す要素で、`data-tag` を定義できます。
+次の要素の data-tag`data-tag` を定義できます。
 
 - p 
 - ul、ol、li (詳細については、「[リストのノート シール](#note-tags-on-lists)」を参照)
 - img 
-- h1 から h6 
+- h1 - h6 
 - title 
 
 Microsoft Graph で使用できるノート シールのリストの「[組み込みノート シール](#built-in-note-tags-for-onenote)」を参照してください。 Microsoft Graph を使用したカスタム シールの追加または更新はサポートされていません。
@@ -93,7 +93,7 @@ Authorization: Bearer {token}
 ]
 ```
 
-次に示す要求では、すべての[組み込みノート シール](#built-in-note-tags-for-onenote)を含んだページを作成します。
+次の要求は、すべての[組み込みノート シール](#built-in-note-tags-for-onenote)を含んだページを作成します。
 
 ```html 
 POST https://graph.microsoft.com/v1.0/me/onenote/notebooks/pages
@@ -164,7 +164,7 @@ Authorization: Bearer {token}
 </html>
 ``` 
 
-ページ作成の詳細については、「[OneNote ページの作成](onenote-create-page.md)」を参照してください。ページ更新の詳細については、「[OneNote ページの更新](onenote-update-page.md)」を参照してください。
+ページ作成の詳細については、「[OneNote ページの作成」を参照してください。ページ更新の詳細については、「OneNote ページの更新](onenote-create-page.md)」を参照してください。 ページ作成の詳細については、「OneNote ページの作成」を参照してください。ページ更新の詳細については、「[OneNote ページの更新](onenote-update-page.md)」を参照してください。
 
 
 <a name="note-tags-lists"></a>
@@ -173,29 +173,29 @@ Authorization: Bearer {token}
 
 リストのノート シールの処理方法に関するいくつかのガイドラインを次に示します。
 
-- To Do リストには `p` 要素を使用します。この要素は行頭文字や行番号を表示しません。また、簡単に更新できます。
+- Use `p` elements for to-do lists. To Do リストには p 要素を使用します。この要素は段落記号や行番号を表示しません。また、簡単に更新できます。
 
-- すべてのリスト項目に対して**同じ**ノート シールを表示するリストを作成または更新する場合は、`ul` または `ol` に `data-tag` を定義します。 リスト全体を更新するには、`ul` または `ol` に `data-tag` を再定義する必要があります。
+- すべてのリスト項目に対して**同じ**ノート シールを表示するリストを作成または更新する場合は、`ul` または `ol` に `data-tag` を定義します。 リスト全体を更新するには、`data-tag` または `ul` に `ol` を再定義する必要があります。
 
-- 一部またはすべてのリスト アイテムの **固有の**ノート シールを表示するリストを作成または更新するには、`li` 要素に `data-tag` を定義し、`ul` と `ol` のどちらにおいても `li` 要素がネストされないようにします。 リスト全体を更新するには、出力 HTML で返される `ul` を削除して、ネストされていない `li` 要素のみを指定する必要があります。
+- 一部またはすべてのリストアイテムに**固有**のノートシールを表示するリストを作成また`data-tag`は`li`更新するには、要素`li`を定義し`ul` 、 `ol`要素をまたはにネストしないようにします。 リスト全体を更新するには、出力 HTML で返さ`ul`れたを削除し、ネスト`li`されていない要素のみを指定する必要があります。
 
-- 特定の `li` 要素を更新するには、個々の `li` 要素をターゲットとし、その `li` 要素に `data-tag` を定義します。 個別に処理された `li` 要素は、元のリストがどのように定義されていても、一意のノート シールを表示するように更新できます。
+- 特定`li`の要素を更新するに`li`は、要素を個別`data-tag`にターゲット`li`にして、要素にを定義します。 個別に処理された `li` 要素は、元のリストがどのように定義されていても、一意のノート シールを表示するように更新できます。
 
-  ガイドラインは Microsoft Graph により適用される次の規則に基づいています。
+  ガイドラインは、Microsoft Graph によって適用される次の規則に基づいています。
 
-  - `ul` または `ol` の `data-tag` 設定は、子 `li` 要素の設定をすべて上書きします。これは、子 `li` 要素でのみ `data-tag` を指定している (`ul` または `ol` では指定していない) 場合にも当てはまります。
+  - The `data-tag` setting for a `ul` or `ol` overrides all settings on child `li` elements. ul`ul` または ol`ol` の data-tag`data-tag` の設定は、子の li`li` 要素ですべての設定を上書きします。これは、ul または ol は data-tag を指定しないが、その子の li 要素は指定する場合でも適用されます。
 
-    たとえば、`data-tag="project-a"` を定義している `ul` または `ol` を作成すると、そのリスト項目のすべてが *Project A* ノート シールを表示するようになります。また、`ul` または `ol` で `data-tag` を定義していない場合は、そのどの項目にもノート シールが表示されなくなります。この上書きは、子 `li` 要素の明示的な設定に関係なく発生します。
+    For example, if you create a `ul` or `ol` that defines `data-tag="project-a"`, all its list items will display the *Project A* note tag. Or if the `ul` or `ol` doesn't define a `data-tag`, none of its items will display a note tag. This override happens regardless of any explicit settings on child `li` elements.
 
-- 次に示す条件下では、固有の `data-tag` 設定がリスト項目に適用されます。
+- 以下の条件下では、固有の data-tag`data-tag` 設定がリスト項目に適用されます。
 
-  - 作成要求または更新要求で、`li` 要素が `ul` または `ol` 内でネストされていない。
+  - 作成または更新要求では、li`li` 要素が ul`ul` や ol`ol` で入れ子になることはありません。
 
-  - 更新要求で、`li` 要素が個別に処理される。
+  - 更新要求では、li`li` 要素が個別に処理されます。
 
-- 入力 HTML で送信されるネストされていない `li` 要素は、出力 HTML では `ul` で返されます。
+- 入力 HTML で送信される、入れ子になっていないli`li` 要素は、出力 HTML では ul`ul` で返されます。
 
-- 出力 HTML では、すべての `data-tag` リストの設定が、リスト項目の `span` 要素で定義されます。
+- 出力 HTML では、すべての data-tag`data-tag` リストの設定はリスト項目の span`span` 要素で定義されます。
 
 
 次のコードは、これらの規則の一部がどのように適用されるかを示しています。入力 HTML は、ノート シールが含まれる 2 つのリストを作成します。出力 HTML は、ページ コンテンツを取得するときに返されるリストです。
@@ -236,7 +236,7 @@ Authorization: Bearer {token}
 
 `GET ../api/v1.0/pages/{page-id}/content` 
 
-出力 HTML 内の `data-tag` 属性には、常に shape 値が含まれています。完了状態に設定されたチェック ボックス ノート シールを表す場合にのみ status も含まれます。 次の例は、いくつかのノート シールを作成する入力 HTML と、返される出力 HTML を示しています。
+出力`data-tag` HTML 内の属性には、常に図形の値が含まれており、[完了] に設定されているチェックボックスノートシールを表す場合は状態のみが含まれます。 次の例は、いくつかのノートシールを作成するために使用される入力 html と、返される出力 html を示しています。
 
 #### <a name="input-html"></a>入力 HTML
 
@@ -266,9 +266,9 @@ Authorization: Bearer {token}
 </ul>
 ```
 
-リスト レベルで定義された `data-tag` 属性がリスト項目にプッシュされている点にご注目ください。リストにノート シールを使用することに関する詳細については、「[リストのノート シール](#note-tags-on-lists)」を参照してください。
+リスト レベルで定義されている data-tag`data-tag` 属性は、そのリスト項目にプッシュされます。リストとノート シールの併用の詳細については、「リストのノート シール」を参照してください。 リスト レベルで定義されている data-tag 属性は、そのリスト項目にプッシュされます。リストとノート シールの併用の詳細については、「[リストのノート シール](#note-tags-on-lists)」を参照してください。
 
-> **注:** 出力 HTML では、[定義] ノート シールと [要確認] ノート シールが、どちらも `data-tag="remember-for-later"` として返されます。 `title` 要素はノート シールの情報を返しません。
+> **注:** 出力 HTML では、[定義] ノートシールと [後で記憶] ノートシールの`data-tag="remember-for-later"`両方がとして返されます。 `title` 要素はノート シールの情報を返しません。
 
 
 
@@ -279,9 +279,9 @@ Authorization: Bearer {token}
 
 OneNote には、次に示す組み込みのノート シールが用意されています。
 
-![すべての組み込みノート シール。](images/note-tags-all.png)
+![All built-in note tags.](images/note-tags-all.png)
 
-`data-tag` 属性に割り当てられる値は、次の表に示されているとおりです。 カスタム シールはサポートされていません。
+`data-tag`属性に割り当てることができる値を次の表に示します。 Custom tags are not supported.
 
 ||タグ||
 |:---|:---|:-----|
@@ -301,7 +301,7 @@ OneNote には、次に示す組み込みのノート シールが用意され�
 
 ## <a name="response-information"></a>応答情報
 
-Microsoft Graph は、次の情報を応答で返します。
+Microsoft Graph は、応答で次の情報を返します。
 
 | 応答データ | 説明 |  
 |------|------|  

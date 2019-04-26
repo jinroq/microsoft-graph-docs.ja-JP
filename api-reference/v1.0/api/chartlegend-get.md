@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: df538613c078dc10f717edee0a68f61d0465bd83
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27926737"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579917"
 ---
 # <a name="get-chartlegend"></a>Get ChartLegend
 
@@ -42,7 +42,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/legend
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[WorkbookChartLegend](../resources/chartlegend.md)オブジェクトです。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[WorkbookChartLegend](../resources/chartlegend.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

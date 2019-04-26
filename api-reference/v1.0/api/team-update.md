@@ -1,21 +1,21 @@
 ---
-title: チームを更新します。
+title: チームを更新する
 description: 指定されたチームのプロパティを更新します。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: a6dd8e38261cb2e64c3717ea3bee26ca96bd8958
-ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28016619"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548993"
 ---
-# <a name="update-team"></a>チームを更新します。
+# <a name="update-team"></a>チームを更新する
 
 
 
-指定された[チーム](../resources/team.md)のプロパティを更新します。
+指定した[チーム](../resources/team.md)のプロパティを更新します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -27,7 +27,7 @@ ms.locfileid: "28016619"
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
 |アプリケーション | Group.Read.All、Group.ReadWrite.All    |
 
-> **注**: この API は、管理者のアクセス許可をサポートしています。 グローバル管理者とサービス管理者のマイクロソフトのチームのメンバーではないことをチームにアクセスできます。
+> **注**: この API は、管理者のアクセス許可をサポートします。 グローバル管理者と Microsoft Teams サービス管理者は、メンバーではないチームにアクセスできます。
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +42,7 @@ PATCH /teams/{id}
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>要求本文
-要求の本文には、[チーム](../resources/team.md)のオブジェクトを JSON 表現したものを指定します。
+要求本文で、 [team](../resources/team.md)オブジェクトの JSON 表記を指定します。
 
 ## <a name="response"></a>応答
 

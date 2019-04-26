@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 964916f9f6a46cd8b276e304bfb341d6504db0d2
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31785819"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32552437"
 ---
 # <a name="androidmanagedstoreappconfigurationschemaitem-resource-type"></a>androidmanagedstoreappconfigurationschemaitem リソースの種類
 
@@ -22,9 +22,9 @@ Android アプリケーションのカスタム構成スキーマ内の単一構
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|schemaItemKey|文字列|アイテムを識別するためにアプリケーションが使用する一意のキー|
+|schemaItemKey|String|アイテムを識別するためにアプリケーションが使用する一意のキー|
 |displayName|String|人間が判読できる名前|
-|説明|String|アプリケーション内でアイテムが制御する内容の説明|
+|description|String|アプリケーション内でアイテムが制御する内容の説明|
 |defaultBoolValue|Boolean|アプリの開発者が指定している場合、ブール型のアイテムの既定値|
 |defaultIntValue|Int32|アプリの開発者が指定している場合、整数型のアイテムの既定値|
 |defaultStringValue|String|アプリの開発者が指定している場合、文字列型のアイテムの既定値|

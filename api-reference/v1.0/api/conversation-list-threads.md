@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: e08c83f140b86d831d71470dd3d47c14681e3b32
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30164338"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566396"
 ---
 # <a name="list-threads"></a>スレッドを一覧表示する
 
@@ -22,7 +22,7 @@ ms.locfileid: "30164338"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Group.ReadWrite.All、Group.Read.All    |
+|委任 (職場または学校のアカウント) | グループ読み取り。すべてを取得します。    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
 |アプリケーション | サポートされていません。 |
 

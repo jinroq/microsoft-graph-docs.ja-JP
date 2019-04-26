@@ -4,11 +4,11 @@ description: '**listItemVersion** リソースは、ListItem リソースの旧�
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 6e21be59b71a8f348931603c799ebbbe225e5d3f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27951846"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32572816"
 ---
 # <a name="listitemversion-resource-type"></a>ListItemVersion リソースの種類
 
@@ -50,15 +50,15 @@ listItemVersion リソースで使用可能なタスクを次に示します。
 
 ## <a name="properties"></a>プロパティ
 
-|      プロパティ名       |                         Type                         |                               説明                               |
+|      プロパティ名       |                         種類                         |                               説明                               |
 | :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
-| **id**                   | string                                               | バージョンの ID。 読み取り専用です。                                       |
-| **lastModifiedBy**       | [IdentitySet](../resources/identityset.md)           | 最後にバージョンを変更したユーザーの ID。 読み取り専用です。        |
+| **id**                   | string                                               | バージョンの ID。 読み取り専用。                                       |
+| **lastModifiedBy**       | [IdentitySet](../resources/identityset.md)           | 最後にバージョンを変更したユーザーの ID。 読み取り専用。        |
 | **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | バージョンが最後に変更された日時。 読み取り専用です。                 |
-| **published**            | [PublicationFacet](../resources/publicationfacet.md) | 特定のバージョンのパブリケーション ステータスを示します。 読み取り専用です。 |
+| **published**            | [PublicationFacet](../resources/publicationfacet.md) | 特定のバージョンのパブリケーション ステータスを示します。 読み取り専用。 |
 
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 
 次の表は、**driveItemVersion** リソースが他のリソースに対して持っているリレーションシップを定義しています。
 

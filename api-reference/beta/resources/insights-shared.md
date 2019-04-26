@@ -1,26 +1,26 @@
 ---
 title: 共有リソースの種類
-description: または特定のユーザーが共有ファイルを表すの把握。 次の共有ファイルがサポートされています。
+description: または特定のユーザーによって共有されているファイルを表す洞察。 次の共有ファイルがサポートされています。
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
 ms.openlocfilehash: 11a6989e0130e7eedca7fff6f6cc9790d8109d84
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640127"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549490"
 ---
 # <a name="shared-resource-type"></a>共有リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-または特定のユーザーが共有ファイルを表すの把握。 次の共有ファイルがサポートされています。
+または特定のユーザーによって共有されているファイルを表す洞察。 次の共有ファイルがサポートされています。
 
-- 電子メールや会議に直接接続されているファイルを招待します。
-- 名刺と SharePoint 現代の添付ファイル、ビジネスおよびユーザーが、リンクとして電子メールで共有する SharePoint の OneDrive に格納されているファイルの OneDrive です。
+- 電子メールまたは会議の招待に直接添付されたファイル。
+- onedrive for Bussiness および sharepoint モダン添付ファイル-ユーザーが電子メールのリンクとして共有する、onedrive for business および sharepoint に格納されているファイル。
 
-**注**: データの共有 API の結果を作成するのに現在進行中です。 リリース後の最初の週で不足しているいくつかのデータがある可能性があります。
+**注**: 現在、データを使用して共有 API の結果を設定する作業を行っています。 リリース後の最初の週に、一部のデータが欠落している場合があります。
 
 ## <a name="methods"></a>メソッド
 
@@ -32,16 +32,16 @@ ms.locfileid: "29640127"
 
 | プロパティ              | 型                      | 説明  |
 | -------------         |---------------            | -------------|
-| id                    | String                    | リレーションシップの一意の識別子です。 読み取り専用です。        |
-| lastShared            | [sharingDetail](insights-sharingdetail.md)                | 共有アイテムに関する詳細情報です。 読み取り専用です。        |
-| resourceVisualization | [resourceVisualization](insights-resourcevisualization.md)                | プロパティは、時にドキュメントをビジュアル化を使用することができます。 読み取り専用      |
-| resourceReference     | [resourceReference](insights-resourcereference.md)                      | Url およびドキュメントの種類など、共有ドキュメントのプロパティを参照します。 読み取り専用       |
+| id                    | String                    | リレーションシップの一意識別子。 読み取り専用です。        |
+| lastshared            | [sharingDetail](insights-sharingdetail.md)                | 共有アイテムの詳細。 読み取り専用です。        |
+| resourceVisualization | [resourceVisualization](insights-resourcevisualization.md)                | ユーザーの作業でドキュメントをビジュアル化するために使用できるプロパティ。 読み取り専用      |
+| resourceReference     | [resourceReference](insights-resourcereference.md)                      | ドキュメントの url や種類など、共有ドキュメントの参照プロパティ。 読み取り専用       |
 
 ## <a name="relationships"></a>リレーションシップ
 
 | プロパティ      | 型          | 説明  |
 | ------------- |---------------| -------------|
-| リソース      | Entity        | 共有されている項目に移動するために使用します。 ファイルの添付ファイルの種類は、 *fileAttachment*です。 リンクされた添付ファイルの場合は、型は、 *driveItem*です。 |
+| リソース      | エンティティ        | 共有されているアイテムに移動するために使用します。 添付ファイルの場合、type は*fileattachment*になります。 リンクされた添付ファイルの場合、種類は [*ドライブ] 項目*です。 |
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です

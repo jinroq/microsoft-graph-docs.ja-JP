@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 3318415094a36100851b1c604cba2507de31f558
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962507"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569089"
 ---
 # <a name="chartpoint-resource-type"></a>ChartPoint リソースの種類
 
@@ -25,15 +25,15 @@ ms.locfileid: "27962507"
 |[ItemAt](../api/chartpointscollection-itemat.md)|[WorkbookChartPoint](chartpoint.md)|データ系列内の位置に基づくポイントを取得します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|value|Json|グラフのポイントの値を返します。値の取得のみ可能です。|
-|ID|文字列|一意識別子|
+|value|Json|グラフのポイントの値を返します。 読み取り専用です。|
+|id|string|一意識別子|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|format|[WorkbookChartPointFormat](chartpointformat.md)|グラフのポイントの書式設定プロパティをカプセル化します。値の取得のみ可能です。|
+|format|[WorkbookChartPointFormat](chartpointformat.md)|グラフのポイントの書式設定プロパティをカプセル化します。 値の取得のみ可能です。|
 
 ## <a name="json-representation"></a>JSON 表記
 

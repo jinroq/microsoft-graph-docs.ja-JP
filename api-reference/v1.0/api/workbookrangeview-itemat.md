@@ -1,15 +1,15 @@
 ---
 title: 'workbookRangeView: itemAt'
-description: この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「アクセス許可」を参照してください。
+description: この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法などの詳細については、「アクセス許可」を参照してください。
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: a8d0426c86b6e2a2bdadb50dfd3fb93c5495b1ce
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27960526"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569908"
 ---
 # <a name="workbookrangeview-itemat"></a>workbookRangeView: itemAt
 
@@ -38,7 +38,7 @@ GET me/drive/root/workbook/worksheets/{id}/range(address={address})/visibleView/
 ## <a name="function-parameters"></a>関数パラメーター
 要求 URL に、次のクエリ パラメーターを値で指定します。
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |index|Int32|返される項目のインデックス。|
 

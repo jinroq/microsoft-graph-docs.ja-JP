@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: 444a88dfaad3983948a139f2a3db304c200a1153
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27975303"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569747"
 ---
 # <a name="worksheet-usedrange"></a>ワークシート:UsedRange
 
@@ -31,9 +31,9 @@ GET /workbook/worksheets/{id|name}/usedRange
 ```
 
 ## <a name="function-parameters"></a>関数パラメーター
-要求 URL で省略可能なパラメーターを提供することがあります。
+要求 URL には、オプションのパラメーターを指定できます。
 
-| Parameter    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |valuesOnly|Boolean|省略可能。値の入っているセルのみを使用セルと見なします (書式設定は無視されます)。|
 
@@ -82,7 +82,7 @@ Content-length: 169
 }
 ```
 
-オプションの代わりに、この関数を呼び出すことができます`valuesOnly`パラメーター。
+また、この関数は、省略可能`valuesOnly`なパラメーターを指定して呼び出すこともできます。
 
 ##### <a name="request"></a>要求
 以下は、要求の例です。

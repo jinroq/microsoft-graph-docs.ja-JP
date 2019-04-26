@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: a5ec64384bd5620b74f9cdca2148e6b3064e9c98
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31771524"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571136"
 ---
 # <a name="embeddedsimactivationcodepoolassignment-resource-type"></a>embeddedSIMActivationCodePoolAssignment リソースの種類
 
@@ -34,7 +34,7 @@ ms.locfileid: "31771524"
 |id|String|埋め込まれている SIM ライセンス認証コードプールの割り当ての一意の識別子。 作成時に割り当てられたシステム生成値。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|埋め込まれた SIM アクティブ化コードプールの対象となるグループの種類。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記

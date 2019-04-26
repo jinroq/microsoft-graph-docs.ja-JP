@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: b4f95201a725969fa125cdf949874686b9155fc3
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30252428"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568795"
 ---
 # <a name="omasettingstringxml-resource-type"></a>omaSettingStringXml リソースの種類
 
@@ -29,7 +29,7 @@ OMA 設定文字列の XML 定義です。
 |fileName|文字列型 (String)|Value プロパティに関連付けられているファイル名 (*.xml)。|
 |value|バイナリ型 (Binary)|値。 (UTF8 でエンコードされたバイト配列)|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記

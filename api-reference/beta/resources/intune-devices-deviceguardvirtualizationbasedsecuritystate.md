@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 51def159e90b256e772138264139f2a96fbd3344
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31778531"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32570132"
 ---
 # <a name="deviceguardvirtualizationbasedsecuritystate-enum-type"></a>deviceGuardVirtualizationBasedSecurityState 列挙型
 
@@ -23,11 +23,11 @@ ms.locfileid: "31778531"
 |メンバー|値|説明|
 |:---|:---|:---|
 |起動|.0|実行中|
-|rebootRequired|1-d|必要なルート|
-|require64BitArchitecture|pbm-2|64ビットアーキテクチャが必要|
-|notlicensed|1/3|ライセンスなし|
-|notConfigured|2/4|未構成|
-|doesNotMeetHardwareRequirements|5|システムがハードウェア要件を満たしていない|
+|rebootRequired|1 |必要なルート|
+|require64BitArchitecture|2 |64ビットアーキテクチャが必要|
+|notlicensed|3 |ライセンスなし|
+|notConfigured|4 |未構成|
+|doesNotMeetHardwareRequirements|5 |システムがハードウェア要件を満たしていない|
 |も|42|も. microsoft-deviceguard のイベントログには、詳細が含まれています。|
 
 

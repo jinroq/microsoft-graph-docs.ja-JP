@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: 988042a5e36cb87f6fedf3c8ba3764c56d955b98
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27951818"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566830"
 ---
 # <a name="manage-apps-using-microsoft-intune"></a>Microsoft Intune を使用してアプリを管理する
 
@@ -20,16 +20,16 @@ ms.locfileid: "27951818"
 - [Android LOB アプリ](intune-apps-androidlobapp.md)
 - [最小構成の Android オペレーティング システム](intune-apps-androidminimumoperatingsystem.md)
 - [Android ストア アプリ](intune-apps-androidstoreapp.md)
-- [アプリケーション構成の設定項目](intune-apps-appconfigurationsettingitem.md)
+- [アプリの構成設定アイテム](intune-apps-appconfigurationsettingitem.md)
 - [デバイスのインストール状態](intune-books-deviceinstallstate.md)
 - [電子書籍のインストールの概要](intune-books-ebookinstallsummary.md)
 - [ファイル暗号化情報](intune-apps-fileencryptioninfo.md)
-- [インストール状態](intune-books-installstate.md)
+- [インストール状況](intune-books-installstate.md)
 - [iOS デバイスの種類](intune-apps-iosdevicetype.md)
 - [iOS LOB アプリ](intune-apps-ioslobapp.md)
 - [iOS LOB アプリの割り当ての設定](intune-apps-ioslobappassignmentsettings.md)
 - [最小構成の iOS オペレーティング システム](intune-apps-iosminimumoperatingsystem.md)
-- [iOS モバイル アプリケーションの構成](intune-apps-iosmobileappconfiguration.md)
+- [iOS モバイル アプリの構成](intune-apps-iosmobileappconfiguration.md)
 - [iOS ストア アプリ](intune-apps-iosstoreapp.md)
 - [iOS ストア アプリの割り当ての設定](intune-apps-iosstoreappassignmentsettings.md)
 - [iOS VPP アプリ](intune-apps-iosvppapp.md)
@@ -40,10 +40,10 @@ ms.locfileid: "27951818"
 - [管理対象 Android LOB アプリ](intune-apps-managedandroidlobapp.md)
 - [管理対象 Android ストア アプリ](intune-apps-managedandroidstoreapp.md)
 - [管理対象アプリ](intune-apps-managedapp.md)
-- [マネージ アプリケーションの可用性](intune-apps-managedappavailability.md)
+- [管理対象アプリの可用性](intune-apps-managedappavailability.md)
 - [管理対象デバイスのモバイル アプリ構成](intune-apps-manageddevicemobileappconfiguration.md)
 - [管理対象デバイスのモバイル アプリ構成の割り当て](intune-apps-manageddevicemobileappconfigurationassignment.md)
-- [デバイスのモバイル アプリケーションの構成デバイスの状態を管理](intune-apps-manageddevicemobileappconfigurationdevicestatus.md)
+- [管理対象デバイスのモバイル アプリ構成のデバイス状態](intune-apps-manageddevicemobileappconfigurationdevicestatus.md)
 - [管理対象デバイスのモバイル アプリ構成のデバイスの要約](intune-apps-manageddevicemobileappconfigurationdevicesummary.md)
 - [管理対象デバイスのモバイル アプリ構成のユーザー状態](intune-apps-manageddevicemobileappconfigurationuserstatus.md)
 - [管理対象デバイスのモバイル アプリ構成のユーザー要約](intune-apps-manageddevicemobileappconfigurationusersummary.md)
@@ -52,23 +52,23 @@ ms.locfileid: "27951818"
 - [管理対象 iOS LOB アプリ](intune-apps-managedioslobapp.md)
 - [管理対象 iOS ストア アプリ](intune-apps-managediosstoreapp.md)
 - [管理対象モバイル LOB アプリ](intune-apps-managedmobilelobapp.md)
-- [MDM アプリケーション設定のキーの種類](intune-apps-mdmappconfigkeytype.md)
+- [MDM アプリ設定キー タイプ](intune-apps-mdmappconfigkeytype.md)
 - [ビジネス向け Microsoft Store のアプリ](intune-apps-microsoftstoreforbusinessapp.md)
 - [ビジネス向け Microsoft Store のアプリの割り当ての設定](intune-apps-microsoftstoreforbusinessappassignmentsettings.md)
-- [マイクロソフトは、ビジネス ライセンスの種類を保存します。](intune-apps-microsoftstoreforbusinesslicensetype.md)
+- [ビジネス向け Microsoft Store のライセンスの種類](intune-apps-microsoftstoreforbusinesslicensetype.md)
 - [モバイル アプリ](intune-apps-mobileapp.md)
 - [モバイル アプリの割り当て](intune-apps-mobileappassignment.md)
 - [モバイル アプリの割り当ての設定](intune-apps-mobileappassignmentsettings.md)
 - [モバイル アプリのカテゴリ](intune-apps-mobileappcategory.md)
 - [モバイル アプリ コンテンツ](intune-apps-mobileappcontent.md)
 - [モバイル アプリ コンテンツ ファイル](intune-apps-mobileappcontentfile.md)
-- [モバイル アプリケーション コンテンツ ファイルのアップロードの状態](intune-apps-mobileappcontentfileuploadstate.md)
-- [モバイル アプリケーションの公開状況](intune-apps-mobileapppublishingstate.md)
+- [モバイル アプリ コンテンツ ファイルのアップロード状態](intune-apps-mobileappcontentfileuploadstate.md)
+- [モバイル アプリの公開状態](intune-apps-mobileapppublishingstate.md)
 - [モバイル LOB アプリ](intune-apps-mobilelobapp.md)
 - [ユーザーのインストール状態の概要](intune-books-userinstallstatesummary.md)
 - [VPP ライセンスの種類](intune-apps-vpplicensingtype.md)
 - [Web アプリ](intune-apps-webapp.md)
-- [Windows のアーキテクチャ](intune-apps-windowsarchitecture.md)
+- [Windows アーキテクチャ](intune-apps-windowsarchitecture.md)
 - [Windows デバイスの種類](intune-apps-windowsdevicetype.md)
 - [最小構成の Windows オペレーティング システム](intune-apps-windowsminimumoperatingsystem.md)
 - [Windows Mobile MSI](intune-apps-windowsmobilemsi.md)

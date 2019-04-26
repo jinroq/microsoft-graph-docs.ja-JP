@@ -1,19 +1,19 @@
 ---
 title: 'イベント: 辞退'
-description: ユーザーの予定表で指定したイベントへの招待を辞退します。
+description: ユーザーの予定表の指定のイベントに対する詳細を辞退します。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 920a97db9a6716d2111a8179c86d5556042a6edd
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962010"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550097"
 ---
 # <a name="event-decline"></a>イベント: 辞退
 
-ユーザー[の予定表](../resources/calendar.md)で指定した[イベント](../resources/event.md)への招待を辞退します。
+ユーザーの[予定表](../resources/calendar.md)の指定した[イベント](../resources/event.md)への招待を辞退します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -62,7 +62,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |comment|String|応答に含まれるテキスト。省略可。|
-|sendResponse|ブール型|応答が開催者に送信される場合は、`true`。それ以外の場合は、`false`。省略可。既定値は `true` です。|
+|sendResponse|ブール値|応答が開催者に送信される場合は、`true`。それ以外の場合は、`false`。省略可。既定値は `true` です。|
 
 ## <a name="response"></a>応答
 

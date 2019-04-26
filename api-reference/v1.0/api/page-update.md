@@ -1,25 +1,25 @@
 ---
 title: ページを更新する
-description: OneNote ページの内容を更新します。
+description: OneNote ページのコンテンツを更新します。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 ms.openlocfilehash: ef51342aba7bab49fde6d69ea0c77c62dc841b7d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27971712"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556544"
 ---
 # <a name="update-page"></a>ページを更新する
 
-OneNote ページの内容を更新します。
+OneNote ページのコンテンツを更新します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Notes.ReadWrite、Notes.ReadWrite.All    |
+|委任 (職場または学校のアカウント) | メモ書き込み、メモ (すべて)    |
 |委任 (個人用 Microsoft アカウント) | Notes.ReadWrite    |
 |アプリケーション | Notes.ReadWrite.All |
 
@@ -38,11 +38,11 @@ PATCH /sites/{id}/onenote/pages/{id}/content
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>要求本文
-要求本文で、ページの変更内容を表す [patchContentCommand](../resources/patchcontentcommand.md) オブジェクトの配列を指定します。詳細と例については、「<a href="https://msdn.microsoft.com/office/office365/howto/onenote-update-page">OneNote ページ コンテンツを更新する</a>」を参照してください。
+要求本文で、ページへの変更を[](../resources/patchcontentcommand.md)表す、オブジェクトの配列を指定します。 詳細と例については、「 <a href="https://msdn.microsoft.com/office/office365/howto/onenote-update-page">OneNote ページを更新</a>する」を参照してください。
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `204 No Content` 応答コードを返します。PATCH 要求に対して JSON データは返されません。
+成功した場合、このメソッドは `204 No Content` 応答コードを返します。  PATCH 要求に対して JSON データは返されません。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

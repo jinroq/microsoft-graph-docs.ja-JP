@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c6af0d2547e5e63ed887e31983046944630f8cdf
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31772210"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554304"
 ---
 # <a name="mobileappprovisioningconfiggroupassignment-resource-type"></a>mobileAppProvisioningConfigGroupAssignment リソースの種類
 
@@ -31,7 +31,7 @@ ms.locfileid: "31772210"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|targetgroupid|文字列|アプリのプロビジョニング構成を対象とする AAD グループの ID。|
+|targetgroupid|String|アプリのプロビジョニング構成を対象とする AAD グループの ID。|
 |id|String|エンティティのキー。|
 
 ## <a name="relationships"></a>リレーションシップ

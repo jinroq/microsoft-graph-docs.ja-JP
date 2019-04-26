@@ -5,11 +5,11 @@ ms.date: 09/14/2017
 title: ItemActionSet
 localization_priority: Normal
 ms.openlocfilehash: 3fab75c6a63630f57dae8d0578691ba10622231d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518801"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569957"
 ---
 # <a name="itemactionset-resource-type"></a>ItemActionSet リソースの種類
 
@@ -50,7 +50,7 @@ ms.locfileid: "29518801"
 現在使用可能なアクションを次に示します。
 将来、新しいアクションがログに記録される可能性があるため、アプリが認識するアクションがなくても、アプリが **itemActionSet** の処理を受け入れることを確認してください。
 
-| プロパティ名 | 型              | 説明
+| プロパティ名 | 種類              | 説明
 |:--------------|:------------------|:-----------------------------------------
 | comment       | [commentAction][] | アイテムにコメントが追加されました。
 | create        | [createAction][]  | アイテムが作成されました。

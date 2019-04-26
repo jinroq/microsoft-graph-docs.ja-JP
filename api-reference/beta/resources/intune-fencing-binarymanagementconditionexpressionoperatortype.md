@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: afba6f274f6a597a77c2684800caf7b52d65aed1
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31784706"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568809"
 ---
 # <a name="binarymanagementconditionexpressionoperatortype-enum-type"></a>binarymanagementconditionexpression 演算子 type 列挙型
 
@@ -23,7 +23,7 @@ ms.locfileid: "31784706"
 |メンバー|値|説明|
 |:---|:---|:---|
 |または|.0|オペランドが1つ以上 true の場合にのみ、オペランドのセットを true として評価します。|
-|および|1-d|オペランドのセットを true として評価し、そのすべてのオペランドが true の場合にのみ評価します。|
+|and|1 |オペランドのセットを true として評価し、そのすべてのオペランドが true の場合にのみ評価します。|
 
 
 

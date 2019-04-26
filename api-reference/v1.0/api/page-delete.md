@@ -1,25 +1,25 @@
 ---
 title: ページを削除する
-description: OneNote のページを削除します。
+description: OneNote ページを削除します。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 ms.openlocfilehash: 691ec8d4d2f6c95c217a9ddb99fbd4e8608483f9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962199"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556467"
 ---
 # <a name="delete-page"></a>ページを削除する
 
-OneNote のページを削除します。
+OneNote ページを削除します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Notes.ReadWrite、Notes.ReadWrite.All    |
+|委任 (職場または学校のアカウント) | メモ書き込み、メモ (すべて)    |
 |委任 (個人用 Microsoft アカウント) | Notes.ReadWrite    |
 |アプリケーション | Notes.ReadWrite.All |
 
@@ -32,7 +32,7 @@ DELETE /groups/{id}/onenote/pages/{id}
 DELETE /sites/{id}/onenote/pages/{id}
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

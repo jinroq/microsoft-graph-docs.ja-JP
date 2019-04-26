@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: 4649a361ec46b9fb904cf959608fdee502f05c22
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520558"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535990"
 ---
 # <a name="worksheet-cell"></a>ワークシート:セル
 
@@ -33,12 +33,12 @@ GET /workbook/worksheets/{id|name}/Cell(row={row},column={column})
 ```
 
 ## <a name="function-parameters"></a>関数パラメーター
-要求のパスには、次のパラメーターを提供します。
+要求パスに、次のパラメーターを指定します。
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |row|Int32|取得するセルの行番号。0 を起点とする番号になります。|
-|列|Int32|取得セルの列番号。0 を起点とする番号になります。|
+|column|Int32|取得セルの列番号。 0 を起点とする番号になります。|
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
