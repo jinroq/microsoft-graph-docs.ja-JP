@@ -2,28 +2,28 @@
 title: stringkeystringvaluepair リソースの種類
 description: キーが文字列で、値が文字列であるキーと値のペアを表します。
 localization_priority: Normal
-ms.openlocfilehash: f91d63ee4b4d3b0328bbb6fbe58c74ec8f78c5b2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 99e92f542ece2895591a76fcb80c322e3f6d6613
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526273"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324749"
 ---
-# <a name="stringkeystringvaluepair-resource-type"></a><span data-ttu-id="7bac9-103">stringkeystringvaluepair リソースの種類</span><span class="sxs-lookup"><span data-stu-id="7bac9-103">stringKeyStringValuePair resource type</span></span>
+# <a name="stringkeystringvaluepair-resource-type"></a><span data-ttu-id="895f1-103">stringkeystringvaluepair リソースの種類</span><span class="sxs-lookup"><span data-stu-id="895f1-103">stringKeyStringValuePair resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="7bac9-104">キーが文字列で、値が文字列であるキーと値のペアを表します。</span><span class="sxs-lookup"><span data-stu-id="7bac9-104">Represents a key-value pair where the key is a string and the value is a string.</span></span>
+<span data-ttu-id="895f1-104">キーが文字列で、値が文字列であるキーと値のペアを表します。</span><span class="sxs-lookup"><span data-stu-id="895f1-104">Represents a key-value pair where the key is a string and the value is a string.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="7bac9-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="7bac9-105">Properties</span></span>
-| <span data-ttu-id="7bac9-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="7bac9-106">Property</span></span>     | <span data-ttu-id="7bac9-107">型</span><span class="sxs-lookup"><span data-stu-id="7bac9-107">Type</span></span>   |<span data-ttu-id="7bac9-108">説明</span><span class="sxs-lookup"><span data-stu-id="7bac9-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="895f1-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="895f1-105">Properties</span></span>
+| <span data-ttu-id="895f1-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="895f1-106">Property</span></span>     | <span data-ttu-id="895f1-107">型</span><span class="sxs-lookup"><span data-stu-id="895f1-107">Type</span></span>   |<span data-ttu-id="895f1-108">説明</span><span class="sxs-lookup"><span data-stu-id="895f1-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="7bac9-109">Key</span><span class="sxs-lookup"><span data-stu-id="7bac9-109">key</span></span>|<span data-ttu-id="7bac9-110">String</span><span class="sxs-lookup"><span data-stu-id="7bac9-110">String</span></span>|<span data-ttu-id="7bac9-111">キー。</span><span class="sxs-lookup"><span data-stu-id="7bac9-111">Key.</span></span>|
-|<span data-ttu-id="7bac9-112">value</span><span class="sxs-lookup"><span data-stu-id="7bac9-112">value</span></span>|<span data-ttu-id="7bac9-113">文字列型 (String)</span><span class="sxs-lookup"><span data-stu-id="7bac9-113">String</span></span>|<span data-ttu-id="7bac9-114">値。</span><span class="sxs-lookup"><span data-stu-id="7bac9-114">Value.</span></span>|
+|<span data-ttu-id="895f1-109">Key</span><span class="sxs-lookup"><span data-stu-id="895f1-109">key</span></span>|<span data-ttu-id="895f1-110">String</span><span class="sxs-lookup"><span data-stu-id="895f1-110">String</span></span>|<span data-ttu-id="895f1-111">キー。</span><span class="sxs-lookup"><span data-stu-id="895f1-111">Key.</span></span>|
+|<span data-ttu-id="895f1-112">value</span><span class="sxs-lookup"><span data-stu-id="895f1-112">value</span></span>|<span data-ttu-id="895f1-113">文字列型 (String)</span><span class="sxs-lookup"><span data-stu-id="895f1-113">String</span></span>|<span data-ttu-id="895f1-114">値。</span><span class="sxs-lookup"><span data-stu-id="895f1-114">Value.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="7bac9-115">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="7bac9-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="895f1-115">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="895f1-115">JSON representation</span></span>
 
-<span data-ttu-id="7bac9-116">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="7bac9-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="895f1-116">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="895f1-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -50,8 +50,6 @@ ms.locfileid: "32526273"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-stringkeystringvaluepair.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

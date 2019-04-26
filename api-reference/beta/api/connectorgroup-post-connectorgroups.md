@@ -2,48 +2,48 @@
 title: コネクタグループの作成
 description: この API を使用して、新しいコネクタグループを作成します。
 localization_priority: Normal
-ms.openlocfilehash: 233a80366c89b8cba31bd24e5d69b3a83fc20d1c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 90b3d0cdbdd02876e1dfaf3d6743f6dac2199202
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455794"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33327678"
 ---
-# <a name="create-connectorgroup"></a><span data-ttu-id="899ed-103">コネクタグループの作成</span><span class="sxs-lookup"><span data-stu-id="899ed-103">Create connectorGroup</span></span>
+# <a name="create-connectorgroup"></a><span data-ttu-id="45409-103">コネクタグループの作成</span><span class="sxs-lookup"><span data-stu-id="45409-103">Create connectorGroup</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="899ed-104">この API を使用して、新しいコネクタグループを作成します。</span><span class="sxs-lookup"><span data-stu-id="899ed-104">Use this API to create a new connectorGroup.</span></span>
-## <a name="permissions"></a><span data-ttu-id="899ed-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="899ed-105">Permissions</span></span>
-<span data-ttu-id="899ed-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="899ed-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="45409-104">この API を使用して、新しいコネクタグループを作成します。</span><span class="sxs-lookup"><span data-stu-id="45409-104">Use this API to create a new connectorGroup.</span></span>
+## <a name="permissions"></a><span data-ttu-id="45409-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="45409-105">Permissions</span></span>
+<span data-ttu-id="45409-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="45409-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="899ed-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="899ed-108">Permission type</span></span>      | <span data-ttu-id="899ed-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="899ed-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="45409-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="45409-108">Permission type</span></span>      | <span data-ttu-id="45409-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="45409-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="899ed-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="899ed-110">Delegated (work or school account)</span></span> | <span data-ttu-id="899ed-111">Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="899ed-111">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="899ed-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="899ed-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="899ed-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="899ed-113">Not supported.</span></span>    |
-|<span data-ttu-id="899ed-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="899ed-114">Application</span></span> | <span data-ttu-id="899ed-115">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="899ed-115">Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="45409-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="45409-110">Delegated (work or school account)</span></span> | <span data-ttu-id="45409-111">Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="45409-111">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="45409-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="45409-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="45409-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="45409-113">Not supported.</span></span>    |
+|<span data-ttu-id="45409-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="45409-114">Application</span></span> | <span data-ttu-id="45409-115">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="45409-115">Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="899ed-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="899ed-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="45409-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="45409-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /connectorGroups
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="899ed-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="899ed-117">Request headers</span></span>
-| <span data-ttu-id="899ed-118">名前</span><span class="sxs-lookup"><span data-stu-id="899ed-118">Name</span></span>       | <span data-ttu-id="899ed-119">説明</span><span class="sxs-lookup"><span data-stu-id="899ed-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="45409-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="45409-117">Request headers</span></span>
+| <span data-ttu-id="45409-118">名前</span><span class="sxs-lookup"><span data-stu-id="45409-118">Name</span></span>       | <span data-ttu-id="45409-119">説明</span><span class="sxs-lookup"><span data-stu-id="45409-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="899ed-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="899ed-120">Authorization</span></span>  | <span data-ttu-id="899ed-121">ベアラー.</span><span class="sxs-lookup"><span data-stu-id="899ed-121">Bearer.</span></span> <span data-ttu-id="899ed-122">Requried</span><span class="sxs-lookup"><span data-stu-id="899ed-122">Requried</span></span>|
+| <span data-ttu-id="45409-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="45409-120">Authorization</span></span>  | <span data-ttu-id="45409-121">ベアラー.</span><span class="sxs-lookup"><span data-stu-id="45409-121">Bearer.</span></span> <span data-ttu-id="45409-122">Requried</span><span class="sxs-lookup"><span data-stu-id="45409-122">Requried</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="899ed-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="899ed-123">Request body</span></span>
-<span data-ttu-id="899ed-124">要求本文で、[コネクタグループ](../resources/connectorgroup.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="899ed-124">In the request body, supply a JSON representation of [connectorGroup](../resources/connectorgroup.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="45409-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="45409-123">Request body</span></span>
+<span data-ttu-id="45409-124">要求本文で、[コネクタグループ](../resources/connectorgroup.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="45409-124">In the request body, supply a JSON representation of [connectorGroup](../resources/connectorgroup.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="899ed-125">応答</span><span class="sxs-lookup"><span data-stu-id="899ed-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="45409-125">応答</span><span class="sxs-lookup"><span data-stu-id="45409-125">Response</span></span>
 
-<span data-ttu-id="899ed-126">成功した場合、この`201 Created`メソッドは応答コードと、応答本文で[コネクタグループ](../resources/connectorgroup.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="899ed-126">If successful, this method returns `201 Created` response code and [connectorGroup](../resources/connectorgroup.md) object in the response body.</span></span>
+<span data-ttu-id="45409-126">成功した場合、この`201 Created`メソッドは応答コードと、応答本文で[コネクタグループ](../resources/connectorgroup.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="45409-126">If successful, this method returns `201 Created` response code and [connectorGroup](../resources/connectorgroup.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="899ed-127">例</span><span class="sxs-lookup"><span data-stu-id="899ed-127">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="899ed-128">要求</span><span class="sxs-lookup"><span data-stu-id="899ed-128">Request</span></span>
-<span data-ttu-id="899ed-129">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="899ed-129">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="45409-127">例</span><span class="sxs-lookup"><span data-stu-id="45409-127">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="45409-128">要求</span><span class="sxs-lookup"><span data-stu-id="45409-128">Request</span></span>
+<span data-ttu-id="45409-129">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="45409-129">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_connectorgroup_from_connectorgroups"
@@ -59,9 +59,9 @@ Content-length: 99
   "isDefault": false
 }
 ```
-<span data-ttu-id="899ed-130">要求本文で、[コネクタグループ](../resources/connectorgroup.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="899ed-130">In the request body, supply a JSON representation of [connectorGroup](../resources/connectorgroup.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="899ed-131">応答</span><span class="sxs-lookup"><span data-stu-id="899ed-131">Response</span></span>
-<span data-ttu-id="899ed-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="899ed-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="45409-130">要求本文で、[コネクタグループ](../resources/connectorgroup.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="45409-130">In the request body, supply a JSON representation of [connectorGroup](../resources/connectorgroup.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="45409-131">応答</span><span class="sxs-lookup"><span data-stu-id="45409-131">Response</span></span>
+<span data-ttu-id="45409-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="45409-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -89,8 +89,6 @@ Content-length: 119
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/connectorgroup-post-connectorgroups.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

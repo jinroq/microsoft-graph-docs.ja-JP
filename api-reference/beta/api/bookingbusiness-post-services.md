@@ -4,48 +4,48 @@ description: 指定した bookingservice の新しい bookingservice を作成�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 50501ac1dd79b41b9e970f870964fffaace2f8da
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b399daa8efc85edfdd71596544a1a84ad6a0011f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32461776"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322356"
 ---
-# <a name="create-bookingservice"></a><span data-ttu-id="15a0e-103">bookingservice の作成</span><span class="sxs-lookup"><span data-stu-id="15a0e-103">Create bookingService</span></span>
+# <a name="create-bookingservice"></a><span data-ttu-id="dc388-103">bookingservice の作成</span><span class="sxs-lookup"><span data-stu-id="dc388-103">Create bookingService</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="15a0e-104">指定した[bookingservice](../resources/bookingbusiness.md)の新しい[bookingservice](../resources/bookingservice.md)を作成します。</span><span class="sxs-lookup"><span data-stu-id="15a0e-104">Create a new [bookingService](../resources/bookingservice.md) for the specified [bookingbusiness](../resources/bookingbusiness.md).</span></span>
-## <a name="permissions"></a><span data-ttu-id="15a0e-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="15a0e-105">Permissions</span></span>
-<span data-ttu-id="15a0e-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="15a0e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="dc388-104">指定した[bookingservice](../resources/bookingbusiness.md)の新しい[bookingservice](../resources/bookingservice.md)を作成します。</span><span class="sxs-lookup"><span data-stu-id="dc388-104">Create a new [bookingService](../resources/bookingservice.md) for the specified [bookingbusiness](../resources/bookingbusiness.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="dc388-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="dc388-105">Permissions</span></span>
+<span data-ttu-id="dc388-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="dc388-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="15a0e-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="15a0e-108">Permission type</span></span>      | <span data-ttu-id="15a0e-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="15a0e-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="dc388-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="dc388-108">Permission type</span></span>      | <span data-ttu-id="dc388-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="dc388-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="15a0e-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="15a0e-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="15a0e-111">予約します。すべての予約</span><span class="sxs-lookup"><span data-stu-id="15a0e-111">Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
-|<span data-ttu-id="15a0e-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="15a0e-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="15a0e-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="15a0e-113">Not supported.</span></span>   |
-|<span data-ttu-id="15a0e-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="15a0e-114">Application</span></span> | <span data-ttu-id="15a0e-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="15a0e-115">Not supported.</span></span>  |
+|<span data-ttu-id="dc388-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="dc388-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="dc388-111">予約します。すべての予約</span><span class="sxs-lookup"><span data-stu-id="dc388-111">Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
+|<span data-ttu-id="dc388-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="dc388-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="dc388-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="dc388-113">Not supported.</span></span>   |
+|<span data-ttu-id="dc388-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="dc388-114">Application</span></span> | <span data-ttu-id="dc388-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="dc388-115">Not supported.</span></span>  |
 
-## <a name="http-request"></a><span data-ttu-id="15a0e-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="15a0e-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="dc388-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="dc388-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /bookingBusinesses/{id}/services
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="15a0e-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="15a0e-117">Request headers</span></span>
-| <span data-ttu-id="15a0e-118">名前</span><span class="sxs-lookup"><span data-stu-id="15a0e-118">Name</span></span>       | <span data-ttu-id="15a0e-119">説明</span><span class="sxs-lookup"><span data-stu-id="15a0e-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="dc388-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="dc388-117">Request headers</span></span>
+| <span data-ttu-id="dc388-118">名前</span><span class="sxs-lookup"><span data-stu-id="dc388-118">Name</span></span>       | <span data-ttu-id="dc388-119">説明</span><span class="sxs-lookup"><span data-stu-id="dc388-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="15a0e-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="15a0e-120">Authorization</span></span>  | <span data-ttu-id="15a0e-121">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="15a0e-121">Bearer {code}</span></span>|
+| <span data-ttu-id="dc388-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="dc388-120">Authorization</span></span>  | <span data-ttu-id="dc388-121">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="dc388-121">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="15a0e-122">要求本文</span><span class="sxs-lookup"><span data-stu-id="15a0e-122">Request body</span></span>
-<span data-ttu-id="15a0e-123">要求本文で、 [bookingservice](../resources/bookingservice.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="15a0e-123">In the request body, supply a JSON representation of [bookingService](../resources/bookingservice.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="dc388-122">要求本文</span><span class="sxs-lookup"><span data-stu-id="dc388-122">Request body</span></span>
+<span data-ttu-id="dc388-123">要求本文で、 [bookingservice](../resources/bookingservice.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="dc388-123">In the request body, supply a JSON representation of [bookingService](../resources/bookingservice.md) object.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="15a0e-124">応答</span><span class="sxs-lookup"><span data-stu-id="15a0e-124">Response</span></span>
-<span data-ttu-id="15a0e-125">成功した場合、この`201, Created`メソッドは応答コードと、応答本文で[bookingservice](../resources/bookingservice.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="15a0e-125">If successful, this method returns `201, Created` response code and [bookingService](../resources/bookingservice.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="dc388-124">応答</span><span class="sxs-lookup"><span data-stu-id="dc388-124">Response</span></span>
+<span data-ttu-id="dc388-125">成功した場合、この`201, Created`メソッドは応答コードと、応答本文で[bookingservice](../resources/bookingservice.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="dc388-125">If successful, this method returns `201, Created` response code and [bookingService](../resources/bookingservice.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="15a0e-126">例</span><span class="sxs-lookup"><span data-stu-id="15a0e-126">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="15a0e-127">要求</span><span class="sxs-lookup"><span data-stu-id="15a0e-127">Request</span></span>
-<span data-ttu-id="15a0e-128">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="15a0e-128">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="dc388-126">例</span><span class="sxs-lookup"><span data-stu-id="dc388-126">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="dc388-127">要求</span><span class="sxs-lookup"><span data-stu-id="dc388-127">Request</span></span>
+<span data-ttu-id="dc388-128">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="dc388-128">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_bookingservice_from_bookingbusiness"
@@ -114,9 +114,9 @@ Content-type: application/json
     ]
 }
 ```
-<span data-ttu-id="15a0e-129">要求本文で、 [bookingservice](../resources/bookingservice.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="15a0e-129">In the request body, supply a JSON representation of [bookingService](../resources/bookingservice.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="15a0e-130">応答</span><span class="sxs-lookup"><span data-stu-id="15a0e-130">Response</span></span>
-<span data-ttu-id="15a0e-131">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="15a0e-131">The following is an example of the response.</span></span> <span data-ttu-id="15a0e-132">注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。</span><span class="sxs-lookup"><span data-stu-id="15a0e-132">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="15a0e-133">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="15a0e-133">All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="dc388-129">要求本文で、 [bookingservice](../resources/bookingservice.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="dc388-129">In the request body, supply a JSON representation of [bookingService](../resources/bookingservice.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="dc388-130">応答</span><span class="sxs-lookup"><span data-stu-id="dc388-130">Response</span></span>
+<span data-ttu-id="dc388-131">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="dc388-131">The following is an example of the response.</span></span> <span data-ttu-id="dc388-132">注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。</span><span class="sxs-lookup"><span data-stu-id="dc388-132">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="dc388-133">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="dc388-133">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -189,8 +189,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/bookingbusiness-post-services.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

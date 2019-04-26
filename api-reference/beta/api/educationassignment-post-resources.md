@@ -4,49 +4,49 @@ description: odata。作成されるリソースの種類を示します。 フ�
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: 34e8740336acbef056ec0b3703547de51fdc42ce
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 408ff1b44fda0d4e9b6f16c2234ed06a4ca24852
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32464811"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324709"
 ---
-# <a name="create-educationassignmentresource"></a><span data-ttu-id="18871-104">educationAssignmentResource を作成する</span><span class="sxs-lookup"><span data-stu-id="18871-104">Create educationAssignmentResource</span></span>
+# <a name="create-educationassignmentresource"></a><span data-ttu-id="80e52-104">educationAssignmentResource を作成する</span><span class="sxs-lookup"><span data-stu-id="80e52-104">Create educationAssignmentResource</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="18871-105">[割り当てリソース](../resources/educationassignmentresource.md)を作成します。</span><span class="sxs-lookup"><span data-stu-id="18871-105">Create an [assignment resource](../resources/educationassignmentresource.md).</span></span> <span data-ttu-id="18871-106">リソース自体には、作成されるリソースの種類を示す @odata の種類があります。</span><span class="sxs-lookup"><span data-stu-id="18871-106">The resource itself has an @odata.type to indicate which type of resource is being created.</span></span> <span data-ttu-id="18871-107">ファイルベースのリソースは、まず、割り当てリソース**フォルダー**にアップロードする必要があることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="18871-107">Note that file-based resources must first be uploaded to the assignments **resourceFolder**.</span></span>
+<span data-ttu-id="80e52-105">[割り当てリソース](../resources/educationassignmentresource.md)を作成します。</span><span class="sxs-lookup"><span data-stu-id="80e52-105">Create an [assignment resource](../resources/educationassignmentresource.md).</span></span> <span data-ttu-id="80e52-106">リソース自体には、作成されるリソースの種類を示す @odata の種類があります。</span><span class="sxs-lookup"><span data-stu-id="80e52-106">The resource itself has an @odata.type to indicate which type of resource is being created.</span></span> <span data-ttu-id="80e52-107">ファイルベースのリソースは、まず、割り当てリソース**フォルダー**にアップロードする必要があることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="80e52-107">Note that file-based resources must first be uploaded to the assignments **resourceFolder**.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="18871-108">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="18871-108">Permissions</span></span>
-<span data-ttu-id="18871-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="18871-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="80e52-108">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="80e52-108">Permissions</span></span>
+<span data-ttu-id="80e52-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="80e52-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="18871-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="18871-111">Permission type</span></span>      | <span data-ttu-id="18871-112">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="18871-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="80e52-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="80e52-111">Permission type</span></span>      | <span data-ttu-id="80e52-112">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="80e52-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="18871-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="18871-113">Delegated (work or school account)</span></span> |  <span data-ttu-id="18871-114">EduAssignments の読み取り/書き込みの EduAssignments</span><span class="sxs-lookup"><span data-stu-id="18871-114">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span>  |
-|<span data-ttu-id="18871-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="18871-115">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="18871-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="18871-116">Not supported.</span></span>  |
-|<span data-ttu-id="18871-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="18871-117">Application</span></span> | <span data-ttu-id="18871-118">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="18871-118">Not supported.</span></span>  | 
+|<span data-ttu-id="80e52-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="80e52-113">Delegated (work or school account)</span></span> |  <span data-ttu-id="80e52-114">EduAssignments の読み取り/書き込みの EduAssignments</span><span class="sxs-lookup"><span data-stu-id="80e52-114">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span>  |
+|<span data-ttu-id="80e52-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="80e52-115">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="80e52-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="80e52-116">Not supported.</span></span>  |
+|<span data-ttu-id="80e52-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="80e52-117">Application</span></span> | <span data-ttu-id="80e52-118">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="80e52-118">Not supported.</span></span>  | 
 
-## <a name="http-request"></a><span data-ttu-id="18871-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="18871-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="80e52-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="80e52-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /education/classes/{id}/assignments/{id}/resources
 ```
-## <a name="request-headers"></a><span data-ttu-id="18871-120">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="18871-120">Request headers</span></span>
-| <span data-ttu-id="18871-121">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="18871-121">Header</span></span>       | <span data-ttu-id="18871-122">値</span><span class="sxs-lookup"><span data-stu-id="18871-122">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="80e52-120">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="80e52-120">Request headers</span></span>
+| <span data-ttu-id="80e52-121">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="80e52-121">Header</span></span>       | <span data-ttu-id="80e52-122">値</span><span class="sxs-lookup"><span data-stu-id="80e52-122">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="18871-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="18871-123">Authorization</span></span>  | <span data-ttu-id="18871-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="18871-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="18871-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="18871-126">Content-Type</span></span>  | <span data-ttu-id="18871-127">application/json</span><span class="sxs-lookup"><span data-stu-id="18871-127">application/json</span></span>  |
+| <span data-ttu-id="80e52-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="80e52-123">Authorization</span></span>  | <span data-ttu-id="80e52-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="80e52-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="80e52-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="80e52-126">Content-Type</span></span>  | <span data-ttu-id="80e52-127">application/json</span><span class="sxs-lookup"><span data-stu-id="80e52-127">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="18871-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="18871-128">Request body</span></span>
-<span data-ttu-id="18871-129">要求本文で、 [educationAssignmentResource](../resources/educationassignmentresource.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="18871-129">In the request body, supply a JSON representation of the [educationAssignmentResource](../resources/educationassignmentresource.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="80e52-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="80e52-128">Request body</span></span>
+<span data-ttu-id="80e52-129">要求本文で、 [educationAssignmentResource](../resources/educationassignmentresource.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="80e52-129">In the request body, supply a JSON representation of the [educationAssignmentResource](../resources/educationassignmentresource.md) object.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="18871-130">応答</span><span class="sxs-lookup"><span data-stu-id="18871-130">Response</span></span>
-<span data-ttu-id="18871-131">成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[educationAssignmentResource](../resources/educationassignmentresource.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="18871-131">If successful, this method returns a `201 Created` response code and an [educationAssignmentResource](../resources/educationassignmentresource.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="80e52-130">応答</span><span class="sxs-lookup"><span data-stu-id="80e52-130">Response</span></span>
+<span data-ttu-id="80e52-131">成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[educationAssignmentResource](../resources/educationassignmentresource.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="80e52-131">If successful, this method returns a `201 Created` response code and an [educationAssignmentResource](../resources/educationassignmentresource.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="18871-132">例</span><span class="sxs-lookup"><span data-stu-id="18871-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="18871-133">要求</span><span class="sxs-lookup"><span data-stu-id="18871-133">Request</span></span>
-<span data-ttu-id="18871-134">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="18871-134">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="80e52-132">例</span><span class="sxs-lookup"><span data-stu-id="80e52-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="80e52-133">要求</span><span class="sxs-lookup"><span data-stu-id="80e52-133">Request</span></span>
+<span data-ttu-id="80e52-134">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="80e52-134">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "ignored",
   "name": "create_educationassignmentresource_from_educationassignment"
@@ -66,11 +66,11 @@ Content-length: 212
 }
 
 ```
-<span data-ttu-id="18871-135">要求本文で、 [educationAssignmentResource](../resources/educationassignmentresource.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="18871-135">In the request body, supply a JSON representation of the [educationAssignmentResource](../resources/educationassignmentresource.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="18871-136">応答</span><span class="sxs-lookup"><span data-stu-id="18871-136">Response</span></span>
-<span data-ttu-id="18871-137">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="18871-137">The following is an example of the response.</span></span> 
+<span data-ttu-id="80e52-135">要求本文で、 [educationAssignmentResource](../resources/educationassignmentresource.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="80e52-135">In the request body, supply a JSON representation of the [educationAssignmentResource](../resources/educationassignmentresource.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="80e52-136">応答</span><span class="sxs-lookup"><span data-stu-id="80e52-136">Response</span></span>
+<span data-ttu-id="80e52-137">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="80e52-137">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="18871-138">**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。</span><span class="sxs-lookup"><span data-stu-id="18871-138">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="18871-139">すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="18871-139">All of the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="80e52-138">**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。</span><span class="sxs-lookup"><span data-stu-id="80e52-138">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="80e52-139">すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="80e52-139">All of the properties will be returned from an actual call.</span></span>
 
 
 <!-- {
@@ -103,8 +103,6 @@ Content-length: 229
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/educationassignment-post-resources.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

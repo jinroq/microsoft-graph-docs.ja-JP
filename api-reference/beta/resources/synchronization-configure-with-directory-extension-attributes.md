@@ -2,24 +2,24 @@
 title: ディレクトリ拡張属性を使用して同期を構成する
 description: 'azure Active directory (azure AD) ディレクトリの拡張属性を含めるように同期スキーマをカスタマイズできます。 この記事では、ディレクトリ拡張属性 (**extension_9d98asdfl15980a_Nickname**) を使用して、Salesforce の CommunityNickname の値を設定する方法について説明します。 このシナリオでは、azure ad Connect を設定して、オンプレミスの Windows Server Active directory から azure ad にいくつかのディレクトリ拡張属性をプロビジョニングします。 '
 localization_priority: Normal
-ms.openlocfilehash: 4160a95acfc6b23f5d5a9d880f36d9ca6a1f3362
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9ffa262a6905c193c6e042663accb4089d30d2d4
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32582144"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345639"
 ---
-# <a name="configure-synchronization-with-directory-extension-attributes"></a><span data-ttu-id="f74ab-105">ディレクトリ拡張属性を使用して同期を構成する</span><span class="sxs-lookup"><span data-stu-id="f74ab-105">Configure synchronization with directory extension attributes</span></span>
+# <a name="configure-synchronization-with-directory-extension-attributes"></a><span data-ttu-id="13031-105">ディレクトリ拡張属性を使用して同期を構成する</span><span class="sxs-lookup"><span data-stu-id="13031-105">Configure synchronization with directory extension attributes</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f74ab-106">azure Active directory (azure AD) ディレクトリの拡張属性を含めるように同期スキーマをカスタマイズできます。</span><span class="sxs-lookup"><span data-stu-id="f74ab-106">You can customize your synchronization schema to include Azure Active Directory (Azure AD) directory extension attributes.</span></span> <span data-ttu-id="f74ab-107">この記事では、ディレクトリ拡張属性 (**extension_9d98asdfl15980a_Nickname**) を使用して、Salesforce の CommunityNickname の値を設定する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="f74ab-107">This article describes how to use a directory extension attribute (**extension_9d98asdfl15980a_Nickname**) to populate the value of User.CommunityNickname in Salesforce.</span></span> <span data-ttu-id="f74ab-108">このシナリオでは、azure ad Connect を設定して、オンプレミスの Windows Server Active directory から azure ad にいくつかのディレクトリ拡張属性をプロビジョニングします。</span><span class="sxs-lookup"><span data-stu-id="f74ab-108">In this scenario, you have Azure AD Connect set up to provision a number of directory extension attributes from Windows Server Active Directory on-premises to Azure AD.</span></span> 
+<span data-ttu-id="13031-106">azure Active directory (azure AD) ディレクトリの拡張属性を含めるように同期スキーマをカスタマイズできます。</span><span class="sxs-lookup"><span data-stu-id="13031-106">You can customize your synchronization schema to include Azure Active Directory (Azure AD) directory extension attributes.</span></span> <span data-ttu-id="13031-107">この記事では、ディレクトリ拡張属性 (**extension_9d98asdfl15980a_Nickname**) を使用して、Salesforce の CommunityNickname の値を設定する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="13031-107">This article describes how to use a directory extension attribute (**extension_9d98asdfl15980a_Nickname**) to populate the value of User.CommunityNickname in Salesforce.</span></span> <span data-ttu-id="13031-108">このシナリオでは、azure ad Connect を設定して、オンプレミスの Windows Server Active directory から azure ad にいくつかのディレクトリ拡張属性をプロビジョニングします。</span><span class="sxs-lookup"><span data-stu-id="13031-108">In this scenario, you have Azure AD Connect set up to provision a number of directory extension attributes from Windows Server Active Directory on-premises to Azure AD.</span></span> 
 
-<span data-ttu-id="f74ab-109">この記事では、 [Azure ポータル](https://portal.azure.com)を使用してテナントへの同期をサポートするアプリケーションが既に追加されていること、アプリケーションの表示名がわかっていること、および Microsoft Graph の認証トークンがあることを前提としています。</span><span class="sxs-lookup"><span data-stu-id="f74ab-109">This article assumes that you have already added an application that supports synchronization to your tenant through the [Azure Portal](https://portal.azure.com), that you know the application display name, and that you have an authorization token for Microsoft Graph.</span></span> <span data-ttu-id="f74ab-110">認証トークンを取得する方法については、「 [Microsoft Graph を呼び出せるようにアクセストークンを取得](https://developer.microsoft.com/graph/docs/concepts/auth_overview)する」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f74ab-110">For information about how to get the authorization token, see [Get access tokens to call Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview).</span></span>
+<span data-ttu-id="13031-109">この記事では、 [Azure ポータル](https://portal.azure.com)を使用してテナントへの同期をサポートするアプリケーションが既に追加されていること、アプリケーションの表示名がわかっていること、および Microsoft Graph の認証トークンがあることを前提としています。</span><span class="sxs-lookup"><span data-stu-id="13031-109">This article assumes that you have already added an application that supports synchronization to your tenant through the [Azure Portal](https://portal.azure.com), that you know the application display name, and that you have an authorization token for Microsoft Graph.</span></span> <span data-ttu-id="13031-110">認証トークンを取得する方法については、「 [Microsoft Graph を呼び出せるようにアクセストークンを取得](https://developer.microsoft.com/graph/docs/concepts/auth_overview)する」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="13031-110">For information about how to get the authorization token, see [Get access tokens to call Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview).</span></span>
 
-## <a name="find-the-service-principal-object-by-display-name"></a><span data-ttu-id="f74ab-111">表示名でサービスプリンシパルオブジェクトを検索する</span><span class="sxs-lookup"><span data-stu-id="f74ab-111">Find the service principal object by display name</span></span>
+## <a name="find-the-service-principal-object-by-display-name"></a><span data-ttu-id="13031-111">表示名でサービスプリンシパルオブジェクトを検索する</span><span class="sxs-lookup"><span data-stu-id="13031-111">Find the service principal object by display name</span></span>
 
-<span data-ttu-id="f74ab-112">次の例は、"Salesforce Sandbox" という表示名を持つサービスプリンシパルオブジェクトを検索する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="f74ab-112">The following example shows how to find a service principal object with the display name "Salesforce Sandbox".</span></span>
+<span data-ttu-id="13031-112">次の例は、"Salesforce Sandbox" という表示名を持つサービスプリンシパルオブジェクトを検索する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="13031-112">The following example shows how to find a service principal object with the display name "Salesforce Sandbox".</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayName&$filter=startswith(displayName, 'salesforce')
@@ -49,11 +49,11 @@ Authorization: Bearer {Token}
 }
 ```
 
-<span data-ttu-id="f74ab-113">`{servicePrincipalId}`は`60443998-8cf7-4e61-b05c-a53b658cb5e1`です。</span><span class="sxs-lookup"><span data-stu-id="f74ab-113">The `{servicePrincipalId}` is `60443998-8cf7-4e61-b05c-a53b658cb5e1`.</span></span>
+<span data-ttu-id="13031-113">`{servicePrincipalId}`は`60443998-8cf7-4e61-b05c-a53b658cb5e1`です。</span><span class="sxs-lookup"><span data-stu-id="13031-113">The `{servicePrincipalId}` is `60443998-8cf7-4e61-b05c-a53b658cb5e1`.</span></span>
 
-## <a name="list-synchronization-jobs-in-the-context-of-the-service-principal"></a><span data-ttu-id="f74ab-114">サービスプリンシパルのコンテキストで同期ジョブを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="f74ab-114">List synchronization jobs in the context of the service principal</span></span> 
+## <a name="list-synchronization-jobs-in-the-context-of-the-service-principal"></a><span data-ttu-id="13031-114">サービスプリンシパルのコンテキストで同期ジョブを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="13031-114">List synchronization jobs in the context of the service principal</span></span> 
 
-<span data-ttu-id="f74ab-115">次の例は、 `jobId`で使用する必要があるを取得する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="f74ab-115">The following example shows you how to get the `jobId` that you need to work with.</span></span> <span data-ttu-id="f74ab-116">通常、応答は1つのジョブのみを返します。</span><span class="sxs-lookup"><span data-stu-id="f74ab-116">Generally, the response returns only one job.</span></span>
+<span data-ttu-id="13031-115">次の例は、 `jobId`で使用する必要があるを取得する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="13031-115">The following example shows you how to get the `jobId` that you need to work with.</span></span> <span data-ttu-id="13031-116">通常、応答は1つのジョブのみを返します。</span><span class="sxs-lookup"><span data-stu-id="13031-116">Generally, the response returns only one job.</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs
@@ -74,18 +74,18 @@ Authorization: Bearer {Token}
 }
 ```
 
-<span data-ttu-id="f74ab-117">`{jobId}`は`SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa`です。</span><span class="sxs-lookup"><span data-stu-id="f74ab-117">The `{jobId}` is `SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa`.</span></span>
+<span data-ttu-id="13031-117">`{jobId}`は`SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa`です。</span><span class="sxs-lookup"><span data-stu-id="13031-117">The `{jobId}` is `SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa`.</span></span>
 
-## <a name="find-the-name-of-the-directory-extension-attribute-you-need"></a><span data-ttu-id="f74ab-118">必要なディレクトリ拡張属性の名前を検索する</span><span class="sxs-lookup"><span data-stu-id="f74ab-118">Find the name of the directory extension attribute you need</span></span>
+## <a name="find-the-name-of-the-directory-extension-attribute-you-need"></a><span data-ttu-id="13031-118">必要なディレクトリ拡張属性の名前を検索する</span><span class="sxs-lookup"><span data-stu-id="13031-118">Find the name of the directory extension attribute you need</span></span>
 
-<span data-ttu-id="f74ab-119">拡張子属性の完全な名前が必要です。</span><span class="sxs-lookup"><span data-stu-id="f74ab-119">You'll need the full name of the extension attribute.</span></span> <span data-ttu-id="f74ab-120">完全な名前 ( **extension_9d98asdfl15980a_Nickname**のように表示されるはずです) がわからない場合は、ディレクトリの拡張属性に関する以下の情報と、それらを検査する方法を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f74ab-120">If you don't know the full name (which should look similar to **extension_9d98asdfl15980a_Nickname**), see the following information about directory extension attributes and how to inspect them:</span></span> 
+<span data-ttu-id="13031-119">拡張子属性の完全な名前が必要です。</span><span class="sxs-lookup"><span data-stu-id="13031-119">You'll need the full name of the extension attribute.</span></span> <span data-ttu-id="13031-120">完全な名前 ( **extension_9d98asdfl15980a_Nickname**のように表示されるはずです) がわからない場合は、ディレクトリの拡張属性に関する以下の情報と、それらを検査する方法を参照してください。</span><span class="sxs-lookup"><span data-stu-id="13031-120">If you don't know the full name (which should look similar to **extension_9d98asdfl15980a_Nickname**), see the following information about directory extension attributes and how to inspect them:</span></span> 
 
-* [<span data-ttu-id="f74ab-121">カスタムプロパティを使用して Azure AD ディレクトリスキーマを拡張する</span><span class="sxs-lookup"><span data-stu-id="f74ab-121">Extending the Azure AD directory schema with custom properties</span></span>](https://azure.microsoft.com/en-us/resources/samples/active-directory-dotnet-graphapi-directoryextensions-web/)
-* [<span data-ttu-id="f74ab-122">ディレクトリスキーマの拡張機能 |Graph API の概念</span><span class="sxs-lookup"><span data-stu-id="f74ab-122">Directory schema extensions | Graph API concepts</span></span>](https://msdn.microsoft.com/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions)
+* [<span data-ttu-id="13031-121">カスタムプロパティを使用して Azure AD ディレクトリスキーマを拡張する</span><span class="sxs-lookup"><span data-stu-id="13031-121">Extending the Azure AD directory schema with custom properties</span></span>](https://azure.microsoft.com/en-us/resources/samples/active-directory-dotnet-graphapi-directoryextensions-web/)
+* [<span data-ttu-id="13031-122">ディレクトリスキーマの拡張機能 |Graph API の概念</span><span class="sxs-lookup"><span data-stu-id="13031-122">Directory schema extensions | Graph API concepts</span></span>](https://msdn.microsoft.com/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions)
 
 
-## <a name="get-the-synchronization-schema"></a><span data-ttu-id="f74ab-123">同期スキーマを取得する</span><span class="sxs-lookup"><span data-stu-id="f74ab-123">Get the synchronization schema</span></span>
-<span data-ttu-id="f74ab-124">次の例は、同期スキーマを取得する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="f74ab-124">The following example shows how to get the synchronization schema.</span></span>
+## <a name="get-the-synchronization-schema"></a><span data-ttu-id="13031-123">同期スキーマを取得する</span><span class="sxs-lookup"><span data-stu-id="13031-123">Get the synchronization schema</span></span>
+<span data-ttu-id="13031-124">次の例は、同期スキーマを取得する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="13031-124">The following example shows how to get the synchronization schema.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/sync
 Authorization: Bearer {Token}
 ```
 
-><span data-ttu-id="f74ab-125">**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。</span><span class="sxs-lookup"><span data-stu-id="f74ab-125">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="f74ab-126">実際の呼び出しでは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="f74ab-126">All the properties will be returned in an actual call.</span></span>
+><span data-ttu-id="13031-125">**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。</span><span class="sxs-lookup"><span data-stu-id="13031-125">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="13031-126">実際の呼び出しでは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="13031-126">All the properties will be returned in an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -105,6 +105,7 @@ Authorization: Bearer {Token}
 } -->
 ```http
 HTTP/1.1 200 OK
+Content-Type: application/json
 
 {
   "directories": [
@@ -193,20 +194,20 @@ HTTP/1.1 200 OK
 }
 ```
 
-## <a name="add-a-definition-for-the-directory-extension-attribute-and-a-mapping-between-the-attributes"></a><span data-ttu-id="f74ab-127">ディレクトリ拡張属性の定義を追加し、属性間のマッピングを追加する</span><span class="sxs-lookup"><span data-stu-id="f74ab-127">Add a definition for the directory extension attribute, and a mapping between the attributes</span></span>
+## <a name="add-a-definition-for-the-directory-extension-attribute-and-a-mapping-between-the-attributes"></a><span data-ttu-id="13031-127">ディレクトリ拡張属性の定義を追加し、属性間のマッピングを追加する</span><span class="sxs-lookup"><span data-stu-id="13031-127">Add a definition for the directory extension attribute, and a mapping between the attributes</span></span>
 
-<span data-ttu-id="f74ab-128">任意のテキストエディター (たとえば、[メモ帳 + +](https://notepad-plus-plus.org/)または[JSON エディタ Online](https://www.jsoneditoronline.org/)) を使用して、次のことを行います。</span><span class="sxs-lookup"><span data-stu-id="f74ab-128">Use a plain text editor of your choice (for example, [Notepad++](https://notepad-plus-plus.org/) or [JSON Editor Online](https://www.jsoneditoronline.org/)) to:</span></span>
+<span data-ttu-id="13031-128">任意のテキストエディター (たとえば、[メモ帳 + +](https://notepad-plus-plus.org/)または[JSON エディタ Online](https://www.jsoneditoronline.org/)) を使用して、次のことを行います。</span><span class="sxs-lookup"><span data-stu-id="13031-128">Use a plain text editor of your choice (for example, [Notepad++](https://notepad-plus-plus.org/) or [JSON Editor Online](https://www.jsoneditoronline.org/)) to:</span></span>
 
-1. <span data-ttu-id="f74ab-129">`extension_9d98asdfl15980a_Nickname`属性の[属性定義](synchronization-attributedefinition.md)を追加します。</span><span class="sxs-lookup"><span data-stu-id="f74ab-129">Add an [attribute definition](synchronization-attributedefinition.md) for the `extension_9d98asdfl15980a_Nickname` attribute.</span></span> 
+1. <span data-ttu-id="13031-129">`extension_9d98asdfl15980a_Nickname`属性の[属性定義](synchronization-attributedefinition.md)を追加します。</span><span class="sxs-lookup"><span data-stu-id="13031-129">Add an [attribute definition](synchronization-attributedefinition.md) for the `extension_9d98asdfl15980a_Nickname` attribute.</span></span> 
 
-    - <span data-ttu-id="f74ab-130">[ディレクトリ] で、"Azure Active directory" という名前のディレクトリを見つけ、オブジェクトの配列で、 **User**という名前のディレクトリを見つけます。</span><span class="sxs-lookup"><span data-stu-id="f74ab-130">Under directories, find the directory with the name "Azure Active Directory", and in the object's array, find the one named **User**.</span></span>
-    - <span data-ttu-id="f74ab-131">次の例に示すように、新しい属性をリストに追加します。名前と種類を指定します。</span><span class="sxs-lookup"><span data-stu-id="f74ab-131">Add the new attribute to the list, specifying the name and type, as shown in the following example.</span></span>
+    - <span data-ttu-id="13031-130">[ディレクトリ] で、"Azure Active directory" という名前のディレクトリを見つけ、オブジェクトの配列で、 **User**という名前のディレクトリを見つけます。</span><span class="sxs-lookup"><span data-stu-id="13031-130">Under directories, find the directory with the name "Azure Active Directory", and in the object's array, find the one named **User**.</span></span>
+    - <span data-ttu-id="13031-131">次の例に示すように、新しい属性をリストに追加します。名前と種類を指定します。</span><span class="sxs-lookup"><span data-stu-id="13031-131">Add the new attribute to the list, specifying the name and type, as shown in the following example.</span></span>
 
-2. <span data-ttu-id="f74ab-132">extension_9d98asdfl15980a_Nickname と CommunityNickname の間の[属性マッピング](synchronization-attributemapping.md)を追加します。</span><span class="sxs-lookup"><span data-stu-id="f74ab-132">Add an [attribute mapping](synchronization-attributemapping.md) between extension_9d98asdfl15980a_Nickname and CommunityNickname.</span></span>
+2. <span data-ttu-id="13031-132">extension_9d98asdfl15980a_Nickname と CommunityNickname の間の[属性マッピング](synchronization-attributemapping.md)を追加します。</span><span class="sxs-lookup"><span data-stu-id="13031-132">Add an [attribute mapping](synchronization-attributemapping.md) between extension_9d98asdfl15980a_Nickname and CommunityNickname.</span></span>
 
-    - <span data-ttu-id="f74ab-133">[[同期ルール](synchronization-synchronizationrule.md)] で、Azure AD をソースディレクトリとして指定するルールを見つけ、Salesforce.com を`"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"`ターゲットディレクトリ () として指定します。</span><span class="sxs-lookup"><span data-stu-id="f74ab-133">Under [synchronizationRules](synchronization-synchronizationrule.md), find the rule that specifies Azure AD as source directory, and Salesforce.com as the target directory (`"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"`).</span></span>
-    - <span data-ttu-id="f74ab-134">ルールの[オブジェクトマッピング](synchronization-objectmapping.md)で、ユーザー間のマッピングを検索します`"sourceObjectName": "User",   "targetObjectName": "User"`()。</span><span class="sxs-lookup"><span data-stu-id="f74ab-134">In the [objectMappings](synchronization-objectmapping.md) of the rule, find the mapping between users (`"sourceObjectName": "User",   "targetObjectName": "User"`).</span></span>
-    - <span data-ttu-id="f74ab-135">**オブジェクトマッピング**の[attributeMappings](synchronization-attributemapping.md)配列に、次の例に示すように、新しいエントリを追加します。</span><span class="sxs-lookup"><span data-stu-id="f74ab-135">In the [attributeMappings](synchronization-attributemapping.md) array of the **objectMapping**, add a new entry, as shown in the following example.</span></span>
+    - <span data-ttu-id="13031-133">[[同期ルール](synchronization-synchronizationrule.md)] で、Azure AD をソースディレクトリとして指定するルールを見つけ、Salesforce.com を`"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"`ターゲットディレクトリ () として指定します。</span><span class="sxs-lookup"><span data-stu-id="13031-133">Under [synchronizationRules](synchronization-synchronizationrule.md), find the rule that specifies Azure AD as source directory, and Salesforce.com as the target directory (`"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"`).</span></span>
+    - <span data-ttu-id="13031-134">ルールの[オブジェクトマッピング](synchronization-objectmapping.md)で、ユーザー間のマッピングを検索します`"sourceObjectName": "User",   "targetObjectName": "User"`()。</span><span class="sxs-lookup"><span data-stu-id="13031-134">In the [objectMappings](synchronization-objectmapping.md) of the rule, find the mapping between users (`"sourceObjectName": "User",   "targetObjectName": "User"`).</span></span>
+    - <span data-ttu-id="13031-135">**オブジェクトマッピング**の[attributeMappings](synchronization-attributemapping.md)配列に、次の例に示すように、新しいエントリを追加します。</span><span class="sxs-lookup"><span data-stu-id="13031-135">In the [attributeMappings](synchronization-attributemapping.md) array of the **objectMapping**, add a new entry, as shown in the following example.</span></span>
 
     ```json
     {
@@ -257,9 +258,9 @@ HTTP/1.1 200 OK
     }
     ```
 
-## <a name="save-the-modified-synchronization-schema"></a><span data-ttu-id="f74ab-136">変更した同期スキーマを保存する</span><span class="sxs-lookup"><span data-stu-id="f74ab-136">Save the modified synchronization schema</span></span>
+## <a name="save-the-modified-synchronization-schema"></a><span data-ttu-id="13031-136">変更した同期スキーマを保存する</span><span class="sxs-lookup"><span data-stu-id="13031-136">Save the modified synchronization schema</span></span>
 
-<span data-ttu-id="f74ab-137">更新された同期スキーマを保存する場合は、未変更のパーツを含むスキーマ全体を含めるようにしてください。</span><span class="sxs-lookup"><span data-stu-id="f74ab-137">When you save the updated synchronization schema, make sure that you include the entire schema, including the unmodified parts.</span></span> <span data-ttu-id="f74ab-138">この要求は、既存のスキーマを、指定したスキーマで置き換えます。</span><span class="sxs-lookup"><span data-stu-id="f74ab-138">This request will replace the existing schema with the one that you provide.</span></span>
+<span data-ttu-id="13031-137">更新された同期スキーマを保存する場合は、未変更のパーツを含むスキーマ全体を含めるようにしてください。</span><span class="sxs-lookup"><span data-stu-id="13031-137">When you save the updated synchronization schema, make sure that you include the entire schema, including the unmodified parts.</span></span> <span data-ttu-id="13031-138">この要求は、既存のスキーマを、指定したスキーマで置き換えます。</span><span class="sxs-lookup"><span data-stu-id="13031-138">This request will replace the existing schema with the one that you provide.</span></span>
 
 ```http
 PUT https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/schema
@@ -272,12 +273,4 @@ Authorization: Bearer {Token}
 HTTP/1.1 201 No Content
 ```
 
-<span data-ttu-id="f74ab-139">スキーマが正常に保存された場合は、同期ジョブの次の反復処理によって、Azure AD 内のすべてのアカウントが再処理され、新しいマッピングがプロビジョニングされたすべてのアカウントに適用されます。</span><span class="sxs-lookup"><span data-stu-id="f74ab-139">If the schema was saved successfully, on the next iteration of the synchronization job, it will start re-processing all the accounts in your Azure AD, and the new mappings will be applied to all provisioned accounts.</span></span>
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-configure-with-directory-extension-attributes.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+<span data-ttu-id="13031-139">スキーマが正常に保存された場合は、同期ジョブの次の反復処理によって、Azure AD 内のすべてのアカウントが再処理され、新しいマッピングがプロビジョニングされたすべてのアカウントに適用されます。</span><span class="sxs-lookup"><span data-stu-id="13031-139">If the schema was saved successfully, on the next iteration of the synchronization job, it will start re-processing all the accounts in your Azure AD, and the new mappings will be applied to all provisioned accounts.</span></span>
