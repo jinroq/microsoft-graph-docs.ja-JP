@@ -1,68 +1,66 @@
 ---
-title: 'ユーザー: getMailTips'
-description: サインイン中のユーザーに利用可能な 1 つまたは複数の受信者のメール ヒントを取得します。
+title: 'ユーザー: getmailtips ヒント'
+description: サインインしているユーザーが使用できる1人以上の受信者のメールヒントを取得します。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: e3397bade518cde6e17759096601f364f84e918e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516141"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547922"
 ---
-# <a name="user-getmailtips"></a><span data-ttu-id="7dec4-103">ユーザー: getMailTips</span><span class="sxs-lookup"><span data-stu-id="7dec4-103">user: getMailTips</span></span>
+# <a name="user-getmailtips"></a><span data-ttu-id="8258b-103">ユーザー: getmailtips ヒント</span><span class="sxs-lookup"><span data-stu-id="8258b-103">user: getMailTips</span></span>
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+<span data-ttu-id="8258b-104">サインインしている[ユーザー](../resources/user.md)が使用できる1人以上の受信者のメールヒントを取得します。</span><span class="sxs-lookup"><span data-stu-id="8258b-104">Get the MailTips of one or more recipients as available to the signed-in [user](../resources/user.md).</span></span>
 
-<span data-ttu-id="7dec4-104">サインインしている[ユーザー](../resources/user.md)に利用可能な 1 つまたは複数の受信者のメール ヒントを取得します。</span><span class="sxs-lookup"><span data-stu-id="7dec4-104">Get the MailTips of one or more recipients as available to the signed-in [user](../resources/user.md).</span></span>
+<span data-ttu-id="8258b-105">`getMailTips`アクションを`POST`呼び出すことによって、複数の受信者に対して特定の種類のメールヒントが一度に返されるように要求することができることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="8258b-105">Note that by making a `POST` call to the `getMailTips` action, you can request specific types of MailTips to be returned for more than one recipient at one time.</span></span> <span data-ttu-id="8258b-106">要求されたメールヒントが[メールヒント](../resources/mailtips.md)コレクションに返されます。</span><span class="sxs-lookup"><span data-stu-id="8258b-106">The requested MailTips are returned in a [mailTips](../resources/mailtips.md) collection.</span></span>
 
-<span data-ttu-id="7dec4-105">注意することにより、`POST`を呼び出して、`getMailTips`アクション、同時に複数の受信者に返されるメール ヒントの特定の種類を要求することができます。</span><span class="sxs-lookup"><span data-stu-id="7dec4-105">Note that by making a `POST` call to the `getMailTips` action, you can request specific types of MailTips to be returned for more than one recipient at one time.</span></span> <span data-ttu-id="7dec4-106">[メール ヒント](../resources/mailtips.md)のコレクションでは、要求されたメール ヒントが返されます。</span><span class="sxs-lookup"><span data-stu-id="7dec4-106">The requested MailTips are returned in a [mailTips](../resources/mailtips.md) collection.</span></span>
+## <a name="permissions"></a><span data-ttu-id="8258b-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="8258b-107">Permissions</span></span>
+<span data-ttu-id="8258b-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8258b-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="7dec4-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="7dec4-107">Permissions</span></span>
-<span data-ttu-id="7dec4-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7dec4-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
-
-|<span data-ttu-id="7dec4-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="7dec4-110">Permission type</span></span>      | <span data-ttu-id="7dec4-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="7dec4-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="8258b-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="8258b-110">Permission type</span></span>      | <span data-ttu-id="8258b-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="8258b-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="7dec4-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="7dec4-112">Delegated (work or school account)</span></span> | <span data-ttu-id="7dec4-113">Mail.Read、Mail.Read.Shared</span><span class="sxs-lookup"><span data-stu-id="7dec4-113">Mail.Read, Mail.Read.Shared</span></span>    |
-|<span data-ttu-id="7dec4-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="7dec4-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7dec4-115">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="7dec4-115">Mail.Read</span></span>    |
-|<span data-ttu-id="7dec4-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="7dec4-116">Application</span></span> | <span data-ttu-id="7dec4-117">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="7dec4-117">Mail.Read</span></span> |
+|<span data-ttu-id="8258b-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="8258b-112">Delegated (work or school account)</span></span> | <span data-ttu-id="8258b-113">メール。読み取り、共有</span><span class="sxs-lookup"><span data-stu-id="8258b-113">Mail.Read, Mail.Read.Shared</span></span>    |
+|<span data-ttu-id="8258b-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="8258b-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8258b-115">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="8258b-115">Mail.Read</span></span>    |
+|<span data-ttu-id="8258b-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="8258b-116">Application</span></span> | <span data-ttu-id="8258b-117">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="8258b-117">Mail.Read</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="7dec4-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="7dec4-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8258b-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="8258b-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/getMailTips
 POST /users/{id|userPrincipalName}/getMailTips
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="7dec4-119">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="7dec4-119">Optional query parameters</span></span>
-<span data-ttu-id="7dec4-120">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="7dec4-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="7dec4-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="7dec4-121">Request headers</span></span>
-| <span data-ttu-id="7dec4-122">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="7dec4-122">Header</span></span>       | <span data-ttu-id="7dec4-123">値</span><span class="sxs-lookup"><span data-stu-id="7dec4-123">Value</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="8258b-119">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="8258b-119">Optional query parameters</span></span>
+<span data-ttu-id="8258b-120">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="8258b-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="8258b-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="8258b-121">Request headers</span></span>
+| <span data-ttu-id="8258b-122">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="8258b-122">Header</span></span>       | <span data-ttu-id="8258b-123">値</span><span class="sxs-lookup"><span data-stu-id="8258b-123">Value</span></span>|
 |:-----------  |:------|
-| <span data-ttu-id="7dec4-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="7dec4-124">Authorization</span></span> | <span data-ttu-id="7dec4-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="7dec4-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="7dec4-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="7dec4-127">Content-Type</span></span>  | <span data-ttu-id="7dec4-128">application/json</span><span class="sxs-lookup"><span data-stu-id="7dec4-128">application/json</span></span>  |
+| <span data-ttu-id="8258b-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="8258b-124">Authorization</span></span> | <span data-ttu-id="8258b-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="8258b-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="8258b-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="8258b-127">Content-Type</span></span>  | <span data-ttu-id="8258b-128">application/json</span><span class="sxs-lookup"><span data-stu-id="8258b-128">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="7dec4-129">要求本文</span><span class="sxs-lookup"><span data-stu-id="7dec4-129">Request body</span></span>
-<span data-ttu-id="7dec4-130">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="7dec4-130">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="8258b-129">要求本文</span><span class="sxs-lookup"><span data-stu-id="8258b-129">Request body</span></span>
+<span data-ttu-id="8258b-130">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="8258b-130">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="7dec4-131">プロパティ</span><span class="sxs-lookup"><span data-stu-id="7dec4-131">Property</span></span>     | <span data-ttu-id="7dec4-132">型</span><span class="sxs-lookup"><span data-stu-id="7dec4-132">Type</span></span>   |<span data-ttu-id="7dec4-133">説明</span><span class="sxs-lookup"><span data-stu-id="7dec4-133">Description</span></span>|
+| <span data-ttu-id="8258b-131">プロパティ</span><span class="sxs-lookup"><span data-stu-id="8258b-131">Property</span></span>     | <span data-ttu-id="8258b-132">型</span><span class="sxs-lookup"><span data-stu-id="8258b-132">Type</span></span>   |<span data-ttu-id="8258b-133">説明</span><span class="sxs-lookup"><span data-stu-id="8258b-133">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="7dec4-134">EmailAddresses</span><span class="sxs-lookup"><span data-stu-id="7dec4-134">EmailAddresses</span></span>|<span data-ttu-id="7dec4-135">String コレクション</span><span class="sxs-lookup"><span data-stu-id="7dec4-135">String collection</span></span>|<span data-ttu-id="7dec4-136">メール ヒントを取得する受信者の SMTP アドレスのコレクションです。</span><span class="sxs-lookup"><span data-stu-id="7dec4-136">A collection of SMTP addresses of recipients to get MailTips for.</span></span>|
-|<span data-ttu-id="7dec4-137">MailTipsOptions</span><span class="sxs-lookup"><span data-stu-id="7dec4-137">MailTipsOptions</span></span>|<span data-ttu-id="7dec4-138">String</span><span class="sxs-lookup"><span data-stu-id="7dec4-138">String</span></span>|<span data-ttu-id="7dec4-139">要求されたメールヒントを表すフラグの列挙型。</span><span class="sxs-lookup"><span data-stu-id="7dec4-139">A enumeration of flags that represents the requested mailtips.</span></span> <span data-ttu-id="7dec4-140">使用可能な値: `automaticReplies`、 `customMailTip`、 `deliveryRestriction`、 `externalMemberCount`、 `mailboxFullStatus`、 `maxMessageSize`、 `moderationStatus`、 `recipientScope`、`recipientSuggestions`と`totalMemberCount`。</span><span class="sxs-lookup"><span data-stu-id="7dec4-140">Possible values are: `automaticReplies`, `customMailTip`, `deliveryRestriction`, `externalMemberCount`, `mailboxFullStatus`, `maxMessageSize`, `moderationStatus`, `recipientScope`, `recipientSuggestions`, and `totalMemberCount`.</span></span>|
+|<span data-ttu-id="8258b-134">EmailAddresses</span><span class="sxs-lookup"><span data-stu-id="8258b-134">EmailAddresses</span></span>|<span data-ttu-id="8258b-135">String collection</span><span class="sxs-lookup"><span data-stu-id="8258b-135">String collection</span></span>|<span data-ttu-id="8258b-136">メール ヒントを取得する受信者の SMTP アドレスのコレクションです。</span><span class="sxs-lookup"><span data-stu-id="8258b-136">A collection of SMTP addresses of recipients to get MailTips for.</span></span>|
+|<span data-ttu-id="8258b-137">MailTipsOptions</span><span class="sxs-lookup"><span data-stu-id="8258b-137">MailTipsOptions</span></span>|<span data-ttu-id="8258b-138">String</span><span class="sxs-lookup"><span data-stu-id="8258b-138">String</span></span>|<span data-ttu-id="8258b-139">要求されたメールヒントを表すフラグの列挙。</span><span class="sxs-lookup"><span data-stu-id="8258b-139">A enumeration of flags that represents the requested mailtips.</span></span> <span data-ttu-id="8258b-140">可能な値は`automaticReplies`、 `customMailTip`、 `deliveryRestriction` `externalMemberCount` `mailboxFullStatus` `maxMessageSize` `moderationStatus` `recipientScope`、、、、、、、、および`totalMemberCount` `recipientSuggestions`です。</span><span class="sxs-lookup"><span data-stu-id="8258b-140">Possible values are: `automaticReplies`, `customMailTip`, `deliveryRestriction`, `externalMemberCount`, `mailboxFullStatus`, `maxMessageSize`, `moderationStatus`, `recipientScope`, `recipientSuggestions`, and `totalMemberCount`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="7dec4-141">応答</span><span class="sxs-lookup"><span data-stu-id="7dec4-141">Response</span></span>
+## <a name="response"></a><span data-ttu-id="8258b-141">応答</span><span class="sxs-lookup"><span data-stu-id="8258b-141">Response</span></span>
 
-<span data-ttu-id="7dec4-142">かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文の[メール ヒント](../resources/mailtips.md)オブジェクトのコレクションです。</span><span class="sxs-lookup"><span data-stu-id="7dec4-142">If successful, this method returns a `200 OK` response code and a collection of [mailTips](../resources/mailtips.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="7dec4-143">例</span><span class="sxs-lookup"><span data-stu-id="7dec4-143">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="7dec4-144">要求</span><span class="sxs-lookup"><span data-stu-id="7dec4-144">Request</span></span>
-<span data-ttu-id="7dec4-145">次の使用例は、自動応答の設定、およびメールボックスのすべての状態を指定された受信者のメール ヒントを取得します。</span><span class="sxs-lookup"><span data-stu-id="7dec4-145">The following example gets MailTips for the specified recipients, for any automatic reply settings and the mailbox full status.</span></span>
+<span data-ttu-id="8258b-142">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[メールヒント](../resources/mailtips.md)オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="8258b-142">If successful, this method returns a `200 OK` response code and a collection of [mailTips](../resources/mailtips.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="8258b-143">例</span><span class="sxs-lookup"><span data-stu-id="8258b-143">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="8258b-144">要求</span><span class="sxs-lookup"><span data-stu-id="8258b-144">Request</span></span>
+<span data-ttu-id="8258b-145">次の例では、指定された受信者のメールヒントを取得します。すべての自動応答の設定と、メールボックスの状態が [完全] になっています。</span><span class="sxs-lookup"><span data-stu-id="8258b-145">The following example gets MailTips for the specified recipients, for any automatic reply settings and the mailbox full status.</span></span>
 
 <!-- {
   "blockType": "request",
   "name": "user_getmailtips"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/getMailTips
+POST https://graph.microsoft.com/v1.0/me/getMailTips
 Content-Type: application/json
 
 {
@@ -74,8 +72,8 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="7dec4-146">応答</span><span class="sxs-lookup"><span data-stu-id="7dec4-146">Response</span></span>
-<span data-ttu-id="7dec4-p105">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="7dec4-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="8258b-146">応答</span><span class="sxs-lookup"><span data-stu-id="8258b-146">Response</span></span>
+<span data-ttu-id="8258b-p105">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="8258b-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -87,7 +85,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.mailTips)",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.mailTips)",
     "value":[
         {
             "emailAddress":{
@@ -128,15 +126,10 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "user: getMailTips",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/user-getmailtips.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

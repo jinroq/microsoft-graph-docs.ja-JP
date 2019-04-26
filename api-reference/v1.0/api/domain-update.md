@@ -1,58 +1,58 @@
 ---
 title: ドメインを更新する
-description: ドメイン オブジェクトのプロパティを更新します。
+description: domain オブジェクトのプロパティを更新します。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: da51badb52b5047c6d5eb1d52004104d0395fcf2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27923783"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551492"
 ---
-# <a name="update-domain"></a><span data-ttu-id="41d1b-103">ドメインを更新する</span><span class="sxs-lookup"><span data-stu-id="41d1b-103">Update domain</span></span>
+# <a name="update-domain"></a><span data-ttu-id="b0615-103">ドメインを更新する</span><span class="sxs-lookup"><span data-stu-id="b0615-103">Update domain</span></span>
 
-<span data-ttu-id="41d1b-104">ドメイン オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="41d1b-104">Update the properties of domain object.</span></span>
+<span data-ttu-id="b0615-104">domain オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="b0615-104">Update the properties of domain object.</span></span>
 
-> <span data-ttu-id="41d1b-105">**重要:** 検証済みのドメインのみを更新できます。</span><span class="sxs-lookup"><span data-stu-id="41d1b-105">**Important:** Only verified domains can be updated.</span></span>
+> <span data-ttu-id="b0615-105">**重要:** 確認済みのドメインのみを更新できます。</span><span class="sxs-lookup"><span data-stu-id="b0615-105">**Important:** Only verified domains can be updated.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="41d1b-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="41d1b-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="b0615-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="b0615-106">Permissions</span></span>
 
-<span data-ttu-id="41d1b-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="41d1b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="b0615-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b0615-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="41d1b-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="41d1b-109">Permission type</span></span>      | <span data-ttu-id="41d1b-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="41d1b-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b0615-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="b0615-109">Permission type</span></span>      | <span data-ttu-id="b0615-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="b0615-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="41d1b-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="41d1b-111">Delegated (work or school account)</span></span> | <span data-ttu-id="41d1b-112">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="41d1b-112">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="41d1b-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="41d1b-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="41d1b-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="41d1b-114">Not supported.</span></span>    |
-|<span data-ttu-id="41d1b-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="41d1b-115">Application</span></span> | <span data-ttu-id="41d1b-116">Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="41d1b-116">Domain.ReadWrite.All</span></span> |
+|<span data-ttu-id="b0615-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="b0615-111">Delegated (work or school account)</span></span> | <span data-ttu-id="b0615-112">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="b0615-112">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="b0615-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="b0615-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b0615-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b0615-114">Not supported.</span></span>    |
+|<span data-ttu-id="b0615-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="b0615-115">Application</span></span> | <span data-ttu-id="b0615-116">Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b0615-116">Domain.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="41d1b-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="41d1b-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b0615-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="b0615-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /domains/{id}
 ```
 
-> <span data-ttu-id="41d1b-118">{Id} には、ドメインを完全修飾ドメイン名で指定します。</span><span class="sxs-lookup"><span data-stu-id="41d1b-118">For {id}, specify the domain with its fully qualified domain name.</span></span>
+> <span data-ttu-id="b0615-118">{Id} には、ドメインを完全修飾ドメイン名で指定します。</span><span class="sxs-lookup"><span data-stu-id="b0615-118">For {id}, specify the domain with its fully qualified domain name.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="41d1b-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="41d1b-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="b0615-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b0615-119">Request headers</span></span>
 
-| <span data-ttu-id="41d1b-120">名前</span><span class="sxs-lookup"><span data-stu-id="41d1b-120">Name</span></span>       | <span data-ttu-id="41d1b-121">説明</span><span class="sxs-lookup"><span data-stu-id="41d1b-121">Description</span></span>|
+| <span data-ttu-id="b0615-120">名前</span><span class="sxs-lookup"><span data-stu-id="b0615-120">Name</span></span>       | <span data-ttu-id="b0615-121">説明</span><span class="sxs-lookup"><span data-stu-id="b0615-121">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="41d1b-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="41d1b-122">Authorization</span></span>  | <span data-ttu-id="41d1b-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="41d1b-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="41d1b-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="41d1b-125">Content-Type</span></span>  | <span data-ttu-id="41d1b-126">application/json</span><span class="sxs-lookup"><span data-stu-id="41d1b-126">application/json</span></span> |
+| <span data-ttu-id="b0615-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="b0615-122">Authorization</span></span>  | <span data-ttu-id="b0615-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="b0615-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="b0615-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="b0615-125">Content-Type</span></span>  | <span data-ttu-id="b0615-126">application/json</span><span class="sxs-lookup"><span data-stu-id="b0615-126">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="41d1b-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="41d1b-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="b0615-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="b0615-127">Request body</span></span>
 
-<span data-ttu-id="41d1b-p103">要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るには、変更する値のみを含めます。</span><span class="sxs-lookup"><span data-stu-id="41d1b-p103">In the request body, supply the values for relevant fields to be updated. Existing properties not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, only include changed values.</span></span>
+<span data-ttu-id="b0615-128">要求本文で、更新する関連フィールドの値を指定します。</span><span class="sxs-lookup"><span data-stu-id="b0615-128">In the request body, supply the values for relevant fields to be updated.</span></span> <span data-ttu-id="b0615-129">要求本文に含まれていない既存のプロパティは、以前の値を維持するか、他のプロパティ値の変更に基づいて再計算されます。</span><span class="sxs-lookup"><span data-stu-id="b0615-129">Existing properties not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="b0615-130">最適なパフォーマンスを得るために、変更された値のみを含めます。</span><span class="sxs-lookup"><span data-stu-id="b0615-130">For best performance, only include changed values.</span></span>
 
-## <a name="response"></a><span data-ttu-id="41d1b-131">応答</span><span class="sxs-lookup"><span data-stu-id="41d1b-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b0615-131">応答</span><span class="sxs-lookup"><span data-stu-id="b0615-131">Response</span></span>
 
-<span data-ttu-id="41d1b-132">成功した場合、このメソッドは `204 No Content` 応答コードを返しますが、応答本文は返しません。</span><span class="sxs-lookup"><span data-stu-id="41d1b-132">If successful, this method returns a `204 No Content` response code and no response body.</span></span>
+<span data-ttu-id="b0615-132">成功した場合、このメソッド`204 No Content`は応答コードを返しますが、応答本文は返しません。</span><span class="sxs-lookup"><span data-stu-id="b0615-132">If successful, this method returns a `204 No Content` response code and no response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="41d1b-133">例</span><span class="sxs-lookup"><span data-stu-id="41d1b-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="41d1b-134">要求</span><span class="sxs-lookup"><span data-stu-id="41d1b-134">Request</span></span>
+## <a name="example"></a><span data-ttu-id="b0615-133">例</span><span class="sxs-lookup"><span data-stu-id="b0615-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="b0615-134">要求</span><span class="sxs-lookup"><span data-stu-id="b0615-134">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -72,7 +72,7 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="41d1b-135">応答</span><span class="sxs-lookup"><span data-stu-id="41d1b-135">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="b0615-135">応答</span><span class="sxs-lookup"><span data-stu-id="b0615-135">Response</span></span>
 
 <!-- {
   "blockType": "response",
