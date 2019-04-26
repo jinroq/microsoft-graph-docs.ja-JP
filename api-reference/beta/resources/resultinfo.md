@@ -1,20 +1,20 @@
 ---
-title: resultInfo リソースの種類
-description: ResultInfo 型です。
+title: resultinfo リソースの種類
+description: resultinfo 型。
 author: VinodRavichandran
 localization_priority: Normal
 ms.openlocfilehash: 0c924798715448e87c30cf2b65cc923c6ddc20bc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521083"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562994"
 ---
-# <a name="resultinfo-resource-type"></a>resultInfo リソースの種類
+# <a name="resultinfo-resource-type"></a>resultinfo リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ResultInfo 型です。
+resultinfo 型。
 
 ## <a name="properties"></a>プロパティ
 
@@ -22,7 +22,7 @@ ResultInfo 型です。
 | :------- | :----- | :------------------  |
 | code     | String | 結果コード。     |
 | message  | String | メッセージ。         |
-| サブコード  | String | 結果のサブ コードです。 |
+| subCode  | String | 結果サブコード。 |
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -43,7 +43,7 @@ ResultInfo 型です。
 }
 ```
 
-## <a name="example-error-result"></a>エラーの結果の例
+## <a name="example-error-result"></a>エラー結果の例
 
 <!-- {
   "blockType": "example",
@@ -57,7 +57,7 @@ ResultInfo 型です。
 }
 ```
 
-## <a name="example-generic-success-result"></a>汎用的な成功の結果の例
+## <a name="example-generic-success-result"></a>一般的な成功結果の例
 
 <!-- {
   "blockType": "example",
@@ -71,7 +71,7 @@ ResultInfo 型です。
 }
 ```
 
-## <a name="example-record-success-result"></a>レコードの成功の結果の例
+## <a name="example-record-success-result"></a>レコード成功の例
 
 <!-- {
   "blockType": "example",
@@ -94,8 +94,6 @@ ResultInfo 型です。
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/resultinfo.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -1,40 +1,40 @@
 ---
-title: groupSetting リソースの種類
-description: グループ設定は、グループ表示名でブロックする単語の一覧や、ゲスト ユーザーがグループの所有者になることを許可するか、といった動作を制御します。
+title: groupsetting リソースの種類
+description: グループ設定は、グループの表示名のブロックされた単語リスト、ゲストユーザーがグループの所有者になることができるかどうかなどの動作を制御します。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 42e6c0dc0f0ffd48da84023c5e4ff0d97cb446f2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27911694"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32570828"
 ---
-# <a name="groupsetting-resource-type"></a>groupSetting リソースの種類
+# <a name="groupsetting-resource-type"></a>groupsetting リソースの種類
 
-グループ設定は、グループ表示名でブロックする単語の一覧や、ゲスト ユーザーがグループの所有者になることを許可するか、といった動作を制御します。
+グループ設定は、グループの表示名のブロックされた単語リスト、ゲストユーザーがグループの所有者になることができるかどうかなどの動作を制御します。
 
-グループ設定は、使用可能な [groupSettingTemplates](groupsettingtemplate.md) に基づいて作成することができ、事前設定された既定値を変更することができます。これらの設定は、テナント全体のレベルまたは特定のグループのグループ基本動作を制御します。テナント全体および特定のグループの両方で同じ設定が定義されている場合、グループ レベルの設定がテナント全体の設定よりも優先されます。たとえば、テナント全体の設定では、ゲストは既存のグループのメンバーによって招待されることがありますが、個別のグループ設定を優先することができ、その場合は、グループのメンバーはゲストを招待することができません。グループ設定は、Office 365 グループの動作のみを制御します。
+グループ設定は、使用可能な[groupsettingtemplates](groupsettingtemplate.md)に基づいて作成し、既定の既定値から変更することができます。 これらの設定は、テナント全体レベルまたは特定のグループに対するグループの動作を管理します。 テナント全体と特定のグループの両方で同じ設定が定義されている場合、グループレベル設定はテナント全体の設定より優先されます。  たとえば、テナント全体の設定では、グループの既存のメンバーによるゲストの招待が許可されることがありますが、個々のグループの設定を上書きして、グループのメンバーに招待されたゲストの招待を許可することはできません。 グループ設定は、Office 365 グループの動作のみを制御します。
 
 ## <a name="methods"></a>メソッド
 
 | メソッド | 戻り値の型 | 説明 |
 |:---------------|:--------|:----------|
-|[設定を作成する](../api/groupsetting-post-groupsettings.md) | [groupSetting](groupsetting.md) |groupSettingTemplate に基づいて、設定オブジェクトを作成します。POST 要求は、テンプレートに定義されているすべての設定の settingValues を提供する必要があります。 |
+|[設定を作成する](../api/groupsetting-post-groupsettings.md) | [groupSetting](groupsetting.md) |groupsettingtemplate に基づいて設定オブジェクトを作成します。 POST 要求は、テンプレートで定義されているすべての設定の settingvalues を提供する必要があります。 |
 |[設定を取得する](../api/groupsetting-get.md) | [groupSetting](groupsetting.md) | 特定の設定オブジェクトのプロパティを参照します。 |
 |[設定を一覧表示する](../api/groupsetting-list.md) | [groupSetting](groupsetting.md) コレクション | すべての設定オブジェクトのプロパティを一覧表示します。 |
-|[設定を更新する](../api/groupsetting-update.md) | [groupSetting](groupsetting.md) | Groupsetting オブジェクトを更新します。 |
+|[設定を更新する](../api/groupsetting-update.md) | [groupSetting](groupsetting.md) | groupsetting オブジェクトを更新します。 |
 |[設定を削除する](../api/groupsetting-delete.md) | なし | 設定オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 種類 | 説明 |
+| プロパティ | 型 | 説明 |
 |:---------------|:--------|:----------|
-|displayName|文字列| 関連するテンプレートに由来する設定グループの名前を表示します。 |
-|id|文字列| 設定の一意識別子です。読み取り専用です。 |
-|templateId|文字列| 設定グループの作成に使用されるテンプレートの一意識別子です。読み取り専用です。 |
-|値|[settingValue](settingvalue.md) コレクション| 名前と値の組のコレクションです。テンプレートに定義されているすべての設定を含める必要があります。 |
+|displayName|String| 関連付けられたテンプレートに由来する、この設定グループの表示名。 |
+|id|String| これらの設定の一意の識別子。 読み取り専用。 |
+|templateId|String| この設定のグループを作成するために使用されるテンプレートの一意識別子。 読み取り専用です。 |
+|values|[settingvalue](settingvalue.md)コレクション| 名前と値のペアのコレクション。 テンプレートで定義されているすべての設定が含まれていて、設定されている必要があります。 |
 
 ## <a name="relationships"></a>リレーションシップ
 

@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: BaseItem
 localization_priority: Normal
 ms.openlocfilehash: ae22b0a36acb46c2a9d872f224c0a6d4c567782c
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481133"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569334"
 ---
 # <a name="baseitem-resource-type"></a>BaseItem リソースの種類
 
@@ -50,7 +50,7 @@ ms.locfileid: "30481133"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ             | 種類              | 説明                                                                            |
+| プロパティ             | 型              | 説明                                                                            |
 | :------------------- | :---------------- | :------------------------------------------------------------------------------------- |
 | id                   | 文字列            | ドライブの一意識別子。読み取り専用。                                         |
 | createdBy            | [identitySet][]   | アイテムを作成したユーザーの ID、デバイス、アプリケーション。読み取り専用です。        |
@@ -65,9 +65,9 @@ ms.locfileid: "30481133"
 
 ## <a name="relationships"></a>リレーションシップ
 
-| リレーションシップ       | 種類     | 説明
+| リレーションシップ       | 型     | 説明
 |:-------------------|:---------|:---------------------------------------------
-| createdByUser      | [ユーザー][] | アイテムを作成したユーザーの ID です。 値の取得のみ可能です。
+| createdByUser      | [user][] | アイテムを作成したユーザーの ID です。 読み取り専用です。
 | lastModifiedByUser | [user][] | アイテムを最後に変更したユーザーの ID です。 読み取り専用です。
 
 [identitySet]: identityset.md

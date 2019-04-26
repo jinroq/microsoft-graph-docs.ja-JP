@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: eba8ec934a29b78d7e6ca11f288a1bd787338d2b
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31790929"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32567194"
 ---
 # <a name="devicemanagementsettings-resource-type"></a>deviceManagementSettings リソースの種類
 
@@ -28,9 +28,9 @@ ms.locfileid: "31790929"
 |enhancedJailBreak|Boolean|拡張 jailbreak 検出では、機能が有効または無効になっています。|
 |deviceinactivitybeforeretirementinday|Int32|指定した日数が経過してもデバイスがチェックインされない場合は、会社のデータが削除されている可能性があり、デバイスは管理下にありません。 有効な値は 30 ~ 270|
 |derivedCredentialProvider|[derivedCredentialProviderType](../resources/intune-deviceconfig-derivedcredentialprovidertype.md)|このアカウントに使用する派生資格情報プロバイダー。 可能な値は、`notConfigured`、`entrustDataCard`、`purebred`、`xTec`、`intercede` です。|
-|derivedCredentialUrl|文字列|派生資格情報プロバイダーセルフサービス URI。|
+|derivedCredentialUrl|String|派生資格情報プロバイダーセルフサービス URI。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記

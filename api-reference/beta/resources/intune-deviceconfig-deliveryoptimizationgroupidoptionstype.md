@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 9823380e8c7e4ffef1c1aa913c9db0cf08ede888
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31779616"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562698"
 ---
 # <a name="deliveryoptimizationgroupidoptionstype-enum-type"></a>deliveryOptimizationGroupIdOptionsType 列挙型
 
@@ -23,10 +23,10 @@ DeliveryOptimizationGroupIdOptionsType 設定に指定できる値。
 |メンバー|値|説明|
 |:---|:---|:---|
 |notConfigured|.0|構成されていません。|
-|set-adsite|1-d|Active Directory サイト。|
-|認証 ateddomainsid|pbm-2|認証済みドメイン SID。|
-|dhcpuseroption|1/3|DHCP ユーザーオプション。|
-|dnsSuffix|2/4|DNS サフィックス。|
+|set-adsite|1 |Active Directory サイト。|
+|認証 ateddomainsid|2 |認証済みドメイン SID。|
+|dhcpuseroption|3 |DHCP ユーザーオプション。|
+|dnsSuffix|4 |DNS サフィックス。|
 
 
 

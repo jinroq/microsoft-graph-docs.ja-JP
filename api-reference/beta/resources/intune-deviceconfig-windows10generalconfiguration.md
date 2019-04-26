@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 4fd9f8a37fd3b3ef821e819d1d497cc0630a9edd
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31779287"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32572060"
 ---
 # <a name="windows10generalconfiguration-resource-type"></a>windows10GeneralConfiguration リソース タイプ
 
@@ -25,7 +25,7 @@ ms.locfileid: "31779287"
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[windows10GeneralConfigurations のリスト](../api/intune-deviceconfig-windows10generalconfiguration-list.md)|[windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md) コレクション|[windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md) オブジェクトのプロパティとリレーションシップをリストします。|
+|[List windows10GeneralConfigurations](../api/intune-deviceconfig-windows10generalconfiguration-list.md)|[windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md) コレクション|[windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md) オブジェクトのプロパティとリレーションシップをリストします。|
 |[Get windows10GeneralConfiguration](../api/intune-deviceconfig-windows10generalconfiguration-get.md)|[windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md)|[windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
 |[Create windows10GeneralConfiguration](../api/intune-deviceconfig-windows10generalconfiguration-create.md)|[windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md)|新しい [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md) オブジェクトを作成します。|
 |[Delete windows10GeneralConfiguration](../api/intune-deviceconfig-windows10generalconfiguration-delete.md)|なし|[windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md) を削除します。|
@@ -36,7 +36,7 @@ ms.locfileid: "31779287"
 |:---|:---|:---|
 |id|文字列型 (String)|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|roleScopeTagIds|String コレクション|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |supportsScopeTags|Boolean|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |説明|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
@@ -47,23 +47,23 @@ ms.locfileid: "31779287"
 |enable自動再展開|Boolean|管理者権限を持つユーザーが、デバイスのロック画面で CTRL + Win + R を使用してすべてのユーザーデータと設定を削除できるようにし、デバイスを自動的に再構成して管理に再登録できるようにします。|
 |authenticationallowsecondarydevice|[signInAssistantOptions](../resources/intune-deviceconfig-signinassistantoptions.md)|Microsoft アカウントサインインアシスタント (wlidsvc) NT サービスを制御します。 可能な値は、`notConfigured`、`disabled` です。|
 |authenticationallowsecondarydevice|Boolean|Windows でセカンダリ認証デバイスを使用できるようにします。|
-|authenticationwebsignin|[購入](../resources/intune-shared-enablement.md)|Web 資格情報プロバイダーを有効にするかどうかを示します。 使用可能な値は、`notConfigured`、`enabled`、`disabled` です。|
-|authenticationPreferredAzureADTenantDomainName|文字列|Azure AD テナント内の使用可能なドメイン間で優先ドメインを指定します。|
+|authenticationwebsignin|[購入](../resources/intune-shared-enablement.md)|Web 資格情報プロバイダーを有効にするかどうかを示します。 可能な値は `notConfigured`、`enabled`、`disabled` です。|
+|authenticationPreferredAzureADTenantDomainName|String|Azure AD テナント内の使用可能なドメイン間で優先ドメインを指定します。|
 |cryptographyAllowFipsAlgorithmPolicy|Boolean|連邦情報処理規格 (FIPS) ポリシーを許可または禁止するかどうかを指定します。|
-|displayAppListWithGdiDPIScalingTurnedOn|String コレクション|GDI DPI スケールが有効になっているレガシアプリケーションの一覧。|
-|displayAppListWithGdiDPIScalingTurnedOff|String コレクション|GDI DPI スケールがオフになっているレガシアプリケーションの一覧。|
-|enterpriseCloudPrintDiscoveryEndPoint|文字列|クラウド プリンターを検出するエンドポイント。|
-|enterpriseCloudPrintOAuthAuthority|文字列|OAuth トークンを取得するための認証エンドポイント。|
-|enterpriseCloudPrintOAuthClientIdentifier|文字列|OAuth 認証機関から OAuth トークンを取得することを承認されているクライアント アプリケーションの GUID。|
+|displayAppListWithGdiDPIScalingTurnedOn|String collection|GDI DPI スケールが有効になっているレガシアプリケーションの一覧。|
+|displayAppListWithGdiDPIScalingTurnedOff|String collection|GDI DPI スケールがオフになっているレガシアプリケーションの一覧。|
+|enterpriseCloudPrintDiscoveryEndPoint|String|クラウド プリンターを検出するエンドポイント。|
+|enterpriseCloudPrintOAuthAuthority|String|OAuth トークンを取得するための認証エンドポイント。|
+|enterpriseCloudPrintOAuthClientIdentifier|String|OAuth 認証機関から OAuth トークンを取得することを承認されているクライアント アプリケーションの GUID。|
 |enterpriseCloudPrintResourceIdentifier|String|Azure Portal で構成されている印刷サービスの OAuth リソース URI。|
 |enterpriseCloudPrintDiscoveryMaxLimit|Int32|検出エンドポイントからクエリを実行する必要があるプリンターの最大数。 これはモバイルのみでの設定です。 有効な値は 1 から 65535 までです|
-|enterpriseCloudPrintMopriaDiscoveryResourceIdentifier|文字列|Azure Portal で構成されているプリンター検出サービスの OAuth リソース URI。|
-|experienceDoNotSyncBrowserSettings|[browsersyncsetting](../resources/intune-deviceconfig-browsersyncsetting.md)|Microsoft Edge ブラウザーの設定の同期を許可または禁止します。 デバイス間の同期を禁止し、ユーザーによる上書きを許可する IT 管理者のオプション。 使用可能な値は、`notConfigured`、`blockedWithUserOverride`、`blocked` です。|
+|enterpriseCloudPrintMopriaDiscoveryResourceIdentifier|String|Azure Portal で構成されているプリンター検出サービスの OAuth リソース URI。|
+|experienceDoNotSyncBrowserSettings|[browsersyncsetting](../resources/intune-deviceconfig-browsersyncsetting.md)|Microsoft Edge ブラウザーの設定の同期を許可または禁止します。 デバイス間の同期を禁止し、ユーザーによる上書きを許可する IT 管理者のオプション。 可能な値は `notConfigured`、`blockedWithUserOverride`、`blocked` です。|
 |messagingblocksync|Boolean|テキストメッセージのバックアップと復元、およびメッセージングのすべてをブロックするかどうかを示します。|
 |messagingblockmms|Boolean|デバイス上の MMS 送受信機能をブロックするかどうかを示します。|
 |messagingBlockRichCommunicationServices|Boolean|デバイスで RCS の送受信機能を禁止するかどうかを示します。|
-|printerNames|String コレクション|名前 (ネットワークホスト名) に基づいて、プリンターを自動的にプロビジョニングします。|
-|プリンター defaultname|文字列|インストールされているプリンターの名前 (ネットワークホスト名)。|
+|printerNames|String collection|名前 (ネットワークホスト名) に基づいて、プリンターを自動的にプロビジョニングします。|
+|プリンター defaultname|String|インストールされているプリンターの名前 (ネットワークホスト名)。|
 |プリンターブロックの追加|Boolean|ユーザーがプリンター設定から追加のプリンターをインストールできないようにします。|
 |searchBlockDiacritics|Boolean|検索で分音記号を使用できるかどうかを指定します。|
 |searchDisableAutoLanguageDetection|Boolean|コンテンツとプロパティのインデックスを作成するときに、自動言語検出を使用するかどうかを指定します。|
@@ -78,13 +78,13 @@ ms.locfileid: "31779287"
 |securityBlockAzureADJoinedDevicesAutoEncryption|Boolean|デバイスが Azure AD に参加しているときに、OOBE 中に自動デバイス暗号化を許可するかどうかを指定します (デスクトップのみ)。|
 |diagnosticsDataSubmissionMode|[diagnosticDataSubmissionMode](../resources/intune-deviceconfig-diagnosticdatasubmissionmode.md)|診断データと利用統計情報データ (Watson など) の送信をデバイスに許可する値を取得または設定します。 可能な値は、`userDefined`、`none`、`basic`、`enhanced`、`full` です。|
 |oneDriveDisableFileSync|Boolean|アプリや機能から OneDrive 上のファイルを操作することを IT 管理者が禁止できるかどうかを示す値を取得または設定します。|
-|systemTelemetryProxyServer|文字列|接続されたユーザーエクスペリエンスとテレメトリ要求を転送するためのプロキシサーバーの完全修飾ドメイン名 (FQDN) または IP アドレスを取得または設定します。|
-|edgeTelemetryForMicrosoft365Analytics|[edgeTelemetryMode](../resources/intune-deviceconfig-edgetelemetrymode.md)|Microsoft 365 Analytics に送信されるテレメトリデータの種類 (none、intranet、internet など) を指定します。 可能な値は、`notConfigured`、`intranet`、`internet`、`intranetAndInternet` です。|
-|inkWorkspaceAccess|[inkaccesssetting](../resources/intune-deviceconfig-inkaccesssetting.md)|インクワークスペースへのユーザーアクセスをデスクトップから、またはロック画面の上から制御します。 使用可能な値は、`notConfigured`、`enabled`、`disabled` です。|
-|inkWorkspaceAccessState|[statemanagementsetting](../resources/intune-deviceconfig-statemanagementsetting.md)|インクワークスペースへのユーザーアクセスをデスクトップから、またはロック画面の上から制御します。 使用可能な値は、`notConfigured`、`blocked`、`allowed` です。|
+|systemTelemetryProxyServer|String|接続されたユーザーエクスペリエンスとテレメトリ要求を転送するためのプロキシサーバーの完全修飾ドメイン名 (FQDN) または IP アドレスを取得または設定します。|
+|edgeTelemetryForMicrosoft365Analytics|[edgeTelemetryMode](../resources/intune-deviceconfig-edgetelemetrymode.md)|Microsoft 365 Analytics に送信されるテレメトリデータの種類 (none、intranet、internet など) を指定します。 使用可能な値は、`notConfigured`、`intranet`、`internet`、`intranetAndInternet` です。|
+|inkWorkspaceAccess|[inkaccesssetting](../resources/intune-deviceconfig-inkaccesssetting.md)|インクワークスペースへのユーザーアクセスをデスクトップから、またはロック画面の上から制御します。 可能な値は `notConfigured`、`enabled`、`disabled` です。|
+|inkWorkspaceAccessState|[statemanagementsetting](../resources/intune-deviceconfig-statemanagementsetting.md)|インクワークスペースへのユーザーアクセスをデスクトップから、またはロック画面の上から制御します。 可能な値は `notConfigured`、`blocked`、`allowed` です。|
 |inkWorkspaceBlockSuggestedApps|Boolean|インクワークスペースに推奨されるアプリ候補を表示するかどうかを指定します。|
 |smartScreenEnableAppInstallControl|Boolean|ユーザーがストア以外の場所からアプリをインストールできるかどうかを IT 管理者が制御することを許可します。|
-|personalizationDesktopImageUrl|文字列|ダウンロードしてデスクトップ画像として使用する必要がある jpg、jpeg、png 画像の http または https URL、あるいはデスクトップ画像として使用する必要があるファイル システム上のローカル画像のファイル URL。|
+|personalizationDesktopImageUrl|String|ダウンロードしてデスクトップ画像として使用する必要がある jpg、jpeg、png 画像の http または https URL、あるいはデスクトップ画像として使用する必要があるファイル システム上のローカル画像のファイル URL。|
 |personalizationLockScreenImageUrl|String|ダウンロードしてロック画面画像として使用する必要がある jpg、jpeg、png 画像の http または https URL、あるいはロック画面画像として使用する必要があるファイル システム上のローカル画像のファイル URL。|
 |bluetoothAllowedServices|String コレクション|許可されている Bluetooth サービスおよびプロファイルの一覧を 16 進形式の文字列として指定します。|
 |bluetoothBlockAdvertising|Boolean|ユーザーが Bluetooth 広告を使用することを禁止するかどうか。|
@@ -107,39 +107,39 @@ ms.locfileid: "31779287"
 |edgeDisableFirstRunPage|Boolean|Microsoft Edge の初回使用時に表示される Microsoft の Web ページを禁止します。 このポリシーでは、ゼロ エミッション構成に登録している企業などが、このページの表示を禁止できます。|
 |edgeBlockLiveTileDataCollection|Boolean|ユーザーが Microsoft Edge からスタートにサイトをピン留めしたときに、ライブ タイルを作成するために Microsoft が情報を収集することを禁止します。|
 |edgeSyncFavoritesWithInternetExplorer|Boolean|Internet Explorer と Microsoft Edge の間でお気に入りの同期を有効にします。 お気に入りの追加、削除、変更、順序変更が、ブラウザー間で共有されます。|
-|edgeFavoritesListLocation|文字列|準備するお気に入りの一覧の場所です。 ローカル ファイル、ローカル ネットワーク、http の場所が該当します。|
+|edgeFavoritesListLocation|String|準備するお気に入りの一覧の場所です。 ローカル ファイル、ローカル ネットワーク、http の場所が該当します。|
 |edgeBlockEditFavorites|Boolean|ユーザーがお気に入りを変更することを禁止するかどうかを示します。|
-|edgeNewTabPageURL|文字列|新しいタブが作成されたときに開かれるページを指定します。|
+|edgeNewTabPageURL|String|新しいタブが作成されたときに開かれるページを指定します。|
 |edgeHomeButtonConfiguration|[edgeHomeButtonConfiguration](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)|[ホーム] ボタンを非表示にし、既定の開始ページを読み込むか、新しいタブページを読み込むか、またはカスタム URL を読み込みます。|
 |edgeHomeButtonConfigurationEnabled|Boolean|ホームボタンの構成を有効にします。|
 |edgeOpensWith|[edgeOpenOptions](../resources/intune-deviceconfig-edgeopenoptions.md)|開始時に開くページの種類を指定します。 可能な値は、`notConfigured`、`startPage`、`newTabPage`、`previousPages`、`specificPages` です。|
 |edgeBlockSideloadingExtensions|Boolean|ユーザーが拡張機能をサイドロードできるかどうかを示します。|
-|edgeRequiredExtensionPackageFamilyNames|String コレクション|必要なブラウザー拡張機能のパッケージファミリ名のリストを指定します。ユーザーが無効にすることはできません。|
+|edgeRequiredExtensionPackageFamilyNames|String collection|必要なブラウザー拡張機能のパッケージファミリ名のリストを指定します。ユーザーが無効にすることはできません。|
 |edgeBlockPrinting|Boolean|印刷を許可またはブロックするようにエッジを構成します。|
-|edgeFavoritesBarVisibility|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|[お気に入り] バーを常に表示または非表示に設定するかどうかを指定する値を取得または設定します。 使用可能な値は、`notConfigured`、`hide`、`show` です。|
+|edgeFavoritesBarVisibility|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|[お気に入り] バーを常に表示または非表示に設定するかどうかを指定する値を取得または設定します。 可能な値は `notConfigured`、`hide`、`show` です。|
 |edgeBlockSavingHistory|Boolean|閲覧履歴を保存できるようにエッジを構成するか、閲覧履歴を保存しないようにします。|
 |edgeBlockFullScreenMode|Boolean|エッジが全画面表示モードに入るのを許可または禁止します。|
 |edgeBlockWebContentOnNewTabPage|Boolean|既定の新しいタブページの代わりに、エッジに空白ページを読み込むように構成し、ユーザーがそれを変更できないようにします。|
 |edgeBlockTabPreloading|Boolean|Windows 起動時にエッジが新しいタブページをプリロードするかどうかを構成します。|
 |edgeBlockPrelaunch|Boolean|Microsoft Edge を Windows 起動時に事前に起動するかどうかを決定します。|
-|edgeShowMessageWhenOpeningInternetExplorerSites|[internetExplorerMessageSetting](../resources/intune-deviceconfig-internetexplorermessagesetting.md)|Internet Explorer に切り替える前に、エッジによって表示されるメッセージを制御します。 可能な値は、`notConfigured`、`disabled`、`enabled`、`keepGoing` です。|
+|edgeShowMessageWhenOpeningInternetExplorerSites|[internetExplorerMessageSetting](../resources/intune-deviceconfig-internetexplorermessagesetting.md)|Internet Explorer に切り替える前に、エッジによって表示されるメッセージを制御します。 使用可能な値は、`notConfigured`、`disabled`、`enabled`、`keepGoing` です。|
 |edgePreventCertificateErrorOverride|Boolean|ユーザーが証明書のエラーを上書きすることを許可または禁止します。|
 |edgeKioskModeRestriction|[edgeKioskModeRestrictionType](../resources/intune-deviceconfig-edgekioskmoderestrictiontype.md)|[キオスクの構成] モードに基づいて、Microsoft Edge の設定が制限される方法を制御します。 可能な値は、`notConfigured`、`digitalSignage`、`normalMode`、`publicBrowsingSingleApp`、`publicBrowsingMultiApp` です。|
 |edgeKioskResetAfterIdleTimeInMinutes|Int32|前回のユーザーアクティビティから、Microsoft Edge キオスクがリセットされるまでの時間を分単位で指定します。  有効な値は0-1440 です。 既定は 5 です。 0はリセットしないことを示します。 有効な値は 0 ~ 1440|
 |cellularBlockDataWhenRoaming|Boolean|ローミング中に携帯電話上でユーザーがデータを使用することを禁止するかどうか。|
 |cellularBlockVpn|Boolean|携帯電話上でユーザーが VPN を使用することを禁止するかどうか。|
 |cellularBlockVpnWhenRoaming|Boolean|ローミング時に携帯電話上でユーザーが VPN を使用することを禁止するかどうか。|
-|cellulardata|[configurationusage](../resources/intune-deviceconfig-configurationusage.md)|デバイス上の携帯データチャネルを許可するかどうかを指定します。 構成されていない場合は、携帯データチャネルが許可され、ユーザーはこれをオフにすることができます。 使用可能な値は、`blocked`、`required`、`allowed` です。|
+|cellulardata|[configurationusage](../resources/intune-deviceconfig-configurationusage.md)|デバイス上の携帯データチャネルを許可するかどうかを指定します。 構成されていない場合は、携帯データチャネルが許可され、ユーザーはこれをオフにすることができます。 可能な値は `blocked`、`required`、`allowed` です。|
 |defenderBlockEndUserAccess|Boolean|エンド ユーザーが Defender にアクセスすることを禁止するかどうか。|
 |defenderDaysBeforeDeletingQuarantinedMalware|Int32|検疫済みのマルウェアを削除するまでの日数。 有効な値は 0 から 90 までです|
 |defenderDetectedMalwareActions|[defenderDetectedMalwareActions](../resources/intune-deviceconfig-defenderdetectedmalwareactions.md)|検出されたマルウェアに対する Defender のアクションを脅威レベルごとに取得または設定します。|
 |defenderSystemScanSchedule|[weeklySchedule](../resources/intune-deviceconfig-weeklyschedule.md)|Defender がシステムをスキャンする曜日。 可能な値は、`userDefined`、`everyday`、`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday` です。|
-|defenderFilesAndFoldersToExclude|String コレクション|スキャンとリアルタイム保護から除外するファイルとフォルダー。|
-|defenderFileExtensionsToExclude|String コレクション|スキャンとリアルタイム保護から除外するファイル拡張子。|
+|defenderFilesAndFoldersToExclude|String collection|スキャンとリアルタイム保護から除外するファイルとフォルダー。|
+|defenderFileExtensionsToExclude|String collection|スキャンとリアルタイム保護から除外するファイル拡張子。|
 |defenderScanMaxCpu|Int32|スキャン中の最大 CPU 使用率。 有効な値は 0 から 100 までです|
 |defenderMonitorFileActivity|[defenderMonitorFileActivity](../resources/intune-deviceconfig-defendermonitorfileactivity.md)|ファイル アクティビティを監視する値。 可能な値は、`userDefined`、`disable`、`monitorAllFiles`、`monitorIncomingFilesOnly`、`monitorOutgoingFilesOnly` です。|
-|defenderPotentiallyUnwantedAppAction|[defenderPotentiallyUnwantedAppAction](../resources/intune-deviceconfig-defenderpotentiallyunwantedappaction.md)|望ましくない可能性があるアプリケーション (PUA) に対して実行する Defender のアクションを取得または設定します。これには、ad インジェクション、ソフトウェアバンドル、支払いまたはサブスクリプションのための永続的な勧誘などの動作を備えたソフトウェアが含まれます。PUA がダウンロードされているとき、またはインストールしようとしているときに、Defender でユーザーに通知します。 Windows 10 でデスクトップ用に追加されました。 使用可能な値は、`deviceDefault`、`block`、`audit` です。|
-|defenderPotentiallyUnwantedAppActionSetting|[defenderprotectiontype](../resources/intune-deviceconfig-defenderprotectiontype.md)|望ましくない可能性があるアプリケーション (PUA) に対して実行する Defender のアクションを取得または設定します。これには、ad インジェクション、ソフトウェアバンドル、支払いまたはサブスクリプションのための永続的な勧誘などの動作を備えたソフトウェアが含まれます。PUA がダウンロードされているとき、またはインストールしようとしているときに、Defender でユーザーに通知します。 Windows 10 でデスクトップ用に追加されました。 使用可能な値は、`userDefined`、`enable`、`auditMode` です。|
+|defenderPotentiallyUnwantedAppAction|[defenderPotentiallyUnwantedAppAction](../resources/intune-deviceconfig-defenderpotentiallyunwantedappaction.md)|望ましくない可能性があるアプリケーション (PUA) に対して実行する Defender のアクションを取得または設定します。これには、ad インジェクション、ソフトウェアバンドル、支払いまたはサブスクリプションのための永続的な勧誘などの動作を備えたソフトウェアが含まれます。PUA がダウンロードされているとき、またはインストールしようとしているときに、Defender でユーザーに通知します。 Windows 10 でデスクトップ用に追加されました。 可能な値は `deviceDefault`、`block`、`audit` です。|
+|defenderPotentiallyUnwantedAppActionSetting|[defenderprotectiontype](../resources/intune-deviceconfig-defenderprotectiontype.md)|望ましくない可能性があるアプリケーション (PUA) に対して実行する Defender のアクションを取得または設定します。これには、ad インジェクション、ソフトウェアバンドル、支払いまたはサブスクリプションのための永続的な勧誘などの動作を備えたソフトウェアが含まれます。PUA がダウンロードされているとき、またはインストールしようとしているときに、Defender でユーザーに通知します。 Windows 10 でデスクトップ用に追加されました。 可能な値は `userDefined`、`enable`、`auditMode` です。|
 |defenderProcessesToExclude|String コレクション|スキャンとリアルタイム保護から除外するプロセス。|
 |defenderPromptForSampleSubmission|[defenderPromptForSampleSubmission](../resources/intune-deviceconfig-defenderpromptforsamplesubmission.md)|ユーザーにサンプルの送信を要求する方法の構成。 可能な値は、`userDefined`、`alwaysPrompt`、`promptBeforeSendingPersonalData`、`neverSendData`、`sendAllDataWithoutPrompting` です。|
 |defenderRequireBehaviorMonitoring|Boolean|動作の監視が必要かどうかを示します。|
@@ -157,7 +157,7 @@ ms.locfileid: "31779287"
 |defenderScanRemovableDrivesDuringFullScan|Boolean|フル スキャン時に、リムーバブル ドライブをスキャンするかどうかを示します。|
 |defenderScanScriptsLoadedInInternetExplorer|Boolean|Internet Explorer ブラウザーに読み込まれるスクリプトをスキャンするかどうかを示します。|
 |defenderSignatureUpdateIntervalInHours|Int32|署名を更新する間隔 (時間)。 確認しない場合は 0 を指定します。 有効な値は 0 から 24 までです|
-|defenderScanType|[defenderScanType](../resources/intune-deviceconfig-defenderscantype.md)|Defender システム スキャンの種類。 可能な値は、`userDefined`、`disabled`、`quick`、`full` です。|
+|defenderScanType|[defenderScanType](../resources/intune-deviceconfig-defenderscantype.md)|Defender システム スキャンの種類。 使用可能な値は、`userDefined`、`disabled`、`quick`、`full` です。|
 |defenderScheduledScanTime|TimeOfDay|システムのスキャンの Defender 時刻。|
 |defenderScheduledQuickScanTime|TimeOfDay|毎日のクイック スキャンを実行する時刻。|
 |defenderCloudBlockLevel|[defendercloudblockleveltype](../resources/intune-deviceconfig-defendercloudblockleveltype.md)|クラウド配信の保護レベルを指定します。 可能な値は、`notConfigured`、`high`、`highPlus`、`zeroTolerance` です。|
@@ -178,7 +178,7 @@ ms.locfileid: "31779287"
 |passwordPreviousPasswordBlockCount|Int32|再使用を禁止する、以前のパスワードの数。 有効な値は 0 から 50 までです|
 |passwordRequired|Boolean|ユーザーにパスワードを要求するかどうかを指定します。|
 |passwordRequireWhenResumeFromIdleState|Boolean|アイドル状態からの再開時にパスワードを要求するかどうかを示します。|
-|passwordRequiredType|[requiredpasswordtype](../resources/intune-deviceconfig-requiredpasswordtype.md)|必要なパスワードの種類。 使用可能な値は、`deviceDefault`、`alphanumeric`、`numeric` です。|
+|passwordRequiredType|[requiredpasswordtype](../resources/intune-deviceconfig-requiredpasswordtype.md)|必要なパスワードの種類。 可能な値は `deviceDefault`、`alphanumeric`、`numeric` です。|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|出荷時の設定にリセットされるサインインの失敗回数。 有効な値は 0 から 999 までです|
 |passwordminimumagein days|Int32|このセキュリティ設定では、ユーザーがパスワードを変更できるようになるまでの期間 (日数) を指定します。 有効な値は 0 ~ 998|
 |privacyAdvertisingId|[statemanagementsetting](../resources/intune-deviceconfig-statemanagementsetting.md)|広告識別子の使用を有効または無効にします。 Windows 10 バージョン 1607 で追加されました。 可能な値は、`notConfigured`、`blocked`、`allowed` です。|
@@ -204,16 +204,16 @@ ms.locfileid: "31779287"
 |startMenuHideUserTile|Boolean|このポリシーを有効にすると、スタート メニューにユーザー タイルが表示されなくなります。|
 |startMenuLayoutEdgeAssetsXml|Binary|このポリシー設定では、Edge アセットをインポートして startMenuLayoutXml ポリシーで使用することができます。 スタートのレイアウトには、Edge アプリからのセカンダリ タイルを含めることができ、このタイルは Edge のローカル アセット ファイルを検索します。 Edge のローカル アセットは存在しないことがあり、その場合は Edge のセカンダリ タイルが空で表示されます。 このポリシーは、startMenuLayoutXml ポリシーが変更された場合にのみ適用されます。 値は、UTF-8 の Base64 でエンコードされたバイト配列にする必要があります。|
 |startMenuLayoutXml|Binary|管理者がスタート メニューの既定のレイアウトを上書きし、ユーザーがこれを変更できないようにすることを許可します。 レイアウトを変更するには、レイアウト変更スキーマに基づく XML ファイルを指定します。 XML は、UTF8 エンコードのバイト配列形式である必要があります。|
-|startMenuMode|[windowsstartmenumodetype](../resources/intune-deviceconfig-windowsstartmenumodetype.md)|管理者がスタート メニューの表示方法を決めることを許可します。 使用可能な値は、`userDefined`、`fullScreen`、`nonFullScreen` です。|
-|startMenuPinnedFolderDocuments|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|スタート メニューへのドキュメント フォルダー ショートカットの表示/非表示を強制します。 使用可能な値は、`notConfigured`、`hide`、`show` です。|
-|startMenuPinnedFolderDownloads|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|スタート メニューへのダウンロード フォルダー ショートカットの表示/非表示を強制します。 使用可能な値は、`notConfigured`、`hide`、`show` です。|
-|startMenuPinnedFolderFileExplorer|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|スタート メニューへのエクスプローラー ショートカットの表示/非表示を強制します。 使用可能な値は、`notConfigured`、`hide`、`show` です。|
-|startMenuPinnedFolderHomeGroup|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|スタート メニューへのホームグループ フォルダー ショートカットの表示/非表示を強制します。 使用可能な値は、`notConfigured`、`hide`、`show` です。|
-|startMenuPinnedFolderMusic|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|スタート メニューへのミュージック フォルダー ショートカットの表示/非表示を強制します。 使用可能な値は、`notConfigured`、`hide`、`show` です。|
-|startMenuPinnedFolderNetwork|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|スタート メニューへのネットワーク フォルダー ショートカットの表示/非表示を強制します。 使用可能な値は、`notConfigured`、`hide`、`show` です。|
-|startMenuPinnedFolderPersonalFolder|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|スタート メニューへの個人用フォルダー ショートカットの表示/非表示を強制します。 使用可能な値は、`notConfigured`、`hide`、`show` です。|
-|startMenuPinnedFolderPictures|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|スタート メニューへのピクチャ フォルダー ショートカットの表示/非表示を強制します。 使用可能な値は、`notConfigured`、`hide`、`show` です。|
-|startMenuPinnedFolderSettings|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|スタート メニューへの設定フォルダー ショートカットの表示/非表示を強制します。 使用可能な値は、`notConfigured`、`hide`、`show` です。|
+|startMenuMode|[windowsstartmenumodetype](../resources/intune-deviceconfig-windowsstartmenumodetype.md)|管理者がスタート メニューの表示方法を決めることを許可します。 可能な値は `userDefined`、`fullScreen`、`nonFullScreen` です。|
+|startMenuPinnedFolderDocuments|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|スタート メニューへのドキュメント フォルダー ショートカットの表示/非表示を強制します。 可能な値は `notConfigured`、`hide`、`show` です。|
+|startMenuPinnedFolderDownloads|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|スタート メニューへのダウンロード フォルダー ショートカットの表示/非表示を強制します。 可能な値は `notConfigured`、`hide`、`show` です。|
+|startMenuPinnedFolderFileExplorer|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|スタート メニューへのエクスプローラー ショートカットの表示/非表示を強制します。 可能な値は `notConfigured`、`hide`、`show` です。|
+|startMenuPinnedFolderHomeGroup|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|スタート メニューへのホームグループ フォルダー ショートカットの表示/非表示を強制します。 可能な値は `notConfigured`、`hide`、`show` です。|
+|startMenuPinnedFolderMusic|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|スタート メニューへのミュージック フォルダー ショートカットの表示/非表示を強制します。 可能な値は `notConfigured`、`hide`、`show` です。|
+|startMenuPinnedFolderNetwork|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|スタート メニューへのネットワーク フォルダー ショートカットの表示/非表示を強制します。 可能な値は `notConfigured`、`hide`、`show` です。|
+|startMenuPinnedFolderPersonalFolder|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|スタート メニューへの個人用フォルダー ショートカットの表示/非表示を強制します。 可能な値は `notConfigured`、`hide`、`show` です。|
+|startMenuPinnedFolderPictures|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|スタート メニューへのピクチャ フォルダー ショートカットの表示/非表示を強制します。 可能な値は `notConfigured`、`hide`、`show` です。|
+|startMenuPinnedFolderSettings|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|スタート メニューへの設定フォルダー ショートカットの表示/非表示を強制します。 可能な値は `notConfigured`、`hide`、`show` です。|
 |startMenuPinnedFolderVideos|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|スタート メニューへのビデオ フォルダー ショートカットの表示/非表示を強制します。 可能な値は、`notConfigured`、`hide`、`show` です。|
 |settingsBlockSettingsApp|Boolean|設定アプリへのアクセスを禁止するかどうかを示します。|
 |settingsBlockSystemPage|Boolean|設定アプリ内の [システム] へのアクセスを禁止するかどうかを示します。|
@@ -234,10 +234,10 @@ ms.locfileid: "31779287"
 |windowsSpotlightBlockThirdPartyNotifications|Boolean|Windows スポットライト経由でサード パーティのコンテンツを配信することを禁止します|
 |windowsSpotlightBlockWelcomeExperience|Boolean|Windows スポットライトからの Windows へようこそのエクスペリエンスを禁止します|
 |windowsSpotlightBlockWindowsTips|Boolean|Windows のヒントのポップアップを IT 管理者がオフにできるようにします。|
-|windowsSpotlightConfigureOnLockScreen|[windowsスポットライト enablementsettings](../resources/intune-deviceconfig-windowsspotlightenablementsettings.md)|スポットライトの種類を指定します。 使用可能な値は、`notConfigured`、`disabled`、`enabled` です。|
+|windowsSpotlightConfigureOnLockScreen|[windowsスポットライト enablementsettings](../resources/intune-deviceconfig-windowsspotlightenablementsettings.md)|スポットライトの種類を指定します。 可能な値は `notConfigured`、`disabled`、`enabled` です。|
 |networkProxyApplySettingsDeviceWide|Boolean|オンに設定すると、プロキシの設定がデバイスのすべてのプロセスとアカウントに適用されます。 それ以外の場合は、MDM に登録されているユーザー アカウントに適用されます。|
 |networkProxyDisableAutoDetect|Boolean|設定の自動検出を無効にします。 有効にした場合、システムはプロキシ自動構成 (PAC) スクリプトへのパスを検索します。|
-|networkProxyAutomaticConfigurationUrl|文字列|使用するプロキシ自動構成 (PAC) スクリプトのアドレス。|
+|networkProxyAutomaticConfigurationUrl|String|使用するプロキシ自動構成 (PAC) スクリプトのアドレス。|
 |networkProxyServer|[windows10NetworkProxyServer](../resources/intune-deviceconfig-windows10networkproxyserver.md)|プロキシ サーバーの設定を手動で指定します。|
 |accountsBlockAddingNonMicrosoftAccountEmail|Boolean|Microsoft アカウントに関連付けられていない電子メール アカウントをユーザーがデバイスに追加できないようにするかどうかを示します。|
 |antiTheftModeBlocked|Boolean|ユーザーが盗難防止モードの設定を選択することを禁止するかどうかを示します (Windows 10 Mobile のみ)。|
@@ -256,7 +256,7 @@ ms.locfileid: "31779287"
 |edgeBlockSendingIntranetTrafficToInternetExplorer|Boolean|イントラネットトラフィックをエッジから Internet Explorer に切り替えるかどうかを示します。 注: このプロパティの名前は誤解されています。このプロパティは現在使用されていません。代わりに EdgeSendIntranetTrafficToInternetExplorer を使用してください。|
 |edgeSendIntranetTrafficToInternetExplorer|Boolean|イントラネットトラフィックをエッジから Internet Explorer に切り替えるかどうかを示します。|
 |edgeRequireSmartScreen|Boolean|スマート スクリーン フィルターの使用をユーザーに要求するかどうかを示します。|
-|edgeEnterpriseModeSiteListLocation|文字列|エンタープライズ モードのサイト リストの場所を示します。 ローカル ファイル、ローカル ネットワーク、http の場所が該当します。|
+|edgeEnterpriseModeSiteListLocation|String|エンタープライズ モードのサイト リストの場所を示します。 ローカル ファイル、ローカル ネットワーク、http の場所が該当します。|
 |edgeFirstRunUrl|String|Edge ブラウザーを初めて開いたときに最初に実行される URL です。|
 |edgeSearchEngine|[edgeSearchEngineBase](../resources/intune-deviceconfig-edgesearchenginebase.md)|IT 管理者が MDM 制御デバイス用の既定の検索エンジンを設定できるようにします。 AllowSearchEngineCustomization ポリシーが設定されていない場合、ユーザーは上書きして既定の検索エンジンを変更することができます。|
 |edgeHomepageUrls|String コレクション|MDM に登録されているデバイスの Edge ブラウザーに表示されるホームページの URL の一覧です。|
@@ -290,7 +290,7 @@ ms.locfileid: "31779287"
 |wirelessDisplayBlockUserInputFromReceiver|Boolean|ワイヤレス ディスプレイ レシーバーからのユーザー入力を許可するかどうかを示します。|
 |wirelessDisplayRequirePinForPairing|Boolean|新しいデバイスがペアリングを開始するときに PIN が必要かどうかを示します。|
 |windowsStoreBlocked|Boolean|ユーザーが Windows ストアを使用することを禁止するかどうかを示します。|
-|appsAllowTrustedAppsSideloading|[statemanagementsetting](../resources/intune-deviceconfig-statemanagementsetting.md)|信頼された証明書で署名した AppX パッケージからアプリをサイドローディングできるかどうかを示します。 使用可能な値は、`notConfigured`、`blocked`、`allowed` です。|
+|appsAllowTrustedAppsSideloading|[statemanagementsetting](../resources/intune-deviceconfig-statemanagementsetting.md)|信頼された証明書で署名した AppX パッケージからアプリをサイドローディングできるかどうかを示します。 可能な値は `notConfigured`、`blocked`、`allowed` です。|
 |windowsStoreBlockAutoUpdate|Boolean|Windows ストアからのアプリの自動更新を禁止するかどうかを示します。|
 |developerUnlockSetting|[statemanagementsetting](../resources/intune-deviceconfig-statemanagementsetting.md)|開発者によるロック解除を許可するかどうかを示します。 可能な値は、`notConfigured`、`blocked`、`allowed` です。|
 |sharedUserAppDataAllowed|Boolean|同じアプリの複数のユーザーによるデータ共有を禁止するかどうかを示します。|
@@ -307,7 +307,7 @@ ms.locfileid: "31779287"
 |appmanagementmsiallowusercontroloverinstall|Boolean|このポリシー設定では、通常、システム管理者のみが使用できるインストールオプションをユーザーが変更することができます。|
 |appManagementMSIAlwaysInstallWithElevatedPrivileges|Boolean|このポリシー設定は、システムにプログラムをインストールするときに、管理者特権でのアクセス許可を使用するように Windows インストーラーに指示します。|
 |dataprotectionblockdirectmemoryaccess|Boolean|このポリシー設定を使用すると、ユーザーが Windows にログインしない限り、ホットプラグ可能な PCI 下流ポートすべてのダイレクトメモリアクセス (DMA) をブロックすることができます。|
-|appManagementPackageFamilyNamesToLaunchAfterLogOn|String コレクション|Windows アプリの、セミコロンで区切られたパッケージファミリー名のリスト。 表示された Windows アプリは、ログオン後に起動されます。|
+|appManagementPackageFamilyNamesToLaunchAfterLogOn|String collection|Windows アプリの、セミコロンで区切られたパッケージファミリー名のリスト。 表示された Windows アプリは、ログオン後に起動されます。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|

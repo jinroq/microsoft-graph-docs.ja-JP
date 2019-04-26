@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 15a91ce28509e63f6ca7def284aeafe515ed04d6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990832"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561307"
 ---
 # <a name="tablecolumn-resource-type"></a>TableColumn リソースの種類
 
@@ -26,23 +26,23 @@ ms.locfileid: "27990832"
 |[Headerrowrange](../api/tablecolumn-headerrowrange.md)|[Range](range.md)|列のヘッダー行に関連付けられた範囲オブジェクトを取得します。|
 |[Range](../api/tablecolumn-range.md)|[Range](range.md)|列全体に関連付けられた範囲オブジェクトを取得します。|
 |[Totalrowrange](../api/tablecolumn-totalrowrange.md)|[Range](range.md)|列の集計行に関連付けられた範囲オブジェクトを取得します。|
-|[Delete](../api/tablecolumn-delete.md)|なし|テーブルから列を削除します。|
-|[List](../api/tablecolumn-list.md) | [WorkbookTableColumn](tablecolumn.md)コレクション |tableColumn オブジェクトのコレクションを取得します。 |
+|[削除](../api/tablecolumn-delete.md)|なし|テーブルから列を削除します。|
+|[List](../api/tablecolumn-list.md) | [WorkbookTableColumn](tablecolumn.md) コレクション |tableColumn オブジェクトのコレクションを取得します。 |
 |[Itemat](../api/tablecolumncollection-itemat.md)|[WorkbookTableColumn](tablecolumn.md)|コレクション内の位置に基づいて列を取得します。|
 |[Add](../api/tablecolumncollection-add.md)|[WorkbookTableColumn](tablecolumn.md)|テーブルに新しい列を追加します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|ID|文字列|テーブル内の列を識別する一意のキーを返します。 このプロパティは符号化文字列値として解釈し、その他の型に解析すべきではありません。 読み取り専用。|
+|id|string|テーブル内の列を識別する一意のキーを返します。 このプロパティは符号化文字列値として解釈し、その他の型に解析すべきではありません。 読み取り専用。|
 |index|int|テーブルの列コレクション内の列のインデックス番号を返します。0 を起点とする番号になります。読み取り専用です。|
-|name|文字列|テーブル列の名前を取得します。読み取り専用です。|
+|name|string|テーブル列の名前を取得します。読み取り専用です。|
 |values|Json|指定した範囲の Raw 値を表します。返されるデータの型は、文字列、数値、またはブール値のいずれかになります。エラーが含まれているセルは、エラー文字列を返します。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|filter|[WorkbookFilter](filter.md)|列に適用されるフィルターを取得します。読み取り専用です。|
+|フィルター|[WorkbookFilter](filter.md)|列に適用されるフィルターを取得します。読み取り専用です。|
 
 ## <a name="json-representation"></a>JSON 表記
 

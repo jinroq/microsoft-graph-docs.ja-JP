@@ -1,15 +1,15 @@
 ---
 title: 'WorksheetCollection: add'
-description: 上に .activate()。
+description: . を有効にします。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 3fa9ec83252d81efc49ba7fb7421354bd4e455c2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27915537"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569768"
 ---
 # <a name="worksheetcollection-add"></a>WorksheetCollection: add
 
@@ -40,11 +40,11 @@ POST /workbook/worksheets/
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|name|文字列|省略可能。追加するワークシートの名前。指定する場合、名前は一意である必要があります。指定されていない場合は、Excel が新しいワークシートの名前を決定します。|
+|name|string|省略可能。追加するワークシートの名前。指定する場合、名前は一意である必要があります。指定されていない場合は、Excel が新しいワークシートの名前を決定します。|
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドを返します`200 OK`応答コードおよび応答の本文に[WorkbookWorksheet](../resources/worksheet.md)オブジェクトです。
+成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[WorkbookWorksheet](../resources/worksheet.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 以下は、この API を呼び出す方法の例です。

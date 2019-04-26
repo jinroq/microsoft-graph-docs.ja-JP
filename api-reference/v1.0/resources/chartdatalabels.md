@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 48d6cb0d35e82fc0117a24aad1c5e171bc869870
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961418"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569005"
 ---
 # <a name="chartdatalabels-resource-type"></a>ChartDataLabels リソースの種類
 
@@ -24,10 +24,10 @@ ms.locfileid: "27961418"
 |[Update](../api/chartdatalabels-update.md) | [WorkbookChartDataLabels](chartdatalabels.md) |ChartDataLabels オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|position|文字列|データ ラベルの位置を表す値を DataLabelPosition。 可能な値: `None`、 `Center`、 `InsideEnd`、 `InsideBase`、 `OutsideEnd`、 `Left`、 `Right`、 `Top`、 `Bottom`、 `BestFit`、 `Callout`。|
-|separator|文字列|グラフのデータ ラベルに使用される区切り文字を表す文字列を設定します。|
+|position|string|データ ラベルの位置を表す DataLabelPosition 値。 使用可能な値は`None`、 `Center`、 `InsideEnd` `InsideBase` `OutsideEnd` `Left` `Right` `Top` `Bottom`、、、、、、、、、 `Callout` `BestFit`です。|
+|separator|string|グラフのデータ ラベルに使用される区切り文字を表す文字列を設定します。|
 |showBubbleSize|ブール値|データ ラベルのバブルのサイズを表示または非表示にするかを表すブール型の値。|
 |showCategoryName|ブール値|データ ラベルのカテゴリ名を表示するか非表示にするかを表すブール型の値。|
 |showLegendKey|ブール値|データ ラベルの凡例マーカーを表示するか非表示にするかを表すブール型の値。|
@@ -35,10 +35,10 @@ ms.locfileid: "27961418"
 |showSeriesName|ブール値|データ ラベルの系列名を表示するか非表示にするかを表すブール型の値。|
 |showValue|ブール値|データ ラベルの値を表示するか非表示にするかを表すブール型の値。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|format|[WorkbookChartDataLabelFormat](chartdatalabelformat.md)|グラフのデータ ラベルの書式 (塗りつぶしとフォントの書式設定を含む) を表します。値の取得のみ可能です。|
+|format|[WorkbookChartDataLabelFormat](chartdatalabelformat.md)|グラフのデータ ラベルの書式 (塗りつぶしとフォントの書式設定を含む) を表します。 値の取得のみ可能です。|
 
 ## <a name="json-representation"></a>JSON 表記
 

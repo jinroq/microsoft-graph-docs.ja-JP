@@ -1,33 +1,33 @@
 ---
-title: skypeForBusinessActivityUserDetail リソースの種類
+title: skypeforbusinessactivityuserdetail リソースの種類
 description: リソースの JSON 表記を次に示します。
 localization_priority: Normal
 ms.openlocfilehash: e847cbf469db3be55c8c12ebf31056a262962886
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828652"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571766"
 ---
-# <a name="skypeforbusinessactivityuserdetail-resource-type"></a>skypeForBusinessActivityUserDetail リソースの種類
+# <a name="skypeforbusinessactivityuserdetail-resource-type"></a>skypeforbusinessactivityuserdetail リソースの種類
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ                                 | 種類              |
+| プロパティ                                 | 型              |
 | :--------------------------------------- | :---------------- |
 | totalPeerToPeerSessionCount              | Int64             |
 | totalOrganizedConferenceCount            | Int64             |
 | totalParticipatedConferenceCount         | Int64             |
-| peerToPeerLastActivityDate               | 日付              |
-| organizedConferenceLastActivityDate      | 日付              |
-| participatedConferenceLastActivityDate   | 日付              |
-| peerToPeerIMCount                        | Int64             |
-| peerToPeerAudioCount                     | Int64             |
-| peerToPeerAudioMinutes                   | Int64             |
-| peerToPeerVideoCount                     | Int64             |
-| peerToPeerVideoMinutes                   | Int64             |
-| peerToPeerAppSharingCount                | Int64             |
-| peerToPeerFileTransferCount              | Int64             |
+| peertopeerlastactivitydate               | Date              |
+| organizedConferenceLastActivityDate      | Date              |
+| participatedConferenceLastActivityDate   | Date              |
+| peertopeerimcount                        | Int64             |
+| peertopeeraudiocount                     | Int64             |
+| peertopeeraudiominutes                   | Int64             |
+| peertopeervideocount                     | Int64             |
+| peertopeervideominutes                   | Int64             |
+| peertopeerappsharingcount                | Int64             |
+| peertopeerfiletransfercount              | Int64             |
 | organizedConferenceIMCount               | Int64             |
 | organizedConferenceAudioVideoCount       | Int64             |
 | organizedConferenceAudioVideoMinutes     | Int64             |
@@ -43,13 +43,13 @@ ms.locfileid: "27828652"
 | participatedConferenceAppSharingCount   | Int64             |
 | participatedConferenceWebCount          | Int64             |
 | participatedConferenceDialInOut3rdPartyCount | Int64             |
-| reportRefreshDate                        | 日付              |
+| reportrefreshdate                        | Date              |
 | userPrincipalName                        | String            |
-| isDeleted                                | ブール型           |
-| deletedDate                              | 日付              |
-| lastActivityDate                         | 日付              |
-| assignedProducts                         | String コレクション |
-| reportPeriod                             | String            |
+| isDeleted                                | Boolean           |
+| deletedDate                              | Date              |
+| lastactivitydate                         | Date              |
+| assignedProducts                         | String collection |
+| reportperiod                             | String            |
 
 ## <a name="json-representation"></a>JSON 表記
 

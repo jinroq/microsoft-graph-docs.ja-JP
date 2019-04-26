@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 50bcd4e4ddde2b1b7c1c642cd17805691ba0cb44
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30259942"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571780"
 ---
 # <a name="vpptokenaccounttype-enum-type"></a>vpptokenaccounttype 列挙型
 
@@ -21,7 +21,7 @@ ms.locfileid: "30259942"
 |メンバー|値|説明|
 |:---|:---|:---|
 |出張|.0|ビジネスプログラムに関連付けられている Apple volume purchase program トークン。|
-|高等|1-d|教育プログラムに関連付けられている Apple volume purchase program トークン。|
+|高等|1 |教育プログラムに関連付けられている Apple volume purchase program トークン。|
 
 
 

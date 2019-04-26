@@ -4,14 +4,16 @@ description: サインインしたユーザーによってアクセスされた 
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 31f95d8e94ef22c6b0cbea1cbb5ff8b98c58d187
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: a911776e76c608576a3e86364970c7eb06c7f27e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27931672"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562189"
 ---
 # <a name="notebook-getrecentnotebooks"></a>ノートブック: getRecentNotebooks
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 サインインしたユーザーによってアクセスされた [recentNotebook](../resources/recentnotebook.md) インスタンスの一覧を取得します。
 
@@ -32,11 +34,11 @@ GET /me/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks=includePer
 GET /users/{id | userPrincipalName}/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks=includePersonalNotebooks-value)
 ```
 
-ユーザーの `<id | userPrincipalName>` は、要求を行うために使用された承認トークンにおいてエンコードされたユーザーと一致しなければなりません。
+ユーザーの `{id | userPrincipalName}` は、要求を行うために使用された承認トークンにおいてエンコードされたユーザーと一致しなければなりません。
 
 ## <a name="function-parameters"></a>関数パラメーター
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |includePersonalNotebooks|Boolean|ユーザーが所有しているノートブックを含みます。 ユーザーが所有しているノートブックを含むには、`true` に設定します。そうでない場合は、`false` に設定します。 `includePersonalNotebooks` パラメーターを含めない場合、要求は `400` エラー応答を返します。|
 
@@ -58,16 +60,16 @@ GET /users/{id | userPrincipalName}/onenote/notebooks/getRecentNotebooks(include
 次の例は要求を示しています。
 <!-- { "blockType": "request", "name": "recent_notebooks", "scopes": "notes.read" } -->
 ```http
-GET https://graph.microsoft.com/v1.0/me/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks=true)
+GET https://graph.microsoft.com/v1.0/onenote/notebooks/getrecentnotebooks(includePersonalNotebooks=true)
 ```
 
-#### <a name="response"></a>応答
+##### <a name="response"></a>応答
 次の例は応答を示しています。
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.recentNotebook)",
+  "@odata.type": "microsoft.graph.notebook",
   "isCollection": true
 } -->
 ```http
@@ -78,7 +80,7 @@ Content-Length: 1110
 {
   "value":[
     {
-      "displayName":"Personal Notebook","lastAccessedTime":"timestamp","links":{
+      "name":"Personal Notebook","lastAccessedTime":"timestamp","links":{
         "oneNoteClientUrl":{
           "href":"onenote:href-value"
         },"oneNoteWebUrl":{
@@ -86,7 +88,7 @@ Content-Length: 1110
         }
       },"sourceService":"OneDrive"
     },{
-      "displayName":"Team Shared Notebook","lastAccessedTime":"timestamp","links":{
+      "name":"Team Shared Notebook","lastAccessedTime":"timestamp","links":{
         "oneNoteClientUrl":{
           "href":"onenote:href-value"
         },"oneNoteWebUrl":{

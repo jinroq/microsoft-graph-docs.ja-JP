@@ -1,38 +1,38 @@
 ---
 title: privilegedAccess リソースの種類
-description: " たとえば、 `privilegedAccess/azureResources` Azure のリソースへのアクセス権限を管理する PIM を表します。"
+description: " たとえば、は`privilegedAccess/azureResources` 、Azure リソースへの特権アクセスを管理する PIM を表します。"
 localization_priority: Normal
 ms.openlocfilehash: 9ac8ab596906509bc0303f9a70794b6484759cc2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512928"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563676"
 ---
 # <a name="privilegedaccess-resource-type"></a>privilegedAccess リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-特権を持つユーザーの管理 (PIM) サービスによって提供される機能のグループを表します。 別のインスタンスの`privilegedAccess`PIM; によって管理されている別のプロバイダーを表します。たとえば、 `privilegedAccess/azureResources` Azure のリソースへのアクセス権限を管理する PIM を表します。
+特権 id 管理 (PIM) サービスによって提供される機能のグループを表します。 PIM が管理`privilegedAccess`するさまざまなプロバイダーを表すさまざまなインスタンス。たとえば、は`privilegedAccess/azureResources` 、Azure リソースへの特権アクセスを管理する PIM を表します。
 
 
-`privilegedAccess`ここでは、読み取り専用です。 No `POST`、 `PUT`、 `PATCH`、または`DELETE`の操作はサポートされて、`privilegedAccess`のエンティティ セット。
+`privilegedAccess`現時点では読み取り専用です。 `PATCH` `DELETE` `POST` `PUT`エンティティセットでは、、、、または操作はサポートされていません。 `privilegedAccess`
 
 ## <a name="properties"></a>プロパティ
 | プロパティ  | 型      |説明|
 |:----------|:----------|:----------|
-|id         |String     |PIM によって管理されているプロバイダーの id。|
-|displayName|String     |PIM によって管理されているプロバイダーの表示名。|
+|id         |String     |PIM によって管理されるプロバイダーの id です。|
+|displayName|String     |PIM によって管理されるプロバイダーの表示名。|
 
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ   | 型                                         |説明|
 |:---------------|:---------------------------------------------|:----------|
-|resources       |[governanceResource](../resources/governanceresource.md)コレクション            |プロバイダーのリソースのコレクションです。|
-|roleAssignments |[governanceRoleAssignment](../resources/governanceroleassignment.md)コレクション|プロバイダーのロールの割り当てのコレクションです。|
-|roleDefinitions |[governanceRoleDefinition](../resources/governanceroledefinition.md)コレクション|プロバイダーのロール定義のコレクションです。|
-|roleAssignmentRequests |[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)コレクション|プロバイダーの役割の割り当て要求のコレクションです。|
-|roleSettings |[governanceRoleSetting](../resources/governancerolesetting.md)コレクション|プロバイダーのロールの設定のコレクションです。|
+|リソース       |[governanceResource](../resources/governanceresource.md)コレクション            |プロバイダーのリソースのコレクション。|
+|roleAssignments |[governanceRoleAssignment](../resources/governanceroleassignment.md)コレクション|プロバイダーのロール割り当てのコレクション。|
+|roleDefinitions |[governanceRoleDefinition](../resources/governanceroledefinition.md)コレクション|プロバイダーのロール日のコレクション。|
+|rolerequests 要求 |[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)コレクション|プロバイダーのロール割り当て要求のコレクション。|
+|rolesettings |[governanceRoleSetting](../resources/governancerolesetting.md)コレクション|プロバイダーのロール設定のコレクション。|
 
 
 ## <a name="json-representation"></a>JSON 表記
@@ -44,6 +44,8 @@ ms.locfileid: "29512928"
   "optionalProperties": [
 
   ],
+  "keyProperty": "id",
+  "baseType":"microsoft.graph.entity",
   "@odata.type": "microsoft.graph.privilegedAccess"
 }-->
 
@@ -64,8 +66,6 @@ ms.locfileid: "29512928"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/privilegedaccess.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

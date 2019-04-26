@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: f337a61f3a0cfd52e042e65bb3d8de57dcf9f283
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30254465"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571710"
 ---
 # <a name="windowsminimumoperatingsystem-resource-type"></a>windowsMinimumOperatingSystem リソースの種類
 
@@ -24,7 +24,7 @@ Windows モバイル アプリに必要な最小オペレーティング シス�
 |v8_1|ブール型 (Boolean)|Windows バージョン 8.1 以降。|
 |v10_0|ブール型 (Boolean)|Windows バージョン 10.0 以降。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: edc0f2d28891c48e4df73bdbdfda9edb931c90e2
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31787086"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562490"
 ---
 # <a name="androidwifisecuritytype-enum-type"></a>androidWiFiSecurityType 列挙型
 
@@ -23,7 +23,7 @@ Android の wi-fi セキュリティの種類。
 |メンバー|値|説明|
 |:---|:---|:---|
 |開か|.0|開く (認証なし)。|
-|wpaenterprise|1-d|WPA-エンタープライズ/WPA2-エンタープライズ。 エンタープライズオプションを構成するには、AndroidEnterpriseWifiConfiguration type を使用する必要があります。|
+|wpaenterprise|1 |WPA-エンタープライズ/WPA2-エンタープライズ。 エンタープライズオプションを構成するには、AndroidEnterpriseWifiConfiguration type を使用する必要があります。|
 
 
 

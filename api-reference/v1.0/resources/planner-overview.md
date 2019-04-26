@@ -1,40 +1,40 @@
 ---
-title: プランナーの REST API を使用します。
-description: Graph でプランナーの API を使用するにはタスクを作成し、Office 365 で、グループ内のユーザーに割り当てます。
+title: プランナーの REST API を使用します
+description: Microsoft GraphのPlanner APIを使用してタスクを作成し、それらをOffice 365のグループ内のユーザーに割り当てることができます。
 author: TarkanSevilmis
 localization_priority: Priority
 ms.prod: planner
 ms.openlocfilehash: 86d5c950b2e281a0af254d48a7d133d7e352341f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27944090"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462397"
 ---
-# <a name="use-the-planner-rest-api"></a>プランナーの REST API を使用します。
+# <a name="use-the-planner-rest-api"></a>プランナーの REST API を使用します
 
-Graph でプランナーの API を使用するにはタスクを作成し、Office 365 で、グループ内のユーザーに割り当てます。
+Microsoft GraphのPlanner APIを使用してタスクを作成し、それらをOffice 365のグループ内のユーザーに割り当てることができます。
 
-プランナーの API を使用して開始する前に互いにも Office 365 のグループを主なオブジェクトの関係を理解するができます。
+Planner APIを使い始める前に、メインオブジェクト同士や、Office 365グループとの関係について理解しておく必要があります。
 
 ## <a name="office-365-groups"></a>Office 365 グループ
 
-Office 365 のグループは、プランナーの API で、計画の所有者です。
-[グループによって所有されているプランを取得する](../api/plannergroup-list-plans.md)には、次の HTTP 要求を確認します。
+Office 365 のグループは、Planner API のプランの所有者です。
+[グループが所有するプランを取得する](../api/plannergroup-list-plans.md)には、次に示す HTTP 要求を行います。
 
 ``` http
 GET /groups/{id}/planner/plans
 ```
 
-[新しい計画を作成する](../api/planner-post-plans.md)をグループにする、その所有者を設定することにより、 `owner` 、プラン オブジェクトのプロパティです。 プランは、グループが所有する必要があります。
+[新しいプランを作成する](../api/planner-post-plans.md)場合は、プラン オブジェクトに `owner` プロパティを設定するだけで、グループを所有者にできます。 プランはグループによって所有される必要があります。
 
->**注:** 計画を作成しているユーザーは、計画を所有するグループのメンバーである必要があります。 [グループの作成](../api/group-post-groups.md)を使用して新しいグループを作成するときにいない追加されますグループにメンバーとして。 グループが作成されると、自分自身を追加メンバーとして[グループのメンバーの投稿](../api/group-post-members.md)を使用しています。
+>**注意:** プランを作成するユーザーは、プランを所有するグループのメンバーである必要があります。 あなたが新しいグループを[グループの作成](../api/group-post-groups.md)を使用して作成しても、メンバーとしてそのグループに追加されることはありません。 グループを作成したら、[グループ投稿メンバー](../api/group-post-members.md)を使用して自分自身をメンバーとして追加します。
 
 ## <a name="plans"></a>プラン
 
-[計画](plannerplan.md)は、[タスク](plannertask.md)のコンテナーです。 [計画にタスクを作成](../api/planner-post-tasks.md)するには、設定、 `planId` 、タスクの作成中に計画の ID をタスク オブジェクトのプロパティです。
-現在のタスクを計画しなくても作成できません。
-[計画内のタスクを取得](../api/plannerplan-list-tasks.md)するには、次の HTTP 要求を確認します。
+[プラン](plannerplan.md)は[タスク](plannertask.md)の容器です。 [プランのタスクを作成する](../api/planner-post-tasks.md)には、タスクの作成時にタスク オブジェクトの `planId` プロパティをプランの ID に設定します。
+現在、プランなしでタスクを作成することはできません。
+[プラン内のタスクを取得する](../api/plannerplan-list-tasks.md)には、次のHTTPリクエストを行います。
 
 ``` http
 GET /planner/plans/{id}/tasks
@@ -42,15 +42,16 @@ GET /planner/plans/{id}/tasks
 
 ## <a name="tasks"></a>タスク
 
-各タスクは、タスク オブジェクトの [assignments](plannerassignments.md) プロパティに [assignment](plannerassignment.md) を追加することにより、ユーザーに割り当てることができます。タスクを割り当てるユーザーの ID は `assignments` の open プロパティの名前であり、assignment の `orderHint` プロパティを指定する必要があります。
+各タスクは、タスク オブジェクトの [assignments](plannerassignments.md) プロパティに [assignment](plannerassignment.md) を追加することにより、ユーザーに割り当てることができます。
+タスクを割り当てるユーザーの ID は `assignments` の open プロパティの名前であり、assignment の `orderHint` プロパティを指定する必要があります。
 
 ## <a name="task-and-plan-details"></a>タスクとプランの詳細 
 
-Planner のリソースは、基本オブジェクトと詳細オブジェクトに配置されます。基本オブジェクトは、リスト ビューに適したリソースの共通プロパティへのアクセスを提供し、詳細オブジェクトは、ドリル ダウン ビューに適したリソースの大規模なプロパティへのアクセスを提供します。
+Planner のリソースは、基本オブジェクトと詳細オブジェクトに配置されます。 基本オブジェクトは、リスト ビューに適したリソースの共通プロパティへのアクセスを提供し、詳細オブジェクトは、ドリル ダウン ビューに適したリソースの大規模なプロパティへのアクセスを提供します。
 
 ## <a name="visualization"></a>視覚化
 
-作業および計画のデータは別にプランナー API はクライアント間でデータの一般的な視覚エフェクトを作成するためのリソースも備えています。 ビジュアル化データのいくつかの種類があるタスクについては、次の表に記載されています。
+Planner API は、タスクとプランのデータのほかに、データの共通した視覚化をクライアント全体に提供するためのリソースも提供します。 次の表にリストされているように、タスクにはいくつかの種類の視覚化データがあります。
 
 | タスクの表示                                                                        | タスクを順序付ける情報の情報源                                         |
 | :---------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------ |
@@ -62,13 +63,13 @@ Planner のリソースは、基本オブジェクトと詳細オブジェクト
 
 バケット タスク ボードのカスタム列は [bucket](plannerbucket.md) オブジェクトで表され、その順序はオブジェクトの `orderHint` プロパティによって表されます。
 
-[プランナーの順序のヒント](planner-order-hint-format.md)で説明した原則には、すべての順序が制御されます。
+すべての順序は、[Planner の順序のヒント](planner-order-hint-format.md)に書かれた原則によって制御されます。
 
 ## <a name="planner-resource-versioning"></a>Planner のリソースのバージョン管理
 
-プランナーのバージョンすべてのリソースの**etag**を使用します。 返されるこれらの**etag**が`@odata.etag`の各リソースのプロパティです。 `PATCH``DELETE`を使用して指定するのには既知のクライアントによって最後の**etag**を要求、`If-Match`ヘッダー。
-プランナーは、目的の変更が新しい変更を受け入れ、プランナーのサービスで同じリソースと競合していない場合、古いバージョンのリソースへの変更を使用できます。 **Etag**値が大きい序数の文字列比較で計算することで同じリソースの**etag**のどちらの方が新しいクライアントを識別できます。 各リソースには、独自の**etag**があります。 包含関係では、ある方を含め、さまざまなリソースの Etag 値を比較することはできません。
-クライアント アプリケーションは、バージョン管理を処理するために期待される関連[のエラー コード](/graph/errors) **409** 、 **412**項目の最新バージョンの読み取りと変更の競合を解決します。
+Planner は **etags**を使ってすべてのリソースをバージョン管理します。 これらの**etags**は各リソースの`@odata.etag`プロパティとともに返されます 。 `PATCH`と`DELETE` リクエストは、クライアントが知っている最後の**etag**を`If-Match`ヘッダで指定することを要求します。
+同じリソースに対してPlannerサービスによって受け入れることを意図された新しい変更と競合しない場合、Plannerは古いバージョンのリソースへの変更を許可します。 クライアントは、**etag**順序文字列の比較でどの値が大きいかを計算することによって、同じリソースのどの**etag**がより新しいかを識別できます 。 各リソースには固有の **etag**があります。 包含関係を持つものを含め、種類の違うリソースのetag値を比較することはできません。
+クライアントアプリは、アイテムの最新バージョンを読み取り、競合する変更を解決することで、バージョニング関連の[エラーコード](/graph/errors) **409** および**412**を処理することが期待されています。
 
 ## <a name="common-planner-error-conditions"></a>一般的な Planner のエラー条件
 
@@ -76,34 +77,34 @@ Microsoft Graph に適用される[一般的なエラー](/graph/errors)のほ�
 
 ### <a name="400-bad-request"></a>400 要求が正しくありません
 
-いくつかの一般的なシナリオでは、`POST`と`PATCH`の要求は、400 のステータス コードを返すことができます。 以下は、いくつかの一般的な原因です。
+いくつかの一般的なシナリオでは、`POST` and `PATCH` リクエストは400ステータスコードを返す可能性があります。 以下は、よくある原因の一部です。
 
-* Open Type プロパティが正しい型でないか、型が指定されていないか、またはプロパティが含まれていません。たとえば、複雑な値が指定された [plannerAssignments](plannerassignments.md) プロパティは、値 `microsoft.graph.plannerAssignment` を指定した `@odata.type` プロパティで宣言する必要があります。
-* ORDER ヒントの値が[正しい書式](planner-order-hint-format.md)になっていません。たとえば、ORDER ヒントの値は、クライアントに返される値に直接設定されています。
-* データが論理的に矛盾しています。たとえば、タスクの開始日がタスクの期日よりも後になる場合などです。
+* Open Type プロパティが正しい型でないか、型が指定されていないか、またはプロパティが含まれていません。 たとえば、複雑な値が指定された [plannerAssignments](plannerassignments.md) プロパティは、値 `microsoft.graph.plannerAssignment` を指定した `@odata.type` プロパティで宣言する必要があります。
+* ORDER ヒントの値が[正しい書式](planner-order-hint-format.md)になっていません。 たとえば、ORDER ヒントの値は、クライアントに返される値に直接設定されています。
+* データが論理的に矛盾しています。 たとえば、タスクの開始日がタスクの期日よりも後になる場合などです。
 
-### <a name="403-forbidden"></a>403 アクセスは許可されていません
+### <a name="403-forbidden"></a>403 Forbidden
 
-一般的なエラーだけでなくプランナー API も 403 ステータス コードを返しますサービスで定義された制限を超えているとき。 この場合は、`code`エラーのリソースの種類のプロパティには、要求によって制限の種類が表示されます。
-制限の種類の有効な値を次に示します。
+Planner API では、一般的なエラーのほかに、サービスで定義された制限を超えた場合にも403 ステータスコードを返します。 この場合、エラー リソースの種類の `code` プロパティは、要求が超過した制限の種類を示します。
+制限の種類の有効な値は次のとおりです。
 
 | 値                         | 説明                                                                                                                                                                                              |
 | :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| MaximumProjectsOwnedByUser    | グループが所有するプランの最大数の制限を超過しています。この制限は、[plannerPlan](plannerplan.md) リソースの `owner` プロパティに基づいています。                                         |
-| MaximumProjectsSharedWithUser | ユーザーが共有するプランの最大数の制限を超過しています。この制限は、[plannerPlanDetails](plannerplandetails.md) リソースの `sharedWith` プロパティに基づいています。                   |
-| MaximumTasksCreatedByUser     | ユーザーが作成するタスクの最大数の制限を超過しています。この制限は、[plannerTask](plannertask.md) リソースの `createdBy` プロパティに基づいています。                                    |
-| MaximumTasksAssignedToUser    | ユーザーに割り当てられるタスクの最大数の制限を超過しています。この制限は、[plannerTask](plannertask.md) リソースの `assignments` プロパティに基づいています。                                 |
-| MaximumTasksInProject         | プランにおけるタスクの最大数の制限を超過しています。この制限は、[plannerTask](plannertask.md) リソースの `planId` プロパティに基づいています。                                               |
-| MaximumActiveTasksInProject   | プランで完了されないタスクの最大数の制限を超過しています。この制限は、[plannerTask](plannertask.md) リソースの `planId` および `percentComplete` プロパティに基づいています。 |
-| MaximumBucketsInProject       | プランにおけるバケットの最大数の制限を超過しています。この制限は、[plannerBucket](plannerbucket.md) リソースの `planId` プロパティに基づいています。                                         |
+| MaximumProjectsOwnedByUser    | グループが所有するプランの最大数の制限を超過しています。 この制限は、[plannerPlan](plannerplan.md) リソースの `owner` プロパティに基づいています。                                         |
+| MaximumProjectsSharedWithUser | ユーザーが共有するプランの最大数の制限を超過しています。  この制限は、[plannerPlanDetails](plannerplandetails.md) リソースの `sharedWith` プロパティに基づいています。                   |
+| MaximumTasksCreatedByUser     | ユーザーが作成するタスクの最大数の制限を超過しています。 この制限は、[plannerTask](plannertask.md) リソースの `createdBy` プロパティに基づいています。                                    |
+| MaximumTasksAssignedToUser    | ユーザーに割り当てられるタスクの最大数の制限を超過しています。 この制限は、[plannerTask](plannertask.md) リソースの `assignments` プロパティに基づいています。                                 |
+| MaximumTasksInProject         | プランにおけるタスクの最大数の制限を超過しています。 この制限は、[plannerTask](plannertask.md) リソースの `planId` プロパティに基づいています。                                               |
+| MaximumActiveTasksInProject   | プランで完了されないタスクの最大数の制限を超過しています。 この制限は、[plannerTask](plannertask.md) リソースの `planId` および `percentComplete` プロパティに基づいています。 |
+| MaximumBucketsInProject       | プランにおけるバケットの最大数の制限を超過しています。 この制限は、[plannerBucket](plannerbucket.md) リソースの `planId` プロパティに基づいています。                                         |
 | MaximumUsersSharedWithProject | [plannerPlanDetails](plannerplandetails.md) リソースの `sharedWith` プロパティに含まれる値が多すぎます。                                                                                          |
 | MaximumReferencesOnTask       | [plannerTaskDetails](plannertaskdetails.md) リソースの `references` プロパティに含まれる値が多すぎます。                                                                                          |
 | MaximumChecklistItemsOnTask   | [plannerTaskDetails](plannertaskdetails.md) リソースの `checklist` プロパティに含まれる値が多すぎます。                                                                                           |
 | MaximumAssigneesInTasks       | [plannerTask](plannertask.md) リソースの `assignments` プロパティに含まれる値が多すぎます。                                                                                                       |
-| MaximumPlannerPlans       | グループには、計画が既に含まれています。 現在、グループは 1 つの計画のみ含めることができます。 **注:** いくつかの Microsoft アプリケーションでは、この制限を超えることができます。 今後、すべてのアプリケーションにこの機能は拡張します。                                                                                                      |
+| MaximumPlannerPlans       | このグループには、プランが既に含まれています。 現時点では、グループは 1 つのプランのみ含めることができます。 **注意:** いくつかの Microsoft アプリは、この制限を超えることができます。 将来、すべてのアプリケーションにこの機能を拡張します。                                                                                                      |
 
-### <a name="412-precondition-failed"></a>412 必須条件に失敗しました 
+### <a name="412-precondition-failed"></a>412 前提条件が失敗しました 
 
-平面のすべての API `POST`、 `PATCH`、および`DELETE`要求を`If-Match`ヘッダーは、要求の対象となるリソースの最後の既知の etag 値を指定します。
-412 のステータス コードは、要求で指定された etag 値には不要になったサービス内のリソースのバージョンが一致する場合にも返されます。 この例では、クライアントは、リソースの読み取りを再試行する必要があり、新しい etag を取得します。
+Planner API のすべての `POST`、`PATCH` および `DELETE` 要求には、要求の対象となるリソースと思われる最新の etag 値で `If-Match` ヘッダーを指定する必要があります。
+さらに、要求に指定された etag 値がサービス内のリソースのバージョンと一致しなくなった場合は、412 ステータス コードが返されます。 この場合、クライアントはリソースを再度読み込んで、新しい etag を取得する必要があります。
 

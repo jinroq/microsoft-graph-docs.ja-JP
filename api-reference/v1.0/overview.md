@@ -3,11 +3,11 @@ title: Microsoft Graph REST API v1.0 リファレンス
 description: v1.0 エンドポイント用の Microsoft Graph REST API リファレンスへようこそ。
 localization_priority: Priority
 ms.openlocfilehash: bdebe1415ea020f575b0cbf35712b30d7830df05
-ms.sourcegitcommit: 1089e82254068556b0d0c7be45e3270e46c961e6
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2019
-ms.locfileid: "30546010"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569502"
 ---
 # <a name="microsoft-graph-rest-api-v10-reference"></a>Microsoft Graph REST API v1.0 リファレンス
 

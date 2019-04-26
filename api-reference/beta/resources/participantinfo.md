@@ -1,29 +1,29 @@
 ---
 title: participantInfo リソースの種類
-description: 参加者のアイデンティティについての追加のプロパティが含まれています
+description: 参加者の id に関する追加のプロパティが含まれています
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 3d040fd5be86068c30e7a63dae50888c4f3ec756
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528348"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568595"
 ---
 # <a name="participantinfo-resource-type"></a>participantInfo リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-参加者のアイデンティティについての追加のプロパティが含まれています
+参加者の id に関する追加のプロパティが含まれています
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ       | 型                          | 説明  |
 |:---------------|:------------------------------|:-------------|
-| identity       | [identitySet](identityset.md) | この構成要素に関連付けられている[identitySet](identityset.md) 。 |
-| languageId     | String                        | 言語カルチャの文字列です。 |
-| 地域         | String                        | 参加者の領域です。 |
+| 独自性       | [identitySet](identityset.md) | この参加者に関連付けられている id[セット](identityset.md)。 |
+| languageId     | String                        | 言語のカルチャ文字列。 |
+| エリア         | String                        | 参加者の地域。 |
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -53,8 +53,6 @@ ms.locfileid: "29528348"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/participantinfo.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -1,45 +1,45 @@
 ---
-title: 参加者のリソースの種類
-description: 参加者のタイプです。
+title: 参加者リソースの種類
+description: 参加者の種類。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: f49526824b2b6c4eb4a5065f05ab4c765d299faa
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508147"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568660"
 ---
-# <a name="participant-resource-type"></a>参加者のリソースの種類
+# <a name="participant-resource-type"></a>参加者リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-参加者のタイプです。
+参加者の種類。
 
 ## <a name="methods"></a>メソッド
 
 | メソッド                                                          | 戻り値の型                              | 説明                                       |
 |:----------------------------------------------------------------|:-----------------------------------------|:--------------------------------------------------|
-| [構成要素を取得します。](../api/participant-get.md)                    | [参加者](participant.md)            | **構成要素**オブジェクトのプロパティを参照します。    |
-| [ConfigureMixer](../api/participant-configuremixer.md)          | [commsOperation](commsoperation.md)      | 参加者のオーディオ ミキサーを構成します。            |
-| [招待](../api/participant-invite.md)                          | [commsOperation](commsoperation.md)      | 通話に参加者を招待します。                 |
-| [参加者のミュート](../api/participant-mute.md)                  | [commsOperation](commsoperation.md)      | 呼び出し内の参加者をミュートします。                     |
-| [参加者全員をミュートします。](../api/participant-muteall.md)          | [commsOperation](commsoperation.md)      | 会議のすべての参加者をミュートします。         |
+| [参加者を取得する](../api/participant-get.md)                    | [積極的](participant.md)            | **参加者**オブジェクトのプロパティを読み取ります。    |
+| [ConfigureMixer](../api/participant-configuremixer.md)          | [commsOperation](commsoperation.md)      | 参加者のオーディオミキサーを構成します。            |
+| [招待](../api/participant-invite.md)                          | [commsOperation](commsoperation.md)      | 参加者を呼び出しに招待します。                 |
+| [参加者をミュートする](../api/participant-mute.md)                  | [commsOperation](commsoperation.md)      | 通話の参加者をミュートにします。                     |
+| [すべての参加者をミュートする](../api/participant-muteall.md)          | [commsOperation](commsoperation.md)      | 会議のすべての参加者をミュートにします。         |
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ             | 型                                     | 説明                                                  |
 | :------------------- | :--------------------------------------- | :------------------------------------------------------------|
-| id                   | String                                   | 参加者の id です。                                          |
-| Info                 | [participantInfo](participantinfo.md)    | 参加者の参加者です。                          |
-| isInLobby            | boolean                                  | 参加者がロビーに入っている場合は true。                          |
-| isMuted              | boolean                                  | 参加者がミュートされている場合は true (クライアントまたはサーバーがミュートになって)    |
-| mediaStreams         | [mediaStream](mediastream.md)コレクション | メディア ストリームのリスト。                                   |
-| metadata             | String                                   | 名簿にある参加者が提供するデータの blob     |
-| recordingInfo        | [recordingInfo](recordinginfo.md)        | 参加者が録画機能を持つかどうかについて説明します。 |
+| id                   | String                                   | 参加者 id。                                          |
+| info                 | [participantInfo](participantinfo.md)    | 参加者の参加者。                          |
+| isInLobby            | ブール値                                  | 参加者がロビーにある場合は true                          |
+| ismuted              | ブール値                                  | 参加者がミュートされている場合は true (クライアントまたはサーバーがミュート状態)    |
+| mediastreams         | [mediastream](mediastream.md)コレクション | メディアストリームのリスト。                                   |
+| metadata             | String                                   | 参加者が名簿に提供するデータの blob     |
+| recordingInfo        | [recordingInfo](recordinginfo.md)        | 参加者にレコーディング機能があるかどうかに関する情報。 |
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -112,8 +112,6 @@ ms.locfileid: "29508147"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/participant.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

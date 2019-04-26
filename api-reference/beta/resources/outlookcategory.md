@@ -1,24 +1,24 @@
 ---
 title: outlookCategory リソースの種類
-description: ユーザーが Outlook アイテム (メッセージやイベントなど) をグループ化するために使用できるカテゴリを表します。 Outlook では、ユーザーが、マスター] ボックスの一覧でカテゴリを定義し、これらのユーザー定義の 1 つ以上を適用することができます。
+description: ユーザーが Outlook アイテム (メッセージやイベントなど) をグループ化するために使用できるカテゴリを表します。 Outlook では、ユーザーがマスターリストでカテゴリを定義し、1つ以上のユーザー定義を適用できます。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 5124a681cd4dd1f37ef1ecfea250eb6eb2d228a3
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524766"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568655"
 ---
 # <a name="outlookcategory-resource-type"></a>outlookCategory リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ユーザーが Outlook アイテム (メッセージやイベントなど) をグループ化するために使用できるカテゴリを表します。 Outlook では、ユーザーは、マスター] ボックスの一覧でカテゴリを定義し、アイテムを 1 つまたは複数のユーザー定義カテゴリを適用できます。 
+ユーザーが Outlook アイテム (メッセージやイベントなど) をグループ化するために使用できるカテゴリを表します。 Outlook では、ユーザーがマスターリストでカテゴリを定義し、1つまたは複数のユーザー定義の分類項目をアイテムに適用することができます。 
 
 カテゴリを[作成](../api/outlookuser-post-mastercategories.md)してユーザーのマスター カテゴリ リストに定義するには、REST API を使用することができます。 また、[このマスター カテゴリ リストの取得](../api/outlookuser-list-mastercategories.md)、[特定のカテゴリの取得](../api/outlookcategory-get.md)、カテゴリに関連付けられている色の[更新](../api/outlookcategory-update.md)、カテゴリの[削除](../api/outlookcategory-delete.md)などの操作を行うこともできます。 カテゴリをアイテムに適用するには、適用対象とするアイテムの **categories** コレクションに、カテゴリの **displayName** プロパティを割り当てます。
-カテゴリを割り当てることができるリソースには、[連絡先](contact.md)、[イベント](event.md)、[メッセージ](message.md)、 [outlookTask](outlooktask.md)、および[投稿](post.md)が含まれます。   
+カテゴリに割り当てることができるリソースには、 [contact](contact.md)、 [event](event.md)、 [message](message.md)、 [outlooktask](outlooktask.md)、 [post](post.md)があります。   
 
 各カテゴリを特徴付けるプロパティには、**displayName** と **color** の 2 つがあります。 **displayName** の値は、ユーザーのマスター リスト内で一意でなければなりません。 一方、**color** には一意の値を設定する必要はありません。マスター リストに含まれる複数のカテゴリに、同じ色をマッピングすることができます。 ユーザーのマスター リスト内のカテゴリには、最大 25 種類の色をマッピングできます。
 
@@ -99,8 +99,7 @@ ms.locfileid: "29524766"
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Warning: /api-reference/beta/resources/outlookcategory.md:\r\n      Failed to parse any rows out of table with headers: |Pre-set constant|Color mapped to in Outlook|",
-    "Error: /api-reference/beta/resources/outlookcategory.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Warning: /api-reference/beta/resources/outlookcategory.md:\r\n      Failed to parse any rows out of table with headers: |Pre-set constant|Color mapped to in Outlook|"
   ]
 }
 -->

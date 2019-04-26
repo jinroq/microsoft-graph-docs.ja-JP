@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 944e9cf172bd39dd50a41e55af5fb02421d81c4f
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31787352"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566536"
 ---
 # <a name="devicemanagementpartnertenantstate-enum-type"></a>devicemanagementpartnertenantstate 列挙型
 
@@ -23,11 +23,11 @@ ms.locfileid: "31787352"
 |メンバー|値|説明|
 |:---|:---|:---|
 |不明|.0|パートナーの状態が不明です。|
-|無効|1-d|パートナーは利用できません。|
-|enabled|pbm-2|パートナーが有効になっている。|
-|停止|1/3|パートナー接続が終了します。|
-|拒否|2/4|パートナーメッセージは拒否されます。|
-|なかっ|5|パートナーが応答していません。|
+|無効|1 |パートナーは利用できません。|
+|enabled|2 |パートナーが有効になっている。|
+|停止|3 |パートナー接続が終了します。|
+|拒否|4 |パートナーメッセージは拒否されます。|
+|なかっ|5 |パートナーが応答していません。|
 
 
 

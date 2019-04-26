@@ -1,20 +1,22 @@
 ---
 title: assignedLicense リソースの種類
-description: ユーザーに割り当てられているライセンスを表します。ユーザー エンティティの **assignedLicenses** プロパティは、**assignedLicense** のコレクションです。
+description: ユーザーに割り当てられているライセンスを表します。 user エンティティの**assignedLicenses**プロパティは、 **assignedLicense**のコレクションです。
 localization_priority: Normal
 ms.openlocfilehash: 1e190060d0aafa4d494240f691b354b28e7697c8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885345"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569495"
 ---
 # <a name="assignedlicense-resource-type"></a>assignedLicense リソースの種類
 
-ユーザーに割り当てられているライセンスを表します。[ユーザー](user.md) エンティティの **assignedLicenses** プロパティは、**assignedLicense** のコレクションです。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+ユーザーに割り当てられているライセンスを表します。 [user](user.md)エンティティの**assignedLicenses**プロパティは、 **assignedLicense**のコレクションです。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |disabledPlans|Guid コレクション|無効になっているプランの一意識別子のコレクション。|
 |skuId|Guid|SKU の一意識別子。|
@@ -42,10 +44,13 @@ ms.locfileid: "27885345"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "assignedLicense resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: パッケージ
 localization_priority: Normal
 ms.openlocfilehash: bcfc1a1e754286566c8b24b9b00c7f2eb0721316
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482386"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568616"
 ---
 # <a name="package-resource-type"></a>Package リソースの種類
 
@@ -30,7 +30,7 @@ OneNote のノートブックはパッケージの一例です。ノートブッ
 }
 ```
 
-| プロパティ名 | 種類   | 説明                                                                                                                                                                      |
+| プロパティ名 | 型   | 説明                                                                                                                                                                      |
 |:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **type**      | string | パッケージのタイプを指定する文字列です。`oneNote` が唯一の現在定義されている値であるとしても、他のパッケージ タイプが返されるものと考え、それぞれに応じた扱いをする必要があります。 |
 
@@ -45,8 +45,6 @@ DriveItem のファセットの詳細については、「[DriveItem](driveitem.
   "description": "The Package facet indicates that an item is the root of a special collection of items that should be treated as a single unit.",
   "keywords": "package, facet, onenote",
   "section": "documentation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/package.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

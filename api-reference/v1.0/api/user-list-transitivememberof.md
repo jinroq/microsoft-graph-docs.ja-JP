@@ -1,19 +1,19 @@
 ---
-title: ボックスの一覧ユーザーの推移的な memberOf
-description: グループ、ユーザーがのメンバーであるディレクトリの役割を取得します。 この API 要求は、推移的なもすべてのグループの入れ子にされたメンバーを返します。
+title: ユーザー推移的な memberOf を一覧表示する
+description: ユーザーがメンバーになっているグループ、ディレクトリロールを取得します。 この API 要求は推移的なので、ユーザーがネストされたメンバーであるすべてのグループも返します。
 author: anchanda
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 824e037d5f1e02051d315860ad3faa1254c25967
-ms.sourcegitcommit: d6209114cbbe8072e3ecf7eba23819ae5ace7db5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29694483"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563799"
 ---
-# <a name="list-user-transitive-memberof"></a>ボックスの一覧ユーザーの推移的な memberOf
+# <a name="list-user-transitive-memberof"></a>ユーザー推移的な memberOf を一覧表示する
 
-グループ、ユーザーがのメンバーであるディレクトリの役割を取得します。 この API 要求は、推移的なもすべてのグループの入れ子にされたメンバーを返します。
+ユーザーがメンバーになっているグループ、ディレクトリロールを取得します。 この API 要求は推移的なので、ユーザーがネストされたメンバーであるすべてのグループも返します。
 
 ## <a name="permissions"></a>アクセス許可
 

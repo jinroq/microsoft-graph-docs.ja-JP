@@ -1,21 +1,21 @@
 ---
 title: onenoteOperationError リソースの種類
-description: 失敗した OneNote 操作によるエラー。
+description: 失敗した OneNote 操作のエラー。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 ms.openlocfilehash: 78e0ab763f27d17cf926795459b4e4a25cdf8e71
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522057"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568901"
 ---
 # <a name="onenoteoperationerror-resource-type"></a>onenoteOperationError リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-失敗した OneNote 操作によるエラー。
+失敗した OneNote 操作のエラー。
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -39,7 +39,7 @@ ms.locfileid: "29522057"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|code|文字列|エラー コード。|
+|code|string|エラーコード。|
 |message|string|エラー メッセージ。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -51,8 +51,6 @@ ms.locfileid: "29522057"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/onenoteoperationerror.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

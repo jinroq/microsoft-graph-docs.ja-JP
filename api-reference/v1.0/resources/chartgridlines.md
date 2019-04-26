@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 7347ac1b7ff251b12764534df217cd883ba730b3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27956949"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569026"
 ---
 # <a name="chartgridlines-resource-type"></a>ChartGridlines リソースの種類
 
@@ -24,14 +24,14 @@ ms.locfileid: "27956949"
 |[Update](../api/chartgridlines-update.md) | [WorkbookChartGridlines](chartgridlines.md)    |ChartGridlines オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |visible|ブール値|軸の目盛線を表示するか非表示にするかを表すブール型の値。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|format|[WorkbookChartGridlinesFormat](chartgridlinesformat.md)|グラフの目盛線の書式設定を表します。値の取得のみ可能です。|
+|format|[WorkbookChartGridlinesFormat](chartgridlinesformat.md)|グラフの目盛線の書式設定を表します。 値の取得のみ可能です。|
 
 ## <a name="json-representation"></a>JSON 表記
 

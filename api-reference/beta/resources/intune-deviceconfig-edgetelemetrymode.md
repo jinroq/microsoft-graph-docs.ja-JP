@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 1d671849e34d27403450ae6324b824a92ae9d9b4
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31774590"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566039"
 ---
 # <a name="edgetelemetrymode-enum-type"></a>edgeTelemetryMode 列挙型
 
@@ -23,9 +23,9 @@ Microsoft 365 analytics に送信された参照データの種類
 |メンバー|値|説明|
 |:---|:---|:---|
 |notConfigured|.0|既定–収集または送信されたテレメトリデータはありません。|
-|イントラネット|1-d|イントラネットの履歴のみを送信できるようにする: イントラネットサイトの閲覧履歴データのみを送信する|
-|経由|pbm-2|インターネットの送信履歴のみを許可する: インターネットサイトの閲覧履歴データのみを送信する|
-|intranetandinternet|1/3|イントラネットとインターネットの両方の履歴を送信できるようにする: イントラネットおよびインターネットサイトの閲覧履歴データを送信する|
+|イントラネット|1 |イントラネットの履歴のみを送信できるようにする: イントラネットサイトの閲覧履歴データのみを送信する|
+|経由|2 |インターネットの送信履歴のみを許可する: インターネットサイトの閲覧履歴データのみを送信する|
+|intranetandinternet|3 |イントラネットとインターネットの両方の履歴を送信できるようにする: イントラネットおよびインターネットサイトの閲覧履歴データを送信する|
 
 
 
