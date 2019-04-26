@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 4826ae7cc0bfc53338212d812c293e5577d0ae02
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31771909"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579192"
 ---
 # <a name="enrollmentstate-enum-type"></a>enrollmentState 列挙型
 
@@ -23,11 +23,11 @@ ms.locfileid: "31771909"
 |メンバー|値|説明|
 |:---|:---|:---|
 |不明|.0|デバイス登録の状態が不明です|
-|遂げ|1-d|デバイスは登録されています。|
-|pendingreset|pbm-2|登録済みですが、登録プロファイルによって登録され、登録されたプロファイルは割り当てられたプロファイルとは異なります。|
-|フェール|1/3|登録されていません。登録エラーレコードがあります。|
-|notcontacted|2/4|デバイスはインポートされていますが、登録されていません。|
-|ブロック|5|デバイスは userless として登録されていますが、アプリのインストールが失敗したため、ユーザー登録への移動がブロックされています。|
+|遂げ|1 |デバイスは登録されています。|
+|pendingreset|2 |登録済みですが、登録プロファイルによって登録され、登録されたプロファイルは割り当てられたプロファイルとは異なります。|
+|フェール|3 |登録されていません。登録エラーレコードがあります。|
+|notcontacted|4 |デバイスはインポートされていますが、登録されていません。|
+|ブロック|5 |デバイスは userless として登録されていますが、アプリのインストールが失敗したため、ユーザー登録への移動がブロックされています。|
 
 
 

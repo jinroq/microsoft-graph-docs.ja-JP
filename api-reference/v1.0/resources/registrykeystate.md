@@ -3,11 +3,11 @@ title: registrykeystate リソースの種類
 description: 通知に関連するレジストリキーの変更に関する情報、およびレジストリキーを変更したプロセスについて説明します。
 localization_priority: Normal
 ms.openlocfilehash: d07b0b6f502794154b400444eaf3854535e04547
-ms.sourcegitcommit: 4e9acb8029aca36dfade509a25f1111e1bd0ec6d
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "30070814"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579395"
 ---
 # <a name="registrykeystate-resource-type"></a>registrykeystate リソースの種類
 
@@ -18,11 +18,11 @@ ms.locfileid: "30070814"
 | プロパティ     | 型        | 説明 |
 |:-------------|:------------|:------------|
 |レジストリ|registryHive|[Windows レジストリハイブ](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives): <ul><li>HKEY_CURRENT_CONFIG</li> <li>HKEY_CURRENT_USER</li> <li>HKEY_LOCAL_MACHINE\SAM</li> <li>HKEY_LOCAL_MACHINE\Security</li> <li>HKEY_LOCAL_MACHINE\Software</li> <li>HKEY_LOCAL_MACHINE\System</li> <li>HKEY_USERS\\限り.</li></ul> 可能な値は、`unknown`、`currentConfig`、`currentUser`、`localMachineSam`、`localMachineSecurity`、`localMachineSoftware`、`localMachineSystem`、`usersDefault` です。|
-|Key|String|Current (つまり変更された) レジストリキー (ハイブを除外)。|
+|キー|String|Current (つまり変更された) レジストリキー (ハイブを除外)。|
 |oldkey|String|Previous (変更前) レジストリキー (ハイブを除外)。|
 |oldvaluedata|String|以前の (変更前) レジストリキー値のデータ (内容)。|
 |oldvaluename|String|Previous (変更前) レジストリキー値の名前。|
-|操作​​|registryOperation|レジストリキー名と値の一方または両方を変更した操作。 使用可能な値は、`unknown`、`create`、`modify`、`delete` です。|
+|operation|registryOperation|レジストリキー名と値の一方または両方を変更した操作。 使用可能な値は、`unknown`、`create`、`modify`、`delete` です。|
 |processId|Int32|レジストリキーを変更したプロセスのプロセス ID (PID) (プロセスの詳細は、警告の「プロセス」のコレクションに表示されます)。|
 |valueData|String|現在の (つまり変更された) レジストリキー値のデータ (内容)。|
 |valueName|String|Current (変更された) レジストリキー値の名前|

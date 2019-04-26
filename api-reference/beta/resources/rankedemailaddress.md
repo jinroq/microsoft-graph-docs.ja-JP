@@ -1,26 +1,26 @@
 ---
-title: rankedEmailAddress リソースの種類
-description: ランクの電子メール アドレスを表します。
+title: rankedemailaddress リソースの種類
+description: ランク付けされた電子メールアドレスを表します。
 localization_priority: Normal
 ms.openlocfilehash: 938afc0de208fd3cdbd0cfec299d01ada9d4f592
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510009"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563272"
 ---
-# <a name="rankedemailaddress-resource-type"></a>rankedEmailAddress リソースの種類
+# <a name="rankedemailaddress-resource-type"></a>rankedemailaddress リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ランクの電子メール アドレスを表します。
+ランク付けされた電子メールアドレスを表します。
 
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |address|string|電子メール アドレス。|
-|rank|double|電子メール アドレスのランキングです。 ランクは、他の返される結果に関連して、並べ替えキーとして使用されます。 上位の値は、関連性の高い結果に対応します。 関連性は、通信、コラボレーション、取引関係のシグナルによって決定されます。|
+|rank|double|電子メールアドレスのランク。 ランクは、他の返された結果に対して並べ替えキーとして使用されます。 上位の値は、関連性の高い結果に対応します。 関連性は、通信、コラボレーション、取引関係のシグナルによって決定されます。|
 
 ## <a name="json-representation"></a>JSON 表記
 

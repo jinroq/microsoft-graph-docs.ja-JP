@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: ffaa20097147d5edcfc8af84418d65d6db29a746
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31788297"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566529"
 ---
 # <a name="intunebrand-resource-type"></a>intuneBrand リソース タイプ
 
@@ -23,12 +23,12 @@ intuneBrand には、会社のポータル アプリケーションとエンド 
 |プロパティ|型|説明|
 |:---|:---|:---|
 |displayName|String|エンド ユーザーに表示される会社名または組織名。|
-|contactITName|文字列|IT サポートを担当する個人名または組織名。|
-|contactITPhoneNumber|文字列|IT サポートを担当する個人または組織の電話番号。|
-|contactITEmailAddress|文字列|IT サポートを担当する個人または組織のメール アドレス。|
-|contactITNotes|文字列|IT サポートを担当する個人または組織に関するテキスト コメント。|
-|privacyUrl|文字列|会社または組織のプライバシー ポリシーの URL。|
-|onlineSupportSiteUrl|文字列|会社または組織の IT ヘルプデスク サイトの URL。|
+|contactITName|String|IT サポートを担当する個人名または組織名。|
+|contactITPhoneNumber|String|IT サポートを担当する個人または組織の電話番号。|
+|contactITEmailAddress|String|IT サポートを担当する個人または組織のメール アドレス。|
+|contactITNotes|String|IT サポートを担当する個人または組織に関するテキスト コメント。|
+|privacyUrl|String|会社または組織のプライバシー ポリシーの URL。|
+|onlineSupportSiteUrl|String|会社または組織の IT ヘルプデスク サイトの URL。|
 |onlineSupportSiteName|String|会社または組織の IT ヘルプデスク サイトの表示名。|
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|会社のポータル アプリケーションと Web ポータルで使用する主要なテーマの色。|
 |showLogo|Boolean|管理者が指定したロゴ画像が表示されるかどうかを表すブール値。|
@@ -36,10 +36,10 @@ intuneBrand には、会社のポータル アプリケーションとエンド 
 |darkBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|ロゴの背景色が暗いポータル サイト アプリに表示されるロゴ画像。|
 |showNameNextToLogo|Boolean|管理者が指定した表示名がロゴ画像のとなりに表示されるかどうかを表すブール値。|
 |landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|会社のポータルアプリのランディングページに表示されるカスタマイズ画像|
-|customprivacymessage|文字列|カスタムプライバシーメッセージ。|
+|customprivacymessage|String|カスタムプライバシーメッセージ。|
 |showDisplayNameNextToLogo|Boolean|管理者が指定した表示名がロゴ画像のとなりに表示されるかどうかを表すブール値。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 8a237f36a209e2fa1d552c8f50207770429a0c53
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31789690"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554493"
 ---
 # <a name="omasettingdatetime-resource-type"></a>omaSettingDateTime リソースの種類
 
@@ -26,7 +26,7 @@ OMA 設定の DateTime の定義です。
 |プロパティ|型|説明|
 |:---|:---|:---|
 |displayName|String|表示名。 [omaSetting](../resources/intune-deviceconfig-omasetting.md) からの継承|
-|説明|String|説明。 [omaSetting](../resources/intune-deviceconfig-omasetting.md) からの継承|
+|description|String|説明。 [omaSetting](../resources/intune-deviceconfig-omasetting.md) からの継承|
 |omaUri|文字列型 (String)|OMA。 [omaSetting](../resources/intune-deviceconfig-omasetting.md) からの継承|
 |値|DateTimeOffset|値。|
 

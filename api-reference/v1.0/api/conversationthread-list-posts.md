@@ -1,15 +1,15 @@
 ---
 title: 投稿を一覧表示する
-description: '指定したスレッドの投稿を取得します。 親スレッドと、スレッドの両方を指定することができますか、 '
+description: '指定したスレッドの投稿を取得します。 親の会話とスレッドの両方を指定できます。または、 '
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: aa411939f9e8040b127a8821c23b557defffbaec
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961520"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32564100"
 ---
 # <a name="list-posts"></a>投稿を一覧表示する
 
@@ -20,9 +20,9 @@ ms.locfileid: "27961520"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Group.ReadWrite.All、Group.Read.All    |
+|委任 (職場または学校のアカウント) | グループ読み取り。すべてを取得します。    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | Group.ReadWrite.All、Group.Read.All |
+|アプリケーション | グループ読み取り。すべてを取得します。 |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

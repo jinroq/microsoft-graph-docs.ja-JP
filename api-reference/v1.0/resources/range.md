@@ -5,11 +5,11 @@ localization_priority: Priority
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: a97747f1dc8cfce10f5f219f1970c07b1f982a52
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991602"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579516"
 ---
 # <a name="range-resource-type"></a>範囲リソースの種類
 
@@ -71,8 +71,8 @@ ms.locfileid: "27991602"
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |format|[WorkbookRangeFormat](rangeformat.md)|Format オブジェクト (範囲のフォント、塗りつぶし、罫線、配置などのプロパティをカプセル化するオブジェクト) を返します。読み取り専用です。|
-|sort|[WorkbookRangeSort](rangesort.md)|現在の範囲を含んでいるワークシート。読み取り専用です。|
-|worksheet|[WorkbookWorksheet](worksheet.md)|現在の範囲を含んでいるワークシート。読み取り専用です。|
+|sort|[WorkbookRangeSort](rangesort.md)|現在の範囲を含んでいるワークシート。 読み取り専用です。|
+|ワークシート|[WorkbookWorksheet](worksheet.md)|現在の範囲を含んでいるワークシート。読み取り専用です。|
 
 ## <a name="json-representation"></a>JSON 表記
 

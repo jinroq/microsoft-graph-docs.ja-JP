@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 41d5161f1e9344f187329bf795219151c91f29ae
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30256176"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32555886"
 ---
 # <a name="applepushnotificationcertificate-resource-type"></a>applePushNotificationCertificate リソースの種類
 
@@ -32,7 +32,7 @@ Apple プッシュ通知証明書。
 |topicIdentifier|String|トピック ID。|
 |lastModifiedDateTime|DateTimeOffset|Apple プッシュ通知証明書の最終変更日時。|
 |expirationDateTime|DateTimeOffset|Apple プッシュ通知証明書の有効期限。|
-|証明書|String|まだ文書化されていません|
+|certificate|String|まだ文書化されていません|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

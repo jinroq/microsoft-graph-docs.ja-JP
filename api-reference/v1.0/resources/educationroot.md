@@ -5,11 +5,11 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 5b9f17cf82c6839a95f1fd81405aa675e0f4d6ba
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27943201"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562707"
 ---
 # <a name="educationroot-resource-type"></a>educationRoot リソースの種類
 
@@ -32,8 +32,8 @@ ms.locfileid: "27943201"
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|classes|[educationClass](educationclass.md) コレクション| 読み取り専用。Null 許容型。|
-|me|[educationUser](educationuser.md)| 読み取り専用。Null 許容型。|
+|classes|[educationClass](educationclass.md) コレクション| 読み取り専用。 Null 許容型。|
+|me|[educationUser](educationuser.md)| 読み取り専用。 Null 許容型。|
 |schools|[educationSchool](educationschool.md) コレクション| 読み取り専用。Null 許容型。|
 |users|[educationUser](educationuser.md) コレクション| 読み取り専用。Null 許容型。|
 

@@ -1,19 +1,19 @@
 ---
 title: 契約書を一覧表示する
-description: パートナー テナントに関連付けられている 契約オブジェクトの一覧を取得します。
+description: パートナーテナントに関連付けられている契約オブジェクトの一覧を取得します。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: b4003bf2aaa910d3ad33e299a9fdb01f47229d1a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932981"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566186"
 ---
 # <a name="list-contracts"></a>契約書を一覧表示する
 
-パートナー テナントに関連付けられている [契約](../resources/contract.md)オブジェクトの一覧を取得します。
+パートナーテナントに関連付けられている[契約](../resources/contract.md)オブジェクトの一覧を取得します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -37,7 +37,7 @@ GET /contracts
 
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。 
 
-> customerId、defaultDomainName、displayName によるフィルタリングがサポートされています。
+> フィルター処理は、customerId、defaultdomainname、および displayName でサポートされています。
 
 ## <a name="request-headers"></a>要求ヘッダー
 
@@ -51,7 +51,7 @@ GET /contracts
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [Contract](../resources/contract.md) オブジェクトのコレクションを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[Contract](../resources/contract.md)オブジェクトのコレクションを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/v1.0/contracts
 
 ##### <a name="response"></a>応答
 
-注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,15 +1,15 @@
 ---
 title: 組織リソースの種類
-description: 'Azure Active Directory のテナント型を表します。 '
+description: 'Azure Active Directory テナントを表します。 '
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: d06ba07c3cee402b88ad5e85e1b0bacc59b9810c
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642143"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568557"
 ---
 # <a name="organization-resource-type"></a>組織リソースの種類
 
@@ -40,31 +40,31 @@ ms.locfileid: "29642143"
 |companyLastDirSyncTime|DateTimeOffset|テナントがオンプレミスのディレクトリと最後に同期した日時。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |country|String| 組織の住所の国/地域名 |
 |countryLetterCode|String| 組織の国/地域の略称 |
-|createdDateTime|DateTimeOffset| 組織作成時のタイムスタンプです。 値は変更できず、組織が作成されると自動的に設定されます。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 読み取り専用です。 |
-| deletedDateTime                    | DateTimeOffset                                                    | ISO 8601 形式を使用して Azure AD テナントが削除されたときの日時を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります: `'2014-01-01T00:00:00Z'`。 読み取り専用です。                                                                                     |
-|dirSyncEnabled|Boolean|このオブジェクトがオンプレミスのディレクトリから同期される場合は **true**。このオブジェクトが最初にオンプレミスのディレクトリから同期されていて、今後は同期されない場合は **false**。このオブジェクトがオンプレミスのディレクトリから一度も同期されたことがない場合は **null** (既定値)。|
-|displayName|String|テナントの表示名。|
-|id|String|テナント ID。組織 (またはテナント) を表す一意の識別子です。 [directoryObject](directoryobject.md) から継承されました。 キー。 null 許容型ではありません。 読み取り専用です。|
+|createdDateTime|DateTimeOffset| 組織作成時のタイムスタンプです。 値は変更できず、組織が作成されると自動的に設定されます。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 読み取り専用。 |
+| deletedDateTime                    | DateTimeOffset                                                    | ISO 8601 形式を使用して Azure AD テナントが削除されたときの日時を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります: `'2014-01-01T00:00:00Z'`。 読み取り専用。                                                                                     |
+|dirsyncenabled|ブール値|このオブジェクトがオンプレミスのディレクトリから同期される場合は **true**。このオブジェクトが最初にオンプレミスのディレクトリから同期されていて、今後は同期されない場合は **false**。このオブジェクトがオンプレミスのディレクトリから一度も同期されたことがない場合は **null** (既定値)。|
+|displayName|文字列|テナントの表示名。|
+|id|String|テナント ID。組織 (またはテナント) を表す一意の識別子です。 [directoryObject](directoryobject.md) から継承されました。 キー。 null 許容ではありません。 読み取り専用です。|
 |isMultipleDataLocationsForServicesEnabled|Boolean|組織の Multi-Geo が有効の場合 **true**、組織の Multi-Geo が有効ではない場合 **false**、**null** (既定)。 読み取り専用です。 詳細については、「[OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction)」を参照してください。|
-|marketingNotificationEmails|String コレクション| null 許容ではありません。            |
+|marketingNotificationEmails|String collection| null 許容型ではありません。            |
 |objectType|String|オブジェクトの種類を識別する文字列です。テナントの場合、値は常に「会社」です。 |
 |postalCode|String| 組織の住所の郵便番号 |
 |preferredLanguage|String| 組織の優先言語。 ISO 639-1 コードに従う必要があります (例: "en")。 |
 |privacyProfile|[privacyProfile](privacyprofile.md)| 組織のプライバシー プロファイル。            |
 |provisionedPlans|[ProvisionedPlan](provisionedplan.md) コレクション| null 許容ではありません。            |
-|provisioningErrors|ProvisioningError コレクション| null 許容ではありません。            |
-|securityComplianceNotificationMails|String コレクション||
-|securityComplianceNotificationPhones|String コレクション||
+|プロビジョニングエラー|ProvisioningError コレクション| null 許容ではありません。            |
+|securityComplianceNotificationMails|String collection||
+|securityComplianceNotificationPhones|String collection||
 |state|String| 組織の住所の都道府県名 |
 |street|String| 組織の住所の番地 |
-|technicalNotificationMails|String コレクション| null 許容ではありません。 |
+|technicalNotificationMails|String collection| null 許容ではありません。 |
 |verifiedDomains|[VerifiedDomain](verifieddomain.md) コレクション|このテナントに関連付けられているドメインのコレクション。null 許容ではありません。            |
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 
 | リレーションシップ     | 型   |説明|
 |:---------------|:--------|:----------|
-|extensions|[extension](extension.md) コレクション|組織のリソースに対して定義されている、開いている拡張機能のコレクションです。 Null 許容型。|
+|extensions|[extension](extension.md) コレクション|組織リソースに対して定義されているオープン拡張機能のコレクション。 Null 許容型。|
 
 ## <a name="json-representation"></a>JSON 表記
 

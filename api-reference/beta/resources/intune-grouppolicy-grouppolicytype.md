@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: b1f38b6185b1a65a7480219741b8771f613fcfd1
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31796039"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556950"
 ---
 # <a name="grouppolicytype-enum-type"></a>groupPolicyType 列挙型
 
@@ -23,7 +23,7 @@ ms.locfileid: "31796039"
 |メンバー|値|説明|
 |:---|:---|:---|
 |の復元|.0|ポリシー構成サービスプロバイダー (CSP) に組み込まれているグループポリシー管理用テンプレート。|
-|admxIngested|1-d|ポリシー構成サービスプロバイダー (CSP) を使用してインストールされたグループポリシー管理用テンプレート。|
+|admxIngested|1 |ポリシー構成サービスプロバイダー (CSP) を使用してインストールされたグループポリシー管理用テンプレート。|
 
 
 

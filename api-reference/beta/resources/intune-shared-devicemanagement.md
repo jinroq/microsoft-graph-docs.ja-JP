@@ -5,11 +5,11 @@ localization_priority: Normal
 author: tfitzmac
 ms.prod: intune
 ms.openlocfilehash: b23285738d8a4268ce55d056ccd49defb823369a
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31518541"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32574454"
 ---
 # <a name="devicemanagement-resource-type"></a>deviceManagement リソースの種類
 
@@ -41,13 +41,13 @@ deviceManagement リソースは、次のようなワークフローに従って
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
 |[Get deviceManagement](../api/intune-shared-devicemanagement-get.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[deviceManagement の更新](../api/intune-shared-devicemanagement-update.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md) オブジェクトのプロパティを更新します。|
+|[Update deviceManagement](../api/intune-shared-devicemanagement-update.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md) オブジェクトのプロパティを更新します。|
 |**デバイス構成**|
 |[enableLegacyPcManagement アクション](../api/intune-shared-devicemanagement-enablelegacypcmanagement.md)|なし|まだ文書化されていません|
 |**デバイスの管理**|
 |[sendCustomNotificationToCompanyPortal アクション](../api/intune-shared-devicemanagement-sendcustomnotificationtocompanyportal.md)|なし|まだ文書化されていません|
 |**オンボーディング**|
-|[verifyWindowsEnrollmentAutoDiscovery 関数](../api/intune-shared-devicemanagement-verifywindowsenrollmentautodiscovery.md)|ブール型 (Boolean)|まだ文書化されていません|
+|[verifyWindowsEnrollmentAutoDiscovery function](../api/intune-shared-devicemanagement-verifywindowsenrollmentautodiscovery.md)|Boolean|まだ文書化されていません|
 |**役割ベースのアクセス制御 (RBAC)**|
 |[getEffectivePermissions 関数](../api/intune-shared-devicemanagement-geteffectivepermissions.md)|[rolePermission](../resources/intune-rbac-rolepermission.md) コレクション|現在の認証ユーザーの有効なアクセス許可を取得します|
 |[getRoleScopeTagsByIds 関数](../api/intune-shared-devicemanagement-getrolescopetagsbyids.md)|[ロール copetag](../resources/intune-rbac-rolescopetag.md)コレクション|まだ文書化されていません|
@@ -69,7 +69,7 @@ deviceManagement リソースは、次のようなワークフローに従って
 |deviceProtectionOverview|[deviceProtectionOverview](../resources/intune-devices-deviceprotectionoverview.md)|デバイス保護の概要。|
 |managedDeviceCleanupSettings|[managedDeviceCleanupSettings](../resources/intune-devices-manageddevicecleanupsettings.md)|デバイスクリーンアップルール|
 |subscriptionState|[devicemanagementsubscriptionstate](../resources/intune-devices-devicemanagementsubscriptionstate.md)|テナントのモバイル デバイス管理のサブスクリプション状態。 可能な値は、`pending`、`active`、`warning`、`disabled`、`deleted`、`blocked`、`lockedOut` です。|
-|subscriptions|[devicemanagementsubscriptions](../resources/intune-devices-devicemanagementsubscriptions.md)|テナントのサブスクリプション。 可能な値は `none`、`intune`、`office365`、`intunePremium`、`intune_EDU`、`intune_SMB` です。|
+|subscriptions|[devicemanagementsubscriptions](../resources/intune-devices-devicemanagementsubscriptions.md)|テナントのサブスクリプション。 使用可能な値: `none`、`intune`、`office365`、`intunePremium`、`intune_EDU`、`intune_SMB`。|
 |windowsMalwareOverview|[windowsMalwareOverview](../resources/intune-devices-windowsmalwareoverview.md)|windows デバイスのマルウェアの概要。|
 |**オンボーディング**|
 |intuneBrand|[intuneBrand](../resources/intune-onboarding-intunebrand.md)|intuneBrand には、会社のポータル アプリケーションとエンド ユーザーの Web ポータルの外観のカスタマイズに使用するデータが含まれています。|

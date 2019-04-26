@@ -1,27 +1,27 @@
 ---
 title: profilePhoto リソースの種類
-description: ユーザー、グループまたは Exchange のオンラインまたは Azure Active Directory (AAD) からアクセスする Outlook の連絡先のプロフィールの写真です。 base 64 でエンコードされていないバイナリ データです。
+description: Exchange Online または Azure Active Directory (AAD) からアクセスされるユーザー、グループ、または Outlook 連絡先のプロファイル写真。 base 64 でエンコードされていないバイナリ データです。
 localization_priority: Normal
 ms.openlocfilehash: 2a831abd098fb9a0dfa95f6d6dd3a9cd5de128cd
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513656"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563323"
 ---
 # <a name="profilephoto-resource-type"></a>profilePhoto リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ユーザー、グループまたは Exchange のオンラインまたは Azure Active Directory (AAD) からアクセスする Outlook の連絡先のプロフィールの写真です。 base 64 でエンコードされていないバイナリ データです。
+Exchange Online または Azure Active Directory (AAD) からアクセスされるユーザー、グループ、または Outlook 連絡先のプロファイル写真。 base 64 でエンコードされていないバイナリ データです。
 
-Exchange Online 上でサポートされている HD Photo のサイズは次のとおりです。'48x48'、'64x64'、'96x96'、'120x120'、'240x240'、'360x360'、'432x432'、'504x504'、'648x648'。 AAD、上は、任意の次元が写真にできます。
+Exchange Online 上でサポートされている HD Photo のサイズは次のとおりです。'48x48'、'64x64'、'96x96'、'120x120'、'240x240'、'360x360'、'432x432'、'504x504'、'648x648'。 AAD では、写真は任意の次元にすることができます。
 
 ## <a name="methods"></a>メソッド
 
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
-|[ProfilePhoto を取得する](../api/profilephoto-get.md) | [profilePhoto](profilephoto.md) |指定した**profilePhoto**またはそのメタデータ (**profilePhoto**プロパティ) を取得します。 |
+|[ProfilePhoto を取得する](../api/profilephoto-get.md) | [profilePhoto](profilephoto.md) |指定した **profilePhoto** またはそのメタデータ (**profilePhoto** プロパティ) を取得します。 |
 |[Update](../api/profilephoto-update.md) | [profilePhoto](profilephoto.md)  |指定されたユーザー、グループ、または連絡先に写真を割り当てます。写真はバイナリ形式にする必要があります。既存の写真が置き換えられます (存在する場合)。 |
 
 ## <a name="properties"></a>プロパティ
@@ -31,7 +31,7 @@ Exchange Online 上でサポートされている HD Photo のサイズは次の
 |height|int32|写真の高さ。読み取り専用です。|
 |width|int32|写真の幅。読み取り専用です。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 

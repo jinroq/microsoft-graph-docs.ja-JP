@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: PublicationFacet
 localization_priority: Normal
 ms.openlocfilehash: 66e12c3240d1cade57d377e43403b33102fe166e
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482064"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563258"
 ---
 # <a name="publicationfacet-resource-type"></a>PublicationFacet リソースの種類
 
@@ -34,10 +34,9 @@ ms.locfileid: "30482064"
 
 ## <a name="properties"></a>プロパティ
 
-|   プロパティ    |  種類  | 説明 |
+|   プロパティ    |  型  | 説明 |
 | :------------ | :----- | :---------- |
-| **level**     | String
- | このドキュメントの公開状況。 `published` または `checkout` のどちらかです。 読み取り専用です。  |
+| **level**     | String | このドキュメントの公開状況。 `published` または `checkout` のどちらかです。 読み取り専用です。  |
 | **versionId** | String | 現在の呼び出し元に表示されているバージョンの一意識別子です。 値の取得のみ可能です。  |
 
 

@@ -3,11 +3,11 @@ title: standardTimeZoneOffset リソースの種類
 description: タイム ゾーンが夏時間から標準時に切り替わるタイミングを指定します。
 localization_priority: Normal
 ms.openlocfilehash: 5e224865f201041b72fb943bc3a76e8a67f7975a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875846"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32555893"
 ---
 # <a name="standardtimezoneoffset-resource-type"></a>standardTimeZoneOffset リソースの種類
 
@@ -21,7 +21,7 @@ ms.locfileid: "27875846"
 - **time** は 02:00:00 で、_ **year** は 0 です。つまり、夏時間から標準時への切り替えは、毎年 10 月の第 3 日曜日の午前 2 時に行われることを意味します。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 | dayOccurrence | Edm.Int32 | 夏時間から標準時への切り替えが月の何番目の曜日に行われるかを表します。 |
 | dayOfWeek | dayOfWeek | 夏時間から標準時への切り替えが行われる曜日を表します。 |

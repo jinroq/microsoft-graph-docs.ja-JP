@@ -3,11 +3,11 @@ title: フィルター リソースの種類
 description: テーブルの列のフィルター処理を管理します。
 localization_priority: Normal
 ms.openlocfilehash: cc4b1b105c2049b36fa27cb88b41102366648fa8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834665"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32564317"
 ---
 # <a name="filter-resource-type"></a>フィルター リソースの種類
 
@@ -23,9 +23,9 @@ ms.locfileid: "27834665"
 
 ## <a name="properties"></a>プロパティ
 
-| 名前 | 種類   |説明|
+| 名前 | 型   |説明|
 |:---------------|:--------|:----------|
-|criteria|[WorkbookFilterCriteria](filtercriteria.md)|指定した列に現在適用されているフィルターです。読み取り専用です。|
+|criteria|[WorkbookFilterCriteria](filtercriteria.md)|指定した列に現在適用されているフィルターです。 読み取り専用です。|
 
 ## <a name="json-representation"></a>JSON 表記
 

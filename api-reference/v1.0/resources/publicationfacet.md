@@ -3,11 +3,11 @@ title: PublicationFacet リソースの種類
 description: '**publicationFacet **リソースは、driveItemVersion または driveItem リソースの公開ステータスの詳細情報を提供します。'
 localization_priority: Normal
 ms.openlocfilehash: 3d722f56cf1d587483c672fb7a1b7c05abd3671b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810529"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579700"
 ---
 # <a name="publicationfacet-resource-type"></a>PublicationFacet リソースの種類
 
@@ -30,10 +30,10 @@ ms.locfileid: "27810529"
 
 ## <a name="properties"></a>プロパティ
 
-|   プロパティ    |  種類  | 説明 |
+|   プロパティ    |  型  | 説明 |
 | :------------ | :----- | :---------- |
 | **level**     | String | このドキュメントの公開状況。 `published` または `checkout` のどちらかです。 読み取り専用です。  |
-| **versionId** | String | 現在の呼び出し元に表示されているバージョンの一意識別子です。 読み取り専用です。  |
+| **versionId** | String | 現在の呼び出し元に表示されているバージョンの一意識別子です。 値の取得のみ可能です。  |
 
 
 <!-- {

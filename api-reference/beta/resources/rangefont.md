@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: 2dee07b7d2573081650bdd15799e4884c774e171
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640162"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563414"
 ---
 # <a name="rangefont-resource-type"></a>RangeFont リソースの種類
 
@@ -23,19 +23,19 @@ ms.locfileid: "29640162"
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
 |[RangeFont を取得する](../api/rangefont-get.md) | [RangeFont](rangefont.md) |rangeFont オブジェクトのプロパティと関係を読み取ります。|
-|[更新する](../api/rangefont-update.md) | [RangeFont](rangefont.md)   |RangeFont オブジェクトを更新します。 |
+|[Update](../api/rangefont-update.md) | [RangeFont](rangefont.md)   |RangeFont オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |bold|ブール値|フォントの太字の状態を表します。|
-|color|文字列|テキストの色の HTML カラー コード表記。たとえば、#FF0000 は赤を表します。|
+|color|string|テキストの色の HTML カラー コード表記。たとえば、#FF0000 は赤を表します。|
 |italic|ブール値|フォントの斜体の状態を表します。|
-|name|文字列|フォント名 (例: "Calibri")|
+|name|string|フォント名 (例: "Calibri")|
 |size|double|フォント サイズ|
 |underline|文字列|フォントに適用する下線の種類。可能な値は、`None`、`Single`、`Double`、`SingleAccountant`、`DoubleAccountant` です。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 

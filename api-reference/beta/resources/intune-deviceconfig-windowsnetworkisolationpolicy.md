@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 8b5e96a56f511289f75a7910f1defb44b7a20bf3
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31783550"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573187"
 ---
 # <a name="windowsnetworkisolationpolicy-resource-type"></a>windowsNetworkIsolationPolicy リソースの種類
 
@@ -22,16 +22,16 @@ Windows ネットワーク分離ポリシー
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|enterpriseNetworkDomainNames|String コレクション|これは、エンタープライズの境界を構成するドメインのリストです。 デバイスに送信されるこれらのドメインのいずれかのデータは、エンタープライズデータとして保護されています。 これらの場所は、エンタープライズデータの共有先として安全であると見なされます。|
+|enterpriseNetworkDomainNames|String collection|これは、エンタープライズの境界を構成するドメインのリストです。 デバイスに送信されるこれらのドメインのいずれかのデータは、エンタープライズデータとして保護されています。 これらの場所は、エンタープライズデータの共有先として安全であると見なされます。|
 |enterpriseCloudResources|[proxiedDomain](../resources/intune-shared-proxieddomain.md) コレクション|クラウドでホストされている、保護する必要があるエンタープライズリソースドメインの一覧が含まれています。 これらのリソースへの接続は、エンタープライズ データと見なされます。 プロキシがクラウド リソースとペアリング済みの場合、クラウド リソースへのトラフィックは、指定されたプロキシ サーバー (ポート 80) を介してエンタープライズ ネットワーク経由でルーティングされます。 この目的で使用されるプロキシサーバーも、enterpriseinternalproxyservers ポリシーを使用して構成する必要があります。 このコレクションには、最大で 500 個の要素を含めることができます。|
 |enterpriseIPRanges|[ipRange](../resources/intune-shared-iprange.md) コレクション|エンタープライズ ネットワーク内のコンピューターを定義するエンタープライズ IP の範囲を設定します。 これらのコンピューターからのデータはエンタープライズの一部と見なされ、保護されます。 これらの場所は、エンタープライズデータの共有先として安全であると見なされます。 このコレクションには、最大で 500 個の要素を含めることができます。|
-|enterpriseInternalProxyServers|String コレクション|これは、内部プロキシ サーバーのコンマ区切りのリストです。 例: "157.54.14.28, 157.54.11.118, 10.202.14.167, 157.53.14.163, 157.69.210.59"。 これらのプロキシは、管理者により、インターネット上の特定のリソースに接続するように構成されています。 それらはエンタープライズ ネットワークの場所にあると見なされます。 プロキシは、EnterpriseCloudResources ポリシーを構成する場合にのみ使用され、これらのプロキシを介して一致するクラウドリソースにトラフィックを強制します。|
+|enterpriseInternalProxyServers|String collection|これは、内部プロキシ サーバーのコンマ区切りのリストです。 例: "157.54.14.28, 157.54.11.118, 10.202.14.167, 157.53.14.163, 157.69.210.59"。 これらのプロキシは、管理者により、インターネット上の特定のリソースに接続するように構成されています。 それらはエンタープライズ ネットワークの場所にあると見なされます。 プロキシは、EnterpriseCloudResources ポリシーを構成する場合にのみ使用され、これらのプロキシを介して一致するクラウドリソースにトラフィックを強制します。|
 |enterpriseIPRangesAreAuthoritative|Boolean|構成済みのリストを承諾し、ヒューリスティックを使用した他のサブネットの検索を行わないよう、クライアントに指示するブール値。 既定値は false です。|
-|enterpriseProxyServers|String コレクション|これは、プロキシ サーバーのリストです。 この一覧にないサーバーは、非エンタープライズとみなされます。|
+|enterpriseProxyServers|String collection|これは、プロキシ サーバーのリストです。 この一覧にないサーバーは、非エンタープライズとみなされます。|
 |enterpriseProxyServersAreAuthoritative|Boolean|プロキシの構成済みリストを承諾し、他の作業プロキシの検出を試みないよう、クライアントに指示するブール値。 既定値は false です|
-|neutralDomainResources|String コレクション|作業または個人のリソースに使用できるドメイン名のリスト。|
+|neutralDomainResources|String collection|作業または個人のリソースに使用できるドメイン名のリスト。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記

@@ -5,11 +5,11 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: c5b145d12dd99293eef9c338ff840d5781c5ef3f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27933989"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562714"
 ---
 # <a name="educationclass-resource-type"></a>educationClass リソース タイプ
 
@@ -30,29 +30,29 @@ ms.locfileid: "27933989"
 |[Remove teacher](../api/educationclass-delete-teachers.md) |[educationUser](educationuser.md)| teachers ナビゲーション プロパティによって、クラスから **educationUser** を削除します。|
 |[Get group](../api/educationclass-get-group.md) |[group](group.md)| この **educationClass** に対応する Office 365 **group**を取得します。|
 |[Update](../api/educationclass-update.md) | [educationClass](educationclass.md)    |**educationClass** オブジェクトを更新します。 |
-|[Delete](../api/educationclass-delete.md) | なし |**educationClass** オブジェクトを削除します。 |
+|[削除](../api/educationclass-delete.md) | なし |**educationClass** オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|ID| String| クラスの一意の識別子。|
+|id| String| クラスの一意の識別子。|
 |説明|String| クラスの説明。|
-|displayName|String| クラスの名前。|
+|displayName|文字列| クラスの名前。|
 |mailNickname|String| すべてのメンバーに電子メールを送信する際のメール名 (この機能が有効な場合)。 |
 |createdBy|[identitySet](identityset.md)| クラスを作成したエンティティ。 |
 |classCode|String| クラスを識別するために学校が使用するクラス コード。|
 |externalId|String| 同期システムからのクラスの ID。 |
 |externalName|String|同期システムからのクラスの名前。|
-|externalSource|educationExternalSource| このクラスの作成方法。 可能な値: `sis`、 `manual`、 `unknownFutureValue`。|
+|externalSource|educationExternalSource| このクラスの作成方法。 使用可能な値: `sis`、`manual`、`unknownFutureValue`。|
 |term|[educationTerm](educationterm.md)|このクラスの学期。|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|members|[educationUser](../resources/educationuser.md) コレクション| クラスのすべてのユーザー。 Null 許容型。|
+|members|[educationUser](../resources/educationuser.md) コレクション| クラスのすべてのユーザー。 Null 許容型です。|
 |schools|[educationSchool](../resources/educationschool.md) コレクション| このクラスに関連付けられているすべての学校。 Null 許容型。|
 |teachers|[educationUser](../resources/educationuser.md) コレクション|  このクラスのすべての教師。 Null 許容型。|
-|group|[group](../resources/group.md)| このクラスに対応するディレクトリのグループです。|
+|グループ|[グループ](../resources/group.md)| このクラスに対応するディレクトリグループ。|
 
 ## <a name="json-representation"></a>JSON 表記
 

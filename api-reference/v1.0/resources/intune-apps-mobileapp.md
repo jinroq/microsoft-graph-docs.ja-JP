@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 91167967a543ea4556c1704a2bba4ec9a10a4c3d
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30254066"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32557895"
 ---
 # <a name="mobileapp-resource-type"></a>mobileApp リソースの種類
 
@@ -27,10 +27,10 @@ Intune モバイル アプリの基本プロパティを含む抽象クラスで
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|エンティティのキー。|
+|id|文字列型 (String)|エンティティのキー。|
 |displayName|String|管理者が提供またはインポートしたアプリのタイトルです。|
-|説明|文字列|アプリの説明。|
-|publisher|文字列型 (String)|アプリの発行元。|
+|description|String|アプリの説明。|
+|publisher|String|アプリの発行元。|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|アプリの詳細に表示され、アイコンのアップロードに使用される大きいアイコン。|
 |createdDateTime|DateTimeOffset|アプリが作成された日時。|
 |lastModifiedDateTime|DateTimeOffset|アプリが最後に変更された日時。|
@@ -42,7 +42,7 @@ Intune モバイル アプリの基本プロパティを含む抽象クラスで
 |notes|String|アプリ用のメモ。|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 可能な値は、`notPublished`、`processing`、`published` です。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |categories|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) コレクション|このアプリのカテゴリのリストです。|

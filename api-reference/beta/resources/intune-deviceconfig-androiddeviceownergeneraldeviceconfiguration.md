@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 712278c7ad1a84b9e52fe94758ca0da522200d1b
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31777565"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556411"
 ---
 # <a name="androiddeviceownergeneraldeviceconfiguration-resource-type"></a>androiddeviceowner一般 devic/リソースの種類
 
@@ -36,35 +36,35 @@ ms.locfileid: "31777565"
 |:---|:---|:---|
 |id|文字列型 (String)|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|roleScopeTagIds|String コレクション|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|supportsScopeTags|Boolean|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|supportsScopeTags|ブール値|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|説明|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|description|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|管理者が指定した、デバイス構成の名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|accountsBlockModification|Boolean|アカウントの追加または削除が無効であるかどうかを示します。|
-|appsAllowInstallFromUnknownSources|Boolean|ユーザーが不明なソースを有効にできるかどうかを示します。|
+|accountsBlockModification|ブール値|アカウントの追加または削除が無効であるかどうかを示します。|
+|appsAllowInstallFromUnknownSources|ブール値|ユーザーが不明なソースを有効にできるかどうかを示します。|
 |appsAutoUpdatePolicy|[androidDeviceOwnerAppAutoUpdatePolicyType](../resources/intune-deviceconfig-androiddeviceownerappautoupdatepolicytype.md)|アプリの自動更新ポリシーの値を示します。 可能な値は、`notConfigured`、`userChoice`、`never`、`wiFiOnly`、`always` です。|
 |appsdefaultpermissionpolicy|[androidDeviceOwnerDefaultAppPermissionPolicyType](../resources/intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md)|アプリに対して定義されていない場合、実行時のアクセス許可の要求に対するアクセス許可ポリシーを示します。 可能な値は、`deviceDefault`、`prompt`、`autoGrant`、`autoDeny` です。|
-|appsRecommendSkippingFirstUseHints|Boolean|すべてのアプリが、追加された初回使用時のヒントをスキップするかどうかを指定します。|
-|bluetoothBlockConfiguration|Boolean|ユーザーが bluetooth を構成することを禁止するかどうかを示します。|
-|bluetoothBlockContactSharing|Boolean|ユーザーが bluetooth を介して連絡先を共有することを禁止するかどうかを示します。|
-|cameraBlocked|Boolean|カメラの使用を無効にするかどうかを示します。|
+|appsRecommendSkippingFirstUseHints|ブール値|すべてのアプリが、追加された初回使用時のヒントをスキップするかどうかを指定します。|
+|bluetoothBlockConfiguration|ブール値|ユーザーが bluetooth を構成することを禁止するかどうかを示します。|
+|bluetoothBlockContactSharing|ブール値|ユーザーが bluetooth を介して連絡先を共有することを禁止するかどうかを示します。|
+|cameraBlocked|ブール値|カメラの使用を無効にするかどうかを示します。|
 |cellularBlockWiFiTethering|Boolean|Wi-Fi テザリングをブロックするかどうかを示します。|
-|dataRoamingBlocked|Boolean|ユーザーのデータ移動を禁止するかどうかを示します。|
-|dateTimeConfigurationBlocked|Boolean|ユーザーがデバイスの日付または時刻を手動で変更することを禁止するかどうかを示します。|
-|factoryResetDeviceAdministratorEmails|String コレクション|デバイスを設定する前にリセットする必要がある、Google アカウント電子メールの一覧。|
+|dataRoamingBlocked|ブール値|ユーザーのデータ移動を禁止するかどうかを示します。|
+|dateTimeConfigurationBlocked|ブール値|ユーザーがデバイスの日付または時刻を手動で変更することを禁止するかどうかを示します。|
+|factoryResetDeviceAdministratorEmails|String collection|デバイスを設定する前にリセットする必要がある、Google アカウント電子メールの一覧。|
 |factoryResetBlocked|Boolean|設定の出荷時のリセットオプションが無効になっているかどうかを示します。|
 |kioskModeApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) コレクション|デバイスがキオスクモードのときに表示される管理対象アプリの一覧。 このコレクションには、最大で 500 個の要素を含めることができます。|
-|kioskModeWallpaperUrl|文字列|デバイスがキオスクモードのときに壁紙に使用する、公開されている画像の URL。|
-|kioskModeExitCode|文字列|デバイスがキオスクモードのときに、ユーザーがキオスクモードからのエスケープを許可する終了コード。|
-|kioskModeVirtualHomeButtonEnabled|Boolean|デバイスがキオスクモードのときに仮想ホームボタンを表示するかどうかを指定します。|
-|kioskModeBluetoothConfigurationEnabled|Boolean|ユーザーがキオスクモードで Bluetooth 設定を構成することを許可するかどうかを指定します。|
-|kioskModeWiFiConfigurationEnabled|Boolean|ユーザーがキオスクモードで wi-fi 設定を構成することを許可するかどうかを指定します。|
-|microphoneForceMute|Boolean|デバイス上でのマイクのミュートをブロックするかどうかを示します。|
-|networkEscapeHatchAllowed|Boolean|ブート時にデバイスが一時的なネットワーク接続に接続することを許可するかどうかを示します。|
-|nfcblockoutgoingbeam|Boolean|NFC の送信ビームをブロックするかどうかを示します。|
-|passwordblockkeyguard|Boolean|keyguard が無効であるかどうかを示します。|
+|kioskModeWallpaperUrl|String|デバイスがキオスクモードのときに壁紙に使用する、公開されている画像の URL。|
+|kioskModeExitCode|String|デバイスがキオスクモードのときに、ユーザーがキオスクモードからのエスケープを許可する終了コード。|
+|kioskModeVirtualHomeButtonEnabled|ブール値|デバイスがキオスクモードのときに仮想ホームボタンを表示するかどうかを指定します。|
+|kioskModeBluetoothConfigurationEnabled|ブール値|ユーザーがキオスクモードで Bluetooth 設定を構成することを許可するかどうかを指定します。|
+|kioskModeWiFiConfigurationEnabled|ブール値|ユーザーがキオスクモードで wi-fi 設定を構成することを許可するかどうかを指定します。|
+|microphoneForceMute|ブール値|デバイス上でのマイクのミュートをブロックするかどうかを示します。|
+|networkEscapeHatchAllowed|ブール値|ブート時にデバイスが一時的なネットワーク接続に接続することを許可するかどうかを示します。|
+|nfcblockoutgoingbeam|ブール値|NFC の送信ビームをブロックするかどうかを示します。|
+|passwordblockkeyguard|ブール値|keyguard が無効であるかどうかを示します。|
 |passwordblockkeygu/機能|[androidkeygu/機能](../resources/intune-deviceconfig-androidkeyguardfeature.md)コレクション|ブロックする device keyguard 機能のリストです。 このコレクションには、最大で 7 個の要素を含めることができます。|
 |passwordExpirationDays|Int32|パスワードを期限切れにするために設定できる時間を秒単位で指定し、新しいパスワードを入力する必要があります。 有効な値は 1 から 365 までです|
 |passwordMinimumLength|Int32|デバイスで必要なパスワードの最小の長さを示します。 有効な値は 4 から 16 までです|
@@ -78,27 +78,27 @@ ms.locfileid: "31777565"
 |passwordPreviousPasswordCountToBlock|Int32|パスワードの履歴の長さを示します。ユーザーは、履歴にあるパスワードと同じパスワードを入力することはできません。 有効な値は 0 から 24 までです|
 |passwordRequiredType|[androiddeviceownerrequiredpasswordtype](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)|デバイスで必要なパスワードの最小品質を示します。 可能な値は、`deviceDefault`、`required`、`numeric`、`numericComplex`、`alphabetic`、`alphanumeric`、`alphanumericWithSymbols`、`lowSecurityBiometric` です。|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|ユーザーが間違ったパスワードを入力したときにデバイスがワイプされるまでの回数を示します。 有効な値は 4 から 11 までです|
-|playstoremode|[androiddeviceownerplaystoremode](../resources/intune-deviceconfig-androiddeviceownerplaystoremode.md)|デバイスの再生ストアモードを示します。 使用可能な値は、`notConfigured`、`allowList`、`blockList` です。|
-|safebootblocked|Boolean|セーフブートでのデバイスの再起動を無効にするかどうかを示します。|
+|playstoremode|[androidDeviceOwnerPlayStoreMode](../resources/intune-deviceconfig-androiddeviceownerplaystoremode.md)|デバイスの再生ストアモードを示します。 使用可能な値は、`notConfigured`、`allowList`、`blockList` です。|
+|safebootblocked|ブール値|セーフブートでのデバイスの再起動を無効にするかどうかを示します。|
 |screenCaptureBlocked|Boolean|スクリーンショットを撮影する機能を無効にするかどうかを示します。|
-|securityallowデバッグ機能|Boolean|ユーザーがデバイスのデバッグ機能を有効にすることを禁止するかどうかを示します。|
-|securityRequireVerifyApps|Boolean|アプリを確認する必要があるかどうかを示します。|
-|statusBarBlocked|Boolean|通知、クイック設定、その他の画面オーバーレイを含む、ステータスバーを無効にするかどうかを示します。|
+|securityallowデバッグ機能|ブール値|ユーザーがデバイスのデバッグ機能を有効にすることを禁止するかどうかを示します。|
+|securityRequireVerifyApps|ブール値|アプリを確認する必要があるかどうかを示します。|
+|statusBarBlocked|ブール値|通知、クイック設定、その他の画面オーバーレイを含む、ステータスバーを無効にするかどうかを示します。|
 |stayonmodes|[androidDeviceOwnerBatteryPluggedMode](../resources/intune-deviceconfig-androiddeviceownerbatterypluggedmode.md)コレクション|デバイスの表示がオンのままになるモードの一覧です。 このコレクションには、最大4つの要素を含めることができます。|
-|storageallowusb|Boolean|USB 大容量ストレージを許可するかどうかを示します。|
-|storageblockexternalmedia|Boolean|外部メディアをブロックするかどうかを示します。|
-|storageblockusbfiletransfer|Boolean|USB ファイル転送をブロックするかどうかを示します。|
+|storageallowusb|ブール値|USB 大容量ストレージを許可するかどうかを示します。|
+|storageblockexternalmedia|ブール値|外部メディアをブロックするかどうかを示します。|
+|storageblockusbfiletransfer|ブール値|USB ファイル転送をブロックするかどうかを示します。|
 |systemUpdateWindowStartMinutesAfterMidnight|Int32|[システムの更新] ウィンドウが起動する午前0時からの経過時間 (分単位) を示します。 有効な値は 0 ~ 1440|
 |systemUpdateWindowEndMinutesAfterMidnight|Int32|[システムの更新] ウィンドウが終了する午前0時からの経過時間 (分単位) を示します。 有効な値は 0 ~ 1440|
 |systemUpdateInstallType|[androidDeviceOwnerSystemUpdateInstallType](../resources/intune-deviceconfig-androiddeviceownersystemupdateinstalltype.md)|システム更新構成の種類。 可能な値は、`deviceDefault`、`postpone`、`windowed`、`automatic` です。|
-|systemwindowsblocked ブロック|Boolean|Android システムプロンプトウィンドウ (toasts、電話活動、システム通知など) を禁止するかどうかを指定します。|
-|ユーザー blockadd|Boolean|ユーザーおよびプロファイルの追加を無効にするかどうかを示します。|
-|ユーザー blockremove|Boolean|他のユーザーのデバイスからの削除を無効にするかどうかを示します。|
-|volumeblockadjustment|Boolean|マスターボリュームを調整するかどうかを示します。|
-|vpnAlwaysOnPackageIdentifier|文字列|always on VPN 接続を処理するアプリの Android アプリパッケージ名。|
-|vpnAlwaysOnLockdownMode|Boolean|always on vpn パッケージ名が指定されている場合は、vpn が切断されたときにネットワークトラフィックをロックするかどうかを指定します。|
-|wifiBlockEditConfigurations|Boolean|ユーザーが wifi 接続設定を編集することを禁止するかどうかを示します。|
-|wifiBlockEditPolicyDefinedConfigurations|Boolean|ユーザーがポリシーによって定義されたネットワークのみを編集することを禁止するかどうかを示します。|
+|systemwindowsblocked ブロック|ブール値|Android システムプロンプトウィンドウ (toasts、電話活動、システム通知など) を禁止するかどうかを指定します。|
+|ユーザー blockadd|ブール値|ユーザーおよびプロファイルの追加を無効にするかどうかを示します。|
+|ユーザー blockremove|ブール値|他のユーザーのデバイスからの削除を無効にするかどうかを示します。|
+|volumeblockadjustment|ブール値|マスターボリュームを調整するかどうかを示します。|
+|vpnAlwaysOnPackageIdentifier|String|always on VPN 接続を処理するアプリの Android アプリパッケージ名。|
+|vpnAlwaysOnLockdownMode|ブール値|always on vpn パッケージ名が指定されている場合は、vpn が切断されたときにネットワークトラフィックをロックするかどうかを指定します。|
+|wifiBlockEditConfigurations|ブール値|ユーザーが wifi 接続設定を編集することを禁止するかどうかを示します。|
+|wifiBlockEditPolicyDefinedConfigurations|ブール値|ユーザーがポリシーによって定義されたネットワークのみを編集することを禁止するかどうかを示します。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|

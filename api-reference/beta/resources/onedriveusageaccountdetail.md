@@ -1,31 +1,31 @@
 ---
-title: oneDriveUsageAccountDetail リソースの種類
+title: onedrive のアカウント詳細リソースの種類
 description: リソースの JSON 表記を次に示します。
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 9c13e03d1170b0ebbc53394541c4564c60c67e78
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957397"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563547"
 ---
-# <a name="onedriveusageaccountdetail-resource-type"></a>oneDriveUsageAccountDetail リソースの種類
+# <a name="onedriveusageaccountdetail-resource-type"></a>onedrive のアカウント詳細リソースの種類
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ                | 種類    |
+| プロパティ                | 型    |
 | :---------------------- | :------ |
-| reportRefreshDate       | 日付    |
+| reportrefreshdate       | Date    |
 | siteUrl                 | String  |
-| ownerDisplayName        | String  |
-| isDeleted               | ブール型 |
-| lastActivityDate        | 日付    |
+| ownerdisplayname        | String  |
+| isDeleted               | Boolean |
+| lastactivitydate        | Date    |
 | fileCount               | Int64   |
 | activeFileCount         | Int64   |
-| storageUsedInBytes      | Int64   |
-| storageAllocatedInBytes | Int64   |
-| reportPeriod            | String  |
+| storageused inbytes      | Int64   |
+| storageallocatedinbytes | Int64   |
+| reportperiod            | String  |
 
 ## <a name="json-representation"></a>JSON 表記
 

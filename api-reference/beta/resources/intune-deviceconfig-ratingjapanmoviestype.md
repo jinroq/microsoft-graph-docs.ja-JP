@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 3bc6d1f12d9a7eec2a2f88d483670d34cabe1349
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31783277"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556922"
 ---
 # <a name="ratingjapanmoviestype-enum-type"></a>ratingJapanMoviesType 列挙型
 
@@ -23,11 +23,11 @@ ms.locfileid: "31783277"
 |メンバー|値|説明|
 |:---|:---|:---|
 |allallowed|.0|既定値。すべてのムービーコンテンツを許可する|
-|allblocked|1-d|任意の映画コンテンツを許可しない|
-|元帳|pbm-2|すべての年齢に適している|
-|parentalguidance|1/3|PG-12 の分類では、12の下のユーザーについての上位のガイダンスが要求されます。|
-|agesAbove15|2/4|R15 + 分類は、15才以上の閲覧者に適しています。|
-|agesAbove18|5|R18 + 分類は、18才以上の閲覧者に適しています。|
+|allblocked|1 |任意の映画コンテンツを許可しない|
+|元帳|2 |すべての年齢に適している|
+|parentalguidance|3 |PG-12 の分類では、12の下のユーザーについての上位のガイダンスが要求されます。|
+|agesAbove15|4 |R15 + 分類は、15才以上の閲覧者に適しています。|
+|agesAbove18|5 |R18 + 分類は、18才以上の閲覧者に適しています。|
 
 
 

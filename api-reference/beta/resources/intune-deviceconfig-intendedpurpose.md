@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 831a0137e7aac53d26e51e30d867ef99996f56b6
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31789109"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556047"
 ---
 # <a name="intendedpurpose-enum-type"></a>intendedPurpose 列挙型
 
@@ -22,11 +22,11 @@ PFX インポートオプション。
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|未定義|1-d|未定義|
-|smimeEncryption|pbm-2|SmimeEncryption|
-|smimeSigning|1/3|SmimeSigning|
-|仮想|2/4|VPN|
-|wi-fi|5|wi-fi|
+|未定義|1 |未定義|
+|smimeEncryption|2 |SmimeEncryption|
+|smimeSigning|3 |SmimeSigning|
+|仮想|4 |VPN|
+|wi-fi|5 |wi-fi|
 
 
 

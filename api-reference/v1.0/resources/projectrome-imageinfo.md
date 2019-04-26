@@ -1,26 +1,26 @@
 ---
 title: imageInfo リソースの種類
-description: アクティビティ オブジェクトの visualInfo の一部の**属性**のプロパティを表すための複合型です。
+description: activity オブジェクトの visualinfo パーツの**属性**プロパティを表すための複合型。
 localization_priority: Normal
 ms.prod: project-rome
 ms.openlocfilehash: a17fe40f53308a0b1b1f587425d2afb019f84bb5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27982366"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579714"
 ---
 # <a name="imageinfo-resource-type"></a>imageInfo リソースの種類
 
-[アクティビティ](../resources/projectrome-activity.md)オブジェクトの[visualInfo](../resources/projectrome-visualinfo.md)の一部の**属性**のプロパティを表すための複合型です。
+[activity](../resources/projectrome-activity.md)オブジェクトの[visualinfo](../resources/projectrome-visualinfo.md)パーツの**属性**プロパティを表すための複合型。
 
 ## <a name="properties"></a>プロパティ
 
-|名前 | 種類 | 説明|
+|名前 | 型 | 説明|
 |:----|:-----|:-----------|
-|iconUrl | String | 省略可能です。活動を生成するために使用するアプリケーションを表すアイコンをポイントする URI|
-|alternateText | String | 省略可能です。イメージの alt テキストのアクセス可能なコンテンツ|
-|addImageQuery | ブール型 | 省略可能です。サーバーを指定するためのパラメーターは、パラメーターへの応答に動的にイメージをレンダリングすることです。 例: ハイコントラスト イメージ|
+|iconUrl | String | オプションアクティビティを生成するために使用されるアプリケーションを表すアイコンを指す URI。|
+|alternatetext | String | オプションalt キーを押しながら、画像にアクセスできるコンテンツ|
+|addImageQuery | Boolean | オプションパラメータパラメーターへの応答として、サーバーが画像を動的に表示できることを示すために使用されます。 例-コントラストの高い画像|
 
 ## <a name="json-representation"></a>JSON 表記
 

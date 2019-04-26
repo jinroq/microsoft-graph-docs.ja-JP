@@ -5,13 +5,15 @@ ms.date: 09/10/2017
 title: SpecialFolder
 localization_priority: Normal
 ms.openlocfilehash: d30c1169d859bdb9299744b92efc6ab737c20851
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482113"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563729"
 ---
 # <a name="specialfolder-resource-type"></a>SpecialFolder リソースの種類
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **SpecialFolder**リソースは、特殊フォルダー関連のデータ項目を単一の構造にグループ化します。
 
@@ -41,7 +43,7 @@ ms.locfileid: "30482113"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ  | 種類   | 説明                                                            |
+| プロパティ  | 型   | 説明                                                            |
 |:----------|:-------|:-----------------------------------------------------------------------|
 | name      | string | `/drive/special` コレクション内のこの項目の一意識別子 |
 
@@ -49,7 +51,7 @@ ms.locfileid: "30482113"
 
 以下は OneDrive Personal および OneDrive for Business で利用可能な特殊なフォルダーです。
 
-| Name        | フォルダー ID    | 説明                                                              |
+| 名前        | フォルダー ID    | 説明                                                              |
 |:------------|:-------------|:-------------------------------------------------------------------------|
 | App Root    | `approot`    | そのアプリケーションの個人用フォルダー。通常は `/Apps/{Application Name}` 内 |
 | Camera Roll | `cameraroll` | カメラ ロールのバックアップ フォルダー。OneDrive for Business では利用不可です。   |
@@ -61,10 +63,18 @@ ms.locfileid: "30482113"
 
 DriveItem のファセットの詳細については、「[DriveItem](driveitem.md)」を参照してください。
 
-<!-- {
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
   "type": "#page.annotation",
   "description": "The SpecialFolder facet provides information about folders accessible as special folders.",
   "keywords": "special folder,item,facet",
   "section": "documentation",
-  "tocPath": "Facets/SpecialFolder"
-} -->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/specialfolder.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

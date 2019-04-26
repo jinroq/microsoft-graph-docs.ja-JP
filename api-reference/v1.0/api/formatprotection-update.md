@@ -3,11 +3,11 @@ title: FormatProtection オブジェクトの更新
 description: formatprotection オブジェクトのプロパティを更新します。
 localization_priority: Normal
 ms.openlocfilehash: 26e51babc4610c331563923c464db341d4517c51
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847643"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563843"
 ---
 # <a name="update-formatprotection"></a>FormatProtection オブジェクトの更新
 
@@ -37,9 +37,9 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/protection
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|formulaHidden|ブール値|Excel が範囲内のセルの数式を非表示にするかどうかを示します。null 値は、範囲全体に一様な数式非表示設定がないことを表します。|
+|formulaHidden|boolean|Excel が範囲内のセルの数式を非表示にするかどうかを示します。null 値は、範囲全体に一様な数式非表示設定がないことを表します。|
 |locked|ブール値|Excel がオブジェクト内のセルをロックするかどうかを示します。null 値は、範囲全体に一様なロック設定がないことを表します。|
 
 ## <a name="response"></a>応答

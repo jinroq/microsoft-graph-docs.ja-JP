@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 6b528f2ee74abf347b7ed31b323814197c8fa0bf
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31805930"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32576368"
 ---
 # <a name="applogcollectionrequest-resource-type"></a>appLogCollectionRequest リソースの種類
 
@@ -33,12 +33,12 @@ AppLogCollectionRequest エンティティ。
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|一意の識別子。 これは userId_DeviceId_AppId id です。|
-|status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|ログのアップロードの状態。 使用可能な値は、`pending`、`completed`、`failed` です。|
-|errorMessage|文字列|アップロードプロセス中にエラーメッセージが表示される場合|
-|customlogfolders|String コレクション|ログフォルダーの一覧。 |
+|status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|ログのアップロードの状態。 可能な値は `pending`、`completed`、`failed` です。|
+|errorMessage|String|アップロードプロセス中にエラーメッセージが表示される場合|
+|customlogfolders|String collection|ログフォルダーの一覧。 |
 |CompletedDateTime|DateTimeOffset|アップロードログ要求がターミナル状態に達した時刻|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: a3177493c5289b54cb43369a9dc62970097486f9
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31809288"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554101"
 ---
 # <a name="win32lobapprequirement-resource-type"></a>win32LobAppRequirement リソースの種類
 
@@ -23,7 +23,7 @@ Win32 アプリを検出するための基本クラス
 |プロパティ|型|説明|
 |:---|:---|:---|
 |operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|検出のための演算子。 可能な値は、`notConfigured`、`equal`、`notEqual`、`greaterThan`、`greaterThanOrEqual`、`lessThan`、`lessThanOrEqual` です。|
-|detectionValue|文字列|検出値|
+|detectionValue|String|検出値|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

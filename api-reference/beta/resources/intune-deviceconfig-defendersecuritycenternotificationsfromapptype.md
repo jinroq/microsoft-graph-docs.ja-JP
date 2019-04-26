@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: fdb2ee251025ed56ac6bd9ffe3bd4f00938b0643
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31791741"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563582"
 ---
 # <a name="defendersecuritycenternotificationsfromapptype-enum-type"></a>defenderSecurityCenterNotificationsFromAppType 列挙型
 
@@ -23,8 +23,8 @@ defenderSecurityCenterNotificationsFromApp に指定できる値
 |メンバー|値|説明|
 |:---|:---|:---|
 |notConfigured|.0|Not Configured|
-|blockNoncriticalNotifications|1-d|重要でない通知をブロックする|
-|blockallnotifications|pbm-2|すべての通知をブロックする|
+|blockNoncriticalNotifications|1 |重要でない通知をブロックする|
+|blockallnotifications|2 |すべての通知をブロックする|
 
 
 

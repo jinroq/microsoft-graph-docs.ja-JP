@@ -1,54 +1,54 @@
 ---
 title: onlineMeeting リソースの種類
-description: 結合 URL、出席者リスト、説明など、会議に関する情報をキャプチャします。
+description: 参加 URL、参加者リスト、説明など、会議に関する情報を取り込みます。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: d7009ceaf815986d50c8eb3b64d2541c32f01a88
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519599"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568864"
 ---
 # <a name="onlinemeeting-resource-type"></a>onlineMeeting リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-結合 URL、出席者リスト、説明など、会議に関する情報をキャプチャします。
+参加 URL、参加者リスト、説明など、会議に関する情報を取り込みます。
 
 ## <a name="methods"></a>メソッド
 
 | メソッド         | 戻り値の型 | 説明 |
 |:---------------|:--------|:----------|
-| [OnlineMeeting を取得します。](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | OnlineMeeting オブジェクトのプロパティと関係を参照してください。 |
+| [onlineMeeting を取得する](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | onlineMeeting オブジェクトのプロパティとリレーションシップを読み取ります。 |
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ                  | 型                                                   | 説明                                                                                                                |
 | :------------------------ | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
-| AccessLevel               | String                                                 | オンラインの会議出席依頼の受付を制御するアクセス レベルです。 可能な値は、`everyone`、`invited`、`locked`、`sameEnterprise`、`unknown` です。 |
-| audioConferencing         | [audioConferencing](audioconferencing.md)              | OnlineMeeting には、電話アクセス情報を表します。 |
-| canceledDateTime          | DateTime
+| accessLevel               | String                                                 | オンライン会議への受付を制御するアクセスレベル。 可能な値は、`everyone`、`invited`、`locked`、`sameEnterprise`、`unknown` です。 |
+| audioconferencing         | [audioconferencing](audioconferencing.md)              | onlineMeeting の電話アクセス情報を表します。 |
+| canceleddatetime          | DateTime
                                                | 会議がキャンセルされた時刻。 |
 | chatInfo                  | [chatInfo](chatinfo.md)                                | この会議に関連付けられているチャット。 |
-| creationDateTime          | DateTime
-                                               | ミーティングが作成された時刻。 読み取り専用です。
+| 日付/時刻 (datetime)          | DateTime
+                                               | 会議が作成された時刻。 該当.
 | endDateTime               | DateTime
-                                               | 会議の終了時間です。 |
-| entryExitAnnouncement     | ブール値                                                | オンライン会議の出席のお知らせ状態です。 出勤のお知らせを有効にすると、オンライン会議、発表 participantswho 結合の名前、会議のオーディオを使用します。 |
+                                               | 会議の終了時刻。 |
+| entryexitannouncement     | Boolean                                                | オンライン会議の出席アナウンスの状態。 出席依頼のアナウンスが有効になっている場合、オンライン会議では、participantswho の名前が音声で会議に参加するようにアナウンスされます。 |
 | expirationDateTime        | DateTime
-                                               | 絶対の世界協定時刻 (UTC) の日付と時刻は、オンライン会議を削除できます。 曜日と時間は、1 年前に、および現在の日付と、サーバー上の時刻の後 10 年間する必要があります。 |
-| id                        | String                                                 | オンライン会議に関連付けられている ID です。 HTTP の GET 要求では ID として使用 読み取り専用です。 サーバーを生成します。 |
-| isCancelled               | ブール値                                                | かどうか、会議はキャンセルされました。 |
-| joinUrl                   | String                                                 | Web サイトからオンライン会議を結合するときに使用される URL です。 |
-| meetingType               | String                                                 | 可能な値は、`meetNow`、`scheduled`、`recurring` です。 |
-| participants              | [meetingParticipants](meetingparticipants.md)          | 参加者がオンライン会議に関連付けられています。  これには、開催者と出席者が含まれます。 |
+                                               | オンライン会議を削除できる、世界協定時 (UTC) の日付と時刻。 日付と時刻は、サーバー上の現在の日付と時刻の1年前、10年前にする必要があります。 |
+| id                        | String                                                 | オンライン会議に関連付けられている ID。 ID として GET HTTP 要求で使用されます。 読み取り専用です。 サーバーによって生成されます。 |
+| isCancelled               | Boolean                                                | 会議がキャンセルされたかどうか。 |
+| joinurl                   | String                                                 | オンライン会議が web から参加しているときに使用される URL。 |
+| 会議の種類               | String                                                 | 可能な値は`meetNow`、 `scheduled`、 `recurring`、、です。`broadcast` |
+| 参加者              | [会議参加者](meetingparticipants.md)          | オンライン会議に関連付けられている参加者。  これには、開催者と出席者が含まれます。 |
 | startDateTime             | DateTime
                                                | 会議の開始時刻。 |
-| subject                   | String                                                 | オンライン会議の件名です。 |
+| subject                   | String                                                 | オンライン会議の件名。 |
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記

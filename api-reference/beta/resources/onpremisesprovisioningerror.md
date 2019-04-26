@@ -1,28 +1,28 @@
 ---
 title: onPremisesProvisioningError リソースの種類
-description: 同期、オンプレミス Azure Active Directory へのディレクトリは、ユーザー、グループ、または組織の取引先担当者エンティティのディレクトリ同期のエラーを表します。
+description: オンプレミスのディレクトリを Azure Active directory と同期するときの、ユーザー、グループ、または組織の連絡先エンティティのディレクトリ同期エラーを表します。
 localization_priority: Normal
 ms.openlocfilehash: 7e4d51ea3bde6158256c607027b3e56236a8151c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512732"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568851"
 ---
 # <a name="onpremisesprovisioningerror-resource-type"></a>onPremisesProvisioningError リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-同期、オンプレミス Azure Active Directory へのディレクトリは、[ユーザー](user.md)、[グループ](group.md)、または[組織の連絡先](orgcontact.md)のエンティティのディレクトリ同期のエラーを表します。
+オンプレミスのディレクトリを Azure Active directory と同期するときの、[ユーザー](user.md)、[グループ](group.md)、または[組織の連絡先](orgcontact.md)エンティティのディレクトリ同期エラーを表します。
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ | 型 | 説明 |
 |:---------------|:--------|:----------|
-|category|String| プロビジョニングのエラーのカテゴリです。 注意: 現時点が 1 つだけ使用可能な値です。 使用可能な値: *PropertyConflict* - は、プロパティの値が一意でないことを示します。 その他のオブジェクトには、プロパティに対して同じ値が含まれています。 |
-|occurredDateTime|DateTimeOffset| 日付と時刻、エラーが発生しました。 |
-|propertyCausingError|String| エラーの原因でディレクトリのプロパティの名前です。 現在使用可能な値: *UserPrincipalName*または*メタベース* |
-|value|文字列| エラーの原因で、プロパティの値です。 |
+|category|String| プロビジョニングエラーのカテゴリ。 注: 現時点では、可能な値は1つだけです。 可能な値: *propertyconflict* -プロパティ値が一意ではないことを示します。 その他のオブジェクトには、プロパティと同じ値が含まれています。 |
+|occurredDateTime|DateTimeOffset| エラーが発生した日付と時刻。 |
+|propertycain error|String| エラーを引き起こしたディレクトリプロパティの名前。 現在使用可能な値: *UserPrincipalName*または*ProxyAddress* |
+|value|文字列型 (String)| エラーが発生したプロパティの値。 |
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。

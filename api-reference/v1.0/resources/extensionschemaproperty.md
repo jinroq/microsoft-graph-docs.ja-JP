@@ -3,11 +3,11 @@ title: extensionSchemaProperty リソースの種類
 description: '**extensionSchemaProperty** リソースを使用して、schemaExtension 定義の一部としてプロパティの名前とその種類を定義します。'
 localization_priority: Normal
 ms.openlocfilehash: 384f60c323ca6c6fb23d2f4811a6d2cb918bf844
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880571"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575787"
 ---
 # <a name="extensionschemaproperty-resource-type"></a>extensionSchemaProperty リソースの種類
 
@@ -15,9 +15,9 @@ ms.locfileid: "27880571"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|名前|String| スキーマの拡張機能の一部として定義されている厳密に型指定されたプロパティの名前。|
+|name|String| スキーマの拡張機能の一部として定義されている厳密に型指定されたプロパティの名前。|
 |type|String| スキーマの拡張機能の一部として定義されているプロパティの種類。使用可能な値は、*Binary、Boolean、DateTime、Integer**String* です。詳細については、次の表を参照してください。|
 
 #### <a name="supported-property-data-types"></a>サポート対象のプロパティ データ型 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: f5fdf418dbd3b2b959dbd23de6467b663491d89a
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31779567"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563827"
 ---
 # <a name="managedappdatatransferlevel-enum-type"></a>managedappdatatransフェリーレベル列挙型
 
@@ -23,8 +23,8 @@ ms.locfileid: "31779567"
 |メンバー|値|説明|
 |:---|:---|:---|
 |allapps|.0|すべてのアプリ。|
-|managedApps|1-d|管理対象アプリ。|
-|none|pbm-2|アプリがありません。|
+|managedApps|1 |管理対象アプリ。|
+|なし|2 |アプリがありません。|
 
 
 

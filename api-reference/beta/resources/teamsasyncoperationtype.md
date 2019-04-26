@@ -1,31 +1,31 @@
 ---
 title: teamsAsyncOperationType 列挙型
-description: TeamsAsyncOperation のタイプです。 追加するメンバーがここでより多くの非同期操作はサポートされています。
+description: teamsAsyncOperation の種類。 より多くの非同期操作がサポートされているので、メンバーが追加されます。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 4de95db194bf41939521b53f06614b46b6afae99
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516568"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32553639"
 ---
 # <a name="teamsasyncoperationtype-enum-type"></a>teamsAsyncOperationType 列挙型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[TeamsAsyncOperation](teamsasyncoperation.md)のタイプです。 追加するメンバーがここでより多くの非同期操作はサポートされています。
+[teamsAsyncOperation](teamsasyncoperation.md)の種類。 より多くの非同期操作がサポートされているので、メンバーが追加されます。
 
 ## <a name="members"></a>メンバー
 
 | メンバー | 値| 説明 |
 |:---------------|:--------|:----------|
-|Invalid|(0)|無効な値|
-|cloneTeam|-1|チームのクローンを作成する操作です。|
-|archiveTeam|-2|チームをアーカイブする操作です。|
-|unarchiveTeam|-3|アーカイブされたチームを復元する操作です。|
-|createTeam|-3|最初からチームを作成する操作です。|
+|無効です|.0|無効な値です。|
+|cloneTeam|1 |チームを複製する操作。|
+|アーカイブチーム|2 |チームをアーカイブする操作。|
+|アーカイブなしのチーム|3 |アーカイブされたチームを復元する操作。|
+|teamsasyncoperationtype|3 |最初からチームを作成する操作。|
 
 <!--
 {

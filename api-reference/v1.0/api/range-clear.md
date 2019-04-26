@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: 00dfabae88554d94d068fcb81f74601583e817a7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27926366"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575276"
 ---
 # <a name="range-clear"></a>範囲: クリア
 
@@ -40,9 +40,9 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/clear
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|applyTo|文字列|省略可能。 クリア アクションの種類を決定します。  可能な値: `All`、 `Formats`、 `Contents`。|
+|applyTo|string|省略可能。 クリア操作の種類を決定します。  使用可能な値: `All`、`Formats`、`Contents`。|
 
 ## <a name="response"></a>応答
 

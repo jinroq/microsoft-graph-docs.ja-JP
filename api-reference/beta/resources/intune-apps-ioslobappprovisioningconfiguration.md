@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 6a5a85b0b5467835a1ecb3d81997e0300ab08eee
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31796242"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32552311"
 ---
 # <a name="ioslobappprovisioningconfiguration-resource-type"></a>ioslobappプロビジョニング構成リソースの種類
 
@@ -27,7 +27,7 @@ ms.locfileid: "31796242"
 |[ioslobappプロビジョニング構成を作成する](../api/intune-apps-ioslobappprovisioningconfiguration-create.md)|[iosLobAppProvisioningConfiguration](../resources/intune-apps-ioslobappprovisioningconfiguration.md)|新しい[ioslobappプロビジョニング構成](../resources/intune-apps-ioslobappprovisioningconfiguration.md)オブジェクトを作成します。|
 |[ioslobappプロビジョニング構成の削除](../api/intune-apps-ioslobappprovisioningconfiguration-delete.md)|なし|[ioslobappプロビジョニング構成](../resources/intune-apps-ioslobappprovisioningconfiguration.md)を削除します。|
 |[ioslobappプロビジョニング構成の更新](../api/intune-apps-ioslobappprovisioningconfiguration-update.md)|[iosLobAppProvisioningConfiguration](../resources/intune-apps-ioslobappprovisioningconfiguration.md)|[ioslobappプロビジョニング構成](../resources/intune-apps-ioslobappprovisioningconfiguration.md)オブジェクトのプロパティを更新します。|
-|[アクションの割り当て](../api/intune-apps-ioslobappprovisioningconfiguration-assign.md)|なし|まだ文書化されていません|
+|[assign アクション](../api/intune-apps-ioslobappprovisioningconfiguration-assign.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
@@ -36,9 +36,9 @@ ms.locfileid: "31796242"
 |expirationDateTime|DateTimeOffset|オプションのプロファイルの有効期限の日付と時刻。|
 |payloadFileName|String|ペイロードファイル名 (*. mobileprovision | *.xml)。|
 |payload|Binary|ペイロード。 (UTF8 でエンコードされたバイト配列)|
-|roleScopeTagIds|String コレクション|この iOS LOB アプリプロビジョニング構成エンティティのスコープタグのリスト。|
+|roleScopeTagIds|String collection|この iOS LOB アプリプロビジョニング構成エンティティのスコープタグのリスト。|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。|
-|説明|String|デバイス構成について管理者が提供した説明です。|
+|description|String|デバイス構成について管理者が提供した説明です。|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。|
 |displayName|String|デバイス構成について管理者が指定した名前です。|
 |version|Int32|デバイス構成のバージョン。|
