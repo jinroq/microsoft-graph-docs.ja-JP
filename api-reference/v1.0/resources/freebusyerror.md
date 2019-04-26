@@ -3,11 +3,11 @@ title: freeBusyError リソースの種類
 description: ユーザー、配布リスト、またはリソースの空き時間情報を取得しようとしたときに発生したエラー情報を表します。
 localization_priority: Normal
 ms.openlocfilehash: a08fe8278644ab81f2c1fbe1c7d1530cab27d91b
-ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30926612"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32558091"
 ---
 # <a name="freebusyerror-resource-type"></a>freeBusyError リソースの種類
 
@@ -16,7 +16,7 @@ ms.locfileid: "30926612"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|message |String |エラーについて説明します。 |
+|メッセージ​​ |String |エラーについて説明します。 |
 |responseCode |String |ユーザー、配布リスト、またはリソースの可用性を照会するための応答コード。 |
 
 

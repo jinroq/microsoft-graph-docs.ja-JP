@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 40cf4e473e48133e59822cdedba1a74cc7a9bb0c
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30260684"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32560810"
 ---
 # <a name="ratingunitedkingdommoviestype-enum-type"></a>ratingUnitedKingdomMoviesType 列挙型
 
@@ -21,14 +21,14 @@ ms.locfileid: "30260684"
 |メンバー|値|説明|
 |:---|:---|:---|
 |allallowed|.0|既定値。すべてのムービーコンテンツを許可する|
-|allblocked|1-d|任意の映画コンテンツを許可しない|
-|元帳|pbm-2|U 分類は、すべての年齢に適しています。|
-|universalChildren|1/3|UC の分類は、以前の評価のラベルである、学校の子に適しています。|
-|parentalguidance|2/4|PG 分類は、成熟に適しています。|
-|agesAbove12Video|5|12年以上に適した12のビデオリリース|
-|agesAbove12Cinema|シックス|12a、cinema リリースは、12年以上に適しています。|
-|agesAbove15|7|15年以前にのみ適切|
-|保護者|~|大人にのみ適している|
+|allblocked|1 |任意の映画コンテンツを許可しない|
+|元帳|2 |U 分類は、すべての年齢に適しています。|
+|universalChildren|3 |UC の分類は、以前の評価のラベルである、学校の子に適しています。|
+|parentalguidance|4 |PG 分類は、成熟に適しています。|
+|agesAbove12Video|5 |12年以上に適した12のビデオリリース|
+|agesAbove12Cinema|6 |12a、cinema リリースは、12年以上に適しています。|
+|agesAbove15|7 |15年以前にのみ適切|
+|保護者|8 |大人にのみ適している|
 
 
 

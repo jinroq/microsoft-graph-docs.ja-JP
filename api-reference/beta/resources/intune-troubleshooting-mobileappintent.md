@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 472fd157ed26b8b446e272d37baa135584cbbe0b
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31785917"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32558257"
 ---
 # <a name="mobileappintent-enum-type"></a>mobileAppIntent 列挙型
 
@@ -23,12 +23,12 @@ ms.locfileid: "31785917"
 |メンバー|値|説明|
 |:---|:---|:---|
 |使用可能|.0|Available|
-|notavailable|1-d|インストールしない|
-|requiredinstall|pbm-2|必要なインストール|
-|requireduninstall|1/3|必要なアンインストール|
-|requiredandのインストール|2/4|requiredandのインストール|
-|登録がありません。|5|登録がありません。|
-|削除|シックス|除外|
+|notavailable|1 |インストールしない|
+|requiredinstall|2 |必要なインストール|
+|requireduninstall|3 |必要なアンインストール|
+|requiredandのインストール|4 |requiredandのインストール|
+|登録がありません。|5 |登録がありません。|
+|削除|6 |除外|
 
 
 

@@ -5,11 +5,11 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: d03cab3aafb264ef6768e2c79a3787a2b6e3c134
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991280"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562049"
 ---
 # <a name="create-plannerplan"></a>Create plannerPlan
 
@@ -42,7 +42,7 @@ POST /planner/plans
 
 要求本文で、[plannerPlan](../resources/plannerplan.md) オブジェクトの JSON 表記を指定します。**plannerPlan** 所有者プロパティは、[group](../resources/group.md) オブジェクトの ID に設定する必要があります。
 
->**注:** 計画を作成しているユーザーは、計画を所有するグループのメンバーである必要があります。 [グループの作成](../api/group-post-groups.md)を使用して新しいグループを作成するときにいない追加されますグループにメンバーとして。 グループが作成されると、自分自身を追加メンバーとして[グループのメンバーの投稿](../api/group-post-members.md)を使用しています。
+>**注:** プランを作成するユーザーは、そのプランを所有するグループのメンバーである必要があります。 [[グループの作成](../api/group-post-groups.md)] を使用して新しいグループを作成した場合、メンバーとしてグループに追加されることはありません。 グループを作成したら、[グループ post メンバー](../api/group-post-members.md)を使用して自分自身をメンバーとして追加します。
 
 
 ## <a name="response"></a>応答

@@ -1,33 +1,33 @@
 ---
 title: playPromptOperation リソースの種類
-description: PlayPrompt アクションの結果を取得する playPrompt の操作です。
+description: playprompt アクションの結果を取得する playprompt 操作。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: a6ecdb06c910923d35f9d36590ad09fd7835fccb
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515203"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563685"
 ---
 # <a name="playpromptoperation-resource-type"></a>playPromptOperation リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PlayPrompt アクションの結果を取得する playPrompt の操作です。
+playprompt アクションの結果を取得する playprompt 操作。
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ            | 型                        | 説明|
 |:--------------------|:----------------------------|:-----------------------------------------------------------------------------------|
-| ClientContext       | String                      | クライアントのコンテキスト。                                                                |
-| completionReason    | String                      | 可能な値は、`unknown`、`completedSuccessfully`、`mediaOperationCanceled` です。 |
-| createdDateTime     | DateTimeOffset              | 操作の開始時刻です。                                                   |
-| id                  | 文字列                      | 読み取り専用です。                                                                         |
-| lastActionDateTime  | DateTimeOffset              | 操作の最後の操作の時間です。                                      |
-| resultInfo          | [resultInfo](resultInfo.md) | 結果の情報です。 読み取り専用です。 サーバーを生成します。                               |
-| status              | String                      | 可能な値は、`notStarted`、`running`、`completed`、`failed` です。               |
+| clientContext       | String                      | クライアントコンテキスト。                                                                |
+| 「補完の理由」    | String                      | 可能な値は `unknown`、`completedSuccessfully`、`mediaOperationCanceled` です。 |
+| createdDateTime     | DateTimeOffset              | 操作の開始時刻。                                                   |
+| id                  | String                      | 読み取り専用。                                                                         |
+| lastactiondatetime  | DateTimeOffset              | 操作の最後の操作の時刻。                                      |
+| resultInfo          | [resultInfo](resultInfo.md) | 結果の情報。 読み取り専用です。 サーバーによって生成されます。                               |
+| status              | String                      | 使用可能な値: `notStarted`、`running`、`completed`、`failed`。               |
 
 ## <a name="relationships"></a>関係
 なし

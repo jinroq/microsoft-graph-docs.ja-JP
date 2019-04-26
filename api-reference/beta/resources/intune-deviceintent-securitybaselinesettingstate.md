@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: ab5dd14c0929c58b9c076d1115d487e560d80333
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522581"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562280"
 ---
 # <a name="securitybaselinesettingstate-resource-type"></a>securityBaselineSettingState リソースの種類
 
@@ -33,10 +33,10 @@ ms.locfileid: "31522581"
 |:---|:---|:---|
 |id|String|エンティティの一意識別子|
 |settingName|String|レポートされている設定の名前|
-|state|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|セキュリティベースライン設定のコンプライアンス状態。 可能な値は `unknown`、`secure`、`notApplicable`、`notSecure`、`error`、`conflict` です。|
-|settingcategoryid|文字列|この設定が属する設定カテゴリ id|
+|state|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|セキュリティベースライン設定のコンプライアンス状態。 使用可能な値: `unknown`、`secure`、`notApplicable`、`notSecure`、`error`、`conflict`。|
+|settingcategoryid|String|この設定が属する設定カテゴリ id|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記

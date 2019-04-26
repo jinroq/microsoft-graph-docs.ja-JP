@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 8133fb325b0c2abdacf38e034aedc6523b13623c
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31806728"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562224"
 ---
 # <a name="securitybaselinestatesummary-resource-type"></a>securityBaselineStateSummary リソースの種類
 
@@ -36,7 +36,7 @@ ms.locfileid: "31806728"
 |conflictCount|Int32|競合デバイスの数|
 |notApplicableCount|Int32|該当しないデバイスの数|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記

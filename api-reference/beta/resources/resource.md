@@ -1,21 +1,21 @@
 ---
 title: resource リソースの種類
-description: 'イメージまたは OneNote のページ上の他のファイル リソースです。 '
+description: 'OneNote ページ上の画像またはその他のファイルリソース。 '
 localization_priority: Normal
 ms.openlocfilehash: c85897af91290df83f4d6fccaf0552513b4f0535
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510282"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563022"
 ---
 # <a name="resource-resource-type"></a>resource リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-イメージまたは OneNote のページ上の他のファイル リソースです。 
+OneNote ページ上の画像またはその他のファイルリソース。 
 
-リソースのバイナリ データは取得できますが、リソース オブジェクトまたはリソース コレクションの JSON 表記の取得はサポートされていません。
+リソースのバイナリデータを取得することはできますが、リソースオブジェクトまたはリソースコレクションの JSON 表記を取得することはサポートされていません。
 
 <!-- {
   "blockType": "resource",
@@ -25,19 +25,19 @@ ms.locfileid: "29510282"
   "@odata.type": "microsoft.graph.onenoteResource"
 }-->
 
-GET リクエストをリソースの `content` エンドポイントに送信することによって、特定のリソースのバイナリ データを取得します。
+特定のリソースのバイナリデータを取得するために、get 要求をリソースの`content`エンドポイントに送信します。
 
 ```
 GET ../onenote/resources/{id}/content
 ```
 
-ファイルのリソース URI は、次のリクエストを使用して、ページの HTML コンテンツを取得するときに返されます。
+ファイルのリソース URI は、次の要求を使用してページの HTML コンテンツを取得したときに返されます。
 
 ```
 GET ../onenote/pages/{id}/content
 ```
 
-ページ HTML では、`img` タグには、`data-fullres-src` 属性の元のイメージ リソースのエンドポイントと、`src` 属性の最適化されたイメージのエンドポイントが含まれます。
+ページ HTML の場合、 `img`タグには、 `data-fullres-src`属性内の元のイメージリソースのエンドポイントと、 `src`属性の最適化されたイメージが含まれています。
 ```
 <img 
     src="image-resource-url"  
@@ -46,7 +46,7 @@ GET ../onenote/pages/{id}/content
     data-fullres-src-type="media-type" ... />
 ```
 
-`object` タグ (PDF、DOCX、PNG などのファイルを表す) には、`data` 属性のファイル リソースのエンドポイントが含まれます。
+`object`タグ (PDF、.docx、PNG などのファイルを表す) には、 `data`属性のファイルリソースのエンドポイントが含まれています。
 
 ```
 <object
@@ -65,7 +65,7 @@ GET ../onenote/pages/{id}/content
 ## <a name="methods"></a>メソッド
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[リソース バイナリ データの取得](../api/resource-get.md) | Stream |ファイルまたはイメージ リソースのバイナリ データを取得します。|
+|[リソースバイナリデータの取得](../api/resource-get.md) | Stream |ファイルまたはイメージリソースのバイナリデータを取得します。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

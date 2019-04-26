@@ -1,38 +1,38 @@
 ---
 title: privilegedRoleSummary リソースの種類
-description: 特定の役割の概要統計情報です。
+description: 特定の役割の統計の概要。
 localization_priority: Normal
 ms.openlocfilehash: 2ed34f556f52c41729bfa108fbb6eb0c608f6b67
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513740"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563435"
 ---
 # <a name="privilegedrolesummary-resource-type"></a>privilegedRoleSummary リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-特定の役割の概要統計情報です。
+特定の役割の統計の概要。
 
 
 ## <a name="methods"></a>メソッド
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[PrivilegedRoleSummary を取得します。](../api/privilegedrolesummary-get.md) | [privilegedRoleSummary](privilegedrolesummary.md) |PrivilegedRoleSummary オブジェクトのプロパティと関係を参照してください。|
+|[privilegedRoleSummary を取得する](../api/privilegedrolesummary-get.md) | [privilegedRoleSummary](privilegedrolesummary.md) |privilegedRoleSummary オブジェクトのプロパティとリレーションシップを読み取ります。|
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|elevatedCount|int32|割り当てられているロールおよびロールを持つユーザーの数がアクティブになります。|
-|id|string| ロールの一意の識別子です。 読み取り専用です。|
-|managedCount|int32|役割が割り当てられているユーザーが、ロールの数が無効になります。|
-|mfaEnabled|boolean|**真**の役割のアクティブ化には、MFA が必要な場合です。 **false**の役割のアクティブ化は、MFA を必要としない場合。|
-|status|string| 使用可能な値は、`ok`、`bad` です。 値の比率によって異なります (managedCount/usersCount)。 割合は、定義済みのしきい値より小さい場合は、`ok`が返されます。 それ以外の場合、`bad`が返されます。|
-|usersCount|int32|ロールに割り当てられているユーザーの数です。|
+|elevatedCount|int32|役割が割り当てられていて、役割がアクティブ化されているユーザーの数。|
+|id|string| ロールの一意識別子。 読み取り専用。|
+|managedcount|int32|役割が割り当てられているが、その役割が非アクティブ化されたユーザーの数。|
+|mfaenabled|ブール値|役割のライセンス認証が MFA を必要とする場合は**true** 。 役割のライセンス認証が MFA を必要としない場合は**false** 。|
+|status|string| 可能な値は、`ok`、`bad` です。 値は、の比率 (managedcount/ユーザーカウント) によって決まります。 比率が定義済みのしきい値よりも小さい`ok`場合は、が返されます。 それ以外`bad`の場合は、が返されます。|
+|usersCount|int32|役割に割り当てられているユーザーの数。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 

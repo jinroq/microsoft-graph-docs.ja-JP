@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 25b731f79ed78b7eb4f52a38eaa53a5b49e3df80
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31798706"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32558406"
 ---
 # <a name="installstate-enum-type"></a>installstate 列挙型
 
@@ -23,11 +23,11 @@ ms.locfileid: "31798706"
 |メンバー|値|説明|
 |:---|:---|:---|
 |notapplicable|.0|該当なし。|
-|れる|1-d|れる.|
-|フェール|pbm-2|フェール.|
-|notinstalled|1/3|インストールされていません。|
-|アンインストールの失敗|2/4|アンインストールに失敗しました。|
-|不明|5|わかり.|
+|れる|1 |れる.|
+|フェール|2 |フェール.|
+|notinstalled|3 |インストールされていません。|
+|アンインストールの失敗|4 |アンインストールに失敗しました。|
+|不明|5 |わかり.|
 
 
 

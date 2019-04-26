@@ -1,15 +1,15 @@
 ---
 title: directoryRole をアクティブにする
-description: ディレクトリ ロールをアクティブ化します。ディレクトリ ロールを読み取る場合や、そのメンバーを更新する場合は、まず、そのディレクトリ ロールをテナントでアクティブにする必要があります。既定では、会社の管理者 (Company Administrators) とユーザー (Users) のディレクトリ ロールのみがアクティブ化されています。アクセスしてメンバーを別のディレクトリ ロールに割り当てるには、まずそのディレクトリ ロールを対応するディレクトリ ロール テンプレート (directoryRoleTemplate) でアクティブにする必要があります。
+description: ディレクトリ ロールをアクティブ化します。 ディレクトリ ロールを読み取る場合や、そのメンバーを更新する場合は、まず、そのディレクトリ ロールをテナントでアクティブにする必要があります。 既定では、会社の管理者 (Company Administrators) とユーザー (Users) のディレクトリ ロールのみがアクティブ化されています。 アクセスしてメンバーを別のディレクトリ ロールに割り当てるには、まずそのディレクトリ ロールを対応するディレクトリ ロール テンプレート (directoryRoleTemplate) でアクティブにする必要があります。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 5d127580c0a4851c5a991ccc0646007ddf1298a5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27924917"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562434"
 ---
 # <a name="activate-directoryrole"></a>directoryRole をアクティブにする
 
@@ -31,7 +31,7 @@ POST /directoryRoles
 
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type  | string  | application/json  |
@@ -41,9 +41,9 @@ POST /directoryRoles
 
 次の表に、ディレクトリ ロールをアクティブにする際に必要になるプロパティを示します。
 
-|Parameter | Type | 説明|
+|パラメーター | 型 | 説明|
 |:---------|:---------|:---------|
-|roleTemplateId | 文字列 | 必須。 ロールは、に基づいて[directoryRoleTemplate](../resources/directoryroletemplate.md)の ID です。 これは、要求内で指定できる唯一のプロパティです。|
+|roleTemplateId | string | 必須。 このロールが基づいている [directoryRoleTemplate](../resources/directoryroletemplate.md) の ID。 これは要求で指定できる唯一のプロパティです。|
 
 ## <a name="response"></a>応答
 
@@ -66,7 +66,7 @@ Content-type: application/json
 ```
 要求本文で、[directoryRole](../resources/directoryrole.md) オブジェクトの JSON 表記を指定します。
 ##### <a name="response"></a>応答
-注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

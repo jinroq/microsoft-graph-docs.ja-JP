@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 5e1dda51d5c98cb27ab9e71c7bef9167959c9052
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31799616"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32558238"
 ---
 # <a name="windowspackageinformation-resource-type"></a>windowspackageinformation リソースの種類
 
@@ -24,8 +24,8 @@ Windows 基幹業務アプリのパッケージ情報のプロパティが含ま
 |:---|:---|:---|
 |applicableArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|このアプリを実行できる Windows アーキテクチャ。 可能な値は `none`、`x86`、`x64`、`arm`、`neutral`、`arm64` です。|
 |displayName|String|表示名を指定します。|
-|identityName|文字列|ID 名。|
-|識別子の入力|文字列|id 発行者。|
+|identityName|String|ID 名。|
+|識別子の入力|String|id 発行者。|
 |identityResourceIdentifier|String|ID のリソースの識別子。|
 |identityVersion|String|id のバージョン。|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|該当するオペレーティング システムの最小の値です。|

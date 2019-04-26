@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: ff3f5b074d0a88c93fadd52c48059b73e6a82506
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31804355"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32558364"
 ---
 # <a name="windowsuniversalappxcontainedapp-resource-type"></a>windowsUniversalAppXContainedApp リソースの種類
 
@@ -35,7 +35,7 @@ WindowsUniversalAppX アプリの含まれているアプリを表すクラス�
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティのキー。 [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)から継承します。|
-|appUserModelId|文字列|WindowsUniversalAppX アプリの含まれているアプリのアプリユーザーモデル ID。|
+|appUserModelId|String|WindowsUniversalAppX アプリの含まれているアプリのアプリユーザーモデル ID。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

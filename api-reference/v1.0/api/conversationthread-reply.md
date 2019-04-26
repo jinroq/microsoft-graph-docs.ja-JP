@@ -1,15 +1,15 @@
 ---
 title: 'conversationThread: 返信'
-description: 'グループの会話のスレッドに返信して、そこに新しい投稿を追加します。 親の会話を指定することができます。 '
+description: 'グループ会話のスレッドに返信して、新しい投稿を追加します。 親の会話を指定できます。 '
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: c4cbe8e1339d164f399152854d678c0179940c83
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987749"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32564219"
 ---
 # <a name="conversationthread-reply"></a>conversationThread: 返信
 

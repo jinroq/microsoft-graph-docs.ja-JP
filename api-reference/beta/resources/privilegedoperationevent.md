@@ -1,47 +1,47 @@
 ---
 title: privilegedOperationEvent リソースの種類
-description: 監査イベントによって生成される特権 Id 管理の役割の操作など、管理者特権を持つロールを管理する、ユーザーが自分の役割を有効にユーザーが自分のロールを非アクティブ化を表します。
+description: 管理者が特権のある役割を管理する、ユーザーが自分の役割をアクティブにし、ユーザーがその役割を非アクティブ化するなどの役割操作について特権 id 管理によって生成される監査イベントを表します。
 localization_priority: Normal
 ms.openlocfilehash: 2ad8f7e5db956dfbb2fa0d74f441b01f2b5d68aa
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525592"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563679"
 ---
 # <a name="privilegedoperationevent-resource-type"></a>privilegedOperationEvent リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-監査イベントによって生成される特権 Id 管理の役割の操作など、管理者特権を持つロールを管理する、ユーザーが自分の役割を有効にユーザーが自分のロールを非アクティブ化を表します。
+管理者が特権のある役割を管理する、ユーザーが自分の役割をアクティブにし、ユーザーがその役割を非アクティブ化するなどの役割操作について特権 id 管理によって生成される監査イベントを表します。
 
 
 ## <a name="methods"></a>メソッド
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[リスト privilegedOperationEvent](../api/privilegedoperationevent-list.md) | [privilegedOperationEvent](privilegedoperationevent.md)コレクションです。 |PrivilegedOperationEvent オブジェクトのコレクションを取得します。|
+|[リスト privilegedOperationEvent](../api/privilegedoperationevent-list.md) | [privilegedOperationEvent](privilegedoperationevent.md)コレクション。 |privilegedOperationEvent オブジェクトのコレクションを取得します。|
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|について|string|詳細情報イベントです。|
-|creationDateTime|dateTimeOffset|イベントが作成されたときの時刻を示します。|
-|expirationDateTime|dateTimeOffset|修飾子の一覧は、「Activate」、およびロールのアクティブ化の有効期限を示します場合にのみ使用されます。|
-|id|string|PrivilegedOperationEvent の一意の識別子です。 読み取り専用です。|
-|referenceKey|string|ロールのアクティブ化中に問題と要求のチケット番号です。 ロールのアクティブ化時にチケット番号を指定した場合にのみ値が表示されます。|
-|referenceSystem|string|チケット tole のライセンス認証中に提供されたシステム要求問題です。 ロールのアクティブ化時にチケット システムが用意されている場合にのみ値が表示されます。|
-|RequestType|string|要求された操作の種類です。 修飾子の一覧を指定できます: ```Assign``` (ロールの割り当て)、 ```Activate``` (ロールのアクティブ化)、 ```Unassign``` (ロールの割り当てを削除する)、 ```Deactivate``` (ロールの無効化)、 ```ScanAlersNow``` (セキュリティの警告をスキャンする)、 ```DismissAlert``` (セキュリティの警告を無視する)、 ```FixAlertItem``` (セキュリティの修正アラートの問題)、 ```AccessReview_Review``` (確認のアクセスを確認する)、 ```AccessReview_Create``` (、アクセス確認を作成する) ```AccessReview_Update``` (更新のアクセスを確認する)、および```AccessReview_Delete```(削除、アクセスを確認)。|
-|requestorId|string|操作を開始した要求元のユーザー id です。|
-|requestorName|string|操作を開始した要求元のユーザー名です。|
-|roleId|string|操作に関連付けられているロールの id です。|
-|役割名|string|ロールの名前です。|
-|tenant_id|string|テナント (組織) の id です。|
-|userId|string|操作に関連付けられているユーザーの id です。|
-|userMail|string|ユーザーの電子メール。|
+|additionalinformation|string|イベントに関する人の詳細な読み取り情報。|
+|日付/時刻 (datetime)|dateTimeOffset|イベントが作成された時刻を示します。|
+|expirationDateTime|dateTimeOffset|これは、requestType が "Activate" の場合にのみ使用され、役割のアクティブ化の有効期限を示します。|
+|id|string|privilegedOperationEvent の一意識別子。 読み取り専用。|
+|referencekey|string|ロールライセンス認証時のインシデント/要求チケット番号。 この値は、ロールのライセンス認証時にチケット番号が提供されている場合にのみ表示されます。|
+|referenceSystem|string|tole アクティブ化の間に提供されたインシデント/要求のチケットのシステム。 この値は、チケットシステムが役割のライセンス認証時に提供された場合にのみ表示されます。|
+|requestType|string|要求操作の種類。 requestType の値は、( ```Assign```役割の割り当て)、 ```Activate``` ```Unassign``` (役割のアクティブ化)、(役割の割り当て```Deactivate```の削除)、( ```ScanAlersNow```役割の非アクティブ化) ```DismissAlert``` 、(スキャンセキュリティの警告```FixAlertItem``` )、(セキュリティの警告を無視する) の各値にすることができます (セキュリティを修正します)。アラートの問題) ```AccessReview_Review``` 、(アクセスレビューを確認する```AccessReview_Create``` )、(アクセスレビューを更新```AccessReview_Update```する)、(アクセスレビューを削除```AccessReview_Delete```する) を参照してください。|
+|requestorId|string|操作を開始するリクエスターのユーザー id。|
+|requestorName|string|操作を開始するリクエスターのユーザー名。|
+|roleId|string|操作に関連付けられているロールの id。|
+|roleName|string|ロールの名前。|
+|tenantId|string|テナント (組織) id。|
+|userId|string|操作に関連付けられているユーザーの id。|
+|usermail|string|ユーザーの電子メール。|
 |userName|string|ユーザーの表示名。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 

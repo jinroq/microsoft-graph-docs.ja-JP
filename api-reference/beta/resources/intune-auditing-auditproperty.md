@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 3f864f41a2068d6455dccb0a539c14e7e4b9dc6d
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31792763"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32558343"
 ---
 # <a name="auditproperty-resource-type"></a>auditProperty リソースの種類
 
@@ -23,7 +23,7 @@ ms.locfileid: "31792763"
 |プロパティ|型|説明|
 |:---|:---|:---|
 |displayName|String|表示名。|
-|oldValue|文字列|以前の値。|
+|oldValue|String|以前の値。|
 |newValue|文字列型 (String)|新しい値。|
 
 ## <a name="relationships"></a>リレーションシップ

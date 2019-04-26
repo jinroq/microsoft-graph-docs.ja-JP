@@ -1,32 +1,32 @@
 ---
 title: scopedRoleMembership リソースの種類
-description: スコープ ロール メンバーシップでは、スコープ管理単位 (AU) には、さらに、ディレクトリのロールのユーザーのメンバーシップについて説明します。  これは、ユーザーおよび組織の一部のグループ (、AU で定義されるサブセット) を管理するユーザーに管理者特権を委任するテナント規模の企業の adminsistrator を許可するためのメカニズムを提供します。
+description: スコープ指定された役割メンバーシップは、管理単位 (AU) に対してさらにスコープを設定する、ディレクトリロールのユーザーのメンバーシップを記述します。  これにより、テナント全体の会社 adminsistrator が、組織のサブセット (AU で定義されているサブセット) 内のユーザーとグループを管理するための管理者権限を委任できるようになります。
 localization_priority: Normal
 ms.openlocfilehash: 2d51ad696487e7daafb9b0f4fcef0934e4f6d6e2
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640792"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562980"
 ---
 # <a name="scopedrolemembership-resource-type"></a>scopedRoleMembership リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-スコープ ロール メンバーシップでは、スコープ管理単位 (AU) には、さらに、ディレクトリのロールのユーザーのメンバーシップについて説明します。  これは、ユーザーおよび組織の一部のグループ (、AU で定義されるサブセット) を管理するユーザーに管理者特権を委任するテナント規模の企業の adminsistrator を許可するためのメカニズムを提供します。
+スコープ指定された役割メンバーシップは、管理単位 (AU) に対してさらにスコープを設定する、ディレクトリロールのユーザーのメンバーシップを記述します。  これにより、テナント全体の会社 adminsistrator が、組織のサブセット (AU で定義されているサブセット) 内のユーザーとグループを管理するための管理者権限を委任できるようになります。
 
 ## <a name="methods"></a>メソッド
-このリソースへの直接のクエリはサポートされていません。  スコープ ロール メンバーシップの追加と削除と同様にスコープ ロールのメンバーシップを照会する方法についての情報を表示する[単位数の管理](administrativeunit.md)トピックを参照してください。 
+このリソースへの直接クエリはサポートされていません。  スコープ指定された役割のメンバーシップのクエリを実行する方法、およびスコープ付きの役割メンバーシップを追加および削除する方法については、「操作の[単位](administrativeunit.md)」を参照してください。 
 
 ## <a name="properties"></a>プロパティ
 | プロパティ   | 型 | 説明 |
 |:---------------|:--------|:----------|
-|administrativeUnitId|string|ディレクトリの役割のスコープは、管理単位の一意の識別子|
-|id|string| スコープ ロール メンバーシップの一意の識別子です。 読み取り専用です。|
-|roleId|string| メンバーが含まれるディレクトリの役割の一意の識別子です。|
-|roleMemberInfo|[identity](identity.md)| ロール メンバーの識別情報です。 このスコープの役割のメンバーであるユーザーを表します。|
+|administrativeUnitId|string|ディレクトリの役割のスコープが設定されている管理単位の一意の識別子|
+|id|string| スコープ指定された役割のメンバーシップの一意識別子。 読み取り専用。|
+|roleId|string| メンバーが属しているディレクトリロールの一意の識別子。|
+|roleMemberInfo|[identity](identity.md)| 役割メンバーの id 情報。 このスコープ指定された役割のメンバーであるユーザーを表します。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 

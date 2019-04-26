@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 52a10e605e4f4c912a138dd5b97b6e8f7ed61184
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31802444"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32558175"
 ---
 # <a name="mobileappactiontype-enum-type"></a>mobileAppActionType 列挙型
 
@@ -23,10 +23,10 @@ ms.locfileid: "31802444"
 |メンバー|値|説明|
 |:---|:---|:---|
 |不明|.0|不明な結果です。|
-|installcommandsent|1-d|アプリケーションのインストールコマンドが送信されました。|
-|れる|1/3|アプリケーションがインストールされている。|
-|アンインストール|2/4|アプリケーションがアンインストールされた。|
-|userrequestedinstall|5|ユーザーが要求したインストール|
+|installcommandsent|1 |アプリケーションのインストールコマンドが送信されました。|
+|れる|3 |アプリケーションがインストールされている。|
+|アンインストール|4 |アプリケーションがアンインストールされた。|
+|userrequestedinstall|5 |ユーザーが要求したインストール|
 
 
 

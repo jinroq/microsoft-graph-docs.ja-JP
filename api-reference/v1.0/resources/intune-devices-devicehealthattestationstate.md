@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 53fa5cdafdc125fdc32ef599a625c58e3bcbe687
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30256148"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563813"
 ---
 # <a name="devicehealthattestationstate-resource-type"></a>deviceHealthAttestationState リソース タイプ
 
@@ -53,7 +53,7 @@ ms.locfileid: "30256148"
 |healthStatusMismatchInfo|String|この属性は、DHA サービスが整合性の問題を検出した場合に表示されます|
 |healthAttestationSupportedStatus|String|この属性は、DHA がデバイス向けにサポートされているかどうかを示します|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記

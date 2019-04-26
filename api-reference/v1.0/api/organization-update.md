@@ -5,15 +5,15 @@ localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 109c3f68e1eaa719f18a7fa8c539d09a2e3061aa
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27969850"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561412"
 ---
 # <a name="update-organization"></a>組織を更新する
 
-現在認証されている組織のプロパティを更新します。 この例では、 `organization` 、1 つのレコードの集合として定義されている要求の**ID**を指定する必要がありますので。  **ID**は、組織の**tenantId**とも呼ばれます。
+現在認証されている組織のプロパティを更新します。 この例では`organization` 、は、1つのレコードのコレクションとして定義されているため、要求でその**ID**を指定する必要があります。  **ID**は、組織の**tenantId**とも呼ばれます。
 
 
 ## <a name="permissions"></a>アクセス許可
@@ -43,15 +43,15 @@ PATCH /organization/{id}
 
 ## <a name="request-body"></a>要求本文
 
-要求本文で、更新する関連フィールドの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変更に基づいて再計算されます。 最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
+要求本文で、更新する関連フィールドの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。 最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|marketingNotificationEmails|String コレクション|                                        **注**: Null は許容されません。            |
+|marketingNotificationEmails|String collection|                                        **注**: Null は許容されません。            |
 |privacyProfile|[privacyProfile](../resources/privacyprofile.md)|組織のプライバシー プロファイル (statementUrl と contactEmail を設定します)。            |
-|securityComplianceNotificationMails|String コレクション||
+|securityComplianceNotificationMails|String collection||
 |securityComplianceNotificationPhones|String コレクション||
-|technicalNotificationMails|String コレクション|                                        **注**: Null は許容されません。            |
+|technicalNotificationMails|String collection|                                        **注**: Null は許容されません。            |
 
 ## <a name="response"></a>応答
 

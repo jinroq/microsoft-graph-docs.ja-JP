@@ -1,32 +1,32 @@
 ---
 title: onenoteOperation を取得する
-description: '長時間実行される OneNote 操作の状態を取得します。これは、応答で **Operation-Location** ヘッダーを返す操作に適用されます。たとえば、`CopyNotebook`、`CopyToNotebook`、`CopyToSectionGroup`、`and CopyToSection` です。   '
+description: '長時間実行している OneNote 操作の状態を取得します。 これ`CopyNotebook`は`CopyToNotebook` `CopyToSectionGroup`、、、、などの応答の**操作場所**ヘッダーを返す操作に適用され`and CopyToSection`ます。   '
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 ms.openlocfilehash: c869702b856f03bccbbc5101e8e72facd3287738
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932386"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562105"
 ---
 # <a name="get-onenoteoperation"></a>onenoteOperation を取得する
 
-長時間実行される OneNote 操作の状態を取得します。これは、応答で **Operation-Location** ヘッダーを返す操作に適用されます。たとえば、`CopyNotebook`、`CopyToNotebook`、`CopyToSectionGroup`、`and CopyToSection` です。   
+長時間実行している OneNote 操作の状態を取得します。 これ`CopyNotebook`は`CopyToNotebook` `CopyToSectionGroup`、、、、などの応答の**操作場所**ヘッダーを返す操作に適用され`and CopyToSection`ます。   
 
-`status` プロパティが `completed` または `failed` を返すまで、Operation-Location エンドポイントをポーリングすることができます。 
+プロパティが`status`または`completed` `failed`を返すまで、操作場所エンドポイントをポーリングできます。 
 
-状態が `completed` の場合、`resourceLocation` プロパティにはリソース エンドポイント URI が含まれています。 
+状態が`completed`の場合、プロパティ`resourceLocation`にはリソースエンドポイント URI が含まれます。 
 
-状態が `failed` の場合、エラーおよび `@api.diagnostics` プロパティからエラー情報が得られます。
+状態がの場合`failed`、エラーおよび`@api.diagnostics`プロパティからエラー情報が得られます。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Notes.Create、Notes.Read、Notes.ReadWrite、Notes.Read.All、Notes.ReadWrite.All    |
+|委任 (職場または学校のアカウント) | メモ作成、メモ読み取り、メモ (すべて)、メモ書き込み、メモ (すべて)    |
 |委任 (個人用 Microsoft アカウント) | Notes.Create、Notes.Read、Notes.ReadWrite    |
 |アプリケーション | Notes.Read.All、Notes.ReadWrite.All |
 
@@ -38,7 +38,7 @@ GET /users/{id | userPrincipalName}/onenote/operations/{id}
 GET /groups/{id}/onenote/operations/{id}
 GET /sites/{id}/onenote/operations/{id}
 ```
-## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
+## <a name="optional-query-parameters"></a>省略可能なクエリ パラメーター
 なし。
 
 ## <a name="request-headers"></a>要求ヘッダー
@@ -52,7 +52,7 @@ GET /sites/{id}/onenote/operations/{id}
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは応答本文で `200 OK` 応答コードと [onenoteOperation](../resources/onenoteoperation.md) オブジェクトを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[onenoteOperation](../resources/onenoteoperation.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

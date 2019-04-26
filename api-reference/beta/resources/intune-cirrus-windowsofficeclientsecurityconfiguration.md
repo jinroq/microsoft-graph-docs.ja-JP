@@ -5,11 +5,11 @@ localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
 ms.openlocfilehash: 20a894ecd72525d231967d3bd4f98139b1049a82
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156680"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32557811"
 ---
 # <a name="windowsofficeclientsecurityconfiguration-resource-type"></a>windowsOfficeClientSecurityConfiguration リソースの種類
 
@@ -33,10 +33,10 @@ ms.locfileid: "30156680"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|office クライアント構成ポリシーの Id。 [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承します。|
+|id|String|office クライアント構成ポリシーの Id。 [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承します。|
 |userPreferencePayload|Stream|プリファレンス設定 JSON 文字列はバイナリ形式です。これらの値はユーザーが上書きできます。 [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承します。|
 |policypayload|Stream|ポリシー設定 JSON 文字列 (バイナリ形式) では、ユーザーがこれらの値を変更することはできません。 [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承します。|
-|説明|String|管理者が提供する office クライアント構成ポリシーの説明。 [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承します。|
+|description|String|管理者が提供する office クライアント構成ポリシーの説明。 [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承します。|
 |displayName|String|管理者が指定した office クライアント構成ポリシーの名前。 [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承します。|
 |priority|Int32|優先度の値は、テナントの各ポリシーの一意の値である必要があり、競合の解決に使用されます。低い値は、優先度が高くなります。 [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承します。|
 |lastModifiedDateTime|DateTime

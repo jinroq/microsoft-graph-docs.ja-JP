@@ -1,47 +1,47 @@
 ---
 title: privilegedRoleAssignment リソースの種類
-description: '特定のユーザーに対して権限を持つ役割の割り当てを表します。 '
+description: '特定のユーザーの特権の役割の割り当てを表します。 '
 localization_priority: Normal
 ms.openlocfilehash: 479b6d46dc479134fd0abb46b1a9ffe478611a82
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515119"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563425"
 ---
 # <a name="privilegedroleassignment-resource-type"></a>privilegedRoleAssignment リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-特定のユーザーに対して権限を持つ役割の割り当てを表します。 
+特定のユーザーの特権の役割の割り当てを表します。 
 
 
 ## <a name="methods"></a>メソッド
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[PrivilegedRoleAssignment コレクションのリスト](../api/privilegedroleassignment-list.md) | [privilegedRoleAssignment](privilegedroleassignment.md)コレクション|PrivilegedRoleAssignment オブジェクトのコレクションを取得します。|
-|[PrivilegedRoleAssignment を取得します。](../api/privilegedroleassignment-get.md) | [privilegedRoleAssignment](privilegedroleassignment.md) |PrivilegedRoleAssignment オブジェクトのプロパティと関係を参照してください。|
-|[割り当てを作成します。](../api/privilegedroleassignment-post-privilegedroleassignments.md) |[privilegedRoleAssignment](privilegedroleassignment.md)| 割り当てのコレクションへの投稿には、新しい割り当てを作成します。|
-|[Delete](../api/privilegedroleassignment-delete.md) | なし |PrivilegedRoleAssignment オブジェクトを削除します。 |
-|[makePermanent](../api/privilegedroleassignment-makepermanent.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|として永続的な役割の割り当てを確認します。|
-|[makeEligible](../api/privilegedroleassignment-makeeligible.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|対象となるように、役割の割り当てを確認します。|
-|[My](../api/privilegedroleassignment-my.md)|[privilegedRoleAssignment](privilegedroleassignment.md)コレクション|現在のユーザーの特権を持つ役割の割り当てを取得します。|
+|[privilegedRoleAssignment コレクションを一覧表示する](../api/privilegedroleassignment-list.md) | [privilegedRoleAssignment](privilegedroleassignment.md)コレクション|privilegedRoleAssignment オブジェクトのコレクションを取得します。|
+|[privilegedRoleAssignment を取得する](../api/privilegedroleassignment-get.md) | [privilegedRoleAssignment](privilegedroleassignment.md) |privilegedRoleAssignment オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[割り当てを作成する](../api/privilegedroleassignment-post-privilegedroleassignments.md) |[privilegedRoleAssignment](privilegedroleassignment.md)| assignments コレクションに投稿して、新しい割り当てを作成します。|
+|[削除](../api/privilegedroleassignment-delete.md) | なし |privilegedRoleAssignment オブジェクトを削除します。 |
+|[makePermanent](../api/privilegedroleassignment-makepermanent.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|役割の割り当てを永続的に設定します。|
+|[makeEligible](../api/privilegedroleassignment-makeeligible.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|役割の割り当てを対象として設定します。|
+|[私の](../api/privilegedroleassignment-my.md)|[privilegedRoleAssignment](privilegedroleassignment.md)コレクション|現在のユーザーの特権の役割の割り当てを取得します。|
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|expirationDateTime|dateTimeOffset|一時的な特権を持つロールの割り当ては期限が切れた場合は、UTC 日時です。 永続的な役割の割り当ての値が null です。|
-|id|string| 特権を持つ役割の割り当ての一意の識別子です。 読み取り専用です。 'UserId_roleId'、Azure AD ユーザーの id の GUID の文字列は、ユーザー Id、roleId は、Azure の管理者ロールの id の GUID の文字列の形式であります。|
-|isElevated|boolean|**true の**ロールの割り当てが有効な場合です。 **false**役割の割り当てが無効になった場合。|
-|resultMessage|string|結果のメッセージがサービスによって設定されます。|
-|roleId|string|ロール識別子 GUID の文字列形式。|
-|userId|string|ユーザーの識別子です。 GUID の文字列形式。|
+|expirationDateTime|dateTimeOffset|一時的な特権の役割の割り当てが期限切れになる UTC の DateTime。 永続的な役割の割り当ての場合、値は null になります。|
+|id|string| 特権の役割の割り当ての一意識別子。 読み取り専用。 これは ' userId_roleId ' の形式になっています。ここで、userId は azure AD ユーザー id の guid 文字列で、roleId は azure 管理者の役割 id の guid 文字列です。|
+|isElevated|ブール値|役割の割り当てがアクティブ化されている場合は**true** 。 **false**を指定すると、役割の割り当てが非アクティブになります。|
+|resultmessage|string|サービスによって設定された結果メッセージ。|
+|roleId|string|ロール識別子。 GUID 文字列形式。|
+|userId|string|ユーザー識別子。 GUID 文字列形式。|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|roleInfo|[privilegedRole](privilegedrole.md)| 読み取り専用です。 Null 許容型。 関連付けられているロールの情報です。|
+|roleinfo|[privilegedRole](privilegedrole.md)| 読み取り専用。 Null 許容型。 関連付けられているロール情報。|
 
 ## <a name="json-representation"></a>JSON 表記
 

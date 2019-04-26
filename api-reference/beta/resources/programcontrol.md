@@ -1,61 +1,61 @@
 ---
-title: デバッギングのリソースの種類
-description: Azure AD にアクセスが機能を確認、プログラムのコントロール オブジェクトは、アクセス確認をプログラムにリンクするコントロールを表します。
+title: programcontrol リソースの種類
+description: Azure AD access レビュー機能では、program control オブジェクトは、アクセスレビューをプログラムにリンクするコントロールを表します。
 localization_priority: Normal
 ms.openlocfilehash: 3d9829b8e2585d4deda95551021e2fd9b8d14c7a
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29644008"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563372"
 ---
-# <a name="programcontrol-resource-type"></a>デバッギングのリソースの種類
+# <a name="programcontrol-resource-type"></a>programcontrol リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Azure AD[アクセスの確認](accessreviews-root.md)機能では、プログラムのコントロール オブジェクトは、アクセス確認をプログラムにリンク、コントロールを表します。
+Azure AD [access レビュー](accessreviews-root.md)機能では、program control オブジェクトは、アクセスレビューをプログラムにリンクするコントロールを表します。
 
 
 ## <a name="methods"></a>メソッド
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[デバッギングを作成します。](../api/programcontrol-create.md) |     [デバッギング](programcontrol.md) |   デバッギングをプログラムに追加します。|
-|[デバッギングを削除します。](../api/programcontrol-delete.md) |     なし。   |   デバッギングをプログラムから削除します。|
-|[リスト programControls](../api/programcontrol-list.md) | [デバッギング](programcontrol.md)コレクション| テナント内のすべてのプログラム間でコントロールを一覧表示します。|
+|[programcontrol を作成する](../api/programcontrol-create.md) |     [programcontrol](programcontrol.md) |   プログラムに programcontrol を追加します。|
+|[programcontrol の削除](../api/programcontrol-delete.md) |     なし。   |   プログラムから programcontrol を削除します。|
+|[programcontrols のリスト](../api/programcontrol-list.md) | [programcontrol](programcontrol.md)コレクション| テナント内のすべてのプログラムでコントロールを一覧表示します。|
 
 ## <a name="permissions"></a>アクセス許可
 
 |アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント)     | ProgramControl.Read.All、ProgramControl.ReadWrite.All |
+|委任 (職場または学校のアカウント)     | programcontrol. all、programcontrol. |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
 |アプリケーション                            | サポートされていません。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-| `id`                     |`String`                | プログラムとコントロール間のリンクの機能に割り当てられた識別子                                      |
-| `programId`              |`String`                | プログラムの programId このコントロールは、一部です。 作成時に必要です。                            |
-| `controlId`              |`String`                | コントロールの処理、特にアクセスの id を確認します。 作成時に必要です。                                                |
-| `controlTypeId`          |`String`                | ProgramControlType は、プログラムの制御の種類を識別 - たとえば、ゲスト アクセスへのリンク コントロールを確認します。 作成時に必要です。 |
-| `displayName`            |`String`                | コントロールの名前です。                                                             |
-| `status`                 |`String`                | コントロールのライフ サイクルの状態です。                                                 |
-| `createdDateTime`        |`DateTimeOffset`        | 作成日付と時刻のコントロールです。                                        |
-| `owner`                  |[割り当てられていません](useridentity.md)   | プログラムのコントロールを作成したユーザー。                                               |
-| `resource`               |`programResource`       | リソース、グループ、または、アプリケーションは、このプログラムの制御のアクセスの確認の対象となります。                   |
+| `id`                     |`String`                | プログラムとコントロール間のリンクの機能割り当て識別子                                      |
+| `programId`              |`String`                | このコントロールが含まれるプログラムの programid。 作成時に必要です。                            |
+| `controlId`              |`String`                | コントロールの controlId (特にアクセスレビューの識別子)。 作成時に必要です。                                                |
+| `controlTypeId`          |`String`                | programcontroltype には、プログラムコントロールの種類を指定します。たとえば、ゲストアクセスレビューにリンクしているコントロールがあります。 作成時に必要です。 |
+| `displayName`            |`String`                | コントロールの名前を指定します。                                                             |
+| `status`                 |`String`                | コントロールのライフサイクル状態。                                                 |
+| `createdDateTime`        |`DateTimeOffset`        | プログラムコントロールの作成日時。                                        |
+| `owner`                  |[userIdentity](useridentity.md)   | プログラムコントロールを作成したユーザー。                                               |
+| `resource`               |`programResource`       | このプログラムコントロールのアクセスレビューによって対象となるリソース、グループ、またはアプリ。                   |
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-| `program`                |[プログラム](program.md)               | このコントロールの一部であるプログラムです。                                                |
+| `program`                |[アプリケーション](program.md)               | このコントロールが含まれているプログラム。                                                |
 
 ## <a name="see-also"></a>関連項目
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[プログラムのリスト programControls](../api/program-listcontrols.md) |      [デバッギング](programcontrol.md)コレクション| プログラムのコントロールのコレクションを取得します。|
-|[リスト programControlTypes](../api/programcontroltype-list.md) | [programControlType](programcontroltype.md)コレクション| プログラムのコントロールの種類を一覧表示します。 |
+|[プログラムの programcontrols を一覧表示する](../api/program-listcontrols.md) |      [programcontrol](programcontrol.md)コレクション| プログラムのコントロールのコレクションを取得します。|
+|[programcontroltypes のリスト](../api/programcontroltype-list.md) | [programcontroltype](programcontroltype.md)コレクション| プログラムコントロールの種類を一覧表示します。 |
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -84,15 +84,15 @@ Azure AD[アクセスの確認](accessreviews-root.md)機能では、プログ�
 
 ```
 
-## <a name="the-programresource-complex-type"></a>ProgramResource 複合型
+## <a name="the-programresource-complex-type"></a>programresource 複合型
 
-プログラム コントロール オブジェクトに含まれている、プログラムのリソースは、アクセス確認の対象であるオブジェクトへの参照の表現です。
+program control オブジェクト内に含まれるプログラムリソースは、アクセスレビューのターゲットであるオブジェクトへの参照を表します。
 
-このタイプから継承`microsoft.graph.identity`があり、1 つの追加のプロパティ。
+この型はから`microsoft.graph.identity`継承され、さらに1つのプロパティが追加されています。
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-| `type`               |`String`  | グループ、またはアプリケーションがあるかどうかを示す、リソースの種類です。 |     
+| `type`               |`String`  | リソースの種類。これは、グループであるかアプリであるかを示します。 |     
 
 
 <!--

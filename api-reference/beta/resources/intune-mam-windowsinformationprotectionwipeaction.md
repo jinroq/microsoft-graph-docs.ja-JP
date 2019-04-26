@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 47047f401bbf0a690494490cbbd3b934340a26c9
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31791993"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32558273"
 ---
 # <a name="windowsinformationprotectionwipeaction-resource-type"></a>windowsinformationprotectionwipepeaction リソースの種類
 
@@ -33,10 +33,10 @@ ms.locfileid: "31791993"
 |:---|:---|:---|
 |id|String|エンティティのキー。|
 |status|[actionState](../resources/intune-shared-actionstate.md)|ワイプアクションの状態。 可能な値は、`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported` です。|
-|targeteduserid|文字列|このワイプアクションの対象となる UserId。|
-|targetedDeviceRegistrationId|文字列|このワイプアクションの対象となる DeviceRegistrationId。|
-|targeteddevicename|文字列|対象のデバイス名。|
-|targetedDeviceMacAddress|文字列|対象デバイスの Mac アドレス。|
+|targeteduserid|String|このワイプアクションの対象となる UserId。|
+|targetedDeviceRegistrationId|String|このワイプアクションの対象となる DeviceRegistrationId。|
+|targeteddevicename|String|対象のデバイス名。|
+|targetedDeviceMacAddress|String|対象デバイスの Mac アドレス。|
 |lastCheckInDateTime|DateTimeOffset|このワイプアクションの対象となったデバイスの最終チェックイン時刻。|
 
 ## <a name="relationships"></a>リレーションシップ

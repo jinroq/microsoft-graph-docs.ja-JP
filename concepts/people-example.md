@@ -6,11 +6,11 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 ms.openlocfilehash: 9c1ff26acb2032a775e71cbb0caecec3331d058e
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31797145"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32557921"
 ---
 # <a name="use-the-people-api-in-microsoft-graph-to-get-information-about-the-people-most-relevant-to-you"></a>Microsoft Graph の People API を使用した最も関連のある人物に関する情報の取得
 
@@ -937,7 +937,7 @@ Content-type: application/json
 
 ### <a name="perform-a-fuzzy-search"></a>あいまい検索の実行
 
-検索は、あいまい一致のアルゴリズムを実装します。 これにより、完全に一致する項目と、検索目的の推論に基づく結果が返されます。 たとえば、表示名が "Tyler Lee"、電子メールアドレスtylerle@example.comが、サインインユーザーの**people**集団に属しているとします。 次の検索ではすべて、このユーザー、Tyler が検索結果として返されます。
+検索は、あいまい一致のアルゴリズムを実装します。 これにより、完全に一致する項目と、検索目的の推論に基づく結果が返されます。 たとえば、サインイン ユーザーの **people** コレクションに、表示名が "Tyler Lee" で tylerle@example.com というメール アドレスを持つユーザーがいるとします。 次の検索ではすべて、このユーザー、Tyler が検索結果として返されます。
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people?$search="tyler"                //matches both Tyler's name and email

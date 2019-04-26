@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: edb921a12ca932f5c10d22120a065fb46f2bb8d3
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31775746"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562665"
 ---
 # <a name="platform-enum-type"></a>プラットフォーム列挙型
 
@@ -23,11 +23,11 @@ ms.locfileid: "31775746"
 |メンバー|値|説明|
 |:---|:---|:---|
 |不明|.0|不明なデバイスプラットフォーム|
-|ios|1-d|IOS デバイスプラットフォーム|
-|android|pbm-2|Android デバイスプラットフォーム|
-|ws|1/3|Windows デバイスプラットフォーム|
-|windowsMobile|2/4|windowsmobile デバイスプラットフォーム|
-|macOS|5|Mac デバイスプラットフォーム|
+|ios|1 |IOS デバイスプラットフォーム|
+|android|2 |Android デバイスプラットフォーム|
+|ws|3 |Windows デバイスプラットフォーム|
+|windowsMobile|4 |windowsmobile デバイスプラットフォーム|
+|macOS|5 |Mac デバイスプラットフォーム|
 
 
 

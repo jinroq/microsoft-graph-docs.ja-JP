@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: e3f423cdc1c00bdaa7be410fc755b8fe3a065dd3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27968387"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32564205"
 ---
 # <a name="messagerulepredicates-resource-type"></a>messageRulePredicates リソースの種類
 
@@ -17,7 +17,7 @@ ms.locfileid: "27968387"
 ルールで使用可能な条件および例外のセットを表します。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 | bodyContains | Collection(String) | 条件または例外を適用するために、受信メッセージの本文に表示される文字列を表します。 |
 | bodyOrSubjectContains | Collection(String) | 条件または例外を適用するために、受信メッセージの本文または件名に表示される文字列を表します。 |
@@ -29,7 +29,7 @@ ms.locfileid: "27968387"
 | isApprovalRequest | Boolean | 条件または例外を適用するために、受信メッセージが承認要求であるかどうかを示します。 |
 | isAutomaticForward | Boolean | 条件または例外を適用するために、受信メッセージが自動的に転送されるかどうかを示します。 |
 | isAutomaticReply | Boolean | 条件または例外を適用するために、受信メッセージが自動返信であるかどうかを示します。 |
-| isEncrypted | Boolean | 条件または例外を適用するために、受信メッセージが暗号化されるかどうかを示します。 |
+| isEncrypted | ブール型 | 条件または例外を適用するために、受信メッセージが暗号化されるかどうかを示します。 |
 | isMeetingRequest | Boolean | 条件または例外を適用するために、受信メッセージが会議出席依頼であるかどうかを示します。 |
 | isMeetingResponse | Boolean | 条件または例外を適用するために、受信メッセージが会議出席依頼の返信であるかどうかを示します。 |
 | isNonDeliveryReport | Boolean | 条件または例外を適用するために、受信メッセージが配信不能レポートであるかどうかを示します。 |
@@ -37,11 +37,11 @@ ms.locfileid: "27968387"
 | isReadReceipt | Boolean | 条件または例外を適用するために、受信メッセージが開封確認メッセージであるかどうかを示します。 |
 | isSigned | Boolean | 条件または例外を適用するために、受信メッセージが S/MIME 署名されているかどうかを示します。 |
 | isVoicemail | Boolean | 条件または例外を適用するために、受信メッセージがボイス メールかどうかを示します。 |
-| messageActionFlag | messageActionFlag  | 条件または例外を適用するために、受信メッセージに表示されるアクション フラグの値を表します。 可能な値: `any`、 `call`、 `doNotForward`、 `followUp`、 `fyi`、 `forward`、 `noResponseNecessary`、 `read`、 `reply`、 `replyToAll`、 `review`。 |
+| messageActionFlag | messageActionFlag  | 条件または例外を適用するために、受信メッセージに表示されるアクション フラグの値を表します。 使用可能な値は`any`、 `call`、 `doNotForward` `followUp` `fyi` `forward` `noResponseNecessary` `read` `reply`、、、、、、、、、 `review` `replyToAll`です。 |
 | notSentToMe | Boolean | 条件または例外を適用するために、メールボックスの所有者が受信メッセージの受信者でないことを示します。 |
 | recipientContains | Collection(String) | 条件または例外を適用するために、受信メッセージの **ToRecipients** または **CcRecipients** プロパティに表示される文字列を表します。 |
 | senderContains | Collection(String) | 条件または例外を適用するために、受信メッセージの **From** プロパティに表示される文字列を表します。 |
-| sensitivity | sensitivity | 秘密度のレベルを適用する場合の条件または例外の順序で受信したメッセージにスタンプする必要があることを表します。 可能な値: `normal`、 `personal`、 `private`、 `confidential`。 |
+| sensitivity | sensitivity | 条件または例外を適用するために、受信メッセージにスタンプする必要がある秘密度レベルを表します。 使用可能な値は`normal`、 `personal`、 `private`、 `confidential`、です。 |
 | sentCcMe | Boolean | 条件または例外を適用するために、メールボックスの所有者が受信メッセージの **ccRecipients** プロパティにあるかどうかを示します。 |
 | sentOnlyToMe | Boolean | 条件または例外を適用するために、メールボックスの所有者が受信メッセージの唯一の受信者かどうかを示します。 |
 | sentToAddresses | コレクション ([受信者](recipient.md)) | 条件または例外を適用するために、受信メッセージが送信されたメール アドレスを表します。 |

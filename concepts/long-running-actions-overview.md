@@ -2,16 +2,16 @@
 title: 長時間実行アクションの処理 (ベータ版)
 description: この記事では、長時間実行アクションの処理について説明します。
 localization_priority: Normal
-ms.openlocfilehash: d7ee9631e9e18ae1972e2b156366c66d3d3dd455
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: HT
+author: daspek
+ms.openlocfilehash: 4512672ea44e944fd77e95249aa439f0ee9e84ba
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868055"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32560782"
 ---
 # <a name="working-with-long-running-actions-beta"></a>長時間実行アクションの処理 (ベータ版)
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
 
 一部の API 応答では、完了までに要する時間が不明です。
 アクションが完了するまで待機してから応答を返す代わりに、Microsoft Graph では長時間実行アクションのパターンを使用できます。
@@ -60,8 +60,7 @@ Location: https://api.onedrive.com/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 
 ## <a name="retrieve-a-status-report-from-the-monitor-url"></a>モニター URL から状態レポートを取得する
 
-コピー アクションの状態を確認するために、アプリは前の応答で提供された URL に要求を行います。
-*注:* この要求には、認証は必要ありません。この URL の有効期間は短く、最初の呼び出し元に一意であるためです。 
+コピー アクションのステータスを確認するために、アプリは前の応答で提供された URL に要求を送信します。 *注:* この要求には、認証は必要ありません。この URL の有効期間は短く、最初の呼び出し元に一意であるためです。 
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "lro-check-status", "scopes": "files.readwrite" } -->
 
@@ -84,13 +83,11 @@ Content-type: application/json
 }
 ```
 
-この情報は、コピー アクションの進行状況に関する最新情報をユーザーに提供するために使用できます。
-アプリは、状態の最新情報を要求してアクションの進行状況を追跡するために、継続してモニター URL をポーリングできます。
+この情報は、コピー アクションの進行状況に関する最新情報をユーザーに提供するために使用できます。 アプリは、ステータスの最新情報を要求してアクションの進行状況を追跡するために、モニター URL へのポーリングを継続できます。
 
 ## <a name="retrieve-a-completed-status-report-from-the-monitor-url"></a>モニター URL から完了状態レポートを取得する
 
-コピー操作が完了してから数秒経過しています。
-このときにアプリがモニター URL に要求を送信すると、完了したアクションの結果にリダイレクトする応答が返されます。
+コピー操作が完了してから数秒経過しています。 このときにアプリがモニター URL に要求を送信すると、完了したアクションの結果にリダイレクトする応答が返されます。
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "lro-check-status-complete", "scopes": "files.readwrite" } -->
 

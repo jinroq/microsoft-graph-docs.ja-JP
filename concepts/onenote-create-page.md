@@ -5,11 +5,11 @@ author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
 ms.openlocfilehash: ce2da5df9dddc54f2257ee9dd110c4f6460bd03d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27949620"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32558392"
 ---
 # <a name="create-onenote-pages"></a>OneNote ページの作成
 
@@ -118,7 +118,7 @@ Content-Type: application/xhtml+xml
 
 入力 HTML を送信するときには、次に示す一般的な要件と制限事項に注意してください。  
 
-- 入力 HTML は、UTF-8 でエンコードされた整形式の XHTML である必要があります。すべてのコンテナーの開始タグは、終了タグと一致する必要があります。すべての属性値は、二重引用符または一重引用符で囲む必要があります。<!--docs say MUST be encoded-->
+- 入力 HTML は、UTF-8 でエンコードされた整形式の XHTML である必要があります。 すべてのコンテナーの開始タグは、終了タグと一致する必要があります。 すべての属性値は、二重引用符または一重引用符で囲む必要があります。  <!--docs say MUST be encoded-->
 
 - JavaScript コード (ファイルを含む) および CSS は削除されます。 
 

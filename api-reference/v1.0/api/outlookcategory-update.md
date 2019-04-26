@@ -1,15 +1,15 @@
 ---
 title: Outlook カテゴリを更新する
-description: '指定した outlookCategory オブジェクトの書き込み可能な **color** プロパティを更新します。 **DisplayName**プロパティを変更することはできません。 '
+description: '指定した outlookCategory オブジェクトの書き込み可能な **color** プロパティを更新します。 **displayName**プロパティを変更することはできません '
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 65763a0bffa6536cffe755b6f0435a1d8d666937
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27912093"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562406"
 ---
 # <a name="update-outlook-category"></a>Outlook カテゴリを更新する
 
