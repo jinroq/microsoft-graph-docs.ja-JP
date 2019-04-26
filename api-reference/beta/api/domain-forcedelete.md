@@ -4,12 +4,12 @@ description: 非同期操作を使用してドメインを削除します。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5a1a2b2510f0c79f2be4e70deb9efabc65f8dfc4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c58b7d345ba7c5cdc7c029ecf929676fc7529f12
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454933"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325925"
 ---
 # <a name="domain-forcedelete"></a>ドメイン: forcedelete
 
@@ -64,7 +64,7 @@ POST /domains/{id}/forceDelete
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|disableuseraccounts|ブール型| 名前の変更されたユーザーアカウントを無効にするオプション。 ユーザーアカウントが無効になっている場合、ユーザーはサインインすることができません。<br>*True*(既定値)-この操作の一部として名前が変更されたユーザーアカウントは無効になります。<br>*False* -この操作の一部として名前が変更されたユーザーアカウントは無効になりません。 |
+|disableuseraccounts|Boolean| 名前の変更されたユーザーアカウントを無効にするオプション。 ユーザーアカウントが無効になっている場合、ユーザーはサインインすることができません。<br>*True*(既定値)-この操作の一部として名前が変更されたユーザーアカウントは無効になります。<br>*False* -この操作の一部として名前が変更されたユーザーアカウントは無効になりません。 |
 
 ## <a name="response"></a>応答
 
@@ -106,8 +106,6 @@ HTTP/1.1 200 OK
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/domain-forcedelete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

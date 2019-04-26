@@ -1,17 +1,17 @@
 ---
-title: Get ChartAxis
-description: chartAxis オブジェクトのプロパティと関係を取得します。
+title: workbookChartAxis を取得する
+description: workbookChartAxis オブジェクトのプロパティとリレーションシップを取得します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 98ce124c35fa39c6ad2ae41565b7ef180ff57c55
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5a07f899330167aa3e9fd4afc2989db5015b3ca6
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456627"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33327837"
 ---
-# <a name="get-chartaxis"></a>Get ChartAxis
+# <a name="get-workbookchartaxis"></a>workbookChartAxis を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,9 +28,9 @@ chartAxis オブジェクトのプロパティと関係を取得します。
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis
-GET /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis
-GET /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis
+GET /workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis
+GET /workbook/worksheets/{id|name}/charts/{name}/axes/seriesaxis
+GET /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
@@ -46,7 +46,7 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [ChartAxis](../resources/chartaxis.md) オブジェクトを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[workbookChartAxis](../resources/workbookchartaxis.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。
@@ -55,14 +55,14 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis
   "name": "get_chartaxis"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis
+GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis
 ```
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartaxis"
+  "@odata.type": "microsoft.graph.workbookChartAxis"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -70,12 +70,9 @@ Content-type: application/json
 Content-length: 64
 
 {
-  "majorUnit": {
-  },
-  "maximum": {
-  },
-  "minimum": {
-  }
+  "majorUnit": "string",
+  "maximum": "string",
+  "minimum": "string"
 }
 ```
 
@@ -88,8 +85,6 @@ Content-length: 64
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/chartaxis-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

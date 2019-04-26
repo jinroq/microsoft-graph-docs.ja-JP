@@ -4,14 +4,16 @@ description: ドメインへの参照を使用して、directoryobject の一覧
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 082c66367e87ad556cd79fa267eb7dfd8f1e0b56
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1695ced766b034284a5325f0edce24d1fd0e267e
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454912"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325970"
 ---
 # <a name="list-domainnamereferences"></a>リスト domainNameReferences
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ドメインへの参照を使用して、 [directoryobject](../resources/directoryobject.md)の一覧を取得します。 返される一覧には、ドメインに依存しているすべてのディレクトリオブジェクトが含まれています。
 
@@ -60,11 +62,11 @@ GET /domains/{id}/domainNameReferences
   "name": "get_domainnamereferences"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/domains/{domain-name}/domainNameReferences
+GET https://graph.microsoft.com/beta/domains/contoso.com/domainNameReferences
 ```
 
 ##### <a name="response"></a>応答
-注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。
+注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -94,10 +96,13 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List domainNameReferences",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

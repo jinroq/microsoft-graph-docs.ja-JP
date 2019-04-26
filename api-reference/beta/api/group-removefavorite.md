@@ -4,14 +4,17 @@ description: 現在のユーザーのお気に入りのグループ一覧から�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 4fad30c2cff494739e759567332e89a3d630954a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c6e1d81f9b6b95a3122850d09b918e33e07b6dd6
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32502072"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324185"
 ---
 # <a name="group-removefavorite"></a>グループ: removeFavorite
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 現在のユーザーのお気に入りのグループ一覧からグループを削除します。Office 365 のグループのみをサポートします。
 
 ## <a name="permissions"></a>アクセス許可
@@ -28,6 +31,7 @@ ms.locfileid: "32502072"
 ```http
 POST /groups/{id}/removeFavorite
 ```
+
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値 |
 |:---------------|:--------|
@@ -48,13 +52,15 @@ POST /groups/{id}/removeFavorite
   "name": "group_removefavorite"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/{id}/removeFavorite
+POST https://graph.microsoft.com/beta/groups/{id}/removeFavorite
 ```
 
 #### <a name="response"></a>応答
 応答の例を次に示します。
 <!-- {
-  "blockType": "response"
+  "blockType": "response",
+  "truncated": false,
+  "@odata.type": "microsoft.graph.none"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -62,10 +68,13 @@ HTTP/1.1 200 OK
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "group: removeFavorite",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

@@ -1,24 +1,24 @@
 ---
 title: websocket エンドポイントを取得する
-description: 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+description: 実稼働アプリケーションでは、これらの API の使用はサポートされていません。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 736684812d2cbc10affed82a3f946d75731f6768
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c1f4d793655c2f51454bbd58303d1f6141b46cc5
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454569"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325397"
 ---
 # <a name="get-websocket-endpoint"></a>websocket エンドポイントを取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+実稼働アプリケーションでは、これらの API の使用はサポートされていません。
 
 [socket.io][]を使用して、[ドライブ][]のほぼリアルタイムの変更通知を受け取ることができます。
 Socket.io は、websocket を利用する JavaScript の一般的な通知ライブラリです。 詳細については、「 [socket.io](https://socket.io)」を参照してください。
 
-[drive]: ../resources/drive.md
+[ドライブ]: ../resources/drive.md
 [socket.io]: https://socket.io/
 
 ## <a name="permissions"></a>アクセス許可
@@ -92,11 +92,3 @@ socket.on("connect", ()=>console.log("Connected!"));
 socket.on("notification", (data)=>console.log("Notification!", data));
 ```
 
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/driveItem-subscriptions-socketio.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

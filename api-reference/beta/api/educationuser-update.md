@@ -4,12 +4,12 @@ description: '**educationuser** オブジェクトのプロパティを更新し
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: ae49192b349f39b091ecaa1706099e5f10782432
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ef544aca0509322d12d6cd3e70e4c52334272bb3
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32464825"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324860"
 ---
 # <a name="update-educationuser-properties"></a>educationUser プロパティを更新する
 
@@ -42,14 +42,14 @@ PATCH /education/users/{id}
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|displayName| 文字列型 (String)| ユーザーの表示名|
+|displayName| 文字列| ユーザーの表示名|
 |givenName| String | 名 |
 |middleName| String | ユーザーのミドル ネーム|
 |surname| String | ユーザーの姓|
 |mail| String| メール アドレス|
 |mobilePhone| String | ユーザーの携帯電話番号 |
-|externalSource|string| 使用可能な値は、`sis`、`manual`、`enum_sentinel` です。|
-|externalSource|string| このユーザーが作成された場所。  使用可能な値は、`sis`、`manual`、`enum_sentinel` です。|
+|externalSource|string| 可能な値は、`sis`、`manual`、`enum_sentinel` です。|
+|externalSource|string| このユーザーが作成された場所。  可能な値は、`sis`、`manual`、`enum_sentinel` です。|
 |mailingAddress|[physicalAddress](../resources/physicaladdress.md)| ユーザーのメール アドレス。|
 |residenceAddress|[physicalAddress](../resources/physicaladdress.md)| ユーザーが在住している場所のアドレス。|
 |primaryRole|string| ユーザーの既定のロール。  ユーザーのロールは、個々のクラスで異なる場合があります。 使用可能な値: `student`、`teacher`、`enum_sentinel`。|
@@ -137,8 +137,6 @@ Content-length: 508
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/educationuser-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

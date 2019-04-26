@@ -4,14 +4,16 @@ description: 'グループに属している特定のスレッドを取得しま
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: f53afdd5416e2973c79ce3ec47e5101d3126d20f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 26612fd8d52d6c155994068fe1dbdc449d10bd5a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455612"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33326152"
 ---
 # <a name="get-conversationthread"></a>conversationThread を取得する
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 グループに属している特定のスレッドを取得します。親の会話とスレッドの両方を指定したり、親の会話を参照せずにスレッドを指定したりすることができます。 
 ## <a name="permissions"></a>アクセス許可
@@ -51,7 +53,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}
   "name": "get_conversationthread"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}
+GET https://graph.microsoft.com/beta/groups/{id}/threads/{id}
 ```
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
@@ -76,7 +78,7 @@ Content-length: 419
   ],
   "topic": "topic-value",
   "hasAttachments": true,
-  "lastDeliveredDateTime": "datetime-value",
+  "lastDeliveredDateTime": "2016-10-19T10:37:00Z",
   "uniqueSenders": [
     "uniqueSenders-value"
   ],
@@ -93,10 +95,13 @@ Content-length: 419
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get conversationThread",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

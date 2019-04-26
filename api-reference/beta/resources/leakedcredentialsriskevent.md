@@ -2,12 +2,12 @@
 title: leakedCredentialsRiskEvent リソースの種類
 description: アカウントの資格情報がワイルドカードで検出された Azure Active Directory id 保護によって検出されたリスクイベント。 リスクイベントに関する詳細な情報については、「Azure AD Identity Protection」のドキュメントを参照してください。
 localization_priority: Normal
-ms.openlocfilehash: 0884da08195ffa2bee38c943d27b1d25aef02e49
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1fbba14c25678b0e847c18648970a9fb551bee48
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581093"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345336"
 ---
 # <a name="leakedcredentialsriskevent-resource-type"></a>leakedCredentialsRiskEvent リソースの種類
 
@@ -27,7 +27,7 @@ ms.locfileid: "32581093"
 |:---------------|:--------|:----------|
 |closeddatetime|dateTimeOffset| リスクイベントが終了した日付と時刻|
 |createdDateTime|dateTimeOffset| リスクイベントが作成された日時。 これは常に、リスクイベント自体の datetime と同じかそれよりも大きくなります。 これは、リスクイベントを照会するときにフィルターとして使用する適切なプロパティです。|
-|id|string| 読み取り専用|
+|id|文字列| 読み取り専用|
 |riskEventDateTime|dateTimeOffset| リスクイベントが発生した日付と時刻|
 |riskEventStatus|string| 可能な値は、`active`、`remediated`、`dismissedAsFixed`、`dismissedAsFalsePositive`、`dismissedAsIgnore`、`loginBlocked`、`closedMfaAuto`、`closedMultipleReasons` です。|
 |riskLevel|string| 使用可能な値: `low`、`medium`、`high`。|
@@ -39,7 +39,7 @@ ms.locfileid: "32581093"
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|impactedUser|[ユーザー](user.md)| 読み取り専用。Null 許容型です。|
+|impactedUser|[user](user.md)| 読み取り専用。Null 許容型です。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -47,6 +47,7 @@ ms.locfileid: "32581093"
 
 <!-- {
   "blockType": "resource",
+  "keyProperty":"id",
   "optionalProperties": [
 
   ],
@@ -64,7 +65,8 @@ ms.locfileid: "32581093"
   "riskType": "string",
   "userDisplayName": "string",
   "userId": "string",
-  "userPrincipalName": "string"
+  "userPrincipalName": "string",
+  "riskEventType": "string"
 }
 
 ```
@@ -78,8 +80,6 @@ ms.locfileid: "32581093"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/leakedcredentialsriskevent.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

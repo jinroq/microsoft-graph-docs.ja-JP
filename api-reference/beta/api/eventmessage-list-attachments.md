@@ -4,14 +4,16 @@ description: attachment オブジェクトのリストを取得します。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 06c36179bcf5c79b287f6107c6c62d2a7dee89d7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e09f7f80ae5eab57c8cb29c81394479eedc3a66f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457383"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325059"
 ---
 # <a name="list-attachments"></a>添付ファイルを一覧表示する
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 attachment オブジェクトのリストを取得します。
 ## <a name="permissions"></a>アクセス許可
@@ -51,14 +53,14 @@ GET /users/{id | userPrincipalName}/messages/{id}/attachments
   "name": "get_attachments"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages/{id}/attachments
+GET https://graph.microsoft.com/beta/me/messages/{id}/attachments
 ```
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "collection(microsoft.graph.attachment)",
+  "@odata.type": "microsoft.graph.attachment",
   "isCollection": true
 } -->
 ```http
@@ -69,14 +71,15 @@ Content-length: 215
 {
   "value": [
     {
-      "@odata.type": "microsoft.graph.fileAttachment",
+      "@odata.type": "#Microsoft.OutlookServices.FileAttachment",
       "contentType": "contentType-value",
       "contentLocation": "contentLocation-value",
-      "contentBytes": "base64-contentBytes-value",
+      "contentBytes": "contentBytes-value",
       "contentId": "null",
-      "lastModifiedDateTime": "datetime-value",
+      "lastModifiedDateTime": "2016-10-19T10:37:00Z",
       "id": "id-value",
       "isInline": false,
+      "isContactPhoto": false,
       "name": "name-value",
       "size": 99
     }
@@ -86,10 +89,13 @@ Content-length: 215
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List attachments",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

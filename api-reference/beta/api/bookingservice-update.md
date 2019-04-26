@@ -4,12 +4,12 @@ description: 指定した bookingservice の bookingservice オブジェクト�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 6049fe68eaa45597246bef1c1b11952e3c4a5d42
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 41bcc4b31735cefb162a03a8c5a3dfd82cc6364e
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32461634"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322471"
 ---
 # <a name="update-bookingservice"></a>bookingservice を更新する
 
@@ -50,10 +50,10 @@ PATCH /bookingBusinesses/{id}/services/{id}
 |:---------------|:--------|:----------|
 |defaultduration|期間|サービスの既定の長さ。日数、時間、分、および秒で表されます。 たとえば、p11d23h59m 59.999999999999 s のようになります。 |
 |defaultLocation|[location](../resources/location.md)|サービスの既定の物理的な場所。|
-|既定の価格|倍精度浮動小数点数|サービスの既定の通貨料金。|
+|既定の価格|2 行分|サービスの既定の通貨料金。|
 |defaultPriceType|string|サービスの既定の課金方法。 可能な値は、`undefined`、`fixedPrice`、`startingAt`、`hourly`、`free`、`priceVaries`、`callUs`、`notSet` です。|
 |defaultreminders|[bookingreminder](../resources/bookingreminder.md)コレクション|このサービスの予定に対する既定のアラームのセット。 このプロパティの値は、この**bookingservice**を ID で読み取る場合にのみ使用できます。|
-|説明|String|サービスのテキストの説明。|
+|description|String|サービスのテキストの説明。|
 |displayName|String|サービス名。|
 |emailAddress|String|電子メールアドレス|
 |id|String| 読み取り専用です。|
@@ -101,8 +101,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/bookingservice-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

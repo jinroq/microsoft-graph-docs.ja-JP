@@ -4,14 +4,17 @@ description: 現在のユーザーのお気に入りのグループ一覧にグ�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 09bebe58349e4d040fb185c59d5158e9e39ec832
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 74142310eed68bf5d450e441d8471805894cabaf
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32503136"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33321873"
 ---
 # <a name="group-addfavorite"></a>グループ: addFavorite
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 現在のユーザーのお気に入りのグループ一覧にグループを追加します。Office 365 のグループのみをサポートします。
 
 ## <a name="permissions"></a>アクセス許可
@@ -33,7 +36,7 @@ POST /groups/{id}/addFavorite
 | ヘッダー       | 値 |
 |:---------------|:--------|
 | Authorization  | ベアラー {トークン}。必須。  |
-| Prefer | return=minimal. 最小応答ヘッダーが要求ヘッダーに含まれている場合、正常な応答で `204 No Content` コードが返されます。 省略可能。  |
+| Prefer | return=minimal. 最小応答ヘッダーが要求ヘッダーに含まれている場合、正常な応答で `204 No Content` コードが返されます。 省略可能。  | 
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -49,14 +52,15 @@ POST /groups/{id}/addFavorite
   "name": "group_addfavorite"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/{id}/addFavorite
+POST https://graph.microsoft.com/beta/groups/{id}/addFavorite
 ```
 
 #### <a name="response"></a>応答
 応答の例を次に示します。
 <!-- {
   "blockType": "response",
-  "truncated": false
+  "truncated": false,
+  "@odata.type": "microsoft.graph.none"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -64,10 +68,13 @@ HTTP/1.1 200 OK
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "group: addFavorite",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

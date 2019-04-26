@@ -4,12 +4,12 @@ description: dataPolicyOperation オブジェクトのプロパティを取得�
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5fff5d25ed83c6cfdf889c364630399acdeecb9e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f0f02e526e11962c8ab2f6573d6090535b46a296
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455263"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33326051"
 ---
 # <a name="get-datapolicyoperation"></a>dataPolicyOperation を取得する
 
@@ -21,7 +21,7 @@ dataPolicyOperation オブジェクトのプロパティを取得します。
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) |  すべてのユーザーとユーザーの. すべてをエクスポートします。  |
-|委任 (個人用 Microsoft アカウント) |  該当なし  |
+|委任 (個人用 Microsoft アカウント) |  該当しない  |
 |アプリケーション | すべてのユーザーとユーザーの. すべてをエクスポートします。 | 
 
 ## <a name="http-request"></a>HTTP 要求
@@ -49,7 +49,7 @@ GET /dataPolicyOperations/{id}
 GET https://graph.microsoft.com/beta/dataPolicyOperations/{id}
 ```
 ##### <a name="response"></a>応答
-注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。
+注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -67,7 +67,7 @@ Content-length: 212
   "storageLocation": "storageLocation-value",
   "userId": "userId-value",
   "submittedDateTime": "datetime-value",
-  "progress": "progress-value"
+  "progress": "double"
 }
 ```
 

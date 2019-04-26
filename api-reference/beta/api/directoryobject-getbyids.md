@@ -4,12 +4,12 @@ description: この操作に ` クエリ オプションは使用できません
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7c76335889f336af6098eb00740085b40614c1ee
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 71bb9a63318dd586021dfdb2b0e3e2ddd4737630
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455178"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33326025"
 ---
 # <a name="get-directory-objects-from-a-list-of-ids"></a>ID のリストからディレクトリ オブジェクトを取得します。
 
@@ -55,7 +55,7 @@ POST /directoryObjects/getByIds
 | パラメーター   | 型 |説明|
 |:---------------|:--------|:----------|
 |ids|String collection| オブジェクトを戻す ID のコレクション。最大 1000 ID まで指定できます。 |
-|types|String collection| 検索する一連のリソース コレクションを指定するリソース型のコレクションです。 指定しない場合、既定値は、ディレクトリで定義されているすべてのリソース型を含む [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta) になります。 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta) から派生する任意のオブジェクトをコレクションに指定できます。例: [user](/graph/api/resources/user?view=graph-rest-beta)、[group](/graph/api/resources/group?view=graph-rest-beta)、[device](/graph/api/resources/device?view=graph-rest-beta) など。 [クラウド ソリューション プロバイダー](https://partner.microsoft.com/en-us/cloud-solution-provider) パートナー組織への参照を検索するには、[directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta) を指定します。 指定しない場合、既定値は、ディレクトリで定義されているすべてのリソース型を含む [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta) になります ([クラウド ソリューション プロバイダー](https://partner.microsoft.com/en-us/cloud-solution-provider) パートナー組織への参照をのぞく)。 値では、大文字と小文字は区別されません。|
+|types|String コレクション| 検索する一連のリソース コレクションを指定するリソース型のコレクションです。 指定しない場合、既定値は、ディレクトリで定義されているすべてのリソース型を含む [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta) になります。 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta) から派生する任意のオブジェクトをコレクションに指定できます。例: [user](/graph/api/resources/user?view=graph-rest-beta)、[group](/graph/api/resources/group?view=graph-rest-beta)、[device](/graph/api/resources/device?view=graph-rest-beta) など。 [クラウド ソリューション プロバイダー](https://partner.microsoft.com/en-us/cloud-solution-provider) パートナー組織への参照を検索するには、[directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta) を指定します。 指定しない場合、既定値は、ディレクトリで定義されているすべてのリソース型を含む [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta) になります ([クラウド ソリューション プロバイダー](https://partner.microsoft.com/en-us/cloud-solution-provider) パートナー組織への参照をのぞく)。 値では、大文字と小文字は区別されません。|
 
 ## <a name="response"></a>応答
 
@@ -82,7 +82,7 @@ Content-type: application/json
 
 ##### <a name="response"></a>応答
 
-注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。
+注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 
 <!-- {
   "blockType": "response",
@@ -123,8 +123,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/directoryobject-getbyids.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -4,14 +4,17 @@ description: profilePhoto オブジェクトのリストを取得します。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 959c25bc9904a8145240f76baaf3271e29e17eef
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9d20ac132e46dbba73c0432121f7cd2ac137d24a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32502056"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324437"
 ---
 # <a name="list-photos"></a>写真の一覧表示
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 [profilePhoto](../resources/profilephoto.md) オブジェクトのリストを取得します。
 
 ## <a name="permissions"></a>アクセス許可
@@ -19,7 +22,7 @@ ms.locfileid: "32502056"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Group.ReadBasic.All、Group.Read.All、Group.ReadWrite.All |
+|委任 (職場または学校のアカウント) | Group.ReadBasic.All、Group.Read.All、Group.ReadWrite.All    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
 |アプリケーション | Group.ReadBasic.All、Group.Read.All、Group.ReadWrite.All |
 
@@ -29,6 +32,7 @@ ms.locfileid: "32502056"
 GET /groups/{id}/photos
 GET /users/{id | userPrincipalName}/joinedGroups/{id}/photos
 ```
+
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)をサポートします。
 
@@ -51,7 +55,7 @@ GET /users/{id | userPrincipalName}/joinedGroups/{id}/photos
   "name": "get_photos"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/groups/{id}/photos
+GET https://graph.microsoft.com/beta/groups/{id}/photos
 ```
 
 #### <a name="response"></a>応答
@@ -81,10 +85,13 @@ Content-length: 94
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List photos",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

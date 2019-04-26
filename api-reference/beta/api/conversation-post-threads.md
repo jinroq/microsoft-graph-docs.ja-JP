@@ -1,19 +1,21 @@
 ---
 title: スレッドを作成する
-description: '指定した会話に新しいスレッドを作成します。 '
+description: 指定した会話に新しいスレッドを作成します。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 8a4284e51ee74b43ae3e678ed8a54300cf9b9fe9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f4b939758906da1814ee4ffc2a722427bf4e7f6e
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455598"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33326691"
 ---
 # <a name="create-thread"></a>スレッドを作成する
 
-指定した会話に新しいスレッドを作成します。 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+指定した会話に新しいスレッドを作成します。
 
 指定したとおりにスレッドと投稿を作成します。[スレッドに返信](conversationthread-reply.md) を使用して、そのスレッドへの投稿を続けます。また、投稿 ID を取得している場合は、そのスレッドのその投稿にも[返信](post-reply.md)できます。
 
@@ -53,7 +55,7 @@ POST /groups/{id}/conversations/{id}/threads
   "name": "create_conversationthread_from_conversation"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/{id}/conversations/{id}/threads
+POST https://graph.microsoft.com/beta/groups/{id}/conversations/{id}/threads
 Content-type: application/json
 
 {
@@ -69,7 +71,7 @@ Content-type: application/json
 要求の本文に、[conversationThread](../resources/conversationthread.md) オブジェクトの JSON 表記を指定します。
 ##### <a name="response"></a>応答
 
-成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で新しいスレッドの `id` を返します。以下は、応答の例です。 
+成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で新しいスレッドの `id` を返します。以下は、応答の例です。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -87,10 +89,13 @@ Content-length: 346
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create thread",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

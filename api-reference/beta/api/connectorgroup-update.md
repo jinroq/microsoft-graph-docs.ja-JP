@@ -2,12 +2,12 @@
 title: コネクタグループの更新
 description: コネクタグループオブジェクトのプロパティを更新します。
 localization_priority: Normal
-ms.openlocfilehash: 9d6feec19552aeeebe51ba0fab07e805c6f4a2bb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: df45006b57886bd3296d92d34d75de65e5bbec89
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455766"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33327628"
 ---
 # <a name="update-connectorgroups"></a>コネクタグループの更新
 
@@ -90,8 +90,6 @@ Content-length: 119
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/connectorgroup-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

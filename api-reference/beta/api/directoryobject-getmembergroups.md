@@ -4,12 +4,12 @@ description: 指定したユーザー、グループ、サービスプリンシ�
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9ab73b691ed9cfa4c756e4f0134adf9df7350aae
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a5e690b0b72775e982222d8a09e40484d636b5d3
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455101"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325954"
 ---
 # <a name="get-member-groups"></a>メンバー グループを取得する
 
@@ -47,7 +47,7 @@ POST /directoryObjects/{id}/getMemberGroups
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|ブール値| エンティティがメンバーであるセキュリティ グループのみを返すように指定するには **true**、がメンバーであるすべてのグループとディレクトリ ロールを返すように指定するには **false** を設定します。**注**:パラメーターが **true** の場合、関数はユーザーでのみ呼び出せます。 |
+|securityEnabledOnly|Boolean| エンティティがメンバーであるセキュリティ グループのみを返すように指定するには **true**、がメンバーであるすべてのグループとディレクトリ ロールを返すように指定するには **false** を設定します。**注**:パラメーターが **true** の場合、関数はユーザーでのみ呼び出せます。 |
 
 ## <a name="response"></a>応答
 
@@ -62,7 +62,7 @@ POST /directoryObjects/{id}/getMemberGroups
   "name": "directoryobject_getmembergroups"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/getMemberGroups
+POST https://graph.microsoft.com/beta/me/getMemberGroups
 Content-type: application/json
 
 {
@@ -71,7 +71,7 @@ Content-type: application/json
 ```
 
 ##### <a name="response"></a>応答
-注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。
+注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -83,7 +83,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(Edm.String)",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(Edm.String)",
     "value": [
         "fee2c45b-915a-4a64-b130-f4eb9e75525e",
         "4fe90ae7-065a-478b-9400-e0a0e1cbd540",
@@ -101,8 +101,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/directoryobject-getmembergroups.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

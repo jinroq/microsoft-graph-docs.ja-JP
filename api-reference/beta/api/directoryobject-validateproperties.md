@@ -4,12 +4,12 @@ description: Office 365 グループの表示名またはメールニックネ�
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 515acb022150d091e7dcbbdecc1fb1adef849a88
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 182e1d97a0fe6406a0d5d2930cb87a473c7f9cdb
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455052"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325719"
 ---
 # <a name="directoryobject-validateproperties"></a>directoryobject: validateproperties
 
@@ -45,7 +45,7 @@ POST /directoryObjects/validateProperties
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |entityType|String| `Group`は、サポートされている唯一のエンティティの種類です。 |
-|displayName|String| 検証するグループの表示名。 プロパティが個別に必要ではありません。 ただし、少なくとも1つのプロパティ (displayName または mailNickname) が必要です。 |
+|displayName|文字列| 検証するグループの表示名。 プロパティが個別に必要ではありません。 ただし、少なくとも1つのプロパティ (displayName または mailNickname) が必要です。 |
 |mailNickname|String| 検証するグループのメールニックネーム。 プロパティが個別に必要ではありません。 ただし、少なくとも1つのプロパティ (displayName または mailNickname) が必要です。 |
 |onBehalfOfUserId|Guid| API を呼び出すときに偽装するユーザーのオブジェクト ID。 検証結果は、onBehalfOfUserId の属性とロールに対して行われます。 |
 
@@ -67,7 +67,7 @@ POST /directoryObjects/validateProperties
   "name": "directoryobject_validateproperties"
 }-->
 ``` http
-POST https://graph.microsoft.com/directoryObjects/validateProperties
+POST https://graph.microsoft.com/beta/directoryObjects/validateProperties
 Content-type: application/json
 Content-length: 164
 
@@ -92,7 +92,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="request"></a>要求
 ```http
-POST https://graph.microsoft.com/directoryObjects/validateProperties
+POST https://graph.microsoft.com/beta/directoryObjects/validateProperties
 Content-type: application/json
 Content-length: 164
 

@@ -2,12 +2,12 @@
 title: itemAttachment リソースの種類
 description: 別のイベントに添付されている連絡先、イベント、またはメッセージ
 localization_priority: Normal
-ms.openlocfilehash: cce33cb7597f04435daff723a0125305968eea99
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 91fedeac846d6f33aba6b4504eae71fe233a4324
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581105"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345425"
 ---
 # <a name="itemattachment-resource-type"></a>itemAttachment リソースの種類
 
@@ -22,19 +22,19 @@ ms.locfileid: "32581105"
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
 |[取得](../api/attachment-get.md) | [itemAttachment](itemattachment.md) |itemAttachment オブジェクトのプロパティと関係を読み取ります。|
-|[削除](../api/attachment-delete.md) | なし |itemAttachment オブジェクトを削除します。 |
+|[Delete](../api/attachment-delete.md) | なし |itemAttachment オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |contentType|String|添付ファイルのコンテンツ タイプ。|
 |id|String| 添付ファイル ID。|
-|isInline|ブール値|添付ファイルがインライン (アイテムの本文に埋め込まれた画像など) の場合に、true に設定します。|
+|isInline|Boolean|添付ファイルがインライン (アイテムの本文に埋め込まれた画像など) の場合に、true に設定します。|
 |lastModifiedDateTime|DateTimeOffset|添付ファイルが変更された最後の日時です。|
 |name|String|添付ファイルの表示名。|
 |size|Int32|添付ファイルのバイト単位のサイズ。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |item|[OutlookItem](outlookitem.md)|添付された連絡先、メッセージ、またはイベント。 ナビゲーション プロパティ。|
@@ -45,6 +45,7 @@ ms.locfileid: "32581105"
 
 <!-- {
   "blockType": "resource",
+  "keyProperty":"id",
   "optionalProperties": [
     "item"
   ],
@@ -71,8 +72,6 @@ ms.locfileid: "32581105"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/itemattachment.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

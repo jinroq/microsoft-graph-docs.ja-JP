@@ -3,16 +3,18 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: ファイルを検索する
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 201102a5332bc6e4ae6fe7d43a71238bb849b21e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 13e33a66cb2e32702d2afd1205959fd19477ead1
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454322"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325385"
 ---
 # <a name="search-for-a-driveitems-within-a-drive"></a>ドライブ内の DriveItems を検索する
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 クエリと一致するアイテムを対象にアイテムの階層を検索します。
 フォルダー階層内、ドライブ全体、現在のユーザーと共有されるファイル内で検索できます。
@@ -55,7 +57,7 @@ GET /users/{user-id}/drive/root/search(q='{search-text}')
 
 ここでは、現在のユーザーの OneDrive を検索する要求の例を示します。
 
-<!-- { "blockType": "request", "name": "item_search", "tags": "service.graph" }-->
+<!-- { "blockType": "request", "name": "item_search" }-->
 
 ```http
 GET /me/drive/root/search(q='{search-query}')
@@ -98,7 +100,7 @@ Content-type: application/json
 
 ### <a name="example"></a>例
 
-<!-- { "blockType": "request", "name": "item_search_all", "tags": "service.graph" }-->
+<!-- { "blockType": "request", "name": "item_search_all" }-->
 
 ```http
 GET /me/drive/search(q='{search-query}')
@@ -121,7 +123,7 @@ Content-type: application/json
         "name": "Contoso Project",
         "folder": {},
         "searchResult": { "onClickTelemetryUrl": "https://bing.com/0123456789abc!123" },
-        "remoteItem": { "id": "!23141901", "parentReference": { "driveId": "s!1020101jlkjl12lx" } }
+        "remoteItem": { "id": "!23141901", "driveId": "s!1020101jlkjl12lx" }
       },
       {
         "id": "0123456789abc!456",
@@ -142,10 +144,13 @@ Content-type: application/json
 [item-resource]: ../resources/driveitem.md
 [odata-query-parameters]: /graph/query-parameters
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Search for a file across a OneDrive.",
   "keywords": "search,query,bing,filename,content",
   "section": "documentation",
-  "tocPath": "Items/Search"
-} -->
+  "tocPath": "Items/Search",
+  "suppressions": []
+}
+-->

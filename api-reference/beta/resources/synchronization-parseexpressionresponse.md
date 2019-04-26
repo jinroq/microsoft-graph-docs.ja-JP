@@ -2,27 +2,27 @@
 title: parseexpression response リソースの種類
 description: '[同期スキーマ: parseexpression](../api/synchronization_synchronizationschema_parseexpression.md)アクションからの応答を表します。'
 localization_priority: Normal
-ms.openlocfilehash: f8ea708468e1e580693b2bd0e6f0e7f3494996f0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 14fcce13d2e78b99a8712c51768e6a94928fa07f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523435"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345555"
 ---
 # <a name="parseexpressionresponse-resource-type"></a>parseexpression response リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[同期スキーマ: parseexpression](../api/synchronization_synchronizationschema_parseexpression.md)アクションからの応答を表します。
+[parseexpression](../api/synchronization-synchronizationschema-parseexpression.md)アクションからの応答を表します。
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|エラー|odata。エラー|エラーの詳細。式の評価結果でエラーが発生した場合。|
+|エラー|publicerror|エラーの詳細。式の評価結果でエラーが発生した場合。|
 |evaluationresult|String collection|式の評価によって生成された値のコレクション。|
-|evaluationsucceeded|ブール値|`true`評価が成功した場合。|
+|evaluationsucceeded|Boolean|`true`評価が成功した場合。|
 |parsedExpression|[attributeMappingSource](synchronization-attributemappingsource.md)|解析された式を表す[attributeMappingSource](synchronization-attributemappingsource.md)オブジェクト。|
-|parsingsucceeded|ブール値|`true`式が正常に解析された場合。|
+|parsingsucceeded|Boolean|`true`式が正常に解析された場合。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -56,8 +56,6 @@ ms.locfileid: "32523435"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-parseexpressionresponse.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

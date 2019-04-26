@@ -4,14 +4,16 @@ description: "  グループ管理者は、クラス内の教師を表します�
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 148725d58d5647a85061f3b781e26cec2cb1c816
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d9aa8491ddbb0e81ae858d4dd0785afe40cd08bb
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457887"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324942"
 ---
 # <a name="get-educationclass"></a>Get educationClass
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 システムからクラスを取得します。 クラスは、グループがクラスであることをシステムに示す特別なプロパティを持つユニバーサル グループです。 グループのメンバーは学生を表します。グループ管理者はクラスの教師を表します。 委任されたトークンを使用している場合、ユーザーはユーザーがメンバーになっているクラスのみを参照できます。
 
@@ -49,7 +51,7 @@ GET /education/classes/{id}
   "name": "get_educationclass"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/education/classes/{class-id}
+GET https://graph.microsoft.com/beta/education/classes/11023
 ```
 ##### <a name="response"></a>応答
 応答の例を次に示します。 
@@ -86,10 +88,13 @@ Content-length: 224
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get educationClass",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

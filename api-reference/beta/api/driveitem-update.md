@@ -3,16 +3,18 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: ファイルまたはフォルダーを更新する
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 8da5c90383e7f73012bf86d668316c6443372425
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ec7a9c98fa23164ef58340cc5de8fae6a953c773
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454266"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325243"
 ---
 # <a name="update-driveitem-properties"></a>DriveItem プロパティを更新する
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [DriveItem](../resources/driveitem.md) のメタデータを、ID またはパスで更新します。
 
@@ -61,7 +63,7 @@ PATCH /users/{user-id}/drive/items/{item-id}
 
 この例では、DriveItem リソースを「new-file-name.docx」という名前に変更します。
 
-<!-- { "blockType": "request", "name": "update-item", "tags": "service.graph" } -->
+<!-- { "blockType": "request", "name": "update-item" } -->
 
 ```http
 PATCH /me/drive/items/{item-id}
@@ -96,10 +98,13 @@ Content-type: application/json
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update or replace the contents or properties of an item.",
   "keywords": "update,replace,contents,item",
   "section": "documentation",
-  "tocPath": "Items/Update"
-} -->
+  "tocPath": "Items/Update",
+  "suppressions": []
+}
+-->

@@ -4,19 +4,19 @@ ms.author: dspektor
 title: websocket エンドポイントを取得する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 4d4577ea69c65d6ce003af96b0d96b55fe178fb5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2172015e446b57706caeecf73b8da2b6b486f7d3
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562756"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345835"
 ---
 # <a name="get-websocket-endpoint"></a>websocket エンドポイントを取得する
 
 [socket.io][]を使用して、[ドライブ][]のほぼリアルタイムの変更通知を受け取ることができます。
 Socket.io は、websocket を利用する JavaScript の一般的な通知ライブラリです。 詳細については、「 [socket.io](https://socket.io)」を参照してください。
 
-[drive]: ../resources/drive.md
+[ドライブ]: ../resources/drive.md
 [socket.io]: https://socket.io/
 
 ## <a name="permissions"></a>アクセス許可
@@ -90,11 +90,3 @@ socket.on("connect", ()=>console.log("Connected!"));
 socket.on("notification", (data)=>console.log("Notification!", data));
 ```
 
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/driveItem-subscriptions-socketio.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

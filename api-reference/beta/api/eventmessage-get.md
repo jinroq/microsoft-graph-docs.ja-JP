@@ -4,12 +4,12 @@ description: "**イベント**の expand ' パラメーター"
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: ffa2524939e5866bc74d255606a7a28297d691d2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7996a8c2b1a574457af71e6ce3453aabe6c1e805
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32464001"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324166"
 ---
 # <a name="get-eventmessage"></a>eventMessage の取得
 
@@ -70,7 +70,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
   "name": "get_eventmessage"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/messages('AAMkADYAAAImV_lAAA=')
+GET https://graph.microsoft.com/beta/me/messages/AAMkADYAAAImV_lAAA=
 ```
 ##### <a name="response-1"></a>応答 1
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
@@ -186,7 +186,7 @@ Content-type: application/json
   "name": "get_event_based_on_eventmessage"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/messages('AAMkADYAAAImV_jAAA=')?$expand=microsoft.graph.eventMessage/event
+GET https://graph.microsoft.com/beta/me/messages/AAMkADYAAAImV_jAAA=/?$expand=microsoft.graph.eventMessage/event
 ```
 ##### <a name="response-2"></a>応答 2
 以下は、応答の例です。 関連付けられているイベントのプロパティは、応答で返されます。
@@ -396,8 +396,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/eventmessage-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

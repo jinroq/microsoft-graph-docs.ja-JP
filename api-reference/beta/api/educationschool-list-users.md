@@ -4,14 +4,16 @@ description: 学校のユーザーのリストを取得します。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: ac037d2309246e8a2a7b4f763755fba77fbf8281
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b38a3a4d8934bb0597ceb13e37ce829696bde073
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457656"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322918"
 ---
 # <a name="list-educationusers"></a>educationUsers をリストする
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 学校のユーザーのリストを取得します。
 
@@ -49,7 +51,7 @@ GET /education/schools/{id}/users
   "name": "get_users"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/education/schools/{school-id}/users
+GET https://graph.microsoft.com/beta/education/schools/10002/users
 ```
 ##### <a name="response"></a>応答
 応答の例を次に示します。 
@@ -106,10 +108,13 @@ Content-length: 593
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List users",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

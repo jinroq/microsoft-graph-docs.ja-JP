@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: 再開可能なファイル アップロード
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: b0495a0c63400d6476c1ad9312e708b9ac880e42
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3801be631ab64c6ab2cb25ce48b4e846f9d77287
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454441"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325337"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>アップロード セッションを使ってサイズが大きいファイルをアップロードする
 
@@ -90,7 +90,7 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 | パラメーター            | 型                          | 説明
 |:---------------------|:------------------------------|:---------------------------------
 | item                 | ドライブ itemuploadableproperties | アップロードされるファイルに関するデータ
-| deferCommit          | ブール型                       | true に設定されている場合、コピー先でのファイルの最終作成では明示的な要求が必要になります。 OneDrive for business でのみ使用できます。
+| deferCommit          | Boolean                       | true に設定されている場合、コピー先でのファイルの最終作成では明示的な要求が必要になります。 OneDrive for business でのみ使用できます。
 
 ## <a name="item-properties"></a>アイテムのプロパティ
 
@@ -413,8 +413,6 @@ Content-Type: application/json
   "description": "Upload large files using an upload session.",
   "keywords": "upload,large file,fragment,BITS",
   "section": "documentation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/driveitem-createuploadsession.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

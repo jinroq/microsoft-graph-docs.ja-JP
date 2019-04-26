@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: アイテムにアクセスするための招待状を送信する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 1e02af913702aace46a5e3ca2f2e2650a2c7839e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3b5e0c6ef03af87af9f28745bd73bb0cb886852d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454329"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325292"
 ---
 # <a name="send-a-sharing-invitation"></a>共有の招待状を送信する
 
@@ -63,11 +63,11 @@ POST /users/{userId}/drive/items/{itemId}/invite
 |:-----------------|:------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
 | Recipients       | Collection([DriveRecipient](../resources/driverecipient.md)) | アクセスおよび共有の招待状を受信する、受信者のコレクション。                                            |
 | message          | String                                          | 共有の招待状に含まれるプレーンテキスト形式のメッセージ。最大の長さは 2000 文字です。 |
-| requireSignIn    | ブール型                                         | 共有アイテムを表示するために、招待状の受信者がサインインする必要のある場所を指定します。            |
+| requireSignIn    | Boolean                                         | 共有アイテムを表示するために、招待状の受信者がサインインする必要のある場所を指定します。            |
 | sendInvitation   | ブール値                                         | 電子メールまたは投稿が生成されるのか (false)、アクセス許可のみが作成されるのか (true) を指定します。            |
 | roles            | Collection(String)                              | 共有の招待状の受信者に付与されるロールを指定します。                         |
 | expirationDateTime | DateTimeOffset                       | アクセス許可の有効期限が切れる日時を指定します。 onedrive for business、SharePoint、プレミアム個人用 onedrive のアカウントで利用できます。
-| password           | String                         | 作成者による招待に設定されたパスワード。 省略可能および OneDrive 個人用のみ
+| パスワード           | String                         | 作成者による招待に設定されたパスワード。 省略可能および OneDrive 個人用のみ
 
 ## <a name="example"></a>例
 
@@ -219,8 +219,6 @@ Content-type: application/json
   "keywords": "retrieve,item,metadata",
   "section": "documentation",
   "tocPath": "Sharing/Add permissions",
-  "suppressions": [
-    "Error: /api-reference/beta/api/driveitem-invite.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

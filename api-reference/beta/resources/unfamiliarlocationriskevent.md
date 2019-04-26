@@ -2,12 +2,12 @@
 title: unfamiliarLocationRiskEvent リソースの種類
 description: Azure Active Directory id 保護によって検出された、そのユーザーの新しい場所からアカウントのサインイン試行が行われたリスクイベント。 リスクイベントに関する詳細な情報については、「Azure AD Identity Protection」のドキュメントを参照してください。
 localization_priority: Normal
-ms.openlocfilehash: adad214c0ac58540f1115b836c2c5f26faa6c031
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 984f11f7e47a251d49acd315d29504216b7995f6
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584265"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345480"
 ---
 # <a name="unfamiliarlocationriskevent-resource-type"></a>unfamiliarLocationRiskEvent リソースの種類
 
@@ -27,7 +27,7 @@ ms.locfileid: "32584265"
 |:---------------|:--------|:----------|
 |closeddatetime|dateTimeOffset| リスクイベントが終了した日付と時刻|
 |createdDateTime|dateTimeOffset| リスクイベントが作成された日時。 これは常に、リスクイベント自体の datetime と同じかそれよりも大きくなります。 これは、リスクイベントを照会するときにフィルターとして使用する適切なプロパティです。|
-|id|string| 読み取り専用|
+|id|文字列| 読み取り専用|
 |ipAddress|string| サインインの IP アドレス|
 |location|string| サインインの IP アドレスに関連付けられている場所|
 |riskEventDateTime|dateTimeOffset| リスクイベントが発生した日付と時刻|
@@ -41,7 +41,7 @@ ms.locfileid: "32584265"
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|impactedUser|[ユーザー](user.md)| 読み取り専用。Null 許容型です。|
+|impactedUser|[user](user.md)| 読み取り専用。Null 許容型です。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -52,6 +52,8 @@ ms.locfileid: "32584265"
   "optionalProperties": [
 
   ],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.locatedRiskEvent",
   "@odata.type": "microsoft.graph.unfamiliarLocationRiskEvent"
 }-->
 
@@ -68,7 +70,8 @@ ms.locfileid: "32584265"
   "riskType": "string",
   "userDisplayName": "string",
   "userId": "string",
-  "userPrincipalName": "string"
+  "userPrincipalName": "string",
+  "riskEventType": "string"
 }
 
 ```
@@ -82,8 +85,6 @@ ms.locfileid: "32584265"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/unfamiliarlocationriskevent.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

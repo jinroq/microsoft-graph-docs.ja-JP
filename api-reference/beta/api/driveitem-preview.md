@@ -3,12 +3,12 @@ title: 'ドライブアイテム: プレビュー'
 description: このアクションを使用すると、一時的なプレビューを表示するために、短時間に埋め込まれた、アイテムの url を取得できます。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 5a49a05e1e01616bc9bbbb713fd05805d9af3070
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 74e6058d61fc5672bedd5e6479829f234707c45a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454371"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325150"
 ---
 # <a name="driveitem-preview"></a>ドライブアイテム: プレビュー
 
@@ -55,8 +55,8 @@ POST /shares/{shareId}/driveItem/preview
 | ビューアー      | string        | 省略可能。 使用するプレビューアプリ。 `onedrive` または `office`。 null の場合は、適切なビューアーが自動的に選択されます。
 | chromeless  | ブール値       | 省略可能。 If `true` (既定値) の場合、埋め込まれたビューにコントロールは含まれません。
 | allowEdit   | ブール値       | 省略可能。 の`true`場合は、埋め込み UI からファイルを編集できます。
-| page        | 文字列または数値 | 省略可能です。 開始するドキュメントのページ番号 (該当する場合)。 ZIP などのファイルの種類に関する今後のユースケースの文字列として指定されます。
-| ズーム        | number        | 省略可能です。 必要に応じて、開始するズームレベルを表示します。
+| page        | 文字列または数値 | 省略可能。 開始するドキュメントのページ番号 (該当する場合)。 ZIP などのファイルの種類に関する今後のユースケースの文字列として指定されます。
+| ズーム        | number        | 省略可能。 必要に応じて、開始するズームレベルを表示します。
 
 ## <a name="response"></a>応答
 
@@ -78,7 +78,7 @@ POST /shares/{shareId}/driveItem/preview
 
 指定したオプションの embed サポートの現在の状態に応じて、getUrl、posturl、または both のどちらかが返される場合があります。
 
-postparameters はとして`application/x-www-form-urlencoded`書式設定された文字列です。 postparameters への投稿を実行する場合は、コンテンツタイプを適宜設定する必要があります。 次に例を示します。
+postparameters はとして`application/x-www-form-urlencoded`書式設定された文字列です。 postparameters への投稿を実行する場合は、コンテンツタイプを適宜設定する必要があります。 例:
 ```
 POST https://www.onedrive.com/embed_by_post
 Content-Type: application/x-www-form-urlencoded
@@ -109,11 +109,3 @@ param1=value&param2=another%20value
 ### <a name="pagezoom"></a>ページ/ズーム
 
 および`page` `zoom`オプションは、すべてのプレビューアプリで使用できるわけではありませんが、プレビューアプリがサポートしている場合は適用されます。
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/driveitem-preview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

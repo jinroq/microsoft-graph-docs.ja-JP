@@ -1,19 +1,21 @@
 ---
 title: ユーザーを一覧表示する
-description: ユーザー オブジェクトのリストを取得します。 これらのユーザーオブジェクトには、教育機関に固有のプロパティが含まれます。
+description: ユーザー オブジェクトの一覧を取得します。 これらのユーザーオブジェクトには、教育機関に固有のプロパティが含まれます。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 761725dae02839721fbc710aecd30d4d8d5b03d3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e03c451f0bc470a166d6c90ef1217c4f0770c799
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457778"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322916"
 ---
 # <a name="list-users"></a>ユーザーを一覧表示する
 
-ユーザー オブジェクトのリストを取得します。 これらのユーザーオブジェクトには、教育機関に固有のプロパティが含まれます。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+ユーザー オブジェクトの一覧を取得します。 これらのユーザーオブジェクトには、教育機関に固有のプロパティが含まれます。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -49,7 +51,7 @@ GET /education/users
   "name": "get_users"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/education/users
+GET https://graph.microsoft.com/beta/education/users
 ```
 ##### <a name="response"></a>応答
 応答の例を次に示します。 
@@ -106,10 +108,13 @@ Content-length: 593
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List users",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

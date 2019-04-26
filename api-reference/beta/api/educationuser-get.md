@@ -4,14 +4,16 @@ description: ユーザーのプロパティとリレーションシップを取�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 0d2f20099de7083ce5dd09dbe98893c680490820
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 64b31bec8b940893c425c507bdff2af93cacc4c5
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32464797"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33321971"
 ---
 # <a name="get-educationuser"></a>educationUser を取得する
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ユーザーのプロパティとリレーションシップを取得します。
 
@@ -49,7 +51,7 @@ GET /education/users/{id}
   "name": "get_educationuser"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/education/users/{user-id}
+GET https://graph.microsoft.com/beta/education/users/13012
 ```
 ##### <a name="response"></a>応答
 応答の例を次に示します。 
@@ -101,10 +103,13 @@ Content-length: 508
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get educationUser",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->
