@@ -1,31 +1,31 @@
 ---
 title: mediaInfo リソースの種類
-description: アクションで使用されるメディアの情報には次のメッセージが表示されます。
+description: プロンプトのアクションで使用されるメディア情報。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 65cf71f5c116fe213d0e32d560ec24704bff1172
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523982"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562618"
 ---
-# <a name="mediainfo-resource-type"></a><span data-ttu-id="52243-103">mediaInfo リソースの種類</span><span class="sxs-lookup"><span data-stu-id="52243-103">mediaInfo resource type</span></span>
+# <a name="mediainfo-resource-type"></a><span data-ttu-id="f59f7-103">mediaInfo リソースの種類</span><span class="sxs-lookup"><span data-stu-id="f59f7-103">mediaInfo resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="52243-104">アクションで使用されるメディアの情報には次のメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="52243-104">The media information used in actions for prompts.</span></span>
+<span data-ttu-id="f59f7-104">プロンプトのアクションで使用されるメディア情報。</span><span class="sxs-lookup"><span data-stu-id="f59f7-104">The media information used in actions for prompts.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="52243-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="52243-105">Properties</span></span>
-| <span data-ttu-id="52243-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="52243-106">Property</span></span>       | <span data-ttu-id="52243-107">型</span><span class="sxs-lookup"><span data-stu-id="52243-107">Type</span></span>    | <span data-ttu-id="52243-108">説明</span><span class="sxs-lookup"><span data-stu-id="52243-108">Description</span></span>                      |
+## <a name="properties"></a><span data-ttu-id="f59f7-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="f59f7-105">Properties</span></span>
+| <span data-ttu-id="f59f7-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="f59f7-106">Property</span></span>       | <span data-ttu-id="f59f7-107">型</span><span class="sxs-lookup"><span data-stu-id="f59f7-107">Type</span></span>    | <span data-ttu-id="f59f7-108">説明</span><span class="sxs-lookup"><span data-stu-id="f59f7-108">Description</span></span>                      |
 |:---------------|:--------|:---------------------------------|
-| <span data-ttu-id="52243-109">resourceId</span><span class="sxs-lookup"><span data-stu-id="52243-109">resourceId</span></span>     | <span data-ttu-id="52243-110">文字列型 (String)</span><span class="sxs-lookup"><span data-stu-id="52243-110">String</span></span>  | <span data-ttu-id="52243-111">リソースの一意の id。</span><span class="sxs-lookup"><span data-stu-id="52243-111">Unique identity of the resource.</span></span> |
-| <span data-ttu-id="52243-112">uri</span><span class="sxs-lookup"><span data-stu-id="52243-112">uri</span></span>            | <span data-ttu-id="52243-113">String</span><span class="sxs-lookup"><span data-stu-id="52243-113">String</span></span>  | <span data-ttu-id="52243-114">リソースへのパス。</span><span class="sxs-lookup"><span data-stu-id="52243-114">Path to the resource.</span></span>            |
+| <span data-ttu-id="f59f7-109">resourceId</span><span class="sxs-lookup"><span data-stu-id="f59f7-109">resourceId</span></span>     | <span data-ttu-id="f59f7-110">String</span><span class="sxs-lookup"><span data-stu-id="f59f7-110">String</span></span>  | <span data-ttu-id="f59f7-111">リソースの一意の id です。</span><span class="sxs-lookup"><span data-stu-id="f59f7-111">Unique identity of the resource.</span></span> |
+| <span data-ttu-id="f59f7-112">uri</span><span class="sxs-lookup"><span data-stu-id="f59f7-112">uri</span></span>            | <span data-ttu-id="f59f7-113">String</span><span class="sxs-lookup"><span data-stu-id="f59f7-113">String</span></span>  | <span data-ttu-id="f59f7-114">リソースへのパス。</span><span class="sxs-lookup"><span data-stu-id="f59f7-114">Path to the resource.</span></span>            |
 
-## <a name="json-representation"></a><span data-ttu-id="52243-115">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="52243-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f59f7-115">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="f59f7-115">JSON representation</span></span>
 
-<span data-ttu-id="52243-116">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="52243-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="f59f7-116">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="f59f7-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

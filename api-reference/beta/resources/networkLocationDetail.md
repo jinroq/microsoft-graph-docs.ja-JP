@@ -1,29 +1,29 @@
 ---
-title: networkLocationDetail リソースの種類
-description: ネットワーク上の場所に関連付けられている詳細情報を示します。 .
+title: networklocationdetail リソースの種類
+description: ネットワークの場所に関連付けられている詳細を示します。 .
 localization_priority: Normal
 ms.openlocfilehash: bfa84591f543253ed794016bbc2d25d325cd0bcc
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643763"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581444"
 ---
-# <a name="networklocationdetail-resource-type"></a><span data-ttu-id="a15ad-104">networkLocationDetail リソースの種類</span><span class="sxs-lookup"><span data-stu-id="a15ad-104">networkLocationDetail resource type</span></span>
-<span data-ttu-id="a15ad-105">ネットワーク上の場所に関連付けられている詳細情報を示します。</span><span class="sxs-lookup"><span data-stu-id="a15ad-105">Indicates details associated with the network location.</span></span> <span data-ttu-id="a15ad-106">.</span><span class="sxs-lookup"><span data-stu-id="a15ad-106"></span></span>
+# <a name="networklocationdetail-resource-type"></a><span data-ttu-id="2f53f-104">networklocationdetail リソースの種類</span><span class="sxs-lookup"><span data-stu-id="2f53f-104">networkLocationDetail resource type</span></span>
+<span data-ttu-id="2f53f-105">ネットワークの場所に関連付けられている詳細を示します。</span><span class="sxs-lookup"><span data-stu-id="2f53f-105">Indicates details associated with the network location.</span></span> <span data-ttu-id="2f53f-106">.</span><span class="sxs-lookup"><span data-stu-id="2f53f-106"></span></span>
 
 
 
-## <a name="properties"></a><span data-ttu-id="a15ad-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="a15ad-107">Properties</span></span>
-| <span data-ttu-id="a15ad-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="a15ad-108">Property</span></span>     | <span data-ttu-id="a15ad-109">型</span><span class="sxs-lookup"><span data-stu-id="a15ad-109">Type</span></span>   |<span data-ttu-id="a15ad-110">説明</span><span class="sxs-lookup"><span data-stu-id="a15ad-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="2f53f-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="2f53f-107">Properties</span></span>
+| <span data-ttu-id="2f53f-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="2f53f-108">Property</span></span>     | <span data-ttu-id="2f53f-109">型</span><span class="sxs-lookup"><span data-stu-id="2f53f-109">Type</span></span>   |<span data-ttu-id="2f53f-110">説明</span><span class="sxs-lookup"><span data-stu-id="2f53f-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="a15ad-111">networkType</span><span class="sxs-lookup"><span data-stu-id="a15ad-111">networkType</span></span>|<span data-ttu-id="a15ad-112">String</span><span class="sxs-lookup"><span data-stu-id="a15ad-112">String</span></span>|<span data-ttu-id="a15ad-113">ネットワークの種類を提供します。</span><span class="sxs-lookup"><span data-stu-id="a15ad-113">Provides the type of the network.</span></span> <span data-ttu-id="a15ad-114">使用可能な値は、 `intranet`、 `extranet`、`namedNetwork`と`trusted`。</span><span class="sxs-lookup"><span data-stu-id="a15ad-114">Possible values are `intranet`, `extranet`, `namedNetwork`, and `trusted`.</span></span>|
-|<span data-ttu-id="a15ad-115">ネットワーク名リソース</span><span class="sxs-lookup"><span data-stu-id="a15ad-115">networkName</span></span>|<span data-ttu-id="a15ad-116">String</span><span class="sxs-lookup"><span data-stu-id="a15ad-116">String</span></span>|<span data-ttu-id="a15ad-117">ネットワークの名前です。</span><span class="sxs-lookup"><span data-stu-id="a15ad-117">Name of the network.</span></span>|
+|<span data-ttu-id="2f53f-111">networkType</span><span class="sxs-lookup"><span data-stu-id="2f53f-111">networkType</span></span>|<span data-ttu-id="2f53f-112">String</span><span class="sxs-lookup"><span data-stu-id="2f53f-112">String</span></span>|<span data-ttu-id="2f53f-113">ネットワークの種類を示します。</span><span class="sxs-lookup"><span data-stu-id="2f53f-113">Provides the type of the network.</span></span> <span data-ttu-id="2f53f-114">可能な値`intranet`は`extranet` `namedNetwork`、、、 `trusted`およびです。</span><span class="sxs-lookup"><span data-stu-id="2f53f-114">Possible values are `intranet`, `extranet`, `namedNetwork`, and `trusted`.</span></span>|
+|<span data-ttu-id="2f53f-115">networkname</span><span class="sxs-lookup"><span data-stu-id="2f53f-115">networkName</span></span>|<span data-ttu-id="2f53f-116">String</span><span class="sxs-lookup"><span data-stu-id="2f53f-116">String</span></span>|<span data-ttu-id="2f53f-117">ネットワークの名前。</span><span class="sxs-lookup"><span data-stu-id="2f53f-117">Name of the network.</span></span>|
 
 
-## <a name="json-representation"></a><span data-ttu-id="a15ad-118">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="a15ad-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="2f53f-118">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="2f53f-118">JSON representation</span></span>
 
-<span data-ttu-id="a15ad-119">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="a15ad-119">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="2f53f-119">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="2f53f-119">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
