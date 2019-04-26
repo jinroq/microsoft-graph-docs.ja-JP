@@ -2,12 +2,12 @@
 title: passwordcredential リソースの種類
 description: アプリケーションまたはサービスプリンシパルに関連付けられているパスワード資格情報を格納します。 serviceprincipal エンティティおよび application エンティティの**passwordcredentials**プロパティは、 **passwordcredentials**のコレクションです。
 localization_priority: Normal
-ms.openlocfilehash: 900bfb8a5828d636dfa1f1abfd0348ceb4aee143
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f00deb42dcc24fc6d8218239d5d807ee21b2f7c3
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568468"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345015"
 ---
 # <a name="passwordcredential-resource-type"></a>passwordcredential リソースの種類
 

@@ -4,12 +4,12 @@ description: sharepoint サイトにユーザーが格納しているファイ�
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: f25d752a179eac68b34465010ce6f2cb7fab08e8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 856680732b7dce1b6e0b83105c64d86b72897967
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584077"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343159"
 ---
 # <a name="sharepoint-site-usage-reports"></a>SharePoint サイト使用状況レポート
 
@@ -28,11 +28,3 @@ sharepoint サイトにユーザーが格納しているファイルの総数、
 | [サイトの数を取得する](../api/reportroot-getsharepointsiteusagesitecounts.md) | Stream          | [sharepointsiteusagesitecounts](../resources/sharepointsiteusagesitecounts.md) | すべてのサイトのファイルの合計数と、アクティブ ファイルの数を取得します。 ファイル (ユーザーまたはシステム) は、一定期間中に保存、同期、変更、共有されるとアクティブとみなされます。 |
 | [ストレージを取得する](../api/reportroot-getsharepointsiteusagestorage.md) | Stream          | [サイトの保存場所](../resources/siteusagestorage.md) | レポート期間中に割り当てられ、消費したストレージの傾向を取得します。 |
 | [ページを取得する](../api/reportroot-getsharepointsiteusagepages.md) | Stream          | [sharepointsiteのページ](../resources/sharepointsiteusagepages.md) | すべてのサイトで表示されたページ数を取得します。 |
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/sharepoint-site-usage-reports.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

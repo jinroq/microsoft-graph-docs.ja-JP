@@ -4,12 +4,12 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: RemoteItem
 localization_priority: Normal
-ms.openlocfilehash: 9c57c9909e223659a8d9af557522183e532e7678
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 264c2aadf13097a728bc784aa9eb61e55d5ea819
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563140"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343872"
 ---
 # <a name="remoteitem-resource-type"></a>RemoteItem リソースの種類
 

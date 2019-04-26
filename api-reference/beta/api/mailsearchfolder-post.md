@@ -4,12 +4,12 @@ description: この API を使用して、指定したユーザーのメール�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 7ef9992e1b0eaee83c39831424215cb9756f895d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bdebbcb9c842d57d4c6ee8d8eb72f45df74a22d7
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32540645"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333311"
 ---
 # <a name="create-mailsearchfolder"></a>mailsearchfolder を作成する
 
@@ -53,7 +53,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 |:----------|:-----|:------------|
 | @odata.type | String | 作成するフォルダーの種類を指定します。 "..." フォルダーに設定します。 |
 | displayName | String | 新しいフォルダーの表示名です。|
-| includeNestedFolders | ブール値 | メールボックスフォルダー階層をスキャンする方法。 `true`詳細検索を実行`false`する必要がある場合は、その代わりに浅い検索を実行する必要があることを意味します。 |
+| includeNestedFolders | Boolean | メールボックスフォルダー階層をスキャンする方法。 `true`詳細検索を実行`false`する必要がある場合は、その代わりに浅い検索を実行する必要があることを意味します。 |
 | sourceFolderIDs | String collection | マイニングするメールボックスフォルダー。 |
 | filterquery | String | メッセージをフィルター処理するための OData クエリ。 |
 
@@ -128,8 +128,6 @@ Content-length: 179
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/mailsearchfolder-post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

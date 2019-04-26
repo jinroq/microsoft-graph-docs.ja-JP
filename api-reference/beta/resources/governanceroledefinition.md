@@ -2,12 +2,12 @@
 title: governanceRoleDefinition リソースの種類
 description: ロール定義を表します。 azure リソースの場合は、所有者、リーダー、共同作成者など、azure RBAC の役割を表すことができます。
 localization_priority: Normal
-ms.openlocfilehash: 867864892bac9107c44ba9125336429248b6697e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 27b4b144f834f3b5eb4270a2875da5add10efb9d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547448"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333758"
 ---
 # <a name="governanceroledefinition-resource-type"></a>governanceRoleDefinition リソースの種類
 
@@ -22,7 +22,7 @@ ms.locfileid: "32547448"
 | メソッド          | 戻り値の型 |説明|
 |:---------------|:--------|:--------|:----------|
 |[List](../api/governanceroledefinition-list.md) | [governanceRoleDefinition](../resources/governanceroledefinition.md)コレクション |リソースのロール定義のコレクションを一覧表示します。|
-|[取得](../api/governanceroledefinition-get.md) | [governanceRoleDefinition](../resources/governanceroledefinition.md) |id で指定されたロール定義エンティティのプロパティとリレーションシップを読み取ります。|
+|[Get](../api/governanceroledefinition-get.md) | [governanceRoleDefinition](../resources/governanceroledefinition.md) |id で指定されたロール定義エンティティのプロパティとリレーションシップを読み取ります。|
 `PATCH` `roleDefinitions`現時点では、entity set ではサポートされていません`POST` `PUT` `DELETE`
 ## <a name="properties"></a>プロパティ
 | プロパティ  | 型      |説明|
@@ -30,16 +30,13 @@ ms.locfileid: "32547448"
 |id         |String     |ロール定義の id。 |
 |resourceId |String     |必須。 ロール定義に関連付けられているリソースの id。 |
 |externalId   |String     |ロール定義の外部 id。|
-|displayName|String     |ロール定義の表示名。|
-|subjectcount|Int32     |省略可能。 役割に割り当てられているサブジェクトの数。 これは、リソースへの要求者のアクセスの状態を表します。 プロパティを取得するには、クエリ`$select=subjectCount`で明示的にを使用してください。|
-|eligibleAssignmentCount|Int32|省略可能。 役割の定義に関連付けられている対象の役割の割り当ての数。 プロパティを取得するには、クエリ`$select=eligibleAssignmentCount`で明示的にを使用してください。|
-|active割り当てカウント|Int32    |省略可能。 ロール定義に関連付けられているアクティブなロール割り当ての数。  プロパティを取得するには、クエリ`$select=activeAssignmentCount`で明示的にを使用してください。|
-
+|displayName|文字列     |ロール定義の表示名。|
+|templateId | String | |
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|リソース|[governanceResource](../resources/governanceresource.md)|読み取り専用。 ロール定義に関連付けられているリソース。|
+|リソース|[governanceResource](../resources/governanceresource.md)|読み取り専用です。 ロール定義に関連付けられているリソース。|
 |rolesetting|[governanceRoleSetting](../resources/governancerolesetting.md)|ロール定義に関連付けられているロール設定。|
 
 ## <a name="json-representation"></a>JSON 表記
@@ -48,6 +45,7 @@ ms.locfileid: "32547448"
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],
@@ -59,7 +57,8 @@ ms.locfileid: "32547448"
   "id": "String (identifier)",
   "resourceId": "String",
   "externalId": "String",
-  "displayName": "String",
+  "displayName": "String",  
+  "templateId":"String"
 }
 
 ```
@@ -73,8 +72,6 @@ ms.locfileid: "32547448"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/governanceroledefinition.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

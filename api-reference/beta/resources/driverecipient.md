@@ -5,14 +5,16 @@ ms.date: 09/10/2017
 title: DriveRecipient
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 47a080b4f81645cfe5098ec8391d58cf07fca466
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c1a121969bf6b36c8afccd367a084a4b75599eaf
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543148"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334608"
 ---
 # <a name="driverecipient-resource"></a>DriveRecipient リソース
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **DriveRecipient** リソースは、[出席依頼](../api/driveitem-invite.md)アクションを使用して共有する個人、グループ、または他の受信者を表します。
 
@@ -43,10 +45,13 @@ ms.locfileid: "32543148"
 
 [出席依頼](../api/driveitem-invite.md)を使用して、アクセス許可を追加する場合は、DriveRecipient で **email**、**alias**、または **objectId** を指定できます。これらの値のうち 1 つのみが必要です。
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Recipients resource defines a single recipient for the sharing invitation and permissions collection.",
   "keywords": "sharing,share,permissions,action.invite,invite,email",
   "section": "documentation",
-  "tocPath": "Resources/Recipients"
-} -->
+  "tocPath": "Resources/Recipients",
+  "suppressions": []
+}
+-->

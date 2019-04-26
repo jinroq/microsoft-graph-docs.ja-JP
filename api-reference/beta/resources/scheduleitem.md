@@ -2,12 +2,12 @@
 title: scheduleitem リソースの種類
 description: ユーザーの既定の予定表にある実際のイベントに対応するユーザーの空き時間情報を示すアイテム。 この項目は、リソースにも適用されます。
 localization_priority: Normal
-ms.openlocfilehash: a39f45598ab3c427a741659aa93615317c3c57a7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d8b0d7bc18c00ca8bda3ef91b2ec8c629c980a97
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563060"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343467"
 ---
 # <a name="scheduleitem-resource-type"></a>scheduleitem リソースの種類
 

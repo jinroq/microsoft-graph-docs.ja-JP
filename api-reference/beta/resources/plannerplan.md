@@ -1,21 +1,21 @@
 ---
-title: plan リソースの種類を計画する
-description: プラン**** リソースは、Office 365 のプランを表します。 プランは、グループが所有することができ、プランのタスクのコレクションが含まれています。 また、プランのコレクションを持つこともできます。 各プランオブジェクトには details オブジェクトがあり、プランに関する詳細情報を含めることができます。 グループ、プラン、およびタスク間の関係の詳細については、「Planner」を参照してください。
+title: plannerPlan リソースの種類
+description: '**plannerPlan** リソースは、Office 365 での計画を表します。 計画は group によって所有され、plannerTasks のコレクションが含まれています。 plannerBuckets のコレクションを含む場合もあります。 各プランオブジェクトには details オブジェクトがあり、プランに関する詳細情報を含めることができます。 グループ、計画、タスク間のリレーションシップの詳細については、「Planner」を参照してください。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: f37f6ea08f2951256e2d7f94cf9abad7e8ac60b2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5da918e3ba0e8087d4572799168fa1132e0ce5e7
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32578870"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344467"
 ---
-# <a name="plannerplan-resource-type"></a>plan リソースの種類を計画する
+# <a name="plannerplan-resource-type"></a>plannerPlan リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-プラン**** リソースは、Office 365 のプランを表します。 プランは、[グループ](group.md)が所有することができ、プランの[タスク](plannertask.md)のコレクションが含まれています。 また、[プラン](plannerbucket.md)のコレクションを持つこともできます。 各プランオブジェクトには[details](plannerplandetails.md)オブジェクトがあり、プランに関する詳細情報を含めることができます。 グループ、プラン、およびタスク間の関係の詳細については、「 [Planner](planner-overview.md)」を参照してください。
+**plannerPlan** リソースは、Office 365 での計画を表します。 計画は [group](group.md) によって所有され、[plannerTasks](plannertask.md) のコレクションが含まれています。 [plannerBuckets](plannerbucket.md) のコレクションを含む場合もあります。 各プランオブジェクトには[details](plannerplandetails.md)オブジェクトがあり、プランに関する詳細情報を含めることができます。 グループ、計画、タスク間のリレーションシップの詳細については、「[Planner](planner-overview.md)」を参照してください。
 
 
 
@@ -23,27 +23,27 @@ ms.locfileid: "32578870"
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[Get plannerPlan](../api/plannerplan-get.md) | [plannerPlan](plannerplan.md) |**plan**オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[バケットをリストする](../api/plannerplan-list-buckets.md) |[プラン | バケット](plannerbucket.md)コレクション| **プラン**を取得するオブジェクトコレクション。|
-|[タスクを一覧表示する](../api/plannerplan-list-tasks.md) |[plannerTask](plannertask.md) コレクション| プランを取得する**タスク**オブジェクトコレクション。|
-|[更新する](../api/plannerplan-update.md) | [plannerPlan](plannerplan.md) |**plan**オブジェクトを更新します。 |
+|[Get plannerPlan](../api/plannerplan-get.md) | [plannerPlan](plannerplan.md) |**plannerPlan** オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[List buckets](../api/plannerplan-list-buckets.md) |[plannerBucket](plannerbucket.md) コレクション| **plannerBucket** オブジェクト コレクションを取得します。|
+|[List tasks](../api/plannerplan-list-tasks.md) |[plannerTask](plannertask.md) コレクション| **plannerTask** オブジェクト コレクションを取得します。|
+|[Update](../api/plannerplan-update.md) | [plannerPlan](plannerplan.md) |**plannerPlan** オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |createdDateTime|DateTimeOffset|読み取り専用。計画の作成日時。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
-|id|String| 読み取り専用。 プランの ID。 28 文字長で、大文字と小文字の区別があります。 [書式検証](tasks-identifiers-disclaimer.md)はサービスによって行われます。|
-|owner|String|プランを所有する[グループ](group.md)の ID。 このフィールドを設定するためには、有効なグループが存在していなければなりません。 設定された後は、このプロパティは更新できません。|
+|id|String| 読み取り専用です。 計画の ID。 28 文字長で、大文字と小文字の区別があります。 [書式検証](tasks-identifiers-disclaimer.md)はサービスによって行われます。|
+|owner|String|計画を所有している [Group](group.md) の ID。 このフィールドを設定するためには、有効なグループが存在していなければなりません。 設定すると、このプロパティを更新することはできません。|
 |title|String|必須。 計画のタイトル。|
-|createdBy|[identitySet](identityset.md)|読み取り専用。 プランを作成したユーザー。|
-|状況|[plannerPlanContextCollection](plannerplancontextcollection.md)| 読み取り専用。 このプランが使用される追加のユーザーエクスペリエンス。このプランは、[コンテキスト](plannerplancontext.md)エントリをプランとして表現します。|
+|createdBy|[identitySet](identityset.md)|読み取り専用です。 計画を作成したユーザー。|
+|状況|[plannerPlanContextCollection](plannerplancontextcollection.md)| 読み取り専用です。 このプランが使用される追加のユーザーエクスペリエンス。このプランは、[コンテキスト](plannerplancontext.md)エントリをプランとして表現します。|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|buckets|[プラン | バケット](plannerbucket.md)コレクション| 読み取り専用。Null 許容型。計画に含まれるバケットのコレクション。|
-|details|[plannerPlanDetails](plannerplandetails.md)| 読み取り専用。 Null 許容型。 計画に関する追加の詳細。|
-|tasks|[plannerTask](plannertask.md) コレクション| 読み取り専用。 Null 許容型。 計画に含まれるタスクのコレクション。|
+|buckets|[plannerBucket](plannerbucket.md) コレクション| 読み取り専用です。Null 許容型。計画に含まれるバケットのコレクション。|
+|詳細|[plannerPlanDetails](plannerplandetails.md)| 読み取り専用です。 Null 許容型。 計画に関する追加の詳細。|
+|tasks|[plannerTask](plannertask.md) コレクション| 読み取り専用です。 Null 許容型。 計画に含まれるタスクのコレクション。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -54,6 +54,8 @@ ms.locfileid: "32578870"
   "optionalProperties": [
 
   ],
+  "keyProperty": "id",
+  "baseType":"microsoft.graph.entity",  
   "@odata.type": "microsoft.graph.plannerPlan"
 }-->
 
@@ -89,8 +91,6 @@ ms.locfileid: "32578870"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/plannerplan.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

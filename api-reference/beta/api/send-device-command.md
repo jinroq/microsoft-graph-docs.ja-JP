@@ -2,12 +2,12 @@
 title: デバイス コマンドを送信する
 description: 'この API を使用すると、Project ローマ機能を使用して、Microsoft アカウントに関連付けられているデバイスにコマンドを実行できます。 GET 呼び出しを実行した`me/devices`後、デバイスにコマンドを発行するデバイスの ID を渡します。 launchuri と appservices という2種類のコマンドがサポートされています。 launchuri を使用している場合は、 *type*パラメーターと*payload*パラメーターを指定します。 AppService の呼び出しの場合は、 '
 localization_priority: Normal
-ms.openlocfilehash: d0c25200933a4a87a66349e457c500c496272b08
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4ec87825eec72a68dce236d61b17b504a194e75a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32537530"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33336040"
 ---
 # <a name="send-device-command"></a>デバイス コマンドを送信する
 
@@ -120,7 +120,7 @@ Content-Type: application/json; charset=utf-8
 <!-- {
   "blockType": "ignored",
   "truncated": false,
-  "@odata.type": "microsoft.graph.commandobject",
+  "@odata.type": "microsoft.graph.command",
   "isCollection": true
 } -->
 
@@ -179,7 +179,7 @@ Content-Type: application/json; charset=utf-8
 <!-- {
   "blockType": "ignored",
   "truncated": false,
-  "@odata.type": "microsoft.graph.commandobject",
+  "@odata.type": "microsoft.graph.command",
   "isCollection": true
 } -->
 
@@ -202,11 +202,3 @@ HTTP/1.1 201 OK
   }
 }
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/send-device-command.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

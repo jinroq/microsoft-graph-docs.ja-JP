@@ -2,12 +2,12 @@
 title: program リソースの種類
 description: 'Azure AD access のレビュー機能であるプログラムは、プログラムコントロールを保持するコンテナーです。 テナントには、1つ以上のプログラムを含めることができます。  各コントロールは、アクセスレビューをプログラムにリンクして、関連するアクセスレビューを簡単に見つけられるようにします。  '
 localization_priority: Normal
-ms.openlocfilehash: 2498279f27f5859eadcfa1d70662e3d8f3b5246c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7c0016cb194acd7ad8533acb34650b57df720ace
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563411"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344030"
 ---
 # <a name="program-resource-type"></a>program リソースの種類
 
@@ -27,15 +27,6 @@ boarded Azure AD アクセスレビューを持つ各テナントには、 `Defa
 |[プログラムの一覧表示](../api/program-list.md) |  [プログラム](program.md)コレクション|   すべてのプログラムのコレクションを取得します。|
 |[プログラムの programcontrols を一覧表示する](../api/program-listcontrols.md) |      [programcontrol](programcontrol.md)コレクション| プログラムのコントロールのコレクションを取得します。|
 |[プログラムの更新](../api/program-update.md) |   [アプリケーション](program.md)|  プログラムを更新します。|
-
-## <a name="permissions"></a>アクセス許可
-
-|アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)              |
-|:--------------------------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント)     | programcontrol. all、programcontrol. |
-|委任 (個人用 Microsoft アカウント) | サポートされていません。 |
-|アプリケーション                            | サポートされていません。 |
-
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
@@ -58,6 +49,7 @@ boarded Azure AD アクセスレビューを持つ各テナントには、 `Defa
   "optionalProperties": [
 
   ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.program"
 }-->
 
@@ -77,8 +69,6 @@ boarded Azure AD アクセスレビューを持つ各テナントには、 `Defa
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/program.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

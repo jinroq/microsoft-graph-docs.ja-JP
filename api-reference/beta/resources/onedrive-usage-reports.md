@@ -4,12 +4,12 @@ description: 組織内のすべての onedrive アカウントで使用されて
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 1f899c3a60e1c0d66dd3b7e075bf0daf13de0b43
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ec4cb7d6f533726c1ab8b22bb14f6059c04769ca
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457089"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345139"
 ---
 # <a name="onedrive-usage-reports"></a>OneDrive 使用状況レポート
 
@@ -27,11 +27,3 @@ ms.locfileid: "32457089"
 | [アカウントの数を取得する](../api/reportroot-getonedriveusageaccountcounts.md) | Stream          | [onedrive のアカウント数](../resources/onedriveusageaccountcounts.md) | アクティブな OneDrive for Business サイトの数の傾向を取得します。 ユーザーがファイルを表示、変更、アップロード、ダウンロード、共有、同期したサイトはすべて、アクティブなサイトとみなされます。 |
 | [ファイルの数を取得する](../api/reportroot-getonedriveusagefilecounts.md) | Stream          | [oneDriveUsageFileCounts](../resources/onedriveusagefilecounts.md) | すべてのサイトのファイル合計数と、アクティブ ファイルの数を取得します。 ファイルは一定期間中に保存、同期、変更、共有されるとアクティブとみなされます。 |
 | [ストレージを取得する](../api/reportroot-getonedriveusagestorage.md) | Stream          | [サイトの保存場所](../resources/siteusagestorage.md) | OneDrive for Business で使用しているストレージの量の傾向を取得します。 |
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/onedrive-usage-reports.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

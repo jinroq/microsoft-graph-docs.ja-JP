@@ -4,14 +4,16 @@ description: 既定のノートブックの既定のセクションに新しい 
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 9b8a48de889a0db5c6eea42fcbd64cae4ff23a43
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: da37b32d3a1559292c47fa58a464b32d7266b19c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32539974"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333086"
 ---
 # <a name="create-page"></a>ページを作成する
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 既定のノートブックの既定のセクションに新しい OneNote ページを作成します。
 
@@ -50,7 +52,7 @@ POST /sites/{id}/onenote/pages
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッド`201 Created`は応答コードと、応答本文で新しい[page](../resources/page.md)オブジェクトを返します。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で新しい[onenotepage](../resources/onenotepage.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
@@ -60,7 +62,7 @@ POST /sites/{id}/onenote/pages
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/v1.0/me/onenote/pages
+POST https://graph.microsoft.com/beta/me/onenote/pages
 Content-length: 312
 Content-type: multipart/form-data; boundary=MyPartBoundary198374
 
@@ -124,10 +126,13 @@ Content-length: 312
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create Page",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

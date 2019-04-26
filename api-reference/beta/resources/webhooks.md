@@ -3,12 +3,12 @@ title: Microsoft Graph API を使用して変更通知を取得する
 description: Microsoft Graph REST API は、webhook メカニズムを使用して、クライアントに変更通知を配信します。 クライアントは、通知を受信するために自身の URL を構成する Web サービスです。 クライアント アプリは通知を使用して、変更時に状態を更新します。 受信通知をサブスクライブおよび処理する方法などの詳細については、「ユーザーデータの変更の通知を設定する」を参照してください。
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: 1d7a3d868ffc640f7659623942ac102575fb94fc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8422328061ac1c2ad736435204b699544bffd2ed
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32453923"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341506"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Microsoft Graph API を使用して変更通知を取得する
 
@@ -21,8 +21,8 @@ Microsoft Graph の API を使用すると、アプリは次のリソースに�
 - Outlook [メッセージ][]
 - Outlook [イベント][]
 - Outlook 個人用[連絡先][]
-- [ユーザー][]
-- [グループ][]
+- [user][]
+- [group][]
 - Office 365 グループ[会話][]
 - ユーザーの個人用 OneDrive 上の_任意のフォルダーの_ [driveItem][] 階層内のコンテンツ
 - OneDrive for Business 上の_ルート フォルダーの _ [driveItem][] 階層内のコンテンツ
@@ -55,11 +55,3 @@ Microsoft Graph の API を使用すると、アプリは次のリソースに�
 [メッセージ]: ./message.md
 [ユーザー]: ./user.md
 [警告]: ./alert.md
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/webhooks.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

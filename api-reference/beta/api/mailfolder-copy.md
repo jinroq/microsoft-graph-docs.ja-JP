@@ -4,14 +4,16 @@ description: mailFolder とその内容を別の mailFolder にコピーしま�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: e1c4c567c56e869ed1e18ff0c887393c8345929d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6b1fb9b0b3d3891f33020458ffb5b140f9bf42c6
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32540906"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333387"
 ---
 # <a name="mailfolder-copy"></a>mailFolder: コピー
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 mailFolder とその内容を別の mailFolder にコピーします。
 
@@ -35,6 +37,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/copy
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
+
 | ヘッダー | 値 |
 |:-------|:------|
 | Authorization | `Bearer {token}`. 必須。 |
@@ -57,6 +60,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/copy
 以下は、この API を呼び出す方法の例です。
 
 ##### <a name="request"></a>要求
+
 以下は、要求の例です。
 <!-- {
   "blockType": "request",
@@ -64,7 +68,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/copy
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/me/mailFolders/{id}/copy
+POST https://graph.microsoft.com/beta/me/mailFolders/{id}/copy
 Content-type: application/json
 Content-length: 44
 
@@ -78,6 +82,7 @@ Content-length: 44
 以下は、応答の例です。
 
 > **注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -101,10 +106,13 @@ Content-length: 179
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "mailFolder: copy",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

@@ -4,12 +4,12 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Permission
 localization_priority: Normal
-ms.openlocfilehash: 12390583dcb1a87a5c9492ae3dcbcb132a66f69c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e8a4adaa3c1d41270e172f9d0b0e1bf3829927c5
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568257"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344973"
 ---
 # <a name="permission-resource-type"></a>permission リソースの種類
 
@@ -69,7 +69,7 @@ ms.locfileid: "32568257"
 | inheritedFrom       | [ItemReference][]           | 現在のアクセス許可が先祖から継承されている場合、その先祖への参照を提供します。読み取り専用。
 | link                | [SharingLink][]             | 現在のアクセス許可がリンク タイプのアクセス許可である場合は、そのリンクの詳細を提供します。読み取り専用。
 | roles               | Collection(String)          | `read` など、アクセス許可の種類。ロールの完全なリストは以下を参照してください。読み取り専用。
-| shareId             | String                      | 共有**[API][]** を介してこの共有アイテムにアクセスするために使用できる一意のトークン。 読み取り専用。
+| shareId             | String                      | 共有**[API][]** を介してこの共有アイテムにアクセスするために使用できる一意のトークン。 読み取り専用です。
 | expirationDateTime  | DateTimeOffset              | yyyy-mm-yyyy-mm-ddthh: mm: ssz の形式は、アクセス許可の有効期限を示します。 MinValue は、このアクセス許可に有効期限が設定されていないことを示します。 省略可能。
 | hasPassword         | Boolean                     | これは、このアクセス許可に対してパスワードが設定されているかどうかを示します。これは応答でのみ表示されます。 省略可能で、読み取り専用で、OneDrive 個人用のみです。
 
@@ -247,8 +247,6 @@ permission リソースは、_ファセット_ を使用して、リソースに
   "keywords": "sharing,permissions,read,write,acl",
   "section": "documentation",
   "tocPath": "Resources/Permission",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/permission.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -2,12 +2,12 @@
 title: serviceprincipal を更新する
 description: serviceprincipal オブジェクトのプロパティを更新します。
 localization_priority: Normal
-ms.openlocfilehash: a562bca03881923cfc21d32eadee2a7f7053fa9b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9bb3f8b578d3a0e24418f80da693ff317a7cc132
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32537531"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33331469"
 ---
 # <a name="update-serviceprincipal"></a>serviceprincipal を更新する
 
@@ -43,7 +43,7 @@ PATCH /servicePrincipals/{id}
 |appId|String|関連付けられたアプリケーションの一意の識別子 (その **appId** プロパティ)。|
 |appRoleAssignmentRequired|Boolean|Azure AD からアプリケーションにユーザー トークンまたはアクセス トークンが発行される前に、ユーザーまたはグループに対する **appRoleAssignment** が必要かどうかを指定します。                            **メモ**: null を許容しないバージョン1.5 以降が必要です。            |
 |appRoles|approle|関連付けられているアプリケーションによって公開されるアプリケーション ロール。 詳細については**** 、「アプリケーションエンティティ**メモ**: null 値ではなくバージョン1.5 またはそれ以降が必要」を参照してください。            |
-|displayName|String|サービス プリンシパルの表示名。|
+|displayName|文字列|サービス プリンシパルの表示名。|
 |errorUrl|String|            |
 |HomePage|String|関連付けられているアプリケーションのホームページの URL。|
 |keyCredentials|keycredential|サービス プリンシパルに関連付けられているキー資格情報のコレクションです。null 許容型ではありません。                            **注**: Null は許容されません。            |
@@ -51,7 +51,7 @@ PATCH /servicePrincipals/{id}
 |oauth2Permissions|oAuth2Permission|関連付けられているアプリケーションによって公開される OAuth 2.0 のアクセス許可。 さらに詳しい情報については、アプリケーション エンティティの **oauth2Permissions** プロパティの定義を参照してください。                            **メモ**: null を許容しないバージョン1.5 以降が必要です。            |
 |passwordCredentials|passwordcredential|サービス プリンシパルに関連付けられているパスワード資格情報のコレクションです。null 許容型ではありません。                            **注**: Null は許容されません。            |
 |preferredTokenSigningKeyThumbprint|String|内部使用専用に予約済みです。 このプロパティに書き込みしたり、依存したりしないでください。 将来のバージョンで削除される可能性があります。                            **メモ**: バージョン1.5 以降が必要です。            |
-|publisherName|文字列型 (String)|関連付けられたアプリケーションが指定されているテナントの表示名。|
+|publisherName|String|関連付けられたアプリケーションが指定されているテナントの表示名。|
 |replyUrls|String|関連付けられたアプリケーションにサインインするためにユーザー トークンが送信される URL、または関連付けられたアプリケーションに対して OAuth 2.0 認証コードとアクセス トークンが送信されるリダイレクト URI。                            **注**: Null は許容されません。            |
 |samlMetadataUrl|String|            |
 |servicePrincipalNames|String|関連するアプリケーションを識別する URI です。 詳細については、「[Azure Active Directory のアプリケーション オブジェクトとサービス プリンシパル オブジェクト](https://msdn.microsoft.com/library/azure/dn132633.aspx)」を参照してください。                            **メモ**: nullable ではない場合、複数値プロパティのフィルター式には**any**演算子が必要です。詳細については、「[サポートされているクエリ、フィルター、およびページングのオプション](https://msdn.microsoft.com/library/azure/dn727074.aspx)」を参照してください。            |
@@ -97,7 +97,7 @@ Content-length: 391
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.serviceprincipal"
+  "@odata.type": "microsoft.graph.servicePrincipal"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -134,8 +134,6 @@ Content-length: 391
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/serviceprincipal-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

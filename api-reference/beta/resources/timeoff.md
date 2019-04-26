@@ -4,12 +4,12 @@ description: スケジュールに含まれる非稼働時間の単位。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: c15d65c6d0a5a9749654698a51996cb21c254a9d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 848365a812053b7788db37395bee8662d69cda37
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32582844"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342035"
 ---
 # <a name="timeoff-resource-type"></a>リソースの種類の timeoff
 
@@ -32,11 +32,11 @@ ms.locfileid: "32582844"
 |--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | id            |`string`      |`timeOff` の ID。|
 | userId            |`string`      |に割り当てられているユーザー `timeOff`の ID。 必須です。|
-| sharedtimeoff     |[timeoffitem](timeoffitem.md)  |従業員とマネージャーの両方`timeOff`に表示される共有バージョン。 必須です。|
-| draftTimeOff      |[timeoffitem](timeoffitem.md)        |この`timeOff`の下書きバージョンは、マネージャーが表示できます。 必須。|
+| sharedtimeoff     | [timeoffitem](timeoffitem.md)  |従業員とマネージャーの両方`timeOff`に表示される共有バージョン。 必須です。|
+| draftTimeOff      | [timeoffitem](timeoffitem.md)        |この`timeOff`の下書きバージョンは、マネージャーが表示できます。 必須。|
 | createdDateTime       |`DateTimeOffset`        |これ`timeOff`が最初に作成されたタイムスタンプ。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表します。これは常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、'2014-01-01T00:00:00Z'.のようになります。 |
 | lastModifiedDateTime      |`DateTimeOffset`        |これ`timeOff`が最後に更新されたタイムスタンプ。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表します。これは常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、'2014-01-01T00:00:00Z'.のようになります。 |
-| lastModifiedBy        |`microsoft.graph.identitySet`        |この `timeOff` を最後に更新した ID。 |
+| lastModifiedBy        | [identitySet](identityset.md)        |この `timeOff` を最後に更新した ID。 |
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -45,35 +45,18 @@ ms.locfileid: "32582844"
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.timeOff"
+  "@odata.type": "microsoft.graph.timeOff",
+   "baseType":"microsoft.graph.changeTrackedEntity"
 }-->
 
 ```json
 {
-  "userId": "c5d0c76b-80c4-481c-be50-923cd8d680a1",
-  "createdDateTime": "2019-03-14T05:35:57.755Z",
-  "lastModifiedDateTime": "2019-03-14T05:36:08.381Z",
-  "lastModifiedBy": {
-    "application": null,
-    "device": null,
-    "conversation": null,
-    "user": {
-      "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
-      "displayName": "John Doe"
-    }
-  },
-  "sharedTimeOff": {
-    "timeOffReasonId": "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",
-    "startDateTime": "2019-03-11T07:00:00Z",
-    "endDateTime": "2019-03-12T07:00:00Z",
-    "theme": "white"
-  },
-  "draftTimeOff": {
-    "timeOffReasonId": "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",
-    "startDateTime": "2019-03-11T07:00:00Z",
-    "endDateTime": "2019-03-12T07:00:00Z",
-    "theme": "pink"
-  }
+  "userId": "string (identifier)",
+  "createdDateTime": "String (timestamp)",
+  "lastModifiedDateTime": "String (timestamp)",
+  "lastModifiedBy": {"@odata.type":"microsoft.graph.identitySet"},
+  "sharedTimeOff": {"@odata.type":"microsoft.graph.timeOffItem"},
+  "draftTimeOff": {"@odata.type":"microsoft.graph.timeOffItem"}
 }
 ```
 
@@ -87,8 +70,6 @@ ms.locfileid: "32582844"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/timeoff.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

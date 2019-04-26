@@ -2,12 +2,12 @@
 title: privilegedRoleAssignmentRequest リソースの種類
 description: Privilegd Identity Management での役割の割り当て操作の要求を表します。
 localization_priority: Normal
-ms.openlocfilehash: c0e0bbfa76b7ffb4e122d381d45dd4092f0843c1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ead028d61fcbf6fe7cebf13291c0ba5231f0ba22
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563332"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344272"
 ---
 # <a name="privilegedroleassignmentrequest-resource-type"></a>privilegedRoleAssignmentRequest リソースの種類
 
@@ -22,7 +22,7 @@ Privilegd Identity Management での役割の割り当て操作の要求を表�
 | メソッド       | 戻り値の型 | 説明 |
 |:-------------|:------------|:------------|
 |[List](../api/privilegedroleassignmentrequest-list.md) | [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)コレクション|役割の割り当て要求を一覧表示します。|
-|[作成](../api/privilegedroleassignmentrequest-post.md)|  [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)|既存または新しい役割の割り当てのライフサイクルを管理するための要求を作成します。|
+|[Create](../api/privilegedroleassignmentrequest-post.md)|  [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)|既存または新しい役割の割り当てのライフサイクルを管理するための要求を作成します。|
 |[Cancel](../api/privilegedroleassignmentrequest-cancel.md)|  |保留中の役割の割り当て要求を取り消します。|
 |[My](../api/privilegedroleassignmentrequest-my.md)|  |現在の requstor に対する役割の割り当て要求を取得します。|
 
@@ -30,14 +30,14 @@ Privilegd Identity Management での役割の割り当て操作の要求を表�
 
 | プロパティ     | 型        | 説明 |
 |:-------------|:------------|:------------|
-|id|String| 読み取り専用。 役割の割り当て要求の id。|
+|id|String| 読み取り専用です。 役割の割り当て要求の id。|
 |割り当ての状態|String| 割り当ての状態を指定します。 この値は、 `Eligible`管理者に`Active`よって直接割り当てら`Active`れている場合、またはユーザーによる資格のある割り当てに対してアクティブ化されている場合に、対象となる割り当てに使用できます。|
 |duration|String| 役割の割り当ての期間。|
 |したがっ|String| 役割の割り当ての理由。|
-|requesteddatetime|DateTimeOffset| 読み取り専用。 要求の作成時刻。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
+|requesteddatetime|DateTimeOffset| 読み取り専用。 要求の作成時刻。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、`'2014-01-01T00:00:00Z'` のようになります。|
 |roleId|String| ロールの id。|
 |スケジューリング|[governanceSchedule](governanceschedule.md)| 役割の割り当て要求の schedule オブジェクト。|
-|status|String| 読み取り専用。役割の割り当て要求の状態。 値`NotStarted``Completed``Revoked``RequestExpired`は、、、、、、、、、、、のようになります。`RequestedApproval``Scheduled``Approved``ApprovalDenied``ApprovalAborted``Cancelling``Cancelled`|
+|status|文字列型 (String)| 読み取り専用。役割の割り当て要求の状態。 値`NotStarted``Completed``Revoked``RequestExpired`は、、、、、、、、、、、のようになります。`RequestedApproval``Scheduled``Approved``ApprovalDenied``ApprovalAborted``Cancelling``Cancelled`|
 |ticketNumber|String| 役割の割り当ての ticketNumber。 |
 |ticketSystem|String| 役割の割り当ての ticketSystem。|
 |type|String| 役割の割り当てに対する操作の種類を表します。 値は次の`AdminAdd`ようになります。「ユーザーを役割に追加する」。`UserAdd`: ユーザーが役割の割り当てを追加します。|
@@ -57,6 +57,7 @@ Privilegd Identity Management での役割の割り当て操作の要求を表�
   "optionalProperties": [
 
   ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.privilegedRoleAssignmentRequest"
 }-->
 
@@ -87,8 +88,6 @@ Privilegd Identity Management での役割の割り当て操作の要求を表�
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/privilegedroleassignmentrequest.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

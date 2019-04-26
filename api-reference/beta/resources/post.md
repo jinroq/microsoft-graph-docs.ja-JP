@@ -4,12 +4,12 @@ description: converstaionThread エンティティ内の個々の投稿アイテ
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 554892bdfed45d0fba9b90a084db67c0bb329486
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: abfd2b19681b9821377830f1696fa6f754afd711
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563596"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344239"
 ---
 # <a name="post-resource-type"></a>post リソース タイプ
 
@@ -74,7 +74,7 @@ ms.locfileid: "32563596"
 |createdDateTime|DateTimeOffset|投稿の作成時刻を示します。DateTimeOffset 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |from|[recipient](recipient.md)|代理人アクセスのシナリオで使用されます。他のユーザーの代わりにメッセージを投稿したユーザーを示します。これが既定のプロパティです。|
 |hasAttachments|Boolean|投稿の添付ファイルが 1 つ以上あるかどうかを示します。これが既定のプロパティです。|
-|id|String| 読み取り専用。|
+|id|String| 読み取り専用です。|
 |importance | String | グループ投稿の重要度: `low`、 `normal`、。 `high` |
 |lastModifiedDateTime|DateTimeOffset|投稿が最後に修正された日時を指定します。DateTimeOffset 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |newparticipants|[recipient](recipient.md) collection|この投稿の一部としてスレッドに追加された会話の参加者です。|
@@ -86,9 +86,9 @@ ms.locfileid: "32563596"
 |:---------------|:--------|:----------|
 |attachments|[Attachment](attachment.md) コレクション|投稿の[fileattachment](fileattachment.md)、 [itemattachment](itemattachment.md)、および[referenceattachment](referenceattachment.md)添付ファイルのコレクションです。 読み取り専用です。 Null 許容型。|
 |extensions|[Extension](extension.md) コレクション|投稿に対して定義されているオープン拡張機能のコレクション。読み取り専用。Null 許容型。|
-|inreplyto|[投稿](post.md)|この投稿が[conversationThread](conversationthread.md)内で返信する以前の投稿。 読み取り専用。|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| その投稿用に定義された、複数値拡張プロパティのコレクションです。読み取り専用。Null 許容型。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| その投稿用に定義された、単一値拡張プロパティのコレクションです。読み取り専用。Null 許容型。|
+|inreplyto|[Post](post.md)|この投稿が[conversationThread](conversationthread.md)内で返信する以前の投稿。 読み取り専用。|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) コレクション| その投稿用に定義された、複数値拡張プロパティのコレクションです。読み取り専用。Null 許容型。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) コレクション| その投稿用に定義された、単一値拡張プロパティのコレクションです。読み取り専用。Null 許容型。|
 
 ## <a name="methods"></a>メソッド
 
@@ -98,7 +98,7 @@ ms.locfileid: "32563596"
 |[Get post](../api/post-get.md) | [post](post.md) |指定したスレッド内の投稿のプロパティと関係を取得します。|
 |[Reply](../api/post-reply.md)|なし|グループ会話の投稿に返信して、指定されたスレッドに新しい投稿を追加します。|
 |[Forward](../api/post-forward.md)|なし|受信者に投稿を転送します。|
-|**添付ファイル**| | |
+|**Attachments**| | |
 |[添付ファイルを一覧表示する](../api/post-list-attachments.md) |[attachment](attachment.md) コレクション| 投稿のすべての添付ファイルを取得します。|
 |[添付ファイルを追加する](../api/post-post-attachments.md) |[attachment](attachment.md)| 投稿に添付ファイルを追加します。 |
 |**オープン拡張機能**| | |

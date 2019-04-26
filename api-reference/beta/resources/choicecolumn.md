@@ -4,14 +4,16 @@ ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: ChoiceColumn
 localization_priority: Normal
-ms.openlocfilehash: 21405fe3aa28e0eef1233cd6f27e63568fb4b00e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d6c0db61fe3d919f780e14a950183619bb027801
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543779"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341479"
 ---
 # <a name="choicecolumn-resource-type"></a>ChoiceColumn リソースの種類
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [columnDefinition ](columndefinition.md)リソースの** choiceColumn **は、選択肢のリストから列の値を選択できることを示します。
 
@@ -37,14 +39,13 @@ ms.locfileid: "32543779"
 | **displayAs**      | string             | UX での選択肢の表示方法。 `checkBoxes`、`dropDownMenu`、`radioButtons` のいずれかでなければなりません。
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "suppressions": [
-    "Warning: /api-reference/v1.0/resources/choicecolumn.md:
-      Found potential enums in resource example that weren't defined in a table:(checkBoxes,dropDownMenu,radioButtons) are in resource, but () are in table"
-  ],
-  "tocPath": "Resources/ChoiceColumn"
-} -->
+  "tocPath": "Resources/ChoiceColumn",
+  "suppressions": []
+}
+-->

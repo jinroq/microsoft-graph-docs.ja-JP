@@ -2,12 +2,12 @@
 title: singleValueLegacyExtendedProperty リソースの種類
 description: '単一値が含まれる拡張プロパティ。 '
 localization_priority: Normal
-ms.openlocfilehash: 0d889756204853a525269f28cfdd3cc1b40be8a4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e57091e9ccf525fc10754dab7de464f2ebf7662c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523743"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343057"
 ---
 # <a name="singlevaluelegacyextendedproperty-resource-type"></a>singleValueLegacyExtendedProperty リソースの種類
 
@@ -31,7 +31,7 @@ ms.locfileid: "32523743"
 |id|string|プロパティ識別子。読み取り専用です。|
 |value|string|プロパティ値。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 
@@ -64,8 +64,6 @@ ms.locfileid: "32523743"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/singlevaluelegacyextendedproperty.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

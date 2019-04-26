@@ -2,12 +2,12 @@
 title: programcontrol を作成する
 description: Azure AD access レビュー機能で、新しい programcontrol オブジェクトを作成します。  これにより、アクセスレビューがプログラムにリンクされます。
 localization_priority: Normal
-ms.openlocfilehash: 89e31994ea91dba68e2f4563c64eeab53dd4db93
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d7a48b45049c2268856a3ec238114cfa9bf834f5
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32546440"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33332044"
 ---
 # <a name="create-programcontrol"></a>programcontrol を作成する
 
@@ -27,9 +27,11 @@ Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、�
 
 |アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント)     | `ProgramControl.ReadWrite.All`.  また、サインインしているユーザーは、programcontrol を作成できるようにするために、ディレクトリロールにある必要があります。 |
+|委任 (職場または学校のアカウント)     | programcontrol  |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
-|アプリケーション                            | サポートされていません。 |
+|アプリケーション                            |  programcontrol  |
+
+また、サインインしているユーザーは、 **programcontrol**を作成することを許可するディレクトリロールにある必要があります。 
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -111,8 +113,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/programcontrol-create.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

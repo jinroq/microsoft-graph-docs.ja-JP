@@ -4,12 +4,12 @@ description: Azure Active Directory オブジェクトを表します。**direct
 localization_priority: Priority
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 87fb1c21e2fa1e9788890d97f6afbd0b494c555e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3364af6afc4a8bf1661186a26e0f741abb6bc232
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507813"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340853"
 ---
 # <a name="directoryobject-resource-type"></a>directoryObject リソースの種類
 
@@ -31,8 +31,8 @@ Azure Active Directory オブジェクトを表します。**directoryObject** �
 |[getMemberGroups](../api/directoryobject-getmembergroups.md)|String collection|ユーザー オブジェクト、グループ オブジェクト、またはディレクトリ オブジェクトがメンバーであるすべてのグループを返します。チェックは推移的です。|
 |[getMemberObjects](../api/directoryobject-getmemberobjects.md)|String collection| ユーザー オブジェクト、グループ オブジェクト、またはディレクトリ オブジェクトがメンバーであるすべてのグループとディレクトリ ロールを返します。チェックは推移的です。 |
 |[getByIds](../api/directoryobject-getbyids.md) | [directoryObject](directoryobject.md) コレクション | 指定された一連の ID に基づいて、一連のディレクトリ オブジェクトを取得します。 |
-|[validateProperties](../api/directoryobject-validateproperties.md)|JSON| 名前付けポリシーに準拠した Office 365 グループの表示名またはメール ニックネームを検証します。 |
-|[delta](../api/directoryobject-delta.md)|directoryObject コレクション| ディレクトリ オブジェクトの増分の変更を取得します。 派生した型によるフィルター処理をサポートします。 |
+|[validateProperties](../api/directoryobject-validateproperties.md)|Json| 名前付けポリシーに準拠した Office 365 グループの表示名またはメール ニックネームを検証します。 |
+|[delta](../api/directoryobject-delta.md)|[directoryObject](directoryobject.md) collection| ディレクトリ オブジェクトの増分の変更を取得します。 派生した型によるフィルター処理をサポートします。 |
 
 ## <a name="properties"></a>プロパティ
 
@@ -54,7 +54,8 @@ Azure Active Directory オブジェクトを表します。**directoryObject** �
 
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.directoryObject"
+  "@odata.type": "microsoft.graph.directoryObject",
+  "openType": true
 }-->
 
 ```json
@@ -73,8 +74,6 @@ Azure Active Directory オブジェクトを表します。**directoryObject** �
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/directoryobject.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

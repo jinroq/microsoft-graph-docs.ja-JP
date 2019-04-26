@@ -4,12 +4,12 @@ description: '**plan ユーザー**リソースは、ユーザーの Planner リ
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 1f10810f6debf2346ed12484bac8e1f4bfd2f372
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fd279e541df4b45e47d1c389d2e8a1e212b01a41
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563670"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344342"
 ---
 # <a name="planneruser-resource-type"></a>プランユーザーリソースの種類
 
@@ -22,7 +22,7 @@ ms.locfileid: "32563670"
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[タスクを一覧表示する](../api/planneruser-list-tasks.md) |[plannerTask](plannertask.md) コレクション| ユーザーに割り当てられている[プラン](plannertask.md)を取得します。|
+|[List tasks](../api/planneruser-list-tasks.md) |[plannerTask](plannertask.md) コレクション| ユーザーに割り当てられている[プラン](plannertask.md)を取得します。|
 |[お気に入りのプランを一覧表示する](../api/planneruser-list-favoriteplans.md) |[plannerPlan](plannerplan.md) コレクション| ユーザーによってお気に入りとしてマークされた[プラン](plannerplan.md)を取得します。|
 |[リスト recentPlans](../api/planneruser-list-recentplans.md) |[plannerPlan](plannerplan.md) コレクション| ユーザーが最近閲覧した[プラン](plannerplan.md)を取得します。|
 |[更新する](../api/planneruser-update.md) | [plannerUser](planneruser.md)| プランの**ユーザー**オブジェクトを更新します。 |
@@ -38,9 +38,9 @@ ms.locfileid: "32563670"
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|tasks|[plannerTask](plannertask.md) コレクション| 読み取り専用。 Null 許容型。 ユーザーに割り当てられた担当者の[タスク](plannertask.md)を返します。|
-|お気に入りのプラン|[plannerPlan](plannerplan.md) コレクション| 読み取り専用。 Null 許容型。 ユーザーがお気に入りとしてマークした[プラン](plannerplan.md)を返します。|
-|recentPlans|[plannerPlan](plannerplan.md) コレクション| 読み取り専用。 Null 許容型。 最近のプランをサポートするアプリで、ユーザーによって最近参照された[プラン](plannerplan.md)を返します。 |
+|tasks|[plannerTask](plannertask.md) コレクション| 読み取り専用です。 Null 許容型。 ユーザーに割り当てられた担当者の[タスク](plannertask.md)を返します。|
+|お気に入りのプラン|[plannerPlan](plannerplan.md) コレクション| 読み取り専用です。 Null 許容型。 ユーザーがお気に入りとしてマークした[プラン](plannerplan.md)を返します。|
+|recentPlans|[plannerPlan](plannerplan.md) コレクション| 読み取り専用です。 Null 許容型。 最近のプランをサポートするアプリで、ユーザーによって最近参照された[プラン](plannerplan.md)を返します。 |
 
 ## <a name="json-representation"></a>JSON 表記
 リソースの JSON 表記を次に示します。

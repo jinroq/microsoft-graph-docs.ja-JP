@@ -3,12 +3,12 @@ title: 履歴項目リソースの種類
 description: アプリ内のアクティビティの履歴アイテムを表します。 ユーザーアクティビティは、テレビ番組、ドキュメント、ビデオゲームの現在のキャンペーンなど、アプリ内の単一の場所を表します。 ユーザーがそのアクティビティを使用すると、そのアクティビティの開始時刻と終了時刻を示す履歴項目として契約が取得されます。 ユーザーが時間をかけてそのアクティビティを再実行すると、1つのユーザーアクティビティに対して複数の履歴項目が記録されます。
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 640b2e777337182b95572ba086f1caf3459ef57e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c43a4f0515f8d61625e11abe8bbdbe2464c729f9
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563302"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344081"
 ---
 # <a name="historyitem-resource-type"></a>履歴項目リソースの種類
 
@@ -29,7 +29,7 @@ ms.locfileid: "32563302"
 
 |名前 | 型 | 説明|
 |:----|:-----|:-----------|
-|status | EnumType | サーバーによって設定されます。 有効なオブジェクトを識別するために使用される状態コード。 値: アクティブ、更新済み、削除済み、無視。|
+|status | string | サーバーによって設定されます。 有効なオブジェクトを識別するために使用される状態コード。 値: アクティブ、更新済み、削除済み、無視。|
 |usertimezone | String | 省略可能。 アクティビティの生成に使用されたユーザーのデバイスがアクティビティの作成時に配置されたタイムゾーン。 クロスプラットフォーム表現をサポートするために olson id として提供される値。|
 |createdDateTime | DateTimeOffset | サーバーによって設定されます。 サーバー上でオブジェクトが作成された日時 (UTC)。|
 |lastModifiedDateTime | DateTimeOffset | サーバーによって設定されます。 サーバー上のオブジェクトが変更された日時 (UTC)。|
@@ -56,6 +56,7 @@ ms.locfileid: "32563302"
     "lastActiveDateTime",
     "activeDurationSeconds"
   ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.historyItem"
 }-->
 
@@ -82,8 +83,6 @@ ms.locfileid: "32563302"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/projectrome-historyitem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

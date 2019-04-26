@@ -3,16 +3,18 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: SharePoint リストからアイテムを取得する
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 26d2aa28566a666692e49bc0d07305bf793e21d1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 98f08dd1bb5a22d811308dff1c68783c0e71ddcc
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32540983"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333436"
 ---
 # <a name="enumerate-items-in-a-list"></a>リスト内のアイテムを列挙する
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [リスト][]内の[アイテム][item]のコレクションを取得します。
 
@@ -32,19 +34,19 @@ ms.locfileid: "32540983"
 ## <a name="http-request"></a>HTTP 要求
 
 ```http
-GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items
-GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expand=fields
-GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Column1,Column2)
+GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items
+GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expand=fields
+GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Column1,Column2)
 ```
 
 ## <a name="example"></a>例
 
 #### <a name="request"></a>要求
 
-<!-- { "blockType": "request", "name": "get-list-items", "scopes": "sites.read.all" } -->
+<!-- { "blockType": "request", "name": "get-list-items" } -->
 
 ```http
-GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Name,Color,Quantity)
+GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Name,Color,Quantity)
 ```
 
 #### <a name="response"></a>応答
@@ -85,10 +87,13 @@ Content-type: application/json
 }
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "ListItem/Enumerate"
-} -->
+  "tocPath": "ListItem/Enumerate",
+  "suppressions": []
+}
+-->

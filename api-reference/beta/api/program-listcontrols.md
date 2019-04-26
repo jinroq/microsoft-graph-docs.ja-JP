@@ -2,12 +2,12 @@
 title: プログラムの programcontrols を一覧表示する
 description: Azure AD access レビュー機能で、特定のプログラムにリンクされているすべての programcontrol オブジェクトを一覧表示します。
 localization_priority: Normal
-ms.openlocfilehash: 9134e9aa322446553da2e0c644a6fc8b43b0b54d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 787199b4c254411166d30e960024923cfe1d279f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32546445"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33331959"
 ---
 # <a name="list-programcontrols-of-a-program"></a>プログラムの programcontrols を一覧表示する
 
@@ -19,9 +19,11 @@ Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、�
 
 |アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント)     | `ProgramControl.Read.All`, `ProgramControl.ReadWrite.All`.  サインインしているユーザーは、プログラムを読み取ることができるようにする必要があります。 |
+|委任 (職場または学校のアカウント)     | programcontrol. all、programcontrol.  |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
-|アプリケーション                            | サポートされていません。 |
+|アプリケーション                            | programcontrol. all、programcontrol.  |
+
+ サインインしているユーザーは、プログラムを読み取ることができるようにする必要があります。
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +49,7 @@ GET /programs('{programId}')/controls
   "name": "get_programControl_from_program"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/programs('673a7379-9c38-4f01-bd9d-4fda7260b807')/controls
+GET https://graph.microsoft.com/beta/programs/673a7379-9c38-4f01-bd9d-4fda7260b807/controls
 ```
 
 ##### <a name="response"></a>応答
@@ -87,8 +89,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/program-listcontrols.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

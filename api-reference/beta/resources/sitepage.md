@@ -5,12 +5,12 @@ ms.date: 03/15/2018
 title: sitepage
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 7b1634e79214f1cece85a78af29db6422ac03a81
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6a9192423c4caf47913029e3671e975884533333
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583404"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343079"
 ---
 # <a name="sitepage-resource"></a>sitepage リソース
 
@@ -28,13 +28,13 @@ ms.locfileid: "32583404"
 |:--------------------------------|:------------------------------
 | [List pages][]                  | ページを取得する
 | [ページを取得する][]                    | ページを取得する/ページ/{pagefrom id}
-| [作成][]                      | 投稿/ページ
+| [Create][]                      | 投稿/ページ
 | [削除][]                      | 削除/ページ/{page¥ id}
 | [Publish][]                     | 投稿/ページ/_ page/発行
 
 [List pages]: ../api/sitepage-list.md
 [ページを取得する]: ../api/sitepage-get.md
-[作成]: ../api/sitepage-create.md
+[Create]: ../api/sitepage-create.md
 [Delete]: ../api/sitepage-delete.md
 [Publish]: ../api/sitepage-publish.md
 
@@ -46,7 +46,8 @@ ms.locfileid: "32583404"
   "blockType": "resource",
   "keyProperty": "id",
   "baseType": "microsoft.graph.baseItem",
-  "@odata.type": "microsoft.graph.sitePage"
+  "@odata.type": "microsoft.graph.sitePage",
+  "openType": true
 }-->
 
 ```json
@@ -55,19 +56,21 @@ ms.locfileid: "32583404"
 
   /* page content */
   "title": "string",
-  "pageLayout": "Article",
-  "webParts": [{ "@odata.type": "microsoft.graph.sitePageWebParts" }],
+  "pageLayoutType": "String",
+  "webParts": [{ "@odata.type": "microsoft.graph.webPart" }],
 
   /* authoring metadata */
   "publishingState": { "@odata.type": "microsoft.graph.publicationFacet" },
 
-  /* inherited from baseItem */
-  "id": "string",
-  "name": "string",
+   /* inherited from baseItem */
+  "id": "string (identifier)",
   "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "createdDateTime": "String (timestamp)",
+  "description": "string",
   "eTag": "string",
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
-  "lastModifiedDateTime": "datetime",
+  "lastModifiedDateTime": "String (timestamp)",
+  "name": "string",
   "parentReference": { "@odata.type": "microsoft.graph.itemReference" },
   "webUrl": "url"
 }
@@ -125,7 +128,7 @@ ms.locfileid: "32583404"
 [listInfo]: listinfo.md
 [listItem]: listitem.md
 [publicationFacet]: publicationfacet.md
-[site]: site.md
+[サイト]: site.md
 [パーツ]: webpart.md
 
 <!--
@@ -138,9 +141,7 @@ ms.locfileid: "32583404"
   "tocBookmarks": {
     "Page": "#"
   },
-  "suppressions": [
-    "Error: /api-reference/beta/resources/sitepage.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
 

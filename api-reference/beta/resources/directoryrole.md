@@ -4,12 +4,12 @@ description: Azure AD ディレクトリ ロールを表します。 Azure AD �
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 30b22313da70c33bffc0b759f9b474f4deac2ac1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 110febf3213431a0a44941a4cdd2bd9bca255bff
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535274"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334595"
 ---
 # <a name="directoryrole-resource-type"></a>directoryRole リソース型
 
@@ -30,7 +30,7 @@ Azure AD ディレクトリ ロールを表します。 Azure AD ディレクト
 |[Get directoryRole](../api/directoryrole-get.md) | [directoryRole](directoryrole.md) |directoryRole オブジェクトのプロパティとリレーションシップを読み取ります。|
 |[directoryroles を一覧表示する](../api/directoryrole-list.md) | [directoryRole](directoryrole.md) コレクション | テナントでアクティブになっているディレクトリ ロールを一覧表示します。 |
 |[メンバーを追加する](../api/directoryrole-post-members.md) |[directoryObject](directoryobject.md)| members ナビゲーション プロパティを送信することで、ユーザーをディレクトリ ロールに追加します。|
-|[List members](../api/directoryrole-list-members.md) |[directoryObject](directoryobject.md) collection| members ナビゲーション プロパティから、ディレクトリ ロールのメンバーであるユーザーを取得します。|
+|[メンバーを一覧表示する](../api/directoryrole-list-members.md) |[directoryObject](directoryobject.md) コレクション| members ナビゲーション プロパティから、ディレクトリ ロールのメンバーであるユーザーを取得します。|
 |[Remove a member](../api/directoryrole-delete-member.md) |[directoryObject](directoryobject.md)| ディレクトリロールからユーザーを削除します。|
 |[スコープが指定された役割のメンバーを一覧表示する](../api/directoryrole-list-members.md) |[scopedRoleMembership](scopedrolemembership.md) コレクション| scopedRoleMembership リソースコレクションを使用して、[管理単位](administrativeunit.md)にスコープが設定されているこのディレクトリロールのメンバーを一覧表示します。|
 |[delta](../api/directoryrole-delta.md)|directoryRole コレクション| ディレクトリロールの増分の変更を取得します。 |
@@ -47,7 +47,7 @@ Azure AD ディレクトリ ロールを表します。 Azure AD ディレクト
 | リレーションシップ | 型 |説明|
 |:---------------|:--------|:----------|
 |members|[directoryObject](directoryobject.md) コレクション|このディレクトリ ロールのメンバーであるユーザー。HTTP メソッド: GET、POST、DELETE。読み取り専用。Null 許容型。|
-|scopedMembers|[scopedRoleMembership](scopedrolemembership.md) コレクション| [管理単位](administrativeunit.md)にスコープ設定されたこのディレクトリロールのメンバ。 読み取り専用。 Null 許容型。|
+|scopedMembers|[scopedRoleMembership](scopedrolemembership.md) コレクション| [管理単位](administrativeunit.md)にスコープ設定されたこのディレクトリロールのメンバ。 読み取り専用です。 Null 許容型。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -84,8 +84,6 @@ Azure AD ディレクトリ ロールを表します。 Azure AD ディレクト
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/directoryrole.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

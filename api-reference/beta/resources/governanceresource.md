@@ -2,12 +2,12 @@
 title: governanceResource リソースの種類
 description: 特権 id 管理 (PIM) によって管理される可能性があるリソースを表します。 Azure リソースの場合は、サブスクリプション、リソースグループ、仮想マシン、SQL データベースなどのリソースを使用できます。
 localization_priority: Normal
-ms.openlocfilehash: 92a738350a47cc9eaf436382d020330fac89db1f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7453397b0ea3edccd44a4eebdbbd89624bab2cc5
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547426"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333715"
 ---
 # <a name="governanceresource-resource-type"></a>governanceResource リソースの種類
 
@@ -21,7 +21,7 @@ ms.locfileid: "32547426"
 | メソッド          | 戻り値の型 |説明|
 |:---------------|:--------|:----------|
 |[List](../api/governanceresource-list.md) | [governanceResource](../resources/governanceresource.md)コレクション|要求者がアクセスできるリソースのコレクションを一覧表示します。|
-|[取得](../api/governanceresource-get.md) | [governanceResource](../resources/governanceresource.md) |id で指定されたリソースエンティティのプロパティとリレーションシップを読み取ります。|
+|[Get](../api/governanceresource-get.md) | [governanceResource](../resources/governanceresource.md) |id で指定されたリソースエンティティのプロパティとリレーションシップを読み取ります。|
 |[登録](../api/governanceresource-register.md) | |管理されていない Azure サブスクリプションまたは管理グループを PIM サービスに登録します。 |
 
 `PATCH` `roleDefinitions`現時点では、entity set ではサポートされていません`POST` `PUT` `DELETE`
@@ -32,7 +32,7 @@ ms.locfileid: "32547426"
 |id                 |String     |リソースの id。 GUID 形式です。|
 |externalId           |String   |外部システムの元の id を表す、リソースの外部 id。 たとえば、サブスクリプションリソースの外部 id は "/subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737ac" にすることができます。 |
 |type               |String     |必須。 リソースの種類。 たとえば、Azure リソースの場合、この型は "Subscription"、"ResourceGroup"、"Microsoft .sql/server" などになります。|
-|displayName        |String     |リソースの表示名。|
+|displayName        |文字列     |リソースの表示名。|
 |status             |String     |指定されたリソースの状態。 たとえば、リソースがロックされているかどうかを表すことが`Active` / `Locked`できます (値:)。 注: 今後、このプロパティを拡張して、より多くのシナリオをサポートすることができます。|
 |registereddatetime|DateTimeOffset      |リソースが PIM に登録されている日時を表します。|
 |registeredroot|String      |PIM に登録されているリソースのルートスコープの externalid。 ルートスコープには、親、親、または上位の先祖リソースを指定できます。|
@@ -47,7 +47,7 @@ ms.locfileid: "32547426"
 |roleDefinitions |[governanceRoleDefinition](../resources/governanceroledefinition.md)コレクション|リソースのロール日のコレクション。|
 |rolerequests 要求 |[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)コレクション|リソースに対する役割の割り当て要求のコレクション。|
 |rolesettings |[governanceRoleSetting](../resources/governancerolesetting.md)コレクション|リソースのロール設定のコレクション。|
-|親行          |[governanceResource](../resources/governanceresource.md)           |読み取り専用。 親リソース。 シナリオ`pimforazurerbac`の場合は、リソースが属するサブスクリプションを表すことができます。|
+|親行          |[governanceResource](../resources/governanceresource.md)           |読み取り専用です。 親リソース。 シナリオ`pimforazurerbac`の場合は、リソースが属するサブスクリプションを表すことができます。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -55,6 +55,7 @@ ms.locfileid: "32547426"
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],
@@ -68,7 +69,12 @@ ms.locfileid: "32547426"
   "displayName": "String",
   "status": "String",
   "registeredDateTime": "String (timestamp)",
-  "registeredRoot": "String"
+  "registeredRoot": "String",
+  "roleAssignmentCount": 12356,
+  "roleDefinitionCount": 12356,
+  "permissions": {
+    "@odata.type": "microsoft.graph.governancePermission"
+  }
 }
 
 ```
@@ -81,8 +87,6 @@ ms.locfileid: "32547426"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/governanceresource.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

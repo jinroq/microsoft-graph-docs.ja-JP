@@ -4,12 +4,12 @@ description: "\" **plan\" taskdetails**リソースは、タスクに関する�
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 579ecdbf43275de90468883d158af725eb1d1734
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d11b0ca1f6090c65a1c5eaa45ce368d102994299
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563615"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344384"
 ---
 # <a name="plannertaskdetails-resource-type"></a>プラン/タスクの詳細リソースの種類
 
@@ -29,12 +29,12 @@ ms.locfileid: "32563615"
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |checklist|[plannerChecklistItems](plannerchecklistitems.md)|タスク上のチェックリスト項目のコレクション。|
-|説明|String|タスクの説明|
-|id|String| 読み取り専用。 タスクの詳細の ID。 28 文字長で、大文字と小文字の区別があります。 [書式検証](tasks-identifiers-disclaimer.md)はサービスによって行われます。|
+|description|String|タスクの説明|
+|id|String| 読み取り専用です。 タスクの詳細の ID。 28 文字長で、大文字と小文字の区別があります。 [書式検証](tasks-identifiers-disclaimer.md)はサービスによって行われます。|
 |previewType|string|タスクに表示されるプレビューの種類を設定します。使用可能な値: `automatic`、`noPreview`、`checklist`、`description`、`reference`。`automatic` に設定すると、タスクを表示しているアプリによって表示するプレビューが選択されます。|
 |references|[plannerExternalReferences](plannerexternalreferences.md)|タスク上の参照のコレクションです。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 

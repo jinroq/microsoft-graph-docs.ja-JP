@@ -5,11 +5,11 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: 98f058d94c101a2f664f21ea05252a51476b426d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32544429"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33330645"
 ---
 # <a name="list-threat-intelligence-indicators"></a>脅威インテリジェンスインジケーターを一覧表示する
 
@@ -35,7 +35,7 @@ ms.locfileid: "32544429"
 GET /security/tiIndicators
 ```
 
-## <a name="optional-query-parameters"></a>省略可能なクエリ パラメーター
+## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 
 このメソッドは、応答をカスタマイズするための OData クエリパラメーターの一部をサポートしています。 一般的な情報については、「 [OData クエリパラメーター](/graph/query-parameters)」を参照してください。
 

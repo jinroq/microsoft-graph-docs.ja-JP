@@ -3,12 +3,12 @@ title: 通知リソースの種類
 description: '指定したユーザーを対象とするアプリサーバーによって発行される通知を表します。 通知は Microsoft Graph に格納され、ユーザーが所有する異なるデバイスエンドポイントに配布されます。 '
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: af130c9806511b0afbdaedb602790c7c40d3ca2e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 56a05ced6d722b3c1c347fc43735dec461aa0f69
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563353"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344108"
 ---
 # <a name="notification-resource-type"></a>通知リソースの種類
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "32563353"
 | ペイロード | Edm ComplexType、JSON オブジェクト | 各モバイルプラットフォームの通知プラットフォームによって使用され、ユーザーに対してレンダリングされる、ビジュアルユーザー通知のビジュアルコンテンツ。 POST 通知要求に対して、少なくとも1つのコンテンツおよび visualcontent が有効である必要があります。 |
 | ペイロード | String | ビジュアルユーザー通知のタイトル。 title または body のいずれかを指定する必要があります。 |
 | ペイロード | String | ビジュアルユーザー通知の本文。 title または body のいずれかを指定する必要があります。 |
-| displaytimetolive | しきい値 | この通知コンテンツを各プラットフォームの通知ビューアーに保持する時間 (秒単位) を設定します。 たとえば、windows デバイスに通知が配信されると、このプロパティの値が toastnotification に渡されます。この値によって、トースト通知がユーザーの Windows アクションセンターに保持される期間が決まります。 |
+| displaytimetolive | Int | この通知コンテンツを各プラットフォームの通知ビューアーに保持する時間 (秒単位) を設定します。 たとえば、windows デバイスに通知が配信されると、このプロパティの値が toastnotification に渡されます。この値によって、トースト通知がユーザーの Windows アクションセンターに保持される期間が決まります。 |
 | priority | EnumType | 生のユーザー通知の優先度を示します。 既定では、視覚通知は高優先度で送信されます。 有効な値は High と Low です。 |
 | groupName | String | この通知が属するグループの名前。 これは、通知をグループ化するための開発者によって設定されます。 |
 | targetpolicy | Edm ComplexType、JSON オブジェクト | ターゲットポリシーオブジェクトは、対象とする必要があるエンドポイントの種類 (Windows、iOS、および Android) と、対象とする必要がある特定のエンドポイント (サブスクリプション id で識別される) の2つの異なるレベルで通知配信ポリシーを処理します。 |

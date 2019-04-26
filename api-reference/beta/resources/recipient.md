@@ -2,12 +2,12 @@
 title: 受信者リソースの種類
 description: 'イベント、メッセージ、またはグループ投稿の送信側または受信側のユーザーに関する情報を表します。 '
 localization_priority: Normal
-ms.openlocfilehash: 9718d7e6ce09a42e742303aaed484fa6335f3cbc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4b326e7c85d8390ea6356860255103a466194f92
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563197"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343921"
 ---
 # <a name="recipient-resource-type"></a>受信者リソースの種類
 

@@ -4,12 +4,12 @@ description: 参加 URL、参加者リスト、説明など、会議に関する
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: d7009ceaf815986d50c8eb3b64d2541c32f01a88
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 698058fa918462448fcd115d5573e13ada49162e
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568864"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341842"
 ---
 # <a name="onlinemeeting-resource-type"></a>onlineMeeting リソースの種類
 
@@ -29,26 +29,21 @@ ms.locfileid: "32568864"
 | :------------------------ | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
 | accessLevel               | String                                                 | オンライン会議への受付を制御するアクセスレベル。 可能な値は、`everyone`、`invited`、`locked`、`sameEnterprise`、`unknown` です。 |
 | audioconferencing         | [audioconferencing](audioconferencing.md)              | onlineMeeting の電話アクセス情報を表します。 |
-| canceleddatetime          | DateTime
-                                               | 会議がキャンセルされた時刻。 |
+| canceleddatetime          | DateTime                                               | 会議がキャンセルされた時刻。 |
 | chatInfo                  | [chatInfo](chatinfo.md)                                | この会議に関連付けられているチャット。 |
-| 日付/時刻 (datetime)          | DateTime
-                                               | 会議が作成された時刻。 該当.
-| endDateTime               | DateTime
-                                               | 会議の終了時刻。 |
-| entryexitannouncement     | Boolean                                                | オンライン会議の出席アナウンスの状態。 出席依頼のアナウンスが有効になっている場合、オンライン会議では、participantswho の名前が音声で会議に参加するようにアナウンスされます。 |
-| expirationDateTime        | DateTime
-                                               | オンライン会議を削除できる、世界協定時 (UTC) の日付と時刻。 日付と時刻は、サーバー上の現在の日付と時刻の1年前、10年前にする必要があります。 |
+| 日付/時刻 (datetime)          | DateTime                                               | 会議が作成された時刻。 読み取り専用です。
+| endDateTime               | DateTime                                               | 会議の終了時刻。 |
+| entryexitannouncement     | Boolean                                                | オンライン会議の出席アナウンスの状態。 出席依頼のアナウンスが有効になっている場合、オンライン会議では、音声で会議に参加する参加者の名前がアナウンスされます。 |
+| expirationDateTime        | DateTime                                               | オンライン会議を削除できる、世界協定時 (UTC) の日付と時刻。 日付と時刻は、サーバー上の現在の日付と時刻の1年前、10年前にする必要があります。 |
 | id                        | String                                                 | オンライン会議に関連付けられている ID。 ID として GET HTTP 要求で使用されます。 読み取り専用です。 サーバーによって生成されます。 |
 | isCancelled               | Boolean                                                | 会議がキャンセルされたかどうか。 |
 | joinurl                   | String                                                 | オンライン会議が web から参加しているときに使用される URL。 |
-| 会議の種類               | String                                                 | 可能な値は`meetNow`、 `scheduled`、 `recurring`、、です。`broadcast` |
+| 会議の種類               | String                                                 | 使用可能な値`meetNow`は`scheduled`、 `recurring`、 `broadcast` 、、(メモ: [create onlineMeeting](../api/application-post-onlinemeetings.md) only がサポート`meetNow`) のいずれかです。 |
 | 参加者              | [会議参加者](meetingparticipants.md)          | オンライン会議に関連付けられている参加者。  これには、開催者と出席者が含まれます。 |
-| startDateTime             | DateTime
-                                               | 会議の開始時刻。 |
+| startDateTime             | DateTime                                               | 会議の開始時刻。 |
 | subject                   | String                                                 | オンライン会議の件名。 |
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -81,18 +76,3 @@ ms.locfileid: "32568864"
   "subject": "String"
 }
 ```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "onlineMeeting resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/onlinemeeting.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

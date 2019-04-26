@@ -2,12 +2,12 @@
 title: privilegedRole リソースの種類
 description: Azure AD 管理者の役割 (**全体管理者、課金管理者、サービス管理者、ユーザー管理者、パスワード管理者**など) を表します。
 localization_priority: Normal
-ms.openlocfilehash: 131999f52a583400b018e98d2319118f69ca87e8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9b5454745257bea071f967b654d3b6174c3c3289
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563428"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344292"
 ---
 # <a name="privilegedrole-resource-type"></a>privilegedRole リソースの種類
 
@@ -29,15 +29,15 @@ Azure AD 管理者の役割 (**全体管理者、課金管理者、サービス�
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|id|string|管理者の役割の一意識別子。 これは GUID 文字列であり、指定された役割に対して Azure AD からのロールテンプレート id と同じ値を持ちます。 値の取得のみ可能です。|
+|id|string|管理者の役割の一意識別子。 これは GUID 文字列であり、指定された役割に対して Azure AD からのロールテンプレート id と同じ値を持ちます。 読み取り専用。|
 |name|string|役割名。|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|assignments|[privilegedRoleAssignment](privilegedroleassignment.md)コレクション| この役割の割り当て。 読み取り専用。 Null 許容型。|
-|settings|[privilegedRoleSettings](privilegedrolesettings.md)| この役割の設定。 読み取り専用。 Null 許容型。|
-|summary|[privilegedRoleSummary](privilegedrolesummary.md)| このロールの概要情報。 読み取り専用。 Null 許容型。|
+|assignments|[privilegedRoleAssignment](privilegedroleassignment.md)コレクション| この役割の割り当て。 読み取り専用です。 Null 許容型。|
+|settings|[privilegedRoleSettings](privilegedrolesettings.md)| この役割の設定。 読み取り専用です。 Null 許容型。|
+|summary|[privilegedRoleSummary](privilegedrolesummary.md)| このロールの概要情報。 読み取り専用です。 Null 許容型。|
 
 ## <a name="json-representation"></a>JSON 表記
 

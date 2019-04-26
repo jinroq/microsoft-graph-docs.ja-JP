@@ -2,12 +2,12 @@
 title: responseStatus リソースの種類
 description: 会議出席依頼の応答状態です。
 localization_priority: Normal
-ms.openlocfilehash: 270c432235b929af2cb55ff63e10397fea5f92fb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8ec4b5f74fa8d83369c23f829b34dfa0ed53a1a1
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562988"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343578"
 ---
 # <a name="responsestatus-resource-type"></a>responseStatus リソースの種類
 

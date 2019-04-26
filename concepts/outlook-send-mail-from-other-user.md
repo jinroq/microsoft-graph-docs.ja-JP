@@ -5,12 +5,12 @@ author: jasonjoh
 localization_priority: Priority
 ms.prod: outlook
 ms.date: 01/16/2019
-ms.openlocfilehash: 44ddc4e4f9e7c535610bbd29fcc71eea8bfa8ee9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d3c9b2f77b63abf21d8eb538d08bade4f6cfcb32
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32558026"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345660"
 ---
 # <a name="send-outlook-messages-from-another-user"></a>別のユーザーを差出人として Outlook メッセージを送信する
 
@@ -210,13 +210,13 @@ Content-Type: application/json
 - [Outlook メールと統合する理由](outlook-mail-concept-overview.md)
 - Microsoft Graph v1.0 の[メール API](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) とメール PAPI の[用途](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases)。
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "suppressions": [
-    "Error: /concepts/outlook-send-mail-from-other-user.md:
-      Exception processing links.
-    System.ArgumentException: Link Definition was null. Link text: !NOTE
-      at ApiDoctor.Validation.DocFile.get_LinkDestinations()
-      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /concepts/outlook-send-mail-from-other-user.md:\r\n      FileNotFound: '[/exchange/recipients-in-exchange-online/manage-user-mailboxes/automatically-save-sent-items-in-delegator-s-mailbox](always save a copy of messages sent from a delegate)'.",
+    "Error: /concepts/outlook-send-mail-from-other-user.md:\r\n      InvalidUrlFormat '[/office365/admin/add-users/give-mailbox-permissions-to-another-user?view=o365-worldwide](Office 365 admin center)'.",
+    "Error: /concepts/outlook-send-mail-from-other-user.md:\r\n      FileNotFound: '[/Exchange/recipients/mailbox-permissions](mailbox permissions)'. "
   ]
-}-->
+}
+-->

@@ -2,12 +2,12 @@
 title: 同期ジョブを一覧表示する
 description: 特定のアプリケーションインスタンス (サービスプリンシパル) の既存のジョブを一覧表示します。
 localization_priority: Normal
-ms.openlocfilehash: 265b1f5a32239173154ef51077d59f3104ad03b3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7f4098b0df22daacca6a2de50b2c41e4e8dea0fc
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32545143"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33335697"
 ---
 # <a name="list-synchronization-jobs"></a>同期ジョブを一覧表示する
 
@@ -59,7 +59,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 ##### <a name="response"></a>応答
 応答の例を次に示します。 
 
->**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
+>**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 
 <!-- {
   "blockType": "response",
@@ -108,8 +108,6 @@ Content-length: 2958
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/synchronization-synchronizationjob-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

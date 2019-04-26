@@ -4,12 +4,12 @@ description: 割り当てに関連付けられているリソースを格納す�
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: 4d05cf5307e77dc6a7ac438c1bd4f4af4e73784e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 08a716edabc31c83a7fb3e358fbafd023d5fa784
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32542986"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334411"
 ---
 # <a name="educationassignmentresource-resource-type"></a>educationAssignmentResource リソースの種類
 
@@ -23,14 +23,14 @@ ms.locfileid: "32542986"
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
 |[educationAssignmentResource を取得する](../api/educationassignmentresource-get.md) | [educationAssignmentResource](educationassignmentresource.md) |**educationAssignmentResource**オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[更新](../api/educationassignmentresource-update.md) | [educationAssignmentResource](educationassignmentresource.md) |**educationAssignmentResource**オブジェクトを更新します。 |
+|[更新する](../api/educationassignmentresource-update.md) | [educationAssignmentResource](educationassignmentresource.md) |**educationAssignmentResource**オブジェクトを更新します。 |
 |[削除](../api/educationassignmentresource-delete.md) | なし |**educationAssignmentResource**オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|distributeForStudentWork|ブール値|このリソースを各学生送信にコピーして変更および提出する必要があるかどうかを示します。|
-|id|String| このリソースの ID。 読み取り専用。|
+|distributeForStudentWork|Boolean|このリソースを各学生送信にコピーして変更および提出する必要があるかどうかを示します。|
+|id|String| このリソースの ID。 読み取り専用です。|
 |リソース|[educationResource](educationresource.md)|この割り当てに関連付けられているリソースオブジェクト。|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -67,8 +67,6 @@ ms.locfileid: "32542986"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationassignmentresource.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

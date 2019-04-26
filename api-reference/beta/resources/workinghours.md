@@ -2,16 +2,14 @@
 title: workingHours リソースの種類
 description: ユーザーが働く曜日と、特定のタイムゾーンの時間を表します。
 localization_priority: Normal
-ms.openlocfilehash: 40a74cd1446dc2553e30ebd0616b0b0e33192778
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: df36e2f64972badcf618a52f3e2874a269913706
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32453316"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342755"
 ---
 # <a name="workinghours-resource-type"></a>workingHours リソースの種類
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ユーザーが働く曜日と、特定のタイムゾーンの時間を表します。
 
@@ -25,11 +23,10 @@ ms.locfileid: "32453316"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-| daysOfWeek | String コレクション | ユーザーが働く曜日。 |
+| daysOfWeek | dayOfWeek コレクション | ユーザーが働く曜日。 |
 | startTime | Edm.TimeOfDay | ユーザーの始業時間。 |
 | endTime | Edm.TimeOfDay | ユーザーの終業時間。 |
 | timeZone | [timeZoneBase](timezonebase.md) | 就業時間に適用するタイム ゾーン。 |
-
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -46,8 +43,8 @@ ms.locfileid: "32453316"
 ```json
 {
   "daysOfWeek": ["string"],
-  "startTime": "TimeOfDay",
-  "endTime": "TimeOfDay",
+  "startTime": "String (timeofday)",
+  "endTime": "String (timeofday)",
   "timeZone": {"@odata.type": "microsoft.graph.timeZoneBase"}
 }
 
@@ -55,15 +52,14 @@ ms.locfileid: "32453316"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "workingHours resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/resources/workinghours.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+    "Warning: /api-reference/v1.0/resources/workinghours.md/microsoft.graph.workingHours/daysOfWeek:
+      Inconsistent types between parameter (String) and table (Object)"
+  ],
+  "tocPath": ""
+}-->

@@ -4,12 +4,12 @@ description: '招待マネージャーを使用して、組織に外部ユーザ
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6f303e55735c24edc46cb7107d9541c4b20c479a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 524e97befcdc08fcf216255ee37f981a5f2b54ac
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570097"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341377"
 ---
 # <a name="invitation-manager"></a>招待マネージャー
 
@@ -47,14 +47,25 @@ ms.locfileid: "32570097"
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|invitedUser|[User](user.md)|招待状作成の一環として作成されたユーザー。読み取り専用|
+|invitedUser|[ユーザー](user.md)|招待状作成の一環として作成されたユーザー。読み取り専用|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です
 
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.invitations" } -->
+<!-- 
+{ 
+    "blockType": "resource",
+    "keyProperty":"id",
+    "@odata.type": "microsoft.graph.invitation", 
+    "optionalProperties": [
+        "invitedUser"
+     ],
+    "baseType": "microsoft.graph.entity"
+} 
+-->
 ```json
 {
+  "id": "string",
   "invitedUserDisplayName": "string",
   "invitedUserEmailAddress": "string",
   "invitedUserMessageInfo": {"@odata.type": "microsoft.graph.invitedUserMessageInfo"},
@@ -62,8 +73,8 @@ ms.locfileid: "32570097"
   "inviteRedirectUrl": "string",
   "inviteRedeemUrl": "string",
   "status": "string",
-
-  "invitedUser": [{"@odata.type": "microsoft.graph.user"}]
+  "invitedUser": {"@odata.type": "microsoft.graph.user"},
+  "invitedUserType": "string"
 }
 ```
 
@@ -77,8 +88,6 @@ ms.locfileid: "32570097"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/invitation.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

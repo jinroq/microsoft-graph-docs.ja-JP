@@ -3,12 +3,12 @@ title: サブスクリプションを削除する
 description: サブスクリプションを削除します。
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: 9fa5a60bbb00bb7d15ae14a0b76235a5629f2c42
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3f3ab73f1d29de89a9eea3d30a0e8af50c556286
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32537154"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33335850"
 ---
 # <a name="delete-subscription"></a>サブスクリプションを削除する
 
@@ -23,8 +23,8 @@ ms.locfileid: "32537154"
 | サポートされているリソース | 委任 (職場または学校のアカウント) | 委任 (個人用 Microsoft アカウント) | アプリケーション |
 |:-----|:-----|:-----|:-----|
 |[連絡先](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
-|[driveItem](../resources/driveitem.md) (ユーザーの個人用 OneDrive) | サポート対象外 | Files.ReadWrite | サポート対象外 |
-|[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | サポート対象外 | Files.ReadWrite.All |
+|[driveItem](../resources/driveitem.md) (ユーザーの個人用 OneDrive) | サポートされていません | Files.ReadWrite | サポートされていません |
+|[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | サポートされていません | Files.ReadWrite.All |
 |[イベント](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 |[グループ](../resources/group.md) | Group.Read.All | サポート対象外 | Group.Read.All |
 |[グループ会話](../resources/conversation.md) | Group.Read.All | 非サポート | 非サポート |
@@ -98,8 +98,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/subscription-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

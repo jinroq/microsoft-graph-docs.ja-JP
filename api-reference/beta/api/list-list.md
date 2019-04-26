@@ -3,16 +3,18 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: サイト内の SharePoint リストを一覧表示する
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: c91d7f8f395faa48965cb8334e1cc9eba78b978c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f7f6863f87814b56ea85b05ac1d96537828cb135
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32540972"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333464"
 ---
 # <a name="enumerate-lists-in-a-site"></a>サイト内のリストを列挙する
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [サイト][]の[リスト][]のコレクションを取得します。
 
@@ -32,17 +34,17 @@ ms.locfileid: "32540972"
 ## <a name="http-request"></a>HTTP 要求
 
 ```http
-GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
+GET https://graph.microsoft.com/beta/sites/{site-id}/lists
 ```
 
 ## <a name="example"></a>例
 
 #### <a name="request"></a>要求
 
-<!-- { "blockType": "request", "name": "enum-lists", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
+<!-- { "blockType": "request", "name": "enum-lists", "scopes": "sites.read.all service.sharepoint" } -->
 
 ```http
-GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
+GET https://graph.microsoft.com/beta/sites/{site-id}/lists
 ```
 
 ##### <a name="response"></a>応答
@@ -86,10 +88,13 @@ Content-type: application/json
 
 [system]: ../resources/systemfacet.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Lists/Enumerate"
-} -->
+  "tocPath": "Lists/Enumerate",
+  "suppressions": []
+}
+-->

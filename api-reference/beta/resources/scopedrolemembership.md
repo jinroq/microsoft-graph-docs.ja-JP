@@ -2,12 +2,12 @@
 title: scopedRoleMembership リソースの種類
 description: スコープ指定された役割メンバーシップは、管理単位 (AU) に対してさらにスコープを設定する、ディレクトリロールのユーザーのメンバーシップを記述します。  これにより、テナント全体の会社 adminsistrator が、組織のサブセット (AU で定義されているサブセット) 内のユーザーとグループを管理するための管理者権限を委任できるようになります。
 localization_priority: Normal
-ms.openlocfilehash: 2d51ad696487e7daafb9b0f4fcef0934e4f6d6e2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 56a2514fa65033154b6ab69c497c90fde201c28e
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562980"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343469"
 ---
 # <a name="scopedrolemembership-resource-type"></a>scopedRoleMembership リソースの種類
 
@@ -22,11 +22,11 @@ ms.locfileid: "32562980"
 | プロパティ   | 型 | 説明 |
 |:---------------|:--------|:----------|
 |administrativeUnitId|string|ディレクトリの役割のスコープが設定されている管理単位の一意の識別子|
-|id|string| スコープ指定された役割のメンバーシップの一意識別子。 読み取り専用。|
+|id|string| スコープ指定された役割のメンバーシップの一意識別子。 読み取り専用です。|
 |roleId|string| メンバーが属しているディレクトリロールの一意の識別子。|
 |roleMemberInfo|[identity](identity.md)| 役割メンバーの id 情報。 このスコープ指定された役割のメンバーであるユーザーを表します。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 
@@ -39,7 +39,7 @@ ms.locfileid: "32562980"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.scopedrolemembership"
+  "@odata.type": "microsoft.graph.scopedRoleMembership"
 }-->
 
 ```json
@@ -61,8 +61,6 @@ ms.locfileid: "32562980"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/scopedrolemembership.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

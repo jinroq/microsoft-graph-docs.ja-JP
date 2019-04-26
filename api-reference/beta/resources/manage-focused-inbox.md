@@ -2,14 +2,16 @@
 title: 優先受信トレイを管理する
 description: '優先受信トレイを使用すると、受信トレイ`Focused`のタブ内の重要なメッセージ、およびその他の受信トレイ`Other`メッセージをタブに表示できます。分類システム '
 localization_priority: Normal
-ms.openlocfilehash: 5ee5d5f9dd48faa7d0590cbbc6dfda39d8f117e0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5f4493e45038e12ed7a4459220d568ee647a5388
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562578"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342645"
 ---
 # <a name="manage-focused-inbox"></a>優先受信トレイを管理する
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 優先受信トレイでは、受信トレイの `Focused` タブに重要メッセージを表示し、その他の受信トレイのメッセージを `Other` タブに表示します。システム主体の分類方法によって、既定の方法で受信トレイのメッセージが整理されます。ユーザー インターフェイスまたはプログラムを介して、時間の経過によってシステムを修正し、学習させることができます。使用頻度が増えるほど、システムは、受信したメッセージの重要性をより高い精度で予想できるようになります。
 

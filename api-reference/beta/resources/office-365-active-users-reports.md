@@ -4,12 +4,12 @@ description: Office 365 アクティブユーザーレポートを使用して�
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 638550fbc44acd0154a2dab5c062e2061fa9c582
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e31bc0ef8d2fa3147528503902c46b33d4944ce7
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562619"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341998"
 ---
 # <a name="office-365-active-users-reports"></a>Office 365 アクティブ ユーザー レポート
 

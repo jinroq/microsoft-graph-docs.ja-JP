@@ -2,12 +2,12 @@
 title: preauthorizedapplication リソースの種類
 description: アプリケーションと、暗黙的同意の要求されたアクセス許可を表します。 管理者はアプリケーションに同意を得る必要があります。 preauthorizedapplications では、ユーザーが要求されたアクセス許可に同意する必要はありません。 preauthorizedapplications にリストされているアクセス許可は、ユーザーの同意を必要としません。 ただし、preauthorizedapplications に表示されていない追加の要求されたアクセス許可には、ユーザーの同意が必要です。
 localization_priority: Normal
-ms.openlocfilehash: 22945589341066f4609d47773cb04426774648fd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f74ac0883c883bfbb2cb93c2da58e9fd8419dadd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563626"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344230"
 ---
 # <a name="preauthorizedapplication-resource-type"></a>preauthorizedapplication リソースの種類
 

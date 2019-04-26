@@ -4,12 +4,12 @@ description: 会議の機能が含まれています。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: e71d7c8c6489d5856e5f2441cd93c7fdea033bd4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 55a577490ee4c40bbd4adcc63a7e4aa7f38c8dd1
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457145"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342599"
 ---
 # <a name="meetingcapability-resource-type"></a>会議機能リソースの種類
 
@@ -21,8 +21,8 @@ ms.locfileid: "32457145"
 
 | プロパティ                          | 型    | 説明                                                        |
 |:----------------------------------|:--------|:-------------------------------------------------------------------|
-| allowAnonymousUsersToDialOut      | ブール型 | 匿名ユーザーが会議でダイヤルアウトが許可されているかどうかを示します。 |
-| allowAnonymousUsersToStartMeeting | ブール型 | 匿名ユーザーが会議の開始を許可されているかどうかを示します。  |
+| allowAnonymousUsersToDialOut      | Boolean | 匿名ユーザーが会議でダイヤルアウトが許可されているかどうかを示します。 |
+| allowAnonymousUsersToStartMeeting | Boolean | 匿名ユーザーが会議の開始を許可されているかどうかを示します。  |
 | autoAdmittedUsers                 | String  | 使用可能な値は、`everyoneInCompany`、`everyone` です。              |
 
 ## <a name="json-representation"></a>JSON 表記
@@ -53,8 +53,6 @@ ms.locfileid: "32457145"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/meetingcapability.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

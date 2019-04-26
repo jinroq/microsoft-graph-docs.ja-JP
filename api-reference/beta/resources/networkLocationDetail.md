@@ -2,23 +2,23 @@
 title: networklocationdetail リソースの種類
 description: ネットワークの場所に関連付けられている詳細を示します。 .
 localization_priority: Normal
-ms.openlocfilehash: bfa84591f543253ed794016bbc2d25d325cd0bcc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c4a5323099258d9670b970b1bb85bd0d01f3cf8d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581444"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342178"
 ---
 # <a name="networklocationdetail-resource-type"></a>networklocationdetail リソースの種類
-ネットワークの場所に関連付けられている詳細を示します。 .
+ネットワークの場所に関連付けられている詳細を示します。
 
 
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|networkType|String|ネットワークの種類を示します。 可能な値`intranet`は`extranet` `namedNetwork`、、、 `trusted`およびです。|
-|networkname|String|ネットワークの名前。|
+|networkType|networkType|ネットワークの種類を示します。 使用可能な値`intranet`は`extranet`、 `namedNetwork`、、 `trusted`、です。|
+|networknames|String collection|ネットワークの名前。|
 
 
 ## <a name="json-representation"></a>JSON 表記
@@ -30,13 +30,13 @@ ms.locfileid: "32581444"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.deviceDetail"
+  "@odata.type": "microsoft.graph.networkLocationDetail"
 }-->
 
 ```json
 {
-  "networkTypes": "namedNetork",
-  "networkName": "String"
+  "networkType": "string",
+  "networkNames": ["String"]
 }
 
 ```
@@ -45,7 +45,7 @@ ms.locfileid: "32581444"
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "deviceDetail resource",
+  "description": "networkLocationDetail resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

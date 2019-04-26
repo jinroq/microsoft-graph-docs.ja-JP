@@ -4,12 +4,12 @@ description: '**plannerTask** リソースは、Office 365 の Planner のタス
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: daa5b451211b442fb1b5b197f323baa4cd37cda7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9b57330501b25b50f2f01c45087290ee5e6d4d8f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583229"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344380"
 ---
 # <a name="plannertask-resource-type"></a>plannerTask のリソースの種類
 
@@ -24,7 +24,7 @@ ms.locfileid: "32583229"
 |:---------------|:--------|:----------|
 |[Get plannerTask](../api/plannertask-get.md) | [plannerTask](plannertask.md) |**plannerTask** オブジェクトのプロパティとリレーションシップを読み取ります。|
 |[Update](../api/plannertask-update.md) | [plannerTask](plannertask.md) |**plannerTask** オブジェクトを更新します。 |
-|[削除](../api/plannertask-delete.md) | なし |**plannerTask** オブジェクトを削除します。 |
+|[Delete](../api/plannertask-delete.md) | なし |**plannerTask** オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
@@ -67,6 +67,8 @@ ms.locfileid: "32583229"
   "optionalProperties": [
 
   ],
+  "keyProperty": "id",
+  "baseType":"microsoft.graph.entity",  
   "@odata.type": "microsoft.graph.plannerTask"
 }-->
 
@@ -106,8 +108,6 @@ ms.locfileid: "32583229"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/plannertask.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

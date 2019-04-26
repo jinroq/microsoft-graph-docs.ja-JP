@@ -4,12 +4,12 @@ description: テーブルに新しい列を追加します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 1f3e2b5cacb3bb7ab462cc127b9cbc2e3b85019f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5537124576650c54701e0f9fd4cc3cd2142a7ce2
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32536778"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33335466"
 ---
 # <a name="tablecolumncollection-add"></a>TableColumnCollection: 追加
 
@@ -44,11 +44,11 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/add
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |index|number|新しい列の相対位置を指定します。この位置の前の列は右にシフトされます。インデックス値は、最後の列のインデックス値と等しいか、小さくなります。そのため、テーブルの末尾に列を追加するためには使用できません。0 を起点とする番号になります。|
-|values|(boolean、string、または number)|省略可能。テーブルの列の、書式設定されていない値の 2 次元の配列。|
+|values|(boolean または string または number) コレクション|省略可能。テーブルの列の、書式設定されていない値の 2 次元の配列。|
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [TableColumn](../resources/tablecolumn.md) オブジェクトを返します。
+成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[workbookTableColumn](../resources/workbooktablecolumn.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 以下は、この API を呼び出す方法の例です。
@@ -78,7 +78,7 @@ Content-length: 51
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tableColumn"
+  "@odata.type": "microsoft.graph.workbookTableColumn"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -102,8 +102,6 @@ Content-length: 81
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/tablecolumncollection-add.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

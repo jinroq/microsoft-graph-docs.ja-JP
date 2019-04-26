@@ -4,12 +4,12 @@ description: tablerow オブジェクトのプロパティを更新します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: a57508de840ea4f305a426e70511071c3f1d7d12
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c115fbb455b2e0dae6315682d284f97d83f0519f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32544601"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33330505"
 ---
 # <a name="update-tablerow"></a>tablerow を更新する　
 
@@ -28,8 +28,8 @@ tablerow オブジェクトのプロパティを更新します。
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/tables/{id|name}/rows(<index>)
-PATCH /workbook/worksheets/{id|name}/tables/{id|name}/rows(<index>)
+PATCH /workbook/tables/{id|name}/rows/{index}
+PATCH /workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
 ```
 ## <a name="optional-request-headers"></a>オプションの要求ヘッダー
 | 名前       | 説明|
@@ -42,11 +42,11 @@ PATCH /workbook/worksheets/{id|name}/tables/{id|name}/rows(<index>)
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|values|json|指定した範囲の Raw 値を表します。返されるデータの型は、文字列、数値、またはブール値のいずれかになります。エラーが含まれているセルは、エラー文字列を返します。|
+|values|Json|指定した範囲の Raw 値を表します。返されるデータの型は、文字列、数値、またはブール値のいずれかになります。エラーが含まれているセルは、エラー文字列を返します。|
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された [TableRow](../resources/tablerow.md) オブジェクトを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で、更新された[workbookTableRow](../resources/workbooktablerow.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。
@@ -55,7 +55,7 @@ PATCH /workbook/worksheets/{id|name}/tables/{id|name}/rows(<index>)
   "name": "update_tablerow"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/rows(<index>)
+PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/rows/{index}
 Content-type: application/json
 Content-length: 45
 
@@ -69,7 +69,7 @@ Content-length: 45
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tableRow"
+  "@odata.type": "microsoft.graph.workbookTableRow"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -91,8 +91,6 @@ Content-length: 45
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/tablerow-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

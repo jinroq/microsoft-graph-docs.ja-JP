@@ -4,14 +4,16 @@ description: '**plannerUserIds**リソースは、プランを共有している
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 3c5f6fd3048924326d4878f2984a2b1077f074df
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 83717714d58cd0c442b42c23c9aa361bcd3b2261
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563624"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344390"
 ---
 # <a name="planneruserids-resource-type"></a>plannerUserIds リソースの種類
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **plannerUserIds**リソースは、[プラン](plannerplan.md)を共有しているユーザー id のリストを表します。 これはオープン型です。 Office 365 グループを使用している場合は、グループのメンバーシップを管理するグループの API を使用して、グループ[の](group.md)計画を共有します。 このコレクションにグループの既存のメンバーを追加することもできます。ただし、グループが所有しているプランにアクセスするためには必要ありません。
 
@@ -26,8 +28,9 @@ ms.locfileid: "32563624"
 
 <!-- {
   "blockType": "resource",
-  "openType": true,
-  "optionalProperties": [ "String-value" ],
+  "optionalProperties": [
+
+  ],
   "@odata.type": "microsoft.graph.plannerUserIds"
 }-->
 
@@ -47,10 +50,13 @@ ms.locfileid: "32563624"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "plannerUserIds resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

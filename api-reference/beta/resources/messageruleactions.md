@@ -4,12 +4,12 @@ description: ルールに使用可能なアクションのセットを表しま�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: a786a225bb9d439d60a29d2395b2d438975fc16c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5582bbe2d6dcf054b276bd583a8544752d6d5eb4
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523421"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342234"
 ---
 # <a name="messageruleactions-resource-type"></a>messageRuleActions リソースの種類
 
@@ -21,16 +21,14 @@ ms.locfileid: "32523421"
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 | assignCategories | String コレクション | メッセージに割り当てられるカテゴリの一覧です。 |
-| copyToFolder | String
- | メッセージのコピー先のフォルダーの ID です。 |
-| delete | ブール型 | 削除済みアイテム フォルダーにメッセージを移動する必要があるかどうかを示します。 |
+| copyToFolder | String | メッセージのコピー先のフォルダーの ID です。 |
+| delete | Boolean | 削除済みアイテム フォルダーにメッセージを移動する必要があるかどうかを示します。 |
 | forwardAsAttachmentTo | [recipient](recipient.md) collection | 添付ファイルとしてメッセージを転送する受信者の電子メール アドレスです。 |
 | forwardTo | [recipient](recipient.md) コレクション | メッセージを転送する受信者の電子メール アドレスです。 |
-| markAsRead | ブール型 | メッセージを開封済みにする必要があるかどうかを示します。 |
-| markImportance | String
- | メッセージの重要度を設定します。使用可能な値は、`low`、`normal`、`high` です。 |
+| markAsRead | Boolean | メッセージを開封済みにする必要があるかどうかを示します。 |
+| markImportance | String | メッセージの重要度を設定します。使用可能な値は、`low`、`normal`、`high` です。 |
 | moveToFolder |  String| メッセージ移動先のフォルダーの ID です。 |
-| permanentDelete | ブール型 | メッセージを完全に削除し、削除済みアイテム フォルダーにメッセージを保存しないようにするかどうかを示します。 |
+| permanentDelete | Boolean | メッセージを完全に削除し、削除済みアイテム フォルダーにメッセージを保存しないようにするかどうかを示します。 |
 | redirectTo | [recipient](recipient.md) | メッセージのリダイレクト先の電子メール アドレスです。 |
 | stopProcessingRules | Boolean | 後続のルールを評価する必要があるかどうかを示します。 |
 
@@ -71,8 +69,6 @@ ms.locfileid: "32523421"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/messageruleactions.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -4,12 +4,12 @@ description: '**plan by コンテキスト**リソースは、Planner の外部�
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 76260b51bc6f77acf6fac22e80bd676edd8b8e11
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 68d9233d2645c2176ad364fbcbfac869976f0586
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32522161"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344450"
 ---
 # <a name="plannerplancontext-resource-type"></a>プラン "context/プラン" コンテキストリソースの種類
 
@@ -24,7 +24,7 @@ ms.locfileid: "32522161"
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |associationType|String|Null 許容型。 アプリケーションで定義された、[プラン](plannerplan.md)とアプリの間の関連付けの種類。 アプリはこの情報を使用して、同じ[プラン](plannerplan.md)の異なる種類のリレーションシップを追跡できます。|
-|createdDateTime|DateTimeOffset|読み取り専用。 **プラン**が作成された日付と時刻。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
+|createdDateTime|DateTimeOffset|読み取り専用。 **プラン**が作成された日付と時刻。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、`'2014-01-01T00:00:00Z'` のようになります。|
 |displaynamesegments|String collection|外部環境の名前のセグメント。 セグメントは、他のアプリがリレーションシップを表示できる階層構造を表します。|
 |ownerappid|String|読み取り専用です。 **プランのコンテキスト**を作成したアプリの ID です。|
 
@@ -62,8 +62,6 @@ ms.locfileid: "32522161"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/plannerplancontext.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

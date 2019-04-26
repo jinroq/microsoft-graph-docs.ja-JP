@@ -5,11 +5,11 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: 5aa99119f23baa4cd9450d48ee4955d7ce91f60d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583682"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343368"
 ---
 # <a name="securityaction-resource-type"></a>securityAction リソースの種類
 
@@ -38,7 +38,7 @@ Microsoft Graph のセキュリティの securityAction エンティティを使
 |CompletedDateTime|DateTimeOffset|アクションが完了したときのタイムスタンプ。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |createdDateTime|DateTimeOffset|アクションが作成されたときのタイムスタンプ。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |errorInfo|[resultInfo](resultinfo.md)| アクションが失敗した場合のエラー情報。|
-|id|String| アクションが取り込まれたの場合に、システムによって作成されます。 生成された GUID/一意の識別子。 読み取り専用。|
+|id|文字列型 (String)| アクションが取り込まれたの場合に、システムによって作成されます。 生成された GUID/一意の識別子。 読み取り専用です。|
 |lastactiondatetime|DateTimeOffset| このアクションが最後に更新されたときのタイムスタンプ。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |name|String| アクション名。|
 |parameters|[keyValuePair](keyvaluepair.md) コレクション| アクションを呼び出すために必要なパラメーター (キーと値のペア) のコレクション (たとえば、ブロックする URL または filehash など)。 **必須**|
@@ -47,7 +47,7 @@ Microsoft Graph のセキュリティの securityAction エンティティを使
 |user|String| アクションを送信 (POST) した、サインインしているユーザーのユーザープリンシパル名。 ユーザーは、認証トークンから抽出され、呼び出し元アプリケーションによって手動で入力されることはありません。|
 |vendorInformation|[securityVendorInformation](securityvendorinformation.md)|セキュリティ製品/サービスベンダー、プロバイダー、およびサブプロバイダに関する詳細を含む複合型 (ベンダー = Microsoft; provider = Windows Defender ATP; サブプロバイダ = AppLocker)。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 
 なし
 

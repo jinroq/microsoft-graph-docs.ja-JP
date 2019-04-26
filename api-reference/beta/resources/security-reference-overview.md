@@ -4,12 +4,12 @@ description: セキュリティ上の脅威の高度化が引き続きエスカ�
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 37e98203e8f031aa98b35d82110a69e434c22a3f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 853f09ca30378c4fa7e8132f495d789ec142f13c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32524464"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343393"
 ---
 # <a name="use-the-microsoft-graph-api-for-security-threat-detection-and-protection-preview"></a>Microsoft Graph API を使用してセキュリティの脅威の検出と保護を行う (プレビュー)
 
@@ -27,11 +27,3 @@ ms.locfileid: "32524464"
 - [セキュリティ API を使用してインテリジェントセキュリティグラフと統合する](security-api-overview.md)
 - [Azure AD を使用して組織内の id を保護する理由](/graph/security-concept-overview#why-use-azure-ad-to-protect-identities-in-your-organization)
 - [Azure AD Identity Protection API を使用する](identityprotection-root.md)
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/security-reference-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

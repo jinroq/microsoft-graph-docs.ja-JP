@@ -4,12 +4,12 @@ description: ) Office 365 のプラン内のタスク。 これはプランに�
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
-ms.openlocfilehash: 85cf30bc13b3236928e662807a144f81614adbd7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a9e6b3ac4a9bad8d7402dee28706b5200c623078
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579255"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344587"
 ---
 # <a name="plannerbucket-resource-type"></a>plan/バケットリソースの種類
 
@@ -24,8 +24,8 @@ ms.locfileid: "32579255"
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
 |[Get plannerBucket](../api/plannerbucket-get.md) | [plannerBucket](plannerbucket.md) |**プラン**オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[plannerTasks を一覧表示する](../api/plannerbucket-list-tasks.md) |[plannerTask](plannertask.md) コレクション| プランを取得する**タスク**オブジェクトコレクション。|
-|[作成](../api/planner-post-buckets.md) | [plannerBucket](plannerbucket.md)   | 新しい**プラン**のオブジェクトを作成します。 |
+|[plannerTasks を一覧表示する](../api/plannerbucket-list-tasks.md) |[plannerTask](plannertask.md) コレクション| **plannerTask** オブジェクト コレクションを取得します。|
+|[Create](../api/planner-post-buckets.md) | [plannerBucket](plannerbucket.md)   | 新しい**プラン**のオブジェクトを作成します。 |
 |[更新する](../api/plannerbucket-update.md) | [plannerBucket](plannerbucket.md)   |**プラン**オブジェクトを更新します。 |
 |[削除](../api/plannerbucket-delete.md) | なし |**プラン**オブジェクトを削除します。 |
 
@@ -40,7 +40,7 @@ ms.locfileid: "32579255"
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|tasks|[plannerTask](plannertask.md) コレクション| 読み取り専用。 Null 許容型。 バケット内のタスクのコレクション。|
+|tasks|[plannerTask](plannertask.md) コレクション| 読み取り専用です。 Null 許容型。 バケット内のタスクのコレクション。|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
@@ -50,6 +50,8 @@ ms.locfileid: "32579255"
   "optionalProperties": [
 
   ],
+  "keyProperty": "id",
+  "baseType":"microsoft.graph.entity",  
   "@odata.type": "microsoft.graph.plannerBucket"
 }-->
 
@@ -72,8 +74,6 @@ ms.locfileid: "32579255"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/plannerbucket.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

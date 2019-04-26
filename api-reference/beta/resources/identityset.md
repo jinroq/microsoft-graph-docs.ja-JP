@@ -4,16 +4,19 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: IdentitySet
 localization_priority: Normal
-ms.openlocfilehash: 10b39bd5747e10ea4340bb5b4c54df0f94eb4229
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b1570fc0ec0a6e28bab569dfae6992675d8b3537
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547145"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333661"
 ---
 # <a name="identityset-resource-type"></a>id セットリソースの種類
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 identity **set**リソースは、 [id](identity.md)リソースのキー付きコレクションです。
+
 _作成者_または_最終更新者_など、アイテムのさまざまなイベントに関連付けられている id のセットを表すために使用されます。
 
 ## <a name="json-representation"></a>JSON 表記
@@ -55,7 +58,7 @@ _作成者_または_最終更新者_など、アイテムのさまざまなイ�
 | プロパティ    | 型                    | 説明                                             |
 |:------------|:------------------------|:--------------------------------------------------------|
 | application | [ID](identity.md) | 省略可能。このアクションに関連付けられているアプリケーション。  |
-| 会話| [Identity](identity.md) | 省略可能。 このアクションに関連付けられているチームまたはチャネル。       |
+| conversation| [Identity](identity.md) | 省略可能。 このアクションに関連付けられているチームまたはチャネル。       |
 | conversationIdentityType| [Identity](identity.md) | 省略可能。 **会話**プロパティがチームまたはチャネルを識別するかどうかを示します。|
 | デバイス      | [ID](identity.md) | 省略可能。このアクションに関連付けられているデバイス。       |
 | phone       | [identity](identity.md) | 省略可能。 このアクションに関連付けられている電話番号。 |

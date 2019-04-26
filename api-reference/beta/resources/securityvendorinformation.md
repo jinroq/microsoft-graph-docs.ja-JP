@@ -1,15 +1,15 @@
 ---
 title: securityVendorInformation リソースの種類
-description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。"
+description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでは、これらの API の使用はサポートされていません。"
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 7f48c27ba94d8419ce244143a48cf6ab04dd080e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d543bf16617ed28d50d2e7082372ff2014cd24c5
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583248"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343302"
 ---
 # <a name="securityvendorinformation-resource-type"></a>securityVendorInformation リソースの種類
 

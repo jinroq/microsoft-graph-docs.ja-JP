@@ -4,14 +4,16 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: searchresult.xml
 localization_priority: Normal
-ms.openlocfilehash: 025d18a48105ddb5834040aba5944a9bd408cfbc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 74743839d55dd5a8fc52661fac4a071d7a1730bc
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562966"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343480"
 ---
 # <a name="searchresult-resource-type"></a>SearchResult リソースの種類
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **SearchResult** リソースは、アイテムが検索クエリへの応答であることを示します。
 
@@ -39,10 +41,13 @@ ms.locfileid: "32562966"
 
 DriveItem のファセットの詳細については、「[DriveItem](driveitem.md)」を参照してください。
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The search result facet indicates an item is from a search.",
   "keywords": "search result facet",
   "section": "documentation",
-  "tocPath": "Facets/SearchResult"
-} -->
+  "tocPath": "Facets/SearchResult",
+  "suppressions": []
+}
+-->

@@ -4,12 +4,12 @@ description: 組織内の電子メールトラフィックの高レベルのビ�
 localization_priority: Normal
 author: pranoychaudhuri
 ms.prod: reports
-ms.openlocfilehash: 748199a2e846cc71a3f04c3ea1bda97dcf2c7301
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d3adb15bd6bb6c60b3957cd81b5d2f915ecfaa8c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32542913"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333929"
 ---
 # <a name="email-activity-reports"></a>電子メール アクティビティ レポート
 
@@ -26,11 +26,3 @@ ms.locfileid: "32542913"
 | [ユーザーの詳細を取得する](../api/reportroot-getemailactivityuserdetail.md) | Stream          | [emailactivityuserdetail](../resources/emailactivityuserdetail.md) | ユーザーが実行した電子メール アクティビティに関する詳細を取得します。 |
 | [アクティビティの数を取得する](../api/reportroot-getemailactivitycounts.md) | Stream          | [emailactivitysummary](../resources/emailactivitysummary.md) | 組織内の電子メール アクティビティ (送信、読み取り、受信の数) の傾向を把握できます。 |
 | [ユーザーの数を取得する](../api/reportroot-getemailactivityusercounts.md) | Stream          | [emailactivitysummary](../resources/emailactivitysummary.md) | 送信、読み取り、受信などの電子メール アクティビティを実行しているそれぞれ別個のユーザーの数に関する傾向を把握することができます。 |
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/email-activity-reports.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

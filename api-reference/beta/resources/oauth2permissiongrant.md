@@ -2,12 +2,12 @@
 title: oAuth2PermissionGrant リソースの種類
 description: ユーザーまたは管理者の同意プロセスの一部としてアプリケーション (サービスプリンシパルによって表される) に付与された OAuth 2.0 スコープ (デリゲートされたアクセス許可) を表します。
 localization_priority: Normal
-ms.openlocfilehash: ea6486aedca4c3fcf73e59a5652ccf517fb01ddc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f23d2e7a8b57b324a92a1268ab4cc0393d8906f0
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581546"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342066"
 ---
 # <a name="oauth2permissiongrant-resource-type"></a>oAuth2PermissionGrant リソースの種類
 
@@ -24,7 +24,7 @@ ms.locfileid: "32581546"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.oAuth2Permissiongrant"
+  "@odata.type": "microsoft.graph.oAuth2PermissionGrant"
 }-->
 
 ```json
@@ -46,13 +46,13 @@ ms.locfileid: "32581546"
 |clientId|String| リソースにアクセスするときにユーザーを偽装する同意を付与するサービスプリンシパルの id (resourceId プロパティで表されます)。 |
 |consentType|String| 同意が管理者によって (組織の代わりに) 提供されたか、個人によって提供されたかを示します。 使用可能な値は*allprincipals*または*Principal*です。 |
 |expiryTime|DateTimeOffset| 現時点では、有効期限の値は無視されます。 |
-|id|String| 一意の識別子。 読み取り専用。|
+|id|文字列型 (String)| 一意の識別子。 読み取り専用です。|
 |principalId|String| consettings type が*allprincipals*の場合、この値は null になり、組織内のすべてのユーザーに同意が適用されます。 conな種類が*Principal*の場合、このプロパティは同意を付与されたユーザーの id を指定し、そのユーザーに対してのみ適用されます。 |
 |resourceId|String| アクセスが許可されているリソースサービスプリンシパルの id を指定します。 |
 |scope|文字列| OAuth 2.0 アクセストークンでリソースアプリケーションが想定する[スコープ](/graph/permissions-reference)要求の値を指定します。 たとえば、「ユーザー」と表示*します。* |
 |startTime|DateTimeOffset| 現時点では、開始時刻の値は無視されます。 |
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 
@@ -74,8 +74,6 @@ ms.locfileid: "32581546"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/oauth2permissiongrant.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

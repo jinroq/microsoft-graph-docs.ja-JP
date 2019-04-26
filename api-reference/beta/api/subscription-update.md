@@ -3,14 +3,16 @@ title: サブスクリプションを更新する
 description: サブスクリプションを更新するには、サブスクリプションの有効期限を延長します。
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: e868489ca5eb95cdc2ee8c33176c8da20271bd12
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0c179e6922a18b0b9830683cfd7af7ec3710fc96
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32537105"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33335718"
 ---
 # <a name="update-subscription"></a>サブスクリプションを更新する
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 サブスクリプションを更新するには、サブスクリプションの有効期限を延長します。
 
@@ -23,8 +25,8 @@ ms.locfileid: "32537105"
 | サポートされているリソース | 委任 (職場または学校のアカウント) | 委任 (個人用 Microsoft アカウント) | アプリケーション |
 |:-----|:-----|:-----|:-----|
 |[連絡先](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
-|[driveItem](../resources/driveitem.md) (ユーザーの個人用 OneDrive) | サポート対象外 | Files.ReadWrite | サポート対象外 |
-|[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | サポート対象外 | Files.ReadWrite.All |
+|[driveItem](../resources/driveitem.md) (ユーザーの個人用 OneDrive) | サポートされていません | Files.ReadWrite | サポートされていません |
+|[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | サポートされていません | Files.ReadWrite.All |
 |[イベント](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 |[グループ](../resources/group.md) | Group.Read.All | サポート対象外 | Group.Read.All |
 |[グループ会話](../resources/conversation.md) | Group.Read.All | 非サポート | 非サポート |
@@ -41,7 +43,6 @@ ms.locfileid: "32537105"
 
   - 対応するアプリケーション アクセス許可を使用して、テナントの_任意_のユーザーのフォルダーまたはメールボックス内にあるアイテムの変更をサブスクライブします。
   - Outlook 共有アクセス許可 (Contacts.Read.Shared、Calendars.Read.Shared、Mail.Read.Shared、および対応する読み取り/書き込み) は使用しないでください。それらは、共有フォルダーまたは委任フォルダーにあるアイテムの変更通知のサブスクライブをサポート**していない**からです。
-
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -72,7 +73,7 @@ PATCH /subscriptions/{id}
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/subscriptions/{id}
+PATCH https://graph.microsoft.com/beta/subscriptions/{id}
 Content-type: application/json
 
 {
@@ -85,7 +86,7 @@ Content-type: application/json
 以下は、応答の例です。
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "@odata.type": "microsoft.graph.subscription"
 } -->
 
@@ -99,17 +100,20 @@ Content-length: 252
   "resource":"me/messages",
   "applicationId": "24d3b144-21ae-4080-943f-7067b395b913",
   "changeType":"created,updated",
-  "clientState":"subscription-identifier",
+  "clientState":"secretClientValue",
   "notificationUrl":"https://webhook.azurewebsites.net/api/send/myNotifyClient",
   "expirationDateTime":"2016-11-22T18:23:45.9356913Z",
   "creatorId": "8ee44408-0679-472c-bc2a-692812af3437"
 }
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update subscription",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

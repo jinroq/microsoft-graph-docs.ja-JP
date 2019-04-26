@@ -4,16 +4,18 @@ description: page オブジェクトのプロパティとリレーションシ�
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 57a2c75bbe671086c89818a84f7f8266b90713c6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b4138c46a4717db4590d0e929518e1f8df2893ed
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32539395"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33337818"
 ---
 # <a name="get-page"></a>ページを取得する
 
-[page](../resources/page.md)オブジェクトのプロパティとリレーションシップを取得します。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[page](../resources/onenotepage.md)オブジェクトのプロパティとリレーションシップを取得します。
 
 **ページ情報を取得する**
 
@@ -51,7 +53,7 @@ GET /users/{id | userPrincipalName}/onenote/pages/{id}
 GET /groups/{id}/onenote/pages/{id}
 GET /sites/{id}/onenote/pages/{id}
 ```
-## <a name="optional-query-parameters"></a>省略可能なクエリ パラメーター
+## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、 `select`応答`expand`をカスタマイズするためのおよび[OData クエリパラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 
 既定の応答は`parentSection` 、セクションの`id`、 `name`、および`self`プロパティを展開して選択します。 ページ`expand`の有効な値`parentNotebook`は`parentSection`、とです。
@@ -67,13 +69,13 @@ GET /sites/{id}/onenote/pages/{id}
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[page](../resources/page.md)オブジェクトを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[onenotePage](../resources/onenotepage.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。
  <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/v1.0/me/onenote/pages/{id}
+GET https://graph.microsoft.com/beta/me/onenote/pages/{id}
 ```
 ##### <a name="response"></a>応答
 以下は、応答の例です。 注: 簡潔にするために、ここに示す response オブジェクトは切り詰められています。 すべてのプロパティは実際の呼び出しから返されます。
@@ -86,6 +88,7 @@ Content-length: 312
 {
   "title": "title-value",
   "createdByAppId": "createdByAppId-value",
+  "id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
   "links": {
     "oneNoteClientUrl": {
       "href": "href-value"
@@ -102,10 +105,13 @@ Content-length: 312
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get page",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

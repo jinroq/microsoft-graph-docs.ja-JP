@@ -3,12 +3,12 @@ title: サブスクリプション リソースの種類
 description: 'サブスクリプションは、Microsoft Graph 上のデータの変更に関する通知の受信をクライアント アプリに許可します。 サブスクリプションは現在、以下のリソースで有効です:'
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: 78b81bb2e2689e17d3f65f35d4ddf9b534728de6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 563d232d200797b87e894292e31eb48ad88bf540
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32582132"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342903"
 ---
 # <a name="subscription-resource-type"></a>サブスクリプション リソースの種類
 
@@ -53,14 +53,14 @@ ms.locfileid: "32582132"
 
 | プロパティ | 型 | 説明 |
 |:---------|:-----|:------------|
-| changeType | string | 必須。 登録しているリソース内の、通知を上げる変更の種類を示します。 サポートされている値は `created`、`updated`、`deleted` です。 コンマ区切りのリストを使用して複数値を結合できます。 <br><br>注: ドライブ ルート項目の通知では `updated` changeType のみがサポートされます。 ユーザーとグループの通知では、`updated` と `deleted` changeType がサポートされます。 |
-| notificationUrl | string | 必須。 通知を受信するエンドポイントの URL。 この URL は HTTPS プロトコルを利用する必要があります。 |
-| lifecycleNotificationUrl | 文字列 | 省略可能。 ライフサイクル通知 (および`subscriptionRemoved` `missed`通知を含む) を受信するエンドポイントの URL。 指定しない場合、これらの通知は**notificationurl**に配信されます。 [「](/graph/webhooks-outlook-authz.md) Outlook リソースによるライフサイクル通知の使用方法」を参照してください。  この URL は HTTPS プロトコルを利用する必要があります。 |
-| リソース | string | 必須。 変更の監視対象となるリソースを指定します。 ベース URL (`https://graph.microsoft.com/beta/`) は含めないでください。 |
+| changeType | string | 必須です。 登録しているリソース内の、通知を上げる変更の種類を示します。 サポートされている値は `created`、`updated`、`deleted` です。 コンマ区切りのリストを使用して複数値を結合できます。 <br><br>注: ドライブ ルート項目の通知では `updated` changeType のみがサポートされます。 ユーザーとグループの通知では、`updated` と `deleted` changeType がサポートされます。 |
+| notificationUrl | string | 必須です。 通知を受信するエンドポイントの URL。 この URL は HTTPS プロトコルを利用する必要があります。 |
+| lifecycleNotificationUrl | string | 省略可能。 ライフサイクル通知 (および`subscriptionRemoved` `missed`通知を含む) を受信するエンドポイントの URL。 指定しない場合、これらの通知は**notificationurl**に配信されます。 [「](/graph/webhooks-outlook-authz.md) Outlook リソースによるライフサイクル通知の使用方法」を参照してください。  この URL は HTTPS プロトコルを利用する必要があります。 |
+| リソース | 文字列 | 必須です。 変更の監視対象となるリソースを指定します。 ベース URL (`https://graph.microsoft.com/beta/`) は含めないでください。 |
 | expirationDateTime | DateTimeOffset | 必須です。 webhook サブスクリプションの有効期限が切れる日時を指定します。 時刻は UTC 表示で、登録したリソースごとに異なるサブスクリプション作成からの経過時間にもできます。  サポートされているサブスクリプションの最長時間については、次の表をご覧ください。 |
-| clientState | 文字列 | 省略可能。 各通知内のサービスによって送信される `clientState` プロパティの値を指定します。 最大の長さは 255 文字です。 クライアントは、サブスクリプションと共に送信された `clientState` プロパティの値と、各通知と共に受信された `clientState` プロパティを比較することで、その通知がサービスから来たことを確認できます |
+| clientState | 文字列 | オプション。 各通知内のサービスによって送信される `clientState` プロパティの値を指定します。 最大の長さは 255 文字です。 クライアントは、サブスクリプションと共に送信された `clientState` プロパティの値と、各通知と共に受信された `clientState` プロパティの値を比較することで、その通知がサービスから来たことを確認できます。 |
 | id | 文字列 | サブスクリプションの一意の識別子です。読み取り専用。 |
-| applicationId | string | サブスクリプションを作成するときに使用するアプリケーションの識別子。 読み取り専用。 |
+| applicationId | string | サブスクリプションを作成するときに使用するアプリケーションの識別子。 読み取り専用です。 |
 | creatorId | string | サブスクリプションを作成したユーザーまたはサービス プリンシパルの識別子。 委任されたアクセス許可をアプリで使用してサブスクリプションを作成した場合、このフィールドには、アプリが代理で呼び出しを行っているサインインしているユーザーの ID が含まれます。 アプリがアプリケーション アクセス許可を使用した場合には、このフィールドには、アプリに対応するサービス プリンシパルの ID が含まれます。 読み取り専用です。 |
 
 ## <a name="maximum-length-of-subscription-per-resource-type"></a>リソースの種類別のサブスクリプションの最大の長さ
@@ -76,7 +76,7 @@ ms.locfileid: "32582132"
 
 > **注:** 既存のアプリケーションと新規アプリケーションのどちらもサポートされている値を超えてはなりません。 将来的には、最大値を超えるサブスクリプションを作成または更新する要求はすべて失敗します。
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 
 なし
 
@@ -108,8 +108,6 @@ ms.locfileid: "32582132"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/subscription.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

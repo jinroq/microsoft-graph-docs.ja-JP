@@ -4,14 +4,16 @@ description: メッセージをフォルダーにコピーします。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: a5dfd92c6478414c8890b6c411b5a9385a992198
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 351bceec181e0fc7e621621a770c5118e843bc29
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32540593"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333293"
 ---
 # <a name="message-copy"></a>メッセージ: copy
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 メッセージをフォルダーにコピーします。
 
@@ -40,7 +42,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/copy
 
 | ヘッダー | 値 |
 |:-------|:------|
-| Authorization | `Bearer {token}`. 必須。 |
+| Authorization | `Bearer {token}`. 必須です。 |
 | Content-Type | `application/json`. 必須です。 |
 
 ## <a name="request-body"></a>要求本文
@@ -49,17 +51,18 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/copy
 
 | パラメーター | 型 | 説明 |
 |:----------|:-----|:------------|
-|destinationId|String|宛先フォルダーの ID、または既知のフォルダー名。 サポートされている既知のフォルダー名の一覧については、「[mailFolder リソースの種類](../resources/mailfolder.md)」を参照してください。|
+|destinationId|String|宛先フォルダーの ID または既知のフォルダー名です。 サポートされている既知のフォルダー名の一覧については、「[mailFolder リソースの種類](../resources/mailfolder.md)」を参照してください。|
 
 ## <a name="response"></a>応答
 
-成功した場合、この`201 Created`メソッドは応答コードと、応答本文で[メッセージ](../resources/message.md)リソースを返します。
+成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [message](../resources/message.md) リソースを返します。
 
 ## <a name="example"></a>例
 
 以下は、この API を呼び出す方法の例です。
 
 ##### <a name="request"></a>要求
+
 以下は、要求の例です。
 <!-- {
   "blockType": "request",
@@ -67,7 +70,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/copy
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/me/messages/{id}/copy
+POST https://graph.microsoft.com/beta/me/messages/{id}/copy
 Content-type: application/json
 Content-length: 44
 
@@ -80,7 +83,7 @@ Content-length: 44
 
 以下は、応答の例です。
 
-> **注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
+> **注:**  ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -93,8 +96,8 @@ Content-type: application/json
 Content-length: 248
 
 {
-  "receivedDateTime": "datetime-value",
-  "sentDateTime": "datetime-value",
+  "receivedDateTime": "2016-10-19T10:37:00Z",
+  "sentDateTime": "2016-10-19T10:37:00Z",
   "hasAttachments": true,
   "subject": "subject-value",
   "body": {
@@ -107,10 +110,13 @@ Content-length: 248
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "message: copy",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

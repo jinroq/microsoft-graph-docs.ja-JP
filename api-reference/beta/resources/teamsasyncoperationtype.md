@@ -4,12 +4,12 @@ description: teamsAsyncOperation の種類。 より多くの非同期操作が�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4de95db194bf41939521b53f06614b46b6afae99
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ad1fdb80768a6f4c7043b5431bd0ed84bf2f25f6
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32553639"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341541"
 ---
 # <a name="teamsasyncoperationtype-enum-type"></a>teamsAsyncOperationType 列挙型
 
@@ -22,16 +22,8 @@ ms.locfileid: "32553639"
 | メンバー | 値| 説明 |
 |:---------------|:--------|:----------|
 |無効です|.0|無効な値です。|
-|cloneTeam|1 |チームを複製する操作。|
-|アーカイブチーム|2 |チームをアーカイブする操作。|
-|アーカイブなしのチーム|3 |アーカイブされたチームを復元する操作。|
-|teamsasyncoperationtype|3 |最初からチームを作成する操作。|
+|cloneTeam|1-d|チームを複製する操作。|
+|アーカイブチーム|pbm-2|チームをアーカイブする操作。|
+|アーカイブなしのチーム|1/3|アーカイブされたチームを復元する操作。|
+|teamsasyncoperationtype|1/3|最初からチームを作成する操作。|
 
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/teamsasyncoperationtype.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

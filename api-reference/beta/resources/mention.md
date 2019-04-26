@@ -4,12 +4,12 @@ description: 個人の電子メールアドレスに基づいて、ユーザー�
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: f8e04722edf878b4f3851de837908dc5c0a02de7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 28a77b393f2d5574453d08b93df487ffc5203e2c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523481"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342325"
 ---
 # <a name="mention-resource-type"></a>言及リソースの種類
 
@@ -61,7 +61,7 @@ ms.locfileid: "32523481"
 |createdDateTime  |DateTimeOffset |クライアントでメンションが作成された日時。 |
 |リンク | String | リソースインスタンス内のメンションのコンテキストへのディープ web リンク。 省略可能。 使用されず、**メッセージ**の既定値として null になります。 |
 |id | String| リソース インスタンス内のメンションの一意の識別子。|
-|明記 | [emailAddress](../resources/emailaddress.md) | 記載されているユーザーの電子メール情報。 必須。 |
+|明記 | [emailAddress](../resources/emailaddress.md) | 記載されているユーザーの電子メール情報。 必須です。 |
 |mentionText | String | 省略可能。 使用されず、**メッセージ**の既定値として null になります。 メッセージ内のメンションを取得するには、代わりにメッセージの**bodyPreview**プロパティを参照してください。 |
 |serverん datetime | DateTimeOffset | メンションがサーバー上に作成された日付と時刻。 省略可能。 使用されず、**メッセージ**の既定値として null になります。 |
 
@@ -88,8 +88,6 @@ ms.locfileid: "32523481"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/mention.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

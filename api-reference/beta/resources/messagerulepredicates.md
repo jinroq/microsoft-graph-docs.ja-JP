@@ -4,12 +4,12 @@ description: ルールで使用可能な条件および例外のセットを表�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: fda6a160d30dc0d822f2e0aeb5642250d6b69658
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0852650ed02655dbc4a535622b690de22f171328
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32463545"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342230"
 ---
 # <a name="messagerulepredicates-resource-type"></a>messageRulePredicates リソースの種類
 
@@ -20,13 +20,13 @@ ms.locfileid: "32463545"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-| bodyContains | Collection (String) | 条件または例外を適用するために、受信メッセージの本文に表示される文字列を表します。 |
-| bodyOrSubjectContains | Collection (String) | 条件または例外を適用するために、受信メッセージの本文または件名に表示される文字列を表します。 |
-| categories | Collection (String) | 条件または例外を適用するために、受信メッセージにラベルを付けるカテゴリを表します。 |
-| fromAddresses | コレクション ([Recipient](recipient.md)) | 条件または例外を適用するために、受信メッセージの特定の送信者のメール アドレスを表します。 |
-| hasAttachments | ブール値 | 条件または例外を適用するために、受信メッセージに添付ファイルがあるかどうかを示します。 |
-| headerContains | Collection (String) | 条件または例外を適用するために、受信メッセージのヘッダーに表示される文字列を表します。 |
-| importance | String | 条件または例外を適用するために、受信メッセージに記録される重要性: `low`、`normal`、`high`。 |
+| bodyContains | String collection | 条件または例外を適用するために、受信メッセージの本文に表示される文字列を表します。 |
+| bodyOrSubjectContains | String collection | 条件または例外を適用するために、受信メッセージの本文または件名に表示される文字列を表します。 |
+| categories | String collection | 条件または例外を適用するために、受信メッセージにラベルを付けるカテゴリを表します。 |
+| fromAddresses | [recipient](recipient.md) collection | 条件または例外を適用するために、受信メッセージの特定の送信者のメール アドレスを表します。 |
+| hasAttachments | Boolean | 条件または例外を適用するために、受信メッセージに添付ファイルがあるかどうかを示します。 |
+| headerContains | String collection | 条件または例外を適用するために、受信メッセージのヘッダーに表示される文字列を表します。 |
+| importance | importance | 条件または例外を適用するために、受信メッセージに記録される重要性: `low`、`normal`、`high`。 |
 | isApprovalRequest | Boolean | 条件または例外を適用するために、受信メッセージが承認要求であるかどうかを示します。 |
 | isAutomaticForward | Boolean | 条件または例外を適用するために、受信メッセージが自動的に転送されるかどうかを示します。 |
 | isAutomaticReply | Boolean | 条件または例外を適用するために、受信メッセージが自動返信であるかどうかを示します。 |
@@ -38,20 +38,18 @@ ms.locfileid: "32463545"
 | isReadReceipt | Boolean | 条件または例外を適用するために、受信メッセージが開封確認メッセージであるかどうかを示します。 |
 | isSigned | Boolean | 条件または例外を適用するために、受信メッセージが S/MIME 署名されているかどうかを示します。 |
 | isVoicemail | Boolean | 条件または例外を適用するために、受信メッセージがボイス メールかどうかを示します。 |
-| messageActionFlag | String  | 条件または例外を適用するために、受信メッセージに表示されるアクション フラグの値を表します。 使用可能な値は、`any`、`call`、`doNotForward`、`followUp`、`fyi`、`forward`、`noResponseNecessary`、`read`、`reply`、`replyToAll`、`review` です。 |
+| messageActionFlag | messageActionFlag  | 条件または例外を適用するために、受信メッセージに表示されるアクション フラグの値を表します。 使用可能な値は`any`、 `call`、 `doNotForward` `followUp` `fyi` `forward` `noResponseNecessary` `read` `reply`、、、、、、、、、 `review` `replyToAll`です。 |
 | notSentToMe | Boolean | 条件または例外を適用するために、メールボックスの所有者が受信メッセージの受信者でないことを示します。 |
-| recipientContains | Collection (String) | 条件または例外を適用するために、受信メッセージの **ToRecipients** または **CcRecipients** プロパティに表示される文字列を表します。 |
-| senderContains | Collection (String) | 条件または例外を適用するために、受信メッセージの **From** プロパティに表示される文字列を表します。 |
-| sensitivity | String | 条件または例外を適用するために、受信メッセージに記録される秘密度レベルを表します。使用可能な値: `normal`、`personal`、`private`、`confidential`。 |
+| recipientContains | String collection | 条件または例外を適用するために、受信メッセージの **ToRecipients** または **CcRecipients** プロパティに表示される文字列を表します。 |
+| senderContains | String collection | 条件または例外を適用するために、受信メッセージの **From** プロパティに表示される文字列を表します。 |
+| sensitivity | sensitivity | 条件または例外を適用するために、受信メッセージにスタンプする必要がある秘密度レベルを表します。 使用可能な値は`normal`、 `personal`、 `private`、 `confidential`、です。 |
 | sentCcMe | Boolean | 条件または例外を適用するために、メールボックスの所有者が受信メッセージの **ccRecipients** プロパティにあるかどうかを示します。 |
 | sentOnlyToMe | Boolean | 条件または例外を適用するために、メールボックスの所有者が受信メッセージの唯一の受信者かどうかを示します。 |
-| sentToAddresses | コレクション ([Recipient](recipient.md)) | 条件または例外を適用するために、受信メッセージが送信されたメール アドレスを表します。 |
+| sentToAddresses | [recipient](recipient.md) collection | 条件または例外を適用するために、受信メッセージが送信されたメール アドレスを表します。 |
 | sentToMe | Boolean | 条件または例外を適用するために、メールボックスの所有者が受信メッセージの **ToRecipients** プロパティにあるかどうかを示します。 |
 | sentToOrCcMe | Boolean | 条件または例外を適用するために、メールボックスの所有者が受信メッセージの **toRecipients** または **ccRecipients** プロパティにあるかどうかを示します。 |
-| subjectContains | コレクション (String) | 条件または例外を適用するために、受信メッセージの件名に表示される文字列を表します。 |
+| subjectContains | String collection | 条件または例外を適用するために、受信メッセージの件名に表示される文字列を表します。 |
 | withinSizeRange | [sizeRange](sizerange.md) | 条件または例外を適用するために、受信メッセージに想定される最小サイズと最大サイズ (単位: キロバイト) を表します。 |
-
-
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
@@ -108,8 +106,6 @@ ms.locfileid: "32463545"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/messagerulepredicates.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

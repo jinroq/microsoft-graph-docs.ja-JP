@@ -1,17 +1,17 @@
 ---
-title: 使用されるリソースの種類
+title: used リソースの種類
 description: 特定のユーザーが使用するドキュメントを表す洞察。 insights は、ユーザーが表示またはアクセスした最も関連性のあるドキュメントを返します。
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 35698741cd457f4e8d202b13dd9099bb2669b6e1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 407822dc4ff3f0536b0cbff3bf2894ad96d5d878
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551292"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333555"
 ---
-# <a name="used-resource-type"></a>使用されるリソースの種類
+# <a name="usedinsight-resource-type"></a>used リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +24,7 @@ ms.locfileid: "32551292"
 
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
-|[使用するリスト](../api/insights-list-used.md) |[insights_used](insights-used.md)コレクション| 使用されているファイルの一覧を取得します。|
+|[使用するリスト](../api/insights-list-used.md) |使われる[洞察](insights-used.md)のコレクション| 使用されているファイルの一覧を取得します。|
 
 ## <a name="properties"></a>プロパティ
 
@@ -39,26 +39,25 @@ ms.locfileid: "32551292"
 
 | プロパティ      | 型          | 説明  |
 | ------------- |---------------| -------------|
-| リソース      | エンティティ        | 使用されたアイテムに移動するために使用されます。 添付ファイルの場合、type は*fileattachment*になります。 リンクされた添付ファイルの場合、種類は [*ドライブ] 項目*です。 |
+| リソース      | [entity](entity.md)コレクション    | 使用されたアイテムに移動するために使用されます。 添付ファイルの場合、type は*fileattachment*になります。 リンクされた添付ファイルの場合、種類は [*ドライブ] 項目*です。 |
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です
+
+<!-- {
+  "blockType": "resource",
+  "keyProperty":"id",
+  "optionalProperties": [
+    "resource"
+  ],
+  "@odata.type": "microsoft.graph.usedInsight"
+}-->
 
 ```json
 {
   "id": "string",
   "lastUsed": "usageDetails",
-  "resourceVisualization": "resourceVisualization",
-  "resourceReference": "resourceReference",
-  
-  "resource": [ { "@odata.type": "microsoft.graph.entity" } ]
+  "resourceVisualization": { "@odata.type": "microsoft.graph.resourceVisualization" },
+  "resourceReference": { "@odata.type": "microsoft.graph.resourceReference" }
 }
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/insights-used.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

@@ -2,12 +2,12 @@
 title: impossibleTravelRiskEvent リソースの種類
 description: ユーザーにとって特殊な場所から2つのアカウントのサインインが発生する、Azure Active Directory id 保護によって検出されたリスクイベント。また、サインイン間の期間内にある場所間を移動できません。詳細な情報リスクイベントについては、「Azure AD Identity Protection」のドキュメントを参照してください。
 localization_priority: Normal
-ms.openlocfilehash: 517a09963570ce2c4a9e58edf7b73babaaff0426
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d086a6fc127649da10184ae0396a2c58ee82964e
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548328"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333604"
 ---
 # <a name="impossibletravelriskevent-resource-type"></a>impossibleTravelRiskEvent リソースの種類
 
@@ -28,9 +28,9 @@ ms.locfileid: "32548328"
 |closeddatetime|dateTimeOffset| リスクイベントが終了した日付と時刻|
 |createdDateTime|dateTimeOffset| リスクイベントが作成された日時。 これは常に、リスクイベント自体の datetime と同じかそれよりも大きくなります。 これは、リスクイベントを照会するときにフィルターとして使用する適切なプロパティです。|
 |deviceinformation|string| デバイスに関する情報|
-|id|string| 読み取り専用|
+|id|文字列| 読み取り専用|
 |ipAddress|string| 2番目のサインインの IP アドレス|
-|isAtypicalLocation|ブール値| ユーザーのいずれかの場所が例外的である場合|
+|isAtypicalLocation|boolean| ユーザーのいずれかの場所が例外的である場合|
 |location|string| 2番目のサインインの IP アドレスに接続されている場所|
 |previousIPAddress|string| 最初のサインインの IP アドレス|
 |previousLocation|string| 最初のサインインの IP アドレスに接続されている場所|
@@ -47,7 +47,7 @@ ms.locfileid: "32548328"
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|impactedUser|[ユーザー](user.md)| 読み取り専用。Null 許容型です。|
+|impactedUser|[user](user.md)| 読み取り専用。Null 許容型です。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -55,6 +55,7 @@ ms.locfileid: "32548328"
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],
@@ -80,7 +81,8 @@ ms.locfileid: "32548328"
   "userAgent": "string",
   "userDisplayName": "string",
   "userId": "string",
-  "userPrincipalName": "string"
+  "userPrincipalName": "string",
+  "riskEventType": "string"
 }
 
 ```
@@ -94,8 +96,6 @@ ms.locfileid: "32548328"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/impossibletravelriskevent.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

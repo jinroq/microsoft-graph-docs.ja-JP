@@ -4,12 +4,12 @@ description: "\"佐々木 ftitem\" は、シフトのバージョンを表しま
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 7ff829ca0f43124404b4b99b048c9919368b6009
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fd5b3d224e60fc3f21b4d484952c7a2643b02407
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583789"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343039"
 ---
 # <a name="shiftitem-resource-type"></a>"佐々木 ftitem" リソースの種類
 
@@ -20,12 +20,12 @@ ms.locfileid: "32583789"
 ## <a name="properties"></a>プロパティ
 | プロパティ                         | 型                    | 説明                                                                             |
 |------------------------------|-------------------------|---------------------------------------------------------------------------------------------|
-| notes               | `string`                  | のメモ`shiftItem`。      |
-| displayName               | `string`                  | の名前`shiftItem`。 |
-| startDateTime               | `DateTimeOffset`                  | の開始日時`shiftItem`。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表します。これは常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、'2014-01-01T00:00:00Z'.のようになります。 必須です。 |
-| endDateTime               | `DateTimeOffset`                  | の終了日時`shiftItem`。 必須です。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表します。これは常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、'2014-01-01T00:00:00Z'.のようになります。 |
-| theme | `enum`   |    |  |  | サポートされている色: 白。水色緑青紫色ピンクイエロー灰色darkBlue;darkGreen;darkPurple;darkPink;darkYellow。 |
-| アクティビティ    | `collection([shiftActivity](shiftactivity.md))`    | 従業員がいつ、どのような時間帯に勤務しているかを詳細に説明できる、シフトの増分部分。 たとえば、割り当て、またはスケジュールされた休憩またはランチ。 必須。 |
+| notes               | string                  | のメモ`shiftItem`。      |
+| displayName               | string                  | の名前`shiftItem`。 |
+| startDateTime               | DateTimeOffset                  | の開始日時`shiftItem`。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表します。これは常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、'2014-01-01T00:00:00Z'.のようになります。 必須です。 |
+| endDateTime               | DateTimeOffset                 | の終了日時`shiftItem`。 必須です。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表します。これは常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、'2014-01-01T00:00:00Z'.のようになります。 |
+| theme | scheduleentitytheme   |  サポートされている色: 白。水色緑青紫色ピンクイエロー灰色darkBlue;darkGreen;darkPurple;darkPink;darkYellow。 |
+| アクティビティ    | [shiftActivity](shiftactivity.md)コレクション   | 従業員がいつ、どのような時間帯に勤務しているかを詳細に説明できる、シフトの増分部分。 たとえば、割り当て、またはスケジュールされた休憩またはランチ。 必須。 |
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -38,20 +38,12 @@ ms.locfileid: "32583789"
 }-->
 ```json
 {
-  "displayName": "Day shift",
-  "notes": "Please do inventory as part of your shift.",
-  "startDateTime": "2019-03-11T15:00:00Z",
-  "endDateTime": "2019-03-12T00:00:00Z",
-  "theme": "blue",
-  "activities": [
-    {
-      "isPaid": true,
-      "startDateTime": "2019-03-11T15:00:00Z",
-      "endDateTime": "2019-03-11T15:15:00Z",
-      "code": "",
-      "displayName": "Lunch"
-    }
-  ]
+  "displayName": "String",
+  "notes": "String",
+  "startDateTime": "String (timestamp)",
+  "endDateTime": "String (timestamp)",
+  "theme": "String",
+  "activities": [{"@odata.type": "microsoft.graph.shiftActivity"}]
 }
 ```
 
@@ -65,8 +57,6 @@ ms.locfileid: "32583789"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/shiftitem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

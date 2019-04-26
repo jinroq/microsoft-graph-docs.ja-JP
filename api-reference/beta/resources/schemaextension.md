@@ -3,12 +3,12 @@ title: schemaExtension リソースの種類 (スキーマ拡張機能)
 description: 'スキーマの拡張機能を使用すると、拡張するスキーマを定義し、厳密に型指定されたカスタム データをリソースの種類に追加できます。カスタム データは拡張したリソースの複合型として表示されます。 '
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: 90acbfb0e7a6b031303ae3286f1a5ed366a2a8c9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a6d7ed28b1fedefe1b4172bb780e3a014e4d3ff7
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562959"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343468"
 ---
 # <a name="schemaextension-resource-type-schema-extensions"></a>schemaExtension リソースの種類 (スキーマ拡張機能)
 
@@ -23,8 +23,8 @@ ms.locfileid: "32562959"
  - [device](device.md)
  - ユーザーまたは Office 365 グループ カレンダーの [event](event.md)
  - Office 365 グループの [post](post.md)
- - [グループ](group.md)
- - [メッセージ](message.md) 
+ - [group](group.md)
+ - [message](message.md) 
  - [organization](organization.md)
  - [user](user.md)
 
@@ -38,7 +38,7 @@ ms.locfileid: "32562959"
 |[List](../api/schemaextension-list.md) | schemaExtension |avaialbe schemaextension 日とそのプロパティを一覧表示します。|
 |[Get](../api/schemaextension-get.md) | schemaExtension |特定の schemaExtension 定義のプロパティを読み取ります。|
 |[Update](../api/schemaextension-update.md) | schemaExtension   |schemaExtension 定義を更新します。 |
-|[削除](../api/schemaextension-delete.md) | なし |schemaExtension 定義を削除します。 |
+|[Delete](../api/schemaextension-delete.md) | なし |schemaExtension 定義を削除します。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|

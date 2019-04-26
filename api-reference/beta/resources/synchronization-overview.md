@@ -2,12 +2,12 @@
 title: Azure AD 同期 API の概要
 description: ) を使用すると、削除、管理、およびクラウドでの id の作成、保守、および削除 (たとえば、サービスとしてのソフトウェア、または SaaS) アプリケーション (Dropbox、Salesforce、ServiceNow など) を自動化できます。 Microsoft Graph の同期 api を使用して、次のようなプログラムによって id 同期を管理できます。
 localization_priority: Normal
-ms.openlocfilehash: ed994b8204fdee38f558da499259538e85eacd30
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e472acc60e74c6a22a744d84e7e4dcf672337a6e
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523463"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342930"
 ---
 # <a name="azure-ad-synchronization-api-overview"></a>Azure AD 同期 API の概要
 
@@ -198,11 +198,3 @@ HTTP/1.1 200 OK
 
 
 
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

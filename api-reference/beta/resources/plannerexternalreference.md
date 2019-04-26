@@ -4,14 +4,16 @@ description: '**plan/externalreference**リソースは、参照 (ファイル�
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 95084e8a4d2d1b117fc627902b2bd8163fcc82f6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6d2bce70afbeee3848f3055530daf732afe8a2b5
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32461242"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344824"
 ---
 # <a name="plannerexternalreference-resource-type"></a>プラン/外部参照リソースの種類
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **plan/externalreference**リソースは、参照 (ファイル、URL などの添付ファイル) のメタデータを表します。 これは、 [externalreferences オブジェクト](plannerexternalreferences.md)のプロパティと値のペアの値です。
 
@@ -50,10 +52,13 @@ ms.locfileid: "32461242"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "plannerExternalReference resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

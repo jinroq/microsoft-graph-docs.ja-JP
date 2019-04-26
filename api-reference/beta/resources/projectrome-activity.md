@@ -3,12 +3,12 @@ title: アクティビティリソースの種類
 description: アプリ内の1つのアクティビティを表します。たとえば、テレビ番組、ドキュメント、ビデオゲームの現在のキャンペーンなどがあります。 ユーザーがそのアクティビティを使用すると、そのアクティビティの開始時刻と終了時刻を示す履歴項目として契約が取得されます。 ユーザーが時間をかけてそのアクティビティを再実行すると、1つのユーザーアクティビティに対して複数の履歴項目が記録されます。
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 5deaab5d7ea071bfda686380d49fb41214a7b29e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4ae3fb47961140a784a1fa15fc606fd8967be96b
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563391"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344019"
 ---
 # <a name="activity-resource-type"></a>アクティビティリソースの種類
 
@@ -48,7 +48,7 @@ Microsoft Graph のアクティビティを使用すると、ユーザーが複�
 |visualelements| [visualinfo](../resources/projectrome-visualinfo.md) | 必須です。 UX でアクティビティをレンダリングするための情報を含むオブジェクト。|
 |contentinfo | 型指定のない JSON オブジェクト | 省略可能。 [schema.org](https://schema.org)構文に従ったコンテンツの、データのカスタム部分。|
 |expirationDateTime | DateTimeOffset | サーバーによって設定されます。 サーバー上のオブジェクトの有効期限が切れたときの日時。|
-|status | EnumType | サーバーによって設定されます。 有効なオブジェクトを識別するために使用される状態コード。 値: アクティブ、更新済み、削除済み、無視。|
+|status | string | サーバーによって設定されます。 有効なオブジェクトを識別するために使用される状態コード。 値: アクティブ、更新済み、削除済み、無視。|
 
 ## <a name="relationships"></a>リレーションシップ
 
@@ -71,6 +71,7 @@ Microsoft Graph のアクティビティを使用すると、ユーザーが複�
     "visualElements",
     "historyItems"
   ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.activity"
 }-->
 
@@ -87,7 +88,7 @@ Microsoft Graph のアクティビティを使用すると、ユーザーが複�
     "lastModifiedDateTime": "DateTimeOffset",
     "expirationDateTime": "DateTimeOffset",
     "id": "String",
-    "status": "EnumType",
+    "status": "string",
     "contentInfo": { "@data.type": "microsoft.graph.Json" },
     "visualElements": { "@data.type": "microsoft.graph.visualInfo" },
     "historyItems": [{ "@odata.type": "microsoft.graph.historyItem" }]
@@ -103,8 +104,6 @@ Microsoft Graph のアクティビティを使用すると、ユーザーが複�
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/projectrome-activity.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

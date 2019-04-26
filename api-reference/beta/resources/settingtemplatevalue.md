@@ -2,12 +2,12 @@
 title: settingtemplatevalue リソースの種類
 description: 設定がインスタンス化されていない場合に、設定の既定値を含む、個々のテンプレート設定の定義を表します。
 localization_priority: Normal
-ms.openlocfilehash: 80b640419eb2084888dcd6887ece54b4fd4bdf3c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2277f4b7bb66839164a1b09011d20886baf2bd1f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583680"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343186"
 ---
 # <a name="settingtemplatevalue-resource-type"></a>settingtemplatevalue リソースの種類
 
@@ -20,9 +20,9 @@ ms.locfileid: "32583680"
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |defaultValue|string|設定の既定値。 読み取り専用です。|
-|説明|string|設定の説明。 値の取得のみ可能です。|
-|name|string|設定の名前。 読み取り専用。|
-|type|string|設定の種類。 読み取り専用。|
+|説明|string|設定の説明。 読み取り専用。|
+|name|string|設定の名前。 値の取得のみ可能です。|
+|type|string|設定の種類。 読み取り専用です。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -55,8 +55,6 @@ ms.locfileid: "32583680"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/settingtemplatevalue.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

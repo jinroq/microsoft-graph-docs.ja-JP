@@ -4,12 +4,12 @@ description: tablesort オブジェクトのプロパティと関係を取得し
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: de24baee308377cb0b907084b0f1644da5c7fe1a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 32efdee19d8d4a334d7c61090c7ce84bcfacdba0
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32544657"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33335410"
 ---
 # <a name="get-tablesort"></a>TableSort を取得する　
 
@@ -45,7 +45,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/sort
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [TableSort](../resources/tablesort.md) オブジェクトを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[workbookTableSort](../resources/workbooktablesort.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。
@@ -61,7 +61,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|nam
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tableSort"
+  "@odata.type": "microsoft.graph.workbookTableSort"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -83,8 +83,6 @@ Content-length: 51
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/tablesort-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -4,12 +4,12 @@ description: 'チームの可視性について説明します。 '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 7e77fbd2667f8656a4c2f66046636ff73ac8891d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3891092236012e0f960124d48b868256d58b538c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32582942"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342039"
 ---
 # <a name="teamvisibilitytype-enum-type"></a>teamVisibilityType 列挙型
 
@@ -22,12 +22,4 @@ ms.locfileid: "32582942"
 | メンバー | 値| 説明 |
 |:---------------|:--------|:----------|
 |機密性|.0|チームはだれでも見ることができますが、ユーザーをチームに追加できるのは所有者のみです。|
-|public|1 |すべてのユーザーがチームに参加できます。|
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/teamvisibilitytype.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+|public|1-d|すべてのユーザーがチームに参加できます。|

@@ -4,12 +4,12 @@ description: 会議の開催者を含むミーティング情報。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3b7d21a313d8744f18c8b96549bc9470b587361c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 129e8a60edd89d45eb6e48715a59231475d52b99
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568588"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341761"
 ---
 # <a name="organizermeetinginfo-resource-type"></a>組織の情報リソースの種類
 

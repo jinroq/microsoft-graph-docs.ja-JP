@@ -2,12 +2,12 @@
 title: privilegedRoleAssignment リソースの種類
 description: '特定のユーザーの特権の役割の割り当てを表します。 '
 localization_priority: Normal
-ms.openlocfilehash: 479b6d46dc479134fd0abb46b1a9ffe478611a82
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1e58f144eb3dda19225a836aa966f9479d3a9350
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563425"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344238"
 ---
 # <a name="privilegedroleassignment-resource-type"></a>privilegedRoleAssignment リソースの種類
 
@@ -32,8 +32,8 @@ ms.locfileid: "32563425"
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |expirationDateTime|dateTimeOffset|一時的な特権の役割の割り当てが期限切れになる UTC の DateTime。 永続的な役割の割り当ての場合、値は null になります。|
-|id|string| 特権の役割の割り当ての一意識別子。 読み取り専用。 これは ' userId_roleId ' の形式になっています。ここで、userId は azure AD ユーザー id の guid 文字列で、roleId は azure 管理者の役割 id の guid 文字列です。|
-|isElevated|ブール値|役割の割り当てがアクティブ化されている場合は**true** 。 **false**を指定すると、役割の割り当てが非アクティブになります。|
+|id|string| 特権の役割の割り当ての一意識別子。 読み取り専用です。 これは ' userId_roleId ' の形式になっています。ここで、userId は azure AD ユーザー id の guid 文字列で、roleId は azure 管理者の役割 id の guid 文字列です。|
+|isElevated|boolean|役割の割り当てがアクティブ化されている場合は**true** 。 **false**を指定すると、役割の割り当てが非アクティブになります。|
 |resultmessage|string|サービスによって設定された結果メッセージ。|
 |roleId|string|ロール識別子。 GUID 文字列形式。|
 |userId|string|ユーザー識別子。 GUID 文字列形式。|
@@ -41,7 +41,7 @@ ms.locfileid: "32563425"
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|roleinfo|[privilegedRole](privilegedrole.md)| 読み取り専用。 Null 許容型。 関連付けられているロール情報。|
+|roleinfo|[privilegedRole](privilegedrole.md)| 読み取り専用です。 Null 許容型。 関連付けられているロール情報。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -52,6 +52,8 @@ ms.locfileid: "32563425"
   "optionalProperties": [
 
   ],
+  "keyProperty": "id",
+  "baseType":"microsoft.graph.entity",
   "@odata.type": "microsoft.graph.privilegedRoleAssignment"
 }-->
 
@@ -76,8 +78,6 @@ ms.locfileid: "32563425"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/privilegedroleassignment.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

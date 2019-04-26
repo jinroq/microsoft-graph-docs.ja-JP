@@ -2,12 +2,12 @@
 title: identityProvider リソース タイプ
 description: Azure Active Directory (Azure AD) の ID プロバイダーを表します。 id プロバイダーは、Microsoft、Google、Facebook、Amazon、または LinkedIn にすることができます。
 localization_priority: Normal
-ms.openlocfilehash: afd21635d932582f2a9ee6c2cde1cf45a9d4260f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 616f4d30bf6b5aad0bb97a732cf3aaf27e0fd26d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547264"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333716"
 ---
 # <a name="identityprovider-resource-type"></a>identityProvider リソース タイプ
 
@@ -36,8 +36,8 @@ Azure AD テナントで ID プロバイダーを構成すると、今後の B2B
 
 |プロパティ|型|必須|Nullable|説明|
 |:---------------|:--------|:--------|:--------|:----------|
-|clientId|文字列|はい|いいえ|アプリケーションのクライアント ID。 アプリケーションを ID プロバイダーに登録した際に取得したクライアント ID です。|
-|clientSecret|文字列|はい|いいえ|アプリケーションでのクライアント シークレット。 アプリケーションを ID プロバイダーに登録した際に取得したクライアント シークレットです。 これは、書き込み専用です。 読み取り操作を行うと、"\*\*\*\*" が返されます。|
+|clientId|文字列|はい|なし|アプリケーションのクライアント ID。 アプリケーションを ID プロバイダーに登録した際に取得したクライアント ID です。|
+|clientSecret|文字列|はい|なし|アプリケーションでのクライアント シークレット。 アプリケーションを ID プロバイダーに登録した際に取得したクライアント シークレットです。 これは、書き込み専用です。 読み取り操作を行うと、"\*\*\*\*" が返されます。|
 |id|String|いいえ|いいえ|ID プロバイダーの ID。|
 |name|String|いいえ|いいえ|ID プロバイダーの表示名。|
 |type|String|はい|いいえ|ID プロバイダーの型。 次のいずれかの値であることが必要です。 <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook</ul>|
@@ -64,11 +64,3 @@ Azure AD テナントで ID プロバイダーを構成すると、今後の B2B
     "clientSecret": "String"
 }
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/identityprovider.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

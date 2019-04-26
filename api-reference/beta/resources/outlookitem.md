@@ -4,12 +4,12 @@ description: 以下は、リソースの JSON 表記です
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 8a44f9a2e568991c6803ebf72baf5f712f39ba64
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b2c43d81d045ee6b563e7ae81f8fe6fab56bdf83
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568651"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341856"
 ---
 # <a name="outlookitem-resource-type"></a>outlookItem リソースの種類
 
@@ -24,7 +24,7 @@ ms.locfileid: "32568651"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.outlookitem"
+  "@odata.type": "microsoft.graph.outlookItem"
 }-->
 
 ```json
@@ -46,7 +46,7 @@ ms.locfileid: "32568651"
 |id|String| 読み取り専用です。|
 |lastModifiedDateTime|DateTimeOffset|Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 
@@ -59,8 +59,6 @@ ms.locfileid: "32568651"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/outlookitem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

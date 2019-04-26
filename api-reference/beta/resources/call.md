@@ -4,12 +4,12 @@ description: アプリケーションに関して着信が存在する場合か�
 author: VinodRavichandran
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: c66ab2f29ee44d76ed0ee300743f50cb0debdd16
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9d297a60538901b6117a7e20f32fa0cc437b9b84
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535534"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33338802"
 ---
 # <a name="call-resource-type"></a>call リソースの種類
 
@@ -84,8 +84,8 @@ ms.locfileid: "32535534"
 | リレーションシップ        | 型                                                 | 説明                                                         |
 |:--------------------|:-----------------------------------------------------|:--------------------------------------------------------------------|
 | audioRoutingGroups  | [audioRoutingGroup](audioroutinggroup.md) コレクション | 読み取り専用です。 Null 許容型。                                                |
-| operations          | [commsOperation](commsoperation.md)コレクション       | 読み取り専用です。 Null 許容型。                                                |
-| 参加者        | [participant](participant.md) コレクション             | 読み取り専用。Null 許容型です。                                                |
+| operations          | [commsOperation](commsoperation.md)コレクション       | 読み取り専用。Null 許容型です。                                                |
+| participants        | [participant](participant.md) コレクション             | 読み取り専用。Null 許容型です。                                                |
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -112,32 +112,33 @@ ms.locfileid: "32535534"
     "terminationReason",
     "toneInfo"
   ],
+  "keyProperty":"id",
   "@odata.type": "microsoft.graph.call"
 }-->
 ```json
 {
   "activeModalities": ["unknown | audio | video | videoBasedScreenSharing | data"],
-  "answeredBy": {"@odata.type": "#microsoft.graph.participantInfo"},
-  "callRoutes": [{"@odata.type": "#microsoft.graph.callRoute"}],
+  "answeredBy": {"@odata.type": "microsoft.graph.participantInfo"},
+  "callRoutes": [{"@odata.type": "microsoft.graph.callRoute"}],
   "callbackUri": "String",
-  "chatInfo": {"@odata.type": "#microsoft.graph.chatInfo"},
+  "chatInfo": {"@odata.type": "microsoft.graph.chatInfo"},
   "direction": "incoming | outgoing",
   "id": "String (identifier)",
-  "mediaConfig": {"@odata.type": "#microsoft.graph.mediaConfig"},
-  "meetingCapability": {"@odata.type": "#microsoft.graph.meetingCapability"},
-  "meetingInfo": {"@odata.type": "#microsoft.graph.meetingInfo"},
+  "mediaConfig": {"@odata.type": "microsoft.graph.mediaConfig"},
+  "meetingCapability": {"@odata.type": "microsoft.graph.meetingCapability"},
+  "meetingInfo": {"@odata.type": "microsoft.graph.meetingInfo"},
   "myParticipantId": "String",
   "requestedModalities": ["unknown | audio | video | videoBasedScreenSharing | data"],
-  "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
+  "resultInfo": {"@odata.type": "microsoft.graph.resultInfo"},
   "ringingTimeoutInSeconds": 1024,
   "routingPolicies": ["none | noMissedCall | disableForwardingExceptPhone | disableForwarding"],
-  "source": {"@odata.type": "#microsoft.graph.participantInfo"},
+  "source": {"@odata.type": "microsoft.graph.participantInfo"},
   "state": "incoming | establishing | ringing | established | hold | transferring | transferAccepted | redirecting | terminating | terminated",
   "subject": "String",
-  "targets": [{"@odata.type": "#microsoft.graph.participantInfo"}],
+  "targets": [{"@odata.type": "microsoft.graph.participantInfo"}],
   "tenantId": "String",
   "terminationReason": "String",
-  "toneInfo": {"@odata.type": "#microsoft.graph.toneInfo"}
+  "toneInfo": {"@odata.type": "microsoft.graph.toneInfo"}
 }
 ```
 
@@ -182,8 +183,6 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/call.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

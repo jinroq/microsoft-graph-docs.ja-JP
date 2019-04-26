@@ -4,12 +4,12 @@ description: アプリケーション オブジェクトのプロパティと関
 author: lleonard-msft
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9470243651d668d8a1440077be89225b0ebe7b21
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 91ea235de1199d78197d5ac52a6e585bb3c0a74d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32459250"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322764"
 ---
 # <a name="get-application"></a>アプリケーションを取得する
 

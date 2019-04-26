@@ -1,13 +1,13 @@
 ---
 title: networkConnection リソースの種類
-description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。"
+description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでは、これらの API の使用はサポートされていません。"
 localization_priority: Normal
-ms.openlocfilehash: ce7de8d5a0f63c4d924e8092e4e9e05f984ec335
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 94bf27265f591d32c01e7043d3a10468a924d78a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570723"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342199"
 ---
 # <a name="networkconnection-resource-type"></a>networkConnection リソースの種類
 
@@ -24,19 +24,47 @@ ms.locfileid: "32570723"
 |destinationdomain|String|宛先 URL の宛先ドメイン部分。 (' www.contoso.com ' など)。|
 |destinationport|String|宛先ポート (ネットワーク接続の場合)。|
 |destinationurl|String|ネットワーク接続 URL/URI 文字列。パラメーターを除外します。 (' www.contoso.com/products/default.html ' など)|
-|direction|connectionDirection|ネットワーク接続の方向。 可能な値は `unknown`、`inbound`、`outbound` です。|
+|direction|connectionDirection|ネットワーク接続の方向。 可能な値は、`unknown`、`inbound`、`outbound` です。|
 |domainregistereddatetime|DateTimeOffset|宛先ドメインが登録された日付。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |localDnsName|String|ホストのローカル dns キャッシュに表示されるローカル dns 名解決方法 (たとえば、' hosts ' ファイルが改ざんされた場合)。|
 |natDestinationAddress|String|ネットワークアドレス変換先 IP アドレス。|
 |natDestinationPort|String|ネットワークアドレス変換先ポート。|
 |natSourceAddress|String|ネットワークアドレス変換の送信元 IP アドレス。|
 |natSourcePort|String|ネットワークアドレス変換元ポート。|
-|プロトコール|[securityNetworkProtocol](securitynetworkprotocolenumtype.md)|ネットワークプロトコル。 可能な値: `unknown`、 `ip` `icmp` `igmp` `ggp` `ipv4` `tcp` `pup` `udp` `idp` `ipv6` `ipv6RoutingHeader`、、、、、、、、、、、、 `ipv6FragmentHeader` `ipSecEncapsulatingSecurityPayload` `ipSecAuthenticationHeader` `icmpV6` `ipv6NoNextHeader` `ipv6DestinationOptions` `nd`, `raw`, `ipx`, `spx`, `spxII`.|
+|プロトコール|securityNetworkProtocol|ネットワークプロトコル。 可能な値: `unknown`、 `ip` `icmp` `igmp` `ggp` `ipv4` `tcp` `pup` `udp` `idp` `ipv6` `ipv6RoutingHeader`、、、、、、、、、、、、 `ipv6FragmentHeader` `ipSecEncapsulatingSecurityPayload` `ipSecAuthenticationHeader` `icmpV6` `ipv6NoNextHeader` `ipv6DestinationOptions` `nd`, `raw`, `ipx`, `spx`, `spxII`.|
 |riskScore|String|プロバイダーが生成/計算したネットワーク接続のリスクスコア。 推奨値の範囲0-1。パーセンテージに相当します。|
 |sourceaddress|String|ソース (起点) IP アドレス (ネットワーク接続の場合)。|
 |sourceport|String|ソース (起点) IP ポート (ネットワーク接続の場合)。|
 |status|connectionStatus|ネットワーク接続の状態。 可能な値は、`unknown`、`attempted`、`succeeded`、`blocked`、`failed` です。|
 |urlparameters|String|宛先 URL のパラメーター (サフィックス)。|
+
+### <a name="securitynetworkprotocol-values"></a>securitynetworkprotocol の値
+
+|メンバー|値|説明|
+|:---|:---|:---|
+|不明|-1|不明なプロトコル。|
+|ip|.0|インターネットプロトコル。|
+|パケット|1-d| インターネットコントロールメッセージプロトコル。|
+|igmp|pbm-2| インターネットグループ管理プロトコル。|
+|ggp|1/3| ゲートウェイからゲートウェイへのプロトコル。|
+|ipv4|2/4| インターネットプロトコルバージョン4。|
+|tcp|シックス| 伝送制御プロトコル。|
+|.pup|12 | parc ユニバーサルパケットプロトコル。|
+|受信|17 | ユーザーデータグラムプロトコル。|
+|idp|×| インターネットデータグラムプロトコル。|
+|ipv6|41| インターネットプロトコルバージョン 6 (ipv6)。|
+|ipv6RoutingHeader|43| ipv6 ルーティングヘッダー。|
+|ipv6FragmentHeader|44| ipv6 フラグメントヘッダー。|
+|ipSecEncapsulatingSecurityPayload|50| ipv6 カプセル化セキュリティペイロードヘッダー。|
+|ipsecauthenticationheader|51| ipv6 認証ヘッダー。|
+|過大|58| ipv6 のインターネット制御メッセージプロトコル。|
+|ipv6NoNextHeader|59| ipv6 の次のヘッダーはありません。|
+|ipv6DestinationOptions|60| ipv6 宛先オプションヘッダー。|
+|目|77| ネットディスクプロトコル (非公式)。|
+|時|255| 生の IP パケットプロトコル。|
+|ipx|1000| インターネットパケット交換プロトコル。|
+|spx|1256| 順序付きパケット交換プロトコル。|
+|spxii|1257| シーケンス付きパケット交換バージョン2プロトコル。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -57,18 +85,18 @@ ms.locfileid: "32570723"
   "destinationDomain": "String",
   "destinationPort": "String",
   "destinationUrl": "String",
-  "direction": "@odata.type: microsoft.graph.connectionDirection",
+  "direction": "String",
   "domainRegisteredDateTime": "String (timestamp)",
   "localDnsName": "String",
   "natDestinationAddress": "String",
   "natDestinationPort": "String",
   "natSourceAddress": "String",
   "natSourcePort": "String",
-  "protocol": "@odata.type: microsoft.graph.securityNetworkProtocol",
+  "protocol": "string",
   "riskScore": "String",
   "sourceAddress": "String",
   "sourcePort": "String",
-  "status": "@odata.type: microsoft.graph.connectionStatus",
+  "status": "String",
   "urlParameters": "String"
 }
 
@@ -83,8 +111,6 @@ ms.locfileid: "32570723"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/networkconnection.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

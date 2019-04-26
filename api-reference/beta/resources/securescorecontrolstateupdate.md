@@ -2,12 +2,12 @@
 title: " secureScoreControlStateUpdate リソースの種類"
 description: このリソースには、ユーザーによって更新されたコントロールの状態の履歴が含まれます (コントロールの状態には、Default、ThirdParty、、レビュー済み) があります。
 localization_priority: Normal
-ms.openlocfilehash: 8d8c3122a6263ebc7b10b5edfb823953e2d587fc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 24febeb4bfb055e89e59cdb4f79c8b60c6c40347
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549140"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343361"
 ---
  #  <a name="securescorecontrolstateupdate-resource-type"></a>secureScoreControlStateUpdate リソースの種類
 ユーザーによって更新されたコントロールの状態の履歴が含まれます (コントロールの状態には、既定では、無視される、ThirdParty、レビューされます)。
@@ -18,7 +18,7 @@ ms.locfileid: "32549140"
 |comment | string | コントロールに関するオプションのコメントを提供します。 |
 |state | string | PATCH コマンドを使用してコントロールの状態を変更できます (例: 無視、thirdParty など) |
 |updatedby | string |テナント状態を更新したユーザーの ID |
-|updatedDateTime | DateTimeOffset? |コントロールの状態が更新された時刻 |
+|updatedDateTime | DateTimeOffset |コントロールの状態が更新された時刻 |
  ## <a name="json-representation"></a>JSON 表記
  リソースの JSON 表記を次に示します。
  <!-- {
@@ -30,10 +30,10 @@ ms.locfileid: "32549140"
  ```json
 {
   "assignedTo": "String",
-  "comment": "Double",
-  "state": "Double",
-  "updatedBy": "Double",
-  "updatedDateTime": "Double"
+  "comment": "string",
+  "state": "string",
+  "updatedBy": "string",
+  "updatedDateTime": "DateTimeOffset"
 }
  ```
  <!-- {

@@ -2,12 +2,12 @@
 title: 'Microsoft Graph API を使用してプロジェクトローマを操作する '
 description: 'プロジェクトローマは、アプリ開発者が強力なクロスデバイスエクスペリエンスを構築できるようにするプラットフォームを構築するための Microsoft イニシアティブです。 プロジェクトローマは、ユーザーが同じ Microsoft アカウントまたは職場または学校のアカウントでサインインしたときに、さまざまなサービスとクライアントエンドポイントを接続するさまざまな機能を有効にします。 これにより、デバイスではなくユーザーのタスクを中心としたクロスデバイスとクロスプラットフォームのエクスペリエンスを実装できます。 '
 localization_priority: Normal
-ms.openlocfilehash: 57c5189f3caf64ec048d000d5e9108811bd88145
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b247c434c90ff0517d012f23254a70c591cdafd4
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563395"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344068"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-project-rome"></a>Microsoft Graph API を使用してプロジェクトローマを操作する 
 

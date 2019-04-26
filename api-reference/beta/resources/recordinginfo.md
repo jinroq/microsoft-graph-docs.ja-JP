@@ -4,12 +4,12 @@ description: 参加者に関する情報を記録します。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6025259bafdcff78c3c7dbfa19aa39f5f6648f84
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 17da055e1cf40922075ba06de3e229c669d2e40f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563141"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343935"
 ---
 # <a name="recordinginfo-resource-type"></a>recordingInfo リソースの種類
 
@@ -22,7 +22,7 @@ ms.locfileid: "32563141"
 | プロパティ       | 型    | 説明|
 |:---------------|:--------|:----------|
 | initiatedBy | [participantInfo](participantinfo.md) | レコーディングを開始した参加者。 |
-| status | String | 可能な値は `recordingCapable`、`notRecording`、`startedRecording` です。 |
+| status | String | 可能な値は、`recordingCapable`、`notRecording`、`startedRecording` です。 |
 
 ## <a name="json-representation"></a>JSON 表記
 

@@ -2,12 +2,12 @@
 title: parentalcontrolsettings リソースの種類
 description: アプリケーションにおける、保護者による制限設定を指定します。 これらの設定は、同意操作を制御します。
 localization_priority: Normal
-ms.openlocfilehash: 52a808cd4c3e6f29e4d43c7c4ea5c9e30a81447b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8e62e137b872437626a5c77c114f14c6ad0c5eb2
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568669"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344994"
 ---
 # <a name="parentalcontrolsettings-resource-type"></a>parentalcontrolsettings リソースの種類
 

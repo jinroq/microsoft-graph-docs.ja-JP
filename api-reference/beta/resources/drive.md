@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: Drive
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 82a14f6462604b732119b90d037b2fab711df5af
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a01a2a8a8ad827145ee98a3ef0687546581d3096
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507841"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340659"
 ---
 # <a name="drive-resource-type"></a>Drive リソース型
 
@@ -51,21 +51,22 @@ Drive リソースの JSON 表記を以下に示します。
 {
   "activities": [{"@odata.type": "microsoft.graph.itemActivity"}],
   "id": "string",
-  "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "string (timestamp)",
   "description": "string",
   "driveType": "personal | business | documentLibrary",
-  "following": [ { "@odata.type": "microsoft.graph.driveItem" } ],
-  "items": [ { "@odata.type": "microsoft.graph.driveItem" } ],
-  "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "following": [{"@odata.type": "microsoft.graph.driveItem"}],
+  "items": [{"@odata.type": "microsoft.graph.driveItem"}],
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "string (timestamp)",
   "name": "string",
-  "owner": { "@odata.type": "microsoft.graph.identitySet" },
-  "quota": { "@odata.type": "microsoft.graph.quota" },
-  "root": { "@odata.type": "microsoft.graph.driveItem" },
-  "special": [ { "@odata.type": "microsoft.graph.driveItem" }],
-  "system": { "@odata.type": "microsoft.graph.systemFacet" },
-  "webUrl": "url"
+  "owner": {"@odata.type": "microsoft.graph.identitySet"},
+  "quota": {"@odata.type": "microsoft.graph.quota"},
+  "root": {"@odata.type": "microsoft.graph.driveItem"},
+  "special": [{"@odata.type": "microsoft.graph.driveItem"}],
+  "system": {"@odata.type": "microsoft.graph.systemFacet"},
+  "webUrl": "string",
+  "sharepointIds": {"@odata.type": "microsoft.graph.sharepointIds"}
 }
 ```
 
@@ -96,10 +97,10 @@ Drive リソースの JSON 表記を以下に示します。
 | リレーションシップ | 型                                 | 説明
 |:-------------|:-------------------------------------|:-----------------------
 | アクティビティ   | [itemActivity][] コレクション          | このドライブに対して行われた最近のアクティビティのリストです。
-| items        | [driveitem](driveitem.md) コレクション | ドライブに含まれているすべてのアイテム。読み取り専用。Null 許容型。
-| root         | [driveitem](driveitem.md)            | ドライブのルート フォルダー。読み取り専用。
-| special      | [driveitem](driveitem.md) コレクション | OneDrive で使用可能な共通フォルダーのコレクション。読み取り専用。Null 許容型。
-| フォロー中    | [DriveItem](driveitem.md) コレクション | ユーザーがフォローしているアイテムの一覧。 OneDrive for Business のみ。
+| items        | [driveItem](driveitem.md) コレクション | ドライブに含まれているすべてのアイテム。読み取り専用。Null 許容型。
+| root         | [driveItem](driveitem.md)            | ドライブのルート フォルダー。読み取り専用。
+| special      | [driveItem](driveitem.md) コレクション | OneDrive で使用可能な共通フォルダーのコレクション。読み取り専用。Null 許容型。
+| フォロー中    | [driveItem](driveitem.md) コレクション | ユーザーがフォローしているアイテムの一覧。 OneDrive for Business のみ。
 
 ## <a name="methods"></a>メソッド
 
@@ -142,8 +143,6 @@ Drive リソースの JSON 表記を以下に示します。
   "tocBookmarks": {
     "Resources/Drive": "#"
   },
-  "suppressions": [
-    "Error: /api-reference/beta/resources/drive.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

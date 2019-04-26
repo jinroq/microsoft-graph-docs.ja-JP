@@ -2,12 +2,12 @@
 title: singleValueLegacyExtendedProperty を取得する
 description: 特定の拡張プロパティを使用して展開された単一のリソースインスタンス、またはリソースインスタンスのコレクションを取得できます。
 localization_priority: Normal
-ms.openlocfilehash: ead4881737f4431138d444ffe8df131c22c131fc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a518e50f694d70fadc7fab4ee79a7e4860cc5cb1
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32537329"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33335911"
 ---
 # <a name="get-singlevaluelegacyextendedproperty"></a>singleValueLegacyExtendedProperty を取得する
 
@@ -28,7 +28,7 @@ ms.locfileid: "32537329"
 - [contactFolder](../resources/contactfolder.md) 
 - [イベント](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
-- [メッセージ](../resources/message.md) 
+- [message](../resources/message.md) 
 - [Outlook タスク](../resources/outlooktask.md)
 - [Outlook タスク フォルダー](../resources/outlooktaskfolder.md)
 
@@ -49,12 +49,12 @@ ms.locfileid: "32537329"
 | [連絡先](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [contactFolder](../resources/contactfolder.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [イベント](../resources/event.md) | Calendars.Read | Calendars.Read |  Calendars.Read|
-| グループ [calendar](../resources/calendar.md) | Group.Read.All | サポート対象外 | サポート対象外 |
-| グループ [event](../resources/event.md) | Group.Read.All | サポート対象外 | サポート対象外 |
+| グループ [calendar](../resources/calendar.md) | Group.Read.All | 非サポート | 非サポート |
+| グループ [event](../resources/event.md) | Group.Read.All | 非サポート | 非サポート |
 | グループ [post](../resources/post.md) | Group.Read.All | サポート対象外 | Group.Read.All |
 | [mailFolder](../resources/mailfolder.md) | Mail.Read | Mail.Read | Mail.Read |
-| [メッセージ](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
-| [Outlook タスク](../resources/outlooktask.md) | Tasks.Read | Tasks.Read | サポート対象外 |
+| [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
+| [Outlook タスク](../resources/outlooktask.md) | Tasks.Read | Tasks.Read | サポートされていません |
 | [Outlook タスク フォルダー](../resources/outlooktaskfolder.md) | Tasks.Read | Tasks.Read | 非サポート |
 
 
@@ -300,7 +300,7 @@ GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '
   "name": "get_singlevaluelegacyextendedproperty_1"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/messages('AAMkAGE1M2_bs88AACHsLqWAAA=')?$expand=singleValueExtendedProperties($filter=id%20eq%20'String%20{66f5a359-4659-4830-9070-00047ec6ac6e}%20Name%20Color')
+GET https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2_bs88AACHsLqWAAA=/?$expand=singleValueExtendedProperties($filter=id%20eq%20'String%20{66f5a359-4659-4830-9070-00047ec6ac6e}%20Name%20Color')
 ```
 #### <a name="response-1"></a>応答 1
 応答本文には、指定されたメッセージのすべてのプロパティと、フィルターから返される拡張プロパティが含まれています。
@@ -356,7 +356,7 @@ Content-type: application/json
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/beta/Me/messages?$filter=singleValueExtendedProperties%2FAny(ep%3A%20ep%2Fid%20eq%20'String%20{66f5a359-4659-4830-9070-00047ec6ac6e}%20Name%20Color'%20and%20ep%2Fvalue%20eq%20'Green')
+GET https://graph.microsoft.com/beta/me/messages?$filter=singleValueExtendedProperties%2FAny(ep%3A%20ep%2Fid%20eq%20'String%20{66f5a359-4659-4830-9070-00047ec6ac6e}%20Name%20Color'%20and%20ep%2Fvalue%20eq%20'Green')
 ```
 
 #### <a name="response-2"></a>応答 2
@@ -374,7 +374,7 @@ GET https://graph.microsoft.com/beta/Me/messages?$filter=singleValueExtendedProp
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/beta/Me/messages?$filter=singleValueExtendedProperties/any(ep:ep/Id eq 'String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color' and contains(ep/Value, 'green'))
+GET https://graph.microsoft.com/beta/me/messages?$filter=singleValueExtendedProperties/any(ep:ep/Id eq 'String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color' and contains(ep/Value, 'green'))
 ```
 
 #### <a name="response-3"></a>応答 3
@@ -427,8 +427,6 @@ GET https://graph.microsoft.com/beta/me/messages?$filter=singleValueExtendedProp
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/singlevaluelegacyextendedproperty-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

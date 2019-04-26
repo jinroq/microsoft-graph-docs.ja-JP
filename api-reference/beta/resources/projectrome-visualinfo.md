@@ -3,14 +3,16 @@ title: visualinfo リソースの種類
 description: activity オブジェクトの**visualelements**プロパティを表すための複合型。
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 56d3822c89de074847aeab6c8a0a742ecd7f006f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: edf02c7318f45f711da3a27b03747aac94fd9706
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563400"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344062"
 ---
 # <a name="visualinfo-resource-type"></a>visualinfo リソースの種類
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [activity](../resources/projectrome-activity.md)オブジェクトの**visualelements**プロパティを表すための複合型。
 
@@ -25,7 +27,7 @@ ms.locfileid: "32563400"
 |名前 | 型 | 説明|
 |:----|:------|:-----------|
 |テキスト | String | 必須。 ユーザーの一意のアクティビティの短いテキスト説明 (たとえば、アクティビティがドキュメントの作成を参照する場合のドキュメント名)。|
-|説明 | String | 省略可能。 ユーザー固有のアクティビティに関する長いテキストの説明 (例: ドキュメント名、最初の文、またはメタデータ)|
+|description | String | 省略可能。 ユーザー固有のアクティビティに関する長いテキストの説明 (例: ドキュメント名、最初の文、またはメタデータ)|
 |背景 | String | 省略可能。 アクティビティのアプリケーションソースの UI ブランドカラーでアクティビティをレンダリングするために使用される背景色。 有効な16進カラーである必要があります。|
 |content | 型指定のない JSON オブジェクト | 省略可能。 Windows シェル UI でアクティビティをレンダリングするためにカスタムコンテンツを提供するために使用されるデータ JSON オブジェクトのカスタム部分|
 |帰属 | [imageInfo](../resources/projectrome-imageinfo.md) | 省略可能。 アクティビティの生成に使用されたアプリケーションを表すアイコンを表すために使用される JSON オブジェクト|
@@ -47,7 +49,7 @@ ms.locfileid: "32563400"
 
 ```json
 {
-    "@odata.type": "microsoft.graph.visualInfo",
+    "@data.type": "microsoft.graph.visualInfo",
     "attribution": {
         "@odata.type": "microsoft.graph.imageInfo",
         "iconUrl": "String (URL)",
@@ -58,17 +60,20 @@ ms.locfileid: "32563400"
     "backgroundColor": "String",
     "displayText": "String",
     "content": {
-        "@odata.type": "microsoft.graph.Json"
+        "@data.type": "microsoft.graph.Json"
     }
 }
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-07 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "visualinfo resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

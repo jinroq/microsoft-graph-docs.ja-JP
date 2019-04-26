@@ -4,12 +4,12 @@ description: Outlook タスクの書き込み可能なプロパティを変更�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 1908d9b918b13f87b1d5ab61dab912577f06da64
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 47a96d7e1fd7044bcc43edac809696c5a3ad2c42
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32539829"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33332704"
 ---
 # <a name="update-outlooktask"></a>outlooktask) を更新する
 
@@ -55,10 +55,10 @@ PATCH /users/{id|userPrincipalName}/outlook/tasks/{id}
 |:---------------|:--------|:----------|
 |assignedTo|String|タスクが割り当てられているユーザーの名前。|
 |body|[itemBody](../resources/itembody.md)|通常はタスクに関する情報を含むタスク本体。HTML 型のみがサポートされていることに注意してください。|
-|categories|String collection|タスクに関連付けられたカテゴリ。|
+|categories|String コレクション|タスクに関連付けられたカテゴリ。|
 |changeKey|String|タスクのバージョン。|
 |completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|タスクが終了した日付 (指定のタイム ゾーン)。|
-|createdDateTime|DateTimeOffset|タスクが作成された日時。 既定では、UTC 時間です。 要求ヘッダーでカスタム タイム ゾーンを使用できます。 プロパティの値は、ISO 8601 形式を使用します。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
+|createdDateTime|DateTimeOffset|タスクが作成された日時。 既定では、UTC 時間です。 要求ヘッダーでカスタム タイム ゾーンを使用できます。 プロパティの値は、ISO 8601 形式を使用します。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、`'2014-01-01T00:00:00Z'` のようになります。|
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|タスクが終了する予定の日時 (指定のタイム ゾーン)。|
 |hasAttachments|ブール値|タスクに添付ファイルが含まれている場合、true に設定します。|
 |importance|string|イベントの重要度。 可能な値は、`low`、`normal`、`high` です。|
@@ -88,8 +88,7 @@ PATCH /users/{id|userPrincipalName}/outlook/tasks/{id}
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/me/outlook/tasks('AAMkADA1MTHgwAAA=')
-
+PATCH https://graph.microsoft.com/beta/me/outlook/tasks/AAMkADA1MTHgwAAA=
 Prefer: outlook.timezone="Eastern Standard Time"
 Content-type: application/json
 Content-length: 76
@@ -160,8 +159,6 @@ Content-length: 376
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/outlooktask-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

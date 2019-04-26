@@ -2,12 +2,12 @@
 title: directorydefinition リソースの種類
 description: ディレクトリとそのオブジェクトに関する同期エンジン情報を提供します。 このリソースは、同期エンジンに対して、たとえば、ディレクトリには、**ユーザー**と**グループ**という名前のオブジェクト、これらのオブジェクトに対してサポートされている属性、およびそれらの属性の種類を示します。 オブジェクトと属性を同期ルールおよびオブジェクトマッピングに参加させるには、それらをディレクトリ定義の一部として定義する必要があります。
 localization_priority: Normal
-ms.openlocfilehash: 22ba4a7f3b5b5d3154ec6b3f5d42bd6f1b8f09d7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8e622edef39eec5476015ef5e22c5fe9697e0daa
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32582067"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342924"
 ---
 # <a name="directorydefinition-resource-type"></a>directorydefinition リソースの種類
 
@@ -23,9 +23,9 @@ ms.locfileid: "32582067"
 
 | プロパティ      | 型      | 説明    |
 |:--------------|:----------|:---------------|
-|id           |String     |ディレクトリ識別子。 null 許容ではありません。|
+|id           |String     |ディレクトリ識別子。 null 許容型ではありません。|
 |metadata       |metadataentry コレクション    |追加の拡張機能のプロパティ。 明示的に記述されていない限り、メタデータ値は変更しないでください。|
-|name           |String     |ディレクトリの名前。 [同期スキーマ](synchronization-synchronizationschema.md)内で一意である必要があります。 null 許容ではありません。|
+|name           |String     |ディレクトリの名前。 [同期スキーマ](synchronization-synchronizationschema.md)内で一意である必要があります。 null 許容型ではありません。|
 |対象        |[objectdefinition](synchronization-objectdefinition.md)コレクション    |ディレクトリでサポートされているオブジェクトのコレクションです。|
 
 ## <a name="json-representation"></a>JSON 表記
@@ -267,8 +267,6 @@ ms.locfileid: "32582067"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-directorydefinition.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

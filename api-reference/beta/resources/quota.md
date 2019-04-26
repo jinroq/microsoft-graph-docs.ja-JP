@@ -4,12 +4,12 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 領域
 localization_priority: Normal
-ms.openlocfilehash: 7cafff3162c7cdc4435df1cde522b42998398693
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b7357eba3cdf7a9f01c983016c6890232c3d5bbf
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563374"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344078"
 ---
 # <a name="quota-resource-type"></a>クォータリソースの種類
 

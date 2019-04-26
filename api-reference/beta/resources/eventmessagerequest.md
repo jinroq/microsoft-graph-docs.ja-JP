@@ -4,12 +4,12 @@ description: 会議出席依頼を表すメッセージ。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 1928273ef45b277fa81dba5a4db7b908134491d3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ead65f036fe5537b7e349124b2771eff575be22f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32506574"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333955"
 ---
 # <a name="eventmessagerequest-resource-type"></a>eventmessagerequest リソースの種類
 
@@ -23,6 +23,7 @@ ms.locfileid: "32506574"
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
     "attachments",
     "event",
@@ -83,21 +84,21 @@ ms.locfileid: "32506574"
 |body|[itemBody](itembody.md)|メッセージの本文。|
 |bodyPreview|String|メッセージ本文の最初の 255 文字。|
 |categories|String collection|メッセージに関連付けられたカテゴリ。|
-|ccRecipients|[recipient](recipient.md) collection|メッセージの CC 受信者。|
+|ccRecipients|[recipient](recipient.md) コレクション|メッセージの CC 受信者。|
 |changeKey|String|メッセージのバージョン。|
 |conversationId|String|電子メールが属している会話の ID。|
 |createdDateTime|DateTimeOffset|メッセージが作成された日時。|
 |endDateTime|[DateTimeTimeZone](datetimetimezone.md)|要求された会議の終了時刻。|
 |from|[recipient](recipient.md)|メッセージのメールボックス所有者と送信者。|
-|hasAttachments|ブール型|メッセージに添付ファイルがあるかどうかを示します。|
+|hasAttachments|Boolean|メッセージに添付ファイルがあるかどうかを示します。|
 |id|String|読み取り専用です。|
 |importance|String| メッセージの重要度: `Low`、`Normal`、`High`。|
 |inferenceClassification|String| 可能な値は、`Focused`、`Other` です。|
 |isDeliveryReceiptRequested|Boolean|メッセージの開封確認メッセージが要求されているかどうかを示します。|
-|isDraft|ブール値|メッセージが下書きかどうかを示します。メッセージがまだ送信されていなければ下書きです。|
+|isDraft|Boolean|メッセージが下書きかどうかを示します。メッセージがまだ送信されていなければ下書きです。|
 |isOutOfDate|Boolean|この会議出席要求がより新しい要求によって古くなっているかどうかを示します。|
-|isRead|Boolean|メッセージが開封されたかどうかを示します。|
-|isReadReceiptRequested|Boolean|メッセージの開封確認メッセージが要求されているかどうかを示します。|
+|isRead|ブール値|メッセージが開封されたかどうかを示します。|
+|isReadReceiptRequested|ブール値|メッセージの開封確認メッセージが要求されているかどうかを示します。|
 |lastModifiedDateTime|DateTimeOffset|メッセージが最後に変更された日時。|
 |location|[Location](location.md)|要求された会議の場所。|
 |meetingMessageType|String| イベント メッセージの種類: `none`、`meetingRequest`、`meetingCancelled``meetingAccepted``meetingTentativelyAccepted``meetingDeclined`。|
@@ -112,8 +113,8 @@ ms.locfileid: "32506574"
 |sentDateTime|DateTimeOffset|メッセージが送信された日時。|
 |startDateTime|[DateTimeTimeZone](datetimetimezone.md)|要求された会議の開始時刻。|
 |subject|String|メッセージの件名。|
-|toRecipients|[recipient](recipient.md) コレクション|メッセージの宛先。|
-|type|文字列型 (String)|要求された会議の`singleInstance`種類`occurence`: `exception`、 `seriesMaster`、、。|
+|toRecipients|[recipient](recipient.md) collection|メッセージの宛先。|
+|type|String|要求された会議の`singleInstance`種類`occurence`: `exception`、 `seriesMaster`、、。|
 |uniqueBody|[itemBody](itembody.md)|現在のメッセージに特有のメッセージの本文の一部。|
 |webLink|String|Outlook Web App でメッセージを開く URL。<br><br>URL の末尾に ispopout 引数を付加して、メッセージの表示方法を変更できます。ispopout が存在しない、または 1 に設定されている場合は、メッセージがポップアウト ウィンドウに表示されます。ispopout が 0 に設定されている場合、ブラウザーの Outlook Web App レビュー ウィンドウにメッセージが表示されます。<br><br>Outlook Web App のメールボックスにログインしている場合、ブラウザーでメッセージが開きます。まだブラウザーでログインしていない場合、ログインするように求められます。<br><br>この URL には、iFrame 内からアクセスできます。|
 
@@ -132,7 +133,7 @@ ms.locfileid: "32506574"
 |[添付ファイルの作成](../api/eventmessage-post-attachments.md) |[Attachment](attachment.md)| 添付ファイル コレクションへの投稿により、新しい添付ファイルを作成します。|
 |[添付ファイルを一覧表示する](../api/eventmessage-list-attachments.md) |[Attachment](attachment.md) コレクション| 添付ファイルのオブジェクト コレクションを取得します。|
 |[更新する](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |eventMessage オブジェクトを更新します。 |
-|[削除する](../api/eventmessage-delete.md) | なし |eventMessage オブジェクトを削除します。 |
+|[削除](../api/eventmessage-delete.md) | None |eventMessage オブジェクトを削除します。 |
 |[コピー](../api/message-copy.md)|[Message](message.md)||
 |[createForward](../api/message-createforward.md)|[Message](message.md)||
 |[createReply](../api/message-createreply.md)|[Message](message.md)||
@@ -152,8 +153,6 @@ ms.locfileid: "32506574"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/eventmessagerequest.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -2,12 +2,12 @@
 title: referenceAttachment リソースの種類
 description: 'OneDrive for business のクラウドドライブ上のフォルダーまたはファイル (テキストファイルや Word 文書など) またはその他のサポートされているストレージの場所へのリンクは、 '
 localization_priority: Normal
-ms.openlocfilehash: 59ebb0af10a64195643cb7073d1206790ae6a875
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2c18e7dda1b5e899bdb453b6be70a47ecd6ad212
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563097"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343881"
 ---
 # <a name="referenceattachment-resource-type"></a>referenceAttachment リソースの種類
 
@@ -28,19 +28,19 @@ OneDrive for business クラウドドライブ上のフォルダーまたはフ�
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |contentType|String|添付ファイルのコンテンツ タイプ。 省略可能。|
-|id|String|添付ファイル ID。読み取り専用です。|
+|id|文字列型 (String)|添付ファイル ID。読み取り専用です。|
 |isFolder|ブール型|添付ファイルがフォルダーへのリンクであるかどうかを指定します。 **sourceurl**がフォルダーへのリンクの場合は、true に設定する必要があります。 省略可能。|
-|isInline|ブール値|添付ファイルを埋め込みオブジェクトの本文にインラインで表示する場合は、true に設定します。 省略可能。|
-|lastModifiedDateTime|DateTimeOffset|添付ファイルが最後に変更された日時。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 省略可能。|
+|isInline|Boolean|添付ファイルを埋め込みオブジェクトの本文にインラインで表示する場合は、true に設定します。 省略可能。|
+|lastModifiedDateTime|DateTimeOffset|添付ファイルが最後に変更された日時です。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、`'2014-01-01T00:00:00Z'` のようになります。 省略可能。|
 |name|String|埋め込まれた添付ファイルを表すアイコンの下に表示されるテキスト。 実際のファイル名である必要はありません。 必須。|
-|権|ReferenceAttachmentPermissions|**providertype**のプロバイダーの種類によって添付ファイルに付与されるアクセス許可を指定します。 可能な値は、`other`、`view`、`edit`、`anonymousView`、`anonymousEdit`、`organizationView`、`organizationEdit` です。 省略可能。|
+|権|referenceattachmentpermission が|**providertype**のプロバイダーの種類によって添付ファイルに付与されるアクセス許可を指定します。 可能な値は、`other`、`view`、`edit`、`anonymousView`、`anonymousEdit`、`organizationView`、`organizationEdit` です。 省略可能。|
 |previewUrl|String|イメージ URL の参照添付ファイルにのみ適用され、プレビューイメージを取得します。 **thumbnailUrl**および**プレビュー url**は、 **sourceurl**が画像ファイルを識別する場合にのみ使用します。 省略可能。|
-|providerType|ReferenceAttachmentProviders|この contentType の添付ファイルをサポートするプロバイダーの種類。 可能な値は、`other`、`oneDriveBusiness`、`oneDriveConsumer`、`dropbox` です。 省略可能。|
+|providerType|referenceAttachmentProvider|この contentType の添付ファイルをサポートするプロバイダーの種類。 可能な値は、`other`、`oneDriveBusiness`、`oneDriveConsumer`、`dropbox` です。 省略可能。|
 |size|Int32|参照添付ファイルのメッセージに格納されているメタデータのサイズ (バイト単位)。 この値は実際のファイルのサイズを示すものではありません。 省略可能。|
 |sourceUrl|文字列|添付ファイルの内容を取得するための URL。 これがフォルダーへの URL である場合、outlook または web 上の outlook でフォルダーが正しく表示されるようにするには、 **isfolder**を true に設定します。 必須です。|
 |thumbnailUrl|String|サムネイルイメージを取得するために、イメージ URL の参照添付ファイルにのみ適用されます。 **thumbnailUrl**および**プレビュー url**は、 **sourceurl**が画像ファイルを識別する場合にのみ使用します。 省略可能。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 
@@ -84,8 +84,6 @@ OneDrive for business クラウドドライブ上のフォルダーまたはフ�
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/referenceattachment.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

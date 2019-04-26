@@ -4,12 +4,12 @@ description: メール、連絡先、ソーシャルネットワークにわた�
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 32a2c9905ab52e9b229bb8673fb4a84d90a706ac
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0def5d62dd941122858ffa61bf224a9ef672ad0c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561475"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344925"
 ---
 # <a name="person-resource-type"></a>person リソースの種類
 
@@ -33,8 +33,8 @@ ms.locfileid: "32561475"
 |displayName|string|人物の表示名。|
 |emailAddresses|[rankedemailaddress](rankedemailaddress.md)コレクション|人物の電子メール アドレス。|
 |givenName|string|人物に指定された名前。|
-|id|string|個人の一意識別子。 読み取り専用です。|
-|isFavorite|ブール値|ユーザーがこの人物をお気に入りとしてフラグを設定した場合は `true`。|
+|id|string|人物の一意の識別子。読み取り専用です。|
+|isFavorite|boolean|ユーザーがこの人物をお気に入りとしてフラグを設定した場合は `true`。|
 |mailboxType|string|ユーザーの電子メールアドレスによって表されるメールボックスの種類。|
 |officeLocation|string|人物のオフィスの所在地。|
 |personNotes|string|ユーザーがこの人物について記入した自由形式のメモ。|

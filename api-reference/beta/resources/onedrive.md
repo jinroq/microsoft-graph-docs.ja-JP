@@ -3,12 +3,12 @@ title: Microsoft Graph でのファイルの作業
 description: Microsoft Graph を使用して、OneDrive、OneDrive for Business、および SharePoint のドキュメント ライブラリに配置されるファイルに接続するアプリケーションを作成できます。Microsoft Graph を使用することで、ユーザーのドキュメントを単に格納することから、複雑なファイル共有の複雑なシナリオまで、Office 365 に格納されるファイルに関するさまざまなエクスペリエンスを構築できます。
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 8ed01ced4f1aa42f5e3d71b1ec07d6d5f746cb31
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 90dd80efecef45f43b21a626244d9314ff4c2f91
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563649"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341527"
 ---
 # <a name="working-with-files-in-microsoft-graph"></a>Microsoft Graph でのファイルの作業
 

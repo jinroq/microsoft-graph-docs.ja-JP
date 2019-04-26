@@ -4,12 +4,12 @@ description: 提出物は、割り当てによって所有されます。 提出
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: aeeb1355da2ffcb0ebf561af2ecd15ac93221e26
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 39adc3f394d106860406b3dd22bbf9a1c600280f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32542900"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334129"
 ---
 # <a name="educationsubmission-resource-type"></a>educationSubmission リソースの種類
 
@@ -27,7 +27,7 @@ ms.locfileid: "32542900"
 |[educationSubmission を取得する](../api/educationsubmission-get.md) | [educationSubmission](educationsubmission.md) |**educationSubmission**オブジェクトのプロパティとリレーションシップを読み取ります。|
 |[リソースを一覧表示する](../api/educationsubmission-list-resources.md) |[educationSubmissionResource](educationsubmissionresource.md)コレクション| **educationSubmissionResource**オブジェクトのコレクションを取得します。|
 |[submittedresources を一覧表示する](../api/educationsubmission-list-submittedresources.md) |[educationSubmissionResource](educationsubmissionresource.md)コレクション| **educationSubmissionResource**オブジェクトのコレクションを取得します。|
-|[更新](../api/educationsubmission-update.md) | [educationSubmission](educationsubmission.md) |**educationSubmission**オブジェクトを更新します。 |
+|[更新する](../api/educationsubmission-update.md) | [educationSubmission](educationsubmission.md) |**educationSubmission**オブジェクトを更新します。 |
 |[Return](../api/educationsubmission-return.md)|[educationSubmission](educationsubmission.md)|教師は、return を使用して、成績/フィードバックを学生に表示できることを示します。|
 |[Submit](../api/educationsubmission-submit.md)|[educationSubmission](educationsubmission.md)|学生は、submit を使用して割り当てを有効にします。 これにより、リソースが [対象] の [ **submittedresources** ] フォルダーにコピーされ、状態が更新されます。|
 |[送信取り消し](../api/educationsubmission-unsubmit.md)|[educationSubmission](educationsubmission.md)|学生は、未送信を使用して、提出物の状態を送信前から作業に移行します。 これにより、リソースが**workingResources**フォルダーにコピーされて、状況を更新して更新します。|
@@ -62,6 +62,7 @@ ms.locfileid: "32542900"
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],
@@ -70,18 +71,20 @@ ms.locfileid: "32542900"
 
 ```json
 {
-  "feedback": {"@odata.type": "microsoft.graph.educationFeedback"},
-  "grade": {"@odata.type": "microsoft.graph.educationAssignmentGrade"},
-  "id": "String (identifier)",
-  "recipient": {"@odata.type": "microsoft.graph.educationSubmissionRecipient"},
-  "returnedBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "returnedDateTime": "String (timestamp)",
-  "resourcesFolderUrl": "String",
-  "status": "string",
-  "submittedBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "submittedDateTime": "String (timestamp)",
-  "unsubmittedBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "unsubmittedDateTime": "String (timestamp)"
+    "feedback":{"@odata.type":"microsoft.graph.educationFeedback"},
+    "grade":{"@odata.type":"microsoft.graph.educationAssignmentGrade"},
+    "id":"String (identifier)",
+    "recipient":{"@odata.type":"microsoft.graph.educationSubmissionRecipient"},
+    "returnedBy":{"@odata.type":"microsoft.graph.identitySet"},
+    "returnedDateTime":"String (timestamp)",
+    "resourcesFolderUrl":"String",
+    "status":"string",
+    "submittedBy":{"@odata.type":"microsoft.graph.identitySet"},
+    "submittedDateTime":"String (timestamp)",
+    "unsubmittedBy":{"@odata.type":"microsoft.graph.identitySet"},
+    "unsubmittedDateTime":"String (timestamp)",
+    "releasedBy":{"@odata.type":"microsoft.graph.identitySet"},
+    "releasedDateTime":"String (timestamp)"
 }
 ```
 
@@ -94,8 +97,6 @@ ms.locfileid: "32542900"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationsubmission.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

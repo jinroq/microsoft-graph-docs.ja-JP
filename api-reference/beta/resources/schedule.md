@@ -4,12 +4,12 @@ description: チーム内の schedulingGroups、シフト、timeoffreasons 各�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: de3662fcf3c5a8e50493e365f6a10a8641a451df
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 48b3b5c118a39442469bc6155068664fcebe0ec2
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563143"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343522"
 ---
 # <a name="schedule-resource-type"></a>スケジュールリソースの種類
 
@@ -31,7 +31,7 @@ ms.locfileid: "32563143"
 | id                    |`string`  |`schedule` の ID。|
 | enabled               |`bool`    | スケジュールがチームに対して有効になっているかどうかを示します。 必須です。|
 | timeZone              |`string`  | tz データベース形式を使用して、スケジュールチームのタイムゾーンを示します。 必須です。|
-| provisionStatus       |`enum`    | スケジュールの準備の状態。 |
+| provisionStatus       |`operationStatus`    | スケジュールの準備の状態。 使用可能な値`notStarted`は`running` `completed`、、 `failed`、です。 |
 | provisionStatusCode   |`string`  | スケジュールプロビジョニングが失敗した理由に関する追加情報。 |
 
 
@@ -74,8 +74,6 @@ ms.locfileid: "32563143"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/schedule.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

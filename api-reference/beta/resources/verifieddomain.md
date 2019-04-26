@@ -2,14 +2,16 @@
 title: verifiedDomain リソースの種類
 description: テナントのドメインを指定します。 組織エンティティの**verifiedDomains**プロパティは、 **VerifiedDomain**のコレクションです。
 localization_priority: Normal
-ms.openlocfilehash: c13c3b3da39b762c26d637deaddafbee5da40160
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 088687d4450a5134c53bca6134039f7ba34a7597
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454038"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345097"
 ---
 # <a name="verifieddomain-resource-type"></a>verifiedDomain リソースの種類
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 テナントのドメインを指定します。 [組織](organization.md)エンティティの**verifiedDomains**プロパティは、 **VerifiedDomain**のコレクションです。
 
@@ -48,10 +50,13 @@ ms.locfileid: "32454038"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "verifiedDomain resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

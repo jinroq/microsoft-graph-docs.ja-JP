@@ -5,11 +5,11 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: d29cf93154e2c032ac7010372e3f116f2a1dd46c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563064"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343888"
 ---
 # <a name="relatedcontact-resource-type"></a>その他の連絡先リソースの種類
 
@@ -21,7 +21,7 @@ ms.locfileid: "32563064"
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |id|String|Azure Active Directory 内の連絡先の id。|
-|displayName|String|連絡先の名前。 必須です。|
+|displayName|文字列|連絡先の名前。 必須です。|
 |emailAddress|String|連絡先のプライマリ電子メールアドレス。|
 |mobilePhone|String|連絡先の携帯電話番号。|
 |リレーションシップ|`contactRelationship`|ユーザーとの関係。 可能な値`parent`は`relative` `aide` `doctor` `guardian` `other`、、、、、、 `unknownFutureValue`、、です。 `child`|
