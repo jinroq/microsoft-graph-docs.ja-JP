@@ -4,39 +4,39 @@ description: オープン拡張機能 (openTypeExtension オブジェクト) を
 localization_priority: Priority
 author: dkershaw10
 ms.openlocfilehash: 0823cb549527f7e5851e9d47e328b427eb64539f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962346"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32503556"
 ---
 # <a name="create-open-extension"></a>オープン拡張機能を作成する
 
 オープン拡張機能 ([openTypeExtension](../resources/opentypeextension.md) オブジェクト) を作成し、リソースの新規または既存のインスタンスのカスタム プロパティを追加します。
 
-> **注:** Outlook のリソースを開いている拡張機能を作成する場合は、 [openTypeExtension のリソースの種類](../resources/opentypeextension.md#outlook-specific-considerations)の**Outlook に固有の考慮事項**を参照してください。
+> **注:** Outlook リソースでオープン拡張機能を作成する場合は、[openTypeExtension リソースの種類](../resources/opentypeextension.md#outlook-specific-considerations)にある**Outlook-固有の考慮事項** を参照してください。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>アクセス許可
 
-拡張機能を作成するリソースとアクセス許可によって委任された (アプリケーション) の種類を要求、次の表で指定されたアクセス許可は、この API を呼び出すために必要最低限の特権。 アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+拡張機能を含むリソースおよび要求されたアクセス許可の種類（代理またはアプリケーション）に応じて、以下の表で指定されているアクセス許可が、このAPIを呼び出すために最低限必要な特権になります。 アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 | サポートされているリソース | 委任 (職場または学校のアカウント) | 委任 (個人用 Microsoft アカウント) | アプリケーション |
 |:-----|:-----|:-----|:-----|
-| [device](../resources/device.md) | Directory.AccessAsUser.All | サポートされていません | Device.ReadWrite.All |
+| [device](../resources/device.md) | Directory.AccessAsUser.All | サポート対象外 | Device.ReadWrite.All |
 | [イベント](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
-| [グループ](../resources/group.md) | Group.ReadWrite.All | サポートされていません | Group.ReadWrite.All |
-| [グループ イベント](../resources/event.md) | Group.ReadWrite.All | 使用不可 | 使用不可 |
-| [グループの投稿](../resources/post.md) | Group.ReadWrite.All | サポートされていません | Group.ReadWrite.All |
+| [グループ](../resources/group.md) | Group.ReadWrite.All | サポート対象外 | Group.ReadWrite.All |
+| [グループ イベント](../resources/event.md) | Group.ReadWrite.All | サポート対象外 | 非サポート |
+| [グループの投稿](../resources/post.md) | Group.ReadWrite.All | サポート対象外 | Group.ReadWrite.All |
 | [メッセージ](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
-| [組織](../resources/organization.md) | Directory.AccessAsUser.All | 使用不可 | 使用不可 |
+| [組織](../resources/organization.md) | Directory.AccessAsUser.All | サポート対象外 | 非サポート |
 | [個人用連絡先](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
-| [ユーザー](../resources/user.md) | User.ReadWrite.All | User.ReadWrite | User.ReadWrite.All |
+| [user](../resources/user.md) | User.ReadWrite.All | User.ReadWrite | User.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
 
 ### <a name="create-an-extension-in-a-new-resource-instance"></a>新規のリソース インスタンスに拡張機能を作成する
 
-インスタンスを作成するために使用同じ残りの要求を使用します。
+インスタンスを作成するには、同じ REST 要求を使います。
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -47,13 +47,13 @@ POST /groups/{id}/threads/{id}/posts/{id}/reply
 POST /users/{id|userPrincipalName}/contacts
 ```
 
->**注:** この構文は、サポートされているリソースのインスタンスを作成する一般的な方法を示しています。 これらのリソースのインスタンスを作成することを可能にするその他のすべてのポスト構文には、同様の方法でに開いている拡張機能の作成がサポートされています。
+>**注:** この構文は、サポートされているリソース インスタンスを作成する一般的な方法を示しています。 こうしたリソース インスタンスを作成するために使用できる他の POST 構文すべても、同様の方法でオープン拡張機能を作成できます。
 
 要求本文に、新規のリソース インスタンスのプロパティおよび_拡張機能_を含める方法については、[要求本文](#request-body)のセクションをご覧ください。
 
 ### <a name="create-an-extension-in-an-existing-resource-instance"></a>既存のリソース インスタンスに拡張機能を作成する
 
-要求でリソース インスタンスを識別し、**extensions** ナビゲーション プロパティで `POST` を行います。
+その要求でリソース インスタンスを識別し、**機能拡張** ナビゲーション プロパティで `POST` を行います。
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -68,14 +68,14 @@ POST /users/{id|userPrincipalName}/contacts/{id}/extensions
 POST /users/{id|userPrincipalName}/extensions
 ```
 
->**注:** この構文は、その中の拡張機能を作成するために、リソースのインスタンスを識別する一般的な方法を示しています。 同様の方法で開いている拡張機能を作成するこれらのリソースのインスタンスを識別することができるその他のすべての構文をサポートします。
+>**注:** 上記の構文は、拡張機能をその中に作成するリソース インスタンスを特定する一般的な方法を示しています。 こうしたリソース インスタンスを特定するために使用できる他の構文すべても、同様の方法でオープン拡張機能を作成できます。
 
-要求本文に_拡張機能_を含める方法については、[要求本文](#request-body)のセクションをご覧ください。
+要求本文にある_拡張機能_を含めた[要求本文](#request-body)のセクションを参照してください。
 
 ## <a name="path-parameters"></a>パス パラメーター
-|Parameter|Type|説明|
+|パラメーター|型|説明|
 |:-----|:-----|:-----|
-|ID|文字列|該当するコレクション内のオブジェクトの一意識別子。必須。|
+|id|string|該当するコレクション内のオブジェクトの一意識別子。必須。|
 
 ## <a name="request-headers"></a>要求ヘッダー
 
@@ -99,10 +99,10 @@ _新しい_リソース インスタンスに拡張機能を作成するとき�
 
 ### <a name="response-code"></a>応答コード
 
-応答コードは、操作によって `201 Created` または `202 Accepted` になります。
+操作によって、応答コードは `201 Created` または `202 Accepted` になります。
 
-リソース インスタンスを作成するために使用同じ操作を使用して拡張機能を作成する操作は、同じ操作を使用して、拡張子のないリソースのインスタンスを作成するときに返される応答コードを返します。
-として一覧表示されている[上](#create-an-extension-in-a-new-resource-instance)インスタンスを作成するための対応するトピックを参照してください。
+リソース インスタンスを作成するために使用するのと同じ操作を使用して、拡張子を作成すると、操作は拡張子なしのリソースのインスタンスの作成時に返される同じ応答コードを返します。
+それぞれ対応するインスタンスの作成については[上記](#create-an-extension-in-a-new-resource-instance)の一覧を参照してください。
 
 ### <a name="response-body"></a>応答本文
 
@@ -123,7 +123,7 @@ _新しい_リソース インスタンスに拡張機能を作成するとき�
 
   - 型 `microsoft.graph.openTypeExtension`。
   - 拡張情報名 "Com.Contoso.Referral"。
-  - JSON ペイロード内の 3 つのカスタム プロパティとして格納される追加のデータ: `companyName`、`expirationDate`と`dealValue`。
+  - JSON ペイロードに 3 つのカスタム プロパティとして格納される追加のデータ: `companyName`、`expirationDate`、`dealValue`。
 
 <!-- {
   "blockType": "ignored",

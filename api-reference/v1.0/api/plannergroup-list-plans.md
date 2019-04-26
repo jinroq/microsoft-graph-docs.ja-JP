@@ -1,19 +1,21 @@
 ---
-title: plans を一覧表示する
-description: グループ オブジェクトによって所有されている**plannerPlan**オブジェクトのリストを取得します。
-localization_priority: Priority
+title: 計画を一覧表示する
+description: グループ オブジェクトが所有する **plannerPlan** オブジェクトのリストを取得します。
+localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 0212968b0882c4090044519d12157a52c85b421b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27972489"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32525685"
 ---
-# <a name="list-plans"></a>plans を一覧表示する
+# <a name="list-plans"></a>計画をリストする
 
-[グループ](../resources/group.md)オブジェクトによって所有されている**plannerPlan**オブジェクトのリストを取得します。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[group](../resources/group.md) オブジェクトが所有する **plannerPlan** オブジェクトのリストを取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -50,7 +52,7 @@ GET /groups/{group-id}/planner/plans
   "name": "get_plans"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/groups/{group-id}/planner/plans
+GET https://graph.microsoft.com/beta/groups/ebf3b108-5234-4e22-b93d-656d7dae5874/planner/plans
 ```
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
@@ -87,10 +89,13 @@ Content-length: 421
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List plans",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->
