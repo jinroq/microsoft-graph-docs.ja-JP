@@ -12,6 +12,8 @@ ms.locfileid: "32538485"
 ---
 # <a name="create-or-replace-an-activity"></a><span data-ttu-id="a27f2-104">アクティビティを作成または置換する</span><span class="sxs-lookup"><span data-stu-id="a27f2-104">Create or replace an activity</span></span>
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 <span data-ttu-id="a27f2-105">アプリの既存のユーザーアクティビティを新規作成するか、置き換えます。</span><span class="sxs-lookup"><span data-stu-id="a27f2-105">Create a new or replace an existing user activity for your app.</span></span> <span data-ttu-id="a27f2-106">ユーザーアクティビティとそれに関連する**履歴項目**を1つの要求で作成する場合は、 [deep insert](#example-2-deep-insert)を使用できます。</span><span class="sxs-lookup"><span data-stu-id="a27f2-106">If you'd like to create a user activity and its related **historyItems** in one request, you can use [deep insert](#example-2-deep-insert).</span></span>
 
 ## <a name="permissions"></a><span data-ttu-id="a27f2-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="a27f2-107">Permissions</span></span>
@@ -62,7 +64,7 @@ PUT /me/activities/{appActivityId}
 } -->
 
 ```http
-PUT https://graph.microsoft.com/v1.0/me/activities/%2Farticle%3F12345
+PUT https://graph.microsoft.com/beta/me/activities/%2Farticle%3F12345
 Content-type: application/json
 
 {
@@ -83,7 +85,7 @@ Content-type: application/json
     "attribution": {
       "iconUrl": "https://www.contoso.com/icon",
       "alternateText": "Contoso, Ltd.",
-      "addImageQuery": false
+      "addImageQuery": "false"
     },
     "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
     "backgroundColor": "#ff0000",
@@ -111,7 +113,7 @@ Content-type: application/json
 <!-- {
     "blockType": "ignored",
     "truncated": true,
-    "@odata.type": "microsoft.graph.userActivity"
+    "@odata.type": "microsoft.graph.activity"
 } -->
 
 ```http
@@ -174,7 +176,7 @@ Content-Type: application/json
 } -->
 
 ```http
-PUT https://graph.microsoft.com/v1.0/me/activities/%2Farticle%3F12345
+PUT https://graph.microsoft.com/beta/me/activities/%2Farticle%3F12345
 Content-type: application/json
 
 {
@@ -228,7 +230,7 @@ Content-type: application/json
 <!-- {
     "blockType": "ignored",
     "truncated": true,
-    "@odata.type": "microsoft.graph.userActivity"
+    "@odata.type": "microsoft.graph.activity"
 } -->
 
 ```http
@@ -292,10 +294,13 @@ Content-Type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-07 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Upsert activity",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

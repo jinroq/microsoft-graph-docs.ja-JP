@@ -13,6 +13,8 @@ ms.locfileid: "32563144"
 ---
 # <a name="root-resource-type"></a><span data-ttu-id="88d88-102">Root リソースの種類</span><span class="sxs-lookup"><span data-stu-id="88d88-102">Root resource type</span></span>
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 <span data-ttu-id="88d88-103">**Root** ファセットは、オブジェクトが階層内の最上位であることを示します。</span><span class="sxs-lookup"><span data-stu-id="88d88-103">The **Root** facet indicates that an object is the top-most one in its hierarchy.</span></span>
 <span data-ttu-id="88d88-104">このファセットに値が存在する (null ではない) ことで、オブジェクトがルートであることを示します。</span><span class="sxs-lookup"><span data-stu-id="88d88-104">The presence (non-null) of the facet value indicates that the object is the root.</span></span>
 <span data-ttu-id="88d88-105">null (または存在しない) 値は、オブジェクトがルートでないことを示します。</span><span class="sxs-lookup"><span data-stu-id="88d88-105">A null (or missing) value indicates the object is not the root.</span></span>
@@ -33,8 +35,11 @@ ms.locfileid: "32563144"
 <span data-ttu-id="88d88-109">**ルート** リソースにはプロパティがありません。</span><span class="sxs-lookup"><span data-stu-id="88d88-109">The **Root** resource has no properties.</span></span>
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "section": "documentation",
-  "tocPath": "Facets/Root"
-} -->
+  "tocPath": "Facets/Root",
+  "suppressions": []
+}
+-->

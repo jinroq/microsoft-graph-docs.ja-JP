@@ -5,28 +5,28 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: a4d72f4f4de4dfc3096b78665f9bf5c9953b2527
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30989009"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561524"
 ---
-# <a name="update-onpremisesconditionalaccesssettings"></a><span data-ttu-id="cbf0e-103">onPremisesConditionalAccessSettings の更新</span><span class="sxs-lookup"><span data-stu-id="cbf0e-103">Update onPremisesConditionalAccessSettings</span></span>
+# <a name="update-onpremisesconditionalaccesssettings"></a><span data-ttu-id="8d7ed-103">onPremisesConditionalAccessSettings の更新</span><span class="sxs-lookup"><span data-stu-id="8d7ed-103">Update onPremisesConditionalAccessSettings</span></span>
 
-> <span data-ttu-id="cbf0e-104">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="cbf0e-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="8d7ed-104">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="8d7ed-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="cbf0e-105">[onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="cbf0e-105">Update the properties of a [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) object.</span></span>
+<span data-ttu-id="8d7ed-105">[onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="8d7ed-105">Update the properties of a [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="cbf0e-106">前提条件</span><span class="sxs-lookup"><span data-stu-id="cbf0e-106">Prerequisites</span></span>
-<span data-ttu-id="cbf0e-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="cbf0e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="8d7ed-106">前提条件</span><span class="sxs-lookup"><span data-stu-id="8d7ed-106">Prerequisites</span></span>
+<span data-ttu-id="8d7ed-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8d7ed-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="cbf0e-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="cbf0e-109">Permission type</span></span>|<span data-ttu-id="cbf0e-110">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="cbf0e-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="8d7ed-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="8d7ed-109">Permission type</span></span>|<span data-ttu-id="8d7ed-110">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="8d7ed-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="cbf0e-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="cbf0e-111">Delegated (work or school account)</span></span>|<span data-ttu-id="cbf0e-112">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cbf0e-112">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="cbf0e-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="cbf0e-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="cbf0e-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="cbf0e-114">Not supported.</span></span>|
-|<span data-ttu-id="cbf0e-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="cbf0e-115">Application</span></span>|<span data-ttu-id="cbf0e-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="cbf0e-116">Not supported.</span></span>|
+|<span data-ttu-id="8d7ed-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="8d7ed-111">Delegated (work or school account)</span></span>|<span data-ttu-id="8d7ed-112">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8d7ed-112">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="8d7ed-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="8d7ed-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="8d7ed-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="8d7ed-114">Not supported.</span></span>|
+|<span data-ttu-id="8d7ed-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="8d7ed-115">Application</span></span>|<span data-ttu-id="8d7ed-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="8d7ed-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="cbf0e-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="cbf0e-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8d7ed-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="8d7ed-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -35,34 +35,34 @@ ms.locfileid: "30989009"
 PATCH /deviceManagement/conditionalAccessSettings
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="cbf0e-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="cbf0e-118">Request headers</span></span>
-|<span data-ttu-id="cbf0e-119">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="cbf0e-119">Header</span></span>|<span data-ttu-id="cbf0e-120">値</span><span class="sxs-lookup"><span data-stu-id="cbf0e-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="8d7ed-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="8d7ed-118">Request headers</span></span>
+|<span data-ttu-id="8d7ed-119">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="8d7ed-119">Header</span></span>|<span data-ttu-id="8d7ed-120">値</span><span class="sxs-lookup"><span data-stu-id="8d7ed-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="cbf0e-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="cbf0e-121">Authorization</span></span>|<span data-ttu-id="cbf0e-122">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="cbf0e-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="cbf0e-123">承諾</span><span class="sxs-lookup"><span data-stu-id="cbf0e-123">Accept</span></span>|<span data-ttu-id="cbf0e-124">application/json</span><span class="sxs-lookup"><span data-stu-id="cbf0e-124">application/json</span></span>|
+|<span data-ttu-id="8d7ed-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="8d7ed-121">Authorization</span></span>|<span data-ttu-id="8d7ed-122">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="8d7ed-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="8d7ed-123">承諾</span><span class="sxs-lookup"><span data-stu-id="8d7ed-123">Accept</span></span>|<span data-ttu-id="8d7ed-124">application/json</span><span class="sxs-lookup"><span data-stu-id="8d7ed-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="cbf0e-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="cbf0e-125">Request body</span></span>
-<span data-ttu-id="cbf0e-126">要求本文で、[onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="cbf0e-126">In the request body, supply a JSON representation for the [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="8d7ed-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="8d7ed-125">Request body</span></span>
+<span data-ttu-id="8d7ed-126">要求本文で、[onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="8d7ed-126">In the request body, supply a JSON representation for the [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) object.</span></span>
 
-<span data-ttu-id="cbf0e-127">次の表に、[onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="cbf0e-127">The following table shows the properties that are required when you create the [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md).</span></span>
+<span data-ttu-id="8d7ed-127">次の表に、[onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="8d7ed-127">The following table shows the properties that are required when you create the [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md).</span></span>
 
-|<span data-ttu-id="cbf0e-128">プロパティ</span><span class="sxs-lookup"><span data-stu-id="cbf0e-128">Property</span></span>|<span data-ttu-id="cbf0e-129">型</span><span class="sxs-lookup"><span data-stu-id="cbf0e-129">Type</span></span>|<span data-ttu-id="cbf0e-130">説明</span><span class="sxs-lookup"><span data-stu-id="cbf0e-130">Description</span></span>|
+|<span data-ttu-id="8d7ed-128">プロパティ</span><span class="sxs-lookup"><span data-stu-id="8d7ed-128">Property</span></span>|<span data-ttu-id="8d7ed-129">型</span><span class="sxs-lookup"><span data-stu-id="8d7ed-129">Type</span></span>|<span data-ttu-id="8d7ed-130">説明</span><span class="sxs-lookup"><span data-stu-id="8d7ed-130">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="cbf0e-131">id</span><span class="sxs-lookup"><span data-stu-id="cbf0e-131">id</span></span>|<span data-ttu-id="cbf0e-132">String</span><span class="sxs-lookup"><span data-stu-id="cbf0e-132">String</span></span>|<span data-ttu-id="cbf0e-133">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="cbf0e-133">Not yet documented</span></span>|
-|<span data-ttu-id="cbf0e-134">enabled</span><span class="sxs-lookup"><span data-stu-id="cbf0e-134">enabled</span></span>|<span data-ttu-id="cbf0e-135">Boolean</span><span class="sxs-lookup"><span data-stu-id="cbf0e-135">Boolean</span></span>|<span data-ttu-id="cbf0e-136">対象組織で、オンプレミスの条件付きアクセスが有効かどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="cbf0e-136">Indicates if on premises conditional access is enabled for this organization</span></span>|
-|<span data-ttu-id="cbf0e-137">includedGroups</span><span class="sxs-lookup"><span data-stu-id="cbf0e-137">includedGroups</span></span>|<span data-ttu-id="cbf0e-138">Guid コレクション</span><span class="sxs-lookup"><span data-stu-id="cbf0e-138">Guid collection</span></span>|<span data-ttu-id="cbf0e-139">オンプレミスの条件付きアクセスで対象となるユーザー グループ。</span><span class="sxs-lookup"><span data-stu-id="cbf0e-139">User groups that will be targeted by on premises conditional access.</span></span> <span data-ttu-id="cbf0e-140">これらのグループ内のユーザーすべては、管理対象のモバイル デバイスを持っており、メール アクセスに準拠している必要があります。</span><span class="sxs-lookup"><span data-stu-id="cbf0e-140">All users in these groups will be required to have mobile device managed and compliant for mail access.</span></span>|
-|<span data-ttu-id="cbf0e-141">excludedGroups</span><span class="sxs-lookup"><span data-stu-id="cbf0e-141">excludedGroups</span></span>|<span data-ttu-id="cbf0e-142">Guid コレクション</span><span class="sxs-lookup"><span data-stu-id="cbf0e-142">Guid collection</span></span>|<span data-ttu-id="cbf0e-143">オンプレミスの条件付きアクセスで除外されるユーザー グループ。</span><span class="sxs-lookup"><span data-stu-id="cbf0e-143">User groups that will be exempt by on premises conditional access.</span></span> <span data-ttu-id="cbf0e-144">これらのグループ内のすべてのユーザーは、条件付きアクセス ポリシーから除外されます。</span><span class="sxs-lookup"><span data-stu-id="cbf0e-144">All users in these groups will be exempt from the conditional access policy.</span></span>|
-|<span data-ttu-id="cbf0e-145">overrideDefaultRule</span><span class="sxs-lookup"><span data-stu-id="cbf0e-145">overrideDefaultRule</span></span>|<span data-ttu-id="cbf0e-146">ブール型 (Boolean)</span><span class="sxs-lookup"><span data-stu-id="cbf0e-146">Boolean</span></span>|<span data-ttu-id="cbf0e-147">デバイスでアクセスが付与されていることを確認できるようにするとき、既定のアクセス ルールを上書きします。</span><span class="sxs-lookup"><span data-stu-id="cbf0e-147">Override the default access rule when allowing a device to ensure access is granted.</span></span>|
+|<span data-ttu-id="8d7ed-131">id</span><span class="sxs-lookup"><span data-stu-id="8d7ed-131">id</span></span>|<span data-ttu-id="8d7ed-132">String</span><span class="sxs-lookup"><span data-stu-id="8d7ed-132">String</span></span>|<span data-ttu-id="8d7ed-133">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="8d7ed-133">Not yet documented</span></span>|
+|<span data-ttu-id="8d7ed-134">enabled</span><span class="sxs-lookup"><span data-stu-id="8d7ed-134">enabled</span></span>|<span data-ttu-id="8d7ed-135">ブール値</span><span class="sxs-lookup"><span data-stu-id="8d7ed-135">Boolean</span></span>|<span data-ttu-id="8d7ed-136">対象組織で、オンプレミスの条件付きアクセスが有効かどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="8d7ed-136">Indicates if on premises conditional access is enabled for this organization</span></span>|
+|<span data-ttu-id="8d7ed-137">includedGroups</span><span class="sxs-lookup"><span data-stu-id="8d7ed-137">includedGroups</span></span>|<span data-ttu-id="8d7ed-138">Guid コレクション</span><span class="sxs-lookup"><span data-stu-id="8d7ed-138">Guid collection</span></span>|<span data-ttu-id="8d7ed-139">オンプレミスの条件付きアクセスで対象となるユーザー グループ。</span><span class="sxs-lookup"><span data-stu-id="8d7ed-139">User groups that will be targeted by on premises conditional access.</span></span> <span data-ttu-id="8d7ed-140">これらのグループ内のユーザーすべては、管理対象のモバイル デバイスを持っており、メール アクセスに準拠している必要があります。</span><span class="sxs-lookup"><span data-stu-id="8d7ed-140">All users in these groups will be required to have mobile device managed and compliant for mail access.</span></span>|
+|<span data-ttu-id="8d7ed-141">excludedGroups</span><span class="sxs-lookup"><span data-stu-id="8d7ed-141">excludedGroups</span></span>|<span data-ttu-id="8d7ed-142">Guid コレクション</span><span class="sxs-lookup"><span data-stu-id="8d7ed-142">Guid collection</span></span>|<span data-ttu-id="8d7ed-143">オンプレミスの条件付きアクセスで除外されるユーザー グループ。</span><span class="sxs-lookup"><span data-stu-id="8d7ed-143">User groups that will be exempt by on premises conditional access.</span></span> <span data-ttu-id="8d7ed-144">これらのグループ内のすべてのユーザーは、条件付きアクセス ポリシーから除外されます。</span><span class="sxs-lookup"><span data-stu-id="8d7ed-144">All users in these groups will be exempt from the conditional access policy.</span></span>|
+|<span data-ttu-id="8d7ed-145">overrideDefaultRule</span><span class="sxs-lookup"><span data-stu-id="8d7ed-145">overrideDefaultRule</span></span>|<span data-ttu-id="8d7ed-146">ブール型 (Boolean)</span><span class="sxs-lookup"><span data-stu-id="8d7ed-146">Boolean</span></span>|<span data-ttu-id="8d7ed-147">デバイスでアクセスが付与されていることを確認できるようにするとき、既定のアクセス ルールを上書きします。</span><span class="sxs-lookup"><span data-stu-id="8d7ed-147">Override the default access rule when allowing a device to ensure access is granted.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="cbf0e-148">応答</span><span class="sxs-lookup"><span data-stu-id="cbf0e-148">Response</span></span>
-<span data-ttu-id="cbf0e-149">成功した場合、このメソッドは `200 OK` 応答コードと、更新された [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) オブジェクトを応答本文で返します。</span><span class="sxs-lookup"><span data-stu-id="cbf0e-149">If successful, this method returns a `200 OK` response code and an updated [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="8d7ed-148">応答</span><span class="sxs-lookup"><span data-stu-id="8d7ed-148">Response</span></span>
+<span data-ttu-id="8d7ed-149">成功した場合、このメソッドは `200 OK` 応答コードと、更新された [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) オブジェクトを応答本文で返します。</span><span class="sxs-lookup"><span data-stu-id="8d7ed-149">If successful, this method returns a `200 OK` response code and an updated [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="cbf0e-150">例</span><span class="sxs-lookup"><span data-stu-id="cbf0e-150">Example</span></span>
+## <a name="example"></a><span data-ttu-id="8d7ed-150">例</span><span class="sxs-lookup"><span data-stu-id="8d7ed-150">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="cbf0e-151">要求</span><span class="sxs-lookup"><span data-stu-id="cbf0e-151">Request</span></span>
-<span data-ttu-id="cbf0e-152">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="cbf0e-152">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="8d7ed-151">要求</span><span class="sxs-lookup"><span data-stu-id="8d7ed-151">Request</span></span>
+<span data-ttu-id="8d7ed-152">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="8d7ed-152">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/conditionalAccessSettings
 Content-type: application/json
@@ -81,8 +81,8 @@ Content-length: 275
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="cbf0e-153">応答</span><span class="sxs-lookup"><span data-stu-id="cbf0e-153">Response</span></span>
-<span data-ttu-id="cbf0e-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="cbf0e-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="8d7ed-153">応答</span><span class="sxs-lookup"><span data-stu-id="8d7ed-153">Response</span></span>
+<span data-ttu-id="8d7ed-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="8d7ed-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
