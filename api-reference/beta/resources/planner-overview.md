@@ -1,42 +1,42 @@
 ---
-title: プランナーの REST API を使用します。
-description: Graph でプランナーの API を使用するにはタスクを作成し、Office 365 で、グループ内のユーザーに割り当てます。
+title: Planner REST APIを使用する
+description: Microsoft GraphのPlanner APIを使用してタスクを作成し、それらをOffice 365のグループ内のユーザーに割り当てることができます。
 author: TarkanSevilmis
 localization_priority: Priority
 ms.prod: planner
-ms.openlocfilehash: 2995cfe32e921889a55ec56c67989ecdfc9716ed
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 327701fde2679ab4c90061cf2ed98c4967a5cf58
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27942571"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573698"
 ---
-# <a name="use-the-planner-rest-api"></a>プランナーの REST API を使用します。
+# <a name="use-the-planner-rest-api"></a>Planner REST APIを使用する
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Graph でプランナーの API を使用するにはタスクを作成し、Office 365 で、グループ内のユーザーに割り当てます。
+Microsoft GraphのPlanner APIを使用してタスクを作成し、それらをOffice 365のグループ内のユーザーに割り当てることができます。
 
-プランナーの API を使用して開始する前に互いにも Office 365 のグループを主なオブジェクトの関係を理解するおくと便利になります。
+Planner APIを使い始める前に、メインオブジェクト同士や、Office 365グループとの関係について理解しておく必要があります。
 
 ## <a name="office-365-groups"></a>Office 365 グループ
 
-Office 365 のグループは、プランナーの API で、計画の所有者です。
-[グループによって所有されているプランを取得する](../api/plannergroup-list-plans.md)には、次の HTTP 要求を確認します。
+Office 365 のグループは、Planner API のプランの所有者です。
+[グループが所有するプランを取得する](../api/plannergroup-list-plans.md)には、次に示す HTTP 要求を行います。
 
 ``` http
 GET /groups/{id}/planner/plans
 ```
 
-[新しい計画を作成する](../api/planner-post-plans.md)をグループにする、その所有者を設定することにより、 `owner` 、プラン オブジェクトのプロパティです。 プランは、グループが所有する必要があります。
+[新しいプランを作成する](../api/planner-post-plans.md)場合は、プラン オブジェクトに `owner` プロパティを設定することで、グループを所有者にできます。 プランはグループによって所有される必要があります。
 
->**注:** 計画を作成しているユーザーは、計画を所有するグループのメンバーである必要があります。 [グループの作成](../api/group-post-groups.md)を使用して新しいグループを作成するときにいない追加されますグループにメンバーとして。 グループが作成されると、自分自身を追加メンバーとして[グループのメンバーの投稿](../api/group-post-members.md)を使用しています。
+>**注意:** プランを作成するユーザーは、プランを所有するグループのメンバーである必要があります。 あなたが新しいグループを[グループの作成](../api/group-post-groups.md)を使用して作成しても、メンバーとしてそのグループに追加されることはありません。 グループを作成したら、[グループ投稿メンバー](../api/group-post-members.md)を使用して自分自身をメンバーとして追加します。
 
 ## <a name="plans"></a>プラン
 
-[計画](plannerplan.md)は、[タスク](plannertask.md)のコンテナーです。 [計画にタスクを作成](../api/planner-post-tasks.md)するには、設定、 `planId` 、タスクの作成中に計画の ID をタスク オブジェクトのプロパティです。
-現在のタスクを計画しなくても作成できません。
-[計画内のタスクを取得](../api/plannerplan-list-tasks.md)するには、次の HTTP 要求を確認します。
+[プラン](plannerplan.md)は[タスク](plannertask.md)のコンテナーです。 [プランのタスクを作成する](../api/planner-post-tasks.md)には、タスクの作成時にタスク オブジェクトの `planId` プロパティをプランの ID に設定します。
+現在、プランなしでタスクを作成することはできません。
+[プラン内のタスクを取得する](../api/plannerplan-list-tasks.md)には、次のHTTPリクエストを行います。
 
 ``` http
 GET /planner/plans/{id}/tasks
@@ -44,15 +44,16 @@ GET /planner/plans/{id}/tasks
 
 ## <a name="tasks"></a>タスク
 
-各タスクは、タスク オブジェクトの [assignments](plannerassignments.md) プロパティに [assignment](plannerassignment.md) を追加することにより、ユーザーに割り当てることができます。タスクを割り当てるユーザーの ID は `assignments` の open プロパティの名前であり、assignment の `orderHint` プロパティを指定する必要があります。
+各タスクは、タスク オブジェクトの [assignments](plannerassignments.md) プロパティに [assignment](plannerassignment.md) を追加することにより、ユーザーに割り当てることができます。
+タスクを割り当てるユーザーの ID は `assignments` の open プロパティの名前であり、assignment の `orderHint` プロパティを指定する必要があります。
 
 ## <a name="task-and-plan-details"></a>タスクとプランの詳細 
 
-Planner のリソースは、基本オブジェクトと詳細オブジェクトに配置されます。基本オブジェクトは、リスト ビューに適したリソースの共通プロパティへのアクセスを提供し、詳細オブジェクトは、ドリル ダウン ビューに適したリソースの大規模なプロパティへのアクセスを提供します。
+Planner のリソースは、基本オブジェクトと詳細オブジェクトに配置されます。 基本オブジェクトは、リスト ビューに適したリソースの共通プロパティへのアクセスを提供し、詳細オブジェクトは、ドリル ダウン ビューに適したリソースの大規模なプロパティへのアクセスを提供します。
 
 ## <a name="visualization"></a>視覚化
 
-作業および計画のデータは別にプランナー API はクライアント間でデータの一般的な視覚エフェクトを作成するためのリソースも備えています。 ビジュアル化データのいくつかの種類があるタスクについては、次の表に記載されています。
+Planner API は、タスクとプランのデータのほかに、データの共通した視覚化をクライアント全体に提供するためのリソースも提供します。 次の表にリストされているように、タスクにはいくつかの種類の視覚化データがあります。
 
 | タスクの表示                                                                        | タスクを順序付ける情報の情報源                                         |
 | :---------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------ |
@@ -64,25 +65,25 @@ Planner のリソースは、基本オブジェクトと詳細オブジェクト
 
 バケット タスク ボードのカスタム列は [bucket](plannerbucket.md) オブジェクトで表され、その順序はオブジェクトの `orderHint` プロパティによって表されます。
 
-[プランナーの順序のヒント](planner-order-hint-format.md)で説明した原則には、すべての順序が制御されます。
+すべての順序は、[Planner の順序のヒント](planner-order-hint-format.md)に書かれた原則によって制御されます。
 
-## <a name="delta">デルタのクエリを使用して変更履歴の記録します。</a>
+## <a name="delta">デルタクエリを使用して変更を追跡する</a>
 
-プランナーのデルタのクエリは、ユーザーが購読しているオブジェクトのクエリをサポートしています。
+Plannerのデルタクエリは、ユーザがサブスクライブしているオブジェクトのクエリをサポートします。
 
-ユーザーは、次のオブジェクトを購読します。
+ユーザーは以下のオブジェクトをサブスクライブしています。
 
-| プランナーのリソースの種類 | 購読済みのインスタンス                                                                                                                                                                                    |
+| Planner リソースの種類 | サブスクライブしているインスタンス                                                                                                                                                                                    |
 | :-------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| タスク                 | <ul><li>ユーザーによって作成されました。</li><li>ユーザーに割り当てられています。</li><li>ユーザーが所有する計画に属しています。</li><li>計画の**SharedWith**コレクションをユーザーと共有の計画に含まれています。</li> |
-| プラン                 | <ul><li>計画の**SharedWith**コレクションをユーザーと共有</li></ul>                                                                                                                     |
-| バケット               | <ul><li>計画の**SharedWith**コレクションをユーザーと共有の計画に含まれています。</li></ul>                                                                                                 |  |
+| タスク                 | <ul><li>ユーザーによって作成</li><li>ユーザーに割り当て済</li><li>ユーザーが所有しているプランに属しています。</li><li>planの**SharedWith**コレクションを通じてユーザーと共有されているplanに含まれています</li> |
+| プラン                 | <ul><li>planの**SharedWith**コレクションを通じてユーザーと共有されています</li></ul>                                                                                                                     |
+| バケット               | <ul><li>planの**SharedWith**コレクションを通じてユーザーと共有されているplanに含まれています</li></ul>                                                                                                 |  |
 
-### <a name="objectcache">デルタ ・ クエリのオブジェクト キャッシュを設定します。</a>
+### <a name="objectcache">デルタクエリ用にオブジェクトキャッシュを生成する</a>
 
-プランナーのデルタ ・ クエリ API を使用する場合は、デルタの応答フィードから変更を適用するために観察することで、ユーザーが興味を示しているオブジェクトのローカル キャッシュを保持します。
+PlannerデルタクエリAPIを使用したい場合は、デルタ応答フィードからの変更を適用するために、ユーザーが観察したいオブジェクトのローカル・キャッシュを維持してください。
 
-次の種類のプランナーのデルタ ・ クエリが返すことができる現在のデルタ ・ ペイロード オブジェクトになります。
+Plannerデルタクエリが現在返すことができるデルタペイロードオブジェクトは、次のタイプになります。
 
 * [plannerTask](plannertask.md)
 * [plannerTaskDetails](plannertaskdetails.md)
@@ -93,36 +94,36 @@ Planner のリソースは、基本オブジェクトと詳細オブジェクト
 * [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md)
 * [plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md)
 
-使用して、対応する`GET`のリソースをローカルのキャッシュを格納するオブジェクトの初期状態を取得するメソッドです。
+リソース上の対応する`GET`メソッドを使用して、ローカルキャッシュに移入するオブジェクトの初期状態を取得します。
 
-### <a name="differentiating-between-object-creation-and-object-modification"></a>オブジェクトの作成とオブジェクトの変更の違いを知る
+### <a name="differentiating-between-object-creation-and-object-modification"></a>オブジェクトの作成とオブジェクトの変更の違い
 
-特定のシナリオでは、呼び出し元がオブジェクトを作成し、フィードのプランナーのデルタのクエリ内のオブジェクトの変更を区別する必要があります。
+特定のシナリオでは、呼び出し側は、Plannerのデルタクエリフィード内でオブジェクトの作成とオブジェクトの変更を区別したい場合があります。
 
-これらのガイドラインを使用して、オブジェクトの作成を推論することができます。
+これらのガイドラインは、オブジェクト作成を推測するために使用できます。
 
 * `createdBy`プロパティは、新しく作成されたオブジェクトにのみ表示されます。
-* 新しく作成された A`plannerTask`オブジェクトに対応する、続いて`plannerTaskDetails`オブジェクトです。
-* 新しく作成された A`plannerPlan`オブジェクトに対応する、続いて`plannerPlanDetails`オブジェクトです。
+* 新しく作成された `plannerTask`オブジェクトには、それに対応する `plannerTaskDetails`オブジェクトが続きます。
+* 新しく作成された `plannerPlan`オブジェクトには、それに対応する `plannerPlanDetails`オブジェクトが続きます。
 
-### <a name="usage"></a>使用例
+### <a name="usage"></a>使用方法
 
-呼び出し元は、購読しているオブジェクトが含まれているキャッシュを持つと思われます。 購読しているオブジェクトのローカル キャッシュを設定する方法についての詳細は、[デルタのクエリでオブジェクト キャッシュの作成](#populate-the-object-cache-for-delta-queries)を参照してください。
+呼び出し元は、サブスクライブしているオブジェクトが含まれるキャッシュを持っている必要があります。 サブスクライブされたオブジェクトのローカルキャッシュを埋める方法の詳細については、[デルタクエリ用にオブジェクトキャッシュを生成する](#populate-the-object-cache-for-delta-queries)を参照してください。
 
-プランナーのデルタのクエリの呼び出しのフローは次のとおりです。
+Plannerのデルタクエリコールフローは次のとおりです。
 
-1. デルタ同期クエリを開始する呼び出し元を取得する、`nextLink`と変更の空のコレクションです。
-2. 呼び出し元する必要があります[デルタ クエリでオブジェクト キャッシュの設定](#populate-the-object-cache-for-delta-queries)とオブジェクトをユーザーが購読して、そのキャッシュを更新します。
-3. 呼び出し元に依存して、 `nextLink` 、新しいを取得する最初のデルタ ・同期クエリで提供されている`deltaLink`前の手順の変更を反映します。
-4. 呼び出し元に返されたデルタのキャッシュ内のオブジェクトに対して変更が適用されます。
-5. 呼び出し元は、次の deltaLink を取得する新しい deltaLink に依存して、現在以降の変更`deltaLink`が生成されました。
-6. 呼び出し元が (もしあれば) 変更が適用され、短時間を待機する前に実行する前にステップし、この手順です。
+1. 呼び出し側がデルタ同期照会を開始し、`nextLink`と空の変更コレクションを取得します。
+2. 呼び出し側はユーザーがサブスクライブしているオブジェクトを使用して、[差分キャッシュのオブジェクトキャッシュにデータを入力し](#populate-the-object-cache-for-delta-queries) そのキャッシュを更新する必要があります。
+3. 呼び出し側は、最初のデルタ同期照会で提供された`nextLink`の内容に従って前のステップ以降に行われた`deltaLink`新しい変更を取得します 。
+4. 呼び出し側は、返されたデルタレスポンスの変更をキャッシュ内のオブジェクトに適用します。
+5. 呼び出し側は新しいdeltaLinkをたどって現在の `deltaLink`生成後の次のdeltaLinkと変更を取得します。
+6. 呼び出し側は変更があればそれを適用して、前のステップとこのステップを再実行する前に少し待ちます。
 
 ## <a name="planner-resource-versioning"></a>Planner のリソースのバージョン管理
 
-プランナーのバージョンすべてのリソースの**etag**を使用します。 返されるこれらの**etag**が`@odata.etag`の各リソースのプロパティです。 `PATCH``DELETE`を使用して指定するのには既知のクライアントによって最後の**etag**を要求、`If-Match`ヘッダー。
-プランナーは、目的の変更が新しい変更を受け入れ、プランナーのサービスで同じリソースと競合していない場合、古いバージョンのリソースへの変更を使用できます。 **Etag**値が大きい序数の文字列比較で計算することで同じリソースの**etag**のどちらの方が新しいクライアントを識別できます。 各リソースには、独自の**etag**があります。 包含関係では、ある方を含め、さまざまなリソースの Etag 値を比較することはできません。
-クライアント アプリケーションは、バージョン管理を処理するために期待される関連[のエラー コード](/graph/errors) **409** 、 **412**項目の最新バージョンの読み取りと変更の競合を解決します。
+Plannerはすべてのリソースを **etags**を使ってバージョン管理します。 これらの**etags**は各リソースの`@odata.etag`プロパティとともに返されます 。 `PATCH`と`DELETE` リクエストは、クライアントが知っている最後の**etag**を`If-Match`ヘッダで指定することを要求します。
+目的の変更が同じリソース上の Planner サービスによって受け入れられた新しい変更と競合しない場合、Planner は古いバージョンのリソースに変更を加えることができます。 クライアントは、**etag**順序文字列の比較でどの値が大きいかを計算することによって、同じリソースのどの**etag**がより新しいかを識別できます 。 各リソースには固有の **etag**があります。 異なるリソースの Etag 値は比較できません (包含関係のあるものを含む)。
+クライアントアプリは、アイテムの最新バージョンを読み取り、競合する変更を解決することで、バージョニング関連の[エラーコード](/graph/errors) **409** および**412**を処理することが期待されています。
 
 ## <a name="common-planner-error-conditions"></a>一般的な Planner のエラー条件
 
@@ -130,37 +131,37 @@ Microsoft Graph に適用される[一般的なエラー](/graph/errors)のほ�
 
 ### <a name="400-bad-request"></a>400 要求が正しくありません
 
-いくつかの一般的なシナリオでは、`POST`と`PATCH`の要求は、400 のステータス コードを返すことができます。 以下は、いくつかの一般的な原因です。
+いくつかの一般的なシナリオでは、`POST` and `PATCH` リクエストは400ステータスコードを返す可能性があります。 以下は、よくある原因の一部です。
 
-* Open Type プロパティが正しい型でないか、型が指定されていないか、またはプロパティが含まれていません。たとえば、複雑な値が指定された [plannerAssignments](plannerassignments.md) プロパティは、値 `microsoft.graph.plannerAssignment` を指定した `@odata.type` プロパティで宣言する必要があります。
-* ORDER ヒントの値が[正しい書式](planner-order-hint-format.md)になっていません。たとえば、ORDER ヒントの値は、クライアントに返される値に直接設定されています。
-* データが論理的に矛盾しています。たとえば、タスクの開始日がタスクの期日よりも後になる場合などです。
+* Open Type プロパティが正しい型でないか、型が指定されていないか、またはプロパティが含まれていません。 たとえば、複雑な値が指定された [plannerAssignments](plannerassignments.md) プロパティは、値 `microsoft.graph.plannerAssignment` を指定した `@odata.type` プロパティで宣言する必要があります。
+* ORDER ヒントの値が[正しい書式](planner-order-hint-format.md)になっていません。 たとえば、ORDER ヒントの値は、クライアントに返される値に直接設定されています。
+* データが論理的に矛盾しています。 たとえば、タスクの開始日がタスクの期日よりも後になる場合などです。
 
-### <a name="403-forbidden"></a>403 アクセスは許可されていません
+### <a name="403-forbidden"></a>403 Forbidden
 
-一般的なエラーだけでなくプランナー API も 403 ステータス コードを返しますサービスで定義された制限を超えているとき。 この場合は、`code`エラーのリソースの種類のプロパティには、要求によって制限の種類が表示されます。
-制限の種類の有効な値を次に示します。
+Planner API では、一般的なエラーのほかに、サービスで定義された制限を超えた場合にも403 ステータスコードを返します。 この場合、エラー リソースの種類の `code` プロパティは、要求が超過した制限の種類を示します。
+以下は、制限タイプに有効な値です。
 
 | 値                         | 説明                                                                                                                                                                                              |
 | :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| MaximumProjectsOwnedByUser    | グループが所有するプランの最大数の制限を超過しています。この制限は、[plannerPlan](plannerplan.md) リソースの `owner` プロパティに基づいています。                                         |
-| MaximumProjectsSharedWithUser | ユーザーが共有するプランの最大数の制限を超過しています。この制限は、[plannerPlanDetails](plannerplandetails.md) リソースの `sharedWith` プロパティに基づいています。                   |
-| MaximumTasksCreatedByUser     | ユーザーが作成するタスクの最大数の制限を超過しています。この制限は、[plannerTask](plannertask.md) リソースの `createdBy` プロパティに基づいています。                                    |
-| MaximumTasksAssignedToUser    | ユーザーに割り当てられるタスクの最大数の制限を超過しています。この制限は、[plannerTask](plannertask.md) リソースの `assignments` プロパティに基づいています。                                 |
-| MaximumTasksInProject         | プランにおけるタスクの最大数の制限を超過しています。この制限は、[plannerTask](plannertask.md) リソースの `planId` プロパティに基づいています。                                               |
-| MaximumActiveTasksInProject   | プランで完了されないタスクの最大数の制限を超過しています。この制限は、[plannerTask](plannertask.md) リソースの `planId` および `percentComplete` プロパティに基づいています。 |
-| MaximumBucketsInProject       | プランにおけるバケットの最大数の制限を超過しています。この制限は、[plannerBucket](plannerbucket.md) リソースの `planId` プロパティに基づいています。                                         |
+| MaximumProjectsOwnedByUser    | グループが所有するプランの最大数の制限を超過しています。 この制限は、[plannerPlan](plannerplan.md) リソースの `owner` プロパティに基づいています。                                         |
+| MaximumProjectsSharedWithUser | ユーザーが共有するプランの最大数の制限を超過しています。  この制限は、[plannerPlanDetails](plannerplandetails.md) リソースの `sharedWith` プロパティに基づいています。                   |
+| MaximumTasksCreatedByUser     | ユーザーが作成するタスクの最大数の制限を超過しています。 この制限は、[plannerTask](plannertask.md) リソースの `createdBy` プロパティに基づいています。                                    |
+| MaximumTasksAssignedToUser    | ユーザーに割り当てられるタスクの最大数の制限を超過しています。 この制限は、[plannerTask](plannertask.md) リソースの `assignments` プロパティに基づいています。                                 |
+| MaximumTasksInProject         | プランにおけるタスクの最大数の制限を超過しています。 この制限は、[plannerTask](plannertask.md) リソースの `planId` プロパティに基づいています。                                               |
+| MaximumActiveTasksInProject   | プランで完了されないタスクの最大数の制限を超過しています。 この制限は、[plannerTask](plannertask.md) リソースの `planId` および `percentComplete` プロパティに基づいています。 |
+| MaximumBucketsInProject       | プランにおけるバケットの最大数の制限を超過しています。 この制限は、[plannerBucket](plannerbucket.md) リソースの `planId` プロパティに基づいています。                                         |
 | MaximumUsersSharedWithProject | [plannerPlanDetails](plannerplandetails.md) リソースの `sharedWith` プロパティに含まれる値が多すぎます。                                                                                          |
 | MaximumReferencesOnTask       | [plannerTaskDetails](plannertaskdetails.md) リソースの `references` プロパティに含まれる値が多すぎます。                                                                                          |
 | MaximumChecklistItemsOnTask   | [plannerTaskDetails](plannertaskdetails.md) リソースの `checklist` プロパティに含まれる値が多すぎます。                                                                                           |
 | MaximumAssigneesInTasks       | [plannerTask](plannertask.md) リソースの `assignments` プロパティに含まれる値が多すぎます。                                                                                                       |
-| MaximumFavoritePlansForUser   | `favoritePlanReferences` [PlannerUser](planneruser.md)リソースのプロパティに値が多すぎますが含まれています。                                                                                            |
-| MaximumRecentPlansForUser     | `recentPlanReferences` [PlannerUser](planneruser.md)リソースのプロパティに値が多すぎますが含まれています。                                                                                              |
-| MaximumContextsOnPlan         | `contexts` [PlannerPlan](plannerplan.md)リソースのプロパティに値が多すぎますが含まれています。                                                                                                          |
-| MaximumPlannerPlans       | グループには、計画が既に含まれています。 現在、グループは 1 つの計画のみ含めることができます。 **注:** いくつかの Microsoft アプリケーションでは、この制限を超えることができます。 今後、すべてのアプリケーションにこの機能は拡張します。                                                                                                      |
+| MaximumFavoritePlansForUser   | [plannerUser](planneruser.md)リソースの`favoritePlanReferences` プロパティに含まれる値が多すぎます。                                                                                            |
+| MaximumRecentPlansForUser     | [plannerUser](planneruser.md)リソースの`recentPlanReferences` プロパティに含まれる値が多すぎます。                                                                                              |
+| MaximumContextsOnPlan         | [plannerPlan](plannerplan.md)リソースの`contexts` プロパティに含まれる値が多すぎます。                                                                                                          |
+| MaximumPlannerPlans       | このグループには、プランが既に含まれています。 現時点では、グループは 1 つのプランのみ含めることができます。 **注意:** いくつかの Microsoft アプリは、この制限を超えることができます。 将来、すべてのアプリケーションにこの機能を拡張します。                                                                                                      |
 
-### <a name="412-precondition-failed"></a>412 必須条件に失敗しました 
+### <a name="412-precondition-failed"></a>412 前提条件が失敗しました 
 
-平面のすべての API `POST`、 `PATCH`、および`DELETE`要求を`If-Match`ヘッダーは、要求の対象となるリソースの最後の既知の etag 値を指定します。
-412 のステータス コードは、要求で指定された etag 値には不要になったサービス内のリソースのバージョンが一致する場合にも返されます。 この例では、クライアントは、リソースの読み取りを再試行する必要があり、新しい etag を取得します。
+Planner API のすべての `POST`、`PATCH` および `DELETE` 要求には、要求の対象となるリソースと思われる最新の etag 値で `If-Match` ヘッダーを指定する必要があります。
+さらに、要求に指定された etag 値がサービス内のリソースのバージョンと一致しなくなった場合は、412 ステータス コードが返されます。 この場合、クライアントはリソースを再度読み込んで、新しい etag を取得する必要があります。
 
