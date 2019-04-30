@@ -1,19 +1,21 @@
 ---
-title: 警告の一覧表示
-description: オブジェクトのアラートの一覧を取得します。
+title: アラートを一覧表示する
+description: アラート オブジェクトのリストを取得します。
+localization_priority: Normal
 author: preetikr
-localization_priority: Priority
 ms.prod: security
 ms.openlocfilehash: d18f49c5e1a0dcc8d079816ff7ad17c6e21df2ee
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27955031"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551380"
 ---
-# <a name="list-alerts"></a>警告の一覧表示
+# <a name="list-alerts"></a>アラートを一覧表示する
 
-オブジェクトの[アラート](../resources/alert.md)の一覧を取得します。
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[アラート](../resources/alert.md) オブジェクトのリストを取得します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -39,32 +41,32 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 
-このメソッドは、応答をカスタマイズするために次の[OData クエリ パラメーター](/graph/query-parameters)をサポートします。
+このメソッドは、応答をカスタマイズするために次の[OData クエリ パラメーター](/graph/query-parameters)をサポートします:
 
 - `$count`
 - `$filter`
 - `$orderby`
 - `$select`
 - `$skip`
-- `$top`セキュリティ API の各プロバイダーから集計の上位の結果を返します。  
+- `$top` は、各セキュリティ API プロバイダーから集計された上位の結果を返します。
 
-OData を使用する別のプロパティ セットを返すには、`$select`する**警告**のプロパティのセットを指定するパラメーター クエリを実行します。  たとえば、**担当者**、**カテゴリ**、および**重要度**のプロパティを返す、クエリに次を追加: `$select=assignedTo,category,severity`。
+別のプロパティ セットを返すには、OData `$select` クエリ パラメーターを使用し、目的の**アラート**のプロパティのセットを指定します。  例えば、**assignedTo**、**カテゴリ**、**重要度** プロパティを返すには、次をクエリに追加します: `$select=assignedTo,category,severity`。
 
-> **注:**`$top` 1000 の警告との組み合わせの制限が`$top`  +  `$skip` 6000 のアラートを超えることはできません。 などの`/security/alerts?$top=10&$skip=5990`を返します、`200 OK`応答コードの場合が、`/security/alerts?$top=10&$skip=5991`を返します、`400 Bad Request`応答コード。  詳細については、 [Microsoft グラフ セキュリティ API のエラー応答](../resources/security-error-codes.md)を参照してください。
+> **注:** `$top` には1000件のアラートという上限があり、`$top`  +  `$skip` の組み合わせは6000件のアラートを超えることはできません。 例えば、`/security/alerts?$top=10&$skip=5990` では `200 OK` 応答コードを返しますが、`/security/alerts?$top=10&$skip=5991` では `400 Bad Request` 応答コードを返します。  詳細については、[Microsoft グラフ セキュリティ API のエラー応答](../resources/security-error-codes.md)を参照してください。
 
 ## <a name="request-headers"></a>要求ヘッダー
 
 | 名前      |説明|
 |:----------|:----------|
-| Authorization  | Bearer {code}。必須。|
+| Authorization  | ベアラー {code}。 必須です。|
 
 ## <a name="request-body"></a>要求本文
 
-このメソッドには、要求本文を指定しません。 要求の本体は無視されます。
+このメソッドには、要求本文を指定しません。 要求本文は無視されます。
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文の**通知**オブジェクトのコレクションです。 2 xx または 404 以外のステータス コードは、プロバイダーから返された場合、またはプロバイダーがタイムアウトすると、応答がある場合、`206 Partial Content`警告ヘッダー内のプロバイダーの応答のステータス コード。 詳細については、 [Microsoft グラフ セキュリティ API のエラー応答](../resources/security-error-codes.md)を参照してください。
+成功した場合、このメソッドは `200 OK` 応答コードと、**アラート** オブジェクトのコレクションを応答本文で返します。 プロバイダーから 2xx または 404 以外の状態コードが返されるか、プロバイダーがタイムアウトした場合、応答は、警告ヘッダー内のプロバイダーの応答と共に`206 Partial Content` 状態コードになります。 詳細については、[Microsoft グラフ セキュリティ API のエラー応答](../resources/security-error-codes.md)を参照してください。
 
 ## <a name="example"></a>例
 
@@ -77,7 +79,7 @@ OData を使用する別のプロパティ セットを返すには、`$select`�
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/security/alerts
+GET https://graph.microsoft.com/beta/security/alerts
 ```
 
 ### <a name="response"></a>応答
@@ -112,10 +114,13 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List alerts",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->
