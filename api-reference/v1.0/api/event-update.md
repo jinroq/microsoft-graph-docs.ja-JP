@@ -1,19 +1,19 @@
 ---
-title: イベントの更新
-description: イベント オブジェクトのプロパティを更新します。
+title: イベントを更新する
+description: イベント オブジェクトのプロパティを更新する。
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.openlocfilehash: 441a135cf43226927e9a8aee074c2547b9beb23e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27972370"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584321"
 ---
-# <a name="update-event"></a>イベントの更新
+# <a name="update-event"></a>イベントを更新する
 
-[イベント](../resources/event.md)オブジェクトのプロパティを更新します。
+[イベント](../resources/event.md) オブジェクトのプロパティを更新する。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -44,41 +44,41 @@ PATCH /me/calendargroups/{id}/calendars/{id}/events/{id}
 PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |attendees|[Attendee](../resources/attendee.md)|イベントの参加者のコレクションです。|
 |body|[ItemBody](../resources/itembody.md)|イベントに関連付けられたメッセージの本文。|
 |categories|String|イベントに関連付けられたカテゴリ。|
 |end|[DateTimeTimeZone](../resources/datetimetimezone.md)|イベントが終了する日時。<br/><br/>既定で、終了時刻は UTC 単位です。EndTimeZone でオプションのタイム ゾーンを指定して、そのタイム ゾーンで終了時刻を表現し、UTC からの時間オフセットを含めることができます。EndTimeZone を使用する場合、StartTimeZone の値も指定する必要があります。<br/><br/>この例では、太平洋標準時で 2015 年 2 月 25 日午後 9:34 を指定します ("2015-02-25T21:34:00-08:00")。 |
-|importance|String|イベントの重要度。 可能な値: `low`、 `normal`、 `high`。|
-|isAllDay|ブール値|イベントが一日中続く場合に、true に設定します。|
-|isReminderOn|ブール値|ユーザーにイベントを通知するアラートを設定する場合は、true に設定します。|
+|importance|String|イベントの重要度。 使用可能な値: `low`、`normal`、`high`。|
+|isAllDay|Boolean|イベントが一日中続く場合に、true に設定します。|
+|isReminderOn|Boolean|ユーザーにイベントを通知するアラートを設定する場合は、true に設定します。|
 |location|[Location](../resources/location.md)|イベントの場所。|
 |locations|[location](../resources/location.md) コレクション|イベントを開催する場所、または参加者がいる場所。 **location** プロパティと **locations** プロパティは常に互いに一致します。 **location** プロパティを更新すると、**locations** コレクションに含まれる既存のすべての場所が削除されて、**location** の新しい値に置き換えられます。 |
 |recurrence|[PatternedRecurrence](../resources/patternedrecurrence.md)|イベントの繰り返しパターン。|
 |reminderMinutesBeforeStart|Int32|アラーム通知を行う、イベント開始時間前の分数。|
-|responseRequested|ブール値|イベントが承諾または辞退されたときに、送信者が応答を要求する場合に、true に設定します。|
-|sensitivity|String| 可能な値: `normal`、 `personal`、 `private`、 `confidential`。|
-|showAs|String|表示するステータス。 可能な値: `free`、 `tentative`、 `busy`、 `oof`、 `workingElsewhere`、 `unknown`。|
+|responseRequested|Boolean|イベントが承諾または辞退されたときに、送信者が応答を要求する場合に、true に設定します。|
+|sensitivity|String| 使用可能な値: `normal`、`personal`、`private`、`confidential`。|
+|showAs|String|表示するステータス。 使用可能な値: `free`、`tentative`、`busy`、`oof`、`workingElsewhere`、`unknown`。|
 |開始|[DateTimeTimeZone](../resources/datetimetimezone.md)|イベントの開始時刻です。 <br/><br/>既定で、開始時刻は UTC 単位です。EndTimeZone でオプションのタイム ゾーンを指定して、そのタイム ゾーンで開始時刻を表現し、UTC からの時間オフセットを含めることができます。StartTimeZone を使用する場合、EndTimeZone の値も指定する必要があります。<br/><br/>この例では、太平洋標準時で 2015 年 2 月 25 日午後 7:34 を指定します "2015-02-25T19:34:00-08:00".  |
 |subject|String|イベントの件名行のテキスト。|
 
-**イベント**のリソースは、[拡張機能](/graph/extensibility-overview)をサポートするため、使用して、`PATCH`を追加、更新、または既存の**イベント**インスタンスで拡張機能のカスタム プロパティに独自のアプリケーション固有データを削除する操作です。  
+**イベント** リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため、`PATCH` 操作を使用して、既存の**イベント** インスタンスで拡張機能のカスタム プロパティにあるアプリ固有のデータを追加、更新、または削除することができます。  
   
-更新する**イベント**がマスターし、定期的な一連のイベントの場合は、複数の出席者が含まれていて、個別に更新されたインスタンス、複数の通知の電子メールが送信されます: マスターのシリーズとは、インスタンスごとに 1 つのいずれか更新されました。  
+アップデートする**イベント**が複数の出席者が含まれる定期的で主要なイベントである場合、インスタンス別にそれぞれに更新され、主要な系列と更新された各インスタンスごとに複数の通知メールが送信されます。  
 
 ## <a name="response"></a>応答
 
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された [event](../resources/event.md) オブジェクトを返します。  
 
->**注:** このメソッドは、HTTP 400 正しくない要求を含む応答のエラー コードを返すことができます`ErrorOccurrenceCrossingBoundary`し、次のエラー メッセージ: 変更されたアイテムを越えるまたは隣接するアイテムが重複しています。 更新プログラムには、定期的なアイテムの例外では、以下の Outlook 制限が違反していることを示します: 発生または日の前の出現箇所では、前日に移動することはできませんし、出現する位置は、次の日の前後に移動することはできません。
+>**注:** この方法は、エラー コード`ErrorOccurrenceCrossingBoundary` で HTTP 400 無効な要求の応答を返すことができます。そして、次のエラー メッセージが表示されます: 変更したアイテムが、隣接するアイテムと交差または重複しています。 定期的な予定の例外にある Outlook の制限に更新プログラムが違反していることを次のように示します: 定期的な予定を移動させる、または前回の定期的な予定をその日付より前日または後日に移動することはできません。
 
 ## <a name="example"></a>例
 
