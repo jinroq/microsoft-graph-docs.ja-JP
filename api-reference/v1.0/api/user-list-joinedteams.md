@@ -1,21 +1,21 @@
 ---
-title: 参加チームのリストを作成する
-description: ユーザーの直接のメンバーでは、マイクロソフトのチームで、チームを取得します。
+title: joinedTeams を一覧表示する
+description: ユーザーがダイレクト メンバーになっている Microsoft Teams のチームを取得します。
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 95dfa387a55dd5270035816d144ac3a6ac2b6703
-ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28016703"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571381"
 ---
-# <a name="list-joinedteams"></a>参加チームのリストを作成する
+# <a name="list-joinedteams"></a>joinedTeams を一覧表示する
 
 
 
-ユーザーの直接のメンバーでは、マイクロソフトのチームで[チーム](../resources/team.md)を取得します。
+ユーザーがダイレクト メンバーになっている Microsoft Teams の[チーム](../resources/team.md)を取得します。
  
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -26,8 +26,8 @@ ms.locfileid: "28016703"
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
 |アプリケーション | User.Read.All、User.ReadWrite.All |
 
-> 委任されたユーザーのアクセス許可を持つこの操作だけが、'me' ユーザーです。 
-> アプリケーションのアクセス許可を持つ機能のすべてのユーザーによって特定のユーザー id を指定します。('me' エイリアスはアプリケーションのアクセス許可)
+> ユーザーに委任されたアクセス許可では、この操作は「me」ユーザーに対してのみ機能します。 
+> アプリケーションのアクセス許可では、特定のユーザー ID を指定することにより、すべてのユーザーに対して機能します (「me」エイリアスはアプリケーションのアクセス許可ではサポートされていません)。
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +38,7 @@ GET /users/{id}/joinedTeams
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-[OData クエリのパラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)は現在サポートされていません。
+[OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)は現在サポートされていません。
 
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値 |
@@ -85,7 +85,7 @@ Content-length: 55
 ```
 
 ## <a name="see-also"></a>関連項目
-[すべてのチームをリストします。](/graph/teams-list-all-teams)
+[すべてのチームのリストを作成する](/graph/teams-list-all-teams)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

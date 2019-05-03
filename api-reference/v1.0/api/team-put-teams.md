@@ -1,25 +1,25 @@
 ---
-title: チームを作成します。
-description: グループの下の新しいチームを作成します。
+title: チームを作成する
+description: グループの下に新しいチームを作成します。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.openlocfilehash: 3d2d595d95e5276ac1785a9f03459cfd6c3085b6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27959959"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32570779"
 ---
-# <a name="create-team"></a>チームを作成します。
+# <a name="create-team"></a>チームを作成する
 
 
 
 [グループ](../resources/group.md)の下に新しい[チーム](../resources/team.md)を作成します。
 
-グループには、チームを作成するために少なくとも 1 人の所有者が必要です。
+チームを作成するために、グループには少なくとも 1 人の所有者が必要です。
 
-グループは 15 分未満で作成されている場合は、作成チームの呼び出しが失敗し、レプリケーションの遅延のための 404 エラー コード可能性があります。 推奨のパターンでは、呼び出しの間で 10 秒の遅延で 3 回を作成するチームの呼び出しを再試行します。
+グループが作成されて 15 分以上経っていない場合は、レプリケーションの遅延のためにチーム作成の呼び出しが失敗し、404 エラー コードが表示される可能性があります。 呼び出しと呼び出しの間に 10 秒の遅延を設けて、チーム作成の呼び出しを 3 回再試行するパターンをお勧めします。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -31,7 +31,7 @@ ms.locfileid: "27959959"
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
 |アプリケーション | Group.ReadWrite.All |
 
-> **注**: この API は、管理者のアクセス許可をサポートしています。 グローバル管理者およびマイクロソフトのチームのサービス管理者グループのメンバーではないことにアクセスできます。
+> **注**: この API は、管理者のアクセス許可をサポートします。 グローバル管理者と Microsoft Teams サービス管理者は、メンバーではないグループにアクセスできます。
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -50,11 +50,11 @@ PUT /groups/{id}/team
 
 ## <a name="request-body"></a>要求本文
 
-要求の本体で、[チーム](../resources/team.md)オブジェクトの JSON 表現を指定します。
+要求本文で、[team](../resources/team.md) オブジェクトの JSON 表記を指定します。
 
 ## <a name="response"></a>応答
 
-成功すると、このメソッドを返します、`201 Created`応答コードおよび応答の本文の[チーム](../resources/team.md)のオブジェクトです。
+成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [team](../resources/team.md) オブジェクトを返す必要があります。
 
 ## <a name="example"></a>例
 
@@ -140,4 +140,4 @@ Content-length: 401
 
 ## <a name="see-also"></a>関連項目
 
-- [チームのグループを作成](/graph/teams-create-group-and-team)
+- [チームを使用してグループを作成する](/graph/teams-create-group-and-team)
