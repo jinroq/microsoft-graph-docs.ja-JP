@@ -1,69 +1,69 @@
 ---
-title: privilegedRoleSettings の更新
-description: 指定した役割設定の役割設定を更新します。 privilegedRoleSettings オブジェクトが返されます。
+title: PrivilegedRoleSettings の更新
+description: 指定した役割設定の役割設定を更新します。 PrivilegedRoleSettings オブジェクトが返されます。
 localization_priority: Normal
-ms.openlocfilehash: ce04a6e8c61c59f576d3a5e36592ba8ab4373de3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 17f813a72fb88948bd8906924c312ad9fce1dd79
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337264"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33593837"
 ---
-# <a name="update-privilegedrolesettings"></a><span data-ttu-id="8eb30-104">privilegedRoleSettings の更新</span><span class="sxs-lookup"><span data-stu-id="8eb30-104">Update privilegedRoleSettings</span></span>
+# <a name="update-privilegedrolesettings"></a><span data-ttu-id="a9ba6-104">PrivilegedRoleSettings の更新</span><span class="sxs-lookup"><span data-stu-id="a9ba6-104">Update privilegedRoleSettings</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="8eb30-105">指定した役割設定の役割設定を更新します。</span><span class="sxs-lookup"><span data-stu-id="8eb30-105">Update the role settings for the given role setting.</span></span> <span data-ttu-id="8eb30-106">[privilegedRoleSettings](../resources/privilegedrolesettings.md)オブジェクトが返されます。</span><span class="sxs-lookup"><span data-stu-id="8eb30-106">A [privilegedRoleSettings](../resources/privilegedrolesettings.md) object will be returned.</span></span>
-## <a name="permissions"></a><span data-ttu-id="8eb30-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="8eb30-107">Permissions</span></span>
+<span data-ttu-id="a9ba6-105">指定した役割設定の役割設定を更新します。</span><span class="sxs-lookup"><span data-stu-id="a9ba6-105">Update the role settings for the given role setting.</span></span> <span data-ttu-id="a9ba6-106">[PrivilegedRoleSettings](../resources/privilegedrolesettings.md)オブジェクトが返されます。</span><span class="sxs-lookup"><span data-stu-id="a9ba6-106">A [privilegedRoleSettings](../resources/privilegedrolesettings.md) object will be returned.</span></span>
+## <a name="permissions"></a><span data-ttu-id="a9ba6-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="a9ba6-107">Permissions</span></span>
 
-<span data-ttu-id="8eb30-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8eb30-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a9ba6-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a9ba6-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-><span data-ttu-id="8eb30-110">**注:** 要求者は、特権ロール管理者、全体管理者、セキュリティ管理者、またはセキュリティ閲覧者のいずれかの役割を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="8eb30-110">**Note:** The requester must have one of the following roles: Privileged Role Administrator, Global Administrator, Security Administrator, or Security Reader.</span></span> 
+><span data-ttu-id="a9ba6-110">**注:** 要求者は、特権ロール管理者、全体管理者、セキュリティ管理者、またはセキュリティ閲覧者のいずれかの役割を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="a9ba6-110">**Note:** The requester must have one of the following roles: Privileged Role Administrator, Global Administrator, Security Administrator, or Security Reader.</span></span> 
 
-|<span data-ttu-id="8eb30-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="8eb30-111">Permission type</span></span>      | <span data-ttu-id="8eb30-112">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="8eb30-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a9ba6-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="a9ba6-111">Permission type</span></span>      | <span data-ttu-id="a9ba6-112">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="a9ba6-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="8eb30-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="8eb30-113">Delegated (work or school account)</span></span> | <span data-ttu-id="8eb30-114">PrivilegedAccess、AzureAD、および directory.accessasuser.all。</span><span class="sxs-lookup"><span data-stu-id="8eb30-114">PrivilegedAccess.ReadWrite.AzureAD, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="8eb30-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="8eb30-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8eb30-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="8eb30-116">Not supported.</span></span>    |
-|<span data-ttu-id="8eb30-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="8eb30-117">Application</span></span> | <span data-ttu-id="8eb30-118">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="8eb30-118">Not supported.</span></span> |
+|<span data-ttu-id="a9ba6-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="a9ba6-113">Delegated (work or school account)</span></span> | <span data-ttu-id="a9ba6-114">PrivilegedAccess、AzureAD、および Directory.accessasuser.all。</span><span class="sxs-lookup"><span data-stu-id="a9ba6-114">PrivilegedAccess.ReadWrite.AzureAD, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="a9ba6-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="a9ba6-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a9ba6-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a9ba6-116">Not supported.</span></span>    |
+|<span data-ttu-id="a9ba6-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="a9ba6-117">Application</span></span> | <span data-ttu-id="a9ba6-118">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a9ba6-118">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="8eb30-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="8eb30-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a9ba6-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="a9ba6-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PUT /privilegedRoles/{id}/settings
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="8eb30-120">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="8eb30-120">Request headers</span></span>
-| <span data-ttu-id="8eb30-121">名前</span><span class="sxs-lookup"><span data-stu-id="8eb30-121">Name</span></span>      |<span data-ttu-id="8eb30-122">説明</span><span class="sxs-lookup"><span data-stu-id="8eb30-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="a9ba6-120">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="a9ba6-120">Request headers</span></span>
+| <span data-ttu-id="a9ba6-121">名前</span><span class="sxs-lookup"><span data-stu-id="a9ba6-121">Name</span></span>      |<span data-ttu-id="a9ba6-122">説明</span><span class="sxs-lookup"><span data-stu-id="a9ba6-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="8eb30-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="8eb30-123">Authorization</span></span>  | <span data-ttu-id="8eb30-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="8eb30-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="a9ba6-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="a9ba6-123">Authorization</span></span>  | <span data-ttu-id="a9ba6-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="a9ba6-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="8eb30-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="8eb30-126">Request body</span></span>
-<span data-ttu-id="8eb30-127">要求本文で、 [privilegedRoleSettings](../resources/privilegedrolesettings.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="8eb30-127">In the request body, supply a JSON representation of a [privilegedRoleSettings](../resources/privilegedrolesettings.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a9ba6-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="a9ba6-126">Request body</span></span>
+<span data-ttu-id="a9ba6-127">要求本文で、 [privilegedRoleSettings](../resources/privilegedrolesettings.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="a9ba6-127">In the request body, supply a JSON representation of a [privilegedRoleSettings](../resources/privilegedrolesettings.md) object.</span></span>
 
-<span data-ttu-id="8eb30-128">次の表に、役割の設定を更新するときに指定できるプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="8eb30-128">The following table lists the properties that you can supply when you update a role setting.</span></span>
+<span data-ttu-id="a9ba6-128">次の表に、役割の設定を更新するときに指定できるプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="a9ba6-128">The following table lists the properties that you can supply when you update a role setting.</span></span>
 
-|<span data-ttu-id="8eb30-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="8eb30-129">Property</span></span>|<span data-ttu-id="8eb30-130">型</span><span class="sxs-lookup"><span data-stu-id="8eb30-130">Type</span></span>|<span data-ttu-id="8eb30-131">説明</span><span class="sxs-lookup"><span data-stu-id="8eb30-131">Description</span></span>|
+|<span data-ttu-id="a9ba6-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="a9ba6-129">Property</span></span>|<span data-ttu-id="a9ba6-130">型</span><span class="sxs-lookup"><span data-stu-id="a9ba6-130">Type</span></span>|<span data-ttu-id="a9ba6-131">説明</span><span class="sxs-lookup"><span data-stu-id="a9ba6-131">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="8eb30-132">elevationDuration</span><span class="sxs-lookup"><span data-stu-id="8eb30-132">elevationDuration</span></span>|<span data-ttu-id="8eb30-133">duration</span><span class="sxs-lookup"><span data-stu-id="8eb30-133">duration</span></span>|<span data-ttu-id="8eb30-134">役割がアクティブ化される期間。</span><span class="sxs-lookup"><span data-stu-id="8eb30-134">The duration when the role is activated.</span></span> <span data-ttu-id="8eb30-135">必須。</span><span class="sxs-lookup"><span data-stu-id="8eb30-135">Required.</span></span>|
-|<span data-ttu-id="8eb30-136">id</span><span class="sxs-lookup"><span data-stu-id="8eb30-136">id</span></span>|<span data-ttu-id="8eb30-137">string</span><span class="sxs-lookup"><span data-stu-id="8eb30-137">string</span></span>|<span data-ttu-id="8eb30-138">ロール設定の一意の識別子。</span><span class="sxs-lookup"><span data-stu-id="8eb30-138">The unique identifier for the role settings.</span></span> <span data-ttu-id="8eb30-139">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="8eb30-139">Read-only.</span></span> <span data-ttu-id="8eb30-140">必須です。</span><span class="sxs-lookup"><span data-stu-id="8eb30-140">Required.</span></span>|
-|<span data-ttu-id="8eb30-141">isMfaOnElevationConfigurable</span><span class="sxs-lookup"><span data-stu-id="8eb30-141">isMfaOnElevationConfigurable</span></span>|<span data-ttu-id="8eb30-142">boolean</span><span class="sxs-lookup"><span data-stu-id="8eb30-142">boolean</span></span>|<span data-ttu-id="8eb30-143">**true**の場合は、mfaonelevation を構成できます。</span><span class="sxs-lookup"><span data-stu-id="8eb30-143">**true** if mfaOnElevation is configurable.</span></span> <span data-ttu-id="8eb30-144">mfaonelevation を構成できない場合は**false** 。</span><span class="sxs-lookup"><span data-stu-id="8eb30-144">**false** if mfaOnElevation is not configurable.</span></span> <span data-ttu-id="8eb30-145">必須です。</span><span class="sxs-lookup"><span data-stu-id="8eb30-145">Required.</span></span>|
-|<span data-ttu-id="8eb30-146">lastglobaladmin</span><span class="sxs-lookup"><span data-stu-id="8eb30-146">lastGlobalAdmin</span></span>|<span data-ttu-id="8eb30-147">Boolean</span><span class="sxs-lookup"><span data-stu-id="8eb30-147">Boolean</span></span>|<span data-ttu-id="8eb30-148">内部使用のみ。</span><span class="sxs-lookup"><span data-stu-id="8eb30-148">For internal use only.</span></span>|
-|<span data-ttu-id="8eb30-149">maxelavationduration</span><span class="sxs-lookup"><span data-stu-id="8eb30-149">maxElavationDuration</span></span>|<span data-ttu-id="8eb30-150">duration</span><span class="sxs-lookup"><span data-stu-id="8eb30-150">duration</span></span>|<span data-ttu-id="8eb30-151">アクティブ化されたロールの最大期間。</span><span class="sxs-lookup"><span data-stu-id="8eb30-151">Maximum duration for the activated role.</span></span> <span data-ttu-id="8eb30-152">必須です。</span><span class="sxs-lookup"><span data-stu-id="8eb30-152">Required.</span></span>|
-|<span data-ttu-id="8eb30-153">mfaonelevation</span><span class="sxs-lookup"><span data-stu-id="8eb30-153">mfaOnElevation</span></span>|<span data-ttu-id="8eb30-154">Boolean</span><span class="sxs-lookup"><span data-stu-id="8eb30-154">Boolean</span></span>|<span data-ttu-id="8eb30-155">役割をアクティブ化するために MFA が必要な場合は**true** 。</span><span class="sxs-lookup"><span data-stu-id="8eb30-155">**true** if MFA is required to activate the role.</span></span> <span data-ttu-id="8eb30-156">役割をアクティブ化するために MFA が必要でない場合は**false** 。</span><span class="sxs-lookup"><span data-stu-id="8eb30-156">**false** if MFA is not required to activate the role.</span></span> <span data-ttu-id="8eb30-157">必須です。</span><span class="sxs-lookup"><span data-stu-id="8eb30-157">Required.</span></span>|
-|<span data-ttu-id="8eb30-158">minElevationDuration</span><span class="sxs-lookup"><span data-stu-id="8eb30-158">minElevationDuration</span></span>|<span data-ttu-id="8eb30-159">duration</span><span class="sxs-lookup"><span data-stu-id="8eb30-159">duration</span></span>|<span data-ttu-id="8eb30-160">アクティブ化されたロールの最小期間。</span><span class="sxs-lookup"><span data-stu-id="8eb30-160">Minimum duration for the activated role.</span></span> <span data-ttu-id="8eb30-161">必須です。</span><span class="sxs-lookup"><span data-stu-id="8eb30-161">Required.</span></span>|
-|<span data-ttu-id="8eb30-162">notificationToUserOnElevation</span><span class="sxs-lookup"><span data-stu-id="8eb30-162">notificationToUserOnElevation</span></span>|<span data-ttu-id="8eb30-163">Boolean</span><span class="sxs-lookup"><span data-stu-id="8eb30-163">Boolean</span></span>|<span data-ttu-id="8eb30-164">**true**の場合は、エンドユーザーに役割がアクティブ化されたときに通知を送信します。</span><span class="sxs-lookup"><span data-stu-id="8eb30-164">**true** if send notification to the end user when the role is activated.</span></span> <span data-ttu-id="8eb30-165">**true**の場合は、役割がアクティブ化されたときに通知を送信しません。</span><span class="sxs-lookup"><span data-stu-id="8eb30-165">**false** if do not send notification when the role is activated.</span></span> <span data-ttu-id="8eb30-166">必須です。</span><span class="sxs-lookup"><span data-stu-id="8eb30-166">Required.</span></span>|
-|<span data-ttu-id="8eb30-167">ticketingInfoOnElevation</span><span class="sxs-lookup"><span data-stu-id="8eb30-167">ticketingInfoOnElevation</span></span>|<span data-ttu-id="8eb30-168">Boolean</span><span class="sxs-lookup"><span data-stu-id="8eb30-168">Boolean</span></span>|<span data-ttu-id="8eb30-169">役割をアクティブ化するときに、チケット情報が必要な場合は**true** 。</span><span class="sxs-lookup"><span data-stu-id="8eb30-169">**true** if the ticketing information is required when activate the role.</span></span> <span data-ttu-id="8eb30-170">**false**を指定すると、役割をアクティブ化するときに、チケットの情報は必要ありません。</span><span class="sxs-lookup"><span data-stu-id="8eb30-170">**false** if the ticketing information is not required when activate the role.</span></span> <span data-ttu-id="8eb30-171">必須です。</span><span class="sxs-lookup"><span data-stu-id="8eb30-171">Required.</span></span>|
-|<span data-ttu-id="8eb30-172">approvalonelevation</span><span class="sxs-lookup"><span data-stu-id="8eb30-172">approvalOnElevation</span></span>|<span data-ttu-id="8eb30-173">Boolean</span><span class="sxs-lookup"><span data-stu-id="8eb30-173">Boolean</span></span>|<span data-ttu-id="8eb30-174">ロールをアクティブ化するときに承認が必要な場合は**true** 。</span><span class="sxs-lookup"><span data-stu-id="8eb30-174">**true** if the approval is required when activate the role.</span></span> <span data-ttu-id="8eb30-175">**false**を指定すると、役割をアクティブ化するときに承認が必要ありません。</span><span class="sxs-lookup"><span data-stu-id="8eb30-175">**false** if the approval is not required when activate the role.</span></span> <span data-ttu-id="8eb30-176">必須です。</span><span class="sxs-lookup"><span data-stu-id="8eb30-176">Required.</span></span>|
-|<span data-ttu-id="8eb30-177">承認の検証 ds</span><span class="sxs-lookup"><span data-stu-id="8eb30-177">approverIds</span></span>|<span data-ttu-id="8eb30-178">string collection</span><span class="sxs-lookup"><span data-stu-id="8eb30-178">string collection</span></span>|<span data-ttu-id="8eb30-179">ライセンス認証に承認が必要な場合は、承認 id のリスト。</span><span class="sxs-lookup"><span data-stu-id="8eb30-179">List of Approval IDs, if approval is required for activation.</span></span>|
+|<span data-ttu-id="a9ba6-132">elevationDuration</span><span class="sxs-lookup"><span data-stu-id="a9ba6-132">elevationDuration</span></span>|<span data-ttu-id="a9ba6-133">duration</span><span class="sxs-lookup"><span data-stu-id="a9ba6-133">duration</span></span>|<span data-ttu-id="a9ba6-134">役割がアクティブ化される期間。</span><span class="sxs-lookup"><span data-stu-id="a9ba6-134">The duration when the role is activated.</span></span> <span data-ttu-id="a9ba6-135">必須。</span><span class="sxs-lookup"><span data-stu-id="a9ba6-135">Required.</span></span>|
+|<span data-ttu-id="a9ba6-136">id</span><span class="sxs-lookup"><span data-stu-id="a9ba6-136">id</span></span>|<span data-ttu-id="a9ba6-137">string</span><span class="sxs-lookup"><span data-stu-id="a9ba6-137">string</span></span>|<span data-ttu-id="a9ba6-138">ロール設定の一意の識別子。</span><span class="sxs-lookup"><span data-stu-id="a9ba6-138">The unique identifier for the role settings.</span></span> <span data-ttu-id="a9ba6-139">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="a9ba6-139">Read-only.</span></span> <span data-ttu-id="a9ba6-140">必須です。</span><span class="sxs-lookup"><span data-stu-id="a9ba6-140">Required.</span></span>|
+|<span data-ttu-id="a9ba6-141">isMfaOnElevationConfigurable</span><span class="sxs-lookup"><span data-stu-id="a9ba6-141">isMfaOnElevationConfigurable</span></span>|<span data-ttu-id="a9ba6-142">ブール値</span><span class="sxs-lookup"><span data-stu-id="a9ba6-142">boolean</span></span>|<span data-ttu-id="a9ba6-143">**true**の場合は、mfaOnElevation を構成できます。</span><span class="sxs-lookup"><span data-stu-id="a9ba6-143">**true** if mfaOnElevation is configurable.</span></span> <span data-ttu-id="a9ba6-144">mfaOnElevation を構成できない場合は**false** 。</span><span class="sxs-lookup"><span data-stu-id="a9ba6-144">**false** if mfaOnElevation is not configurable.</span></span> <span data-ttu-id="a9ba6-145">必須です。</span><span class="sxs-lookup"><span data-stu-id="a9ba6-145">Required.</span></span>|
+|<span data-ttu-id="a9ba6-146">lastGlobalAdmin</span><span class="sxs-lookup"><span data-stu-id="a9ba6-146">lastGlobalAdmin</span></span>|<span data-ttu-id="a9ba6-147">Boolean</span><span class="sxs-lookup"><span data-stu-id="a9ba6-147">Boolean</span></span>|<span data-ttu-id="a9ba6-148">内部使用のみ。</span><span class="sxs-lookup"><span data-stu-id="a9ba6-148">For internal use only.</span></span>|
+|<span data-ttu-id="a9ba6-149">maxElavationDuration</span><span class="sxs-lookup"><span data-stu-id="a9ba6-149">maxElavationDuration</span></span>|<span data-ttu-id="a9ba6-150">duration</span><span class="sxs-lookup"><span data-stu-id="a9ba6-150">duration</span></span>|<span data-ttu-id="a9ba6-151">アクティブ化されたロールの最大期間。</span><span class="sxs-lookup"><span data-stu-id="a9ba6-151">Maximum duration for the activated role.</span></span> <span data-ttu-id="a9ba6-152">必須です。</span><span class="sxs-lookup"><span data-stu-id="a9ba6-152">Required.</span></span>|
+|<span data-ttu-id="a9ba6-153">mfaOnElevation</span><span class="sxs-lookup"><span data-stu-id="a9ba6-153">mfaOnElevation</span></span>|<span data-ttu-id="a9ba6-154">Boolean</span><span class="sxs-lookup"><span data-stu-id="a9ba6-154">Boolean</span></span>|<span data-ttu-id="a9ba6-155">役割をアクティブ化するために MFA が必要な場合は**true** 。</span><span class="sxs-lookup"><span data-stu-id="a9ba6-155">**true** if MFA is required to activate the role.</span></span> <span data-ttu-id="a9ba6-156">役割をアクティブ化するために MFA が必要でない場合は**false** 。</span><span class="sxs-lookup"><span data-stu-id="a9ba6-156">**false** if MFA is not required to activate the role.</span></span> <span data-ttu-id="a9ba6-157">必須です。</span><span class="sxs-lookup"><span data-stu-id="a9ba6-157">Required.</span></span>|
+|<span data-ttu-id="a9ba6-158">minElevationDuration</span><span class="sxs-lookup"><span data-stu-id="a9ba6-158">minElevationDuration</span></span>|<span data-ttu-id="a9ba6-159">duration</span><span class="sxs-lookup"><span data-stu-id="a9ba6-159">duration</span></span>|<span data-ttu-id="a9ba6-160">アクティブ化されたロールの最小期間。</span><span class="sxs-lookup"><span data-stu-id="a9ba6-160">Minimum duration for the activated role.</span></span> <span data-ttu-id="a9ba6-161">必須です。</span><span class="sxs-lookup"><span data-stu-id="a9ba6-161">Required.</span></span>|
+|<span data-ttu-id="a9ba6-162">notificationToUserOnElevation</span><span class="sxs-lookup"><span data-stu-id="a9ba6-162">notificationToUserOnElevation</span></span>|<span data-ttu-id="a9ba6-163">Boolean</span><span class="sxs-lookup"><span data-stu-id="a9ba6-163">Boolean</span></span>|<span data-ttu-id="a9ba6-164">**true**の場合は、エンドユーザーに役割がアクティブ化されたときに通知を送信します。</span><span class="sxs-lookup"><span data-stu-id="a9ba6-164">**true** if send notification to the end user when the role is activated.</span></span> <span data-ttu-id="a9ba6-165">**true**の場合は、役割がアクティブ化されたときに通知を送信しません。</span><span class="sxs-lookup"><span data-stu-id="a9ba6-165">**false** if do not send notification when the role is activated.</span></span> <span data-ttu-id="a9ba6-166">必須です。</span><span class="sxs-lookup"><span data-stu-id="a9ba6-166">Required.</span></span>|
+|<span data-ttu-id="a9ba6-167">ticketingInfoOnElevation</span><span class="sxs-lookup"><span data-stu-id="a9ba6-167">ticketingInfoOnElevation</span></span>|<span data-ttu-id="a9ba6-168">Boolean</span><span class="sxs-lookup"><span data-stu-id="a9ba6-168">Boolean</span></span>|<span data-ttu-id="a9ba6-169">役割をアクティブ化するときに、チケット情報が必要な場合は**true** 。</span><span class="sxs-lookup"><span data-stu-id="a9ba6-169">**true** if the ticketing information is required when activate the role.</span></span> <span data-ttu-id="a9ba6-170">**false**を指定すると、役割をアクティブ化するときに、チケットの情報は必要ありません。</span><span class="sxs-lookup"><span data-stu-id="a9ba6-170">**false** if the ticketing information is not required when activate the role.</span></span> <span data-ttu-id="a9ba6-171">必須です。</span><span class="sxs-lookup"><span data-stu-id="a9ba6-171">Required.</span></span>|
+|<span data-ttu-id="a9ba6-172">approvalOnElevation</span><span class="sxs-lookup"><span data-stu-id="a9ba6-172">approvalOnElevation</span></span>|<span data-ttu-id="a9ba6-173">Boolean</span><span class="sxs-lookup"><span data-stu-id="a9ba6-173">Boolean</span></span>|<span data-ttu-id="a9ba6-174">ロールをアクティブ化するときに承認が必要な場合は**true** 。</span><span class="sxs-lookup"><span data-stu-id="a9ba6-174">**true** if the approval is required when activate the role.</span></span> <span data-ttu-id="a9ba6-175">**false**を指定すると、役割をアクティブ化するときに承認が必要ありません。</span><span class="sxs-lookup"><span data-stu-id="a9ba6-175">**false** if the approval is not required when activate the role.</span></span> <span data-ttu-id="a9ba6-176">必須です。</span><span class="sxs-lookup"><span data-stu-id="a9ba6-176">Required.</span></span>|
+|<span data-ttu-id="a9ba6-177">承認の検証 Ds</span><span class="sxs-lookup"><span data-stu-id="a9ba6-177">approverIds</span></span>|<span data-ttu-id="a9ba6-178">string collection</span><span class="sxs-lookup"><span data-stu-id="a9ba6-178">string collection</span></span>|<span data-ttu-id="a9ba6-179">ライセンス認証に承認が必要な場合は、承認 Id のリスト。</span><span class="sxs-lookup"><span data-stu-id="a9ba6-179">List of Approval IDs, if approval is required for activation.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="8eb30-180">応答</span><span class="sxs-lookup"><span data-stu-id="8eb30-180">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a9ba6-180">応答</span><span class="sxs-lookup"><span data-stu-id="a9ba6-180">Response</span></span>
 
-<span data-ttu-id="8eb30-181">成功した場合、このメソッドは `204 No Content` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="8eb30-181">If successful, this method returns a `204 No Content` response code.</span></span>
+<span data-ttu-id="a9ba6-181">成功した場合、このメソッドは `204 No Content` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="a9ba6-181">If successful, this method returns a `204 No Content` response code.</span></span>
 
-<span data-ttu-id="8eb30-182">テナントが PIM に登録されている必要があることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="8eb30-182">Note that the tenant needs to be registered to PIM.</span></span> <span data-ttu-id="8eb30-183">それ以外の場合、HTTP 403 の禁止状態コードが返されます。</span><span class="sxs-lookup"><span data-stu-id="8eb30-183">Otherwise, the HTTP 403 Forbidden status code will be returned.</span></span>
-## <a name="example"></a><span data-ttu-id="8eb30-184">例</span><span class="sxs-lookup"><span data-stu-id="8eb30-184">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="8eb30-185">要求</span><span class="sxs-lookup"><span data-stu-id="8eb30-185">Request</span></span>
-<span data-ttu-id="8eb30-186">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="8eb30-186">Here is an example of the request.</span></span>
+<span data-ttu-id="a9ba6-182">テナントが PIM に登録されている必要があることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="a9ba6-182">Note that the tenant needs to be registered to PIM.</span></span> <span data-ttu-id="a9ba6-183">それ以外の場合、HTTP 403 の禁止状態コードが返されます。</span><span class="sxs-lookup"><span data-stu-id="a9ba6-183">Otherwise, the HTTP 403 Forbidden status code will be returned.</span></span>
+## <a name="example"></a><span data-ttu-id="a9ba6-184">例</span><span class="sxs-lookup"><span data-stu-id="a9ba6-184">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="a9ba6-185">要求</span><span class="sxs-lookup"><span data-stu-id="a9ba6-185">Request</span></span>
+<span data-ttu-id="a9ba6-186">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="a9ba6-186">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "put_privilegedrolesettings"
@@ -86,8 +86,8 @@ Content-type: application/json
     "approverIds": ["e2b2a2fb-13d7-495c-adc9-941fe966793f", "22770e3f-b9b4-418e-9dea-d0e3d2f275dd"]
 }
 ```
-##### <a name="response"></a><span data-ttu-id="8eb30-187">応答</span><span class="sxs-lookup"><span data-stu-id="8eb30-187">Response</span></span>
-<span data-ttu-id="8eb30-188">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="8eb30-188">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="a9ba6-187">応答</span><span class="sxs-lookup"><span data-stu-id="a9ba6-187">Response</span></span>
+<span data-ttu-id="a9ba6-188">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="a9ba6-188">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -95,6 +95,16 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="a9ba6-189">SDK サンプルコード</span><span class="sxs-lookup"><span data-stu-id="a9ba6-189">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="a9ba6-190">Visual</span><span class="sxs-lookup"><span data-stu-id="a9ba6-190">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/put_privilegedrolesettings-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a9ba6-191">Java</span><span class="sxs-lookup"><span data-stu-id="a9ba6-191">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/put_privilegedrolesettings-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -105,6 +115,9 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/privilegedrolesettings-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/privilegedrolesettings-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

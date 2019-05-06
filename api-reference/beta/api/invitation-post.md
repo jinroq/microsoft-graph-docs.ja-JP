@@ -1,65 +1,65 @@
 ---
 title: 招待状の作成
-description: この API を使用して、新しい 招待状 を作成します。 招待状によって外部ユーザーが組織に追加されます。
+description: この API を使用して、新しい招待状を作成します。 招待状によって外部ユーザーが組織に追加されます。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fe9a08281f6867a82dd998b19ce8e89b433df9aa
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 6b98b93b634ab5cb457af214a2924e0a4be9ec6a
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33338784"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33597996"
 ---
-# <a name="create-invitation"></a><span data-ttu-id="e8425-104">招待状の作成</span><span class="sxs-lookup"><span data-stu-id="e8425-104">Create invitation</span></span>
+# <a name="create-invitation"></a><span data-ttu-id="89389-104">招待状の作成</span><span class="sxs-lookup"><span data-stu-id="89389-104">Create invitation</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e8425-p102">この API を使用して、新しい [招待状](../resources/invitation.md) を作成します。招待状によって外部ユーザーが組織に追加されます。</span><span class="sxs-lookup"><span data-stu-id="e8425-p102">Use this API to create a new [invitation](../resources/invitation.md). Invitation adds an external user to the organization.</span></span>
+<span data-ttu-id="89389-p102">この API を使用して、新しい [招待状](../resources/invitation.md) を作成します。招待状によって外部ユーザーが組織に追加されます。</span><span class="sxs-lookup"><span data-stu-id="89389-p102">Use this API to create a new [invitation](../resources/invitation.md). Invitation adds an external user to the organization.</span></span>
 
-<span data-ttu-id="e8425-107">新しい招待状を作成するときに、選択可能ないくつかのオプションがあります。</span><span class="sxs-lookup"><span data-stu-id="e8425-107">When creating a new invitation you have several options available:</span></span>
+<span data-ttu-id="89389-107">新しい招待状を作成するときに、選択可能ないくつかのオプションがあります。</span><span class="sxs-lookup"><span data-stu-id="89389-107">When creating a new invitation you have several options available:</span></span>
 
-1. <span data-ttu-id="e8425-p103">招待状の作成に際して、Microsoft Graph は自動的に招待メールを招待ユーザーに直接送信できます。作成応答で返された *inviteRedeemUrl* をアプリが使用して、招待ユーザーへの (任意の通信メカニズムによる) 独自の招待状を作成することもできます。Microsoft Graph によって招待メールが自動的に送信されるようにする場合は、[*invitedUserMessageInfo*](../resources/invitedusermessageinfo.md) を使用してメールの内容と言語を制御できます。</span><span class="sxs-lookup"><span data-stu-id="e8425-p103">On invitation creation, Microsoft Graph can automatically send an invitation email directly to the invited user, or your app can use the *inviteRedeemUrl* returned in the creation response to craft your own invitation (through your communication mechanism of choice) to the invited user. If you decide to have Microsoft Graph send an invitation email automatically, you can control the content and language of the email using [*invitedUserMessageInfo*](../resources/invitedusermessageinfo.md).</span></span>
-2. <span data-ttu-id="e8425-p104">ユーザーが招待されると、(userType Guest) のユーザー エンティティが作成され、リソースへのアクセスの制御に使用できるようになります。招待ユーザーは、招待されたリソースにアクセスするためには、引き換え処理を行う必要があります。</span><span class="sxs-lookup"><span data-stu-id="e8425-p104">When the user is invited, a user entity (of userType Guest) is created and can now be used to control access to resources. The invited user has to go through the redemption process to access any resources he has been invited to.</span></span>
+1. <span data-ttu-id="89389-p103">招待状の作成に際して、Microsoft Graph は自動的に招待メールを招待ユーザーに直接送信できます。作成応答で返された *inviteRedeemUrl* をアプリが使用して、招待ユーザーへの (任意の通信メカニズムによる) 独自の招待状を作成することもできます。Microsoft Graph によって招待メールが自動的に送信されるようにする場合は、[*invitedUserMessageInfo*](../resources/invitedusermessageinfo.md) を使用してメールの内容と言語を制御できます。</span><span class="sxs-lookup"><span data-stu-id="89389-p103">On invitation creation, Microsoft Graph can automatically send an invitation email directly to the invited user, or your app can use the *inviteRedeemUrl* returned in the creation response to craft your own invitation (through your communication mechanism of choice) to the invited user. If you decide to have Microsoft Graph send an invitation email automatically, you can control the content and language of the email using [*invitedUserMessageInfo*](../resources/invitedusermessageinfo.md).</span></span>
+2. <span data-ttu-id="89389-p104">ユーザーが招待されると、(userType Guest) のユーザー エンティティが作成され、リソースへのアクセスの制御に使用できるようになります。招待ユーザーは、招待されたリソースにアクセスするためには、引き換え処理を行う必要があります。</span><span class="sxs-lookup"><span data-stu-id="89389-p104">When the user is invited, a user entity (of userType Guest) is created and can now be used to control access to resources. The invited user has to go through the redemption process to access any resources he has been invited to.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e8425-112">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="e8425-112">Permissions</span></span>
-<span data-ttu-id="e8425-p105">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e8425-p105">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="89389-112">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="89389-112">Permissions</span></span>
+<span data-ttu-id="89389-p105">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="89389-p105">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="e8425-115">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="e8425-115">Permission type</span></span>      | <span data-ttu-id="e8425-116">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="e8425-116">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="89389-115">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="89389-115">Permission type</span></span>      | <span data-ttu-id="89389-116">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="89389-116">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e8425-117">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="e8425-117">Delegated (work or school account)</span></span> | <span data-ttu-id="e8425-118">User.Invite.All、User.ReadWrite.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e8425-118">User.Invite.All, User.ReadWrite.All, Directory.ReadWrite.All</span></span>    |
-|<span data-ttu-id="e8425-119">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="e8425-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e8425-120">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e8425-120">Not supported.</span></span>    |
-|<span data-ttu-id="e8425-121">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="e8425-121">Application</span></span> | <span data-ttu-id="e8425-122">User.Invite.All、User.ReadWrite.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e8425-122">User.Invite.All, User.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="89389-117">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="89389-117">Delegated (work or school account)</span></span> | <span data-ttu-id="89389-118">User.Invite.All、User.ReadWrite.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="89389-118">User.Invite.All, User.ReadWrite.All, Directory.ReadWrite.All</span></span>    |
+|<span data-ttu-id="89389-119">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="89389-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="89389-120">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="89389-120">Not supported.</span></span>    |
+|<span data-ttu-id="89389-121">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="89389-121">Application</span></span> | <span data-ttu-id="89389-122">User.Invite.All、User.ReadWrite.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="89389-122">User.Invite.All, User.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e8425-123">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="e8425-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="89389-123">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="89389-123">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /invitations
 ```
-## <a name="request-headers"></a><span data-ttu-id="e8425-124">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="e8425-124">Request headers</span></span>
-| <span data-ttu-id="e8425-125">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="e8425-125">Header</span></span>       | <span data-ttu-id="e8425-126">値</span><span class="sxs-lookup"><span data-stu-id="e8425-126">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="89389-124">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="89389-124">Request headers</span></span>
+| <span data-ttu-id="89389-125">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="89389-125">Header</span></span>       | <span data-ttu-id="89389-126">値</span><span class="sxs-lookup"><span data-stu-id="89389-126">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="e8425-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="e8425-127">Authorization</span></span>  | <span data-ttu-id="e8425-p106">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="e8425-p106">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="e8425-130">Content-Type</span><span class="sxs-lookup"><span data-stu-id="e8425-130">Content-Type</span></span>  | <span data-ttu-id="e8425-131">application/json</span><span class="sxs-lookup"><span data-stu-id="e8425-131">application/json</span></span>  |
+| <span data-ttu-id="89389-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="89389-127">Authorization</span></span>  | <span data-ttu-id="89389-p106">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="89389-p106">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="89389-130">Content-Type</span><span class="sxs-lookup"><span data-stu-id="89389-130">Content-Type</span></span>  | <span data-ttu-id="89389-131">application/json</span><span class="sxs-lookup"><span data-stu-id="89389-131">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="e8425-132">要求本文</span><span class="sxs-lookup"><span data-stu-id="e8425-132">Request body</span></span>
-<span data-ttu-id="e8425-133">要求本文で、[invitation](../resources/invitation.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="e8425-133">In the request body, supply a JSON representation of an [invitation](../resources/invitation.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="89389-132">要求本文</span><span class="sxs-lookup"><span data-stu-id="89389-132">Request body</span></span>
+<span data-ttu-id="89389-133">要求本文で、[invitation](../resources/invitation.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="89389-133">In the request body, supply a JSON representation of an [invitation](../resources/invitation.md) object.</span></span>
 
-<span data-ttu-id="e8425-134">次の表に、招待状の作成時に必要になるプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="e8425-134">The following table shows the properties that are required when you create a invitation.</span></span>
+<span data-ttu-id="89389-134">次の表に、招待状の作成時に必要になるプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="89389-134">The following table shows the properties that are required when you create a invitation.</span></span>
 
-| <span data-ttu-id="e8425-135">パラメーター</span><span class="sxs-lookup"><span data-stu-id="e8425-135">Parameter</span></span> | <span data-ttu-id="e8425-136">型</span><span class="sxs-lookup"><span data-stu-id="e8425-136">Type</span></span> | <span data-ttu-id="e8425-137">説明</span><span class="sxs-lookup"><span data-stu-id="e8425-137">Description</span></span>|
+| <span data-ttu-id="89389-135">パラメーター</span><span class="sxs-lookup"><span data-stu-id="89389-135">Parameter</span></span> | <span data-ttu-id="89389-136">型</span><span class="sxs-lookup"><span data-stu-id="89389-136">Type</span></span> | <span data-ttu-id="89389-137">説明</span><span class="sxs-lookup"><span data-stu-id="89389-137">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="e8425-138">invitedUserEmailAddress</span><span class="sxs-lookup"><span data-stu-id="e8425-138">invitedUserEmailAddress</span></span> |<span data-ttu-id="e8425-139">string</span><span class="sxs-lookup"><span data-stu-id="e8425-139">string</span></span> | <span data-ttu-id="e8425-140">招待するユーザーのメール アドレス。</span><span class="sxs-lookup"><span data-stu-id="e8425-140">The email address of the user you are inviting.</span></span>|
-|<span data-ttu-id="e8425-141">inviteRedirectUrl</span><span class="sxs-lookup"><span data-stu-id="e8425-141">inviteRedirectUrl</span></span> |<span data-ttu-id="e8425-142">string</span><span class="sxs-lookup"><span data-stu-id="e8425-142">string</span></span> |<span data-ttu-id="e8425-143">引き換え後にユーザーがリダイレクトされる URL。</span><span class="sxs-lookup"><span data-stu-id="e8425-143">The URL that the user will be redirected to after redemption.</span></span>|
+|<span data-ttu-id="89389-138">invitedUserEmailAddress</span><span class="sxs-lookup"><span data-stu-id="89389-138">invitedUserEmailAddress</span></span> |<span data-ttu-id="89389-139">string</span><span class="sxs-lookup"><span data-stu-id="89389-139">string</span></span> | <span data-ttu-id="89389-140">招待するユーザーのメール アドレス。</span><span class="sxs-lookup"><span data-stu-id="89389-140">The email address of the user you are inviting.</span></span>|
+|<span data-ttu-id="89389-141">inviteRedirectUrl</span><span class="sxs-lookup"><span data-stu-id="89389-141">inviteRedirectUrl</span></span> |<span data-ttu-id="89389-142">string</span><span class="sxs-lookup"><span data-stu-id="89389-142">string</span></span> |<span data-ttu-id="89389-143">引き換え後にユーザーがリダイレクトされる URL。</span><span class="sxs-lookup"><span data-stu-id="89389-143">The URL that the user will be redirected to after redemption.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="e8425-144">応答</span><span class="sxs-lookup"><span data-stu-id="e8425-144">Response</span></span>
+## <a name="response"></a><span data-ttu-id="89389-144">応答</span><span class="sxs-lookup"><span data-stu-id="89389-144">Response</span></span>
 
-<span data-ttu-id="e8425-145">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [invitation](../resources/invitation.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="e8425-145">If successful, this method returns `201 Created` response code and [invitation](../resources/invitation.md) object in the response body.</span></span>
+<span data-ttu-id="89389-145">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [invitation](../resources/invitation.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="89389-145">If successful, this method returns `201 Created` response code and [invitation](../resources/invitation.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e8425-146">例</span><span class="sxs-lookup"><span data-stu-id="e8425-146">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="e8425-147">要求</span><span class="sxs-lookup"><span data-stu-id="e8425-147">Request</span></span>
-<span data-ttu-id="e8425-148">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="e8425-148">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="89389-146">例</span><span class="sxs-lookup"><span data-stu-id="89389-146">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="89389-147">要求</span><span class="sxs-lookup"><span data-stu-id="89389-147">Request</span></span>
+<span data-ttu-id="89389-148">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="89389-148">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_user_from_users"
@@ -75,8 +75,8 @@ Content-length: 551
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="e8425-149">応答</span><span class="sxs-lookup"><span data-stu-id="e8425-149">Response</span></span>
-<span data-ttu-id="e8425-p107">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="e8425-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="89389-149">応答</span><span class="sxs-lookup"><span data-stu-id="89389-149">Response</span></span>
+<span data-ttu-id="89389-p107">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="89389-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -110,3 +110,24 @@ Content-length: 551
   "invitedUser":  [ {  "id": "243b1de4-ad9f-421c-a933-d55305fb165d" } ]
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="89389-153">SDK サンプルコード</span><span class="sxs-lookup"><span data-stu-id="89389-153">SDK sample code</span></span>
+
+# <a name="ctabcs"></a>[<span data-ttu-id="89389-154">Visual</span><span class="sxs-lookup"><span data-stu-id="89389-154">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_user_from_users-Cs-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Example",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/invitation-post.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/invitation-post.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->
