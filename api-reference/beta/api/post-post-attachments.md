@@ -1,62 +1,62 @@
 ---
 title: 添付ファイルを追加する
-description: 添付ファイルを投稿に追加する場合に、この API を使用します。 存在するため
+description: 添付ファイルを投稿に追加する場合に、この API を使用します。 そこから
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: e2584d2bf5670ca3f3bb54001bd6700418ef9b1f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: ffcbc9984774f0e0e59fc2953ddb86d3cc3ce195
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33332055"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33595012"
 ---
-# <a name="add-attachment"></a><span data-ttu-id="15ae2-104">添付ファイルを追加する</span><span class="sxs-lookup"><span data-stu-id="15ae2-104">Add attachment</span></span>
+# <a name="add-attachment"></a><span data-ttu-id="74097-104">添付ファイルを追加する</span><span class="sxs-lookup"><span data-stu-id="74097-104">Add attachment</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="15ae2-p102">[添付ファイル](../resources/attachment.md)を投稿に追加する場合に、この API を使用します。現在、各 REST 要求の合計サイズは 4 MB に制限されているため、追加できる添付ファイルのサイズは 4 MB 未満に制限されます。</span><span class="sxs-lookup"><span data-stu-id="15ae2-p102">Use this API to add an [attachment](../resources/attachment.md) to a post. Since there is currently a limit of 4MB on the total size of each REST request, this limits the size of the attachment you can add to under 4MB.</span></span>
+<span data-ttu-id="74097-p102">[添付ファイル](../resources/attachment.md)を投稿に追加する場合に、この API を使用します。現在、各 REST 要求の合計サイズは 4 MB に制限されているため、追加できる添付ファイルのサイズは 4 MB 未満に制限されます。</span><span class="sxs-lookup"><span data-stu-id="74097-p102">Use this API to add an [attachment](../resources/attachment.md) to a post. Since there is currently a limit of 4MB on the total size of each REST request, this limits the size of the attachment you can add to under 4MB.</span></span>
 
-<span data-ttu-id="15ae2-107">添付ファイルは、次の種類のいずれかにできます。</span><span class="sxs-lookup"><span data-stu-id="15ae2-107">An attachment can be one of the following types:</span></span>
+<span data-ttu-id="74097-107">添付ファイルは、次の種類のいずれかにできます。</span><span class="sxs-lookup"><span data-stu-id="74097-107">An attachment can be one of the following types:</span></span>
 
-* <span data-ttu-id="15ae2-108">ファイル ([fileAttachment](../resources/fileattachment.md) リソース)。</span><span class="sxs-lookup"><span data-stu-id="15ae2-108">A file ([fileAttachment](../resources/fileattachment.md) resource).</span></span>
-* <span data-ttu-id="15ae2-109">項目 ([itemAttachment](../resources/itemattachment.md) リソースで表される連絡先、イベント、メッセージ)。</span><span class="sxs-lookup"><span data-stu-id="15ae2-109">An item (contact, event or message, represented by an [itemAttachment](../resources/itemattachment.md) resource).</span></span>
-* <span data-ttu-id="15ae2-110">ファイルへのリンク ([referenceAttachment](../resources/referenceattachment.md) リソース)。</span><span class="sxs-lookup"><span data-stu-id="15ae2-110">A link to a file ([referenceAttachment](../resources/referenceattachment.md) resource).</span></span>
+* <span data-ttu-id="74097-108">ファイル ([fileAttachment](../resources/fileattachment.md) リソース)。</span><span class="sxs-lookup"><span data-stu-id="74097-108">A file ([fileAttachment](../resources/fileattachment.md) resource).</span></span>
+* <span data-ttu-id="74097-109">項目 ([itemAttachment](../resources/itemattachment.md) リソースで表される連絡先、イベント、メッセージ)。</span><span class="sxs-lookup"><span data-stu-id="74097-109">An item (contact, event or message, represented by an [itemAttachment](../resources/itemattachment.md) resource).</span></span>
+* <span data-ttu-id="74097-110">ファイルへのリンク ([referenceAttachment](../resources/referenceattachment.md) リソース)。</span><span class="sxs-lookup"><span data-stu-id="74097-110">A link to a file ([referenceAttachment](../resources/referenceattachment.md) resource).</span></span>
 
-<span data-ttu-id="15ae2-111">これらの添付ファイル リソースのすべての種類は、[attachment](../resources/attachment.md) リソースから派生します。</span><span class="sxs-lookup"><span data-stu-id="15ae2-111">All these types of attachment resources are derived from the [attachment](../resources/attachment.md) resource.</span></span> 
+<span data-ttu-id="74097-111">これらの添付ファイル リソースのすべての種類は、[attachment](../resources/attachment.md) リソースから派生します。</span><span class="sxs-lookup"><span data-stu-id="74097-111">All these types of attachment resources are derived from the [attachment](../resources/attachment.md) resource.</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="15ae2-112">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="15ae2-112">Permissions</span></span>
-<span data-ttu-id="15ae2-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="15ae2-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="74097-112">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="74097-112">Permissions</span></span>
+<span data-ttu-id="74097-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="74097-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="15ae2-115">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="15ae2-115">Permission type</span></span>      | <span data-ttu-id="15ae2-116">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="15ae2-116">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="74097-115">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="74097-115">Permission type</span></span>      | <span data-ttu-id="74097-116">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="74097-116">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="15ae2-117">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="15ae2-117">Delegated (work or school account)</span></span> | <span data-ttu-id="15ae2-118">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="15ae2-118">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="15ae2-119">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="15ae2-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="15ae2-120">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="15ae2-120">Not supported.</span></span>    |
-|<span data-ttu-id="15ae2-121">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="15ae2-121">Application</span></span> | <span data-ttu-id="15ae2-122">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="15ae2-122">Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="74097-117">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="74097-117">Delegated (work or school account)</span></span> | <span data-ttu-id="74097-118">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="74097-118">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="74097-119">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="74097-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="74097-120">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="74097-120">Not supported.</span></span>    |
+|<span data-ttu-id="74097-121">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="74097-121">Application</span></span> | <span data-ttu-id="74097-122">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="74097-122">Group.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="15ae2-123">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="15ae2-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="74097-123">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="74097-123">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
-<span data-ttu-id="15ae2-124">グループの[会話](../resources/conversation.md)に属する[スレッド](../resources/conversationthread.md)内の[投稿](../resources/post.md)の添付ファイル。</span><span class="sxs-lookup"><span data-stu-id="15ae2-124">Attachments for a [post](../resources/post.md) in a [thread](../resources/conversationthread.md) belonging to a [conversation](../resources/conversation.md) of a group.</span></span>
+<span data-ttu-id="74097-124">グループの[会話](../resources/conversation.md)に属する[スレッド](../resources/conversationthread.md)内の[投稿](../resources/post.md)の添付ファイル。</span><span class="sxs-lookup"><span data-stu-id="74097-124">Attachments for a [post](../resources/post.md) in a [thread](../resources/conversationthread.md) belonging to a [conversation](../resources/conversation.md) of a group.</span></span>
 ```http
 POST /groups/{id}/threads/{id}/posts/{id}/attachments
 POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
 ```
-## <a name="request-headers"></a><span data-ttu-id="15ae2-125">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="15ae2-125">Request headers</span></span>
-| <span data-ttu-id="15ae2-126">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="15ae2-126">Header</span></span>       | <span data-ttu-id="15ae2-127">値</span><span class="sxs-lookup"><span data-stu-id="15ae2-127">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="74097-125">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="74097-125">Request headers</span></span>
+| <span data-ttu-id="74097-126">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="74097-126">Header</span></span>       | <span data-ttu-id="74097-127">値</span><span class="sxs-lookup"><span data-stu-id="74097-127">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="15ae2-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="15ae2-128">Authorization</span></span>  | <span data-ttu-id="15ae2-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="15ae2-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="74097-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="74097-128">Authorization</span></span>  | <span data-ttu-id="74097-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="74097-p104">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="15ae2-131">要求本文</span><span class="sxs-lookup"><span data-stu-id="15ae2-131">Request body</span></span>
-<span data-ttu-id="15ae2-132">要求本文で、[Attachment](../resources/attachment.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="15ae2-132">In the request body, supply a JSON representation of [Attachment](../resources/attachment.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="74097-131">要求本文</span><span class="sxs-lookup"><span data-stu-id="74097-131">Request body</span></span>
+<span data-ttu-id="74097-132">要求本文で、[Attachment](../resources/attachment.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="74097-132">In the request body, supply a JSON representation of [Attachment](../resources/attachment.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="15ae2-133">応答</span><span class="sxs-lookup"><span data-stu-id="15ae2-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="74097-133">応答</span><span class="sxs-lookup"><span data-stu-id="74097-133">Response</span></span>
 
-<span data-ttu-id="15ae2-134">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [Attachment](../resources/attachment.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="15ae2-134">If successful, this method returns `201 Created` response code and [Attachment](../resources/attachment.md) object in the response body.</span></span>
+<span data-ttu-id="74097-134">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [Attachment](../resources/attachment.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="74097-134">If successful, this method returns `201 Created` response code and [Attachment](../resources/attachment.md) object in the response body.</span></span>
 
-## <a name="example-file-attachment"></a><span data-ttu-id="15ae2-135">例 (添付ファイル)</span><span class="sxs-lookup"><span data-stu-id="15ae2-135">Example (file attachment)</span></span>
+## <a name="example-file-attachment"></a><span data-ttu-id="74097-135">例 (添付ファイル)</span><span class="sxs-lookup"><span data-stu-id="74097-135">Example (file attachment)</span></span>
 
-##### <a name="request"></a><span data-ttu-id="15ae2-136">要求</span><span class="sxs-lookup"><span data-stu-id="15ae2-136">Request</span></span>
-<span data-ttu-id="15ae2-137">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="15ae2-137">Here is an example of the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="74097-136">要求</span><span class="sxs-lookup"><span data-stu-id="74097-136">Request</span></span>
+<span data-ttu-id="74097-137">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="74097-137">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_file_attachment_from_post"
@@ -73,10 +73,10 @@ Content-length: 142
 }
 ```
 
-<span data-ttu-id="15ae2-138">要求本文で、[Attachment](../resources/attachment.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="15ae2-138">In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.</span></span>
+<span data-ttu-id="74097-138">要求本文で、[Attachment](../resources/attachment.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="74097-138">In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.</span></span>
 
-##### <a name="response"></a><span data-ttu-id="15ae2-139">応答</span><span class="sxs-lookup"><span data-stu-id="15ae2-139">Response</span></span>
-<span data-ttu-id="15ae2-p105">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="15ae2-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="74097-139">応答</span><span class="sxs-lookup"><span data-stu-id="74097-139">Response</span></span>
+<span data-ttu-id="74097-p105">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="74097-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -96,10 +96,18 @@ Content-length: 162
   "id": "id-value"
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="74097-143">SDK サンプルコード</span><span class="sxs-lookup"><span data-stu-id="74097-143">SDK sample code</span></span>
 
-## <a name="example-item-attachment"></a><span data-ttu-id="15ae2-143">例 (項目の添付ファイル)</span><span class="sxs-lookup"><span data-stu-id="15ae2-143">Example (item attachment)</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="74097-144">Java</span><span class="sxs-lookup"><span data-stu-id="74097-144">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_file_attachment_from_post-Javascript-snippets.md)]
 
-##### <a name="request"></a><span data-ttu-id="15ae2-144">要求</span><span class="sxs-lookup"><span data-stu-id="15ae2-144">Request</span></span>
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+## <a name="example-item-attachment"></a><span data-ttu-id="74097-145">例 (項目の添付ファイル)</span><span class="sxs-lookup"><span data-stu-id="74097-145">Example (item attachment)</span></span>
+
+##### <a name="request"></a><span data-ttu-id="74097-146">要求</span><span class="sxs-lookup"><span data-stu-id="74097-146">Request</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_item_attachment_from_post"
@@ -116,8 +124,8 @@ Content-length: 100
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="15ae2-145">応答</span><span class="sxs-lookup"><span data-stu-id="15ae2-145">Response</span></span>
-<span data-ttu-id="15ae2-p106">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="15ae2-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="74097-147">応答</span><span class="sxs-lookup"><span data-stu-id="74097-147">Response</span></span>
+<span data-ttu-id="74097-p106">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="74097-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -137,13 +145,21 @@ Content-length: 162
   "id": "id-value"
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="74097-151">SDK サンプルコード</span><span class="sxs-lookup"><span data-stu-id="74097-151">SDK sample code</span></span>
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="74097-152">Java</span><span class="sxs-lookup"><span data-stu-id="74097-152">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_item_attachment_from_post-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
-## <a name="example-reference-attachment"></a><span data-ttu-id="15ae2-149">例 (添付ファイルの参照)</span><span class="sxs-lookup"><span data-stu-id="15ae2-149">Example (reference attachment)</span></span>
+## <a name="example-reference-attachment"></a><span data-ttu-id="74097-153">例 (添付ファイルの参照)</span><span class="sxs-lookup"><span data-stu-id="74097-153">Example (reference attachment)</span></span>
 
-##### <a name="request"></a><span data-ttu-id="15ae2-150">要求</span><span class="sxs-lookup"><span data-stu-id="15ae2-150">Request</span></span>
-<span data-ttu-id="15ae2-151">既存の投稿に参照添付ファイルを追加する要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="15ae2-151">Here is an example of a request that adds a reference attachment to an existing post.</span></span>
-<span data-ttu-id="15ae2-152">添付ファイルは、OneDrive 上のフォルダーを指します。</span><span class="sxs-lookup"><span data-stu-id="15ae2-152">The attachment points to a folder on OneDrive.</span></span>
+##### <a name="request"></a><span data-ttu-id="74097-154">要求</span><span class="sxs-lookup"><span data-stu-id="74097-154">Request</span></span>
+<span data-ttu-id="74097-155">既存の投稿に参照添付ファイルを追加する要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="74097-155">Here is an example of a request that adds a reference attachment to an existing post.</span></span>
+<span data-ttu-id="74097-156">添付ファイルは、OneDrive 上のフォルダーを指します。</span><span class="sxs-lookup"><span data-stu-id="74097-156">The attachment points to a folder on OneDrive.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_reference_attachment_from_post",
@@ -165,8 +181,8 @@ Content-length: 319
 } 
 ```
 
-##### <a name="response"></a><span data-ttu-id="15ae2-153">応答</span><span class="sxs-lookup"><span data-stu-id="15ae2-153">Response</span></span>
-<span data-ttu-id="15ae2-154">完全な応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="15ae2-154">Here is an example of a full response.</span></span>
+##### <a name="response"></a><span data-ttu-id="74097-157">応答</span><span class="sxs-lookup"><span data-stu-id="74097-157">Response</span></span>
+<span data-ttu-id="74097-158">完全な応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="74097-158">Here is an example of a full response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -192,6 +208,14 @@ HTTP 201 Created
   "isFolder": true
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="74097-159">SDK サンプルコード</span><span class="sxs-lookup"><span data-stu-id="74097-159">SDK sample code</span></span>
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="74097-160">Java</span><span class="sxs-lookup"><span data-stu-id="74097-160">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_reference_attachment_from_post-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -202,6 +226,10 @@ HTTP 201 Created
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/post-post-attachments.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/post-post-attachments.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/post-post-attachments.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->
