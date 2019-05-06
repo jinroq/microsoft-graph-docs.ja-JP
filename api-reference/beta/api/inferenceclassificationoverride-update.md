@@ -1,15 +1,15 @@
 ---
-title: inferenceClassificationOverride の更新
+title: InferenceClassificationOverride の更新
 description: '指定どおり**** に優先受信トレイの設定の [分類] フィールドを変更します。 '
 localization_priority: Normal
-ms.openlocfilehash: 2a51f482df6df1672182e773ea07290eef9c66dc
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 34ed5e902f7aec2a811e3e6fee150bf093bf8890
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33323717"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33592121"
 ---
-# <a name="update-inferenceclassificationoverride"></a>inferenceClassificationOverride の更新
+# <a name="update-inferenceclassificationoverride"></a>InferenceClassificationOverride の更新
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -89,6 +89,16 @@ Content-type: application/json
   "id": "98f5bdef-576a-404d-a2ea-07a3cf34af4r"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_inferenceclassificationoverride-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_inferenceclassificationoverride-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -99,6 +109,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/inferenceclassificationoverride-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/inferenceclassificationoverride-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

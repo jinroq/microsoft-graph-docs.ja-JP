@@ -3,18 +3,16 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: SharePoint リストに新しいエントリを作成する
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 57b054ae0e70b3694faa7051bf7f7d332499401d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: a7126a20be81018480267cade3416bd79f7e4d76
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33338748"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33598198"
 ---
 # <a name="create-a-new-item-in-a-list"></a>リストに新しいアイテムを作成する
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [list][] に新しい [listItem][] を作成します。
 
@@ -33,7 +31,7 @@ ms.locfileid: "33338748"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items
+POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items
 ```
 
 ## <a name="request-body"></a>要求本文
@@ -47,7 +45,7 @@ POST https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items
 <!-- { "blockType": "request", "name": "create-listitem", "scopes": "sites.readwrite.all" } -->
 
 ```json
-POST https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items
+POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items
 Content-Type: application/json
 
 {
@@ -87,19 +85,27 @@ Content-type: application/json
   }
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create-listitem-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 **注:** 応答オブジェクトは、わかりやすくするために切り詰められています。 実際の呼び出しでは、既定のプロパティが返されます。
 
 [list]: ../resources/list.md
 [listItem]: ../resources/listitem.md
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Add a new item to a SharePoint list.",
   "keywords": "",
   "section": "documentation",
   "tocPath": "ListItem/Create",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/listitem-create.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+} -->

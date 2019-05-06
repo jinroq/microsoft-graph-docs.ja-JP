@@ -3,12 +3,12 @@ title: オープン拡張機能を更新する
 description: 要求本文内のプロパティでオープン拡張機能 (openTypeExtension オブジェクト) を更新します。
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: a90e960faf526f3d4bf51832f150757f261e3438
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: bc8e8446631a0872fc3e7fa73cb0bea36d40672e
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33332998"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33596950"
 ---
 # <a name="update-open-extension"></a>オープン拡張機能を更新する
 
@@ -27,7 +27,7 @@ ms.locfileid: "33332998"
 
 | サポートされているリソース | 委任 (職場または学校のアカウント) | 委任 (個人用 Microsoft アカウント) | アプリケーション |
 |:-----|:-----|:-----|:-----|
-| [device](../resources/device.md) | Directory.AccessAsUser.All | 非サポート | Device.ReadWrite.All |
+| [device](../resources/device.md) | Directory.AccessAsUser.All | サポートされていません | Device.ReadWrite.All |
 | [イベント](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
 | [グループ](../resources/group.md) | Group.ReadWrite.All | サポート対象外 | Group.ReadWrite.All |
 | [グループ イベント](../resources/event.md) | Group.ReadWrite.All | サポート対象外 | 非サポート |
@@ -238,6 +238,14 @@ Content-Type: application/json
     ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_opentypeextension-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- This page was manually created. -->
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -249,6 +257,8 @@ Content-Type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/opentypeextension-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

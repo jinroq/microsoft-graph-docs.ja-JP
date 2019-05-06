@@ -1,19 +1,19 @@
 ---
-title: oAuth2Permissiongrant を取得する
-description: oAuth2Permissiongrant オブジェクトのプロパティとリレーションシップを取得します。
+title: OAuth2Permissiongrant を取得する
+description: OAuth2Permissiongrant オブジェクトのプロパティとリレーションシップを取得します。
 localization_priority: Normal
-ms.openlocfilehash: 482d1f310b6eadcfe7df9e961af4ee4c229e9c12
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: e08b39910073d0dd1590262712c5436cb0220735
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33338220"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33597168"
 ---
-# <a name="get-oauth2permissiongrant"></a>oAuth2Permissiongrant を取得する
+# <a name="get-oauth2permissiongrant"></a>OAuth2Permissiongrant を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-oAuth2Permissiongrant オブジェクトのプロパティとリレーションシップを取得します。
+OAuth2Permissiongrant オブジェクトのプロパティとリレーションシップを取得します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -77,6 +77,16 @@ Content-length: 200
   "resourceId": "resourceId-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_oAuth2Permissiongrant-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_oAuth2Permissiongrant-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -87,6 +97,9 @@ Content-length: 200
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/oauth2permissiongrant-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/oauth2permissiongrant-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

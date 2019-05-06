@@ -4,12 +4,12 @@ description: メッセージをフォルダーに移動します。 これによ
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: c30c6b55f1abceabd093b25b4b551b8c66d91d11
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: c82e0d7554f794197ec9ea546b497494f8f8c73b
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333168"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33597742"
 ---
 # <a name="message-move"></a>メッセージ: move
 
@@ -42,8 +42,8 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/move
 
 | ヘッダー | 値 |
 |:-------|:------|
-| Authorization | `Bearer {token}`. 必須。 |
-| Content-Type | `application/json`. 必須です。 |
+| Authorization | `Bearer {token}` 必須です。 |
+| Content-Type | `application/json` 必須です。 |
 
 ## <a name="request-body"></a>要求本文
 
@@ -51,11 +51,11 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/move
 
 | パラメーター   | 型 |説明|
 |:---------------|:--------|:----------|
-|DestinationId|String|宛先フォルダーの ID、または既知のフォルダー名。 サポートされている既知のフォルダー名の一覧については、「[mailFolder リソースの種類](../resources/mailfolder.md)」を参照してください。|
+|DestinationId|String|宛先フォルダーの ID または既知のフォルダー名です。 サポートされている既知のフォルダー名の一覧については、「[mailFolder リソースの種類](../resources/mailfolder.md)」を参照してください。|
 
 ## <a name="response"></a>応答
 
-成功した場合、この`201 Created`メソッドは応答コードと、応答本文で[メッセージ](../resources/message.md)リソースを返します。
+成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [message](../resources/message.md) リソースを返します。
 
 ## <a name="example"></a>例
 
@@ -63,7 +63,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/move
 
 ##### <a name="request"></a>要求
 
-次の要求は、指定されたメッセージを、既知のフォルダー名`deleteditems`で識別される削除済みアイテムフォルダーに移動します。
+次の要求は、指定されたメッセージを既知のフォルダー名 `deleteditems` で識別される削除済みアイテム フォルダーに移動します。
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkADhAAATs28OAAA="],
@@ -83,7 +83,7 @@ Content-type: application/json
 
 以下は、応答の例です。
 
-> **注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
+> **注:**  ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -164,6 +164,16 @@ Content-type: application/json
     }
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/message_move-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/message_move-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -174,6 +184,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/message-move.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/message-move.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

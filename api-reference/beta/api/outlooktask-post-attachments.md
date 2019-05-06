@@ -1,21 +1,21 @@
 ---
 title: 添付ファイルの作成
-description: この API を使用して、outlooktask に添付ファイルを追加します。
+description: この API を使用して、outlookTask に添付ファイルを追加します。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 75ea292f0695635f0b1b971cd888cfdb19fe5756
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: f383cf5bf3033719441eaf49f1280312496bb94a
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33338013"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33596411"
 ---
 # <a name="create-attachment"></a>添付ファイルを作成する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-この API を使用して、 [outlooktask](../resources/outlooktask.md)に[添付ファイル](../resources/attachment.md)を追加します。
+この API を使用して、 [Outlooktask](../resources/outlooktask.md)に[添付ファイル](../resources/attachment.md)を追加します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -98,6 +98,16 @@ Content-length: 162
   "id": "id-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_attachment_from_outlooktask-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_attachment_from_outlooktask-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -108,6 +118,9 @@ Content-length: 162
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/outlooktask-post-attachments.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/outlooktask-post-attachments.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

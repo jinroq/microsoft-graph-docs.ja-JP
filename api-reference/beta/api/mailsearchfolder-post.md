@@ -1,21 +1,21 @@
 ---
-title: mailsearchfolder を作成する
-description: この API を使用して、指定したユーザーのメールボックスに新しい mailsearchfolder を作成します。
+title: MailSearchFolder を作成する
+description: この API を使用して、指定したユーザーのメールボックスに新しい mailSearchFolder を作成します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: bdebbcb9c842d57d4c6ee8d8eb72f45df74a22d7
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 0c600048961b560364982b8b8ef5cff531ae2031
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333311"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33598221"
 ---
-# <a name="create-mailsearchfolder"></a>mailsearchfolder を作成する
+# <a name="create-mailsearchfolder"></a>MailSearchFolder を作成する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-この API を使用して、指定したユーザーのメールボックスに新しい[mailsearchfolder](../resources/mailsearchfolder.md)を作成します。
+この API を使用して、指定したユーザーのメールボックスに新しい[Mailsearchfolder](../resources/mailsearchfolder.md)を作成します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -42,7 +42,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 | ヘッダー | 値 |
 |:-------|:------|
-| Authorization | `Bearer {token}`. 必須。 |
+| Authorization | `Bearer {token}`. 必須です。 |
 | Content-Type | `application/json`. 必須です。 |
 
 ## <a name="request-body"></a>要求本文
@@ -55,7 +55,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 | displayName | String | 新しいフォルダーの表示名です。|
 | includeNestedFolders | Boolean | メールボックスフォルダー階層をスキャンする方法。 `true`詳細検索を実行`false`する必要がある場合は、その代わりに浅い検索を実行する必要があることを意味します。 |
 | sourceFolderIDs | String collection | マイニングするメールボックスフォルダー。 |
-| filterquery | String | メッセージをフィルター処理するための OData クエリ。 |
+| filterQuery | String | メッセージをフィルター処理するための OData クエリ。 |
 
 ## <a name="response"></a>応答
 
@@ -118,6 +118,14 @@ Content-length: 179
   "filterQuery": "contains(subject, 'MyAnalytics')"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_mailsearchfolder-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -128,6 +136,8 @@ Content-length: 179
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/mailsearchfolder-post.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

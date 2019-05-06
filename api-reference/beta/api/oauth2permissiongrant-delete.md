@@ -1,19 +1,19 @@
 ---
-title: oAuth2PermissionGrant の削除
-description: oAuth2PermissionGrant を削除します。
+title: OAuth2PermissionGrant の削除
+description: OAuth2PermissionGrant を削除します。
 localization_priority: Normal
-ms.openlocfilehash: d5803ae6c4a62e43c2008acb3268e6ac0e6b7e86
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 240462c1c20e3fc3d8ea55c95e348f6c7a7f53a7
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333033"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33597335"
 ---
-# <a name="delete-oauth2permissiongrant"></a>oAuth2PermissionGrant の削除
+# <a name="delete-oauth2permissiongrant"></a>OAuth2PermissionGrant の削除
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-oAuth2PermissionGrant を削除します。
+OAuth2PermissionGrant を削除します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -64,6 +64,16 @@ DELETE https://graph.microsoft.com/beta/oAuth2Permissiongrants/{id}
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/delete_oAuth2Permissiongrant-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/delete_oAuth2Permissiongrant-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -74,6 +84,9 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/oauth2permissiongrant-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/oauth2permissiongrant-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

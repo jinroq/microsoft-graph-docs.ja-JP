@@ -4,12 +4,12 @@ description: 連絡先オブジェクトのプロパティと関係を取得し�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 79f70fb7b7f591e7d17c1286e2900848a415d653
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 1003369d9cb6582fe1d23598925078f8e95bbea1
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33327687"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33591519"
 ---
 # <a name="get-contact"></a>連絡先を取得する
 
@@ -39,7 +39,7 @@ ms.locfileid: "33327687"
 GET /me/contacts/{id}
 GET /users/{id | userPrincipalName}/contacts/{id}
 ```
-ユーザーのトップレベルの[contactfolder](../resources/contactfolder.md)からの[連絡先](../resources/contact.md)。
+ユーザーのトップレベルの[Contactfolder](../resources/contactfolder.md)からの[連絡先](../resources/contact.md)。
 ```http
 GET /me/contactfolders/{Id}/contacts/{id}
 GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts/{id}
@@ -154,6 +154,16 @@ Content-type: application/json
   "weddingAnniversary": null
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_contact-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_contact-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="see-also"></a>関連項目
 
@@ -172,6 +182,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/contact-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/contact-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

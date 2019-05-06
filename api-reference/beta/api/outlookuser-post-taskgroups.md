@@ -1,17 +1,17 @@
 ---
-title: outlooktaskgroup の作成
+title: OutlookTaskGroup の作成
 description: ユーザーのメールボックスに Outlook のタスクグループを作成します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 961b240fe7f2fa60de4b65e4fe3e24d7fadca814
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: f41710971c8d9926a240d090af534d2521871072
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337853"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33595950"
 ---
-# <a name="create-outlooktaskgroup"></a>outlooktaskgroup の作成
+# <a name="create-outlooktaskgroup"></a>OutlookTaskGroup の作成
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -37,7 +37,7 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups
 | Authorization  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
-要求本文で、 [outlooktaskgroup](../resources/outlooktaskgroup.md)オブジェクトの JSON 表記を指定します。
+要求本文で、 [Outlooktaskgroup](../resources/outlooktaskgroup.md)オブジェクトの JSON 表記を指定します。
 
 ## <a name="response"></a>応答
 
@@ -59,7 +59,7 @@ Content-length: 40
   "name": "Leisure tasks"
 }
 ```
-要求本文で、 [outlooktaskgroup](../resources/outlooktaskgroup.md)オブジェクトの JSON 表記を指定します。
+要求本文で、 [Outlooktaskgroup](../resources/outlooktaskgroup.md)オブジェクトの JSON 表記を指定します。
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
@@ -81,6 +81,16 @@ Content-length: 138
 
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_outlooktaskgroup_from_outlookuser-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_outlooktaskgroup_from_outlookuser-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -91,6 +101,9 @@ Content-length: 138
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/outlookuser-post-taskgroups.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/outlookuser-post-taskgroups.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

@@ -1,21 +1,21 @@
 ---
-title: mailsearchfolder を更新する
-description: mailsearchfolder オブジェクトの書き込み可能なプロパティを更新します。
+title: MailSearchFolder を更新する
+description: MailSearchFolder オブジェクトの書き込み可能なプロパティを更新します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 1c51410389d3ed12b8959f5b4d4c98f2fb66e5ad
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: fb11e06ac450aa218a8e1102557eb9e3a79f874c
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33338634"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33598196"
 ---
-# <a name="update-mailsearchfolder"></a>mailsearchfolder を更新する
+# <a name="update-mailsearchfolder"></a>MailSearchFolder を更新する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[mailsearchfolder](../resources/mailsearchfolder.md)オブジェクトの書き込み可能なプロパティを更新します。
+[Mailsearchfolder](../resources/mailsearchfolder.md)オブジェクトの書き込み可能なプロパティを更新します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -44,10 +44,10 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-| displayName | String | [mailfolder](../resources/mailfolder.md)の表示名。|
+| displayName | String | [Mailfolder](../resources/mailfolder.md)の表示名。|
 | includeNestedFolders | Boolean | メールボックスフォルダー階層をスキャンする方法。 `true`詳細検索を実行`false`する必要がある場合は、その代わりに浅い検索を実行する必要があることを意味します。 |
 | sourceFolderIDs | String collection | マイニングするメールボックスフォルダー。 |
-| filterquery | String | メッセージをフィルター処理するための OData クエリ。 |
+| filterQuery | String | メッセージをフィルター処理するための OData クエリ。 |
 
 ## <a name="response"></a>応答
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で更新された [mailFolder](../resources/mailfolder.md) オブジェクトを返します。
@@ -100,6 +100,14 @@ Content-length: 179
   "filterQuery": "contains(subject, 'Analytics')"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_mailsearchfolder-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -110,6 +118,8 @@ Content-length: 179
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/mailsearchfolder-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

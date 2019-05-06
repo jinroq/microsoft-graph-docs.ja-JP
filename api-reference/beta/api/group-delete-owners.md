@@ -4,17 +4,14 @@ description: この API を使用して、owners ナビゲーション プロパ
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: d7dcb29944eb0c6340bfebd391969b3d68db1095
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: e6af69d5db15d7f25735e04dfeee1eaa5f03d780
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33329706"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33593290"
 ---
 # <a name="remove-owner"></a>所有者の削除
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 この API を使用して、owners ナビゲーション プロパティを通じて Office 365 のグループ、セキュリティ グループ、メールが有効なセキュリティ グループから所有者を削除できます。
 
 ## <a name="permissions"></a>アクセス許可
@@ -48,10 +45,10 @@ DELETE /groups/{id}/owners/{id}/$ref
 要求の例を次に示します。
 <!-- {
   "blockType": "request",
-  "name": "create_directoryobject_from_group"
+  "name": "delete_owner_from_group"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/groups/{id}/owners/{id}/$ref
+DELETE https://graph.microsoft.com/v1.0/groups/{id}/owners/{id}/$ref
 ```
 要求内で、$ref セグメント後に削除したいディレクトリ オブジェクトの `id` を指定します。
 
@@ -66,16 +63,27 @@ DELETE https://graph.microsoft.com/beta/groups/{id}/owners/{id}/$ref
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/delete_owner_from_group-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/delete_owner_from_group-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Delete owner",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/group-delete-owners.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/group-delete-owners.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

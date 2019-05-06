@@ -1,19 +1,19 @@
 ---
 title: リスト privilegedRoleAssignmentRequests
-description: 'privilegedRoleAssignmentRequest のコレクションを取得します。 '
+description: 'PrivilegedRoleAssignmentRequest のコレクションを取得します。 '
 localization_priority: Normal
-ms.openlocfilehash: 4e74d159f6ebc677c485232c36607aa79278df2b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 887eeda1c357e31ffa56be0e2e0f9d5f5de041df
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33331997"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33593787"
 ---
 # <a name="list-privilegedroleassignmentrequests"></a>リスト privilegedRoleAssignmentRequests
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md)のコレクションを取得します。 
+[PrivilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md)のコレクションを取得します。 
 
 **注:** この依頼者は、リソースに対して少なくとも1つのロール割り当てを持っている必要があります。
 
@@ -22,7 +22,7 @@ ms.locfileid: "33331997"
 
 |アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | PrivilegedAccess、AzureAD、directory.accessasuser.all のいずれかのディレクトリを取得します。    |
+|委任 (職場または学校のアカウント) | PrivilegedAccess、AzureAD、Directory.accessasuser.all のいずれかのディレクトリを取得します。    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
 |アプリケーション                            | サポートされていません。 |
 
@@ -84,6 +84,16 @@ Content-length: 304
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_privilegedroleassignmentrequest-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_privilegedroleassignmentrequest-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -94,6 +104,9 @@ Content-length: 304
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/privilegedroleassignmentrequest-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/privilegedroleassignmentrequest-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

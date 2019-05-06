@@ -4,17 +4,14 @@ description: 現在のユーザーのお気に入りのグループ一覧から�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: c6e1d81f9b6b95a3122850d09b918e33e07b6dd6
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 5cdaa156dc8a272e74012302b0c83f7cdeeeed37
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324185"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33592561"
 ---
 # <a name="group-removefavorite"></a>グループ: removeFavorite
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 現在のユーザーのお気に入りのグループ一覧からグループを削除します。Office 365 のグループのみをサポートします。
 
 ## <a name="permissions"></a>アクセス許可
@@ -31,7 +28,6 @@ ms.locfileid: "33324185"
 ```http
 POST /groups/{id}/removeFavorite
 ```
-
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値 |
 |:---------------|:--------|
@@ -52,29 +48,38 @@ POST /groups/{id}/removeFavorite
   "name": "group_removefavorite"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/{id}/removeFavorite
+POST https://graph.microsoft.com/v1.0/groups/{id}/removeFavorite
 ```
 
 #### <a name="response"></a>応答
 応答の例を次に示します。
 <!-- {
-  "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.none"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/group_removefavorite-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/group_removefavorite-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "group: removeFavorite",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/group-removefavorite.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/group-removefavorite.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

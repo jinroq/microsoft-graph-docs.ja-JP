@@ -4,12 +4,12 @@ description: 連絡先オブジェクトのプロパティを更新します。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: d0aedb4b4e07409af0ae8c47c4393f4532f91660
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 3a0f730976b01f6e247c199b9989bc8e9ca82c0a
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33327493"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33591477"
 ---
 # <a name="update-contact"></a>連絡先を更新する
 
@@ -27,7 +27,7 @@ ms.locfileid: "33327493"
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
-ユーザーの既定の[contactfolder](../resources/contactfolder.md)からの[連絡先](../resources/contact.md)。
+ユーザーの既定の[Contactfolder](../resources/contactfolder.md)からの[連絡先](../resources/contact.md)。
 ```http
 PATCH /me/contacts/{id}
 PATCH /users/{id | userPrincipalName}/contacts/{id}
@@ -59,7 +59,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |children|String||
 |companyName|String|連絡先の会社の名前。|
 |department|String|連絡先の部署。|
-|displayName|文字列|連絡先の表示名。 後で他のプロパティを更新すると、自動的に生成された値が、指定した displayName 値に上書きされる可能性があることに注意してください。 既存の値を保持するには、更新操作で常に displayName として含めます。|
+|displayName|文字列|連絡先の表示名。 後で他のプロパティを更新すると、指定した displayName 値が自動的に生成された値に上書きされますので、ご注意ください。 既存の値を保持するには、[更新] 操作で必ずその値を displayName として含めてください。|
 |emailAddresses|[typedEmailAddress](../resources/typedemailaddress.md)コレクション|連絡先のメール アドレス。|
 |fileAs|String|連絡先がファイルされる名前。|
 |gender |String |連絡先の性別。 |
@@ -78,15 +78,15 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |postalAddresses |[physicalAddress](../resources/physicaladdress.md)コレクション |自宅住所や勤務先住所など、連絡先に関連付けられた住所。 |
 |profession|String|連絡先の専門的職業。|
 |spouseName|String|連絡先の配偶者/パートナーの名前。|
-|surname|文字列|連絡先の姓。|
+|姓|文字列|連絡先の姓。|
 |title|String|連絡先の肩書。|
 |websites |[website](../resources/website.md) コレクション|連絡先に関連付けられた Web サイト。 |
-|weddinganniversary 日 |日付 |連絡先の結婚記念日。 |
+|weddingAnniversary 日 |日付 |連絡先の結婚記念日。 |
 |yomiCompanyName|String|連絡先の会社名の読み仮名。このプロパティは省略可能です。|
-|yomiGivenName|String|連絡先の名 (ファースト ネーム) の読み仮名。このプロパティは省略可能です。|
-|yomiSurname|文字列|連絡先の姓 (ラスト ネーム) の読み仮名。このプロパティは省略可能です。|
+|yomiGivenName|文字列|連絡先の名 (ファースト ネーム) の読み仮名。このプロパティは省略可能です。|
+|yomiSurname|String|連絡先の姓 (ラスト ネーム) の読み仮名。このプロパティは省略可能です。|
 
-**contact**リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため`PATCH` 、操作を使用して、既存の**連絡先**インスタンスの拡張機能のカスタムプロパティで、独自のアプリ固有のデータを追加、更新、または削除することができます。
+**Contact**リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため`PATCH` 、操作を使用して、既存の**連絡先**インスタンスの拡張機能のカスタムプロパティで、独自のアプリ固有のデータを追加、更新、または削除することができます。
 
 ## <a name="response"></a>応答
 
@@ -200,6 +200,16 @@ Content-type: application/json
     }
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_contact-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_contact-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="see-also"></a>関連項目
 
@@ -219,6 +229,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/contact-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/contact-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

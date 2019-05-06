@@ -2,12 +2,12 @@
 title: inferenceClassificationOverride を作成する
 description: 'SMTP アドレスによって識別される送信者の優先受信トレイの上書きを作成します。 その SMTP アドレスからの今後のメッセージは一貫して分類されます。 '
 localization_priority: Normal
-ms.openlocfilehash: 2548fbe95c3146b8713140003c7cb2a8297404a7
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 26524a50b56e49a7e28192124a94a52ad28ccd7c
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33323657"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33592100"
 ---
 # <a name="create-inferenceclassificationoverride"></a>inferenceClassificationOverride を作成する
 
@@ -89,6 +89,16 @@ Content-type: application/json
   "id": "98f5bdef-576a-404d-a2ea-07a3cf11a9b9"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_inferenceclassificationoverride_from_inferenceclassification-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_inferenceclassificationoverride_from_inferenceclassification-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -99,6 +109,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/inferenceclassification-post-overrides.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/inferenceclassification-post-overrides.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

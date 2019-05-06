@@ -1,26 +1,26 @@
 ---
-title: privilegedRoleAssignmentRequest のキャンセル
-description: privilegedRoleAssignmentRequest を取り消します。
+title: PrivilegedRoleAssignmentRequest のキャンセル
+description: PrivilegedRoleAssignmentRequest を取り消します。
 localization_priority: Normal
-ms.openlocfilehash: 649ec481815ccb4ce903e51ecb98ccf99cdfa77f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 114729351f5ae412cea77e1a97e16fd3d8300849
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337239"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33593858"
 ---
-# <a name="cancel-privilegedroleassignmentrequest"></a>privilegedRoleAssignmentRequest のキャンセル
+# <a name="cancel-privilegedroleassignmentrequest"></a>PrivilegedRoleAssignmentRequest のキャンセル
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md)を取り消します。
+[PrivilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md)を取り消します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | PrivilegedAccess、AzureAD、および directory.accessasuser.all。    |
+|委任 (職場または学校のアカウント) | PrivilegedAccess、AzureAD、および Directory.accessasuser.all。    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
 |アプリケーション                            | サポートされていません。 |
 
@@ -47,9 +47,9 @@ POST /privilegedRoleAssignmentRequests({requestid})/cancel
 
 |エラー コード     | エラー メッセージ              |
 |:--------------------| :---------------------|
-| 400 badrequest | RequestId を Null にすることはできません。 |
-| 400 badrequest | 要求 ID の要求が見つかりません。 |
-| 400 badrequest | 取り消しは、スケジュールされた状態と pendingapproval に対してのみ行うことができます。 |
+| 400 BadRequest | RequestId を Null にすることはできません。 |
+| 400 BadRequest | 要求 ID の要求が見つかりません。 |
+| 400 BadRequest | 取り消しは、スケジュールされた状態と PendingApproval に対してのみ行うことができます。 |
 | 403権限がありません | 要求者が取り消し通話を行うことが許可されていないか、または要求が見つかりません。 |
 
 ## <a name="example"></a>例
@@ -96,6 +96,16 @@ Content-length: 304
     "roleId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/cancel_privilegedRoleAssignmentRequests-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/cancel_privilegedRoleAssignmentRequests-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -106,6 +116,9 @@ Content-length: 304
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/privilegedroleassignmentrequest-cancel.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/privilegedroleassignmentrequest-cancel.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

@@ -4,16 +4,14 @@ description: 会話オブジェクトのプロパティと関係を取得しま�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 43e2ea21f2a5edbc2ddd202e9d0d979319b9b3e5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 45e8b4e8a3d4397a62d1161a145608447f38d5cf
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33327200"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33591253"
 ---
 # <a name="get-conversation"></a>会話を取得する
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 会話オブジェクトのプロパティと関係を取得します。
 ## <a name="permissions"></a>アクセス許可
@@ -52,7 +50,7 @@ GET /groups/{id}/conversations/{id}
   "name": "get_conversation"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/groups/{id}/conversations/{id}
+GET https://graph.microsoft.com/v1.0/groups/{id}/conversations/{id}
 ```
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
@@ -69,7 +67,7 @@ Content-length: 201
 {
   "topic": "topic-value",
   "hasAttachments": true,
-  "lastDeliveredDateTime": "2016-10-19T10:37:00Z",
+  "lastDeliveredDateTime": "datetime-value",
   "uniqueSenders": [
     "uniqueSenders-value"
   ],
@@ -77,16 +75,27 @@ Content-length: 201
   "id": "id-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_conversation-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_conversation-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Get conversation",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/conversation-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/conversation-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

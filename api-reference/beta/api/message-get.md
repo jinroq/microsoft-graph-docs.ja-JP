@@ -1,27 +1,27 @@
 ---
 title: メッセージを取得する
-description: message オブジェクトのプロパティとリレーションシップを取得します。
+description: Message オブジェクトのプロパティとリレーションシップを取得します。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 1cd104f3757b5c4a92773f0a2c7fb705002570fb
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 734d739039be0591770fa49ae41dd48a4c2242ef
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333144"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33598479"
 ---
 # <a name="get-message"></a>メッセージを取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[message](../resources/message.md)オブジェクトのプロパティとリレーションシップを取得します。
+[Message](../resources/message.md)オブジェクトのプロパティとリレーションシップを取得します。
 
 たとえば、メッセージを取得して、メッセージ内のすべての[言及](../resources/mention.md)インスタンスを展開することができます。
 
 `$value`パラメーターを使用し[て、メッセージの MIME コンテンツを取得](/graph/outlook-get-mime-message)できます。
 
-アプリが別のユーザーのメールフォルダーでメッセージを取得できるシナリオは2つあります。
+別のユーザーのメール フォルダーからアプリがメッセージを取得するシナリオは 2 つあります。
 
 * アプリにアプリケーションのアクセス許可がある場合。または
 * あるユーザーからアプリに適切な代理[アクセス許可](#permissions)が与えられ、別のユーザーがそのユーザーとメール フォルダーを共有しているか、そのユーザーに代理アクセスを付与している場合。 [詳細と例](/graph/outlook-share-messages-folders)を参照してください。
@@ -34,8 +34,8 @@ ms.locfileid: "33333144"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | メール readbasic、mail。    |
-|委任 (個人用 Microsoft アカウント) | メール readbasic、mail。    |
+|委任 (職場または学校のアカウント) | メール ReadBasic、Mail。    |
+|委任 (個人用 Microsoft アカウント) | メール ReadBasic、Mail。    |
 |アプリケーション | Mail.Read |
 
 ## <a name="http-request"></a>HTTP 要求
@@ -100,7 +100,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}?$expand=menti
 GET https://graph.microsoft.com/beta/me/messages/AAMkAGI1AAAoZCfHAAA=
 ```
 ##### <a name="response-1"></a>応答 1
-以下は、応答の例です。 **body**プロパティと**uniqueBody**プロパティは、既定の HTML 形式で返されます。
+以下は、応答の例です。 **Body**プロパティと**uniqueBody**プロパティは、既定の HTML 形式で返されます。
 注: 簡潔にするために、ここに示す response オブジェクトは切り詰められています。 実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
@@ -128,6 +128,16 @@ Content-length: 523
     }
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_message-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_message-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ##### <a name="request-2"></a>要求 2
 次の例では、サインインしているユーザーは Dana Swope です。 この例では、Dana のメールボックス内の指定されたメッセージ内のすべてのメンションの詳細を取得します。
@@ -236,6 +246,16 @@ Content-length: 2248
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_mentions_in_message-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_mentions_in_message-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
 ##### <a name="request-3"></a>要求 3
@@ -283,6 +303,16 @@ Content-length: 1550
     }
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_message_in_text-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_message_in_text-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ##### <a name="request-4"></a>要求 4
 
@@ -340,6 +370,16 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_message_internet_headers-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_message_internet_headers-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="see-also"></a>関連項目
 
@@ -357,6 +397,14 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/message-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/message-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/message-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/message-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/message-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/message-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/message-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/message-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Error: get_message_internet_headers/internetMessageHeaders/member/value:\r\n       Expected type String but actual was Binary. Property: value, actual value: 'binary'"
   ]
 }

@@ -1,19 +1,19 @@
 ---
-title: governanceRoleAssignmentRequest のキャンセル
-description: governanceRoleAssignmentRequest を取り消します。
+title: GovernanceRoleAssignmentRequest のキャンセル
+description: GovernanceRoleAssignmentRequest を取り消します。
 localization_priority: Normal
-ms.openlocfilehash: d4573af27def33f11c4c20e11ce99a8b309581fb
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 4972c1f283c08b1304c6a01fdc0acc1d6942aec1
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33329667"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33593521"
 ---
-# <a name="cancel-governanceroleassignmentrequest"></a>governanceRoleAssignmentRequest のキャンセル
+# <a name="cancel-governanceroleassignmentrequest"></a>GovernanceRoleAssignmentRequest のキャンセル
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)を取り消します。
+[GovernanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)を取り消します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -49,8 +49,8 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/cancel
 この API は、HTTP コードの標準に従います。 それに加えて、カスタムエラーコードは以下のとおりです。
 |エラー コード     | エラー メッセージ              | 詳細 |
 |:--------------------| :---------------------|:--------------------|
-| 400 badrequest | RoleAssignmentRequestNotFound | governanceRoleAssignmentRequest は、システムに存在しません。
-| 400 badrequest | RequestCannotBeCancelled    | 、 `Granted` `PendingApproval`、、の状態の要求のみ`PendingAdminDecision`を取り消すことができます。 `PendingApprovalProvisioning`
+| 400 BadRequest | RoleAssignmentRequestNotFound | GovernanceRoleAssignmentRequest は、システムに存在しません。
+| 400 BadRequest | RequestCannotBeCancelled    | 、 `Granted` `PendingApproval`、、の状態の要求のみ`PendingAdminDecision`を取り消すことができます。 `PendingApprovalProvisioning`
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
@@ -72,6 +72,16 @@ POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssign
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/cancel_governanceroleassignmentrequest-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/cancel_governanceroleassignmentrequest-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -82,6 +92,9 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-cancel.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-cancel.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

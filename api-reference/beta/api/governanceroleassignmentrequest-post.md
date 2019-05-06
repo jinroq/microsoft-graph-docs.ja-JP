@@ -1,31 +1,31 @@
 ---
-title: governanceRoleAssignmentRequest を作成する
+title: GovernanceRoleAssignmentRequest を作成する
 description: 役割の割り当てに対して必要な操作を表すための役割の割り当て要求を作成します。 次の表に、操作の一覧を示します。
 localization_priority: Normal
-ms.openlocfilehash: b9b5f701f3f8ad283f589d07b250ce8ea63aa479
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 2ab5328b9841c157a031e3e0ab9ff7599ddcaf57
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33329628"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33593479"
 ---
-# <a name="create-governanceroleassignmentrequest"></a>governanceRoleAssignmentRequest を作成する
+# <a name="create-governanceroleassignmentrequest"></a>GovernanceRoleAssignmentRequest を作成する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 役割の割り当てに対して必要な操作を表すための役割の割り当て要求を作成します。 次の表に、操作の一覧を示します。
 
-| 操作                                   | 型        |
+| Operation                                   | 型        |
 |:--------------------------------------------|:------------|
-| 役割の割り当てを割り当てる                    | adminadd    |
+| 役割の割り当てを割り当てる                    | AdminAdd    |
 | 適格な役割の割り当てをアクティブ化する        | UserAdd     |
-| アクティブ化された役割の割り当てを無効にする     | userremove  |
-| 役割の割り当てを削除する                    | adminremove |
-| 役割の割り当てを更新する                    | adminupdate |
-| 自分の役割の割り当てを拡張するための要求        | userextend  |
-| 役割の割り当てを拡張する                    | adminextend |
+| アクティブ化された役割の割り当てを無効にする     | UserRemove  |
+| 役割の割り当てを削除する                    | AdminRemove |
+| 役割の割り当てを更新する                    | AdminUpdate |
+| 自分の役割の割り当てを拡張するための要求        | UserExtend  |
+| 役割の割り当てを拡張する                    | AdminExtend |
 | 期限切れの役割の割り当てを更新する要求 | UserRenew   |
-| 期限切れの役割の割り当てを更新する            | adminrenew  |
+| 期限切れの役割の割り当てを更新する            | AdminRenew  |
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -64,7 +64,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 | 割り当ての状態  | String                                                   | 割り当ての状態を指定します。 値には、 `Eligible`および`Active`を指定できます。 必須。 |
 | type             | String                                                   | 要求の種類。 値には、 `AdminAdd`、 `UserAdd`、 `AdminUpdate`、 `AdminRemove`、 `UserRemove`、 `UserExtend`、 `UserRenew`、 `AdminRenew`を`AdminExtend`使用できます。 必須です。 |
 | したがっ           | String                                                   | 監査およびレビューの目的で、役割の割り当て要求に対して理由を提供する必要があります。 |
-| スケジューリング         | [governanceSchedule](../resources/governanceschedule.md) | 役割の割り当て要求のスケジュール。 、 `UserAdd` `AdminAdd`、、および`AdminExtend`の要求の種類には、が必要です。 `AdminUpdate` |
+| schedule         | [governanceSchedule](../resources/governanceschedule.md) | 役割の割り当て要求のスケジュール。 、 `UserAdd` `AdminAdd`、、および`AdminExtend`の要求の種類には、が必要です。 `AdminUpdate` |
 
 ## <a name="response"></a>応答
 
@@ -76,13 +76,13 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 
 | エラー コード     | エラー メッセージ                               | 詳細       |
 |:---------------|:--------------------------------------------|:--------------|
-| 400 badrequest | rolenotfound                                | 要求`roleDefinitionId`本文で指定されたが見つかりません。 |
-| 400 badrequest | resourceislocked                            | 要求本文で指定されたリソースはの状態`Locked`にあり、役割の割り当て要求を作成できません。 |
-| 400 badrequest | SubjectNotFound                             | 要求`subjectId`本文で指定されたが見つかりません。 |
-| 400 badrequest | pendingrole割り当て要求                | 保留中の[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)がシステムに既に存在します。 |
-| 400 badrequest | role割り当てが存在する                        | 作成するよう要求された[governanceRoleAssignment](../resources/governanceroleassignment.md)は、システムに既に存在しています。 |
-| 400 badrequest | RoleAssignmentDoesNotExist                  | 更新または拡張が要求された[governanceRoleAssignment](../resources/governanceroleassignment.md)は、システムに存在しません。 |
-| 400 badrequest | role割り当て要求 policyvalidationfailed | [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)は内部ポリシーを満たしていないため、作成することはできません。 |
+| 400 BadRequest | RoleNotFound                                | 要求`roleDefinitionId`本文で指定されたが見つかりません。 |
+| 400 BadRequest | ResourceIsLocked                            | 要求本文で指定されたリソースはの状態`Locked`にあり、役割の割り当て要求を作成できません。 |
+| 400 BadRequest | SubjectNotFound                             | 要求`subjectId`本文で指定されたが見つかりません。 |
+| 400 BadRequest | Pendingrole割り当て要求                | 保留中の[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)がシステムに既に存在します。 |
+| 400 BadRequest | Role割り当てが存在する                        | 作成するよう要求された[GovernanceRoleAssignment](../resources/governanceroleassignment.md)は、システムに既に存在しています。 |
+| 400 BadRequest | RoleAssignmentDoesNotExist                  | 更新または拡張が要求された[governanceRoleAssignment](../resources/governanceroleassignment.md)は、システムに存在しません。 |
+| 400 BadRequest | Role割り当て要求 Policyvalidationfailed | [GovernanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)は内部ポリシーを満たしていないため、作成することはできません。 |
 
 ## <a name="examples"></a>例
 
@@ -100,9 +100,9 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 | roleDefinitionId | String                                                   | はい                      | \<roleDefinitionId\> |
 | subjectId        | String                                                   | はい                      | \<subjectId\> |
 | 割り当ての状態  | String                                                   | はい                      | 対象/アクティブ |
-| type             | String                                                   | はい                      | adminadd |
+| type             | String                                                   | はい                      | AdminAdd |
 | したがっ           | String                                                   | 役割の設定によって異なる |   |
-| スケジューリング         | [governanceSchedule](../resources/governanceschedule.md) | はい                      |   |
+| schedule         | [governanceSchedule](../resources/governanceschedule.md) | はい                      |   |
 
 #### <a name="request"></a>要求
 
@@ -181,6 +181,16 @@ Content-type: application/json
   }
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/governanceroleassignmentrequest_post-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/governanceroleassignmentrequest_post-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="example-2-user-activates-eligible-role"></a>例 2: ユーザーが対象となる役割をアクティブにする
 
@@ -191,10 +201,10 @@ Content-type: application/json
 | resourceId       | String                                                   | はい                      | \<resourceId\> |
 | roleDefinitionId | String                                                   | はい                      | \<roleDefinitionId\> |
 | subjectId        | String                                                   | はい                      | \<subjectId\> |
-| 割り当ての状態  | String                                                   | はい                      | アクティブ |
+| 割り当ての状態  | String                                                   | はい                      | Active |
 | type             | String                                                   | はい                      | UserAdd |
 | したがっ           | String                                                   | 役割の設定によって異なる |   |
-| スケジューリング         | [governanceSchedule](../resources/governanceschedule.md) | はい                      |   |
+| schedule         | [governanceSchedule](../resources/governanceschedule.md) | はい                      |   |
 
 #### <a name="request"></a>要求
 
@@ -294,10 +304,10 @@ Content-type: application/json
 | resourceId       | String                                                   | はい      | \<resourceId\> |
 | roleDefinitionId | String                                                   | はい      | \<roleDefinitionId\> |
 | subjectId        | String                                                   | はい      | \<subjectId\> |
-| 割り当ての状態  | String                                                   | はい      | アクティブ |
-| type             | 文字列                                                   | はい      | userremove |
+| 割り当ての状態  | String                                                   | はい      | Active |
+| type             | 文字列                                                   | はい      | UserRemove |
 | したがっ           | String                                                   | いいえ       |   |
-| スケジューリング         | [governanceSchedule](../resources/governanceschedule.md) | いいえ       |   |
+| schedule         | [governanceSchedule](../resources/governanceschedule.md) | いいえ       |   |
 
 #### <a name="request"></a>要求
 
@@ -365,9 +375,9 @@ Content-type: application/json
 | roleDefinitionId | 文字列                                                   | はい      | \<roleDefinitionId\> |
 | subjectId        | 文字列                                                   | はい      | \<subjectId\> |
 | 割り当ての状態  | 文字列                                                   | はい      | 対象/アクティブ |
-| type             | 文字列                                                   | はい      | adminremove |
+| type             | 文字列                                                   | はい      | AdminRemove |
 | したがっ           | String                                                   | いいえ       |   |
-| スケジューリング         | [governanceSchedule](../resources/governanceschedule.md) | いいえ       |   |
+| schedule         | [governanceSchedule](../resources/governanceschedule.md) | いいえ       |   |
 
 #### <a name="request"></a>要求
 
@@ -433,9 +443,9 @@ Content-type: application/json
 | roleDefinitionId | 文字列                                                   | はい                     | \<roleDefinitionId\> |
 | subjectId        | 文字列                                                   | はい                     | \<subjectId\> |
 | 割り当ての状態  | 文字列                                                   | はい                     | 対象/アクティブ |
-| type             | 文字列                                                   | はい                     | adminupdate |
-| したがっ           | String                                                   | rolesettings に依存 |   |
-| スケジューリング         | [governanceSchedule](../resources/governanceschedule.md) | はい                     |   |
+| type             | 文字列                                                   | はい                     | AdminUpdate |
+| したがっ           | String                                                   | roleSettings に依存 |   |
+| schedule         | [governanceSchedule](../resources/governanceschedule.md) | はい                     |   |
 
 #### <a name="request"></a>要求
 
@@ -514,7 +524,7 @@ Content-type: application/json
 
 ### <a name="example-6-administrator-extends-expiring-role-assignment"></a>例 6: 管理者が期限切れの役割の割り当てを拡張する
 
-この例では、user anucuser の期限切れのロール割り当てを API Management Service 共同作成者に拡張します。
+この例では、user ANUCUSER の期限切れのロール割り当てを API Management Service 共同作成者に拡張します。
 
  >**注:** この例では、アクセス許可に加えて、リソースに対して少なく`Active`とも1つ`owner`の`user access administrator`管理者ロールの割り当て (または) が要求者に割り当てられている必要があります。
 
@@ -522,11 +532,11 @@ Content-type: application/json
 |:-----------------|:---------------------------------------------------------|:------------------------|:--|
 | resourceId       | String                                                   | はい                     | \<resourceId\> |
 | roleDefinitionId | 文字列                                                   | はい                     | \<roleDefinitionId\> |
-| subjectId        | 文字列                                                   | はい                     | \<subjectId\> |
+| subjectId        | String                                                   | はい                     | \<subjectId\> |
 | 割り当ての状態  | String                                                   | はい                     | 対象/アクティブ |
-| type             | String                                                   | はい                     | adminextend |
-| したがっ           | String                                                   | rolesettings に依存 |   |
-| スケジューリング         | [governanceSchedule](../resources/governanceschedule.md) | はい                     |   |
+| type             | String                                                   | はい                     | AdminExtend |
+| したがっ           | String                                                   | roleSettings に依存 |   |
+| schedule         | [governanceSchedule](../resources/governanceschedule.md) | はい                     |   |
 
 #### <a name="request"></a>要求
 
@@ -613,6 +623,19 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-post.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-post.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-post.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-post.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-post.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-post.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-post.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-post.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-post.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-post.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-post.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-post.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

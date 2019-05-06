@@ -4,16 +4,14 @@ description: パートナーテナントに関連付けられている契約オ�
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e35e5d96c7f4210fcad2641a4491570b5a234170
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 0c882198f5dc5bbc78a934d4ad6bfec6a9a1d025
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33327161"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33591600"
 ---
 # <a name="list-contracts"></a>契約書を一覧表示する
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 パートナーテナントに関連付けられている[契約](../resources/contract.md)オブジェクトの一覧を取得します。
 
@@ -39,7 +37,7 @@ GET /contracts
 
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。 
 
-> フィルター処理は、customerId、defaultdomainname、および displayName でサポートされています。
+> フィルター処理は、customerId、defaultDomainName、および displayName でサポートされています。
 
 ## <a name="request-headers"></a>要求ヘッダー
 
@@ -63,7 +61,7 @@ GET /contracts
   "name": "get_contract"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/contracts
+GET https://graph.microsoft.com/v1.0/contracts
 ```
 
 ##### <a name="response"></a>応答
@@ -72,7 +70,7 @@ GET https://graph.microsoft.com/beta/contracts
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.Contract",
+  "@odata.type": "microsoft.graph.contract",
   "isCollection": true
 } -->
 ```http
@@ -91,16 +89,27 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_contract-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_contract-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Get Contract",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/contract-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/contract-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

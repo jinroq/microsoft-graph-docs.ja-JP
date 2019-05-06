@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: アイテムにアクセスするための招待状を送信する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 3b5e0c6ef03af87af9f28745bd73bb0cb886852d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 0fab3f7a25a9f16a3808e4c3ec530132781e0bee
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325292"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33589477"
 ---
 # <a name="send-a-sharing-invitation"></a>共有の招待状を送信する
 
@@ -66,7 +66,7 @@ POST /users/{userId}/drive/items/{itemId}/invite
 | requireSignIn    | Boolean                                         | 共有アイテムを表示するために、招待状の受信者がサインインする必要のある場所を指定します。            |
 | sendInvitation   | ブール値                                         | 電子メールまたは投稿が生成されるのか (false)、アクセス許可のみが作成されるのか (true) を指定します。            |
 | roles            | Collection(String)                              | 共有の招待状の受信者に付与されるロールを指定します。                         |
-| expirationDateTime | DateTimeOffset                       | アクセス許可の有効期限が切れる日時を指定します。 onedrive for business、SharePoint、プレミアム個人用 onedrive のアカウントで利用できます。
+| expirationDateTime | DateTimeOffset                       | アクセス許可の有効期限が切れる日時を指定します。 OneDrive for business、SharePoint、プレミアム個人用 OneDrive のアカウントで利用できます。
 | パスワード           | String                         | 作成者による招待に設定されたパスワード。 省略可能および OneDrive 個人用のみ
 
 ## <a name="example"></a>例
@@ -130,6 +130,16 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/send-sharing-invite-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/send-sharing-invite-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 ### <a name="partial-success-response"></a>正常な応答の一部
 
 複数の受信者への招待では、一部の受信者に対して通知が成功する可能性があります。
@@ -187,14 +197,14 @@ Content-type: application/json
   ]
 }
 ```
-### <a name="sendnotification-errors"></a>sendnotification エラー
+### <a name="sendnotification-errors"></a>SendNotification エラー
 通知の送信が失敗した場合に、入れ子になっ`innererror`たオブジェクト内でアプリに発生する可能性があるその他のエラーを次に示します。 アプリでは、これらを処理する必要はありません。
 
 | コード                           | 説明
 |:-------------------------------|:--------------------------------------------------------------------------------------
 | accountVerificationRequired    | 通知の送信のブロックを解除するには、アカウントの確認が必要です。
 | hipCheckRequired               | HIP を解決する必要があります。 [通知の送信をブロック解除する] チェックボックスをオンにします。
-| exchangeinvaliduser            | 現在のユーザーのメールボックスが見つかりませんでした。
+| exchangeInvalidUser            | 現在のユーザーのメールボックスが見つかりませんでした。
 | exchangeOutOfMailboxQuota      | クォータが不足しています。
 | exchangeMaxRecipients          | 一度に通知を送信できる受信者の最大数を超過しました。
 
@@ -219,6 +229,9 @@ Content-type: application/json
   "keywords": "retrieve,item,metadata",
   "section": "documentation",
   "tocPath": "Sharing/Add permissions",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-invite.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/driveitem-invite.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

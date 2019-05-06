@@ -1,19 +1,19 @@
 ---
-title: governanceRoleSetting の更新
-description: governanceRoleSetting のプロパティを更新します。
+title: GovernanceRoleSetting の更新
+description: GovernanceRoleSetting のプロパティを更新します。
 localization_priority: Normal
-ms.openlocfilehash: d002317a4bf626f9a60cf98f6bd73b2075bf5727
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: a35cec14924ac4d4c41966da3b631dcbfebc2644
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33329703"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33593435"
 ---
-# <a name="update-governancerolesetting"></a>governanceRoleSetting の更新
+# <a name="update-governancerolesetting"></a>GovernanceRoleSetting の更新
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[governanceRoleSetting](../resources/governancerolesetting.md)のプロパティを更新します。
+[GovernanceRoleSetting](../resources/governancerolesetting.md)のプロパティを更新します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -44,9 +44,9 @@ PATCH /privilegedAccess/azureResources/roleSettings/{id}
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |adminEligibleSettings|[governanceRuleSetting](../resources/governancerulesetting.md)コレクション|管理者が対象となる役割の割り当てを追加しようとしたときに評価されるルールの設定。|
-|adminmembersettings|[governanceRuleSetting](../resources/governancerulesetting.md)コレクション|管理者が直接メンバーの役割の割り当てを追加しようとしたときに評価されるルールの設定。|
+|adminMemberSettings|[governanceRuleSetting](../resources/governancerulesetting.md)コレクション|管理者が直接メンバーの役割の割り当てを追加しようとしたときに評価されるルールの設定。|
 |userEligibleSettings|[governanceRuleSetting](../resources/governancerulesetting.md)コレクション|ユーザーが対象となる役割の割り当てを追加しようとしたときに評価されるルールの設定。 これは、現在の`pimforazurerbac`シナリオではサポートされておらず、今後のシナリオで利用できる場合があります。|
-|usermembersettings|[governanceRuleSetting](../resources/governancerulesetting.md)コレクション|ユーザーが役割の割り当てをアクティブ化しようとしたときに評価されるルールの設定。|
+|userMemberSettings|[governanceRuleSetting](../resources/governancerulesetting.md)コレクション|ユーザーが役割の割り当てをアクティブ化しようとしたときに評価されるルールの設定。|
 
 ## <a name="response"></a>応答
 成功した場合、このメソッドは `204 NoContent` 応答コードを返します。応答本文には何も返されません。 
@@ -56,8 +56,8 @@ PATCH /privilegedAccess/azureResources/roleSettings/{id}
 
 |エラー コード     | エラー メッセージ         | 詳細             |
 |:--------------| :---------------------|:--------------------|
-| 400 badrequest| RoleSettingNotFound   | [governanceRoleSetting](../resources/governancerolesetting.md)は、システムに存在しません。
-| 400 badrequest| invalidrolesetting    | 要求本文で指定された[governanceRuleSettings](../resources/governancerulesetting.md)値が無効です。
+| 400 BadRequest| RoleSettingNotFound   | [GovernanceRoleSetting](../resources/governancerolesetting.md)は、システムに存在しません。
+| 400 BadRequest| InvalidRoleSetting    | 要求本文で指定された[governanceRuleSettings](../resources/governancerulesetting.md)値が無効です。
 
 ## <a name="example"></a>例 
 この例では、サブスクリプションの Wingtip Toys-製品のカスタムロール3のロール設定を更新します。
@@ -88,6 +88,16 @@ Content-length: 350
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_governancerolesetting-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_governancerolesetting-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -98,6 +108,9 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/governancerolesetting-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/governancerolesetting-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

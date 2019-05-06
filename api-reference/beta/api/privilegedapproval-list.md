@@ -1,28 +1,28 @@
 ---
-title: リスト privilegedApproval
-description: privilegedapproval オブジェクトのリストを取得します。
+title: privilegedApproval を一覧表示する
+description: Privilegedapproval オブジェクトのリストを取得します。
 localization_priority: Normal
-ms.openlocfilehash: fc682f0cec4e8ad9edfcfafe10e0c4590ea46526
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 2e3adb6a85906c234ff64cf18b193a1156e35d14
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337396"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33596430"
 ---
-# <a name="list-privilegedapproval"></a>リスト privilegedApproval
+# <a name="list-privilegedapproval"></a>privilegedApproval を一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-privilegedapproval オブジェクトのリストを取得します。
+Privilegedapproval オブジェクトのリストを取得します。
 
-クエリの結果をフィルター処理するには、uri 内``$filter``の標準の OData 式を使用します。
+クエリ結果をフィルター処理するには、URI で標準の OData ``$filter`` 式を使用します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | PrivilegedAccess、AzureAD、および directory.accessasuser.all。    |
+|委任 (職場または学校のアカウント) | PrivilegedAccess、AzureAD、および Directory.accessasuser.all。    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
 |アプリケーション | サポートされていません。 |
 
@@ -84,6 +84,16 @@ Content-length: 246
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_privilegedapproval-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_privilegedapproval-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -94,6 +104,9 @@ Content-length: 246
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/privilegedapproval-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/privilegedapproval-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

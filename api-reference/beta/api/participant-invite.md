@@ -4,12 +4,12 @@ description: アクティブな通話に参加者を招待します。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 375d799a6598d1ce453f412851820df49ff98e50
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: ec1a5ee5510ddf2da0cd93cf93a28ee14eaf1b81
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337890"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33595840"
 ---
 # <a name="participant-invite"></a>参加者: 招待
 
@@ -24,7 +24,7 @@ ms.locfileid: "33337890"
 | :-------------- | :--------------------------------------------------------- |
 | 委任 (職場または学校のアカウント)     | サポート対象外                       |
 | 委任 (個人用 Microsoft アカウント) | サポート対象外                       |
-| アプリケーション     | initiategroupcalls を呼び出します。                               |
+| アプリケーション     | InitiateGroupCalls を呼び出します。                               |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -43,7 +43,7 @@ POST /applications/{id}/calls/{id}/participants/invite
 
 | パラメーター      | 型    |説明|
 |:---------------|:--------|:----------|
-|参加者|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)コレクション| 招待する参加者。|
+|participants|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)コレクション| 招待する参加者。|
 |clientContext|String|クライアントコンテキスト。|
 
 ## <a name="response"></a>応答
@@ -97,6 +97,14 @@ HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/participant-invite-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 <br/>
 
 ### <a name="invite-participants-in-existing-p2p-meeting"></a>既存の P2P 会議に参加者を招待する
@@ -722,6 +730,8 @@ Content-Type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/participant-invite.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

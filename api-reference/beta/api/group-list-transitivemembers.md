@@ -4,12 +4,12 @@ description: グループのメンバーの一覧を取得します。 グルー
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 96b68a26eed767884562382e6ef7e262894e23bd
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: fad3ad81268de77116b912153541ca7d147c563a
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33329782"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33592779"
 ---
 # <a name="list-group-transitive-members"></a>グループ推移性のメンバーを一覧表示する
 
@@ -23,11 +23,11 @@ ms.locfileid: "33329782"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | directory.accessasuser.all。 all、user. all、all、all、all、all、user. all    |
+|委任 (職場または学校のアカウント) | Directory.accessasuser.all。 all、user. all、all、all、all、all、User. all    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
 |アプリケーション | ディレクトリ。すべてのユーザーを取得します。 |
 
-> 注: 非表示のメンバーシップグループのメンバーを一覧表示するには、"hidden" アクセス許可が必要です。
+> 注: 非表示のメンバーシップグループのメンバーを一覧表示するには、"Hidden" アクセス許可が必要です。
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -104,6 +104,16 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_group_transitivemembers-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_group_transitivemembers-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -114,6 +124,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/group-list-transitivemembers.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/group-list-transitivemembers.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

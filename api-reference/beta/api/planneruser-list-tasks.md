@@ -1,22 +1,19 @@
 ---
 title: List tasks
 description: ユーザーに割り当てられた **plannertask** オブジェクトのリストを取得します。
-localization_priority: Normal
+localization_priority: Priority
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 821412ff8a8054a2e09f1073af7df732b1f2c9a0
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 5d550551eea2f6c5919399a5294c6cd2ba6430b5
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337657"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33595450"
 ---
 # <a name="list-tasks"></a>タスクを一覧表示する
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 ユーザーに割り当てられた **plannertask** オブジェクトのリストを取得します。
-
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -30,7 +27,8 @@ ms.locfileid: "33337657"
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/planner/tasks
-GET /users/<id>/planner/tasks
+GET /users/{id}/planner/tasks
+GET /drive/root/createdByUser/planner/tasks
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
@@ -55,7 +53,7 @@ GET /users/<id>/planner/tasks
   "name": "get_tasks"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/planner/tasks
+GET https://graph.microsoft.com/v1.0/me/planner/tasks
 ```
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
@@ -101,16 +99,27 @@ Content-length: 833
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_tasks-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_tasks-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List tasks",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/planneruser-list-tasks.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/planneruser-list-tasks.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

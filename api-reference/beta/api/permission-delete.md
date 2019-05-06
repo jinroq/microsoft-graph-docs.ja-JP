@@ -4,16 +4,14 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: アイテムへのアクセスを削除する
 localization_priority: Normal
-ms.openlocfilehash: 20e317edcf4e6bab0370633321c01f9913bbe43c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 0615b33b5b27be3dc07f7a212342252693989797
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33332778"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33595823"
 ---
 # <a name="delete-a-sharing-permission-from-a-file-or-folder"></a>ファイルまたはフォルダーの共有アクセス許可を削除する
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [DriveItem](../resources/driveitem.md) へのアクセスを削除します。
 
@@ -21,6 +19,7 @@ ms.locfileid: "33332778"
 **InheritedFrom** プロパティは `null` である必要があります。
 
 ## <a name="permissions"></a>アクセス許可
+
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
@@ -32,6 +31,7 @@ ms.locfileid: "33332778"
 ## <a name="http-request"></a>HTTP 要求
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 DELETE /drives/{drive-id}/items/{item-id}/permissions/{perm-id}
 DELETE /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}
@@ -46,7 +46,6 @@ DELETE /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-match      | string | この要求ヘッダーが含まれていて、指定された eTag (または cTag) が項目の現在のタグに一致しない場合には、`412 Precondition Failed` 応答が返され、項目は削除されません。 |
 
-
 ## <a name="response"></a>応答
 
 成功した場合、このメソッドは `204 No Content` 応答コードを返します。
@@ -55,10 +54,10 @@ DELETE /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 この例では、現在のユーザーの OneDrive 内の項目 {item-id} から {perm-id} として識別されるアクセス許可を削除します。
 
-<!-- { "blockType": "request", "name": "delete-permission", "scopes": "files.readwrite" }-->
+<!-- { "blockType": "request", "name": "delete-permission", "scopes": "files.readwrite", "tags": "service.graph" }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/me/drive/root/items/{item-id}/permissions/{perm-id}
+DELETE /me/drive/items/{item-id}/permissions/{perm-id}
 ```
 
 ### <a name="response"></a>応答
@@ -68,6 +67,16 @@ DELETE https://graph.microsoft.com/beta/me/drive/root/items/{item-id}/permission
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/delete-permission-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/delete-permission-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="remarks"></a>注釈
 
@@ -75,13 +84,14 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Remove an item's sharing permissions",
   "keywords": "permission, permissions, sharing, remove permissions, delete permissions",
   "section": "documentation",
-  "tocPath": "OneDrive/Item/Delete permission",
-  "suppressions": []
-}
--->
+  "tocPath": "Sharing/Remove permissions",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/permission-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/permission-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+} -->

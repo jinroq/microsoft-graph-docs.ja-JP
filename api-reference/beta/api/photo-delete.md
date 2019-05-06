@@ -2,16 +2,14 @@
 title: 写真を削除する
 description: 写真を削除します。
 localization_priority: Normal
-ms.openlocfilehash: 0635f784de54aed42fba6cd10ef9d795537b1a1e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 373e99324c0ca33e953148acecef0564acf4a37a
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33332664"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33595670"
 ---
 # <a name="delete-photo"></a>写真を削除する
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 写真を削除します。
 ## <a name="permissions"></a>アクセス許可
@@ -49,10 +47,10 @@ DELETE /drive/root/createdByUser/photo
 以下は、要求の例です。
 <!-- {
   "blockType": "request",
-  "name": "delete_photo"
+"name": "delete_photo"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/users/{id|userPrincipalName}/photo
+DELETE https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo
 ```
 ##### <a name="response"></a>応答
 以下は、応答の例です。
@@ -63,16 +61,27 @@ DELETE https://graph.microsoft.com/beta/users/{id|userPrincipalName}/photo
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/delete_photo-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/delete_photo-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Delete photo",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/photo-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/photo-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

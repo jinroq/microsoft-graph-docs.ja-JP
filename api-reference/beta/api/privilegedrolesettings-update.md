@@ -1,19 +1,19 @@
 ---
-title: privilegedRoleSettings の更新
-description: 指定した役割設定の役割設定を更新します。 privilegedRoleSettings オブジェクトが返されます。
+title: PrivilegedRoleSettings の更新
+description: 指定した役割設定の役割設定を更新します。 PrivilegedRoleSettings オブジェクトが返されます。
 localization_priority: Normal
-ms.openlocfilehash: ce04a6e8c61c59f576d3a5e36592ba8ab4373de3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 17f813a72fb88948bd8906924c312ad9fce1dd79
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337264"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33593837"
 ---
-# <a name="update-privilegedrolesettings"></a>privilegedRoleSettings の更新
+# <a name="update-privilegedrolesettings"></a>PrivilegedRoleSettings の更新
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指定した役割設定の役割設定を更新します。 [privilegedRoleSettings](../resources/privilegedrolesettings.md)オブジェクトが返されます。
+指定した役割設定の役割設定を更新します。 [PrivilegedRoleSettings](../resources/privilegedrolesettings.md)オブジェクトが返されます。
 ## <a name="permissions"></a>アクセス許可
 
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -22,7 +22,7 @@ ms.locfileid: "33337264"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | PrivilegedAccess、AzureAD、および directory.accessasuser.all。    |
+|委任 (職場または学校のアカウント) | PrivilegedAccess、AzureAD、および Directory.accessasuser.all。    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
 |アプリケーション | サポートされていません。 |
 
@@ -46,15 +46,15 @@ PUT /privilegedRoles/{id}/settings
 |:---------------|:--------|:----------|
 |elevationDuration|duration|役割がアクティブ化される期間。 必須。|
 |id|string|ロール設定の一意の識別子。 読み取り専用です。 必須です。|
-|isMfaOnElevationConfigurable|boolean|**true**の場合は、mfaonelevation を構成できます。 mfaonelevation を構成できない場合は**false** 。 必須です。|
-|lastglobaladmin|Boolean|内部使用のみ。|
-|maxelavationduration|duration|アクティブ化されたロールの最大期間。 必須です。|
-|mfaonelevation|Boolean|役割をアクティブ化するために MFA が必要な場合は**true** 。 役割をアクティブ化するために MFA が必要でない場合は**false** 。 必須です。|
+|isMfaOnElevationConfigurable|ブール値|**true**の場合は、mfaOnElevation を構成できます。 mfaOnElevation を構成できない場合は**false** 。 必須です。|
+|lastGlobalAdmin|Boolean|内部使用のみ。|
+|maxElavationDuration|duration|アクティブ化されたロールの最大期間。 必須です。|
+|mfaOnElevation|Boolean|役割をアクティブ化するために MFA が必要な場合は**true** 。 役割をアクティブ化するために MFA が必要でない場合は**false** 。 必須です。|
 |minElevationDuration|duration|アクティブ化されたロールの最小期間。 必須です。|
 |notificationToUserOnElevation|Boolean|**true**の場合は、エンドユーザーに役割がアクティブ化されたときに通知を送信します。 **true**の場合は、役割がアクティブ化されたときに通知を送信しません。 必須です。|
 |ticketingInfoOnElevation|Boolean|役割をアクティブ化するときに、チケット情報が必要な場合は**true** 。 **false**を指定すると、役割をアクティブ化するときに、チケットの情報は必要ありません。 必須です。|
-|approvalonelevation|Boolean|ロールをアクティブ化するときに承認が必要な場合は**true** 。 **false**を指定すると、役割をアクティブ化するときに承認が必要ありません。 必須です。|
-|承認の検証 ds|string collection|ライセンス認証に承認が必要な場合は、承認 id のリスト。|
+|approvalOnElevation|Boolean|ロールをアクティブ化するときに承認が必要な場合は**true** 。 **false**を指定すると、役割をアクティブ化するときに承認が必要ありません。 必須です。|
+|承認の検証 Ds|string collection|ライセンス認証に承認が必要な場合は、承認 Id のリスト。|
 
 ## <a name="response"></a>応答
 
@@ -95,6 +95,16 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/put_privilegedrolesettings-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/put_privilegedrolesettings-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -105,6 +115,9 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/privilegedrolesettings-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/privilegedrolesettings-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

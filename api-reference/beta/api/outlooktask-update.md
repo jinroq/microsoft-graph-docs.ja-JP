@@ -1,23 +1,23 @@
 ---
-title: outlooktask) を更新する
+title: Outlooktask) を更新する
 description: Outlook タスクの書き込み可能なプロパティを変更します。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 47a96d7e1fd7044bcc43edac809696c5a3ad2c42
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: fcd0c73e48cf98f52d0c87e3e48acb403d6558b2
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33332704"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33596524"
 ---
-# <a name="update-outlooktask"></a>outlooktask) を更新する
+# <a name="update-outlooktask"></a>Outlooktask) を更新する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Outlook タスクの書き込み可能なプロパティを変更します。
 
-**completedDateTime**プロパティは、**完全な**アクションによって、または明示的に PATCH 操作によって設定できます。 PATCH を使用して**completedDateTime**を設定する場合は、**状態**も`completed`同様にに設定してください。
+**CompletedDateTime**プロパティは、**完全な**アクションによって、または明示的に PATCH 操作によって設定できます。 PATCH を使用して**completedDateTime**を設定する場合は、**状態**も`completed`同様にに設定してください。
 
 既定では、この操作 (および POST、GET、および[完了](../api/outlooktask-complete.md)タスク操作) は、日付関連プロパティを UTC で返します。 `Prefer: outlook.timezone` ヘッダーを使用して、応答内のすべての日付関連プロパティを UTC 以外のタイム ゾーンで表すことができます。
 
@@ -149,6 +149,16 @@ Content-length: 376
 
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_outlooktask-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_outlooktask-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -159,6 +169,9 @@ Content-length: 376
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/outlooktask-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/outlooktask-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->
