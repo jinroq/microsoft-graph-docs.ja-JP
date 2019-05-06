@@ -1,32 +1,32 @@
 ---
-title: Microsoft グラフ API を使用して、アプリケーションでは、ソーシャル ・ インテリジェンスを統合するために
-description: Graph では、コンテキストでは、ユーザーのソーシャル、ソーシャルのジェスチャをサポートしているし、便利な人や社会のデータにアクセスを提供します。
+title: Microsoft Graph API を使用してアプリにソーシャル インテリジェンスを統合する
+description: Microsoft Graph では、コンテキストにおけるユーザーのソーシャル ジェスチャをサポートし、ユーザーとソーシャルに関する役立つデータにアクセスできます。
 localization_priority: Priority
 author: simonhult
 ms.prod: insights
-ms.openlocfilehash: 3ccc574a966c5a0dc81f62fe4fa0a595fb25a982
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 45482d2e47c97b6c09302ab60ff9c031cef1e92a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27944881"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345710"
 ---
-# <a name="use-the-microsoft-graph-api-to-integrate-social-intelligence-in-an-app"></a><span data-ttu-id="9d5c1-103">Microsoft グラフ API を使用して、アプリケーションでは、ソーシャル ・ インテリジェンスを統合するために</span><span class="sxs-lookup"><span data-stu-id="9d5c1-103">Use the Microsoft Graph API to integrate social intelligence in an app</span></span>
+# <a name="use-the-microsoft-graph-api-to-integrate-social-intelligence-in-an-app"></a><span data-ttu-id="0bd0d-103">Microsoft Graph API を使用してアプリにソーシャル インテリジェンスを統合する</span><span class="sxs-lookup"><span data-stu-id="0bd0d-103">Use the Microsoft Graph API to integrate social intelligence in an app</span></span>
 
-> <span data-ttu-id="9d5c1-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="9d5c1-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="9d5c1-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="9d5c1-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9d5c1-106">Graph では、コンテキストでは、ユーザーのソーシャル、ソーシャルのジェスチャをサポートしているし、便利な人や社会のデータにアクセスを提供します。</span><span class="sxs-lookup"><span data-stu-id="9d5c1-106">Microsoft Graph supports social gestures in a user's social context, and provides access to useful people and social data.</span></span>
+<span data-ttu-id="0bd0d-104">Microsoft Graph では、コンテキストにおけるユーザーのソーシャル ジェスチャをサポートし、ユーザーとソーシャルに関する役立つデータにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="0bd0d-104">Microsoft Graph supports social gestures in a user's social context, and provides access to useful people and social data.</span></span>
 
-## <a name="aggregate-and-extract-specific-information-about-people"></a><span data-ttu-id="9d5c1-107">集約し、他のユーザーに関する特定の情報を抽出</span><span class="sxs-lookup"><span data-stu-id="9d5c1-107">Aggregate and extract specific information about people</span></span>
+## <a name="aggregate-and-extract-specific-information-about-people"></a><span data-ttu-id="0bd0d-105">ユーザーに関する特有の情報を集約して抽出する</span><span class="sxs-lookup"><span data-stu-id="0bd0d-105">Aggregate and extract specific information about people</span></span>
 
-<span data-ttu-id="9d5c1-108">メール、連絡先、およびソーシャル ネットワークの間で[ユーザー](../resources/person.md)リソースとユーザー API から、ある人物に関する情報を集約を使用します。</span><span class="sxs-lookup"><span data-stu-id="9d5c1-108">Use the [person](../resources/person.md) resource and the People API to aggregate information about a person from across mail, contacts, and social networks.</span></span> <span data-ttu-id="9d5c1-109">結果は、複数の通信、コラボレーション、および取引関係に基づく妥当性で並べ替えられます。</span><span class="sxs-lookup"><span data-stu-id="9d5c1-109">The results are ordered by their relevance based on multiple communication, collaboration, and business relationships.</span></span> <span data-ttu-id="9d5c1-110">API は、参照、並べ替え、選択、フィルター、またはの条件に基づいてユーザーを検索することができます。</span><span class="sxs-lookup"><span data-stu-id="9d5c1-110">The API lets you browse, sort, select, filter, or search for persons based on your criteria.</span></span>
+<span data-ttu-id="0bd0d-106">[person](../resources/person.md) リソースと People API を使用して、メール、連絡先、およびソーシャル ネットワークから、個人に関する情報を集約することができます。</span><span class="sxs-lookup"><span data-stu-id="0bd0d-106">Use the [person](../resources/person.md) resource and the People API to aggregate information about a person from across mail, contacts, and social networks.</span></span> <span data-ttu-id="0bd0d-107">結果は、複数のコミュニケーション、コラボレーション、およびビジネスのリレーションシップを基に、関連性によって並べられます。</span><span class="sxs-lookup"><span data-stu-id="0bd0d-107">The results are ordered by their relevance, which is determined by the criteria specified in the request and ranked based on multiple communication, collaboration and business relationships.</span></span> <span data-ttu-id="0bd0d-108">API を使用すると、条件に基づいて、個人の閲覧、並べ替え、選択、フィルター、または検索を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="0bd0d-108">The API lets you browse, sort, select, filter, or search for persons based on your criteria.</span></span>
 
-- [<span data-ttu-id="9d5c1-111">ユーザーを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="9d5c1-111">List people</span></span>](../api/user-list-people.md)
+- [<span data-ttu-id="0bd0d-109">ユーザーを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="0bd0d-109">List people</span></span>](../api/user-list-people.md)
 
-## <a name="manage--mentions"></a><span data-ttu-id="9d5c1-112">@-参照投稿を管理します。</span><span class="sxs-lookup"><span data-stu-id="9d5c1-112">Manage @-Mentions</span></span>
+## <a name="manage--mentions"></a><span data-ttu-id="0bd0d-110">@- メンションを管理する</span><span class="sxs-lookup"><span data-stu-id="0bd0d-110">Manage @-Mentions (preview)</span></span>
 
-<span data-ttu-id="9d5c1-113">受信者に通知し、メッセージ内の受信者の注意を引くために呼び出すことは、一般的なソーシャル ジェスチャです。</span><span class="sxs-lookup"><span data-stu-id="9d5c1-113">Calling out a recipient to notify and get the recipient's attention in a message is a common social gesture.</span></span>
-<span data-ttu-id="9d5c1-114">[説明](../resources/mention.md)リソースに関する API[メッセージ](../resources/message.md)の受信者を @ の説明を使用してユーザーに通知するすべてのメッセージを取得するには、軽量のメカニズムを提供やメッセージに記載されている各を取得します。</span><span class="sxs-lookup"><span data-stu-id="9d5c1-114">The [mention](../resources/mention.md) resource and the Mentions API provide a light-weight mechanism to call out a recipient in a [message](../resources/message.md), get all the messages in which a user is notified using an @-mention, or get each mention in a message.</span></span>
+<span data-ttu-id="0bd0d-111">ソーシャルの世界では、メッセージ内で受信者に通知して注意を引くために受信者に呼びかけることが一般的に行われています。</span><span class="sxs-lookup"><span data-stu-id="0bd0d-111">Calling out a recipient to notify and get the recipient's attention in a message is a common social gesture.</span></span>
+<span data-ttu-id="0bd0d-112">[mention](../resources/mention.md) リソースと Mentions API には、[メッセージ](../resources/message.md)内で受信者に呼びかけたり、ユーザーが @-メンションを使用して通知しているすべてのメッセージを取得したり、メッセージの内の各メンションを取得したりする軽量のメカニズムが備わっています。</span><span class="sxs-lookup"><span data-stu-id="0bd0d-112">The [mention](../resources/mention.md) resource and the Mentions API provide a light-weight mechanism to call out a recipient in a [message](../resources/message.md), get all the messages in which a user is notified using an @-mention, or get each mention in a message.</span></span>
 
 <!--
 Include the next sentence when supporting events.
@@ -35,21 +35,21 @@ Include the next sentence when supporting events.
 
 -->
 
-- <span data-ttu-id="9d5c1-115">新しいメッセージ内にメンションを作成する</span><span class="sxs-lookup"><span data-stu-id="9d5c1-115">Create mentions in a new message</span></span>
+- <span data-ttu-id="0bd0d-113">新しいメッセージ内にメンションを作成する</span><span class="sxs-lookup"><span data-stu-id="0bd0d-113">Create mentions in a new message</span></span>
 
-  - [<span data-ttu-id="9d5c1-116">新しいメッセージの一部としてメンションを作成および送信する</span><span class="sxs-lookup"><span data-stu-id="9d5c1-116">Create and send mentions as part of a new message</span></span>](../api/user-sendmail.md#request-2)
-  - [<span data-ttu-id="9d5c1-117">下書きの一部としてメンションを作成する</span><span class="sxs-lookup"><span data-stu-id="9d5c1-117">Create mentions as part of a message draft</span></span>](../api/user-post-messages.md#request-2)
+  - [<span data-ttu-id="0bd0d-114">新しいメッセージの一部としてメンションを作成および送信する</span><span class="sxs-lookup"><span data-stu-id="0bd0d-114">Create and send mentions as part of a new message</span></span>](../api/user-sendmail.md#request-2)
+  - [<span data-ttu-id="0bd0d-115">下書きの一部としてメンションを作成する</span><span class="sxs-lookup"><span data-stu-id="0bd0d-115">Create mentions as part of a message draft</span></span>](../api/user-post-messages.md#request-2)
 
-- <span data-ttu-id="9d5c1-118">メッセージのメンションに関する情報を取得する</span><span class="sxs-lookup"><span data-stu-id="9d5c1-118">Get information about mentions in a message</span></span>
+- <span data-ttu-id="0bd0d-116">メッセージのメンションに関する情報を取得する</span><span class="sxs-lookup"><span data-stu-id="0bd0d-116">Get information about mentions in a message</span></span>
 
-  - [<span data-ttu-id="9d5c1-119">ユーザーに言及する、サインイン中のユーザーのメールボックス内のすべてのメッセージを取得します。</span><span class="sxs-lookup"><span data-stu-id="9d5c1-119">Get all the messages in the signed-in user's mailbox that mention the user</span></span>](../api/user-list-messages.md#request-2)
-  - [<span data-ttu-id="9d5c1-120">メッセージ内の各メンションの詳細の取得</span><span class="sxs-lookup"><span data-stu-id="9d5c1-120">Get details of each mention in a message</span></span>](../api/message-get.md#request-2)
+  - [<span data-ttu-id="0bd0d-117">対象ユーザーについてメンションしている、サインイン ユーザーのメールボックス内のすべてのメッセージを取得する</span><span class="sxs-lookup"><span data-stu-id="0bd0d-117">Get all the messages in the signed-in user's mailbox.</span></span>](../api/user-list-messages.md#request-2)
+  - [<span data-ttu-id="0bd0d-118">特定のメッセージ内の各メンションの詳細を取得する</span><span class="sxs-lookup"><span data-stu-id="0bd0d-118">Get details of each mention in a message</span></span>](../api/message-get.md#request-2)
 
-- <span data-ttu-id="9d5c1-121">メッセージで[参照を削除](../api/message-delete.md#request-2)</span><span class="sxs-lookup"><span data-stu-id="9d5c1-121">[Delete a mention](../api/message-delete.md#request-2) in a message</span></span>
+- <span data-ttu-id="0bd0d-119">特定のメッセージ内の[メンションを削除する](../api/message-delete.md#request-2)</span><span class="sxs-lookup"><span data-stu-id="0bd0d-119">[Delete a mention in a message](../api/message-delete.md#request-2)</span></span>
 
-## <a name="access-social-data-around-and-about-a-user"></a><span data-ttu-id="9d5c1-122">周りと、ユーザーのソーシャル データにアクセス</span><span class="sxs-lookup"><span data-stu-id="9d5c1-122">Access social data around and about a user</span></span>
+## <a name="access-social-data-around-and-about-a-user"></a><span data-ttu-id="0bd0d-120">ユーザーに関するソーシャル データにアクセスする</span><span class="sxs-lookup"><span data-stu-id="0bd0d-120">Access social data around and about a user</span></span>
 
-<span data-ttu-id="9d5c1-123">Office のグラフは、Office 365 内の別のエンティティ間の関係をカプセル化します。</span><span class="sxs-lookup"><span data-stu-id="9d5c1-123">Office Graph encapsulates the relationships between different entities in Office 365.</span></span> <span data-ttu-id="9d5c1-124">Office 365 の間で個々 のユーザーのソーシャル洞察を取得するのにには、Office のグラフを使用します。</span><span class="sxs-lookup"><span data-stu-id="9d5c1-124">Use Office Graph to get social insights into individual users across Office 365.</span></span>
+<span data-ttu-id="0bd0d-121">Office Graph は、Office 365 の各種エンティティ間のリレーションシップをカプセル化します。</span><span class="sxs-lookup"><span data-stu-id="0bd0d-121">Office Graph encapsulates the relationships between different entities in Office 365.</span></span> <span data-ttu-id="0bd0d-122">Office Graph を使用して、Office 365 全体における各ユーザーのソーシャル インサイトを取得できます。</span><span class="sxs-lookup"><span data-stu-id="0bd0d-122">Use Office Graph to get social insights into individual users across Office 365.</span></span>
 
-- <span data-ttu-id="9d5c1-125">アイテム[の周囲にトレンド ・](../api/insights-list-trending.md)ユーザーの一覧を表示します。</span><span class="sxs-lookup"><span data-stu-id="9d5c1-125">List the items [trending around](../api/insights-list-trending.md) a user</span></span>
-- <span data-ttu-id="9d5c1-126">[使用](../api/user-list-people.md)されているユーザーのユーザーを一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="9d5c1-126">List users who have been [working with](../api/user-list-people.md) a user</span></span>
+- <span data-ttu-id="0bd0d-123">ユーザーの[周りで人気急上昇中](../api/insights-list-trending.md)の項目を取得する</span><span class="sxs-lookup"><span data-stu-id="0bd0d-123">List the items [trending around](../api/insights-list-trending.md) a user</span></span>
+- <span data-ttu-id="0bd0d-124">ユーザーと[仕事をしている](../api/user-list-people.md)ユーザーを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="0bd0d-124">List users who have been [working with](../api/user-list-people.md) a user</span></span>

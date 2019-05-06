@@ -4,28 +4,28 @@ description: Microsoft Graph の SharePoint API は、以下の基本的なシ�
 localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: 9edab0f8e4207dac2a88943a0a2cd1cbe58b97e3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27945735"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583915"
 ---
-# <a name="working-with-sharepoint-sites-in-microsoft-graph"></a><span data-ttu-id="ab050-103">Microsoft Graph で SharePoint サイトを開く</span><span class="sxs-lookup"><span data-stu-id="ab050-103">Working with SharePoint sites in Microsoft Graph</span></span>
+# <a name="working-with-sharepoint-sites-in-microsoft-graph"></a><span data-ttu-id="efefe-103">Microsoft Graph で SharePoint サイトを開く</span><span class="sxs-lookup"><span data-stu-id="efefe-103">Working with SharePoint sites in Microsoft Graph</span></span>
 
-<span data-ttu-id="ab050-104">Microsoft Graph の SharePoint API は、以下の基本的なシナリオをサポートしています。</span><span class="sxs-lookup"><span data-stu-id="ab050-104">The SharePoint API in Microsoft Graph supports the following core scenarios:</span></span>
+<span data-ttu-id="efefe-104">Microsoft Graph の SharePoint API は、以下の基本的なシナリオをサポートしています。</span><span class="sxs-lookup"><span data-stu-id="efefe-104">The SharePoint API in Microsoft Graph supports the following core scenarios:</span></span>
 
-* <span data-ttu-id="ab050-105">SharePoint **サイト**、**リスト**、および**ドライブ** (ドキュメント ライブラリ) へのアクセス</span><span class="sxs-lookup"><span data-stu-id="ab050-105">Access to SharePoint **sites**, **lists**, and **drives** (document libraries)</span></span>
-* <span data-ttu-id="ab050-106">**サイト** リソースの読み取り専用サポート (新しいサイトは作成できません)</span><span class="sxs-lookup"><span data-stu-id="ab050-106">Read-only support for **site** resources (no ability to create new sites)</span></span>
-* <span data-ttu-id="ab050-107">**リスト**、**listItem** および **driveItem** の読み取り/書き込みサポート</span><span class="sxs-lookup"><span data-stu-id="ab050-107">Read-write support for **lists**, **listItems**, and **driveItems**</span></span>
-* <span data-ttu-id="ab050-108">SharePoint ID、URL、または相対パスでリソースを指定する</span><span class="sxs-lookup"><span data-stu-id="ab050-108">Address resources by SharePoint ID, URL, or relative path</span></span>
+* <span data-ttu-id="efefe-105">SharePoint **サイト**、**リスト**、および**ドライブ** (ドキュメント ライブラリ) へのアクセス</span><span class="sxs-lookup"><span data-stu-id="efefe-105">Access to SharePoint **sites**, **lists**, and **drives** (document libraries)</span></span>
+* <span data-ttu-id="efefe-106">**サイト** リソースの読み取り専用サポート (新しいサイトは作成できません)</span><span class="sxs-lookup"><span data-stu-id="efefe-106">Read-only support for **site** resources (no ability to create new sites)</span></span>
+* <span data-ttu-id="efefe-107">**リスト**、**listItem** および **driveItem** の読み取り/書き込みサポート</span><span class="sxs-lookup"><span data-stu-id="efefe-107">Read-write support for **lists**, **listItems**, and **driveItems**</span></span>
+* <span data-ttu-id="efefe-108">SharePoint ID、URL、または相対パスでリソースを指定する</span><span class="sxs-lookup"><span data-stu-id="efefe-108">Address resources by SharePoint ID, URL, or relative path</span></span>
 
-<span data-ttu-id="ab050-109">SharePoint API は、次の 3 つの主要なリソースの種類を公開します。</span><span class="sxs-lookup"><span data-stu-id="ab050-109">The SharePoint API exposes three major resource types:</span></span>
+<span data-ttu-id="efefe-109">SharePoint API は、次の 3 つの主要なリソースの種類を公開します。</span><span class="sxs-lookup"><span data-stu-id="efefe-109">The SharePoint API exposes three major resource types:</span></span>
 
-* <span data-ttu-id="ab050-110">[サイト](site.md) _(最上位のオブジェクト)_</span><span class="sxs-lookup"><span data-stu-id="ab050-110">[Site](site.md) _(top-level object)_</span></span>
-* [<span data-ttu-id="ab050-111">リスト</span><span class="sxs-lookup"><span data-stu-id="ab050-111">List</span></span>](list.md)
-* [<span data-ttu-id="ab050-112">ListItem</span><span class="sxs-lookup"><span data-stu-id="ab050-112">ListItem</span></span>](listitem.md)
+* <span data-ttu-id="efefe-110">[サイト](site.md) _(最上位のオブジェクト)_</span><span class="sxs-lookup"><span data-stu-id="efefe-110">[Site](site.md) _(top-level object)_</span></span>
+* [<span data-ttu-id="efefe-111">リスト</span><span class="sxs-lookup"><span data-stu-id="efefe-111">List</span></span>](list.md)
+* [<span data-ttu-id="efefe-112">ListItem</span><span class="sxs-lookup"><span data-stu-id="efefe-112">ListItem</span></span>](listitem.md)
 
-<span data-ttu-id="ab050-113">次に、listItem リソースの例を示します。</span><span class="sxs-lookup"><span data-stu-id="ab050-113">The following is an example of a listItem resource.</span></span>
+<span data-ttu-id="efefe-113">次に、listItem リソースの例を示します。</span><span class="sxs-lookup"><span data-stu-id="efefe-113">The following is an example of a listItem resource.</span></span>
 
 ```json
 {
@@ -59,58 +59,62 @@ ms.locfileid: "27945735"
 }
 ```
 
-<span data-ttu-id="ab050-114">リソースでは、次の異なる 3 つの方法でデータを公開します。</span><span class="sxs-lookup"><span data-stu-id="ab050-114">Resources expose data in three different ways:</span></span>
+<span data-ttu-id="efefe-114">リソースでは、次の異なる 3 つの方法でデータを公開します。</span><span class="sxs-lookup"><span data-stu-id="efefe-114">Resources expose data in three different ways:</span></span>
 
-* <span data-ttu-id="ab050-115">_プロパティ_ (**id** や **name** など) は単純な値を公開します。</span><span class="sxs-lookup"><span data-stu-id="ab050-115">_Properties_ (like **id** and **name**) expose simple values.</span></span>
-* <span data-ttu-id="ab050-116">_ファセット_(**フィールド** や **createdBy** など) は複雑な値を公開します。</span><span class="sxs-lookup"><span data-stu-id="ab050-116">_Facets_ (like **fields** and **createdBy**) expose complex values.</span></span>
-* <span data-ttu-id="ab050-117">_参照_ (**items** など) はその他のリソースのコレクションを指します。</span><span class="sxs-lookup"><span data-stu-id="ab050-117">_References_ (like **items**) point to collections of other resources.</span></span>
+* <span data-ttu-id="efefe-115">_プロパティ_ (**id** や **name** など) は単純な値を公開します。</span><span class="sxs-lookup"><span data-stu-id="efefe-115">_Properties_ (like **id** and **name**) expose simple values.</span></span>
+* <span data-ttu-id="efefe-116">_ファセット_(**フィールド** や **createdBy** など) は複雑な値を公開します。</span><span class="sxs-lookup"><span data-stu-id="efefe-116">_Facets_ (like **fields** and **createdBy**) expose complex values.</span></span>
+* <span data-ttu-id="efefe-117">_参照_ (**items** など) はその他のリソースのコレクションを指します。</span><span class="sxs-lookup"><span data-stu-id="efefe-117">_References_ (like **items**) point to collections of other resources.</span></span>
 
-<span data-ttu-id="ab050-118">`?expand=fields` などの _expand_ クエリ パラメーターで、URL 内の参照を展開することができます。</span><span class="sxs-lookup"><span data-stu-id="ab050-118">You can expand references in your URL with the _expand_ query parameter; for example, `?expand=fields`.</span></span>
-<span data-ttu-id="ab050-119">`?select=id,name` などの _select_ クエリ パラメーターで、特定のプロパティやファセットを要求することができます。</span><span class="sxs-lookup"><span data-stu-id="ab050-119">You can request specific properties and facets with the _select_ query parameter; for example, `?select=id,name`.</span></span>
-<span data-ttu-id="ab050-120">既定では、プロパティとファセットはほとんどが返されるのに対し、参照はいずれも表示されません。</span><span class="sxs-lookup"><span data-stu-id="ab050-120">By default, most properties and facets are returned while all references are hidden.</span></span>
-<span data-ttu-id="ab050-121">効率を高めるには、注目すべきデータだけに _select_ と _expand_ を返すことをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="ab050-121">For efficiency, we recommend that you specify _select_ and _expand_ to only return the data you care about.</span></span>
+<span data-ttu-id="efefe-118">`?expand=fields` などの _expand_ クエリ パラメーターで、URL 内の参照を展開することができます。</span><span class="sxs-lookup"><span data-stu-id="efefe-118">You can expand references in your URL with the _expand_ query parameter; for example, `?expand=fields`.</span></span>
+<span data-ttu-id="efefe-119">`?select=id,name` などの _select_ クエリ パラメーターで、特定のプロパティやファセットを要求することができます。</span><span class="sxs-lookup"><span data-stu-id="efefe-119">You can request specific properties and facets with the _select_ query parameter; for example, `?select=id,name`.</span></span>
+<span data-ttu-id="efefe-120">既定では、プロパティとファセットはほとんどが返されるのに対し、参照はいずれも表示されません。</span><span class="sxs-lookup"><span data-stu-id="efefe-120">By default, most properties and facets are returned while all references are hidden.</span></span>
+<span data-ttu-id="efefe-121">効率を高めるには、注目すべきデータだけに _select_ と _expand_ を返すことをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="efefe-121">For efficiency, we recommend that you specify _select_ and _expand_ to only return the data you care about.</span></span>
 
-## <a name="sharepoint-api-root-resources"></a><span data-ttu-id="ab050-122">SharePoint API のルート リソース</span><span class="sxs-lookup"><span data-stu-id="ab050-122">SharePoint API root resources</span></span>
+## <a name="sharepoint-api-root-resources"></a><span data-ttu-id="efefe-122">SharePoint API のルート リソース</span><span class="sxs-lookup"><span data-stu-id="efefe-122">SharePoint API root resources</span></span>
 
-<span data-ttu-id="ab050-123">以下は、`https://graph.microsoft.com/beta` に関する例です。</span><span class="sxs-lookup"><span data-stu-id="ab050-123">The following examples are relative to `https://graph.microsoft.com/beta`.</span></span>
+<span data-ttu-id="efefe-123">以下は、`https://graph.microsoft.com/beta` に関する例です。</span><span class="sxs-lookup"><span data-stu-id="efefe-123">The following examples are relative to `https://graph.microsoft.com/beta`.</span></span>
 
-| <span data-ttu-id="ab050-124">パス</span><span class="sxs-lookup"><span data-stu-id="ab050-124">Path</span></span>                                   | <span data-ttu-id="ab050-125">説明</span><span class="sxs-lookup"><span data-stu-id="ab050-125">Description</span></span>
+| <span data-ttu-id="efefe-124">パス</span><span class="sxs-lookup"><span data-stu-id="efefe-124">Path</span></span>                                   | <span data-ttu-id="efefe-125">説明</span><span class="sxs-lookup"><span data-stu-id="efefe-125">Description</span></span>
 |:---------------------------------------|:------------------------------------
-| <span data-ttu-id="ab050-126">/sites/root</span><span class="sxs-lookup"><span data-stu-id="ab050-126">/sites/root</span></span>                            | <span data-ttu-id="ab050-127">組織の既定の[サイト][]</span><span class="sxs-lookup"><span data-stu-id="ab050-127">Organization's default [site][].</span></span>
-| <span data-ttu-id="ab050-128">/sites/{site-id}</span><span class="sxs-lookup"><span data-stu-id="ab050-128">/sites/{site-id}</span></span>                       | <span data-ttu-id="ab050-129">ID を使って特定の[サイト][]にアクセスする</span><span class="sxs-lookup"><span data-stu-id="ab050-129">Access a specific [site][] by its ID.</span></span>
-| <span data-ttu-id="ab050-130">/sites/{site-id}/drive</span><span class="sxs-lookup"><span data-stu-id="ab050-130">/sites/{site-id}/drive</span></span>                 | <span data-ttu-id="ab050-131">指定した[サイト][]の既定の[ドライブ](drive.md) (ドキュメント ライブラリ) にアクセスする</span><span class="sxs-lookup"><span data-stu-id="ab050-131">Access the default [drive](drive.md) (document library) for the given [site][].</span></span>
-| <span data-ttu-id="ab050-132">/sites/{site-id}/drives</span><span class="sxs-lookup"><span data-stu-id="ab050-132">/sites/{site-id}/drives</span></span>                | <span data-ttu-id="ab050-133">[サイト][]の下にある[ドライブ](drive.md) (ドキュメント ライブラリ) を列挙する。</span><span class="sxs-lookup"><span data-stu-id="ab050-133">Enumerate the [drives](drive.md) (document libraries) under the [site][].</span></span>
-| <span data-ttu-id="ab050-134">/sites/{site-id}/sites</span><span class="sxs-lookup"><span data-stu-id="ab050-134">/sites/{site-id}/sites</span></span>                 | <span data-ttu-id="ab050-135">[サイト][]の下のサブサイトを列挙する。</span><span class="sxs-lookup"><span data-stu-id="ab050-135">Enumerate the sub-sites under the [site][].</span></span>
-| <span data-ttu-id="ab050-136">/sites/{site-id}/lists</span><span class="sxs-lookup"><span data-stu-id="ab050-136">/sites/{site-id}/lists</span></span>                 | <span data-ttu-id="ab050-137">[サイト](site.md)の下の[リスト](list.md)を列挙する。</span><span class="sxs-lookup"><span data-stu-id="ab050-137">Enumerate the [lists](list.md) under the [site](site.md).</span></span>
-| <span data-ttu-id="ab050-138">/sites/{site-id}/lists/{list-id}/items</span><span class="sxs-lookup"><span data-stu-id="ab050-138">/sites/{site-id}/lists/{list-id}/items</span></span> | <span data-ttu-id="ab050-139">[リスト](list.md)の下の [listItem](listitem.md) を列挙する。</span><span class="sxs-lookup"><span data-stu-id="ab050-139">Enumerate the [listItems](listitem.md) under the [list](list.md).</span></span>
-| <span data-ttu-id="ab050-140">/groups/{group-id}/sites/root</span><span class="sxs-lookup"><span data-stu-id="ab050-140">/groups/{group-id}/sites/root</span></span>          | <span data-ttu-id="ab050-141">グループのチーム [サイト][]にアクセスする</span><span class="sxs-lookup"><span data-stu-id="ab050-141">Access a group's team [site][].</span></span>
+| <span data-ttu-id="efefe-126">/sites/root</span><span class="sxs-lookup"><span data-stu-id="efefe-126">/sites/root</span></span>                            | <span data-ttu-id="efefe-127">組織の既定の[サイト][]</span><span class="sxs-lookup"><span data-stu-id="efefe-127">Organization's default [site][].</span></span>
+| <span data-ttu-id="efefe-128">/sites/{site-id}</span><span class="sxs-lookup"><span data-stu-id="efefe-128">/sites/{site-id}</span></span>                       | <span data-ttu-id="efefe-129">ID を使って特定の[サイト][]にアクセスする</span><span class="sxs-lookup"><span data-stu-id="efefe-129">Access a specific [site][] by its ID.</span></span>
+| <span data-ttu-id="efefe-130">/sites/{site-id}/drive</span><span class="sxs-lookup"><span data-stu-id="efefe-130">/sites/{site-id}/drive</span></span>                 | <span data-ttu-id="efefe-131">指定した[サイト][]の既定の[ドライブ](drive.md) (ドキュメント ライブラリ) にアクセスする</span><span class="sxs-lookup"><span data-stu-id="efefe-131">Access the default [drive](drive.md) (document library) for the given [site][].</span></span>
+| <span data-ttu-id="efefe-132">/sites/{site-id}/drives</span><span class="sxs-lookup"><span data-stu-id="efefe-132">/sites/{site-id}/drives</span></span>                | <span data-ttu-id="efefe-133">[サイト][]の下にある[ドライブ](drive.md) (ドキュメント ライブラリ) を列挙する。</span><span class="sxs-lookup"><span data-stu-id="efefe-133">Enumerate the [drives](drive.md) (document libraries) under the [site][].</span></span>
+| <span data-ttu-id="efefe-134">/sites/{site-id}/sites</span><span class="sxs-lookup"><span data-stu-id="efefe-134">/sites/{site-id}/sites</span></span>                 | <span data-ttu-id="efefe-135">[サイト][]の下のサブサイトを列挙する。</span><span class="sxs-lookup"><span data-stu-id="efefe-135">Enumerate the sub-sites under the [site][].</span></span>
+| <span data-ttu-id="efefe-136">/sites/{site-id}/lists</span><span class="sxs-lookup"><span data-stu-id="efefe-136">/sites/{site-id}/lists</span></span>                 | <span data-ttu-id="efefe-137">[サイト](site.md)の下の[リスト](list.md)を列挙する。</span><span class="sxs-lookup"><span data-stu-id="efefe-137">Enumerate the [lists](list.md) under the [site](site.md).</span></span>
+| <span data-ttu-id="efefe-138">/sites/{site-id}/lists/{list-id}/items</span><span class="sxs-lookup"><span data-stu-id="efefe-138">/sites/{site-id}/lists/{list-id}/items</span></span> | <span data-ttu-id="efefe-139">[リスト](list.md)の下の [listItem](listitem.md) を列挙する。</span><span class="sxs-lookup"><span data-stu-id="efefe-139">Enumerate the [listItems](listitem.md) under the [list](list.md).</span></span>
+| <span data-ttu-id="efefe-140">/groups/{group-id}/sites/root</span><span class="sxs-lookup"><span data-stu-id="efefe-140">/groups/{group-id}/sites/root</span></span>          | <span data-ttu-id="efefe-141">グループのチーム [サイト][]にアクセスする</span><span class="sxs-lookup"><span data-stu-id="efefe-141">Access a group's team [site][].</span></span>
 
-<span data-ttu-id="ab050-p102">サイトは、SharePoint のホスト名の後にコロンとサイトへの相対パスを入れる形で指定できます。最後にコロン (:) を入れるとリソースモデル指定画面に戻れます (オプション)。</span><span class="sxs-lookup"><span data-stu-id="ab050-p102">Sites can also be addressed by path by using the SharePoint hostname, followed by a colon and the relative path to the site. You can optionally transition back to addressing the resource model by putting another colon at the end.</span></span>
+<span data-ttu-id="efefe-p102">サイトは、SharePoint のホスト名の後にコロンとサイトへの相対パスを入れる形で指定できます。最後にコロン (:) を入れるとリソースモデル指定画面に戻れます (オプション)。</span><span class="sxs-lookup"><span data-stu-id="efefe-p102">Sites can also be addressed by path by using the SharePoint hostname, followed by a colon and the relative path to the site. You can optionally transition back to addressing the resource model by putting another colon at the end.</span></span>
 
-| <span data-ttu-id="ab050-144">パス</span><span class="sxs-lookup"><span data-stu-id="ab050-144">Path</span></span>                                           | <span data-ttu-id="ab050-145">説明</span><span class="sxs-lookup"><span data-stu-id="ab050-145">Description</span></span>
+| <span data-ttu-id="efefe-144">パス</span><span class="sxs-lookup"><span data-stu-id="efefe-144">Path</span></span>                                           | <span data-ttu-id="efefe-145">説明</span><span class="sxs-lookup"><span data-stu-id="efefe-145">Description</span></span>
 |:-----------------------------------------------|:-----------------------------------
-| <span data-ttu-id="ab050-146">/sites/contoso.sharepoint.com:/teams/hr</span><span class="sxs-lookup"><span data-stu-id="ab050-146">/sites/contoso.sharepoint.com:/teams/hr</span></span>        | <span data-ttu-id="ab050-147">関連付けられているサイトhttps://contoso.sharepoint.com/teams/hr</span><span class="sxs-lookup"><span data-stu-id="ab050-147">The site associated with https://contoso.sharepoint.com/teams/hr</span></span>
-| <span data-ttu-id="ab050-148">/sites/contoso.sharepoint.com:/teams/hr:/drive</span><span class="sxs-lookup"><span data-stu-id="ab050-148">/sites/contoso.sharepoint.com:/teams/hr:/drive</span></span> | <span data-ttu-id="ab050-149">このサイトの既定の[ドライブ](drive.md)にアクセスする</span><span class="sxs-lookup"><span data-stu-id="ab050-149">Access the default [drive](drive.md) for this site.</span></span>
+| <span data-ttu-id="efefe-146">/sites/contoso.sharepoint.com:/teams/hr</span><span class="sxs-lookup"><span data-stu-id="efefe-146">/sites/contoso.sharepoint.com:/teams/hr</span></span>        | <span data-ttu-id="efefe-147">https://contoso.sharepoint.com/teams/hr に関連付けられているサイト</span><span class="sxs-lookup"><span data-stu-id="efefe-147">The site associated with https://contoso.sharepoint.com/teams/hr</span></span>
+| <span data-ttu-id="efefe-148">/sites/contoso.sharepoint.com:/teams/hr:/drive</span><span class="sxs-lookup"><span data-stu-id="efefe-148">/sites/contoso.sharepoint.com:/teams/hr:/drive</span></span> | <span data-ttu-id="efefe-149">このサイトの既定の[ドライブ](drive.md)にアクセスする</span><span class="sxs-lookup"><span data-stu-id="efefe-149">Access the default [drive](drive.md) for this site.</span></span>
 
-## <a name="note-for-existing-sharepoint-developers"></a><span data-ttu-id="ab050-150">既存の SharePoint 開発者向けのメモ</span><span class="sxs-lookup"><span data-stu-id="ab050-150">Note for existing SharePoint developers</span></span>
+## <a name="note-for-existing-sharepoint-developers"></a><span data-ttu-id="efefe-150">既存の SharePoint 開発者向けのメモ</span><span class="sxs-lookup"><span data-stu-id="efefe-150">Note for existing SharePoint developers</span></span>
 
-<span data-ttu-id="ab050-p103">Microsoft Graph の SharePoint API は、CSOM API と大きく異なる点がいくつかあります。[サイト][]のリソースは `SPWeb` にマッピングされます。サイト コレクションのルート[サイト][] (`SPWeb`) には、`SPSite` に関する情報を含む [siteCollection](sitecollection.md) ファセットが含まれています。サイトの ID はそのサイト コレクション内でのみ一意であり、ID でサイトを指定する場合、サイト コレクション識別子とサイト識別子の両方を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ab050-p103">The Microsoft Graph SharePoint API has a few key differences with the CSOM APIs. The [site][] resource maps to `SPWeb`. The root [site][] (`SPWeb`) in a site collection has a [siteCollection](sitecollection.md) facet, which contains information about the `SPSite`. Because IDs for sites are only unique within their site collection, addressing a site by ID requires providing both the site collection identifier and the site identifier.</span></span>
+<span data-ttu-id="efefe-151">Microsoft Graph の SharePoint API は、CSOM API と大きく異なる点がいくつかあります。</span><span class="sxs-lookup"><span data-stu-id="efefe-151">The Microsoft Graph SharePoint API has a few key differences with the CSOM APIs.</span></span>
+<span data-ttu-id="efefe-152">[サイト][] リソースは `SPWeb` にマッピングされます。</span><span class="sxs-lookup"><span data-stu-id="efefe-152">The [site][] resource maps to `SPWeb`.</span></span>
+<span data-ttu-id="efefe-153">サイト コレクションのルート [サイト][] (`SPWeb`) には、`SPSite` に関する情報を含む [siteCollection](sitecollection.md) ファセットが含まれています。</span><span class="sxs-lookup"><span data-stu-id="efefe-153">The root [site][] (`SPWeb`) in a site collection has a [siteCollection](sitecollection.md) facet, which contains information about the `SPSite`.</span></span>
+<span data-ttu-id="efefe-154">サイトの ID はそのサイト コレクション内でのみ一意であり、ID でサイトを指定する場合、サイト コレクション識別子とサイト識別子の両方を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="efefe-154">Because IDs for sites are only unique within their site collection, addressing a site by ID requires providing both the site collection identifier and the site identifier.</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/sites/{hostname},{spsite-id},{spweb-id}/
 ```
-<span data-ttu-id="ab050-155">ホスト名のみで作成された URL は、既定のサイト コレクションのルート サイト (`SPWeb`) をポイントします。</span><span class="sxs-lookup"><span data-stu-id="ab050-155">A URL constructed with only the hostname will point to the root site (`SPWeb`) in the default site collection.</span></span>
+<span data-ttu-id="efefe-155">ホスト名のみで作成された URL は、既定のサイト コレクションのルート サイト (`SPWeb`) をポイントします。</span><span class="sxs-lookup"><span data-stu-id="efefe-155">A URL constructed with only the hostname will point to the root site (`SPWeb`) in the default site collection.</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/sites/{hostname}
 ```
 
-<span data-ttu-id="ab050-156">ホスト名と siteCollection (`SPSite`) ID のみで作成された URL は、指定したサイト コレクションのルート サイト (`SPWeb`) をポイントします。</span><span class="sxs-lookup"><span data-stu-id="ab050-156">A URL constructed with only the hostname and siteCollection (`SPSite`) ID will point to the root site (`SPWeb`) in the given site collection.</span></span>
+<span data-ttu-id="efefe-156">ホスト名と siteCollection (`SPSite`) ID のみで作成された URL は、指定したサイト コレクションのルート サイト (`SPWeb`) をポイントします。</span><span class="sxs-lookup"><span data-stu-id="efefe-156">A URL constructed with only the hostname and siteCollection (`SPSite`) ID will point to the root site (`SPWeb`) in the given site collection.</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/sites/{hostname},{spsite-id}
 ```
 
+[サイト]: site.md
 [site]: site.md
 [list]: list.md
 [drive]: drive.md
