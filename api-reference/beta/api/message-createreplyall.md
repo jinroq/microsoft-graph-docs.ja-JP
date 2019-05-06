@@ -4,12 +4,12 @@ description: '全員に返信メッセージの下書きを作成してコメン
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: f863f0d1e6c4422a33ddb82009547c88020dbb75
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 6ce0f40c980465896043905bfb868ef538800a00
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333193"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33598019"
 ---
 # <a name="message-createreplyall"></a>メッセージ: createReplyAll
 
@@ -53,14 +53,14 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReplyA
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |comment|String|含めるコメントです。空の文字列にすることができます。|
-|メッセージ​​|[メッセージ](../resources/message.md)|全員に返信メッセージで更新する書き込み可能なプロパティです。|
+|message|[message](../resources/message.md)|全員に返信メッセージで更新する書き込み可能なプロパティです。|
 
 ## <a name="response"></a>応答
 
 成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [message](../resources/message.md) オブジェクトを返します。
 
 ## <a name="example"></a>例
-次の例では、全員に返信する下書きを作成し、1つの**createreplyall**呼び出しで添付ファイルとコメントをすべて追加します。
+次の例では、全員に返信する下書きを作成し、1つの**Createreplyall**呼び出しで添付ファイルとコメントをすべて追加します。
 ##### <a name="request"></a>要求
 以下は、要求の例です。
 <!-- {
@@ -129,6 +129,14 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/message_createreplyall-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -139,6 +147,8 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/message-createreplyall.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->
