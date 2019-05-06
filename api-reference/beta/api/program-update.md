@@ -2,56 +2,56 @@
 title: プログラムの更新
 description: Azure AD access レビュー機能で、既存のプログラムオブジェクトを更新します。
 localization_priority: Normal
-ms.openlocfilehash: 1097ae014537f285238a9ca7f7f231513aa578e0
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: ca668a84fc39601d94f71c1666b975f3b61a6802
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337160"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33611165"
 ---
-# <a name="update-program"></a><span data-ttu-id="c9e01-103">プログラムの更新</span><span class="sxs-lookup"><span data-stu-id="c9e01-103">Update program</span></span>
+# <a name="update-program"></a><span data-ttu-id="e1893-103">プログラムの更新</span><span class="sxs-lookup"><span data-stu-id="e1893-103">Update program</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c9e01-104">Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、既存の[プログラム](../resources/program.md)オブジェクトを更新します。</span><span class="sxs-lookup"><span data-stu-id="c9e01-104">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, update an existing [program](../resources/program.md) object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="c9e01-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="c9e01-105">Permissions</span></span>
-<span data-ttu-id="c9e01-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c9e01-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e1893-104">Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、既存の[プログラム](../resources/program.md)オブジェクトを更新します。</span><span class="sxs-lookup"><span data-stu-id="e1893-104">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, update an existing [program](../resources/program.md) object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="e1893-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="e1893-105">Permissions</span></span>
+<span data-ttu-id="e1893-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e1893-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c9e01-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="c9e01-108">Permission type</span></span>                        | <span data-ttu-id="c9e01-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="c9e01-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e1893-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="e1893-108">Permission type</span></span>                        | <span data-ttu-id="e1893-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="e1893-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c9e01-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="c9e01-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="c9e01-111">programcontrol</span><span class="sxs-lookup"><span data-stu-id="c9e01-111">ProgramControl.ReadWrite.All</span></span>   |
-|<span data-ttu-id="c9e01-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="c9e01-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c9e01-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c9e01-113">Not supported.</span></span> |
-|<span data-ttu-id="c9e01-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="c9e01-114">Application</span></span>                            | <span data-ttu-id="c9e01-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c9e01-115">Not supported.</span></span> |
+|<span data-ttu-id="e1893-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="e1893-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="e1893-111">ProgramControl.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e1893-111">ProgramControl.ReadWrite.All</span></span>   |
+|<span data-ttu-id="e1893-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="e1893-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e1893-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e1893-113">Not supported.</span></span> |
+|<span data-ttu-id="e1893-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="e1893-114">Application</span></span>                            | <span data-ttu-id="e1893-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e1893-115">Not supported.</span></span> |
 
-<span data-ttu-id="c9e01-116">サインインしているユーザーは、プログラムの更新を許可するディレクトリロールにある必要もあります。</span><span class="sxs-lookup"><span data-stu-id="c9e01-116">The signed in user must also be in a directory role that permits them to update a program.</span></span>
+<span data-ttu-id="e1893-116">サインインしているユーザーは、プログラムの更新を許可するディレクトリロールにある必要もあります。</span><span class="sxs-lookup"><span data-stu-id="e1893-116">The signed in user must also be in a directory role that permits them to update a program.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="c9e01-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="c9e01-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e1893-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="e1893-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /programs('{programId}')
 ```
-## <a name="request-headers"></a><span data-ttu-id="c9e01-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="c9e01-118">Request headers</span></span>
-| <span data-ttu-id="c9e01-119">名前</span><span class="sxs-lookup"><span data-stu-id="c9e01-119">Name</span></span>         | <span data-ttu-id="c9e01-120">型</span><span class="sxs-lookup"><span data-stu-id="c9e01-120">Type</span></span>        | <span data-ttu-id="c9e01-121">説明</span><span class="sxs-lookup"><span data-stu-id="c9e01-121">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="e1893-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="e1893-118">Request headers</span></span>
+| <span data-ttu-id="e1893-119">名前</span><span class="sxs-lookup"><span data-stu-id="e1893-119">Name</span></span>         | <span data-ttu-id="e1893-120">型</span><span class="sxs-lookup"><span data-stu-id="e1893-120">Type</span></span>        | <span data-ttu-id="e1893-121">説明</span><span class="sxs-lookup"><span data-stu-id="e1893-121">Description</span></span> |
 |:-------------|:------------|:------------|
-| <span data-ttu-id="c9e01-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="c9e01-122">Authorization</span></span> | <span data-ttu-id="c9e01-123">string</span><span class="sxs-lookup"><span data-stu-id="c9e01-123">string</span></span> | <span data-ttu-id="c9e01-p102">ベアラー \{トークン\}。必須。</span><span class="sxs-lookup"><span data-stu-id="c9e01-p102">Bearer \{token\}. Required.</span></span> |
+| <span data-ttu-id="e1893-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="e1893-122">Authorization</span></span> | <span data-ttu-id="e1893-123">string</span><span class="sxs-lookup"><span data-stu-id="e1893-123">string</span></span> | <span data-ttu-id="e1893-p102">ベアラー \{トークン\}。必須。</span><span class="sxs-lookup"><span data-stu-id="e1893-p102">Bearer \{token\}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="c9e01-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="c9e01-126">Request body</span></span>
-<span data-ttu-id="c9e01-127">要求本文で、[プログラム](../resources/program.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="c9e01-127">In the request body, supply a JSON representation of a [program](../resources/program.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e1893-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="e1893-126">Request body</span></span>
+<span data-ttu-id="e1893-127">要求本文で、[プログラム](../resources/program.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="e1893-127">In the request body, supply a JSON representation of a [program](../resources/program.md) object.</span></span>
 
-<span data-ttu-id="c9e01-128">次の表は、プログラムの更新時に提供できるプロパティを示しています。</span><span class="sxs-lookup"><span data-stu-id="c9e01-128">The following table shows the properties that can be supplied when you update a program.</span></span>
+<span data-ttu-id="e1893-128">次の表は、プログラムの更新時に提供できるプロパティを示しています。</span><span class="sxs-lookup"><span data-stu-id="e1893-128">The following table shows the properties that can be supplied when you update a program.</span></span>
 
-| <span data-ttu-id="c9e01-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="c9e01-129">Property</span></span>     | <span data-ttu-id="c9e01-130">型</span><span class="sxs-lookup"><span data-stu-id="c9e01-130">Type</span></span>        | <span data-ttu-id="c9e01-131">説明</span><span class="sxs-lookup"><span data-stu-id="c9e01-131">Description</span></span> |
+| <span data-ttu-id="e1893-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="e1893-129">Property</span></span>     | <span data-ttu-id="e1893-130">型</span><span class="sxs-lookup"><span data-stu-id="e1893-130">Type</span></span>        | <span data-ttu-id="e1893-131">説明</span><span class="sxs-lookup"><span data-stu-id="e1893-131">Description</span></span> |
 |:-------------|:------------|:------------|
-| `displayName`               |`String`                              |  <span data-ttu-id="c9e01-132">プログラムの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="c9e01-132">The name of the program.</span></span>                   |
-| `description`               |`String`                              |  <span data-ttu-id="c9e01-133">プログラムの説明。</span><span class="sxs-lookup"><span data-stu-id="c9e01-133">The description of the program.</span></span>           |
+| `displayName`               |`String`                              |  <span data-ttu-id="e1893-132">プログラムの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="e1893-132">The name of the program.</span></span>                   |
+| `description`               |`String`                              |  <span data-ttu-id="e1893-133">プログラムの説明。</span><span class="sxs-lookup"><span data-stu-id="e1893-133">The description of the program.</span></span>           |
 
 
-## <a name="response"></a><span data-ttu-id="c9e01-134">応答</span><span class="sxs-lookup"><span data-stu-id="c9e01-134">Response</span></span>
-<span data-ttu-id="c9e01-135">成功した場合、このメソッド`204, Accepted`は応答コードと、応答本文で[プログラム](../resources/program.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="c9e01-135">If successful, this method returns a `204, Accepted` response code and [program](../resources/program.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="e1893-134">応答</span><span class="sxs-lookup"><span data-stu-id="e1893-134">Response</span></span>
+<span data-ttu-id="e1893-135">成功した場合、このメソッド`204, Accepted`は応答コードと、応答本文で[プログラム](../resources/program.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="e1893-135">If successful, this method returns a `204, Accepted` response code and [program](../resources/program.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c9e01-136">例</span><span class="sxs-lookup"><span data-stu-id="c9e01-136">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="c9e01-137">要求</span><span class="sxs-lookup"><span data-stu-id="c9e01-137">Request</span></span>
-<span data-ttu-id="c9e01-138">要求本文で、変更する[プログラム](../resources/program.md)オブジェクトのパラメーターの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="c9e01-138">In the request body, supply a JSON representation of the [program](../resources/program.md) object parameters to change.</span></span>
+## <a name="example"></a><span data-ttu-id="e1893-136">例</span><span class="sxs-lookup"><span data-stu-id="e1893-136">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="e1893-137">要求</span><span class="sxs-lookup"><span data-stu-id="e1893-137">Request</span></span>
+<span data-ttu-id="e1893-138">要求本文で、変更する[プログラム](../resources/program.md)オブジェクトのパラメーターの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="e1893-138">In the request body, supply a JSON representation of the [program](../resources/program.md) object parameters to change.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -66,8 +66,8 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="c9e01-139">応答</span><span class="sxs-lookup"><span data-stu-id="c9e01-139">Response</span></span>
-><span data-ttu-id="c9e01-p103">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="c9e01-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="e1893-139">応答</span><span class="sxs-lookup"><span data-stu-id="e1893-139">Response</span></span>
+><span data-ttu-id="e1893-p103">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="e1893-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -83,13 +83,23 @@ Content-type: application/json
     "description": "test description"
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="e1893-142">SDK サンプルコード</span><span class="sxs-lookup"><span data-stu-id="e1893-142">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="e1893-143">Visual</span><span class="sxs-lookup"><span data-stu-id="e1893-143">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_program-Cs-snippets.md)]
 
-## <a name="see-also"></a><span data-ttu-id="c9e01-142">関連項目</span><span class="sxs-lookup"><span data-stu-id="c9e01-142">See also</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e1893-144">Java</span><span class="sxs-lookup"><span data-stu-id="e1893-144">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_program-Javascript-snippets.md)]
 
-| <span data-ttu-id="c9e01-143">メソッド</span><span class="sxs-lookup"><span data-stu-id="c9e01-143">Method</span></span>           | <span data-ttu-id="c9e01-144">戻り値の型</span><span class="sxs-lookup"><span data-stu-id="c9e01-144">Return Type</span></span>    |<span data-ttu-id="c9e01-145">説明</span><span class="sxs-lookup"><span data-stu-id="c9e01-145">Description</span></span>|
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+## <a name="see-also"></a><span data-ttu-id="e1893-145">関連項目</span><span class="sxs-lookup"><span data-stu-id="e1893-145">See also</span></span>
+
+| <span data-ttu-id="e1893-146">メソッド</span><span class="sxs-lookup"><span data-stu-id="e1893-146">Method</span></span>           | <span data-ttu-id="e1893-147">戻り値の型</span><span class="sxs-lookup"><span data-stu-id="e1893-147">Return Type</span></span>    |<span data-ttu-id="e1893-148">説明</span><span class="sxs-lookup"><span data-stu-id="e1893-148">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="c9e01-146">プログラムの programcontrols を一覧表示する</span><span class="sxs-lookup"><span data-stu-id="c9e01-146">List programControls of a program</span></span>](program-listcontrols.md) |     <span data-ttu-id="c9e01-147">[programcontrol](../resources/programcontrol.md)コレクション</span><span class="sxs-lookup"><span data-stu-id="c9e01-147">[programControl](../resources/programcontrol.md) collection</span></span>|    <span data-ttu-id="c9e01-148">プログラムのコントロールのコレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="c9e01-148">Get a collection of the controls of a program.</span></span>|
-|[<span data-ttu-id="c9e01-149">programcontrol を作成する</span><span class="sxs-lookup"><span data-stu-id="c9e01-149">Create programControl</span></span>](programcontrol-create.md) |        [<span data-ttu-id="c9e01-150">programcontrol</span><span class="sxs-lookup"><span data-stu-id="c9e01-150">programControl</span></span>](../resources/programcontrol.md)    |   <span data-ttu-id="c9e01-151">プログラムに programcontrol を追加します。</span><span class="sxs-lookup"><span data-stu-id="c9e01-151">Add a programControl to a program.</span></span>|
+|[<span data-ttu-id="e1893-149">プログラムの programControls を一覧表示する</span><span class="sxs-lookup"><span data-stu-id="e1893-149">List programControls of a program</span></span>](program-listcontrols.md) |     <span data-ttu-id="e1893-150">[Programcontrol](../resources/programcontrol.md)コレクション</span><span class="sxs-lookup"><span data-stu-id="e1893-150">[programControl](../resources/programcontrol.md) collection</span></span>|    <span data-ttu-id="e1893-151">プログラムのコントロールのコレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="e1893-151">Get a collection of the controls of a program.</span></span>|
+|[<span data-ttu-id="e1893-152">ProgramControl を作成する</span><span class="sxs-lookup"><span data-stu-id="e1893-152">Create programControl</span></span>](programcontrol-create.md) |        [<span data-ttu-id="e1893-153">programControl</span><span class="sxs-lookup"><span data-stu-id="e1893-153">programControl</span></span>](../resources/programcontrol.md)    |   <span data-ttu-id="e1893-154">プログラムに programControl を追加します。</span><span class="sxs-lookup"><span data-stu-id="e1893-154">Add a programControl to a program.</span></span>|
 
 <!--
 {
@@ -98,6 +108,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/program-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/program-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

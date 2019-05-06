@@ -3,32 +3,30 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: ファイルまたはフォルダーを取得する
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 4610b911b21414948e3708b25817da4e15c9f4bd
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: a238e1dd459ee04d5c6c7c3453edaac2d569ed84
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325282"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33589313"
 ---
-# <a name="get-a-driveitem-resource"></a><span data-ttu-id="d804d-102">DriveItem リソースを取得する</span><span class="sxs-lookup"><span data-stu-id="d804d-102">Get a DriveItem resource</span></span>
+# <a name="get-a-driveitem-resource"></a><span data-ttu-id="e8af2-102">DriveItem リソースを取得する</span><span class="sxs-lookup"><span data-stu-id="e8af2-102">Get a DriveItem resource</span></span>
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+<span data-ttu-id="e8af2-103">[ドライブ](../resources/drive.md) 内の [DriveItem](../resources/driveitem.md) 用のメタデータを、ファイル システム パスまたは ID で取得します。</span><span class="sxs-lookup"><span data-stu-id="e8af2-103">Retrieve the metadata for a [DriveItem](../resources/driveitem.md) in a [Drive](../resources/drive.md) by file system path or ID.</span></span>
 
-<span data-ttu-id="d804d-103">[ドライブ](../resources/drive.md) 内の [DriveItem](../resources/driveitem.md) 用のメタデータを、ファイル システム パスまたは ID で取得します。</span><span class="sxs-lookup"><span data-stu-id="d804d-103">Retrieve the metadata for a [DriveItem](../resources/driveitem.md) in a [Drive](../resources/drive.md) by file system path or ID.</span></span>
+## <a name="permissions"></a><span data-ttu-id="e8af2-104">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="e8af2-104">Permissions</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="d804d-104">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="d804d-104">Permissions</span></span>
+<span data-ttu-id="e8af2-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e8af2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="d804d-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d804d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
-
-|<span data-ttu-id="d804d-107">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="d804d-107">Permission type</span></span>      | <span data-ttu-id="d804d-108">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="d804d-108">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e8af2-107">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="e8af2-107">Permission type</span></span>      | <span data-ttu-id="e8af2-108">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="e8af2-108">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="d804d-109">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="d804d-109">Delegated (work or school account)</span></span> | <span data-ttu-id="d804d-110">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d804d-110">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="d804d-111">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="d804d-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d804d-112">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d804d-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="d804d-113">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="d804d-113">Application</span></span> | <span data-ttu-id="d804d-114">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d804d-114">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="e8af2-109">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="e8af2-109">Delegated (work or school account)</span></span> | <span data-ttu-id="e8af2-110">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e8af2-110">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="e8af2-111">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="e8af2-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e8af2-112">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e8af2-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="e8af2-113">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="e8af2-113">Application</span></span> | <span data-ttu-id="e8af2-114">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e8af2-114">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="d804d-115">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="d804d-115">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e8af2-115">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="e8af2-115">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -45,37 +43,37 @@ GET /users/{userId}/drive/items/{itemId}
 GET /users/{userId}/drive/root:/{item-path}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="d804d-116">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="d804d-116">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="e8af2-116">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="e8af2-116">Optional query parameters</span></span>
 
-<span data-ttu-id="d804d-117">このメソッドは、応答をカスタマイズするための `$expand` と `$select` の [OData クエリ パラメーター](/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="d804d-117">This method supports the `$expand` and `$select` [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
+<span data-ttu-id="e8af2-117">このメソッドは、応答をカスタマイズするための `$expand` と `$select` の [OData クエリ パラメーター](/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="e8af2-117">This method supports the `$expand` and `$select` [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
 
-<span data-ttu-id="d804d-118">アイテムが**子**関係にある場合、[`$expand` クエリ文字列パラメーター](/graph/query-parameters) を使って、アイテムのメタデータを取得するのと同じように、同一呼び出し内のアイテムの子を含めることができます。</span><span class="sxs-lookup"><span data-stu-id="d804d-118">You can use the [`$expand` query string parameter](/graph/query-parameters) to include the children of an item in the same call as retrieving the metadata of an item if the item has a **children** relationship.</span></span>
+<span data-ttu-id="e8af2-118">アイテムが**子**関係にある場合、[`$expand` クエリ文字列パラメーター](/graph/query-parameters) を使って、アイテムのメタデータを取得するのと同じように、同一呼び出し内のアイテムの子を含めることができます。</span><span class="sxs-lookup"><span data-stu-id="e8af2-118">You can use the [`$expand` query string parameter](/graph/query-parameters) to include the children of an item in the same call as retrieving the metadata of an item if the item has a **children** relationship.</span></span>
 
-## <a name="optional-request-headers"></a><span data-ttu-id="d804d-119">オプションの要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="d804d-119">Optional request headers</span></span>
+## <a name="optional-request-headers"></a><span data-ttu-id="e8af2-119">オプションの要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="e8af2-119">Optional request headers</span></span>
 
-| <span data-ttu-id="d804d-120">名前</span><span class="sxs-lookup"><span data-stu-id="d804d-120">Name</span></span>          | <span data-ttu-id="d804d-121">値</span><span class="sxs-lookup"><span data-stu-id="d804d-121">Value</span></span>  | <span data-ttu-id="d804d-122">説明</span><span class="sxs-lookup"><span data-stu-id="d804d-122">Description</span></span>                                                                                                                                              |
+| <span data-ttu-id="e8af2-120">名前</span><span class="sxs-lookup"><span data-stu-id="e8af2-120">Name</span></span>          | <span data-ttu-id="e8af2-121">値</span><span class="sxs-lookup"><span data-stu-id="e8af2-121">Value</span></span>  | <span data-ttu-id="e8af2-122">説明</span><span class="sxs-lookup"><span data-stu-id="e8af2-122">Description</span></span>                                                                                                                                              |
 |:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="d804d-123">if-none-match</span><span class="sxs-lookup"><span data-stu-id="d804d-123">if-none-match</span></span> | <span data-ttu-id="d804d-124">String</span><span class="sxs-lookup"><span data-stu-id="d804d-124">String</span></span> | <span data-ttu-id="d804d-125">この要求ヘッダーが含まれている場合、指定された eTag (または cTag) がファイルの現在のタグに一致すると、`HTTP 304 Not Modified` 応答が返されます。</span><span class="sxs-lookup"><span data-stu-id="d804d-125">If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned.</span></span> |
+| <span data-ttu-id="e8af2-123">if-none-match</span><span class="sxs-lookup"><span data-stu-id="e8af2-123">if-none-match</span></span> | <span data-ttu-id="e8af2-124">String</span><span class="sxs-lookup"><span data-stu-id="e8af2-124">String</span></span> | <span data-ttu-id="e8af2-125">この要求ヘッダーが含まれている場合、指定された eTag (または cTag) がファイルの現在のタグに一致すると、`HTTP 304 Not Modified` 応答が返されます。</span><span class="sxs-lookup"><span data-stu-id="e8af2-125">If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="d804d-126">応答</span><span class="sxs-lookup"><span data-stu-id="d804d-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e8af2-126">応答</span><span class="sxs-lookup"><span data-stu-id="e8af2-126">Response</span></span>
 
-<span data-ttu-id="d804d-127">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [DriveItem](../resources/driveitem.md) リソースを返します。</span><span class="sxs-lookup"><span data-stu-id="d804d-127">If successful, this method returns a `200 OK` response code and the [DriveItem](../resources/driveitem.md) resource in the response body.</span></span>
+<span data-ttu-id="e8af2-127">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [DriveItem](../resources/driveitem.md) リソースを返します。</span><span class="sxs-lookup"><span data-stu-id="e8af2-127">If successful, this method returns a `200 OK` response code and the [DriveItem](../resources/driveitem.md) resource in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d804d-128">例</span><span class="sxs-lookup"><span data-stu-id="d804d-128">Example</span></span>
+## <a name="example"></a><span data-ttu-id="e8af2-128">例</span><span class="sxs-lookup"><span data-stu-id="e8af2-128">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="d804d-129">要求</span><span class="sxs-lookup"><span data-stu-id="d804d-129">Request</span></span>
+### <a name="request"></a><span data-ttu-id="e8af2-129">要求</span><span class="sxs-lookup"><span data-stu-id="e8af2-129">Request</span></span>
 
-<span data-ttu-id="d804d-130">以下は、ユーザーの OneDrive のルート フォルダーへの要求の例です。</span><span class="sxs-lookup"><span data-stu-id="d804d-130">Here is an example of the request to the root folder of the user's OneDrive.</span></span>
+<span data-ttu-id="e8af2-130">以下は、ユーザーの OneDrive のルート フォルダーへの要求の例です。</span><span class="sxs-lookup"><span data-stu-id="e8af2-130">Here is an example of the request to the root folder of the user's OneDrive.</span></span>
 
-<!-- { "blockType": "request", "name": "get-item-metadata" }-->
+<!-- { "blockType": "request", "name": "get-drive-root", "tags": "service.graph" }-->
 
 ```http
 GET /me/drive/root
 ```
 
-## <a name="response"></a><span data-ttu-id="d804d-131">応答</span><span class="sxs-lookup"><span data-stu-id="d804d-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e8af2-131">応答</span><span class="sxs-lookup"><span data-stu-id="e8af2-131">Response</span></span>
 
-<span data-ttu-id="d804d-132">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="d804d-132">Here is an example of the response.</span></span>
+<span data-ttu-id="e8af2-132">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="e8af2-132">Here is an example of the response.</span></span>
 
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.driveItem" } -->
 
@@ -108,23 +106,34 @@ Content-type: application/json
   "webUrl": "https://contoso-my.sharepoint.com/personal/rgregg_contoso_com/Documents"
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="e8af2-133">SDK サンプルコード</span><span class="sxs-lookup"><span data-stu-id="e8af2-133">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="e8af2-134">Visual</span><span class="sxs-lookup"><span data-stu-id="e8af2-134">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-drive-root-Cs-snippets.md)]
 
-## <a name="remarks"></a><span data-ttu-id="d804d-133">備考</span><span class="sxs-lookup"><span data-stu-id="d804d-133">Remarks</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e8af2-135">Java</span><span class="sxs-lookup"><span data-stu-id="e8af2-135">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-drive-root-Javascript-snippets.md)]
 
-<span data-ttu-id="d804d-134">エラーがどのように返されるかについては、「[エラー応答][error-response]」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d804d-134">See [Error Responses][error-response] for more info about how errors are returned.</span></span>
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+## <a name="remarks"></a><span data-ttu-id="e8af2-136">備考</span><span class="sxs-lookup"><span data-stu-id="e8af2-136">Remarks</span></span>
+
+<span data-ttu-id="e8af2-137">エラーがどのように返されるかについては、「[エラー応答][error-response]」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e8af2-137">See [Error Responses][error-response] for more info about how errors are returned.</span></span>
 
 [error-response]: /graph/errors
 [odata-parameters]: /graph/query-parameters
 [item-resource]: ../resources/driveitem.md
 [special-folder]: ../api/drive-get-specialfolder.md
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Retrieve metadata about an item and its children in OneDrive",
   "keywords": "retrieve,item,metadata",
   "section": "documentation",
   "tocPath": "Items/Get item",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/driveitem-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/driveitem-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+} -->

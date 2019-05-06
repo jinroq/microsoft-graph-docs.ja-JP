@@ -1,55 +1,55 @@
 ---
 title: ディレクトリ設定テンプレートを取得する
-description: ディレクトリ設定テンプレートは、テナント内で設定を作成することができる設定のテンプレートを表します。 この操作により、使用可能な設定とその既定値を含む directorysettingtemplate オブジェクトのプロパティを取得できるようになります。
+description: ディレクトリ設定テンプレートは、テナント内で設定を作成することができる設定のテンプレートを表します。 この操作により、使用可能な設定とその既定値を含む directorySettingTemplate オブジェクトのプロパティを取得できるようになります。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 206213f49d62b690c1d8e31c0f253e0fb4a05190
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 7c419be1bb9934b235c361112e9f79129fea6828
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325977"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33589525"
 ---
-# <a name="get-a-directory-setting-template"></a><span data-ttu-id="6b678-104">ディレクトリ設定テンプレートを取得する</span><span class="sxs-lookup"><span data-stu-id="6b678-104">Get a directory setting template</span></span>
+# <a name="get-a-directory-setting-template"></a><span data-ttu-id="608ac-104">ディレクトリ設定テンプレートを取得する</span><span class="sxs-lookup"><span data-stu-id="608ac-104">Get a directory setting template</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="6b678-105">ディレクトリ設定テンプレートは、テナント内で設定を作成することができる設定のテンプレートを表します。</span><span class="sxs-lookup"><span data-stu-id="6b678-105">A directory setting template represents a template of settings from which settings may be created within a tenant.</span></span> <span data-ttu-id="6b678-106">この操作により、使用可能な設定とその既定値を含む directorysettingtemplate オブジェクトのプロパティを取得できるようになります。</span><span class="sxs-lookup"><span data-stu-id="6b678-106">This operation allows retrieval of the properties of the directorySettingTemplate object, including the available settings and their defaults.</span></span>
+<span data-ttu-id="608ac-105">ディレクトリ設定テンプレートは、テナント内で設定を作成することができる設定のテンプレートを表します。</span><span class="sxs-lookup"><span data-stu-id="608ac-105">A directory setting template represents a template of settings from which settings may be created within a tenant.</span></span> <span data-ttu-id="608ac-106">この操作により、使用可能な設定とその既定値を含む directorySettingTemplate オブジェクトのプロパティを取得できるようになります。</span><span class="sxs-lookup"><span data-stu-id="608ac-106">This operation allows retrieval of the properties of the directorySettingTemplate object, including the available settings and their defaults.</span></span>
 
-> <span data-ttu-id="6b678-107">**注**: この API のベータ版は、グループにのみ適用されます。</span><span class="sxs-lookup"><span data-stu-id="6b678-107">**Note**: The /beta version of this API is only applies to groups.</span></span> <span data-ttu-id="6b678-108">この API の/v1.0 バージョンは、 *groupsettingtemplate を取得*する名前に変更されました。</span><span class="sxs-lookup"><span data-stu-id="6b678-108">The /v1.0 version of this API has been renamed to *Get groupSettingTemplate*.</span></span>
+> <span data-ttu-id="608ac-107">**注**: この API のベータ版は、グループにのみ適用されます。</span><span class="sxs-lookup"><span data-stu-id="608ac-107">**Note**: The /beta version of this API is only applies to groups.</span></span> <span data-ttu-id="608ac-108">この API の/v1.0 バージョンは、 *groupSettingTemplate を取得*する名前に変更されました。</span><span class="sxs-lookup"><span data-stu-id="608ac-108">The /v1.0 version of this API has been renamed to *Get groupSettingTemplate*.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="6b678-109">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="6b678-109">Permissions</span></span>
-<span data-ttu-id="6b678-p104">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6b678-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="608ac-109">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="608ac-109">Permissions</span></span>
+<span data-ttu-id="608ac-p104">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="608ac-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="6b678-112">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="6b678-112">Permission type</span></span>      | <span data-ttu-id="6b678-113">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="6b678-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="608ac-112">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="608ac-112">Permission type</span></span>      | <span data-ttu-id="608ac-113">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="608ac-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="6b678-114">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="6b678-114">Delegated (work or school account)</span></span> | <span data-ttu-id="6b678-115">Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="6b678-115">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="6b678-116">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="6b678-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6b678-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="6b678-117">Not supported.</span></span>    |
-|<span data-ttu-id="6b678-118">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="6b678-118">Application</span></span> | <span data-ttu-id="6b678-119">Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6b678-119">Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="608ac-114">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="608ac-114">Delegated (work or school account)</span></span> | <span data-ttu-id="608ac-115">Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="608ac-115">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="608ac-116">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="608ac-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="608ac-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="608ac-117">Not supported.</span></span>    |
+|<span data-ttu-id="608ac-118">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="608ac-118">Application</span></span> | <span data-ttu-id="608ac-119">Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="608ac-119">Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="6b678-120">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="6b678-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="608ac-120">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="608ac-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /directorySettingTemplates/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="6b678-121">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="6b678-121">Optional query parameters</span></span>
-<span data-ttu-id="6b678-122">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="6b678-122">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="608ac-121">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="608ac-121">Optional query parameters</span></span>
+<span data-ttu-id="608ac-122">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="608ac-122">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="6b678-123">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="6b678-123">Request headers</span></span>
-| <span data-ttu-id="6b678-124">名前</span><span class="sxs-lookup"><span data-stu-id="6b678-124">Name</span></span>      |<span data-ttu-id="6b678-125">説明</span><span class="sxs-lookup"><span data-stu-id="6b678-125">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="608ac-123">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="608ac-123">Request headers</span></span>
+| <span data-ttu-id="608ac-124">名前</span><span class="sxs-lookup"><span data-stu-id="608ac-124">Name</span></span>      |<span data-ttu-id="608ac-125">説明</span><span class="sxs-lookup"><span data-stu-id="608ac-125">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="6b678-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="6b678-126">Authorization</span></span>  | <span data-ttu-id="6b678-p105">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="6b678-p105">Bearer {token}. Required.</span></span>|
+| <span data-ttu-id="608ac-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="608ac-126">Authorization</span></span>  | <span data-ttu-id="608ac-p105">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="608ac-p105">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="6b678-129">要求本文</span><span class="sxs-lookup"><span data-stu-id="6b678-129">Request body</span></span>
-<span data-ttu-id="6b678-130">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="6b678-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="608ac-129">要求本文</span><span class="sxs-lookup"><span data-stu-id="608ac-129">Request body</span></span>
+<span data-ttu-id="608ac-130">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="608ac-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="6b678-131">応答</span><span class="sxs-lookup"><span data-stu-id="6b678-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="608ac-131">応答</span><span class="sxs-lookup"><span data-stu-id="608ac-131">Response</span></span>
 
-<span data-ttu-id="6b678-132">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[directorysettingtemplate](../resources/directorysettingtemplate.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="6b678-132">If successful, this method returns a `200 OK` response code and [directorySettingTemplate](../resources/directorysettingtemplate.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="6b678-133">例</span><span class="sxs-lookup"><span data-stu-id="6b678-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="6b678-134">要求</span><span class="sxs-lookup"><span data-stu-id="6b678-134">Request</span></span>
-<span data-ttu-id="6b678-135">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="6b678-135">Here is an example of the request.</span></span>
+<span data-ttu-id="608ac-132">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[directorysettingtemplate](../resources/directorysettingtemplate.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="608ac-132">If successful, this method returns a `200 OK` response code and [directorySettingTemplate](../resources/directorysettingtemplate.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="608ac-133">例</span><span class="sxs-lookup"><span data-stu-id="608ac-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="608ac-134">要求</span><span class="sxs-lookup"><span data-stu-id="608ac-134">Request</span></span>
+<span data-ttu-id="608ac-135">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="608ac-135">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_directorysettingtemplate"
@@ -57,8 +57,8 @@ GET /directorySettingTemplates/{id}
 ```http
 GET https://graph.microsoft.com/beta/directorySettingTemplates/{id}
 ```
-##### <a name="response"></a><span data-ttu-id="6b678-136">応答</span><span class="sxs-lookup"><span data-stu-id="6b678-136">Response</span></span>
-<span data-ttu-id="6b678-p106">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="6b678-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="608ac-136">応答</span><span class="sxs-lookup"><span data-stu-id="608ac-136">Response</span></span>
+<span data-ttu-id="608ac-p106">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="608ac-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -83,6 +83,16 @@ Content-length: 270
   ],
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="608ac-140">SDK サンプルコード</span><span class="sxs-lookup"><span data-stu-id="608ac-140">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="608ac-141">Visual</span><span class="sxs-lookup"><span data-stu-id="608ac-141">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_directorysettingtemplate-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="608ac-142">Java</span><span class="sxs-lookup"><span data-stu-id="608ac-142">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_directorysettingtemplate-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -93,6 +103,9 @@ Content-length: 270
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/directorysettingtemplate-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/directorysettingtemplate-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->
