@@ -4,11 +4,11 @@ description: Microsoft Graph の SharePoint API は、以下の基本的なシ�
 localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: de3c4b91f0e53a9a4efaf135fc91364b1802b2ec
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27946911"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549616"
 ---
 # <a name="working-with-sharepoint-sites-in-microsoft-graph"></a>Microsoft Graph で SharePoint サイトを開く
 
@@ -89,12 +89,15 @@ SharePoint API は、次の 3 つの主要なリソースの種類を公開し�
 
 | パス                                           | 説明
 |:-----------------------------------------------|:-----------------------------------
-| /sites/contoso.sharepoint.com:/teams/hr        | 関連付けられているサイトhttps://contoso.sharepoint.com/teams/hr
+| /sites/contoso.sharepoint.com:/teams/hr        | https://contoso.sharepoint.com/teams/hr に関連付けられているサイト
 | /sites/contoso.sharepoint.com:/teams/hr:/drive | このサイトの既定の[ドライブ](drive.md)にアクセスする
 
 ## <a name="note-for-existing-sharepoint-developers"></a>既存の SharePoint 開発者向けのメモ
 
-Microsoft Graph の SharePoint API は、CSOM API と大きく異なる点がいくつかあります。[サイト][]のリソースは `SPWeb` にマッピングされます。サイト コレクションのルート[サイト][] (`SPWeb`) には、`SPSite` に関する情報を含む [siteCollection](sitecollection.md) ファセットが含まれています。サイトの ID はそのサイト コレクション内でのみ一意であり、ID でサイトを指定する場合、サイト コレクション識別子とサイト識別子の両方を指定する必要があります。
+Microsoft Graph の SharePoint API は、CSOM API と大きく異なる点がいくつかあります。
+[サイト][] リソースは `SPWeb` にマッピングされます。
+サイト コレクションのルート [サイト][] (`SPWeb`) には、`SPSite` に関する情報を含む [siteCollection](sitecollection.md) ファセットが含まれています。
+サイトの ID はそのサイト コレクション内でのみ一意であり、ID でサイトを指定する場合、サイト コレクション識別子とサイト識別子の両方を指定する必要があります。
 
 ```http
 GET https://graph.microsoft.com/v1.0/sites/{hostname},{spsite-id},{spweb-id}/
@@ -111,7 +114,7 @@ GET https://graph.microsoft.com/v1.0/sites/{hostname}
 GET https://graph.microsoft.com/v1.0/sites/{hostname},{spsite-id}
 ```
 
-[site]: site.md
+[サイト]: site.md
 [list]: list.md
 [drive]: drive.md
 [siteCollection]: sitecollection.md

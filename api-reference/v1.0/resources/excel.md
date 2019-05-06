@@ -1,15 +1,15 @@
 ---
 title: Microsoft Graph での Excel の操作
-description: 'Microsoft Graph を使用すると、OneDrive for Business、SharePoint サイト、またはグループ ドライブに保存されている Excel ブックを、Web アプリケーションやモバイル アプリケーションで読み取ったり変更したりすることができます。`Workbook` (つまり Excel ファイル) リソースには、リレーションシップを介するその他のすべての Excel リソースが含まれています。ファイルの場所を URL で指定すれば、ドライブ API でブックにアクセスできます。例:'
+description: Microsoft Graph を使用すると、OneDrive for Business、SharePoint サイト、またはグループ ドライブに格納されている Excel ブックを、Web アプリケーションやモバイル アプリケーションで読み取ったり変更したりすることができます。 `Workbook` (つまり Excel ファイル) リソースには、リレーションシップを介するその他のすべての Excel リソースが含まれています。 ファイルの場所を URL で指定すれば、ドライブ API でブックにアクセスできます。 次に例を示します。
 localization_priority: Priority
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: 0010a7244d9ba6e629849f55dfc793bf6b875b38
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917686"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575801"
 ---
 # <a name="working-with-excel-in-microsoft-graph"></a>Microsoft Graph での Excel の操作
 
@@ -150,7 +150,8 @@ workbook-session-id: {session-id}
 { "name": "Sheet32243" }
 ```
 
-応答<!-- { "blockType": "ignored" } -->
+応答
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201 Created
 content-type: application/json;odata.metadata 
@@ -177,7 +178,8 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-応答<!-- { "blockType": "ignored" } -->
+応答
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
 content-type: application/json;odata.metadata 
@@ -204,7 +206,8 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-応答<!-- { "blockType": "ignored" } -->
+応答
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
@@ -245,7 +248,8 @@ content-type: application/json;odata.metadata
 
 #### <a name="list-charts-that-are-part-of-the-worksheet"></a>ワークシートの一部になっているグラフを一覧表示する 
 
-要求<!-- { "blockType": "ignored" } -->
+要求
+<!-- { "blockType": "ignored" } -->
 ```http 
 GET /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts
 accept: Application/Json 
@@ -253,7 +257,8 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id} 
 ```
 
-応答<!-- { "blockType": "ignored" } -->
+応答
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
 content-type: application/json;odata.metadata 
@@ -278,14 +283,16 @@ content-type: application/json;odata.metadata
 
 #### <a name="get-chart-image"></a>グラフの画像を取得する
 
-要求<!-- { "blockType": "ignored" } -->
+要求
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts('%7B00000000-0008-0000-0100-000003000000%7D')/Image(width=0,height=0,fittingMode='fit')
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id} 
 ```
 
-応答<!-- { "blockType": "ignored" } -->
+応答
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
 content-type: application/json;odata.metadata 
@@ -310,7 +317,8 @@ authorization: Bearer {access-token}
 { "type": "ColumnClustered", "sourcedata": "A1:C4", "seriesby": "Auto" }
 ```
 
-応答<!-- { "blockType": "ignored" } -->
+応答
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201 Created
 content-type: application/json;odata.metadata 
@@ -361,7 +369,8 @@ content-type: application/json;odata.metadata
 
 #### <a name="update-chart-source-data"></a>グラフのソース データの更新 
 
-要求<!-- { "blockType": "ignored" } -->
+要求
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts('%7B2D421098-FA19-41F7-8528-EE7B00E4BB42%7D')/setData
 content-type: Application/Json 
@@ -372,7 +381,8 @@ workbook-session-id: {session-id}
 { "sourceData": "A1:C4", "seriesBy": "Auto" }
 ```
 
-応答<!-- { "blockType": "ignored" } -->
+応答
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
@@ -381,7 +391,8 @@ HTTP code: 204 No Content
 
 #### <a name="get-list-of-tables"></a>テーブル一覧の取得 
 
-要求<!-- { "blockType": "ignored" } -->
+要求
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/tables
 accept: Application/Json 
@@ -389,7 +400,8 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-応答<!-- { "blockType": "ignored" } -->
+応答
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
 content-type: application/json;odata.metadata 
@@ -397,7 +409,8 @@ content-type: application/json;odata.metadata
 
 #### <a name="create-table"></a>テーブルの作成
 
-要求<!-- { "blockType": "ignored" } -->
+要求
+<!-- { "blockType": "ignored" } -->
 ```http 
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables/{table-id}/add
 content-type: Application/Json 
@@ -407,7 +420,8 @@ workbook-session-id: {session-id}
 { "name": "NewTableName", "hasHeaders": true, "showTotals": false, "style": "TableStyleMedium4" }
 ```
 
-応答<!-- { "blockType": "ignored" } -->
+応答
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201 Created
 content-type: application/json;odata.metadata 
@@ -425,7 +439,8 @@ content-type: application/json;odata.metadata
 
 #### <a name="update-table"></a>テーブルの更新
 
-要求<!-- { "blockType": "ignored" } -->
+要求
+<!-- { "blockType": "ignored" } -->
 ```http 
 PATCH /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('2')
 content-type: Application/Json 
@@ -435,7 +450,8 @@ workbook-session-id: {session-id}
 { "name": "NewTableName", "showHeaders": true, "showTotals": false, "style": "TableStyleMedium4" }
 ```
 
-応答<!-- { "blockType": "ignored" } -->
+応答
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
 content-type: application/json;odata.metadata 
@@ -543,7 +559,8 @@ content-type: application/json;odata.metadata
 
 #### <a name="get-list-of-table-columns"></a>テーブル列の一覧の取得
 
-要求<!-- { "blockType": "ignored" } -->
+要求
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/columns
 authorization: Bearer {access-token} 
@@ -654,7 +671,8 @@ content-type: application/json;odata.metadata
 
 #### <a name="add-a-table-row"></a>テーブル行の追加
 
-要求<!-- { "blockType": "ignored" } -->
+要求
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/rows
 content-type: Application/Json 
@@ -664,7 +682,8 @@ workbook-session-id: {session-id}
 { "values": [ [ "Jan-15-2016", "49", "37" ] ], "index": null }
 ```
 
-応答<!-- { "blockType": "ignored" } -->
+応答
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201 Created
 content-type: application/json;odata.metadata 
@@ -685,7 +704,8 @@ content-type: application/json;odata.metadata
 
 #### <a name="add-a-table-column"></a>テーブル列の追加 
 
-要求<!-- { "blockType": "ignored" } -->
+要求
+<!-- { "blockType": "ignored" } -->
 ```http 
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('2')/columns
 content-type: Application/Json 
@@ -724,47 +744,54 @@ content-type: application/json;odata.metadata
 
 #### <a name="delete-table-row"></a>テーブル行の削除
 
-要求<!-- { "blockType": "ignored" } -->
+要求
+<!-- { "blockType": "ignored" } -->
 ```http  
 DELETE /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/rows/$/itemAt(index=6)
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
 
-応答<!-- { "blockType": "ignored" } -->
+応答
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
 
 #### <a name="delete-table-column"></a>テーブル列の削除 
-要求<!-- { "blockType": "ignored" } -->
+要求
+<!-- { "blockType": "ignored" } -->
 ```http
 DELETE /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/columns('3')
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
 
-応答<!-- { "blockType": "ignored" } -->
+応答
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
 
 #### <a name="convert-table-to-range"></a>テーブルを範囲に変換する 
-要求<!-- { "blockType": "ignored" } -->
+要求
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('1')/convertToRange
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
 
-応答<!-- { "blockType": "ignored" } -->
+応答
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK 
 content-type: application/json;odata.metadata 
 ```
 
 #### <a name="table-sort"></a>テーブルの並べ替え
-要求<!-- { "blockType": "ignored" } -->
+要求
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/sort/apply
 authorization: Bearer {access-token} 
@@ -780,13 +807,15 @@ workbook-session-id: {session-id}
 ```
 
 
-応答<!-- { "blockType": "ignored" } -->
+応答
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
 
 #### <a name="table-filter"></a>テーブル フィルター
-要求<!-- { "blockType": "ignored" } -->
+要求
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/columns(id='2')/filter/apply
 authorization: Bearer {access-token} 
@@ -803,21 +832,24 @@ workbook-session-id: {session-id}
 }
 ```
 
-応答<!-- { "blockType": "ignored" } -->
+応答
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
 
 
 #### <a name="clear-filter"></a>フィルターのクリア
-要求<!-- { "blockType": "ignored" } -->
+要求
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/columns(id='2')/filter/clear
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
 
-応答<!-- { "blockType": "ignored" } -->
+応答
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
@@ -826,7 +858,8 @@ HTTP code: 204 No Content
 
 #### <a name="get-range"></a>範囲の取得 
 
-要求<!-- { "blockType": "ignored" } -->
+要求
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /{version}/me/drive/items/{item-id}/workbook/worksheets/{worksheet-id}/range(address='A1:B2')
 authorization: Bearer {access-token} 
@@ -1031,7 +1064,8 @@ content-type: application/json;odata.metadata
 ```
 
 #### <a name="range-sort"></a>範囲の並べ替え
-要求<!-- { "blockType": "ignored" } -->
+要求
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/usedRange/sort/apply
 authorization: Bearer {access-token} 
@@ -1046,7 +1080,8 @@ workbook-session-id: {session-id}
 }
 ```
 
-応答<!-- { "blockType": "ignored" } -->
+応答
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```

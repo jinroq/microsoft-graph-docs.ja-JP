@@ -1,23 +1,23 @@
 ---
-title: チャネルを作成します。
-description: 要求の本体に指定されている、マイクロソフトのチームでは、新しいチャネルを作成します。
-localization_priority: Priority
+title: チャネルを作成する
+description: 要求の本文で指定されているように、Microsoft Team に新しいチャネルを作成します。
+localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 ms.openlocfilehash: 9021ed45cb187b8db64ec2a3270b6a7f840134ba
-ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28016689"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32565458"
 ---
-# <a name="create-channel"></a>チャネルを作成します。
+# <a name="create-channel"></a>チャネルを作成する
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+要求の本文で指定されているように、Microsoft Team に新しい[チャネル](../resources/channel.md)を作成します。
 
-要求の本体に指定されている、マイクロソフトのチームでは、新しい[チャネル](../resources/channel.md)を作成します。
-
-> **注**: アプリケーションのアクセス許可とこの API に関する既知の問題があります。 詳細についてはの[既知の問題点のリスト](/graph/known-issues#application-permissions)を参照してください。
+> **注**: アプリケーションのアクセス許可とこの API には既知の問題があります。 詳細については、「[既知の問題](/graph/known-issues#application-permissions)」のリストを参照してください。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -29,7 +29,7 @@ ms.locfileid: "28016689"
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
 |アプリケーション | Group.ReadWrite.All    |
 
-> **注**: この API は、管理者のアクセス許可をサポートしています。 グローバル管理者とサービス管理者のマイクロソフトのチームのメンバーではないことをチームにアクセスできます。
+> **注**: この API は、管理者のアクセス許可をサポートします。 グローバル管理者と Microsoft Teams サービス管理者は、メンバーではないチームにアクセスできます。
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -43,11 +43,11 @@ POST /teams/{id}/channels
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>要求本文
-要求の本文には、[チャネル](../resources/channel.md)オブジェクトの JSON 表現を指定します。
+要求本文で、[チャンネル](../resources/channel.md) オブジェクトの JSON 表記を指定します。
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドを返します`201 Created`、応答の本体での応答コードおよび[チャネル](../resources/channel.md)オブジェクトです。
+成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [チャンネル](../resources/channel.md) オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
@@ -57,7 +57,7 @@ POST /teams/{id}/channels
   "name": "create_channel_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/teams/{id}/channels
+POST https://graph.microsoft.com/beta/teams/{id}/channels
 Content-type: application/json
 
 {
@@ -86,10 +86,13 @@ Content-length: 201
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create Channel",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

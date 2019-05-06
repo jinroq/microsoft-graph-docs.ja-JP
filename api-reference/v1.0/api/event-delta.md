@@ -1,15 +1,15 @@
 ---
 title: 'イベント: デルタ'
-description: '一連の追加、削除、または**予定表ビュー** (イベントの範囲) で更新されているイベントを取得します。 '
+description: '**calendarView** において追加、削除、更新された一連のイベント (さまざまなイベント) を取得します。 '
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 7eb8a80f8e857edc9aa9ff8781fae01dc1476677
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27963711"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562854"
 ---
 # <a name="event-delta"></a>イベント: デルタ
 
@@ -44,8 +44,8 @@ GET /users/{id}/calendarView/delta?startDateTime={start_datetime}&endDateTime={e
 |:---------------|:--------|:----------|
 |startDateTime|String|時間範囲の開始日時は、ISO 8601 形式で表されます。例: "2015-11-08T19:00:00.0000000"。|
 |endDateTime|String|時間範囲の終了日時は、ISO 8601 形式で表されます。例: "2015-11-08T20:00:00.0000000"。|
-| $deltatoken | 文字列 | 同じカレンダー ビュー用の前の**デルタ**関数呼び出しの `deltaLink` URL で返された[状態トークン](/graph/delta-query-overview)で、その一連の変更追跡が完了したことを示します。このトークンを含む `deltaLink` URL 全体を、該当カレンダー ビュー用の次回の一連の変更追跡の最初の要求内に保存し、適用します。|
-| $skiptoken | 文字列 | 前の**デルタ**関数呼び出しの `nextLink` URL 内で返された[状態トークン](/graph/delta-query-overview)で、同じカレンダー ビュー内に追跡されるべきさらなる変化があることを示しています。 |
+| $deltatoken | string | 同じカレンダー ビュー用の前の**デルタ**関数呼び出しの `deltaLink` URL で返された[状態トークン](/graph/delta-query-overview)で、その一連の変更追跡が完了したことを示します。このトークンを含む `deltaLink` URL 全体を、該当カレンダー ビュー用の次回の一連の変更追跡の最初の要求内に保存し、適用します。|
+| $skiptoken | string | 前の**デルタ**関数呼び出しの `nextLink` URL 内で返された[状態トークン](/graph/delta-query-overview)で、同じカレンダー ビュー内に追跡されるべきさらなる変化があることを示しています。 |
 
 カレンダー ビューでデルタ クエリを実行する場合、`GET /calendarview` 要求で通常得られるプロパティのすべてを得られると予期します。この場合、`$select` はサポートされていません。 
 
@@ -55,8 +55,8 @@ GET /users/{id}/calendarView/delta?startDateTime={start_datetime}&endDateTime={e
 |:---------------|:----------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type  | string  | application/json. Required. |
-| Prefer | 文字列  | odata.maxpagesize={x}.省略可能。 |
-| Prefer | 文字列 | {タイム ゾーン}。省略可能。指定しない場合、UTC が使用されます。|
+| Prefer | string  | odata.maxpagesize={x}.省略可能。 |
+| Prefer | string | {タイム ゾーン}。省略可能。指定しない場合、UTC が使用されます。|
 
 ## <a name="response"></a>応答
 

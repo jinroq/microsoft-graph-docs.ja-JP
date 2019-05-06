@@ -3,12 +3,12 @@ title: Microsoft Graph に関する既知の問題
 description: この記事では、Microsoft Graph に関する既知の問題について説明します。最新の更新プログラムについては、「Microsoft Graph の変更ログ」を参照してください。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 12a24d57370dfd593c6056e30db0d956266b29a1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2858701aaa795bad617c395c91d15508f6dd650f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555445"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341349"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph に関する既知の問題
 
@@ -230,7 +230,7 @@ V1 とベータ版の両方のエンドポイントで、`GET /users/id/messages
 
 * 複数の名前空間はサポートされていません。
 * `$ref` の GET とキャストはユーザー、グループ、デバイス、サービス プリンシパル、アプリケーションではサポートされていません。
-* `@odata.bind` はサポートされていません。つまり、開発者は `Accepted` や `RejectedSenders` を適切にグループに設定することができません。
+* `@odata.bind` はサポートされていません。つまり、開発者は **acceptedSenders** や **rejectedSenders** ナビゲーション プロパティをグループに適切に設定することができません。
 * `@odata.id` は最低限のメタデータを使用する場合、非包含構造のナビゲーション (メッセージなど) には存在しません。
 * `$expand`:
   * `nextLink` はサポートされていません

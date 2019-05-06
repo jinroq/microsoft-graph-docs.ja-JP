@@ -1,28 +1,28 @@
 ---
 title: イベントを一覧表示する
-description: 'ユーザーのメールボックスでは、イベント オブジェクトの一覧を取得します。 リストが 1 つ含まれています '
+description: 'ユーザーのメールボックス内のイベント オブジェクトの一覧を取得します。 単一が含まれているリスト '
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: b5e23391c434e2ace5a567bb23efe5539ad7aee5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27946309"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571409"
 ---
 # <a name="list-events"></a>イベントを一覧表示する
 
 ユーザーのメールボックス内の[イベント](../resources/event.md) オブジェクトの一覧を取得します。一覧には、単一インスタンスの会議と定期的なマスターが含まれています。
 
-拡張イベントのインスタンスを取得するには、[予定表ビューを取得する](calendar-list-calendarview.md)、または[イベントのインスタンスを取得する](event-list-instances.md)ことができます。
+拡張イベントのインスタンスを取得すると、[予定表ビューを取得する](calendar-list-calendarview.md)または[イベントのインスタンスを取得する](event-list-instances.md)ことができます。
 
 現在、この操作によって返されるイベントの本文は HTML 形式のみです。
 
-2 つシナリオは、アプリケーションが別のユーザーの予定表でイベントを取得する場所です。
+アプリが別のユーザーの予定表のイベントを取得できるシナリオが 2 つあります。
 
-* アプリケーションは、アプリケーションの権限を持つ場合、または、
-* アプリケーションがある場合、適切な 1 人のユーザーから[アクセス許可](#permissions)を委任し、他のユーザーは、そのユーザーとカレンダーを共有するにはまたは、そのユーザーに代理アクセスを与え。 [詳細と例](/graph/outlook-get-shared-events-calendars)を参照してください。
+* アプリにアプリケーションのアクセス許可がある場合。または
+* アプリに「あるユーザーから適切に委任された[アクセス許可](#permissions)」があり、別のユーザーがそのユーザーと予定表を共有しているか、そのユーザーに委任されたアクセスを付与している場合。 [詳細と例](/graph/outlook-get-shared-events-calendars)を参照してください。
 
 ### <a name="support-various-time-zones"></a>さまざまなタイム ゾーンをサポートします。
 
@@ -67,11 +67,11 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明 |
+| 名前       | 型 | 説明 |
 |:---------------|:--------|:--------|
 | Authorization  | string | ベアラー {トークン}。必須。  |
-| 優先: outlook.timezone  | 文字列 | これを使用して、応答内の開始および終了時刻のタイム ゾーンを指定します。 指定しない場合、これらの時刻値は UTC で返されます。 省略可能。 |
-| Prefer: outlook.body-content-type | 文字列 | **body** プロパティが返されるときの形式です。 値は、"text" または "html" になります。 この `Prefer` ヘッダーが指定されている場合、`Preference-Applied` ヘッダーが確認として返されます。 このヘッダーが指定されていない場合は、**body** プロパティが HTML 形式で返されます。 省略可能。 |
+| 優先: outlook.timezone  | string | これを使用して、応答内の開始および終了時刻のタイム ゾーンを指定します。 指定しない場合、これらの時刻値は UTC で返されます。 省略可能。 |
+| Prefer: outlook.body-content-type | string | **body** プロパティが返されるときの形式です。 値は、"text" または "html" になります。 この `Prefer` ヘッダーが指定されている場合、`Preference-Applied` ヘッダーが確認として返されます。 このヘッダーが指定されていない場合は、**body** プロパティが HTML 形式で返されます。 省略可能。 |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。

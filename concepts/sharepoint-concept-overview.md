@@ -3,12 +3,12 @@ title: SharePoint のサイトおよびコンテンツ API の概要
 description: SharePoint は、インテリジェントなモバイル イントラネットです。 SharePoint によりユーザーは、コンテンツ、知識、アプリケーションを共有および管理して、チームワークを推進したり、情報を検索したり、組織を通じて共同作業をしたりできます。 Microsoft Graph で SharePoint REST API を使用することにより、ソリューションを SharePoint のサイトおよびコンテンツに統合することができます。
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 7f703854112643afc11cf82b32b6b9247f0bca39
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5e794d52bd0f876e1572b1bca5bca23fbd40154a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573481"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345821"
 ---
 # <a name="sharepoint-sites-and-content-api-overview"></a>SharePoint のサイトおよびコンテンツ API の概要
 
@@ -56,11 +56,11 @@ Microsoft Graph により、ユーザーにとって最も重要なデータを�
 - [Microsoft Graph v1.0 の SharePoint API](/graph/api/resources/sharepoint?view=graph-rest-1.0)
 - [Microsoft Graph ベータ版の SharePoint API](/graph/api/resources/sharepoint?view=graph-rest-beta)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
-Microsoft Graph の SharePoint を利用する手始めとして、[サイトの使用][SharePoint]についてご確認ください。
+Microsoft Graph の SharePoint を利用する手始めとして、[サイトの使用](/graph/api/resources/sharepoint?view=graph-rest-1.0)についてご確認ください。
 
-[リスト]: /graph/api/resources/list?view=graph-rest-1.0
+[list]: /graph/api/resources/list?view=graph-rest-1.0
 [列]: /graph/api/resources/columndefinition?view=graph-rest-1.0
 [リスト タイプ]: /graph/api/resources/listinfo?view=graph-rest-1.0
 [作成]: /graph/api/list-create?view=graph-rest-1.0

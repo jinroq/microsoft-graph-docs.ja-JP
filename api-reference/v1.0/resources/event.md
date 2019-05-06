@@ -5,27 +5,27 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.openlocfilehash: 5288087a5288f31903dcc25fd4ef186c1bcf8783
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990811"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32555921"
 ---
-# <a name="event-resource-type"></a>イベント リソースの種類
+# <a name="event-resource-type"></a>event リソースの種類
 
-[ユーザー](user.md)の予定表、または Office 365 の[グループ](group.md)の既定の予定表のイベントです。
+[ユーザー](user.md)の予定表か、Office 365 [グループ](group.md)の既定の予定表のイベントです。
 
 このリソースは以下をサポートしています。
 
 - [拡張機能](/graph/extensibility-overview)として、カスタム プロパティに独自のデータを追加します。
-- [変更通知](/graph/webhooks)にサブスクライブします。
+- [変更通知](/graph/webhooks)を受信します。
 - [デルタ](../api/event-delta.md)関数を提供することにより、[デルタ クエリ](/graph/delta-query-overview)を使用して、増分の追加、削除、更新を追跡します。
 
-> **注:** ユーザーの予定表、グループ予定表、およびそのイベントと対話できるように、いくつかの小さな違いがあります。
+> **注:** ユーザーの予定表とグループの予定表、およびそのイベントの操作方法には、わずかな相違点がいくつかあります。
 
- - の[calendarGroup](calendargroup.md)のユーザーの予定表のみを整理することができます。
- - Outlook は、グループのためのすべての会議出席依頼を自動的に受け入れます。 _ユーザー_の予定表のみの[承諾](../api/event-accept.md)、[仮承諾](../api/event-tentativelyaccept.md)、または会議出席依頼を[辞退する](../api/event-decline.md)ことをがします。
-  - Outlook は、グループのイベントのアラームをサポートしていません。 [再通知](../api/event-snoozereminder.md)や[アラーム](reminder.md)を[消す](../api/event-dismissreminder.md)を_ユーザー_の予定表のみにできます。
+ - [calendarGroup](calendargroup.md) にはユーザーの予定表のみを整理できます。
+ - Outlook はグループの代わりにすべての会議出席依頼を自動的に受け入れます。 _ユーザー_の予定表の会議出席依頼のみを[承諾](../api/event-accept.md)、[仮承諾](../api/event-tentativelyaccept.md)、または[辞退](../api/event-decline.md)できます。
+  - Outlook はグループ イベントのアラームをサポートしていません。 _ユーザー_の予定表についてのみ、[リマインダー](reminder.md)を[再起動](../api/event-snoozereminder.md)または[無視](../api/event-dismissreminder.md)できます。
 
 ## <a name="methods"></a>メソッド
 
@@ -36,13 +36,13 @@ ms.locfileid: "27990811"
 |[イベントの取得](../api/event-get.md) | [event](event.md) |event オブジェクトのプロパティとリレーションシップを読み取ります。|
 |[更新する](../api/event-update.md) | [event](event.md) |イベント オブジェクトを更新します。 |
 |[削除](../api/event-delete.md) | なし |イベント オブジェクトを削除します。 |
-|[承諾](../api/event-accept.md)|なし|ユーザーの予定表で指定したイベントをそのまま使用します。|
-|[tentativelyAccept](../api/event-tentativelyaccept.md)|なし|ユーザーの予定表で指定したイベントを仮承諾します。|
-|[辞退](../api/event-decline.md)|なし|ユーザーの予定表で指定したイベントへの招待を辞退します。|
+|[承諾](../api/event-accept.md)|なし|ユーザーの予定表の指定のイベントを承諾します。|
+|[仮承諾する](../api/event-tentativelyaccept.md)|なし|ユーザーの予定表の指定のイベントを仮承諾します。|
+|[辞退する](../api/event-decline.md)|なし|ユーザーの予定表の指定のイベントに対する詳細を辞退します。|
 |[delta](../api/event-delta.md)|[event](event.md) コレクション|ユーザーの標準として設定されている予定表の**calendarView** において追加、削除、更新された一連のイベント (さまざまなイベント) を取得します。|
-|[dismissReminder](../api/event-dismissreminder.md)|なし|ユーザーの予定表で指定したイベントの事前通知を無視します。|
-|[snoozeReminder](../api/event-snoozereminder.md)|なし|までは新しいユーザーの予定表で指定したイベントのアラームを延期します。|
-|[インスタンスの一覧表示](../api/event-list-instances.md) |[event](event.md) コレクション| 指定した時間範囲のイベントのインスタンス (発生) を取得します。イベントが `SeriesMaster` タイプである場合、これは指定した時間範囲内のイベントの発生と例外を返します。|
+|[dismissReminder](../api/event-dismissreminder.md)|なし|ユーザーの予定表の指定したイベントのリマインダーを無視します。|
+|[リマインダーを再起動する](../api/event-snoozereminder.md)|なし|ユーザーの予定表の指定したイベントのリマインダーを新しい時刻まで延期します。|
+|[インスタンスを一覧表示する](../api/event-list-instances.md) |[event](event.md) コレクション| 指定した時間範囲のイベントのインスタンス (発生) を取得します。イベントが `SeriesMaster` タイプである場合、これは指定した時間範囲内のイベントの発生と例外を返します。|
 |**添付ファイル**| | |
 |[添付ファイルを一覧表示する](../api/event-list-attachments.md) |[attachment](attachment.md) コレクション| イベントのすべての添付ファイルを取得します。|
 |[添付ファイルを追加する](../api/event-post-attachments.md) |[attachment](attachment.md)| 添付ファイル コレクションへの投稿により、イベントに新しい添付ファイルを追加します。|
@@ -61,14 +61,14 @@ ms.locfileid: "27990811"
 |attendees|[attendee](attendee.md) コレクション|イベントの出席者のコレクション。|
 |body|[itemBody](itembody.md)|イベントに関連付けられたメッセージの本文。HTML 形式またはテキスト形式にできます。|
 |bodyPreview|String|イベントに関連付けられたメッセージのプレビュー。テキスト形式です。|
-|categories|String コレクション|イベントに関連付けられたカテゴリ。|
+|categories|String collection|イベントに関連付けられたカテゴリ。|
 |changeKey|String|イベント オブジェクトのバージョンを識別します。イベントを変更するたびに ChangeKey も変更されます。これにより、Exchange は正しいバージョンのオブジェクトに変更を適用できます。|
 |createdDateTime|DateTimeOffset|Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |end|[dateTimeTimeZone](datetimetimezone.md)|イベントが終了する日付、時刻、タイムゾーン|
 |hasAttachments|Boolean|イベントに添付ファイルが含まれている場合、true に設定します。|
 |iCalUId|String|複数の予定表で 1 つのイベントのすべてのインスタンスによって共有される一意識別子。 読み取り専用です。|
 |id|String| 読み取り専用。|
-|importance|importance|イベントの重要度。 可能な値: `low`、 `normal`、 `high`。|
+|重要度|重要度|イベントの重要度。 使用可能な値: `low`、`normal`、`high`。|
 |isAllDay|Boolean|イベントが一日中続く場合に、true に設定します。|
 |isCancelled|Boolean|イベントがキャンセルされた場合に、true に設定します。|
 |isOrganizer|Boolean|メッセージの送信者が開催者でもある場合に、true に設定します。|
@@ -76,8 +76,8 @@ ms.locfileid: "27990811"
 |lastModifiedDateTime|DateTimeOffset|Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |location|[location](location.md)|イベントの場所。|
 |locations|[location](location.md) コレクション|イベントを開催する場所、または参加者がいる場所。 **location** プロパティと **locations** プロパティは常に互いに一致します。 **location** プロパティを更新すると、**locations** コレクションに含まれる既存のすべての場所が削除されて、**location** の新しい値に置き換えられます。 |
-|onlineMeetingUrl|String|オンライン会議の URL。 会議の開催者が Skype 会議などのオンラインの会議とイベントを指定するときにのみ、プロパティが設定されています。 読み取り専用です。|
-|organizer|[recipient](recipient.md)|イベントの開催者。|
+|onlineMeetingUrl|String|オンライン会議の URL。 このプロパティは、開催者が Skype 会議などのオンライン会議としてイベントを指定する場合にのみ設定します。 読み取り専用です。|
+|構成内容変更|[recipient](recipient.md)|イベントの開催者。|
 |originalEndTimeZone|String|イベントの作成時に設定された終了タイム ゾーン。 値 `tzone://Microsoft/Custom` は、デスクトップの Outlook で、従来のカスタム タイム ゾーンが設定されていることを示します。|
 |originalStart|DateTimeOffset|Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |originalStartTimeZone|String|イベントが作成されたときに設定された開始タイム ゾーン。値 `tzone://Microsoft/Custom` は、デスクトップの Outlook で、従来のカスタム タイム ゾーンが設定されていることを示します。 |
@@ -85,12 +85,12 @@ ms.locfileid: "27990811"
 |reminderMinutesBeforeStart|Int32|アラーム通知を行う、イベント開始時間前の分数。|
 |responseRequested|Boolean|イベントが承諾または辞退されたときに、送信者が応答を希望する場合に、true に設定します。|
 |responseStatus|[responseStatus](responsestatus.md)|イベント メッセージへの応答で送信される応答のタイプを識別します。|
-|sensitivity|sensitivity| 可能な値: `normal`、 `personal`、 `private`、 `confidential`。|
-|seriesMasterId|String|項目の ID、定期的な系列マスター、このイベントが定期的な一連の一部である場合。|
-|showAs|freeBusyStatus|表示するステータス。 可能な値: `free`、 `tentative`、 `busy`、 `oof`、 `workingElsewhere`、 `unknown`。|
-|start|[dateTimeTimeZone](datetimetimezone.md)|イベントが開始する日付、時刻、タイムゾーン。|
+|sensitivity|sensitivity| 使用可能な値: `normal`、`personal`、`private`、`confidential`。|
+|seriesMasterId|String|対象イベントが定期的なアイテムの一部である場合、定期的なアイテムのマスター アイテムの ID。|
+|showAs|freeBusyStatus|表示するステータス。 使用可能な値: `free`、`tentative`、`busy`、`oof`、`workingElsewhere`、`unknown`。|
+|開始|[dateTimeTimeZone](datetimetimezone.md)|イベントが開始する日付、時刻、タイムゾーン。|
 |subject|String|イベントの件名行のテキスト。|
-|type|eventType|イベントの種類。 可能な値: `singleInstance`、 `occurrence`、 `exception`、 `seriesMaster`。 読み取り専用です。|
+|type|eventType|イベントの種類。 使用可能な値: `singleInstance`、`occurrence`、`exception`、`seriesMaster`。 読み取り専用です。|
 |webLink|String|Outlook Web App でイベントを開く URL。<br/><br/>Outlook Web App のメールボックスにログインしている場合、ブラウザーでイベントが開きます。まだブラウザーでログインしていない場合、ログインするように求められます。<br/><br/>この URL には、iFrame 内からアクセスできます。|
 
 ## <a name="relationships"></a>リレーションシップ

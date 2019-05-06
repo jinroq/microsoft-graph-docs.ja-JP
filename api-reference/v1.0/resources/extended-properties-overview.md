@@ -1,15 +1,15 @@
 ---
 title: Outlook の拡張プロパティの概要
-description: '拡張プロパティは、カスタム データを格納できるようにして、アプリケーションにアクセスするためのフォールバック メカニズムとしてサービスの提供に '
+description: '拡張プロパティはカスタム データの保存を可能にし、特にアプリがアクセスできるようにフォールバック メカニズムとして機能します。 '
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 935f97819155318a6bfc7c77d07bf8a308e512e8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27949571"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32578100"
 ---
 # <a name="outlook-extended-properties-overview"></a>Outlook の拡張プロパティの概要
 
@@ -45,37 +45,36 @@ ms.locfileid: "27949571"
 
 ### <a name="id-formats"></a>id の形式
 
-3 つの形式のいずれかでは、拡張プロパティの**id**を指定できます。
+拡張プロパティの **id** は、次の 3 つの形式のいずれかで指定することができます。
 
-- 名前付きプロパティとして、拡張プロパティの型、名前空間、および文字列名によって識別します。
-- 名前付きプロパティとして、拡張プロパティの型、名前空間、および数値識別子によって識別されます。
-- Proptag の形式で、拡張プロパティの型、および[MAPI プロパティ タグ](https://docs.microsoft.com/en-us/office/client-developer/outlook/mapi/mapi-property-tags)で識別されます。
+- 名前付きプロパティとして、拡張プロパティの種類、名前空間、および文字列名によって識別される。
+- 名前付きプロパティとして、拡張プロパティの種類、名前空間、および数値の識別子によって識別される。
+- proptagの形式で、拡張プロパティの種類、および[MAPI プロパティのタグ](https://docs.microsoft.com/ja-JP/office/client-developer/outlook/mapi/mapi-property-tags)によって識別される。
 
-次の 2 つのテーブルは、単一および複数の値に適用されている拡張プロパティとして、これらの形式を記述します。 {_タイプ_} では、拡張プロパティの値の種類を表します。 この例では、文字列、整数、およびこれらの種類の配列を示しています。
+次の 2 つの表では、単一値または複数値の拡張プロパティに適用されるこれらの形式について説明します。 {_type_} は値の種類または拡張プロパティ値を表します。 この例では、文字列、整数、およびこれらの種類の配列を示しています。
 
 **単一値の拡張プロパティに有効な id の形式**
 
 |**形式**|**例**|**説明**|
 |:---------|:----------|:--------------|
-| "{_type_} {_guid_} **Name** {_name_}" | ```"String {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | それが属している名前空間 (GUID) と文字列名によってプロパティを識別します。         |
-| "{_type_} {_guid_} **Id** {_id_}"     | ```"Integer {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8012"```        | プロパティが属している名前空間 (GUID) と数値の識別子を指定します。  |
-| [{_タイプ_} {_proptag_}]                    | ```"String 0x4001001E"```                                           | プロパティ タグを事前に定義されたプロパティを識別します。 |
+| "{_type_} {_guid_} **Name** {_name_}" | ```"String {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | 属している名前空間 (GUID) と文字列の名前で、プロパティを識別します。         |
+| "{_type_} {_guid_} **Id** {_id_}"     | ```"Integer {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8012"```        | 属している名前空間 (GUID) と数値の識別子で、プロパティを識別します。  |
+| "{_type_} {_proptag_}"                    | ```"String 0x4001001E"```                                           | 定義済みプロパティをそのプロパティ タグで識別します。 |
 
 **複数値の拡張プロパティに有効な id の形式**
 
 |**形式**|**例**|**説明**|
 |:---------|:----------|:--------------|
-| "{_type_} {_guid_} **Name** {_name_}" | ```"StringArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | 名前空間 (GUID) と文字列名によってプロパティを識別します。         |
-| "{_type_} {_guid_} **Id** {_id_}"     | ```"IntegerArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8013"```        | 数値識別子 (GUID) の名前空間によってプロパティを識別します。   |
-| [{_タイプ_} {_proptag_}]                    | ```"StringArray 0x4002101E"```                                           | プロパティ タグを事前に定義されたプロパティを識別します。 |
+| "{_type_} {_guid_} **Name** {_name_}" | ```"StringArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | 名前空間 (GUID) と文字列の名前で、プロパティを識別します。         |
+| "{_type_} {_guid_} **Id** {_id_}"     | ```"IntegerArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8013"```        | 名前空間 (GUID) と数値の識別子で、プロパティを識別します。   |
+| "{_type_} {_proptag_}"                    | ```"StringArray 0x4002101E"```                                           | 定義済みプロパティをそのプロパティ タグで識別します。 |
 
 
-単一値または複数値の拡張プロパティをカスタム プロパティとして定義するのにには、名前付きプロパティの形式のいずれかを使用します。 2 つの形式では、文字列の名前 (**名**) は、1 つ目は参照の容易にするために優先されるフォーマットがあります。 名前付きプロパティでは、その[プロパティの識別子](https://docs.microsoft.com/en-us/office/client-developer/outlook/mapi/mapi-property-identifier-overview)を持つ 0x8000-0 xfffe の範囲です。
+名前付きプロパティ形式のいずれかを使用して、単一値または複数値の拡張プロパティをカスタム プロパティとして定義します。 2 つの形式のうち、文字列名 (**Name**) をとる最初の形式がよく使用される参照しやすい形式です。 名前付きプロパティには、0x8000-0xfffe 範囲の [プロパティの識別子](https://docs.microsoft.com/ja-JP/office/client-developer/outlook/mapi/mapi-property-identifier-overview)があります。
 
-Proptag 形式を使用して、MAPI、または、クライアントまたはサーバーで定義済みのプロパティにアクセスしてするが既に公開されていない Microsoft Graph で。 これらのプロパティでは、プロパティの識別子を持つ、0x0001 0x7fff の範囲です。 Proptag 形式を使用してカスタム プロパティを定義しないでください。 
+MAPI によって、またはクライアントまたはサーバーによって定義済みの、まだ Microsoft Graph に公開されていないプロパティにアクセスするには、proptag 形式を使用します。 これらのプロパティには、0x0001〜0x7fff 範囲のプロパティ識別子があります。 proptag 形式を使用してカスタム プロパティを定義しようとしないでください。 
 
-
-  \[MS-OXPROPS\] Microsoft Corporation の[「Exchange Server プロトコルのマスター プロパティ リスト」](https://msdn.microsoft.com/library/cc433490%28v=exchg.80%29.aspx)では、既存の MAPI プロパティへの拡張プロパティのマッピングに関する情報 (プロパティ識別子や GUID など) を検索できます。
+\[MS-OXPROPS\] Microsoft Corporation の[「Exchange Server プロトコルのマスター プロパティ リスト」](https://msdn.microsoft.com/library/cc433490%28v=exchg.80%29.aspx)では、既存の MAPI プロパティへの拡張プロパティのマッピングに関する情報 (プロパティ識別子や GUID など) を検索できます。
 
 **注** **id** に対して 1 つの形式を選択したら、その形式でのみ拡張プロパティにアクセスする必要があります。
 

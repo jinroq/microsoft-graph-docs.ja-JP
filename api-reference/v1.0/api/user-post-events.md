@@ -1,33 +1,36 @@
 ---
 title: イベントを作成する
 description: ユーザーの既定の予定表または指定した予定表でイベントを作成します。
-localization_priority: Priority
+localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: ef3ac07ba64115a10862cbdfb98dfbd63d2023ad
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27978614"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32564079"
 ---
 # <a name="create-event"></a>イベントを作成する
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 ユーザーの既定の予定表または指定した予定表で[イベント](../resources/event.md)を作成します。
 
-**start** と **end** プロパティの型が [dateTimeTimeZone](../resources/datetimetimezone.md) であるため、これらの値の一部としてイベントの開始時刻と終了時刻のそれぞれにタイム ゾーンを指定できます。 
+**start** と **end** プロパティの型が [dateTimeTimeZone](../resources/datetimetimezone.md) であるため、これらの値の一部としてイベントの開始時刻と終了時刻のそれぞれにタイム ゾーンを指定できます。
 
 イベントが送信されるとき、サーバーは出席者全員に招待状を送信します。
 
 **イベントでの場所を設定する**
 
-Exchange 管理者は、会議室などのリソースや、プロジェクターなどの機器用のメールボックスと電子メール アドレスを設定できます。 そうすると、ユーザーはリソースを参加者として会議に招待できます。 サーバーは、リソースに代わって、リソースの空き時間スケジュールに基づいて会議出席依頼を受諾あるいは拒否します。 サーバーがリソースの会議参加を受諾すると、リソースの予定表に会議のイベントが作成されます。 会議の予定が変更されると、サーバーはリソースの予定表内のイベントを自動的に更新します。
+Exchange 管理者は、会議室などのリソースや、プロジェクターなどの機器用のメールボックスと電子メール アドレスを設定できます。 そうすると、ユーザーはリソースを参加者として会議に招待できます。 サーバーは、リソースに代わって、リソースの空き時間スケジュールに基づいて会議出席依頼を受諾あるいは拒否します。
+サーバーがリソースの会議参加を受諾すると、リソースの予定表に会議のイベントが作成されます。 会議の予定が変更されると、サーバーはリソースの予定表内のイベントを自動的に更新します。
 
 リソースにメールボックスを設定するするもう 1 つの利点は、リソースのスケジュールを管理できることで、たとえば、あるプライベート会議用会議室は役員かその代理人しか予約できないようにできます。
 
 会議する場所が必要になるイベントを開催する場合:
 
-1. **event** の **location** プロパティを適宜設定します。 
+1. **event** の **location** プロパティを適宜設定します。
 2. 会議場所にメール アドレスがある場合、オプションの **locationEmailAddress** プロパティを設定します。
 
 さらに、会議の開催場所がリソースとして設定されている場合、あるいはリソースとして設定されている装置がイベントに関わってくる場合は、以下のようにします。
@@ -35,7 +38,6 @@ Exchange 管理者は、会議室などのリソースや、プロジェクタ�
 3. リソースを[出席者](../resources/attendee.md)として招待します。
 4. 出席者の **type** プロパティを `resource` に設定します。
 5. 出席者の **emailAddress** をリソースのメール アドレスとして設定します。
-
 
 
 ## <a name="permissions"></a>アクセス許可
@@ -82,7 +84,7 @@ POST /users/{id | userPrincipalName}/calendars/{id}/events
   "name": "create_event_from_user"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/events
+POST https://graph.microsoft.com/beta/me/events
 Prefer: outlook.timezone="Pacific Standard Time"
 Content-type: application/json
 Content-length: 600
@@ -117,7 +119,8 @@ Content-length: 600
 ```
 要求本文で、[イベント](../resources/event.md) オブジェクトの JSON 表記を指定します。
 ##### <a name="response-1"></a>応答 1
-この応答の例には、`Prefer: outlook.timezone` ヘッダーに指定されているタイム ゾーンを使用した **start** および **end** プロパティが示されています。 注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
+この応答の例には、`Prefer: outlook.timezone` ヘッダーに指定されているタイム ゾーンを使用した **start** および **end** プロパティが示されています。
+注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "name": "create_event_from_user",
@@ -130,7 +133,7 @@ Content-type: application/json
 Content-length: 2197
 
 {
-    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events/$entity",
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events/$entity",
     "@odata.etag":"W/\"ZlnW4RIAV06KYYwlrfNZvQAALfZeRQ==\"",
     "id":"AAMkAGI1AAAt9AHjAAA=",
     "createdDateTime":"2017-04-15T03:00:50.7579581Z",
@@ -141,7 +144,7 @@ Content-length: 2197
     ],
     "originalStartTimeZone":"Pacific Standard Time",
     "originalEndTimeZone":"Pacific Standard Time",
-    "iCalUId":"040000008200E00074C5B7101A82E00800000000DA2B357D94B5D201000000000000000010000000EC4597557F0CB34EA4CC2887EA7B17C3",
+    "uid":"040000008200E00074C5B7101A82E00800000000DA2B357D94B5D201000000000000000010000000EC4597557F0CB34EA4CC2887EA7B17C3",
     "reminderMinutesBeforeStart":15,
     "isReminderOn":true,
     "hasAttachments":false,
@@ -220,7 +223,7 @@ Content-length: 2197
   "name": "create_event_from_user_multiple_locations"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/events
+POST https://graph.microsoft.com/beta/me/events
 Prefer: outlook.timezone="Pacific Standard Time"
 Content-type: application/json
 Content-length: 1390
@@ -300,7 +303,7 @@ Content-type: application/json
 Content-length: 2985
 
 {
-  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/events/$entity",
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/events/$entity",
   "@odata.etag":"W/\"y53lbKh6jkaxHzFwGhgyxgAAw5zhug==\"",
   "id":"AAMkADAGAADDdm4NAAA=",
   "createdDateTime":"2017-08-30T07:06:33.8673345Z",
@@ -311,7 +314,7 @@ Content-length: 2985
   ],
   "originalStartTimeZone":"Pacific Standard Time",
   "originalEndTimeZone":"Pacific Standard Time",
-  "iCalUId":"04000000820089190544",
+  "uid":"04000000820089190544",
   "reminderMinutesBeforeStart":15,
   "isReminderOn":true,
   "hasAttachments":false,
@@ -362,6 +365,7 @@ Content-length: 2985
       "uniqueId":"Fourth Coffee",
       "uniqueIdType":"private",
       "address":{
+        "type":"unknown",
         "street":"4567 Main St",
         "city":"Redmond",
         "state":"WA",
@@ -421,7 +425,7 @@ Content-length: 2985
   "name": "create_event_recurring"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/events
+POST https://graph.microsoft.com/beta/me/events
 Content-type: application/json
 
 {
@@ -478,7 +482,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('919717da-0460-4cca-a6be-d25382429896')/events/$entity",
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('919717da-0460-4cca-a6be-d25382429896')/events/$entity",
     "@odata.etag":"W/\"+T8RDneHMkKe2BGYEaQZ4wAA5a9Acw==\"",
     "id":"AAMkADQwMD",
     "createdDateTime":"2017-10-07T04:59:12.9698856Z",
@@ -489,7 +493,7 @@ Content-type: application/json
     ],
     "originalStartTimeZone":"Pacific Standard Time",
     "originalEndTimeZone":"Pacific Standard Time",
-    "iCalUId":"040000008200E00074C5B7101A82E0080000000028CEBE04293FD3010000000000000000100000009F85AB8AF8ED4D4FAC777FA89954BDB7",
+    "uid":"040000008200E00074C5B7101A82E0080000000028CEBE04293FD3010000000000000000100000009F85AB8AF8ED4D4FAC777FA89954BDB7",
     "reminderMinutesBeforeStart":15,
     "isReminderOn":true,
     "hasAttachments":false,
@@ -579,6 +583,8 @@ Content-type: application/json
 ```
 
 
+
+
 ## <a name="see-also"></a>関連項目
 
 - [拡張機能を使用してカスタム データをリソースに追加する](/graph/extensibility-overview)
@@ -586,13 +592,15 @@ Content-type: application/json
 - [スキーマ拡張機能を使用したグループへのカスタム データの追加](/graph/extensibility-schema-groups)
 
 
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create Event",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

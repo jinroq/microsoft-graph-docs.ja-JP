@@ -3,12 +3,12 @@ title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 746902cb9e091a5b206966c631d6b68930e76ff9
-ms.sourcegitcommit: d264fa064215879fa88a4680402cd57a470d73db
+ms.openlocfilehash: 7cf2521f5e119b5270344aef25b775d49451e9cd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31981069"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33440095"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
@@ -17,12 +17,24 @@ ms.locfileid: "31981069"
 Microsoft Graph API に関する既知の問題の詳細については、「[既知の問題](known-issues.md)」を参照してください。
 
 ## <a name="april-2019"></a>2019 年 4 月
+
+### <a name="access-reviews-api"></a>アクセス レビュー API
+
+| **変更の種類** | **バージョン**   | **説明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 追加 | ベータ版 | アプリケーション アクセス許可 AccessReview.Read.All、ProgramControl.Read.All、ProgramControl.ReadWrite.All が追加されました。 詳細については、[アクセス レビュー API のリファレンス](/graph/api/resources/accessreviews-root?view=graph-rest-beta)を参照してください。 |
+
 ### <a name="azure-ad-b2c-apis"></a>Azure AD B2C APIs
 
 | **変更の種類** | **バージョン**   | **説明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 追加 | ベータ版 |新しいリソースタイプ[trustFrameworkPolicy](/graph/api/resources/trustframeworkpolicy?view=graph-rest-beta)が導入されました。 このリソースタイプは、[作成](/graph/api/trustframework-post-trustframeworkpolicy?view=graph-rest-beta)、[一覧表示](/graph/api/trustframework-list-trustframeworkpolicies?view=graph-rest-beta)、[取得](/graph/api/trustframeworkpolicy-get?view=graph-rest-beta)、 [更新](/graph/api/trustframework-put-trustframeworkpolicy?view=graph-rest-beta)、および[削除](/graph/api/trustframerkpolicy-delete?view=graph-rest-beta)の操作をサポートしています。|
 
+### <a name="webhooks-change-notifications"></a>Webhook (変更通知)
+
+| **変更の種類** | **バージョン**   | **説明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 追加 | ベータ版 | Outlook リソースで使用可能な 2 種類のライフサイクル通知 `subscriptionRemoved` と `missed` が追加されました。 アプリのサブスクリプションによって、通知の中断を軽減するための適切なアクションを実行できます。 詳しくは、[Outlook リソースで、不足状態のサブスクリプションと通知を減らす (プレビュー)](webhooks-outlook-authz.md) をご覧ください。|
 
 ### <a name="directory-apis"></a>ディレクトリ API
 
@@ -76,7 +88,9 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 | **変更の種類** | **バージョン**   | **説明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| 追加        | ベータ版          | [メッセージ一覧](/graph/api/user-list-messages?view=graph-rest-beta) と [メッセージの取得](/graph/api/message-get?view=graph-rest-beta)に、新しい[Mail.ReadBasic (プレビュー) permission](permissions-reference.md#mail-permissions)サポートが追加されました。            |
+| 追加        | ベータ版          | [メッセージ一覧](/graph/api/user-list-messages?view=graph-rest-beta) と [メッセージの取得](/graph/api/message-get?view=graph-rest-beta)に、新しい[Mail.ReadBasic (プレビュー) アクセス許可](permissions-reference.md#mail-permissions)サポートが追加されました。            |
+| 追加        | ベータ版          | [メッセージの MIME コンテンツを取得する](outlook-get-mime-message.md)機能が追加されました。 |
+| 追加        | ベータ版          | [ファイルまたはアイテムの添付ファイルの生コンテンツを取得](/graph/api/attachment-get?view=graph-rest-beta#get-the-raw-contents-of-a-file-or-item-attachment)する機能が、イベント、メッセージ、Outlook タスク、またはグループ投稿に追加されました。 |
 
 ### <a name="microsoft-teams-apis"></a>Microsoft Teams API
 
@@ -84,6 +98,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | :-------------- | :------------ | :--------------------------------------- |
 |追加 |v1.0 | [installedApps](/graph/api/resources/teamsappinstallation?view=graph-rest-1.0) リソースに対するアプリケーション アクセス許可のサポートを追加しました。|
 |追加 |v1.0| [channel](/graph/api/resources/channel?view=graph-rest-1.0) に、**email** および **webUrl** プロパティを追加しました。|
+| 追加 | ベータ版 | [チャット](/api-reference/beta/resources/chat.md) リソースと関連メソッドが追加されました。 |
 
 ## <a name="march-2019"></a>2019 年 3 月
 
@@ -118,6 +133,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | 追加 | ベータ版 | [educationAssignmentIndividualRecipient](/graph/api/resources/educationAssignmentIndividualRecipient?view=graph-rest-beta) リソースに **recipients** プロパティを追加します。|
 
 ### <a name="microsoft-intune-apis"></a>Microsoft Intune API
+
 |変更の種類|バージョン|説明|
 |:---|:---|:---|
 |追加|ベータ版|新しいエンティティを追加しました。<br/>[windowsHealthMonitoringConfiguration](/graph/api/resources/intune-deviceconfig-windowshealthmonitoringconfiguration?view=graph-rest-beta)<br/>|

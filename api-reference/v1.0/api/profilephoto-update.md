@@ -1,15 +1,15 @@
 ---
 title: ProfilePhoto を更新する
-description: サインインしている**ユーザー**、指定された**グループ**または**連絡先**の写真を更新します。 そこから
+description: サインイン **ユーザー**、または指定された**グループ**または**連絡先**の写真を更新します。 そこから
 localization_priority: Priority
 ms.openlocfilehash: 39c5a0405a05d46cbd77f161cd45fb19c40d8b7b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871821"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32576347"
 ---
-# <a name="update-profilephoto"></a>ProfilePhoto を更新する
+# <a name="update-profilephoto"></a>profilephoto を更新する
 
 サインイン **ユーザー**、または指定された**グループ**または**連絡先**の写真を更新します。現在各 REST 要求の合計サイズは 4 MB に制限されているため、追加する写真のサイズは 4 MB 未満に制限されます。
 
@@ -24,7 +24,7 @@ ms.locfileid: "27871821"
 - **グループ**のプロファイル写真 - Group.ReadWrite.All
 - **連絡先**の写真 - Contacts.ReadWrite
 
-> **注** 組織内のユーザーの写真を更新するには、アプリにはアプリケーションのアクセス許可 User.ReadWrite.All が必要で、ユーザーの代わりではなく、それ自身の ID でこの API を呼び出す必要があります。詳細については、「[ユーザーなしでアクセスを取得する](/graph/auth-v2-service)」を参照してください。
+> **注** 組織内のユーザーの写真を更新するには、アプリにはアプリケーションのアクセス許可 User.ReadWrite.All が必要で、ユーザーの代わりではなく、それ自身の ID でこの API を呼び出す必要があります。 詳細については、「[ユーザーなしでアクセスを取得する](/graph/auth-v2-service)」を参照してください。
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

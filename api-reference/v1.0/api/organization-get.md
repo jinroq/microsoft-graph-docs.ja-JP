@@ -5,11 +5,11 @@ localization_priority: Priority
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 749fd17c6b76864728519f407e8d3c06dc6ad902
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27930293"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32560971"
 ---
 # <a name="get-organization"></a>組織を取得する
 
@@ -51,7 +51,7 @@ GET /organization
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文の 1 つの[組織](../resources/organization.md)オブジェクトのコレクションです。
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で 1 つの [organization](../resources/organization.md) オブジェクトのコレクションを返します。
 
 ## <a name="example"></a>例
 

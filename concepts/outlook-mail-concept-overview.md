@@ -4,12 +4,12 @@ description: Outlook は、Office 365 のメッセージング通信ハブです
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 5480d174b542766ba540af97a1af99456ad21cf2
-ms.sourcegitcommit: bbe42a15dad4ffe037a6934ab6001b585b7574c2
+ms.openlocfilehash: 86f7506ec06325657465a5762261a061bf0ad575
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "31904022"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33440067"
 ---
 # <a name="outlook-mail-api-overview"></a>Outlook メール API の概要
 
@@ -68,7 +68,8 @@ Microsoft Graph を利用することにより、アプリ ユーザーに対し
 
   - [メッセージの作成と送信](outlook-create-send-messages.md)
   - [メッセージの整理方法](outlook-organize-messages.md)
-  - [共有メッセージの取得方法](outlook-share-messages-folders.md)
+  - [メッセージの MIME コンテンツを取得する](outlook-get-mime-message.md)
+  - [共有メッセージを取得する](outlook-share-messages-folders.md)
   - [Outlook リソースの不変識別子の取得](outlook-immutable-id.md)
   - [別のユーザーからのメールを送信する](outlook-send-mail-from-other-user.md)方法
 

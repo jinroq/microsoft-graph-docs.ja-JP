@@ -1,73 +1,80 @@
 ---
-title: チャネルを取得する
-description: チャネルのプロパティと関係を取得します。
+title: チャットの取得
+description: 1 つのチャットを取得します。
 author: nkramer
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 5b5f70b79deaf7fa90b6083dcbd4c83a09aa84e5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fa0afdb1697d0905c28a70015f260acd7ed4d6f3
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32565549"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33327565"
 ---
-# <a name="get-channel"></a>チャネルを取得する
+# <a name="get-chat"></a>チャットの取得
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[チャネル](../resources/channel.md)のプロパティと関係を取得します。
+1 つの[チャット](../resources/chat.md)を取得します (メッセージなし)。
 
 ## <a name="permissions"></a>アクセス許可
+
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Group.Read.All、Group.ReadWrite.All    |
+|委任 (職場または学校のアカウント) | Chat.Read   |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | Group.Read.All、Group.ReadWrite.All    |
-
-> **注**: この API は、管理者のアクセス許可をサポートします。 グローバル管理者と Microsoft Teams サービス管理者は、メンバーではないチームにアクセスできます。
+|アプリケーション | サポートされていません。   |
 
 ## <a name="http-request"></a>HTTP 要求
+
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /teams/{id}/channels/{id}
-
+GET /me/chats/{id}
+GET /users/{id}/chats/{id}
+GET /chats/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 
-このメソッドは、応答をカスタマイズするための $filter、$select、および $expand [OData クエリ パラメーター](/graph/query-parameters)をサポートします。
+この操作は現在、応答をカスタマイズする[OData クエリ パラメーター](/graph/query-parameters)をサポートしていません。
 
 ## <a name="request-headers"></a>要求ヘッダー
+
 | ヘッダー       | 値 |
 |:---------------|:--------|
 | Authorization  | ベアラー {トークン}。必須。  |
 
 ## <a name="request-body"></a>要求本文
+
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [channel](../resources/channel.md) オブジェクトを返します。
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [chat](../resources/chat.md) オブジェクトのコレクションを返します。
+
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。
+
 <!-- {
   "blockType": "request",
-  "name": "get_channel"
+  "name": "get_chat_message"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}
+GET https://graph.microsoft.com/beta/users/{id}/chats/{id}
 ```
+
 ##### <a name="response"></a>応答
 以下は、応答の例です。 
 
->**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
+>**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されています。 実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.channel"
+  "@odata.type": "microsoft.graph.chatMessage"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -75,9 +82,11 @@ Content-type: application/json
 Content-length: 201
 
 {
-    "description": "description-value",
-    "displayName": "display-name-value",
-    "id": "id-value"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#chats/$entity",
+    "id": "19:8b081ef6-4792-4def-b2c9-c363a1bf41d5_877192bd-9183-47d3-a74c-8aa0426716cf@unq.gbl.spaces",
+    "topic": null,
+    "createdDateTime": "2019-04-18T23:51:42.099Z",
+    "lastUpdatedDateTime": "2019-04-18T23:51:43.255Z"
 }
 ```
 
@@ -86,7 +95,7 @@ Content-length: 201
 <!--
 {
   "type": "#page.annotation",
-  "description": "Get channel",
+  "description": "Get chat",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

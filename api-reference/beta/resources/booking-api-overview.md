@@ -4,12 +4,12 @@ description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API は
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 7fc58a4fe0fb616963fd91d83a401d4ad8e1c43e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 78276af6a21653645d6c9344b5962d0c8f4086b2
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529860"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328215"
 ---
 # <a name="use-the-microsoft-bookings-api-in-microsoft-graph"></a>Microsoft Graph で Microsoft Bookings API を使用する
 
@@ -29,7 +29,8 @@ Bookings API の [bookingBusiness](bookingbusiness.md) は、プログラムで�
 顧客の予約を初めて受け付ける前に、次の手順を行います。 対応する操作のための適切な[アクセス トークン](/graph/auth-overview)を提供していることを確認します。
 
 1. ビジネスで [Office 365 Business Premium](https://products.office.com/ja-JP/business/office-365-business-premium) サブスクリプションを購入していることを確認します。
-2. エンティティ セットに POST 操作を送信して新しい **bookingBusiness** を作成します。 最小限でも、顧客に対して表示される新しいビジネスの名前を指定してください。<!-- { "blockType": "ignored" } -->
+2. エンティティ セットに POST 操作を送信して新しい **bookingBusiness** を作成します。 最小限でも、顧客に対して表示される新しいビジネスの名前を指定してください。
+<!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/beta/bookingBusinesses
 Authorization: Bearer {access token}
@@ -41,7 +42,8 @@ Content-Type: application/json
 ```
 POST 応答で返される新しい **bookingBusiness** の **id** プロパティを使用して、ビジネス設定を[カスタマイズ](../api/bookingbusiness-update.md)し、ビジネスのスタッフとサービスを追加します。
 
-3. ビジネスの個々のスタッフを追加します。<!-- { "blockType": "ignored" } -->
+3. ビジネスの個々のスタッフを追加します。
+<!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/beta/bookingBusinesses/{id}/staffMembers
 Authorization: Bearer {access token}
@@ -53,7 +55,8 @@ Content-Type: application/json
     "role": "externalGuest"
 }
 ```
-4. ビジネスで提供する各サービスを定義します。<!-- { "blockType": "ignored" } -->
+4. ビジネスで提供する各サービスを定義します。
+<!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/beta/bookingBusinesses/{id}/services
 Authorization: Bearer {access token}
@@ -63,13 +66,15 @@ Content-Type: application/json
     "displayName":"Bento"
 }
 ```
-5. ビジネスのスケジュール ページを公開し、顧客とビジネス運営担当者が予約の受付を開始できるようにします。<!-- { "blockType": "ignored" } -->
+5. ビジネスのスケジュール ページを公開し、顧客とビジネス運営担当者が予約の受付を開始できるようにします。
+<!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/beta/bookingBusinesses/{id}/publish
 Authorization: Bearer {access token}
 ```
 
-一般に、Office 365 テナントの予約ビジネスをすべて一覧表示するには次のようにします。<!-- { "blockType": "ignored" } -->
+一般に、Office 365 テナントの予約ビジネスをすべて一覧表示するには次のようにします。
+<!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/bookingBusinesses
 Authorization: Bearer {access token}
@@ -96,11 +101,3 @@ Authorization: Bearer {access token}
 - [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)で API をお試しください。
 - 「[パートナーによる Microsoft Graph の活用方法](https://developer.microsoft.com/graph/graph/examples#partners)」を参照してください。
 - Microsoft Graph で[権限](/graph/permissions-reference)を選択する方法を理解してください。
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/booking-api-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

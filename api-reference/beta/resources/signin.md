@@ -2,12 +2,12 @@
 title: サインイン リソースの種類
 description: 'このリソースでは、ディレクトリでのユーザーやアプリケーションのサインイン アクティビティについて詳しく説明します。 '
 localization_priority: Priority
-ms.openlocfilehash: a2ccb84daee642d207919217aa2857745846c769
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9736e906810ce1be1525bf85b687f4a5f1a57f3e
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32557973"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343018"
 ---
 # <a name="signin-resource-type"></a>サインイン リソースの種類
 このリソースでは、ディレクトリでのユーザーやアプリケーションのサインイン アクティビティについて詳しく説明します。 
@@ -41,11 +41,10 @@ ms.locfileid: "32557973"
 |riskDetail|`riskDetail`|リスクの高いユーザー、サインイン、リスク イベントのいずれかの特定の状態の背後にある「理由」について示します。 使用可能な値: `none`、`adminGeneratedTemporaryPassword`、`userPerformedSecuredPasswordChange`、`userPerformedSecuredPasswordReset`、`adminConfirmedSigninSafe`、`aiConfirmedSigninSafe`、`userPassedMFADrivenByRiskBasedPolicy`、`adminDismissedAllRiskForUser`、`adminConfirmedSigninCompromised`、`unknownFutureValue`。 値 `none` は、ユーザーについて実行されたアクションまたはサインインが今のところないことを意味しています。 **注:** このプロパティの詳細は、Azure AD Premium P2 のお客様のみ利用可能です。 その他のお客様には `hidden` が返されます。|
 |riskLevelAggregated|`riskLevel`|集計されたリスク レベルを示します。 使用可能な値: `none`、`low`、`medium`、`high`、`hidden`、`unknownFutureValue`。 値 `hidden` は、ユーザーまたはサインインが Azure AD Identity Protection で有効になっていないことを意味します。 **注:** このプロパティの詳細は、Azure AD Premium P2 のお客様のみ利用可能です。 その他のお客様には `hidden` が返されます。|
 |riskLevelDuringSignIn|`riskLevel`|サインイン時のリスク レベルを示します。 使用可能な値: `none`、`low`、`medium`、`high`、`hidden`、`unknownFutureValue`。 値 `hidden` は、ユーザーまたはサインインが Azure AD Identity Protection で有効になっていないことを意味します。 **注:** このプロパティの詳細は、Azure AD Premium P2 のお客様のみ利用可能です。 その他のお客様には `hidden` が返されます。|
-|riskEventTypes|`riskEventTypes`|サインインに関連付けられているリスク イベントの種類の一覧を示します。 使用可能な値: `unlikelyTravel`、`anonymizedIPAddress`、`maliciousIPAddress`、`unfamiliarFeatures`、`malwareInfectedIPAddress`、`suspiciousIPAddress`、`leakedCredentials`、`investigationsThreatIntelligence`、`generic`、`unknownFutureValue`。|
+|riskEventTypes|`riskEventType` コレクション|サインインに関連付けられているリスク イベントの種類の一覧を示します。 使用可能な値: `unlikelyTravel`、`anonymizedIPAddress`、`maliciousIPAddress`、`unfamiliarFeatures`、`malwareInfectedIPAddress`、`suspiciousIPAddress`、`leakedCredentials`、`investigationsThreatIntelligence`、`generic`、`unknownFutureValue`。|
 |riskState|`riskState`|リスクの高いユーザー、サインイン、リスク イベントの「リスクの状態」について示します。 使用可能な値: `none`、`confirmedSafe`、`remediated`、`dismissed`、`atRisk`、`confirmedCompromised`、`unknownFutureValue`。|
 |mfaDetail|[mfaDetail](mfadetail.md)|MFA が必要か、対応するサインインの MFA の状態など MFA 関連の情報を提供します。|
-|networkLocationDetail|[networkLocationDetail](networklocationdetail.md)|ネットワーク上の場所について詳細を示します。|
-|riskLevel|string| アカウントに関連付けられているリスク レベルを示します。使用可能な値は、`low`、`medium`、`high` です。|
+|networkLocationDetails|[networkLocationDetail](networklocationdetail.md) コレクション|ネットワーク上の場所について詳細を示します。|
 |status|[signInStatus](signinstatus.md)|サインイン状態について示します。 使用可能な値は、`Success`、`Failure` です。|
 |userDisplayName|String|ユーザーの表示名を示します。|
 |userId|String|ユーザーのユーザー ID を示します。|
@@ -95,11 +94,13 @@ ms.locfileid: "32557973"
   "riskLevelAggregated": "string",
   "riskLevelDuringSignIn": "string",
   "riskState": "string",
-  "riskEventTypes": "string",
+  "riskEventTypes": ["String"],
   "resourceDisplayName": "string",
   "resourceId": "string",
   "authenticationMethodsUsed": "string",
   "status": {"@odata.type": "microsoft.graph.signInStatus"},
+  "processingTimeInMilliseconds": 12356,
+  "networkLocationDetails": [{"@odata.type": "microsoft.graph.networkLocationDetail"}]
 }
 
 ```

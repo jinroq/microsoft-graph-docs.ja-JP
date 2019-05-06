@@ -4,12 +4,12 @@ description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API は
 localization_priority: Priority
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 051bd2a09c59736d50eea5cbfa330ee0d7d2a198
-ms.sourcegitcommit: cd4bdb2c6754b1d5658e68909ea6c219466da6df
+ms.openlocfilehash: 417bed70dd9745a88129e40f11ac1e0f97ddafda
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30644315"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343417"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>Microsoft Graph Security API を使用する
 
@@ -60,11 +60,13 @@ Microsoft Graph Security API 経由で送信された脅威インジケーター
 
 ## <a name="security-actions-preview"></a>セキュリティ アクション (プレビュー)
 
-Microsoft Graph のセキュリティの [securityAction](securityaction.md) エンティティを使用して、脅威から保護するためのアクションをただちに実行します。 セキュリティ アナリストが、悪意のあるファイル、URL、ドメイン、IP アドレスなどの新しいインジケーターを発見した場合、Microsoft のセキュリティ ソリューションでそれらに対する保護をすぐに有効にできます。 特定のプロバイダーのアクションを呼び出し、実行されるすべての操作を表示し、必要な場合は操作を取り消します。 [Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) (近日公開) でセキュリティ アクションを実行し、アラートに表示されるプロパティまたは調査中に特定されるプロパティを使用して Windows のエンドポイントの悪意のあるアクティビティをブロックします。
+Microsoft Graph のセキュリティの [securityAction](securityaction.md) エンティティを使用して、脅威から保護するためのアクションをただちに実行します。 セキュリティ アナリストが、悪意のあるファイル、URL、ドメイン、IP アドレスなどの新しいインジケーターを発見した場合、Microsoft のセキュリティ ソリューションでそれらに対する保護をすぐに有効にできます。 特定のプロバイダーのアクションを呼び出し、実行されるすべての操作を表示し、必要な場合は操作を取り消します。 [Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) でセキュリティ アクションを実行し、アラートに表示されるプロパティまたは調査中に特定されるプロパティを使用して Windows のエンドポイントの悪意のあるアクティビティをブロックします。
+
+  > **注:** 現在、セキュリティ アクションでサポートされているのは、アプリケーションのアクセス許可のみです。
 
 ## <a name="secure-score-preview"></a>セキュア スコア (プレビュー)
 
-[Microsoft セキュア スコア](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Office-365-Secure-Score-is-now-Microsoft-Secure-Score/ba-p/182358)は、セキュリティ ポートフォリオを可視化し、その方法を向上させるためのセキュリティ分析ソリューションです。 単一のスコアを使用することによって、Microsoft ソリューションにおいてリスクを軽減するために実行した事柄についてより良く把握できます。 また、自分のスコアを他の組織のスコアと比較したり、スコアが時間とともにどのように変化する傾向があるかも理解できます。 Microsoft Graph Security [secureScore](securescores.md) と [secureScoreControlProfiles](securescorecontrolprofiles.md) のエンティティは、ほぼ最大限のセキュリティ機能を確保しながら、組織のセキュリティと生産性のニーズに関して平衡を保つのに役立ちます。 また、セキュリティ機能を採用した後にスコアがどのように変化するかも予想できます。
+[Microsoft セキュア スコア](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Office-365-Secure-Score-is-now-Microsoft-Secure-Score/ba-p/182358)は、セキュリティ ポートフォリオを可視化し、その方法を向上させるためのセキュリティ分析ソリューションです。 単一のスコアを使用することによって、Microsoft ソリューションにおいてリスクを軽減するために実行した事柄についてより良く把握できます。 また、自分のスコアを他の組織のスコアと比較したり、スコアが時間とともにどのように変化する傾向があるかも理解できます。 Microsoft Graph Security [secureScore](securescores.md) と [secureScoreControlProfile](securescorecontrolprofiles.md) のエンティティは、ほぼ最大限のセキュリティ機能を確保しながら、組織のセキュリティと生産性のニーズに関して平衡を保つのに役立ちます。 また、セキュリティ機能を採用した後にスコアがどのように変化するかも予想できます。
 
 ## <a name="common-use-cases"></a>一般的なユース ケース
 
@@ -120,11 +122,3 @@ Microsoft Graph Security API に接続するその他のオプション調べま
 
 - [技術コミュニティに参加する](https://aka.ms/graphsecuritycommunity)
 - [StackOverflow についてディスカッションする](https://stackoverflow.com/questions/tagged/microsoft-graph-security)
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/security-api-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

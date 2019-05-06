@@ -1,15 +1,15 @@
 ---
 title: ユーザーのメールボックスの設定を取得する
-description: 'ユーザーの mailboxSettings を取得します。 (時に自動的にユーザーに通知する自動返信の設定が含まれます '
+description: 'ユーザーの mailboxSettings を取得します。 これには、自動応答 (自動的にユーザーに通知) の設定が含まれます。 '
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0e68d50cde270c20c76bce1e703ff07ff45c2107
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 24f8dcd69085153c50976bf2447214bfb4f23a1c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27914564"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345856"
 ---
 # <a name="get-user-mailbox-settings"></a>ユーザーのメールボックスの設定を取得する
 
@@ -31,13 +31,15 @@ ms.locfileid: "27914564"
 |アプリケーション | MailboxSettings.Read、MailboxSettings.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 要求
-ユーザーのメールボックスのすべての設定を取得するには。<!-- { "blockType": "ignored" } -->
+ユーザーのすべてのメールボックス設定を取得する場合:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings
 GET /users/{id|userPrincipalName}/mailboxSettings
 ```
 
--特定の設定を取得するには、などだけ自動返信の設定をロケール、タイム ゾーン、または作業時間。<!-- { "blockType": "ignored" } -->
+特定の設定 (たとえば、自動応答の設定、ロケール、タイム ゾーン、または就業時間のみ) を取得する場合:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings/automaticRepliesSetting
 GET /users/{id|userPrincipalName}/mailboxSettings/automaticRepliesSetting
@@ -122,8 +124,8 @@ Content-type: application/json
             "thursday",
             "friday"
         ],
-        "startTime":"08:00:00.000",
-        "endTime":"17:00:00.000",
+        "startTime": "08:00:00.0000000",
+        "endTime": "17:00:00.0000000",
         "timeZone":{
             "name":"Pacific Standard Time"
         }

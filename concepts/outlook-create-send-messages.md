@@ -4,12 +4,12 @@ description: Microsoft Graph では、メールは message リソースで表さ
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 160db6aae079d90f1ce20640429181cdbe6a4da5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 06074950ae1ea81be9546066ebff05825d44b700
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27927612"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33440088"
 ---
 # <a name="automate-creating-sending-and-processing-messages"></a>メッセージの作成、送信、処理の自動化
 
@@ -109,5 +109,8 @@ Microsoft Graph エンティティ間で共有されている次の一般的な�
 詳細情報:
 
 - [Outlook メールと統合する理由](outlook-mail-concept-overview.md)
+- [MIME コンテンツを取得する](outlook-get-mime-message.md)
+- [共有メッセージを取得する](outlook-share-messages-folders.md)
+- [別のユーザーを差出人として Outlook メッセージを送信する](outlook-send-mail-from-other-user.md)
 - [Outlook リソースの不変 ID の取得 (プレビュー)](outlook-immutable-id.md)
 - Microsoft Graph v1.0 の[メール API](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) とその[用途](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases)。

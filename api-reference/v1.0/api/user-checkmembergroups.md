@@ -1,17 +1,19 @@
 ---
 title: checkMemberGroups
-description: グループの指定されたリスト内のメンバーシップを確認します。 リストから先のグループを返します。
+description: 指定したグループ一覧内のメンバーシップを確認します。 リストからそのグループを返します。
 author: dkershaw10
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: a259416525cbd339f68962674a3441c10f6b3235
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981351"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32567894"
 ---
 # <a name="checkmembergroups"></a>checkMemberGroups
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 指定したグループ一覧内のメンバーシップを確認します。ユーザーのメンバーシップがダイレクト メンバーシップまたは推移性メンバーシップであるグループを一覧から返します。
 
@@ -27,7 +29,7 @@ ms.locfileid: "27981351"
 | 委任 (個人用 Microsoft アカウント) | サポートされていません。                                                                                                     |
 | アプリケーション                            | ~~User.Read.All~~、~~User.ReadWrite.All~~、Directory.Read.All、Directory.ReadWrite.All                             |
 
-> **注:** この API は現在必要があります、`Directory.Read.All`アクセス権またはそれ以上です。 使用して、`User.Read.All`または`User.ReadWrite.All`のアクセス許可エラーが返されます。 これは既知のバグです。
+> **注:** 現在この API には、`Directory.Read.All` 以上のアクセス許可が必要です。 `User.Read.All` または `User.ReadWrite.All` のアクセス許可を使用すると、エラーが返されます。 これは既知のバグです。
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -48,9 +50,9 @@ POST /users/{id | userPrincipalName}/checkMemberGroups
 
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター | Type              | 説明           |
-| :-------- | :---------------- | :-------------------- |
-| groupIds  | String コレクション | グループ ID の配列 |
+| パラメーター | 型   | 説明           |
+| :-------- | :----- | :-------------------- |
+| groupIds  | 文字列コレクション | グループ ID の配列 |
 
 ## <a name="response"></a>応答
 
@@ -70,7 +72,7 @@ POST /users/{id | userPrincipalName}/checkMemberGroups
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/me/checkMemberGroups
+POST https://graph.microsoft.com/beta/me/checkMemberGroups
 Content-type: application/json
 Content-length: 44
 
@@ -107,10 +109,13 @@ Content-length: 39
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "user: checkMemberGroups",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

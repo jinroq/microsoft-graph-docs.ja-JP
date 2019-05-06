@@ -4,12 +4,12 @@ description: 'これはアプリケーションを表すものです。 Azure Ac
 localization_priority: Priority
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 694f6b12dd8fe1fd59f12cafebd47c842a4077cb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a0bed2d85e0b7308e8006c99143ea80e2d756202
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548204"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339101"
 ---
 # <a name="application-resource-type"></a>アプリケーション リソースの種類
 
@@ -43,7 +43,7 @@ ms.locfileid: "32548204"
 
 | プロパティ | 型 | 説明 |
 |:---------------|:--------|:----------|
-|api|[api](api.md)| API アプリケーションの設定を指定します。 |
+|api|[apiApplication](apiapplication.md)| API アプリケーションの設定を指定します。 |
 |appId| String | Azure AD によってアプリケーションに割り当てられる、アプリケーションの一意の識別子です。 null 許容型ではありません。 読み取り専用です。 |
 |appRoles|[appRole](approle.md) コレクション|アプリケーションで宣言できるアプリケーション ロールのコレクションです。 これらのロールは、ユーザー、グループ、サービス プリンシパルなどに割り当てることができます。 null 許容型ではありません。|
 |createdDateTime|DateTimeOffset| アプリケーションが登録された日付と時刻です。 |
@@ -57,20 +57,20 @@ ms.locfileid: "32548204"
 |logo|Stream|アプリケーションのメイン ロゴです。 null 許容型ではありません。 |
 |optionalClaims|optionalClaims| 将来使用するために予約されています。 |
 |orgRestrictions|String コレクション| 将来使用するために予約されています。 |
-|parentalControlSettings|[parentalControlSettings](parentalcontrolsettings.md) |アプリケーションにおける、保護者による制限設定を指定します。|
+|parentalControlSettings|[parentalControlSettings](parentalcontrolsettings.md) コレクション |アプリケーションにおける、保護者による制限設定を指定します。|
 |passwordCredentials|[passwordCredential](passwordcredential.md) コレクション|アプリケーションに関連付けられているパスワード資格情報のコレクションです。 null 許容型ではありません。|
-|publicClient|[publicClient](publicclient.md)| デスクトップやモバイル デバイスなど、インストールされているクライアントの設定を指定します。 |
+|publicClient|[publicClientApplication](publicclientapplication.md)| デスクトップやモバイル デバイスなど、インストールされているクライアントの設定を指定します。 |
 |publisherDomain| String | アプリケーションの確認済み発行元のドメインです。 読み取り専用です。|
 |requiredResourceAccess|[requiredResourceAccess](requiredresourceaccess.md) コレクション|このアプリケーションがアクセスする必要があるリソース、およびそのリソースで必要な OAuth アクセス許可の範囲とアプリケーション ロールのセットを指定します。 必要なリソースへのアクセスに対するこの事前構成によって、同意エクスペリエンスが促進されます。 null 許容型ではありません。|
 |signInAudience | String | 現在のアプリケーションでサポートされている Microsoft アカウントを指定します。 サポートされている値は次のとおりです。<ul><li>**AzureADMyOrg**: 組織の Azure AD テナント (つまり、シングル テナント) で Microsoft の職場または学校アカウントを持つユーザー</li><li>**AzureADMultipleOrgs**: 組織の Azure AD テナント (つまり、マルチ テナント) で Microsoft の職場または学校アカウントを持つユーザー</li> <li>**AzureADandPersonalMicrosoftAccount**: 個人の Microsoft アカウントを持つユーザー、または組織の Azure AD テナントで職場または学校のアカウントを持つユーザー</li></ul> | `AzureADandPersonalMicrosoftAccount` |
 |tags|String コレクション| アプリケーションを分類および識別するために使用できるカスタム文字列です。 |
-|web|[web](web.md)| Web アプリケーションの設定を指定します。 |
+|Web|[webApplication](webapplication.md)| Web アプリケーションの設定を指定します。 |
 
 ## <a name="relationships"></a>リレーションシップ
 
 | リレーションシップ | 型 | 説明 |
 |:---------------|:--------|:----------|
-|calls           |[call](call.md) コレクション                  |読み取り専用です。 Null 許容型。|
+|calls           |[call](call.md) コレクション                  |読み取り専用。Null 許容型です。|
 |connectorGroup|[connectorGroup](connectorgroup.md)| アプリケーションが Azure AD アプリケーション プロキシで使用している connectorGroup です。 Null 許容型です。|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| 読み取り専用です。|
 |onlineMeetings  |[onlineMeeting](onlinemeeting.md) コレクション|読み取り専用。Null 許容型です。|
@@ -83,6 +83,7 @@ ms.locfileid: "32548204"
 
 <!-- {
   "blockType": "resource",
+  "keyProperty":"id",
   "optionalProperties": [
     "createdOnBehalfOf",
     "owners"
@@ -104,7 +105,7 @@ ms.locfileid: "32548204"
   "isFallbackPublicClient": true,
   "keyCredentials": [{"@odata.type": "microsoft.graph.keyCredential"}],
   "logo": "Stream",
-  "optionalClaims": [{"@odata.type": "microsoft.graph.optionalClaims"}],
+  "optionalClaims": {"@odata.type": "microsoft.graph.optionalClaims"},
   "orgRestrictions": ["Guid"],
   "parentalControlSettings": [{"@odata.type": "microsoft.graph.parentalControlSettings"}],
   "passwordCredentials": [{"@odata.type": "microsoft.graph.passwordCredential"}],
@@ -127,8 +128,6 @@ ms.locfileid: "32548204"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/application.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

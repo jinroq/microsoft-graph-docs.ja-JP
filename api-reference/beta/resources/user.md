@@ -4,12 +4,12 @@ description: Azure AD ユーザー アカウントを表します。directoryObj
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ee05a3c826924b606de599f2fbcadbebb963192f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7754b884354244e5cc62355d73e11b9a9b7403e5
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581304"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345086"
 ---
 # <a name="user-resource-type"></a>user リソースの種類
 
@@ -203,27 +203,27 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |createdObjects|[directoryObject](directoryobject.md) collection|ユーザーによって作成されたディレクトリ オブジェクト。読み取り専用です。Null 許容型。|
 |directReports|[directoryObject](directoryobject.md) collection|そのユーザーの部下であるユーザーと連絡先。(マネージャー プロパティがこのユーザーに設定されている、ユーザーと連絡先。)読み取り専用です。Null 許容型。 |
 |drive|[drive](drive.md)|ユーザーの OneDrive。読み取り専用です。|
-|events|[event](event.md) コレクション|ユーザーのイベント。既定では、既定の予定表でイベントが表示されます。読み取り専用です。Null 許容型。|
+|drives|[drive](drive.md) コレクション| このユーザーが使用できるドライブのコレクション。読み取り専用です。 |
+|イベント|[event](event.md) コレクション|ユーザーのイベント。既定では、既定の予定表でイベントが表示されます。読み取り専用です。Null 許容型。|
 |extensions|[extension](extension.md) コレクション|ユーザーに対して定義されているオープン拡張機能のコレクション。 Null 許容型。|
 |inferenceClassification|[inferenceClassification](inferenceclassification.md)| 明示的な指定に基づく、ユーザーのメッセージの関連性の分類。明示的な指定は、推定される関連性や重要性より優先されます。 |
-|insights|[insights](insights.md) コレクション| 読み取り専用です。 Null 許容型。|
+|insights|[officeGraphInsights](officegraphinsights.md) | 読み取り専用です。Null 許容型。|
 |joinedGroups|[group](group.md) コレクション| 読み取り専用です。Null 許容型。|
 |mailFolders|[mailFolder](mailfolder.md) コレクション| ユーザーのメール フォルダー。読み取り専用です。Null 許容型。|
 |manager|[directoryObject](directoryobject.md)|このユーザーの上司であるユーザーまたは連絡先。読み取り専用です。(HTTP メソッド:GET、PUT、DELETE)|
 |memberOf|[directoryObject](directoryobject.md) コレクション|ユーザーがメンバーになっているグループ、ディレクトリ ロール、および管理単位を一覧表示します。読み取り専用です。Null 許容型。|
 |joinedTeams|[group](group.md) コレクション|ユーザーがメンバーである Microsoft Teams のチームを一覧表示します。 読み取り専用です。 Null 許容型。|
 |messages|[message](message.md) コレクション|メールボックスまたはフォルダー内のメッセージ。読み取り専用です。Null 許容型。|
-|onenote|[OneNote](onenote.md)| 読み取り専用です。|
+|onenote|[onenote](onenote.md)| 読み取り専用です。|
 |outlook|[outlookUser](outlookuser.md)| ユーザーが使用できる選択的 Outlook サービス。 読み取り専用です。 Null 許容型。|
 |ownedDevices|[directoryObject](directoryobject.md) collection|ユーザーが所有しているデバイス。読み取り専用です。Null 許容型。|
 |ownedObjects|[directoryObject](directoryobject.md) collection|ユーザーが所有しているディレクトリ オブジェクト。読み取り専用です。Null 許容型。|
 |people|[person](person.md) コレクション| 読み取り専用。ユーザーに最も関連のある人。コレクションは、ユーザーに対する関連 (ユーザーの通信、コラボレーション、およびビジネス リレーションシップによって決まる) を基準として配列されます。person は、メール、連絡先、およびソーシャル ネットワークのすべてからの情報の集約です。|
 |photo|[profilePhoto](profilephoto.md)| ユーザーのプロフィール写真。読み取り専用です。|
 |photos|[Photo](photo.md) コレクション| 読み取り専用です。Null 許容型。|
-|planner|[plannerUser](planneruser.md)| ユーザーが使用可能な選択的プランナー サービス。 読み取り専用です。 Null 許容型。 |
-|sharepoint|[sharepoint](sharepoint.md)| ユーザーの SharePoint サイトへのアクセス。読み取り専用です。 |
+|planner|[plannerUser](planneruser.md)| ユーザーが使用可能な選択的プランナー サービス。 読み取り専用です。 Null 許容型です。 |
 |scopedRoleMemberOf|[scopedRoleMembership](scopedrolemembership.md) コレクション| このユーザーのスコープ ロール管理単位のメンバーシップ。 読み取り専用です。 Null 許容型。|
-|settings|[settings](user-settings.md) コレクション| 読み取り専用です。Null 許容型。|
+|settings|[userSettings](user-settings.md) | 読み取り専用です。Null 許容型。|
 |registeredDevices|[directoryObject](directoryobject.md) collection|ユーザーについて登録されているデバイス。読み取り専用です。Null 許容型。|
 
 ## <a name="json-representation"></a>JSON 表記
@@ -243,6 +243,7 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
     "createdObjects",
     "directReports",
     "drive",
+    "drives",
     "events",
     "extensions",
     "joinedGroups",
@@ -319,30 +320,40 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
   "usageLocation": "string",
   "userPrincipalName": "string",
   "userType": "string",
-
-  "calendar": { "@odata.type": "microsoft.graph.calendar" },
-  "calendarGroups": [{ "@odata.type": "microsoft.graph.calendarGroup" }],
-  "calendarView": [{ "@odata.type": "microsoft.graph.event" }],
-  "calendars": [ {"@odata.type": "microsoft.graph.calendar"} ],
-  "contacts": [ { "@odata.type": "microsoft.graph.contact" } ],
-  "contactFolders": [ { "@odata.type": "microsoft.graph.contactFolder" } ],
-  "createdObjects": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
-  "directReports": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
-  "drive": { "@odata.type": "microsoft.graph.drive" },
-  "insights": { "@odata.type": "microsoft.graph.officeGraphInsights" },
-  "settings": { "@odata.type": "microsoft.graph.userSettings" },
-  "events": [ { "@odata.type": "microsoft.graph.event" } ],
-  "extensions": [ { "@odata.type": "microsoft.graph.extension" } ],
-  "inferenceClassification": { "@odata.type": "microsoft.graph.inferenceClassification" },
-  "mailFolders": [ { "@odata.type": "microsoft.graph.mailFolder" } ],
-  "manager": { "@odata.type": "microsoft.graph.directoryObject" },
-  "memberOf": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
-  "joinedTeams": [ { "@odata.type": "microsoft.graph.group" } ],
-  "messages": [ { "@odata.type": "microsoft.graph.message" } ],
-  "outlook": { "@odata.type": "microsoft.graph.outlookUser" },
-  "ownedDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
-  "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
-  "registeredDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ]
+  "calendar": {"@odata.type": "microsoft.graph.calendar"},
+  "calendarGroups": [{"@odata.type": "microsoft.graph.calendarGroup"}],
+  "calendarView": [{"@odata.type": "microsoft.graph.event"}],
+  "calendars": [{"@odata.type": "microsoft.graph.calendar"}],
+  "contacts": [{"@odata.type": "microsoft.graph.contact"}],
+  "contactFolders": [{"@odata.type": "microsoft.graph.contactFolder"}],
+  "createdObjects": [{"@odata.type": "microsoft.graph.directoryObject"}],
+  "directReports": [{"@odata.type": "microsoft.graph.directoryObject"}],
+  "drive": {"@odata.type": "microsoft.graph.drive"},
+  "drives": [{"@odata.type": "microsoft.graph.drive"}],
+  "insights": {"@odata.type": "microsoft.graph.officeGraphInsights"},
+  "settings": {"@odata.type": "microsoft.graph.userSettings"},
+  "events": [{"@odata.type": "microsoft.graph.event"}],
+  "extensions": [{"@odata.type": "microsoft.graph.extension"}],
+  "inferenceClassification": {"@odata.type": "microsoft.graph.inferenceClassification"},
+  "mailFolders": [{"@odata.type": "microsoft.graph.mailFolder"}],
+  "manager": {"@odata.type": "microsoft.graph.directoryObject"},
+  "memberOf": [{"@odata.type": "microsoft.graph.directoryObject"}],
+  "joinedTeams": [{"@odata.type": "microsoft.graph.group"}],
+  "messages": [{ "@odata.type": "microsoft.graph.message"}],
+  "outlook": {"@odata.type": "microsoft.graph.outlookUser"},
+  "ownedDevices": [{"@odata.type": "microsoft.graph.directoryObject"}],
+  "photo": {"@odata.type": "microsoft.graph.profilePhoto"},
+  "registeredDevices": [{"@odata.type": "microsoft.graph.directoryObject"}],
+  "createdDateTime": "2019-02-07T21:53:13.067Z",
+  "employeeId": "string",
+  "faxNumber": "string",
+  "onPremisesDistinguishedName": "string",
+  "onPremisesDomainName": "string",
+  "onPremisesSamAccountName": "string",
+  "onPremisesUserPrincipalName": "string",
+  "otherMails": "string",
+  "refreshTokensValidFromDateTime": "2019-02-07T21:53:13.084Z",
+  "showInAddressList": true
 }
 ```
 
@@ -354,12 +365,13 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "user resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/user.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-}-->
+  "suppressions": []
+}
+-->

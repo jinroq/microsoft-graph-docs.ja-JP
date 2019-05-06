@@ -1,15 +1,15 @@
 ---
 title: 'グループ: getMemberGroups'
-description: 指定されたグループがメンバーであるすべてのグループを返します。チェックは推移的であり、グループが直接メンバーであるグループのみを返す memberOf ナビゲーション プロパティの読み取りとは異なります。
+description: 指定されたグループがメンバーであるすべてのグループを返します。 チェックは、グループが直接メンバーであるグループのみを返す memberOf ナビゲーション プロパティの読み取りとは異なり、推移的です。
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 578caa1660ee86f24483cff9143a9153ca448526
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: b96e092ec30040dadaff3399d932c70d73d7f037
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27934283"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334465"
 ---
 # <a name="group-getmembergroups"></a>グループ: getMemberGroups
 
@@ -23,11 +23,10 @@ ms.locfileid: "27934283"
 
 | アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)                                                 |
 | :------------------------------------- | :------------------------------------------------------------------------------------------ |
-| 委任 (職場または学校のアカウント)     | ~~Group.Read.All~~、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+| 委任 (職場または学校のアカウント)     | Group.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
 | 委任 (個人用 Microsoft アカウント) | サポートされていません。                                                                              |
-| アプリケーション                            | ~~Group.Read.All~~、Directory.Read.All、Directory.ReadWrite.All                             |
+| アプリケーション                            | Group.Read.All、Directory.Read.All、Directory.ReadWrite.All                             |
 
-> **注:** この API は現在必要があります、`Directory.Read.All`アクセス権またはそれ以上です。 使用して、`Group.Read.All`のアクセス許可エラーが返されます。 これは既知のバグです。
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -80,7 +79,7 @@ Content-length: 33
 
 応答の例を次に示します。
 
-> **注:** ここに示す応答オブジェクトは、読みやすさの短縮される可能性があります。 実際の呼び出しではすべてのプロパティが返されます。
+> **注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
 
 <!-- {
   "blockType": "response",

@@ -4,12 +4,12 @@ description: 'チームのチャネルに含まれるメッセージの一覧を
 localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: c5b442ff81f08d4daf9112e3eb129330877cba5f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e56c866ab8f9192e36b8c47752377bc384e9b41a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456494"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328168"
 ---
 # <a name="list-channel-messages"></a>チャネル メッセージを一覧表示する
 
@@ -20,6 +20,7 @@ ms.locfileid: "32456494"
 メッセージの返信を取得するには、[メッセージの返信一覧](channel-get-messagereply.md) API または [メッセージの返信取得](channel-list-messagereplies.md) API を呼び出します。 
 
 ## <a name="permissions"></a>アクセス許可
+
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の小さいものから大きいものへ)|
@@ -29,6 +30,7 @@ ms.locfileid: "32456494"
 |アプリケーション| サポートされていません。 |
 
 ## <a name="http-request"></a>HTTP 要求
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{id}/channels/{id}/messages
@@ -39,18 +41,23 @@ GET /teams/{id}/channels/{id}/messages
 [$top](/graph/query-parameters#top-parameter)クエリ パラメーターで応答ごとのアイテム数を制御することができます。 その他の[OData クエリ パラメーター](/graph/query-parameters)は現在サポートされていません。
 
 ## <a name="request-headers"></a>要求ヘッダー
+
 | ヘッダー       | 値 |
 |:---------------|:--------|
 | Authorization  | ベアラー {トークン}。必須。  |
 
 ## <a name="request-body"></a>要求本文
+
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [chatmessage](../resources/chatmessage.md) オブジェクトのコレクションを返します。
+このメソッドは、成功すると `200 OK` 応答コードと [chatMessage](../resources/chatmessage.md) オブジェクトのコレクションを応答本文で返します。
+
 ## <a name="example"></a>例
+
 ##### <a name="request"></a>要求
+
 以下は、要求の例です。
 <!-- {
   "blockType": "request",
@@ -229,8 +236,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/channel-list-messages.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

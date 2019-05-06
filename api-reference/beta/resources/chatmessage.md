@@ -2,18 +2,20 @@
 title: chatMessage リソースの種類
 description: チャネルまたはチャット エンティティ内の個別のチャット メッセージを表します。 メッセージは、ルート メッセージまたはメッセージの中の **replyToId** プロパティに定義されているスレッドの一部にすることができます。
 localization_priority: Priority
-ms.openlocfilehash: 1f1e38e53a7c7ad1b0452c9facc6d7f97314094e
-ms.sourcegitcommit: 3410e1b8dcf62a7b0e4d6b11920912479f21feb2
+author: nkramer
+ms.prod: microsoft-teams
+ms.openlocfilehash: 4c2631d0ba4883160c443000fa2ecb0e1853523d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30799999"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339848"
 ---
 # <a name="chatmessage-resource-type"></a>chatMessage リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[チャネル](channel.md)またはチャット エンティティ内の個別のチャット メッセージを表します。 メッセージは、ルート メッセージまたはメッセージの中の **replyToId** プロパティに定義されているスレッドの一部にすることができます。
+[チャネル](channel.md)または[チャット](chat.md)内の個別のチャット メッセージを表します。 メッセージは、ルート メッセージまたはメッセージの中の **replyToId** プロパティに定義されているスレッドの一部にすることができます。
 
 ## <a name="methods"></a>メソッド
 
@@ -25,27 +27,29 @@ ms.locfileid: "30799999"
 |[メッセージへの返信を取得する](../api/channel-get-messagereply.md) | [chatmessage](chatmessage.md)| チャネル内のメッセージへの返信を 1 件取得します。|
 |[チャネル内でメッセージを送信する](../api/channel-post-chatmessage.md) | [chatmessage](chatmessage.md)| チャネル内で新しい最上位レベルのメッセージを作成します。|
 |[チャネル内のメッセージに返信する](../api/channel-post-messagereply.md) | [chatmessage](chatmessage.md)| チャネル内の既存メッセージに返信します。|
+|[チャット内のメッセージを一覧表示する](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | 1 対 1 またはグループ チャットでのメッセージを取得します。 |
+|[チャット内のメッセージを取得する](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | チャット内の 1 つのメッセージを取得します。 |
 
 
-## <a name="properties"></a>プロパティ
+## <a name="properties"></a>Properties
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |id|String| 読み取り専用です。 メッセージの一意の ID。|
-|replyToId| string | スレッドの親メッセージ/ルート メッセージの ID。 |
-|from|[identitySet](identityset.md)| 読み取り専用です。 メッセージの送信者の詳細。|
+|replyToId| string | スレッドの親メッセージ/ルート メッセージの ID。 (チャットではなく、チャネルのメッセージにのみ適用) |
+|差出人|[identitySet](identityset.md)| 読み取り専用です。 メッセージの送信者の詳細。|
 |etag| string | メッセージのバージョン番号。 |
 |messageType|String|メッセージの種類。現在サポートされている値は message、chatEvent、Typing。|
 |createdDateTime|dateTimeOffset|読み取り専用です。 メッセージ作成時のタイムスタンプ。|
 |lastModifiedDateTime|dateTimeOffset|読み取り専用です。 メッセージ編集/更新時のタイムスタンプ。|
-|deleted|Boolean|メッセージが削除済み (回復可能) かどうかを示します。|
 |deletedDateTime|dateTimeOffset|読み取り専用です。 メッセージが削除された時間のタイムスタンプ、または削除されていない場合は Null です。 |
-|body|[itemBody](itembody.md)|メッセージのコンテンツのプレーンテキスト/HTML 表記。 既定ではプレーンテキストを返しますが、クエリ パラメーターの一部としてアプリケーションで HTML を選択できます|
-|summary|string|プッシュ通知および概要ビューまたはフォールバック ビューに使用できるメッセージの概要テキスト|
-|mentions|[chatMessageMention](chatmention.md) コレクション| メッセージに記載されているエンティティの一覧。 現在、user、bot、team、channel がサポートされています。|
+|件名|string| プレーン テキストでの、メッセージの件名です。|
+|本文|[itemBody](itembody.md)|メッセージのコンテンツのプレーンテキスト/HTML 表記。 表記は、本文内の contentType によって指定されます。 メッセージに [chatMessageMention ](chatmessagemention.md) が含まれている場合、コンテンツは常に HTML で表示されます。 |
+|summary|string| プッシュ通知および概要ビューまたはフォールバック ビューに使用できるメッセージの概要テキスト。 チャット メッセージではなく、チャネル メッセージにのみ適用されます。 |
+|attachments|[chatMessageAttachment](chatmessageattachment.md) コレクション |添付ファイル。 添付ファイルは現在読み取り専用です。添付ファイルの送信はサポートされていません。 |
+|mentions|[chatMessageMention](chatmessagemention.md) コレクション| メッセージに記載されているエンティティの一覧。 現在、user、bot、team、channel がサポートされています。|
 |importance| string | メッセージの重要度: 通常、高。|
-|reactions| [chatMessageReaction](chatreaction.md) コレクション | このメッセージに対する反応 (例: いいね!)|
-|locale|string|クライアントに設定されたメッセージのロケール|
-|attachments|[chatMessageAttachment](chatattachment.md) コレクション |添付ファイル。 添付ファイルは現在読み取り専用です。添付ファイルの送信はサポートされていません。 |
+|reactions| [chatMessageReaction](chatmessagereaction.md) コレクション | このメッセージに対する反応 (例: いいね!)。|
+|locale|string|クライアントに設定されたメッセージのロケール。|
 
 
 ## <a name="json-representation"></a>JSON 表記
@@ -84,8 +88,10 @@ ms.locfileid: "30799999"
   "attachments": [{"@odata.type": "microsoft.graph.chatMessageAttachment"}],
   "mentions": [{"@odata.type": "microsoft.graph.chatMessageMention"}],
   "importance": "string",
+  "policyViolation": "string",
   "reactions": [{"@odata.type": "microsoft.graph.chatMessageReaction"}],
-  "locale": "string"
+  "locale": "string",
+  "deleted": true
 }
 
 ```
@@ -99,8 +105,6 @@ ms.locfileid: "30799999"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/chatmessage.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

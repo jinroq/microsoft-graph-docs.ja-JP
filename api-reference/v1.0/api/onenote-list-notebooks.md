@@ -2,16 +2,18 @@
 title: ノートブックを一覧表示する
 description: ノートブック オブジェクトの一覧を取得します。
 author: jewan-microsoft
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: onenote
 ms.openlocfilehash: b66b059d92b1177a6c2b5df9a9d978eb87dec53e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27975485"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562147"
 ---
 # <a name="list-notebooks"></a>ノートブックを一覧表示する
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [ノートブック](../resources/notebook.md) オブジェクトの一覧を取得します。
 ## <a name="permissions"></a>アクセス許可
@@ -39,7 +41,7 @@ GET /sites/{id}/onenote/notebooks
 ノートブックの有効な `expand` 値は `sections` および `sectionGroups` です。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | 承諾 | string | `application/json` |
@@ -58,7 +60,7 @@ GET /sites/{id}/onenote/notebooks
   "name": "get_notebooks"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/onenote/notebooks
+GET https://graph.microsoft.com/beta/me/onenote/notebooks
 ```
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:ここに示す応答オブジェクトは切り詰めて簡略化されています。実際の呼び出しではすべてのプロパティが返されます。
@@ -82,6 +84,7 @@ Content-length: 369
       "isShared": true,
       "sectionsUrl": "sectionsUrl-value",
       "sectionGroupsUrl": "sectionGroupsUrl-value",
+      "id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
       "links": {
         "oneNoteClientUrl": {
           "href": "href-value"
@@ -97,10 +100,13 @@ Content-length: 369
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List notebooks",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

@@ -4,19 +4,19 @@ description: 'チャネルは、チーム内の chatMessages のコレクショ�
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: d58a3e0b867a675e378fa126108331fd5b27856c
-ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
+ms.openlocfilehash: 1b77afb1560ed451683838a617123db013b71cd6
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29994469"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33338762"
 ---
 # <a name="channel-resource-type"></a>チャネルのリソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-チャネルは、[チーム](../resources/team.md)内の [chatMessages](chatmessage.md) のコレクションです。 チャネルは 1 つのトピック、つまりチーム内でのディスカッションの論理的分離を表します。 たとえば、「Friday Team Lunch (金曜日のチーム ランチ)」チャネルや「Architecture Discussion (アーキテクチャに関するディスカッション)」チャネルなどです。
-
+[チーム](../resources/team.md)はチャネルで構成されています。チャネルは、チームのメンバーと会話する場所です。 各チャネルは、特定のトピック、部門、プロジェクト専用です。
+チャネルは、実際に作業を行う場所、チーム全体に対してテキスト、音声、ビデオによる会話を公開する場所、ファイルを共有する場所、タブを追加する場所です。
 
 ## <a name="methods"></a>メソッド
 
@@ -29,6 +29,11 @@ ms.locfileid: "29994469"
 |[チャネルを削除する](../api/channel-delete.md) | なし | チャネルを削除します。|
 |[チャネル メッセージを一覧表示する](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | チャネルのメッセージを取得します。 |
 |[チャネル メッセージを送信する](../api/channel-post-chatmessage.md)  | [chatMessage](../resources/chatmessage.md) | [メッセージをチャネルに送信する](../api/channel-post-chatmessage.md) |
+|[タブを一覧表示する](../api/teamstab-list.md) | [teamsTab](teamstab.md) | チャネルにピン留めされているタブを一覧表示します。|
+|[タブを取得する](../api/teamstab-get.md) | [teamsTab](teamstab.md) | チャネルにピン留めされているタブを読み取ります。|
+|[タブを追加する](../api/teamstab-add.md) | [teamsTab](teamstab.md) | タブをチャネルに追加 (ピン留め) します。|
+|[タブを削除する](../api/teamstab-delete.md) | なし | チャネルからタブを削除します (ピン留めを外します)。|
+|[タブを更新する](../api/teamstab-update.md) | [teamsTab](teamstab.md) | タブのプロパティを更新します。|
 
 
 ## <a name="properties"></a>プロパティ
@@ -38,7 +43,7 @@ ms.locfileid: "29994469"
 |displayName|String|Microsoft Teams でユーザーに対して表示されるチャネルの名前。|
 |id|String|チャネルの一意の識別子。 読み取り専用です。|
 |isFavoriteByDefault|Boolean|チームのメンバー全員に対してチャネルを「お気に入り」として自動的にマークするかどうか。 既定値: `false`。|
-|email|Boolean| チャネルにメッセージを送信するときのメール アドレス。 読み取り専用です。|
+|メール|String| チャネルにメッセージを送信するときのメール アドレス。 読み取り専用です。|
 |webUrl|String|Microsoft Teams のチャネルに移動するハイパーリンク。 これは、Microsoft Teams でチャネルを右クリックし、[チームへのリンクを取得] を選択すると作成される URL です。 この URL は不透明 blob として扱われる必要があり、また解析されません。 読み取り専用です。|
 
 
@@ -67,8 +72,10 @@ ms.locfileid: "29994469"
   "description": "string",
   "displayName": "string",
   "id": "string (identifier)",
+  "isFavoriteByDefault": true,
+  "email": "string",
+  "webUrl": "string"
 }
-
 ```
 
 
@@ -81,8 +88,6 @@ ms.locfileid: "29994469"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/channel.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

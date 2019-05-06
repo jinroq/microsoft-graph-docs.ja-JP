@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: insights
 ms.openlocfilehash: e7dd5c2ffefe57ffebf5e8d2fe3e9dca3101a488
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27946351"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571227"
 ---
 # <a name="list-people"></a>ユーザーを一覧表示する
 
@@ -42,10 +42,10 @@ GET /users/{id | userPrincipalName}/people
 
 |名前|値|説明|
 |:---------------|:--------|:-------|
-|$filter|文字列|応答を、指定した条件に等しいレコードを持つ人物のみに制限します。|
-|$orderby|文字列|既定では、応答に含まれる人物は、クエリとの関連性で並べ替えられます。 応答に含まれる人物の順序は、*$orderby* パラメーターを使用することで変更できます。|
-|$search|文字列|名またはエイリアスで人物を検索します。 ファジー マッチをサポートします。 パラメーターだけが、他のユーザーに関連する人の検索ではなく、サインインしているユーザーの関連するユーザーを検索します。 サポートしており、`topic`その人と電子メールのやり取りなどから抽出された項目に基づいて、ユーザーを検索するキーワードです。 例については、[人の関連情報を取得](/graph/people-example#perform-a-fuzzy-search)することで*あいまい検索を実行する*セクションを参照してください。 |
-|$select|文字列|応答に含めるプロパティを示すコンマ区切りのリスト。最適なパフォーマンスを得るには、必要なプロパティのサブセットのみを選択します。|
+|$filter|string|応答を、指定した条件に等しいレコードを持つ人物のみに制限します。|
+|$orderby|string|既定では、応答に含まれる人物は、クエリとの関連性で並べ替えられます。 応答に含まれる人物の順序は、*$orderby* パラメーターを使用することで変更できます。|
+|$search|string|名またはエイリアスで人物を検索します。 ファジー マッチをサポートします。 パラメーターは、サインインしたユーザーの関連人物を検索するためにのみ機能し、他のユーザーに関連する人物を検索するためには機能しません。 その人とのメール会話から抽出されたトピックに基づいて人を見つける `topic` キーワードもサポートします。 情報と例については、[関係者の情報を取得する](/graph/people-example#perform-a-fuzzy-search)の*あいまい検索の実行*セクションを参照してください。 |
+|$select|string|応答に含めるプロパティを示すコンマ区切りのリスト。最適なパフォーマンスを得るには、必要なプロパティのサブセットのみを選択します。|
 |$skip|int|最初の n 個の結果をスキップします。これはページングに役立ちます。これは *$search* の使用時にはサポートされません。|
 |$top|int|返される結果の数。|
 

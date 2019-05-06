@@ -4,12 +4,12 @@ description: Office 365 グループ、動的なグループ、セキュリテ�
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: a99d63bd880fd37359ba1d72452093443d41236e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: aa18cf9ce8a0dbaf7f50c0b643335a5a992d9049
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570772"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324795"
 ---
 # <a name="group-resource-type"></a>group リソースの種類
 
@@ -69,10 +69,10 @@ Office 365 グループ、動的なグループ、セキュリティ グルー�
 |[スレッドを一覧表示する](../api/group-list-threads.md) |[conversationThread](conversationthread.md) コレクション| グループのすべてのスレッドを取得します。|
 |[スレッドを更新する](../api/group-update-thread.md) |なし| thread オブジェクトのプロパティを更新します。|
 |[スレッドを削除する](../api/group-delete-thread.md) |なし| thread オブジェクトを削除します。|
-|[acceptedSenders を一覧表示する](../api/group-list-acceptedsenders.md) |[directoryObject](directoryobject.md) コレクション| このグループの acceptedSenders リストに含まれるユーザーまたはグループの一覧を取得します。|
+|[acceptedSenders を一覧表示する](../api/group-list-acceptedsenders.md) |[directoryObject](directoryobject.md) collection| このグループの許可された送信者リストに含まれるユーザーまたはグループの一覧を取得します。|
 |[acceptedSender を追加する](../api/group-post-acceptedsenders.md) |[directoryObject](directoryobject.md)| acceptSenders コレクションにユーザーまたはグループを追加します。|
 |[acceptedSender を削除する](../api/group-delete-acceptedsenders.md) |[directoryObject](directoryobject.md)| acceptedSenders コレクションからユーザーまたはグループを削除します。|
-|[rejectedSenders を一覧表示する](../api/group-list-rejectedsenders.md) |[directoryObject](directoryobject.md) コレクション| このグループの rejectedSenders リストに含まれるユーザーまたはグループの一覧を取得します。|
+|[rejectedSenders を一覧表示する](../api/group-list-rejectedsenders.md) |[directoryObject](directoryobject.md) collection| このグループの拒否された送信者リストに含まれるユーザーまたはグループの一覧を取得します。|
 |[rejectedSender を追加する](../api/group-post-rejectedsenders.md) |[directoryObject](directoryobject.md)| rejectedSender コレクションに新しいユーザーまたはグループを追加します。|
 |[rejectedSender を削除する](../api/group-delete-rejectedsenders.md) |[directoryObject](directoryobject.md)| rejectedSender コレクションから新しいユーザーまたはグループを削除します。|
 |[設定を作成する](../api/groupsetting-post-groupsettings.md) | [groupSetting](groupsetting.md) |groupSettingTemplate に基づいて、設定オブジェクトを作成します。POST 要求は、テンプレートに定義されているすべての設定の settingValues を提供する必要があります。グループ固有のテンプレートにのみ、この操作を使用します。|

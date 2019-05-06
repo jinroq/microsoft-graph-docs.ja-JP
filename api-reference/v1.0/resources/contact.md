@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.openlocfilehash: 7b60333bec9bfca9d67fedc379e4a51ce768fba2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27936838"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548104"
 ---
 # <a name="contact-resource-type"></a>contact リソース型
 
@@ -18,7 +18,7 @@ ms.locfileid: "27936838"
 このリソースは以下をサポートしています。
 
 - [拡張機能](/graph/extensibility-overview)として、カスタム プロパティに独自のデータを追加します。
-- [変更通知](/graph/webhooks)にサブスクライブします。
+- [変更通知](/graph/webhooks)を受信します。
 - [デルタ](../api/contact-delta.md)関数を提供することにより、[デルタ クエリ](/graph/delta-query-overview)を使用して、増分の追加、削除、更新を追跡します。
 
 
@@ -49,22 +49,22 @@ ms.locfileid: "27936838"
 |birthday|DateTimeOffset|連絡先の誕生日です。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |businessAddress|[PhysicalAddress](physicaladdress.md)|連絡先の勤務先の住所。|
 |businessHomePage|String|連絡先の勤務先のホーム ページ。|
-|businessPhones|String コレクション|連絡先の勤務先の電話番号。|
-|categories|String コレクション|連絡先に関連付けられたカテゴリ。|
+|businessPhones|String collection|連絡先の勤務先の電話番号。|
+|categories|String collection|連絡先に関連付けられたカテゴリ。|
 |changeKey|String|連絡先のバージョンを識別します。連絡先を変更するたびに ChangeKey も変更されます。これにより、Exchange は正しいバージョンのオブジェクトに変更を適用できます。|
-|children|String コレクション|連絡先の子供の名前。|
+|children|String collection|連絡先の子供の名前。|
 |companyName|String|連絡先の会社の名前。|
 |createdDateTime|DateTimeOffset|連絡先が作成された時刻です。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |department|String|連絡先の部署。|
-|displayName|String|連絡先の表示名。 [作成](../api/user-post-contacts.md)または[更新](../api/contact-update.md)操作では、表示名を指定できます。 その他のプロパティを後で更新プログラムが原因で、自動的に生成された値を指定した表示名の値を上書きすることに注意します。 既存の値を保持するには、必ず、[更新](../api/contact-update.md)操作の表示名としてです。|
+|displayName|String|連絡先の表示名。 [[作成]](../api/user-post-contacts.md) または [[更新]](../api/contact-update.md) の操作で表示名を指定できます。 後で他のプロパティを更新すると、指定した displayName 値が自動的に生成された値に上書きされますので、ご注意ください。 既存の値を保持するには、[[更新]](../api/contact-update.md) 操作で必ずその値を displayName として含めてください。|
 |emailAddresses|[EmailAddress](emailaddress.md) collection|連絡先のメール アドレス。|
 |fileAs|String|連絡先がファイルされる名前。|
 |generation|String|連絡先の世代。|
 |givenName|String|連絡先の名。|
 |homeAddress|[PhysicalAddress](physicaladdress.md)|連絡先の自宅住所。|
-|homePhones|String コレクション|連絡先の自宅の電話番号。|
+|homePhones|String collection|連絡先の自宅の電話番号。|
 |id|String|連絡先の一意識別子。読み取り専用。|
-|imAddresses|String コレクション|連絡先のインスタント メッセージング (IM) アドレス。|
+|imAddresses|String collection|連絡先のインスタント メッセージング (IM) アドレス。|
 |initials|String|連絡先のイニシャル。|
 |jobTitle|String|連絡先の役職。|
 |lastModifiedDateTime|DateTimeOffset|連絡先が変更された時刻です。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
@@ -79,7 +79,7 @@ ms.locfileid: "27936838"
 |profession|String|連絡先の専門的職業。|
 |spouseName|String|連絡先の配偶者/パートナーの名前。|
 |姓|String|連絡先の姓。|
-|タイトル|String|連絡先の肩書。|
+|title|String|連絡先の肩書。|
 |yomiCompanyName|String|連絡先の会社名の読み仮名。|
 |yomiGivenName|String|連絡先の名 (ファースト ネーム) の読み仮名。|
 |yomiSurname|String|連絡先の姓 (ラスト ネーム) の読み仮名。|
@@ -89,7 +89,7 @@ ms.locfileid: "27936838"
 |:---------------|:--------|:----------|
 |extensions|[extension](extension.md) コレクション|連絡先に対して定義されているオープン拡張機能のコレクション。読み取り専用。Null 許容型。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| 連絡先に定義された、複数値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
-|photo|[profilePhoto](profilephoto.md)| 連絡先の写真 (オプション)。連絡先の写真を取得また設定することができます。|
+|写真|[profilePhoto](profilephoto.md)| 連絡先の写真 (オプション)。連絡先の写真を取得また設定することができます。|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 連絡先に定義された、単一値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
 
 ## <a name="json-representation"></a>JSON 表記

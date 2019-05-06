@@ -1,17 +1,17 @@
 ---
-title: リスト signIns
-description: テナントの Azure AD ユーザーのサインインを取得します。 インタラクティブ (ユーザー名とパスワードは認証トークンの一部として渡す) 性質およびフェデレーション サインインが成功には、サインインの問題は現在、サインインがログに含まれます。  最新の signIns が最初に返されます。
+title: signIns を一覧表示する
+description: テナントの Azure AD ユーザーのサインインを取得します。 本来対話型のサイイン (ユーザー名とパスワードが認証トークンの一部として渡される場合) と、成功したフェデレーション サインインは、現在サインイン ログに含まれています。  最新の signIns が最初に返されます。
 localization_priority: Priority
 ms.openlocfilehash: 8596bd168a3e10cbea9e15e2f61d6bd668fd27b5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27861790"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545158"
 ---
-# <a name="list-signins"></a>リスト signIns
+# <a name="list-signins"></a>signIns を一覧表示する
 
-テナントの Azure AD ユーザーのサインインを取得します。 インタラクティブ (ユーザー名とパスワードは認証トークンの一部として渡す) 性質およびフェデレーション サインインが成功には、サインインの問題は現在、サインインがログに含まれます。  最新の signIns が最初に返されます。
+テナントの Azure AD ユーザーのサインインを取得します。 本来対話型のサイイン (ユーザー名とパスワードが認証トークンの一部として渡される場合) と、成功したフェデレーション サインインは、現在サインイン ログに含まれています。  最新の signIns が最初に返されます。
 
 
 ## <a name="permissions"></a>アクセス許可
@@ -23,7 +23,7 @@ ms.locfileid: "27861790"
 |委任 (個人用 Microsoft アカウント) | サポートされていません   |
 |アプリケーション | AuditLog.Read.All | 
 
-さらに、アプリケーションでは、Azure AD に[適切に登録](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)をする必要があります。
+また、アプリは Azure AD に[正しく登録されている](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)必要があります。
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -31,18 +31,18 @@ ms.locfileid: "27861790"
 GET auditLogs/signIns
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための以下の OData クエリ パラメーターをサポートします。 これらのパラメーターを使用する方法については、 [OData クエリのパラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)を確認してください。
+このメソッドは、応答をカスタマイズするための以下の OData クエリ パラメーターをサポートします。 [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)でこれらのパラメーターを使用する方法について確認してください。
 
 |名前     |説明                            |例|
 |:--------------------|----------------|------------------------------------------------------------------------|
 |[$filter](https://developer.microsoft.com/graph/docs/concepts/query_parameters#filter-parameter)|結果 (行) をフィルターします。 |`/auditLogs/signIns?&$filter=createdDateTime le 2018-01-24`
 |[$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top-parameter)|結果のページ サイズを設定します。|`/auditLogs/signIns?$top=1`|
-|[$skiptoken](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skiptoken-parameter)|取得の結果からの結果の次のページを設定するは、複数ページに します。|`/auditLogs/signIns?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
+|[$skiptoken](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skiptoken-parameter)|複数ページにわたる結果セットから、結果の次のページを取得します。|`/auditLogs/signIns?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
 
-### <a name="list-of-attributes-supported-by-filter-parameter"></a>$Filter パラメーターでサポートされている属性の一覧
+### <a name="list-of-attributes-supported-by-filter-parameter"></a>$Filter パラメーターにサポートされる属性の一覧
 |属性名 |サポートされる演算子|
 |:----------------|:------|
-|ID|eq|
+|id|eq|
 |userId|eq|
 |appId|eq|
 |createdDateTime| eq、le、ge|
@@ -50,17 +50,17 @@ GET auditLogs/signIns
 |userPrincipalName| eq、startswith|
 |appDisplayName| eq、startswith|
 |ipAddress| eq、startswith|
-|場所と市区町村| eq、startswith|
-|場所と状態| eq、startswith|
-|場所/countryOrRegion| eq、startswith|
-|ステータスまたはエラー コード|eq|
-|initiatedBy、構造体、id のユーザー|eq|
-|initiatedBy、構造体、displayName ユーザー| eq|
-|userPrincipalName/initiatedBy/ユーザー| eq、startswith|
+|location/city| eq、startswith|
+|location/state| eq、startswith|
+|location/countryOrRegion| eq、startswith|
+|status/errorCode|eq|
+|initiatedBy/user/id|eq|
+|initiatedBy/user/displayName| eq|
+|initiatedBy/user/userPrincipalName| eq、startswith|
 |clientAppUsed| eq|
 |conditionalAccessStatus | eq|
-|deviceDetail/ブラウザー| eq、startswith|
-|deviceDetail/ル| eq、startswith|
+|deviceDetail/browser| eq、startswith|
+|deviceDetail/operatingSystem| eq、startswith|
 |correlationId| eq|
 |riskDetail| eq|
 |riskLevelAggregated| eq|
@@ -75,7 +75,7 @@ GET auditLogs/signIns
 
 
 ## <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本体での[サインイン](../resources/signin.md)のオブジェクトのコレクションです。
+成功した場合、このメソッドは `200 OK` 応答コードと、[signIn](../resources/signin.md) オブジェクトのコレクションを応答本文で返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

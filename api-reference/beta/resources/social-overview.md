@@ -1,32 +1,32 @@
 ---
-title: Microsoft グラフ API を使用して、アプリケーションでは、ソーシャル ・ インテリジェンスを統合するために
-description: Graph では、コンテキストでは、ユーザーのソーシャル、ソーシャルのジェスチャをサポートしているし、便利な人や社会のデータにアクセスを提供します。
+title: Microsoft Graph API を使用してアプリにソーシャル インテリジェンスを統合する
+description: Microsoft Graph では、コンテキストにおけるユーザーのソーシャル ジェスチャをサポートし、ユーザーとソーシャルに関する役立つデータにアクセスできます。
 localization_priority: Priority
 author: simonhult
 ms.prod: insights
-ms.openlocfilehash: 3ccc574a966c5a0dc81f62fe4fa0a595fb25a982
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 45482d2e47c97b6c09302ab60ff9c031cef1e92a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27944881"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345710"
 ---
-# <a name="use-the-microsoft-graph-api-to-integrate-social-intelligence-in-an-app"></a>Microsoft グラフ API を使用して、アプリケーションでは、ソーシャル ・ インテリジェンスを統合するために
+# <a name="use-the-microsoft-graph-api-to-integrate-social-intelligence-in-an-app"></a>Microsoft Graph API を使用してアプリにソーシャル インテリジェンスを統合する
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Graph では、コンテキストでは、ユーザーのソーシャル、ソーシャルのジェスチャをサポートしているし、便利な人や社会のデータにアクセスを提供します。
+Microsoft Graph では、コンテキストにおけるユーザーのソーシャル ジェスチャをサポートし、ユーザーとソーシャルに関する役立つデータにアクセスできます。
 
-## <a name="aggregate-and-extract-specific-information-about-people"></a>集約し、他のユーザーに関する特定の情報を抽出
+## <a name="aggregate-and-extract-specific-information-about-people"></a>ユーザーに関する特有の情報を集約して抽出する
 
-メール、連絡先、およびソーシャル ネットワークの間で[ユーザー](../resources/person.md)リソースとユーザー API から、ある人物に関する情報を集約を使用します。 結果は、複数の通信、コラボレーション、および取引関係に基づく妥当性で並べ替えられます。 API は、参照、並べ替え、選択、フィルター、またはの条件に基づいてユーザーを検索することができます。
+[person](../resources/person.md) リソースと People API を使用して、メール、連絡先、およびソーシャル ネットワークから、個人に関する情報を集約することができます。 結果は、複数のコミュニケーション、コラボレーション、およびビジネスのリレーションシップを基に、関連性によって並べられます。 API を使用すると、条件に基づいて、個人の閲覧、並べ替え、選択、フィルター、または検索を行うことができます。
 
 - [ユーザーを一覧表示する](../api/user-list-people.md)
 
-## <a name="manage--mentions"></a>@-参照投稿を管理します。
+## <a name="manage--mentions"></a>@- メンションを管理する
 
-受信者に通知し、メッセージ内の受信者の注意を引くために呼び出すことは、一般的なソーシャル ジェスチャです。
-[説明](../resources/mention.md)リソースに関する API[メッセージ](../resources/message.md)の受信者を @ の説明を使用してユーザーに通知するすべてのメッセージを取得するには、軽量のメカニズムを提供やメッセージに記載されている各を取得します。
+ソーシャルの世界では、メッセージ内で受信者に通知して注意を引くために受信者に呼びかけることが一般的に行われています。
+[mention](../resources/mention.md) リソースと Mentions API には、[メッセージ](../resources/message.md)内で受信者に呼びかけたり、ユーザーが @-メンションを使用して通知しているすべてのメッセージを取得したり、メッセージの内の各メンションを取得したりする軽量のメカニズムが備わっています。
 
 <!--
 Include the next sentence when supporting events.
@@ -42,14 +42,14 @@ Include the next sentence when supporting events.
 
 - メッセージのメンションに関する情報を取得する
 
-  - [ユーザーに言及する、サインイン中のユーザーのメールボックス内のすべてのメッセージを取得します。](../api/user-list-messages.md#request-2)
-  - [メッセージ内の各メンションの詳細の取得](../api/message-get.md#request-2)
+  - [対象ユーザーについてメンションしている、サインイン ユーザーのメールボックス内のすべてのメッセージを取得する](../api/user-list-messages.md#request-2)
+  - [特定のメッセージ内の各メンションの詳細を取得する](../api/message-get.md#request-2)
 
-- メッセージで[参照を削除](../api/message-delete.md#request-2)
+- 特定のメッセージ内の[メンションを削除する](../api/message-delete.md#request-2)
 
-## <a name="access-social-data-around-and-about-a-user"></a>周りと、ユーザーのソーシャル データにアクセス
+## <a name="access-social-data-around-and-about-a-user"></a>ユーザーに関するソーシャル データにアクセスする
 
-Office のグラフは、Office 365 内の別のエンティティ間の関係をカプセル化します。 Office 365 の間で個々 のユーザーのソーシャル洞察を取得するのにには、Office のグラフを使用します。
+Office Graph は、Office 365 の各種エンティティ間のリレーションシップをカプセル化します。 Office Graph を使用して、Office 365 全体における各ユーザーのソーシャル インサイトを取得できます。
 
-- アイテム[の周囲にトレンド ・](../api/insights-list-trending.md)ユーザーの一覧を表示します。
-- [使用](../api/user-list-people.md)されているユーザーのユーザーを一覧表示します。
+- ユーザーの[周りで人気急上昇中](../api/insights-list-trending.md)の項目を取得する
+- ユーザーと[仕事をしている](../api/user-list-people.md)ユーザーを一覧表示する

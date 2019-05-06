@@ -5,13 +5,13 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 295397e4c85e2096d69e7ba14432cc866b4094a4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27976143"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32564044"
 ---
-# <a name="create-message"></a>メッセージを作成する
+# <a name="create-message"></a>メッセージの作成
 
 この API を使用して、新しいメッセージの下書きを作成します。下書きを任意のフォルダーに作成し、必要に応じて送信前に更新できます。[下書き] フォルダーに保存するには、/messages ショートカットを使用します。
 
@@ -139,7 +139,7 @@ Content-type: application/json
 ```
 
 ##### <a name="request-2"></a>要求 2
-次の使用例は、メッセージの下書きを作成するときにいくつかの顧客のインターネット メッセージ ヘッダーを追加します。
+次の例では、メッセージの下書きを作成する際に顧客のインターネット メッセージ ヘッダーをいくつか追加します。
 <!-- {
   "blockType": "request",
   "name": "create_message_with_headers_from_user"
@@ -175,7 +175,7 @@ Content-type: application/json
 ```
 要求本文で、[メッセージ](../resources/message.md) オブジェクトの JSON 表記を指定します。
 ##### <a name="response-2"></a>応答 2
-以下は、応答の例です。 注: インターネット メッセージのヘッダーは、POST 応答に既定では返されません。 ここに示す応答オブジェクトは、簡潔にするためもあります。 実際の呼び出しではすべてのプロパティが返されます。
+以下は、応答の例です。 注: インターネット メッセージ ヘッダーは、既定で POST レスポンスに返されません。 簡潔にするために、ここに示す応答オブジェクトも切り詰められている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "name": "create_message_with_headers_from_user",

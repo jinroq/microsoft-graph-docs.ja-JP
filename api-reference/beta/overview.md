@@ -1,36 +1,36 @@
 ---
-title: Graph ベータの終了点の参照
-description: このセクションのリファレンスの内容は、Microsoft Graph のベータ版の端点を説明します。 ベータ版のエンドポイントには、プレビューでは、現在ではまだ一般に利用可能な Api が含まれています。 これらの Api を実行してくださいし、次のチャンネルを使用してフィードバックを提供することにご協力します。
+title: Microsoft Graph ベータ版のエンドポイント リファレンス
+description: このセクションのリファレンス コンテンツは、Microsoft Graph ベータ版のエンドポイントを文書化しています。 ベータ版のエンドポイントには、現在プレビュー段階で一般提供されていない API が含まれます。 これらの API を試して、次のチャネルからフィードバックをお寄せください。
 localization_priority: Priority
 ms.openlocfilehash: 9f9223c36679865b40303dc3530dee9c2c93950d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874306"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544009"
 ---
-# <a name="microsoft-graph-beta-endpoint-reference"></a>Graph ベータの終了点の参照
+# <a name="microsoft-graph-beta-endpoint-reference"></a>Microsoft Graph ベータ版のエンドポイント リファレンス
 
-このセクションのリファレンスの内容は、Microsoft Graph のベータ版の端点を説明します。 ベータ版のエンドポイントには、プレビューでは、現在ではまだ一般に利用可能な Api が含まれています。 これらの Api を実行してくださいし、次のチャンネルを使用してフィードバックを提供することにご協力します。
+このセクションのリファレンス コンテンツは、Microsoft Graph ベータ版のエンドポイントを文書化しています。 ベータ版のエンドポイントには、現在プレビュー段階で一般提供されていない API が含まれます。 これらの API を試して、次のチャネルからフィードバックをお寄せください。
 
-- [GitHub](https://github.com/OfficeDev/microsoft-graph-docs/issues)のプレビューの Api へのフィードバックをします。 `beta`。
-- [StackOverflow](https://stackoverflow.com/questions/tagged/microsoftgraph) - 質問や、コードに関するヘルプを表示します。 `microsoftgraph`。
+- [GitHub](https://github.com/OfficeDev/microsoft-graph-docs/issues) - プレビュー API のフィードバック用です。 `beta` でタグ付けしてください。
+- [StackOverflow](https://stackoverflow.com/questions/tagged/microsoftgraph) - お客様のコードに関する質問やご相談用です。 `microsoftgraph` でタグ付けしてください。
 
-> **注:** ベータ版のエンドポイントの API は予告なしに変更されることがあります。運用アプリ内で使用することはお勧めしません。 
+> **注:** ベータ版のエンドポイントの API は予告なしに変更されることがあります。 運用アプリ内で使用することはお勧めしません。 
 
-## <a name="call-the-beta-endpoint"></a>ベータ版のエンドポイントを呼び出し
+## <a name="call-the-beta-endpoint"></a>ベータ版エンドポイントの呼び出し
 
-ベータ版のエンドポイントに要求を Microsoft のグラフの API は、次のパターンを使用します。
+Microsoft Graph API では、ベータ版エンドポイントは次のパターンを使用する必要があります。
 
 ```
     https://graph.microsoft.com/beta/{resource}?[query_parameters]
 ```
 
-詳細については、 [Microsoft のグラフの API の使用](/graph/use-the-api)を参照してください。
+詳細については、「[Microsoft Graph API を使用する](/graph/use-the-api)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 
 - [Microsoft Graph の概要](/graph/overview)
 - [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)
-- [Graph のクイック スタート](https://developer.microsoft.com/graph/quick-start)
+- [Microsoft Graph のクイック スタート](https://developer.microsoft.com/graph/quick-start)
 

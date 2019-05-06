@@ -1,15 +1,15 @@
 ---
 title: メッセージを取得する
-description: メッセージ オブジェクトのプロパティと関係を取得します。
+description: メッセージ オブジェクトのプロパティとリレーションシップを取得します。
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.openlocfilehash: 6feb967d406bfe4fb8991c3cf3b877473fbb0971
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27963291"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581731"
 ---
 # <a name="get-message"></a>メッセージを取得する
 
@@ -17,10 +17,10 @@ ms.locfileid: "27963291"
 
 現在、この操作によって返されるメッセージの本文は HTML 形式のみです。
 
-2 つシナリオは、アプリケーションが別のユーザーのメール フォルダーにメッセージを取得する場所です。
+別のユーザーのメール フォルダーからアプリがメッセージを取得するシナリオは 2 つあります。
 
-* アプリケーションは、アプリケーションの権限を持つ場合、または、
-* アプリケーションがある場合、適切な 1 人のユーザーから[アクセス許可](#permissions)を委任を実行し、別のユーザーは、そのユーザーのメール フォルダーを共有するにはまたは、そのユーザーに代理アクセスを与えを実行します。 [詳細と例](/graph/outlook-share-messages-folders)を参照してください。
+* アプリにアプリケーションのアクセス許可がある場合。または
+* あるユーザーからアプリに適切な代理[アクセス許可](#permissions)が与えられ、別のユーザーがそのユーザーとメール フォルダーを共有しているか、そのユーザーに代理アクセスを付与している場合。 [詳細と例](/graph/outlook-share-messages-folders)を参照してください。
 
 **メッセージ** リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため、`GET` 操作を使用して、**メッセージ** インスタンスでカスタム プロパティと拡張機能データを取得することもできます。
 
@@ -45,10 +45,10 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
-| Prefer: outlook.body-content-type | 文字列 | **body** プロパティと **uniqueBody** プロパティが返されるときの形式です。 値は、"text" または "html" になります。 この `Prefer` ヘッダーが指定されている場合、`Preference-Applied` ヘッダーが確認として返されます。 ヘッダーが指定されていない場合は、**body** プロパティと **uniqueBody** プロパティは HTML 形式で返されます。 省略可能。 |
+| Prefer: outlook.body-content-type | string | **body** プロパティと **uniqueBody** プロパティが返されるときの形式です。 値は、"text" または "html" になります。 この `Prefer` ヘッダーが指定されている場合、`Preference-Applied` ヘッダーが確認として返されます。 ヘッダーが指定されていない場合は、**body** プロパティと **uniqueBody** プロパティは HTML 形式で返されます。 省略可能。 |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -143,7 +143,7 @@ Content-type: application/json
 ```
 
 ##### <a name="request-2"></a>要求 2
-次の例では、`$select`メッセージのインターネット メッセージ ヘッダーを取得するパラメーター クエリを実行します。 
+次の例では、`$select` クエリ パラメーターを使用して、メッセージのインターネット メッセージ ヘッダーを取得します。 
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkADhAAAW-VPeAAA="],
@@ -153,7 +153,7 @@ Content-type: application/json
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhAAAW-VPeAAA=/?$select=internetMessageHeaders
 ```
 ##### <a name="response-2"></a>応答 2
-以下は、応答の例です。 注: 簡潔にするための一連の応答オブジェクトでメッセージ ヘッダーが切り捨てられます。 すべてのヘッダーは、実際の呼び出しから返されます。
+以下は、応答の例です。 注: 簡潔にするために、応答オブジェクト内のメッセージ ヘッダーのセットは切り捨てられています。 実際の呼び出しではすべてのヘッダーが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

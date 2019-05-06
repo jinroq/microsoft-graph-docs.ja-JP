@@ -1,67 +1,67 @@
 ---
 title: Azure AD 監査ログ API の概要
-description: Azure Active Directory (AD の Azure) は、ユーザーの活動およびサインインのメトリックを追跡し、監査を作成、ユーザーのアクセスし、Azure AD サービスを活用するのに役立つログ レポートを理解します。 これらのレポートの基になるデータを分析して、組織の特定のニーズに合わせた独自のソリューションを作成するのには、Azure AD 用の Microsoft グラフ API を使用します。
+description: Azure Active Directory (Azure AD) は、ユーザーのアクティビティとサインインのメトリックを追跡し、ユーザーが Azure AD サービスにアクセスして活用する方法を把握するのに役立つ監査ログ レポートを作成します。 Azure AD 用の Microsoft Graph API を使用して、これらのレポートの基礎となるデータを分析したり、組織特有のニーズに合わせたカスタム ソリューションを作成したりします。
 localization_priority: Priority
-ms.openlocfilehash: 07d285ce4e7fbf736900c1d6d4acdf159b451424
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: 8bda9aff36ad8b46fbec3096008c2d5227058ef1
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826223"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339075"
 ---
 # <a name="azure-ad-audit-log-api-overview"></a>Azure AD 監査ログ API の概要
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Azure Active Directory (AD の Azure) は、ユーザーの活動およびサインインのメトリックを追跡し、監査を作成、ユーザーのアクセスし、Azure AD サービスを活用するのに役立つログ レポートを理解します。 これらのレポートの基になるデータを分析して、組織の特定のニーズに合わせた独自のソリューションを作成するのには、Azure AD 用の Microsoft グラフ API を使用します。
+Azure Active Directory (Azure AD) は、ユーザーのアクティビティとサインインのメトリックを追跡し、ユーザーが Azure AD サービスにアクセスして活用する方法を把握するのに役立つ監査ログ レポートを作成します。 Azure AD 用の Microsoft Graph API を使用して、これらのレポートの基礎となるデータを分析したり、組織特有のニーズに合わせたカスタム ソリューションを作成したりします。
 
-## <a name="what-are-azure-ad-activity-logs"></a>Azure AD の活動は、何をログに記録しますか。
+## <a name="what-are-azure-ad-activity-logs"></a>Azure AD アクティビティ ログとは
 
-Azure AD には、動作状況のログの 2 種類が用意されています。
+Azure AD には、以下の 2 種類のアクティビティ ログがあります。
 
 - 監査ログ 
-- サインインのログ
+- サインイン ログ
 
 ### <a name="audit-logs"></a>監査ログ
 
-監査ログの利用状況レポートは、テナントで実行されるすべてのタスクの履歴へのアクセスを提供します。 監査ログ レポートは、コンプライアンスのためのシステム ・ アクティビティの記録を提供します。 、他のユーザーの間で提供されるデータには、一般的なシナリオを次のように対処することが有効にします。
+テナント内で実行されたすべてのタスクの履歴は、監査ログ アクティビティ レポートで把握できます。 監査ログ レポートから得られるシステム アクティビティの記録は、コンプライアンスに利用することができます。 特に、レポートから得たデータによって、日常的に発生する次のようなシナリオに対処することができます。
 
-- ディレクトリ ユーザに管理者グループのアクセスを許可するか。
+- ディレクトリのユーザーに管理者グループのアクセス権をだれが許可するか。
 
-- ユーザーは、最近買収したアプリケーションへのをサインインがでしょうか。
+- 最近入手したアプリにサインインしているユーザーはだれか。
 
-- ディレクトリ内でどのように多くのパスワードのリセットが行われたでしょうか。
+- ディレクトリ内でパスワードのリセットが何回行われたか。
 
-### <a name="sign-in-logs"></a>ログを署名します。
+### <a name="sign-in-logs"></a>サインイン ログ
 
-サインインがアクティビティ ・ レポートでは、監査ログ レポートで報告されたタスクを実行したユーザーを確認できます。 サインインがアクティビティ ・ レポートでは、質問に回答できます。
+監査ログ レポートによって報告されたタスクをだれが実行したかを把握するには、サインイン アクティビティ レポートが役立ちます。 サインイン アクティビティ レポートを利用すると、以下の事柄について把握できます。
 
-- パターン、ユーザーのサインインとは何ですか。
-- ユーザーの数は、最後の週でサインインがでしょうか。
-- これらのサインインの状態とは何ですか。
+- ユーザーのサインインにどのようなパターンがあるか。
+- 先週、何人のユーザーがサインインを行ったか。
+- これらのサインインはどのような状態か。
 
-## <a name="what-can-i-do-with-audit-log-apis-in-microsoft-graph"></a>監査ログでは、Microsoft Graph Api では、どうすれば?
+## <a name="what-can-i-do-with-audit-log-apis-in-microsoft-graph"></a>Microsoft Graph の監査ログ API で実行できること
 
-監査ログのデータを操作するための一般的な要求を次に示します。
+監査ログ データで行う一般的な要求を以下に示します。
 
-操作 | URL
+Operation | URL
 :----------|:----
-テナント ユーザー ・ アクティビティを取得します。 | [https://graph.microsoft.com/beta/auditLogs/directoryAudits](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/directoryAudits&version=beta)
-テナント ユーザー サインインの問題を取得します。 | [https://graph.microsoft.com/beta/auditLogs/signIns](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/signIns&version=beta)
+テナント ユーザー アクティビティを取得する | [https://graph.microsoft.com/beta/auditLogs/directoryAudits](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/directoryAudits&version=beta)
+テナント ユーザー サインインを取得する | [https://graph.microsoft.com/beta/auditLogs/signIns](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/signIns&version=beta)
 
-## <a name="what-licenses-do-i-need"></a>どのようなライセンスが必要ですか。
+## <a name="what-licenses-do-i-need"></a>必要なライセンス
 
-監査ログ レポートは、ライセンスを取得している機能を使用できます。  特定の機能のライセンスがあれば、その監査ログへのアクセスもあります。
+監査ログ レポートは、ライセンスを取得した機能に関して利用できます。  特定の機能のライセンスがある場合、その機能の監査ログにもアクセスできます。
 
-たとえば、パスワードのセルフ サービスの監査レポートにアクセスするのには Azure AD プレミアム P1 のライセンスが必要です。  詳細については、 [Azure AD のライセンス](https://azure.microsoft.com/pricing/details/active-directory/)を参照してください。
+たとえば、セルフサービス パスワード監査レポートを利用するには、Azure AD Premium P1 ライセンスが必要です。  詳細については、[Azure AD ライセンス](https://azure.microsoft.com/pricing/details/active-directory/)をご覧ください。
 
-サインインのレポートでは、Azure AD のプレミアム ライセンスが必要です。
+サインイン レポートには、Azure AD Premium ライセンスが必要です。
 
-詳細については、 [Azure AD の価格](https://azure.microsoft.com/pricing/details/active-directory/)を参照してください。
+詳細については、[Azure Active Directory の価格](https://azure.microsoft.com/pricing/details/active-directory/)をご覧ください。
 
 ## <a name="next-steps"></a>次のステップ
 
-- 監査ログの必要条件を満たすためには、[アプリの登録](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)をします。 
-- [ログを監査](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-audit-samples)し、[サインイン用のサンプル](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples)について説明します。  
-- [DirectoryAudit](directoryaudit.md)リソースと操作を確認します。
-- [サインイン](signin.md)リソースと操作を確認します。 
+- [アプリを登録](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)して、監査ログの前提条件を満たします。 
+- [監査ログ](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-audit-samples)と[サインイン](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples)のサンプルを参照して理解を深めます。  
+- [directoryAudit](directoryaudit.md) リソースとアクションについて確認します。
+- [signIn](signin.md) リソースとアクションについて確認します。 

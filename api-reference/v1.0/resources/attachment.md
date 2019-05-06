@@ -1,13 +1,13 @@
 ---
 title: 添付ファイル リソースの種類
-description: イベントに関連するコンテンツを追加します。
+description: 関連コンテンツをイベントに追加できます。
 localization_priority: Priority
 ms.openlocfilehash: 284895871a0c6a80140ff248045b89d2de104c20
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892331"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569383"
 ---
 # <a name="attachment-resource-type"></a>添付ファイル リソースの種類
 
@@ -33,13 +33,13 @@ ms.locfileid: "27892331"
 |[イベントの添付ファイルを一覧表示する](../api/event-list-attachments.md) | [attachment](attachment.md) コレクション | イベントの添付ファイルの一覧を取得します。 |
 |[メッセージの添付ファイルを一覧表示する](../api/message-list-attachments.md) | [attachment](attachment.md) コレクション | メッセージの添付ファイルの一覧を取得します。 |
 |[投稿の添付ファイルを一覧表示する](../api/post-list-attachments.md) | [attachment](attachment.md) コレクション | 投稿の添付ファイルの一覧を取得します。 |
-|[削除](../api/attachment-delete.md) | なし |イベント、メッセージ、または投稿の添付ファイルを削除します。 |
+|[削除](../api/attachment-delete.md) | None |イベント、メッセージ、または投稿の添付ファイルを削除します。 |
 
 ## <a name="properties"></a>プロパティ
 
 次に、添付ファイル リソースの基本プロパティを示します。他のプロパティについては、特定の種類の添付ファイル ([fileAttachment](../resources/fileattachment.md)、[itemAttachment](../resources/itemattachment.md)、または [referenceAttachment](../resources/referenceattachment.md)) を参照してください。
 
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |contentType|String|MIME タイプ。|
 |id|String| 読み取り専用。|

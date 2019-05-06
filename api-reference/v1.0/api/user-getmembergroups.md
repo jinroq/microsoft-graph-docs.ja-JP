@@ -1,17 +1,19 @@
 ---
 title: 'user: getMemberGroups'
-description: ユーザーがメンバーであるすべてのグループを返します。 The check is transitive, unlike reading the
-localization_priority: Priority
+description: ユーザーがメンバーであるすべてのグループを返します。 次の読み取りとは異なり、チェックは推移的です。
+localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 292a7e6c9ed0d67ced657dd726d9f41b32eac458
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517597"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32567887"
 ---
-# <a name="user-getmembergroups"></a>user: getMemberGroups の読み取りとは異なり、チェックは推移的です。
+# <a name="user-getmembergroups"></a>user: getMemberGroups
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ユーザーがメンバーであるすべてのグループを返します。チェックは推移的であり、ユーザーが直接メンバーであるグループのみを返す [memberOf](../api/user-list-memberof.md) ナビゲーション プロパティの読み取りとは異なります。
 
@@ -23,7 +25,7 @@ ms.locfileid: "29517597"
 
 | アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)                                                                                                          |
 | :------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 委任 (職場または学校のアカウント)     |  User.Read、Group.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+| 委任 (職場または学校のアカウント)     | User.Read、Group.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
 | 委任 (個人用 Microsoft アカウント) | サポートされていません。                                                                                                                                       |
 | アプリケーション                            | Group.Read.All、Directory.Read.All、Directory.ReadWrite.All                                                                                        |
 
@@ -68,7 +70,7 @@ POST /users/{id | userPrincipalName}/getMemberGroups
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/me/getMemberGroups
+POST https://graph.microsoft.com/beta/me/getMemberGroups
 Content-type: application/json
 Content-length: 33
 
@@ -103,10 +105,13 @@ Content-length: 39
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "user: getMemberGroups",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

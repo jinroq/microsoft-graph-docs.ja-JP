@@ -2,12 +2,12 @@
 title: 写真を取得する
 description: 指定した profilePhoto またはそのメタデータ (profilePhoto プロパティ) を取得します。
 localization_priority: Priority
-ms.openlocfilehash: 6b1a3e54b1145cc2fdcf8ed9e587652d4d7061c8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: e0b115ecf3ce05d87856e553b111af537ffad0e3
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833951"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32576284"
 ---
 # <a name="get-photo"></a>写真を取得する
 
@@ -15,7 +15,7 @@ ms.locfileid: "27833951"
 
 > **注**: バージョン 1.0 のこの操作では、ユーザーの職場用または学校用メールボックスのみがサポートされ、個人用メールボックスはサポートされていません。
 
-Office 365 上でサポートされている HD Photo のサイズは次のとおりです: '48x48'、'64x64'、'96x96'、'120x120'、'240x240'、'360x360'、'432x432'、'504x504'、'648x648'。 写真が Azure Active Directory に格納されている場合は、サイズに関する制限はありません。
+Office 365 上でサポートされている HD Photo のサイズは次のとおりです: 48x48、64x64、96x96、120x120、240x240、360x360、432x432、504x504、648x648。 写真が Azure Active Directory に格納されている場合は、サイズに関する制限はありません。
 
 使用可能な最大の写真のメタデータを取得したり、サイズを指定してその写真サイズのメタデータを取得したりできます。
 要求したサイズが使用できない場合でも、アップロードされて使用可能になっている、より小さいサイズを取得できます。
@@ -34,7 +34,7 @@ Office 365 上でサポートされている HD Photo のサイズは次のと�
 
 ## <a name="http-request"></a>HTTP 要求 
 
-### <a name="get-the-photo"></a>写真を取得します。
+### <a name="get-the-photo"></a>写真を取得する
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/photo/$value
@@ -45,7 +45,7 @@ GET /users/{id | userPrincipalName}/contacts/{id}/photo/$value
 GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 ```
-### <a name="get-the-metadata-of-the-photo"></a>写真のメタデータを取得します。
+### <a name="get-the-metadata-of-the-photo"></a>写真のメタデータを取得する
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/photo
@@ -64,23 +64,19 @@ GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 GET /me/photos/{size}
 GET /users/{id | userPrincipalName}/photos/{size}
 GET /groups/{id}/photos/{size}
-GET /me/contacts/{id}/photos/{size}
-GET /users/{id | userPrincipalName}/contacts/{id}/photos/{size}
-GET /me/contactfolders/{contactFolderId}/contacts/{id}/photos/{size}
-GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photos/{size}
 ```
 
 ## <a name="path-parameters"></a>パス パラメーター
 
-|Parameter|Type|説明|
+|パラメーター|型|説明|
 |:-----|:-----|:-----|
-|size  |String  | 写真のサイズ。 Office 365 上でサポートされている HD Photo のサイズは次のとおりです: '48x48'、'64x64'、'96x96'、'120x120'、'240x240'、'360x360'、'432x432'、'504x504'、'648x648'。 写真が Azure Active Directory に格納されている場合は、サイズに関する制限はありません。 |
+|サイズ  |String  | 写真のサイズ。 Office 365 上でサポートされている HD Photo のサイズは次のとおりです: 48x48、64x64、96x96、120x120、240x240、360x360、432x432、504x504、648x648。 写真が Azure Active Directory に格納されている場合は、サイズに関する制限はありません。 |
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
+このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
@@ -92,9 +88,10 @@ GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 成功した場合、このメソッドは `200 OK` 応答コードと、要求した写真のバイナリ データを応答本文で返します。写真が存在しない場合、この操作により `404 Not Found` が返されます。
 ### <a name="response-for-getting-the-metadata-of-the-photo"></a>写真のメタデータの取得に対する応答
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [profilePhoto](../resources/profilephoto.md) オブジェクトを返します。
-## <a name="example"></a>例
-##### <a name="request-1"></a>要求 1
-この要求では、サインインしているユーザーの写真を利用可能な最大のサイズで取得します。
+## <a name="examples"></a>例
+
+### <a name="example-1-get-the-photo-for-the-signed-in-user-in-the-largest-available-size"></a>例 1: サインインしているユーザーの写真を利用可能な最大のサイズで取得します。
+##### <a name="request"></a>要求
 <!-- {
   "blockType": "ignored"
 }-->
@@ -102,12 +99,11 @@ GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 GET https://graph.microsoft.com/v1.0/me/photo/$value
 ```
 
-##### <a name="response-1"></a>応答 1
-要求した写真のバイナリ データが含まれています。HTTP 応答コードは 200 です。
+##### <a name="response"></a>応答 
+要求した写真のバイナリ データが含まれています。 HTTP 応答コードは 200 です。
 
-##### <a name="request-2"></a>要求 2
-この要求は、サインインしているユーザーの 48x48 の写真を取得します。
-
+### <a name="example-2-get-the-48x48-photo-for-the-signed-in-use"></a>例 2: サインインしているユーザーの 48x48 の写真を取得します。
+##### <a name="request"></a>要求
 <!-- {
   "blockType": "ignored"
 }-->
@@ -116,11 +112,11 @@ GET https://graph.microsoft.com/v1.0/me/photos/48x48/$value
 Content-Type: image/jpg
 ```
 
-##### <a name="response-2"></a>応答 2
-要求した 48x48 の写真のバイナリ データが含まれています。HTTP 応答コードは 200 です。
+##### <a name="response"></a>応答
+要求した 48x48 の写真のバイナリ データが含まれています。 HTTP 応答コードは 200 です。
 
-##### <a name="request-3"></a>要求 3
-この要求は、サインインしているユーザーのユーザー写真のメタデータを取得します。
+### <a name="example-3-get-the-metadata-of-the-user-photo-of-the-signed-in-user"></a>例 3: サインインしているユーザーのユーザー写真のメタデータを取得します。
+##### <a name="request"></a>要求
 <!-- {
   "blockType": "ignored"
 }-->
@@ -128,9 +124,11 @@ Content-Type: image/jpg
 GET https://graph.microsoft.com/v1.0/me/photo
 ```
 
-##### <a name="response-3"></a>応答 3
+##### <a name="response"></a>応答
 
-次の応答データは、写真のメタデータを示しています。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。
+次の応答データは、写真のメタデータを示しています。 
+
+>**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。
 <!-- {
   "blockType": "ignored"
 }-->
@@ -149,7 +147,9 @@ Content-type: application/json
 }
 ```
 
-次の応答データは、そのユーザーの写真がまだアップロードされていないときの応答の内容を示しています。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。
+次の応答データは、そのユーザーの写真がまだアップロードされていないときの応答の内容を示しています。
+
+>**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。
 
 <!-- {
   "blockType": "ignored"
