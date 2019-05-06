@@ -1,17 +1,17 @@
 ---
-title: accessreview に関する決定事項を一覧表示する
-description: Azure AD access レビュー機能で、accessreview オブジェクトの決定を取得します。
+title: AccessReview に関する決定事項を一覧表示する
+description: Azure AD access レビュー機能で、accessReview オブジェクトの決定を取得します。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fee4b4adc4bc4e33964575976c67cfeaa077a34c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: ef1db408a4b47928e86f47f30588a8e09f98dad7
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33323728"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33586202"
 ---
-# <a name="list-accessreview-decisions"></a>accessreview に関する決定事項を一覧表示する
+# <a name="list-accessreview-decisions"></a>AccessReview に関する決定事項を一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,9 +24,9 @@ Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、 [
 
 |アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント)     | accessreview を参照してください。  |
+|委任 (職場または学校のアカウント)     | AccessReview を参照してください。  |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
-|アプリケーション                            | accessreview を参照してください。 |
+|アプリケーション                            | AccessReview.Read.All |
 
  また、サインインしているユーザーは、アクセスレビューを読み取ることができるようにするためのディレクトリロールにある必要があります。
 
@@ -81,17 +81,27 @@ Content-type: application/json
     ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_accessReview_decisions-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_accessReview_decisions-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="see-also"></a>関連項目
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[accessreview を取得する](accessreview-get.md) |  [accessreview](../resources/accessreview.md) |  アクセスレビューを取得します。 |
-|[自分の accessreview の決定事項を一覧表示する](accessreview-listmydecisions.md) |        [accessReviewDecision](../resources/accessreviewdecision.md)コレクション|    レビュー担当者として、accessreview の決定事項を取得します。|
-|[access レビュー通知の送信](accessreview-sendreminder.md) |       なし。   |   accessreview のレビュー担当者に通知を送信します。 |
-|[accessreview を停止する](accessreview-stop.md) |        なし。   |   accessreview を停止します。 |
-|[accessreview の決定をリセットする](accessreview-reset.md) |        なし。   |   進行中の accessreview で意思決定をリセットします。|
-|[accessreview の決定を適用する](accessreview-apply.md) |        なし。   |   完了した accessreview から決定を適用します。|
+|[AccessReview を取得する](accessreview-get.md) |  [accessReview](../resources/accessreview.md) |  アクセスレビューを取得します。 |
+|[自分の accessReview の決定事項を一覧表示する](accessreview-listmydecisions.md) |        [accessReviewDecision](../resources/accessreviewdecision.md)コレクション|    レビュー担当者として、accessReview の決定事項を取得します。|
+|[Access レビュー通知の送信](accessreview-sendreminder.md) |       なし。   |   AccessReview のレビュー担当者に通知を送信します。 |
+|[AccessReview を停止する](accessreview-stop.md) |        なし。   |   AccessReview を停止します。 |
+|[AccessReview の決定をリセットする](accessreview-reset.md) |        なし。   |   進行中の accessReview で意思決定をリセットします。|
+|[AccessReview の決定を適用する](accessreview-apply.md) |        なし。   |   完了した accessReview から決定を適用します。|
 
 
 <!--
@@ -101,6 +111,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/accessreview-listdecisions.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/accessreview-listdecisions.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

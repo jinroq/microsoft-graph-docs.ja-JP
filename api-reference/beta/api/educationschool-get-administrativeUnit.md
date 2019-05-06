@@ -1,17 +1,17 @@
 ---
-title: administrativeUnit を取得する
+title: AdministrativeUnit を取得する
 description: この**educationSchool**に対応する単純なディレクトリ**administrativeUnit**を取得します。
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 344e76d61f1cfa4de5e11b9dcf3c71decd7ae125
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: fdcc0a11454950bd9d6d5b09a818f302414ceeca
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324625"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33587881"
 ---
-# <a name="get-administrativeunit"></a>administrativeUnit を取得する
+# <a name="get-administrativeunit"></a>AdministrativeUnit を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -75,6 +75,16 @@ Content-length: 134
   "id": "id-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_administrativeUnit-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_administrativeUnit-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: A681726F-B4A7-4BCF-9407-F87CB9A4771D
 2015-10-25 14:57:30 UTC -->
@@ -85,6 +95,9 @@ Content-length: 134
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationschool-get-administrativeUnit.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/educationschool-get-administrativeUnit.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

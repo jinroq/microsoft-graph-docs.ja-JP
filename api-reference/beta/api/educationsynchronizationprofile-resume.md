@@ -1,17 +1,17 @@
 ---
-title: educationSynchronizationProfile での同期の再開
+title: EducationSynchronizationProfile での同期の再開
 description: テナント内の特定の学校データ同期プロファイルの同期を再開します。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 8fd56ec1d825104cb442f9184c1735e34b557fce
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: b4abb054763416e65f99da14aaa1e2ea1db1eb15
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324960"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33587458"
 ---
-# <a name="resume-sync-on-an-educationsynchronizationprofile"></a>educationSynchronizationProfile での同期の再開
+# <a name="resume-sync-on-an-educationsynchronizationprofile"></a>EducationSynchronizationProfile での同期の再開
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -64,3 +64,26 @@ POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/res
 ```
 HTTP/1.1 200 OK
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/post_educationSynchronizationProfile_resume-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/post_educationSynchronizationProfile_resume-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Example",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationsynchronizationprofile-resume.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/educationsynchronizationprofile-resume.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

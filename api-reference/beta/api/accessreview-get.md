@@ -1,23 +1,23 @@
 ---
-title: accessreview を取得する
-description: 'Azure AD access レビュー機能で、accessreview オブジェクトを取得します。  '
+title: AccessReview を取得する
+description: 'Azure AD access レビュー機能で、accessReview オブジェクトを取得します。  '
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 263749521e199079dc8b4d9b352eb9c2cb5adf35
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: a6df4461144f6823378ae16b93ff68dbee4c2413
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33323662"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33586282"
 ---
-# <a name="get-accessreview"></a>accessreview を取得する
+# <a name="get-accessreview"></a>AccessReview を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、 [accessreview](../resources/accessreview.md)オブジェクトを取得します。  
 
-アクセスレビューのレビュー担当者を取得するには、 [list accessreview レビューアー](accessreview-listreviewers.md) API を使用します。 アクセスレビューの決定を取得するには、「[リストアクセスレビュー決定](accessreview-listdecisions.md)api」、または「 [my accessreview review 決定](accessreview-listmydecisions.md)api の一覧」を使用します。
+アクセスレビューのレビュー担当者を取得するには、 [List accessreview レビューアー](accessreview-listreviewers.md) API を使用します。 アクセスレビューの決定を取得するには、「[リストアクセスレビュー決定](accessreview-listdecisions.md)api」、または「 [My accessreview review 決定](accessreview-listmydecisions.md)api の一覧」を使用します。
 
 これが定期的なアクセスレビューである場合は、 `instances`リレーションシップを使用して、アクセスレビューの過去、現在、および今後のインスタンスの[accessreview](../resources/accessreview.md)コレクションを取得します。
 
@@ -26,9 +26,9 @@ Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、 [
 
 |アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント)     | accessreview を参照してください。  |
+|委任 (職場または学校のアカウント)     | AccessReview.Read.All  |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
-|アプリケーション                            | accessreview を参照してください。  |
+|アプリケーション                            | AccessReview.Read.All  |
 
 この API を呼び出すためには、サインインしているユーザーが、アクセスレビューを読み取ることを許可するディレクトリロールにあるか、アクセスレビューのレビュー担当者としてユーザーを割り当てることも必要です。  詳細については、「[アクセスレビュー](../resources/accessreviews-root.md)の役割とアクセス許可の要件」を参照してください。
 
@@ -100,16 +100,26 @@ Content-type: application/json
     }
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_accessReview-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_accessReview-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="see-also"></a>関連項目
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[accessreview を作成する](accessreview-create.md) |    [accessreview](../resources/accessreview.md) |  新しい accessreview を作成します。 |
-|[programcontrols のリスト](programcontrol-list.md) | [programcontrol](../resources/programcontrol.md)コレクション | テナント内の programcontrols を一覧表示します。 |
-|[accessreview レビュー担当者のリスト](accessreview-listreviewers.md) |     [useridentity](../resources/useridentity.md)コレクション|    accessreview のレビュー担当者を取得します。 |
-|[accessreview に関する決定事項を一覧表示する](accessreview-listdecisions.md) |     [accessReviewDecision](../resources/accessreviewdecision.md)コレクション|    accessreview の決定事項を取得します。|
-|[自分の accessreview の決定事項を一覧表示する](accessreview-listmydecisions.md) |        [accessReviewDecision](../resources/accessreviewdecision.md)コレクション|    レビュー担当者として、accessreview の決定事項を取得します。|
+|[AccessReview を作成する](accessreview-create.md) |    [accessReview](../resources/accessreview.md) |  新しい accessReview を作成します。 |
+|[ProgramControls のリスト](programcontrol-list.md) | [Programcontrol](../resources/programcontrol.md)コレクション | テナント内の programControls を一覧表示します。 |
+|[AccessReview レビュー担当者のリスト](accessreview-listreviewers.md) |     [Useridentity](../resources/useridentity.md)コレクション|    AccessReview のレビュー担当者を取得します。 |
+|[AccessReview に関する決定事項を一覧表示する](accessreview-listdecisions.md) |     [accessReviewDecision](../resources/accessreviewdecision.md)コレクション|    AccessReview の決定事項を取得します。|
+|[自分の accessReview の決定事項を一覧表示する](accessreview-listmydecisions.md) |        [accessReviewDecision](../resources/accessreviewdecision.md)コレクション|    レビュー担当者として、accessReview の決定事項を取得します。|
 
 
 <!--
@@ -119,6 +129,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/accessreview-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/accessreview-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

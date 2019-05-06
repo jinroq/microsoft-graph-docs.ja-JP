@@ -4,16 +4,14 @@ description: ドメインオブジェクトのプロパティと関係を取得�
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2f2fe68553dbdf423a36f80c75ba569d13263c16
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: f69d9d17445d7b7570f655a610aee5fe30c15aa7
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325859"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33589321"
 ---
 # <a name="get-domain"></a>ドメインを取得する
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ドメインオブジェクトのプロパティと関係を取得します。
 
@@ -59,10 +57,11 @@ GET /domains/{id}
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["contoso.com"],
   "name": "get_domain"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/domains/contoso.com
+GET https://graph.microsoft.com/v1.0/domains/contoso.com
 ```
 ##### <a name="response"></a>応答
 注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
@@ -86,16 +85,27 @@ Content-length: 192
   "isRoot": true
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_domain-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_domain-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Get domain",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/domain-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/domain-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

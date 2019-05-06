@@ -1,23 +1,23 @@
 ---
-title: educationSynchronizationProfile の同期をリセットする
+title: EducationSynchronizationProfile の同期をリセットする
 description: テナント内の特定の学校データ同期プロファイルの同期をリセットします。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: ccf257a2fc479f87d1e0b6d2b6414d0e3431fcb6
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: d1bae89181f496bac3fc89b50b76e6f57f1fb8a1
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322312"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33587102"
 ---
-# <a name="reset-sync-on-an-educationsynchronizationprofile"></a>educationSynchronizationProfile の同期をリセットする
+# <a name="reset-sync-on-an-educationsynchronizationprofile"></a>EducationSynchronizationProfile の同期をリセットする
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 テナント内の特定の学校データ[同期プロファイル](../resources/educationsynchronizationprofile.md)の同期をリセットします。
 
-> **注:** この操作を行うと、同期が再開されます。 発生したエラーは削除されます。 azure Active Directory (azure AD) からデータが削除されることはありません。 
+> **注:** この操作を行うと、同期が再開されます。 発生したエラーは削除されます。 Azure Active Directory (Azure AD) からデータが削除されることはありません。 
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -66,3 +66,26 @@ POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/res
 ```
 HTTP/1.1 200 OK
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/post_educationSynchronizationProfile_reset-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/post_educationSynchronizationProfile_reset-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Example",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationsynchronizationprofile-reset.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/educationsynchronizationprofile-reset.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

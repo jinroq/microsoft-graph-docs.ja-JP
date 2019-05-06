@@ -4,16 +4,14 @@ description: ユーザー オブジェクトの一覧を取得します。 こ�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: e03c451f0bc470a166d6c90ef1217c4f0770c799
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 131e9cd03bcf23fbee5785e33ad1c1611f7177c5
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322916"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33587955"
 ---
 # <a name="list-users"></a>ユーザーを一覧表示する
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ユーザー オブジェクトの一覧を取得します。 これらのユーザーオブジェクトには、教育機関に固有のプロパティが含まれます。
 
@@ -51,7 +49,7 @@ GET /education/users
   "name": "get_users"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/education/users
+GET https://graph.microsoft.com/v1.0/education/users
 ```
 ##### <a name="response"></a>応答
 応答の例を次に示します。 
@@ -105,16 +103,27 @@ Content-length: 593
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_users-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_users-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List users",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/educationroot-list-users.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/educationroot-list-users.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

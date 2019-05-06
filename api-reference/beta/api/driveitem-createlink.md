@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: ファイルをリンクで共有する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: c8be32b4d269630b523eeb44d19701e6073928d6
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: cc46ee42d497869ba93f8a4841d4504026456540
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325306"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33589938"
 ---
 # <a name="create-a-sharing-link-for-a-driveitem"></a>DriveItem の共有リンクを作成する
 
@@ -125,6 +125,16 @@ Content-Type: application/json
   }
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/item_createlink-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/item_createlink-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="creating-company-sharable-links"></a>会社の共有可能リンクを作成する
 
@@ -168,6 +178,16 @@ Content-Type: application/json
   }
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/create-link-scoped-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create-link-scoped-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="creating-embeddable-links"></a>埋め込み可能なリンクを作成する
 
@@ -210,8 +230,18 @@ Content-Type: application/json
   }
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/create-embedded-link-Cs-snippets.md)]
 
-## <a name="remarks"></a>注釈
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create-embedded-link-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+## <a name="remarks"></a>備考
 
 * 組織に既定の有効期限ポリシーが適用されている場合を除き、このアクションを使用して作成されたリンクに期限はありません。
 * リンクはそのアイテムの共有アクセス許可に表示され、アイテムの所有者はそれを削除できます。
@@ -224,6 +254,13 @@ Content-Type: application/json
   "keywords": "create,sharing,sharing link",
   "section": "documentation",
   "tocPath": "Sharing/Create link",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-createlink.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/driveitem-createlink.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/driveitem-createlink.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/driveitem-createlink.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/driveitem-createlink.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/driveitem-createlink.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

@@ -4,16 +4,14 @@ description: 新しいクラスを作成します。 これはユニバーサル
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 50b5cfcffdf6509d5da13a12dbf1829fde5e2420
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 879ccfc058bbf98a79c1ecde24aa880d66bba7f9
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324841"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33588056"
 ---
 # <a name="create-educationclass"></a>Create educationClass
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 新しいクラスを作成します。 これはユニバーサル グループも作成します。 この API を使用してクラスを作成すると、Microsoft Teams 内に割り当てや特別な処理などの機能を追加する特別なプロパティがグループに追加されます。
 
@@ -52,7 +50,7 @@ POST /education/classes
   "name": "create_educationclass_from_educationroot"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/education/classes
+POST https://graph.microsoft.com/v1.0/education/classes
 Content-type: application/json
 Content-length: 224
 
@@ -99,16 +97,27 @@ Content-length: 224
     "mailNickname": "fineartschool.net"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_educationclass_from_educationroot-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_educationclass_from_educationroot-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create educationClass",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/educationroot-post-classes.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/educationroot-post-classes.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

@@ -2,12 +2,12 @@
 title: プログラムを作成する
 description: Azure AD access レビュー機能で、新しいプログラムオブジェクトを作成します。
 localization_priority: Normal
-ms.openlocfilehash: 7ba329924761b1f43d0fc0fff02c6578b3a64a72
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 87f766917499e6e9d1896ccf64f8fbae2bef813b
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337215"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33593668"
 ---
 # <a name="create-program"></a>プログラムを作成する
 
@@ -19,7 +19,7 @@ Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、�
 
 |アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント)     | programcontrol   |
+|委任 (職場または学校のアカウント)     | ProgramControl.ReadWrite.All   |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
 |アプリケーション                            | サポートされていません。 |
 
@@ -84,15 +84,25 @@ Content-type: application/json
     "description": "test description"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_program_from_programs-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_program_from_programs-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="see-also"></a>関連項目
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
 |[プログラムの一覧表示](program-list.md) | [プログラム](../resources/program.md)コレクション|  すべてのプログラムのコレクションを取得します。|
-|[プログラムの programcontrols を一覧表示する](program-listcontrols.md) |     [programcontrol](../resources/programcontrol.md)コレクション|    プログラムのコントロールのコレクションを取得します。|
+|[プログラムの programControls を一覧表示する](program-listcontrols.md) |     [Programcontrol](../resources/programcontrol.md)コレクション|    プログラムのコントロールのコレクションを取得します。|
 |[プログラムの更新](program-update.md) |  [アプリケーション](../resources/program.md)| プログラムを更新します。|
-|[programcontrol を作成する](programcontrol-create.md) |        [programcontrol](../resources/programcontrol.md)    |   プログラムに programcontrol を追加します。|
+|[ProgramControl を作成する](programcontrol-create.md) |        [programControl](../resources/programcontrol.md)    |   プログラムに programControl を追加します。|
 
 <!--
 {
@@ -101,6 +111,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/program-create.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/program-create.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

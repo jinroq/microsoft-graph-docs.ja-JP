@@ -1,15 +1,15 @@
 ---
 title: 'イベント: デルタ'
-description: '**calendarView**で追加、削除、または更新された一連のイベント (イベントの範囲) を取得します。'
+description: '**calendarView** において追加、削除、更新された一連のイベント (さまざまなイベント) を取得します。'
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 9ab9fce0294bb5c496c8d56c42914f185b9daf32
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: ec03f37346d67c7c52128d8db146882a06d1e3f5
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325084"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33587286"
 ---
 # <a name="event-delta"></a>イベント: デルタ
 
@@ -115,6 +115,16 @@ Content-length: 359
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/event_delta-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/event_delta-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="see-also"></a>関連項目
 
@@ -130,6 +140,9 @@ Content-length: 359
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/event-delta.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/event-delta.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

@@ -4,12 +4,12 @@ description: ディレクトリ設定オブジェクトの一覧を取得しま�
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9d2c2b5f2ec8c2e7a0da3d48bccc54fd25abca6e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 1c41039c75a92c1b60e806680fd99d613823a624
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325983"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33590128"
 ---
 # <a name="list-directory-settings"></a>ディレクトリの設定を一覧表示する
 
@@ -17,7 +17,7 @@ ms.locfileid: "33325983"
 
 ディレクトリ設定オブジェクトの一覧を取得します。
 
-> **注**: この API のベータ版は、グループにのみ適用されます。 この API の/v1.0 バージョンは、[ *groupsettings]* の名前に変更されました。
+> **注**: この API のベータ版は、グループにのみ適用されます。 この API の/v1.0 バージョンは、[ *groupSettings]* の名前に変更されました。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -88,6 +88,16 @@ Content-length: 263
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_settings-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_settings-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -98,6 +108,9 @@ Content-length: 263
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/directorysetting-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/directorysetting-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

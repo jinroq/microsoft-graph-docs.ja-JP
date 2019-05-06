@@ -1,23 +1,23 @@
 ---
 title: ディレクトリ設定テンプレートを取得する
-description: ディレクトリ設定テンプレートは、テナント内で設定を作成することができる設定のテンプレートを表します。 この操作により、使用可能な設定とその既定値を含む directorysettingtemplate オブジェクトのプロパティを取得できるようになります。
+description: ディレクトリ設定テンプレートは、テナント内で設定を作成することができる設定のテンプレートを表します。 この操作により、使用可能な設定とその既定値を含む directorySettingTemplate オブジェクトのプロパティを取得できるようになります。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 206213f49d62b690c1d8e31c0f253e0fb4a05190
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 7c419be1bb9934b235c361112e9f79129fea6828
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325977"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33589525"
 ---
 # <a name="get-a-directory-setting-template"></a>ディレクトリ設定テンプレートを取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ディレクトリ設定テンプレートは、テナント内で設定を作成することができる設定のテンプレートを表します。 この操作により、使用可能な設定とその既定値を含む directorysettingtemplate オブジェクトのプロパティを取得できるようになります。
+ディレクトリ設定テンプレートは、テナント内で設定を作成することができる設定のテンプレートを表します。 この操作により、使用可能な設定とその既定値を含む directorySettingTemplate オブジェクトのプロパティを取得できるようになります。
 
-> **注**: この API のベータ版は、グループにのみ適用されます。 この API の/v1.0 バージョンは、 *groupsettingtemplate を取得*する名前に変更されました。
+> **注**: この API のベータ版は、グループにのみ適用されます。 この API の/v1.0 バージョンは、 *groupSettingTemplate を取得*する名前に変更されました。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -83,6 +83,16 @@ Content-length: 270
   ],
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_directorysettingtemplate-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_directorysettingtemplate-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -93,6 +103,9 @@ Content-length: 270
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/directorysettingtemplate-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/directorysettingtemplate-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

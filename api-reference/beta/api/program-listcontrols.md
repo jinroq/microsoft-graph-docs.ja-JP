@@ -1,15 +1,15 @@
 ---
-title: プログラムの programcontrols を一覧表示する
-description: Azure AD access レビュー機能で、特定のプログラムにリンクされているすべての programcontrol オブジェクトを一覧表示します。
+title: プログラムの programControls を一覧表示する
+description: Azure AD access レビュー機能で、特定のプログラムにリンクされているすべての programControl オブジェクトを一覧表示します。
 localization_priority: Normal
-ms.openlocfilehash: 787199b4c254411166d30e960024923cfe1d279f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 115dbab96859eaf675a6f75f5f84d2555c7d8d5a
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33331959"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33611255"
 ---
-# <a name="list-programcontrols-of-a-program"></a>プログラムの programcontrols を一覧表示する
+# <a name="list-programcontrols-of-a-program"></a>プログラムの programControls を一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -19,9 +19,9 @@ Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、�
 
 |アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント)     | programcontrol. all、programcontrol.  |
+|委任 (職場または学校のアカウント)     | ProgramControl. All、ProgramControl.  |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
-|アプリケーション                            | programcontrol. all、programcontrol.  |
+|アプリケーション                            | ProgramControl. All、ProgramControl.  |
 
  サインインしているユーザーは、プログラムを読み取ることができるようにする必要があります。
 
@@ -80,6 +80,16 @@ Content-type: application/json
 }
 
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_programControl_from_program-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_programControl_from_program-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
 <!--
@@ -89,6 +99,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/program-listcontrols.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/program-listcontrols.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

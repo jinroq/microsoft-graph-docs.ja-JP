@@ -4,12 +4,12 @@ description: テナント内の特定の school データ同期プロファイ�
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: c432b05aaea02eee03bc74311e82102d7b134aaa
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 067beecf2570dc8775cc1a570a87cb8acac31d10
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322297"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33587068"
 ---
 # <a name="start-sync-after-uploading-files-to-an-educationsynchronizationprofile"></a>ファイルを educationSynchronizationProfile にアップロードした後、同期を開始する
 
@@ -127,3 +127,24 @@ Content-length: 2105
     ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/post_educationSynchronizationProfile_start-Cs-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Example",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationsynchronizationprofile-start.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/educationsynchronizationprofile-start.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

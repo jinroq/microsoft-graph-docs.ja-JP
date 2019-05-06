@@ -4,12 +4,12 @@ description: この API を使用して、グループの新しいディレク�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 25a0b327c09c293cc8557affd6da40ee20f7c184
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 7663917e2433862dd4eddfb385214e71f42d1375
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324287"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33592518"
 ---
 # <a name="create-a-directory-setting-on-groups"></a>グループにディレクトリ設定を作成する
 
@@ -36,7 +36,7 @@ POST /groups/{id}/settings
 | Authorization  | ベアラー <token>。 必須|
 
 ## <a name="request-body"></a>要求本文
-要求本文で、 [directorysetting](../resources/directorysetting.md)オブジェクトの JSON 表記を指定します。
+要求本文で、 [Directorysetting](../resources/directorysetting.md)オブジェクトの JSON 表記を指定します。
 
 ## <a name="response"></a>応答
 
@@ -67,7 +67,7 @@ Content-length: 222
   }
 }
 ```
-要求本文で、 [directorysetting](../resources/directorysetting.md)オブジェクトの JSON 表記を指定します。
+要求本文で、 [Directorysetting](../resources/directorysetting.md)オブジェクトの JSON 表記を指定します。
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
@@ -94,6 +94,14 @@ Content-length: 244
   }
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_directorysetting_from_group-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -104,6 +112,8 @@ Content-length: 244
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/group-post-settings.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

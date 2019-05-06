@@ -1,21 +1,21 @@
 ---
-title: educationassignment の更新
-description: assignment オブジェクトを更新します。 この操作を行うことができるのは、クラス内の教師だけです。 PATCH 要求を使用して割り当ての状態を変更することはできないことに注意してください。 割り当ての状態を変更するには、発行アクションを使用します。
+title: Educationassignment の更新
+description: Assignment オブジェクトを更新します。 この操作を行うことができるのは、クラス内の教師だけです。 PATCH 要求を使用して割り当ての状態を変更することはできないことに注意してください。 割り当ての状態を変更するには、発行アクションを使用します。
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: c8b6659d0af1ae57829add1f64c19cb954b8413f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: d3446a6e6759acc4a81daa86cc34f6c13ed54448
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325019"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33587718"
 ---
-# <a name="update-educationassignment"></a>educationassignment の更新
+# <a name="update-educationassignment"></a>Educationassignment の更新
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-assignment オブジェクトを更新します。 この操作を行うことができるのは、クラス内の教師だけです。 PATCH 要求を使用して割り当ての状態を変更することはできないことに注意してください。 割り当ての状態を変更するには、[発行](../api/educationassignment-publish.md)アクションを使用します。
+Assignment オブジェクトを更新します。 この操作を行うことができるのは、クラス内の教師だけです。 PATCH 要求を使用して割り当ての状態を変更することはできないことに注意してください。 割り当ての状態を変更するには、[発行](../api/educationassignment-publish.md)アクションを使用します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -44,7 +44,7 @@ PATCH /education/classes/{id}/assignments/{id}
 |:---------------|:--------|:----------|
 |allowLateSubmissions|Boolean| 期日後に提出を送信できるかどうか。|
 |allowStudentsToAddResourcesToSubmission|Boolean| 学生が提出物にリソースを追加できるかどうか。 提出物のアイテムが割り当てリソースリストからのものだけであったかどうかを示しました。 |
-|割り当ての datetime|DateTimeOffset| 割り当てが学生に公開される日付。 |
+|割り当ての Datetime|DateTimeOffset| 割り当てが学生に公開される日付。 |
 |への割り当て|educationAssignmentRecipient| 課題を受ける学生。|
 |displayName|String| 割り当ての名前を指定します。 |
 |dueDateTime|DateTimeOffset| 日付の割り当て期限です。 |
@@ -77,7 +77,7 @@ Content-length: 279
 ##### <a name="response"></a>応答
 応答の例を次に示します。 
 
->**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 すべてのプロパティは実際の呼び出しから返されます。
+>**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
 
 <!-- {
   "blockType": "response",
@@ -101,6 +101,16 @@ Content-length: 279
   "assignedDateTime": "2014-01-01T00:00:00Z"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_educationassignment-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_educationassignment-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -111,6 +121,9 @@ Content-length: 279
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationassignment-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/educationassignment-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

@@ -4,16 +4,14 @@ description: 'クラス オブジェクトのリストを取得します。 委�
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 62ff877e15d9819c1d7c383cbd69d9fa92cb6fe6
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 968427c644673abba767975c6c9db85cffc93721
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324828"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33587213"
 ---
 # <a name="list-classes"></a>クラスをリストする
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 クラス オブジェクトのリストを取得します。 委任されたトークンを使用した場合、メンバーは自分のクラスに関する情報以外を参照できません。 
 
@@ -54,7 +52,7 @@ GET /education/users/{id}/classes
   "name": "get_classes"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/education/me/classes
+GET https://graph.microsoft.com/v1.0/education/me/classes
 ```
 ##### <a name="response"></a>応答
 応答の例を次に示します。 
@@ -93,16 +91,27 @@ Content-length: 277
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_classes-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_classes-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List classes",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/educationuser-list-classes.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/educationuser-list-classes.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

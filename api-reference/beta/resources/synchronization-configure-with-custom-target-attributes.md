@@ -1,19 +1,19 @@
 ---
 title: カスタムターゲット属性を使用して同期を構成する
-description: ターゲットディレクトリで定義されているカスタム属性を含めるように同期スキーマをカスタマイズできます。 この記事では、という`officeCode`新しいフィールドを追加することによって、Salesforce サブスクリプションをカスタマイズする方法について説明します。 azure Active Directory (azure ad) から salesforce への同期をセットアップし、ユーザーごとに、azure AD の`officeCode` `extensionAttribute10`フィールドの値を使用して、salesforce のフィールドにデータを設定します。
+description: ターゲットディレクトリで定義されているカスタム属性を含めるように同期スキーマをカスタマイズできます。 この記事では、という`officeCode`新しいフィールドを追加することによって、Salesforce サブスクリプションをカスタマイズする方法について説明します。 Azure Active Directory (Azure AD) から Salesforce への同期をセットアップし、ユーザーごとに、Azure AD の`officeCode` `extensionAttribute10`フィールドの値を使用して、salesforce のフィールドにデータを設定します。
 localization_priority: Normal
-ms.openlocfilehash: 8a6f33c0325c8e062c2e704c7f1d319148a051ba
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 698c6b1cd05f3146962c9ebd5bd0e52b264a3145
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342934"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33621278"
 ---
 # <a name="configure-synchronization-with-custom-target-attributes"></a>カスタムターゲット属性を使用して同期を構成する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ターゲットディレクトリで定義されているカスタム属性を含めるように同期スキーマをカスタマイズできます。 この記事では、という`officeCode`新しいフィールドを追加することによって、Salesforce サブスクリプションをカスタマイズする方法について説明します。 azure Active Directory (azure ad) から salesforce への同期をセットアップし、ユーザーごとに、azure AD の`officeCode` `extensionAttribute10`フィールドの値を使用して、salesforce のフィールドにデータを設定します。
+ターゲットディレクトリで定義されているカスタム属性を含めるように同期スキーマをカスタマイズできます。 この記事では、という`officeCode`新しいフィールドを追加することによって、Salesforce サブスクリプションをカスタマイズする方法について説明します。 Azure Active Directory (Azure AD) から Salesforce への同期をセットアップし、ユーザーごとに、Azure AD の`officeCode` `extensionAttribute10`フィールドの値を使用して、salesforce のフィールドにデータを設定します。
 
 この記事では、 [Azure ポータル](https://portal.azure.com)を使用してテナントへの同期をサポートするアプリケーションが既に追加されていること、アプリケーションの表示名がわかっていること、および Microsoft Graph の認証トークンがあることを前提としています。 認証トークンを取得する方法については、「 [Microsoft Graph を呼び出せるようにアクセストークンを取得](https://developer.microsoft.com/graph/docs/concepts/auth_overview)する」を参照してください。
 
@@ -183,8 +183,18 @@ Content-Type: application/json
         }]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_synchronizationschema-Cs-snippets.md)]
 
-## <a name="add-a-definition-for-the-officecode-attribute-and-a-mapping-between-attributes"></a>officeecode 属性の定義と属性間のマッピングを追加する
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_synchronizationschema-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+## <a name="add-a-definition-for-the-officecode-attribute-and-a-mapping-between-attributes"></a>Officeecode 属性の定義と属性間のマッピングを追加する
 
 任意のテキストエディター (たとえば、[メモ帳 + +](https://notepad-plus-plus.org/)または[JSON エディタ Online](https://www.jsoneditoronline.org/)) を使用して、次のことを行います。
 
@@ -263,3 +273,16 @@ HTTP/1.1 201 No Content
 ```
 
 スキーマが正常に保存された場合は、同期ジョブの次の反復処理によって、Azure AD 内のすべてのアカウントが再処理され、新しいマッピングがプロビジョニングされたすべてのアカウントに適用されます。
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Get the synchronization schema",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-configure-with-custom-target-attributes.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/resources/synchronization-configure-with-custom-target-attributes.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

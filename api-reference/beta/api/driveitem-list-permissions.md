@@ -5,16 +5,14 @@ ms.date: 09/10/2017
 title: ファイルへのアクセス権を持つユーザーを一覧表示する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: a5886e45f903a5d4419617ff21fd00fb274a4868
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 5b3d096b42b06226580bf7d7b430351ab5719ad4
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325349"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33589155"
 ---
 # <a name="list-sharing-permissions-on-a-driveitem"></a>DriveItem の共有アクセス許可を一覧表示する
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [DriveItem](../resources/driveitem.md) の有効な共有アクセス許可を一覧表示します。
 
@@ -76,7 +74,7 @@ DriveItem の有効な共有アクセス許可は、次の 2 つのソースが�
 
 この例では、サインイン ユーザーのドライブ内のアイテムに対するアクセス許可のコレクションを取得します。
 
-<!-- { "blockType": "request", "name": "get-item-permissions", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-item-permissions", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/permissions
@@ -131,6 +129,16 @@ Content-Type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-item-permissions-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-item-permissions-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="remarks"></a>備考
 
@@ -142,13 +150,14 @@ DriveItem の **permissions** リレーションシップは、[DriveItem の取
 
 [error-response]: /graph/errors
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List an item's permissions",
   "keywords": "permission, permissions, sharing",
   "section": "documentation",
   "tocPath": "Sharing/Permissions",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/driveitem-list-permissions.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/driveitem-list-permissions.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+} -->

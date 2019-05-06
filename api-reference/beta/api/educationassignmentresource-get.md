@@ -1,17 +1,17 @@
 ---
-title: educationAssignmentResource を取得する
+title: EducationAssignmentResource を取得する
 description: '割り当ての特定のリソースのプロパティを取得します。  '
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 867131adc87802c5aeacd5a6a7f12db30f2ca70c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 18d49ab13e124aebb596aacf5d48ef6f83e3a29b
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324961"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33587417"
 ---
-# <a name="get-educationassignmentresource"></a>educationAssignmentResource を取得する
+# <a name="get-educationassignmentresource"></a>EducationAssignmentResource を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -55,7 +55,7 @@ GET https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/r
 ##### <a name="response"></a>応答
 応答の例を次に示します。 
 
->**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 すべてのプロパティは実際の呼び出しから返されます。
+>**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
 
 <!-- {
   "blockType": "response",
@@ -90,6 +90,16 @@ Content-length: 842
 }
     
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_educationassignmentresource-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_educationassignmentresource-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -100,6 +110,9 @@ Content-length: 842
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationassignmentresource-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/educationassignmentresource-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

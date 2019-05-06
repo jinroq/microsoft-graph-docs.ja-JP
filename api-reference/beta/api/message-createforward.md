@@ -4,19 +4,19 @@ description: '下書きの転送メッセージを作成してコメントを含
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: d863c582a704edd095b69dc5442cac8ce74f9613
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 7998177dbb9c1cdc7eff227c2988be3872c4d39d
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333171"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33598680"
 ---
 # <a name="message-createforward"></a>メッセージ: createForward
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 下書きの転送メッセージを作成してコメントを含めるか、メッセージのプロパティを更新します。  
-1つの**createforward**呼び出し内のすべて。 その後、下書きメッセージを[送信](../api/message-send.md)できます。
+1つの**Createforward**呼び出し内のすべて。 その後、下書きメッセージを[送信](../api/message-send.md)できます。
 
 **注**
 
@@ -53,7 +53,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForwar
 |:---------------|:--------|:----------|
 |comment|String|含めるコメントです。空の文字列にすることができます。|
 |toRecipients|[recipient](../resources/recipient.md) collection|受信者の一覧です。|
-|メッセージ​​|[message](../resources/message.md)|返信メッセージで更新する書き込み可能なプロパティです。|
+|message|[message](../resources/message.md)|返信メッセージで更新する書き込み可能なプロパティです。|
 
 ## <a name="response"></a>応答
 
@@ -126,6 +126,16 @@ Content-length: 272
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/message_createforward-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/message_createforward-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -136,6 +146,9 @@ Content-length: 272
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/message-createforward.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/message-createforward.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

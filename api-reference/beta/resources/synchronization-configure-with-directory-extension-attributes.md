@@ -1,19 +1,19 @@
 ---
 title: ディレクトリ拡張属性を使用して同期を構成する
-description: 'azure Active directory (azure AD) ディレクトリの拡張属性を含めるように同期スキーマをカスタマイズできます。 この記事では、ディレクトリ拡張属性 (**extension_9d98asdfl15980a_Nickname**) を使用して、Salesforce の CommunityNickname の値を設定する方法について説明します。 このシナリオでは、azure ad Connect を設定して、オンプレミスの Windows Server Active directory から azure ad にいくつかのディレクトリ拡張属性をプロビジョニングします。 '
+description: 'Azure Active Directory (Azure AD) ディレクトリの拡張属性を含めるように同期スキーマをカスタマイズできます。 この記事では、ディレクトリ拡張属性 (**extension_9d98asdfl15980a_Nickname**) を使用して、Salesforce の CommunityNickname の値を設定する方法について説明します。 このシナリオでは、Azure AD Connect を設定して、オンプレミスの Windows Server Active Directory から Azure AD にいくつかのディレクトリ拡張属性をプロビジョニングします。 '
 localization_priority: Normal
-ms.openlocfilehash: 9ffa262a6905c193c6e042663accb4089d30d2d4
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 439d70ff4e42513b465b80719be34989c97a810d
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345639"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33620942"
 ---
 # <a name="configure-synchronization-with-directory-extension-attributes"></a>ディレクトリ拡張属性を使用して同期を構成する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-azure Active directory (azure AD) ディレクトリの拡張属性を含めるように同期スキーマをカスタマイズできます。 この記事では、ディレクトリ拡張属性 (**extension_9d98asdfl15980a_Nickname**) を使用して、Salesforce の CommunityNickname の値を設定する方法について説明します。 このシナリオでは、azure ad Connect を設定して、オンプレミスの Windows Server Active directory から azure ad にいくつかのディレクトリ拡張属性をプロビジョニングします。 
+Azure Active Directory (Azure AD) ディレクトリの拡張属性を含めるように同期スキーマをカスタマイズできます。 この記事では、ディレクトリ拡張属性 (**extension_9d98asdfl15980a_Nickname**) を使用して、Salesforce の CommunityNickname の値を設定する方法について説明します。 このシナリオでは、Azure AD Connect を設定して、オンプレミスの Windows Server Active Directory から Azure AD にいくつかのディレクトリ拡張属性をプロビジョニングします。 
 
 この記事では、 [Azure ポータル](https://portal.azure.com)を使用してテナントへの同期をサポートするアプリケーションが既に追加されていること、アプリケーションの表示名がわかっていること、および Microsoft Graph の認証トークンがあることを前提としています。 認証トークンを取得する方法については、「 [Microsoft Graph を呼び出せるようにアクセストークンを取得](https://developer.microsoft.com/graph/docs/concepts/auth_overview)する」を参照してください。
 
@@ -193,6 +193,16 @@ Content-Type: application/json
         }]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_synchronizationschema-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_synchronizationschema-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="add-a-definition-for-the-directory-extension-attribute-and-a-mapping-between-the-attributes"></a>ディレクトリ拡張属性の定義を追加し、属性間のマッピングを追加する
 
@@ -200,10 +210,10 @@ Content-Type: application/json
 
 1. `extension_9d98asdfl15980a_Nickname`属性の[属性定義](synchronization-attributedefinition.md)を追加します。 
 
-    - [ディレクトリ] で、"Azure Active directory" という名前のディレクトリを見つけ、オブジェクトの配列で、 **User**という名前のディレクトリを見つけます。
+    - [ディレクトリ] で、"Azure Active Directory" という名前のディレクトリを見つけ、オブジェクトの配列で、 **User**という名前のディレクトリを見つけます。
     - 次の例に示すように、新しい属性をリストに追加します。名前と種類を指定します。
 
-2. extension_9d98asdfl15980a_Nickname と CommunityNickname の間の[属性マッピング](synchronization-attributemapping.md)を追加します。
+2. Extension_9d98asdfl15980a_Nickname と CommunityNickname の間の[属性マッピング](synchronization-attributemapping.md)を追加します。
 
     - [[同期ルール](synchronization-synchronizationrule.md)] で、Azure AD をソースディレクトリとして指定するルールを見つけ、Salesforce.com を`"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"`ターゲットディレクトリ () として指定します。
     - ルールの[オブジェクトマッピング](synchronization-objectmapping.md)で、ユーザー間のマッピングを検索します`"sourceObjectName": "User",   "targetObjectName": "User"`()。
@@ -274,3 +284,16 @@ HTTP/1.1 201 No Content
 ```
 
 スキーマが正常に保存された場合は、同期ジョブの次の反復処理によって、Azure AD 内のすべてのアカウントが再処理され、新しいマッピングがプロビジョニングされたすべてのアカウントに適用されます。
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Get the synchronization schema",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-configure-with-directory-extension-attributes.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/resources/synchronization-configure-with-directory-extension-attributes.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

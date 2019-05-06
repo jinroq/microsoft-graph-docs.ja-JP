@@ -4,16 +4,14 @@ description: すべての学校オブジェクトのリストを取得します�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: ad85850912e24a2a1ebd5c7986786d1205af5b70
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 2f3b4e945347bbd91893417315b9d165936a46d8
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324895"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33588109"
 ---
 # <a name="list-educationschools"></a>educationSchools をリストする
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 すべての学校オブジェクトのリストを取得します。
 
@@ -50,7 +48,7 @@ The following is an example of the request.
   "name": "get_schools"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/education/schools
+GET https://graph.microsoft.com/v1.0/education/schools
 ```
 ##### <a name="response"></a>応答
 応答の例を次に示します。 
@@ -102,16 +100,27 @@ Content-length: 345
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_schools-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_schools-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List schools",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/educationroot-list-schools.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/educationroot-list-schools.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

@@ -4,12 +4,12 @@ description: "**イベント**の expand ' パラメーター"
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 7996a8c2b1a574457af71e6ce3453aabe6c1e805
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 50ed8450c9c330cd64c055829a20c60a1beb7947
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324166"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33586495"
 ---
 # <a name="get-eventmessage"></a>eventMessage の取得
 
@@ -21,7 +21,7 @@ ms.locfileid: "33324166"
 
 イベントメッセージ本文は、HTML 形式またはテキスト形式で指定できます。
 
-ヘッダーを使用し`GET`て、要求の**body**プロパティと**uniqueBody**プロパティで返される目的の形式を指定できます。 `Prefer: outlook.body-content-type`
+ヘッダーを使用し`GET`て、要求の**Body**プロパティと**uniqueBody**プロパティで返される目的の形式を指定できます。 `Prefer: outlook.body-content-type`
 
 - テキスト`Prefer: outlook.body-content-type="text"`形式で返されるイベントメッセージ本文を取得するように指定します。
 - イベント`Prefer: outlook.body-content-type="html"`メッセージの本文を HTML 形式で返すには、を指定するか、または単純にヘッダーをスキップします。
@@ -177,6 +177,16 @@ Content-type: application/json
     "previousEndDateTime":null
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_eventmessage-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_eventmessage-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
 ##### <a name="request-2"></a>要求 2
@@ -386,6 +396,16 @@ Content-type: application/json
     }
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_event_based_on_eventmessage-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_event_based_on_eventmessage-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -396,6 +416,11 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/eventmessage-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/eventmessage-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/eventmessage-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/eventmessage-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

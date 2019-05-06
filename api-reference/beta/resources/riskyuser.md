@@ -4,12 +4,12 @@ description: 危険にさらされている Azure AD ユーザーを表します
 author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 179a6cbddf3e4b27c47761bd81aad1052ae7f728
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 685600c110088d9bd9809a8c754e8530b123412e
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343536"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33620809"
 ---
 # <a name="riskyuser-resource-type"></a>riskyUser リソースの種類
 
@@ -17,18 +17,19 @@ ms.locfileid: "33343536"
 
 危険にさらされている Azure AD ユーザーを表します。 Azure AD は、さまざまなシグナルやマシン学習に基づいて、ユーザーのリスクを継続的に評価します。 この API は、プログラムによって Azure AD 内のすべてのリスクユーザーにアクセスを提供します。
 
-リスクイベントの詳細については、「 [Azure Active Directory id 保護](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/)」を参照してください。
+リスクイベントの詳細については、「 [Azure Active Directory Id 保護](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/)」を参照してください。
 
->**注:** riskyUsers API を使用するには、Azure AD Premium P2 ライセンスが必要です。
+>**注:** RiskyUsers API を使用するには、Azure AD Premium P2 ライセンスが必要です。
 
 ## <a name="methods"></a>メソッド
 
 | メソッド   | 戻り値の型|説明|
 |:---------------|:--------|:----------|
 |[リスト riskyUsers](../api/riskyusers-list.md) | [riskyUser](riskyUser.md)コレクション|リスクの高いユーザーとそのプロパティを一覧表示します。|
-|[riskyUser を取得する](../api/riskyusers-get.md) | [riskyUser](riskyUser.md)|特定の危険なユーザーおよびそのプロパティを取得します。|
-|[riskyUsers が侵害されたことを確認する](../api/riskyusers-confirmcompromised.md)|なし |危険なユーザーが侵害されていることを確認します。|
-|[riskyUsers を閉じる](../api/riskyusers-dismiss.md)|なし | 危険なユーザーのリスクを無視します。|
+|[RiskyUser を取得する](../api/riskyusers-get.md) | [riskyUser](riskyUser.md)|特定の危険なユーザーおよびそのプロパティを取得します。|
+|[リストの履歴](../api/riskyuser-list-history.md) | [riskyUserHistoryItem](riskyuserhistoryitem.md)コレクション|Azure AD ユーザーのリスク履歴を取得します。|
+|[RiskyUsers が侵害されたことを確認する](../api/riskyusers-confirmcompromised.md)|なし |危険なユーザーが侵害されていることを確認します。|
+|[RiskyUsers を閉じる](../api/riskyusers-dismiss.md)|なし | 危険なユーザーのリスクを無視します。|
 
 ## <a name="properties"></a>プロパティ
 
@@ -39,16 +40,16 @@ ms.locfileid: "33343536"
 |`isGuest`|`bool`|ユーザーがゲストユーザーであるかどうかを示します。 可能な値は、`true`、`false` です。 True の場合は、ユーザーの id がテナントの外部にある場合に考慮します。 このユーザーは、Azure AD、MSA、またはサードパーティの id プロバイダーで id を持つ B2B または B2C ユーザーの場合があります。 False 場合は、ユーザーの id がテナントの内側にある場合|
 |`isProcessing`|`bool`|ユーザーの危険な状態がバックエンドによって処理されていることを示します。|
 |`riskLastUpdatedDateTime`|`datetime`|危険性のあるユーザーが最後に更新された日時|
-|`riskLevel`|`riskLevel`| 使用可能な値は、low、medium、high、hidden、none、unknownfuturevalue というです。  |
-|`riskState`|`riskState`| 使用可能な値は、none、confirmedSafe、修復済み、atrisk、unknownfuturevalue というです。  |
-|`riskDetail`|`riskDetail`| 使用可能な値は、none、adminGeneratedTemporaryPassword、userPerformedSecuredPasswordChange、userPerformedSecuredPasswordReset、adminConfirmedSigninSafe、aiConfirmedSigninSafe、userPassedMFADrivenByRiskBasedPolicy、adminDismissedAllRiskForUser、adminConfirmedSigninCompromised、hidden、adminConfirmedUserCompromised、unknownfuturevalue という。  |
+|`riskLevel`|`riskLevel`| 使用可能な値は、low、medium、high、hidden、none、Unknownfuturevalue というです。  |
+|`riskState`|`riskState`| 使用可能な値は、none、confirmedSafe、修復済み、atRisk、Unknownfuturevalue というです。  |
+|`riskDetail`|`riskDetail`| 使用可能な値は、none、adminGeneratedTemporaryPassword、userPerformedSecuredPasswordChange、userPerformedSecuredPasswordReset、adminConfirmedSigninSafe、aiConfirmedSigninSafe、userPassedMFADrivenByRiskBasedPolicy、adminDismissedAllRiskForUser、adminConfirmedSigninCompromised、hidden、adminConfirmedUserCompromised、Unknownfuturevalue という。  |
 |`userDisplayName`|`string`|危険ユーザーの表示名|
 |`userPrincipalName`|`string`|危険ユーザープリンシパル名|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|履歴|[riskyUserHistoryItem](riskyuserhistoryitem.md)コレクション| |
+|履歴|[riskyUserHistoryItem](riskyuserhistoryitem.md)コレクション|Azure ad Id 保護によって決定された Azure AD ユーザーのリスク履歴を表します。 |
 
 ## <a name="json-representation"></a>JSON 表記
 

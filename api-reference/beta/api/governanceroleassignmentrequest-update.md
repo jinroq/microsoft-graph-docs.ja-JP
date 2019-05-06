@@ -1,15 +1,15 @@
 ---
-title: governanceRoleAssignmentRequests の更新
+title: GovernanceRoleAssignmentRequests の更新
 description: 管理者が、の`AdminApproved` `AdminDenied` `PendingAdminDecision`状態にある governanceRoleAssignmentRequests 上の意思決定 (または) を更新できるようにします。
 localization_priority: Normal
-ms.openlocfilehash: e18793f1267047ca4e8e2fed9d03cb8e21c7c289
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: a20e583d701dca988b935b21e1d5874efcff6415
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33329588"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33593500"
 ---
-# <a name="update-governanceroleassignmentrequests"></a>governanceRoleAssignmentRequests の更新
+# <a name="update-governanceroleassignmentrequests"></a>GovernanceRoleAssignmentRequests の更新
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -40,11 +40,11 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 
 ## <a name="request-body"></a>要求本文
 
-|Parameters      |型                   |必須 |説明|
+|パラメーター      |型                   |必須 |説明|
 |:-------------|:----------------------|:--------|:----------|
 |したがっ        |String                 |✓        |管理者によって決定された理由。|
 |条件        |String                 |✓        |管理者は、役割の割り当て要求を決定します。 値をまたは`AdminApproved` `AdminDenied`として更新する必要があります。|
-|スケジューリング      |[governanceSchedule](../resources/governanceschedule.md)|        | 役割の割り当て要求のスケジュール。 の`AdminApproved`状態については、が必要です。|
+|schedule      |[governanceSchedule](../resources/governanceschedule.md)|        | 役割の割り当て要求のスケジュール。 の`AdminApproved`状態については、が必要です。|
 |割り当ての状態      |String|         | 代入の状態で、値はまたは`Eligible` `Active`で指定できます。 について`AdminApproved`は、必須です。 |
 ### <a name="response"></a>応答
 このメソッドは、の`PendingAdminDecision`状態にある要求にのみ適用できます。
@@ -73,6 +73,16 @@ POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssign
   "assignmentState": "Eligible"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/updaterequest_governanceroleassignmentrequest-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/updaterequest_governanceroleassignmentrequest-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ##### <a name="response"></a>応答
 <!-- {
@@ -93,6 +103,9 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

@@ -1,23 +1,23 @@
 ---
 title: オンライン会議を取得する
-description: '**onlineMeeting**オブジェクトのプロパティとリレーションシップを取得します。'
+description: '**OnlineMeeting**オブジェクトのプロパティとリレーションシップを取得します。'
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 556482073374d0c8a9381b10128ce6d4d0ae9dec
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: ff164b7b525c83436dc5c0db6e583704f79414e3
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33332989"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33597011"
 ---
 # <a name="get-online-meeting"></a>オンライン会議を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**onlineMeeting**オブジェクトのプロパティとリレーションシップを取得します。
+**OnlineMeeting**オブジェクトのプロパティとリレーションシップを取得します。
 
-> **注:** この`GET`メソッドは、 [vtc 会議 id](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up)に制限されています。これらの id は、クラウドビデオ相互運用ライセンスユーザーを対象として生成され、このメソッドを使用して会議に参加するための詳細情報を取得します。
+> **注:** この`GET`メソッドは、 [vtc 会議 id](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up)に制限されています。これらの Id は、クラウドビデオ相互運用ライセンスユーザーを対象として生成され、このメソッドを使用して会議に参加するための詳細情報を取得します。
 > 通常のフローでは、 `joinURL` bot はを使用して会議に参加でき、参照は必要ありません。
 
 ## <a name="permissions"></a>アクセス許可
@@ -129,6 +129,16 @@ Content-Length: 1574
   "subject": "Quarterly sales numbers"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-onlineMeeting-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-onlineMeeting-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -139,6 +149,9 @@ Content-Length: 1574
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/onlinemeeting-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/onlinemeeting-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

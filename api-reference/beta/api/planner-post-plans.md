@@ -4,16 +4,14 @@ description: この API を使用して、新しい **plannerPlan** を作成し
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: e3d55fddae020a58b2fdb240b486d65b3d78a320
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 0c2786b54a168b5fc431c8418a2fdc05542902ac
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33332552"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33595796"
 ---
 # <a name="create-plannerplan"></a>Create plannerPlan
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 この API を使用して、新しい **plannerPlan** を作成します。
 
@@ -46,6 +44,7 @@ POST /planner/plans
 
 >**注意:** プランを作成するユーザーは、プランを所有するグループのメンバーである必要があります。 あなたが新しいグループを[グループの作成](../api/group-post-groups.md)を使用して作成しても、メンバーとしてそのグループに追加されることはありません。 グループを作成したら、[グループ投稿メンバー](../api/group-post-members.md)を使用して自分自身をメンバーとして追加します。
 
+
 ## <a name="response"></a>応答
 
 成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [plannerPlan](../resources/plannerplan.md) オブジェクトを返します。
@@ -57,12 +56,13 @@ POST /planner/plans
 ### <a name="request"></a>要求
 
 以下は、要求の例です。
+
 <!-- {
   "blockType": "request",
   "name": "create_plannerplan_from_planner"
 }-->
 ``` http
-POST https://graph.microsoft.com/beta/planner/plans
+POST https://graph.microsoft.com/v1.0/planner/plans
 Content-type: application/json
 Content-length: 381
 
@@ -77,6 +77,7 @@ Content-length: 381
 ### <a name="response"></a>応答
 
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -102,16 +103,27 @@ Content-length: 357
   "id": "xqQg5FS2LkCp935s-FIFm2QAFkHM"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_plannerplan_from_planner-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_plannerplan_from_planner-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create plannerPlan",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/planner-post-plans.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/planner-post-plans.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

@@ -4,12 +4,12 @@ description: 特定のディレクトリ設定オブジェクトのプロパテ�
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 06dbb3be6ae855a43cf83e05fd2b099e1071dceb
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 5d17abb40c6cf020b23be4fc0c319ebdee2684aa
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325813"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33590266"
 ---
 # <a name="update-a-directory-setting"></a>ディレクトリ設定を更新する
 
@@ -17,7 +17,7 @@ ms.locfileid: "33325813"
 
 特定のディレクトリ設定オブジェクトのプロパティを更新します。
 
-> **注**: この API のベータ版は、グループにのみ適用されます。 この API の/v1.0 バージョンが、 *groupsettings を更新*する名前に変更されました。
+> **注**: この API のベータ版は、グループにのみ適用されます。 この API の/v1.0 バージョンが、 *groupSettings を更新*する名前に変更されました。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -45,7 +45,7 @@ PATCH /groups/{id}/settings/{id}
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-| values | [settingvalue](../resources/settingvalue.md)コレクション | 更新された値のセットです。注:コレクション セット全体を指定する必要があります。単一の値のセットを更新することはできません。 |
+| values | [Settingvalue](../resources/settingvalue.md)コレクション | 更新された値のセットです。注:コレクション セット全体を指定する必要があります。単一の値のセットを更新することはできません。 |
 
 ## <a name="response"></a>応答
 
@@ -81,6 +81,16 @@ Content-length: 178
 ```http
 HTTP/1.1 204 OK
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_directorysetting-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_directorysetting-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -91,6 +101,9 @@ HTTP/1.1 204 OK
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/directorysetting-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/directorysetting-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

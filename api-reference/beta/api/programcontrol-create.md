@@ -1,15 +1,15 @@
 ---
-title: programcontrol を作成する
-description: Azure AD access レビュー機能で、新しい programcontrol オブジェクトを作成します。  これにより、アクセスレビューがプログラムにリンクされます。
+title: ProgramControl を作成する
+description: Azure AD access レビュー機能で、新しい programControl オブジェクトを作成します。  これにより、アクセスレビューがプログラムにリンクされます。
 localization_priority: Normal
-ms.openlocfilehash: d7a48b45049c2268856a3ec238114cfa9bf834f5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: e8b1fd9d72250f4ebc12508a324c3ad914f1db33
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33332044"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33611117"
 ---
-# <a name="create-programcontrol"></a>programcontrol を作成する
+# <a name="create-programcontrol"></a>ProgramControl を作成する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,11 +27,11 @@ Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、�
 
 |アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント)     | programcontrol  |
+|委任 (職場または学校のアカウント)     | ProgramControl.ReadWrite.All  |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
-|アプリケーション                            |  programcontrol  |
+|アプリケーション                            |  ProgramControl.ReadWrite.All  |
 
-また、サインインしているユーザーは、 **programcontrol**を作成することを許可するディレクトリロールにある必要があります。 
+また、サインインしているユーザーは、 **Programcontrol**を作成することを許可するディレクトリロールにある必要があります。 
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -44,15 +44,15 @@ POST /programControls
 | Authorization | string | ベアラー \{トークン\}。必須。 |
 
 ## <a name="request-body"></a>要求本文
-要求本文で、 [programcontrol](../resources/programcontrol.md)オブジェクトの JSON 表記を指定します。
+要求本文で、 [Programcontrol](../resources/programcontrol.md)オブジェクトの JSON 表記を指定します。
 
 次の表に、プログラムコントロールの作成時に必要なプロパティを示します。
 
 | プロパティ     | 型        | 説明 |
 |:-------------|:------------|:------------|
-| `programId`              |`String`                | このコントロールが一部になるプログラムの programid。                             |
+| `programId`              |`String`                | このコントロールが一部になるプログラムの programId。                             |
 | `controlId`              |`String`                | コントロールの controlId (特にアクセスレビューの識別子)。                                                |
-| `controlTypeId`          |`String`                | programcontroltype には、プログラムコントロールの種類を指定します。たとえば、ゲストアクセスレビューにリンクしているコントロールがあります。 |
+| `controlTypeId`          |`String`                | ProgramControlType には、プログラムコントロールの種類を指定します。たとえば、ゲストアクセスレビューにリンクしているコントロールがあります。 |
 
 ## <a name="response"></a>応答
 成功した場合、このメソッド`201, Created`は応答コードと、応答本文で[programcontrol](../resources/programcontrol.md)オブジェクトを返します。
@@ -60,7 +60,7 @@ POST /programControls
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
-要求本文で、 [programcontrol](../resources/programcontrol.md)オブジェクトの JSON 表記を指定します。
+要求本文で、 [Programcontrol](../resources/programcontrol.md)オブジェクトの JSON 表記を指定します。
 
 <!-- {
   "blockType": "request",
@@ -98,12 +98,22 @@ Content-type: application/json
   "createdDateTime": "2018-05-18T20:26:05.2976279Z"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_programControl_from_programControls-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_programControl_from_programControls-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="see-also"></a>関連項目
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[programcontroltypes のリスト](../api/programcontroltype-list.md) | [programcontroltype](../resources/programcontroltype.md)コレクション| プログラムコントロールの種類を一覧表示します。 |
+|[ProgramControlTypes のリスト](../api/programcontroltype-list.md) | [Programcontroltype](../resources/programcontroltype.md)コレクション| プログラムコントロールの種類を一覧表示します。 |
 
 
 <!--
@@ -113,6 +123,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/programcontrol-create.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/programcontrol-create.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

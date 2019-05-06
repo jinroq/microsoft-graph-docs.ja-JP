@@ -4,12 +4,12 @@ ms.author: chackman
 title: フォローされたアイテムを一覧表示する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: e3a6a7c526bd945a9a9fb30d2014b2bb3f84c3cc
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 1892b6c9adac3c41cf99bf755aa8d67d51a0066e
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325425"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33589772"
 ---
 # <a name="list-followed-items"></a>フォローされたアイテムを一覧表示する
 
@@ -64,6 +64,16 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-followed-items-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-followed-items-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!--
 {
@@ -72,6 +82,9 @@ Content-type: application/json
   "keywords": "drive,onedrive.drive,list followed items",
   "section": "documentation",
   "tocPath": "Drives/List followed items",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/drive-list-following.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/drive-list-following.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

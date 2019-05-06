@@ -5,16 +5,14 @@ ms.date: 09/10/2017
 title: 最近使用したファイルを一覧表示する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 3463c2a9500bda13290e898e6e86561849278631
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: d50954f06001b53aa02b9fb49d3daab1a686f42a
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325392"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33589344"
 ---
 # <a name="list-recent-files"></a>最近使用したファイルを一覧表示する
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 サインインしたユーザーによって最近使用されたアイテムのセットを一覧表示します。このコレクションには、ユーザーのドライブにあるアイテムと、他のドライブとの間でアクセス可能なアイテムが含まれています。
 
@@ -33,6 +31,7 @@ ms.locfileid: "33325392"
 <!-- { "blockType": "request",
        "name": "view-recent-files", 
        "scopes": "files.read",
+       "tags": "service.graph",
        "target": "action" } -->
 
 ```http
@@ -86,6 +85,16 @@ Content-Type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/view-recent-files-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/view-recent-files-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="remarks"></a>備考
 
@@ -97,13 +106,14 @@ Content-Type: application/json
 GET /drives/{remoteItem-driveId}/items/{remoteItem-id}
 ```
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Retrieve a list of recently used files for the owner of the drive.",
   "keywords": "drive,onedrive.drive,default drive",
   "section": "documentation",
   "tocPath": "Drives/Recent files",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/drive-recent.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/drive-recent.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+} -->

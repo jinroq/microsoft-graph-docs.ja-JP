@@ -1,17 +1,17 @@
 ---
-title: accessreview を作成する
-description: Azure AD access レビュー機能で、新しい accessreview オブジェクトを作成します。
+title: AccessReview を作成する
+description: Azure AD access レビュー機能で、新しい accessReview オブジェクトを作成します。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8eafaa1ee03e810a8e19c0c0c08b46e111c6420c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 8a462398903a821bba1022cde07f45f99817356c
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33323723"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33586462"
 ---
-# <a name="create-accessreview"></a>accessreview を作成する
+# <a name="create-accessreview"></a>AccessReview を作成する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -19,14 +19,14 @@ Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、�
 
 この要求を行う前に、発信者は以前に[ビジネスフローテンプレートの一覧を取得](businessflowtemplate-list.md)して、の`businessFlowTemplateId`値を要求に含める必要があります。
 
-この要求を行った後、呼び出し元は、プログラムにアクセスレビューをリンクするために[programcontrol を作成](programcontrol-create.md)する必要があります。  
+この要求を行った後、呼び出し元は、プログラムにアクセスレビューをリンクするために[programControl を作成](programcontrol-create.md)する必要があります。  
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント)     | accessreview すべて |
+|委任 (職場または学校のアカウント)     | AccessReview.ReadWrite.All |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
 |アプリケーション                            | サポートされていません。 |
 
@@ -44,9 +44,9 @@ POST /accessReviews
 | Authorization | string | ベアラー \{トークン\}。必須。 |
 
 ## <a name="request-body"></a>要求本文
-要求本文で、 [accessreview](../resources/accessreview.md)オブジェクトの JSON 表記を指定します。
+要求本文で、 [Accessreview](../resources/accessreview.md)オブジェクトの JSON 表記を指定します。
 
-次の表に、accessreview の作成時に必要なプロパティを示します。
+次の表に、accessReview の作成時に必要なプロパティを示します。
 
 | プロパティ     | 型        | 説明 |
 |:-------------|:------------|:------------|
@@ -54,7 +54,7 @@ POST /accessReviews
 | `startDateTime`           |`DateTimeOffset`                                                | レビューが開始される予定の日時。  これは、将来の日付である必要があります。   |
 | `endDateTime`             |`DateTimeOffset`                                                | レビューが終了する予定の日時。 これは、開始日よりも1日以上後でなければなりません。   |
 | `description`             |`String`                                                        | レビュー担当者に表示する説明。 |
-| `businessFlowTemplateId`  |`String`                                                        | [businessflowtemplate](../resources/businessflowtemplate.md)から取得したビジネスフローテンプレートの識別子。  |
+| `businessFlowTemplateId`  |`String`                                                        | [Businessflowtemplate](../resources/businessflowtemplate.md)から取得したビジネスフローテンプレートの識別子。  |
 | `reviewerType`            |`String`                                                        | レビュー対象のオブジェクトのアクセス権に対するレビュー担当者の関係の種類`self`、 `delegated`いずれか`entityOwners`、または。 | 
 | `reviewedEntity`          |`microsoft.graph.identity`                                      | アクセスレビューが作成されるオブジェクト (グループのメンバーシップ、アプリケーションに対するユーザーの割り当てなど)。 | 
 
@@ -74,7 +74,7 @@ POST /accessReviews
 これは、1回限り (繰り返しではない) アクセスレビューを作成し、2人のユーザーをレビュー担当者として明示的に指定する例です。
 
 ##### <a name="request"></a>要求
-要求本文で、 [accessreview](../resources/accessreview.md)オブジェクトの JSON 表記を指定します。
+要求本文で、 [Accessreview](../resources/accessreview.md)オブジェクトの JSON 表記を指定します。
 
 <!-- {
   "blockType": "request",
@@ -147,6 +147,16 @@ Content-type: application/json
     "description": "Sample description"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_accessReview_from_accessReviews-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_accessReview_from_accessReviews-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!--
 {
@@ -155,6 +165,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/accessreview-create.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/accessreview-create.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->
