@@ -1,21 +1,21 @@
 ---
-title: trustframeworkpolicies を一覧表示する
-description: この操作では、Azure AD B2C テナントのすべての trustframeworkpolicy オブジェクトを一覧表示します。
+title: TrustFrameworkPolicies を一覧表示する
+description: この操作では、Azure AD B2C テナントのすべての trustFrameworkPolicy オブジェクトを一覧表示します。
 localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 568463be596e79284b6ec73f6aa69174b0a8c7d3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: afdaf352494b0f68f37d88707fad98aa9373969a
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335102"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33637452"
 ---
-# <a name="list-trustframeworkpolicies"></a>trustframeworkpolicies を一覧表示する
+# <a name="list-trustframeworkpolicies"></a>TrustFrameworkPolicies を一覧表示する
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでは、これらの API の使用はサポートされていません。
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-テナント/ディレクトリの[trustframeworkpolicies](../resources/trustframeworkpolicy.md)の一覧を取得します。
+テナント/ディレクトリの[Trustframeworkpolicies](../resources/trustframeworkpolicy.md)の一覧を取得します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -23,7 +23,7 @@ ms.locfileid: "33335102"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント)|ポリシー. trustframework, policy. すべて|
+|委任 (職場または学校のアカウント)|ポリシー. TrustFramework, Policy. すべて|
 |委任 (個人用 Microsoft アカウント)| サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -55,7 +55,7 @@ GET /trustFramework/policies/
 
 ## <a name="example"></a>例
 
-次の例では、すべての**trustframeworkpolicies**を取得します。
+次の例では、すべての**Trustframeworkpolicies**を取得します。
 
 ##### <a name="request"></a>要求
 
@@ -93,6 +93,16 @@ Content-type: application/json
     ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_trustFrameworks-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_trustFrameworks-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -101,5 +111,9 @@ Content-type: application/json
   "description": "List trustFrameworkPolicy",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/trustframework-list-trustframeworkpolicies.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/trustframework-list-trustframeworkpolicies.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

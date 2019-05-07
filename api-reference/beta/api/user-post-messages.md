@@ -4,14 +4,14 @@ description: この API を使用して、新しいメッセージの下書き�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c6178abcae6f7dadde2166f7f3a71bf4915ec245
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 466bcd3836b72c184e376890d67af450f661767f
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334574"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33637277"
 ---
-# <a name="create-message"></a>メッセージを作成する
+# <a name="create-message"></a>メッセージの作成
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -50,7 +50,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 
 新しいメッセージで別のユーザーを呼び出すために、**メンション**を使用する場合は、次のようにします。
 
-- 要求本文に、必要な**torecipients**プロパティ、**メンション**プロパティ、および任意の書き込み可能なメッセージプロパティを含めます。
+- 要求本文に、必要な**Torecipients**プロパティ、**メンション**プロパティ、および任意の書き込み可能なメッセージプロパティを含めます。
 - **メンション**プロパティの各メンションに対して、**説明**されているプロパティを指定する必要があります。
 
 **メッセージ** リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため、`POST` 操作を使用して、リソースの作成時にカスタム プロパティを独自のデータとともにメッセージに追加することができます。
@@ -156,9 +156,19 @@ Content-type: application/json
     }
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_message_from_user-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_message_from_user-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ##### <a name="request-2"></a>要求 2
-次の例では、randi という下書き電子メールを、Samantha ブースに示します。 このメッセージには、別のユーザーの Dana Swope も含まれています。
+次の例では、Randi という下書き電子メールを、Samantha ブースに示します。 このメッセージには、別のユーザーの Dana Swope も含まれています。
 
 要求本文で、[メッセージ](../resources/message.md) オブジェクトの JSON 表記を指定します。
 <!-- {
@@ -250,9 +260,19 @@ Content-type: application/json
 }
 
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_message_with_mentions_from_user-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_message_with_mentions_from_user-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ##### <a name="request-3"></a>要求 3
-次の例では、メッセージの下書きを作成するときに、いくつかの顧客インターネットメッセージヘッダーを追加します。
+次の例では、メッセージの下書きを作成する際に顧客のインターネット メッセージ ヘッダーをいくつか追加します。
 <!-- {
   "blockType": "request",
   "name": "create_message_with_headers_from_user"
@@ -288,7 +308,7 @@ Content-type: application/json
 ```
 要求本文で、[メッセージ](../resources/message.md) オブジェクトの JSON 表記を指定します。
 ##### <a name="response-3"></a>応答 3
-以下は、応答の例です。 注: インターネットメッセージヘッダーは、POST 応答で既定では返されません。 ここに示す応答オブジェクトは、簡潔にするために切り詰められている場合もあります。 実際の呼び出しではすべてのプロパティが返されます。
+以下は、応答の例です。 注: インターネット メッセージ ヘッダーは、既定で POST レスポンスに返されません。 簡潔にするために、ここに示す応答オブジェクトも切り詰められている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "name": "create_message_with_headers_from_user",
@@ -355,6 +375,16 @@ Content-type: application/json
     }
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_message_with_headers_from_user-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_message_with_headers_from_user-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="see-also"></a>関連項目
 
@@ -371,6 +401,13 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-post-messages.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/user-post-messages.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/user-post-messages.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/user-post-messages.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/user-post-messages.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/user-post-messages.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

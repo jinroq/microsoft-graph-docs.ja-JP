@@ -1,15 +1,15 @@
 ---
-title: 'serviceprincipal: 所有者の追加'
+title: 'servicePrincipal: 所有者の追加'
 description: この API を使用して、サービスプリンシパルの所有者を追加します。
 localization_priority: Normal
-ms.openlocfilehash: b7fee2fdeeb8bec7fc4476cfc70af845b3034edc
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 6da4b2b7b9ae83aae5bd818454047cdb31166484
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335888"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638599"
 ---
-# <a name="serviceprincipal-add-owner"></a>serviceprincipal: 所有者の追加
+# <a name="serviceprincipal-add-owner"></a>servicePrincipal: 所有者の追加
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +22,7 @@ ms.locfileid: "33335888"
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | Directory.AccessAsUser.All    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | application.readwrite.ownedby とディレクトリ。すべての、およびすべてのディレクトリを取得します。すべてのアプリケーション |
+|アプリケーション | Application.readwrite.ownedby とディレクトリ。すべての、およびすべてのディレクトリを取得します。すべてのアプリケーション |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -78,6 +78,14 @@ Content-length: 51
   }
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_directoryobject_from_serviceprincipal-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -88,6 +96,8 @@ Content-length: 51
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/serviceprincipal-post-owners.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

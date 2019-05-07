@@ -1,24 +1,24 @@
 ---
-title: riskyUsers を閉じる
-description: riskyUsers オブジェクトのリスクを無視します。
+title: RiskyUser を閉じる
+description: RiskyUser オブジェクトのリスクを無視します。
 author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.date: 03/20/2019
-ms.openlocfilehash: 3027320b25c35e60e1b5dccabc7ff34ea642a953
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 2ca876b494b7753918e67ccdff3a6a37a776d054
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33336351"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33639048"
 ---
-# <a name="dismiss-riskyusers"></a>riskyUsers を閉じる
+# <a name="riskyuser-dismiss"></a>riskyUser: 閉じる
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
->**注:** riskyUsers API を使用するには、Azure AD Premium P2 ライセンスが必要です。
+>**注:** RiskyUsers API を使用するには、Azure AD Premium P2 ライセンスが必要です。
 
-**riskyUser**オブジェクトのリスクを無視します。 このアクションは、対象ユーザーのリスクレベルを [なし] に設定します。
+1つまたは複数の[riskyUser](../resources/riskyuser.md)オブジェクトのリスクを無視します。 このアクションは、対象ユーザーのリスクレベルを [なし] に設定します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -39,7 +39,6 @@ POST /riskyUsers/dismiss
 | 名前      |説明|
 |:----------|:----------|
 | Authorization  | ベアラー {トークン}。必須。 |
-| Workbook-Session-Id  | 変更を保存するかどうかを決定するブックセッション ID。 省略可能。|
 
 ## <a name="request-body"></a>要求本文
 要求本文で無視する userIds を指定します。
@@ -74,6 +73,16 @@ Content-Type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/dismiss_riskyuser-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/dismiss_riskyuser-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -82,5 +91,9 @@ HTTP/1.1 204 No Content
   "description": "Dismiss riskyUsers",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/riskyusers-dismiss.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/riskyusers-dismiss.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

@@ -1,19 +1,19 @@
 ---
 title: 同期ジョブの作成
-description: 既定の同期スキーマを使用して、新しい同期ジョブを作成します。 ジョブは無効な状態で作成されます。 start ジョブを呼び出して同期を開始します。
+description: 既定の同期スキーマを使用して、新しい同期ジョブを作成します。 ジョブは無効な状態で作成されます。 Start ジョブを呼び出して同期を開始します。
 localization_priority: Normal
-ms.openlocfilehash: 9784e7d7adab059ab90bf5fddc508d2be23ee27b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: fa0c3e539d73ff9496a0d4d0e3af8ebeda75e839
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335736"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638033"
 ---
 # <a name="create-synchronizationjob"></a>同期ジョブの作成
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-既定の同期スキーマを使用して、新しい同期ジョブを作成します。 ジョブは無効な状態で作成されます。 [start ジョブ](synchronization-synchronizationjob-start.md)を呼び出して同期を開始します。
+既定の同期スキーマを使用して、新しい同期ジョブを作成します。 ジョブは無効な状態で作成されます。 [Start ジョブ](synchronization-synchronizationjob-start.md)を呼び出して同期を開始します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -64,7 +64,7 @@ Content-type: application/json
 ##### <a name="response"></a>応答
 応答の例を次に示します。 
 
->**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
+>**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
 
 <!-- {
   "blockType": "response",
@@ -98,6 +98,16 @@ Content-type: application/json
     }
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_synchronizationjob_from_synchronization-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_synchronizationjob_from_synchronization-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -108,6 +118,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/synchronization-synchronizationjob-post.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/synchronization-synchronizationjob-post.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

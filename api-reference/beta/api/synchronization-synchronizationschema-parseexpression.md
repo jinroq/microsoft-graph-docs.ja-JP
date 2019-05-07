@@ -1,15 +1,15 @@
 ---
-title: '同期スキーマ: parseexpression'
+title: '同期スキーマ: parseExpression'
 description: '(../resources/synchronization_attributemappingsource.md) オブジェクト。 '
 localization_priority: Normal
-ms.openlocfilehash: ba506e0a2c1cd922d8c5cd3b01375f21f45c6f97
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: b11d50bc62dafedcdbf658e15e5501e134eb7a26
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335593"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33637977"
 ---
-# <a name="synchronizationschema-parseexpression"></a>同期スキーマ: parseexpression
+# <a name="synchronizationschema-parseexpression"></a>同期スキーマ: parseExpression
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -44,8 +44,8 @@ POST /servicePrincipals/{id}/synchronization/templates/{id}/schema/parseExpressi
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |式               |String               |解析する式を指定します。|
-|testinputobject          |[式 inputobject](../resources/synchronization-expressioninputobject.md)|式を評価するためのテストデータオブジェクト。 省略可能。|
-|targetattributedefinition|[attributedefinition](../resources/synchronization-attributedefinition.md) |この式にマップされる属性の定義。 省略可能。|
+|testInputObject          |[式 Inputobject](../resources/synchronization-expressioninputobject.md)|式を評価するためのテストデータオブジェクト。 省略可能。|
+|targetAttributeDefinition|[attributeDefinition](../resources/synchronization-attributedefinition.md) |この式にマップされる属性の定義。 省略可能。|
 
 ## <a name="response"></a>応答
 成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[parseexpression response](../resources/synchronization-parseexpressionresponse.md)オブジェクトを返します。
@@ -170,6 +170,14 @@ Content-type: application/json
     "parsingSucceeded": true
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/synchronizationschema_parseexpression-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -180,6 +188,8 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/synchronization-synchronizationschema-parseexpression.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

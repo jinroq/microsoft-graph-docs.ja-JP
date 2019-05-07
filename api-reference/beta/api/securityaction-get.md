@@ -1,21 +1,21 @@
 ---
 title: securityAction を取得する
-description: securityAction オブジェクトのプロパティとリレーションシップを取得します。
+description: SecurityAction オブジェクトのプロパティとリレーションシップを取得します。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: fcbecbd0c15efc493164929f769a79deb3cbd98a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: a3ec72ca4f4310a6995361ccc56196bf0b469f19
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33336054"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638796"
 ---
 # <a name="get-securityaction"></a>securityAction を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[securityAction](../resources/securityaction.md)オブジェクトのプロパティとリレーションシップを取得します。
+[SecurityAction](../resources/securityaction.md)オブジェクトのプロパティとリレーションシップを取得します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -25,7 +25,7 @@ ms.locfileid: "33336054"
 |:---------------------------------------|:--------------------------------------------|
 | 委任 (職場または学校のアカウント)     | サポートされていません。 |
 | 委任 (個人用 Microsoft アカウント) | サポートされていません。 |
-| アプリケーション                            | securityactions. all、securityactions. すべて |
+| アプリケーション                            | SecurityActions. All、SecurityActions. すべて |
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -93,6 +93,16 @@ Content-type: application/json
   "createdDateTime": "datetime-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_securityaction-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_securityaction-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
@@ -101,5 +111,9 @@ Content-type: application/json
   "description": "Get securityAction",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/securityaction-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/securityaction-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

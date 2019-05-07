@@ -4,12 +4,12 @@ description: Outlook 関連リソースの ID の形式を変換します。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1721f30ea34f02a63d841c77f7c44d50e98624b3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: c6380fc4c14c4efb661fd06723e234494730e455
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334638"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33637095"
 ---
 # <a name="user-translateexchangeids"></a>ユーザー: translateExchangeIds
 
@@ -23,8 +23,8 @@ Outlook 関連リソースの ID の形式を変換します。
 
 | アクセス許可の種類 | アクセス許可 (特権の小さいものから大きいものへ) |
 |:----------------|:--------------------------------------------|
-| 委任 (職場または学校のアカウント) | ユーザー. readbasic、user. 読み取り、ユーザー. 読み取り/書き込み。すべてのユーザー。すべてのユーザーに対して。 |
-| 委任 (個人用 Microsoft アカウント) | ユーザー. readbasic、user. 読み取り/書き込み |
+| 委任 (職場または学校のアカウント) | ユーザー. ReadBasic、user. 読み取り、ユーザー. 読み取り/書き込み。すべてのユーザー。すべてのユーザーに対して。 |
+| 委任 (個人用 Microsoft アカウント) | ユーザー. ReadBasic、User. 読み取り/書き込み |
 | アプリケーション | User.Read.All、User.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
@@ -73,7 +73,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 ## <a name="example"></a>例
 
-次の例は、複数の識別子を標準の rest API 形式 (`restId`) から不変形式 (`restImmutableEntryId`) に変換する方法を示しています。
+次の例は、複数の識別子を標準の REST API 形式 (`restId`) から不変形式 (`restImmutableEntryId`) に変換する方法を示しています。
 
 ### <a name="request"></a>要求
 
@@ -124,3 +124,24 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/user_translateexchangeids-Cs-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Example",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-translateexchangeids.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/user-translateexchangeids.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

@@ -1,17 +1,17 @@
 ---
-title: 'tiindicator: updatetiindicators'
+title: 'tiIndicator: updateTiIndicators'
 description: 複数の要求ではなく、1つの要求で複数の脅威インテリジェンス (TI) インジケーターを更新します。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: c5831c09a8ac01673b9cf5e37d3c0ac00e1350a2
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: ac40a7690a70e49ae823779bf86569e078c4a3db
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335290"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33637592"
 ---
-# <a name="tiindicator-updatetiindicators"></a>tiindicator: updatetiindicators
+# <a name="tiindicator-updatetiindicators"></a>tiIndicator: updateTiIndicators
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,11 +43,11 @@ POST /security/tiIndicators/updateTiIndicators
 
 ## <a name="request-body"></a>要求本文
 
-要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。 更新できるプロパティの詳細については、「 [update tiindicator](tiindicator-update.md)」を参照してください。
+要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。 更新できるプロパティの詳細については、「 [Update tiIndicator](tiindicator-update.md)」を参照してください。
 
 | パラメーター    | 型        | 説明 |
 |:-------------|:------------|:------------|
-|value|tiindicator コレクション| 更新する**tiindicators**のコレクションです。 各エンティティには、更新する**id**およびその他の編集可能なプロパティが必要です。|
+|value|tiIndicator コレクション| 更新する**Tiindicators**のコレクションです。 各エンティティには、更新する**id**およびその他の編集可能なプロパティが必要です。|
 
 ## <a name="response"></a>応答
 
@@ -117,6 +117,16 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/tiindicator_updatetiindicators-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/tiindicator_updatetiindicators-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
@@ -125,5 +135,9 @@ Content-type: application/json
   "description": "tiIndicator: updateTiIndicators",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/tiindicator-updatetiindicators.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/tiindicator-updatetiindicators.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

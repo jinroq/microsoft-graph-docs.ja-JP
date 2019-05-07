@@ -1,23 +1,23 @@
 ---
-title: accessreview を更新する
-description: Azure AD access レビュー機能で、既存の accessreview オブジェクトを更新して、そのプロパティの1つ以上を変更します。
+title: AccessReview を更新する
+description: Azure AD access レビュー機能で、既存の accessReview オブジェクトを更新して、そのプロパティの1つ以上を変更します。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b1c2c1fc0ea94c7d595725fbcc303e1534b1c204
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 026b445eee69557ead9179100cd6075e06783a86
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33323007"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636731"
 ---
-# <a name="update-accessreview"></a>accessreview を更新する
+# <a name="update-accessreview"></a>AccessReview を更新する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、既存の[accessreview](../resources/accessreview.md)オブジェクトを更新して、そのプロパティの1つ以上を変更します。
 
-この API は、レビュー担当者またはレビューの決定を変更するためのものではありません。  レビュー担当者を変更するには、 [addreviewer](accessreview-addreviewer.md)または[removereviewer](accessreview-removereviewer.md) api を使用します。  既に開始した1回限りのレビュー、または定期的なレビューの事前に開始されているインスタンスを停止するには、 [stop](accessreview-stop.md) API を使用します。 目的のグループまたはアプリのアクセス権に決定を適用するには、[API の[適用](accessreview-apply.md)] を使用します。 
+この API は、レビュー担当者またはレビューの決定を変更するためのものではありません。  レビュー担当者を変更するには、 [Addreviewer](accessreview-addreviewer.md)または[removereviewer](accessreview-removereviewer.md) api を使用します。  既に開始した1回限りのレビュー、または定期的なレビューの事前に開始されているインスタンスを停止するには、 [stop](accessreview-stop.md) API を使用します。 目的のグループまたはアプリのアクセス権に決定を適用するには、[API の[適用](accessreview-apply.md)] を使用します。 
 
 
 ## <a name="permissions"></a>アクセス許可
@@ -25,7 +25,7 @@ Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、�
 
 |アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント)     | accessreview すべて |
+|委任 (職場または学校のアカウント)     | AccessReview.ReadWrite.All |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
 |アプリケーション                            | サポートされていません。 |
 
@@ -40,9 +40,9 @@ PATCH /accessReviews('{reviewId}')
 | Authorization | string | ベアラー \{トークン\}。必須。 |
 
 ## <a name="request-body"></a>要求本文
-要求本文で、 [accessreview](../resources/accessreview.md)オブジェクトのパラメーターの JSON 表記を指定します。
+要求本文で、 [Accessreview](../resources/accessreview.md)オブジェクトのパラメーターの JSON 表記を指定します。
 
-次の表に、accessreview の更新時に提供できるプロパティを示します。
+次の表に、accessReview の更新時に提供できるプロパティを示します。
 
 | プロパティ     | 型        | 説明 |
 |:-------------|:------------|:------------|
@@ -61,7 +61,7 @@ PATCH /accessReviews('{reviewId}')
 これは、1回限り (定期的でない) アクセスレビューを更新する例です。
 
 ##### <a name="request"></a>要求
-要求本文で、 [accessreview](../resources/accessreview.md)オブジェクトの新しいプロパティの JSON 表記を指定します。
+要求本文で、 [Accessreview](../resources/accessreview.md)オブジェクトの新しいプロパティの JSON 表記を指定します。
 
 <!-- {
   "blockType": "request",
@@ -98,6 +98,16 @@ Content-type: application/json
     "description": "Sample description"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_accessReview-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_accessReview-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!--
 {
@@ -106,6 +116,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/accessreview-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/accessreview-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

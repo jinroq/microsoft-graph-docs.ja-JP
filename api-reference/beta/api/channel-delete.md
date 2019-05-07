@@ -4,12 +4,12 @@ description: チャネルを削除します。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: fbc56a89e351c8b6093c11d4a3436f7aa2ac8323
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 6e360f34bffc9545844b3261433d061956145041
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328139"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33635520"
 ---
 # <a name="delete-channel"></a>チャネルを削除する
 
@@ -17,7 +17,7 @@ ms.locfileid: "33328139"
 
 [チャネル](../resources/channel.md)を削除します。
 
-> **注**: アプリケーションのアクセス許可とこの API には、既知の問題があります。 詳細については、[既知の問題リスト](/graph/known-issues#application-permissions)を参照してください。
+> **注**: アプリケーションのアクセス許可とこの API には既知の問題があります。 詳細については、「[既知の問題](/graph/known-issues#application-permissions)」のリストを参照してください。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -69,6 +69,16 @@ DELETE https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/delete_channel-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/delete_channel-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -79,6 +89,9 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/channel-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/channel-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

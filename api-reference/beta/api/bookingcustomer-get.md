@@ -1,27 +1,27 @@
 ---
-title: bookingcustomer を取得する
-description: bookingcustomer オブジェクトのプロパティと関係を取得します。
+title: BookingCustomer を取得する
+description: BookingCustomer オブジェクトのプロパティと関係を取得します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 2398c559379fc6e787b5227157fc5bc030e9d51b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 3d6b51dc43d5f713dbdb99733cf05ca66c1e31f0
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322460"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636024"
 ---
-# <a name="get-bookingcustomer"></a>bookingcustomer を取得する
+# <a name="get-bookingcustomer"></a>BookingCustomer を取得する
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[bookingcustomer](../resources/bookingcustomer.md)オブジェクトのプロパティと関係を取得します。
+[Bookingcustomer](../resources/bookingcustomer.md)オブジェクトのプロパティと関係を取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) |  予約します。 all、bookingsappointment すべての予約。すべての予約が可能です。   |
+|委任 (職場または学校のアカウント) |  予約します。 all、BookingsAppointment すべての予約。すべての予約が可能です。   |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。   |
 |アプリケーション | サポートされていません。  |
 
@@ -70,6 +70,16 @@ Content-type: application/json
     "emailAddress": "adelev@proseware.com"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_bookingcustomer-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_bookingcustomer-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -80,6 +90,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/bookingcustomer-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/bookingcustomer-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

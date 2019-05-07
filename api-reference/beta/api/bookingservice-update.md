@@ -1,17 +1,17 @@
 ---
-title: bookingservice を更新する
-description: 指定した bookingservice の bookingservice オブジェクトのプロパティを更新します。
+title: Bookingservice を更新する
+description: 指定した bookingservice の bookingService オブジェクトのプロパティを更新します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 41bcc4b31735cefb162a03a8c5a3dfd82cc6364e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 607949e8c4b00230815fa8b29eba751494efb8b3
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322471"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636010"
 ---
-# <a name="update-bookingservice"></a>bookingservice を更新する
+# <a name="update-bookingservice"></a>Bookingservice を更新する
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -48,19 +48,19 @@ PATCH /bookingBusinesses/{id}/services/{id}
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|defaultduration|期間|サービスの既定の長さ。日数、時間、分、および秒で表されます。 たとえば、p11d23h59m 59.999999999999 s のようになります。 |
+|defaultDuration|期間|サービスの既定の長さ。日数、時間、分、および秒で表されます。 たとえば、P11D23H59M 59.999999999999 S のようになります。 |
 |defaultLocation|[location](../resources/location.md)|サービスの既定の物理的な場所。|
 |既定の価格|2 行分|サービスの既定の通貨料金。|
 |defaultPriceType|string|サービスの既定の課金方法。 可能な値は、`undefined`、`fixedPrice`、`startingAt`、`hourly`、`free`、`priceVaries`、`callUs`、`notSet` です。|
-|defaultreminders|[bookingreminder](../resources/bookingreminder.md)コレクション|このサービスの予定に対する既定のアラームのセット。 このプロパティの値は、この**bookingservice**を ID で読み取る場合にのみ使用できます。|
-|description|String|サービスのテキストの説明。|
+|defaultReminders|[Bookingreminder](../resources/bookingreminder.md)コレクション|このサービスの予定に対する既定のアラームのセット。 このプロパティの値は、この**Bookingservice**を ID で読み取る場合にのみ使用できます。|
+|説明|String|サービスのテキストの説明。|
 |displayName|String|サービス名。|
 |emailAddress|String|電子メールアドレス|
-|id|String| 読み取り専用です。|
+|id|String| 読み取り専用。|
 |isHiddenFromCustomers|Boolean|True は、このサービスを予約にお客様が利用できないことを意味します。|
 |notes|String|このサービスに関する追加情報。|
-|postbuffer|期間|このサービスの予定が終了してから、次の顧客の予定が予約されるまでの時間。|
-|prebuffer|期間|このサービスの予定を開始できるようになるまでの時間。|
+|postBuffer|期間|このサービスの予定が終了してから、次の顧客の予定が予約されるまでの時間。|
+|preBuffer|期間|このサービスの予定を開始できるようになるまでの時間。|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|この種類のサービスの予定を作成および管理する方法を決定する一連のポリシー。|
 |staffMemberIds|String collection|このサービスを提供する[スタッフメンバー](../resources/bookingstaffmember.md)を表します。 |
 
@@ -91,6 +91,16 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_bookingservice-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_bookingservice-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -101,6 +111,9 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/bookingservice-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/bookingservice-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->
