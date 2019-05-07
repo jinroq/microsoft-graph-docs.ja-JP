@@ -4,34 +4,34 @@ ms.author: dspektor
 ms.date: 09/10/2017
 title: ファイルアクティビティ
 localization_priority: Normal
-ms.openlocfilehash: 9131146bc627f1f611e817d66dcb86a084fef26f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 87b46648f59f0b6c4f50390bd510edf54758af82
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33323021"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636724"
 ---
-# <a name="enumerate-activities-preview"></a><span data-ttu-id="9f6c7-102">アクティビティを列挙する (プレビュー)</span><span class="sxs-lookup"><span data-stu-id="9f6c7-102">Enumerate activities (preview)</span></span>
+# <a name="enumerate-activities-preview"></a><span data-ttu-id="0b771-102">アクティビティを列挙する (プレビュー)</span><span class="sxs-lookup"><span data-stu-id="0b771-102">Enumerate activities (preview)</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9f6c7-103">アイテムまたは階層の下で行われた最近の[アクティビティ](../resources/itemactivity.md)を一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="9f6c7-103">List the recent [activities](../resources/itemactivity.md) that took place on an item or under a hierarchy.</span></span>
+<span data-ttu-id="0b771-103">アイテムまたは階層の下で行われた最近の[アクティビティ](../resources/itemactivity.md)を一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="0b771-103">List the recent [activities](../resources/itemactivity.md) that took place on an item or under a hierarchy.</span></span>
 
-<span data-ttu-id="9f6c7-104">**メモ:** アクティビティは限定されたプレビューのため、まだすべてのテナントによる利用はできません。</span><span class="sxs-lookup"><span data-stu-id="9f6c7-104">**Note:** Activities is in a limited Preview and not yet available to all tenants.</span></span>
+<span data-ttu-id="0b771-104">**メモ:** アクティビティは限定されたプレビューのため、まだすべてのテナントによる利用はできません。</span><span class="sxs-lookup"><span data-stu-id="0b771-104">**Note:** Activities is in a limited Preview and not yet available to all tenants.</span></span>
 
 [activities]: ../resources/itemactivity.md
 
-## <a name="permissions"></a><span data-ttu-id="9f6c7-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="9f6c7-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="0b771-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="0b771-105">Permissions</span></span>
 
-<span data-ttu-id="9f6c7-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="9f6c7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="0b771-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0b771-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9f6c7-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="9f6c7-108">Permission type</span></span>                        | <span data-ttu-id="9f6c7-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="9f6c7-109">Permissions (from least to most privileged)</span></span>
+|<span data-ttu-id="0b771-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="0b771-108">Permission type</span></span>                        | <span data-ttu-id="0b771-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="0b771-109">Permissions (from least to most privileged)</span></span>
 |:--------------------------------------|:-------------------------------------
-|<span data-ttu-id="9f6c7-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="9f6c7-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="9f6c7-111">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9f6c7-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>
-|<span data-ttu-id="9f6c7-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="9f6c7-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9f6c7-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="9f6c7-113">Not supported.</span></span>
-|<span data-ttu-id="9f6c7-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="9f6c7-114">Application</span></span>                            | <span data-ttu-id="9f6c7-115">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9f6c7-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="0b771-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="0b771-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="0b771-111">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0b771-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="0b771-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="0b771-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0b771-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="0b771-113">Not supported.</span></span>
+|<span data-ttu-id="0b771-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="0b771-114">Application</span></span>                            | <span data-ttu-id="0b771-115">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0b771-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="9f6c7-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="9f6c7-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0b771-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="0b771-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -42,9 +42,9 @@ GET /sites/{site-id}/lists/{list-id}/activities
 GET /sites/{site-id}/lists/{list-id}/items/{item-id}/activities
 ```
 
-## <a name="example"></a><span data-ttu-id="9f6c7-117">例</span><span class="sxs-lookup"><span data-stu-id="9f6c7-117">Example</span></span>
+## <a name="example"></a><span data-ttu-id="0b771-117">例</span><span class="sxs-lookup"><span data-stu-id="0b771-117">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="9f6c7-118">要求</span><span class="sxs-lookup"><span data-stu-id="9f6c7-118">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="0b771-118">要求</span><span class="sxs-lookup"><span data-stu-id="0b771-118">Request</span></span>
 
 <!-- { "blockType": "request", "name": "list-activities" } -->
 
@@ -52,7 +52,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/activities
 GET https://graph.microsoft.com/beta/me/drive/activities
 ```
 
-#### <a name="response"></a><span data-ttu-id="9f6c7-119">応答</span><span class="sxs-lookup"><span data-stu-id="9f6c7-119">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="0b771-119">応答</span><span class="sxs-lookup"><span data-stu-id="0b771-119">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "Collection(microsoft.graph.itemActivity)", "truncated": true } -->
 
@@ -148,6 +148,16 @@ Content-type: application/json
     ]
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="0b771-120">SDK サンプルコード</span><span class="sxs-lookup"><span data-stu-id="0b771-120">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="0b771-121">Visual</span><span class="sxs-lookup"><span data-stu-id="0b771-121">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/list-activities-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="0b771-122">Java</span><span class="sxs-lookup"><span data-stu-id="0b771-122">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/list-activities-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!--
 {
@@ -156,6 +166,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "Site/List sites",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/activities-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/activities-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

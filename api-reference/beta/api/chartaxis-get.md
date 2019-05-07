@@ -1,55 +1,55 @@
 ---
-title: workbookChartAxis を取得する
-description: workbookChartAxis オブジェクトのプロパティとリレーションシップを取得します。
+title: WorkbookChartAxis を取得する
+description: WorkbookChartAxis オブジェクトのプロパティとリレーションシップを取得します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 5a07f899330167aa3e9fd4afc2989db5015b3ca6
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 2d169074b4803a214c38e98c250e53d45e6762be
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33327837"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33635667"
 ---
-# <a name="get-workbookchartaxis"></a><span data-ttu-id="b0c0b-103">workbookChartAxis を取得する</span><span class="sxs-lookup"><span data-stu-id="b0c0b-103">Get workbookChartAxis</span></span>
+# <a name="get-workbookchartaxis"></a><span data-ttu-id="0cc52-103">WorkbookChartAxis を取得する</span><span class="sxs-lookup"><span data-stu-id="0cc52-103">Get workbookChartAxis</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b0c0b-104">chartAxis オブジェクトのプロパティと関係を取得します。</span><span class="sxs-lookup"><span data-stu-id="b0c0b-104">Retrieve the properties and relationships of chartaxis object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="b0c0b-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="b0c0b-105">Permissions</span></span>
-<span data-ttu-id="b0c0b-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b0c0b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="0cc52-104">chartAxis オブジェクトのプロパティと関係を取得します。</span><span class="sxs-lookup"><span data-stu-id="0cc52-104">Retrieve the properties and relationships of chartaxis object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="0cc52-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="0cc52-105">Permissions</span></span>
+<span data-ttu-id="0cc52-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0cc52-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b0c0b-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="b0c0b-108">Permission type</span></span>      | <span data-ttu-id="b0c0b-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="b0c0b-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="0cc52-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="0cc52-108">Permission type</span></span>      | <span data-ttu-id="0cc52-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="0cc52-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="b0c0b-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="b0c0b-110">Delegated (work or school account)</span></span> | <span data-ttu-id="b0c0b-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b0c0b-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="b0c0b-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="b0c0b-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b0c0b-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b0c0b-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="b0c0b-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="b0c0b-114">Application</span></span> | <span data-ttu-id="b0c0b-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b0c0b-115">Not supported.</span></span> |
+|<span data-ttu-id="0cc52-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="0cc52-110">Delegated (work or school account)</span></span> | <span data-ttu-id="0cc52-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="0cc52-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="0cc52-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="0cc52-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0cc52-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="0cc52-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="0cc52-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="0cc52-114">Application</span></span> | <span data-ttu-id="0cc52-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="0cc52-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="b0c0b-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="b0c0b-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0cc52-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="0cc52-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis
 GET /workbook/worksheets/{id|name}/charts/{name}/axes/seriesaxis
 GET /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="b0c0b-117">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="b0c0b-117">Optional query parameters</span></span>
-<span data-ttu-id="b0c0b-118">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="b0c0b-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="0cc52-117">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="0cc52-117">Optional query parameters</span></span>
+<span data-ttu-id="0cc52-118">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="0cc52-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="b0c0b-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b0c0b-119">Request headers</span></span>
-| <span data-ttu-id="b0c0b-120">名前</span><span class="sxs-lookup"><span data-stu-id="b0c0b-120">Name</span></span>      |<span data-ttu-id="b0c0b-121">説明</span><span class="sxs-lookup"><span data-stu-id="b0c0b-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="0cc52-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="0cc52-119">Request headers</span></span>
+| <span data-ttu-id="0cc52-120">名前</span><span class="sxs-lookup"><span data-stu-id="0cc52-120">Name</span></span>      |<span data-ttu-id="0cc52-121">説明</span><span class="sxs-lookup"><span data-stu-id="0cc52-121">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="b0c0b-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="b0c0b-122">Authorization</span></span>  | <span data-ttu-id="b0c0b-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="b0c0b-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="b0c0b-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="b0c0b-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="b0c0b-p103">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="b0c0b-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="0cc52-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="0cc52-122">Authorization</span></span>  | <span data-ttu-id="0cc52-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="0cc52-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="0cc52-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="0cc52-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="0cc52-p103">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="0cc52-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="b0c0b-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="b0c0b-128">Request body</span></span>
-<span data-ttu-id="b0c0b-129">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="b0c0b-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="0cc52-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="0cc52-128">Request body</span></span>
+<span data-ttu-id="0cc52-129">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="0cc52-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="b0c0b-130">応答</span><span class="sxs-lookup"><span data-stu-id="b0c0b-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="0cc52-130">応答</span><span class="sxs-lookup"><span data-stu-id="0cc52-130">Response</span></span>
 
-<span data-ttu-id="b0c0b-131">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[workbookChartAxis](../resources/workbookchartaxis.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="b0c0b-131">If successful, this method returns a `200 OK` response code and [workbookChartAxis](../resources/workbookchartaxis.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="b0c0b-132">例</span><span class="sxs-lookup"><span data-stu-id="b0c0b-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="b0c0b-133">要求</span><span class="sxs-lookup"><span data-stu-id="b0c0b-133">Request</span></span>
-<span data-ttu-id="b0c0b-134">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="b0c0b-134">Here is an example of the request.</span></span>
+<span data-ttu-id="0cc52-131">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[workbookChartAxis](../resources/workbookchartaxis.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="0cc52-131">If successful, this method returns a `200 OK` response code and [workbookChartAxis](../resources/workbookchartaxis.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="0cc52-132">例</span><span class="sxs-lookup"><span data-stu-id="0cc52-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="0cc52-133">要求</span><span class="sxs-lookup"><span data-stu-id="0cc52-133">Request</span></span>
+<span data-ttu-id="0cc52-134">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="0cc52-134">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_chartaxis"
@@ -57,8 +57,8 @@ GET /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis
 ```http
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis
 ```
-##### <a name="response"></a><span data-ttu-id="b0c0b-135">応答</span><span class="sxs-lookup"><span data-stu-id="b0c0b-135">Response</span></span>
-<span data-ttu-id="b0c0b-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="b0c0b-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="0cc52-135">応答</span><span class="sxs-lookup"><span data-stu-id="0cc52-135">Response</span></span>
+<span data-ttu-id="0cc52-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="0cc52-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -75,6 +75,16 @@ Content-length: 64
   "minimum": "string"
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="0cc52-139">SDK サンプルコード</span><span class="sxs-lookup"><span data-stu-id="0cc52-139">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="0cc52-140">Visual</span><span class="sxs-lookup"><span data-stu-id="0cc52-140">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_chartaxis-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="0cc52-141">Java</span><span class="sxs-lookup"><span data-stu-id="0cc52-141">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_chartaxis-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -85,6 +95,9 @@ Content-length: 64
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/chartaxis-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/chartaxis-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

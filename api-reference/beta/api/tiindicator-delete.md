@@ -1,33 +1,33 @@
 ---
 title: 脅威インテリジェンス指標の削除
-description: tiindicator オブジェクトを削除します。
+description: TiIndicator オブジェクトを削除します。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: eac07b5d3e81e3e3098fb63bbf0be838c7d51b2c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: aa7ceefca5201930f97d5e7befb6a7cc43c5715a
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33330062"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33637599"
 ---
-# <a name="delete-threat-intelligence-indicator"></a><span data-ttu-id="f9187-103">脅威インテリジェンス指標の削除</span><span class="sxs-lookup"><span data-stu-id="f9187-103">Delete threat intelligence indicator</span></span>
+# <a name="delete-threat-intelligence-indicator"></a><span data-ttu-id="9cf38-103">脅威インテリジェンス指標の削除</span><span class="sxs-lookup"><span data-stu-id="9cf38-103">Delete threat intelligence indicator</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f9187-104">[tiindicator](../resources/tiindicator.md)オブジェクトを削除します。</span><span class="sxs-lookup"><span data-stu-id="f9187-104">Delete a [tiIndicator](../resources/tiindicator.md) object.</span></span>
+<span data-ttu-id="9cf38-104">[Tiindicator](../resources/tiindicator.md)オブジェクトを削除します。</span><span class="sxs-lookup"><span data-stu-id="9cf38-104">Delete a [tiIndicator](../resources/tiindicator.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f9187-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="f9187-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="9cf38-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="9cf38-105">Permissions</span></span>
 
-<span data-ttu-id="f9187-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f9187-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="9cf38-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="9cf38-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="f9187-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="f9187-108">Permission type</span></span>                        | <span data-ttu-id="f9187-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="f9187-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="9cf38-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="9cf38-108">Permission type</span></span>                        | <span data-ttu-id="9cf38-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="9cf38-109">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="f9187-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="f9187-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="f9187-111">ThreatIndicators.ReadWrite.OwnedBy</span><span class="sxs-lookup"><span data-stu-id="f9187-111">ThreatIndicators.ReadWrite.OwnedBy</span></span> |
-| <span data-ttu-id="f9187-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="f9187-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f9187-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f9187-113">Not supported.</span></span> |
-| <span data-ttu-id="f9187-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="f9187-114">Application</span></span>                            | <span data-ttu-id="f9187-115">ThreatIndicators.ReadWrite.OwnedBy</span><span class="sxs-lookup"><span data-stu-id="f9187-115">ThreatIndicators.ReadWrite.OwnedBy</span></span> |
+| <span data-ttu-id="9cf38-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="9cf38-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="9cf38-111">ThreatIndicators.ReadWrite.OwnedBy</span><span class="sxs-lookup"><span data-stu-id="9cf38-111">ThreatIndicators.ReadWrite.OwnedBy</span></span> |
+| <span data-ttu-id="9cf38-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="9cf38-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9cf38-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="9cf38-113">Not supported.</span></span> |
+| <span data-ttu-id="9cf38-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="9cf38-114">Application</span></span>                            | <span data-ttu-id="9cf38-115">ThreatIndicators.ReadWrite.OwnedBy</span><span class="sxs-lookup"><span data-stu-id="9cf38-115">ThreatIndicators.ReadWrite.OwnedBy</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f9187-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="f9187-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9cf38-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="9cf38-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -35,25 +35,25 @@ ms.locfileid: "33330062"
 DELETE /security/tiIndicators/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="f9187-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f9187-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="9cf38-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="9cf38-117">Request headers</span></span>
 
-| <span data-ttu-id="f9187-118">名前</span><span class="sxs-lookup"><span data-stu-id="f9187-118">Name</span></span>          | <span data-ttu-id="f9187-119">説明</span><span class="sxs-lookup"><span data-stu-id="f9187-119">Description</span></span>   |
+| <span data-ttu-id="9cf38-118">名前</span><span class="sxs-lookup"><span data-stu-id="9cf38-118">Name</span></span>          | <span data-ttu-id="9cf38-119">説明</span><span class="sxs-lookup"><span data-stu-id="9cf38-119">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="f9187-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="f9187-120">Authorization</span></span> | <span data-ttu-id="f9187-121">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="f9187-121">Bearer {code}</span></span> |
+| <span data-ttu-id="9cf38-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="9cf38-120">Authorization</span></span> | <span data-ttu-id="9cf38-121">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="9cf38-121">Bearer {code}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f9187-122">要求本文</span><span class="sxs-lookup"><span data-stu-id="f9187-122">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="9cf38-122">要求本文</span><span class="sxs-lookup"><span data-stu-id="9cf38-122">Request body</span></span>
 
-<span data-ttu-id="f9187-123">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="f9187-123">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="9cf38-123">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="9cf38-123">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f9187-124">応答</span><span class="sxs-lookup"><span data-stu-id="f9187-124">Response</span></span>
+## <a name="response"></a><span data-ttu-id="9cf38-124">応答</span><span class="sxs-lookup"><span data-stu-id="9cf38-124">Response</span></span>
 
-<span data-ttu-id="f9187-p102">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="f9187-p102">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="9cf38-p102">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="9cf38-p102">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="f9187-127">例</span><span class="sxs-lookup"><span data-stu-id="f9187-127">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="9cf38-127">例</span><span class="sxs-lookup"><span data-stu-id="9cf38-127">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="f9187-128">要求</span><span class="sxs-lookup"><span data-stu-id="f9187-128">Request</span></span>
+### <a name="request"></a><span data-ttu-id="9cf38-128">要求</span><span class="sxs-lookup"><span data-stu-id="9cf38-128">Request</span></span>
 
-<span data-ttu-id="f9187-129">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="f9187-129">The following is an example of the request.</span></span>
+<span data-ttu-id="9cf38-129">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="9cf38-129">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_tiindicator"
@@ -63,9 +63,9 @@ DELETE /security/tiIndicators/{id}
 DELETE https://graph.microsoft.com/beta/security/tiIndicators/{id}
 ```
 
-### <a name="response"></a><span data-ttu-id="f9187-130">応答</span><span class="sxs-lookup"><span data-stu-id="f9187-130">Response</span></span>
+### <a name="response"></a><span data-ttu-id="9cf38-130">応答</span><span class="sxs-lookup"><span data-stu-id="9cf38-130">Response</span></span>
 
-<span data-ttu-id="f9187-131">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="f9187-131">The following is an example of the response.</span></span>
+<span data-ttu-id="9cf38-131">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="9cf38-131">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -75,6 +75,16 @@ DELETE https://graph.microsoft.com/beta/security/tiIndicators/{id}
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="9cf38-132">SDK サンプルコード</span><span class="sxs-lookup"><span data-stu-id="9cf38-132">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="9cf38-133">Visual</span><span class="sxs-lookup"><span data-stu-id="9cf38-133">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/delete_tiindicator-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="9cf38-134">Java</span><span class="sxs-lookup"><span data-stu-id="9cf38-134">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/delete_tiindicator-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
@@ -83,5 +93,9 @@ HTTP/1.1 204 No Content
   "description": "Delete tiIndicator",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/tiindicator-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/tiindicator-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

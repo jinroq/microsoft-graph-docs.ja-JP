@@ -4,50 +4,50 @@ description: ユーザーの予定表グループを取得します。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: cb9a8115c3342cb6064b1eb67809de1ecba4b395
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: cc4737cfa0e34c1f1bc313d9b3bd93832beaea9b
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334931"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33637312"
 ---
-# <a name="list-calendargroups"></a><span data-ttu-id="5a1ac-103">List calendarGroups</span><span class="sxs-lookup"><span data-stu-id="5a1ac-103">List calendarGroups</span></span>
+# <a name="list-calendargroups"></a><span data-ttu-id="c6eda-103">List calendarGroups</span><span class="sxs-lookup"><span data-stu-id="c6eda-103">List calendarGroups</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5a1ac-104">ユーザーの予定表グループを取得します。</span><span class="sxs-lookup"><span data-stu-id="5a1ac-104">Get the user's calendar groups.</span></span>
-## <a name="permissions"></a><span data-ttu-id="5a1ac-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="5a1ac-105">Permissions</span></span>
-<span data-ttu-id="5a1ac-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5a1ac-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c6eda-104">ユーザーの予定表グループを取得します。</span><span class="sxs-lookup"><span data-stu-id="c6eda-104">Get the user's calendar groups.</span></span>
+## <a name="permissions"></a><span data-ttu-id="c6eda-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="c6eda-105">Permissions</span></span>
+<span data-ttu-id="c6eda-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c6eda-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="5a1ac-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="5a1ac-108">Permission type</span></span>      | <span data-ttu-id="5a1ac-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="5a1ac-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c6eda-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="c6eda-108">Permission type</span></span>      | <span data-ttu-id="c6eda-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="c6eda-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="5a1ac-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="5a1ac-110">Delegated (work or school account)</span></span> | <span data-ttu-id="5a1ac-111">Calendars.Read、Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5a1ac-111">Calendars.Read, Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="5a1ac-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="5a1ac-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5a1ac-113">Calendars.Read、Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5a1ac-113">Calendars.Read, Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="5a1ac-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="5a1ac-114">Application</span></span> | <span data-ttu-id="5a1ac-115">Calendars.Read、Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5a1ac-115">Calendars.Read, Calendars.ReadWrite</span></span> |
+|<span data-ttu-id="c6eda-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="c6eda-110">Delegated (work or school account)</span></span> | <span data-ttu-id="c6eda-111">Calendars.Read、Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c6eda-111">Calendars.Read, Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="c6eda-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="c6eda-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c6eda-113">Calendars.Read、Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c6eda-113">Calendars.Read, Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="c6eda-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="c6eda-114">Application</span></span> | <span data-ttu-id="c6eda-115">Calendars.Read、Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c6eda-115">Calendars.Read, Calendars.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="5a1ac-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="5a1ac-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c6eda-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="c6eda-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendarGroups
 GET /users/{id | userPrincipalName}/calendarGroups
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="5a1ac-117">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="5a1ac-117">Optional query parameters</span></span>
-<span data-ttu-id="5a1ac-118">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="5a1ac-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="5a1ac-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="5a1ac-119">Request headers</span></span>
-| <span data-ttu-id="5a1ac-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="5a1ac-120">Header</span></span>       | <span data-ttu-id="5a1ac-121">値</span><span class="sxs-lookup"><span data-stu-id="5a1ac-121">Value</span></span> |
+## <a name="optional-query-parameters"></a><span data-ttu-id="c6eda-117">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="c6eda-117">Optional query parameters</span></span>
+<span data-ttu-id="c6eda-118">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="c6eda-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="c6eda-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="c6eda-119">Request headers</span></span>
+| <span data-ttu-id="c6eda-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="c6eda-120">Header</span></span>       | <span data-ttu-id="c6eda-121">値</span><span class="sxs-lookup"><span data-stu-id="c6eda-121">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="5a1ac-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="5a1ac-122">Authorization</span></span>  | <span data-ttu-id="5a1ac-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="5a1ac-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="5a1ac-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="5a1ac-125">Content-Type</span></span>  | <span data-ttu-id="5a1ac-126">application/json</span><span class="sxs-lookup"><span data-stu-id="5a1ac-126">application/json</span></span>  |
+| <span data-ttu-id="c6eda-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="c6eda-122">Authorization</span></span>  | <span data-ttu-id="c6eda-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="c6eda-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="c6eda-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="c6eda-125">Content-Type</span></span>  | <span data-ttu-id="c6eda-126">application/json</span><span class="sxs-lookup"><span data-stu-id="c6eda-126">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="5a1ac-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="5a1ac-127">Request body</span></span>
-<span data-ttu-id="5a1ac-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="5a1ac-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c6eda-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="c6eda-127">Request body</span></span>
+<span data-ttu-id="c6eda-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="c6eda-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="5a1ac-129">応答</span><span class="sxs-lookup"><span data-stu-id="5a1ac-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c6eda-129">応答</span><span class="sxs-lookup"><span data-stu-id="c6eda-129">Response</span></span>
 
-<span data-ttu-id="5a1ac-130">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [CalendarGroup](../resources/calendargroup.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="5a1ac-130">If successful, this method returns a `200 OK` response code and collection of [CalendarGroup](../resources/calendargroup.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="5a1ac-131">例</span><span class="sxs-lookup"><span data-stu-id="5a1ac-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="5a1ac-132">要求</span><span class="sxs-lookup"><span data-stu-id="5a1ac-132">Request</span></span>
-<span data-ttu-id="5a1ac-133">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="5a1ac-133">Here is an example of the request.</span></span>
+<span data-ttu-id="c6eda-130">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [CalendarGroup](../resources/calendargroup.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="c6eda-130">If successful, this method returns a `200 OK` response code and collection of [CalendarGroup](../resources/calendargroup.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="c6eda-131">例</span><span class="sxs-lookup"><span data-stu-id="c6eda-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="c6eda-132">要求</span><span class="sxs-lookup"><span data-stu-id="c6eda-132">Request</span></span>
+<span data-ttu-id="c6eda-133">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="c6eda-133">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_calendargroups"
@@ -55,8 +55,8 @@ GET /users/{id | userPrincipalName}/calendarGroups
 ```http
 GET https://graph.microsoft.com/beta/me/calendarGroups
 ```
-##### <a name="response"></a><span data-ttu-id="5a1ac-134">応答</span><span class="sxs-lookup"><span data-stu-id="5a1ac-134">Response</span></span>
-<span data-ttu-id="5a1ac-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="5a1ac-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="c6eda-134">応答</span><span class="sxs-lookup"><span data-stu-id="c6eda-134">Response</span></span>
+<span data-ttu-id="c6eda-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="c6eda-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -79,6 +79,16 @@ Content-length: 155
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="c6eda-138">SDK サンプルコード</span><span class="sxs-lookup"><span data-stu-id="c6eda-138">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="c6eda-139">Visual</span><span class="sxs-lookup"><span data-stu-id="c6eda-139">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_calendargroups-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="c6eda-140">Java</span><span class="sxs-lookup"><span data-stu-id="c6eda-140">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_calendargroups-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -89,6 +99,9 @@ Content-length: 155
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-list-calendargroups.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/user-list-calendargroups.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

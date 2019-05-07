@@ -4,30 +4,30 @@ description: 新しい securityAction オブジェクトを作成します。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 2d8b957df914225231623f0edbc633182393dff8
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: aa105383597c6d97e1a61d95dc9593b21547a0ee
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33336032"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638761"
 ---
-# <a name="create-securityaction"></a><span data-ttu-id="0d3f3-103">securityAction を作成する</span><span class="sxs-lookup"><span data-stu-id="0d3f3-103">Create securityAction</span></span>
+# <a name="create-securityaction"></a><span data-ttu-id="acc98-103">securityAction を作成する</span><span class="sxs-lookup"><span data-stu-id="acc98-103">Create securityAction</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="0d3f3-104">新しい[securityAction](../resources/securityaction.md)オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="0d3f3-104">Create a new [securityAction](../resources/securityaction.md) object.</span></span>
+<span data-ttu-id="acc98-104">新しい[securityAction](../resources/securityaction.md)オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="acc98-104">Create a new [securityAction](../resources/securityaction.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="0d3f3-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="0d3f3-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="acc98-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="acc98-105">Permissions</span></span>
 
-<span data-ttu-id="0d3f3-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0d3f3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="acc98-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="acc98-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="0d3f3-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="0d3f3-108">Permission type</span></span>                        | <span data-ttu-id="0d3f3-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="0d3f3-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="acc98-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="acc98-108">Permission type</span></span>                        | <span data-ttu-id="acc98-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="acc98-109">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="0d3f3-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="0d3f3-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="0d3f3-111">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="0d3f3-111">Not supported.</span></span> |
-| <span data-ttu-id="0d3f3-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="0d3f3-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0d3f3-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="0d3f3-113">Not supported.</span></span> |
-| <span data-ttu-id="0d3f3-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="0d3f3-114">Application</span></span>                            | <span data-ttu-id="0d3f3-115">SecurityActions.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0d3f3-115">SecurityActions.ReadWrite.All</span></span> |
+| <span data-ttu-id="acc98-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="acc98-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="acc98-111">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="acc98-111">Not supported.</span></span> |
+| <span data-ttu-id="acc98-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="acc98-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="acc98-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="acc98-113">Not supported.</span></span> |
+| <span data-ttu-id="acc98-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="acc98-114">Application</span></span>                            | <span data-ttu-id="acc98-115">SecurityActions.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="acc98-115">SecurityActions.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="0d3f3-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="0d3f3-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="acc98-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="acc98-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -35,25 +35,25 @@ ms.locfileid: "33336032"
 POST /security/securityActions
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="0d3f3-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="0d3f3-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="acc98-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="acc98-117">Request headers</span></span>
 
-| <span data-ttu-id="0d3f3-118">名前</span><span class="sxs-lookup"><span data-stu-id="0d3f3-118">Name</span></span>          | <span data-ttu-id="0d3f3-119">説明</span><span class="sxs-lookup"><span data-stu-id="0d3f3-119">Description</span></span>   |
+| <span data-ttu-id="acc98-118">名前</span><span class="sxs-lookup"><span data-stu-id="acc98-118">Name</span></span>          | <span data-ttu-id="acc98-119">説明</span><span class="sxs-lookup"><span data-stu-id="acc98-119">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="0d3f3-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="0d3f3-120">Authorization</span></span> | <span data-ttu-id="0d3f3-121">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="0d3f3-121">Bearer {code}</span></span> |
+| <span data-ttu-id="acc98-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="acc98-120">Authorization</span></span> | <span data-ttu-id="acc98-121">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="acc98-121">Bearer {code}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="0d3f3-122">要求本文</span><span class="sxs-lookup"><span data-stu-id="0d3f3-122">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="acc98-122">要求本文</span><span class="sxs-lookup"><span data-stu-id="acc98-122">Request body</span></span>
 
-<span data-ttu-id="0d3f3-123">要求本文で、 [securityAction](../resources/securityaction.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="0d3f3-123">In the request body, supply a JSON representation of a [securityAction](../resources/securityaction.md) object.</span></span>
+<span data-ttu-id="acc98-123">要求本文で、 [securityAction](../resources/securityaction.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="acc98-123">In the request body, supply a JSON representation of a [securityAction](../resources/securityaction.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="0d3f3-124">応答</span><span class="sxs-lookup"><span data-stu-id="0d3f3-124">Response</span></span>
+## <a name="response"></a><span data-ttu-id="acc98-124">応答</span><span class="sxs-lookup"><span data-stu-id="acc98-124">Response</span></span>
 
-<span data-ttu-id="0d3f3-125">成功した場合、この`201 Created`メソッドは応答コードと、応答本文で[securityAction](../resources/securityaction.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="0d3f3-125">If successful, this method returns `201 Created` response code and a [securityAction](../resources/securityaction.md) object in the response body.</span></span>
+<span data-ttu-id="acc98-125">成功した場合、この`201 Created`メソッドは応答コードと、応答本文で[securityAction](../resources/securityaction.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="acc98-125">If successful, this method returns `201 Created` response code and a [securityAction](../resources/securityaction.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="0d3f3-126">例</span><span class="sxs-lookup"><span data-stu-id="0d3f3-126">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="acc98-126">例</span><span class="sxs-lookup"><span data-stu-id="acc98-126">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="0d3f3-127">要求</span><span class="sxs-lookup"><span data-stu-id="0d3f3-127">Request</span></span>
+### <a name="request"></a><span data-ttu-id="acc98-127">要求</span><span class="sxs-lookup"><span data-stu-id="acc98-127">Request</span></span>
 
-<span data-ttu-id="0d3f3-128">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="0d3f3-128">The following is an example of the request.</span></span>
+<span data-ttu-id="acc98-128">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="acc98-128">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_securityaction_from_security"
@@ -79,12 +79,12 @@ Content-type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="0d3f3-129">応答</span><span class="sxs-lookup"><span data-stu-id="0d3f3-129">Response</span></span>
+### <a name="response"></a><span data-ttu-id="acc98-129">応答</span><span class="sxs-lookup"><span data-stu-id="acc98-129">Response</span></span>
 
-<span data-ttu-id="0d3f3-130">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="0d3f3-130">The following is an example of the response.</span></span>
+<span data-ttu-id="acc98-130">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="acc98-130">The following is an example of the response.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="0d3f3-131">ここに示す response オブジェクトは読みやすいように短縮される場合があります。</span><span class="sxs-lookup"><span data-stu-id="0d3f3-131">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="0d3f3-132">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="0d3f3-132">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="acc98-131">ここに示す response オブジェクトは読みやすいように短縮される場合があります。</span><span class="sxs-lookup"><span data-stu-id="acc98-131">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="acc98-132">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="acc98-132">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -118,6 +118,16 @@ Content-type: application/json
     ]
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="acc98-133">SDK サンプルコード</span><span class="sxs-lookup"><span data-stu-id="acc98-133">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="acc98-134">Visual</span><span class="sxs-lookup"><span data-stu-id="acc98-134">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_securityaction_from_security-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="acc98-135">Java</span><span class="sxs-lookup"><span data-stu-id="acc98-135">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_securityaction_from_security-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
@@ -126,5 +136,9 @@ Content-type: application/json
   "description": "Create securityAction",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/securityactions-post.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/securityactions-post.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

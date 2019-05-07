@@ -1,0 +1,131 @@
+### YamlMime:YamlDocument
+documentType: LandingData
+title: Microsoft Graph 認証の概要
+metadata:
+  title: Microsoft Graph 認証の概要
+  description: OAuth 2.0 の基礎と、Microsoft Graph API を呼び出すためにトークンを取得する方法について説明します。
+  services: active-directory
+  author: danieldobalian
+  manager: CelesteDG
+  ms.service: active-directory
+  ms.subservice: develop
+  ms.tgt_pltfrm: na
+  ms.devlang: na
+  ms.topic: landing-page
+  ms.date: 04/26/2019
+  ms.author: dadobali
+abstract:
+  description: Microsoft Graph からセキュリティで保護されたデータにアクセスするためのアクセス許可を認証および操作する方法について説明します。 次のドキュメントを参照して、Microsoft Graph 開発をサポートする Microsoft identity platform のアプリ登録、認証ライブラリ、承認、およびその他の部分について説明します。
+  aside:
+    image:
+      alt: null
+      height: 110
+      src: /graph/images/appreg-video.png
+      width: 250
+    title: 'Microsoft Graph とアプリの登録 (7:29)'
+    href: 'https://www.youtube.com/watch?v=93j0MmRruFo'
+    width: 250
+sections:
+  - items:
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 2
+        items:
+          - href: /graph/auth/auth-register-app-v2
+            html: <p>アプリケーションを登録して、Microsoft Graph の旅を開始します。</p>
+            image:
+              src: ../images/index/i_get-started.svg
+            title: アプリの登録
+          - href: /graph/auth/auth-concepts
+            html: <p>OAuth 2.0 の基礎と Microsoft Graph での使用方法について説明します。</p>
+            image:
+              src: ../images/index/i_overview.svg
+            title: 認証の基礎
+          - href: /graph/permissions-reference
+            html: <p>Microsoft Graph のスコープ & アプリのアクセス許可の詳細について説明します。</p>
+            image:
+              src: ../images/index/i_code-edit.svg
+            title: アクセス許可 & スコープ
+          - href: /graph/auth/auth-cloudsolutionprovider
+            html: <p>アプリがパートナー管理データにアクセスできるようにします。</p>
+            image:
+              src: ../images/index/i_api.svg
+            title: クラウドソリューションプロバイダー (CSP)
+  - title: 認証 Sdk
+    items:
+      - type: paragraph
+        text: Microsoft Graph との統合時に auth SDK を使用すると、記述する必要があるコードが簡素化され、開発者は快適なエクスペリエンスの構築に専念することができます。 Microsoft Authentication Library (MSAL) を使用して最適な環境を提供するか、または推奨されるオープンソースの代替手段の1つを選択します。
+      - type: table
+        style: dataMatrix
+        columns:
+          - image:
+              src: ../images/index/logo_android.svg
+            title: Android
+          - image:
+              src: ../images/index/angular.svg
+            title: Angular
+          - image:
+              src: ../images/index/logo_NET.svg
+            title: ASP.NET
+          - image:
+              src: ../images/index/logo_ios.svg
+            title: iOS
+          - image:
+              src: ../images/index/logo_java.svg
+            title: Java
+          - image:
+              src: ../images/index/logo_js.svg
+            title: JavaScript
+          - image:
+              src: ../images/index/logo_nodejs.svg
+            title: Node.js
+          - image:
+              src: ../images/index/logo_php.svg
+            title: PHP
+          - image:
+              src: ../images/index/logo_python.svg
+            title: Python
+          - image:
+              src: ../images/index/logo_ruby.svg
+            title: Ruby
+          - image:
+              src: ../images/index/logo_windows.svg
+            title: UWP
+          - image:
+              src: ../images/index/logo_xamarin.svg
+            title: Xamarin
+          - image:
+              src: ../images/index/logo_reactnative.svg
+            title: ネイティブに反応する
+        rows:
+          - title: Microsoft
+            values:
+              - href: 'https://github.com/AzureAD/microsoft-authentication-library-for-android'
+              - href: 'https://github.com/AzureAD/microsoft-authentication-library-for-js'
+              - href: 'https://github.com/AzureAD/microsoft-authentication-library-for-dotnet'
+              - href: 'https://github.com/AzureAD/microsoft-authentication-library-for-objc'
+              - href: null
+              - href: 'https://github.com/AzureAD/microsoft-authentication-library-for-js'
+              - href: null
+              - href: null
+              - href: null
+              - href: null
+              - href: 'https://github.com/AzureAD/microsoft-authentication-library-for-dotnet'
+              - href: 'https://github.com/AzureAD/microsoft-authentication-library-for-dotnet'
+              - href: null
+          - title: オープンソース
+            values:
+              - href: 'https://github.com/openid/AppAuth-Android'
+              - href: null
+              - href: null
+              - href: 'https://github.com/openid/AppAuth-iOS'
+              - href: 'https://github.com/scribejava/scribejava'
+              - href: 'https://adodson.com/hello.js/'
+              - href: 'https://github.com/panva/node-openid-client'
+              - href: 'https://github.com/thephpleague/oauth2-client'
+              - href: 'https://github.com/requests/requests-oauthlib'
+              - href: 'https://github.com/omniauth/omniauth/wiki'
+              - href: null
+              - href: null
+              - href: 'https://github.com/FormidableLabs/react-native-app-auth'

@@ -4,52 +4,52 @@ description: tablerow オブジェクトのプロパティを更新します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: c115fbb455b2e0dae6315682d284f97d83f0519f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 962db8dceb23cfb89ef5e7d3e2508167c846ff82
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33330505"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33637644"
 ---
-# <a name="update-tablerow"></a><span data-ttu-id="1c0d3-103">tablerow を更新する　</span><span class="sxs-lookup"><span data-stu-id="1c0d3-103">Update tablerow</span></span>
+# <a name="update-tablerow"></a><span data-ttu-id="a7c22-103">tablerow を更新する　</span><span class="sxs-lookup"><span data-stu-id="a7c22-103">Update tablerow</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1c0d3-104">tablerow オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="1c0d3-104">Update the properties of tablerow object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="1c0d3-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="1c0d3-105">Permissions</span></span>
-<span data-ttu-id="1c0d3-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1c0d3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a7c22-104">tablerow オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="a7c22-104">Update the properties of tablerow object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="a7c22-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="a7c22-105">Permissions</span></span>
+<span data-ttu-id="a7c22-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a7c22-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1c0d3-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="1c0d3-108">Permission type</span></span>      | <span data-ttu-id="1c0d3-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="1c0d3-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a7c22-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="a7c22-108">Permission type</span></span>      | <span data-ttu-id="a7c22-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="a7c22-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1c0d3-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="1c0d3-110">Delegated (work or school account)</span></span> | <span data-ttu-id="1c0d3-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1c0d3-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="1c0d3-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="1c0d3-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1c0d3-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1c0d3-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="1c0d3-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="1c0d3-114">Application</span></span> | <span data-ttu-id="1c0d3-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="1c0d3-115">Not supported.</span></span> |
+|<span data-ttu-id="a7c22-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="a7c22-110">Delegated (work or school account)</span></span> | <span data-ttu-id="a7c22-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a7c22-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="a7c22-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="a7c22-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a7c22-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a7c22-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="a7c22-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="a7c22-114">Application</span></span> | <span data-ttu-id="a7c22-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a7c22-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1c0d3-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="1c0d3-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a7c22-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="a7c22-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/tables/{id|name}/rows/{index}
 PATCH /workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="1c0d3-117">オプションの要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="1c0d3-117">Optional request headers</span></span>
-| <span data-ttu-id="1c0d3-118">名前</span><span class="sxs-lookup"><span data-stu-id="1c0d3-118">Name</span></span>       | <span data-ttu-id="1c0d3-119">説明</span><span class="sxs-lookup"><span data-stu-id="1c0d3-119">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="a7c22-117">オプションの要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="a7c22-117">Optional request headers</span></span>
+| <span data-ttu-id="a7c22-118">名前</span><span class="sxs-lookup"><span data-stu-id="a7c22-118">Name</span></span>       | <span data-ttu-id="a7c22-119">説明</span><span class="sxs-lookup"><span data-stu-id="a7c22-119">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="1c0d3-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="1c0d3-120">Authorization</span></span>  | <span data-ttu-id="1c0d3-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="1c0d3-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="1c0d3-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="1c0d3-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="1c0d3-p103">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="1c0d3-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="a7c22-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="a7c22-120">Authorization</span></span>  | <span data-ttu-id="a7c22-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="a7c22-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="a7c22-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="a7c22-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="a7c22-p103">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="a7c22-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="1c0d3-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="1c0d3-126">Request body</span></span>
-<span data-ttu-id="1c0d3-p104">要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="1c0d3-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a7c22-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="a7c22-126">Request body</span></span>
+<span data-ttu-id="a7c22-p104">要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="a7c22-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="1c0d3-130">プロパティ</span><span class="sxs-lookup"><span data-stu-id="1c0d3-130">Property</span></span>     | <span data-ttu-id="1c0d3-131">型</span><span class="sxs-lookup"><span data-stu-id="1c0d3-131">Type</span></span>   |<span data-ttu-id="1c0d3-132">説明</span><span class="sxs-lookup"><span data-stu-id="1c0d3-132">Description</span></span>|
+| <span data-ttu-id="a7c22-130">プロパティ</span><span class="sxs-lookup"><span data-stu-id="a7c22-130">Property</span></span>     | <span data-ttu-id="a7c22-131">型</span><span class="sxs-lookup"><span data-stu-id="a7c22-131">Type</span></span>   |<span data-ttu-id="a7c22-132">説明</span><span class="sxs-lookup"><span data-stu-id="a7c22-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="1c0d3-133">values</span><span class="sxs-lookup"><span data-stu-id="1c0d3-133">values</span></span>|<span data-ttu-id="1c0d3-134">Json</span><span class="sxs-lookup"><span data-stu-id="1c0d3-134">Json</span></span>|<span data-ttu-id="1c0d3-p105">指定した範囲の Raw 値を表します。返されるデータの型は、文字列、数値、またはブール値のいずれかになります。エラーが含まれているセルは、エラー文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="1c0d3-p105">Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.</span></span>|
+|<span data-ttu-id="a7c22-133">values</span><span class="sxs-lookup"><span data-stu-id="a7c22-133">values</span></span>|<span data-ttu-id="a7c22-134">Json</span><span class="sxs-lookup"><span data-stu-id="a7c22-134">Json</span></span>|<span data-ttu-id="a7c22-p105">指定した範囲の Raw 値を表します。返されるデータの型は、文字列、数値、またはブール値のいずれかになります。エラーが含まれているセルは、エラー文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="a7c22-p105">Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="1c0d3-138">応答</span><span class="sxs-lookup"><span data-stu-id="1c0d3-138">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a7c22-138">応答</span><span class="sxs-lookup"><span data-stu-id="a7c22-138">Response</span></span>
 
-<span data-ttu-id="1c0d3-139">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で、更新された[workbookTableRow](../resources/workbooktablerow.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="1c0d3-139">If successful, this method returns a `200 OK` response code and updated [workbookTableRow](../resources/workbooktablerow.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="1c0d3-140">例</span><span class="sxs-lookup"><span data-stu-id="1c0d3-140">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="1c0d3-141">要求</span><span class="sxs-lookup"><span data-stu-id="1c0d3-141">Request</span></span>
-<span data-ttu-id="1c0d3-142">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="1c0d3-142">Here is an example of the request.</span></span>
+<span data-ttu-id="a7c22-139">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で、更新された[workbookTableRow](../resources/workbooktablerow.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="a7c22-139">If successful, this method returns a `200 OK` response code and updated [workbookTableRow](../resources/workbooktablerow.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="a7c22-140">例</span><span class="sxs-lookup"><span data-stu-id="a7c22-140">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="a7c22-141">要求</span><span class="sxs-lookup"><span data-stu-id="a7c22-141">Request</span></span>
+<span data-ttu-id="a7c22-142">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="a7c22-142">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_tablerow"
@@ -64,8 +64,8 @@ Content-length: 45
   "values": "values-value"
 }
 ```
-##### <a name="response"></a><span data-ttu-id="1c0d3-143">応答</span><span class="sxs-lookup"><span data-stu-id="1c0d3-143">Response</span></span>
-<span data-ttu-id="1c0d3-p106">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="1c0d3-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="a7c22-143">応答</span><span class="sxs-lookup"><span data-stu-id="a7c22-143">Response</span></span>
+<span data-ttu-id="a7c22-p106">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="a7c22-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -81,6 +81,16 @@ Content-length: 45
   "values": "values-value"
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="a7c22-147">SDK サンプルコード</span><span class="sxs-lookup"><span data-stu-id="a7c22-147">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="a7c22-148">Visual</span><span class="sxs-lookup"><span data-stu-id="a7c22-148">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_tablerow-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a7c22-149">Java</span><span class="sxs-lookup"><span data-stu-id="a7c22-149">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_tablerow-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -91,6 +101,9 @@ Content-length: 45
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/tablerow-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/tablerow-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

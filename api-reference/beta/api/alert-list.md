@@ -1,33 +1,33 @@
 ---
 title: アラートを一覧表示する
-description: alert オブジェクトの一覧を取得します。
+description: アラート オブジェクトのリストを取得します。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: ab9ec3c42b0a46279e43660e241fb3cde52e83a9
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: e71b22ae1e60aa2f70bafd4dcd54805e46efdddf
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322695"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636556"
 ---
-# <a name="list-alerts"></a><span data-ttu-id="e4bf4-103">アラートを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="e4bf4-103">List alerts</span></span>
+# <a name="list-alerts"></a><span data-ttu-id="5590c-103">アラートを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="5590c-103">List alerts</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e4bf4-104">[alert](../resources/alert.md)オブジェクトの一覧を取得します。</span><span class="sxs-lookup"><span data-stu-id="e4bf4-104">Retrieve a list of [alert](../resources/alert.md) objects.</span></span>
+<span data-ttu-id="5590c-104">[アラート](../resources/alert.md) オブジェクトのリストを取得します。</span><span class="sxs-lookup"><span data-stu-id="5590c-104">Retrieve a list of [alert](../resources/alert.md) objects.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e4bf4-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="e4bf4-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="5590c-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="5590c-105">Permissions</span></span>
 
-<span data-ttu-id="e4bf4-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e4bf4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="5590c-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5590c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e4bf4-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="e4bf4-108">Permission type</span></span>      | <span data-ttu-id="e4bf4-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="e4bf4-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="5590c-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="5590c-108">Permission type</span></span>      | <span data-ttu-id="5590c-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="5590c-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e4bf4-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="e4bf4-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="e4bf4-111">securityevents. all、securityevents、ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e4bf4-111">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span>  |
-|<span data-ttu-id="e4bf4-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="e4bf4-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="e4bf4-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e4bf4-113">Not supported.</span></span>  |
-|<span data-ttu-id="e4bf4-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="e4bf4-114">Application</span></span> | <span data-ttu-id="e4bf4-115">securityevents. all、securityevents、ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e4bf4-115">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span> |
+|<span data-ttu-id="5590c-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="5590c-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="5590c-111">SecurityEvents.Read.All、SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5590c-111">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span>  |
+|<span data-ttu-id="5590c-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="5590c-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="5590c-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="5590c-113">Not supported.</span></span>  |
+|<span data-ttu-id="5590c-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="5590c-114">Application</span></span> | <span data-ttu-id="5590c-115">SecurityEvents.Read.All、SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5590c-115">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e4bf4-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="e4bf4-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5590c-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="5590c-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -39,40 +39,40 @@ GET /security/alerts?$filter={property} eq '{property-value}'&$top=5
 GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{property-value}'
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="e4bf4-117">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="e4bf4-117">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="5590c-117">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="5590c-117">Optional query parameters</span></span>
 
-<span data-ttu-id="e4bf4-118">このメソッドは、応答をカスタマイズするために、次の[OData クエリパラメーター](/graph/query-parameters)をサポートしています。</span><span class="sxs-lookup"><span data-stu-id="e4bf4-118">This method supports the following [OData query parameters](/graph/query-parameters) to help customize the response:</span></span>
+<span data-ttu-id="5590c-118">このメソッドは、応答をカスタマイズするために次の[OData クエリ パラメーター](/graph/query-parameters)をサポートします:</span><span class="sxs-lookup"><span data-stu-id="5590c-118">This method supports the following [OData query parameters](/graph/query-parameters) to help customize the response:</span></span>
 
 - `$count`
 - `$filter`
 - `$orderby`
 - `$select`
 - `$skip`
-- <span data-ttu-id="e4bf4-119">`$top`は、各セキュリティ API プロバイダーから集約された上位の結果を返します。</span><span class="sxs-lookup"><span data-stu-id="e4bf4-119">`$top` will return the aggregated top results from each security API provider.</span></span>
+- <span data-ttu-id="5590c-119">`$top` は、各セキュリティ API プロバイダーから集計された上位の結果を返します。</span><span class="sxs-lookup"><span data-stu-id="5590c-119">`$top` will return the aggregated top results from each security API provider.</span></span>
 
-<span data-ttu-id="e4bf4-120">代替プロパティセットを返すには、OData `$select`クエリパラメーターを使用して、必要な**警告**プロパティのセットを指定します。</span><span class="sxs-lookup"><span data-stu-id="e4bf4-120">To return an alternative property set, use the OData `$select` query parameter to specify the set of **alert** properties that you want.</span></span>  <span data-ttu-id="e4bf4-121">たとえば、**担当者**、**カテゴリ**、および**重要度**のプロパティを取得するには、クエリ`$select=assignedTo,category,severity`に以下を追加します。</span><span class="sxs-lookup"><span data-stu-id="e4bf4-121">For example, to return the **assignedTo**, **category**, and **severity** properties, add the following to your query: `$select=assignedTo,category,severity`.</span></span>
+<span data-ttu-id="5590c-120">別のプロパティ セットを返すには、OData `$select` クエリ パラメーターを使用し、目的の**アラート**のプロパティのセットを指定します。</span><span class="sxs-lookup"><span data-stu-id="5590c-120">To return an alternative property set, use the OData `$select` query parameter to specify the set of **alert** properties that you want.</span></span>  <span data-ttu-id="5590c-121">例えば、**assignedTo**、**カテゴリ**、**重要度** プロパティを返すには、次をクエリに追加します: `$select=assignedTo,category,severity`。</span><span class="sxs-lookup"><span data-stu-id="5590c-121">For example, to return the **assignedTo**, **category**, and **severity** properties, add the following to your query: `$select=assignedTo,category,severity`.</span></span>
 
-> <span data-ttu-id="e4bf4-122">**注:**`$top`には1000警告の制限があり、の`$top`  +  `$skip`組み合わせは6000通知を超えることはできません。</span><span class="sxs-lookup"><span data-stu-id="e4bf4-122">**Note:** `$top` has a limit of 1000 alerts, and a combination of `$top` + `$skip` cannot exceed 6000 alerts.</span></span> <span data-ttu-id="e4bf4-123">たとえば、 `/security/alerts?$top=10&$skip=5990`は`200 OK`応答コード`/security/alerts?$top=10&$skip=5991`を返しますが、応答コードを`400 Bad Request`返します。</span><span class="sxs-lookup"><span data-stu-id="e4bf4-123">For example, `/security/alerts?$top=10&$skip=5990` will return a `200 OK` response code, but `/security/alerts?$top=10&$skip=5991` will return a `400 Bad Request` response code.</span></span>  <span data-ttu-id="e4bf4-124">詳細については、「 [Microsoft Graph セキュリティ API のエラー応答](../resources/security-error-codes.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e4bf4-124">For more information, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).</span></span>
+> <span data-ttu-id="5590c-122">**注:** `$top` には1000件のアラートという上限があり、`$top`  +  `$skip` の組み合わせは6000件のアラートを超えることはできません。</span><span class="sxs-lookup"><span data-stu-id="5590c-122">**Note:** `$top` has a limit of 1000 alerts, and a combination of `$top` + `$skip` cannot exceed 6000 alerts.</span></span> <span data-ttu-id="5590c-123">例えば、`/security/alerts?$top=10&$skip=5990` では `200 OK` 応答コードを返しますが、`/security/alerts?$top=10&$skip=5991` では `400 Bad Request` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="5590c-123">For example, `/security/alerts?$top=10&$skip=5990` will return a `200 OK` response code, but `/security/alerts?$top=10&$skip=5991` will return a `400 Bad Request` response code.</span></span>  <span data-ttu-id="5590c-124">詳細については、[Microsoft グラフ セキュリティ API のエラー応答](../resources/security-error-codes.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5590c-124">For more information, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="e4bf4-125">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="e4bf4-125">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="5590c-125">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="5590c-125">Request headers</span></span>
 
-| <span data-ttu-id="e4bf4-126">名前</span><span class="sxs-lookup"><span data-stu-id="e4bf4-126">Name</span></span>      |<span data-ttu-id="e4bf4-127">説明</span><span class="sxs-lookup"><span data-stu-id="e4bf4-127">Description</span></span>|
+| <span data-ttu-id="5590c-126">名前</span><span class="sxs-lookup"><span data-stu-id="5590c-126">Name</span></span>      |<span data-ttu-id="5590c-127">説明</span><span class="sxs-lookup"><span data-stu-id="5590c-127">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="e4bf4-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="e4bf4-128">Authorization</span></span>  | <span data-ttu-id="e4bf4-129">ベアラー {code}。</span><span class="sxs-lookup"><span data-stu-id="e4bf4-129">Bearer {code}.</span></span> <span data-ttu-id="e4bf4-130">必須です。</span><span class="sxs-lookup"><span data-stu-id="e4bf4-130">Required.</span></span>|
+| <span data-ttu-id="5590c-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="5590c-128">Authorization</span></span>  | <span data-ttu-id="5590c-129">ベアラー {code}。</span><span class="sxs-lookup"><span data-stu-id="5590c-129">Bearer {code}.</span></span> <span data-ttu-id="5590c-130">必須です。</span><span class="sxs-lookup"><span data-stu-id="5590c-130">Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="e4bf4-131">要求本文</span><span class="sxs-lookup"><span data-stu-id="e4bf4-131">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="5590c-131">要求本文</span><span class="sxs-lookup"><span data-stu-id="5590c-131">Request body</span></span>
 
-<span data-ttu-id="e4bf4-132">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="e4bf4-132">Do not supply a request body for this method.</span></span> <span data-ttu-id="e4bf4-133">要求本文は無視されます。</span><span class="sxs-lookup"><span data-stu-id="e4bf4-133">The request body will be ignored.</span></span>
+<span data-ttu-id="5590c-132">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="5590c-132">Do not supply a request body for this method.</span></span> <span data-ttu-id="5590c-133">要求本文は無視されます。</span><span class="sxs-lookup"><span data-stu-id="5590c-133">The request body will be ignored.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e4bf4-134">応答</span><span class="sxs-lookup"><span data-stu-id="e4bf4-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="5590c-134">応答</span><span class="sxs-lookup"><span data-stu-id="5590c-134">Response</span></span>
 
-<span data-ttu-id="e4bf4-135">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で**alert**オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="e4bf4-135">If successful, this method returns a `200 OK` response code and collection of **alert** objects in the response body.</span></span> <span data-ttu-id="e4bf4-136">2xx または404以外の状態コードがプロバイダーから返された場合、またはプロバイダーがタイムアウトになった場合は`206 Partial Content` 、応答は、警告ヘッダー内のプロバイダーの応答と共に状態コードになります。</span><span class="sxs-lookup"><span data-stu-id="e4bf4-136">If a status code other than 2xx or 404 is returned from a provider or if a provider times out, the response will be a `206 Partial Content` status code with the provider's response in a warning header.</span></span> <span data-ttu-id="e4bf4-137">詳細については、「 [Microsoft Graph セキュリティ API のエラー応答](../resources/security-error-codes.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e4bf4-137">For more information, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).</span></span>
+<span data-ttu-id="5590c-135">成功した場合、このメソッドは `200 OK` 応答コードと、**アラート** オブジェクトのコレクションを応答本文で返します。</span><span class="sxs-lookup"><span data-stu-id="5590c-135">If successful, this method returns a `200 OK` response code and collection of **alert** objects in the response body.</span></span> <span data-ttu-id="5590c-136">プロバイダーから 2xx または 404 以外の状態コードが返されるか、プロバイダーがタイムアウトした場合、応答は、警告ヘッダー内のプロバイダーの応答と共に`206 Partial Content` 状態コードになります。</span><span class="sxs-lookup"><span data-stu-id="5590c-136">If a status code other than 2xx or 404 is returned from a provider or if a provider times out, the response will be a `206 Partial Content` status code with the provider's response in a warning header.</span></span> <span data-ttu-id="5590c-137">詳細については、[Microsoft グラフ セキュリティ API のエラー応答](../resources/security-error-codes.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5590c-137">For more information, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).</span></span>
 
-## <a name="example"></a><span data-ttu-id="e4bf4-138">例</span><span class="sxs-lookup"><span data-stu-id="e4bf4-138">Example</span></span>
+## <a name="example"></a><span data-ttu-id="5590c-138">例</span><span class="sxs-lookup"><span data-stu-id="5590c-138">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="e4bf4-139">要求</span><span class="sxs-lookup"><span data-stu-id="e4bf4-139">Request</span></span>
+### <a name="request"></a><span data-ttu-id="5590c-139">要求</span><span class="sxs-lookup"><span data-stu-id="5590c-139">Request</span></span>
 
-<span data-ttu-id="e4bf4-140">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="e4bf4-140">The following is an example of the request.</span></span>
+<span data-ttu-id="5590c-140">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="5590c-140">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_alerts"
@@ -82,11 +82,11 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 GET https://graph.microsoft.com/beta/security/alerts
 ```
 
-### <a name="response"></a><span data-ttu-id="e4bf4-141">応答</span><span class="sxs-lookup"><span data-stu-id="e4bf4-141">Response</span></span>
+### <a name="response"></a><span data-ttu-id="5590c-141">応答</span><span class="sxs-lookup"><span data-stu-id="5590c-141">Response</span></span>
 
-<span data-ttu-id="e4bf4-142">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="e4bf4-142">The following is an example of the response.</span></span>
+<span data-ttu-id="5590c-142">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="5590c-142">The following is an example of the response.</span></span>
 
-><span data-ttu-id="e4bf4-p107">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="e4bf4-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="5590c-p107">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="5590c-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -111,6 +111,16 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="5590c-145">SDK サンプルコード</span><span class="sxs-lookup"><span data-stu-id="5590c-145">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="5590c-146">Visual</span><span class="sxs-lookup"><span data-stu-id="5590c-146">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_alerts-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="5590c-147">Java</span><span class="sxs-lookup"><span data-stu-id="5590c-147">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_alerts-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -121,6 +131,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/alert-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/alert-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

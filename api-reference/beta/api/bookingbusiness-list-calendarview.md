@@ -1,57 +1,57 @@
 ---
 title: List Bookings calendarView
-description: 指定された日付範囲内に発生する、bookingappointment の bookingappointment オブジェクトのコレクションを取得します。
+description: 指定された日付範囲内に発生する、Bookingappointment の bookingAppointment オブジェクトのコレクションを取得します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: c04a21cfde4a50637c67aa47d486d9484c584726
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 7ab6e3aee41dc17a87e4a9027d1ae78e7b249cf4
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322503"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636220"
 ---
-# <a name="list-bookings-calendarview"></a><span data-ttu-id="9a355-103">List Bookings calendarView</span><span class="sxs-lookup"><span data-stu-id="9a355-103">List Bookings calendarView</span></span>
+# <a name="list-bookings-calendarview"></a><span data-ttu-id="d1761-103">List Bookings calendarView</span><span class="sxs-lookup"><span data-stu-id="d1761-103">List Bookings calendarView</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9a355-104">指定された日付範囲内に発生する、 [bookingappointment](../resources/bookingbusiness.md)の[bookingappointment](../resources/bookingappointment.md)オブジェクトのコレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="9a355-104">Get the collection of [bookingAppointment](../resources/bookingappointment.md) objects for a [bookingBusiness](../resources/bookingbusiness.md), that occurs in the specified date range.</span></span>
+<span data-ttu-id="d1761-104">指定された日付範囲内に発生する、 [Bookingappointment](../resources/bookingbusiness.md)の[bookingappointment](../resources/bookingappointment.md)オブジェクトのコレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="d1761-104">Get the collection of [bookingAppointment](../resources/bookingappointment.md) objects for a [bookingBusiness](../resources/bookingbusiness.md), that occurs in the specified date range.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="9a355-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="9a355-105">Permissions</span></span>
-<span data-ttu-id="9a355-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="9a355-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="d1761-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="d1761-105">Permissions</span></span>
+<span data-ttu-id="d1761-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d1761-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9a355-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="9a355-108">Permission type</span></span>      | <span data-ttu-id="9a355-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="9a355-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="d1761-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="d1761-108">Permission type</span></span>      | <span data-ttu-id="d1761-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="d1761-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="9a355-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="9a355-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="9a355-111">予約します。 all、bookingsappointment すべての予約。すべての予約が可能です。</span><span class="sxs-lookup"><span data-stu-id="9a355-111">Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
-|<span data-ttu-id="9a355-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="9a355-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9a355-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="9a355-113">Not supported.</span></span>   |
-|<span data-ttu-id="9a355-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="9a355-114">Application</span></span> | <span data-ttu-id="9a355-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="9a355-115">Not supported.</span></span>  |
+|<span data-ttu-id="d1761-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="d1761-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="d1761-111">予約します。 all、BookingsAppointment すべての予約。すべての予約が可能です。</span><span class="sxs-lookup"><span data-stu-id="d1761-111">Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
+|<span data-ttu-id="d1761-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="d1761-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d1761-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d1761-113">Not supported.</span></span>   |
+|<span data-ttu-id="d1761-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="d1761-114">Application</span></span> | <span data-ttu-id="d1761-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d1761-115">Not supported.</span></span>  |
 
-## <a name="http-request"></a><span data-ttu-id="9a355-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="9a355-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d1761-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="d1761-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /bookingBusinesses/{id}/calendarView?start={start-value}&end={end-value}
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="9a355-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="9a355-117">Request headers</span></span>
-| <span data-ttu-id="9a355-118">名前</span><span class="sxs-lookup"><span data-stu-id="9a355-118">Name</span></span>       | <span data-ttu-id="9a355-119">説明</span><span class="sxs-lookup"><span data-stu-id="9a355-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="d1761-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="d1761-117">Request headers</span></span>
+| <span data-ttu-id="d1761-118">名前</span><span class="sxs-lookup"><span data-stu-id="d1761-118">Name</span></span>       | <span data-ttu-id="d1761-119">説明</span><span class="sxs-lookup"><span data-stu-id="d1761-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="9a355-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="9a355-120">Authorization</span></span>  | <span data-ttu-id="9a355-121">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="9a355-121">Bearer {code}</span></span>|
+| <span data-ttu-id="d1761-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="d1761-120">Authorization</span></span>  | <span data-ttu-id="d1761-121">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="d1761-121">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="9a355-122">要求本文</span><span class="sxs-lookup"><span data-stu-id="9a355-122">Request body</span></span>
-<span data-ttu-id="9a355-123">要求 URL に、次のクエリ パラメーターを値で指定します。</span><span class="sxs-lookup"><span data-stu-id="9a355-123">In the request URL, provide following query parameters with values.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d1761-122">要求本文</span><span class="sxs-lookup"><span data-stu-id="d1761-122">Request body</span></span>
+<span data-ttu-id="d1761-123">要求 URL に、次のクエリ パラメーターを値で指定します。</span><span class="sxs-lookup"><span data-stu-id="d1761-123">In the request URL, provide following query parameters with values.</span></span>
 
-| <span data-ttu-id="9a355-124">パラメーター</span><span class="sxs-lookup"><span data-stu-id="9a355-124">Parameter</span></span>    | <span data-ttu-id="9a355-125">型</span><span class="sxs-lookup"><span data-stu-id="9a355-125">Type</span></span>   |<span data-ttu-id="9a355-126">説明</span><span class="sxs-lookup"><span data-stu-id="9a355-126">Description</span></span>|
+| <span data-ttu-id="d1761-124">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d1761-124">Parameter</span></span>    | <span data-ttu-id="d1761-125">型</span><span class="sxs-lookup"><span data-stu-id="d1761-125">Type</span></span>   |<span data-ttu-id="d1761-126">説明</span><span class="sxs-lookup"><span data-stu-id="d1761-126">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="9a355-127">開始</span><span class="sxs-lookup"><span data-stu-id="9a355-127">start</span></span>|<span data-ttu-id="9a355-128">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="9a355-128">DateTimeOffset</span></span>|<span data-ttu-id="9a355-129">ISO 8601 形式で表される時間範囲の開始日時を utc または utc からのオフセットで指定します。</span><span class="sxs-lookup"><span data-stu-id="9a355-129">The start date and time of a time range, represented in ISO 8601 format, as UTC or an offset from UTC.</span></span> <span data-ttu-id="9a355-130">たとえば、2018年1月1日午前0時 (UTC) は次のようになります。 ' 2018-01-01t00:00: 00z '、PST の同じ時刻は次のようになります。 ' 2017-12-31t16:00:00-08:00 '。</span><span class="sxs-lookup"><span data-stu-id="9a355-130">For example, midnight UTC on Jan 1, 2018 would look like this: '2018-01-01T00:00:00Z', and the same time in PST would look like this: '2017-12-31T16:00:00-08:00'.</span></span>|
-|<span data-ttu-id="9a355-131">end</span><span class="sxs-lookup"><span data-stu-id="9a355-131">end</span></span>|<span data-ttu-id="9a355-132">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="9a355-132">DateTimeOffset</span></span>|<span data-ttu-id="9a355-133">ISO 8601 形式で表される時間範囲の終了日時 (utc または utc からのオフセット)。</span><span class="sxs-lookup"><span data-stu-id="9a355-133">The end date and time of a time range, represented in ISO 8601 format, as UTC or an offset from UTC.</span></span> <span data-ttu-id="9a355-134">たとえば、3月1日の午前0時 (UTC) では、2018は次のようになります。 ' 2018-01-01t03:00: 00z '、PST の同じ時刻は ' 2017-12-31t19:00:00-08:00 ' のようになります。</span><span class="sxs-lookup"><span data-stu-id="9a355-134">For example, 3am UTC on Jan 1, 2018 would look like this: '2018-01-01T03:00:00Z', and the same time in PST would look like this: '2017-12-31T19:00:00-08:00'.</span></span>|
+|<span data-ttu-id="d1761-127">開始</span><span class="sxs-lookup"><span data-stu-id="d1761-127">start</span></span>|<span data-ttu-id="d1761-128">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="d1761-128">DateTimeOffset</span></span>|<span data-ttu-id="d1761-129">ISO 8601 形式で表される時間範囲の開始日時を UTC または UTC からのオフセットで指定します。</span><span class="sxs-lookup"><span data-stu-id="d1761-129">The start date and time of a time range, represented in ISO 8601 format, as UTC or an offset from UTC.</span></span> <span data-ttu-id="d1761-130">たとえば、2018年1月1日午前0時 (UTC) は次のようになります。 ' 2018-01-01T00:00: 00Z '、PST の同じ時刻は次のようになります。 ' 2017-12-31T16:00:00-08:00 '。</span><span class="sxs-lookup"><span data-stu-id="d1761-130">For example, midnight UTC on Jan 1, 2018 would look like this: '2018-01-01T00:00:00Z', and the same time in PST would look like this: '2017-12-31T16:00:00-08:00'.</span></span>|
+|<span data-ttu-id="d1761-131">end</span><span class="sxs-lookup"><span data-stu-id="d1761-131">end</span></span>|<span data-ttu-id="d1761-132">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="d1761-132">DateTimeOffset</span></span>|<span data-ttu-id="d1761-133">ISO 8601 形式で表される時間範囲の終了日時 (UTC または UTC からのオフセット)。</span><span class="sxs-lookup"><span data-stu-id="d1761-133">The end date and time of a time range, represented in ISO 8601 format, as UTC or an offset from UTC.</span></span> <span data-ttu-id="d1761-134">たとえば、3月1日の午前0時 (UTC) では、2018は次のようになります。 ' 2018-01-01T03:00: 00Z '、PST の同じ時刻は ' 2017-12-31T19:00:00-08:00 ' のようになります。</span><span class="sxs-lookup"><span data-stu-id="d1761-134">For example, 3am UTC on Jan 1, 2018 would look like this: '2018-01-01T03:00:00Z', and the same time in PST would look like this: '2017-12-31T19:00:00-08:00'.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="9a355-135">応答</span><span class="sxs-lookup"><span data-stu-id="9a355-135">Response</span></span>
-<span data-ttu-id="9a355-136">成功した場合、この`200, OK`メソッドは応答コードと、応答本文で[bookingappointment](../resources/bookingappointment.md)コレクションオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="9a355-136">If successful, this method returns `200, OK` response code and [bookingAppointment](../resources/bookingappointment.md) collection object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="d1761-135">応答</span><span class="sxs-lookup"><span data-stu-id="d1761-135">Response</span></span>
+<span data-ttu-id="d1761-136">成功した場合、この`200, OK`メソッドは応答コードと、応答本文で[bookingappointment](../resources/bookingappointment.md)コレクションオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="d1761-136">If successful, this method returns `200, OK` response code and [bookingAppointment](../resources/bookingappointment.md) collection object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9a355-137">例</span><span class="sxs-lookup"><span data-stu-id="9a355-137">Example</span></span>
-<span data-ttu-id="9a355-138">この API を呼び出す方法の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="9a355-138">The following is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="9a355-139">要求</span><span class="sxs-lookup"><span data-stu-id="9a355-139">Request</span></span>
-<span data-ttu-id="9a355-140">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="9a355-140">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="d1761-137">例</span><span class="sxs-lookup"><span data-stu-id="d1761-137">Example</span></span>
+<span data-ttu-id="d1761-138">この API を呼び出す方法の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="d1761-138">The following is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="d1761-139">要求</span><span class="sxs-lookup"><span data-stu-id="d1761-139">Request</span></span>
+<span data-ttu-id="d1761-140">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="d1761-140">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "bookingbusiness_getcalendarview"
@@ -60,8 +60,8 @@ GET /bookingBusinesses/{id}/calendarView?start={start-value}&end={end-value}
 GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/calendarView?start=2018-04-30T00:00:00Z&end=2018-05-10T00:00:00Z
 ```
 
-##### <a name="response"></a><span data-ttu-id="9a355-141">応答</span><span class="sxs-lookup"><span data-stu-id="9a355-141">Response</span></span>
-<span data-ttu-id="9a355-142">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="9a355-142">The following is an example of the response.</span></span> <span data-ttu-id="9a355-143">注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。</span><span class="sxs-lookup"><span data-stu-id="9a355-143">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="9a355-144">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="9a355-144">All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="d1761-141">応答</span><span class="sxs-lookup"><span data-stu-id="d1761-141">Response</span></span>
+<span data-ttu-id="d1761-142">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="d1761-142">The following is an example of the response.</span></span> <span data-ttu-id="d1761-143">注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。</span><span class="sxs-lookup"><span data-stu-id="d1761-143">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="d1761-144">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="d1761-144">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -246,6 +246,16 @@ Content-type: application/json
     ]
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="d1761-145">SDK サンプルコード</span><span class="sxs-lookup"><span data-stu-id="d1761-145">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="d1761-146">Visual</span><span class="sxs-lookup"><span data-stu-id="d1761-146">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/bookingbusiness_getcalendarview-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="d1761-147">Java</span><span class="sxs-lookup"><span data-stu-id="d1761-147">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/bookingbusiness_getcalendarview-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -256,6 +266,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/bookingbusiness-list-calendarview.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/bookingbusiness-list-calendarview.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->
