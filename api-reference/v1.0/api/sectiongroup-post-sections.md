@@ -4,26 +4,26 @@ description: 指定したセクショングループに新しい onenoteSection 
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 91ed02c363de0fc39af594e2e0932e4c4ad605bf
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5be85b5278f2ba22dcb85a8ef5c6c6a31edb38c1
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32520908"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33603602"
 ---
-# <a name="create-section"></a><span data-ttu-id="590cd-103">セクションを作成する</span><span class="sxs-lookup"><span data-stu-id="590cd-103">Create section</span></span>
+# <a name="create-section"></a><span data-ttu-id="63796-103">セクションを作成する</span><span class="sxs-lookup"><span data-stu-id="63796-103">Create section</span></span>
 
-<span data-ttu-id="590cd-104">指定したセクショングループに新しい[onenoteSection](../resources/section.md)を作成します。</span><span class="sxs-lookup"><span data-stu-id="590cd-104">Create a new [onenoteSection](../resources/section.md) in the specified section group.</span></span>
-## <a name="permissions"></a><span data-ttu-id="590cd-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="590cd-105">Permissions</span></span>
-<span data-ttu-id="590cd-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="590cd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="63796-104">指定したセクショングループに新しい[onenoteSection](../resources/section.md)を作成します。</span><span class="sxs-lookup"><span data-stu-id="63796-104">Create a new [onenoteSection](../resources/section.md) in the specified section group.</span></span>
+## <a name="permissions"></a><span data-ttu-id="63796-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="63796-105">Permissions</span></span>
+<span data-ttu-id="63796-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="63796-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="590cd-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="590cd-108">Permission type</span></span>      | <span data-ttu-id="590cd-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="590cd-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="63796-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="63796-108">Permission type</span></span>      | <span data-ttu-id="63796-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="63796-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="590cd-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="590cd-110">Delegated (work or school account)</span></span> | <span data-ttu-id="590cd-111">Notes.Create、Notes.ReadWrite、Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="590cd-111">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span></span>    |
-|<span data-ttu-id="590cd-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="590cd-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="590cd-113">Notes.Create、Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="590cd-113">Notes.Create, Notes.ReadWrite</span></span>    |
-|<span data-ttu-id="590cd-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="590cd-114">Application</span></span> | <span data-ttu-id="590cd-115">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="590cd-115">Notes.ReadWrite.All</span></span> |
+|<span data-ttu-id="63796-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="63796-110">Delegated (work or school account)</span></span> | <span data-ttu-id="63796-111">Notes.Create、Notes.ReadWrite、Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="63796-111">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span></span>    |
+|<span data-ttu-id="63796-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="63796-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="63796-113">Notes.Create、Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="63796-113">Notes.Create, Notes.ReadWrite</span></span>    |
+|<span data-ttu-id="63796-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="63796-114">Application</span></span> | <span data-ttu-id="63796-115">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="63796-115">Notes.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="590cd-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="590cd-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="63796-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="63796-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onenote/sectionGroups/{id}/sections
@@ -31,24 +31,24 @@ POST /users/{id | userPrincipalName}/onenote/sectionGroups/{id}/sections
 POST /groups/{id}/onenote/sectionGroups/{id}/sections
 POST /sites/{id}/onenote/sectionGroups/{id}/sections
 ```
-## <a name="request-headers"></a><span data-ttu-id="590cd-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="590cd-117">Request headers</span></span>
-| <span data-ttu-id="590cd-118">名前</span><span class="sxs-lookup"><span data-stu-id="590cd-118">Name</span></span>       | <span data-ttu-id="590cd-119">型</span><span class="sxs-lookup"><span data-stu-id="590cd-119">Type</span></span> | <span data-ttu-id="590cd-120">説明</span><span class="sxs-lookup"><span data-stu-id="590cd-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="63796-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="63796-117">Request headers</span></span>
+| <span data-ttu-id="63796-118">名前</span><span class="sxs-lookup"><span data-stu-id="63796-118">Name</span></span>       | <span data-ttu-id="63796-119">型</span><span class="sxs-lookup"><span data-stu-id="63796-119">Type</span></span> | <span data-ttu-id="63796-120">説明</span><span class="sxs-lookup"><span data-stu-id="63796-120">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="590cd-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="590cd-121">Authorization</span></span>  | <span data-ttu-id="590cd-122">string</span><span class="sxs-lookup"><span data-stu-id="590cd-122">string</span></span>  | <span data-ttu-id="590cd-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="590cd-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="590cd-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="590cd-125">Content-Type</span></span> | <span data-ttu-id="590cd-126">string</span><span class="sxs-lookup"><span data-stu-id="590cd-126">string</span></span> | `application/json` |
+| <span data-ttu-id="63796-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="63796-121">Authorization</span></span>  | <span data-ttu-id="63796-122">string</span><span class="sxs-lookup"><span data-stu-id="63796-122">string</span></span>  | <span data-ttu-id="63796-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="63796-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="63796-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="63796-125">Content-Type</span></span> | <span data-ttu-id="63796-126">string</span><span class="sxs-lookup"><span data-stu-id="63796-126">string</span></span> | `application/json` |
 
-## <a name="request-body"></a><span data-ttu-id="590cd-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="590cd-127">Request body</span></span>
-<span data-ttu-id="590cd-128">要求本文でセクション名を入力します。</span><span class="sxs-lookup"><span data-stu-id="590cd-128">In the request body, supply a name for the section.</span></span>
+## <a name="request-body"></a><span data-ttu-id="63796-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="63796-127">Request body</span></span>
+<span data-ttu-id="63796-128">要求本文でセクション名を入力します。</span><span class="sxs-lookup"><span data-stu-id="63796-128">In the request body, supply a name for the section.</span></span>
 
-<span data-ttu-id="590cd-p103">同じ階層レベルでは、セクションの名前を一意にする必要があります。名前は 50 文字以内で、次の文字は使用できません: ?\*\/:<>|&#''%~</span><span class="sxs-lookup"><span data-stu-id="590cd-p103">Within the same hierarchy level, section names must be unique. The name cannot contain more than 50 characters or contain the following characters:  ?\*\/:<>|&#''%~</span></span>
+<span data-ttu-id="63796-p103">同じ階層レベルでは、セクションの名前を一意にする必要があります。名前は 50 文字以内で、次の文字は使用できません: ?\*\/:<>|&#''%~</span><span class="sxs-lookup"><span data-stu-id="63796-p103">Within the same hierarchy level, section names must be unique. The name cannot contain more than 50 characters or contain the following characters:  ?\*\/:<>|&#''%~</span></span>
 
-## <a name="response"></a><span data-ttu-id="590cd-131">応答</span><span class="sxs-lookup"><span data-stu-id="590cd-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="63796-131">応答</span><span class="sxs-lookup"><span data-stu-id="63796-131">Response</span></span>
 
-<span data-ttu-id="590cd-132">成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[onenoteSection](../resources/section.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="590cd-132">If successful, this method returns a `201 Created` response code and a [onenoteSection](../resources/section.md) object in the response body.</span></span>
+<span data-ttu-id="63796-132">成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[onenoteSection](../resources/section.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="63796-132">If successful, this method returns a `201 Created` response code and a [onenoteSection](../resources/section.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="590cd-133">例</span><span class="sxs-lookup"><span data-stu-id="590cd-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="590cd-134">要求</span><span class="sxs-lookup"><span data-stu-id="590cd-134">Request</span></span>
-<span data-ttu-id="590cd-135">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="590cd-135">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="63796-133">例</span><span class="sxs-lookup"><span data-stu-id="63796-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="63796-134">要求</span><span class="sxs-lookup"><span data-stu-id="63796-134">Request</span></span>
+<span data-ttu-id="63796-135">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="63796-135">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_section_from_sectiongroup"
@@ -63,8 +63,8 @@ Content-length: 27
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="590cd-136">応答</span><span class="sxs-lookup"><span data-stu-id="590cd-136">Response</span></span>
-<span data-ttu-id="590cd-p104">以下は、応答の例です。注:ここに示す応答オブジェクトは切り詰めて簡略化されています。実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="590cd-p104">Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="63796-136">応答</span><span class="sxs-lookup"><span data-stu-id="63796-136">Response</span></span>
+<span data-ttu-id="63796-p104">以下は、応答の例です。注:ここに示す応答オブジェクトは切り詰めて簡略化されています。実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="63796-p104">Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -93,6 +93,16 @@ Content-length: 272
   }
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="63796-140">SDK サンプルコード</span><span class="sxs-lookup"><span data-stu-id="63796-140">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="63796-141">Visual</span><span class="sxs-lookup"><span data-stu-id="63796-141">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_section_from_sectiongroup-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="63796-142">Java</span><span class="sxs-lookup"><span data-stu-id="63796-142">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_section_from_sectiongroup-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -101,5 +111,9 @@ Content-length: 272
   "description": "Create Section",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/sectiongroup-post-sections.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/sectiongroup-post-sections.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

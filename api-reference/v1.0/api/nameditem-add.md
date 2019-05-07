@@ -2,58 +2,58 @@
 title: 名前付きアイテムの追加
 description: ユーザーのロケールを数式に使用して、新しい名前を指定したスコープのコレクションに追加します。
 localization_priority: Normal
-ms.openlocfilehash: eab6116768523d021577bef345151c3e62681fe5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7f1f458f4f6cbf6e6e29d9f38b78a9fca1829188
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32460880"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33612464"
 ---
-# <a name="add-named-item"></a><span data-ttu-id="a6b8c-103">名前付きアイテムの追加</span><span class="sxs-lookup"><span data-stu-id="a6b8c-103">Add Named Item</span></span>
+# <a name="add-named-item"></a><span data-ttu-id="42a18-103">名前付きアイテムの追加</span><span class="sxs-lookup"><span data-stu-id="42a18-103">Add Named Item</span></span>
 
-<span data-ttu-id="a6b8c-104">ユーザーのロケールを数式に使用して、新しい名前を指定したスコープのコレクションに追加します。</span><span class="sxs-lookup"><span data-stu-id="a6b8c-104">Adds a new name to the collection of the given scope using the user's locale for the formula.</span></span>
+<span data-ttu-id="42a18-104">ユーザーのロケールを数式に使用して、新しい名前を指定したスコープのコレクションに追加します。</span><span class="sxs-lookup"><span data-stu-id="42a18-104">Adds a new name to the collection of the given scope using the user's locale for the formula.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a6b8c-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="a6b8c-105">Permissions</span></span>
-<span data-ttu-id="a6b8c-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a6b8c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="42a18-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="42a18-105">Permissions</span></span>
+<span data-ttu-id="42a18-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="42a18-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a6b8c-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="a6b8c-108">Permission type</span></span>      | <span data-ttu-id="a6b8c-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="a6b8c-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="42a18-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="42a18-108">Permission type</span></span>      | <span data-ttu-id="42a18-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="42a18-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a6b8c-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="a6b8c-110">Delegated (work or school account)</span></span> | <span data-ttu-id="a6b8c-111">Files.ReadWrite、Sites.Read.All</span><span class="sxs-lookup"><span data-stu-id="a6b8c-111">Files.ReadWrite, Sites.Read.All</span></span>    |
-|<span data-ttu-id="a6b8c-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="a6b8c-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a6b8c-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a6b8c-113">Not supported.</span></span>    |
-|<span data-ttu-id="a6b8c-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="a6b8c-114">Application</span></span> | <span data-ttu-id="a6b8c-115">Sites.Read.All</span><span class="sxs-lookup"><span data-stu-id="a6b8c-115">Sites.Read.All</span></span> |
+|<span data-ttu-id="42a18-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="42a18-110">Delegated (work or school account)</span></span> | <span data-ttu-id="42a18-111">Files.ReadWrite、Sites.Read.All</span><span class="sxs-lookup"><span data-stu-id="42a18-111">Files.ReadWrite, Sites.Read.All</span></span>    |
+|<span data-ttu-id="42a18-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="42a18-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="42a18-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="42a18-113">Not supported.</span></span>    |
+|<span data-ttu-id="42a18-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="42a18-114">Application</span></span> | <span data-ttu-id="42a18-115">Sites.Read.All</span><span class="sxs-lookup"><span data-stu-id="42a18-115">Sites.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a6b8c-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="a6b8c-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="42a18-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="42a18-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names/add
 POST /workbook/worksheets({id|name})/names/add
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="a6b8c-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="a6b8c-117">Request headers</span></span>
-| <span data-ttu-id="a6b8c-118">名前</span><span class="sxs-lookup"><span data-stu-id="a6b8c-118">Name</span></span>       | <span data-ttu-id="a6b8c-119">説明</span><span class="sxs-lookup"><span data-stu-id="a6b8c-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="42a18-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="42a18-117">Request headers</span></span>
+| <span data-ttu-id="42a18-118">名前</span><span class="sxs-lookup"><span data-stu-id="42a18-118">Name</span></span>       | <span data-ttu-id="42a18-119">説明</span><span class="sxs-lookup"><span data-stu-id="42a18-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="a6b8c-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="a6b8c-120">Authorization</span></span>  | <span data-ttu-id="a6b8c-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="a6b8c-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="a6b8c-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="a6b8c-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="a6b8c-p103">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="a6b8c-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="42a18-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="42a18-120">Authorization</span></span>  | <span data-ttu-id="42a18-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="42a18-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="42a18-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="42a18-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="42a18-p103">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="42a18-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="a6b8c-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="a6b8c-126">Request body</span></span>
-<span data-ttu-id="a6b8c-127">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="a6b8c-127">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="42a18-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="42a18-126">Request body</span></span>
+<span data-ttu-id="42a18-127">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="42a18-127">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="a6b8c-128">パラメーター</span><span class="sxs-lookup"><span data-stu-id="a6b8c-128">Parameter</span></span>    | <span data-ttu-id="a6b8c-129">型</span><span class="sxs-lookup"><span data-stu-id="a6b8c-129">Type</span></span>   |<span data-ttu-id="a6b8c-130">説明</span><span class="sxs-lookup"><span data-stu-id="a6b8c-130">Description</span></span>|
+| <span data-ttu-id="42a18-128">パラメーター</span><span class="sxs-lookup"><span data-stu-id="42a18-128">Parameter</span></span>    | <span data-ttu-id="42a18-129">型</span><span class="sxs-lookup"><span data-stu-id="42a18-129">Type</span></span>   |<span data-ttu-id="42a18-130">説明</span><span class="sxs-lookup"><span data-stu-id="42a18-130">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="a6b8c-131">name</span><span class="sxs-lookup"><span data-stu-id="a6b8c-131">name</span></span>|<span data-ttu-id="a6b8c-132">string</span><span class="sxs-lookup"><span data-stu-id="a6b8c-132">string</span></span>|<span data-ttu-id="a6b8c-133">名前付きの項目の名前。</span><span class="sxs-lookup"><span data-stu-id="a6b8c-133">The name of the named item.</span></span>|
-|<span data-ttu-id="a6b8c-134">reference</span><span class="sxs-lookup"><span data-stu-id="a6b8c-134">reference</span></span>|<span data-ttu-id="a6b8c-135">Json</span><span class="sxs-lookup"><span data-stu-id="a6b8c-135">Json</span></span>|<span data-ttu-id="a6b8c-136">名前が参照する数式または範囲。</span><span class="sxs-lookup"><span data-stu-id="a6b8c-136">The formula or the range that the name will refer to.</span></span>|
-|<span data-ttu-id="a6b8c-137">comment</span><span class="sxs-lookup"><span data-stu-id="a6b8c-137">comment</span></span>|<span data-ttu-id="a6b8c-138">string</span><span class="sxs-lookup"><span data-stu-id="a6b8c-138">string</span></span>|<span data-ttu-id="a6b8c-139">名前付きアイテムに関連付けられているコメント。</span><span class="sxs-lookup"><span data-stu-id="a6b8c-139">The comment associated with the named item</span></span>|
+|<span data-ttu-id="42a18-131">name</span><span class="sxs-lookup"><span data-stu-id="42a18-131">name</span></span>|<span data-ttu-id="42a18-132">string</span><span class="sxs-lookup"><span data-stu-id="42a18-132">string</span></span>|<span data-ttu-id="42a18-133">名前付きの項目の名前。</span><span class="sxs-lookup"><span data-stu-id="42a18-133">The name of the named item.</span></span>|
+|<span data-ttu-id="42a18-134">reference</span><span class="sxs-lookup"><span data-stu-id="42a18-134">reference</span></span>|<span data-ttu-id="42a18-135">Json</span><span class="sxs-lookup"><span data-stu-id="42a18-135">Json</span></span>|<span data-ttu-id="42a18-136">名前が参照する数式または範囲。</span><span class="sxs-lookup"><span data-stu-id="42a18-136">The formula or the range that the name will refer to.</span></span>|
+|<span data-ttu-id="42a18-137">comment</span><span class="sxs-lookup"><span data-stu-id="42a18-137">comment</span></span>|<span data-ttu-id="42a18-138">string</span><span class="sxs-lookup"><span data-stu-id="42a18-138">string</span></span>|<span data-ttu-id="42a18-139">名前付きアイテムに関連付けられているコメント。</span><span class="sxs-lookup"><span data-stu-id="42a18-139">The comment associated with the named item</span></span>|
 
-## <a name="response"></a><span data-ttu-id="a6b8c-140">応答</span><span class="sxs-lookup"><span data-stu-id="a6b8c-140">Response</span></span>
+## <a name="response"></a><span data-ttu-id="42a18-140">応答</span><span class="sxs-lookup"><span data-stu-id="42a18-140">Response</span></span>
 
-<span data-ttu-id="a6b8c-141">成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[WorkbookNamedItem](../resources/nameditem.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="a6b8c-141">If successful, this method returns `200 OK` response code and [WorkbookNamedItem](../resources/nameditem.md) object in the response body.</span></span>
+<span data-ttu-id="42a18-141">成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[WorkbookNamedItem](../resources/nameditem.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="42a18-141">If successful, this method returns `200 OK` response code and [WorkbookNamedItem](../resources/nameditem.md) object in the response body.</span></span>
 
 
-## <a name="example"></a><span data-ttu-id="a6b8c-142">例</span><span class="sxs-lookup"><span data-stu-id="a6b8c-142">Example</span></span>
-<span data-ttu-id="a6b8c-143">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="a6b8c-143">Here is an example of how to call this API.</span></span>
+## <a name="example"></a><span data-ttu-id="42a18-142">例</span><span class="sxs-lookup"><span data-stu-id="42a18-142">Example</span></span>
+<span data-ttu-id="42a18-143">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="42a18-143">Here is an example of how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="a6b8c-144">要求</span><span class="sxs-lookup"><span data-stu-id="a6b8c-144">Request</span></span>
-<span data-ttu-id="a6b8c-145">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="a6b8c-145">Here is an example of the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="42a18-144">要求</span><span class="sxs-lookup"><span data-stu-id="42a18-144">Request</span></span>
+<span data-ttu-id="42a18-145">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="42a18-145">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "NamedItemcollection_add"
@@ -72,8 +72,8 @@ Content-length: 54
 
 ```
 
-##### <a name="response"></a><span data-ttu-id="a6b8c-146">応答</span><span class="sxs-lookup"><span data-stu-id="a6b8c-146">Response</span></span>
-<span data-ttu-id="a6b8c-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="a6b8c-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="42a18-146">応答</span><span class="sxs-lookup"><span data-stu-id="42a18-146">Response</span></span>
+<span data-ttu-id="42a18-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="42a18-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -96,6 +96,16 @@ Content-length: 109
     "visible": true
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="42a18-150">SDK サンプルコード</span><span class="sxs-lookup"><span data-stu-id="42a18-150">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="42a18-151">Visual</span><span class="sxs-lookup"><span data-stu-id="42a18-151">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/NamedItemcollection_add-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="42a18-152">Java</span><span class="sxs-lookup"><span data-stu-id="42a18-152">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/NamedItemcollection_add-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -105,6 +115,8 @@ Content-length: 109
   "keywords": "",
   "section": "documentation",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/nameditem-add.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/nameditem-add.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Warning: NamedItemcollection_add/value:
       Schemas type was 'Custom' which is not supported. Add a resource type to the definition of property: value"
   ],
