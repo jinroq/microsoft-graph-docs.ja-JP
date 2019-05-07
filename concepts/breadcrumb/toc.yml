@@ -1,3 +1,18 @@
 - name: Microsoft Graph
   tocHref: /graph/
   topicHref: /graph/overview
+- name: MS Graph
+  tocHref: /azure/
+  topicHref: /graph/overview
+  items:
+    - name: 開発
+      topHref: /azure/active-directory/
+      topicHref: /graph/auth/index
+      items:
+        - name: 認証トークンを取得する
+          topHref: /azure/active-directory/develop/
+          topicHref: /graph/auth/index
+          items:
+            - name: アプリを登録します
+              topHref: /azure/active-directory/develop/quickstart-register-app/
+              topicHref: /graph/
