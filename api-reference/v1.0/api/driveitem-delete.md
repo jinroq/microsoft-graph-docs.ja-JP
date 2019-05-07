@@ -5,28 +5,28 @@ ms.date: 09/10/2017
 title: ファイルまたはフォルダーを削除する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 6c6afe91167d6ce8c4bce3d53eb3cb9085bb394f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 69286819a0f49def234709a0fce41eca155b6a74
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548069"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33617173"
 ---
-# <a name="delete-a-driveitem"></a><span data-ttu-id="cad38-102">DriveItem を削除する</span><span class="sxs-lookup"><span data-stu-id="cad38-102">Delete a DriveItem</span></span>
+# <a name="delete-a-driveitem"></a><span data-ttu-id="60442-102">DriveItem を削除する</span><span class="sxs-lookup"><span data-stu-id="60442-102">Delete a DriveItem</span></span>
 
-<span data-ttu-id="cad38-p101">[DriveItem](../resources/driveitem.md) を、ID またはパスを使用して削除します。このメソッドを使用して項目を削除すると、アイテムは完全に削除されず、ごみ箱に移動するだけであることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="cad38-p101">Delete a [DriveItem](../resources/driveitem.md) by using its ID or path. Note that deleting items using this method will move the items to the recycle bin instead of permanently deleting the item.</span></span>
+<span data-ttu-id="60442-p101">[DriveItem](../resources/driveitem.md) を、ID またはパスを使用して削除します。このメソッドを使用して項目を削除すると、アイテムは完全に削除されず、ごみ箱に移動するだけであることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="60442-p101">Delete a [DriveItem](../resources/driveitem.md) by using its ID or path. Note that deleting items using this method will move the items to the recycle bin instead of permanently deleting the item.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="cad38-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="cad38-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="60442-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="60442-105">Permissions</span></span>
 
-<span data-ttu-id="cad38-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="cad38-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="60442-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="60442-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="cad38-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="cad38-108">Permission type</span></span>      | <span data-ttu-id="cad38-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="cad38-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="60442-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="60442-108">Permission type</span></span>      | <span data-ttu-id="60442-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="60442-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="cad38-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="cad38-110">Delegated (work or school account)</span></span> | <span data-ttu-id="cad38-111">Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cad38-111">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="cad38-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="cad38-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cad38-113">Files.ReadWrite、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cad38-113">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="cad38-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="cad38-114">Application</span></span> | <span data-ttu-id="cad38-115">Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cad38-115">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="60442-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="60442-110">Delegated (work or school account)</span></span> | <span data-ttu-id="60442-111">Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="60442-111">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="60442-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="60442-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="60442-113">Files.ReadWrite、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="60442-113">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="60442-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="60442-114">Application</span></span> | <span data-ttu-id="60442-115">Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="60442-115">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="cad38-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="cad38-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="60442-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="60442-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,15 +38,15 @@ DELETE /sites/{siteId}/drive/items/{itemId}
 DELETE /users/{userId}/drive/items/{itemId}
 ```
 
-## <a name="optional-request-headers"></a><span data-ttu-id="cad38-117">オプションの要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="cad38-117">Optional request headers</span></span>
+## <a name="optional-request-headers"></a><span data-ttu-id="60442-117">オプションの要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="60442-117">Optional request headers</span></span>
 
-| <span data-ttu-id="cad38-118">名前</span><span class="sxs-lookup"><span data-stu-id="cad38-118">Name</span></span>          | <span data-ttu-id="cad38-119">型</span><span class="sxs-lookup"><span data-stu-id="cad38-119">Type</span></span>   | <span data-ttu-id="cad38-120">説明</span><span class="sxs-lookup"><span data-stu-id="cad38-120">Description</span></span>                                                                                                                                                                                       |
+| <span data-ttu-id="60442-118">名前</span><span class="sxs-lookup"><span data-stu-id="60442-118">Name</span></span>          | <span data-ttu-id="60442-119">型</span><span class="sxs-lookup"><span data-stu-id="60442-119">Type</span></span>   | <span data-ttu-id="60442-120">説明</span><span class="sxs-lookup"><span data-stu-id="60442-120">Description</span></span>                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="cad38-121">if-match</span><span class="sxs-lookup"><span data-stu-id="cad38-121">if-match</span></span>      | <span data-ttu-id="cad38-122">String</span><span class="sxs-lookup"><span data-stu-id="cad38-122">String</span></span> | <span data-ttu-id="cad38-123">この要求ヘッダーが含まれていて、指定された eTag (または cTag) が項目の現在のタグに一致しない場合には、`412 Precondition Failed` 応答が返され、項目は削除されません。</span><span class="sxs-lookup"><span data-stu-id="cad38-123">If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.</span></span> |
+| <span data-ttu-id="60442-121">if-match</span><span class="sxs-lookup"><span data-stu-id="60442-121">if-match</span></span>      | <span data-ttu-id="60442-122">String</span><span class="sxs-lookup"><span data-stu-id="60442-122">String</span></span> | <span data-ttu-id="60442-123">この要求ヘッダーが含まれていて、指定された eTag (または cTag) が項目の現在のタグに一致しない場合には、`412 Precondition Failed` 応答が返され、項目は削除されません。</span><span class="sxs-lookup"><span data-stu-id="60442-123">If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.</span></span> |
 
-## <a name="example"></a><span data-ttu-id="cad38-124">例</span><span class="sxs-lookup"><span data-stu-id="cad38-124">Example</span></span>
+## <a name="example"></a><span data-ttu-id="60442-124">例</span><span class="sxs-lookup"><span data-stu-id="60442-124">Example</span></span>
 
-<span data-ttu-id="cad38-125">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="cad38-125">Here is an example of how to call this API.</span></span>
+<span data-ttu-id="60442-125">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="60442-125">Here is an example of how to call this API.</span></span>
 
 <!-- { "blockType": "request", "name": "delete-item", "scopes": "files.readwrite", "tags": "service.graph" } -->
 
@@ -54,19 +54,29 @@ DELETE /users/{userId}/drive/items/{itemId}
 DELETE /me/drive/items/{item-id}
 ```
 
-## <a name="response"></a><span data-ttu-id="cad38-126">応答</span><span class="sxs-lookup"><span data-stu-id="cad38-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="60442-126">応答</span><span class="sxs-lookup"><span data-stu-id="60442-126">Response</span></span>
 
-<span data-ttu-id="cad38-127">成功した場合、この呼び出しはリソースが削除され返すものがなかったことを示す `204 No Content` 応答を返します。</span><span class="sxs-lookup"><span data-stu-id="cad38-127">If successful, this call returns a `204 No Content` response to indicate that resource was deleted and there was nothing to return.</span></span>
+<span data-ttu-id="60442-127">成功した場合、この呼び出しはリソースが削除され返すものがなかったことを示す `204 No Content` 応答を返します。</span><span class="sxs-lookup"><span data-stu-id="60442-127">If successful, this call returns a `204 No Content` response to indicate that resource was deleted and there was nothing to return.</span></span>
 
 <!-- { "blockType": "response" } -->
 
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="60442-128">SDK サンプルコード</span><span class="sxs-lookup"><span data-stu-id="60442-128">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="60442-129">Visual</span><span class="sxs-lookup"><span data-stu-id="60442-129">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/delete-item-Cs-snippets.md)]
 
-### <a name="error-responses"></a><span data-ttu-id="cad38-128">エラー応答</span><span class="sxs-lookup"><span data-stu-id="cad38-128">Error responses</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="60442-130">Java</span><span class="sxs-lookup"><span data-stu-id="60442-130">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/delete-item-Javascript-snippets.md)]
 
-<span data-ttu-id="cad38-129">エラーがどのように返されるかについては、「[エラー応答][error-response]」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="cad38-129">See [Error Responses][error-response] for more info about how errors are returned.</span></span>
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+### <a name="error-responses"></a><span data-ttu-id="60442-131">エラー応答</span><span class="sxs-lookup"><span data-stu-id="60442-131">Error responses</span></span>
+
+<span data-ttu-id="60442-132">エラーがどのように返されるかについては、「[エラー応答][error-response]」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="60442-132">See [Error Responses][error-response] for more info about how errors are returned.</span></span>
 
 [error-response]: /graph/errors
 
@@ -75,5 +85,9 @@ HTTP/1.1 204 No Content
   "description": "Delete a DriveItem from a drive",
   "keywords": "delete,existing item,onedrive",
   "section": "documentation",
-  "tocPath": "Items/Delete"
+  "tocPath": "Items/Delete",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/driveitem-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/driveitem-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 } -->
