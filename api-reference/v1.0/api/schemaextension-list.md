@@ -1,18 +1,18 @@
 ---
 title: schemaExtensions を一覧表示する
-description: '現在のテナントで所有しているすべてのアプリによって作成された schemaextension オブジェクトの一覧を取得します ( '
+description: '現在のテナントで所有しているすべてのアプリによって作成された schemaExtension オブジェクトの一覧を取得します ( '
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: 3949c73945f44857bbde2768ff9c79ec838063e6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: eb01bb41fefc8f7eaf4c1778df6d84fe780c2e3f
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521062"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33603669"
 ---
 # <a name="list-schemaextensions"></a>schemaExtensions を一覧表示する
 
-現在のテナントで所有しているすべてのアプリによって作成された[schemaextension](../resources/schemaextension.md)オブジェクトの一覧を取得します (これは、**開発**中、**使用可能**、または**廃止**され**た場合があります)。また、その他のアプリが所有するすべてのスキーマ拡張機能利用可能**です。 
+現在のテナントで所有しているすべてのアプリによって作成された[Schemaextension](../resources/schemaextension.md)オブジェクトの一覧を取得します (これは、**開発**中、**使用可能**、または**廃止**され**た場合があります)。また、その他のアプリが所有するすべてのスキーマ拡張機能利用可能**です。 
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -87,10 +87,20 @@ Content-length: 274
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_schemaextensions-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_schemaextensions-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="see-also"></a>関連項目
 
-- [拡張機能を使用してカスタム データをリソースに追加する](/graph/extensibility-overview)
+- [拡張機能を使用したリソースへのカスタム データの追加](/graph/extensibility-overview)
 - [スキーマ拡張機能を使用したグループへのカスタム データの追加](/graph/extensibility-schema-groups)
 
 
@@ -101,5 +111,9 @@ Content-length: 274
   "description": "List schemaExtensions",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/schemaextension-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/schemaextension-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

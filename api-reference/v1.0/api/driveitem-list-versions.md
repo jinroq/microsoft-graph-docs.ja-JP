@@ -3,12 +3,12 @@ title: ドライブ項目のバージョンを一覧表示する
 description: OneDrive と SharePoint は、ファイルの履歴を保持するように構成できます。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: fa25734967aca0ad5c7022f147ca243530f1ac3f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: afd73c26c8a35cbac7c66397c89b1a9466af5971
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548113"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33616100"
 ---
 # <a name="listing-versions-of-a-driveitem"></a>ドライブ項目のバージョンを一覧表示する
 
@@ -106,6 +106,16 @@ Content-Type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-previous-versions-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-previous-versions-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="remarks"></a>備考
 
@@ -119,5 +129,9 @@ OneDrive は、ファイルの旧バージョンの完全なメタデータを�
   "description": "List, review, and download previous versions of a driveItem",
   "keywords": "version, version history, versions",
   "section": "documentation",
-  "tocPath": "Items/Version history"
+  "tocPath": "Items/Version history",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/driveitem-list-versions.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/driveitem-list-versions.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 } -->

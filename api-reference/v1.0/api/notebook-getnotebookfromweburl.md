@@ -4,24 +4,24 @@ description: URL パスを使用して、ノートブックオブジェクトの
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 3d14edf5a8992f9f4386e4b50aa74d54986b62f1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0a68ff63fde8fc560c91892679a9551e27dc7459
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562203"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33612010"
 ---
 # <a name="notebook-getnotebookfromweburl"></a>ノートブック: getNotebookFromWebUrl
 
 URL パスを使用して、[ノートブック](../resources/notebook.md)オブジェクトのプロパティとリレーションシップを取得します。
 
-この場所は、office 365、グループノートブック、または office 365 上の SharePoint サイトでホストされるチームノートブックのユーザーノートブックであることができます。
+この場所は、office 365、グループノートブック、または Office 365 上の SharePoint サイトでホストされるチームノートブックのユーザーノートブックであることができます。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | メモ作成、メモ読み取り、メモ (すべて)、メモ書き込み、メモ (すべて)    |
+|委任 (職場または学校のアカウント) | Notes.Create、Notes.Read、Notes.ReadWrite、Notes.Read.All、Notes.ReadWrite.All    |
 |アプリケーション | Notes.Read.All、Notes.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
@@ -94,3 +94,24 @@ Content-Length: 544
     "self": "self-value",
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/notebook_fromweburl-Cs-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Example",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/notebook-getnotebookfromweburl.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/notebook-getnotebookfromweburl.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

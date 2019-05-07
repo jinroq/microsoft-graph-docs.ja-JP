@@ -1,17 +1,19 @@
 ---
-title: List registeredDevices
+title: registeredDevices を一覧表示する
 description: ユーザーの登録済みデバイスの一覧を取得します。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 33c3d29fef601e89660050f073e3812803dc066c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e0e0dbafb3d77ae58e4dae111805728f2591b42f
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32571206"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33601558"
 ---
-# <a name="list-registereddevices"></a>List registeredDevices
+# <a name="list-registereddevices"></a>registeredDevices を一覧表示する
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ユーザーの登録済みデバイスの一覧を取得します。
 ## <a name="permissions"></a>アクセス許可
@@ -50,7 +52,7 @@ GET /users/{id | userPrincipalName}/registeredDevices
   "name": "get_registereddevices"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/registeredDevices
+GET https://graph.microsoft.com/beta/me/registeredDevices
 ```
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
@@ -73,13 +75,29 @@ Content-length: 55
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_registereddevices-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_registereddevices-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List registeredDevices",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-list-registereddevices.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/user-list-registereddevices.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->
