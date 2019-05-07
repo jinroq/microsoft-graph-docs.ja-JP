@@ -3,12 +3,12 @@ title: Azure AD ID およびアクセス管理 API の概要
 description: 'Azure Active Directory (Azure AD) は、ID およびアクセス管理 (IAM) を集中管理し、アプリ、デバイス、サービス、およびインフラストラクチャの間でのセキュアで生産性の高いアクセスを可能にします。 組織では、Azure AD を使用することにより、オンプレミス、ハイブリッド、およびクラウドの各環境において、ID およびコントロール アクセスを管理することができます。  '
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: 634b2c806065f6e1b7cd2a0f2aca41cfdb2aa7fb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: edf02faa345426b77e0ede8a0c92e54207338bec
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570258"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33599822"
 ---
 # <a name="azure-ad-identity-and-access-management-api-overview"></a>Azure AD ID およびアクセス管理 API の概要
 
@@ -84,7 +84,7 @@ Azure AD では、アカウントが無防備である可能性を示す異常�
 ## <a name="next-steps"></a>次のステップ
 
 - [Azure AD REST API の使用](/graph/api/resources/azure-ad-overview?view=graph-rest-1.0)方法を確認する。
-- Azure AD を使用して Microsoft Graph の[認証](auth-overview.md)を実行する。
+- Azure AD を使用して Microsoft Graph の[認証](./auth/)を実行する。
 - [Azure AD サインイン](https://azure.microsoft.com/ja-JP/develop/identity/signin/)をアプリまたは Web サイトに統合する
 - Azure AD API の最新情報については、[Changelog](changelog.md) を参照してください。
 - Microsoft Graph の使用方法についてのさらに多くのアイデアについては、[サンプル](https://developer.microsoft.com/graph/graph/examples)を参照してください。

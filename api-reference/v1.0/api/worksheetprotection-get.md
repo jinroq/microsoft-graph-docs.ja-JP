@@ -4,12 +4,12 @@ description: worksheetprotection オブジェクトのプロパティと関係�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: f40213af79880d228e01328226770c7b15a3261b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 364d1c9d404d3774eb23e4e7c4e2efa5a31a6a60
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569698"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33601110"
 ---
 # <a name="get-worksheetprotection"></a>WorksheetProtection を取得する
 
@@ -69,6 +69,16 @@ Content-length: 23
   "protected": true
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_worksheetprotection-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_worksheetprotection-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -77,5 +87,9 @@ Content-length: 23
   "description": "Get WorksheetProtection",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/worksheetprotection-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/worksheetprotection-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

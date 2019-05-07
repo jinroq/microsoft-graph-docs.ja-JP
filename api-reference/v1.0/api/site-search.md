@@ -6,12 +6,12 @@ title: サイトを検索する
 description: 提供されたキーワードに一致するサイトの SharePoint テナント全体を検索します。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 48a479df2f91dd4d60455a26c4e16f561ea88f83
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5dedb77a362507b5d59a8372f64bd72d6504c980
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32560985"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33603082"
 ---
 # <a name="search-for-sites"></a>サイトを検索する
 
@@ -66,6 +66,16 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/search-sites-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/search-sites-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 >**注:** 並べ替えに使用できる唯一のプロパティは、"**日付**1" です。 検索フィルターは、検索結果を取得するときに複数のプロパティを使用する自由なテキスト検索です。
 
 <!-- {
@@ -73,5 +83,9 @@ Content-type: application/json
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Sites/Search"
+  "tocPath": "Sites/Search",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/site-search.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/site-search.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 } -->

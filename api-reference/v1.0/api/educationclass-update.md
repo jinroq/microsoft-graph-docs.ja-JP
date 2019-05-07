@@ -4,12 +4,12 @@ description: クラスのプロパティを更新します。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 89517aa1f2b458dbdec311969f0cedd994464702
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 44068da9b8a8203bd385f84bb10d62a3c73336ac
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550421"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33616158"
 ---
 # <a name="update-educationclass-properties"></a>educationclass プロパティを更新する
 
@@ -41,7 +41,7 @@ PATCH /education/classes/{id}
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |description|String| クラスの説明。|
-|displayName|String| クラスの名前。|
+|displayName|文字列| クラスの名前。|
 |mailNickname|String| 機能が有効になっている場合に、すべてのユーザーに電子メールを送信する電子メールのエイリアス。 |
 <!-- Please verify the revised description here. -->
 |classCode|String| 学校が使用するクラス コード。| |externalId|String| 同期システムからのクラスの ID。 | |externalName|String|同期システム内のクラスの名前。| |externalSource|string| このクラスを作成した方法。 使用可能な値は`sis`、 `manual`、 `enum_sentinel`、. | です。
@@ -97,6 +97,16 @@ Content-length: 224
   "mailNickname": "Fabrikam"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_educationclass-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_educationclass-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -105,5 +115,9 @@ Content-length: 224
   "description": "Update educationclass",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/educationclass-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/educationclass-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

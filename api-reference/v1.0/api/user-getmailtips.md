@@ -1,17 +1,19 @@
 ---
-title: 'ユーザー: getmailtips ヒント'
+title: 'ユーザー: getMailTips ヒント'
 description: サインインしているユーザーが使用できる1人以上の受信者のメールヒントを取得します。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4c931d6e7f3b7762534d773b647f7db68461a230
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 872bcdd92208f008a7e59223ad4fd6ee8ba316e4
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32567866"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33602139"
 ---
-# <a name="user-getmailtips"></a>ユーザー: getmailtips ヒント
+# <a name="user-getmailtips"></a>ユーザー: getMailTips ヒント
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 サインインしている[ユーザー](../resources/user.md)が使用できる1人以上の受信者のメールヒントを取得します。
 
@@ -60,7 +62,7 @@ POST /users/{id|userPrincipalName}/getMailTips
   "name": "user_getmailtips"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/getMailTips
+POST https://graph.microsoft.com/beta/me/getMailTips
 Content-Type: application/json
 
 {
@@ -85,7 +87,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.mailTips)",
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.mailTips)",
     "value":[
         {
             "emailAddress":{
@@ -123,13 +125,29 @@ Content-type: application/json
 }
 
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/user_getmailtips-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/user_getmailtips-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "user: getMailTips",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-getmailtips.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/user-getmailtips.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->
