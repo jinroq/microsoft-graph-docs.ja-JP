@@ -4,30 +4,30 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 共有アイテムへのアクセス
 localization_priority: Normal
-ms.openlocfilehash: 1f172060a8b30996ff09b3ca93390da503db9fea
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 85209227dc0d882ad2252010b893d7a0cdc03dcf
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32520936"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33603916"
 ---
-# <a name="accessing-shared-driveitems"></a><span data-ttu-id="29eab-102">共有 DriveItems へのアクセス</span><span class="sxs-lookup"><span data-stu-id="29eab-102">Accessing shared DriveItems</span></span>
+# <a name="accessing-shared-driveitems"></a><span data-ttu-id="a79cc-102">共有 DriveItems へのアクセス</span><span class="sxs-lookup"><span data-stu-id="a79cc-102">Accessing shared DriveItems</span></span>
 
-<span data-ttu-id="29eab-103">**shareId** または共有の URL を使用して、共有 [DriveItem](../resources/driveitem.md) または共有アイテムのコレクションにアクセスします。</span><span class="sxs-lookup"><span data-stu-id="29eab-103">Access a shared [DriveItem](../resources/driveitem.md) or a collection of shared items by using a **shareId** or sharing URL.</span></span>
+<span data-ttu-id="a79cc-103">**shareId** または共有の URL を使用して、共有 [DriveItem](../resources/driveitem.md) または共有アイテムのコレクションにアクセスします。</span><span class="sxs-lookup"><span data-stu-id="a79cc-103">Access a shared [DriveItem](../resources/driveitem.md) or a collection of shared items by using a **shareId** or sharing URL.</span></span>
 
-<span data-ttu-id="29eab-104">この API で共有の URL を使用するには、アプリで [URL を共有のトークンに変換する](#encoding-sharing-urls)必要があります。</span><span class="sxs-lookup"><span data-stu-id="29eab-104">To use a sharing URL with this API, your app needs to [transform the URL into a sharing token](#encoding-sharing-urls).</span></span>
+<span data-ttu-id="a79cc-104">この API で共有の URL を使用するには、アプリで [URL を共有のトークンに変換する](#encoding-sharing-urls)必要があります。</span><span class="sxs-lookup"><span data-stu-id="a79cc-104">To use a sharing URL with this API, your app needs to [transform the URL into a sharing token](#encoding-sharing-urls).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="29eab-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="29eab-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="a79cc-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="a79cc-105">Permissions</span></span>
 
-<span data-ttu-id="29eab-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="29eab-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a79cc-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a79cc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="29eab-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="29eab-108">Permission type</span></span>      | <span data-ttu-id="29eab-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="29eab-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a79cc-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="a79cc-108">Permission type</span></span>      | <span data-ttu-id="a79cc-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="a79cc-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="29eab-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="29eab-110">Delegated (work or school account)</span></span> | <span data-ttu-id="29eab-111">Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="29eab-111">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="29eab-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="29eab-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="29eab-113">Files.ReadWrite、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="29eab-113">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="29eab-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="29eab-114">Application</span></span> | <span data-ttu-id="29eab-115">Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="29eab-115">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="a79cc-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="a79cc-110">Delegated (work or school account)</span></span> | <span data-ttu-id="a79cc-111">Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a79cc-111">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="a79cc-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="a79cc-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a79cc-113">Files.ReadWrite、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a79cc-113">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="a79cc-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="a79cc-114">Application</span></span> | <span data-ttu-id="a79cc-115">Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a79cc-115">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="29eab-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="29eab-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a79cc-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="a79cc-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -35,21 +35,21 @@ ms.locfileid: "32520936"
 GET /shares/{shareIdOrEncodedSharingUrl}
 ```
 
-### <a name="path-parameters"></a><span data-ttu-id="29eab-117">パス パラメーター</span><span class="sxs-lookup"><span data-stu-id="29eab-117">Path parameters</span></span>
+### <a name="path-parameters"></a><span data-ttu-id="a79cc-117">パス パラメーター</span><span class="sxs-lookup"><span data-stu-id="a79cc-117">Path parameters</span></span>
 
-| <span data-ttu-id="29eab-118">パラメーター名</span><span class="sxs-lookup"><span data-stu-id="29eab-118">Parameter Name</span></span>                 | <span data-ttu-id="29eab-119">値</span><span class="sxs-lookup"><span data-stu-id="29eab-119">Value</span></span>    | <span data-ttu-id="29eab-120">説明</span><span class="sxs-lookup"><span data-stu-id="29eab-120">Description</span></span>                                                                         |
+| <span data-ttu-id="a79cc-118">パラメーター名</span><span class="sxs-lookup"><span data-stu-id="a79cc-118">Parameter Name</span></span>                 | <span data-ttu-id="a79cc-119">値</span><span class="sxs-lookup"><span data-stu-id="a79cc-119">Value</span></span>    | <span data-ttu-id="a79cc-120">説明</span><span class="sxs-lookup"><span data-stu-id="a79cc-120">Description</span></span>                                                                         |
 |:-------------------------------|:---------|:------------------------------------------------------------------------------------|
-| <span data-ttu-id="29eab-121">**sharingidorencodedsharingurl**</span><span class="sxs-lookup"><span data-stu-id="29eab-121">**shareIdOrEncodedSharingUrl**</span></span> | `string` | <span data-ttu-id="29eab-122">必須。</span><span class="sxs-lookup"><span data-stu-id="29eab-122">Required.</span></span> <span data-ttu-id="29eab-123">API によって返される共有トークン、または適切にエンコードされた共有 URL。</span><span class="sxs-lookup"><span data-stu-id="29eab-123">A sharing token as returned by the API or a properly encoded sharing URL.</span></span> |
+| <span data-ttu-id="a79cc-121">**Sharingidorencodedsharingurl**</span><span class="sxs-lookup"><span data-stu-id="a79cc-121">**shareIdOrEncodedSharingUrl**</span></span> | `string` | <span data-ttu-id="a79cc-122">必須。</span><span class="sxs-lookup"><span data-stu-id="a79cc-122">Required.</span></span> <span data-ttu-id="a79cc-123">API によって返される共有トークン、または適切にエンコードされた共有 URL。</span><span class="sxs-lookup"><span data-stu-id="a79cc-123">A sharing token as returned by the API or a properly encoded sharing URL.</span></span> |
 
-### <a name="encoding-sharing-urls"></a><span data-ttu-id="29eab-124">共有 URL をエンコードする</span><span class="sxs-lookup"><span data-stu-id="29eab-124">Encoding sharing URLs</span></span>
+### <a name="encoding-sharing-urls"></a><span data-ttu-id="a79cc-124">共有 URL をエンコードする</span><span class="sxs-lookup"><span data-stu-id="a79cc-124">Encoding sharing URLs</span></span>
 
-<span data-ttu-id="29eab-125">共有 URL をエンコードするには、次のロジックを使用します。</span><span class="sxs-lookup"><span data-stu-id="29eab-125">To encode a sharing URL, use the following logic:</span></span>
+<span data-ttu-id="a79cc-125">共有 URL をエンコードするには、次のロジックを使用します。</span><span class="sxs-lookup"><span data-stu-id="a79cc-125">To encode a sharing URL, use the following logic:</span></span>
 
-1. <span data-ttu-id="29eab-126">まず、base64 を使用して URL をエンコードします。</span><span class="sxs-lookup"><span data-stu-id="29eab-126">First, use base64 encode the URL.</span></span>
-2. <span data-ttu-id="29eab-127">base64 でエンコードされた結果を [unpadded base64url 形式](https://en.wikipedia.org/wiki/Base64)に変換します (値の末尾から `=` 文字を削除し、`/` を `_`、`+` を `-` に置き換える)。</span><span class="sxs-lookup"><span data-stu-id="29eab-127">Convert the base64 encoded result to [unpadded base64url format](https://en.wikipedia.org/wiki/Base64) by removing `=` characters from the end of the value, replacing `/` with `_` and `+` with `-`.)</span></span>
-3. <span data-ttu-id="29eab-128">文字列の先頭に `u!` を追加します。</span><span class="sxs-lookup"><span data-stu-id="29eab-128">Append `u!` to be beginning of the string.</span></span>
+1. <span data-ttu-id="a79cc-126">まず、base64 を使用して URL をエンコードします。</span><span class="sxs-lookup"><span data-stu-id="a79cc-126">First, use base64 encode the URL.</span></span>
+2. <span data-ttu-id="a79cc-127">base64 でエンコードされた結果を [unpadded base64url 形式](https://en.wikipedia.org/wiki/Base64)に変換します (値の末尾から `=` 文字を削除し、`/` を `_`、`+` を `-` に置き換える)。</span><span class="sxs-lookup"><span data-stu-id="a79cc-127">Convert the base64 encoded result to [unpadded base64url format](https://en.wikipedia.org/wiki/Base64) by removing `=` characters from the end of the value, replacing `/` with `_` and `+` with `-`.)</span></span>
+3. <span data-ttu-id="a79cc-128">文字列の先頭に `u!` を追加します。</span><span class="sxs-lookup"><span data-stu-id="a79cc-128">Append `u!` to be beginning of the string.</span></span>
 
-<span data-ttu-id="29eab-129">URL を C# でエンコードする例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="29eab-129">As an example, to encode a URL in C#:</span></span>
+<span data-ttu-id="a79cc-129">URL を C# でエンコードする例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="a79cc-129">As an example, to encode a URL in C#:</span></span>
 
 ```csharp
 string sharingUrl = "https://onedrive.live.com/redir?resid=1231244193912!12&authKey=1201919!12921!1";
@@ -57,30 +57,30 @@ string base64Value = System.Convert.ToBase64String(System.Text.Encoding.UTF8.Get
 string encodedUrl = "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+','-');
 ```
 
-## <a name="optional-request-headers"></a><span data-ttu-id="29eab-130">オプションの要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="29eab-130">Optional request headers</span></span>
+## <a name="optional-request-headers"></a><span data-ttu-id="a79cc-130">オプションの要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="a79cc-130">Optional request headers</span></span>
 
-| <span data-ttu-id="29eab-131">名前</span><span class="sxs-lookup"><span data-stu-id="29eab-131">Name</span></span>       | <span data-ttu-id="29eab-132">型</span><span class="sxs-lookup"><span data-stu-id="29eab-132">Type</span></span>   | <span data-ttu-id="29eab-133">説明</span><span class="sxs-lookup"><span data-stu-id="29eab-133">Description</span></span>                                                    |
+| <span data-ttu-id="a79cc-131">名前</span><span class="sxs-lookup"><span data-stu-id="a79cc-131">Name</span></span>       | <span data-ttu-id="a79cc-132">型</span><span class="sxs-lookup"><span data-stu-id="a79cc-132">Type</span></span>   | <span data-ttu-id="a79cc-133">説明</span><span class="sxs-lookup"><span data-stu-id="a79cc-133">Description</span></span>                                                    |
 |:-----------|:-------|:---------------------------------------------------------------|
-| <span data-ttu-id="29eab-134">**Prefer**</span><span class="sxs-lookup"><span data-stu-id="29eab-134">**Prefer**</span></span> | <span data-ttu-id="29eab-135">string</span><span class="sxs-lookup"><span data-stu-id="29eab-135">string</span></span> | <span data-ttu-id="29eab-136">省略可能。</span><span class="sxs-lookup"><span data-stu-id="29eab-136">Optional.</span></span> <span data-ttu-id="29eab-137">以下に記載され`prefer`ている値の1つに設定します。</span><span class="sxs-lookup"><span data-stu-id="29eab-137">Set to one of the `prefer` values documented below.</span></span>  |
+| <span data-ttu-id="a79cc-134">**Prefer**</span><span class="sxs-lookup"><span data-stu-id="a79cc-134">**Prefer**</span></span> | <span data-ttu-id="a79cc-135">string</span><span class="sxs-lookup"><span data-stu-id="a79cc-135">string</span></span> | <span data-ttu-id="a79cc-136">省略可能。</span><span class="sxs-lookup"><span data-stu-id="a79cc-136">Optional.</span></span> <span data-ttu-id="a79cc-137">以下に記載され`prefer`ている値の1つに設定します。</span><span class="sxs-lookup"><span data-stu-id="a79cc-137">Set to one of the `prefer` values documented below.</span></span>  |
 
-### <a name="prefer-header-values"></a><span data-ttu-id="29eab-138">ヘッダー値を優先する</span><span class="sxs-lookup"><span data-stu-id="29eab-138">Prefer header values</span></span>
+### <a name="prefer-header-values"></a><span data-ttu-id="a79cc-138">ヘッダー値を優先する</span><span class="sxs-lookup"><span data-stu-id="a79cc-138">Prefer header values</span></span>
 
-| <span data-ttu-id="29eab-139">名前</span><span class="sxs-lookup"><span data-stu-id="29eab-139">Name</span></span>                          | <span data-ttu-id="29eab-140">説明</span><span class="sxs-lookup"><span data-stu-id="29eab-140">Description</span></span>                                                                                             |
+| <span data-ttu-id="a79cc-139">名前</span><span class="sxs-lookup"><span data-stu-id="a79cc-139">Name</span></span>                          | <span data-ttu-id="a79cc-140">説明</span><span class="sxs-lookup"><span data-stu-id="a79cc-140">Description</span></span>                                                                                             |
 |:------------------------------|:--------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="29eab-141">redeemSharingLink</span><span class="sxs-lookup"><span data-stu-id="29eab-141">redeemSharingLink</span></span>             | <span data-ttu-id="29eab-142">共有リンク\*\*\*\* の場合は、発信者に、アイテムへの永続的なアクセス権を付与します。</span><span class="sxs-lookup"><span data-stu-id="29eab-142">If the **shareIdOrEncodedSharingUrl** is a sharing link, grant the caller durable access to the item</span></span>    |
-| <span data-ttu-id="29eab-143">redeemSharingLinkIfNecessary</span><span class="sxs-lookup"><span data-stu-id="29eab-143">redeemSharingLinkIfNecessary</span></span>  | <span data-ttu-id="29eab-144">redeemSharingLink と同じですが、この要求の期間だけアクセスが許可されることが保証されます。</span><span class="sxs-lookup"><span data-stu-id="29eab-144">Same as redeemSharingLink, but access is only guaranteed to be granted for the duration of this request</span></span> |
+| <span data-ttu-id="a79cc-141">redeemSharingLink</span><span class="sxs-lookup"><span data-stu-id="a79cc-141">redeemSharingLink</span></span>             | <span data-ttu-id="a79cc-142">共有リンク\*\*\*\* の場合は、発信者に、アイテムへの永続的なアクセス権を付与します。</span><span class="sxs-lookup"><span data-stu-id="a79cc-142">If the **shareIdOrEncodedSharingUrl** is a sharing link, grant the caller durable access to the item</span></span>    |
+| <span data-ttu-id="a79cc-143">redeemSharingLinkIfNecessary</span><span class="sxs-lookup"><span data-stu-id="a79cc-143">redeemSharingLinkIfNecessary</span></span>  | <span data-ttu-id="a79cc-144">RedeemSharingLink と同じですが、この要求の期間だけアクセスが許可されることが保証されます。</span><span class="sxs-lookup"><span data-stu-id="a79cc-144">Same as redeemSharingLink, but access is only guaranteed to be granted for the duration of this request</span></span> |
 
-<span data-ttu-id="29eab-145">redeemSharingLink は、発信者と同等であると考えて、共有リンクに移動します (共有ジェスチャに同意します)。 redeemSharingLinkIfNecessary は、リンクの場所を単にピークすることを目的としたシナリオに対して使用されます。metadata.</span><span class="sxs-lookup"><span data-stu-id="29eab-145">redeemSharingLink should be considered equivalent to the caller navigating to the sharing link the browser (accepting the sharing gesture), whereas redeemSharingLinkIfNecessary is intended for scenarios where the intention is simply to peek at the link's metadata.</span></span>
+<span data-ttu-id="a79cc-145">redeemSharingLink は、発信者と同等であると考えて、共有リンクに移動します (共有ジェスチャに同意します)。 redeemSharingLinkIfNecessary は、リンクの場所を単にピークすることを目的としたシナリオに対して使用されます。metadata.</span><span class="sxs-lookup"><span data-stu-id="a79cc-145">redeemSharingLink should be considered equivalent to the caller navigating to the sharing link the browser (accepting the sharing gesture), whereas redeemSharingLinkIfNecessary is intended for scenarios where the intention is simply to peek at the link's metadata.</span></span>
 
-## <a name="response"></a><span data-ttu-id="29eab-146">応答</span><span class="sxs-lookup"><span data-stu-id="29eab-146">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a79cc-146">応答</span><span class="sxs-lookup"><span data-stu-id="a79cc-146">Response</span></span>
 
-<span data-ttu-id="29eab-147">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [sharedDriveItem](../resources/shareddriveitem.md) リソースを返します。</span><span class="sxs-lookup"><span data-stu-id="29eab-147">If successful, this method returns a `200 OK` response code and a [sharedDriveItem](../resources/shareddriveitem.md) resource in the response body.</span></span>
+<span data-ttu-id="a79cc-147">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [sharedDriveItem](../resources/shareddriveitem.md) リソースを返します。</span><span class="sxs-lookup"><span data-stu-id="a79cc-147">If successful, this method returns a `200 OK` response code and a [sharedDriveItem](../resources/shareddriveitem.md) resource in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="29eab-148">例</span><span class="sxs-lookup"><span data-stu-id="29eab-148">Example</span></span>
+## <a name="example"></a><span data-ttu-id="a79cc-148">例</span><span class="sxs-lookup"><span data-stu-id="a79cc-148">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="29eab-149">要求</span><span class="sxs-lookup"><span data-stu-id="29eab-149">Request</span></span>
+### <a name="request"></a><span data-ttu-id="a79cc-149">要求</span><span class="sxs-lookup"><span data-stu-id="a79cc-149">Request</span></span>
 
-<span data-ttu-id="29eab-150">以下は、共有アイテムを取得する要求の例です。</span><span class="sxs-lookup"><span data-stu-id="29eab-150">Here is an example of the request to retrieve a shared item:</span></span>
+<span data-ttu-id="a79cc-150">以下は、共有アイテムを取得する要求の例です。</span><span class="sxs-lookup"><span data-stu-id="a79cc-150">Here is an example of the request to retrieve a shared item:</span></span>
 
 <!-- { "blockType": "request", "name": "get-shared-root" } -->
 
@@ -88,9 +88,9 @@ string encodedUrl = "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+'
 GET /shares/{shareIdOrEncodedSharingUrl}
 ```
 
-### <a name="response"></a><span data-ttu-id="29eab-151">応答</span><span class="sxs-lookup"><span data-stu-id="29eab-151">Response</span></span>
+### <a name="response"></a><span data-ttu-id="a79cc-151">応答</span><span class="sxs-lookup"><span data-stu-id="a79cc-151">Response</span></span>
 
-<span data-ttu-id="29eab-152">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="29eab-152">Here is an example of the response.</span></span>
+<span data-ttu-id="a79cc-152">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="a79cc-152">Here is an example of the response.</span></span>
 
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.sharedDriveItem" } -->
 
@@ -109,16 +109,26 @@ Content-type: application/json
   }
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="a79cc-153">SDK サンプルコード</span><span class="sxs-lookup"><span data-stu-id="a79cc-153">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="a79cc-154">Visual</span><span class="sxs-lookup"><span data-stu-id="a79cc-154">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-shared-root-Cs-snippets.md)]
 
-## <a name="access-the-shared-item-directly"></a><span data-ttu-id="29eab-153">共有アイテムに直接アクセスする</span><span class="sxs-lookup"><span data-stu-id="29eab-153">Access the shared item directly</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a79cc-155">Java</span><span class="sxs-lookup"><span data-stu-id="a79cc-155">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-shared-root-Javascript-snippets.md)]
 
-<span data-ttu-id="29eab-p104">[**SharedDriveItem**](../resources/shareddriveitem.md) には、いくつかの有用な情報が含まれていますが、ほとんどのアプリは、共有の [DriveItem](../resources/driveitem.md)に直接アクセスする必要があります。**SharedDriveItem** リソースには、共有アイテムのスコープ内でコンテンツにアクセスできる、**root** と **items** のリレーションシップが含まれています。</span><span class="sxs-lookup"><span data-stu-id="29eab-p104">While the [**SharedDriveItem**](../resources/shareddriveitem.md) contains some useful information, most apps will want to directly access the shared [DriveItem](../resources/driveitem.md). The **SharedDriveItem** resource includes a **root** and **items** relationships which can access content within the scope of the shared item.</span></span>
+---
 
-## <a name="example-single-file"></a><span data-ttu-id="29eab-156">例 (単一ファイル)</span><span class="sxs-lookup"><span data-stu-id="29eab-156">Example (single file)</span></span>
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-### <a name="request"></a><span data-ttu-id="29eab-157">要求</span><span class="sxs-lookup"><span data-stu-id="29eab-157">Request</span></span>
+## <a name="access-the-shared-item-directly"></a><span data-ttu-id="a79cc-156">共有アイテムに直接アクセスする</span><span class="sxs-lookup"><span data-stu-id="a79cc-156">Access the shared item directly</span></span>
 
-<span data-ttu-id="29eab-158">**driveItem** リレーションシップを要求することで、共有された **DriveItem** が返されます。</span><span class="sxs-lookup"><span data-stu-id="29eab-158">By requesting the **driveItem** relationship, the **DriveItem** that was shared will be returned.</span></span>
+<span data-ttu-id="a79cc-p104">[**SharedDriveItem**](../resources/shareddriveitem.md) には、いくつかの有用な情報が含まれていますが、ほとんどのアプリは、共有の [DriveItem](../resources/driveitem.md)に直接アクセスする必要があります。**SharedDriveItem** リソースには、共有アイテムのスコープ内でコンテンツにアクセスできる、**root** と **items** のリレーションシップが含まれています。</span><span class="sxs-lookup"><span data-stu-id="a79cc-p104">While the [**SharedDriveItem**](../resources/shareddriveitem.md) contains some useful information, most apps will want to directly access the shared [DriveItem](../resources/driveitem.md). The **SharedDriveItem** resource includes a **root** and **items** relationships which can access content within the scope of the shared item.</span></span>
+
+## <a name="example-single-file"></a><span data-ttu-id="a79cc-159">例 (単一ファイル)</span><span class="sxs-lookup"><span data-stu-id="a79cc-159">Example (single file)</span></span>
+
+### <a name="request"></a><span data-ttu-id="a79cc-160">要求</span><span class="sxs-lookup"><span data-stu-id="a79cc-160">Request</span></span>
+
+<span data-ttu-id="a79cc-161">**driveItem** リレーションシップを要求することで、共有された **DriveItem** が返されます。</span><span class="sxs-lookup"><span data-stu-id="a79cc-161">By requesting the **driveItem** relationship, the **DriveItem** that was shared will be returned.</span></span>
 
 <!-- { "blockType": "request", "name": "get-shared-driveitem" } -->
 
@@ -126,7 +136,7 @@ Content-type: application/json
 GET /shares/{shareIdOrUrl}/driveItem
 ```
 
-### <a name="response"></a><span data-ttu-id="29eab-159">応答</span><span class="sxs-lookup"><span data-stu-id="29eab-159">Response</span></span>
+### <a name="response"></a><span data-ttu-id="a79cc-162">応答</span><span class="sxs-lookup"><span data-stu-id="a79cc-162">Response</span></span>
 
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.driveItem" } -->
 
@@ -142,12 +152,22 @@ Content-Type: application/json
   "size": 109112
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="a79cc-163">SDK サンプルコード</span><span class="sxs-lookup"><span data-stu-id="a79cc-163">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="a79cc-164">Visual</span><span class="sxs-lookup"><span data-stu-id="a79cc-164">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-shared-driveitem-Cs-snippets.md)]
 
-## <a name="example-shared-folder"></a><span data-ttu-id="29eab-160">例 (共有フォルダー)</span><span class="sxs-lookup"><span data-stu-id="29eab-160">Example (shared folder)</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a79cc-165">Java</span><span class="sxs-lookup"><span data-stu-id="a79cc-165">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-shared-driveitem-Javascript-snippets.md)]
 
-### <a name="request"></a><span data-ttu-id="29eab-161">要求</span><span class="sxs-lookup"><span data-stu-id="29eab-161">Request</span></span>
+---
 
-<span data-ttu-id="29eab-162">**driveItem** リレーションシップを要求して、**children** コレクションを展開することで、共有されている **DriveItem** が共有フォルダー内のファイルとともに返されます。</span><span class="sxs-lookup"><span data-stu-id="29eab-162">By requesting the **driveItem** relationship and expanding the **children** collection, the **DriveItem** that was shared will be returned along with the files within the shared folder.</span></span>
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+## <a name="example-shared-folder"></a><span data-ttu-id="a79cc-166">例 (共有フォルダー)</span><span class="sxs-lookup"><span data-stu-id="a79cc-166">Example (shared folder)</span></span>
+
+### <a name="request"></a><span data-ttu-id="a79cc-167">要求</span><span class="sxs-lookup"><span data-stu-id="a79cc-167">Request</span></span>
+
+<span data-ttu-id="a79cc-168">**driveItem** リレーションシップを要求して、**children** コレクションを展開することで、共有されている **DriveItem** が共有フォルダー内のファイルとともに返されます。</span><span class="sxs-lookup"><span data-stu-id="a79cc-168">By requesting the **driveItem** relationship and expanding the **children** collection, the **DriveItem** that was shared will be returned along with the files within the shared folder.</span></span>
 
 <!-- { "blockType": "request", "name": "get-shared-driveitem-expand-children" } -->
 
@@ -155,7 +175,7 @@ Content-Type: application/json
 GET /shares/{shareIdOrUrl}/driveItem?$expand=children
 ```
 
-### <a name="response"></a><span data-ttu-id="29eab-163">応答</span><span class="sxs-lookup"><span data-stu-id="29eab-163">Response</span></span>
+### <a name="response"></a><span data-ttu-id="a79cc-169">応答</span><span class="sxs-lookup"><span data-stu-id="a79cc-169">Response</span></span>
 
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.driveItem" } -->
 
@@ -185,14 +205,24 @@ Content-Type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="a79cc-170">SDK サンプルコード</span><span class="sxs-lookup"><span data-stu-id="a79cc-170">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="a79cc-171">Visual</span><span class="sxs-lookup"><span data-stu-id="a79cc-171">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-shared-driveitem-expand-children-Cs-snippets.md)]
 
-## <a name="error-responses"></a><span data-ttu-id="29eab-164">エラー応答</span><span class="sxs-lookup"><span data-stu-id="29eab-164">Error Responses</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a79cc-172">Java</span><span class="sxs-lookup"><span data-stu-id="a79cc-172">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-shared-driveitem-expand-children-Javascript-snippets.md)]
 
-<span data-ttu-id="29eab-165">エラーがどのような形で返されるかについては、「[エラー応答][error-response]」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="29eab-165">Read the [Error Responses][error-response] topic for more information about how errors are returned.</span></span>
+---
 
-## <a name="remarks"></a><span data-ttu-id="29eab-166">備考</span><span class="sxs-lookup"><span data-stu-id="29eab-166">Remarks</span></span>
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-* <span data-ttu-id="29eab-167">OneDrive for Business と SharePoint の場合、Shares API には常に認証が必要です。また、ユーザー コンテキストを使用せずに、匿名で共有コンテンツにアクセスするためには使用できません。</span><span class="sxs-lookup"><span data-stu-id="29eab-167">For OneDrive for Business and SharePoint, the Shares API always requires authentication and cannot be used to access anonymously shared content without a user context.</span></span>
+## <a name="error-responses"></a><span data-ttu-id="a79cc-173">エラー応答</span><span class="sxs-lookup"><span data-stu-id="a79cc-173">Error Responses</span></span>
+
+<span data-ttu-id="a79cc-174">エラーがどのような形で返されるかについては、「[エラー応答][error-response]」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a79cc-174">Read the [Error Responses][error-response] topic for more information about how errors are returned.</span></span>
+
+## <a name="remarks"></a><span data-ttu-id="a79cc-175">備考</span><span class="sxs-lookup"><span data-stu-id="a79cc-175">Remarks</span></span>
+
+* <span data-ttu-id="a79cc-176">OneDrive for Business と SharePoint の場合、Shares API には常に認証が必要です。また、ユーザー コンテキストを使用せずに、匿名で共有コンテンツにアクセスするためには使用できません。</span><span class="sxs-lookup"><span data-stu-id="a79cc-176">For OneDrive for Business and SharePoint, the Shares API always requires authentication and cannot be used to access anonymously shared content without a user context.</span></span>
 
 [error-response]: /graph/errors
 
@@ -201,5 +231,13 @@ Content-Type: application/json
   "description": "Access the contents of a sharing link with the OneDrive API.",
   "keywords": "shares,shared,sharing,share link, sharing link, share id, share token",
   "section": "documentation",
-  "tocPath": "Sharing/Use a link"
+  "tocPath": "Sharing/Use a link",
+  "suppressions": [
+    "Error: /api-reference/beta/api/shares-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/shares-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/shares-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/shares-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/shares-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/shares-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 } -->
