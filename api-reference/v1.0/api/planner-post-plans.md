@@ -4,12 +4,12 @@ description: この API を使用して、新しい **plannerPlan** を作成し
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: d03cab3aafb264ef6768e2c79a3787a2b6e3c134
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0d3dfac3a4be76931ba29d5b8884412ae5dbe1ed
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562049"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33611517"
 ---
 # <a name="create-plannerplan"></a>Create plannerPlan
 
@@ -42,7 +42,7 @@ POST /planner/plans
 
 要求本文で、[plannerPlan](../resources/plannerplan.md) オブジェクトの JSON 表記を指定します。**plannerPlan** 所有者プロパティは、[group](../resources/group.md) オブジェクトの ID に設定する必要があります。
 
->**注:** プランを作成するユーザーは、そのプランを所有するグループのメンバーである必要があります。 [[グループの作成](../api/group-post-groups.md)] を使用して新しいグループを作成した場合、メンバーとしてグループに追加されることはありません。 グループを作成したら、[グループ post メンバー](../api/group-post-members.md)を使用して自分自身をメンバーとして追加します。
+>**注意:** プランを作成するユーザーは、プランを所有するグループのメンバーである必要があります。 あなたが新しいグループを[グループの作成](../api/group-post-groups.md)を使用して作成しても、メンバーとしてそのグループに追加されることはありません。 グループを作成したら、[グループ投稿メンバー](../api/group-post-members.md)を使用して自分自身をメンバーとして追加します。
 
 
 ## <a name="response"></a>応答
@@ -103,6 +103,16 @@ Content-length: 357
   "id": "xqQg5FS2LkCp935s-FIFm2QAFkHM"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_plannerplan_from_planner-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_plannerplan_from_planner-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -111,5 +121,9 @@ Content-length: 357
   "description": "Create plannerPlan",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/planner-post-plans.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/planner-post-plans.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

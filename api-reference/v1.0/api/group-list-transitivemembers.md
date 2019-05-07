@@ -4,12 +4,12 @@ description: グループのメンバーの一覧を取得します。 グルー
 author: anchanda
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: dd6417916a7d1e2f79735db3dce4f1c3465d6577
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9c604853dcaca2f07105d3fb765c74d769836bd5
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534711"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33613782"
 ---
 # <a name="list-group-transitive-members"></a>グループ推移性のメンバーを一覧表示する
 
@@ -21,11 +21,11 @@ ms.locfileid: "32534711"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | directory.accessasuser.all。 all、user. all、all、all、all、all、user. all    |
+|委任 (職場または学校のアカウント) | Directory.accessasuser.all。 all、user. all、all、all、all、all、User. all    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
 |アプリケーション | ディレクトリ。すべてのユーザーを取得します。 |
 
->**注:** 非表示のメンバーシップグループのメンバーを一覧表示するには、"hidden" アクセス許可が必要です。
+>**注:** 非表示のメンバーシップグループのメンバーを一覧表示するには、"Hidden" アクセス許可が必要です。
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -103,6 +103,16 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_group_transitivemembers-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_group_transitivemembers-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -111,5 +121,9 @@ Content-type: application/json
   "description": "List transitive group members",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/group-list-transitivemembers.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/group-list-transitivemembers.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

@@ -1,19 +1,19 @@
 ---
 title: mailFolder を削除する
-description: 指定した mailfolder を削除します。
+description: 指定した mailFolder を削除します。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 56b1fc45b79172f64ceb1bf9b0d6f69da1695bcf
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1effb7d8e0ba6a27ddbef979f85c6e1e81adcecd
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32565465"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33612645"
 ---
 # <a name="delete-mailfolder"></a>mailFolder を削除する
 
-指定した[mailfolder](../resources/mailfolder.md)を削除します。
+指定した[Mailfolder](../resources/mailfolder.md)を削除します。
 
 メールフォルダーは、フォルダー ID または[既知のフォルダー名](../resources/mailfolder.md)(存在する場合) で指定できます。 
 
@@ -65,6 +65,16 @@ DELETE https://graph.microsoft.com/v1.0/me/mailFolders/{id}
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/delete_mailfolder-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/delete_mailfolder-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -73,5 +83,9 @@ HTTP/1.1 204 No Content
   "description": "Delete mailFolder",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/mailfolder-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/mailfolder-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->
