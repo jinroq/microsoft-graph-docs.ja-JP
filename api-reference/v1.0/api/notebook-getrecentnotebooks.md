@@ -4,16 +4,14 @@ description: サインインしたユーザーによってアクセスされた 
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: a911776e76c608576a3e86364970c7eb06c7f27e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f6aa4b9d81e29f72545299c4b91da5f13676136b
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562189"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33612115"
 ---
 # <a name="notebook-getrecentnotebooks"></a>ノートブック: getRecentNotebooks
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 サインインしたユーザーによってアクセスされた [recentNotebook](../resources/recentnotebook.md) インスタンスの一覧を取得します。
 
@@ -60,16 +58,16 @@ GET /users/{id | userPrincipalName}/onenote/notebooks/getRecentNotebooks(include
 次の例は要求を示しています。
 <!-- { "blockType": "request", "name": "recent_notebooks", "scopes": "notes.read" } -->
 ```http
-GET https://graph.microsoft.com/v1.0/onenote/notebooks/getrecentnotebooks(includePersonalNotebooks=true)
+GET https://graph.microsoft.com/v1.0/me/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks=true)
 ```
 
-##### <a name="response"></a>応答
+#### <a name="response"></a>応答
 次の例は応答を示しています。
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.notebook",
+  "@odata.type": "Collection(microsoft.graph.recentNotebook)",
   "isCollection": true
 } -->
 ```http
@@ -80,7 +78,7 @@ Content-Length: 1110
 {
   "value":[
     {
-      "name":"Personal Notebook","lastAccessedTime":"timestamp","links":{
+      "displayName":"Personal Notebook","lastAccessedTime":"timestamp","links":{
         "oneNoteClientUrl":{
           "href":"onenote:href-value"
         },"oneNoteWebUrl":{
@@ -88,7 +86,7 @@ Content-Length: 1110
         }
       },"sourceService":"OneDrive"
     },{
-      "name":"Team Shared Notebook","lastAccessedTime":"timestamp","links":{
+      "displayName":"Team Shared Notebook","lastAccessedTime":"timestamp","links":{
         "oneNoteClientUrl":{
           "href":"onenote:href-value"
         },"oneNoteWebUrl":{
@@ -99,3 +97,24 @@ Content-Length: 1110
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/recent_notebooks-Cs-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Example",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/notebook-getrecentnotebooks.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/notebook-getrecentnotebooks.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

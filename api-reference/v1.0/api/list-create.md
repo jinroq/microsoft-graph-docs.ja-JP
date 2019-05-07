@@ -5,12 +5,12 @@ ms.date: 09/11/2017
 title: SharePoint リストを作成する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 7faabe9bddc806d4c416ebed439592ec8630e8af
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 576c7b8c5f2f3e7b75e336cf898312a24e712903
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568097"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33613195"
 ---
 # <a name="create-a-new-list"></a>新しいリストを作成する
 
@@ -99,6 +99,16 @@ Content-type: application/json
   }
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/create-list-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create-list-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 **注:** 応答オブジェクトは、わかりやすくするために切り詰められています。
 実際の呼び出しでは、既定のプロパティが返されます。
@@ -111,5 +121,9 @@ Content-type: application/json
   "description": "Create a new SharePoint list.",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "List/Create"
+  "tocPath": "List/Create",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/list-create.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/list-create.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 } -->

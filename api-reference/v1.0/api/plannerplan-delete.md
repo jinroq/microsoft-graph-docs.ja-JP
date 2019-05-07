@@ -4,16 +4,14 @@ description: '**plannerPlan** を削除します。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 24eb9885ae9d6acb03947aa00b2d315fdb794e15
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 62b181582027b226ef8859b9927744397115fe40
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32525671"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33608882"
 ---
 # <a name="delete-plannerplan"></a>Delete plannerPlan
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **plannerPlan** を削除します。
 ## <a name="permissions"></a>アクセス許可
@@ -28,7 +26,7 @@ ms.locfileid: "32525671"
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /planner/plans/<id>
+DELETE /planner/plans/{id}
 
 ```
 ## <a name="request-headers"></a>要求ヘッダー
@@ -54,7 +52,7 @@ DELETE /planner/plans/<id>
   "name": "delete_plannerplan"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/planner/plans/<id>
+DELETE https://graph.microsoft.com/v1.0/planner/plans/{id}
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ```
 ##### <a name="response"></a>応答
@@ -66,18 +64,27 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/delete_plannerplan-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/delete_plannerplan-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Delete plannerPlan",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/plannerplan-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/v1.0/api/plannerplan-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/plannerplan-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-}
--->
+}-->

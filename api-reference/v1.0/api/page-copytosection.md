@@ -1,20 +1,20 @@
 ---
-title: 'page: copytosection'
+title: 'page: copyToSection'
 description: ページを特定のセクションにコピーします。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: b09c47ab7dbaec7b7dd63d134cdefae1260d9e8d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ba7fe9105a8bd610263583cd314a98e69cd50814
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556663"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33611593"
 ---
-# <a name="page-copytosection"></a>page: copytosection
+# <a name="page-copytosection"></a>page: copyToSection
 ページを特定のセクションにコピーします。
 
-コピー操作では、非同期呼び出しパターンに従います。最初に copy アクションを呼び出してから、結果の操作エンドポイントをポーリングします。
+コピー操作では、非同期呼び出しパターンに従います。最初に Copy アクションを呼び出してから、結果の操作エンドポイントをポーリングします。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -79,6 +79,16 @@ Content-length: 52
 ```http
 HTTP/1.1 202 Accepted
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/page_copytosection-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/page_copytosection-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -87,5 +97,9 @@ HTTP/1.1 202 Accepted
   "description": "page: copyToSection",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/page-copytosection.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/page-copytosection.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

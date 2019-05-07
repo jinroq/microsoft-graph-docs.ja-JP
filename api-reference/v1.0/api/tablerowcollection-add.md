@@ -4,12 +4,12 @@ description: '表の末尾に行を追加します。 この api を使用して
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: f51e7b9ff52c728a7ac2446d538b939d8d5be57a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: aeb1e267fc9bc21cc1fda8a85cd8242505a11514
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32520285"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33602388"
 ---
 # <a name="tablerowcollection-add"></a>TableRowCollection: add　
 
@@ -93,6 +93,14 @@ Content-length: 45
   "values": "values-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/tablerowcollection_add-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -102,6 +110,7 @@ Content-length: 45
   "keywords": "",
   "section": "documentation",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/tablerowcollection-add.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Warning: /api-reference/v1.0/api/tablerowcollection-add.md/tablerowcollection_add/values:
       Inconsistent types between parameter (Collection) and table (None)",
     "Error: /api-reference/v1.0/api/tablerowcollection-add.md/tablerowcollection_add/values:

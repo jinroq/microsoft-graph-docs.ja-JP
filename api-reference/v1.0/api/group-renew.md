@@ -4,12 +4,12 @@ description: グループの有効期限を更新します。 グループが更
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 46a51d0a1d4bea5cebc4c3178f6776d80f313fbd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8f77eb80bed4188299aedf1efd0b6800975f38ac
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579010"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33613647"
 ---
 # <a name="group-renew"></a>group: renew
 
@@ -59,7 +59,7 @@ POST https://graph.microsoft.com/v1.0/groups/{id}/renew
 ```
 
 ##### <a name="response"></a>応答
-注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。
+注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -68,6 +68,16 @@ POST https://graph.microsoft.com/v1.0/groups/{id}/renew
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/group_renew-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/group_renew-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -76,5 +86,9 @@ HTTP/1.1 204 No Content
   "description": "group: renew",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/group-renew.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/group-renew.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

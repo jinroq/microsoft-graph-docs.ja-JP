@@ -4,12 +4,12 @@ description: このメソッドを呼び出すと、現在のユーザーがそ�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 20d34ba100ee795077e59c8a98d15d5e45b29dff
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 66a33d103642972aebf55a0437f03840c55a4ef5
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563473"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33613614"
 ---
 # <a name="group-subscribebymail"></a>グループ: subscribeByMail
 このメソッドを呼び出すと、現在のユーザーがそのグループ内の新規投稿、イベント、およびファイルに関するメール通知を受信できるようになります。Office 365 のグループのみをサポートします。
@@ -60,6 +60,16 @@ POST https://graph.microsoft.com/v1.0/groups/{id}/subscribeByMail
 ```http
 HTTP/1.1 200 OK
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/group_subscribebymail-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/group_subscribebymail-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -68,5 +78,9 @@ HTTP/1.1 200 OK
   "description": "group: subscribeByMail",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/group-subscribebymail.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/group-subscribebymail.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

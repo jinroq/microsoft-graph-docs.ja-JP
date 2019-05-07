@@ -1,17 +1,17 @@
 ---
-title: onenoteOperation を取得する
+title: OnenoteOperation を取得する
 description: '長時間実行している OneNote 操作の状態を取得します。 これ`CopyNotebook`は`CopyToNotebook` `CopyToSectionGroup`、、、、などの応答の**操作場所**ヘッダーを返す操作に適用され`and CopyToSection`ます。   '
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: c869702b856f03bccbbc5101e8e72facd3287738
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d02e648a446480248f352d20d799a4888ea2559d
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562105"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33611803"
 ---
-# <a name="get-onenoteoperation"></a>onenoteOperation を取得する
+# <a name="get-onenoteoperation"></a>OnenoteOperation を取得する
 
 長時間実行している OneNote 操作の状態を取得します。 これ`CopyNotebook`は`CopyToNotebook` `CopyToSectionGroup`、、、、などの応答の**操作場所**ヘッダーを返す操作に適用され`and CopyToSection`ます。   
 
@@ -26,7 +26,7 @@ ms.locfileid: "32562105"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | メモ作成、メモ読み取り、メモ (すべて)、メモ書き込み、メモ (すべて)    |
+|委任 (職場または学校のアカウント) | Notes.Create、Notes.Read、Notes.ReadWrite、Notes.Read.All、Notes.ReadWrite.All    |
 |委任 (個人用 Microsoft アカウント) | Notes.Create、Notes.Read、Notes.ReadWrite    |
 |アプリケーション | Notes.Read.All、Notes.ReadWrite.All |
 
@@ -38,7 +38,7 @@ GET /users/{id | userPrincipalName}/onenote/operations/{id}
 GET /groups/{id}/onenote/operations/{id}
 GET /sites/{id}/onenote/operations/{id}
 ```
-## <a name="optional-query-parameters"></a>省略可能なクエリ パラメーター
+## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 なし。
 
 ## <a name="request-headers"></a>要求ヘッダー
@@ -84,6 +84,16 @@ Content-length: 215
   "resourceId": "resourceId-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_onenoteoperation-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_onenoteoperation-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -92,5 +102,9 @@ Content-length: 215
   "description": "Get onenoteOperation",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/onenoteoperation-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/onenoteoperation-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

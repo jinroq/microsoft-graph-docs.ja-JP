@@ -1,21 +1,21 @@
 ---
 title: グループ設定を作成する
-description: この API を使用して、groupsettingtemplates で利用可能なテンプレートに基づいて新しい設定を作成します。 これらの設定は、テナントレベルまたはグループレベルで行うことができます。 作成要求では、テンプレートで定義されているすべての設定の settingvalues を指定する必要があります。 グループ固有の設定では、グループのメンバーがゲストユーザーを招待できるかどうかを制御する設定のみが可能です。 これは、グループにゲストユーザーを追加する機能が一般に利用可能になったときに、この動作を制御します。
+description: この API を使用して、groupSettingTemplates で利用可能なテンプレートに基づいて新しい設定を作成します。 これらの設定は、テナントレベルまたはグループレベルで行うことができます。 作成要求では、テンプレートで定義されているすべての設定の settingValues を指定する必要があります。 グループ固有の設定では、グループのメンバーがゲストユーザーを招待できるかどうかを制御する設定のみが可能です。 これは、グループにゲストユーザーを追加する機能が一般に利用可能になったときに、この動作を制御します。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e87e34f5816818c25cef5768c08ab8f7c73a3a0f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d8c559455c1525727a9fb397e4578839c8b6356f
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32577799"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33613175"
 ---
 # <a name="create-a-group-setting"></a>グループ設定を作成する
 
 この API を使用して、[groupSettingTemplates](../resources/groupsettingtemplate.md) で使用可能なテンプレートに基づいて新しい設定を作成します。これらの設定は、テナント レベルまたはグループ レベルで行うことができます。作成要求は、テンプレートに定義されているすべての設定の [settingValues](../resources/settingvalue.md) を提供する必要があります。グループ固有の設定では、グループのメンバーがゲスト ユーザーを招待できるかどうかの管理のみが設定できます。グループにゲスト ユーザーを追加する機能が一般的に利用可能になると、上記の動作は制御されます。
 
-テンプレートと、それらが v2.0 でサポートするプロパティの一覧については、 [groupsettingtemplate クエリ](https://developer.microsoft.com/graph/graph-explorer?request=groupSettingTemplates&version=v1.0)を使用してください (ベータ版エンドポイントの場合は、call [directorysettingtemplates](https://developer.microsoft.com/graph/graph-explorer?request=directorySettingTemplates&version=beta))。
+テンプレートと、それらが v2.0 でサポートするプロパティの一覧については、 [Groupsettingtemplate クエリ](https://developer.microsoft.com/graph/graph-explorer?request=groupSettingTemplates&version=v1.0)を使用してください (ベータ版エンドポイントの場合は、Call [directorysettingtemplates](https://developer.microsoft.com/graph/graph-explorer?request=directorySettingTemplates&version=beta))。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -76,7 +76,7 @@ Content-length: 215
 要求本文で、[groupSetting](../resources/groupsetting.md) オブジェクトの JSON 表記を指定します。
 ##### <a name="response"></a>応答
 
-注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。
+注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -99,6 +99,16 @@ Content-length: 238
   "id": "id-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_groupsetting_from_groupsettings-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_groupsetting_from_groupsettings-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -107,5 +117,9 @@ Content-length: 238
   "description": "Create groupsetting",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/groupsetting-post-groupsettings.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/groupsetting-post-groupsettings.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

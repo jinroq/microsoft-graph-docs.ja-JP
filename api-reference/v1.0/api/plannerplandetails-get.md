@@ -4,16 +4,14 @@ description: '**plannerplandetails** オブジェクトのプロパティと関�
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 3c2c27492d42ca9919931ba3e67df5fdcf8c61d2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a6393a1bb0b91a19cfc650c4ec10d0e79598a805
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32525678"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33609478"
 ---
 # <a name="get-plannerplandetails"></a>Get plannerPlanDetails
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **plannerplandetails** オブジェクトのプロパティと関係を取得します。
 ## <a name="permissions"></a>アクセス許可
@@ -28,7 +26,7 @@ ms.locfileid: "32525678"
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /planner/plans/<id>/details
+GET /planner/plans/{id}/details
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
@@ -53,7 +51,7 @@ GET /planner/plans/<id>/details
   "name": "get_plannerplandetails"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/planner/plans/xqQg5FS2LkCp935s-FIFm2QAFkHM/details
+GET https://graph.microsoft.com/v1.0/planner/plans/{plan-id}/details
 ```
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
@@ -83,18 +81,27 @@ Content-length: 373
   "id": "xqQg5FS2LkCp935s-FIFm2QAFkHM"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_plannerplandetails-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_plannerplandetails-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Get plannerPlanDetails",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/plannerplandetails-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/v1.0/api/plannerplandetails-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/plannerplandetails-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-}
--->
+}-->

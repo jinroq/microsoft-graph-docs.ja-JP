@@ -4,12 +4,12 @@ description: アカウント別の OneDrive の使用状況に関する詳細を
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: df675e28caa9fe8fa6e2b586e17ec3cd7c01331c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 270410376340bcd3c1e82461f71ad7fdc4727ffe
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32574216"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33604929"
 ---
 # <a name="reportroot-getonedriveusageaccountdetail"></a>reportRoot: getOneDriveUsageAccountDetail
 
@@ -23,7 +23,7 @@ ms.locfileid: "32574216"
 
 | アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ) |
 | :------------------------------------- | :--------------------------------------- |
-| 委任 (職場または学校のアカウント)     | Reports.Read.All                         |
+| 委任 (職場または学校アカウント)     | Reports.Read.All                         |
 | 委任 (個人用 Microsoft アカウント) | サポートされていません。                           |
 | アプリケーション                            | Reports.Read.All                         |
 
@@ -104,6 +104,16 @@ HTTP/1.1 302 Found
 Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/reportroot_getonedriveusageuserdetail-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/reportroot_getonedriveusageuserdetail-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 302 リダイレクトに従うと、ダウンロードされる CSV ファイルは次のスキーマを持つことになります。
 
@@ -115,3 +125,16 @@ Content-Type: application/octet-stream
 
 Report Refresh Date,Site URL,Owner Display Name,Is Deleted,Last Activity Date,File Count,Active File Count,Storage Used (Byte),Storage Allocated (Byte),Report Period
 ```
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Example",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/reportroot-getonedriveusageaccountdetail.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/reportroot-getonedriveusageaccountdetail.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

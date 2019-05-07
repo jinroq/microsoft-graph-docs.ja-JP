@@ -4,12 +4,12 @@ description: ノートブックオブジェクトのプロパティとリレー�
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 01e8caa93703fd10e81cc82a23931ab426b0773c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 260697e42d0bb53e836aad96ea244f9e4f208dcf
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575913"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33612034"
 ---
 # <a name="get-notebook"></a>ノートブックを取得する
 
@@ -19,7 +19,7 @@ ms.locfileid: "32575913"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | メモ作成、メモ読み取り、メモ (すべて)、メモ書き込み、メモ (すべて)    |
+|委任 (職場または学校のアカウント) | Notes.Create、Notes.Read、Notes.ReadWrite、Notes.Read.All、Notes.ReadWrite.All    |
 |委任 (個人用 Microsoft アカウント) | Notes.Create、Notes.Read、Notes.ReadWrite    |
 |アプリケーション | Notes.Read.All、Notes.ReadWrite.All |
 
@@ -31,10 +31,10 @@ GET /users/{id | userPrincipalName}/onenote/notebooks/{id}
 GET /groups/{id}/onenote/notebooks/{id}
 GET /sites/{id}/onenote/notebooks/{id}
 ```
-## <a name="optional-query-parameters"></a>省略可能なクエリ パラメーター
+## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、 `select`応答`expand`をカスタマイズするためのおよび[OData クエリパラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 
-ノートブック`expand`の有効な値`sections`は`sectionGroups`、とです。
+ノートブックの有効な `expand` 値は `sections` および `sectionGroups` です。
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
@@ -87,6 +87,16 @@ Content-length: 284
   }
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_notebook-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_notebook-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -95,5 +105,9 @@ Content-length: 284
   "description": "Get notebook",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/notebook-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/notebook-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

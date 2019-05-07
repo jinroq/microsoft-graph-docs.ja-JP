@@ -4,16 +4,16 @@ description: 指定したチームにインストールされているアプリ�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 62ed898417e53b4ec88e4c620cfcc7b974731e48
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6de93a0613aa872154e2448450552585d50e6a2e
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32574828"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33602342"
 ---
 # <a name="list-apps-in-team"></a>チームのアプリを一覧表示する
 
-
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 指定した[チーム](../resources/team.md)に[インストールされているアプリ](../resources/teamsappinstallation.md)のリストを取得します。
 
@@ -25,7 +25,7 @@ ms.locfileid: "32574828"
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | Group.Read.All、Group.ReadWrite.All    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | Group.Read.All、Group.ReadWrite.All    |
+|アプリケーション | Group.Read.All、Group.ReadWrite.All  |
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -35,7 +35,7 @@ ms.locfileid: "32574828"
 GET /teams/{id}/installedApps
 ```
 
-## <a name="optional-query-parameters"></a>省略可能なクエリ パラメーター
+## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 
 このメソッドは、応答をカスタマイズするための $filter、$select、および $expand [OData クエリパラメーター](/graph/query-parameters)をサポートします。
 
@@ -64,7 +64,7 @@ GET /teams/{id}/installedApps
 }-->
 
 ```http
-GET /teams/{id}/installedApps
+GET https://graph.microsoft.com/beta/teams/{id}/installedApps
 ```
 
 ### <a name="response"></a>応答
@@ -91,6 +91,16 @@ Content-length: 55
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_owners-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_owners-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="example----getting-the-names-of-the-installed-apps"></a>例--インストールされているアプリの名前を取得する
 
@@ -103,7 +113,7 @@ Content-length: 55
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/teams/{id}/installedApps?$expand=teamsAppDefinition
+GET https://graph.microsoft.com/beta/teams/{id}/installedApps?$expand=teamsAppDefinition
 ```
 
 ### <a name="response"></a>応答
@@ -155,13 +165,31 @@ Content-length: 55
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_owners-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_owners-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List owners",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/teamsappinstallation-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/teamsappinstallation-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/teamsappinstallation-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/teamsappinstallation-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->

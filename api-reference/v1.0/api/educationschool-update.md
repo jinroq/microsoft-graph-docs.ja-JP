@@ -4,12 +4,12 @@ description: 学校オブジェクトのプロパティを更新します。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: aa26a34013ddd20925c7063595d5d57980e0c516
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: dbabebb14bfd107afb1823054e33150c9d170e9d
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550057"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33615801"
 ---
 # <a name="update-educationschool-properties"></a>educationschool プロパティを更新する
 
@@ -41,7 +41,7 @@ PATCH /education/schools/{id}
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |displayName| String| 学校の表示名| 
-|description| String | 学校の説明| 
+|説明| String | 学校の説明| 
 |principalEmail| String| プリンシパルの電子メール アドレス|
 |principalName| String | プリンシパルの名前|
 |externalPrincipalId| String | 同期システム内のプリンシパルの ID。 |
@@ -112,6 +112,16 @@ Content-length: 292
   "phone": "+1 (253) 555-0102"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_educationschool-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_educationschool-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -120,5 +130,9 @@ Content-length: 292
   "description": "Update educationschool",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/educationschool-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/educationschool-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

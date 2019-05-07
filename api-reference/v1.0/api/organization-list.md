@@ -4,12 +4,12 @@ description: 組織オブジェクトのリストを取得します。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0fbd38f4d3c0e4ceec9f025e9822b635ce6a0d54
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e62157fe7fec29df4afd1e4d931a28fa6e3b77f8
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32572564"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33611670"
 ---
 # <a name="list-organization"></a>組織を一覧表示する
 
@@ -21,7 +21,7 @@ ms.locfileid: "32572564"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | User.Read、Directory.Read.All、Directory.ReadWrite.All   |
+|委任 (職場または学校アカウント) | User.Read、Directory.Read.All、Directory.ReadWrite.All   |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
 |アプリケーション | Directory.Read.All、Directory.ReadWrite.All |
 
@@ -90,6 +90,16 @@ Content-length: 500
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_organization-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_organization-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -98,5 +108,9 @@ Content-length: 500
   "description": "List organization",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/organization-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/organization-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

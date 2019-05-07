@@ -4,12 +4,12 @@ description: テーブルに現在設定されている並べ替えをクリア�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 90ac8b30c3b8513bdd73fa40746268212a8c0df9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3d70dd017987b6b3e574c06889350709cb62021b
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32520236"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33602419"
 ---
 # <a name="tablesort-clear"></a>TableSort: clear　
 
@@ -63,6 +63,16 @@ POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|na
 ```http
 HTTP/1.1 200 OK
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/tablesort_clear-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/tablesort_clear-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -71,5 +81,9 @@ HTTP/1.1 200 OK
   "description": "TableSort: clear",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/tablesort-clear.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/tablesort-clear.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

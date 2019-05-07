@@ -4,12 +4,12 @@ description: 指定されたセクショングループから onenoteSection オ
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 8c29ec47ef322c205a8c62a4074c5fec84de6c14
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ee6cc4057e232142ad8d82b4ec3442c8f9873a03
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32520943"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33603721"
 ---
 # <a name="list-sections"></a>セクションを一覧表示する
 
@@ -19,7 +19,7 @@ ms.locfileid: "32520943"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | メモ作成、メモ読み取り、メモ (すべて)、メモ書き込み、メモ (すべて)    |
+|委任 (職場または学校のアカウント) | Notes.Create、Notes.Read、Notes.ReadWrite、Notes.Read.All、Notes.ReadWrite.All    |
 |委任 (個人用 Microsoft アカウント) | Notes.Create、Notes.Read、Notes.ReadWrite    |
 |アプリケーション | Notes.Read.All、Notes.ReadWrite.All |
 
@@ -34,7 +34,7 @@ GET /sites/{id}/onenote/sectionGroups/{id}/sections
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 
-既定の並べ替え順序は `name asc`です。
+既定の並べ替え順序は `name asc` です。
 
 既定のクエリは`parentNotebook` 、、 `id` `displayName`、および`self`プロパティを展開して選択します。 セクション`expand`の有効な値`parentNotebook`は`parentSectionGroup`、とです。
 
@@ -96,6 +96,16 @@ Content-length: 345
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_sections-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_sections-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -104,5 +114,9 @@ Content-length: 345
   "description": "List sections",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/sectiongroup-list-sections.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/sectiongroup-list-sections.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

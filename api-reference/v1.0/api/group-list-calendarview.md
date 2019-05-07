@@ -1,15 +1,15 @@
 ---
 title: calendarView を一覧表示する
-description: 時間範囲で定義された予定表ビューのイベントの発生、例外、および単一インスタンスを取得する
+description: 時間範囲で定義した予定表ビューから、予定、例外、およびイベントの単一インスタンスを取得し、
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: db4c448176f21fc2a2d691e9155f9b7bba45d873
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a76766a82e573c3916b3de1236ee936788231b3f
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583593"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33614227"
 ---
 # <a name="list-calendarview"></a>calendarView を一覧表示する
 グループの既定の予定表から、時間範囲で定義した予定表ビューのイベントの発生、例外、および単一インスタンスを取得します。
@@ -245,6 +245,16 @@ Preference-Applied: outlook.body-content-type="text"
     ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_calendarview-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_calendarview-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -253,5 +263,9 @@ Preference-Applied: outlook.body-content-type="text"
   "description": "List calendarView",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/group-list-calendarview.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/group-list-calendarview.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

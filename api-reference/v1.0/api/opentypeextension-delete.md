@@ -3,12 +3,12 @@ title: オープン拡張機能を削除する
 description: '指定されたリソースのインスタンスからオープン拡張機能 (openTypeExtension オブジェクト) を削除します。 '
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: de0e609ba0d10d8d0b96e64f650347fb4f6fded8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: af71848e0bbc6dab98a3ca9cb2875fbbe1ae82cf
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562098"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33611756"
 ---
 # <a name="delete-open-extension"></a>オープン拡張機能を削除する
 
@@ -20,15 +20,15 @@ ms.locfileid: "32562098"
 
 | サポートされているリソース | 委任 (職場または学校のアカウント) | 委任 (個人用 Microsoft アカウント) | アプリケーション |
 |:-----|:-----|:-----|:-----|
-| [device](../resources/device.md) | Directory.AccessAsUser.All | サポート対象外 | Device.ReadWrite.All |
-| [event](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [device](../resources/device.md) | Directory.AccessAsUser.All | サポートされていません | Device.ReadWrite.All |
+| [イベント](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
 | [グループ](../resources/group.md) | Group.ReadWrite.All | サポート対象外 | Group.ReadWrite.All |
-| [グループ イベント](../resources/event.md) | Group.ReadWrite.All | サポート対象外 | サポート対象外 |
+| [グループ イベント](../resources/event.md) | Group.ReadWrite.All | サポート対象外 | 非サポート |
 | [グループの投稿](../resources/post.md) | Group.ReadWrite.All | サポート対象外 | Group.ReadWrite.All |
 | [メッセージ](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
-| [組織](../resources/organization.md) | Directory.AccessAsUser.All | サポート対象外 | 非サポート |
+| [組織](../resources/organization.md) | Directory.AccessAsUser.All | サポートされていません。 | 非サポート |
 | [個人用連絡先](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
-| [ユーザー](../resources/user.md) | User.ReadWrite.All | User.ReadWrite | User.ReadWrite.All |
+| [user](../resources/user.md) | User.ReadWrite.All | User.ReadWrite | User.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
 要求で、リソース インスタンスを識別し、そのインスタンスの **extensions** ナビゲーション プロパティを使用して拡張機能を識別し、その拡張インスタンスで `DELETE` を行います。
@@ -84,6 +84,16 @@ DELETE https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUy
 ```http
 DELETE https://graph.microsoft.com/v1.0/groups/f5480dfd-7d77-4d0b-ba2e-3391953cc74a/events/AAMkADVlN17IsAAA=/extensions/Com.Contoso.Referral
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/delete_opentypeextension-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/delete_opentypeextension-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
  
 
@@ -104,5 +114,9 @@ HTTP/1.1 204 No Content
   "description": "Delete opentypeextension",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/opentypeextension-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/opentypeextension-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->
