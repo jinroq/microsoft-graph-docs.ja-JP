@@ -3,12 +3,12 @@ title: schemaExtension の作成
 description: サポートするリソースの種類を拡張するために、schemaExtension 定義を新規作成します。
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: 38fe401f9833102d27168c840728a793d12ee0ef
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 1045d799e089a9b12958061b7115720a01dd8fd3
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33331429"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638866"
 ---
 # <a name="create-schemaextension"></a>schemaExtension の作成
 
@@ -134,6 +134,16 @@ Content-length: 420
     ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_schemaextension_from_schemaextensions_1-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_schemaextension_from_schemaextensions_1-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ##### <a name="request-2"></a>要求 2
 
@@ -207,6 +217,16 @@ Content-length: 420
     ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_schemaextension_from_schemaextensions_2-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_schemaextension_from_schemaextensions_2-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
 ## <a name="see-also"></a>関連項目
@@ -224,6 +244,11 @@ Content-length: 420
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/schemaextension-post-schemaextensions.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/schemaextension-post-schemaextensions.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/schemaextension-post-schemaextensions.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/schemaextension-post-schemaextensions.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

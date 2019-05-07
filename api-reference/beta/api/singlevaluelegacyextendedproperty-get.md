@@ -2,12 +2,12 @@
 title: singleValueLegacyExtendedProperty を取得する
 description: 特定の拡張プロパティを使用して展開された単一のリソースインスタンス、またはリソースインスタンスのコレクションを取得できます。
 localization_priority: Normal
-ms.openlocfilehash: a518e50f694d70fadc7fab4ee79a7e4860cc5cb1
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 134096aca522db6c1f83fd93ec060a26f13f1846
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335911"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638584"
 ---
 # <a name="get-singlevaluelegacyextendedproperty"></a>singleValueLegacyExtendedProperty を取得する
 
@@ -26,7 +26,7 @@ ms.locfileid: "33335911"
 - [calendar](../resources/calendar.md)
 - [contact](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md) 
-- [イベント](../resources/event.md)
+- [event](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
 - [message](../resources/message.md) 
 - [Outlook タスク](../resources/outlooktask.md)
@@ -48,7 +48,7 @@ ms.locfileid: "33335911"
 | [calendar](../resources/calendar.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 | [連絡先](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [contactFolder](../resources/contactfolder.md) | Contacts.Read | Contacts.Read | Contacts.Read |
-| [イベント](../resources/event.md) | Calendars.Read | Calendars.Read |  Calendars.Read|
+| [event](../resources/event.md) | Calendars.Read | Calendars.Read |  Calendars.Read|
 | グループ [calendar](../resources/calendar.md) | Group.Read.All | 非サポート | 非サポート |
 | グループ [event](../resources/event.md) | Group.Read.All | 非サポート | 非サポート |
 | グループ [post](../resources/post.md) | Group.Read.All | サポート対象外 | Group.Read.All |
@@ -105,7 +105,7 @@ GET /me/contactfolders/{id}?$expand=singleValueExtendedProperties($filter=id eq 
 GET /users/{id|userPrincipalName}/contactFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-**outlooktask**インスタンスを取得します。
+**Outlooktask**インスタンスを取得します。
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/outlook/tasks/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
@@ -115,7 +115,7 @@ GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks/{id}?$expand=si
 GET /me/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
-**outlooktaskfolder**インスタンスを取得します。
+**Outlooktaskfolder**インスタンスを取得します。
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/outlook/taskFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
@@ -184,7 +184,7 @@ GET /me/contactfolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{
 GET /users/{id|userPrincipalName}/contactFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 
-**outlooktask**インスタンスを取得します。
+**Outlooktask**インスタンスを取得します。
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/outlook/tasks?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
@@ -194,7 +194,7 @@ GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks?$filter=singleV
 GET /me/outlook/taskGroups/{id}/taskFolders/{id}/tasks?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
-**outlooktaskfolder**インスタンスを取得します。
+**Outlooktaskfolder**インスタンスを取得します。
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/outlook/taskFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
@@ -345,6 +345,16 @@ Content-type: application/json
     ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_singlevaluelegacyextendedproperty_1-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_singlevaluelegacyextendedproperty_1-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 #### <a name="request-2"></a>要求 2
 
@@ -427,6 +437,9 @@ GET https://graph.microsoft.com/beta/me/messages?$filter=singleValueExtendedProp
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/singlevaluelegacyextendedproperty-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/singlevaluelegacyextendedproperty-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

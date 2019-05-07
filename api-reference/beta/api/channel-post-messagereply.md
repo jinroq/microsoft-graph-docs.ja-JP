@@ -4,12 +4,12 @@ description: チャネル内の既存メッセージに返信します。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: c02b7f1f1de61d2348df3bb6664c47fb4dd1684e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 9353751562308c7c487fff8965024d90556ceb14
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328056"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33635562"
 ---
 # <a name="reply-to-a-message-in-a-channel"></a>チャネル内のメッセージに返信する
 
@@ -37,7 +37,7 @@ POST /teams/{id}/channels/{id}/messages/{id}/replies
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
-要求本文で、[メッセージ](../resources/chatmessage.md)オブジェクトの JSON 表記を指定します。 body プロパティのみが必須で、その他のプロパティはオプションです。
+要求本文で、[メッセージ](../resources/chatmessage.md)オブジェクトの JSON 表記を指定します。 Body プロパティのみが必須で、その他のプロパティはオプションです。
 
 ## <a name="response"></a>応答
 
@@ -108,6 +108,16 @@ Content-length: 160
     "reactions": []
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/post_reply_message-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/post_reply_message-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -118,6 +128,9 @@ Content-length: 160
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/channel-post-messagereply.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/channel-post-messagereply.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

@@ -1,24 +1,24 @@
 ---
-title: riskyUsers が侵害されたことを確認する
-description: riskyUsers オブジェクトが侵害されていることを確認します。
+title: RiskyUser が侵害されたことを確認する
+description: RiskyUser オブジェクトが侵害されていることを確認します。
 author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.date: 03/20/2019
-ms.openlocfilehash: beca64415a2d03898d57cd9cda2fb248121c424b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: f0ce7b0a29b90f12104a697bdc38f3297e52676e
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33336376"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33639034"
 ---
-# <a name="confirm-riskyusers-compromised"></a>riskyUsers が侵害されたことを確認する
+# <a name="riskyuser-confirmcompromised"></a>riskyUser: confirmCompromised
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
->**注:** riskyUsers API には、Azure AD Premium P2 ライセンスが必要です。
+>**注:** RiskyUsers API には、Azure AD Premium P2 ライセンスが必要です。
 
-[riskyUser](../resources/riskyuser.md)オブジェクトが侵害されていることを確認します。 これにより、対象ユーザーのリスクレベルが [高」に設定されます。
+1つまたは複数の[riskyUser](../resources/riskyuser.md)オブジェクトが侵害されたことを確認します。 このアクションは、対象ユーザーのリスクレベルを [高」に設定します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -40,10 +40,9 @@ POST /riskyUsers/confirmCompromised
 | 名前      |説明|
 |:----------|:----------|
 | Authorization  | ベアラー {トークン}。必須。 |
-| Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 
 ## <a name="request-body"></a>要求本文
-要求本文で無視する userIds を指定します。
+要求本文で無視する危険なユーザー Id を指定します。
 
 ## <a name="response"></a>応答
 
@@ -75,6 +74,16 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/confirm_riskyuser-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/confirm_riskyuser-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -84,5 +93,8 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/riskyusers-confirmcompromised.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/riskyusers-confirmcompromised.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

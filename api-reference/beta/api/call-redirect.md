@@ -4,12 +4,12 @@ description: 着信をリダイレクトします。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 9dcb8b6fd83f431bf5048bcc42b0de5d1ff55110
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 8291751b4dfc74fcd2f4ccfd194cc8bfbe66c482
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328041"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636325"
 ---
 # <a name="call-redirect"></a>call: redirect
 
@@ -44,10 +44,10 @@ POST /applications/{id}/calls/{id}/redirect
 | パラメーター      | 型    |説明|
 |:---------------|:--------|:----------|
 |Targets|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)コレクション|リダイレクト操作の対象となる参加者。|
-|targetdisposition ポジション|String|指定できる値は次のとおりです。`default`|
+|targetDisposition ポジション|String|指定できる値は次のとおりです。`default`|
 |timeout|Int32|リダイレクト操作のタイムアウト (秒単位)。|
-|maskcallee 先|Boolean|呼び出し先をマスクするかどうかを示します。|
-|maskcaller|Boolean|発信者をマスクするかどうかを示します。|
+|maskCallee 先|Boolean|呼び出し先をマスクするかどうかを示します。|
+|maskCaller|Boolean|発信者をマスクするかどうかを示します。|
 
 ## <a name="response"></a>応答
 応答`202 Accepted`コードを返します。
@@ -102,6 +102,14 @@ Content-Length: 515
 ```http
 HTTP/1.1 202 Accepted
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/call-redirect-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="forward-a-call"></a>通話を転送する
 
@@ -267,6 +275,8 @@ Content-Type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/call-redirect.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

@@ -1,19 +1,19 @@
 ---
-title: 'serviceprincipal: approleassignments のリスト'
-description: approleassignment オブジェクトのリストを取得します。
+title: 'servicePrincipal: appRoleAssignments のリスト'
+description: Approleassignment オブジェクトのリストを取得します。
 localization_priority: Normal
-ms.openlocfilehash: 4ee63d853787c9220d982e177521f30971733dcf
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: cad5cd853f4fa0ef85447b69af0421b1db0c2dc2
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33331496"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33639160"
 ---
-# <a name="serviceprincipal-list-approleassignments"></a>serviceprincipal: approleassignments のリスト
+# <a name="serviceprincipal-list-approleassignments"></a>servicePrincipal: appRoleAssignments のリスト
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-approleassignment オブジェクトのリストを取得します。
+Approleassignment オブジェクトのリストを取得します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -79,6 +79,16 @@ Content-length: 306
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_approleassignments-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_approleassignments-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -89,6 +99,9 @@ Content-length: 306
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/serviceprincipal-list-approleassignments.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/serviceprincipal-list-approleassignments.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

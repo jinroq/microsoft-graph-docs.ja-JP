@@ -4,12 +4,12 @@ description: ユーザーのコミュニケーションとコラボレーショ�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: ed6c7a6c05cd678dc2107f00c42211a186fa61fc
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: de07eaa4b3601c91ace9894e55bd4357fbb23881
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33329897"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33637193"
 ---
 # <a name="list-people"></a>ユーザーを一覧表示する
 
@@ -44,7 +44,7 @@ GET /users/{id | userPrincipalName}/people
 |:---------------|:--------|:-------|
 |$filter|string|応答を、指定した条件に等しいレコードを持つ人物のみに制限します。|
 |$orderby|string|既定では、応答に含まれる人物は、クエリとの関連性で並べ替えられます。 応答に含まれる人物の順序は、*$orderby* パラメーターを使用することで変更できます。|
-|$search|string|名またはエイリアスで人物を検索します。 ファジー マッチをサポートします。 パラメーターは、サインインしているユーザーの関連する人物を検索する場合にのみ機能し、他のユーザーに関連する人物を検索する目的では使用できません。 また、 `topic`その人物との電子メールによる会話から抜粋したトピックに基づいてユーザーを検索するキーワードもサポートします。 情報と例については、「[ユーザーに関する情報を取得](/graph/people-example#perform-a-fuzzy-search)する」の「*あいまい検索を実行*する」を参照してください。|
+|$search|string|名またはエイリアスで人物を検索します。 ファジー マッチをサポートします。 パラメーターは、サインインしたユーザーの関連人物を検索するためにのみ機能し、他のユーザーに関連する人物を検索するためには機能しません。 その人とのメール会話から抽出されたトピックに基づいて人を見つける `topic` キーワードもサポートします。 情報と例については、[関係者の情報を取得する](/graph/people-example#perform-a-fuzzy-search)の*あいまい検索の実行*セクションを参照してください。|
 |$select|string|応答に含めるプロパティを示すコンマ区切りのリスト。最適なパフォーマンスを得るには、必要なプロパティのサブセットのみを選択します。|
 |$skip|int|最初の n 個の結果をスキップします。これはページングに役立ちます。これは *$search* の使用時にはサポートされません。|
 |$top|int|返される結果の数。|
@@ -176,6 +176,16 @@ Content-length: 1326
     ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_person_collection_beta-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_person_collection_beta-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 #### <a name="requesting-a-subsequent-page-of-people"></a>人物の続きのページの要求
 
@@ -265,7 +275,7 @@ GET https://graph.microsoft.com/beta/me/people/?$search="hermaini hall"
 
 ### <a name="related-people"></a>関連する人
 
-次の要求は、ユーザーの組織内の他のユーザーに最も関連のある人物を取得します。 この要求には、ユーザーに対してすべてのアクセス許可が必要です。 この例では、nestor Kellum の関連する人物が表示されます。
+次の要求は、ユーザーの組織内の他のユーザーに最も関連のある人物を取得します。 この要求には、ユーザーに対してすべてのアクセス許可が必要です。 この例では、Nestor Kellum の関連する人物が表示されます。
 
 ```http
 GET https://graph.microsoft.com/beta/users('nestork@contoso.com')/people/
@@ -280,6 +290,9 @@ GET https://graph.microsoft.com/beta/users('nestork@contoso.com')/people/
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-list-people.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/user-list-people.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

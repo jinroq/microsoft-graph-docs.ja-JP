@@ -1,21 +1,21 @@
 ---
 title: tiIndicator を更新する
-description: tiindicator オブジェクトのプロパティを更新します。
+description: TiIndicator オブジェクトのプロパティを更新します。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 55613e3c13695a502b43c127c1164d2adf9f6534
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 75a34acb98ee00e737fb75e5e49f7c0fb4adea20
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33330434"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33637571"
 ---
 # <a name="update-tiindicator"></a>tiIndicator を更新する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[tiindicator](../resources/tiindicator.md)オブジェクトのプロパティを更新します。
+[Tiindicator](../resources/tiindicator.md)オブジェクトのプロパティを更新します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -48,22 +48,22 @@ PATCH /security/tiIndicators/{id}
 
 | プロパティ     | 型        | 説明 |
 |:-------------|:------------|:------------|
-|action|string| インジケーターが targetproduct セキュリティツール内から一致した場合に適用するアクション。 使用可能な値は、`unknown`、`allow`、`block`、`alert` です。|
-|activitygroupnames|String collection|脅威指標でカバーされる悪意のあるアクティビティを担当する、その当事者のためのサイバー脅威インテリジェンス名。|
-|additionalinformation|String|他の tiindicator プロパティでカバーされていない特別なデータが配置される可能性がある catchall 領域。 通常、additionalinformation に配置されるデータは、targetproduct セキュリティツールでは使用されません。|
+|action|string| インジケーターが targetProduct セキュリティツール内から一致した場合に適用するアクション。 使用可能な値は、`unknown`、`allow`、`block`、`alert` です。|
+|activityGroupNames|String collection|脅威指標でカバーされる悪意のあるアクティビティを担当する、その当事者のためのサイバー脅威インテリジェンス名。|
+|additionalInformation|String|他の tiIndicator プロパティでカバーされていない特別なデータが配置される可能性がある catchall 領域。 通常、additionalInformation に配置されるデータは、targetProduct セキュリティツールでは使用されません。|
 |confidence|Int32|インジケーター内のデータが悪意のある動作を正確に特定していることを表す整数。 指定できる値は 0 ~ 100 で、100は最高です。|
-|description|String|インジケーターで表される脅威の簡単な説明 (100 文字以内)。|
+|説明|String|インジケーターで表される脅威の簡単な説明 (100 文字以内)。|
 |diamondModel|[diamondModel](#diamondmodel-values)|このインジケーターが存在する菱形モデルの領域。 可能な値は、`unknown`、`adversary`、`capability`、`infrastructure`、`victim` です。|
-|expirationDateTime|DateTimeOffset| インジケーターがいつ期限切れになるかを示す DateTime 文字列。 システム内の古いインジケーターが保持されないようにするには、すべてのインジケーターに有効期限が設定されている必要があります。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、`2014-01-01T00:00:00Z` のようになります。|
+|expirationDateTime|DateTimeOffset| インジケーターがいつ期限切れになるかを示す DateTime 文字列。 システム内の古いインジケーターが保持されないようにするには、すべてのインジケーターに有効期限が設定されている必要があります。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表します。これは常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`2014-01-01T00:00:00Z`|
 |externalId|String|インジケーターをインジケータープロバイダーのシステム (例: 外部キー) に結びつける識別番号。|
 |isActive|Boolean|システム内のインジケーターを非アクティブ化するために使用されます。 既定では、送信されたインジケーターはすべてアクティブとして設定されます。 ただし、プロバイダーは、この設定を使用した既存のインジケーターを ' False ' に送信して、システム内のインジケーターを非アクティブ化することができます。|
 |"出てきたチェイン"|[](#killchain-values)指定したコレクション|このインジケーターが対象とする、キルチェーン上の点または点を表す文字列の JSON 配列。 正確な値については、以下の「"" を参照」の値」を参照してください。|
-|knownfalse 陽性|String|インジケーターが誤検知を引き起こす可能性があるシナリオ。 これは、人間が判読できるテキストである必要があります。|
+|Knownfalse 陽性|String|インジケーターが誤検知を引き起こす可能性があるシナリオ。 これは、人間が判読できるテキストである必要があります。|
 |lastReportedDateTime|DateTimeOffset|最後にインジケーターが表示された時刻。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`2014-01-01T00:00:00Z`|
-|悪意のある refrefamilynames|String collection|インジケーターに関連付けられたマルウェアファミリ名 (存在する場合)。 microsoft では、Windows Defender セキュリティインテリジェンスの[脅威の百科事典](https://www.microsoft.com/wdsi/threats)を使用して検出できる場合は、microsoft マルウェアファミリ名を推奨しています。|
-|「いいえ veonly」|Boolean|エンドユーザーに表示されるイベントをインジケーターがトリガーするかどうかを決定します。 [true] に設定されている場合、セキュリティツールは、' hit ' が発生したことをエンドユーザーに通知しません。 これは、通常、一致が発生したが、その操作は実行されないことをログに記録するセキュリティ製品によって、監査またはサイレントモードとして扱われます。 既定値は False です。|
-|重大度|Int32|インジケーター内のデータによって識別される、悪意のある動作の重要度を表す整数。 指定可能な値は0–5で、5は最も深刻であり、0はまったく重要ではありません。 既定値は3です。|
-|tags|String コレクション|任意のタグ/キーワードを格納する文字列の JSON 配列。|
+|悪意のある Refrefamilynames|String collection|インジケーターに関連付けられたマルウェアファミリ名 (存在する場合)。 Microsoft では、Windows Defender セキュリティインテリジェンスの[脅威の百科事典](https://www.microsoft.com/wdsi/threats)を使用して検出できる場合は、microsoft マルウェアファミリ名を推奨しています。|
+|「いいえ Veonly」|Boolean|エンドユーザーに表示されるイベントをインジケーターがトリガーするかどうかを決定します。 [True] に設定されている場合、セキュリティツールは、' hit ' が発生したことをエンドユーザーに通知しません。 これは、通常、一致が発生したが、その操作は実行されないことをログに記録するセキュリティ製品によって、監査またはサイレントモードとして扱われます。 既定値は False です。|
+|severity|Int32|インジケーター内のデータによって識別される、悪意のある動作の重要度を表す整数。 指定可能な値は0–5で、5は最も深刻であり、0はまったく重要ではありません。 既定値は3です。|
+|タグ|String collection|任意のタグ/キーワードを格納する文字列の JSON 配列。|
 |tlpLevel|[tlpLevel](#tlplevel-values)| インジケーターのトラフィックライトプロトコルの値。 可能な値は、`unknown`、`white`、`green`、`amber`、`red` です。|
 
 ### <a name="diamondmodel-values"></a>diamondModel の値
@@ -98,7 +98,7 @@ PATCH /security/tiIndicators/{id}
 |ホワイト| 共有スコープ: 無制限。 インジケーターは無制限に共有できます。制限はありません。|
 |緑| 共有スコープ: コミュニティ。 インジケーターはセキュリティコミュニティと共有できます。|
 |黄色い| 共有スコープ: 制限されています。 これは、インジケーターの既定の設定であり、共有を脅威インテリジェンスを実装するサービスとサービスオペレーターだけに限定し、共有を制限します。2) システムの動作がインジケーターと同じであるお客様。|
-|赤| 共有スコープ: Personal。 これらのインジケーターは、本人でのみ直接共有されるようになっています。 通常は、指定された制限によって tlp 赤のインジケーターは取り込まれたされません。 tlp 赤のインジケーターが送信され**** た場合は、"いいえ" の`True`プロパティをに設定する必要があります。 |
+|赤| 共有スコープ: Personal。 これらのインジケーターは、本人でのみ直接共有されるようになっています。 通常は、指定された制限によって TLP 赤のインジケーターは取り込まれたされません。 TLP 赤のインジケーターが送信され**** た場合は、"いいえ" の`True`プロパティをに設定する必要があります。 |
 
 ## <a name="response"></a>応答
 
@@ -140,6 +140,16 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_tiIndicator-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_tiIndicator-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="example-2-request-with-prefer-header"></a>例 2: 要求ヘッダーを使用した要求
 
@@ -200,5 +210,11 @@ Content-type: application/json
   "description": "Update tiIndicator",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/tiindicator-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/tiindicator-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/tiindicator-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/tiindicator-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

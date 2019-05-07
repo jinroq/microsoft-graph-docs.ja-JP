@@ -4,20 +4,20 @@ description: スケジュールの時間範囲をスケジュールのメンバ�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: ee015e307f7f9b738e912e7246d70a03a32848f8
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: a1e86d397b871ed78f867695e272368b2bcb5eb4
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33336136"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638950"
 ---
 # <a name="schedule-share"></a>スケジュール: 共有
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 スケジュールの[](../resources/schedule.md)時間範囲をスケジュールのメンバーと共有します。
-指定されたチームメンバーによって表示可能な[スケジュール](../resources/schedule.md)の指定された時間範囲で、 [shift](../resources/shift.md)と[timeoff](../resources/timeoff.md)の各アイテムのコレクションを作成します (従業員とマネージャーを含む)。
-[スケジュール](../resources/schedule.md)内の各[シフト](../resources/shift.md)および[timeoff](../resources/timeoff.md)インスタンスでは、アイテムの下書きバージョンと共有バージョンがサポートされています。 下書きバージョンは、管理者のみが表示でき、共有バージョンは従業員とマネージャーに表示されます。 指定した時間範囲の各[シフト](../resources/shift.md)と[timeoff](../resources/timeoff.md)のインスタンスについては、共有アクションは下書きバージョンの共有バージョンを更新するので、マネージャーに加えて、アイテムに関する最新情報を表示することもできます。 **notifyteam**パラメーターは、アイテムを表示できる従業員をさらに指定します。
+指定されたチームメンバーによって表示可能な[スケジュール](../resources/schedule.md)の指定された時間範囲で、 [Shift](../resources/shift.md)と[timeoff](../resources/timeoff.md)の各アイテムのコレクションを作成します (従業員とマネージャーを含む)。
+[スケジュール](../resources/schedule.md)内の各[シフト](../resources/shift.md)および[timeoff](../resources/timeoff.md)インスタンスでは、アイテムの下書きバージョンと共有バージョンがサポートされています。 下書きバージョンは、管理者のみが表示でき、共有バージョンは従業員とマネージャーに表示されます。 指定した時間範囲の各[シフト](../resources/shift.md)と[timeoff](../resources/timeoff.md)のインスタンスについては、共有アクションは下書きバージョンの共有バージョンを更新するので、マネージャーに加えて、アイテムに関する最新情報を表示することもできます。 **Notifyteam**パラメーターは、アイテムを表示できる従業員をさらに指定します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -52,7 +52,7 @@ POST /teams/{teamId}/schedule/share
 
 |パラメーター                   |型           |説明  |
 |-----------------------|-------------------|--------------|
-| notifyteam            |`Boolean`             |チーム全体がこのアクションの通知を表示するかどうかを指定します。または、共有されていた交代が割り当てられた従業員のみを取得します。 必須です。       |
+| notifyTeam            |`Boolean`             |チーム全体がこのアクションの通知を表示するかどうかを指定します。または、共有されていた交代が割り当てられた従業員のみを取得します。 必須です。       |
 | startDateTime         |`DateTimeOffset`   |スケジュールの開始時刻を開始する時刻。 必須です。   |
 | endDateTime           |`DateTimeOffset`   | スケジュールによる移動を終了するまでの終了時刻。   |
 
@@ -93,6 +93,16 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No content
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/schedule-share-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/schedule-share-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -103,6 +113,9 @@ HTTP/1.1 204 No content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/schedule-share.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/schedule-share.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

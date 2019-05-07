@@ -1,23 +1,23 @@
 ---
-title: チャネルの作成
-description: 要求本文で指定されているように、Microsoft のチームで新しいチャネルを作成します。
+title: チャネルを作成する
+description: 要求の本文で指定されているように、Microsoft Team に新しいチャネルを作成します。
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 22abce5b062008311b0becdc75e5f6fe41d3ad35
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 8bea88a062e67460bacc5305da7ec688bf144b30
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33327985"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33635513"
 ---
-# <a name="create-channel"></a>チャネルの作成
+# <a name="create-channel"></a>チャネルを作成する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-要求本文で指定されているように、Microsoft のチームで新しい[チャネル](../resources/channel.md)を作成します。
+要求の本文で指定されているように、Microsoft Team に新しい[チャネル](../resources/channel.md)を作成します。
 
-> **注**: アプリケーションのアクセス許可とこの API には、既知の問題があります。 詳細については、[既知の問題リスト](/graph/known-issues#application-permissions)を参照してください。
+> **注**: アプリケーションのアクセス許可とこの API には既知の問題があります。 詳細については、「[既知の問題](/graph/known-issues#application-permissions)」のリストを参照してください。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -43,11 +43,11 @@ POST /teams/{id}/channels
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>要求本文
-要求本文で、 [channel](../resources/channel.md)オブジェクトの JSON 表記を指定します。
+要求本文で、[チャンネル](../resources/channel.md) オブジェクトの JSON 表記を指定します。
 
 ## <a name="response"></a>応答
 
-成功した場合、この`201 Created`メソッドは応答コードと、応答本文で[channel](../resources/channel.md)オブジェクトを返します。
+成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [チャンネル](../resources/channel.md) オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
@@ -83,6 +83,16 @@ Content-length: 201
   "description": "This channel is where we debate all future architecture plans"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_channel_from_group-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_channel_from_group-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -93,6 +103,9 @@ Content-length: 201
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/channel-post.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/channel-post.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

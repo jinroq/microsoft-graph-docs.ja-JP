@@ -1,19 +1,19 @@
 ---
 title: appRoleAssignment を削除する
-description: approleassignment を削除します。
+description: AppRoleAssignment を削除します。
 localization_priority: Normal
-ms.openlocfilehash: 2e1c39078005f2dabaabd9181ff592d0898c9355
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: f8c282a3d33560e95dcb43384227a34e6bd8ccf4
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322620"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636514"
 ---
 # <a name="delete-approleassignment"></a>appRoleAssignment を削除する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-approleassignment を削除します。
+AppRoleAssignment を削除します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -62,6 +62,16 @@ DELETE https://graph.microsoft.com/beta/appRoleAssignments/{id}
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/delete_approleassignment-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/delete_approleassignment-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -72,6 +82,9 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/approleassignment-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/approleassignment-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

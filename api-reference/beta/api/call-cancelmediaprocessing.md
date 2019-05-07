@@ -1,17 +1,17 @@
 ---
-title: '通話: cancelmediaprocessing'
+title: '通話: cancelMediaProcessing'
 description: すべての進行中の再生プロンプトまたはレコード操作のメディア処理をキャンセルします。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 28637d3544b3b7d0e6c5756661e2b5b1eff31e0b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: b77868957de367cc2889627726375e48054c209c
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328135"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33635807"
 ---
-# <a name="call-cancelmediaprocessing"></a>通話: cancelmediaprocessing
+# <a name="call-cancelmediaprocessing"></a>通話: cancelMediaProcessing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -83,6 +83,16 @@ Content-Length: 62
 HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/call-cancelMediaProcessing-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/call-cancelMediaProcessing-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ##### <a name="notification---operation-completed"></a>通知-操作が完了しました
 
@@ -123,6 +133,9 @@ Content-Type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/call-cancelmediaprocessing.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/call-cancelmediaprocessing.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

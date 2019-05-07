@@ -1,17 +1,17 @@
 ---
-title: bookingappointment の削除
+title: BookingAppointment の削除
 description: 指定した bookingappointment の書店の予定を削除します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 56fb3ad67736a1a754c979ba01aaf647af3992d8
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 4a0dc3276128a9e0a6c3efda1ab3c96bbb3c5db8
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322532"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636248"
 ---
-# <a name="delete-bookingappointment"></a>bookingappointment の削除
+# <a name="delete-bookingappointment"></a>BookingAppointment の削除
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,7 +21,7 @@ ms.locfileid: "33322532"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) |  bookingsappointment すべての予約。すべて、予約....   |
+|委任 (職場または学校のアカウント) |  BookingsAppointment すべての予約。すべて、予約....   |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。   |
 |アプリケーション | サポートされていません。  |
 
@@ -62,6 +62,16 @@ DELETE https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/delete_bookingappointment-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/delete_bookingappointment-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -72,6 +82,9 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/bookingappointment-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/bookingappointment-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

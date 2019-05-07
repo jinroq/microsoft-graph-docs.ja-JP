@@ -1,17 +1,17 @@
 ---
-title: 'tiindicator: submittiindicators'
+title: 'tiIndicator: submitTiIndicators'
 description: 複数の脅威インテリジェンス (TI) インジケーターを、複数の要求ではなく1つの要求でアップロードします。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: b16f3da7d2c0183da5b7e06cef3bce450bbe0068
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 944b6d3617f8a850e1f2ac3f681076984edd6c7a
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335267"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33637557"
 ---
-# <a name="tiindicator-submittiindicators"></a>tiindicator: submittiindicators
+# <a name="tiindicator-submittiindicators"></a>tiIndicator: submitTiIndicators
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -47,7 +47,7 @@ POST /security/tiIndicators/submitTiIndicators
 
 | パラメーター    | 型        | 説明 |
 |:-------------|:------------|:------------|
-|value|tiindicator コレクション| 作成する**tiindicators**の JSON コレクション。 |
+|value|tiIndicator コレクション| 作成する**tiindicators**の JSON コレクション。 |
 
 ## <a name="response"></a>応答
 
@@ -141,6 +141,16 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/tiindicator_submittiindicators-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/tiindicator_submittiindicators-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
@@ -149,5 +159,9 @@ Content-type: application/json
   "description": "tiIndicator: submitTiIndicators",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/tiindicator-submittiindicators.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/tiindicator-submittiindicators.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

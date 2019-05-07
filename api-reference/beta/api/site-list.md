@@ -3,12 +3,12 @@ title: サイトの列挙
 description: 指定したフィルター条件とクエリオプションに一致する組織内で利用可能な [sites] [] を一覧表示します。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 0bcf6023779178ea2c5d8e6ccb24adafad4bb7d7
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: f61aab6a7a333e83438f5cc6d03c6ac79e277df2
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33330120"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638642"
 ---
 # <a name="enumerate-sites"></a>サイトの列挙
 
@@ -18,13 +18,13 @@ ms.locfileid: "33330120"
 
 次のクエリオプションのみが現在サポートされています。
 
-| Filter ステートメント             | select ステートメント        | 説明
+| Filter ステートメント             | Select ステートメント        | 説明
 |:-----------------------------|:------------------------|:--------------------
 |`siteCollection/root ne null` | `siteCollection,webUrl` | 組織内のすべてのルートレベルのサイトコレクションを一覧表示します。 各地域のホームサイトを検出するのに役立ちます。
 
 また、'/サイト ' コレクションに対して**[検索][]** クエリを使用して、特定のキーワードに一致するサイトを検索することもできます。
 
-[search]: site-search.md
+[探す]: site-search.md
 [サイト]: ../resources/site.md
 
 ## <a name="permissions"></a>アクセス許可
@@ -90,6 +90,16 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/list-sites-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/list-sites-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!--
 {
@@ -98,6 +108,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "Site/List sites",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/site-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/site-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

@@ -1,21 +1,21 @@
 ---
-title: trustframeworkpolicy の削除
-description: この操作により、Azure AD B2C テナントから既存の trustframeworkpolicy オブジェクトが削除されます。
+title: TrustFrameworkPolicy の削除
+description: この操作により、Azure AD B2C テナントから既存の trustFrameworkPolicy オブジェクトが削除されます。
 localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2583cbf5fd8feee12b18482c515490d2de8ce8be
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9bc62bdcda19038a24441fccfe01fac9705d1344
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548055"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33637438"
 ---
-# <a name="delete-trustframeworkpolicy"></a>trustframeworkpolicy の削除
+# <a name="delete-trustframeworkpolicy"></a>TrustFrameworkPolicy の削除
 
 > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-既存の[trustframeworkpolicy](../resources/trustframeworkpolicy.md)を削除します。
+既存の[Trustframeworkpolicy](../resources/trustframeworkpolicy.md)を削除します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -52,7 +52,7 @@ DELETE /trustFramework/policies/{id}
 
 ## <a name="example"></a>例
 
-次の例では、 **trustframeworkpolicy**を削除します。
+次の例では、 **Trustframeworkpolicy**を削除します。
 
 ##### <a name="request"></a>要求
 
@@ -73,6 +73,16 @@ DELETE https://graph.microsoft.com/beta/trustFramework/policies/B2C_1A_SocialAnd
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/delete_trustFrameworkPolicy-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/delete_trustFrameworkPolicy-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -81,5 +91,9 @@ HTTP/1.1 204 No Content
   "description": "Delete trustFrameworkPolicy",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/trustframeworkpolicy-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/trustframeworkpolicy-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

@@ -1,17 +1,17 @@
 ---
-title: bookingstaffmember の更新
+title: Bookingstaffmember の更新
 description: 指定した bookingbusiness の bookingStaffMember のプロパティを更新します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 4124a681332a91d2d909c141b54d412cae9bcc69
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: acfef7e88e6fe8d5bb8e46c5d3c3e3c85ff1aa33
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322332"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33635891"
 ---
-# <a name="update-bookingstaffmember"></a>bookingstaffmember の更新
+# <a name="update-bookingstaffmember"></a>Bookingstaffmember の更新
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -40,13 +40,13 @@ PATCH /bookingBusinesses/{id}/staffMembers/{id}
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|availabilityIsAffectedByPersonalCalendar|Boolean|True は、スタッフメンバーが office 365 ユーザーの場合、予約 API は、office 365 のスタッフメンバーの個人用予定表と**workingHours**プロパティを使用して、可用性を判断します。 |
+|availabilityIsAffectedByPersonalCalendar|Boolean|True は、スタッフメンバーが Office 365 ユーザーの場合、予約 API は、Office 365 のスタッフメンバーの個人用予定表と**workingHours**プロパティを使用して、可用性を判断します。 |
 |colorIndex|Int32|スタッフメンバーを表す色を識別します。 この色は、予約アプリの [**スタッフの詳細**] ページのカラーパレットに対応しています。|
 |displayName|String|スタッフメンバーの名前。顧客に表示されます。|
 |emailAddress|String|スタッフメンバーの電子メールアドレス。 これは、ビジネスと同じ Office 365 テナント内、または別の電子メールドメインに配置できます。 この電子メールアドレスは、ビジネスのスケジューリングポリシーで**sendConfirmationsToOwner**プロパティが true に設定されている場合に使用されます。|
 |role|string| 業務のスタッフメンバーの役割。 使用可能な値は、`guest`、`administrator`、`viewer`、`externalGuest` です。|
 |useBusinessHours|Boolean|True は、スタッフメンバーの利用可能性がビジネスの**microsoft.rtc.rgs.management.writablesettings.businesshours**プロパティによって決定されることを意味します。 False は、可用性がスタッフメンバーの**workingHouse**プロパティの設定によって決定されることを意味します。|
-|workingHours|[bookingwork hours](../resources/bookingworkhours.md)コレクション|スタッフメンバーが予約に使用できる各曜日の時間の範囲。|
+|workingHours|[Bookingwork hours](../resources/bookingworkhours.md)コレクション|スタッフメンバーが予約に使用できる各曜日の時間の範囲。|
 
 ## <a name="response"></a>応答
 成功した場合、このメソッドは `204 No content` 応答コードを返します。応答本文には何も返されません。
@@ -136,6 +136,16 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_bookingstaffmember-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_bookingstaffmember-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -146,6 +156,9 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/bookingstaffmember-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/bookingstaffmember-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

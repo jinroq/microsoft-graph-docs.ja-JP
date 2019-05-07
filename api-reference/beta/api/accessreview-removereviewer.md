@@ -1,17 +1,17 @@
 ---
-title: accessreview レビュー担当者を削除する
-description: 'Azure AD access レビュー機能で、既存の accessreview オブジェクトを更新して、ユーザーを校閲者として削除します。  この操作は、まだ完了していないアクセスレビューに対してのみ許可されており、レビュー担当者が明示的に指定されているアクセスレビューに対してのみ使用できます。 この操作は、ユーザーが自分のアクセスを確認するアクセスレビューでは許可されず、グループの所有者がレビュー担当者として割り当てられているアクセスレビューのためのものではありません。 '
+title: AccessReview レビュー担当者を削除する
+description: 'Azure AD access レビュー機能で、既存の accessReview オブジェクトを更新して、ユーザーを校閲者として削除します。  この操作は、まだ完了していないアクセスレビューに対してのみ許可されており、レビュー担当者が明示的に指定されているアクセスレビューに対してのみ使用できます。 この操作は、ユーザーが自分のアクセスを確認するアクセスレビューでは許可されず、グループの所有者がレビュー担当者として割り当てられているアクセスレビューのためのものではありません。 '
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7c2b80659ae1f9d4ce547a9d64d81f1fdb0403c3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 435574c6c31a145803f263bce33f2ff5f0727ff2
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33323098"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636752"
 ---
-# <a name="remove-accessreview-reviewer"></a>accessreview レビュー担当者を削除する
+# <a name="remove-accessreview-reviewer"></a>AccessReview レビュー担当者を削除する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +23,7 @@ Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、�
 
 |アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント)     | accessreview すべて |
+|委任 (職場または学校のアカウント)     | AccessReview.ReadWrite.All |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
 |アプリケーション                            | サポートされていません。 |
 
@@ -50,7 +50,7 @@ DELETE /accessReviews('{reviewId}')/reviewers('{userId'})
 
 
 ##### <a name="request"></a>要求
-要求 URL で、accessreview オブジェクトの id と、ユーザーオブジェクトの id を指定します。
+要求 URL で、accessReview オブジェクトの id と、ユーザーオブジェクトの id を指定します。
 
 <!-- {
   "blockType": "request",
@@ -69,6 +69,16 @@ DELETE https://graph.microsoft.com/beta/accessReviews/2b83cc42-09db-46f6-8c6e-16
 ```http
 HTTP/1.1 204 No content
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/remove_accessReview_reviewer-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/remove_accessReview_reviewer-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!--
 {
@@ -77,6 +87,9 @@ HTTP/1.1 204 No content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/accessreview-removereviewer.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/accessreview-removereviewer.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

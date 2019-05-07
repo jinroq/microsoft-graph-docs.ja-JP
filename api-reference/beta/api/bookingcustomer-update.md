@@ -1,27 +1,27 @@
 ---
-title: bookingcustomer を更新する
-description: bookingcustomer オブジェクトのプロパティを更新します。
+title: Bookingcustomer を更新する
+description: BookingCustomer オブジェクトのプロパティを更新します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 2b634b99ce9a3940f80e0ef8f296e7f96184fdba
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: b9f30ba1fb17e9019910a2aaa55dff408b626122
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322458"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636038"
 ---
-# <a name="update-bookingcustomer"></a>bookingcustomer を更新する
+# <a name="update-bookingcustomer"></a>Bookingcustomer を更新する
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[bookingcustomer](../resources/bookingcustomer.md)オブジェクトのプロパティを更新します。
+[Bookingcustomer](../resources/bookingcustomer.md)オブジェクトのプロパティを更新します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | bookingsappointment すべての予約。すべて、予約....   |
+|委任 (職場または学校のアカウント) | BookingsAppointment すべての予約。すべて、予約....   |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。   |
 |アプリケーション | サポートされていません。  |
 
@@ -79,6 +79,16 @@ Content-type: application/json
     "emailAddress": "adele@relecloud.com"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_bookingcustomer-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_bookingcustomer-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -89,6 +99,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/bookingcustomer-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/bookingcustomer-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

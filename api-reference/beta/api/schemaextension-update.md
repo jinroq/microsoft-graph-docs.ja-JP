@@ -1,24 +1,24 @@
 ---
 title: schemaExtension を更新する
-description: 指定した schemaextension の定義のプロパティを更新します。
+description: 指定した schemaExtension の定義のプロパティを更新します。
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: 98bf2376eba25a7ed5a0642561b05372aa0e8b58
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: d671f743d1e10c80d713e8efba4e917d3dbd31dd
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33331462"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638922"
 ---
 # <a name="update-schemaextension"></a>schemaExtension を更新する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指定した[schemaextension](../resources/schemaextension.md)の定義のプロパティを更新します。
+指定した[Schemaextension](../resources/schemaextension.md)の定義のプロパティを更新します。
 
-この更新は、拡張機能の**targettypes**プロパティに含まれるすべてのリソースに適用されます。 これらのリソースは、[サポート](/graph/extensibility-overview#supported-resources)されているリソースの種類の中にあります。
+この更新は、拡張機能の**Targettypes**プロパティに含まれるすべてのリソースに適用されます。 これらのリソースは、[サポート](/graph/extensibility-overview#supported-resources)されているリソースの種類の中にあります。
 
-拡張機能が**indevelopment**または**Available** status にある場合は、スキーマ拡張機能 (所有者アプリ) を作成したアプリのみが拡張機能を追加で更新できます。 つまり、アプリでカスタムプロパティを削除したり、ターゲットリソースの種類を定義から削除したりすることはできません。 ただし、アプリで拡張機能の説明を変更することはできます。
+拡張機能が**Indevelopment**または**Available** status にある場合は、スキーマ拡張機能 (所有者アプリ) を作成したアプリのみが拡張機能を追加で更新できます。 つまり、アプリでカスタムプロパティを削除したり、ターゲットリソースの種類を定義から削除したりすることはできません。 ただし、アプリで拡張機能の説明を変更することはできます。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -98,6 +98,16 @@ Content-length: 201
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_schemaextension-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_schemaextension-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="see-also"></a>関連項目
 
@@ -113,6 +123,9 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/schemaextension-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/schemaextension-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

@@ -1,17 +1,17 @@
 ---
-title: administrativeUnit を作成する
+title: AdministrativeUnit を作成する
 description: この API を使用して、新しい administrativeUnit を作成します。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4ed0eaf3d7d0618d41f218365840857a27b781c6
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 4815082a8a5930e426e0843d2dcf2ebe6ef190d5
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322781"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636633"
 ---
-# <a name="create-administrativeunit"></a>administrativeUnit を作成する
+# <a name="create-administrativeunit"></a>AdministrativeUnit を作成する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -39,7 +39,7 @@ POST /administrativeUnits
 ## <a name="request-body"></a>要求本文
 要求本文で、 [administrativeUnit](../resources/administrativeunit.md)オブジェクトの JSON 表記を指定します。
 
-**administrativeUnit**リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため`POST` 、操作を使用して、独自のデータを作成するときにカスタムプロパティを管理単位に追加することができます。
+**AdministrativeUnit**リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため`POST` 、操作を使用して、独自のデータを作成するときにカスタムプロパティを管理単位に追加することができます。
 
 ## <a name="response"></a>応答
 
@@ -85,6 +85,16 @@ Content-length: 172
   }
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_administrativeunit_from_administrativeunits-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_administrativeunit_from_administrativeunits-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="see-also"></a>関連項目
 
@@ -104,6 +114,9 @@ Content-length: 172
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/administrativeunit-post-administrativeunits.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/administrativeunit-post-administrativeunits.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

@@ -1,21 +1,21 @@
 ---
 title: アラートを取得する
-description: alert オブジェクトのプロパティと関係を取得する
+description: Alert オブジェクトのプロパティと関係を取得する
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 08691cc0122c44703d9a95625c9eabb5d70422fe
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 12d17e96ab12a72d256ec7552e0b7a042e541067
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322732"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636549"
 ---
 # <a name="get-alert"></a>アラートを取得する
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[alert](../resources/alert.md)オブジェクトのプロパティと関係を取得します。
+[Alert](../resources/alert.md)オブジェクトのプロパティと関係を取得します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -23,9 +23,9 @@ ms.locfileid: "33322732"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) |  securityevents. all、securityevents、ReadWrite   |
+|委任 (職場または学校のアカウント) |  SecurityEvents.Read.All、SecurityEvents.ReadWrite.All   |
 |委任 (個人用 Microsoft アカウント) |  サポートされていません。  |
-|アプリケーション | securityevents. all、securityevents、ReadWrite |
+|アプリケーション | SecurityEvents.Read.All、SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -47,7 +47,7 @@ GET /security/alerts/{id}
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッド`200 OK`は応答コードと、応答本文で**alert**オブジェクトを返します。 2xx または404以外の状態コードがプロバイダーから返された場合、またはプロバイダーがタイムアウトになった場合は`206 Partial Content` 、応答は、警告ヘッダー内のプロバイダーの応答と共に状態コードになります。 詳細については、「 [Microsoft Graph セキュリティ API のエラー応答](../resources/security-error-codes.md)」を参照してください。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で**alert**オブジェクトを返します。 プロバイダーから 2xx または 404 以外の状態コードが返されるか、プロバイダーがタイムアウトした場合、応答は、警告ヘッダー内のプロバイダーの応答と共に`206 Partial Content` 状態コードになります。 詳細については、[Microsoft グラフ セキュリティ API のエラー応答](../resources/security-error-codes.md)を参照してください。
 
 ## <a name="example"></a>例
 
@@ -246,6 +246,16 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_alert-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_alert-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -256,6 +266,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/alert-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/alert-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

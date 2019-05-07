@@ -1,13 +1,13 @@
 ---
 title: secureScoreControlProfiles の更新
-description: 任意の統合ソリューション内の編集可能な securescorecontrolprofiles のプロパティを更新して、担当者または tenantnote などのさまざまなプロパティを変更します。
+description: 任意の統合ソリューション内の編集可能な Securescorecontrolprofiles のプロパティを更新して、担当者または tenantNote などのさまざまなプロパティを変更します。
 localization_priority: Normal
-ms.openlocfilehash: ee184e921301fc8e2ce9e86122e5f01c335fa540
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 8808a73536a67d8ed4ed50f0e5dc8c05707130fa
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33331505"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638782"
 ---
 # <a name="update-securescorecontrolprofiles"></a>secureScoreControlProfiles の更新
 
@@ -21,9 +21,9 @@ ms.locfileid: "33331505"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) |   securityevents。  |
+|委任 (職場または学校のアカウント) |   SecurityEvents。  |
 |委任 (個人用 Microsoft アカウント) |  サポートされていません。  |
-|アプリケーション | securityevents。 |
+|アプリケーション | SecurityEvents。 |
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -37,7 +37,7 @@ PATCH /security/secureScoreControlProfiles/{id}
 
 | 名前       | 説明|
 |:-----------|:-----------|
-| Authorization  | ベアラー {code}。 必須。|
+| Authorization  | ベアラー {code}。 必須です。|
 |Prefer | 戻り値 = 表現。 |
 
 ## <a name="request-body"></a>要求本文
@@ -47,8 +47,8 @@ PATCH /security/secureScoreControlProfiles/{id}
 | プロパティ   | 型 |説明|
 |:---------------|:--------|:----------|
 |assignedTo|String|トリアージ、実装、または修復のために、コントロールが割り当てられているアナリストの名前。|
-|tenantnote|String|コントロールに関するアナリストコメント (カスタマーコントロール管理向け)。|
-|controlstateupdates| String|コントロールに対するアナリスト主導の設定。 可能な値は、`ignore`、`thirdParty`、`reviewed` です。|
+|tenantNote|String|コントロールに関するアナリストコメント (カスタマーコントロール管理向け)。|
+|controlStateUpdates| String|コントロールに対するアナリスト主導の設定。 可能な値は、`ignore`、`thirdParty`、`reviewed` です。|
 
 
 ## <a name="response"></a>応答
@@ -88,6 +88,16 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/securescorecontrolprofiles_update-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/securescorecontrolprofiles_update-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
 
@@ -99,6 +109,9 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/securescorecontrolprofiles-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/securescorecontrolprofiles-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

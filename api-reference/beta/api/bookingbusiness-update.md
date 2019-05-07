@@ -1,21 +1,21 @@
 ---
-title: bookingbusiness の更新
-description: bookingbusiness オブジェクトのプロパティを更新します。
+title: Bookingbusiness の更新
+description: BookingBusiness オブジェクトのプロパティを更新します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: fc86060e3d24039286fe679fef83f419a54f42ac
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 7f1203eaa748ae8a5ec60fd49f665abe6ce56aac
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322269"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636094"
 ---
-# <a name="update-bookingbusiness"></a>bookingbusiness の更新
+# <a name="update-bookingbusiness"></a>Bookingbusiness の更新
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[bookingbusiness](../resources/bookingbusiness.md)オブジェクトのプロパティを更新します。
+[Bookingbusiness](../resources/bookingbusiness.md)オブジェクトのプロパティを更新します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -41,11 +41,11 @@ PATCH /bookingBusinesses/<id>
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |address|[physicalAddress](../resources/physicaladdress.md)|会社の住所。|
-|microsoft.rtc.rgs.management.writablesettings.businesshours|[bookingwork hours](../resources/bookingworkhours.md)コレクション|業務の運営時間。|
+|Microsoft.rtc.rgs.management.writablesettings.businesshours|[Bookingwork hours](../resources/bookingworkhours.md)コレクション|業務の運営時間。|
 |businessType|String|業務の種類。|
 |defaultCurrencyIso|String|Microsoft の予約で勤務している通貨のコード。|
-|displayName|String|顧客とのインターフェイスとなる企業の名前。|
-|email|String|ビジネスの電子メールアドレス。|
+|displayName|文字列|顧客とのインターフェイスとなる企業の名前。|
+|メール|String|ビジネスの電子メールアドレス。|
 |phone|String|会社の電話番号。|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|このビジネスに対して予約を作成する方法を指定します。|
 |webSiteUrl|String|ビジネス web サイトの URL。|
@@ -83,6 +83,16 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_bookingbusiness-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_bookingbusiness-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -93,6 +103,9 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/bookingbusiness-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/bookingbusiness-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

@@ -1,23 +1,23 @@
 ---
-title: 'bookingbusiness: 未発行'
+title: 'bookingBusiness: 未発行'
 description: 外部のお客様がこの業務のスケジュール設定ページを使用できないようにします。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 11ef80e416c1c8ffb85170c6e3171fc003bf937b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: dc0d94094273579321a614c9ff2192f331550421
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322575"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636192"
 ---
-# <a name="bookingbusiness-unpublish"></a>bookingbusiness: 未発行
+# <a name="bookingbusiness-unpublish"></a>bookingBusiness: 未発行
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 外部のお客様がこの業務のスケジュール設定ページを使用できないようにします。
 
-**isPublished**プロパティを false に設定し、 **publicurl**プロパティを null に設定します。
+**IsPublished**プロパティを False に設定し、 **publicurl**プロパティを null に設定します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -66,6 +66,16 @@ POST https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M36
 ```http
 HTTP/1.1 204 No content
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/bookingbusiness_unpublish-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/bookingbusiness_unpublish-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -76,6 +86,9 @@ HTTP/1.1 204 No content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/bookingbusiness-unpublish.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/bookingbusiness-unpublish.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

@@ -4,12 +4,12 @@ description: アクティブな通話を転送します。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 699046f2070227234c55e8b07058ce0522ec75f5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 6ced05ad4539dadf490198d4a0ed70ea981672e3
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328177"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33635835"
 ---
 # <a name="call-transfer"></a>通話: 転送
 
@@ -43,7 +43,7 @@ POST /applications/{id}/calls/{id}/transfer
 
 | パラメーター      | 型    |説明|
 |:---------------|:--------|:----------|
-|transfertarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|転送先の参加者です。|
+|transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|転送先の参加者です。|
 |clientContext|String|クライアントコンテキスト。|
 
 ## <a name="response"></a>応答
@@ -97,6 +97,14 @@ Content-Length: 430
 ```http
 HTTP/1.1 202 Accepted
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/call-transfer-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ##### <a name="notification---transferring"></a>通知-転送
 
@@ -343,6 +351,8 @@ Content-Type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/call-transfer.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

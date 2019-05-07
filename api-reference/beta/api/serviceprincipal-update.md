@@ -1,19 +1,19 @@
 ---
-title: serviceprincipal を更新する
-description: serviceprincipal オブジェクトのプロパティを更新します。
+title: Serviceprincipal を更新する
+description: Serviceprincipal オブジェクトのプロパティを更新します。
 localization_priority: Normal
-ms.openlocfilehash: 9bb3f8b578d3a0e24418f80da693ff317a7cc132
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: e2caffafe114f0023a849cecef98f8173bf6468f
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33331469"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638635"
 ---
-# <a name="update-serviceprincipal"></a>serviceprincipal を更新する
+# <a name="update-serviceprincipal"></a>Serviceprincipal を更新する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-serviceprincipal オブジェクトのプロパティを更新します。
+Serviceprincipal オブジェクトのプロパティを更新します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -21,7 +21,7 @@ serviceprincipal オブジェクトのプロパティを更新します。
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | Directory.AccessAsUser.All    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | application.readwrite.ownedby、アプリケーションの読み取り/書き込み。 |
+|アプリケーション | Application.ReadWrite.OwnedBy、Application.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -42,20 +42,20 @@ PATCH /servicePrincipals/{id}
 |appDisplayName|String|関連付けられているアプリケーションによって公開される表示名。|
 |appId|String|関連付けられたアプリケーションの一意の識別子 (その **appId** プロパティ)。|
 |appRoleAssignmentRequired|Boolean|Azure AD からアプリケーションにユーザー トークンまたはアクセス トークンが発行される前に、ユーザーまたはグループに対する **appRoleAssignment** が必要かどうかを指定します。                            **メモ**: null を許容しないバージョン1.5 以降が必要です。            |
-|appRoles|approle|関連付けられているアプリケーションによって公開されるアプリケーション ロール。 詳細については**** 、「アプリケーションエンティティ**メモ**: null 値ではなくバージョン1.5 またはそれ以降が必要」を参照してください。            |
+|appRoles|appRole|関連付けられているアプリケーションによって公開されるアプリケーション ロール。 詳細については**** 、「アプリケーションエンティティ**メモ**: null 値ではなくバージョン1.5 またはそれ以降が必要」を参照してください。            |
 |displayName|文字列|サービス プリンシパルの表示名。|
 |errorUrl|String|            |
 |HomePage|String|関連付けられているアプリケーションのホームページの URL。|
-|keyCredentials|keycredential|サービス プリンシパルに関連付けられているキー資格情報のコレクションです。null 許容型ではありません。                            **注**: Null は許容されません。            |
+|keyCredentials|keyCredential|サービス プリンシパルに関連付けられているキー資格情報のコレクションです。null 許容型ではありません。                            **注**: Null は許容されません。            |
 |logoutUrl|String| Microsoft の承認サービスで、[フロント チャネル](https://openid.net/specs/openid-connect-frontchannel-1_0.html)、[バック チャネル](https://openid.net/specs/openid-connect-backchannel-1_0.html)または SAML ログアウト プロトコルを使ってユーザーのログアウトするのに使う URL を指定します。 |
 |oauth2Permissions|oAuth2Permission|関連付けられているアプリケーションによって公開される OAuth 2.0 のアクセス許可。 さらに詳しい情報については、アプリケーション エンティティの **oauth2Permissions** プロパティの定義を参照してください。                            **メモ**: null を許容しないバージョン1.5 以降が必要です。            |
-|passwordCredentials|passwordcredential|サービス プリンシパルに関連付けられているパスワード資格情報のコレクションです。null 許容型ではありません。                            **注**: Null は許容されません。            |
+|passwordCredentials|passwordCredential|サービス プリンシパルに関連付けられているパスワード資格情報のコレクションです。null 許容型ではありません。                            **注**: Null は許容されません。            |
 |preferredTokenSigningKeyThumbprint|String|内部使用専用に予約済みです。 このプロパティに書き込みしたり、依存したりしないでください。 将来のバージョンで削除される可能性があります。                            **メモ**: バージョン1.5 以降が必要です。            |
 |publisherName|String|関連付けられたアプリケーションが指定されているテナントの表示名。|
 |replyUrls|String|関連付けられたアプリケーションにサインインするためにユーザー トークンが送信される URL、または関連付けられたアプリケーションに対して OAuth 2.0 認証コードとアクセス トークンが送信されるリダイレクト URI。                            **注**: Null は許容されません。            |
 |samlMetadataUrl|String|            |
 |servicePrincipalNames|String|関連するアプリケーションを識別する URI です。 詳細については、「[Azure Active Directory のアプリケーション オブジェクトとサービス プリンシパル オブジェクト](https://msdn.microsoft.com/library/azure/dn132633.aspx)」を参照してください。                            **メモ**: nullable ではない場合、複数値プロパティのフィルター式には**any**演算子が必要です。詳細については、「[サポートされているクエリ、フィルター、およびページングのオプション](https://msdn.microsoft.com/library/azure/dn727074.aspx)」を参照してください。            |
-|tags|文字列|                                        **注**: Null は許容されません。            |
+|タグ|文字列|                                        **注**: Null は許容されません。            |
 
 ## <a name="response"></a>応答
 
@@ -124,6 +124,16 @@ Content-length: 391
   "appRoleAssignmentRequired": true
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_serviceprincipal-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_serviceprincipal-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -134,6 +144,9 @@ Content-length: 391
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/serviceprincipal-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/serviceprincipal-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

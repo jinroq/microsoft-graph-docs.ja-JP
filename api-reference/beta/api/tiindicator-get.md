@@ -1,21 +1,21 @@
 ---
 title: 脅威インテリジェンス指標の取得
-description: tiindicator オブジェクトのプロパティとリレーションシップを取得します。
+description: Tiindicator オブジェクトのプロパティとリレーションシップを取得します。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 5376200bc2824d51dd1eec2a442b797836855fdb
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 74501125b5504b365281cfee5fa12f6169b1c2aa
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335268"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33637564"
 ---
 # <a name="get-threat-intelligence-indicator"></a>脅威インテリジェンス指標の取得
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[tiindicator](../resources/tiindicator.md)オブジェクトのプロパティとリレーションシップを取得します。
+[Tiindicator](../resources/tiindicator.md)オブジェクトのプロパティとリレーションシップを取得します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -95,6 +95,16 @@ Content-type: application/json
   "description": "description-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_tiindicator-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_tiindicator-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
@@ -103,5 +113,9 @@ Content-type: application/json
   "description": "Get tiIndicator",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/tiindicator-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/tiindicator-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

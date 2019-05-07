@@ -1,21 +1,21 @@
 ---
-title: timeoff の削除
-description: スケジュールから timeoff インスタンスを削除します。
+title: TimeOff の削除
+description: スケジュールから timeOff インスタンスを削除します。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 361c850de6a1171e753da6bb7266e994df6e35ac
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: d55831167813d64e2bf010420320fc7d5f4be8d1
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33330086"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33637543"
 ---
-# <a name="delete-timeoff"></a>timeoff の削除
+# <a name="delete-timeoff"></a>TimeOff の削除
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[スケジュール](../resources/schedule.md)から[timeoff](../resources/timeoff.md)インスタンスを削除します。
+[スケジュール](../resources/schedule.md)から[Timeoff](../resources/timeoff.md)インスタンスを削除します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -78,6 +78,16 @@ DELETE https://graph.microsoft.com/beta/teams/{teamId}/schedule/timesOff/{timeOf
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/timeoff-delete-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/timeoff-delete-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -88,6 +98,9 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/timeoff-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/timeoff-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

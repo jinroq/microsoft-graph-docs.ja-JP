@@ -4,19 +4,18 @@ description: この API を使用して、新しいユーザーを作成しま�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2bd39aa9251fabeeb564eb9db1e782804f533543
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 5efcc4bd793ca876d1db5860785c3ba67d447ade
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334610"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33637123"
 ---
 # <a name="create-user"></a>ユーザーを作成する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-この API を使用して、新しいユーザーを作成します。
-要求本文に、作成するユーザーを含めます。 少なくとも、ユーザーについての必須プロパティを指定する必要があります。 必要に応じて、その他の書き込み可能なプロパティを指定することもできます。
+この API を使用して、新しいユーザーを作成します。要求本文には、作成するユーザーが含まれています。少なくとも、ユーザーに必要なプロパティを指定する必要があります。必要に応じて、その他の書き込み可能なプロパティを指定することもできます。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -44,7 +43,7 @@ POST /users
 
 | パラメーター | 型 | 説明|
 |:---------------|:--------|:----------|
-|accountEnabled |ブール値 |アカウントが有効な場合は true。それ以外の場合は false。|
+|accountEnabled |boolean |アカウントが有効な場合は true。それ以外の場合は false。|
 |displayName |string |ユーザーのアドレス帳に表示される名前。|
 |onPremisesImmutableId |string |ユーザーの userPrincipalName (UPN) プロパティにフェデレーション ドメインを使用している場合は、新しいユーザー アカウントの作成時にのみ指定する必要があります|
 |mailNickname |string |ユーザーのメール エイリアス。|
@@ -107,6 +106,16 @@ Content-type: application/json
     "userPrincipalName": "upn-value@tenant-value.onmicrosoft.com"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_user_from_users_2-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_user_from_users_2-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="see-also"></a>関連項目
 
@@ -123,6 +132,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-post-users.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/user-post-users.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

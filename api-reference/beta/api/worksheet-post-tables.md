@@ -4,12 +4,12 @@ description: この API を使用して、新しいテーブルを作成しま�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: b0a9ac3a479934bf44a9015cef7f0f705ae8c4ff
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: a0d725c66f50d8edf2ff7ce0604f0664954e0fcc
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339516"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636829"
 ---
 # <a name="create-table"></a>テーブルの作成
 
@@ -42,7 +42,7 @@ POST /workbook/worksheets/{id|name}/tables/add
 
 | パラメーター       | 型|説明|
 |:---------------|:----------|:----------|
-| Address  | string| 範囲のアドレス。 `worksheets/{id|name}/tables/add` path からこの API を呼び出さない場合は、アドレスでシート名のプレフィックスをサポートする必要はありません。 ただし、これを`workbook/tables/add` path で呼び出している場合は、テーブルを作成する必要のあるシート名を指定します (例`sheet1!A1:D4`:)。|
+| Address  | string| 範囲のアドレス。 `worksheets/{id|name}/tables/add` Path からこの API を呼び出さない場合は、アドレスでシート名のプレフィックスをサポートする必要はありません。 ただし、これを`workbook/tables/add` path で呼び出している場合は、テーブルを作成する必要のあるシート名を指定します (例`sheet1!A1:D4`:)。|
 | hasHeaders  | boolean|範囲に列ラベルがあるかどうかを示すブール値。ソースにヘッダーが含まれていない場合 (このプロパティが false に設定されている場合)、Excel はデータを下方向に 1 行シフトして、自動的にヘッダーを生成します。|
 
 ## <a name="response"></a>応答
@@ -86,6 +86,16 @@ Content-length: 109
   "style": "style-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_table_from_worksheet-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_table_from_worksheet-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -96,6 +106,9 @@ Content-length: 109
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/worksheet-post-tables.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/worksheet-post-tables.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

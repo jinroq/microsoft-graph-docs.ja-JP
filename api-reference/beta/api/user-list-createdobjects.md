@@ -4,12 +4,12 @@ description: ユーザーによって作成されたディレクトリ オブジ
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 74cd5af4d10fa468409c6e97f1f8063a87f14746
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: da4fb6ff05e927b34992b5a739e8df89c4b89cde
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33329945"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33637284"
 ---
 # <a name="list-createdobjects"></a>createdObjects を一覧表示する
 
@@ -21,7 +21,7 @@ ms.locfileid: "33329945"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | directory.accessasuser.all、ユーザーの読み取り、書き込み、および読み取り。 all、すべてのディレクトリの読み取り、すべての書き込み、およびすべてのディレクトリを取得します。    |
+|委任 (職場または学校のアカウント) | User.Read、User.ReadWrite、User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委任 (個人用 Microsoft アカウント) | User.Read、User.ReadWrite    |
 |アプリケーション | User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
@@ -75,6 +75,16 @@ Content-length: 55
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_createdobjects-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_createdobjects-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -85,6 +95,9 @@ Content-length: 55
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-list-createdobjects.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/user-list-createdobjects.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

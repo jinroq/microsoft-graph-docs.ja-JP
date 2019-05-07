@@ -1,28 +1,28 @@
 ---
 title: List Bookings calendarView
-description: 指定された日付範囲内に発生する、bookingappointment の bookingappointment オブジェクトのコレクションを取得します。
+description: 指定された日付範囲内に発生する、Bookingappointment の bookingAppointment オブジェクトのコレクションを取得します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: c04a21cfde4a50637c67aa47d486d9484c584726
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 7ab6e3aee41dc17a87e4a9027d1ae78e7b249cf4
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322503"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636220"
 ---
 # <a name="list-bookings-calendarview"></a>List Bookings calendarView
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指定された日付範囲内に発生する、 [bookingappointment](../resources/bookingbusiness.md)の[bookingappointment](../resources/bookingappointment.md)オブジェクトのコレクションを取得します。
+指定された日付範囲内に発生する、 [Bookingappointment](../resources/bookingbusiness.md)の[bookingappointment](../resources/bookingappointment.md)オブジェクトのコレクションを取得します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) |  予約します。 all、bookingsappointment すべての予約。すべての予約が可能です。   |
+|委任 (職場または学校のアカウント) |  予約します。 all、BookingsAppointment すべての予約。すべての予約が可能です。   |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。   |
 |アプリケーション | サポートされていません。  |
 
@@ -42,8 +42,8 @@ GET /bookingBusinesses/{id}/calendarView?start={start-value}&end={end-value}
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|開始|DateTimeOffset|ISO 8601 形式で表される時間範囲の開始日時を utc または utc からのオフセットで指定します。 たとえば、2018年1月1日午前0時 (UTC) は次のようになります。 ' 2018-01-01t00:00: 00z '、PST の同じ時刻は次のようになります。 ' 2017-12-31t16:00:00-08:00 '。|
-|end|DateTimeOffset|ISO 8601 形式で表される時間範囲の終了日時 (utc または utc からのオフセット)。 たとえば、3月1日の午前0時 (UTC) では、2018は次のようになります。 ' 2018-01-01t03:00: 00z '、PST の同じ時刻は ' 2017-12-31t19:00:00-08:00 ' のようになります。|
+|開始|DateTimeOffset|ISO 8601 形式で表される時間範囲の開始日時を UTC または UTC からのオフセットで指定します。 たとえば、2018年1月1日午前0時 (UTC) は次のようになります。 ' 2018-01-01T00:00: 00Z '、PST の同じ時刻は次のようになります。 ' 2017-12-31T16:00:00-08:00 '。|
+|end|DateTimeOffset|ISO 8601 形式で表される時間範囲の終了日時 (UTC または UTC からのオフセット)。 たとえば、3月1日の午前0時 (UTC) では、2018は次のようになります。 ' 2018-01-01T03:00: 00Z '、PST の同じ時刻は ' 2017-12-31T19:00:00-08:00 ' のようになります。|
 
 ## <a name="response"></a>応答
 成功した場合、この`200, OK`メソッドは応答コードと、応答本文で[bookingappointment](../resources/bookingappointment.md)コレクションオブジェクトを返します。
@@ -246,6 +246,16 @@ Content-type: application/json
     ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/bookingbusiness_getcalendarview-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/bookingbusiness_getcalendarview-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -256,6 +266,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/bookingbusiness-list-calendarview.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/bookingbusiness-list-calendarview.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

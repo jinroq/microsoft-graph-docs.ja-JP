@@ -1,23 +1,23 @@
 ---
-title: bookingbusiness の作成
+title: BookingBusiness の作成
 description: テナントに新しい Microsoft 予約ビジネスを作成します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 53f675eb0b81ca7a63fe38eb08468039fc08f7c5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: e3a41adb95f6749fcbdbdb83af8fbc2cba874ee2
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322609"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636129"
 ---
-# <a name="create-bookingbusiness"></a>bookingbusiness の作成
+# <a name="create-bookingbusiness"></a>BookingBusiness の作成
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 テナントに新しい Microsoft 予約ビジネスを作成します。
 
-これは、ビジネス表示名を指定する必要がある、予約ビジネスを設定するための最初の手順です。 会社の住所、web サイトのアドレス、スケジュールポリシーなどのその他の情報を含めたり、後で**bookingbusiness**を[更新](bookingbusiness-update.md)してその情報を設定したりすることができます。
+これは、ビジネス表示名を指定する必要がある、予約ビジネスを設定するための最初の手順です。 会社の住所、web サイトのアドレス、スケジュールポリシーなどのその他の情報を含めたり、後で**Bookingbusiness**を[更新](bookingbusiness-update.md)してその情報を設定したりすることができます。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -39,7 +39,7 @@ POST /bookingBusinesses
 | Authorization  | Bearer {code}|
 
 ## <a name="request-body"></a>要求本文
-要求本文で、 [bookingbusiness](../resources/bookingbusiness.md)オブジェクトの JSON 表記を指定します。
+要求本文で、 [Bookingbusiness](../resources/bookingbusiness.md)オブジェクトの JSON 表記を指定します。
 
 
 ## <a name="response"></a>応答
@@ -73,7 +73,7 @@ Content-type: application/json
     "defaultCurrencyIso":"USD"
 }
 ```
-要求本文で、 [bookingbusiness](../resources/bookingbusiness.md)オブジェクトの JSON 表記を指定します。
+要求本文で、 [Bookingbusiness](../resources/bookingbusiness.md)オブジェクトの JSON 表記を指定します。
 ##### <a name="response"></a>応答
 応答の例を次に示します。 注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
@@ -173,6 +173,16 @@ Content-type: application/json
     }
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_bookingbusiness_from_bookingbusinesses-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_bookingbusiness_from_bookingbusinesses-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -183,6 +193,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/bookingbusiness-post-bookingbusinesses.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/bookingbusiness-post-bookingbusinesses.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

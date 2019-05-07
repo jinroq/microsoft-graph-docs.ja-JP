@@ -4,12 +4,12 @@ description: アクティビティの種類とサービス別のユーザー数�
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: e608e16f4745067980167cca52060d08ab0e4f95
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 6f876e58ac966c592945c794909051a45a7bddf0
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33336663"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33639391"
 ---
 # <a name="reportroot-getoffice365servicesusercounts"></a>reportRoot: getOffice365ServicesUserCounts
 
@@ -80,7 +80,7 @@ GET /reports/getOffice365ServicesUserCounts(period='{period_value}')
 - Office 365 の非アクティブ
 - レポート期間
 
-次の列は、21vianet が運用している Microsoft graph 中国ではサポートされていません。
+次の列は、21Vianet が運用している Microsoft Graph 中国ではサポートされていません。
 
 - Yammer アクティブ
 - Yammer 非アクティブ
@@ -91,12 +91,12 @@ GET /reports/getOffice365ServicesUserCounts(period='{period_value}')
 
 成功した場合、このメソッド`200 OK`は応答コードと、応答本文で**[office365ServicesUserCounts](../resources/office365servicesusercounts.md)** オブジェクトを返します。
 
-**[office365ServicesUserCounts](../resources/office365servicesusercounts.md)** オブジェクトの次のプロパティは、21vianet が運用している Microsoft Graph の中国ではサポートされていません。
+**[Office365ServicesUserCounts](../resources/office365servicesusercounts.md)** オブジェクトの次のプロパティは、21vianet が運用している Microsoft Graph の中国ではサポートされていません。
 
 - yammerActive
 - yammerInactive
-- teamsactive
-- teamsinactive
+- teamsActive
+- teamsInactive
 
 ## <a name="example"></a>例
 
@@ -128,6 +128,16 @@ HTTP/1.1 302 Found
 Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/reportroot_getoffice365servicesusercounts_csv-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/reportroot_getoffice365servicesusercounts_csv-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 302 リダイレクトに従うと、ダウンロードされる CSV ファイルは次のスキーマを持つことになります。
 
@@ -202,3 +212,28 @@ Content-Length: 458
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/reportroot_getoffice365servicesusercounts_json-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/reportroot_getoffice365servicesusercounts_json-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Example",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/reportroot-getoffice365servicesusercounts.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #csv (score: 5)",
+    "Error: /api-reference/beta/api/reportroot-getoffice365servicesusercounts.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/reportroot-getoffice365servicesusercounts.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #csv (score: 5)",
+    "Error: /api-reference/beta/api/reportroot-getoffice365servicesusercounts.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

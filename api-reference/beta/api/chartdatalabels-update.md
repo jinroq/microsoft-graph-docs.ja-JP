@@ -1,17 +1,17 @@
 ---
-title: workbookChartDataLabels の更新
-description: workbookchartdatalabels オブジェクトのプロパティを更新します。
+title: WorkbookChartDataLabels の更新
+description: Workbookchartdatalabels オブジェクトのプロパティを更新します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: aeb4bf0af0c61429548bb1d01ab2049122bfda3b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: d4ba0d703f4dee429404ee02939b3917064ab8f7
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33327787"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33635569"
 ---
-# <a name="update-workbookchartdatalabels"></a>workbookChartDataLabels の更新
+# <a name="update-workbookchartdatalabels"></a>WorkbookChartDataLabels の更新
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,11 +43,11 @@ PATCH /workbook/worksheets/{id|name}/charts/{name}/datalabels
 |:---------------|:--------|:----------|
 |position|string|データ ラベルの位置を表す DataLabelPosition 値。可能な値は、`None`、`Center`、`InsideEnd`、`InsideBase`、`OutsideEnd`、`Left`、`Right`、`Top`、`Bottom`、`BestFit`、`Callout` です。|
 |separator|string|グラフのデータ ラベルに使用される区切り文字を表す文字列を設定します。|
-|showBubbleSize|boolean|データ ラベルのバブルのサイズを表示または非表示にするかを表すブール型の値。|
-|showCategoryName|boolean|データ ラベルのカテゴリ名を表示するか非表示にするかを表すブール型の値。|
-|showLegendKey|boolean|データ ラベルの凡例マーカーを表示するか非表示にするかを表すブール型の値。|
-|showPercentage|boolean|データ ラベルのパーセンテージを表示するか非表示にするかを表すブール型の値。|
-|showSeriesName|boolean|データ ラベルの系列名を表示するか非表示にするかを表すブール型の値。|
+|showBubbleSize|ブール値|データ ラベルのバブルのサイズを表示または非表示にするかを表すブール型の値。|
+|showCategoryName|ブール値|データ ラベルのカテゴリ名を表示するか非表示にするかを表すブール型の値。|
+|showLegendKey|ブール値|データ ラベルの凡例マーカーを表示するか非表示にするかを表すブール型の値。|
+|showPercentage|ブール値|データ ラベルのパーセンテージを表示するか非表示にするかを表すブール型の値。|
+|showSeriesName|ブール値|データ ラベルの系列名を表示するか非表示にするかを表すブール型の値。|
 |showValue|ブール値|データ ラベルの値を表示するか非表示にするかを表すブール型の値。|
 
 ## <a name="response"></a>応答
@@ -93,6 +93,16 @@ Content-length: 134
   "showLegendKey": true
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_chartdatalabels-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_chartdatalabels-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -103,6 +113,9 @@ Content-length: 134
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/chartdatalabels-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/chartdatalabels-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

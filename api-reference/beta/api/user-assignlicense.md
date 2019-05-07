@@ -4,12 +4,12 @@ description: ユーザーのライセンスを追加または削除して、Micr
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4f11582484a4c6ff7be5a0d33da20e7f2b3a392e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: a6a5b17a31522ee58007b991fe04b5d26fdba188
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33329928"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33637410"
 ---
 # <a name="assignlicense"></a>assignLicense
 
@@ -17,7 +17,7 @@ ms.locfileid: "33329928"
 
 ユーザーのライセンスを追加または削除して、Microsoft クラウド製品の使用を有効または無効にします。 たとえば、組織には100ライセンスを持つ Office 365 Enterprise E3 サブスクリプションがあり、この要求はそれらのライセンスの1つを特定のユーザーに割り当てます。 また、サブスクリプションに関連付けられている特定のプランを有効または無効にすることもできます。 サブスクリプションとライセンスの詳細については、 [Technet の記事](https://technet.microsoft.com/en-us/library/mt765146.aspx)を参照してください。
 
-ディレクトリで利用可能なサブスクリプションを取得するには、 [get subscribedSkus 要求](subscribedsku-list.md)を実行します。 
+ディレクトリで利用可能なサブスクリプションを取得するには、 [Get subscribedSkus 要求](subscribedsku-list.md)を実行します。 
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -44,8 +44,8 @@ POST /users/{id | userPrincipalName}/assignLicense
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|addLicenses|[assignedLicense](../resources/assignedlicense.md) collection|追加するライセンスを指定する[assignedLicense](../resources/assignedlicense.md)オブジェクトのコレクションです。 [assignedLicense](../resources/assignedlicense.md)オブジェクトの**disabledPlans**プロパティを設定することによって、ライセンスに関連付けられた serviceplans を無効にすることができます。|
-|removeLicenses|Guid コレクション|削除するライセンスを識別する skuids のコレクション。|
+|addLicenses|[assignedLicense](../resources/assignedlicense.md) コレクション|追加するライセンスを指定する[assignedLicense](../resources/assignedlicense.md)オブジェクトのコレクションです。 [AssignedLicense](../resources/assignedlicense.md)オブジェクトの**disabledPlans**プロパティを設定することによって、ライセンスに関連付けられた serviceplans を無効にすることができます。|
+|removeLicenses|Guid コレクション|削除するライセンスを識別する skuIds のコレクション。|
 
 ## <a name="response"></a>応答
 
@@ -92,6 +92,16 @@ Content-length: 185
   "removeLicenses": ["skuId-value-1", "skuId-value-2"]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/user_assignlicense-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/user_assignlicense-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ##### <a name="response"></a>応答
 どちらの例でも、応答は更新されたユーザーオブジェクトです。 注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
@@ -138,6 +148,9 @@ Content-length: 491
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-assignlicense.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/user-assignlicense.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

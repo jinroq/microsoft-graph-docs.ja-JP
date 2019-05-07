@@ -1,21 +1,21 @@
 ---
-title: administrativeunit の更新
-description: administrativeUnit オブジェクトのプロパティを更新します。
+title: Administrativeunit の更新
+description: AdministrativeUnit オブジェクトのプロパティを更新します。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1b1334a26451f457fa0a08466daa31292d641d8e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 56b92a7dc191b41798255f1db5a5da84285688f8
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322742"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636640"
 ---
-# <a name="update-administrativeunit"></a>administrativeunit の更新
+# <a name="update-administrativeunit"></a>Administrativeunit の更新
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[administrativeUnit](../resources/administrativeunit.md)オブジェクトのプロパティを更新します。
+[AdministrativeUnit](../resources/administrativeunit.md)オブジェクトのプロパティを更新します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -48,7 +48,7 @@ PATCH /administrativeUnits/{id}
 |displayName|string|管理単位の表示名。|
 |visibility|string|管理単位の可視性。 設定されていない場合、既定値は "public" です。 "HiddenMembership" に設定できます。これにより、メンバー以外のメンバーシップが非表示になります。|
 
-**administrativeUnit**リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため`PATCH` 、操作を使用して、既存の**administrativeUnit**インスタンスの拡張機能のカスタムプロパティで、独自のアプリ固有のデータを追加、更新、または削除することができます。
+**AdministrativeUnit**リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため`PATCH` 、操作を使用して、既存の**administrativeUnit**インスタンスの拡張機能のカスタムプロパティで、独自のアプリ固有のデータを追加、更新、または削除することができます。
 
 ## <a name="response"></a>応答
 
@@ -84,6 +84,16 @@ Content-length: 114
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_administrativeunit-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_administrativeunit-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="see-also"></a>関連項目
 
@@ -103,6 +113,9 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/administrativeunit-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/administrativeunit-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

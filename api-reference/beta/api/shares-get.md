@@ -4,12 +4,12 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 共有アイテムへのアクセス
 localization_priority: Normal
-ms.openlocfilehash: 1f172060a8b30996ff09b3ca93390da503db9fea
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1204239bf2e1a6f5fca271d115169c8f06852a33
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32537455"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638663"
 ---
 # <a name="accessing-shared-driveitems"></a>共有 DriveItems へのアクセス
 
@@ -39,7 +39,7 @@ GET /shares/{shareIdOrEncodedSharingUrl}
 
 | パラメーター名                 | 値    | 説明                                                                         |
 |:-------------------------------|:---------|:------------------------------------------------------------------------------------|
-| **sharingidorencodedsharingurl** | `string` | 必須。 API によって返される共有トークン、または適切にエンコードされた共有 URL。 |
+| **Sharingidorencodedsharingurl** | `string` | 必須。 API によって返される共有トークン、または適切にエンコードされた共有 URL。 |
 
 ### <a name="encoding-sharing-urls"></a>共有 URL をエンコードする
 
@@ -68,7 +68,7 @@ string encodedUrl = "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+'
 | 名前                          | 説明                                                                                             |
 |:------------------------------|:--------------------------------------------------------------------------------------------------------|
 | redeemSharingLink             | 共有リンク**** の場合は、発信者に、アイテムへの永続的なアクセス権を付与します。    |
-| redeemSharingLinkIfNecessary  | redeemSharingLink と同じですが、この要求の期間だけアクセスが許可されることが保証されます。 |
+| redeemSharingLinkIfNecessary  | RedeemSharingLink と同じですが、この要求の期間だけアクセスが許可されることが保証されます。 |
 
 redeemSharingLink は、発信者と同等であると考えて、共有リンクに移動します (共有ジェスチャに同意します)。 redeemSharingLinkIfNecessary は、リンクの場所を単にピークすることを目的としたシナリオに対して使用されます。metadata.
 
@@ -109,6 +109,16 @@ Content-type: application/json
   }
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-shared-root-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-shared-root-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="access-the-shared-item-directly"></a>共有アイテムに直接アクセスする
 
@@ -142,6 +152,16 @@ Content-Type: application/json
   "size": 109112
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-shared-driveitem-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-shared-driveitem-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="example-shared-folder"></a>例 (共有フォルダー)
 
@@ -185,6 +205,16 @@ Content-Type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-shared-driveitem-expand-children-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-shared-driveitem-expand-children-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="error-responses"></a>エラー応答
 
@@ -201,5 +231,13 @@ Content-Type: application/json
   "description": "Access the contents of a sharing link with the OneDrive API.",
   "keywords": "shares,shared,sharing,share link, sharing link, share id, share token",
   "section": "documentation",
-  "tocPath": "Sharing/Use a link"
+  "tocPath": "Sharing/Use a link",
+  "suppressions": [
+    "Error: /api-reference/beta/api/shares-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/shares-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/shares-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/shares-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/shares-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/shares-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 } -->

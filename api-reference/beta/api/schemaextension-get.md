@@ -1,20 +1,20 @@
 ---
 title: schemaExtension を取得する
-description: 指定された schemaextension 定義のプロパティを取得します。
+description: 指定された schemaExtension 定義のプロパティを取得します。
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: 5160476f5ef760e0e78ca7f50786fb4bc9bfa194
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 9b1b07cbc60398b3990d686917356c89a5902461
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33331572"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638901"
 ---
 # <a name="get-schemaextension"></a>schemaExtension を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指定された[schemaextension](../resources/schemaextension.md)定義のプロパティを取得します。
+指定された[Schemaextension](../resources/schemaextension.md)定義のプロパティを取得します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -84,6 +84,16 @@ Content-length: 201
     ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_schemaextension-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_schemaextension-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="see-also"></a>関連項目
 
@@ -100,6 +110,9 @@ Content-length: 201
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/schemaextension-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/schemaextension-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

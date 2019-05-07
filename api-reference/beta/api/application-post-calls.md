@@ -4,12 +4,12 @@ description: 新しい通話を作成します。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 850e6da61941c03f4c18dd6562a168e6f790e33d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 25e716c25ee8d06f5564b8ac6b4e3f6476f0ce84
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322919"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636458"
 ---
 # <a name="create-call"></a>通話の作成
 
@@ -24,7 +24,7 @@ ms.locfileid: "33322919"
 |:---------------------------------------|:----------------------------------------------------------------------------------------|
 | 委任 (職場または学校のアカウント)     | サポート対象外                                                                           |
 | 委任 (個人用 Microsoft アカウント) | サポート対象外                                                                           |
-| アプリケーション                            | JoinGroupCallsasGuest。すべての呼び出しを呼び出します。すべてを呼び出します。すべての呼び出しは、initiategroupcalls を呼び出します。 |
+| アプリケーション                            | JoinGroupCallsasGuest。すべての呼び出しを呼び出します。すべてを呼び出します。すべての呼び出しは、InitiateGroupCalls を呼び出します。 |
 
 > **注:** アプリホスト型メディアを使用した通話の場合は、上記の表に記載されているいずれかのアクセス許可を持つすべてのアクセス許可が必要です。
 
@@ -159,6 +159,14 @@ Content-Type: application/json
   "tenantId": "tenantId-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create-call-from-application-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ##### <a name="notification---establishing"></a>通知-確立中
 
@@ -513,6 +521,8 @@ Content-Type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/application-post-calls.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

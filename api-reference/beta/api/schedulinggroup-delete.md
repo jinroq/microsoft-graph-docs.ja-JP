@@ -1,21 +1,21 @@
 ---
 title: Delete schedulingGroup
-description: isActive プロパティを設定して、schedulingGroup を非アクティブとしてマークする
+description: IsActive プロパティを設定して、schedulingGroup を非アクティブとしてマークする
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6a41108349d7e398d10afd183273f731cf947fe8
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 5e4f4526164b78d7025a8cee097565670e12304e
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33331390"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33639062"
 ---
 # <a name="delete-schedulinggroup"></a>Delete schedulingGroup
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**isActive**プロパティを設定して、 [schedulingGroup](../resources/schedulinggroup.md)を非アクティブとしてマークします。
+**IsActive**プロパティを設定して、 [schedulingGroup](../resources/schedulinggroup.md)を非アクティブとしてマークします。
 このメソッドでは、スケジュールから[schedulingGroup](../resources/schedulinggroup.md)が削除されることはありません。 スケジュールグループに割り当てられている既存の[シフト](../resources/shift.md)インスタンスは、グループの一部として残ります。
 
 ## <a name="permissions"></a>アクセス許可
@@ -79,6 +79,16 @@ DELETE https://graph.microsoft.com/beta/teams/{teamId}/schedule/schedulingGroups
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/schedule-delete-schedulinggroups-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/schedule-delete-schedulinggroups-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -89,6 +99,9 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/schedulinggroup-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/schedulinggroup-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

@@ -4,12 +4,12 @@ description: 指定したグループ一覧内のメンバーシップを確認�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9a19def28bb5747b9a8573c6179e3a2009eca1d0
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: e47bd54d4193faea2f2af8d9dbbf957c11819b0c
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334970"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33637424"
 ---
 # <a name="checkmembergroups"></a>checkMemberGroups
 
@@ -29,7 +29,7 @@ ms.locfileid: "33334970"
 | 委任 (個人用 Microsoft アカウント) | サポートされていません。                                                                                                     |
 | アプリケーション                            | ~~User.Read.All~~、~~User.ReadWrite.All~~、Directory.Read.All、Directory.ReadWrite.All                             |
 
-> **注:** 現在この API には、`Directory.Read.All` 以上のアクセス許可が必要です。 または`User.Read.All` `User.ReadWrite.All`のアクセス許可を使用すると、エラーが返されます。 これは既知のバグです。
+> **注:** 現在この API には、`Directory.Read.All` 以上のアクセス許可が必要です。 `User.Read.All` または `User.ReadWrite.All` のアクセス許可を使用すると、エラーが返されます。 これは既知のバグです。
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -52,7 +52,7 @@ POST /users/{id | userPrincipalName}/checkMemberGroups
 
 | パラメーター | 型   | 説明           |
 | :-------- | :----- | :-------------------- |
-| groupIds  | String collection | グループ ID の配列 |
+| groupIds  | 文字列コレクション | グループ ID の配列 |
 
 ## <a name="response"></a>応答
 
@@ -105,6 +105,16 @@ Content-length: 39
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/user_checkmembergroups-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/user_checkmembergroups-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -116,6 +126,9 @@ Content-length: 39
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-checkmembergroups.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/user-checkmembergroups.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

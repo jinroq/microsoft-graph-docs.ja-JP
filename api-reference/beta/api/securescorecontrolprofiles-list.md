@@ -1,13 +1,13 @@
 ---
 title: secureScoreControlProfiles のリスト
-description: securescorecontrolprofiles のオブジェクトのプロパティとリレーションシップを取得します。
+description: Securescorecontrolprofiles のオブジェクトのプロパティとリレーションシップを取得します。
 localization_priority: Normal
-ms.openlocfilehash: 29efa2c9bedaa295304eb82190a64fbc4a863cd1
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 94f94feb5f540d3a830b97ec3defe7972b345557
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33331563"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638817"
 ---
 # <a name="list-securescorecontrolprofiles"></a>secureScoreControlProfiles のリスト
 
@@ -21,9 +21,9 @@ ms.locfileid: "33331563"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) |  securityevents。 all、securityevents.。   |
+|委任 (職場または学校のアカウント) |  SecurityEvents。 All、SecurityEvents.。   |
 |委任 (個人用 Microsoft アカウント) |  サポートされていません。  |
-|アプリケーション | securityevents。 all、securityevents.。 |
+|アプリケーション | SecurityEvents。 All、SecurityEvents.。 |
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -117,6 +117,16 @@ Content-type: application/json
      ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/securescorecontrolprofiles_list-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/securescorecontrolprofiles_list-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
 <!--
@@ -126,6 +136,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/securescorecontrolprofiles-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/securescorecontrolprofiles-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

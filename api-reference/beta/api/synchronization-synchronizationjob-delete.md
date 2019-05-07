@@ -2,12 +2,12 @@
 title: 同期ジョブの削除
 description: 同期ジョブを停止し、関連付けられているすべての状態を完全に削除します。 同期されたアカウントは、そのまま残ります。
 localization_priority: Normal
-ms.openlocfilehash: e199f950e2108a98123db83e35a7a1a75bd8fa3f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 5b4d49f9a9a64f4063b11ee8cc14434282b80b02
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335712"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638061"
 ---
 # <a name="delete-synchronizationjob"></a>同期ジョブの削除
 
@@ -66,6 +66,16 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/j
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/delete_synchronizationjob-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/delete_synchronizationjob-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -76,6 +86,9 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/synchronization-synchronizationjob-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/synchronization-synchronizationjob-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

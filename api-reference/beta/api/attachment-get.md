@@ -4,12 +4,12 @@ description: イベント、メッセージ、Outlook タスク、または投�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: d1274e4332fdbc6aa022d700884f59e58f44e68a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: a33941a1eca442a689b3d61a1d270198c394d09e
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322629"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636465"
 ---
 # <a name="get-attachment"></a>添付ファイルを取得する
 
@@ -34,9 +34,9 @@ ms.locfileid: "33322629"
 
 | アイテムの添付ファイルの種類  | 返された生のコンテンツ |
 |:-----------|:----------|
-| **連絡先** | [vCard](http://www.faqs.org/rfcs/rfc2426.html)MIME 形式。 [例](#example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message)を参照してください。 |
-| **イベント** | iCal MIME 形式。 [例](#example-7-get-the-mime-raw-contents-of-an-event-attachment-on-a-message)を参照してください。 |
-| **メッセージ** | MIME 形式。 [例](#example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message)を参照してください。 |
+| **contact** | [vCard](http://www.faqs.org/rfcs/rfc2426.html)MIME 形式。 [例](#example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message)を参照してください。 |
+| **event** | iCal MIME 形式。 [例](#example-7-get-the-mime-raw-contents-of-an-event-attachment-on-a-message)を参照してください。 |
+| **message** | MIME 形式。 [例](#example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message)を参照してください。 |
 
 参照添付ファイルの`$value`を取得しようとすると、HTTP 405 が返されます。
 
@@ -46,7 +46,7 @@ ms.locfileid: "33322629"
 
 * メッセージの添付ファイルにアクセスする場合: Mail. 読み取り
 * イベントの添付ファイルにアクセスする場合: 予定表. 読み取り
-* Outlook のタスクで添付ファイルにアクセスする場合: tasks. 読み取り
+* Outlook のタスクで添付ファイルにアクセスする場合: Tasks. 読み取り
 * グループの投稿で添付ファイルにアクセスする場合: グループの全員
 
 <!--
@@ -85,7 +85,7 @@ GET /me/messages/{id}/attachments/{id}/$value
 GET /users/{id | userPrincipalName}/messages/{id}/attachments/{id}/$value
 ```
 
-ユーザーのメールボックス内のトップレベルの[mailfolder](../resources/mailfolder.md)に含まれる[メッセージ](../resources/message.md)の添付ファイル。
+ユーザーのメールボックス内のトップレベルの[Mailfolder](../resources/mailfolder.md)に含まれる[メッセージ](../resources/message.md)の添付ファイル。
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -95,7 +95,7 @@ GET /me/mailFolders/{id}/messages/{id}/attachments/{id}/$value
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}/$value
 ```
 
-ユーザーのメールボックス内の[mailfolder](../resources/mailfolder.md)の子フォルダーに含まれる[メッセージ](../resources/message.md)の添付ファイル。
+ユーザーのメールボックス内の[Mailfolder](../resources/mailfolder.md)の子フォルダーに含まれる[メッセージ](../resources/message.md)の添付ファイル。
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -194,12 +194,22 @@ Content-type: application/json
     "contentBytes": "base64,UEsDBBQABgAIAAAAIQ4AAAAA"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_file_attachment-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_file_attachment-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="example-2-get-the-properties-of-an-item-attachment"></a>例 2: アイテムの添付ファイルのプロパティを取得する
 
 #### <a name="request"></a>要求
 
-最初の例は、メッセージのアイテムの添付ファイルを取得する方法を示しています。 **itemattachment**のプロパティが返されます。
+最初の例は、メッセージのアイテムの添付ファイルを取得する方法を示しています。 **Itemattachment**のプロパティが返されます。
 <!-- {
   "blockType": "request",
   "name": "get_item_attachment",
@@ -234,6 +244,16 @@ Content-type: application/json
   "isInline":false
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_item_attachment-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_item_attachment-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message"></a>例 3: メッセージに添付されたアイテムのプロパティを展開して取得する
 #### <a name="request"></a>要求
@@ -328,6 +348,16 @@ Content-type: application/json
   }
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_and_expand_item_attachment-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_and_expand_item_attachment-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="example-4-get-the-properties-of-a-reference-attachment"></a>例 4: 参照添付ファイルのプロパティを取得する
 
@@ -374,6 +404,16 @@ Content-type: application/json
   "isFolder": true
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_reference_attachment-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_reference_attachment-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
 ### <a name="example-5-get-the-raw-contents-of-a-file-attachment-on-a-message"></a>例 5: メッセージの添付ファイルの生の内容を取得する
@@ -540,7 +580,7 @@ END:VCALENDAR
 
 #### <a name="request"></a>要求
 
-メッセージに添付されている会議出席依頼の生の内容 ( [eventmessage](../resources/eventmessage.md)型の) を取得する要求の例を次に示します。 **eventmessage**エンティティは、**メッセージ**の種類に基づいています。
+メッセージに添付されている会議出席依頼の生の内容 ( [eventmessage](../resources/eventmessage.md)型の) を取得する要求の例を次に示します。 **Eventmessage**エンティティは、**メッセージ**の種類に基づいています。
 <!-- {
   "blockType": "ignored",
   "name": "get_value_message_attachment",
@@ -554,7 +594,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGUzY5QKiAAA=/attachments/A
 #### <a name="response"></a>応答
 以下は、応答の例です。 
 
-応答本文には、 **eventmessage**添付ファイルが MIME 形式で含まれています。 **イベントメッセージ**の本文は、簡潔にするために切り詰められています。 完全なメッセージ本文は、実際の呼び出しから返されます。
+応答本文には、 **Eventmessage**添付ファイルが MIME 形式で含まれています。 **イベントメッセージ**の本文は、簡潔にするために切り詰められています。 完全なメッセージ本文は、実際の呼び出しから返されます。
 
 <!-- {
   "blockType": "ignored",
@@ -620,6 +660,15 @@ QkVHSU46VkNBTEVOREFSDQpNRVRIT0Q6UkVRVUVTVA0KUFJPRElEOk1pY3Jvc29mdCBFeGNoYW5n
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/attachment-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/attachment-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/attachment-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/attachment-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/attachment-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/attachment-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/attachment-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/attachment-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

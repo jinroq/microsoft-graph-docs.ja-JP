@@ -1,21 +1,21 @@
 ---
 title: 脅威インテリジェンス指標の作成
-description: 新しい tiindicator を作成します。
+description: 新しい tiIndicator を作成します。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 440515a45b4c530f32dd20fe29497e338b54a6bf
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 84a602ba381085d519027cfb8841012d466cc50b
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335240"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33637550"
 ---
 # <a name="create-threat-intelligence-indicator"></a>脅威インテリジェンス指標の作成
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-新しい[tiindicator](../resources/tiindicator.md)オブジェクトを作成します。
+新しい[Tiindicator](../resources/tiindicator.md)オブジェクトを作成します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -110,6 +110,16 @@ Content-type: application/json
     "description": "This is a canary indicator for demo purpose. Take no action on any observables set in this indicator.",
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_tiindicator_from_security-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_tiindicator_from_security-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
@@ -118,5 +128,9 @@ Content-type: application/json
   "description": "Create tiIndicator",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/tiindicators-post.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/tiindicators-post.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

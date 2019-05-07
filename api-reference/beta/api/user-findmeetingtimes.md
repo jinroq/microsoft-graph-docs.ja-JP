@@ -4,12 +4,12 @@ description: パラメーターとして指定された開催者と出席者の�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: ada506f1db08109781f74f459edd0fde0d028074
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 646d2c9554994284ada7bcd1021a0cef199ae242
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334976"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33637396"
 ---
 # <a name="user-findmeetingtimes"></a>user: findMeetingTimes
 
@@ -49,7 +49,7 @@ POST /users/{id|userPrincipalName}/findMeetingTimes
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|attendees|[attendeeBase](../resources/attendeebase.md) コレクション|会議の出席者またはリソースのコレクションです。 対応する**type**プロパティで、また`required`は`optional`会議室などの`resource`リソースに対してまたはを指定します。 このプロパティが指定されてい`required`ない場合、findの**会議時間**は**type**プロパティを前提としています。 コレクションを空にすると、**findMeetingTimes** は開催者のみの空き時間帯を検索します。 省略可能。|
+|attendees|[attendeeBase](../resources/attendeebase.md) コレクション|会議の出席者またはリソースのコレクションです。 対応する**type**プロパティで、また`required`は`optional`会議室などの`resource`リソースに対してまたはを指定します。 このプロパティが指定されてい`required`ない場合、Findの**会議時間**は**type**プロパティを前提としています。 コレクションを空にすると、**findMeetingTimes** は開催者のみの空き時間帯を検索します。 省略可能。|
 |isOrganizerOptional|Edm.Boolean|開催者が必ずしも出席する必要がない場合は、`True` を指定します。既定値は `false` です。省略可能。|
 |locationConstraint|[locationConstraint](../resources/locationconstraint.md)|会議の場所の提案が必要かどうか、または会議のみが開催できる特定の場所があるか、など、会議の場所に関する開催者の要件。省略可能。|
 |maxCandidates|Edm.Int32|返される会議時間の提案の最大数です。省略可能。|
@@ -345,6 +345,14 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
     ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/user_findmeetingtimes-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -356,6 +364,7 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/user-findmeetingtimes.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Warning: /api-reference/beta/api/user_findmeetingtimes.md:\r\n      Failed to parse any rows out of table with headers: |activityDomain value|Suggestions for meeting times|",
     "Error: user_findmeetingtimes/meetingTimeSuggestions/member/confidence:\r\n    Expected type Float but actual was Int64. Property: confidence, actual value: '100'",
     "Error: user_findmeetingtimes/meetingTimeSuggestions/member/confidence:\r\n    Expected type Double but actual was Int64. Property: confidence, actual value: '100'"

@@ -4,12 +4,12 @@ description: Excel で現在開いているすべてのブックを再計算し�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: fae86c0a8c1511abb1780e03b36ed4edcc329e1b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 2e3a980ae7eab1dd3032ae68b180019ae4c7ceee
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348409"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636976"
 ---
 # <a name="workbookapplication-calculate"></a>workbookApplication: 計算
 
@@ -76,6 +76,16 @@ Content-length: 48
 ```http
 HTTP/1.1 200 OK
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/workbookApplication_calculate-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/workbookApplication_calculate-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -86,6 +96,9 @@ HTTP/1.1 200 OK
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/workbookapplication-calculate.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/workbookapplication-calculate.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

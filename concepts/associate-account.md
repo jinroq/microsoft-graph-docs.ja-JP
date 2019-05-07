@@ -2,12 +2,12 @@
 title: Office 365 アカウントを Azure AD と関連付けてアプリを作成および管理する
 description: 'Microsoft Azure Active Directory (Azure AD) を使用してアプリケーションを認証するには、Azure AD にアプリケーションを登録する必要があります。ここに Office 365 のユーザー アカウントとアプリケーション情報が保存されています。Azure ポータルから Azure AD を管理するには、Microsoft Azure サブスクリプションが必要です。Microsoft Azure のポータルを使用して、ユーザー、ロール、アプリを管理できます。 '
 localization_priority: Normal
-ms.openlocfilehash: 815cc80fa8d25f52ac05a1bf80f9e9dfa89b9b4d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: HT
+ms.openlocfilehash: efcb898290944314951af9b6dca980513aff2954
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880158"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33599857"
 ---
 # <a name="associate-your-office-365-account-with-azure-ad-to-create-and-manage-apps"></a>Office 365 アカウントを Azure AD と関連付けてアプリを作成および管理する
 
@@ -15,7 +15,7 @@ Microsoft Azure Active Directory (Azure AD) を使用してアプリケーショ
 
 この記事では、Office 365 アカウントを Azure AD と関連付けてアプリを作成および管理する方法を説明します。
 
- >**注:** この記事では、アプリの認証プロバイダーとして Azure AD を使用します。Azure AD v2.0 エンドポイントを使用する場合、この手順を実行する必要はありません。詳細については、「[Microsoft Graph を使ったアプリ認証](auth-overview.md)」をご覧ください。
+ >**注:** この記事では、アプリの認証プロバイダーとして Azure AD を使用します。Azure AD v2.0 エンドポイントを使用する場合、この手順を実行する必要はありません。詳細については、「[Microsoft Graph を使ったアプリ認証](./auth)」をご覧ください。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -23,8 +23,8 @@ Microsoft Azure Active Directory (Azure AD) を使用してアプリケーショ
 
 既存のビジネス向けの Office 365 アカウントがない場合は、次の操作を実行できます。
 
-- 上記のいずれかの[ビジネス向けの Office 365 プラン](https://products.office.com/ja-JP/business/compare-office-365-for-business-plans)にサインアップする、または
-- [Office 365 Developer プログラムに参加して、Office 365 の 1 年間無料のサブスクリプションを取得します](https://aka.ms/devprogramsignup)。
+- 上記のいずれかの[ビジネス向けの Office 365 プラン](https://products.office.com/en-us/business/compare-office-365-for-business-plans)にサインアップする、または
+- [Join the Office 365 Developer Program and get a free 1 year subscription to Office 365](https://aka.ms/devprogramsignup).
 
 **Microsoft Azure サブスクリプション** 
 
@@ -55,7 +55,7 @@ Microsoft Azure Active Directory (Azure AD) を使用してアプリケーショ
     >**重要:** Office 365 アカウントと Azure AD を関連付けるには、グローバル管理者特権を持つ Office 365 ビジネス アカウントが必要です。 
     
         
-4. **[続行]**、**[今すぐサインアウトする]** の順に選びます。
+4. **[続行]**、**[今すぐサインアウトする]** の順に選択します。
         
 5. ブラウザーを閉じて、もう一度[ポータル](https://manage.windowsazure.com)を開きます。それ以外の場合は、アクセス拒否エラーを受け取ります。
     
@@ -75,14 +75,14 @@ Microsoft Azure Active Directory (Azure AD) を使用してアプリケーショ
     
 3. 新しいサブスクリプションを作成します。
         
-    Office 365 の試用版を使用している場合は、Azure AD は有料サービスのお客様に制限されていることを通知するメッセージが表示されます。無料で 30 日間の試用版の Azure サブスクリプションを作成できますが、いくつかの追加の手順を実行する必要があります。
+    If you're using a trial version of Office 365, you'll see a message telling you that Azure AD is limited to customers with paid services. You can still create a trial 30-day Azure subscription at no charge, but you'll need to perform a few extra steps:
     
     1. 国または地域を選択して、**[Azure サブスクリプション]** を選択します。
     2. 個人情報を入力します。確認のために連絡可能な電話番号を入力して、テキスト メッセージの送信または通話のいずれかを指定します。
     3. 認証コードを受信したら、そのコードを入力して **[コードの確認]** を選びます。
     4. 支払い情報を入力して、承諾のチェック ボックスをオンにし、**[サインアップ]** を選びます。
         
-        クレジットカードでのお支払いは発生しません。
+        Your credit card will not be charged.
         
         Azure サブスクリプションの作成中は、ブラウザーを閉じたり更新したりしないでください。
             
@@ -93,5 +93,5 @@ Microsoft Azure Active Directory (Azure AD) を使用してアプリケーショ
     You should now see all items in your Azure subscription. It lists a directory with the name of your Office 365 tenant.
     
 ## <a name="see-also"></a>関連項目
-- [Azure AD でのアプリケーションの登録の基本](https://azure.microsoft.com/ja-JP/documentation/articles/active-directory-authentication-scenarios/#basics-of-registering-an-application-in-azure-ad)
-- [Azure AD でアプリケーションを追加、更新、削除する](https://azure.microsoft.com/ja-JP/documentation/articles/active-directory-integrating-applications/)
+- [Azure AD でのアプリケーションの登録の基本](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/#basics-of-registering-an-application-in-azure-ad)
+- [Azure AD でアプリケーションを追加、更新、削除する](https://azure.microsoft.com/en-us/documentation/articles/active-directory-integrating-applications/)

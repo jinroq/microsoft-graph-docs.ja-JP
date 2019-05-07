@@ -1,21 +1,21 @@
 ---
-title: applicationSignInDetailedSummary を取得する
-description: applicationSignInDetailSummary オブジェクトのプロパティとリレーションシップを取得します。
+title: ApplicationSignInDetailedSummary を取得する
+description: ApplicationSignInDetailSummary オブジェクトのプロパティとリレーションシップを取得します。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0d9cf9fb87e2de381cd347db84e2c8007c64e41a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: bd479161edbf1c0b261f467671c8a4b4c8797349
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322958"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636507"
 ---
-# <a name="get-applicationsignindetailedsummary"></a>applicationSignInDetailedSummary を取得する
+# <a name="get-applicationsignindetailedsummary"></a>ApplicationSignInDetailedSummary を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[applicationSignInDetailSummary](../resources/applicationsignindetailedsummary.md)オブジェクトのプロパティとリレーションシップを取得します。
+[ApplicationSignInDetailSummary](../resources/applicationsignindetailedsummary.md)オブジェクトのプロパティとリレーションシップを取得します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference.md)」を参照してください。
@@ -87,6 +87,16 @@ Content-length: 295
   "aggregatedEventDateTime": "datetime-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_applicationsignindetailedsummary-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_applicationsignindetailedsummary-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -95,5 +105,9 @@ Content-length: 295
   "description": "Get applicationSignInDetailedSummary",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/applicationsignindetailedsummary-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/applicationsignindetailedsummary-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

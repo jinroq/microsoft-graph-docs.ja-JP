@@ -4,12 +4,12 @@ description: 着信に応答します。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: bf97684ec6b659984af2518fecb1cf80643e33be
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 87ae3b6911585ae3b698ba575e0b8523f96edea8
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325056"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33635912"
 ---
 # <a name="call-answer"></a>通話: 応答
 
@@ -44,7 +44,7 @@ POST /applications/{id}/calls/{id}/answer
 | パラメーター        | 型                                     |説明                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
 |callbackUri       |String                                    |コールバック時のコールバック ID またはサブスクリプション ID。 要する                                                               |
-|acceptedModalities|String collection                         |accept モダリティのリスト。 使用可能な値`unknown`は`audio`、 `video`、 `screenSharing` `videoBasedScreenSharing`、、 `data`、、です。 要する |
+|acceptedModalities|String collection                         |Accept モダリティのリスト。 使用可能な値`unknown`は`audio`、 `video`、 `screenSharing` `videoBasedScreenSharing`、、 `data`、、です。 要する |
 |mediaConfig       |[mediaConfig](../resources/mediaconfig.md)|メディア構成。 要する                                                                                                            |
 
 ## <a name="response"></a>応答
@@ -88,6 +88,14 @@ Content-Length: 211
 ```http
 HTTP/1.1 202 Accepted
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/call-answer-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="answer-voip-call-with-service-hosted-media"></a>サービスホストされたメディアを使用した VOIP 通話への応答
 
@@ -408,6 +416,8 @@ Content-Type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/call-answer.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

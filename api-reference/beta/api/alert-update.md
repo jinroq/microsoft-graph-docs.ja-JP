@@ -4,12 +4,12 @@ description: ソリューション間でアラートの状態と割り当てを�
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: ac757bb6248902f097ebf49d803a323977976acd
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: de663b4cdcd4f12bfdf3d180f039144f86d2d624
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322678"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636563"
 ---
 # <a name="update-alert"></a>アラートを更新する
 
@@ -40,7 +40,7 @@ PATCH /security/alerts/{alert_id}
 
 | 名前       | 説明|
 |:-----------|:-----------|
-| Authorization  | ベアラー {code}。 必須。|
+| Authorization  | ベアラー {code}。 必須です。|
 |Prefer | 戻り値 = 表現 |
 
 ## <a name="request-body"></a>要求本文
@@ -50,12 +50,12 @@ PATCH /security/alerts/{alert_id}
 | プロパティ   | 型 |説明|
 |:---------------|:--------|:----------|
 |assignedTo|String|トリアージ、調査、または修復のためにアラートが割り当てられたアナリストの名前。|
-|closeddatetime|DateTimeOffset|通知が終了した時刻。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、`'2014-01-01T00:00:00Z'` のようになります。|
-|コメント|String collection|アラートに関するアナリストのコメント (顧客の警告管理)。|
-|feedback|alertfeedback 列挙|アラートに関するアナリストのフィードバック。 使用可能な値は、`unknown`、`truePositive`、`falsePositive`、`benignPositive` です。|
-|status|alertstatus 列挙型|アラートライフサイクルの状態 (ステージ)。 使用可能な値は、`unknown`、`newAlert`、`inProgress`、`resolved` です。|
-|tags|String コレクション|通知に適用することができ、フィルター条件として機能することができる、ユーザー定義のラベル (たとえば、"hva"、"のこぎり" など)。|
-|vendorInformation |[securityVendorInformation](../resources/securityvendorinformation.md)|セキュリティ製品/サービスのベンダー、プロバイダ、およびサブプロバイダに関する詳細を含む複合型 (たとえば、vendor = Microsoft; provider = Windows Defender ATP; subprovider = AppLocker)。 **プロバイダーおよびベンダーフィールドは必須です。**|
+|closedDateTime|DateTimeOffset|警告が閉じられた時刻。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表します。これは常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
+|comments|String コレクション|アラートに関するアナリストのコメント (顧客の警告管理)。|
+|feedback|alertFeedback 列挙|警告に関するアナリストのフィードバック。 使用可能な値は、`unknown`、`truePositive`、`falsePositive`、`benignPositive` です。|
+|status|alertStatus 列挙型|アラートライフサイクルの状態 (ステージ)。 使用可能な値は、`unknown`、`newAlert`、`inProgress`、`resolved` です。|
+|タグ|String collection|通知に適用することができ、フィルター条件として機能することができる、ユーザー定義のラベル (たとえば、"HVA"、"のこぎり" など)。|
+|vendorInformation |[securityVendorInformation](../resources/securityvendorinformation.md)|セキュリティ製品/サービスの仕入先、プロバイダー、サブプロバイダーに関する詳細を含む複合型 (たとえば、仕入先 = Microsoft、プロバイダー = Windows Defender ATP、サブプロバイダー = AppLocker)。 **プロバイダーおよびベンダーフィールドは必須です。**|
 
 ## <a name="response"></a>応答
 
@@ -108,6 +108,16 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_alert-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_alert-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="example-2-request-with-prefer-header"></a>例 2: 要求ヘッダーを使用した要求
 
@@ -174,6 +184,11 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/alert-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/alert-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/alert-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/alert-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

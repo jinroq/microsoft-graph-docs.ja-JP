@@ -5,18 +5,18 @@ ms.date: 03/15/2018
 title: サイト内のページを一覧表示する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 8dea715a655dac4406ae57b928f97013564f951f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 31bcdfe4598850d80eee436e3082bf8d90eb11f6
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33330672"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638670"
 ---
 # <a name="list-the-pages-in-the-site-pages-list-of-a-site"></a>サイトのサイトページリストのページを一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-サイト[サイト][]のサイトページ[リスト][]から[sitepage][]オブジェクトのコレクションを取得します。 サイト内のすべてのページが (改ページ付きで) 返されます。
+サイト[サイト][]のサイトページ[リスト][]から[Sitepage][]オブジェクトのコレクションを取得します。 サイト内のすべてのページが (改ページ付きで) 返されます。
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
@@ -230,6 +230,16 @@ Content-type: application/json
     ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-pages-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-pages-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!--
 {
@@ -238,6 +248,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "Pages/Enumerate",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/sitepage-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/sitepage-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

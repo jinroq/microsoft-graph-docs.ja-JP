@@ -1,19 +1,19 @@
 ---
-title: 'serviceprincipal: List oAuth2Permissiongrants'
-description: oAuth2Permissiongrant オブジェクトのリストを取得します。
+title: 'servicePrincipal: List oAuth2Permissiongrants'
+description: OAuth2Permissiongrant オブジェクトのリストを取得します。
 localization_priority: Normal
-ms.openlocfilehash: e136724287db1d2c8b4d49a882a2871fb551b2fa
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 104d197d843acfb1ac7c20330dd4c7e3af58ee60
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33331431"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638789"
 ---
-# <a name="serviceprincipal-list-oauth2permissiongrants"></a>serviceprincipal: List oAuth2Permissiongrants
+# <a name="serviceprincipal-list-oauth2permissiongrants"></a>servicePrincipal: List oAuth2Permissiongrants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-oAuth2Permissiongrant オブジェクトのリストを取得します。
+OAuth2Permissiongrant オブジェクトのリストを取得します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -79,6 +79,16 @@ Content-length: 253
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_oAuth2Permissiongrants-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_oAuth2Permissiongrants-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -89,6 +99,9 @@ Content-length: 253
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/serviceprincipal-list-oauth2permissiongrants.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/serviceprincipal-list-oauth2permissiongrants.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

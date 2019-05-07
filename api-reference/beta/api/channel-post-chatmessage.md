@@ -4,12 +4,12 @@ description: 指定したチャネルで新しいメッセージを送信しま�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: f1199be1949e34b5a9d4c5f461fe6ba03fdfe28b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: e7df36c50e58e1e52be3008a929d2a0b3b046f27
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328022"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33635590"
 ---
 # <a name="send-a-message-to-a-channel"></a>メッセージをチャネルに送信する
 
@@ -38,7 +38,7 @@ POST /teams/{id}/channels/{id}/messages
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
-要求本文で、[メッセージ](../resources/chatmessage.md)オブジェクトの JSON 表記を指定します。 body プロパティのみが必須で、その他のプロパティはオプションです。
+要求本文で、[メッセージ](../resources/chatmessage.md)オブジェクトの JSON 表記を指定します。 Body プロパティのみが必須で、その他のプロパティはオプションです。
 
 > 注: 添付ファイルと画像を使用したメッセージの送信はサポートされていません。
 
@@ -114,6 +114,16 @@ Content-length: 160
     "reactions": []
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_chatmessage_from_channel-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_chatmessage_from_channel-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="example-2-mentions"></a>例 2: @mentions
 
@@ -310,6 +320,12 @@ Content-length: 160
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/channel-post-chatmessage.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/channel-post-chatmessage.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/channel-post-chatmessage.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/channel-post-chatmessage.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/channel-post-chatmessage.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

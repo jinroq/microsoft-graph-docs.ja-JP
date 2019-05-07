@@ -1,15 +1,15 @@
 ---
 title: 予定表を取得する
-description: '予定表オブジェクトのプロパティと関係を取得します。 予定表は、ユーザーに対して1つにすることができます。 '
+description: '予定表オブジェクトのプロパティと関係を取得します。 予定表はユーザー用にすることができます。 '
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: a611bfe35991aa7558a890ecede8519677c5e643
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: dbdad8b4ff5bc639fd19ffa4e85e0e1c9ba257be
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322282"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33635898"
 ---
 # <a name="get-calendar"></a>予定表を取得する
 
@@ -17,7 +17,7 @@ ms.locfileid: "33322282"
 
 [予定表](../resources/calendar.md)オブジェクトのプロパティと関係を取得します。 [ユーザー](../resources/user.md)の予定表、または Office 365 [グループ](../resources/group.md)の既定の予定表のいずれかを指定できます。
 
-アプリが別のユーザーの予定表を取得するには、次の2つのシナリオがあります。
+アプリで別のユーザーの予定表を取得するシナリオは 2 つあります。
 
 * アプリにアプリケーションのアクセス許可がある場合。または
 * アプリに「あるユーザーから適切に委任された[アクセス許可](#permissions)」があり、別のユーザーがそのユーザーと予定表を共有しているか、そのユーザーに委任されたアクセスを付与している場合。 [詳細と例](/graph/outlook-get-shared-events-calendars)を参照してください。
@@ -110,6 +110,16 @@ Content-type: application/json
 }
 
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_calendar-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_calendar-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -120,6 +130,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/calendar-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/calendar-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

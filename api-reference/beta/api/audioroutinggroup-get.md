@@ -1,21 +1,21 @@
 ---
 title: 音声ルーティング グループを取得する
-description: audioRoutingGroup オブジェクトのプロパティとリレーションシップを取得します。
+description: AudioRoutingGroup オブジェクトのプロパティとリレーションシップを取得します。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0f9d3d76a07bfae88f53181ff04c3fab3ee6d220
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: cceec446e92ac352065e3b5b62871c667132f749
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322565"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636297"
 ---
 # <a name="get-audio-routing-group"></a>音声ルーティング グループを取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[audioRoutingGroup](../resources/audioroutinggroup.md)オブジェクトのプロパティとリレーションシップを取得します。
+[AudioRoutingGroup](../resources/audioroutinggroup.md)オブジェクトのプロパティとリレーションシップを取得します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -24,7 +24,7 @@ ms.locfileid: "33322565"
 |:---------------------------------------|:--------------------------------------------|
 | 委任 (職場または学校のアカウント)     | サポート対象外                               |
 | 委任 (個人用 Microsoft アカウント) | サポート対象外                               |
-| アプリケーション                            | joingroupcalls を呼び出します。すべて、initiategroupcalls を呼び出します。 |
+| アプリケーション                            | JoinGroupCalls を呼び出します。すべて、InitiateGroupCalls を呼び出します。 |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -86,6 +86,16 @@ Content-Length: 233
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-audioRoutingGroup-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-audioRoutingGroup-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -96,6 +106,9 @@ Content-Length: 233
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/audioroutinggroup-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/audioroutinggroup-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

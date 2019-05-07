@@ -1,23 +1,23 @@
 ---
-title: timeoffreason を置換する
-description: 既存の timeoffreason を置換します。
+title: TimeOffReason を置換する
+description: 既存の timeOffReason を置換します。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 18e3130e87d3c47a636c6190a593b7dc7539b806
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 692100ea299ca78b128f1aa84cd7c90340381f2e
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33330425"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33637473"
 ---
-# <a name="replace-timeoffreason"></a>timeoffreason を置換する
+# <a name="replace-timeoffreason"></a>TimeOffReason を置換する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-既存の[timeoffreason](../resources/timeoffreason.md)を置換します。
+既存の[Timeoffreason](../resources/timeoffreason.md)を置換します。
 
-指定した[timeoffreason](../resources/timeoffreason.md)が存在しない場合、 `404 Not found`このメソッドはを返します。
+指定した[Timeoffreason](../resources/timeoffreason.md)が存在しない場合、 `404 Not found`このメソッドはを返します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -48,7 +48,7 @@ PUT /teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 
 ## <a name="request-body"></a>要求本文
 
-要求本文で、 [timeoffreason](../resources/timeoffreason.md)オブジェクトの JSON 表記を指定します。
+要求本文で、 [Timeoffreason](../resources/timeoffreason.md)オブジェクトの JSON 表記を指定します。
 
 ## <a name="response"></a>応答
 
@@ -109,6 +109,16 @@ Content-length: 401
   }
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/timeoffreason-put-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/timeoffreason-put-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -119,6 +129,9 @@ Content-length: 401
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/timeoffreason-put.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/timeoffreason-put.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

@@ -1,51 +1,51 @@
 ---
-title: サブスクリプションのリスト作成
+title: サブスクリプションを一覧表示する
 description: " 詳細については、以下のシナリオを参照してください。"
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: 3ffcf78c7df28faba22b92a7389f473f0ea91613
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 3728c3fcf2fe3d78b243894632a363804a2f92c8
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335830"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638698"
 ---
-# <a name="list-subscriptions"></a>サブスクリプションのリスト作成
+# <a name="list-subscriptions"></a>サブスクリプションを一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-webhook サブスクリプションの一覧を取得します。 応答の内容は、アプリが呼び出しているコンテキストによって異なります。詳細については、以下のシナリオを参照してください。
+Webhook サブスクリプションの一覧を取得します。 応答の内容は、アプリが呼び出しているコンテキストによって異なります。詳細については、以下のシナリオを参照してください。
 
 ## <a name="permissions"></a>アクセス許可
 
-この API は、次のアクセス許可のスコープをサポートしています。アクセス許可の選択方法を含む詳細については、「 [permissions](/graph/permissions-reference)」を参照してください。
+この API は、次のアクセス許可スコープをサポートしています。アクセス許可の選択方法などに関する詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 | アクセス許可の種類  | アクセス許可 (特権の小さいものから大きいものへ)  |
 |:---------------- |:-------------------------------------------- |
 | [委任](/graph/auth-v2-user)された(職場または学校のアカウント) | サブスクリプションまたはサブスクリプションを[作成](subscription-post-subscriptions.md)するために必要なアクセス許可。 All (下を参照)。 |
 | [委任](/graph/auth-v2-user)された(個人 Microsoft アカウント) | サブスクリプションまたはサブスクリプションを[作成](subscription-post-subscriptions.md)するために必要なアクセス許可。 All (下を参照)。 |
-| [アプリケーション](/graph/auth-v2-service) | [サブスクリプションを作成](subscription-post-subscriptions.md)するために必要なアクセス許可。 |
+| [Application](/graph/auth-v2-service) | [サブスクリプションを作成](subscription-post-subscriptions.md)するために必要なアクセス許可。 |
 
-応答の結果は、呼び出し元アプリのコンテキストに基づいています。 一般的なシナリオの概要を次に示します。
+応答の結果は、呼び出し元アプリのコンテキストによって異なります。 次に、一般的なシナリオの概要を示します。
 
-### <a name="basic-scenarios"></a>基本的なシナリオ
+### <a name="basic-scenarios"></a>基本シナリオ
 
-最も一般的には、アプリケーションは、現在サインインしているユーザーまたはディレクトリ内のすべてのユーザーに対して最初に作成されたサブスクリプションを取得したいと考えています (職場または学校のアカウント)。 これらのシナリオでは、最初にサブスクリプションを作成するために使用されたアプリ以外の特別なアクセス許可は必要ありません。
+ほとんどの場合、アプリケーションは、現在サインインしているユーザーかディレクトリ (職場アカウントや学校アカウント) 内のすべてのユーザーに対してそのアプリケーションが元々作成していたサブスクリプションを取得しようとします。 このようなシナリオでは、アプリがサブスクリプションを作成するために元々使用していたアクセス許可以外には、特別なアクセス許可は必要ありません。
 
-| 呼び出し元アプリのコンテキスト | 応答の内容 |
+| 呼び出し元アプリのコンテキスト | 応答内容 |
 |:-----|:---------------- |
-| アプリは、サインインしているユーザーの代わりに呼び出しを行います (委任されたアクセス許可)。 <br/>/<br/>アプリには、[サブスクリプションを作成](subscription-post-subscriptions.md)するために必要な元のアクセス許可があります。<br/><br/>注: これは、個人用の Microsoft アカウントと職場/学校のアカウントの両方に適用されます。 | サインインしているユーザーに対してのみ、**このアプリ**によって作成されたサブスクリプション。 |
-| アプリは自身の代わりに呼び出しをしています (アプリケーションアクセス許可)。<br/>/<br/>アプリには、[サブスクリプションを作成](subscription-post-subscriptions.md)するために必要な元のアクセス許可があります。<br/><br/>注: これは、職場または学校のアカウントにのみ適用されます。| **このアプリ**によって自分用またはディレクトリ内のユーザー用に作成されたサブスクリプション。|
+| サインイン ユーザーに代わってアプリが呼び出しを実行している (委任されたアクセス許可)。 <br/>- および -<br/>[サブスクリプションの作成](subscription-post-subscriptions.md)に必要な元のアクセス許可をアプリが持っている。<br/><br/>注: これは、個人用の Microsoft アカウントと職場や学校のアカウントの両方に適用されます。 | **このアプリ**によって作成された、サインイン ユーザーのみのサブスクリプション。 |
+| アプリがそのアプリのために呼び出しを実行している (アプリケーションのアクセス許可)。<br/>- および -<br/>[サブスクリプションの作成](subscription-post-subscriptions.md)に必要な元のアクセス許可をアプリが持っている。<br/><br/>注: これは、職場や学校のアカウントにのみ適用されます。| **このアプリ**によって作成された、アプリ自体またはディレクトリ内の任意のユーザーのサブスクリプション。|
 
 ### <a name="advanced-scenarios"></a>高度なシナリオ
 
-場合によっては、他のアプリによって作成されたサブスクリプションをアプリで取得する必要があります。 たとえば、ユーザーは、任意のアプリによって作成されたすべてのサブスクリプションを自分に代わって表示したいと考えています。 または、管理者がディレクトリ内のすべてのアプリからのすべてのサブスクリプションを表示する必要がある場合があります。
-このようなシナリオでは、委任されたアクセス許可のサブスクリプションが必要です。
+場合によっては、アプリは、他のアプリによって作成されたサブスクリプションを取得しようとします。 たとえば、ユーザーが、自分に代わって任意のアプリによって作成されたすべてのサブスクリプションを確認しようとすることがあります。 また、管理者が、ディレクトリ内のすべてのアプリによって作成されたすべてのサブスクリプションを確認しようとすることがあります。
+このような場合、委任されたアクセス許可の Subscription.Read.All が必要になります。
 
-| 呼び出し元アプリのコンテキスト | 応答の内容 |
+| 呼び出し元アプリのコンテキスト | 応答内容 |
 |:-----|:---------------- |
-| アプリは、サインインしているユーザーの代わりに呼び出しを行います (委任されたアクセス許可)。 *ユーザーが管理者ではない*。 <br/>/<br/>アプリには、アクセス許可のサブスクリプションがあります。 All<br/><br/>注: これは、個人用の Microsoft アカウントと職場/学校のアカウントの両方に適用されます。 | サインインしているユーザーに対してのみ、**そのアプリ**によって作成されたサブスクリプション。 |
-| アプリは、サインインしているユーザーの代わりに呼び出しを行います (委任されたアクセス許可)。 *ユーザーが管理者*である。<br/>/<br/>アプリには、アクセス許可のサブスクリプションがあります。 All<br/><br/>注: これは、職場または学校のアカウントにのみ適用されます。 | ディレクトリ内の**すべてのユーザー**について、**任意のアプリ**によって作成されたサブスクリプション。|
+| サインイン ユーザーに代わってアプリが呼び出しを実行している (委任されたアクセス許可)。 *ユーザーは管理者ではない*。 <br/>- および -<br/>Subscription.Read.All アクセス許可をアプリが持っている<br/><br/>注: これは、個人用の Microsoft アカウントと職場や学校のアカウントの両方に適用されます。 | **任意のアプリ**によって作成された、サインイン ユーザーのみのサブスクリプション。 |
+| サインイン ユーザーに代わってアプリが呼び出しを実行している (委任されたアクセス許可)。 *ユーザーは管理者である*。<br/>- および -<br/>Subscription.Read.All アクセス許可をアプリが持っている<br/><br/>注: これは、職場や学校のアカウントにのみ適用されます。 | **任意のアプリ**によって作成された、ディレクトリ内の**任意のユーザー**のサブスクリプション。|
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -57,7 +57,7 @@ GET /subscriptions
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 
-このメソッドは、応答をカスタマイズするための[OData クエリパラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートしていません。
+このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートしていません。
 
 ## <a name="request-headers"></a>要求ヘッダー
 
@@ -71,7 +71,7 @@ GET /subscriptions
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[subscription](../resources/subscription.md)オブジェクトのリストを返します。
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [subscription](../resources/subscription.md) オブジェクトの一覧を返します。
 
 ## <a name="example"></a>例
 
@@ -118,6 +118,16 @@ Content-length: 586
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_subscriptions-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_subscriptions-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -128,8 +138,11 @@ Content-length: 586
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/subscription-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/subscription-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->
 
-要求が複数のデータページを返す場合、応答には`@odata.nextLink`結果を管理するためのプロパティが含まれています。  詳細については、「[アプリで Microsoft Graph データをページング](/graph/paging)する」を参照してください。
+複数ページにわたるデータを要求が返す場合は、結果を管理しやすくするため、応答に `@odata.nextLink` プロパティが含まれます。  詳細については、「[アプリで Microsoft Graph データをページングする](/graph/paging)」を参照してください。

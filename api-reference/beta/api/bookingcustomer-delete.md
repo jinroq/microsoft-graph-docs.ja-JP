@@ -1,27 +1,27 @@
 ---
-title: bookingcustomer の削除
-description: 指定した bookingcustomer オブジェクトを削除します。
+title: BookingCustomer の削除
+description: 指定した bookingCustomer オブジェクトを削除します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 5ff8d9f276164b9b6c1c5b582668123c3dd4eb02
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 643f70e6e5ba70d7df2518ec487330924d43eeb8
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322380"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636031"
 ---
-# <a name="delete-bookingcustomer"></a>bookingcustomer の削除
+# <a name="delete-bookingcustomer"></a>BookingCustomer の削除
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指定した[bookingcustomer](../resources/bookingcustomer.md)オブジェクトを削除します。
+指定した[Bookingcustomer](../resources/bookingcustomer.md)オブジェクトを削除します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | bookingsappointment すべての予約。すべて、予約....   |
+|委任 (職場または学校のアカウント) | BookingsAppointment すべての予約。すべて、予約....   |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。   |
 |アプリケーション | サポートされていません。  |
 
@@ -62,6 +62,16 @@ DELETE https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/delete_bookingcustomer-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/delete_bookingcustomer-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -72,6 +82,9 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/bookingcustomer-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/bookingcustomer-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

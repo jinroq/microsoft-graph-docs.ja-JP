@@ -1,19 +1,19 @@
 ---
-title: serviceprincipal の削除
-description: serviceprincipal を削除します。
+title: ServicePrincipal の削除
+description: ServicePrincipal を削除します。
 localization_priority: Normal
-ms.openlocfilehash: 37481b880db20428af61cd2b8186a678ec73a4a3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 224ebf07dbe569add6f8a47d08d0be6f4d53e379
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33336014"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638831"
 ---
-# <a name="delete-serviceprincipal"></a>serviceprincipal の削除
+# <a name="delete-serviceprincipal"></a>ServicePrincipal の削除
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-serviceprincipal を削除します。
+ServicePrincipal を削除します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -60,6 +60,16 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/delete_serviceprincipal-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/delete_serviceprincipal-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -70,6 +80,9 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/serviceprincipal-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/serviceprincipal-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

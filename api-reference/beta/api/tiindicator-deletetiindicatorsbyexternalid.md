@@ -1,21 +1,21 @@
 ---
-title: 'tiindicator: deleteTiIndicatorsByExternalId'
-description: 複数の要求ではなく1つの要求で複数の脅威インテリジェンス (TI) インジケーターを削除し、要求には id ではなく外部 id が含まれます。
+title: 'tiIndicator: deleteTiIndicatorsByExternalId'
+description: 複数の要求ではなく1つの要求で複数の脅威インテリジェンス (TI) インジケーターを削除し、要求には Id ではなく外部 Id が含まれます。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 41c964f02e12d420c73e005fd0d669aecbd92d0f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: ed36e61dc60ddeae3b936f4f4712e05059333f8f
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335251"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33637753"
 ---
-# <a name="tiindicator-deletetiindicatorsbyexternalid"></a>tiindicator: deleteTiIndicatorsByExternalId
+# <a name="tiindicator-deletetiindicatorsbyexternalid"></a>tiIndicator: deleteTiIndicatorsByExternalId
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-要求に id ではなく外部 id が含まれている場合は、複数の要求ではなく、1つの要求で複数の脅威インテリジェンス (TI) インジケーターを削除します。
+要求に Id ではなく外部 Id が含まれている場合は、複数の要求ではなく、1つの要求で複数の脅威インテリジェンス (TI) インジケーターを削除します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -47,7 +47,7 @@ POST /security/tiIndicators/deleteTiIndicatorsByExternalId
 
 | パラメーター    | 型        | 説明 |
 |:-------------|:------------|:------------|
-|value|String collection| `externalIds`削除する**tiindicator**オブジェクトのコレクションです。 |
+|value|String collection| `externalIds`削除する**Tiindicator**オブジェクトのコレクションです。 |
 
 ## <a name="response"></a>応答
 
@@ -106,6 +106,16 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/tiindicator_deletetiindicatorsbyexternalid-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/tiindicator_deletetiindicatorsbyexternalid-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
@@ -114,5 +124,9 @@ Content-type: application/json
   "description": "tiIndicator: deleteTiIndicatorsByExternalId",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/tiindicator-deletetiindicatorsbyexternalid.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/tiindicator-deletetiindicatorsbyexternalid.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

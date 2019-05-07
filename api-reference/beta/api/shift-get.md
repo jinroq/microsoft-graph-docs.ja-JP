@@ -1,21 +1,21 @@
 ---
-title: shift を取得する
+title: Shift を取得する
 description: ID でシフトを取得します。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 5bd0f1843b2e76433bd21e117a7772fd0dff4670
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 207c9b40557d2f75ba73ecb76983dc9b9c8129f2
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335860"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638656"
 ---
-# <a name="get-shift"></a>shift を取得する
+# <a name="get-shift"></a>Shift を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[shift](../resources/shift.md)オブジェクトのプロパティとリレーションシップを ID で取得します。
+[Shift](../resources/shift.md)オブジェクトのプロパティとリレーションシップを ID で取得します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -129,6 +129,16 @@ Content-length: 401
   }
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/shift-get-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/shift-get-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -139,6 +149,9 @@ Content-length: 401
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/shift-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/shift-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

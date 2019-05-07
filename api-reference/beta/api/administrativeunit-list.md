@@ -1,21 +1,21 @@
 ---
-title: リスト group や directoryrole
-description: administrativeUnit オブジェクトのリストを取得します。
+title: リスト Group や directoryrole
+description: AdministrativeUnit オブジェクトのリストを取得します。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 684dca4bf9f141d4d4354e636c3da13f0b924510
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 4dbb836322dcbd612e2cafb409543fbe48aa6105
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322818"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636661"
 ---
-# <a name="list-administrativeunits"></a>リスト group や directoryrole
+# <a name="list-administrativeunits"></a>リスト Group や directoryrole
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[administrativeUnit](../resources/administrativeunit.md)オブジェクトのリストを取得します。
+[AdministrativeUnit](../resources/administrativeunit.md)オブジェクトのリストを取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -79,6 +79,16 @@ Content-length: 179
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_administrativeunits-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_administrativeunits-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -89,6 +99,9 @@ Content-length: 179
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/administrativeunit-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/administrativeunit-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

@@ -1,19 +1,19 @@
 ---
 title: secureScores のリスト
-description: secureScores オブジェクトのプロパティとリレーションシップを取得します。
+description: SecureScores オブジェクトのプロパティとリレーションシップを取得します。
 localization_priority: Normal
-ms.openlocfilehash: baa4e2e887eb739160105f2ded149481f8a8d0d4
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 55a9628d88300a97b62145f22f6fc18fce04b92b
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335991"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638810"
 ---
 # <a name="list-securescores"></a>secureScores のリスト
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[secureScores](../resources/securescores.md)オブジェクトのプロパティとリレーションシップを取得します。
+[SecureScores](../resources/securescores.md)オブジェクトのプロパティとリレーションシップを取得します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -21,9 +21,9 @@ ms.locfileid: "33335991"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) |  securityevents。 all、securityevents.。   |
+|委任 (職場または学校のアカウント) |  SecurityEvents。 All、SecurityEvents.。   |
 |委任 (個人用 Microsoft アカウント) |  サポートされていません。  |
-|アプリケーション | securityevents。 all、securityevents.。 |
+|アプリケーション | SecurityEvents。 All、SecurityEvents.。 |
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -128,6 +128,16 @@ Content-type: application/json
 }
 
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/securescores_list-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/securescores_list-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
 <!--
@@ -137,6 +147,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/securescores-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/securescores-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

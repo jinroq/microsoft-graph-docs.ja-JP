@@ -1,23 +1,23 @@
 ---
-title: administrativeUnit を取得する
-description: administrativeUnit オブジェクトのプロパティとリレーションシップを取得します。
+title: AdministrativeUnit を取得する
+description: AdministrativeUnit オブジェクトのプロパティとリレーションシップを取得します。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 32e76f867c1f36f3817e6d1816513f4c775642ef
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 8f9a3880111cf7c3cfa51c4f59a1e5b3b5600cbf
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322842"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636654"
 ---
-# <a name="get-administrativeunit"></a>administrativeUnit を取得する
+# <a name="get-administrativeunit"></a>AdministrativeUnit を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[administrativeUnit](../resources/administrativeunit.md)オブジェクトのプロパティとリレーションシップを取得します。
+[AdministrativeUnit](../resources/administrativeunit.md)オブジェクトのプロパティとリレーションシップを取得します。
 
-**administrativeUnit**リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため、 `GET`この操作を使用して、 **administrativeUnit**インスタンスでカスタムプロパティと拡張機能データを取得することもできます。
+**AdministrativeUnit**リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため、 `GET`この操作を使用して、 **administrativeUnit**インスタンスでカスタムプロパティと拡張機能データを取得することもできます。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -77,6 +77,16 @@ Content-length: 134
   "id": "id-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_administrativeunit-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_administrativeunit-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="see-also"></a>関連項目
 
@@ -96,6 +106,9 @@ Content-length: 134
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/administrativeunit-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/administrativeunit-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

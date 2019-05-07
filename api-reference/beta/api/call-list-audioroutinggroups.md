@@ -1,21 +1,21 @@
 ---
 title: オーディオルーティンググループの一覧表示
-description: '**audioRoutingGroup**オブジェクトのリストを取得します。'
+description: '**AudioRoutingGroup**オブジェクトのリストを取得します。'
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: c7c319376d9bcfd2f3256f939abd1f8f233e0a2c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 68818a250b603a6b1593016506c67671597e7519
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328155"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33635786"
 ---
 # <a name="list-audio-routing-groups"></a>オーディオルーティンググループの一覧表示
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**audioRoutingGroup**オブジェクトのリストを取得します。
+**AudioRoutingGroup**オブジェクトのリストを取得します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -24,7 +24,7 @@ ms.locfileid: "33328155"
 |:---------------------------------------|:--------------------------------------------|
 | 委任 (職場または学校のアカウント)     | サポートされません。                               |
 | 委任 (個人用 Microsoft アカウント) | サポートされません。                               |
-| アプリケーション     | joingroupcalls を呼び出します。すべて、initiategroupcalls を呼び出します。 |
+| アプリケーション     | JoinGroupCalls を呼び出します。すべて、InitiateGroupCalls を呼び出します。 |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -91,6 +91,16 @@ Content-Length: 302
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプルコード
+# <a name="ctabcs"></a>[Visual](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-audioRoutingGroups-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-audioRoutingGroups-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -101,6 +111,9 @@ Content-Length: 302
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/call-list-audioroutinggroups.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/call-list-audioroutinggroups.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->
