@@ -4,12 +4,12 @@ description: サインイン中のユーザーの既定の連絡先フォルダ�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3c648e753c3959d3b22072edbd4b796d0f8c154b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 77bcd7fd9264ff100aa325ec52a2eb1ba412a556
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584195"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33601978"
 ---
 # <a name="list-contacts"></a>連絡先を一覧表示する
 
@@ -114,6 +114,16 @@ Content-length: 263
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_contacts-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_contacts-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -122,5 +132,9 @@ Content-length: 263
   "description": "List contacts",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/user-list-contacts.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/user-list-contacts.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

@@ -4,12 +4,12 @@ description: Microsoft Graph Security API には、Microsoft とエコシステ�
 localization_priority: Priority
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: bd208067c2194766bb5f3d93d0caa21be086dca0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 73638098e2956f4c2756253e41ee029a52bd81db
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579185"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33599864"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>Microsoft Graph Security API を使用する
 
@@ -43,6 +43,10 @@ Microsoft Graph Security API には以下の主要なエンティティが含ま
 |[Palo Alto Networks](https://docs.paloaltonetworks.com/pan-os/9-0/pan-os-web-interface-help/monitor/monitor-logs/log-types.html)| <p align="center">&#x2713;</p> | <p align="center"> [ファイルの問題](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [ファイルの問題](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
 > **注:** Microsoft Graph Security エコシステムに新しいプロバイダーが継続的に加わっています。 新しいプロバイダーにサポートを要請したり、既存のプロバイダーからのサポートを拡張したりするよう要請するには、[Microsoft Graph セキュリティ GitHub リポジトリに問題についてのファイルを登録](https://github.com/microsoftgraph/security-api-solutions/issues/new)します。
 
+## <a name="secure-score"></a>セキュリティ スコア 
+
+[Microsoft セキュア スコア](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/A-new-home-and-an-all-new-look-for-Microsoft-Secure-Score/ba-p/529641)は、セキュリティ ポートフォリオを可視化し、その方法を向上させるためのセキュリティ分析ソリューションです。 単一のスコアを使用することによって、Microsoft ソリューションにおいてリスクを軽減するために実行した事柄についてより良く把握できます。 また、自分のスコアを他の組織のスコアと比較したり、スコアが時間とともにどのように変化する傾向があるかも理解できます。 Microsoft Graph Security [secureScore](securescore.md) と [secureScoreControlProfile](securescorecontrolprofile.md) のエンティティは、ほぼ最大限のセキュリティ機能を確保しながら、組織のセキュリティと生産性のニーズに関して平衡を保つのに役立ちます。 また、セキュリティ機能を採用した後にスコアがどのように変化するかも予想できます。
+
 ## <a name="common-use-cases"></a>一般的なユース ケース
 
 Microsoft Graph Security API の操作で最も一般的な要求の一部を以下に取り上げます。
@@ -50,7 +54,13 @@ Microsoft Graph Security API の操作で最も一般的な要求の一部を以
 | **ユース ケース**   | **REST リソース** | **Graph エクスプローラーで試す** |
 |:---------------|:--------|:----------|
 | アラートを一覧表示する | [アラートの一覧表示](../api/alert-list.md) | [https://graph.microsoft.com/v1.0/security/alerts](https://developer.microsoft.com/graph/graph-explorer?request=security/alerts&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com) |
-| アラートを更新する | [警告の更新](../api/alert-update.md) | [https://graph.microsoft.com/v1.0/security/alerts/{alert-id}](https://developer.microsoft.com/graph/graph-explorer?request=security/alerts/{alert-id}&method=PATCH&version=v1.0&GraphUrl=https://graph.microsoft.com) |
+| アラートを更新する | [アラートの更新](../api/alert-update.md) | [https://graph.microsoft.com/v1.0/security/alerts/{alert-id}](https://developer.microsoft.com/graph/graph-explorer?request=security/alerts/{alert-id}&method=PATCH&version=v1.0&GraphUrl=https://graph.microsoft.com) |
+|セキュリティ スコアを一覧表示する|[secureScores の一覧表示](../api/security-list-securescores.md) |[https://graph.microsoft.com/v1.0/security/secureScores](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScores&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com)|
+|セキュリティ スコアを取得する|[secureScore の取得](../api/securescore-get.md) |[https://graph.microsoft.com/v1.0/security/secureScores/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScores/{id}&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com)|
+|セキュリティ スコアの制御プロファイルを一覧表示する|[secureScoreControlProfiles の一覧表示](../api/security-list-securescorecontrolprofiles.md) |[https://graph.microsoft.com/v1.0/security/secureScoreControlProfiles/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScoreControlProfiles//{id}&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com)|
+|セキュリティ スコアの制御プロファイルを取得する|[secureScoreControlProfile の取得](../api/securescorecontrolprofile-get.md) |[https://graph.microsoft.com/v1.0/security/secureScoreControlProfiles](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScoreControlProfiles&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com)|
+|セキュア スコア制御プロファイルを更新する|[secureScoreControlProfileの更新](../api/securescorecontrolprofile-update.md) |[https://graph.microsoft.com/v1.0/security/secureScoreControlProfiles/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScoreControlProfiles/{id}&method=PATCH&version=v1.0&GraphUrl=https://graph.microsoft.com)|
+
 
 Microsoft Graph [webhook](/graph/webhooks) を使用すると、Microsoft Graph Security エンティティの更新に関する通知をサブスクライブして受信できます。
 
@@ -71,7 +81,7 @@ Microsoft Graph [webhook](/graph/webhooks) を使用すると、Microsoft Graph 
 
 Microsoft Graph Security API は、Microsoft およびパートナーの各種セキュリティ ソリューションを活用するための新しい手段となります。 以下の手順に従って開始しましょう。
 
-- [アラート](alert.md)にドリルダウンします。
+- [アラート](alert.md)、 [secureScore](securescore.md)、および[secureScoreControlProfiles](securescorecontrolprofile.md)にドリルダウンします。
 - [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)で API をお試しください。 **[サンプル クエリ]** で、**[サンプルをさらに表示]** を選択してセキュリティ カテゴリを **[オン]** に設定します。
 - エンティティ変更時の[通知のサブスクライブと受信](/graph/webhooks)を試します。
 

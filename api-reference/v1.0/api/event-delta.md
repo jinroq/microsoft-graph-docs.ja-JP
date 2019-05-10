@@ -4,12 +4,12 @@ description: '**calendarView** において追加、削除、更新された一�
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 7eb8a80f8e857edc9aa9ff8781fae01dc1476677
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2b291c75c8d2ccf607f516b17d44d4f9010adf80
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562854"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33615503"
 ---
 # <a name="event-delta"></a>イベント: デルタ
 
@@ -113,6 +113,16 @@ Content-length: 359
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/event_delta-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/event_delta-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="see-also"></a>関連項目
 
@@ -126,5 +136,9 @@ Content-length: 359
   "description": "event: delta",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/event-delta.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/event-delta.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

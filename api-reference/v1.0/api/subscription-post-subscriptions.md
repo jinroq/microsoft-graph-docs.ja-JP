@@ -3,12 +3,12 @@ title: サブスクリプションを作成する
 description: Microsoft Graph のデータが変更されたときに通知を受信するため、リスナー アプリケーションに登録します。
 localization_priority: Priority
 author: piotrci
-ms.openlocfilehash: 6d06e230dd85aadaa4d2b3a4f851b339b34793eb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f3363abda8c61c123bdce38869e91d8ff23d7e0d
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32560978"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33603154"
 ---
 # <a name="create-subscription"></a>サブスクリプションを作成する
 
@@ -128,6 +128,16 @@ Content-length: 252
   "creatorId": "8ee44408-0679-472c-bc2a-692812af3437"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_subscription_from_subscriptions-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_subscription_from_subscriptions-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="notification-endpoint-validation"></a>通知エンドポイントの検証
 
@@ -140,5 +150,9 @@ Content-length: 252
   "description": "Create subscription",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/subscription-post-subscriptions.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/subscription-post-subscriptions.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

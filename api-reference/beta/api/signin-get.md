@@ -1,19 +1,25 @@
 ---
 title: サインインを取得する
-description: テナントの Azure AD ユーザーのサインインを取得します。 本来対話型のサイイン (ユーザー名とパスワードが認証トークンの一部として渡される場合) と、成功したフェデレーション サインインは、現在サインイン ログに含まれています。
-localization_priority: Priority
-ms.openlocfilehash: 79bebfda40b15a5524aecfc99e5b6d83a168b28e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+description: テナントの特定の Azure AD ユーザーのサインイン イベントを取得します。
+localization_priority: Normal
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 1a3d1f8cbff40eb76e26a5f08afa36368a5148dd
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335802"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638557"
 ---
-# <a name="get-signin"></a>サインインを取得する
-テナントの Azure AD ユーザーのサインインを取得します。 本来対話型のサイイン (ユーザー名とパスワードが認証トークンの一部として渡される場合) と、成功したフェデレーション サインインは、現在サインイン ログに含まれています。
+# <a name="get-signin"></a>signIn を取得する
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+テナントの特定の Azure AD ユーザーのサインイン イベントを取得します。 本来対話型のサイイン (ユーザー名とパスワードが認証トークンの一部として渡される場合) と、成功したフェデレーション サインインは、現在サインイン ログに含まれています。
 
 
 ## <a name="permissions"></a>アクセス許可
+
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
@@ -25,25 +31,36 @@ ms.locfileid: "33335802"
 また、アプリは Azure AD に[正しく登録されている](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)必要があります。
 
 ## <a name="http-request"></a>HTTP 要求
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /auditLogs/signIns/{id}
 ```
+
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための以下の OData クエリ パラメーターをサポートします。 [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)でこれらのパラメーターを使用する方法について確認してください。
+
+このメソッドは、応答をカスタマイズするための OData クエリ パラメーターをサポートします。 これらのパラメーターを使用する方法の詳細については、[OData クエリ パラメーター](/graph/query_parameters)をご確認ください。
 
 ## <a name="request-headers"></a>要求ヘッダー
+
 | 名前      |説明|
 |:----------|:----------|
 | Authorization  | Bearer {code}|
 
 ## <a name="request-body"></a>要求本文
+
 このメソッドには、要求本文を指定しません。
+
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [signIn](../resources/signin.md) オブジェクトを返します。
+
 ## <a name="example"></a>例
-##### <a name="request"></a>要求
+
+### <a name="request"></a>要求
+
 以下は、要求の例です。
+
 <!-- {
   "blockType": "request",
   "name": "get_signin"
@@ -51,8 +68,11 @@ GET /auditLogs/signIns/{id}
 ```http
 GET https://graph.microsoft.com/beta/auditLogs/signIns/{id}
 ```
-##### <a name="response"></a>応答
+
+### <a name="response"></a>応答
+
 以下は、応答の例です。 
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -63,6 +83,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 211
 ```
+
 ```json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/signIns",
@@ -78,14 +99,14 @@ Content-length: 211
         "status": {
             "errorCode": 0,
             "failureReason": null,
-            "additionalDetails": "SignIn Success & CA Sucess"
+            "additionalDetails": "SignIn Success & CA Success"
         },
         "clientAppUsed": null,
         "deviceDetail": {
             "deviceId": "34390ed6-52b3-4102-aeff-aad2292abac3",
             "displayName": "DeviceName",
             "operatingSystem": "Windows 10",
-            "browser": "Rich Client v1.0.2016.0",
+            "browser": "Rich Client v3.14.1592.7",
             "isCompliant": true,
             "isManaged": true,
             "trustType": ""
@@ -119,6 +140,17 @@ Content-length: 211
 }
 
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_signin-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_signin-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
@@ -126,5 +158,9 @@ Content-length: 211
   "description": "Get signIn",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/signin-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/signin-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

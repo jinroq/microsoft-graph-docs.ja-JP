@@ -4,18 +4,18 @@ description: このチーム内のチャネルの一覧を取得します。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 476f5a698801725ce441c31d21715a2a180658cf
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 90320abf7ddbb630c1aede5df43d0e0614da5de4
+ms.sourcegitcommit: 5e8a6761d2766f2d12068c7a5e02724da3f3e11d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33635506"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33659601"
 ---
 # <a name="list-channels"></a>チャネルを一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-このチーム内の[チャネル](../resources/channel.md)の一覧を取得します。
+この [チーム](../resources/team.md)で [チャネル](../resources/channel.md)の一覧を取得します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。

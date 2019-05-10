@@ -4,12 +4,12 @@ description: Office 365 グループを含み、それに限定されない組�
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: c9816c2acbfeab7b065bb1c7b39aaad2de140322
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: a4149954da3bacf7b0a327112b297d7a693f6035
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324293"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33592873"
 ---
 # <a name="list-groups"></a>グループの一覧表示
 
@@ -162,6 +162,16 @@ Content-type: application/json
 }
 
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_groups-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_groups-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 #### <a name="request-2"></a>要求 2
 この例では、`$filter` クエリ オプションを使用して、グループ ベースのライセンス割り当てによるライセンス エラーが発生したメンバーが含まれているグループを取得します。 また、`$select` クエリ オプションも使用して、各グループの **id** プロパティと **displayName** プロパティのみを応答で取得します (その他の既定または既定以外のプロパティは取得しません)。
@@ -201,6 +211,16 @@ Content-type: application/json
     ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_groups_withlicenseerrors-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_groups_withlicenseerrors-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -211,6 +231,11 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/group-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/group-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/group-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/group-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

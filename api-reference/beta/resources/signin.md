@@ -1,16 +1,21 @@
 ---
 title: サインイン リソースの種類
-description: 'このリソースでは、ディレクトリでのユーザーやアプリケーションのサインイン アクティビティについて詳しく説明します。 '
-localization_priority: Priority
-ms.openlocfilehash: 9736e906810ce1be1525bf85b687f4a5f1a57f3e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+description: ユーザーとアプリケーションのサインイン アクティビティを監査するのに役立つ Microsoft Graph API (REST) のサインイン リソースについて説明します (ベータ版)。
+author: lleonard-msft
+localization_priority: Normal
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 90e2b2cf56776657f9c76c442b3ca9579b75cd5f
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343018"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33620820"
 ---
 # <a name="signin-resource-type"></a>サインイン リソースの種類
-このリソースでは、ディレクトリでのユーザーやアプリケーションのサインイン アクティビティについて詳しく説明します。 
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+ディレクトリでのユーザーやアプリケーションのサインイン アクティビティについて詳しく説明します。 
 
 ## <a name="methods"></a>メソッド
 

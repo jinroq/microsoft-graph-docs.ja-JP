@@ -1,6 +1,6 @@
 ---
 title: アラートを一覧表示する
-description: アラート オブジェクトのリストを取得します。
+description: alert オブジェクトのリストを取得する。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
@@ -15,7 +15,7 @@ ms.locfileid: "32551380"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[アラート](../resources/alert.md) オブジェクトのリストを取得します。
+[alert](../resources/alert.md) オブジェクトのリストを取得する。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -41,7 +41,7 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 
-このメソッドは、応答をカスタマイズするために次の[OData クエリ パラメーター](/graph/query-parameters)をサポートします:
+このメソッドは、応答をカスタマイズするために次の [OData クエリ パラメーター](/graph/query-parameters)をサポートします:
 
 - `$count`
 - `$filter`
@@ -50,9 +50,9 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 - `$skip`
 - `$top` は、各セキュリティ API プロバイダーから集計された上位の結果を返します。
 
-別のプロパティ セットを返すには、OData `$select` クエリ パラメーターを使用し、目的の**アラート**のプロパティのセットを指定します。  例えば、**assignedTo**、**カテゴリ**、**重要度** プロパティを返すには、次をクエリに追加します: `$select=assignedTo,category,severity`。
+別のプロパティ セットを返すには、OData `$select` クエリ パラメーターを使用し、目的の **alert** プロパティのセットを指定します。  例えば、**assignedTo**、**category**、および **severity** プロパティを返すには、以下をクエリに追加します: `$select=assignedTo,category,severity`。
 
-> **注:** `$top` には1000件のアラートという上限があり、`$top`  +  `$skip` の組み合わせは6000件のアラートを超えることはできません。 例えば、`/security/alerts?$top=10&$skip=5990` では `200 OK` 応答コードを返しますが、`/security/alerts?$top=10&$skip=5991` では `400 Bad Request` 応答コードを返します。  詳細については、[Microsoft グラフ セキュリティ API のエラー応答](../resources/security-error-codes.md)を参照してください。
+> **注:** `$top` ではアラート数が 1000件に制限され、`$top`  +  `$skip` の組み合わせでのアラート数は 6000 件に制限されます。 例えば、`/security/alerts?$top=10&$skip=5990` は応答コード `200 OK` を返しますが、`/security/alerts?$top=10&$skip=5991` は応答コード `400 Bad Request` を返します。  詳細については、「[Microsoft グラフ セキュリティ API のエラー応答](../resources/security-error-codes.md)」を参照してください。
 
 ## <a name="request-headers"></a>要求ヘッダー
 
@@ -66,7 +66,7 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、**アラート** オブジェクトのコレクションを応答本文で返します。 プロバイダーから 2xx または 404 以外の状態コードが返されるか、プロバイダーがタイムアウトした場合、応答は、警告ヘッダー内のプロバイダーの応答と共に`206 Partial Content` 状態コードになります。 詳細については、[Microsoft グラフ セキュリティ API のエラー応答](../resources/security-error-codes.md)を参照してください。
+成功した場合、このメソッドは応答コード `200 OK` と **alert** オブジェクトのコレクションを応答本文で返します。 プロバイダーから 2xx または 404 以外の状態コードが返されるか、プロバイダーがタイムアウトした場合、応答は、警告ヘッダー内のプロバイダーの応答と共に状態コード `206 Partial Content` になります。 詳細については、「[Microsoft グラフ セキュリティ API のエラー応答](../resources/security-error-codes.md)」を参照してください。
 
 ## <a name="example"></a>例
 

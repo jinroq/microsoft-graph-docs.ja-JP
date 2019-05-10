@@ -1,20 +1,24 @@
 ---
 title: signIns を一覧表示する
-description: テナントの Azure AD ユーザーのサインインを取得します。 本来対話型のサイイン (ユーザー名とパスワードが認証トークンの一部として渡される場合) と、成功したフェデレーション サインインは、現在サインイン ログに含まれています。  最新の signIns が最初に返されます。
-localization_priority: Priority
-ms.openlocfilehash: 8596bd168a3e10cbea9e15e2f61d6bd668fd27b5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: ディレクトリ (テナント) のアクティビティ (ベータ版) を監査するための、Microsoft Graph API (REST) の signIn リソース (エンティティ) を一覧表示する方法について説明します。
+localization_priority: Normal
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: fdb1358d36a0e1da34779de5505c5f18f901e681
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32545158"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638684"
 ---
-# <a name="list-signins"></a>signIns を一覧表示する
+# <a name="list-signins"></a>signIn を一覧表示する
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 テナントの Azure AD ユーザーのサインインを取得します。 本来対話型のサイイン (ユーザー名とパスワードが認証トークンの一部として渡される場合) と、成功したフェデレーション サインインは、現在サインイン ログに含まれています。  最新の signIns が最初に返されます。
 
-
 ## <a name="permissions"></a>アクセス許可
+
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
@@ -31,9 +35,9 @@ ms.locfileid: "32545158"
 GET auditLogs/signIns
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための以下の OData クエリ パラメーターをサポートします。 [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)でこれらのパラメーターを使用する方法について確認してください。
+このメソッドは、応答をカスタマイズするための以下の OData クエリ パラメーターをサポートします。 これらのパラメーターを使用する方法の詳細については、[OData クエリ パラメーター](/graph/query_parameters)をご確認ください。
 
-|名前     |説明                            |例|
+|Name     |説明                            |例|
 |:--------------------|----------------|------------------------------------------------------------------------|
 |[$filter](https://developer.microsoft.com/graph/docs/concepts/query_parameters#filter-parameter)|結果 (行) をフィルターします。 |`/auditLogs/signIns?&$filter=createdDateTime le 2018-01-24`
 |[$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top-parameter)|結果のページ サイズを設定します。|`/auditLogs/signIns?$top=1`|
@@ -87,7 +91,9 @@ GET auditLogs/signIns
 GET https://graph.microsoft.com/beta/auditLogs/signIns
 ```
 ##### <a name="response"></a>応答
-以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+以下は、応答の例です。 
+
+>**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -99,6 +105,16 @@ HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 264
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_signins-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_signins-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 ```json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/signIns",
@@ -201,5 +217,9 @@ Content-length: 264
   "description": "List signIns",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/signin-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/signin-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

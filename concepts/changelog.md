@@ -3,12 +3,12 @@ title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 7cf2521f5e119b5270344aef25b775d49451e9cd
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: ce2554efa452a95f52f34d358e39b0d32ce839a7
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33440095"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33599780"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
@@ -16,32 +16,38 @@ ms.locfileid: "33440095"
 
 Microsoft Graph API に関する既知の問題の詳細については、「[既知の問題](known-issues.md)」を参照してください。
 
-## <a name="april-2019"></a>2019 年 4 月
+## <a name="may-2019"></a>2019 年 5 月
 
-### <a name="access-reviews-api"></a>アクセス レビュー API
+### <a name="risky-users-api"></a>リスクの高いユーザーの API
 
 | **変更の種類** | **バージョン**   | **説明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| 追加 | ベータ版 | アプリケーション アクセス許可 AccessReview.Read.All、ProgramControl.Read.All、ProgramControl.ReadWrite.All が追加されました。 詳細については、[アクセス レビュー API のリファレンス](/graph/api/resources/accessreviews-root?view=graph-rest-beta)を参照してください。 |
+| 追加 | ベータ版 | [riskyUserHistoryItem](/graph/api/resources/riskyuserhistoryitem?view=graph-rest-beta) エンティティを追加しました。 |
+| 追加 | ベータ版 | [履歴のリスト](/graph/api/riskyuser-list-history?view=graph-rest-beta)の操作を追加しました。 |
+
+### <a name="security-apis"></a>セキュリティ API
+
+| **変更の種類** | **バージョン** | **説明**              |
+| :-------------- | :---------- | :--------------------------------------- |
+| 追加        | v1.0       | セキュア スコア API を [セキュリティ API](/graph/api/resources/securescore-api-overview?view=graph-rest-1.0) に追加しました。これには次のリソースと操作が含まれています。<br/>[secureScore](/graph/api/resources/securescore?view=graph-rest-1.0) (および関連するエンティティ)<br/>[secureScores のリスト](/graph/api/securescores-list?view=graph-rest-1.0)<br/>[secureScoreControlProfile](/graph/api/resources/securescorecontrolprofile?view=graph-rest-1.0)<br/>[secureScoreControlProfiles のリスト](/graph/api/securescorecontrolprofiles-list?view=graph-rest-1.0)<br/>[secureScoreControlProfiles の更新](/graph/api/securescorecontrolprofiles-update?view=graph-rest-1.0) |
+
+
+## <a name="april-2019"></a>2019 年 4 月
+
+### <a name="azure-ad-apis"></a>Azure AD API
+
+| **変更の種類** | **バージョン**   | **説明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 追加 | v1.0 |  新しい **Azure AD 用の監査ログ API** を導入しました。[directoryAudit](/graph/api/resources/directoryAudit?view=graph-rest-v1.0) からディレクトリ管理タスクのアクティビティ ログが提供され、[signIns](/graph/api/resources/signIns?view=graph-rest-v1.0) からサインイン アクティビティが提供されます。|
+| 追加 | ベータ版 | **アクセス レビュー**に対する新しいアプリケーション アクセス許可 AccessReview.Read.All、ProgramControl.Read.All、ProgramControl.ReadWrite.All を追加しました。 詳細については、[アクセス レビュー API のリファレンス](/graph/api/resources/accessreviews-root?view=graph-rest-beta)を参照してください。 |
+| 追加 | ベータ版 | **signInSessionsValidFromDateTime** プロパティを[ユーザー](/graph/api/resources/user?view=graph-rest-beta) リソースに追加します。 これは、**refreshTokensValidFromDateTime** プロパティの名前変更ですが、両方のプロパティはクライアントがスムーズに移行できるようにサポートされます。 数ヶ月後に、古いプロパティ **refreshTokensValidFromDateTime** が削除されます。|
+| 追加 | ベータ版 | **revokeSignInSessions** アクションを[ユーザー](/graph/api/resources/user?view=graph-rest-beta) リソースに追加します。 これは、**invalidateAllRefreshTokens** プロパティの名前変更ですが、両方のサービス アクションはクライアントがスムーズに移行できるようにサポートされます。 数ヶ月後に、古いサービス アクション **invalidateAllRefreshTokens** は削除されます。 |
 
 ### <a name="azure-ad-b2c-apis"></a>Azure AD B2C APIs
 
 | **変更の種類** | **バージョン**   | **説明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 追加 | ベータ版 |新しいリソースタイプ[trustFrameworkPolicy](/graph/api/resources/trustframeworkpolicy?view=graph-rest-beta)が導入されました。 このリソースタイプは、[作成](/graph/api/trustframework-post-trustframeworkpolicy?view=graph-rest-beta)、[一覧表示](/graph/api/trustframework-list-trustframeworkpolicies?view=graph-rest-beta)、[取得](/graph/api/trustframeworkpolicy-get?view=graph-rest-beta)、 [更新](/graph/api/trustframework-put-trustframeworkpolicy?view=graph-rest-beta)、および[削除](/graph/api/trustframerkpolicy-delete?view=graph-rest-beta)の操作をサポートしています。|
-
-### <a name="webhooks-change-notifications"></a>Webhook (変更通知)
-
-| **変更の種類** | **バージョン**   | **説明**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| 追加 | ベータ版 | Outlook リソースで使用可能な 2 種類のライフサイクル通知 `subscriptionRemoved` と `missed` が追加されました。 アプリのサブスクリプションによって、通知の中断を軽減するための適切なアクションを実行できます。 詳しくは、[Outlook リソースで、不足状態のサブスクリプションと通知を減らす (プレビュー)](webhooks-outlook-authz.md) をご覧ください。|
-
-### <a name="directory-apis"></a>ディレクトリ API
-
-| **変更の種類** | **バージョン**   | **説明**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| 追加 | ベータ版 | **signInSessionsValidFromDateTime** プロパティを[ユーザー](/graph/api/resources/user?view=graph-rest-beta) リソースに追加します。 これは、**refreshTokensValidFromDateTime** プロパティの名前変更ですが、両方のプロパティはクライアントがスムーズに移行できるようにサポートされます。 数ヶ月後に、古いプロパティ **refreshTokensValidFromDateTime** が削除されます。|
-| 追加 | ベータ版 | **revokeSignInSessions** アクションを[ユーザー](/graph/api/resources/user?view=graph-rest-beta) リソースに追加します。 これは、**invalidateAllRefreshTokens** プロパティの名前変更ですが、両方のサービス アクションはクライアントがスムーズに移行できるようにサポートされます。 数ヶ月後に、古いサービス アクション **invalidateAllRefreshTokens** は削除されます。 |
 
 ### <a name="microsoft-intune-apis"></a>Microsoft Intune API
 |変更の種類|バージョン|説明|
@@ -84,14 +90,6 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 |追加|ベータ版|[deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-beta) エンティティに**intents**、 **settingDefinitions**、**templates** および **categories** ナビゲーション プロパティを追加しました。|
 |追加|ベータ版|[managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta)エンティティに**securityBaselineStates** ナビゲーション プロパティを追加しました。|
 
-### <a name="messages"></a>メッセージ
-
-| **変更の種類** | **バージョン**   | **説明**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| 追加        | ベータ版          | [メッセージ一覧](/graph/api/user-list-messages?view=graph-rest-beta) と [メッセージの取得](/graph/api/message-get?view=graph-rest-beta)に、新しい[Mail.ReadBasic (プレビュー) アクセス許可](permissions-reference.md#mail-permissions)サポートが追加されました。            |
-| 追加        | ベータ版          | [メッセージの MIME コンテンツを取得する](outlook-get-mime-message.md)機能が追加されました。 |
-| 追加        | ベータ版          | [ファイルまたはアイテムの添付ファイルの生コンテンツを取得](/graph/api/attachment-get?view=graph-rest-beta#get-the-raw-contents-of-a-file-or-item-attachment)する機能が、イベント、メッセージ、Outlook タスク、またはグループ投稿に追加されました。 |
-
 ### <a name="microsoft-teams-apis"></a>Microsoft Teams API
 
 | **変更の種類** | **バージョン**   | **説明**                          |
@@ -100,17 +98,24 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 |追加 |v1.0| [channel](/graph/api/resources/channel?view=graph-rest-1.0) に、**email** および **webUrl** プロパティを追加しました。|
 | 追加 | ベータ版 | [チャット](/api-reference/beta/resources/chat.md) リソースと関連メソッドが追加されました。 |
 
-## <a name="march-2019"></a>2019 年 3 月
-
-### <a name="risky-users-api"></a>リスクの高いユーザーの API
+### <a name="outlook-mail"></a>Outlook メール
 
 | **変更の種類** | **バージョン**   | **説明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|追加 |ベータ版| 導入された[riskyUsers が侵害された事を確認する](/graph/api/resources/riskyusers-confirmcompromised?view=graph-rest-beta)方法で、管理者は Azure AD Identity Protection によりユーザーが侵害されていることを確認することができます。 |
-|追加 |ベータ版| 導入された[riskyUsers を無視する](/graph/api/resources/riskyusers-dismiss?view=graph-rest-beta)方法で、管理者は Azure Active Directory Identity Protection によりリスクの高いユーザーを無視することができます。 |
-|追加 |ベータ版| 導入された**isProcessing**プロパティ[riskyUsers](/graph/api/resources/riskyuser?view=graph-rest-beta)リソースです。 |
+| 追加        | ベータ版          | [メッセージ一覧](/graph/api/user-list-messages?view=graph-rest-beta) と [メッセージの取得](/graph/api/message-get?view=graph-rest-beta)に、新しい[Mail.ReadBasic (プレビュー) アクセス許可](permissions-reference.md#mail-permissions)サポートが追加されました。            |
+| 追加        | ベータ版          | [メッセージの MIME コンテンツを取得する](outlook-get-mime-message.md)機能が追加されました。 |
+| 追加        | ベータ版          | [ファイルまたはアイテムの添付ファイルの生コンテンツを取得](/graph/api/attachment-get?view=graph-rest-beta#get-the-raw-contents-of-a-file-or-item-attachment)する機能が、イベント、メッセージ、Outlook タスク、またはグループ投稿に追加されました。 |
 
-### <a name="directory-apis"></a>ディレクトリ API
+### <a name="webhooks-change-notifications"></a>Webhook (変更通知)
+
+| **変更の種類** | **バージョン**   | **説明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 追加 | ベータ版 | Outlook リソースで使用可能な 2 種類のライフサイクル通知 `subscriptionRemoved` と `missed` が追加されました。 アプリのサブスクリプションによって、通知の中断を軽減するための適切なアクションを実行できます。 詳しくは、[Outlook リソースで、不足状態のサブスクリプションと通知を減らす (プレビュー)](webhooks-outlook-authz.md) をご覧ください。|
+
+
+## <a name="march-2019"></a>2019 年 3 月
+
+### <a name="directory-apis"></a>Directory API
 
 | **変更の種類** | **バージョン**   | **説明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -131,6 +136,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | 追加 | ベータ版 | API を追加して、[educationClass](/graph/api/resources/educationClass?view=graph-rest-beta) と [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta) の [educationCategory](/graph/api/resources/educationCategory?view=graph-rest-beta) リソースを管理します。|
 | 追加 | ベータ版 | 新しい [educationFormResource](/graph/api/resources/educationFormResource?view=graph-rest-beta) リソースを追加します。|
 | 追加 | ベータ版 | [educationAssignmentIndividualRecipient](/graph/api/resources/educationAssignmentIndividualRecipient?view=graph-rest-beta) リソースに **recipients** プロパティを追加します。|
+
 
 ### <a name="microsoft-intune-apis"></a>Microsoft Intune API
 
@@ -192,6 +198,14 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 |削除 | ベータ版 | 複合型: <br> **attendeeAvailabilityDataModel** <br> **attendeeDataModel** <br> **findMeetingTimesResponse** <br> **findMeetingTimesTimeConstraints** <br> **locationConstraints** <br> **meetingTimeSlotDataModel** <br> **searchWindowTimeSlot**|
 |削除 | ベータ版 | 列挙型: <br> **addressType** <br> **availabilityStatus** |
 |追加 | ベータ版 | 次の複合型を復元しました。 <br> [attendeeAvailability](/graph/api/resources/attendeeavailability?view=graph-rest-beta) <br> [locationConstraint](/graph/api/resources/locationconstraint?view=graph-rest-beta) <br> [meetingTimeSuggestionsResult](/graph/api/resources/meetingtimesuggestionsresult?view=graph-rest-beta) <br>[timeConstraint](/graph/api/resources/timeconstraint?view=graph-rest-beta) |
+
+### <a name="risky-users-api"></a>リスクの高いユーザーの API
+
+| **変更の種類** | **バージョン**   | **説明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|追加 |ベータ版| 導入された[riskyUsers が侵害された事を確認する](/graph/api/resources/riskyusers-confirmcompromised?view=graph-rest-beta)方法で、管理者は Azure AD Identity Protection によりユーザーが侵害されていることを確認することができます。 |
+|追加 |ベータ版| 導入された[riskyUsers を無視する](/graph/api/resources/riskyusers-dismiss?view=graph-rest-beta)方法で、管理者は Azure Active Directory Identity Protection によりリスクの高いユーザーを無視することができます。 |
+|追加 |ベータ版| **isProcessing** プロパティを [riskyUser](/graph/api/resources/riskyuser?view=graph-rest-beta) リソースに導入しました。 |
 
 
 ## <a name="february-2019"></a>2019 年 2 月
