@@ -5,46 +5,46 @@ ms.date: 09/10/2017
 title: SharePoint サイトを取得する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: cac9de0dc81813bda482b20e72f8a62e6191f7a1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 45311e25b5cdb65310efaadffc6a05a703125a47
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32520798"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33602958"
 ---
-# <a name="get-a-site-resource"></a><span data-ttu-id="03233-102">サイト リソースを取得する</span><span class="sxs-lookup"><span data-stu-id="03233-102">Get a site resource</span></span>
+# <a name="get-a-site-resource"></a><span data-ttu-id="6d53d-102">サイト リソースを取得する</span><span class="sxs-lookup"><span data-stu-id="6d53d-102">Get a site resource</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="03233-p101">[サイト][] リソースのプロパティとリレーションシップを取得します。**サイト** リソースは、SharePoint のチーム サイトを表します。</span><span class="sxs-lookup"><span data-stu-id="03233-p101">Retrieve properties and relationships for a [site][] resource. A **site** resource represents a team site in SharePoint.</span></span>
+<span data-ttu-id="6d53d-p101">[サイト][] リソースのプロパティとリレーションシップを取得します。**サイト** リソースは、SharePoint のチーム サイトを表します。</span><span class="sxs-lookup"><span data-stu-id="6d53d-p101">Retrieve properties and relationships for a [site][] resource. A **site** resource represents a team site in SharePoint.</span></span>
 
 [サイト]: ../resources/site.md
 [site]: ../resources/site.md
 
-<span data-ttu-id="03233-106">**サイト**は、以下の値の複合 ID である、一意識別子にアドレス指定されます。</span><span class="sxs-lookup"><span data-stu-id="03233-106">A **site** is addressed be a unique identifier which is a composite ID of the following values:</span></span>
+<span data-ttu-id="6d53d-106">**サイト**は、以下の値の複合 ID である、一意識別子にアドレス指定されます。</span><span class="sxs-lookup"><span data-stu-id="6d53d-106">A **site** is addressed be a unique identifier which is a composite ID of the following values:</span></span>
 
-* <span data-ttu-id="03233-107">サイト コレクションのホスト名 (contoso.sharepoint.com)</span><span class="sxs-lookup"><span data-stu-id="03233-107">Site collection hostname (contoso.sharepoint.com)</span></span>
-* <span data-ttu-id="03233-108">サイト コレクションの一意 ID (GUID)</span><span class="sxs-lookup"><span data-stu-id="03233-108">Site collection unique ID (GUID)</span></span>
-* <span data-ttu-id="03233-109">サイトの一意 ID (GUID)</span><span class="sxs-lookup"><span data-stu-id="03233-109">Site unique ID (GUID)</span></span>
+* <span data-ttu-id="6d53d-107">サイト コレクションのホスト名 (contoso.sharepoint.com)</span><span class="sxs-lookup"><span data-stu-id="6d53d-107">Site collection hostname (contoso.sharepoint.com)</span></span>
+* <span data-ttu-id="6d53d-108">サイト コレクションの一意 ID (GUID)</span><span class="sxs-lookup"><span data-stu-id="6d53d-108">Site collection unique ID (GUID)</span></span>
+* <span data-ttu-id="6d53d-109">サイトの一意 ID (GUID)</span><span class="sxs-lookup"><span data-stu-id="6d53d-109">Site unique ID (GUID)</span></span>
 
-<span data-ttu-id="03233-110">予約済みのサイト識別子 `root` もあります。これは次に示すように、常にターゲットのルート サイトを参照します。</span><span class="sxs-lookup"><span data-stu-id="03233-110">There is also a reserved site identifier, `root`, which always references the root site for a given target, as follows:</span></span>
+<span data-ttu-id="6d53d-110">予約済みのサイト識別子 `root` もあります。これは次に示すように、常にターゲットのルート サイトを参照します。</span><span class="sxs-lookup"><span data-stu-id="6d53d-110">There is also a reserved site identifier, `root`, which always references the root site for a given target, as follows:</span></span>
 
-* <span data-ttu-id="03233-111">`/sites/root`:テナントのルート サイト。</span><span class="sxs-lookup"><span data-stu-id="03233-111">`/sites/root`: The tenant root site.</span></span>
-* <span data-ttu-id="03233-112">`/groups/{group-id}/sites/root`:グループのチーム サイト。</span><span class="sxs-lookup"><span data-stu-id="03233-112">`/groups/{group-id}/sites/root`: The group's team site.</span></span>
+* <span data-ttu-id="6d53d-111">`/sites/root`:テナントのルート サイト。</span><span class="sxs-lookup"><span data-stu-id="6d53d-111">`/sites/root`: The tenant root site.</span></span>
+* <span data-ttu-id="6d53d-112">`/groups/{group-id}/sites/root`:グループのチーム サイト。</span><span class="sxs-lookup"><span data-stu-id="6d53d-112">`/groups/{group-id}/sites/root`: The group's team site.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="03233-113">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="03233-113">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="6d53d-113">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="6d53d-113">Permissions</span></span>
 
-<span data-ttu-id="03233-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="03233-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="6d53d-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6d53d-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="03233-116">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="03233-116">Permission type</span></span>      | <span data-ttu-id="03233-117">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="03233-117">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="6d53d-116">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="6d53d-116">Permission type</span></span>      | <span data-ttu-id="6d53d-117">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="6d53d-117">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="03233-118">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="03233-118">Delegated (work or school account)</span></span> | <span data-ttu-id="03233-119">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="03233-119">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="03233-120">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="03233-120">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="03233-121">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="03233-121">Not supported.</span></span>    |
-|<span data-ttu-id="03233-122">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="03233-122">Application</span></span> | <span data-ttu-id="03233-123">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="03233-123">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="6d53d-118">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="6d53d-118">Delegated (work or school account)</span></span> | <span data-ttu-id="6d53d-119">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6d53d-119">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="6d53d-120">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="6d53d-120">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6d53d-121">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="6d53d-121">Not supported.</span></span>    |
+|<span data-ttu-id="6d53d-122">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="6d53d-122">Application</span></span> | <span data-ttu-id="6d53d-123">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6d53d-123">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="get-the-tenants-root-site"></a><span data-ttu-id="03233-124">テナントのルート サイトを取得する</span><span class="sxs-lookup"><span data-stu-id="03233-124">Get the tenant's root site</span></span>
+## <a name="get-the-tenants-root-site"></a><span data-ttu-id="6d53d-124">テナントのルート サイトを取得する</span><span class="sxs-lookup"><span data-stu-id="6d53d-124">Get the tenant's root site</span></span>
 
-<span data-ttu-id="03233-125">テナント内のルートの SharePoint サイトにアクセスするには次のようにします。</span><span class="sxs-lookup"><span data-stu-id="03233-125">To access the root SharePoint site within a tenant:</span></span>
+<span data-ttu-id="6d53d-125">テナント内のルートの SharePoint サイトにアクセスするには次のようにします。</span><span class="sxs-lookup"><span data-stu-id="6d53d-125">To access the root SharePoint site within a tenant:</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -53,25 +53,25 @@ GET /sites/root
 GET /sites/contoso.sharepoint.com
 ```
 
-## <a name="access-a-site-by-server-relative-url"></a><span data-ttu-id="03233-126">サーバーの相対 URL でサイトにアクセスする</span><span class="sxs-lookup"><span data-stu-id="03233-126">Access a site by server-relative URL</span></span>
+## <a name="access-a-site-by-server-relative-url"></a><span data-ttu-id="6d53d-126">サーバーの相対 URL でサイトにアクセスする</span><span class="sxs-lookup"><span data-stu-id="6d53d-126">Access a site by server-relative URL</span></span>
 
-<span data-ttu-id="03233-127">**サイト** リソースのサーバーの相対 URL がある場合、次のように要求を構築することができます。</span><span class="sxs-lookup"><span data-stu-id="03233-127">If you have the server-relative URL for a **site** resource, you can construct a request as follows:</span></span>
+<span data-ttu-id="6d53d-127">**サイト** リソースのサーバーの相対 URL がある場合、次のように要求を構築することができます。</span><span class="sxs-lookup"><span data-stu-id="6d53d-127">If you have the server-relative URL for a **site** resource, you can construct a request as follows:</span></span>
 
 ```http
 GET /sites/{hostname}:/{server-relative-path}
 ```
 
-## <a name="access-a-group-team-site"></a><span data-ttu-id="03233-128">グループのチーム サイトにアクセスする</span><span class="sxs-lookup"><span data-stu-id="03233-128">Access a group team site</span></span>
+## <a name="access-a-group-team-site"></a><span data-ttu-id="6d53d-128">グループのチーム サイトにアクセスする</span><span class="sxs-lookup"><span data-stu-id="6d53d-128">Access a group team site</span></span>
 
-<span data-ttu-id="03233-129">グループのチーム サイトにアクセスするには次のようにします。</span><span class="sxs-lookup"><span data-stu-id="03233-129">To access the team site for a group:</span></span>
+<span data-ttu-id="6d53d-129">グループのチーム サイトにアクセスするには次のようにします。</span><span class="sxs-lookup"><span data-stu-id="6d53d-129">To access the team site for a group:</span></span>
 
 ```http
 GET /groups/{group-id}/sites/root
 ```
 
-## <a name="example"></a><span data-ttu-id="03233-130">例</span><span class="sxs-lookup"><span data-stu-id="03233-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="6d53d-130">例</span><span class="sxs-lookup"><span data-stu-id="6d53d-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="03233-131">要求</span><span class="sxs-lookup"><span data-stu-id="03233-131">Request</span></span>
+### <a name="request"></a><span data-ttu-id="6d53d-131">要求</span><span class="sxs-lookup"><span data-stu-id="6d53d-131">Request</span></span>
 
 <!-- { "blockType": "request", "name": "get-site" } -->
 
@@ -79,7 +79,7 @@ GET /groups/{group-id}/sites/root
 GET /sites/{site-id}
 ```
 
-### <a name="response"></a><span data-ttu-id="03233-132">応答</span><span class="sxs-lookup"><span data-stu-id="03233-132">Response</span></span>
+### <a name="response"></a><span data-ttu-id="6d53d-132">応答</span><span class="sxs-lookup"><span data-stu-id="6d53d-132">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "truncated": true } -->
 
@@ -102,6 +102,16 @@ Content-type: application/json
   "webUrl": "https://contoso.sharepoint.com/teams/1drvteam"
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="6d53d-133">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="6d53d-133">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="6d53d-134">C#</span><span class="sxs-lookup"><span data-stu-id="6d53d-134">c</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-site-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="6d53d-135">Javascript</span><span class="sxs-lookup"><span data-stu-id="6d53d-135">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-site-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!--
 {
@@ -111,7 +121,8 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "Sites/Get by ID",
   "suppressions": [
-    "Error: /api-reference/beta/api/site-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/api/site-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/site-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

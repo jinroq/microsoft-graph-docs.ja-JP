@@ -20,8 +20,8 @@ abstract:
       height: 110
       src: ./images/index/whatsnew-video.png
       width: 250
-    title: 'Microsoft Graph の新機能 (12:39)'
-    href: 'https://www.youtube.com/watch?v=3X10r2VVLCg'
+    title: 'Microsoft Graph の概要 (4:46)'
+    href: 'https://youtu.be/PI9NO5rayiY'
     width: 250
 sections:
   - items:
@@ -60,6 +60,41 @@ sections:
             image:
               src: ./images/index/i_api.svg
             title: Microsoft Graph REST API ベータ版
+  - title: ドキュメントの新機能
+    items:
+      - type: list
+        style: unordered
+        items:
+          - html: <a href="/graph/data-connect-concept-overview">Microsoft Graph データ接続</a>
+          - html: <a href="/graph/outlook-get-free-busy-schedule">空き時間のスケジュールを取得する</a>
+          - html: <a href="/graph/api/resources/azure-ad-auditlog-overview?view=graph-rest-beta&viewFallbackFrom=graph-rest-1.0">監査とサインイン ログ</a>
+          - html: <a href="/graph/api/resources/identityprovider?view=graph-rest-1.0">ID プロバイダー</a>
+          - html: <a href="/graph/auth">改善された認証ガイド</a>
+          - html: <a href="/graph/migrate-azure-ad-graph-overview">Azure AD Graph から Microsoft Graph へのアプリの移行</a>
+          - html: <a href="/graph/api/resources/securescore?view=graph-rest-1.0">テナントのセキュア スコア</a>
+          - html: <a href="/graph/sdks/sdks-overview?view=graph-rest-1.0">SDK ガイド</a>
+          - html: 'API スニペット (<a href="/graph/api/user-get?view=graph-rest-1.0&tabs=cs#sdk-sample-code">例</a>)'
+      - type: paragraph
+        text: <b>ベータ版のみ</b>
+      - type: list
+        style: unordered
+        items:
+          - html: <a href="/graph/dynamics-business-central-concept-overview">Dynamics 365 Business Central</a>
+          - html: ドキュメントの<a href="/graph/api/driveitem-follow?view=graph-rest-beta">フォロー</a>と<a href="/graph/api/driveitem-unfollow?view=graph-rest-beta">フォロー解除</a>
+          - html: '有効期限とパスワードを含む<a href="/graph/api/driveitem-invite?view=graph-rest-beta#request-body">共有の招待</a>'
+          - html: <a href="/graph/api/resources/accessreviews-root?view=graph-rest-beta">アクセス レビュー</a>によるアプリケーションのアクセス許可
+          - html: <a href="/graph/api/resources/applicationsigninsummary?view=graph-rest-beta">アプリケーションのサインイン レポート</a>
+          - html: <a href="/graph/api/resources/trustframeworkpolicy?view=graph-rest-beta">Azure AD B2C へのカスタム サインインとサインアップ</a>
+          - html: <a href="/graph/api/resources/riskyuser?view=graph-rest-beta">リスクの高いユーザー</a>と<a href="/graph/api/resources/riskyuserhistoryitem?view=graph-rest-beta">履歴</a>
+          - html: <a href="/graph/outlook-get-mime-message">メッセージの MIME コンテンツを取得する</a>
+          - html: '<a href="/graph/api/attachment-get?view=graph-rest-beta#get-the-raw-contents-of-a-file-or-item-attachment">添付の生/ MIME コンテンツを取得する</a>'
+          - html: <a href="/graph/webhooks-outlook-authz">見逃した変更通知を減らす</a>
+          - html: <a href="graph/api/resources/tiindicator?view=graph-rest-beta">脅威インジケーター</a>
+          - html: <a href="/graph/api/resources/securityaction?view=graph-rest-beta">セキュリティ アクション</a>
+          - html: <a href="/graph/api/resources/shift?view=graph-rest-beta">シフトの管理</a>
+          - html: '<a href="/graph/api/resources/chat?view=graph-rest-beta">1:1 のチャット</a>'
+      - type: paragraph
+        text: 詳細については、<a href="/graph/changelog">変更ログ</a> を参照してください。
   - title: サポートされるプラットフォーム
     items:
       - type: paragraph
