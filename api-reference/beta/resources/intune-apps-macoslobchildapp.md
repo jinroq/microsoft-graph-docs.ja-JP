@@ -1,36 +1,36 @@
 ---
-title: macoslobchildapp リソースの種類
+title: macOSLobChildApp リソースの種類
 description: バンドルパッケージ内の MacOS LOB アプリのプロパティが含まれています。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 54bd15c4549495ff891d7283c6851e7058ffb887
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7c4ee0802b6e6029d6c49672736e77a89f5346a0
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32553037"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950285"
 ---
-# <a name="macoslobchildapp-resource-type"></a><span data-ttu-id="c97cf-103">macoslobchildapp リソースの種類</span><span class="sxs-lookup"><span data-stu-id="c97cf-103">macOSLobChildApp resource type</span></span>
+# <a name="macoslobchildapp-resource-type"></a><span data-ttu-id="3f829-103">macOSLobChildApp リソースの種類</span><span class="sxs-lookup"><span data-stu-id="3f829-103">macOSLobChildApp resource type</span></span>
 
-> <span data-ttu-id="c97cf-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c97cf-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="3f829-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="3f829-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="c97cf-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="c97cf-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="3f829-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="3f829-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="c97cf-106">バンドルパッケージ内の MacOS LOB アプリのプロパティが含まれています。</span><span class="sxs-lookup"><span data-stu-id="c97cf-106">Contains properties the MacOS LOB App in a bundle package</span></span>
+<span data-ttu-id="3f829-106">バンドルパッケージ内の MacOS LOB アプリのプロパティが含まれています。</span><span class="sxs-lookup"><span data-stu-id="3f829-106">Contains properties the MacOS LOB App in a bundle package</span></span>
 
-## <a name="properties"></a><span data-ttu-id="c97cf-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="c97cf-107">Properties</span></span>
-|<span data-ttu-id="c97cf-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="c97cf-108">Property</span></span>|<span data-ttu-id="c97cf-109">型</span><span class="sxs-lookup"><span data-stu-id="c97cf-109">Type</span></span>|<span data-ttu-id="c97cf-110">説明</span><span class="sxs-lookup"><span data-stu-id="c97cf-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="3f829-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="3f829-107">Properties</span></span>
+|<span data-ttu-id="3f829-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="3f829-108">Property</span></span>|<span data-ttu-id="3f829-109">型</span><span class="sxs-lookup"><span data-stu-id="3f829-109">Type</span></span>|<span data-ttu-id="3f829-110">説明</span><span class="sxs-lookup"><span data-stu-id="3f829-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="c97cf-111">bundleId</span><span class="sxs-lookup"><span data-stu-id="c97cf-111">bundleId</span></span>|<span data-ttu-id="c97cf-112">String</span><span class="sxs-lookup"><span data-stu-id="c97cf-112">String</span></span>|<span data-ttu-id="c97cf-113">ID 名。</span><span class="sxs-lookup"><span data-stu-id="c97cf-113">The Identity Name.</span></span>|
-|<span data-ttu-id="c97cf-114">buildNumber</span><span class="sxs-lookup"><span data-stu-id="c97cf-114">buildNumber</span></span>|<span data-ttu-id="c97cf-115">String</span><span class="sxs-lookup"><span data-stu-id="c97cf-115">String</span></span>|<span data-ttu-id="c97cf-116">MacOS 基幹業務 (LoB) アプリのビルド番号。</span><span class="sxs-lookup"><span data-stu-id="c97cf-116">The build number of MacOS Line of Business (LoB) app.</span></span>|
-|<span data-ttu-id="c97cf-117">VersionNumber</span><span class="sxs-lookup"><span data-stu-id="c97cf-117">versionNumber</span></span>|<span data-ttu-id="c97cf-118">String</span><span class="sxs-lookup"><span data-stu-id="c97cf-118">String</span></span>|<span data-ttu-id="c97cf-119">MacOS 基幹業務 (LoB) アプリのバージョン番号。</span><span class="sxs-lookup"><span data-stu-id="c97cf-119">The version number of MacOS Line of Business (LoB) app.</span></span>|
+|<span data-ttu-id="3f829-111">bundleId</span><span class="sxs-lookup"><span data-stu-id="3f829-111">bundleId</span></span>|<span data-ttu-id="3f829-112">String</span><span class="sxs-lookup"><span data-stu-id="3f829-112">String</span></span>|<span data-ttu-id="3f829-113">ID 名。</span><span class="sxs-lookup"><span data-stu-id="3f829-113">The Identity Name.</span></span>|
+|<span data-ttu-id="3f829-114">buildNumber</span><span class="sxs-lookup"><span data-stu-id="3f829-114">buildNumber</span></span>|<span data-ttu-id="3f829-115">String</span><span class="sxs-lookup"><span data-stu-id="3f829-115">String</span></span>|<span data-ttu-id="3f829-116">MacOS 基幹業務 (LoB) アプリのビルド番号。</span><span class="sxs-lookup"><span data-stu-id="3f829-116">The build number of MacOS Line of Business (LoB) app.</span></span>|
+|<span data-ttu-id="3f829-117">VersionNumber</span><span class="sxs-lookup"><span data-stu-id="3f829-117">versionNumber</span></span>|<span data-ttu-id="3f829-118">String</span><span class="sxs-lookup"><span data-stu-id="3f829-118">String</span></span>|<span data-ttu-id="3f829-119">MacOS 基幹業務 (LoB) アプリのバージョン番号。</span><span class="sxs-lookup"><span data-stu-id="3f829-119">The version number of MacOS Line of Business (LoB) app.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="c97cf-120">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="c97cf-120">Relationships</span></span>
-<span data-ttu-id="c97cf-121">なし</span><span class="sxs-lookup"><span data-stu-id="c97cf-121">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="3f829-120">関係</span><span class="sxs-lookup"><span data-stu-id="3f829-120">Relationships</span></span>
+<span data-ttu-id="3f829-121">なし</span><span class="sxs-lookup"><span data-stu-id="3f829-121">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="c97cf-122">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="c97cf-122">JSON Representation</span></span>
-<span data-ttu-id="c97cf-123">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="c97cf-123">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="3f829-122">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="3f829-122">JSON Representation</span></span>
+<span data-ttu-id="3f829-123">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="3f829-123">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.macOSLobChildApp"
@@ -44,7 +44,6 @@ ms.locfileid: "32553037"
   "versionNumber": "String"
 }
 ```
-
 
 
 

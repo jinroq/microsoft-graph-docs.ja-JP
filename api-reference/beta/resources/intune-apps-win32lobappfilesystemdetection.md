@@ -1,42 +1,42 @@
 ---
 title: win32LobAppFileSystemDetection リソースの種類
 description: Win32 アプリを検出するためのファイルまたはフォルダーのパスが保存されています。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e899a9caa5e4f21292ec56c5595bc77d3b68bcc2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4c7ba5c05647f25eb6248a7611617e630611025a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550764"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949641"
 ---
-# <a name="win32lobappfilesystemdetection-resource-type"></a><span data-ttu-id="43d21-103">win32LobAppFileSystemDetection リソースの種類</span><span class="sxs-lookup"><span data-stu-id="43d21-103">win32LobAppFileSystemDetection resource type</span></span>
+# <a name="win32lobappfilesystemdetection-resource-type"></a><span data-ttu-id="9c3c0-103">win32LobAppFileSystemDetection リソースの種類</span><span class="sxs-lookup"><span data-stu-id="9c3c0-103">win32LobAppFileSystemDetection resource type</span></span>
 
-> <span data-ttu-id="43d21-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="43d21-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="9c3c0-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="9c3c0-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="43d21-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="43d21-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="9c3c0-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="9c3c0-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="43d21-106">Win32 アプリを検出するためのファイルまたはフォルダーのパスが保存されています。</span><span class="sxs-lookup"><span data-stu-id="43d21-106">Contains file or folder path to detect a Win32 App</span></span>
+<span data-ttu-id="9c3c0-106">Win32 アプリを検出するためのファイルまたはフォルダーのパスが保存されています。</span><span class="sxs-lookup"><span data-stu-id="9c3c0-106">Contains file or folder path to detect a Win32 App</span></span>
 
 
-<span data-ttu-id="43d21-107">[win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)から継承します。</span><span class="sxs-lookup"><span data-stu-id="43d21-107">Inherits from [win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)</span></span>
+<span data-ttu-id="9c3c0-107">[Win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)から継承します。</span><span class="sxs-lookup"><span data-stu-id="9c3c0-107">Inherits from [win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="43d21-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="43d21-108">Properties</span></span>
-|<span data-ttu-id="43d21-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="43d21-109">Property</span></span>|<span data-ttu-id="43d21-110">型</span><span class="sxs-lookup"><span data-stu-id="43d21-110">Type</span></span>|<span data-ttu-id="43d21-111">説明</span><span class="sxs-lookup"><span data-stu-id="43d21-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="9c3c0-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="9c3c0-108">Properties</span></span>
+|<span data-ttu-id="9c3c0-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="9c3c0-109">Property</span></span>|<span data-ttu-id="9c3c0-110">型</span><span class="sxs-lookup"><span data-stu-id="9c3c0-110">Type</span></span>|<span data-ttu-id="9c3c0-111">説明</span><span class="sxs-lookup"><span data-stu-id="9c3c0-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="43d21-112">path</span><span class="sxs-lookup"><span data-stu-id="43d21-112">path</span></span>|<span data-ttu-id="43d21-113">String</span><span class="sxs-lookup"><span data-stu-id="43d21-113">String</span></span>|<span data-ttu-id="43d21-114">Win32 基幹業務 (LoB) アプリを検出するためのファイルまたはフォルダーのパス</span><span class="sxs-lookup"><span data-stu-id="43d21-114">The file or folder path to detect Win32 Line of Business (LoB) app</span></span>|
-|<span data-ttu-id="43d21-115">fileorfoldername</span><span class="sxs-lookup"><span data-stu-id="43d21-115">fileOrFolderName</span></span>|<span data-ttu-id="43d21-116">String</span><span class="sxs-lookup"><span data-stu-id="43d21-116">String</span></span>|<span data-ttu-id="43d21-117">Win32 基幹業務 (LoB) アプリを検出するためのファイルまたはフォルダーの名前</span><span class="sxs-lookup"><span data-stu-id="43d21-117">The file or folder name to detect Win32 Line of Business (LoB) app</span></span>|
-|<span data-ttu-id="43d21-118">check32BitOn64System</span><span class="sxs-lookup"><span data-stu-id="43d21-118">check32BitOn64System</span></span>|<span data-ttu-id="43d21-119">ブール値</span><span class="sxs-lookup"><span data-stu-id="43d21-119">Boolean</span></span>|<span data-ttu-id="43d21-120">このファイルまたはフォルダーが、64ビットのシステム上の32ビット版アプリをチェックするためのものであるかどうかを示す値。</span><span class="sxs-lookup"><span data-stu-id="43d21-120">A value indicating whether this file or folder is for checking 32-bit app on 64-bit system</span></span>|
-|<span data-ttu-id="43d21-121">detectionType</span><span class="sxs-lookup"><span data-stu-id="43d21-121">detectionType</span></span>|[<span data-ttu-id="43d21-122">win32LobAppFileSystemDetectionType</span><span class="sxs-lookup"><span data-stu-id="43d21-122">win32LobAppFileSystemDetectionType</span></span>](../resources/intune-apps-win32lobappfilesystemdetectiontype.md)|<span data-ttu-id="43d21-123">ファイルシステムの検出の種類。</span><span class="sxs-lookup"><span data-stu-id="43d21-123">The file system detection type.</span></span> <span data-ttu-id="43d21-124">可能な値は、`notConfigured`、`exists`、`modifiedDate`、`createdDate`、`version`、`sizeInMB`、`doesNotExist` です。</span><span class="sxs-lookup"><span data-stu-id="43d21-124">Possible values are: `notConfigured`, `exists`, `modifiedDate`, `createdDate`, `version`, `sizeInMB`, `doesNotExist`.</span></span>|
-|<span data-ttu-id="43d21-125">operator</span><span class="sxs-lookup"><span data-stu-id="43d21-125">operator</span></span>|[<span data-ttu-id="43d21-126">win32LobAppDetectionOperator</span><span class="sxs-lookup"><span data-stu-id="43d21-126">win32LobAppDetectionOperator</span></span>](../resources/intune-apps-win32lobappdetectionoperator.md)|<span data-ttu-id="43d21-127">ファイルまたはフォルダーの検出のための演算子。</span><span class="sxs-lookup"><span data-stu-id="43d21-127">The operator for file or folder detection.</span></span> <span data-ttu-id="43d21-128">可能な値は、`notConfigured`、`equal`、`notEqual`、`greaterThan`、`greaterThanOrEqual`、`lessThan`、`lessThanOrEqual` です。</span><span class="sxs-lookup"><span data-stu-id="43d21-128">Possible values are: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.</span></span>|
-|<span data-ttu-id="43d21-129">detectionValue</span><span class="sxs-lookup"><span data-stu-id="43d21-129">detectionValue</span></span>|<span data-ttu-id="43d21-130">String</span><span class="sxs-lookup"><span data-stu-id="43d21-130">String</span></span>|<span data-ttu-id="43d21-131">ファイルまたはフォルダーの検出値</span><span class="sxs-lookup"><span data-stu-id="43d21-131">The file or folder detection value</span></span>|
+|<span data-ttu-id="9c3c0-112">path</span><span class="sxs-lookup"><span data-stu-id="9c3c0-112">path</span></span>|<span data-ttu-id="9c3c0-113">String</span><span class="sxs-lookup"><span data-stu-id="9c3c0-113">String</span></span>|<span data-ttu-id="9c3c0-114">Win32 基幹業務 (LoB) アプリを検出するためのファイルまたはフォルダーのパス</span><span class="sxs-lookup"><span data-stu-id="9c3c0-114">The file or folder path to detect Win32 Line of Business (LoB) app</span></span>|
+|<span data-ttu-id="9c3c0-115">fileOrFolderName</span><span class="sxs-lookup"><span data-stu-id="9c3c0-115">fileOrFolderName</span></span>|<span data-ttu-id="9c3c0-116">String</span><span class="sxs-lookup"><span data-stu-id="9c3c0-116">String</span></span>|<span data-ttu-id="9c3c0-117">Win32 基幹業務 (LoB) アプリを検出するためのファイルまたはフォルダーの名前</span><span class="sxs-lookup"><span data-stu-id="9c3c0-117">The file or folder name to detect Win32 Line of Business (LoB) app</span></span>|
+|<span data-ttu-id="9c3c0-118">check32BitOn64System</span><span class="sxs-lookup"><span data-stu-id="9c3c0-118">check32BitOn64System</span></span>|<span data-ttu-id="9c3c0-119">Boolean</span><span class="sxs-lookup"><span data-stu-id="9c3c0-119">Boolean</span></span>|<span data-ttu-id="9c3c0-120">このファイルまたはフォルダーが、64ビットのシステム上の32ビット版アプリをチェックするためのものであるかどうかを示す値。</span><span class="sxs-lookup"><span data-stu-id="9c3c0-120">A value indicating whether this file or folder is for checking 32-bit app on 64-bit system</span></span>|
+|<span data-ttu-id="9c3c0-121">detectionType</span><span class="sxs-lookup"><span data-stu-id="9c3c0-121">detectionType</span></span>|[<span data-ttu-id="9c3c0-122">win32LobAppFileSystemDetectionType</span><span class="sxs-lookup"><span data-stu-id="9c3c0-122">win32LobAppFileSystemDetectionType</span></span>](../resources/intune-apps-win32lobappfilesystemdetectiontype.md)|<span data-ttu-id="9c3c0-123">ファイルシステムの検出の種類。</span><span class="sxs-lookup"><span data-stu-id="9c3c0-123">The file system detection type.</span></span> <span data-ttu-id="9c3c0-124">可能な値は、`notConfigured`、`exists`、`modifiedDate`、`createdDate`、`version`、`sizeInMB`、`doesNotExist` です。</span><span class="sxs-lookup"><span data-stu-id="9c3c0-124">Possible values are: `notConfigured`, `exists`, `modifiedDate`, `createdDate`, `version`, `sizeInMB`, `doesNotExist`.</span></span>|
+|<span data-ttu-id="9c3c0-125">operator</span><span class="sxs-lookup"><span data-stu-id="9c3c0-125">operator</span></span>|[<span data-ttu-id="9c3c0-126">win32LobAppDetectionOperator</span><span class="sxs-lookup"><span data-stu-id="9c3c0-126">win32LobAppDetectionOperator</span></span>](../resources/intune-apps-win32lobappdetectionoperator.md)|<span data-ttu-id="9c3c0-127">ファイルまたはフォルダーの検出のための演算子。</span><span class="sxs-lookup"><span data-stu-id="9c3c0-127">The operator for file or folder detection.</span></span> <span data-ttu-id="9c3c0-128">可能な値は、`notConfigured`、`equal`、`notEqual`、`greaterThan`、`greaterThanOrEqual`、`lessThan`、`lessThanOrEqual` です。</span><span class="sxs-lookup"><span data-stu-id="9c3c0-128">Possible values are: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.</span></span>|
+|<span data-ttu-id="9c3c0-129">detectionValue</span><span class="sxs-lookup"><span data-stu-id="9c3c0-129">detectionValue</span></span>|<span data-ttu-id="9c3c0-130">String</span><span class="sxs-lookup"><span data-stu-id="9c3c0-130">String</span></span>|<span data-ttu-id="9c3c0-131">ファイルまたはフォルダーの検出値</span><span class="sxs-lookup"><span data-stu-id="9c3c0-131">The file or folder detection value</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="43d21-132">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="43d21-132">Relationships</span></span>
-<span data-ttu-id="43d21-133">なし</span><span class="sxs-lookup"><span data-stu-id="43d21-133">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="9c3c0-132">関係</span><span class="sxs-lookup"><span data-stu-id="9c3c0-132">Relationships</span></span>
+<span data-ttu-id="9c3c0-133">なし</span><span class="sxs-lookup"><span data-stu-id="9c3c0-133">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="43d21-134">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="43d21-134">JSON Representation</span></span>
-<span data-ttu-id="43d21-135">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="43d21-135">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="9c3c0-134">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="9c3c0-134">JSON Representation</span></span>
+<span data-ttu-id="9c3c0-135">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="9c3c0-135">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.win32LobAppFileSystemDetection"
@@ -53,7 +53,6 @@ ms.locfileid: "32550764"
   "detectionValue": "String"
 }
 ```
-
 
 
 
