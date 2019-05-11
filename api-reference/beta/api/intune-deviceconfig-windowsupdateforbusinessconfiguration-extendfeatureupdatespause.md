@@ -1,34 +1,34 @@
 ---
 title: extendFeatureUpdatesPause アクション
 description: 機能の更新プログラムが、ビジネスリングの Windows Update によって一時停止するまで停止します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 99026500c43824343b9cb7e5fe9501dcba1189c1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: aef0e53d4b9a68a54f967a7f5cdce5dd18282dea
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32511663"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33917409"
 ---
-# <a name="extendfeatureupdatespause-action"></a><span data-ttu-id="dc638-103">extendFeatureUpdatesPause アクション</span><span class="sxs-lookup"><span data-stu-id="dc638-103">extendFeatureUpdatesPause action</span></span>
+# <a name="extendfeatureupdatespause-action"></a><span data-ttu-id="0560e-103">extendFeatureUpdatesPause アクション</span><span class="sxs-lookup"><span data-stu-id="0560e-103">extendFeatureUpdatesPause action</span></span>
 
-> <span data-ttu-id="dc638-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="dc638-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="0560e-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="0560e-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="dc638-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="dc638-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="0560e-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="0560e-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="dc638-106">機能の更新プログラムが、ビジネスリングの Windows Update によって一時停止するまで停止します。</span><span class="sxs-lookup"><span data-stu-id="dc638-106">Extend Feature Updates Pause for a Windows Update for Business ring.</span></span>
+<span data-ttu-id="0560e-106">機能の更新プログラムが、ビジネスリングの Windows Update によって一時停止するまで停止します。</span><span class="sxs-lookup"><span data-stu-id="0560e-106">Extend Feature Updates Pause for a Windows Update for Business ring.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="dc638-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="dc638-107">Prerequisites</span></span>
-<span data-ttu-id="dc638-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="dc638-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="0560e-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="0560e-107">Prerequisites</span></span>
+<span data-ttu-id="0560e-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0560e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="dc638-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="dc638-110">Permission type</span></span>|<span data-ttu-id="dc638-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="dc638-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="0560e-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="0560e-110">Permission type</span></span>|<span data-ttu-id="0560e-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="0560e-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="dc638-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="dc638-112">Delegated (work or school account)</span></span>|<span data-ttu-id="dc638-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dc638-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="dc638-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="dc638-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="dc638-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="dc638-115">Not supported.</span></span>|
-|<span data-ttu-id="dc638-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="dc638-116">Application</span></span>|<span data-ttu-id="dc638-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="dc638-117">Not supported.</span></span>|
+|<span data-ttu-id="0560e-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="0560e-112">Delegated (work or school account)</span></span>|<span data-ttu-id="0560e-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0560e-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="0560e-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="0560e-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="0560e-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="0560e-115">Not supported.</span></span>|
+|<span data-ttu-id="0560e-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="0560e-116">Application</span></span>|<span data-ttu-id="0560e-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="0560e-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="dc638-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="dc638-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0560e-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="0560e-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -39,32 +39,31 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignm
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}/extendFeatureUpdatesPause
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="dc638-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="dc638-119">Request headers</span></span>
-|<span data-ttu-id="dc638-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="dc638-120">Header</span></span>|<span data-ttu-id="dc638-121">値</span><span class="sxs-lookup"><span data-stu-id="dc638-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="0560e-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="0560e-119">Request headers</span></span>
+|<span data-ttu-id="0560e-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="0560e-120">Header</span></span>|<span data-ttu-id="0560e-121">値</span><span class="sxs-lookup"><span data-stu-id="0560e-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="dc638-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="dc638-122">Authorization</span></span>|<span data-ttu-id="dc638-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="dc638-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="dc638-124">承諾</span><span class="sxs-lookup"><span data-stu-id="dc638-124">Accept</span></span>|<span data-ttu-id="dc638-125">application/json</span><span class="sxs-lookup"><span data-stu-id="dc638-125">application/json</span></span>|
+|<span data-ttu-id="0560e-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="0560e-122">Authorization</span></span>|<span data-ttu-id="0560e-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="0560e-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="0560e-124">承諾</span><span class="sxs-lookup"><span data-stu-id="0560e-124">Accept</span></span>|<span data-ttu-id="0560e-125">application/json</span><span class="sxs-lookup"><span data-stu-id="0560e-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="dc638-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="dc638-126">Request body</span></span>
-<span data-ttu-id="dc638-127">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="dc638-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="0560e-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="0560e-126">Request body</span></span>
+<span data-ttu-id="0560e-127">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="0560e-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="dc638-128">応答</span><span class="sxs-lookup"><span data-stu-id="dc638-128">Response</span></span>
-<span data-ttu-id="dc638-129">成功した場合、このアクションは `204 No Content` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="dc638-129">If successful, this action returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="0560e-128">応答</span><span class="sxs-lookup"><span data-stu-id="0560e-128">Response</span></span>
+<span data-ttu-id="0560e-129">成功した場合、このアクションは `204 No Content` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="0560e-129">If successful, this action returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="dc638-130">例</span><span class="sxs-lookup"><span data-stu-id="dc638-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="0560e-130">例</span><span class="sxs-lookup"><span data-stu-id="0560e-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="dc638-131">要求</span><span class="sxs-lookup"><span data-stu-id="dc638-131">Request</span></span>
-<span data-ttu-id="dc638-132">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="dc638-132">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="0560e-131">要求</span><span class="sxs-lookup"><span data-stu-id="0560e-131">Request</span></span>
+<span data-ttu-id="0560e-132">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="0560e-132">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/extendFeatureUpdatesPause
 ```
 
-### <a name="response"></a><span data-ttu-id="dc638-133">応答</span><span class="sxs-lookup"><span data-stu-id="dc638-133">Response</span></span>
-<span data-ttu-id="dc638-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="dc638-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="0560e-133">応答</span><span class="sxs-lookup"><span data-stu-id="0560e-133">Response</span></span>
+<span data-ttu-id="0560e-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="0560e-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 
