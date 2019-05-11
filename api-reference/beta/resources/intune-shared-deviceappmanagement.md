@@ -1,21 +1,21 @@
 ---
 title: deviceAppManagement リソースの種類
 description: すべてのデバイス アプリの管理機能のコンテナーとして機能する単一のエンティティです。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 45164300bbfa9ff3a4de3da144dd66d5dad6e42b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 8b047c470ee60ab99275675626a3917911f2a715
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341331"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33939778"
 ---
 # <a name="deviceappmanagement-resource-type"></a>deviceAppManagement リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 すべてのデバイス アプリの管理機能のコンテナーとして機能する単一のエンティティです。
 
@@ -28,7 +28,7 @@ ms.locfileid: "33341331"
 |[syncMicrosoftStoreForBusinessApps アクション](../api/intune-shared-deviceappmanagement-syncmicrosoftstoreforbusinessapps.md)|なし|ビジネス向け Microsoft Store と Intune アカウントを同期します|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |id|String|エンティティのキー。|
 |**オンボーディング**|
@@ -38,19 +38,19 @@ ms.locfileid: "33341331"
 |microsoftStoreForBusinessLastSuccessfulSyncDateTime|DateTimeOffset|Microsoft Store for Business のアプリがアカウントに正常に同期された最終日時。|
 |microsoftStoreForBusinessPortalSelection|[microsoftStoreForBusinessPortalSelectionOptions](../resources/intune-onboarding-microsoftstoreforbusinessportalselectionoptions.md)|エンドユーザーポータルの情報は、Microsoft Store for Business から Intune ポータルサイトにアプリケーションを同期するために使用されます。 [会社ポータルのみ]、[ \[ポータルサイトとプライベートストア]、[プライベートストアのみ] から選択するには、3\]つのオプションがあります。 可能な値は、`none`、`companyPortal`、`privateStore` です。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |**アプリ**|
 |enterpriseCodeSigningCertificates|[enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md)コレクション|Windows エンタープライズコード署名証明書。|
-|iosLobAppProvisioningConfigurations|[ioslobappプロビジョニング構成](../resources/intune-apps-ioslobappprovisioningconfiguration.md)コレクション|IOS Lob アプリのプロビジョニング構成。|
+|iosLobAppProvisioningConfigurations|[Ioslobappプロビジョニング構成](../resources/intune-apps-ioslobappprovisioningconfiguration.md)コレクション|IOS Lob アプリのプロビジョニング構成。|
 |mobileAppCategories|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) コレクション|モバイル アプリ カテゴリ。|
 |mobileAppConfigurations|[managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) コレクション|管理対象デバイスのモバイル アプリケーション構成。|
 |mobileApps|[mobileApp](../resources/intune-apps-mobileapp.md) コレクション|モバイル アプリ。|
-|symantecCodeSigningCertificate|[symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md)|winphone Symantec コード署名証明書。|
+|symantecCodeSigningCertificate|[symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md)|WinPhone Symantec コード署名証明書。|
 |**予約**|
 |managedEBooks|[managedEBook](../resources/intune-books-managedebook.md) コレクション|管理対象の電子ブック。|
-|managedebookcategorie|[managedebookcategory](../resources/intune-books-managedebookcategory.md)コレクション|モバイル電子ブックのカテゴリ。|
+|Managedebookcategorie|[Managedebookcategory](../resources/intune-books-managedebookcategory.md)コレクション|モバイル電子ブックのカテゴリ。|
 |**デバイスの管理**|
 |windowsManagementApp|[windowsManagementApp](../resources/intune-devices-windowsmanagementapp.md)|Windows management アプリ。|
 |**モバイル アプリの管理 (MAM)**|
@@ -72,14 +72,12 @@ ms.locfileid: "33341331"
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "optionalProperties":[
-    "managedAppRegistrations"
-    ],
-  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.deviceAppManagement"
-}-->
+}
+-->
 ``` json
 {
+  "@odata.type": "#microsoft.graph.deviceAppManagement",
   "id": "String (identifier)",
   "microsoftStoreForBusinessLastSuccessfulSyncDateTime": "String (timestamp)",
   "isEnabledForMicrosoftStoreForBusiness": true,

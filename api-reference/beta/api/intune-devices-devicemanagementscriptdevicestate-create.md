@@ -1,23 +1,23 @@
 ---
-title: devicemanagementscriptdevicestate の作成
-description: 新しい devicemanagementscriptdevicestate オブジェクトを作成します。
-author: tfitzmac
+title: DeviceManagementScriptDeviceState の作成
+description: 新しい deviceManagementScriptDeviceState オブジェクトを作成します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f85627893b65140d5958a17cec842476c5ee4b8e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3f7a4650886e2edd1ac5b995757025d4200b5bd0
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32465742"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33909863"
 ---
-# <a name="create-devicemanagementscriptdevicestate"></a>devicemanagementscriptdevicestate の作成
+# <a name="create-devicemanagementscriptdevicestate"></a>DeviceManagementScriptDeviceState の作成
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-新しい[devicemanagementscriptdevicestate](../resources/intune-devices-devicemanagementscriptdevicestate.md)オブジェクトを作成します。
+新しい[Devicemanagementscriptdevicestate](../resources/intune-devices-devicemanagementscriptdevicestate.md)オブジェクトを作成します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -45,23 +45,23 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRu
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求本文で、devicemanagementscriptdevicestate オブジェクトの JSON 表記を指定します。
+要求本文で、deviceManagementScriptDeviceState オブジェクトの JSON 表記を指定します。
 
-次の表に、devicemanagementscriptdevicestate の作成時に必要なプロパティを示します。
+次の表に、deviceManagementScriptDeviceState の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|デバイス管理スクリプトのデバイス状態エンティティのキー。|
-|runstate|[runstate](../resources/intune-shared-runstate.md)|デバイス管理スクリプトの最新の実行の状態。 使用可能な値は、`unknown`、`success`、`fail` です。|
-|resultmessage|String|実行出力の詳細。|
-|laststateupdatedatetime|DateTimeOffset|デバイス管理スクリプトが最後に実行された時刻。|
+|runState|[runState](../resources/intune-shared-runstate.md)|デバイス管理スクリプトの最新の実行の状態。 可能な値は、`unknown`、`success`、`fail` です。|
+|resultMessage|String|実行出力の詳細。|
+|lastStateUpdateDateTime|DateTimeOffset|デバイス管理スクリプトが最後に実行された時刻。|
 |errorCode|Int32|デバイス管理スクリプトの誤った実行に対応するエラーコード。|
 |errorDescription|String|デバイス管理スクリプトの誤った実行に対応するエラーの説明。|
 
 
 
 ## <a name="response"></a>応答
-成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[devicemanagementscriptdevicestate](../resources/intune-devices-devicemanagementscriptdevicestate.md)オブジェクトを返します。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[Devicemanagementscriptdevicestate](../resources/intune-devices-devicemanagementscriptdevicestate.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 
@@ -99,7 +99,6 @@ Content-Length: 330
   "errorDescription": "Error Description value"
 }
 ```
-
 
 
 

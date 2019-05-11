@@ -1,23 +1,23 @@
 ---
-title: androidDeviceOwnerEnrollmentProfile の更新
-description: androidDeviceOwnerEnrollmentProfile オブジェクトのプロパティを更新します。
-author: tfitzmac
+title: AndroidDeviceOwnerEnrollmentProfile の更新
+description: AndroidDeviceOwnerEnrollmentProfile オブジェクトのプロパティを更新します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1c287eb139a7f7aa2fbb6ae2cc9662ac952ff7e2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 691058b863533703d0d69760659c91305f8c4180
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32500021"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33939148"
 ---
-# <a name="update-androiddeviceownerenrollmentprofile"></a>androidDeviceOwnerEnrollmentProfile の更新
+# <a name="update-androiddeviceownerenrollmentprofile"></a>AndroidDeviceOwnerEnrollmentProfile の更新
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md)オブジェクトのプロパティを更新します。
+[AndroidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -51,13 +51,13 @@ PATCH /deviceManagement/androidDeviceOwnerEnrollmentProfiles/{androidDeviceOwner
 |プロパティ|型|説明|
 |:---|:---|:---|
 |accountId|String|登録プロファイルが属するテナント GUID。|
-|id|String|登録プロファイルの一意の GUID。|
+|id|文字列|登録プロファイルの一意の GUID。|
 |displayName|String|登録プロファイルの表示名。|
-|説明|String|登録プロファイルの説明。|
+|description|String|登録プロファイルの説明。|
 |createdDateTime|DateTimeOffset|登録プロファイルが作成された日時。|
 |lastModifiedDateTime|DateTimeOffset|登録プロファイルが最後に変更された日時。|
 |tokenValue|String|この登録プロファイル用に最後に作成されたトークンの値。|
-|tokenの日付/時刻|DateTimeOffset|最後に作成されたトークンが作成された日時。|
+|Tokenの日付/時刻|DateTimeOffset|最後に作成されたトークンが作成された日時。|
 |tokenExpirationDateTime|DateTimeOffset|最後に作成されたトークンの有効期限が切れる日時。|
 |enrolledDeviceCount|Int32|この登録プロファイルを使用して登録した Android デバイスの合計数。|
 |qrCodeContent|String|トークンの QR コードを生成するために使用する文字列。|
@@ -122,7 +122,6 @@ Content-Length: 737
   }
 }
 ```
-
 
 
 
