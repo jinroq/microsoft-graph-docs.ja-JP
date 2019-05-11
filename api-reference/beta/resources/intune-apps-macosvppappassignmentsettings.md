@@ -1,21 +1,21 @@
 ---
-title: macosvppapp割り当て設定リソースの種類
+title: Macosvppapp割り当て設定リソースの種類
 description: グループへの Mac VPP モバイルアプリの割り当てに使用されるプロパティが含まれています。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b55e203e58197d4b3e29d4a6a8567769d9196e0c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b0c7b76b562a58e832c97cc03fb475a023247ee5
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32553086"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950320"
 ---
-# <a name="macosvppappassignmentsettings-resource-type"></a>macosvppapp割り当て設定リソースの種類
+# <a name="macosvppappassignmentsettings-resource-type"></a>Macosvppapp割り当て設定リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 グループへの Mac VPP モバイルアプリの割り当てに使用されるプロパティが含まれています。
 
@@ -27,7 +27,7 @@ ms.locfileid: "32553086"
 |:---|:---|:---|
 |useDeviceLicensing|ブール型 (Boolean)|デバイスのライセンスを使用するかどうか。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -43,7 +43,6 @@ ms.locfileid: "32553086"
   "useDeviceLicensing": true
 }
 ```
-
 
 
 

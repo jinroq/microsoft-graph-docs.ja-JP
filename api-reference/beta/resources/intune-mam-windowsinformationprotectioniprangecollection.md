@@ -1,21 +1,21 @@
 ---
 title: windowsInformationProtectionIPRangeCollection リソースの種類
 description: Windows 情報保護の IP 範囲のコレクション
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3a972ddf469723acd91e6b122cfef103ab08e24f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: de20421b16eae22130508584b8483085d49ac9d9
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32522091"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940520"
 ---
 # <a name="windowsinformationprotectioniprangecollection-resource-type"></a>windowsInformationProtectionIPRangeCollection リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 Windows 情報保護の IP 範囲のコレクション
 
@@ -48,7 +48,6 @@ Windows 情報保護の IP 範囲のコレクション
   ]
 }
 ```
-
 
 
 

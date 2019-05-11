@@ -1,21 +1,21 @@
 ---
-title: androidmanagedstoreappconfiguration リソースの種類
+title: androidManagedStoreAppConfiguration リソースの種類
 description: Android エンタープライズモバイルアプリ構成のプロパティ、継承されたプロパティ、アクションが含まれています。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0caae4c2964873ed9f2dc4af98b69dfd1e4bbd3d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fc2e32aa273e7944d409b9649bd92ee2ac755fd6
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32552346"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950495"
 ---
-# <a name="androidmanagedstoreappconfiguration-resource-type"></a>androidmanagedstoreappconfiguration リソースの種類
+# <a name="androidmanagedstoreappconfiguration-resource-type"></a>androidManagedStoreAppConfiguration リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 Android エンタープライズモバイルアプリ構成のプロパティ、継承されたプロパティ、アクションが含まれています。
 
@@ -25,16 +25,16 @@ Android エンタープライズモバイルアプリ構成のプロパティ、
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[androidmanagedstoreappconfigurations のリスト](../api/intune-apps-androidmanagedstoreappconfiguration-list.md)|[androidmanagedstoreappconfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md)コレクション|[androidmanagedstoreappconfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md)オブジェクトのプロパティとリレーションシップをリストします。|
-|[androidmanagedstoreappconfiguration の取得](../api/intune-apps-androidmanagedstoreappconfiguration-get.md)|[androidmanagedstoreappconfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md)|[androidmanagedstoreappconfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[androidmanagedstoreappconfiguration の作成](../api/intune-apps-androidmanagedstoreappconfiguration-create.md)|[androidmanagedstoreappconfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md)|新しい[androidmanagedstoreappconfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md)オブジェクトを作成します。|
-|[androidmanagedstoreappconfiguration の削除](../api/intune-apps-androidmanagedstoreappconfiguration-delete.md)|なし|[androidmanagedstoreappconfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md)を削除します。|
-|[androidmanagedstoreappconfiguration の更新](../api/intune-apps-androidmanagedstoreappconfiguration-update.md)|[androidmanagedstoreappconfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md)|[androidmanagedstoreappconfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md)オブジェクトのプロパティを更新します。|
+|[AndroidManagedStoreAppConfigurations のリスト](../api/intune-apps-androidmanagedstoreappconfiguration-list.md)|[Androidmanagedstoreappconfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md)コレクション|[Androidmanagedstoreappconfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md)オブジェクトのプロパティとリレーションシップをリストします。|
+|[AndroidManagedStoreAppConfiguration の取得](../api/intune-apps-androidmanagedstoreappconfiguration-get.md)|[androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md)|[Androidmanagedstoreappconfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[AndroidManagedStoreAppConfiguration の作成](../api/intune-apps-androidmanagedstoreappconfiguration-create.md)|[androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md)|新しい[Androidmanagedstoreappconfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md)オブジェクトを作成します。|
+|[AndroidManagedStoreAppConfiguration の削除](../api/intune-apps-androidmanagedstoreappconfiguration-delete.md)|None|[Androidmanagedstoreappconfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md)を削除します。|
+|[AndroidManagedStoreAppConfiguration の更新](../api/intune-apps-androidmanagedstoreappconfiguration-update.md)|[androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md)|[Androidmanagedstoreappconfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|文字列型 (String)|エンティティのキー。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
+|id|文字列|エンティティのキー。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
 |targetedMobileApps|String コレクション|関連するアプリです。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
 |roleScopeTagIds|String collection|このアプリ構成エンティティのスコープタグのリスト。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
@@ -44,10 +44,10 @@ Android エンタープライズモバイルアプリ構成のプロパティ、
 |version|Int32|デバイス構成のバージョン。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
 |packageId|String|Android エンタープライズアプリ構成パッケージ id。|
 |payloadJson|String|Android エンタープライズアプリ構成 JSON ペイロード。|
-|permissionactions|[androidpermissionaction](../resources/intune-apps-androidpermissionaction.md)コレクション|Android アプリのアクセス許可と、それに対応するアクセス許可アクションのリスト。|
-|appsupportsoemconfig|ブール値|この AppConfig が oemconfig ポリシーであるかどうか。|
+|permissionActions|[Androidpermissionaction](../resources/intune-apps-androidpermissionaction.md)コレクション|Android アプリのアクセス許可と、それに対応するアクセス許可アクションのリスト。|
+|appSupportsOemConfig|Boolean|この AppConfig が OEMConfig ポリシーであるかどうか。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |assignments|[managedDeviceMobileAppConfigurationAssignment](../resources/intune-apps-manageddevicemobileappconfigurationassignment.md) コレクション|アプリ構成のグループ割り当てのリストです。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
@@ -91,7 +91,6 @@ Android エンタープライズモバイルアプリ構成のプロパティ、
   "appSupportsOemConfig": true
 }
 ```
-
 
 
 

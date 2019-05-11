@@ -1,23 +1,23 @@
 ---
-title: windowsWifiConfiguration の更新
-description: windowsWifiConfiguration オブジェクトのプロパティを更新します。
-author: tfitzmac
+title: WindowsWifiConfiguration の更新
+description: WindowsWifiConfiguration オブジェクトのプロパティを更新します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 07573055554ac68aea1caa14a774c92bb2ef713f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7e2e1a9722f863e28b8933a79ee26cfe7c5d859c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32510851"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33917177"
 ---
-# <a name="update-windowswificonfiguration"></a>windowsWifiConfiguration の更新
+# <a name="update-windowswificonfiguration"></a>WindowsWifiConfiguration の更新
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)オブジェクトのプロパティを更新します。
+[WindowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -52,27 +52,27 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列型 (String)|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|id|文字列|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |supportsScopeTags|Boolean|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|説明|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|description|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|管理者が指定した、デバイス構成の名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|preSharedKey|String|これは、WPA 個人用 wi-fi ネットワークの事前共有キーです。|
-|wifiSecurityType|[wiFiSecurityType](../resources/intune-deviceconfig-wifisecuritytype.md)|Wifi セキュリティの種類を指定します。 可能な値は `open`、`wpaPersonal`、`wpaEnterprise`、`wep`、`wpa2Personal`、`wpa2Enterprise` です。|
-|meteredconnectionlimit|[meteredConnectionLimitType](../resources/intune-deviceconfig-meteredconnectionlimittype.md)|wifi 接続の従量制課金接続制限の種類を指定します。 使用可能な値は、`unrestricted`、`fixed`、`variable` です。|
-|ssid|String|wifi 接続の SSID を指定します。|
-|networkname|String|ネットワーク構成名を指定します。|
-|connectautomatically に|Boolean|範囲内で wifi 接続を自動的に接続するかどうかを指定します。|
-|connecttopreferrednetwork|Boolean|この接続に既に接続されている場合に、wifi 接続がより優先度の高いネットワークに接続するかどうかを指定します。  connectautomatically 自動的に true になる必要があります。|
+|preSharedKey|String|これは、WPA 個人用 Wi-fi ネットワークの事前共有キーです。|
+|wifiSecurityType|[wiFiSecurityType](../resources/intune-deviceconfig-wifisecuritytype.md)|Wifi セキュリティの種類を指定します。 使用可能な値: `open`、`wpaPersonal`、`wpaEnterprise`、`wep`、`wpa2Personal`、`wpa2Enterprise`。|
+|meteredConnectionLimit|[meteredConnectionLimitType](../resources/intune-deviceconfig-meteredconnectionlimittype.md)|Wifi 接続の従量制課金接続制限の種類を指定します。 可能な値は、`unrestricted`、`fixed`、`variable` です。|
+|ssid|String|Wifi 接続の SSID を指定します。|
+|networkName|String|ネットワーク構成名を指定します。|
+|connectAutomatically に|Boolean|範囲内で wifi 接続を自動的に接続するかどうかを指定します。|
+|connectToPreferredNetwork|Boolean|この接続に既に接続されている場合に、wifi 接続がより優先度の高いネットワークに接続するかどうかを指定します。  ConnectAutomatically 自動的に true になる必要があります。|
 |connectWhenNetworkNameIsHidden|Boolean|SSID がブロードキャストされていない場合でも、wifi 接続が自動的に接続するかどうかを指定します。|
-|proxysetting|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|wi-fi 構成のプロキシ設定を指定します。 使用可能な値は、`none`、`manual`、`automatic` です。|
-|proxymanualaddress|String|プロキシサーバーの IP アドレスを指定します。|
-|proxymanualport|Int32|プロキシサーバーのポートを指定します。|
+|proxySetting|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|Wi-fi 構成のプロキシ設定を指定します。 可能な値は、`none`、`manual`、`automatic` です。|
+|proxyManualAddress|String|プロキシサーバーの IP アドレスを指定します。|
+|proxyManualPort|Int32|プロキシサーバーのポートを指定します。|
 |proxyAutomaticConfigurationUrl|String|プロキシサーバー構成スクリプトの URL を指定します。|
-|forcefipscompliance|Boolean|FIPS 準拠を強制するかどうかを指定します。|
+|forceFIPSCompliance|Boolean|FIPS 準拠を強制するかどうかを指定します。|
 
 
 
@@ -147,7 +147,6 @@ Content-Length: 958
   "forceFIPSCompliance": true
 }
 ```
-
 
 
 
