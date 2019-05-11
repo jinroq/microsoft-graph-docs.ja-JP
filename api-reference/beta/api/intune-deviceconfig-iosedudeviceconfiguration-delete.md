@@ -1,23 +1,23 @@
 ---
-title: iosedudeviceconfiguration の削除
-description: iosedudeviceconfiguration 削除します。
-author: tfitzmac
+title: IosEduDeviceConfiguration の削除
+description: IosEduDeviceConfiguration 削除します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1cb8dd4055e228c90fb854330b33855d376daabb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ffec3c8fa983b0c6f57077be39bcdb4089a741a4
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32467191"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33923574"
 ---
-# <a name="delete-iosedudeviceconfiguration"></a>iosedudeviceconfiguration の削除
+# <a name="delete-iosedudeviceconfiguration"></a>IosEduDeviceConfiguration の削除
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[iosedudeviceconfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md)削除します。
+[Iosedudeviceconfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md)削除します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -64,7 +64,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

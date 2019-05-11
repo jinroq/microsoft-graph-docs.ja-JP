@@ -1,31 +1,30 @@
 ---
-title: deptokentype 列挙型
+title: depTokenType 列挙型
 description: まだ文書化されていません
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c4008d271f33bb68e9cc770c41bddb4129f597bd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 93776e8d74422509723172439c7e03fdeb27efd1
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573852"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941619"
 ---
-# <a name="deptokentype-enum-type"></a>deptokentype 列挙型
+# <a name="deptokentype-enum-type"></a>depTokenType 列挙型
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 まだ文書化されていません
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|なし|.0|トークンの種類が None|
-|dep|1 |トークンの種類は Dep です。|
-|りんご esチョーク olmanager|2 |トークンの種類は Apple School Manager|
-
+|none|.0|トークンの種類が None|
+|dep|1-d|トークンの種類は Dep です。|
+|りんご Esチョーク Olmanager|pbm-2|トークンの種類は Apple School Manager|
 
 
 

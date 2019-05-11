@@ -2,20 +2,20 @@
 title: officeConfigurationAssignmentTarget リソースの種類
 description: Office クライアントの構成の割り当て先。
 localization_priority: Normal
-author: tfitzmac
+author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: e20f9c6e0503d3d2870096ca11f2f634f1610f90
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2cb5c32cc0d489671642cc2193a87a5e758faf8e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526378"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949284"
 ---
 # <a name="officeconfigurationassignmenttarget-resource-type"></a>officeConfigurationAssignmentTarget リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 Office クライアントの構成の割り当て先。
 
@@ -23,7 +23,7 @@ Office クライアントの構成の割り当て先。
 |プロパティ|型|説明|
 |:---|:---|:---|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記

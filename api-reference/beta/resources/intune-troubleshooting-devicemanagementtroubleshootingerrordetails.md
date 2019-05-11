@@ -1,21 +1,21 @@
 ---
-title: devicemanagementトラブルシューティングエラーの詳細リソースの種類
+title: Devicemanagementトラブルシューティングエラーの詳細リソースの種類
 description: エラーとその修復に関する詳細情報を含むオブジェクト。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6cfcbe0688836fa394237f1a25656540e401555f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a50c749e6c6c6ddd59705bbea34f0bbd2488f9a4
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554066"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33939785"
 ---
-# <a name="devicemanagementtroubleshootingerrordetails-resource-type"></a>devicemanagementトラブルシューティングエラーの詳細リソースの種類
+# <a name="devicemanagementtroubleshootingerrordetails-resource-type"></a>Devicemanagementトラブルシューティングエラーの詳細リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 エラーとその修復に関する詳細情報を含むオブジェクト。
 
@@ -24,11 +24,11 @@ ms.locfileid: "32554066"
 |:---|:---|:---|
 |context|String|まだ文書化されていません|
 |エラー|String|まだ文書化されていません|
-|failuredetails|String|問題の詳細な説明。|
+|failureDetails|String|問題の詳細な説明。|
 |修復|String|この問題を修復する方法の詳細な説明。|
-|リソース|[devicemanagementのトラブルシューティング errorresource](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrorresource.md)コレクション|このエラーについての有用なドキュメントへのリンクを示します。|
+|リソース|[Devicemanagementのトラブルシューティング Errorresource](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrorresource.md)コレクション|このエラーについての有用なドキュメントへのリンクを示します。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -54,6 +54,7 @@ ms.locfileid: "32554066"
   ]
 }
 ```
+
 
 
 

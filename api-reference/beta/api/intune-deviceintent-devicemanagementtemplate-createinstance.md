@@ -1,21 +1,21 @@
 ---
 title: createInstance アクション
 description: まだ文書化されていません
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 66203d2de8c6c3a1a7be7172ca8e70cccd708263
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: babd7aa6a9f0fe5d62e0d62bb8c9657d81e3cc0e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32466610"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33916001"
 ---
 # <a name="createinstance-action"></a>createInstance アクション
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 まだ文書化されていません
 
@@ -35,6 +35,7 @@ ms.locfileid: "32466610"
 -->
 ``` http
 POST /deviceManagement/templates/{deviceManagementTemplateId}/createInstance
+POST /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{deviceManagementTemplateId}/createInstance
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
@@ -51,8 +52,8 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/createInstance
 |プロパティ|型|説明|
 |:---|:---|:---|
 |displayName|String|まだ文書化されていません|
-|説明|String|まだ文書化されていません|
-|settingsdelta|[devicemanagementsettinginstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)コレクション|まだ文書化されていません|
+|description|String|まだ文書化されていません|
+|settingsDelta|[Devicemanagementsettinginstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)コレクション|まだ文書化されていません|
 
 
 
@@ -102,7 +103,6 @@ Content-Length: 350
   }
 }
 ```
-
 
 
 

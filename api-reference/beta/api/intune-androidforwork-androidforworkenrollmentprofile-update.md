@@ -1,21 +1,21 @@
 ---
 title: androidForWorkEnrollmentProfile の更新
 description: androidForWorkEnrollmentProfile オブジェクトのプロパティを更新します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b2bbb90bda3e9e3306fc71be5ce38d6605f0d306
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3bd44462792224f5c1865ac3ee2148861479f0ae
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32498915"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33938917"
 ---
 # <a name="update-androidforworkenrollmentprofile"></a>androidForWorkEnrollmentProfile の更新
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md) オブジェクトのプロパティを更新します。
 
@@ -51,9 +51,9 @@ PATCH /deviceManagement/androidForWorkEnrollmentProfiles/{androidForWorkEnrollme
 |プロパティ|型|説明|
 |:---|:---|:---|
 |accountId|String|登録プロファイルが属するテナント GUID。|
-|id|String|登録プロファイルの一意の GUID。|
+|id|文字列|登録プロファイルの一意の GUID。|
 |displayName|String|登録プロファイルの表示名。|
-|説明|String|登録プロファイルの説明。|
+|description|String|登録プロファイルの説明。|
 |createdDateTime|DateTimeOffset|登録プロファイルが作成された日時。|
 |lastModifiedDateTime|DateTimeOffset|登録プロファイルが最後に変更された日時。|
 |tokenValue|String|この登録プロファイル用に最後に作成されたトークンの値。|
@@ -119,7 +119,6 @@ Content-Length: 668
   }
 }
 ```
-
 
 
 

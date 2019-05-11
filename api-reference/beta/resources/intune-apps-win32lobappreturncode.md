@@ -1,21 +1,21 @@
 ---
 title: win32LobAppReturnCode リソースの種類
 description: Win32 アプリのリターンコードプロパティを格納します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4c05d695b05a001e6854e254bf065d6fb41ba773
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a37236064abb2e792e9227b8f76f32e1fd3ff9d9
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32461088"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949480"
 ---
 # <a name="win32lobappreturncode-resource-type"></a>win32LobAppReturnCode リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 Win32 アプリのリターンコードプロパティを格納します。
 
@@ -25,7 +25,7 @@ Win32 アプリのリターンコードプロパティを格納します。
 |returnCode|Int32|コードを返します。|
 |type|[win32LobAppReturnCodeType](../resources/intune-apps-win32lobappreturncodetype.md)|戻り値のコードの種類を示します。 可能な値は、`failed`、`success`、`softReboot`、`hardReboot`、`retry` です。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -42,7 +42,6 @@ Win32 アプリのリターンコードプロパティを格納します。
   "type": "String"
 }
 ```
-
 
 
 

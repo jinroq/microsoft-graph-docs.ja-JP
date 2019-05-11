@@ -1,21 +1,21 @@
 ---
 title: managedEBook リソースの種類
 description: 管理対象電子ブックの基本プロパティを含む抽象クラスです。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 888df51e17ab45dcada3d69fad95315b26b4b20e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7a9248a2bca56188deb913159d9ff664ce8d9b48
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561181"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949298"
 ---
 # <a name="managedebook-resource-type"></a>managedEBook リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 管理対象電子ブックの基本プロパティを含む抽象クラスです。
 
@@ -27,9 +27,9 @@ ms.locfileid: "32561181"
 |[アクションの割り当て](../api/intune-books-managedebook-assign.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|id|文字列|エンティティのキー。|
 |displayName|String|電子ブックの名前。|
 |description|文字列型 (String)|説明。|
 |publisher|String|発行元です。|
@@ -40,10 +40,10 @@ ms.locfileid: "32561181"
 |informationUrl|String|詳細情報の URL。|
 |privacyInformationUrl|String|プライバシーに関する声明の URL。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 |リレーションシップ|型|説明|
 |:---|:---|:---|
-|categories|[managedebookcategory](../resources/intune-books-managedebookcategory.md)コレクション|この電子ブックのカテゴリのリスト。|
+|categories|[Managedebookcategory](../resources/intune-books-managedebookcategory.md)コレクション|この電子ブックのカテゴリのリスト。|
 |assignments|[managedEBookAssignment](../resources/intune-books-managedebookassignment.md) コレクション|この電子ブックの割り当てのリストです。|
 |installSummary|[eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md)|モバイル アプリ インストール概要です。|
 |deviceStates|[deviceInstallState](../resources/intune-books-deviceinstallstate.md) コレクション|この電子ブックのインストール状態のリストです。|
@@ -76,7 +76,6 @@ ms.locfileid: "32561181"
   "privacyInformationUrl": "String"
 }
 ```
-
 
 
 

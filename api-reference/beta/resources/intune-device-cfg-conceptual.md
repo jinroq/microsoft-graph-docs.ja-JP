@@ -1,19 +1,19 @@
 ---
-title: microsoft Intune でのデバイスの構成-microsoft のヘルプ
+title: Microsoft Intune でのデバイスの構成-Microsoft のヘルプ
 description: テナント組織のデバイスの構成を定義する Intune エンドポイント (REST) の Microsoft Graph API を示します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 0c25373b7a1c7657b2aee290c9a6ce5d0ae23cb9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a341de5bc6753102e3ce7a6c6c15114296a92248
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556425"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949165"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Microsoft Intune でのデバイス構成
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでは、これらの API の使用はサポートされていません。
 
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing)を持っている必要があります。
 
@@ -171,6 +171,9 @@ Microsoft Intune のデバイス構成のワークロードを使用して、管
 - [デバイス構成のユーザー状態の概要](intune-deviceconfig-deviceconfigurationuserstatesummary.md)
 - [デバイス構成のユーザーの状態](intune-deviceconfig-deviceconfigurationuserstatus.md)
 - [Device Guard ローカル システム機関資格情報の保護の種類](intune-deviceconfig-deviceguardlocalsystemauthoritycredentialguardtype.md)
+- [デバイス管理の派生資格情報発行者](intune-deviceconfig-devicemanagementderivedcredentialissuer.md)
+- [デバイス管理の派生資格情報の種類](intune-deviceconfig-devicemanagementderivedcredentialnotificationtype.md)
+- [デバイス管理の派生資格情報の設定](intune-deviceconfig-devicemanagementderivedcredentialsettings.md)
 - [デバイス管理設定](intune-deviceconfig-devicemanagementsettings.md)
 - [デバイス管理のユーザー権限のローカル ユーザーまたはグループ](intune-deviceconfig-devicemanagementuserrightslocaluserorgroup.md)
 - [デバイス管理のユーザー権限](intune-deviceconfig-devicemanagementuserrightssetting.md)
@@ -198,6 +201,7 @@ Microsoft Intune のデバイス構成のワークロードを使用して、管
 - [Edge のテレメトリ モード](intune-deviceconfig-edgetelemetrymode.md)
 - [エディション アップグレード構成](intune-deviceconfig-editionupgradeconfiguration.md)
 - [エディション アップグレード ライセンスの種類](intune-deviceconfig-editionupgradelicensetype.md)
+- [電子メール証明書の種類](intune-deviceconfig-emailcertificatetype.md)
 - [メールの同期継続時間](intune-deviceconfig-emailsyncduration.md)
 - [メールの同期スケジュール](intune-deviceconfig-emailsyncschedule.md)
 - [暗号化の対応状態](intune-deviceconfig-encryptionreadinessstate.md)
@@ -244,6 +248,7 @@ Microsoft Intune のデバイス構成のワークロードを使用して、管
 - [iOS 証明書のプロファイル ベース](intune-deviceconfig-ioscertificateprofilebase.md)
 - [iOS コンプライアンス ポリシー](intune-deviceconfig-ioscompliancepolicy.md)
 - [iOS カスタム構成](intune-deviceconfig-ioscustomconfiguration.md)
+- [iOS の派生した資格情報認証構成](intune-deviceconfig-iosderivedcredentialauthenticationconfiguration.md)
 - [iOS デバイス機能構成](intune-deviceconfig-iosdevicefeaturesconfiguration.md)
 - [iOS EAS 電子メール プロファイルの構成](intune-deviceconfig-ioseasemailprofileconfiguration.md)
 - [iOS EDU 証明書の設定](intune-deviceconfig-ioseducertificatesettings.md)

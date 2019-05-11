@@ -1,23 +1,23 @@
 ---
-title: appLogCollectionRequest の更新
-description: appLogCollectionRequest オブジェクトのプロパティを更新します。
-author: tfitzmac
+title: AppLogCollectionRequest の更新
+description: AppLogCollectionRequest オブジェクトのプロパティを更新します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a924def5da43959478ebaf060bd46e51408a2293
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4bd90622a2062e80f16b090e5930e5cba18f405c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32466092"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33910603"
 ---
-# <a name="update-applogcollectionrequest"></a>appLogCollectionRequest の更新
+# <a name="update-applogcollectionrequest"></a>AppLogCollectionRequest の更新
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)オブジェクトのプロパティを更新します。
+[AppLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -51,9 +51,9 @@ PATCH /deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshooting
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|一意の識別子。 これは userId_DeviceId_AppId id です。|
-|status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|ログのアップロードの状態。 使用可能な値は、`pending`、`completed`、`failed` です。|
+|status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|ログのアップロードの状態。 可能な値は、`pending`、`completed`、`failed` です。|
 |errorMessage|String|アップロードプロセス中にエラーメッセージが表示される場合|
-|customlogfolders|String collection|ログフォルダーの一覧。 |
+|customLogFolders|String collection|ログフォルダーの一覧。 |
 |CompletedDateTime|DateTimeOffset|アップロードログ要求がターミナル状態に達した時刻|
 
 
@@ -99,7 +99,6 @@ Content-Length: 306
   "completedDateTime": "2016-12-31T23:58:52.3534526-08:00"
 }
 ```
-
 
 
 

@@ -1,21 +1,21 @@
 ---
 title: windowsUniversalAppXAppAssignmentSettings リソースの種類
 description: Windows Universal AppX モバイルアプリをグループに割り当てるときに使用されるプロパティが含まれています。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eeb724c9701b9bf0e82aa4d77689e8c2f58fe552
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0fedc16bbec643d792844a7762602fd66af60d34
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32558385"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949837"
 ---
 # <a name="windowsuniversalappxappassignmentsettings-resource-type"></a>windowsUniversalAppXAppAssignmentSettings リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 Windows Universal AppX モバイルアプリをグループに割り当てるときに使用されるプロパティが含まれています。
 
@@ -27,7 +27,7 @@ Windows Universal AppX モバイルアプリをグループに割り当てると
 |:---|:---|:---|
 |useDeviceContext|ブール型 (Boolean)|Windows Universal AppX モバイルアプリのデバイス実行コンテキストを使用するかどうかを指定します。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -43,7 +43,6 @@ Windows Universal AppX モバイルアプリをグループに割り当てると
   "useDeviceContext": true
 }
 ```
-
 
 
 

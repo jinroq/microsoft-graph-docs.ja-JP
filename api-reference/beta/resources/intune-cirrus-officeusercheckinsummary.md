@@ -2,20 +2,20 @@
 title: officeUserCheckinSummary リソースの種類
 description: テナントのチェックイン統計を記述するエンティティ。
 localization_priority: Normal
-author: tfitzmac
+author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: b74d7508c9ef3b1d7183c806783e567cb75859ff
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9ee53bbdbb02a3d5716f49941ec108e23a09ae88
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526385"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949270"
 ---
 # <a name="officeusercheckinsummary-resource-type"></a>officeUserCheckinSummary リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 テナントのチェックイン統計を記述するエンティティ。
 
@@ -25,7 +25,7 @@ ms.locfileid: "32526385"
 |succeededUserCount|Int32|過去3か月間の成功したユーザーチェックインの合計数。|
 |failedUserCount|Int32|過去3か月間のユーザーチェックに失敗した合計数。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記

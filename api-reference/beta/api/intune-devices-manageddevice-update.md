@@ -2,22 +2,22 @@
 title: >
   managedDevice の更新
 description: managedDevice オブジェクトのプロパティを更新します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3c7a0b95ff0ec3b5ad7cdd574405ccd4887e08dc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0dd5c42bd6dba6208ea06c2f85efce1e7972d6eb
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32519886"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33909590"
 ---
 # <a name="update-manageddevice"></a>managedDevice の更新
 
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [managedDevice](../resources/intune-devices-manageddevice.md) オブジェクトのプロパティを更新します。
 
@@ -55,14 +55,14 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|デバイスの一意識別子|
-|userId|文字列型 (String)|デバイスに関連付けられているユーザーの一意の識別子|
+|id|文字列|デバイスの一意識別子|
+|userId|String|デバイスに関連付けられているユーザーの一意の識別子|
 |deviceName|String|デバイスの名前|
 |hardwareInformation|[hardwareInformation](../resources/intune-devices-hardwareinformation.md)|デバイスのハードワードの詳細。  記憶領域、製造元、シリアル番号などの情報が含まれます。|
-|ownerType|[ownerType](../resources/intune-devices-ownertype.md)|デバイスの所有権。 ' company ' または ' personal ' にすることができます。 使用可能な値は、`unknown`、`company`、`personal` です。|
-|managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-devices-manageddeviceownertype.md)|デバイスの所有権。 ' company ' または ' personal ' にすることができます。 使用可能な値は、`unknown`、`company`、`personal` です。|
+|ownerType|[ownerType](../resources/intune-devices-ownertype.md)|デバイスの所有権。 ' Company ' または ' personal ' にすることができます。 可能な値は、`unknown`、`company`、`personal` です。|
+|managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-devices-manageddeviceownertype.md)|デバイスの所有権。 ' Company ' または ' personal ' にすることができます。 可能な値は、`unknown`、`company`、`personal` です。|
 |deviceActionResults|[deviceActionResult](../resources/intune-devices-deviceactionresult.md) コレクション|ComplexType deviceActionResult オブジェクトのリスト。|
-|managementstate|[managementstate](../resources/intune-devices-managementstate.md)|デバイスの管理状態。 可能な値は、`managed`、`retirePending`、`retireFailed`、`wipePending`、`wipeFailed`、`unhealthy`、`deletePending`、`retireIssued`、`wipeIssued`、`wipeCanceled`、`retireCanceled`、`discovered` です。|
+|managementState|[managementState](../resources/intune-devices-managementstate.md)|デバイスの管理状態。 可能な値は、`managed`、`retirePending`、`retireFailed`、`wipePending`、`wipeFailed`、`unhealthy`、`deletePending`、`retireIssued`、`wipeIssued`、`wipeCanceled`、`retireCanceled`、`discovered` です。|
 |enrolledDateTime|DateTimeOffset|デバイスの登録時刻。|
 |lastSyncDateTime|DateTimeOffset|デバイスが Intune との正常な同期を最終的に完了した日時。|
 |chassisType|[chassisType](../resources/intune-devices-chassistype.md)|デバイスのシャーシの種類。 可能な値は、`unknown`、`desktop`、`laptop`、`worksWorkstation`、`enterpriseServer`、`phone`、`tablet`、`mobileOther`、`mobileUnknown` です。|
@@ -70,9 +70,9 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |deviceType|[deviceType](../resources/intune-shared-devicetype.md)|デバイスのプラットフォーム。 可能な値: `desktop`、 `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android`、、、、、、、、、、、、 `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise`, `blackberry`, `palm`, `unknown`.|
 |complianceState|[complianceState](../resources/intune-devices-compliancestate.md)|デバイスのコンプライアンス状態。 可能な値は、`unknown`、`compliant`、`noncompliant`、`conflict`、`error`、`inGracePeriod`、`configManager` です。|
 |jailBroken|String|デバイスが脱獄またはルート化されているかどうかを示します。|
-|managementAgent|[managementagenttype](../resources/intune-devices-managementagenttype.md)|デバイスの管理チャネル。 Intune、EAS など。可能な値は`eas`、 `mdm`、 `easMdm` `intuneClient` `easIntuneClient` `configurationManagerClient` `jamf` `googleCloudDevicePolicyController`、、、、、、、、、 `microsoft365ManagedMdm`、、です。 `configurationManagerClientMdm` `configurationManagerClientMdmEas` `unknown`|
+|managementAgent|[managementAgentType](../resources/intune-devices-managementagenttype.md)|デバイスの管理チャネル。 Intune、EAS など。可能な値は`eas`、 `mdm`、 `easMdm` `intuneClient` `easIntuneClient` `configurationManagerClient` `jamf` `googleCloudDevicePolicyController`、、、、、、、、、 `microsoft365ManagedMdm`、、です。 `configurationManagerClientMdm` `configurationManagerClientMdmEas` `unknown`|
 |osVersion|String|デバイスのオペレーティング システムのバージョン。|
-|easActivated|ブール型|Exchange ActiveSync がアクティブになっているデバイスかどうかを示します。|
+|easActivated|Boolean|Exchange ActiveSync がアクティブになっているデバイスかどうかを示します。|
 |easDeviceId|String|デバイスの Exchange ActiveSync の ID。|
 |easActivationDateTime|DateTimeOffset|デバイスの Exchange ActivationSync のアクティブ化の時刻。|
 |aadRegistered|Boolean|Azure Active Directory が登録されているデバイスかどうかを示します。|
@@ -85,9 +85,9 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |azureADDeviceId|String|Azure Active Directory デバイスの一意識別子。 読み取り専用です。|
 |deviceRegistrationState|[deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)|デバイスの登録状態。 可能な値は、`notRegistered`、`registered`、`revoked`、`keyConflict`、`approvalPending`、`certificateReset`、`notRegisteredPendingEnrollment`、`unknown` です。|
 |deviceCategoryDisplayName|String|デバイス カテゴリの表示名|
-|isSupervised|ブール型|デバイスの管理状況|
+|isSupervised|Boolean|デバイスの管理状況|
 |exchangeLastSuccessfulSyncDateTime|DateTimeOffset|最後にデバイスが Exchange に接続した時刻。|
-|exchangeAccessState|[devicemanagementexchangeaccessstate](../resources/intune-devices-devicemanagementexchangeaccessstate.md)|Exchange でのデバイスのアクセスの状態。 可能な値は、`none`、`unknown`、`allowed`、`blocked`、`quarantined` です。|
+|exchangeAccessState|[deviceManagementExchangeAccessState](../resources/intune-devices-devicemanagementexchangeaccessstate.md)|Exchange でのデバイスのアクセスの状態。 可能な値は、`none`、`unknown`、`allowed`、`blocked`、`quarantined` です。|
 |exchangeAccessStateReason|[deviceManagementExchangeAccessStateReason](../resources/intune-devices-devicemanagementexchangeaccessstatereason.md)|Exchange でのデバイスのアクセス状態の理由。
  可能な値は、`none`、`unknown`、`exchangeGlobalRule`、`exchangeIndividualRule`、`exchangeDeviceRule`、`exchangeUpgrade`、`exchangeMailboxPolicy`、`other`、`compliant`、`notCompliant`、`notEnrolled`、`unknownLocation`、`mfaRequired`、`azureADBlockDueToAccessPolicy`、`compromisedPassword`、`deviceNotKnownWithManagedApp` です。|
 |remoteAssistanceSessionUrl|String|デバイスとのリモート アシスタンス セッションを確立できるようにする URL。|
@@ -111,16 +111,17 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |totalStorageSpaceInBytes|Int64|記憶域の合計 (バイト)|
 |freeStorageSpaceInBytes|Int64|空き記憶域 (バイト)|
 |managedDeviceName|String|デバイスを識別する名前が自動的に生成されます。 ユーザー フレンドリ名に上書きできます。|
-|partnerReportedThreatState|[manageddevicepartnerreportedhealthstate](../resources/intune-devices-manageddevicepartnerreportedhealthstate.md)|Mobile Threat Defense パートナーがアカウントおよびデバイスで使用されている場合の、デバイスの脅威の状態を示します。 読み取り専用です。 可能な値は、`unknown`、`activated`、`deactivated`、`secured`、`lowSeverity`、`mediumSeverity`、`highSeverity`、`unresponsive`、`compromised`、`misconfigured` です。|
+|partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune-devices-manageddevicepartnerreportedhealthstate.md)|Mobile Threat Defense パートナーがアカウントおよびデバイスで使用されている場合の、デバイスの脅威の状態を示します。 読み取り専用です。 可能な値は、`unknown`、`activated`、`deactivated`、`secured`、`lowSeverity`、`mediumSeverity`、`highSeverity`、`unresponsive`、`compromised`、`misconfigured` です。|
+|retireAfterDateTime|DateTimeOffset|スケジュールされたアクションのためにデバイスが自動廃棄されるまでの時間を示します。|
 |usersLoggedOn|[loggedOnUser](../resources/intune-devices-loggedonuser.md)コレクション|デバイスの最後にログオンしたユーザーを示します|
-|preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|preferMdmOverGroupPolicy の設定が設定された DateTime を報告します。  設定すると、競合がある場合に Intune MDM 設定がグループポリシー設定を上書きします。 読み取り専用です。|
-|autopilotEnrolled|ブール型|管理対象デバイスが自動パイロットで登録されているかどうかを報告します。|
-|requireUserEnrollmentApproval|ブール型|管理対象 iOS デバイスがユーザー承認登録であるかどうかを報告します。|
+|preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|PreferMdmOverGroupPolicy の設定が設定された DateTime を報告します。  設定すると、競合がある場合に Intune MDM 設定がグループポリシー設定を上書きします。 読み取り専用です。|
+|autopilotEnrolled|Boolean|管理対象デバイスが自動パイロットで登録されているかどうかを報告します。|
+|requireUserEnrollmentApproval|Boolean|管理対象 iOS デバイスがユーザー承認登録であるかどうかを報告します。|
 |managementCertificateExpirationDate|DateTimeOffset|デバイス管理証明書の有効期限を報告する|
-|iccid|String|ic カード識別子。 SIM カードの一意の識別番号です。|
-|udid|String|iOS および macOS デバイスの一意のデバイス識別子。|
-|roleScopeTagIds|String collection|このデバイスインスタンスの範囲タグ id のリスト。|
-|windowsactivemalwarecount 再計算|Int32|この windows デバイスのアクティブなマルウェアの数|
+|iccid|String|Ic カード識別子。 SIM カードの一意の識別番号です。|
+|udid|String|IOS および macOS デバイスの一意のデバイス識別子。|
+|roleScopeTagIds|String collection|このデバイスインスタンスの範囲タグ Id のリスト。|
+|windowsActiveMalwareCount 再計算|Int32|この windows デバイスのアクティブなマルウェアの数|
 |windowsRemediatedMalwareCount|Int32|この windows デバイスの修復済みマルウェアの数|
 |notes|String|IT 管理者によって作成されたデバイスのメモ|
 |configurationManagerClientHealthState|[configurationManagerClientHealthState](../resources/intune-devices-configurationmanagerclienthealthstate.md)|構成マネージャークライアントの正常性状態。 MDM/ConfigMgr エージェントによって管理されるデバイスに対してのみ有効です。|
@@ -137,7 +138,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}
 Content-type: application/json
-Content-length: 7224
+Content-length: 7286
 
 {
   "@odata.type": "#microsoft.graph.managedDevice",
@@ -279,6 +280,7 @@ Content-length: 7224
   "freeStorageSpaceInBytes": 7,
   "managedDeviceName": "Managed Device Name value",
   "partnerReportedThreatState": "activated",
+  "retireAfterDateTime": "2016-12-31T23:57:37.576134-08:00",
   "usersLoggedOn": [
     {
       "@odata.type": "microsoft.graph.loggedOnUser",
@@ -312,7 +314,7 @@ Content-length: 7224
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7273
+Content-Length: 7335
 
 {
   "@odata.type": "#microsoft.graph.managedDevice",
@@ -455,6 +457,7 @@ Content-Length: 7273
   "freeStorageSpaceInBytes": 7,
   "managedDeviceName": "Managed Device Name value",
   "partnerReportedThreatState": "activated",
+  "retireAfterDateTime": "2016-12-31T23:57:37.576134-08:00",
   "usersLoggedOn": [
     {
       "@odata.type": "microsoft.graph.loggedOnUser",
@@ -482,7 +485,6 @@ Content-Length: 7273
   }
 }
 ```
-
 
 
 

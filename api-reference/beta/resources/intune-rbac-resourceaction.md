@@ -1,21 +1,21 @@
 ---
 title: resourceAction リソースの種類
 description: リソースに対して許可され、許可されていないアクションのセット。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b4cccb0b47d0d4724ebba7a4749529ccbfe5f7f6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 597a9c7cdc2f04247e799772f100d1a0b778453e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566340"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33939988"
 ---
 # <a name="resourceaction-resource-type"></a>resourceAction リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 リソースに対して許可され、許可されていないアクションのセット。
 
@@ -46,7 +46,6 @@ ms.locfileid: "32566340"
   ]
 }
 ```
-
 
 
 

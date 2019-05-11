@@ -1,33 +1,33 @@
 ---
 title: windowsKioskActiveDirectoryGroup リソースの種類
 description: キオスク構成の Azure ディレクトリグループを識別するために使用されるクラス
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 20f4c0eaf8470f01619a9ff4067bec0d95851b3c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d4c0810cfeda4f620f6733a5b824cde8d0234f38
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32464625"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943964"
 ---
 # <a name="windowskioskactivedirectorygroup-resource-type"></a>windowsKioskActiveDirectoryGroup リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 キオスク構成の Azure ディレクトリグループを識別するために使用されるクラス
 
 
-[windowskioskuser](../resources/intune-deviceconfig-windowskioskuser.md)からの継承
+[Windowskioskuser](../resources/intune-deviceconfig-windowskioskuser.md)からの継承
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
 |groupName|String|このキオスク構成にロックされる AD グループの名前|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -43,7 +43,6 @@ ms.locfileid: "32464625"
   "groupName": "String"
 }
 ```
-
 
 
 

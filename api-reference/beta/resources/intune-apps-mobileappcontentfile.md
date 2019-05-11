@@ -1,21 +1,21 @@
 ---
 title: mobileAppContentFile リソース タイプ
 description: 特定の mobileAppContent バージョンに関連付けられている単一のインストーラー ファイルのプロパティが含まれています。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8b0b5fc26adaed66ca040c55452cf8f067349aa5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8b0b1697bcbf4832b00f40584ebd85644c0052ac
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554325"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949961"
 ---
 # <a name="mobileappcontentfile-resource-type"></a>mobileAppContentFile リソース タイプ
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 特定の mobileAppContent バージョンに関連付けられている単一のインストーラー ファイルのプロパティが含まれています。
 
@@ -25,9 +25,9 @@ ms.locfileid: "32554325"
 |[List mobileAppContentFiles](../api/intune-apps-mobileappcontentfile-list.md)|[mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) コレクション|[mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) オブジェクトのプロパティとリレーションシップをリストします。|
 |[Get mobileAppContentFile](../api/intune-apps-mobileappcontentfile-get.md)|[mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md)|[mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
 |[Create mobileAppContentFile](../api/intune-apps-mobileappcontentfile-create.md)|[mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md)|新しい [mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) オブジェクトを作成します。|
-|[Delete mobileAppContentFile](../api/intune-apps-mobileappcontentfile-delete.md)|なし|[mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) を削除します。|
+|[Delete mobileAppContentFile](../api/intune-apps-mobileappcontentfile-delete.md)|None|[mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) を削除します。|
 |[Update mobileAppContentFile](../api/intune-apps-mobileappcontentfile-update.md)|[mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md)|[mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) オブジェクトのプロパティを更新します。|
-|[commit action](../api/intune-apps-mobileappcontentfile-commit.md)|なし|特定のアプリのファイルをコミットします。|
+|[commit action](../api/intune-apps-mobileappcontentfile-commit.md)|None|特定のアプリのファイルをコミットします。|
 |[renewUpload action](../api/intune-apps-mobileappcontentfile-renewupload.md)|なし|アプリケーション ファイルのアップロード用の SAS URI を更新します。|
 
 ## <a name="properties"></a>プロパティ
@@ -35,7 +35,7 @@ ms.locfileid: "32554325"
 |:---|:---|:---|
 |azureStorageUri|String|Azure ストレージ URI。|
 |isCommitted|Boolean|ファイルがコミットされたかどうかを示す値。|
-|id|String|ファイル ID。|
+|id|文字列|ファイル ID。|
 |createdDateTime|DateTimeOffset|ファイルが作成された時刻。|
 |name|String|ファイル名。|
 |size|Int64|暗号化する前のファイルのサイズ。|
@@ -43,10 +43,10 @@ ms.locfileid: "32554325"
 |azureStorageUriExpirationDateTime|DateTimeOffset|Azure ストレージ URI の有効期限が切れる時刻。|
 |manifest|Binary|マニフェスト情報。|
 |uploadState|[mobileAppContentFileUploadState](../resources/intune-apps-mobileappcontentfileuploadstate.md)|現在のアップロード要求の状態。 可能な値は、`success`、`transientError`、`error`、`unknown`、`azureStorageUriRequestSuccess`、`azureStorageUriRequestPending`、`azureStorageUriRequestFailed`、`azureStorageUriRequestTimedOut`、`azureStorageUriRenewalSuccess`、`azureStorageUriRenewalPending`、`azureStorageUriRenewalFailed`、`azureStorageUriRenewalTimedOut`、`commitFileSuccess`、`commitFilePending`、`commitFileFailed`、`commitFileTimedOut` です。|
-|isframeworkfile|ブール値|ファイルがフレームワークファイルであるかどうかを示す値。|
-|isdependency|ブール値|コンテンツファイルがメインコンテンツファイルの依存関係であるかどうかを指定します。|
+|isFrameworkFile|Boolean|ファイルがフレームワークファイルであるかどうかを示す値。|
+|isDependency|Boolean|コンテンツファイルがメインコンテンツファイルの依存関係であるかどうかを指定します。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -74,7 +74,6 @@ ms.locfileid: "32554325"
   "isDependency": true
 }
 ```
-
 
 
 

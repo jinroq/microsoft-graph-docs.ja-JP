@@ -1,21 +1,21 @@
 ---
 title: appConfigurationSettingItem リソースの種類
 description: アプリの構成設定アイテムのプロパティが含まれています。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5f82a724d53a03672586ac9526599af43286f76d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: adfc465e607567c02f80b63760fa45e62466398b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32552199"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950481"
 ---
 # <a name="appconfigurationsettingitem-resource-type"></a>appConfigurationSettingItem リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 アプリの構成設定アイテムのプロパティが含まれています。
 
@@ -26,7 +26,7 @@ ms.locfileid: "32552199"
 |appConfigKeyType|[mdmAppConfigKeyType](../resources/intune-apps-mdmappconfigkeytype.md)|アプリの構成キーの種類。 可能な値は、`stringType`、`integerType`、`realType`、`booleanType`、`tokenType` です。|
 |appConfigKeyValue|String|アプリの構成キーの値。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -44,7 +44,6 @@ ms.locfileid: "32552199"
   "appConfigKeyValue": "String"
 }
 ```
-
 
 
 

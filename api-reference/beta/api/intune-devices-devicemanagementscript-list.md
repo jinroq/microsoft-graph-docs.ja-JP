@@ -1,23 +1,23 @@
 ---
-title: devicemanagementscripts を一覧表示する
-description: devicemanagementscript オブジェクトのプロパティとリレーションシップをリストします。
-author: tfitzmac
+title: DeviceManagementScripts を一覧表示する
+description: DeviceManagementScript オブジェクトのプロパティとリレーションシップをリストします。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8ceff08ba72eb4dace69e2017b1b513bd456e20a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8520ca1788b4628be80f5bd4c7f2cd464e889e04
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32465980"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33909982"
 ---
-# <a name="list-devicemanagementscripts"></a>devicemanagementscripts を一覧表示する
+# <a name="list-devicemanagementscripts"></a>DeviceManagementScripts を一覧表示する
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[devicemanagementscript](../resources/intune-devices-devicemanagementscript.md)オブジェクトのプロパティとリレーションシップをリストします。
+[Devicemanagementscript](../resources/intune-devices-devicemanagementscript.md)オブジェクトのプロパティとリレーションシップをリストします。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -88,7 +88,6 @@ Content-Length: 716
   ]
 }
 ```
-
 
 
 

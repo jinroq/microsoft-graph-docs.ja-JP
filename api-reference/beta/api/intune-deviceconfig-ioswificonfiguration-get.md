@@ -1,23 +1,23 @@
 ---
-title: iosWiFiConfiguration を取得する
-description: iosWiFiConfiguration オブジェクトのプロパティとリレーションシップを読み取ります。
-author: tfitzmac
+title: IosWiFiConfiguration を取得する
+description: IosWiFiConfiguration オブジェクトのプロパティとリレーションシップを読み取ります。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5ca2ad56eddec38667e3e32e7ee58a8014adf45f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5b2d4f2085c0d4430740525818e9c4dd59f1e4a6
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32519011"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33923042"
 ---
-# <a name="get-ioswificonfiguration"></a>iosWiFiConfiguration を取得する
+# <a name="get-ioswificonfiguration"></a>IosWiFiConfiguration を取得する
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[iosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md)オブジェクトのプロパティとリレーションシップを読み取ります。
+[IosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md)オブジェクトのプロパティとリレーションシップを読み取ります。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -95,7 +95,6 @@ Content-Length: 908
   }
 }
 ```
-
 
 
 

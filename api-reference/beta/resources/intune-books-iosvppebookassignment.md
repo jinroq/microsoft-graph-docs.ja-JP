@@ -1,21 +1,21 @@
 ---
 title: iosVppEBookAssignment リソースの種類
 description: グループへの iOS VPP 電子ブックの割り当てに使用されるプロパティが含まれています。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: afb12268093011b4ede842b78c5a8618e80e5a2b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8be802c1a35e88552ea6e705613245dd3125c81c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32558256"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949340"
 ---
 # <a name="iosvppebookassignment-resource-type"></a>iosVppEBookAssignment リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 グループへの iOS VPP 電子ブックの割り当てに使用されるプロパティが含まれています。
 
@@ -36,7 +36,7 @@ ms.locfileid: "32558256"
 |:---|:---|:---|
 |id|String|エンティティのキー。 [managedEBookAssignment](../resources/intune-books-managedebookassignment.md) から継承します|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|電子ブックの割り当て先。 [managedEBookAssignment](../resources/intune-books-managedebookassignment.md) から継承します|
-|installIntent|[installIntent](../resources/intune-shared-installintent.md)|電子ブックのインストールの目的。 [managedebookassignment](../resources/intune-books-managedebookassignment.md)から継承します。 可能な値は、`available`、`required`、`uninstall`、`availableWithoutEnrollment` です。|
+|installIntent|[installIntent](../resources/intune-shared-installintent.md)|電子ブックのインストールの目的。 [Managedebookassignment](../resources/intune-books-managedebookassignment.md)から継承します。 可能な値は、`available`、`required`、`uninstall`、`availableWithoutEnrollment` です。|
 
 ## <a name="relationships"></a>関係
 なし
@@ -59,7 +59,6 @@ ms.locfileid: "32558256"
   "installIntent": "String"
 }
 ```
-
 
 
 

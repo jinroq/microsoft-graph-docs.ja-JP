@@ -2,20 +2,20 @@
 title: officeClientCheckinStatus リソースの種類
 description: テナントのチェックイン統計を記述するエンティティ。
 localization_priority: Normal
-author: tfitzmac
+author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 465b07ba286b9ee3a58132424be2a25b1c7e564e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a7cbc54ac2e276932273130f194f484f3ee23b7c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526700"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949291"
 ---
 # <a name="officeclientcheckinstatus-resource-type"></a>officeClientCheckinStatus リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 テナントのチェックイン統計を記述するエンティティ。
 ## <a name="properties"></a>プロパティ
@@ -24,14 +24,14 @@ ms.locfileid: "32526700"
 |userPrincipalName|String|デバイスを使用したユーザープリンシパル名。|
 |deviceName|String|チェックインしようとしているデバイスの名前。|
 |devicePlatform|String|チェックインしようとしているデバイスプラットフォーム。|
-|deviceplatformversion|String|デバイスプラットフォームのバージョンをチェックインしようとしています。|
-|成功|ブール値|前回のチェックインが成功した場合。|
+|devicePlatformVersion|String|デバイスプラットフォームのバージョンをチェックインしようとしています。|
+|成功|Boolean|前回のチェックインが成功した場合。|
 |userId|String|デバイスを使用するユーザー識別子。|
 |checkinDateTime|DateTimeOffset|前回のデバイスのチェックイン時刻 (UTC)。|
 |errorMessage|String|前回のチェックインに関連付けられたエラーメッセージ。|
 |appliedPolicies|String collection|前回のチェックインとしてデバイスに配信されたポリシーの一覧です。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記

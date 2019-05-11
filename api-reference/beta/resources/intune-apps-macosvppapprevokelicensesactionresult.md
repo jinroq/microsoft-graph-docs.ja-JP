@@ -1,29 +1,29 @@
 ---
 title: macOsVppAppRevokeLicensesActionResult リソースの種類
-description: MacOS Vpp アプリでのアクションの結果を定義します。 actionresult の継承されたプロパティが含まれています。
-author: tfitzmac
+description: MacOS Vpp アプリでのアクションの結果を定義します。 ActionResult の継承されたプロパティが含まれています。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bfe15398484dbcccdcbae876ea88c81268b8536c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ad7ad1a2cdf8eabd67c1578c387b424f3e6f6c85
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32552276"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950222"
 ---
 # <a name="macosvppapprevokelicensesactionresult-resource-type"></a>macOsVppAppRevokeLicensesActionResult リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-MacOS Vpp アプリでのアクションの結果を定義します。 actionresult の継承されたプロパティが含まれています。
+MacOS Vpp アプリでのアクションの結果を定義します。 ActionResult の継承されたプロパティが含まれています。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
 |userId|String|アクションに関連付けられている UserId。|
-|manageddeviceid|String|アクションに関連付けられている DeviceId。|
+|managedDeviceId|String|アクションに関連付けられている DeviceId。|
 |合計の合計数|Int32|取り消しが試行されたライセンスの数。|
 |failedLicensesCount|Int32|失効に失敗したライセンスの数。|
 |actionFailureReason|[vppTokenActionFailureReason](../resources/intune-shared-vpptokenactionfailurereason.md)|失効ライセンスの処理の失敗の理由。 可能な値は、`none`、`appleFailure`、`internalError`、`expiredVppToken`、`expiredApplePushNotificationCertificate` です。|
@@ -32,7 +32,7 @@ MacOS Vpp アプリでのアクションの結果を定義します。 actionres
 |startDateTime|DateTimeOffset|アクションが開始された時刻|
 |lastUpdatedDateTime|DateTimeOffset|アクション状態の最終更新時刻|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -56,7 +56,6 @@ MacOS Vpp アプリでのアクションの結果を定義します。 actionres
   "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

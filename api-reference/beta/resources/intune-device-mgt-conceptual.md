@@ -1,19 +1,19 @@
 ---
-title: microsoft Intune でのデバイス管理-microsoft Graph API
+title: Microsoft Intune でのデバイス管理-Microsoft Graph API
 description: テナント組織の管理デバイスを定義する Intune エンドポイント (REST) の Microsoft Graph API を示します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: cf2c6ccec71eed225b87a52a3e5941f54b606b01
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bee3080acefe6c6e2377f153dd6c58fc05850700
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556436"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949200"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Microsoft Intune でのデバイス管理
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでは、これらの API の使用はサポートされていません。
 
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing)を持っている必要があります。
 
@@ -152,10 +152,9 @@ ms.locfileid: "32556436"
 - [パスコードのリセット アクションの結果](intune-devices-resetpasscodeactionresult.md)
 - [Apple VPP ライセンスのアクションの結果の取り消し](intune-devices-revokeapplevpplicensesactionresult.md)
 - [実行スケジュール](intune-devices-runschedule.md)
+- [セキュリティベースラインのカテゴリの状態の概要](intune-deviceintent-securitybaselinecategorystatesummary.md)
 - [セキュリティベースラインコンプライアンスの状態](intune-deviceintent-securitybaselinecompliancestate.md)
 - [セキュリティベースラインデバイスの状態](intune-deviceintent-securitybaselinedevicestate.md)
-- [セキュリティベースライン設定の状態](intune-deviceintent-securitybaselinesettingstate.md)
-- [セキュリティベースラインの状態](intune-deviceintent-securitybaselinestate.md)
 - [セキュリティベースラインの状態の概要](intune-deviceintent-securitybaselinestatesummary.md)
 - [セキュリティベースラインテンプレート](intune-deviceintent-securitybaselinetemplate.md)
 - [共有 Apple デバイス ユーザー](intune-devices-sharedappledeviceuser.md)

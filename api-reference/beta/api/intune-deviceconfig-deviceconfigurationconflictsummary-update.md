@@ -1,23 +1,23 @@
 ---
-title: deviceConfigurationConflictSummary の更新
-description: deviceConfigurationConflictSummary オブジェクトのプロパティを更新します。
-author: tfitzmac
+title: DeviceConfigurationConflictSummary の更新
+description: DeviceConfigurationConflictSummary オブジェクトのプロパティを更新します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a86283e088a4ef28beb1c0139d3650877ed0d651
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7b09b9e3ab563b0d00fed9a8dfca2eec6118641b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32470441"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33927406"
 ---
-# <a name="update-deviceconfigurationconflictsummary"></a>deviceConfigurationConflictSummary の更新
+# <a name="update-deviceconfigurationconflictsummary"></a>DeviceConfigurationConflictSummary の更新
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md)オブジェクトのプロパティを更新します。
+[DeviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -50,7 +50,7 @@ PATCH /deviceManagement/deviceConfigurationConflictSummary/{deviceConfigurationC
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|競合する devicdeviceconfigurん|[settingSource](../resources/intune-deviceconfig-settingsource.md) コレクション|指定された設定と競合しているポリシーのセット|
+|競合する Devicdeviceconfigurん|[settingSource](../resources/intune-deviceconfig-settingsource.md) コレクション|指定された設定と競合しているポリシーのセット|
 |id|String|競合しているポリシーのセットの id。 この id は、アンダースコアで区切られた辞書順で競合しているすべてのポリシーの id です。|
 |contributingSettings|String collection|指定されたポリシーと競合する設定のセット|
 |deviceCheckinsImpacted|Int32|競合するポリシーと設定によって影響を受けるチェックインの数|
@@ -108,7 +108,6 @@ Content-Length: 410
   "deviceCheckinsImpacted": 6
 }
 ```
-
 
 
 

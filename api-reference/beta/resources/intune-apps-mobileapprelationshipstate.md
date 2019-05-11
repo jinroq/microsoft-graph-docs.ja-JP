@@ -1,21 +1,21 @@
 ---
 title: mobileAppRelationshipState リソースの種類
 description: UPN とデバイス id のコンテキストでの子アプリのインストール状態の詳細について説明します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e7f3dcbbc2544a4231cd5da102985d7142feb03a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 35080ad21137387fb63ff2fcb22233ff1be74cde
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551800"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949893"
 ---
 # <a name="mobileapprelationshipstate-resource-type"></a>mobileAppRelationshipState リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 UPN とデバイス id のコンテキストでの子アプリのインストール状態の詳細について説明します。
 
@@ -24,14 +24,14 @@ UPN とデバイス id のコンテキストでの子アプリのインストー
 |:---|:---|:---|
 |sourceIds|String collection|送信元モバイルアプリの id のコレクション。|
 |targetId|String|関連するターゲットアプリの id。|
-|targetdisplayname|String|関連するターゲットアプリの表示名。|
+|targetDisplayName|String|関連するターゲットアプリの表示名。|
 |deviceId|String|対応するデバイス id。|
-|installState|[resultappstate](../resources/intune-shared-resultantappstate.md)|ターゲットアプリのアプリのインストール状態。 可能な値は、`installed`、`failed`、`notInstalled`、`uninstallFailed`、`pendingInstall`、`unknown`、`notApplicable` です。|
-|installstatedetail|[resultantAppStateDetail](../resources/intune-apps-resultantappstatedetail.md)|アプリのインストール状態の詳細。 可能な値: `noAdditionalDetails`、 `dependencyFailedToInstall` `dependencyWithRequirementsNotMet` `dependencyPendingReboot` `dependencyWithAutoInstallDisabled` `seeInstallErrorCode` `autoInstallDisabled` `seeUninstallErrorCode` `pendingReboot` `installingDependencies` `powerShellScriptRequirementNotMet` `registryRequirementNotMet`、、、、、、、、、、、、 `fileSystemRequirementNotMet` `platformNotApplicable` `minimumCpuSpeedNotMet` `minimumLogicalProcessorCountNotMet` `minimumPhysicalMemoryNotMet` `minimumOsVersionNotMet` `minimumDiskSpaceNotMet`, `processorArchitectureNotApplicable`.|
+|installState|[Resultappstate](../resources/intune-shared-resultantappstate.md)|ターゲットアプリのアプリのインストール状態。 可能な値は、`installed`、`failed`、`notInstalled`、`uninstallFailed`、`pendingInstall`、`unknown`、`notApplicable` です。|
+|installStateDetail|[resultantAppStateDetail](../resources/intune-apps-resultantappstatedetail.md)|アプリのインストール状態の詳細。 可能な値: `noAdditionalDetails`、 `dependencyFailedToInstall` `dependencyWithRequirementsNotMet` `dependencyPendingReboot` `dependencyWithAutoInstallDisabled` `seeInstallErrorCode` `autoInstallDisabled` `seeUninstallErrorCode` `pendingReboot` `installingDependencies` `powerShellScriptRequirementNotMet` `registryRequirementNotMet`、、、、、、、、、、、、 `fileSystemRequirementNotMet` `platformNotApplicable` `minimumCpuSpeedNotMet` `minimumLogicalProcessorCountNotMet` `minimumPhysicalMemoryNotMet` `minimumOsVersionNotMet` `minimumDiskSpaceNotMet`, `processorArchitectureNotApplicable`.|
 |errorCode|Int32|ターゲットアプリのインストールまたはアンインストールに失敗した場合のエラーコード。|
-|targetlastsyncdatetime|DateTimeOffset|ターゲットアプリの最終同期時刻。|
+|targetLastSyncDateTime|DateTimeOffset|ターゲットアプリの最終同期時刻。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -56,7 +56,6 @@ UPN とデバイス id のコンテキストでの子アプリのインストー
   "targetLastSyncDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

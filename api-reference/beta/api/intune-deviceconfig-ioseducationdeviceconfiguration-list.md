@@ -1,23 +1,23 @@
 ---
-title: ioseアヒル ationdeviceconfigurたリストを表示する
-description: ioseアヒル ationdevicのオブジェクトのプロパティとリレーションシップをリストします。
-author: tfitzmac
+title: Ioseアヒル Ationdeviceconfigurたリストを表示する
+description: Ioseアヒル Ationdevicのオブジェクトのプロパティとリレーションシップをリストします。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bb9767ed7a67687c94c6e8c133f2cec1d7e2aba7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 55d6a268792fef960ae314bb247ff8e6b75b6068
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32467457"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33923610"
 ---
-# <a name="list-ioseducationdeviceconfigurations"></a>ioseアヒル ationdeviceconfigurたリストを表示する
+# <a name="list-ioseducationdeviceconfigurations"></a>Ioseアヒル Ationdeviceconfigurたリストを表示する
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[ioseアヒル ationdevicの](../resources/intune-deviceconfig-ioseducationdeviceconfiguration.md)オブジェクトのプロパティとリレーションシップをリストします。
+[Ioseアヒル Ationdevicの](../resources/intune-deviceconfig-ioseducationdeviceconfiguration.md)オブジェクトのプロパティとリレーションシップをリストします。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[ioseアヒル ationdevicの](../resources/intune-deviceconfig-ioseducationdeviceconfiguration.md)オブジェクトのコレクションを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[Ioseアヒル ationdevicの](../resources/intune-deviceconfig-ioseducationdeviceconfiguration.md)オブジェクトのコレクションを返します。
 
 ## <a name="example"></a>例
 
@@ -83,7 +83,6 @@ Content-Length: 510
   ]
 }
 ```
-
 
 
 

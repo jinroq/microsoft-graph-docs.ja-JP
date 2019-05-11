@@ -1,21 +1,21 @@
 ---
 title: fileEncryptionInfo リソースの種類
 description: ビジネス アプリの行のコンテンツ バージョンのファイル暗号化情報のプロパティが含まれています。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9a2236e2c63703ea5af2662d5b0f4594e7888799
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3a507aed30d82fd012a964082a2d83fed0f7c751
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32552178"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950425"
 ---
 # <a name="fileencryptioninfo-resource-type"></a>fileEncryptionInfo リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 ビジネス アプリの行のコンテンツ バージョンのファイル暗号化情報のプロパティが含まれています。
 
@@ -30,7 +30,7 @@ ms.locfileid: "32552178"
 |fileDigest|Binary|暗号化される前のファイル ダイジェストです。|
 |fileDigestAlgorithm|String|ファイル ダイジェストのアルゴリズムです。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -52,7 +52,6 @@ ms.locfileid: "32552178"
   "fileDigestAlgorithm": "String"
 }
 ```
-
 
 
 

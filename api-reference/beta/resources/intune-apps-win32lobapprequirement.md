@@ -1,21 +1,21 @@
 ---
 title: win32LobAppRequirement リソースの種類
 description: Win32 アプリを検出するための基本クラス
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a3177493c5289b54cb43369a9dc62970097486f9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ee8593603f00a06fc47540d2829ef851cc99facb
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554101"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949508"
 ---
 # <a name="win32lobapprequirement-resource-type"></a>win32LobAppRequirement リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 Win32 アプリを検出するための基本クラス
 
@@ -25,7 +25,7 @@ Win32 アプリを検出するための基本クラス
 |operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|検出のための演算子。 可能な値は、`notConfigured`、`equal`、`notEqual`、`greaterThan`、`greaterThanOrEqual`、`lessThan`、`lessThanOrEqual` です。|
 |detectionValue|String|検出値|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -42,7 +42,6 @@ Win32 アプリを検出するための基本クラス
   "detectionValue": "String"
 }
 ```
-
 
 
 

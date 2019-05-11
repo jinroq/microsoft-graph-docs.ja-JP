@@ -1,23 +1,23 @@
 ---
-title: macOSExtensionsConfiguration を取得する
-description: macOSExtensionsConfiguration オブジェクトのプロパティとリレーションシップを読み取ります。
-author: tfitzmac
+title: MacOSExtensionsConfiguration を取得する
+description: MacOSExtensionsConfiguration オブジェクトのプロパティとリレーションシップを読み取ります。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e83bd5ac830fdb1d68d4719250d916c103b9d8c4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1fa91d4eea0a6bd09bcd992900753eb6d379bd68
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32518535"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33922586"
 ---
-# <a name="get-macosextensionsconfiguration"></a>macOSExtensionsConfiguration を取得する
+# <a name="get-macosextensionsconfiguration"></a>MacOSExtensionsConfiguration を取得する
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[macOSExtensionsConfiguration](../resources/intune-deviceconfig-macosextensionsconfiguration.md)オブジェクトのプロパティとリレーションシップを読み取ります。
+[MacOSExtensionsConfiguration](../resources/intune-deviceconfig-macosextensionsconfiguration.md)オブジェクトのプロパティとリレーションシップを読み取ります。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -96,7 +96,6 @@ Content-Length: 845
   }
 }
 ```
-
 
 
 

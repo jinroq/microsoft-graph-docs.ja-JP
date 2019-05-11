@@ -1,21 +1,21 @@
 ---
-title: windowskioskprofile リソースの種類
+title: windowsKioskProfile リソースの種類
 description: まだ文書化されていません
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8f54c7066af2c4d24f41e612e3dd09a94a5c8bc7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0ac91647d652b6e1124932806fd9ab83414b497a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32574618"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943999"
 ---
-# <a name="windowskioskprofile-resource-type"></a>windowskioskprofile リソースの種類
+# <a name="windowskioskprofile-resource-type"></a>windowsKioskProfile リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 まだ文書化されていません
 
@@ -24,8 +24,8 @@ ms.locfileid: "32574618"
 |:---|:---|:---|
 |profileId|String|エンティティのキー。|
 |profileName|String|これは、アプリケーションのグループ、[スタート] メニューにこれらのアプリのレイアウト、およびこのキオスク構成を割り当てるユーザーを識別するために使用されるフレンドリ名です。|
-|appconfiguration|[windowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md)|このキオスク構成で使用されるアプリ構成。|
-|userAccountsConfiguration|[windowskioskuser](../resources/intune-deviceconfig-windowskioskuser.md)コレクション|このキオスク構成にロックされるユーザーアカウント。 このコレクションには、最大100個の要素を含めることができます。|
+|appConfiguration|[windowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md)|このキオスク構成で使用されるアプリ構成。|
+|userAccountsConfiguration|[Windowskioskuser](../resources/intune-deviceconfig-windowskioskuser.md)コレクション|このキオスク構成にロックされるユーザーアカウント。 このコレクションには、最大100個の要素を含めることができます。|
 
 ## <a name="relationships"></a>関係
 なし
@@ -68,7 +68,6 @@ ms.locfileid: "32574618"
   ]
 }
 ```
-
 
 
 

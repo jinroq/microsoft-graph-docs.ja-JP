@@ -1,23 +1,23 @@
 ---
-title: iospkcscertificateprofile の取得
-description: iospkcscertificateprofile オブジェクトのプロパティとリレーションシップを読み取ります。
-author: tfitzmac
+title: IosPkcsCertificateProfile の取得
+description: IosPkcsCertificateProfile オブジェクトのプロパティとリレーションシップを読み取ります。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ed0faddd67cd4c38a11b23af456d2290171829e2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7e85dbe6522841ab3ec2c0ef5a1d53aec5c601dd
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32467282"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33923385"
 ---
-# <a name="get-iospkcscertificateprofile"></a>iospkcscertificateprofile の取得
+# <a name="get-iospkcscertificateprofile"></a>IosPkcsCertificateProfile の取得
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[iospkcscertificateprofile](../resources/intune-deviceconfig-iospkcscertificateprofile.md)オブジェクトのプロパティとリレーションシップを読み取ります。
+[Iospkcscertificateprofile](../resources/intune-deviceconfig-iospkcscertificateprofile.md)オブジェクトのプロパティとリレーションシップを読み取ります。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -52,7 +52,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[iospkcscertificateprofile](../resources/intune-deviceconfig-iospkcscertificateprofile.md)オブジェクトを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[Iospkcscertificateprofile](../resources/intune-deviceconfig-iospkcscertificateprofile.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 
@@ -94,7 +94,6 @@ Content-Length: 992
   }
 }
 ```
-
 
 
 

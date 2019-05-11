@@ -1,21 +1,21 @@
 ---
 title: mobileThreatPartnerTenantState 列挙型
 description: このテナントのパートナーの状態。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b145805247a41f28e957cc024941d0e0448a73ff
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c5565ecff080ce8c70f1dbf3885b39477bdbe978
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566487"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940177"
 ---
 # <a name="mobilethreatpartnertenantstate-enum-type"></a>mobileThreatPartnerTenantState 列挙型
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 このテナントのパートナーの状態。
 
@@ -23,10 +23,9 @@ ms.locfileid: "32566487"
 |メンバー|値|説明|
 |:---|:---|:---|
 |無効|.0|パートナーは利用できません。|
-|使用可能|1 |パートナーが利用できます。|
-|enabled|2 |パートナーが有効になっている。|
-|なかっ|3 |パートナーが応答していません。|
-
+|使用可能|1-d|パートナーが利用できます。|
+|enabled|pbm-2|パートナーが有効になっている。|
+|なかっ|1/3|パートナーが応答していません。|
 
 
 
