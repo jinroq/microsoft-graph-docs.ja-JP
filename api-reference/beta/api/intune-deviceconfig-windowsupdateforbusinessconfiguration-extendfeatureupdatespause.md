@@ -1,21 +1,21 @@
 ---
 title: extendFeatureUpdatesPause アクション
 description: 機能の更新プログラムが、ビジネスリングの Windows Update によって一時停止するまで停止します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 99026500c43824343b9cb7e5fe9501dcba1189c1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: aef0e53d4b9a68a54f967a7f5cdce5dd18282dea
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32511663"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33917409"
 ---
 # <a name="extendfeatureupdatespause-action"></a>extendFeatureUpdatesPause アクション
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 機能の更新プログラムが、ビジネスリングの Windows Update によって一時停止するまで停止します。
 
@@ -64,7 +64,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{dev
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

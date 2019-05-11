@@ -1,23 +1,23 @@
 ---
 title: リスト managedDeviceMobileAppConfigurationDeviceStatuses
-description: managedDeviceMobileAppConfigurationDeviceStatus オブジェクトのプロパティとリレーションシップをリストします。
-author: tfitzmac
+description: ManagedDeviceMobileAppConfigurationDeviceStatus オブジェクトのプロパティとリレーションシップをリストします。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 137b7a5a3e0dc956984348521053f06b594e240c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2f6c2cfa70cea352d740ef87789ab31d721f2801
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32493294"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935630"
 ---
 # <a name="list-manageddevicemobileappconfigurationdevicestatuses"></a>リスト managedDeviceMobileAppConfigurationDeviceStatuses
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md)オブジェクトのプロパティとリレーションシップをリストします。
+[ManagedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md)オブジェクトのプロパティとリレーションシップをリストします。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -82,7 +82,6 @@ Content-Length: 585
   ]
 }
 ```
-
 
 
 

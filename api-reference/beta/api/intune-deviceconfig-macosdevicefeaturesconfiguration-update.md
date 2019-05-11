@@ -1,21 +1,21 @@
 ---
 title: macOSDeviceFeaturesConfiguration の更新
 description: macOSDeviceFeaturesConfiguration オブジェクトのプロパティを更新します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1d3d583d894a11edc6d95a95f2b1869b08467689
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 64588b45886d8abfbc6f7598d626c3bb47dfcdc9
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32518738"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33922825"
 ---
 # <a name="update-macosdevicefeaturesconfiguration"></a>macOSDeviceFeaturesConfiguration の更新
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [macOSDeviceFeaturesConfiguration](../resources/intune-deviceconfig-macosdevicefeaturesconfiguration.md) オブジェクトのプロパティを更新します。
 
@@ -52,33 +52,33 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列型 (String)|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|id|文字列|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |supportsScopeTags|Boolean|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|説明|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|description|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|管理者が指定した、デバイス構成の名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|放映した print行先|[放映 printdestination](../resources/intune-deviceconfig-airprintdestination.md)コレクション|常に表示される必要がある、放映中の印刷プリンターの配列です。 このコレクションには、最大で 500 個の要素を含めることができます。 [appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md)から継承します。|
-|autoLaunchItems|[macoslaunchitem](../resources/intune-deviceconfig-macoslaunchitem.md)コレクション|ユーザーがログインしたときに起動するアプリケーション、ファイル、フォルダー、およびその他のアイテムのリスト。 このコレクションには、最大で 500 個の要素を含めることができます。|
-|adminshoの stinfo|Boolean|ログインウィンドウに管理ホスト情報を表示するかどうかを指定します。|
-|loginwindowtext|String|ログインウィンドウに表示されるカスタムテキスト。|
+|放映した Print行先|[放映 Printdestination](../resources/intune-deviceconfig-airprintdestination.md)コレクション|常に表示される必要がある、放映中の印刷プリンターの配列です。 このコレクションには、最大で 500 個の要素を含めることができます。 [AppleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md)から継承します。|
+|autoLaunchItems|[Macoslaunchitem](../resources/intune-deviceconfig-macoslaunchitem.md)コレクション|ユーザーがログインしたときに起動するアプリケーション、ファイル、フォルダー、およびその他のアイテムのリスト。 このコレクションには、最大で 500 個の要素を含めることができます。|
+|Adminshoの Stinfo|Boolean|ログインウィンドウに管理ホスト情報を表示するかどうかを指定します。|
+|loginWindowText|String|ログインウィンドウに表示されるカスタムテキスト。|
 |authorizedUsersListHidden|Boolean|ログインウィンドウで [名前とパスワード] ダイアログを表示するか、ユーザーの一覧を表示するかを指定します。|
 |authorizedUsersListHideLocalUsers|Boolean|ログインウィンドウの承認済みユーザーの一覧に、ネットワークユーザーとシステムユーザーのみを表示するかどうかを指定します。|
 |authorizedUsersListHideMobileAccounts|Boolean|ログインウィンドウの承認されたユーザーの一覧でモバイルユーザーを非表示にするかどうかを指定します。|
 |authorizedUsersListIncludeNetworkUsers|Boolean|[ログイン] ウィンドウで、承認されたユーザーの一覧にネットワークユーザーを表示するかどうかを指定します。|
 |authorizedUsersListHideAdminUsers|Boolean|ログインウィンドウの承認されたユーザーの一覧で管理者ユーザーを非表示にするかどうかを指定します。|
 |authorizedUsersListShowOtherManagedUsers|Boolean|[ログイン] ウィンドウで、承認されたユーザーの一覧に他のユーザーを表示するかどうかを指定します。|
-|shutdowndisabled|Boolean|ログインウィンドウで [シャットダウン] ボタンの項目を非表示にするかどうかを指定します。|
+|shutDownDisabled|Boolean|ログインウィンドウで [シャットダウン] ボタンの項目を非表示にするかどうかを指定します。|
 |restartDisabled|Boolean|ログインウィンドウで [再起動] ボタンの項目を非表示にするかどうかを指定します。|
 |sleepDisabled|Boolean|ログインウィンドウで [スリープ] メニュー項目を非表示にするかどうかを指定します。|
-|consoleaccessdisabled|Boolean|他のユーザーが ' >console> 特殊ユーザー名の使用を無視するかどうか。|
+|consoleAccessDisabled|Boolean|他のユーザーが ' >console> 特殊ユーザー名の使用を無視するかどうか。|
 |shutDownDisabledWhileLoggedIn|Boolean|ログインウィンドウの [シャットダウン] メニュー項目が、ユーザーのログイン中に無効になるかどうか。|
 |restartDisabledWhileLoggedIn|Boolean|ログインウィンドウの [再起動] メニュー項目が、ユーザーのログイン中に無効になるかどうか。|
 |powerOffDisabledWhileLoggedIn|Boolean|ログインウィンドウの [電源オフ] メニュー項目が、ユーザーのログイン中に無効になるかどうかを指定します。|
 |logOutDisabledWhileLoggedIn|Boolean|ログインウィンドウの [Log Out] メニュー項目が、ユーザーのログイン中に無効になるかどうかを指定します。|
-|screenlockdisableimmediate|Boolean|即時画面ロック機能を無効にするかどうかを指定します。|
+|screenLockDisableImmediate|Boolean|即時画面ロック機能を無効にするかどうかを指定します。|
 
 
 
@@ -193,7 +193,6 @@ Content-Length: 1506
   "screenLockDisableImmediate": true
 }
 ```
-
 
 
 

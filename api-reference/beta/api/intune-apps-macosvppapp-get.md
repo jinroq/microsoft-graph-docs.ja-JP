@@ -1,23 +1,23 @@
 ---
-title: macOsVppApp を取得する
-description: macOsVppApp オブジェクトのプロパティとリレーションシップを読み取ります。
-author: tfitzmac
+title: MacOsVppApp を取得する
+description: MacOsVppApp オブジェクトのプロパティとリレーションシップを読み取ります。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f847cf750b423b5c9ba627594db8126fc9e1f60c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 216865b97869c51d22b800fa52f8633164e7832e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32495275"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935847"
 ---
-# <a name="get-macosvppapp"></a>macOsVppApp を取得する
+# <a name="get-macosvppapp"></a>MacOsVppApp を取得する
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[macOsVppApp](../resources/intune-apps-macosvppapp.md)オブジェクトのプロパティとリレーションシップを読み取ります。
+[MacOsVppApp](../resources/intune-apps-macosvppapp.md)オブジェクトのプロパティとリレーションシップを読み取ります。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -129,7 +129,6 @@ Content-Length: 2170
   }
 }
 ```
-
 
 
 

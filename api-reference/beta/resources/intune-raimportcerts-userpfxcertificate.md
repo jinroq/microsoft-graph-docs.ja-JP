@@ -1,44 +1,44 @@
 ---
 title: userPFXCertificate リソースの種類
 description: ユーザーの PFX 証明書に必要なすべての情報をカプセル化するエンティティ。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 31a634c8c442cdbf53034b7d39062c1a3d0f5a01
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e9c4af075d026c036b31ac9083ff05aec07b0bb6
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566403"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940065"
 ---
 # <a name="userpfxcertificate-resource-type"></a>userPFXCertificate リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 ユーザーの PFX 証明書に必要なすべての情報をカプセル化するエンティティ。
 
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[リスト userPFXCertificates](../api/intune-raimportcerts-userpfxcertificate-list.md)|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)コレクション|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)オブジェクトのプロパティとリレーションシップをリストします。|
-|[userPFXCertificate を取得する](../api/intune-raimportcerts-userpfxcertificate-get.md)|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[userPFXCertificate を作成する](../api/intune-raimportcerts-userpfxcertificate-create.md)|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)|新しい[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)オブジェクトを作成します。|
-|[userPFXCertificate の削除](../api/intune-raimportcerts-userpfxcertificate-delete.md)|なし|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)を削除します。|
-|[userPFXCertificate の更新](../api/intune-raimportcerts-userpfxcertificate-update.md)|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)オブジェクトのプロパティを更新します。|
+|[リスト userPFXCertificates](../api/intune-raimportcerts-userpfxcertificate-list.md)|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)コレクション|[UserPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)オブジェクトのプロパティとリレーションシップをリストします。|
+|[UserPFXCertificate を取得する](../api/intune-raimportcerts-userpfxcertificate-get.md)|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)|[UserPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[UserPFXCertificate を作成する](../api/intune-raimportcerts-userpfxcertificate-create.md)|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)|新しい[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)オブジェクトを作成します。|
+|[UserPFXCertificate の削除](../api/intune-raimportcerts-userpfxcertificate-delete.md)|None|[UserPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)を削除します。|
+|[UserPFXCertificate の更新](../api/intune-raimportcerts-userpfxcertificate-update.md)|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)|[UserPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|PFX 証明書の一意識別子。|
-|拇印|String|PFX 証明書の sha-1 拇印。|
+|id|文字列|PFX 証明書の一意識別子。|
+|拇印|String|PFX 証明書の SHA-1 拇印。|
 |intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|展開の観点から見た証明書の目的。 可能な値は、`unassigned`、`smimeEncryption`、`smimeSigning`、`vpn`、`wifi` です。|
 |userPrincipalName|String|PFX 証明書のユーザープリンシパル名。|
 |startDateTime|DateTimeOffset|証明書の有効期間の開始日/時刻。|
 |expirationDateTime|DateTimeOffset|証明書の有効期限の日付/時刻。|
 |プロバイダー|String|この blob を暗号化するために使用される暗号化プロバイダー。|
-|keyName|String|blob の暗号化に使用された (プロバイダー内の) キーの名前。|
+|keyName|String|Blob の暗号化に使用された (プロバイダー内の) キーの名前。|
 |paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|暗号化/復号化時にプロバイダーによって使用されるパディング方式。 使用可能な値: `none`、`pkcs1`、`oaepSha1`、`oaepSha256`、`oaepSha384`、`oaepSha512`。|
 |encryptedPfxBlob|Binary|暗号化された PFX blob。|
 |encryptedPfxPassword|String|暗号化された PFX パスワード。|
@@ -74,6 +74,7 @@ ms.locfileid: "32566403"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

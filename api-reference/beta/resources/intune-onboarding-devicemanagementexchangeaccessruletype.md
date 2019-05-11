@@ -1,21 +1,21 @@
 ---
-title: devicemanagementexchangeaccessruletype 列挙型
+title: deviceManagementExchangeAccessRuleType 列挙型
 description: このアクセス規則が適用されるデバイスの種類を定義する条件
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 65beba1c6a18d5da19407eb7d0aea90670d3b61a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9b86d9676c6fbdd66c651824177f24a049f536be
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566650"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940387"
 ---
-# <a name="devicemanagementexchangeaccessruletype-enum-type"></a>devicemanagementexchangeaccessruletype 列挙型
+# <a name="devicemanagementexchangeaccessruletype-enum-type"></a>deviceManagementExchangeAccessRuleType 列挙型
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 このアクセス規則が適用されるデバイスの種類を定義する条件
 
@@ -23,8 +23,7 @@ ms.locfileid: "32566650"
 |メンバー|値|説明|
 |:---|:---|:---|
 |製品|.0|デバイスのファミリ|
-|model|1 |デバイスの特定のモデル|
-
+|model|1-d|デバイスの特定のモデル|
 
 
 

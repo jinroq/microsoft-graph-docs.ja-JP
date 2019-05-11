@@ -1,23 +1,23 @@
 ---
-title: dataSharingConsent を取得する
-description: dataSharingConsent オブジェクトのプロパティとリレーションシップを読み取ります。
-author: tfitzmac
+title: DataSharingConsent を取得する
+description: DataSharingConsent オブジェクトのプロパティとリレーションシップを読み取ります。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 816f87b3345fb925e148ff794da16caff3647b50
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 003e46f4a10d3744fc53c562b619361b5a01fb94
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32465973"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33910158"
 ---
-# <a name="get-datasharingconsent"></a>dataSharingConsent を取得する
+# <a name="get-datasharingconsent"></a>DataSharingConsent を取得する
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[dataSharingConsent](../resources/intune-devices-datasharingconsent.md)オブジェクトのプロパティとリレーションシップを読み取ります。
+[DataSharingConsent](../resources/intune-devices-datasharingconsent.md)オブジェクトのプロパティとリレーションシップを読み取ります。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -80,7 +80,6 @@ Content-Length: 417
   }
 }
 ```
-
 
 
 

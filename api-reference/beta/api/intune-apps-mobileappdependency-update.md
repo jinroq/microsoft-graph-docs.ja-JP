@@ -1,23 +1,23 @@
 ---
-title: mobileAppDependency の更新
-description: mobileAppDependency オブジェクトのプロパティを更新します。
-author: tfitzmac
+title: MobileAppDependency の更新
+description: MobileAppDependency オブジェクトのプロパティを更新します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8648fb92953ef8ece7be672e746bffbb63393859
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f9fa86d9b89a8a118334606c302e44d0d749fac6
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32489451"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935159"
 ---
-# <a name="update-mobileappdependency"></a>mobileAppDependency の更新
+# <a name="update-mobileappdependency"></a>MobileAppDependency の更新
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[mobileAppDependency](../resources/intune-apps-mobileappdependency.md)オブジェクトのプロパティを更新します。
+[MobileAppDependency](../resources/intune-apps-mobileappdependency.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -50,11 +50,11 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/relationships/{mobileAppRela
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|リレーションシップエンティティ id。[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)から継承します。|
-|targetId|String|ターゲットの子モバイルアプリのアプリ id。[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)から継承します。|
-|targetdisplayname|String|ターゲットの子モバイルアプリの表示名。 [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)から継承します。|
-|dependencytype|[mobileAppDependecyType](../resources/intune-apps-mobileappdependecytype.md)|親アプリと子アプリ間の依存関係の種類。 可能な値は、`detect`、`autoInstall` です。|
-|dependentappcount|Int32|子アプリが持つ依存関係の合計数。|
+|id|String|リレーションシップエンティティ id。[MobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)から継承します。|
+|targetId|String|ターゲットの子モバイルアプリのアプリ id。[MobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)から継承します。|
+|targetDisplayName|String|ターゲットの子モバイルアプリの表示名。 [MobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)から継承します。|
+|dependencyType|[mobileAppDependencyType](../resources/intune-apps-mobileappdependencytype.md)|親アプリと子アプリ間の依存関係の種類。 可能な値は、`detect`、`autoInstall` です。|
+|dependentAppCount|Int32|子アプリが持つ依存関係の合計数。|
 
 
 
@@ -95,7 +95,6 @@ Content-Length: 260
   "dependentAppCount": 1
 }
 ```
-
 
 
 

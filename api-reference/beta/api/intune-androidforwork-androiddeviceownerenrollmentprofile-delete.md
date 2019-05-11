@@ -1,23 +1,23 @@
 ---
-title: androidDeviceOwnerEnrollmentProfile の削除
-description: androidDeviceOwnerEnrollmentProfile を削除します。
-author: tfitzmac
+title: AndroidDeviceOwnerEnrollmentProfile の削除
+description: AndroidDeviceOwnerEnrollmentProfile を削除します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4a39f2aaac5dc3fb458d9be9d0a3085ff64bae33
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f85457c3f99ed72a9bbd95b3d0959ca9b6d5d05e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32500931"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33938633"
 ---
-# <a name="delete-androiddeviceownerenrollmentprofile"></a>androidDeviceOwnerEnrollmentProfile の削除
+# <a name="delete-androiddeviceownerenrollmentprofile"></a>AndroidDeviceOwnerEnrollmentProfile の削除
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md)を削除します。
+[AndroidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md)を削除します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -62,7 +62,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/androidDeviceOwnerEnrol
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

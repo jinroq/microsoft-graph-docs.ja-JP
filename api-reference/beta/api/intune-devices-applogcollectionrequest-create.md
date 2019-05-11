@@ -1,21 +1,21 @@
 ---
-title: appLogCollectionRequest を作成する
+title: AppLogCollectionRequest を作成する
 description: 新しい appLogCollectionRequest オブジェクトを作成します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 716daa9f3abea68a86d9fc7947af5d9d5d2dbb91
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a1308bc68e8a3bd17ab5fc9ac9262395c92f2fda
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32466071"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33910610"
 ---
-# <a name="create-applogcollectionrequest"></a>appLogCollectionRequest を作成する
+# <a name="create-applogcollectionrequest"></a>AppLogCollectionRequest を作成する
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)オブジェクトを作成します。
 
@@ -51,9 +51,9 @@ POST /deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingE
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|一意の識別子。 これは userId_DeviceId_AppId id です。|
-|status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|ログのアップロードの状態。 使用可能な値は、`pending`、`completed`、`failed` です。|
+|status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|ログのアップロードの状態。 可能な値は、`pending`、`completed`、`failed` です。|
 |errorMessage|String|アップロードプロセス中にエラーメッセージが表示される場合|
-|customlogfolders|String collection|ログフォルダーの一覧。 |
+|customLogFolders|String collection|ログフォルダーの一覧。 |
 |CompletedDateTime|DateTimeOffset|アップロードログ要求がターミナル状態に達した時刻|
 
 
@@ -99,7 +99,6 @@ Content-Length: 306
   "completedDateTime": "2016-12-31T23:58:52.3534526-08:00"
 }
 ```
-
 
 
 
