@@ -1,21 +1,21 @@
 ---
 title: keyValuePair リソースの種類
 description: カスタム設定の保存用のキーと値のペア
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5a8feecabeca3cfc916c0bd3ce1b87cab3a68809
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: cc34bad30ff5bc33f60e6ec4e561e6644b97cc37
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32525244"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33938661"
 ---
 # <a name="keyvaluepair-resource-type"></a>keyValuePair リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 カスタム設定の保存用のキーと値のペア
 
@@ -25,7 +25,7 @@ ms.locfileid: "32525244"
 |name|String|キーと値のペアの名前|
 |value|文字列型 (String)|キーと値のペアの値|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記

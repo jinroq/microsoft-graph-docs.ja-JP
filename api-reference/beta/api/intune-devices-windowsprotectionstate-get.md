@@ -1,23 +1,23 @@
 ---
-title: windowsprotectionstate の取得
-description: windowsprotectionstate オブジェクトのプロパティとリレーションシップを読み取ります。
-author: tfitzmac
+title: WindowsProtectionState の取得
+description: WindowsProtectionState オブジェクトのプロパティとリレーションシップを読み取ります。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 35fb6f7c57e3d526db0a4dfeb4e9639d5c329597
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bba601f4edc0f4ff3aafe11f4f10f93faea34528
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534256"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33909072"
 ---
-# <a name="get-windowsprotectionstate"></a>windowsprotectionstate の取得
+# <a name="get-windowsprotectionstate"></a>WindowsProtectionState の取得
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[windowsprotectionstate](../resources/intune-devices-windowsprotectionstate.md)オブジェクトのプロパティとリレーションシップを読み取ります。
+[Windowsprotectionstate](../resources/intune-devices-windowsprotectionstate.md)オブジェクトのプロパティとリレーションシップを読み取ります。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -92,7 +92,6 @@ Content-Length: 971
   }
 }
 ```
-
 
 
 

@@ -1,21 +1,21 @@
 ---
 title: Get webApp
 description: webApp オブジェクトのプロパティとリレーションシップを読み取ります。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0e1bd6ff98e08127eee8c881c01d2b961dfe355b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a02d1aac676b0039427685c530b72781fa2e745b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32488709"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934853"
 ---
 # <a name="get-webapp"></a>Get webApp
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [webApp](../resources/intune-apps-webapp.md) オブジェクトのプロパティとリレーションシップを読み取ります。
 
@@ -101,7 +101,6 @@ Content-Length: 1024
   }
 }
 ```
-
 
 
 

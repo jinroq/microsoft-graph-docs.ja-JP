@@ -1,23 +1,23 @@
 ---
-title: androidmanagedstoreapp の取得
-description: androidmanagedstoreapp オブジェクトのプロパティとリレーションシップを読み取ります。
-author: tfitzmac
+title: AndroidManagedStoreApp の取得
+description: AndroidManagedStoreApp オブジェクトのプロパティとリレーションシップを読み取ります。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 51934e39cea37d2bd3f0f51c875b8c6a470ec49b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: eaa5cf3073b22aa6c1bf01f1f109778fcb93bb8e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32496885"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33937387"
 ---
-# <a name="get-androidmanagedstoreapp"></a>androidmanagedstoreapp の取得
+# <a name="get-androidmanagedstoreapp"></a>AndroidManagedStoreApp の取得
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[androidmanagedstoreapp](../resources/intune-apps-androidmanagedstoreapp.md)オブジェクトのプロパティとリレーションシップを読み取ります。
+[Androidmanagedstoreapp](../resources/intune-apps-androidmanagedstoreapp.md)オブジェクトのプロパティとリレーションシップを読み取ります。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -52,7 +52,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[androidmanagedstoreapp](../resources/intune-apps-androidmanagedstoreapp.md)オブジェクトを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[Androidmanagedstoreapp](../resources/intune-apps-androidmanagedstoreapp.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 
@@ -105,7 +105,6 @@ Content-Length: 1191
   }
 }
 ```
-
 
 
 

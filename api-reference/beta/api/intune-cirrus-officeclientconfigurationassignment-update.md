@@ -1,23 +1,23 @@
 ---
-title: officeClientConfigurationAssignment の更新
-description: officeClientConfigurationAssignment オブジェクトのプロパティを更新します。
+title: OfficeClientConfigurationAssignment の更新
+description: OfficeClientConfigurationAssignment オブジェクトのプロパティを更新します。
 localization_priority: Normal
-author: tfitzmac
+author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 9820bfd08d509ee0eb5903a847be62e4d417b346
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 80b748ddff1926d0f2794c7fc9d65cde05e5faa2
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32483118"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934041"
 ---
-# <a name="update-officeclientconfigurationassignment"></a>officeClientConfigurationAssignment の更新
+# <a name="update-officeclientconfigurationassignment"></a>OfficeClientConfigurationAssignment の更新
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md)オブジェクトのプロパティを更新します。
+[OfficeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。

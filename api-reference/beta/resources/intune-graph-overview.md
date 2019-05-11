@@ -1,15 +1,15 @@
 ---
 title: Intune Graph API の使用 - Microsoft Graph API
 description: テナント組織、そのデバイス、アプリ、アクセス、リソースを管理するために使用できる、Intune エンドポイント用 Microsoft Graph API (REST) の一覧を示します。
-author: tfitzmac
+author: rolyon
 localization_priority: Priority
 ms.prod: intune
-ms.openlocfilehash: fc254772a5b4db131a5cda45fc83b336bf12f993
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 883fce914176b2e08d49e4de414cc7c09776714a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575962"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941192"
 ---
 # <a name="working-with-intune-in-microsoft-graph"></a>Microsoft Graph での Intune の操作  
 

@@ -1,23 +1,23 @@
 ---
-title: userappinstallstatus の更新
-description: userappinstallstatus オブジェクトのプロパティを更新します。
-author: tfitzmac
+title: UserAppInstallStatus の更新
+description: UserAppInstallStatus オブジェクトのプロパティを更新します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eb999de52c39bc3e0a0e97c4e80d3043bb700165
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9f8cbcec45e1575c2bde8832c893c41a0eac0010
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32488821"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934891"
 ---
-# <a name="update-userappinstallstatus"></a>userappinstallstatus の更新
+# <a name="update-userappinstallstatus"></a>UserAppInstallStatus の更新
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[userappinstallstatus](../resources/intune-apps-userappinstallstatus.md)オブジェクトのプロパティを更新します。
+[Userappinstallstatus](../resources/intune-apps-userappinstallstatus.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -44,13 +44,13 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstall
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求本文で、 [userappinstallstatus](../resources/intune-apps-userappinstallstatus.md)オブジェクトの JSON 表記を指定します。
+要求本文で、 [Userappinstallstatus](../resources/intune-apps-userappinstallstatus.md)オブジェクトの JSON 表記を指定します。
 
-次の表に、 [userappinstallstatus](../resources/intune-apps-userappinstallstatus.md)の作成時に必要なプロパティを示します。
+次の表に、 [Userappinstallstatus](../resources/intune-apps-userappinstallstatus.md)の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|id|文字列|エンティティのキー。|
 |userName|String|ユーザー名です。|
 |userPrincipalName|String|ユーザープリンシパル名。|
 |installedDeviceCount|Int32|インストールされたデバイスの数です。|
@@ -60,7 +60,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstall
 
 
 ## <a name="response"></a>応答
-成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[userappinstallstatus](../resources/intune-apps-userappinstallstatus.md)オブジェクトを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[Userappinstallstatus](../resources/intune-apps-userappinstallstatus.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 
@@ -98,7 +98,6 @@ Content-Length: 288
   "notInstalledDeviceCount": 7
 }
 ```
-
 
 
 

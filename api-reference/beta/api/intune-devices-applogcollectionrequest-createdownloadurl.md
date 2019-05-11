@@ -1,21 +1,21 @@
 ---
 title: createDownloadUrl アクション
 description: まだ文書化されていません
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 91cbfb4bba360ca11558e8dd0c01cf8a854a9c5e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 762835b58be334b72a2f67935cefcae8c6263e12
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32466085"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33910526"
 ---
 # <a name="createdownloadurl-action"></a>createDownloadUrl アクション
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 まだ文書化されていません
 
@@ -73,7 +73,6 @@ Content-Length: 239
   }
 }
 ```
-
 
 
 

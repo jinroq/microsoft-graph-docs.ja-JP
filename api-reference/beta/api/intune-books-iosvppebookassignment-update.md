@@ -1,21 +1,21 @@
 ---
 title: iosVppEBookAssignment の更新
 description: iosVppEBookAssignment オブジェクトのプロパティを更新します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 61cf121b89cd89a56c502fb92f58c4e8636a3652
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f1484118b430d0cfaa426329fded1eb1df50ee21
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32483237"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934251"
 ---
 # <a name="update-iosvppebookassignment"></a>iosVppEBookAssignment の更新
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md) オブジェクトのプロパティを更新します。
 
@@ -52,7 +52,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{managedEB
 |:---|:---|:---|
 |id|String|エンティティのキー。 [managedEBookAssignment](../resources/intune-books-managedebookassignment.md) から継承します|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|電子ブックの割り当て先。 [managedEBookAssignment](../resources/intune-books-managedebookassignment.md) から継承します|
-|installIntent|[installIntent](../resources/intune-shared-installintent.md)|電子ブックのインストールの目的。 [managedebookassignment](../resources/intune-books-managedebookassignment.md)から継承します。 可能な値は、`available`、`required`、`uninstall`、`availableWithoutEnrollment` です。|
+|installIntent|[installIntent](../resources/intune-shared-installintent.md)|電子ブックのインストールの目的。 [Managedebookassignment](../resources/intune-books-managedebookassignment.md)から継承します。 可能な値は、`available`、`required`、`uninstall`、`availableWithoutEnrollment` です。|
 
 
 
@@ -93,7 +93,6 @@ Content-Length: 242
   "installIntent": "required"
 }
 ```
-
 
 
 

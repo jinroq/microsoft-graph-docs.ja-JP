@@ -1,26 +1,26 @@
 ---
 title: deliveryOptimizationBandwidthAbsolute リソースの種類
 description: 帯域幅制限 (キロバイト/秒)。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 791748adb7620ed23082a597d2b62855467a5048
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: addb48091e3682019a508b7f19832b5acccd6aa7
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534837"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33947289"
 ---
 # <a name="deliveryoptimizationbandwidthabsolute-resource-type"></a>deliveryOptimizationBandwidthAbsolute リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 帯域幅制限 (キロバイト/秒)。
 
 
-[deliveryOptimizationBandwidth](../resources/intune-deviceconfig-deliveryoptimizationbandwidth.md)から継承します。
+[DeliveryOptimizationBandwidth](../resources/intune-deviceconfig-deliveryoptimizationbandwidth.md)から継承します。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
@@ -30,7 +30,7 @@ ms.locfileid: "32534837"
 |maximumUploadBandwidthInKilobytesPerSecond|Int64|配信の最適化 (0-4000000) を使用して、デバイスがすべての同時アップロードアクティビティで使用する最大アップロード帯域幅 (キロバイト/秒) を指定します。 有効な値は 0 ~ 400万
 既定値は0で、無制限に可能な帯域幅を許可します (アップロード帯域幅の使用を最小限にするために最適化されています)。 有効な値は 0 ~ 400万|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -47,7 +47,6 @@ ms.locfileid: "32534837"
   "maximumUploadBandwidthInKilobytesPerSecond": 1024
 }
 ```
-
 
 
 

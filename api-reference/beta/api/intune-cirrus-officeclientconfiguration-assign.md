@@ -2,20 +2,20 @@
 title: assign アクション
 description: ポリシーの対象グループをすべて置換します。
 localization_priority: Normal
-author: tfitzmac
+author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: b6dfde86fe1163ea7cb9f86720a979c79e99671c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 012ddb6cd98540c1e1b46e4956c4163a780f9f1e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32483440"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934083"
 ---
 # <a name="assign-action"></a>アクションの割り当て
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 ポリシーの対象グループをすべて置換します。
 
@@ -50,7 +50,7 @@ POST /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/ass
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|officeConfigurationAssignments|[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md)コレクション|office の構成割り当ての一覧|
+|officeConfigurationAssignments|[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md)コレクション|Office の構成割り当ての一覧|
 
 
 

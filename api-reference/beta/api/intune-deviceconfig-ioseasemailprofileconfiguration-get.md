@@ -1,23 +1,23 @@
 ---
-title: ioseasemailprofileconfiguration の取得
-description: ioseasemailprofileconfiguration プロパティオブジェクトのプロパティとリレーションシップを読み取ります。
-author: tfitzmac
+title: IosEasEmailProfileConfiguration の取得
+description: IosEasEmailProfileConfiguration プロパティオブジェクトのプロパティとリレーションシップを読み取ります。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0e4f8e0536a17323694c30a37fd6121ce8845e54
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2aa7758b26f9c2aa63856527fb059b54c7d3b260
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32467492"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33923603"
 ---
-# <a name="get-ioseasemailprofileconfiguration"></a>ioseasemailprofileconfiguration の取得
+# <a name="get-ioseasemailprofileconfiguration"></a>IosEasEmailProfileConfiguration の取得
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[ioseasemailprofileconfiguration](../resources/intune-deviceconfig-ioseasemailprofileconfiguration.md)プロパティオブジェクトのプロパティとリレーションシップを読み取ります。
+[Ioseasemailprofileconfiguration](../resources/intune-deviceconfig-ioseasemailprofileconfiguration.md)プロパティオブジェクトのプロパティとリレーションシップを読み取ります。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -52,7 +52,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[ioseasemailprofileconfiguration](../resources/intune-deviceconfig-ioseasemailprofileconfiguration.md) /暗号化オブジェクトを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[Ioseasemailprofileconfiguration](../resources/intune-deviceconfig-ioseasemailprofileconfiguration.md) /暗号化オブジェクトを返します。
 
 ## <a name="example"></a>例
 
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1450
+Content-Length: 1545
 
 {
   "value": {
@@ -103,11 +103,12 @@ Content-Length: 1450
     "smimeSigningCertificateUserOverrideEnabled": true,
     "smimeEncryptionCertificateUserOverrideEnabled": true,
     "requireSsl": true,
-    "useOAuth": true
+    "useOAuth": true,
+    "signingCertificateType": "certificate",
+    "encryptionCertificateType": "certificate"
   }
 }
 ```
-
 
 
 

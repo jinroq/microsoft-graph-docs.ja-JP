@@ -1,32 +1,32 @@
 ---
-title: windowskioskautologon リソースの種類
+title: windowsKioskAutologon リソースの種類
 description: 自動ログオンのキオスク構成を識別するために使用されるクラス
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dde52acf7a90f60d5065c4c12e0b0221d0afc379
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9a3f90bb52d05e0cd5f3c46da268cf2829aa8c2f
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32522427"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943908"
 ---
-# <a name="windowskioskautologon-resource-type"></a>windowskioskautologon リソースの種類
+# <a name="windowskioskautologon-resource-type"></a>windowsKioskAutologon リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 自動ログオンのキオスク構成を識別するために使用されるクラス
 
 
-[windowskioskuser](../resources/intune-deviceconfig-windowskioskuser.md)からの継承
+[Windowskioskuser](../resources/intune-deviceconfig-windowskioskuser.md)からの継承
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -41,7 +41,6 @@ ms.locfileid: "32522427"
   "@odata.type": "#microsoft.graph.windowsKioskAutologon"
 }
 ```
-
 
 
 
