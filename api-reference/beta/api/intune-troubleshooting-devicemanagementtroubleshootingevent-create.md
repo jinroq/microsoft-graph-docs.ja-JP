@@ -1,34 +1,34 @@
 ---
 title: deviceManagementTroubleshootingEvent の作成
 description: 新しい deviceManagementTroubleshootingEvent オブジェクトを作成します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7cfed260ba694ca40419525097f0dc75bca951e2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: dab72c527651e1975c236cc13ce4a420d00ddbca
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526742"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33898747"
 ---
-# <a name="create-devicemanagementtroubleshootingevent"></a><span data-ttu-id="8a4da-103">deviceManagementTroubleshootingEvent の作成</span><span class="sxs-lookup"><span data-stu-id="8a4da-103">Create deviceManagementTroubleshootingEvent</span></span>
+# <a name="create-devicemanagementtroubleshootingevent"></a><span data-ttu-id="f74fa-103">deviceManagementTroubleshootingEvent の作成</span><span class="sxs-lookup"><span data-stu-id="f74fa-103">Create deviceManagementTroubleshootingEvent</span></span>
 
-> <span data-ttu-id="8a4da-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="8a4da-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="f74fa-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f74fa-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="8a4da-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="8a4da-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="f74fa-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="f74fa-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="8a4da-106">新しい [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="8a4da-106">Create a new [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) object.</span></span>
+<span data-ttu-id="f74fa-106">新しい [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="f74fa-106">Create a new [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="8a4da-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="8a4da-107">Prerequisites</span></span>
-<span data-ttu-id="8a4da-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8a4da-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="f74fa-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="f74fa-107">Prerequisites</span></span>
+<span data-ttu-id="f74fa-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f74fa-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="8a4da-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="8a4da-110">Permission type</span></span>|<span data-ttu-id="8a4da-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="8a4da-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="f74fa-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="f74fa-110">Permission type</span></span>|<span data-ttu-id="f74fa-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="f74fa-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="8a4da-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="8a4da-112">Delegated (work or school account)</span></span>|<span data-ttu-id="8a4da-113">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8a4da-113">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="8a4da-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="8a4da-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="8a4da-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="8a4da-115">Not supported.</span></span>|
-|<span data-ttu-id="8a4da-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="8a4da-116">Application</span></span>|<span data-ttu-id="8a4da-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="8a4da-117">Not supported.</span></span>|
+|<span data-ttu-id="f74fa-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="f74fa-112">Delegated (work or school account)</span></span>|<span data-ttu-id="f74fa-113">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f74fa-113">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="f74fa-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="f74fa-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="f74fa-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f74fa-115">Not supported.</span></span>|
+|<span data-ttu-id="f74fa-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="f74fa-116">Application</span></span>|<span data-ttu-id="f74fa-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f74fa-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="8a4da-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="8a4da-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f74fa-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="f74fa-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,35 +37,35 @@ ms.locfileid: "32526742"
 POST /deviceManagement/troubleshootingEvents
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="8a4da-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="8a4da-119">Request headers</span></span>
-|<span data-ttu-id="8a4da-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="8a4da-120">Header</span></span>|<span data-ttu-id="8a4da-121">値</span><span class="sxs-lookup"><span data-stu-id="8a4da-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f74fa-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f74fa-119">Request headers</span></span>
+|<span data-ttu-id="f74fa-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f74fa-120">Header</span></span>|<span data-ttu-id="f74fa-121">値</span><span class="sxs-lookup"><span data-stu-id="f74fa-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="8a4da-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="8a4da-122">Authorization</span></span>|<span data-ttu-id="8a4da-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="8a4da-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="8a4da-124">承諾</span><span class="sxs-lookup"><span data-stu-id="8a4da-124">Accept</span></span>|<span data-ttu-id="8a4da-125">application/json</span><span class="sxs-lookup"><span data-stu-id="8a4da-125">application/json</span></span>|
+|<span data-ttu-id="f74fa-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="f74fa-122">Authorization</span></span>|<span data-ttu-id="f74fa-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="f74fa-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="f74fa-124">承諾</span><span class="sxs-lookup"><span data-stu-id="f74fa-124">Accept</span></span>|<span data-ttu-id="f74fa-125">application/json</span><span class="sxs-lookup"><span data-stu-id="f74fa-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="8a4da-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="8a4da-126">Request body</span></span>
-<span data-ttu-id="8a4da-127">要求本文で、deviceManagementTroubleshootingEvent オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="8a4da-127">In the request body, supply a JSON representation for the deviceManagementTroubleshootingEvent object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f74fa-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="f74fa-126">Request body</span></span>
+<span data-ttu-id="f74fa-127">要求本文で、deviceManagementTroubleshootingEvent オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="f74fa-127">In the request body, supply a JSON representation for the deviceManagementTroubleshootingEvent object.</span></span>
 
-<span data-ttu-id="8a4da-128">次の表に、deviceManagementTroubleshootingEvent の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="8a4da-128">The following table shows the properties that are required when you create the deviceManagementTroubleshootingEvent.</span></span>
+<span data-ttu-id="f74fa-128">次の表に、deviceManagementTroubleshootingEvent の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="f74fa-128">The following table shows the properties that are required when you create the deviceManagementTroubleshootingEvent.</span></span>
 
-|<span data-ttu-id="8a4da-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="8a4da-129">Property</span></span>|<span data-ttu-id="8a4da-130">型</span><span class="sxs-lookup"><span data-stu-id="8a4da-130">Type</span></span>|<span data-ttu-id="8a4da-131">説明</span><span class="sxs-lookup"><span data-stu-id="8a4da-131">Description</span></span>|
+|<span data-ttu-id="f74fa-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="f74fa-129">Property</span></span>|<span data-ttu-id="f74fa-130">型</span><span class="sxs-lookup"><span data-stu-id="f74fa-130">Type</span></span>|<span data-ttu-id="f74fa-131">説明</span><span class="sxs-lookup"><span data-stu-id="f74fa-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="8a4da-132">id</span><span class="sxs-lookup"><span data-stu-id="8a4da-132">id</span></span>|<span data-ttu-id="8a4da-133">String</span><span class="sxs-lookup"><span data-stu-id="8a4da-133">String</span></span>|<span data-ttu-id="8a4da-134">オブジェクトの UUID</span><span class="sxs-lookup"><span data-stu-id="8a4da-134">UUID for the object</span></span>|
-|<span data-ttu-id="8a4da-135">eventDateTime</span><span class="sxs-lookup"><span data-stu-id="8a4da-135">eventDateTime</span></span>|<span data-ttu-id="8a4da-136">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="8a4da-136">DateTimeOffset</span></span>|<span data-ttu-id="8a4da-137">イベントが発生した時刻。</span><span class="sxs-lookup"><span data-stu-id="8a4da-137">Time when the event occurred .</span></span>|
-|<span data-ttu-id="8a4da-138">correlationId</span><span class="sxs-lookup"><span data-stu-id="8a4da-138">correlationId</span></span>|<span data-ttu-id="8a4da-139">String</span><span class="sxs-lookup"><span data-stu-id="8a4da-139">String</span></span>|<span data-ttu-id="8a4da-140">サービスのエラーをトレースするための ID。</span><span class="sxs-lookup"><span data-stu-id="8a4da-140">Id used for tracing the failure in the service.</span></span>|
-|<span data-ttu-id="8a4da-141">トラブルシューティングのエラーの詳細</span><span class="sxs-lookup"><span data-stu-id="8a4da-141">troubleshootingErrorDetails</span></span>|[<span data-ttu-id="8a4da-142">deviceManagementTroubleshootingErrorDetails</span><span class="sxs-lookup"><span data-stu-id="8a4da-142">deviceManagementTroubleshootingErrorDetails</span></span>](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|<span data-ttu-id="8a4da-143">エラーとその修復に関する詳細情報を含むオブジェクト。</span><span class="sxs-lookup"><span data-stu-id="8a4da-143">Object containing detailed information about the error and its remediation.</span></span>|
-|<span data-ttu-id="8a4da-144">eventName</span><span class="sxs-lookup"><span data-stu-id="8a4da-144">eventName</span></span>|<span data-ttu-id="8a4da-145">String</span><span class="sxs-lookup"><span data-stu-id="8a4da-145">String</span></span>|<span data-ttu-id="8a4da-146">トラブルシューティングイベントに対応するイベント名。</span><span class="sxs-lookup"><span data-stu-id="8a4da-146">Event Name corresponding to the Troubleshooting Event.</span></span> <span data-ttu-id="8a4da-147">省略可能なフィールドです。</span><span class="sxs-lookup"><span data-stu-id="8a4da-147">It is an Optional field</span></span>|
-|<span data-ttu-id="8a4da-148">additionalinformation</span><span class="sxs-lookup"><span data-stu-id="8a4da-148">additionalInformation</span></span>|<span data-ttu-id="8a4da-149">[keyValuePair](../resources/intune-shared-keyvaluepair.md) コレクション</span><span class="sxs-lookup"><span data-stu-id="8a4da-149">[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection</span></span>|<span data-ttu-id="8a4da-150">トラブルシューティングイベントに関する追加情報を提供する文字列キーと文字列値のペアのセット</span><span class="sxs-lookup"><span data-stu-id="8a4da-150">A set of string key and string value pairs which provides additional information on the Troubleshooting event</span></span>|
+|<span data-ttu-id="f74fa-132">id</span><span class="sxs-lookup"><span data-stu-id="f74fa-132">id</span></span>|<span data-ttu-id="f74fa-133">文字列</span><span class="sxs-lookup"><span data-stu-id="f74fa-133">String</span></span>|<span data-ttu-id="f74fa-134">オブジェクトの UUID</span><span class="sxs-lookup"><span data-stu-id="f74fa-134">UUID for the object</span></span>|
+|<span data-ttu-id="f74fa-135">eventDateTime</span><span class="sxs-lookup"><span data-stu-id="f74fa-135">eventDateTime</span></span>|<span data-ttu-id="f74fa-136">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="f74fa-136">DateTimeOffset</span></span>|<span data-ttu-id="f74fa-137">イベントが発生した時刻。</span><span class="sxs-lookup"><span data-stu-id="f74fa-137">Time when the event occurred .</span></span>|
+|<span data-ttu-id="f74fa-138">correlationId</span><span class="sxs-lookup"><span data-stu-id="f74fa-138">correlationId</span></span>|<span data-ttu-id="f74fa-139">String</span><span class="sxs-lookup"><span data-stu-id="f74fa-139">String</span></span>|<span data-ttu-id="f74fa-140">サービスのエラーをトレースするための ID。</span><span class="sxs-lookup"><span data-stu-id="f74fa-140">Id used for tracing the failure in the service.</span></span>|
+|<span data-ttu-id="f74fa-141">トラブルシューティングのエラーの詳細</span><span class="sxs-lookup"><span data-stu-id="f74fa-141">troubleshootingErrorDetails</span></span>|[<span data-ttu-id="f74fa-142">deviceManagementTroubleshootingErrorDetails</span><span class="sxs-lookup"><span data-stu-id="f74fa-142">deviceManagementTroubleshootingErrorDetails</span></span>](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|<span data-ttu-id="f74fa-143">エラーとその修復に関する詳細情報を含むオブジェクト。</span><span class="sxs-lookup"><span data-stu-id="f74fa-143">Object containing detailed information about the error and its remediation.</span></span>|
+|<span data-ttu-id="f74fa-144">eventName</span><span class="sxs-lookup"><span data-stu-id="f74fa-144">eventName</span></span>|<span data-ttu-id="f74fa-145">String</span><span class="sxs-lookup"><span data-stu-id="f74fa-145">String</span></span>|<span data-ttu-id="f74fa-146">トラブルシューティングイベントに対応するイベント名。</span><span class="sxs-lookup"><span data-stu-id="f74fa-146">Event Name corresponding to the Troubleshooting Event.</span></span> <span data-ttu-id="f74fa-147">省略可能なフィールドです。</span><span class="sxs-lookup"><span data-stu-id="f74fa-147">It is an Optional field</span></span>|
+|<span data-ttu-id="f74fa-148">additionalInformation</span><span class="sxs-lookup"><span data-stu-id="f74fa-148">additionalInformation</span></span>|<span data-ttu-id="f74fa-149">[keyValuePair](../resources/intune-shared-keyvaluepair.md) コレクション</span><span class="sxs-lookup"><span data-stu-id="f74fa-149">[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection</span></span>|<span data-ttu-id="f74fa-150">トラブルシューティングイベントに関する追加情報を提供する文字列キーと文字列値のペアのセット</span><span class="sxs-lookup"><span data-stu-id="f74fa-150">A set of string key and string value pairs which provides additional information on the Troubleshooting event</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="8a4da-151">応答</span><span class="sxs-lookup"><span data-stu-id="8a4da-151">Response</span></span>
-<span data-ttu-id="8a4da-152">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="8a4da-152">If successful, this method returns a `201 Created` response code and a [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="f74fa-151">応答</span><span class="sxs-lookup"><span data-stu-id="f74fa-151">Response</span></span>
+<span data-ttu-id="f74fa-152">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="f74fa-152">If successful, this method returns a `201 Created` response code and a [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="8a4da-153">例</span><span class="sxs-lookup"><span data-stu-id="8a4da-153">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f74fa-153">例</span><span class="sxs-lookup"><span data-stu-id="f74fa-153">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="8a4da-154">要求</span><span class="sxs-lookup"><span data-stu-id="8a4da-154">Request</span></span>
-<span data-ttu-id="8a4da-155">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="8a4da-155">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="f74fa-154">要求</span><span class="sxs-lookup"><span data-stu-id="f74fa-154">Request</span></span>
+<span data-ttu-id="f74fa-155">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="f74fa-155">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/troubleshootingEvents
 Content-type: application/json
@@ -100,8 +100,8 @@ Content-length: 852
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="8a4da-156">応答</span><span class="sxs-lookup"><span data-stu-id="8a4da-156">Response</span></span>
-<span data-ttu-id="8a4da-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="8a4da-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="f74fa-156">応答</span><span class="sxs-lookup"><span data-stu-id="f74fa-156">Response</span></span>
+<span data-ttu-id="f74fa-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="f74fa-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -136,6 +136,7 @@ Content-Length: 901
   ]
 }
 ```
+
 
 
 
