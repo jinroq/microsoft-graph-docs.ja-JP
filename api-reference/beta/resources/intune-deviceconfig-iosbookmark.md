@@ -1,21 +1,21 @@
 ---
-title: iosbookmark リソースの種類
+title: iosBookmark リソースの種類
 description: iOS URL ブックマーク
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5231ccbae496e310e414c6429190e0b4d53cbaa7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8c8a4ff93674f9fedbed0597fb8e418a59b9ea70
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556040"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946561"
 ---
-# <a name="iosbookmark-resource-type"></a>iosbookmark リソースの種類
+# <a name="iosbookmark-resource-type"></a>iosBookmark リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 iOS URL ブックマーク
 
@@ -26,7 +26,7 @@ iOS URL ブックマーク
 |bookmarkFolder|String|ブックマークを Safari で追加するフォルダー|
 |displayName|String|ブックマークの表示名|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -44,7 +44,6 @@ iOS URL ブックマーク
   "displayName": "String"
 }
 ```
-
 
 
 

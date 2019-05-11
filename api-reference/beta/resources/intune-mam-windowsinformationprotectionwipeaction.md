@@ -1,45 +1,45 @@
 ---
-title: windowsinformationprotectionwipepeaction リソースの種類
-description: テナント管理者が独自のデバイス (byod) Windows デバイス用に発行したワイプ要求を表します。
-author: tfitzmac
+title: Windowsinformationprotectionwipepeaction リソースの種類
+description: テナント管理者が独自のデバイス (BYOD) Windows デバイス用に発行したワイプ要求を表します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 47047f401bbf0a690494490cbbd3b934340a26c9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 262a27b53aaebc356c3b48987ac00ae349d90320
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32558273"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940443"
 ---
-# <a name="windowsinformationprotectionwipeaction-resource-type"></a>windowsinformationprotectionwipepeaction リソースの種類
+# <a name="windowsinformationprotectionwipeaction-resource-type"></a>Windowsinformationprotectionwipepeaction リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-テナント管理者が独自のデバイス (byod) Windows デバイス用に発行したワイプ要求を表します。
+テナント管理者が独自のデバイス (BYOD) Windows デバイス用に発行したワイプ要求を表します。
 
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[windowsinformationprotectionwipeactions を一覧表示する](../api/intune-mam-windowsinformationprotectionwipeaction-list.md)|[windowsinformationprotectionwipepeaction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)コレクション|[windowsinformationprotectionwipepeaction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)オブジェクトのプロパティとリレーションシップをリストします。|
-|[windowsinformationprotectionwipeaction を取得する](../api/intune-mam-windowsinformationprotectionwipeaction-get.md)|[windowsinformationprotectionwipeaction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)|[windowsinformationprotectionwipepeaction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[windowsinformationprotectionwipeaction を作成する](../api/intune-mam-windowsinformationprotectionwipeaction-create.md)|[windowsinformationprotectionwipeaction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)|新しい[windowsinformationprotectionwipeaction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)オブジェクトを作成します。|
-|[windowsinformationprotectionwipeaction を削除する](../api/intune-mam-windowsinformationprotectionwipeaction-delete.md)|なし|[windowsinformationprotectionwipepeaction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)を削除します。|
-|[windowsinformationprotectionwipeaction を更新する](../api/intune-mam-windowsinformationprotectionwipeaction-update.md)|[windowsinformationprotectionwipeaction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)|[windowsinformationprotectionwipepeaction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)オブジェクトのプロパティを更新します。|
+|[WindowsInformationProtectionWipeActions を一覧表示する](../api/intune-mam-windowsinformationprotectionwipeaction-list.md)|[Windowsinformationprotectionwipepeaction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)コレクション|[Windowsinformationprotectionwipepeaction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)オブジェクトのプロパティとリレーションシップをリストします。|
+|[WindowsInformationProtectionWipeAction を取得する](../api/intune-mam-windowsinformationprotectionwipeaction-get.md)|[windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)|[Windowsinformationprotectionwipepeaction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[WindowsInformationProtectionWipeAction を作成する](../api/intune-mam-windowsinformationprotectionwipeaction-create.md)|[windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)|新しい[Windowsinformationprotectionwipeaction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)オブジェクトを作成します。|
+|[WindowsInformationProtectionWipeAction を削除する](../api/intune-mam-windowsinformationprotectionwipeaction-delete.md)|None|[Windowsinformationprotectionwipepeaction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)を削除します。|
+|[WindowsInformationProtectionWipeAction を更新する](../api/intune-mam-windowsinformationprotectionwipeaction-update.md)|[windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)|[Windowsinformationprotectionwipepeaction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティのキー。|
 |status|[actionState](../resources/intune-shared-actionstate.md)|ワイプアクションの状態。 可能な値は、`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported` です。|
-|targeteduserid|String|このワイプアクションの対象となる UserId。|
+|targetedUserId|String|このワイプアクションの対象となる UserId。|
 |targetedDeviceRegistrationId|String|このワイプアクションの対象となる DeviceRegistrationId。|
-|targeteddevicename|String|対象のデバイス名。|
+|targetedDeviceName|String|対象のデバイス名。|
 |targetedDeviceMacAddress|String|対象デバイスの Mac アドレス。|
 |lastCheckInDateTime|DateTimeOffset|このワイプアクションの対象となったデバイスの最終チェックイン時刻。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -62,7 +62,6 @@ ms.locfileid: "32558273"
   "lastCheckInDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

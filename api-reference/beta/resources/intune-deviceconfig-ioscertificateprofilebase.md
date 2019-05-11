@@ -1,42 +1,42 @@
 ---
-title: ioscertificateprofilebase リソースの種類
+title: iosCertificateProfileBase リソースの種類
 description: iOS 証明書プロファイルベース。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f5b8fa70fc3d741f52cfd72aa5230c6a48aad2cd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ee2ac341b18ad5d49c1c925642b8c2606e3161a6
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32571129"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946533"
 ---
-# <a name="ioscertificateprofilebase-resource-type"></a>ioscertificateprofilebase リソースの種類
+# <a name="ioscertificateprofilebase-resource-type"></a>iosCertificateProfileBase リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 iOS 証明書プロファイルベース。
 
 
-[ioscertificateprofile](../resources/intune-deviceconfig-ioscertificateprofile.md)から継承します
+[Ioscertificateprofile](../resources/intune-deviceconfig-ioscertificateprofile.md)から継承します
 
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[ioscertificateprofilebases のリスト](../api/intune-deviceconfig-ioscertificateprofilebase-list.md)|[ioscertificateprofilebase](../resources/intune-deviceconfig-ioscertificateprofilebase.md)コレクション|[ioscertificateprofilebase](../resources/intune-deviceconfig-ioscertificateprofilebase.md)オブジェクトのプロパティとリレーションシップをリストします。|
-|[ioscertificateprofilebase を取得する](../api/intune-deviceconfig-ioscertificateprofilebase-get.md)|[iosCertificateProfileBase](../resources/intune-deviceconfig-ioscertificateprofilebase.md)|[ioscertificateprofilebase](../resources/intune-deviceconfig-ioscertificateprofilebase.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[IosCertificateProfileBases のリスト](../api/intune-deviceconfig-ioscertificateprofilebase-list.md)|[Ioscertificateprofilebase](../resources/intune-deviceconfig-ioscertificateprofilebase.md)コレクション|[Ioscertificateprofilebase](../resources/intune-deviceconfig-ioscertificateprofilebase.md)オブジェクトのプロパティとリレーションシップをリストします。|
+|[IosCertificateProfileBase を取得する](../api/intune-deviceconfig-ioscertificateprofilebase-get.md)|[iosCertificateProfileBase](../resources/intune-deviceconfig-ioscertificateprofilebase.md)|[Ioscertificateprofilebase](../resources/intune-deviceconfig-ioscertificateprofilebase.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|文字列型 (String)|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|id|文字列|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |supportsScopeTags|Boolean|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|説明|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|description|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|管理者が指定した、デバイス構成の名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |renewalThresholdPercentage|Int32|証明書の更新しきい値の割合。 有効な値は 1 ~ 99|
@@ -45,7 +45,7 @@ iOS 証明書プロファイルベース。
 |certificateValidityPeriodValue|Int32|証明書の有効期間の値。|
 |certificateValidityPeriodScale|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|証明書の有効期間のスケール。 可能な値は、`days`、`months`、`years` です。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)コレクション|デバイスの構成プロファイルのグループ割り当てのリストです。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
@@ -84,7 +84,6 @@ iOS 証明書プロファイルベース。
   "certificateValidityPeriodScale": "String"
 }
 ```
-
 
 
 

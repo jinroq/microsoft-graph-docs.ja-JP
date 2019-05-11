@@ -1,23 +1,23 @@
 ---
 title: androidWiFiConfiguration リソースの種類
-description: このプロファイルに構成を提供することで、Android デバイスに接続して目的の wi-fi エンドポイントに接続するように指示することができます。 wi-fi エンドポイントで想定される認証方法とセキュリティの種類を指定することで、エンドユーザーに対して wi-fi 接続をシームレスに行うことができます。 このプロファイルは、エンタープライズ wi-fi プロファイルよりも限定的でシンプルなセキュリティの種類を提供します。
-author: tfitzmac
+description: このプロファイルに構成を提供することで、Android デバイスに接続して目的の Wi-fi エンドポイントに接続するように指示することができます。 Wi-fi エンドポイントで想定される認証方法とセキュリティの種類を指定することで、エンドユーザーに対して Wi-fi 接続をシームレスに行うことができます。 このプロファイルは、エンタープライズ Wi-fi プロファイルよりも限定的でシンプルなセキュリティの種類を提供します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4d7fb666a1b680e6c027880ce4054e9a08300bb5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f9151a920e7f6eb891428567757dfc45e4aaf579
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562469"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33947891"
 ---
 # <a name="androidwificonfiguration-resource-type"></a>androidWiFiConfiguration リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-このプロファイルに構成を提供することで、Android デバイスに接続して目的の wi-fi エンドポイントに接続するように指示することができます。 wi-fi エンドポイントで想定される認証方法とセキュリティの種類を指定することで、エンドユーザーに対して wi-fi 接続をシームレスに行うことができます。 このプロファイルは、エンタープライズ wi-fi プロファイルよりも限定的でシンプルなセキュリティの種類を提供します。
+このプロファイルに構成を提供することで、Android デバイスに接続して目的の Wi-fi エンドポイントに接続するように指示することができます。 Wi-fi エンドポイントで想定される認証方法とセキュリティの種類を指定することで、エンドユーザーに対して Wi-fi 接続をシームレスに行うことができます。 このプロファイルは、エンタープライズ Wi-fi プロファイルよりも限定的でシンプルなセキュリティの種類を提供します。
 
 
 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します
@@ -25,30 +25,30 @@ ms.locfileid: "32562469"
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[リスト androidwiidmso onfigurた](../api/intune-deviceconfig-androidwificonfiguration-list.md)|[androidWiFiConfiguration](../resources/intune-deviceconfig-androidwificonfiguration.md)コレクション|[androidWiFiConfiguration](../resources/intune-deviceconfig-androidwificonfiguration.md)オブジェクトのプロパティとリレーションシップをリストします。|
-|[androidWiFiConfiguration を取得する](../api/intune-deviceconfig-androidwificonfiguration-get.md)|[androidWiFiConfiguration](../resources/intune-deviceconfig-androidwificonfiguration.md)|[androidWiFiConfiguration](../resources/intune-deviceconfig-androidwificonfiguration.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[androidWiFiConfiguration を作成する](../api/intune-deviceconfig-androidwificonfiguration-create.md)|[androidWiFiConfiguration](../resources/intune-deviceconfig-androidwificonfiguration.md)|新しい[androidWiFiConfiguration](../resources/intune-deviceconfig-androidwificonfiguration.md)オブジェクトを作成します。|
-|[androidWiFiConfiguration の削除](../api/intune-deviceconfig-androidwificonfiguration-delete.md)|なし|[androidWiFiConfiguration](../resources/intune-deviceconfig-androidwificonfiguration.md)を削除します。|
-|[androidWiFiConfiguration の更新](../api/intune-deviceconfig-androidwificonfiguration-update.md)|[androidWiFiConfiguration](../resources/intune-deviceconfig-androidwificonfiguration.md)|[androidWiFiConfiguration](../resources/intune-deviceconfig-androidwificonfiguration.md)オブジェクトのプロパティを更新します。|
+|[リスト Androidwiidmso Onfigurた](../api/intune-deviceconfig-androidwificonfiguration-list.md)|[androidWiFiConfiguration](../resources/intune-deviceconfig-androidwificonfiguration.md)コレクション|[AndroidWiFiConfiguration](../resources/intune-deviceconfig-androidwificonfiguration.md)オブジェクトのプロパティとリレーションシップをリストします。|
+|[AndroidWiFiConfiguration を取得する](../api/intune-deviceconfig-androidwificonfiguration-get.md)|[androidWiFiConfiguration](../resources/intune-deviceconfig-androidwificonfiguration.md)|[AndroidWiFiConfiguration](../resources/intune-deviceconfig-androidwificonfiguration.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[AndroidWiFiConfiguration を作成する](../api/intune-deviceconfig-androidwificonfiguration-create.md)|[androidWiFiConfiguration](../resources/intune-deviceconfig-androidwificonfiguration.md)|新しい[androidWiFiConfiguration](../resources/intune-deviceconfig-androidwificonfiguration.md)オブジェクトを作成します。|
+|[AndroidWiFiConfiguration の削除](../api/intune-deviceconfig-androidwificonfiguration-delete.md)|None|[AndroidWiFiConfiguration](../resources/intune-deviceconfig-androidwificonfiguration.md)を削除します。|
+|[AndroidWiFiConfiguration の更新](../api/intune-deviceconfig-androidwificonfiguration-update.md)|[androidWiFiConfiguration](../resources/intune-deviceconfig-androidwificonfiguration.md)|[AndroidWiFiConfiguration](../resources/intune-deviceconfig-androidwificonfiguration.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|文字列型 (String)|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|id|文字列|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |supportsScopeTags|Boolean|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|説明|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|description|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|管理者が指定した、デバイス構成の名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|networkname|String|ネットワーク名|
-|ssid|String|これは、すべてのデバイスにブロードキャストされている wi-fi ネットワークの名前です。|
-|connectautomatically に|Boolean|このネットワークが範囲内にあるときに自動的に接続します。 この値を true に設定すると、ユーザープロンプトがスキップされ、デバイスが wi-fi ネットワークに自動的に接続されます。|
+|networkName|String|ネットワーク名|
+|ssid|String|これは、すべてのデバイスにブロードキャストされている Wi-fi ネットワークの名前です。|
+|connectAutomatically に|Boolean|このネットワークが範囲内にあるときに自動的に接続します。 この値を true に設定すると、ユーザープロンプトがスキップされ、デバイスが Wi-fi ネットワークに自動的に接続されます。|
 |connectWhenNetworkNameIsHidden|Boolean|このプロファイルが true に設定されている場合、デバイスは、その SSID をすべてのデバイスにブロードキャストしないネットワークに強制的に接続します。|
-|wiFiSecurityType|[androidWiFiSecurityType](../resources/intune-deviceconfig-androidwifisecuritytype.md)|wi-fi エンドポイントで EAP ベースのセキュリティの種類を使用するかどうかを示します。 可能な値: `open`、`wpaEnterprise`。|
+|wiFiSecurityType|[androidWiFiSecurityType](../resources/intune-deviceconfig-androidwifisecuritytype.md)|Wi-fi エンドポイントで EAP ベースのセキュリティの種類を使用するかどうかを示します。 可能な値: `open`、`wpaEnterprise`。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)コレクション|デバイスの構成プロファイルのグループ割り当てのリストです。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
@@ -87,7 +87,6 @@ ms.locfileid: "32562469"
   "wiFiSecurityType": "String"
 }
 ```
-
 
 
 

@@ -1,23 +1,23 @@
 ---
 title: enrollmentConfigurationAssignment リソースの種類
-description: まだ文書化されていません
-author: tfitzmac
+description: 登録の構成の割り当て
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3d88d3fa5985d4b210e616f6767be660e9f8c9a6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4683997a061e756a1860349644d2a2d0cfaa5246
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566515"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940193"
 ---
 # <a name="enrollmentconfigurationassignment-resource-type"></a>enrollmentConfigurationAssignment リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-まだ文書化されていません
+登録の構成の割り当て
 
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
@@ -31,8 +31,8 @@ ms.locfileid: "32566515"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|まだ文書化されていません|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|まだ文書化されていません|
+|id|String|登録構成の割り当てのキー|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|テナント内の管理されたデバイスへの割り当てを表します。|
 
 ## <a name="relationships"></a>関係
 なし
@@ -54,7 +54,6 @@ ms.locfileid: "32566515"
   }
 }
 ```
-
 
 
 

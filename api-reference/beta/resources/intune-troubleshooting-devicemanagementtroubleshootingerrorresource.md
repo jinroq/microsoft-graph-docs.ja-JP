@@ -1,21 +1,21 @@
 ---
-title: devicemanagementのトラブルシューティング errorresource リソースの種類
+title: Devicemanagementのトラブルシューティング Errorresource リソースの種類
 description: 'オブジェクト: トラブルシューティング情報へのリンクを表すオブジェクトは、Azure Portal または Microsoft doc にリンクします。'
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5905f62a1da0329db1b311ae586cdb64517a2b5d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 712832420b556517be8ef053cc6cd292acfeed86
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554052"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33939848"
 ---
-# <a name="devicemanagementtroubleshootingerrorresource-resource-type"></a>devicemanagementのトラブルシューティング errorresource リソースの種類
+# <a name="devicemanagementtroubleshootingerrorresource-resource-type"></a>Devicemanagementのトラブルシューティング Errorresource リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 オブジェクト: トラブルシューティング情報へのリンクを表すオブジェクトは、Azure Portal または Microsoft doc にリンクします。
 
@@ -23,9 +23,9 @@ ms.locfileid: "32554052"
 |プロパティ|型|説明|
 |:---|:---|:---|
 |text|String|まだ文書化されていません|
-|link|String|web リソースへのリンク。 次のいずれかのフォーマッタを含めることができます。 {{UPN}}、{{deviceguid}}、{{userguid}}|
+|link|String|Web リソースへのリンク。 次のいずれかのフォーマッタを含めることができます。 {{UPN}}、{{DeviceGUID}}、{{UserGUID}}|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -42,6 +42,7 @@ ms.locfileid: "32554052"
   "link": "String"
 }
 ```
+
 
 
 

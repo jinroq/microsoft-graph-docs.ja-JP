@@ -1,21 +1,21 @@
 ---
 title: createGooglePlayWebToken アクション
 description: 埋め込みコンポーネントで使用される web トークンを生成します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ef4d99a7a36b7fbe56ca588044ee14534371c7a3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 520a8ce4e54a43fc84a28440930a093863599ceb
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32498208"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33939127"
 ---
 # <a name="creategoogleplaywebtoken-action"></a>createGooglePlayWebToken アクション
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 埋め込みコンポーネントで使用される web トークンを生成します。
 
@@ -50,7 +50,7 @@ POST /deviceManagement/androidManagedStoreAccountEnterpriseSettings/createGoogle
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|parenturi|String|コンポーネントをホストしているページの https パス。|
+|parentUri|String|コンポーネントをホストしているページの https パス。|
 
 
 
@@ -83,7 +83,6 @@ Content-Length: 53
   "value": "Create Google Play Web Token value"
 }
 ```
-
 
 
 

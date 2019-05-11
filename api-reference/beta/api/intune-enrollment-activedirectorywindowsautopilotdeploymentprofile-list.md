@@ -1,23 +1,23 @@
 ---
 title: リスト activeDirectoryWindowsAutopilotDeploymentProfiles
-description: activeDirectoryWindowsAutopilotDeploymentProfile オブジェクトのプロパティとリレーションシップをリストします。
-author: tfitzmac
+description: ActiveDirectoryWindowsAutopilotDeploymentProfile オブジェクトのプロパティとリレーションシップをリストします。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 192a1b3dbcad17415f260670075f5970632687fb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c4095a382ec678b39b42b741769a94e6aaddca49
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534032"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33908988"
 ---
 # <a name="list-activedirectorywindowsautopilotdeploymentprofiles"></a>リスト activeDirectoryWindowsAutopilotDeploymentProfiles
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md)オブジェクトのプロパティとリレーションシップをリストします。
+[ActiveDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md)オブジェクトのプロパティとリレーションシップをリストします。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeployment
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1430
+Content-Length: 1504
 
 {
   "value": [
@@ -96,12 +96,14 @@ Content-Length: 1430
       "extractHardwareHash": true,
       "deviceNameTemplate": "Device Name Template value",
       "deviceType": "surfaceHub2",
-      "enableWhiteGlove": true
+      "enableWhiteGlove": true,
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ]
     }
   ]
 }
 ```
-
 
 
 

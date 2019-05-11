@@ -1,21 +1,21 @@
 ---
 title: iPv6Range リソースの種類
 description: IPv6 範囲の定義。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 51815dffc0048ec88b81cbe6034a42e108e5b222
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b767b5af514045c52dec57244d186d7ff3feb9f8
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550582"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940562"
 ---
 # <a name="ipv6range-resource-type"></a>iPv6Range リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 IPv6 範囲の定義。
 
@@ -28,7 +28,7 @@ IPv6 範囲の定義。
 |lowerAddress|String|小さいアドレス。|
 |upperAddress|文字列型 (String)|上住所|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -45,7 +45,6 @@ IPv6 範囲の定義。
   "upperAddress": "String"
 }
 ```
-
 
 
 

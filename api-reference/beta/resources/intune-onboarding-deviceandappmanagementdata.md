@@ -1,21 +1,21 @@
 ---
-title: deviceandappmanagementdata リソースの種類
+title: deviceAndAppManagementData リソースの種類
 description: エクスポートされたデータ
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1a889e65463733971dd36d04e6bba8a140fdba16
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3d85c6ba4eb4cdb96326f7a95efd5a8f9a8af4df
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521230"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940436"
 ---
-# <a name="deviceandappmanagementdata-resource-type"></a>deviceandappmanagementdata リソースの種類
+# <a name="deviceandappmanagementdata-resource-type"></a>deviceAndAppManagementData リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 エクスポートされたデータ
 
@@ -24,7 +24,7 @@ ms.locfileid: "32521230"
 |:---|:---|:---|
 |content|Stream|まだ文書化されていません|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -40,7 +40,6 @@ ms.locfileid: "32521230"
   "content": "<Unknown Primitive Type Edm.Stream>"
 }
 ```
-
 
 
 

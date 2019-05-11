@@ -1,21 +1,21 @@
 ---
 title: syncApps アクション
 description: まだ文書化されていません
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 97de84fc7ee56d942a7226ee03dd01a30f014b49
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7515297b62a241a276b3b7bc5718a6d75cfd2882
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32498222"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33938931"
 ---
 # <a name="syncapps-action"></a>syncApps アクション
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 まだ文書化されていません
 
@@ -62,7 +62,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/androidForWorkSettings/sy
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

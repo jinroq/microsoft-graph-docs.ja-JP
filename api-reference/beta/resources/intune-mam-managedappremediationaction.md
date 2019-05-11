@@ -1,21 +1,21 @@
 ---
 title: managedAppRemediationAction 列挙型
 description: 管理対象アプリで適用される管理者が開始したアクション。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1eb9643fc1b4c8c4ec858fd00b0a65a40c225307
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 79b8ec375b0376a48a1d2639f00ed58742663dda
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551723"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940688"
 ---
 # <a name="managedappremediationaction-enum-type"></a>managedAppRemediationAction 列挙型
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 管理対象アプリで適用される管理者が開始したアクション。
 
@@ -23,9 +23,8 @@ ms.locfileid: "32551723"
 |メンバー|値|説明|
 |:---|:---|:---|
 |拒否|.0|アプリと、ブロックされる対応会社のデータ|
-|ふき|1 |消去するアプリと対応する会社のデータ|
-|示す|2 |警告対象のアプリと対応するユーザー|
-
+|ふき|1-d|消去するアプリと対応する会社のデータ|
+|示す|pbm-2|警告対象のアプリと対応するユーザー|
 
 
 

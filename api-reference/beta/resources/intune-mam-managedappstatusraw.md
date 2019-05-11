@@ -1,21 +1,21 @@
 ---
 title: managedAppStatusRaw リソースの種類
 description: 組織アプリの保護と構成についての型指定されていない進捗レポートを表します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f7c609c8ac1a228be588c5bdfe93cca7d42069da
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 529b6b654c176b5062910a2cea0d03622faa78c9
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551709"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940681"
 ---
 # <a name="managedappstatusraw-resource-type"></a>managedAppStatusRaw リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 組織アプリの保護と構成についての型指定されていない進捗レポートを表します。
 
@@ -32,11 +32,11 @@ ms.locfileid: "32551709"
 |プロパティ|型|説明|
 |:---|:---|:---|
 |displayName|String|進捗レポートのフレンドリ名。 [managedAppStatus](../resources/intune-mam-managedappstatus.md) から継承します|
-|id|String|エンティティのキー。 [managedAppStatus](../resources/intune-mam-managedappstatus.md) から継承します|
+|id|文字列|エンティティのキー。 [managedAppStatus](../resources/intune-mam-managedappstatus.md) から継承します|
 |version|String|エンティティのバージョン。 [managedAppStatus](../resources/intune-mam-managedappstatus.md) から継承します|
 |content|[Json](../resources/intune-mam-json.md)|進捗レポートの内容。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -58,7 +58,6 @@ ms.locfileid: "32551709"
   }
 }
 ```
-
 
 
 

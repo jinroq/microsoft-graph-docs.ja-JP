@@ -1,21 +1,21 @@
 ---
 title: localizedNotificationMessage リソースの種類
 description: 指定されたロケールの通知メッセージ テンプレートのテキスト コンテンツ。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 92d4599504eba2e658131276d1a27ab9602025c5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 473aad924d3dd9e0857c364230ec8391bf92b451
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32572088"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940492"
 ---
 # <a name="localizednotificationmessage-resource-type"></a>localizedNotificationMessage リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 指定されたロケールの通知メッセージ テンプレートのテキスト コンテンツ。
 
@@ -31,7 +31,7 @@ ms.locfileid: "32572088"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|id|文字列|エンティティのキー。|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。|
 |locale|String|対象メッセージの送信先ロケール。|
 |subject|String|メッセージ テンプレートの件名。|
@@ -60,7 +60,6 @@ ms.locfileid: "32572088"
   "isDefault": true
 }
 ```
-
 
 
 

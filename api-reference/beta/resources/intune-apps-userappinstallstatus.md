@@ -1,44 +1,44 @@
 ---
-title: userappinstallstatus リソースの種類
+title: userAppInstallStatus リソースの種類
 description: ユーザーのインストール状態のプロパティが含まれています。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3efd555f4b4a728e9a4ae660eac9568cb7e3b2a9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a2f8c4b31a3c30210c1fbf9de6af5f7d00a939ea
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555109"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949704"
 ---
-# <a name="userappinstallstatus-resource-type"></a>userappinstallstatus リソースの種類
+# <a name="userappinstallstatus-resource-type"></a>userAppInstallStatus リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 ユーザーのインストール状態のプロパティが含まれています。
 
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[userappinstallstatuses 状態を一覧表示する](../api/intune-apps-userappinstallstatus-list.md)|[userappinstallstatus](../resources/intune-apps-userappinstallstatus.md)コレクション|[userappinstallstatus](../resources/intune-apps-userappinstallstatus.md)オブジェクトのプロパティとリレーションシップをリストします。|
-|[userappinstallstatus の取得](../api/intune-apps-userappinstallstatus-get.md)|[userappinstallstatus](../resources/intune-apps-userappinstallstatus.md)|[userappinstallstatus](../resources/intune-apps-userappinstallstatus.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[userappinstallstatus の作成](../api/intune-apps-userappinstallstatus-create.md)|[userappinstallstatus](../resources/intune-apps-userappinstallstatus.md)|新しい[userappinstallstatus](../resources/intune-apps-userappinstallstatus.md)オブジェクトを作成します。|
-|[userappinstallstatus の削除](../api/intune-apps-userappinstallstatus-delete.md)|なし|[userappinstallstatus](../resources/intune-apps-userappinstallstatus.md)を削除します。|
-|[userappinstallstatus の更新](../api/intune-apps-userappinstallstatus-update.md)|[userappinstallstatus](../resources/intune-apps-userappinstallstatus.md)|[userappinstallstatus](../resources/intune-apps-userappinstallstatus.md)オブジェクトのプロパティを更新します。|
+|[UserAppInstallStatuses 状態を一覧表示する](../api/intune-apps-userappinstallstatus-list.md)|[Userappinstallstatus](../resources/intune-apps-userappinstallstatus.md)コレクション|[Userappinstallstatus](../resources/intune-apps-userappinstallstatus.md)オブジェクトのプロパティとリレーションシップをリストします。|
+|[UserAppInstallStatus の取得](../api/intune-apps-userappinstallstatus-get.md)|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)|[Userappinstallstatus](../resources/intune-apps-userappinstallstatus.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[UserAppInstallStatus の作成](../api/intune-apps-userappinstallstatus-create.md)|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)|新しい[Userappinstallstatus](../resources/intune-apps-userappinstallstatus.md)オブジェクトを作成します。|
+|[UserAppInstallStatus の削除](../api/intune-apps-userappinstallstatus-delete.md)|None|[Userappinstallstatus](../resources/intune-apps-userappinstallstatus.md)を削除します。|
+|[UserAppInstallStatus の更新](../api/intune-apps-userappinstallstatus-update.md)|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)|[Userappinstallstatus](../resources/intune-apps-userappinstallstatus.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|id|文字列|エンティティのキー。|
 |userName|String|ユーザー名です。|
 |userPrincipalName|String|ユーザープリンシパル名。|
 |installedDeviceCount|Int32|インストールされたデバイスの数です。|
 |failedDeviceCount|Int32|失敗したデバイスの数です。|
 |notInstalledDeviceCount|Int32|インストールされていないデバイスの数です。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |アプリ|[mobileApp](../resources/intune-apps-mobileapp.md)|モバイルアプリへのナビゲーションリンク。|
@@ -63,7 +63,6 @@ ms.locfileid: "32555109"
   "notInstalledDeviceCount": 1024
 }
 ```
-
 
 
 

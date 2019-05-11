@@ -1,23 +1,23 @@
 ---
-title: depon掲示の設定を作成する
-description: 新しい depon掲示設定オブジェクトを作成します。
-author: tfitzmac
+title: Depon掲示の設定を作成する
+description: 新しい Depon掲示設定オブジェクトを作成します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1329f2a3bc4694bb288cda75c59271eadee8f8c5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7693ae66b21e434fab88bc9500b6b25f77facd0e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32533312"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33908806"
 ---
-# <a name="create-deponboardingsetting"></a>depon掲示の設定を作成する
+# <a name="create-deponboardingsetting"></a>Depon掲示の設定を作成する
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-新しい[depon掲示設定](../resources/intune-enrollment-deponboardingsetting.md)オブジェクトを作成します。
+新しい[Depon掲示設定](../resources/intune-enrollment-deponboardingsetting.md)オブジェクトを作成します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -44,9 +44,9 @@ POST /deviceManagement/depOnboardingSettings
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求本文で、deponboardingsetting オブジェクトの JSON 表記を指定します。
+要求本文で、depOnboardingSetting オブジェクトの JSON 表記を指定します。
 
-次の表に、deponboardingsetting の作成時に必要なプロパティを示します。
+次の表に、depOnboardingSetting の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
@@ -55,19 +55,19 @@ POST /deviceManagement/depOnboardingSettings
 |tokenExpirationDateTime|DateTimeOffset|トークンの有効期限が切れるとき。|
 |lastModifiedDateTime|DateTimeOffset|サービスが利用されたとき。|
 |lastSuccessfulSyncDateTime|DateTimeOffset|Intune でサービスが最後に使用されたとき|
-|lastsynctriggereddatetime|DateTimeOffset|Intune が最後に同期を要求したとき。|
-|shareTokenWithSchoolDataSyncService|ブール値|School Data Sync サービスで Dep トークンの共有が有効になっているかどうか。|
+|lastSyncTriggeredDateTime|DateTimeOffset|Intune が最後に同期を要求したとき。|
+|shareTokenWithSchoolDataSyncService|Boolean|School Data Sync サービスで Dep トークンの共有が有効になっているかどうか。|
 |lastSyncErrorCode|Int32|前回の dep 同期中に Apple によって報告されたエラーコード。|
-|tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Dep トークンの種類を取得または設定します。 使用可能な値は、`none`、`dep`、`appleSchoolManager` です。|
+|tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Dep トークンの種類を取得または設定します。 可能な値は、`none`、`dep`、`appleSchoolManager` です。|
 |tokenName|String|Dep トークンのフレンドリ名|
 |syncedDeviceCount|Int32|同期されたデバイスの数を取得する|
-|dataSharingConsentGranted|ブール値|Apple Dep サービスでのデータ共有に対して付与される同意|
+|dataSharingConsentGranted|Boolean|Apple Dep サービスでのデータ共有に対して付与される同意|
 |roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。|
 
 
 
 ## <a name="response"></a>応答
-成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[depon掲示設定](../resources/intune-enrollment-deponboardingsetting.md)オブジェクトを返します。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[Depon掲示設定](../resources/intune-enrollment-deponboardingsetting.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 
@@ -122,7 +122,6 @@ Content-Length: 689
   ]
 }
 ```
-
 
 
 

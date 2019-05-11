@@ -1,21 +1,21 @@
 ---
 title: applicationGuardEnabledOptions 列挙型
 description: ApplicationGuardEnabledOptions に指定できる値
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ac967cf80c15ce7947049f2ff444f8b8f0fb90fd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e40dca252dd9b95afa781aac7ee888afd62ad4aa
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549532"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33947681"
 ---
 # <a name="applicationguardenabledoptions-enum-type"></a>applicationGuardEnabledOptions 列挙型
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 ApplicationGuardEnabledOptions に指定できる値
 
@@ -23,10 +23,9 @@ ApplicationGuardEnabledOptions に指定できる値
 |メンバー|値|説明|
 |:---|:---|:---|
 |notConfigured|.0|Not Configured|
-|enabledforedge|1 |エッジに対して有効|
-|enabledforoffice|2 |Office に対して有効|
-|enabledForEdgeAndOffice|3 |エッジと Office に対して有効|
-
+|enabledForEdge|1-d|エッジに対して有効|
+|enabledForOffice|pbm-2|Office に対して有効|
+|enabledForEdgeAndOffice|1/3|エッジと Office に対して有効|
 
 
 

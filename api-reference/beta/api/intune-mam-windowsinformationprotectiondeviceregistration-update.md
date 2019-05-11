@@ -1,23 +1,23 @@
 ---
-title: windowsInformationProtectionDeviceRegistration の更新
-description: windowsInformationProtectionDeviceRegistration オブジェクトのプロパティを更新します。
-author: tfitzmac
+title: WindowsInformationProtectionDeviceRegistration の更新
+description: WindowsInformationProtectionDeviceRegistration オブジェクトのプロパティを更新します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 54d8dc2e1c2c62d956502e48791ad55e0787de03
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: be2938889a5b3c21c7b0ba734d5ccc7b58301618
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32529171"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33902935"
 ---
-# <a name="update-windowsinformationprotectiondeviceregistration"></a>windowsInformationProtectionDeviceRegistration の更新
+# <a name="update-windowsinformationprotectiondeviceregistration"></a>WindowsInformationProtectionDeviceRegistration の更新
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)オブジェクトのプロパティを更新します。
+[WindowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -50,11 +50,11 @@ PATCH /deviceAppManagement/windowsInformationProtectionDeviceRegistrations/{wind
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
-|userId|文字列型 (String)|このデバイス登録レコードに関連付けられている UserId。|
+|id|文字列|エンティティのキー。|
+|userId|String|このデバイス登録レコードに関連付けられている UserId。|
 |deviceRegistrationId|String|このデバイス登録レコードのデバイス識別子。|
 |deviceName|String|デバイス名。|
-|deviceType|String|デバイスの種類。たとえば、windows ラップトップ VS windows phone。|
+|deviceType|String|デバイスの種類。たとえば、Windows ラップトップ VS Windows phone。|
 |deviceMacAddress|String|デバイスの Mac アドレス。|
 |lastCheckInDateTime|DateTimeOffset|デバイスの最終チェックイン時刻。|
 
@@ -101,7 +101,6 @@ Content-Length: 415
   "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
 }
 ```
-
 
 
 

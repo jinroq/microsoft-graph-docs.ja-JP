@@ -1,21 +1,21 @@
 ---
 title: Get managedDevice
 description: managedDevice オブジェクトのプロパティとリレーションシップを読み取ります。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 76ea2b979dc57b565cc1d7174070929b6fb4c90d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 586824b92e1c22363f14bd066e30f0f3e22369ec
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32520180"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33909688"
 ---
 # <a name="get-manageddevice"></a>Get managedDevice
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [managedDevice](../resources/intune-devices-manageddevice.md) オブジェクトのプロパティとリレーションシップを読み取ります。
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDev
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7622
+Content-Length: 7686
 
 {
   "value": {
@@ -212,6 +212,7 @@ Content-Length: 7622
     "freeStorageSpaceInBytes": 7,
     "managedDeviceName": "Managed Device Name value",
     "partnerReportedThreatState": "activated",
+    "retireAfterDateTime": "2016-12-31T23:57:37.576134-08:00",
     "usersLoggedOn": [
       {
         "@odata.type": "microsoft.graph.loggedOnUser",
@@ -240,7 +241,6 @@ Content-Length: 7622
   }
 }
 ```
-
 
 
 

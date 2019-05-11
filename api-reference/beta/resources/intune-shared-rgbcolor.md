@@ -1,21 +1,21 @@
 ---
 title: rgbColor リソースの種類
 description: RGB 色。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c5ca085d009f38a2879074d7ee95a78acddf0f4a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2800373a19f439ff20ec00d80291bb35df27da4d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32572935"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33939806"
 ---
 # <a name="rgbcolor-resource-type"></a>rgbColor リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 RGB 色。
 
@@ -44,7 +44,6 @@ RGB 色。
   "b": 1024
 }
 ```
-
 
 
 

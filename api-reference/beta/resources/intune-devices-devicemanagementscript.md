@@ -1,58 +1,58 @@
 ---
-title: devicemanagementscript リソースの種類
+title: deviceManagementScript リソースの種類
 description: Intune は、登録済みの windows 10 Azure Active Directory 参加済みデバイスで Powershell スクリプトを実行する機能をお客様に提供します。 このスクリプトは、一度または定期的に実行できます。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6599f0dbc083859bef4f7a334d36fdcdfa63ee86
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 649ecb29aa3ff18960e858fc86a0f9fae316b13c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32578016"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33942060"
 ---
-# <a name="devicemanagementscript-resource-type"></a>devicemanagementscript リソースの種類
+# <a name="devicemanagementscript-resource-type"></a>deviceManagementScript リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 Intune は、登録済みの windows 10 Azure Active Directory 参加済みデバイスで Powershell スクリプトを実行する機能をお客様に提供します。 このスクリプトは、一度または定期的に実行できます。
 
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[devicemanagementscripts を一覧表示する](../api/intune-devices-devicemanagementscript-list.md)|[devicemanagementscript](../resources/intune-devices-devicemanagementscript.md)コレクション|[devicemanagementscript](../resources/intune-devices-devicemanagementscript.md)オブジェクトのプロパティとリレーションシップをリストします。|
-|[devicemanagementscript の取得](../api/intune-devices-devicemanagementscript-get.md)|[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|[devicemanagementscript](../resources/intune-devices-devicemanagementscript.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[devicemanagementscript の作成](../api/intune-devices-devicemanagementscript-create.md)|[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|新しい[devicemanagementscript](../resources/intune-devices-devicemanagementscript.md)オブジェクトを作成します。|
-|[devicemanagementscript の削除](../api/intune-devices-devicemanagementscript-delete.md)|なし|[devicemanagementscript](../resources/intune-devices-devicemanagementscript.md)を削除します。|
-|[devicemanagementscript の更新](../api/intune-devices-devicemanagementscript-update.md)|[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|[devicemanagementscript](../resources/intune-devices-devicemanagementscript.md)オブジェクトのプロパティを更新します。|
+|[DeviceManagementScripts を一覧表示する](../api/intune-devices-devicemanagementscript-list.md)|[Devicemanagementscript](../resources/intune-devices-devicemanagementscript.md)コレクション|[Devicemanagementscript](../resources/intune-devices-devicemanagementscript.md)オブジェクトのプロパティとリレーションシップをリストします。|
+|[DeviceManagementScript の取得](../api/intune-devices-devicemanagementscript-get.md)|[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|[Devicemanagementscript](../resources/intune-devices-devicemanagementscript.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[DeviceManagementScript の作成](../api/intune-devices-devicemanagementscript-create.md)|[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|新しい[Devicemanagementscript](../resources/intune-devices-devicemanagementscript.md)オブジェクトを作成します。|
+|[DeviceManagementScript の削除](../api/intune-devices-devicemanagementscript-delete.md)|None|[Devicemanagementscript](../resources/intune-devices-devicemanagementscript.md)を削除します。|
+|[DeviceManagementScript の更新](../api/intune-devices-devicemanagementscript-update.md)|[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|[Devicemanagementscript](../resources/intune-devices-devicemanagementscript.md)オブジェクトのプロパティを更新します。|
 |[assign アクション](../api/intune-devices-devicemanagementscript-assign.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|デバイス管理スクリプトの一意識別子。|
+|id|文字列|デバイス管理スクリプトの一意識別子。|
 |displayName|String|デバイス管理スクリプトの名前。|
-|説明|String|デバイス管理スクリプトの省略可能な説明です。|
+|description|String|デバイス管理スクリプトの省略可能な説明です。|
 |runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|スクリプトを実行する間隔を指定します。 定義されていない場合、スクリプトは1回だけ実行されます。|
-|scriptcontent|Binary|スクリプトの内容。|
+|scriptContent|Binary|スクリプトの内容。|
 |createdDateTime|DateTimeOffset|デバイス管理スクリプトが作成された日付と時刻。|
 |lastModifiedDateTime|DateTimeOffset|デバイス管理スクリプトが最後に変更された日付と時刻。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|実行コンテキストの種類を示します。 可能な値は、`system`、`user` です。|
 |enforceSignatureCheck|Boolean|スクリプト署名をチェックする必要があるかどうかを示します。|
 |fileName|String|スクリプトファイル名。|
-|roleScopeTagIds|String collection|この powershellscript インスタンスの範囲タグ id のリスト。|
+|roleScopeTagIds|String collection|この PowerShellScript インスタンスの範囲タグ Id のリスト。|
 |runAs32Bit|Boolean|PowerShell スクリプトを32ビットとして実行する必要があるかどうかを示す値。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 |リレーションシップ|型|説明|
 |:---|:---|:---|
-|groupAssignments|[devicemanagementscriptgroupassignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md)コレクション|デバイス管理スクリプトのグループ割り当てのリスト。|
+|groupAssignments|[Devicemanagementscriptgroupassignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md)コレクション|デバイス管理スクリプトのグループ割り当てのリスト。|
 |assignments|[deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md)コレクション|デバイス管理スクリプトのグループ割り当てのリスト。|
 |runSummary|[deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md)|デバイス管理スクリプトのサマリーを実行します。|
-|deviceRunStates|[devicemanagementscriptdevicestate](../resources/intune-devices-devicemanagementscriptdevicestate.md)コレクション|すべてのデバイスでこのスクリプトの実行状態のリスト。|
-|userRunStates|[devicemanagementscriptuserstate](../resources/intune-devices-devicemanagementscriptuserstate.md)コレクション|すべてのユーザーにわたるこのスクリプトの実行状態のリスト。|
+|deviceRunStates|[Devicemanagementscriptdevicestate](../resources/intune-devices-devicemanagementscriptdevicestate.md)コレクション|すべてのデバイスでこのスクリプトの実行状態のリスト。|
+|userRunStates|[Devicemanagementscriptuserstate](../resources/intune-devices-devicemanagementscriptuserstate.md)コレクション|すべてのユーザーにわたるこのスクリプトの実行状態のリスト。|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
@@ -83,7 +83,6 @@ Intune は、登録済みの windows 10 Azure Active Directory 参加済みデ�
   "runAs32Bit": true
 }
 ```
-
 
 
 

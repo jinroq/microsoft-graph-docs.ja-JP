@@ -1,21 +1,21 @@
 ---
-title: devicetypes 列挙型
+title: deviceTypes 列挙型
 description: デバイスの種類。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 604009d8a636a367203f9c9ced69aa22f40bfbc7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bf45f358a7c6423a689a60f163153485a2a3ff3c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32567187"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946897"
 ---
-# <a name="devicetypes-enum-type"></a>devicetypes 列挙型
+# <a name="devicetypes-enum-type"></a>deviceTypes 列挙型
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 デバイスの種類。
 
@@ -23,28 +23,27 @@ ms.locfileid: "32567187"
 |メンバー|値|説明|
 |:---|:---|:---|
 |コンピューター|.0|コンピューター.|
-|windowsRT|1 |WindowsRT。|
-|winMO6|2 |WinMO6。|
-|nokia|3 |Nokia.|
-|windowsPhone|4 |Windows phone。|
-|Mac|5 |Mac.|
-|win|6 |win.|
-|winembedded|7 |winembedded。|
+|windowsRT|1-d|WindowsRT.|
+|winMO6|pbm-2|WinMO6.|
+|nokia|1/3|Nokia.|
+|windowsPhone|2/4|Windows phone。|
+|Mac|5|Mac.|
+|Win|シックス|Win.|
+|winEmbedded|7|WinEmbedded。|
 |iPhone|8 |iPhone.|
 |iPad|9 |iPad.|
-|iPod|10  |iPodTouch。|
-|android|11 |Android.|
-|iソケットコンシューマー|12 |iソケットコンシューマー。|
-|unix|13 |Unix.|
-|macmdm|14 |MDM エージェントが組み込まれている Mac OS X クライアント。|
-|holoLens|15 |凝った Windows 10 goggles を表します。|
-|surfaceHub|16 |Surface HUB デバイス。|
-|androidforwork|17 |Android for work デバイス。|
-|androidenterprise|18 |Android エンタープライズデバイス。|
+|iPod|10 |iPodTouch.|
+|android|#|Android.|
+|Iソケットコンシューマー|個|Iソケットコンシューマー。|
+|unix|スリー|Unix.|
+|macMDM|第|MDM エージェントが組み込まれている Mac OS X クライアント。|
+|holoLens|約|凝った Windows 10 goggles を表します。|
+|surfaceHub|16|Surface HUB デバイス。|
+|androidForWork|インチ|Android for work デバイス。|
+|androidEnterprise|個|Android エンタープライズデバイス。|
 |blackberry|100|Blackberry.|
 |ヤシ|101|ヤシ.|
 |不明|255|デバイスの種類が不明であることを表します。|
-
 
 
 
