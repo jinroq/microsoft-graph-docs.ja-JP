@@ -1,30 +1,29 @@
 ---
-title: useremailsource 列挙型
+title: userEmailSource 列挙型
 description: ユーザー名のソースまたはメールソースに指定できる値。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6b544d0390b10c3cf7d1f48fcf6684f8128cdf6b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 48ade13d794c231c5c596c7960d0dee1a5ea805d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548440"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944608"
 ---
-# <a name="useremailsource-enum-type"></a><span data-ttu-id="9ae85-103">useremailsource 列挙型</span><span class="sxs-lookup"><span data-stu-id="9ae85-103">userEmailSource enum type</span></span>
+# <a name="useremailsource-enum-type"></a><span data-ttu-id="6d807-103">userEmailSource 列挙型</span><span class="sxs-lookup"><span data-stu-id="6d807-103">userEmailSource enum type</span></span>
 
-> <span data-ttu-id="9ae85-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="9ae85-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="6d807-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="6d807-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="9ae85-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="9ae85-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="6d807-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="6d807-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="9ae85-106">ユーザー名のソースまたはメールソースに指定できる値。</span><span class="sxs-lookup"><span data-stu-id="9ae85-106">Possible values for username source or email source.</span></span>
+<span data-ttu-id="6d807-106">ユーザー名のソースまたはメールソースに指定できる値。</span><span class="sxs-lookup"><span data-stu-id="6d807-106">Possible values for username source or email source.</span></span>
 
-## <a name="members"></a><span data-ttu-id="9ae85-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="9ae85-107">Members</span></span>
-|<span data-ttu-id="9ae85-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="9ae85-108">Member</span></span>|<span data-ttu-id="9ae85-109">値</span><span class="sxs-lookup"><span data-stu-id="9ae85-109">Value</span></span>|<span data-ttu-id="9ae85-110">説明</span><span class="sxs-lookup"><span data-stu-id="9ae85-110">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="6d807-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="6d807-107">Members</span></span>
+|<span data-ttu-id="6d807-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="6d807-108">Member</span></span>|<span data-ttu-id="6d807-109">値</span><span class="sxs-lookup"><span data-stu-id="6d807-109">Value</span></span>|<span data-ttu-id="6d807-110">説明</span><span class="sxs-lookup"><span data-stu-id="6d807-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="9ae85-111">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="9ae85-111">userPrincipalName</span></span>|<span data-ttu-id="9ae85-112">.0</span><span class="sxs-lookup"><span data-stu-id="9ae85-112">0</span></span>|<span data-ttu-id="9ae85-113">ユーザープリンシパル名。</span><span class="sxs-lookup"><span data-stu-id="9ae85-113">User principal name.</span></span>|
-|<span data-ttu-id="9ae85-114">primarySmtpAddress</span><span class="sxs-lookup"><span data-stu-id="9ae85-114">primarySmtpAddress</span></span>|<span data-ttu-id="9ae85-115">1 </span><span class="sxs-lookup"><span data-stu-id="9ae85-115">1</span></span>|<span data-ttu-id="9ae85-116">プライマリ SMTP アドレス。</span><span class="sxs-lookup"><span data-stu-id="9ae85-116">Primary SMTP address.</span></span>|
-
+|<span data-ttu-id="6d807-111">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="6d807-111">userPrincipalName</span></span>|<span data-ttu-id="6d807-112">.0</span><span class="sxs-lookup"><span data-stu-id="6d807-112">0</span></span>|<span data-ttu-id="6d807-113">ユーザープリンシパル名。</span><span class="sxs-lookup"><span data-stu-id="6d807-113">User principal name.</span></span>|
+|<span data-ttu-id="6d807-114">primarySmtpAddress</span><span class="sxs-lookup"><span data-stu-id="6d807-114">primarySmtpAddress</span></span>|<span data-ttu-id="6d807-115">1-d</span><span class="sxs-lookup"><span data-stu-id="6d807-115">1</span></span>|<span data-ttu-id="6d807-116">プライマリ SMTP アドレス。</span><span class="sxs-lookup"><span data-stu-id="6d807-116">Primary SMTP address.</span></span>|
 
 
 

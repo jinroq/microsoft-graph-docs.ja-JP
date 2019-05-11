@@ -1,35 +1,35 @@
 ---
 title: mediaContentRatingIreland リソースの種類
 description: まだ文書化されていません
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 22b0ad3bc1e83ab0a15c9e2185a5c7586fe31979
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2f6fee57eb4432781d7600f34b5ac444c498c3d2
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554374"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944881"
 ---
-# <a name="mediacontentratingireland-resource-type"></a><span data-ttu-id="55923-103">mediaContentRatingIreland リソースの種類</span><span class="sxs-lookup"><span data-stu-id="55923-103">mediaContentRatingIreland resource type</span></span>
+# <a name="mediacontentratingireland-resource-type"></a><span data-ttu-id="c2780-103">mediaContentRatingIreland リソースの種類</span><span class="sxs-lookup"><span data-stu-id="c2780-103">mediaContentRatingIreland resource type</span></span>
 
-> <span data-ttu-id="55923-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="55923-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="c2780-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c2780-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="55923-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="55923-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="c2780-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="c2780-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="55923-106">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="55923-106">Not yet documented</span></span>
+<span data-ttu-id="c2780-106">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="c2780-106">Not yet documented</span></span>
 
-## <a name="properties"></a><span data-ttu-id="55923-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="55923-107">Properties</span></span>
-|<span data-ttu-id="55923-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="55923-108">Property</span></span>|<span data-ttu-id="55923-109">型</span><span class="sxs-lookup"><span data-stu-id="55923-109">Type</span></span>|<span data-ttu-id="55923-110">説明</span><span class="sxs-lookup"><span data-stu-id="55923-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="c2780-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="c2780-107">Properties</span></span>
+|<span data-ttu-id="c2780-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="c2780-108">Property</span></span>|<span data-ttu-id="c2780-109">型</span><span class="sxs-lookup"><span data-stu-id="c2780-109">Type</span></span>|<span data-ttu-id="c2780-110">説明</span><span class="sxs-lookup"><span data-stu-id="c2780-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="55923-111">movieRating</span><span class="sxs-lookup"><span data-stu-id="55923-111">movieRating</span></span>|[<span data-ttu-id="55923-112">ratingIrelandMoviesType</span><span class="sxs-lookup"><span data-stu-id="55923-112">ratingIrelandMoviesType</span></span>](../resources/intune-deviceconfig-ratingirelandmoviestype.md)|<span data-ttu-id="55923-113">アイルランド向けに選択されている映画のレーティング。</span><span class="sxs-lookup"><span data-stu-id="55923-113">Movies rating selected for Ireland.</span></span> <span data-ttu-id="55923-114">可能な値は、`allAllowed`、`allBlocked`、`general`、`parentalGuidance`、`agesAbove12`、`agesAbove15`、`agesAbove16`、`adults` です。</span><span class="sxs-lookup"><span data-stu-id="55923-114">Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `agesAbove12`, `agesAbove15`, `agesAbove16`, `adults`.</span></span>|
-|<span data-ttu-id="55923-115">tvRating</span><span class="sxs-lookup"><span data-stu-id="55923-115">tvRating</span></span>|[<span data-ttu-id="55923-116">ratingIrelandTelevisionType</span><span class="sxs-lookup"><span data-stu-id="55923-116">ratingIrelandTelevisionType</span></span>](../resources/intune-deviceconfig-ratingirelandtelevisiontype.md)|<span data-ttu-id="55923-117">アイルランド向けに選択されているテレビのレーティング。</span><span class="sxs-lookup"><span data-stu-id="55923-117">TV rating selected for Ireland.</span></span> <span data-ttu-id="55923-118">可能な値は、`allAllowed`、`allBlocked`、`general`、`children`、`youngAdults`、`parentalSupervision`、`mature` です。</span><span class="sxs-lookup"><span data-stu-id="55923-118">Possible values are: `allAllowed`, `allBlocked`, `general`, `children`, `youngAdults`, `parentalSupervision`, `mature`.</span></span>|
+|<span data-ttu-id="c2780-111">movieRating</span><span class="sxs-lookup"><span data-stu-id="c2780-111">movieRating</span></span>|[<span data-ttu-id="c2780-112">ratingIrelandMoviesType</span><span class="sxs-lookup"><span data-stu-id="c2780-112">ratingIrelandMoviesType</span></span>](../resources/intune-deviceconfig-ratingirelandmoviestype.md)|<span data-ttu-id="c2780-113">アイルランド向けに選択されている映画のレーティング。</span><span class="sxs-lookup"><span data-stu-id="c2780-113">Movies rating selected for Ireland.</span></span> <span data-ttu-id="c2780-114">可能な値は、`allAllowed`、`allBlocked`、`general`、`parentalGuidance`、`agesAbove12`、`agesAbove15`、`agesAbove16`、`adults` です。</span><span class="sxs-lookup"><span data-stu-id="c2780-114">Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `agesAbove12`, `agesAbove15`, `agesAbove16`, `adults`.</span></span>|
+|<span data-ttu-id="c2780-115">tvRating</span><span class="sxs-lookup"><span data-stu-id="c2780-115">tvRating</span></span>|[<span data-ttu-id="c2780-116">ratingIrelandTelevisionType</span><span class="sxs-lookup"><span data-stu-id="c2780-116">ratingIrelandTelevisionType</span></span>](../resources/intune-deviceconfig-ratingirelandtelevisiontype.md)|<span data-ttu-id="c2780-117">アイルランド向けに選択されているテレビのレーティング。</span><span class="sxs-lookup"><span data-stu-id="c2780-117">TV rating selected for Ireland.</span></span> <span data-ttu-id="c2780-118">可能な値は、`allAllowed`、`allBlocked`、`general`、`children`、`youngAdults`、`parentalSupervision`、`mature` です。</span><span class="sxs-lookup"><span data-stu-id="c2780-118">Possible values are: `allAllowed`, `allBlocked`, `general`, `children`, `youngAdults`, `parentalSupervision`, `mature`.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="55923-119">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="55923-119">Relationships</span></span>
-<span data-ttu-id="55923-120">なし</span><span class="sxs-lookup"><span data-stu-id="55923-120">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="c2780-119">関係</span><span class="sxs-lookup"><span data-stu-id="c2780-119">Relationships</span></span>
+<span data-ttu-id="c2780-120">なし</span><span class="sxs-lookup"><span data-stu-id="c2780-120">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="55923-121">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="55923-121">JSON Representation</span></span>
-<span data-ttu-id="55923-122">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="55923-122">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="c2780-121">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="c2780-121">JSON Representation</span></span>
+<span data-ttu-id="c2780-122">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="c2780-122">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mediaContentRatingIreland"
@@ -42,7 +42,6 @@ ms.locfileid: "32554374"
   "tvRating": "String"
 }
 ```
-
 
 
 

@@ -1,47 +1,47 @@
 ---
 title: deviceConfigurationDeviceStateSummary リソースの種類
 description: まだ文書化されていません
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cb8a54e36d3808456d7fff06a7f960614ed0af78
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ce8d0435814c587ce2bb8b48ccc0365a9435a08d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32567401"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33947037"
 ---
-# <a name="deviceconfigurationdevicestatesummary-resource-type"></a><span data-ttu-id="4684b-103">deviceConfigurationDeviceStateSummary リソースの種類</span><span class="sxs-lookup"><span data-stu-id="4684b-103">deviceConfigurationDeviceStateSummary resource type</span></span>
+# <a name="deviceconfigurationdevicestatesummary-resource-type"></a><span data-ttu-id="f18dc-103">deviceConfigurationDeviceStateSummary リソースの種類</span><span class="sxs-lookup"><span data-stu-id="f18dc-103">deviceConfigurationDeviceStateSummary resource type</span></span>
 
-> <span data-ttu-id="4684b-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="4684b-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="f18dc-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f18dc-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="4684b-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="4684b-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="f18dc-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="f18dc-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="4684b-106">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="4684b-106">Not yet documented</span></span>
+<span data-ttu-id="f18dc-106">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="f18dc-106">Not yet documented</span></span>
 
-## <a name="methods"></a><span data-ttu-id="4684b-107">メソッド</span><span class="sxs-lookup"><span data-stu-id="4684b-107">Methods</span></span>
-|<span data-ttu-id="4684b-108">メソッド</span><span class="sxs-lookup"><span data-stu-id="4684b-108">Method</span></span>|<span data-ttu-id="4684b-109">戻り値の型</span><span class="sxs-lookup"><span data-stu-id="4684b-109">Return Type</span></span>|<span data-ttu-id="4684b-110">説明</span><span class="sxs-lookup"><span data-stu-id="4684b-110">Description</span></span>|
+## <a name="methods"></a><span data-ttu-id="f18dc-107">メソッド</span><span class="sxs-lookup"><span data-stu-id="f18dc-107">Methods</span></span>
+|<span data-ttu-id="f18dc-108">メソッド</span><span class="sxs-lookup"><span data-stu-id="f18dc-108">Method</span></span>|<span data-ttu-id="f18dc-109">戻り値の型</span><span class="sxs-lookup"><span data-stu-id="f18dc-109">Return Type</span></span>|<span data-ttu-id="f18dc-110">説明</span><span class="sxs-lookup"><span data-stu-id="f18dc-110">Description</span></span>|
 |:---|:---|:---|
-|[<span data-ttu-id="4684b-111">Get deviceConfigurationDeviceStateSummary</span><span class="sxs-lookup"><span data-stu-id="4684b-111">Get deviceConfigurationDeviceStateSummary</span></span>](../api/intune-deviceconfig-deviceconfigurationdevicestatesummary-get.md)|[<span data-ttu-id="4684b-112">deviceConfigurationDeviceStateSummary</span><span class="sxs-lookup"><span data-stu-id="4684b-112">deviceConfigurationDeviceStateSummary</span></span>](../resources/intune-deviceconfig-deviceconfigurationdevicestatesummary.md)|<span data-ttu-id="4684b-113">[deviceConfigurationDeviceStateSummary](../resources/intune-deviceconfig-deviceconfigurationdevicestatesummary.md) オブジェクトのプロパティとリレーションシップを読み取ります。</span><span class="sxs-lookup"><span data-stu-id="4684b-113">Read properties and relationships of the [deviceConfigurationDeviceStateSummary](../resources/intune-deviceconfig-deviceconfigurationdevicestatesummary.md) object.</span></span>|
-|[<span data-ttu-id="4684b-114">Update deviceConfigurationDeviceStateSummary</span><span class="sxs-lookup"><span data-stu-id="4684b-114">Update deviceConfigurationDeviceStateSummary</span></span>](../api/intune-deviceconfig-deviceconfigurationdevicestatesummary-update.md)|[<span data-ttu-id="4684b-115">deviceConfigurationDeviceStateSummary</span><span class="sxs-lookup"><span data-stu-id="4684b-115">deviceConfigurationDeviceStateSummary</span></span>](../resources/intune-deviceconfig-deviceconfigurationdevicestatesummary.md)|<span data-ttu-id="4684b-116">[deviceConfigurationDeviceStateSummary](../resources/intune-deviceconfig-deviceconfigurationdevicestatesummary.md) オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="4684b-116">Update the properties of a [deviceConfigurationDeviceStateSummary](../resources/intune-deviceconfig-deviceconfigurationdevicestatesummary.md) object.</span></span>|
+|[<span data-ttu-id="f18dc-111">Get deviceConfigurationDeviceStateSummary</span><span class="sxs-lookup"><span data-stu-id="f18dc-111">Get deviceConfigurationDeviceStateSummary</span></span>](../api/intune-deviceconfig-deviceconfigurationdevicestatesummary-get.md)|[<span data-ttu-id="f18dc-112">deviceConfigurationDeviceStateSummary</span><span class="sxs-lookup"><span data-stu-id="f18dc-112">deviceConfigurationDeviceStateSummary</span></span>](../resources/intune-deviceconfig-deviceconfigurationdevicestatesummary.md)|<span data-ttu-id="f18dc-113">[deviceConfigurationDeviceStateSummary](../resources/intune-deviceconfig-deviceconfigurationdevicestatesummary.md) オブジェクトのプロパティとリレーションシップを読み取ります。</span><span class="sxs-lookup"><span data-stu-id="f18dc-113">Read properties and relationships of the [deviceConfigurationDeviceStateSummary](../resources/intune-deviceconfig-deviceconfigurationdevicestatesummary.md) object.</span></span>|
+|[<span data-ttu-id="f18dc-114">Update deviceConfigurationDeviceStateSummary</span><span class="sxs-lookup"><span data-stu-id="f18dc-114">Update deviceConfigurationDeviceStateSummary</span></span>](../api/intune-deviceconfig-deviceconfigurationdevicestatesummary-update.md)|[<span data-ttu-id="f18dc-115">deviceConfigurationDeviceStateSummary</span><span class="sxs-lookup"><span data-stu-id="f18dc-115">deviceConfigurationDeviceStateSummary</span></span>](../resources/intune-deviceconfig-deviceconfigurationdevicestatesummary.md)|<span data-ttu-id="f18dc-116">[deviceConfigurationDeviceStateSummary](../resources/intune-deviceconfig-deviceconfigurationdevicestatesummary.md) オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="f18dc-116">Update the properties of a [deviceConfigurationDeviceStateSummary](../resources/intune-deviceconfig-deviceconfigurationdevicestatesummary.md) object.</span></span>|
 
-## <a name="properties"></a><span data-ttu-id="4684b-117">プロパティ</span><span class="sxs-lookup"><span data-stu-id="4684b-117">Properties</span></span>
-|<span data-ttu-id="4684b-118">プロパティ</span><span class="sxs-lookup"><span data-stu-id="4684b-118">Property</span></span>|<span data-ttu-id="4684b-119">型</span><span class="sxs-lookup"><span data-stu-id="4684b-119">Type</span></span>|<span data-ttu-id="4684b-120">説明</span><span class="sxs-lookup"><span data-stu-id="4684b-120">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="f18dc-117">プロパティ</span><span class="sxs-lookup"><span data-stu-id="f18dc-117">Properties</span></span>
+|<span data-ttu-id="f18dc-118">プロパティ</span><span class="sxs-lookup"><span data-stu-id="f18dc-118">Property</span></span>|<span data-ttu-id="f18dc-119">型</span><span class="sxs-lookup"><span data-stu-id="f18dc-119">Type</span></span>|<span data-ttu-id="f18dc-120">説明</span><span class="sxs-lookup"><span data-stu-id="f18dc-120">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="4684b-121">id</span><span class="sxs-lookup"><span data-stu-id="4684b-121">id</span></span>|<span data-ttu-id="4684b-122">String</span><span class="sxs-lookup"><span data-stu-id="4684b-122">String</span></span>|<span data-ttu-id="4684b-123">エンティティのキー。</span><span class="sxs-lookup"><span data-stu-id="4684b-123">Key of the entity.</span></span>|
-|<span data-ttu-id="4684b-124">unknownDeviceCount</span><span class="sxs-lookup"><span data-stu-id="4684b-124">unknownDeviceCount</span></span>|<span data-ttu-id="4684b-125">Int32</span><span class="sxs-lookup"><span data-stu-id="4684b-125">Int32</span></span>|<span data-ttu-id="4684b-126">不明なデバイスの数</span><span class="sxs-lookup"><span data-stu-id="4684b-126">Number of unknown devices</span></span>|
-|<span data-ttu-id="4684b-127">notApplicableDeviceCount</span><span class="sxs-lookup"><span data-stu-id="4684b-127">notApplicableDeviceCount</span></span>|<span data-ttu-id="4684b-128">Int32</span><span class="sxs-lookup"><span data-stu-id="4684b-128">Int32</span></span>|<span data-ttu-id="4684b-129">該当しないデバイスの数</span><span class="sxs-lookup"><span data-stu-id="4684b-129">Number of not applicable devices</span></span>|
-|<span data-ttu-id="4684b-130">compliantDeviceCount</span><span class="sxs-lookup"><span data-stu-id="4684b-130">compliantDeviceCount</span></span>|<span data-ttu-id="4684b-131">Int32</span><span class="sxs-lookup"><span data-stu-id="4684b-131">Int32</span></span>|<span data-ttu-id="4684b-132">準拠デバイスの数</span><span class="sxs-lookup"><span data-stu-id="4684b-132">Number of compliant devices</span></span>|
-|<span data-ttu-id="4684b-133">remediatedDeviceCount</span><span class="sxs-lookup"><span data-stu-id="4684b-133">remediatedDeviceCount</span></span>|<span data-ttu-id="4684b-134">Int32</span><span class="sxs-lookup"><span data-stu-id="4684b-134">Int32</span></span>|<span data-ttu-id="4684b-135">修復済みデバイスの数</span><span class="sxs-lookup"><span data-stu-id="4684b-135">Number of remediated devices</span></span>|
-|<span data-ttu-id="4684b-136">nonCompliantDeviceCount</span><span class="sxs-lookup"><span data-stu-id="4684b-136">nonCompliantDeviceCount</span></span>|<span data-ttu-id="4684b-137">Int32</span><span class="sxs-lookup"><span data-stu-id="4684b-137">Int32</span></span>|<span data-ttu-id="4684b-138">準拠していないデバイスの数</span><span class="sxs-lookup"><span data-stu-id="4684b-138">Number of NonCompliant devices</span></span>|
-|<span data-ttu-id="4684b-139">errorDeviceCount</span><span class="sxs-lookup"><span data-stu-id="4684b-139">errorDeviceCount</span></span>|<span data-ttu-id="4684b-140">Int32</span><span class="sxs-lookup"><span data-stu-id="4684b-140">Int32</span></span>|<span data-ttu-id="4684b-141">エラー デバイスの数</span><span class="sxs-lookup"><span data-stu-id="4684b-141">Number of error devices</span></span>|
-|<span data-ttu-id="4684b-142">conflictDeviceCount</span><span class="sxs-lookup"><span data-stu-id="4684b-142">conflictDeviceCount</span></span>|<span data-ttu-id="4684b-143">Int32</span><span class="sxs-lookup"><span data-stu-id="4684b-143">Int32</span></span>|<span data-ttu-id="4684b-144">競合デバイスの数</span><span class="sxs-lookup"><span data-stu-id="4684b-144">Number of conflict devices</span></span>|
+|<span data-ttu-id="f18dc-121">id</span><span class="sxs-lookup"><span data-stu-id="f18dc-121">id</span></span>|<span data-ttu-id="f18dc-122">String</span><span class="sxs-lookup"><span data-stu-id="f18dc-122">String</span></span>|<span data-ttu-id="f18dc-123">エンティティのキー。</span><span class="sxs-lookup"><span data-stu-id="f18dc-123">Key of the entity.</span></span>|
+|<span data-ttu-id="f18dc-124">unknownDeviceCount</span><span class="sxs-lookup"><span data-stu-id="f18dc-124">unknownDeviceCount</span></span>|<span data-ttu-id="f18dc-125">Int32</span><span class="sxs-lookup"><span data-stu-id="f18dc-125">Int32</span></span>|<span data-ttu-id="f18dc-126">不明なデバイスの数</span><span class="sxs-lookup"><span data-stu-id="f18dc-126">Number of unknown devices</span></span>|
+|<span data-ttu-id="f18dc-127">notApplicableDeviceCount</span><span class="sxs-lookup"><span data-stu-id="f18dc-127">notApplicableDeviceCount</span></span>|<span data-ttu-id="f18dc-128">Int32</span><span class="sxs-lookup"><span data-stu-id="f18dc-128">Int32</span></span>|<span data-ttu-id="f18dc-129">該当しないデバイスの数</span><span class="sxs-lookup"><span data-stu-id="f18dc-129">Number of not applicable devices</span></span>|
+|<span data-ttu-id="f18dc-130">compliantDeviceCount</span><span class="sxs-lookup"><span data-stu-id="f18dc-130">compliantDeviceCount</span></span>|<span data-ttu-id="f18dc-131">Int32</span><span class="sxs-lookup"><span data-stu-id="f18dc-131">Int32</span></span>|<span data-ttu-id="f18dc-132">準拠デバイスの数</span><span class="sxs-lookup"><span data-stu-id="f18dc-132">Number of compliant devices</span></span>|
+|<span data-ttu-id="f18dc-133">remediatedDeviceCount</span><span class="sxs-lookup"><span data-stu-id="f18dc-133">remediatedDeviceCount</span></span>|<span data-ttu-id="f18dc-134">Int32</span><span class="sxs-lookup"><span data-stu-id="f18dc-134">Int32</span></span>|<span data-ttu-id="f18dc-135">修復済みデバイスの数</span><span class="sxs-lookup"><span data-stu-id="f18dc-135">Number of remediated devices</span></span>|
+|<span data-ttu-id="f18dc-136">nonCompliantDeviceCount</span><span class="sxs-lookup"><span data-stu-id="f18dc-136">nonCompliantDeviceCount</span></span>|<span data-ttu-id="f18dc-137">Int32</span><span class="sxs-lookup"><span data-stu-id="f18dc-137">Int32</span></span>|<span data-ttu-id="f18dc-138">準拠していないデバイスの数</span><span class="sxs-lookup"><span data-stu-id="f18dc-138">Number of NonCompliant devices</span></span>|
+|<span data-ttu-id="f18dc-139">errorDeviceCount</span><span class="sxs-lookup"><span data-stu-id="f18dc-139">errorDeviceCount</span></span>|<span data-ttu-id="f18dc-140">Int32</span><span class="sxs-lookup"><span data-stu-id="f18dc-140">Int32</span></span>|<span data-ttu-id="f18dc-141">エラー デバイスの数</span><span class="sxs-lookup"><span data-stu-id="f18dc-141">Number of error devices</span></span>|
+|<span data-ttu-id="f18dc-142">conflictDeviceCount</span><span class="sxs-lookup"><span data-stu-id="f18dc-142">conflictDeviceCount</span></span>|<span data-ttu-id="f18dc-143">Int32</span><span class="sxs-lookup"><span data-stu-id="f18dc-143">Int32</span></span>|<span data-ttu-id="f18dc-144">競合デバイスの数</span><span class="sxs-lookup"><span data-stu-id="f18dc-144">Number of conflict devices</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="4684b-145">関係</span><span class="sxs-lookup"><span data-stu-id="4684b-145">Relationships</span></span>
-<span data-ttu-id="4684b-146">なし</span><span class="sxs-lookup"><span data-stu-id="4684b-146">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="f18dc-145">関係</span><span class="sxs-lookup"><span data-stu-id="f18dc-145">Relationships</span></span>
+<span data-ttu-id="f18dc-146">なし</span><span class="sxs-lookup"><span data-stu-id="f18dc-146">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="4684b-147">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="4684b-147">JSON Representation</span></span>
-<span data-ttu-id="4684b-148">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="4684b-148">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f18dc-147">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="f18dc-147">JSON Representation</span></span>
+<span data-ttu-id="f18dc-148">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="f18dc-148">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -61,7 +61,6 @@ ms.locfileid: "32567401"
   "conflictDeviceCount": 1024
 }
 ```
-
 
 
 

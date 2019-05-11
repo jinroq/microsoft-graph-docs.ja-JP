@@ -1,36 +1,36 @@
 ---
 title: iosNetworkUsageRule リソースの種類
 description: ネットワーク使用規則により、企業は管理対象アプリで携帯電話会社の回線などのネットワークをどのように使用するかを指定できます。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e91940e5d090cc64bd0d98fa5f644b72d7f3a0a7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d7d11b8a7591d2fce03b3f8a023e9ef90fab4f1b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521503"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946925"
 ---
-# <a name="iosnetworkusagerule-resource-type"></a><span data-ttu-id="d88fa-103">iosNetworkUsageRule リソースの種類</span><span class="sxs-lookup"><span data-stu-id="d88fa-103">iosNetworkUsageRule resource type</span></span>
+# <a name="iosnetworkusagerule-resource-type"></a><span data-ttu-id="f36a4-103">iosNetworkUsageRule リソースの種類</span><span class="sxs-lookup"><span data-stu-id="f36a4-103">iosNetworkUsageRule resource type</span></span>
 
-> <span data-ttu-id="d88fa-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d88fa-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="f36a4-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f36a4-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="d88fa-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="d88fa-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="f36a4-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="f36a4-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="d88fa-106">ネットワーク使用規則により、企業は管理対象アプリで携帯電話会社の回線などのネットワークをどのように使用するかを指定できます。</span><span class="sxs-lookup"><span data-stu-id="d88fa-106">Network Usage Rules allow enterprises to specify how managed apps use networks, such as cellular data networks.</span></span>
+<span data-ttu-id="f36a4-106">ネットワーク使用規則により、企業は管理対象アプリで携帯電話会社の回線などのネットワークをどのように使用するかを指定できます。</span><span class="sxs-lookup"><span data-stu-id="f36a4-106">Network Usage Rules allow enterprises to specify how managed apps use networks, such as cellular data networks.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="d88fa-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="d88fa-107">Properties</span></span>
-|<span data-ttu-id="d88fa-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="d88fa-108">Property</span></span>|<span data-ttu-id="d88fa-109">型</span><span class="sxs-lookup"><span data-stu-id="d88fa-109">Type</span></span>|<span data-ttu-id="d88fa-110">説明</span><span class="sxs-lookup"><span data-stu-id="d88fa-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="f36a4-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="f36a4-107">Properties</span></span>
+|<span data-ttu-id="f36a4-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="f36a4-108">Property</span></span>|<span data-ttu-id="f36a4-109">型</span><span class="sxs-lookup"><span data-stu-id="f36a4-109">Type</span></span>|<span data-ttu-id="f36a4-110">説明</span><span class="sxs-lookup"><span data-stu-id="f36a4-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="d88fa-111">managedApps</span><span class="sxs-lookup"><span data-stu-id="d88fa-111">managedApps</span></span>|<span data-ttu-id="d88fa-112">[appListItem](../resources/intune-deviceconfig-applistitem.md) コレクション</span><span class="sxs-lookup"><span data-stu-id="d88fa-112">[appListItem](../resources/intune-deviceconfig-applistitem.md) collection</span></span>|<span data-ttu-id="d88fa-113">このルールが適用される管理対象アプリに関する情報です。</span><span class="sxs-lookup"><span data-stu-id="d88fa-113">Information about the managed apps that this rule is going to apply to.</span></span> <span data-ttu-id="d88fa-114">このコレクションには、最大で 500 個の要素を含めることができます。</span><span class="sxs-lookup"><span data-stu-id="d88fa-114">This collection can contain a maximum of 500 elements.</span></span>|
-|<span data-ttu-id="d88fa-115">cellularDataBlockWhenRoaming</span><span class="sxs-lookup"><span data-stu-id="d88fa-115">cellularDataBlockWhenRoaming</span></span>|<span data-ttu-id="d88fa-116">ブール型</span><span class="sxs-lookup"><span data-stu-id="d88fa-116">Boolean</span></span>|<span data-ttu-id="d88fa-117">true に設定すると、ローミングの際、対応する管理対象アプリで携帯電話データを使用できなくなります。</span><span class="sxs-lookup"><span data-stu-id="d88fa-117">If set to true, corresponding managed apps will not be allowed to use cellular data when roaming.</span></span>|
-|<span data-ttu-id="d88fa-118">cellularDataBlocked</span><span class="sxs-lookup"><span data-stu-id="d88fa-118">cellularDataBlocked</span></span>|<span data-ttu-id="d88fa-119">Boolean</span><span class="sxs-lookup"><span data-stu-id="d88fa-119">Boolean</span></span>|<span data-ttu-id="d88fa-120">true に設定すると、いかなる場合でも、対応する管理対象アプリで携帯電話データを使用できなくなります。</span><span class="sxs-lookup"><span data-stu-id="d88fa-120">If set to true, corresponding managed apps will not be allowed to use cellular data at any time.</span></span>|
+|<span data-ttu-id="f36a4-111">managedApps</span><span class="sxs-lookup"><span data-stu-id="f36a4-111">managedApps</span></span>|<span data-ttu-id="f36a4-112">[appListItem](../resources/intune-deviceconfig-applistitem.md) コレクション</span><span class="sxs-lookup"><span data-stu-id="f36a4-112">[appListItem](../resources/intune-deviceconfig-applistitem.md) collection</span></span>|<span data-ttu-id="f36a4-113">このルールが適用される管理対象アプリに関する情報です。</span><span class="sxs-lookup"><span data-stu-id="f36a4-113">Information about the managed apps that this rule is going to apply to.</span></span> <span data-ttu-id="f36a4-114">このコレクションには、最大で 500 個の要素を含めることができます。</span><span class="sxs-lookup"><span data-stu-id="f36a4-114">This collection can contain a maximum of 500 elements.</span></span>|
+|<span data-ttu-id="f36a4-115">cellularDataBlockWhenRoaming</span><span class="sxs-lookup"><span data-stu-id="f36a4-115">cellularDataBlockWhenRoaming</span></span>|<span data-ttu-id="f36a4-116">Boolean</span><span class="sxs-lookup"><span data-stu-id="f36a4-116">Boolean</span></span>|<span data-ttu-id="f36a4-117">true に設定すると、ローミングの際、対応する管理対象アプリで携帯電話データを使用できなくなります。</span><span class="sxs-lookup"><span data-stu-id="f36a4-117">If set to true, corresponding managed apps will not be allowed to use cellular data when roaming.</span></span>|
+|<span data-ttu-id="f36a4-118">cellularDataBlocked</span><span class="sxs-lookup"><span data-stu-id="f36a4-118">cellularDataBlocked</span></span>|<span data-ttu-id="f36a4-119">Boolean</span><span class="sxs-lookup"><span data-stu-id="f36a4-119">Boolean</span></span>|<span data-ttu-id="f36a4-120">true に設定すると、いかなる場合でも、対応する管理対象アプリで携帯電話データを使用できなくなります。</span><span class="sxs-lookup"><span data-stu-id="f36a4-120">If set to true, corresponding managed apps will not be allowed to use cellular data at any time.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="d88fa-121">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="d88fa-121">Relationships</span></span>
-<span data-ttu-id="d88fa-122">なし</span><span class="sxs-lookup"><span data-stu-id="d88fa-122">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="f36a4-121">関係</span><span class="sxs-lookup"><span data-stu-id="f36a4-121">Relationships</span></span>
+<span data-ttu-id="f36a4-122">なし</span><span class="sxs-lookup"><span data-stu-id="f36a4-122">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="d88fa-123">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="d88fa-123">JSON Representation</span></span>
-<span data-ttu-id="d88fa-124">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="d88fa-124">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f36a4-123">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="f36a4-123">JSON Representation</span></span>
+<span data-ttu-id="f36a4-124">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="f36a4-124">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosNetworkUsageRule"
@@ -52,7 +52,6 @@ ms.locfileid: "32521503"
   "cellularDataBlocked": true
 }
 ```
-
 
 
 

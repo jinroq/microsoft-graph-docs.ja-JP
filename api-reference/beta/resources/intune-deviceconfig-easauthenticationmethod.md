@@ -1,30 +1,30 @@
 ---
-title: easauthenticationmethod enum 型
+title: easAuthenticationMethod enum 型
 description: Exchange Active Sync 認証方法。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 465370d47a38d4f4c234b724060f33ab4f89a723
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e876e9e9fc7974310e29c6273fc0f01653311d05
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32567131"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946869"
 ---
-# <a name="easauthenticationmethod-enum-type"></a><span data-ttu-id="14466-103">easauthenticationmethod enum 型</span><span class="sxs-lookup"><span data-stu-id="14466-103">easAuthenticationMethod enum type</span></span>
+# <a name="easauthenticationmethod-enum-type"></a><span data-ttu-id="dee9e-103">easAuthenticationMethod enum 型</span><span class="sxs-lookup"><span data-stu-id="dee9e-103">easAuthenticationMethod enum type</span></span>
 
-> <span data-ttu-id="14466-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="14466-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="dee9e-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="dee9e-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="14466-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="14466-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="dee9e-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="dee9e-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="14466-106">Exchange Active Sync 認証方法。</span><span class="sxs-lookup"><span data-stu-id="14466-106">Exchange Active Sync authentication method.</span></span>
+<span data-ttu-id="dee9e-106">Exchange Active Sync 認証方法。</span><span class="sxs-lookup"><span data-stu-id="dee9e-106">Exchange Active Sync authentication method.</span></span>
 
-## <a name="members"></a><span data-ttu-id="14466-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="14466-107">Members</span></span>
-|<span data-ttu-id="14466-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="14466-108">Member</span></span>|<span data-ttu-id="14466-109">値</span><span class="sxs-lookup"><span data-stu-id="14466-109">Value</span></span>|<span data-ttu-id="14466-110">説明</span><span class="sxs-lookup"><span data-stu-id="14466-110">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="dee9e-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="dee9e-107">Members</span></span>
+|<span data-ttu-id="dee9e-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="dee9e-108">Member</span></span>|<span data-ttu-id="dee9e-109">値</span><span class="sxs-lookup"><span data-stu-id="dee9e-109">Value</span></span>|<span data-ttu-id="dee9e-110">説明</span><span class="sxs-lookup"><span data-stu-id="dee9e-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="14466-111">usernameAndPassword</span><span class="sxs-lookup"><span data-stu-id="14466-111">usernameAndPassword</span></span>|<span data-ttu-id="14466-112">.0</span><span class="sxs-lookup"><span data-stu-id="14466-112">0</span></span>|<span data-ttu-id="14466-113">ユーザー名とパスワードを使用して認証します。</span><span class="sxs-lookup"><span data-stu-id="14466-113">Authenticate with a username and password.</span></span>|
-|<span data-ttu-id="14466-114">certificate</span><span class="sxs-lookup"><span data-stu-id="14466-114">certificate</span></span>|<span data-ttu-id="14466-115">1 </span><span class="sxs-lookup"><span data-stu-id="14466-115">1</span></span>|<span data-ttu-id="14466-116">証明書を使用して認証します。</span><span class="sxs-lookup"><span data-stu-id="14466-116">Authenticate with a certificate.</span></span>|
-
+|<span data-ttu-id="dee9e-111">usernameAndPassword</span><span class="sxs-lookup"><span data-stu-id="dee9e-111">usernameAndPassword</span></span>|<span data-ttu-id="dee9e-112">.0</span><span class="sxs-lookup"><span data-stu-id="dee9e-112">0</span></span>|<span data-ttu-id="dee9e-113">ユーザー名とパスワードを使用して認証します。</span><span class="sxs-lookup"><span data-stu-id="dee9e-113">Authenticate with a username and password.</span></span>|
+|<span data-ttu-id="dee9e-114">certificate</span><span class="sxs-lookup"><span data-stu-id="dee9e-114">certificate</span></span>|<span data-ttu-id="dee9e-115">1-d</span><span class="sxs-lookup"><span data-stu-id="dee9e-115">1</span></span>|<span data-ttu-id="dee9e-116">証明書を使用して認証します。</span><span class="sxs-lookup"><span data-stu-id="dee9e-116">Authenticate with a certificate.</span></span>|
+|<span data-ttu-id="dee9e-117">derivedCredential</span><span class="sxs-lookup"><span data-stu-id="dee9e-117">derivedCredential</span></span>|<span data-ttu-id="dee9e-118">pbm-2</span><span class="sxs-lookup"><span data-stu-id="dee9e-118">2</span></span>|<span data-ttu-id="dee9e-119">派生した資格情報を使用して認証します。</span><span class="sxs-lookup"><span data-stu-id="dee9e-119">Authenticate with derived credential.</span></span>|
 
 
 

@@ -1,34 +1,34 @@
 ---
 title: Get androidManagedAppProtection
 description: androidManagedAppProtection オブジェクトのプロパティとリレーションシップを読み取ります。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 564ff47389ce0a45bc1222df7956e9a09dcec67c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1b37c079c65dfc6951c48981662906dc71a2a08c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32530446"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33904357"
 ---
-# <a name="get-androidmanagedappprotection"></a><span data-ttu-id="26883-103">Get androidManagedAppProtection</span><span class="sxs-lookup"><span data-stu-id="26883-103">Get androidManagedAppProtection</span></span>
+# <a name="get-androidmanagedappprotection"></a><span data-ttu-id="d3fae-103">Get androidManagedAppProtection</span><span class="sxs-lookup"><span data-stu-id="d3fae-103">Get androidManagedAppProtection</span></span>
 
-> <span data-ttu-id="26883-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="26883-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="d3fae-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d3fae-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="26883-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="26883-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="d3fae-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="d3fae-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="26883-106">[androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md) オブジェクトのプロパティとリレーションシップを読み取ります。</span><span class="sxs-lookup"><span data-stu-id="26883-106">Read properties and relationships of the [androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md) object.</span></span>
+<span data-ttu-id="d3fae-106">[androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md) オブジェクトのプロパティとリレーションシップを読み取ります。</span><span class="sxs-lookup"><span data-stu-id="d3fae-106">Read properties and relationships of the [androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="26883-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="26883-107">Prerequisites</span></span>
-<span data-ttu-id="26883-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="26883-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="d3fae-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="d3fae-107">Prerequisites</span></span>
+<span data-ttu-id="d3fae-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d3fae-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="26883-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="26883-110">Permission type</span></span>|<span data-ttu-id="26883-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="26883-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="d3fae-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="d3fae-110">Permission type</span></span>|<span data-ttu-id="d3fae-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="d3fae-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="26883-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="26883-112">Delegated (work or school account)</span></span>|<span data-ttu-id="26883-113">DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="26883-113">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
-|<span data-ttu-id="26883-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="26883-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="26883-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="26883-115">Not supported.</span></span>|
-|<span data-ttu-id="26883-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="26883-116">Application</span></span>|<span data-ttu-id="26883-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="26883-117">Not supported.</span></span>|
+|<span data-ttu-id="d3fae-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="d3fae-112">Delegated (work or school account)</span></span>|<span data-ttu-id="d3fae-113">DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="d3fae-113">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
+|<span data-ttu-id="d3fae-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="d3fae-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="d3fae-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d3fae-115">Not supported.</span></span>|
+|<span data-ttu-id="d3fae-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="d3fae-116">Application</span></span>|<span data-ttu-id="d3fae-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d3fae-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="26883-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="26883-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d3fae-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="d3fae-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,35 +37,35 @@ ms.locfileid: "32530446"
 GET /deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtectionId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="26883-119">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="26883-119">Optional query parameters</span></span>
-<span data-ttu-id="26883-120">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://docs.microsoft.com/en-us/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="26883-120">This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="d3fae-119">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="d3fae-119">Optional query parameters</span></span>
+<span data-ttu-id="d3fae-120">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://docs.microsoft.com/en-us/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="d3fae-120">This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="26883-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="26883-121">Request headers</span></span>
-|<span data-ttu-id="26883-122">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="26883-122">Header</span></span>|<span data-ttu-id="26883-123">値</span><span class="sxs-lookup"><span data-stu-id="26883-123">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="d3fae-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="d3fae-121">Request headers</span></span>
+|<span data-ttu-id="d3fae-122">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="d3fae-122">Header</span></span>|<span data-ttu-id="d3fae-123">値</span><span class="sxs-lookup"><span data-stu-id="d3fae-123">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="26883-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="26883-124">Authorization</span></span>|<span data-ttu-id="26883-125">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="26883-125">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="26883-126">承諾</span><span class="sxs-lookup"><span data-stu-id="26883-126">Accept</span></span>|<span data-ttu-id="26883-127">application/json</span><span class="sxs-lookup"><span data-stu-id="26883-127">application/json</span></span>|
+|<span data-ttu-id="d3fae-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="d3fae-124">Authorization</span></span>|<span data-ttu-id="d3fae-125">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="d3fae-125">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="d3fae-126">承諾</span><span class="sxs-lookup"><span data-stu-id="d3fae-126">Accept</span></span>|<span data-ttu-id="d3fae-127">application/json</span><span class="sxs-lookup"><span data-stu-id="d3fae-127">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="26883-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="26883-128">Request body</span></span>
-<span data-ttu-id="26883-129">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="26883-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d3fae-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="d3fae-128">Request body</span></span>
+<span data-ttu-id="d3fae-129">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="d3fae-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="26883-130">応答</span><span class="sxs-lookup"><span data-stu-id="26883-130">Response</span></span>
-<span data-ttu-id="26883-131">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="26883-131">If successful, this method returns a `200 OK` response code and [androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="d3fae-130">応答</span><span class="sxs-lookup"><span data-stu-id="d3fae-130">Response</span></span>
+<span data-ttu-id="d3fae-131">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="d3fae-131">If successful, this method returns a `200 OK` response code and [androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="26883-132">例</span><span class="sxs-lookup"><span data-stu-id="26883-132">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d3fae-132">例</span><span class="sxs-lookup"><span data-stu-id="d3fae-132">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="26883-133">要求</span><span class="sxs-lookup"><span data-stu-id="26883-133">Request</span></span>
-<span data-ttu-id="26883-134">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="26883-134">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="d3fae-133">要求</span><span class="sxs-lookup"><span data-stu-id="d3fae-133">Request</span></span>
+<span data-ttu-id="d3fae-134">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="d3fae-134">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtectionId}
 ```
 
-### <a name="response"></a><span data-ttu-id="26883-135">応答</span><span class="sxs-lookup"><span data-stu-id="26883-135">Response</span></span>
-<span data-ttu-id="26883-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="26883-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="d3fae-135">応答</span><span class="sxs-lookup"><span data-stu-id="d3fae-135">Response</span></span>
+<span data-ttu-id="d3fae-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="d3fae-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3101
+Content-Length: 3237
 
 {
   "value": {
@@ -134,11 +134,12 @@ Content-Length: 3101
     "requiredAndroidSafetyNetDeviceAttestationType": "basicIntegrity",
     "appActionIfAndroidSafetyNetDeviceAttestationFailed": "wipe",
     "requiredAndroidSafetyNetAppsVerificationType": "enabled",
-    "appActionIfAndroidSafetyNetAppsVerificationFailed": "wipe"
+    "appActionIfAndroidSafetyNetAppsVerificationFailed": "wipe",
+    "customBrowserPackageId": "Custom Browser Package Id value",
+    "customBrowserDisplayName": "Custom Browser Display Name value"
   }
 }
 ```
-
 
 
 
