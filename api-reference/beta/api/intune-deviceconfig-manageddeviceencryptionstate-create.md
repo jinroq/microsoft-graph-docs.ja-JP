@@ -1,23 +1,23 @@
 ---
-title: manageddeviceencryptionstate の作成
-description: 新しい manageddeviceencryptionstate オブジェクトを作成します。
-author: tfitzmac
+title: ManagedDeviceEncryptionState の作成
+description: 新しい managedDeviceEncryptionState オブジェクトを作成します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6edba4844d56f1c1f87ff146f547cd4b08699c84
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3c0a00a2921bfa6d7c679afb4be6b080154d1c8b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32518150"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33922677"
 ---
-# <a name="create-manageddeviceencryptionstate"></a>manageddeviceencryptionstate の作成
+# <a name="create-manageddeviceencryptionstate"></a>ManagedDeviceEncryptionState の作成
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-新しい[manageddeviceencryptionstate](../resources/intune-deviceconfig-manageddeviceencryptionstate.md)オブジェクトを作成します。
+新しい[Manageddeviceencryptionstate](../resources/intune-deviceconfig-manageddeviceencryptionstate.md)オブジェクトを作成します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -44,13 +44,13 @@ POST /deviceManagement/managedDeviceEncryptionStates
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求本文で、manageddeviceencryptionstate オブジェクトの JSON 表記を指定します。
+要求本文で、managedDeviceEncryptionState オブジェクトの JSON 表記を指定します。
 
-次の表に、manageddeviceencryptionstate の作成時に必要なプロパティを示します。
+次の表に、managedDeviceEncryptionState の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列型 (String)|エンティティのキー。|
+|id|文字列|エンティティのキー。|
 |userPrincipalName|String|ユーザー名|
 |deviceType|[deviceTypes](../resources/intune-deviceconfig-devicetypes.md)|デバイスのプラットフォーム。 可能な値: `desktop`、 `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android`、、、、、、、、、、、、 `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise`, `blackberry`, `palm`, `unknown`.|
 |osVersion|String|デバイスのオペレーティングシステムのバージョン|
@@ -58,14 +58,14 @@ POST /deviceManagement/managedDeviceEncryptionStates
 |deviceName|String|[デバイス名]|
 |encryptionReadinessState|[encryptionReadinessState](../resources/intune-deviceconfig-encryptionreadinessstate.md)|暗号化の準備状態。 可能な値は、`notReady`、`ready` です。|
 |encryptionState|[encryptionState](../resources/intune-deviceconfig-encryptionstate.md)|デバイスの暗号化の状態。 可能な値は、`notEncrypted`、`encrypted` です。|
-|encryptionpolicysettingstate|[complianceStatus](../resources/intune-shared-compliancestatus.md)|暗号化ポリシーの設定状態。 可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。|
-|advanced bitlockerstates|[advancedBitLockerState](../resources/intune-deviceconfig-advancedbitlockerstate.md)|高度な BitLocker 状態。 可能な値は`success`、 `noUserConsent`、 `osVolumeEncryptionMethodMismatch` `osVolumeTpmRequired` `osVolumeTpmOnlyRequired` `osVolumeTpmPinRequired` `osVolumeTpmStartupKeyRequired` `osVolumeTpmPinStartupKeyRequired` `osVolumeUnprotected` `networkError`、、 `fixedDriveNotEncrypted`、、、、、、、、です。 `recoveryKeyBackupFailed` `fixedDriveEncryptionMethodMismatch` `loggedOnUserNonAdmin` `windowsRecoveryEnvironmentNotConfigured` `tpmNotAvailable` `tpmNotReady`|
-|policydetails|[encryptionreportpolicydetails](../resources/intune-deviceconfig-encryptionreportpolicydetails.md)コレクション|ポリシーの詳細|
+|encryptionPolicySettingState|[complianceStatus](../resources/intune-shared-compliancestatus.md)|暗号化ポリシーの設定状態。 可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。|
+|Advanced Bitlockerstates|[advancedBitLockerState](../resources/intune-deviceconfig-advancedbitlockerstate.md)|高度な BitLocker 状態。 可能な値は`success`、 `noUserConsent`、 `osVolumeEncryptionMethodMismatch` `osVolumeTpmRequired` `osVolumeTpmOnlyRequired` `osVolumeTpmPinRequired` `osVolumeTpmStartupKeyRequired` `osVolumeTpmPinStartupKeyRequired` `osVolumeUnprotected` `networkError`、、 `fixedDriveNotEncrypted`、、、、、、、、です。 `recoveryKeyBackupFailed` `fixedDriveEncryptionMethodMismatch` `loggedOnUserNonAdmin` `windowsRecoveryEnvironmentNotConfigured` `tpmNotAvailable` `tpmNotReady`|
+|policyDetails|[Encryptionreportpolicydetails](../resources/intune-deviceconfig-encryptionreportpolicydetails.md)コレクション|ポリシーの詳細|
 
 
 
 ## <a name="response"></a>応答
-成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[manageddeviceencryptionstate](../resources/intune-deviceconfig-manageddeviceencryptionstate.md)オブジェクトを返します。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[Manageddeviceencryptionstate](../resources/intune-deviceconfig-manageddeviceencryptionstate.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 
@@ -125,7 +125,6 @@ Content-Length: 707
   ]
 }
 ```
-
 
 
 

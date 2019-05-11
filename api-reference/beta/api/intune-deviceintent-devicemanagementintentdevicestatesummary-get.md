@@ -1,23 +1,23 @@
 ---
-title: deviceManagementIntentDeviceStateSummary を取得する
-description: deviceManagementIntentDeviceStateSummary オブジェクトのプロパティとリレーションシップを読み取ります。
-author: tfitzmac
+title: DeviceManagementIntentDeviceStateSummary を取得する
+description: DeviceManagementIntentDeviceStateSummary オブジェクトのプロパティとリレーションシップを読み取ります。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e10b01ba1f560742da42258255fa8d8e4fdb47a8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: eab5dfb7a3eff5ace0ee64d4f773060d30b2689e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32508422"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33915705"
 ---
-# <a name="get-devicemanagementintentdevicestatesummary"></a>deviceManagementIntentDeviceStateSummary を取得する
+# <a name="get-devicemanagementintentdevicestatesummary"></a>DeviceManagementIntentDeviceStateSummary を取得する
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[deviceManagementIntentDeviceStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicestatesummary.md)オブジェクトのプロパティとリレーションシップを読み取ります。
+[DeviceManagementIntentDeviceStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicestatesummary.md)オブジェクトのプロパティとリレーションシップを読み取ります。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -80,7 +80,6 @@ Content-Length: 321
   }
 }
 ```
-
 
 
 

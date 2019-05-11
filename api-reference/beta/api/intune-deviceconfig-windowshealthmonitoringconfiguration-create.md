@@ -1,21 +1,21 @@
 ---
-title: windowsHealthMonitoringConfiguration を作成する
+title: WindowsHealthMonitoringConfiguration を作成する
 description: 新しい windowsHealthMonitoringConfiguration オブジェクトを作成します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8fcc2c701df05f175c5123da5685d397ca2c3947
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a594b406a41eb307b4a3347cfa3f0eb8ecda35e1
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32514960"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33917955"
 ---
-# <a name="create-windowshealthmonitoringconfiguration"></a>windowsHealthMonitoringConfiguration を作成する
+# <a name="create-windowshealthmonitoringconfiguration"></a>WindowsHealthMonitoringConfiguration を作成する
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい[windowsHealthMonitoringConfiguration](../resources/intune-deviceconfig-windowshealthmonitoringconfiguration.md)オブジェクトを作成します。
 
@@ -51,16 +51,17 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列型 (String)|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|id|文字列|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |supportsScopeTags|Boolean|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|説明|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|description|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|管理者が指定した、デバイス構成の名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|allowDeviceHealthMonitoring|[購入](../resources/intune-shared-enablement.md)|デバイス上でのデバイスの正常性の監視を有効にします。 使用可能な値は、`notConfigured`、`enabled`、`disabled` です。|
-|configDeviceHealthMonitoringScope|[windowsHealthMonitoringScope](../resources/intune-deviceconfig-windowshealthmonitoringscope.md)|ある正常性監視が有効になっているデバイスから収集されたイベントのセット。 可能な値は、`undefined`、`healthMonitoring`、`bootPerformance` です。|
+|allowDeviceHealthMonitoring|[購入](../resources/intune-shared-enablement.md)|デバイス上でのデバイスの正常性の監視を有効にします。 可能な値は、`notConfigured`、`enabled`、`disabled` です。|
+|configDeviceHealthMonitoringScope|[windowsHealthMonitoringScope](../resources/intune-deviceconfig-windowshealthmonitoringscope.md)|正常性の監視が有効になっているデバイスから収集されたイベントのセットを指定します。 可能な値は、`undefined`、`healthMonitoring`、`bootPerformance` です。|
+|configDeviceHealthMonitoringCustomScope|String|正常性監視が有効になっているデバイスから収集されたイベントのカスタムセットを指定します。|
 
 
 
@@ -74,7 +75,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 371
+Content-length: 471
 
 {
   "@odata.type": "#microsoft.graph.windowsHealthMonitoringConfiguration",
@@ -86,7 +87,8 @@ Content-length: 371
   "displayName": "Display Name value",
   "version": 7,
   "allowDeviceHealthMonitoring": "enabled",
-  "configDeviceHealthMonitoringScope": "healthMonitoring"
+  "configDeviceHealthMonitoringScope": "healthMonitoring",
+  "configDeviceHealthMonitoringCustomScope": "Config Device Health Monitoring Custom Scope value"
 }
 ```
 
@@ -95,7 +97,7 @@ Content-length: 371
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 543
+Content-Length: 643
 
 {
   "@odata.type": "#microsoft.graph.windowsHealthMonitoringConfiguration",
@@ -110,10 +112,10 @@ Content-Length: 543
   "displayName": "Display Name value",
   "version": 7,
   "allowDeviceHealthMonitoring": "enabled",
-  "configDeviceHealthMonitoringScope": "healthMonitoring"
+  "configDeviceHealthMonitoringScope": "healthMonitoring",
+  "configDeviceHealthMonitoringCustomScope": "Config Device Health Monitoring Custom Scope value"
 }
 ```
-
 
 
 

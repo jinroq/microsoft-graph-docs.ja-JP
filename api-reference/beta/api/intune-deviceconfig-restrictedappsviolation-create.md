@@ -1,21 +1,21 @@
 ---
-title: restrictedAppsViolation を作成する
+title: RestrictedAppsViolation を作成する
 description: 新しい restrictedAppsViolation オブジェクトを作成します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b1c207bc34403f831d86d9849faf2287210d7bb5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5aea694e901948a7c288083f5372bde2dd68f494
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32518185"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33922691"
 ---
-# <a name="create-restrictedappsviolation"></a>restrictedAppsViolation を作成する
+# <a name="create-restrictedappsviolation"></a>RestrictedAppsViolation を作成する
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい[restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)オブジェクトを作成します。
 
@@ -50,16 +50,16 @@ POST /deviceManagement/deviceConfigurationRestrictedAppsViolations
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|オブジェクトの一意識別子。 accountId、deviceId、policyid、および userId から構成されます。|
+|id|文字列|オブジェクトの一意識別子。 AccountId、deviceId、policyId、および userId から構成されます。|
 |userId|String|ユーザーの一意識別子。 Guid である必要があります|
-|userName|文字列型 (String)|ユーザー名|
-|manageddeviceid|String|管理デバイスの一意識別子。 Guid である必要があります|
+|userName|String|ユーザー名|
+|managedDeviceId|String|管理デバイスの一意識別子。 Guid である必要があります|
 |deviceName|String|[デバイス名]|
 |deviceConfigurationId|String|デバイス構成プロファイルの一意識別子。 Guid である必要があります|
 |deviceConfigurationName|String|デバイス構成プロファイル名|
 |platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|プラットフォームの種類。 可能な値は、`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`all` です。|
 |restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|制限付きアプリの状態。 可能な値は、`prohibitedApps`、`notApprovedApps` です。|
-|restrictedApps|[manageddevicereportedapp](../resources/intune-deviceconfig-manageddevicereportedapp.md)コレクション|違反した制限付きアプリの一覧|
+|restrictedApps|[Manageddevicereportedapp](../resources/intune-deviceconfig-manageddevicereportedapp.md)コレクション|違反した制限付きアプリの一覧|
 
 
 
@@ -120,7 +120,6 @@ Content-Length: 613
   ]
 }
 ```
-
 
 
 

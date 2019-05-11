@@ -1,23 +1,23 @@
 ---
-title: devicemanagementcollectionsettingdefinitions のリスト
-description: devicemanagementcollectionsettingdefinition オブジェクトのプロパティとリレーションシップをリストします。
-author: tfitzmac
+title: DeviceManagementCollectionSettingDefinitions のリスト
+description: DeviceManagementCollectionSettingDefinition オブジェクトのプロパティとリレーションシップをリストします。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ac00acf1aab35bb4fde0159f396788c5557af851
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4b1034163e1c803ec8ade3d4f7f34f8b3813abd6
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32510004"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33916609"
 ---
-# <a name="list-devicemanagementcollectionsettingdefinitions"></a>devicemanagementcollectionsettingdefinitions のリスト
+# <a name="list-devicemanagementcollectionsettingdefinitions"></a>DeviceManagementCollectionSettingDefinitions のリスト
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[devicemanagementcollectionsettingdefinition](../resources/intune-deviceintent-devicemanagementcollectionsettingdefinition.md)オブジェクトのプロパティとリレーションシップをリストします。
+[Devicemanagementcollectionsettingdefinition](../resources/intune-deviceintent-devicemanagementcollectionsettingdefinition.md)オブジェクトのプロパティとリレーションシップをリストします。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -50,7 +50,7 @@ GET /deviceManagement/templates/{deviceManagementTemplateId}/categories/{deviceM
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[devicemanagementcollectionsettingdefinition](../resources/intune-deviceintent-devicemanagementcollectionsettingdefinition.md)オブジェクトのコレクションを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[Devicemanagementcollectionsettingdefinition](../resources/intune-deviceintent-devicemanagementcollectionsettingdefinition.md)オブジェクトのコレクションを返します。
 
 ## <a name="example"></a>例
 
@@ -101,7 +101,6 @@ Content-Length: 985
   ]
 }
 ```
-
 
 
 
