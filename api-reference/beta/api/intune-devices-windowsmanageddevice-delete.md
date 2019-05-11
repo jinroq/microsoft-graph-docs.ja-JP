@@ -1,23 +1,23 @@
 ---
-title: windowsmanageddevice の削除
-description: windowsmanageddevice を削除します。
-author: tfitzmac
+title: WindowsManagedDevice の削除
+description: WindowsManagedDevice を削除します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0cd0ed3a818b3bc996c48a79a83bb2d8ca8057f5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ee814abcfb46371f797347a9f7445d12c901d48b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32525272"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33909261"
 ---
-# <a name="delete-windowsmanageddevice"></a>windowsmanageddevice の削除
+# <a name="delete-windowsmanageddevice"></a>WindowsManagedDevice の削除
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[windowsmanageddevice](../resources/intune-devices-windowsmanageddevice.md)を削除します。
+[Windowsmanageddevice](../resources/intune-devices-windowsmanageddevice.md)を削除します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managed
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

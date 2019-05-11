@@ -1,21 +1,21 @@
 ---
 title: androidDeviceOwnerAppAutoUpdatePolicyType 列挙型
 description: Android デバイス所有者デバイスのアプリ自動更新ポリシーの状態の値を指定できます。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5e67dbdd96c1df067ead3724705a4c2067757130
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 92ea62ccd7f1077558d91eef4ca9e4f7157ec258
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556517"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949193"
 ---
 # <a name="androiddeviceownerappautoupdatepolicytype-enum-type"></a>androidDeviceOwnerAppAutoUpdatePolicyType 列挙型
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 Android デバイス所有者デバイスのアプリ自動更新ポリシーの状態の値を指定できます。
 
@@ -23,11 +23,10 @@ Android デバイス所有者デバイスのアプリ自動更新ポリシーの
 |メンバー|値|説明|
 |:---|:---|:---|
 |notConfigured|.0|未構成。この値は無視されます。|
-|userchoice|1 |ユーザーは自動更新を制御できます。|
-|ぜんぜん|2 |アプリが自動更新されることはありません。|
-|wiFiOnly|3 |アプリは wi-fi 経由で自動更新されます。|
-|いつも|4 |アプリはいつでも自動更新されます。 データ料金が適用される場合があります。|
-
+|userChoice|1-d|ユーザーは自動更新を制御できます。|
+|ぜんぜん|pbm-2|アプリが自動更新されることはありません。|
+|wiFiOnly|1/3|アプリは Wi-fi 経由で自動更新されます。|
+|いつも|2/4|アプリはいつでも自動更新されます。 データ料金が適用される場合があります。|
 
 
 

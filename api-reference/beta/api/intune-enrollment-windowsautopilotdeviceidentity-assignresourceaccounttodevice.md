@@ -1,21 +1,21 @@
 ---
 title: assignResourceAccountToDevice アクション
 description: リソースアカウントを自動操縦デバイスに割り当てます。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aa265a2a39400233cd6a604d77651baf69e1e5bc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ed4f876e0544b7a2e07d616c6f7549cab3bfb386
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32532654"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33908238"
 ---
 # <a name="assignresourceaccounttodevice-action"></a>assignResourceAccountToDevice アクション
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 リソースアカウントを自動操縦デバイスに割り当てます。
 
@@ -52,8 +52,8 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 |プロパティ|型|説明|
 |:---|:---|:---|
 |userPrincipalName|String|まだ文書化されていません|
-|addressableusername|String|まだ文書化されていません|
-|resourceaccountname|String|まだ文書化されていません|
+|addressableUserName|String|まだ文書化されていません|
+|resourceAccountName|String|まだ文書化されていません|
 
 
 
@@ -82,7 +82,6 @@ Content-length: 170
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

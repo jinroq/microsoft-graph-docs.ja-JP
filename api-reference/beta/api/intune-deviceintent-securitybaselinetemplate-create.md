@@ -1,21 +1,21 @@
 ---
-title: securityBaselineTemplate を作成する
+title: SecurityBaselineTemplate を作成する
 description: 新しい securityBaselineTemplate オブジェクトを作成します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2d6f48f0fdb95f2d88f6af5f62975792453367d9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0d36c5da772bf5b0eeab711ffa156567d0a243db
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32466134"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33914458"
 ---
-# <a name="create-securitybaselinetemplate"></a>securityBaselineTemplate を作成する
+# <a name="create-securitybaselinetemplate"></a>SecurityBaselineTemplate を作成する
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい[securityBaselineTemplate](../resources/intune-deviceintent-securitybaselinetemplate.md)オブジェクトを作成します。
 
@@ -35,6 +35,7 @@ ms.locfileid: "32466134"
 -->
 ``` http
 POST /deviceManagement/templates
+POST /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
@@ -50,9 +51,12 @@ POST /deviceManagement/templates
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|[devicemanagementtemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)から継承されたテンプレート ID|
-|displayName|String|[devicemanagementtemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)から継承されたテンプレートの表示名|
-|説明|String|[devicemanagementtemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)から継承されるテンプレートの説明|
+|id|文字列|[Devicemanagementtemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)から継承されたテンプレート ID|
+|displayName|String|[Devicemanagementtemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)から継承されたテンプレートの表示名|
+|description|String|[Devicemanagementtemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)から継承されるテンプレートの説明|
+|versionInfo|String|[Devicemanagementtemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)から継承されたテンプレートのバージョン情報|
+|isDeprecated|Boolean|テンプレートが非推奨になっているか、使用されていません。 推奨されていないテンプレートからは、インテントを作成できません。 [Devicemanagementtemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)から継承します|
+|intentCount|Int32|このテンプレートから作成されたインテントの数。 [Devicemanagementtemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)から継承します|
 
 
 
@@ -66,12 +70,15 @@ POST /deviceManagement/templates
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/templates
 Content-type: application/json
-Content-length: 145
+Content-length: 232
 
 {
   "@odata.type": "#microsoft.graph.securityBaselineTemplate",
   "displayName": "Display Name value",
-  "description": "Description value"
+  "description": "Description value",
+  "versionInfo": "Version Info value",
+  "isDeprecated": true,
+  "intentCount": 11
 }
 ```
 
@@ -80,16 +87,18 @@ Content-length: 145
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 194
+Content-Length: 281
 
 {
   "@odata.type": "#microsoft.graph.securityBaselineTemplate",
   "id": "3f61d4c2-d4c2-3f61-c2d4-613fc2d4613f",
   "displayName": "Display Name value",
-  "description": "Description value"
+  "description": "Description value",
+  "versionInfo": "Version Info value",
+  "isDeprecated": true,
+  "intentCount": 11
 }
 ```
-
 
 
 

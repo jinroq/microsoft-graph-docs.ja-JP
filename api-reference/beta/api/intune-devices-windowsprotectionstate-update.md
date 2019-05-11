@@ -1,23 +1,23 @@
 ---
-title: windowsprotectionstate の更新
-description: windowsprotectionstate オブジェクトのプロパティを更新します。
-author: tfitzmac
+title: WindowsProtectionState の更新
+description: WindowsProtectionState オブジェクトのプロパティを更新します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b53e93f09be2b091ffe3e6a30cd109feb55c8d8a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 60fbdfd6ad0ca934b97fd5410b35d2806a8fa067
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534291"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33908960"
 ---
-# <a name="update-windowsprotectionstate"></a>windowsprotectionstate の更新
+# <a name="update-windowsprotectionstate"></a>WindowsProtectionState の更新
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[windowsprotectionstate](../resources/intune-devices-windowsprotectionstate.md)オブジェクトのプロパティを更新します。
+[Windowsprotectionstate](../resources/intune-devices-windowsprotectionstate.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -45,29 +45,29 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求本文で、 [windowsprotectionstate](../resources/intune-devices-windowsprotectionstate.md)オブジェクトの JSON 表記を指定します。
+要求本文で、 [Windowsprotectionstate](../resources/intune-devices-windowsprotectionstate.md)オブジェクトの JSON 表記を指定します。
 
-次の表に、 [windowsprotectionstate](../resources/intune-devices-windowsprotectionstate.md)の作成時に必要なプロパティを示します。
+次の表に、 [Windowsprotectionstate](../resources/intune-devices-windowsprotectionstate.md)の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|デバイス保護状態オブジェクトの一意の識別子。 これはデバイスのデバイス id です|
-|malwareProtectionEnabled|ブール値|マルウェア対策が有効になっているか、または使用できない|
-|devicestate|[windowsdevicehealthstate](../resources/intune-devices-windowsdevicehealthstate.md)|コンピューターの状態 (クリーンスキャンまたは保留中の再起動など)。 可能な値は `clean`、`fullScanPending`、`rebootPending`、`manualStepsPending`、`offlineScanPending`、`critical` です。|
-|realTimeProtectionEnabled|ブール値|リアルタイム保護が有効になっているかどうか。|
-|networkInspectionSystemEnabled|ブール値|ネットワーク検査システムが有効になっているかどうか。|
-|quickscanoverdue 超過|ブール値|クイックスキャンの期限が過ぎたかどうか。|
-|fullscanoverdue|ブール値|完全スキャンの期限が過ぎたかどうか。|
-|signatureupdateoverdue|ブール値|署名が古くなっているかどうか|
-|rebootRequired|ブール値|再起動が必要かどうか|
-|fullscanrequired|ブール値|フルスキャンが必要かどうか。|
+|malwareProtectionEnabled|Boolean|マルウェア対策が有効になっているか、または使用できない|
+|deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|コンピューターの状態 (クリーンスキャンまたは保留中の再起動など)。 使用可能な値: `clean`、`fullScanPending`、`rebootPending`、`manualStepsPending`、`offlineScanPending`、`critical`。|
+|realTimeProtectionEnabled|Boolean|リアルタイム保護が有効になっているかどうか。|
+|networkInspectionSystemEnabled|Boolean|ネットワーク検査システムが有効になっているかどうか。|
+|quickScanOverdue 超過|Boolean|クイックスキャンの期限が過ぎたかどうか。|
+|fullScanOverdue|Boolean|完全スキャンの期限が過ぎたかどうか。|
+|signatureUpdateOverdue|Boolean|署名が古くなっているかどうか|
+|rebootRequired|Boolean|再起動が必要かどうか|
+|fullScanRequired|Boolean|フルスキャンが必要かどうか。|
 |engineVersion|String|現在のエンドポイント保護エンジンのバージョン|
-|signatureversion|String|現在のマルウェア定義バージョン|
+|signatureVersion|String|現在のマルウェア定義バージョン|
 |antiMalwareVersion|String|現在のマルウェア対策バージョン|
-|lastquickscandatetime|DateTimeOffset|最後のクイックスキャンの日時|
-|lastfullscandatetime|DateTimeOffset|最後のクイックスキャンの日時|
-|lastquickscansignatureversion|String|最終クイックスキャン署名バージョン|
-|lastfullscansignatureversion|String|前回のフルスキャン署名バージョン|
+|lastQuickScanDateTime|DateTimeOffset|最後のクイックスキャンの日時|
+|lastFullScanDateTime|DateTimeOffset|最後のクイックスキャンの日時|
+|lastQuickScanSignatureVersion|String|最終クイックスキャン署名バージョン|
+|lastFullScanSignatureVersion|String|前回のフルスキャン署名バージョン|
 |lastReportedDateTime|DateTimeOffset|前回のデバイス正常性の状態が報告された時刻|
 
 
@@ -135,7 +135,6 @@ Content-Length: 914
   "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
 }
 ```
-
 
 
 
