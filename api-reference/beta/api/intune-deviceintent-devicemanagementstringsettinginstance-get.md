@@ -1,23 +1,23 @@
 ---
-title: devicemanagementstringsettinginstance を取得する
-description: devicemanagementstringsettinginstance オブジェクトのプロパティとリレーションシップを読み取ります。
-author: tfitzmac
+title: DeviceManagementStringSettingInstance を取得する
+description: DeviceManagementStringSettingInstance オブジェクトのプロパティとリレーションシップを読み取ります。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1084c57fb60b083c5c3dda21cfc33746f642692d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0fd44c818384ac42e943158e506a8df512134824
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32466715"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33916995"
 ---
-# <a name="get-devicemanagementstringsettinginstance"></a>devicemanagementstringsettinginstance を取得する
+# <a name="get-devicemanagementstringsettinginstance"></a>DeviceManagementStringSettingInstance を取得する
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[devicemanagementstringsettinginstance](../resources/intune-deviceintent-devicemanagementstringsettinginstance.md)オブジェクトのプロパティとリレーションシップを読み取ります。
+[Devicemanagementstringsettinginstance](../resources/intune-deviceintent-devicemanagementstringsettinginstance.md)オブジェクトのプロパティとリレーションシップを読み取ります。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -53,7 +53,7 @@ GET /deviceManagement/templates/{deviceManagementTemplateId}/categories/{deviceM
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[devicemanagementstringsettinginstance](../resources/intune-deviceintent-devicemanagementstringsettinginstance.md)オブジェクトを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[Devicemanagementstringsettinginstance](../resources/intune-deviceintent-devicemanagementstringsettinginstance.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 
@@ -80,7 +80,6 @@ Content-Length: 262
   }
 }
 ```
-
 
 
 

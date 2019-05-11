@@ -1,21 +1,21 @@
 ---
-title: windowsWifiEnterpriseEAPConfiguration を作成する
+title: WindowsWifiEnterpriseEAPConfiguration を作成する
 description: 新しい windowsWifiEnterpriseEAPConfiguration オブジェクトを作成します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 64b79f93cfd9cd23617c99529331c6063efe6716
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e6eeca356b6da37ba9635aef11e41339a4372f63
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32510823"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33917107"
 ---
-# <a name="create-windowswifienterpriseeapconfiguration"></a>windowsWifiEnterpriseEAPConfiguration を作成する
+# <a name="create-windowswifienterpriseeapconfiguration"></a>WindowsWifiEnterpriseEAPConfiguration を作成する
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい[windowsWifiEnterpriseEAPConfiguration](../resources/intune-deviceconfig-windowswifienterpriseeapconfiguration.md)オブジェクトを作成します。
 
@@ -51,39 +51,39 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列型 (String)|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|id|文字列|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |supportsScopeTags|Boolean|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|説明|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|description|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|管理者が指定した、デバイス構成の名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|preSharedKey|String|これは、WPA 個人用 wi-fi ネットワークの事前共有キーです。 [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)から継承します。|
-|wifiSecurityType|[wiFiSecurityType](../resources/intune-deviceconfig-wifisecuritytype.md)|Wifi セキュリティの種類を指定します。 [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)から継承されます。 可能な値は `open`、`wpaPersonal`、`wpaEnterprise`、`wep`、`wpa2Personal`、`wpa2Enterprise` です。|
-|meteredconnectionlimit|[meteredConnectionLimitType](../resources/intune-deviceconfig-meteredconnectionlimittype.md)|wifi 接続の従量制課金接続制限の種類を指定します。 [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)から継承されます。 使用可能な値は、`unrestricted`、`fixed`、`variable` です。|
-|ssid|String|wifi 接続の SSID を指定します。 [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)から継承します。|
-|networkname|String|ネットワーク構成名を指定します。 [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)から継承します。|
-|connectautomatically に|Boolean|範囲内で wifi 接続を自動的に接続するかどうかを指定します。 [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)から継承します。|
-|connecttopreferrednetwork|Boolean|この接続に既に接続されている場合に、wifi 接続がより優先度の高いネットワークに接続するかどうかを指定します。  connectautomatically 自動的に true になる必要があります。 [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)から継承します。|
-|connectWhenNetworkNameIsHidden|Boolean|SSID がブロードキャストされていない場合でも、wifi 接続が自動的に接続するかどうかを指定します。 [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)から継承します。|
-|proxysetting|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)から継承した wi-fi 構成のプロキシ設定を指定します。 使用可能な値は、`none`、`manual`、`automatic` です。|
-|proxymanualaddress|String|プロキシサーバーの IP アドレスを指定します。 [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)から継承します。|
-|proxymanualport|Int32|プロキシサーバーのポートを指定します。 [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)から継承します。|
-|proxyAutomaticConfigurationUrl|String|プロキシサーバー構成スクリプトの URL を指定します。 [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)から継承します。|
-|forcefipscompliance|Boolean|FIPS 準拠を強制するかどうかを指定します。 [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)から継承します。|
-|networkSingleSignOn|[networkSingleSignOnType](../resources/intune-deviceconfig-networksinglesignontype.md)|ネットワークのシングルサインオンの種類を指定します。 使用可能な値は、`disabled`、`prelogon`、`postlogon` です。|
+|preSharedKey|String|これは、WPA 個人用 Wi-fi ネットワークの事前共有キーです。 [WindowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)から継承します。|
+|wifiSecurityType|[wiFiSecurityType](../resources/intune-deviceconfig-wifisecuritytype.md)|Wifi セキュリティの種類を指定します。 [WindowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)から継承されます。 使用可能な値: `open`、`wpaPersonal`、`wpaEnterprise`、`wep`、`wpa2Personal`、`wpa2Enterprise`。|
+|meteredConnectionLimit|[meteredConnectionLimitType](../resources/intune-deviceconfig-meteredconnectionlimittype.md)|Wifi 接続の従量制課金接続制限の種類を指定します。 [WindowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)から継承されます。 可能な値は、`unrestricted`、`fixed`、`variable` です。|
+|ssid|String|Wifi 接続の SSID を指定します。 [WindowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)から継承します。|
+|networkName|String|ネットワーク構成名を指定します。 [WindowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)から継承します。|
+|connectAutomatically に|Boolean|範囲内で wifi 接続を自動的に接続するかどうかを指定します。 [WindowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)から継承します。|
+|connectToPreferredNetwork|Boolean|この接続に既に接続されている場合に、wifi 接続がより優先度の高いネットワークに接続するかどうかを指定します。  ConnectAutomatically 自動的に true になる必要があります。 [WindowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)から継承します。|
+|connectWhenNetworkNameIsHidden|Boolean|SSID がブロードキャストされていない場合でも、wifi 接続が自動的に接続するかどうかを指定します。 [WindowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)から継承します。|
+|proxySetting|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|[WindowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)から継承した wi-fi 構成のプロキシ設定を指定します。 可能な値は、`none`、`manual`、`automatic` です。|
+|proxyManualAddress|String|プロキシサーバーの IP アドレスを指定します。 [WindowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)から継承します。|
+|proxyManualPort|Int32|プロキシサーバーのポートを指定します。 [WindowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)から継承します。|
+|proxyAutomaticConfigurationUrl|String|プロキシサーバー構成スクリプトの URL を指定します。 [WindowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)から継承します。|
+|forceFIPSCompliance|Boolean|FIPS 準拠を強制するかどうかを指定します。 [WindowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)から継承します。|
+|networkSingleSignOn|[networkSingleSignOnType](../resources/intune-deviceconfig-networksinglesignontype.md)|ネットワークのシングルサインオンの種類を指定します。 可能な値は、`disabled`、`prelogon`、`postlogon` です。|
 |maximumAuthenticationTimeoutInSeconds|Int32|[最大認証タイムアウト (秒)] を指定します。  有効な範囲: 1-120|
-|promptforadditionalauthenticationcredentials|Boolean|wifi 接続で追加の認証資格情報を求めるメッセージを表示するかどうかを指定します。|
-|enablePairwiseMasterKeyCaching|Boolean|wifi 接続で、ペアワイズマスターキーのキャッシュを有効にするかどうかを指定します。|
+|promptForAdditionalAuthenticationCredentials|Boolean|Wifi 接続で追加の認証資格情報を求めるメッセージを表示するかどうかを指定します。|
+|enablePairwiseMasterKeyCaching|Boolean|Wifi 接続で、ペアワイズマスターキーのキャッシュを有効にするかどうかを指定します。|
 |maximumPairwiseMasterKeyCacheTimeInMinutes|Int32|最大ペアワイズマスターキーキャッシュ時間を指定します (分単位)。  有効な範囲: 5-1440|
 |maximumNumberOfPairwiseMasterKeysInCache|Int32|キャッシュ内のペアワイズマスターキーの最大数を指定します。  有効な範囲: 1-255|
-|enablepreauthentication 認証|Boolean|事前認証を有効にするかどうかを指定します。|
-|maximumpreauthenticationattempts|Int32|事前認証の最大試行回数を指定します。  有効な範囲: 1-16|
-|eaptype|[eaptype](../resources/intune-deviceconfig-eaptype.md)|拡張認証プロトコル (EAP)。 wi-fi エンドポイント (ルーター) に設定されている EAP プロトコルの種類を示します。 可能な値は `eapTls`、`leap`、`eapSim`、`eapTtls`、`peap`、`eapFast` です。|
-|trustedserverの形式|String collection|信頼されたサーバー証明書の名前を指定します。|
-|authenticationMethod|[wiFiAuthenticationMethod](../resources/intune-deviceconfig-wifiauthenticationmethod.md)|認証方法を指定します。 可能な値は、`certificate`、`usernameAndPassword` です。|
-|innerAuthenticationProtocolForEAPTTLS|[none apauthenticationmethod_ apttlstype](../resources/intune-deviceconfig-noneapauthenticationmethodforeapttlstype.md)|EAP TTLS の内部認証プロトコルを指定します。 可能な値は、`unencryptedPassword`、`challengeHandshakeAuthenticationProtocol`、`microsoftChap`、`microsoftChapVersionTwo` です。|
+|enablePreAuthentication 認証|Boolean|事前認証を有効にするかどうかを指定します。|
+|maximumPreAuthenticationAttempts|Int32|事前認証の最大試行回数を指定します。  有効な範囲: 1-16|
+|eapType|[eapType](../resources/intune-deviceconfig-eaptype.md)|拡張認証プロトコル (EAP)。 Wi-fi エンドポイント (ルーター) に設定されている EAP プロトコルの種類を示します。 使用可能な値: `eapTls`、`leap`、`eapSim`、`eapTtls`、`peap`、`eapFast`。|
+|Trustedserverの形式|String collection|信頼されたサーバー証明書の名前を指定します。|
+|authenticationMethod|[wiFiAuthenticationMethod](../resources/intune-deviceconfig-wifiauthenticationmethod.md)|認証方法を指定します。 可能な値は、`certificate`、`usernameAndPassword`、`derivedCredential` です。|
+|innerAuthenticationProtocolForEAPTTLS|[None Apauthenticationmethod_ Apttlstype](../resources/intune-deviceconfig-noneapauthenticationmethodforeapttlstype.md)|EAP TTLS の内部認証プロトコルを指定します。 使用可能な値は、`unencryptedPassword`、`challengeHandshakeAuthenticationProtocol`、`microsoftChap`、`microsoftChapVersionTwo` です。|
 |outerIdentityPrivacyTemporaryValue|String|EAP TTLS または PEAP を使用している場合は、プライバシー保護のために、ユーザー名を置換する文字列を指定します。|
 
 
@@ -189,7 +189,6 @@ Content-Length: 1676
   "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
 }
 ```
-
 
 
 

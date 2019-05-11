@@ -1,23 +1,23 @@
 ---
-title: managedDeviceCertificateState の更新
-description: managedDeviceCertificateState オブジェクトのプロパティを更新します。
-author: tfitzmac
+title: ManagedDeviceCertificateState の更新
+description: ManagedDeviceCertificateState オブジェクトのプロパティを更新します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 336eca53d4eac1898519de61559cd6b3561c60d6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 137edaaecd417b8e3c7927390b549236bb011c9c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32518241"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33922635"
 ---
-# <a name="update-manageddevicecertificatestate"></a>managedDeviceCertificateState の更新
+# <a name="update-manageddevicecertificatestate"></a>ManagedDeviceCertificateState の更新
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md)オブジェクトのプロパティを更新します。
+[ManagedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -66,22 +66,22 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
-|devicePlatform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|デバイスプラットフォーム。 可能な値は、`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile` です。|
-|certificatekeyusage|[keyusages](../resources/intune-deviceconfig-keyusages.md)|キー使用法。 可能な値は、`keyEncipherment`、`digitalSignature` です。|
-|certificateValidityPeriodUnits|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|有効期間の単位。 使用可能な値は、`days`、`months`、`years` です。|
+|id|文字列|エンティティのキー。|
+|devicePlatform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|デバイスプラットフォーム。 可能な値は、`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`unknown` です。|
+|certificateKeyUsage|[keyUsages](../resources/intune-deviceconfig-keyusages.md)|キー使用法。 可能な値は、`keyEncipherment`、`digitalSignature` です。|
+|certificateValidityPeriodUnits|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|有効期間の単位。 可能な値は、`days`、`months`、`years` です。|
 |certificateIssuanceState|[certificateIssuanceStates](../resources/intune-deviceconfig-certificateissuancestates.md)|発行状態。 可能な値: `unknown`、 `challengeIssued` `challengeIssueFailed` `requestCreationFailed` `requestSubmitFailed` `challengeValidationSucceeded` `challengeValidationFailed` `issueFailed` `issuePending` `issued` `responseProcessingFailed` `responsePending`、、、、、、、、、、、、 `enrollmentSucceeded` `enrollmentNotNeeded` `revoked` `removedFromCollection` `renewVerified` `installFailed` `installed`, `deleteFailed`, `deleted`, `renewalRequested`, `requested`.|
-|certificatekeystorageprovider|[keystorageprovideroption](../resources/intune-deviceconfig-keystorageprovideroption.md)|キーストレージプロバイダー。 可能な値は、`useTpmKspOtherwiseUseSoftwareKsp`、`useTpmKspOtherwiseFail`、`usePassportForWorkKspOtherwiseFail`、`useSoftwareKsp` です。|
+|certificateKeyStorageProvider|[keyStorageProviderOption](../resources/intune-deviceconfig-keystorageprovideroption.md)|キーストレージプロバイダー。 使用可能な値は、`useTpmKspOtherwiseUseSoftwareKsp`、`useTpmKspOtherwiseFail`、`usePassportForWorkKspOtherwiseFail`、`useSoftwareKsp` です。|
 |certificateSubjectNameFormat|[subjectNameFormat](../resources/intune-deviceconfig-subjectnameformat.md)|サブジェクト名の形式。 可能な値は、`commonName`、`commonNameIncludingEmail`、`commonNameAsEmail`、`custom`、`commonNameAsIMEI`、`commonNameAsSerialNumber`、`commonNameAsAadDeviceId`、`commonNameAsIntuneDeviceId`、`commonNameAsDurableDeviceId` です。|
 |certificateSubjectAlternativeNameFormat|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|サブジェクトの別名形式。 可能な値は、`none`、`emailAddress`、`userPrincipalName`、`customAzureADAttribute`、`domainNameService` です。|
 |certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|状態を取り消します。 可能な値は、`none`、`pending`、`issued`、`failed`、`revoked` です。|
-|certificateprofiledisplayname|String|証明書プロファイルの表示名|
+|certificateProfileDisplayName|String|証明書プロファイルの表示名|
 |deviceDisplayName|String|デバイスの表示名|
 |userDisplayName|String|ユーザーの表示名|
 |certificateExpirationDateTime|DateTimeOffset|証明書の有効期限|
 |certificateLastIssuanceStateChangedDateTime|DateTimeOffset|証明書の発行状態の最終変更|
 |lastCertificateStateChangeDateTime|DateTimeOffset|証明書の発行状態の最終変更|
-|certificateissuer|String|発行者|
+|certificateIssuer|String|発行者|
 |certificateThumbprint|String|拇印|
 |certificateSerialNumber|String|シリアル番号|
 |certificateKeyLength|Int32|キーの長さ|
@@ -90,7 +90,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |certificateSubjectNameFormatString|String|カスタムサブジェクト名の形式のサブジェクト名の書式指定文字列|
 |certificateSubjectAlternativeNameFormatString|String|カスタム書式のサブジェクトの別名書式文字列|
 |certificateIssuanceDateTime|DateTimeOffset|発行日|
-|certificateerrorcode|Int32|エラー コード|
+|certificateErrorCode|Int32|エラー コード|
 
 
 
@@ -171,7 +171,6 @@ Content-Length: 1566
   "certificateErrorCode": 4
 }
 ```
-
 
 
 

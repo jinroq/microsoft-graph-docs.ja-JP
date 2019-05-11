@@ -1,21 +1,21 @@
 ---
 title: Get managedApp
 description: managedApp オブジェクトのプロパティとリレーションシップを読み取ります。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ff962c3c3e1a94cf1192c40afb4ab5cac3ba7f73
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 27e96751d24d5a5d80cd01af0e5f1f9187567896
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32495051"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935721"
 ---
 # <a name="get-managedapp"></a>Get managedApp
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [managedApp](../resources/intune-apps-managedapp.md) オブジェクトのプロパティとリレーションシップを読み取ります。
 
@@ -101,7 +101,6 @@ Content-Length: 1025
   }
 }
 ```
-
 
 
 

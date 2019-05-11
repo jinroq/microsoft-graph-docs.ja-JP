@@ -1,21 +1,21 @@
 ---
-title: microsoftStoreForBusinessContainedApp を作成する
+title: MicrosoftStoreForBusinessContainedApp を作成する
 description: 新しい microsoftStoreForBusinessContainedApp オブジェクトを作成します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c7d8894e01b7993e50f12ee3aa3e83173fbebb11
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: cbdea27ad63b3216df4e729d5f4fc3387a5ade5a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32490977"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935406"
 ---
-# <a name="create-microsoftstoreforbusinesscontainedapp"></a>microsoftStoreForBusinessContainedApp を作成する
+# <a name="create-microsoftstoreforbusinesscontainedapp"></a>MicrosoftStoreForBusinessContainedApp を作成する
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい[microsoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md)オブジェクトを作成します。
 
@@ -52,8 +52,8 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUniver
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)から継承します。|
-|appUserModelId|String|microsoft storeforbusinessapp の含まれているアプリのアプリケーションユーザーモデル ID。|
+|id|String|エンティティのキー。 [MobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)から継承します。|
+|appUserModelId|String|Microsoft Storeforbusinessapp の含まれているアプリのアプリケーションユーザーモデル ID。|
 
 
 
@@ -88,7 +88,6 @@ Content-Length: 176
   "appUserModelId": "App User Model Id value"
 }
 ```
-
 
 
 

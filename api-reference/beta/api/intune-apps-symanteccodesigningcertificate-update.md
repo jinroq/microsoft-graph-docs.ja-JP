@@ -1,23 +1,23 @@
 ---
-title: symantecCodeSigningCertificate の更新
-description: symantecCodeSigningCertificate オブジェクトのプロパティを更新します。
-author: tfitzmac
+title: SymantecCodeSigningCertificate の更新
+description: SymantecCodeSigningCertificate オブジェクトのプロパティを更新します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d21f72c62bd31bb25312e2b86835c339807d81ae
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: adc2f49931b4a8d5938874d8f23bce6329eaf174
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32488779"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934951"
 ---
-# <a name="update-symanteccodesigningcertificate"></a>symantecCodeSigningCertificate の更新
+# <a name="update-symanteccodesigningcertificate"></a>SymantecCodeSigningCertificate の更新
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md)オブジェクトのプロパティを更新します。
+[SymantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -50,16 +50,16 @@ PATCH /deviceAppManagement/symantecCodeSigningCertificate
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|id|文字列|エンティティのキー。|
 |content|Binary|Windows Symantec コード署名証明書が生データ形式で表示されます。|
-|status|[certificatestatus](../resources/intune-apps-certificatestatus.md)|証明書の状態がプロビジョニングされているか、プロビジョニングされていません。 可能な値は、`notProvisioned`、`provisioned` です。|
-|password|String|.pfx ファイルに必要なパスワードを指定します。|
-|subjectName|文字列型 (String)|証明書のサブジェクト名。|
+|status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|証明書の状態がプロビジョニングされているか、プロビジョニングされていません。 可能な値は、`notProvisioned`、`provisioned` です。|
+|パスワード|String|.Pfx ファイルに必要なパスワードを指定します。|
+|subjectName|String|証明書のサブジェクト名。|
 |subject|String|証明書のサブジェクトの値。|
 |issuerName|String|証明書の発行者名。|
 |会社|String|証明書の発行者の値。|
 |expirationDateTime|DateTimeOffset|証明書の有効期限。|
-|uploaddatetime|DateTimeOffset|Symantec cert としての CodeSigning cert の種類。|
+|uploadDateTime|DateTimeOffset|Symantec Cert としての CodeSigning Cert の種類。|
 
 
 
@@ -110,7 +110,6 @@ Content-Length: 470
   "uploadDateTime": "2016-12-31T23:58:46.5747426-08:00"
 }
 ```
-
 
 
 

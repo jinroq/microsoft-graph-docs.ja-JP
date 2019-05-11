@@ -1,21 +1,21 @@
 ---
-title: advancedThreatProtectionOnboardingDeviceSettingState を作成する
+title: AdvancedThreatProtectionOnboardingDeviceSettingState を作成する
 description: 新しい advancedThreatProtectionOnboardingDeviceSettingState オブジェクトを作成します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: baff48c2cd9c2a4cc4d28674b98856687a9f2db5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6fd2f57f560541b9913df214f620c35e1af29b7a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32482159"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33933726"
 ---
-# <a name="create-advancedthreatprotectiononboardingdevicesettingstate"></a>advancedThreatProtectionOnboardingDeviceSettingState を作成する
+# <a name="create-advancedthreatprotectiononboardingdevicesettingstate"></a>AdvancedThreatProtectionOnboardingDeviceSettingState を作成する
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい[advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md)オブジェクトを作成します。
 
@@ -50,7 +50,7 @@ POST /deviceManagement/advancedThreatProtectionOnboardingStateSummary/advancedTh
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー|
+|id|文字列|エンティティのキー|
 |platformType|[deviceType](../resources/intune-shared-devicetype.md)|デバイスプラットフォームの種類。 可能な値: `desktop`、 `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android`、、、、、、、、、、、、 `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise`, `blackberry`, `palm`, `unknown`.|
 |setting|String|設定のクラス名とプロパティ名。|
 |settingName|String|レポートされている設定名。|
@@ -119,7 +119,6 @@ Content-Length: 622
   "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00"
 }
 ```
-
 
 
 

@@ -1,21 +1,21 @@
 ---
-title: iosVppAppAssignedLicense を作成する
+title: IosVppAppAssignedLicense を作成する
 description: 新しい iosVppAppAssignedLicense オブジェクトを作成します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 59d40d358809214c4ad04996c42f24cd4c97e634
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0b42149e547c363f6677a9ecf7cd7ae7492405ec
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32495408"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33936190"
 ---
-# <a name="create-iosvppappassignedlicense"></a>iosVppAppAssignedLicense を作成する
+# <a name="create-iosvppappassignedlicense"></a>IosVppAppAssignedLicense を作成する
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)オブジェクトを作成します。
 
@@ -50,10 +50,10 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/ass
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|id|文字列|エンティティのキー。|
 |userEmailAddress|String|ユーザーの電子メールアドレス。|
 |userId|String|ユーザー ID。|
-|userName|文字列型 (String)|ユーザー名。|
+|userName|String|ユーザー名。|
 |userPrincipalName|String|ユーザー プリンシパル名。|
 
 
@@ -95,7 +95,6 @@ Content-Length: 283
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

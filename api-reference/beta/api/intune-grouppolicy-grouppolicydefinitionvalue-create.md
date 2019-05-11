@@ -1,23 +1,23 @@
 ---
-title: grouppolicydefinitionvalue の作成
-description: 新しい grouppolicydefinitionvalue オブジェクトを作成します。
-author: tfitzmac
+title: GroupPolicyDefinitionValue の作成
+description: 新しい groupPolicyDefinitionValue オブジェクトを作成します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 60fef42cc86aa2cdef23b81223b1e715027c659a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ea0ca1731607e450032d0d24d380436fe9c90736
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32531468"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33905092"
 ---
-# <a name="create-grouppolicydefinitionvalue"></a>grouppolicydefinitionvalue の作成
+# <a name="create-grouppolicydefinitionvalue"></a>GroupPolicyDefinitionValue の作成
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-新しい[grouppolicydefinitionvalue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)オブジェクトを作成します。
+新しい[Grouppolicydefinitionvalue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)オブジェクトを作成します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -44,9 +44,9 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求本文で、grouppolicydefinitionvalue オブジェクトの JSON 表記を指定します。
+要求本文で、groupPolicyDefinitionValue オブジェクトの JSON 表記を指定します。
 
-次の表に、grouppolicydefinitionvalue の作成時に必要なプロパティを示します。
+次の表に、groupPolicyDefinitionValue の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
@@ -59,7 +59,7 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 
 
 ## <a name="response"></a>応答
-成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[grouppolicydefinitionvalue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)オブジェクトを返します。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[Grouppolicydefinitionvalue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 
@@ -93,7 +93,6 @@ Content-Length: 298
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

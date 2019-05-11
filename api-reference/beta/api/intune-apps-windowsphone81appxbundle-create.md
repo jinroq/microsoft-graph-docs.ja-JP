@@ -1,21 +1,21 @@
 ---
-title: windowsPhone81AppXBundle を作成する
+title: WindowsPhone81AppXBundle を作成する
 description: 新しい windowsPhone81AppXBundle オブジェクトを作成します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3e0c59bcfc3a976ea0ec077444f28e854e2da465
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 493f11c88c5996e8c151e6bb3f6ea4756168adcd
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32487848"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934734"
 ---
-# <a name="create-windowsphone81appxbundle"></a>windowsPhone81AppXBundle を作成する
+# <a name="create-windowsphone81appxbundle"></a>WindowsPhone81AppXBundle を作成する
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい[windowsPhone81AppXBundle](../resources/intune-apps-windowsphone81appxbundle.md)オブジェクトを作成します。
 
@@ -50,9 +50,9 @@ POST /deviceAppManagement/mobileApps
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列型 (String)|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|displayName|String|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|説明|String|アプリの説明。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|id|文字列|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|displayName|文字列|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|description|String|アプリの説明。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |publisher|String|アプリの発行元。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|アプリの詳細に表示され、アイコンのアップロードに使用される大きいアイコン。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |createdDateTime|DateTimeOffset|アプリが作成された日時。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
@@ -64,22 +64,22 @@ POST /deviceAppManagement/mobileApps
 |developer|String|アプリの開発者。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |notes|String|アプリ用のメモ。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |uploadState|Int32|アップロード状態。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 [mobileApp](../resources/intune-apps-mobileapp.md)から継承されます。 使用可能な値は、`notPublished`、`processing`、`published` です。|
+|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 [MobileApp](../resources/intune-apps-mobileapp.md)から継承されます。 可能な値は、`notPublished`、`processing`、`published` です。|
 |isAssigned|Boolean|アプリが少なくとも1つのグループに割り当てられているかどうかを示す値。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |roleScopeTagIds|String collection|このモバイルアプリの範囲タグ id のリスト。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|dependentappcount|Int32|子アプリが持つ依存関係の合計数。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|dependentAppCount|Int32|子アプリが持つ依存関係の合計数。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |committedContentVersion|String|内部にコミットされたコンテンツのバージョン。 [mobileLobApp](../resources/intune-apps-mobilelobapp.md) から継承します|
 |fileName|文字列型 (String)|メインの LOB アプリケーションのファイル名。 [mobileLobApp](../resources/intune-apps-mobilelobapp.md) から継承します|
 |size|Int64|アップロードされたすべてのファイルを含む合計サイズ。 [mobileLobApp](../resources/intune-apps-mobilelobapp.md) から継承します|
-|applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|このアプリを実行できる Windows アーキテクチャ。 [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)から継承されます。 可能な値は `none`、`x86`、`x64`、`arm`、`neutral`、`arm64` です。|
-|identityName|String|ID 名。 [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)から継承します。|
-|identityPublisherHash|String|ID の発行元のハッシュ。 [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)から継承します。|
-|identityResourceIdentifier|String|ID のリソースの識別子。 [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)から継承します。|
-|minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|該当するオペレーティング システムの最小の値。 [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)から継承します。|
-|phoneProductIdentifier|String|電話の製品識別子。 [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)から継承します。|
+|applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|このアプリを実行できる Windows アーキテクチャ。 [WindowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)から継承されます。 使用可能な値: `none`、`x86`、`x64`、`arm`、`neutral`、`arm64`。|
+|identityName|String|ID 名。 [WindowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)から継承します。|
+|identityPublisherHash|String|ID の発行元のハッシュ。 [WindowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)から継承します。|
+|identityResourceIdentifier|String|ID のリソースの識別子。 [WindowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)から継承します。|
+|minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|該当するオペレーティング システムの最小の値。 [WindowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)から継承します。|
+|phoneProductIdentifier|String|電話の製品識別子。 [WindowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)から継承します。|
 |phonePublisherId|String|電話の発行元 Id。 [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)から継承されます。|
-|identityVersion|String|ID のバージョン。 [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)から継承します。|
-|appXPackageInformationList|[windowspackageinformation](../resources/intune-apps-windowspackageinformation.md)コレクション|AppX パッケージ情報のリスト。|
+|identityVersion|String|ID のバージョン。 [WindowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)から継承します。|
+|appXPackageInformationList|[Windowspackageinformation](../resources/intune-apps-windowspackageinformation.md)コレクション|AppX パッケージ情報のリスト。|
 
 
 
@@ -238,7 +238,6 @@ Content-Length: 2383
   ]
 }
 ```
-
 
 
 

@@ -1,23 +1,23 @@
 ---
-title: windows10EasEmailProfileConfiguration の削除
-description: windows10EasEmailProfileConfiguration を削除します。
-author: tfitzmac
+title: Windows10EasEmailProfileConfiguration の削除
+description: Windows10EasEmailProfileConfiguration を削除します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2c37591634d585e116f1728be4e55f6ca2956877
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: cf07ca2d7c5e1d4a92e65e21879c2702bf7d7662
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32517079"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33921899"
 ---
-# <a name="delete-windows10easemailprofileconfiguration"></a>windows10EasEmailProfileConfiguration の削除
+# <a name="delete-windows10easemailprofileconfiguration"></a>Windows10EasEmailProfileConfiguration の削除
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[windows10EasEmailProfileConfiguration](../resources/intune-deviceconfig-windows10easemailprofileconfiguration.md)を削除します。
+[Windows10EasEmailProfileConfiguration](../resources/intune-deviceconfig-windows10easemailprofileconfiguration.md)を削除します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -64,7 +64,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

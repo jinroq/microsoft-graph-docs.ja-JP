@@ -1,23 +1,23 @@
 ---
-title: ioslobappプロビジョニング configurationassignments のリスト
-description: ioslobappプロビジョニング configurationassignment オブジェクトのプロパティとリレーションシップをリストします。
-author: tfitzmac
+title: Ioslobappプロビジョニング Configurationassignments のリスト
+description: Ioslobappプロビジョニング Configurationassignment オブジェクトのプロパティとリレーションシップをリストします。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 246adae6e760f2b2c19e811858f08068c5a2edbf
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 75f20b28b849912d0db234be97e681023cc61f24
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32495954"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33937415"
 ---
-# <a name="list-ioslobappprovisioningconfigurationassignments"></a>ioslobappプロビジョニング configurationassignments のリスト
+# <a name="list-ioslobappprovisioningconfigurationassignments"></a>Ioslobappプロビジョニング Configurationassignments のリスト
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[ioslobappプロビジョニング configurationassignment](../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md)オブジェクトのプロパティとリレーションシップをリストします。
+[Ioslobappプロビジョニング Configurationassignment](../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md)オブジェクトのプロパティとリレーションシップをリストします。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -47,7 +47,7 @@ GET /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvision
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[ioslobappprovisioningconfigurationassignment](../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md)オブジェクトのコレクションを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[Ioslobappprovisioningconfigurationassignment](../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md)オブジェクトのコレクションを返します。
 
 ## <a name="example"></a>例
 
@@ -76,7 +76,6 @@ Content-Length: 286
   ]
 }
 ```
-
 
 
 

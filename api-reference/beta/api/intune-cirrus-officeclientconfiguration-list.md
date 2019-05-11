@@ -2,20 +2,20 @@
 title: リスト officeClientConfigurations
 description: すべてのポリシーを取得します。
 localization_priority: Normal
-author: tfitzmac
+author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: dbbfae2a7568977c8dbdbc640d0829837c5e3fb2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 093364b093606153fd82c18791a86ff441291d56
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32483153"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934069"
 ---
 # <a name="list-officeclientconfigurations"></a>リスト officeClientConfigurations
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 すべてのポリシーを取得します。
 
@@ -24,7 +24,7 @@ ms.locfileid: "32483153"
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
-|委任 (職場または学校のアカウント)|devicemanagementconfiguration をすべて取得します。|
+|委任 (職場または学校のアカウント)|DeviceManagementConfiguration をすべて取得します。|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 

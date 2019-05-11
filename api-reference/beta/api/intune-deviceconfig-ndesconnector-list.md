@@ -1,23 +1,23 @@
 ---
-title: ndesconnectors を一覧表示する
-description: ndesconnector オブジェクトのプロパティとリレーションシップをリストします。
-author: tfitzmac
+title: NdesConnectors を一覧表示する
+description: NdesConnector オブジェクトのプロパティとリレーションシップをリストします。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e3e7ebb2f7325ad6bd38556c83aa0519ba7ce067
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 081a0f018ec229215e3f10014927f9a0b901f50f
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32518158"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33922186"
 ---
-# <a name="list-ndesconnectors"></a>ndesconnectors を一覧表示する
+# <a name="list-ndesconnectors"></a>NdesConnectors を一覧表示する
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[ndesconnector](../resources/intune-deviceconfig-ndesconnector.md)オブジェクトのプロパティとリレーションシップをリストします。
+[Ndesconnector](../resources/intune-deviceconfig-ndesconnector.md)オブジェクトのプロパティとリレーションシップをリストします。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -76,7 +76,6 @@ Content-Length: 285
   ]
 }
 ```
-
 
 
 

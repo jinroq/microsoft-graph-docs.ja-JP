@@ -1,21 +1,21 @@
 ---
 title: microsoftStoreForBusinessApp の削除
 description: microsoftStoreForBusinessApp を削除します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e1ecc9f35b1a0083719eca2a3a83b0ef8d81134a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: eb060b09d4305b8b7aaaa6f3226dfa1959e14d03
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32491166"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935441"
 ---
 # <a name="delete-microsoftstoreforbusinessapp"></a>microsoftStoreForBusinessApp の削除
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [microsoftStoreForBusinessApp](../resources/intune-apps-microsoftstoreforbusinessapp.md) を削除します。
 
@@ -64,7 +64,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

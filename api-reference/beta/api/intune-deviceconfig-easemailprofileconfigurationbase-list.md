@@ -1,23 +1,23 @@
 ---
 title: リスト easEmailProfileConfigurationBases
-description: easEmailProfileConfigurationBase オブジェクトのプロパティとリレーションシップをリストします。
-author: tfitzmac
+description: EasEmailProfileConfigurationBase オブジェクトのプロパティとリレーションシップをリストします。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5c000782ff255602d2de5b3b1b1ecac0aaac4164
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 534f9fd35af1f52739084bb3d0defcbff8c66442
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32467709"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33926790"
 ---
 # <a name="list-easemailprofileconfigurationbases"></a>リスト easEmailProfileConfigurationBases
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)オブジェクトのプロパティとリレーションシップをリストします。
+[EasEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)オブジェクトのプロパティとリレーションシップをリストします。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -87,7 +87,6 @@ Content-Length: 715
   ]
 }
 ```
-
 
 
 

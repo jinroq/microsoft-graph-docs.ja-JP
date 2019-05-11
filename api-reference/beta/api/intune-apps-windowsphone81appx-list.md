@@ -1,23 +1,23 @@
 ---
 title: リスト windowsPhone81AppXs
-description: windowsPhone81AppX オブジェクトのプロパティとリレーションシップをリストします。
-author: tfitzmac
+description: WindowsPhone81AppX オブジェクトのプロパティとリレーションシップをリストします。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 74fd1c1cc525508472f3d097113ec3ce8173cc31
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 275ac481f0dfb8009616df6852cb3c2cd2db544e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32487974"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934699"
 ---
 # <a name="list-windowsphone81appxs"></a>リスト windowsPhone81AppXs
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)オブジェクトのプロパティとリレーションシップをリストします。
+[WindowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)オブジェクトのプロパティとリレーションシップをリストします。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -116,7 +116,6 @@ Content-Length: 1852
   ]
 }
 ```
-
 
 
 

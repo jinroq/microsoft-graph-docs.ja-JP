@@ -1,23 +1,23 @@
 ---
-title: devicemanagementintent の作成
-description: 新しい devicemanagementintent オブジェクトを作成します。
-author: tfitzmac
+title: DeviceManagementIntent の作成
+description: 新しい deviceManagementIntent オブジェクトを作成します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2cfe8b1eee66c0aa950bf4c25fa499e0b74dd4b0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b4f3fa68dada15f80592ae771f0cd1854b7e4b62
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32509206"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33916373"
 ---
-# <a name="create-devicemanagementintent"></a>devicemanagementintent の作成
+# <a name="create-devicemanagementintent"></a>DeviceManagementIntent の作成
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-新しい[devicemanagementintent](../resources/intune-deviceintent-devicemanagementintent.md)オブジェクトを作成します。
+新しい[Devicemanagementintent](../resources/intune-deviceintent-devicemanagementintent.md)オブジェクトを作成します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -44,15 +44,15 @@ POST /deviceManagement/intents
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求本文で、devicemanagementintent オブジェクトの JSON 表記を指定します。
+要求本文で、deviceManagementIntent オブジェクトの JSON 表記を指定します。
 
-次の表に、devicemanagementintent の作成時に必要なプロパティを示します。
+次の表に、deviceManagementIntent の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|インテント ID|
+|id|文字列|インテント ID|
 |displayName|String|ユーザーが指定した表示名|
-|説明|String|ユーザーが指定した説明|
+|description|String|ユーザーが指定した説明|
 |isAssigned|Boolean|目的がユーザーに割り当てられているかどうかを表します。|
 |lastModifiedDateTime|DateTimeOffset|目的が最後に変更された日時|
 |templateId|String|この目的が作成されたテンプレートの ID (存在する場合)|
@@ -97,7 +97,6 @@ Content-Length: 317
   "templateId": "Template Id value"
 }
 ```
-
 
 
 

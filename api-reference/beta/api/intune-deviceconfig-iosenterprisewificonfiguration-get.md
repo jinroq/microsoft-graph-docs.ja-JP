@@ -1,23 +1,23 @@
 ---
-title: iosEnterpriseWiFiConfiguration を取得する
-description: iosEnterpriseWiFiConfiguration オブジェクトのプロパティとリレーションシップを読み取ります。
-author: tfitzmac
+title: IosEnterpriseWiFiConfiguration を取得する
+description: IosEnterpriseWiFiConfiguration オブジェクトのプロパティとリレーションシップを読み取ります。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8c569f0822d1a250c2e867a59b6936175cdf20e4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 080dc205b28b512281bfebb88f3c6b76b409d5b0
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32467338"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33923511"
 ---
-# <a name="get-iosenterprisewificonfiguration"></a>iosEnterpriseWiFiConfiguration を取得する
+# <a name="get-iosenterprisewificonfiguration"></a>IosEnterpriseWiFiConfiguration を取得する
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[iosEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-iosenterprisewificonfiguration.md)オブジェクトのプロパティとリレーションシップを読み取ります。
+[IosEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-iosenterprisewificonfiguration.md)オブジェクトのプロパティとリレーションシップを読み取ります。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1332
+Content-Length: 1454
 
 {
   "value": {
@@ -99,11 +99,12 @@ Content-Length: 1332
     ],
     "authenticationMethod": "usernameAndPassword",
     "innerAuthenticationProtocolForEapTtls": "challengeHandshakeAuthenticationProtocol",
-    "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
+    "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value",
+    "usernameFormatString": "Username Format String value",
+    "passwordFormatString": "Password Format String value"
   }
 }
 ```
-
 
 
 

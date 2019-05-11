@@ -1,23 +1,23 @@
 ---
-title: macoslobapps のリスト
-description: macoslobapp オブジェクトのプロパティとリレーションシップをリストします。
-author: tfitzmac
+title: MacOSLobApps のリスト
+description: MacOSLobApp オブジェクトのプロパティとリレーションシップをリストします。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 425e5c10854d06c305f4bec3f78aaea233ff1199
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 262cdb195121fb0e56413fe99619ccd5b0eca5f2
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32495261"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935939"
 ---
-# <a name="list-macoslobapps"></a>macoslobapps のリスト
+# <a name="list-macoslobapps"></a>MacOSLobApps のリスト
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[macoslobapp](../resources/intune-apps-macoslobapp.md)オブジェクトのプロパティとリレーションシップをリストします。
+[Macoslobapp](../resources/intune-apps-macoslobapp.md)オブジェクトのプロパティとリレーションシップをリストします。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -47,7 +47,7 @@ GET /deviceAppManagement/mobileApps
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[macoslobapp](../resources/intune-apps-macoslobapp.md)オブジェクトのコレクションを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[Macoslobapp](../resources/intune-apps-macoslobapp.md)オブジェクトのコレクションを返します。
 
 ## <a name="example"></a>例
 
@@ -126,7 +126,6 @@ Content-Length: 1999
   ]
 }
 ```
-
 
 
 

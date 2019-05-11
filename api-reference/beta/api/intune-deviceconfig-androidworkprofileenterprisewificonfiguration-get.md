@@ -1,23 +1,23 @@
 ---
-title: androidWorkProfileEnterpriseWiFiConfiguration を取得する
-description: androidWorkProfileEnterpriseWiFiConfiguration オブジェクトのプロパティとリレーションシップを読み取ります。
-author: tfitzmac
+title: AndroidWorkProfileEnterpriseWiFiConfiguration を取得する
+description: AndroidWorkProfileEnterpriseWiFiConfiguration オブジェクトのプロパティとリレーションシップを読み取ります。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 064ccab43e12be908b7ac2876eb56a577faa411d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fd5afddce8b2815c0437641f45eafd6fb84f5199
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32475222"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33928583"
 ---
-# <a name="get-androidworkprofileenterprisewificonfiguration"></a>androidWorkProfileEnterpriseWiFiConfiguration を取得する
+# <a name="get-androidworkprofileenterprisewificonfiguration"></a>AndroidWorkProfileEnterpriseWiFiConfiguration を取得する
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[androidWorkProfileEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androidworkprofileenterprisewificonfiguration.md)オブジェクトのプロパティとリレーションシップを読み取ります。
+[AndroidWorkProfileEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androidworkprofileenterprisewificonfiguration.md)オブジェクトのプロパティとリレーションシップを読み取ります。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -95,7 +95,6 @@ Content-Length: 1009
   }
 }
 ```
-
 
 
 

@@ -1,23 +1,23 @@
 ---
-title: devicemanagementcomplexsettingdefinition の削除
-description: devicemanagementcomplexsettingdefinition を削除します。
-author: tfitzmac
+title: DeviceManagementComplexSettingDefinition の削除
+description: DeviceManagementComplexSettingDefinition を削除します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 11cc47f03190b168ac2c75947c843bf619175027
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 75ed5e82ee40aa492a52f4fcae9bc54de0ee5e36
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32509948"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33916637"
 ---
-# <a name="delete-devicemanagementcomplexsettingdefinition"></a>devicemanagementcomplexsettingdefinition の削除
+# <a name="delete-devicemanagementcomplexsettingdefinition"></a>DeviceManagementComplexSettingDefinition の削除
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[devicemanagementcomplexsettingdefinition](../resources/intune-deviceintent-devicemanagementcomplexsettingdefinition.md)を削除します。
+[Devicemanagementcomplexsettingdefinition](../resources/intune-deviceintent-devicemanagementcomplexsettingdefinition.md)を削除します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/settingDefinitions/{dev
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -1,21 +1,21 @@
 ---
-title: macOsVppAppAssignedLicense を作成する
+title: MacOsVppAppAssignedLicense を作成する
 description: 新しい macOsVppAppAssignedLicense オブジェクトを作成します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b21b002e7cae3f3b52967cb320caa43e67c10a9d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9738b39b3d30c5c246fdfd77788187a7dc46a47a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32495324"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935826"
 ---
-# <a name="create-macosvppappassignedlicense"></a>macOsVppAppAssignedLicense を作成する
+# <a name="create-macosvppappassignedlicense"></a>MacOsVppAppAssignedLicense を作成する
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい[macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md)オブジェクトを作成します。
 
@@ -50,10 +50,10 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.macOsVppApp/a
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|id|文字列|エンティティのキー。|
 |userEmailAddress|String|ユーザーの電子メールアドレス。|
 |userId|String|ユーザー ID。|
-|userName|文字列型 (String)|ユーザー名。|
+|userName|String|ユーザー名。|
 |userPrincipalName|String|ユーザー プリンシパル名。|
 
 
@@ -95,7 +95,6 @@ Content-Length: 285
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

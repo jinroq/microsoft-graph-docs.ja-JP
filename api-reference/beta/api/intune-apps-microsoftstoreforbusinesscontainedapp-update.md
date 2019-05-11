@@ -1,23 +1,23 @@
 ---
-title: microsoftStoreForBusinessContainedApp の更新
-description: microsoftStoreForBusinessContainedApp オブジェクトのプロパティを更新します。
-author: tfitzmac
+title: MicrosoftStoreForBusinessContainedApp の更新
+description: MicrosoftStoreForBusinessContainedApp オブジェクトのプロパティを更新します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 20526c67ba34a2e508b625f8bc2fafeb9ba0b2eb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6e0a6aac641687e343cd0c3e41fdbfd3b40acd6a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32490956"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935392"
 ---
-# <a name="update-microsoftstoreforbusinesscontainedapp"></a>microsoftStoreForBusinessContainedApp の更新
+# <a name="update-microsoftstoreforbusinesscontainedapp"></a>MicrosoftStoreForBusinessContainedApp の更新
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[microsoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md)オブジェクトのプロパティを更新します。
+[MicrosoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -52,8 +52,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUnive
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)から継承します。|
-|appUserModelId|String|microsoft storeforbusinessapp の含まれているアプリのアプリケーションユーザーモデル ID。|
+|id|String|エンティティのキー。 [MobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)から継承します。|
+|appUserModelId|String|Microsoft Storeforbusinessapp の含まれているアプリのアプリケーションユーザーモデル ID。|
 
 
 
@@ -88,7 +88,6 @@ Content-Length: 176
   "appUserModelId": "App User Model Id value"
 }
 ```
-
 
 
 

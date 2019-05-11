@@ -1,21 +1,21 @@
 ---
 title: revokeAllLicenses アクション
 description: 指定したアプリに割り当てられたすべての iOS VPP ライセンスを取り消します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 708065bb16fa5435aada4e888d95f489df4924a8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 286c9966b143ed65609cbbfd13d742c4594e6465
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32495576"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33937394"
 ---
 # <a name="revokealllicenses-action"></a>revokeAllLicenses アクション
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 指定したアプリに割り当てられたすべての iOS VPP ライセンスを取り消します。
 
@@ -52,7 +52,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|notifymanageddevices|Boolean|失効通知をデバイスに送信する必要があるかどうかを示すブール値|
+|notifyManagedDevices|Boolean|失効通知をデバイスに送信する必要があるかどうかを示すブール値|
 
 
 
@@ -79,7 +79,6 @@ Content-length: 36
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

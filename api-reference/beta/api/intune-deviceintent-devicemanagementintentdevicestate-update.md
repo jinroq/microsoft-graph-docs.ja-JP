@@ -1,23 +1,23 @@
 ---
-title: devicemanagementintentdevicestate の更新
-description: devicemanagementintentdevicestate オブジェクトのプロパティを更新します。
-author: tfitzmac
+title: DeviceManagementIntentDeviceState の更新
+description: DeviceManagementIntentDeviceState オブジェクトのプロパティを更新します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f4c9a80e9b7221d9ab7ef42ec23b389c1f3bf326
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c7f6af8a8348bdd0223f4c799730909cd3972567
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32508373"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33915973"
 ---
-# <a name="update-devicemanagementintentdevicestate"></a>devicemanagementintentdevicestate の更新
+# <a name="update-devicemanagementintentdevicestate"></a>DeviceManagementIntentDeviceState の更新
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[devicemanagementintentdevicestate](../resources/intune-deviceintent-devicemanagementintentdevicestate.md)オブジェクトのプロパティを更新します。
+[Devicemanagementintentdevicestate](../resources/intune-deviceintent-devicemanagementintentdevicestate.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -44,13 +44,13 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/deviceStates/{deviceM
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求本文で、 [devicemanagementintentdevicestate](../resources/intune-deviceintent-devicemanagementintentdevicestate.md)オブジェクトの JSON 表記を指定します。
+要求本文で、 [Devicemanagementintentdevicestate](../resources/intune-deviceintent-devicemanagementintentdevicestate.md)オブジェクトの JSON 表記を指定します。
 
-次の表に、 [devicemanagementintentdevicestate](../resources/intune-deviceintent-devicemanagementintentdevicestate.md)の作成時に必要なプロパティを示します。
+次の表に、 [Devicemanagementintentdevicestate](../resources/intune-deviceintent-devicemanagementintentdevicestate.md)の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|ID|
+|id|文字列|ID|
 |userPrincipalName|String|デバイスで報告されているユーザープリンシパル名|
 |userName|文字列型 (String)|デバイスで報告されているユーザー名|
 |deviceDisplayName|String|レポートされているデバイス名|
@@ -61,7 +61,7 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/deviceStates/{deviceM
 
 
 ## <a name="response"></a>応答
-成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[devicemanagementintentdevicestate](../resources/intune-deviceintent-devicemanagementintentdevicestate.md)オブジェクトを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[Devicemanagementintentdevicestate](../resources/intune-deviceintent-devicemanagementintentdevicestate.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 
@@ -101,7 +101,6 @@ Content-Length: 391
   "deviceId": "Device Id value"
 }
 ```
-
 
 
 

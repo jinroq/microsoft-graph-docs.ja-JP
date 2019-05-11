@@ -1,21 +1,21 @@
 ---
 title: mobileAppContentFile の更新
 description: mobileAppContentFile オブジェクトのプロパティを更新します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d76eb5603020b62e8d93b9074374e0785a1a2584
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0b13499d73179206ef2a5f9859b11a8e60201f81
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32489094"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935129"
 ---
 # <a name="update-mobileappcontentfile"></a>mobileAppContentFile の更新
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) オブジェクトのプロパティを更新します。
 
@@ -52,7 +52,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCo
 |:---|:---|:---|
 |azureStorageUri|String|Azure ストレージ URI。|
 |isCommitted|Boolean|ファイルがコミットされたかどうかを示す値。|
-|id|String|ファイル ID。|
+|id|文字列|ファイル ID。|
 |createdDateTime|DateTimeOffset|ファイルが作成された時刻。|
 |name|String|ファイル名。|
 |size|Int64|暗号化する前のファイルのサイズ。|
@@ -60,8 +60,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCo
 |azureStorageUriExpirationDateTime|DateTimeOffset|Azure ストレージ URI の有効期限が切れる時刻。|
 |manifest|Binary|マニフェスト情報。|
 |uploadState|[mobileAppContentFileUploadState](../resources/intune-apps-mobileappcontentfileuploadstate.md)|現在のアップロード要求の状態。 可能な値は、`success`、`transientError`、`error`、`unknown`、`azureStorageUriRequestSuccess`、`azureStorageUriRequestPending`、`azureStorageUriRequestFailed`、`azureStorageUriRequestTimedOut`、`azureStorageUriRenewalSuccess`、`azureStorageUriRenewalPending`、`azureStorageUriRenewalFailed`、`azureStorageUriRenewalTimedOut`、`commitFileSuccess`、`commitFilePending`、`commitFileFailed`、`commitFileTimedOut` です。|
-|isframeworkfile|Boolean|ファイルがフレームワークファイルであるかどうかを示す値。|
-|isdependency|Boolean|コンテンツファイルがメインコンテンツファイルの依存関係であるかどうかを指定します。|
+|isFrameworkFile|Boolean|ファイルがフレームワークファイルであるかどうかを示す値。|
+|isDependency|Boolean|コンテンツファイルがメインコンテンツファイルの依存関係であるかどうかを指定します。|
 
 
 
@@ -115,7 +115,6 @@ Content-Length: 503
   "isDependency": true
 }
 ```
-
 
 
 

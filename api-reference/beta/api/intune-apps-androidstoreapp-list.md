@@ -1,21 +1,21 @@
 ---
 title: androidStoreApps のリスト
 description: androidStoreApp オブジェクトのプロパティとリレーションシップをリストします。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 63043ee03267762d9b310e9dc8f555e85144b8d3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7c102aee2e7ba3a13893ccc27966e599034acbfc
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32496542"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33937041"
 ---
 # <a name="list-androidstoreapps"></a>androidStoreApps のリスト
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [androidStoreApp](../resources/intune-apps-androidstoreapp.md) オブジェクトのプロパティとリレーションシップをリストします。
 
@@ -116,7 +116,6 @@ Content-Length: 1615
   ]
 }
 ```
-
 
 
 

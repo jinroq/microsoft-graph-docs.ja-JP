@@ -2,20 +2,20 @@
 title: updatePriorities アクション
 description: ポリシーの優先度を更新します。
 localization_priority: Normal
-author: tfitzmac
+author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 6422cd3f40270f6502a58551e6c5c1b739219e00
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1a237ac20154e9356ff999bc5c671b02c15c7028
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32483167"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934055"
 ---
 # <a name="updatepriorities-action"></a>updatePriorities アクション
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 ポリシーの優先度を更新します。
 
@@ -50,8 +50,8 @@ POST /officeConfiguration/clientConfigurations/microsoft.management.services.api
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|officeConfigurationPolicyIds|String collection|office 構成ポリシー id の一覧|
-|officeConfigurationPriorities|Int32 コレクション|office の構成の優先度の一覧|
+|officeConfigurationPolicyIds|String collection|Office 構成ポリシー id の一覧|
+|officeConfigurationPriorities|Int32 コレクション|Office の構成の優先度の一覧|
 
 
 

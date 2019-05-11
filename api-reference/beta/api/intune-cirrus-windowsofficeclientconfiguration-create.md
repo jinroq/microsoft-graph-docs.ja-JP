@@ -1,21 +1,21 @@
 ---
-title: windowsOfficeClientConfiguration を作成する
+title: WindowsOfficeClientConfiguration を作成する
 description: ターゲットグループを使用して、新しいセキュリティで保護されていないポリシーを作成します。
 localization_priority: Normal
-author: tfitzmac
+author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 5a8e11fcf9728a554c8938d3ccf2314bf5e1999c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 87b30f78cd2c5bf8c97b3b08f2db490152767c0d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32483454"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33933999"
 ---
-# <a name="create-windowsofficeclientconfiguration"></a>windowsOfficeClientConfiguration を作成する
+# <a name="create-windowsofficeclientconfiguration"></a>WindowsOfficeClientConfiguration を作成する
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 ターゲットグループを使用して、新しいセキュリティで保護されていないポリシーを作成します。
 
@@ -50,17 +50,16 @@ POST /officeConfiguration/clientConfigurations
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|office クライアント構成ポリシーの Id。 [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承します。|
-|userPreferencePayload|Stream|プリファレンス設定 JSON 文字列はバイナリ形式です。これらの値はユーザーが上書きできます。 [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承します。|
-|policypayload|Stream|ポリシー設定 JSON 文字列 (バイナリ形式) では、ユーザーがこれらの値を変更することはできません。 [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承します。|
-|説明|String|管理者が提供する office クライアント構成ポリシーの説明。 [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承します。|
-|displayName|String|管理者が指定した office クライアント構成ポリシーの名前。 [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承します。|
-|assignments|[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md)コレクション|ポリシーのグループの割り当てのリスト。 [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承します。|
-|priority|Int32|優先度の値は、テナントの各ポリシーの一意の値である必要があり、競合の解決に使用されます。低い値は、優先度が高くなります。 [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承します。|
-|lastModifiedDateTime|DateTime
-|ポリシーの最終更新日時スタンプ。 [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承します。|
-|userCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|ポリシーのユーザーチェックインの概要。 [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承します。|
-|checkinstatuses|[officeClientCheckinStatus](../resources/intune-cirrus-officeclientcheckinstatus.md)コレクション|office クライアントのチェックイン状態のリスト。 [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承します。|
+|id|文字列|Office クライアント構成ポリシーの Id。 [OfficeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承します。|
+|userPreferencePayload|Stream|プリファレンス設定 JSON 文字列はバイナリ形式です。これらの値はユーザーが上書きできます。 [OfficeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承します。|
+|policyPayload|Stream|ポリシー設定 JSON 文字列 (バイナリ形式) では、ユーザーがこれらの値を変更することはできません。 [OfficeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承します。|
+|description|String|管理者が提供する office クライアント構成ポリシーの説明。 [OfficeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承します。|
+|displayName|String|管理者が指定した office クライアント構成ポリシーの名前。 [OfficeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承します。|
+|assignments|[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md)コレクション|ポリシーのグループの割り当てのリスト。 [OfficeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承します。|
+|priority|Int32|優先度の値は、テナントの各ポリシーの一意の値である必要があり、競合の解決に使用されます。低い値は、優先度が高くなります。 [OfficeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承します。|
+|lastModifiedDateTime|DateTime|ポリシーの最終更新日時スタンプ。 [OfficeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承します。|
+|userCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|ポリシーのユーザーチェックインの概要。 [OfficeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承します。|
+|checkinStatuses|[officeClientCheckinStatus](../resources/intune-cirrus-officeclientcheckinstatus.md)コレクション|Office クライアントのチェックイン状態のリスト。 [OfficeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承します。|
 
 
 

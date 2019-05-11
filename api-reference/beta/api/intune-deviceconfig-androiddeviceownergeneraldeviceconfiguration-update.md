@@ -1,23 +1,23 @@
 ---
-title: androiddeviceowner一般の devic/デバイスの更新
-description: androiddeviceownerのプロパティを更新します。
-author: tfitzmac
+title: Androiddeviceowner一般の Devic/デバイスの更新
+description: Androiddeviceownerのプロパティを更新します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fad142a5ec0f069c40185a40865e29ddee894789
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 900043e6ff08a889ce1f34a8701d485fac506b9c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32480472"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33933187"
 ---
-# <a name="update-androiddeviceownergeneraldeviceconfiguration"></a>androiddeviceowner一般の devic/デバイスの更新
+# <a name="update-androiddeviceownergeneraldeviceconfiguration"></a>Androiddeviceowner一般の Devic/デバイスの更新
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[androiddeviceownerの](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)プロパティを更新します。
+[Androiddeviceownerの](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)プロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -46,24 +46,24 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求本文で、 [androiddeviceowner一般](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)の devic/devicオブジェクトの JSON 表記を指定します。
+要求本文で、 [Androiddeviceowner一般](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)の devic/DEVICオブジェクトの JSON 表記を指定します。
 
-次の表に、 [androiddeviceowner[devic]](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)の作成時に必要なプロパティを示します。
+次の表に、 [Androiddeviceowner[devic]](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列型 (String)|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|id|文字列|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |supportsScopeTags|Boolean|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|説明|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|description|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|管理者が指定した、デバイス構成の名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |accountsBlockModification|Boolean|アカウントの追加または削除が無効であるかどうかを示します。|
 |appsAllowInstallFromUnknownSources|Boolean|ユーザーが不明なソースを有効にできるかどうかを示します。|
 |appsAutoUpdatePolicy|[androidDeviceOwnerAppAutoUpdatePolicyType](../resources/intune-deviceconfig-androiddeviceownerappautoupdatepolicytype.md)|アプリの自動更新ポリシーの値を示します。 可能な値は、`notConfigured`、`userChoice`、`never`、`wiFiOnly`、`always` です。|
-|appsdefaultpermissionpolicy|[androidDeviceOwnerDefaultAppPermissionPolicyType](../resources/intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md)|アプリに対して定義されていない場合、実行時のアクセス許可の要求に対するアクセス許可ポリシーを示します。 可能な値は、`deviceDefault`、`prompt`、`autoGrant`、`autoDeny` です。|
+|appsDefaultPermissionPolicy|[androidDeviceOwnerDefaultAppPermissionPolicyType](../resources/intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md)|アプリに対して定義されていない場合、実行時のアクセス許可の要求に対するアクセス許可ポリシーを示します。 使用可能な値は、`deviceDefault`、`prompt`、`autoGrant`、`autoDeny` です。|
 |appsRecommendSkippingFirstUseHints|Boolean|すべてのアプリが、追加された初回使用時のヒントをスキップするかどうかを指定します。|
 |bluetoothBlockConfiguration|Boolean|ユーザーが bluetooth を構成することを禁止するかどうかを示します。|
 |bluetoothBlockContactSharing|Boolean|ユーザーが bluetooth を介して連絡先を共有することを禁止するかどうかを示します。|
@@ -78,50 +78,50 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |kioskModeExitCode|String|デバイスがキオスクモードのときに、ユーザーがキオスクモードからのエスケープを許可する終了コード。|
 |kioskModeVirtualHomeButtonEnabled|Boolean|デバイスがキオスクモードのときに仮想ホームボタンを表示するかどうかを指定します。|
 |kioskModeBluetoothConfigurationEnabled|Boolean|ユーザーがキオスクモードで Bluetooth 設定を構成することを許可するかどうかを指定します。|
-|kioskModeWiFiConfigurationEnabled|Boolean|ユーザーがキオスクモードで wi-fi 設定を構成することを許可するかどうかを指定します。|
+|kioskModeWiFiConfigurationEnabled|Boolean|ユーザーがキオスクモードで Wi-fi 設定を構成することを許可するかどうかを指定します。|
 |microphoneForceMute|Boolean|デバイス上でのマイクのミュートをブロックするかどうかを示します。|
 |networkEscapeHatchAllowed|Boolean|ブート時にデバイスが一時的なネットワーク接続に接続することを許可するかどうかを示します。|
-|nfcblockoutgoingbeam|Boolean|NFC の送信ビームをブロックするかどうかを示します。|
-|passwordblockkeyguard|Boolean|keyguard が無効であるかどうかを示します。|
-|passwordblockkeygu/機能|[androidkeygu/機能](../resources/intune-deviceconfig-androidkeyguardfeature.md)コレクション|ブロックする device keyguard 機能のリストです。 このコレクションには、最大で 7 個の要素を含めることができます。 可能な値は、`notConfigured`、`camera`、`notifications`、`unredactedNotifications`、`trustAgents`、`fingerprint`、`remoteInput`、`allFeatures` です。|
+|nfcBlockOutgoingBeam|Boolean|NFC の送信ビームをブロックするかどうかを示します。|
+|passwordBlockKeyguard|Boolean|Keyguard が無効であるかどうかを示します。|
+|Passwordblockkeygu/機能|[Androidkeygu/機能](../resources/intune-deviceconfig-androidkeyguardfeature.md)コレクション|ブロックする device keyguard 機能のリストです。 このコレクションには、最大で 7 個の要素を含めることができます。 可能な値は、`notConfigured`、`camera`、`notifications`、`unredactedNotifications`、`trustAgents`、`fingerprint`、`remoteInput`、`allFeatures` です。|
 |passwordExpirationDays|Int32|パスワードを期限切れにするために設定できる時間を秒単位で指定し、新しいパスワードを入力する必要があります。 有効な値は 1 から 365 までです|
 |passwordMinimumLength|Int32|デバイスで必要なパスワードの最小の長さを示します。 有効な値は 4 から 16 までです|
 |passwordMinimumLetterCharacters|Int32|デバイスパスワードに必要な文字の最小数を示します。 有効な値は1から16までです|
 |passwordMinimumLowerCaseCharacters|Int32|デバイスパスワードに必要な小文字の最小文字数を示します。 有効な値は1から16までです|
 |passwordMinimumNonLetterCharacters|Int32|デバイスパスワードに必要な文字以外の文字の最小数を示します。 有効な値は1から16までです|
-|passwordminimumnumericcharacters|Int32|デバイスパスワードに必要な最小文字数を示します。 有効な値は1から16までです|
-|passwordminimumシンボル文字|Int32|デバイスパスワードに必要な最小記号文字数を示します。 有効な値は1から16までです|
+|passwordMinimumNumericCharacters|Int32|デバイスパスワードに必要な最小文字数を示します。 有効な値は1から16までです|
+|Passwordminimumシンボル文字|Int32|デバイスパスワードに必要な最小記号文字数を示します。 有効な値は1から16までです|
 |passwordMinimumUpperCaseCharacters|Int32|デバイスのパスワードに必要な上位 caseletter 文字の最小数を示します。 有効な値は1から16までです|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|画面がタイムアウトになるまでの非アクティブ時間 (ミリ秒)。|
 |passwordPreviousPasswordCountToBlock|Int32|パスワードの履歴の長さを示します。ユーザーは、履歴にあるパスワードと同じパスワードを入力することはできません。 有効な値は 0 から 24 までです|
-|passwordRequiredType|[androiddeviceownerrequiredpasswordtype](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)|デバイスで必要なパスワードの最小品質を示します。 可能な値は、`deviceDefault`、`required`、`numeric`、`numericComplex`、`alphabetic`、`alphanumeric`、`alphanumericWithSymbols`、`lowSecurityBiometric` です。|
+|passwordRequiredType|[androidDeviceOwnerRequiredPasswordType](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)|デバイスで必要なパスワードの最小品質を示します。 可能な値は、`deviceDefault`、`required`、`numeric`、`numericComplex`、`alphabetic`、`alphanumeric`、`alphanumericWithSymbols`、`lowSecurityBiometric` です。|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|ユーザーが間違ったパスワードを入力したときにデバイスがワイプされるまでの回数を示します。 有効な値は 4 から 11 までです|
-|playstoremode|[androidDeviceOwnerPlayStoreMode](../resources/intune-deviceconfig-androiddeviceownerplaystoremode.md)|デバイスの再生ストアモードを示します。 使用可能な値は、`notConfigured`、`allowList`、`blockList` です。|
-|safebootblocked|Boolean|セーフブートでのデバイスの再起動を無効にするかどうかを示します。|
+|playStoreMode|[androidDeviceOwnerPlayStoreMode](../resources/intune-deviceconfig-androiddeviceownerplaystoremode.md)|デバイスの再生ストアモードを示します。 可能な値は、`notConfigured`、`allowList`、`blockList` です。|
+|safeBootBlocked|Boolean|セーフブートでのデバイスの再起動を無効にするかどうかを示します。|
 |screenCaptureBlocked|Boolean|スクリーンショットを撮影する機能を無効にするかどうかを示します。|
-|securityallowデバッグ機能|Boolean|ユーザーがデバイスのデバッグ機能を有効にすることを禁止するかどうかを示します。|
+|Securityallowデバッグ機能|Boolean|ユーザーがデバイスのデバッグ機能を有効にすることを禁止するかどうかを示します。|
 |securityRequireVerifyApps|Boolean|アプリを確認する必要があるかどうかを示します。|
 |statusBarBlocked|Boolean|通知、クイック設定、その他の画面オーバーレイを含む、ステータスバーを無効にするかどうかを示します。|
-|stayonmodes|[androidDeviceOwnerBatteryPluggedMode](../resources/intune-deviceconfig-androiddeviceownerbatterypluggedmode.md)コレクション|デバイスの表示がオンのままになるモードの一覧です。 このコレクションには、最大4つの要素を含めることができます。 可能な値は、`notConfigured`、`ac`、`usb`、`wireless` です。|
-|storageallowusb|Boolean|USB 大容量ストレージを許可するかどうかを示します。|
-|storageblockexternalmedia|Boolean|外部メディアをブロックするかどうかを示します。|
-|storageblockusbfiletransfer|Boolean|USB ファイル転送をブロックするかどうかを示します。|
+|stayOnModes|[androidDeviceOwnerBatteryPluggedMode](../resources/intune-deviceconfig-androiddeviceownerbatterypluggedmode.md)コレクション|デバイスの表示がオンのままになるモードの一覧です。 このコレクションには、最大4つの要素を含めることができます。 使用可能な値は、`notConfigured`、`ac`、`usb`、`wireless` です。|
+|storageAllowUsb|Boolean|USB 大容量ストレージを許可するかどうかを示します。|
+|storageBlockExternalMedia|Boolean|外部メディアをブロックするかどうかを示します。|
+|storageBlockUsbFileTransfer|Boolean|USB ファイル転送をブロックするかどうかを示します。|
 |systemUpdateWindowStartMinutesAfterMidnight|Int32|[システムの更新] ウィンドウが起動する午前0時からの経過時間 (分単位) を示します。 有効な値は 0 ~ 1440|
 |systemUpdateWindowEndMinutesAfterMidnight|Int32|[システムの更新] ウィンドウが終了する午前0時からの経過時間 (分単位) を示します。 有効な値は 0 ~ 1440|
-|systemUpdateInstallType|[androidDeviceOwnerSystemUpdateInstallType](../resources/intune-deviceconfig-androiddeviceownersystemupdateinstalltype.md)|システム更新構成の種類。 可能な値は、`deviceDefault`、`postpone`、`windowed`、`automatic` です。|
-|systemwindowsblocked ブロック|Boolean|Android システムプロンプトウィンドウ (toasts、電話活動、システム通知など) を禁止するかどうかを指定します。|
-|ユーザー blockadd|Boolean|ユーザーおよびプロファイルの追加を無効にするかどうかを示します。|
-|ユーザー blockremove|Boolean|他のユーザーのデバイスからの削除を無効にするかどうかを示します。|
-|volumeblockadjustment|Boolean|マスターボリュームを調整するかどうかを示します。|
-|vpnAlwaysOnPackageIdentifier|String|always on VPN 接続を処理するアプリの Android アプリパッケージ名。|
-|vpnAlwaysOnLockdownMode|Boolean|always on vpn パッケージ名が指定されている場合は、vpn が切断されたときにネットワークトラフィックをロックするかどうかを指定します。|
+|systemUpdateInstallType|[androidDeviceOwnerSystemUpdateInstallType](../resources/intune-deviceconfig-androiddeviceownersystemupdateinstalltype.md)|システム更新構成の種類。 使用可能な値は、`deviceDefault`、`postpone`、`windowed`、`automatic` です。|
+|systemWindowsBlocked ブロック|Boolean|Android システムプロンプトウィンドウ (toasts、電話活動、システム通知など) を禁止するかどうかを指定します。|
+|ユーザー Blockadd|Boolean|ユーザーおよびプロファイルの追加を無効にするかどうかを示します。|
+|ユーザー Blockremove|Boolean|他のユーザーのデバイスからの削除を無効にするかどうかを示します。|
+|volumeBlockAdjustment|Boolean|マスターボリュームを調整するかどうかを示します。|
+|vpnAlwaysOnPackageIdentifier|String|Always on VPN 接続を処理するアプリの Android アプリパッケージ名。|
+|vpnAlwaysOnLockdownMode|Boolean|Always on VPN パッケージ名が指定されている場合は、VPN が切断されたときにネットワークトラフィックをロックするかどうかを指定します。|
 |wifiBlockEditConfigurations|Boolean|ユーザーが wifi 接続設定を編集することを禁止するかどうかを示します。|
 |wifiBlockEditPolicyDefinedConfigurations|Boolean|ユーザーがポリシーによって定義されたネットワークのみを編集することを禁止するかどうかを示します。|
 
 
 
 ## <a name="response"></a>応答
-成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[androiddeviceowner一般](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)の devic/オブジェクトを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[Androiddeviceowner一般](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)の devic/オブジェクトを返します。
 
 ## <a name="example"></a>例
 
@@ -307,7 +307,6 @@ Content-Length: 3077
   "wifiBlockEditPolicyDefinedConfigurations": true
 }
 ```
-
 
 
 

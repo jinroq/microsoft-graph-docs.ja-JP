@@ -1,23 +1,23 @@
 ---
-title: restrictedAppsViolation の更新
-description: restrictedAppsViolation オブジェクトのプロパティを更新します。
-author: tfitzmac
+title: RestrictedAppsViolation の更新
+description: RestrictedAppsViolation オブジェクトのプロパティを更新します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d4b472fbac98b8b38ce8f97e8be87d788b288d27
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8ea5a73f26e2abc0411419ad37f0a35c5432db78
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32518144"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33922102"
 ---
-# <a name="update-restrictedappsviolation"></a>restrictedAppsViolation の更新
+# <a name="update-restrictedappsviolation"></a>RestrictedAppsViolation の更新
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)オブジェクトのプロパティを更新します。
+[RestrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -50,16 +50,16 @@ PATCH /deviceManagement/deviceConfigurationRestrictedAppsViolations/{restrictedA
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|オブジェクトの一意識別子。 accountId、deviceId、policyid、および userId から構成されます。|
+|id|文字列|オブジェクトの一意識別子。 AccountId、deviceId、policyId、および userId から構成されます。|
 |userId|String|ユーザーの一意識別子。 Guid である必要があります|
-|userName|文字列型 (String)|ユーザー名|
-|manageddeviceid|String|管理デバイスの一意識別子。 Guid である必要があります|
+|userName|String|ユーザー名|
+|managedDeviceId|String|管理デバイスの一意識別子。 Guid である必要があります|
 |deviceName|String|[デバイス名]|
 |deviceConfigurationId|String|デバイス構成プロファイルの一意識別子。 Guid である必要があります|
 |deviceConfigurationName|String|デバイス構成プロファイル名|
 |platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|プラットフォームの種類。 可能な値は、`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`all` です。|
 |restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|制限付きアプリの状態。 可能な値は、`prohibitedApps`、`notApprovedApps` です。|
-|restrictedApps|[manageddevicereportedapp](../resources/intune-deviceconfig-manageddevicereportedapp.md)コレクション|違反した制限付きアプリの一覧|
+|restrictedApps|[Manageddevicereportedapp](../resources/intune-deviceconfig-manageddevicereportedapp.md)コレクション|違反した制限付きアプリの一覧|
 
 
 
@@ -120,7 +120,6 @@ Content-Length: 613
   ]
 }
 ```
-
 
 
 

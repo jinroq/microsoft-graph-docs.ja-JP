@@ -1,21 +1,21 @@
 ---
 title: deviceConfigurationDeviceOverview の更新
 description: deviceConfigurationDeviceOverview オブジェクトのプロパティを更新します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 86899d0f2ec25306b32fd1ab3343d7e834841ea0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c536d5dbd1f295ea85e58c0fa6592969253a717f
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32469538"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33927420"
 ---
 # <a name="update-deviceconfigurationdeviceoverview"></a>deviceConfigurationDeviceOverview の更新
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md) オブジェクトのプロパティを更新します。
 
@@ -118,7 +118,6 @@ Content-Length: 394
   "configurationVersion": 4
 }
 ```
-
 
 
 

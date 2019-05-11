@@ -1,23 +1,23 @@
 ---
-title: androidmanagedstoreappconfigurationschema の作成
-description: 新しい androidmanagedstoreappconfigurationschema オブジェクトを作成します。
-author: tfitzmac
+title: AndroidManagedStoreAppConfigurationSchema の作成
+description: 新しい androidManagedStoreAppConfigurationSchema オブジェクトを作成します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 71079de480b0c450873b30ae8127dca6a507a9c3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c0b913bd00aedc74f26deebabe61255a58ec0e20
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32498187"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33937520"
 ---
-# <a name="create-androidmanagedstoreappconfigurationschema"></a>androidmanagedstoreappconfigurationschema の作成
+# <a name="create-androidmanagedstoreappconfigurationschema"></a>AndroidManagedStoreAppConfigurationSchema の作成
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-新しい[androidmanagedstoreappconfigurationschema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md)オブジェクトを作成します。
+新しい[Androidmanagedstoreappconfigurationschema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md)オブジェクトを作成します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -44,20 +44,20 @@ POST /deviceManagement/androidManagedStoreAppConfigurationSchemas
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求本文で、androidmanagedstoreappconfigurationschema オブジェクトの JSON 表記を指定します。
+要求本文で、androidManagedStoreAppConfigurationSchema オブジェクトの JSON 表記を指定します。
 
-次の表に、androidmanagedstoreappconfigurationschema の作成時に必要なプロパティを示します。
+次の表に、androidManagedStoreAppConfigurationSchema の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティのキー。スキーマが対応するアプリケーションの Android パッケージ名です。|
 |exampleJson|Binary|このスキーマに準拠した JSON 文字列の例を含む、UTF8 でエンコードされたバイト配列。このアプリの構成の設定方法を示しています。|
-|schemaItems|[androidmanagedstoreappconfigurationschemaitem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)コレクション|それぞれがスキーマ内の名前付き構成オプションを示すアイテムのコレクションです。|
+|schemaItems|[Androidmanagedstoreappconfigurationschemaitem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)コレクション|それぞれがスキーマ内の名前付き構成オプションを示すアイテムのコレクションです。|
 
 
 
 ## <a name="response"></a>応答
-成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[androidmanagedstoreappconfigurationschema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md)オブジェクトを返します。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[Androidmanagedstoreappconfigurationschema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 
@@ -131,7 +131,6 @@ Content-Length: 854
   ]
 }
 ```
-
 
 
 

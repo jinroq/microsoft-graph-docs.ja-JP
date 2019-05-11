@@ -1,21 +1,21 @@
 ---
 title: deviceCompliancePolicyAssignment の更新
 description: deviceCompliancePolicyAssignment オブジェクトのプロパティを更新します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 19004fb0d283d27e48c9cb9f3de438c7444fc6a8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9168ffa1fbeffc71b32ce02b06f52a535f2f65b4
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32470490"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33927889"
 ---
 # <a name="update-devicecompliancepolicyassignment"></a>deviceCompliancePolicyAssignment の更新
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [deviceCompliancePolicyAssignment](../resources/intune-deviceconfig-devicecompliancepolicyassignment.md) オブジェクトのプロパティを更新します。
 
@@ -90,7 +90,6 @@ Content-Length: 221
   }
 }
 ```
-
 
 
 

@@ -1,21 +1,21 @@
 ---
 title: windows81GeneralConfiguration の取得
 description: windows81GeneralConfiguration オブジェクトのプロパティとリレーションシップを読み取ります。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9df3304ff39de3445f1d553463d64dece258fdb0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 12e7b8c9dc4c08d5a60747150c0ae4150a7c0fb2
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32515373"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33918256"
 ---
 # <a name="get-windows81generalconfiguration"></a>windows81GeneralConfiguration の取得
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [windows81GeneralConfiguration](../resources/intune-deviceconfig-windows81generalconfiguration.md) オブジェクトのプロパティとリレーションシップを読み取ります。
 
@@ -120,7 +120,6 @@ Content-Length: 2207
   }
 }
 ```
-
 
 
 
