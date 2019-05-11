@@ -1,34 +1,34 @@
 ---
-title: devicemanagement整数 settinginstance の更新
-description: devicemanagement整数 settinginstance オブジェクトのプロパティを更新します。
-author: tfitzmac
+title: Devicemanagement整数 Settinginstance の更新
+description: Devicemanagement整数 Settinginstance オブジェクトのプロパティを更新します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 801a78d1c8b55fc061f2cee8163e6971b19eb481
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 908dae6b426656236bab42fcb8f4c7c953ab45af
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32509227"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33916321"
 ---
-# <a name="update-devicemanagementintegersettinginstance"></a><span data-ttu-id="a3bd8-103">devicemanagement整数 settinginstance の更新</span><span class="sxs-lookup"><span data-stu-id="a3bd8-103">Update deviceManagementIntegerSettingInstance</span></span>
+# <a name="update-devicemanagementintegersettinginstance"></a><span data-ttu-id="0c4b8-103">Devicemanagement整数 Settinginstance の更新</span><span class="sxs-lookup"><span data-stu-id="0c4b8-103">Update deviceManagementIntegerSettingInstance</span></span>
 
-> <span data-ttu-id="a3bd8-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a3bd8-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="0c4b8-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="0c4b8-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="a3bd8-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="a3bd8-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="0c4b8-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="0c4b8-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="a3bd8-106">[devicemanagement整数 settinginstance](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md)オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="a3bd8-106">Update the properties of a [deviceManagementIntegerSettingInstance](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md) object.</span></span>
+<span data-ttu-id="0c4b8-106">[Devicemanagement整数 Settinginstance](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md)オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="0c4b8-106">Update the properties of a [deviceManagementIntegerSettingInstance](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="a3bd8-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="a3bd8-107">Prerequisites</span></span>
-<span data-ttu-id="a3bd8-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a3bd8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="0c4b8-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="0c4b8-107">Prerequisites</span></span>
+<span data-ttu-id="0c4b8-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0c4b8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a3bd8-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="a3bd8-110">Permission type</span></span>|<span data-ttu-id="a3bd8-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="a3bd8-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="0c4b8-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="0c4b8-110">Permission type</span></span>|<span data-ttu-id="0c4b8-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="0c4b8-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="a3bd8-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="a3bd8-112">Delegated (work or school account)</span></span>|<span data-ttu-id="a3bd8-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a3bd8-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="a3bd8-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="a3bd8-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="a3bd8-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a3bd8-115">Not supported.</span></span>|
-|<span data-ttu-id="a3bd8-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="a3bd8-116">Application</span></span>|<span data-ttu-id="a3bd8-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a3bd8-117">Not supported.</span></span>|
+|<span data-ttu-id="0c4b8-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="0c4b8-112">Delegated (work or school account)</span></span>|<span data-ttu-id="0c4b8-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0c4b8-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="0c4b8-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="0c4b8-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="0c4b8-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="0c4b8-115">Not supported.</span></span>|
+|<span data-ttu-id="0c4b8-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="0c4b8-116">Application</span></span>|<span data-ttu-id="0c4b8-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="0c4b8-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="a3bd8-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="a3bd8-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0c4b8-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="0c4b8-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,33 +40,33 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/categories/{deviceMan
 PATCH /deviceManagement/templates/{deviceManagementTemplateId}/categories/{deviceManagementTemplateSettingCategoryId}/recommendedSettings/{deviceManagementSettingInstanceId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="a3bd8-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="a3bd8-119">Request headers</span></span>
-|<span data-ttu-id="a3bd8-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="a3bd8-120">Header</span></span>|<span data-ttu-id="a3bd8-121">値</span><span class="sxs-lookup"><span data-stu-id="a3bd8-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="0c4b8-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="0c4b8-119">Request headers</span></span>
+|<span data-ttu-id="0c4b8-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="0c4b8-120">Header</span></span>|<span data-ttu-id="0c4b8-121">値</span><span class="sxs-lookup"><span data-stu-id="0c4b8-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="a3bd8-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="a3bd8-122">Authorization</span></span>|<span data-ttu-id="a3bd8-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="a3bd8-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="a3bd8-124">承諾</span><span class="sxs-lookup"><span data-stu-id="a3bd8-124">Accept</span></span>|<span data-ttu-id="a3bd8-125">application/json</span><span class="sxs-lookup"><span data-stu-id="a3bd8-125">application/json</span></span>|
+|<span data-ttu-id="0c4b8-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="0c4b8-122">Authorization</span></span>|<span data-ttu-id="0c4b8-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="0c4b8-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="0c4b8-124">承諾</span><span class="sxs-lookup"><span data-stu-id="0c4b8-124">Accept</span></span>|<span data-ttu-id="0c4b8-125">application/json</span><span class="sxs-lookup"><span data-stu-id="0c4b8-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="a3bd8-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="a3bd8-126">Request body</span></span>
-<span data-ttu-id="a3bd8-127">要求本文で、 [devicemanagement整数 settinginstance](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="a3bd8-127">In the request body, supply a JSON representation for the [deviceManagementIntegerSettingInstance](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="0c4b8-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="0c4b8-126">Request body</span></span>
+<span data-ttu-id="0c4b8-127">要求本文で、 [Devicemanagement整数 Settinginstance](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="0c4b8-127">In the request body, supply a JSON representation for the [deviceManagementIntegerSettingInstance](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md) object.</span></span>
 
-<span data-ttu-id="a3bd8-128">次の表に、 [devicemanagement整数 settinginstance](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md)の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="a3bd8-128">The following table shows the properties that are required when you create the [deviceManagementIntegerSettingInstance](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md).</span></span>
+<span data-ttu-id="0c4b8-128">次の表に、 [Devicemanagement整数 Settinginstance](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md)の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="0c4b8-128">The following table shows the properties that are required when you create the [deviceManagementIntegerSettingInstance](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md).</span></span>
 
-|<span data-ttu-id="a3bd8-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="a3bd8-129">Property</span></span>|<span data-ttu-id="a3bd8-130">型</span><span class="sxs-lookup"><span data-stu-id="a3bd8-130">Type</span></span>|<span data-ttu-id="a3bd8-131">説明</span><span class="sxs-lookup"><span data-stu-id="a3bd8-131">Description</span></span>|
+|<span data-ttu-id="0c4b8-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="0c4b8-129">Property</span></span>|<span data-ttu-id="0c4b8-130">型</span><span class="sxs-lookup"><span data-stu-id="0c4b8-130">Type</span></span>|<span data-ttu-id="0c4b8-131">説明</span><span class="sxs-lookup"><span data-stu-id="0c4b8-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="a3bd8-132">id</span><span class="sxs-lookup"><span data-stu-id="a3bd8-132">id</span></span>|<span data-ttu-id="a3bd8-133">String</span><span class="sxs-lookup"><span data-stu-id="a3bd8-133">String</span></span>|<span data-ttu-id="a3bd8-134">[devicemanagementsettinginstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)から継承された設定インスタンス ID</span><span class="sxs-lookup"><span data-stu-id="a3bd8-134">The setting instance ID Inherited from [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)</span></span>|
-|<span data-ttu-id="a3bd8-135">definitionId</span><span class="sxs-lookup"><span data-stu-id="a3bd8-135">definitionId</span></span>|<span data-ttu-id="a3bd8-136">String</span><span class="sxs-lookup"><span data-stu-id="a3bd8-136">String</span></span>|<span data-ttu-id="a3bd8-137">[devicemanagementsettinginstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)から継承されたこのインスタンスの設定定義の ID</span><span class="sxs-lookup"><span data-stu-id="a3bd8-137">The ID of the setting definition for this instance Inherited from [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)</span></span>|
-|<span data-ttu-id="a3bd8-138">valuejson</span><span class="sxs-lookup"><span data-stu-id="a3bd8-138">valueJson</span></span>|<span data-ttu-id="a3bd8-139">String</span><span class="sxs-lookup"><span data-stu-id="a3bd8-139">String</span></span>|<span data-ttu-id="a3bd8-140">[devicemanagementsettinginstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)から継承された値の JSON 表現</span><span class="sxs-lookup"><span data-stu-id="a3bd8-140">JSON representation of the value Inherited from [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)</span></span>|
-|<span data-ttu-id="a3bd8-141">値</span><span class="sxs-lookup"><span data-stu-id="a3bd8-141">value</span></span>|<span data-ttu-id="a3bd8-142">Int32</span><span class="sxs-lookup"><span data-stu-id="a3bd8-142">Int32</span></span>|<span data-ttu-id="a3bd8-143">整数型 (integer) の値</span><span class="sxs-lookup"><span data-stu-id="a3bd8-143">The integer value</span></span>|
+|<span data-ttu-id="0c4b8-132">id</span><span class="sxs-lookup"><span data-stu-id="0c4b8-132">id</span></span>|<span data-ttu-id="0c4b8-133">String</span><span class="sxs-lookup"><span data-stu-id="0c4b8-133">String</span></span>|<span data-ttu-id="0c4b8-134">[Devicemanagementsettinginstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)から継承された設定インスタンス ID</span><span class="sxs-lookup"><span data-stu-id="0c4b8-134">The setting instance ID Inherited from [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)</span></span>|
+|<span data-ttu-id="0c4b8-135">definitionId</span><span class="sxs-lookup"><span data-stu-id="0c4b8-135">definitionId</span></span>|<span data-ttu-id="0c4b8-136">String</span><span class="sxs-lookup"><span data-stu-id="0c4b8-136">String</span></span>|<span data-ttu-id="0c4b8-137">[Devicemanagementsettinginstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)から継承されたこのインスタンスの設定定義の ID</span><span class="sxs-lookup"><span data-stu-id="0c4b8-137">The ID of the setting definition for this instance Inherited from [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)</span></span>|
+|<span data-ttu-id="0c4b8-138">valueJson</span><span class="sxs-lookup"><span data-stu-id="0c4b8-138">valueJson</span></span>|<span data-ttu-id="0c4b8-139">String</span><span class="sxs-lookup"><span data-stu-id="0c4b8-139">String</span></span>|<span data-ttu-id="0c4b8-140">[Devicemanagementsettinginstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)から継承された値の JSON 表現</span><span class="sxs-lookup"><span data-stu-id="0c4b8-140">JSON representation of the value Inherited from [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)</span></span>|
+|<span data-ttu-id="0c4b8-141">値</span><span class="sxs-lookup"><span data-stu-id="0c4b8-141">value</span></span>|<span data-ttu-id="0c4b8-142">Int32</span><span class="sxs-lookup"><span data-stu-id="0c4b8-142">Int32</span></span>|<span data-ttu-id="0c4b8-143">整数型 (integer) の値</span><span class="sxs-lookup"><span data-stu-id="0c4b8-143">The integer value</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="a3bd8-144">応答</span><span class="sxs-lookup"><span data-stu-id="a3bd8-144">Response</span></span>
-<span data-ttu-id="a3bd8-145">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[devicemanagement整数 settinginstance](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="a3bd8-145">If successful, this method returns a `200 OK` response code and an updated [deviceManagementIntegerSettingInstance](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="0c4b8-144">応答</span><span class="sxs-lookup"><span data-stu-id="0c4b8-144">Response</span></span>
+<span data-ttu-id="0c4b8-145">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[Devicemanagement整数 settinginstance](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="0c4b8-145">If successful, this method returns a `200 OK` response code and an updated [deviceManagementIntegerSettingInstance](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a3bd8-146">例</span><span class="sxs-lookup"><span data-stu-id="a3bd8-146">Example</span></span>
+## <a name="example"></a><span data-ttu-id="0c4b8-146">例</span><span class="sxs-lookup"><span data-stu-id="0c4b8-146">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="a3bd8-147">要求</span><span class="sxs-lookup"><span data-stu-id="a3bd8-147">Request</span></span>
-<span data-ttu-id="a3bd8-148">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="a3bd8-148">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="0c4b8-147">要求</span><span class="sxs-lookup"><span data-stu-id="0c4b8-147">Request</span></span>
+<span data-ttu-id="0c4b8-148">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="0c4b8-148">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManagementIntentId}/settings/{deviceManagementSettingInstanceId}
 Content-type: application/json
@@ -80,8 +80,8 @@ Content-length: 173
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="a3bd8-149">応答</span><span class="sxs-lookup"><span data-stu-id="a3bd8-149">Response</span></span>
-<span data-ttu-id="a3bd8-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="a3bd8-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="0c4b8-149">応答</span><span class="sxs-lookup"><span data-stu-id="0c4b8-149">Response</span></span>
+<span data-ttu-id="0c4b8-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="0c4b8-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -95,7 +95,6 @@ Content-Length: 222
   "value": 5
 }
 ```
-
 
 
 
