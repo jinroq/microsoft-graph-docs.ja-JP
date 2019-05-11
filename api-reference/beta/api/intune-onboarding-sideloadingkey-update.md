@@ -1,23 +1,23 @@
 ---
-title: sideLoadingKey の更新
-description: sideLoadingKey オブジェクトのプロパティを更新します。
-author: tfitzmac
+title: SideLoadingKey の更新
+description: SideLoadingKey オブジェクトのプロパティを更新します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6eaab5e4fd2b12ce65c87304a47490447e6f3664
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 33e0e04a2caaeca4f4df111aa7ecca35e1d95e52
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32527988"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899824"
 ---
-# <a name="update-sideloadingkey"></a>sideLoadingKey の更新
+# <a name="update-sideloadingkey"></a>SideLoadingKey の更新
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)オブジェクトのプロパティを更新します。
+[SideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -50,11 +50,11 @@ PATCH /deviceAppManagement/sideLoadingKeys/{sideLoadingKeyId}
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|サイドローディングキーの一意 Id。|
+|id|文字列|サイドローディングキーの一意 Id。|
 |value|文字列|サイドローディングキー値は、5 x 5 の値で、hiphens で区切られています。|
 |displayName|String|ITPro 管理者に表示されるサイドローディングキー名。|
 |description|String|ITPro 管理者に表示されるサイドローディングキーの説明。|
-|totalactivation|Int32|ITPro 管理者に表示されるサイドローディングキーの合計です。|
+|totalActivation|Int32|ITPro 管理者に表示されるサイドローディングキーの合計です。|
 |lastUpdatedDateTime|String|サイドローディングキー最終更新日が ITPro の管理者に表示されます。|
 
 
@@ -98,7 +98,6 @@ Content-Length: 295
   "lastUpdatedDateTime": "Last Updated Date Time value"
 }
 ```
-
 
 
 

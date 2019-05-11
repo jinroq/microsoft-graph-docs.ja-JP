@@ -1,21 +1,21 @@
 ---
-title: enterpriseCodeSigningCertificate を作成する
+title: EnterpriseCodeSigningCertificate を作成する
 description: 新しい enterpriseCodeSigningCertificate オブジェクトを作成します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6cd85a33da06395314fc30836ba6f28de00c98ba
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6a612a68d44657e301fb773971de52a051d209b1
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32496528"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33936960"
 ---
-# <a name="create-enterprisecodesigningcertificate"></a>enterpriseCodeSigningCertificate を作成する
+# <a name="create-enterprisecodesigningcertificate"></a>EnterpriseCodeSigningCertificate を作成する
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい[enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md)オブジェクトを作成します。
 
@@ -50,15 +50,15 @@ POST /deviceAppManagement/enterpriseCodeSigningCertificates
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|id|文字列|エンティティのキー。|
 |content|Binary|未加工のデータ形式の Windows エンタープライズコード署名証明書。|
-|status|[certificatestatus](../resources/intune-apps-certificatestatus.md)|証明書の状態がプロビジョニングされているか、プロビジョニングされていません。 可能な値は、`notProvisioned`、`provisioned` です。|
+|status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|証明書の状態がプロビジョニングされているか、プロビジョニングされていません。 可能な値は、`notProvisioned`、`provisioned` です。|
 |subjectName|文字列型 (String)|証明書のサブジェクト名。|
 |subject|String|証明書のサブジェクトの値。|
 |issuerName|String|証明書の発行者名。|
 |会社|String|証明書の発行者の値。|
 |expirationDateTime|DateTimeOffset|証明書の有効期限。|
-|uploaddatetime|DateTimeOffset|CodeSigning Cert がアップロードされたときの日付時刻。|
+|uploadDateTime|DateTimeOffset|CodeSigning Cert がアップロードされたときの日付時刻。|
 
 
 
@@ -107,7 +107,6 @@ Content-Length: 439
   "uploadDateTime": "2016-12-31T23:58:46.5747426-08:00"
 }
 ```
-
 
 
 

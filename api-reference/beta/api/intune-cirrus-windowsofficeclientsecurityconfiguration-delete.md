@@ -1,21 +1,21 @@
 ---
-title: windowsOfficeClientSecurityConfiguration の削除
+title: WindowsOfficeClientSecurityConfiguration の削除
 description: セキュリティポリシー windowsOfficeClientSecurityConfiguration を削除します。
 localization_priority: Normal
-author: tfitzmac
+author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: e236c56dff58cb0efefe96c58a97f284394afdd6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 400b8b9e1c8d83983f08eab2013a72be3178c73f
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32482992"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33933964"
 ---
-# <a name="delete-windowsofficeclientsecurityconfiguration"></a>windowsOfficeClientSecurityConfiguration の削除
+# <a name="delete-windowsofficeclientsecurityconfiguration"></a>WindowsOfficeClientSecurityConfiguration の削除
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 セキュリティポリシー [windowsOfficeClientSecurityConfiguration](../resources/intune-cirrus-windowsofficeclientsecurityconfiguration.md)を削除します。
 

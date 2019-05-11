@@ -1,23 +1,23 @@
 ---
-title: iosVppAppAssignedUserLicense を取得する
-description: iosVppAppAssignedUserLicense オブジェクトのプロパティとリレーションシップを読み取ります。
-author: tfitzmac
+title: IosVppAppAssignedUserLicense を取得する
+description: IosVppAppAssignedUserLicense オブジェクトのプロパティとリレーションシップを読み取ります。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 41df66038090bd6872d7384666eb9465869db314
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 25dd4ead9f9c27274679557524402627bc00c482
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32495478"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935994"
 ---
-# <a name="get-iosvppappassigneduserlicense"></a>iosVppAppAssignedUserLicense を取得する
+# <a name="get-iosvppappassigneduserlicense"></a>IosVppAppAssignedUserLicense を取得する
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[iosVppAppAssignedUserLicense](../resources/intune-apps-iosvppappassigneduserlicense.md)オブジェクトのプロパティとリレーションシップを読み取ります。
+[IosVppAppAssignedUserLicense](../resources/intune-apps-iosvppappassigneduserlicense.md)オブジェクトのプロパティとリレーションシップを読み取ります。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -78,7 +78,6 @@ Content-Length: 318
   }
 }
 ```
-
 
 
 

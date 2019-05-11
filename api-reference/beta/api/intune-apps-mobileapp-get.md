@@ -1,21 +1,21 @@
 ---
 title: Get mobileApp
 description: mobileApp オブジェクトのプロパティとリレーションシップを読み取ります。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2d6bd6a292e38133ca61cf8fd856e5c347629ad4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d050d1e828aa02f6dff2beb7ab74c2cc556f2ea8
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32490564"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935385"
 ---
 # <a name="get-mobileapp"></a>Get mobileApp
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [mobileApp](../resources/intune-apps-mobileapp.md) オブジェクトのプロパティとリレーションシップを読み取ります。
 
@@ -99,7 +99,6 @@ Content-Length: 949
   }
 }
 ```
-
 
 
 

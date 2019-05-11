@@ -1,23 +1,23 @@
 ---
-title: embeddedSIMDeviceState の更新
-description: embeddedSIMDeviceState オブジェクトのプロパティを更新します。
-author: tfitzmac
+title: EmbeddedSIMDeviceState の更新
+description: EmbeddedSIMDeviceState オブジェクトのプロパティを更新します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1fbf7679467e228531bb7bc57eb9e11f5a2c9eff
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4a3fd57d1f6890caffca27fc3208a2e3a7e51832
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32532388"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33905512"
 ---
-# <a name="update-embeddedsimdevicestate"></a>embeddedSIMDeviceState の更新
+# <a name="update-embeddedsimdevicestate"></a>EmbeddedSIMDeviceState の更新
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md)オブジェクトのプロパティを更新します。
+[EmbeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -58,7 +58,7 @@ PATCH /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCod
 |deviceName|String|サブスクリプションが準備されたデバイス名 (デスクトップの例: JOE)|
 |userName|String|サブスクリプションが準備されたユーザー名 (joe@contoso.com など)|
 |state|[embeddedSIMDeviceStateValue](../resources/intune-esim-embeddedsimdevicestatevalue.md)|デバイスに適用されるプロファイル操作の状態。 可能な値は、`notEvaluated`、`failed`、`installing`、`installed`、`deleting`、`error`、`deleted`、`removedByUser` です。|
-|statedetails|String|プロビジョニング状態の文字列の説明。|
+|stateDetails|String|プロビジョニング状態の文字列の説明。|
 
 
 
@@ -105,7 +105,6 @@ Content-Length: 529
   "stateDetails": "State Details value"
 }
 ```
-
 
 
 

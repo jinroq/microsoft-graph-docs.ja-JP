@@ -1,21 +1,21 @@
 ---
 title: iosVppEBook リソースの種類
 description: iOS Vpp eBook のプロパティを含むクラスです。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e792e79520c1ad02c90d2fcd54da995ea81ec6e3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9aa33133cdf517199aa9a5b135a5b904be77c16b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32558399"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949305"
 ---
 # <a name="iosvppebook-resource-type"></a>iosVppEBook リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 iOS Vpp eBook のプロパティを含むクラスです。
 
@@ -32,9 +32,9 @@ iOS Vpp eBook のプロパティを含むクラスです。
 |[iosVppEBook の更新](../api/intune-books-iosvppebook-update.md)|[iosVppEBook](../resources/intune-books-iosvppebook.md)|[iosVppEBook](../resources/intune-books-iosvppebook.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
+|id|文字列|エンティティのキー。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
 |displayName|String|電子ブックの名前。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
 |description|文字列型 (String)|説明。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
 |publisher|String|発行元。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
@@ -54,10 +54,10 @@ iOS Vpp eBook のプロパティを含むクラスです。
 |usedLicenseCount|Int32|使用されているライセンスの数。|
 |roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 |リレーションシップ|型|説明|
 |:---|:---|:---|
-|categories|[managedebookcategory](../resources/intune-books-managedebookcategory.md)コレクション|この電子ブックのカテゴリのリスト。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
+|categories|[Managedebookcategory](../resources/intune-books-managedebookcategory.md)コレクション|この電子ブックのカテゴリのリスト。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
 |assignments|[managedEBookAssignment](../resources/intune-books-managedebookassignment.md) コレクション|この電子ブックの割り当てのリストです。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
 |installSummary|[eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md)|モバイル アプリ インストール概要です。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
 |deviceStates|[deviceInstallState](../resources/intune-books-deviceinstallstate.md) コレクション|この電子ブックのインストール状態のリストです。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
@@ -103,7 +103,6 @@ iOS Vpp eBook のプロパティを含むクラスです。
   ]
 }
 ```
-
 
 
 

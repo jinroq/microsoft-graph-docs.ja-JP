@@ -1,23 +1,23 @@
 ---
-title: mobileAppDependency を取得する
-description: mobileAppDependency オブジェクトのプロパティとリレーションシップを読み取ります。
-author: tfitzmac
+title: MobileAppDependency を取得する
+description: MobileAppDependency オブジェクトのプロパティとリレーションシップを読み取ります。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: add44c591da6b0a970eedd800822191ef215ef6d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1ed575e48a2fb8d175d7d459c84a7fe9c6332c4f
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32489017"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935151"
 ---
-# <a name="get-mobileappdependency"></a>mobileAppDependency を取得する
+# <a name="get-mobileappdependency"></a>MobileAppDependency を取得する
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[mobileAppDependency](../resources/intune-apps-mobileappdependency.md)オブジェクトのプロパティとリレーションシップを読み取ります。
+[MobileAppDependency](../resources/intune-apps-mobileappdependency.md)オブジェクトのプロパティとリレーションシップを読み取ります。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -78,7 +78,6 @@ Content-Length: 291
   }
 }
 ```
-
 
 
 

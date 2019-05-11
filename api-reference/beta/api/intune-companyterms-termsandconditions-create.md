@@ -1,21 +1,21 @@
 ---
 title: termsAndConditions の作成
 description: 新しい termsAndConditions オブジェクトを作成します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ff4587ba1cb0ffd454c7ec3ee59751855a88545f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bad30650679f54e245e8f6bcd736e17bf15cce8a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32482754"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33933929"
 ---
 # <a name="create-termsandconditions"></a>termsAndConditions の作成
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) オブジェクトを作成します。
 
@@ -50,12 +50,12 @@ POST /deviceManagement/termsAndConditions
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|T&C ポリシーの一意識別子。|
+|id|文字列|T&C ポリシーの一意識別子。|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。|
 |modifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。|
-|displayName|String|T&C ポリシー用に管理者が提供した名前。 |
-|説明|String|管理者が提供した T&C ポリシーの説明。|
+|displayName|文字列|T&C ポリシー用に管理者が提供した名前。 |
+|description|String|管理者が提供した T&C ポリシーの説明。|
 |title|String|管理者が提供した契約条件のタイトル。 ユーザーが T&C ポリシーを承諾する際のプロンプトに表示されます。|
 |bodyText|String|管理者が提供する契約条件の本文で、通常は条件そのものです。 ユーザーが T&C ポリシーを承諾する際のプロンプトに表示されます。|
 |acceptanceStatement|String|使用条件に関する、管理者指定の説明内容です。通常は、T&C ポリシーに定められた使用条件を受け入れることの意味を記載します。 ユーザーが T&C ポリシーを承諾する際のプロンプトに表示されます。|
@@ -107,7 +107,6 @@ Content-Length: 505
   "version": 7
 }
 ```
-
 
 
 

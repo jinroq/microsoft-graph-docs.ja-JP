@@ -1,23 +1,23 @@
 ---
-title: macOsVppApp の削除
-description: macOsVppApp を削除します。
-author: tfitzmac
+title: MacOsVppApp の削除
+description: MacOsVppApp を削除します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c869123973237676c98909255bbaa894fdcd2f12
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6091d1defa203e5222e6ef435c8bf1faa8508d16
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32495485"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935861"
 ---
-# <a name="delete-macosvppapp"></a>macOsVppApp の削除
+# <a name="delete-macosvppapp"></a>MacOsVppApp の削除
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[macOsVppApp](../resources/intune-apps-macosvppapp.md)を削除します。
+[MacOsVppApp](../resources/intune-apps-macosvppapp.md)を削除します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -64,7 +64,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

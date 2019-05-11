@@ -1,23 +1,23 @@
 ---
 title: リスト windows10EasEmailProfileConfigurations
-description: windows10EasEmailProfileConfiguration オブジェクトのプロパティとリレーションシップをリストします。
-author: tfitzmac
+description: Windows10EasEmailProfileConfiguration オブジェクトのプロパティとリレーションシップをリストします。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 18661c5268e8a218a6c224227cf3902e082b69eb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e63bf81736a1a774560cfdd8580f1515b8ae790d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32517100"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33921990"
 ---
 # <a name="list-windows10easemailprofileconfigurations"></a>リスト windows10EasEmailProfileConfigurations
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[windows10EasEmailProfileConfiguration](../resources/intune-deviceconfig-windows10easemailprofileconfiguration.md)オブジェクトのプロパティとリレーションシップをリストします。
+[Windows10EasEmailProfileConfiguration](../resources/intune-deviceconfig-windows10easemailprofileconfiguration.md)オブジェクトのプロパティとリレーションシップをリストします。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -96,7 +96,6 @@ Content-Length: 1054
   ]
 }
 ```
-
 
 
 

@@ -1,23 +1,23 @@
 ---
-title: androidEnterpriseWiFiConfiguration を取得する
-description: androidEnterpriseWiFiConfiguration オブジェクトのプロパティとリレーションシップを読み取ります。
-author: tfitzmac
+title: AndroidEnterpriseWiFiConfiguration を取得する
+description: AndroidEnterpriseWiFiConfiguration オブジェクトのプロパティとリレーションシップを読み取ります。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eba7572805ba93d47ef01274fe6c15be1577d56c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2bc3eed6a1bcc6207b90936246c9ce04bbc89ba8
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32479695"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33933019"
 ---
-# <a name="get-androidenterprisewificonfiguration"></a>androidEnterpriseWiFiConfiguration を取得する
+# <a name="get-androidenterprisewificonfiguration"></a>AndroidEnterpriseWiFiConfiguration を取得する
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[androidEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androidenterprisewificonfiguration.md)オブジェクトのプロパティとリレーションシップを読み取ります。
+[AndroidEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androidenterprisewificonfiguration.md)オブジェクトのプロパティとリレーションシップを読み取ります。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 998
+Content-Length: 1165
 
 {
   "value": {
@@ -91,11 +91,13 @@ Content-Length: 998
     "authenticationMethod": "usernameAndPassword",
     "innerAuthenticationProtocolForEapTtls": "challengeHandshakeAuthenticationProtocol",
     "innerAuthenticationProtocolForPeap": "microsoftChapVersionTwo",
-    "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
+    "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value",
+    "usernameFormatString": "Username Format String value",
+    "passwordFormatString": "Password Format String value",
+    "preSharedKey": "Pre Shared Key value"
   }
 }
 ```
-
 
 
 

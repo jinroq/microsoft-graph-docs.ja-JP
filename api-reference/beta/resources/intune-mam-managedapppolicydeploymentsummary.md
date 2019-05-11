@@ -1,21 +1,21 @@
 ---
 title: managedAppPolicyDeploymentSummary リソースの種類
 description: ManagedAppEntity は、アプリ管理ワークフロー下にある他のすべてのエンティティ タイプの基本型です。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8ad282723cf32602f626b92d65d6e023c4995596
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0ecd0825206aa2d6e1436a23c1c2a5dda7bdc04e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573908"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940730"
 ---
 # <a name="managedapppolicydeploymentsummary-resource-type"></a>managedAppPolicyDeploymentSummary リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 ManagedAppEntity は、アプリ管理ワークフロー下にある他のすべてのエンティティの種類の基本型です。
 
@@ -32,7 +32,7 @@ ManagedAppEntity は、アプリ管理ワークフロー下にある他のすべ
 |configurationDeployedUserCount|Int32|まだ文書化されていません|
 |lastRefreshTime|DateTimeOffset|まだ文書化されていません|
 |configurationDeploymentSummaryPerApp|[managedAppPolicyDeploymentSummaryPerApp](../resources/intune-mam-managedapppolicydeploymentsummaryperapp.md) コレクション|まだ文書化されていません|
-|id|String|エンティティのキー。|
+|id|文字列|エンティティのキー。|
 |version|String|エンティティのバージョン。|
 
 ## <a name="relationships"></a>関係
@@ -66,7 +66,6 @@ ManagedAppEntity は、アプリ管理ワークフロー下にある他のすべ
   "version": "String"
 }
 ```
-
 
 
 

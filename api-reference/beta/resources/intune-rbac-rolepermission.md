@@ -1,23 +1,23 @@
 ---
 title: rolePermission リソースの種類
-description: 各役割に対して許可されるアクセス許可と許可されないアクセス許可を決定する resourceactions のセットが含まれています。
-author: tfitzmac
+description: 各役割に対して許可されるアクセス許可と許可されないアクセス許可を決定する ResourceActions のセットが含まれています。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e9bbd4782022faebcf56b8bf582e233fd5ba54f6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7c5ef360393e99b8c8a152596a2285cddd49d7e0
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573040"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33939029"
 ---
 # <a name="rolepermission-resource-type"></a>rolePermission リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-各役割に対して許可されるアクセス許可と許可されないアクセス許可を決定する resourceactions のセットが含まれています。
+各役割に対して許可されるアクセス許可と許可されないアクセス許可を決定する ResourceActions のセットが含まれています。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
@@ -54,7 +54,6 @@ ms.locfileid: "32573040"
   ]
 }
 ```
-
 
 
 

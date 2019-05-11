@@ -1,21 +1,21 @@
 ---
 title: getTopMobileApps 関数
 description: まだ文書化されていません
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 69874b6ccf94a78145c03279a5e6d13e0c45b995
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b2cea75b2d101a0ab376440b6ccd4ba2888d2874
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32490347"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935357"
 ---
 # <a name="gettopmobileapps-function"></a>getTopMobileApps 関数
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 まだ文書化されていません
 
@@ -104,7 +104,6 @@ Content-Length: 1013
   ]
 }
 ```
-
 
 
 

@@ -1,19 +1,19 @@
 ---
-title: microsoft Intune を使用して会社のアプリデータを保護する方法-microsoft Graph API
+title: Microsoft Intune を使用して会社のアプリデータを保護する方法-Microsoft Graph API
 description: テナント組織のアプリとそのポリシーを管理する Intune エンドポイント (REST) の Microsoft Graph API を示します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 360b8e9bdda139246a5418898f1db3962fefaea4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d0e38a8129e2cfcb60895be762d5bf3d65d1b6f9
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32552414"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950530"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Microsoft Intune で会社のアプリ データを保護する方法
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでは、これらの API の使用はサポートされていません。
 
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing)を持っている必要があります。
 
@@ -112,6 +112,7 @@ Intune のアプリ保護ポリシーを使用して、会社のデータを保�
 - [モバイル アプリ コンテンツ ファイルのアップロード状態](intune-apps-mobileappcontentfileuploadstate.md)
 - [モバイルアプリの依存関係の種類](intune-apps-mobileappdependecytype.md)
 - [モバイルアプリの依存関係](intune-apps-mobileappdependency.md)
+- [モバイルアプリの依存関係の種類](intune-apps-mobileappdependencytype.md)
 - [モバイル アプリ インストール状態](intune-apps-mobileappinstallstatus.md)
 - [モバイル アプリ インストール概要](intune-apps-mobileappinstallsummary.md)
 - [モバイル アプリのプロビジョニング構成グループの割り当て](intune-apps-mobileappprovisioningconfiggroupassignment.md)

@@ -1,21 +1,21 @@
 ---
 title: updateRelationships アクション
 description: まだ文書化されていません
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 35e0be0efc1496aa92534a5bd36bab6eacafd143
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 53035c756e346a8df68e81cd37877e6d4255348e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32489906"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935343"
 ---
 # <a name="updaterelationships-action"></a>updateRelationships アクション
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 まだ文書化されていません
 
@@ -86,7 +86,6 @@ Content-length: 256
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

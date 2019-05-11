@@ -1,23 +1,23 @@
 ---
-title: androidforwork trustedrootcertificate の削除
-description: androidforwork trustedrootcertificate を削除します。
-author: tfitzmac
+title: Androidforwork Trustedrootcertificate の削除
+description: Androidforwork Trustedrootcertificate を削除します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c7ef360949c7695224182f50314f1eb6b709be74
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9ff47642106aab83079cfa0a343efab9b1846e3b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32478106"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33932872"
 ---
-# <a name="delete-androidforworktrustedrootcertificate"></a>androidforwork trustedrootcertificate の削除
+# <a name="delete-androidforworktrustedrootcertificate"></a>Androidforwork Trustedrootcertificate の削除
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[androidforwork trustedrootcertificate](../resources/intune-deviceconfig-androidforworktrustedrootcertificate.md)を削除します。
+[Androidforwork Trustedrootcertificate](../resources/intune-deviceconfig-androidforworktrustedrootcertificate.md)を削除します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -63,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

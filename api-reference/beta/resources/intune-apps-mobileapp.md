@@ -1,21 +1,21 @@
 ---
 title: mobileApp リソースの種類
 description: Intune モバイル アプリの基本プロパティを含む抽象クラスです。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: abc2a8c0f905d69b613ef12bca308d1d0f72d69c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d4bc14b517068ba8427389d09dace8945ebbd1b0
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32552304"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950033"
 ---
 # <a name="mobileapp-resource-type"></a>mobileApp リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 Intune モバイル アプリの基本プロパティを含む抽象クラスです。
 
@@ -28,13 +28,13 @@ Intune モバイル アプリの基本プロパティを含む抽象クラスで
 |[getMobileAppCount 関数](../api/intune-apps-mobileapp-getmobileappcount.md)|Int64|まだ文書化されていません|
 |[getTopMobileApps 関数](../api/intune-apps-mobileapp-gettopmobileapps.md)|[mobileApp](../resources/intune-apps-mobileapp.md) コレクション|まだ文書化されていません|
 |[updateRelationships アクション](../api/intune-apps-mobileapp-updaterelationships.md)|なし|まだ文書化されていません|
-|[getの appstates 関数](../api/intune-apps-mobileapp-getrelatedappstates.md)|[mobileAppRelationshipState](../resources/intune-apps-mobileapprelationshipstate.md)コレクション|まだ文書化されていません|
+|[Getの Appstates 関数](../api/intune-apps-mobileapp-getrelatedappstates.md)|[mobileAppRelationshipState](../resources/intune-apps-mobileapprelationshipstate.md)コレクション|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|文字列型 (String)|エンティティのキー。|
-|displayName|String|管理者が提供またはインポートしたアプリのタイトルです。|
+|id|文字列|エンティティのキー。|
+|displayName|文字列|管理者が提供またはインポートしたアプリのタイトルです。|
 |description|String|アプリの説明。|
 |publisher|String|アプリの発行元。|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|アプリの詳細に表示され、アイコンのアップロードに使用される大きいアイコン。|
@@ -50,16 +50,16 @@ Intune モバイル アプリの基本プロパティを含む抽象クラスで
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 可能な値は、`notPublished`、`processing`、`published` です。|
 |isAssigned|Boolean|アプリが少なくとも1つのグループに割り当てられているかどうかを示す値。|
 |roleScopeTagIds|String collection|このモバイルアプリの範囲タグ id のリスト。|
-|dependentappcount|Int32|子アプリが持つ依存関係の合計数。|
+|dependentAppCount|Int32|子アプリが持つ依存関係の合計数。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |categories|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) コレクション|このアプリのカテゴリのリストです。|
 |assignments|[mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) コレクション|このモバイル アプリのグループ割り当てのリスト。|
 |installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|モバイル アプリ インストール概要です。|
 |deviceStatuses|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)コレクション|このモバイルアプリのインストール状態のリスト。|
-|userStatuses|[userappinstallstatus](../resources/intune-apps-userappinstallstatus.md)コレクション|このモバイルアプリのインストール状態のリスト。|
+|userStatuses|[Userappinstallstatus](../resources/intune-apps-userappinstallstatus.md)コレクション|このモバイルアプリのインストール状態のリスト。|
 |関連性|[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)コレクション|このモバイルアプリのリレーションシップのリスト。|
 
 ## <a name="json-representation"></a>JSON 表記
@@ -99,7 +99,6 @@ Intune モバイル アプリの基本プロパティを含む抽象クラスで
   "dependentAppCount": 1024
 }
 ```
-
 
 
 

@@ -1,23 +1,23 @@
 ---
 title: リスト androidForWorkImportedPFXCertificateProfiles
-description: androidForWorkImportedPFXCertificateProfile オブジェクトのプロパティとリレーションシップをリストします。
-author: tfitzmac
+description: AndroidForWorkImportedPFXCertificateProfile オブジェクトのプロパティとリレーションシップをリストします。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 805927c25e4b9741aa742f75d0e86743e213d1de
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d10f2888598df65ddcf0a8114a13adead1728ae8
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32478652"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33933453"
 ---
 # <a name="list-androidforworkimportedpfxcertificateprofiles"></a>リスト androidForWorkImportedPFXCertificateProfiles
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[androidForWorkImportedPFXCertificateProfile](../resources/intune-deviceconfig-androidforworkimportedpfxcertificateprofile.md)オブジェクトのプロパティとリレーションシップをリストします。
+[AndroidForWorkImportedPFXCertificateProfile](../resources/intune-deviceconfig-androidforworkimportedpfxcertificateprofile.md)オブジェクトのプロパティとリレーションシップをリストします。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -96,7 +96,6 @@ Content-Length: 1027
   ]
 }
 ```
-
 
 
 

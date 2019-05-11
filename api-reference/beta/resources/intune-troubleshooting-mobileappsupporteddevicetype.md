@@ -1,30 +1,30 @@
 ---
 title: mobileAppSupportedDeviceType リソースの種類
 description: デバイスのプロパティ
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ba2998e1312d24fe6f86420cea883e6039f813a4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 001e80621709bdb2dcdb9b5cf8e17753ee3458b3
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570660"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33939118"
 ---
 # <a name="mobileappsupporteddevicetype-resource-type"></a>mobileAppSupportedDeviceType リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 デバイスのプロパティ
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |type|[deviceType](../resources/intune-shared-devicetype.md)|デバイスの種類。 可能な値: `desktop`、 `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android`、、、、、、、、、、、、 `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise`, `blackberry`, `palm`, `unknown`.|
 |minimumOperatingSystemVersion|String|最小 OS バージョン|
-|最大化 umoper/systemversion|String|最大 OS バージョン|
+|最大化 Umoper/Systemversion|String|最大 OS バージョン|
 
 ## <a name="relationships"></a>関係
 なし
@@ -44,6 +44,7 @@ ms.locfileid: "32570660"
   "maximumOperatingSystemVersion": "String"
 }
 ```
+
 
 
 

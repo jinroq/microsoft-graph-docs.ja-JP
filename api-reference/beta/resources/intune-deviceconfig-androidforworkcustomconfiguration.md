@@ -1,21 +1,21 @@
 ---
-title: androidforwork customconfiguration リソースの種類
+title: Androidforwork Customconfiguration リソースの種類
 description: Android For Work カスタム構成
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 229d098f5443dfcc5ccdc5e4ad161404e0d7f169
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4ca4f7ead11c39a7c057687a905377dd9109113b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556096"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949060"
 ---
-# <a name="androidforworkcustomconfiguration-resource-type"></a>androidforwork customconfiguration リソースの種類
+# <a name="androidforworkcustomconfiguration-resource-type"></a>Androidforwork Customconfiguration リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 Android For Work カスタム構成
 
@@ -25,26 +25,26 @@ Android For Work カスタム構成
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[リスト androidforwork custom構成](../api/intune-deviceconfig-androidforworkcustomconfiguration-list.md)|[androidforwork customconfiguration](../resources/intune-deviceconfig-androidforworkcustomconfiguration.md)コレクション|[androidforwork customconfiguration](../resources/intune-deviceconfig-androidforworkcustomconfiguration.md)オブジェクトのプロパティとリレーションシップをリストします。|
-|[androidforwork customconfiguration の取得](../api/intune-deviceconfig-androidforworkcustomconfiguration-get.md)|[androidforwork customconfiguration](../resources/intune-deviceconfig-androidforworkcustomconfiguration.md)|[androidforwork customconfiguration](../resources/intune-deviceconfig-androidforworkcustomconfiguration.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[androidforwork customconfiguration の作成](../api/intune-deviceconfig-androidforworkcustomconfiguration-create.md)|[androidforwork customconfiguration](../resources/intune-deviceconfig-androidforworkcustomconfiguration.md)|新しい[androidforwork customconfiguration](../resources/intune-deviceconfig-androidforworkcustomconfiguration.md)オブジェクトを作成します。|
-|[androidforwork customconfiguration の削除](../api/intune-deviceconfig-androidforworkcustomconfiguration-delete.md)|なし|[androidforwork customconfiguration](../resources/intune-deviceconfig-androidforworkcustomconfiguration.md)を削除します。|
-|[androidforwork customconfiguration の更新](../api/intune-deviceconfig-androidforworkcustomconfiguration-update.md)|[androidforwork customconfiguration](../resources/intune-deviceconfig-androidforworkcustomconfiguration.md)|[androidforwork customconfiguration](../resources/intune-deviceconfig-androidforworkcustomconfiguration.md)オブジェクトのプロパティを更新します。|
+|[リスト Androidforwork Custom構成](../api/intune-deviceconfig-androidforworkcustomconfiguration-list.md)|[Androidforwork Customconfiguration](../resources/intune-deviceconfig-androidforworkcustomconfiguration.md)コレクション|[Androidforwork Customconfiguration](../resources/intune-deviceconfig-androidforworkcustomconfiguration.md)オブジェクトのプロパティとリレーションシップをリストします。|
+|[Androidforwork Customconfiguration の取得](../api/intune-deviceconfig-androidforworkcustomconfiguration-get.md)|[Androidforwork Customconfiguration](../resources/intune-deviceconfig-androidforworkcustomconfiguration.md)|[Androidforwork Customconfiguration](../resources/intune-deviceconfig-androidforworkcustomconfiguration.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[Androidforwork Customconfiguration の作成](../api/intune-deviceconfig-androidforworkcustomconfiguration-create.md)|[Androidforwork Customconfiguration](../resources/intune-deviceconfig-androidforworkcustomconfiguration.md)|新しい[Androidforwork Customconfiguration](../resources/intune-deviceconfig-androidforworkcustomconfiguration.md)オブジェクトを作成します。|
+|[Androidforwork Customconfiguration の削除](../api/intune-deviceconfig-androidforworkcustomconfiguration-delete.md)|None|[Androidforwork Customconfiguration](../resources/intune-deviceconfig-androidforworkcustomconfiguration.md)を削除します。|
+|[Androidforwork Customconfiguration の更新](../api/intune-deviceconfig-androidforworkcustomconfiguration-update.md)|[Androidforwork Customconfiguration](../resources/intune-deviceconfig-androidforworkcustomconfiguration.md)|[Androidforwork Customconfiguration](../resources/intune-deviceconfig-androidforworkcustomconfiguration.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|文字列型 (String)|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|id|文字列|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|supportsScopeTags|ブール値|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|supportsScopeTags|Boolean|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |description|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|管理者が指定した、デバイス構成の名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |omaSettings|[omaSetting](../resources/intune-deviceconfig-omasetting.md) コレクション|OMA 設定。 このコレクションには、最大で 500 個の要素を含めることができます。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)コレクション|デバイスの構成プロファイルのグループ割り当てのリストです。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
@@ -87,7 +87,6 @@ Android For Work カスタム構成
   ]
 }
 ```
-
 
 
 
