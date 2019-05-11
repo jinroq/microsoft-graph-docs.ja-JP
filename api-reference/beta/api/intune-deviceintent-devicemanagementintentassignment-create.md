@@ -1,34 +1,34 @@
 ---
-title: devicemanagementintentassignment の作成
-description: 新しい devicemanagementintentassignment オブジェクトを作成します。
-author: tfitzmac
+title: DeviceManagementIntentAssignment の作成
+description: 新しい deviceManagementIntentAssignment オブジェクトを作成します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 91a23ab1d0c715f3b3cb28e4f6c84c1e3168270a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0ea992271bd065ad64423dc4756e5efba430b78c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32508380"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33916190"
 ---
-# <a name="create-devicemanagementintentassignment"></a><span data-ttu-id="2e46b-103">devicemanagementintentassignment の作成</span><span class="sxs-lookup"><span data-stu-id="2e46b-103">Create deviceManagementIntentAssignment</span></span>
+# <a name="create-devicemanagementintentassignment"></a><span data-ttu-id="4e561-103">DeviceManagementIntentAssignment の作成</span><span class="sxs-lookup"><span data-stu-id="4e561-103">Create deviceManagementIntentAssignment</span></span>
 
-> <span data-ttu-id="2e46b-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="2e46b-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="4e561-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="4e561-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="2e46b-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="2e46b-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="4e561-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="4e561-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="2e46b-106">新しい[devicemanagementintentassignment](../resources/intune-deviceintent-devicemanagementintentassignment.md)オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="2e46b-106">Create a new [deviceManagementIntentAssignment](../resources/intune-deviceintent-devicemanagementintentassignment.md) object.</span></span>
+<span data-ttu-id="4e561-106">新しい[Devicemanagementintentassignment](../resources/intune-deviceintent-devicemanagementintentassignment.md)オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="4e561-106">Create a new [deviceManagementIntentAssignment](../resources/intune-deviceintent-devicemanagementintentassignment.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="2e46b-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="2e46b-107">Prerequisites</span></span>
-<span data-ttu-id="2e46b-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2e46b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="4e561-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="4e561-107">Prerequisites</span></span>
+<span data-ttu-id="4e561-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4e561-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2e46b-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="2e46b-110">Permission type</span></span>|<span data-ttu-id="2e46b-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="2e46b-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="4e561-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="4e561-110">Permission type</span></span>|<span data-ttu-id="4e561-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="4e561-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="2e46b-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="2e46b-112">Delegated (work or school account)</span></span>|<span data-ttu-id="2e46b-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2e46b-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="2e46b-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="2e46b-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="2e46b-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="2e46b-115">Not supported.</span></span>|
-|<span data-ttu-id="2e46b-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="2e46b-116">Application</span></span>|<span data-ttu-id="2e46b-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="2e46b-117">Not supported.</span></span>|
+|<span data-ttu-id="4e561-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="4e561-112">Delegated (work or school account)</span></span>|<span data-ttu-id="4e561-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4e561-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="4e561-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="4e561-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="4e561-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="4e561-115">Not supported.</span></span>|
+|<span data-ttu-id="4e561-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="4e561-116">Application</span></span>|<span data-ttu-id="4e561-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="4e561-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="2e46b-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="2e46b-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4e561-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="4e561-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,31 +37,31 @@ ms.locfileid: "32508380"
 POST /deviceManagement/intents/{deviceManagementIntentId}/assignments
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="2e46b-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="2e46b-119">Request headers</span></span>
-|<span data-ttu-id="2e46b-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="2e46b-120">Header</span></span>|<span data-ttu-id="2e46b-121">値</span><span class="sxs-lookup"><span data-stu-id="2e46b-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="4e561-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="4e561-119">Request headers</span></span>
+|<span data-ttu-id="4e561-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="4e561-120">Header</span></span>|<span data-ttu-id="4e561-121">値</span><span class="sxs-lookup"><span data-stu-id="4e561-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="2e46b-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="2e46b-122">Authorization</span></span>|<span data-ttu-id="2e46b-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="2e46b-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="2e46b-124">承諾</span><span class="sxs-lookup"><span data-stu-id="2e46b-124">Accept</span></span>|<span data-ttu-id="2e46b-125">application/json</span><span class="sxs-lookup"><span data-stu-id="2e46b-125">application/json</span></span>|
+|<span data-ttu-id="4e561-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="4e561-122">Authorization</span></span>|<span data-ttu-id="4e561-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="4e561-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="4e561-124">承諾</span><span class="sxs-lookup"><span data-stu-id="4e561-124">Accept</span></span>|<span data-ttu-id="4e561-125">application/json</span><span class="sxs-lookup"><span data-stu-id="4e561-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="2e46b-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="2e46b-126">Request body</span></span>
-<span data-ttu-id="2e46b-127">要求本文で、devicemanagementintentassignment オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="2e46b-127">In the request body, supply a JSON representation for the deviceManagementIntentAssignment object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="4e561-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="4e561-126">Request body</span></span>
+<span data-ttu-id="4e561-127">要求本文で、deviceManagementIntentAssignment オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="4e561-127">In the request body, supply a JSON representation for the deviceManagementIntentAssignment object.</span></span>
 
-<span data-ttu-id="2e46b-128">次の表に、devicemanagementintentassignment の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="2e46b-128">The following table shows the properties that are required when you create the deviceManagementIntentAssignment.</span></span>
+<span data-ttu-id="4e561-128">次の表に、deviceManagementIntentAssignment の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="4e561-128">The following table shows the properties that are required when you create the deviceManagementIntentAssignment.</span></span>
 
-|<span data-ttu-id="2e46b-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="2e46b-129">Property</span></span>|<span data-ttu-id="2e46b-130">型</span><span class="sxs-lookup"><span data-stu-id="2e46b-130">Type</span></span>|<span data-ttu-id="2e46b-131">説明</span><span class="sxs-lookup"><span data-stu-id="2e46b-131">Description</span></span>|
+|<span data-ttu-id="4e561-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="4e561-129">Property</span></span>|<span data-ttu-id="4e561-130">型</span><span class="sxs-lookup"><span data-stu-id="4e561-130">Type</span></span>|<span data-ttu-id="4e561-131">説明</span><span class="sxs-lookup"><span data-stu-id="4e561-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="2e46b-132">id</span><span class="sxs-lookup"><span data-stu-id="2e46b-132">id</span></span>|<span data-ttu-id="2e46b-133">String</span><span class="sxs-lookup"><span data-stu-id="2e46b-133">String</span></span>|<span data-ttu-id="2e46b-134">割り当て ID</span><span class="sxs-lookup"><span data-stu-id="2e46b-134">The assignment ID</span></span>|
-|<span data-ttu-id="2e46b-135">target</span><span class="sxs-lookup"><span data-stu-id="2e46b-135">target</span></span>|[<span data-ttu-id="2e46b-136">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="2e46b-136">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="2e46b-137">割り当て先</span><span class="sxs-lookup"><span data-stu-id="2e46b-137">The assignment target</span></span>|
+|<span data-ttu-id="4e561-132">id</span><span class="sxs-lookup"><span data-stu-id="4e561-132">id</span></span>|<span data-ttu-id="4e561-133">String</span><span class="sxs-lookup"><span data-stu-id="4e561-133">String</span></span>|<span data-ttu-id="4e561-134">割り当て ID</span><span class="sxs-lookup"><span data-stu-id="4e561-134">The assignment ID</span></span>|
+|<span data-ttu-id="4e561-135">target</span><span class="sxs-lookup"><span data-stu-id="4e561-135">target</span></span>|[<span data-ttu-id="4e561-136">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="4e561-136">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="4e561-137">割り当て先</span><span class="sxs-lookup"><span data-stu-id="4e561-137">The assignment target</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="2e46b-138">応答</span><span class="sxs-lookup"><span data-stu-id="2e46b-138">Response</span></span>
-<span data-ttu-id="2e46b-139">成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[devicemanagementintentassignment](../resources/intune-deviceintent-devicemanagementintentassignment.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="2e46b-139">If successful, this method returns a `201 Created` response code and a [deviceManagementIntentAssignment](../resources/intune-deviceintent-devicemanagementintentassignment.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="4e561-138">応答</span><span class="sxs-lookup"><span data-stu-id="4e561-138">Response</span></span>
+<span data-ttu-id="4e561-139">成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[Devicemanagementintentassignment](../resources/intune-deviceintent-devicemanagementintentassignment.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="4e561-139">If successful, this method returns a `201 Created` response code and a [deviceManagementIntentAssignment](../resources/intune-deviceintent-devicemanagementintentassignment.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2e46b-140">例</span><span class="sxs-lookup"><span data-stu-id="2e46b-140">Example</span></span>
+## <a name="example"></a><span data-ttu-id="4e561-140">例</span><span class="sxs-lookup"><span data-stu-id="4e561-140">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="2e46b-141">要求</span><span class="sxs-lookup"><span data-stu-id="2e46b-141">Request</span></span>
-<span data-ttu-id="2e46b-142">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="2e46b-142">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="4e561-141">要求</span><span class="sxs-lookup"><span data-stu-id="4e561-141">Request</span></span>
+<span data-ttu-id="4e561-142">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="4e561-142">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManagementIntentId}/assignments
 Content-type: application/json
@@ -75,8 +75,8 @@ Content-length: 172
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="2e46b-143">応答</span><span class="sxs-lookup"><span data-stu-id="2e46b-143">Response</span></span>
-<span data-ttu-id="2e46b-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="2e46b-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="4e561-143">応答</span><span class="sxs-lookup"><span data-stu-id="4e561-143">Response</span></span>
+<span data-ttu-id="4e561-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="4e561-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -90,7 +90,6 @@ Content-Length: 221
   }
 }
 ```
-
 
 
 
