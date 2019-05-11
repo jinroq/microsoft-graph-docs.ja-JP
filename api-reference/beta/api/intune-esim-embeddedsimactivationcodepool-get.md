@@ -1,23 +1,23 @@
 ---
-title: embeddedSIMActivationCodePool を取得する
-description: embeddedSIMActivationCodePool オブジェクトのプロパティとリレーションシップを読み取ります。
-author: tfitzmac
+title: EmbeddedSIMActivationCodePool を取得する
+description: EmbeddedSIMActivationCodePool オブジェクトのプロパティとリレーションシップを読み取ります。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 38c6e35033dfa2c9f2f579691f250580b87ed319
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0a13c3db576561f87712522c27fe1dcda3fe73e7
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32532395"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33907592"
 ---
-# <a name="get-embeddedsimactivationcodepool"></a>embeddedSIMActivationCodePool を取得する
+# <a name="get-embeddedsimactivationcodepool"></a>EmbeddedSIMActivationCodePool を取得する
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md)オブジェクトのプロパティとリレーションシップを読み取ります。
+[EmbeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md)オブジェクトのプロパティとリレーションシップを読み取ります。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -86,7 +86,6 @@ Content-Length: 675
   }
 }
 ```
-
 
 
 

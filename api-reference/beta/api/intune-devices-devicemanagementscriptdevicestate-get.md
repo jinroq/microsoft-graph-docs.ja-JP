@@ -1,23 +1,23 @@
 ---
-title: devicemanagementscriptdevicestate の取得
-description: devicemanagementscriptdevicestate オブジェクトのプロパティとリレーションシップを読み取ります。
-author: tfitzmac
+title: DeviceManagementScriptDeviceState の取得
+description: DeviceManagementScriptDeviceState オブジェクトのプロパティとリレーションシップを読み取ります。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 434aac6cdd479ca6d1ba9b3c6f4cebd75e0f555c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ba27d543e7eaa7632dc716ffe8ea65feb2806b60
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32465756"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33909870"
 ---
-# <a name="get-devicemanagementscriptdevicestate"></a>devicemanagementscriptdevicestate の取得
+# <a name="get-devicemanagementscriptdevicestate"></a>DeviceManagementScriptDeviceState の取得
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[devicemanagementscriptdevicestate](../resources/intune-devices-devicemanagementscriptdevicestate.md)オブジェクトのプロパティとリレーションシップを読み取ります。
+[Devicemanagementscriptdevicestate](../resources/intune-devices-devicemanagementscriptdevicestate.md)オブジェクトのプロパティとリレーションシップを読み取ります。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -51,7 +51,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRun
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[devicemanagementscriptdevicestate](../resources/intune-devices-devicemanagementscriptdevicestate.md)オブジェクトを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[Devicemanagementscriptdevicestate](../resources/intune-devices-devicemanagementscriptdevicestate.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 
@@ -80,7 +80,6 @@ Content-Length: 363
   }
 }
 ```
-
 
 
 

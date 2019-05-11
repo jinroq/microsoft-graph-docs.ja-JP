@@ -1,21 +1,21 @@
 ---
-title: vpnauthenticationmethod 列挙型
+title: vpnAuthenticationMethod 列挙型
 description: VPN 認証方法。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d67b64a0464bde51d48f3b8c693a1a3d8a1bc449
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7f75c7ec53f406e7f998a89faa8d1dabf4c650de
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561958"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944622"
 ---
-# <a name="vpnauthenticationmethod-enum-type"></a>vpnauthenticationmethod 列挙型
+# <a name="vpnauthenticationmethod-enum-type"></a>vpnAuthenticationMethod 列挙型
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 VPN 認証方法。
 
@@ -23,8 +23,8 @@ VPN 認証方法。
 |メンバー|値|説明|
 |:---|:---|:---|
 |certificate|.0|証明書を使用して認証します。|
-|usernameAndPassword|1 |認証にユーザー名とパスワードを使用します。|
-
+|usernameAndPassword|1-d|認証にユーザー名とパスワードを使用します。|
+|derivedCredential|1/3|認証に派生した資格情報を使用します。  IOS に対してのみ有効です。|
 
 
 

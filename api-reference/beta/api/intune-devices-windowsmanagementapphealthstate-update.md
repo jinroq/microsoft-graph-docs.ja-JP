@@ -1,23 +1,23 @@
 ---
-title: windowsmanagementapphealthstate を更新する
-description: windowsmanagementapphealthstate オブジェクトのプロパティを更新します。
-author: tfitzmac
+title: WindowsManagementAppHealthState を更新する
+description: WindowsManagementAppHealthState オブジェクトのプロパティを更新します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 58ea766e7776f88f55d6cd7dad2bd9e01e38bd46
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 854b2b2e408517c45fd28bc8e2ba903f9c2862b0
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534263"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33909023"
 ---
-# <a name="update-windowsmanagementapphealthstate"></a>windowsmanagementapphealthstate を更新する
+# <a name="update-windowsmanagementapphealthstate"></a>WindowsManagementAppHealthState を更新する
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[windowsmanagementapphealthstate](../resources/intune-devices-windowsmanagementapphealthstate.md)オブジェクトのプロパティを更新します。
+[Windowsmanagementapphealthstate](../resources/intune-devices-windowsmanagementapphealthstate.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -44,23 +44,23 @@ PATCH /deviceAppManagement/windowsManagementApp/healthStates/{windowsManagementA
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求本文で、 [windowsmanagementapphealthstate](../resources/intune-devices-windowsmanagementapphealthstate.md)オブジェクトの JSON 表記を指定します。
+要求本文で、 [Windowsmanagementapphealthstate](../resources/intune-devices-windowsmanagementapphealthstate.md)オブジェクトの JSON 表記を指定します。
 
-次の表に、 [windowsmanagementapphealthstate](../resources/intune-devices-windowsmanagementapphealthstate.md)の作成時に必要なプロパティを示します。
+次の表に、 [Windowsmanagementapphealthstate](../resources/intune-devices-windowsmanagementapphealthstate.md)の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|Windows management アプリの正常性状態の一意識別子|
-|healthState|[healthState](../resources/intune-devices-healthstate.md)|Windows management アプリの正常性状態。 使用可能な値は、`unknown`、`healthy`、`unhealthy` です。|
+|healthState|[healthState](../resources/intune-devices-healthstate.md)|Windows management アプリの正常性状態。 可能な値は、`unknown`、`healthy`、`unhealthy` です。|
 |バージョン|String|Windows management アプリがインストールされているバージョン。|
 |lastCheckInDateTime|DateTimeOffset|Windows management アプリの最終チェックイン時刻。|
 |deviceName|String|Windows management アプリがインストールされているデバイスの名前。|
-|deviceosversion|String|windows 管理アプリがインストールされているデバイスの windows 10 OS バージョン。|
+|deviceOSVersion|String|Windows 管理アプリがインストールされているデバイスの Windows 10 OS バージョン。|
 
 
 
 ## <a name="response"></a>応答
-成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[windowsmanagementapphealthstate](../resources/intune-devices-windowsmanagementapphealthstate.md)オブジェクトを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[Windowsmanagementapphealthstate](../resources/intune-devices-windowsmanagementapphealthstate.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 
@@ -98,7 +98,6 @@ Content-Length: 349
   "deviceOSVersion": "Device OSVersion value"
 }
 ```
-
 
 
 

@@ -1,21 +1,21 @@
 ---
 title: Create importedWindowsAutopilotDeviceIdentity
 description: 新規で importedWindowsAutopilotDeviceIdentity オブジェクトを作成します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f7a35693408b214d028af90945e0d3179af83395
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2dcd78ce37bdc4718bb69ed324ab34c12d2c7096
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32532724"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33908421"
 ---
 # <a name="create-importedwindowsautopilotdeviceidentity"></a>Create importedWindowsAutopilotDeviceIdentity
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新規で [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) オブジェクトを作成します。
 
@@ -58,6 +58,7 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWi
 |のようにします。|String|Windows 自動操縦デバイスのインポート Id。|
 |hardwareIdentifier|Binary|Windows オートパイロット デバイスのハードウェア BLOB。|
 |state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|インポートしたデバイスの現在の状態。|
+|assignedUserPrincipalName|String|デバイスが割り当てられるユーザーの UPN|
 
 
 
@@ -71,7 +72,7 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWi
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/importedWindowsAutopilotDeviceIdentities
 Content-type: application/json
-Content-length: 575
+Content-length: 645
 
 {
   "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentity",
@@ -86,7 +87,8 @@ Content-length: 575
     "deviceRegistrationId": "Device Registration Id value",
     "deviceErrorCode": 15,
     "deviceErrorName": "Device Error Name value"
-  }
+  },
+  "assignedUserPrincipalName": "Assigned User Principal Name value"
 }
 ```
 
@@ -95,7 +97,7 @@ Content-length: 575
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 624
+Content-Length: 694
 
 {
   "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentity",
@@ -111,10 +113,10 @@ Content-Length: 624
     "deviceRegistrationId": "Device Registration Id value",
     "deviceErrorCode": 15,
     "deviceErrorName": "Device Error Name value"
-  }
+  },
+  "assignedUserPrincipalName": "Assigned User Principal Name value"
 }
 ```
-
 
 
 

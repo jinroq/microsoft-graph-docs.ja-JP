@@ -1,28 +1,28 @@
 ---
 title: macOSKernelExtension リソースの種類
-description: 特定の macOS カーネル拡張情報を表します。 macOS カーネル拡張機能は、そのチーム識別子とそのバンドル識別子によって記述できます。
-author: tfitzmac
+description: 特定の macOS カーネル拡張情報を表します。 MacOS カーネル拡張機能は、そのチーム識別子とそのバンドル識別子によって記述できます。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 04320f92045ae128ca1bf128484d2aa55f03d706
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b75288befb0f8ba7101d88d5b6f0767174469ac3
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570646"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946193"
 ---
 # <a name="macoskernelextension-resource-type"></a>macOSKernelExtension リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-特定の macOS カーネル拡張情報を表します。 macOS カーネル拡張機能は、そのチーム識別子とそのバンドル識別子によって記述できます。
+特定の macOS カーネル拡張情報を表します。 MacOS カーネル拡張機能は、そのチーム識別子とそのバンドル識別子によって記述できます。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|teamidentifier|String|カーネル拡張機能の署名に使用されたチーム識別子。|
+|teamIdentifier|String|カーネル拡張機能の署名に使用されたチーム識別子。|
 |bundleId|String|カーネル拡張機能のバンドル ID。|
 
 ## <a name="relationships"></a>関係
@@ -42,7 +42,6 @@ ms.locfileid: "32570646"
   "bundleId": "String"
 }
 ```
-
 
 
 

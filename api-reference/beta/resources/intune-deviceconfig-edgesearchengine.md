@@ -1,21 +1,21 @@
 ---
 title: edgeSearchEngine リソースの種類
 description: IT 管理者が MDM 制御デバイス用向けに事前定義されている既定の検索エンジンを設定できるようにします。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 86604849a488f9f9bf8626f8bfba205efd11a532
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5a83965eb67762135eba3dcf1edf31fb4aec7827
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32565892"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946729"
 ---
 # <a name="edgesearchengine-resource-type"></a>edgeSearchEngine リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 IT 管理者が MDM 制御デバイス用向けに事前定義されている既定の検索エンジンを設定できるようにします。
 
@@ -43,7 +43,6 @@ IT 管理者が MDM 制御デバイス用向けに事前定義されている既
   "edgeSearchEngineType": "String"
 }
 ```
-
 
 
 

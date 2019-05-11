@@ -1,21 +1,21 @@
 ---
-title: userPFXCertificate を作成する
+title: UserPFXCertificate を作成する
 description: 新しい userPFXCertificate オブジェクトを作成します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 518c7af676aa649866ea90fe7916cd257f0c5b91
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2d71812bc1a4e41f01e8353b49a4e656613a8d2b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32528009"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899733"
 ---
-# <a name="create-userpfxcertificate"></a>userPFXCertificate を作成する
+# <a name="create-userpfxcertificate"></a>UserPFXCertificate を作成する
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)オブジェクトを作成します。
 
@@ -50,15 +50,15 @@ POST /deviceManagement/userPfxCertificates
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|PFX 証明書の一意識別子。|
-|拇印|String|PFX 証明書の sha-1 拇印。|
+|id|文字列|PFX 証明書の一意識別子。|
+|拇印|String|PFX 証明書の SHA-1 拇印。|
 |intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|展開の観点から見た証明書の目的。 可能な値は、`unassigned`、`smimeEncryption`、`smimeSigning`、`vpn`、`wifi` です。|
 |userPrincipalName|String|PFX 証明書のユーザープリンシパル名。|
 |startDateTime|DateTimeOffset|証明書の有効期間の開始日/時刻。|
 |expirationDateTime|DateTimeOffset|証明書の有効期限の日付/時刻。|
 |プロバイダー|String|この blob を暗号化するために使用される暗号化プロバイダー。|
-|keyName|String|blob の暗号化に使用された (プロバイダー内の) キーの名前。|
-|paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|暗号化/復号化時にプロバイダーによって使用されるパディング方式。 可能な値は `none`、`pkcs1`、`oaepSha1`、`oaepSha256`、`oaepSha384`、`oaepSha512` です。|
+|keyName|String|Blob の暗号化に使用された (プロバイダー内の) キーの名前。|
+|paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|暗号化/復号化時にプロバイダーによって使用されるパディング方式。 使用可能な値: `none`、`pkcs1`、`oaepSha1`、`oaepSha256`、`oaepSha384`、`oaepSha512`。|
 |encryptedPfxBlob|Binary|暗号化された PFX blob。|
 |encryptedPfxPassword|String|暗号化された PFX パスワード。|
 |createdDateTime|DateTimeOffset|この PFX 証明書がインポートされた日付/時刻です。|
@@ -117,6 +117,7 @@ Content-Length: 695
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
 
 
 

@@ -1,21 +1,21 @@
 ---
 title: Delete localizedNotificationMessage
 description: localizedNotificationMessage を削除します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 800da6a7b73e9e952b83775f5c5b698dea6d0d2b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9b22716b9c98b4857c9bcb4845e0e9ce666d6f62
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32529283"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33900616"
 ---
 # <a name="delete-localizednotificationmessage"></a>Delete localizedNotificationMessage
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md) を削除します。
 
@@ -62,7 +62,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/notificationMessageTemp
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

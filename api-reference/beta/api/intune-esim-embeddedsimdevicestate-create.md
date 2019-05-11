@@ -1,21 +1,21 @@
 ---
-title: embeddedSIMDeviceState を作成する
+title: EmbeddedSIMDeviceState を作成する
 description: 新しい embeddedSIMDeviceState オブジェクトを作成します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1a2d7561f116287d73b2a0e4f781bf6fa49930ea
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 378144cf88afbad951667f2509b1fe732e689c02
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32532346"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33905554"
 ---
-# <a name="create-embeddedsimdevicestate"></a>embeddedSIMDeviceState を作成する
+# <a name="create-embeddedsimdevicestate"></a>EmbeddedSIMDeviceState を作成する
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい[embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md)オブジェクトを作成します。
 
@@ -58,7 +58,7 @@ POST /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCode
 |deviceName|String|サブスクリプションが準備されたデバイス名 (デスクトップの例: JOE)|
 |userName|String|サブスクリプションが準備されたユーザー名 (joe@contoso.com など)|
 |state|[embeddedSIMDeviceStateValue](../resources/intune-esim-embeddedsimdevicestatevalue.md)|デバイスに適用されるプロファイル操作の状態。 可能な値は、`notEvaluated`、`failed`、`installing`、`installed`、`deleting`、`error`、`deleted`、`removedByUser` です。|
-|statedetails|String|プロビジョニング状態の文字列の説明。|
+|stateDetails|String|プロビジョニング状態の文字列の説明。|
 
 
 
@@ -105,7 +105,6 @@ Content-Length: 529
   "stateDetails": "State Details value"
 }
 ```
-
 
 
 

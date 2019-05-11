@@ -1,26 +1,26 @@
 ---
 title: deliveryOptimizationBandwidthPercentage リソースの種類
 description: 割合として指定された帯域幅制限。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 29b76946def2d87725e6764235718f97743be177
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bae3771f6c0d8d13edda7bed3d7968da48e042db
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32564016"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33947282"
 ---
 # <a name="deliveryoptimizationbandwidthpercentage-resource-type"></a>deliveryOptimizationBandwidthPercentage リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 割合として指定された帯域幅制限。
 
 
-[deliveryOptimizationBandwidth](../resources/intune-deviceconfig-deliveryoptimizationbandwidth.md)から継承します。
+[DeliveryOptimizationBandwidth](../resources/intune-deviceconfig-deliveryoptimizationbandwidth.md)から継承します。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
@@ -47,7 +47,6 @@ ms.locfileid: "32564016"
   "maximumForegroundBandwidthPercentage": 1024
 }
 ```
-
 
 
 

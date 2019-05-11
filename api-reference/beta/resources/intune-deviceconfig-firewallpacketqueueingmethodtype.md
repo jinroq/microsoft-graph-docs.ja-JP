@@ -1,33 +1,32 @@
 ---
 title: firewallPacketQueueingMethodType 列挙型
-description: firewallPacketQueueingMethod に指定できる値
-author: tfitzmac
+description: FirewallPacketQueueingMethod に指定できる値
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f2b83aa5d13ac170df1f9f99f8e430d10cdaba3e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9b1802e150460e1e687b8303716a723146e4ca67
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32460584"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946687"
 ---
 # <a name="firewallpacketqueueingmethodtype-enum-type"></a>firewallPacketQueueingMethodType 列挙型
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-firewallPacketQueueingMethod に指定できる値
+FirewallPacketQueueingMethod に指定できる値
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|devicedefault|.0|Intune によって構成された値がない。ユーザーが構成したデバイスの既定値を上書きしない|
+|deviceDefault|.0|Intune によって構成された値がない。ユーザーが構成したデバイスの既定値を上書きしない|
 |党|1-d|パケットキューを無効にする|
-|queueinbound|pbm-2|暗号化された着信パケットをキューに保存する|
-|queueoutbound|1/3|転送のためにキューに復号化された送信パケット|
-|queueboth|2/4|受信パケットと送信パケットの両方をキューにする|
-
+|queueInbound|pbm-2|暗号化された着信パケットをキューに保存する|
+|queueOutbound|1/3|転送のためにキューに復号化された送信パケット|
+|queueBoth|2/4|受信パケットと送信パケットの両方をキューにする|
 
 
 

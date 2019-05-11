@@ -1,23 +1,23 @@
 ---
-title: devicemanagementintentsettingcategory の作成
-description: 新しい devicemanagementintentsettingcategory オブジェクトを作成します。
-author: tfitzmac
+title: DeviceManagementIntentSettingCategory の作成
+description: 新しい deviceManagementIntentSettingCategory オブジェクトを作成します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: add0d92a29f2bf2d29176e0d22dc68f7deb19a18
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ac2210319c6fe8f497889825301ecf600d3dd52b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507834"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33915748"
 ---
-# <a name="create-devicemanagementintentsettingcategory"></a>devicemanagementintentsettingcategory の作成
+# <a name="create-devicemanagementintentsettingcategory"></a>DeviceManagementIntentSettingCategory の作成
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-新しい[devicemanagementintentsettingcategory](../resources/intune-deviceintent-devicemanagementintentsettingcategory.md)オブジェクトを作成します。
+新しい[Devicemanagementintentsettingcategory](../resources/intune-deviceintent-devicemanagementintentsettingcategory.md)オブジェクトを作成します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -44,19 +44,19 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/categories
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求本文で、devicemanagementintentsettingcategory オブジェクトの JSON 表記を指定します。
+要求本文で、deviceManagementIntentSettingCategory オブジェクトの JSON 表記を指定します。
 
-次の表に、devicemanagementintentsettingcategory の作成時に必要なプロパティを示します。
+次の表に、deviceManagementIntentSettingCategory の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|[devicemanagementsettingcategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)から継承されるカテゴリ ID|
-|displayName|String|[devicemanagementsettingcategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)から継承されるカテゴリ名|
+|id|文字列|[Devicemanagementsettingcategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)から継承されるカテゴリ ID|
+|displayName|String|[Devicemanagementsettingcategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)から継承されるカテゴリ名|
 
 
 
 ## <a name="response"></a>応答
-成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[devicemanagementintentsettingcategory](../resources/intune-deviceintent-devicemanagementintentsettingcategory.md)オブジェクトを返します。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[Devicemanagementintentsettingcategory](../resources/intune-deviceintent-devicemanagementintentsettingcategory.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 
@@ -86,7 +86,6 @@ Content-Length: 168
   "displayName": "Display Name value"
 }
 ```
-
 
 
 

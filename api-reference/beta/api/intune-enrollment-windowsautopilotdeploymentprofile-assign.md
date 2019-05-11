@@ -1,21 +1,21 @@
 ---
 title: assign アクション
 description: まだ文書化されていません
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f852d446ef0a931233aa2cb8bb4c9a1fc97295bb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: cc6544306ca04a6d29e705f25a7a99a70b10b574
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32532668"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33908953"
 ---
 # <a name="assign-action"></a>アクションの割り当て
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 まだ文書化されていません
 
@@ -52,7 +52,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|deviceids|String コレクション|まだ文書化されていません|
+|deviceIds|String コレクション|まだ文書化されていません|
 
 
 
@@ -81,7 +81,6 @@ Content-length: 51
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

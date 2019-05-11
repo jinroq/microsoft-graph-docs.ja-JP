@@ -1,21 +1,21 @@
 ---
 title: settingStateDeviceSummary リソースの種類
 description: 設定状態の要約に対する、デバイス コンプライアンス ポリシーおよび構成
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0f233b285fa9967dca03406c3ca7c649773e9832
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 26d0c2d39d79a81e419141087e508497c91f4e03
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32464937"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944734"
 ---
 # <a name="settingstatedevicesummary-resource-type"></a>settingStateDeviceSummary リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 設定状態の要約に対する、デバイス コンプライアンス ポリシーおよび構成
 
@@ -42,7 +42,7 @@ ms.locfileid: "32464937"
 |errorDeviceCount|Int32|設定のデバイス エラーの数|
 |conflictDeviceCount|Int32|設定のデバイス競合エラーの数|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -68,7 +68,6 @@ ms.locfileid: "32464937"
   "conflictDeviceCount": 1024
 }
 ```
-
 
 
 

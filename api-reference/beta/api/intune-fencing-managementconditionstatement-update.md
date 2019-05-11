@@ -1,23 +1,23 @@
 ---
-title: managementconditionstatement の更新
-description: managementconditionstatement オブジェクトのプロパティを更新します。
-author: tfitzmac
+title: ManagementConditionStatement の更新
+description: ManagementConditionStatement オブジェクトのプロパティを更新します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6e7ddc6a41ac7753ca827f6849ecd7964e86db6f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b3d050467b69d716bf3c2ce131c22e511575dd70
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32532017"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33905337"
 ---
-# <a name="update-managementconditionstatement"></a>managementconditionstatement の更新
+# <a name="update-managementconditionstatement"></a>ManagementConditionStatement の更新
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[managementconditionstatement](../resources/intune-fencing-managementconditionstatement.md)オブジェクトのプロパティを更新します。
+[Managementconditionstatement](../resources/intune-fencing-managementconditionstatement.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -45,21 +45,21 @@ PATCH /deviceManagement/managementConditions/{managementConditionId}/managementC
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求本文で、 [managementconditionstatement](../resources/intune-fencing-managementconditionstatement.md)オブジェクトの JSON 表記を指定します。
+要求本文で、 [Managementconditionstatement](../resources/intune-fencing-managementconditionstatement.md)オブジェクトの JSON 表記を指定します。
 
-次の表に、 [managementconditionstatement](../resources/intune-fencing-managementconditionstatement.md)の作成時に必要なプロパティを示します。
+次の表に、 [Managementconditionstatement](../resources/intune-fencing-managementconditionstatement.md)の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|管理条件ステートメントの一意識別子。 作成時に割り当てられたシステム生成値。|
+|id|文字列|管理条件ステートメントの一意識別子。 作成時に割り当てられたシステム生成値。|
 |displayName|String|管理条件ステートメントの管理者定義の名前。|
 |description|String|管理条件ステートメントの管理者定義の説明。|
 |createdDateTime|DateTimeOffset|管理条件ステートメントが作成された時刻。 サービス側を生成しました。|
 |modifiedDateTime|DateTimeOffset|管理条件ステートメントが最後に変更された時刻。 サービス側を更新しました。|
-|式|[managementconditionexpression](../resources/intune-fencing-managementconditionexpression.md)|管理条件ステートメントがアクティブ化/非アクティブ化されたかどうかを評価するために使用される管理条件ステートメント式。|
+|式|[managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)|管理条件ステートメントがアクティブ化/非アクティブ化されたかどうかを評価するために使用される管理条件ステートメント式。|
 |eTag|String|管理条件ステートメントの ETag。 サービス側を更新しました。|
 |アプリケーションのプラットフォーム|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)コレクション|この管理条件ステートメントの適用可能なプラットフォーム。
-これは、管理条件ステートメントに関連付けられている管理条件を参照して、適用可能なプラットフォームの共通部分を検索することによって計算されます。 可能な値は、`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile` です。|
+これは、管理条件ステートメントに関連付けられている管理条件を参照して、適用可能なプラットフォームの共通部分を検索することによって計算されます。 可能な値は、`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`unknown` です。|
 
 
 
@@ -112,7 +112,6 @@ Content-Length: 491
   ]
 }
 ```
-
 
 
 

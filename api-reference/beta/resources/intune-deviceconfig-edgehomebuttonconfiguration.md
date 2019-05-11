@@ -1,21 +1,21 @@
 ---
 title: edgeHomeButtonConfiguration リソースの種類
 description: 利用可能なオプションを識別するために使用されるホームボタンの構成基本クラス
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 018b8b44649d5fa9c43ce8d96db5eff63d8ec948
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 492fb99cf30496f9f0ca6fb940ceb639a63415f8
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32525294"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946792"
 ---
 # <a name="edgehomebuttonconfiguration-resource-type"></a>edgeHomeButtonConfiguration リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 利用可能なオプションを識別するために使用されるホームボタンの構成基本クラス
 
@@ -23,7 +23,7 @@ ms.locfileid: "32525294"
 |プロパティ|型|説明|
 |:---|:---|:---|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -38,7 +38,6 @@ ms.locfileid: "32525294"
   "@odata.type": "#microsoft.graph.edgeHomeButtonConfiguration"
 }
 ```
-
 
 
 

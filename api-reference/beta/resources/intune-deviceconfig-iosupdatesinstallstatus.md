@@ -1,21 +1,21 @@
 ---
-title: iosupん installstatus 列挙型
+title: Iosupん Installstatus 列挙型
 description: まだ文書化されていません
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1e9b1b3584436ac62c48fe84340834f849558d4e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8592ccfa4e458aecda6eb9384e5c272436ecaee9
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32460773"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946186"
 ---
-# <a name="iosupdatesinstallstatus-enum-type"></a>iosupん installstatus 列挙型
+# <a name="iosupdatesinstallstatus-enum-type"></a>Iosupん Installstatus 列挙型
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 まだ文書化されていません
 
@@ -27,7 +27,7 @@ ms.locfileid: "32460773"
 |アイドル|pbm-2|まだ文書化されていません|
 |不明|1/3|まだ文書化されていません|
 |すれ|-2016330712|まだ文書化されていません|
-|downloadfailed|-2016330711|まだ文書化されていません|
+|downloadFailed|-2016330711|まだ文書化されていません|
 |downloadRequiresComputer|-2016330710|まだ文書化されていません|
 |downloadInsufficientSpace|-2016330709|まだ文書化されていません|
 |downloadInsufficientPower|-2016330708|まだ文書化されていません|
@@ -36,10 +36,9 @@ ms.locfileid: "32460773"
 |installInsufficientSpace|-2016330705|まだ文書化されていません|
 |installInsufficientPower|-2016330704|まだ文書化されていません|
 |installPhoneCallInProgress|-2016330703|まだ文書化されていません|
-|installfailed|-2016330702|まだ文書化されていません|
+|installFailed|-2016330702|まだ文書化されていません|
 |notSupportedOperation|-2016330701|まだ文書化されていません|
 |sharedDeviceUserLoggedInError|-2016330699|まだ文書化されていません|
-
 
 
 

@@ -1,23 +1,23 @@
 ---
-title: windowsPhone81CertificateProfileBase を取得する
-description: windowsPhone81CertificateProfileBase オブジェクトのプロパティとリレーションシップを読み取ります。
-author: tfitzmac
+title: WindowsPhone81CertificateProfileBase を取得する
+description: WindowsPhone81CertificateProfileBase オブジェクトのプロパティとリレーションシップを読み取ります。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f87ef91b4f247b84ace41a7b1554d9d14b7df7e4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e2c45247d644ef4afbd52542edaa37afb5d06cae
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32513259"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33917864"
 ---
-# <a name="get-windowsphone81certificateprofilebase"></a>windowsPhone81CertificateProfileBase を取得する
+# <a name="get-windowsphone81certificateprofilebase"></a>WindowsPhone81CertificateProfileBase を取得する
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[windowsPhone81CertificateProfileBase](../resources/intune-deviceconfig-windowsphone81certificateprofilebase.md)オブジェクトのプロパティとリレーションシップを読み取ります。
+[WindowsPhone81CertificateProfileBase](../resources/intune-deviceconfig-windowsphone81certificateprofilebase.md)オブジェクトのプロパティとリレーションシップを読み取ります。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -96,7 +96,6 @@ Content-Length: 968
   }
 }
 ```
-
 
 
 

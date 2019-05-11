@@ -1,21 +1,21 @@
 ---
-title: dataSharingConsent を作成する
+title: DataSharingConsent を作成する
 description: 新しい dataSharingConsent オブジェクトを作成します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8a242d5c8058af72ba7c78cf3a613534db887c97
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 83928d0ee472d4c902ac7df75a17ab1cebe66ff3
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32466036"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33910179"
 ---
-# <a name="create-datasharingconsent"></a>dataSharingConsent を作成する
+# <a name="create-datasharingconsent"></a>DataSharingConsent を作成する
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい[dataSharingConsent](../resources/intune-devices-datasharingconsent.md)オブジェクトを作成します。
 
@@ -51,7 +51,7 @@ POST /deviceManagement/dataSharingConsents
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|データ共有の同意 Id|
-|servicedisplayname|String|サービスワークフローの表示名|
+|serviceDisplayName|String|サービスワークフローの表示名|
 |termsUrl|String|データ共有の同意の TermsUrl|
 |granted|Boolean|データ共有の同意の付与された状態|
 |grantDateTime|DateTimeOffset|このアカウントに対して同意が与えられた時間|
@@ -101,7 +101,6 @@ Content-Length: 382
   "grantedByUserId": "Granted By User Id value"
 }
 ```
-
 
 
 

@@ -1,21 +1,21 @@
 ---
 title: unsupportedDeviceConfigurationDetail リソースの種類
 description: エンティティがサポートされていない理由の説明。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 660f73774025a065565fb72ca74c9674a4159fc0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: dfb4a25325826b20f77d75dc9d545ee64d12f254
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548692"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944650"
 ---
 # <a name="unsupporteddeviceconfigurationdetail-resource-type"></a>unsupportedDeviceConfigurationDetail リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 エンティティがサポートされていない理由の説明。
 
@@ -25,7 +25,7 @@ ms.locfileid: "32548692"
 |メッセージ​​|String|エンティティがサポートされていない理由を説明するメッセージ。|
 |propertyName|String|メッセージが元のエンティティの特定のプロパティに関連付けられている場合は、そのプロパティの名前。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -42,7 +42,6 @@ ms.locfileid: "32548692"
   "propertyName": "String"
 }
 ```
-
 
 
 

@@ -1,36 +1,35 @@
 ---
 title: androidWorkProfileRequiredPasswordType 列挙型
 description: Android の作業プロファイルに必要なパスワードの種類。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3bbe0e64fdbbca78766bf7471d29d6cdf17b0714
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b384c6d5bcc3c79a967d1a4c4cdfc8299d1a56d8
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562357"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33947667"
 ---
 # <a name="androidworkprofilerequiredpasswordtype-enum-type"></a>androidWorkProfileRequiredPasswordType 列挙型
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 Android の作業プロファイルに必要なパスワードの種類。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|devicedefault|.0|デバイスの既定値。意図的ではありません。|
-|lowsecuritybiometric 認証|1 |低セキュリティ生体認証ベースのパスワードが必要です。|
-|必須|2 |必須です。|
-|atleastnumeric|3 |少なくとも数値のパスワードが必要です。|
-|numericcomplex|4 |数字の複雑なパスワードが必要です。|
-|atall stアルファベット|5 |少なくとも英字のパスワードが必要です。|
-|atleastalphanumeric|6 |少なくとも英数字のパスワードが必要です。|
-|alphanumericWithSymbols|7 |記号パスワードが必要な、少なくとも英数字。|
-
+|deviceDefault|.0|デバイスの既定値。意図的ではありません。|
+|lowSecurityBiometric 認証|1-d|低セキュリティ生体認証ベースのパスワードが必要です。|
+|必須|pbm-2|必須。|
+|atLeastNumeric|1/3|少なくとも数値のパスワードが必要です。|
+|numericComplex|2/4|数字の複雑なパスワードが必要です。|
+|Atall Stアルファベット|5|少なくとも英字のパスワードが必要です。|
+|atLeastAlphanumeric|シックス|少なくとも英数字のパスワードが必要です。|
+|alphanumericWithSymbols|7|記号パスワードが必要な、少なくとも英数字。|
 
 
 

@@ -1,23 +1,23 @@
 ---
-title: deponboardingsetting の更新
-description: deponboardingsetting オブジェクトのプロパティを更新します。
-author: tfitzmac
+title: DepOnboardingSetting の更新
+description: DepOnboardingSetting オブジェクトのプロパティを更新します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4ce491760b670953ca87e7953fb0d91c3c3a12f7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a3603f4dd93d7fd3b9e5ba06e263ad765331cfaa
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32533263"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33908659"
 ---
-# <a name="update-deponboardingsetting"></a>deponboardingsetting の更新
+# <a name="update-deponboardingsetting"></a>DepOnboardingSetting の更新
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[deponboardingsetting](../resources/intune-enrollment-deponboardingsetting.md)オブジェクトのプロパティを更新します。
+[Deponboardingsetting](../resources/intune-enrollment-deponboardingsetting.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -44,9 +44,9 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求本文で、 [deponboardingsetting](../resources/intune-enrollment-deponboardingsetting.md)オブジェクトの JSON 表記を指定します。
+要求本文で、 [Deponboardingsetting](../resources/intune-enrollment-deponboardingsetting.md)オブジェクトの JSON 表記を指定します。
 
-次の表に、 [deponboardingsetting](../resources/intune-enrollment-deponboardingsetting.md)の作成時に必要なプロパティを示します。
+次の表に、 [Deponboardingsetting](../resources/intune-enrollment-deponboardingsetting.md)の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
@@ -55,19 +55,19 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}
 |tokenExpirationDateTime|DateTimeOffset|トークンの有効期限が切れるとき。|
 |lastModifiedDateTime|DateTimeOffset|サービスが利用されたとき。|
 |lastSuccessfulSyncDateTime|DateTimeOffset|Intune でサービスが最後に使用されたとき|
-|lastsynctriggereddatetime|DateTimeOffset|Intune が最後に同期を要求したとき。|
-|shareTokenWithSchoolDataSyncService|ブール値|School Data Sync サービスで Dep トークンの共有が有効になっているかどうか。|
+|lastSyncTriggeredDateTime|DateTimeOffset|Intune が最後に同期を要求したとき。|
+|shareTokenWithSchoolDataSyncService|Boolean|School Data Sync サービスで Dep トークンの共有が有効になっているかどうか。|
 |lastSyncErrorCode|Int32|前回の dep 同期中に Apple によって報告されたエラーコード。|
-|tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Dep トークンの種類を取得または設定します。 使用可能な値は、`none`、`dep`、`appleSchoolManager` です。|
+|tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Dep トークンの種類を取得または設定します。 可能な値は、`none`、`dep`、`appleSchoolManager` です。|
 |tokenName|String|Dep トークンのフレンドリ名|
 |syncedDeviceCount|Int32|同期されたデバイスの数を取得する|
-|dataSharingConsentGranted|ブール値|Apple Dep サービスでのデータ共有に対して付与される同意|
+|dataSharingConsentGranted|Boolean|Apple Dep サービスでのデータ共有に対して付与される同意|
 |roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。|
 
 
 
 ## <a name="response"></a>応答
-成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[deponboardingsetting](../resources/intune-enrollment-deponboardingsetting.md)オブジェクトを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[Deponboardingsetting](../resources/intune-enrollment-deponboardingsetting.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 
@@ -122,7 +122,6 @@ Content-Length: 689
   ]
 }
 ```
-
 
 
 

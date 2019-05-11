@@ -1,23 +1,23 @@
 ---
 title: syncWithAppleDeviceEnrollmentProgram アクション
-description: Apple Device Enrollment program と Intune 間の同期
-author: tfitzmac
+description: Apple Device Enrollment Program と Intune 間の同期
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f78eba6c17f5536f90c5af6bbee102c1d2c5bf7e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 597f44a70895de01aacd457df28ae56e84e4b68d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32533249"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33908673"
 ---
 # <a name="syncwithappledeviceenrollmentprogram-action"></a>syncWithAppleDeviceEnrollmentProgram アクション
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-Apple Device Enrollment program と Intune 間の同期
+Apple Device Enrollment Program と Intune 間の同期
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -62,7 +62,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{de
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

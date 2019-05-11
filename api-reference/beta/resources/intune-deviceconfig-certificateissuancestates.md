@@ -1,21 +1,21 @@
 ---
 title: certificateIssuanceStates 列挙型
 description: 証明書の発行状態オプション。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 53cc553464cbb037c67465be043a746c53bcf3d6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a0a4cdd170218338ecc7498241f67539255ef1c7
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549311"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33947436"
 ---
 # <a name="certificateissuancestates-enum-type"></a>certificateIssuanceStates 列挙型
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 証明書の発行状態オプション。
 
@@ -23,29 +23,28 @@ ms.locfileid: "32549311"
 |メンバー|値|説明|
 |:---|:---|:---|
 |不明|.0|まだ文書化されていません|
-|challengeIssued|1 |まだ文書化されていません|
-|challengeIssueFailed|2 |まだ文書化されていません|
-|request/要求の失敗|3 |まだ文書化されていません|
-|requestsubmitfailed|4 |まだ文書化されていません|
-|challengeValidationSucceeded|5 |まだ文書化されていません|
-|challengeValidationFailed|6 |まだ文書化されていません|
-|/出力失敗|7 |まだ文書化されていません|
+|challengeIssued|1-d|まだ文書化されていません|
+|challengeIssueFailed|pbm-2|まだ文書化されていません|
+|Request/要求の失敗|1/3|まだ文書化されていません|
+|requestSubmitFailed|2/4|まだ文書化されていません|
+|challengeValidationSucceeded|5|まだ文書化されていません|
+|challengeValidationFailed|シックス|まだ文書化されていません|
+|/出力失敗|7|まだ文書化されていません|
 |状態の確定|8 |まだ文書化されていません|
 |発行|9 |まだ文書化されていません|
-|responseprocessingfailed 失敗しました|10  |まだ文書化されていません|
-|responsePending|11 |まだ文書化されていません|
-|enrollmentSucceeded|12 |まだ文書化されていません|
-|enrollmentNotNeeded|13 |まだ文書化されていません|
-|破棄|14 |まだ文書化されていません|
-|removedfromcollection|15 |まだ文書化されていません|
-|renewverified 済み|16 |まだ文書化されていません|
-|installfailed|17 |まだ文書化されていません|
-|れる|18 |まだ文書化されていません|
-|deletefailed|年|まだ文書化されていません|
+|responseProcessingFailed 失敗しました|10 |まだ文書化されていません|
+|responsePending|#|まだ文書化されていません|
+|enrollmentSucceeded|個|まだ文書化されていません|
+|enrollmentNotNeeded|スリー|まだ文書化されていません|
+|破棄|第|まだ文書化されていません|
+|removedFromCollection|約|まだ文書化されていません|
+|renewVerified 済み|16|まだ文書化されていません|
+|installFailed|インチ|まだ文書化されていません|
+|れる|個|まだ文書化されていません|
+|deleteFailed|年|まだ文書化されていません|
 |deleted|1280|まだ文書化されていません|
 |renewalRequested|21|まだ文書化されていません|
 |指定|×|まだ文書化されていません|
-
 
 
 

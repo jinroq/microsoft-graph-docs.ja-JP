@@ -1,32 +1,32 @@
 ---
 title: edgeHomeButtonOpensNewTab リソースの種類
 description: '[ホーム] ボタンを表示します。[ホーム] ボタンをクリックすると、新しいタブページが読み込まれます。'
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6e91c7f4347a26d8bd7cf0265a90d6ac1fd42ca6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 76951c80da374a69a62c45b2676e3f36794d4bb2
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32524385"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946757"
 ---
 # <a name="edgehomebuttonopensnewtab-resource-type"></a>edgeHomeButtonOpensNewTab リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [ホーム] ボタンを表示します。[ホーム] ボタンをクリックすると、新しいタブページが読み込まれます。
 
 
-[edgeHomeButtonConfiguration](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)から継承します。
+[EdgeHomeButtonConfiguration](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)から継承します。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -41,7 +41,6 @@ ms.locfileid: "32524385"
   "@odata.type": "#microsoft.graph.edgeHomeButtonOpensNewTab"
 }
 ```
-
 
 
 

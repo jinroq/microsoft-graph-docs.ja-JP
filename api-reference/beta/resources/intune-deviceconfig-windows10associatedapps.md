@@ -1,21 +1,21 @@
 ---
 title: windows10AssociatedApps リソースの種類
 description: Windows 10 関連アプリケーションの定義。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 22adbc6be90718f95a574443c8bd2f96a55f2ee4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fca7f8876ba0ea455d2bd7f537fe162f125e1dc9
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32572207"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944385"
 ---
 # <a name="windows10associatedapps-resource-type"></a>windows10AssociatedApps リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 Windows 10 関連アプリケーションの定義。
 
@@ -42,7 +42,6 @@ Windows 10 関連アプリケーションの定義。
   "identifier": "String"
 }
 ```
-
 
 
 

@@ -1,21 +1,21 @@
 ---
 title: localizedNotificationMessage の作成
 description: 新しい localizedNotificationMessage オブジェクトを作成します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5458605b4b4e58b27e65298f709121283fc91ecd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 24d352ed38a572f5fdf8cdb8567afadcb25256dd
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32529094"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33900651"
 ---
 # <a name="create-localizednotificationmessage"></a>localizedNotificationMessage の作成
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md) オブジェクトを作成します。
 
@@ -50,7 +50,7 @@ POST /deviceManagement/notificationMessageTemplates/{notificationMessageTemplate
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|id|文字列|エンティティのキー。|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。|
 |locale|String|対象メッセージの送信先ロケール。|
 |subject|String|メッセージ テンプレートの件名。|
@@ -97,7 +97,6 @@ Content-Length: 313
   "isDefault": true
 }
 ```
-
 
 
 

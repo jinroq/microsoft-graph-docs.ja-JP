@@ -1,33 +1,33 @@
 ---
 title: windows10VpnProxyServer リソースの種類
 description: VPN プロキシサーバー。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 212bafa99a51e269716978cafa4fcf274dd76579
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 56b9177c19ec089a3c93bd388084ae20d7865ace
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32572025"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944209"
 ---
 # <a name="windows10vpnproxyserver-resource-type"></a>windows10VpnProxyServer リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 VPN プロキシサーバー。
 
 
-[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)から継承します。
+[VpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)から継承します。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|自動構成 scripturl|String|プロキシの自動構成スクリプトの url。 [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)から継承します。|
-|address|String|連絡先. [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)から継承します。|
-|ポート|Int32|ポート. [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)から継承された有効な値 0 ~ 65535|
+|自動構成 Scripturl|String|プロキシの自動構成スクリプトの url。 [VpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)から継承します。|
+|address|String|連絡先. [VpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)から継承します。|
+|ポート|Int32|ポート. [VpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)から継承された有効な値 0 ~ 65535|
 |bypassProxyServerForLocalAddress|Boolean|ローカルアドレスにはプロキシサーバーを使用しないでください。|
 
 ## <a name="relationships"></a>関係
@@ -49,7 +49,6 @@ VPN プロキシサーバー。
   "bypassProxyServerForLocalAddress": true
 }
 ```
-
 
 
 

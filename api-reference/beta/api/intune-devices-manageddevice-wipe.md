@@ -1,21 +1,21 @@
 ---
 title: wipe action
 description: デバイスをワイプする
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 91bdbd45355c986e7ef59bf5e8be6621db462001
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5d50366cef1660aec80137562e912746b81f162f
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32520040"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33909492"
 ---
 # <a name="wipe-action"></a>ワイプ アクション
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 デバイスをワイプする
 
@@ -24,7 +24,7 @@ ms.locfileid: "32520040"
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
-|委任 (職場または学校のアカウント)|devicemanagementmanageddevices all、devicemanagementmanageddevices. すべて|
+|委任 (職場または学校のアカウント)|Devicemanagementmanageddevices all、DeviceManagementManagedDevices. すべて|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -84,7 +84,6 @@ Content-length: 109
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -1,23 +1,23 @@
 ---
-title: remoteactionaudit の更新
-description: remoteactionaudit オブジェクトのプロパティを更新します。
-author: tfitzmac
+title: RemoteActionAudit の更新
+description: RemoteActionAudit オブジェクトのプロパティを更新します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6cfae09fc5dd7e90e2109a5a858a25b062922df1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bcad57e03d23de9b3769dbf4b6d640a4cb44e02d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523785"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33909367"
 ---
-# <a name="update-remoteactionaudit"></a>remoteactionaudit の更新
+# <a name="update-remoteactionaudit"></a>RemoteActionAudit の更新
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[remoteactionaudit](../resources/intune-devices-remoteactionaudit.md)オブジェクトのプロパティを更新します。
+[Remoteactionaudit](../resources/intune-devices-remoteactionaudit.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -44,18 +44,18 @@ PATCH /deviceManagement/remoteActionAudits/{remoteActionAuditId}
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求本文で、 [remoteactionaudit](../resources/intune-devices-remoteactionaudit.md)オブジェクトの JSON 表記を指定します。
+要求本文で、 [Remoteactionaudit](../resources/intune-devices-remoteactionaudit.md)オブジェクトの JSON 表記を指定します。
 
-次の表に、 [remoteactionaudit](../resources/intune-devices-remoteactionaudit.md)の作成時に必要なプロパティを示します。
+次の表に、 [Remoteactionaudit](../resources/intune-devices-remoteactionaudit.md)の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|レポート Id。|
 |deviceDisplayName|String|Intune デバイス名。|
-|userName|文字列型 (String)|\[非\]推奨 initiatedbyuserprincipalname を代わりに使用してください。|
+|userName|文字列型 (String)|\[非\]推奨 InitiatedByUserPrincipalName を代わりに使用してください。|
 |initiatedByUserPrincipalName|String|デバイスのアクションを開始したユーザーの形式は UPN です。|
-|action|[remoteaction](../resources/intune-devices-remoteaction.md)|アクション名。 可能な値: `unknown`、 `factoryReset` `removeCompanyData` `resetPasscode` `remoteLock` `enableLostMode` `disableLostMode` `locateDevice` `rebootNow` `recoverPasscode` `cleanWindowsDevice` `logoutSharedAppleDeviceActiveUser`、、、、、、、、、、、、 `quickScan` `fullScan` `windowsDefenderUpdateSignatures` `factoryResetKeepEnrollmentData` `updateDeviceAccount` `automaticRedeployment` `shutDown`.|
-|requestdatetime|DateTimeOffset|アクションが発行された日時 (UTC)。|
+|action|[remoteAction](../resources/intune-devices-remoteaction.md)|アクション名。 可能な値: `unknown`、 `factoryReset` `removeCompanyData` `resetPasscode` `remoteLock` `enableLostMode` `disableLostMode` `locateDevice` `rebootNow` `recoverPasscode` `cleanWindowsDevice` `logoutSharedAppleDeviceActiveUser`、、、、、、、、、、、、 `quickScan` `fullScan` `windowsDefenderUpdateSignatures` `factoryResetKeepEnrollmentData` `updateDeviceAccount` `automaticRedeployment` `shutDown`.|
+|requestDateTime|DateTimeOffset|アクションが発行された日時 (UTC)。|
 |deviceOwnerUserPrincipalName|String|デバイス所有者の Upn。|
 |deviceIMEI|String|デバイスの IMEI。|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|アクションの状態。 可能な値は、`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported` です。|
@@ -107,7 +107,6 @@ Content-Length: 504
   "actionState": "pending"
 }
 ```
-
 
 
 

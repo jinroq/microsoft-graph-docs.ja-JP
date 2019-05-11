@@ -1,37 +1,37 @@
 ---
 title: windows81VpnProxyServer リソースの種類
 description: VPN プロキシサーバー。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1a337dc2d18ed5f10ecb9f8f654a7d19175fc476
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 26f15e8e2b6982c322ffc78cb9d6270b08bcbc3c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554255"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944244"
 ---
 # <a name="windows81vpnproxyserver-resource-type"></a>windows81VpnProxyServer リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 VPN プロキシサーバー。
 
 
-[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)から継承します。
+[VpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)から継承します。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|自動構成 scripturl|String|プロキシの自動構成スクリプトの url。 [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)から継承します。|
-|address|String|連絡先. [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)から継承します。|
-|ポート|Int32|ポート. [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)から継承された有効な値 0 ~ 65535|
-|自動的に検出する proxysettings|ブール値|プロキシの設定を自動的に検出します。|
-|bypassProxyServerForLocalAddress|ブール値|ローカルアドレスにはプロキシサーバーを使用しないでください。|
+|自動構成 Scripturl|String|プロキシの自動構成スクリプトの url。 [VpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)から継承します。|
+|address|String|連絡先. [VpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)から継承します。|
+|ポート|Int32|ポート. [VpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)から継承された有効な値 0 ~ 65535|
+|自動的に検出する Proxysettings|Boolean|プロキシの設定を自動的に検出します。|
+|bypassProxyServerForLocalAddress|Boolean|ローカルアドレスにはプロキシサーバーを使用しないでください。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -51,7 +51,6 @@ VPN プロキシサーバー。
   "bypassProxyServerForLocalAddress": true
 }
 ```
-
 
 
 

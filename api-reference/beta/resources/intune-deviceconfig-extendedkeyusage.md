@@ -1,21 +1,21 @@
 ---
-title: extendedkeyusage リソースの種類
+title: extendedKeyUsage リソースの種類
 description: カスタム拡張キー使用法の定義
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cd89a46c2739f80a0a5c661884fb5e72c6e17522
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 36752e9a2f86e68bd4ada1a342dc174726a684c7
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556152"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946953"
 ---
-# <a name="extendedkeyusage-resource-type"></a>extendedkeyusage リソースの種類
+# <a name="extendedkeyusage-resource-type"></a>extendedKeyUsage リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 カスタム拡張キー使用法の定義
 
@@ -25,7 +25,7 @@ ms.locfileid: "32556152"
 |name|String|拡張キー使用法の名前|
 |objectIdentifier|String|拡張キー使用法のオブジェクト識別子|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -42,7 +42,6 @@ ms.locfileid: "32556152"
   "objectIdentifier": "String"
 }
 ```
-
 
 
 

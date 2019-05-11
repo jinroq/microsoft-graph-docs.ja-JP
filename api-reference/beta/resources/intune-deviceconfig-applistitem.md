@@ -1,21 +1,21 @@
 ---
 title: appListItem リソースの種類
 description: 管理対象アプリケーションの一覧にあるアプリを表します
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7f452de7d002368c204cb57cc352ac9f9658609a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d29fca9155ac14c7b8ebf9ad862bda3bed874353
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549560"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33947716"
 ---
 # <a name="applistitem-resource-type"></a>appListItem リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 管理対象アプリケーションの一覧にあるアプリを表します
 
@@ -24,10 +24,10 @@ ms.locfileid: "32549560"
 |:---|:---|:---|
 |name|String|アプリケーション名|
 |発行元|String|アプリケーションの発行元|
-|appStoreUrl|String|アプリケーションのストア URL|
-|appId|文字列型 (String)|アプリケーションのアプリケーションまたはバンドルの識別子|
+|appStoreUrl|文字列型 (String)|アプリケーションのストア URL|
+|appId|String|アプリケーションのアプリケーションまたはバンドルの識別子|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -46,7 +46,6 @@ ms.locfileid: "32549560"
   "appId": "String"
 }
 ```
-
 
 
 

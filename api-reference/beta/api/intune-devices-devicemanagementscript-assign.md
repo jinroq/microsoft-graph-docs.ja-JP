@@ -1,21 +1,21 @@
 ---
 title: assign アクション
 description: まだ文書化されていません
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ea0f24df57275cb001b58d43fabb7ce7fa3c7bce
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 88e7686d9d13084508cfed47927d4b44e7513cd5
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32465791"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33910010"
 ---
 # <a name="assign-action"></a>アクションの割り当て
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 まだ文書化されていません
 
@@ -50,7 +50,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assign
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|devicemanagementscriptgroupassignments|[devicemanagementscriptgroupassignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md)コレクション|まだ文書化されていません|
+|deviceManagementScriptGroupAssignments|[Devicemanagementscriptgroupassignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md)コレクション|まだ文書化されていません|
 |deviceManagementScriptAssignments|[deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md)コレクション|まだ文書化されていません|
 
 
@@ -93,7 +93,6 @@ Content-length: 550
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

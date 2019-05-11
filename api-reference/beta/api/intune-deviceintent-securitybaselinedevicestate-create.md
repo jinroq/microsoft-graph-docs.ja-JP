@@ -1,21 +1,21 @@
 ---
-title: securityBaselineDeviceState を作成する
+title: SecurityBaselineDeviceState を作成する
 description: 新しい securityBaselineDeviceState オブジェクトを作成します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d0b816fb81d85536dcb220b5cb7fc3483549ab85
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 871c2b5ce94ef19580cc89bc23c6bc16541bb25a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32466603"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33914577"
 ---
-# <a name="create-securitybaselinedevicestate"></a>securityBaselineDeviceState を作成する
+# <a name="create-securitybaselinedevicestate"></a>SecurityBaselineDeviceState を作成する
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい[securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)オブジェクトを作成します。
 
@@ -50,11 +50,11 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/microsoft.graph.se
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティの一意識別子|
-|manageddeviceid|String|Intune デバイス id|
+|id|文字列|エンティティの一意識別子|
+|managedDeviceId|String|Intune デバイス id|
 |deviceDisplayName|String|デバイスの表示名|
 |userPrincipalName|String|ユーザー プリンシパル名|
-|state|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|セキュリティベースラインコンプライアンスの状態。 可能な値は `unknown`、`secure`、`notApplicable`、`notSecure`、`error`、`conflict` です。|
+|state|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|セキュリティベースラインコンプライアンスの状態。 使用可能な値: `unknown`、`secure`、`notApplicable`、`notSecure`、`error`、`conflict`。|
 |lastReportedDateTime|DateTimeOffset|ポリシーレポートの最終変更日時|
 
 
@@ -98,7 +98,6 @@ Content-Length: 359
   "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
 }
 ```
-
 
 
 

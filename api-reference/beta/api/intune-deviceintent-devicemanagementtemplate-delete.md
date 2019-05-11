@@ -1,23 +1,23 @@
 ---
-title: devicemanagementtemplate の削除
-description: devicemanagementtemplate を削除します。
-author: tfitzmac
+title: DeviceManagementTemplate の削除
+description: DeviceManagementTemplate を削除します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d4c36d8d1f0283c22fca2a690b2c19f4d67861da
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e7ff1fb6603eeea6194d950e203b03253ee406bd
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32466561"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33915861"
 ---
-# <a name="delete-devicemanagementtemplate"></a>devicemanagementtemplate の削除
+# <a name="delete-devicemanagementtemplate"></a>DeviceManagementTemplate の削除
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[devicemanagementtemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)を削除します。
+[Devicemanagementtemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)を削除します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -35,6 +35,7 @@ ms.locfileid: "32466561"
 -->
 ``` http
 DELETE /deviceManagement/templates/{deviceManagementTemplateId}
+DELETE /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{deviceManagementTemplateId}
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
@@ -62,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/templates/{deviceManage
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

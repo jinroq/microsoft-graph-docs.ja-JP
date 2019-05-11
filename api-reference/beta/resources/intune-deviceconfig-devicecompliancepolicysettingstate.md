@@ -1,21 +1,21 @@
 ---
 title: deviceCompliancePolicySettingState リソースの種類
 description: 特定のデバイスに関する、デバイス コンプライアンス ポリシーの設定状態です。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b6c204294190f2f585ad19f7cad4f68e2f7fcc03
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 22e71dc6a272a0e49e3ff0f60af90f63c44b3cfa
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32565822"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33947126"
 ---
 # <a name="devicecompliancepolicysettingstate-resource-type"></a>deviceCompliancePolicySettingState リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 特定のデバイスに関する、デバイス コンプライアンス ポリシーの設定状態です。
 
@@ -68,7 +68,6 @@ ms.locfileid: "32565822"
   "currentValue": "String"
 }
 ```
-
 
 
 

@@ -1,21 +1,21 @@
 ---
 title: sharedPCConfiguration の更新
 description: sharedPCConfiguration オブジェクトのプロパティを更新します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ecc5c3cbb7d63195fc832177a391231a051d77fb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b001e650e511a72c418704f7aac420fe25894ae9
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32518045"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33921857"
 ---
 # <a name="update-sharedpcconfiguration"></a>sharedPCConfiguration の更新
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [sharedPCConfiguration](../resources/intune-deviceconfig-sharedpcconfiguration.md) オブジェクトのプロパティを更新します。
 
@@ -52,32 +52,32 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列型 (String)|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|id|文字列|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |supportsScopeTags|Boolean|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|説明|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|description|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|管理者が指定した、デバイス構成の名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |accountManagerPolicy|[sharedPCAccountManagerPolicy](../resources/intune-deviceconfig-sharedpcaccountmanagerpolicy.md)|共有の PC 上でアカウントを管理する方法を指定します。 disableAccountManager が false の場合にのみ適用されます。|
-|allowedAccounts|[sharedpcallowedaccounttype](../resources/intune-deviceconfig-sharedpcallowedaccounttype.md)|共有の PC で使用できるアカウントの種類を示します。 使用可能な値は、`notConfigured`、`guest`、`domain` です。|
-|localStorage|[購入](../resources/intune-shared-enablement.md)|共有の PC でローカル ストレージを許可するかどうかを指定します。 使用可能な値は、`notConfigured`、`enabled`、`disabled` です。|
+|allowedAccounts|[sharedPCAllowedAccountType](../resources/intune-deviceconfig-sharedpcallowedaccounttype.md)|共有の PC で使用できるアカウントの種類を示します。 可能な値は、`notConfigured`、`guest`、`domain` です。|
+|localStorage|[購入](../resources/intune-shared-enablement.md)|共有の PC でローカル ストレージを許可するかどうかを指定します。 可能な値は、`notConfigured`、`enabled`、`disabled` です。|
 |allowLocalStorage|Boolean|共有の PC でローカル ストレージを許可するかどうかを指定します。|
-|setaccountmanager|[購入](../resources/intune-shared-enablement.md)|共有 PC モードのアカウント マネージャーを無効にします。 使用可能な値は、`notConfigured`、`enabled`、`disabled` です。|
+|setAccountManager|[購入](../resources/intune-shared-enablement.md)|共有 PC モードのアカウント マネージャーを無効にします。 可能な値は、`notConfigured`、`enabled`、`disabled` です。|
 |disableAccountManager|Boolean|共有 PC モードのアカウント マネージャーを無効にします。|
-|setEduPolicies|[購入](../resources/intune-shared-enablement.md)|既定の共有 PC 教育環境ポリシーを有効/無効にするか、構成しないかを指定します。 Windows 10 RS2 以降では、このポリシーは Enabled を true に設定しなくても適用されます。 使用可能な値は、`notConfigured`、`enabled`、`disabled` です。|
+|setEduPolicies|[購入](../resources/intune-shared-enablement.md)|既定の共有 PC 教育環境ポリシーを有効/無効にするか、構成しないかを指定します。 Windows 10 RS2 以降では、このポリシーは Enabled を true に設定しなくても適用されます。 可能な値は、`notConfigured`、`enabled`、`disabled` です。|
 |disableEduPolicies|Boolean|既定の共有 PC 教育環境ポリシーを無効にするかどうかを指定します。 Windows 10 RS2 以降では、このポリシーは Enabled を true に設定しなくても適用されます。|
-|setpowerpolicies|[購入](../resources/intune-shared-enablement.md)|既定の共有 PC 電源ポリシーを有効または無効にするかどうかを指定します。 使用可能な値は、`notConfigured`、`enabled`、`disabled` です。|
+|setPowerPolicies|[購入](../resources/intune-shared-enablement.md)|既定の共有 PC 電源ポリシーを有効または無効にするかどうかを指定します。 可能な値は、`notConfigured`、`enabled`、`disabled` です。|
 |disablePowerPolicies|Boolean|既定の共有 PC 電源ポリシーを無効にするかどうかを指定します。|
-|signInOnResume|[購入](../resources/intune-shared-enablement.md)|デバイスがスリープモードから復帰したときに毎回サインインする必要があることを指定します。 使用可能な値は、`notConfigured`、`enabled`、`disabled` です。|
+|signInOnResume|[購入](../resources/intune-shared-enablement.md)|デバイスがスリープモードから復帰したときに毎回サインインする必要があることを指定します。 可能な値は、`notConfigured`、`enabled`、`disabled` です。|
 |disableSignInOnResume|Boolean|デバイスがスリープ モードから再開するたびにサインインを求める設定を無効にします。|
 |enabled|ブール型 (Boolean)|共有 PC モードを有効にし、共有 PC のポリシーを適用します。|
 |idleTimeBeforeSleepInSeconds|Int32|PC がスリープ状態になるまでにデバイスがアイドル状態を続ける時間を秒単位で指定します。 この値を 0 に設定すると、スリープ タイムアウトは発生しなくなります。|
 |kioskAppDisplayName|String|SetKioskAppUserModelId で指定されたアプリを起動するサインイン画面に表示されるアカウントの表示テキストを指定します。 KioskAppUserModelId が設定されている場合にのみ適用されます。|
 |kioskAppUserModelId|String|割り当てられたアクセスで使用するアプリのアプリケーション ユーザー モデル ID を指定します。|
 |maintenanceStartTime|TimeOfDay|毎日のメンテナンス時間の開始時刻を指定します。|
-|fastfirstsignin|[購入](../resources/intune-shared-enablement.md)|管理者以外の新しい Azure AD アカウントを事前に構成された候補ローカルアカウントに自動的に接続するかどうかを指定します。 可能な値は、`notConfigured`、`enabled`、`disabled` です。|
+|fastFirstSignIn|[購入](../resources/intune-shared-enablement.md)|管理者以外の新しい Azure AD アカウントを事前に構成された候補ローカルアカウントに自動的に接続するかどうかを指定します。 可能な値は、`notConfigured`、`enabled`、`disabled` です。|
 
 
 
@@ -174,7 +174,6 @@ Content-Length: 1319
   "fastFirstSignIn": "enabled"
 }
 ```
-
 
 
 

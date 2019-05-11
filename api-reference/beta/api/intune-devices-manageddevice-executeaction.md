@@ -1,21 +1,21 @@
 ---
 title: executeAction アクション
 description: まだ文書化されていません
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 12fe1e0974fbbc9e2ae673a10fac20df0de2533f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bf5edf59f0cc96f5f711dd0361e6623cd41b3ebc
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32520187"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33909702"
 ---
 # <a name="executeaction-action"></a>executeAction アクション
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 まだ文書化されていません
 
@@ -53,12 +53,14 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |プロパティ|型|説明|
 |:---|:---|:---|
 |actionName|[managedDeviceRemoteAction](../resources/intune-devices-manageddeviceremoteaction.md)|まだ文書化されていません|
-|deviceids|String コレクション|まだ文書化されていません|
+|keepEnrollmentData|ブール型 (Boolean)|まだ文書化されていません|
+|keepUserData|ブール値|まだ文書化されていません|
+|deviceIds|String コレクション|まだ文書化されていません|
 
 
 
 ## <a name="response"></a>応答
-成功した場合、このアクション`200 OK`は応答コードと、応答本文で[bulkmanageddeviceactionresult](../resources/intune-devices-bulkmanageddeviceactionresult.md)を返します。
+成功した場合、このアクション`200 OK`は応答コードと、応答本文で[Bulkmanageddeviceactionresult](../resources/intune-devices-bulkmanageddeviceactionresult.md)を返します。
 
 ## <a name="example"></a>例
 
@@ -68,10 +70,12 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/executeAction
 
 Content-type: application/json
-Content-length: 78
+Content-length: 134
 
 {
   "actionName": "delete",
+  "keepEnrollmentData": true,
+  "keepUserData": true,
   "deviceIds": [
     "Device Ids value"
   ]
@@ -103,7 +107,6 @@ Content-Length: 385
   }
 }
 ```
-
 
 
 

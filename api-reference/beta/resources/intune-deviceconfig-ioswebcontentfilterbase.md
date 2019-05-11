@@ -1,29 +1,29 @@
 ---
 title: iosWebContentFilterBase リソースの種類
-description: iOS Web コンテンツフィルターの設定基本タイプを表します。 空の抽象ベース。 発信者は、構成に派生型の1つを使用する必要があります。
-author: tfitzmac
+description: IOS Web コンテンツフィルターの設定基本タイプを表します。 空の抽象ベース。 発信者は、構成に派生型の1つを使用する必要があります。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8b6edda75e538bcd9fa6efdf47a8c36909205409
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: aa7578c3327bb8fbc3bf4d63b51c1b8f0c47ae25
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32460458"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946435"
 ---
 # <a name="ioswebcontentfilterbase-resource-type"></a>iosWebContentFilterBase リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-iOS Web コンテンツフィルターの設定基本タイプを表します。 空の抽象ベース。 発信者は、構成に派生型の1つを使用する必要があります。
+IOS Web コンテンツフィルターの設定基本タイプを表します。 空の抽象ベース。 発信者は、構成に派生型の1つを使用する必要があります。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -38,7 +38,6 @@ iOS Web コンテンツフィルターの設定基本タイプを表します。
   "@odata.type": "#microsoft.graph.iosWebContentFilterBase"
 }
 ```
-
 
 
 

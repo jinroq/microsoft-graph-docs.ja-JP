@@ -1,21 +1,21 @@
 ---
-title: androidforwork trustedrootcertificate リソースの種類
+title: Androidforwork Trustedrootcertificate リソースの種類
 description: Android For Work の信頼できるルート証明書構成プロファイル
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 572fbc9d633eb623ac3e4f50a6642c91b8ef0c9c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 74269849edd8bc3a8269982086490caf7594f587
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556265"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33948521"
 ---
-# <a name="androidforworktrustedrootcertificate-resource-type"></a>androidforwork trustedrootcertificate リソースの種類
+# <a name="androidforworktrustedrootcertificate-resource-type"></a>Androidforwork Trustedrootcertificate リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 Android For Work の信頼できるルート証明書構成プロファイル
 
@@ -25,27 +25,27 @@ Android For Work の信頼できるルート証明書構成プロファイル
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[リスト androidforwork trustedrootcertificates](../api/intune-deviceconfig-androidforworktrustedrootcertificate-list.md)|[androidforwork trustedrootcertificate](../resources/intune-deviceconfig-androidforworktrustedrootcertificate.md)コレクション|[androidforwork trustedrootcertificate](../resources/intune-deviceconfig-androidforworktrustedrootcertificate.md)オブジェクトのプロパティとリレーションシップをリストします。|
-|[androidforwork trustedrootcertificate の取得](../api/intune-deviceconfig-androidforworktrustedrootcertificate-get.md)|[androidForWorkTrustedRootCertificate](../resources/intune-deviceconfig-androidforworktrustedrootcertificate.md)|[androidforwork trustedrootcertificate](../resources/intune-deviceconfig-androidforworktrustedrootcertificate.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[androidforwork trustedrootcertificate の作成](../api/intune-deviceconfig-androidforworktrustedrootcertificate-create.md)|[androidForWorkTrustedRootCertificate](../resources/intune-deviceconfig-androidforworktrustedrootcertificate.md)|新しい[androidforwork trustedrootcertificate](../resources/intune-deviceconfig-androidforworktrustedrootcertificate.md)オブジェクトを作成します。|
-|[androidforwork trustedrootcertificate の削除](../api/intune-deviceconfig-androidforworktrustedrootcertificate-delete.md)|なし|[androidforwork trustedrootcertificate](../resources/intune-deviceconfig-androidforworktrustedrootcertificate.md)を削除します。|
-|[androidforwork trustedrootcertificate の更新](../api/intune-deviceconfig-androidforworktrustedrootcertificate-update.md)|[androidForWorkTrustedRootCertificate](../resources/intune-deviceconfig-androidforworktrustedrootcertificate.md)|[androidforwork trustedrootcertificate](../resources/intune-deviceconfig-androidforworktrustedrootcertificate.md)オブジェクトのプロパティを更新します。|
+|[リスト Androidforwork Trustedrootcertificates](../api/intune-deviceconfig-androidforworktrustedrootcertificate-list.md)|[Androidforwork Trustedrootcertificate](../resources/intune-deviceconfig-androidforworktrustedrootcertificate.md)コレクション|[Androidforwork Trustedrootcertificate](../resources/intune-deviceconfig-androidforworktrustedrootcertificate.md)オブジェクトのプロパティとリレーションシップをリストします。|
+|[Androidforwork Trustedrootcertificate の取得](../api/intune-deviceconfig-androidforworktrustedrootcertificate-get.md)|[androidForWorkTrustedRootCertificate](../resources/intune-deviceconfig-androidforworktrustedrootcertificate.md)|[Androidforwork Trustedrootcertificate](../resources/intune-deviceconfig-androidforworktrustedrootcertificate.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[Androidforwork Trustedrootcertificate の作成](../api/intune-deviceconfig-androidforworktrustedrootcertificate-create.md)|[androidForWorkTrustedRootCertificate](../resources/intune-deviceconfig-androidforworktrustedrootcertificate.md)|新しい[Androidforwork Trustedrootcertificate](../resources/intune-deviceconfig-androidforworktrustedrootcertificate.md)オブジェクトを作成します。|
+|[Androidforwork Trustedrootcertificate の削除](../api/intune-deviceconfig-androidforworktrustedrootcertificate-delete.md)|None|[Androidforwork Trustedrootcertificate](../resources/intune-deviceconfig-androidforworktrustedrootcertificate.md)を削除します。|
+|[Androidforwork Trustedrootcertificate の更新](../api/intune-deviceconfig-androidforworktrustedrootcertificate-update.md)|[androidForWorkTrustedRootCertificate](../resources/intune-deviceconfig-androidforworktrustedrootcertificate.md)|[Androidforwork Trustedrootcertificate](../resources/intune-deviceconfig-androidforworktrustedrootcertificate.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|文字列型 (String)|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|id|文字列|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|supportsScopeTags|ブール値|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|supportsScopeTags|Boolean|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |description|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|管理者が指定した、デバイス構成の名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |trustedRootCertificate|Binary|信頼できるルート証明書|
-|certfilename|String|UI に表示されるファイル名。|
+|certFileName|String|UI に表示されるファイル名。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)コレクション|デバイスの構成プロファイルのグループ割り当てのリストです。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
@@ -81,7 +81,6 @@ Android For Work の信頼できるルート証明書構成プロファイル
   "certFileName": "String"
 }
 ```
-
 
 
 
