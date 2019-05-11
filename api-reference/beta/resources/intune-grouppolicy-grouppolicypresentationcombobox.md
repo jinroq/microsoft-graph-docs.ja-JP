@@ -1,51 +1,51 @@
 ---
-title: grouppolicypresentationcombobox リソースの種類
-description: admx comboBox 要素と admx テキスト要素を表します。
-author: tfitzmac
+title: groupPolicyPresentationComboBox リソースの種類
+description: ADMX comboBox 要素と ADMX テキスト要素を表します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 83355dfc472945b0dd647622860d6304b01d716f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 637c314d74a7db202f04c1281390467d4ae929d3
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575871"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941115"
 ---
-# <a name="grouppolicypresentationcombobox-resource-type"></a>grouppolicypresentationcombobox リソースの種類
+# <a name="grouppolicypresentationcombobox-resource-type"></a>groupPolicyPresentationComboBox リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-admx comboBox 要素と admx テキスト要素を表します。
+ADMX comboBox 要素と ADMX テキスト要素を表します。
 
 
-[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。
+[GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。
 
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[リスト grouppolicypresentationcomboboxes ボックス](../api/intune-grouppolicy-grouppolicypresentationcombobox-list.md)|[grouppolicypresentationcombobox](../resources/intune-grouppolicy-grouppolicypresentationcombobox.md)コレクション|[grouppolicypresentationcombobox](../resources/intune-grouppolicy-grouppolicypresentationcombobox.md)オブジェクトのプロパティとリレーションシップをリストします。|
-|[grouppolicypresentationcombobox の取得](../api/intune-grouppolicy-grouppolicypresentationcombobox-get.md)|[grouppolicypresentationcombobox](../resources/intune-grouppolicy-grouppolicypresentationcombobox.md)|[grouppolicypresentationcombobox](../resources/intune-grouppolicy-grouppolicypresentationcombobox.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[grouppolicypresentationcombobox の作成](../api/intune-grouppolicy-grouppolicypresentationcombobox-create.md)|[grouppolicypresentationcombobox](../resources/intune-grouppolicy-grouppolicypresentationcombobox.md)|新しい[grouppolicypresentationcombobox](../resources/intune-grouppolicy-grouppolicypresentationcombobox.md)オブジェクトを作成します。|
-|[grouppolicypresentationcombobox の削除](../api/intune-grouppolicy-grouppolicypresentationcombobox-delete.md)|なし|[grouppolicypresentationcombobox](../resources/intune-grouppolicy-grouppolicypresentationcombobox.md)を削除します。|
-|[grouppolicypresentationcombobox の更新](../api/intune-grouppolicy-grouppolicypresentationcombobox-update.md)|[grouppolicypresentationcombobox](../resources/intune-grouppolicy-grouppolicypresentationcombobox.md)|[grouppolicypresentationcombobox](../resources/intune-grouppolicy-grouppolicypresentationcombobox.md)オブジェクトのプロパティを更新します。|
+|[リスト groupPolicyPresentationComboBoxes ボックス](../api/intune-grouppolicy-grouppolicypresentationcombobox-list.md)|[Grouppolicypresentationcombobox](../resources/intune-grouppolicy-grouppolicypresentationcombobox.md)コレクション|[Grouppolicypresentationcombobox](../resources/intune-grouppolicy-grouppolicypresentationcombobox.md)オブジェクトのプロパティとリレーションシップをリストします。|
+|[GroupPolicyPresentationComboBox の取得](../api/intune-grouppolicy-grouppolicypresentationcombobox-get.md)|[groupPolicyPresentationComboBox](../resources/intune-grouppolicy-grouppolicypresentationcombobox.md)|[Grouppolicypresentationcombobox](../resources/intune-grouppolicy-grouppolicypresentationcombobox.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[GroupPolicyPresentationComboBox の作成](../api/intune-grouppolicy-grouppolicypresentationcombobox-create.md)|[groupPolicyPresentationComboBox](../resources/intune-grouppolicy-grouppolicypresentationcombobox.md)|新しい[Grouppolicypresentationcombobox](../resources/intune-grouppolicy-grouppolicypresentationcombobox.md)オブジェクトを作成します。|
+|[GroupPolicyPresentationComboBox の削除](../api/intune-grouppolicy-grouppolicypresentationcombobox-delete.md)|None|[Grouppolicypresentationcombobox](../resources/intune-grouppolicy-grouppolicypresentationcombobox.md)を削除します。|
+|[GroupPolicyPresentationComboBox の更新](../api/intune-grouppolicy-grouppolicypresentationcombobox-update.md)|[groupPolicyPresentationComboBox](../resources/intune-grouppolicy-grouppolicypresentationcombobox.md)|[Grouppolicypresentationcombobox](../resources/intune-grouppolicy-grouppolicypresentationcombobox.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|label|String|任意のプレゼンテーションエンティティのローカライズされたテキストラベル。 既定値は空白です。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
-|id|String|エンティティのキー。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
-|lastModifiedDateTime|DateTimeOffset|エンティティが最後に変更された日付と時刻。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
+|label|String|任意のプレゼンテーションエンティティのローカライズされたテキストラベル。 既定値は空白です。 [GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
+|id|String|エンティティのキー。 [GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
+|lastModifiedDateTime|DateTimeOffset|エンティティが最後に変更された日付と時刻。 [GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
 |defaultValue|String|コンボボックスに表示されるローカライズされた既定の文字列。 既定値は空白です。|
 |助言|String collection|コンボボックスのドロップダウンリストに表示されるローカライズされた文字列。 既定値は空白です。|
 |必須|Boolean|パラメーターに値を指定する必要があるかどうかを指定します。 既定値は false です。|
 |maxLength|Int64|パラメーターのテキスト文字の最大数を指定する符号なし整数。 既定値は1023です。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 |リレーションシップ|型|説明|
 |:---|:---|:---|
-|definition|[grouppolicydefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|プレゼンテーションに関連付けられたグループポリシーの定義。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
+|definition|[groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|プレゼンテーションに関連付けられたグループポリシーの定義。 [GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
@@ -69,7 +69,6 @@ admx comboBox 要素と admx テキスト要素を表します。
   "maxLength": 1024
 }
 ```
-
 
 
 

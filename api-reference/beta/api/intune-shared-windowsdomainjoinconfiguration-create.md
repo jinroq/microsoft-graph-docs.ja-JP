@@ -1,23 +1,23 @@
 ---
-title: windowsdomainjoinconfiguration の作成
-description: 新しい windowsdomainjoinconfiguration オブジェクトを作成します。
-author: tfitzmac
+title: WindowsDomainJoinConfiguration の作成
+description: 新しい windowsDomainJoinConfiguration オブジェクトを作成します。
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: c462608c5595bbb1b0644b6e99285f87347d8065
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7d20a752b5ce4ba2fb55c8cbe7e41d5221c44a4d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526854"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33898165"
 ---
-# <a name="create-windowsdomainjoinconfiguration"></a>windowsdomainjoinconfiguration の作成
+# <a name="create-windowsdomainjoinconfiguration"></a>WindowsDomainJoinConfiguration の作成
 
-> **重要:** Microsoft Graph の/ベータ版の api は変更される可能性があります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** Microsoft Graph の/ベータ版の Api は変更される可能性があります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-新しい[windowsdomainjoinconfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md)オブジェクトを作成します。
+新しい[Windowsdomainjoinconfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md)オブジェクトを作成します。
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -47,16 +47,16 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 ## <a name="request-body"></a>要求本文
 
-要求本文で、windowsdomainjoinconfiguration オブジェクトの JSON 表記を指定します。
+要求本文で、windowsDomainJoinConfiguration オブジェクトの JSON 表記を指定します。
 
-次の表に、windowsdomainjoinconfiguration の作成時に必要なプロパティを示します。
+次の表に、windowsDomainJoinConfiguration の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列型 (String)|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|id|文字列|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |**デバイス構成**|
 |activeDirectoryDomainName|String|参加する Active Directory ドメイン名。|
-|computernamestaticprefix|String|コンピューター名に使用する固定のプレフィックス。|
+|computerNameStaticPrefix|String|コンピューター名に使用する固定のプレフィックス。|
 |computerNameSuffixRandomCharCount|Int32|コンピューター名のサフィックスとして使用される動的に生成される文字。 有効な値は 3 ~ 14|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |description|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
@@ -64,14 +64,14 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |organizationalUnit|String|コンピューターアカウントを作成する組織単位 (OU)。 このパラメーターが NULL の場合は、既知のコンピューターオブジェクトコンテナーがドメイン内で公開されているものとして使用されます。|
 |roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|supportsScopeTags|ブール値|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|supportsScopeTags|Boolean|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 
 
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[windowsdomainjoinconfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md)オブジェクトを返します。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[Windowsdomainjoinconfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

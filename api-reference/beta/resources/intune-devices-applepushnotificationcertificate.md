@@ -1,21 +1,21 @@
 ---
 title: applePushNotificationCertificate リソースの種類
 description: Apple プッシュ通知証明書。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6513e088c07fcc8d3b98b90a52d8d98f9df4a74c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9adcc496943118f268b8977a4134c4e434130bad
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32571794"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943208"
 ---
 # <a name="applepushnotificationcertificate-resource-type"></a>applePushNotificationCertificate リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 Apple プッシュ通知証明書。
 
@@ -34,7 +34,7 @@ Apple プッシュ通知証明書。
 |topicIdentifier|String|トピック ID。|
 |lastModifiedDateTime|DateTimeOffset|Apple プッシュ通知証明書の最終変更日時。|
 |expirationDateTime|DateTimeOffset|Apple プッシュ通知証明書の有効期限。|
-|certificateuploadstatus|String|証明書のアップロード状態。|
+|certificateUploadStatus|String|証明書のアップロード状態。|
 |certificateUploadFailureReason|String|証明書のアップロードが失敗した理由。|
 |certificate|String|まだ文書化されていません|
 
@@ -62,7 +62,6 @@ Apple プッシュ通知証明書。
   "certificate": "String"
 }
 ```
-
 
 
 

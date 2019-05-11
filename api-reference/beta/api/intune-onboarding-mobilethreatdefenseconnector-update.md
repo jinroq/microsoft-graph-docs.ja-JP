@@ -1,21 +1,21 @@
 ---
 title: mobileThreatDefenseConnector の更新
 description: mobileThreatDefenseConnector オブジェクトのプロパティを更新します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d420b41c4de711a501420ed0ec05b4f65f03a149
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7135cc90788aa2819f2a5b1d5d3e107e8dd77d3a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32528674"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33900006"
 ---
 # <a name="update-mobilethreatdefenseconnector"></a>mobileThreatDefenseConnector の更新
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md) オブジェクトのプロパティを更新します。
 
@@ -52,18 +52,18 @@ PATCH /deviceManagement/mobileThreatDefenseConnectors/{mobileThreatDefenseConnec
 |:---|:---|:---|
 |id|String|まだ文書化されていません|
 |lastHeartbeatDateTime|DateTimeOffset|データ同期パートナーから受信した最後のハートビートの日時|
-|partnerState|[mobileThreatPartnerTenantState](../resources/intune-onboarding-mobilethreatpartnertenantstate.md)|このアカウントのデータ同期パートナーの状態。 可能な値は、`unavailable`、`available`、`enabled`、`unresponsive` です。|
-|androidEnabled|ブール値|Android において、準拠評価時にデータ同期パートナーからのデータを使用するかどうかを設定します|
-|iosEnabled|ブール値|IOS において、準拠評価時にデータ同期パートナーからのデータを使用するかどうかを取得または設定します|
-|windowsenabled|ブール値|Windows の場合は、コンプライアンスの評価時にデータ同期パートナーからのデータを使用するかどうかを取得または設定します。|
-|macenabled|ブール値|Mac の場合は、コンプライアンス評価中にデータ同期パートナーからのデータを使用する必要があるかどうかを取得または設定します。|
-|androidDeviceBlockedOnMissingPartnerData|ブール値|Android において、デバイスを準拠させる前に Intune がデータ同期パートナーからデータを受信する必要があるかどうかを設定します|
-|iosDeviceBlockedOnMissingPartnerData|ブール値|IOS において、デバイスを準拠させる前に Intune がデータ同期パートナーからデータを受信する必要があるかどうかを設定します|
-|windowsDeviceBlockedOnMissingPartnerData|ブール値|Windows の場合は、デバイスに準拠したマークを付ける前に、Intune がデータ同期パートナーからデータを受信する必要があるかどうかを設定します。|
-|macDeviceBlockedOnMissingPartnerData|ブール値|Mac の場合、デバイスに準拠させる前に Intune がデータ同期パートナーからデータを受信する必要があるかどうかを取得または設定します。|
+|partnerState|[mobileThreatPartnerTenantState](../resources/intune-onboarding-mobilethreatpartnertenantstate.md)|このアカウントのデータ同期パートナーの状態。 使用可能な値は、`unavailable`、`available`、`enabled`、`unresponsive` です。|
+|androidEnabled|Boolean|Android において、準拠評価時にデータ同期パートナーからのデータを使用するかどうかを設定します|
+|iosEnabled|Boolean|IOS において、準拠評価時にデータ同期パートナーからのデータを使用するかどうかを取得または設定します|
+|windowsEnabled|Boolean|Windows の場合は、コンプライアンスの評価時にデータ同期パートナーからのデータを使用するかどうかを取得または設定します。|
+|macEnabled|Boolean|Mac の場合は、コンプライアンス評価中にデータ同期パートナーからのデータを使用する必要があるかどうかを取得または設定します。|
+|androidDeviceBlockedOnMissingPartnerData|Boolean|Android において、デバイスを準拠させる前に Intune がデータ同期パートナーからデータを受信する必要があるかどうかを設定します|
+|iosDeviceBlockedOnMissingPartnerData|Boolean|IOS において、デバイスを準拠させる前に Intune がデータ同期パートナーからデータを受信する必要があるかどうかを設定します|
+|windowsDeviceBlockedOnMissingPartnerData|Boolean|Windows の場合は、デバイスに準拠したマークを付ける前に、Intune がデータ同期パートナーからデータを受信する必要があるかどうかを設定します。|
+|macDeviceBlockedOnMissingPartnerData|Boolean|Mac の場合、デバイスに準拠させる前に Intune がデータ同期パートナーからデータを受信する必要があるかどうかを取得または設定します。|
 |partnerUnsupportedOsVersionBlocked|ブール型|データ同期パートナーの最小バージョンの要件を満たさない、有効なプラットフォーム上のデバイスをブロックするかどうかを取得または設定します|
 |partnerUnresponsivenessThresholdInDays|Int32|このパートナー統合に関する、テナントごとの無応答許容範囲を取得または設定します|
-|allowPartnerToCollectIOSApplicationMetadata|ブール値|IOS デバイスでは、管理者が、インストールされたアプリケーションに関するメタデータを Intune からも収集できるかどうかを管理者が構成できるようにします。|
+|allowPartnerToCollectIOSApplicationMetadata|Boolean|IOS デバイスでは、管理者が、インストールされたアプリケーションに関するメタデータを Intune からも収集できるかどうかを管理者が構成できるようにします。|
 
 
 
@@ -122,7 +122,6 @@ Content-Length: 671
   "allowPartnerToCollectIOSApplicationMetadata": true
 }
 ```
-
 
 
 

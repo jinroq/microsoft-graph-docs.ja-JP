@@ -1,21 +1,21 @@
 ---
 title: defaultManagedAppProtections のリスト
 description: defaultManagedAppProtection オブジェクトのプロパティとリレーションシップをリストします。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 42b5fc9090508f426de8407bea7f00d995bd8dad
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f7f4f2e6149e179620d74f152315dce74e4ac8ec
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32530397"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33903951"
 ---
 # <a name="list-defaultmanagedappprotections"></a>defaultManagedAppProtections のリスト
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md) オブジェクトのプロパティとリレーションシップをリストします。
 
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/defaultManagedAppProtec
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4092
+Content-Length: 4254
 
 {
   "value": [
@@ -147,19 +147,20 @@ Content-Length: 4092
       "appActionIfIosDeviceModelNotAllowed": "wipe",
       "allowedAndroidDeviceManufacturers": "Allowed Android Device Manufacturers value",
       "appActionIfAndroidDeviceManufacturerNotAllowed": "wipe",
-      "thirdPartyKeyboardsBlocked": true,
       "filterOpenInToOnlyManagedApps": true,
       "disableProtectionOfManagedOutboundOpenInData": true,
       "protectInboundDataFromUnknownSources": true,
       "requiredAndroidSafetyNetDeviceAttestationType": "basicIntegrity",
       "appActionIfAndroidSafetyNetDeviceAttestationFailed": "wipe",
       "requiredAndroidSafetyNetAppsVerificationType": "enabled",
-      "appActionIfAndroidSafetyNetAppsVerificationFailed": "wipe"
+      "appActionIfAndroidSafetyNetAppsVerificationFailed": "wipe",
+      "customBrowserProtocol": "Custom Browser Protocol value",
+      "customBrowserPackageId": "Custom Browser Package Id value",
+      "customBrowserDisplayName": "Custom Browser Display Name value"
     }
   ]
 }
 ```
-
 
 
 

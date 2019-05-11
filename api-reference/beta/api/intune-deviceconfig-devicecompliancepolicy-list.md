@@ -1,21 +1,21 @@
 ---
 title: deviceCompliancePolicies のリスト
 description: deviceCompliancePolicy オブジェクトのプロパティとリレーションシップをリストします。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: af4fcaaf4a81a56e7afbaec52780c83956e0b486
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f2d0958687dc93b19faa47980fa7a77038116b48
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32470560"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33927812"
 ---
 # <a name="list-devicecompliancepolicies"></a>deviceCompliancePolicies のリスト
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) オブジェクトのプロパティとリレーションシップをリストします。
 
@@ -81,7 +81,6 @@ Content-Length: 467
   ]
 }
 ```
-
 
 
 

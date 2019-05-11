@@ -1,21 +1,21 @@
 ---
-title: runschedule リソースの種類
+title: runSchedule リソースの種類
 description: 定期的なデバイス管理スクリプトのスケジュールを実行します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9ed3fb0705ce7ec0405549b8dc83f57c1782ef4b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f9e033ee06818b596b766ca19e92dd6fb9969eb4
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526203"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941787"
 ---
-# <a name="runschedule-resource-type"></a>runschedule リソースの種類
+# <a name="runschedule-resource-type"></a>runSchedule リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 定期的なデバイス管理スクリプトのスケジュールを実行します。
 
@@ -23,7 +23,7 @@ ms.locfileid: "32526203"
 |プロパティ|型|説明|
 |:---|:---|:---|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -38,7 +38,6 @@ ms.locfileid: "32526203"
   "@odata.type": "#microsoft.graph.runSchedule"
 }
 ```
-
 
 
 

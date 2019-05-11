@@ -1,23 +1,23 @@
 ---
 title: リスト groupPolicyPresentationLongDecimalTextBoxes
-description: groupPolicyPresentationLongDecimalTextBox オブジェクトのプロパティとリレーションシップをリストします。
-author: tfitzmac
+description: GroupPolicyPresentationLongDecimalTextBox オブジェクトのプロパティとリレーションシップをリストします。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b3cad9441a4650f5437d3a03444106a5f9fc7ffc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 03d40e012f1a89a50bae80dda5b02952b9cb4cf7
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32531069"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33904777"
 ---
 # <a name="list-grouppolicypresentationlongdecimaltextboxes"></a>リスト groupPolicyPresentationLongDecimalTextBoxes
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[groupPolicyPresentationLongDecimalTextBox](../resources/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox.md)オブジェクトのプロパティとリレーションシップをリストします。
+[GroupPolicyPresentationLongDecimalTextBox](../resources/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox.md)オブジェクトのプロパティとリレーションシップをリストします。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -81,7 +81,6 @@ Content-Length: 411
   ]
 }
 ```
-
 
 
 

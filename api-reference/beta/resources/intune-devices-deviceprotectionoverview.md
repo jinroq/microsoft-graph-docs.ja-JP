@@ -1,39 +1,39 @@
 ---
-title: deviceprotectionoverview リソースの種類
+title: deviceProtectionOverview リソースの種類
 description: 特定のデバイスのハードウェア情報。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3f76918b5a959a6621fb7f5c6480a7a2513afead
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 86f941be55d2871f22900c69ec7f1c209df6737d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32522399"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33942025"
 ---
-# <a name="deviceprotectionoverview-resource-type"></a>deviceprotectionoverview リソースの種類
+# <a name="deviceprotectionoverview-resource-type"></a>deviceProtectionOverview リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 特定のデバイスのハードウェア情報。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|totalreporteddevicecount|Int32|デバイスの合計数。|
+|totalReportedDeviceCount|Int32|デバイスの合計数。|
 |inactiveThreatAgentDeviceCount|Int32|脅威エージェント数が非アクティブなデバイス|
 |unknownStateThreatAgentDeviceCount|Int32|不明な数の脅威エージェントの状態を持つデバイス。|
-|pendingsignatureupdatedevicecount|Int32|署名数が古いデバイス。|
-|cleandevicecount|Int32|デバイス数をクリーニングします。|
-|pendingfullscandevicecount|Int32|保留中のフルスキャンデバイス数。|
+|pendingSignatureUpdateDeviceCount|Int32|署名数が古いデバイス。|
+|cleanDeviceCount|Int32|デバイス数をクリーニングします。|
+|pendingFullScanDeviceCount|Int32|保留中のフルスキャンデバイス数。|
 |pendingRestartDeviceCount|Int32|保留中の再起動デバイス数。|
-|pendingmanualstepsdevicecount|Int32|保留中の手動手順デバイス数。|
+|pendingManualStepsDeviceCount|Int32|保留中の手動手順デバイス数。|
 |pendingOfflineScanDeviceCount|Int32|保留中のオフラインスキャンデバイス数。|
 |criticalFailuresDeviceCount|Int32|重大なエラーデバイス数。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -58,7 +58,6 @@ ms.locfileid: "32522399"
   "criticalFailuresDeviceCount": 1024
 }
 ```
-
 
 
 

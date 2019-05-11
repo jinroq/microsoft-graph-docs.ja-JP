@@ -1,32 +1,32 @@
 ---
-title: grouppolicyconfigurationassignment リソースの種類
+title: groupPolicyConfigurationAssignment リソースの種類
 description: グループポリシー構成割り当てエンティティは、1つ以上の AAD グループを特定のグループポリシー構成に割り当てます。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1f6fcd7ace912075189ec3e9b5a817181dd392a5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b85e3892a92605f4964700bdb9a1a28e5d02187d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575822"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941164"
 ---
-# <a name="grouppolicyconfigurationassignment-resource-type"></a>grouppolicyconfigurationassignment リソースの種類
+# <a name="grouppolicyconfigurationassignment-resource-type"></a>groupPolicyConfigurationAssignment リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 グループポリシー構成割り当てエンティティは、1つ以上の AAD グループを特定のグループポリシー構成に割り当てます。
 
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[grouppolicyconfigurationassignments のリスト](../api/intune-grouppolicy-grouppolicyconfigurationassignment-list.md)|[grouppolicyconfigurationassignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md)コレクション|[grouppolicyconfigurationassignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md)オブジェクトのプロパティとリレーションシップをリストします。|
-|[grouppolicyconfigurationassignment の取得](../api/intune-grouppolicy-grouppolicyconfigurationassignment-get.md)|[grouppolicyconfigurationassignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md)|[grouppolicyconfigurationassignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[grouppolicyconfigurationassignment の作成](../api/intune-grouppolicy-grouppolicyconfigurationassignment-create.md)|[grouppolicyconfigurationassignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md)|新しい[grouppolicyconfigurationassignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md)オブジェクトを作成します。|
-|[grouppolicyconfigurationassignment の削除](../api/intune-grouppolicy-grouppolicyconfigurationassignment-delete.md)|なし|[grouppolicyconfigurationassignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md)を削除します。|
-|[grouppolicyconfigurationassignment の更新](../api/intune-grouppolicy-grouppolicyconfigurationassignment-update.md)|[grouppolicyconfigurationassignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md)|[grouppolicyconfigurationassignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md)オブジェクトのプロパティを更新します。|
+|[GroupPolicyConfigurationAssignments のリスト](../api/intune-grouppolicy-grouppolicyconfigurationassignment-list.md)|[Grouppolicyconfigurationassignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md)コレクション|[Grouppolicyconfigurationassignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md)オブジェクトのプロパティとリレーションシップをリストします。|
+|[GroupPolicyConfigurationAssignment の取得](../api/intune-grouppolicy-grouppolicyconfigurationassignment-get.md)|[groupPolicyConfigurationAssignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md)|[Grouppolicyconfigurationassignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[GroupPolicyConfigurationAssignment の作成](../api/intune-grouppolicy-grouppolicyconfigurationassignment-create.md)|[groupPolicyConfigurationAssignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md)|新しい[Grouppolicyconfigurationassignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md)オブジェクトを作成します。|
+|[GroupPolicyConfigurationAssignment の削除](../api/intune-grouppolicy-grouppolicyconfigurationassignment-delete.md)|None|[Grouppolicyconfigurationassignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md)を削除します。|
+|[GroupPolicyConfigurationAssignment の更新](../api/intune-grouppolicy-grouppolicyconfigurationassignment-update.md)|[groupPolicyConfigurationAssignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md)|[Grouppolicyconfigurationassignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
@@ -56,7 +56,6 @@ ms.locfileid: "32575822"
   }
 }
 ```
-
 
 
 

@@ -1,21 +1,21 @@
 ---
 title: deviceAndAppManagementRoleDefinition の更新
 description: deviceAndAppManagementRoleDefinition オブジェクトのプロパティを更新します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2279a89aa47802b94f58f92851014d1e0b0eb312
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 278dde3d8abb9b57a21f6672d2ebb2602683f68e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32527596"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899558"
 ---
 # <a name="update-deviceandappmanagementroledefinition"></a>deviceAndAppManagementRoleDefinition の更新
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md) オブジェクトのプロパティを更新します。
 
@@ -51,7 +51,7 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列型 (String)|エンティティのキー。 これは読み取り専用で、自動生成されます。 [roleDefinition](../resources/intune-rbac-roledefinition.md) から継承します|
+|id|文字列|エンティティのキー。 これは読み取り専用で、自動生成されます。 [roleDefinition](../resources/intune-rbac-roledefinition.md) から継承します|
 |displayName|String|ロールの定義の表示名。 [roleDefinition](../resources/intune-rbac-roledefinition.md) から継承します|
 |description|String|ロールの定義の説明。 [roleDefinition](../resources/intune-rbac-roledefinition.md) から継承します|
 |アクセス許可|[rolePermission](../resources/intune-rbac-rolepermission.md) コレクション|このロールに実行が許可されている、ロールのアクセス許可のリスト。 これらは、rolePermission の一部として定義されている actionName と一致する必要があります。 [roleDefinition](../resources/intune-rbac-roledefinition.md) から継承します|
@@ -181,7 +181,6 @@ Content-Length: 1278
   ]
 }
 ```
-
 
 
 

@@ -1,33 +1,33 @@
 ---
-title: binarymanagementconditionexpression リソースの種類
+title: binaryManagementConditionExpression リソースの種類
 description: バイナリ演算を使用して評価される管理条件式。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 50092f7031719fb1050706ed81280a347638117d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5a5384a2f5b830323aaf89f2b29e0377c9199d8b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568802"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941332"
 ---
-# <a name="binarymanagementconditionexpression-resource-type"></a>binarymanagementconditionexpression リソースの種類
+# <a name="binarymanagementconditionexpression-resource-type"></a>binaryManagementConditionExpression リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 バイナリ演算を使用して評価される管理条件式。
 
 
-[managementconditionexpression モデル](../resources/intune-fencing-managementconditionexpressionmodel.md)から継承します
+[Managementconditionexpression モデル](../resources/intune-fencing-managementconditionexpressionmodel.md)から継承します
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|operator|[binarymanagementconditionexpression 演算子の種類](../resources/intune-fencing-binarymanagementconditionexpressionoperatortype.md)|二項演算の評価で使用される演算子です。 可能な値は、`or`、`and` です。|
-|firstoperand|[managementconditionexpression モデル](../resources/intune-fencing-managementconditionexpressionmodel.md)|二項演算の最初のオペランド。|
-|この|[managementconditionexpression モデル](../resources/intune-fencing-managementconditionexpressionmodel.md)|二項演算の2番目のオペランド。|
+|operator|[Binarymanagementconditionexpression 演算子の種類](../resources/intune-fencing-binarymanagementconditionexpressionoperatortype.md)|二項演算の評価で使用される演算子です。 可能な値は、`or`、`and` です。|
+|firstOperand|[Managementconditionexpression モデル](../resources/intune-fencing-managementconditionexpressionmodel.md)|二項演算の最初のオペランド。|
+|この|[Managementconditionexpression モデル](../resources/intune-fencing-managementconditionexpressionmodel.md)|二項演算の2番目のオペランド。|
 
 ## <a name="relationships"></a>関係
 なし
@@ -51,7 +51,6 @@ ms.locfileid: "32568802"
   }
 }
 ```
-
 
 
 

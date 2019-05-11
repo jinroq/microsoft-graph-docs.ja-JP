@@ -1,21 +1,21 @@
 ---
 title: deviceAndAppManagementRoleAssignment の更新
 description: deviceAndAppManagementRoleAssignment オブジェクトのプロパティを更新します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 711edd13e1a9a7627dccde60c6522dea346a8a93
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 022ae5e4efb63e2eea2893de7058e44976b18bd8
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32527750"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899656"
 ---
 # <a name="update-deviceandappmanagementroleassignment"></a>deviceAndAppManagementRoleAssignment の更新
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [deviceAndAppManagementRoleAssignment](../resources/intune-rbac-deviceandappmanagementroleassignment.md) オブジェクトのプロパティを更新します。
 
@@ -50,11 +50,11 @@ PATCH /deviceManagement/roleAssignments/{deviceAndAppManagementRoleAssignmentId}
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 これは読み取り専用で、自動生成されます。 [roleAssignment](../resources/intune-rbac-roleassignment.md) から継承します|
+|id|文字列|エンティティのキー。 これは読み取り専用で、自動生成されます。 [roleAssignment](../resources/intune-rbac-roleassignment.md) から継承します|
 |displayName|String|ロール割り当ての表示名またはフレンドリ名。 [roleAssignment](../resources/intune-rbac-roleassignment.md) から継承します|
 |description|String|ロール割り当ての説明。 [roleAssignment](../resources/intune-rbac-roleassignment.md) から継承します|
 |scopeMembers|String collection|役割のスコープ メンバーのセキュリティ グループの ID リスト。  Azure Active Directory の ID です。 [roleAssignment](../resources/intune-rbac-roleassignment.md) から継承します|
-|scopeType|[roleAssignmentScopeType](../resources/intune-rbac-roleassignmentscopetype.md)|役割の割り当てのスコープの種類を指定します。 既定の種類 ' resourcescope ' では、を割り当てることができます。 ' alldevices '、' AllLicensedUsers '、および ' AllDevicesAndLicensedUsers ' の場合、ResourceScopes プロパティは空のままにする必要があります。 [roleassignment](../resources/intune-rbac-roleassignment.md)から継承されます。 可能な値は、`resourceScope`、`allDevices`、`allLicensedUsers`、`allDevicesAndLicensedUsers` です。|
+|scopeType|[roleAssignmentScopeType](../resources/intune-rbac-roleassignmentscopetype.md)|役割の割り当てのスコープの種類を指定します。 既定の種類 ' ResourceScope ' では、を割り当てることができます。 ' AllDevices '、' AllLicensedUsers '、および ' AllDevicesAndLicensedUsers ' の場合、ResourceScopes プロパティは空のままにする必要があります。 [Roleassignment](../resources/intune-rbac-roleassignment.md)から継承されます。 使用可能な値は、`resourceScope`、`allDevices`、`allLicensedUsers`、`allDevicesAndLicensedUsers` です。|
 |resourceScopes|String collection|役割のスコープ メンバーのセキュリティ グループの ID リスト。  Azure Active Directory の ID です。 [roleAssignment](../resources/intune-rbac-roleassignment.md) から継承します|
 |members|String コレクション|ロール メンバーのセキュリティ グループの ID リスト。 Azure Active Directory の ID。|
 
@@ -113,7 +113,6 @@ Content-Length: 391
   ]
 }
 ```
-
 
 
 

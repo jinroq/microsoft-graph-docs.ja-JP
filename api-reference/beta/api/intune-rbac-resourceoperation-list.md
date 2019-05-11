@@ -1,21 +1,21 @@
 ---
 title: resourceOperations のリスト
 description: resourceOperation オブジェクトのプロパティとリレーションシップをリストします。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a556b635e3046844d2efd73cdd7008729e2e481e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8dece4d26b6b07c5d8dc4539a31e9b1acbe791c6
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32527582"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899544"
 ---
 # <a name="list-resourceoperations"></a>resourceOperations のリスト
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [resourceOperation](../resources/intune-rbac-resourceoperation.md) オブジェクトのプロパティとリレーションシップをリストします。
 
@@ -78,7 +78,6 @@ Content-Length: 359
   ]
 }
 ```
-
 
 
 

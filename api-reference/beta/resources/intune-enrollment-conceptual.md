@@ -1,19 +1,19 @@
 ---
 title: Intune を使用して会社のデバイスを登録する-Microsoft Graph API
-description: テナント組織のデバイスを登録する Intune エンドポイント (REST) の Microsoft graph API の一覧を示します。
-author: tfitzmac
+description: テナント組織のデバイスを登録する Intune エンドポイント (REST) の Microsoft Graph API の一覧を示します。
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 4b4100265797fd3cefc60e0288961b74839199c2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d456863ec39479d113299d741470c48323aa4616
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573922"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941598"
 ---
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>Intune を使用して会社所有のデバイスを登録する
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでは、これらの API の使用はサポートされていません。
 
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing)を持っている必要があります。
 

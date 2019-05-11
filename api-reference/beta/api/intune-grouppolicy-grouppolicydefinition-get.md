@@ -1,23 +1,23 @@
 ---
-title: grouppolicydefinition の取得
-description: grouppolicydefinition オブジェクトのプロパティとリレーションシップを読み取ります。
-author: tfitzmac
+title: GroupPolicyDefinition の取得
+description: GroupPolicyDefinition オブジェクトのプロパティとリレーションシップを読み取ります。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 71af6ad469317ba5776fb0d13f464909c30b8394
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 28ee836810647582803837f8bdaf3ab975d76974
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32531398"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33905106"
 ---
-# <a name="get-grouppolicydefinition"></a>grouppolicydefinition の取得
+# <a name="get-grouppolicydefinition"></a>GroupPolicyDefinition の取得
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[grouppolicydefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)オブジェクトのプロパティとリレーションシップを読み取ります。
+[Grouppolicydefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)オブジェクトのプロパティとリレーションシップを読み取ります。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -84,7 +84,6 @@ Content-Length: 435
   }
 }
 ```
-
 
 
 

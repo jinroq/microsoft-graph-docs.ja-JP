@@ -1,21 +1,21 @@
 ---
 title: Delete notificationMessageTemplate
 description: notificationMessageTemplate を削除します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 35c65e217bd3778f36c36cccac53b3d1032a34ca
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c887c2c41d8e194b0f3bb195c77835081ea41a79
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32528947"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33900595"
 ---
 # <a name="delete-notificationmessagetemplate"></a>Delete notificationMessageTemplate
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) を削除します。
 
@@ -62,7 +62,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/notificationMessageTemp
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

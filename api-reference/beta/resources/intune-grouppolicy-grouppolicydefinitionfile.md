@@ -1,46 +1,46 @@
 ---
-title: grouppolicydefinitionfile リソースの種類
+title: groupPolicyDefinitionFile リソースの種類
 description: エンティティは、ADMX (管理用テンプレート) XML ファイルを表します。 ADMX ファイルには、グループポリシー定義のコレクションと、カテゴリパスごとの場所が含まれています。 グループポリシー定義ファイルには、言語に依存する ADML (管理用テンプレート) の言語ファイルによってサポートされている言語も含まれています。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7ecccc683187b592c422d26a6f41bfd15b9d805b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: aa766eace326dd05470b753f8daf6acfa8362e6f
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575997"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941136"
 ---
-# <a name="grouppolicydefinitionfile-resource-type"></a>grouppolicydefinitionfile リソースの種類
+# <a name="grouppolicydefinitionfile-resource-type"></a>groupPolicyDefinitionFile リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 エンティティは、ADMX (管理用テンプレート) XML ファイルを表します。 ADMX ファイルには、グループポリシー定義のコレクションと、カテゴリパスごとの場所が含まれています。 グループポリシー定義ファイルには、言語に依存する ADML (管理用テンプレート) の言語ファイルによってサポートされている言語も含まれています。
 
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[grouppolicydefinitionfile の取得](../api/intune-grouppolicy-grouppolicydefinitionfile-get.md)|[grouppolicydefinitionfile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|[grouppolicydefinitionfile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[grouppolicydefinitionfile の更新](../api/intune-grouppolicy-grouppolicydefinitionfile-update.md)|[grouppolicydefinitionfile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|[grouppolicydefinitionfile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)オブジェクトのプロパティを更新します。|
+|[GroupPolicyDefinitionFile の取得](../api/intune-grouppolicy-grouppolicydefinitionfile-get.md)|[groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|[Grouppolicydefinitionfile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[GroupPolicyDefinitionFile の更新](../api/intune-grouppolicy-grouppolicydefinitionfile-update.md)|[groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|[Grouppolicydefinitionfile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |displayName|String|ADMX ファイルのローカライズされたフレンドリ名。|
-|説明|String|ADMX ファイルのポリシー設定のローカライズされた説明。 既定値は空白です。|
+|description|String|ADMX ファイルのポリシー設定のローカライズされた説明。 既定値は空白です。|
 |languageCodes|String collection|ADMX ファイルでサポートされている言語コード。|
-|targetprefix|String|ADMX ファイル内の名前空間を参照する論理名を指定します。|
+|targetPrefix|String|ADMX ファイル内の名前空間を参照する論理名を指定します。|
 |targetNamespace|String|ADMX ファイル内の名前空間を識別するために使用する URI を指定します。|
-|msrtcsip-policytype|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|グループポリシーの種類を指定します。 可能な値は、`admxBacked`、`admxIngested` です。|
-|id|String|エンティティのキー。|
+|Msrtcsip-policytype|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|グループポリシーの種類を指定します。 可能な値は、`admxBacked`、`admxIngested` です。|
+|id|文字列|エンティティのキー。|
 |lastModifiedDateTime|DateTimeOffset|エンティティが最後に変更された日付と時刻。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 |リレーションシップ|型|説明|
 |:---|:---|:---|
-|構造|[grouppolicydefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)コレクション|ファイルに関連付けられたグループポリシーの定義。|
+|構造|[Grouppolicydefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)コレクション|ファイルに関連付けられたグループポリシーの定義。|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
@@ -65,7 +65,6 @@ ms.locfileid: "32575997"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

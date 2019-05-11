@@ -1,21 +1,21 @@
 ---
 title: List vppTokens
 description: vppToken オブジェクトのプロパティとリレーションシップを一覧表示します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6a5c0a01b324bf28ca58f6854e7913b52d2b284e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9adbf4b8bf156bbcc752742abc47d58ad4c82c0d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32527998"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899768"
 ---
 # <a name="list-vpptokens"></a>List vppTokens
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [vppToken](../resources/intune-onboarding-vpptoken.md) オブジェクトのプロパティとリレーションシップを一覧表示します。
 
@@ -100,7 +100,6 @@ Content-Length: 1264
   ]
 }
 ```
-
 
 
 

@@ -1,23 +1,23 @@
 ---
-title: リスト androidwork profileeasemailprofile基底
-description: androidwork profileeasemailprofilebase オブジェクトのプロパティとリレーションシップをリストします。
-author: tfitzmac
+title: リスト Androidwork Profileeasemailprofile基底
+description: Androidwork Profileeasemailprofilebase オブジェクトのプロパティとリレーションシップをリストします。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6b4d778783e05767e158ab3ecf2ce86ff60849fc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 06117c6d5b27bce8e0a759ba8e10aa40c25944e6
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32475243"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33928590"
 ---
-# <a name="list-androidworkprofileeasemailprofilebases"></a>リスト androidwork profileeasemailprofile基底
+# <a name="list-androidworkprofileeasemailprofilebases"></a>リスト Androidwork Profileeasemailprofile基底
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[androidwork profileeasemailprofilebase](../resources/intune-deviceconfig-androidworkprofileeasemailprofilebase.md)オブジェクトのプロパティとリレーションシップをリストします。
+[Androidwork Profileeasemailprofilebase](../resources/intune-deviceconfig-androidworkprofileeasemailprofilebase.md)オブジェクトのプロパティとリレーションシップをリストします。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[androidwork profileeasemailprofilebase](../resources/intune-deviceconfig-androidworkprofileeasemailprofilebase.md)オブジェクトのコレクションを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[Androidwork Profileeasemailprofilebase](../resources/intune-deviceconfig-androidworkprofileeasemailprofilebase.md)オブジェクトのコレクションを返します。
 
 ## <a name="example"></a>例
 
@@ -89,7 +89,6 @@ Content-Length: 766
   ]
 }
 ```
-
 
 
 

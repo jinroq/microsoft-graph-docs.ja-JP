@@ -1,23 +1,23 @@
 ---
-title: androidforwork customconfiguration の作成
-description: 新しい androidforwork customconfiguration オブジェクトを作成します。
-author: tfitzmac
+title: Androidforwork Customconfiguration の作成
+description: 新しい Androidforwork Customconfiguration オブジェクトを作成します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aee4817159ad94e301141f07cb027ac7887f9e7b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f027b6db5f84b6ae14ecf6278bb2ede68f78dcb1
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32479380"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33933040"
 ---
-# <a name="create-androidforworkcustomconfiguration"></a>androidforwork customconfiguration の作成
+# <a name="create-androidforworkcustomconfiguration"></a>Androidforwork Customconfiguration の作成
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-新しい[androidforwork customconfiguration](../resources/intune-deviceconfig-androidforworkcustomconfiguration.md)オブジェクトを作成します。
+新しい[Androidforwork Customconfiguration](../resources/intune-deviceconfig-androidforworkcustomconfiguration.md)オブジェクトを作成します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -45,18 +45,18 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求本文で、androidforwork customconfiguration オブジェクトの JSON 表記を指定します。
+要求本文で、Androidforwork Customconfiguration オブジェクトの JSON 表記を指定します。
 
-次の表に、androidforwork customconfiguration の作成時に必要なプロパティを示します。
+次の表に、Androidforwork Customconfiguration の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列型 (String)|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|id|文字列|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |supportsScopeTags|Boolean|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|説明|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|description|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|管理者が指定した、デバイス構成の名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |omaSettings|[omaSetting](../resources/intune-deviceconfig-omasetting.md) コレクション|OMA 設定。 このコレクションには、最大で 500 個の要素を含めることができます。|
@@ -64,7 +64,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 
 ## <a name="response"></a>応答
-成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[androidforwork customconfiguration](../resources/intune-deviceconfig-androidforworkcustomconfiguration.md)オブジェクトを返します。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[Androidforwork customconfiguration](../resources/intune-deviceconfig-androidforworkcustomconfiguration.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 
@@ -126,7 +126,6 @@ Content-Length: 673
   ]
 }
 ```
-
 
 
 

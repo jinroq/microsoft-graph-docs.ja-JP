@@ -1,21 +1,21 @@
 ---
 title: targetedManagedAppConfigurations のリスト
 description: targetedManagedAppConfiguration オブジェクトのプロパティとリレーションシップをリストします。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bc4eab92ba3858461d171bee130f22f766302848
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f1ff84faa4a579c53e7e8ccc4a8d78e5049d5203
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32529437"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33902928"
 ---
 # <a name="list-targetedmanagedappconfigurations"></a>targetedManagedAppConfigurations のリスト
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [targetedManagedAppConfiguration](../resources/intune-mam-targetedmanagedappconfiguration.md) オブジェクトのプロパティとリレーションシップをリストします。
 
@@ -90,7 +90,6 @@ Content-Length: 731
   ]
 }
 ```
-
 
 
 

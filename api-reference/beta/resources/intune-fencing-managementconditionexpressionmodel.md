@@ -1,26 +1,26 @@
 ---
-title: managementconditionexpression model リソースの種類
+title: Managementconditionexpression Model リソースの種類
 description: 管理条件式モデルは、管理条件式のモデル表現です。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 54dda054e82749b91c1f84b027a1a798b06a1e98
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: df3098ac3a83b2080e11be3701b06b7462019e17
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568844"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941276"
 ---
-# <a name="managementconditionexpressionmodel-resource-type"></a>managementconditionexpression model リソースの種類
+# <a name="managementconditionexpressionmodel-resource-type"></a>Managementconditionexpression Model リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 管理条件式モデルは、管理条件式のモデル表現です。
 
 
-[managementconditionexpression](../resources/intune-fencing-managementconditionexpression.md)から継承します
+[Managementconditionexpression](../resources/intune-fencing-managementconditionexpression.md)から継承します
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
@@ -41,7 +41,6 @@ ms.locfileid: "32568844"
   "@odata.type": "#microsoft.graph.managementConditionExpressionModel"
 }
 ```
-
 
 
 

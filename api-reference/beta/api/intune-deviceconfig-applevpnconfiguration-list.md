@@ -1,23 +1,23 @@
 ---
 title: りんごの構成を一覧表示する
-description: りんご evpnconfiguration オブジェクトのプロパティとリレーションシップをリストします。
-author: tfitzmac
+description: りんご Evpnconfiguration オブジェクトのプロパティとリレーションシップをリストします。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ef4e0c40c66fcaba0c34c8b2d03e9e5adc42affb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6f43508f84a912898f86cdeecae9cac19ecce066
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32471568"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33928114"
 ---
 # <a name="list-applevpnconfigurations"></a>りんごの構成を一覧表示する
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[りんご evpnconfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)オブジェクトのプロパティとリレーションシップをリストします。
+[りんご Evpnconfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)オブジェクトのプロパティとリレーションシップをリストします。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -140,7 +140,6 @@ Content-Length: 2334
   ]
 }
 ```
-
 
 
 

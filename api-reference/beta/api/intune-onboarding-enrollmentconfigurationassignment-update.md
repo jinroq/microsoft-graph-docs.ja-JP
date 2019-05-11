@@ -1,21 +1,21 @@
 ---
 title: enrollmentConfigurationAssignment の更新
 description: enrollmentConfigurationAssignment オブジェクトのプロパティを更新します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0f01ea1a443a656e4b426850122cde482cb6705d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ca6edf132ba027dc4b0e5c30a7e827a1c9587cc6
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32528632"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33900027"
 ---
 # <a name="update-enrollmentconfigurationassignment"></a>enrollmentConfigurationAssignment の更新
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) オブジェクトのプロパティを更新します。
 
@@ -50,8 +50,8 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|まだ文書化されていません|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|まだ文書化されていません|
+|id|String|登録構成の割り当てのキー|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|テナント内の管理されたデバイスへの割り当てを表します。|
 
 
 
@@ -90,7 +90,6 @@ Content-Length: 222
   }
 }
 ```
-
 
 
 

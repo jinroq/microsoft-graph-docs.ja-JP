@@ -1,23 +1,23 @@
 ---
-title: grouppolicypresentationlistbox の更新
-description: grouppolicypresentationlistbox オブジェクトのプロパティを更新します。
-author: tfitzmac
+title: GroupPolicyPresentationListBox の更新
+description: GroupPolicyPresentationListBox オブジェクトのプロパティを更新します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e1714ccb918cb145574e6868cabf024558fc76f3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8876cc7185ce8c7a2ab0ae1db84ff1bc0bd506a9
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32530985"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33904791"
 ---
-# <a name="update-grouppolicypresentationlistbox"></a>grouppolicypresentationlistbox の更新
+# <a name="update-grouppolicypresentationlistbox"></a>GroupPolicyPresentationListBox の更新
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[grouppolicypresentationlistbox](../resources/intune-grouppolicy-grouppolicypresentationlistbox.md)オブジェクトのプロパティを更新します。
+[Grouppolicypresentationlistbox](../resources/intune-grouppolicy-grouppolicypresentationlistbox.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -45,21 +45,21 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求本文で、 [grouppolicypresentationlistbox](../resources/intune-grouppolicy-grouppolicypresentationlistbox.md)オブジェクトの JSON 表記を指定します。
+要求本文で、 [Grouppolicypresentationlistbox](../resources/intune-grouppolicy-grouppolicypresentationlistbox.md)オブジェクトの JSON 表記を指定します。
 
-次の表に、 [grouppolicypresentationlistbox](../resources/intune-grouppolicy-grouppolicypresentationlistbox.md)の作成時に必要なプロパティを示します。
+次の表に、 [Grouppolicypresentationlistbox](../resources/intune-grouppolicy-grouppolicypresentationlistbox.md)の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|label|String|任意のプレゼンテーションエンティティのローカライズされたテキストラベル。 既定値は空白です。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
-|id|String|エンティティのキー。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
-|lastModifiedDateTime|DateTimeOffset|エンティティが最後に変更された日付と時刻。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
-|explicitValue|ブール値|このオプションが指定されている場合、ユーザーはレジストリサブキーの値とレジストリサブキー名を指定する必要があります。 リストボックスに2つの列が表示されます。1つは名前用、もう1つはデータ用です。 既定値は false です。|
+|label|String|任意のプレゼンテーションエンティティのローカライズされたテキストラベル。 既定値は空白です。 [GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
+|id|String|エンティティのキー。 [GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
+|lastModifiedDateTime|DateTimeOffset|エンティティが最後に変更された日付と時刻。 [GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
+|explicitValue|Boolean|このオプションが指定されている場合、ユーザーはレジストリサブキーの値とレジストリサブキー名を指定する必要があります。 リストボックスに2つの列が表示されます。1つは名前用、もう1つはデータ用です。 既定値は false です。|
 
 
 
 ## <a name="response"></a>応答
-成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[grouppolicypresentationlistbox](../resources/intune-grouppolicy-grouppolicypresentationlistbox.md)オブジェクトを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[Grouppolicypresentationlistbox](../resources/intune-grouppolicy-grouppolicypresentationlistbox.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 
@@ -92,7 +92,6 @@ Content-Length: 238
   "explicitValue": true
 }
 ```
-
 
 
 

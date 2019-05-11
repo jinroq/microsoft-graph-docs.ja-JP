@@ -1,23 +1,23 @@
 ---
-title: grouppolicypresentationvaluebooleans のリスト
-description: grouppolicypresentationvalueboolean オブジェクトのプロパティとリレーションシップをリストします。
-author: tfitzmac
+title: GroupPolicyPresentationValueBooleans のリスト
+description: GroupPolicyPresentationValueBoolean オブジェクトのプロパティとリレーションシップをリストします。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aa5e4e230fc70b3c9706a549685e4c42f23a4f99
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c7f5b68ccb715099e58d6ccd9f0d5fea4f8e3640
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32530810"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33904483"
 ---
-# <a name="list-grouppolicypresentationvaluebooleans"></a>grouppolicypresentationvaluebooleans のリスト
+# <a name="list-grouppolicypresentationvaluebooleans"></a>GroupPolicyPresentationValueBooleans のリスト
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[grouppolicypresentationvalueboolean](../resources/intune-grouppolicy-grouppolicypresentationvalueboolean.md)オブジェクトのプロパティとリレーションシップをリストします。
+[Grouppolicypresentationvalueboolean](../resources/intune-grouppolicy-grouppolicypresentationvalueboolean.md)オブジェクトのプロパティとリレーションシップをリストします。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -47,7 +47,7 @@ GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/def
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[grouppolicypresentationvalueboolean](../resources/intune-grouppolicy-grouppolicypresentationvalueboolean.md)オブジェクトのコレクションを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[Grouppolicypresentationvalueboolean](../resources/intune-grouppolicy-grouppolicypresentationvalueboolean.md)オブジェクトのコレクションを返します。
 
 ## <a name="example"></a>例
 
@@ -76,7 +76,6 @@ Content-Length: 320
   ]
 }
 ```
-
 
 
 

@@ -1,21 +1,21 @@
 ---
 title: resourceOperation の作成
 description: 新しい resourceOperation オブジェクトを作成します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dd973fa12b4737322cd53d681bfea085731ffc60
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 01fb01eda7710abaa080fca559047022d87fa6f6
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32527561"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899537"
 ---
 # <a name="create-resourceoperation"></a>resourceOperation の作成
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい [resourceOperation](../resources/intune-rbac-resourceoperation.md) オブジェクトを作成します。
 
@@ -55,7 +55,7 @@ POST /deviceManagement/resourceOperations
 |resourceName|String|この操作が実行されるリソースの名前。|
 |actionName|文字列型 (String)|この操作が実行するアクションの種類。 actionName は簡潔で、できるだけ少ない単語にする必要があります。|
 |description|String|リソース操作の説明。 Azure Portal で操作にマウス ポインターを合わせると、その操作の説明がテキストで表示されます。|
-|enabledforscopevalidation|ブール値|権限が役割の割り当てごとに定義されたスコープに対して検証されているかどうかを判断します。|
+|enabledForScopeValidation|Boolean|権限が役割の割り当てごとに定義されたスコープに対して検証されているかどうかを判断します。|
 
 
 
@@ -98,7 +98,6 @@ Content-Length: 298
   "enabledForScopeValidation": true
 }
 ```
-
 
 
 

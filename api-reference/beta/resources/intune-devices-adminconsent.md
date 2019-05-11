@@ -1,28 +1,28 @@
 ---
-title: adminconsent リソースの種類
+title: adminConsent リソースの種類
 description: 管理者の同意情報。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b14eb19096a034612715081ae2e3dba25b5bb218
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: aaac2bb11d90f1e6fec52fae0c17f374c33868ce
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534494"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943369"
 ---
-# <a name="adminconsent-resource-type"></a>adminconsent リソースの種類
+# <a name="adminconsent-resource-type"></a>adminConsent リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 管理者の同意情報。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|/sharepoint データの編集|[adminconの状態](../resources/intune-devices-adminconsentstate.md)|ユーザーとデバイスのデータを Apple に共有するための管理者の同意状態。 可能な値は、`notConfigured`、`granted`、`notGranted` です。|
+|/Sharepoint データの編集|[Adminconの状態](../resources/intune-devices-adminconsentstate.md)|ユーザーとデバイスのデータを Apple に共有するための管理者の同意状態。 可能な値は、`notConfigured`、`granted`、`notGranted` です。|
 
 ## <a name="relationships"></a>関係
 なし
@@ -40,7 +40,6 @@ ms.locfileid: "32534494"
   "shareAPNSData": "String"
 }
 ```
-
 
 
 

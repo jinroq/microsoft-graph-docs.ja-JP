@@ -1,21 +1,21 @@
 ---
 title: windows10AppsForceUpdateSchedule リソースの種類
 description: アプリの Windows 10 強制更新スケジュール
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3c8c76c08c434ab9c5e3506339e53cda41156e09
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9e5d7cf1b4e32543b9937603e1b7b782e39410cc
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32572263"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944447"
 ---
 # <a name="windows10appsforceupdateschedule-resource-type"></a>windows10AppsForceUpdateSchedule リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 アプリの Windows 10 強制更新スケジュール
 
@@ -24,7 +24,7 @@ ms.locfileid: "32572263"
 |:---|:---|:---|
 |startDateTime|DateTimeOffset|強制再起動の開始時刻。|
 |recurrence|[windows10AppsUpdateRecurrence](../resources/intune-deviceconfig-windows10appsupdaterecurrence.md)|定期的なスケジュール。 使用可能な値は、`none`、`daily`、`weekly`、`monthly` です。|
-|runImmediatelyIfAfterStartDateTime|Boolean|true の場合は、StartDateTime が過去の場合はすぐにタスクを実行します。それ以外の場合は、次の定期的なパターンが実行されます。|
+|runImmediatelyIfAfterStartDateTime|Boolean|True の場合は、StartDateTime が過去の場合はすぐにタスクを実行します。それ以外の場合は、次の定期的なパターンが実行されます。|
 
 ## <a name="relationships"></a>関係
 なし
@@ -44,7 +44,6 @@ ms.locfileid: "32572263"
   "runImmediatelyIfAfterStartDateTime": true
 }
 ```
-
 
 
 

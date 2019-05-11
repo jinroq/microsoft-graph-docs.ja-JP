@@ -1,21 +1,21 @@
 ---
-title: adminconstate state 列挙型
+title: Adminconstate State 列挙型
 description: 管理者の同意状態。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c8a86e8cf427669777c8bd89edd81653449ac8ed
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b2e98813ff0166517f2c9f4d6c01c26411834c01
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32571815"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943376"
 ---
-# <a name="adminconsentstate-enum-type"></a>adminconstate state 列挙型
+# <a name="adminconsentstate-enum-type"></a>Adminconstate State 列挙型
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 管理者の同意状態。
 
@@ -23,9 +23,8 @@ ms.locfileid: "32571815"
 |メンバー|値|説明|
 |:---|:---|:---|
 |notConfigured|.0|管理者がアイテムを構成しませんでした|
-|granted|1 |管理者付与のアイテム|
-|notgranted|2 |管理者がアイテムを付与することはできません|
-
+|granted|1-d|管理者付与のアイテム|
+|notGranted|pbm-2|管理者がアイテムを付与することはできません|
 
 
 

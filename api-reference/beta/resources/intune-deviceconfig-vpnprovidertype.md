@@ -1,21 +1,21 @@
 ---
-title: vpnprovidertype 列挙型
+title: vpnProviderType 列挙型
 description: アプリごとの VPN のプロバイダーの種類。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3e47f4d20cb843b62928c6c66e468d00f5a4f743
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: df2fffa2c18ff21f342b2de0fdd8d7cd0d60ca64
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561916"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944552"
 ---
-# <a name="vpnprovidertype-enum-type"></a>vpnprovidertype 列挙型
+# <a name="vpnprovidertype-enum-type"></a>vpnProviderType 列挙型
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 アプリごとの VPN のプロバイダーの種類。
 
@@ -23,9 +23,8 @@ ms.locfileid: "32561916"
 |メンバー|値|説明|
 |:---|:---|:---|
 |notConfigured|.0|トンネルトラフィックは明示的に構成されていません。|
-|appproxy|1 |アプリケーション層でのトンネルトラフィック。|
-|packettunnel|2 |IP 層でのトンネルトラフィック。|
-
+|appProxy|1-d|アプリケーション層でのトンネルトラフィック。|
+|packetTunnel|pbm-2|IP 層でのトンネルトラフィック。|
 
 
 

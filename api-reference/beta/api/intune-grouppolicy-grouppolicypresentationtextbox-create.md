@@ -1,23 +1,23 @@
 ---
-title: grouppolicypresentationtextbox の作成
-description: 新しい grouppolicypresentationtextbox オブジェクトを作成します。
-author: tfitzmac
+title: GroupPolicyPresentationTextBox の作成
+description: 新しい groupPolicyPresentationTextBox オブジェクトを作成します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7f9b986b3e4e818f88542bb0851bcc75902dcb20
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4639efd9a3c152e336ac3dd8f5297cba85cc6ab0
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32530733"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33904665"
 ---
-# <a name="create-grouppolicypresentationtextbox"></a>grouppolicypresentationtextbox の作成
+# <a name="create-grouppolicypresentationtextbox"></a>GroupPolicyPresentationTextBox の作成
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-新しい[grouppolicypresentationtextbox](../resources/intune-grouppolicy-grouppolicypresentationtextbox.md)オブジェクトを作成します。
+新しい[Grouppolicypresentationtextbox](../resources/intune-grouppolicy-grouppolicypresentationtextbox.md)オブジェクトを作成します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -44,23 +44,23 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求本文で、grouppolicypresentationtextbox オブジェクトの JSON 表記を指定します。
+要求本文で、groupPolicyPresentationTextBox オブジェクトの JSON 表記を指定します。
 
-次の表に、grouppolicypresentationtextbox の作成時に必要なプロパティを示します。
+次の表に、groupPolicyPresentationTextBox の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|label|String|任意のプレゼンテーションエンティティのローカライズされたテキストラベル。 既定値は空白です。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
-|id|String|エンティティのキー。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
-|lastModifiedDateTime|DateTimeOffset|エンティティが最後に変更された日付と時刻。 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
+|label|String|任意のプレゼンテーションエンティティのローカライズされたテキストラベル。 既定値は空白です。 [GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
+|id|String|エンティティのキー。 [GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
+|lastModifiedDateTime|DateTimeOffset|エンティティが最後に変更された日付と時刻。 [GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
 |defaultValue|String|テキストボックスに表示されるローカライズされた既定の文字列。 既定値は空白です。|
-|必須|ブール値|テキストボックスに値を入力する必要があります。 既定値は False です。|
+|必須|Boolean|テキストボックスに値を入力する必要があります。 既定値は False です。|
 |maxLength|Int64|テキストの最大文字数を指定する符号なし整数。 既定値は1023です。|
 
 
 
 ## <a name="response"></a>応答
-成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[grouppolicypresentationtextbox](../resources/intune-grouppolicy-grouppolicypresentationtextbox.md)オブジェクトを返します。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[Grouppolicypresentationtextbox](../resources/intune-grouppolicy-grouppolicypresentationtextbox.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 
@@ -97,7 +97,6 @@ Content-Length: 294
   "maxLength": 9
 }
 ```
-
 
 
 

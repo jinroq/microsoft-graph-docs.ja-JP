@@ -1,21 +1,21 @@
 ---
-title: bulkmanageddeviceactionresult リソースの種類
+title: bulkManagedDeviceActionResult リソースの種類
 description: まだ文書化されていません
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e0978367465fde92f9874e338a0de84da2a20403
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c066e87066a766fdef40fc75caa8818a973de4f2
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32467351"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943047"
 ---
-# <a name="bulkmanageddeviceactionresult-resource-type"></a>bulkmanageddeviceactionresult リソースの種類
+# <a name="bulkmanageddeviceactionresult-resource-type"></a>bulkManagedDeviceActionResult リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 まだ文書化されていません
 
@@ -23,11 +23,11 @@ ms.locfileid: "32467351"
 |プロパティ|型|説明|
 |:---|:---|:---|
 |successfulDeviceIds|String collection|成功したデバイス|
-|失敗 deviceid|String collection|失敗したデバイス|
-|not見つかり deviceid|String collection|見つからないデバイス|
-|notsupporteddeviceids|String collection|サポートされていないデバイス|
+|失敗 Deviceid|String collection|失敗したデバイス|
+|Not見つかり Deviceid|String collection|見つからないデバイス|
+|notSupportedDeviceIds|String collection|サポートされていないデバイス|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -54,7 +54,6 @@ ms.locfileid: "32467351"
   ]
 }
 ```
-
 
 
 

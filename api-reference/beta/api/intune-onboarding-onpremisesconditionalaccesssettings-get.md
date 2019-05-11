@@ -1,21 +1,21 @@
 ---
 title: onPremisesConditionalAccessSettings の取得
 description: onPremisesConditionalAccessSettings オブジェクトのプロパティとリレーションシップを読み取ります。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8876efd1d2f73814cdfd86863f846d50294870fa
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e200923bdbbde14f9d0ffae1bb154bd87f54ffda
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32528667"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899999"
 ---
 # <a name="get-onpremisesconditionalaccesssettings"></a>onPremisesConditionalAccessSettings の取得
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) オブジェクトのプロパティとリレーションシップを読み取ります。
 
@@ -83,7 +83,6 @@ Content-Length: 363
   }
 }
 ```
-
 
 
 

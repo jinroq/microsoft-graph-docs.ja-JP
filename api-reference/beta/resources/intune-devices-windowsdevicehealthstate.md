@@ -1,21 +1,21 @@
 ---
-title: windowsdevicehealthstate 列挙型
+title: windowsDeviceHealthState 列挙型
 description: コンピューターエンドポイントの保護の状態
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7da8a7cc01cef7ff410611e819739e226a4baee1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6086dc05d204e4c9cb23c77f79f98c3a207de35c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549479"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941892"
 ---
-# <a name="windowsdevicehealthstate-enum-type"></a>windowsdevicehealthstate 列挙型
+# <a name="windowsdevicehealthstate-enum-type"></a>windowsDeviceHealthState 列挙型
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 コンピューターエンドポイントの保護の状態
 
@@ -23,12 +23,11 @@ ms.locfileid: "32549479"
 |メンバー|値|説明|
 |:---|:---|:---|
 |汚れ|.0|コンピューターがクリーンであり、アクションは必要ありません|
-|fullscanpending|1 |コンピューターが保留中の完全なスキャン状態である|
-|rebootPending|2 |コンピューターが再起動の保留状態になっている|
-|manualstepspending|4 |コンピューターが保留中の手動の手順状態である|
+|fullScanPending|1-d|コンピューターが保留中の完全なスキャン状態である|
+|rebootPending|pbm-2|コンピューターが再起動の保留状態になっている|
+|manualStepsPending|2/4|コンピューターが保留中の手動の手順状態である|
 |offlineScanPending|8 |コンピューターが保留中のオフラインスキャン状態になっている|
-|critical|16 |コンピューターは重大なエラー状態です|
-
+|critical|16|コンピューターは重大なエラー状態です|
 
 
 

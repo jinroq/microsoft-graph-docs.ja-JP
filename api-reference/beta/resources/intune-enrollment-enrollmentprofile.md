@@ -1,21 +1,21 @@
 ---
 title: しましたリソースの種類
 description: しましたリソースは、事前登録を提供する必要がある構成のコレクションを表します。これにより、id が事前にステージングされている特定のデバイスを登録することができます。 事前に展開されたデバイス id は、対応するデバイスの登録時にプロファイルの構成を適用するために、この種類のプロファイルに割り当てられます。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: abc00f27ef65cdddfef30a06bef55a8fa44e488a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d105f7318e177abac8071e11a21c9641d35c2359
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573838"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941584"
 ---
 # <a name="enrollmentprofile-resource-type"></a>しましたリソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 しましたリソースは、事前登録を提供する必要がある構成のコレクションを表します。これにより、id が事前にステージングされている特定のデバイスを登録することができます。 事前に展開されたデバイス id は、対応するデバイスの登録時にプロファイルの構成を適用するために、この種類のプロファイルに割り当てられます。
 
@@ -25,20 +25,20 @@ ms.locfileid: "32573838"
 |[リスト enrollmentProfiles](../api/intune-enrollment-enrollmentprofile-list.md)|[しました](../resources/intune-enrollment-enrollmentprofile.md)コレクション|[しました](../resources/intune-enrollment-enrollmentprofile.md)オブジェクトのプロパティとリレーションシップをリストします。|
 |[しましたを取得する](../api/intune-enrollment-enrollmentprofile-get.md)|[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|[しました](../resources/intune-enrollment-enrollmentprofile.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
 |[しましたを作成する](../api/intune-enrollment-enrollmentprofile-create.md)|[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|新しい[しました](../resources/intune-enrollment-enrollmentprofile.md)オブジェクトを作成します。|
-|[しましたの削除](../api/intune-enrollment-enrollmentprofile-delete.md)|なし|[しました](../resources/intune-enrollment-enrollmentprofile.md)を削除します。|
+|[しましたの削除](../api/intune-enrollment-enrollmentprofile-delete.md)|None|[しました](../resources/intune-enrollment-enrollmentprofile.md)を削除します。|
 |[しましたの更新](../api/intune-enrollment-enrollmentprofile-update.md)|[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|[しました](../resources/intune-enrollment-enrollmentprofile.md)オブジェクトのプロパティを更新します。|
 |[setDefaultProfile アクション](../api/intune-enrollment-enrollmentprofile-setdefaultprofile.md)|なし|まだ文書化されていません|
-|[exportmobileconfig 関数](../api/intune-enrollment-enrollmentprofile-exportmobileconfig.md)|String|モバイル構成をエクスポートします。|
+|[exportMobileConfig 関数](../api/intune-enrollment-enrollmentprofile-exportmobileconfig.md)|String|モバイル構成をエクスポートします。|
 |[updateDeviceProfileAssignment アクション](../api/intune-enrollment-enrollmentprofile-updatedeviceprofileassignment.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|オブジェクトの GUID|
+|id|文字列|オブジェクトの GUID|
 |displayName|String|プロファイルの名前|
-|説明|String|プロファイルの説明|
+|description|String|プロファイルの説明|
 |requiresUserAuthentication|Boolean|プロファイルにユーザー認証が必要かどうかを示します|
-|configurationendpointurl|String|登録に使用する構成エンドポイント url|
+|configurationEndpointUrl|String|登録に使用する構成エンドポイント url|
 |enableAuthenticationViaCompanyPortal|Boolean|会社のポータルではなく、Apple セットアップアシスタントを使用して認証することを示します。|
 |requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|セットアップアシスタントの登録済みデバイスで会社のポータルが必要であることを示します。|
 
@@ -65,7 +65,6 @@ ms.locfileid: "32573838"
   "requireCompanyPortalOnSetupAssistantEnrolledDevices": true
 }
 ```
-
 
 
 

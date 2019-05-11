@@ -1,52 +1,52 @@
 ---
-title: managementconditionstatement リソースの種類
+title: managementConditionStatement リソースの種類
 description: 管理条件ステートメントは、含まれている管理条件がすべて満たされたときに、デバイス/アプリケーション構成を有効/無効にする管理条件のグループです。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a90d17bd56a2fbb957bdde5ba8b159baeb3ae2e9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 78f2464793ac8410b3636f3ef378cfc623cc08d2
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568753"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941241"
 ---
-# <a name="managementconditionstatement-resource-type"></a>managementconditionstatement リソースの種類
+# <a name="managementconditionstatement-resource-type"></a>managementConditionStatement リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 管理条件ステートメントは、含まれている管理条件がすべて満たされたときに、デバイス/アプリケーション構成を有効/無効にする管理条件のグループです。
 
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[managementconditionstatements を一覧表示する](../api/intune-fencing-managementconditionstatement-list.md)|[managementconditionstatement](../resources/intune-fencing-managementconditionstatement.md)コレクション|[managementconditionstatement](../resources/intune-fencing-managementconditionstatement.md)オブジェクトのプロパティとリレーションシップをリストします。|
-|[managementconditionstatement の取得](../api/intune-fencing-managementconditionstatement-get.md)|[managementconditionstatement](../resources/intune-fencing-managementconditionstatement.md)|[managementconditionstatement](../resources/intune-fencing-managementconditionstatement.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[managementconditionstatement の作成](../api/intune-fencing-managementconditionstatement-create.md)|[managementconditionstatement](../resources/intune-fencing-managementconditionstatement.md)|新しい[managementconditionstatement](../resources/intune-fencing-managementconditionstatement.md)オブジェクトを作成します。|
-|[managementconditionstatement の削除](../api/intune-fencing-managementconditionstatement-delete.md)|なし|[managementconditionstatement](../resources/intune-fencing-managementconditionstatement.md)を削除します。|
-|[managementconditionstatement の更新](../api/intune-fencing-managementconditionstatement-update.md)|[managementconditionstatement](../resources/intune-fencing-managementconditionstatement.md)|[managementconditionstatement](../resources/intune-fencing-managementconditionstatement.md)オブジェクトのプロパティを更新します。|
-|[getManagementConditionStatementExpressionString 関数](../api/intune-fencing-managementconditionstatement-getmanagementconditionstatementexpressionstring.md)|[managementcondition式文字列](../resources/intune-fencing-managementconditionexpressionstring.md)|まだ文書化されていません|
-|[getManagementConditionStatementsForPlatform 関数](../api/intune-fencing-managementconditionstatement-getmanagementconditionstatementsforplatform.md)|[managementconditionstatement](../resources/intune-fencing-managementconditionstatement.md)コレクション|まだ文書化されていません|
+|[ManagementConditionStatements を一覧表示する](../api/intune-fencing-managementconditionstatement-list.md)|[Managementconditionstatement](../resources/intune-fencing-managementconditionstatement.md)コレクション|[Managementconditionstatement](../resources/intune-fencing-managementconditionstatement.md)オブジェクトのプロパティとリレーションシップをリストします。|
+|[ManagementConditionStatement の取得](../api/intune-fencing-managementconditionstatement-get.md)|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)|[Managementconditionstatement](../resources/intune-fencing-managementconditionstatement.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[ManagementConditionStatement の作成](../api/intune-fencing-managementconditionstatement-create.md)|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)|新しい[Managementconditionstatement](../resources/intune-fencing-managementconditionstatement.md)オブジェクトを作成します。|
+|[ManagementConditionStatement の削除](../api/intune-fencing-managementconditionstatement-delete.md)|None|[Managementconditionstatement](../resources/intune-fencing-managementconditionstatement.md)を削除します。|
+|[ManagementConditionStatement の更新](../api/intune-fencing-managementconditionstatement-update.md)|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)|[Managementconditionstatement](../resources/intune-fencing-managementconditionstatement.md)オブジェクトのプロパティを更新します。|
+|[getManagementConditionStatementExpressionString 関数](../api/intune-fencing-managementconditionstatement-getmanagementconditionstatementexpressionstring.md)|[Managementcondition式文字列](../resources/intune-fencing-managementconditionexpressionstring.md)|まだ文書化されていません|
+|[getManagementConditionStatementsForPlatform 関数](../api/intune-fencing-managementconditionstatement-getmanagementconditionstatementsforplatform.md)|[Managementconditionstatement](../resources/intune-fencing-managementconditionstatement.md)コレクション|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|管理条件ステートメントの一意識別子。 作成時に割り当てられたシステム生成値。|
+|id|文字列|管理条件ステートメントの一意識別子。 作成時に割り当てられたシステム生成値。|
 |displayName|String|管理条件ステートメントの管理者定義の名前。|
-|説明|String|管理条件ステートメントの管理者定義の説明。|
+|description|String|管理条件ステートメントの管理者定義の説明。|
 |createdDateTime|DateTimeOffset|管理条件ステートメントが作成された時刻。 サービス側を生成しました。|
 |modifiedDateTime|DateTimeOffset|管理条件ステートメントが最後に変更された時刻。 サービス側を更新しました。|
-|式|[managementconditionexpression](../resources/intune-fencing-managementconditionexpression.md)|管理条件ステートメントがアクティブ化/非アクティブ化されたかどうかを評価するために使用される管理条件ステートメント式。|
+|式|[managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)|管理条件ステートメントがアクティブ化/非アクティブ化されたかどうかを評価するために使用される管理条件ステートメント式。|
 |eTag|String|管理条件ステートメントの ETag。 サービス側を更新しました。|
 |アプリケーションのプラットフォーム|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)コレクション|この管理条件ステートメントの適用可能なプラットフォーム。
 これは、管理条件ステートメントに関連付けられている管理条件を参照して、適用可能なプラットフォームの共通部分を検索することによって計算されます。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 |リレーションシップ|型|説明|
 |:---|:---|:---|
-|managementconditions|[managementcondition](../resources/intune-fencing-managementcondition.md)コレクション|管理条件ステートメントに関連付けられている管理条件。|
+|managementConditions|[Managementcondition](../resources/intune-fencing-managementcondition.md)コレクション|管理条件ステートメントに関連付けられている管理条件。|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
@@ -73,7 +73,6 @@ ms.locfileid: "32568753"
   ]
 }
 ```
-
 
 
 

@@ -1,21 +1,21 @@
 ---
 title: configurationManagerClientHealthState リソースの種類
 description: 構成マネージャーのクライアントの正常性の状態
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e2a04b8cf7520425527e118fcc9db00461c4edda
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0e0ed47d34f8f3d749ccab7d2788528c9b12679f
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563806"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943012"
 ---
 # <a name="configurationmanagerclienthealthstate-resource-type"></a>configurationManagerClientHealthState リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 構成マネージャーのクライアントの正常性の状態
 
@@ -24,7 +24,7 @@ ms.locfileid: "32563806"
 |:---|:---|:---|
 |state|[configurationManagerClientState](../resources/intune-devices-configurationmanagerclientstate.md)|現在の構成マネージャークライアントの状態。 可能な値は、`unknown`、`installed`、`healthy`、`installFailed`、`updateFailed`、`communicationError` です。|
 |errorCode|Int32|失敗状態のエラーコード。|
-|lastSyncDateTime|DateTimeOffset|configuration manager 管理ポイントとの前回の同期を示す Datetime。|
+|lastSyncDateTime|DateTimeOffset|Configuration manager 管理ポイントとの前回の同期を示す Datetime。|
 
 ## <a name="relationships"></a>関係
 なし
@@ -44,7 +44,6 @@ ms.locfileid: "32563806"
   "lastSyncDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

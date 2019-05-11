@@ -3,28 +3,28 @@ title: Azure AD ID およびアクセス管理 API の概要
 description: 'Azure Active Directory (Azure AD) は、ID およびアクセス管理 (IAM) を集中管理し、アプリ、デバイス、サービス、およびインフラストラクチャの間でのセキュアで生産性の高いアクセスを可能にします。 組織では、Azure AD を使用することにより、オンプレミス、ハイブリッド、およびクラウドの各環境において、ID およびコントロール アクセスを管理することができます。  '
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: edf02faa345426b77e0ede8a0c92e54207338bec
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: bd4c71d1cada7badc15178580fd33edfd0e8cc8b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33599822"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33951265"
 ---
 # <a name="azure-ad-identity-and-access-management-api-overview"></a>Azure AD ID およびアクセス管理 API の概要
 
-Azure Active Directory (Azure AD) は、ID およびアクセス管理 (IAM) を集中管理し、アプリ、デバイス、サービス、およびインフラストラクチャの間でのセキュアで生産性の高いアクセスを可能にします。 組織では、Azure AD を使用することにより、オンプレミス、ハイブリッド、およびクラウドの各環境において、ID およびコントロール アクセスを管理することができます。  
+Azure Active Directory (Azure AD) は、ID およびアクセス管理 (IAM) を集中管理し、アプリ、デバイス、サービス、およびインフラストラクチャの間でのセキュアで生産性の高いアクセスを可能にします。 組織では、Azure AD を使用することにより、オンプレミス、ハイブリッド、およびクラウドの各環境において、ID およびコントロール アクセスを管理することができます。
 
 Microsoft Graph で Azure AD REST API を使用することにより、Azure AD の[リソース](/graph/api/resources/azure-ad-overview?view=graph-rest-1.0)とサード パーティ サービスの間での固有ワークフローを作成することができます。
 
 ## <a name="why-use-the-azure-ad-apis"></a>Azure AD API を使用する理由
 
-1500 万を超える組織で Azure AD が使用されており、さらに、Office 365、Microsoft Azure、Enterprise Mobility Suite、または Microsoft 365 などの Microsoft クラウド サービスのサブスクリプションを取得しています。  
+1500 万を超える組織で Azure AD が使用されており、さらに、Office 365、Microsoft Azure、Enterprise Mobility Suite、または Microsoft 365 などの Microsoft クラウド サービスのサブスクリプションを取得しています。
 
 企業開発者は、Microsoft Graph を使用することにより、Azure AD ID 管理と他のサービスを統合して、従業員研修 (および終了)、プロファイル管理、ライセンス展開などの管理ワークフローを自動化します。
 
 多くの企業開発者にとって Microsoft Graph および Azure AD は、既存のアプリケーションをクラウドに「リフトおよびシフト」して、組織のデジタル変換のスピードを上げるのに役立ちます。 Azure AD のさまざまな機能を利用することにより、ユーザーのグループ メンバーシップ、ディレクトリの役割、または管理単位メンバーシップの確認など、アクセス制御メカニズムをアプリケーションに追加できます。
 
-Microsoft Graph および Azure AD を、Azure AD サービスをすでに使用している Fortune 500 企業の 90% を含む 1500 万を超える組織にすばやく容易に達する手段として使用できます。 統合アプリケーションでは、シームレスなサインイン エクスペリエンスを利用することができ、既存の組織データを使用してカスタマイズしたエクスペリエンスを作成することができます。  
+Microsoft Graph および Azure AD を、Azure AD サービスをすでに使用している Fortune 500 企業の 90% を含む 1500 万を超える組織にすばやく容易に達する手段として使用できます。 統合アプリケーションでは、シームレスなサインイン エクスペリエンスを利用することができ、既存の組織データを使用してカスタマイズしたエクスペリエンスを作成することができます。
 
 Microsoft Graph で Azure AD API を使用することにより、ユーザーのプロファイルについてのクエリの実行、他のユーザーの検索、組織の関係の管理、課題の追跡、既存の組織データを取り入れたオリジナル ソリューションの作成が可能です。 これらの API は、複数のカスタム ビジネス アプリケーションを、組織の既存のデジタル サービスにシームレスに統合するための強固な基盤を提供します。
 
@@ -84,7 +84,7 @@ Azure AD では、アカウントが無防備である可能性を示す異常�
 ## <a name="next-steps"></a>次のステップ
 
 - [Azure AD REST API の使用](/graph/api/resources/azure-ad-overview?view=graph-rest-1.0)方法を確認する。
-- Azure AD を使用して Microsoft Graph の[認証](./auth/)を実行する。
+- Azure AD を使用して Microsoft Graph の[認証](/graph/auth)を実行する。
 - [Azure AD サインイン](https://azure.microsoft.com/ja-JP/develop/identity/signin/)をアプリまたは Web サイトに統合する
 - Azure AD API の最新情報については、[Changelog](changelog.md) を参照してください。
 - Microsoft Graph の使用方法についてのさらに多くのアイデアについては、[サンプル](https://developer.microsoft.com/graph/graph/examples)を参照してください。

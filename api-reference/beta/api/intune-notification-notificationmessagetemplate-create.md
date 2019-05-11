@@ -1,21 +1,21 @@
 ---
 title: notificationMessageTemplate の作成
 description: 新しい notificationMessageTemplate オブジェクトを作成します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 60f5ef2ae0f46a85e2f793eb90c969a1fb28d311
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3a4634f40c9c04b9923f2389bb07212ed5af2170
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32529017"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33900510"
 ---
 # <a name="create-notificationmessagetemplate"></a>notificationMessageTemplate の作成
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) オブジェクトを作成します。
 
@@ -50,7 +50,7 @@ POST /deviceManagement/notificationMessageTemplates
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列型 (String)|エンティティのキー。|
+|id|文字列|エンティティのキー。|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。|
 |displayName|String|通知メッセージ テンプレートの表示名。|
 |defaultLocale|String|要求されたロケールが使用できないときにフォールバックする既定のロケール。|
@@ -101,7 +101,6 @@ Content-Length: 372
   ]
 }
 ```
-
 
 
 

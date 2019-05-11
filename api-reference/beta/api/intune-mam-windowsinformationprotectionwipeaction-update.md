@@ -1,23 +1,23 @@
 ---
-title: windowsinformationprotectionwipeaction を更新する
-description: windowsinformationprotectionwipepeaction オブジェクトのプロパティを更新します。
-author: tfitzmac
+title: WindowsInformationProtectionWipeAction を更新する
+description: Windowsinformationprotectionwipepeaction オブジェクトのプロパティを更新します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e59eeb987e678764adcd5f4378f6bfdc5b4907e0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3d04d5bb4c1061840cce33a45494c66b7de7e417
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32529108"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33900574"
 ---
-# <a name="update-windowsinformationprotectionwipeaction"></a>windowsinformationprotectionwipeaction を更新する
+# <a name="update-windowsinformationprotectionwipeaction"></a>WindowsInformationProtectionWipeAction を更新する
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[windowsinformationprotectionwipepeaction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)オブジェクトのプロパティを更新します。
+[Windowsinformationprotectionwipepeaction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -44,24 +44,24 @@ PATCH /deviceAppManagement/windowsInformationProtectionWipeActions/{windowsInfor
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求本文で、 [windowsinformationprotectionwipepepeaction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)オブジェクトの JSON 表記を指定します。
+要求本文で、 [Windowsinformationprotectionwipepepeaction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)オブジェクトの JSON 表記を指定します。
 
-次の表に、 [windowsinformationprotectionwipepeaction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)の作成時に必要なプロパティを示します。
+次の表に、 [Windowsinformationprotectionwipepeaction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティのキー。|
 |status|[actionState](../resources/intune-shared-actionstate.md)|ワイプアクションの状態。 可能な値は、`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported` です。|
-|targeteduserid|String|このワイプアクションの対象となる UserId。|
+|targetedUserId|String|このワイプアクションの対象となる UserId。|
 |targetedDeviceRegistrationId|String|このワイプアクションの対象となる DeviceRegistrationId。|
-|targeteddevicename|String|対象のデバイス名。|
+|targetedDeviceName|String|対象のデバイス名。|
 |targetedDeviceMacAddress|String|対象デバイスの Mac アドレス。|
 |lastCheckInDateTime|DateTimeOffset|このワイプアクションの対象となったデバイスの最終チェックイン時刻。|
 
 
 
 ## <a name="response"></a>応答
-成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[windowsinformationprotectionwipeaction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)オブジェクトを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[Windowsinformationprotectionwipeaction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 
@@ -101,7 +101,6 @@ Content-Length: 461
   "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
 }
 ```
-
 
 
 

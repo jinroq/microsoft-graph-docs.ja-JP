@@ -1,21 +1,21 @@
 ---
 title: deviceGeoLocation リソースの種類
 description: デバイスの場所
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: acf2987e7c022754ff0659d82027b4d0d26901bd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 46a92f1faad55d82e2ed8184c5f4a4d360b7d588
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32524443"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33942137"
 ---
 # <a name="devicegeolocation-resource-type"></a>deviceGeoLocation リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 デバイスの場所
 
@@ -25,14 +25,14 @@ ms.locfileid: "32524443"
 |lastCollectedDateTimeUtc|DateTimeOffset|場所が記録された、UTC を基準とする時刻|
 |lastCollectedDateTime|DateTimeOffset|場所が記録された、UTC を基準とする時刻|
 |longitude|倍精度浮動小数点数|デバイスの場所の経度座標|
-|latitude|倍精度浮動小数点数|デバイスの場所の緯度座標|
-|altitude|倍精度浮動小数点数|海抜標高 (メートル単位)|
-|horizontalAccuracy|倍精度浮動小数点数|経度と緯度の精度 (メートル単位)|
-|verticalAccuracy|倍精度浮動小数点数|標高の精度 (メートル単位)|
-|heading|倍精度浮動小数点数|真北を基準とする方角|
+|latitude|2 行分|デバイスの場所の緯度座標|
+|altitude|2 行分|海抜標高 (メートル単位)|
+|horizontalAccuracy|2 行分|経度と緯度の精度 (メートル単位)|
+|verticalAccuracy|2 行分|標高の精度 (メートル単位)|
+|heading|2 行分|真北を基準とする方角|
 |speed|Double|デバイスの移動速度 (m/秒)|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -56,7 +56,6 @@ ms.locfileid: "32524443"
   "speed": "<Unknown Primitive Type Edm.Double>"
 }
 ```
-
 
 
 

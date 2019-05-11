@@ -1,21 +1,21 @@
 ---
 title: embeddedSIMDeviceStateValue 列挙型
 description: 埋め込まれた SIM のアクティブ化コードのさまざまな状態について説明します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4a4970e08ff9b305aaf2aad4d82daf994d2010bc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b1144db582b7e6aa5f38043797cd15f3b009d4d1
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568767"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941318"
 ---
 # <a name="embeddedsimdevicestatevalue-enum-type"></a>embeddedSIMDeviceStateValue 列挙型
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 埋め込まれた SIM のアクティブ化コードのさまざまな状態について説明します。
 
@@ -23,14 +23,13 @@ ms.locfileid: "32568767"
 |メンバー|値|説明|
 |:---|:---|:---|
 |注評価|.0|埋め込まれている SIM ライセンス認証コードが無料で、デバイスに割り当てることができることを指定します。|
-|フェール|1 |Intune サービスがこのプロファイルをデバイスに配信できなかったことを指定します。|
-|インストール|2 |埋め込まれた SIM ライセンス認証コードがデバイスに割り当てられており、デバイスがトークンをインストールしていることを指定します。|
-|れる|3 |埋め込まれた SIM ライセンス認証コードがターゲットデバイスに正常にインストールされたことを指定します。|
-|と|4 |Intune サービスがデバイスからプロファイルを削除しようとしていることを指定します。|
-|error|5 |このプロファイルにエラーがあることを指定します。|
-|deleted|6 |プロファイルがデバイスから削除されることを指定します。|
-|removedbyuser|7 |ユーザーがプロファイルをデバイスから削除することを指定します。|
-
+|フェール|1-d|Intune サービスがこのプロファイルをデバイスに配信できなかったことを指定します。|
+|インストール|pbm-2|埋め込まれた SIM ライセンス認証コードがデバイスに割り当てられており、デバイスがトークンをインストールしていることを指定します。|
+|れる|1/3|埋め込まれた SIM ライセンス認証コードがターゲットデバイスに正常にインストールされたことを指定します。|
+|と|2/4|Intune サービスがデバイスからプロファイルを削除しようとしていることを指定します。|
+|error|5|このプロファイルにエラーがあることを指定します。|
+|deleted|シックス|プロファイルがデバイスから削除されることを指定します。|
+|removedByUser|7|ユーザーがプロファイルをデバイスから削除することを指定します。|
 
 
 

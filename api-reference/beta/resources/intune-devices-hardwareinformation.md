@@ -1,21 +1,21 @@
 ---
 title: ハードウェア情報リソースの種類
 description: 特定のデバイスのハードウェア情報。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0c751b6601c296b01be91792105325e10a52ea2f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4ad73731be7f3fd3d18798b7dc84ce7865449529
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32522483"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33942011"
 ---
 # <a name="hardwareinformation-resource-type"></a>ハードウェア情報リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 特定のデバイスのハードウェア情報。
 
@@ -31,12 +31,12 @@ ms.locfileid: "32522483"
 |model|String|デバイスのモデル|
 |phoneNumber|String|デバイスの電話番号|
 |subscriberCarrier|String|デバイスのサブスクライバーキャリア|
-|cellulartechnology|String|デバイスの携帯電話テクノロジ|
+|cellularTechnology|String|デバイスの携帯電話テクノロジ|
 |wifiMac|String|デバイスの WiFi MAC アドレス|
 |operatingSystemLanguage|String|デバイスのオペレーティングシステムの言語|
-|isSupervised|ブール型|デバイスの監視モード|
+|isSupervised|Boolean|デバイスの監視モード|
 |isEncrypted|Boolean|デバイスの暗号化の状態|
-|isSharedDevice|ブール型|共有 iPad|
+|isSharedDevice|Boolean|共有 iPad|
 |sharedDeviceCachedUsers|[sharedAppleDeviceUser](../resources/intune-devices-sharedappledeviceuser.md)コレクション|共有 Apple デバイス上のすべてのユーザー|
 |tpmSpecificationVersion|String|仕様バージョンを指定する文字列。|
 |operatingSystemEdition|String|OS のエディションを指定する文字列。|
@@ -45,7 +45,7 @@ ms.locfileid: "32522483"
 |deviceGuardVirtualizationBasedSecurityState|[deviceGuardVirtualizationBasedSecurityState](../resources/intune-devices-deviceguardvirtualizationbasedsecuritystate.md)|仮想化ベースのセキュリティの状態。 . 可能な値は、`running`、`rebootRequired`、`require64BitArchitecture`、`notLicensed`、`notConfigured`、`doesNotMeetHardwareRequirements`、`other` です。|
 |deviceGuardLocalSystemAuthorityCredentialGuardState|[deviceGuardLocalSystemAuthorityCredentialGuardState](../resources/intune-devices-deviceguardlocalsystemauthoritycredentialguardstate.md)|ローカルシステム権限 (LSA) credential guard の状態。 . 可能な値は、`running`、`rebootRequired`、`notLicensed`、`notConfigured`、`virtualizationBasedSecurityNotRunning` です。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -90,7 +90,6 @@ ms.locfileid: "32522483"
   "deviceGuardLocalSystemAuthorityCredentialGuardState": "String"
 }
 ```
-
 
 
 

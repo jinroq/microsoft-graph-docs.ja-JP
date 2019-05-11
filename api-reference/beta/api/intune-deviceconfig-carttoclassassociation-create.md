@@ -1,21 +1,21 @@
 ---
-title: cartToClassAssociation を作成する
+title: CartToClassAssociation を作成する
 description: 新しい cartToClassAssociation オブジェクトを作成します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c683b2ae19caa55c62f0af834fbb8b74d5fb904c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 68700982b642798a8fd0b29cbe31d063ca48b38c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32471582"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33928066"
 ---
-# <a name="create-carttoclassassociation"></a>cartToClassAssociation を作成する
+# <a name="create-carttoclassassociation"></a>CartToClassAssociation を作成する
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)オブジェクトを作成します。
 
@@ -50,13 +50,13 @@ POST /deviceManagement/cartToClassAssociations
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|id|文字列|エンティティのキー。|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。|
 |version|Int32|CartToClassAssociation のバージョン。|
 |displayName|String|管理者が指定した、デバイス構成の名前。|
-|説明|String|CartToClassAssociation の管理者提供の説明。|
-|devicecartids|String collection|クラスに関連付けられるデバイスカートの識別子。|
+|description|String|CartToClassAssociation の管理者提供の説明。|
+|deviceCartIds|String collection|クラスに関連付けられるデバイスカートの識別子。|
 |classroomIds|String collection|デバイスカートに関連付ける教室の識別子。|
 
 
@@ -110,7 +110,6 @@ Content-Length: 443
   ]
 }
 ```
-
 
 
 

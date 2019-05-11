@@ -1,23 +1,23 @@
 ---
-title: groupPolicyPresentationValueLongDecimal を取得する
-description: groupPolicyPresentationValueLongDecimal オブジェクトのプロパティとリレーションシップを読み取ります。
-author: tfitzmac
+title: GroupPolicyPresentationValueLongDecimal を取得する
+description: GroupPolicyPresentationValueLongDecimal オブジェクトのプロパティとリレーションシップを読み取ります。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 55ba50d6d2848fcf9d3d019dad522667642ccb4e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a58a6c70e560243aea9b52a34144f68dec49680b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32530677"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33904196"
 ---
-# <a name="get-grouppolicypresentationvaluelongdecimal"></a>groupPolicyPresentationValueLongDecimal を取得する
+# <a name="get-grouppolicypresentationvaluelongdecimal"></a>GroupPolicyPresentationValueLongDecimal を取得する
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[groupPolicyPresentationValueLongDecimal](../resources/intune-grouppolicy-grouppolicypresentationvaluelongdecimal.md)オブジェクトのプロパティとリレーションシップを読み取ります。
+[GroupPolicyPresentationValueLongDecimal](../resources/intune-grouppolicy-grouppolicypresentationvaluelongdecimal.md)オブジェクトのプロパティとリレーションシップを読み取ります。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -77,7 +77,6 @@ Content-Length: 297
   }
 }
 ```
-
 
 
 

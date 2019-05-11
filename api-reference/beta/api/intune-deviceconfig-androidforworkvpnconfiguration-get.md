@@ -1,23 +1,23 @@
 ---
-title: androidforwork vpnconfiguration の取得
-description: androidforwork vpnconfiguration オブジェクトのプロパティとリレーションシップを読み取ります。
-author: tfitzmac
+title: Androidforwork Vpnconfiguration の取得
+description: Androidforwork Vpnconfiguration オブジェクトのプロパティとリレーションシップを読み取ります。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: beebe65fe6d534c4624bfc9de1601f580ad029db
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 34d479677f804fd02782577a7661ae8525dc8766
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32477945"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33932781"
 ---
-# <a name="get-androidforworkvpnconfiguration"></a>androidforwork vpnconfiguration の取得
+# <a name="get-androidforworkvpnconfiguration"></a>Androidforwork Vpnconfiguration の取得
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[androidforwork vpnconfiguration](../resources/intune-deviceconfig-androidforworkvpnconfiguration.md)オブジェクトのプロパティとリレーションシップを読み取ります。
+[Androidforwork Vpnconfiguration](../resources/intune-deviceconfig-androidforworkvpnconfiguration.md)オブジェクトのプロパティとリレーションシップを読み取ります。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -52,7 +52,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[androidforwork vpnconfiguration](../resources/intune-deviceconfig-androidforworkvpnconfiguration.md)オブジェクトを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[Androidforwork vpnconfiguration](../resources/intune-deviceconfig-androidforworkvpnconfiguration.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 
@@ -113,7 +113,6 @@ Content-Length: 1254
   }
 }
 ```
-
 
 
 

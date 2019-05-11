@@ -1,31 +1,31 @@
 ---
-title: vpnroute リソースの種類
+title: vpnRoute リソースの種類
 description: VPN ルートの定義。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c13cb40b5324620eebeb7230135ef981dba84f36
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ffa3569d8d1a769779201cf056de07c80594b68e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561896"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944545"
 ---
-# <a name="vpnroute-resource-type"></a>vpnroute リソースの種類
+# <a name="vpnroute-resource-type"></a>vpnRoute リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 VPN ルートの定義。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|destinationprefix|String|宛先プレフィックス (IPv4/v6 アドレス)。|
+|destinationPrefix|String|宛先プレフィックス (IPv4/v6 アドレス)。|
 |prefixSize|Int32|プレフィックスのサイズです。 (1-32)。 有効な値は 1 ~ 32|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -42,7 +42,6 @@ VPN ルートの定義。
   "prefixSize": 1024
 }
 ```
-
 
 
 

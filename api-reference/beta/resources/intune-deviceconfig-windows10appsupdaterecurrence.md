@@ -1,32 +1,31 @@
 ---
 title: windows10AppsUpdateRecurrence 列挙型
 description: Windows10 の定期的なアプリ更新に使用できる値。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 56cbfc6f6a8b9952682a5f7cfeeb2f4caffc94b7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 39f5d835028c4ade7c53d6dd1103f69ec0b788c2
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32572228"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944419"
 ---
 # <a name="windows10appsupdaterecurrence-enum-type"></a>windows10AppsUpdateRecurrence 列挙型
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 Windows10 の定期的なアプリ更新に使用できる値。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|なし|.0|既定値は、1つのオカレンスを指定します。|
-|定期的|1 |定期的.|
-|あたり|2 |あたり.|
-|ごと|3 |ごと.|
-
+|none|.0|既定値は、1つのオカレンスを指定します。|
+|定期的|1-d|定期的.|
+|あたり|pbm-2|あたり.|
+|ごと|1/3|ごと.|
 
 
 

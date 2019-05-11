@@ -1,21 +1,21 @@
 ---
-title: sideLoadingKey を作成する
+title: SideLoadingKey を作成する
 description: 新しい sideLoadingKey オブジェクトを作成します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 24f2c970182322bc47b333137d7ea94b61e9726f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2c448e675df87d0706f377b43857adc00f1f5d32
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32528485"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899901"
 ---
-# <a name="create-sideloadingkey"></a>sideLoadingKey を作成する
+# <a name="create-sideloadingkey"></a>SideLoadingKey を作成する
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)オブジェクトを作成します。
 
@@ -50,11 +50,11 @@ POST /deviceAppManagement/sideLoadingKeys
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|サイドローディングキーの一意 Id。|
+|id|文字列|サイドローディングキーの一意 Id。|
 |value|文字列|サイドローディングキー値は、5 x 5 の値で、hiphens で区切られています。|
 |displayName|String|ITPro 管理者に表示されるサイドローディングキー名。|
 |description|String|ITPro 管理者に表示されるサイドローディングキーの説明。|
-|totalactivation|Int32|ITPro 管理者に表示されるサイドローディングキーの合計です。|
+|totalActivation|Int32|ITPro 管理者に表示されるサイドローディングキーの合計です。|
 |lastUpdatedDateTime|String|サイドローディングキー最終更新日が ITPro の管理者に表示されます。|
 
 
@@ -98,7 +98,6 @@ Content-Length: 295
   "lastUpdatedDateTime": "Last Updated Date Time value"
 }
 ```
-
 
 
 

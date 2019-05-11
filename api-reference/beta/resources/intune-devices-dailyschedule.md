@@ -1,33 +1,33 @@
 ---
 title: dailySchedule リソースの種類
 description: 定期的なデバイス管理スクリプトの日単位の実行スケジュール。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dd2b226255f433b4f82d042b6389830143515033
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: cf0f5b59992a862b88ae663b45b6ae910ac4ba82
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454140"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33942963"
 ---
 # <a name="dailyschedule-resource-type"></a>dailySchedule リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 定期的なデバイス管理スクリプトの日単位の実行スケジュール。
 
 
-[runschedule](../resources/intune-devices-runschedule.md)から継承します
+[Runschedule](../resources/intune-devices-runschedule.md)から継承します
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
 |interval|Int32|日数で指定した間隔|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -43,7 +43,6 @@ ms.locfileid: "32454140"
   "interval": 1024
 }
 ```
-
 
 
 

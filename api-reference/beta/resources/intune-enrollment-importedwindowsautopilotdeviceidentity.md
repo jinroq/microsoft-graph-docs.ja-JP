@@ -1,21 +1,21 @@
 ---
 title: importedWindowsAutopilotDeviceIdentity リソースの種類
 description: インポートした Windows Autopilot デバイス。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 50fd9d25faa4b7f1dc244701977bf6c71cd82974
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 70cdc846424941ea98fefdb23da0886930498f75
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32567054"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941563"
 ---
 # <a name="importedwindowsautopilotdeviceidentity-resource-type"></a>importedWindowsAutopilotDeviceIdentity リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 インポートした Windows Autopilot デバイス。
 
@@ -39,6 +39,7 @@ ms.locfileid: "32567054"
 |のようにします。|String|Windows 自動操縦デバイスのインポート Id。|
 |hardwareIdentifier|Binary|Windows オートパイロット デバイスのハードウェア BLOB。|
 |state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|インポートしたデバイスの現在の状態。|
+|assignedUserPrincipalName|String|デバイスが割り当てられるユーザーの UPN|
 
 ## <a name="relationships"></a>関係
 なし
@@ -66,10 +67,10 @@ ms.locfileid: "32567054"
     "deviceRegistrationId": "String",
     "deviceErrorCode": 1024,
     "deviceErrorName": "String"
-  }
+  },
+  "assignedUserPrincipalName": "String"
 }
 ```
-
 
 
 

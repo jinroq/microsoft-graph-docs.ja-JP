@@ -1,38 +1,38 @@
 ---
 title: securityBaselineDeviceState リソースの種類
 description: デバイスのセキュリティベースラインのセキュリティベースラインコンプライアンスの状態の要約。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f1fb6bd8ee8e474fdf96bc2c70f4db288571d795
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ff87b5c39d00957ddd4128bc3351879dcd5b652f
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562238"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943292"
 ---
 # <a name="securitybaselinedevicestate-resource-type"></a>securityBaselineDeviceState リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 デバイスのセキュリティベースラインのセキュリティベースラインコンプライアンスの状態の要約。
 
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[リスト securityBaselineDeviceStates](../api/intune-deviceintent-securitybaselinedevicestate-list.md)|[securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)コレクション|[securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)オブジェクトのプロパティとリレーションシップをリストします。|
-|[securityBaselineDeviceState を取得する](../api/intune-deviceintent-securitybaselinedevicestate-get.md)|[securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)|[securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[securityBaselineDeviceState を作成する](../api/intune-deviceintent-securitybaselinedevicestate-create.md)|[securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)|新しい[securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)オブジェクトを作成します。|
-|[securityBaselineDeviceState の削除](../api/intune-deviceintent-securitybaselinedevicestate-delete.md)|なし|[securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)を削除します。|
-|[securityBaselineDeviceState の更新](../api/intune-deviceintent-securitybaselinedevicestate-update.md)|[securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)|[securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)オブジェクトのプロパティを更新します。|
+|[リスト securityBaselineDeviceStates](../api/intune-deviceintent-securitybaselinedevicestate-list.md)|[securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)コレクション|[SecurityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)オブジェクトのプロパティとリレーションシップをリストします。|
+|[SecurityBaselineDeviceState を取得する](../api/intune-deviceintent-securitybaselinedevicestate-get.md)|[securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)|[SecurityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[SecurityBaselineDeviceState を作成する](../api/intune-deviceintent-securitybaselinedevicestate-create.md)|[securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)|新しい[securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)オブジェクトを作成します。|
+|[SecurityBaselineDeviceState の削除](../api/intune-deviceintent-securitybaselinedevicestate-delete.md)|None|[SecurityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)を削除します。|
+|[SecurityBaselineDeviceState の更新](../api/intune-deviceintent-securitybaselinedevicestate-update.md)|[securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)|[SecurityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティの一意識別子|
-|manageddeviceid|String|Intune デバイス id|
+|id|文字列|エンティティの一意識別子|
+|managedDeviceId|String|Intune デバイス id|
 |deviceDisplayName|String|デバイスの表示名|
 |userPrincipalName|String|ユーザー プリンシパル名|
 |state|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|セキュリティベースラインコンプライアンスの状態。 使用可能な値: `unknown`、`secure`、`notApplicable`、`notSecure`、`error`、`conflict`。|
@@ -60,7 +60,6 @@ ms.locfileid: "32562238"
   "lastReportedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

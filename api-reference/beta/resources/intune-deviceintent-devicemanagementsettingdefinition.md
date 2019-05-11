@@ -1,47 +1,47 @@
 ---
-title: devicemanagementsettingdefinition リソースの種類
+title: deviceManagementSettingDefinition リソースの種類
 description: 指定した設定の定義を表すエンティティ
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c2e06522680085502e3007dd4863bd703c4bed44
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8b4147d5ed892eebce175d79925b7329525585a4
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550547"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943572"
 ---
-# <a name="devicemanagementsettingdefinition-resource-type"></a>devicemanagementsettingdefinition リソースの種類
+# <a name="devicemanagementsettingdefinition-resource-type"></a>deviceManagementSettingDefinition リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 指定した設定の定義を表すエンティティ
 
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[devicemanagementsettingdefinitions のリスト](../api/intune-deviceintent-devicemanagementsettingdefinition-list.md)|[devicemanagementsettingdefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)コレクション|[devicemanagementsettingdefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)オブジェクトのプロパティとリレーションシップをリストします。|
-|[devicemanagementsettingdefinition の取得](../api/intune-deviceintent-devicemanagementsettingdefinition-get.md)|[deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)|[devicemanagementsettingdefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[devicemanagementsettingdefinition の作成](../api/intune-deviceintent-devicemanagementsettingdefinition-create.md)|[deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)|新しい[devicemanagementsettingdefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)オブジェクトを作成します。|
-|[devicemanagementsettingdefinition の削除](../api/intune-deviceintent-devicemanagementsettingdefinition-delete.md)|なし|[devicemanagementsettingdefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)を削除します。|
-|[devicemanagementsettingdefinition の更新](../api/intune-deviceintent-devicemanagementsettingdefinition-update.md)|[deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)|[devicemanagementsettingdefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)オブジェクトのプロパティを更新します。|
+|[DeviceManagementSettingDefinitions のリスト](../api/intune-deviceintent-devicemanagementsettingdefinition-list.md)|[Devicemanagementsettingdefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)コレクション|[Devicemanagementsettingdefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)オブジェクトのプロパティとリレーションシップをリストします。|
+|[DeviceManagementSettingDefinition の取得](../api/intune-deviceintent-devicemanagementsettingdefinition-get.md)|[deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)|[Devicemanagementsettingdefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[DeviceManagementSettingDefinition の作成](../api/intune-deviceintent-devicemanagementsettingdefinition-create.md)|[deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)|新しい[Devicemanagementsettingdefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)オブジェクトを作成します。|
+|[DeviceManagementSettingDefinition の削除](../api/intune-deviceintent-devicemanagementsettingdefinition-delete.md)|None|[Devicemanagementsettingdefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)を削除します。|
+|[DeviceManagementSettingDefinition の更新](../api/intune-deviceintent-devicemanagementsettingdefinition-update.md)|[deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)|[Devicemanagementsettingdefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|設定定義の ID|
-|valueType|[deviceManangementIntentValueType](../resources/intune-deviceintent-devicemanangementintentvaluetype.md)|値のデータ型。 可能な値は `integer`、`boolean`、`string`、`complex`、`collection`、`abstractComplex` です。|
+|id|文字列|設定定義の ID|
+|valueType|[deviceManangementIntentValueType](../resources/intune-deviceintent-devicemanangementintentvaluetype.md)|値のデータ型。 使用可能な値: `integer`、`boolean`、`string`、`complex`、`collection`、`abstractComplex`。|
 |displayName|String|設定の表示名|
-|isTopLevel|ブール値|設定が最上位レベルの場合は、コレクションまたは複雑な設定でラップする必要がなく構成できます。|
+|isTopLevel|Boolean|設定が最上位レベルの場合は、コレクションまたは複雑な設定でラップする必要がなく構成できます。|
 |description|String|設定の説明|
-|documentation url|String|ドキュメントを設定するための Url|
+|Documentation Url|String|ドキュメントを設定するための Url|
 |keywords|String collection|設定に関連付けられているキーワード|
-|式|[devicemanagementconstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)コレクション|設定値の制約のコレクション|
-|ヲ|[devicemanagementsettingdependency](../resources/intune-deviceintent-devicemanagementsettingdependency.md)コレクション|他の設定に対する依存関係のコレクション|
+|式|[Devicemanagementconstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)コレクション|設定値の制約のコレクション|
+|ヲ|[Devicemanagementsettingdependency](../resources/intune-deviceintent-devicemanagementsettingdependency.md)コレクション|他の設定に対する依存関係のコレクション|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -82,7 +82,6 @@ ms.locfileid: "32550547"
   ]
 }
 ```
-
 
 
 

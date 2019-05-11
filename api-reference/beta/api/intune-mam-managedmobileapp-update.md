@@ -1,21 +1,21 @@
 ---
 title: managedMobileApp の更新
 description: managedMobileApp オブジェクトのプロパティを更新します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7912fc159257fd1d416fd8f8b6b1d1dc05e6086c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 91291c18ecf5e66c865d6ca5e52a93c8902064ca
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32529605"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33903235"
 ---
 # <a name="update-managedmobileapp"></a>managedMobileApp の更新
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [managedMobileApp](../resources/intune-mam-managedmobileapp.md) オブジェクトのプロパティを更新します。
 
@@ -96,7 +96,6 @@ Content-Length: 230
   "version": "Version value"
 }
 ```
-
 
 
 

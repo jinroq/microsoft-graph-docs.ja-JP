@@ -1,44 +1,44 @@
 ---
-title: devicemanagementintentuserstate リソースの種類
+title: deviceManagementIntentUserState リソースの種類
 description: 目的のユーザー状態を表すエンティティ
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5dddc3585d6a99f8ad1613a01a796c34128c5d4e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fef4bd7995cf822af39743fe6f61028813b4a389
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32553877"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943264"
 ---
-# <a name="devicemanagementintentuserstate-resource-type"></a>devicemanagementintentuserstate リソースの種類
+# <a name="devicemanagementintentuserstate-resource-type"></a>deviceManagementIntentUserState リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 目的のユーザー状態を表すエンティティ
 
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[devicemanagementintentuserstates のリスト](../api/intune-deviceintent-devicemanagementintentuserstate-list.md)|[devicemanagementintentuserstate](../resources/intune-deviceintent-devicemanagementintentuserstate.md)コレクション|[devicemanagementintentuserstate](../resources/intune-deviceintent-devicemanagementintentuserstate.md)オブジェクトのプロパティとリレーションシップをリストします。|
-|[devicemanagementintentuserstate の取得](../api/intune-deviceintent-devicemanagementintentuserstate-get.md)|[deviceManagementIntentUserState](../resources/intune-deviceintent-devicemanagementintentuserstate.md)|[devicemanagementintentuserstate](../resources/intune-deviceintent-devicemanagementintentuserstate.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[devicemanagementintentuserstate の作成](../api/intune-deviceintent-devicemanagementintentuserstate-create.md)|[deviceManagementIntentUserState](../resources/intune-deviceintent-devicemanagementintentuserstate.md)|新しい[devicemanagementintentuserstate](../resources/intune-deviceintent-devicemanagementintentuserstate.md)オブジェクトを作成します。|
-|[devicemanagementintentuserstate の削除](../api/intune-deviceintent-devicemanagementintentuserstate-delete.md)|なし|[devicemanagementintentuserstate](../resources/intune-deviceintent-devicemanagementintentuserstate.md)を削除します。|
-|[devicemanagementintentuserstate の更新](../api/intune-deviceintent-devicemanagementintentuserstate-update.md)|[deviceManagementIntentUserState](../resources/intune-deviceintent-devicemanagementintentuserstate.md)|[devicemanagementintentuserstate](../resources/intune-deviceintent-devicemanagementintentuserstate.md)オブジェクトのプロパティを更新します。|
+|[DeviceManagementIntentUserStates のリスト](../api/intune-deviceintent-devicemanagementintentuserstate-list.md)|[Devicemanagementintentuserstate](../resources/intune-deviceintent-devicemanagementintentuserstate.md)コレクション|[Devicemanagementintentuserstate](../resources/intune-deviceintent-devicemanagementintentuserstate.md)オブジェクトのプロパティとリレーションシップをリストします。|
+|[DeviceManagementIntentUserState の取得](../api/intune-deviceintent-devicemanagementintentuserstate-get.md)|[deviceManagementIntentUserState](../resources/intune-deviceintent-devicemanagementintentuserstate.md)|[Devicemanagementintentuserstate](../resources/intune-deviceintent-devicemanagementintentuserstate.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[DeviceManagementIntentUserState の作成](../api/intune-deviceintent-devicemanagementintentuserstate-create.md)|[deviceManagementIntentUserState](../resources/intune-deviceintent-devicemanagementintentuserstate.md)|新しい[Devicemanagementintentuserstate](../resources/intune-deviceintent-devicemanagementintentuserstate.md)オブジェクトを作成します。|
+|[DeviceManagementIntentUserState の削除](../api/intune-deviceintent-devicemanagementintentuserstate-delete.md)|None|[Devicemanagementintentuserstate](../resources/intune-deviceintent-devicemanagementintentuserstate.md)を削除します。|
+|[DeviceManagementIntentUserState の更新](../api/intune-deviceintent-devicemanagementintentuserstate-update.md)|[deviceManagementIntentUserState](../resources/intune-deviceintent-devicemanagementintentuserstate.md)|[Devicemanagementintentuserstate](../resources/intune-deviceintent-devicemanagementintentuserstate.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|ID|
+|id|文字列|ID|
 |userPrincipalName|String|デバイスで報告されているユーザープリンシパル名|
 |userName|String|デバイスで報告されているユーザー名|
 |deviceCount|Int32|目的のためにユーザーに属しているデバイスの数|
 |lastReportedDateTime|DateTimeOffset|インテントレポートの最終更新日時|
 |state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|目的のユーザー状態。 可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -60,7 +60,6 @@ ms.locfileid: "32553877"
   "state": "String"
 }
 ```
-
 
 
 

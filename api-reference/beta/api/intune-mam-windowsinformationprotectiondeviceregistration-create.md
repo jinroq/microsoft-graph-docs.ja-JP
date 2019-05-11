@@ -1,21 +1,21 @@
 ---
-title: windowsInformationProtectionDeviceRegistration を作成する
+title: WindowsInformationProtectionDeviceRegistration を作成する
 description: 新しい windowsInformationProtectionDeviceRegistration オブジェクトを作成します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cc076b2579dc0eaf3527abb3761198e5dfd14917
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3fa83295e3c5dc53d5a1e94e498154be9381d8de
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32529213"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33903019"
 ---
-# <a name="create-windowsinformationprotectiondeviceregistration"></a>windowsInformationProtectionDeviceRegistration を作成する
+# <a name="create-windowsinformationprotectiondeviceregistration"></a>WindowsInformationProtectionDeviceRegistration を作成する
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい[windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)オブジェクトを作成します。
 
@@ -50,11 +50,11 @@ POST /deviceAppManagement/windowsInformationProtectionDeviceRegistrations
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
-|userId|文字列型 (String)|このデバイス登録レコードに関連付けられている UserId。|
+|id|文字列|エンティティのキー。|
+|userId|String|このデバイス登録レコードに関連付けられている UserId。|
 |deviceRegistrationId|String|このデバイス登録レコードのデバイス識別子。|
 |deviceName|String|デバイス名。|
-|deviceType|String|デバイスの種類。たとえば、windows ラップトップ VS windows phone。|
+|deviceType|String|デバイスの種類。たとえば、Windows ラップトップ VS Windows phone。|
 |deviceMacAddress|String|デバイスの Mac アドレス。|
 |lastCheckInDateTime|DateTimeOffset|デバイスの最終チェックイン時刻。|
 
@@ -101,7 +101,6 @@ Content-Length: 415
   "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
 }
 ```
-
 
 
 

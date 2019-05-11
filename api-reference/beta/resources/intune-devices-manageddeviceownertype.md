@@ -1,21 +1,21 @@
 ---
 title: managedDeviceOwnerType 列挙型
 description: デバイスの所有者の種類。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 21ee6fa9a64dfb0891282ff79363ed1ca8f57bdd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: eb4c0fe2440c17453d5941138eade3b9911b9dda
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521195"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941976"
 ---
 # <a name="manageddeviceownertype-enum-type"></a>managedDeviceOwnerType 列挙型
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 デバイスの所有者の種類。
 
@@ -23,9 +23,8 @@ ms.locfileid: "32521195"
 |メンバー|値|説明|
 |:---|:---|:---|
 |不明|.0|わかり.|
-|会社|1 |会社によって所有されます。|
-|personal|2 |ユーザーによって所有されます。|
-
+|会社|1-d|会社によって所有されます。|
+|personal|pbm-2|ユーザーによって所有されます。|
 
 
 
