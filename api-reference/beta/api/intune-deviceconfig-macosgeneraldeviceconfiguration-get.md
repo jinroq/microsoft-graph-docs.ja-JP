@@ -1,21 +1,21 @@
 ---
 title: Get macOSGeneralDeviceConfiguration
 description: macOSGeneralDeviceConfiguration オブジェクトのプロパティとリレーションシップを読み取ります。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 71cb75ee1fa1c862a30171f81cfd1000c77dfe77
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bbcc485fe055290a0bb4dbe2cca6eae76fa2a335
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32518507"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33922417"
 ---
 # <a name="get-macosgeneraldeviceconfiguration"></a>Get macOSGeneralDeviceConfiguration
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md) オブジェクトのプロパティとリレーションシップを読み取ります。
 
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2301
+Content-Length: 2656
 
 {
   "value": {
@@ -131,11 +131,17 @@ Content-Length: 2301
     "passwordBlockAirDropSharing": true,
     "softwareUpdatesEnforcedDelayInDays": 2,
     "softwareUpdatesForceDelayed": true,
-    "contentCachingBlocked": true
+    "contentCachingBlocked": true,
+    "iCloudBlockPhotoLibrary": true,
+    "screenCaptureBlocked": true,
+    "classroomAppBlockRemoteScreenObservation": true,
+    "classroomAppForceUnpromptedScreenObservation": true,
+    "classroomForceAutomaticallyJoinClasses": true,
+    "classroomForceRequestPermissionToLeaveClasses": true,
+    "classroomForceUnpromptedAppAndDeviceLock": true
   }
 }
 ```
-
 
 
 

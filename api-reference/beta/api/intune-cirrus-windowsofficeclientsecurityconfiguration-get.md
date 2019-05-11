@@ -1,21 +1,21 @@
 ---
-title: windowsOfficeClientSecurityConfiguration を取得する
+title: WindowsOfficeClientSecurityConfiguration を取得する
 description: 特定のセキュリティポリシー windowsOfficeClientSecurityConfiguration オブジェクトを取得します。
 localization_priority: Normal
-author: tfitzmac
+author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 02edba061958739dd0dac43151e027b414be19d2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3c55e9d1018d2781bfbd4e761eafcf054485798a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32483419"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33933957"
 ---
-# <a name="get-windowsofficeclientsecurityconfiguration"></a>windowsOfficeClientSecurityConfiguration を取得する
+# <a name="get-windowsofficeclientsecurityconfiguration"></a>WindowsOfficeClientSecurityConfiguration を取得する
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 特定のセキュリティポリシー [windowsOfficeClientSecurityConfiguration](../resources/intune-cirrus-windowsofficeclientsecurityconfiguration.md)オブジェクトを取得します。
 
@@ -24,7 +24,7 @@ ms.locfileid: "32483419"
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
-|委任 (職場または学校のアカウント)|devicemanagementconfiguration をすべて取得します。|
+|委任 (職場または学校のアカウント)|DeviceManagementConfiguration をすべて取得します。|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 

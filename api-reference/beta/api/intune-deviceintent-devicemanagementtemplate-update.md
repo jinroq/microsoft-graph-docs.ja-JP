@@ -1,23 +1,23 @@
 ---
-title: devicemanagementtemplate の更新
-description: devicemanagementtemplate オブジェクトのプロパティを更新します。
-author: tfitzmac
+title: DeviceManagementTemplate の更新
+description: DeviceManagementTemplate オブジェクトのプロパティを更新します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d974ec691b99ecc9f3067f20ab4d2310cbe27d23
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6c8c2ad9d9c0020157068c4e9b78bd13369365f9
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32466568"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33915868"
 ---
-# <a name="update-devicemanagementtemplate"></a>devicemanagementtemplate の更新
+# <a name="update-devicemanagementtemplate"></a>DeviceManagementTemplate の更新
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[devicemanagementtemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)オブジェクトのプロパティを更新します。
+[Devicemanagementtemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -35,6 +35,7 @@ ms.locfileid: "32466568"
 -->
 ``` http
 PATCH /deviceManagement/templates/{deviceManagementTemplateId}
+PATCH /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{deviceManagementTemplateId}
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
@@ -44,15 +45,18 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求本文で、 [devicemanagementtemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)オブジェクトの JSON 表記を指定します。
+要求本文で、 [Devicemanagementtemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)オブジェクトの JSON 表記を指定します。
 
-次の表に、 [devicemanagementtemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)の作成時に必要なプロパティを示します。
+次の表に、 [Devicemanagementtemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|テンプレート ID|
+|id|文字列|テンプレート ID|
 |displayName|String|テンプレートの表示名|
-|説明|String|テンプレートの説明|
+|description|String|テンプレートの説明|
+|versionInfo|String|テンプレートのバージョン情報|
+|isDeprecated|Boolean|テンプレートが非推奨になっているか、使用されていません。 推奨されていないテンプレートからは、インテントを作成できません。|
+|intentCount|Int32|このテンプレートから作成されたインテントの数。|
 
 
 
@@ -66,12 +70,15 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/templates/{deviceManagementTemplateId}
 Content-type: application/json
-Content-length: 145
+Content-length: 232
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementTemplate",
   "displayName": "Display Name value",
-  "description": "Description value"
+  "description": "Description value",
+  "versionInfo": "Version Info value",
+  "isDeprecated": true,
+  "intentCount": 11
 }
 ```
 
@@ -80,16 +87,18 @@ Content-length: 145
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 194
+Content-Length: 281
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementTemplate",
   "id": "edd764ca-64ca-edd7-ca64-d7edca64d7ed",
   "displayName": "Display Name value",
-  "description": "Description value"
+  "description": "Description value",
+  "versionInfo": "Version Info value",
+  "isDeprecated": true,
+  "intentCount": 11
 }
 ```
-
 
 
 

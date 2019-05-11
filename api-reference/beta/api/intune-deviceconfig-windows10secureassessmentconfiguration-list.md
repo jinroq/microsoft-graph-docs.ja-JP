@@ -1,21 +1,21 @@
 ---
 title: windows10SecureAssessmentConfigurations のリスト
 description: windows10SecureAssessmentConfiguration オブジェクトのプロパティとリレーションシップをリストします。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b14533529be320950a0f66b4cb406f07201006be
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 020a3086a1202aef5cf443095e9a765ab2a0ec69
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32515786"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33918494"
 ---
 # <a name="list-windows10secureassessmentconfigurations"></a>windows10SecureAssessmentConfigurations のリスト
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [windows10SecureAssessmentConfiguration](../resources/intune-deviceconfig-windows10secureassessmentconfiguration.md) オブジェクトのプロパティとリレーションシップをリストします。
 
@@ -89,7 +89,6 @@ Content-Length: 772
   ]
 }
 ```
-
 
 
 

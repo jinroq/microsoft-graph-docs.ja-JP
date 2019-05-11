@@ -1,23 +1,23 @@
 ---
-title: devicemanagementintentassignment の作成
-description: 新しい devicemanagementintentassignment オブジェクトを作成します。
-author: tfitzmac
+title: DeviceManagementIntentAssignment の作成
+description: 新しい deviceManagementIntentAssignment オブジェクトを作成します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 91a23ab1d0c715f3b3cb28e4f6c84c1e3168270a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0ea992271bd065ad64423dc4756e5efba430b78c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32508380"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33916190"
 ---
-# <a name="create-devicemanagementintentassignment"></a>devicemanagementintentassignment の作成
+# <a name="create-devicemanagementintentassignment"></a>DeviceManagementIntentAssignment の作成
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-新しい[devicemanagementintentassignment](../resources/intune-deviceintent-devicemanagementintentassignment.md)オブジェクトを作成します。
+新しい[Devicemanagementintentassignment](../resources/intune-deviceintent-devicemanagementintentassignment.md)オブジェクトを作成します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -44,9 +44,9 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/assignments
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求本文で、devicemanagementintentassignment オブジェクトの JSON 表記を指定します。
+要求本文で、deviceManagementIntentAssignment オブジェクトの JSON 表記を指定します。
 
-次の表に、devicemanagementintentassignment の作成時に必要なプロパティを示します。
+次の表に、deviceManagementIntentAssignment の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
@@ -56,7 +56,7 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/assignments
 
 
 ## <a name="response"></a>応答
-成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[devicemanagementintentassignment](../resources/intune-deviceintent-devicemanagementintentassignment.md)オブジェクトを返します。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[Devicemanagementintentassignment](../resources/intune-deviceintent-devicemanagementintentassignment.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 
@@ -90,7 +90,6 @@ Content-Length: 221
   }
 }
 ```
-
 
 
 

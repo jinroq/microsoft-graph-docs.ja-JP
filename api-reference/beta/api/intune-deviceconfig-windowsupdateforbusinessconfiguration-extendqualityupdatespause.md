@@ -1,21 +1,21 @@
 ---
 title: extendQualityUpdatesPause アクション
 description: ビジネスリングの Windows Update に対する品質更新プログラムの一時停止を延長します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 714d699497564b13962163069d34bb63d9ee1794
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5c0c819993b4c29e9bdc50068cb9a80af5f9ac01
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32511642"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33917366"
 ---
 # <a name="extendqualityupdatespause-action"></a>extendQualityUpdatesPause アクション
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 ビジネスリングの Windows Update に対する品質更新プログラムの一時停止を延長します。
 
@@ -64,7 +64,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{dev
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

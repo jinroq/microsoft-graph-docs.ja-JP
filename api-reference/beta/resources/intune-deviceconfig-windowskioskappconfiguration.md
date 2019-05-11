@@ -1,21 +1,21 @@
 ---
-title: windowskioskappconfiguration リソースの種類
+title: windowsKioskAppConfiguration リソースの種類
 description: キオスク構成のアプリケーション情報を識別するために使用されるアプリの基本クラス
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 60b179a01f6dd3ada5b0c0b93a9fb85b12a6f23b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1234fb7ef79bf5e7ad1b52ddfc6442dc15c4bec9
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550757"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944153"
 ---
-# <a name="windowskioskappconfiguration-resource-type"></a>windowskioskappconfiguration リソースの種類
+# <a name="windowskioskappconfiguration-resource-type"></a>windowsKioskAppConfiguration リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 キオスク構成のアプリケーション情報を識別するために使用されるアプリの基本クラス
 
@@ -23,7 +23,7 @@ ms.locfileid: "32550757"
 |プロパティ|型|説明|
 |:---|:---|:---|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -38,7 +38,6 @@ ms.locfileid: "32550757"
   "@odata.type": "#microsoft.graph.windowsKioskAppConfiguration"
 }
 ```
-
 
 
 

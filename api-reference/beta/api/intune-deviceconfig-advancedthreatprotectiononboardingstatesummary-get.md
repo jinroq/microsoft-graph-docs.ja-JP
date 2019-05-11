@@ -1,23 +1,23 @@
 ---
-title: advancedThreatProtectionOnboardingStateSummary を取得する
-description: advancedThreatProtectionOnboardingStateSummary オブジェクトのプロパティとリレーションシップを読み取ります。
-author: tfitzmac
+title: AdvancedThreatProtectionOnboardingStateSummary を取得する
+description: AdvancedThreatProtectionOnboardingStateSummary オブジェクトのプロパティとリレーションシップを読み取ります。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9ab240e0f72fc08672f7d52796a3b1d1a6b4cbb6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6bd4e4059dca65e00fc34fa765d45b208bae3c01
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32482180"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33933341"
 ---
-# <a name="get-advancedthreatprotectiononboardingstatesummary"></a>advancedThreatProtectionOnboardingStateSummary を取得する
+# <a name="get-advancedthreatprotectiononboardingstatesummary"></a>AdvancedThreatProtectionOnboardingStateSummary を取得する
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[advancedThreatProtectionOnboardingStateSummary](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md)オブジェクトのプロパティとリレーションシップを読み取ります。
+[AdvancedThreatProtectionOnboardingStateSummary](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md)オブジェクトのプロパティとリレーションシップを読み取ります。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -82,7 +82,6 @@ Content-Length: 419
   }
 }
 ```
-
 
 
 

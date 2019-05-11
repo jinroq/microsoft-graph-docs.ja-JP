@@ -1,23 +1,23 @@
 ---
-title: リスト androidforwork trustedrootcertificates
-description: androidforwork trustedrootcertificate オブジェクトのプロパティとリレーションシップをリストします。
-author: tfitzmac
+title: リスト Androidforwork Trustedrootcertificates
+description: Androidforwork Trustedrootcertificate オブジェクトのプロパティとリレーションシップをリストします。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 366717ed5d71ed47e27c253725a4840afc2df658
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f148ba4335629fb2a03afc9e54b0d13f54823325
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32478134"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33932820"
 ---
-# <a name="list-androidforworktrustedrootcertificates"></a>リスト androidforwork trustedrootcertificates
+# <a name="list-androidforworktrustedrootcertificates"></a>リスト Androidforwork Trustedrootcertificates
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[androidforwork trustedrootcertificate](../resources/intune-deviceconfig-androidforworktrustedrootcertificate.md)オブジェクトのプロパティとリレーションシップをリストします。
+[Androidforwork Trustedrootcertificate](../resources/intune-deviceconfig-androidforworktrustedrootcertificate.md)オブジェクトのプロパティとリレーションシップをリストします。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[androidforwork trustedroot 証明書](../resources/intune-deviceconfig-androidforworktrustedrootcertificate.md)オブジェクトのコレクションを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[Androidforwork Trustedroot 証明書](../resources/intune-deviceconfig-androidforworktrustedrootcertificate.md)オブジェクトのコレクションを返します。
 
 ## <a name="example"></a>例
 
@@ -85,7 +85,6 @@ Content-Length: 631
   ]
 }
 ```
-
 
 
 

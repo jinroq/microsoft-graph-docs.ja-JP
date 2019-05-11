@@ -1,23 +1,23 @@
 ---
 title: リスト windowsPhone81ImportedPFXCertificateProfiles
-description: windowsPhone81ImportedPFXCertificateProfile オブジェクトのプロパティとリレーションシップをリストします。
-author: tfitzmac
+description: WindowsPhone81ImportedPFXCertificateProfile オブジェクトのプロパティとリレーションシップをリストします。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 935cdc6697156e5105cacc38eb1764a12ed73852
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 43ba41660b2bae3aff8c2043e6428f8385ff7312
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32512573"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33917703"
 ---
 # <a name="list-windowsphone81importedpfxcertificateprofiles"></a>リスト windowsPhone81ImportedPFXCertificateProfiles
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[windowsPhone81ImportedPFXCertificateProfile](../resources/intune-deviceconfig-windowsphone81importedpfxcertificateprofile.md)オブジェクトのプロパティとリレーションシップをリストします。
+[WindowsPhone81ImportedPFXCertificateProfile](../resources/intune-deviceconfig-windowsphone81importedpfxcertificateprofile.md)オブジェクトのプロパティとリレーションシップをリストします。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -90,7 +90,6 @@ Content-Length: 868
   ]
 }
 ```
-
 
 
 

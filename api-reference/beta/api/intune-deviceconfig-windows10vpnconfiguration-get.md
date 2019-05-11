@@ -1,23 +1,23 @@
 ---
-title: windows10VpnConfiguration を取得する
-description: windows10VpnConfiguration オブジェクトのプロパティとリレーションシップを読み取ります。
-author: tfitzmac
+title: Windows10VpnConfiguration を取得する
+description: Windows10VpnConfiguration オブジェクトのプロパティとリレーションシップを読み取ります。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 16408a8ebe9803c8d6e8f08d90d8370a7db3ab51
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 492c9c6b686113f6efc516f181ba32226666eca9
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32515429"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33918361"
 ---
-# <a name="get-windows10vpnconfiguration"></a>windows10VpnConfiguration を取得する
+# <a name="get-windows10vpnconfiguration"></a>Windows10VpnConfiguration を取得する
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[windows10VpnConfiguration](../resources/intune-deviceconfig-windows10vpnconfiguration.md)オブジェクトのプロパティとリレーションシップを読み取ります。
+[Windows10VpnConfiguration](../resources/intune-deviceconfig-windows10vpnconfiguration.md)オブジェクトのプロパティとリレーションシップを読み取ります。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -192,7 +192,6 @@ Content-Length: 3814
   }
 }
 ```
-
 
 
 

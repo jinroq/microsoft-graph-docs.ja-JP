@@ -1,23 +1,23 @@
 ---
-title: iosTrustedRootCertificate を取得する
-description: iosTrustedRootCertificate オブジェクトのプロパティとリレーションシップを読み取ります。
-author: tfitzmac
+title: IosTrustedRootCertificate を取得する
+description: IosTrustedRootCertificate オブジェクトのプロパティとリレーションシップを読み取ります。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9d0c085512136f145ee4bacfe02deed0c364b040
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f3a0221d0eeed4cb8875521d243b3e62ac19e3cf
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32519431"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33923266"
 ---
-# <a name="get-iostrustedrootcertificate"></a>iosTrustedRootCertificate を取得する
+# <a name="get-iostrustedrootcertificate"></a>IosTrustedRootCertificate を取得する
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[iosTrustedRootCertificate](../resources/intune-deviceconfig-iostrustedrootcertificate.md)オブジェクトのプロパティとリレーションシップを読み取ります。
+[IosTrustedRootCertificate](../resources/intune-deviceconfig-iostrustedrootcertificate.md)オブジェクトのプロパティとリレーションシップを読み取ります。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -86,7 +86,6 @@ Content-Length: 580
   }
 }
 ```
-
 
 
 

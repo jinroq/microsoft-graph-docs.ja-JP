@@ -1,23 +1,23 @@
 ---
-title: macOsVppAppAssignedLicense の更新
-description: macOsVppAppAssignedLicense オブジェクトのプロパティを更新します。
-author: tfitzmac
+title: MacOsVppAppAssignedLicense の更新
+description: MacOsVppAppAssignedLicense オブジェクトのプロパティを更新します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 816de40dd2efadb47fad8ed93415499f1fb5342a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 361e64df09ad5c17f065d5335dc35a83a3643904
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32495464"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935805"
 ---
-# <a name="update-macosvppappassignedlicense"></a>macOsVppAppAssignedLicense の更新
+# <a name="update-macosvppappassignedlicense"></a>MacOsVppAppAssignedLicense の更新
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md)オブジェクトのプロパティを更新します。
+[MacOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -50,10 +50,10 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.macOsVppApp/
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|id|文字列|エンティティのキー。|
 |userEmailAddress|String|ユーザーの電子メールアドレス。|
 |userId|String|ユーザー ID。|
-|userName|文字列型 (String)|ユーザー名。|
+|userName|String|ユーザー名。|
 |userPrincipalName|String|ユーザー プリンシパル名。|
 
 
@@ -95,7 +95,6 @@ Content-Length: 285
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

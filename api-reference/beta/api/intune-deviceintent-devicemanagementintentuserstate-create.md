@@ -1,23 +1,23 @@
 ---
-title: devicemanagementintentuserstate の作成
-description: 新しい devicemanagementintentuserstate オブジェクトを作成します。
-author: tfitzmac
+title: DeviceManagementIntentUserState の作成
+description: 新しい deviceManagementIntentUserState オブジェクトを作成します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aa3b718bbf0b4e87805a79066bfd6f898e47a0d8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3efb5031cd66e6a9566297f4d3db6430140f4e8f
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507764"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33915980"
 ---
-# <a name="create-devicemanagementintentuserstate"></a>devicemanagementintentuserstate の作成
+# <a name="create-devicemanagementintentuserstate"></a>DeviceManagementIntentUserState の作成
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-新しい[devicemanagementintentuserstate](../resources/intune-deviceintent-devicemanagementintentuserstate.md)オブジェクトを作成します。
+新しい[Devicemanagementintentuserstate](../resources/intune-deviceintent-devicemanagementintentuserstate.md)オブジェクトを作成します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -44,13 +44,13 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/userStates
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求本文で、devicemanagementintentuserstate オブジェクトの JSON 表記を指定します。
+要求本文で、deviceManagementIntentUserState オブジェクトの JSON 表記を指定します。
 
-次の表に、devicemanagementintentuserstate の作成時に必要なプロパティを示します。
+次の表に、deviceManagementIntentUserState の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|ID|
+|id|文字列|ID|
 |userPrincipalName|String|デバイスで報告されているユーザープリンシパル名|
 |userName|String|デバイスで報告されているユーザー名|
 |deviceCount|Int32|目的のためにユーザーに属しているデバイスの数|
@@ -60,7 +60,7 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/userStates
 
 
 ## <a name="response"></a>応答
-成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[devicemanagementintentuserstate](../resources/intune-deviceintent-devicemanagementintentuserstate.md)オブジェクトを返します。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[Devicemanagementintentuserstate](../resources/intune-deviceintent-devicemanagementintentuserstate.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 
@@ -98,7 +98,6 @@ Content-Length: 324
   "state": "notApplicable"
 }
 ```
-
 
 
 

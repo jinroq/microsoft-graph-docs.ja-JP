@@ -1,23 +1,23 @@
 ---
-title: windows10ImportedPFXCertificateProfile を取得する
-description: windows10ImportedPFXCertificateProfile オブジェクトのプロパティとリレーションシップを読み取ります。
-author: tfitzmac
+title: Windows10ImportedPFXCertificateProfile を取得する
+description: Windows10ImportedPFXCertificateProfile オブジェクトのプロパティとリレーションシップを読み取ります。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c41eda1843612adf5c97a6c95c3a48657239c6a9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f2e38fd6571a0fac07eda9da518a0936c4e041fd
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32516659"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33921098"
 ---
-# <a name="get-windows10importedpfxcertificateprofile"></a>windows10ImportedPFXCertificateProfile を取得する
+# <a name="get-windows10importedpfxcertificateprofile"></a>Windows10ImportedPFXCertificateProfile を取得する
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[windows10ImportedPFXCertificateProfile](../resources/intune-deviceconfig-windows10importedpfxcertificateprofile.md)オブジェクトのプロパティとリレーションシップを読み取ります。
+[Windows10ImportedPFXCertificateProfile](../resources/intune-deviceconfig-windows10importedpfxcertificateprofile.md)オブジェクトのプロパティとリレーションシップを読み取ります。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -92,7 +92,6 @@ Content-Length: 813
   }
 }
 ```
-
 
 
 

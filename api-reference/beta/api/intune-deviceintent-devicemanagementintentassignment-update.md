@@ -1,23 +1,23 @@
 ---
-title: devicemanagementintentassignment の更新
-description: devicemanagementintentassignment オブジェクトのプロパティを更新します。
-author: tfitzmac
+title: DeviceManagementIntentAssignment の更新
+description: DeviceManagementIntentAssignment オブジェクトのプロパティを更新します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 18552402a6a0531ee1c966f71bd519e4b9127d31
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: dace2f8babeabb492bbddfe7c0e9dac6c533565e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32508352"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33916162"
 ---
-# <a name="update-devicemanagementintentassignment"></a>devicemanagementintentassignment の更新
+# <a name="update-devicemanagementintentassignment"></a>DeviceManagementIntentAssignment の更新
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[devicemanagementintentassignment](../resources/intune-deviceintent-devicemanagementintentassignment.md)オブジェクトのプロパティを更新します。
+[Devicemanagementintentassignment](../resources/intune-deviceintent-devicemanagementintentassignment.md)オブジェクトのプロパティを更新します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -44,9 +44,9 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/assignments/{deviceMa
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求本文で、 [devicemanagementintentassignment](../resources/intune-deviceintent-devicemanagementintentassignment.md)オブジェクトの JSON 表記を指定します。
+要求本文で、 [Devicemanagementintentassignment](../resources/intune-deviceintent-devicemanagementintentassignment.md)オブジェクトの JSON 表記を指定します。
 
-次の表に、 [devicemanagementintentassignment](../resources/intune-deviceintent-devicemanagementintentassignment.md)の作成時に必要なプロパティを示します。
+次の表に、 [Devicemanagementintentassignment](../resources/intune-deviceintent-devicemanagementintentassignment.md)の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
@@ -56,7 +56,7 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/assignments/{deviceMa
 
 
 ## <a name="response"></a>応答
-成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[devicemanagementintentassignment](../resources/intune-deviceintent-devicemanagementintentassignment.md)オブジェクトを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[Devicemanagementintentassignment](../resources/intune-deviceintent-devicemanagementintentassignment.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 
@@ -90,7 +90,6 @@ Content-Length: 221
   }
 }
 ```
-
 
 
 

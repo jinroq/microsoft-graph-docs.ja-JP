@@ -1,21 +1,21 @@
 ---
-title: androidmanagedstoreapp リソースの種類
+title: androidManagedStoreApp リソースの種類
 description: Android 管理ストアアプリのプロパティと継承されたプロパティが含まれています。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 42028c44f950bcb80293cd56097bbf5d34cd2cc1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e49cb85e629e1151ea2a3af3d658fb3d88e04863
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32552367"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950509"
 ---
-# <a name="androidmanagedstoreapp-resource-type"></a>androidmanagedstoreapp リソースの種類
+# <a name="androidmanagedstoreapp-resource-type"></a>androidManagedStoreApp リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 Android 管理ストアアプリのプロパティと継承されたプロパティが含まれています。
 
@@ -25,17 +25,17 @@ Android 管理ストアアプリのプロパティと継承されたプロパテ
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[androidmanagedstoreapps のリスト](../api/intune-apps-androidmanagedstoreapp-list.md)|[androidmanagedstoreapp](../resources/intune-apps-androidmanagedstoreapp.md)コレクション|[androidmanagedstoreapp](../resources/intune-apps-androidmanagedstoreapp.md)オブジェクトのプロパティとリレーションシップをリストします。|
-|[androidmanagedstoreapp の取得](../api/intune-apps-androidmanagedstoreapp-get.md)|[androidmanagedstoreapp](../resources/intune-apps-androidmanagedstoreapp.md)|[androidmanagedstoreapp](../resources/intune-apps-androidmanagedstoreapp.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[androidmanagedstoreapp の作成](../api/intune-apps-androidmanagedstoreapp-create.md)|[androidmanagedstoreapp](../resources/intune-apps-androidmanagedstoreapp.md)|新しい[androidmanagedstoreapp](../resources/intune-apps-androidmanagedstoreapp.md)オブジェクトを作成します。|
-|[androidmanagedstoreapp の削除](../api/intune-apps-androidmanagedstoreapp-delete.md)|なし|[androidmanagedstoreapp](../resources/intune-apps-androidmanagedstoreapp.md)を削除します。|
-|[androidmanagedstoreapp の更新](../api/intune-apps-androidmanagedstoreapp-update.md)|[androidmanagedstoreapp](../resources/intune-apps-androidmanagedstoreapp.md)|[androidmanagedstoreapp](../resources/intune-apps-androidmanagedstoreapp.md)オブジェクトのプロパティを更新します。|
+|[AndroidManagedStoreApps のリスト](../api/intune-apps-androidmanagedstoreapp-list.md)|[Androidmanagedstoreapp](../resources/intune-apps-androidmanagedstoreapp.md)コレクション|[Androidmanagedstoreapp](../resources/intune-apps-androidmanagedstoreapp.md)オブジェクトのプロパティとリレーションシップをリストします。|
+|[AndroidManagedStoreApp の取得](../api/intune-apps-androidmanagedstoreapp-get.md)|[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|[Androidmanagedstoreapp](../resources/intune-apps-androidmanagedstoreapp.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[AndroidManagedStoreApp の作成](../api/intune-apps-androidmanagedstoreapp-create.md)|[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|新しい[Androidmanagedstoreapp](../resources/intune-apps-androidmanagedstoreapp.md)オブジェクトを作成します。|
+|[AndroidManagedStoreApp の削除](../api/intune-apps-androidmanagedstoreapp-delete.md)|None|[Androidmanagedstoreapp](../resources/intune-apps-androidmanagedstoreapp.md)を削除します。|
+|[AndroidManagedStoreApp の更新](../api/intune-apps-androidmanagedstoreapp-update.md)|[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|[Androidmanagedstoreapp](../resources/intune-apps-androidmanagedstoreapp.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列型 (String)|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|displayName|String|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|id|文字列|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|displayName|文字列|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |description|String|アプリの説明。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |publisher|String|アプリの発行元。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|アプリの詳細に表示され、アイコンのアップロードに使用される大きいアイコン。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
@@ -48,25 +48,25 @@ Android 管理ストアアプリのプロパティと継承されたプロパテ
 |developer|String|アプリの開発者。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |notes|String|アプリ用のメモ。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |uploadState|Int32|アップロード状態。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 [mobileApp](../resources/intune-apps-mobileapp.md)から継承されます。 使用可能な値は、`notPublished`、`processing`、`published` です。|
+|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 [MobileApp](../resources/intune-apps-mobileapp.md)から継承されます。 可能な値は、`notPublished`、`processing`、`published` です。|
 |isAssigned|Boolean|アプリが少なくとも1つのグループに割り当てられているかどうかを示す値。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |roleScopeTagIds|String collection|このモバイルアプリの範囲タグ id のリスト。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|dependentappcount|Int32|子アプリが持つ依存関係の合計数。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|packageId|String|パッケージの識別子。|
+|dependentAppCount|Int32|子アプリが持つ依存関係の合計数。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|packageId|文字列型 (String)|パッケージの識別子。|
 |appIdentifier|String|ID 名。|
 |usedLicenseCount|Int32|使用中の VPP ライセンスの数。|
 |totalLicenseCount|Int32|VPP ライセンスの総数。|
 |appStoreUrl|String|ワークストアアプリの URL を再生します。|
-|supportsoemconfig|ブール値|このアプリが oemconfig ポリシーをサポートするかどうか。|
+|supportsOemConfig|Boolean|このアプリが OEMConfig ポリシーをサポートするかどうか。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |categories|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) コレクション|このアプリのカテゴリのリスト。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |assignments|[mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) コレクション|このモバイル アプリのグループ割り当てのリスト。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|モバイル アプリ インストール概要です。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |deviceStatuses|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)コレクション|このモバイルアプリのインストール状態のリスト。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|userStatuses|[userappinstallstatus](../resources/intune-apps-userappinstallstatus.md)コレクション|このモバイルアプリのインストール状態のリスト。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|userStatuses|[Userappinstallstatus](../resources/intune-apps-userappinstallstatus.md)コレクション|このモバイルアプリのインストール状態のリスト。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |関連性|[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)コレクション|このモバイルアプリのリレーションシップのリスト。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 
 ## <a name="json-representation"></a>JSON 表記
@@ -112,7 +112,6 @@ Android 管理ストアアプリのプロパティと継承されたプロパテ
   "supportsOemConfig": true
 }
 ```
-
 
 
 
