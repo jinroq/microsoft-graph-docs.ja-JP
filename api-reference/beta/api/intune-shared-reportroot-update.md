@@ -1,21 +1,21 @@
 ---
 title: reportRoot の更新
 description: reportRoot オブジェクトのプロパティを更新します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 3127ca7804883c5e29fe91cf5e21bb15240a1314
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 845ee1c469bf0d986d8d417ad620cabf7f527884
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526951"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33897836"
 ---
 # <a name="update-reportroot"></a>reportRoot の更新
 
-> **重要:** Microsoft Graph の/ベータ版の api は変更される可能性があります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** Microsoft Graph の/ベータ版の Api は変更される可能性があります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [reportRoot](../resources/intune-shared-reportroot.md) オブジェクトのプロパティを更新します。
 ## <a name="prerequisites"></a>前提条件

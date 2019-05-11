@@ -1,21 +1,21 @@
 ---
 title: deviceCategory の作成
 description: 新しい deviceCategory オブジェクトを作成します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 71b36a94624140586f2275679df91c4ed7374335
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ebb6980d47d0046f364ce4e8bfe57805553def48
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32527176"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33898545"
 ---
 # <a name="create-devicecategory"></a>deviceCategory の作成
 
-> **重要:** Microsoft Graph の/ベータ版の api は変更される可能性があります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** Microsoft Graph の/ベータ版の Api は変更される可能性があります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい [deviceCategory](../resources/intune-shared-devicecategory.md) オブジェクトを作成します。
 
@@ -55,7 +55,7 @@ POST /deviceManagement/deviceCategories
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|文字列|デバイス カテゴリの一意識別子。 読み取り専用です。|
-|**obboarding ボード**|
+|**Obboarding ボード**|
 |description|String|デバイス カテゴリに関するオプションの説明。|
 |displayName|String|デバイス カテゴリの表示名。|
 

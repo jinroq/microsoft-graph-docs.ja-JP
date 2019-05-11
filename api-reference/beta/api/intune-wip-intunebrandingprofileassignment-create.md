@@ -1,21 +1,21 @@
 ---
-title: intuneBrandingProfileAssignment を作成する
+title: IntuneBrandingProfileAssignment を作成する
 description: 新しい intuneBrandingProfileAssignment オブジェクトを作成します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6eefb230598d381f306a8a167c01217bc11b9504
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ec9fec5aeb954c2bf4264d12a4ff1cb44a2ed3c6
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32541808"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899320"
 ---
-# <a name="create-intunebrandingprofileassignment"></a>intuneBrandingProfileAssignment を作成する
+# <a name="create-intunebrandingprofileassignment"></a>IntuneBrandingProfileAssignment を作成する
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい[intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md)オブジェクトを作成します。
 
@@ -90,7 +90,6 @@ Content-Length: 220
   }
 }
 ```
-
 
 
 

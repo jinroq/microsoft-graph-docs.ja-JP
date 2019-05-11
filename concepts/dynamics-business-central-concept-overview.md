@@ -6,18 +6,18 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 09950a590063327f054fa30038854dd98bf74de0
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 27e9a13b41ce2b8e46321eef2afc4e103248281b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33599836"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33951188"
 ---
 # <a name="dynamics-365-business-central-api-overview-preview"></a>Dynamics 365 Business Central API の概要 (プレビュー)
 Dynamics 365 Business Central は、簡単に使用および適応できる、オールインワンのビジネス管理ソリューションであり、ビジネスへの接続と高度な意思決定を支援します。 これにより、ビジネスのエンドツーエンドのビューが提供され、財務を管理し、サプライチェーンを自動化してセキュリティで保護し、顧客サービスをさらに向上させ、プロジェクトを時間と予算の下に保持し、運用を最適化することができます。
 
 ## <a name="why-integrate-with-dynamics-365-business-central"></a>Dynamics 365 Business Central と統合する理由
-アプリケーションを Dynamics 365 Business Central に統合することで、ビジネスニーズにまたがるエクスペリエンスを作成できます。 ユーザーが主要なビジネスタスクおよび機能を実行できるようにするソリューションを作成できます。 Microsoft Graph を使用して、財務報告書にアクセスしたり、取引先担当者と連携したり、販売および購入するドキュメントを作成および送信したり、財務報告を取得したりすることができます。 
+アプリケーションを Dynamics 365 Business Central に統合することで、ビジネスニーズにまたがるエクスペリエンスを作成できます。 ユーザーが主要なビジネスタスクおよび機能を実行できるようにするソリューションを作成できます。 Microsoft Graph を使用して、財務報告書にアクセスしたり、取引先担当者と連携したり、販売および購入するドキュメントを作成および送信したり、財務報告を取得したりすることができます。
 
 ### <a name="synchronize-your-business-applications"></a>ビジネスアプリケーションを同期する
 多くの企業では、さまざまな非接続のビジネスアプリケーションを使用して、ビジネスのさまざまな機能を管理しています。 Microsoft Graph を使用すると、データを接続してこれらのアプリケーションをまとめることができます。 これにより、給与アプリケーションを従業員レコードに接続したり、経費アプリケーションをベンダーレコードに接続したり、CRM アプリケーションで顧客レコードを最新の状態に保つことが容易になります。 データを接続して、アプリケーションの同期を維持します。
@@ -29,7 +29,7 @@ Dynamics 365 Business Central は、簡単に使用および適応できる、�
 Microsoft Graph は、財務レポートへのアクセスを提供します。 BI ツールとアプリを貸借対照表、キャッシュフロー明細書、支払いおよび債権のエイジングレポート、および試用残高レポートに接続して、BI ダッシュボードを作成し、ユーザーが必要な情報にアクセスできるようにします。
 
 ## <a name="authorization"></a>Authorization
-Azure AD v2.0 エンドポイントを使用して、Dynamics 365 Business Central Api を認証します。 すべての Api に`Authorization: Bearer {access-token}`は、要求ヘッダーが必要です。 承認の詳細については、「 [Microsoft Graph を呼び出せるようにアクセストークンを取得する](./auth/)」を参照してください。
+Azure AD v2.0 エンドポイントを使用して、Dynamics 365 Business Central Api を認証します。 すべての Api に`Authorization: Bearer {access-token}`は、要求ヘッダーが必要です。 承認の詳細については、「 [Microsoft Graph を呼び出せるようにアクセストークンを取得する](/graph/auth)」を参照してください。
 
 ## <a name="api-reference"></a>API リファレンス
 このサービスの API リファレンスをお探しですか?

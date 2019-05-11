@@ -1,21 +1,21 @@
 ---
-title: mobileAppTroubleshootingEvent を作成する
+title: MobileAppTroubleshootingEvent を作成する
 description: 複数のワークフローをサポートする Microsoft Graph API for Intune の Create mobileAppTroubleshootingEvent メソッドについて説明します。
 localization_priority: Normal
-author: tfitzmac
+author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 89a191f94d68636226b6a8d41be0d9ba962da761
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d258a2d05d260a7820efcbdccc423743b9e6a4cd
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526980"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899264"
 ---
-# <a name="create-mobileapptroubleshootingevent"></a>mobileAppTroubleshootingEvent を作成する
+# <a name="create-mobileapptroubleshootingevent"></a>MobileAppTroubleshootingEvent を作成する
 
-> **重要:** Microsoft Graph の/ベータ版の api は変更される可能性があります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** Microsoft Graph の/ベータ版の Api は変更される可能性があります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい[mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md)オブジェクトを作成します。
 
@@ -53,13 +53,13 @@ POST /users/{usersId}/mobileAppTroubleshootingEvents
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|オブジェクトの GUID|
+|id|文字列|オブジェクトの GUID|
 |**トラブルシューティング**|
-|additionalinformation|[keyValuePair](../resources/intune-shared-keyvaluepair.md) コレクション|トラブルシューティングイベントに関する追加情報を提供する文字列キーと文字列値のペアのセット。|
-|applicationId|String|Intune アプリケーション識別子。|
+|additionalInformation|[keyValuePair](../resources/intune-shared-keyvaluepair.md) コレクション|トラブルシューティングイベントに関する追加情報を提供する文字列キーと文字列値のペアのセット。|
+|applicationId|文字列型 (String)|Intune アプリケーション識別子。|
 |correlationId|String|サービスのエラーをトレースするために使用される ID。 |
 |eventDateTime|DateTimeOffset|インシデントが発生した時間。 |
-|eventName|String|トラブルシューティングイベントに対応するイベント名。 省略可能。|
+|eventName|String|トラブルシューティングイベントに対応するイベント名。 省略可能です。|
 |履歴|[mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)コレクション|Intune モバイルアプリケーションのトラブルシューティングの履歴項目|
 |managedDeviceIdentifier|String|Intune によって作成または収集されるデバイス識別子。|
 |トラブルシューティングのエラーの詳細|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|エラーとその修復に関する詳細情報を含むオブジェクト。 |

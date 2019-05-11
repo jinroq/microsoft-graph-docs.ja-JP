@@ -1,21 +1,21 @@
 ---
-title: meteredconnectionlimittype 列挙型
+title: meteredConnectionLimitType 列挙型
 description: 従量制課金接続制限設定。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bb0cd84d5cdee909cb897ee46010551605ab1f5a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b6e7cabe52bdf3c6b0a77304b7dd11c88f50cc99
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554364"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950768"
 ---
-# <a name="meteredconnectionlimittype-enum-type"></a>meteredconnectionlimittype 列挙型
+# <a name="meteredconnectionlimittype-enum-type"></a>meteredConnectionLimitType 列挙型
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 従量制課金接続制限設定。
 
@@ -23,9 +23,8 @@ ms.locfileid: "32554364"
 |メンバー|値|説明|
 |:---|:---|:---|
 |Unrestricted|.0|Unrestricted|
-|固定|1 |Fixed|
-|変数|2 |変数|
-
+|固定|1-d|Fixed|
+|変数|pbm-2|変数|
 
 
 

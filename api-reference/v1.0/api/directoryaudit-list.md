@@ -4,12 +4,12 @@ description: Microsoft Graph API からの directoryAudit リソース (エン�
 localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 42f10deb295bdfbba04b9c95b15e8bd8be1ecd87
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 35d8a2dfe2c6a322f97b2a1e4719fee8ee7a1865
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33630147"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33938760"
 ---
 # <a name="list-directoryaudits"></a>directoryAudits を一覧表示する
 
@@ -34,9 +34,9 @@ GET /auditLogs/directoryaudits
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 
-このメソッドは、応答をカスタマイズするために、次の OData クエリパラメーターをサポートします。 これらのパラメーターの使用方法の詳細については、「 [OData クエリパラメーター](/graph/query_parameters)」を参照してください。
+このメソッドは、応答をカスタマイズするために、次の OData クエリパラメーターをサポートします。 これらのパラメーターを使用する方法の詳細については、[OData クエリ パラメーター](/graph/query_parameters)をご確認ください。
 
-|名前     |説明                            |例|
+|Name     |説明                            |例|
 |:--------------------|:----------------|:--------------------------------------|
 |[$filter](/graph/query_parameters#filter-parameter)|結果 (行) をフィルターします。 |`/auditLogs/directoryAudits?&$filter=createdDateTime le 2018-01-24`
 |[$top](/graph/query_parameters#top-parameter)|結果のページ サイズを設定します。|`/auditLogs/directoryAudits?$top=1`|
@@ -102,6 +102,16 @@ HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 271
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_directoryaudit-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_directoryaudit-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ```json
 {
@@ -156,5 +166,9 @@ Content-length: 271
   "description": "List directoryAudits",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/directoryaudit-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/directoryaudit-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

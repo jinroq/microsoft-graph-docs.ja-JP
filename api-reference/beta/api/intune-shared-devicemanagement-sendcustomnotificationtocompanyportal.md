@@ -1,21 +1,21 @@
 ---
 title: sendCustomNotificationToCompanyPortal アクション
 description: まだ文書化されていません
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 43e0a5a9690d3f60f646eb5ed55e6d51ba2caab8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 11e44c1817d5387721755a1622eebc06a666c0f7
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32527057"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33898396"
 ---
 # <a name="sendcustomnotificationtocompanyportal-action"></a>sendCustomNotificationToCompanyPortal アクション
 
-> **重要:** Microsoft Graph の/ベータ版の api は変更される可能性があります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** Microsoft Graph の/ベータ版の Api は変更される可能性があります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 まだ文書化されていません
 ## <a name="prerequisites"></a>前提条件
@@ -50,8 +50,8 @@ POST /deviceManagement/sendCustomNotificationToCompanyPortal
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|notificationtitle|String|まだ文書化されていません|
-|notificationbody|String|まだ文書化されていません|
+|notificationTitle|String|まだ文書化されていません|
+|notificationBody|String|まだ文書化されていません|
 |groupsToNotify|String コレクション|まだ文書化されていません|
 
 

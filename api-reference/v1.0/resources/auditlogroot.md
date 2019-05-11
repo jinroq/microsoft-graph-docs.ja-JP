@@ -4,12 +4,12 @@ description: さまざまな種類の監査ログが含まれています。 こ
 author: dhanyahk
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 457fb3d7e67049d25ce02ea448a206b732d2175b
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 204dfbb3f03be9550429694434bcb420b93e788d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629335"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33951407"
 ---
 # <a name="auditlogroot-resource-type"></a>auditLogRoot リソースの種類
 
@@ -28,11 +28,11 @@ ms.locfileid: "33629335"
 
 なし
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|directoryAudits|[Directoryaudit](directoryAudit.md)コレクション| 読み取り専用。 Null 許容型。|
+|directoryAudits|[Directoryaudit](directoryAudit.md)コレクション| 読み取り専用です。 Null 許容型です。|
 |signIns|[サインイン](signIn.md)コレクション| 読み取り専用。Null 許容型です。|
 
 ## <a name="json-representation"></a>JSON 表記
@@ -73,6 +73,16 @@ Content-type: application/json
 {
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_auditLogs-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_auditLogs-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -81,5 +91,9 @@ Content-type: application/json
   "description": "auditLogRoot resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/resources/auditlogroot.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/resources/auditlogroot.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

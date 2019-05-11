@@ -1,21 +1,21 @@
 ---
 title: omaSettingDateTime リソースの種類
 description: OMA 設定の DateTime の定義です。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8a237f36a209e2fa1d552c8f50207770429a0c53
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d9d58c6fdbba9f4a2fcceaa5d0e2964f0666c571
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554493"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950922"
 ---
 # <a name="omasettingdatetime-resource-type"></a>omaSettingDateTime リソースの種類
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 OMA 設定の DateTime の定義です。
 
@@ -30,7 +30,7 @@ OMA 設定の DateTime の定義です。
 |omaUri|文字列型 (String)|OMA。 [omaSetting](../resources/intune-deviceconfig-omasetting.md) からの継承|
 |値|DateTimeOffset|値。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -49,7 +49,6 @@ OMA 設定の DateTime の定義です。
   "value": "String (timestamp)"
 }
 ```
-
 
 
 

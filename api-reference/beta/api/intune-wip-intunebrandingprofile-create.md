@@ -1,21 +1,21 @@
 ---
-title: intuneBrandingProfile を作成する
+title: IntuneBrandingProfile を作成する
 description: 新しい intuneBrandingProfile オブジェクトを作成します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e92ad91bd5d981e987fb6d5abfd32494f6ce54de
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 01d487da88677db899aea4c2ec25c54d3ae3d1bc
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32541805"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33898996"
 ---
-# <a name="create-intunebrandingprofile"></a>intuneBrandingProfile を作成する
+# <a name="create-intunebrandingprofile"></a>IntuneBrandingProfile を作成する
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)オブジェクトを作成します。
 
@@ -50,10 +50,10 @@ POST /deviceManagement/intuneBrandingProfiles
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|プロファイルキー|
+|id|文字列|プロファイルキー|
 |profileName|String|プロファイルの名前|
-|profiledescription|String|プロファイルの説明|
-|isdefaultprofile|ブール値|既定でプロファイルが使用されているかどうかを示します。|
+|profileDescription|String|プロファイルの説明|
+|isDefaultProfile|Boolean|既定でプロファイルが使用されているかどうかを示します。|
 |createdDateTime|DateTimeOffset|BrandingProfile が作成されたとき。|
 |lastModifiedDateTime|DateTimeOffset|BrandingProfile が最後に変更された日時。|
 |displayName|String|エンド ユーザーに表示される会社名または組織名。|
@@ -65,7 +65,7 @@ POST /deviceManagement/intuneBrandingProfiles
 |onlineSupportSiteUrl|String|会社または組織の IT ヘルプデスク サイトの URL。|
 |onlineSupportSiteName|String|会社または組織の IT ヘルプデスク サイトの表示名。|
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|会社のポータル アプリケーションと Web ポータルで使用する主要なテーマの色。|
-|showLogo|ブール値|管理者が指定したロゴ画像が表示されるかどうかを表すブール値。|
+|showLogo|Boolean|管理者が指定したロゴ画像が表示されるかどうかを表すブール値。|
 |showDisplayNameNextToLogo|Boolean|管理者が指定した表示名がロゴ画像のとなりに表示されるかどうかを表すブール値。|
 |themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|テーマの色の背景にある、ポータルサイトアプリに表示されるロゴ画像。|
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|明るい背景上に会社のポータルアプリに表示されるロゴ画像。|
@@ -172,7 +172,6 @@ Content-Length: 1377
   }
 }
 ```
-
 
 
 

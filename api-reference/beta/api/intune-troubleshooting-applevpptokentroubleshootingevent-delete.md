@@ -1,23 +1,23 @@
 ---
-title: '[りんご evpptokenトラブルシューティングイベントを削除する]'
-description: "\"りんご evpptoken\" トラブルシューティングイベントを削除します。"
-author: tfitzmac
+title: '[りんご Evpptokenトラブルシューティングイベントを削除する]'
+description: "\"りんご Evpptoken\" トラブルシューティングイベントを削除します。"
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b1e7bca7459833fcd7105db84804f229ea9e82d2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7bf42982187a9a2fe51b2864dd7378230076a235
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526728"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33897857"
 ---
-# <a name="delete-applevpptokentroubleshootingevent"></a>[りんご evpptokenトラブルシューティングイベントを削除する]
+# <a name="delete-applevpptokentroubleshootingevent"></a>[りんご Evpptokenトラブルシューティングイベントを削除する]
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-"[りんご evpptoken" トラブルシューティングイベント](../resources/intune-troubleshooting-applevpptokentroubleshootingevent.md)を削除します。
+"[りんご Evpptoken" トラブルシューティングイベント](../resources/intune-troubleshooting-applevpptokentroubleshootingevent.md)を削除します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/troubleshootingEvents/{
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

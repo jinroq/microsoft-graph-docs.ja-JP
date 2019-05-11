@@ -1,21 +1,21 @@
 ---
 title: windowsInformationProtectionNetworkLearningSummary の更新
 description: windowsInformationProtectionNetworkLearningSummary オブジェクトのプロパティを更新します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e22260808237797c14d8cf77f14ed07ff0add8e2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 09b02072f0b5f11e593e8b9f7f04f420499ca4d1
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32541270"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33898179"
 ---
 # <a name="update-windowsinformationprotectionnetworklearningsummary"></a>windowsInformationProtectionNetworkLearningSummary の更新
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [windowsInformationProtectionNetworkLearningSummary](../resources/intune-wip-windowsinformationprotectionnetworklearningsummary.md) オブジェクトのプロパティを更新します。
 
@@ -89,7 +89,6 @@ Content-Length: 186
   "deviceCount": 11
 }
 ```
-
 
 
 

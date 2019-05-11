@@ -1,23 +1,23 @@
 ---
-title: リストりんご evpptokenトラブルシューティングイベント
-description: "\"りんご evpptokenトラブルシューティング\" イベントオブジェクトのプロパティとリレーションシップをリストします。"
-author: tfitzmac
+title: リストりんご Evpptokenトラブルシューティングイベント
+description: "\"りんご Evpptokenトラブルシューティング\" イベントオブジェクトのプロパティとリレーションシップをリストします。"
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e4a5d2022ff289f4bfb7be6690801e0f162071b1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a261aa5b0f1dd312342ebbac70d7a2f2026bcdcc
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526672"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33898424"
 ---
-# <a name="list-applevpptokentroubleshootingevents"></a>リストりんご evpptokenトラブルシューティングイベント
+# <a name="list-applevpptokentroubleshootingevents"></a>リストりんご Evpptokenトラブルシューティングイベント
 
-> **重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-"[りんご evpptokenトラブルシューティング" イベント](../resources/intune-troubleshooting-applevpptokentroubleshootingevent.md)オブジェクトのプロパティとリレーションシップをリストします。
+"[りんご Evpptokenトラブルシューティング" イベント](../resources/intune-troubleshooting-applevpptokentroubleshootingevent.md)オブジェクトのプロパティとリレーションシップをリストします。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -47,7 +47,7 @@ GET /deviceManagement/troubleshootingEvents
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-成功した場合、このメソッド`200 OK`は応答コードと、応答本文で、[りんご evpptokenのトラブルシューティングイベント](../resources/intune-troubleshooting-applevpptokentroubleshootingevent.md)オブジェクトのコレクションを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で、[りんご Evpptokenのトラブルシューティングイベント](../resources/intune-troubleshooting-applevpptokentroubleshootingevent.md)オブジェクトのコレクションを返します。
 
 ## <a name="example"></a>例
 
@@ -98,6 +98,7 @@ Content-Length: 1071
   ]
 }
 ```
+
 
 
 

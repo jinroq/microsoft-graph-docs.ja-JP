@@ -1,16 +1,16 @@
 ---
-title: SecureScoreControlProfile の更新
+title: secureScoreControlProfiles の更新
 description: 任意の統合ソリューション内の編集可能な secureScoreControlProfile オブジェクトを更新して、担当者や tenantNote などのさまざまなプロパティを変更します。
 author: preetikr
 localization_priority: Normal
-ms.openlocfilehash: 8f3193b72ac59528c386bb6207b17d4440e6c98a
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 79d958e3f2bd04be8dab2d8fe0bda6117f487973
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629748"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33951291"
 ---
-# <a name="update-securescorecontrolprofile"></a>SecureScoreControlProfile の更新
+# <a name="update-securescorecontrolprofile"></a>secureScoreControlProfiles の更新
 
 任意の統合ソリューション内の編集可能な**secureScoreControlProfile**オブジェクトを更新して、 **** 担当者や**tenantnote**などのさまざまなプロパティを変更します。
 
@@ -99,6 +99,14 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/securescorecontrolprofiles_update-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="example-2-request-with-prefer-header"></a>例 2: 要求ヘッダーを使用した要求
 
@@ -201,6 +209,10 @@ Content-type: application/json
   "description": "Update secureScoreControlProfiles",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/securescorecontrolprofile-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/securescorecontrolprofile-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

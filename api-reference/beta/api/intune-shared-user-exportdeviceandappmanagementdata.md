@@ -1,21 +1,21 @@
 ---
-title: exportdeviceandappmanagementdata 関数
+title: exportDeviceAndAppManagementData 関数
 description: まだ文書化されていません
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: e36936710bcd97c10c4a69c496cf56ceffa43e46
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4eda08e5ed2f164de5cb262a515be4eec3bcbfc2
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32527008"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33898116"
 ---
-# <a name="exportdeviceandappmanagementdata-function"></a>exportdeviceandappmanagementdata 関数
+# <a name="exportdeviceandappmanagementdata-function"></a>exportDeviceAndAppManagementData 関数
 
-> **重要:** Microsoft Graph の/ベータ版の api は変更される可能性があります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** Microsoft Graph の/ベータ版の Api は変更される可能性があります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 まだ文書化されていません
 
@@ -58,7 +58,7 @@ GET /users/{usersId}/exportDeviceAndAppManagementData
 
 ## <a name="response"></a>応答
 
-成功した場合、この関数`200 OK`は応答コードと、応答本文で[deviceandappmanagementdata](../resources/intune-onboarding-deviceandappmanagementdata.md)を返します。
+成功した場合、この関数`200 OK`は応答コードと、応答本文で[Deviceandappmanagementdata](../resources/intune-onboarding-deviceandappmanagementdata.md)を返します。
 
 ## <a name="example"></a>例
 

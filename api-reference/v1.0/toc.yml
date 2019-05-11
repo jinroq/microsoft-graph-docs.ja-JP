@@ -67,14 +67,14 @@ items:
         items:
           - name: 概要
             href: /graph/migrate-azure-ad-graph-overview?toc=./ref/toc.json
-          - name: アプリを移行するためのチェックリスト
+          - name: アプリ移行用のチェックリスト
             href: /graph/migrate-azure-ad-graph-planning-checklist?toc=./ref/toc.json
-          - name: '1: 相違点を確認します。'
+          - name: '1: 相違点を確認する'
             expanded: true
             items:
-              - name: 対する
+              - name: リクエスト
                 href: /graph/migrate-azure-ad-graph-request-differences?toc=./ref/toc.json
-              - name: サービス機能
+              - name: サービスの機能
                 href: /graph/migrate-azure-ad-graph-feature-differences?toc=./ref/toc.json
               - name: リソースの種類
                 href: /graph/migrate-azure-ad-graph-resource-differences?toc=./ref/toc.json
@@ -82,7 +82,7 @@ items:
                 href: /graph/migrate-azure-ad-graph-property-differences?toc=./ref/toc.json
               - name: メソッド
                 href: /graph/migrate-azure-ad-graph-method-differences?toc=./ref/toc.json
-          - name: '2: API の使用を確認する'
+          - name: '2: API の使用を調べる'
             href: /graph/migrate-azure-ad-graph-audit-api-use?toc=./ref/toc.json
           - name: '3: アプリの詳細を確認する'
             expanded: true
@@ -91,19 +91,19 @@ items:
                 href: /graph/migrate-azure-ad-graph-app-registration?toc=./ref/toc.json
               - name: 認証ライブラリ
                 href: /graph/migrate-azure-ad-graph-authentication-library?toc=./ref/toc.json
-              - name: .NET クライアントライブラリ
+              - name: .NET クライアント ライブラリ
                 href: /graph/migrate-azure-ad-graph-client-libraries?toc=./ref/toc.json
-          - name: '4: 展開、テスト、拡張'
+          - name: '4: 展開、テスト、および拡張する'
             href: /graph/migrate-azure-ad-graph-deploy-test-extend?toc=./ref/toc.json
-  - name: Sdk を使用する
+  - name: SDK の使用
     items:
       - name: 概要
         href: /graph/sdks/sdks-overview?toc=./ref/toc.json
-      - name: SDK をインストールする
+      - name: SDK のインストール
         href: /graph/sdks/sdk-installation?toc=./ref/toc.json
-      - name: クライアントを作成する
+      - name: クライアントの作成
         href: /graph/sdks/create-client?toc=./ref/toc.json
-      - name: 認証プロバイダーを選択する
+      - name: 認証プロバイダーの選択
         href: /graph/sdks/choose-authentication-providers?toc=./ref/toc.json
   - name: リソース
     items:
@@ -1734,7 +1734,7 @@ items:
                 items:
                   - name: リスト
                     href: api/intune-deviceconfig-macosdevicefeaturesconfiguration-list.md
-                  - name: Get
+                  - name: 取得
                     href: api/intune-deviceconfig-macosdevicefeaturesconfiguration-get.md
                   - name: 作成
                     href: api/intune-deviceconfig-macosdevicefeaturesconfiguration-create.md
@@ -3825,12 +3825,12 @@ items:
             items:
               - name: セキュリティ スコアを一覧表示する
                 href: api/security-list-securescores.md
-              - name: セキュリティで保護されたスコアの取得
+              - name: セキュリティ スコアを取得する
                 href: api/securescore-get.md
           - name: セキュア スコア制御プロファイル
             href: resources/securescorecontrolprofile.md
             items:
-              - name: セキュリティで保護されたスコアコントロールプロファイルを取得する
+              - name: セキュリティ スコアの制御プロファイルを取得する
                 href: api/securescorecontrolprofile-get.md
               - name: セキュア スコア制御プロファイルを一覧表示する
                 href: api/security-list-securescorecontrolprofiles.md
@@ -4227,47 +4227,49 @@ items:
               - name: 範囲を一覧表示する
                 href: api/nameditem-range.md
       - name: ツール
-      - name: オープン拡張機能
-        href: resources/opentypeextension.md
-        displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
+        expanded: true
         items:
-          - name: オープン拡張機能を作成する
-            href: api/opentypeextension-post-opentypeextension.md
-          - name: オープン拡張機能を取得する
-            href: api/opentypeextension-get.md
-          - name: オープン拡張機能を更新する
-            href: api/opentypeextension-update.md
-          - name: オープン拡張機能を削除する
-            href: api/opentypeextension-delete.md
-      - name: スキーマ拡張機能
-        href: resources/schemaextension.md
-        displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
-        items:
-          - name: スキーマ拡張機能を一覧表示する
-            href: api/schemaextension-list.md
-          - name: スキーマ拡張機能を作成する
-            href: api/schemaextension-post-schemaextensions.md
-          - name: スキーマ拡張機能を取得する
-            href: api/schemaextension-get.md
-          - name: スキーマ拡張機能を更新する
-            href: api/schemaextension-update.md
-          - name: スキーマ拡張機能を削除する
-            href: api/schemaextension-delete.md
-      - name: 変更通知
-        displayName: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
-        items:
-          - name: 概要
-            href: resources/webhooks.md
-          - name: サブスクリプション
-            href: resources/subscription.md
+          - name: オープン拡張機能
+            href: resources/opentypeextension.md
+            displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
             items:
-              - name: サブスクリプションをリストする
-                href: api/subscription-list.md
-              - name: サブスクリプションを取得する
-                href: api/subscription-get.md
-              - name: サブスクリプションを作成する
-                href: api/subscription-post-subscriptions.md
-              - name: サブスクリプションを更新する
-                href: api/subscription-update.md
-              - name: サブスクリプションを削除する
-                href: api/subscription-delete.md
+              - name: オープン拡張機能を作成する
+                href: api/opentypeextension-post-opentypeextension.md
+              - name: オープン拡張機能を取得する
+                href: api/opentypeextension-get.md
+              - name: オープン拡張機能を更新する
+                href: api/opentypeextension-update.md
+              - name: オープン拡張機能を削除する
+                href: api/opentypeextension-delete.md
+          - name: スキーマ拡張機能
+            href: resources/schemaextension.md
+            displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
+            items:
+              - name: スキーマ拡張機能を一覧表示する
+                href: api/schemaextension-list.md
+              - name: スキーマ拡張機能を作成する
+                href: api/schemaextension-post-schemaextensions.md
+              - name: スキーマ拡張機能を取得する
+                href: api/schemaextension-get.md
+              - name: スキーマ拡張機能を更新する
+                href: api/schemaextension-update.md
+              - name: スキーマ拡張機能を削除する
+                href: api/schemaextension-delete.md
+          - name: 変更通知
+            displayName: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
+            items:
+              - name: 概要
+                href: resources/webhooks.md
+              - name: サブスクリプション
+                href: resources/subscription.md
+                items:
+                  - name: サブスクリプションをリストする
+                    href: api/subscription-list.md
+                  - name: サブスクリプションを取得する
+                    href: api/subscription-get.md
+                  - name: サブスクリプションを作成する
+                    href: api/subscription-post-subscriptions.md
+                  - name: サブスクリプションを更新する
+                    href: api/subscription-update.md
+                  - name: サブスクリプションを削除する
+                    href: api/subscription-delete.md
