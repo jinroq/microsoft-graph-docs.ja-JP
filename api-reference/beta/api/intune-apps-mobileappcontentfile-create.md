@@ -1,34 +1,34 @@
 ---
 title: mobileAppContentFile の作成
 description: 新しい mobileAppContentFile オブジェクトを作成します。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 59fd4d5783fa11ceac5f0ac6f86495ccd17d215a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 630f636c8e76cbb13f4667722205c94de3b2a0d8
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32489469"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935210"
 ---
-# <a name="create-mobileappcontentfile"></a><span data-ttu-id="45b60-103">mobileAppContentFile の作成</span><span class="sxs-lookup"><span data-stu-id="45b60-103">Create mobileAppContentFile</span></span>
+# <a name="create-mobileappcontentfile"></a><span data-ttu-id="72633-103">mobileAppContentFile の作成</span><span class="sxs-lookup"><span data-stu-id="72633-103">Create mobileAppContentFile</span></span>
 
-> <span data-ttu-id="45b60-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="45b60-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="72633-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="72633-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="45b60-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="45b60-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="72633-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="72633-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="45b60-106">新しい [mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="45b60-106">Create a new [mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) object.</span></span>
+<span data-ttu-id="72633-106">新しい [mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="72633-106">Create a new [mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="45b60-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="45b60-107">Prerequisites</span></span>
-<span data-ttu-id="45b60-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="45b60-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="72633-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="72633-107">Prerequisites</span></span>
+<span data-ttu-id="72633-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="72633-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="45b60-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="45b60-110">Permission type</span></span>|<span data-ttu-id="45b60-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="45b60-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="72633-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="72633-110">Permission type</span></span>|<span data-ttu-id="72633-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="72633-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="45b60-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="45b60-112">Delegated (work or school account)</span></span>|<span data-ttu-id="45b60-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="45b60-113">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="45b60-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="45b60-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="45b60-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="45b60-115">Not supported.</span></span>|
-|<span data-ttu-id="45b60-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="45b60-116">Application</span></span>|<span data-ttu-id="45b60-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="45b60-117">Not supported.</span></span>|
+|<span data-ttu-id="72633-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="72633-112">Delegated (work or school account)</span></span>|<span data-ttu-id="72633-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="72633-113">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="72633-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="72633-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="72633-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="72633-115">Not supported.</span></span>|
+|<span data-ttu-id="72633-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="72633-116">Application</span></span>|<span data-ttu-id="72633-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="72633-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="45b60-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="45b60-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="72633-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="72633-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,41 +37,41 @@ ms.locfileid: "32489469"
 POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}/files
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="45b60-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="45b60-119">Request headers</span></span>
-|<span data-ttu-id="45b60-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="45b60-120">Header</span></span>|<span data-ttu-id="45b60-121">値</span><span class="sxs-lookup"><span data-stu-id="45b60-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="72633-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="72633-119">Request headers</span></span>
+|<span data-ttu-id="72633-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="72633-120">Header</span></span>|<span data-ttu-id="72633-121">値</span><span class="sxs-lookup"><span data-stu-id="72633-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="45b60-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="45b60-122">Authorization</span></span>|<span data-ttu-id="45b60-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="45b60-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="45b60-124">承諾</span><span class="sxs-lookup"><span data-stu-id="45b60-124">Accept</span></span>|<span data-ttu-id="45b60-125">application/json</span><span class="sxs-lookup"><span data-stu-id="45b60-125">application/json</span></span>|
+|<span data-ttu-id="72633-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="72633-122">Authorization</span></span>|<span data-ttu-id="72633-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="72633-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="72633-124">承諾</span><span class="sxs-lookup"><span data-stu-id="72633-124">Accept</span></span>|<span data-ttu-id="72633-125">application/json</span><span class="sxs-lookup"><span data-stu-id="72633-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="45b60-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="45b60-126">Request body</span></span>
-<span data-ttu-id="45b60-127">要求本文で、mobileAppContentFile オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="45b60-127">In the request body, supply a JSON representation for the mobileAppContentFile object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="72633-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="72633-126">Request body</span></span>
+<span data-ttu-id="72633-127">要求本文で、mobileAppContentFile オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="72633-127">In the request body, supply a JSON representation for the mobileAppContentFile object.</span></span>
 
-<span data-ttu-id="45b60-128">次の表に、mobileAppContentFile の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="45b60-128">The following table shows the properties that are required when you create the mobileAppContentFile.</span></span>
+<span data-ttu-id="72633-128">次の表に、mobileAppContentFile の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="72633-128">The following table shows the properties that are required when you create the mobileAppContentFile.</span></span>
 
-|<span data-ttu-id="45b60-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="45b60-129">Property</span></span>|<span data-ttu-id="45b60-130">型</span><span class="sxs-lookup"><span data-stu-id="45b60-130">Type</span></span>|<span data-ttu-id="45b60-131">説明</span><span class="sxs-lookup"><span data-stu-id="45b60-131">Description</span></span>|
+|<span data-ttu-id="72633-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="72633-129">Property</span></span>|<span data-ttu-id="72633-130">型</span><span class="sxs-lookup"><span data-stu-id="72633-130">Type</span></span>|<span data-ttu-id="72633-131">説明</span><span class="sxs-lookup"><span data-stu-id="72633-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="45b60-132">azureStorageUri</span><span class="sxs-lookup"><span data-stu-id="45b60-132">azureStorageUri</span></span>|<span data-ttu-id="45b60-133">String</span><span class="sxs-lookup"><span data-stu-id="45b60-133">String</span></span>|<span data-ttu-id="45b60-134">Azure ストレージ URI。</span><span class="sxs-lookup"><span data-stu-id="45b60-134">The Azure Storage URI.</span></span>|
-|<span data-ttu-id="45b60-135">isCommitted</span><span class="sxs-lookup"><span data-stu-id="45b60-135">isCommitted</span></span>|<span data-ttu-id="45b60-136">Boolean</span><span class="sxs-lookup"><span data-stu-id="45b60-136">Boolean</span></span>|<span data-ttu-id="45b60-137">ファイルがコミットされたかどうかを示す値。</span><span class="sxs-lookup"><span data-stu-id="45b60-137">A value indicating whether the file is committed.</span></span>|
-|<span data-ttu-id="45b60-138">id</span><span class="sxs-lookup"><span data-stu-id="45b60-138">id</span></span>|<span data-ttu-id="45b60-139">String</span><span class="sxs-lookup"><span data-stu-id="45b60-139">String</span></span>|<span data-ttu-id="45b60-140">ファイル ID。</span><span class="sxs-lookup"><span data-stu-id="45b60-140">The File Id.</span></span>|
-|<span data-ttu-id="45b60-141">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="45b60-141">createdDateTime</span></span>|<span data-ttu-id="45b60-142">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="45b60-142">DateTimeOffset</span></span>|<span data-ttu-id="45b60-143">ファイルが作成された時刻。</span><span class="sxs-lookup"><span data-stu-id="45b60-143">The time the file was created.</span></span>|
-|<span data-ttu-id="45b60-144">name</span><span class="sxs-lookup"><span data-stu-id="45b60-144">name</span></span>|<span data-ttu-id="45b60-145">String</span><span class="sxs-lookup"><span data-stu-id="45b60-145">String</span></span>|<span data-ttu-id="45b60-146">ファイル名。</span><span class="sxs-lookup"><span data-stu-id="45b60-146">the file name.</span></span>|
-|<span data-ttu-id="45b60-147">size</span><span class="sxs-lookup"><span data-stu-id="45b60-147">size</span></span>|<span data-ttu-id="45b60-148">Int64</span><span class="sxs-lookup"><span data-stu-id="45b60-148">Int64</span></span>|<span data-ttu-id="45b60-149">暗号化する前のファイルのサイズ。</span><span class="sxs-lookup"><span data-stu-id="45b60-149">The size of the file prior to encryption.</span></span>|
-|<span data-ttu-id="45b60-150">sizeEncrypted</span><span class="sxs-lookup"><span data-stu-id="45b60-150">sizeEncrypted</span></span>|<span data-ttu-id="45b60-151">Int64</span><span class="sxs-lookup"><span data-stu-id="45b60-151">Int64</span></span>|<span data-ttu-id="45b60-152">暗号化した後のファイルのサイズ。</span><span class="sxs-lookup"><span data-stu-id="45b60-152">The size of the file after encryption.</span></span>|
-|<span data-ttu-id="45b60-153">azureStorageUriExpirationDateTime</span><span class="sxs-lookup"><span data-stu-id="45b60-153">azureStorageUriExpirationDateTime</span></span>|<span data-ttu-id="45b60-154">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="45b60-154">DateTimeOffset</span></span>|<span data-ttu-id="45b60-155">Azure ストレージ URI の有効期限が切れる時刻。</span><span class="sxs-lookup"><span data-stu-id="45b60-155">The time the Azure storage Uri expires.</span></span>|
-|<span data-ttu-id="45b60-156">manifest</span><span class="sxs-lookup"><span data-stu-id="45b60-156">manifest</span></span>|<span data-ttu-id="45b60-157">Binary</span><span class="sxs-lookup"><span data-stu-id="45b60-157">Binary</span></span>|<span data-ttu-id="45b60-158">マニフェスト情報。</span><span class="sxs-lookup"><span data-stu-id="45b60-158">The manifest information.</span></span>|
-|<span data-ttu-id="45b60-159">uploadState</span><span class="sxs-lookup"><span data-stu-id="45b60-159">uploadState</span></span>|[<span data-ttu-id="45b60-160">mobileAppContentFileUploadState</span><span class="sxs-lookup"><span data-stu-id="45b60-160">mobileAppContentFileUploadState</span></span>](../resources/intune-apps-mobileappcontentfileuploadstate.md)|<span data-ttu-id="45b60-161">現在のアップロード要求の状態。</span><span class="sxs-lookup"><span data-stu-id="45b60-161">The state of the current upload request.</span></span> <span data-ttu-id="45b60-162">可能な値は、`success`、`transientError`、`error`、`unknown`、`azureStorageUriRequestSuccess`、`azureStorageUriRequestPending`、`azureStorageUriRequestFailed`、`azureStorageUriRequestTimedOut`、`azureStorageUriRenewalSuccess`、`azureStorageUriRenewalPending`、`azureStorageUriRenewalFailed`、`azureStorageUriRenewalTimedOut`、`commitFileSuccess`、`commitFilePending`、`commitFileFailed`、`commitFileTimedOut` です。</span><span class="sxs-lookup"><span data-stu-id="45b60-162">Possible values are: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed`, `commitFileTimedOut`.</span></span>|
-|<span data-ttu-id="45b60-163">isframeworkfile</span><span class="sxs-lookup"><span data-stu-id="45b60-163">isFrameworkFile</span></span>|<span data-ttu-id="45b60-164">Boolean</span><span class="sxs-lookup"><span data-stu-id="45b60-164">Boolean</span></span>|<span data-ttu-id="45b60-165">ファイルがフレームワークファイルであるかどうかを示す値。</span><span class="sxs-lookup"><span data-stu-id="45b60-165">A value indicating whether the file is a framework file.</span></span>|
-|<span data-ttu-id="45b60-166">isdependency</span><span class="sxs-lookup"><span data-stu-id="45b60-166">isDependency</span></span>|<span data-ttu-id="45b60-167">Boolean</span><span class="sxs-lookup"><span data-stu-id="45b60-167">Boolean</span></span>|<span data-ttu-id="45b60-168">コンテンツファイルがメインコンテンツファイルの依存関係であるかどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="45b60-168">Whether the content file is a dependency for the main content file.</span></span>|
+|<span data-ttu-id="72633-132">azureStorageUri</span><span class="sxs-lookup"><span data-stu-id="72633-132">azureStorageUri</span></span>|<span data-ttu-id="72633-133">String</span><span class="sxs-lookup"><span data-stu-id="72633-133">String</span></span>|<span data-ttu-id="72633-134">Azure ストレージ URI。</span><span class="sxs-lookup"><span data-stu-id="72633-134">The Azure Storage URI.</span></span>|
+|<span data-ttu-id="72633-135">isCommitted</span><span class="sxs-lookup"><span data-stu-id="72633-135">isCommitted</span></span>|<span data-ttu-id="72633-136">Boolean</span><span class="sxs-lookup"><span data-stu-id="72633-136">Boolean</span></span>|<span data-ttu-id="72633-137">ファイルがコミットされたかどうかを示す値。</span><span class="sxs-lookup"><span data-stu-id="72633-137">A value indicating whether the file is committed.</span></span>|
+|<span data-ttu-id="72633-138">id</span><span class="sxs-lookup"><span data-stu-id="72633-138">id</span></span>|<span data-ttu-id="72633-139">文字列</span><span class="sxs-lookup"><span data-stu-id="72633-139">String</span></span>|<span data-ttu-id="72633-140">ファイル ID。</span><span class="sxs-lookup"><span data-stu-id="72633-140">The File Id.</span></span>|
+|<span data-ttu-id="72633-141">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="72633-141">createdDateTime</span></span>|<span data-ttu-id="72633-142">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="72633-142">DateTimeOffset</span></span>|<span data-ttu-id="72633-143">ファイルが作成された時刻。</span><span class="sxs-lookup"><span data-stu-id="72633-143">The time the file was created.</span></span>|
+|<span data-ttu-id="72633-144">name</span><span class="sxs-lookup"><span data-stu-id="72633-144">name</span></span>|<span data-ttu-id="72633-145">String</span><span class="sxs-lookup"><span data-stu-id="72633-145">String</span></span>|<span data-ttu-id="72633-146">ファイル名。</span><span class="sxs-lookup"><span data-stu-id="72633-146">the file name.</span></span>|
+|<span data-ttu-id="72633-147">size</span><span class="sxs-lookup"><span data-stu-id="72633-147">size</span></span>|<span data-ttu-id="72633-148">Int64</span><span class="sxs-lookup"><span data-stu-id="72633-148">Int64</span></span>|<span data-ttu-id="72633-149">暗号化する前のファイルのサイズ。</span><span class="sxs-lookup"><span data-stu-id="72633-149">The size of the file prior to encryption.</span></span>|
+|<span data-ttu-id="72633-150">sizeEncrypted</span><span class="sxs-lookup"><span data-stu-id="72633-150">sizeEncrypted</span></span>|<span data-ttu-id="72633-151">Int64</span><span class="sxs-lookup"><span data-stu-id="72633-151">Int64</span></span>|<span data-ttu-id="72633-152">暗号化した後のファイルのサイズ。</span><span class="sxs-lookup"><span data-stu-id="72633-152">The size of the file after encryption.</span></span>|
+|<span data-ttu-id="72633-153">azureStorageUriExpirationDateTime</span><span class="sxs-lookup"><span data-stu-id="72633-153">azureStorageUriExpirationDateTime</span></span>|<span data-ttu-id="72633-154">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="72633-154">DateTimeOffset</span></span>|<span data-ttu-id="72633-155">Azure ストレージ URI の有効期限が切れる時刻。</span><span class="sxs-lookup"><span data-stu-id="72633-155">The time the Azure storage Uri expires.</span></span>|
+|<span data-ttu-id="72633-156">manifest</span><span class="sxs-lookup"><span data-stu-id="72633-156">manifest</span></span>|<span data-ttu-id="72633-157">Binary</span><span class="sxs-lookup"><span data-stu-id="72633-157">Binary</span></span>|<span data-ttu-id="72633-158">マニフェスト情報。</span><span class="sxs-lookup"><span data-stu-id="72633-158">The manifest information.</span></span>|
+|<span data-ttu-id="72633-159">uploadState</span><span class="sxs-lookup"><span data-stu-id="72633-159">uploadState</span></span>|[<span data-ttu-id="72633-160">mobileAppContentFileUploadState</span><span class="sxs-lookup"><span data-stu-id="72633-160">mobileAppContentFileUploadState</span></span>](../resources/intune-apps-mobileappcontentfileuploadstate.md)|<span data-ttu-id="72633-161">現在のアップロード要求の状態。</span><span class="sxs-lookup"><span data-stu-id="72633-161">The state of the current upload request.</span></span> <span data-ttu-id="72633-162">可能な値は、`success`、`transientError`、`error`、`unknown`、`azureStorageUriRequestSuccess`、`azureStorageUriRequestPending`、`azureStorageUriRequestFailed`、`azureStorageUriRequestTimedOut`、`azureStorageUriRenewalSuccess`、`azureStorageUriRenewalPending`、`azureStorageUriRenewalFailed`、`azureStorageUriRenewalTimedOut`、`commitFileSuccess`、`commitFilePending`、`commitFileFailed`、`commitFileTimedOut` です。</span><span class="sxs-lookup"><span data-stu-id="72633-162">Possible values are: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed`, `commitFileTimedOut`.</span></span>|
+|<span data-ttu-id="72633-163">isFrameworkFile</span><span class="sxs-lookup"><span data-stu-id="72633-163">isFrameworkFile</span></span>|<span data-ttu-id="72633-164">Boolean</span><span class="sxs-lookup"><span data-stu-id="72633-164">Boolean</span></span>|<span data-ttu-id="72633-165">ファイルがフレームワークファイルであるかどうかを示す値。</span><span class="sxs-lookup"><span data-stu-id="72633-165">A value indicating whether the file is a framework file.</span></span>|
+|<span data-ttu-id="72633-166">isDependency</span><span class="sxs-lookup"><span data-stu-id="72633-166">isDependency</span></span>|<span data-ttu-id="72633-167">Boolean</span><span class="sxs-lookup"><span data-stu-id="72633-167">Boolean</span></span>|<span data-ttu-id="72633-168">コンテンツファイルがメインコンテンツファイルの依存関係であるかどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="72633-168">Whether the content file is a dependency for the main content file.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="45b60-169">応答</span><span class="sxs-lookup"><span data-stu-id="45b60-169">Response</span></span>
-<span data-ttu-id="45b60-170">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="45b60-170">If successful, this method returns a `201 Created` response code and a [mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="72633-169">応答</span><span class="sxs-lookup"><span data-stu-id="72633-169">Response</span></span>
+<span data-ttu-id="72633-170">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="72633-170">If successful, this method returns a `201 Created` response code and a [mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="45b60-171">例</span><span class="sxs-lookup"><span data-stu-id="45b60-171">Example</span></span>
+## <a name="example"></a><span data-ttu-id="72633-171">例</span><span class="sxs-lookup"><span data-stu-id="72633-171">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="45b60-172">要求</span><span class="sxs-lookup"><span data-stu-id="45b60-172">Request</span></span>
-<span data-ttu-id="45b60-173">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="45b60-173">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="72633-172">要求</span><span class="sxs-lookup"><span data-stu-id="72633-172">Request</span></span>
+<span data-ttu-id="72633-173">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="72633-173">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}/files
 Content-type: application/json
@@ -92,8 +92,8 @@ Content-length: 395
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="45b60-174">応答</span><span class="sxs-lookup"><span data-stu-id="45b60-174">Response</span></span>
-<span data-ttu-id="45b60-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="45b60-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="72633-174">応答</span><span class="sxs-lookup"><span data-stu-id="72633-174">Response</span></span>
+<span data-ttu-id="72633-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="72633-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -115,7 +115,6 @@ Content-Length: 503
   "isDependency": true
 }
 ```
-
 
 
 

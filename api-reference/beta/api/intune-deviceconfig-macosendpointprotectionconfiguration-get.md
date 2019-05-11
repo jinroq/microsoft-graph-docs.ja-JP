@@ -1,34 +1,34 @@
 ---
-title: macosendpointprotectionconfiguration の取得
-description: macosendpointprotectionconfiguration オブジェクトのプロパティとリレーションシップを読み取ります。
-author: tfitzmac
+title: MacOSEndpointProtectionConfiguration の取得
+description: MacOSEndpointProtectionConfiguration オブジェクトのプロパティとリレーションシップを読み取ります。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0e2855128c3f3915a409f5436653277cd46db59e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8a31bb8df9e8274a7d954456e3284521edc36a89
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32518773"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33922593"
 ---
-# <a name="get-macosendpointprotectionconfiguration"></a><span data-ttu-id="3bcf4-103">macosendpointprotectionconfiguration の取得</span><span class="sxs-lookup"><span data-stu-id="3bcf4-103">Get macOSEndpointProtectionConfiguration</span></span>
+# <a name="get-macosendpointprotectionconfiguration"></a><span data-ttu-id="cdefa-103">MacOSEndpointProtectionConfiguration の取得</span><span class="sxs-lookup"><span data-stu-id="cdefa-103">Get macOSEndpointProtectionConfiguration</span></span>
 
-> <span data-ttu-id="3bcf4-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="3bcf4-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="cdefa-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="cdefa-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="3bcf4-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="3bcf4-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="cdefa-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="cdefa-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="3bcf4-106">[macosendpointprotectionconfiguration](../resources/intune-deviceconfig-macosendpointprotectionconfiguration.md)オブジェクトのプロパティとリレーションシップを読み取ります。</span><span class="sxs-lookup"><span data-stu-id="3bcf4-106">Read properties and relationships of the [macOSEndpointProtectionConfiguration](../resources/intune-deviceconfig-macosendpointprotectionconfiguration.md) object.</span></span>
+<span data-ttu-id="cdefa-106">[Macosendpointprotectionconfiguration](../resources/intune-deviceconfig-macosendpointprotectionconfiguration.md)オブジェクトのプロパティとリレーションシップを読み取ります。</span><span class="sxs-lookup"><span data-stu-id="cdefa-106">Read properties and relationships of the [macOSEndpointProtectionConfiguration](../resources/intune-deviceconfig-macosendpointprotectionconfiguration.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="3bcf4-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="3bcf4-107">Prerequisites</span></span>
-<span data-ttu-id="3bcf4-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="3bcf4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="cdefa-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="cdefa-107">Prerequisites</span></span>
+<span data-ttu-id="cdefa-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="cdefa-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="3bcf4-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="3bcf4-110">Permission type</span></span>|<span data-ttu-id="3bcf4-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="3bcf4-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="cdefa-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="cdefa-110">Permission type</span></span>|<span data-ttu-id="cdefa-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="cdefa-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="3bcf4-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="3bcf4-112">Delegated (work or school account)</span></span>|<span data-ttu-id="3bcf4-113">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="3bcf4-113">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="3bcf4-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="3bcf4-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="3bcf4-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="3bcf4-115">Not supported.</span></span>|
-|<span data-ttu-id="3bcf4-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="3bcf4-116">Application</span></span>|<span data-ttu-id="3bcf4-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="3bcf4-117">Not supported.</span></span>|
+|<span data-ttu-id="cdefa-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="cdefa-112">Delegated (work or school account)</span></span>|<span data-ttu-id="cdefa-113">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="cdefa-113">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="cdefa-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="cdefa-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="cdefa-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="cdefa-115">Not supported.</span></span>|
+|<span data-ttu-id="cdefa-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="cdefa-116">Application</span></span>|<span data-ttu-id="cdefa-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="cdefa-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="3bcf4-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="3bcf4-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="cdefa-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="cdefa-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -39,31 +39,31 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignme
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="3bcf4-119">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bcf4-119">Optional query parameters</span></span>
-<span data-ttu-id="3bcf4-120">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://docs.microsoft.com/en-us/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="3bcf4-120">This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="cdefa-119">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="cdefa-119">Optional query parameters</span></span>
+<span data-ttu-id="cdefa-120">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://docs.microsoft.com/en-us/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="cdefa-120">This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="3bcf4-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="3bcf4-121">Request headers</span></span>
-|<span data-ttu-id="3bcf4-122">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="3bcf4-122">Header</span></span>|<span data-ttu-id="3bcf4-123">値</span><span class="sxs-lookup"><span data-stu-id="3bcf4-123">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="cdefa-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="cdefa-121">Request headers</span></span>
+|<span data-ttu-id="cdefa-122">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="cdefa-122">Header</span></span>|<span data-ttu-id="cdefa-123">値</span><span class="sxs-lookup"><span data-stu-id="cdefa-123">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="3bcf4-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="3bcf4-124">Authorization</span></span>|<span data-ttu-id="3bcf4-125">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="3bcf4-125">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="3bcf4-126">承諾</span><span class="sxs-lookup"><span data-stu-id="3bcf4-126">Accept</span></span>|<span data-ttu-id="3bcf4-127">application/json</span><span class="sxs-lookup"><span data-stu-id="3bcf4-127">application/json</span></span>|
+|<span data-ttu-id="cdefa-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="cdefa-124">Authorization</span></span>|<span data-ttu-id="cdefa-125">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="cdefa-125">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="cdefa-126">承諾</span><span class="sxs-lookup"><span data-stu-id="cdefa-126">Accept</span></span>|<span data-ttu-id="cdefa-127">application/json</span><span class="sxs-lookup"><span data-stu-id="cdefa-127">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="3bcf4-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="3bcf4-128">Request body</span></span>
-<span data-ttu-id="3bcf4-129">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="3bcf4-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="cdefa-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="cdefa-128">Request body</span></span>
+<span data-ttu-id="cdefa-129">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="cdefa-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="3bcf4-130">応答</span><span class="sxs-lookup"><span data-stu-id="3bcf4-130">Response</span></span>
-<span data-ttu-id="3bcf4-131">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[macosendpointprotectionconfiguration](../resources/intune-deviceconfig-macosendpointprotectionconfiguration.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="3bcf4-131">If successful, this method returns a `200 OK` response code and [macOSEndpointProtectionConfiguration](../resources/intune-deviceconfig-macosendpointprotectionconfiguration.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="cdefa-130">応答</span><span class="sxs-lookup"><span data-stu-id="cdefa-130">Response</span></span>
+<span data-ttu-id="cdefa-131">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[Macosendpointprotectionconfiguration](../resources/intune-deviceconfig-macosendpointprotectionconfiguration.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="cdefa-131">If successful, this method returns a `200 OK` response code and [macOSEndpointProtectionConfiguration](../resources/intune-deviceconfig-macosendpointprotectionconfiguration.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="3bcf4-132">例</span><span class="sxs-lookup"><span data-stu-id="3bcf4-132">Example</span></span>
+## <a name="example"></a><span data-ttu-id="cdefa-132">例</span><span class="sxs-lookup"><span data-stu-id="cdefa-132">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="3bcf4-133">要求</span><span class="sxs-lookup"><span data-stu-id="3bcf4-133">Request</span></span>
-<span data-ttu-id="3bcf4-134">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="3bcf4-134">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="cdefa-133">要求</span><span class="sxs-lookup"><span data-stu-id="cdefa-133">Request</span></span>
+<span data-ttu-id="cdefa-134">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="cdefa-134">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
-### <a name="response"></a><span data-ttu-id="3bcf4-135">応答</span><span class="sxs-lookup"><span data-stu-id="3bcf4-135">Response</span></span>
-<span data-ttu-id="3bcf4-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="3bcf4-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="cdefa-135">応答</span><span class="sxs-lookup"><span data-stu-id="cdefa-135">Response</span></span>
+<span data-ttu-id="cdefa-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="cdefa-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -97,7 +97,6 @@ Content-Length: 884
   }
 }
 ```
-
 
 
 

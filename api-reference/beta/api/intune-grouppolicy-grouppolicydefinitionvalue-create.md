@@ -1,34 +1,34 @@
 ---
-title: grouppolicydefinitionvalue の作成
-description: 新しい grouppolicydefinitionvalue オブジェクトを作成します。
-author: tfitzmac
+title: GroupPolicyDefinitionValue の作成
+description: 新しい groupPolicyDefinitionValue オブジェクトを作成します。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 60fef42cc86aa2cdef23b81223b1e715027c659a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ea0ca1731607e450032d0d24d380436fe9c90736
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32531468"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33905092"
 ---
-# <a name="create-grouppolicydefinitionvalue"></a><span data-ttu-id="13986-103">grouppolicydefinitionvalue の作成</span><span class="sxs-lookup"><span data-stu-id="13986-103">Create groupPolicyDefinitionValue</span></span>
+# <a name="create-grouppolicydefinitionvalue"></a><span data-ttu-id="70409-103">GroupPolicyDefinitionValue の作成</span><span class="sxs-lookup"><span data-stu-id="70409-103">Create groupPolicyDefinitionValue</span></span>
 
-> <span data-ttu-id="13986-104">**重要:** ベータ版の Microsoft Graph api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="13986-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="70409-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="70409-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="13986-105">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="13986-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="70409-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="70409-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="13986-106">新しい[grouppolicydefinitionvalue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="13986-106">Create a new [groupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md) object.</span></span>
+<span data-ttu-id="70409-106">新しい[Grouppolicydefinitionvalue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="70409-106">Create a new [groupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="13986-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="13986-107">Prerequisites</span></span>
-<span data-ttu-id="13986-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="13986-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="70409-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="70409-107">Prerequisites</span></span>
+<span data-ttu-id="70409-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="70409-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="13986-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="13986-110">Permission type</span></span>|<span data-ttu-id="13986-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="13986-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="70409-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="70409-110">Permission type</span></span>|<span data-ttu-id="70409-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="70409-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="13986-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="13986-112">Delegated (work or school account)</span></span>|<span data-ttu-id="13986-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="13986-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="13986-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="13986-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="13986-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="13986-115">Not supported.</span></span>|
-|<span data-ttu-id="13986-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="13986-116">Application</span></span>|<span data-ttu-id="13986-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="13986-117">Not supported.</span></span>|
+|<span data-ttu-id="70409-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="70409-112">Delegated (work or school account)</span></span>|<span data-ttu-id="70409-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="70409-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="70409-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="70409-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="70409-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="70409-115">Not supported.</span></span>|
+|<span data-ttu-id="70409-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="70409-116">Application</span></span>|<span data-ttu-id="70409-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="70409-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="13986-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="13986-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="70409-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="70409-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,34 +37,34 @@ ms.locfileid: "32531468"
 POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="13986-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="13986-119">Request headers</span></span>
-|<span data-ttu-id="13986-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="13986-120">Header</span></span>|<span data-ttu-id="13986-121">値</span><span class="sxs-lookup"><span data-stu-id="13986-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="70409-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="70409-119">Request headers</span></span>
+|<span data-ttu-id="70409-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="70409-120">Header</span></span>|<span data-ttu-id="70409-121">値</span><span class="sxs-lookup"><span data-stu-id="70409-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="13986-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="13986-122">Authorization</span></span>|<span data-ttu-id="13986-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="13986-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="13986-124">承諾</span><span class="sxs-lookup"><span data-stu-id="13986-124">Accept</span></span>|<span data-ttu-id="13986-125">application/json</span><span class="sxs-lookup"><span data-stu-id="13986-125">application/json</span></span>|
+|<span data-ttu-id="70409-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="70409-122">Authorization</span></span>|<span data-ttu-id="70409-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="70409-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="70409-124">承諾</span><span class="sxs-lookup"><span data-stu-id="70409-124">Accept</span></span>|<span data-ttu-id="70409-125">application/json</span><span class="sxs-lookup"><span data-stu-id="70409-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="13986-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="13986-126">Request body</span></span>
-<span data-ttu-id="13986-127">要求本文で、grouppolicydefinitionvalue オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="13986-127">In the request body, supply a JSON representation for the groupPolicyDefinitionValue object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="70409-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="70409-126">Request body</span></span>
+<span data-ttu-id="70409-127">要求本文で、groupPolicyDefinitionValue オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="70409-127">In the request body, supply a JSON representation for the groupPolicyDefinitionValue object.</span></span>
 
-<span data-ttu-id="13986-128">次の表に、grouppolicydefinitionvalue の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="13986-128">The following table shows the properties that are required when you create the groupPolicyDefinitionValue.</span></span>
+<span data-ttu-id="70409-128">次の表に、groupPolicyDefinitionValue の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="70409-128">The following table shows the properties that are required when you create the groupPolicyDefinitionValue.</span></span>
 
-|<span data-ttu-id="13986-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="13986-129">Property</span></span>|<span data-ttu-id="13986-130">型</span><span class="sxs-lookup"><span data-stu-id="13986-130">Type</span></span>|<span data-ttu-id="13986-131">説明</span><span class="sxs-lookup"><span data-stu-id="13986-131">Description</span></span>|
+|<span data-ttu-id="70409-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="70409-129">Property</span></span>|<span data-ttu-id="70409-130">型</span><span class="sxs-lookup"><span data-stu-id="70409-130">Type</span></span>|<span data-ttu-id="70409-131">説明</span><span class="sxs-lookup"><span data-stu-id="70409-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="13986-132">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="13986-132">createdDateTime</span></span>|<span data-ttu-id="13986-133">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="13986-133">DateTimeOffset</span></span>|<span data-ttu-id="13986-134">オブジェクトが作成された日付と時刻。</span><span class="sxs-lookup"><span data-stu-id="13986-134">The date and time the object was created.</span></span>|
-|<span data-ttu-id="13986-135">enabled</span><span class="sxs-lookup"><span data-stu-id="13986-135">enabled</span></span>|<span data-ttu-id="13986-136">ブール型 (Boolean)</span><span class="sxs-lookup"><span data-stu-id="13986-136">Boolean</span></span>|<span data-ttu-id="13986-137">関連付けられたグループポリシー定義を有効または無効にします。</span><span class="sxs-lookup"><span data-stu-id="13986-137">Enables or disables the associated group policy definition.</span></span>|
-|<span data-ttu-id="13986-138">configurationType</span><span class="sxs-lookup"><span data-stu-id="13986-138">configurationType</span></span>|[<span data-ttu-id="13986-139">groupPolicyConfigurationType</span><span class="sxs-lookup"><span data-stu-id="13986-139">groupPolicyConfigurationType</span></span>](../resources/intune-grouppolicy-grouppolicyconfigurationtype.md)|<span data-ttu-id="13986-140">値の構成方法を指定します。</span><span class="sxs-lookup"><span data-stu-id="13986-140">Specifies how the value should be configured.</span></span> <span data-ttu-id="13986-141">これは、ポリシーとして、または設定することができます。</span><span class="sxs-lookup"><span data-stu-id="13986-141">This can be either as a Policy or as a Preference.</span></span> <span data-ttu-id="13986-142">可能な値は、`policy`、`preference` です。</span><span class="sxs-lookup"><span data-stu-id="13986-142">Possible values are: `policy`, `preference`.</span></span>|
-|<span data-ttu-id="13986-143">id</span><span class="sxs-lookup"><span data-stu-id="13986-143">id</span></span>|<span data-ttu-id="13986-144">String</span><span class="sxs-lookup"><span data-stu-id="13986-144">String</span></span>|<span data-ttu-id="13986-145">エンティティのキー。</span><span class="sxs-lookup"><span data-stu-id="13986-145">Key of the entity.</span></span>|
-|<span data-ttu-id="13986-146">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="13986-146">lastModifiedDateTime</span></span>|<span data-ttu-id="13986-147">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="13986-147">DateTimeOffset</span></span>|<span data-ttu-id="13986-148">エンティティが最後に変更された日付と時刻。</span><span class="sxs-lookup"><span data-stu-id="13986-148">The date and time the entity was last modified.</span></span>|
+|<span data-ttu-id="70409-132">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="70409-132">createdDateTime</span></span>|<span data-ttu-id="70409-133">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="70409-133">DateTimeOffset</span></span>|<span data-ttu-id="70409-134">オブジェクトが作成された日付と時刻。</span><span class="sxs-lookup"><span data-stu-id="70409-134">The date and time the object was created.</span></span>|
+|<span data-ttu-id="70409-135">enabled</span><span class="sxs-lookup"><span data-stu-id="70409-135">enabled</span></span>|<span data-ttu-id="70409-136">ブール型 (Boolean)</span><span class="sxs-lookup"><span data-stu-id="70409-136">Boolean</span></span>|<span data-ttu-id="70409-137">関連付けられたグループポリシー定義を有効または無効にします。</span><span class="sxs-lookup"><span data-stu-id="70409-137">Enables or disables the associated group policy definition.</span></span>|
+|<span data-ttu-id="70409-138">configurationType</span><span class="sxs-lookup"><span data-stu-id="70409-138">configurationType</span></span>|[<span data-ttu-id="70409-139">groupPolicyConfigurationType</span><span class="sxs-lookup"><span data-stu-id="70409-139">groupPolicyConfigurationType</span></span>](../resources/intune-grouppolicy-grouppolicyconfigurationtype.md)|<span data-ttu-id="70409-140">値の構成方法を指定します。</span><span class="sxs-lookup"><span data-stu-id="70409-140">Specifies how the value should be configured.</span></span> <span data-ttu-id="70409-141">これは、ポリシーとして、または設定することができます。</span><span class="sxs-lookup"><span data-stu-id="70409-141">This can be either as a Policy or as a Preference.</span></span> <span data-ttu-id="70409-142">可能な値は、`policy`、`preference` です。</span><span class="sxs-lookup"><span data-stu-id="70409-142">Possible values are: `policy`, `preference`.</span></span>|
+|<span data-ttu-id="70409-143">id</span><span class="sxs-lookup"><span data-stu-id="70409-143">id</span></span>|<span data-ttu-id="70409-144">String</span><span class="sxs-lookup"><span data-stu-id="70409-144">String</span></span>|<span data-ttu-id="70409-145">エンティティのキー。</span><span class="sxs-lookup"><span data-stu-id="70409-145">Key of the entity.</span></span>|
+|<span data-ttu-id="70409-146">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="70409-146">lastModifiedDateTime</span></span>|<span data-ttu-id="70409-147">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="70409-147">DateTimeOffset</span></span>|<span data-ttu-id="70409-148">エンティティが最後に変更された日付と時刻。</span><span class="sxs-lookup"><span data-stu-id="70409-148">The date and time the entity was last modified.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="13986-149">応答</span><span class="sxs-lookup"><span data-stu-id="13986-149">Response</span></span>
-<span data-ttu-id="13986-150">成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[grouppolicydefinitionvalue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="13986-150">If successful, this method returns a `201 Created` response code and a [groupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="70409-149">応答</span><span class="sxs-lookup"><span data-stu-id="70409-149">Response</span></span>
+<span data-ttu-id="70409-150">成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[Grouppolicydefinitionvalue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="70409-150">If successful, this method returns a `201 Created` response code and a [groupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="13986-151">例</span><span class="sxs-lookup"><span data-stu-id="13986-151">Example</span></span>
+## <a name="example"></a><span data-ttu-id="70409-151">例</span><span class="sxs-lookup"><span data-stu-id="70409-151">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="13986-152">要求</span><span class="sxs-lookup"><span data-stu-id="13986-152">Request</span></span>
-<span data-ttu-id="13986-153">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="13986-153">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="70409-152">要求</span><span class="sxs-lookup"><span data-stu-id="70409-152">Request</span></span>
+<span data-ttu-id="70409-153">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="70409-153">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues
 Content-type: application/json
@@ -77,8 +77,8 @@ Content-length: 126
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="13986-154">応答</span><span class="sxs-lookup"><span data-stu-id="13986-154">Response</span></span>
-<span data-ttu-id="13986-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="13986-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="70409-154">応答</span><span class="sxs-lookup"><span data-stu-id="70409-154">Response</span></span>
+<span data-ttu-id="70409-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="70409-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -93,7 +93,6 @@ Content-Length: 298
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 
