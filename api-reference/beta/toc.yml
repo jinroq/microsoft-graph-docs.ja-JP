@@ -819,14 +819,6 @@ items:
                     href: api/projectrome-put-historyitem.md
                   - name: 履歴項目を削除する
                     href: api/projectrome-delete-historyitem.md
-          - name: 通知
-            href: resources/notifications-api-overview.md
-            items:
-              - name: 通知
-                href: resources/projectrome-notification.md
-                items:
-                  - name: 通知を作成し送信する
-                    href: api/projectrome-notification-post.md
       - name: 顧客の予約
         displayName: 'Bookings, Microsoft Bookings'
         items:
@@ -835,7 +827,7 @@ items:
           - name: 予約可能なビジネス
             href: resources/bookingbusiness.md
             items:
-              - name: リスト
+              - name: List
                 href: api/bookingbusiness-list.md
               - name: 作成
                 href: api/bookingbusiness-post-bookingbusinesses.md
@@ -1722,7 +1714,7 @@ items:
                 items:
                   - name: リスト
                     href: api/intune-apps-mobilecontainedapp-list.md
-                  - name: 取得
+                  - name: Get
                     href: api/intune-apps-mobilecontainedapp-get.md
               - name: モバイル LOB アプリ
                 href: resources/intune-apps-mobilelobapp.md
@@ -1738,7 +1730,7 @@ items:
                 items:
                   - name: リスト
                     href: api/intune-cirrus-officeclientconfiguration-list.md
-                  - name: Get
+                  - name: 取得
                     href: api/intune-cirrus-officeclientconfiguration-get.md
                   - name: アクションの割り当て
                     href: api/intune-cirrus-officeclientconfiguration-assign.md
@@ -2165,7 +2157,7 @@ items:
                 items:
                   - name: リスト
                     href: api/intune-enrollment-depmacosenrollmentprofile-list.md
-                  - name: Get
+                  - name: 取得
                     href: api/intune-enrollment-depmacosenrollmentprofile-get.md
                   - name: 作成
                     href: api/intune-enrollment-depmacosenrollmentprofile-create.md
@@ -2592,7 +2584,7 @@ items:
                 items:
                   - name: リスト
                     href: api/intune-deviceconfig-androidforworkgeneraldeviceconfiguration-list.md
-                  - name: 取得
+                  - name: Get
                     href: api/intune-deviceconfig-androidforworkgeneraldeviceconfiguration-get.md
                   - name: 作成
                     href: api/intune-deviceconfig-androidforworkgeneraldeviceconfiguration-create.md
@@ -6007,7 +5999,7 @@ items:
                 items:
                   - name: リスト
                     href: api/intune-deviceintent-securitybaselinecategorystatesummary-list.md
-                  - name: 取得
+                  - name: Get
                     href: api/intune-deviceintent-securitybaselinecategorystatesummary-get.md
                   - name: 作成
                     href: api/intune-deviceintent-securitybaselinecategorystatesummary-create.md
@@ -6655,7 +6647,7 @@ items:
                 items:
                   - name: 一覧表示
                     href: api/intune-onboarding-mobilethreatdefenseconnector-list.md
-                  - name: 取得
+                  - name: Get
                     href: api/intune-onboarding-mobilethreatdefenseconnector-get.md
                   - name: 作成
                     href: api/intune-onboarding-mobilethreatdefenseconnector-create.md
@@ -7515,7 +7507,7 @@ items:
               - name: ビジネス フロー テンプレート
                 href: resources/businessflowtemplate.md
                 items:
-                  - name: リスト
+                  - name: List
                     href: api/businessflowtemplate-list.md
               - name: プログラム
                 href: resources/program.md
@@ -7524,7 +7516,7 @@ items:
                     href: api/program-create.md
                   - name: 削除
                     href: api/program-delete.md
-                  - name: List
+                  - name: リスト
                     href: api/program-list.md
                   - name: 更新
                     href: api/program-update.md
@@ -8330,6 +8322,14 @@ items:
             items:
               - name: リソースを取得する
                 href: api/resource-get.md
+      - name: 通知
+        href: resources/notifications-api-overview.md
+        items:
+          - name: 通知
+            href: resources/projectrome-notification.md
+            items:
+              - name: 通知を作成し送信する
+                href: api/notifications-post.md
       - name: 個人用連絡先
         href: resources/contact.md
         displayName: 'Outlook, Outlook contacts, Outlook contact, People'
