@@ -3,12 +3,12 @@ title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 5ca5df50b9c7ce9c16f3aa09bd54dbc1c0444dc0
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3dfa65d9c285422351c82a43494aaf524b894685
+ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951251"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968843"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
@@ -139,6 +139,24 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 |追加 |v1.0 | [installedApps](/graph/api/resources/teamsappinstallation?view=graph-rest-1.0) リソースに対するアプリケーション アクセス許可のサポートを追加しました。|
 |追加 |v1.0| [channel](/graph/api/resources/channel?view=graph-rest-1.0) に、**email** および **webUrl** プロパティを追加しました。|
 | 追加 | ベータ版 | [チャット](/api-reference/beta/resources/chat.md) リソースと関連メソッドが追加されました。 |
+
+### <a name="onedrive-and-sharepoint-apis"></a>OneDrive と SharePoint の API
+
+| **変更の種類** | **バージョン** | **説明**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| 追加        | v1.0        | **analytics**プロパティを[driveItem](/graph/api/resources/driveitem?view=graph-rest-beta)エンティティに追加しました。 |
+| 追加        | v1.0        | **analytics**プロパティを[サイト](/graph/api/resources/site?view=graph-rest-beta)エンティティに追加しました。 |
+| 追加        | v1.0        | **analytics**プロパティを[listItem](/graph/api/resources/listitem?view=graph-rest-beta)エンティティに追加しました。 |
+| 追加        | v1.0        | **getActivitiesByInterval**関数を[driveItem](/graph/api/resources/driveitem?view=graph-rest-beta)エンティティに追加しました。 |
+| 追加        | v1.0        | **getActivitiesByInterval**関数を[サイト](/graph/api/resources/site?view=graph-rest-beta)エンティティに追加しました。 |
+| 追加        | v1.0        | **getActivitiesByInterval**関数を[リスト アイテム](/graph/api/resources/listitem?view=graph-rest-beta)エンティティに追加しました。 |
+| 追加        | v1.0        | [itemAnalytics](/graph/api/resources/itemanalytics?view=graph-rest-beta)エンティティを追加しました。 |
+| 追加        | v1.0        | [itemActivityStat](/graph/api/resources/itemactivity?view=graph-rest-beta)エンティティを追加しました。 |
+| 追加        | v1.0        | [itemActionStat](/graph/api/resources/itemactionstat?view=graph-rest-beta)複合型を追加しました。 |
+| 追加        | v1.0        | [accessAction](/graph/api/resources/accessaction?view=graph-rest-beta)複合型を追加しました。 |
+| 追加        | v1.0        | [incompleteData](/graph/api/resources/incompletedata?view=graph-rest-beta)複合型を追加しました。 |
+| 追加        | v1.0        | **アクセス**プロパティを[itemActivity](/graph/api/resources/itemactivity?view=graph-rest-beta)複合型に追加しました。 |
+| 追加        | v1.0        | **location**プロパティを[itemActivity](/graph/api/resources/itemactivity?view=graph-rest-beta)複合型に追加しました。 |
 
 ### <a name="outlook-mail"></a>Outlook メール
 

@@ -4,34 +4,34 @@ description: Windows ファイアウォールのプロファイルのポリシ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3e52555d8ac9b010028ee3bc716255db8a563e73
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 065c5f33f596834400c874cd53e7ad3d82d03b56
+ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456991"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34036543"
 ---
 # <a name="windowsfirewallnetworkprofile-resource-type"></a>windowsFirewallNetworkProfile リソース タイプ
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 Windows ファイアウォールのプロファイルのポリシーです。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|firewallEnabled|[statemanagementsetting](../resources/intune-deviceconfig-statemanagementsetting.md)|ネットワークプロファイルに対するファイアウォールと高度なセキュリティの適用を許可またはブロックするようにホストデバイスを構成します。 使用可能な値は、`notConfigured`、`blocked`、`allowed` です。|
-|stealthModeBlocked|ブール型|サーバーがステルスモードで動作しないようにします。 StealthModeRequired と StealthModeBlocked の両方が true の場合、StealthModeBlocked は優先されます。|
-|incomingTrafficBlocked|ブール型|他のポリシー設定に関係なく、すべての着信トラフィックをブロックするようにファイアウォールを構成します。 IncomingTrafficRequired と IncomingTrafficBlocked の両方が true の場合、IncomingTrafficBlocked は優先されます。|
-|unicastResponsesToMulticastBroadcastsBlocked|ブール型|マルチキャストブロードキャストトラフィックへのユニキャスト応答をブロックするようにファイアウォールを構成します。 UnicastResponsesToMulticastBroadcastsRequired と UnicastResponsesToMulticastBroadcastsBlocked の両方が true の場合、UnicastResponsesToMulticastBroadcastsBlocked は優先されます。|
-|inboundNotificationsBlocked|ブール型|アプリケーションがポートでリッスンできない場合に、ファイアウォールで通知が表示されないようにします。 InboundNotificationsRequired と InboundNotificationsBlocked の両方が true の場合、InboundNotificationsBlocked は優先されます。|
-|authorizedApplicationRulesFromGroupPolicyMerged|ブール型|ローカルストアの規則を無視するのではなく、承認されたアプリケーションルールをローカルストアからマージするように、ファイアウォールを構成します。 authorizedapplicationrulesfromgrouppolicynotmerged と authorizedapplicationpolicyfromgrouppolicyマージの両方が true である場合、authorizedapplicationpolicyfromgrouppolicyマージが優先されます。|
-|globalPortRulesFromGroupPolicyMerged|ブール型|ローカルストアの規則を無視するのではなく、グループポリシーからグローバルポートの規則をローカルストアからマージするように、ファイアウォールを構成します。 globalportrulesfromgrouppolicynotmerged と globalportrulesfromgrouppolicyマージの両方が true の場合、globalportrulesfromgrouppolicyマージが優先されます。|
-|connectionSecurityRulesFromGroupPolicyMerged|ブール型|ローカルストアの規則を無視するのではなく、グループポリシーから接続セキュリティの規則をローカルストアからマージするようにファイアウォールを構成します。 connectionsecurityrulesfromgrouppolicynotmerged と connectionsecuritypolicyfromgrouppolicyマージの両方が true の場合、connectionsecuritypolicyfromgrouppolicyマージが優先されます。|
-|outboundConnectionsBlocked|ブール型|既定ですべての送信接続をブロックするようにファイアウォールを構成します。 OutboundConnectionsRequired と OutboundConnectionsBlocked の両方が true の場合、OutboundConnectionsBlocked は優先されます。|
-|inboundConnectionsBlocked|ブール型|既定ですべての受信接続をブロックするようにファイアウォールを構成します。 InboundConnectionsRequired と InboundConnectionsBlocked の両方が true の場合、InboundConnectionsBlocked は優先されます。|
-|securedPacketExemptionAllowed|ブール型|stealthModeBlocked が true に設定されている場合でも、そのトラフィックの一方的なネットワークトラフィックにホストコンピューターが応答できるように、ファイアウォールを構成します。 SecuredPacketExemptionBlocked と SecuredPacketExemptionAllowed の両方が true の場合、SecuredPacketExemptionAllowed は優先されます。|
-|policyRulesFromGroupPolicyMerged|Boolean|ファイアウォールが、ローカルストアの規則を無視するのではなく、グループポリシーから、ローカルストアからのものと一緒に、ファイアウォールの規則ポリシーをマージするように構成します。 policyrulesfromgrouppolicynotmerged と policypolicyfromgrouppolicyマージの両方が true の場合、policypolicyfromgrouppolicy統合が優先されます。|
+|firewallEnabled|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|ネットワークプロファイルに対するファイアウォールと高度なセキュリティの適用を許可またはブロックするようにホストデバイスを構成します。 可能な値は、`notConfigured`、`blocked`、`allowed` です。|
+|stealthModeBlocked|Boolean|サーバーがステルスモードで動作しないようにします。 StealthModeRequired と StealthModeBlocked の両方が true の場合、StealthModeBlocked は優先されます。|
+|incomingTrafficBlocked|Boolean|他のポリシー設定に関係なく、すべての着信トラフィックをブロックするようにファイアウォールを構成します。 IncomingTrafficRequired と IncomingTrafficBlocked の両方が true の場合、IncomingTrafficBlocked は優先されます。|
+|unicastResponsesToMulticastBroadcastsBlocked|Boolean|マルチキャストブロードキャストトラフィックへのユニキャスト応答をブロックするようにファイアウォールを構成します。 UnicastResponsesToMulticastBroadcastsRequired と UnicastResponsesToMulticastBroadcastsBlocked の両方が true の場合、UnicastResponsesToMulticastBroadcastsBlocked は優先されます。|
+|inboundNotificationsBlocked|Boolean|アプリケーションがポートでリッスンできない場合に、ファイアウォールで通知が表示されないようにします。 InboundNotificationsRequired と InboundNotificationsBlocked の両方が true の場合、InboundNotificationsBlocked は優先されます。|
+|authorizedApplicationRulesFromGroupPolicyMerged|Boolean|ローカルストアの規則を無視するのではなく、承認されたアプリケーションルールをローカルストアからマージするように、ファイアウォールを構成します。 AuthorizedApplicationRulesFromGroupPolicyNotMerged と Authorizedapplicationpolicyfromgrouppolicyマージの両方が true である場合、Authorizedapplicationpolicyfromgrouppolicyマージが優先されます。|
+|globalPortRulesFromGroupPolicyMerged|Boolean|ローカルストアの規則を無視するのではなく、グループポリシーからグローバルポートの規則をローカルストアからマージするように、ファイアウォールを構成します。 GlobalPortRulesFromGroupPolicyNotMerged と Globalportrulesfromgrouppolicyマージの両方が true の場合、Globalportrulesfromgrouppolicyマージが優先されます。|
+|connectionSecurityRulesFromGroupPolicyMerged|Boolean|ローカルストアの規則を無視するのではなく、グループポリシーから接続セキュリティの規則をローカルストアからマージするようにファイアウォールを構成します。 ConnectionSecurityRulesFromGroupPolicyNotMerged と Connectionsecuritypolicyfromgrouppolicyマージの両方が true の場合、Connectionsecuritypolicyfromgrouppolicyマージが優先されます。|
+|outboundConnectionsBlocked|Boolean|既定ですべての送信接続をブロックするようにファイアウォールを構成します。 OutboundConnectionsRequired と OutboundConnectionsBlocked の両方が true の場合、OutboundConnectionsBlocked は優先されます。 この設定は、Windows リリースバージョン1809以降に適用されます。|
+|inboundConnectionsBlocked|Boolean|既定ですべての受信接続をブロックするようにファイアウォールを構成します。 InboundConnectionsRequired と InboundConnectionsBlocked の両方が true の場合、InboundConnectionsBlocked は優先されます。|
+|securedPacketExemptionAllowed|Boolean|StealthModeBlocked が true に設定されている場合でも、そのトラフィックの一方的なネットワークトラフィックにホストコンピューターが応答できるように、ファイアウォールを構成します。 SecuredPacketExemptionBlocked と SecuredPacketExemptionAllowed の両方が true の場合、SecuredPacketExemptionAllowed は優先されます。|
+|policyRulesFromGroupPolicyMerged|Boolean|ファイアウォールが、ローカルストアの規則を無視するのではなく、グループポリシーから、ローカルストアからのものと一緒に、ファイアウォールの規則ポリシーをマージするように構成します。 PolicyRulesFromGroupPolicyNotMerged と Policypolicyfromgrouppolicyマージの両方が true の場合、Policypolicyfromgrouppolicy統合が優先されます。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

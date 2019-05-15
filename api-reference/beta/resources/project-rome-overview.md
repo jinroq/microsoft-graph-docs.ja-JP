@@ -2,12 +2,12 @@
 title: 'Microsoft Graph API を使用してプロジェクトローマを操作する '
 description: 'プロジェクトローマは、アプリ開発者が強力なクロスデバイスエクスペリエンスを構築できるようにするプラットフォームを構築するための Microsoft イニシアティブです。 プロジェクトローマは、ユーザーが同じ Microsoft アカウントまたは職場または学校のアカウントでサインインしたときに、さまざまなサービスとクライアントエンドポイントを接続するさまざまな機能を有効にします。 これにより、デバイスではなくユーザーのタスクを中心としたクロスデバイスとクロスプラットフォームのエクスペリエンスを実装できます。 '
 localization_priority: Normal
-ms.openlocfilehash: b247c434c90ff0517d012f23254a70c591cdafd4
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 3b02f6f6efa61495f226ad80649cf3d1ef50f5ac
+ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344068"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34036564"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-project-rome"></a>Microsoft Graph API を使用してプロジェクトローマを操作する 
 
@@ -29,7 +29,7 @@ Microsoft Graph のアクティビティを使用すると、デバイスやプ�
 
 アプリケーションがユーザーアクティビティオブジェクトを公開すると、そのオブジェクトが Windows の新しい UI サーフェスの一部に表示されます。たとえば、Cortana の通知とタイムラインです。 アクティビティオブジェクトでは、リッチメタデータ (アクティビティを正しいコンテキストで表示できるようにする) とリッチビジュアル ([アダプティブカード](https://adaptivecards.io/)マークアップを使用) の両方を指定できます。
 
-ユーザーアクティビティを作成および取得するには、次の Microsoft Graph api を使用できます。
+ユーザーアクティビティを作成および取得するには、次の Microsoft Graph Api を使用できます。
 
 - [アクティビティを作成または置換する](../api/projectrome-put-activity.md)
 - [アクティビティを取得する](../api/projectrome-get-activities.md)
@@ -40,25 +40,17 @@ Microsoft Graph のアクティビティを使用すると、デバイスやプ�
 
 ## <a name="devices"></a>デバイス
 
-Microsoft Graph では、次のように Project ローマ api を使用できます。
+Microsoft Graph では、次のように Project ローマ Api を使用できます。
 
 - ユーザーのデバイスを検出して接続する
 - これらのデバイスでアプリをリモートで起動する
 - これらのデバイス上のアプリにメッセージを送信する
 
-これらの api を使用して、単一のデバイスを超えする豊富なエクスペリエンスを作成するアプリを構築できます。 たとえば、大きい画面で起動するようにアプリを拡張することができます。 または、別のユーザーのデバイス上にあるアプリに対してコンパニオン環境を作成することもできます。
+これらの Api を使用して、単一のデバイスを超えする豊富なエクスペリエンスを作成するアプリを構築できます。 たとえば、大きい画面で起動するようにアプリを拡張することができます。 または、別のユーザーのデバイス上にあるアプリに対してコンパニオン環境を作成することもできます。
 
-次の Microsoft Graph api を使用して、他の Windows デバイスと通信できます。
+次の Microsoft Graph Api を使用して、他の Windows デバイスと通信できます。
 
 - [ユーザーのデバイスを一覧表示する](../api/user-list-devices.md)
 - [デバイスにコマンドを送信する](../api/send-device-command.md)
 - [コマンドの状態を取得する](../api/get-device-command-status.md)
-
-## <a name="notifications"></a>通知
-
-Microsoft Graph の通知 api を使用して、同じユーザーがサインインしている複数のエンドポイント間で通知を配信することができます。 通知を投稿する際に、デバイスのアドレスやチャネルについて心配する代わりに、ユーザーを直接対象にすることができます。 このようにすると、デバイス中心ではなく、人中心の通知シナリオの設計に集中できます。 
-
-生データ通知または直接的な視覚的通知を発行できます。 生データ通知がデバイスエンドポイントに配信されると、[クライアント SDK](https://github.com/Microsoft/project-rome) (Microsoft Graph notification sdk for Windows、iOS 用 Project ローマ sdk) を使用して通知を受信し、管理することができます。 ダイレクトビジュアル通知がデバイスエンドポイントに配信されるときに、プラットフォーム固有のネイティブ通知がユーザーに表示されます。 
-
-詳細については、「[通知の作成と送信](../api/projectrome-notification-post.md)」を参照してください。
 

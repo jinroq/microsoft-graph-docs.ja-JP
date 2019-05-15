@@ -5,12 +5,12 @@ author: jasonjoh
 localization_priority: Priority
 ms.prod: outlook
 ms.date: 01/16/2019
-ms.openlocfilehash: d3c9b2f77b63abf21d8eb538d08bade4f6cfcb32
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 0921cec73d405262470ed30b7f0d61534f6b5ab4
+ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345660"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34036571"
 ---
 # <a name="send-outlook-messages-from-another-user"></a>別のユーザーを差出人として Outlook メッセージを送信する
 
@@ -107,7 +107,7 @@ Microsoft Graph では、これは `sender` プロパティ (実際にメッセ�
 既定の動作は、他の外部の要因によって変わります。
 
 - 管理者は、差出人ユーザーのメールボックスで、[代理人から送信されたメッセージのコピーを必ず　[送信済みアイテム] フォルダーに保存する](/exchange/recipients-in-exchange-online/manage-user-mailboxes/automatically-save-sent-items-in-delegator-s-mailbox)ように更新できます。
-- [メールの送信](/graph/api/user-sendmail?view=graph-rest-1.0)要求で `saveToSentItems` プロパティを `true` に設定することで、アイテムが [送信済みアイテム] フォルダーに保存されないようにできます。 ただし、管理者が "コピーを必ず保存する" 設定の構成を行っている場合、メッセージは引き続き差出人ユーザーの [送信済みアイテム] に保存されます。
+- [メールの送信](/graph/api/user-sendmail?view=graph-rest-1.0)要求で `saveToSentItems` プロパティを `false` に設定することで、アイテムが [送信済みアイテム] フォルダーに保存されないようにできます。 ただし、管理者が "コピーを必ず保存する" 設定の構成を行っている場合、メッセージは引き続き差出人ユーザーの [送信済みアイテム] に保存されます。
 
 ## <a name="examples"></a>例
 

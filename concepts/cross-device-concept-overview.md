@@ -3,12 +3,12 @@ title: Microsoft Graph のクロスデバイス エクスペリエンス
 description: '複数デバイス時代のユーザーは、複数のプラットフォームやフォーム ファクターのデバイスを使いこなしています。朝のニュースをタブレットで読み、通勤電車の中では携帯電話でメールをチェックし、仕事場ではデスクトップ PC を使います。 夜になると、ホーム メディア コンソールで映画を見た後、スマート スピーカーでその日のニュースを確認します。 平均的なユーザーは、一日の中で複数のデバイスやプラットフォームをあれこれ使い分けています。 '
 localization_priority: Priority
 ms.prod: project-rome
-ms.openlocfilehash: 85d48d07f06d189f30c8eba9f7f0876353b3ff25
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 78b1eebb2db66151a0e1ae1fee30f9122510be47
+ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570279"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34036522"
 ---
 # <a name="cross-device-experiences-in-microsoft-graph"></a>Microsoft Graph のクロスデバイス エクスペリエンス
 
@@ -26,11 +26,6 @@ Microsoft では、複数デバイス間での統一的作業を可能にする�
 ### <a name="build-rich-cross-device-experiences-by-using-the-device-relay-api"></a>デバイス リレー API 使用によるクロスデバイスの豊かなエクスペリエンスを構築 
 デバイス リレー API は、Microsoft のさまざまなデバイス (PC、Windows Phone、Xbox、IoT、HoloLens など) に加えて、Android および iOS のデバイスを公開します。 それにより、ユーザーの複数デバイスの間の境界を完全に打ち破ることができます。 ユーザーの環境を利用し、単一デバイスの壁をリアルタイムで越える豊かなエクスペリエンスを作成するようなアプリを構築できます。 
 
-### <a name="engage-users-with-human-centric-cross-device-notifications-preview"></a>人中心のクロスデバイス通知を使用してユーザーと連携する (プレビュー)
-
-通知は、ユーザーに連絡したり、連携したりするための最も効果的かつ直接的な方法の 1 つです。 
-
-Microsoft Graph 通知 API を使用すると、通知をデバイス中心ではなく人中心の方法で伝えることができます。 通知を送信する対象ユーザーを設定し、Microsoft Graph 通知フレームワークによって、そのユーザーがサインインしている各エンドポイントに通知を送信できます。 また、Microsoft Graph 通知 API ではクロスデバイス通知管理も簡単なので、複数のユーザーのデバイス間で通知を同期し、ユーザーにとっての冗長性や中断の量を低減できます。 
 
 ## <a name="api-reference"></a>API リファレンス
 これらのサービスの API リファレンスをお探しですか?
@@ -44,4 +39,3 @@ Microsoft Graph 通知 API を使用すると、通知をデバイス中心で�
 - [Microsoft Graph API を使用してクロスデバイス エクスペリエンスを有効にする](/graph/api/resources/cross-device-reference-overview?view=graph-rest-1.0)
 - [Microsoft Graph のアクティビティ フィード API の詳細情報を確認する](activity-feed-concept-overview.md)
 - [Microsoft Graph のデバイス リレー API の詳細情報を確認する](device-relay-concept-overview.md)
-- [Microsoft Graph の Microsoft Graph 通知 API の詳細情報を確認する](notifications-concept-overview.md)

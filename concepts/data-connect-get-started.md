@@ -4,12 +4,12 @@ description: 'Microsoft Graph データ接続を使用する前に、Office 365 
 author: ajacks-msft
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: 8372653d8904ba247975a649e6709b2206a4d6d3
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 7033a5f9a823977a99a753911600545ef35b0f1c
+ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33599787"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34036515"
 ---
 # <a name="get-started-with-microsoft-graph-data-connect"></a>Microsoft Graph データ接続を始める
 
@@ -20,4 +20,4 @@ Microsoft Graph データ接続を使用する前に、Office 365 管理者は 2
 
 ## <a name="next-steps"></a>次の手順
 
-おめでとうございます。 Azure のツールを使用してインテリジェントなアプリケーションの構築を開始する準備が整いました。 手順の詳細については、[Microsoft Graph データ接続のトレーニング モジュール](https://github.com/microsoftgraph/msgraph-training-dataconnect/blob/master/Lab.md)を参照してください。 Microsoft Graph データ接続の機能の詳細については、[データセット、区域、およびシンク](/concepts/data-connect-datasets.md) または、データ接続がサポートする [ユーザー選択とフィルター処理](/concepts/data-connect-filtering.md)を参照してください。 
+おめでとうございます。 Azure のツールを使用してインテリジェントなアプリケーションの構築を開始する準備が整いました。 手順の詳細については、[Microsoft Graph データ接続のトレーニング モジュール](https://github.com/microsoftgraph/msgraph-training-dataconnect/blob/master/Lab.md)を参照してください。 Microsoft Graph データ接続の機能の詳細については、[データセット、区域、およびシンク](data-connect-datasets.md) または、データ接続がサポートする [ユーザー選択とフィルター処理](data-connect-filtering.md)を参照してください。 

@@ -4,12 +4,12 @@ description: Windows ファイアウォールのプロファイルのポリシ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 753dcfb2ba749463dcaafaf860e2665ce1024138
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 212e51fdc441851a96465d1fb3c3c2db953314a7
+ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944076"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34036494"
 ---
 # <a name="windowsfirewallnetworkprofile-resource-type"></a>windowsFirewallNetworkProfile リソース タイプ
 
@@ -37,8 +37,8 @@ Windows ファイアウォールのプロファイルのポリシーです。
 |globalPortRulesFromGroupPolicyNotMerged|Boolean|ローカルストアの規則を無視するのではなく、グローバルポートの規則をローカルストアからのグループポリシーにマージしないように、ファイアウォールを構成します。 GlobalPortRulesFromGroupPolicyNotMerged と Globalportrulesfromgrouppolicyマージの両方が true の場合、Globalportrulesfromgrouppolicyマージが優先されます。|
 |connectionSecurityRulesFromGroupPolicyMerged|Boolean|ローカルストアの規則を無視するのではなく、グループポリシーから接続セキュリティの規則をローカルストアからマージするようにファイアウォールを構成します。 ConnectionSecurityRulesFromGroupPolicyNotMerged と Connectionsecuritypolicyfromgrouppolicyマージの両方が true の場合、Connectionsecuritypolicyfromgrouppolicyマージが優先されます。|
 |Connectionsecurityルール Fromgrouppolicynotマージ|Boolean|ローカルストアの規則を無視するのではなく、グループポリシーから接続セキュリティの規則をローカルストアから除外することができないように、ファイアウォールを構成します。 ConnectionSecurityRulesFromGroupPolicyNotMerged と Connectionsecuritypolicyfromgrouppolicyマージの両方が true の場合、Connectionsecuritypolicyfromgrouppolicyマージが優先されます。|
-|outboundConnectionsRequired|Boolean|既定ですべての送信接続を許可するようにファイアウォールを構成します。 OutboundConnectionsRequired と OutboundConnectionsBlocked の両方が true の場合、OutboundConnectionsBlocked は優先されます。|
-|outboundConnectionsBlocked|Boolean|既定ですべての送信接続をブロックするようにファイアウォールを構成します。 OutboundConnectionsRequired と OutboundConnectionsBlocked の両方が true の場合、OutboundConnectionsBlocked は優先されます。|
+|outboundConnectionsRequired|Boolean|既定ですべての送信接続を許可するようにファイアウォールを構成します。 OutboundConnectionsRequired と OutboundConnectionsBlocked の両方が true の場合、OutboundConnectionsBlocked は優先されます。 この設定は、Windows リリースバージョン1809以降に適用されます。|
+|outboundConnectionsBlocked|Boolean|既定ですべての送信接続をブロックするようにファイアウォールを構成します。 OutboundConnectionsRequired と OutboundConnectionsBlocked の両方が true の場合、OutboundConnectionsBlocked は優先されます。  この設定は、Windows リリースバージョン1809以降に適用されます。|
 |inboundConnectionsRequired|Boolean|既定ですべての受信接続を許可するようにファイアウォールを構成します。 InboundConnectionsRequired と InboundConnectionsBlocked の両方が true の場合、InboundConnectionsBlocked は優先されます。|
 |inboundConnectionsBlocked|Boolean|既定ですべての受信接続をブロックするようにファイアウォールを構成します。 InboundConnectionsRequired と InboundConnectionsBlocked の両方が true の場合、InboundConnectionsBlocked は優先されます。|
 |securedPacketExemptionAllowed|Boolean|StealthModeBlocked が true に設定されている場合でも、そのトラフィックの一方的なネットワークトラフィックにホストコンピューターが応答できるように、ファイアウォールを構成します。 SecuredPacketExemptionBlocked と SecuredPacketExemptionAllowed の両方が true の場合、SecuredPacketExemptionAllowed は優先されます。|
@@ -46,7 +46,7 @@ Windows ファイアウォールのプロファイルのポリシーです。
 |policyRulesFromGroupPolicyMerged|Boolean|ファイアウォールが、ローカルストアの規則を無視するのではなく、グループポリシーから、ローカルストアからのものと一緒に、ファイアウォールの規則ポリシーをマージするように構成します。 PolicyRulesFromGroupPolicyNotMerged と Policypolicyfromgrouppolicyマージの両方が true の場合、Policypolicyfromgrouppolicy統合が優先されます。|
 |Policy規則 Fromgrouppolicynot合併|Boolean|ファイアウォールを構成して、ローカルストアの規則を無視するのではなく、グループポリシーからのファイアウォール規則ポリシーとローカルストアの規則をマージしないようにします。 PolicyRulesFromGroupPolicyNotMerged と Policypolicyfromgrouppolicyマージの両方が true の場合、Policypolicyfromgrouppolicy統合が優先されます。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
