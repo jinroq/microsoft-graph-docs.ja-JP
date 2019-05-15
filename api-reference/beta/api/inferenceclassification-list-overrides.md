@@ -3,10 +3,10 @@ title: リストのオーバーライド
 description: 特定の送信者からのメッセージを常に特定の方法で分類するようにユーザーが設定した優先受信トレイの上書きを取得します。
 localization_priority: Normal
 ms.openlocfilehash: 41dc77f05595f144fbca447af5781e13b526c7d2
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
+ms.lasthandoff: 05/13/2019
 ms.locfileid: "33592163"
 ---
 # <a name="list-overrides"></a>リストのオーバーライド
@@ -33,7 +33,7 @@ GET /users/{id}/inferenceClassification/overrides
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
@@ -86,11 +86,11 @@ Content-type: application/json
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_overrides-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_overrides-Javascript-snippets.md)]
 
 ---

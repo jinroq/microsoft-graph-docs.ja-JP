@@ -4,12 +4,12 @@ description: アプリは、Azure AD に登録する必要があります。 ア
 author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5e59415bc18f25532e306d32383569d368606e2d
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 9f15158351d2ea83565506d04fd4f5bf56b4173b
+ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33599895"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968836"
 ---
 # <a name="register-an-application-with-the-microsoft-identity-platform"></a>Microsoft ID プラットフォームにアプリケーションを登録する
 
@@ -62,11 +62,11 @@ Azure AD によりアプリに一意のアプリケーション (クライアン
 
 ## <a name="next-steps"></a>次の手順
 
-- [アクセス許可と同意](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent.md)に関する詳細を確認するか、「Microsoft Graph [アクセス許可のリファレンス](permissions-reference.md)」を表示します。
+- [アクセス許可と同意](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent)に関する詳細を確認するか、「Microsoft Graph [アクセス許可のリファレンス](permissions-reference.md)」を表示します。
 - アプリケーション登録で他の構成機能 (認証情報やアクセス許可など) を有効にするには、他のテナントのユーザー サインインを有効にし、以下のクイックスタートを参照してください。
-    - [クライアント アプリケーションを構成して Web API にアクセスする](https://docs.microsoft.com/azure/active-directory/develop/quickstart-configure-app-access-web-apis.md)
-    - [アプリケーションを構成して Web API を公開する](https://docs.microsoft.com/azure/active-directory/develop/quickstart-configure-app-expose-web-apis.md)
-    - [アプリケーションがサポートしているアカウントを変更する](https://docs.microsoft.com/azure/active-directory/develop/quickstart-modify-supported-accounts.md)
+    - [クライアント アプリケーションを構成して Web API にアクセスする](https://docs.microsoft.com/azure/active-directory/develop/quickstart-configure-app-access-web-apis)
+    - [アプリケーションを構成して Web API を公開する](https://docs.microsoft.com/azure/active-directory/develop/quickstart-configure-app-expose-web-apis)
+    - [アプリケーションがサポートしているアカウントを変更する](https://docs.microsoft.com/azure/active-directory/develop/quickstart-modify-supported-accounts)
 - [[クイック スタート](https://docs.microsoft.com/azure/active-directory/develop/#quickstarts)] を選択して、迅速にアプリを構築し、トークンの取得、トークンの更新、ユーザーへのサインイン、一部のユーザー情報の表示といった機能を追加します。
-- 登録されたアプリケーションを表す 2 つの Azure AD オブジェクトと、両者間の関係の詳細については、「[アプリケーション オブジェクトとサービス プリンシパル オブジェクト](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals.md)」へ。
-- アプリ開発の際に使用するブランディング ガイドラインの詳細については、「[アプリケーションのブランド化ガイドライン](https://docs.microsoft.com/azure/active-directory/develop/howto-add-branding-in-azure-ad-apps.md)」へ。
+- 登録されたアプリケーションを表す 2 つの Azure AD オブジェクトと、両者間の関係の詳細については、「[アプリケーション オブジェクトとサービス プリンシパル オブジェクト](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals)」へ。
+- アプリ開発の際に使用するブランディング ガイドラインの詳細については、「[アプリケーションのブランド化ガイドライン](https://docs.microsoft.com/azure/active-directory/develop/howto-add-branding-in-azure-ad-apps)」へ。

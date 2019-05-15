@@ -4,12 +4,12 @@ description: workbookPivotTable オブジェクトのプロパティと関係を
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: b98a0999ab7591e2958c490ef4b0cf7122cf1c9d
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 059f4898aa7d5503b141a675b255907d0a2f689f
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636962"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33961160"
 ---
 # <a name="get-workbookpivottable"></a>workbookPivotTable を取得する
 
@@ -74,9 +74,11 @@ Content-length: 46
   "name": "name-value"
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_workbookpivottable-Javascript-snippets.md)]
 
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_workbookpivottable-Cs-snippets.md)]
 
 ---

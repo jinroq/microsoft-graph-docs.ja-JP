@@ -4,12 +4,12 @@ description: 指定した範囲の右にある特定の列数を取得します�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: f86e9bc3a08d8620f2fe55953456387fc6bd473c
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 63dea2ef9993d4b86c97fcec9d6ef097eab3e3d5
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636927"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33961076"
 ---
 # <a name="workbookrange-columnsafter"></a>workbookRange: columnsAfter
 
@@ -84,9 +84,11 @@ Content-length: 157
   "columnIndex": 99
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/workbookrange_columnsafter-Javascript-snippets.md)]
 
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/workbookrange_columnsafter-Cs-snippets.md)]
 
 ---

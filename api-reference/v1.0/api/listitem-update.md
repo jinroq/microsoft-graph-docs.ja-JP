@@ -1,18 +1,18 @@
 ---
 author: JeremyKelley
 ms.author: JeremyKelley
-ms.date: 09/11/2017
-title: SharePoint リスト内のレコードを更新する
+title: リスト アイテムを更新します。
+description: '**[listItem][]** のプロパティを更新します。'
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 811dcd2640b2fe95ab78c1561fea8ea98f3029ff
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: c75f14a5dd118a6735f494fb56e9f0895ce99ba9
+ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33614001"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968738"
 ---
-# <a name="update-an-item-in-a-list"></a>リスト内のアイテムを更新する
+# <a name="update-listitem"></a>リスト アイテムを更新します。
 
 **[listItem][]** のプロパティを更新します。
 
@@ -30,6 +30,12 @@ ms.locfileid: "33614001"
 
 <!-- { "blockType": "ignored" } -->
 
+リストアイテム のプロパティを更新します。
+```http
+PATCH https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}
+```
+
+リスト アイテムの列の値を更新します。
 ```http
 PATCH https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}/fields
 ```
@@ -40,15 +46,18 @@ PATCH https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{it
 |:-----------|:------|:--------------------------------------------------------
 | _if-match_ | etag  | この要求ヘッダーが含まれていて、指定された eTag がアイテムの現在の eTag に一致しない場合には、`412 Precondition Failed` 応答が返され、アイテムは更新されません。
 
-
-## <a name="request-body"></a>要求本文
-
+## <a name="request-body"></a>要求本文 
 要求本文に、更新するフィールドを指定する [fieldValueSet][] の JSON 表記を指定します。
+
+## <a name="response"></a>応答 
+
+成功した場合、このメソッドは更新されたリスト アイテムの応答本文で`201 Created`応答コードと [fieldValueSet][] を返します。
 
 ## <a name="example"></a>例
 
-ここでは、リスト アイテムの Color フィールドと Quantity フィールドを新しい値で更新する例を示します。
-listItem の他の値はすべてそのままです。 
+ここでは、リスト アイテムの **Color** フィールドと **Quantity** フィールドを新しい値で更新する例を示します。 **listItem **の他の値はすべてそのままです。 
+
+### <a name="request"></a>要求 
 
 <!-- { "blockType": "request", "name": "update-listitem", "scopes": "sites.readwrite.all" } -->
 
@@ -62,9 +71,7 @@ Content-Type: application/json
 }
 ```
 
-## <a name="response"></a>応答
-
-成功した場合、このメソッドは更新されたリスト アイテムの応答本文で [fieldValueSet][] を返します。
+### <a name="response"></a>応答
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.fieldValueSet", "truncated": true } -->
 

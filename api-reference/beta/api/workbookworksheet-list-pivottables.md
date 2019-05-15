@@ -4,12 +4,12 @@ description: workbookpivottable オブジェクトの一覧を取得します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 269589a7e0589226bac87ae78b6169ec276b2d8c
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 8bdc3801e182fca5b6708d5e0606330a491f65ce
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33637053"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33961251"
 ---
 # <a name="list-pivottables"></a>pivotTables を一覧表示する
 
@@ -79,9 +79,11 @@ Content-length: 83
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_pivottables-Javascript-snippets.md)]
 
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_pivottables-Cs-snippets.md)]
 
 ---

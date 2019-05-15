@@ -1,16 +1,16 @@
 ---
 author: JeremyKelley
 ms.author: JeremyKelley
-ms.date: 09/10/2017
-title: DriveItem
+title: DriveItem リソース型
+description: アイテムは、OneDrive API での主要なデータ モデルです。 すべてがアイテムです。
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 8dbbf3b673fe7f436b9600366765425011ab129f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2d80c6cf2b121f606938e533a6428e2d85d54033
+ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562749"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968794"
 ---
 # <a name="driveitem-resource-type"></a>driveItem リソース型
 
@@ -21,7 +21,8 @@ ms.locfileid: "32562749"
 * `drive/items/{item-id}` を使用した、**driveItem** 一意識別子による方法
 * `/drive/root:/path/to/file` を使用した、ファイル システム パスによる方法
 
-**DriveItem** リソースには、driveItem の ID および機能に関するデータを提供するプロパティとしてモデル化されたファセットがあります。例:
+**DriveItem** リソースには、driveItem の ID および機能に関するデータを提供するプロパティとしてモデル化されたファセットがあります。
+次に例を示します。
 
 * フォルダーには、[**フォルダー ファセット **][folder] があります。
 * ファイルには、[**ファイル ファセット **][file] があります。
@@ -30,71 +31,7 @@ ms.locfileid: "32562749"
 
 **フォルダー** ファセットを持つアイテムは、アイテムのコンテナーとして機能するため、フォルダーに含まれる **driveItems** のコレクションを指す `children` 参照を持ちます。
 
-## <a name="json-representation"></a>JSON 表記
-
-以下は、**driveItem** リソースの JSON 表記です。
-
-**driveItem** リソースは [**baseItem**][baseItem] から派生し、そのリソースからプロパティを継承します。
-
-<!-- { "blockType": "resource", "@type": "microsoft.graph.driveItem", "@type.aka": "oneDrive.item",
-       "baseType": "microsoft.graph.baseItem",
-       "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video",
-       "location", "deleted", "specialFolder", "photo", "thumbnails", "searchResult", "remoteItem",
-       "shared", "content", "@microsoft.graph.conflictBehavior", "@microsoft.graph.downloadUrl", "@content.sourceUrl",
-       "sharepointIds"],
-       "keyProperty": "id", "openType": true } -->
-
-```json
-{
-  "audio": { "@odata.type": "microsoft.graph.audio" },
-  "content": { "@odata.type": "Edm.Stream" },
-  "cTag": "string (etag)",
-  "deleted": { "@odata.type": "microsoft.graph.deleted"},
-  "description": "string",
-  "file": { "@odata.type": "microsoft.graph.file" },
-  "fileSystemInfo": { "@odata.type": "microsoft.graph.fileSystemInfo" },
-  "folder": { "@odata.type": "microsoft.graph.folder" },
-  "image": { "@odata.type": "microsoft.graph.image" },
-  "location": { "@odata.type": "microsoft.graph.geoCoordinates" },
-  "package": { "@odata.type": "microsoft.graph.package" },
-  "photo": { "@odata.type": "microsoft.graph.photo" },
-  "publication": {"@odata.type": "microsoft.graph.publicationFacet"},
-  "remoteItem": { "@odata.type": "microsoft.graph.remoteItem" },
-  "root": { "@odata.type": "microsoft.graph.root" },
-  "searchResult": { "@odata.type": "microsoft.graph.searchResult" },
-  "shared": { "@odata.type": "microsoft.graph.shared" },
-  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
-  "size": 1024,
-  "specialFolder": { "@odata.type": "microsoft.graph.specialFolder" },
-  "video": { "@odata.type": "microsoft.graph.video" },
-  "webDavUrl": "string",
-
-  /* relationships */
-  "children": [{ "@odata.type": "microsoft.graph.driveItem" }],
-  "createdByUser": { "@odata.type": "microsoft.graph.user" },
-  "lastModifiedByUser": { "@odata.type": "microsoft.graph.user" },
-  "permissions": [ {"@odata.type": "microsoft.graph.permission"} ],
-  "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
-  "thumbnails": [ {"@odata.type": "microsoft.graph.thumbnailSet"}],
-  "versions": [ {"@odata.type": "microsoft.graph.driveItemVersion"}],
-
-  /* inherited from baseItem */
-  "id": "string (identifier)",
-  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "createdDateTime": "String (timestamp)",
-  "eTag": "string",
-  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "lastModifiedDateTime": "String (timestamp)",
-  "name": "string",
-  "parentReference": {"@odata.type": "microsoft.graph.itemReference"},
-  "webUrl": "string",
-
-  /* instance annotations */
-  "@microsoft.graph.conflictBehavior": "string",
-  "@microsoft.graph.downloadUrl": "url",
-  "@microsoft.graph.sourceUrl": "url"
-}
-```
+>**注:** OneDrive for Business または SharePoint のドキュメント ライブラリでは、**driveItem** に[フォルダー][] ファセットがある場合、**cTag** プロパティは返されません。
 
 ## <a name="properties"></a>プロパティ
 
@@ -138,6 +75,8 @@ ms.locfileid: "32562749"
 
 | リレーションシップ       | 型                        | 説明
 |:-------------------|:----------------------------|:--------------------------
+| アクティビティ         | [itemActivity][] コレクション | このアイテムに対して行われた最近のアクティビティのリストです。
+| 分析          | [itemAnalytics][] リソース  | このアイテムについて行われたビュー アクティビティに関する分析。
 | children           | driveItem コレクション        | アイテムの直接の子のアイテム オブジェクトを格納するコレクション。子が含まれるのは、フォルダーを表すアイテムのみです。読み取り専用です。Null 許容型。
 | createdByUser      | [user][]                    | アイテムを作成したユーザーの ID です。 読み取り専用です。
 | lastModifiedByUser | [user][]                    | アイテムを最後に変更したユーザーの ID です。 読み取り専用です。
@@ -162,36 +101,104 @@ ms.locfileid: "32562749"
 URL は短い期間 (1 時間) だけ使用でき、その後は無効になります。
 ユーザーのファイルへのアクセス許可を削除しても、すぐに URL が無効にならない場合があります。
 
+## <a name="json-representation"></a>JSON 表記
+
+以下は、**driveItem** リソースの JSON 表記です。
+
+**driveItem** リソースは [**baseItem**][baseItem] から派生し、そのリソースからプロパティを継承します。
+
+<!-- { "blockType": "resource", "@type": "microsoft.graph.driveItem", "@type.aka": "oneDrive.item",
+       "baseType": "microsoft.graph.baseItem",
+       "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video",
+       "location", "deleted", "specialFolder", "photo", "thumbnails", "searchResult", "remoteItem",
+       "shared", "content", "@microsoft.graph.conflictBehavior", "@microsoft.graph.downloadUrl", "@content.sourceUrl",
+       "sharepointIds"],
+       "keyProperty": "id", "openType": true } -->
+
+```json
+{
+  "audio": { "@odata.type": "microsoft.graph.audio" },
+  "content": { "@odata.type": "Edm.Stream" },
+  "cTag": "string (etag)",
+  "deleted": { "@odata.type": "microsoft.graph.deleted"},
+  "description": "string",
+  "file": { "@odata.type": "microsoft.graph.file" },
+  "fileSystemInfo": { "@odata.type": "microsoft.graph.fileSystemInfo" },
+  "folder": { "@odata.type": "microsoft.graph.folder" },
+  "image": { "@odata.type": "microsoft.graph.image" },
+  "location": { "@odata.type": "microsoft.graph.geoCoordinates" },
+  "package": { "@odata.type": "microsoft.graph.package" },
+  "photo": { "@odata.type": "microsoft.graph.photo" },
+  "publication": {"@odata.type": "microsoft.graph.publicationFacet"},
+  "remoteItem": { "@odata.type": "microsoft.graph.remoteItem" },
+  "root": { "@odata.type": "microsoft.graph.root" },
+  "searchResult": { "@odata.type": "microsoft.graph.searchResult" },
+  "shared": { "@odata.type": "microsoft.graph.shared" },
+  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
+  "size": 1024,
+  "specialFolder": { "@odata.type": "microsoft.graph.specialFolder" },
+  "video": { "@odata.type": "microsoft.graph.video" },
+  "webDavUrl": "string",
+
+  /* relationships */
+  "activities": [{"@odata.type": "microsoft.graph.itemActivity"}],
+  "analytics": {"@odata.type": "microsoft.graph.itemAnalytics"},
+  "children": [{ "@odata.type": "microsoft.graph.driveItem" }],
+  "createdByUser": { "@odata.type": "microsoft.graph.user" },
+  "lastModifiedByUser": { "@odata.type": "microsoft.graph.user" },
+  "permissions": [ {"@odata.type": "microsoft.graph.permission"} ],
+  "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
+  "thumbnails": [ {"@odata.type": "microsoft.graph.thumbnailSet"}],
+  "versions": [ {"@odata.type": "microsoft.graph.driveItemVersion"}],
+
+  /* inherited from baseItem */
+  "id": "string (identifier)",
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "createdDateTime": "String (timestamp)",
+  "eTag": "string",
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "lastModifiedDateTime": "String (timestamp)",
+  "name": "string",
+  "parentReference": {"@odata.type": "microsoft.graph.itemReference"},
+  "webUrl": "string",
+
+  /* instance annotations */
+  "@microsoft.graph.conflictBehavior": "string",
+  "@microsoft.graph.downloadUrl": "url",
+  "@microsoft.graph.sourceUrl": "url"
+}
+```
+
 ## <a name="methods"></a>メソッド
 
-| Method                                                   | REST パス
-|:---------------------------------------------------------|:------------------
-| [アイテムを取得する](../api/driveitem-get.md)                      | `GET /drive/items/{item-id}`
-| [子を一覧表示する](../api/driveitem-list-children.md)       | `GET /drive/items/{item-id}/children`
-| [バージョンを一覧表示する](../api/driveitem-list-versions.md)       | `GET /drive/items/{item-id}/versions`
-| [アイテムを作成する](../api/driveitem-post-children.md)         | `POST /drive/items/{item-id}/children`
-| [アイテムを更新する](../api/driveitem-update.md)                | `PATCH /drive/items/{item-id}`
-| [コンテンツをアップロードする](../api/driveitem-put-content.md)        | `PUT /drive/items/{item-id}/content`
-| [コンテンツをダウンロードする](../api/driveitem-get-content.md)      | `GET /drive/items/{item-id}/content`
-| [特定のファイル形式をダウンロードする][download-format]         | `GET /drive/items/{item-id}/content?format={format}`
-| [アイテムを削除する](../api/driveitem-delete.md)                | `DELETE /drive/items/{item-id}`
-| [アイテムを移動する](../api/driveitem-move.md)                    | `PATCH /drive/items/{item-id}`
-| [アイテムをコピーする](../api/driveitem-copy.md)                    | `POST /drive/items/{item-id}/copy`
-| [アイテムを検索する](../api/driveitem-search.md)               | `GET /drive/items/{item-id}/search(q='text')`
-| [ドライブ内の変更内容を一覧表示する](../api/driveitem-delta.md)     | `GET /drive/root/delta`
-| [サムネイルを一覧表示する](../api/driveitem-list-thumbnails.md)   | `GET /drive/items/{item-id}/thumbnails`
-| [共有リンクを作成する](../api/driveitem-createlink.md)    | `POST /drive/items/{item-id}/createLink`
-| [アクセス許可を追加する](../api/driveitem-invite.md)            | `POST /drive/items/{item-id}/invite`
-| [アクセス許可を一覧表示する](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
-| [アクセス許可を削除する](../api/permission-delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}`
-| [WebSocket チャネルを取得する][getWebSocket]                    | `GET /drive/root/subscriptions/socketIo`
-| [アイテムをプレビューする][item-preview]                             | `POST /drive/items/{item-id}/preview`
+| メソッド                                                   | 戻り値の型 | 説明
+|:---------------------------------------------------------|:------------|:------------
+| [アイテムを取得する](../api/driveitem-get.md)                      | driveItem |ドライブ 内の DriveItem 用のメタデータを取得します。
+| [分析を取得する][]                                        | [itemAnalytics][] | このリソースの分析を取得します。 
+| [間隔によりアクティビティを取得する][]                           | [itemActivityStat][] | 指定した時間間隔内に itemActivityStats のコレクションを取得します。
+| [子を一覧表示する](../api/driveitem-list-children.md)       | DriveItem のコレクション | DriveItem の子リレーションシップで DriveItems のコレクションを返します。
+| [バージョンを一覧表示する](../api/driveitem-list-versions.md)       | [DriveItemVersion][] のコレクション | 現在のユーザーのドライブ内のファイルのバージョンを取得します。
+| [アイテムを作成する](../api/driveitem-post-children.md)         | driveItem | 指定したドライブで driveItem を作成します。
+| [アイテムを更新する](../api/driveitem-update.md)                | driveItem | ドライブで driveItem を更新します。
+| [コンテンツをアップロードする](../api/driveitem-put-content.md)        | driveItem | コンテンツを driveItem にアップロードします。
+| [コンテンツをダウンロードする](../api/driveitem-get-content.md)      | ダウンロード URL | DriveItem のコンテンツをダウンロードします。
+| [特定のファイル形式をダウンロードする][download-format]         | ダウンロード URL | DriveItem のコンテンツを特定の形式でダウンロードします。
+| [アイテムを削除する](../api/driveitem-delete.md)                | コンテンツはありません | DriveItem を削除します。
+| [アイテムを移動する](../api/driveitem-move.md)                    | driveItem | DriveItem を新しい親アイテムに移動します。
+| [アイテムをコピーする](../api/driveitem-copy.md)                    | コピーの[進行状況を監視する](/graph/long-running-actions-overview)方法についての詳細 | DriveItem (すべての子を含む) のコピーを作成します。
+| [アイテムを検索する](../api/driveitem-search.md)               | DriveItem のコレクション | クエリと一致するアイテムを対象にアイテムの階層を検索します。
+| [ドライブ内の変更内容を一覧表示する](../api/driveitem-delta.md)     | 差分リンク | ドライブでのすべての変更を一覧表示します。
+| [サムネイルを一覧表示する](../api/driveitem-list-thumbnails.md)   | DriveItem のコレクション | DriveItems とそれらのサムネイルを一覧表示します。 
+| [共有リンクを作成する](../api/driveitem-createlink.md)    | 共有リンク | DriveItem を共有するためのリンクを作成します。
+| [アクセス許可を追加する](../api/driveitem-invite.md)            | [アクセス許可][]のコレクション | 共有の招待をユーザーに送信します。
+| [アクセス許可を一覧表示する](../api/driveitem-list-permissions.md) | [アクセス許可][]のコレクション | DriveItem に対するアクセス許可のコレクションを取得します。
+| [アクセス許可を削除する](../api/permission-delete.md)         | コンテンツはありません | DriveItem からアクセス許可を削除します。
+| [WebSocket チャネルを取得する][getWebSocket]                    | [subscription][] | Socket.io を使用して、ドライブのリアルタイムに近い変更通知を受信します。
+| [アイテムをプレビューする][item-preview]                             | JSON オブジェクト | 一時的なプレビューを表示するために、アイテムの、有効期限が短い埋め込み可能な URL を取得します。
 
 [item-preview]: ../api/driveitem-preview.md
-
-## <a name="remarks"></a>注釈
-
-OneDrive for Business または SharePoint のドキュメント ライブラリでは、**driveItem** に[フォルダー][] ファセットがある場合、**cTag** プロパティは返されません。
+[分析を取得する]: ../api/itemanalytics-get.md
+[間隔によりアクティビティを取得する]: ../api/itemactivitystat-getactivitybyinterval.md
 
 [audio]: audio.md
 [baseItem]: baseitem.md
@@ -206,6 +213,8 @@ OneDrive for Business または SharePoint のドキュメント ライブラリ
 [getWebSocket]: ../api/driveitem-subscriptions-socketio.md
 [identitySet]: identityset.md
 [image]: image.md
+[itemActivity]: itemactivity.md
+[itemAnalytics]: itemanalytics.md
 [itemReference]: itemreference.md
 [geoCoordinates]: geocoordinates.md
 [listItem]: listitem.md
@@ -224,6 +233,11 @@ OneDrive for Business または SharePoint のドキュメント ライブラリ
 [workbook]: workbook.md
 [ユーザー]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/users
 [publicationFacet]: publicationfacet.md
+
+[DriveItemVersion]: driveitemversion.md
+[permission]: permission.md
+[subscription]: subscription.md
+[itemActivityStat]: itemactivitystat.md
 
 <!-- {
   "type": "#page.annotation",

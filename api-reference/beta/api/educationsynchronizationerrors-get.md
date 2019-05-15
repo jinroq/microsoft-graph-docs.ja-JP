@@ -4,12 +4,12 @@ description: '検証中に生成されたエラー、またはテナント内の
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 322eeb409584020dfa15c18be4c264cacd8a23cb
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 84c0139e950274de6d8d625d00787784b52661bb
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33587180"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33960873"
 ---
 # <a name="get-educationsynchronizationerrors"></a>EducationSynchronizationErrors を取得する
 
@@ -33,7 +33,7 @@ GET /synchronizationProfiles/{id}/errors
 このメソッドは、応答をカスタマイズするために、次の[OData クエリパラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートしています。 $filter、$orderby、$top、$skip、$count。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。  |
 
@@ -56,7 +56,7 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/erro
 ##### <a name="response"></a>応答
 応答の例を次に示します。 
 
->**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
+>**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 
 <!-- {
   "blockType": "response",
@@ -99,9 +99,11 @@ Content-length: 1568
     ]
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_educationSynchronizationProfile_error-Javascript-snippets.md)]
 
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_educationSynchronizationProfile_error-Cs-snippets.md)]
 
 ---

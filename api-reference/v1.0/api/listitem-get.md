@@ -1,18 +1,18 @@
 ---
 author: JeremyKelley
 ms.author: JeremyKelley
-ms.date: 09/11/2017
-title: SharePoint リストからエントリを取得する
+title: listItem を取得
+description: SharePoint リスト内の item のメタデータを返します。
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: c46fed1c2da3ac246212dbbcdfeb35479699efe6
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: a498947002247541bebf4fc7cd24147a0ca0df7a
+ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33613072"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968787"
 ---
-# <a name="get-an-item-in-a-list"></a>リスト内のアイテムを取得する
+# <a name="get-listitem"></a>listItem を取得
 
 [list][] 内の [item][] のメタデータを返します。
 
@@ -31,15 +31,38 @@ ms.locfileid: "33613072"
 
 ## <a name="http-request"></a>HTTP 要求
 
+listItemを取得
 ```http
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}
+```
+リスト アイテムの列の値を取得します。
+```http
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}?expand=fields
+```
+リスト アイテムの特定の列の値を取得します。
+```http
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}?expand=fields(select=Column1,Column2)
 ```
+## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
+このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)をサポートします。
+
+## <a name="request-headers"></a>要求ヘッダー
+
+| 名前      |説明|
+|:----------|:----------|
+| Authorization  | ベアラー {code}。 必須です。|
+
+## <a name="request-body"></a>要求本文
+
+このメソッドには、要求本文を指定しません。
+
+## <a name="response"></a>応答 
+
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [item][] を返します。
 
 ## <a name="example"></a>例
 
-##### <a name="request"></a>要求
+### <a name="request"></a>要求
 
 <!-- { "blockType": "request", "name": "get-list-item", "scopes": "sites.read.all" } -->
 
@@ -47,7 +70,7 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}?expand=fields
 ```
 
-##### <a name="response"></a>応答
+### <a name="response"></a>応答
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.listItem", "truncated": true } -->
 
@@ -64,6 +87,7 @@ Content-type: application/json
     }
 }
 ```
+
 #### <a name="sdk-sample-code"></a>SDK サンプル コード
 # <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get-list-item-Cs-snippets.md)]

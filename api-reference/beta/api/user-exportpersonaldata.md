@@ -4,12 +4,12 @@ description: 組織のユーザーのデータをエクスポートするため�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: adc6e35609b27a8353d24585b5542d3e9a704bd6
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 776602eb600ca74feff61c595092e1e2518b49a1
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33609594"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33961300"
 ---
 # <a name="user-exportpersonaldata"></a>ユーザー: Exportpersonal Data
 
@@ -21,7 +21,7 @@ ms.locfileid: "33609594"
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) |  すべてのユーザーとユーザーの. すべてをエクスポートします。  |
-|委任 (個人用 Microsoft アカウント) |  該当なし  |
+|委任 (個人用 Microsoft アカウント) |  該当しない  |
 |アプリケーション | すべてのユーザーとユーザーの. すべてをエクスポートします。 |
 
 >**注:** エクスポートは、委任されたアクセス許可を使用する場合にのみ、会社の管理者が実行できます。
@@ -70,22 +70,22 @@ Content-length: 48
 ```
 ##### <a name="response"></a>応答
 
-```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/user_exportpersonaldata-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/user_exportpersonaldata-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+```http
 {
   Location: https://graph.microsoft.com/beta/dataPolicyOperations/d007e3da-cd9b-4b02-8d66-422403c53e3f
   Retry-After: 60
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/user_exportpersonaldata-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/user_exportpersonaldata-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- {
   "blockType": "response",

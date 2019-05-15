@@ -3102,6 +3102,8 @@ items:
                 href: api/driveitem-list-versions.md
               - name: プレビュー項目
                 href: api/driveitem-preview.md
+              - name: アイテム分析を取得する
+                href: api/itemanalytics-get.md
           - name: アクセス許可
             href: resources/permission.md
             items:
@@ -3852,6 +3854,8 @@ items:
                 href: api/list-list.md
               - name: サブサイトを一覧表示する
                 href: api/site-list-subsites.md
+              - name: アイテム分析を取得する
+                href: api/itemanalytics-get.md
           - name: リスト
             href: resources/list.md
             items:
@@ -3874,6 +3878,8 @@ items:
                 href: api/listitem-delete.md
               - name: バージョンを一覧表示する
                 href: api/listitem-list-versions.md
+              - name: アイテム分析を取得する
+                href: api/itemanalytics-get.md
       - name: 'ソーシャル インテリジェンス: 連絡先'
         items:
           - name: 概要

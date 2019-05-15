@@ -4,12 +4,12 @@ description: 識別子に基づいて、テナント内の学校データ同期�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 5f786bf9c36b09aae4a26d3de317d09d1376fb35
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 347efaf51f258535c1217252f4df5a22091fa7ce
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33587040"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33960866"
 ---
 # <a name="delete-a-educationsynchronizationprofile"></a>EducationSynchronizationProfile を削除する
 
@@ -31,7 +31,7 @@ DELETE /synchronizationProfiles/{id}
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。  |
 |委任 (個人 Microsoft アカウント|サポートされていません。|
@@ -62,9 +62,11 @@ DELETE https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}
 ```http
 HTTP/1.1 202 Accepted
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_synchronizationProfile-Javascript-snippets.md)]
 
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_synchronizationProfile-Cs-snippets.md)]
 
 ---
