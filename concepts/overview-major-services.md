@@ -3,12 +3,12 @@ title: Microsoft Graph の主要なサービスおよび機能
 description: 'Microsoft Graph では、REST API とクライアント ライブラリを使用して、非常に優れた Office 365、Windows 10、および Microsoft 365 の Enterprise Mobility and Security のサービスを統合することができます。 さらに、ユーザーの生産性、創造性、チーム共同作業を促進し、ビジネス リソースおよびユーザー データを保護することのできるセキュリティおよびソーシャル インテリジェンスが提供されます。 '
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 98981cddb22fae69bd6b50e05d7caebc4c5c0d8a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8908b53754f9a8775cb1f29e3e86ec04f3abacff
+ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32557949"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34036557"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Microsoft Graph の主要なサービスおよび機能
 
@@ -96,6 +96,12 @@ Microsoft Graph の一部のサービスは、そこで初めて登場したサ�
 |機能     |サポートするサービス  |説明 |詳細情報 |
 |:-----------|:--------------------|:-----------|:----------------|
 | クロスデバイス エクスペリエンス | アクティビティ フィード、デバイスの中継 | 単一デバイスを超えて、種類やプラットフォームに関係なくデバイスからデバイスへユーザーと共に移行できるアプリ エクスペリエンスを可能にします。 | [クロスデバイス エクスペリエンスの概要](cross-device-concept-overview.md) |
+
+## <a name="user-notifications"></a>ユーザー通知
+
+|機能     |サポートするサービス  |説明 |詳細情報 |
+|:-----------|:--------------------|:-----------|:----------------|
+| ユーザー通知 | ユーザー通知 | アプリ エクスペリエンスを有効にし、ユーザーベースの展開、ユニバーサル無視、通知履歴へのアクセスを含む、ユーザー指向でクロスプラットフォームの通知エクスペリエンスを作成します。 | [クロスデバイス エクスペリエンスの概要](notifications-concept-overview.md) |
 
 
 ## <a name="usage-reports"></a>利用状況レポート

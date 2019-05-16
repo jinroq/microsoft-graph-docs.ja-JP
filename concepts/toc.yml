@@ -81,8 +81,6 @@ items:
             href: activity-feed-concept-overview.md
           - name: デバイスのリレー (プレビュー)
             href: device-relay-concept-overview.md
-          - name: 通知 (プレビュー)
-            href: notifications-concept-overview.md
           - name: デバイス間のアプリを構築する
             href: cross-device-app-configuration.md
       - name: 顧客の予約 (プレビュー)
@@ -166,6 +164,28 @@ items:
             href: onenote-branding.md
           - name: エラー コード
             href: onenote-error-codes.md
+      - name: 通知 (プレビュー)
+        displayName: Notifications
+        items:
+          - name: 概要
+            href: notifications-concept-overview.md
+          - name: 作業の開始
+            displayName: Notifications
+            items:
+              - name: 概要
+                href: notifications-integration-e2e-overview.md
+              - name: アプリケーションの登録
+                href: notifications-integration-app-registration.md
+              - name: デバイス間のオンボーディング
+                href: notifications-integration-cross-device-experiences-onboarding.md
+              - name: アプリケーション サーバーの統合
+                href: notifications-integrating-app-server.md
+              - name: Windows アプリケーションの統合
+                href: notifications-integrating-with-windows.md
+              - name: Android アプリケーションの統合
+                href: notifications-integrating-with-android.md
+              - name: IOS アプリケーションの統合
+                href: notifications-integrating-with-ios.md
       - name: 個人用連絡先
         displayName: 'Outlook, Outlook contacts, Outlook contact, People'
         items:
