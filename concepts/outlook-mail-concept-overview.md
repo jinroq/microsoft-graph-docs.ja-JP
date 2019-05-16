@@ -4,16 +4,18 @@ description: Outlook は、Office 365 のメッセージング通信ハブです
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 86f7506ec06325657465a5762261a061bf0ad575
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 14debcfb59b062e0c29b5024d32e6a5dcc4e7394
+ms.sourcegitcommit: 126b15ac37fb199c7b1001f91e70d8463a18c280
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33440067"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34083240"
 ---
 # <a name="outlook-mail-api-overview"></a>Outlook メール API の概要
 
 Outlook は、Office 365 のメッセージング通信ハブです。 これにより、連絡先の管理、会議のスケジュール管理、組織内のユーザーに関する情報の検索、オンライン会話の開始、ファイルの共有、およびグループでの共同作業をすることができます。
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/L-gm25wusIQ]
 
 ## <a name="why-integrate-with-outlook-mail"></a>Outlook メールと統合する理由
 

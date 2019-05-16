@@ -2,22 +2,22 @@
 title: 'user: findRooms'
 description: 'ユーザーのテナント内、または特定の部屋の一覧内のすべての会議室を取得します。 '
 localization_priority: Priority
-author: dkershaw10
+author: angelgolfer-ms
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5784824fe0e6c174935d12b8b22052709a61f69d
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 9c7d6fb47a52e67ae5dd884d9413726e9b2e3bae
+ms.sourcegitcommit: 126b15ac37fb199c7b1001f91e70d8463a18c280
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33637379"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34083323"
 ---
 # <a name="user-findrooms"></a>user: findRooms
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ユーザーのテナント内、または特定の部屋の一覧内のすべての会議室を取得します。 
+ユーザーのテナントまたは特定の部屋の一覧内にあるすべての会議室を表す [emailAddress](../resources/emailaddress.md)オブジェクトを取得します。 
 
-テナントは会議室を部屋の一覧に整理できます。 それぞれの会議室と部屋の一覧は、[emailAddress](../resources/emailaddress.md) インスタンスによって表されます。 テナント内の[すべての部屋の一覧を取得](user-findroomlists.md)できます。また、テナント内のすべての部屋を取得したり、または特定の部屋の一覧のすべての部屋を取得することができます。 テナント内の最初の 100 部屋まで取得できます。
+テナントは会議室を部屋の一覧に整理できます。 この API 内で、それぞれの会議室と部屋の一覧は、[emailAddress](../resources/emailaddress.md) インスタンスによって表されます。 テナント内の[すべての部屋の一覧を取得](user-findroomlists.md)できます。また、テナント内のすべての部屋を取得したり、または特定の部屋の一覧のすべての部屋を取得することができます。 テナント内の最初の 100 部屋まで取得できます。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -43,8 +43,8 @@ GET /users/<id>/findRooms
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/findRooms(RoomList='{room_list}')
-GET /users/<id>/findRooms(RoomList='{room_list}')
+GET /me/findRooms(RoomList='{room_list_emailAddress}')
+GET /users/<id>/findRooms(RoomList='{room_list_emailAddress}')
 ```
 
 ## <a name="query-parameters"></a>クエリ パラメーター
@@ -65,14 +65,14 @@ GET /users/<id>/findRooms(RoomList='{room_list}')
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` の応答コードと、応答本文で [emailAddress](../resources/emailaddress.md) コレクション オブジェクトを返します。
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [emailAddress](../resources/emailaddress.md) オブジェクトのコレクションを返します。
 
 
 ## <a name="example"></a>例
 
 ##### <a name="request-1"></a>要求 1
 
-最初の例では、サインインしているユーザーのテナントで定義されている部屋をすべて取得します。
+最初の例では、サインインしているユーザーのテナントで定義されているすべての部屋を表す [emailAddress](../resources/emailaddress.md) オブジェクトを取得します。
 
 <!-- {
   "blockType": "request",
@@ -140,7 +140,7 @@ Content-type: application/json
 
 ##### <a name="request-2"></a>要求 2
 
-2 番目の例では、電子メール アドレス Building2Rooms@contoso.onmicrosoft.com で識別される特定の部屋の一覧の部屋を取得します。
+2 番目の例では、電子メール アドレス Building2Rooms@contoso.onmicrosoft.com で識別される特定の部屋の一覧の部屋を表す [emailAddress](../resources/emailaddress.md) オブジェクトを取得します。
 
 <!-- {
   "blockType": "request",
