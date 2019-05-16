@@ -13,10 +13,10 @@ ms.locfileid: "32569348"
 
 Microsoft Graph を使用すると、[Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/active-directory-whatis) リソースにアクセスして、管理者 (ディレクトリ) ロールの管理や外部ユーザーの組織への招待、[クラウド ソリューション プロバイダー (CSP)](https://partner.microsoft.com/cloud-solution-provider) の場合は顧客のデータの管理などのシナリオを有効にできます。 Microsoft Graph には、たとえばグループやロールにおけるユーザーの推移的なメンバーシップに関する情報を検出するメソッドなど、アプリで使用できるメソッドも用意されています。 
 
-> **注**: Azure AD リソースの一部については、API リファレンスの他のセクションに記載されています。 詳細については、「[ユーザー](users.md)」と「[グループ](group.md)」を参照してください。
+> **注**: 一部の Azure AD リソースの説明は、API リファレンスの他のセクションに記載されています。 詳細については、「[ユーザー](users.md)」と「[グループ](group.md)」を参照してください。
 
 
-## <a name="authorization"></a>Authorization
+## <a name="authorization"></a>承認
  
 Azure AD リソースに Microsoft Graph API を呼び出すには、アプリに適切なアクセス許可が必要です。 Azure AD リソース上で公開されている API の多くには、[_ディレクトリ_ アクセス許可](/graph/permissions-reference#directory-permissions)が必要です。 ディレクトリ アクセス許可は高い権限が与えられており、常に管理者の同意を必要とします。 
 

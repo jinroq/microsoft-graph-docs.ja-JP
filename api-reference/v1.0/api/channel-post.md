@@ -17,7 +17,7 @@ ms.locfileid: "32565458"
 
 要求の本文で指定されているように、Microsoft Team に新しい[チャネル](../resources/channel.md)を作成します。
 
-> **注**: アプリケーションのアクセス許可とこの API には既知の問題があります。 詳細については、「[既知の問題](/graph/known-issues#application-permissions)」のリストを参照してください。
+> **注**: アプリケーションのアクセス許可とこの API には既知の問題があります。 詳細については、「[既知の問題の一覧](/graph/known-issues#application-permissions)」を参照してください。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -47,7 +47,7 @@ POST /teams/{id}/channels
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [チャンネル](../resources/channel.md) オブジェクトを返します。
+成功した場合、このメソッドは `201 Created` 応答コードと [チャンネル](../resources/channel.md) オブジェクトを応答本文で返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
