@@ -1,21 +1,21 @@
 ---
 title: group リソースの種類
-description: Office 365 グループ、Microsoft Teams のチーム、動的なグループ、セキュリティ グループのいずれかの Azure Active Directory (Azure AD) グループを表します。
+description: Office 365 グループ、Microsoft Teams のチーム、またはセキュリティ グループのいずれかの Azure Active Directory (Azure AD) グループを表します。
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: e5f369e1c95e13cb4b4c16aa3317e78c33c5d601
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: cc8d3b724b42827c568377b1f4d83d6c4513414a
+ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340203"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34036508"
 ---
 # <a name="group-resource-type"></a>group リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Office 365 グループ、Microsoft Teams のチーム、動的なグループ、セキュリティ グループのいずれかの Azure Active Directory (Azure AD) グループを表します。[directoryObject](directoryobject.md) から継承します。
+Office 365 グループ、Microsoft Teams のチーム、またはセキュリティ グループのいずれかの Azure Active Directory (Azure AD) グループを表します。[directoryObject](directoryobject.md) から継承します。
 
 パフォーマンス上の理由から、[create](../api/group-post-groups.md) 操作、[get](../api/group-get.md) 操作、および [list](../api/group-list.md) 操作は、既定ではより一般的に使用されるプロパティのみを返します。 これらの_既定_のプロパティは、「[プロパティ](#properties)」セクションに記載されています。 既定では返されないプロパティを取得するには、そのプロパティを `$select` OData クエリ オプションで指定します。 [例](../api/group-get.md#request-2)を参照してください。
 
@@ -110,15 +110,15 @@ Office 365 グループ、Microsoft Teams のチーム、動的なグループ�
 |説明|String|グループに関するオプションの説明。 <br><br>既定で返されます。|
 |displayName|文字列|グループの表示名。 このプロパティは、グループの作成時の必須プロパティであり、更新時にクリアすることはできません。 <br><br>既定で返されます。 $filter および $orderby をサポートします。 |
 |expirationDateTime|DateTimeOffset| グループに設定されている有効期限のタイムスタンプです。 値は変更できず、グループが作成されると自動的に設定されます。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、`'2014-01-01T00:00:00Z'` のようになります。 <br><br>既定で返されます。 読み取り専用です。 |
-|groupTypes|String コレクション| 作成するグループの種類を指定します。 使用可能な値は `Unified` (Office 365 のグループを作成する場合) または `DynamicMembership` (動的なグループを作成する場合) です。  その他のグループの種類 (セキュリティが有効なグループやメールが有効なセキュリティ グループなど) の場合、このプロパティは設定しないでください。 <br><br>既定で返されます。 $filter をサポートします。|
+|groupTypes|String collection| グループの種類とそのメンバーシップを指定します。  <br><br>コレクションに `Unified` が含まれている場合、そのグループは Office 365 グループです。それ以外の場合はセキュリティ グループです。  <br><br>`DynamicMembership`が含まれている場合、グループは動的メンバーシップがあります。それ以外の場合、メンバーシップは静的です。  <br><br>既定で返されます。 $filter をサポートします。|
 |hasMembersWithLicenseErrors|Boolean| このグループの中に、そのグループに基づくライセンス割り当てのライセンス エラーが発生しているメンバーがいるかどうかを示します。 <br><br>このプロパティは GET 操作では返されません。 これを $ filter 引数として使用して、ライセンス エラーが発生しているメンバーがいるグループを取得できます (つまり、このプロパティが **true** であるフィルターです)。 [例](../api/group-list.md#request-2)を参照してください。|
 |id|String|グループの一意の識別子。 <br><br>既定で返されます。 [directoryObject](directoryobject.md) から継承されます。 キー。 null 許容ではありません。 読み取り専用です。|
 |isSubscribedByMail|Boolean|サインインしているユーザーが電子メールの会話を受信するように登録されているかどうかを示します。 既定値は **true** です。 <br><br>$select でのみ返されます。 |
 |licenseProcessingState|String|グループのメンバー全員へのグループ ライセンスの割り当ての状態を示します。 使用可能な値: `QueuedForProcessing`、`ProcessingInProgress`、`ProcessingComplete`。 <br><br>$select でのみ返されます。 読み取り専用です。 |
 |mail|String|グループの SMTP アドレス (たとえば、"Serviceadmins@contoso.onmicrosoft.com")。 <br><br>既定で返されます。 読み取り専用です。 $filter をサポートします。|
-|mailEnabled|Boolean|メールが有効なグループであるかどうかを指定します。**securityEnabled** プロパティも **true** の場合、グループはメールが有効なセキュリティ グループになります。それ以外の場合は、Microsoft Exchange 配布グループになります。 <br><br>既定で返されます。|
+|mailEnabled|ブール値|メールが有効なグループであるかどうかを指定します。 <br><br>既定で返されます。|
 |mailNickname|String|グループのメール エイリアスです (組織内で一意)。 このプロパティは、グループの作成時に指定する必要があります。 <br><br>既定で返されます。 $filter をサポートします。|
-|membershipRule|String|グループが動的なグループの場合 (groupTypes に `DynamicMembership` が含まれる) に、このグループのメンバーを決定する規則です。 メンバーシップの規則の構文の詳細については、「[メンバーシップの規則の構文](https://azure.microsoft.com/ja-JP/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)」を参照してください。 <br><br>既定で返されます。 |
+|membershipRule|String|グループが動的なグループの場合 (groupTypes に `DynamicMembership` が含まれる) に、このグループのメンバーを決定する規則です。 メンバーシップの規則の構文の詳細については、「[メンバーシップの規則の構文](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)」を参照してください。 <br><br>既定で返されます。 |
 |membershipRuleProcessingState|String|動的メンバーシップの処理が進行中か、または一時停止しているかどうかを示します。 使用可能な値は、"On" または "Paused" です。 <br><br>既定で返されます。 |
 |onPremisesLastSyncDateTime|DateTimeOffset|グループがオンプレミスのディレクトリと最後に同期した日時を示します。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、`'2014-01-01T00:00:00Z'` のようになります。 <br><br>既定で返されます。 読み取り専用です。 $filter をサポートします。|
 |onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md) コレクション| Microsoft 同期製品のプロビジョニング中に発生するエラーです。 <br><br>既定で返されます。|
@@ -128,7 +128,7 @@ Office 365 グループ、Microsoft Teams のチーム、動的なグループ�
 |preferredLanguage|String|Office 365 グループで優先する言語。 ISO 639-1 コードに従う必要があります。たとえば "en-US" です。 <br><br>既定で返されます。 |
 |proxyAddresses|String コレクション| 同じグループ メールボックスに送信されるグループのメール アドレスです。 例: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`。 複数値プロパティのフィルター式には **any** 演算子が必要です。 <br><br>既定で返されます。 読み取り専用です。 null 許容ではありません。 $filter をサポートします。 |
 |renewedDateTime|DateTimeOffset| グループの最後の更新時のタイムスタンプです。 これは直接変更することはできず、[更新サービス アクション](../api/grouplifecyclepolicy-renewgroup.md)経由でのみ更新されます。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、`'2014-01-01T00:00:00Z'` のようになります。 <br><br>既定で返されます。 読み取り専用です。|
-|securityEnabled|ブール値|グループがセキュリティ グループであるかどうかを指定します。 **mailEnabled** プロパティも true の場合、グループはメールが有効なセキュリティ グループになります。それ以外の場合は、セキュリティ グループになります。 Office 365 グループの場合、**false** にする必要があります。 <br><br>既定で返されます。 $filter をサポートします。|
+|securityEnabled|ブール値|グループがセキュリティ グループであるかどうかを指定します。 <br><br>既定で返されます。 $filter をサポートします。|
 |theme|String|Office 365 グループの色のテーマを指定します。 可能な値: `Teal`、`Purple`、`Green`、`Blue`、`Pink`、`Orange`、`Red`。 <br><br>既定で返されます。 |
 |unseenConversationsCount|Int32|サインイン ユーザーのグループへの最後のアクセス以降に、新しい投稿が 1 つまたは複数配信された会話のカウントです。 このプロパティは、**unseenCount** と同じです。 <br><br>$select でのみ返されます。|
 |unseenCount|Int32|サインにしているユーザーのグループへの最後のアクセス以降に新しい投稿を受け取った会話の数です。 このプロパティは、**unseenConversationsCount** と同じです。<br><br>$select でのみ返されます。 |
