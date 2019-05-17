@@ -4,12 +4,12 @@ description: グループ オブジェクトのプロパティを更新します
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: be6ecbe4a46757bae88e93e75eb6be86563059e6
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: adb66a65fa3c8612952b990e17922055d4d0984d
+ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33613093"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34036368"
 ---
 # <a name="update-group"></a>グループを更新する
 
@@ -48,17 +48,19 @@ PATCH /groups/{id}
 |allowExternalSenders|Boolean|既定値は **false** です。組織外部のユーザーがグループにメッセージを送信できるかどうかを示します。|
 |autoSubscribeNewMembers|Boolean|既定値は **false** です。グループに追加された新しいメンバーが、電子メールの通知を受信するように自動的にサブスクライブされるかどうかを示します。|
 |description|String|グループに関するオプションの説明。 |
-|displayName|String|グループの表示名。このプロパティは、グループの作成時の必須プロパティであり、更新時にクリアすることはできません。$filter および $orderby をサポートします。|
-|groupTypes|String collection|作成するグループの種類を指定します。使用可能な値は **Unified** (Office 365 のグループを作成する場合) または **DynamicMembership** (動的なグループを作成する場合) です。その他のグループの種類 (セキュリティが有効なグループやメールが有効なセキュリティ グループなど) の場合、このプロパティは設定しないでください。|
-|mailEnabled|Boolean|メールが有効なグループであるかどうかを指定します。**securityEnabled** プロパティも **true** の場合、グループはメールが有効なセキュリティ グループになります。それ以外の場合は、Microsoft Exchange 配布グループになります。|
-|mailNickname|String|グループの電子メール エイリアス。このプロパティは、グループの作成時に指定する必要があります。$filter をサポートします。|
-|securityEnabled|Boolean|グループがセキュリティ グループであるかどうかを指定します。**mailEnabled** プロパティも true の場合、グループはメールが有効なセキュリティ グループになります。それ以外の場合は、セキュリティ グループになります。Office 365 グループの場合、**false** にする必要があります。$filter をサポートします。|
+|displayName|String|グループの表示名。このプロパティは、グループの作成時の必須プロパティであり、更新時にクリアすることはできません。 |
+|groupTypes|String collection|グループの種類とそのメンバーシップを指定します。  <br><br>コレクションに **Unified** が含まれている場合、そのグループは Office 365 グループです。それ以外の場合はセキュリティ グループです。  <br><br>コレクションに **DynamicMembership** が含まれている場合、そのグループには動的メンバーシップがあります。それ以外の場合は、メンバーシップは静的です。 |
+|mailEnabled|ブール値|メールが有効なグループであるかどうかを指定します。|
+|mailNickname|文字列|グループの電子メール エイリアス。 このプロパティは、グループの作成時に指定する必要があります。 |
+|securityEnabled|ブール値|グループがセキュリティ グループであるかどうかを指定します。 |
 |visibility|String|Office 365 グループの表示を指定します。 可能な値は以下のどれかです: **Private**、**Public**または empty (これは **Public**と解釈されます)。|
 
 > **注意:** 
 >
 > - 上記の表に他のプロパティを含めずに、独自のPATCHリクエストで指定して**autoSubscribeNewMembers**を更新することができます。
 > - コア グループの管理とマネージメントに関するグループ API のサブセットのみが、アプリケーションのアクセス許可と委任されたアクセス許可をサポートします。**autoSubscribeNewMembers** の更新を含む他のすべてのグループ API のメンバーは、委任されたアクセス許可のみをサポートします。例については、「[既知の問題](https://developer.microsoft.com/graph/docs/overview/release_notes#group-permission-scopes)」を参照してください。
+> - Microsoft Exchange Server でメールが有効なセキュリティ グループを更新するためのルールが複雑になる場合があります。詳細については、「[Exchange Server でメールが有効なセキュリティ グループを管理する](https://docs.microsoft.com/ja-JP/Exchange/recipients/mail-enabled-security-groups?view=exchserver-2019)」を参照してください。
+
 
 ## <a name="response"></a>応答
 
@@ -66,7 +68,9 @@ PATCH /groups/{id}
 
 ## <a name="example"></a>例
 
-#### <a name="request"></a>要求
+次の例は、グループを作成する方法を示しています。
+
+### <a name="request"></a>要求
 
 要求の例を次に示します。
 <!-- {
@@ -91,7 +95,7 @@ Content-length: 211
 }
 ```
 
-#### <a name="response"></a>応答
+### <a name="response"></a>応答
 
 応答の例を次に示します。
 

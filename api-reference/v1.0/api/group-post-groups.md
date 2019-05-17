@@ -1,21 +1,20 @@
 ---
 title: グループを作成する
-description: この API を使用して、要求本文で指定した新しいグループを作成します。次に示す 3 種類のグループのうちの 1 つを作成できます。
+description: '要求本文で指定した新しいグループを作成します。 '
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: be09edf1004880160f50515e269dfb9c3fe60b55
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: baaf76455fefc6e44bf4995854d99baafb713005
+ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33613715"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34036375"
 ---
 # <a name="create-group"></a>グループを作成する
-この API を使用して、要求本文で指定した新しいグループを作成します。次に示す 3 種類のグループのうちの 1 つを作成できます。
+要求本文で指定した新しいグループを作成します。 次に示す種類のグループを作成できます。
 
 * Office 365 グループ (統合グループ)
-* 動的グループ
 * セキュリティ グループ
 
 この操作は既定で各グループのプロパティのサブセットのみを返します。 これらの既定のプロパティは、「[プロパティ](../resources/group.md#properties)」セクションに記載されています。
@@ -51,39 +50,43 @@ POST /groups
 | プロパティ | 型 | 説明|
 |:---------------|:--------|:----------|
 | displayName | string | アドレス帳に表示するグループの名前。 必須です。 |
-| mailEnabled | boolean | メールが有効なグループの場合は、**true** に設定します。 Office 365 グループを作成する場合は、これを **true** に設定します。 動的グループまたはセキュリティ グループを作成する場合は、これを **false** に設定します。 必須です。 |
+| mailEnabled | boolean | メールが有効なグループの場合は、**true** に設定します。 必須。 |
 | mailNickname | string | グループのメール エイリアス。 必須です。 |
-| securityEnabled | ブール値 | セキュリティが有効なグループの場合は、**true** に設定します。 動的グループまたはセキュリティ グループを作成する場合は、これを **true** に設定します。 Office 365 グループを作成する場合は、これを **false** に設定します。 必須です。 |
+| securityEnabled | ブール値 | Office 365 グループを含む、セキュリティが有効なグループに **true** を設定します。 必須。 |
 | owners | string collection | このプロパティは、作成時のグループの所有者を表します。 省略可能。 |
 | members | string collection | このプロパティは、作成時のグループのメンバーを表します。 省略可能。 |
 
+> 注: Microsoft Azure portal を使用して作成されるグループでは、**securityEnabled** と **mailEnabled** は最初は常に `true` に設定されます。
 
-Office 365 グループまたは動的グループを作成している場合は、以下のように **groupTypes** プロパティを指定します。
+グループの必要に応じて他の書き込み可能なプロパティを指定します。 詳細については、[group](../resources/group.md) リソースのプロパティをご覧ください。
+
+>**注:**  ユーザー コンテキストを使用せず、所有者を指定せずにプログラムで Office 365 グループを作成すると、そのグループは匿名で作成されます。  この操作を行うと、さらに手動操作が行われるまで、関連付けられている SharePoint Online サイトが自動的に作成されない可能性があります。  
 
 ### <a name="grouptypes-options"></a>groupTypes オプション
 
-| グループの種類 | **groupTypes** プロパティ |
-|:--------------|:------------------------|
-| Office 365 (統合グループともいいます)| "Unified" |
-| Dynamic | "DynamicMembership" |
-| Security | 設定しない。 |
+以下に示すように、**groupTypes** プロパティを使用し、グループの種類とグループのメンバーシップを管理します:
 
-
->**注:** ユーザー コンテキストを使用せず、所有者を指定せずにプログラムで Office 365 グループを作成すると、そのグループは匿名で作成されます。  この操作を行うと、さらに手動操作が行われるまで、関連付けられている SharePoint Online サイトが自動的に作成されない可能性があります。  
-
-グループの必要に応じて他の書き込み可能なプロパティを指定します。詳細については、[group](../resources/group.md) リソースのプロパティを参照してください。
+| グループの種類 | 割り当て済みのメンバーシップ | 動的メンバーシップ |
+|:--------------|:------------------------|:---------------|
+| Office 365 (統合グループともいいます)| `["Unified"]` | `["Unified","DynamicMembership"]`
+| Dynamic | `[]` (_null_) | `["DynamicMembership"]`|
 
 ## <a name="response"></a>応答
 成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [group](../resources/group.md) オブジェクトを返します。 応答には、そのグループの既定のプロパティのみが含まれます。
 
-## <a name="example"></a>例
-#### <a name="request-1"></a>要求 1
-最初の要求例では、Office 365 グループを作成しています。
+## <a name="examples"></a>例
+
+### <a name="example-1-create-an-office-365-group"></a>例 1: Office 365 グループを作成する
+
+次の例では、Office 365 グループを作成します。
+
+#### <a name="request"></a>要求
+
 <!-- {
   "blockType": "request",
   "name": "create_group"
 }-->
-```http
+``` http
 POST https://graph.microsoft.com/v1.0/groups
 Content-type: application/json
 Content-length: 244
@@ -100,8 +103,10 @@ Content-length: 244
 }
 ```
 
-#### <a name="response-1"></a>応答 1
+#### <a name="response"></a>応答
+
 応答の例を次に示します。
+
 >**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しからは、すべての既定のプロパティが返されます。
 <!-- {
   "blockType": "response",
@@ -109,7 +114,7 @@ Content-length: 244
   "@odata.type": "microsoft.graph.group",
   "name": "create_group"
 } -->
-```http
+``` http
 HTTP/1.1 201 Created
 Content-type: application/json
 
@@ -153,13 +158,17 @@ Content-type: application/json
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-#### <a name="request-2"></a>要求 2
-2 つ目の要求例では、所有者とメンバーを指定して Office 365 グループを作成しています。
+### <a name="example-2-create-a-group-with-owners-and-members"></a>例 2: 所有者とメンバーを指定してグループを作成する
+
+次の例では、所有者とメンバーを指定して Office 365 グループを作成します。
+
+#### <a name="request"></a>要求
+
 <!-- {
   "blockType": "request",
   "name": "create_prepopulated_group"
 }-->
-```http
+``` http
 POST https://graph.microsoft.com/v1.0/groups
 Content-Type: application/json
 
@@ -182,16 +191,19 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="response-2"></a>応答 2
+#### <a name="response"></a>応答
+
 成功応答の例を次に示します。 既定のプロパティのみが含まれています。 その後は、グループの **owners** ナビゲーション プロパティまたは **members** ナビゲーション プロパティを取得して所有者またはメンバーの詳細を確認できます。 
+
 >**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しからは、すべての既定のプロパティが返されます。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.group",
   "name": "create_prepopulated_group"
 } -->
-```http
+``` http
 HTTP/1.1 201 Created
 Content-type: application/json
 
