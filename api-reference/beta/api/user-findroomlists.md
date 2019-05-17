@@ -1,23 +1,23 @@
 ---
 title: 'user: findRoomLists'
 description: テナントで定義された部屋の一覧を取得します。
-author: dkershaw10
+author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 19bd8c7caca4aa2dc4d30c431d115dede0426e23
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 5e7fcab1baf5fba276058fb7b0c28d41bfba0414
+ms.sourcegitcommit: 126b15ac37fb199c7b1001f91e70d8463a18c280
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33637389"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34083292"
 ---
 # <a name="user-findroomlists"></a>user: findRoomLists
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-テナントで定義された部屋の一覧を取得します。
+[emailAddress](../resources/emailaddress.md) オブジェクトで表されるように、テナントに定義されている会議室一覧を取得します。
 
-テナントは会議室を部屋の一覧に整理できます。 それぞれの会議室と部屋の一覧は、[emailAddress](../resources/emailaddress.md) インスタンスによって表されます。
+テナントは会議室を部屋の一覧に整理できます。 この API 内で、それぞれの会議室と部屋の一覧は、[emailAddress](../resources/emailaddress.md) インスタンスによって表されます。
 テナント内のすべての部屋の一覧を取得できます。また、テナント内の[すべての部屋を取得](user-findrooms.md)したり、または特定の部屋の一覧の[すべての部屋を取得](user-findrooms.md)することができます。
 
 
@@ -51,7 +51,7 @@ GET /users/<id>/findRoomLists
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` の応答コードと、応答本文で [emailAddress](../resources/emailaddress.md) コレクション オブジェクトを返します。
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [emailAddress](../resources/emailaddress.md) オブジェクトのコレクションを返します。
 
 テナントで定義されている一覧が存在しない場合は、空の配列が返されます。
 
