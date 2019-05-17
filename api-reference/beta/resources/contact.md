@@ -4,12 +4,12 @@ description: 連絡先は、連絡を取り合う人や組織に関する情報�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 749ae9ed2e15230bd88949aff00ce07fb2cf4b8b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 6c5c1bf0b04117a4a0ff7761866cf414f008ee7d
+ms.sourcegitcommit: b18ccb24fc79f3abb470cd759e25cdd266fc77c7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341197"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34108988"
 ---
 # <a name="contact-resource-type"></a>contact リソース型
 
@@ -92,14 +92,14 @@ ms.locfileid: "33341197"
 |companyName|String|連絡先の会社の名前。|
 |createdDateTime|DateTimeOffset|連絡先が作成された時刻です。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |department|String|連絡先の部署。|
-|displayName|文字列|連絡先の表示名。 表示名は、[作成](../api/user-post-contacts.md)操作または[更新](../api/contact-update.md)操作で指定できます。 後で他のプロパティを更新すると、自動的に生成された値が、指定した displayName 値に上書きされる可能性があることに注意してください。 既存の値を保持するには、[更新](../api/contact-update.md)操作で常に displayName として含めます。|
+|displayName|文字列型 (String)|連絡先の表示名。 [[作成]](../api/user-post-contacts.md) または [[更新]](../api/contact-update.md) の操作で表示名を指定できます。 後で他のプロパティを更新すると、指定した displayName 値が自動的に生成された値に上書きされますので、ご注意ください。 既存の値を保持するには、[[更新]](../api/contact-update.md) 操作で必ずその値を displayName として含めてください。|
 |emailAddresses|[typedEmailAddress](typedemailaddress.md)コレクション|連絡先のメール アドレス。|
 |fileAs|String|連絡先がファイルされる名前。|
 |flag|[followUpFlag](followupflag.md)|連絡先の状態、開始日、期限、または終了日を示すフラグ値。 |
 |gender |String |連絡先の性別。 |
 |generation|String|連絡先の世代。|
 |givenName|String|連絡先の名。|
-|id|文字列型 (String)|連絡先の一意識別子。読み取り専用。|
+|id|文字列| 連絡先の一意の識別子。 [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)]読み取り専用です。 |
 |imAddresses|String collection|連絡先のインスタント メッセージング (IM) アドレス。|
 |initials|String|連絡先のイニシャル。|
 |jobTitle|String|連絡先の役職。|
@@ -114,21 +114,21 @@ ms.locfileid: "33341197"
 |postalAddresses |[physicalAddress](physicaladdress.md)コレクション |自宅住所や勤務先住所など、連絡先に関連付けられた住所。 |
 |profession|String|連絡先の専門的職業。|
 |spouseName|String|連絡先の配偶者/パートナーの名前。|
-|surname|String|連絡先の姓。|
+|姓|String|連絡先の姓。|
 |title|String|連絡先の肩書。|
 |websites |[website](website.md) コレクション|連絡先に関連付けられた Web サイト。 |
-|weddinganniversary 日 |日付 |連絡先の結婚記念日。 |
+|weddingAnniversary 日 |日付 |連絡先の結婚記念日。 |
 |yomiCompanyName|String|連絡先の会社名の読み仮名。|
-|yomiGivenName|String|連絡先の名 (ファースト ネーム) の読み仮名。|
-|yomiSurname|文字列|連絡先の姓 (ラスト ネーム) の読み仮名。|
+|yomiGivenName|文字列|連絡先の名 (ファースト ネーム) の読み仮名。|
+|yomiSurname|String|連絡先の姓 (ラスト ネーム) の読み仮名。|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |extensions|[extension](extension.md) コレクション|連絡先に対して定義されているオープン拡張機能のコレクション。 Null 許容型。|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) コレクション| 連絡先に定義された、複数値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| 連絡先に定義された、複数値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
 |写真|[photo](profilephoto.md)| 連絡先の写真 (オプション)。連絡先の写真を取得また設定することができます。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) コレクション| 連絡先に定義された、単一値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 連絡先に定義された、単一値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
 
 ## <a name="methods"></a>メソッド
 | メソッド           | 戻り値の型    |説明|
@@ -145,8 +145,8 @@ ms.locfileid: "33341197"
 |[スキーマ拡張機能の値を追加する](/graph/extensibility-schema-groups) || スキーマ拡張機能の定義を作成し、それを使用してカスタマイズされた種類のデータをリソースに追加します。|
 |**拡張プロパティ**| | |
 |[単一値の拡張プロパティを作成する](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[連絡先](contact.md)  |新規または既存の連絡先に、1 つ以上の単一値の拡張プロパティを作成します。   |
-|[単一値の拡張プロパティを持つ連絡先を取得する](../api/singlevaluelegacyextendedproperty-get.md)  | [contact](contact.md) | `$expand` または `$filter` を使用して、単一値の拡張プロパティを含む連絡先を取得します。 |
-|[複数値の拡張プロパティを作成する](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [連絡先](contact.md) | 新規または既存の連絡先に、1 つ以上の複数値の拡張プロパティを作成します。  |
+|[単一値の拡張プロパティを持つ連絡先を取得する](../api/singlevaluelegacyextendedproperty-get.md)  | [連絡先](contact.md) | `$expand` または `$filter` を使用して、単一値の拡張プロパティを含む連絡先を取得します。 |
+|[複数値の拡張プロパティを作成する](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [contact](contact.md) | 新規または既存の連絡先に、1 つ以上の複数値の拡張プロパティを作成します。  |
 |[複数値の拡張プロパティを持つ連絡先を取得する](../api/multivaluelegacyextendedproperty-get.md)  | [contact](contact.md) | `$expand` を使用して、複数値の拡張プロパティを含む連絡先を取得します。 |
 
 ## <a name="see-also"></a>関連項目
