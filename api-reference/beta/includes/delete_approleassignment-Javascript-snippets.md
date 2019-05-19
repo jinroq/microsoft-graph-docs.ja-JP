@@ -7,8 +7,8 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/devices')
+let res = await client.api('/appRoleAssignments/{id}')
     .version('beta')
-    .get();
+    .delete();
 
 ```
