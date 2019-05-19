@@ -7,7 +7,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/drive/items/{item-id}/thumbnails')
+let res = await client.api('/sites/{site-id}/pages')
     .version('beta')
     .get();
 
