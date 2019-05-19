@@ -3,12 +3,12 @@ title: Microsoft Graph の主要なサービスおよび機能
 description: 'Microsoft Graph では、REST API とクライアント ライブラリを使用して、非常に優れた Office 365、Windows 10、および Microsoft 365 の Enterprise Mobility and Security のサービスを統合することができます。 さらに、ユーザーの生産性、創造性、チーム共同作業を促進し、ビジネス リソースおよびユーザー データを保護することのできるセキュリティおよびソーシャル インテリジェンスが提供されます。 '
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 8908b53754f9a8775cb1f29e3e86ec04f3abacff
-ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
+ms.openlocfilehash: c8d7a209744eade704432c2c93561d4e60070ec1
+ms.sourcegitcommit: 126b15ac37fb199c7b1001f91e70d8463a18c280
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34036557"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34083254"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Microsoft Graph の主要なサービスおよび機能
 
@@ -101,7 +101,7 @@ Microsoft Graph の一部のサービスは、そこで初めて登場したサ�
 
 |機能     |サポートするサービス  |説明 |詳細情報 |
 |:-----------|:--------------------|:-----------|:----------------|
-| ユーザー通知 | ユーザー通知 | アプリ エクスペリエンスを有効にし、ユーザーベースの展開、ユニバーサル無視、通知履歴へのアクセスを含む、ユーザー指向でクロスプラットフォームの通知エクスペリエンスを作成します。 | [クロスデバイス エクスペリエンスの概要](notifications-concept-overview.md) |
+| ユーザー通知 | ユーザー通知 | アプリ エクスペリエンスを有効にし、ユーザーベースのファンアウト、ユニバーサル無視、通知履歴へのアクセスを含む、ユーザー中心でクロス プラットフォームの通知エクスペリエンスを構築します。 | [Microsoft Graph の通知を使用したユーザー中心の通知 エクスペリエンスの有効化](notifications-concept-overview.md) |
 
 
 ## <a name="usage-reports"></a>利用状況レポート

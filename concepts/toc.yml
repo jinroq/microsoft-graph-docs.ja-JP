@@ -156,14 +156,16 @@ items:
           - name: ノート シールを使用する
             href: onenote-note-tags.md
           - name: リソース
-          - name: 入力 HTML と出力 HTML
-            href: onenote-input-output-html.md
-          - name: ベスト プラクティス
-            href: onenote-best-practices.md
-          - name: ブランドのガイドライン
-            href: onenote-branding.md
-          - name: エラー コード
-            href: onenote-error-codes.md
+            expanded: true
+            items:
+              - name: 入力 HTML と出力 HTML
+                href: onenote-input-output-html.md
+              - name: ベスト プラクティス
+                href: onenote-best-practices.md
+              - name: ブランドのガイドライン
+                href: onenote-branding.md
+              - name: エラー コード
+                href: onenote-error-codes.md
       - name: 通知 (プレビュー)
         displayName: Notifications
         items:
