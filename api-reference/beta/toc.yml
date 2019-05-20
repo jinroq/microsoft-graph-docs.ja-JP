@@ -35,6 +35,8 @@ items:
         items:
           - name: 概要
             href: /graph/webhooks?toc=./ref/toc.json
+          - name: チュートリアル
+            href: /graph/tutorials/change-notifications
           - name: 欠落している Outlook の通知 (プレビュー)
             href: /graph/webhooks-outlook-authz?toc=./ref/toc.json
       - name: 変更履歴の記録
@@ -863,7 +865,7 @@ items:
             items:
               - name: リスト
                 href: api/bookingcurrency-list.md
-              - name: Get
+              - name: 取得
                 href: api/bookingcurrency-get.md
           - name: 予約可能な顧客
             href: resources/bookingcustomer.md
@@ -4943,7 +4945,7 @@ items:
                 items:
                   - name: リスト
                     href: api/intune-deviceconfig-windowsphone81customconfiguration-list.md
-                  - name: 取得
+                  - name: Get
                     href: api/intune-deviceconfig-windowsphone81customconfiguration-get.md
                   - name: 作成
                     href: api/intune-deviceconfig-windowsphone81customconfiguration-create.md
@@ -4956,7 +4958,7 @@ items:
                 items:
                   - name: リスト
                     href: api/intune-deviceconfig-windowsphone81generalconfiguration-list.md
-                  - name: 取得
+                  - name: Get
                     href: api/intune-deviceconfig-windowsphone81generalconfiguration-get.md
                   - name: 作成
                     href: api/intune-deviceconfig-windowsphone81generalconfiguration-create.md
@@ -4969,7 +4971,7 @@ items:
                 items:
                   - name: リスト
                     href: api/intune-deviceconfig-windowsphone81importedpfxcertificateprofile-list.md
-                  - name: 取得
+                  - name: Get
                     href: api/intune-deviceconfig-windowsphone81importedpfxcertificateprofile-get.md
                   - name: 作成
                     href: api/intune-deviceconfig-windowsphone81importedpfxcertificateprofile-create.md
@@ -4982,7 +4984,7 @@ items:
                 items:
                   - name: リスト
                     href: api/intune-deviceconfig-windowsphone81scepcertificateprofile-list.md
-                  - name: 取得
+                  - name: Get
                     href: api/intune-deviceconfig-windowsphone81scepcertificateprofile-get.md
                   - name: 作成
                     href: api/intune-deviceconfig-windowsphone81scepcertificateprofile-create.md
@@ -4995,7 +4997,7 @@ items:
                 items:
                   - name: リスト
                     href: api/intune-deviceconfig-windowsphone81trustedrootcertificate-list.md
-                  - name: 取得
+                  - name: Get
                     href: api/intune-deviceconfig-windowsphone81trustedrootcertificate-get.md
                   - name: 作成
                     href: api/intune-deviceconfig-windowsphone81trustedrootcertificate-create.md
@@ -5008,7 +5010,7 @@ items:
                 items:
                   - name: リスト
                     href: api/intune-deviceconfig-windowsphone81vpnconfiguration-list.md
-                  - name: 取得
+                  - name: Get
                     href: api/intune-deviceconfig-windowsphone81vpnconfiguration-get.md
                   - name: 作成
                     href: api/intune-deviceconfig-windowsphone81vpnconfiguration-create.md
@@ -5021,7 +5023,7 @@ items:
                 items:
                   - name: リスト
                     href: api/intune-deviceconfig-windowsphoneeasemailprofileconfiguration-list.md
-                  - name: 取得
+                  - name: Get
                     href: api/intune-deviceconfig-windowsphoneeasemailprofileconfiguration-get.md
                   - name: 作成
                     href: api/intune-deviceconfig-windowsphoneeasemailprofileconfiguration-create.md
@@ -5034,7 +5036,7 @@ items:
                 items:
                   - name: 一覧表示
                     href: api/intune-deviceconfig-windowsprivacydataaccesscontrolitem-list.md
-                  - name: 取得
+                  - name: Get
                     href: api/intune-deviceconfig-windowsprivacydataaccesscontrolitem-get.md
                   - name: 作成
                     href: api/intune-deviceconfig-windowsprivacydataaccesscontrolitem-create.md
@@ -5061,7 +5063,7 @@ items:
                 items:
                   - name: リスト
                     href: api/intune-deviceconfig-windowsupdateforbusinessconfiguration-list.md
-                  - name: 取得
+                  - name: Get
                     href: api/intune-deviceconfig-windowsupdateforbusinessconfiguration-get.md
                   - name: 作成
                     href: api/intune-deviceconfig-windowsupdateforbusinessconfiguration-create.md
@@ -5101,7 +5103,7 @@ items:
                 items:
                   - name: リスト
                     href: api/intune-deviceconfig-windowswificonfiguration-list.md
-                  - name: 取得
+                  - name: Get
                     href: api/intune-deviceconfig-windowswificonfiguration-get.md
                   - name: 作成
                     href: api/intune-deviceconfig-windowswificonfiguration-create.md
@@ -5114,7 +5116,7 @@ items:
                 items:
                   - name: リスト
                     href: api/intune-deviceconfig-windowswifienterpriseeapconfiguration-list.md
-                  - name: 取得
+                  - name: Get
                     href: api/intune-deviceconfig-windowswifienterpriseeapconfiguration-get.md
                   - name: 作成
                     href: api/intune-deviceconfig-windowswifienterpriseeapconfiguration-create.md
@@ -5136,7 +5138,7 @@ items:
                 items:
                   - name: リスト
                     href: api/intune-devices-applogcollectionrequest-list.md
-                  - name: 取得
+                  - name: Get
                     href: api/intune-devices-applogcollectionrequest-get.md
                   - name: 作成
                     href: api/intune-devices-applogcollectionrequest-create.md
