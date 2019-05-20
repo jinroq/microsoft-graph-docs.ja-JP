@@ -4,12 +4,12 @@ description: Office 365 グループ、Microsoft Teams のチーム、または�
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: cc8d3b724b42827c568377b1f4d83d6c4513414a
-ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
+ms.openlocfilehash: 41cd5756ffb82a2e32a7e336cc24b839e310187e
+ms.sourcegitcommit: b18ccb24fc79f3abb470cd759e25cdd266fc77c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34036508"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34108967"
 ---
 # <a name="group-resource-type"></a>group リソースの種類
 
@@ -103,6 +103,7 @@ Office 365 グループ、Microsoft Teams のチーム、またはセキュリ�
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |allowExternalSenders|Boolean| 組織外部のユーザーがグループにメッセージを送信できるかどうかを示します。 既定値は **false** です。 <br><br>$select でのみ返されます。 |
+|assignedLabels|[assignedLabel](assignedlabel.md) コレクション|Office 365 グループに関連付けられている機密ラベル ペア (ラベル ID、ラベル名) のリスト。 <br><br>$select でのみ返されます。 読み取り専用です。|
 |assignedLicenses|[assignedLicense](assignedlicense.md) コレクション|グループに割り当てられているライセンス。 <br><br>$select でのみ返されます。 読み取り専用です。|
 |autoSubscribeNewMembers|Boolean|グループに追加された新しいメンバーが、電子メールの通知を受信するように自動的にサブスクライブされるかどうかを示します。 グループの PATCH 要求でこのプロパティを設定できます。グループを作成する最初の POST 要求では設定しないでください。 既定値は **false** です。 <br><br>$select でのみ返されます。|
 |classification|String|グループの分類 (低、中、高程度の企業への影響など) を説明します。このプロパティの有効な値は、[テンプレート定義](directorysettingtemplate.md)に基づいて ClassificationList [設定](directorysetting.md)値を作成することによって定義されます。<br><br>既定で返されます。|
@@ -218,6 +219,7 @@ Office 365 グループ、Microsoft Teams のチーム、またはセキュリ�
 ```json
 {
   "accessType": "string",
+  "assignedLabels": [{"@odata.type": "microsoft.graph.assignedLabel"}],
   "assignedLicenses": [{"@odata.type": "microsoft.graph.assignedLicense"}],
   "allowExternalSenders": false,
   "autoSubscribeNewMembers": true,

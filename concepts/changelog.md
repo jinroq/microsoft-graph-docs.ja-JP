@@ -3,12 +3,12 @@ title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 3dfa65d9c285422351c82a43494aaf524b894685
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+ms.openlocfilehash: 69dfab3d7c7042ce7c5240f0bb3d58f5d604bdf6
+ms.sourcegitcommit: b18ccb24fc79f3abb470cd759e25cdd266fc77c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968843"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34108629"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
@@ -17,6 +17,12 @@ ms.locfileid: "33968843"
 Microsoft Graph API に関する既知の問題の詳細については、「[既知の問題](known-issues.md)」を参照してください。
 
 ## <a name="may-2019"></a>2019 年 5 月
+
+### <a name="directory-apis"></a>ディレクトリ API
+| **変更の種類** | **バージョン** | **説明** |
+| :-------------- | :------------ | :--------------------------------------- |
+| 追加 | ベータ版 | 
+  **assignedlabels**プロパティが[group](https://docs.microsoft.com/ja-JP/graph/api/resources/group?view=graph-rest-beta) エンティティに追加されました。 このプロパティは、グループに関連付けられている機密ラベル ペア (ラベル ID、ラベル名) のリストを表します。
 
 ### <a name="microsoft-intune-apis"></a>Microsoft Intune API
 |変更の種類|バージョン|説明|
@@ -434,7 +440,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | **変更の種類** | **バージョン**   | **説明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 追加 | ベータ版 | 
-  [グループ](https://docs.microsoft.com/en-us/graph/api/group-list-transitivemembers?view=graph-rest-beta)に、[グループの有効期限](https://docs.microsoft.com/ja-JP/azure/active-directory/users-groups-roles/groups-lifecycle)に関する新しいプロパティ `expirationDateTime` を追加しました。|
+  [グループ](https://docs.microsoft.com/ja-JP/graph/api/group-list-transitivemembers?view=graph-rest-beta)に、[グループの有効期限](https://docs.microsoft.com/ja-JP/azure/active-directory/users-groups-roles/groups-lifecycle)に関する新しいプロパティ `expirationDateTime` を追加しました。|
 | 追加 | ベータ版 | 新しいリソースの種類 [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta) を追加します。|
 | 追加 | ベータ版 | [organization](/graph/api/resources/organization?view=graph-rest-beta) リソースに `createdDateTime` プロパティを追加しました。|
 | 追加 | v1.0 | [デバイス](/graph/api/resources/device?view=graph-rest-1.0)のダイレクト [メンバーシップ](/graph/api/device-list-memberOf?view=graph-rest-1.0)を取得する `memberOf` メソッドを追加しました。 このメソッドは、入れ子になったメンバーシップを含むメンバーシップのリストを取得するために追加されました。|
