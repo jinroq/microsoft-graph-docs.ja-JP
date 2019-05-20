@@ -5,12 +5,12 @@ ms.date: 09/11/2017
 title: SharePoint リストを作成する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 576c7b8c5f2f3e7b75e336cf898312a24e712903
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 5b27d1711511e42707671f8acfae3702acb15867
+ms.sourcegitcommit: 7bf9885c8769c5dfe2614a98ba6d7cc297ae564c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33613195"
+ms.lasthandoff: 05/19/2019
+ms.locfileid: "34192766"
 ---
 # <a name="create-a-new-list"></a>新しいリストを作成する
 
@@ -49,7 +49,7 @@ POST /sites/{site-id}/lists
 Content-Type: application/json
 
 {
-  "name": "Books",
+  "displayName": "Books",
   "columns": [
     {
       "name": "Author",
@@ -99,11 +99,11 @@ Content-type: application/json
   }
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/create-list-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create-list-Javascript-snippets.md)]
 
 ---
