@@ -7,7 +7,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/onenote/resources/{id}/content')
-    .get();
+let res = await client.api('/directoryObjects/{id}')
+    .delete();
 
 ```
