@@ -4,18 +4,18 @@ description: '作業アイテムを追跡することができる Outlook アイ
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: d8dd9c4b87ebe43755ae4ad0ce0dae92de5a9d96
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 819f2e30cce8b284e054a172c69bb1940770bca3
+ms.sourcegitcommit: b18ccb24fc79f3abb470cd759e25cdd266fc77c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341710"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34109539"
 ---
 # <a name="outlooktask-resource-type"></a>outlookTask リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-作業アイテムを追跡することができる Outlook アイテム。 
+作業アイテムを追跡することができる Outlook アイテム。
 
 タスクを使用すると、開始日時、期限日時、実際の完了日時、進行状況や状態、定期的かどうか、通知が必要かどうかを追跡できます。
 
@@ -28,7 +28,8 @@ ms.locfileid: "33341710"
 - reminderDateTime
 - startDateTime
 
-既定では、POST、GET、PATCH、および [complete](../api/outlooktask-complete.md) 操作は、REST 応答の日付関連プロパティを UTC で返します。 `Prefer: outlook.timezone` ヘッダーを使用して、応答内のすべての日付関連プロパティを UTC 以外のタイム ゾーンで表すことができます。 次の例では、対応する応答の日付関連プロパティが EST で返されています。
+既定では、POST、GET、PATCH、および [complete](../api/outlooktask-complete.md) 操作は、REST 応答の日付関連プロパティを UTC で返します。
+`Prefer: outlook.timezone` ヘッダーを使用して、応答内のすべての日付関連プロパティを UTC 以外のタイム ゾーンで表すことができます。 次の例では、対応する応答の日付関連プロパティが EST で返されています。
 
 ```
 Prefer: outlook.timezone="Eastern Standard Time"
@@ -62,7 +63,7 @@ Prefer: outlook.timezone="Eastern Standard Time"
 |createdDateTime|DateTimeOffset|タスクが作成された日時。 既定では、UTC 時間です。 要求ヘッダーでカスタム タイム ゾーンを使用できます。 プロパティの値は、ISO 8601 形式を使用します。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、`'2014-01-01T00:00:00Z'` のようになります。|
 |dueDateTime|[dateTimeTimeZone](datetimetimezone.md)|タスクが終了する予定の日時 (指定のタイム ゾーン)。|
 |hasAttachments|Boolean|タスクに添付ファイルが含まれている場合、true に設定します。|
-|id|String|タスクの一意識別子。 読み取り専用です。|
+|id|String| タスクの一意識別子。 [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] 読み取り専用です。 |
 |importance|string|イベントの重要度。 可能な値は、`low`、`normal`、`high` です。|
 |isReminderOn|Boolean|ユーザーにタスクを通知するアラートを設定する場合は、true に設定します。|
 |lastModifiedDateTime|DateTimeOffset|タスクが最後に変更された日時。 既定では、UTC 時間です。 要求ヘッダーでカスタム タイム ゾーンを使用できます。 プロパティの値は、ISO 8601 形式を使って表され、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、`'2014-01-01T00:00:00Z'` のようになります。|
@@ -93,7 +94,7 @@ Prefer: outlook.timezone="Eastern Standard Time"
     "multiValueExtendedProperties"
   ],
   "keyProperty": "id",
-  "baseType":"microsoft.graph.entity",  
+  "baseType":"microsoft.graph.entity",
   "@odata.type": "microsoft.graph.outlookTask"
 }-->
 

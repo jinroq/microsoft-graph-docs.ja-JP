@@ -4,12 +4,12 @@ description: メールボックス フォルダー内のメッセージです。
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: f2dd5ec207ed90ccce830fd80d8bfbbded17bea1
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 0e2a63a8f252b20b42c51605cc9fc3ee787ff210
+ms.sourcegitcommit: b18ccb24fc79f3abb470cd759e25cdd266fc77c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342259"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34110641"
 ---
 # <a name="message-resource-type"></a>メッセージ リソースの種類
 
@@ -88,9 +88,11 @@ ms.locfileid: "33342259"
 }
 
 ```
+
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
-|:---------------|:--------|:----------|
+
+| プロパティ | 型 | 説明 |
+|:---------|:-----|:------------|
 |bccRecipients|[recipient](recipient.md) collection|メッセージの BCC 受信者。|
 |body|[itemBody](itembody.md)|メッセージの本文。 HTML 形式またはテキスト形式にできます。 [メッセージ本文での安全な HTML](/graph/outlook-create-send-messages#reading-messages-with-control-over-the-body-format-returned) に関する情報を参照してください。|
 |bodyPreview|String|メッセージ本文の最初の 255 文字。 テキスト形式です。 メッセージに [mention](mention.md) のインスタンスが含まれている場合、このプロパティには連結されたこれらの mention も含まれています。 |
@@ -103,7 +105,7 @@ ms.locfileid: "33342259"
 |flag|[followUpFlag](followupflag.md)|メッセージのステータス、開始日、期限、または完了日を示すフラグ値。|
 |from|[recipient](recipient.md)|メッセージのメールボックス所有者と送信者。 この値は、実際に使用されているメールボックスに対応している必要があります。 メッセージの[from プロパティと sender プロパティの設定](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties)に関する詳細情報を参照してください。|
 |hasAttachments|ブール値|メッセージに添付ファイルがあるかどうかを示します。このプロパティにはインライン添付ファイルが含まれていません。このためメッセージにインライン添付ファイルのみが含まれている場合、このプロパティは false です。インライン添付ファイルが存在するかどうかを確認するには、**body** プロパティを解析して `<IMG src="cid:image001.jpg@01D26CD8.6C05F070">` などの `src` 属性を探します。 |
-|id|String|メッセージの一意識別子 (メッセージが移動または変更された場合、この値は変更される可能性があることに注意)|
+|id|String| メッセージの一意識別子。 [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] 読み取り専用です。 |
 |importance|String| メッセージの重要度: `Low`、`Normal`、`High`。|
 |inferenceClassification|String| 推定される関連性や重要性、または明示的なオーバーライドに基づく、ユーザーのメッセージの分類。使用可能な値は、`focused` または `other` です。|
 |internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) コレクション | [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) で定義されている一連のメッセージ ヘッダーです。 これには、メッセージが辿った送信者から受信者へのネットワーク パスを示すメッセージ ヘッダーが含まれています。 また、メッセージのアプリ データを保持するカスタム メッセージ ヘッダーも含めることができます。 <br><br> `$select` クエリ オプションの適用時にのみ、返されます。 読み取り専用です。|
@@ -117,7 +119,8 @@ ms.locfileid: "33342259"
 |parentFolderId|String|メッセージの親 mailFolder の一意識別子。|
 |receivedDateTime|DateTimeOffset|メッセージが受信された日時です。|
 |replyTo|[recipient](recipient.md) collection|返信時に使用される電子メール アドレス。|
-|sender|[recipient](recipient.md)|メッセージを生成するために実際に使用されるアカウント。 ほとんどの場合、この値は **from** プロパティと同じです。 [共有メールボックス](https://docs.microsoft.com/ja-JP/exchange/collaboration/shared-mailboxes/shared-mailboxes)からメッセージを送信するとき、またはメッセージを [delegate](https://support.office.com/ja-JP/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926) として送信するときには、このプロパティに異なる値を設定できます。 いずれの場合でも、この値は、実際に使用されているメールボックスに対応している必要があります。 メッセージの[from プロパティと sender プロパティの設定](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties)に関する詳細情報を参照してください。|
+|sender|[recipient](recipient.md)|メッセージを生成するために実際に使用されるアカウント。 ほとんどの場合、この値は **from** プロパティと同じです。 
+  [共有メールボックス](https://docs.microsoft.com/ja-JP/exchange/collaboration/shared-mailboxes/shared-mailboxes)からメッセージを送信するとき、またはメッセージを [delegate](https://support.office.com/ja-JP/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926) として送信するときには、このプロパティに異なる値を設定できます。 いずれの場合でも、この値は、実際に使用されているメールボックスに対応している必要があります。 メッセージの[from プロパティと sender プロパティの設定](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties)に関する詳細情報を参照してください。|
 |sentDateTime|DateTimeOffset|メッセージが送信された日時。|
 |subject|String|メッセージの件名。|
 |toRecipients|[recipient](recipient.md) collection|メッセージの宛先。|
@@ -126,9 +129,9 @@ ms.locfileid: "33342259"
 |unsubscribeEnabled|Boolean|メッセージが登録解除に対して有効になっているかどうかを示します。list-Unsubscribe ヘッダーが rfc-2369 に準拠している場合、その値は True です。|
 |webLink|String|Outlook Web App でメッセージを開く URL。<br><br>URL の末尾に ispopout 引数を付加して、メッセージの表示方法を変更できます。ispopout が存在しない、または 1 に設定されている場合は、メッセージがポップアウト ウィンドウに表示されます。ispopout が 0 に設定されている場合、ブラウザーの Outlook Web App レビュー ウィンドウにメッセージが表示されます。<br><br>Outlook Web App のメールボックスにログインしている場合、ブラウザーでメッセージが開きます。まだブラウザーでログインしていない場合、ログインするように求められます。<br><br>この URL には、iFrame 内からアクセスできます。|
 
-
 ## <a name="relationships"></a>リレーションシップ
-| リレーションシップ | 型   |説明|
+
+| リレーションシップ | 型 |説明|
 |:---------------|:--------|:----------|
 |attachments|[Attachment](attachment.md) コレクション|メッセージの [fileAttachment](fileattachment.md) 添付ファイルと [itemAttachment](itemattachment.md) 添付ファイル。|
 |extensions|[Extension](extension.md) コレクション| メッセージに対して定義されているオープン拡張機能のコレクションです。 Null 許容型。|
@@ -138,8 +141,8 @@ ms.locfileid: "33342259"
 
 ## <a name="methods"></a>メソッド
 
-| メソッド           | 戻り値の型    |説明|
-|:---------------|:--------|:----------|
+| メソッド | 戻り値の型 |説明|
+|:-------|:------------|:----------|
 |[List messages](../api/user-list-messages.md) |[message](message.md) コレクション | サインイン中のユーザーのメールボックス内のすべてのメッセージを取得します (削除済みアイテムと低優先メール フォルダーを含む)。 |
 |[メッセージの作成](../api/user-post-messages.md) | [message](message.md) | 新しいメッセージの下書きを作成します。 |
 |[メッセージの取得](../api/message-get.md) | [message](message.md) |message オブジェクトのプロパティとリレーションシップを読み取ります。|
@@ -172,7 +175,7 @@ ms.locfileid: "33342259"
 
 ## <a name="see-also"></a>関連項目
 
-- [メールボックス設定を取得する](../api/user-get-mailboxsettings.md) 
+- [メールボックス設定を取得する](../api/user-get-mailboxsettings.md)
 - [メールボックス設定を更新する](../api/user-update-mailboxsettings.md)
 - [デルタ クエリを使用して、Microsoft Graph データの変更を追跡する](/graph/delta-query-overview)
 - [フォルダー内のメッセージへの増分変更を取得する](/graph/delta-query-messages)

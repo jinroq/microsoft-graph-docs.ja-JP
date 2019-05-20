@@ -4,12 +4,12 @@ description: 予定表内のイベントです。
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 766212a79d4d58e0775ea2af0363e26fe6487f44
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 852384ec4c1dd18216df7f642a7c958c53897280
+ms.sourcegitcommit: b18ccb24fc79f3abb470cd759e25cdd266fc77c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333904"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34108974"
 ---
 # <a name="event-resource-type"></a>event リソースの種類
 
@@ -83,13 +83,13 @@ ms.locfileid: "33333904"
   "subject": "string",
   "type": "String",
   "webLink": "string",
-  
+
   "attachments": [ { "@odata.type": "microsoft.graph.attachment" } ],
   "calendar": { "@odata.type": "microsoft.graph.calendar" },
   "extensions": [ { "@odata.type": "microsoft.graph.extension" } ],
   "instances": [ { "@odata.type": "microsoft.graph.event" }],
   "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }],
-  "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }]  
+  "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }]
 }
 
 ```
@@ -104,7 +104,7 @@ ms.locfileid: "33333904"
 |createdDateTime|DateTimeOffset|Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |end|[DateTimeTimeZone](datetimetimezone.md)|イベントが終了する日時。|
 |hasAttachments|Boolean|イベントに添付ファイルが含まれている場合、true に設定します。|
-|id|String| 読み取り専用。|
+|id|String| イベントの一意の識別子。 [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] 読み取り専用です。 |
 |importance|String|イベントの重要度。 可能な値は `low`、`normal`、`high` です。|
 |isAllDay|Boolean|イベントが一日中続く場合に、true に設定します。|
 |isCancelled|Boolean|イベントがキャンセルされた場合に、true に設定します。|
