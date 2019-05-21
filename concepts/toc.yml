@@ -38,10 +38,10 @@ items:
             href: /graph/tutorials/php
           - name: Python
             href: /graph/tutorials/python
-          - name: Ruby
-            href: /graph/tutorials/ruby
           - name: React
             href: /graph/tutorials/react
+          - name: Ruby
+            href: /graph/tutorials/ruby
           - name: UWP
             href: /graph/tutorials/uwp
           - name: Xamarin
@@ -291,6 +291,8 @@ items:
             items:
               - name: 概要
                 href: webhooks.md
+              - name: チュートリアル
+                href: /graph/tutorials/change-notifications
               - name: 欠落している Outlook の通知 (プレビュー)
                 href: webhooks-outlook-authz.md
           - name: 変更履歴の記録

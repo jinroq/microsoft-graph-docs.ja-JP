@@ -3,18 +3,21 @@ title: ユーザー データの変更に関する通知の設定
 description: Microsoft Graph の API は、webhook メカニズムを使用して、クライアントに通知を配信します。クライアントは、通知を受信するために自身の URL を構成する Web サービスです。クライアント アプリは通知を使用して、変更時に状態を更新します。
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: 7060a1d6f213a413c453725774da8ffeedb1b277
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3bffab081e8f9520890f6bfe7c690b9258cd3dee
+ms.sourcegitcommit: 7bf9885c8769c5dfe2614a98ba6d7cc297ae564c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575969"
+ms.lasthandoff: 05/19/2019
+ms.locfileid: "34182091"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>ユーザー データの変更に関する通知の設定
 
 Microsoft Graph の API は、webhook メカニズムを使用して、クライアントに通知を配信します。クライアントは、通知を受信するために自身の URL を構成する Web サービスです。クライアント アプリは通知を使用して、変更時に状態を更新します。
 
 Microsoft Graph はサブスクリプション要求を受け入れると、サブスクリプションで指定された URL に通知をプッシュします。 アプリはその後、そのビジネス ロジックに従ってアクションを実行します。 たとえば、詳細データのフェッチ、そのキャッシュやビューの更新などです。
+
+> [!div class="nextstepaction"]
+> [.NET Core を使った webhook アプリの作成](/graph/tutorials/change-notifications)
 
 ## <a name="supported-resources"></a>サポートされているリソース
 
@@ -234,6 +237,7 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 
 GitHub では、次のコード サンプルを利用できます。
 
+- [Microsoft Graph トレーニング モジュール - Microsoft Graph で変更通知と変更履歴を使用する](https://github.com/microsoftgraph/msgraph-training-changenotifications)
 - [Node.js 用 Microsoft Graph Webhooks のサンプル](https://github.com/OfficeDev/Microsoft-Graph-Nodejs-Webhooks)
 - [ASP.NET 用 Microsoft Graph Webhooks のサンプル](https://github.com/OfficeDev/Microsoft-Graph-ASPNET-Webhooks)
 - [WebJobs SDK を使用した Microsoft Graph ユーザー Webhook のサンプル](https://github.com/microsoftgraph/webjobs-webhooks-sample)
@@ -243,8 +247,9 @@ GitHub では、次のコード サンプルを利用できます。
 - [Subscription リソースタイプ](/graph/api/resources/subscription?view=graph-rest-1.0)
 - [サブスクリプションを取得する](/graph/api/subscription-get?view=graph-rest-1.0)
 - [サブスクリプションを作成する](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
+- [変更通知チュートリアル](/graph/tutorials/change-notifications)
 
-[連絡先]: /graph/api/resources/contact?view=graph-rest-1.0
+[contact]: /graph/api/resources/contact?view=graph-rest-1.0
 [会話]: /graph/api/resources/conversation?view=graph-rest-1.0
 [driveItem]: /graph/api/resources/driveitem?view=graph-rest-1.0
 [イベント]: /graph/api/resources/event?view=graph-rest-1.0
