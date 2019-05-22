@@ -4,12 +4,12 @@ description: 新しい Office 365 グループまたはセキュリティ グル
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: 0fc20f2882c57e336c36ca3bc73dad6b549b79de
-ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
+ms.openlocfilehash: c2f80b915d2d813f4d002fec161a14aff6ceba45
+ms.sourcegitcommit: abca7fcefeaa74b50f4600b35d816b626ba08468
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34036347"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "34310868"
 ---
 # <a name="create-group"></a>グループを作成する
 
@@ -61,7 +61,7 @@ POST /groups
 | owners | [directoryObject](../resources/directoryobject.md) コレクション | このプロパティは、作成時のグループの所有者を表します。 省略可能。 |
 | members | [directoryObject](../resources/directoryobject.md) コレクション | このプロパティは、作成時のグループのメンバーを表します。 省略可能。 |
 
-> 注: Microsoft Azure portal を使用して作成されるグループでは、`true`で初期化される **securityEnabled** と**mailEnabled**を常に持ちます。
+> 注: Microsoft Azure portal を使用して作成されるグループでは、**securityEnabled** は最初は常に `true` に設定されます。
 
 **グループ** リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため、`POST` 操作を使用して、リソースの作成時にカスタム プロパティを独自のデータとともにグループに追加することができます。
 

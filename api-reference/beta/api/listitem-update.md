@@ -78,9 +78,9 @@ Content-type: application/json
   "Quantity": 934
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update-listitem-Javascript-snippets.md)]
 
 ---

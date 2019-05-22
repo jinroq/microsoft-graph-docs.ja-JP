@@ -4,12 +4,12 @@ description: アカウント別の OneDrive の使用状況に関する詳細を
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 7096f9eb53105c63b88b5cf66880429d7c1bb186
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: c61edd40172e4f95268efec0fd1ec18aaff56ffb
+ms.sourcegitcommit: afea19508ad74a3583b11b5f7b544c53eafb3740
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33639342"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "34344942"
 ---
 # <a name="reportroot-getonedriveusageaccountdetail"></a>reportRoot: getOneDriveUsageAccountDetail
 
@@ -76,6 +76,7 @@ GET /reports/getOneDriveUsageAccountDetail(date={date_value})
 - アクティブなファイル数
 - 使用済みストレージ (バイト)
 - 割り当て済みストレージ (バイト)
+- 所有者のプリンシパル名
 - レポート期間
 
 ### <a name="json"></a>JSON
@@ -114,11 +115,11 @@ HTTP/1.1 302 Found
 Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/reportroot_getonedriveusageaccountdetail_csv-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/reportroot_getonedriveusageaccountdetail_csv-Javascript-snippets.md)]
 
 ---
@@ -137,7 +138,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Site URL,Owner Display Name,Is Deleted,Last Activity Date,File Count,Active File Count,Storage Used (Byte),Storage Allocated (Byte),Report Period
+Report Refresh Date,Site URL,Owner Display Name,Is Deleted,Last Activity Date,File Count,Active File Count,Storage Used (Byte),Storage Allocated (Byte),Owner Principal Name,Report Period
 ```
 
 ### <a name="json"></a>JSON
@@ -161,7 +162,7 @@ GET https://graph.microsoft.com/beta/reports/getOneDriveUsageAccountDetail(perio
 
 応答の例を次に示します。
 
-> **注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
+> **注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 
 <!-- {
   "blockType": "response",
@@ -181,6 +182,7 @@ Content-Length: 400
       "reportRefreshDate": "2017-09-01", 
       "siteUrl": "siteUrl-value", 
       "ownerDisplayName": "ownerDisplayName-value", 
+      "ownerPrincipalName": "ownerPrincipalName-value", 
       "isDeleted": false, 
       "lastActivityDate": "2017-09-01", 
       "fileCount": 9, 
@@ -192,11 +194,11 @@ Content-Length: 400
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/reportroot_getonedriveusageaccountdetail_json-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/reportroot_getonedriveusageaccountdetail_json-Javascript-snippets.md)]
 
 ---

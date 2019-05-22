@@ -4,12 +4,12 @@ description: '要求本文で指定した新しいグループを作成します
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: baaf76455fefc6e44bf4995854d99baafb713005
-ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
+ms.openlocfilehash: 792fe5389e7796facd013adb787d43b7052d9519
+ms.sourcegitcommit: abca7fcefeaa74b50f4600b35d816b626ba08468
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34036375"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "34310952"
 ---
 # <a name="create-group"></a>グループを作成する
 要求本文で指定した新しいグループを作成します。 次に示す種類のグループを作成できます。
@@ -56,7 +56,7 @@ POST /groups
 | owners | string collection | このプロパティは、作成時のグループの所有者を表します。 省略可能。 |
 | members | string collection | このプロパティは、作成時のグループのメンバーを表します。 省略可能。 |
 
-> 注: Microsoft Azure portal を使用して作成されるグループでは、**securityEnabled** と **mailEnabled** は最初は常に `true` に設定されます。
+> 注: Microsoft Azure portal を使用して作成されるグループでは、**securityEnabled** は最初は常に `true` に設定されます。
 
 グループの必要に応じて他の書き込み可能なプロパティを指定します。 詳細については、[group](../resources/group.md) リソースのプロパティをご覧ください。
 

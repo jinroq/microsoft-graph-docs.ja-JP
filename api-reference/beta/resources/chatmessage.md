@@ -4,12 +4,12 @@ description: チャネルまたはチャット エンティティ内の個別の
 localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4c2631d0ba4883160c443000fa2ecb0e1853523d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 0639fd0b5317abd4814123b500ec0548f78d05ac
+ms.sourcegitcommit: abca7fcefeaa74b50f4600b35d816b626ba08468
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339848"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "34311162"
 ---
 # <a name="chatmessage-resource-type"></a>chatMessage リソースの種類
 
@@ -50,7 +50,7 @@ ms.locfileid: "33339848"
 |importance| string | メッセージの重要度: 通常、高。|
 |reactions| [chatMessageReaction](chatmessagereaction.md) コレクション | このメッセージに対する反応 (例: いいね!)。|
 |locale|string|クライアントに設定されたメッセージのロケール。|
-
+|webUrl|string|Microsoft Teams のチャネルに移動するハイパーリンク。 これは、Microsoft Teams でチャネルを右クリックし、[チームへのリンクを取得] を選択すると作成される URL です。 この URL は不透明 blob として扱われる必要があり、また解析されません。 読み取り専用です。|
 
 ## <a name="json-representation"></a>JSON 表記
 

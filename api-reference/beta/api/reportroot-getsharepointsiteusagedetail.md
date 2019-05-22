@@ -4,12 +4,12 @@ description: SharePoint サイトの使用状況に関する詳細を取得し�
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: aa946a67870fcbdae795ff221268b9c5b016cbd3
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: f7879344ba2af437c38cff043afe01e135dfcd73
+ms.sourcegitcommit: afea19508ad74a3583b11b5f7b544c53eafb3740
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33639314"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "34344921"
 ---
 # <a name="reportroot-getsharepointsiteusagedetail"></a>reportRoot: getSharePointSiteUsageDetail
 
@@ -80,6 +80,7 @@ GET /reports/getSharePointSiteUsageDetail(date={date_value})
 - 使用済みストレージ (バイト)
 - 割り当て済みストレージ (バイト)
 - ルート Web テンプレート
+- 所有者のプリンシパル名
 - レポート期間
 
 ### <a name="json"></a>JSON
@@ -118,11 +119,11 @@ HTTP/1.1 302 Found
 Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/reportroot_getsharepointsiteusagedetail_csv-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/reportroot_getsharepointsiteusagedetail_csv-Javascript-snippets.md)]
 
 ---
@@ -141,7 +142,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Site Id,Site URL,Owner Display Name,Is Deleted,Last Activity Date,File Count,Active File Count,Page View Count,Visited Page Count,Storage Used (Byte),Storage Allocated (Byte),Root Web Template,Report Period
+Report Refresh Date,Site Id,Site URL,Owner Display Name,Is Deleted,Last Activity Date,File Count,Active File Count,Page View Count,Visited Page Count,Storage Used (Byte),Storage Allocated (Byte),Root Web Template,Owner Principal Name,Report Period
 ```
 
 ### <a name="json"></a>JSON
@@ -165,7 +166,7 @@ GET https://graph.microsoft.com/beta/reports/getSharePointSiteUsageDetail(period
 
 応答の例を次に示します。
 
-> **注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
+> **注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 
 <!-- {
   "blockType": "response",
@@ -186,6 +187,7 @@ Content-Length: 484
       "siteId": "siteId-value", 
       "siteUrl": "siteUrl-value", 
       "ownerDisplayName": "ownerDisplayName-value", 
+      "ownerPrincipalName": "ownerPrincipalName-value", 
       "isDeleted": false, 
       "lastActivityDate": "2017-09-01", 
       "fileCount": 170, 
@@ -200,11 +202,11 @@ Content-Length: 484
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/reportroot_getsharepointsiteusagedetail_json-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/reportroot_getsharepointsiteusagedetail_json-Javascript-snippets.md)]
 
 ---

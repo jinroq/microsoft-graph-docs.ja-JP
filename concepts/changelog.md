@@ -3,12 +3,12 @@ title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 69dfab3d7c7042ce7c5240f0bb3d58f5d604bdf6
-ms.sourcegitcommit: b18ccb24fc79f3abb470cd759e25cdd266fc77c7
+ms.openlocfilehash: 887bcdc17dce733509c2a9763c91a65e46e7c644
+ms.sourcegitcommit: abca7fcefeaa74b50f4600b35d816b626ba08468
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34108629"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "34311176"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
@@ -78,6 +78,12 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | **変更の種類** | **バージョン** | **説明**              |
 | :-------------- | :---------- | :--------------------------------------- |
 | 追加        | v1.0       | セキュア スコア API を [セキュリティ API](/graph/api/resources/securescore-api-overview?view=graph-rest-1.0) に追加しました。これには次のリソースと操作が含まれています。<br/>[secureScore](/graph/api/resources/securescore?view=graph-rest-1.0) (および関連するエンティティ)<br/>[secureScores のリスト](/graph/api/securescores-list?view=graph-rest-1.0)<br/>[secureScoreControlProfile](/graph/api/resources/securescorecontrolprofile?view=graph-rest-1.0)<br/>[secureScoreControlProfiles のリスト](/graph/api/securescorecontrolprofiles-list?view=graph-rest-1.0)<br/>[secureScoreControlProfiles の更新](/graph/api/securescorecontrolprofiles-update?view=graph-rest-1.0) |
+
+### <a name="microsoft-teams-apis"></a>Microsoft Teams API
+
+| **変更の種類** | **バージョン**   | **説明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 追加 | ベータ版 | **チャット** に、[webUrl](/graph/api/resources/chatmessage) プロパティを追加しました。|
 
 
 ## <a name="april-2019"></a>2019 年 4 月
