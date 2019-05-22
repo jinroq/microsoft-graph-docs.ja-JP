@@ -8973,6 +8973,10 @@ items:
                 href: api/chat-list-messages.md
               - name: チャット内のメッセージを取得する
                 href: api/chat-get-message.md
+              - name: チャットのメンバーを取得する
+                href: api/conversationmember-list.md
+              - name: チャットで1人のメンバーを取得する
+                href: api/conversationmember-get.md
           - name: アプリ
             href: resources/teamsapp.md
             items:
