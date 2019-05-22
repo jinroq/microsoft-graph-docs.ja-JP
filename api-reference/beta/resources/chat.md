@@ -1,21 +1,21 @@
 ---
 title: チャットリソースの種類
-description: チャットは、1人または複数の参加者間の chatmessages のコレクションです。
+description: チャットは、1人または複数の参加者間の chatMessages のコレクションです。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1091021235a50d3dfa237467e319da9b131b7a72
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 4d0f1009079c4994814385ae8758af6c211f17a2
+ms.sourcegitcommit: afea19508ad74a3583b11b5f7b544c53eafb3740
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339717"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "34344977"
 ---
 # <a name="chat-resource-type"></a>チャットリソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-チャットは、1人または複数の参加者間の[chatmessages](chatmessage.md)のコレクションです。 参加者には、ユーザーまたはアプリがあります。
+チャットは、1人または複数の参加者間の[Chatmessages](chatmessage.md)のコレクションです。 参加者には、ユーザーまたはアプリがあります。
 
 ## <a name="methods"></a>メソッド
 
@@ -23,10 +23,12 @@ ms.locfileid: "33339717"
 |:---------------|:--------|:----------|
 |[チャットの一覧表示](../api/chat-list.md) | [chat](channel.md)コレクション | ユーザーが属するチャットのリストを取得します。|
 |[チャットの取得](../api/chat-get.md) | [チャット](channel.md) | チャットのプロパティと関係を読み取ります。|
-|[チャット内のメッセージを一覧表示する](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | 1:1 またはグループチャットでメッセージを取得します。 |
-|[チャットでメッセージを取得する](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | チャットで1つのメッセージを取得します。 |
+|[チャットメンバーを一覧表示する](../api/conversationmember-list.md) | [conversationmember](conversationmember.md)コレクション | チャット内のすべてのユーザーの一覧を取得します。|
+|[チャットメンバーを取得する](../api/conversationmember-get.md) | [conversationmember](conversationmember.md) | チャットで1人のユーザーを取得します。|
+|[チャット内のメッセージを一覧表示する](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | 1 対 1 またはグループ チャットでのメッセージを取得します。 |
+|[チャット内のメッセージを取得する](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | チャット内の 1 つのメッセージを取得します。 |
 
-## <a name="properties"></a>プロパティ
+## <a name="properties"></a>Properties
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
@@ -38,6 +40,7 @@ ms.locfileid: "33339717"
 ## <a name="relationships"></a>関係
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
+| members | [conversationMember](conversationmember.md)コレクション | チャット内のすべてのユーザーのコレクション。 Null 許容型。 |
 | messages | [chatMessage](chatmessage.md) コレクション | チャット内のすべてのメッセージのコレクション。 Null 許容型。 |
 
 ## <a name="json-representation"></a>JSON 表記

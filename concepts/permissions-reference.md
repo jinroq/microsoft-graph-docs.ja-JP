@@ -3,12 +3,12 @@ title: 'Microsoft Graph のアクセス許可のリファレンス '
 description: Microsoft Graph は、アプリがアクセスするリソース (ユーザー、グループ、メールなど) を制御する詳細なアクセス許可を公開しています。 開発者は、アプリが要求する Microsoft Graph のアクセス許可を決定します。
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: 99f556c3585cb9bdda8756d277fb7a0211e583a3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 0af2e83628b7bf221159dd0d2610feb808242f1f
+ms.sourcegitcommit: abca7fcefeaa74b50f4600b35d816b626ba08468
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33327955"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "34310994"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph のアクセス許可のリファレンス 
 Microsoft Graph は、アプリがアクセスするリソース (ユーザー、グループ、メールなど) を制御する詳細なアクセス許可を公開しています。開発者は、アプリが要求する Microsoft Graph のアクセス許可を決定します。そのアクセス許可に同意するかどうかは、アプリ**に**サインインするときに、ユーザー (場合によっては管理者) が決定します。ユーザーが同意すると、アプリは、そのアプリが必要としているリソースと API にアクセスできるようになります。サインインしているユーザーを必要としないアプリの場合、アクセス許可は、アプリのインストール時またはサインアップ時に管理者が事前に同意できます。 
@@ -16,9 +16,11 @@ Microsoft Graph は、アプリがアクセスするリソース (ユーザー�
 ## <a name="delegated-permissions-application-permissions-and-effective-permissions"></a>委任されたアクセス許可、アプリケーションのアクセス許可、有効なアクセス許可
 Microsoft Graph には、「**委任されたアクセス許可**」と「**アプリケーションのアクセス許可**」という 2 種類のアクセス許可があります。 
 
-- **委任されたアクセス許可**は、サインインしているユーザーが存在するアプリで使用します。これに該当するアプリの場合は、ユーザーまたは管理者がアプリの要求するアクセス許可に同意します。アプリには、Microsoft Graph の呼び出し時に、サインインしているユーザーとして動作するためのアクセス許可が委任されます。一部の委任されたアクセス許可は非管理ユーザーの同意によって付与されますが、高度な特権が付与されるアクセス許可には[管理者の同意](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/active-directory-v2-scopes#using-the-admin-consent-endpoint)が必要になります。  
+- 
+  **委任されたアクセス許可**は、サインインしているユーザーが存在するアプリで使用します。これに該当するアプリの場合は、ユーザーまたは管理者がアプリの要求するアクセス許可に同意します。アプリには、Microsoft Graph の呼び出し時に、サインインしているユーザーとして動作するためのアクセス許可が委任されます。一部の委任されたアクセス許可は非管理ユーザーの同意によって付与されますが、高度な特権が付与されるアクセス許可には[管理者の同意](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/active-directory-v2-scopes#using-the-admin-consent-endpoint)が必要になります。  
 
-- **アプリケーションのアクセス許可**は、サインインしているユーザーが存在しないアプリで使用します。たとえば、バックグラウンド サービスやデーモンなどのアプリです。アプリケーションのアクセス許可は、[管理者のみが同意](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/active-directory-v2-scopes#requesting-consent-for-an-entire-tenant)できます。 
+- 
+  **アプリケーションのアクセス許可**は、サインインしているユーザーが存在しないアプリで使用します。たとえば、バックグラウンド サービスやデーモンなどのアプリです。アプリケーションのアクセス許可は、[管理者のみが同意](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/active-directory-v2-scopes#requesting-consent-for-an-entire-tenant)できます。 
 
 _有効なアクセス許可_は、アプリが Microsoft Graph に要求を出すときに付与されるアクセス許可です。アプリに付与される委任されたアクセス許可とアプリケーションのアクセス許可の相違点について理解することに加えて、Microsoft Graph の呼び出し時の有効なアクセス許可についても理解することが重要です。
 
@@ -253,6 +255,7 @@ _Application.ReadWrite.OwnedBy_ アクセス許可は、_Application.ReadWrite.A
 |   アクセス許可    |  表示文字列   |  説明 | 管理者の同意が必要 | Microsoft アカウントのサポート |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_Chat.Read_ |チャット メッセージを読み取る  |Microsoft Teams で 1 対 1 のメッセージまたグループ チャット メッセージをユーザーに代わってアプリが読み取ることを許可します。 |いいえ | いいえ |
+|_Chat.ReadWrite_ |チャットのメッセージを読んで、新しいメッセージを送信する  |Microsoft Teams での 1 対 1 またはグループ チャット メッセージを、あなたに代わってアプリが送受信することを許可します。 |いいえ | いいえ |
 
 #### <a name="application-permissions"></a>アプリケーションのアクセス許可
 
