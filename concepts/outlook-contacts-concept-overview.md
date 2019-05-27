@@ -4,12 +4,12 @@ description: Outlook の連絡先を利用すると、個人用連絡先のデ�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 241227993a8194d955d0a28f8fcfaf9f946a1e68
-ms.sourcegitcommit: 17eec88891d62b27dcc5d0abdff9fcff2186b31f
+ms.openlocfilehash: 48aa735b3dd2f29f7aef9bdb6f8d433ee4dc25c3
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/23/2019
-ms.locfileid: "34407080"
+ms.locfileid: "34422487"
 ---
 # <a name="outlook-personal-contacts-api-overview"></a>Outlook 個人用連絡先 API の概要
 
@@ -21,25 +21,21 @@ Outlook の連絡先を利用すると、個人用連絡先のデータを保存
 
 Outlook は、何億人という消費者および何千万という組織ユーザーによりメール クライアントとして選ばれています。 Outlook 内の連絡先データのための便利な統合保存場所をユーザーに提供する連絡先は、メッセージングおよび予定管理のための補助機能を提供します。 開発者にとっては、[メール](outlook-mail-concept-overview.md)や[予定表](outlook-calendar-concept-overview.md)の豊富な機能を利用することにより、ユーザーの連絡先データに関するシナリオをさらに充実させることができます。
 
-
 ### <a name="automate-contact-organization"></a>連絡先の整理を自動化
 
 連絡先 API を利用することにより、顧客が Outlook により自分で情報を整理するのに伴って、顧客情報を常に整理された状態に維持することができます:
 
 - 顧客エクスペリエンスに対するのと同じように、[連絡先](/graph/api/resources/contact?view=graph-rest-1.0)インスタンスを作成し、それを [contactFolder](/graph/api/resources/contactfolder?view=graph-rest-1.0) オブジェクトに割り当てることができます。
-- 連絡先 API を利用すれば、カテゴリ連絡先と共に、イベント、メッセージ、タスク、およびグループ投稿を一貫した方法で割り当てることができ、情報の整理や検出のための機能がさらに充実します。 加えて、[カテゴリのユーザー マスター リストを定義](/graph/api/outlookuser-post-mastercategories?view=graph-rest-1.0)することができ、それによりクリエイティブなシナリオがさらに豊富になります。
+- 連絡先 API を利用すると、カテゴリ連絡先と共に、イベント、メッセージ、タスク、およびグループ投稿を一貫した方法で割り当てられるので、組織力の強化と検出の向上ができます。 加えて、[カテゴリのユーザー マスター リストを定義](/graph/api/outlookuser-post-mastercategories?view=graph-rest-1.0)することができ、それによりクリエイティブなシナリオがさらに豊富になります。
 - フォローアップのためのフラグを[連絡先](/graph/api/resources/contact?view=graph-rest-1.0)に設定できます。 (現時点で Microsoft Graph のフラグの機能は[プレビュー段階](versioning-and-support.md#beta-version)です。)
-
 
 ### <a name="share-contact-information"></a>連絡先情報を共有する
 
-連絡先 API を利用することにより、サインイン ユーザー、またはサインイン ユーザーと連絡先を共有または委任しているユーザーの連絡先項目を入手することができます。 たとえば、Garth が連絡先フォルダーを John と共有している場合、または Garth がアクセスを John に委任している場合、John からの[アクセス許可委任](./auth/auth-concepts#microsoft-graph-permissions)により Garth が共有に設定している予定表およびコンテンツにも読み取りアクセスが可能になります。
-
+連絡先 API を利用することにより、サインイン ユーザー、またはサインイン ユーザーと連絡先を共有または委任しているユーザーの連絡先項目を入手することができます。 たとえば、Garth が連絡先フォルダーを John と共有している場合、または Garth がアクセスを John に委任している場合、John からの[アクセス許可委任](auth/auth-concepts.md#microsoft-graph-permissions)により Garth が共有に設定している予定表およびコンテンツにも読み取りアクセスが可能になります。
 
 ### <a name="leverage-people-api-in-microsoft-graph-to-make-better-use-of-all-people-data"></a>Microsoft Graph の連絡先 API 利用であらゆる連絡先データをさらに有効利用
 
 Outlook [連絡先](/graph/api/resources/contact?view=graph-rest-1.0)のための典型的な CRUD 操作を使用することにより、連絡先を作成したり管理したりすることができます。 Microsoft Graph の一部として、[連絡先 API](people-example.md) を使用することができます。それにより、ユーザーの Outlook 連絡先、ソーシャル ネットワーク、組織ディレクトリ、最近の通信での連絡先情報を調べることができ、ユーザーにとって最も関連性の高い情報源すべてから連絡先情報を得ることができます。 連絡先検出シナリオでは、インテリジェントなこの付加機能を活用してください。
-
 
 ### <a name="take-advantage-of-other-shared-features-and-conveniences-in-microsoft-graph"></a>Microsoft Graph でのその他の共有機能や便利機能の活用
 
@@ -48,6 +44,7 @@ Outlook [連絡先](/graph/api/resources/contact?view=graph-rest-1.0)のため�
 - 連絡先インスタンスのアプリ ストレージを[オープン拡張](extensibility-overview.md#open-extensions)として拡張したり、厳密に型指定されたカスタム データを連絡先スキーマに[スキーマ拡張](extensibility-overview.md#schema-extensions)として追加したりすることができます。
 
 ## <a name="api-reference"></a>API リファレンス
+
 このサービスの API リファレンスをお探しですか?
 
 - [Microsoft Graph v1.0 の Outlook 連絡先 API](/graph/api/resources/contact?view=graph-rest-1.0)

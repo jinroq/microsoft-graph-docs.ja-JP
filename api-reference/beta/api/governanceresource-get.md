@@ -1,19 +1,19 @@
 ---
-title: governanceResource を取得する
-description: governanceResource オブジェクトのプロパティとリレーションシップを取得します。
+title: GovernanceResource を取得する
+description: GovernanceResource オブジェクトのプロパティとリレーションシップを取得します。
 localization_priority: Normal
-ms.openlocfilehash: 30c5c5404e11ba5394c306c8d6196cdf58954d25
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 346ebe770b12d9a66c77951521e59b453fbc8ea6
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33329637"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422431"
 ---
-# <a name="get-governanceresource"></a>governanceResource を取得する
+# <a name="get-governanceresource"></a>GovernanceResource を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[governanceResource](../resources/governanceresource.md)オブジェクトのプロパティとリレーションシップを取得します。
+[GovernanceResource](../resources/governanceresource.md)オブジェクトのプロパティとリレーションシップを取得します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -22,7 +22,7 @@ ms.locfileid: "33329637"
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | PrivilegedAccess AzureResources  |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | PrivilegedAccess AzureResources |
+|アプリケーション | サポートされていません。 |
 
 この API は、アクセス許可スコープの他に、リソースに対して少なくとも1つの役割の割り当てを要求する必要があります。
 

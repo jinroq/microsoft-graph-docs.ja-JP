@@ -2,12 +2,12 @@
 title: GovernanceRoleSetting の更新
 description: GovernanceRoleSetting のプロパティを更新します。
 localization_priority: Normal
-ms.openlocfilehash: a35cec14924ac4d4c41966da3b631dcbfebc2644
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 6f6b9d0fb565532a4f610c6434843c1f09aa259d
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33593435"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422291"
 ---
 # <a name="update-governancerolesetting"></a>GovernanceRoleSetting の更新
 
@@ -24,7 +24,7 @@ ms.locfileid: "33593435"
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | PrivilegedAccess AzureResources  |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | PrivilegedAccess AzureResources |
+|アプリケーション | サポートされていません。 |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -88,11 +88,11 @@ Content-length: 350
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_governancerolesetting-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_governancerolesetting-Javascript-snippets.md)]
 
 ---

@@ -2,12 +2,12 @@
 title: GovernanceRoleAssignmentRequest のキャンセル
 description: GovernanceRoleAssignmentRequest を取り消します。
 localization_priority: Normal
-ms.openlocfilehash: 4972c1f283c08b1304c6a01fdc0acc1d6942aec1
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 897e6753d06fda32391e9e466c0153dd8f98c661
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33593521"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422473"
 ---
 # <a name="cancel-governanceroleassignmentrequest"></a>GovernanceRoleAssignmentRequest のキャンセル
 
@@ -22,7 +22,7 @@ ms.locfileid: "33593521"
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | PrivilegedAccess AzureResources  |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | PrivilegedAccess AzureResources |
+|アプリケーション | サポートされていません。 |
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、 [OData クエリパラメーター](/graph/query-parameters)をサポートし**ていません**。
@@ -72,11 +72,11 @@ POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssign
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/cancel_governanceroleassignmentrequest-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/cancel_governanceroleassignmentrequest-Javascript-snippets.md)]
 
 ---
