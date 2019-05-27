@@ -1,5 +1,13 @@
-
-```Cs
+---
+description: 自動的に生成されたファイル。 変更しない
+ms.openlocfilehash: 198a86715044f573f3af9d1b6f5a4020143c45e9
+ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "34478511"
+---
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
@@ -10,7 +18,7 @@ var contact = new Contact
     FileAs = "fileAs-value",
     DisplayName = "displayName-value",
     GivenName = "givenName-value",
-    Initials = "initials-value",
+    Initials = "initials-value"
 };
 
 await graphClient.Me.ContactFolders["{id}"].Contacts

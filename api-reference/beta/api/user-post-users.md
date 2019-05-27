@@ -1,22 +1,25 @@
 ---
 title: user の作成
-description: この API を使用して、新しいユーザーを作成します。
+description: 新しいユーザーを作成します。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5efcc4bd793ca876d1db5860785c3ba67d447ade
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 8e7653095ded6d4146c07c37660260ba53190df5
+ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33637123"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "34479057"
 ---
 # <a name="create-user"></a>ユーザーを作成する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-この API を使用して、新しいユーザーを作成します。要求本文には、作成するユーザーが含まれています。少なくとも、ユーザーに必要なプロパティを指定する必要があります。必要に応じて、その他の書き込み可能なプロパティを指定することもできます。
+新しいユーザーを作成します。
+要求本文に、作成するユーザーを含めます。 少なくとも、ユーザーについての必須プロパティを指定する必要があります。 必要に応じて、その他の書き込み可能なプロパティを指定することもできます。
+
 ## <a name="permissions"></a>アクセス許可
+
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
@@ -37,13 +40,14 @@ POST /users
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>要求本文
+
 要求本文で、[ユーザー](../resources/user.md) オブジェクトの JSON 表記を指定します。
 
 次の表に、ユーザーの作成時に必要になるプロパティを示します。
 
 | パラメーター | 型 | 説明|
 |:---------------|:--------|:----------|
-|accountEnabled |boolean |アカウントが有効な場合は true。それ以外の場合は false。|
+|accountEnabled |Boolean |アカウントが有効な場合は true。それ以外の場合は false。|
 |displayName |string |ユーザーのアドレス帳に表示される名前。|
 |onPremisesImmutableId |string |ユーザーの userPrincipalName (UPN) プロパティにフェデレーション ドメインを使用している場合は、新しいユーザー アカウントの作成時にのみ指定する必要があります|
 |mailNickname |string |ユーザーのメール エイリアス。|
@@ -52,9 +56,12 @@ POST /users
 
 **ユーザー**リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため`POST` 、操作を使用して、作成中にユーザーインスタンスにカスタムプロパティを追加することができます。
 
+[!NOTE]
+この API を使用して作成されたフェデレーションユーザーには、既定で12時間ごとにサインインすることが強制されます。 これを変更する方法の詳細については、「[トークンの有効期間の例外](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions)」を参照してください。
+
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で[ユーザー](../resources/user.md) オブジェクトを返します。
+成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [user](../resources/user.md) オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
@@ -81,7 +88,11 @@ Content-type: application/json
 ```
 要求本文で、[ユーザー](../resources/user.md) オブジェクトの JSON 表記を指定します。
 ##### <a name="response"></a>応答
-以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+以下は、応答の例です。 
+
+[!NOTE]
+ここに示す response オブジェクトは読みやすいように短縮される場合があります。 実際の呼び出しではすべてのプロパティが返されます。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -106,11 +117,11 @@ Content-type: application/json
     "userPrincipalName": "upn-value@tenant-value.onmicrosoft.com"
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/create_user_from_users_2-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_user_from_users_2-Javascript-snippets.md)]
 
 ---
