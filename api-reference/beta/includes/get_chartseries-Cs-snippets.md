@@ -1,5 +1,13 @@
-
-```Cs
+---
+description: 自動的に生成されたファイル。 変更しない
+ms.openlocfilehash: d598a37e31cf95afbcde420f82f0b41a95c85f4d
+ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "34472932"
+---
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
