@@ -1,20 +1,28 @@
-
-```Cs
+---
+description: 自動的に生成されたファイル。 変更しない
+ms.openlocfilehash: c37f87c5ee87c32ea44f4fb5977f9079f4863ce8
+ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "34450029"
+---
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var index = 3;
 
-var values = new Json
+var values = new List<Json>()
 {
+    new Json
+    {
+    }
 };
-
-var valuesList = new List<Json>();
-valuesList.Add( values );
 
 await graphClient.Me.Drive.Items["{id}"].Workbook.Tables["{id|name}"].Columns
     .Add(index,values,name)
     .Request()
-    .PostAsync()
+    .PostAsync();
 
 ```
