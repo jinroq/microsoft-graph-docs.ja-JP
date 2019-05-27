@@ -7779,19 +7779,6 @@ items:
                     href: api/riskyusers-confirmcompromised.md
                   - name: 無視
                     href: api/riskyusers-dismiss.md
-          - name: 信頼フレームワークポリシー
-            href: resources/trustframeworkpolicy.md
-            items:
-              - name: List
-                href: api/trustframework-list-trustframeworkpolicies.md
-              - name: 作成
-                href: api/trustframework-post-trustframeworkpolicy.md
-              - name: 取得
-                href: api/trustframeworkpolicy-get.md
-              - name: 更新
-                href: api/trustframework-put-trustframeworkpolicy.md
-              - name: 削除
-                href: api/trustframeworkpolicy-delete.md
           - name: ID プロバイダー
             href: resources/identityprovider.md
             items:
@@ -7879,116 +7866,125 @@ items:
               - name: アプリケーションに適用済みのものを一覧表示する
                 href: api/policy-list-appliesto.md
           - name: Privileged Identity Management
-            href: resources/privilegedidentitymanagement-root.md
             items:
-              - name: 特権ロール
-                href: resources/privilegedrole.md
+              - name: Privileged Identity Management
+                href: resources/privilegedidentitymanagement-root.md
+              - name: Azure AD
                 items:
-                  - name: 特権ロールを一覧表示する
-                    href: api/privilegedrole-list.md
-                  - name: 特権ロールを取得する
-                    href: api/privilegedrole-get.md
-                  - name: ロールの割り当てを一覧表示する
-                    href: api/privilegedrole-list-assignments.md
-                  - name: 自分でロールをアクティブ化する
-                    href: api/privilegedrole-selfactivate.md
-                  - name: 自分でロールを非アクティブ化する
-                    href: api/privilegedrole-selfdeactivate.md
-                  - name: ロールの設定を取得する
-                    href: api/privilegedrolesettings-get.md
-                  - name: ロールの設定を更新する
-                    href: api/privilegedrolesettings-update.md
-                  - name: ロールの概要を取得する
-                    href: api/privilegedrolesummary-get.md
-              - name: 特権ロールの割り当て
-                href: resources/privilegedroleassignment.md
+                  - name: Azure AD
+                    href: resources/privilegedidentitymanagement-directory.md
+                  - name: 特権ロール
+                    href: resources/privilegedrole.md
+                    items:
+                      - name: 特権ロールを一覧表示する
+                        href: api/privilegedrole-list.md
+                      - name: 特権ロールを取得する
+                        href: api/privilegedrole-get.md
+                      - name: ロールの割り当てを一覧表示する
+                        href: api/privilegedrole-list-assignments.md
+                      - name: 自分でロールをアクティブ化する
+                        href: api/privilegedrole-selfactivate.md
+                      - name: 自分でロールを非アクティブ化する
+                        href: api/privilegedrole-selfdeactivate.md
+                      - name: ロールの設定を取得する
+                        href: api/privilegedrolesettings-get.md
+                      - name: ロールの設定を更新する
+                        href: api/privilegedrolesettings-update.md
+                      - name: ロールの概要を取得する
+                        href: api/privilegedrolesummary-get.md
+                  - name: 特権ロールの割り当て
+                    href: resources/privilegedroleassignment.md
+                    items:
+                      - name: ロールの割り当てを一覧表示する
+                        href: api/privilegedroleassignment-list.md
+                      - name: ロールの割り当てを取得する
+                        href: api/privilegedroleassignment-get.md
+                      - name: ロールの割り当てを作成する
+                        href: api/privilegedroleassignment-post-privilegedroleassignments.md
+                      - name: ロールの割り当てを削除する
+                        href: api/privilegedroleassignment-delete.md
+                      - name: 自分のロールの割り当てを取得する
+                        href: api/privilegedroleassignment-my.md
+                      - name: ロールの割り当てを有効にする
+                        href: api/privilegedroleassignment-makeeligible.md
+                      - name: ロールの割り当てを永続的にする
+                        href: api/privilegedroleassignment_makepermanent.md
+                  - name: 特権ロールの割り当て要求
+                    href: resources/privilegedroleassignmentrequest.md
+                    items:
+                      - name: ロールの割り当てを一覧表示する
+                        href: api/privilegedroleassignmentrequest-list.md
+                      - name: ロールの割り当てを作成する
+                        href: api/privilegedroleassignmentrequest-post.md
+                      - name: ロールの割り当てを取り消す
+                        href: api/privilegedroleassignmentrequest-cancel.md
+                      - name: 自分のロールの割り当てを取得する
+                        href: api/privilegedroleassignmentrequest-my.md
+                  - name: 特権による承認
+                    href: resources/privilegedapproval.md
+                    items:
+                      - name: 特権による承認を一覧表示する
+                        href: api/privilegedapproval-list.md
+                      - name: 特権による承認を取得する
+                        href: api/privilegedapproval-get.md
+                      - name: ロールの割り当てを更新する
+                        href: api/privilegedapproval-update.md
+                  - name: 監査イベント
+                    href: resources/privilegedoperationevent.md
+                    items:
+                      - name: 監査イベントを一覧表示する
+                        href: api/privilegedoperationevent-list.md
+              - name: Azure リソース
                 items:
-                  - name: ロールの割り当てを一覧表示する
-                    href: api/privilegedroleassignment-list.md
-                  - name: ロールの割り当てを取得する
-                    href: api/privilegedroleassignment-get.md
-                  - name: ロールの割り当てを作成する
-                    href: api/privilegedroleassignment-post-privilegedroleassignments.md
-                  - name: ロールの割り当てを削除する
-                    href: api/privilegedroleassignment-delete.md
-                  - name: 自分のロールの割り当てを取得する
-                    href: api/privilegedroleassignment-my.md
-                  - name: ロールの割り当てを有効にする
-                    href: api/privilegedroleassignment-makeeligible.md
-                  - name: ロールの割り当てを永続的にする
-                    href: api/privilegedroleassignment_makepermanent.md
-              - name: 特権ロールの割り当て要求
-                href: resources/privilegedroleassignmentrequest.md
-                items:
-                  - name: ロールの割り当てを一覧表示する
-                    href: api/privilegedroleassignmentrequest-list.md
-                  - name: ロールの割り当てを作成する
-                    href: api/privilegedroleassignmentrequest-post.md
-                  - name: ロールの割り当てを取り消す
-                    href: api/privilegedroleassignmentrequest-cancel.md
-                  - name: 自分のロールの割り当てを取得する
-                    href: api/privilegedroleassignmentrequest-my.md
-              - name: 特権による承認
-                href: resources/privilegedapproval.md
-                items:
-                  - name: 特権による承認を一覧表示する
-                    href: api/privilegedapproval-list.md
-                  - name: 特権による承認を取得する
-                    href: api/privilegedapproval-get.md
-                  - name: ロールの割り当てを更新する
-                    href: api/privilegedapproval-update.md
-              - name: 監査イベント
-                href: resources/privilegedoperationevent.md
-                items:
-                  - name: 監査イベントを一覧表示する
-                    href: api/privilegedoperationevent-list.md
-              - name: 管理対象リソース
-                href: resources/governanceresource.md
-                items:
-                  - name: リスト
-                    href: api/governanceresource-list.md
-                  - name: 取得
-                    href: api/governanceresource-get.md
-                  - name: 登録
-                    href: api/governanceresource-register.md
-              - name: ロールの定義
-                href: resources/governanceroledefinition.md
-                items:
-                  - name: リスト
-                    href: api/governanceroledefinition-list.md
-                  - name: 取得
-                    href: api/governanceroledefinition-get.md
-              - name: ロールの設定
-                href: resources/governancerolesetting.md
-                items:
-                  - name: リスト
-                    href: api/governancerolesetting-list.md
-                  - name: 取得
-                    href: api/governancerolesetting-get.md
-                  - name: 更新
-                    href: api/governancerolesetting-update.md
-              - name: ロールの割り当て
-                href: resources/governanceroleassignment.md
-                items:
-                  - name: リスト
-                    href: api/governanceroleassignment-list.md
-                  - name: 取得
-                    href: api/governanceroleassignment-get.md
-                  - name: エクスポート
-                    href: api/governanceroleassignment-export.md
-              - name: ロールの割り当て要求
-                href: resources/governanceroleassignmentrequest.md
-                items:
-                  - name: リスト
-                    href: api/governanceroleassignmentrequest-list.md
-                  - name: 作成
-                    href: api/governanceroleassignmentrequest-post.md
-                  - name: 取得
-                    href: api/governanceroleassignmentrequest-get.md
-                  - name: 更新
-                    href: api/governanceroleassignmentrequest-update.md
-                  - name: キャンセル
-                    href: api/governanceroleassignmentrequest-cancel.md
+                  - name: Azure リソース
+                    href: resources/privilegedidentitymanagement-resources.md
+                  - name: 管理対象リソース
+                    href: resources/governanceresource.md
+                    items:
+                      - name: リスト
+                        href: api/governanceresource-list.md
+                      - name: 取得
+                        href: api/governanceresource-get.md
+                      - name: 登録
+                        href: api/governanceresource-register.md
+                  - name: ロールの定義
+                    href: resources/governanceroledefinition.md
+                    items:
+                      - name: リスト
+                        href: api/governanceroledefinition-list.md
+                      - name: 取得
+                        href: api/governanceroledefinition-get.md
+                  - name: ロールの設定
+                    href: resources/governancerolesetting.md
+                    items:
+                      - name: リスト
+                        href: api/governancerolesetting-list.md
+                      - name: 取得
+                        href: api/governancerolesetting-get.md
+                      - name: 更新
+                        href: api/governancerolesetting-update.md
+                  - name: ロールの割り当て
+                    href: resources/governanceroleassignment.md
+                    items:
+                      - name: リスト
+                        href: api/governanceroleassignment-list.md
+                      - name: 取得
+                        href: api/governanceroleassignment-get.md
+                      - name: エクスポート
+                        href: api/governanceroleassignment-export.md
+                  - name: ロールの割り当て要求
+                    href: resources/governanceroleassignmentrequest.md
+                    items:
+                      - name: リスト
+                        href: api/governanceroleassignmentrequest-list.md
+                      - name: 作成
+                        href: api/governanceroleassignmentrequest-post.md
+                      - name: 取得
+                        href: api/governanceroleassignmentrequest-get.md
+                      - name: 更新
+                        href: api/governanceroleassignmentrequest-update.md
+                      - name: キャンセル
+                        href: api/governanceroleassignmentrequest-cancel.md
           - name: サービス プリンシパル
             href: resources/serviceprincipal.md
             items:
@@ -8066,6 +8062,19 @@ items:
                 href: api/agreement-delete.md
               - name: 承認状態の一覧表示
                 href: api/user-list-agreementacceptances.md
+          - name: 信頼フレームワークポリシー
+            href: resources/trustframeworkpolicy.md
+            items:
+              - name: List
+                href: api/trustframework-list-trustframeworkpolicies.md
+              - name: 作成
+                href: api/trustframework-post-trustframeworkpolicy.md
+              - name: 取得
+                href: api/trustframeworkpolicy-get.md
+              - name: 更新
+                href: api/trustframework-put-trustframeworkpolicy.md
+              - name: 削除
+                href: api/trustframeworkpolicy-delete.md
       - name: メール
         displayName: 'Outlook, Outlook mail'
         items:
