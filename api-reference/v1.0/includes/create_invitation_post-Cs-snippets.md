@@ -1,18 +1,24 @@
 ---
 description: 自動的に生成されたファイル。 変更しない
-ms.openlocfilehash: 0f3fbb4bce03a5368308be34a0e7ec3f72cf0978
+ms.openlocfilehash: ff3ee57a389310bc8fa1d7bd384e961710c4a4db
 ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/25/2019
-ms.locfileid: "34438589"
+ms.locfileid: "34483388"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Directoryroles["{id}"].Members["{id}"]
+var invitation = new Invitation
+{
+    InvitedUserEmailAddress = "yyy@test.com",
+    InviteRedirectUrl = "https://myapp.com"
+};
+
+await graphClient.Invitations
     .Request()
-    .DeleteAsync();
+    .AddAsync(invitation);
 
 ```

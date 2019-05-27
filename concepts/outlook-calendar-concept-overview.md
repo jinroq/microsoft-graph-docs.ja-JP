@@ -4,16 +4,18 @@ description: Outlook カレンダーは、Office 365 の Outlook メッセージ
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: d8894897cc8fd9670314d5cc134a2b351b04b1f4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 66b9bee8f7059678a97af6c2571132212dad73dd
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555256"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422494"
 ---
 # <a name="outlook-calendar-api-overview"></a>Outlook カレンダー API の概要
 
 Outlook カレンダーは、Office 365 の Outlook メッセージング ハブの一部です。Outlook メッセージング ハブを使うと、メールや連絡先の管理、組織内のユーザーに関する情報の検索、オンライン会話の開始、ファイルの共有、およびグループでの共同作業ができます。
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/_ST4nyz4g9E]
 
 ## <a name="why-integrate-with-outlook-calendar"></a>Outlook カレンダーと統合する理由
 
@@ -27,10 +29,9 @@ Outlook カレンダーは、Office 365 の Outlook メッセージング ハブ
 
 - Outlook では、ユーザーは仕事、家族、その他の用途に合わせてそれぞれカレンダーを作成し、カレンダー グループでそれらを整理できます。 **誕生日**や**休日**に関する無料のカレンダーを有効にして、連絡先の誕生日や地元の祝日を忘れないようにできます。 スポーツ チームやテレビ番組のカレンダーなど、関心に応じてカレンダーを追加できます。 ユーザーは、カレンダーを選択およびオーバーレイして、同じビューでイベントを確認できます。 カレンダー API を使うと、[カレンダー グループ](/graph/api/resources/calendargroup?view=graph-rest-1.0)内の[カレンダー](/graph/api/resources/calendar?view=graph-rest-1.0)を同様に整理し、ユーザーのメールボックスにある他の**カレンダー**と同じように関心のあるカレンダーを操作できます。
 
-- Outlook ユーザーは、イベント、メッセージ、連絡先、タスク、グループ投稿に対して、一貫した方法でカテゴリを適用でき、データの整理と検出機能を拡充できます。 カレンダー API を使うと、[カテゴリに関するユーザーのマスター リストにアクセスして定義](/graph/api/outlookuser-post-mastercategories?view=graph-rest-1.0)できるので、クリエイティブなシナリオがさらに豊富になります。 たとえば、スポーツ クラブではスポーツ トーナメントを整理し、競技種目ごとに色分類項目を別個に指定してメールやイベントを区別するアプリを提供できます。 思いがけない予定変更など、予定間際のニュースでも、そのようなイベントやメールに**重要度**プロパティをアプリで設定して、ユーザーに通知できます。
+- Outlook ユーザーは、イベント、メッセージ、連絡先、タスク、グループ投稿に対して、一貫した方法でカテゴリを適用でき、組織の強化と検出の機能を向上することができます。 カレンダー API を使うと、[カテゴリに関するユーザーのマスター リストにアクセスして定義](/graph/api/outlookuser-post-mastercategories?view=graph-rest-1.0)できるので、クリエイティブなシナリオがさらに豊富になります。 たとえば、スポーツ クラブではスポーツ トーナメントを整理し、競技種目ごとに色分類項目を別個に指定してメールやイベントを区別するアプリを提供できます。 思いがけない予定変更など、予定間際のニュースでも、そのようなイベントやメールに**重要度**プロパティをアプリで設定して、ユーザーに通知できます。
 
 - カレンダー フォルダーでは、1 回きりの[イベント](/graph/api/resources/event?view=graph-rest-1.0)を[作成](/graph/api/user-post-events?view=graph-rest-1.0)および[更新](/graph/api/event-update?view=graph-rest-1.0)できるだけでなく、[定期的なイベントをスケジュールして管理](outlook-schedule-recurring-events.md)することもできます。 ユーザーは[会議出席依頼](/graph/api/resources/eventmessage?view=graph-rest-1.0)に回答でき、関連付けられている**イベント** ナビゲーション プロパティを使用すると、[アラーム](/graph/api/resources/reminder?view=graph-rest-1.0)の[再通知](/graph/api/event-snoozereminder?view=graph-rest-1.0)や[解除](/graph/api/event-dismissreminder?view=graph-rest-1.0)もできます。
-
 
 ### <a name="help-customers-stay-synchronized-and-navigate-their-day"></a>同期維持と予定日の操作に関するユーザー支援機能
 
@@ -47,11 +48,10 @@ Outlook カレンダーは、Office 365 の Outlook メッセージング ハブ
 ### <a name="enhance-collaboration"></a>コラボレーションの強化
 
 - Outlook では、ユーザーどうしでカレンダーを共有でき、カレンダーの内容の読み取り、書き込み、削除に関するアクセス許可を付与できます。 また、ユーザーは自分の代わりに別のユーザーが会議出席依頼に返信するように、カレンダーに指定できます。 あるユーザーの代理をする共有アクションや委任アクションをプログラムを使用して開始することはできませんが、一連のプロパティ (**canEdit**、**canShare**、**canViewPrivateItems**、**isShared**、**isSharedWithMe**) を使用すると、共有ステータスを確認し、共有カレンダーや委任されたカレンダーに関するシナリオを有効にできます。
-- カレンダー API を利用することにより、サインイン ユーザー、またはサインイン ユーザーとカレンダーを共有または委任しているユーザーの予定表アイテムを取得できます。 たとえば、Garth がカレンダーを John と共有している場合、または Garth が John にアクセスを委任している場合、John からの[アクセス許可委任](permissions-reference.md#delegated-permissions-application-permissions-and-effective-permissions)があれば、Garth の共有カレンダーとその内容にも読み取りアクセスが可能になります。
+- カレンダー API を利用することにより、サインイン ユーザー、またはサインイン ユーザーとカレンダーを共有または委任しているユーザーの予定表アイテムを取得できます。 たとえば、Garth がカレンダーを John と共有している場合、または Garth が John にアクセスを委任している場合、John からの[アクセス許可委任](auth/auth-concepts.md#microsoft-graph-permissions)があれば、Garth の共有カレンダーとその内容にも読み取りアクセスが可能になります。
 - ** Office 365 グループを使用すると、グループ メンバーの共同作業や、グループでの会話やカレンダーへのアクセスが、Outlook で直接行うことができます。 グループ カレンダーとユーザー カレンダーに細かな違いがいくつかあることを除けば、カレンダー API を使用することで、ユーザー カレンダーとほぼ同様にグループ カレンダーを操作できます。 詳細については、[calendar](/graph/api/resources/calendar?view=graph-rest-1.0) リソースをご覧ください。
 
 ** 職場または学校のアカウントで Outlook カレンダーに特に適用可能な機能を示します。
-
 
 ### <a name="schedule-smart"></a>スマートなスケジュール設定
 
@@ -62,7 +62,6 @@ Outlook とカレンダー API には、イベントのスケジュールに便�
 - ** 特定の期間の[ユーザーとリソースに関する空き時間情報の確認](outlook-get-free-busy-schedule.md) ができます。 このデータを、リソース計画やイベント スケジュールなどのさまざまなシナリオに適用できます。
 - ** 最適な時間に会議をスケジュールしなければならないシナリオでは、[開催可能な会議日時を特定する findMeetingTimes の使用](findmeetingtimes-example.md)を検討できます。 [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-1.0) 関数は、出席者の空き時間情報、会議室や日時に関する希望、およびユーザーが指定した他の制約事項を考慮します。 最初の試行で全員参加可能な会議日時が返されない場合は、理由を確認してから条件を変更し、もう一度 **findMeetingTimes** を呼び出してください。
 
-
 ### <a name="teleconference-across-multiple-locations-and-time-zones"></a>複数の場所とタイム ゾーンをまたぐ電話会議
 
 グローバル化に伴い、現代のビジネス会議には、出席者がさまざまな場所やタイム ゾーンから参加していることも少なくありません。 カレンダー API を使用してそのような会議を管理する方法を次に示します。
@@ -71,7 +70,6 @@ Outlook とカレンダー API には、イベントのスケジュールに便�
 - Outlook では、柔軟にイベントを組織し、イベントの開始日時と終了日時ごとにタイム ゾーンを指定できます。 このような柔軟性をサポートするため、既定では、カレンダー API は**イベント**の**開始**日時と**終了**日時を UTC で返し、用意されている **originalStartTimeZone** プロパティと **originalEndTimeZone** プロパティで、イベントの作成時に使用されたタイム ゾーンを示します。
 - 代わりに、`Prefer: outlook.timezone="{time zone name}"` ヘッダーを指定して、GET イベント操作が**開始**日時と**終了**日時を指定したタイム ゾーンで返すようにすることもできます。 タイム ゾーン名は、この[リスト](/graph/api/resources/datetimetimezone?view=graph-rest-1.0)にあるものだけでなく、Windows でサポートされている任意の名前を使用できます。 `Prefer` ヘッダーの使用[例](/graph/api/event-get?view=graph-rest-1.0#request-1)をご覧ください。
 
-
 ### <a name="take-advantage-of-social-intelligence-and-other-developer-conveniences-in-microsoft-graph"></a>Microsoft Graph でのソーシャル インテリジェンス、および開発者向けのその他の便利な機能の活用
 
 Microsoft Graph では、[people API](people-example.md) を使用し、ユーザーの通信パターンやコラボレーション パターン、ビジネス上の関係に基づく [人物データ](/graph/api/resources/person?view=graph-rest-1.0)に接続できます。 ユーザー選択などのコントロールを実装し、ユーザーの代わりに会議を組織するときに、ユーザーに関係のある人物を提案できます。
@@ -79,11 +77,11 @@ Microsoft Graph では、[people API](people-example.md) を使用し、ユー�
 アプリ データを外部データ ストアに保存および管理する際、オーバーヘッドを保存します。 Microsoft Graph では、各リソース インスタンスごとに、カスタム アプリ データを[オープン拡張機能](extensibility-overview.md#open-extensions)として保存できます。 データを入力する必要がある場合、または入力されたスキーマを共有できるようにする場合は、カスタム アプリ データを[スキーマ拡張機能](extensibility-overview.md#schema-extensions)に保存できます。
 
 ## <a name="api-reference"></a>API リファレンス
+
 このサービスの API リファレンスをお探しですか?
 
 - [Microsoft Graph v1.0 の Outlook カレンダー API](/graph/api/resources/calendar?view=graph-rest-1.0)
 - [Microsoft Graph ベータ版の Outlook カレンダー API](/graph/api/resources/calendar?view=graph-rest-beta)
-
 
 ## <a name="next-steps"></a>次の手順
 

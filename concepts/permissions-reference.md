@@ -3,26 +3,26 @@ title: 'Microsoft Graph のアクセス許可のリファレンス '
 description: Microsoft Graph は、アプリがアクセスするリソース (ユーザー、グループ、メールなど) を制御する詳細なアクセス許可を公開しています。 開発者は、アプリが要求する Microsoft Graph のアクセス許可を決定します。
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: fa1c479a55d6aef5653e06a85cb6f1d4148cea66
-ms.sourcegitcommit: 17eec88891d62b27dcc5d0abdff9fcff2186b31f
+ms.openlocfilehash: fae0b7cd490b32f7ae5691a93e164d1a9eb4a870
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/23/2019
-ms.locfileid: "34407087"
+ms.locfileid: "34422501"
 ---
-# <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph のアクセス許可のリファレンス 
+# <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph のアクセス許可のリファレンス
 
-アプリから Microsoft Graph のデータにアクセスする場合、ユーザーまたは管理者は、同意のプロセスを通してそのアプリに正しいアクセス許可を付与する必要があります。 このトピックでは、Microsoft Graph API の各主要なセットに関連付けられているアクセス許可について説明します。 また、アクセス許可の使用方法に関するガイダンスを提供しています。 
+アプリから Microsoft Graph のデータにアクセスする場合、ユーザーまたは管理者は、同意のプロセスを通してそのアプリに正しいアクセス許可を付与する必要があります。 このトピックでは、Microsoft Graph API の各主要なセットに関連付けられているアクセス許可について説明します。 また、アクセス許可の使用方法に関するガイダンスを提供しています。
 
-アクセス許可のしくみを詳細に確認するには、「[認証と承認の基本方法](https://docs.microsoft.com/ja-JP/graph/auth/auth-concepts?view=graph-rest-1.0#microsoft-graph-permissions)」を参照してください。
+アクセス許可のしくみを詳細に確認するには、「[認証と承認の基本方法](auth/auth-concepts.md#microsoft-graph-permissions)」を参照してください。
 
 ## <a name="microsoft-graph-permission-names"></a>Microsoft Graph のアクセス許可名
 
-Microsoft Graph のアクセス許可名は、「_リソース.操作.制約_」という簡単なパターンに従います。たとえば、_User.Read_ ではサインインしているユーザーのプロファイルを読み取るためのアクセス許可を付与し、_User.ReadWrite_ ではサインインしているユーザーのプロファイルを読み取りおよび変更するためのアクセス許可を付与します。また、_Mail.Send_ ではサインインしているユーザーの代わりにメールを送信するためのアクセス許可を付与します。 
+Microsoft Graph のアクセス許可名は、「_リソース.操作.制約_」という簡単なパターンに従います。たとえば、_User.Read_ ではサインインしているユーザーのプロファイルを読み取るためのアクセス許可を付与し、_User.ReadWrite_ ではサインインしているユーザーのプロファイルを読み取りおよび変更するためのアクセス許可を付与します。また、_Mail.Send_ ではサインインしているユーザーの代わりにメールを送信するためのアクセス許可を付与します。
 
-名前の_制約_要素は、ディレクトリ内でアプリがアクセスする可能性のある範囲を決定します。現在、Microsoft Graph は次に示す制約をサポートしています。 
+名前の_制約_要素は、ディレクトリ内でアプリがアクセスする可能性のある範囲を決定します。現在、Microsoft Graph は次に示す制約をサポートしています。
 
-* **All**: ディレクトリ内にある指定した種類のすべてのリソースに対して操作を実行するためのアクセス許可をアプリに付与します。たとえば、_User.Read.All_ は、ディレクトリ内のすべてのユーザーのプロファイルを読み取るための特権をアプリに付与することになります。 
+* **All**: ディレクトリ内にある指定した種類のすべてのリソースに対して操作を実行するためのアクセス許可をアプリに付与します。たとえば、_User.Read.All_ は、ディレクトリ内のすべてのユーザーのプロファイルを読み取るための特権をアプリに付与することになります。
 * **Shared**: サインインしているユーザーと共有している別のユーザーのリソースに対して操作を実行するためアクセス許可をアプリに付与します。この制約は、主に Outlook のリソース (メール、カレンダー、連絡先など) に使用されます。たとえば、_Mail.Read.Shared_ は、サインインしているユーザーのメールボックス内のメールを読み取る特権に加えて、サインインしているユーザーと共有している組織内の別のユーザーのメールボックス内のメールも読み取る特権を付与します。
 * **AppFolder**: OneDrive の専用フォルダー内でファイルを読み取りおよび書き込みするためのアクセス許可をアプリに付与します。この制約は、[ファイルのアクセス許可](#files-permissions)でのみ公開され、Microsoft アカウントでのみ有効です。
 * **制限なし**が指定されると、アプリは、サインインしているユーザーが所有するリソースに限定した操作を実行するようになります。たとえば、_User.Read_ ではサインインしているユーザーのプロファイルのみを読み取る特権を付与し、_Mail.Read_ ではサインインしているユーザーのメールボックス内のメールのみを読み取るアクセス許可を付与します。
@@ -131,7 +131,7 @@ _Application.ReadWrite.OwnedBy_ アクセス許可は、_Application.ReadWrite.A
 * _Application.ReadWrite.All_: サービス プリンシパルを削除する (`DELETE /beta/servicePrincipals/{id}`)
 * _Application.ReadWrite.OwnedBy_: アプリケーションを作成する (`POST /beta/applications`)
 * _Application.ReadWrite.OwnedBy_: 呼び出し元アプリケーションによって所有されている全アプリケーションのリストを取得する (`GET /beta/servicePrincipals/{id}/ownedObjects`)
-* _Application.ReadWrite.OwnedBy_: 所有されているアプリケーションに別の所有者を追加する (`POST /applications/{id}/owners/$ref`)。  
+* _Application.ReadWrite.OwnedBy_: 所有されているアプリケーションに別の所有者を追加する (`POST /applications/{id}/owners/$ref`)。
 > 注: これにはさらに追加のアクセス許可が必要になる場合があります。
 
 ---
@@ -275,13 +275,13 @@ _Application.ReadWrite.OwnedBy_ アクセス許可は、_Application.ReadWrite.A
 #### <a name="delegated"></a>委任
 
 * _Contacts.Read_:サインインしているユーザーの最上位レベルの連絡先フォルダーの 1 つから連絡先を読み取ります (`GET /me/contactfolders/{Id}/contacts/{id}`)。
-* _Contacts.ReadWrite_:サインインしているユーザーの連絡先のうち、1 つの連絡先の写真を更新します (`PUT /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value`)。 
+* _Contacts.ReadWrite_:サインインしているユーザーの連絡先のうち、1 つの連絡先の写真を更新します (`PUT /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value`)。
 * _Contacts.ReadWrite_:サインインしているユーザーのルート フォルダーに連絡先を追加します (`POST /me/contacts`)。
 
 #### <a name="application"></a>アプリケーション
 
-* _Contacts.Read_:組織内の任意のユーザーの最上位レベルの 1 つのフォルダーから連絡先を読み取ります (`GET /users/{id | userPrincipalName}/contactfolders/{Id}/contacts/{id}`)。 
-* _Contacts.ReadWrite_:組織内の任意のユーザーの連絡先の写真を更新します (`PUT /user/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value`)。 
+* _Contacts.Read_:組織内の任意のユーザーの最上位レベルの 1 つのフォルダーから連絡先を読み取ります (`GET /users/{id | userPrincipalName}/contactfolders/{Id}/contacts/{id}`)。
+* _Contacts.ReadWrite_:組織内の任意のユーザーの連絡先の写真を更新します (`PUT /user/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value`)。
 * _Contacts.ReadWrite_:組織内の任意のユーザーのルート フォルダーに連絡先を追加します (`POST /users/{id | userPrincipalName}/contacts`)。
 
 より複雑な複数のアクセス許可を伴うシナリオについては、「[アクセス許可のシナリオ](#permission-scenarios)」を参照してください。
@@ -336,9 +336,9 @@ _Application.ReadWrite.OwnedBy_ アクセス許可は、_Application.ReadWrite.A
 
 ### <a name="remarks"></a>解説
 
-ディレクトリのアクセス許可は、組織内のディレクトリ リソース ([ユーザー](/graph/api/resources/user?view=graph-rest-1.0)、[グループ](/graph/api/resources/group?view=graph-rest-1.0)、[デバイス](/graph/api/resources/device?view=graph-rest-1.0)など) に対する最上位レベルの特権を提供します。 
+ディレクトリのアクセス許可は、組織内のディレクトリ リソース ([ユーザー](/graph/api/resources/user?view=graph-rest-1.0)、[グループ](/graph/api/resources/group?view=graph-rest-1.0)、[デバイス](/graph/api/resources/device?view=graph-rest-1.0)など) に対する最上位レベルの特権を提供します。
 
-また、その他のディレクトリ リソースへのアクセスを排他的に制御します。このリソースには、[組織の連絡先](/graph/api/resources/orgcontact?view=graph-rest-beta)、[スキーマ拡張 API](/graph/api/resources/schemaextension?view=graph-rest-beta)、[Privileged Identity Management (PIM) API](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta) などに加え、v1.0 およびベータの API リファレンス ドキュメントの **Azure Active Directory** ノードにリストされる多数のリソースや API があります。 これには、管理単位、ディレクトリ ロール、ディレクトリ設定、ポリシーなど多くのものが含まれます。 
+また、その他のディレクトリ リソースへのアクセスを排他的に制御します。このリソースには、[組織の連絡先](/graph/api/resources/orgcontact?view=graph-rest-beta)、[スキーマ拡張 API](/graph/api/resources/schemaextension?view=graph-rest-beta)、[Privileged Identity Management (PIM) API](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta) などに加え、v1.0 およびベータの API リファレンス ドキュメントの **Azure Active Directory** ノードにリストされる多数のリソースや API があります。 これには、管理単位、ディレクトリ ロール、ディレクトリ設定、ポリシーなど多くのものが含まれます。
 
 _Directory.ReadWrite.All_ アクセス許可は、次に示す特権を付与します。
 
@@ -355,7 +355,7 @@ _Directory.ReadWrite.All_ アクセス許可は、次に示す特権を付与し
 > - ユーザーのパスワードをリセットする権限はありません
 > - リソース (ユーザーまたはグループを含む) を削除する権限はありません
 > - 具体的には、上記の一覧に示されていないリソースの作成と更新が除外されます。 これには、application、oAauth2Permissiongrant、appRoleAssignment、device、servicePrincipal、organization、domains などが含まれます。
- 
+
 
 ### <a name="example-usage"></a>使用例
 
@@ -435,9 +435,9 @@ _Directory.ReadWrite.All_ アクセス許可は、次に示す特権を付与し
 
 ### <a name="remarks"></a>解説
 
-> **注**: 個人用アカウントの場合、Files.Read および Files.ReadWrite はサインインしているユーザーと共有しているファイルへのアクセスも許可されます。 
+> **注**: 個人用アカウントの場合、Files.Read および Files.ReadWrite はサインインしているユーザーと共有しているファイルへのアクセスも許可されます。
 
-委任されたアクセス許可の Files.Read.Selected および Files.ReadWrite.Selected は、職場または学校アカウントでのみ有効です。また、[Office 365 ファイル ハンドラー (v1.0)](https://msdn.microsoft.com/office/office365/howto/using-cross-suite-apps) を使用している場合にのみ公開されます。これらは、Microsoft Graph API を直接呼び出すために使用しないでください。 
+委任されたアクセス許可の Files.Read.Selected および Files.ReadWrite.Selected は、職場または学校アカウントでのみ有効です。また、[Office 365 ファイル ハンドラー (v1.0)](https://msdn.microsoft.com/office/office365/howto/using-cross-suite-apps) を使用している場合にのみ公開されます。これらは、Microsoft Graph API を直接呼び出すために使用しないでください。
 
 委任されたアクセス許可の Files.ReadWrite.AppFolder は、個人用アカウントでのみ有効です。また、OneDrive の[特殊フォルダーを取得する](/graph/api/drive-get-specialfolder?view=graph-rest-1.0) Microsoft Graph API で [App Root 特殊フォルダー](https://dev.onedrive.com/misc/appfolder.htm)にアクセスする場合に使用します。
 
@@ -481,9 +481,9 @@ _Directory.ReadWrite.All_ アクセス許可は、次に示す特権を付与し
 
 ### <a name="remarks"></a>注釈
 
-グループ機能は、個人用 Microsoft アカウントではサポートされません。 
+グループ機能は、個人用 Microsoft アカウントではサポートされません。
 
-Office 365 グループの場合は、グループのアクセス許可により、グループのコンテンツ (会話、ファイル、メモなど) へのアクセスがアプリに許可されます。 
+Office 365 グループの場合は、グループのアクセス許可により、グループのコンテンツ (会話、ファイル、メモなど) へのアクセスがアプリに許可されます。
 
 アプリケーションのアクセス許可については、サポートされる API についていくつかの制限があります。詳細については、「[既知の問題](known-issues.md)」を参照してください。
 
@@ -500,7 +500,7 @@ Office 365 グループの場合は、グループのアクセス許可により
 * _Group.Read.All_:サインインしているユーザーがメンバーになっているすべての Office 365 グループを読み取ります (`GET /me/memberOf/$/microsoft.graph.group?$filter=groupTypes/any(a:a%20eq%20'unified')`)。
 * _Group.Read.All_:すべての Office 365 グループ コンテンツ (会話など) を読み取ります (`GET /groups/{id}/conversations`)。
 * _Group.ReadWrite.All_: グループ プロパティ (photo など) を更新します (`PUT /groups/{id}/photo/$value`)。
-* _Group.ReadWrite.All_: グループ メンバーを更新します (`POST /groups/{id}/members/$ref`)。 
+* _Group.ReadWrite.All_: グループ メンバーを更新します (`POST /groups/{id}/members/$ref`)。
 > **注:** これには、メンバーとして追加するユーザーを読み取るための _User.ReadBasic.All_ も必要になります。
 
 #### <a name="application"></a>アプリケーション
@@ -569,7 +569,7 @@ _IdentityRiskEvent.Read.All_ は、職場または学校アカウントでのみ
 * テナント内のすべてのユーザーに対して生成されたすべてのリスク イベントを読み取ります (`GET /beta/identityRiskEvents`)
 * Dorknet ボンネットで生成されたマルウェア リスク イベントを読み取ります (`GET /beta/malwareRiskEvents?$filter=malwareName eq 'Dorkbot'`)
 * 最新の 50 件のリスク イベントを読み取ります (`GET /beta/identityRiskEvents?$orderBy=riskEventDateTime desc&top=50`)
- 
+
 より複雑な複数のアクセス許可を伴うシナリオについては、「[アクセス許可のシナリオ](#permission-scenarios)」を参照してください。
 
 ---
@@ -603,7 +603,7 @@ _IdentityRiskyUser.Read.All_ は、職場または学校アカウントでのみ
 * テナント内のリスクが高いユーザーとプロパティをすべて読み取ります (`GET /beta/riskyUsers`)
 * 集計リスク レベルが中のリスクが高いユーザーをすべて読み取ります (`GET /beta/riskyUsers?$filter=risk/riskLevelAggregated eq microsoft.graph.riskLevel'medium'`)
 * 特定のユーザーのリスク情報を読み取ります (`GET /beta/riskyUsers/$filter=id eq ‘{userObjectId}’`)
- 
+
 より複雑な複数のアクセス許可を伴うシナリオについては、「[アクセス許可のシナリオ](#permission-scenarios)」を参照してください。
 
 ---
@@ -678,7 +678,7 @@ _IdentityRiskyUser.Read.All_ は、職場または学校アカウントでのみ
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Mail.Read_       |    すべてのメールボックスにあるメールの読み取り | サインインしているユーザーなしで、すべてのメールボックス内のメールをアプリで読み取れるようにします。| 必要 |
 | _Mail.ReadWrite_ |    すべてのメールボックスにあるメールの読み取りと書き込み | サインインしているユーザーなしで、アプリですべてのメールボックス内のメールの作成、読み取り、更新、削除を行えるようにします。メールを送信するためのアクセス許可は含まれません。 | 必要 |
-| _Mail.Send_ |    任意のユーザーからのメールを送信 | サインインしているユーザーなしで、任意のユーザーとしてアプリでメールを送信できるようにします。 | 必要 | 
+| _Mail.Send_ |    任意のユーザーからのメールを送信 | サインインしているユーザーなしで、任意のユーザーとしてアプリでメールを送信できるようにします。 | 必要 |
 | _MailboxSettings.Read_ |  すべてのユーザーのメールボックス設定の読み取り | サインインしているユーザーなしで、ユーザーのメールボックス設定をアプリで読み取れるようにします。メールを送信するためのアクセス許可は含まれません。 | いいえ |
 | _MailboxSettings.ReadWrite_ | ユーザーのすべてのメールボックス設定の読み取りと書き込み  | サインインしているユーザーなしで、アプリでユーザーのメールボックス設定の作成、読み取り、更新、削除を行えるようにします。メールを送信するためのアクセス許可は含まれません。 | はい |
 
@@ -770,7 +770,7 @@ _Notes.Read.All_ および _Notes.ReadWrite.All_ は、職場または学校ア�
 
 _Notes.Create_ のアクセス許可があるアプリは、サインインしているユーザーの OneNote ノートブック階層の表示と、OneNote コンテンツ (ノートブック、セクション グループ、セクション、ページなど) の作成を実行できます。
 
-また、_Notes.ReadWrite_ および _Notes.ReadWrite.All_ によって、アプリはサインインしているユーザーがアクセス可能な OneNote コンテンツのアクセス許可を変更することもできるようになります。 
+また、_Notes.ReadWrite_ および _Notes.ReadWrite.All_ によって、アプリはサインインしているユーザーがアクセス可能な OneNote コンテンツのアクセス許可を変更することもできるようになります。
 
 職場または学校アカウントの場合、_Notes.Read.All_ および _Notes.ReadWrite.All_ により、アプリは、サインインしているユーザーが組織内でアクセス許可を持つ別のユーザーの OneNote コンテンツにアクセスできるようになります。
 
@@ -796,7 +796,8 @@ _Notes.Create_ のアクセス許可があるアプリは、サインインし�
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Notifications.ReadWrite.CreatedByApp_ | このアプリの通知を配信および管理します。 | アプリで、サインインしているユーザーの代わりに、通知を配信することができるようにします。 また、アプリで、このアプリのユーザーの通知項目の読み取り、更新、削除が行えるようにします。 |いいえ |
 ### <a name="remarks"></a>解説
-*Notifications.ReadWrite.CreatedByApp* は、Microsoft アカウントと職場または学校アカウントのどちらでも有効です。 このアクセス許可に関連付けられている *CreatedByApp* 制約は、このサービスが呼び出し元アプリの ID (Microsoft アカウント アプリ ID またはクロスプラットフォーム アプリケーション ID 用に構成されたアプリ ID のセットのいずれか) に基づいて結果に暗黙的なフィルター処理を適用することを示しています。 
+*Notifications.ReadWrite.CreatedByApp* は、Microsoft アカウントと職場または学校アカウントのどちらでも有効です。
+このアクセス許可に関連付けられている *CreatedByApp* 制約は、このサービスが呼び出し元アプリの ID (Microsoft アカウント アプリ ID またはクロスプラットフォーム アプリケーション ID 用に構成されたアプリ ID のセットのいずれか) に基づいて結果に暗黙的なフィルター処理を適用することを示しています。
 ### <a name="example-usage"></a>使用例
 #### <a name="delegated"></a>Delegated
 * _Notifications.ReadWrite.CreatedByApp_: ユーザー指向の通知を発行します。この通知は、異なるエンドポイントで実行されているユーザーの複数のアプリケーション クライアントに配信することができます (POST /me/notifications/)。
@@ -851,11 +852,11 @@ _Notes.Create_ のアクセス許可があるアプリは、サインインし�
 ### <a name="remarks"></a>注釈
 これらのアクセス許可を使用すると、Azure AD の承認とトークン要求で返される成果物を指定できます。これらは Azure AD v1.0 エンドポイントと v2.0 エンドポイントでは異なる方法でサポートされます。
 
-Azure AD (v1.0) エンドポイントでは、_openid_ アクセス許可のみが使用されます。これを承認要求で *scope* パラメーターに指定して、ユーザーがアプリにサインインするときに OpenID Connect プロトコルを使用する場合に ID トークンが返されるようにします。詳細については、「[OpenID Connect と Azure Active Directory を使用する Web アプリケーションへのアクセスの承認](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-openid-connect-code)」を参照してください。ID トークンが正常に返されるようにするには、アプリを登録するときに _User.Read_ アクセス許可も必ず構成します。 
+Azure AD (v1.0) エンドポイントでは、_openid_ アクセス許可のみが使用されます。これを承認要求で *scope* パラメーターに指定して、ユーザーがアプリにサインインするときに OpenID Connect プロトコルを使用する場合に ID トークンが返されるようにします。詳細については、「[OpenID Connect と Azure Active Directory を使用する Web アプリケーションへのアクセスの承認](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-openid-connect-code)」を参照してください。ID トークンが正常に返されるようにするには、アプリを登録するときに _User.Read_ アクセス許可も必ず構成します。
 
 Azure AD v2.0 エンドポイントでは、_scope_ パラメーターで_offline\_access_ アクセス許可を指定して、OAuth 2.0 または OpenID Connect プロトコルを使用するときに明示的に更新トークンを要求します。OpenID Connect では、_openid_ アクセス許可を指定して ID トークンを要求します。_email_ アクセス許可、_profile_ アクセス許可、あるいはその両方で ID トークンに追加の要求が返されるように指定できます。v2.0 エンドポイントでは、ID トークンを返すよう _User.Read_ を指定する必要はありません。詳細については、「[OpenID Connect のスコープ](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes#openid-connect-scopes)」を参照してください。
 
-> **重要**Microsoft Authentication Library (MSAL) では現在、承認要求およびトークン要求に既定で _offline\_access_、_openid_、_profile_、_email_ が指定されています。つまり、既定では、これらのアクセス許可を明示的に指定すると、Azure AD ではエラーが返される場合があります。 
+> **重要**Microsoft Authentication Library (MSAL) では現在、承認要求およびトークン要求に既定で _offline\_access_、_openid_、_profile_、_email_ が指定されています。つまり、既定では、これらのアクセス許可を明示的に指定すると、Azure AD ではエラーが返される場合があります。
 
 ---
 
@@ -876,7 +877,7 @@ Azure AD v2.0 エンドポイントでは、_scope_ パラメーターで_offlin
 
 ### <a name="remarks"></a>注釈
 
-People.Read.All アクセス許可は会社用および学校用のアカウントにのみ有効です。 
+People.Read.All アクセス許可は会社用および学校用のアカウントにのみ有効です。
 
 ### <a name="example-usage"></a>使用例
 
@@ -907,7 +908,7 @@ People.Read.All アクセス許可は会社用および学校用のアカウン�
 
 ### <a name="remarks"></a>注釈
 
-_ProgramControl.Read.All_ と _ProgramControl.ReadWrite.All_ は、職場または学校アカウントに対してのみ有効です。 
+_ProgramControl.Read.All_ と _ProgramControl.ReadWrite.All_ は、職場または学校アカウントに対してのみ有効です。
 
 プログラムおよびプログラム コントロールを読み取るための委任されたアクセス許可があるアプリの場合、サインインしているユーザーが「全体管理者」、「セキュリティ管理者」、「セキュリティ閲覧者」、または「ユーザー管理者」のいずれかの管理者ロールのメンバーになっている必要があります。 プログラムとプログラム コントロールに書き込むための委任されたアクセス許可があるアプリの場合、サインインしているユーザーが「全体管理者」、または「ユーザー管理者」のいずれかの管理者ロールのメンバーになっている必要があります。  管理者ロールの詳細については、「[Azure Active Directory での管理者ロールの割り当て](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)」を参照してください。
 
@@ -928,7 +929,7 @@ _ProgramControl.Read.All_ と _ProgramControl.ReadWrite.All_ は、職場また�
 | _Reports.Read.All_ | すべての利用状況レポートの読み取り | アプリで、サインインしているユーザーなしで、すべてのサービス利用状況レポートの読み取りができるようにします。利用状況レポートを提供するサービスには、Office 365 と Azure Active Directory が含まれます。 | 必要 |
 
 ### <a name="remarks"></a>備考
-レポートのアクセス許可は、職場または学校アカウントでのみ有効です。 
+レポートのアクセス許可は、職場または学校アカウントでのみ有効です。
 
 ### <a name="example-usage"></a>使用例
 
@@ -1161,7 +1162,7 @@ _User.Read_ のアクセス許可があるアプリは、[組織](/graph/api/res
 
 職場または学校アカウントの直属の部下 (`directReports`) または上司 (`manager`) を読み取りまたは書き込みするには、アプリに _User.Read.All_ (読み取り専用) または _User.ReadWrite.All_ が付与されている必要があります。
 
-_User.ReadBasic.All_ アクセス許可では、基本プロファイルと呼ばれる限定されたプロパティのセットにアプリのアクセスを制限します。これは、完全なプロファイルには機密性の高い情報が含まれている可能性があるためです。基本プロパティには、次に示すプロパティのみが含まれています。 
+_User.ReadBasic.All_ アクセス許可では、基本プロファイルと呼ばれる限定されたプロパティのセットにアプリのアクセスを制限します。これは、完全なプロファイルには機密性の高い情報が含まれている可能性があるためです。基本プロパティには、次に示すプロパティのみが含まれています。
 
 - displayName
 - givenName
@@ -1170,7 +1171,7 @@ _User.ReadBasic.All_ アクセス許可では、基本プロファイルと呼�
 - surname
 - userPrincipalName
 
-ユーザーのグループ メンバーシップ (`memberOf`) を読み取るには、アプリに [_Group.Read.All_](#group-permissions) または [_Group.ReadWrite.All_](#group-permissions) のどちらかが付与されている必要があります。ただし、ユーザーに [directoryRole](/graph/api/resources/directoryrole?view=graph-rest-1.0) または [administrativeUnit](/graph/api/resources/administrativeunit?view=graph-rest-beta) のメンバーシップもある場合、アプリにはそれらのリソースを読み取るための有効なアクセス許可も必要になります。このアクセス許可がない場合、Microsoft Graph はエラーを返します。つまり、アプリは[ディレクトリのアクセス許可](#directory-permissions)も必要とし、委任されたアクセス許可の場合は、サインインしているユーザーにも組織内でディレクトリ ロールと管理単位にアクセスするための十分な特権も必要とするということです。 
+ユーザーのグループ メンバーシップ (`memberOf`) を読み取るには、アプリに [_Group.Read.All_](#group-permissions) または [_Group.ReadWrite.All_](#group-permissions) のどちらかが付与されている必要があります。ただし、ユーザーに [directoryRole](/graph/api/resources/directoryrole?view=graph-rest-1.0) または [administrativeUnit](/graph/api/resources/administrativeunit?view=graph-rest-beta) のメンバーシップもある場合、アプリにはそれらのリソースを読み取るための有効なアクセス許可も必要になります。このアクセス許可がない場合、Microsoft Graph はエラーを返します。つまり、アプリは[ディレクトリのアクセス許可](#directory-permissions)も必要とし、委任されたアクセス許可の場合は、サインインしているユーザーにも組織内でディレクトリ ロールと管理単位にアクセスするための十分な特権も必要とするということです。
 
 ### <a name="example-usage"></a>使用例
 
@@ -1201,9 +1202,9 @@ _User.ReadBasic.All_ アクセス許可では、基本プロファイルと呼�
 なし。
 
 ### <a name="remarks"></a>注釈
-*UserActivity.ReadWrite.CreatedByApp* は、Microsoft アカウントと職場または学校アカウントのどちらでも有効です。 
- 
-このアクセス許可に関連付けられている *CreatedByApp* 制約は、このサービスが呼び出し元アプリの ID (MSA アプリ ID またはクロスプラットフォーム アプリケーション ID 用に構成されたアプリ ID のセットのいずれか) に基づいて結果に暗黙的なフィルター処理を適用することを示しています。 
+*UserActivity.ReadWrite.CreatedByApp* は、Microsoft アカウントと職場または学校アカウントのどちらでも有効です。
+
+このアクセス許可に関連付けられている *CreatedByApp* 制約は、このサービスが呼び出し元アプリの ID (MSA アプリ ID またはクロスプラットフォーム アプリケーション ID 用に構成されたアプリ ID のセットのいずれか) に基づいて結果に暗黙的なフィルター処理を適用することを示しています。
 
 ### <a name="example-usage"></a>使用例
 
@@ -1216,7 +1217,7 @@ _User.ReadBasic.All_ アクセス許可では、基本プロファイルと呼�
 
 ## <a name="permission-scenarios"></a>アクセス許可のシナリオ
 
-ここでは、組織内の[ユーザー](/graph/api/resources/user?view=graph-rest-1.0) リソースと[グループ](/graph/api/resources/group?view=graph-rest-1.0) リソースを対象とした、いくつかの一般的なシナリオを示します。この表には、シナリオごとに必要になる特定の操作を実行するために、アプリが必要とするアクセス許可を示しています。場合によっては、特定の操作をアプリが実行できるかどうかは、アクセス許可が、アプリケーションのアクセス許可か、委任されたアクセス許可かによって決まります。委任されたアクセス許可の場合、アプリの有効なアクセス許可は、サインインしているユーザーの組織内の特権にも依存します。詳細については、「[委任されたアクセス許可、アプリケーションのアクセス許可、有効なアクセス許可](./auth/auth-concepts#microsoft-graph-permissions)」を参照してください。
+ここでは、組織内の[ユーザー](/graph/api/resources/user?view=graph-rest-1.0) リソースと[グループ](/graph/api/resources/group?view=graph-rest-1.0) リソースを対象とした、いくつかの一般的なシナリオを示します。この表には、シナリオごとに必要になる特定の操作を実行するために、アプリが必要とするアクセス許可を示しています。場合によっては、特定の操作をアプリが実行できるかどうかは、アクセス許可が、アプリケーションのアクセス許可か、委任されたアクセス許可かによって決まります。委任されたアクセス許可の場合、アプリの有効なアクセス許可は、サインインしているユーザーの組織内の特権にも依存します。詳細については、「[委任されたアクセス許可、アプリケーションのアクセス許可、有効なアクセス許可](auth/auth-concepts.md#microsoft-graph-permissions)」を参照してください。
 
 ### <a name="access-scenarios-on-the-user-resource"></a>ユーザー リソースに対するアクセスのシナリオ
 
@@ -1231,10 +1232,10 @@ _User.ReadBasic.All_ アクセス許可では、基本プロファイルと呼�
 | アプリの目的は、すべてのユーザーの完全なユーザー プロファイルを読み書きすること    | _User.ReadWrite.All_ | すべてのユーザーの完全なプロファイルの読み取りと書き込み |
 | アプリの目的は、サインインしているユーザーのファイル、メール、カレンダー情報を読み書きすること    | _User.ReadWrite_, _Files.ReadWrite_, _Mail.ReadWrite_, _Calendars.ReadWrite_  |  ユーザーのプロファイルの読み取りおよび書き込みアクセス許可、ユーザーのプロファイルの読み取りおよび書き込みアクセス許可、ユーザーのメールの読み取りおよび書き込みアクセス許可、ユーザーのカレンダーへのフル アクセス |
 | アプリの目的は、ユーザーの個人データをエクスポートするためにデータ ポリシー操作要求を送信すること | _User.Export.All_ | ユーザーの個人データをエクスポートします。 |
-   
+
 
 ### <a name="access-scenarios-on-the-group-resource"></a>グループ リソースに対するアクセスのシナリオ
-    
+
 | **グループが関与するアプリ タスク**  |  **必要なアクセス許可** |  **アクセス許可文字列** |
 |:-------------------------------|:---------------------|:---------------|
 | アプリの目的は、グループ選択画面への表示などのために、基本グループ情報 (表示名と写真のみ) を読み取ること  | _Group.Read.All_  | すべてのグループの読み取り|
