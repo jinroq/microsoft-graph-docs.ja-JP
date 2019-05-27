@@ -1,5 +1,13 @@
-
-```Cs
+---
+description: 自動的に生成されたファイル。 変更しない
+ms.openlocfilehash: 4d559851524c190907b9454449b511a336a2cd13
+ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "34476194"
+---
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
@@ -7,7 +15,7 @@ var profilePhoto = new ProfilePhoto
 {
     Height = 99,
     Width = 99,
-    Id = "id-value",
+    Id = "id-value"
 };
 
 await graphClient.Users["{id|userPrincipalName}"].Photo
