@@ -2,12 +2,12 @@
 title: リスト governanceResources
 description: 要求者がアクセスできる governanceResource のコレクションを取得します。
 localization_priority: Normal
-ms.openlocfilehash: e68e4633735d1eecb5d4994e3c2c70bf06a70e6a
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: fa82ddf97b394af747f73133446c8bc15d21ba36
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33593542"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422410"
 ---
 # <a name="list-governanceresources"></a>リスト governanceResources
 
@@ -22,7 +22,7 @@ ms.locfileid: "33593542"
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | PrivilegedAccess AzureResources  |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | PrivilegedAccess AzureResources |
+|アプリケーション | サポートされていません。 |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -100,11 +100,11 @@ Content-Length: 1289
     ]
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_governanceresources-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_governanceresources-Javascript-snippets.md)]
 
 ---

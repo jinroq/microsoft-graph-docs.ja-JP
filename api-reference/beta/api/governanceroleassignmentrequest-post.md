@@ -2,12 +2,12 @@
 title: GovernanceRoleAssignmentRequest を作成する
 description: 役割の割り当てに対して必要な操作を表すための役割の割り当て要求を作成します。 次の表に、操作の一覧を示します。
 localization_priority: Normal
-ms.openlocfilehash: 2ab5328b9841c157a031e3e0ab9ff7599ddcaf57
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: be27c8e0bab24f6a83e970b9aae46d0742be7c10
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33593479"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422368"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>GovernanceRoleAssignmentRequest を作成する
 
@@ -35,7 +35,7 @@ ms.locfileid: "33593479"
 |:---------------------------------------|:------------------------------------------|
 | 委任 (職場または学校のアカウント)     | PrivilegedAccess AzureResources |
 | 委任 (個人用 Microsoft アカウント) | サポートされていません。                            |
-| アプリケーション                            | PrivilegedAccess AzureResources |
+| アプリケーション                            | サポートされていません。 |
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -80,7 +80,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 | 400 BadRequest | ResourceIsLocked                            | 要求本文で指定されたリソースはの状態`Locked`にあり、役割の割り当て要求を作成できません。 |
 | 400 BadRequest | SubjectNotFound                             | 要求`subjectId`本文で指定されたが見つかりません。 |
 | 400 BadRequest | Pendingrole割り当て要求                | 保留中の[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)がシステムに既に存在します。 |
-| 400 BadRequest | Role割り当てが存在する                        | 作成するよう要求された[GovernanceRoleAssignment](../resources/governanceroleassignment.md)は、システムに既に存在しています。 |
+| 400 BadRequest | Role割り当てが存在する                        | 作成するよう要求された[governanceRoleAssignment](../resources/governanceroleassignment.md)は、システムに既に存在しています。 |
 | 400 BadRequest | RoleAssignmentDoesNotExist                  | 更新または拡張が要求された[governanceRoleAssignment](../resources/governanceroleassignment.md)は、システムに存在しません。 |
 | 400 BadRequest | Role割り当て要求 Policyvalidationfailed | [GovernanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)は内部ポリシーを満たしていないため、作成することはできません。 |
 
@@ -181,11 +181,11 @@ Content-type: application/json
   }
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/governanceroleassignmentrequest_post-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/governanceroleassignmentrequest_post-Javascript-snippets.md)]
 
 ---

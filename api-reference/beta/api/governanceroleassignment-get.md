@@ -1,19 +1,19 @@
 ---
-title: governanceRoleAssignment を取得する
-description: governanceRoleAssignment のプロパティとリレーションシップを取得します。
+title: GovernanceRoleAssignment を取得する
+description: GovernanceRoleAssignment のプロパティとリレーションシップを取得します。
 localization_priority: Normal
-ms.openlocfilehash: 96499b214216576ce12f27fe448f1da9c7927847
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: e2e116baad573c8b99ab278771d1149ea3563209
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33329758"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422424"
 ---
-# <a name="get-governanceroleassignment"></a>governanceRoleAssignment を取得する
+# <a name="get-governanceroleassignment"></a>GovernanceRoleAssignment を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[governanceRoleAssignment](../resources/governanceroleassignment.md)のプロパティとリレーションシップを取得します。
+[GovernanceRoleAssignment](../resources/governanceroleassignment.md)のプロパティとリレーションシップを取得します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -22,7 +22,7 @@ ms.locfileid: "33329758"
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | PrivilegedAccess AzureResources  |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | PrivilegedAccess AzureResources |
+|アプリケーション | サポートされていません。 |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

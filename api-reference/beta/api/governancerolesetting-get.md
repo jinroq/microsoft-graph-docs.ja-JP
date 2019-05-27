@@ -2,12 +2,12 @@
 title: GovernanceRoleSetting を取得する
 description: GovernanceRoleSetting のプロパティとリレーションシップを取得します。
 localization_priority: Normal
-ms.openlocfilehash: d8d920e9abbe73de573fb41a6b7be76ae9914484
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 988fc237e76c0ec653fff768a617a08d33a6998e
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33593451"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422347"
 ---
 # <a name="get-governancerolesetting"></a>GovernanceRoleSetting を取得する
 
@@ -23,7 +23,7 @@ ms.locfileid: "33593451"
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | PrivilegedAccess AzureResources  |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | PrivilegedAccess AzureResources |
+|アプリケーション | サポートされていません。 |
 
 この API は、アクセス許可のスコープに加えて、 [governanceRoleSetting](../resources/governancerolesetting.md)が属しているリソースに対して少なくとも1つの役割の割り当てを要求する必要があります。
 ## <a name="http-request"></a>HTTP 要求
@@ -112,11 +112,11 @@ Content-length: 370
     ]
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_governancerolesetting-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_governancerolesetting-Javascript-snippets.md)]
 
 ---

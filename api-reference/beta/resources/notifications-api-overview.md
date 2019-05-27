@@ -3,12 +3,12 @@ title: Microsoft Graph の REST API 通知を使用する
 description: プッシュ通知をユーザーに送信するには、Microsoft Graph の API 通知を使用できます。 ターゲットのユーザー アカウントに通知を送信し、プラットフォームはすべてのデバイスのエンドポイントに通知を配布します。 API 通知の要求は、ユーザーの代理アクセス権と [アクセス権許可の通知]( /graph/permissions_reference)を経由して、Microsoft アカウント、または職場 / 学校のアカウントのどちらでも使用することができます。
 localization_priority: Priority
 ms.prod: project-rome
-ms.openlocfilehash: 5c6d2dd846a03430f5bae65ef3b4a6838ccf7841
-ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
+ms.openlocfilehash: 28aa795b1df9b2f4817c69332dd8bc9bf3afb172
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34036486"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422522"
 ---
 # <a name="use-the-notifications-rest-api-in-microsoft-graph"></a>Microsoft Graph の REST API 通知を使用する
 
@@ -20,4 +20,4 @@ ms.locfileid: "34036486"
 ## <a name="next-steps"></a>次の手順
 - [通知リソース](../resources/projectrome-notification.md) を参照し、ユーザーに通知を作成します。 
 - [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)で API をお試しください。
-- クライアント統合を始めるには、以下に記載されている [統合の概要](/graph/notification-integration-e2e-overview)の手順を参照してください。
+- クライアント統合を始めるには、以下に記載されている [統合の概要](/graph/notifications-integration-e2e-overview)の手順を参照してください。

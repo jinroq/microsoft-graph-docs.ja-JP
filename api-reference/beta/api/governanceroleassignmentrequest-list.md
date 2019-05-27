@@ -1,19 +1,19 @@
 ---
 title: リスト governanceRoleAssignmentRequests
-description: 'governanceRoleAssignmentRequests のコレクションを取得します。 '
+description: 'GovernanceRoleAssignmentRequests のコレクションを取得します。 '
 localization_priority: Normal
-ms.openlocfilehash: 53399bfdc0bc30c2c28c0ad97e5111908e395fc1
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 1f51c2be86424162e1c7003aaed9d34a352cbfa1
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33329607"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422452"
 ---
 # <a name="list-governanceroleassignmentrequests"></a>リスト governanceRoleAssignmentRequests
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)のコレクションを取得します。 
+[GovernanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)のコレクションを取得します。 
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -22,7 +22,7 @@ ms.locfileid: "33329607"
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | PrivilegedAccess AzureResources  |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | PrivilegedAccess AzureResources |
+|アプリケーション | サポートされていません。 |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

@@ -1,15 +1,15 @@
 ---
-title: governanceRoleAssignmentRequests のエクスポート
+title: GovernanceRoleAssignmentRequests のエクスポート
 description: ブラウザーで .csv ファイルとして解析`application/octet-stream`できる形式で governanceRoleAssignmentRequests のコレクションを取得します。
 localization_priority: Normal
-ms.openlocfilehash: c01234ce4976d6f900530bdd06d31a4df8e325b0
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 454df89b014d3f8e0ed9a80d48b0ba7d97c29558
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324176"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422406"
 ---
-# <a name="export-governanceroleassignmentrequests"></a>governanceRoleAssignmentRequests のエクスポート
+# <a name="export-governanceroleassignmentrequests"></a>GovernanceRoleAssignmentRequests のエクスポート
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,12 +22,12 @@ ms.locfileid: "33324176"
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | PrivilegedAccess AzureResources  |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | PrivilegedAccess AzureResources |
+|アプリケーション | サポートされていません。 |
 
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
-[governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)のコレクションをリソースにエクスポートする
+[GovernanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)のコレクションをリソースにエクスポートする
     
 >**注:** この要求では、アクセス許可スコープの他に、リソースに対して少なくとも1つの役割の割り当てが必要になります。 
     
@@ -35,7 +35,7 @@ ms.locfileid: "33324176"
 GET /privilegedAccess/azureResources/roleAssignments/export?$filter=resourceId+eq+'{resourceId}'
 ```
 
-[governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)のコレクションをエクスポートする
+[GovernanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)のコレクションをエクスポートする
 ```http
 GET /privilegedAccess/azureResources/roleAssignments/export?$filter=subjectId+eq+'{myId}'
 ```

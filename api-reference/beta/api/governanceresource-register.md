@@ -1,15 +1,15 @@
 ---
-title: governanceResource の登録
+title: GovernanceResource の登録
 description: PIM に管理されていない governanceResource オブジェクトを登録します。
 localization_priority: Normal
-ms.openlocfilehash: a6ad89f799ee171971f7301ed039cf1b6d9111ea
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 814ccd84d449f20882e1febbf0d48216ba3f5b89
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33329779"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422459"
 ---
-# <a name="register-governanceresource"></a>governanceResource の登録
+# <a name="register-governanceresource"></a>GovernanceResource の登録
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +24,7 @@ ms.locfileid: "33329779"
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | PrivilegedAccess AzureResources  |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | PrivilegedAccess AzureResources |
+|アプリケーション | サポートされていません。 |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -43,9 +43,9 @@ POST /privilegedAccess/azureResources/resources/register
 
 ### <a name="request-body"></a>要求本文
 
-|Parameters      |型                 |必須 |説明|
+|パラメーター      |型                 |必須 |説明|
 |:-------------|:----------------------|:--------|:----------|
-|externalId    |String                 |✓        |PIM に登録するリソースの externalid。|
+|externalId    |String                 |✓        |PIM に登録するリソースの externalId。|
 
 ### <a name="response"></a>応答
 成功した場合、このメソッド`200 OK`は応答を返します。

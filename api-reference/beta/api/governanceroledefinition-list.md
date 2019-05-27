@@ -2,12 +2,12 @@
 title: リスト governanceRoleDefinitions
 description: リソース上の governanceRoleDefinitions のコレクションを取得します。
 localization_priority: Normal
-ms.openlocfilehash: b79a8c27a6d2c26b5f827d87762f7edc9c0aaf3b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: ec648687b70dac37b6775ac1d3d14b3fcd6c7b7e
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324224"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422480"
 ---
 # <a name="list-governanceroledefinitions"></a>リスト governanceRoleDefinitions
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -21,7 +21,7 @@ ms.locfileid: "33324224"
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | PrivilegedAccess AzureResources  |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | PrivilegedAccess AzureResources |
+|アプリケーション | サポートされていません。 |
 
 この API は、アクセス許可スコープの他に、リソースに対して少なくとも1つの役割の割り当てを要求する必要があります。
 

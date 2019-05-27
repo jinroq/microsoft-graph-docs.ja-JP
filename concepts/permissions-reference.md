@@ -3,32 +3,20 @@ title: 'Microsoft Graph のアクセス許可のリファレンス '
 description: Microsoft Graph は、アプリがアクセスするリソース (ユーザー、グループ、メールなど) を制御する詳細なアクセス許可を公開しています。 開発者は、アプリが要求する Microsoft Graph のアクセス許可を決定します。
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: 0af2e83628b7bf221159dd0d2610feb808242f1f
-ms.sourcegitcommit: abca7fcefeaa74b50f4600b35d816b626ba08468
+ms.openlocfilehash: fa1c479a55d6aef5653e06a85cb6f1d4148cea66
+ms.sourcegitcommit: 17eec88891d62b27dcc5d0abdff9fcff2186b31f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "34310994"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34407087"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph のアクセス許可のリファレンス 
-Microsoft Graph は、アプリがアクセスするリソース (ユーザー、グループ、メールなど) を制御する詳細なアクセス許可を公開しています。開発者は、アプリが要求する Microsoft Graph のアクセス許可を決定します。そのアクセス許可に同意するかどうかは、アプリ**に**サインインするときに、ユーザー (場合によっては管理者) が決定します。ユーザーが同意すると、アプリは、そのアプリが必要としているリソースと API にアクセスできるようになります。サインインしているユーザーを必要としないアプリの場合、アクセス許可は、アプリのインストール時またはサインアップ時に管理者が事前に同意できます。 
 
-## <a name="delegated-permissions-application-permissions-and-effective-permissions"></a>委任されたアクセス許可、アプリケーションのアクセス許可、有効なアクセス許可
-Microsoft Graph には、「**委任されたアクセス許可**」と「**アプリケーションのアクセス許可**」という 2 種類のアクセス許可があります。 
+アプリから Microsoft Graph のデータにアクセスする場合、ユーザーまたは管理者は、同意のプロセスを通してそのアプリに正しいアクセス許可を付与する必要があります。 このトピックでは、Microsoft Graph API の各主要なセットに関連付けられているアクセス許可について説明します。 また、アクセス許可の使用方法に関するガイダンスを提供しています。 
 
-- 
-  **委任されたアクセス許可**は、サインインしているユーザーが存在するアプリで使用します。これに該当するアプリの場合は、ユーザーまたは管理者がアプリの要求するアクセス許可に同意します。アプリには、Microsoft Graph の呼び出し時に、サインインしているユーザーとして動作するためのアクセス許可が委任されます。一部の委任されたアクセス許可は非管理ユーザーの同意によって付与されますが、高度な特権が付与されるアクセス許可には[管理者の同意](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/active-directory-v2-scopes#using-the-admin-consent-endpoint)が必要になります。  
+アクセス許可のしくみを詳細に確認するには、「[認証と承認の基本方法](https://docs.microsoft.com/ja-JP/graph/auth/auth-concepts?view=graph-rest-1.0#microsoft-graph-permissions)」を参照してください。
 
-- 
-  **アプリケーションのアクセス許可**は、サインインしているユーザーが存在しないアプリで使用します。たとえば、バックグラウンド サービスやデーモンなどのアプリです。アプリケーションのアクセス許可は、[管理者のみが同意](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/active-directory-v2-scopes#requesting-consent-for-an-entire-tenant)できます。 
-
-_有効なアクセス許可_は、アプリが Microsoft Graph に要求を出すときに付与されるアクセス許可です。アプリに付与される委任されたアクセス許可とアプリケーションのアクセス許可の相違点について理解することに加えて、Microsoft Graph の呼び出し時の有効なアクセス許可についても理解することが重要です。
-
-- 委任されたアクセス許可の場合、アプリの_有効なアクセス許可_は、アプリに付与されている委任されたアクセス許可 (同意によって付与) と現在サインインしているユーザーの特権が重なる範囲に収まる最小権限になります。サインインしているユーザーよりも高い特権がアプリに付与されることはありません。組織では、サインインしているユーザーの特権は、ポリシーで決まることもあれば、1 つ以上の管理者ロールに含まれるメンバーシップで決まることもあります。管理者ロールの詳細については、「[Azure Active Directory での管理者ロールの割り当て](https://docs.microsoft.com/ja-JP/azure/active-directory/active-directory-assign-admin-roles)」を参照してください。<br/><br/>たとえば、委任されたアクセス許可として _User.ReadWrite.All_ がアプリに付与されているとします。通常、このアクセス許可は、組織内のすべてのユーザーのプロファイルを読み取り、更新するためのアクセス許可をアプリに付与します。サインインしているユーザーが全体管理者の場合、アプリは、組織内のすべてのユーザーのプロファイルを更新できるようになります。ただし、サインインしているユーザーが管理者ロールに含まれていない場合、アプリは、そのサインインしているユーザーのプロファイルのみを更新できるようになります。組織内の他のユーザーのプロファイルは更新できません。これは、アプリが代理するアクセス許可を持つユーザーに、そのような権限が付与されていないためです。
-  
-- アプリケーションのアクセス許可の場合、アプリの_有効なアクセス許可_は、そのアクセス許可が暗示する完全なレベルの権限になります。たとえば、アプリケーションのアクセス許可として _User.ReadWrite.All_ が付与されているアプリは、組織内のすべてのユーザーのプロファイルを更新できます。 
-
-### <a name="microsoft-graph-permission-names"></a>Microsoft Graph のアクセス許可名
+## <a name="microsoft-graph-permission-names"></a>Microsoft Graph のアクセス許可名
 
 Microsoft Graph のアクセス許可名は、「_リソース.操作.制約_」という簡単なパターンに従います。たとえば、_User.Read_ ではサインインしているユーザーのプロファイルを読み取るためのアクセス許可を付与し、_User.ReadWrite_ ではサインインしているユーザーのプロファイルを読み取りおよび変更するためのアクセス許可を付与します。また、_Mail.Send_ ではサインインしているユーザーの代わりにメールを送信するためのアクセス許可を付与します。 
 
@@ -41,15 +29,15 @@ Microsoft Graph のアクセス許可名は、「_リソース.操作.制約_」
 
 > **注**:委任されたシナリオでは、アプリに付与される有効なアクセス許可が、組織内のサインインしているユーザーの特権によって制限されることがあります。
 
-### <a name="microsoft-accounts-and-work-or-school-accounts"></a>Microsoft アカウントと職場または学校アカウント
+## <a name="microsoft-accounts-and-work-or-school-accounts"></a>Microsoft アカウントと職場または学校アカウント
 
-すべてのアクセス許可が、Microsoft アカウントと職場または学校アカウントの両方で有効になるわけではない点に注意してください。 各アクセス許可グループについては、「**Microsoft アカウントのサポート**」列を確認して、特定のアクセス許可が Microsoft アカウントと職場または学校アカウントのどちらで有効になるか、または両方で有効になるかを判断してください。 
+すべてのアクセス許可が、Microsoft アカウントと職場または学校アカウントの両方で有効になるわけではない点に注意してください。 各アクセス許可グループについては、「**Microsoft アカウントのサポート**」列を確認して、特定のアクセス許可が Microsoft アカウントと職場または学校アカウントのどちらで有効になるか、または両方で有効になるかを判断してください。
 
-### <a name="user-and-group-search-limitations-for-guest-users-in-organizations"></a>組織のゲスト ユーザーに対するユーザーとグループの検索の制限事項
+## <a name="user-and-group-search-limitations-for-guest-users-in-organizations"></a>組織のゲスト ユーザーに対するユーザーとグループの検索の制限事項
 
-ユーザーとグループの検索機能を使用すると、`/users` または `/groups` リソース セットに対するクエリ (例: `https://graph.microsoft.com/v1.0/users`) を実行して、アプリで組織のディレクトリ内のユーザーまたはグループを検索できるようになります 管理者とユーザーは、どちらもこの機能を使用でますが、ゲスト ユーザーは使用できません。 
+ユーザーとグループの検索機能を使用すると、`/users` または `/groups` リソース セットに対するクエリ (例: `https://graph.microsoft.com/v1.0/users`) を実行して、アプリで組織のディレクトリ内のユーザーまたはグループを検索できるようになります 管理者とユーザーは、どちらもこの機能を使用でますが、ゲスト ユーザーは使用できません。
 
-サインインしているユーザーがゲスト ユーザーの場合、アプリに付与されたアクセス許可に応じて、特定のユーザーまたはグループのプロファイルを読み取ることはできますが (例: `https://graph.microsoft.com/v1.0/users/241f22af-f634-44c0-9a15-c8cd2cea5531`)、複数のリソースを返す可能性のある `/users` または `/groups` リソース セットに対するクエリは実行できません。 
+サインインしているユーザーがゲスト ユーザーの場合、アプリに付与されたアクセス許可に応じて、特定のユーザーまたはグループのプロファイルを読み取ることはできますが (例: `https://graph.microsoft.com/v1.0/users/241f22af-f634-44c0-9a15-c8cd2cea5531`)、複数のリソースを返す可能性のある `/users` または `/groups` リソース セットに対するクエリは実行できません。
 
 適切なアクセス許可があるアプリは、ナビゲーション プロパティのリンク (たとえば、`/users/{id}/directReports` や `/groups/{id}/members`) に従って取得するユーザーまたはグループのプロファイルの読み取りが可能になります。
 
@@ -787,7 +775,7 @@ _Notes.Create_ のアクセス許可があるアプリは、サインインし�
 職場または学校アカウントの場合、_Notes.Read.All_ および _Notes.ReadWrite.All_ により、アプリは、サインインしているユーザーが組織内でアクセス許可を持つ別のユーザーの OneNote コンテンツにアクセスできるようになります。
 
 ### <a name="example-usage"></a>使用例
-#### <a name="delegated"></a>Delegated
+#### <a name="delegated"></a>委任
 
 * _Notes.Create_:サインインしているユーザー用に新しいノートブックを作成します (`POST /me/onenote/notebooks`)。
 * _Notes.Read_:サインインしているユーザーのノートブックを読み取ります (`GET /me/onenote/notebooks`)。
@@ -1228,7 +1216,7 @@ _User.ReadBasic.All_ アクセス許可では、基本プロファイルと呼�
 
 ## <a name="permission-scenarios"></a>アクセス許可のシナリオ
 
-ここでは、組織内の[ユーザー](/graph/api/resources/user?view=graph-rest-1.0) リソースと[グループ](/graph/api/resources/group?view=graph-rest-1.0) リソースを対象とした、いくつかの一般的なシナリオを示します。この表には、シナリオごとに必要になる特定の操作を実行するために、アプリが必要とするアクセス許可を示しています。場合によっては、特定の操作をアプリが実行できるかどうかは、アクセス許可が、アプリケーションのアクセス許可か、委任されたアクセス許可かによって決まります。委任されたアクセス許可の場合、アプリの有効なアクセス許可は、サインインしているユーザーの組織内の特権にも依存します。詳細については、「[委任されたアクセス許可、アプリケーションのアクセス許可、有効なアクセス許可](#delegated-permissions-application-permissions-and-effective-permissions)」を参照してください。
+ここでは、組織内の[ユーザー](/graph/api/resources/user?view=graph-rest-1.0) リソースと[グループ](/graph/api/resources/group?view=graph-rest-1.0) リソースを対象とした、いくつかの一般的なシナリオを示します。この表には、シナリオごとに必要になる特定の操作を実行するために、アプリが必要とするアクセス許可を示しています。場合によっては、特定の操作をアプリが実行できるかどうかは、アクセス許可が、アプリケーションのアクセス許可か、委任されたアクセス許可かによって決まります。委任されたアクセス許可の場合、アプリの有効なアクセス許可は、サインインしているユーザーの組織内の特権にも依存します。詳細については、「[委任されたアクセス許可、アプリケーションのアクセス許可、有効なアクセス許可](./auth/auth-concepts#microsoft-graph-permissions)」を参照してください。
 
 ### <a name="access-scenarios-on-the-user-resource"></a>ユーザー リソースに対するアクセスのシナリオ
 

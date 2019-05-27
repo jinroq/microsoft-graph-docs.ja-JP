@@ -1,5 +1,13 @@
-
-```Javascript
+---
+description: 自動的に生成されたファイル。 変更しない
+ms.openlocfilehash: c634633cce1ec4fea0efa612bf9e292d39579d85
+ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "34480156"
+---
+```javascript
 
 const options = {
     authProvider,

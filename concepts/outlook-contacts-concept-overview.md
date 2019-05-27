@@ -4,12 +4,12 @@ description: Outlook の連絡先を利用すると、個人用連絡先のデ�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 6991845e05373a1c874553b8b195f77fb79757b7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 241227993a8194d955d0a28f8fcfaf9f946a1e68
+ms.sourcegitcommit: 17eec88891d62b27dcc5d0abdff9fcff2186b31f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555214"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34407080"
 ---
 # <a name="outlook-personal-contacts-api-overview"></a>Outlook 個人用連絡先 API の概要
 
@@ -33,7 +33,7 @@ Outlook は、何億人という消費者および何千万という組織ユー
 
 ### <a name="share-contact-information"></a>連絡先情報を共有する
 
-連絡先 API を利用することにより、サインイン ユーザー、またはサインイン ユーザーと連絡先を共有または委任しているユーザーの連絡先項目を入手することができます。 たとえば、Garth が連絡先フォルダーを John と共有している場合、または Garth がアクセスを John に委任している場合、John からの[アクセス許可委任](permissions-reference.md#delegated-permissions-application-permissions-and-effective-permissions)により Garth が共有に設定している予定表およびコンテンツにも読み取りアクセスが可能になります。
+連絡先 API を利用することにより、サインイン ユーザー、またはサインイン ユーザーと連絡先を共有または委任しているユーザーの連絡先項目を入手することができます。 たとえば、Garth が連絡先フォルダーを John と共有している場合、または Garth がアクセスを John に委任している場合、John からの[アクセス許可委任](./auth/auth-concepts#microsoft-graph-permissions)により Garth が共有に設定している予定表およびコンテンツにも読み取りアクセスが可能になります。
 
 
 ### <a name="leverage-people-api-in-microsoft-graph-to-make-better-use-of-all-people-data"></a>Microsoft Graph の連絡先 API 利用であらゆる連絡先データをさらに有効利用

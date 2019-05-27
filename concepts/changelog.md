@@ -3,12 +3,12 @@ title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 887bcdc17dce733509c2a9763c91a65e46e7c644
-ms.sourcegitcommit: abca7fcefeaa74b50f4600b35d816b626ba08468
+ms.openlocfilehash: e4f8be6555aef71bfcb67f8fbc8671bacf6e6728
+ms.sourcegitcommit: afea19508ad74a3583b11b5f7b544c53eafb3740
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "34311176"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "34344984"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
@@ -17,6 +17,13 @@ ms.locfileid: "34311176"
 Microsoft Graph API に関する既知の問題の詳細については、「[既知の問題](known-issues.md)」を参照してください。
 
 ## <a name="may-2019"></a>2019 年 5 月
+
+### <a name="reports-apis"></a>レポート API
+
+| **変更の種類** | **バージョン** | **説明**                  |
+|:----------------|:------------|:-----------------------------------------|
+| 追加        | ベータ版  | **OwnerPrincipalName**プロパティが [oneDriveUsageAccountDetail](/graph/api/resources/oneDriveUsageAccountDetail?view=graph-rest-beta)エンティティに追加されました。|
+| 追加        | ベータ版  | **ownerPrincipalName**プロパティが[sharePointSiteUsageDetail](/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta)エンティティに追加されました。|
 
 ### <a name="directory-apis"></a>ディレクトリ API
 | **変更の種類** | **バージョン** | **説明** |
@@ -78,12 +85,6 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | **変更の種類** | **バージョン** | **説明**              |
 | :-------------- | :---------- | :--------------------------------------- |
 | 追加        | v1.0       | セキュア スコア API を [セキュリティ API](/graph/api/resources/securescore-api-overview?view=graph-rest-1.0) に追加しました。これには次のリソースと操作が含まれています。<br/>[secureScore](/graph/api/resources/securescore?view=graph-rest-1.0) (および関連するエンティティ)<br/>[secureScores のリスト](/graph/api/securescores-list?view=graph-rest-1.0)<br/>[secureScoreControlProfile](/graph/api/resources/securescorecontrolprofile?view=graph-rest-1.0)<br/>[secureScoreControlProfiles のリスト](/graph/api/securescorecontrolprofiles-list?view=graph-rest-1.0)<br/>[secureScoreControlProfiles の更新](/graph/api/securescorecontrolprofiles-update?view=graph-rest-1.0) |
-
-### <a name="microsoft-teams-apis"></a>Microsoft Teams API
-
-| **変更の種類** | **バージョン**   | **説明**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| 追加 | ベータ版 | **チャット** に、[webUrl](/graph/api/resources/chatmessage) プロパティを追加しました。|
 
 
 ## <a name="april-2019"></a>2019 年 4 月
@@ -151,6 +152,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 |追加 |v1.0 | [installedApps](/graph/api/resources/teamsappinstallation?view=graph-rest-1.0) リソースに対するアプリケーション アクセス許可のサポートを追加しました。|
 |追加 |v1.0| [channel](/graph/api/resources/channel?view=graph-rest-1.0) に、**email** および **webUrl** プロパティを追加しました。|
 | 追加 | ベータ版 | [チャット](/api-reference/beta/resources/chat.md) リソースと関連メソッドが追加されました。 |
+| 追加 | ベータ版 | [conversation member](/api-reference/beta/resources/conversationmember.md) リソースと関連メソッドが追加されました。 |
 
 ### <a name="onedrive-and-sharepoint-apis"></a>OneDrive と SharePoint の API
 

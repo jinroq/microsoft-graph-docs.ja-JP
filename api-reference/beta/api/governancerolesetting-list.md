@@ -2,12 +2,12 @@
 title: リスト governanceRoleSettings
 description: リソース上の governanceRoleSettings のコレクションを取得します。
 localization_priority: Normal
-ms.openlocfilehash: 95762771cd52308459aec4e015c682e05307a43b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 64bfd50a4b289a820b99c32d76b831d1fb4338d9
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324279"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422445"
 ---
 # <a name="list-governancerolesettings"></a>リスト governanceRoleSettings
 
@@ -22,7 +22,7 @@ ms.locfileid: "33324279"
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | PrivilegedAccess AzureResources  |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | PrivilegedAccess AzureResources |
+|アプリケーション | サポートされていません。 |
 
 この API は、アクセス許可スコープの他に、リソースに対して少なくとも1つの役割の割り当てを要求する必要があります。
 ## <a name="http-request"></a>HTTP 要求
