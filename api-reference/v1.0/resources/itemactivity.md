@@ -5,12 +5,12 @@ title: itemActivity リソースの種類
 description: ItemActivity オブジェクトは、アイテムに対して行われたアクティビティに関する情報を提供します。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 9c05493ddeb8e007da6ba8b7508369b4d013e672
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+ms.openlocfilehash: 98ae9e4881de18c94490469b10df43b2aaf58140
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33970757"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536688"
 ---
 # <a name="itemactivity-resource-type"></a>itemActivity リソースの種類
 
@@ -27,12 +27,12 @@ ItemActivity 内で行われたアクションは、 [Itemactionset][]プロパ�
 
 | プロパティ | 型                    | 説明
 |:---------|:------------------------|:----------------------------------------
-| ID       | string                  | アクティビティの一意識別子。 値の取得のみ可能です。
+| id       | string                  | アクティビティの一意識別子。 読み取り専用です。
 | 接続   | [accessAction][]        | アイテムがアクセスされました。
-| actor    | [identitySet][]         | アクションを実行したユーザーの識別情報。 値の取得のみ可能です。
+| actor    | [identitySet][]         | アクションを実行したユーザーの識別情報。 読み取り専用です。
 | activityDateTime    | DateTimeOffset | アクティビティがいつ発生したかについての詳細。 読み取り専用です。
 
-[accessAction]: accessAction.md
+[accessAction]: accessaction.md
 [identitySet]: identityset.md
 
 ## <a name="relationships"></a>リレーションシップ

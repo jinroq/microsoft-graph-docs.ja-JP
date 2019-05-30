@@ -4,12 +4,12 @@ description: TiIndicator オブジェクトのプロパティを更新します�
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 75a34acb98ee00e737fb75e5e49f7c0fb4adea20
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 55459b9d095738471d8e1f6b91244752b086b238
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33637571"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536460"
 ---
 # <a name="update-tiindicator"></a>tiIndicator を更新する
 
@@ -49,10 +49,10 @@ PATCH /security/tiIndicators/{id}
 | プロパティ     | 型        | 説明 |
 |:-------------|:------------|:------------|
 |action|string| インジケーターが targetProduct セキュリティツール内から一致した場合に適用するアクション。 使用可能な値は、`unknown`、`allow`、`block`、`alert` です。|
-|activityGroupNames|String collection|脅威指標でカバーされる悪意のあるアクティビティを担当する、その当事者のためのサイバー脅威インテリジェンス名。|
+|activityGroupNames|文字列コレクション|脅威指標でカバーされる悪意のあるアクティビティを担当する、その当事者のためのサイバー脅威インテリジェンス名。|
 |additionalInformation|String|他の tiIndicator プロパティでカバーされていない特別なデータが配置される可能性がある catchall 領域。 通常、additionalInformation に配置されるデータは、targetProduct セキュリティツールでは使用されません。|
 |confidence|Int32|インジケーター内のデータが悪意のある動作を正確に特定していることを表す整数。 指定できる値は 0 ~ 100 で、100は最高です。|
-|説明|String|インジケーターで表される脅威の簡単な説明 (100 文字以内)。|
+|description|String|インジケーターで表される脅威の簡単な説明 (100 文字以内)。|
 |diamondModel|[diamondModel](#diamondmodel-values)|このインジケーターが存在する菱形モデルの領域。 可能な値は、`unknown`、`adversary`、`capability`、`infrastructure`、`victim` です。|
 |expirationDateTime|DateTimeOffset| インジケーターがいつ期限切れになるかを示す DateTime 文字列。 システム内の古いインジケーターが保持されないようにするには、すべてのインジケーターに有効期限が設定されている必要があります。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表します。これは常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`2014-01-01T00:00:00Z`|
 |externalId|String|インジケーターをインジケータープロバイダーのシステム (例: 外部キー) に結びつける識別番号。|
@@ -60,7 +60,7 @@ PATCH /security/tiIndicators/{id}
 |"出てきたチェイン"|[](#killchain-values)指定したコレクション|このインジケーターが対象とする、キルチェーン上の点または点を表す文字列の JSON 配列。 正確な値については、以下の「"" を参照」の値」を参照してください。|
 |Knownfalse 陽性|String|インジケーターが誤検知を引き起こす可能性があるシナリオ。 これは、人間が判読できるテキストである必要があります。|
 |lastReportedDateTime|DateTimeOffset|最後にインジケーターが表示された時刻。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`2014-01-01T00:00:00Z`|
-|悪意のある Refrefamilynames|String collection|インジケーターに関連付けられたマルウェアファミリ名 (存在する場合)。 Microsoft では、Windows Defender セキュリティインテリジェンスの[脅威の百科事典](https://www.microsoft.com/wdsi/threats)を使用して検出できる場合は、microsoft マルウェアファミリ名を推奨しています。|
+|悪意のある Refrefamilynames|文字列コレクション|インジケーターに関連付けられたマルウェアファミリ名 (存在する場合)。 Microsoft では、Windows Defender セキュリティインテリジェンスの[脅威の百科事典](https://www.microsoft.com/wdsi/threats)を使用して検出できる場合は、microsoft マルウェアファミリ名を推奨しています。|
 |「いいえ Veonly」|Boolean|エンドユーザーに表示されるイベントをインジケーターがトリガーするかどうかを決定します。 [True] に設定されている場合、セキュリティツールは、' hit ' が発生したことをエンドユーザーに通知しません。 これは、通常、一致が発生したが、その操作は実行されないことをログに記録するセキュリティ製品によって、監査またはサイレントモードとして扱われます。 既定値は False です。|
 |severity|Int32|インジケーター内のデータによって識別される、悪意のある動作の重要度を表す整数。 指定可能な値は0–5で、5は最も深刻であり、0はまったく重要ではありません。 既定値は3です。|
 |タグ|String collection|任意のタグ/キーワードを格納する文字列の JSON 配列。|
@@ -104,7 +104,7 @@ PATCH /security/tiIndicators/{id}
 
 成功した場合、このメソッドは `204 No Content` 応答コードを返します。
 
-省略可能な`200 OK`要求ヘッダーが使用されている場合、メソッドは応答コードと、応答本文で更新された[tiindicator](../resources/tiIndicator.md)オブジェクトを返します。
+省略可能な`200 OK`要求ヘッダーが使用されている場合、メソッドは応答コードと、応答本文で更新された[tiindicator](../resources/tiindicator.md)オブジェクトを返します。
 
 ## <a name="examples"></a>例
 
@@ -140,11 +140,11 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_tiIndicator-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_tiIndicator-Javascript-snippets.md)]
 
 ---

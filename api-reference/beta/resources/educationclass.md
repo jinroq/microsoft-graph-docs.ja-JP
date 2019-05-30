@@ -4,12 +4,12 @@ description: '学校内のクラスを表します。 **educationClass** リソ�
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 2a1fb4434933a4cc41c9a84c54864f2211f40962
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: dfce83c99ec886a01c2c52c3bae58c91b12fa0b0
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334433"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536171"
 ---
 # <a name="educationclass-resource-type"></a>educationClass リソース タイプ
 
@@ -30,18 +30,18 @@ ms.locfileid: "33334433"
 |[Add teacher](../api/educationclass-post-teachers.md) |[educationUser](educationuser.md)| teachers ナビゲーション プロパティに投稿することで、クラスの新しい **educationUser** を追加します。|
 |[List teachers](../api/educationclass-list-teachers.md) |[educationUser](educationuser.md) コレクション| クラスの教師一覧を取得します。|
 |[Remove teacher](../api/educationclass-delete-teachers.md) |[educationUser](educationuser.md)| teachers ナビゲーション プロパティによって、クラスから **educationUser** を削除します。|
-|[educationAssignment を作成する](../api/educationclass-post-assignments.md) |[educationAssignment](../resources/educationassignment.md)| assignments コレクションへの投稿によって新しい**educationAssignment**を作成します。|
-|[割り当てを一覧表示する](../api/educationclass-list-assignments.md) |[educationAssignment](../resources/educationassignment.md)コレクション| **educationAssignment**オブジェクトのコレクションを取得します。|
+|[EducationAssignment を作成する](../api/educationclass-post-assignments.md) |[educationAssignment](../resources/educationassignment.md)| Assignments コレクションへの投稿によって新しい**educationAssignment**を作成します。|
+|[割り当てを一覧表示する](../api/educationclass-list-assignments.md) |[educationAssignment](../resources/educationassignment.md)コレクション| **EducationAssignment**オブジェクトのコレクションを取得します。|
 |[グループを取得する](../api/educationclass-get-group.md) |[group](group.md)| この **educationClass** に対応する Office 365 **group**を取得します。|
-|[educationCategory を作成する](../api/educationclass-post-category.md) | [educationCategory](educationCategory.md) | このクラスの新しい**educationCategory**を作成します。|
-|[カテゴリの一覧表示](../api/educationclass-list-categories.md) | [educationCategory](educationCategory.md)コレクション | このクラスに属する**educationCategory**オブジェクトのリストを取得します。|
+|[EducationCategory を作成する](../api/educationclass-post-category.md) | [educationCategory](educationcategory.md) | このクラスの新しい**educationCategory**を作成します。|
+|[カテゴリの一覧表示](../api/educationclass-list-categories.md) | [educationCategory](educationcategory.md)コレクション | このクラスに属する**educationCategory**オブジェクトのリストを取得します。|
 |[Update](../api/educationclass-update.md) | [educationClass](educationclass.md)    |**educationClass** オブジェクトを更新します。 |
-|[削除](../api/educationclass-delete.md) | なし |**educationClass** オブジェクトを削除します。 |
+|[Delete](../api/educationclass-delete.md) | None |**educationClass** オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|id| String| クラスの一意の識別子。|
+|id| 文字列| クラスの一意の識別子。|
 |description|String| クラスの説明。|
 |displayName|文字列| クラスの名前。|
 |mailNickname|String| すべてのメンバーに電子メールを送信する際のメール名 (この機能が有効な場合)。 |

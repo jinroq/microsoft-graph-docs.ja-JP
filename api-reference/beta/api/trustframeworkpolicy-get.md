@@ -1,21 +1,21 @@
 ---
-title: trustframeworkpolicy の取得
-description: この操作では、Azure AD B2C テナントから既存の trustframeworkpolicy コンテンツを取得します。
+title: TrustFrameworkPolicy の取得
+description: この操作では、Azure AD B2C テナントから既存の trustFrameworkPolicy コンテンツを取得します。
 localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1e16c636dd1a367978396af7fcbe21aebfa4cd37
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 986d6dc109a334e0a64e5472d5de6d80850b55e3
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335095"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536044"
 ---
-# <a name="get-trustframeworkpolicy"></a>trustframeworkpolicy の取得
+# <a name="get-trustframeworkpolicy"></a>TrustFrameworkPolicy の取得
 
 >**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでは、これらの API の使用はサポートされていません。
 
-既存の[trustframeworkpolicy](../resources/trustframeworkpolicy.md)の内容を取得します。
+既存の[Trustframeworkpolicy](../resources/trustframeworkpolicy.md)の内容を取得します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -23,7 +23,7 @@ ms.locfileid: "33335095"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント)|ポリシー. trustframework, policy. すべて|
+|委任 (職場または学校のアカウント)|ポリシー. TrustFramework, Policy. すべて|
 |委任 (個人用 Microsoft アカウント)| サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -52,13 +52,13 @@ GET /trustFramework/policies/{id}/$value
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[trustframeworkpolicy](../resources/trustFrameworkpolicy.md)の XML 表記を返します。  
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[TRUSTFRAMEWORKPOLICY](../resources/trustframeworkpolicy.md)の XML 表記を返します。  
 
 >**注:** 応答コンテンツタイプはになり`application/xml`ます。
 
 ## <a name="example"></a>例
 
-次の例では、特定の**trustframeworkpolicy**を取得します。
+次の例では、特定の**Trustframeworkpolicy**を取得します。
 
 ##### <a name="request"></a>要求
 

@@ -4,12 +4,12 @@ description: さまざまな種類の監査ログが含まれています。 こ
 author: dhanyahk
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 204dfbb3f03be9550429694434bcb420b93e788d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a0f961850e0ef48776cf708348fcbacf4c9642c3
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951407"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536037"
 ---
 # <a name="auditlogroot-resource-type"></a>auditLogRoot リソースの種類
 
@@ -28,12 +28,12 @@ ms.locfileid: "33951407"
 
 なし
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|directoryAudits|[Directoryaudit](directoryAudit.md)コレクション| 読み取り専用です。 Null 許容型です。|
-|signIns|[サインイン](signIn.md)コレクション| 読み取り専用。Null 許容型です。|
+|directoryAudits|[Directoryaudit](directoryaudit.md)コレクション| 読み取り専用です。 Null 許容型。|
+|signIns|[サインイン](signin.md)コレクション| 読み取り専用。Null 許容型です。|
 
 ## <a name="json-representation"></a>JSON 表記
 

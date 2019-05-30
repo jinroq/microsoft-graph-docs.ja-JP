@@ -1,17 +1,17 @@
 ---
-title: リソースの種類の timeoff
+title: リソースの種類の timeOff
 description: スケジュールに含まれる非稼働時間の単位。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 848365a812053b7788db37395bee8662d69cda37
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 060d155b713b46c36dc5c3c4eed433142822857d
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342035"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34537031"
 ---
-# <a name="timeoff-resource-type"></a>リソースの種類の timeoff
+# <a name="timeoff-resource-type"></a>リソースの種類の timeOff
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,19 +21,19 @@ ms.locfileid: "33342035"
 
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
-|[timeoff の作成](../api/schedule-post-timesoff.md) | [timeoff](timeOff.md) | 新しい `timeOff` オブジェクトを作成します。|
-|[timeoffs のリスト](../api/schedule-list-timesoff.md) | [timeoff](timeOff.md)コレクション | このスケジュールでオブジェクト`timeOff`のリストを取得します。|
-|[timeoff を取得する](../api/timeoff-get.md) | [timeoff](timeOff.md) | ID で `timeOff` を取得します。|
-|[timeoff を置換する](../api/timeoff-put.md) | [timeoff](timeOff.md) | `timeOff` を置き換えます。|
-|[timeoff の削除](../api/timeoff-delete.md) | なし | スケジュールから`timeOff`を削除します。|
+|[TimeOff の作成](../api/schedule-post-timesoff.md) | [timeOff](timeoff.md) | 新しい `timeOff` オブジェクトを作成します。|
+|[TimeOffs のリスト](../api/schedule-list-timesoff.md) | [Timeoff](timeoff.md)コレクション | このスケジュールでオブジェクト`timeOff`のリストを取得します。|
+|[TimeOff を取得する](../api/timeoff-get.md) | [timeOff](timeoff.md) | ID で `timeOff` を取得します。|
+|[TimeOff を置換する](../api/timeoff-put.md) | [timeOff](timeoff.md) | `timeOff` を置き換えます。|
+|[TimeOff の削除](../api/timeoff-delete.md) | None | スケジュールから`timeOff`を削除します。|
 
 ## <a name="properties"></a>プロパティ
 |名前          |型           |説明                                                                                                                                      |
 |--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | id            |`string`      |`timeOff` の ID。|
 | userId            |`string`      |に割り当てられているユーザー `timeOff`の ID。 必須です。|
-| sharedtimeoff     | [timeoffitem](timeoffitem.md)  |従業員とマネージャーの両方`timeOff`に表示される共有バージョン。 必須です。|
-| draftTimeOff      | [timeoffitem](timeoffitem.md)        |この`timeOff`の下書きバージョンは、マネージャーが表示できます。 必須。|
+| sharedTimeOff     | [timeOffItem](timeoffitem.md)  |従業員とマネージャーの両方`timeOff`に表示される共有バージョン。 必須です。|
+| draftTimeOff      | [timeOffItem](timeoffitem.md)        |この`timeOff`の下書きバージョンは、マネージャーが表示できます。 必須。|
 | createdDateTime       |`DateTimeOffset`        |これ`timeOff`が最初に作成されたタイムスタンプ。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表します。これは常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、'2014-01-01T00:00:00Z'.のようになります。 |
 | lastModifiedDateTime      |`DateTimeOffset`        |これ`timeOff`が最後に更新されたタイムスタンプ。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表します。これは常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、'2014-01-01T00:00:00Z'.のようになります。 |
 | lastModifiedBy        | [identitySet](identityset.md)        |この `timeOff` を最後に更新した ID。 |

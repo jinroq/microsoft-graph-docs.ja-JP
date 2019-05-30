@@ -1,21 +1,21 @@
 ---
 title: playPromptOperation リソースの種類
-description: playprompt アクションの結果を取得する playprompt 操作。
+description: Playprompt アクションの結果を取得する playPrompt 操作。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 89a47fc8400d2f0d426ef6f683eb566f9c2376d4
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 663675bb895d452c9ad50c89f22f1a51efca20a9
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344370"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536996"
 ---
 # <a name="playpromptoperation-resource-type"></a>playPromptOperation リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-playprompt アクションの結果を取得する playprompt 操作。
+Playprompt アクションの結果を取得する playPrompt 操作。
 
 ## <a name="properties"></a>プロパティ
 
@@ -24,9 +24,9 @@ playprompt アクションの結果を取得する playprompt 操作。
 | clientContext       | String                      | クライアントコンテキスト。                                                                |
 | 「補完の理由」    | String                      | 可能な値は、`unknown`、`completedSuccessfully`、`mediaOperationCanceled` です。 |
 | createdDateTime     | DateTimeOffset              | 操作の開始時刻。                                                   |
-| id                  | String                      | 読み取り専用です。                                                                         |
-| lastactiondatetime  | DateTimeOffset              | 操作の最後の操作の時刻。                                      |
-| resultInfo          | [resultInfo](resultInfo.md) | 結果の情報。 読み取り専用です。 サーバーによって生成されます。                               |
+| id                  | 文字列                      | 読み取り専用です。                                                                         |
+| lastActionDateTime  | DateTimeOffset              | 操作の最後の操作の時刻。                                      |
+| resultInfo          | [resultInfo](resultinfo.md) | 結果の情報。 読み取り専用です。 サーバーによって生成されます。                               |
 | status              | String                      | 使用可能な値: `notStarted`、`running`、`completed`、`failed`。               |
 
 ## <a name="relationships"></a>リレーションシップ

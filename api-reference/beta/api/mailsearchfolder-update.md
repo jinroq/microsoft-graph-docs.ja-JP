@@ -4,12 +4,12 @@ description: MailSearchFolder オブジェクトの書き込み可能なプロ�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: fb11e06ac450aa218a8e1102557eb9e3a79f874c
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: dac2bbb95da7d287ce00503ac4b79cdf52a85968
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33598196"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536023"
 ---
 # <a name="update-mailsearchfolder"></a>MailSearchFolder を更新する
 
@@ -46,7 +46,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 |:---------------|:--------|:----------|
 | displayName | String | [Mailfolder](../resources/mailfolder.md)の表示名。|
 | includeNestedFolders | Boolean | メールボックスフォルダー階層をスキャンする方法。 `true`詳細検索を実行`false`する必要がある場合は、その代わりに浅い検索を実行する必要があることを意味します。 |
-| sourceFolderIDs | String collection | マイニングするメールボックスフォルダー。 |
+| sourceFolderIDs | 文字列コレクション | マイニングするメールボックスフォルダー。 |
 | filterQuery | String | メッセージをフィルター処理するための OData クエリ。 |
 
 ## <a name="response"></a>応答
@@ -100,9 +100,11 @@ Content-length: 179
   "filterQuery": "contains(subject, 'Analytics')"
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_mailsearchfolder-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_mailsearchfolder-Javascript-snippets.md)]
 
 ---
@@ -119,6 +121,7 @@ Content-length: 179
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/mailsearchfolder-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/mailsearchfolder-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }

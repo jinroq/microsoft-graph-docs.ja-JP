@@ -3,12 +3,12 @@ title: サブスクリプション リソースの種類
 description: 'サブスクリプションは、Microsoft Graph 上のデータの変更に関する通知の受信をクライアント アプリに許可します。 サブスクリプションは現在、以下のリソースで有効です:'
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: 563d232d200797b87e894292e31eb48ad88bf540
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 6a7fd50a53e68313ba72c8bd5d90b47d2b5b2607
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342903"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34537206"
 ---
 # <a name="subscription-resource-type"></a>サブスクリプション リソースの種類
 
@@ -55,7 +55,7 @@ ms.locfileid: "33342903"
 |:---------|:-----|:------------|
 | changeType | string | 必須です。 登録しているリソース内の、通知を上げる変更の種類を示します。 サポートされている値は `created`、`updated`、`deleted` です。 コンマ区切りのリストを使用して複数値を結合できます。 <br><br>注: ドライブ ルート項目の通知では `updated` changeType のみがサポートされます。 ユーザーとグループの通知では、`updated` と `deleted` changeType がサポートされます。 |
 | notificationUrl | string | 必須です。 通知を受信するエンドポイントの URL。 この URL は HTTPS プロトコルを利用する必要があります。 |
-| lifecycleNotificationUrl | string | 省略可能。 ライフサイクル通知 (および`subscriptionRemoved` `missed`通知を含む) を受信するエンドポイントの URL。 指定しない場合、これらの通知は**notificationurl**に配信されます。 [「](/graph/webhooks-outlook-authz.md) Outlook リソースによるライフサイクル通知の使用方法」を参照してください。  この URL は HTTPS プロトコルを利用する必要があります。 |
+| lifecycleNotificationUrl | string | 省略可能。 ライフサイクル通知 (および`subscriptionRemoved` `missed`通知を含む) を受信するエンドポイントの URL。 指定しない場合、これらの通知は**Notificationurl**に配信されます。 [「](/graph/webhooks-outlook-authz.md) Outlook リソースによるライフサイクル通知の使用方法」を参照してください。  この URL は HTTPS プロトコルを利用する必要があります。 |
 | リソース | 文字列 | 必須です。 変更の監視対象となるリソースを指定します。 ベース URL (`https://graph.microsoft.com/beta/`) は含めないでください。 |
 | expirationDateTime | DateTimeOffset | 必須です。 webhook サブスクリプションの有効期限が切れる日時を指定します。 時刻は UTC 表示で、登録したリソースごとに異なるサブスクリプション作成からの経過時間にもできます。  サポートされているサブスクリプションの最長時間については、次の表をご覧ください。 |
 | clientState | 文字列 | オプション。 各通知内のサービスによって送信される `clientState` プロパティの値を指定します。 最大の長さは 255 文字です。 クライアントは、サブスクリプションと共に送信された `clientState` プロパティの値と、各通知と共に受信された `clientState` プロパティの値を比較することで、その通知がサービスから来たことを確認できます。 |
@@ -67,6 +67,7 @@ ms.locfileid: "33342903"
 
 | リソース            | 最大有効期限  |
 |:--------------------|:-------------------------|
+| ユーザー、グループ、その他のディレクトリリソース   | 4230 分 (3 日以内)    |
 | メール                | 4230 分 (3 日以内)    |
 | カレンダー            | 4230 分 (3 日以内)    |
 | 連絡先            | 4230 分 (3 日以内)    |
@@ -87,7 +88,7 @@ ms.locfileid: "33342903"
 | [Create subscription](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Microsoft Graph のデータが変更されたときに通知を受信するリスナー アプリケーションに登録します。 |
 | [Update subscription](../api/subscription-update.md) | [subscription](subscription.md) | 有効期限を更新して、サブスクリプションを更新します。 |
 | [サブスクリプションのリスト作成](../api/subscription-list.md) | [サブスクリプション](subscription.md) | アクティブなサブスクリプションのリストを作成します。 |
-| [サブスクリプションの取得](../api/subscription-get.md) | [subscription](subscription.md) | subscription オブジェクトのプロパティとリレーションシップを読み取ります。 |
+| [サブスクリプションの取得](../api/subscription-get.md) | [subscription](subscription.md) | Subscription オブジェクトのプロパティとリレーションシップを読み取ります。 |
 | [サブスクリプションの削除](../api/subscription-delete.md) | なし | サブスクリプションオブジェクトを削除します。 |
 
 [連絡先]: ./contact.md

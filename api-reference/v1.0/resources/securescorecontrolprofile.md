@@ -3,12 +3,12 @@ title: secureScoreControlProfile リソースの種類
 description: テナントのセキュリティスコア (コントロールデータごと) を表します。 既定では、テナントのすべてのコントロールを返し、個々のコントロールを明示的に取得することができます。
 localization_priority: Normal
 author: preetikr
-ms.openlocfilehash: 7ea9550e7fc6417ac28e32acd1d95cb9178f7360
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 98b335d536ab64000b65756f8c60e0f401f028fd
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629258"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34537199"
 ---
 # <a name="securescorecontrolprofile-resource-type"></a>secureScoreControlProfile リソースの種類
 
@@ -20,7 +20,7 @@ ms.locfileid: "33629258"
 | メソッド   | 戻り値の型|説明|
 |:---------------|:--------|:----------|
 |[secureScoreControlProfiles のリスト](../api/security-list-securescorecontrolprofiles.md) | [secureScoreControlProfile](securescorecontrolprofile.md) |Securescorecontrolprofiles のオブジェクトのプロパティとメタデータを読み取ります。|
-|[SecureScoreControlProfile を取得する](../api/securescorecontrolprofile-get.md) | [securescorecontrolprofile](secureScoreControlProfile.md) |Securescorecontrolprofiles のオブジェクトのプロパティとメタデータを読み取ります。|
+|[secureScoreControlProfile の取得](../api/securescorecontrolprofile-get.md) | [securescorecontrolprofile](securescorecontrolprofile.md) |Securescorecontrolprofiles のオブジェクトのプロパティとメタデータを読み取ります。|
 |[Securescorecontrolprofile の更新](../api/securescorecontrolprofile-update.md) | [securescorecontrolprofile](securescorecontrolprofile.md) |Securescorecontrolprofile オブジェクトを更新します。 |
 
 
@@ -42,7 +42,7 @@ ms.locfileid: "33629258"
 |修復|String|修復に役立つコントロールの説明。|
 |remediationImpact|String|修復のユーザーへの影響についての説明。|
 |service|String|コントロールを所有するサービス (Exchange、Sharepoint、Azure AD)。|
-|主|String collection|統制によって軽減される脅威のリスト (accountBreach、dataDeletion、Dataexフィルター、、
+|主|文字列コレクション|統制によって軽減される脅威のリスト (accountBreach、dataDeletion、Dataexフィルター、、
 elevationOfPrivilege、maliciousInsider、passwordCracking、phishingOrWhaling、スプーフィング)。|
 |層|String|Control 層 (コア、多層防御、詳細)   |
 |userImpact|String|制御を実装するユーザーへの影響 (低、中、高)。   |

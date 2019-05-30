@@ -4,12 +4,12 @@ description: Azure AD ユーザー アカウントを表します。directoryObj
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7754b884354244e5cc62355d73e11b9a9b7403e5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: f87ff4df1ea1fab1b727a725c01f024a872a8f1f
+ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345086"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "34475207"
 ---
 # <a name="user-resource-type"></a>user リソースの種類
 
@@ -69,7 +69,8 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |[getMailTips](../api/user-getmailtips.md)|[mailTips](mailtips.md) コレクション|サインイン中のユーザーが利用できる、1 人または複数の受信者に対してのメール ヒントを返します。 |
 |[getMemberGroups](../api/user-getmembergroups.md)|String collection|ユーザーがメンバーであるすべてのグループを返します。チェックは推移的です。|
 |[getMemberObjects](../api/user-getmemberobjects.md)|String コレクション| ユーザーがメンバーになっているすべてのグループ、ディレクトリ ロール、管理単位を返します。 チェックは推移的です。 |
-|[invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md)| なし |**refreshTokensValidFromDateTime** ユーザー プロパティを現在の日時にリセットすることで、アプリケーションに発行されたすべての更新トークンとセッション トークンを無効にします。 これにより、ユーザーは強制的にアプリケーションに再度サインインします。|
+|[invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md)| なし |**refreshTokensValidFromDateTime** ユーザー プロパティを現在の日時にリセットすることで、アプリケーションに発行されたすべての更新トークンとセッション トークンを無効にします。 これにより、ユーザーは強制的にアプリケーションに再度サインインします。 この方法は、**revokeSignInSessions** に置き換えられます。|
+|[revokeSignInSessions](../api/user-revokesigninsessions.md)| なし |**signInSessionsValidFromDateTime** ユーザー プロパティを現在の日時にリセットすることで、アプリケーションに発行されたすべての更新トークンとセッション トークンを失効にします。 これにより、ユーザーは強制的にアプリケーションに再度サインインします。 この方法は **invalidateAllRefreshTokens** を置き換えるものです。|
 |[reminderView](../api/user-reminderview.md)|[Reminder](reminder.md) collection|指定した開始時刻と終了時刻内の予定表のアラームの一覧を返します。|
 |[delta](../api/user-delta.md)|user コレクション| ユーザーに対する増分の変更を取得します。 |
 |[Outlook ID を変換する](../api/user-translateexchangeids.md) |[convertIdResult resource type](convertidresult.md) コレクション| Outlook 関連リソースの ID の形式を変換します。|
@@ -207,7 +208,7 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |イベント|[event](event.md) コレクション|ユーザーのイベント。既定では、既定の予定表でイベントが表示されます。読み取り専用です。Null 許容型。|
 |extensions|[extension](extension.md) コレクション|ユーザーに対して定義されているオープン拡張機能のコレクション。 Null 許容型。|
 |inferenceClassification|[inferenceClassification](inferenceclassification.md)| 明示的な指定に基づく、ユーザーのメッセージの関連性の分類。明示的な指定は、推定される関連性や重要性より優先されます。 |
-|insights|[officeGraphInsights](officegraphinsights.md) | 読み取り専用です。Null 許容型。|
+|insights|[officeGraphInsights](officegraphinsights.md) | 読み取り専用です。 Null 許容型。|
 |joinedGroups|[group](group.md) コレクション| 読み取り専用です。Null 許容型。|
 |mailFolders|[mailFolder](mailfolder.md) コレクション| ユーザーのメール フォルダー。読み取り専用です。Null 許容型。|
 |manager|[directoryObject](directoryobject.md)|このユーザーの上司であるユーザーまたは連絡先。読み取り専用です。(HTTP メソッド:GET、PUT、DELETE)|
@@ -277,11 +278,14 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
   "companyName": "string",
   "consentProvidedForMinor": "string",
   "country": "string",
+  "createdDateTime": "2019-02-07T21:53:13.067Z",
   "deletedDateTime": "String (timestamp)",
   "department": "string",
   "displayName": "string",
+  "employeeId": "string",
   "externalUserState": "PendingAcceptance",
   "externalUserStateChangeDateTime": "2018-11-12T01:13:13Z",
+  "faxNumber": "string",
   "givenName": "string",
   "hireDate": "String (timestamp)",
   "id": "string (identifier)",
@@ -296,12 +300,17 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
   "mobilePhone": "string",
   "mySite": "string",
   "officeLocation": "string",
+  "onPremisesDistinguishedName": "string",
+  "onPremisesDomainName": "string",
   "onPremisesExtensionAttributes": {"@odata.type": "microsoft.graph.onPremisesExtensionAttributes"},
   "onPremisesImmutableId": "string",
   "onPremisesLastSyncDateTime": "String (timestamp)",
   "onPremisesProvisioningErrors": [{"@odata.type": "microsoft.graph.onPremisesProvisioningError"}],
+  "onPremisesSamAccountName": "string",
   "onPremisesSecurityIdentifier": "string",
   "onPremisesSyncEnabled": true,
+  "onPremisesUserPrincipalName": "string",
+  "otherMails": "string",
   "passwordPolicies": "string",
   "passwordProfile": {"@odata.type": "microsoft.graph.passwordProfile"},
   "pastProjects": ["string"],
@@ -311,8 +320,11 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
   "preferredName": "string",
   "provisionedPlans": [{"@odata.type": "microsoft.graph.provisionedPlan"}],
   "proxyAddresses": ["string"],
+  "refreshTokensValidFromDateTime": "2019-02-07T21:53:13.084Z",
   "responsibilities": ["string"],
   "schools": ["string"],
+  "showInAddressList": true,
+  "signInSessionsValidFromDateTime": "2019-02-07T21:53:13.084Z",
   "skills": ["string"],
   "state": "string",
   "streetAddress": "string",
@@ -343,17 +355,7 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
   "outlook": {"@odata.type": "microsoft.graph.outlookUser"},
   "ownedDevices": [{"@odata.type": "microsoft.graph.directoryObject"}],
   "photo": {"@odata.type": "microsoft.graph.profilePhoto"},
-  "registeredDevices": [{"@odata.type": "microsoft.graph.directoryObject"}],
-  "createdDateTime": "2019-02-07T21:53:13.067Z",
-  "employeeId": "string",
-  "faxNumber": "string",
-  "onPremisesDistinguishedName": "string",
-  "onPremisesDomainName": "string",
-  "onPremisesSamAccountName": "string",
-  "onPremisesUserPrincipalName": "string",
-  "otherMails": "string",
-  "refreshTokensValidFromDateTime": "2019-02-07T21:53:13.084Z",
-  "showInAddressList": true
+  "registeredDevices": [{"@odata.type": "microsoft.graph.directoryObject"}]
 }
 ```
 

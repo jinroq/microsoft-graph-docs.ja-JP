@@ -4,12 +4,12 @@ description: Application オブジェクトのプロパティを更新します�
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a55b977201574c2cdf4a9b2ede140abe205d1ae0
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 2984e7d57144fd6d5e3efee7d6c9a9c8d68c529c
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636332"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34535995"
 ---
 # <a name="update-application"></a>アプリケーションを更新する
 
@@ -57,7 +57,7 @@ PATCH /applications/{id}
 |preAuthorizedApplications|[Preauthorizedapplication](../resources/preauthorizedapplication.md)コレクション| アプリケーションおよび暗黙的同意の要求されたアクセス許可を一覧表示します。 管理者はアプリケーションに同意を得る必要があります。 preAuthorizedApplications では、ユーザーが要求されたアクセス許可に同意する必要はありません。 PreAuthorizedApplications にリストされているアクセス許可は、ユーザーの同意を必要としません。 ただし、preAuthorizedApplications に表示されていない追加の要求されたアクセス許可には、ユーザーの同意が必要です。 |
 |requiredResourceAccess|[requiredResourceAccess](../resources/requiredresourceaccess.md) コレクション|このアプリケーションがアクセスする必要があるリソース、およびそのリソースで必要な OAuth アクセス許可の範囲とアプリケーション ロールのセットを指定します。 必要なリソースへのアクセスに対するこの事前構成によって、同意エクスペリエンスが促進されます。 null 許容型ではありません。|
 |tags|String コレクション| アプリケーションを分類および識別するために使用できるカスタム文字列です。 |
-|Web|[webApplication](../resources/webApplication.md)| Web アプリケーションの設定を指定します。 |
+|Web|[webApplication](../resources/webapplication.md)| Web アプリケーションの設定を指定します。 |
 
 ## <a name="response"></a>応答
 
@@ -89,11 +89,11 @@ Content-length: 72
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_application-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_application-Javascript-snippets.md)]
 
 ---

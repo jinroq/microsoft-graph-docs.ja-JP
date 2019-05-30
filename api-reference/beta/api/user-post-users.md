@@ -4,12 +4,12 @@ description: 新しいユーザーを作成します。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8e7653095ded6d4146c07c37660260ba53190df5
-ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.openlocfilehash: 19388f645eeea78a4237a8085abdd17b3c819f08
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "34479057"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536982"
 ---
 # <a name="create-user"></a>ユーザーを作成する
 
@@ -56,8 +56,8 @@ POST /users
 
 **ユーザー**リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため`POST` 、操作を使用して、作成中にユーザーインスタンスにカスタムプロパティを追加することができます。
 
-[!NOTE]
-この API を使用して作成されたフェデレーションユーザーには、既定で12時間ごとにサインインすることが強制されます。 これを変更する方法の詳細については、「[トークンの有効期間の例外](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions)」を参照してください。
+>[!NOTE]
+>この API を使用して作成されたフェデレーションユーザーには、既定で12時間ごとにサインインすることが強制されます。 これを変更する方法の詳細については、「[トークンの有効期間の例外](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions)」を参照してください。
 
 ## <a name="response"></a>応答
 

@@ -4,12 +4,12 @@ description: 着信に応答します。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 87ae3b6911585ae3b698ba575e0b8523f96edea8
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: ce79ff0e471882576ed885e4ab85d686a6cdb0de
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33635912"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536058"
 ---
 # <a name="call-answer"></a>通話: 応答
 
@@ -24,7 +24,7 @@ ms.locfileid: "33635912"
 | :-------------- | :-----------------------------------------------------------|
 | 委任 (職場または学校のアカウント)     | サポート対象外                        |
 | 委任 (個人用 Microsoft アカウント) | サポート対象外                        |
-| アプリケーション     | なし                                                        |
+| アプリケーション     | None                                                        |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -44,7 +44,7 @@ POST /applications/{id}/calls/{id}/answer
 | パラメーター        | 型                                     |説明                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
 |callbackUri       |String                                    |コールバック時のコールバック ID またはサブスクリプション ID。 要する                                                               |
-|acceptedModalities|String collection                         |Accept モダリティのリスト。 使用可能な値`unknown`は`audio`、 `video`、 `screenSharing` `videoBasedScreenSharing`、、 `data`、、です。 要する |
+|acceptedModalities|文字列コレクション                         |Accept モダリティのリスト。 使用可能な値`unknown`は`audio`、 `video`、 `screenSharing` `videoBasedScreenSharing`、、 `data`、、です。 要する |
 |mediaConfig       |[mediaConfig](../resources/mediaconfig.md)|メディア構成。 要する                                                                                                            |
 
 ## <a name="response"></a>応答
@@ -88,9 +88,11 @@ Content-Length: 211
 ```http
 HTTP/1.1 202 Accepted
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/call-answer-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/call-answer-Javascript-snippets.md)]
 
 ---
@@ -417,6 +419,7 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/call-answer.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/call-answer.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }

@@ -2,12 +2,12 @@
 title: PrivilegedRoleAssignmentRequest のキャンセル
 description: PrivilegedRoleAssignmentRequest を取り消します。
 localization_priority: Normal
-ms.openlocfilehash: 114729351f5ae412cea77e1a97e16fd3d8300849
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: dc27edc71956c64d91dcc85e72ddd6c3cd65c793
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33593858"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34537470"
 ---
 # <a name="cancel-privilegedroleassignmentrequest"></a>PrivilegedRoleAssignmentRequest のキャンセル
 
@@ -40,7 +40,7 @@ POST /privilegedRoleAssignmentRequests({requestid})/cancel
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-成功した場合、このメソッドは `200 Ok` 応答コードを返します。 応答本文で[privilegedRoleAssignmentRequest](../resources/privilegedRoleAssignmentRequest.md)を返します。
+成功した場合、このメソッドは `200 Ok` 応答コードを返します。 応答本文で[privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md)を返します。
 
 ### <a name="error-codes"></a>エラー コード
 この API は、標準の HTTP エラーコードを返します。 さらに、次の表に示すカスタムエラーコードを返します。
@@ -96,11 +96,11 @@ Content-length: 304
     "roleId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/cancel_privilegedRoleAssignmentRequests-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/cancel_privilegedRoleAssignmentRequests-Javascript-snippets.md)]
 
 ---

@@ -3,12 +3,12 @@ title: secureScoreControlProfiles の更新
 description: 任意の統合ソリューション内の編集可能な secureScoreControlProfile オブジェクトを更新して、担当者や tenantNote などのさまざまなプロパティを変更します。
 author: preetikr
 localization_priority: Normal
-ms.openlocfilehash: 79d958e3f2bd04be8dab2d8fe0bda6117f487973
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 91b14c83098c1e03580c4ffeb320a0e5eba6d18b
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951291"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536814"
 ---
 # <a name="update-securescorecontrolprofile"></a>secureScoreControlProfiles の更新
 
@@ -100,6 +100,8 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 #### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/securescorecontrolprofiles_update-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/securescorecontrolprofiles_update-Javascript-snippets.md)]

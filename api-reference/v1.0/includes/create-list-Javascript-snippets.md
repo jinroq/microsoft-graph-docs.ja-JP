@@ -1,11 +1,11 @@
 ---
 description: 自動的に生成されたファイル。 変更しない
-ms.openlocfilehash: 6372ce64804a005fff43afb38076f0149f026afa
-ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.openlocfilehash: f51a5fa2ba4570220696736ebbe80af0e7e7086c
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "34456054"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536807"
 ---
 ```javascript
 
@@ -16,7 +16,7 @@ const options = {
 const client = Client.init(options);
 
 const list = {
-  name: "Books",
+  displayName: "Books",
   columns: [
     {
       name: "Author",

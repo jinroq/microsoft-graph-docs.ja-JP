@@ -1,18 +1,23 @@
 ---
 description: 自動的に生成されたファイル。 変更しない
-ms.openlocfilehash: 6c05834528bf98f5514b306ec7a4a1474b6749a2
-ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.openlocfilehash: a56dd2ceca035fcd2d101cac90a8c9e65ad42e1e
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "34460974"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34537303"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
+var queryOptions = new List<QueryOption>()
+{
+    new QueryOption("format", "{format}")
+};
+
 var items = await graphClient.Drive.Items["{item-id}"]
-    .Request()
+    .Request( queryOptions )
     .Select( e => new {
              e.Content 
              })

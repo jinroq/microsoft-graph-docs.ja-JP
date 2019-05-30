@@ -4,12 +4,12 @@ description: 危険にさらされている Azure AD ユーザーを表します
 author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 685600c110088d9bd9809a8c754e8530b123412e
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 02c1fe3bbbcf532298a5f615971d7ffbc273bf5a
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33620809"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34537296"
 ---
 # <a name="riskyuser-resource-type"></a>riskyUser リソースの種類
 
@@ -25,11 +25,11 @@ ms.locfileid: "33620809"
 
 | メソッド   | 戻り値の型|説明|
 |:---------------|:--------|:----------|
-|[リスト riskyUsers](../api/riskyusers-list.md) | [riskyUser](riskyUser.md)コレクション|リスクの高いユーザーとそのプロパティを一覧表示します。|
-|[RiskyUser を取得する](../api/riskyusers-get.md) | [riskyUser](riskyUser.md)|特定の危険なユーザーおよびそのプロパティを取得します。|
+|[リスト riskyUsers](../api/riskyusers-list.md) | [riskyUser](riskyuser.md)コレクション|リスクの高いユーザーとそのプロパティを一覧表示します。|
+|[RiskyUser を取得する](../api/riskyusers-get.md) | [riskyUser](riskyuser.md)|特定の危険なユーザーおよびそのプロパティを取得します。|
 |[リストの履歴](../api/riskyuser-list-history.md) | [riskyUserHistoryItem](riskyuserhistoryitem.md)コレクション|Azure AD ユーザーのリスク履歴を取得します。|
-|[RiskyUsers が侵害されたことを確認する](../api/riskyusers-confirmcompromised.md)|なし |危険なユーザーが侵害されていることを確認します。|
-|[RiskyUsers を閉じる](../api/riskyusers-dismiss.md)|なし | 危険なユーザーのリスクを無視します。|
+|[RiskyUsers が侵害されたことを確認する](../api/riskyusers-confirmcompromised.md)|None |危険なユーザーが侵害されていることを確認します。|
+|[RiskyUsers を閉じる](../api/riskyusers-dismiss.md)|None | 危険なユーザーのリスクを無視します。|
 
 ## <a name="properties"></a>プロパティ
 

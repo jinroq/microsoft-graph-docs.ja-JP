@@ -4,12 +4,12 @@ description: 呼び出しでプロンプトを再生します。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 571c8b412e6e8099aaee020ef45e2ad55b1e5707
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: ad0001c1961f1c6e9126a39609d368104e133aec
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33635863"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536072"
 ---
 # <a name="call-playprompt"></a>呼び出し: playPrompt
 
@@ -48,7 +48,7 @@ POST /applications/{id}/calls/{id}/playPrompt
 |clientContext|String|クライアントコンテキスト。|
 
 ## <a name="response"></a>応答
-成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[playPromptOperation](../resources/playPromptOperation.md)オブジェクトを返します。
+成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[playPromptOperation](../resources/playpromptoperation.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 次の例は、この API を呼び出す方法を示しています。
@@ -82,7 +82,7 @@ Content-Length: 166
 
 ##### <a name="response"></a>応答
 
-> **注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
+> **注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 
 <!-- {
   "blockType": "response",
@@ -93,9 +93,9 @@ Content-Length: 166
 HTTP/1.1 200 OK
 Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/call-playPrompt-Javascript-snippets.md)]
 
 ---

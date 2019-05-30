@@ -4,12 +4,12 @@ description: 割り当てに適用できるカテゴリ。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: bf5ee33ec7d217c0bc4c6e4d35666d6e9f34dadb
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: dd9eccac3a1b6b1bdc3b0eca4c87b5e29e2135a9
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340602"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536177"
 ---
 # <a name="educationcategory-resource-type"></a>educationCategory リソースの種類
 
@@ -22,14 +22,14 @@ ms.locfileid: "33340602"
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[educationCategory を取得する](../api/educationcategory-get.md) | [educationCategory](educationCategory.md) | 既存の**educationCategory**を取得します。|
-|[カテゴリを削除する](../api/educationcategory-delete.md) | なし | **educationCategory**を削除します。|
+|[EducationCategory を取得する](../api/educationcategory-get.md) | [educationCategory](educationcategory.md) | 既存の**educationCategory**を取得します。|
+|[カテゴリを削除する](../api/educationcategory-delete.md) | None | **EducationCategory**を削除します。|
 
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|id|String|カテゴリの一意識別子。|
+|id|文字列|カテゴリの一意識別子。|
 |displayName|String|カテゴリの一意識別子。|
 
 ## <a name="json-representation"></a>JSON 表記
