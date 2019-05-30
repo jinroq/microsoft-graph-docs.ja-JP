@@ -1,11 +1,11 @@
 ---
 description: 自動的に生成されたファイル。 変更しない
-ms.openlocfilehash: 0b1d182decde521a51e02a649f060cb3dc2f8f9c
-ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.openlocfilehash: d02dc44e6db9110fda137e65a1737729d42a713d
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "34460770"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34537324"
 ---
 ```csharp
 
@@ -13,7 +13,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var list = new List
 {
-    Name = "Books",
+    DisplayName = "Books",
     Columns = new List<ColumnDefinition>()
     {
         new ColumnDefinition

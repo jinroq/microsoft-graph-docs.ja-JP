@@ -3,57 +3,59 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: SharePoint リスト内のレコードを更新する
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 074df35c54795002897b1d0d147944715c7c79df
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 7c5031a9f2d2729a268f26bb1b1489f3bae2c351
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33598028"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536492"
 ---
-# <a name="update-an-item-in-a-list"></a><span data-ttu-id="48ccb-102">リスト内のアイテムを更新する</span><span class="sxs-lookup"><span data-stu-id="48ccb-102">Update an item in a list</span></span>
+# <a name="update-an-item-in-a-list"></a><span data-ttu-id="b0b22-102">リスト内のアイテムを更新する</span><span class="sxs-lookup"><span data-stu-id="b0b22-102">Update an item in a list</span></span>
 
-<span data-ttu-id="48ccb-103">**[listItem][]** のプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="48ccb-103">Update the properties on a **[listItem][]**.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-## <a name="permissions"></a><span data-ttu-id="48ccb-104">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="48ccb-104">Permissions</span></span>
+<span data-ttu-id="b0b22-103">**[listItem][]** のプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="b0b22-103">Update the properties on a **[listItem][]**.</span></span>
 
-<span data-ttu-id="48ccb-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="48ccb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="b0b22-104">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="b0b22-104">Permissions</span></span>
 
-|<span data-ttu-id="48ccb-107">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="48ccb-107">Permission type</span></span>      | <span data-ttu-id="48ccb-108">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="48ccb-108">Permissions (from least to most privileged)</span></span>              |
+<span data-ttu-id="b0b22-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b0b22-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="b0b22-107">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="b0b22-107">Permission type</span></span>      | <span data-ttu-id="b0b22-108">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="b0b22-108">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="48ccb-109">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="48ccb-109">Delegated (work or school account)</span></span> | <span data-ttu-id="48ccb-110">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="48ccb-110">Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="48ccb-111">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="48ccb-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="48ccb-112">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="48ccb-112">Not supported.</span></span>    |
-|<span data-ttu-id="48ccb-113">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="48ccb-113">Application</span></span> | <span data-ttu-id="48ccb-114">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="48ccb-114">Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="b0b22-109">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="b0b22-109">Delegated (work or school account)</span></span> | <span data-ttu-id="b0b22-110">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b0b22-110">Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="b0b22-111">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="b0b22-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b0b22-112">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b0b22-112">Not supported.</span></span>    |
+|<span data-ttu-id="b0b22-113">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="b0b22-113">Application</span></span> | <span data-ttu-id="b0b22-114">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b0b22-114">Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="48ccb-115">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="48ccb-115">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b0b22-115">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="b0b22-115">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}/fields
+PATCH https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}/fields
 ```
 
-## <a name="optional-request-headers"></a><span data-ttu-id="48ccb-116">オプションの要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="48ccb-116">Optional request headers</span></span>
+## <a name="optional-request-headers"></a><span data-ttu-id="b0b22-116">オプションの要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b0b22-116">Optional request headers</span></span>
 
-| <span data-ttu-id="48ccb-117">名前</span><span class="sxs-lookup"><span data-stu-id="48ccb-117">Name</span></span>       | <span data-ttu-id="48ccb-118">値</span><span class="sxs-lookup"><span data-stu-id="48ccb-118">Value</span></span> | <span data-ttu-id="48ccb-119">説明</span><span class="sxs-lookup"><span data-stu-id="48ccb-119">Description</span></span>
+| <span data-ttu-id="b0b22-117">名前</span><span class="sxs-lookup"><span data-stu-id="b0b22-117">Name</span></span>       | <span data-ttu-id="b0b22-118">値</span><span class="sxs-lookup"><span data-stu-id="b0b22-118">Value</span></span> | <span data-ttu-id="b0b22-119">説明</span><span class="sxs-lookup"><span data-stu-id="b0b22-119">Description</span></span>
 |:-----------|:------|:--------------------------------------------------------
-| <span data-ttu-id="48ccb-120">_if-match_</span><span class="sxs-lookup"><span data-stu-id="48ccb-120">_if-match_</span></span> | <span data-ttu-id="48ccb-121">etag</span><span class="sxs-lookup"><span data-stu-id="48ccb-121">etag</span></span>  | <span data-ttu-id="48ccb-122">この要求ヘッダーが含まれていて、指定された eTag がアイテムの現在の eTag に一致しない場合には、`412 Precondition Failed` 応答が返され、アイテムは更新されません。</span><span class="sxs-lookup"><span data-stu-id="48ccb-122">If this request header is included and the eTag provided does not match the current eTag on the item, a `412 Precondition Failed` response is returned and the item will not be updated.</span></span>
+| <span data-ttu-id="b0b22-120">_if-match_</span><span class="sxs-lookup"><span data-stu-id="b0b22-120">_if-match_</span></span> | <span data-ttu-id="b0b22-121">etag</span><span class="sxs-lookup"><span data-stu-id="b0b22-121">etag</span></span>  | <span data-ttu-id="b0b22-122">この要求ヘッダーが含まれていて、指定された eTag がアイテムの現在の eTag に一致しない場合には、`412 Precondition Failed` 応答が返され、アイテムは更新されません。</span><span class="sxs-lookup"><span data-stu-id="b0b22-122">If this request header is included and the eTag provided does not match the current eTag on the item, a `412 Precondition Failed` response is returned and the item will not be updated.</span></span>
 
 
-## <a name="request-body"></a><span data-ttu-id="48ccb-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="48ccb-123">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="b0b22-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="b0b22-123">Request body</span></span>
 
-<span data-ttu-id="48ccb-124">要求本文に、更新するフィールドを指定する [fieldValueSet][] の JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="48ccb-124">In the request body, supply a JSON representation of a [fieldValueSet][] specifying the fields to update.</span></span>
+<span data-ttu-id="b0b22-124">要求本文に、更新するフィールドを指定する [fieldValueSet][] の JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="b0b22-124">In the request body, supply a JSON representation of a [fieldValueSet][] specifying the fields to update.</span></span>
 
-## <a name="example"></a><span data-ttu-id="48ccb-125">例</span><span class="sxs-lookup"><span data-stu-id="48ccb-125">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b0b22-125">例</span><span class="sxs-lookup"><span data-stu-id="b0b22-125">Example</span></span>
 
-<span data-ttu-id="48ccb-126">ここでは、リスト アイテムの Color フィールドと Quantity フィールドを新しい値で更新する例を示します。</span><span class="sxs-lookup"><span data-stu-id="48ccb-126">Here is an example that updates the Color and Quantity fields of the list item with new values.</span></span>
-<span data-ttu-id="48ccb-127">listItem の他の値はすべてそのままです。</span><span class="sxs-lookup"><span data-stu-id="48ccb-127">All other values on the listItem are left alone.</span></span> 
+<span data-ttu-id="b0b22-126">ここでは、リスト アイテムの Color フィールドと Quantity フィールドを新しい値で更新する例を示します。</span><span class="sxs-lookup"><span data-stu-id="b0b22-126">Here is an example that updates the Color and Quantity fields of the list item with new values.</span></span>
+<span data-ttu-id="b0b22-127">listItem の他の値はすべてそのままです。</span><span class="sxs-lookup"><span data-stu-id="b0b22-127">All other values on the listItem are left alone.</span></span> 
 
-<!-- { "blockType": "request", "name": "update-listitem", "scopes": "sites.readwrite.all" } -->
+<!-- { "blockType": "request", "name": "create-listitem", "scopes": "sites.readwrite.all" } -->
 
 ```json
-PATCH https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}/fields
+PATCH https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}/fields
 Content-Type: application/json
 
 {
@@ -62,11 +64,11 @@ Content-Type: application/json
 }
 ```
 
-## <a name="response"></a><span data-ttu-id="48ccb-128">応答</span><span class="sxs-lookup"><span data-stu-id="48ccb-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b0b22-128">応答</span><span class="sxs-lookup"><span data-stu-id="b0b22-128">Response</span></span>
 
-<span data-ttu-id="48ccb-129">成功した場合、このメソッドは更新されたリスト アイテムの応答本文で [fieldValueSet][] を返します。</span><span class="sxs-lookup"><span data-stu-id="48ccb-129">If successful, this method returns a [fieldValueSet][] in the response body for the updated list item.</span></span>
+<span data-ttu-id="b0b22-129">成功した場合、このメソッドは更新されたリスト アイテムの応答本文で [fieldValueSet][] を返します。</span><span class="sxs-lookup"><span data-stu-id="b0b22-129">If successful, this method returns a [fieldValueSet][] in the response body for the updated list item.</span></span>
 
-<!-- { "blockType": "response", "@odata.type": "microsoft.graph.fieldValueSet", "truncated": true } -->
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.listItem", "truncated": true } -->
 
 ```json
 HTTP/1.1 201 Created
@@ -78,9 +80,11 @@ Content-type: application/json
   "Quantity": 934
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="48ccb-130">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="48ccb-130">SDK sample code</span></span>
+#### <a name="sdk-sample-code"></a><span data-ttu-id="b0b22-130">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="b0b22-130">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="b0b22-131">C#</span><span class="sxs-lookup"><span data-stu-id="b0b22-131">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/create-listitem-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="48ccb-131">Javascript</span><span class="sxs-lookup"><span data-stu-id="48ccb-131">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b0b22-132">Javascript</span><span class="sxs-lookup"><span data-stu-id="b0b22-132">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create-listitem-Javascript-snippets.md)]
 
 ---
@@ -90,13 +94,16 @@ Content-type: application/json
 [fieldValueSet]: ../resources/fieldvalueset.md
 [listItem]: ../resources/listitem.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
   "tocPath": "ListItem/Update",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/listitem-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/beta/api/listitem-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/listitem-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-} -->
+}
+-->

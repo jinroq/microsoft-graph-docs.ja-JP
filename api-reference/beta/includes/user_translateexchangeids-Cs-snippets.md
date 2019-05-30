@@ -1,11 +1,11 @@
 ---
 description: 自動的に生成されたファイル。 変更しない
-ms.openlocfilehash: c82f04e33e59af6255cd240672d6ed2bef1085ea
-ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.openlocfilehash: 345c58fc0dc9263f0c91efbdc14dcc978451b75d
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "34456534"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34537582"
 ---
 ```csharp
 
@@ -17,9 +17,9 @@ var inputIds = new List<String>()
     "{rest-formatted-id-2}"
 };
 
-var sourceIdType = "restId";
+var sourceIdType = ExchangeIdFormat.RestId;
 
-var targetIdType = "restImmutableEntryId";
+var targetIdType = ExchangeIdFormat.RestImmutableEntryId;
 
 await graphClient.Me
     .TranslateExchangeIds(inputIds,targetIdType,sourceIdType)
