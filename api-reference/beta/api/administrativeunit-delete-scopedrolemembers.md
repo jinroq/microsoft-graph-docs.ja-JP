@@ -1,15 +1,15 @@
 ---
 title: ScopedRoleMember を削除する
 description: 管理単位からスコープ付き役割のメンバーを削除します。
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 90272c109e7304071f7245f588607c764999d0b2
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 8bf7eff918b9b3e333dc0b5c19f787416675ffb6
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636682"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655419"
 ---
 # <a name="remove-a-scopedrolemember"></a>ScopedRoleMember を削除する
 
@@ -64,11 +64,11 @@ DELETE https://graph.microsoft.com/beta/administrativeUnits/{id}/scopedRoleMembe
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/delete_scopedrolemember-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/delete_scopedrolemember-Javascript-snippets.md)]
 
 ---

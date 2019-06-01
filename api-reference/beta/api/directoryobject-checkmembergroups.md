@@ -2,14 +2,14 @@
 title: メンバー グループをチェックする
 description: 指定したグループの一覧のメンバーシップを確認し、それらのグループをリストから返します。
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: bfec06e169337a59770c767075ba95dda06b3175
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 53f23bf5e57d4bc66c7491425ba0ea1cadfe959d
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33591099"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656105"
 ---
 # <a name="check-member-groups"></a>メンバー グループをチェックする
 
@@ -47,7 +47,7 @@ POST /directoryObjects/{id}/checkMemberGroups
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|groupIds|String collection |メンバーシップを確認するためのグループのオブジェクト ID を含むコレクションです。最大 20 グループを指定することが可能です。|
+|groupIds|文字列コレクション |メンバーシップを確認するためのグループのオブジェクト ID を含むコレクションです。最大 20 グループを指定することが可能です。|
 
 ## <a name="response"></a>応答
 
@@ -91,11 +91,11 @@ Content-type: application/json
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/directoryobject_checkmembergroups-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/directoryobject_checkmembergroups-Javascript-snippets.md)]
 
 ---

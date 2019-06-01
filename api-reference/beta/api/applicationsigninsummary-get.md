@@ -2,14 +2,14 @@
 title: ApplicationSignInSummary を取得する
 description: '**ApplicationSigninSummary**オブジェクトのプロパティとリレーションシップを取得します。'
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d93f661baf60f5d6116639ae3d2dc3aa9f167f48
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 141d531693e2cf49b5aaad30002e024d06883939
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636234"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655097"
 ---
 # <a name="get-applicationsigninsummary"></a>ApplicationSignInSummary を取得する
 
@@ -82,11 +82,11 @@ Content-length: 157
   "successPercentage": 99
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_applicationsigninsummary-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_applicationsigninsummary-Javascript-snippets.md)]
 
 ---

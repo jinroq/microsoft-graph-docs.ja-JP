@@ -2,14 +2,14 @@
 title: 'directoryObject: validateProperties'
 description: Office 365 グループの表示名またはメールニックネームが名前付けポリシーに準拠しているかどうかを検証します。  クライアントは API を使用して、Office 365 グループを**作成**する前に、表示名またはメールニックネームが有効かどうかを判断します。 既存のグループのプロパティを検証するには、グループに対して validateProperties 関数を使用します。
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 64bfe6865cbb7d887bbb19e27ee583b123616c80
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 4f672d4b6d2f33921f79d74d5213948dc630abda
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33591141"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656042"
 ---
 # <a name="directoryobject-validateproperties"></a>directoryObject: validateProperties
 
@@ -87,11 +87,11 @@ Content-length: 164
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/directoryobject_validateproperties-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/directoryobject_validateproperties-Javascript-snippets.md)]
 
 ---

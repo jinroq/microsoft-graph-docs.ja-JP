@@ -2,14 +2,14 @@
 title: AccessReview を更新する
 description: Azure AD access レビュー機能で、既存の accessReview オブジェクトを更新して、そのプロパティの1つ以上を変更します。
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 026b445eee69557ead9179100cd6075e06783a86
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 97df0dedafdca0cd359effff65f1082466916f4a
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636731"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655398"
 ---
 # <a name="update-accessreview"></a>AccessReview を更新する
 
@@ -77,7 +77,7 @@ Content-type: application/json
 ```
 
 ##### <a name="response"></a>応答
->**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
+>**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -98,11 +98,11 @@ Content-type: application/json
     "description": "Sample description"
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_accessReview-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_accessReview-Javascript-snippets.md)]
 
 ---

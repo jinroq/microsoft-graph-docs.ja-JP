@@ -2,14 +2,14 @@
 title: AccessReview レビュー担当者を追加する
 description: 'Azure AD access レビュー機能で、既存の accessReview オブジェクトを更新して、別のユーザーをレビュー担当者として追加します。  この操作は、まだ完了していないアクセスレビューに対してのみ許可されており、レビュー担当者が明示的に指定されているアクセスレビューに対してのみ使用できます。 この操作は、ユーザーが自分のアクセスを確認するアクセスレビューでは許可されず、グループの所有者がレビュー担当者として割り当てられているアクセスレビューのためのものではありません。 '
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: aa07b58401aab8dd20f768cbee77bbe55d8eb27a
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: b0839fe486679b4388b0bbdd714bb775b8090b27
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33586324"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655573"
 ---
 # <a name="add-accessreview-reviewer"></a>AccessReview レビュー担当者を追加する
 
@@ -71,7 +71,7 @@ Content-Type: application/json
 ```
 
 ##### <a name="response"></a>応答
->**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
+>**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -79,11 +79,11 @@ Content-Type: application/json
 ```http
 HTTP/1.1 201 Created
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/add_accessReview_reviewer-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/add_accessReview_reviewer-Javascript-snippets.md)]
 
 ---

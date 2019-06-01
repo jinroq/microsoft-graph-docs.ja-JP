@@ -2,14 +2,14 @@
 title: AccessReview に関する決定事項を一覧表示する
 description: Azure AD access レビュー機能で、accessReview オブジェクトの決定を取得します。
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ef1db408a4b47928e86f47f30588a8e09f98dad7
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: b0b2844ecdfbe7663c6832ae0a72c018c6ed9ea4
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33586202"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655475"
 ---
 # <a name="list-accessreview-decisions"></a>AccessReview に関する決定事項を一覧表示する
 
@@ -58,7 +58,7 @@ GET https://graph.microsoft.com/beta/accessReviews/2b83cc42-09db-46f6-8c6e-16fec
 ```
 
 ##### <a name="response"></a>応答
->**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
+>**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -81,11 +81,11 @@ Content-type: application/json
     ]
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_accessReview_decisions-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_accessReview_decisions-Javascript-snippets.md)]
 
 ---

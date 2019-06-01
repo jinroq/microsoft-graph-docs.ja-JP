@@ -1,15 +1,15 @@
 ---
 title: 削除済みアイテムを一覧表示する
 description: '[削除済みアイテム] から、最近削除されたアイテムのリストを取得します。'
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5d1fdf1b81ce315266cb63c9e5623caf0c161b18
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 4583fc3280d4e2512d02492b1f44c47518dfb43e
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33590692"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656182"
 ---
 # <a name="list-deleted-items"></a>削除済みアイテムを一覧表示する
 
@@ -87,11 +87,11 @@ Content-type: application/json
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_deleteditems-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_deleteditems-Javascript-snippets.md)]
 
 ---

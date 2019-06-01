@@ -1,15 +1,15 @@
 ---
 title: AdministrativeUnit の削除
 description: AdministrativeUnit を削除します。
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fd7b23911c1c42bb98da397f8775dd6f73512d5a
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 84718cfe855db3bda5e4e9a72ecf73565a3873e6
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636766"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655426"
 ---
 # <a name="delete-administrativeunit"></a>AdministrativeUnit の削除
 
@@ -64,11 +64,11 @@ DELETE https://graph.microsoft.com/beta/administrativeUnits/{id}
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/delete_administrativeunit-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/delete_administrativeunit-Javascript-snippets.md)]
 
 ---

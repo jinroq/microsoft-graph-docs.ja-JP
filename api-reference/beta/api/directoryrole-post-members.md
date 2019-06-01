@@ -1,15 +1,15 @@
 ---
 title: ディレクトリ ロールのメンバーを追加する
 description: この API を使用して、新しいディレクトリ ロールのメンバーを作成します。
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8037ee8945b7f8bc25e2daf39dd23a2142b81045
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: ba136eee786627d5550e8d1ba19108a003af0e51
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33590298"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655895"
 ---
 # <a name="add-directory-role-member"></a>ディレクトリ ロールのメンバーを追加する
 
@@ -79,9 +79,9 @@ Content-length: 51
   }
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_directoryobject_from_directoryrole-Javascript-snippets.md)]
 
 ---

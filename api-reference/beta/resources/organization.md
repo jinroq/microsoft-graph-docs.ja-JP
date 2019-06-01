@@ -2,14 +2,14 @@
 title: 組織リソースの種類
 description: 'Azure Active Directory テナントを表します。 '
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5f2b7d83f8c78eb11ad4f22d456d9791982aab5c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: bfde61b207979f734398ef62f988d332a4abb455
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345581"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656889"
 ---
 # <a name="organization-resource-type"></a>組織リソースの種類
 
@@ -42,11 +42,11 @@ ms.locfileid: "33345581"
 |countryLetterCode|String| 組織の国/地域の略称 |
 |createdDateTime|DateTimeOffset| 組織作成時のタイムスタンプです。 値は変更できず、組織が作成されると自動的に設定されます。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 読み取り専用です。 |
 | deletedDateTime                    | DateTimeOffset                                                    | ISO 8601 形式を使用して Azure AD テナントが削除されたときの日時を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります: `'2014-01-01T00:00:00Z'`。 読み取り専用です。                                                                                     |
-|dirsyncenabled|ブール値|このオブジェクトがオンプレミスのディレクトリから同期される場合は **true**。このオブジェクトが最初にオンプレミスのディレクトリから同期されていて、今後は同期されない場合は **false**。このオブジェクトがオンプレミスのディレクトリから一度も同期されたことがない場合は **null** (既定値)。|
+|dirSyncEnabled|ブール値|このオブジェクトがオンプレミスのディレクトリから同期される場合は **true**。このオブジェクトが最初にオンプレミスのディレクトリから同期されていて、今後は同期されない場合は **false**。このオブジェクトがオンプレミスのディレクトリから一度も同期されたことがない場合は **null** (既定値)。|
 |displayName|文字列|テナントの表示名。|
-|id|String|テナント ID。組織 (またはテナント) を表す一意の識別子です。 [directoryObject](directoryobject.md) から継承されました。 キー。 null 許容型ではありません。 読み取り専用です。|
+|id|文字列|テナント ID。組織 (またはテナント) を表す一意の識別子です。 [directoryObject](directoryobject.md) から継承されました。 キー。 null 許容型ではありません。 読み取り専用です。|
 |isMultipleDataLocationsForServicesEnabled|Boolean|組織の Multi-Geo が有効の場合 **true**、組織の Multi-Geo が有効ではない場合 **false**、**null** (既定)。 読み取り専用です。 詳細については、「[OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction)」を参照してください。|
-|marketingNotificationEmails|String コレクション| null 許容型ではありません。            |
+|marketingNotificationEmails|String コレクション| null 許容ではありません。            |
 |objectType|String|オブジェクトの種類を識別する文字列です。テナントの場合、値は常に「会社」です。 |
 |postalCode|String| 組織の住所の郵便番号 |
 |preferredLanguage|String| 組織の優先言語。 ISO 639-1 コードに従う必要があります (例: "en")。 |

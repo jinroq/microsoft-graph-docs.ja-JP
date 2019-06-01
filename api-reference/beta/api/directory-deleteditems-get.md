@@ -1,15 +1,15 @@
 ---
 title: 削除済みアイテムを取得する
 description: '[削除済みアイテム] から、最近削除されたアイテムのプロパティを取得します。'
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e8dd278352ca74ea1adc16b3f7f081c70ea8387a
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 586f4e8811f5fa1bbb720516f13d07ce2f403b9e
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33590618"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656189"
 ---
 # <a name="get-deleted-item"></a>削除済みアイテムを取得する
 
@@ -79,11 +79,11 @@ Content-type: application/json
   "visibility":"Public"
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_directory-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_directory-Javascript-snippets.md)]
 
 ---

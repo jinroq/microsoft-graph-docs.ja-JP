@@ -2,14 +2,14 @@
 title: メンバー グループを取得する
 description: 指定したユーザー、グループ、サービスプリンシパル、またはディレクトリオブジェクトがメンバーになっているすべてのグループを返します。 この関数は、推移的です。
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d581b3cad04cd454a48c4d871ac871338013ff61
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: c599b058b7250dc836806b42bead85f6e67704f6
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33590576"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656049"
 ---
 # <a name="get-member-groups"></a>メンバー グループを取得する
 
@@ -91,11 +91,11 @@ Content-type: application/json
     ]
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/directoryobject_getmembergroups-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/directoryobject_getmembergroups-Javascript-snippets.md)]
 
 ---

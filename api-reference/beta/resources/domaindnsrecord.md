@@ -1,21 +1,21 @@
 ---
-title: domaindnsrecord リソースの種類
-description: テナント内のドメインごとに、ドメインを Microsoft Online Services で使用できるようにするには、ドメインの dns ゾーンファイルに dns レコードを追加することが必要になることがあります。 **domaindnsrecord**エンティティは、そのような DNS レコードを提示するために使用されます。 DomainDnsCnameRecord、DomainDnsMxRecord、DomainDnsSrvRecord、および DomainDnsSrvRecord エンティティの基本エンティティ。
+title: domainDnsRecord リソースの種類
+description: テナント内のドメインごとに、ドメインを Microsoft Online Services で使用できるようにするには、ドメインの DNS ゾーンファイルに DNS レコードを追加することが必要になることがあります。 **Domaindnsrecord**エンティティは、そのような DNS レコードを提示するために使用されます。 DomainDnsCnameRecord、DomainDnsMxRecord、DomainDnsSrvRecord、および DomainDnsSrvRecord エンティティの基本エンティティ。
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: da969956616d22f5b13041b1a7bc4ebcdb510565
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 2c2bc889be77e2b324450bfd03ce28b3c53f8f51
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340652"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657092"
 ---
-# <a name="domaindnsrecord-resource-type"></a>domaindnsrecord リソースの種類
+# <a name="domaindnsrecord-resource-type"></a>domainDnsRecord リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-テナント内のドメインごとに、ドメインを Microsoft Online Services で使用できるようにするには、ドメインの dns ゾーンファイルに dns レコードを追加することが必要になることがあります。 **domaindnsrecord**エンティティは、そのような DNS レコードを提示するために使用されます。 [DomainDnsCnameRecord](domaindnscnamerecord.md)、 [DomainDnsMxRecord](domaindnsmxrecord.md)、 [DomainDnsSrvRecord](domaindnssrvrecord.md) 、および[DomainDnsSrvRecord](domaindnssrvrecord.md)エンティティの基本エンティティ。
+テナント内のドメインごとに、ドメインを Microsoft Online Services で使用できるようにするには、ドメインの DNS ゾーンファイルに DNS レコードを追加することが必要になることがあります。 **Domaindnsrecord**エンティティは、そのような DNS レコードを提示するために使用されます。 [DomainDnsCnameRecord](domaindnscnamerecord.md)、 [DomainDnsMxRecord](domaindnsmxrecord.md)、 [DomainDnsSrvRecord](domaindnssrvrecord.md) 、および[DomainDnsSrvRecord](domaindnssrvrecord.md)エンティティの基本エンティティ。
 
 ## <a name="methods"></a>メソッド
 このリソースへの直接クエリはサポートされていません。 ドメインサービスレコードを照会する方法については、「 [domain](domain.md) 」のトピックを参照してください。
@@ -23,12 +23,12 @@ ms.locfileid: "33340652"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|id|String| このエンティティに割り当てられている一意の識別子。 null 許容ではありません。読み取り専用です。|
-|isoptional|Boolean| false の場合、このレコードは、Microsoft Online Services がドメインで正常に動作するように、DNS ホストで顧客によって構成されている必要があります。 |
-|label|String| dns ホストで dns レコードの名前を構成するときに使用される値です。 |
+|id|String| このエンティティに割り当てられている一意の識別子。 Null 許容ではありません。読み取り専用です。|
+|isOptional|Boolean| False の場合、このレコードは、Microsoft Online Services がドメインで正常に動作するように、DNS ホストで顧客によって構成されている必要があります。 |
+|label|String| DNS ホストで DNS レコードの名前を構成するときに使用される値です。 |
 |recordType|String| このエンティティが表す DNS レコードの種類を示します。</br></br>この値には、 *CName*、 *Mx*、 *Srv*、 *Txt*のいずれかを指定できます。</br></br>Key |
-|supportedservice|String| この DNS レコードに依存している Microsoft Online サービスまたは機能。</br></br>**null**、 *Email*、 *Sharepoint*、 *emailinternalrelayonly*、 *OfficeCommunicationsOnline*、 *sharepointdefaultdomain*、 *fullredelegation*、sharepointpublic のいずれかの値を使用できます。 **、 *orgidauthentication*、 *Yammer*、 *Intune*|
-|ttl|Int32| dns ホストで dns レコードの time-to-live (ttl) プロパティを構成する場合に使用する値です。 null 許容ではない |
+|supportedService|String| この DNS レコードに依存している Microsoft Online サービスまたは機能。</br></br>**Null**、 *Email*、 *Sharepoint*、 *emailinternalrelayonly*、 *OfficeCommunicationsOnline*、 *sharepointdefaultdomain*、 *fullredelegation*、sharepointpublic のいずれかの値を使用できます。 **、 *Orgidauthentication*、 *Yammer*、 *Intune*|
+|ttl|Int32| DNS ホストで DNS レコードの time-to-live (ttl) プロパティを構成する場合に使用する値です。 Null 許容ではない |
 
 ## <a name="relationships"></a>リレーションシップ
 なし

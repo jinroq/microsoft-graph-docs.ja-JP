@@ -2,14 +2,14 @@
 title: subscribedSku リソースの種類
 description: " create、update、および delete はサポートされていません。 クエリのフィルター式はサポートされていません。 directoryObject から継承します。"
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4096860b3c45f525a57d208c6f70f1f1087d552d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 9763592ee444cbf0ae73ffbad81288bb5fdd76c2
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345733"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655118"
 ---
 # <a name="subscribedsku-resource-type"></a>subscribedSku リソースの種類
 
@@ -32,9 +32,9 @@ ms.locfileid: "33345733"
 |consumedUnits|Int32| 割り当てられたライセンスの数。 |
 |id|String| 購読している SKU オブジェクトの一意識別子。 キー。 null 許容ではありません。 |
 |prepaidUnits|[licenseUnitsDetail](licenseunitsdetail.md)| プリペイド ライセンスの数と状態に関する情報。 |
-|serviceplans|[servicePlanInfo](serviceplaninfo.md) コレクション| SKU と併用できるサービス プランに関する情報。 null 許容ではない |
+|servicePlans|[servicePlanInfo](serviceplaninfo.md) コレクション| SKU と併用できるサービス プランに関する情報。 Null 許容ではない |
 |skuId|Guid| サービス SKU の一意識別子 (GUID)。 |
-|skupartnumber|String| SKU 部品番号。"AAD_PREMIUM" や "RMSBASIC" など。 |
+|skuPartNumber|String| SKU 部品番号。"AAD_PREMIUM" や "RMSBASIC" など。 |
 
 ## <a name="relationships"></a>リレーションシップ
 なし

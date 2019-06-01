@@ -1,21 +1,21 @@
 ---
 title: directoryRole リソース型
-description: Azure AD ディレクトリ ロールを表します。 Azure AD ディレクトリ ロールは、*管理者ロール*と呼ばれることもあります。 ディレクトリ (管理者) ロールの詳細については、「Azure Active Directory での管理者ロールの割り当て」を参照してください。 Microsoft Graph では、ユーザーにディレクトリ ロールを割り当てることで、ターゲット ロールのアクセス許可をユーザーに付与できます。 ディレクトリ ロールを読み取る場合や、そのメンバーを更新する場合は、まず、そのディレクトリ ロールをテナントでアクティブにする必要があります。 既定では、会社の管理者 (Company Administrators) ディレクトリ ロールのみがアクティブ化されています。 他の利用可能なディレクトリロールをアクティブにするには、ディレクトリロールの基になる directoryroletemplate の ID を持つ POST 要求を送信します。 directoryObject から継承します。
+description: Azure AD ディレクトリ ロールを表します。 Azure AD ディレクトリ ロールは、*管理者ロール*と呼ばれることもあります。 ディレクトリ (管理者) ロールの詳細については、「 Azure AD での管理者ロールの割り当て」を参照してください。 Microsoft Graph では、ユーザーにディレクトリ ロールを割り当てることで、ターゲット ロールのアクセス許可をユーザーに付与できます。 ディレクトリ ロールを読み取る場合や、そのメンバーを更新する場合は、まず、そのディレクトリ ロールをテナントでアクティブにする必要があります。 既定では、会社の管理者 (Company Administrators) ディレクトリ ロールのみがアクティブ化されています。 他の利用可能なディレクトリロールをアクティブにするには、ディレクトリロールの基になる directoryRoleTemplate の ID を持つ POST 要求を送信します。 directoryObject から継承します。
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 110febf3213431a0a44941a4cdd2bd9bca255bff
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: ac9b08e2e39bce6a20703089d6bfe69c8b25f55f
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334595"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657904"
 ---
 # <a name="directoryrole-resource-type"></a>directoryRole リソース型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Azure AD ディレクトリ ロールを表します。 Azure AD ディレクトリ ロールは、*管理者ロール*と呼ばれることもあります。 ディレクトリ (管理者) ロールの詳細については、「[Azure Active Directory での管理者ロールの割り当て](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/)」を参照してください。 Microsoft Graph では、ユーザーにディレクトリ ロールを割り当てることで、ターゲット ロールのアクセス許可をユーザーに付与できます。 ディレクトリ ロールを読み取る場合や、そのメンバーを更新する場合は、まず、そのディレクトリ ロールをテナントでアクティブにする必要があります。 既定では、会社の管理者 (Company Administrators) ディレクトリ ロールのみがアクティブ化されています。 他の利用可能なディレクトリロールをアクティブにするには、ディレクトリロールの基になる[directoryroletemplate](directoryroletemplate.md)の ID を持つ POST 要求を送信します。 [directoryObject](directoryobject.md) から継承します。
+Azure AD ディレクトリ ロールを表します。 Azure AD ディレクトリ ロールは、*管理者ロール*と呼ばれることもあります。 ディレクトリ (管理者) ロールの詳細については、「[Azure Active Directory での管理者ロールの割り当て](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/)」を参照してください。 Microsoft Graph では、ユーザーにディレクトリ ロールを割り当てることで、ターゲット ロールのアクセス許可をユーザーに付与できます。 ディレクトリ ロールを読み取る場合や、そのメンバーを更新する場合は、まず、そのディレクトリ ロールをテナントでアクティブにする必要があります。 既定では、会社の管理者 (Company Administrators) ディレクトリ ロールのみがアクティブ化されています。 他の利用可能なディレクトリロールをアクティブにするには、ディレクトリロールの基になる[Directoryroletemplate](directoryroletemplate.md)の ID を持つ POST 要求を送信します。 [directoryObject](directoryobject.md) から継承します。
 
 既定では、ディレクトリの役割のスコープはテナント全体になります。  ただし、ディレクトリの役割 (現時点では、*ユーザーアカウント管理*者と*ヘルプデスク管理者*のみ) の範囲を[管理単位](administrativeunit.md)に設定することもできます。
 
@@ -28,20 +28,20 @@ Azure AD ディレクトリ ロールを表します。 Azure AD ディレクト
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
 |[Get directoryRole](../api/directoryrole-get.md) | [directoryRole](directoryrole.md) |directoryRole オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[directoryroles を一覧表示する](../api/directoryrole-list.md) | [directoryRole](directoryrole.md) コレクション | テナントでアクティブになっているディレクトリ ロールを一覧表示します。 |
+|[directoryRoles を一覧表示する](../api/directoryrole-list.md) | [directoryRole](directoryrole.md) コレクション | テナントでアクティブになっているディレクトリ ロールを一覧表示します。 |
 |[メンバーを追加する](../api/directoryrole-post-members.md) |[directoryObject](directoryobject.md)| members ナビゲーション プロパティを送信することで、ユーザーをディレクトリ ロールに追加します。|
-|[メンバーを一覧表示する](../api/directoryrole-list-members.md) |[directoryObject](directoryobject.md) コレクション| members ナビゲーション プロパティから、ディレクトリ ロールのメンバーであるユーザーを取得します。|
-|[Remove a member](../api/directoryrole-delete-member.md) |[directoryObject](directoryobject.md)| ディレクトリロールからユーザーを削除します。|
-|[スコープが指定された役割のメンバーを一覧表示する](../api/directoryrole-list-members.md) |[scopedRoleMembership](scopedrolemembership.md) コレクション| scopedRoleMembership リソースコレクションを使用して、[管理単位](administrativeunit.md)にスコープが設定されているこのディレクトリロールのメンバーを一覧表示します。|
-|[delta](../api/directoryrole-delta.md)|directoryRole コレクション| ディレクトリロールの増分の変更を取得します。 |
+|[List members](../api/directoryrole-list-members.md) |[directoryObject](directoryobject.md) コレクション| members ナビゲーション プロパティから、ディレクトリ ロールのメンバーであるユーザーを取得します。|
+|[メンバーを削除する](../api/directoryrole-delete-member.md) |[directoryObject](directoryobject.md)| ディレクトリ ロールからユーザーを削除します。|
+|[スコープが指定された役割のメンバーを一覧表示する](../api/directoryrole-list-members.md) |[scopedRoleMembership](scopedrolemembership.md) コレクション| ScopedRoleMembership リソースコレクションを使用して、[管理単位](administrativeunit.md)にスコープが設定されているこのディレクトリロールのメンバーを一覧表示します。|
+|[デルタ](../api/directoryrole-delta.md)|directoryRole コレクション| ディレクトリ ルールの増分の変更を取得します。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ   | 型 |説明|
 |:---------------|:--------|:----------|
 |description|String|ディレクトリ ロールの説明。読み取り専用。 |
-|displayName|String|ディレクトリ ロールの表示名。読み取り専用。 |
-|id|String|ディレクトリ ロールの一意識別子。[directoryObject](directoryobject.md) から継承されます。キーであり、Null は許容されません。読み取り専用です。|
-|roleTemplateId|String| このロールが基づいている **directoryRoleTemplate** の [id](directoryroletemplate.md)。このプロパティは、POST 操作でテナント内のディレクトリ ロールをアクティブ化するときに指定する必要があります。そのディレクトリ ロールがアクティブ化されると、このプロパティは読み取り専用になります。 |
+|displayName|文字列|ディレクトリ ロールの表示名。読み取り専用。 |
+|id|文字列|ディレクトリ ロールの一意識別子。[directoryObject](directoryobject.md) から継承されます。キーであり、Null は許容されません。読み取り専用です。|
+|roleTemplateId|String| このロールが基づいている [directoryRoleTemplate](directoryroletemplate.md) の **id**。このプロパティは、POST 操作でテナント内のディレクトリ ロールをアクティブ化するときに指定する必要があります。そのディレクトリ ロールがアクティブ化されると、このプロパティは読み取り専用になります。 |
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型 |説明|

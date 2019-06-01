@@ -2,14 +2,14 @@
 title: directoryAudit を取得する
 description: Microsoft Graph API (ベータ版) からの directoryAudit リソース (エンティティ) の get メソッドについて説明します。
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 40d94dd0ffe5df1adc9df9042173e33b5b98a204
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: b5c75bdae12fe7204739096e7be6b639512d9d47
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33591687"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656154"
 ---
 # <a name="get-directoryaudit"></a>directoryAudit を取得する
 
@@ -38,7 +38,7 @@ GET /auditLogs/directoryAudits/{id}
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 
-このメソッドは、応答をカスタマイズするための OData クエリパラメーターをサポートします。 このパラメーターの使用方法の詳細については、「 [OData クエリパラメーター](/graph/query_parameters)」を参照してください。
+このメソッドは、応答をカスタマイズするための OData クエリ パラメーターをサポートします。 このパラメーターの使用方法の詳細については、「 [OData クエリパラメーター](/graph/query_parameters)」を参照してください。
 
 ## <a name="request-headers"></a>要求ヘッダー
 
@@ -127,11 +127,11 @@ Content-length: 218
     }]
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_directoryaudit-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_directoryaudit-Javascript-snippets.md)]
 
 ---

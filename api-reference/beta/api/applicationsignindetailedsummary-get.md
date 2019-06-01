@@ -2,14 +2,14 @@
 title: ApplicationSignInDetailedSummary を取得する
 description: ApplicationSignInDetailSummary オブジェクトのプロパティとリレーションシップを取得します。
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: bd479161edbf1c0b261f467671c8a4b4c8797349
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 2145bfb511c1460b8001aa9eee9c1087fec460ba
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636507"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655104"
 ---
 # <a name="get-applicationsignindetailedsummary"></a>ApplicationSignInDetailedSummary を取得する
 
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/reports/applicationSignInDetailedSummary/<i
 ### <a name="response"></a>応答
 応答の例を次に示します。 
 
->**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
+>**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -87,11 +87,11 @@ Content-length: 295
   "aggregatedEventDateTime": "datetime-value"
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_applicationsignindetailedsummary-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_applicationsignindetailedsummary-Javascript-snippets.md)]
 
 ---

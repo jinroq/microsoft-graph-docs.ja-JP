@@ -2,14 +2,14 @@
 title: 組織を更新する
 description: 現在認証されている組織のプロパティを更新します。
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1634c2efe2caa80b98d58c3618b63afa24897426
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: b627ca31c93a236d1b646b3b4ff958dad27864e5
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33596986"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657288"
 ---
 # <a name="update-organization"></a>組織を更新する
 
@@ -47,7 +47,7 @@ PATCH /organization/{id}
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|marketingNotificationEmails|String collection|                                        **注**: Null は許容されません。            |
+|marketingNotificationEmails|文字列コレクション|                                        **注**: Null は許容されません。            |
 |privacyProfile|[privacyProfile](../resources/privacyprofile.md)|組織のプライバシー プロファイル (statementUrl と contactEmail を設定します)。            |
 |securityComplianceNotificationMails|String collection||
 |securityComplianceNotificationPhones|String コレクション||
@@ -97,11 +97,11 @@ Content-length: 411
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_organization-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_organization-Javascript-snippets.md)]
 
 ---

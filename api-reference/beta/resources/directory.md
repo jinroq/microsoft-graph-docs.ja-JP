@@ -2,14 +2,14 @@
 title: directory リソースの種類 (削除済みアイテム)
 description: . 削除されたアイテムは、最大 30 日間、復元可能な状態に維持されます。 30 日が経過すると、アイテムは完全に削除されます。
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 92235775143b3f8341724340e4ad301a40571adb
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: e9437f2f57c1ac53dc8f227149e679edd32d1ff1
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340876"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657687"
 ---
 # <a name="directory-resource-type-deleted-items"></a>directory リソースの種類 (削除済みアイテム)
 
@@ -32,7 +32,7 @@ ms.locfileid: "33340876"
 ## <a name="properties"></a>プロパティ
 | プロパティ   | 型 |説明|
 |:---------------|:--------|:----------|
-|id|String| オブジェクトの一意識別子 (例: 12345678-9abc-def0-1234-56789abcde)。 キー。 null 許容型ではありません。 読み取り専用です。|
+|id|String| オブジェクトの一意識別子 (例: 12345678-9abc-def0-1234-56789abcde)。 キー。 null 許容ではありません。 読み取り専用です。|
 
 ## <a name="relationships"></a>関係
 | リレーションシップ | 型   |説明|

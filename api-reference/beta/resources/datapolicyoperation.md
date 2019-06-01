@@ -2,14 +2,14 @@
 title: dataPolicyOperation リソースの種類
 description: 送信されたデータポリシー操作を表します。 操作の状態を追跡するために必要な情報が含まれています。 たとえば、会社の管理者は、従業員の会社のデータをエクスポートするためのデータポリシー操作要求を送信し、後でその要求を追跡できます。
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0d3ec392bb30614346d2726262851eebc29ee779
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 07c708ac2d46e23cc4bdcea233587c910d30fc3e
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543178"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657715"
 ---
 # <a name="datapolicyoperation-resource-type"></a>dataPolicyOperation リソースの種類
 
@@ -19,7 +19,7 @@ ms.locfileid: "32543178"
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[dataPolicyOperation を取得する](../api/datapolicyoperation-get.md) | [dataPolicyOperation](datapolicyoperation.md) |dataPolicyOperation オブジェクトのプロパティを読み取ります。|
+|[DataPolicyOperation を取得する](../api/datapolicyoperation-get.md) | [dataPolicyOperation](datapolicyoperation.md) |DataPolicyOperation オブジェクトのプロパティを読み取ります。|
 
 ## <a name="properties"></a>プロパティ
 
@@ -28,12 +28,12 @@ ms.locfileid: "32543178"
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |CompletedDateTime|DateTimeOffset|このデータポリシー操作の要求が完了すると、ISO 8601 形式を使用して UTC 時刻であることを表します。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 操作が完了するまで Null 値を返します。|
-|id|String| この操作の一意のキーです。 |
+|id|文字列| この操作の一意のキーです。 |
 |status|string| 可能な値は、`notStarted`、`running`、`complete`、`failed`、`unknownFutureValue` です。|
-|storagelocation|String|エクスポート要求のためにデータがエクスポートされる場所の URL。|
+|storageLocation|String|エクスポート要求のためにデータがエクスポートされる場所の URL。|
 |userId|String|操作が実行されるユーザーの id。|
-|submitteddatetime|DateTimeOffset|このデータ操作の要求が送信された時点 (UTC 時間) を表す ISO 8601 形式を使用します。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
-|progress|倍精度浮動小数点数|操作の進行状況を指定します。|
+|submittedDateTime|DateTimeOffset|このデータ操作の要求が送信された時点 (UTC 時間) を表す ISO 8601 形式を使用します。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
+|progress|2 行分|操作の進行状況を指定します。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

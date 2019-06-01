@@ -1,17 +1,19 @@
 ---
 title: デバイスを削除する
 description: 登録されているデバイスを削除します。
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 16a2a2478d00a527f0c9e0d010b62db3e20b7da7
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 60122fbce9117b617a31d5b61cefd60eb596129f
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33591008"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656399"
 ---
 # <a name="delete-device"></a>デバイスを削除する
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 登録されているデバイスを削除します。
 
@@ -29,7 +31,9 @@ ms.locfileid: "33591008"
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /devices/{id}
+
 ```
+
 > 注:要求内の"id"は、"deviceId"プロパティではなく、デバイスの id プロパティです。
 
 ## <a name="request-headers"></a>要求ヘッダー
@@ -52,7 +56,7 @@ DELETE /devices/{id}
   "name": "delete_device"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/devices/{id}
+DELETE https://graph.microsoft.com/beta/devices/{id}
 ```
 ##### <a name="response"></a>応答
 
@@ -63,11 +67,11 @@ DELETE https://graph.microsoft.com/v1.0/devices/{id}
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/delete_device-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/delete_device-Javascript-snippets.md)]
 
 ---
@@ -76,14 +80,16 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Delete device",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/device-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/device-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/beta/api/device-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/device-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-}-->
+}
+-->

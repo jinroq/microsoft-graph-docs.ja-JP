@@ -1,21 +1,24 @@
 ---
 title: directoryAudits を一覧表示する
-description: Azure Active Directory によって生成された監査ログの一覧を示します。 ユーザー、アプリ、デバイス、グループの管理、特権 ID 管理、アクセス レビュー、使用条件、ID 保護、パスワードの管理 (SSPR および管理者パスワードのリセット)、セルフサービス グループ管理など、Azure Active Directory 内のさまざまなサービスによって生成された監査ログが含まれています。
-localization_priority: Priority
-author: lleonard-msft
+description: Microsoft Graph API (ベータ版) からの directoryAudit リソース (エンティティ) の list メソッドについて説明します。
+localization_priority: Normal
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: df6a737696c855cd60e396c6571169f8c46b3952
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
-ms.translationtype: HT
+ms.openlocfilehash: ae0c98fe5be956aa5a00ce28cad5859c12063b35
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455108"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656126"
 ---
 # <a name="list-directoryaudits"></a>directoryAudits を一覧表示する
 
-Azure Active Directory によって生成された監査ログの一覧を示します。 ユーザー、アプリ、デバイス、グループの管理、特権 ID 管理、アクセス レビュー、使用条件、ID 保護、パスワードの管理 (SSPR および管理者パスワードのリセット)、セルフサービス グループ管理など、Azure Active Directory 内のさまざまなサービスによって生成された監査ログが含まれています。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Azure Active Directory によって生成された監査ログの一覧を取得します。 これには、Azure AD 内のさまざまなサービスによって生成された監査ログ (ユーザー、アプリ、デバイスとグループの管理、特権 id 管理 (PIM)、アクセスのレビュー、使用条件、id 保護、パスワード管理 (SSPR および管理パスワード) が含まれます。リセット)、およびセルフサービスのグループ管理を行います。
 
 ## <a name="permissions"></a>アクセス許可
+
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
@@ -27,12 +30,15 @@ Azure Active Directory によって生成された監査ログの一覧を示し
 また、アプリは Azure AD に[正しく登録されている](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)必要があります。
 
 ## <a name="http-request"></a>HTTP 要求
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /auditLogs/directoryAudits
 ```
+
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための以下の OData クエリ パラメーターをサポートします。 [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)でこれらのパラメーターを使用する方法について確認してください。
+
+このメソッドは、応答をカスタマイズするために、次の OData クエリパラメーターをサポートします。 このパラメーターの使用方法の詳細については、「 [OData クエリパラメーター](/graph/query_parameters)」を参照してください。
 
 |名前     |説明                            |例|
 |:--------------------|----------------|------------------------------------------------------------------------|
@@ -40,7 +46,8 @@ GET /auditLogs/directoryAudits
 |[$top](/graph/query-parameters#top-parameter)|結果のページ サイズを設定します。|`/auditLogs/directoryAudits?$top=1`|
 |[$skiptoken](/graph/query-parameters#skiptoken-parameter)|複数ページにわたる結果セットから、結果の次のページを取得します。|`auditLogs/directoryAudits?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
 
-### <a name="list-of-attributes-supported-by-filter-parameter"></a>$Filter パラメーターにサポートされる属性の一覧
+### <a name="attributes-supported-by-filter-parameter"></a>$Filter パラメーターでサポートされている属性
+
 |属性名 |サポートされる演算子|
 |:----------------|:------|
 |activityDisplayName| eq、startswith|
@@ -53,33 +60,47 @@ GET /auditLogs/directoryAudits
 |initiatedBy/app/appDisplayName| eq|
 |targetResources/any(t: t/id)| eq|
 |targetResources/any(t:t/displayName)| eq、startswith|
+
 ## <a name="request-headers"></a>要求ヘッダー
+
 | 名前      |説明|
 |:----------|:----------|
 | Authorization  | Bearer {code}|
 
 ## <a name="request-body"></a>要求本文
+
 このメソッドには、要求本文を指定しません。
+
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [directoryAudit](../resources/directoryaudit.md) オブジェクトのコレクションを返します。
+
 ## <a name="example"></a>例
-##### <a name="request"></a>要求
+
+### <a name="request"></a>要求
+
 以下は、要求の例です。
 <!-- {
   "blockType": "request",
   "name": "get_directoryaudits"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/auditLogs/directoryAudits
 ```
-##### <a name="response"></a>応答
-以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+
+### <a name="response"></a>応答
+
+以下は、応答の例です。 
+
+>**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.directoryAudit",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -87,7 +108,7 @@ Content-length: 271
 ```
 ```json
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/directoryAudits
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/directoryAudits",
   "value": [{
         "id": "id",
         "category": "UserManagement",
@@ -109,7 +130,7 @@ Content-length: 271
         "targetResources": [{
             "@odata.type": "#microsoft.graph.TargetResourceGroup",
             "id": "ef7x527d-6x92-42x4-8x6d-cfxfdfx57f95",
-            "displayName": "Lynda.com",
+            "displayName": "Example.com",
             "modifiedProperties": [{
                 "displayName": "Action Client Name",
                 "oldValue": null,
@@ -130,6 +151,16 @@ Content-length: 271
     }]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_directoryaudits-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_directoryaudits-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -138,5 +169,9 @@ Content-length: 271
   "description": "List directoryAudits",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/directoryaudit-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/directoryaudit-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

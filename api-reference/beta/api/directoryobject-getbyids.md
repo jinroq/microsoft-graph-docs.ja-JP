@@ -1,15 +1,15 @@
 ---
 title: ID のリストからディレクトリ オブジェクトを取得します。
 description: この操作に ` クエリ オプションは使用できません。
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 01315d643baf0c62f5baec498b267a036903317e
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 5263613e352439997f7198e971687296981bbc0b
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33590702"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656077"
 ---
 # <a name="get-directory-objects-from-a-list-of-ids"></a>ID のリストからディレクトリ オブジェクトを取得します。
 
@@ -113,11 +113,11 @@ Content-type: application/json
     ]
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/directoryobject_getByIds-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/directoryobject_getByIds-Javascript-snippets.md)]
 
 ---

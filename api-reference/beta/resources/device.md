@@ -2,14 +2,14 @@
 title: デバイス リソース型
 description: ディレクトリに登録されているデバイスを表します。 デバイスは、Device Registration Service を使用するか、Intune によってクラウドで作成されます。 これは、多要素認証の条件付きアクセス ポリシーで使用されます。 該当するデバイスの範囲は、デスクトップやノート PC から携帯電話やタブレットに及びます。 directoryObject から継承します。
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0b91b6e595dfc062836d8193c7c2dad769140e51
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: a19cbe489ae4e9ab3a31d9633433f7c4c7fc075a
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340862"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657722"
 ---
 # <a name="device-resource-type"></a>デバイス リソース型
 
@@ -27,7 +27,7 @@ ms.locfileid: "33340862"
 |[デバイスを一覧表示する](../api/device-list.md) | [device](device.md) コレクション| ディレクトリに登録されたデバイスの一覧を取得します。 |
 |[デバイスを更新する](../api/device-update.md) | [device](device.md)  |デバイスオブジェクトのプロパティを更新します。 |
 |[デバイスを削除する](../api/device-delete.md) | なし |デバイスオブジェクトを削除します。 |
-|[List memberOf](../api/device-list-memberof.md) |[directoryObject](directoryobject.md) collection| デバイスが直接メンバーであるグループを一覧表示します。 |
+|[memberOf を一覧表示する](../api/device-list-memberof.md) |[directoryObject](directoryobject.md) collection| デバイスが直接メンバーであるグループを一覧表示します。 |
 |[推移的な memberOf を一覧表示する](../api/device-list-transitivememberof.md) |[directoryObject](directoryobject.md) コレクション| デバイスがメンバーであるグループを一覧表示します。 この操作は推移的です。 |
 |[registeredOwners を一覧表示する](../api/device-list-registeredowners.md) |[directoryObject](directoryobject.md) collection| registeredOwners ナビゲーション プロパティから、デバイスの登録済み所有者であるユーザーを取得します。|
 |[registeredUsers を一覧表示する](../api/device-list-registeredusers.md) |[directoryObject](directoryobject.md) コレクション| registeredUsers ナビゲーション プロパティから、デバイスの登録済みユーザーを取得します。|
@@ -42,13 +42,13 @@ ms.locfileid: "33340862"
 |:---------------|:--------|:----------|
 |accountEnabled|Boolean| アカウントが有効な場合は **true**。それ以外の場合は **false**。 既定値は true です。|
 |alternativeSecurityIds|alternativeSecurityId コレクション| 内部使用専用です。 null 許容ではありません。 |
-|approximateLastSignInDateTime|DateTimeOffset| timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 読み取り専用です。 |
-|complianceExpirationDateTime|DateTimeOffset| デバイスが準拠していると見なされなくなったときのタイムスタンプ。 timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 読み取り専用です。 |
+|approximateLastSignInDateTime|DateTimeOffset| Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 読み取り専用です。 |
+|complianceExpirationDateTime|DateTimeOffset| デバイスが準拠していると見なされなくなったときのタイムスタンプ。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 読み取り専用です。 |
 |deviceId|Guid| 登録時に Azure の Device Registration Service により設定された一意の識別子。 |
 |deviceMetadata|String| 内部使用のために用意されています。 Null に設定します。 |
 |deviceVersion|Int32| 内部使用のみ。 |
 |displayName|String| デバイスの表示名。必須。 |
-|id|String|デバイスの一意識別子。[directoryObject](directoryobject.md) から継承されます。キーであり、Null は許容されません。読み取り専用。|
+|id|文字列|デバイスの一意識別子。[directoryObject](directoryobject.md) から継承されます。キーであり、Null は許容されません。読み取り専用。|
 |isCompliant|ブール値|デバイスがモバイル デバイス管理 (MDM) ポリシーに準拠している場合は **true**。それ以外の場合は **false**。 読み取り専用です。 これは、任意のデバイスの OS タイプに対して、または Windows OS デバイス用の承認された[MDM アプリ](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm)によってのみ、Intune によって更新できます。|
 |isManaged|Boolean|デバイスがモバイル デバイス管理 (MDM) アプリで管理されている場合は **true**。それ以外の場合は **false**。 これは、任意のデバイスの OS タイプに対して、または Windows OS デバイス用の承認された[MDM アプリ](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm)によってのみ、Intune によって更新できます。 |
 |onPremisesLastSyncDateTime|DateTimeOffset|オブジェクトがオンプレミスのディレクトリと最後に同期された日時を示します。Timestamp 型は、ISO 8601 形式を使用して、常に UTC 時間での日付と時刻の情報を表します。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 読み取り専用。 |
@@ -56,11 +56,11 @@ ms.locfileid: "33340862"
 |operatingSystem|String| デバイス上のオペレーティング システムの種類。必須。 |
 |operatingSystemVersion|String| デバイスのオペレーティング システムのバージョン。 必須。 |
 |physicalIds|String collection| 内部使用専用です。 null 許容ではありません。 |
-|profiletype|String|デバイスのプロファイルの種類。 可能な値:<br />**registereddevice**限り<br />**securevm**<br />**Printer**<br />**Shared**<br />**hub**|
-|systemlabels|String collection| システムによってデバイスに適用されるラベルのリスト。 |
+|profileType|String|デバイスのプロファイルの種類。 可能な値:<br />**Registereddevice**限り<br />**SecureVM**<br />**Printer**<br />**Shared**<br />**Hub**|
+|systemLabels|文字列コレクション| システムによってデバイスに適用されるラベルのリスト。 |
 |trustType|String| 参加済みデバイスの信頼の種類。 読み取り専用です。 可能な値: <br />**ワークプレース** - *bring your own personal devices* を示します<br />**AzureAd** - クラウド専用の参加済みデバイス<br />**ServerAd** -Azure AD に参加済みのオンプレミスのドメイン参加済みデバイス。 詳細については、「[Azure Active Directory のデバイス管理の概要](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction)」を参照してください |
 |名前| String | デバイスのフレンドリ名。 ユーザーが Microsoft アカウントでプロジェクトローマの一部としてサインインした場合にのみ返されます。 |
-|Status | String| デバイスがオンラインまたはオフライン。 ユーザーが Microsoft アカウントでプロジェクトローマの一部としてサインインした場合にのみ返されます。 |
+|状態 | String| デバイスがオンラインまたはオフライン。 ユーザーが Microsoft アカウントでプロジェクトローマの一部としてサインインした場合にのみ返されます。 |
 |プラットフォーム |String|デバイスのプラットフォーム。 ユーザーが Microsoft アカウントでプロジェクトローマの一部としてサインインした場合にのみ返されます。 ユーザーが Microsoft アカウントでプロジェクトローマの一部としてサインインした場合にのみ返されます。|
 |Kind| 文字列| デバイスのフォームファクター。 ユーザーが Microsoft アカウントでプロジェクトローマの一部としてサインインした場合にのみ返されます。 |
 |モデル| String| デバイスのモデル。 ユーザーが Microsoft アカウントでプロジェクトローマの一部としてサインインした場合にのみ返されます。 |

@@ -2,14 +2,14 @@
 title: administrativeUnit リソースの種類
 description: 管理単位は、ユーザーおよびグループのディレクトリオブジェクトの概念コンテナーを提供します。 管理単位を使用することで、会社の管理者は、管理単位に含まれるユーザーやグループを管理するための管理責任を、地域または部門の管理者に委任できるようになりました。
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4dbc1c00b87e35f90cb0e14169364591c28c406f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 94d6c359449400ad2b37840b34d1b62e6f1b2138
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339133"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656847"
 ---
 # <a name="administrativeunit-resource-type"></a>administrativeUnit リソースの種類
 
@@ -21,22 +21,22 @@ ms.locfileid: "33339133"
 
 このリソースでは、[拡張機能](/graph/extensibility-overview)を使用してカスタム プロパティに独自のデータを追加することができます。
 
-このトピックでは、administrativeUnit エンティティによって公開される宣言されたプロパティとナビゲーションプロパティについて説明するほかに、group や directoryrole リソースで呼び出すことができる操作と関数についても説明します。
+このトピックでは、administrativeUnit エンティティによって公開される宣言されたプロパティとナビゲーションプロパティについて説明するほかに、Group や directoryrole リソースで呼び出すことができる操作と関数についても説明します。
 
 
 ## <a name="methods"></a>メソッド
 
 | メソッド   | 戻り値の型 | 説明 |
 |:---------------|:--------|:----------|
-|[administrativeUnit を作成する](../api/administrativeunit-post-administrativeunits.md) | [administrativeUnit](administrativeunit.md) | 新しい管理単位を作成します。|
-|[リスト group や directoryrole](../api/administrativeunit-list.md) | [administrativeUnit](administrativeunit.md)コレクション |すべての group や directoryrole のプロパティを一覧表示します。|
-|[administrativeUnit を取得する](../api/administrativeunit-get.md) | [administrativeUnit](administrativeunit.md) |特定の administrativeUnit オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[adminstrativeUnit の更新](../api/administrativeunit-update.md) | [administrativeUnit](administrativeunit.md)  |administrativeUnit オブジェクトを更新します。 |
-|[adminstrativeUnit の削除](../api/administrativeunit-delete.md) | なし |administrativeUnit オブジェクトを削除します。 |
+|[AdministrativeUnit を作成する](../api/administrativeunit-post-administrativeunits.md) | [administrativeUnit](administrativeunit.md) | 新しい管理単位を作成します。|
+|[リスト Group や directoryrole](../api/administrativeunit-list.md) | [administrativeUnit](administrativeunit.md)コレクション |すべての Group や directoryrole のプロパティを一覧表示します。|
+|[AdministrativeUnit を取得する](../api/administrativeunit-get.md) | [administrativeUnit](administrativeunit.md) |特定の administrativeUnit オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[AdminstrativeUnit の更新](../api/administrativeunit-update.md) | [administrativeUnit](administrativeunit.md)  |AdministrativeUnit オブジェクトを更新します。 |
+|[AdminstrativeUnit の削除](../api/administrativeunit-delete.md) | None |AdministrativeUnit オブジェクトを削除します。 |
 |[Add a member](../api/administrativeunit-post-members.md) |[directoryObject](directoryobject.md)| メンバー (ユーザーまたはグループ) を追加します。|
 |[メンバーを一覧表示する](../api/administrativeunit-list-members.md) |[directoryObject](directoryobject.md) コレクション| (ユーザーおよびグループ) メンバーの一覧を取得します。|
 |[メンバーを取得する](../api/administrativeunit-get-members.md) |[directoryObject](directoryobject.md)| 特定のメンバーを取得します。|
-|[Remove a member](../api/administrativeunit-delete-members.md) |[directoryObject](directoryobject.md)| メンバーを削除します。|
+|[メンバーを削除する](../api/administrativeunit-delete-members.md) |[directoryObject](directoryobject.md)| メンバーを削除します。|
 |[スコープロールのメンバーを追加する](../api/administrativeunit-post-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| スコープ付きの役割メンバーを追加します。|
 |[スコープが指定された役割のメンバーを一覧表示する](../api/administrativeunit-list-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md) コレクション| スコープが設定された役割の担当者の一覧を取得します。|
 |[スコープロールのメンバーを取得する](../api/administrativeunit-get-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| 特定の範囲の役割メンバーを取得します。|

@@ -1,15 +1,15 @@
 ---
 title: AdministrativeUnit を作成する
 description: この API を使用して、新しい administrativeUnit を作成します。
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4815082a8a5930e426e0843d2dcf2ebe6ef190d5
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: e583de306d158cea6c5e3b6eaae3d06ee7ce7f29
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636633"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655251"
 ---
 # <a name="create-administrativeunit"></a>AdministrativeUnit を作成する
 
@@ -85,11 +85,11 @@ Content-length: 172
   }
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/create_administrativeunit_from_administrativeunits-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_administrativeunit_from_administrativeunits-Javascript-snippets.md)]
 
 ---

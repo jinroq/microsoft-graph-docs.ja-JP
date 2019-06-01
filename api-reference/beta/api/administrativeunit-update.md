@@ -1,15 +1,15 @@
 ---
 title: Administrativeunit の更新
 description: AdministrativeUnit オブジェクトのプロパティを更新します。
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 56b92a7dc191b41798255f1db5a5da84285688f8
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: adf8d355c9e693ef1c79b0b774dc859e7a8d4f26
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636640"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655216"
 ---
 # <a name="update-administrativeunit"></a>Administrativeunit の更新
 
@@ -84,11 +84,11 @@ Content-length: 114
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_administrativeunit-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_administrativeunit-Javascript-snippets.md)]
 
 ---

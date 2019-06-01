@@ -1,15 +1,15 @@
 ---
 title: 'ドメイン: forceDelete'
 description: 非同期操作を使用してドメインを削除します。
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6fba74647d1aae5830f7b70433c7b91b0bc41706
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 99ea7666050ba167503fe330bd1c4b9b48aff64b
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33589536"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655769"
 ---
 # <a name="domain-forcedelete"></a>ドメイン: forceDelete
 
@@ -97,11 +97,11 @@ Content-length: 33
 ```http
 HTTP/1.1 200 OK
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/domain_forcedelete-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/domain_forcedelete-Javascript-snippets.md)]
 
 ---

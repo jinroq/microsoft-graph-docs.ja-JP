@@ -1,17 +1,17 @@
 ---
-title: accessreview リソースの種類
+title: accessReview リソースの種類
 description: 'Azure AD access レビュー機能では、は`accessReview`アクセスレビューを表します。  '
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d65d41c23b97c5883be4c062598f438640cd7c1f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: b1801a7f7cbd52375e4fbbfb42847b29539a2dde
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339378"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657736"
 ---
-# <a name="accessreview-resource-type"></a>accessreview リソースの種類
+# <a name="accessreview-resource-type"></a>accessReview リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,19 +22,19 @@ Azure AD [access レビュー](accessreviews-root.md)機能では、は`accessRe
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[accessreview を取得する](../api/accessreview-get.md) |   [accessreview](accessreview.md) |   特定の id を持つアクセスレビューを取得します。 |
-|[accessreview を作成する](../api/accessreview-create.md) | [accessreview](accessreview.md) |   新しい accessreview を作成します。 |
-|[accessreview の削除](../api/accessreview-delete.md) | なし。   | accessreview を削除します。 |
-|[accessreview を更新する](../api/accessreview-update.md) | [accessreview](accessreview.md) | accessreview を更新します。 |
-|[accessreview レビュー担当者のリスト](../api/accessreview-listreviewers.md) |      [useridentity](useridentity.md)コレクション| accessreview のレビュー担当者を取得します。 |
-|[accessreview レビュー担当者を追加する](../api/accessreview-addreviewer.md) |      なし。   |   閲覧者を accessreview に追加します。 |
-|[accessreview レビュー担当者を削除する](../api/accessreview-removereviewer.md) | なし。  |   accessreview からレビュー担当者を削除します。 |
-|[accessreview に関する決定事項を一覧表示する](../api/accessreview-listdecisions.md) |      [accessReviewDecision](accessreviewdecision.md)コレクション| accessreview の決定事項を取得します。|
-|[自分の accessreview の決定事項を一覧表示する](../api/accessreview-listmydecisions.md) |     [accessReviewDecision](accessreviewdecision.md)コレクション| レビュー担当者として、accessreview の決定事項を取得します。|
-|[access レビュー通知の送信](../api/accessreview-sendreminder.md) |        なし。   |   accessreview のレビュー担当者に通知を送信します。 |
-|[accessreview を停止する](../api/accessreview-stop.md) |     なし。   |   accessreview を停止します。 |
-|[accessreview の決定をリセットする](../api/accessreview-reset.md) |     なし。   |   進行中の accessreview で意思決定をリセットします。|
-|[accessreview の決定を適用する](../api/accessreview-apply.md) |     なし。   |   完了した accessreview から決定を適用します。|
+|[AccessReview を取得する](../api/accessreview-get.md) |   [accessReview](accessreview.md) |   特定の id を持つアクセスレビューを取得します。 |
+|[AccessReview を作成する](../api/accessreview-create.md) | [accessReview](accessreview.md) |   新しい accessReview を作成します。 |
+|[AccessReview の削除](../api/accessreview-delete.md) | なし。   | AccessReview を削除します。 |
+|[AccessReview を更新する](../api/accessreview-update.md) | [accessReview](accessreview.md) | AccessReview を更新します。 |
+|[AccessReview レビュー担当者のリスト](../api/accessreview-listreviewers.md) |      [Useridentity](useridentity.md)コレクション| AccessReview のレビュー担当者を取得します。 |
+|[AccessReview レビュー担当者を追加する](../api/accessreview-addreviewer.md) |      なし。   |   閲覧者を accessReview に追加します。 |
+|[AccessReview レビュー担当者を削除する](../api/accessreview-removereviewer.md) | なし。  |   AccessReview からレビュー担当者を削除します。 |
+|[AccessReview に関する決定事項を一覧表示する](../api/accessreview-listdecisions.md) |      [accessReviewDecision](accessreviewdecision.md)コレクション| AccessReview の決定事項を取得します。|
+|[自分の accessReview の決定事項を一覧表示する](../api/accessreview-listmydecisions.md) |     [accessReviewDecision](accessreviewdecision.md)コレクション| レビュー担当者として、accessReview の決定事項を取得します。|
+|[Access レビュー通知の送信](../api/accessreview-sendreminder.md) |        なし。   |   AccessReview のレビュー担当者に通知を送信します。 |
+|[AccessReview を停止する](../api/accessreview-stop.md) |     なし。   |   AccessReview を停止します。 |
+|[AccessReview の決定をリセットする](../api/accessreview-reset.md) |     なし。   |   進行中の accessReview で意思決定をリセットします。|
+|[AccessReview の決定を適用する](../api/accessreview-apply.md) |     なし。   |   完了した accessReview から決定を適用します。|
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
@@ -43,13 +43,13 @@ Azure AD [access レビュー](accessreviews-root.md)機能では、は`accessRe
 | `displayName`             |`String`                                                        | アクセスレビュー名。 作成時に必要です。 |
 | `startDateTime`           |`DateTimeOffset`                                                | レビューが開始される予定の日時。  これは、将来の日付になる可能性があります。  作成時に必要です。 |
 | `endDateTime`             |`DateTimeOffset`                                                | レビューが終了する予定の日時。 これは、開始日よりも1日以上後でなければなりません。  作成時に必要です。 |
-| `status`                  |`String`                                                        | この読み取り専用フィールドは、accessreview の状態を指定します。 一般的な状態に`Initializing`は`NotStarted`、 `Starting``InProgress` `Completing` `Completed` `AutoReviewing`、、、、、、 `AutoReviewed`、などがあります。 |
+| `status`                  |`String`                                                        | この読み取り専用フィールドは、accessReview の状態を指定します。 一般的な状態に`Initializing`は`NotStarted`、 `Starting``InProgress` `Completing` `Completed` `AutoReviewing`、、、、、、 `AutoReviewed`、などがあります。 |
 | `description`             |`String`                                                        | レビュー担当者に表示する、アクセスレビュー作成者によって提供される説明。 |
 | `businessFlowTemplateId`  |`String`                                                        | ビジネスフローテンプレートの識別子。 作成時に必要です。 |
 | `reviewerType`            |`String`                                                        | レビュー担当者の関係の種類 (ターゲットオブジェクト、また`self`は`delegated` `entityOwners`のいずれか)。 作成時に必要です。 | 
 | `createdBy`               |[userIdentity](useridentity.md)                                 | このレビューを作成したユーザー。 |
 | `reviewedEntity`          |[identity](identity.md)                                      | アクセスレビューでアクセス権の割り当てを確認しているオブジェクト。 これは、グループ内のユーザーのメンバーシップを確認したり、アプリケーションへのユーザーの割り当てを確認したりするためのグループであってもかまいません。 作成時に必要です。 | 
-| `settings`                |`microsoft.graph.accessReviewSettings`             | accessreview の設定については、以下の「型の定義」を参照してください。 |
+| `settings`                |`microsoft.graph.accessReviewSettings`             | AccessReview の設定については、以下の「型の定義」を参照してください。 |
 
 
 
@@ -60,14 +60,14 @@ Azure AD [access レビュー](accessreviews-root.md)機能では、は`accessRe
 
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-| `reviewers`               |[useridentity](useridentity.md)コレクション                     | アクセスレビュー reviewerType の種類`delegate`がの場合に、アクセスレビューのレビュー担当者のコレクション。 |
+| `reviewers`               |[Useridentity](useridentity.md)コレクション                     | アクセスレビュー reviewerType の種類`delegate`がの場合に、アクセスレビューのレビュー担当者のコレクション。 |
 | `decisions`               |[accessReviewDecision](accessreviewdecision.md)コレクション | このアクセスレビューに関する決定事項のコレクション。 |
 | `myDecisions`             |[accessReviewDecision](accessreviewdecision.md)コレクション | 呼び出し元がレビュー担当者の場合、呼び出し元に対する決定のコレクション。 |
-| `instances`               |[accessreview](accessreview.md)コレクション         | このオブジェクトが定期的なアクセスレビューである場合、access のコレクションは、過去、現在、および今後のインスタンスをレビューします。 |
+| `instances`               |[Accessreview](accessreview.md)コレクション         | このオブジェクトが定期的なアクセスレビューである場合、access のコレクションは、過去、現在、および今後のインスタンスをレビューします。 |
 
 オブジェクトにこれらのリレーションシップが存在するかどうかは、オブジェクトが1回限りのアクセスレビューであるか、定期的なアクセスレビューの一連であるか、または定期的なアクセスレビューのインスタンスであるかに応じて異なります。
 
-| シナリオ | レビュー担当者がいますか? | 決定事項と mydecisions はありますか? | インスタンスがあるかどうか |
+| シナリオ | レビュー担当者がいますか? | 決定事項と myDecisions はありますか? | インスタンスがあるかどうか |
 |:---------|:---------------|:---------------|:---------------|
 |ワンタイムアクセスのレビュー|はい | はい (開始した後) | いいえ |
 | 定期的なアクセスのレビュー | はい | いいえ | はい |
@@ -104,7 +104,7 @@ Azure AD [access レビュー](accessreviews-root.md)機能では、は`accessRe
 
 ```
 
-## <a name="the-accessreviewsettings-type"></a>accessReviewSettings の種類
+## <a name="the-accessreviewsettings-type"></a>AccessReviewSettings の種類
 
 は`accessReviewSettings` 、アクセスレビューを作成するときの追加の設定を提供し、アクセスレビューを開始するときの機能の動作を制御します。  この型には、次のプロパティがあります。 
 
@@ -120,7 +120,7 @@ Azure AD [access レビュー](accessreviews-root.md)機能では、は`accessRe
 | `autoApplyReviewResultsEnabled`|`Boolean` | 自動適用機能を使用して、ターゲットオブジェクトのアクセスリソースを自動的に変更するかどうかを示すフラグが有効になっていることを示します。  有効になっていない場合、ユーザーはレビューが完了した後、アクセスレビューを適用する必要があります。 |
 | `accessRecommendationsEnabled`|`Boolean` | レビュー担当者におすすめ候補を表示するかどうかを示すフラグ。 |
 
-## <a name="the-autoreviewsettings-type"></a>autoreviewsettings の種類
+## <a name="the-autoreviewsettings-type"></a>AutoReviewSettings の種類
 
 は`autoReviewSettings` 、アクセスレビューの設定内に埋め込まれ、アクセスレビューが完了したときの機能の動作を指定します。  この型には、 `notReviewedResult`1 つのプロパティがあります。
 
@@ -129,7 +129,7 @@ Azure AD [access レビュー](accessreviews-root.md)機能では、は`accessRe
 | `notReviewedResult`          |`String`  | `Approve`、`Deny`、`Recommendation` のいずれかでなければなりません。 |
 
 
-## <a name="the-accessreviewrecurrencesettings-type"></a>accessReviewRecurrenceSettings の種類
+## <a name="the-accessreviewrecurrencesettings-type"></a>AccessReviewRecurrenceSettings の種類
 
 は`accessReviewRecurrenceSettings` 、アクセスレビューの設定内に埋め込まれており、定期的にアクセスレビューが繰り返されることを指定します。  この型には、次のプロパティがあります。
 

@@ -1,21 +1,21 @@
 ---
 title: accessReviewDecision リソースの種類
-description: azure ad access レビュー機能では、は`accessReviewDecision`特定のエンティティのアクセスに対する azure ad アクセスレビューの決定を表します。  アクセスレビュー、または定期的なアクセスレビューのインスタンスでは、レビュー対象の`accessReviewDecision`ユーザーごとに1つあります。  たとえば、グループに2人のゲストとゲスト以外のゲストがメンバーとして設定されている場合、そのグループに対してゲストのアクセスレビューが行われると、2つのアクセスレビューの決定オブジェクトがあります。  レビュー担当者が決定を変更した場合、または別の`accessReviewDecision`レビュー担当者がそれを上書きした場合は、が更新されます。
+description: Azure AD access レビュー機能では、は`accessReviewDecision`特定のエンティティのアクセスに対する azure ad アクセスレビューの決定を表します。  アクセスレビュー、または定期的なアクセスレビューのインスタンスでは、レビュー対象の`accessReviewDecision`ユーザーごとに1つあります。  たとえば、グループに2人のゲストとゲスト以外のゲストがメンバーとして設定されている場合、そのグループに対してゲストのアクセスレビューが行われると、2つのアクセスレビューの決定オブジェクトがあります。  レビュー担当者が決定を変更した場合、または別の`accessReviewDecision`レビュー担当者がそれを上書きした場合は、が更新されます。
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a3ba49484f46f6d41349abbd7a857ee365ef3ff0
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 034ecbdaa108d0c63378d1c00136f0415019b262
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339364"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657743"
 ---
 # <a name="accessreviewdecision-resource-type"></a>accessReviewDecision リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-azure ad [access レビュー](accessreviews-root.md)機能では、は`accessReviewDecision`特定のエンティティのアクセスに対する azure ad アクセスレビューの決定を表します。  アクセスレビュー、または定期的なアクセスレビューのインスタンスでは、レビュー対象の`accessReviewDecision`ユーザーごとに1つあります。  たとえば、グループに2人のゲストとゲスト以外のゲストがメンバーとして設定されている場合、そのグループに対してゲストのアクセスレビューが行われると、2つのアクセスレビューの決定オブジェクトがあります。  レビュー担当者が決定を変更した場合、または別の`accessReviewDecision`レビュー担当者がそれを上書きした場合は、が更新されます。
+Azure AD [access レビュー](accessreviews-root.md)機能では、は`accessReviewDecision`特定のエンティティのアクセスに対する azure ad アクセスレビューの決定を表します。  アクセスレビュー、または定期的なアクセスレビューのインスタンスでは、レビュー対象の`accessReviewDecision`ユーザーごとに1つあります。  たとえば、グループに2人のゲストとゲスト以外のゲストがメンバーとして設定されている場合、そのグループに対してゲストのアクセスレビューが行われると、2つのアクセスレビューの決定オブジェクトがあります。  レビュー担当者が決定を変更した場合、または別の`accessReviewDecision`レビュー担当者がそれを上書きした場合は、が更新されます。
 
 
 ## <a name="methods"></a>メソッド
@@ -58,8 +58,8 @@ azure ad [access レビュー](accessreviews-root.md)機能では、は`accessRe
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[accessreview に関する決定事項を一覧表示する](../api/accessreview-listdecisions.md) |      [accessReviewDecision](accessreviewdecision.md)コレクション| accessreview の決定事項を取得します。|
-|[自分の accessreview の決定事項を一覧表示する](../api/accessreview-listmydecisions.md) |     [accessReviewDecision](accessreviewdecision.md)コレクション| レビュー担当者として、accessreview の決定事項を取得します。|
+|[AccessReview に関する決定事項を一覧表示する](../api/accessreview-listdecisions.md) |      [accessReviewDecision](accessreviewdecision.md)コレクション| AccessReview の決定事項を取得します。|
+|[自分の accessReview の決定事項を一覧表示する](../api/accessreview-listmydecisions.md) |     [accessReviewDecision](accessreviewdecision.md)コレクション| レビュー担当者として、accessReview の決定事項を取得します。|
 
 ## <a name="json-representation"></a>JSON 表記
 

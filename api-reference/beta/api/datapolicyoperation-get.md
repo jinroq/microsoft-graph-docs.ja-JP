@@ -2,14 +2,14 @@
 title: DataPolicyOperation を取得する
 description: DataPolicyOperation オブジェクトのプロパティを取得します。
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 749f9e62536949e4e74077640076337f7d8a5263
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 80daa09c72d81b55d20e16d83471e18312de5dbe
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33591043"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656392"
 ---
 # <a name="get-datapolicyoperation"></a>DataPolicyOperation を取得する
 
@@ -70,11 +70,11 @@ Content-length: 212
   "progress": "double"
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_datapolicyoperation-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_datapolicyoperation-Javascript-snippets.md)]
 
 ---

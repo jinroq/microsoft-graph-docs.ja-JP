@@ -2,14 +2,14 @@
 title: AccessReview をリセットする
 description: Azure AD access レビュー機能で、現在アクティブな accessReview の決定をリセットします。  ターゲットオブジェクトは、1回限りのアクセスレビュー、または定期的なアクセスレビューのインスタンスのいずれかになります。  以前の決定は記録されなくなりますが、レビューアーは引き続き決定を更新できます。
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 35c78f0082dadbad7e8acf7bca51976dee2274f7
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 8b3998b055c76b17e719e622f1cc1413b825ccfc
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636759"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655454"
 ---
 # <a name="reset-accessreview"></a>AccessReview をリセットする
 
@@ -53,7 +53,7 @@ POST /accessReviews('<id>')/resetDecisions()
 POST https://graph.microsoft.com/beta/accessReviews/2975E9B5-44CE-4E71-93D3-30F03B5AA992/resetDecisions
 ```
 ##### <a name="response"></a>応答
->**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
+>**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -61,11 +61,11 @@ POST https://graph.microsoft.com/beta/accessReviews/2975E9B5-44CE-4E71-93D3-30F0
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/reset_accessReview-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/reset_accessReview-Javascript-snippets.md)]
 
 ---

@@ -2,14 +2,14 @@
 title: ディレクトリ設定テンプレートを取得する
 description: ディレクトリ設定テンプレートは、テナント内で設定を作成することができる設定のテンプレートを表します。 この操作により、使用可能な設定とその既定値を含む directorySettingTemplate オブジェクトのプロパティを取得できるようになります。
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7c419be1bb9934b235c361112e9f79129fea6828
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: cb79e7de921ef3ed5a67c56b27d07dbc40bc6093
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33589525"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655790"
 ---
 # <a name="get-a-directory-setting-template"></a>ディレクトリ設定テンプレートを取得する
 
@@ -83,11 +83,11 @@ Content-length: 270
   ],
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_directorysettingtemplate-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_directorysettingtemplate-Javascript-snippets.md)]
 
 ---

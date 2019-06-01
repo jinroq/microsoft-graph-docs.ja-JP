@@ -1,15 +1,15 @@
 ---
 title: directoryRoles を一覧表示する
 description: テナントでアクティブになっているディレクトリ ロールを一覧表示します。
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 312f8df6dae27ee68ff45187bbcea546e2c7f4f8
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: a373fab5ce1d16f9db0568c4a2dc14fc77d7fdef
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33590443"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655930"
 ---
 # <a name="list-directoryroles"></a>directoryRoles を一覧表示する
 
@@ -78,11 +78,11 @@ Content-length: 187
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_directoryroles-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_directoryroles-Javascript-snippets.md)]
 
 ---
