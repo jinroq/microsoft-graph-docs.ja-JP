@@ -2,14 +2,14 @@
 title: directory リソースの種類 (削除済みアイテム)
 description: . 削除されたアイテムは、最大 30 日間、復元可能な状態に維持されます。 30 日が経過すると、アイテムは完全に削除されます。
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 090b9bf476fcaa928f2c6358565ef86af627b8a9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 09f6059ca10b64e30aab06f4dd9ee4f3dc281ef4
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32574646"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34658037"
 ---
 # <a name="directory-resource-type-deleted-items"></a>directory リソースの種類 (削除済みアイテム)
 
@@ -25,12 +25,12 @@ ms.locfileid: "32574646"
 |[削除済みアイテムの復元](../api/directory-deleteditems-restore.md) |[directoryObject](directoryobject.md)| 最近削除されたアイテムを復元します。 |
 |[削除済みアイテムの一覧表示](../api/directory-deleteditems-list.md) |[directoryObject](directoryobject.md) コレクション| 最近削除されたアイテムのリストを取得します。 |
 |[アイテムの完全削除](../api/directory-deleteditems-delete.md) | なし | アイテムを完全に削除します。 |
-|[ユーザーが所有する削除済みアイテムを一覧表示する](../api/directory-deleteditems-user-owned.md) | [directoryObject](directoryobject.md) コレクション | ユーザーが所有しているディレクトリアイテムを一覧表示します。 |
+|[ユーザーが所有する削除済みアイテムを一覧表示する](../api/directory-deleteditems-user-owned.md) | [directoryObject](directoryobject.md) collection | ユーザーが所有しているディレクトリアイテムを一覧表示します。 |
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|deletedItems|[directoryObject](directoryobject.md) コレクション| 最近削除されたアイテム 読み取り専用。 Null 許容型。|
+|deletedItems|[directoryObject](directoryobject.md) コレクション| 最近削除されたアイテム 読み取り専用です。 Null 許容型。|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。

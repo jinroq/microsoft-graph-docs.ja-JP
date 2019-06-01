@@ -1,17 +1,17 @@
 ---
-title: 'directoryrole: delta'
+title: 'directoryRole: delta'
 description: リソースコレクション全体の完全な読み取りを実行せずに、新しく作成、更新、または削除されたディレクトリの役割を取得します。 詳細については、「デルタクエリの使用」を参照してください。
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6da3e8c4cf92edbf79df1b082675c36d54e81292
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 46f6eaa2938c44c458159415b1cca1838f549ffa
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550603"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656952"
 ---
-# <a name="directoryrole-delta"></a>directoryrole: delta
+# <a name="directoryrole-delta"></a>directoryRole: delta
 
 リソースコレクション全体の完全な読み取りを実行せずに、新しく作成、更新、または削除されたディレクトリの役割を取得します。 詳細については、「[デルタクエリの使用](/graph/delta-query-overview)」を参照してください。
 
@@ -28,7 +28,7 @@ ms.locfileid: "32550603"
 
 ## <a name="http-request"></a>HTTP 要求
 
-変更の追跡を開始するには、 [directoryrole](../resources/directoryrole.md)リソースに**デルタ**関数を含む要求を行います。
+変更の追跡を開始するには、 [Directoryrole](../resources/directoryrole.md)リソースに**デルタ**関数を含む要求を行います。
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -37,20 +37,20 @@ GET /directoryRoles/delta
 
 ## <a name="query-parameters"></a>クエリ パラメーター
 
-変更の追跡では、1回以上の**デルタ**関数呼び出しが発生します。 クエリパラメーター ( `$deltatoken`および`$skiptoken`以外) を使用する場合は、最初の**デルタ**要求で指定する必要があります。 Microsoft Graph は、指定されたパラメーターを、 `nextLink`応答で指定`deltaLink`されたまたは URL のトークン部分に自動的にエンコードします。 必要なクエリ パラメーターを前もって 1 回指定しておくだけで済みます。 その後の要求では、前の応答で得られた `nextLink` や `deltaLink` の URL をコピーして適用します。エンコード済みの必要なパラメーターがこの URL に既に含まれているためです。
+変更の追跡では、1回以上の**デルタ**関数呼び出しが発生します。 任意のクエリ パラメーター (`$deltatoken` と`$skiptoken`以外) を使用する場合は、最初の**デルタ**要求でこれを指定する必要があります。 Microsoft Graph は、応答で提供される `nextLink` または `deltaLink` の URL のトークン部分に指定したパラメーターを自動的にエンコードします。 必要なクエリ パラメーターを前もって 1 回指定しておくだけで済みます。 その後の要求では、前の応答で得られた `nextLink` や `deltaLink` の URL をコピーして適用します。エンコード済みの必要なパラメーターがこの URL に既に含まれているためです。
 
-| クエリ パラメーター      | 型   |説明|
+| クエリ パラメーター      | 種類   |説明|
 |:---------------|:--------|:----------|
 | $deltatoken | string | 同じリソースコレクションに対する前`deltaLink`の**デルタ**関数呼び出しの URL で返された[状態トークン](/graph/delta-query-overview)。変更追跡のラウンドが終了したことを示します。 そのコレクションの次の`deltaLink`ラウンドの変更追跡の最初の要求で、このトークンを含む URL 全体を保存して適用します。|
 | $skiptoken | string | 前の**デルタ**関数呼び出しの`nextLink` URL で[状態トークン](/graph/delta-query-overview)が返され、同じリソースコレクションに追跡すべき変更が他にもあることを示します。 |
 
 ### <a name="odata-query-parameters"></a>OData クエリ パラメーター
 
-このメソッドは、応答をカスタマイズするための OData クエリパラメーターをサポートします。
+このメソッドは、応答をカスタマイズするための OData クエリ パラメーターをサポートします。
 
 - 任意の GET リクエストと同様に `$select` クエリ パラメーターを使用して、最善のパフォーマンスを得るために必要なプロパティのみを指定することができます。_Id_ プロパティは常に返されます。
 
-- 次のサポートに`$filter`制限があります。
+- `$filter` に対するサポートには制限があります。
 
   - サポートされ`$filter`ている唯一の式は、id: `$filter=id+eq+{value}`または`$filter=id+eq+{value1}+or+id+eq+{value2}`を使用して特定のリソースの変更を追跡することです。 指定できる id の数は、URL の最大の長さによって制限されます。
 
@@ -67,9 +67,9 @@ GET /directoryRoles/delta
 
 ### <a name="response"></a>応答
 
-成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[directoryrole](../resources/directoryrole.md)コレクションオブジェクトを返します。 応答には、 `nextLink` url または`deltaLink` url も含まれます。
+成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[directoryrole](../resources/directoryrole.md)コレクションオブジェクトを返します。 応答には`nextLink` URLまたは`deltaLink` URLも含まれます。
 
-- URL が返される場合は、セッションに取得するデータの追加ページがあります。`nextLink` アプリケーションは、応答に`nextLink` `deltaLink` url が含まれるまで、url を使用して要求を引き続き行います。
+- URL が返される場合は、セッションに取得するデータの追加ページがあります。`nextLink` アプリケーションは`deltaLink` URL が応答に含まれるまで`nextLink` URLを使用して要求を続けます。
 
 - URL が返される場合、返されるリソースの既存の状態に関するデータはありません。 次`deltaLink`の**デルタ**呼び出しで URL を保存して適用し、今後のリソースの変更について学習します。
 
@@ -112,6 +112,16 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/directoryRole_delta-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/directoryRole_delta-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="see-also"></a>関連項目
 
@@ -125,5 +135,9 @@ Content-type: application/json
   "description": "directoryRole: delta",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/directoryrole-delta.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/directoryrole-delta.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

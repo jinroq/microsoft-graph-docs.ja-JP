@@ -2,14 +2,14 @@
 title: directoryRoleTemplate リソース型
 description: ディレクトリ ロール テンプレートを表します。 ディレクトリ ロール テンプレートでは、ディレクトリ ロール (directoryRole) のプロパティ値を指定します。 テナントでアクティブにすることがあるディレクトリの役割ごとに、関連付けられているディレクトリ ロール テンプレート オブジェクトがあります。 ディレクトリ ロールを読み取る場合や、そのメンバーを更新する場合は、まず、そのディレクトリ ロールをテナントでアクティブにする必要があります。 既定では、会社の管理者 (Company Administrators) ディレクトリ ロールのみがアクティブ化されています。 他の使用可能なディレクトリロールをアクティブ化するには`/directoryRoles` 、要求の**roleTemplateId**パラメーターでディレクトリロールが指定されているディレクトリロールテンプレートの ID を使用して、POST 要求をエンドポイントに送信します。 この ID は、要求の roleTemplateId パラメーターで指定したディレクトリ ロールに基づきます。 この要求が正常に完了すると、ディレクトリ ロールの読み取りや、ディレクトリ ロールへのメンバーの追加ができるようになります。**注**:ディレクトリ ロール テンプレートは、ユーザー (Users) ディレクトリ ロールに公開されます。 ユーザー ディレクトリ ロールは、暗黙的であり、ディレクトリ クライアントには表示されません。 テナント内のすべてのユーザーは、インフラストラクチャによって、このロールに割り当てられます。 このロールは、あらかじめアクティブ化されています。 このテンプレートは、使用しないでください。
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 57dec43699ba75c7e936fa02dbdf09df74dd06ed
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fdacca1f601485e48767364ef99911d061be17e0
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32585392"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34658002"
 ---
 # <a name="directoryroletemplate-resource-type"></a>directoryRoleTemplate リソース型
 
@@ -28,7 +28,7 @@ ms.locfileid: "32585392"
 |:---------------|:--------|:----------|
 |description|String|ディレクトリ ロールに設定する説明。読み取り専用。|
 |displayName|String|ディレクトリ ロールに設定する表示名。読み取り専用。 |
-|id|String|テンプレートの一意識別子。[directoryObject](directoryobject.md) から継承されます。POST 要求の **roleTemplateId** プロパティにディレクトリ ロール テンプレートの **id** を指定して、テナントの [directoryRole](directoryrole.md) をアクティブ化します。キーであり、Null は許容されません。読み取り専用。|
+|id|文字列|テンプレートの一意識別子。[directoryObject](directoryobject.md) から継承されます。POST 要求の **roleTemplateId** プロパティにディレクトリ ロール テンプレートの **id** を指定して、テナントの [directoryRole](directoryrole.md) をアクティブ化します。キーであり、Null は許容されません。読み取り専用。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

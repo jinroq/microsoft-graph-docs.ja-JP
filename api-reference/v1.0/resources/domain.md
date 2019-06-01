@@ -1,21 +1,21 @@
 ---
 title: ドメインリソースの種類
 description: テナントに関連付けられているドメインを表します。
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: bd141fe02ab7b2685f83ebcfb787aca4ced2294f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fc035824767b532da0a8d2b24fa4f3158ef2881a
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562783"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34658009"
 ---
 # <a name="domain-resource-type"></a>ドメインリソースの種類
 
 テナントに関連付けられているドメインを表します。
 
-ドメインの操作を使用して、ドメインをテナントに関連付け、ドメインの所有権を確認し、サポートされているサービスを構成します。  ドメインの操作により、Office 365 などのサービスのドメインの関連付けを登録するためのレジストラーを有効にできます。 たとえば、ドメインのサインアップの一環として、レジストラーは、電子メール、web サイト、認証などのバニティドメインを有効にすることができます。
+ドメインの操作を使用して、ドメインをテナントに関連付け、ドメインの所有権を確認し、サポートされているサービスを構成します。  ドメイン操作によって Office 365 などのサービスのドメインの関連付けを自動化するレジストラーを有効にします。 たとえば、ドメインのサインアップの一環として、レジストラーは、電子メール、web サイト、認証などのバニティドメインを有効にすることができます。
 
 ドメインをテナントに関連付けるには、次のようにします。
 
@@ -35,29 +35,29 @@ ms.locfileid: "32562783"
 |:---------------|:--------|:----------|
 |[ドメインを取得する](../api/domain-get.md) | [domain](domain.md) | ドメインオブジェクトのプロパティとリレーションシップを読み取ります。|
 |[ドメインを作成する](../api/domain-post-domains.md) | [domain](domain.md) | テナントにドメインを追加します。 |
-|[リスト domainNameReference](../api/domain-list-domainnamereferences.md) |[directoryObject](directoryobject.md) コレクション| ドメインへの参照を使用して、ディレクトリオブジェクトの一覧を取得します。|
-|[リスト serviceConfigurationRecords](../api/domain-list-serviceconfigurationrecords.md) |[domaindnsrecord](domaindnsrecord.md)コレクション|  ドメイン構成のドメイン DNS レコードの一覧を取得します。|
-|[リスト verificationDnsRecords](../api/domain-list-verificationdnsrecords.md) |[domaindnsrecord](domaindnsrecord.md)コレクション|  ドメイン検証のドメイン DNS レコードの一覧を取得します。|
+|[リスト domainNameReference](../api/domain-list-domainnamereferences.md) |[directoryObject](directoryobject.md) collection| ドメインへの参照を使用して、ディレクトリオブジェクトの一覧を取得します。|
+|[リスト serviceConfigurationRecords](../api/domain-list-serviceconfigurationrecords.md) |[Domaindnsrecord](domaindnsrecord.md)コレクション|  ドメイン構成のドメイン DNS レコードの一覧を取得します。|
+|[リスト verificationDnsRecords](../api/domain-list-verificationdnsrecords.md) |[Domaindnsrecord](domaindnsrecord.md)コレクション|  ドメイン検証のドメイン DNS レコードの一覧を取得します。|
 |[ドメインを更新する](../api/domain-update.md) | [domain](domain.md) |ドメインを更新します。|
-|[ドメインを削除する](../api/domain-delete.md) | なし |ドメインを削除します。|
-|[forcedelete ドメイン](../api/domain-forcedelete.md)|なし|非同期操作を使用してドメインを削除します。|
+|[ドメインを削除する](../api/domain-delete.md) | None |ドメインを削除します。|
+|[ForceDelete ドメイン](../api/domain-forcedelete.md)|None|非同期操作を使用してドメインを削除します。|
 |[ドメインを確認する](../api/domain-verify.md)|[domain](domain.md)|ドメインの所有権を検証します。|
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ   | 型 | 説明 |
 |:---------------|:--------|:----------|
-|authenticationType|String| ドメインに対して構成されている認証の種類を示します。 値は、*管理*されているか、*フェデレーション*されています。<br> *managed*は、Azure AD がユーザー認証を実行するクラウド管理のドメインを示します。<br>*フェデレーション*は、active directory フェデレーションサービスを経由して、テナントの社内 Active directory などの id プロバイダーとの認証がフェデレーションされることを示します。 null 許容ではない |
-|availabilityStatus|String| [verify](../api/domain-verify.md)アクションが使用される場合を除き、このプロパティは常に null になります。 [verify](../api/domain-verify.md)アクションを使用すると、応答で**ドメイン**エンティティが返されます。 応答内の**ドメイン**エンティティの**availabilityStatus**プロパティは、*すぐに*、または*EmailVerifiedDomainTakeoverScheduled*でもかまいません。|
+|authenticationType|String| ドメインに対して構成されている認証の種類を示します。 値は、*管理*されているか、*フェデレーション*されています。<br> *Managed*は、Azure AD がユーザー認証を実行するクラウド管理のドメインを示します。<br>*フェデレーション*は、Active Directory フェデレーションサービスを経由して、テナントの社内 Active directory などの id プロバイダーとの認証がフェデレーションされることを示します。 Null 許容ではない |
+|availabilityStatus|String| [Verify](../api/domain-verify.md)アクションが使用される場合を除き、このプロパティは常に null になります。 [Verify](../api/domain-verify.md)アクションを使用すると、応答で**ドメイン**エンティティが返されます。 応答内の**ドメイン**エンティティの**availabilityStatus**プロパティは、*すぐに*、または*EmailVerifiedDomainTakeoverScheduled*でもかまいません。|
 |id|String| ドメインの完全修飾名。 キー、不変、null 許容ではない、unique |
-|isadminmanaged|Boolean| ドメインの DNS レコード管理が Office 365 に委任されている場合、このプロパティの値は false になります。 それ以外の場合、値は true になります。 null 許容ではない |
-|isDefault|ブール型 (Boolean)| これがユーザーの作成に使用される既定のドメインの場合は True。 会社ごとに既定のドメインが1つだけ存在します。 null 許容ではない |
-|isinitial|ブール値| True は、Microsoft Online Services (companyname.onmicrosoft.com) によって作成された初期ドメインの場合です。 会社ごとに1つの初期ドメインのみが存在します。 null 許容ではない |
-|isRoot|Boolean| ドメインが確認されたルートドメインの場合は True。 それ以外の場合は、ドメインがサブドメインまたは未確認の場合は false。 null 許容ではない |
-|isverified|Boolean| ドメインの所有権の確認が完了した場合は True。 null 許容ではない |
+|isAdminManaged|Boolean| ドメインの DNS レコード管理が Office 365 に委任されている場合、このプロパティの値は false になります。 それ以外の場合、値は true になります。 Null 許容ではない |
+|isDefault|ブール型 (Boolean)| これがユーザーの作成に使用される既定のドメインの場合は True。 会社ごとに既定のドメインが1つだけ存在します。 Null 許容ではない |
+|isInitial|ブール値| True は、Microsoft Online Services (companyname.onmicrosoft.com) によって作成された初期ドメインの場合です。 会社ごとに1つの初期ドメインのみが存在します。 Null 許容ではない |
+|isRoot|Boolean| ドメインが確認されたルートドメインの場合は True。 それ以外の場合は、ドメインがサブドメインまたは未確認の場合は false。 Null 許容ではない |
+|isVerified|Boolean| ドメインの所有権の確認が完了した場合は True。 Null 許容ではない |
 |passwordNotificationWindowInDays|Int32|ユーザーがパスワードの有効期限が切れると通知を受信するまでの日数を指定します。 このプロパティが設定されていない場合は、既定値の14日が使用されます。|
 |passwordValidityPeriodInDays|Int32| パスワードを変更するまでの有効期間を指定します。 このプロパティが設定されていない場合は、既定値の90日が使用されます。 |
-|supportedservices|String collection| ドメインに割り当てられている機能。<br><br>0、1または次の値を含めることができます。 *Email*、 *Sharepoint*、 *emailinternalrelayonly*、 *OfficeCommunicationsOnline*、 *sharepointdefaultdomain*、 *fullredelegation*、 *sharepointpublic*、*orgidauthentication*、 *Yammer*、 *Intune*<br><br> Graph API を使用して追加または削除できる値は次のとおりです。 *Email*、 *OfficeCommunicationsOnline*、 *Yammer*<br>null 許容ではない|
+|supportedServices|文字列コレクション| ドメインに割り当てられている機能。<br><br>0、1または次の値を含めることができます。 *Email*、 *Sharepoint*、 *emailinternalrelayonly*、 *OfficeCommunicationsOnline*、 *sharepointdefaultdomain*、 *fullredelegation*、 *sharepointpublic*、*Orgidauthentication*、 *Yammer*、 *Intune*<br><br> Graph API を使用して追加または削除できる値は次のとおりです。 *Email*、 *OfficeCommunicationsOnline*、 *Yammer*<br>Null 許容ではない|
 |state|[domainState](domainstate.md)| ドメインに対してスケジュールされた非同期操作の状態。 |
 
 ## <a name="relationships"></a>リレーションシップ
@@ -66,9 +66,9 @@ ms.locfileid: "32562783"
 
 | リレーションシップ | 型 |説明|
 |:---------------|:--------|:----------|
-|domainNameReferences|[directoryObject](directoryobject.md) コレクション| 読み取り専用、null 許容|
-|serviceConfigurationRecords|[domaindnsrecord](domaindnsrecord.md)コレクション| dns レコードユーザーが Microsoft Online services で使用できるようになる前に、ドメインの dns ゾーンファイルに追加されます。<br>読み取り専用、null 許容 |
-|verificationDnsRecords|[domaindnsrecord](domaindnsrecord.md)コレクション| お客様が Azure AD を使用してドメインの所有権の確認を完了する前に、お客様がドメインの dns ゾーンファイルに追加する dns レコード。<br>読み取り専用、null 許容|
+|domainNameReferences|[directoryObject](directoryobject.md) collection| 読み取り専用、Null 許容|
+|serviceConfigurationRecords|[Domaindnsrecord](domaindnsrecord.md)コレクション| DNS レコードユーザーが Microsoft Online services で使用できるようになる前に、ドメインの DNS ゾーンファイルに追加されます。<br>読み取り専用、Null 許容 |
+|verificationDnsRecords|[Domaindnsrecord](domaindnsrecord.md)コレクション| お客様が Azure AD を使用してドメインの所有権の確認を完了する前に、お客様がドメインの DNS ゾーンファイルに追加する DNS レコード。<br>読み取り専用、Null 許容|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。

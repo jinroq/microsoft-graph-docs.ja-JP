@@ -2,14 +2,14 @@
 title: Contract リソースの種類
 description: パートナーテナントと顧客テナントの間に存在する既存のパートナーシップを表します。
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: cbaa1655503796813f9cbd09c41647bacc40a94c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 66cb110a4c1731b6b5cc31804baf8db9879d7def
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561433"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34658051"
 ---
 # <a name="contract-resource-type"></a>Contract リソースの種類
 パートナーテナントと顧客テナントの間に存在する既存のパートナーシップを表します。
@@ -26,11 +26,11 @@ ms.locfileid: "32561433"
 ## <a name="properties"></a>プロパティ
 | プロパティ   | 型 | 説明 |
 |:---------------|:--------|:----------|
-|contracttype|String|契約の種類。<br><br>使用可能な値は次のいずれかです。<br> *SyndicationPartner* -このお客様に対して O365 と Intune を排他的に resells して管理します。 これらのユーザーは、お客様を再販し、サポートしています。<br> *BreadthPartner* -パートナーは、このお客様に対して管理サポートを提供することができます。 ただし、パートナーはお客様に再販することは許可されていません。<br>*ResellerPartner* -シンジケートパートナーに似ていますが、パートナーがテナントへの排他的なアクセス権を持っていない点が異なります。 シンジケーションの場合、お客様は、Microsoft や他のパートナーから追加の直接サブスクリプションを購入することはできません。|
-|id|Guid|このパートナーシップによって参照される顧客のテナントの一意識別子。 顧客テナントの組織リソースの id プロパティに対応します。 |
-|defaultdomainname|String|顧客テナントの既定のドメイン名のコピー。 このコピーは、顧客とのパートナーシップが確立されたときに作成されます。 顧客のテナントの既定のドメイン名が変更されても、自動的には更新されません。|
+|contractType|String|契約の種類。<br><br>使用可能な値は次のいずれかです。<br> *SyndicationPartner* -このお客様に対して O365 と Intune を排他的に resells して管理します。 これらのユーザーは、お客様を再販し、サポートしています。<br> *BreadthPartner* -パートナーは、このお客様に対して管理サポートを提供することができます。 ただし、パートナーはお客様に再販することは許可されていません。<br>*ResellerPartner* -シンジケートパートナーに似ていますが、パートナーがテナントへの排他的なアクセス権を持っていない点が異なります。 シンジケーションの場合、お客様は、Microsoft や他のパートナーから追加の直接サブスクリプションを購入することはできません。|
+|Id|Guid|このパートナーシップによって参照される顧客のテナントの一意識別子。 顧客テナントの組織リソースの id プロパティに対応します。 |
+|defaultDomainName|String|顧客テナントの既定のドメイン名のコピー。 このコピーは、顧客とのパートナーシップが確立されたときに作成されます。 顧客のテナントの既定のドメイン名が変更されても、自動的には更新されません。|
 |displayName|String|顧客のテナントの表示名のコピー。 このコピーは、顧客とのパートナーシップが確立されたときに作成されます。 顧客のテナントの表示名が変更されても、自動的には更新されません。|
-|id|String| パートナーシップの一意識別子。 キー、読み取り専用 |
+|id|文字列| パートナーシップの一意識別子。 キー、読み取り専用 |
 
 ## <a name="relationships"></a>リレーションシップ
 なし

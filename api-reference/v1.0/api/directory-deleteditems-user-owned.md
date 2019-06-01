@@ -1,15 +1,15 @@
 ---
 title: アクセス許可
 description: '指定したユーザーが所有している最近削除されたアイテムのリストを取得します。  '
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1d57bbada024bdb2358c39ce9183004ea53289dc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 75d943a37899b6f1d84971305cd473a398b049bb
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555088"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656658"
 ---
 # <a name="list-deleted-items-owned-by-a-user"></a>**ユーザーが所有する削除済みアイテムを一覧表示する**
 

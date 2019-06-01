@@ -1,15 +1,15 @@
 ---
 title: directoryRoleTemplate を取得する
 description: directoryroletemplate オブジェクトのプロパティと関係を取得します。
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 55582635c4ccfbeea2d05175f53c3ca5f1eee1b6
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 35dee2924f171976b538e930a264df8147e85b24
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33617075"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656532"
 ---
 # <a name="get-directoryroletemplate"></a>directoryRoleTemplate を取得する
 
@@ -70,11 +70,11 @@ Content-length: 98
   "id": "id-value"
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_directoryroletemplate-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_directoryroletemplate-Javascript-snippets.md)]
 
 ---

@@ -2,14 +2,14 @@
 title: subscribedSku を取得する
 description: 組織で取得した特定の商用サブスクリプションを取得します。
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ec532769248a5cc7058bf8a52695c19cf2505219
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: db970aa787626c835c3dea88d07a7ee663a4b8cf
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33603196"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655706"
 ---
 # <a name="get-subscribedsku"></a>subscribedSku を取得する
 組織で取得した特定の商用サブスクリプションを取得します。
@@ -93,11 +93,11 @@ Content-type: application/json
     "appliesTo": "User"
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_subscribedsku-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_subscribedsku-Javascript-snippets.md)]
 
 ---

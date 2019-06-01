@@ -1,19 +1,19 @@
 ---
 title: domainDnsCnameRecord リソースの種類
-description: テナント内の特定のドメインの DNS ゾーンファイルに追加された CNAME レコードを表します。 domaindnsrecord エンティティから継承されます。
-author: lleonard-msft
+description: テナント内の特定のドメインの DNS ゾーンファイルに追加された CNAME レコードを表します。 DomainDnsRecord エンティティから継承されます。
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 226f067756517771b1d86f053d48268b905dd930
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6372f3684b476afef78b37e36bc395ce5e61f850
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562833"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657995"
 ---
 # <a name="domaindnscnamerecord-resource-type"></a>domainDnsCnameRecord リソースの種類
 
-テナント内の特定のドメインの DNS ゾーンファイルに追加された CNAME レコードを表します。 [domaindnsrecord](domaindnsrecord.md)エンティティから継承されます。
+テナント内の特定のドメインの DNS ゾーンファイルに追加された CNAME レコードを表します。 [Domaindnsrecord](domaindnsrecord.md)エンティティから継承されます。
 
 
 ## <a name="methods"></a>メソッド
@@ -23,14 +23,14 @@ ms.locfileid: "32562833"
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |canonicalName|String| CNAME レコードの標準名。 DNS ホストで CNAME レコードを構成するために使用します。 |
-|id|String| このエンティティに割り当てられている一意の識別子。 null 非許容、読み取り専用|
-|isoptional|Boolean| false の場合は、Microsoft Online Services がドメインで正常に動作するように、DNS ホストで顧客によって CNAME レコードが構成されている必要があります。 null 許容ではない |
+|id|String| このエンティティに割り当てられている一意の識別子。 Null 非許容、読み取り専用|
+|isOptional|Boolean| False の場合は、Microsoft Online Services がドメインで正常に動作するように、DNS ホストで顧客によって CNAME レコードが構成されている必要があります。 Null 許容ではない |
 |label|String| DNS ホストで CNAME レコードの*エイリアス/ホスト/名前*を構成する場合に使用される値です。 |
-|recordType|String| DNS レコードの種類。 値は常に*CName*です。 キー|
-|supportedservice|String| この CNAME レコードに依存している Microsoft Online サービスまたは機能。</br></br>**null**、 *Email*、 *Sharepoint*、 *emailinternalrelayonly*、 *OfficeCommunicationsOnline*、 *sharepointdefaultdomain*、 *fullredelegation*、sharepointpublic のいずれかの値を使用できます。 **、 *orgidauthentication*、 *Yammer*、 *Intune*|
-|ttl|Int32| DNS ホストで CNAME レコードの time to live (ttl) プロパティを構成する場合に使用する値です。 null 許容ではない |
+|recordType|String| DNS レコードの種類。 値は常に*CName*です。 Key|
+|supportedService|String| この CNAME レコードに依存している Microsoft Online サービスまたは機能。</br></br>**Null**、 *Email*、 *Sharepoint*、 *emailinternalrelayonly*、 *OfficeCommunicationsOnline*、 *sharepointdefaultdomain*、 *fullredelegation*、sharepointpublic のいずれかの値を使用できます。 **、 *Orgidauthentication*、 *Yammer*、 *Intune*|
+|ttl|Int32| DNS ホストで CNAME レコードの time to live (ttl) プロパティを構成する場合に使用する値です。 Null 許容ではない |
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 

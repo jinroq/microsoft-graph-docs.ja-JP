@@ -1,17 +1,17 @@
 ---
-title: directoryobjectpartnerreference リソースの種類
+title: directoryObjectPartnerReference リソースの種類
 description: パートナーテナント内のディレクトリオブジェクトへの参照を表します。 directoryObject から継承します。
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 658571ce406e74b78a6924ed0290ab672c791e94
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: bcd26b80ba133ec2f4fa81c9ffb74fc7aac56b17
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341737"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34658023"
 ---
-# <a name="directoryobjectpartnerreference-resource-type"></a>directoryobjectpartnerreference リソースの種類
+# <a name="directoryobjectpartnerreference-resource-type"></a>directoryObjectPartnerReference リソースの種類
 
 パートナー組織内のディレクトリオブジェクトへの参照を表します。 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0) から継承します。
 
@@ -21,8 +21,8 @@ ms.locfileid: "33341737"
 |:---------------|:--------|:----------|
 |description|String| 返されるオブジェクトの説明。 読み取り専用です。 |
 |displayName|String| グループまたはアプリケーションなど、返されるディレクトリオブジェクトの名前。 読み取り専用です。 |
-|externalpartnertenantid|Guid| パートナーテナントのテナント識別子。 読み取り専用。 |
-|id|String| リソースの一意識別子。 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0) から継承されます。 読み取り専用です。 |
+|externalPartnerTenantId|Guid| パートナーテナントのテナント識別子。 読み取り専用です。 |
+|id|文字列| リソースの一意識別子。 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0) から継承されます。 読み取り専用です。 |
 |objectType|文字列| パートナーテナント内の参照されるオブジェクトの種類。 読み取り専用です。 |
 
 ## <a name="json-representation"></a>JSON 表記
