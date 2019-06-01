@@ -1,53 +1,53 @@
 ---
 title: AdministrativeUnit を作成する
 description: この API を使用して、新しい administrativeUnit を作成します。
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4815082a8a5930e426e0843d2dcf2ebe6ef190d5
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: e583de306d158cea6c5e3b6eaae3d06ee7ce7f29
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636633"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655251"
 ---
-# <a name="create-administrativeunit"></a><span data-ttu-id="4651e-103">AdministrativeUnit を作成する</span><span class="sxs-lookup"><span data-stu-id="4651e-103">Create administrativeUnit</span></span>
+# <a name="create-administrativeunit"></a><span data-ttu-id="54d5c-103">AdministrativeUnit を作成する</span><span class="sxs-lookup"><span data-stu-id="54d5c-103">Create administrativeUnit</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4651e-104">この API を使用して、新しい[administrativeUnit](../resources/administrativeunit.md)を作成します。</span><span class="sxs-lookup"><span data-stu-id="4651e-104">Use this API to create a new [administrativeUnit](../resources/administrativeunit.md).</span></span>
-## <a name="permissions"></a><span data-ttu-id="4651e-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="4651e-105">Permissions</span></span>
-<span data-ttu-id="4651e-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4651e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="54d5c-104">この API を使用して、新しい[administrativeUnit](../resources/administrativeunit.md)を作成します。</span><span class="sxs-lookup"><span data-stu-id="54d5c-104">Use this API to create a new [administrativeUnit](../resources/administrativeunit.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="54d5c-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="54d5c-105">Permissions</span></span>
+<span data-ttu-id="54d5c-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="54d5c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="4651e-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="4651e-108">Permission type</span></span>      | <span data-ttu-id="4651e-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="4651e-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="54d5c-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="54d5c-108">Permission type</span></span>      | <span data-ttu-id="54d5c-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="54d5c-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="4651e-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="4651e-110">Delegated (work or school account)</span></span> | <span data-ttu-id="4651e-111">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="4651e-111">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="4651e-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="4651e-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4651e-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="4651e-113">Not supported.</span></span>    |
-|<span data-ttu-id="4651e-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="4651e-114">Application</span></span> | <span data-ttu-id="4651e-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="4651e-115">Not supported.</span></span> |
+|<span data-ttu-id="54d5c-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="54d5c-110">Delegated (work or school account)</span></span> | <span data-ttu-id="54d5c-111">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="54d5c-111">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="54d5c-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="54d5c-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="54d5c-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="54d5c-113">Not supported.</span></span>    |
+|<span data-ttu-id="54d5c-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="54d5c-114">Application</span></span> | <span data-ttu-id="54d5c-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="54d5c-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="4651e-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="4651e-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="54d5c-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="54d5c-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /administrativeUnits
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="4651e-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="4651e-117">Request headers</span></span>
-| <span data-ttu-id="4651e-118">名前</span><span class="sxs-lookup"><span data-stu-id="4651e-118">Name</span></span>      |<span data-ttu-id="4651e-119">説明</span><span class="sxs-lookup"><span data-stu-id="4651e-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="54d5c-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="54d5c-117">Request headers</span></span>
+| <span data-ttu-id="54d5c-118">名前</span><span class="sxs-lookup"><span data-stu-id="54d5c-118">Name</span></span>      |<span data-ttu-id="54d5c-119">説明</span><span class="sxs-lookup"><span data-stu-id="54d5c-119">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="4651e-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="4651e-120">Authorization</span></span>  | <span data-ttu-id="4651e-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="4651e-p102">Bearer {token}. Required.</span></span> |
-## <a name="request-body"></a><span data-ttu-id="4651e-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="4651e-123">Request body</span></span>
-<span data-ttu-id="4651e-124">要求本文で、 [administrativeUnit](../resources/administrativeunit.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="4651e-124">In the request body, supply a JSON representation of [administrativeUnit](../resources/administrativeunit.md) object.</span></span>
+| <span data-ttu-id="54d5c-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="54d5c-120">Authorization</span></span>  | <span data-ttu-id="54d5c-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="54d5c-p102">Bearer {token}. Required.</span></span> |
+## <a name="request-body"></a><span data-ttu-id="54d5c-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="54d5c-123">Request body</span></span>
+<span data-ttu-id="54d5c-124">要求本文で、 [administrativeUnit](../resources/administrativeunit.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="54d5c-124">In the request body, supply a JSON representation of [administrativeUnit](../resources/administrativeunit.md) object.</span></span>
 
-<span data-ttu-id="4651e-125">**AdministrativeUnit**リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため`POST` 、操作を使用して、独自のデータを作成するときにカスタムプロパティを管理単位に追加することができます。</span><span class="sxs-lookup"><span data-stu-id="4651e-125">Since the **administrativeUnit** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the administrative unit while creating it.</span></span>
+<span data-ttu-id="54d5c-125">**AdministrativeUnit**リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため`POST` 、操作を使用して、独自のデータを作成するときにカスタムプロパティを管理単位に追加することができます。</span><span class="sxs-lookup"><span data-stu-id="54d5c-125">Since the **administrativeUnit** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the administrative unit while creating it.</span></span>
 
-## <a name="response"></a><span data-ttu-id="4651e-126">応答</span><span class="sxs-lookup"><span data-stu-id="4651e-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="54d5c-126">応答</span><span class="sxs-lookup"><span data-stu-id="54d5c-126">Response</span></span>
 
-<span data-ttu-id="4651e-127">成功した場合、この`201 Created`メソッドは応答コードと、応答本文で[administrativeUnit](../resources/administrativeunit.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="4651e-127">If successful, this method returns `201 Created` response code and [administrativeUnit](../resources/administrativeunit.md) object in the response body.</span></span>
+<span data-ttu-id="54d5c-127">成功した場合、この`201 Created`メソッドは応答コードと、応答本文で[administrativeUnit](../resources/administrativeunit.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="54d5c-127">If successful, this method returns `201 Created` response code and [administrativeUnit](../resources/administrativeunit.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4651e-128">例</span><span class="sxs-lookup"><span data-stu-id="4651e-128">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="4651e-129">要求</span><span class="sxs-lookup"><span data-stu-id="4651e-129">Request</span></span>
-<span data-ttu-id="4651e-130">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="4651e-130">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="54d5c-128">例</span><span class="sxs-lookup"><span data-stu-id="54d5c-128">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="54d5c-129">要求</span><span class="sxs-lookup"><span data-stu-id="54d5c-129">Request</span></span>
+<span data-ttu-id="54d5c-130">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="54d5c-130">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_administrativeunit_from_administrativeunits"
@@ -63,9 +63,9 @@ Content-length: 150
     "visibility": "true"
 }
 ```
-<span data-ttu-id="4651e-131">要求本文で、 [administrativeUnit](../resources/administrativeunit.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="4651e-131">In the request body, supply a JSON representation of [administrativeUnit](../resources/administrativeunit.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="4651e-132">応答</span><span class="sxs-lookup"><span data-stu-id="4651e-132">Response</span></span>
-<span data-ttu-id="4651e-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="4651e-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="54d5c-131">要求本文で、 [administrativeUnit](../resources/administrativeunit.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="54d5c-131">In the request body, supply a JSON representation of [administrativeUnit](../resources/administrativeunit.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="54d5c-132">応答</span><span class="sxs-lookup"><span data-stu-id="54d5c-132">Response</span></span>
+<span data-ttu-id="54d5c-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="54d5c-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -85,21 +85,21 @@ Content-length: 172
   }
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="4651e-136">SDK サンプルコード</span><span class="sxs-lookup"><span data-stu-id="4651e-136">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="4651e-137">Visual</span><span class="sxs-lookup"><span data-stu-id="4651e-137">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="54d5c-136">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="54d5c-136">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="54d5c-137">C#</span><span class="sxs-lookup"><span data-stu-id="54d5c-137">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/create_administrativeunit_from_administrativeunits-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="4651e-138">Java</span><span class="sxs-lookup"><span data-stu-id="4651e-138">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="54d5c-138">Javascript</span><span class="sxs-lookup"><span data-stu-id="54d5c-138">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_administrativeunit_from_administrativeunits-Javascript-snippets.md)]
 
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-## <a name="see-also"></a><span data-ttu-id="4651e-139">関連項目</span><span class="sxs-lookup"><span data-stu-id="4651e-139">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="54d5c-139">関連項目</span><span class="sxs-lookup"><span data-stu-id="54d5c-139">See also</span></span>
 
-- [<span data-ttu-id="4651e-140">拡張機能を使用してカスタム データをリソースに追加する</span><span class="sxs-lookup"><span data-stu-id="4651e-140">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
-- [<span data-ttu-id="4651e-141">オープン拡張機能を使用したユーザーへのカスタム データの追加 (プレビュー)</span><span class="sxs-lookup"><span data-stu-id="4651e-141">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
+- [<span data-ttu-id="54d5c-140">拡張機能を使用してカスタム データをリソースに追加する</span><span class="sxs-lookup"><span data-stu-id="54d5c-140">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
+- [<span data-ttu-id="54d5c-141">オープン拡張機能を使用したユーザーへのカスタム データの追加 (プレビュー)</span><span class="sxs-lookup"><span data-stu-id="54d5c-141">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
 <!--
 - [Add custom data to groups using schema extensions (preview)](/graph/extensibility-schema-groups)
 -->
