@@ -4,12 +4,12 @@ description: Microsoft Graph の教育機関向け API は、教育のさまざ�
 author: mmast-msft
 localization_priority: Priority
 ms.prod: education
-ms.openlocfilehash: 0d3f5360d0ef40283021a1e037c40df66d90dd92
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f181441a9333d678ecb989eaa369e972b45ba570
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526241"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536513"
 ---
 # <a name="education-api-overview"></a>教育機関向け API の概要
 
@@ -23,7 +23,7 @@ Microsoft Graph の教育機関向け API は、クラス、学校、ユーザ�
 
 ### <a name="build-applications-that-are-aware-of-class-roster"></a>クラスの名簿を認識するアプリケーションのビルド
 
-教育関連のソフトウェア開発者の多くは、クラス名簿がアプリケーション実行に必要な情報の重要な部分の 1 つであるが、多くの場合は学校の学生情報システム (SIS) の内部にしまい込まれているという事実に早い段階で気付いています。 教師が新しいアプリケーションをクラスルームに導入しようとする場合、手動で名簿データをアプリケーションにインポートするために多くの時間を費やすことになります。 多くの ISV では、SIS に接続して名簿データをインポートすることによりこの問題に対処しています。 何百とある学生情報システムで、それぞれ独自の書式が使用されているということが課題となります。 [Microsoft School Data Sync](https://sds.microsoft.com/) と名簿 API を組み合わせることにより、アプリケーション開発者と学校がこの課題に対処できます。
+教育関連のソフトウェア開発者の多くは、クラス名簿がアプリケーション実行に必要な情報の重要な部分の 1 つであるが、多くの場合は学校の学生情報システム (SIS) の内部にしまい込まれているという事実に早い段階で気付いています。 教師が新しいアプリケーションをクラスルームに導入しようとする場合、手動で名簿データをアプリケーションにインポートするために多くの時間を費やすことになります。 多くの独立系ソフトウェア ベンダー (ISV) では、SIS に接続して名簿データをインポートすることによりこの問題に対処しています。 何百とある学生情報システムで、それぞれ独自の書式が使用されているということが課題となります。 [Microsoft School Data Sync](https://sds.microsoft.com/) と名簿 API を組み合わせることにより、アプリケーション開発者と学校がこの課題に対処できます。
 
 名簿 API で可能になるシナリオのいくつかを次に示します:
 

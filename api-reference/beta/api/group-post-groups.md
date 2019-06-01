@@ -4,12 +4,12 @@ description: 新しい Office 365 グループまたはセキュリティ グル
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: c2f80b915d2d813f4d002fec161a14aff6ceba45
-ms.sourcegitcommit: abca7fcefeaa74b50f4600b35d816b626ba08468
+ms.openlocfilehash: c91c43c0156aa4edda9eef71232001fdede38887
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "34310868"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536198"
 ---
 # <a name="create-group"></a>グループを作成する
 
@@ -24,7 +24,7 @@ ms.locfileid: "34310868"
 
 既定で_返されない_プロパティを取得するには、GET 操作を実行し、`$select` OData クエリ オプションでプロパティを指定します。 [例](group-get.md#request-2)を参照してください。
 
-> **注:** [チーム](../resources/team.md)を作成するには、まずグループを作成し、それからそのグループにチームを追加します。[チームの作成](../api/team-put-teams.md)に関するページを参照してください。
+>**注:** [チーム](../resources/team.md)を作成するには、まずグループを作成し、それからそのグループにチームを追加します。[チームの作成](../api/team-put-teams.md)に関するページを参照してください。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -61,7 +61,7 @@ POST /groups
 | owners | [directoryObject](../resources/directoryobject.md) コレクション | このプロパティは、作成時のグループの所有者を表します。 省略可能。 |
 | members | [directoryObject](../resources/directoryobject.md) コレクション | このプロパティは、作成時のグループのメンバーを表します。 省略可能。 |
 
-> 注: Microsoft Azure portal を使用して作成されるグループでは、**securityEnabled** は最初は常に `true` に設定されます。
+> **注**: Microsoft Azure portal を使用して作成されるグループでは、**securityEnabled** は最初は常に `true` に設定されます。
 
 **グループ** リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため、`POST` 操作を使用して、リソースの作成時にカスタム プロパティを独自のデータとともにグループに追加することができます。
 
