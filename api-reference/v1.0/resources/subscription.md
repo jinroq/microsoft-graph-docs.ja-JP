@@ -3,12 +3,12 @@ title: サブスクリプション リソースの種類
 description: 'サブスクリプションは、Microsoft Graph 上のデータの変更に関する通知の受信をクライアント アプリに許可します。 サブスクリプションは現在、以下のリソースで有効です:'
 localization_priority: Priority
 author: piotrci
-ms.openlocfilehash: db3a536395f327115af69f769f37c823013ec7fa
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 30671dcd93b4593015a5c3cf2eeddac8d7e00c4d
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563701"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536779"
 ---
 # <a name="subscription-resource-type"></a>サブスクリプション リソースの種類
 
@@ -75,6 +75,7 @@ ms.locfileid: "32563701"
 
 | リソース            | 最大有効期限  |
 |:--------------------|:-------------------------|
+| ユーザー、グループ、その他のディレクトリ リソース   | 4230 分 (3 日以内)    |
 | メール                | 4230 分 (3 日以内)    |
 | カレンダー            | 4230 分 (3 日以内)    |
 | 連絡先            | 4230 分 (3 日以内)    |
