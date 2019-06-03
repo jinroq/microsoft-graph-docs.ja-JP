@@ -2,14 +2,14 @@
 title: アプリケーション リソースの種類
 description: 'これはアプリケーションを表すものです。 Azure Active Directory (Azure AD) に認証をアウトソースするすべてのアプリケーションは、ディレクトリに登録する必要があります。 アプリケーションの登録では、アプリケーションに関する情報 (場所の URL、認証後に返信を送信する URL、アプリケーションを識別する URI など) を Azure AD に通知する必要があります。 詳細については、Azure AD でのアプリケーションの登録の基本を参照してください。 directoryObject から継承します。 '
 localization_priority: Priority
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a0bed2d85e0b7308e8006c99143ea80e2d756202
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 153079b2c03066445a61a0672416a5615d12ab62
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339101"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657673"
 ---
 # <a name="application-resource-type"></a>アプリケーション リソースの種類
 

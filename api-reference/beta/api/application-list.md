@@ -1,15 +1,15 @@
 ---
 title: アプリケーションを一覧表示する
 description: この組織内のアプリケーションの一覧を取得します。
-author: lleonard-msft
+author: davidmu1
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a5bd0db82f38874c30b6b214dcdb74148913cc53
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 4ef59ae8751f7ec74b1e2b5635d19205c6d73a47
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636311"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655202"
 ---
 # <a name="list-applications"></a>アプリケーションを一覧表示する
 
