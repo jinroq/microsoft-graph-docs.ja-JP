@@ -4,12 +4,12 @@ description: 新しいチームを作成します。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: ce6b61c1d3d3490db1fe37f51f70b943121def72
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: c16fd80ff61e49a3a37220c06ea6f742b73131dd
+ms.sourcegitcommit: 9ffac53b262203917dfb20ac981e97f50d398199
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33330147"
+ms.lasthandoff: 06/01/2019
+ms.locfileid: "34669667"
 ---
 # <a name="create-team"></a>チームを作成する
 
@@ -93,7 +93,7 @@ Content-Type: application/json
   "displayName": "My Sample Team",
   "description": "My Sample Team’s Description",
   "owners@odata.bind": [
-    "https://graph.microsoft.com/beta/users('abc123')"
+    "https://graph.microsoft.com/beta/users('userId')"
   ]
 }
 ```
@@ -109,7 +109,7 @@ Content-Location: /teams/{teamId}
 }
 ```
 
-### <a name="example-3-create-a-team-with-an-app-installed-multiple-channels-with-pinned-tabs-using-delegated-permissions"></a>例 3: 委任されたアクセス許可を使用して、インストールされたアプリと固定されたタブによる複数のチャネルを持つチームを作成する
+### <a name="example-3-create-a-team-with-multiple-channels-installed-apps-and-pinned-tabs-using-delegated-permissions"></a>例 3: 委任されたアクセス許可を使用して、複数のチャネル、インストールされたアプリ、および固定されたタブを持つチームを作成する
 
 完全なペイロードの要求を次に示します。 クライアントは基本テンプレートの値を上書きして、`specialization` の検証規則で許容される範囲に配列値のアイテムを追加できます。 
 
@@ -207,7 +207,93 @@ Content-Location: /teams/{teamId}
 }
 ```
 
-### <a name="example-4-create-a-team-with-a-non-standard-base-template-type"></a>例 4: 非標準のベース テンプレート タイプを使用してチームを作成する
+### <a name="example-4-create-a-team-from-group"></a>例 4: グループからチームを作成する
+
+次の例では、**groupId** がわかっている場合に[グループ](../resources/group.md)から新しい[チーム](../resources/team.md)を作成する方法を示します。
+
+この呼び出しに関する注意点:
+
+* チームを作成するには、作成するグループに少なくとも 1 人の所有者がいる必要があります。 
+* 作成されるチームは、グループの表示名、visibility、specialization、および所有者を常に継承します。 そのため、**group@odata.bind** プロパティを使用してこの呼び出しを行う場合、チームの **displayName**、**visibility**、**specialization**、または **owners@odata.bind** プロパティを含めるとエラーが発生します。
+* グループが作成されて 15 分以上経っていない場合は、レプリケーションの遅延のためにチーム作成の呼び出しが失敗し、404 エラー コードが表示される可能性があります。 呼び出しと呼び出しの間に 10 秒の遅延を設けて、チーム作成の呼び出しを 3 回再試行することをお勧めします。
+
+
+#### <a name="request"></a>要求
+
+```http
+POST https://graph.microsoft.com/beta/teams
+Content-Type: application/json
+{
+  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
+  "group@odata.bind": "https://graph.microsoft.com/v1.0/groups('groupId')"
+}
+```
+
+#### <a name="response"></a>応答
+
+```http
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+Location: /teams/{teamId}/operations/{operationId}
+Content-Location: /teams/{teamId}
+{
+}
+```
+
+### <a name="example-5-create-a-team-from-a-group-with-multiple-channels-installed-apps-and-pinned-tabs"></a>例 5: 複数のチャネル、インストールされたアプリ、および固定されたタブを持つチームをグループから作成する
+
+以下に、拡張プロパティを持つ既存のグループを変換する要求を示します。これにより、複数のチャネル、インストールされたアプリ、固定されたタブを持つチームが作成されます。
+
+サポートされているベース テンプレートとサポートされているプロパティの詳細については、「[Teams テンプレートの使用を開始する](https://docs.microsoft.com/ja-JP/MicrosoftTeams/get-started-with-teams-templates)」を参照してください。
+
+#### <a name="request"></a>要求
+
+```http
+POST https://graph.microsoft.com/beta/teams
+Content-Type: application/json
+{
+  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
+  "group@odata.bind": "https://graph.microsoft.com/v1.0/groups('groupId')",
+  "channels": [
+        {
+            "displayName": "Class Announcements 📢",
+            "isFavoriteByDefault": true
+        },
+        {
+            "displayName": "Homework 🏋️",
+            "isFavoriteByDefault": true,
+        }
+    ],
+    "memberSettings": {
+        "allowCreateUpdateChannels": false,
+        "allowDeleteChannels": false,
+        "allowAddRemoveApps": false,
+        "allowCreateUpdateRemoveTabs": false,
+        "allowCreateUpdateRemoveConnectors": false
+    },
+    "installedApps": [
+        {
+            "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.vsts')"
+        },
+        {
+            "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('1542629c-01b3-4a6d-8f76-1938b779e48d')"
+        }
+    ]
+}
+```
+
+#### <a name="response"></a>応答
+
+```http
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+Location: /teams/{teamId}/operations/{operationId}
+Content-Location: /teams/{teamId}
+{
+}
+```
+
+### <a name="example-6-create-a-team-with-a-non-standard-base-template-type"></a>例 6: 非標準のベース テンプレート タイプを使用してチームを作成する
 
 ベース テンプレート タイプとは、Microsoft が特定の業界向けに作成した特別なテンプレートです。 多くの場合、これらのベース テンプレートにはストアでは入手できない独自のアプリおよび Microsoft Teams のテンプレートでまだ個別にサポートされていないチームのプロパティが含まれます。
 
@@ -238,7 +324,7 @@ Content-Location: /teams/{teamId}
 }
 ```
 
-### <a name="example-5-create-a-team-with-a-non-standard-base-template-type-with-extended-properties"></a>例 5: 拡張プロパティを含んだ非標準のベース テンプレート タイプを使用してチームを作成する
+### <a name="example-7-create-a-team-with-a-non-standard-base-template-type-with-extended-properties"></a>例 7: 拡張プロパティを含んだ非標準のベース テンプレート タイプを使用してチームを作成する
 
 ベース テンプレート タイプは追加のプロパティを使用して拡張することができ、既存のベース テンプレートを元にチームの追加の設定、チャンネル、アプリ、またはタブを設定してベース テンプレートを作成できます。
 
@@ -294,8 +380,8 @@ Content-Location: /teams/{teamId}
 
 ## <a name="see-also"></a>関連項目
 
-- [使用可能なテンプレート](https://docs.microsoft.com/ja-JP/MicrosoftTeams/get-started-with-teams-templates)
+- 
+  [使用可能なテンプレート](https://docs.microsoft.com/ja-JP/MicrosoftTeams/get-started-with-teams-templates)
 - [Retail Teams テンプレートの使用を開始する](https://docs.microsoft.com/MicrosoftTeams/get-started-with-retail-teams-templates)
 - [Healthcare Teams テンプレートの使用を開始する](https://docs.microsoft.com/MicrosoftTeams/healthcare/healthcare-templates)
 - [チームを使用してグループを作成する](/graph/teams-create-group-and-team)
-
