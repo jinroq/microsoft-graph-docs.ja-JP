@@ -41,7 +41,6 @@ Microsoft Bookings は、小規模企業およびその顧客を対象とした�
 
 次の詳細情報をご確認ください:
 
-- 
-  [Microsoft Bookings](https://support.office.com/ja-JP/article/Publish-your-business-calendar-online-with-Microsoft-Bookings-47403d64-a067-4754-9ae9-00157244c27d) およびその他の [Office 365 ビジネス アプリ](https://support.office.com/en-us/article/manage-your-business-apps-in-the-business-center-47eca808-cf96-42ba-83e8-55daf18e49dc?ui=en-US&rs=en-US&ad=US)。
+- [Microsoft Bookings](https://support.office.com/ja-JP/article/Publish-your-business-calendar-online-with-Microsoft-Bookings-47403d64-a067-4754-9ae9-00157244c27d) およびその他の [Office 365 ビジネス アプリ](https://support.office.com/en-us/article/manage-your-business-apps-in-the-business-center-47eca808-cf96-42ba-83e8-55daf18e49dc?ui=en-US&rs=en-US&ad=US)。
 - Microsoft Graph における [Bookings API の利用](/graph/api/resources/booking-api-overview?view=graph-rest-beta)。
 

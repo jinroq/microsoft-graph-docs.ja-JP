@@ -44,7 +44,6 @@ Microsoft Graph はオープンネス (JSON、OAUTH、ODATA といったオー�
 
 IT 管理者は、次のリソースで詳細情報を確認できます。
 
-- 
-  [Exchange Server のハイブリッド展開](https://technet.microsoft.com/en-us/library/jj200581(v=exchg.150).aspx)
+- [Exchange Server のハイブリッド展開](https://technet.microsoft.com/en-us/library/jj200581(v=exchg.150).aspx)
 - [2016 年 9 月の Cumulative Update リリース](https://blogs.technet.microsoft.com/exchange/2016/09/20/released-september-2016-quarterly-exchange-updates/) 
 - [REST API のオンプレミス アーキテクチャ要件](https://blogs.technet.microsoft.com/exchange/2016/09/26/on-premises-architectural-requirements-for-the-rest-api/)

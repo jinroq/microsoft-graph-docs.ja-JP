@@ -88,10 +88,8 @@ Visual Studio で、プロジェクトを右クリックしてコンテキスト
 
 UWP アプリからの NuGet パッケージの組み込みと利用に関する詳細については、次を参照してください。
 
-* 
-  [nuget.org からのパッケージの使用](https://docs.microsoft.com/ja-JP/azure/devops/artifacts/nuget/upstream-sources?view=vsts&tabs=new-nav)
-* 
-  [クイックスタート: パッケージのインストールと使用 (Visual Studio)](https://docs.microsoft.com/ja-JP/nuget/quickstart/install-and-use-a-package-in-visual-studio)
+* [nuget.org からのパッケージの使用](https://docs.microsoft.com/ja-JP/azure/devops/artifacts/nuget/upstream-sources?view=vsts&tabs=new-nav)
+* [クイックスタート: パッケージのインストールと使用 (Visual Studio)](https://docs.microsoft.com/ja-JP/nuget/quickstart/install-and-use-a-package-in-visual-studio)
 
 
 ## <a name="initializing-the-connected-device-platforms"></a>Connected Device Platforms の初期化
