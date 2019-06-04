@@ -4,18 +4,18 @@ description: 'Microsoft Graph データ接続は、コア データ パイプラ
 author: ajacks-msft
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: 10f5626a785e357677d6428b060e421a1bbf9138
-ms.sourcegitcommit: 17eec88891d62b27dcc5d0abdff9fcff2186b31f
+ms.openlocfilehash: 2a7756223f7a94eafc62ed14f455e67a4aae880a
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34407066"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656420"
 ---
 # <a name="microsoft-graph-data-connect"></a>Microsoft Graph データ接続
 
-Microsoft Graph データ接続は、ツールセットを使って Office 365 データおよび Microsoft Azure リソースをユーザーに提供します。 Microsoft Graph データ接続を使用すると、Microsoft 提供の優れた開発ツールを使用して貴重なデータにアクセスするインテリジェントなアプリケーションを構築することができます。これらのツールはすべて、Microsoft のセキュリティで保護されたクラウド内にあります。 すべての企業が生産性の向上に関心を持っています。つまり、ナレッジ ワーカーの生産性を向上させる製品を構築することは、非常に大きなビジネス チャンスを意味します。 
+Microsoft Graph データ接続は、ツールセットを使って Office 365 データおよび Microsoft Azure リソースをユーザーに提供します。 Microsoft Graph データ接続を使用すると、Microsoft 提供の優れた開発ツールを使用して貴重なデータにアクセスするインテリジェントなアプリケーションを構築することができます。これらのツールはすべて、Microsoft のセキュリティで保護されたクラウド内にあります。 すべての企業が生産性の向上に関心を持っています。つまり、ナレッジ ワーカーの生産性を向上させる製品を構築することは、非常に大きなビジネス チャンスを意味します。
 
-Microsoft Graph データ接続を活用する場合、「[Microsoft Graph 使用条件](https://developer.microsoft.com/ja-JP/graph/terms-of-use)」、「[Microsoft のプライバシーに関する声明](https://go.microsoft.com/fwlink/p/?LinkId=123161)」、および次に同意することになります。
+Microsoft Graph データ接続を活用する場合、「[Microsoft API 使用条件](/legal/microsoft-apis/terms-of-use?context=/graph/context)」、「[Microsoft のプライバシーに関する声明](https://go.microsoft.com/fwlink/p/?LinkId=123161)」、および次に同意することになります。
 
 - すべての Office 365 ユーザー向けにインテリジェントなアプリケーションを構築する ISV。
 - Office 365 データにアクセスする組織内のユーザー向けにインテリジェントなアプリケーションを構築するエンタープライズ開発者。
@@ -30,5 +30,5 @@ Microsoft Graph データ接続を使用してアプリケーションを開発�
 
 アプリケーションをインストールする顧客は、サービスの使用条件、必要なデータ、各アプリケーション SKU の価格、リソース消費の概算コストを確認することができます。 購入者によって必要な展開プロパティが指定されると、リソースが提供されます。 これには、データの抽出を開始する Data Factory パイプラインが含まれます。 ベンダーは、インストール完了までの時間、アプリケーションの使用方法、サポートの受け方について説明した、アプリケーションの説明ファイルを提供します。
 
-## <a name="next-steps"></a>次のステップ 
+## <a name="next-steps"></a>次のステップ
 Microsoft Graph データ接続アプリケーションの開発を開始するには、「[Microsoft Graph データ接続の概要](data-connect-concept-overview.md)」を参照してください。

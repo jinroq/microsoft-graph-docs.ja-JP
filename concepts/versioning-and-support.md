@@ -2,34 +2,34 @@
 title: 'Microsoft Graph のバージョン管理、サポートと重大な変更の方針 '
 description: この記事は Microsoft Graph のサポート重大な変更の方針と、現在使用可能な Microsoft Graph API のバージョンについて説明します。
 localization_priority: Priority
-ms.openlocfilehash: 273772aaf72031ca27801e54ede744960c601fd4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a362fba9bd66c029d7e4b9675b07d8d178fab561
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575738"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656875"
 ---
-# <a name="versioning-support-and-breaking-change-policies-for-microsoft-graph"></a>Microsoft Graph のバージョン管理、サポートと重大な変更の方針 
+# <a name="versioning-support-and-breaking-change-policies-for-microsoft-graph"></a>Microsoft Graph のバージョン管理、サポートと重大な変更の方針
 
 この記事は Microsoft Graph のサポート重大な変更の方針と、現在使用可能な Microsoft Graph API のバージョンについて説明します。
 
 ## <a name="support-policy-and-deprecation-information"></a>サポート ポリシーと廃止の情報
 
-Microsoft Graph は [Microsoft ライフサイクル ポリシー](https://support.microsoft.com/ja-JP/lifecycle)に従います。 
+Microsoft Graph は [Microsoft ライフサイクル ポリシー](https://support.microsoft.com/en-us/lifecycle)に従います。
 
-Microsoft Graph REST API と Microsoft Graph SDK の新しいバージョンがリリースされると、それ以前のバージョンは廃止されます。Microsoft は API または SDK が廃止される少なくとも 24 か月前までにそれ以前のバージョンを非推奨に指定します。 
+Microsoft Graph REST API と Microsoft Graph SDK の新しいバージョンがリリースされると、それ以前のバージョンは廃止されます。Microsoft は API または SDK が廃止される少なくとも 24 か月前までにそれ以前のバージョンを非推奨に指定します。
 
-API のメジャー バージョンを新しくする場合 (たとえば、v1.0 から v2.0 へ)、現在のバージョン (この例では v1.0) が即時に非推奨になり、この発表から 24 か月後以降、サポートが打ち切られます。 サービスのセキュリティと信頼性向上のためにこのポリシーを変更することがあります。  
+API のメジャー バージョンを新しくする場合 (たとえば、v1.0 から v2.0 へ)、現在のバージョン (この例では v1.0) が即時に非推奨になり、この発表から 24 か月後以降、サポートが打ち切られます。 サービスのセキュリティと信頼性向上のためにこのポリシーを変更することがあります。
 
-API が非推奨と指定された場合、できるだけ早く最新バージョンへ移行することを強くお勧めします。 場合によっては、元のAPIが非推奨になってからすぐに、新しいアプリケーションで新しい APIの使用を開始する必要があることを、お知らせします。 そのような場合、現在非推奨 APIを使用しているアクティブなアプリケーションのみが使用し続けることができます。   
+API が非推奨と指定された場合、できるだけ早く最新バージョンへ移行することを強くお勧めします。 場合によっては、元のAPIが非推奨になってからすぐに、新しいアプリケーションで新しい APIの使用を開始する必要があることを、お知らせします。 そのような場合、現在非推奨 APIを使用しているアクティブなアプリケーションのみが使用し続けることができます。
 
 ### <a name="api-contract-and-non-backward-compatible-changes"></a>API コントラクトと下位互換性のない変更
 
-Microsoft Graph にはバージョン更新の変更履歴があります。バージョン更新に伴う変更は [Microsoft Graph Microsoft Graph の変更ログ](changelog.md)に表示されています。Microsoft Graph には新しい機能とデータが追加されたため、下位互換性のない変更が加えられた API では、バージョン番号を更新しています。 
+Microsoft Graph にはバージョン更新の変更履歴があります。バージョン更新に伴う変更は [Microsoft Graph Microsoft Graph の変更ログ](changelog.md)に表示されています。Microsoft Graph には新しい機能とデータが追加されたため、下位互換性のない変更が加えられた API では、バージョン番号を更新しています。
 
 次に、下位互換性のない変更の例を示します。
 
- - URL またはリソースに関する基本的な要求や応答の変更    
+ - URL またはリソースに関する基本的な要求や応答の変更
  - 宣言済みプロパティの型の削除、変更と、その名前の変更
  - API と API パラメーターの削除または名前の変更
  - 必須の要求ヘッダーの追加
@@ -45,7 +45,7 @@ Microsoft Graph にはバージョン更新の変更履歴があります。バ�
  - プロパティの順序の変更
  - リソース ID のような不透明な文字列の長さまたは形式の変更
 
->**注:** 下位互換性のある変更の一覧は適時変更されます。独自のクライアント プロクシ (WCF クライアントなど) を作成する場合は、ガイドラインとしては Microsoft Graph API サービスにあらかじめ定義されていないプロパティや派生型をクライアント アプリケーションが受け入れることができるように準備してください。Microsoft Graph API は「[Microsoft REST API ガイドライン](https://github.com/microsoft/api-guidelines/)」の「[バージョン管理のモデル](https://github.com/microsoft/api-guidelines/blob/master/Guidelines.md#12-versioning)」セクションの説明に従っています。 
+>**注:** 下位互換性のある変更の一覧は適時変更されます。独自のクライアント プロクシ (WCF クライアントなど) を作成する場合は、ガイドラインとしては Microsoft Graph API サービスにあらかじめ定義されていないプロパティや派生型をクライアント アプリケーションが受け入れることができるように準備してください。Microsoft Graph API は「[Microsoft REST API ガイドライン](https://github.com/microsoft/api-guidelines/)」の「[バージョン管理のモデル](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#12-versioning)」セクションの説明に従っています。
 
 ## <a name="versions"></a>バージョン
 
@@ -54,7 +54,7 @@ Microsoft Graph にはバージョン更新の変更履歴があります。バ�
 ### <a name="beta-version"></a>ベータ版
 Microsoft Graph API のベータ版は、`https://graph.microsoft.com/beta`で公開されており、現在_**プレビュー段階**_ の機能が含まれています。 ベータ版 API のドキュメントは、「[Microsoft Graph ベータ エンドポイント リファレンス](/graph/api/overview?view=graph-rest-beta)」を参照してください。 ベータ版には随時重大な変更が発生することがあります。 本番環境が /beta API に依存することのないようにしてください。
 
-ベータ版の機能が現行バージョンに採用される保証はありません。Microsoft Graph API チームの判断でベータ版の機能が一般提供 (GA) に十分なものとなったとき、その機能が最新バージョンに追加されます。機能の採用が現行バージョンに重大な変更を招く場合は、バージョン番号が更新され、新規バージョンが現行バージョンに変わります。開発者コミュニティは、新機能や既存のベータ版 API 機能の現行バージョンでの採用希望などの機能の要望を [UserVoice](https://officespdev.uservoice.com/) に投稿できます。 
+ベータ版の機能が現行バージョンに採用される保証はありません。Microsoft Graph API チームの判断でベータ版の機能が一般提供 (GA) に十分なものとなったとき、その機能が最新バージョンに追加されます。機能の採用が現行バージョンに重大な変更を招く場合は、バージョン番号が更新され、新規バージョンが現行バージョンに変わります。開発者コミュニティは、新機能や既存のベータ版 API 機能の現行バージョンでの採用希望などの機能の要望を [UserVoice](https://officespdev.uservoice.com/) に投稿できます。
 
 ### <a name="current-version"></a>現在のバージョン
 
@@ -66,6 +66,6 @@ Microsoft Graph の現在のバージョンは、v1.0 です。Microsoft Graph A
 
 ## <a name="terms-of-use"></a>利用規約
 
-Microsoft Graph API を使用すると、[使用条件](https://developer.microsoft.com/graph/docs/misc/terms-of-use)に同意したことになります。 
+Microsoft Graph API を使用すると、[Microsoft API 使用条件](/legal/microsoft-apis/terms-of-use?context=/graph/context)に同意したことになります。
 
 お客様からのフィードバックは重要です。[StackOverflow](https://stackoverflow.com/questions/tagged/microsoftgraph?sort=newest) でご連絡いただけます。ご質問には {MicrosoftGraph} のタグを付けてください。

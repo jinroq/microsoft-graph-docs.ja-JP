@@ -2,12 +2,12 @@
 title: Microsoft Graph の操作に関するベスト プラクティス
 description: この記事では、アプリケーションで Microsoft Graph を最大限に活用するのに役立つベスト プラクティスについて説明します。これには、Microsoft Graph の概要、アプリのパフォーマンス向上、エンドユーザーに対してアプリケーションの信頼性を高める方法が含まれます。
 localization_priority: Priority
-ms.openlocfilehash: 11db24ee87485987f1bf23e750d4af59206885a0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4d0f0a382b7a61fe636ae5fb0fc791ed1f63327d
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526371"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657610"
 ---
 # <a name="best-practices-for-working-with-microsoft-graph"></a>Microsoft Graph の操作に関するベスト プラクティス
 
@@ -42,7 +42,8 @@ Microsoft Authentication Library API ([MSAL](https://docs.microsoft.com/ja-JP/az
 
     - アプリケーションのプライバシーに関する声明、使用条件、名前、ロゴ、ドメインは、同意その他の操作で表示されるので、エンドユーザーが理解できるように慎重に構成する必要があります。
     - アプリケーションに同意するのがどのようなユーザーなのか (エンドユーザーか管理者か) を考慮した上で、アプリケーションが[適切なアクセス許可を要求する](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/active-directory-v2-scopes)ように構成します。
-    - [静的、動的、増分同意](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/active-directory-v2-compare#incremental-and-dynamic-consent)の違いを確実に理解している必要があります。
+    - 
+  [静的、動的、増分同意](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/active-directory-v2-compare#incremental-and-dynamic-consent)の違いを確実に理解している必要があります。
 
 - **マルチテナント アプリケーションを考慮する**。 ユーザーによって、アプリケーションや同意のコントロールはまちまちで、その状態もさまざまであることを想定します。 例:
 
@@ -94,7 +95,7 @@ GET https://graph.microsoft.com/v1.0/me/messages
 
 ## <a name="storing-data-locally"></a>ローカルにデータを保存する
 
-アプリケーションは、Microsoft Graph に対して呼び出しを実行し、必要に応じてリアルタイムでデータを取得するのが理想的です。 特定のシナリオに必要な場合に限って、データをローカルにキャッシュし保存するようにします。そのようなユース ケースが使用条件やプライバシー ポリシーの対象となっている場合は、[Microsoft Graph の利用規約](https://developer.microsoft.com/graph/docs/misc/terms-of-use)に違反しないようにする必要があります。 適切な保持ポリシーと削除ポリシーをアプリケーションに実装する必要もあります。
+アプリケーションは、Microsoft Graph に対して呼び出しを実行し、必要に応じてリアルタイムでデータを取得するのが理想的です。 特定のシナリオに必要な場合に限って、データをローカルにキャッシュし保存するようにします。そのようなユース ケースが使用条件やプライバシー ポリシーの対象となっている場合は、「[Microsoft API の利用規約](/legal/microsoft-apis/terms-of-use?context=/graph/context)」に違反しないようにする必要があります。 適切な保持ポリシーと削除ポリシーをアプリケーションに実装する必要もあります。
 
 ## <a name="optimizations"></a>最適化
 

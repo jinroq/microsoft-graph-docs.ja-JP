@@ -1,19 +1,21 @@
 ---
 title: directoryAudit リソース型
-description: このリソースでは、ディレクトリの監査アイテムとそのコレクションについて示します
-author: lleonard-msft
-localization_priority: Priority
+description: ディレクトリ (テナント) のアクティビティ (ベータ版) を監査するための、Microsoft Graph API (REST) の directoryAudit リソース (エンティティ) について説明します。
+author: davidmu1
+localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1f980208788731206dc58870635644a1f3edc4c7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e7e2c2bcf9708dd00054a31bcee3ba06fd100549
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543227"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657946"
 ---
 # <a name="directoryaudit-resource-type"></a>directoryAudit リソース型
-このリソースでは、ディレクトリの監査アイテムとそのコレクションについて示します
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+ディレクトリの監査アイテムとそのコレクションについて示します。
 
 ## <a name="methods"></a>メソッド
 

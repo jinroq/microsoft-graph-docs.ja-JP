@@ -4,16 +4,19 @@ description: グループから新しいチームを作成します。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 9950b92acb28d8138bba363170c8e1e89b5f1d5a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: c47b3e7568c09c3b7f5e3debaec2eb74e074d6e7
+ms.sourcegitcommit: 9ffac53b262203917dfb20ac981e97f50d398199
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335271"
+ms.lasthandoff: 06/01/2019
+ms.locfileid: "34669660"
 ---
 # <a name="create-team-from-group"></a>グループからチームを作成する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!IMPORTANT]
+> この API は、[[チームを作成する](../api/team-post.md)] を優先して廃止中であり、2019 年末までに削除されます。 グループからチームを作成する方法の詳細については、「[チームを作成する](../api/team-post.md)」の例の 4 と 5 を参照してください。
 
 [グループ](../resources/group.md)から新しい[チーム](../resources/team.md)を作成します。
 
