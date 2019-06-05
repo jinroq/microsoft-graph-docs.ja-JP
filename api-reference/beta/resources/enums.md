@@ -1,14 +1,14 @@
 ---
 title: 列挙値
 description: Microsoft Graph 列挙値
-ms.openlocfilehash: 7394ee9dbfa70e7cda1269c8f61d3b77d92e8094
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: f553b2378f646bf367cf75515cd758dd0e37b53a
+ms.sourcegitcommit: 624ac42e74533a9bf0d0d22b3b15adbb258fd594
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340162"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34709405"
 ---
-### <a name="contactrelationship-values"></a>contactrelationship 値
+### <a name="contactrelationship-values"></a>contactRelationship 値
 
 |メンバー|値|説明|
 |:---|:---|:---|
@@ -19,10 +19,10 @@ ms.locfileid: "33340162"
 |守護|2/4| ユーザーのガーディアン。|
 |子供|5| ユーザーの子。|
 |も|シックス| ユーザーとの特定されていない関係。|
-|unknownfuturevalue という|7| 将来の互換性のためのマーカー値。|
+|Unknownfuturevalue という|7| 将来の互換性のためのマーカー値。|
 
 
-### <a name="scheduleentitytheme-values"></a>scheduleentitytheme の値
+### <a name="scheduleentitytheme-values"></a>scheduleEntityTheme の値
 
 | 値
 |:-------------------------
@@ -38,10 +38,10 @@ ms.locfileid: "33340162"
 | darkPurple
 | darkPink
 | darkYellow
-| unknownfuturevalue という
+| Unknownfuturevalue という
 
 
-### <a name="timeoffreasonicontype-values"></a>timeoff理由 icontype 値
+### <a name="timeoffreasonicontype-values"></a>Timeoff理由 Icontype 値
 
 |Member|
 |:---|
@@ -50,9 +50,9 @@ ms.locfileid: "33340162"
 |予定表|
 |起動|
 |平面|
-|の方法 id|
+|の方法 Id|
 |診察|
-|notworking|
+|notWorking|
 |レコーダー|
 |juryDuty|
 |世界中|
@@ -66,7 +66,7 @@ ms.locfileid: "33340162"
 |trafficCone|
 |pin|
 |晴れ|
-|unknownfuturevalue という|
+|Unknownfuturevalue という|
 
 
 ### <a name="timezonestandard-values"></a>timeZoneStandard の値
@@ -89,7 +89,7 @@ ms.locfileid: "33340162"
 | 不明           | -1
 
 
-### <a name="physicaladdresstype-values"></a>physicaladdresstype の値
+### <a name="physicaladdresstype-values"></a>physicalAddressType の値
 
 | 値
 |:-------------------------
@@ -108,7 +108,7 @@ ms.locfileid: "33340162"
 | リソース
 
 
-### <a name="externalaudiencescope-values"></a>externalaudiencescope 値
+### <a name="externalaudiencescope-values"></a>externalAudienceScope 値
 
 | 値
 |:-------------------------
@@ -126,7 +126,7 @@ ms.locfileid: "33340162"
 | スケジュール済み
 
 
-### <a name="calendarcolor-values"></a>calendarcolor 値
+### <a name="calendarcolor-values"></a>calendarColor 値
 
 | メンバー     | 値
 |:-----------|:----------
@@ -139,8 +139,8 @@ ms.locfileid: "33340162"
 | ライト青緑  | 5
 | ライトピンク  | シックス
 | ライトブラウン | 7
-| ライトレッド   | ~
-| maxcolor   | i-9
+| ライトレッド   | 8 
+| maxColor   | 9 
 
 
 ### <a name="educationsynchronizationprofilestate-values"></a>educationSynchronizationProfileState の値
@@ -152,7 +152,7 @@ ms.locfileid: "33340162"
 | プロビジョニングが失敗しました | 5
 | 準備済み        | シックス
 | プロビジョン       | 7
-| unknownfuturevalue という | ~
+| Unknownfuturevalue という | 8 
 
 
 ### <a name="educationsynchronizationstatus-values"></a>educationSynchronizationStatus の値
@@ -163,9 +163,9 @@ ms.locfileid: "33340162"
 | inProgress    | 1-d
 | success | pbm-2
 | error        | 1/3
-| validationerror | 2/4
+| validationError | 2/4
 | 隔離       | 5
-| unknownfuturevalue という | シックス
+| Unknownfuturevalue という | シックス
 
 ### <a name="educationexternalsource-values"></a>educationExternalSource の値
 
@@ -173,7 +173,7 @@ ms.locfileid: "33340162"
 |:-------------------------
 | sis
 | 手動
-| unknownfuturevalue という
+| Unknownfuturevalue という
 
 
 ### <a name="educationgender-values"></a>educationGender の値
@@ -183,7 +183,7 @@ ms.locfileid: "33340162"
 | female
 | 男
 | も
-| unknownfuturevalue という
+| Unknownfuturevalue という
 
 
 ### <a name="eventtype-values"></a>eventType 値
@@ -221,10 +221,10 @@ ms.locfileid: "33340162"
 | student
 | teacher
 | none
-| unknownfuturevalue という
+| Unknownfuturevalue という
 
 
-### <a name="meetingmessagetype-values"></a>会議の messagetype の値
+### <a name="meetingmessagetype-values"></a>会議の Messagetype の値
 
 | 値
 |:-----------------
@@ -240,7 +240,7 @@ ms.locfileid: "33340162"
 
 | 値
 |:-------------------------
-| notflagged 付き
+| notFlagged 付き
 | complete
 | 示さ
 
@@ -253,11 +253,11 @@ ms.locfileid: "33340162"
 | も
 
 
-### <a name="iosnotificationalerttype-values"></a>iosnotificationalerttype の値
+### <a name="iosnotificationalerttype-values"></a>iosNotificationAlertType の値
 
 | 値
 |:-------------------------
-| devicedefault
+| deviceDefault
 | 尺
 | ポップアップ
 | none
@@ -269,17 +269,17 @@ ms.locfileid: "33340162"
 | 不明
 | 認証
 | 手続き
-| accountvalidation
-| uservalidation
-| devicenotsupported
-| inmaintenance
-| badrequest
+| accountValidation
+| userValidation
+| deviceNotSupported
+| inMaintenance
+| badRequest
 | featureNotSupported
 | enrollmentRestrictionsEnforced
-| clientdisconnected
+| clientDisconnected
 
 
-### <a name="bodytype-values"></a>bodytype の値
+### <a name="bodytype-values"></a>bodyType の値
 | 値
 |:---------
 | text
@@ -298,7 +298,7 @@ ms.locfileid: "33340162"
 | streetAddress
 | ホテル
 | レストラン
-| localbusiness
+| localBusiness
 | postalAddress
 
 ### <a name="locationuniqueidtype-values"></a>locationUniqueIdType の値
@@ -306,13 +306,13 @@ ms.locfileid: "33340162"
 | 値
 |:-------------------------
 | 不明
-| locationstore
+| locationStore
 | 名簿
 | 機密性
 | 地図
 
 
-### <a name="messageactionflag-values"></a>messageactionflag の値
+### <a name="messageactionflag-values"></a>messageActionFlag の値
 
 | 値
 |:-------------------------
@@ -321,7 +321,7 @@ ms.locfileid: "33340162"
 | 交換
 | フォローアップ
 | 注意
-| forward
+| 前方
 | noResponseNecessary
 | 読み込む
 | 返信
@@ -339,7 +339,7 @@ ms.locfileid: "33340162"
 | なし        | -1
 
 
-### <a name="operationstatus-values"></a>operationstatus の値
+### <a name="operationstatus-values"></a>operationStatus の値
 
 | 値
 |:-----------------
@@ -376,8 +376,8 @@ ms.locfileid: "33340162"
 | 体
 | も
 | アシスタント
-| ホーム fax
-| businessfax
+| ホーム Fax
+| businessFax
 | otherFax
 | pager
 | オン
@@ -388,7 +388,7 @@ ms.locfileid: "33340162"
 | 値
 |:-------------------------
 | 自動
-| nopreview
+| noPreview
 | checklist
 | description
 | reference
@@ -402,7 +402,7 @@ ms.locfileid: "33340162"
 | まし
 | deleted
 | すべて
-| unknownfuturevalue という
+| Unknownfuturevalue という
 
 
 ### <a name="weekindex-values"></a>weekIndex の値
@@ -454,23 +454,23 @@ ms.locfileid: "33340162"
 |:---------------------
 | 不明
 | OneDrive
-| onedrive forbusiness
-| onpremonedrive forbusiness
+| Onedrive Forbusiness
+| Onpremonedrive Forbusiness
 
 
-### <a name="responsetype-values"></a>responsetype の値
+### <a name="responsetype-values"></a>responseType の値
 
 | 値
 |:-------------------------
 | none
-| organizer
+| 構成内容変更
 | tentativelyAccepted
 | 受け
 | 同意
-| notresponded
+| notResponded
 
 
-### <a name="activitydomain-values"></a>activitydomain の値
+### <a name="activitydomain-values"></a>activityDomain の値
 
 | 値
 |:-------------------------
@@ -480,7 +480,7 @@ ms.locfileid: "33340162"
 | Unrestricted
 
 
-### <a name="websitetype-values"></a>websitetype の値
+### <a name="websitetype-values"></a>websiteType の値
 
 | 値
 |:-------------------------
@@ -504,17 +504,17 @@ ms.locfileid: "33340162"
 | preset5  | 5       
 | preset6  | シックス       
 | preset7  | 7       
-| preset8  | ~       
-| preset9  | i-9       
-| preset10 | 10        
-| preset11 | 11       
-| preset12 | 12       
-| preset13 | 13       
-| preset14 | 14       
-| preset15 | 15       
-| preset16 | 16       
-| preset17 | 17       
-| preset18 | 18       
+| preset8  | 8        
+| preset9  | 9        
+| preset10 | 10       
+| preset11 | #      
+| preset12 | 個      
+| preset13 | スリー      
+| preset14 | 第      
+| preset15 | 約      
+| preset16 | 16      
+| preset17 | インチ      
+| preset18 | 個      
 | preset19 | 年      
 | preset20 | 1280      
 | preset21 | 21      
@@ -522,7 +522,7 @@ ms.locfileid: "33340162"
 | preset23 | 最高      
 | preset24 | ソケット      
 
-### <a name="alertfeedback-values"></a>alertfeedback 値
+### <a name="alertfeedback-values"></a>alertFeedback 値
 
 アナリストによって提供される警告での可能なフィードバック値。
 
@@ -533,7 +533,7 @@ ms.locfileid: "33340162"
 |falsePositive|pbm-2| 警告は誤検知です-正数。|
 |benignPositive|1/3| 通知は害のない-正。|
 
-### <a name="filehashtype-values"></a>filehashtype の値
+### <a name="filehashtype-values"></a>fileHashType の値
 
 |メンバー|値|説明|
 |:---|:---|:---|
@@ -543,11 +543,11 @@ ms.locfileid: "33340162"
 |md5|1/3| MD5 ハッシュ型。|
 |authenticodeHash256|2/4| AuthenticodeHash256 ハッシュの種類。|
 |lsHash|5| LsHash ハッシュの種類。|
-|ctph|シックス| ctph ハッシュの種類。|
+|ctph|シックス| CTPH ハッシュの種類。|
 |peSha1|7| PESHA1 ハッシュの種類。|
-|peSha256|~| PESHA256 ハッシュの種類。|
+|peSha256|8 | PESHA256 ハッシュの種類。|
 
-### <a name="connectiondirection-values"></a>connectiondirection 値
+### <a name="connectiondirection-values"></a>connectionDirection 値
 
 |メンバー|値|説明|
 |:---|:---|:---|
@@ -555,7 +555,7 @@ ms.locfileid: "33340162"
 |受信|1-d|受信接続。|
 |向き|pbm-2| 送信接続。|
 
-### <a name="connectionstatus-values"></a>connectionstatus の値
+### <a name="connectionstatus-values"></a>connectionStatus の値
 
 |メンバー|値|説明|
 |:---|:---|:---|
@@ -570,27 +570,27 @@ ms.locfileid: "33340162"
 |メンバー|値|説明|
 |:---|:---|:---|
 |不明|.0|わかり.|
-|ない|10  |整合性レベルは信頼されていません。|
+|ない|10 |整合性レベルは信頼されていません。|
 |低さ|1280| 整合性レベルは低くなっています。|
 |medium|31| 整合性レベルは中程度です。|
 |高額|40| 整合性レベルは High です。|
 |system|50| 整合性レベルはシステムです。|
 
-### <a name="registryhive-values"></a>registryhive 値
+### <a name="registryhive-values"></a>registryHive 値
 
 で[https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives)定義されているレジストリハイブの列挙。
 
 |メンバー|値|説明|
 |:---|:---|:---|
 |不明|.0|不明なハイブです。|
-|currentconfig|1-d|HKEY_CURRENT_CONFIG ハイブ。|
+|currentConfig|1-d|HKEY_CURRENT_CONFIG ハイブ。|
 |currentUser|pbm-2| HKEY_CURRENT_USER ハイブ。|
-|localmachinesam|1/3| HKEY_LOCAL_MACHINE\SAM ハイブ。|
-|localmachinesamsoftware|2/4| HKEY_LOCAL_MACHINE\Software ハイブ。|
+|localMachineSam|1/3| HKEY_LOCAL_MACHINE\SAM ハイブ。|
+|localMachineSamSoftware|2/4| HKEY_LOCAL_MACHINE\Software ハイブ。|
 |localMachineSystem|5| HKEY_LOCAL_MACHINE\System ハイブ。|
 |ユーザー既定|シックス| HKEY_USERS\\既定のハイブ。|
 
-### <a name="registryoperation-values"></a>registryoperation の値
+### <a name="registryoperation-values"></a>registryOperation の値
 
 レジストリキー名と値の一方または両方を変更した操作。
 
@@ -601,7 +601,7 @@ ms.locfileid: "33340162"
 |modify|pbm-2|レジストリを変更します。|
 |delete|1/3|レジストリを削除します。|
 
-### <a name="registryvaluetype-values"></a>registryvaluetype 値
+### <a name="registryvaluetype-values"></a>registryValueType 値
 
 で[https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types)定義されているレジストリ値の種類の列挙。
 
@@ -611,16 +611,16 @@ ms.locfileid: "33340162"
 |バイナリ|1-d|REG_BINARY レジストリ値の種類。|
 |dword|pbm-2| REG_DWORD のレジストリ値の種類。|
 |dwordLittleEndian|1/3| REG_DWORD_LITTLE_ENDIAN レジストリ値の種類。|
-|dて dbigエンディアン|2/4| REG_DWORD_BIG_ENDIAN レジストリ値の種類。|
-|expandsz|5| REG_EXPAND_SZ レジストリ値の種類。|
+|Dて Dbigエンディアン|2/4| REG_DWORD_BIG_ENDIAN レジストリ値の種類。|
+|expandSz|5| REG_EXPAND_SZ レジストリ値の種類。|
 |link|シックス| REG_LINK レジストリ値の種類。|
-|multisz|7| REG_MULTI_SZ レジストリ値の種類。|
-|none|~| REG_NONE レジストリ値の種類。|
-|qword|i-9| REG_QWORD レジストリ値の種類。|
-|qwordlittleEndian|10  | REG_QWORD_LITTLE_ENDIAN レジストリ値の種類。|
-|sz|11 | REG_SZ レジストリ値の種類。|
+|multiSz|7| REG_MULTI_SZ レジストリ値の種類。|
+|none|8 | REG_NONE レジストリ値の種類。|
+|qword|9 | REG_QWORD レジストリ値の種類。|
+|qwordlittleEndian|10 | REG_QWORD_LITTLE_ENDIAN レジストリ値の種類。|
+|sz|#| REG_SZ レジストリ値の種類。|
 
-### <a name="alertseverity-values"></a>alertseverity 値
+### <a name="alertseverity-values"></a>alertSeverity 値
 
 通知の重要度を列挙します。
 
@@ -632,18 +632,18 @@ ms.locfileid: "33340162"
 |medium|1/3| 重要度は中程度です。|
 |高額|2/4| 重要度は high です。|
 
-### <a name="alertstatus-values"></a>alertstatus の値
+### <a name="alertstatus-values"></a>alertStatus の値
 
 アラートライフサイクル状態 (ステージ) の可能な値。
 
 |メンバー|値|説明|
 |:---|:---|:---|
 |不明|.0|状態が不明です。|
-|newalert|10  | 通知は新規です。|
+|newAlert|10 | 通知は新規です。|
 |inProgress|1280|通知が進行中です。|
 |解析|31|アラートが解決されます。|
 
-### <a name="emailrole-values"></a>emailrole 値
+### <a name="emailrole-values"></a>emailRole 値
 
 電子メールの役割に指定できる値。
 
@@ -653,7 +653,7 @@ ms.locfileid: "33340162"
 |sender|1-d|電子メールの送信者。|
 |受信者|pbm-2|電子メールの受信者。|
 
-### <a name="logontype-values"></a>logontype の値
+### <a name="logontype-values"></a>logonType の値
 
 ユーザーのサインイン方法に指定できる値。
 
@@ -661,7 +661,7 @@ ms.locfileid: "33340162"
 |:---|:---|:---|
 |不明|-1|わかり.|
 |対話的|.0|ログオンは対話的です。|
-|remoteinteractive|1-d| ログオンはリモート対話型です。|
+|remoteInteractive|1-d| ログオンはリモート対話型です。|
 |lan|pbm-2| ログオンはネットワークです。|
 |batch|1/3| ログオンはバッチです。|
 |service|2/4| ログオンはサービスです。|
@@ -693,7 +693,7 @@ Windows 定義ごとに、ユーザーアカウントの種類 (グループメ�
 |高額|
 |hidden|
 |none|
-|unknownfuturevalue という|
+|Unknownfuturevalue という|
 
 ### <a name="riskstate-values"></a>riskState の値
 
@@ -703,9 +703,9 @@ Windows 定義ごとに、ユーザーアカウントの種類 (グループメ�
 |confirmedSafe|
 |改善|
 |非|
-|atrisk|
+|atRisk|
 |confirmedCompromised|
-|unknownfuturevalue という|
+|Unknownfuturevalue という|
 
 ### <a name="riskdetail-values"></a>riskDetail の値
 
@@ -721,9 +721,9 @@ Windows 定義ごとに、ユーザーアカウントの種類 (グループメ�
 |adminDismissedAllRiskForUser|
 |adminConfirmedSigninCompromised|
 |hidden|
-|unknownfuturevalue という|
+|Unknownfuturevalue という|
 
-### <a name="referenceattachmentpermission-values"></a>referenceattachmentpermission の値
+### <a name="referenceattachmentpermission-values"></a>referenceAttachmentPermission の値
 
 |Member|
 |:---|
@@ -735,12 +735,12 @@ Windows 定義ごとに、ユーザーアカウントの種類 (グループメ�
 |組織ビュー|
 |組織の編集|
 
-### <a name="referenceattachmentprovider-values"></a>referenceattachmentprovider の値
+### <a name="referenceattachmentprovider-values"></a>referenceAttachmentProvider の値
 
 |Member|
 |:---|
 |も|
-|onedrive business|
+|Onedrive Business|
 |oneDriveConsumer|
 |dropbox|
 
@@ -758,11 +758,11 @@ Windows 定義ごとに、ユーザーアカウントの種類 (グループメ�
 |investigationsThreatIntelligence|
 |汎用|
 |adminConfirmedUserCompromised|
-|mcasimtimed トラベル|
+|Mcasimtimed トラベル|
 |mcasSuspiciousInboxManipulationRules|
 |investigationsThreatIntelligenceSigninLinked|
 |maliciousIPAddressValidCredentialsBlockedIP|
-|unknownfuturevalue という|
+|Unknownfuturevalue という|
 
 ### <a name="networktype-values"></a>networkType の値
 
@@ -770,9 +770,9 @@ Windows 定義ごとに、ユーザーアカウントの種類 (グループメ�
 |:---|
 |イントラネット|
 |社外|
-|namednetwork|
+|namedNetwork|
 |提供|
-|unknownfuturevalue という|
+|Unknownfuturevalue という|
 
 ### <a name="exchangeidformat-values"></a>exchangeIdFormat の値
 
@@ -784,23 +784,23 @@ Windows 定義ごとに、ユーザーアカウントの種類 (グループメ�
 |restId|
 |restImmutableEntryId|
 
-### <a name="attributeflowbehavior-values"></a>attributeflowbehavior の値
+### <a name="attributeflowbehavior-values"></a>attributeFlowBehavior の値
 
 |Member|
 |:---|
 |flowWhenChanged|
-|flowalways|
+|flowAlways|
 
-### <a name="attributeflowtype-values"></a>attributeflowtype の値
+### <a name="attributeflowtype-values"></a>attributeFlowType の値
 
 |Member|
 |:---|
 |いつも|
-|objectaddonly|
-|multivalueaddonly|
+|objectAddOnly|
+|multiValueAddOnly|
 |restId|
 
-### <a name="objectflowtypes-values"></a>objectflowtypes の値
+### <a name="objectflowtypes-values"></a>objectFlowTypes の値
 
 |メンバー| 値|
 |:---|:-------|
@@ -808,3 +808,17 @@ Windows 定義ごとに、ユーザーアカウントの種類 (グループメ�
 |加算| 1-d       |
 |Update|pbm-2     |
 |Delete|2/4     |
+
+### <a name="chatmessagetype-values"></a>chatMessageType の値
+
+|Member|
+|:---|
+|message|
+
+### <a name="chatmessageimportance-values"></a>chatMessageImportance 度の値
+
+|Member|
+|:---|
+|ノーマル|
+|高額|
+|緊急|

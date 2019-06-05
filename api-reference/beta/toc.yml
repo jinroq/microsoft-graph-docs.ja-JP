@@ -18,6 +18,8 @@ items:
         href: /graph/permissions-reference?toc=./ref/toc.json
       - name: アプリケーション アクセス (CPS) の管理
         href: /graph/auth-cloudsolutionprovider?toc=./ref/toc.json
+      - name: メールボックスへのアクセスを制限する
+        href: /graph/auth-limit-mailbox-access?toc=./ref/toc.json
   - name: API の使用
     items:
       - name: 概要
@@ -865,7 +867,7 @@ items:
             items:
               - name: リスト
                 href: api/bookingcurrency-list.md
-              - name: 取得
+              - name: Get
                 href: api/bookingcurrency-get.md
           - name: 予約可能な顧客
             href: resources/bookingcustomer.md
@@ -4945,7 +4947,7 @@ items:
                 items:
                   - name: リスト
                     href: api/intune-deviceconfig-windowsphone81customconfiguration-list.md
-                  - name: Get
+                  - name: 取得
                     href: api/intune-deviceconfig-windowsphone81customconfiguration-get.md
                   - name: 作成
                     href: api/intune-deviceconfig-windowsphone81customconfiguration-create.md
@@ -4958,7 +4960,7 @@ items:
                 items:
                   - name: リスト
                     href: api/intune-deviceconfig-windowsphone81generalconfiguration-list.md
-                  - name: Get
+                  - name: 取得
                     href: api/intune-deviceconfig-windowsphone81generalconfiguration-get.md
                   - name: 作成
                     href: api/intune-deviceconfig-windowsphone81generalconfiguration-create.md
@@ -4971,7 +4973,7 @@ items:
                 items:
                   - name: リスト
                     href: api/intune-deviceconfig-windowsphone81importedpfxcertificateprofile-list.md
-                  - name: Get
+                  - name: 取得
                     href: api/intune-deviceconfig-windowsphone81importedpfxcertificateprofile-get.md
                   - name: 作成
                     href: api/intune-deviceconfig-windowsphone81importedpfxcertificateprofile-create.md
@@ -4984,7 +4986,7 @@ items:
                 items:
                   - name: リスト
                     href: api/intune-deviceconfig-windowsphone81scepcertificateprofile-list.md
-                  - name: Get
+                  - name: 取得
                     href: api/intune-deviceconfig-windowsphone81scepcertificateprofile-get.md
                   - name: 作成
                     href: api/intune-deviceconfig-windowsphone81scepcertificateprofile-create.md
@@ -4997,7 +4999,7 @@ items:
                 items:
                   - name: リスト
                     href: api/intune-deviceconfig-windowsphone81trustedrootcertificate-list.md
-                  - name: Get
+                  - name: 取得
                     href: api/intune-deviceconfig-windowsphone81trustedrootcertificate-get.md
                   - name: 作成
                     href: api/intune-deviceconfig-windowsphone81trustedrootcertificate-create.md
@@ -5010,7 +5012,7 @@ items:
                 items:
                   - name: リスト
                     href: api/intune-deviceconfig-windowsphone81vpnconfiguration-list.md
-                  - name: Get
+                  - name: 取得
                     href: api/intune-deviceconfig-windowsphone81vpnconfiguration-get.md
                   - name: 作成
                     href: api/intune-deviceconfig-windowsphone81vpnconfiguration-create.md
@@ -5023,7 +5025,7 @@ items:
                 items:
                   - name: リスト
                     href: api/intune-deviceconfig-windowsphoneeasemailprofileconfiguration-list.md
-                  - name: Get
+                  - name: 取得
                     href: api/intune-deviceconfig-windowsphoneeasemailprofileconfiguration-get.md
                   - name: 作成
                     href: api/intune-deviceconfig-windowsphoneeasemailprofileconfiguration-create.md
@@ -5036,7 +5038,7 @@ items:
                 items:
                   - name: 一覧表示
                     href: api/intune-deviceconfig-windowsprivacydataaccesscontrolitem-list.md
-                  - name: Get
+                  - name: 取得
                     href: api/intune-deviceconfig-windowsprivacydataaccesscontrolitem-get.md
                   - name: 作成
                     href: api/intune-deviceconfig-windowsprivacydataaccesscontrolitem-create.md
@@ -5063,7 +5065,7 @@ items:
                 items:
                   - name: リスト
                     href: api/intune-deviceconfig-windowsupdateforbusinessconfiguration-list.md
-                  - name: Get
+                  - name: 取得
                     href: api/intune-deviceconfig-windowsupdateforbusinessconfiguration-get.md
                   - name: 作成
                     href: api/intune-deviceconfig-windowsupdateforbusinessconfiguration-create.md
@@ -5103,7 +5105,7 @@ items:
                 items:
                   - name: リスト
                     href: api/intune-deviceconfig-windowswificonfiguration-list.md
-                  - name: Get
+                  - name: 取得
                     href: api/intune-deviceconfig-windowswificonfiguration-get.md
                   - name: 作成
                     href: api/intune-deviceconfig-windowswificonfiguration-create.md
@@ -5116,7 +5118,7 @@ items:
                 items:
                   - name: リスト
                     href: api/intune-deviceconfig-windowswifienterpriseeapconfiguration-list.md
-                  - name: Get
+                  - name: 取得
                     href: api/intune-deviceconfig-windowswifienterpriseeapconfiguration-get.md
                   - name: 作成
                     href: api/intune-deviceconfig-windowswifienterpriseeapconfiguration-create.md
@@ -5138,7 +5140,7 @@ items:
                 items:
                   - name: リスト
                     href: api/intune-devices-applogcollectionrequest-list.md
-                  - name: Get
+                  - name: 取得
                     href: api/intune-devices-applogcollectionrequest-get.md
                   - name: 作成
                     href: api/intune-devices-applogcollectionrequest-create.md
@@ -8713,6 +8715,10 @@ items:
                 href: api/itemanalytics-get.md
               - name: 間隔によりアクティビティを取得する
                 href: api/itemactivity-getbyinterval.md
+              - name: サイトをフォローする
+                href: api/site-follow.md
+              - name: フォロー取り消しサイト
+                href: api/site-unfollow.md
           - name: リスト
             href: resources/list.md
             items:
@@ -8968,7 +8974,7 @@ items:
               - name: メッセージの返信を取得する
                 href: api/channel-get-messagereply.md
               - name: メッセージを送信する
-                href: api/channel-post-chatmessage.md
+                href: api/channel-post-messages.md
               - name: メッセージに返信する
                 href: api/channel-post-messagereply.md
           - name: チャット
