@@ -3,16 +3,16 @@ title: アプリケーション サービスから通知を作成し送信する
 description: 'さまざまなクライアントにMicrosoft Graph を通じてユーザーを中心とした通知を送信するアプリケーション サービスを設定する。 '
 localization_priority: Priority
 ms.prod: notifications
-ms.openlocfilehash: 1148c554b90fca5aeb56627e47a1d060f53f772e
-ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
+ms.openlocfilehash: cf40087aff3956a88f79197482db8126bbe8d96c
+ms.sourcegitcommit: 895a03cb2706a9b3a2236b30d6a7e9f5cbc6a89e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34063350"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34683511"
 ---
 # <a name="create-and-send-a-notification-from-your-app-service"></a>アプリケーション サービスから通知を作成し送信する
 
-Microsoft Graph API を使用して、ユーザーに通知を作成して送信することができます。 通知は、アクティビティ フィードのストアに格納されて、ターゲット ユーザーがサインインしているすべてのデバイス上のすべてのアプリケーション クライアントに送信されます。認証方法、必要なアクセス許可の範囲、ヘッダーまたは本文の要求と予想される応答の詳細については、次を参照してください。
+Microsoft Graph API を使用して、ユーザーに通知を作成して送信することができます。 通知はアクティビティ フィード ストアに格納され、ターゲット ユーザーがサインインしているすべてのデバイスのすべてのアプリ クライアントに送信されます。 
 
 ## <a name="authentication"></a>認証
 

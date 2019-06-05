@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: サイト
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 63d4232c2af37541f2a96359f9d2a209d065bc98
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: f2386228c3758cc15d9c270f0da32608e4f2b901
+ms.sourcegitcommit: 895a03cb2706a9b3a2236b30d6a7e9f5cbc6a89e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343060"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34683504"
 ---
 # <a name="site-resource-type"></a>サイトのリソースの種類
 
@@ -31,6 +31,8 @@ ms.locfileid: "33343060"
 | [ページを一覧表示する][]                 | GET /sites/{site-id}/pages
 | [ルート サイトを一覧表示する][]            | GET /sites?filter=root ne null&select=siteCollection,webUrl
 | [サイトを検索する][]           | GET /sites?search={query}
+| [サイトをフォローする][]                | POST /users/{user-id}/followedSites/add
+| [サイトのフォローを取り消す][]              | POST /users/{user-id}/followedSites/remove
 
 [サイトを取得する]: ../api/site-get.md
 [ルート サイトを取得する]: ../api/site-get.md
@@ -41,13 +43,15 @@ ms.locfileid: "33343060"
 [ページを一覧表示する]: ../api/sitepage-list.md
 [ルート サイトを一覧表示する]: ../api/site-list.md
 [サイトを検索する]: ../api/site-search.md
+[サイトをフォローする]: ../api/site-follow.md
+[サイトのフォローを取り消す]: ../api/site-unfollow.md
 
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ名            | 種類               | 説明
 |:-------------------------|:-------------------|:-----------------------------
-| **id**                   | string             | アイテムの一意識別子。読み取り専用です。
+| **id**                   | 文字列             | アイテムの[一意識別子](#id-property)。 読み取り専用です。
 | **createdDateTime**      | DateTimeOffset     | アイテムが作成された日時。読み取り専用です。
 | **説明**          | string             | サイトの説明テキスト。
 | **eTag**                 | string             | アイテムの ETag。読み取り専用です。                                                                  |
@@ -58,6 +62,17 @@ ms.locfileid: "33343060"
 | **sharepointIds**        | [sharepointIds][]  | SharePoint REST 互換性に役立つ識別子を返します。読み取り専用です。
 | **siteCollection**       | [siteCollection][] | サイトのサイト コレクションに関する詳細情報を提供します。ルート サイトにのみ使用できます。読み取り専用です。
 | **webUrl**               | string (URL)       | ブラウザーでアイテムを表示する URL。読み取り専用です。
+
+### <a name="id-property"></a>ID プロパティ
+**サイト**は、次の値の複合である一意な ID によって識別されます。
+* サイト コレクションのホスト名 (contoso.sharepoint.com)
+* サイト コレクションの一意 ID (GUID)
+* サイトの一意 ID (GUID)
+  
+`root` 識別子は次に示すように、常にターゲットのルート サイトを参照します。
+
+* `/sites/root`:テナントのルート サイト。
+* `/groups/{group-id}/sites/root`:グループのチーム サイト。
 
 ## <a name="relationships"></a>リレーションシップ
 

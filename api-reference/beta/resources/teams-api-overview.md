@@ -4,12 +4,12 @@ description: Microsoft Teams は、Office 365 のチャットベースのワー�
 localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 53334b834e9c4c0248a02f9d3c5c27c41cb47bcd
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: ba27e303ab05e3a9ea3e02f3d0a32066e60c82a6
+ms.sourcegitcommit: 624ac42e74533a9bf0d0d22b3b15adbb258fd594
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345699"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34709384"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Microsoft Graph API を使用して Microsoft Teams で作業する
 
@@ -27,8 +27,8 @@ Microsoft Teams は、Office 365 のチャットベースのワークスペー�
 |[teamsTab](../resources/teamstab.md) |[一覧表示](../api/teamstab-list.md)、[作成](../api/teamstab-add.md)、[読み取り](../api/teamstab-get.md)、[更新](../api/teamstab-update.md)、[削除](../api/teamstab-delete.md) |
 |[teamsApp](../resources/teamsapp.md)|[一覧表示](../api/teamsapp-list.md)、[公開](../api/teamsapp-publish.md)、[更新](../api/teamsapp-update.md)、[削除](../api/teamsapp-delete.md)|
 |[teamsAppInstallation](../resources/teamsappinstallation.md)| [一覧表示](../api/teamsappinstallation-list.md)、[インストール](../api/teamsappinstallation-add.md)、[アップグレード](../api/teamsappinstallation-delete.md)、[削除](../api/teamsappinstallation-delete.md) |
-| [chatMessage](../resources/chatmessage.md) (プレビュー)| [一覧表示](../api/channel-list-messages.md)、[送信](../api/channel-post-chatmessage.md)、[読み取り](/graph/api/channel-get-message?view=graph-rest-beta) |
-| [call](/graph/api/resources/call?view=graph-rest-beta) (プレビュー) | [応答](/graph/api/call-answer?view=graph-rest-beta)、[拒否](/graph/api/call-reject?view=graph-rest-beta)、[リダイレクト](/graph/api/call-redirect?view=graph-rest-beta)、[ミュート](/graph/api/call-mute?view=graph-rest-beta)、[ミュート解除](/graph/api/call-unmute?view=graph-rest-beta)、[メタデータ更新](/graph/api/call-updatemetadata?view=graph-rest-beta)、[画面共有の役割の変更](/graph/api/call-changescreensharingrole?view=graph-rest-beta)、[参加者の一覧表示](/graph/api/call-list-participants?view=graph-rest-beta)、[参加者の招待](/graph/api/participant-invite?view=graph-rest-beta)、[すべての参加者のミュート](/graph/api/participant-muteall?view=graph-rest-beta) |
+|[chatMessage](../resources/chatmessage.md) (プレビュー)| [一覧表示](../api/channel-list-messages.md)、[送信](../api/channel-post-messages.md)、[読み取り](/graph/api/channel-get-message?view=graph-rest-beta) |
+|[call](/graph/api/resources/call?view=graph-rest-beta) (プレビュー) | [応答](/graph/api/call-answer?view=graph-rest-beta)、[拒否](/graph/api/call-reject?view=graph-rest-beta)、[リダイレクト](/graph/api/call-redirect?view=graph-rest-beta)、[ミュート](/graph/api/call-mute?view=graph-rest-beta)、[ミュート解除](/graph/api/call-unmute?view=graph-rest-beta)、[メタデータ更新](/graph/api/call-updatemetadata?view=graph-rest-beta)、[画面共有の役割の変更](/graph/api/call-changescreensharingrole?view=graph-rest-beta)、[参加者の一覧表示](/graph/api/call-list-participants?view=graph-rest-beta)、[参加者の招待](/graph/api/participant-invite?view=graph-rest-beta)、[すべての参加者のミュート](/graph/api/participant-muteall?view=graph-rest-beta) |
 |[schedule](/graph/api/resources/schedule?view=graph-rest-beta) (プレビュー)| [作成または置換](/graph/api/team-put-schedule?view=graph-rest-beta)、[取得](/graph/api/schedule-get?view=graph-rest-beta)、[共有](/graph/api/schedule-share?view=graph-rest-beta) |
 |[schedulingGroup](/graph/api/resources/schedulinggroup?view=graph-rest-beta) (プレビュー)| [作成](/graph/api/schedule-post-schedulinggroups?view=graph-rest-beta)、[一覧表示](/graph/api/schedule-list-schedulinggroups?view=graph-rest-beta)、[取得](/graph/api/schedulinggroup-get?view=graph-rest-beta)、[置換](/graph/api/schedulinggroup-put?view=graph-rest-beta)、[削除](/graph/api/schedulinggroup-delete?view=graph-rest-beta) |
 |[シフト](/graph/api/resources/shift?view=graph-rest-beta)(プレビュー)| [作成](/graph/api/schedule-post-shifts?view=graph-rest-beta)、[一覧表示](/graph/api/schedule-list-shifts?view=graph-rest-beta)、[取得](/graph/api/shift-get?view=graph-rest-beta)、[置換](/graph/api/shift-put?view=graph-rest-beta)、[削除](/graph/api/shift-delete?view=graph-rest-beta) |

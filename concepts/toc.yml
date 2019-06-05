@@ -274,6 +274,8 @@ items:
             href: permissions-reference.md
           - name: アプリケーション アクセス (CPS) の管理
             href: auth-cloudsolutionprovider.md
+          - name: メールボックス アクセスの制限
+            href: auth-limit-mailbox-access.md
       - name: API の使用
         items:
           - name: 概要
