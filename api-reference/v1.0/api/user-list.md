@@ -4,12 +4,12 @@ description: ユーザー オブジェクトの一覧を取得します。
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b7326796ec45e0cb628be954e3f82f317096fb51
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: fb519c1fa613b420581576099687096ec6aaa6f0
+ms.sourcegitcommit: 624ac42e74533a9bf0d0d22b3b15adbb258fd594
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33601532"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34709440"
 ---
 # <a name="list-users"></a>ユーザーを一覧表示する
 
@@ -35,11 +35,11 @@ GET /users
 
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 
-既定では、限定的なプロパティのセットのみが返されます (_businessPhones、displayName、givenName、id、jobTitle、mail、mobilePhone、officeLocation、preferredLanguage、surname、userPrincipalName_)。 
+既定では、限定的なプロパティのセットのみが返されます (**businessPhones**、**displayName**、**givenName**、**id**、**jobTitle**、**mail**、**mobilePhone**、**officeLocation**、**preferredLanguage**、**surname**、および **userPrincipalName**)。 
 
-別のプロパティ セットを返すには、OData `$select` クエリ パラメーターを使用して、目的の [user](../resources/user.md) プロパティのセットを指定する必要があります。 たとえば、_displayName_、_givenName_、_postalCode_ を返すには、クエリに `$select=displayName,givenName,postalCode` を追加します。
+別のプロパティ セットを返すには、OData `$select` クエリ パラメーターを使用して、目的の [user](../resources/user.md) プロパティのセットを指定します。 たとえば、**displayName**、**givenName**、**postalCode** を返すには、クエリ `$select=displayName,givenName,postalCode` に次を追加します。
 
-> 注意: 特定のプロパティは、ユーザー コレクションでは返すことができません。[単一のユーザーを取得する](./user-get.md)場合にのみ、_aboutMe、birthday、hireDate、interests、mySite、pastProjects, preferredName、responsibilities、schools、skills、mailboxSettings_ の各プロパティがサポートされます。
+特定のプロパティは、ユーザー コレクションでは返すことができません。[単一のユーザーを取得する](./user-get.md)場合にのみ、**aboutMe**、**birthday**、**hireDate**、**interests**、**mySite**、**pastProjects**、**preferredName**、**responsibilities**、**schools**、**skills**、**mailboxSettings** の各プロパティがサポートされます。
 
 ## <a name="request-headers"></a>要求ヘッダー
 
@@ -54,13 +54,13 @@ GET /users
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [user](../resources/user.md) オブジェクトのコレクションを返します。
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [user](../resources/user.md) オブジェクトのコレクションを返します。 大きいユーザー コレクションが返された場合は、[アプリでページング](/graph/paging)を使用することができます。
 
 ## <a name="examples"></a>例
 
 ### <a name="example-1-standard-users-request"></a>例 1:標準的なユーザーの要求
 
-既定では、限定的なプロパティのセットのみが返されます (_businessPhones、displayName、givenName、id、jobTitle、mail、mobilePhone、officeLocation、preferredLanguage、surname、userPrincipalName_)。 この例では、既定の要求と応答を示します。 
+既定では、限定的なプロパティのセットのみが返されます (**businessPhones**、**displayName**、**givenName**、**id**、**jobTitle**、**mail**、**mobilePhone**、**officeLocation**、**preferredLanguage**、**surname**、**userPrincipalName**)。 この例では、既定の要求と応答を示します。 
 
 ##### <a name="request"></a>要求
 
@@ -118,7 +118,7 @@ Content-length: 608
 
 ### <a name="example-2-users-request-using-select"></a>例 2:$select を使用したユーザーの要求
 
-別のプロパティ セットを必要とする場合、OData `$select` クエリ パラメーターを使用することができます。 たとえば、_displayName_、_givenName_、_postalCode_ を返すには、クエリに `$select=displayName,givenName,postalCode` を追加します。
+別のプロパティ セットを必要とする場合、OData `$select` クエリ パラメーターを使用することができます。 たとえば、**displayName**、**givenName**、**postalCode** を返すには、クエリに `$select=displayName,givenName,postalCode` を追加します。
 
 ##### <a name="request"></a>要求
 
