@@ -3,12 +3,12 @@ title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 763491bf5359eda58a1802b172d269151a647f59
-ms.sourcegitcommit: 895a03cb2706a9b3a2236b30d6a7e9f5cbc6a89e
+ms.openlocfilehash: 35b06f195b7d21b5eb3228f909823b085f44e5ff
+ms.sourcegitcommit: 624ac42e74533a9bf0d0d22b3b15adbb258fd594
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34683574"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34709454"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
@@ -26,6 +26,14 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | 追加        | ベータ版        | [ユーザー](/graph/api/resources/user?view=graph-rest-beta) エンティティに [unfollowSite](/graph/api/unfollow-site?view=graph-rest-beta) ナビゲーション プロパティを追加しました |
 
 ## <a name="may-2019"></a>2019 年 5 月
+
+### <a name="microsoft-teams-apis"></a>Microsoft Teams API
+
+| **変更の種類** | **バージョン** | **説明**                  |
+|:----------------|:------------|:-----------------------------------------|
+| 追加        | ベータ版        | **urgent**プロパティが[chatMessageImportance](/graph/api/resources/chatMessageImportance?view=graph-rest-beta)列挙型に追加されました。|
+| 加算        | ベータ版        | **hostedContents**ナビゲーション プロパティが[chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta)エンティティに追加されました。|
+| 加算        | ベータ版        | **chatMessageHostedContent**エンティティを[chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta)に関連づけられている Microsoft Teams によってホストされるコンテンツの表記に追加されました。 |
 
 ### <a name="reports-apis"></a>レポート API
 
@@ -621,7 +629,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 |追加|ベータ版|以下の新しい列挙型を追加しました。<br/>[applicationGuardEnabledOptions](/graph/api/resources/intune-deviceconfig-applicationguardenabledoptions?view=graph-rest-beta)<br/>[autoRestartNotificationDismissalMethod](/graph/api/resources/intune-deviceconfig-autorestartnotificationdismissalmethod?view=graph-rest-beta)<br/>[meteredConnectionLimitType](/graph/api/resources/intune-deviceconfig-meteredconnectionlimittype?view=graph-rest-beta)<br/>|
 |追加|ベータ版|[deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-beta) に [enableLegacyPcManagement](/graph/api/intune-deviceconfig-devicemanagement-enablelegacypcmanagement?view=graph-rest-beta) アクションを追加しました |
 |追加|ベータ版|[windowsUpdateForBusinessConfiguration](/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-beta) に [extendFeatureUpdatesPause](/graph/api/intune-deviceconfig-windowsupdateforbusinessconfiguration-extendfeatureupdatespause?view=graph-rest-beta) アクションを追加しました |
-|追加|ベータ版|[windowsUpdateForBusinessConfiguration](/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-beta) に [extendQualityUpdatesPause](/graph/api/intune-deviceconfig-windowsupdateforbusinessconfiguration-extendqualityupdatespause?view=graph-rest-beta) アクションを追加しました |
+|加算|ベータ版|[windowsUpdateForBusinessConfiguration](/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-beta) に [extendQualityUpdatesPause](/graph/api/intune-deviceconfig-windowsupdateforbusinessconfiguration-extendqualityupdatespause?view=graph-rest-beta) アクションを追加しました |
 |追加|ベータ版|[windowsAutopilotDeviceIdentity](/graph/api/resources/intune-enrollment-windowsautopilotdeviceidentity?view=graph-rest-beta) に [unassignUserFromDevice](/graph/api/intune-enrollment-windowsautopilotdeviceidentity-unassignuserfromdevice?view=graph-rest-beta) アクションを追加しました |
 |追加|ベータ版|[deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-beta) に [getAssignedRoleIdsForLoggedInUser](/graph/api/intune-rbac-devicemanagement-getassignedroleidsforloggedinuser?view=graph-rest-beta) 関数を追加しました |
 |追加|ベータ版|[user](/graph/api/resources/intune-devices-user?view=graph-rest-beta) に [getManagedDevicesWithAppFailures](/graph/api/intune-troubleshooting-user-getmanageddeviceswithappfailures?view=graph-rest-beta) 関数を追加しました |
@@ -3160,7 +3168,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | 追加        | ベータ版        | _singleValueExtendedProperties_ プロパティと _multiValueExtendedProperties_ プロパティが追加されました。 |
 | 追加        | ベータ版        | _suggestionHint_ プロパティが _meetingTimeCandidate_ に追加されました。 |
 | 追加        | ベータ版        | _locationUri_ プロパティが _location_ に追加されました。 |
-| 追加        | ベータ版        | _type_ と _postOfficeBox_ が _physicalAddress_ に追加されました。 |
+| 加算        | ベータ版        | _type_ と _postOfficeBox_ が _physicalAddress_ に追加されました。 |
 | 変更          | ベータ版        | _findMeetingTimes_ で新しいパラメーター _ReturnSuggestionHints_ を使用するようになりました。 |
 | 変更          | ベータ版        | _findMeetingTimes_ が _meetingTimeCandidate_ のコレクションを返すようになりました。 |
 
