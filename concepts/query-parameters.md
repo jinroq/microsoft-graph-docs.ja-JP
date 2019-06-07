@@ -3,18 +3,19 @@ title: クエリ パラメーターを使用して応答をカスタマイズす
 description: Microsoft Graph にはオプションのクエリ パラメーターがあり、応答で返されるデータの量を指定したり制御したりするために使用できます。次のクエリ パラメーターがサポートされています。
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: aff7fa2cb36c1ab5a5464c09221178e2a5e88ab1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1962ee481d89ccef14d436edb41195a9b5b2529a
+ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32564170"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34750169"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>クエリ パラメーターを使用して応答をカスタマイズする
 
 Microsoft Graph はオプションのクエリ パラメーターをサポートしており、応答で返されるデータの量を指定したり制御したりするために使用できます。 正確なクエリ パラメーターのサポートは、API 操作ごとに異なり、API によっては、v1.0 とベータ版エンドポイントかでも異なることがあります。 
 
-> **注:** v1.0 とベータ版エンドポイントでは、`$` プレフィックスはオプションです。 たとえば、`filter` とせずに、`$filter` と指定することもできます。
+> [!TIP] 
+> ベータ版エンドポイントでは、`$`プレフィックスが省略可能です。 たとえば、`filter` とせずに、`$filter` と指定することもできます。 v1 エンドポイントでは、API のサブセットに対してのみ`$`プレフィックスが省略可能です。 要するに、v1 エンドポイントを使用している場合は、常に`$`が含まれます。
 
 クエリ パラメーターには、OData のシステム クエリ オプションまたは他のクエリ パラメーターを使用できます。 
 
@@ -245,12 +246,14 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 
 検索可能な電子メール プロパティ、KQL 構文、サポートされている演算子、検索のヒントなどの詳細については、次の記事を参照してください。
 
-- [Exchange の検索可能なプロパティ](https://docs.microsoft.com/ja-JP/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange)。
-
-- [キーワード クエリ言語 (KQL) 構文のリファレンス](https://docs.microsoft.com/ja-JP/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+- 
+  [Exchange の検索可能なプロパティ](https://docs.microsoft.com/ja-JP/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange)。
 
 - 
-  [Exchange 2016 におけるインプレースの電子情報開示のためのメッセージ プロパティと検索演算子](https://technet.microsoft.com/en-us/library/dn774955(v=exchg.160).aspx)
+  [キーワード クエリ言語 (KQL) 構文のリファレンス](https://docs.microsoft.com/ja-JP/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+
+- 
+  [Exchange 2016 におけるインプレースの電子情報開示のためのメッセージ プロパティと検索演算子](https://technet.microsoft.com/ja-JP/library/dn774955(v=exchg.160).aspx)
 
 ### <a name="using-search-on-person-collections"></a>人物コレクションで $search を使用する
 
