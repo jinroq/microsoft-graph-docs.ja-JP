@@ -4,12 +4,12 @@ description: クラスから教師を削除します。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 3eedc8905fb9cb902311fcd218d2df7330362116
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 35151136f38bcf1e74d958f3f48f4e6819ab73cf
+ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324766"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34750018"
 ---
 # <a name="remove-teacher"></a>教師を削除する
 
@@ -18,49 +18,62 @@ ms.locfileid: "33324766"
 クラスから教師を削除します。
 
 ## <a name="permissions"></a>アクセス許可
+
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
-|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
-|:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) |  サポートされていません。  |
-|委任 (個人用 Microsoft アカウント) |  サポートされていません。  |
-|アプリケーション | EduRoster.ReadWrite.All | 
+| アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ) |
+| :------------------------------------- | :------------------------------------------ |
+| 委任 (職場または学校のアカウント)     | サポートされていません。                              |
+| 委任 (個人用 Microsoft アカウント) | サポートされていません。                              |
+| アプリケーション                            | EduRoster.ReadWrite.All                     |
 
 ## <a name="http-request"></a>HTTP 要求
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 DELETE /education/classes/{id}/teachers/{userId}/$ref
 ```
+
 ## <a name="request-headers"></a>要求ヘッダー
-| ヘッダー       | 値 |
-|:---------------|:--------|
-| Authorization  | ベアラー {トークン}。必須。  |
+
+| ヘッダー        | 値                     |
+| :------------ | :------------------------ |
+| Authorization | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
+
 このメソッドには、要求本文を指定しません。
 
-
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `204 No Content` 応答コードと空の応答本文を返します。
 
 ## <a name="example"></a>例
+
 ##### <a name="request"></a>要求
+
 要求の例を次に示します。
+
 <!-- {
   "blockType": "request",
   "name": "create_educationclass_from_educationschool"
 }-->
+
 ```http
-DELETE https://graph.microsoft.com/beta/education/classes/<id>/teachers/14012
+DELETE https://graph.microsoft.com/beta/education/classes/{id}/teachers/14012
 ```
 
 ##### <a name="response"></a>応答
+
 応答の例を次に示します。 
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationClass"
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```

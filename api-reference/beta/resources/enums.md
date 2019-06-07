@@ -1,12 +1,12 @@
 ---
 title: 列挙値
 description: Microsoft Graph 列挙値
-ms.openlocfilehash: f553b2378f646bf367cf75515cd758dd0e37b53a
-ms.sourcegitcommit: 624ac42e74533a9bf0d0d22b3b15adbb258fd594
+ms.openlocfilehash: b9e7dac80f40739854128e874b0e1fa82c0c1844
+ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34709405"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34750170"
 ---
 ### <a name="contactrelationship-values"></a>contactRelationship 値
 
@@ -220,8 +220,7 @@ ms.locfileid: "34709405"
 |:---------------------
 | student
 | teacher
-| none
-| Unknownfuturevalue という
+| 教職員
 
 
 ### <a name="meetingmessagetype-values"></a>会議の Messagetype の値

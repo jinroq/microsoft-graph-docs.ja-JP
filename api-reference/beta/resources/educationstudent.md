@@ -4,12 +4,12 @@ description: ユーザーの primaryRole が `student` の場合に存在する 
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 9927c2fbb34dea97258c4c1ef407d60f14e2fe50
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: a7ea110437bdc553448c78b6ad16541223e7d0e9
+ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334118"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34750130"
 ---
 # <a name="educationstudent-resource-type"></a>educationStudent リソースの種類
 
@@ -22,7 +22,7 @@ ms.locfileid: "33334118"
 |:---------------|:--------|:----------|
 |birthDate|Date| 学生の生年月日。|
 |externalId|String| ソース システムの学生の ID。|
-|gender|educationGender| 使用可能な値: `female`、`male`、`other`、`unkownFutureValue`。|
+|gender|educationGender| 可能な値は、`female`、`male`、`other` です。|
 |grade|String|学生の現在の学年。|
 |graduationYear|String| 学生が学校から卒業する年。|
 |studentNumber|String| 学生番号。|

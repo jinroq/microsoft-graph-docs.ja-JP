@@ -4,12 +4,12 @@ description: 既存の割り当てを削除します。 割り当てを削除で
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 22c5e7c2795377eaeba9e8bcacc0c188ed0995ef
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 10a66116b9fb3443cce72641fd8ffb7f63d6fee0
+ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33588069"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34750039"
 ---
 # <a name="delete-educationassignment"></a>EducationAssignment の削除
 
@@ -18,35 +18,41 @@ ms.locfileid: "33588069"
 既存の割り当てを削除します。 割り当てを削除できるのは、クラス内の教師だけです。
 
 ## <a name="permissions"></a>アクセス許可
+
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
-|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
-|:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント)| EduAssignments の読み取り/書き込みの EduAssignments |
-|委任 (個人用 Microsoft アカウント) |   サポートされません。 |
-|アプリケーション | サポートされません。  | 
+| アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)             |
+| :------------------------------------- | :------------------------------------------------------ |
+| 委任 (職場または学校のアカウント)     | EduAssignments の読み取り/書き込みの EduAssignments |
+| 委任 (個人用 Microsoft アカウント) | サポートされません。                                          |
+| アプリケーション                            | サポートされません。                                          |
 
 ## <a name="http-request"></a>HTTP 要求
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /education/classes/<id>/assignments/<id>
+DELETE /education/classes/{id}/assignments/{id}
 ```
+
 ## <a name="request-headers"></a>要求ヘッダー
-| ヘッダー       | 値 |
-|:---------------|:--------|
-| Authorization  | ベアラー {トークン}。必須。  |
+
+| ヘッダー        | 値                     |
+| :------------ | :------------------------ |
+| Authorization | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
+
 このメソッドには、要求本文を指定しません。
 
-
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。
 
 ## <a name="example"></a>例
+
 ### <a name="request"></a>要求
+
 要求の例を次に示します。
 
 <!-- {
@@ -69,11 +75,15 @@ DELETE https://graph.microsoft.com/beta/education/classes/11014/assignments/1900
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+
+# <a name="ctabcs"></a>[C#](#tab/cs)
+
 [!INCLUDE [sample-code](../includes/delete_educationassignment-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/delete_educationassignment-Javascript-snippets.md)]
 
 ---

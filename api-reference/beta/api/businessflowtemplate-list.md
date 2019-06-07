@@ -1,15 +1,15 @@
 ---
-title: businessflowtemplates を一覧表示する
-description: Azure AD access レビュー機能で、すべての businessflowtemplate オブジェクトを一覧表示します。
+title: BusinessFlowTemplates を一覧表示する
+description: Azure AD access レビュー機能で、すべての businessFlowTemplate オブジェクトを一覧表示します。
 localization_priority: Normal
-ms.openlocfilehash: 3d26784caf0eb121350c7575934c4aa9dae61789
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 1cb95b9c5eda1f561aaffcc936b2c95f8a21c980
+ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322349"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34750067"
 ---
-# <a name="list-businessflowtemplates"></a>businessflowtemplates を一覧表示する
+# <a name="list-businessflowtemplates"></a>BusinessFlowTemplates を一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -19,9 +19,9 @@ Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、�
 
 |アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント)     | accessreview を参照してください。  |
+|委任 (職場または学校のアカウント)     | AccessReview を参照してください。  |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
-|アプリケーション                            | accessreview を参照してください。 |
+|アプリケーション                            | AccessReview.Read.All |
 
 また、サインインしているユーザーは、アクセスレビューを読み取ることができるようにするためのディレクトリロールにある必要があります。
 
@@ -46,10 +46,10 @@ GET /businessFlowTemplates
 
 <!-- {
   "blockType": "request",
-  "name": "get_businesFlowTemplate"
+  "name": "get_businessFlowTemplate"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/businesFlowTemplates
+GET https://graph.microsoft.com/beta/businessFlowTemplates
 ```
 
 ##### <a name="response"></a>応答
@@ -91,7 +91,7 @@ Content-type: application/json
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[accessreview を作成する](accessreview-create.md) |    [accessreview](../resources/accessreview.md) |  新しい accessreview を作成します。 |
+|[AccessReview を作成する](accessreview-create.md) |    [accessReview](../resources/accessreview.md) |  新しい accessReview を作成します。 |
 
 
 

@@ -4,12 +4,12 @@ description: '教育ユーザーの種類とユーザーのアカウントが属
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 5cf7444c51b34ae4a8eacf9c99fdfd085dbec896
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 628fbdea770c685eca0194fb95a314e2e542d2fc
+ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334269"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34750158"
 ---
 # <a name="educationidentitydomain-resource-type"></a>educationIdentityDomain リソースの種類
 
@@ -21,7 +21,7 @@ ms.locfileid: "33334269"
 
 | プロパティ | 型 | 説明 |
 |:-|:-|:-|
-| **appliesTo** | string |  ライセンスに割り当てるユーザーの役割の種類。 可能な値は、`student`、`teacher` です。      |
+| **appliesTo** | string |  ライセンスに割り当てるユーザーロールの種類。 可能な値は、`student`、`teacher`、`faculty` です。      |
 | **name** | string |  ユーザーアカウントのドメインを表します。         |
 
 ## <a name="json-representation"></a>JSON 表記

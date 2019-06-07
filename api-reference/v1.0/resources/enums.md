@@ -2,12 +2,12 @@
 title: 列挙値
 description: Microsoft Graph 列挙値。
 localization_priority: Normal
-ms.openlocfilehash: 80cd2055bb33bcafa84050f669ab9a4c8e731d55
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 4225ffa152672cd4fd12d231ea9837f11a75b0fa
+ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33599976"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34750186"
 ---
 ### <a name="contactrelationship-values"></a>contactRelationship 値
 
@@ -139,9 +139,6 @@ ms.locfileid: "33599976"
 |:---------------------
 | student
 | teacher
-| none
-| Unknownfuturevalue という
-
 
 ### <a name="meetingmessagetype-values"></a>会議の Messagetype の値
 
@@ -309,7 +306,7 @@ ms.locfileid: "33599976"
 | 自動
 | noPreview
 | checklist
-| 説明
+| description
 | reference
 
 
@@ -426,14 +423,14 @@ ms.locfileid: "33599976"
 | preset8  | 8        
 | preset9  | 9        
 | preset10 | 10       
-| preset11 | 11       
-| preset12 | 12      
+| preset11 | #      
+| preset12 | 個      
 | preset13 | スリー      
-| preset14 | 14       
-| preset15 | 15       
-| preset16 | 16       
-| preset17 | 17       
-| preset18 | 18       
+| preset14 | 第      
+| preset15 | 約      
+| preset16 | 16      
+| preset17 | インチ      
+| preset18 | 個      
 | preset19 | 年      
 | preset20 | 1280      
 | preset21 | 21      
@@ -545,7 +542,7 @@ ms.locfileid: "33599976"
 |none|8 | REG_NONE レジストリ値の種類。|
 |qword|9 | REG_QWORD レジストリ値の種類。|
 |qwordlittleEndian|10 | REG_QWORD_LITTLE_ENDIAN レジストリ値の種類。|
-|sz|11 | REG_SZ レジストリ値の種類。|
+|sz|#| REG_SZ レジストリ値の種類。|
 
 ### <a name="alertseverity-values"></a>alertSeverity 値
 
