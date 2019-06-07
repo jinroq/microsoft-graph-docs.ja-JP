@@ -4,32 +4,32 @@ description: ユーザーの primaryRole が `student` の場合に存在する 
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 9927c2fbb34dea97258c4c1ef407d60f14e2fe50
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: a7ea110437bdc553448c78b6ad16541223e7d0e9
+ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334118"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34750130"
 ---
-# <a name="educationstudent-resource-type"></a><span data-ttu-id="20dd6-103">educationStudent リソースの種類</span><span class="sxs-lookup"><span data-stu-id="20dd6-103">educationStudent resource type</span></span>
+# <a name="educationstudent-resource-type"></a><span data-ttu-id="3ce9f-103">educationStudent リソースの種類</span><span class="sxs-lookup"><span data-stu-id="3ce9f-103">educationStudent resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="20dd6-104">ユーザーの primaryRole が `student` の場合に存在する [educationUser](educationuser.md) に追加される、その他の情報。</span><span class="sxs-lookup"><span data-stu-id="20dd6-104">Additional information added to an [educationUser](educationuser.md) that is present when the primaryRole of a user is `student`.</span></span>
+<span data-ttu-id="3ce9f-104">ユーザーの primaryRole が `student` の場合に存在する [educationUser](educationuser.md) に追加される、その他の情報。</span><span class="sxs-lookup"><span data-stu-id="3ce9f-104">Additional information added to an [educationUser](educationuser.md) that is present when the primaryRole of a user is `student`.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="20dd6-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="20dd6-105">Properties</span></span>
-| <span data-ttu-id="20dd6-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="20dd6-106">Property</span></span>     | <span data-ttu-id="20dd6-107">型</span><span class="sxs-lookup"><span data-stu-id="20dd6-107">Type</span></span>   |<span data-ttu-id="20dd6-108">説明</span><span class="sxs-lookup"><span data-stu-id="20dd6-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="3ce9f-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="3ce9f-105">Properties</span></span>
+| <span data-ttu-id="3ce9f-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="3ce9f-106">Property</span></span>     | <span data-ttu-id="3ce9f-107">型</span><span class="sxs-lookup"><span data-stu-id="3ce9f-107">Type</span></span>   |<span data-ttu-id="3ce9f-108">説明</span><span class="sxs-lookup"><span data-stu-id="3ce9f-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="20dd6-109">birthDate</span><span class="sxs-lookup"><span data-stu-id="20dd6-109">birthDate</span></span>|<span data-ttu-id="20dd6-110">Date</span><span class="sxs-lookup"><span data-stu-id="20dd6-110">Date</span></span>| <span data-ttu-id="20dd6-111">学生の生年月日。</span><span class="sxs-lookup"><span data-stu-id="20dd6-111">Birth date of the student.</span></span>|
-|<span data-ttu-id="20dd6-112">externalId</span><span class="sxs-lookup"><span data-stu-id="20dd6-112">externalId</span></span>|<span data-ttu-id="20dd6-113">String</span><span class="sxs-lookup"><span data-stu-id="20dd6-113">String</span></span>| <span data-ttu-id="20dd6-114">ソース システムの学生の ID。</span><span class="sxs-lookup"><span data-stu-id="20dd6-114">ID of the student in the source system.</span></span>|
-|<span data-ttu-id="20dd6-115">gender</span><span class="sxs-lookup"><span data-stu-id="20dd6-115">gender</span></span>|<span data-ttu-id="20dd6-116">educationGender</span><span class="sxs-lookup"><span data-stu-id="20dd6-116">educationGender</span></span>| <span data-ttu-id="20dd6-117">使用可能な値: `female`、`male`、`other`、`unkownFutureValue`。</span><span class="sxs-lookup"><span data-stu-id="20dd6-117">Possible values are: `female`, `male`, `other`, `unkownFutureValue`.</span></span>|
-|<span data-ttu-id="20dd6-118">grade</span><span class="sxs-lookup"><span data-stu-id="20dd6-118">grade</span></span>|<span data-ttu-id="20dd6-119">String</span><span class="sxs-lookup"><span data-stu-id="20dd6-119">String</span></span>|<span data-ttu-id="20dd6-120">学生の現在の学年。</span><span class="sxs-lookup"><span data-stu-id="20dd6-120">Current grade level of the student.</span></span>|
-|<span data-ttu-id="20dd6-121">graduationYear</span><span class="sxs-lookup"><span data-stu-id="20dd6-121">graduationYear</span></span>|<span data-ttu-id="20dd6-122">String</span><span class="sxs-lookup"><span data-stu-id="20dd6-122">String</span></span>| <span data-ttu-id="20dd6-123">学生が学校から卒業する年。</span><span class="sxs-lookup"><span data-stu-id="20dd6-123">Year the student is graduating from the school.</span></span>|
-|<span data-ttu-id="20dd6-124">studentNumber</span><span class="sxs-lookup"><span data-stu-id="20dd6-124">studentNumber</span></span>|<span data-ttu-id="20dd6-125">String</span><span class="sxs-lookup"><span data-stu-id="20dd6-125">String</span></span>| <span data-ttu-id="20dd6-126">学生番号。</span><span class="sxs-lookup"><span data-stu-id="20dd6-126">Student Number.</span></span>|
+|<span data-ttu-id="3ce9f-109">birthDate</span><span class="sxs-lookup"><span data-stu-id="3ce9f-109">birthDate</span></span>|<span data-ttu-id="3ce9f-110">Date</span><span class="sxs-lookup"><span data-stu-id="3ce9f-110">Date</span></span>| <span data-ttu-id="3ce9f-111">学生の生年月日。</span><span class="sxs-lookup"><span data-stu-id="3ce9f-111">Birth date of the student.</span></span>|
+|<span data-ttu-id="3ce9f-112">externalId</span><span class="sxs-lookup"><span data-stu-id="3ce9f-112">externalId</span></span>|<span data-ttu-id="3ce9f-113">String</span><span class="sxs-lookup"><span data-stu-id="3ce9f-113">String</span></span>| <span data-ttu-id="3ce9f-114">ソース システムの学生の ID。</span><span class="sxs-lookup"><span data-stu-id="3ce9f-114">ID of the student in the source system.</span></span>|
+|<span data-ttu-id="3ce9f-115">gender</span><span class="sxs-lookup"><span data-stu-id="3ce9f-115">gender</span></span>|<span data-ttu-id="3ce9f-116">educationGender</span><span class="sxs-lookup"><span data-stu-id="3ce9f-116">educationGender</span></span>| <span data-ttu-id="3ce9f-117">可能な値は、`female`、`male`、`other` です。</span><span class="sxs-lookup"><span data-stu-id="3ce9f-117">Possible values are: `female`, `male`, `other`.</span></span>|
+|<span data-ttu-id="3ce9f-118">grade</span><span class="sxs-lookup"><span data-stu-id="3ce9f-118">grade</span></span>|<span data-ttu-id="3ce9f-119">String</span><span class="sxs-lookup"><span data-stu-id="3ce9f-119">String</span></span>|<span data-ttu-id="3ce9f-120">学生の現在の学年。</span><span class="sxs-lookup"><span data-stu-id="3ce9f-120">Current grade level of the student.</span></span>|
+|<span data-ttu-id="3ce9f-121">graduationYear</span><span class="sxs-lookup"><span data-stu-id="3ce9f-121">graduationYear</span></span>|<span data-ttu-id="3ce9f-122">String</span><span class="sxs-lookup"><span data-stu-id="3ce9f-122">String</span></span>| <span data-ttu-id="3ce9f-123">学生が学校から卒業する年。</span><span class="sxs-lookup"><span data-stu-id="3ce9f-123">Year the student is graduating from the school.</span></span>|
+|<span data-ttu-id="3ce9f-124">studentNumber</span><span class="sxs-lookup"><span data-stu-id="3ce9f-124">studentNumber</span></span>|<span data-ttu-id="3ce9f-125">String</span><span class="sxs-lookup"><span data-stu-id="3ce9f-125">String</span></span>| <span data-ttu-id="3ce9f-126">学生番号。</span><span class="sxs-lookup"><span data-stu-id="3ce9f-126">Student Number.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="20dd6-127">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="20dd6-127">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="3ce9f-127">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="3ce9f-127">JSON representation</span></span>
 
-<span data-ttu-id="20dd6-128">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="20dd6-128">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="3ce9f-128">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="3ce9f-128">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -7012,6 +7012,8 @@ items:
                 href: api/educationschool-post-users.md
               - name: ユーザーを削除する
                 href: api/educationschool-delete-users.md
+              - name: 差分を取得する
+                href: api/educationschool-delta.md
           - name: クラス
             href: resources/educationclass.md
             items:
@@ -7047,6 +7049,8 @@ items:
                 href: api/educationclass-list-categories.md
               - name: カテゴリを作成する
                 href: api/educationclass-post-category.md
+              - name: 差分を取得する
+                href: api/educationclass-delta.md
           - name: ユーザー
             href: resources/educationuser.md
             items:
@@ -7058,6 +7062,8 @@ items:
                 href: api/educationuser-get.md
               - name: ユーザーを削除する
                 href: api/educationuser-delete.md
+              - name: 差分を取得する
+                href: api/educationuser-delta.md
           - name: 割り当て
             href: resources/educationassignment.md
             items:
@@ -7511,7 +7517,7 @@ items:
               - name: ビジネス フロー テンプレート
                 href: resources/businessflowtemplate.md
                 items:
-                  - name: List
+                  - name: リスト
                     href: api/businessflowtemplate-list.md
               - name: プログラム
                 href: resources/program.md
@@ -7520,7 +7526,7 @@ items:
                     href: api/program-create.md
                   - name: 削除
                     href: api/program-delete.md
-                  - name: リスト
+                  - name: List
                     href: api/program-list.md
                   - name: 更新
                     href: api/program-update.md
