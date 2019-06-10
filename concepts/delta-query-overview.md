@@ -3,12 +3,12 @@ title: デルタ クエリを使用して、Microsoft Graph データの変更�
 description: デルタ クエリを使用すると、アプリケーションは、要求ごとにターゲット リソースをすべて読み取ることなく、新しく作成、更新、または削除されたエンティティを検出できます。Microsoft Graph アプリケーションはデルタ クエリを使用して、変更をローカル データ ストアと効率的に同期させることができます。
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: e0affa6f4e3edf1289d31422dcd5833a4d5b17ff
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9c040ad61902dd623ffc2010716e6a843c4d1a38
+ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526196"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34750193"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>デルタ クエリを使用して、Microsoft Graph データの変更を追跡する
 
@@ -75,21 +75,24 @@ ms.locfileid: "32526196"
 
 デルタ クエリは現在、次のリソースでサポートされています。
 
-| **リソース コレクション** | **API** |
-|:------ | :------ |
-| アプリケーション (プレビュー) | [アプリケーション](/graph/api/resources/application?view=graph-rest-beta) リソース (プレビュー) の[デルタ](/graph/api/application-delta?view=graph-rest-beta)関数 |
-| ディレクトリ オブジェクト | [ディレクトリ オブジェクト](/graph/api/resources/directoryobject?view=graph-rest-beta) リソース (プレビュー) の[デルタ](/graph/api/directoryobject-delta?view=graph-rest-beta)関数 |
-| ディレクトリ ロール | [ディレクトリ ロール](/graph/api/resources/directoryrole?view=graph-rest-1.0) リソースの[デルタ](/graph/api/directoryrole-delta?view=graph-rest-1.0)関数 |
-| 標準として設定されている予定表の予定表ビュー (期間) 内のイベント | [イベント](/graph/api/resources/event?view=graph-rest-1.0)リソースの[デルタ](/graph/api/event-delta?view=graph-rest-1.0)関数 |
-| グループ | [グループ](/graph/api/resources/group?view=graph-rest-1.0)リソースの[デルタ](/graph/api/group-delta?view=graph-rest-1.0)関数 |
-| メール フォルダー | [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-1.0) リソースの[デルタ](/graph/api/mailfolder-delta?view=graph-rest-1.0)関数 |
-| フォルダー内のメッセージ | [メッセージ](/graph/api/resources/message?view=graph-rest-1.0)リソースの[デルタ](/graph/api/message-delta?view=graph-rest-1.0)関数 |
-| 個人用連絡先フォルダー | [contactFolder](/graph/api/resources/contactfolder?view=graph-rest-1.0) リソースの[デルタ](/graph/api/contactfolder-delta?view=graph-rest-1.0)関数 |
-| フォルダー内の個人用連絡先 | [連絡先](/graph/api/resources/contact?view=graph-rest-1.0)リソースの[デルタ](/graph/api/contact-delta?view=graph-rest-1.0)関数 |
-| サービス プリンシパル (プレビュー) | [サービス プリンシパル](/graph/api/resources/serviceprincipal?view=graph-rest-beta) リソース (プレビュー) の[デルタ](/graph/api/serviceprincipal-delta?view=graph-rest-beta)関数 |
-| ユーザー | [ユーザー](/graph/api/resources/user?view=graph-rest-1.0)リソースの[デルタ](/graph/api/user-delta?view=graph-rest-1.0)関数 |
-| ドライブの項目\* | [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) リソースの[デルタ](/graph/api/driveitem-delta?view=graph-rest-1.0)関数 |
-| Planner の項目\*\* | [plannerUser](/graph/api/resources/planneruser?view=graph-rest-beta) リソースのすべてのセグメントの[デルタ](/graph/api/planneruser-list-delta?view=graph-rest-beta)関数 (プレビュー) |
+| **リソース コレクション**                                        | **API**                                                                                                                                                                                |
+| :------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| アプリケーション (プレビュー)                                         | [アプリケーション](/graph/api/resources/application?view=graph-rest-beta) リソース (プレビュー) の[デルタ](/graph/api/application-delta?view=graph-rest-beta)関数                     |
+| クラス (プレビュー)                                              | [クラス](/graph/api/resources/educationclass?view=graph-rest-beta) リソース (プレビュー) の[デルタ](/graph/api/educationclass-delta?view=graph-rest-beta)関数                     |
+| ディレクトリ オブジェクト (プレビュー)                                    | [ディレクトリ オブジェクト](/graph/api/resources/directoryobject?view=graph-rest-beta) リソース (プレビュー) の[デルタ](/graph/api/directoryobject-delta?view=graph-rest-beta)関数        |
+| ディレクトリ ロール                                                | [ディレクトリ ロール](/graph/api/resources/directoryrole?view=graph-rest-1.0) リソースの[デルタ](/graph/api/directoryrole-delta?view=graph-rest-1.0)関数                           |
+| ドライブの項目\*                                                  | [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) リソースの[デルタ](/graph/api/driveitem-delta?view=graph-rest-1.0)関数                                       |
+| 教育ユーザー (プレビュー)                                      | [教育ユーザー](/graph/api/resources/educationuser?view=graph-rest-beta)リソース (プレビュー) の[デルタ](/graph/api/educationuser-delta?view=graph-rest-beta)関数             |
+| 標準として設定されている予定表の予定表ビュー (期間) 内のイベント | [イベント](/graph/api/resources/event?view=graph-rest-1.0)リソースの[デルタ](/graph/api/event-delta?view=graph-rest-1.0)関数                                                   |
+| グループ                                                         | [グループ](/graph/api/resources/group?view=graph-rest-1.0)リソースの[デルタ](/graph/api/group-delta?view=graph-rest-1.0)関数                                                   |
+| メール フォルダー                                                   | [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-1.0) リソースの[デルタ](/graph/api/mailfolder-delta?view=graph-rest-1.0)関数                                    |
+| フォルダー内のメッセージ                                           | [メッセージ](/graph/api/resources/message?view=graph-rest-1.0)リソースの[デルタ](/graph/api/message-delta?view=graph-rest-1.0)関数                                             |
+| 個人用連絡先フォルダー                                       | [contactFolder](/graph/api/resources/contactfolder?view=graph-rest-1.0) リソースの[デルタ](/graph/api/contactfolder-delta?view=graph-rest-1.0)関数                           |
+| フォルダー内の個人用連絡先                                  | [連絡先](/graph/api/resources/contact?view=graph-rest-1.0)リソースの[デルタ](/graph/api/contact-delta?view=graph-rest-1.0)関数                                             |
+| 学校 (プレビュー)                                              | [学校](/graph/api/resources/educationschool?view=graph-rest-beta)リソース (プレビュー) の[デルタ](/graph/api/educationschool-delta?view=graph-rest-beta)関数                  |
+| サービス プリンシパル (プレビュー)                                   | [サービス プリンシパル](/graph/api/resources/serviceprincipal?view=graph-rest-beta) リソース (プレビュー) の[デルタ](/graph/api/serviceprincipal-delta?view=graph-rest-beta)関数      |
+| ユーザー                                                          | [ユーザー](/graph/api/resources/user?view=graph-rest-1.0)リソースの[デルタ](/graph/api/user-delta?view=graph-rest-1.0)関数                                                      |
+| プランナーの項目\*\*(プレビュー)                                    | [plannerUser](/graph/api/resources/planneruser?view=graph-rest-beta) リソースのすべてのセグメントの[デルタ](/graph/api/planneruser-list-delta?view=graph-rest-beta)関数 (プレビュー) |
 
 > \* OneDrive リソースの使用パターンは、他のサポートされているリソースと似ていますが、構文には若干の違いがあります。 ドライブのデルタ クエリは、他のリソースの種類との一貫性を保つために将来更新されます。 現在の構文の詳細については、 「[ドライブの変更履歴を記録する](/graph/api/driveitem-delta?view=graph-rest-1.0)」を参照してください。
 
