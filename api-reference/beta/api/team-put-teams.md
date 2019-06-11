@@ -4,39 +4,39 @@ description: グループから新しいチームを作成します。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: c47b3e7568c09c3b7f5e3debaec2eb74e074d6e7
-ms.sourcegitcommit: 9ffac53b262203917dfb20ac981e97f50d398199
+ms.openlocfilehash: 685f727a6d70f691c23e28f82ee7642d0f3a7c70
+ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/01/2019
-ms.locfileid: "34669660"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34812986"
 ---
-# <a name="create-team-from-group"></a><span data-ttu-id="fe203-103">グループからチームを作成する</span><span class="sxs-lookup"><span data-stu-id="fe203-103">Create team from group</span></span>
+# <a name="create-team-from-group"></a><span data-ttu-id="12fd6-103">グループからチームを作成する</span><span class="sxs-lookup"><span data-stu-id="12fd6-103">Create team from group</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!IMPORTANT]
-> <span data-ttu-id="fe203-104">この API は、[[チームを作成する](../api/team-post.md)] を優先して廃止中であり、2019 年末までに削除されます。</span><span class="sxs-lookup"><span data-stu-id="fe203-104">This API is in the process of being depracated in favor of [Create team](../api/team-post.md), and will be removed by the end of 2019.</span></span> <span data-ttu-id="fe203-105">グループからチームを作成する方法の詳細については、「[チームを作成する](../api/team-post.md)」の例の 4 と 5 を参照してください。</span><span class="sxs-lookup"><span data-stu-id="fe203-105">For details about how to create a team from a group, see examples 4 and 5 in [Create team](../api/team-post.md).</span></span>
+> <span data-ttu-id="12fd6-104">この API は、[[チームを作成する](../api/team-post.md)] を優先して廃止中であり、2019 年末までに削除されます。</span><span class="sxs-lookup"><span data-stu-id="12fd6-104">This API is in the process of being depracated in favor of [Create team](../api/team-post.md), and will be removed by the end of 2019.</span></span> <span data-ttu-id="12fd6-105">グループからチームを作成する方法の詳細については、「[チームを作成する](../api/team-post.md)」の例の 4 と 5 を参照してください。</span><span class="sxs-lookup"><span data-stu-id="12fd6-105">For details about how to create a team from a group, see examples 4 and 5 in [Create team](../api/team-post.md).</span></span>
 
-<span data-ttu-id="fe203-106">[グループ](../resources/group.md)から新しい[チーム](../resources/team.md)を作成します。</span><span class="sxs-lookup"><span data-stu-id="fe203-106">Create a new [team](../resources/team.md) from a [group](../resources/group.md).</span></span>
+<span data-ttu-id="12fd6-106">[グループ](../resources/group.md)から新しい[チーム](../resources/team.md)を作成します。</span><span class="sxs-lookup"><span data-stu-id="12fd6-106">Create a new [team](../resources/team.md) from a [group](../resources/group.md).</span></span>
 
-<span data-ttu-id="fe203-107">チームを作成するために、グループには少なくとも 1 人の所有者が必要です。</span><span class="sxs-lookup"><span data-stu-id="fe203-107">In order to create a team, the group must have a least one owner.</span></span>
+<span data-ttu-id="12fd6-107">チームを作成するために、グループには少なくとも 1 人の所有者が必要です。</span><span class="sxs-lookup"><span data-stu-id="12fd6-107">In order to create a team, the group must have a least one owner.</span></span>
 
-<span data-ttu-id="fe203-108">グループが作成されて 15 分以上経っていない場合は、レプリケーションの遅延のためにチーム作成の呼び出しが失敗し、404 エラー コードが表示される可能性があります。</span><span class="sxs-lookup"><span data-stu-id="fe203-108">If the group was created less than 15 minutes ago, it's possible for the Create team call to fail with a 404 error code due to replication delays.</span></span> <span data-ttu-id="fe203-109">呼び出しと呼び出しの間に 10 秒の遅延を設けて、チーム作成の呼び出しを 3 回再試行するパターンをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="fe203-109">The recommended pattern is to retry the Create team call three times, with a 10 second delay between calls.</span></span>
+<span data-ttu-id="12fd6-108">グループが作成されて 15 分以上経っていない場合は、レプリケーションの遅延のためにチーム作成の呼び出しが失敗し、404 エラー コードが表示される可能性があります。</span><span class="sxs-lookup"><span data-stu-id="12fd6-108">If the group was created less than 15 minutes ago, it's possible for the Create team call to fail with a 404 error code due to replication delays.</span></span> <span data-ttu-id="12fd6-109">呼び出しと呼び出しの間に 10 秒の遅延を設けて、チーム作成の呼び出しを 3 回再試行するパターンをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="12fd6-109">The recommended pattern is to retry the Create team call three times, with a 10 second delay between calls.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="fe203-110">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="fe203-110">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="12fd6-110">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="12fd6-110">Permissions</span></span>
 
-<span data-ttu-id="fe203-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="fe203-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="12fd6-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="12fd6-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="fe203-113">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="fe203-113">Permission type</span></span>      | <span data-ttu-id="fe203-114">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="fe203-114">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="12fd6-113">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="12fd6-113">Permission type</span></span>      | <span data-ttu-id="12fd6-114">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="12fd6-114">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="fe203-115">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="fe203-115">Delegated (work or school account)</span></span> | <span data-ttu-id="fe203-116">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fe203-116">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="fe203-117">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="fe203-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fe203-118">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="fe203-118">Not supported.</span></span>    |
-|<span data-ttu-id="fe203-119">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="fe203-119">Application</span></span> | <span data-ttu-id="fe203-120">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fe203-120">Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="12fd6-115">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="12fd6-115">Delegated (work or school account)</span></span> | <span data-ttu-id="12fd6-116">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="12fd6-116">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="12fd6-117">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="12fd6-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="12fd6-118">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="12fd6-118">Not supported.</span></span>    |
+|<span data-ttu-id="12fd6-119">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="12fd6-119">Application</span></span> | <span data-ttu-id="12fd6-120">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="12fd6-120">Group.ReadWrite.All</span></span> |
 
-> <span data-ttu-id="fe203-121">**注**: この API は、管理者のアクセス許可をサポートします。</span><span class="sxs-lookup"><span data-stu-id="fe203-121">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="fe203-122">グローバル管理者と Microsoft Teams サービス管理者は、メンバーではないグループにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="fe203-122">Global admins and Microsoft Teams service admins can access groups that they are not a member of.</span></span>
+> <span data-ttu-id="12fd6-121">**注**: この API は、管理者のアクセス許可をサポートします。</span><span class="sxs-lookup"><span data-stu-id="12fd6-121">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="12fd6-122">グローバル管理者と Microsoft Teams サービス管理者は、メンバーではないグループにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="12fd6-122">Global admins and Microsoft Teams service admins can access groups that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="fe203-123">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="fe203-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="12fd6-123">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="12fd6-123">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -44,26 +44,26 @@ ms.locfileid: "34669660"
 PUT /groups/{id}/team
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="fe203-124">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="fe203-124">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="12fd6-124">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="12fd6-124">Request headers</span></span>
 
-| <span data-ttu-id="fe203-125">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="fe203-125">Header</span></span>       | <span data-ttu-id="fe203-126">値</span><span class="sxs-lookup"><span data-stu-id="fe203-126">Value</span></span> |
+| <span data-ttu-id="12fd6-125">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="12fd6-125">Header</span></span>       | <span data-ttu-id="12fd6-126">値</span><span class="sxs-lookup"><span data-stu-id="12fd6-126">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="fe203-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="fe203-127">Authorization</span></span>  | <span data-ttu-id="fe203-p105">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="fe203-p105">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="fe203-130">Content-Type</span><span class="sxs-lookup"><span data-stu-id="fe203-130">Content-Type</span></span>  | <span data-ttu-id="fe203-131">application/json</span><span class="sxs-lookup"><span data-stu-id="fe203-131">application/json</span></span>  |
+| <span data-ttu-id="12fd6-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="12fd6-127">Authorization</span></span>  | <span data-ttu-id="12fd6-p105">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="12fd6-p105">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="12fd6-130">Content-Type</span><span class="sxs-lookup"><span data-stu-id="12fd6-130">Content-Type</span></span>  | <span data-ttu-id="12fd6-131">application/json</span><span class="sxs-lookup"><span data-stu-id="12fd6-131">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="fe203-132">要求本文</span><span class="sxs-lookup"><span data-stu-id="fe203-132">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="12fd6-132">要求本文</span><span class="sxs-lookup"><span data-stu-id="12fd6-132">Request body</span></span>
 
-<span data-ttu-id="fe203-133">要求本文で、[team](../resources/team.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="fe203-133">In the request body, supply a JSON representation of a [team](../resources/team.md) object.</span></span>
+<span data-ttu-id="12fd6-133">要求本文で、[team](../resources/team.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="12fd6-133">In the request body, supply a JSON representation of a [team](../resources/team.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="fe203-134">応答</span><span class="sxs-lookup"><span data-stu-id="fe203-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="12fd6-134">応答</span><span class="sxs-lookup"><span data-stu-id="12fd6-134">Response</span></span>
 
-<span data-ttu-id="fe203-135">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [team](../resources/team.md) オブジェクトを返す必要があります。</span><span class="sxs-lookup"><span data-stu-id="fe203-135">If successful, this method should return a `201 Created` response code and a [team](../resources/team.md) object in the response body.</span></span>
+<span data-ttu-id="12fd6-135">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [team](../resources/team.md) オブジェクトを返す必要があります。</span><span class="sxs-lookup"><span data-stu-id="12fd6-135">If successful, this method should return a `201 Created` response code and a [team](../resources/team.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="fe203-136">例</span><span class="sxs-lookup"><span data-stu-id="fe203-136">Example</span></span>
+## <a name="example"></a><span data-ttu-id="12fd6-136">例</span><span class="sxs-lookup"><span data-stu-id="12fd6-136">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="fe203-137">要求</span><span class="sxs-lookup"><span data-stu-id="fe203-137">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="12fd6-137">要求</span><span class="sxs-lookup"><span data-stu-id="12fd6-137">Request</span></span>
 
-<span data-ttu-id="fe203-138">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="fe203-138">The following is an example of the request.</span></span>
+<span data-ttu-id="12fd6-138">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="12fd6-138">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "ignored",
   "name": "create_team"
@@ -83,15 +83,18 @@ Content-type: application/json
   "funSettings": {
     "allowGiphy": true,
     "giphyContentRating": "strict"
+  },
+  "discoverySettings": {
+    "showInTeamsSearchAndSuggestions": true
   }
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="fe203-139">応答</span><span class="sxs-lookup"><span data-stu-id="fe203-139">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="12fd6-139">応答</span><span class="sxs-lookup"><span data-stu-id="12fd6-139">Response</span></span>
 
-<span data-ttu-id="fe203-140">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="fe203-140">The following is an example of the response.</span></span> 
+<span data-ttu-id="12fd6-140">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="12fd6-140">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="fe203-p106">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="fe203-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="12fd6-p106">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="12fd6-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "ignored",
   "truncated": true,
@@ -127,6 +130,9 @@ Content-length: 401
     "giphyContentRating": "strict",
     "allowStickersAndMemes": true,
     "allowCustomMemes": true
+  },
+  "discoverySettings": {
+    "showInTeamsSearchAndSuggestions": true
   }
 }
 ```
@@ -144,6 +150,6 @@ Content-length: 401
 }
 -->
 
-## <a name="see-also"></a><span data-ttu-id="fe203-143">関連項目</span><span class="sxs-lookup"><span data-stu-id="fe203-143">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="12fd6-143">関連項目</span><span class="sxs-lookup"><span data-stu-id="12fd6-143">See also</span></span>
 
-- [<span data-ttu-id="fe203-144">チームを使用してグループを作成する</span><span class="sxs-lookup"><span data-stu-id="fe203-144">Creating a group with a team</span></span>](/graph/teams-create-group-and-team)
+- [<span data-ttu-id="12fd6-144">チームを使用してグループを作成する</span><span class="sxs-lookup"><span data-stu-id="12fd6-144">Creating a group with a team</span></span>](/graph/teams-create-group-and-team)
