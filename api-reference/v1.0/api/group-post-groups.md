@@ -4,12 +4,12 @@ description: '要求本文で指定した新しいグループを作成します
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: 0a525ffffe62685e863572c0e81c808b2c6e8a02
-ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
+ms.openlocfilehash: 2416835da76345a09370169484a83bb6ac713f90
+ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34537122"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34812818"
 ---
 # <a name="create-group"></a>グループを作成する
 要求本文で指定した新しいグループを作成します。 次に示す種類のグループを作成できます。
@@ -28,9 +28,9 @@ ms.locfileid: "34537122"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Group.ReadWrite.All    |
+|委任 (職場または学校のアカウント) | Group.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All  |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | Group.ReadWrite.All |
+|アプリケーション | Group.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
