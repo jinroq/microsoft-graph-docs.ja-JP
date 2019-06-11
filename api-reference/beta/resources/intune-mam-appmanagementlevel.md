@@ -1,31 +1,31 @@
 ---
 title: appManagementLevel 列挙型
-description: アプリケーションの管理のレベル
+description: アプリの管理レベル
+author: rolyon
 localization_priority: Normal
-author: tfitzmac
 ms.prod: Intune
-ms.openlocfilehash: 90ecfc62e0838a2ba969c4625bcec87501899b4c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e8bad117814493cd9b4cc836f40a51e05e8e2bd7
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29416616"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940933"
 ---
 # <a name="appmanagementlevel-enum-type"></a>appManagementLevel 列挙型
 
-> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
-> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-アプリケーションの管理のレベル
+アプリの管理レベル
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|指定されていません|0|Unspecified|
-|アンマネージ|1|アンマネージ|
-|mdm|2|MDM|
-|androidEnterprise|4|Android エンタープライズ|
+|予測|.0|Unspecified|
+|unmanaged|1-d|Unmanaged|
+|mdm.exe|pbm-2|MDM.EXE|
+|androidEnterprise|2/4|Android Enterprise|
 
 
 
