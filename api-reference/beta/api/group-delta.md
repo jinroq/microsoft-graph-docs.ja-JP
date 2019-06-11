@@ -4,12 +4,12 @@ description: グループメンバーシップの変更を含む、新しく作�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 983ec7447a38122d971d123745c3e2cf6078ba6b
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 5d2c39b79661e5c8a841c77b74fe7c6c40b033e1
+ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33593247"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34812580"
 ---
 # <a name="group-delta"></a>group: delta
 
@@ -23,9 +23,9 @@ ms.locfileid: "33593247"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Group.Read.All、Group.ReadWrite.All    |
+|委任 (職場または学校のアカウント) | Directory.accessasuser.all。すべて、ディレクトリの読み取り、すべてのディレクトリを読み取ることができます。すべてを示します。.  |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | Group.Read.All、Group.ReadWrite.All |
+|アプリケーション | 。すべて、ディレクトリの読み取り、すべてのディレクトリの読み取り、すべてのディレクトリを取得します。 |
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -162,11 +162,11 @@ Content-type: application/json
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/group_delta-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/group_delta-Javascript-snippets.md)]
 
 ---
@@ -212,11 +212,11 @@ Content-type: application/json
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/group_delta-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/group_delta-Javascript-snippets.md)]
 
 ---

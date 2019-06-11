@@ -5,18 +5,18 @@ description: サインインしているユーザーのメールボックス内�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 2afbf190402081587de1e6ae7373ad84c8f96183
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 2e5ec3bd9518fe47840c608ee861056967ec964b
+ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33598380"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34812930"
 ---
 # <a name="list-messages"></a>メッセージを一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-サインインしているユーザーのメールボックス内のすべてのメッセージ、またはメールボックスまたはドライブ内の指定されたフォルダー内のメッセージを一覧表示します。
+指定したユーザーのメールボックス内のすべてのメッセージ、またはメールボックス内の指定されたフォルダー内のメッセージを一覧表示します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -135,11 +135,11 @@ Content-length: 317
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_messages-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_messages-Javascript-snippets.md)]
 
 ---

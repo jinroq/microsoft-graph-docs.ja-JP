@@ -4,16 +4,14 @@ description: MailSearchFolder は、指定した検索条件に一致するす�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 7f522d6d947d190232d510662dfe2c6a70001fb2
+ms.openlocfilehash: 0980a99567a93b48c4bd75ef3510c51347d8d794
 ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/10/2019
-ms.locfileid: "34812923"
+ms.locfileid: "34818683"
 ---
 # <a name="mailsearchfolder-resource-type"></a>mailSearchFolder リソースの種類
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **Mailsearchfolder**は、指定した検索条件に一致するすべての電子メールアイテムを含む、ユーザーのメールボックス内の仮想フォルダーです。 **Mailsearchfolder**は[mailfolder](mailfolder.md)から継承します。 検索フォルダーは、ユーザーの Exchange Online メールボックス内の任意のフォルダーに作成できます。 ただし、検索フォルダーが Outlook、web 用の Outlook、または Outlook Live に表示されるようにするには、 **WellKnownFolderName**フォルダー内にフォルダーを作成する必要があります。 
 

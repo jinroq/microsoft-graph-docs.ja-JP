@@ -4,12 +4,12 @@ description: 新しいチームを作成します。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: c16fd80ff61e49a3a37220c06ea6f742b73131dd
-ms.sourcegitcommit: 9ffac53b262203917dfb20ac981e97f50d398199
+ms.openlocfilehash: fec2c273e4bdd000f0237d15415e0eba8fc9bda1
+ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/01/2019
-ms.locfileid: "34669667"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34812979"
 ---
 # <a name="create-team"></a>チームを作成する
 
@@ -184,6 +184,9 @@ Content-Type: application/json
         "allowOwnerDeleteMessages": true,
         "allowTeamMentions": true,
         "allowChannelMentions": true
+    },
+    "discoverySettings": {
+        "showInTeamsSearchAndSuggestions": true
     },
     "installedApps": [
         {

@@ -4,12 +4,12 @@ description: 指定されたチームのプロパティを更新します。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 476fef32fafef0acdc51085226f5fdc659eb32e5
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: d55c9b1465da588d19f96cc6e67bab1ddd44fb55
+ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33637606"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34812937"
 ---
 # <a name="update-team"></a>チームを更新する
 
@@ -70,6 +70,9 @@ Content-length: 211
   "funSettings": {
     "allowGiphy": true,
     "giphyContentRating": "strict"
+  },
+  "discoverySettings": {
+    "showInTeamsSearchAndSuggestions": true
   }
 }
 ```
@@ -82,11 +85,11 @@ Content-length: 211
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_team-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_team-Javascript-snippets.md)]
 
 ---

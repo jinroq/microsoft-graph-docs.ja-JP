@@ -4,12 +4,12 @@ description: '[グループ](../resources/group.md)オブジェクトのプロ�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: d559fa5f4dead2601d14b6b708b5ce095b7b5055
-ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
+ms.openlocfilehash: 3285b5938b09511294f8c5e5b7963ed891f5eb47
+ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34036340"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34812545"
 ---
 # <a name="update-group"></a>グループを更新する
 
@@ -23,9 +23,9 @@ ms.locfileid: "34036340"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Group.ReadWrite.All    |
+|委任 (職場または学校のアカウント) | Group.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All  |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | Group.ReadWrite.All |
+|アプリケーション | Group.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
 

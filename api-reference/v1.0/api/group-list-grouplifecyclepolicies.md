@@ -4,12 +4,12 @@ description: グループが属する groupLifecyclePolicy オブジェクトの
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 7e17e6a0466c34f6e344bd919525a767c950acac
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 034b9d0ff3a61a976a61c19cd0be83ed49e6d1e9
+ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33614160"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34812790"
 ---
 # <a name="list-grouplifecyclepolicies"></a>List groupLifecyclePolicies
 
@@ -21,9 +21,9 @@ ms.locfileid: "33614160"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Directory.Read.All    |
+|委任 (職場または学校のアカウント) | Directory.Read.All、Directory.ReadWrite.All  |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | Directory.Read.All |
+|アプリケーション | Directory.Read.All、Directory.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -78,11 +78,11 @@ Content-length: 222
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_grouplifecyclepolicies-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_grouplifecyclepolicies-Javascript-snippets.md)]
 
 ---

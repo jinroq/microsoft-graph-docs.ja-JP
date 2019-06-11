@@ -4,18 +4,18 @@ description: 指定した mailFolder または mailSearchFolder を削除しま�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 4e8363198b3856e87ad9279d36effbc5d522bf93
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 9064febf261c240ef51dd704f98fc2e502acdd24
+ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33598407"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34812594"
 ---
 # <a name="delete-mailfolder"></a>mailFolder を削除する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指定した[mailfolder](../resources/mailfolder.md)または[Mailsearchfolder](../resources/mailsearchfolder.md)を削除します。
+指定した[Mailfolder](../resources/mailfolder.md)を削除します。 このフォルダーは、 [Mailsearchfolder](../resources/mailsearchfolder.md)にすることができます。
 
 メールフォルダーは、フォルダー ID または[既知のフォルダー名](../resources/mailfolder.md)(存在する場合) で指定できます。 
 
@@ -67,11 +67,11 @@ DELETE https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/delete_mailfolder-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/delete_mailfolder-Javascript-snippets.md)]
 
 ---

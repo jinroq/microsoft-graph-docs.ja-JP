@@ -4,16 +4,14 @@ description: この API を使用して、指定したユーザーのメール�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 05959fe291116b1e16d0108c257ab73f38805d95
+ms.openlocfilehash: 55cd832b5fb6a90e919890fb05553384e58807db
 ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/10/2019
-ms.locfileid: "34812909"
+ms.locfileid: "34818681"
 ---
 # <a name="create-mailsearchfolder"></a>MailSearchFolder を作成する
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 指定したユーザーのメールボックスに新しい[Mailsearchfolder](../resources/mailsearchfolder.md)を作成します。
 
@@ -73,7 +71,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/me/mailfolders/AQMkADYAAAIBDAAAAA==/childfolders
+POST https://graph.microsoft.com/v1.0/me/mailfolders/AQMkADYAAAIBDAAAAA==/childfolders
 Content-type: application/json
 Content-length: 159
 
@@ -102,7 +100,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('68ca8ec0-11f8-456b-a785-70d9936650d5')/mailFolders('AQMkADYAAAIBDAAAAA%3D%3D')/childFolders/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('68ca8ec0-11f8-456b-a785-70d9936650d5')/mailFolders('AQMkADYAAAIBDAAAAA%3D%3D')/childFolders/$entity",
     "@odata.type": "#microsoft.graph.mailSearchFolder",
     "id": "AAMkADYfRAAAZg1yTAAA=",
     "displayName": "Weekly digests",
@@ -119,16 +117,7 @@ Content-type: application/json
     "filterQuery": "contains(subject, 'weekly digest')"
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプル コード
-# <a name="ctabcs"></a>[C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/create_mailsearchfolder-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create_mailsearchfolder-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -140,8 +129,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/mailsearchfolder-post.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/mailsearchfolder-post.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  
   ]
 }
 -->

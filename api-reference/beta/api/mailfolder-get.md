@@ -4,12 +4,12 @@ description: メッセージ フォルダー オブジェクトのプロパテ�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 1934b9b124747e16a7c086a697713ed2f0a6116a
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 310456f05e0a853a9a0ec78d83f4fdbdca51e236
+ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33598609"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34812860"
 ---
 # <a name="get-mailfolder"></a>mailFolder を取得する
 
@@ -69,6 +69,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkAGVmMDEzM"],
   "name": "get_mailfolder"
 }-->
 
@@ -104,11 +105,11 @@ Content-type: application/json
   "wellKnownName": "inbox"
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_mailfolder-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_mailfolder-Javascript-snippets.md)]
 
 ---
@@ -123,6 +124,7 @@ Content-type: application/json
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkAGVmMDEzM"],
   "name": "get_mailSearchfolder"
 }-->
 
@@ -157,17 +159,17 @@ Content-type: application/json
   "wellKnownName": null,
   "isSupported": true,
   "includeNestedFolders": true,
-  "sourceFolderIDs": [
+  "sourceFolderIds": [
     "AAMkAGVmMDEzM"
   ],
   "filterQuery": "contains(subject, 'MyAnalytics')"
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_mailSearchfolder-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_mailSearchfolder-Javascript-snippets.md)]
 
 ---

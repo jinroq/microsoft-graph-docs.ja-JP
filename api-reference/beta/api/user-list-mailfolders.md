@@ -2,20 +2,20 @@
 title: mailFolders を一覧表示する　
 description: サインインしているユーザーのメールボックス内のすべてのメールフォルダーを取得します。
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 412297cc3e0f0e5401e3d3e004a6c255b287be97
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: af3a6970edf051da3cce2c5fc51458ea6f45a388
+ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33637242"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34812853"
 ---
 # <a name="list-mailfolders"></a>mailFolders を一覧表示する　
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-サインインしているユーザーのメールボックス内のすべてのメールフォルダーを取得します。
+サインインしているユーザーのメールボックス内のすべてのメールフォルダーを取得します (すべてのメール[検索フォルダー](../resources/mailsearchfolder.md)を含みます)。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -45,7 +45,7 @@ GET /users/{id | userPrincipalName}/mailFolders
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [MailFolder](../resources/mailfolder.md) オブジェクトのコレクションを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[mailfolder](../resources/mailfolder.md)オブジェクトのコレクションを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。
@@ -57,7 +57,7 @@ GET /users/{id | userPrincipalName}/mailFolders
 GET https://graph.microsoft.com/beta/me/mailFolders
 ```
 ##### <a name="response"></a>応答
-以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+受信トレイの下の子フォルダーである**Mailsearchfolder**を含む応答の例を次に示します。 注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -67,26 +67,102 @@ GET https://graph.microsoft.com/beta/me/mailFolders
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 232
 
 {
-  "value": [
-    {
-      "displayName": "displayName-value",
-      "parentFolderId": "parentFolderId-value",
-      "childFolderCount": 99,
-      "unreadItemCount": 99,
-      "totalItemCount": 99,
-      "id": "id-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('68ca8ec0-11f8-456b-a785-70d9936650d5')/mailFolders",
+    "value": [
+        {
+            "id": "AQMkADYAAAIBXQAAAA==",
+            "displayName": "Archive",
+            "parentFolderId": "AQMkADYAAAIBCAAAAA==",
+            "childFolderCount": 0,
+            "unreadItemCount": 0,
+            "totalItemCount": 0,
+            "wellKnownName": "archive"
+        },
+        {
+            "id": "AQMkADYAAAIBFQAAAA==",
+            "displayName": "Conversation History",
+            "parentFolderId": "AQMkADYAAAIBCAAAAA==",
+            "childFolderCount": 1,
+            "unreadItemCount": 0,
+            "totalItemCount": 0,
+            "wellKnownName": "conversationhistory"
+        },
+        {
+            "id": "AQMkADYAAAIBCgAAAA==",
+            "displayName": "Deleted Items",
+            "parentFolderId": "AQMkADYAAAIBCAAAAA==",
+            "childFolderCount": 0,
+            "unreadItemCount": 0,
+            "totalItemCount": 0,
+            "wellKnownName": "deleteditems"
+        },
+        {
+            "id": "AQMkADYAAAIBDwAAAA==",
+            "displayName": "Drafts",
+            "parentFolderId": "AQMkADYAAAIBCAAAAA==",
+            "childFolderCount": 0,
+            "unreadItemCount": 0,
+            "totalItemCount": 0,
+            "wellKnownName": "drafts"
+        },
+        {
+            "id": "AQMkADYAAAIBDAAAAA==",
+            "displayName": "Inbox",
+            "parentFolderId": "AQMkADYAAAIBCAAAAA==",
+            "childFolderCount": 1,
+            "unreadItemCount": 70,
+            "totalItemCount": 71,
+            "wellKnownName": "inbox"
+        },
+        {
+            "@odata.type": "#microsoft.graph.mailSearchFolder",
+            "id": "AAMkADYRAAAZg1yTAAA=",
+            "displayName": "Weekly digests",
+            "parentFolderId": "AQMkADYAAAIBDAAAAA==",
+            "childFolderCount": 0,
+            "unreadItemCount": 4,
+            "totalItemCount": 5,
+            "wellKnownName": null,
+            "isSupported": true,
+            "filterQuery": "contains(subject, 'weekly digest')"
+        },
+        {
+            "id": "AQMkADYAAAIBGQAAAA==",
+            "displayName": "Junk Email",
+            "parentFolderId": "AQMkADYAAAIBCAAAAA==",
+            "childFolderCount": 0,
+            "unreadItemCount": 0,
+            "totalItemCount": 0,
+            "wellKnownName": "junkemail"
+        },
+        {
+            "id": "AQMkADYAAAIBCwAAAA==",
+            "displayName": "Outbox",
+            "parentFolderId": "AQMkADYAAAIBCAAAAA==",
+            "childFolderCount": 0,
+            "unreadItemCount": 0,
+            "totalItemCount": 0,
+            "wellKnownName": "outbox"
+        },
+        {
+            "id": "AQMkADYAAAIBCQAAAA==",
+            "displayName": "Sent Items",
+            "parentFolderId": "AQMkADYAAAIBCAAAAA==",
+            "childFolderCount": 0,
+            "unreadItemCount": 0,
+            "totalItemCount": 0,
+            "wellKnownName": "sentitems"
+        }
+    ]
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_mailfolders-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_mailfolders-Javascript-snippets.md)]
 
 ---
