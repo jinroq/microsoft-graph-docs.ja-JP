@@ -1,23 +1,18 @@
 ---
 description: 自動的に生成されたファイル。 変更しない
-ms.openlocfilehash: fd46820890955e4c75d704ef914505677fe7ecdf
+ms.openlocfilehash: df033299fdf749885fa325181e5184f66d0d740a
 ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/25/2019
-ms.locfileid: "34843613"
+ms.locfileid: "34843571"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var workbookRangeFill = new WorkbookRangeFill
-{
-    Color = "#FF0000"
-};
-
-await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["Sheet1"].Range('$A$1').Format.Fill
+var user = await graphClient.Me
     .Request()
-    .UpdateAsync(workbookRangeFill);
+    .GetAsync();
 
 ```

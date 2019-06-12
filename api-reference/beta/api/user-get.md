@@ -4,12 +4,12 @@ description: ユーザー オブジェクトのプロパティとリレーショ
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c00349e0de78c83778b972dd36e7d24c7d582db1
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 3bec928759dde2d1b29cb761316b85ce594eb88f
+ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33637347"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34812951"
 ---
 # <a name="get-a-user"></a>ユーザーの取得
 
@@ -46,7 +46,10 @@ GET /users/{id | userPrincipalName}
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で[ユーザー](../resources/user.md) オブジェクトを返します。
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [user](../resources/user.md) オブジェクトを返します。
+
+このメソッドは、要求が正常に処理されたが、サーバーが関連するバックグラウンド処理を完了するのにさらに時間を必要とする場合に `202 Accepted` を返します。
+
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 

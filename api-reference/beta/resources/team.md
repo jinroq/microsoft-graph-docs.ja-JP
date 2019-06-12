@@ -4,12 +4,12 @@ description: 'Microsoft Teams のチームは、チャネルのコレクショ�
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: e158d6c0349eacae905936a82d659c8d5c0acec7
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 52837993d26b764aa8590aadec327fd3a660f104
+ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341419"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34812832"
 ---
 # <a name="team-resource-type"></a>team リソースの種類
 
@@ -39,7 +39,8 @@ Microsoft Teams のチームは、[channel](channel.md) オブジェクトのコ
 |[アプリをチームに追加する](../api/teamsappinstallation-add.md) | [teamsAppInstallation](teamsappinstallation.md) | アプリをチームに追加 (インストール) します。|
 |[チャネルにタブを追加する](../api/teamstab-add.md) | [teamsTab](../resources/teamstab.md) | タブをチームのチャネルに追加 (インストール) します。|
 |[チャネル メッセージを一覧表示する](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | [チャネルのメッセージを取得する](../api/channel-list-messages.md) |
-|[チャネル メッセージを送信する](../api/channel-post-chatmessage.md)  | [chatMessage](../resources/chatmessage.md) | [メッセージをチャネルに送信する](../api/channel-post-chatmessage.md) |
+|[チャネルでの chatMessage の作成](../api/channel-post-messages.md)  | [chatMessage](../resources/chatmessage.md) | メッセージをチャネルに送信します。 |
+|[チャネルでの chatMessage 返信の作成](../api/channel-post-messagereply.md) | [chatMessage](../resources/chatmessage.md) | チャネル内のメッセージに返信します。 |
 
 ## <a name="properties"></a>プロパティ
 
@@ -56,6 +57,7 @@ Microsoft Teams のチームは、[channel](channel.md) オブジェクトのコ
 |isArchived|Boolean|このチームが読み取り専用モードかどうか。 |
 |memberSettings|[teamMemberSettings](teammembersettings.md) |メンバーが特定のアクション (チャネルの作成、ボットの追加など) をチーム内で実行できるかどうかを構成する設定。|
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |チームでメッセージとメンションを構成する設定。|
+|discoverySettings|[teamDiscoverySettings](teamdiscoverysettings.md) |他のユーザがチームの検出可能性を構成する設定。|
 |webUrl|string (読み取り専用) | Microsoft Teams クライアントのチームに移動するハイパーリンク。 これは、Microsoft Teams クライアントでチームを右クリックし、**[Get link to team]** を選択すると作成される URL です。 この URL は不透明 blob として扱われる必要があり、また解析されません。 |
 
 ## <a name="relationships"></a>リレーションシップ
@@ -68,7 +70,8 @@ Microsoft Teams のチームは、[channel](channel.md) オブジェクトのコ
 |owners|[user](user.md)| このチームの所有者の一覧。 現時点では、アプリケーションのアクセス許可を使用してチームを作成するときに、必ず 1 つの所有者を指定してください。 ユーザー委任アクセス許可を使用するときには、所有者を指定できません (現在のユーザーが所有者になります)。 所有者は、UPN ではなくオブジェクト ID (GUID) として指定する必要があります。 |
 |operations|[teamsAsyncOperation](teamsasyncoperation.md) コレクション| このチームで実行済みまたは実行中の非同期操作です。 | 
 |schedule|[schedule](schedule.md)| このチームのシフトのスケジュール。|
-|template|[teamsTemplate](teamstemplate.md)| このチームの作成元テンプレート。 [使用可能なテンプレート](https://docs.microsoft.com/ja-JP/MicrosoftTeams/get-started-with-teams-templates)を参照してください。 |
+|template|[teamsTemplate](teamstemplate.md)| このチームの作成元テンプレート。 
+  [使用可能なテンプレート](https://docs.microsoft.com/ja-JP/MicrosoftTeams/get-started-with-teams-templates)を参照してください。 |
 
 
 ## <a name="json-representation"></a>JSON 表記
@@ -82,11 +85,12 @@ Microsoft Teams のチームは、[channel](channel.md) オブジェクトのコ
 }-->
 
 ```json
-{  
+{
   "guestSettings": {"@odata.type": "microsoft.graph.teamGuestSettings"},
   "memberSettings": {"@odata.type": "microsoft.graph.teamMemberSettings"},
   "messagingSettings": {"@odata.type": "microsoft.graph.teamMessagingSettings"},
   "funSettings": {"@odata.type": "microsoft.graph.teamFunSettings"},
+  "discoverySettings": {"@odata.type": "microsoft.graph.teamDiscoverySettings"},
   "internalId": "string",
   "isArchived": false,
   "webUrl": "string (URL)",

@@ -3,12 +3,12 @@ title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 5d6a0d92f9d41b744aaf16c746c441e25aa3c882
-ms.sourcegitcommit: 5cdd6a9dba70b54923ec3520ed9daad5f19a8dac
+ms.openlocfilehash: bae71d394cbc2dff682a4e0ce4aa93ab18c7b2d4
+ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "34730380"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34812678"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
@@ -18,22 +18,30 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 ## <a name="june-2019"></a>2019 年 6 月
 
-### <a name="directory-apis"></a>ディレクトリ API
-
-| **変更の種類** | **バージョン** | **説明**                          |
-| :-------------- | :---------- | :--------------------------------------- |
-| 追加 | v1.0 | **signInSessionsValidFromDateTime** プロパティを[ユーザー](/graph/api/resources/user?view=graph-rest-1.0) リソースに追加しました。 |
-| 加算 | v1.0 | [revokeSignInSessions](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) アクションを[ユーザー](/graph/api/resources/user?view=graph-rest-1.0) リソースに追加しました。 |
-
 ### <a name="onedrive-and-sharepoint-apis"></a>OneDrive と SharePoint の API
 
 | **変更の種類** | **バージョン** | **説明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | 追加        | ベータ版        | [ユーザー](/graph/api/resources/user?view=graph-rest-beta) エンティティに [followSite](/graph/api/follow-site?view=graph-rest-beta) ナビゲーション プロパティを追加しました |
-| 追加        | ベータ版        | [ユーザー](/graph/api/resources/user?view=graph-rest-beta) エンティティに [unfollowSite](/graph/api/unfollow-site?view=graph-rest-beta) ナビゲーション プロパティを追加しました |
+| 追加        | ベータ版        | [ユーザー](/graph/api/resources/user?view=graph-rest-beta) エンティティ セットに [unfollowSite](/graph/api/unfollow-site?view=graph-rest-beta) ナビゲーション プロパティを追加しました |
+
+### <a name="microsoft-teams-apis"></a>Microsoft Teams API
+
+| **変更の種類** | **バージョン**   | **説明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 追加 | ベータ版 | [teamDiscoverySettings](/api-reference/beta/resources/teamdiscoverysettings.md)リソースと関連メソッドが追加されました。 |
 
 ## <a name="may-2019"></a>2019 年 5 月
 
+### <a name="education-apis"></a>教育機関 API
+| 変更の種類 | バージョン | 説明                                                                                                                                                      |
+| :---------- | :------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 追加    | ベータ版    | taughtClasses が [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta) に追加されました。                                                                  |
+| 加算    | ベータ版    | [educationCourse](/graph/api/resources/educationCourse?view=graph-rest-beta) が [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta) に追加されました。 |
+| 加算    | ベータ版    | [デルタ](/graph/delta-query-overview) サポートが [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta) に追加されました。                                   |
+| 加算    | ベータ版    | [デルタ](/graph/delta-query-overview)が [educationSchool](/graph/api/resources/educationSchool?view=graph-rest-beta) に追加されました。                                       |
+| 加算    | ベータ版    | [デルタ](/graph/delta-query-overview)が [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta) に追加されました。                                         |
+| 加算    | ベータ版    | `faculty` オプションが [educationUserRole](/graph/api/resources/enums?view=graph-rest-beta#educationuserrole-values) 列挙型に追加されました。                              |
 ### <a name="microsoft-teams-apis"></a>Microsoft Teams API
 
 | **変更の種類** | **バージョン** | **説明**                  |
@@ -96,6 +104,14 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 |変更|ベータ版|[managedDeviceRemoteAction](/graph/api/resources/intune-devices-manageddeviceremoteaction?view=graph-rest-beta) 列挙型で次のプロパティの型を変更しました:<br/>**fullScan** を 2 から 3 に変更しました。<br/>**quickScan** を 3 から 4 に変更しました。<br/>**signatureUpdate** を 4 から 5 に変更しました。<br/>|
 |追加|ベータ版|[vpnAuthenticationMethod](/graph/api/resources/intune-deviceconfig-vpnauthenticationmethod?view=graph-rest-beta) 列挙型に **derivedCredential** メンバーを追加しました|
 |追加|ベータ版|[wiFiAuthenticationMethod](/graph/api/resources/intune-deviceconfig-wifiauthenticationmethod?view=graph-rest-beta) 列挙型に **derivedCredential** メンバーを追加しました|
+
+
+### <a name="outlook-mail"></a>Outlook メール
+
+| **変更の種類** | **バージョン**   | **説明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 追加 | v1.0 | [mailFolder](/graph/api/resources/mailfolder?graph-rest-1.0)エンティティのメソッドから派生し、そのメソッドをサポートする、[mailSearchFolder](/graph/api/resources/mailsearchfolder?graph-rest-1.0)エンティティが追加されました。 |
+
 
 ### <a name="risky-users-api"></a>リスクの高いユーザーの API
 
@@ -1197,7 +1213,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 |追加|ベータ版|[androidWorkProfileGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration?view=graph-rest-beta) エンティティに **workProfileBlockCamera** および **workProfileBlockCrossProfileContactsSearch** プロパティを追加しました|
 |追加|ベータ版|[defaultManagedAppProtection](/graph/api/resources/intune-mam-defaultmanagedappprotection?view=graph-rest-beta) エンティティに **thirdPartyKeyboardsBlocked** および **filterOpenInToOnlyManagedApps** プロパティを追加しました|
 |追加|ベータ版|[deviceComplianceUserOverview](/graph/api/resources/intune-deviceconfig-devicecomplianceuseroverview?view=graph-rest-beta) エンティティに **conflictCount** プロパティを追加しました|
-|追加|ベータ版|[deviceConfigurationUserOverview](/graph/api/resources/intune-deviceconfig-deviceconfigurationuseroverview?view=graph-rest-beta) エンティティに **conflictCount** プロパティを追加しました|
+|加算|ベータ版|[deviceConfigurationUserOverview](/graph/api/resources/intune-deviceconfig-deviceconfigurationuseroverview?view=graph-rest-beta) エンティティに **conflictCount** プロパティを追加しました|
 |追加|ベータ版|[deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta) エンティティに **managedDeviceCleanupSettings** プロパティを追加しました|
 |削除|ベータ版|[iosEasEmailProfileConfiguration](/graph/api/resources/intune-deviceconfig-ioseasemailprofileconfiguration?view=graph-rest-beta) エンティティから **usernameSource** プロパティを削除しました|
 |追加|ベータ版|[iosManagedAppProtection](/graph/api/resources/intune-mam-iosmanagedappprotection?view=graph-rest-beta) エンティティに **thirdPartyKeyboardsBlocked** および **filterOpenInToOnlyManagedApps** プロパティを追加しました|
@@ -2302,7 +2318,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 | 変更の種類 | バージョン | 説明                              |
 | :---------- | :------ | :--------------------------------------- |
-| 加算    | ベータ版    | 新しいエンティティを追加しました。<br/>[defaultDeviceCompliancePolicy](/graph/api/resources/intune-deviceconfig-defaultdevicecompliancepolicy?view=graph-rest-beta)<br/>[deviceConfigurationUserStateSummary](/graph/api/resources/intune-deviceconfig-deviceconfigurationuserstatesummary?view=graph-rest-beta)<br/>[deviceManagementScriptDeviceState](/graph/api/resources/intune-devicefe-devicemanagementscriptdevicestate?view=graph-rest-beta)<br/>[deviceManagementScriptRunSummary](/graph/api/resources/intune-devicefe-devicemanagementscriptrunsummary?view=graph-rest-beta)<br/>[deviceManagementScriptUserState](/graph/api/resources/intune-devicefe-devicemanagementscriptuserstate?view=graph-rest-beta)<br/>[iosUpdateDeviceStatus](/graph/api/resources/intune-deviceconfig-iosupdatedevicestatus?view=graph-rest-beta)<br/>[windowsManagedDevice](/graph/api/resources/intune-devicefe-windowsmanageddevice?view=graph-rest-beta)<br/>[windowsManagementAppHealthState](/graph/api/resources/intune-devicefe-windowsmanagementapphealthstate?view=graph-rest-beta)<br/>[windowsManagementAppHealthSummary](/graph/api/resources/intune-devicefe-windowsmanagementapphealthsummary?view=graph-rest-beta)<br/> |
+| 追加    | ベータ版    | 新しいエンティティを追加しました。<br/>[defaultDeviceCompliancePolicy](/graph/api/resources/intune-deviceconfig-defaultdevicecompliancepolicy?view=graph-rest-beta)<br/>[deviceConfigurationUserStateSummary](/graph/api/resources/intune-deviceconfig-deviceconfigurationuserstatesummary?view=graph-rest-beta)<br/>[deviceManagementScriptDeviceState](/graph/api/resources/intune-devicefe-devicemanagementscriptdevicestate?view=graph-rest-beta)<br/>[deviceManagementScriptRunSummary](/graph/api/resources/intune-devicefe-devicemanagementscriptrunsummary?view=graph-rest-beta)<br/>[deviceManagementScriptUserState](/graph/api/resources/intune-devicefe-devicemanagementscriptuserstate?view=graph-rest-beta)<br/>[iosUpdateDeviceStatus](/graph/api/resources/intune-deviceconfig-iosupdatedevicestatus?view=graph-rest-beta)<br/>[windowsManagedDevice](/graph/api/resources/intune-devicefe-windowsmanageddevice?view=graph-rest-beta)<br/>[windowsManagementAppHealthState](/graph/api/resources/intune-devicefe-windowsmanagementapphealthstate?view=graph-rest-beta)<br/>[windowsManagementAppHealthSummary](/graph/api/resources/intune-devicefe-windowsmanagementapphealthsummary?view=graph-rest-beta)<br/> |
 | 追加    | ベータ版    | 新しい複合型を追加しました。<br/>[bitLockerFixedDrivePolicy](/graph/api/resources/intune-deviceconfig-bitlockerfixeddrivepolicy?view=graph-rest-beta)<br/>[bitLockerRecoveryOptions](/graph/api/resources/intune-deviceconfig-bitlockerrecoveryoptions?view=graph-rest-beta)<br/>[bitLockerRemovableDrivePolicy](/graph/api/resources/intune-deviceconfig-bitlockerremovabledrivepolicy?view=graph-rest-beta)<br/>[deleteUserFromSharedAppleDeviceActionResult](/graph/api/resources/intune-devicefe-deleteuserfromsharedappledeviceactionresult?view=graph-rest-beta)<br/>[iosNetworkUsageRule](/graph/api/resources/intune-deviceconfig-iosnetworkusagerule?view=graph-rest-beta)<br/> |
 | 削除    | ベータ版    | 次のエンティティを削除しました。<br/>**deviceManagementScriptState**<br/> |
 | 削除    | ベータ版    | [user](/graph/api/resources/intune-devicefe-user?view=graph-rest-beta) の wipeByDeviceTag アクションを削除しました。 |
@@ -2685,7 +2701,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | 追加    | ベータ版    | [androidForWorkSettings](/graph/api/resources/intune-androidforwork-androidforworksettings?view=graph-rest-beta) に [unbind](/graph/api/intune-androidforwork-androidforworksettings-unbind?view=graph-rest-beta) アクションを追加しました |
 | 追加    | ベータ版    | [iosLobAppProvisioningConfiguration](/graph/api/resources/intune-apps-ioslobappprovisioningconfiguration?view=graph-rest-beta) に [assign](/graph/api/intune-apps-ioslobappprovisioningconfiguration-assign?view=graph-rest-beta) アクションを追加しました |
 | 追加    | ベータ版    | [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) に [recoverPasscode](/graph/api/intune-devices-manageddevice-recoverpasscode?view=graph-rest-beta) アクションを追加しました |
-| 追加    | ベータ版    | [organization](/graph/api/resources/intune-onboarding-organization?view=graph-rest-beta) に [removeApplePushNotificationCertificate](/graph/api/intune-onboarding-organization-removeapplepushnotificationcertificate?view=graph-rest-beta) アクションを追加しました |
+| 加算    | ベータ版    | [organization](/graph/api/resources/intune-onboarding-organization?view=graph-rest-beta) に [removeApplePushNotificationCertificate](/graph/api/intune-onboarding-organization-removeapplepushnotificationcertificate?view=graph-rest-beta) アクションを追加しました |
 | 追加    | ベータ版    | [iosManagedAppProtection](/graph/api/resources/intune-mam-iosmanagedappprotection?view=graph-rest-beta) に [updateMobileAppIdentifierDeployments](/graph/api/intune-mam-iosmanagedappprotection-updatemobileappidentifierdeployments?view=graph-rest-beta) アクションを追加しました |
 | 追加    | ベータ版    | [androidManagedAppProtection](/graph/api/resources/intune-mam-androidmanagedappprotection?view=graph-rest-beta) に [updateMobileAppIdentifierDeployments](/graph/api/intune-mam-androidmanagedappprotection-updatemobileappidentifierdeployments?view=graph-rest-beta) アクションを追加しました |
 | 追加    | ベータ版    | [targetedManagedAppConfiguration](/graph/api/resources/intune-mam-targetedmanagedappconfiguration?view=graph-rest-beta) に [updateMobileAppIdentifierDeployments](/graph/api/intune-mam-targetedmanagedappconfiguration-updatemobileappidentifierdeployments?view=graph-rest-beta) アクションを追加しました |
