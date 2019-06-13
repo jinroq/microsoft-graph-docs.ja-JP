@@ -4,12 +4,12 @@ description: Azure AD ユーザー アカウントを表します。directoryObj
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: bf6bb70c43f65909dd0b8bed6f75afe985529e80
-ms.sourcegitcommit: 5cdd6a9dba70b54923ec3520ed9daad5f19a8dac
+ms.openlocfilehash: c1e1cecdcf99d146b42867dae8f332b74f2c689a
+ms.sourcegitcommit: 8aaf10f7c11d1bf481e9acac19884346dbd44cb8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "34730366"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "34914694"
 ---
 # <a name="user-resource-type"></a>user リソースの種類
 
@@ -57,11 +57,10 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |[assignLicense](../api/user-assignlicense.md)|[user](user.md)|ユーザーのサブスクリプションを追加または削除します。また、サブスクリプションに関連付けられている特定のプランを有効または無効にすることもできます。|
 |[licenseDetails を一覧表示する](../api/user-list-licensedetails.md) |[licenseDetails](licensedetails.md) コレクション| licenseDetails オブジェクトのコレクションを取得します。|
 |[checkMemberGroups](../api/user-checkmembergroups.md)|String collection|グループの一覧内のメンバーシップを確認します。チェックは推移的です。|
+|[delta](../api/user-delta.md)|user コレクション| ユーザーに対する増分の変更を取得します。 |
 |[getMemberGroups](../api/user-getmembergroups.md)|String collection|ユーザーがメンバーであるすべてのグループを返します。チェックは推移的です。|
 |[getMemberObjects](../api/user-getmemberobjects.md)|String collection| ユーザーがメンバーになっているすべてのグループとディレクトリ ロールを返します。チェックは推移的です。 |
 |[reminderView](../api/user-reminderview.md)|[Reminder](reminder.md) collection|指定した開始時刻と終了時刻内の予定表のアラームの一覧を返します。|
-|[revokeSignInSessions](../api/user-revokesigninsessions.md)| なし |**signInSessionsValidFromDateTime** ユーザー プロパティを現在の日時にリセットすることで、アプリケーションに発行されたすべての更新トークンとセッション トークンを失効にします。 これにより、ユーザーは強制的にアプリケーションに再度サインインします。|
-|[delta](../api/user-delta.md)|user コレクション| ユーザーに対する増分の変更を取得します。 |
 |**オープン拡張機能**| | |
 |[オープン拡張機能を作成する](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| オープン拡張機能を作成し、新規または既存のリソースにカスタム プロパティを追加します。|
 |[オープン拡張機能を取得する](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) コレクション| 拡張機能の名前で識別されるオープン拡張機能を取得します。|
@@ -127,7 +126,6 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |schools|String collection|ユーザーが在籍した学校を列挙する一覧。|
 |showInAddressList|Boolean|Outlook グローバル アドレス一覧にこのユーザーが含まれている必要がある場合は **true**、それ以外の場合は **false**。 設定されていない場合は、**true** として扱われます。 招待マネージャーから招待されたユーザーの場合、このプロパティは **false** に設定されます。|
 |skills|String collection|ユーザーが自分のスキルを列挙する一覧。|
-|signInSessionsValidFromDateTime|DateTimeOffset| この時点よりも前に発行された更新トークンとセッション トークン (セッション Cookie) はすべて無効であり、アプリケーションが無効な更新トークンまたはセッション トークンを使用して (Microsoft Graph などの API にアクセスする目的で) 代理アクセス トークンを取得しようとすると、エラーが発生します。  この状況が発生した場合、アプリケーションは承認エンドポイントに対してリクエストを発行して新しいトークンを取得する必要があります。 読み取り専用です。 [revokeSignInSessions](../api/user-revokesigninsessions.md) を使用して再設定します。|
 |state|String|ユーザーの住所の都道府県。$filter をサポートします。|
 |streetAddress|String|ユーザーの勤務先の番地。|
 |surname|String|ユーザーの姓。$filter をサポートします。|
@@ -175,7 +173,7 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |granted|1|ユーザーがアカウントを所有することについて同意が得られています。|
 |denied|2|ユーザーがアカウントを所有することについて同意が得られていません。|
 |notRequired|3|ユーザーは、同意を必要としない場所にいます。|
- 
+
 ## <a name="relationships"></a>リレーションシップ
 
 | リレーションシップ | 型   |説明|
@@ -424,7 +422,6 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
   "responsibilities": ["string"],
   "schools": ["string"],
   "showInAddressList": true,
-  "signInSessionsValidFromDateTime": "String (timestamp)",
   "skills": ["string"],
   "state": "string",
   "streetAddress": "string",

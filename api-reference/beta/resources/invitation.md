@@ -1,21 +1,21 @@
 ---
-title: 招待マネージャー
-description: '招待マネージャーを使用して、組織に外部ユーザーを追加するための招待状を作成します。 '
+title: 招待リソースの種類
+description: 組織に外部ユーザーを追加するために使用される招待を表します。
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: aaa335717fe2e6829fdff42cee180cd9a3c4ffe2
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.openlocfilehash: bb0979954421a9b0fe1d5b119e7f060843380a06
+ms.sourcegitcommit: 8aaf10f7c11d1bf481e9acac19884346dbd44cb8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34657729"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "34914666"
 ---
-# <a name="invitation-manager"></a>招待マネージャー
+# <a name="invitation-resource-type"></a>招待リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-招待マネージャーを使用して、組織に外部ユーザーを追加するための招待状を作成します。 
+組織に外部ユーザーを追加するために使用される招待を表します。 
 
 招待処理では、次のフローが使用されます。
 

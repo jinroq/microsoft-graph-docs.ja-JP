@@ -4,12 +4,12 @@ description: 新しいユーザーを作成します。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 19388f645eeea78a4237a8085abdd17b3c819f08
-ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
+ms.openlocfilehash: 62c57763c41c034b6c93a8e0e40780a9f0ccc69b
+ms.sourcegitcommit: 8aaf10f7c11d1bf481e9acac19884346dbd44cb8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34536982"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "34914680"
 ---
 # <a name="create-user"></a>ユーザーを作成する
 
@@ -17,6 +17,9 @@ ms.locfileid: "34536982"
 
 新しいユーザーを作成します。
 要求本文に、作成するユーザーを含めます。 少なくとも、ユーザーについての必須プロパティを指定する必要があります。 必要に応じて、その他の書き込み可能なプロパティを指定することもできます。
+
+>[!NOTE]
+>外部ユーザーは、招待状を使用して作成する必要があります。 外部ユーザーの作成を有効にする必要がある場合は、「[招待](../resources/invitation.md)」を参照してください。
 
 ## <a name="permissions"></a>アクセス許可
 
