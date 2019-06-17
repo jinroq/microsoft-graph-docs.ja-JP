@@ -4,12 +4,12 @@ description: ここでは、AndroidDeviceOwnerCompliancePolicy リソースに�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a6dd9868051b3042add59b9d68474195cacbde44
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 351f939da602c19470af6eb72948a5d3f0fce2a9
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949130"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983849"
 ---
 # <a name="androiddeviceownercompliancepolicy-resource-type"></a>androidDeviceOwnerCompliancePolicy リソースの種類
 
@@ -34,7 +34,7 @@ ms.locfileid: "33949130"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
+|roleScopeTagIds|文字列コレクション|このエンティティインスタンスの範囲タグのリスト。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |id|文字列|エンティティのキー。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |description|String|管理者が指定した、デバイス構成についての説明。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
@@ -58,7 +58,7 @@ ms.locfileid: "33949130"
 |passwordPreviousPasswordCountToBlock|Int32|禁止する、以前のパスワードの数です。 有効な値は 1 から 24 までです|
 |storageRequireEncryption|Boolean|Android デバイスでの暗号化を要求します。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |scheduledActionsForRule|[deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md) コレクション|このルールのスケジュール済みのアクションのリスト ([deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承)|
@@ -107,6 +107,7 @@ ms.locfileid: "33949130"
   "storageRequireEncryption": true
 }
 ```
+
 
 
 

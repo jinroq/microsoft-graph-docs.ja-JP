@@ -4,12 +4,12 @@ description: デバイスが特定の IP ネットワーク設定を検出した
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e0f14907928e853ae94b51fcabb1a6c04955c673
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 34b781b89f9cdec6a4c3cfc366513a92ca25ba3e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941231"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979152"
 ---
 # <a name="networkipv4configurationmanagementcondition-resource-type"></a>networkIPv4ConfigurationManagementCondition リソースの種類
 
@@ -32,7 +32,7 @@ ms.locfileid: "33941231"
 |[NetworkIPv4ConfigurationManagementCondition の更新](../api/intune-fencing-networkipv4configurationmanagementcondition-update.md)|[networkIPv4ConfigurationManagementCondition](../resources/intune-fencing-networkipv4configurationmanagementcondition.md)|[NetworkIPv4ConfigurationManagementCondition](../resources/intune-fencing-networkipv4configurationmanagementcondition.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |id|文字列|管理条件の一意識別子。 作成時に割り当てられたシステム生成値。 [Managementcondition](../resources/intune-fencing-managementcondition.md)から継承します|
 |uniqueName|String|管理条件の一意の名前。 管理条件式で使用されます。 [Managementcondition](../resources/intune-fencing-managementcondition.md)から継承します|
@@ -45,10 +45,10 @@ ms.locfileid: "33941231"
 |ipV4Prefix|String|接続先の IPv4 サブネット。 例: 10.0.0.0/8|
 |ipV4Gateway|String|IPv4 ゲートウェイアドレス。 例: 10.0.0.0|
 |ipV4DHCPServer|String|アダプターの DHCP サーバーの IPv4 アドレス。|
-|ipV4DNSServerList|String collection|アダプターに対して構成されている IPv4 DNS サーバー。|
-|dnsSuffixList|String collection|現在のネットワークの有効な DNS サフィックス。 例: seattle.contoso.com|
+|ipV4DNSServerList|文字列コレクション|アダプターに対して構成されている IPv4 DNS サーバー。|
+|dnsSuffixList|文字列コレクション|現在のネットワークの有効な DNS サフィックス。 例: seattle.contoso.com|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |managementConditionStatements|[Managementconditionstatement](../resources/intune-fencing-managementconditionstatement.md)コレクション|管理条件に関連付けられている管理条件ステートメント。 [Managementcondition](../resources/intune-fencing-managementcondition.md)から継承します|
@@ -85,6 +85,7 @@ ms.locfileid: "33941231"
   ]
 }
 ```
+
 
 
 

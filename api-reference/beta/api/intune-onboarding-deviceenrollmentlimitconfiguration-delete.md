@@ -4,12 +4,12 @@ description: deviceEnrollmentLimitConfiguration を削除します。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8cc7300e2d672d50f20c9318e578a712f826ad0d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 30dce2068f484a3ba0ba60c63213d7e64c739da1
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33900259"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34981308"
 ---
 # <a name="delete-deviceenrollmentlimitconfiguration"></a>deviceEnrollmentLimitConfiguration の削除
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigu
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

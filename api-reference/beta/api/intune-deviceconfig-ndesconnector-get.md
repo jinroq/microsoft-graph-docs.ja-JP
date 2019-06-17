@@ -4,12 +4,12 @@ description: NdesConnector オブジェクトのプロパティとリレーシ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5082de51a32e97220140e6e1b04193ded0ccab51
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6ade7ff4fca8f6f13fec65c7eb6910f3bf017451
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33922769"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34976387"
 ---
 # <a name="get-ndesconnector"></a>NdesConnector の取得
 
@@ -77,6 +77,7 @@ Content-Length: 261
   }
 }
 ```
+
 
 
 

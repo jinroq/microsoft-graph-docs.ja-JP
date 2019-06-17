@@ -4,12 +4,12 @@ description: まだ文書化されていません
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 74ec161af73ac0193bfdaba964147976e73c2635
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: fe6c488a64cb6cb4f31c7b979b001adbd80b6708
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33905358"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34984059"
 ---
 # <a name="getmanagementconditionstatementexpressionstring-function"></a>getManagementConditionStatementExpressionString 関数
 
@@ -72,6 +72,7 @@ Content-Length: 126
   }
 }
 ```
+
 
 
 

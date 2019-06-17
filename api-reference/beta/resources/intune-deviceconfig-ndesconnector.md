@@ -4,12 +4,12 @@ description: OnPrem Ndes コネクタを表すエンティティ。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4e0f8c4d59a668354e81b04bd84342b0354138a5
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 894a96d68e1b835aa92f206b7694df734d0bcdb2
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950789"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34982498"
 ---
 # <a name="ndesconnector-resource-type"></a>ndesConnector リソースの種類
 
@@ -36,7 +36,7 @@ OnPrem Ndes コネクタを表すエンティティ。
 |state|[Ndesコネクタ状態](../resources/intune-deviceconfig-ndesconnectorstate.md)|Ndes Connector の状態。 可能な値は、`none`、`active`、`inactive` です。|
 |displayName|String|Ndes Connector のフレンドリ名。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -56,6 +56,7 @@ OnPrem Ndes コネクタを表すエンティティ。
   "displayName": "String"
 }
 ```
+
 
 
 

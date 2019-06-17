@@ -4,12 +4,12 @@ description: デバイス管理スクリプトのデバイスの実行状態の�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 18e9e78898671d2c64381f7c3f4fa597ca862456
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3a6517f0dea1bac5219d7aa9d5e4158ea5bea8ec
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33942116"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995330"
 ---
 # <a name="devicemanagementscriptdevicestate-resource-type"></a>deviceManagementScriptDeviceState リソースの種類
 
@@ -29,7 +29,7 @@ ms.locfileid: "33942116"
 |[DeviceManagementScriptDeviceState の更新](../api/intune-devices-devicemanagementscriptdevicestate-update.md)|[deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md)|[Devicemanagementscriptdevicestate](../resources/intune-devices-devicemanagementscriptdevicestate.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|デバイス管理スクリプトのデバイス状態エンティティのキー。|
 |runState|[runState](../resources/intune-shared-runstate.md)|デバイス管理スクリプトの最新の実行の状態。 可能な値は、`unknown`、`success`、`fail` です。|
@@ -38,7 +38,7 @@ ms.locfileid: "33942116"
 |errorCode|Int32|デバイス管理スクリプトの誤った実行に対応するエラーコード。|
 |errorDescription|String|デバイス管理スクリプトの誤った実行に対応するエラーの説明。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |managedDevice|[managedDevice](../resources/intune-devices-manageddevice.md)|デバイス管理スクリプトを実行する管理対象デバイス。|
@@ -62,6 +62,7 @@ ms.locfileid: "33942116"
   "errorDescription": "String"
 }
 ```
+
 
 
 

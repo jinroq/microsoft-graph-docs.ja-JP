@@ -4,12 +4,12 @@ description: 特定のデバイスに関する、デバイスのコンプライ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2176876460e7f146e86fb0d29ac995766e1ee84a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 63d73fbf584daeda20de327c1b62a9ccaf38b3ac
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947065"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995463"
 ---
 # <a name="devicecompliancesettingstate-resource-type"></a>deviceComplianceSettingState リソース タイプ
 
@@ -45,7 +45,7 @@ ms.locfileid: "33947065"
 |state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|設定のコンプライアンス状態。 可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|デバイス コンプライアンスの猶予期間が過ぎる DateTime|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -74,6 +74,7 @@ ms.locfileid: "33947065"
   "complianceGracePeriodExpirationDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

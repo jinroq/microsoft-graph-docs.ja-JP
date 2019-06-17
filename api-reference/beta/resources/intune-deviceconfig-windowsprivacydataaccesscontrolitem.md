@@ -4,12 +4,12 @@ description: プライバシーデータカテゴリごとにアクセス制御�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 08a7624cb0ec3058ed694ca55984c16ff362d8c5
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 29e1ef015212974b363155299fcce012ba3d50e6
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943740"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996479"
 ---
 # <a name="windowsprivacydataaccesscontrolitem-resource-type"></a>windowsPrivacyDataAccessControlItem リソースの種類
 
@@ -37,7 +37,7 @@ ms.locfileid: "33943740"
 |App・パッケージ Efamilyname|String|Windows アプリのパッケージファミリ名。 設定すると、指定したアプリケーションにアクセスレベルが適用されます。|
 |appDisplayName|String|Windows アプリのパッケージファミリ名。 設定すると、指定したアプリケーションにアクセスレベルが適用されます。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -58,6 +58,7 @@ ms.locfileid: "33943740"
   "appDisplayName": "String"
 }
 ```
+
 
 
 

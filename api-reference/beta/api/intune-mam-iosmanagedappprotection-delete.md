@@ -4,12 +4,12 @@ description: iosManagedAppProtection を削除します。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7d2f36927b6da661622ea30a22af260525a9e1bb
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 9dc9242b643fc45a2c216996bcf4b9cdf21e3245
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33903776"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986222"
 ---
 # <a name="delete-iosmanagedappprotection"></a>Delete iosManagedAppProtection
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtect
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

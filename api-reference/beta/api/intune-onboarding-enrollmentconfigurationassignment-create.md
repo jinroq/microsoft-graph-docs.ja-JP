@@ -4,12 +4,12 @@ description: 新しい enrollmentConfigurationAssignment オブジェクトを�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 16a316a0f6c06080c3962749242ed01073dc23f7
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0f31529ed7cfb377ce1950ab308782ccfdceb389
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33900048"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34980930"
 ---
 # <a name="create-enrollmentconfigurationassignment"></a>enrollmentConfigurationAssignment の作成
 
@@ -90,6 +90,7 @@ Content-Length: 222
   }
 }
 ```
+
 
 
 

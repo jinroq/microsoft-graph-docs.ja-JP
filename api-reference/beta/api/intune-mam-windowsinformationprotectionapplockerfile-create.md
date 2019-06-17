@@ -4,12 +4,12 @@ description: 新しい windowsInformationProtectionAppLockerFile オブジェク
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ad14be8ae66c48a66899d9ab8c5590d847aa7a77
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0d5393fdbf68de218cd146817f68afbd125fa70d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33902963"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987433"
 ---
 # <a name="create-windowsinformationprotectionapplockerfile"></a>windowsInformationProtectionAppLockerFile の作成
 
@@ -98,6 +98,7 @@ Content-Length: 260
   "version": "Version value"
 }
 ```
+
 
 
 

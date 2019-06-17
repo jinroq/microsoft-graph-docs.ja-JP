@@ -4,12 +4,12 @@ description: ADMX の dropdownList 要素と ADMX enum 要素を表します。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 44c3188dda2235ea820a48a78ecfccbb9b66d70f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: af9746ecba0b92bd68d7f0bd4765f4fe022864ba
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941122"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34982925"
 ---
 # <a name="grouppolicypresentationdropdownlist-resource-type"></a>groupPolicyPresentationDropdownList リソースの種類
 
@@ -32,7 +32,7 @@ ADMX の dropdownList 要素と ADMX enum 要素を表します。
 |[GroupPolicyPresentationDropdownList の更新](../api/intune-grouppolicy-grouppolicypresentationdropdownlist-update.md)|[groupPolicyPresentationDropdownList](../resources/intune-grouppolicy-grouppolicypresentationdropdownlist.md)|[Grouppolicypresentationdropdownlist](../resources/intune-grouppolicy-grouppolicypresentationdropdownlist.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |label|String|任意のプレゼンテーションエンティティのローカライズされたテキストラベル。 既定値は空白です。 [GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
 |id|String|エンティティのキー。 [GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
@@ -41,7 +41,7 @@ ADMX の dropdownList 要素と ADMX enum 要素を表します。
 |items|[Grouppolicypresentationdropdownlistitem](../resources/intune-grouppolicy-grouppolicypresentationdropdownlistitem.md)コレクション|ローカライズされた表示名とそれに関連する値のセットを表します。|
 |必須|Boolean|[パラメーター] ボックスに値を入力する必要があります。 既定値は false です。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |definition|[groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|プレゼンテーションに関連付けられたグループポリシーの定義。 [GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
@@ -75,6 +75,7 @@ ADMX の dropdownList 要素と ADMX enum 要素を表します。
   "required": true
 }
 ```
+
 
 
 

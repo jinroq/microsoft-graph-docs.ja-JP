@@ -4,12 +4,12 @@ description: 新しい mobileAppDependency オブジェクトを作成します�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3a272a9c39262b6dd14c8d118f8c50e615d92583
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a2b5114c8732567217b3636455550f0697edff6b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935148"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34973965"
 ---
 # <a name="create-mobileappdependency"></a>MobileAppDependency を作成する
 
@@ -95,6 +95,7 @@ Content-Length: 260
   "dependentAppCount": 1
 }
 ```
+
 
 
 

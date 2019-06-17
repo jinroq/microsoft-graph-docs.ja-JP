@@ -4,12 +4,12 @@ description: Windows 情報保護の DataRecoveryCertificate
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8dcdd83346072a6f2946060a68064989b44ca3eb
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 32a18b25209301e3aeb62aaeaf63f080955cf669
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940604"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994532"
 ---
 # <a name="windowsinformationprotectiondatarecoverycertificate-resource-type"></a>windowsInformationProtectionDataRecoveryCertificate リソースの種類
 
@@ -27,7 +27,7 @@ Windows 情報保護の DataRecoveryCertificate
 |expirationDateTime|DateTimeOffset|データ回復証明書の有効期限日時|
 |certificate|バイナリ型 (Binary)|データ回復証明書|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -46,6 +46,7 @@ Windows 情報保護の DataRecoveryCertificate
   "certificate": "binary"
 }
 ```
+
 
 
 

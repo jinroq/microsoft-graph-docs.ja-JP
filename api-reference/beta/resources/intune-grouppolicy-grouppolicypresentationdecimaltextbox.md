@@ -4,12 +4,12 @@ description: ADMX decimalTextBox 要素と ADMX の decimal 要素を表しま�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b65d0fb23231fa1e06edfc8e6c053cfa681cb006
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 07f35a01611f1812d35a2a9c35643650241fa007
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941094"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34982932"
 ---
 # <a name="grouppolicypresentationdecimaltextbox-resource-type"></a>groupPolicyPresentationDecimalTextBox リソースの種類
 
@@ -32,7 +32,7 @@ ADMX decimalTextBox 要素と ADMX の decimal 要素を表します。
 |[GroupPolicyPresentationDecimalTextBox の更新](../api/intune-grouppolicy-grouppolicypresentationdecimaltextbox-update.md)|[groupPolicyPresentationDecimalTextBox](../resources/intune-grouppolicy-grouppolicypresentationdecimaltextbox.md)|[GroupPolicyPresentationDecimalTextBox](../resources/intune-grouppolicy-grouppolicypresentationdecimaltextbox.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |label|String|任意のプレゼンテーションエンティティのローカライズされたテキストラベル。 既定値は空白です。 [GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
 |id|String|エンティティのキー。 [GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
@@ -44,7 +44,7 @@ ADMX decimalTextBox 要素と ADMX の decimal 要素を表します。
 |minValue|Int64|最小許容値を指定する符号なし整数。 既定値は 0 です。|
 |maxValue|Int64|最大許容値を指定する符号なし整数。 既定値は9999です。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |definition|[groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|プレゼンテーションに関連付けられたグループポリシーの定義。 [GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
@@ -71,6 +71,7 @@ ADMX decimalTextBox 要素と ADMX の decimal 要素を表します。
   "maxValue": 1024
 }
 ```
+
 
 
 

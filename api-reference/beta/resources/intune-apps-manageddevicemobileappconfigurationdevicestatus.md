@@ -4,12 +4,12 @@ description: デバイスの MDM モバイルアプリ構成状態のプロパ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: beab4f406b36a8d350b37c73738bf0bd18447c45
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 24f0275c9606e570db7b56685169667940cb79e3
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950114"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989540"
 ---
 # <a name="manageddevicemobileappconfigurationdevicestatus-resource-type"></a>managedDeviceMobileAppConfigurationDeviceStatus リソースの種類
 
@@ -41,7 +41,7 @@ ms.locfileid: "33950114"
 |lastReportedDateTime|DateTimeOffset|ポリシー レポートの最終変更日時。|
 |userPrincipalName|String|UserPrincipalName。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -66,6 +66,7 @@ ms.locfileid: "33950114"
   "userPrincipalName": "String"
 }
 ```
+
 
 
 

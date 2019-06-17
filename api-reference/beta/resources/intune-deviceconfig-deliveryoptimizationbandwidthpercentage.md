@@ -4,12 +4,12 @@ description: 割合として指定された帯域幅制限。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bae3771f6c0d8d13edda7bed3d7968da48e042db
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 482dd1ee20e28a3ae9f5982d144d19a9143123af
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947282"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979677"
 ---
 # <a name="deliveryoptimizationbandwidthpercentage-resource-type"></a>deliveryOptimizationBandwidthPercentage リソースの種類
 
@@ -30,7 +30,7 @@ ms.locfileid: "33947282"
 |maximumForegroundBandwidthPercentage|Int32|利用可能なダウンロード帯域幅 (0-100) の割合として、すべての同時ダウンロードアクティビティにおいて配信の最適化で使用されるフォアグラウンドの最大ダウンロード帯域幅を指定します。 有効な値は 0 から 100 までです
 既定値の 0 (ゼロ) は、配信の最適化が、フォアグラウンドダウンロードに使用可能な帯域幅を使用するように動的に調整されることを意味します。 有効な値は 0 から 100 までです|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -47,6 +47,7 @@ ms.locfileid: "33947282"
   "maximumForegroundBandwidthPercentage": 1024
 }
 ```
+
 
 
 

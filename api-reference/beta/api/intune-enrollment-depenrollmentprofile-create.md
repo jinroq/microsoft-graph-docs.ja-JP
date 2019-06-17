@@ -4,12 +4,12 @@ description: 新しい depEnrollmentProfile オブジェクトを作成します
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 95e2e615eecd77df4a82c18905543ba029e331f6
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a2d8e603d30d30a59547e44b289b4f5a9efb9a5d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33908946"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979096"
 ---
 # <a name="create-depenrollmentprofile"></a>DepEnrollmentProfile を作成する
 
@@ -185,6 +185,7 @@ Content-Length: 1403
   "enableSharedIPad": true
 }
 ```
+
 
 
 

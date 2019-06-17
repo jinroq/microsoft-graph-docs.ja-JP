@@ -4,12 +4,12 @@ description: ActiveDirectoryWindowsAutopilotDeploymentProfile オブジェクト
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c736c465ce3b78f4cd79170b6a1f6d7718ae6f9d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0b2a45e0fa86e54aef6e42503866d19fc3d6a90c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33908981"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979145"
 ---
 # <a name="update-activedirectorywindowsautopilotdeploymentprofile"></a>ActiveDirectoryWindowsAutopilotDeploymentProfile の更新
 
@@ -64,7 +64,7 @@ PATCH /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevice
 |deviceNameTemplate|String|自動操縦デバイスの名前を指定するときに使用するテンプレートを指定します。 これはカスタムテキストにすることができ、デバイスのシリアル番号またはランダムに生成された番号のいずれかを含めることもできます。 テンプレートによって生成されるテキストの合計の長さは、15文字以下でなければなりません。 [WindowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)から継承します。|
 |deviceType|[windowsAutopilotDeviceType](../resources/intune-enrollment-windowsautopilotdevicetype.md)|このプロファイルを適用できる自動操縦デバイスの種類。 [WindowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)から継承されます。 可能な値は、`windowsPc`、`surfaceHub2` です。|
 |Enableホワイトグローブ|Boolean|プロファイルの自動操縦白の手袋を有効にします。 [WindowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)から継承します。|
-|roleScopeTagIds|String collection|プロファイルのスコープタグ。 [WindowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)から継承します。|
+|roleScopeTagIds|文字列コレクション|プロファイルのスコープタグ。 [WindowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)から継承します。|
 
 
 
@@ -157,6 +157,7 @@ Content-Length: 1339
   ]
 }
 ```
+
 
 
 

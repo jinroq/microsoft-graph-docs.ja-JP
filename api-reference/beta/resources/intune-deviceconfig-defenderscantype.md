@@ -4,12 +4,12 @@ description: システムスキャンの種類として使用できる値。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4253438d61775b86133dc70f7cc06a25be679aa3
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a40025c55db6c77db3ba793fca29d833965bfca8
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947324"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979782"
 ---
 # <a name="defenderscantype-enum-type"></a>defenderScanType 列挙型
 
@@ -26,6 +26,7 @@ ms.locfileid: "33947324"
 |党|1-d|システムスキャンが無効になります。|
 |概要|pbm-2|クイックシステムスキャン。|
 |完全|1/3|完全なシステムスキャン。|
+
 
 
 

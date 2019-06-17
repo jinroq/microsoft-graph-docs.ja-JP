@@ -4,12 +4,12 @@ description: Apple Vpp トークントラブルシューティングイベント
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8ac3a2595d3dca48c059e0d61a6a8d9f6fbbe992
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 66fde3fafad097ed59b30de279efe13b358984b8
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939694"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34988203"
 ---
 # <a name="applevpptokentroubleshootingevent-resource-type"></a>りんご Evpptokenのトラブルシューティングイベントリソースの種類
 
@@ -42,7 +42,7 @@ Apple Vpp トークントラブルシューティングイベントを表すイ�
 |additionalInformation|[keyValuePair](../resources/intune-shared-keyvaluepair.md) コレクション|[Devicemanagementトラブルシューティングイベント](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)から継承されたトラブルシューティングイベントに関する追加情報を提供する文字列キーと文字列値のペアのセット。|
 |tokenId|String|Apple Volume purchase Program のトークン識別子です。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -84,6 +84,7 @@ Apple Vpp トークントラブルシューティングイベントを表すイ�
   "tokenId": "String"
 }
 ```
+
 
 
 

@@ -4,18 +4,18 @@ description: テナント組織のリソースアクセス証明書を管理す�
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: c2af10e3f45e59ec9bac83fb71a8220e37e769c2
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ed680af82eb041e93cf73cb6ed3c390b989d8bc3
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939939"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996261"
 ---
 # <a name="manage-resource-access-certificates-in-intune"></a>Intune でリソースアクセス証明書を管理する
 
 > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでは、これらの API の使用はサポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing)を持っている必要があります。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 Microsoft Graph API for Intune を使用して、PFX 証明書をインポートできます。
 

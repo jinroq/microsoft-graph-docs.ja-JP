@@ -4,12 +4,12 @@ description: サポートされているすべての Powershell スクリプト�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a2c18e0fa5f6b200a017203fd8320e0b895e8a47
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 894dc61909f17244e3325675e198520cae5657ab
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949564"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987335"
 ---
 # <a name="win32lobapppowershellscriptdetectiontype-enum-type"></a>win32LobAppPowerShellScriptDetectionType 列挙型
 
@@ -29,6 +29,7 @@ ms.locfileid: "33949564"
 |浮動小数点数|2/4|出力データの種類は float です。|
 |バージョン|5|出力データの種類はバージョンです。|
 |ブール値|シックス|Output データ型はブール値です。|
+
 
 
 

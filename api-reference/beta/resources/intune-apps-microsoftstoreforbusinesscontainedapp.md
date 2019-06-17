@@ -4,12 +4,12 @@ description: Microsoft Storeforbusinessapp の含まれているアプリを表�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6cb07075e3313cfd2232bebdeca2f06fef2a991e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 164a355e1e2719a4ce467c93748686eceeee2e1a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950019"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986159"
 ---
 # <a name="microsoftstoreforbusinesscontainedapp-resource-type"></a>microsoftStoreForBusinessContainedApp リソースの種類
 
@@ -37,7 +37,7 @@ Microsoft Storeforbusinessapp の含まれているアプリを表すクラス�
 |id|String|エンティティのキー。 [MobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)から継承します。|
 |appUserModelId|String|Microsoft Storeforbusinessapp の含まれているアプリのアプリケーションユーザーモデル ID。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -55,6 +55,7 @@ Microsoft Storeforbusinessapp の含まれているアプリを表すクラス�
   "appUserModelId": "String"
 }
 ```
+
 
 
 

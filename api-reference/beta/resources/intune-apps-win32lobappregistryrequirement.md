@@ -4,12 +4,12 @@ description: Win32 アプリを検出するためのレジストリプロパテ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3bd6f5e64953f71bcea6ed5e6e06205213bba58b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6a75e30c0cc84f9e775f4ee304e27eacb42b409f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949536"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34975806"
 ---
 # <a name="win32lobappregistryrequirement-resource-type"></a>win32LobAppRegistryRequirement リソースの種類
 
@@ -32,7 +32,7 @@ Win32 アプリを検出するためのレジストリプロパティが含ま�
 |valueName|String|レジストリ値の名前|
 |detectionType|[win32LobAppRegistryDetectionType](../resources/intune-apps-win32lobappregistrydetectiontype.md)|レジストリデータ検出の種類。 使用可能な値: `notConfigured`、`exists`、`doesNotExist`、`string`、`integer`、`version`。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -53,6 +53,7 @@ Win32 アプリを検出するためのレジストリプロパティが含ま�
   "detectionType": "String"
 }
 ```
+
 
 
 

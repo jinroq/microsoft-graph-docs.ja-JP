@@ -4,12 +4,12 @@ description: カスタムサブジェクトの別名定義
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cf3c7a8e675c41056b1c5450b83394951b2ceab4
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5c00361a62315f250c0f839338f5e7a3fe3914c3
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947403"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979978"
 ---
 # <a name="customsubjectalternativename-resource-type"></a>Customsubjectoff・ベンダーのリソースの種類
 
@@ -25,7 +25,7 @@ ms.locfileid: "33947403"
 |sanType|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|カスタム SAN の種類。 可能な値は、`none`、`emailAddress`、`userPrincipalName`、`customAzureADAttribute`、`domainNameService` です。|
 |name|String|ユーザー設定の SAN 名|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -42,6 +42,7 @@ ms.locfileid: "33947403"
   "name": "String"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: カスタム設定の保存用のキーと値のペア
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cc34bad30ff5bc33f60e6ec4e561e6644b97cc37
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ed0df0d07c21ea41aaad5eb9aac993b35ca28f8c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33938661"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995974"
 ---
 # <a name="keyvaluepair-resource-type"></a>keyValuePair リソースの種類
 
@@ -25,7 +25,7 @@ ms.locfileid: "33938661"
 |name|String|キーと値のペアの名前|
 |value|文字列型 (String)|キーと値のペアの値|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -42,6 +42,7 @@ ms.locfileid: "33938661"
   "value": "String"
 }
 ```
+
 
 
 

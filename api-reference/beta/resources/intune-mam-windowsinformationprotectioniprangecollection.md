@@ -4,12 +4,12 @@ description: Windows 情報保護の IP 範囲のコレクション
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: de20421b16eae22130508584b8483085d49ac9d9
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 1d6246cfc80e2ecb9d71ce45e333e09bf35521af
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940520"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994455"
 ---
 # <a name="windowsinformationprotectioniprangecollection-resource-type"></a>windowsInformationProtectionIPRangeCollection リソースの種類
 
@@ -25,7 +25,7 @@ Windows 情報保護の IP 範囲のコレクション
 |displayName|String|表示名|
 |範囲|[ipRange](../resources/intune-shared-iprange.md) コレクション|IP 範囲のコレクション|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -48,6 +48,7 @@ Windows 情報保護の IP 範囲のコレクション
   ]
 }
 ```
+
 
 
 

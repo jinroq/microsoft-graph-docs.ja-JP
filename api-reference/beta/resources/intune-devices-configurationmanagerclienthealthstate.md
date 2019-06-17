@@ -4,12 +4,12 @@ description: 構成マネージャーのクライアントの正常性の状態
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0e0ed47d34f8f3d749ccab7d2788528c9b12679f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 618282f2a061ec8327ff93d1af441e088523260b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943012"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983240"
 ---
 # <a name="configurationmanagerclienthealthstate-resource-type"></a>configurationManagerClientHealthState リソースの種類
 
@@ -26,7 +26,7 @@ ms.locfileid: "33943012"
 |errorCode|Int32|失敗状態のエラーコード。|
 |lastSyncDateTime|DateTimeOffset|Configuration manager 管理ポイントとの前回の同期を示す Datetime。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -44,6 +44,7 @@ ms.locfileid: "33943012"
   "lastSyncDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

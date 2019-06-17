@@ -4,12 +4,12 @@ description: Windows 情報保護 AppLocker ファイル
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 73dcd00aa9672184376f3c91cec715aae4ab0bf4
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 4b1f865662d7e67895e8fa75028210afd2658a91
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940625"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994553"
 ---
 # <a name="windowsinformationprotectionapplockerfile-resource-type"></a>windowsInformationProtectionAppLockerFile リソースの種類
 
@@ -37,7 +37,7 @@ Windows 情報保護 AppLocker ファイル
 |id|文字列|エンティティのキー。|
 |version|String|エンティティのバージョン。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -58,6 +58,7 @@ Windows 情報保護 AppLocker ファイル
   "version": "String"
 }
 ```
+
 
 
 

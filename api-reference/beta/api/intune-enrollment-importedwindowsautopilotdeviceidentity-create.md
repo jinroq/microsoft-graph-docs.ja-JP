@@ -4,12 +4,12 @@ description: 新規で importedWindowsAutopilotDeviceIdentity オブジェクト
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2dcd78ce37bdc4718bb69ed324ab34c12d2c7096
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e9580f8da9118a1f920e790cab61f560360cc753
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33908421"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34981777"
 ---
 # <a name="create-importedwindowsautopilotdeviceidentity"></a>Create importedWindowsAutopilotDeviceIdentity
 
@@ -117,6 +117,7 @@ Content-Length: 694
   "assignedUserPrincipalName": "Assigned User Principal Name value"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: まだ文書化されていません
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d72ac447570a540178816ebc337b490e96db140f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: aee85a811b03c67a14d960846c044fe78f9db7d8
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950040"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986145"
 ---
 # <a name="microsoftstoreforbusinesslicensetype-enum-type"></a>Microsoft Storeforbusinesslicensetype 列挙型
 
@@ -24,6 +24,7 @@ ms.locfileid: "33950040"
 |:---|:---|:---|
 |オフライン|.0|まだ文書化されていません|
 |オンライン|1-d|まだ文書化されていません|
+
 
 
 

@@ -4,12 +4,12 @@ description: GroupPolicyPresentationValueList オブジェクトのプロパテ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f67132a085e982668c3fb9a3a8020a6ce748f265
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f798499366bcfb9f83743ef1008433625b9508ce
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33904336"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34985536"
 ---
 # <a name="get-grouppolicypresentationvaluelist"></a>GroupPolicyPresentationValueList の取得
 
@@ -83,6 +83,7 @@ Content-Length: 435
   }
 }
 ```
+
 
 
 

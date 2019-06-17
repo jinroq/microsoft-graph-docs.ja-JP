@@ -4,12 +4,12 @@ description: デバイスが特定の IP ネットワーク設定を検出した
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 460977c45b34526c417dbc61360a33bed66f33d7
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 665bbd4cb27d533a230614a2712943c23d1b3d76
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941206"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979138"
 ---
 # <a name="networkipv6configurationmanagementcondition-resource-type"></a>networkIPv6ConfigurationManagementCondition リソースの種類
 
@@ -33,7 +33,7 @@ IPv6 DHCP サーバーのアドレスが一致しない可能性があります�
 |[NetworkIPv6ConfigurationManagementCondition の更新](../api/intune-fencing-networkipv6configurationmanagementcondition-update.md)|[networkIPv6ConfigurationManagementCondition](../resources/intune-fencing-networkipv6configurationmanagementcondition.md)|[NetworkIPv6ConfigurationManagementCondition](../resources/intune-fencing-networkipv6configurationmanagementcondition.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |id|文字列|管理条件の一意識別子。 作成時に割り当てられたシステム生成値。 [Managementcondition](../resources/intune-fencing-managementcondition.md)から継承します|
 |uniqueName|String|管理条件の一意の名前。 管理条件式で使用されます。 [Managementcondition](../resources/intune-fencing-managementcondition.md)から継承します|
@@ -45,10 +45,10 @@ IPv6 DHCP サーバーのアドレスが一致しない可能性があります�
 |アプリケーションのプラットフォーム|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)コレクション|この管理条件の適用可能なプラットフォーム。 [Managementcondition](../resources/intune-fencing-managementcondition.md)から継承します|
 |ipV6Prefix|String|接続先の IPv6 サブネット。 例: 2001 年: db8::/32|
 |ipV6Gateway|String|IPv6 ゲートウェイアドレス。 例: 2001 年: db8:: 1|
-|ipV6DNSServerList|String collection|アダプターに対して構成された IPv6 DNS サーバー。|
-|dnsSuffixList|String collection|現在のネットワークの有効な DNS サフィックス。 例: seattle.contoso.com|
+|ipV6DNSServerList|文字列コレクション|アダプターに対して構成された IPv6 DNS サーバー。|
+|dnsSuffixList|文字列コレクション|現在のネットワークの有効な DNS サフィックス。 例: seattle.contoso.com|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |managementConditionStatements|[Managementconditionstatement](../resources/intune-fencing-managementconditionstatement.md)コレクション|管理条件に関連付けられている管理条件ステートメント。 [Managementcondition](../resources/intune-fencing-managementcondition.md)から継承します|
@@ -84,6 +84,7 @@ IPv6 DHCP サーバーのアドレスが一致しない可能性があります�
   ]
 }
 ```
+
 
 
 

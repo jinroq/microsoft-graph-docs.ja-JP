@@ -4,12 +4,12 @@ description: 定期的なデバイス管理スクリプトの日単位の実行�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cf0f5b59992a862b88ae663b45b6ae910ac4ba82
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 85fb83f92e7be874708190aec81e7130f65d3424
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33942963"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983188"
 ---
 # <a name="dailyschedule-resource-type"></a>dailySchedule リソースの種類
 
@@ -27,7 +27,7 @@ ms.locfileid: "33942963"
 |:---|:---|:---|
 |interval|Int32|日数で指定した間隔|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -43,6 +43,7 @@ ms.locfileid: "33942963"
   "interval": 1024
 }
 ```
+
 
 
 

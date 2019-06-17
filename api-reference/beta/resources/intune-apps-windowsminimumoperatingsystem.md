@@ -4,12 +4,12 @@ description: Windows モバイル アプリに必要な最小オペレーティ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2620ac5de3f2aa098a2fc6f5e380e74a99ce42b9
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 87acbc3c2c696f505f7da920a6919dd60e07ed84
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949810"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34975675"
 ---
 # <a name="windowsminimumoperatingsystem-resource-type"></a>windowsMinimumOperatingSystem リソースの種類
 
@@ -29,8 +29,10 @@ Windows モバイル アプリに必要な最小オペレーティング シス�
 |v10_1703|Boolean|Windows 10 1703 以降。|
 |v10_1709|Boolean|Windows 10 1709 以降。|
 |v10_1803|Boolean|Windows 10 1803 以降。|
+|v10_1809|Boolean|Windows 10 1809 以降。|
+|v10_1903|Boolean|Windows 10 1903 以降。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -49,9 +51,12 @@ Windows モバイル アプリに必要な最小オペレーティング シス�
   "v10_1607": true,
   "v10_1703": true,
   "v10_1709": true,
-  "v10_1803": true
+  "v10_1803": true,
+  "v10_1809": true,
+  "v10_1903": true
 }
 ```
+
 
 
 

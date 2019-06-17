@@ -4,12 +4,12 @@ description: WindowsProtectionState オブジェクトのプロパティとリ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bba601f4edc0f4ff3aafe11f4f10f93faea34528
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6022e883b3c229f1f06ebdb116e9b8f2fe00e8d9
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33909072"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34978376"
 ---
 # <a name="get-windowsprotectionstate"></a>WindowsProtectionState の取得
 
@@ -92,6 +92,7 @@ Content-Length: 971
   }
 }
 ```
+
 
 
 

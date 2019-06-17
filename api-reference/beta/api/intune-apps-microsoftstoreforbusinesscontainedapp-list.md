@@ -4,12 +4,12 @@ description: MicrosoftStoreForBusinessContainedApp オブジェクトのプロ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: afdd279f6649b14866a8dee8aaf1a4576c4964f4
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6d1dcedf1d30e938d357911fdb003b7ce8c5ee7f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935413"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34974301"
 ---
 # <a name="list-microsoftstoreforbusinesscontainedapps"></a>リスト microsoftStoreForBusinessContainedApps
 
@@ -76,6 +76,7 @@ Content-Length: 221
   ]
 }
 ```
+
 
 
 

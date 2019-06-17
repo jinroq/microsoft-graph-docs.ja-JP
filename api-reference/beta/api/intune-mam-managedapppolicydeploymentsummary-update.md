@@ -4,12 +4,12 @@ description: managedAppPolicyDeploymentSummary オブジェクトのプロパテ
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 76640cb56e889f23a7d436723d77a233b0ca8b55
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ba1199f5914968d661b4d2dbf68323fc5e28f5cd
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33903566"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986467"
 ---
 # <a name="update-managedapppolicydeploymentsummary"></a>managedAppPolicyDeploymentSummary の更新
 
@@ -119,6 +119,7 @@ Content-Length: 637
   "version": "Version value"
 }
 ```
+
 
 
 

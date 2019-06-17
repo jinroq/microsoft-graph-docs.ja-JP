@@ -4,12 +4,12 @@ description: Android デバイス所有者のシステム更新の種類。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cf2fe7e489c2e0bf0bb6233db6145d8563052ab5
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2beb0b2eba9c7c67a04d141ecff1463d4ae550ef
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949095"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983765"
 ---
 # <a name="androiddeviceownersystemupdateinstalltype-enum-type"></a>androidDeviceOwnerSystemUpdateInstallType 列挙型
 
@@ -26,6 +26,7 @@ Android デバイス所有者のシステム更新の種類。
 |延期|1-d|更新プログラムの自動インストールを最大30日間延期します。|
 |ウィンドウ|pbm-2|毎日のメンテナンス期間内に自動的にインストールします。|
 |自動|1/3|可能な限り早く、更新プログラムを自動的にインストールします。|
+
 
 
 

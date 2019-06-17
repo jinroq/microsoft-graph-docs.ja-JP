@@ -4,12 +4,12 @@ description: このエンティティにはデータが含まれており、こ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0c2cdd45d04f205597fb30a5c27dca39ac89b1ac
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2beeedc1481a4ac01277b31a310fc7f9f30c261a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33938591"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983555"
 ---
 # <a name="intunebrandingprofile-resource-type"></a>intuneBrandingProfile リソースの種類
 
@@ -30,33 +30,34 @@ ms.locfileid: "33938591"
 |[assign アクション](../api/intune-wip-intunebrandingprofile-assign.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |id|文字列|プロファイルキー|
 |profileName|String|プロファイルの名前|
 |profileDescription|String|プロファイルの説明|
-|isDefaultProfile|Boolean|既定でプロファイルが使用されているかどうかを示します。|
-|createdDateTime|DateTimeOffset|BrandingProfile が作成されたとき。|
-|lastModifiedDateTime|DateTimeOffset|BrandingProfile が最後に変更された日時。|
-|displayName|String|エンド ユーザーに表示される会社名または組織名。|
-|contactITName|String|IT サポートを担当する個人名または組織名。|
-|contactITPhoneNumber|String|IT サポートを担当する個人または組織の電話番号。|
-|contactITEmailAddress|String|IT サポートを担当する個人または組織のメール アドレス。|
-|contactITNotes|String|IT サポートを担当する個人または組織に関するテキスト コメント。|
-|privacyUrl|String|会社または組織のプライバシー ポリシーの URL。|
-|onlineSupportSiteUrl|String|会社または組織の IT ヘルプデスク サイトの URL。|
-|onlineSupportSiteName|String|会社または組織の IT ヘルプデスク サイトの表示名。|
-|themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|会社のポータル アプリケーションと Web ポータルで使用する主要なテーマの色。|
-|showLogo|Boolean|管理者が指定したロゴ画像が表示されるかどうかを表すブール値。|
-|showDisplayNameNextToLogo|Boolean|管理者が指定した表示名がロゴ画像のとなりに表示されるかどうかを表すブール値。|
-|themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|テーマの色の背景にある、ポータルサイトアプリに表示されるロゴ画像。|
-|lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|明るい背景上に会社のポータルアプリに表示されるロゴ画像。|
+|isDefaultProfile|Boolean|プロファイルが既定として使用されるかどうかを表すブール値|
+|createdDateTime|DateTimeOffset|BrandingProfile が作成された時刻|
+|lastModifiedDateTime|DateTimeOffset|BrandingProfile が最後に変更された時刻|
+|displayName|String|エンドユーザーに表示される会社名または組織名|
+|contactITName|String|IT サポートを担当する個人または組織の名前|
+|contactITPhoneNumber|String|IT サポートを担当する個人または組織の電話番号|
+|contactITEmailAddress|String|IT サポートを担当する個人または組織の電子メールアドレス|
+|contactITNotes|String|IT サポートを担当する個人または組織に関するテキストコメント|
+|privacyUrl|String|会社/組織のプライバシーポリシーの URL|
+|onlineSupportSiteUrl|String|会社または組織の IT ヘルプデスクサイトへの URL|
+|onlineSupportSiteName|String|会社/組織の IT ヘルプデスクサイトの表示名|
+|themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|会社のポータルアプリケーションと web ポータルで使用される主要なテーマの色|
+|showLogo|Boolean|管理者が指定したロゴ画像が表示されるかどうかを表すブール値|
+|showDisplayNameNextToLogo|Boolean|管理者が指定した表示名がロゴ画像の隣に表示されるかどうかを表すブール値|
+|themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|ロゴの背景色がテーマになっている、ポータルサイトアプリに表示されるロゴ画像|
+|lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|ロゴの背景が明るい、ポータルサイトアプリに表示されるロゴ画像|
 |landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|会社のポータルアプリのランディングページに表示されるカスタマイズ画像|
+|customPrivacyMessage|String|デバイスで管理者がアクセスできる内容に関するテキストコメント|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
-|assignments|[intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md)コレクション|ブランド化プロファイルのグループの割り当てのリスト。|
+|assignments|[intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md)コレクション|ブランド化プロファイルのグループ割り当ての一覧|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
@@ -105,9 +106,11 @@ ms.locfileid: "33938591"
     "@odata.type": "microsoft.graph.mimeContent",
     "type": "String",
     "value": "binary"
-  }
+  },
+  "customPrivacyMessage": "String"
 }
 ```
+
 
 
 

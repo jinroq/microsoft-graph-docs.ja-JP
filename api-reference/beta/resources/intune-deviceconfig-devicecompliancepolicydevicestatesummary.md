@@ -4,12 +4,12 @@ description: まだ文書化されていません
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6643fbcb7abe0dab5c7a72b8f78e7e7282aee4b6
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6a1343abb5c460dab504e1f56b21b1b0d1185186
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947135"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979453"
 ---
 # <a name="devicecompliancepolicydevicestatesummary-resource-type"></a>deviceCompliancePolicyDeviceStateSummary リソースの種類
 
@@ -39,7 +39,7 @@ ms.locfileid: "33947135"
 |errorDeviceCount|Int32|エラー デバイスの数|
 |conflictDeviceCount|Int32|競合デバイスの数|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -65,6 +65,7 @@ ms.locfileid: "33947135"
   "conflictDeviceCount": 1024
 }
 ```
+
 
 
 

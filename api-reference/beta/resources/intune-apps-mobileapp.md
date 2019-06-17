@@ -4,12 +4,12 @@ description: Intune モバイル アプリの基本プロパティを含む抽�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d4bc14b517068ba8427389d09dace8945ebbd1b0
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 1d937495f44fc511b260ee6feb322043bcf9cff7
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950033"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986138"
 ---
 # <a name="mobileapp-resource-type"></a>mobileApp リソースの種類
 
@@ -31,7 +31,7 @@ Intune モバイル アプリの基本プロパティを含む抽象クラスで
 |[Getの Appstates 関数](../api/intune-apps-mobileapp-getrelatedappstates.md)|[mobileAppRelationshipState](../resources/intune-apps-mobileapprelationshipstate.md)コレクション|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |id|文字列|エンティティのキー。|
 |displayName|文字列|管理者が提供またはインポートしたアプリのタイトルです。|
@@ -49,10 +49,10 @@ Intune モバイル アプリの基本プロパティを含む抽象クラスで
 |uploadState|Int32|アップロード状態。|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 可能な値は、`notPublished`、`processing`、`published` です。|
 |isAssigned|Boolean|アプリが少なくとも1つのグループに割り当てられているかどうかを示す値。|
-|roleScopeTagIds|String collection|このモバイルアプリの範囲タグ id のリスト。|
+|roleScopeTagIds|文字列コレクション|このモバイルアプリの範囲タグ id のリスト。|
 |dependentAppCount|Int32|子アプリが持つ依存関係の合計数。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |categories|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) コレクション|このアプリのカテゴリのリストです。|
@@ -99,6 +99,7 @@ Intune モバイル アプリの基本プロパティを含む抽象クラスで
   "dependentAppCount": 1024
 }
 ```
+
 
 
 

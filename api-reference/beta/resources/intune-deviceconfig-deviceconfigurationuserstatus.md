@@ -4,12 +4,12 @@ description: まだ文書化されていません
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 68d608f60ed213e6e9f5a0cfdcdd3e724c31bd24
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0336a3442fde3b64943ec24b7a54f17146420828
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947023"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995876"
 ---
 # <a name="deviceconfigurationuserstatus-resource-type"></a>deviceConfigurationUserStatus リソースの種類
 
@@ -38,7 +38,7 @@ ms.locfileid: "33947023"
 |lastReportedDateTime|DateTimeOffset|ポリシー レポートの最終変更日時。|
 |userPrincipalName|String|UserPrincipalName。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -60,6 +60,7 @@ ms.locfileid: "33947023"
   "userPrincipalName": "String"
 }
 ```
+
 
 
 

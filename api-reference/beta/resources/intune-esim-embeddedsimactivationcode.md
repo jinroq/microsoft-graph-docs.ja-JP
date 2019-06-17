@@ -4,12 +4,12 @@ description: 携帯電話会社から提供された、埋め込まれた SIM �
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d1e12a25db0beb124d00b2523607b40e899b4a01
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c96bc6530de0e8e6d1fde95fa71ffb6f1bdedb18
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941339"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994882"
 ---
 # <a name="embeddedsimactivationcode-resource-type"></a>embeddedSIMActivationCode リソースの種類
 
@@ -23,13 +23,13 @@ ms.locfileid: "33941339"
 |プロパティ|型|説明|
 |:---|:---|:---|
 |integratedCircuitCardIdentifier|String|携帯電話会社が提供する、この組み込み SIM アクティブ化コードの Ic カード識別子 (ICCID)。
-入力は、次の正規表現に一致して\[いる\]{19}\[必要\]があります。 ' ^ 0-9 0-9 ? $ '。|
+入力は、次の正規表現に一致して\[いる\]{19}\[必要\]があります: ' ^ 0-9 0-9? $ '。|
 |matchingIdentifier|String|GSMA Association MatchingIdentifier (MatchingID) セクション4.1 で指定されているように、()。
 入力は、次の正規表現に一致する必要\[があります: ' ^ ZA\-\]-Z0-9 * $ '。|
 |smdpPlusServerAddress|String|GSM Association SPG .22 RSP Technical 仕様で指定されているとおりに、SM-DP + サーバーの完全修飾ドメイン名。
 入力は、次の正規表現に一致している\[必要があります: ' ^\](zA-\[Z0-\]9 +)\.*) +\[a-zA-Z\]{2,}$ '。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -47,6 +47,7 @@ ms.locfileid: "33941339"
   "smdpPlusServerAddress": "String"
 }
 ```
+
 
 
 

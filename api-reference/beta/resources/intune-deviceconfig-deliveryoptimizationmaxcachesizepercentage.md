@@ -4,12 +4,12 @@ description: 配信の最適化最大キャッシュサイズの割合の種類�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2c010c66aeb1dc9a8830927cf9ddb031833ba304
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3f80634e421b7106bee5f9a1b369e22c3b4e6155
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947247"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979579"
 ---
 # <a name="deliveryoptimizationmaxcachesizepercentage-resource-type"></a>deliveryOptimizationMaxCacheSizePercentage リソースの種類
 
@@ -27,7 +27,7 @@ ms.locfileid: "33947247"
 |:---|:---|:---|
 |maximumCacheSizePercentage|Int32|配信の最適化で利用できる最大キャッシュサイズを指定します。ディスクサイズの割合 (1-100) で指定します。 有効な値は 1 ~ 100|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -43,6 +43,7 @@ ms.locfileid: "33947247"
   "maximumCacheSizePercentage": 1024
 }
 ```
+
 
 
 

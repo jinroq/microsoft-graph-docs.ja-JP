@@ -4,12 +4,12 @@ description: Win32 アプリを検出するための PowerShell スクリプト�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 440f86e0056c45f325a9a9bd88f737a91c8efb2a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 4cc28f3344bf22e263623c068ae93008a20db557
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949676"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987328"
 ---
 # <a name="win32lobapppowershellscriptdetection-resource-type"></a>win32LobAppPowerShellScriptDetection リソースの種類
 
@@ -29,7 +29,7 @@ Win32 アプリを検出するための PowerShell スクリプトのプロパ�
 |runAs32Bit|Boolean|このスクリプトを32ビットとして実行する必要があるかどうかを示す値。|
 |scriptContent|String|Win32 基幹業務 (LoB) アプリを検出するための、base64 でエンコードされたスクリプトの内容|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -47,6 +47,7 @@ Win32 アプリを検出するための PowerShell スクリプトのプロパ�
   "scriptContent": "String"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 割り当てから除外するグループを表します。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 93e271ff5628a6b5fc57333c5044bfce34376558
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 90130188fdc77f925765807cf2bae5e3680b75d8
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33938907"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996121"
 ---
 # <a name="exclusiongroupassignmenttarget-resource-type"></a>exclusionGroupAssignmentTarget リソースの種類
 
@@ -27,7 +27,7 @@ ms.locfileid: "33938907"
 |:---|:---|:---|
 |groupId|文字列型 (String)|割り当てのターゲットとなるグループ ID です。 [groupAssignmentTarget](../resources/intune-shared-groupassignmenttarget.md) からの継承|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -43,6 +43,7 @@ ms.locfileid: "33938907"
   "groupId": "String"
 }
 ```
+
 
 
 

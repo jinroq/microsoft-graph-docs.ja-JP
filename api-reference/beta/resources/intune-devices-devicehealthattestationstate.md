@@ -4,12 +4,12 @@ description: まだ文書化されていません
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bd44dc4e2eb953d09d72f5058139cbf66a08acb9
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f6804fe21403c53472a3da4cb521d54da3dbb9d6
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33942095"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983044"
 ---
 # <a name="devicehealthattestationstate-resource-type"></a>deviceHealthAttestationState リソース タイプ
 
@@ -55,7 +55,7 @@ ms.locfileid: "33942095"
 |healthStatusMismatchInfo|String|この属性は、DHA サービスが整合性の問題を検出した場合に表示されます|
 |healthAttestationSupportedStatus|String|この属性は、DHA がデバイス向けにサポートされているかどうかを示します|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -102,6 +102,7 @@ ms.locfileid: "33942095"
   "healthAttestationSupportedStatus": "String"
 }
 ```
+
 
 
 

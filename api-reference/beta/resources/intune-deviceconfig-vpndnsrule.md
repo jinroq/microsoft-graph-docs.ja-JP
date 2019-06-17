@@ -4,12 +4,12 @@ description: VPN DNS ルールの定義。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bdb362bcbf672f491e22e2ee7d69a7e5c243e812
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 9f2188efc73201aabf98267a77fee96b9c60de9d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944615"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996338"
 ---
 # <a name="vpndnsrule-resource-type"></a>vpnDnsRule リソースの種類
 
@@ -23,12 +23,12 @@ VPN DNS ルールの定義。
 |プロパティ|型|説明|
 |:---|:---|:---|
 |name|String|拡張子.|
-|サーバ|String collection|サーバ.|
+|サーバ|文字列コレクション|サーバ.|
 |proxyServerUri|String|プロキシサーバーの Uri。|
 |autoTrigger|Boolean|デバイスがこのドメインに接続されている場合は、自動的に VPN に接続します。既定値は False です。|
 |引き続き|Boolean|VPN が接続されていない場合も、このルールをアクティブにします。既定値は False です。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -50,6 +50,7 @@ VPN DNS ルールの定義。
   "persistent": true
 }
 ```
+
 
 
 

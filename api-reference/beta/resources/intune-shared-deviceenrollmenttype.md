@@ -4,12 +4,12 @@ description: モバイルデバイスを管理に追加する方法には、次�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a9c5c5fbdd68af1c78e55fc023a8c85642928889
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3ae3edcb1d6411e889381c2171f0daeb1cbcc528
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940016"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996142"
 ---
 # <a name="deviceenrollmenttype-enum-type"></a>deviceEnrollmentType 列挙型
 
@@ -32,6 +32,7 @@ ms.locfileid: "33940016"
 |windowsAutoEnrollment 登録|7|Windows 10 の自動登録。 (作業アカウントの追加)|
 |windowsBulkAzureDomainJoin|8 |Windows 10 一括 Azure AD Join。|
 |windowsCoManagement|9 |Windows 10 の共同管理は、自動操縦またはグループポリシーによって開始されます。|
+
 
 
 

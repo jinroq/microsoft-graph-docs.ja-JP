@@ -4,12 +4,12 @@ description: Intune 経由で管理または事前登録された Windows デバ
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bb2c7f265824a1bb24ce5c095dfc44e62b31df35
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 8e4d94c8f27d4fc651283476b0eb92518d5bdfde
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941738"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983974"
 ---
 # <a name="windowsmanageddevice-resource-type"></a>windowsManagedDevice リソースの種類
 
@@ -98,13 +98,13 @@ Intune 経由で管理または事前登録された Windows デバイス
 |managementCertificateExpirationDate|DateTimeOffset|[Manageddevice](../resources/intune-devices-manageddevice.md)から継承されたデバイス管理証明書の有効期限日を報告します|
 |iccid|String|Ic カード識別子。 SIM カードの一意の識別番号です。 [Manageddevice](../resources/intune-devices-manageddevice.md)から継承します|
 |udid|String|IOS および macOS デバイスの一意のデバイス識別子。 [Manageddevice](../resources/intune-devices-manageddevice.md)から継承します|
-|roleScopeTagIds|String collection|このデバイスインスタンスの範囲タグ Id のリスト。 [Manageddevice](../resources/intune-devices-manageddevice.md)から継承します|
+|roleScopeTagIds|文字列コレクション|このデバイスインスタンスの範囲タグ Id のリスト。 [Manageddevice](../resources/intune-devices-manageddevice.md)から継承します|
 |windowsActiveMalwareCount 再計算|Int32|[Manageddevice](../resources/intune-devices-manageddevice.md)から継承された、この windows デバイスのアクティブなマルウェアの数|
 |windowsRemediatedMalwareCount|Int32|[Manageddevice](../resources/intune-devices-manageddevice.md)から継承された、この windows デバイスの修復されたマルウェアの数|
 |notes|String|IT 管理者によって作成された、 [manageddevice](../resources/intune-devices-manageddevice.md)から継承したデバイス上のメモ|
 |configurationManagerClientHealthState|[configurationManagerClientHealthState](../resources/intune-devices-configurationmanagerclienthealthstate.md)|構成マネージャークライアントの正常性状態。 MDM/ConfigMgr エージェントによって管理されているデバイスに対してのみ有効。 [Manageddevice](../resources/intune-devices-manageddevice.md)から継承されます。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |detectedApps|[detectedApp](../resources/intune-devices-detectedapp.md) コレクション|[Manageddevice](../resources/intune-devices-manageddevice.md)から継承したデバイスに現在インストールされているすべてのアプリケーション|
@@ -290,6 +290,7 @@ Intune 経由で管理または事前登録された Windows デバイス
   }
 }
 ```
+
 
 
 

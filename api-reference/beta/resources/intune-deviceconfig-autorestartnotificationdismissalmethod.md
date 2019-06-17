@@ -4,12 +4,12 @@ description: 自動再起動必須通知棄却メソッド
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 343154b2a6212f26ee8483ce887769341e133391
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 1418b97fd2892ceb07a68a8156384fffc63ab41d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947534"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34981567"
 ---
 # <a name="autorestartnotificationdismissalmethod-enum-type"></a>autoRestartNotificationDismissalMethod 列挙型
 
@@ -25,6 +25,7 @@ ms.locfileid: "33947534"
 |notConfigured|.0|未構成|
 |自動|1-d|Auto 棄却|
 |user|pbm-2|ユーザー棄却|
+
 
 
 

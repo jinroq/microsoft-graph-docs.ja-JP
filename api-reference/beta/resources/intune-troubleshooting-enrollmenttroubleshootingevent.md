@@ -4,12 +4,12 @@ description: 登録エラーを表すイベント。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4fa7a6d00ece79ad6a405a9b31c9db15f89531cb
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f4af406c418a8f77a502df163e8868f7750e6a7b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939758"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34988161"
 ---
 # <a name="enrollmenttroubleshootingevent-resource-type"></a>enrollmentTroubleshootingEvent リソースの種類
 
@@ -49,7 +49,7 @@ ms.locfileid: "33939758"
 |failureCategory|[deviceEnrollmentFailureReason](../resources/intune-troubleshooting-deviceenrollmentfailurereason.md)|高レベルのエラー カテゴリ。 可能な値は、`unknown`、`authentication`、`authorization`、`accountValidation`、`userValidation`、`deviceNotSupported`、`inMaintenance`、`badRequest`、`featureNotSupported`、`enrollmentRestrictionsEnforced`、`clientDisconnected`、`userAbandonment` です。|
 |failureReason|String|詳細なエラーの理由:|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -98,6 +98,7 @@ ms.locfileid: "33939758"
   "failureReason": "String"
 }
 ```
+
 
 
 

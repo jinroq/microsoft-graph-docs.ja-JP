@@ -4,12 +4,12 @@ description: ユーザーを自動操縦デバイスから割り当てないよ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b0e41d45ae12fd466a0d7e88b725a1ecff84b002
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e543603a172a306648b9a4eab7713a5b57cf63c7
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33908134"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34982743"
 ---
 # <a name="unassignuserfromdevice-action"></a>unassignUserFromDevice アクション
 
@@ -63,6 +63,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIde
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

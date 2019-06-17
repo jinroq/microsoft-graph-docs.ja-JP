@@ -4,12 +4,12 @@ description: JSON 形式で返されるデータを表します
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 87c044e433608e2775df68c48301f4763cc7b242
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ab817343c088de18ab51233acb1280998db435ab
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940863"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34975841"
 ---
 # <a name="json-resource-type"></a>Json リソースの種類
 
@@ -23,7 +23,7 @@ JSON 形式で返されるデータを表します
 |プロパティ|型|説明|
 |:---|:---|:---|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -38,6 +38,7 @@ JSON 形式で返されるデータを表します
   "@odata.type": "#microsoft.graph.Json"
 }
 ```
+
 
 
 

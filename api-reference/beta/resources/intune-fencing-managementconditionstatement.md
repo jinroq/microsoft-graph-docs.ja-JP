@@ -4,12 +4,12 @@ description: 管理条件ステートメントは、含まれている管理条�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 78f2464793ac8410b3636f3ef378cfc623cc08d2
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 37718b5efaa34680f3b990fe61421d0faf24dac5
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941241"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979173"
 ---
 # <a name="managementconditionstatement-resource-type"></a>managementConditionStatement リソースの種類
 
@@ -31,7 +31,7 @@ ms.locfileid: "33941241"
 |[getManagementConditionStatementsForPlatform 関数](../api/intune-fencing-managementconditionstatement-getmanagementconditionstatementsforplatform.md)|[Managementconditionstatement](../resources/intune-fencing-managementconditionstatement.md)コレクション|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |id|文字列|管理条件ステートメントの一意識別子。 作成時に割り当てられたシステム生成値。|
 |displayName|String|管理条件ステートメントの管理者定義の名前。|
@@ -43,7 +43,7 @@ ms.locfileid: "33941241"
 |アプリケーションのプラットフォーム|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)コレクション|この管理条件ステートメントの適用可能なプラットフォーム。
 これは、管理条件ステートメントに関連付けられている管理条件を参照して、適用可能なプラットフォームの共通部分を検索することによって計算されます。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |managementConditions|[Managementcondition](../resources/intune-fencing-managementcondition.md)コレクション|管理条件ステートメントに関連付けられている管理条件。|
@@ -73,6 +73,7 @@ ms.locfileid: "33941241"
   ]
 }
 ```
+
 
 
 

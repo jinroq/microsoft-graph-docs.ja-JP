@@ -4,12 +4,12 @@ description: グループへの iOS VPP モバイル アプリの割り当てに
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f7570108ac38b417ca4d1a5213759c071fe8492b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 688e4efa6c13ebc7067a236fe013aabd2426d9c4
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950460"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987853"
 ---
 # <a name="iosvppappassignmentsettings-resource-type"></a>iosVppAppAssignmentSettings リソースの種類
 
@@ -28,7 +28,7 @@ ms.locfileid: "33950460"
 |useDeviceLicensing|ブール型 (Boolean)|デバイスのライセンスを使用するかどうか。|
 |vpnConfigurationId|文字列型 (String)|このアプリに適用するための VPN 構成 ID。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -45,6 +45,7 @@ ms.locfileid: "33950460"
   "vpnConfigurationId": "String"
 }
 ```
+
 
 
 

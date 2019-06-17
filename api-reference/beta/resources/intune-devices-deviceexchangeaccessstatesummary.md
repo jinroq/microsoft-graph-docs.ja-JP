@@ -4,12 +4,12 @@ description: デバイスの Exchange アクセス状態の要約
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 15b7a3e1f07694f0a75bb84bdad7640981639079
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 81f9768deaaeebfaebf02beff35a70e795244050
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33942123"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983142"
 ---
 # <a name="deviceexchangeaccessstatesummary-resource-type"></a>deviceExchangeAccessStateSummary リソースの種類
 
@@ -28,7 +28,7 @@ ms.locfileid: "33942123"
 |unknownDeviceCount|Int32|Exchange アクセス状態が Unknown のデバイスの総数です。|
 |unavailableDeviceCount|Int32|Exchange アクセス状態を検出できなかったデバイスの総数です。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -48,6 +48,7 @@ ms.locfileid: "33942123"
   "unavailableDeviceCount": 1024
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 新しい embeddedSIMDeviceState オブジェクトを作成しま�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 378144cf88afbad951667f2509b1fe732e689c02
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 48fa960c2ca22b52e161947b509cc8eaec355c11
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33905554"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983485"
 ---
 # <a name="create-embeddedsimdevicestate"></a>EmbeddedSIMDeviceState を作成する
 
@@ -105,6 +105,7 @@ Content-Length: 529
   "stateDetails": "State Details value"
 }
 ```
+
 
 
 

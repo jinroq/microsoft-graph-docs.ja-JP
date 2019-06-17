@@ -4,12 +4,12 @@ description: 埋め込まれた SIM ライセンス認証コードプール割�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1cea1b130ddee79c87dc9b995ab216896609654f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 295e30c56551a03bc671579cc37851f50e2513ec
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941381"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979250"
 ---
 # <a name="embeddedsimactivationcodepoolassignment-resource-type"></a>embeddedSIMActivationCodePoolAssignment リソースの種類
 
@@ -34,7 +34,7 @@ ms.locfileid: "33941381"
 |id|String|埋め込まれている SIM ライセンス認証コードプールの割り当ての一意の識別子。 作成時に割り当てられたシステム生成値。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|埋め込まれた SIM アクティブ化コードプールの対象となるグループの種類。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -54,6 +54,7 @@ ms.locfileid: "33941381"
   }
 }
 ```
+
 
 
 

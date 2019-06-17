@@ -4,12 +4,12 @@ description: macOSOfficeSuiteApp オブジェクトのプロパティとリレ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 970fae3b756321037e440b4214bd5a963233ad2e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 924d45901c39aaba8b2abf2ffd2e2abcb88fadfe
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935896"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34975267"
 ---
 # <a name="list-macosofficesuiteapps"></a>macOSOfficeSuiteApps のリスト
 
@@ -96,6 +96,7 @@ Content-Length: 1023
   ]
 }
 ```
+
 
 
 

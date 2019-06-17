@@ -4,12 +4,12 @@ description: ManagedDeviceCertificateState オブジェクトのプロパティ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 137edaaecd417b8e3c7927390b549236bb011c9c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 338475afa6e6de5df062bed149c799e2bc524aa3
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33922635"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34976457"
 ---
 # <a name="update-manageddevicecertificatestate"></a>ManagedDeviceCertificateState の更新
 
@@ -171,6 +171,7 @@ Content-Length: 1566
   "certificateErrorCode": 4
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 新規にvppTokenオブジェクトを作成します。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5ecb914d14a70950dd1128001333a6a94c7b5150
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b14bbfd693b67b6a6ecf480c7c06f062a38c42b5
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899810"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34980629"
 ---
 # <a name="create-vpptoken"></a>Create vppToken
 
@@ -67,7 +67,7 @@ POST /deviceAppManagement/vppTokens
 |displayName|String|管理者が指定したトークンのフレンドリ名。|
 |Msrtcsip-locationname|String|Apple VPP から返されるトークンの場所。|
 |claimTokenManagementFromExternalMdm|Boolean|管理者の同意を得て、外部 MDM からのトークン管理を許可します。|
-|roleScopeTagIds|String collection|このエンティティに割り当てられているロールスコープタグ Id。|
+|roleScopeTagIds|文字列コレクション|このエンティティに割り当てられているロールスコープタグ Id。|
 
 
 
@@ -153,6 +153,7 @@ Content-Length: 1115
   ]
 }
 ```
+
 
 
 

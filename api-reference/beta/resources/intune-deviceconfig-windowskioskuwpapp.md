@@ -4,12 +4,12 @@ description: アプリの種類の基本クラス
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9340006ee74e640e21dc6bef99cc1f0e297999b9
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: dde5c855f668c1119d44fa4d756cbf0a118f5803
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943775"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979432"
 ---
 # <a name="windowskioskuwpapp-resource-type"></a>windowsKioskUWPApp リソースの種類
 
@@ -33,7 +33,7 @@ ms.locfileid: "33943775"
 |appId|String|これは、キオスクの構成と同じ割り当てに移行する Intune アプリを参照します。|
 |containedAppId|String|これは、Intune アプリからの含まれているアプリを参照します。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -55,6 +55,7 @@ ms.locfileid: "33943775"
   "containedAppId": "String"
 }
 ```
+
 
 
 
