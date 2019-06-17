@@ -4,12 +4,12 @@ description: DepOnboardingSetting オブジェクトのプロパティを更新�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a3603f4dd93d7fd3b9e5ba06e263ad765331cfaa
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ec9b0eea4cfac39d02f7f7110561d1f6a0756ba3
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33908659"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34980328"
 ---
 # <a name="update-deponboardingsetting"></a>DepOnboardingSetting の更新
 
@@ -62,7 +62,7 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}
 |tokenName|String|Dep トークンのフレンドリ名|
 |syncedDeviceCount|Int32|同期されたデバイスの数を取得する|
 |dataSharingConsentGranted|Boolean|Apple Dep サービスでのデータ共有に対して付与される同意|
-|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。|
+|roleScopeTagIds|文字列コレクション|このエンティティインスタンスの範囲タグのリスト。|
 
 
 
@@ -122,6 +122,7 @@ Content-Length: 689
   ]
 }
 ```
+
 
 
 

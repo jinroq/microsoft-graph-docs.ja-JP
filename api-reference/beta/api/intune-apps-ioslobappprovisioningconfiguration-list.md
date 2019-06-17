@@ -4,12 +4,12 @@ description: Ioslobappプロビジョニング構成オブジェクトのプロ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7b0de4e23582e1f1ec2cf9c46c045d5c8452a6fb
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ed78f1ec702a942b72949be136565727f7e9c99e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33936904"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965096"
 ---
 # <a name="list-ioslobappprovisioningconfigurations"></a>Ioslobappプロビジョニング構成を一覧表示する
 
@@ -84,6 +84,7 @@ Content-Length: 632
   ]
 }
 ```
+
 
 
 

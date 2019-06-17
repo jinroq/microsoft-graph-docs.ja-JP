@@ -4,12 +4,12 @@ description: windows10EnterpriseModernAppManagementConfiguration を削除しま
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 669cff493f6a0a99c2ebd50109c18e58b6b4d298
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: bae34dda09736073eccfba64612cab1f29dd0428
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33921668"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34976065"
 ---
 # <a name="delete-windows10enterprisemodernappmanagementconfiguration"></a>windows10EnterpriseModernAppManagementConfiguration の削除
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

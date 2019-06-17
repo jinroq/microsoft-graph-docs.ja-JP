@@ -4,12 +4,12 @@ description: MDM で制御されるデバイス用に定義済みの既定の検
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 43bd36f617b5d87e4eaa2bdbf6e3e951cdf3f3e7
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 19247f83cc3e19925759c395d98ddc02ef4f8526
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943790"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996393"
 ---
 # <a name="windowsspotlightenablementsettings-enum-type"></a>Windowsスポットライト Enablementsettings 列挙型
 
@@ -25,6 +25,7 @@ MDM で制御されるデバイス用に定義済みの既定の検索エンジ�
 |notConfigured|.0|ロック画面のスポットライトが構成されていません|
 |党|1-d|ロック画面で Windows スポットライトを無効にする|
 |enabled|pbm-2|ロック画面で Windows スポットライトを有効にする|
+
 
 
 

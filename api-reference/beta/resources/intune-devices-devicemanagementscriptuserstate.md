@@ -4,12 +4,12 @@ description: デバイス管理スクリプトのユーザー実行状態のプ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 70c0ab2cbfd52a538997dce5cc3c7dadb98aaae7
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: dbde1236d741b0eba5841170b7a18e0ac00f71ee
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33942032"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995288"
 ---
 # <a name="devicemanagementscriptuserstate-resource-type"></a>deviceManagementScriptUserState リソースの種類
 
@@ -29,14 +29,14 @@ ms.locfileid: "33942032"
 |[DeviceManagementScriptUserState の更新](../api/intune-devices-devicemanagementscriptuserstate-update.md)|[deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md)|[Devicemanagementscriptuserstate](../resources/intune-devices-devicemanagementscriptuserstate.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |id|文字列|デバイス管理スクリプトのユーザー状態エンティティのキー。|
 |successDeviceCount|Int32|特定のユーザーの成功デバイス数。|
 |errorDeviceCount|Int32|特定のユーザーのエラーデバイス数。|
 |userPrincipalName|String|特定のユーザーのユーザープリンシパル名。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |deviceRunStates|[Devicemanagementscriptdevicestate](../resources/intune-devices-devicemanagementscriptdevicestate.md)コレクション|特定のユーザーのすべてのデバイスでこのスクリプトの実行状態を一覧表示します。|
@@ -58,6 +58,7 @@ ms.locfileid: "33942032"
   "userPrincipalName": "String"
 }
 ```
+
 
 
 

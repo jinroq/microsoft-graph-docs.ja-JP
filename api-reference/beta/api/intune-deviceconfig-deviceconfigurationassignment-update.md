@@ -4,12 +4,12 @@ description: deviceConfigurationAssignment オブジェクトのプロパティ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ab6075c3bb097ddcfd7ef5975855afc396499ece
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f15174d943d880e805a96f148e1665dcaffa504e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33927329"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34967868"
 ---
 # <a name="update-deviceconfigurationassignment"></a>deviceConfigurationAssignment の更新
 
@@ -98,6 +98,7 @@ Content-Length: 218
   }
 }
 ```
+
 
 
 

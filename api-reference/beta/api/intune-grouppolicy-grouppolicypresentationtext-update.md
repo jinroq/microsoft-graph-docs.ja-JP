@@ -4,12 +4,12 @@ description: GroupPolicyPresentationText オブジェクトのプロパティを
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 663bb7944910b4857bf2002685564bfa90b81561
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0c1371a36f266289ab87f3af9e925aedc2d3e316
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33904707"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34964431"
 ---
 # <a name="update-grouppolicypresentationtext"></a>GroupPolicyPresentationText の更新
 
@@ -89,6 +89,7 @@ Content-Length: 209
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
 
 
 

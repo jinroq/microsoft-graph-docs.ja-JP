@@ -4,12 +4,12 @@ description: 'DeviceManagement リソースは、次のようなワークフロ�
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
-ms.openlocfilehash: e79bd6d5573930d041b4a8249ae993275f0e26c7
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a6cb82cf68f77e83ec873bcf805004b064dfd9bb
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939680"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996086"
 ---
 # <a name="devicemanagement-resource-type"></a>deviceManagement リソースの種類
 
@@ -64,7 +64,7 @@ DeviceManagement リソースは、次のようなワークフローに従って
 |maximumDepTokens|Int32|テナントごとに許容される DEP トークンの最大数。|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|アカウント レベルの設定。|
 |**デバイスの管理**|
-|accountMoveCompletionDateTime|DateTimeOffset|_AMP_ が、scaleunits 間でテナントデータを移動した日時です。|
+|accountMoveCompletionDateTime|DateTimeOffset|Scaleunits 間でテナントデータを移動したときの日付 & 時刻。|
 |adminConsent|[adminConsent](../resources/intune-devices-adminconsent.md)|管理者の同意情報。|
 |deviceProtectionOverview|[deviceProtectionOverview](../resources/intune-devices-deviceprotectionoverview.md)|デバイス保護の概要。|
 |managedDeviceCleanupSettings|[managedDeviceCleanupSettings](../resources/intune-devices-manageddevicecleanupsettings.md)|デバイスクリーンアップルール|
@@ -73,8 +73,10 @@ DeviceManagement リソースは、次のようなワークフローに従って
 |windowsMalwareOverview|[windowsMalwareOverview](../resources/intune-devices-windowsmalwareoverview.md)|Windows デバイスのマルウェアの概要。|
 |**オンボーディング**|
 |intuneBrand|[intuneBrand](../resources/intune-onboarding-intunebrand.md)|intuneBrand には、会社のポータル アプリケーションとエンド ユーザーの Web ポータルの外観のカスタマイズに使用するデータが含まれています。|
+|**Odj**|
+|domainJoinConnectors|[Devicemanagementdomainjoinconnector](../resources/intune-odj-devicemanagementdomainjoinconnector.md)コレクション|コネクタオブジェクトのリスト。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|Description&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
 |:---|:---|:---|
 |**Android for Work**|

@@ -4,12 +4,12 @@ description: グループポリシー構成割り当てエンティティは、1
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b85e3892a92605f4964700bdb9a1a28e5d02187d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e0ec4346174bdaafbc37c0721462ba8fd612abcc
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941164"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34975946"
 ---
 # <a name="grouppolicyconfigurationassignment-resource-type"></a>groupPolicyConfigurationAssignment リソースの種類
 
@@ -35,7 +35,7 @@ ms.locfileid: "33941164"
 |lastModifiedDateTime|DateTimeOffset|エンティティが最後に変更された日付と時刻。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|グループポリシー構成を対象としたグループの種類。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -56,6 +56,7 @@ ms.locfileid: "33941164"
   }
 }
 ```
+
 
 
 

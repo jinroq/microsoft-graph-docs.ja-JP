@@ -4,12 +4,12 @@ description: ログオンユーザー
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eeacee7d4d3a22e0d069851c1f9271ceb0e32c0d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e013b89eefbcdb1bf180ff90341388db9c05dcf4
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941969"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995155"
 ---
 # <a name="loggedonuser-resource-type"></a>loggedOnUser リソースの種類
 
@@ -25,7 +25,7 @@ ms.locfileid: "33941969"
 |userId|String|ユーザー ID|
 |lastLogOnDateTime|DateTimeOffset|ユーザーがログオンした日時|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -42,6 +42,7 @@ ms.locfileid: "33941969"
   "lastLogOnDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

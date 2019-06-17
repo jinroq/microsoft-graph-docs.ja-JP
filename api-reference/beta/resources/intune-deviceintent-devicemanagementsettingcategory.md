@@ -4,12 +4,12 @@ description: 設定カテゴリを表すエンティティ
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 39c87774cf0aa8a5e3a4cb65b10566323b2c7749
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6cdf19dcfae033a6e7e17219cc9605635d25c621
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943390"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34963948"
 ---
 # <a name="devicemanagementsettingcategory-resource-type"></a>deviceManagementSettingCategory リソースの種類
 
@@ -29,12 +29,12 @@ ms.locfileid: "33943390"
 |[DeviceManagementSettingCategory の更新](../api/intune-deviceintent-devicemanagementsettingcategory-update.md)|[deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|[Devicemanagementsettingcategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |id|文字列|カテゴリ ID|
 |displayName|String|カテゴリ名|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |settingDefinitions|[Devicemanagementsettingdefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)コレクション|このカテゴリに含まれる設定の定義は次のとおりです。|
@@ -54,6 +54,7 @@ ms.locfileid: "33943390"
   "displayName": "String"
 }
 ```
+
 
 
 

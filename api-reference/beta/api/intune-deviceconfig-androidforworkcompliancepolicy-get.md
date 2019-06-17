@@ -4,12 +4,12 @@ description: AndroidForWorkCompliancePolicy オブジェクトのプロパティ
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7e8d40f66a1d121aa60b56951f5ae9ca8065bf29
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f426c251d17f0b38afcc32653b8a2b58e972d868
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33932956"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34971081"
 ---
 # <a name="get-androidforworkcompliancepolicy"></a>AndroidForWorkCompliancePolicy を取得する
 
@@ -104,6 +104,7 @@ Content-Length: 1538
   }
 }
 ```
+
 
 
 

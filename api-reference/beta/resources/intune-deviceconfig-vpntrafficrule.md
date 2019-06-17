@@ -4,12 +4,12 @@ description: VPN トラフィックルールの定義。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 21f174056021e9a9789a2c033383c42ba8f09cc3
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: db16de3ddcbfe17bd5fe19bfe9e672002324c5cb
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944559"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991598"
 ---
 # <a name="vpntrafficrule-resource-type"></a>vpnTrafficRule リソースの種類
 
@@ -33,7 +33,7 @@ VPN トラフィックルールの定義。
 |routingPolicyType|[vpnTrafficRuleRoutingPolicyType](../resources/intune-deviceconfig-vpntrafficruleroutingpolicytype.md)|アプリがトリガーされたときに、このルートに沿った分割トンネリングを有効にするかどうかを示します。 可能な値は、`none`、`splitTunnel`、`forceTunnel` です。|
 |差出人|String|このトラフィック規則に関連付けられているクレーム。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -82,6 +82,7 @@ VPN トラフィックルールの定義。
   "claims": "String"
 }
 ```
+
 
 
 

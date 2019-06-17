@@ -4,12 +4,12 @@ description: iOS アプリの識別子。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c7da88947c4033f1af615f85267a23426c5e4154
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b8b19d08122d16b9cfc9099547e86d155d0540cf
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940877"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34975855"
 ---
 # <a name="iosmobileappidentifier-resource-type"></a>iosMobileAppIdentifier リソースの種類
 
@@ -27,7 +27,7 @@ iOS アプリの識別子。
 |:---|:---|:---|
 |bundleId|文字列型 (String)|App Store で指定されている、アプリの識別子。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -43,6 +43,7 @@ iOS アプリの識別子。
   "bundleId": "String"
 }
 ```
+
 
 
 

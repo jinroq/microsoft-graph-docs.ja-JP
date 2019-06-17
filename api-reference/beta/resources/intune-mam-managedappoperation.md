@@ -4,12 +4,12 @@ description: アプリ登録に対して適用される操作を表します。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c09b823fba3c32ccb4f2950233e9cfa388ff35ba
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 045ce9f78f8a2de5e14bbe974cea2d6cc1aa7c6a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940751"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994784"
 ---
 # <a name="managedappoperation-resource-type"></a>managedAppOperation リソースの種類
 
@@ -37,7 +37,7 @@ ms.locfileid: "33940751"
 |id|文字列|エンティティのキー。|
 |version|文字列型 (String)|エンティティのバージョン。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -58,6 +58,7 @@ ms.locfileid: "33940751"
   "version": "String"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 検出演算子のプロパティが含まれています。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d373b03898fdeed45d1dc3218c812b3f7b9726d0
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 896e7c09ceed111095e3e84acaedf05ea0324eaf
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949760"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993173"
 ---
 # <a name="win32lobappdetectionoperator-enum-type"></a>win32LobAppDetectionOperator 列挙型
 
@@ -29,6 +29,7 @@ ms.locfileid: "33949760"
 |greaterThanOrEqual|5|演算子より大きいまたは等しい。|
 |lessThan|8 |未満演算子。|
 |不等号 (等しくない)|9 |演算子の値より小さいまたは等しい。|
+
 
 
 

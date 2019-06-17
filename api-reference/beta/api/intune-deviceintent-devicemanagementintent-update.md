@@ -4,12 +4,12 @@ description: DeviceManagementIntent オブジェクトのプロパティを更�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d61a86001e85f58a9c0f8fa1cb719453029e4fe2
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: fd8b85ccab0153b749ff29be13187e3fd2fd4ef6
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33916440"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34960448"
 ---
 # <a name="update-devicemanagementintent"></a>DeviceManagementIntent の更新
 
@@ -56,6 +56,7 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}
 |isAssigned|Boolean|目的がユーザーに割り当てられているかどうかを表します。|
 |lastModifiedDateTime|DateTimeOffset|目的が最後に変更された日時|
 |templateId|String|この目的が作成されたテンプレートの ID (存在する場合)|
+|roleScopeTagIds|文字列コレクション|このエンティティインスタンスの範囲タグのリスト。|
 
 
 
@@ -69,14 +70,17 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManagementIntentId}
 Content-type: application/json
-Content-length: 204
+Content-length: 266
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementIntent",
   "displayName": "Display Name value",
   "description": "Description value",
   "isAssigned": true,
-  "templateId": "Template Id value"
+  "templateId": "Template Id value",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
 
@@ -85,7 +89,7 @@ Content-length: 204
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 317
+Content-Length: 379
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementIntent",
@@ -94,9 +98,13 @@ Content-Length: 317
   "description": "Description value",
   "isAssigned": true,
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-  "templateId": "Template Id value"
+  "templateId": "Template Id value",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
+
 
 
 

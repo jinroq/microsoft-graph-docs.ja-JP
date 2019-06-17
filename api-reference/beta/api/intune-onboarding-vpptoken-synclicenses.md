@@ -4,12 +4,12 @@ description: 特定の appleVolumePurchaseProgramToken に関連付けられた�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a8f186bacd52143ae31467dddeb0e451519aeece
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6c7081e72d25c0129416cb17d3139a29734c4bac
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899856"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34980545"
 ---
 # <a name="synclicenses-action"></a>syncLicenses アクション
 
@@ -98,6 +98,7 @@ Content-Length: 1192
   }
 }
 ```
+
 
 
 

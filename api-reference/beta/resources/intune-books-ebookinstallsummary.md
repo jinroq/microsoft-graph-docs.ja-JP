@@ -4,12 +4,12 @@ description: デバイスのブックのインストール要約のプロパテ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 722e293f8b5e2ee1be4eaed38040e648b76d60ee
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 574ce848e827093f6693a1a7f6a4ebe860833495
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949417"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34964361"
 ---
 # <a name="ebookinstallsummary-resource-type"></a>eBookInstallSummary リソース タイプ
 
@@ -36,7 +36,7 @@ ms.locfileid: "33949417"
 |failedUserCount|Int32|このブックのインストールが失敗したデバイスを 1 台以上所有しているユーザーの数。|
 |notInstalledUserCount|Int32|このブックをインストールしていないユーザーの数。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -59,6 +59,7 @@ ms.locfileid: "33949417"
   "notInstalledUserCount": 1024
 }
 ```
+
 
 
 

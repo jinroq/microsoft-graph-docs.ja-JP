@@ -4,12 +4,12 @@ description: 管理対象デバイスの概要データ
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ca88af3320b1d7ccaab57d874f3b97a853652864
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 8ed08262d9b98fc0a72641f0605d717e68f2ba08
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33942193"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995113"
 ---
 # <a name="manageddeviceoverview-resource-type"></a>managedDeviceOverview リソースの種類
 
@@ -37,7 +37,7 @@ ms.locfileid: "33942193"
 |managedDeviceModelsAndManufacturers|[managedDeviceModelsAndManufacturers](../resources/intune-devices-manageddevicemodelsandmanufacturers.md)|アカウントの管理対象デバイスのモデルと製造 meatadata|
 |lastModifiedDateTime|DateTimeOffset|デバイスの最終変更日時の概要|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -84,6 +84,7 @@ ms.locfileid: "33942193"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

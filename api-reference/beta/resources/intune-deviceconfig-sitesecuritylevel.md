@@ -4,12 +4,12 @@ description: サイトのセキュリティレベルに指定できる値。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a38c4846e134e92735f102e9eae257e84b8fb2b7
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 14210e84f52ed75d594c22461da5c076b81aa4e3
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944685"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34964207"
 ---
 # <a name="sitesecuritylevel-enum-type"></a>siteSecurityLevel 列挙型
 
@@ -28,6 +28,7 @@ ms.locfileid: "33944685"
 |medium|1/3|中。|
 |mediumHigh|2/4|中-高|
 |高額|5|高。|
+
 
 
 

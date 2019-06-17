@@ -4,12 +4,12 @@ description: 新しい deviceManagementTemplateSettingCategory オブジェク�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 440ab24593848ab3eba7139c7589f42aec358ea6
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 368491eda8ed4e13d7600073e859ceed73d6b094
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33915677"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959685"
 ---
 # <a name="create-devicemanagementtemplatesettingcategory"></a>DeviceManagementTemplateSettingCategory の作成
 
@@ -86,6 +86,7 @@ Content-Length: 170
   "displayName": "Display Name value"
 }
 ```
+
 
 
 

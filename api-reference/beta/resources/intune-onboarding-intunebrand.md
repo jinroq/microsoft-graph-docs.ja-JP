@@ -4,12 +4,12 @@ description: intuneBrand には、会社のポータル アプリケーション
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6e4d005c4b5eccf0775e0a671088a5de09f95fe2
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ed28888040b10ca17b06c5b8a624f4e521088fcf
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940205"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34992942"
 ---
 # <a name="intunebrand-resource-type"></a>intuneBrand リソース タイプ
 
@@ -39,7 +39,7 @@ intuneBrand には、会社のポータル アプリケーションとエンド 
 |customPrivacyMessage|String|カスタムプライバシーメッセージ。|
 |showDisplayNameNextToLogo|Boolean|管理者が指定した表示名がロゴ画像のとなりに表示されるかどうかを表すブール値。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -87,6 +87,7 @@ intuneBrand には、会社のポータル アプリケーションとエンド 
   "showDisplayNameNextToLogo": true
 }
 ```
+
 
 
 

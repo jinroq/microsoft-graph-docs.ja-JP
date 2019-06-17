@@ -4,12 +4,12 @@ description: プライバシーデータにアクセスするための Windows �
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aebf3b636a7abdfb42d9b2febdfc5dbde2d375c1
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2e86e45f49f21da84b5d0ae6975a032969586f2a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943684"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996464"
 ---
 # <a name="windowsprivacydatacategory-enum-type"></a>windowsPrivacyDataCategory 列挙型
 
@@ -41,6 +41,7 @@ ms.locfileid: "33943684"
 |tasks|16|アプリでタスクスケジューラにアクセスできるようにします。 Windows 10 バージョン1703で追加されました。|
 |syncWithDevices|インチ|アプリで、ユーザーのデバイスと明示的にペアリングされていないワイヤレスデバイスとの情報を自動的に共有および同期することができます。 Windows 10 バージョン 1607 で追加されました。|
 |trustedDevices|個|アプリが信頼されたデバイスにアクセスできるようにします。 Windows 10 バージョン 1607 で追加されました。|
+
 
 
 

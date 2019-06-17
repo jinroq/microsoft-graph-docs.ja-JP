@@ -4,12 +4,12 @@ description: ImportedAppleDeviceIdentityResult リソースは、Apple デバイ
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8928cf4c7e4e67a24d5c222f84a21c801f8c089f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 021986d61afdeb5af717083657f46d308517f754
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941556"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34992634"
 ---
 # <a name="importedappledeviceidentityresult-resource-type"></a>importedAppleDeviceIdentityResult リソースの種類
 
@@ -47,7 +47,7 @@ ImportedAppleDeviceIdentityResult リソースは、Apple デバイス id のイ
 |platform|[プラットフォーム](../resources/intune-enrollment-platform.md)|デバイスのプラットフォーム。 [ImportedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)から継承されます。 使用可能な値: `unknown`、`ios`、`android`、`windows`、`windowsMobile`、`macOS`。|
 |status|Boolean|インポートされたデバイス id の状態|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -75,6 +75,7 @@ ImportedAppleDeviceIdentityResult リソースは、Apple デバイス id のイ
   "status": true
 }
 ```
+
 
 
 

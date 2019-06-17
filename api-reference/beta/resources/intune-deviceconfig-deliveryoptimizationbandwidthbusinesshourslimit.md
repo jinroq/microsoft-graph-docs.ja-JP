@@ -4,12 +4,12 @@ description: 帯域幅の営業時間とパーセンテージの種類
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 71dae93d44f7b7276bd268170a2c37b434b5bbb2
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 7f1a9f5e3074372605352e1ff6e1bc9a04b97174
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947268"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979712"
 ---
 # <a name="deliveryoptimizationbandwidthbusinesshourslimit-resource-type"></a>deliveryOptimizationBandwidthBusinessHoursLimit リソースの種類
 
@@ -27,7 +27,7 @@ ms.locfileid: "33947268"
 |bandwidthPercentageDuringBusinessHours|Int32|営業時間内に制限する帯域幅の割合 (0-100) を指定します。 有効な値は 0 から 100 までです|
 |bandwidthPercentageOutsideBusinessHours|Int32|勤務時間を制限する帯域幅の割合 (0-100) を指定します。 有効な値は 0 から 100 までです|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -46,6 +46,7 @@ ms.locfileid: "33947268"
   "bandwidthPercentageOutsideBusinessHours": 1024
 }
 ```
+
 
 
 

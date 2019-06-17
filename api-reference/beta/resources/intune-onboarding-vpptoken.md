@@ -4,12 +4,12 @@ description: ビジネス向けまたは教育向けの Apple Volume Purchase Pr
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b6ce5ed8e699b8dbd49308591f252a8bcb30d876
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 268e905b2328b66eaf1bcd19340d96f22d40d9a6
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940114"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34958621"
 ---
 # <a name="vpptoken-resource-type"></a>vppToken リソースの種類
 
@@ -51,9 +51,9 @@ ms.locfileid: "33940114"
 |displayName|String|管理者が指定したトークンのフレンドリ名。|
 |Msrtcsip-locationname|String|Apple VPP から返されるトークンの場所。|
 |claimTokenManagementFromExternalMdm|Boolean|管理者の同意を得て、外部 MDM からのトークン管理を許可します。|
-|roleScopeTagIds|String collection|このエンティティに割り当てられているロールスコープタグ Id。|
+|roleScopeTagIds|文字列コレクション|このエンティティに割り当てられているロールスコープタグ Id。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -97,6 +97,7 @@ ms.locfileid: "33940114"
   ]
 }
 ```
+
 
 
 

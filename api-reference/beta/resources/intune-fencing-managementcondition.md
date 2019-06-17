@@ -4,12 +4,12 @@ description: 管理条件は、地域フェンス、タイムフェンス、ネ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: efd9dfa17858e4de1aa430c26977babe659c1067
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 046f3280e5ab5ddcd4518b4938f9b8917b3914d9
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941290"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979215"
 ---
 # <a name="managementcondition-resource-type"></a>managementCondition リソースの種類
 
@@ -27,7 +27,7 @@ ms.locfileid: "33941290"
 |[getManagementConditionsForPlatform 関数](../api/intune-fencing-managementcondition-getmanagementconditionsforplatform.md)|[Managementcondition](../resources/intune-fencing-managementcondition.md)コレクション|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |id|文字列|管理条件の一意識別子。 作成時に割り当てられたシステム生成値。|
 |uniqueName|String|管理条件の一意の名前。 管理条件式で使用されます。|
@@ -38,7 +38,7 @@ ms.locfileid: "33941290"
 |eTag|String|管理条件の ETag。 サービス側を更新しました。|
 |アプリケーションのプラットフォーム|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)コレクション|この管理条件の適用可能なプラットフォーム。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |managementConditionStatements|[Managementconditionstatement](../resources/intune-fencing-managementconditionstatement.md)コレクション|管理条件に関連付けられている管理条件ステートメント。|
@@ -66,6 +66,7 @@ ms.locfileid: "33941290"
   ]
 }
 ```
+
 
 
 

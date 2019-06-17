@@ -4,12 +4,12 @@ description: managedDeviceMobileAppConfigurationUserStatus オブジェクトの
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e1b51cfd273a79e84a9cf803d92a19574b184c11
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: efa6b3d679ca5e6bec4a61152dd54855975646ac
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935570"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34974651"
 ---
 # <a name="update-manageddevicemobileappconfigurationuserstatus"></a>managedDeviceMobileAppConfigurationUserStatus の更新
 
@@ -99,6 +99,7 @@ Content-Length: 355
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 除外された Office365 アプリのプロパティが含まれ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 37abd83b34fde565aa78e62454c4ce7d47ea192a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 91418a1a60a87f381dc15c63a60d69e8c264a5c3
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950411"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991248"
 ---
 # <a name="excludedapps-resource-type"></a>excludedApps リソースの種類
 
@@ -37,7 +37,7 @@ ms.locfileid: "33950411"
 |visio|Boolean|MS Office Visio を除外する必要があるかどうかを示す値。|
 |段落|Boolean|MS Office Word を除外する必要があるかどうかを示す値。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -66,6 +66,7 @@ ms.locfileid: "33950411"
   "word": true
 }
 ```
+
 
 
 

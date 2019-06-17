@@ -4,12 +4,12 @@ description: プールは、埋め込まれた SIM アクティブ化コード�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 953b7693d9c95039458b8a47a95e1f3f8214fa45
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f8487a92dae1874f1d11841cf6772b7300265c3b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941374"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994861"
 ---
 # <a name="embeddedsimactivationcodepool-resource-type"></a>embeddedSIMActivationCodePool リソースの種類
 
@@ -30,7 +30,7 @@ ms.locfileid: "33941374"
 |[assign アクション](../api/intune-esim-embeddedsimactivationcodepool-assign.md)|[embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md)コレクション|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |id|文字列|埋め込まれた SIM アクティブ化コードプールの一意識別子。 作成時に割り当てられたシステム生成値。|
 |displayName|String|埋め込まれた SIM アクティブ化コードプールの管理者定義の名前。|
@@ -39,7 +39,7 @@ ms.locfileid: "33941374"
 |activationCodes|[embeddedSIMActivationCode](../resources/intune-esim-embeddedsimactivationcode.md)コレクション|このプールに属するアクティブ化コード。 このナビゲーションプロパティは、アクティブ化コードを Intune に送信するために使用されますが、Intune からのアクティブ化コードの読み取りには使用できません。|
 |activationCodeCount|Int32|このプールに属するアクティブ化コードの合計数。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |assignments|[embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md)コレクション|このプールが割り当てられているターゲットのリストへのナビゲーションプロパティ。|
@@ -71,6 +71,7 @@ ms.locfileid: "33941374"
   "activationCodeCount": 1024
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Android モバイル アプリに必要な最小限のオペレー�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c6cff0c1e925be61efe68a52d822deb074589505
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 73cdb712f74b3339f36cdcb3057afbf4a62d74fb
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950565"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991332"
 ---
 # <a name="androidminimumoperatingsystem-resource-type"></a>androidMinimumOperatingSystem リソースの種類
 
@@ -37,7 +37,7 @@ Android モバイル アプリに必要な最小限のオペレーティング �
 |v8_1|ブール型 (Boolean)|バージョン8.1 以降。|
 |v9_0|ブール型 (Boolean)|バージョン 9.0 以降。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -66,6 +66,7 @@ Android モバイル アプリに必要な最小限のオペレーティング �
   "v9_0": true
 }
 ```
+
 
 
 

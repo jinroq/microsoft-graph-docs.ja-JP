@@ -4,12 +4,12 @@ description: アプリごとのポリシーの展開の概要を表します。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f051c36a7d14a75b6a85a9352a6188756d0545ad
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 1174e46f40a7f80944cf686a403edb0db60cb1fd
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940716"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994728"
 ---
 # <a name="managedapppolicydeploymentsummaryperapp-resource-type"></a>managedAppPolicyDeploymentSummaryPerApp リソースの種類
 
@@ -25,7 +25,7 @@ ms.locfileid: "33940716"
 |mobileAppIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|アプリの展開|
 |configurationAppliedUserCount|Int32|ポリシーが適用されているユーザーの数。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -44,6 +44,7 @@ ms.locfileid: "33940716"
   "configurationAppliedUserCount": 1024
 }
 ```
+
 
 
 

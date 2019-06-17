@@ -4,12 +4,12 @@ description: 新しい macOSLobApp オブジェクトを作成します。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7361e0808276ba201d3d5bea59d66899db3c9648
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 7269003c2b68b9897db580daf1915c5d325bf98a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935973"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34975351"
 ---
 # <a name="create-macoslobapp"></a>MacOSLobApp の作成
 
@@ -66,7 +66,7 @@ POST /deviceAppManagement/mobileApps
 |uploadState|Int32|アップロード状態。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 [MobileApp](../resources/intune-apps-mobileapp.md)から継承されます。 可能な値は、`notPublished`、`processing`、`published` です。|
 |isAssigned|Boolean|アプリが少なくとも1つのグループに割り当てられているかどうかを示す値。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|roleScopeTagIds|String collection|このモバイルアプリの範囲タグ id のリスト。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|roleScopeTagIds|文字列コレクション|このモバイルアプリの範囲タグ id のリスト。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |dependentAppCount|Int32|子アプリが持つ依存関係の合計数。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |committedContentVersion|String|内部にコミットされたコンテンツのバージョン。 [mobileLobApp](../resources/intune-apps-mobilelobapp.md) から継承します|
 |fileName|String|メインの LOB アプリケーションのファイル名。 [mobileLobApp](../resources/intune-apps-mobilelobapp.md) から継承します|
@@ -78,7 +78,7 @@ POST /deviceAppManagement/mobileApps
 |childApps|[Macoslobchildapp](../resources/intune-apps-macoslobchildapp.md)コレクション|このバンドルパッケージのアプリリスト|
 |identityVersion|String|ID のバージョン。|
 |md5HashChunkSize|Int32|MD5 ハッシュのチャンクサイズ|
-|md5Hash|String collection|MD5 ハッシュコード|
+|md5Hash|文字列コレクション|MD5 ハッシュコード|
 |ignoreVersionDetection|Boolean|アプリをデバイスにインストールした後に、アプリのバージョンを使用してアプリを検出するかどうかを制御するブール値。 自己更新機能を使用する macOS 基幹業務 (LoB) アプリの場合は、true に設定します。|
 
 
@@ -216,6 +216,7 @@ Content-Length: 1746
   "ignoreVersionDetection": true
 }
 ```
+
 
 
 

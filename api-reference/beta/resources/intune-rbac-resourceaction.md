@@ -4,12 +4,12 @@ description: リソースに対して許可され、許可されていないア�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 597a9c7cdc2f04247e799772f100d1a0b778453e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e49c06c8ca58f94948cc6458fd9dedd0adfa227e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939988"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993607"
 ---
 # <a name="resourceaction-resource-type"></a>resourceAction リソースの種類
 
@@ -25,7 +25,7 @@ ms.locfileid: "33939988"
 |allowedResourceActions|文字列コレクション|許可されるアクション|
 |notAllowedResourceActions|文字列コレクション|許可されていないアクション。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -46,6 +46,7 @@ ms.locfileid: "33939988"
   ]
 }
 ```
+
 
 
 

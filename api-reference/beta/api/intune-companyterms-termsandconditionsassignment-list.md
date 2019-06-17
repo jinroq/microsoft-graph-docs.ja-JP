@@ -4,12 +4,12 @@ description: termsAndConditionsAssignment オブジェクトのプロパティ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 222d0f1580fc20bce57a1fd3fc14cf71dac26212
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 835f05b20cf6d2b537125f43293165636dc3350a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33933796"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34971851"
 ---
 # <a name="list-termsandconditionsassignments"></a>termsAndConditionsAssignments のリスト
 
@@ -76,6 +76,7 @@ Content-Length: 270
   ]
 }
 ```
+
 
 
 

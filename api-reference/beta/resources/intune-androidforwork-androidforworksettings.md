@@ -4,12 +4,12 @@ description: Android for Work の設定です。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 66996681929c55d44ef94fdcf88d292ac34021a4
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 80ae851a56551b065fa37624e7aeaa18758920cf
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950586"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993411"
 ---
 # <a name="androidforworksettings-resource-type"></a>androidForWorkSettings リソース タイプ
 
@@ -43,7 +43,7 @@ Android for Work の設定です。
 |targetGroupIds|String コレクション|enrollmentTarget が「Targeted」に設定されている場合、どの AAD グループが Android for Work デバイス管理にデバイスを登録できるかを指定します。|
 |deviceOwnerManagementEnabled|Boolean|CloudDPC を使用した Android デバイス所有者の管理に、このアカウントが flighting になるかどうかを示します。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -71,6 +71,7 @@ Android for Work の設定です。
   "deviceOwnerManagementEnabled": true
 }
 ```
+
 
 
 

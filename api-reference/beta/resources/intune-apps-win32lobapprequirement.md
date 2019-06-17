@@ -4,12 +4,12 @@ description: Win32 アプリを検出するための基本クラス
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ee8593603f00a06fc47540d2829ef851cc99facb
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 03391139ac9ed5da7b1b7031aad17c5569cd845b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949508"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34975792"
 ---
 # <a name="win32lobapprequirement-resource-type"></a>win32LobAppRequirement リソースの種類
 
@@ -25,7 +25,7 @@ Win32 アプリを検出するための基本クラス
 |operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|検出のための演算子。 可能な値は、`notConfigured`、`equal`、`notEqual`、`greaterThan`、`greaterThanOrEqual`、`lessThan`、`lessThanOrEqual` です。|
 |detectionValue|String|検出値|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -42,6 +42,7 @@ Win32 アプリを検出するための基本クラス
   "detectionValue": "String"
 }
 ```
+
 
 
 

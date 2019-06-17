@@ -4,12 +4,12 @@ description: サブジェクトの別名オプション。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bf093293645dd92cddfc7aede2d49c82116ebf8d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 1c4ba2c564a32879d7a41a53ff5470d040d4db6d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944657"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34964214"
 ---
 # <a name="subjectalternativenametype-enum-type"></a>Subject代替/ベンダー Ametype 列挙型
 
@@ -27,6 +27,7 @@ ms.locfileid: "33944657"
 |userPrincipalName|pbm-2|ユーザー プリンシパル名 (UPN)。|
 |customAzureADAttribute|2/4|カスタム Azure AD 属性。|
 |domainNameService|8 |ドメインネームサービス (DNS)。|
+
 
 
 

@@ -4,12 +4,12 @@ description: Exchange 環境との接続を表すエンティティです。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 51445741f179af704bbc2e292db5ef4899a5f97a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5119ab9ab7be6a8f76fe94b80738f52b160ab3b9
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940380"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993061"
 ---
 # <a name="devicemanagementexchangeconnector-resource-type"></a>deviceManagementExchangeConnector リソースの種類
 
@@ -43,7 +43,7 @@ Exchange 環境との接続を表すエンティティです。
 |exchangeAlias|String|Exchange Server に割り当てられているエイリアス。|
 |exchangeOrganization|String|Exchange Server に対する Exchange 組織|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -69,6 +69,7 @@ Exchange 環境との接続を表すエンティティです。
   "exchangeOrganization": "String"
 }
 ```
+
 
 
 

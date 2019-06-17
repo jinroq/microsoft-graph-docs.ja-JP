@@ -4,12 +4,12 @@ description: エンティティは、ADMX (管理用テンプレート) XML フ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aa766eace326dd05470b753f8daf6acfa8362e6f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a872671186e55524002b2d0a5f85b2ce1bbf2466
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941136"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34975939"
 ---
 # <a name="grouppolicydefinitionfile-resource-type"></a>groupPolicyDefinitionFile リソースの種類
 
@@ -26,18 +26,18 @@ ms.locfileid: "33941136"
 |[GroupPolicyDefinitionFile の更新](../api/intune-grouppolicy-grouppolicydefinitionfile-update.md)|[groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|[Grouppolicydefinitionfile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |displayName|String|ADMX ファイルのローカライズされたフレンドリ名。|
 |description|String|ADMX ファイルのポリシー設定のローカライズされた説明。 既定値は空白です。|
-|languageCodes|String collection|ADMX ファイルでサポートされている言語コード。|
+|languageCodes|文字列コレクション|ADMX ファイルでサポートされている言語コード。|
 |targetPrefix|String|ADMX ファイル内の名前空間を参照する論理名を指定します。|
 |targetNamespace|String|ADMX ファイル内の名前空間を識別するために使用する URI を指定します。|
 |Msrtcsip-policytype|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|グループポリシーの種類を指定します。 可能な値は、`admxBacked`、`admxIngested` です。|
 |id|文字列|エンティティのキー。|
 |lastModifiedDateTime|DateTimeOffset|エンティティが最後に変更された日付と時刻。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |構造|[Grouppolicydefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)コレクション|ファイルに関連付けられたグループポリシーの定義。|
@@ -65,6 +65,7 @@ ms.locfileid: "33941136"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

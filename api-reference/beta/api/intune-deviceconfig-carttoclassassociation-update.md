@@ -4,12 +4,12 @@ description: CartToClassAssociation オブジェクトのプロパティを更�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4961d3efeaabd6cee345b0cc23b99e4ff30f6dcd
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6f382315d1932d275936be14071af7bf2025060c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33928009"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34968757"
 ---
 # <a name="update-carttoclassassociation"></a>CartToClassAssociation の更新
 
@@ -56,8 +56,8 @@ PATCH /deviceManagement/cartToClassAssociations/{cartToClassAssociationId}
 |version|Int32|CartToClassAssociation のバージョン。|
 |displayName|String|管理者が指定した、デバイス構成の名前。|
 |description|String|CartToClassAssociation の管理者提供の説明。|
-|deviceCartIds|String collection|クラスに関連付けられるデバイスカートの識別子。|
-|classroomIds|String collection|デバイスカートに関連付ける教室の識別子。|
+|deviceCartIds|文字列コレクション|クラスに関連付けられるデバイスカートの識別子。|
+|classroomIds|文字列コレクション|デバイスカートに関連付ける教室の識別子。|
 
 
 
@@ -110,6 +110,7 @@ Content-Length: 443
   ]
 }
 ```
+
 
 
 

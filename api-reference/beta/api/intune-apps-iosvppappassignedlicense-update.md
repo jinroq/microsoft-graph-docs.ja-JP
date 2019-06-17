@@ -4,12 +4,12 @@ description: IosVppAppAssignedLicense オブジェクトのプロパティを更
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f2da84248f5547567bf2510e33c1b5a83df20466
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: bab48cd182c3914de2560fec956405d51251f5d8
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33936155"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34975491"
 ---
 # <a name="update-iosvppappassignedlicense"></a>IosVppAppAssignedLicense の更新
 
@@ -95,6 +95,7 @@ Content-Length: 283
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
 
 
 

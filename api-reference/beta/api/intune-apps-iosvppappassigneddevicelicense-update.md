@@ -4,12 +4,12 @@ description: IosVppAppAssignedDeviceLicense オブジェクトのプロパティ
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9c655c085fa7bd3b0778045eb440decd867fc94e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 716ac5aa2e4f5f2a9412767b446b12a86815e736
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33936204"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34975519"
 ---
 # <a name="update-iosvppappassigneddevicelicense"></a>IosVppAppAssignedDeviceLicense の更新
 
@@ -101,6 +101,7 @@ Content-Length: 376
   "deviceName": "Device Name value"
 }
 ```
+
 
 
 

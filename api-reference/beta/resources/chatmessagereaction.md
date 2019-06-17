@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 33fe5a881d05b2ac2bc86e97e11b00c3465a8c09
-ms.sourcegitcommit: 624ac42e74533a9bf0d0d22b3b15adbb258fd594
+ms.openlocfilehash: dd1eac9a4630e097f06cf99f30d371de9e32eb5f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34709426"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991493"
 ---
 # <a name="chatmessagereaction-resource-type"></a>chatMessageReaction リソースの種類
 
@@ -25,7 +25,7 @@ ms.locfileid: "34709426"
 | プロパティ     | 型        | 説明 |
 |:-------------|:------------|:------------|
 |createdDateTime|DateTimeOffset|Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
-|reactionType|String|計画される値は次のとおりです。 <br><ul><li>Like-メッセージと同じですが、この場合、コンテンツは空白になります。</li><li>絵文字と絵文字の反応。 コンテンツは絵文字の unicode 値に設定されています。</li><li>Label-コンテンツはラベル内の文字列に設定されます。</li></ul>|
+|reactionType|String|サポートされ`like`て`angry`いる`sad`値`laugh`は`heart`、 `surprised`、、、、です。 |
 |user|[identitySet](identityset.md)|メッセージに reacted したユーザー。|
 
 ## <a name="json-representation"></a>JSON 表記

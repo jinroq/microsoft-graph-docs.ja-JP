@@ -4,12 +4,12 @@ description: settingStateDeviceSummary オブジェクトのプロパティを�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8bbb3ce53e08b375c8881f88c64f10666b08206f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e321cc9fd355d9fa4b6d4f73c80447b85a766693
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33921850"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34976296"
 ---
 # <a name="update-settingstatedevicesummary"></a>settingStateDeviceSummary の更新
 
@@ -119,6 +119,7 @@ Content-Length: 409
   "conflictDeviceCount": 3
 }
 ```
+
 
 
 

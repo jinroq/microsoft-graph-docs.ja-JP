@@ -4,12 +4,12 @@ description: Intune 経由で管理または事前登録されるデバイス
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1d0656bcf3f2726ee114e5e302a4e60f322d8e96
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3ee7fd96654fe0b6c2a95332b87287d3ebff3ad2
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941983"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995120"
 ---
 # <a name="manageddevice-resource-type"></a>managedDevice リソース タイプ
 
@@ -118,13 +118,13 @@ Intune 経由で管理または事前登録されるデバイス
 |managementCertificateExpirationDate|DateTimeOffset|デバイス管理証明書の有効期限を報告する|
 |iccid|String|Ic カード識別子。 SIM カードの一意の識別番号です。|
 |udid|String|IOS および macOS デバイスの一意のデバイス識別子。|
-|roleScopeTagIds|String collection|このデバイスインスタンスの範囲タグ Id のリスト。|
+|roleScopeTagIds|文字列コレクション|このデバイスインスタンスの範囲タグ Id のリスト。|
 |windowsActiveMalwareCount 再計算|Int32|この windows デバイスのアクティブなマルウェアの数|
 |windowsRemediatedMalwareCount|Int32|この windows デバイスの修復済みマルウェアの数|
 |notes|String|IT 管理者によって作成されたデバイスのメモ|
 |configurationManagerClientHealthState|[configurationManagerClientHealthState](../resources/intune-devices-configurationmanagerclienthealthstate.md)|構成マネージャークライアントの正常性状態。 MDM/ConfigMgr エージェントによって管理されるデバイスに対してのみ有効です。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |detectedApps|[detectedApp](../resources/intune-devices-detectedapp.md) コレクション|デバイスに現在インストールされているすべてのアプリケーション|
@@ -310,6 +310,7 @@ Intune 経由で管理または事前登録されるデバイス
   }
 }
 ```
+
 
 
 

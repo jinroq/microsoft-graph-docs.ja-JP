@@ -4,12 +4,12 @@ description: 特定のユーザーに対する、iOS アプリの管理機能と
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d807d81cc5f17404c3b0c02eae8bf95e20bf36e2
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: dd77c1d4d29c468a33a7620c15149380ea388695
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940891"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34975848"
 ---
 # <a name="iosmanagedappregistration-resource-type"></a>iosManagedAppRegistration リソースの種類
 
@@ -30,7 +30,7 @@ ManagedAppRegistration リソースは、組織のメンバーに使用される
 |[iosManagedAppRegistration の取得](../api/intune-mam-iosmanagedappregistration-get.md)|[iosManagedAppRegistration](../resources/intune-mam-iosmanagedappregistration.md)|[iosManagedAppRegistration](../resources/intune-mam-iosmanagedappregistration.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|作成日時 ([managedAppRegistration](../resources/intune-mam-managedappregistration.md) から継承)。|
 |lastSyncDateTime|DateTimeOffset|アプリが管理サービスと最後に同期した日時。 [managedAppRegistration](../resources/intune-mam-managedappregistration.md) から継承します|
@@ -50,7 +50,7 @@ ManagedAppRegistration リソースは、組織のメンバーに使用される
 |id|文字列|エンティティのキー。 [managedAppRegistration](../resources/intune-mam-managedappregistration.md) から継承します|
 |version|文字列型 (String)|エンティティのバージョン。 [managedAppRegistration](../resources/intune-mam-managedappregistration.md) から継承します|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |appliedPolicies|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md) コレクション|登録済みのアプリが管理サービスと最後に同期したときに、すでに適用されていた 0 個以上のポリシーです。 [managedAppRegistration](../resources/intune-mam-managedappregistration.md) から継承します|
@@ -92,6 +92,7 @@ ManagedAppRegistration リソースは、組織のメンバーに使用される
   "version": "String"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: WindowsAutopilotDeviceIdentity リソースは、Windows 自動操�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7ec5470519e0d68ef5fbd267130f4aa5ffdf8b8f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: fed9385e83a452bfda3a733d2b930a19b8ee92cb
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941451"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993888"
 ---
 # <a name="windowsautopilotdeviceidentity-resource-type"></a>windowsAutopilotDeviceIdentity リソースの種類
 
@@ -56,7 +56,7 @@ WindowsAutopilotDeviceIdentity リソースは、Windows 自動操縦デバイ�
 |azureActiveDirectoryDeviceId|String|AAD デバイス ID|
 |managedDeviceId|String|管理対象デバイス ID|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |deploymentProfile|[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|Windows 自動操縦デバイスに現在割り当てられている展開プロファイル。|
@@ -95,6 +95,7 @@ WindowsAutopilotDeviceIdentity リソースは、Windows 自動操縦デバイ�
   "managedDeviceId": "String"
 }
 ```
+
 
 
 

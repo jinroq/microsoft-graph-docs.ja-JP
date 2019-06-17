@@ -4,12 +4,12 @@ description: まだ文書化されていません
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 16d68d88e275a2488ef86cadb9ac9e8083e962a3
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 69495aa923b9944e97e603a60bd75120fa3bf778
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941514"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34992515"
 ---
 # <a name="itunespairingmode-enum-type"></a>iTunesPairingMode 列挙型
 
@@ -25,6 +25,7 @@ ms.locfileid: "33941514"
 |禁止|.0|ペアリングは許可されていません|
 |使う|1-d|ペアリングの許可|
 |requiresCertificate|pbm-2|ITunes とペアにするために必要な証明書|
+
 
 
 

@@ -4,12 +4,12 @@ description: 単一の Intune 電子ブックカテゴリのプロパティが�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0baa3dbbecd90483eeb182edf486fcd6bfdd846b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a0a8cb8e2ec1e07e86134e7cb437e3fb71483976
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949319"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34992207"
 ---
 # <a name="managedebookcategory-resource-type"></a>managedEBookCategory リソースの種類
 
@@ -35,7 +35,7 @@ ms.locfileid: "33949319"
 |displayName|String|EBook カテゴリの名前を指定します。|
 |lastModifiedDateTime|DateTimeOffset|ManagedEBookCategory が最後に変更された日付と時刻。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -54,6 +54,7 @@ ms.locfileid: "33949319"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

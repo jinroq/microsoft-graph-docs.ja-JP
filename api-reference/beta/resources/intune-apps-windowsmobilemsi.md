@@ -4,12 +4,12 @@ description: Windows Mobile MSI 基幹業務アプリケーションのプロパ
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: adf856355b7b248c54744a69666c57c9658f73f9
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: bd3840bdfc6682d189f5e1c7909f98f9861b495c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949858"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34975652"
 ---
 # <a name="windowsmobilemsi-resource-type"></a>windowsMobileMSI リソース タイプ
 
@@ -50,7 +50,7 @@ Windows Mobile MSI 基幹業務アプリケーションのプロパティと継�
 |uploadState|Int32|アップロード状態。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 [MobileApp](../resources/intune-apps-mobileapp.md)から継承されます。 可能な値は、`notPublished`、`processing`、`published` です。|
 |isAssigned|Boolean|アプリが少なくとも1つのグループに割り当てられているかどうかを示す値。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|roleScopeTagIds|String collection|このモバイルアプリの範囲タグ id のリスト。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|roleScopeTagIds|文字列コレクション|このモバイルアプリの範囲タグ id のリスト。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |dependentAppCount|Int32|子アプリが持つ依存関係の合計数。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |committedContentVersion|String|内部にコミットされたコンテンツのバージョン。 [mobileLobApp](../resources/intune-apps-mobilelobapp.md) から継承します|
 |fileName|文字列型 (String)|メインの LOB アプリケーションのファイル名。 [mobileLobApp](../resources/intune-apps-mobilelobapp.md) から継承します|
@@ -62,7 +62,7 @@ Windows Mobile MSI 基幹業務アプリケーションのプロパティと継�
 |identityVersion|String|ID のバージョン。|
 |useDeviceContext|ブール型 (Boolean)|デバイスコンテキストにデュアルモード MSI をインストールするかどうかを示します。 True の場合、すべてのユーザーに対してアプリがインストールされます。 False の場合、アプリはユーザーごとにインストールされます。 Null の場合、サービスは MSI パッケージの既定のインストールコンテキストを使用します。 デュアルモード MSI の場合、この既定値はユーザーごとになります。  デュアルモード以外のアプリには設定できません。  アプリケーションを最初に作成した後に変更することはできません。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |categories|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) コレクション|このアプリのカテゴリのリスト。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
@@ -119,6 +119,7 @@ Windows Mobile MSI 基幹業務アプリケーションのプロパティと継�
   "useDeviceContext": true
 }
 ```
+
 
 
 

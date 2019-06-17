@@ -4,18 +4,18 @@ description: テナント組織の管理デバイスを定義する Intune エ�
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: bee3080acefe6c6e2377f153dd6c58fc05850700
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0741955dd2d939c70417e27842dd1964e003a146
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949200"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965854"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Microsoft Intune でのデバイス管理
 
 > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでは、これらの API の使用はサポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing)を持っている必要があります。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 - [管理者の同意](intune-devices-adminconsent.md)
 - [管理者の同意状態](intune-devices-adminconsentstate.md)
@@ -55,6 +55,7 @@ ms.locfileid: "33949200"
 - [デバイス管理のブール設定インスタンス](intune-deviceintent-devicemanagementbooleansettinginstance.md)
 - [デバイス管理コレクション設定の定義](intune-deviceintent-devicemanagementcollectionsettingdefinition.md)
 - [デバイス管理コレクション設定インスタンス](intune-deviceintent-devicemanagementcollectionsettinginstance.md)
+- [デバイス管理の比較結果](intune-deviceintent-devicemanagementcomparisonresult.md)
 - [デバイス管理の複合設定の定義](intune-deviceintent-devicemanagementcomplexsettingdefinition.md)
 - [デバイス管理の複合設定インスタンス](intune-deviceintent-devicemanagementcomplexsettinginstance.md)
 - [デバイス管理の制約](intune-deviceintent-devicemanagementconstraint.md)
@@ -79,6 +80,7 @@ ms.locfileid: "33949200"
 - [デバイス管理スクリプト ユーザーの状態](intune-devices-devicemanagementscriptuserstate.md)
 - [デバイス管理の設定 boolean 制約](intune-deviceintent-devicemanagementsettingbooleanconstraint.md)
 - [デバイス管理設定のカテゴリ](intune-deviceintent-devicemanagementsettingcategory.md)
+- [デバイス管理の設定の比較](intune-deviceintent-devicemanagementsettingcomparison.md)
 - [デバイス管理設定の定義](intune-deviceintent-devicemanagementsettingdefinition.md)
 - [デバイス管理の設定の依存関係](intune-deviceintent-devicemanagementsettingdependency.md)
 - [デバイス管理設定インスタンス](intune-deviceintent-devicemanagementsettinginstance.md)
@@ -91,6 +93,7 @@ ms.locfileid: "33949200"
 - [デバイス管理サブスクリプション](intune-devices-devicemanagementsubscriptions.md)
 - [デバイス管理テンプレート](intune-deviceintent-devicemanagementtemplate.md)
 - [デバイス管理テンプレート設定のカテゴリ](intune-deviceintent-devicemanagementtemplatesettingcategory.md)
+- [デバイス管理テンプレートの種類](intune-deviceintent-devicemanagementtemplatetype.md)
 - [デバイス管理のトラブルシューティング エラーの詳細](intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)
 - [デバイス管理のトラブルシューティング エラーのリソース](intune-troubleshooting-devicemanagementtroubleshootingerrorresource.md)
 - [デバイス管理のトラブルシューティング イベント](intune-troubleshooting-devicemanagementtroubleshootingevent.md)

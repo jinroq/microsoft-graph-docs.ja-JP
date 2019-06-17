@@ -4,12 +4,12 @@ description: まだ文書化されていません
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 75798ec0e66086b3dbf1425d297ed7f0a29808c0
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 754579e16908edc08f3bfb7e158c9533871e36e2
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950467"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991241"
 ---
 # <a name="enterprisecodesigningcertificate-resource-type"></a>enterpriseCodeSigningCertificate リソースの種類
 
@@ -41,7 +41,7 @@ ms.locfileid: "33950467"
 |expirationDateTime|DateTimeOffset|証明書の有効期限。|
 |uploadDateTime|DateTimeOffset|CodeSigning Cert がアップロードされたときの日付時刻。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -66,6 +66,7 @@ ms.locfileid: "33950467"
   "uploadDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

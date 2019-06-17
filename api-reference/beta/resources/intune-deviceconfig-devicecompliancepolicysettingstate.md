@@ -4,12 +4,12 @@ description: 特定のデバイスに関する、デバイス コンプライア
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 22e71dc6a272a0e49e3ff0f60af90f63c44b3cfa
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3bf24f25a529c271af670c2e9e2fe3a467941099
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947126"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995512"
 ---
 # <a name="devicecompliancepolicysettingstate-resource-type"></a>deviceCompliancePolicySettingState リソースの種類
 
@@ -35,7 +35,7 @@ ms.locfileid: "33947126"
 |sources|[settingSource](../resources/intune-deviceconfig-settingsource.md) コレクション|投稿ポリシー|
 |currentValue|String|デバイスに関する設定の現在の値|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -68,6 +68,7 @@ ms.locfileid: "33947126"
   "currentValue": "String"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Google のクラウド管理を使用して COSU デバイスを登
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e4e4fdb5ef4beedc6f253480199f29994bae53f0
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 92fc907fdc0e50e5d983ac0dbb6f8a122c92641a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950803"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34992893"
 ---
 # <a name="androiddeviceownerenrollmentprofile-resource-type"></a>androidDeviceOwnerEnrollmentProfile リソースの種類
 
@@ -46,7 +46,7 @@ Google のクラウド管理を使用して COSU デバイスを登録するた�
 |qrCodeContent|String|トークン用の QR コードを生成するために使用された文字列。|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|トークンの QR コードを生成するために使用する文字列。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -78,6 +78,7 @@ Google のクラウド管理を使用して COSU デバイスを登録するた�
   }
 }
 ```
+
 
 
 

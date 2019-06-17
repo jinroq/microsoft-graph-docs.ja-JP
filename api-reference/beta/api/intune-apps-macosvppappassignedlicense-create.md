@@ -4,12 +4,12 @@ description: 新しい macOsVppAppAssignedLicense オブジェクトを作成し
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9738b39b3d30c5c246fdfd77788187a7dc46a47a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 964c722df66c409ed0b815a3a7758d9240d6d136
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935826"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34975169"
 ---
 # <a name="create-macosvppappassignedlicense"></a>MacOsVppAppAssignedLicense を作成する
 
@@ -95,6 +95,7 @@ Content-Length: 285
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
 
 
 

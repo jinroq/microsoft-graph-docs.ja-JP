@@ -4,12 +4,12 @@ description: mobileLobApp オブジェクトのプロパティとリレーショ
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 10571ba48b09837d6ecfb7246bfcba4aaaaf62d5
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c28f5ecdaac48aac82708396463489d29e4c1f08
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934993"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34973580"
 ---
 # <a name="list-mobilelobapps"></a>mobileLobApps のリスト
 
@@ -99,6 +99,7 @@ Content-Length: 1141
   ]
 }
 ```
+
 
 
 

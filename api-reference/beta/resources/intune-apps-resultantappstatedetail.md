@@ -4,12 +4,12 @@ description: 列挙アプリケーションが特定のインストール状態�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fb3978f3a4ac27db2f4e2a25fd92a4d14151f0d7
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 439a6c2b4a903a3a2e6b8dce9340e7ca4b54362d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949725"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993320"
 ---
 # <a name="resultantappstatedetail-enum-type"></a>Resultの Appstatedetail 列挙型
 
@@ -42,6 +42,7 @@ ms.locfileid: "33949725"
 |minimumOsVersionNotMet|-1002|ターゲットデバイスの OS のバージョンが、構成されている最小値を下回っています。|
 |Minimumdiskん Enot満たさ|-1001|ターゲットデバイスの使用可能なディスク領域が構成されている最小値を下回っています。|
 |プロセッサアーキテクチャ (該当する場合)|-1000|デバイスアーキテクチャ (x86/amd64 など) は、アプリケーションには適用されません。|
+
 
 
 

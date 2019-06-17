@@ -4,12 +4,12 @@ description: GroupPolicyConfiguration オブジェクトのプロパティを更
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 35f1fd1241c4f446294383b69263627bc3c43eda
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3feb1799a76c173970bcc7de4c90c1ffd3ff9954
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33905197"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34984871"
 ---
 # <a name="update-grouppolicyconfiguration"></a>GroupPolicyConfiguration を更新する
 
@@ -93,6 +93,7 @@ Content-Length: 317
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
 
 
 

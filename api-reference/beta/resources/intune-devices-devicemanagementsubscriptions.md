@@ -4,12 +4,12 @@ description: テナントのモバイルデバイス管理サブスクリプシ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 182b288fc84dfb4b98c4b810618ac09bfdbefa0d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e7f81e780ff753cd12f78cf088a54b901e8efefc
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33942186"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995316"
 ---
 # <a name="devicemanagementsubscriptions-enum-type"></a>deviceManagementSubscriptions 列挙型
 
@@ -28,6 +28,7 @@ ms.locfileid: "33942186"
 |Intアン Epremium|2/4|Microsoft Intune Premium サブスクリプション|
 |intune_EDU|8 |教育機関向け Microsoft Intune サブスクリプション|
 |intune_SMB|16|小規模企業向けの Microsoft Intune サブスクリプション|
+
 
 
 

@@ -4,12 +4,12 @@ description: アプリの発行状態を示します。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ce69b2a2743496714fdb2697cec7e37a1efbaf19
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 34e2d06701513e4070384307f49f5dfd0d2b50de
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949921"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991857"
 ---
 # <a name="mobileapppublishingstate-enum-type"></a>mobileAppPublishingState 列挙型
 
@@ -25,6 +25,7 @@ ms.locfileid: "33949921"
 |notPublished|.0|アプリはまだ公開されていません。|
 |プロセッシング|1-d|アプリは、サービス側の処理を保留しています。|
 |済み|pbm-2|アプリが発行されます。|
+
 
 
 

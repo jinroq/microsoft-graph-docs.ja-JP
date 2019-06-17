@@ -4,12 +4,12 @@ description: BitLocker 回復オプション。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3f5ffc5c3246dbe8eeafd39df6669079e060f0da
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: bf88795ac9f2708bc03607bc5d48d5ec69a822eb
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947507"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991052"
 ---
 # <a name="bitlockerrecoveryoptions-resource-type"></a>bitLockerRecoveryOptions リソースの種類
 
@@ -30,7 +30,7 @@ BitLocker 回復オプション。
 |recoveryInformationToStore|[bitLockerRecoveryInformationType](../resources/intune-deviceconfig-bitlockerrecoveryinformationtype.md)|AD DS に格納される BitLocker 回復情報の種類を構成します。 可能な値は、`passwordAndKey`、`passwordOnly` です。|
 |enableBitLockerAfterRecoveryInformationToStore|Boolean|AD DS に回復情報が格納されるまで BitLocker を有効にするかどうかを示します。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -52,6 +52,7 @@ BitLocker 回復オプション。
   "enableBitLockerAfterRecoveryInformationToStore": true
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: DeviceManagementTemplateSettingCategory オブジェクトのプロ
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a91c4dc6724a270205b24e6fe0ad05ad08b09814
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6829cc41efec17f038a01eab685b01e24d0004be
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33915509"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959622"
 ---
 # <a name="list-devicemanagementtemplatesettingcategories"></a>DeviceManagementTemplateSettingCategories を一覧表示する
 
@@ -74,6 +74,7 @@ Content-Length: 215
   ]
 }
 ```
+
 
 
 

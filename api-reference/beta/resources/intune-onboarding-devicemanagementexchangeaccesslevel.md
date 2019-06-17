@@ -4,12 +4,12 @@ description: Exchange のアクセスレベル。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 853cda5253f01b9d6b108d59de89bcc678def581
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5b2c2c4e4a34a9a28dd10350bee592f9ba5dc63d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940394"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993117"
 ---
 # <a name="devicemanagementexchangeaccesslevel-enum-type"></a>deviceManagementExchangeAccessLevel 列挙型
 
@@ -26,6 +26,7 @@ Exchange のアクセスレベル。
 |使う|1-d|デバイスへのアクセスを Exchange に許可します。|
 |拒否|pbm-2|デバイスによる Exchange へのアクセスをブロックします。|
 |済み|1/3|Exchange でデバイスを検疫します。|
+
 
 
 

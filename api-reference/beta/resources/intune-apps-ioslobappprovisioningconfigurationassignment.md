@@ -4,12 +4,12 @@ description: IOS LOB アプリのプロビジョニングと構成のグルー�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 46b4cb7d6d41cef9da9bbebbaefef5af1041c142
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 9dcc0eebdc29c045820c4b2ddbc87f3b6c6dd234
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950432"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991178"
 ---
 # <a name="ioslobappprovisioningconfigurationassignment-resource-type"></a>Ioslobappプロビジョニング Configurationassignment リソースの種類
 
@@ -34,7 +34,7 @@ IOS LOB アプリのプロビジョニングと構成のグループ割り当て
 |id|String|エンティティのキー。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|管理者によって定義された、ターゲット グループの割り当て。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -54,6 +54,7 @@ IOS LOB アプリのプロビジョニングと構成のグループ割り当て
   }
 }
 ```
+
 
 
 

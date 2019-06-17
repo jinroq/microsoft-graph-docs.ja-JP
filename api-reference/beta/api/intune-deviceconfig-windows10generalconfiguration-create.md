@@ -4,12 +4,12 @@ description: 新しい windows10GeneralConfiguration オブジェクトを作成
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6b109465ce3d7bd944c6e56705522059dc72f26d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: bdaaa2fba426c7325d0b456ddbb6de3cbb3f70ba
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33921661"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34975995"
 ---
 # <a name="create-windows10generalconfiguration"></a>Create windows10GeneralConfiguration
 
@@ -53,8 +53,11 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |:---|:---|:---|
 |id|文字列|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|roleScopeTagIds|文字列コレクション|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |supportsScopeTags|Boolean|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|このポリシーの OS エディションの適用。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|このポリシーの OS バージョン適用ルール。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|Devicemanagementの信頼性ルール Devicemode|[Devicemanagementの信頼性ルール Devicemode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|このポリシーのデバイスモード適用ルール。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |description|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|管理者が指定した、デバイス構成の名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
@@ -67,8 +70,8 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |authenticationWebSignIn|[購入](../resources/intune-shared-enablement.md)|Web 資格情報プロバイダーを有効にするかどうかを示します。 可能な値は、`notConfigured`、`enabled`、`disabled` です。|
 |authenticationPreferredAzureADTenantDomainName|String|Azure AD テナント内の使用可能なドメイン間で優先ドメインを指定します。|
 |cryptographyAllowFipsAlgorithmPolicy|Boolean|連邦情報処理規格 (FIPS) ポリシーを許可または禁止するかどうかを指定します。|
-|displayAppListWithGdiDPIScalingTurnedOn|String collection|GDI DPI スケールが有効になっているレガシアプリケーションの一覧。|
-|displayAppListWithGdiDPIScalingTurnedOff|String collection|GDI DPI スケールがオフになっているレガシアプリケーションの一覧。|
+|displayAppListWithGdiDPIScalingTurnedOn|文字列コレクション|GDI DPI スケールが有効になっているレガシアプリケーションの一覧。|
+|displayAppListWithGdiDPIScalingTurnedOff|文字列コレクション|GDI DPI スケールがオフになっているレガシアプリケーションの一覧。|
 |enterpriseCloudPrintDiscoveryEndPoint|String|クラウド プリンターを検出するエンドポイント。|
 |enterpriseCloudPrintOAuthAuthority|String|OAuth トークンを取得するための認証エンドポイント。|
 |enterpriseCloudPrintOAuthClientIdentifier|String|OAuth 認証機関から OAuth トークンを取得することを承認されているクライアント アプリケーションの GUID。|
@@ -77,9 +80,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |enterpriseCloudPrintMopriaDiscoveryResourceIdentifier|String|Azure Portal で構成されているプリンター検出サービスの OAuth リソース URI。|
 |experienceDoNotSyncBrowserSettings|[browserSyncSetting](../resources/intune-deviceconfig-browsersyncsetting.md)|Microsoft Edge ブラウザーの設定の同期を許可または禁止します。 デバイス間の同期を禁止し、ユーザーによる上書きを許可する IT 管理者のオプション。 可能な値は、`notConfigured`、`blockedWithUserOverride`、`blocked` です。|
 |messagingBlockSync|Boolean|テキストメッセージのバックアップと復元、およびメッセージングのすべてをブロックするかどうかを示します。|
-|messagingBlockMMS|Boolean|デバイス上の MMS 送受信機能をブロックするかどうかを示します。|
-|messagingBlockRichCommunicationServices|Boolean|デバイスで RCS の送受信機能を禁止するかどうかを示します。|
-|printerNames|String collection|名前 (ネットワークホスト名) に基づいて、プリンターを自動的にプロビジョニングします。|
+|messagingBlockMMS|Boolean|デバイス上での MMS 送受信機能をブロックするかどうかを示します。|
+|messagingBlockRichCommunicationServices|Boolean|デバイス上での RCS の送受信機能を禁止するかどうかを示します。|
+|printerNames|文字列コレクション|名前 (ネットワークホスト名) に基づいて、プリンターを自動的にプロビジョニングします。|
 |プリンター Defaultname|String|インストールされているプリンターの名前 (ネットワークホスト名)。|
 |プリンターブロックの追加|Boolean|ユーザーがプリンター設定から追加のプリンターをインストールできないようにします。|
 |searchBlockDiacritics|Boolean|検索で分音記号を使用できるかどうかを指定します。|
@@ -100,7 +103,8 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |inkWorkspaceAccess|[inkAccessSetting](../resources/intune-deviceconfig-inkaccesssetting.md)|インクワークスペースへのユーザーアクセスをデスクトップから、またはロック画面の上から制御します。 可能な値は、`notConfigured`、`enabled`、`disabled` です。|
 |inkWorkspaceAccessState|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|インクワークスペースへのユーザーアクセスをデスクトップから、またはロック画面の上から制御します。 可能な値は、`notConfigured`、`blocked`、`allowed` です。|
 |inkWorkspaceBlockSuggestedApps|Boolean|インクワークスペースに推奨されるアプリ候補を表示するかどうかを指定します。|
-|smartScreenEnableAppInstallControl|Boolean|ユーザーがストア以外の場所からアプリをインストールできるかどうかを IT 管理者が制御することを許可します。|
+|smartScreenEnableAppInstallControl|Boolean|このプロパティは2019年7月に廃止され、プロパティ SmartScreenAppInstallControl に置き換えられます。 ユーザーがストア以外の場所からアプリをインストールできるかどうかを IT 管理者が制御することを許可します。|
+|smartScreenAppInstallControl|[appInstallControlType](../resources/intune-deviceconfig-appinstallcontroltype.md)|Windows 10 バージョン1703で追加されました。 ユーザーがストア以外の場所からアプリをインストールできるかどうかを IT 管理者が制御することを許可します。 可能な値は、`notConfigured`、`anywhere`、`storeOnly`、`recommendations`、`preferStore` です。|
 |personalizationDesktopImageUrl|String|ダウンロードしてデスクトップ画像として使用する必要がある jpg、jpeg、png 画像の http または https URL、あるいはデスクトップ画像として使用する必要があるファイル システム上のローカル画像のファイル URL。|
 |personalizationLockScreenImageUrl|String|ダウンロードしてロック画面画像として使用する必要がある jpg、jpeg、png 画像の http または https URL、あるいはロック画面画像として使用する必要があるファイル システム上のローカル画像のファイル URL。|
 |bluetoothAllowedServices|String コレクション|許可されている Bluetooth サービスおよびプロファイルの一覧を 16 進形式の文字列として指定します。|
@@ -131,7 +135,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |edgeHomeButtonConfigurationEnabled|Boolean|ホームボタンの構成を有効にします。|
 |edgeOpensWith|[edgeOpenOptions](../resources/intune-deviceconfig-edgeopenoptions.md)|開始時に開くページの種類を指定します。 可能な値は、`notConfigured`、`startPage`、`newTabPage`、`previousPages`、`specificPages` です。|
 |edgeBlockSideloadingExtensions|Boolean|ユーザーが拡張機能をサイドロードできるかどうかを示します。|
-|edgeRequiredExtensionPackageFamilyNames|String collection|必要なブラウザー拡張機能のパッケージファミリ名のリストを指定します。ユーザーが無効にすることはできません。|
+|edgeRequiredExtensionPackageFamilyNames|文字列コレクション|必要なブラウザー拡張機能のパッケージファミリ名のリストを指定します。ユーザーが無効にすることはできません。|
 |edgeBlockPrinting|Boolean|印刷を許可またはブロックするようにエッジを構成します。|
 |edgeFavoritesBarVisibility|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|[お気に入り] バーを常に表示または非表示に設定するかどうかを指定する値を取得または設定します。 可能な値は、`notConfigured`、`hide`、`show` です。|
 |edgeBlockSavingHistory|Boolean|閲覧履歴を保存できるようにエッジを構成するか、閲覧履歴を保存しないようにします。|
@@ -151,8 +155,8 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |defenderDaysBeforeDeletingQuarantinedMalware|Int32|検疫済みのマルウェアを削除するまでの日数。 有効な値は 0 から 90 までです|
 |defenderDetectedMalwareActions|[defenderDetectedMalwareActions](../resources/intune-deviceconfig-defenderdetectedmalwareactions.md)|検出されたマルウェアに対する Defender のアクションを脅威レベルごとに取得または設定します。|
 |defenderSystemScanSchedule|[weeklySchedule](../resources/intune-deviceconfig-weeklyschedule.md)|Defender がシステムをスキャンする曜日。 可能な値は、`userDefined`、`everyday`、`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday` です。|
-|defenderFilesAndFoldersToExclude|String collection|スキャンとリアルタイム保護から除外するファイルとフォルダー。|
-|defenderFileExtensionsToExclude|String collection|スキャンとリアルタイム保護から除外するファイル拡張子。|
+|defenderFilesAndFoldersToExclude|文字列コレクション|スキャンとリアルタイム保護から除外するファイルとフォルダー。|
+|defenderFileExtensionsToExclude|文字列コレクション|スキャンとリアルタイム保護から除外するファイル拡張子。|
 |defenderScanMaxCpu|Int32|スキャン中の最大 CPU 使用率。 有効な値は 0 から 100 までです|
 |defenderMonitorFileActivity|[defenderMonitorFileActivity](../resources/intune-deviceconfig-defendermonitorfileactivity.md)|ファイル アクティビティを監視する値。 可能な値は、`userDefined`、`disable`、`monitorAllFiles`、`monitorIncomingFilesOnly`、`monitorOutgoingFilesOnly` です。|
 |defenderPotentiallyUnwantedAppAction|[defenderPotentiallyUnwantedAppAction](../resources/intune-deviceconfig-defenderpotentiallyunwantedappaction.md)|望ましくない可能性があるアプリケーション (PUA) に対して実行する Defender のアクションを取得または設定します。これには、ad インジェクション、ソフトウェアバンドル、支払いまたはサブスクリプションのための永続的な勧誘などの動作を備えたソフトウェアが含まれます。PUA がダウンロードされているとき、またはインストールしようとしているときに、Defender でユーザーに通知します。 Windows 10 でデスクトップ用に追加されました。 可能な値は、`deviceDefault`、`block`、`audit` です。|
@@ -187,6 +191,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |lockScreenBlockCortana|Boolean|システムのロック中にユーザーが音声認識を使用して Cortana と対話できるかどうかを示します。|
 |lockScreenBlockToastNotifications|Boolean|デバイスのロック画面へのトースト通知を許可するかどうかを示します。|
 |lockScreenTimeoutInSeconds|Int32|Windows 10 Mobile デバイスで画面をロックしてから画面をオフにするまでの時間 (秒) を設定します。 サポートされている値は 11 から 1800 までです。 有効な値は 11 から 1800 までです|
+|Lockscreen/Appswithvoice|[購入](../resources/intune-shared-enablement.md)|このポリシー設定では、システムがロックされている間に、Windows アプリを音声でアクティブ化できるかどうかを指定します。 可能な値は、`notConfigured`、`enabled`、`disabled` です。|
 |passwordBlockSimple|Boolean|"1111" や "1234" などの PIN またはパスワードを許可するかどうかを指定します。 Windows 10 デスクトップでは、ピクチャ パスワードの使用も制御します。|
 |passwordExpirationDays|Int32|パスワードの有効期限 (日数)。 有効な値は 0 から 730 までです|
 |passwordMinimumLength|Int32|パスワードの最小文字数。 有効な値は 4 から 16 までです|
@@ -324,7 +329,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |appManagementMSIAllowUserControlOverInstall|Boolean|このポリシー設定では、通常、システム管理者のみが使用できるインストールオプションをユーザーが変更することができます。|
 |appManagementMSIAlwaysInstallWithElevatedPrivileges|Boolean|このポリシー設定は、システムにプログラムをインストールするときに、管理者特権でのアクセス許可を使用するように Windows インストーラーに指示します。|
 |dataProtectionBlockDirectMemoryAccess|Boolean|このポリシー設定を使用すると、ユーザーが Windows にログインしない限り、ホットプラグ可能な PCI 下流ポートすべてのダイレクトメモリアクセス (DMA) をブロックすることができます。|
-|appManagementPackageFamilyNamesToLaunchAfterLogOn|String collection|Windows アプリの、セミコロンで区切られたパッケージファミリー名のリスト。 表示された Windows アプリは、ログオン後に起動されます。|
+|appManagementPackageFamilyNamesToLaunchAfterLogOn|文字列コレクション|Windows アプリの、セミコロンで区切られたパッケージファミリー名のリスト。 表示された Windows アプリは、ログオン後に起動されます。|
 
 
 
@@ -338,7 +343,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 13518
+Content-length: 14387
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
@@ -346,6 +351,27 @@ Content-length: 13518
     "Role Scope Tag Ids value"
   ],
   "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+    "osEditionTypes": [
+      "windows10EnterpriseN"
+    ],
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleOsVersion": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+    "minOSVersion": "Min OSVersion value",
+    "maxOSVersion": "Max OSVersion value",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleDeviceMode": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+    "deviceMode": "sModeConfiguration",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
@@ -402,6 +428,7 @@ Content-length: 13518
   "inkWorkspaceAccessState": "blocked",
   "inkWorkspaceBlockSuggestedApps": true,
   "smartScreenEnableAppInstallControl": true,
+  "smartScreenAppInstallControl": "anywhere",
   "personalizationDesktopImageUrl": "https://example.com/personalizationDesktopImageUrl/",
   "personalizationLockScreenImageUrl": "https://example.com/personalizationLockScreenImageUrl/",
   "bluetoothAllowedServices": [
@@ -506,6 +533,7 @@ Content-length: 13518
   "lockScreenBlockCortana": true,
   "lockScreenBlockToastNotifications": true,
   "lockScreenTimeoutInSeconds": 10,
+  "lockScreenActivateAppsWithVoice": "enabled",
   "passwordBlockSimple": true,
   "passwordExpirationDays": 6,
   "passwordMinimumLength": 5,
@@ -665,7 +693,7 @@ Content-length: 13518
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 13690
+Content-Length: 14559
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
@@ -675,6 +703,27 @@ Content-Length: 13690
     "Role Scope Tag Ids value"
   ],
   "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+    "osEditionTypes": [
+      "windows10EnterpriseN"
+    ],
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleOsVersion": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+    "minOSVersion": "Min OSVersion value",
+    "maxOSVersion": "Max OSVersion value",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleDeviceMode": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+    "deviceMode": "sModeConfiguration",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "description": "Description value",
   "displayName": "Display Name value",
@@ -732,6 +781,7 @@ Content-Length: 13690
   "inkWorkspaceAccessState": "blocked",
   "inkWorkspaceBlockSuggestedApps": true,
   "smartScreenEnableAppInstallControl": true,
+  "smartScreenAppInstallControl": "anywhere",
   "personalizationDesktopImageUrl": "https://example.com/personalizationDesktopImageUrl/",
   "personalizationLockScreenImageUrl": "https://example.com/personalizationLockScreenImageUrl/",
   "bluetoothAllowedServices": [
@@ -836,6 +886,7 @@ Content-Length: 13690
   "lockScreenBlockCortana": true,
   "lockScreenBlockToastNotifications": true,
   "lockScreenTimeoutInSeconds": 10,
+  "lockScreenActivateAppsWithVoice": "enabled",
   "passwordBlockSimple": true,
   "passwordExpirationDays": 6,
   "passwordMinimumLength": 5,
@@ -989,6 +1040,7 @@ Content-Length: 13690
   ]
 }
 ```
+
 
 
 

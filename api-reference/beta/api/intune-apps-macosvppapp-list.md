@@ -4,12 +4,12 @@ description: MacOsVppApp オブジェクトのプロパティとリレーショ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a939f5e46d792ae1a1a86d46eb9e7965c6fbf271
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 9cc9f6b92a927aefa8ce30b248bd3a2f1cc39aaf
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935840"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34975176"
 ---
 # <a name="list-macosvppapps"></a>MacOsVppApps のリスト
 
@@ -126,6 +126,7 @@ Content-Length: 2294
   ]
 }
 ```
+
 
 
 

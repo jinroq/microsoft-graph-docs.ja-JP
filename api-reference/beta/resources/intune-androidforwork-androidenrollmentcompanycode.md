@@ -4,12 +4,12 @@ description: トークン、Url、QR コードコンテンツなど、Google の
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6110385caa6c1ac2a84f17160acc996a4b922107
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e1bc92a624e17c9fd0e3d4bb5116bbfbb7c38369
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950810"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34992900"
 ---
 # <a name="androidenrollmentcompanycode-resource-type"></a>androidEnrollmentCompanyCode リソースの種類
 
@@ -26,7 +26,7 @@ ms.locfileid: "33950810"
 |qrCodeContent|String|トークンの QR コードを生成するために使用する文字列。|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|トークンの生成された QR コード。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -48,6 +48,7 @@ ms.locfileid: "33950810"
   }
 }
 ```
+
 
 
 

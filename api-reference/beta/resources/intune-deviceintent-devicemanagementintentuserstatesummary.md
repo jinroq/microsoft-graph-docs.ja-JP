@@ -4,12 +4,12 @@ description: 目的のユーザー状態の概要を表すエンティティ
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0b4b13d4dc368c52686aa4d003a0f5995762ec56
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ce652aae0fdc429436b1d9b170ae635b591e2796
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943454"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34963969"
 ---
 # <a name="devicemanagementintentuserstatesummary-resource-type"></a>deviceManagementIntentUserStateSummary リソースの種類
 
@@ -35,7 +35,7 @@ ms.locfileid: "33943454"
 |notApplicableCount|Int32|該当しないユーザーの数|
 |successCount|Int32|成功したユーザーの数|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -57,6 +57,7 @@ ms.locfileid: "33943454"
   "successCount": 1024
 }
 ```
+
 
 
 

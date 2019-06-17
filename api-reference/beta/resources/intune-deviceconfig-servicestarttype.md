@@ -4,12 +4,12 @@ description: Xbox サービスの開始の種類の可能な値
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ce6f4da06b12e8dc59aa7e5e4d65d0162c17c13a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: af18032303bf6804ee4368fba5edb063df52499d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944776"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34964333"
 ---
 # <a name="servicestarttype-enum-type"></a>serviceStartType 列挙型
 
@@ -25,6 +25,7 @@ Xbox サービスの開始の種類の可能な値
 |手動|.0|手動サービス開始の種類 (既定)|
 |自動|1-d|サービスの自動開始の種類|
 |党|pbm-2|サービスの開始の種類が無効|
+
 
 
 

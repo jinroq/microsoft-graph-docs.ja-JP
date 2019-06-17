@@ -4,12 +4,12 @@ description: SecurityBaselineStateSummary オブジェクトのプロパティ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f38b58d59eab1bc74b622c968cab110da39d856d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 176742c9e1151913f01a863aa11c2cfdac2e832f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33914472"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959481"
 ---
 # <a name="update-securitybaselinestatesummary"></a>SecurityBaselineStateSummary の更新
 
@@ -101,6 +101,7 @@ Content-Length: 262
   "notApplicableCount": 2
 }
 ```
+
 
 
 

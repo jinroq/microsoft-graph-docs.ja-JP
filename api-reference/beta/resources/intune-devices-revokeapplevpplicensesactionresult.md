@@ -4,12 +4,12 @@ description: Apple Vpp ライセンスの取り消しの操作結果
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3646aa2cf790b599abdef38eb62df1118e67d9f8
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: fe831c36af1cfbe29d4b5bcc0dd2daa2a148a01a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941809"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34963829"
 ---
 # <a name="revokeapplevpplicensesactionresult-resource-type"></a>revokeAppleVppLicensesActionResult リソースの種類
 
@@ -32,7 +32,7 @@ Apple Vpp ライセンスの取り消しの操作結果
 |合計の合計数|Int32|関連付けられている Apple Vpp ライセンスの合計数|
 |failedLicensesCount|Int32|失効に失敗した Apple Vpp ライセンスの合計数|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -53,6 +53,7 @@ Apple Vpp ライセンスの取り消しの操作結果
   "failedLicensesCount": 1024
 }
 ```
+
 
 
 

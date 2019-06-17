@@ -4,12 +4,12 @@ description: DeviceManagementIntentAssignment オブジェクトのプロパテ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6781ade251b6415abb94bb973eb73b10a0a1b88e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 548faf1dce2c8eeef0a6c369894ecdaace64e1ff
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33916911"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34960371"
 ---
 # <a name="list-devicemanagementintentassignments"></a>DeviceManagementIntentAssignments のリスト
 
@@ -76,6 +76,7 @@ Content-Length: 274
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Win32 アプリのリターンコードプロパティを格納し�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a37236064abb2e792e9227b8f76f32e1fd3ff9d9
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 34bda91a0374c57ef4f5ca6e51bc006c80592361
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949480"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34975778"
 ---
 # <a name="win32lobappreturncode-resource-type"></a>win32LobAppReturnCode リソースの種類
 
@@ -25,7 +25,7 @@ Win32 アプリのリターンコードプロパティを格納します。
 |returnCode|Int32|コードを返します。|
 |type|[win32LobAppReturnCodeType](../resources/intune-apps-win32lobappreturncodetype.md)|戻り値のコードの種類を示します。 可能な値は、`failed`、`success`、`softReboot`、`hardReboot`、`retry` です。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -42,6 +42,7 @@ Win32 アプリのリターンコードプロパティを格納します。
   "type": "String"
 }
 ```
+
 
 
 

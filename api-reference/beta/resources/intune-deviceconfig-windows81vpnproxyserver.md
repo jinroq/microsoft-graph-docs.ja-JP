@@ -4,12 +4,12 @@ description: VPN プロキシサーバー。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 26f15e8e2b6982c322ffc78cb9d6270b08bcbc3c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 75958584e0fb0dbb442b38954438567bffa1b2fb
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944244"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991745"
 ---
 # <a name="windows81vpnproxyserver-resource-type"></a>windows81VpnProxyServer リソースの種類
 
@@ -31,7 +31,7 @@ VPN プロキシサーバー。
 |自動的に検出する Proxysettings|Boolean|プロキシの設定を自動的に検出します。|
 |bypassProxyServerForLocalAddress|Boolean|ローカルアドレスにはプロキシサーバーを使用しないでください。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -51,6 +51,7 @@ VPN プロキシサーバー。
   "bypassProxyServerForLocalAddress": true
 }
 ```
+
 
 
 

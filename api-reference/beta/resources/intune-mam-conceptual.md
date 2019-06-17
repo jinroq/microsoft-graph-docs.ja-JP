@@ -4,18 +4,18 @@ description: テナント組織のモバイルアプリ管理 (MAM) に関連す
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 80c9296dc0cb52d094647df60145630c18ea1776
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3d35b562564e43e6e96dd8d6479f48de149c20f2
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940919"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991920"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Microsoft Intune で会社のアプリ データを保護する方法
 
 > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでは、これらの API の使用はサポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing)を持っている必要があります。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 Microsoft Intune のアプリ保護ポリシーは、会社のデータを保護し、データの損失を防ぐのに役立ちます。
 
@@ -44,6 +44,7 @@ Intune のアプリ保護ポリシーを使用して、会社のデータを保�
 - [管理対象アプリのデータ転送レベル](intune-mam-managedappdatatransferlevel.md)
 - [管理対象アプリの診断状態](intune-mam-managedappdiagnosticstatus.md)
 - [管理対象アプリのフラグ付き理由](intune-mam-managedappflaggedreason.md)
+- [管理対象アプリの通知制限](intune-mam-managedappnotificationrestriction.md)
 - [管理対象アプリの操作](intune-mam-managedappoperation.md)
 - [管理対象アプリの暗証番号 (PIN) 文字セット](intune-mam-managedapppincharacterset.md)
 - [管理対象アプリ ポリシー](intune-mam-managedapppolicy.md)

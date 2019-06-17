@@ -4,12 +4,12 @@ description: 指定されたロケールの通知メッセージ テンプレー
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 473aad924d3dd9e0857c364230ec8391bf92b451
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e357eaaa80600b6791c5b0a03132f0ef1c9f081b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940492"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994393"
 ---
 # <a name="localizednotificationmessage-resource-type"></a>localizedNotificationMessage リソースの種類
 
@@ -38,7 +38,7 @@ ms.locfileid: "33940492"
 |messageTemplate|String|メッセージ テンプレートのコンテンツ。|
 |isDefault|ブール型 (Boolean)|言語フォールバック用の既定ロケールかどうかを示すフラグ。 このフラグは設定のみ可能です。 設定解除するには、このプロパティを別のローカライズされた通知メッセージで有効にします。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -60,6 +60,7 @@ ms.locfileid: "33940492"
   "isDefault": true
 }
 ```
+
 
 
 

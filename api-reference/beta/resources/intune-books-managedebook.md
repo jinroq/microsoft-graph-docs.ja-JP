@@ -4,12 +4,12 @@ description: 管理対象電子ブックの基本プロパティを含む抽象�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7a9248a2bca56188deb913159d9ff664ce8d9b48
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 8bf13e2c0a5c8e55a397516c21fe91d65aa413a5
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949298"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991654"
 ---
 # <a name="managedebook-resource-type"></a>managedEBook リソースの種類
 
@@ -27,7 +27,7 @@ ms.locfileid: "33949298"
 |[アクションの割り当て](../api/intune-books-managedebook-assign.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |id|文字列|エンティティのキー。|
 |displayName|String|電子ブックの名前。|
@@ -40,7 +40,7 @@ ms.locfileid: "33949298"
 |informationUrl|String|詳細情報の URL。|
 |privacyInformationUrl|String|プライバシーに関する声明の URL。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |categories|[Managedebookcategory](../resources/intune-books-managedebookcategory.md)コレクション|この電子ブックのカテゴリのリスト。|
@@ -76,6 +76,7 @@ ms.locfileid: "33949298"
   "privacyInformationUrl": "String"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Android For Work クロスプロファイルデータ共有タイ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 02cb8a8c2946ec2458698e2c8a6eb46056ee98c4
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 29819b0e18c689056bc0c3d27b869ac8092e6d96
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949018"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34992214"
 ---
 # <a name="androidforworkcrossprofiledatasharingtype-enum-type"></a>androidForWorkCrossProfileDataSharingType 列挙型
 
@@ -26,6 +26,7 @@ Android For Work クロスプロファイルデータ共有タイプ。
 |preventAny|1-d|共有を禁止します。|
 |allowPersonalToWork|pbm-2|個人プロファイルから作業プロファイルへのデータ共有要求を許可します。|
 |noRestrictions|1/3|共有の制限はありません。|
+
 
 
 

@@ -4,12 +4,12 @@ description: 新しい deviceManagementStringSettingInstance オブジェクト�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d57cea9f9bb41d0ebb4ea2a61fb332488cd5ef1c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0c62de0116d64cbad78ef17289f5a062aa42122b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33915790"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959839"
 ---
 # <a name="create-devicemanagementstringsettinginstance"></a>DeviceManagementStringSettingInstance の作成
 
@@ -95,6 +95,7 @@ Content-Length: 233
   "value": "Value value"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: ユーザーの PFX 証明書に必要なすべての情報をカ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e9c4af075d026c036b31ac9083ff05aec07b0bb6
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5af5e871ba9818b6c57daeb28bcccbe58b88a0ef
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940065"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993677"
 ---
 # <a name="userpfxcertificate-resource-type"></a>userPFXCertificate リソースの種類
 
@@ -45,7 +45,7 @@ ms.locfileid: "33940065"
 |createdDateTime|DateTimeOffset|この PFX 証明書がインポートされた日付/時刻です。|
 |lastModifiedDateTime|DateTimeOffset|この PFX 証明書が最後に変更された日付/時刻。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -74,6 +74,7 @@ ms.locfileid: "33940065"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

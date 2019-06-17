@@ -4,12 +4,12 @@ description: 派生した資格情報のプロバイダーの種類。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 48ed512c24bbc481dc79f7b09ec1f14a1352459d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 7d6eab516a43589a40f4503f4bcfaa7c7c888ca3
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947170"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979558"
 ---
 # <a name="derivedcredentialprovidertype-enum-type"></a>derivedCredentialProviderType 列挙型
 
@@ -27,6 +27,7 @@ ms.locfileid: "33947170"
 |purebred|pbm-2|Purebred 情報システムエージェンシー。|
 |xTec|1/3|Xtec - AuthentX.|
 |intercede|2/4|Intercede.|
+
 
 
 

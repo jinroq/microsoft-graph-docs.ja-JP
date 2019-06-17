@@ -4,12 +4,12 @@ description: デバイス構成グループの割り当て。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fc42e9cf328319e5a6fa2274e091be9a4776a5fa
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b5cbf74a89b154a8f38991976eb4024ca17fd6a1
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947030"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995946"
 ---
 # <a name="deviceconfigurationgroupassignment-resource-type"></a>deviceConfigurationGroupAssignment リソースの種類
 
@@ -29,13 +29,13 @@ ms.locfileid: "33947030"
 |[DeviceConfigurationGroupAssignment の更新](../api/intune-deviceconfig-deviceconfigurationgroupassignment-update.md)|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|[DeviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティのキー。|
 |targetGroupId|String|デバイス構成を対象としている AAD グループの Id。|
 |excludeGroup|Boolean|このグループを除外する必要があるかどうかを示します。 グループが含まれる既定値|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |deviceConfiguration|[deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|対象とするデバイス構成へのナビゲーションリンク。|
@@ -56,6 +56,7 @@ ms.locfileid: "33947030"
   "excludeGroup": true
 }
 ```
+
 
 
 

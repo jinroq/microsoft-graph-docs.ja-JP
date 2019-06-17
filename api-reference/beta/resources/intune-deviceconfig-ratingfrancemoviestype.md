@@ -4,12 +4,12 @@ description: フランスでの映画の定格ラベル
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9432640a5f2d4ab861a553129b7e29a8aea4a3f9
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 507959d9ba1c245c9bceb99e3e5ccd4fd5ded8c9
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951104"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995750"
 ---
 # <a name="ratingfrancemoviestype-enum-type"></a>ratingFranceMoviesType 列挙型
 
@@ -28,6 +28,7 @@ ms.locfileid: "33951104"
 |agesAbove12|1/3|12の分類では、未成年者へのフィルムの審査が12で禁止されています。|
 |agesAbove16|2/4|16の分類では、16下の未成年者へのフィルムの審査を禁止します。|
 |agesAbove18|5|18の分類では、未成年者への審査が18歳未満で禁止されています。|
+
 
 
 

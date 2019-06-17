@@ -4,12 +4,12 @@ description: デバイスに設定を適用する目的を表すエンティテ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 976a13bb8ac542e67ebdd0422669cd866cc70af6
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3b840a8865545080370c5bfc8c0471f0137c746e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943446"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34964074"
 ---
 # <a name="devicemanagementintent-resource-type"></a>deviceManagementIntent リソースの種類
 
@@ -30,9 +30,10 @@ ms.locfileid: "33943446"
 |[updateSettings アクション](../api/intune-deviceintent-devicemanagementintent-updatesettings.md)|なし|まだ文書化されていません|
 |[migrateToTemplate アクション](../api/intune-deviceintent-devicemanagementintent-migratetotemplate.md)|なし|まだ文書化されていません|
 |[assign アクション](../api/intune-deviceintent-devicemanagementintent-assign.md)|なし|まだ文書化されていません|
+|[compare 関数](../api/intune-deviceintent-devicemanagementintent-compare.md)|[Devicemanagementsettingcomparison](../resources/intune-deviceintent-devicemanagementsettingcomparison.md)コレクション|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |id|文字列|インテント ID|
 |displayName|String|ユーザーが指定した表示名|
@@ -40,8 +41,9 @@ ms.locfileid: "33943446"
 |isAssigned|Boolean|目的がユーザーに割り当てられているかどうかを表します。|
 |lastModifiedDateTime|DateTimeOffset|目的が最後に変更された日時|
 |templateId|String|この目的が作成されたテンプレートの ID (存在する場合)|
+|roleScopeTagIds|文字列コレクション|このエンティティインスタンスの範囲タグのリスト。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |settings|[Devicemanagementsettinginstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)コレクション|適用されるすべての設定のコレクション|
@@ -69,9 +71,13 @@ ms.locfileid: "33943446"
   "description": "String",
   "isAssigned": true,
   "lastModifiedDateTime": "String (timestamp)",
-  "templateId": "String"
+  "templateId": "String",
+  "roleScopeTagIds": [
+    "String"
+  ]
 }
 ```
+
 
 
 

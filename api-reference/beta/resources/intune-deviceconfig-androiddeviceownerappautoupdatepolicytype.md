@@ -4,12 +4,12 @@ description: Android デバイス所有者デバイスのアプリ自動更新�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 92ea62ccd7f1077558d91eef4ca9e4f7157ec258
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 703e8bbb46ae289acfa09267052f9c78fe0da912
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949193"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965719"
 ---
 # <a name="androiddeviceownerappautoupdatepolicytype-enum-type"></a>androidDeviceOwnerAppAutoUpdatePolicyType 列挙型
 
@@ -27,6 +27,7 @@ Android デバイス所有者デバイスのアプリ自動更新ポリシーの
 |ぜんぜん|pbm-2|アプリが自動更新されることはありません。|
 |wiFiOnly|1/3|アプリは Wi-fi 経由で自動更新されます。|
 |いつも|2/4|アプリはいつでも自動更新されます。 データ料金が適用される場合があります。|
+
 
 
 

@@ -4,12 +4,12 @@ description: Windows デバイスの種類のプロパティが含まれてい�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8481fdeebccec9788d1d2d2c0691f1dd6877297e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 76516a9d37fc3e9ff1e8c7efed42f3eef1f13a97
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949879"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34975680"
 ---
 # <a name="windowsdevicetype-enum-type"></a>windowsDeviceType 列挙型
 
@@ -27,6 +27,7 @@ Windows デバイスの種類のプロパティが含まれています。
 |体|pbm-2|モバイル Windows デバイスの種類がサポートされているかどうか。|
 |holographic|2/4|Holographic Windows デバイスの種類がサポートされているかどうか。|
 |team|8 |チーム Windows デバイスの種類がサポートされているかどうか。|
+
 
 
 

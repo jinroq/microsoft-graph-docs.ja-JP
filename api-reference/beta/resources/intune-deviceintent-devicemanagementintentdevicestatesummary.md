@@ -4,12 +4,12 @@ description: 目的のデバイス状態の概要を表すエンティティ
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2d9e0d8af7992248114364d7bdf4c2c34d2c715b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 72ba65c7b23310a6fb3883bd72579ce838471f4f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943384"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34964095"
 ---
 # <a name="devicemanagementintentdevicestatesummary-resource-type"></a>deviceManagementIntentDeviceStateSummary リソースの種類
 
@@ -36,7 +36,7 @@ ms.locfileid: "33943384"
 |notApplicablePlatformCount|Int32|プラットフォームとポリシーの不一致が原因で適用されていないデバイスの数|
 |successCount|Int32|成功したデバイスの数|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -59,6 +59,7 @@ ms.locfileid: "33943384"
   "successCount": 1024
 }
 ```
+
 
 
 

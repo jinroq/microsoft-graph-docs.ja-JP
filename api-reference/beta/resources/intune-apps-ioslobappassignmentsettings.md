@@ -4,12 +4,12 @@ description: グループへの iOS LOB モバイル アプリの割り当てに
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a91d6b1fcbc5fb8affdfadf9a60993f630a8e56c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2c27321490cca54a912a5956026706e1d9b48d1d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950502"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991171"
 ---
 # <a name="ioslobappassignmentsettings-resource-type"></a>iosLobAppAssignmentSettings リソースの種類
 
@@ -27,7 +27,7 @@ ms.locfileid: "33950502"
 |:---|:---|:---|
 |vpnConfigurationId|文字列型 (String)|このアプリに適用するための VPN 構成 ID。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -43,6 +43,7 @@ ms.locfileid: "33950502"
   "vpnConfigurationId": "String"
 }
 ```
+
 
 
 

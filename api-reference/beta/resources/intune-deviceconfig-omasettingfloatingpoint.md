@@ -4,12 +4,12 @@ description: OMA 設定の浮動小数点の定義です。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c4a4b93a7a02dbd221a3c0d75f83eba1c7d4566b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3507d35f2134b337fcd984104b95eec246c874c7
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951125"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995834"
 ---
 # <a name="omasettingfloatingpoint-resource-type"></a>omaSettingFloatingPoint リソースの種類
 
@@ -30,7 +30,7 @@ OMA 設定の浮動小数点の定義です。
 |omaUri|文字列型 (String)|OMA。 [omaSetting](../resources/intune-deviceconfig-omasetting.md) からの継承|
 |値|単精度浮動小数点型 (Single)|値。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -49,6 +49,7 @@ OMA 設定の浮動小数点の定義です。
   "value": "<Unknown Primitive Type Edm.Single>"
 }
 ```
+
 
 
 

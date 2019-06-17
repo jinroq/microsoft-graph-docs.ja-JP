@@ -4,12 +4,12 @@ description: Devicemanagement整数 Settinginstance オブジェクトのプロ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 572e532501bd82d50bf9593c1ff07f4454b5ec52
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 370ea89c58756c0d61997657552fcb259d64035e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33916380"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34960581"
 ---
 # <a name="list-devicemanagementintegersettinginstances"></a>Devicemanagement整数の Settinginstances を一覧表示する
 
@@ -79,6 +79,7 @@ Content-Length: 275
   ]
 }
 ```
+
 
 
 

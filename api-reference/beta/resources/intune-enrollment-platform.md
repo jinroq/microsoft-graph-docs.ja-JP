@@ -4,12 +4,12 @@ description: まだ文書化されていません
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6a9e2411c2eb2b6d5cd58b336deeb9f8017832e9
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 306103f59de675204200284c3c10e63aa49e0163
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941479"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34992508"
 ---
 # <a name="platform-enum-type"></a>プラットフォーム列挙型
 
@@ -28,6 +28,7 @@ ms.locfileid: "33941479"
 |ws|1/3|Windows デバイスプラットフォーム|
 |windowsMobile|2/4|WindowsMobile デバイスプラットフォーム|
 |macOS|5|Mac デバイスプラットフォーム|
+
 
 
 

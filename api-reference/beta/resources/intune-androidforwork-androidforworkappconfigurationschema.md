@@ -4,12 +4,12 @@ description: Android for Work アプリケーションのカスタム構成を�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 511dbc03064368b2c0d8a9f57b929eefc5d4cb8b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 580799b533c055adeca7a6bfd443078a92148cd3
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950754"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34992844"
 ---
 # <a name="androidforworkappconfigurationschema-resource-type"></a>androidForWorkAppConfigurationSchema リソース タイプ
 
@@ -35,7 +35,7 @@ Android for Work アプリケーションのカスタム構成を記述するス
 |exampleJson|Binary|このスキーマに準拠した JSON 文字列の例を含む、UTF8 でエンコードされたバイト配列。このアプリの構成の設定方法を示しています。|
 |schemaItems|[androidForWorkAppConfigurationSchemaItem](../resources/intune-androidforwork-androidforworkappconfigurationschemaitem.md) コレクション|それぞれがスキーマ内の名前付き構成オプションを示すアイテムのコレクションです。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -75,6 +75,7 @@ Android for Work アプリケーションのカスタム構成を記述するス
   ]
 }
 ```
+
 
 
 

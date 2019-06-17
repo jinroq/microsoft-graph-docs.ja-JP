@@ -4,12 +4,12 @@ description: DepIOSEnrollmentProfile リソースは、iOS 構成固有の Apple
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f72a4bb61a644815317625a3a7db71839963049e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: adc271f461d83278dbb6007ce871424b3799bb4e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941612"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993558"
 ---
 # <a name="depiosenrollmentprofile-resource-type"></a>depIOSEnrollmentProfile リソースの種類
 
@@ -76,7 +76,7 @@ DepIOSEnrollmentProfile リソースは、iOS 構成固有の Apple Device Enrol
 |ソフトウェアの更新 Creendisabled|Boolean|必須の [ソフトウェアの更新] 画面が無効であるかどうかを示します。|
 |watchMigrationScreenDisabled|Boolean|[移行の監視] 画面が無効であるかどうかを示します|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -139,6 +139,7 @@ DepIOSEnrollmentProfile リソースは、iOS 構成固有の Apple Device Enrol
   "watchMigrationScreenDisabled": true
 }
 ```
+
 
 
 

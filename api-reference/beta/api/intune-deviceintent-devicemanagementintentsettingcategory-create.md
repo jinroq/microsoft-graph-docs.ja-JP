@@ -4,12 +4,12 @@ description: 新しい deviceManagementIntentSettingCategory オブジェクト�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ac2210319c6fe8f497889825301ecf600d3dd52b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 22359956fa77cddef07701731493e34c4f0a9a6b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33915748"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34960189"
 ---
 # <a name="create-devicemanagementintentsettingcategory"></a>DeviceManagementIntentSettingCategory の作成
 
@@ -86,6 +86,7 @@ Content-Length: 168
   "displayName": "Display Name value"
 }
 ```
+
 
 
 

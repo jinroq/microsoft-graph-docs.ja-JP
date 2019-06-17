@@ -4,12 +4,12 @@ description: 週単位のスケジュールに使用できる値。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 265b02e5bc0ce09edbc12345fca01ccbe0b0343b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: af637a0a09bacec8771321f586c887e7573e82eb
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944535"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991605"
 ---
 # <a name="weeklyschedule-enum-type"></a>weeklySchedule 列挙型
 
@@ -31,6 +31,7 @@ ms.locfileid: "33944535"
 |火曜日|シックス|木曜日|
 |金曜日|7|金曜日|
 |土日|8 |土曜日|
+
 
 
 

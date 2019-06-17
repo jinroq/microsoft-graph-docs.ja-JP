@@ -4,12 +4,12 @@ description: 定義値エンティティは、1つのグループポリシー定
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: acc7393a8fcbaf7dfc484f40b3ed12bc821ba63e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 816d2e78a969dcd50ad4cff0efd6e294def78d23
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941157"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34975932"
 ---
 # <a name="grouppolicydefinitionvalue-resource-type"></a>groupPolicyDefinitionValue リソースの種類
 
@@ -29,7 +29,7 @@ ms.locfileid: "33941157"
 |[GroupPolicyDefinitionValue の更新](../api/intune-grouppolicy-grouppolicydefinitionvalue-update.md)|[groupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)|[Grouppolicydefinitionvalue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された日付と時刻。|
 |enabled|ブール型 (Boolean)|関連付けられたグループポリシー定義を有効または無効にします。|
@@ -37,7 +37,7 @@ ms.locfileid: "33941157"
 |id|String|エンティティのキー。|
 |lastModifiedDateTime|DateTimeOffset|エンティティが最後に変更された日付と時刻。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |プレゼンテーションの値|[Grouppolicypresentationvalue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)コレクション|関連付けられたグループポリシーの値が定義値と共に表示されます。|
@@ -61,6 +61,7 @@ ms.locfileid: "33941157"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

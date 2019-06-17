@@ -4,12 +4,12 @@ description: Android 管理ストアアプリのプロパティと継承され�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e49cb85e629e1151ea2a3af3d658fb3d88e04863
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f35a6ae01b710890c34780e702522f4371f337ca
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950509"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991346"
 ---
 # <a name="androidmanagedstoreapp-resource-type"></a>androidManagedStoreApp リソースの種類
 
@@ -50,7 +50,7 @@ Android 管理ストアアプリのプロパティと継承されたプロパテ
 |uploadState|Int32|アップロード状態。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 [MobileApp](../resources/intune-apps-mobileapp.md)から継承されます。 可能な値は、`notPublished`、`processing`、`published` です。|
 |isAssigned|Boolean|アプリが少なくとも1つのグループに割り当てられているかどうかを示す値。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|roleScopeTagIds|String collection|このモバイルアプリの範囲タグ id のリスト。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|roleScopeTagIds|文字列コレクション|このモバイルアプリの範囲タグ id のリスト。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |dependentAppCount|Int32|子アプリが持つ依存関係の合計数。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |packageId|文字列型 (String)|パッケージの識別子。|
 |appIdentifier|String|ID 名。|
@@ -59,7 +59,7 @@ Android 管理ストアアプリのプロパティと継承されたプロパテ
 |appStoreUrl|String|ワークストアアプリの URL を再生します。|
 |supportsOemConfig|Boolean|このアプリが OEMConfig ポリシーをサポートするかどうか。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |categories|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) コレクション|このアプリのカテゴリのリスト。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
@@ -112,6 +112,7 @@ Android 管理ストアアプリのプロパティと継承されたプロパテ
   "supportsOemConfig": true
 }
 ```
+
 
 
 

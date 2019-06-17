@@ -4,12 +4,12 @@ description: GroupPolicyDefinitionFile オブジェクトのプロパティを�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dbcaaa6cd8689f039d9daeb7b4ad7f83f2276783
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3857e4f7b1ec5f25401f1317cdfa413952989732
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33905099"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34984738"
 ---
 # <a name="update-grouppolicydefinitionfile"></a>GroupPolicyDefinitionFile の更新
 
@@ -53,7 +53,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |:---|:---|:---|
 |displayName|String|ADMX ファイルのローカライズされたフレンドリ名。|
 |description|String|ADMX ファイルのポリシー設定のローカライズされた説明。 既定値は空白です。|
-|languageCodes|String collection|ADMX ファイルでサポートされている言語コード。|
+|languageCodes|文字列コレクション|ADMX ファイルでサポートされている言語コード。|
 |targetPrefix|String|ADMX ファイル内の名前空間を参照する論理名を指定します。|
 |targetNamespace|String|ADMX ファイル内の名前空間を識別するために使用する URI を指定します。|
 |Msrtcsip-policytype|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|グループポリシーの種類を指定します。 可能な値は、`admxBacked`、`admxIngested` です。|
@@ -108,6 +108,7 @@ Content-Length: 438
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
 
 
 

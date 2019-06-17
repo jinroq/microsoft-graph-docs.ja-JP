@@ -4,12 +4,12 @@ description: Android アプリのアクセス許可と Android のアクショ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4766bb91d5d1cde99a12f5a8e4903451a3ac5aca
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5237cc214ed6e5d7319d947b308cc666337e6d1b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950488"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991290"
 ---
 # <a name="androidpermissionaction-resource-type"></a>androidPermissionAction リソースの種類
 
@@ -25,7 +25,7 @@ Android アプリのアクセス許可と Android のアクションとの間の
 |権|String|Android のアクセス許可文字列。公式の Android ドキュメントで定義されています。  例 ' READ_CONTACTS '。|
 |action|[androidPermissionActionType](../resources/intune-apps-androidpermissionactiontype.md)|Android のアクセス許可アクションの種類。 可能な値は、`prompt`、`autoGrant`、`autoDeny` です。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -42,6 +42,7 @@ Android アプリのアクセス許可と Android のアクションとの間の
   "action": "String"
 }
 ```
+
 
 
 

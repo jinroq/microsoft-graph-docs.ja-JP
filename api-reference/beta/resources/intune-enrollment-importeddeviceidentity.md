@@ -4,12 +4,12 @@ description: ImportedDeviceIdentity リソースは、事前登録構成のた�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 197f4d9fd3377e6359d93a75ac36c8c15be3e0f5
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 45af3e68fc5d19af08a822962eb5333ce4a98655
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941528"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34992627"
 ---
 # <a name="importeddeviceidentity-resource-type"></a>importedDeviceIdentity リソースの種類
 
@@ -33,7 +33,7 @@ ImportedDeviceIdentity リソースは、事前登録構成のために事前に
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|インポートされたデバイス id の Id|
+|id|String|インポートされたデバイス id の id|
 |importedDeviceIdentifier|String|インポートされたデバイス識別子|
 |importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune-enrollment-importeddeviceidentitytype.md)|インポートされたデバイス Id の種類。 可能な値は、`unknown`、`imei`、`serialNumber` です。|
 |lastModifiedDateTime|DateTimeOffset|説明の最終更新日時|
@@ -43,7 +43,7 @@ ImportedDeviceIdentity リソースは、事前登録構成のために事前に
 |enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Intune でのデバイスの状態。 使用可能な値: `unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
 |platform|[プラットフォーム](../resources/intune-enrollment-platform.md)|デバイスのプラットフォーム。 使用可能な値: `unknown`、`ios`、`android`、`windows`、`windowsMobile`、`macOS`。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -68,6 +68,7 @@ ImportedDeviceIdentity リソースは、事前登録構成のために事前に
   "platform": "String"
 }
 ```
+
 
 
 

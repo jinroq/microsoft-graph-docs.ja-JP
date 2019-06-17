@@ -4,12 +4,12 @@ description: 特定の macOS カーネル拡張情報を表します。 MacOS �
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b75288befb0f8ba7101d88d5b6f0767174469ac3
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 52b552b0817207968c0a0ab7bb9dcc9bab0a4f44
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946193"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34992179"
 ---
 # <a name="macoskernelextension-resource-type"></a>macOSKernelExtension リソースの種類
 
@@ -25,7 +25,7 @@ ms.locfileid: "33946193"
 |teamIdentifier|String|カーネル拡張機能の署名に使用されたチーム識別子。|
 |bundleId|String|カーネル拡張機能のバンドル ID。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -42,6 +42,7 @@ ms.locfileid: "33946193"
   "bundleId": "String"
 }
 ```
+
 
 
 

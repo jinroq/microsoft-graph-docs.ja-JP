@@ -4,12 +4,12 @@ description: ImportedAppleDeviceIdentity リソースは、Apple デバイスの
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 277ca83a4df6a3f8125fb3e2ae1687da6cef05ba
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b93929dd02b5ee1f472a89733d2dc6246cad4411
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941591"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34992648"
 ---
 # <a name="importedappledeviceidentity-resource-type"></a>importedAppleDeviceIdentity リソースの種類
 
@@ -44,7 +44,7 @@ ImportedAppleDeviceIdentity リソースは、Apple デバイスのインポー�
 |enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Intune でのデバイスの状態。 使用可能な値: `unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
 |platform|[プラットフォーム](../resources/intune-enrollment-platform.md)|デバイスのプラットフォーム。 使用可能な値: `unknown`、`ios`、`android`、`windows`、`windowsMobile`、`macOS`。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -71,6 +71,7 @@ ImportedAppleDeviceIdentity リソースは、Apple デバイスのインポー�
   "platform": "String"
 }
 ```
+
 
 
 

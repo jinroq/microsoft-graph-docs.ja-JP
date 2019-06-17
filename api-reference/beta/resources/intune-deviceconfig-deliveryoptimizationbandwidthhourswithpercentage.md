@@ -4,12 +4,12 @@ description: 営業時間に対する割合としての帯域幅制限。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a22201310c844ff1e46bb891e9c30944a1604177
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d1ad2bbfef3a055a4d5449f7f165bd4bf2f9a07a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947240"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979698"
 ---
 # <a name="deliveryoptimizationbandwidthhourswithpercentage-resource-type"></a>deliveryOptimizationBandwidthHoursWithPercentage リソースの種類
 
@@ -28,7 +28,7 @@ ms.locfileid: "33947240"
 |bandwidthBackgroundPercentageHours|[deliveryOptimizationBandwidthBusinessHoursLimit](../resources/intune-deviceconfig-deliveryoptimizationbandwidthbusinesshourslimit.md)|バックグラウンドダウンロードの割合 (時間)。|
 |bandwidthForegroundPercentageHours|[deliveryOptimizationBandwidthBusinessHoursLimit](../resources/intune-deviceconfig-deliveryoptimizationbandwidthbusinesshourslimit.md)|フォアグラウンドダウンロードの割合 (時間)。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -57,6 +57,7 @@ ms.locfileid: "33947240"
   }
 }
 ```
+
 
 
 

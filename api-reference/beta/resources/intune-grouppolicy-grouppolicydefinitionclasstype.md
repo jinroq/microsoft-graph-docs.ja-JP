@@ -4,12 +4,12 @@ description: グループポリシー定義のクラスの種類。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6a8a59cb8838b74c4bed0c005f8928b9770b770a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 348a308df51ffd752f185fd326e1cdbfad13029c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941143"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34975890"
 ---
 # <a name="grouppolicydefinitionclasstype-enum-type"></a>groupPolicyDefinitionClassType 列挙型
 
@@ -24,6 +24,7 @@ ms.locfileid: "33941143"
 |:---|:---|:---|
 |user|.0|[ユーザーの構成] ノードの下にあるポリシー設定の配置を指定します。|
 |マシン|1-d|[コンピューターの構成] ノードの下にあるポリシー設定の配置を指定します。|
+
 
 
 

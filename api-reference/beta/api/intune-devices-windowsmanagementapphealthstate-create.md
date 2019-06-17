@@ -4,12 +4,12 @@ description: 新しい windowsManagementAppHealthState オブジェクトを作�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1dc6a0ea5001bc81628b3cdf6a12aa2ae2046775
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 1cdcb0c26e2ab6687ba6b4aac46fdb12d6539ca9
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33909205"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34978459"
 ---
 # <a name="create-windowsmanagementapphealthstate"></a>WindowsManagementAppHealthState を作成する
 
@@ -55,7 +55,7 @@ POST /deviceAppManagement/windowsManagementApp/healthStates
 |バージョン|String|Windows management アプリがインストールされているバージョン。|
 |lastCheckInDateTime|DateTimeOffset|Windows management アプリの最終チェックイン時刻。|
 |deviceName|String|Windows management アプリがインストールされているデバイスの名前。|
-|deviceOSVersion|String|Windows 管理アプリがインストールされているデバイスの Windows 10 OS バージョン。|
+|deviceOSVersion|String|Windows 管理アプリがインストールされているデバイスの windows 10 OS バージョン。|
 
 
 
@@ -98,6 +98,7 @@ Content-Length: 349
   "deviceOSVersion": "Device OSVersion value"
 }
 ```
+
 
 
 

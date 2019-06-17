@@ -4,12 +4,12 @@ description: デバイス管理スクリプトの実行の概要のプロパテ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0838a03aeecdff801c4650b49c48384707608b75
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 199b9efcdc3ea862502ea22d845480d990c99caf
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33942074"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995309"
 ---
 # <a name="devicemanagementscriptrunsummary-resource-type"></a>deviceManagementScriptRunSummary リソースの種類
 
@@ -34,7 +34,7 @@ ms.locfileid: "33942074"
 |successUserCount|Int32|成功したユーザー数。|
 |errorUserCount|Int32|エラーユーザー数。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -55,6 +55,7 @@ ms.locfileid: "33942074"
   "errorUserCount": 1024
 }
 ```
+
 
 
 

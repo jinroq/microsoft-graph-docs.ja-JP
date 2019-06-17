@@ -4,12 +4,12 @@ description: まだ文書化されていません
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: affabd87c08d3e40ade9086fc7a0ad44f57facea
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f497780f9ccd21ea608a8c7e56e6926d79263e24
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941493"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34963479"
 ---
 # <a name="managementcertificatewiththumbprint-resource-type"></a>managementCertificateWithThumbprint リソースの種類
 
@@ -25,7 +25,7 @@ ms.locfileid: "33941493"
 |拇印|String|管理証明書の拇印|
 |certificate|String|Base 64 エンコード済み管理証明書|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -42,6 +42,7 @@ ms.locfileid: "33941493"
   "certificate": "String"
 }
 ```
+
 
 
 

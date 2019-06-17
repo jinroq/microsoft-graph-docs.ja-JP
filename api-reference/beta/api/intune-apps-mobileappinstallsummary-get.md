@@ -4,12 +4,12 @@ description: MobileAppInstallSummary オブジェクトのプロパティとリ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 796e9f1ed388c5438c457e57831c199a739288ea
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0a8d2a07ac1a14709bd4b9ce158abbf6d287573b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935084"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34973748"
 ---
 # <a name="get-mobileappinstallsummary"></a>MobileAppInstallSummary を取得する
 
@@ -84,6 +84,7 @@ Content-Length: 466
   }
 }
 ```
+
 
 
 

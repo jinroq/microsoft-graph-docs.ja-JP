@@ -4,12 +4,12 @@ description: まだ文書化されていません
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ff51ad89600919fb1ed2c3bb506a53178ccdc445
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 87ea9c12632fd1bb6fc7df17cd7f732560eedb8f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941752"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993937"
 ---
 # <a name="sharedappledeviceuser-resource-type"></a>sharedAppleDeviceUser リソースの種類
 
@@ -27,7 +27,7 @@ ms.locfileid: "33941752"
 |dataQuota|Int64|データクォータ|
 |使用されるデータ|Int64|データクォータ|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -46,6 +46,7 @@ ms.locfileid: "33941752"
   "dataUsed": 1024
 }
 ```
+
 
 
 

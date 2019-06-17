@@ -4,12 +4,12 @@ description: アプリケーション間でデバイスのクリップボード�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 298ed972967c01cd5c7ec66d59d78ee8d761c52b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d7c03aeffe8e83a51caadba952e09af1fce06593
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940828"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991983"
 ---
 # <a name="managedappclipboardsharinglevel-enum-type"></a>Managedappクリップボード Sharinglevel 列挙型
 
@@ -26,6 +26,7 @@ ms.locfileid: "33940828"
 |managedAppsWithPasteIn|1-d|[貼り付け] が有効になっているすべての管理対象アプリ間で共有が許可されます。|
 |managedApps|pbm-2|すべての管理対象アプリ間で共有が可能|
 |ブロック|1/3|アプリ間の共有が無効になっている|
+
 
 
 

@@ -4,12 +4,12 @@ description: サポートされているプラットフォームの種類。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 27711e7392e0ba1804b8a24426b4d6e3afa418de
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: cecc6025fd90e78cbca63a357ca7afd78d13862f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33938896"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996107"
 ---
 # <a name="deviceplatformtype-enum-type"></a>devicePlatformType 列挙型
 
@@ -31,6 +31,7 @@ ms.locfileid: "33938896"
 |windows10AndLater|シックス|Windows 10 以降。|
 |androidWorkProfile|7|Android の作業プロファイル。|
 |不明|8 |わかり.|
+
 
 
 

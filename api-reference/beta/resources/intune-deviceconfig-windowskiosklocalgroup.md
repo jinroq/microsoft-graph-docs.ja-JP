@@ -4,12 +4,12 @@ description: キオスク構成のローカルグループを識別するため�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9ab9875759c8610f976e4aaa7cc5fc8733b20ee0
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c78e66c20f7275238cd7390a7d05daa8cd40037a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943859"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994329"
 ---
 # <a name="windowskiosklocalgroup-resource-type"></a>windowsKioskLocalGroup リソースの種類
 
@@ -27,7 +27,7 @@ ms.locfileid: "33943859"
 |:---|:---|:---|
 |groupName|String|このキオスク構成にロックされるローカルグループの名前|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -43,6 +43,7 @@ ms.locfileid: "33943859"
   "groupName": "String"
 }
 ```
+
 
 
 

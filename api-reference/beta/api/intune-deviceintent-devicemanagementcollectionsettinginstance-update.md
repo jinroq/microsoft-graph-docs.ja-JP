@@ -4,12 +4,12 @@ description: DeviceManagementCollectionSettingInstance オブジェクトのプ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1cd6c40b208b1f8e87a076a06726bac9d26cd704
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 1aba325248a0894c5804f7ce9458589bced34b3e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33916588"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34960812"
 ---
 # <a name="update-devicemanagementcollectionsettinginstance"></a>DeviceManagementCollectionSettingInstance の更新
 
@@ -92,6 +92,7 @@ Content-Length: 210
   "valueJson": "Value Json value"
 }
 ```
+
 
 
 

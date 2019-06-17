@@ -4,12 +4,12 @@ description: テナント内のすべてのライセンス ユーザーへの割
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7d02165878c5eb9a29124958b2588569e6db302e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f2eb050b5fe6649abe6ee00141c2d2fab7eb5624
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940548"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996205"
 ---
 # <a name="alllicensedusersassignmenttarget-resource-type"></a>allLicensedUsersAssignmentTarget リソースの種類
 
@@ -26,7 +26,7 @@ ms.locfileid: "33940548"
 |プロパティ|型|説明|
 |:---|:---|:---|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -41,6 +41,7 @@ ms.locfileid: "33940548"
   "@odata.type": "#microsoft.graph.allLicensedUsersAssignmentTarget"
 }
 ```
+
 
 
 

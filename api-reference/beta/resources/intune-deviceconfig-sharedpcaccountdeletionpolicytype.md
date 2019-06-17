@@ -4,12 +4,12 @@ description: 共有 PC でアカウントを削除する場合に使用できる
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 90ece330d4d266c42a7a932d5962aaf1d85496e0
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 02c38abca522ec5ec0e50ffd3e4439b434fb9dfc
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944713"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34964284"
 ---
 # <a name="sharedpcaccountdeletionpolicytype-enum-type"></a>sharedPCAccountDeletionPolicyType 列挙型
 
@@ -25,6 +25,7 @@ ms.locfileid: "33944713"
 |瞬時|.0|すぐに削除します。|
 |ディスクスペースしきい値|1-d|ディスク容量のしきい値で削除します。|
 |diskSpaceThresholdOrInactiveThreshold|pbm-2|ディスク容量のしきい値または非アクティブなしきい値での削除。|
+
 
 
 

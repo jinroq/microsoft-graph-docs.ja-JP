@@ -4,12 +4,12 @@ description: デバイスに関して埋め込まれた SIM ライセンス認�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b2fb953021dde36960faf2875131bf3bcd8e7e50
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b18548afd944b11df5df5bdeae6b4c48cf048f3f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941346"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994854"
 ---
 # <a name="embeddedsimdevicestate-resource-type"></a>embeddedSIMDeviceState リソースの種類
 
@@ -41,7 +41,7 @@ ms.locfileid: "33941346"
 |state|[embeddedSIMDeviceStateValue](../resources/intune-esim-embeddedsimdevicestatevalue.md)|デバイスに適用されるプロファイル操作の状態。 可能な値は、`notEvaluated`、`failed`、`installing`、`installed`、`deleting`、`error`、`deleted`、`removedByUser` です。|
 |stateDetails|String|プロビジョニング状態の文字列の説明。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -66,6 +66,7 @@ ms.locfileid: "33941346"
   "stateDetails": "String"
 }
 ```
+
 
 
 

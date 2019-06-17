@@ -4,12 +4,12 @@ description: パートナーアプリの種類。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a7102f8b5e57f75f1bfb43c80eba714f0db3a678
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 72cde11477bc048e4381eadc8288166926903182
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940289"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993012"
 ---
 # <a name="devicemanagementpartnerapptype-enum-type"></a>deviceManagementPartnerAppType 列挙型
 
@@ -25,6 +25,7 @@ ms.locfileid: "33940289"
 |不明|.0|パートナーアプリの種類が不明です。|
 |singleTenantApp|1-d|パートナーアプリは AAD の単一テナントです。|
 |multiTenantApp|pbm-2|パートナーアプリは AAD のマルチテナントです。|
+
 
 
 

@@ -4,12 +4,12 @@ description: このテナントのパートナーの状態。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4f31cce7831bfb73ed49399daea7bc4438741d32
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a7c2c7e36d920a7f8ab08be75324983f583174b2
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940247"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34992970"
 ---
 # <a name="devicemanagementpartnertenantstate-enum-type"></a>deviceManagementPartnerTenantState 列挙型
 
@@ -28,6 +28,7 @@ ms.locfileid: "33940247"
 |停止|1/3|パートナー接続が終了します。|
 |拒否|2/4|パートナーメッセージは拒否されます。|
 |なかっ|5|パートナーが応答していません。|
+
 
 
 

@@ -4,12 +4,12 @@ description: フランスでのテレビコンテンツの評価のラベル
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eef887f74ac0d5bb2295be0684dffe56808cb54c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 082894891a6edd2a1ed8582538c4879cea6dccc4
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950992"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34984620"
 ---
 # <a name="ratingfrancetelevisiontype-enum-type"></a>ratingFranceTelevisionType 列挙型
 
@@ -28,6 +28,7 @@ ms.locfileid: "33950992"
 |agesAbove12|1/3|12での子の場合、-12 分類は推奨されません|
 |agesAbove16|2/4|16未満の子供には-16 の分類は推奨されません|
 |agesAbove18|5|18才未満では、-18 分類は推奨されません|
+
 
 
 
