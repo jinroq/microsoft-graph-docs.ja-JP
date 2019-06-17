@@ -4,12 +4,12 @@ description: Android for Work アプリケーションのカスタム構成ス�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a8b792c9b88cb35fe24382662d324a5e06c1f814
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f84a115e449a5a4d5c233cdfd8401f5f6ed2641b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950649"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993467"
 ---
 # <a name="androidforworkappconfigurationschemaitemdatatype-enum-type"></a>Androidforwork Appconfigurationschemaitemdatatype 列挙型
 
@@ -30,6 +30,7 @@ Android for Work アプリケーションのカスタム構成スキーマ内の
 |バンドル|5|まだ文書化されていません|
 |bundleArray|シックス|まだ文書化されていません|
 |hidden|7|まだ文書化されていません|
+
 
 
 

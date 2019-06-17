@@ -4,12 +4,12 @@ description: 新しい officeSuiteApp オブジェクトを作成します。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 11c8d311c097949003b19d8aa5355701ddbaa1f6
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 45425cff407d01f2405a4f15bbb5fb16ea6f4421
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934986"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34973559"
 ---
 # <a name="create-officesuiteapp"></a>OfficeSuiteApp を作成する
 
@@ -66,7 +66,7 @@ POST /deviceAppManagement/mobileApps
 |uploadState|Int32|アップロード状態。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 [MobileApp](../resources/intune-apps-mobileapp.md)から継承されます。 可能な値は、`notPublished`、`processing`、`published` です。|
 |isAssigned|Boolean|アプリが少なくとも1つのグループに割り当てられているかどうかを示す値。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|roleScopeTagIds|String collection|このモバイルアプリの範囲タグ id のリスト。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|roleScopeTagIds|文字列コレクション|このモバイルアプリの範囲タグ id のリスト。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |dependentAppCount|Int32|子アプリが持つ依存関係の合計数。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |autoAcceptEula|Boolean|Enduser のデバイスで EULA に自動的に同意する値。|
 |productIds|[Officeproductid](../resources/intune-apps-officeproductid.md)コレクション|Office365 スイート SKU を表す製品 Id。 使用可能な値は、`o365ProPlusRetail`、`o365BusinessRetail`、`visioProRetail`、`projectProRetail` です。|
@@ -74,7 +74,7 @@ POST /deviceAppManagement/mobileApps
 |。 Usesharedcomputeractivation|Boolean|Office 365 アプリスイートに対して共有コンピューターのライセンス認証が使用されていないかどうかを表すプロパティ。|
 |updateChannel|[officeUpdateChannel](../resources/intune-apps-officeupdatechannel.md)|Office365 更新チャネルを表すプロパティ。 可能な値は、`none`、`current`、`deferred`、`firstReleaseCurrent`、`firstReleaseDeferred` です。|
 |officePlatformArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Office365 アプリスイートのバージョンを表すプロパティ。 使用可能な値: `none`、`x86`、`x64`、`arm`、`neutral`、`arm64`。|
-|次|String collection|Office365 のアプリをインストールするときにインストールされるロケールを表すプロパティ。 標準の RFC 6033 を使用します。 Refhttps://technet.microsoft.com/en-us/library/cc179219(v=office.16).aspx|
+|次|文字列コレクション|Office365 のアプリをインストールするときにインストールされるロケールを表すプロパティ。 標準の RFC 6033 を使用します。 Refhttps://technet.microsoft.com/en-us/library/cc179219(v=office.16).aspx|
 |Install進捗 Displaylevel|[officeSuiteInstallProgressDisplayLevel](../resources/intune-apps-officesuiteinstallprogressdisplaylevel.md)|デバイス上のインストールの進行状況のセットアップ UI の表示レベルを指定します。 可能な値は、`none`、`full` です。|
 |shouldUninstallOlderVersionsOfOffice|Boolean|Office365 アプリスイートがデバイスに展開されている場合に、既存の Office MSI をアンインストールするかどうかを決定するプロパティ。|
 |targetVersion|String|デバイスに展開されたままにする必要がある、Office365 アプリスイートの特定のターゲットバージョンを表すプロパティ。|
@@ -220,6 +220,7 @@ Content-Length: 1771
   "officeConfigurationXml": "b2ZmaWNlQ29uZmlndXJhdGlvblhtbA=="
 }
 ```
+
 
 
 

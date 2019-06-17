@@ -4,12 +4,12 @@ description: スケジュールされたアクションの種類列挙
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 37caa3ca741c752a67a9f90222856b31fa4978c3
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 05f9df39c563a47fa571a4badcf789ea4ddb08b1
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947205"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979530"
 ---
 # <a name="devicecomplianceactiontype-enum-type"></a>deviceComplianceActionType 列挙型
 
@@ -30,6 +30,7 @@ ms.locfileid: "33947205"
 |removeResourceAccessProfiles|5|デバイスからリソースアクセスプロファイルを削除する|
 |pushNotification|9 |デバイスへのプッシュ通知の送信|
 |remoteLock|10 |デバイスをリモートでロックする|
+
 
 
 

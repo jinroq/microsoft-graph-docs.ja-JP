@@ -4,12 +4,12 @@ description: IOS EDU の信頼されたルートおよび PFX 証明書。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4305745c8b9d12bf19c4e8be6c10f24076ec29f1
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 30e7a68f76c60fafff9fc2b035a65a60307f775d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946505"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34981469"
 ---
 # <a name="ioseducertificatesettings-resource-type"></a>iosEduCertificateSettings リソースの種類
 
@@ -31,7 +31,7 @@ IOS EDU の信頼されたルートおよび PFX 証明書。
 |certificateValidityPeriodValue|Int32|証明書の有効期間の値。|
 |certificateValidityPeriodScale|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|証明書の有効期間のスケール。 可能な値は、`days`、`months`、`years` です。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -54,6 +54,7 @@ IOS EDU の信頼されたルートおよび PFX 証明書。
   "certificateValidityPeriodScale": "String"
 }
 ```
+
 
 
 

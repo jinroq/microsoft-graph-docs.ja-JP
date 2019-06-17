@@ -4,12 +4,12 @@ description: Azure AD ユーザー アカウントを表します。directoryObj
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a397c3433de4d3615e09475059eeb58254bd3086
-ms.sourcegitcommit: 8aaf10f7c11d1bf481e9acac19884346dbd44cb8
+ms.openlocfilehash: 67a43e13be16b8e57832c8b9bcacf0658b3c0531
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "34914659"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995022"
 ---
 # <a name="user-resource-type"></a>user リソースの種類
 
@@ -32,22 +32,22 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |[Get user](../api/user-get.md) | [user](user.md) |ユーザー オブジェクトのプロパティと関係を読み取ります。|
 |[Update user](../api/user-update.md) | [user](user.md) |ユーザー オブジェクトを更新します。 |
 |[Delete user](../api/user-delete.md) | None |ユーザー オブジェクトを削除します。 |
-|[List messages](../api/user-list-messages.md) |[Message](message.md) collection| サインインしているユーザーのメールボックス内のすべてのメッセージを取得します。|
-|[Create Message](../api/user-post-messages.md) |[Message](message.md)| メッセージ コレクションへの投稿により、メッセージを作成します。|
-|[mailFolders を一覧表示する](../api/user-list-mailfolders.md) |[MailFolder](mailfolder.md) collection| サインイン中のユーザーのルート フォルダーからメール フォルダー コレクションを取得します。 |
-|[Create mailFolder](../api/user-post-mailfolders.md) |[MailFolder](mailfolder.md)| mailFolder コレクションへの投稿により、新しい MailFolder を作成します。|
+|[List messages](../api/user-list-messages.md) |[message](message.md) コレクション| サインインしているユーザーのメールボックス内のすべてのメッセージを取得します。|
+|[メッセージの作成](../api/user-post-messages.md) |[message](message.md)| メッセージ コレクションへの投稿により、メッセージを作成します。|
+|[mailFolders を一覧表示する](../api/user-list-mailfolders.md) |[mailFolder](mailfolder.md) コレクション| サインイン中のユーザーのルート フォルダーからメール フォルダー コレクションを取得します。 |
+|[Create mailFolder](../api/user-post-mailfolders.md) |[mailFolder](mailfolder.md)| mailFolder コレクションへの投稿により、新しい mailFolder を作成します。|
 |[sendMail](../api/user-sendmail.md)|None|要求本文に指定されたメッセージを送信します。|
-|[List events](../api/user-list-events.md) |[Event](event.md) collection| ユーザーのメールボックス内のイベント オブジェクトの一覧を取得します。一覧には、単一インスタンスの会議と定期的なマスターが含まれています。|
-|[Create event](../api/user-post-events.md) |[Event](event.md)| Event コレクションへの投稿によって、新しいイベントを作成します。|
+|[List events](../api/user-list-events.md) |[event](event.md) コレクション| ユーザーのメールボックス内のイベント オブジェクトの一覧を取得します。一覧には、単一インスタンスの会議と定期的なマスターが含まれています。|
+|[Create event](../api/user-post-events.md) |[event](event.md)| event コレクションへの投稿によって、新しいイベントを作成します。|
 |[List calendars](../api/user-list-calendars.md) |[Calendar](calendar.md) collection| 予定表オブジェクトのコレクションを取得します。|
 |[Create calendar](../api/user-post-calendars.md) |[Calendar](calendar.md)| 予定表コレクションへの投稿により、新しい予定表を作成します。|
 |[List calendarGroups](../api/user-list-calendargroups.md) |[CalendarGroup](calendargroup.md) collection| CalendarGroup オブジェクトのコレクションを取得します。|
 |[Create calendarGroup](../api/user-post-calendargroups.md) |[CalendarGroup](calendargroup.md)| calendarGroups コレクションへの投稿により、新しい CalendarGroup を作成します。|
-|[List calendarView](../api/user-list-calendarview.md) |[Event](event.md) コレクション| event オブジェクトのコレクションを取得します。|
-|[連絡先を一覧表示する](../api/user-list-contacts.md) |[Contact](contact.md) collection| サインイン中のユーザーの既定の連絡先フォルダーから連絡先コレクションを取得します。|
-|[Create Contact](../api/user-post-contacts.md) |[Contact](contact.md)| 連絡先コレクションに投稿することにより、新しい連絡先を作成します。|
-|[List contactFolders](../api/user-list-contactfolders.md) |[ContactFolder](contactfolder.md) collection| サインイン中のユーザーの既定の連絡先フォルダー内の連絡先フォルダーのコレクションを取得します。|
-|[Create ContactFolder](../api/user-post-contactfolders.md) |[ContactFolder](contactfolder.md)| contactFolder コレクションに投稿することにより、新しい ContactFolder を作成します。|
+|[List calendarView](../api/user-list-calendarview.md) |[event](event.md) コレクション| event オブジェクトのコレクションを取得します。|
+|[連絡先を一覧表示する](../api/user-list-contacts.md) |[contact](contact.md) コレクション| サインイン中のユーザーの既定の連絡先フォルダーから連絡先コレクションを取得します。|
+|[Create contact](../api/user-post-contacts.md) |[contact](contact.md)| 連絡先コレクションへの投稿により、新しい連絡先を作成します。|
+|[List contactFolders](../api/user-list-contactfolders.md) |[contactFolder](contactfolder.md) コレクション| サインイン中のユーザーの既定の連絡先フォルダー内で連絡先フォルダーのコレクションを取得します。|
+|[Create ContactFolder](../api/user-post-contactfolders.md) |[contactFolder](contactfolder.md)| contactFolder コレクションへの投稿により、新しい contactFolder を作成します。|
 |[List directReports](../api/user-list-directreports.md) |[directoryObject](directoryobject.md) collection| そのユーザーの部下であるユーザーと連絡先を、directReports ナビゲーション プロパティから取得します。|
 |[List manager](../api/user-list-manager.md) |[directoryObject](directoryobject.md) | そのユーザーの上司であるユーザーまたは連絡先を、マネージャー ナビゲーション プロパティから取得します。|
 |[List memberOf](../api/user-list-memberof.md) |[directoryObject](directoryobject.md) コレクション| そのユーザーが直接のメンバーであるグループ、ディレクトリ ロール、および管理単位を、memberOf ナビゲーション プロパティから取得します。|
@@ -90,6 +90,7 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |assignedLicenses|[assignedLicense](assignedlicense.md) collection|ユーザーに割り当てられているライセンス。null 許容ではありません。            |
 |assignedPlans|[assignedPlan](assignedplan.md) collection|ユーザーに割り当てられているプラン。読み取り専用です。null 許容ではありません。 |
 |birthday|DateTimeOffset|ユーザーの誕生日。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
+|businessPhones|String collection|ユーザーの電話番号。注:文字列コレクションですが、このプロパティに設定できるのは 1 つの数字のみです。|
 |city|String|ユーザーがいる都市。$filter をサポートします。|
 |companyName| String | ユーザーが関連付けられている会社名。 このプロパティは、外部ユーザーが所属する会社を記述するのに役立ちます。 |
 |consentProvidedForMinor|String|未成年者について同意を得ているかどうかを設定します。 使用できる値: `null`、`granted`、`denied`、および `notRequired`。 詳細については、「[法的年齢グループ プロパティの定義](#legal-age-group-property-definitions)」を参照してください。|
@@ -118,7 +119,7 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |officeLocation|String|ユーザーの勤務先の場所。|
 |onPremisesDistinguishedName|String| オンプレミスの Active Directory `distinguished name` または `DN` が含まれています。 このプロパティは、オンプレミス ディレクトリを Azure AD Connect 経由で Azure Active Directory と同期する顧客の場合にのみ読み込まれます。 読み取り専用です。 |
 |onPremisesDomainName|String| オンプレミス ディレクトリから同期されたオンプレミス `domainFQDN` (dnsDomainName とも呼ばれます) が含まれています。 このプロパティは、オンプレミス ディレクトリを Azure AD Connect 経由で Azure Active Directory と同期する顧客の場合にのみ読み込まれます。 読み取り専用です。 |
-|onPremisesExtensionAttributes|[OnPremisesExtensionAttributes](onpremisesextensionattributes.md)|ユーザーの extensionAttribute 1 ～ 15 が含まれています。 個々の拡張属性は選択もフィルター処理もできないことに注意してください。 `onPremisesSyncEnabled` ユーザーの場合、この一連のプロパティはマスターされており、読み取り専用です。 クラウド専用ユーザー (`onPremisesSyncEnabled` が false) の場合、これらのプロパティは作成時または更新時に設定される可能性があります。 |
+|onPremisesExtensionAttributes|[onPremisesExtensionAttributes](onpremisesextensionattributes.md)|ユーザーの extensionAttribute 1 ～ 15 が含まれています。 個々の拡張属性は選択もフィルター処理もできないことに注意してください。 `onPremisesSyncEnabled` ユーザーの場合、この一連のプロパティはマスターされており、読み取り専用です。 クラウド専用ユーザー (`onPremisesSyncEnabled` が false) の場合、これらのプロパティは作成時または更新時に設定される可能性があります。 |
 |onPremisesImmutableId|String|このプロパティは、オンプレミスの Active Directory ユーザー アカウントを Azure AD ユーザー オブジェクトに関連付けるために使用します。 このプロパティは、オンプレミスの Active Directory ユーザー アカウントを Azure AD ユーザー オブジェクトに関連付けるために使用します。Graph で新しいユーザー アカウントを作成するとき、ユーザーの `userPrincipalName` (UPN) プロパティにフェデレーション ドメインを使用する場合は、このプロパティを指定する必要があります。重要: と _ の文字は、このプロパティを指定するときには使用できません。$filter をサポートします。 **重要:** **$** と **_** の文字は、このプロパティを指定するときには使用できません。 $filter をサポートします。 |
 |onPremisesLastSyncDateTime|DateTimeOffset|オブジェクトがオンプレミス ディレクトリと前回、同期された日時を示します。例："2013-02-16T03:04:54Z"Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`読み取り専用です。|
 |onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md) コレクション| Microsoft 同期製品のプロビジョニング中に発生するエラーです。 |
@@ -128,13 +129,13 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |onPremisesUserPrincipalName|String| オンプレミス ディレクトリから同期されたオンプレミス `userPrincipalName` が含まれています。 このプロパティは、オンプレミス ディレクトリを Azure AD Connect 経由で Azure Active Directory と同期する顧客の場合にのみ読み込まれます。 読み取り専用です。 |
 |otherMails|String| ユーザーの追加のメール アドレスの一覧 (例: `["bob@contoso.com", "Robert@fabrikam.com"]`)。 $filter をサポートします。|
 |passwordPolicies|String|ユーザーのパスワード ポリシーを指定します。この値は列挙値であり、可能な 1 つの値は "DisableStrongPassword" です。この場合は、既定のポリシーより脆弱なパスワードを指定できます。"DisablePasswordExpiration" を指定することもできます。2 つを一緒に指定することもできます。例:"DisablePasswordExpiration, DisableStrongPassword"|
-|passwordProfile|[PasswordProfile](passwordprofile.md)|ユーザーのパスワード プロファイルを指定します。プロファイルには、ユーザーのパスワードが含まれています。このプロパティは、ユーザーの作成時に必要です。プロファイルにあるパスワードは、**passwordPolicies** プロパティによって指定されている最小要件を満たす必要があります。既定では、強力なパスワードが必要です。|
+|passwordProfile|[passwordProfile](passwordprofile.md)|ユーザーのパスワード プロファイルを指定します。プロファイルには、ユーザーのパスワードが含まれています。このプロパティは、ユーザーの作成時に必要です。プロファイルにあるパスワードは、**passwordPolicies** プロパティによって指定されている最小要件を満たす必要があります。既定では、強力なパスワードが必要です。|
 |pastProjects|String collection|ユーザーが過去のプロジェクトを列挙する一覧。|
 |postalCode|String|ユーザーの住所の郵便番号。郵便番号は、ユーザーの国/地域に固有です。アメリカ合衆国では、この属性には、ZIP コードが含まれます。|
 |preferredDataLocation|String|ユーザーの優先されるデータの場所。 詳細については、「[OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction)」を参照してください。|
 |preferredLanguage|String|ユーザーが設定する言語。ISO 639-1 コードに従う必要があります。たとえば "en-US" です。|
 |preferredName|String|ユーザーが設定する名前。|
-|provisionedPlans|[ProvisionedPlan](provisionedplan.md) collection|ユーザーのために用意されたプラン。読み取り専用です。null 許容ではありません。 |
+|provisionedPlans|[ProvisionedPlan](provisionedplan.md) コレクション|ユーザーのために用意されたプラン。読み取り専用です。null 許容ではありません。 |
 |proxyAddresses|String collection|例:`["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` 複数値プロパティのフィルター式には、**任意の**演算子が必要です。読み取り専用。null 許容ではありません。$filter をサポートします。          |
 |refreshTokensValidFromDateTime|DateTimeOffset| この時点よりも前に発行された更新トークンとセッション トークン (セッション Cookie) はすべて無効であり、アプリケーションが無効な更新トークンまたはセッション トークンを使用して (Microsoft Graph などの API にアクセスする目的で) 代理アクセス トークンを取得しようとすると、エラーが発生します。  この状況が発生した場合、アプリケーションは承認エンドポイントに対してリクエストを発行して新しいトークンを取得する必要があります。 読み取り専用です。 リセットするには [invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md) を使用します。|
 |responsibilities|String collection|ユーザーが自分の責任の範囲を列挙する一覧。|
@@ -205,7 +206,7 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |directReports|[directoryObject](directoryobject.md) collection|そのユーザーの部下であるユーザーと連絡先。(マネージャー プロパティがこのユーザーに設定されている、ユーザーと連絡先。)読み取り専用です。Null 許容型。 |
 |drive|[drive](drive.md)|ユーザーの OneDrive。読み取り専用です。|
 |drives|[drive](drive.md) コレクション| このユーザーが使用できるドライブのコレクション。読み取り専用です。 |
-|イベント|[event](event.md) コレクション|ユーザーのイベント。既定では、既定の予定表でイベントが表示されます。読み取り専用です。Null 許容型。|
+|イベント|[event](event.md) コレクション|ユーザーのイベント。 既定は、既定の予定表でイベントを表示します。 読み取り専用です。 Null 許容型。|
 |extensions|[extension](extension.md) コレクション|ユーザーに対して定義されているオープン拡張機能のコレクション。 Null 許容型。|
 |inferenceClassification|[inferenceClassification](inferenceclassification.md)| 明示的な指定に基づく、ユーザーのメッセージの関連性の分類。明示的な指定は、推定される関連性や重要性より優先されます。 |
 |insights|[officeGraphInsights](officegraphinsights.md) | 読み取り専用です。 Null 許容型。|
