@@ -4,12 +4,12 @@ description: キオスク構成でのマルチモードアプリの構成を識�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: df9fec1c5d21d7d23c5c7a56c3760b88348c556b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d4b6a14eccade2555ef069bcbe6d009b094b81a6
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944006"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995442"
 ---
 # <a name="windowskioskmultipleapps-resource-type"></a>Windowskiosk多重アプリリソースの種類
 
@@ -31,7 +31,7 @@ ms.locfileid: "33944006"
 |disallowDesktopApps|Boolean|この設定は、デスクトップアプリが許可されていることを示します。 既定値は true です。|
 |startMenuLayoutXml|Binary|管理者が既定の開始レイアウトを上書きし、ユーザーがそれを変更できないようにします。レイアウトを変更するには、レイアウト変更スキーマに基づく XML ファイルを指定します。 XML はバイナリ形式である必要があります。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -62,6 +62,7 @@ ms.locfileid: "33944006"
   "startMenuLayoutXml": "binary"
 }
 ```
+
 
 
 

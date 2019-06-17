@@ -4,12 +4,12 @@ description: まだ文書化されていません
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 73dfbc0d80186cd83ec20fec15a154594d027ad3
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 72a595e0dfa3bb7533f1c017818138edafa3e944
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33942158"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986586"
 ---
 # <a name="windowsdeviceazureadaccount-resource-type"></a>windowsDeviceAzureADAccount リソースの種類
 
@@ -28,7 +28,7 @@ ms.locfileid: "33942158"
 |パスワード|String|まだ文書化されていない、[windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md) からの継承|
 |userPrincipalName|String|まだ文書化されていません|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -45,6 +45,7 @@ ms.locfileid: "33942158"
   "userPrincipalName": "String"
 }
 ```
+
 
 
 

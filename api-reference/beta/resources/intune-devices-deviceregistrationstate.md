@@ -4,12 +4,12 @@ description: デバイス登録の状態。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 94ff2a645b9ea3862cee50ca086284deea02da09
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 7aa2f009bc1a9fdafcabbbdbb4a5fbf5d2305b3a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33942018"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995218"
 ---
 # <a name="deviceregistrationstate-enum-type"></a>deviceRegistrationState 列挙型
 
@@ -30,6 +30,7 @@ ms.locfileid: "33942018"
 |certificateReset|シックス|デバイス証明書がリセットされました。|
 |notRegisteredPendingEnrollment|7|デバイスは登録されておらず、登録が保留されていません。|
 |不明|8 |デバイス登録の状態が不明です。|
+
 
 
 

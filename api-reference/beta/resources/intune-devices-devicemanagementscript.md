@@ -4,12 +4,12 @@ description: Intune は、登録済みの windows 10 Azure Active Directory 参�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 649ecb29aa3ff18960e858fc86a0f9fae316b13c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f4132aa55abc495dbd36a96714c3405e1445b42c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33942060"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983016"
 ---
 # <a name="devicemanagementscript-resource-type"></a>deviceManagementScript リソースの種類
 
@@ -30,7 +30,7 @@ Intune は、登録済みの windows 10 Azure Active Directory 参加済みデ�
 |[assign アクション](../api/intune-devices-devicemanagementscript-assign.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |id|文字列|デバイス管理スクリプトの一意識別子。|
 |displayName|String|デバイス管理スクリプトの名前。|
@@ -42,10 +42,10 @@ Intune は、登録済みの windows 10 Azure Active Directory 参加済みデ�
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|実行コンテキストの種類を示します。 可能な値は、`system`、`user` です。|
 |enforceSignatureCheck|Boolean|スクリプト署名をチェックする必要があるかどうかを示します。|
 |fileName|String|スクリプトファイル名。|
-|roleScopeTagIds|String collection|この PowerShellScript インスタンスの範囲タグ Id のリスト。|
+|roleScopeTagIds|文字列コレクション|この PowerShellScript インスタンスの範囲タグ Id のリスト。|
 |runAs32Bit|Boolean|PowerShell スクリプトを32ビットとして実行する必要があるかどうかを示す値。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |groupAssignments|[Devicemanagementscriptgroupassignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md)コレクション|デバイス管理スクリプトのグループ割り当てのリスト。|
@@ -83,6 +83,7 @@ Intune は、登録済みの windows 10 Azure Active Directory 参加済みデ�
   "runAs32Bit": true
 }
 ```
+
 
 
 

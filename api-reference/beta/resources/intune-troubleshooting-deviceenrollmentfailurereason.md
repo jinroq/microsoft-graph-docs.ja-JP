@@ -4,12 +4,12 @@ description: 登録の最上位レベルのエラーカテゴリ。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ae92cf0e9dc73dc2d846e549756fe1977fa19036
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2e932a86cef5c15d3a6d41cc424b1acfdf4c95a7
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951208"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991017"
 ---
 # <a name="deviceenrollmentfailurereason-enum-type"></a>deviceEnrollmentFailureReason 列挙型
 
@@ -34,6 +34,7 @@ ms.locfileid: "33951208"
 |enrollmentRestrictionsEnforced|9 |管理者によって構成された登録の制限は、この登録をブロックしました。|
 |clientDisconnected|10 |クライアントがタイムアウトしたか、登録が enduser によって中止されました。|
 |userAbandonment|#|登録は enduser によって中止されました。 (Enduser が開始されましたが、適切なタイミングで完了できませんでした)|
+
 
 
 

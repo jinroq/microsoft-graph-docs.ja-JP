@@ -4,12 +4,12 @@ description: ManagedAppPolicy リソースは、プラットフォーム特有�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aee308b24d136d7f8ee774fd8a5e41daf33e492e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c050415fc9402bdeb064ca6426bfe291e790940b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940723"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994749"
 ---
 # <a name="managedapppolicy-resource-type"></a>managedAppPolicy リソースの種類
 
@@ -33,11 +33,11 @@ ManagedAppPolicy リソースは、プラットフォーム特有のポリシー
 |description|String|ポリシーの説明。|
 |createdDateTime|DateTimeOffset|ポリシーが作成された日時。|
 |lastModifiedDateTime|DateTimeOffset|ポリシーが変更された最終日時。|
-|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。|
+|roleScopeTagIds|文字列コレクション|このエンティティインスタンスの範囲タグのリスト。|
 |id|文字列|エンティティのキー。|
 |version|String|エンティティのバージョン。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -62,6 +62,7 @@ ManagedAppPolicy リソースは、プラットフォーム特有のポリシー
   "version": "String"
 }
 ```
+
 
 
 
