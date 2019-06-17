@@ -4,12 +4,12 @@ description: 構成マネージャーのクライアントの状態
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9be184d298b1cecc9cb3f442fb343e1e00f3d965
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b733a6593be16bf52c075176aff778f1789ba492
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943005"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983198"
 ---
 # <a name="configurationmanagerclientstate-enum-type"></a>configurationManagerClientState 列挙型
 
@@ -28,6 +28,7 @@ ms.locfileid: "33943005"
 |installFailed|8 |構成マネージャーエージェントのインストールに失敗しました。|
 |updateFailed|#|構成マネージャーエージェントのバージョン x からバージョン y への更新に失敗しました。 |
 |communicationError|年|構成マネージャーエージェントは、以前に構成マネージャーサービスにアクセスできましたが、現在は利用できなくなりました。 |
+
 
 
 

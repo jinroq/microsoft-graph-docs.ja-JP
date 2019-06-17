@@ -4,12 +4,12 @@ description: まだ文書化されていません
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c066e87066a766fdef40fc75caa8818a973de4f2
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 8190071f5ed6e239c2452bc53d802125b71339f5
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943047"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983366"
 ---
 # <a name="bulkmanageddeviceactionresult-resource-type"></a>bulkManagedDeviceActionResult リソースの種類
 
@@ -22,12 +22,12 @@ ms.locfileid: "33943047"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|successfulDeviceIds|String collection|成功したデバイス|
-|失敗 Deviceid|String collection|失敗したデバイス|
-|Not見つかり Deviceid|String collection|見つからないデバイス|
-|notSupportedDeviceIds|String collection|サポートされていないデバイス|
+|successfulDeviceIds|文字列コレクション|成功したデバイス|
+|失敗 Deviceid|文字列コレクション|失敗したデバイス|
+|Not見つかり Deviceid|文字列コレクション|見つからないデバイス|
+|notSupportedDeviceIds|文字列コレクション|サポートされていないデバイス|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -54,6 +54,7 @@ ms.locfileid: "33943047"
   ]
 }
 ```
+
 
 
 

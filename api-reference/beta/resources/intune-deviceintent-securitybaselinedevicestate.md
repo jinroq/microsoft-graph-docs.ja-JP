@@ -4,12 +4,12 @@ description: デバイスのセキュリティベースラインのセキュリ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ff87b5c39d00957ddd4128bc3351879dcd5b652f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b9fb2195a2cdf68c85e05988b1d2063d21a97228
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943292"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983443"
 ---
 # <a name="securitybaselinedevicestate-resource-type"></a>securityBaselineDeviceState リソースの種類
 
@@ -38,7 +38,7 @@ ms.locfileid: "33943292"
 |state|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|セキュリティベースラインコンプライアンスの状態。 使用可能な値: `unknown`、`secure`、`notApplicable`、`notSecure`、`error`、`conflict`。|
 |lastReportedDateTime|DateTimeOffset|ポリシーレポートの最終変更日時|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -60,6 +60,7 @@ ms.locfileid: "33943292"
   "lastReportedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

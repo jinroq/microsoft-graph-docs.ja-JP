@@ -4,12 +4,12 @@ description: iosManagedAppRegistration オブジェクトのプロパティと�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f2fd5dab9d2ed390f0c89f8be03f535f60bf9f14
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 321ff0899d44622c86a78b61749c1d0819db17fe
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33903657"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34985949"
 ---
 # <a name="list-iosmanagedappregistrations"></a>iosManagedAppRegistrations のリスト
 
@@ -94,6 +94,7 @@ Content-Length: 1060
   ]
 }
 ```
+
 
 
 

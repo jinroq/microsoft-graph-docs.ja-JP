@@ -4,12 +4,12 @@ description: キーストレージプロバイダー (KSP) のインポートオ
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 77695c9deab823db79a3f8a98df16ff140d87248
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 4ed06e011bbd9f64645541ded8929b0f2b5984fc
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946267"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989428"
 ---
 # <a name="keystorageprovideroption-enum-type"></a>keyStorageProviderOption 列挙型
 
@@ -26,6 +26,7 @@ ms.locfileid: "33946267"
 |useTpmKspOtherwiseFail|1-d|トラステッドプラットフォームモジュール (TPM) KSP (存在する場合) にインポートします (それ以外の場合は失敗します)。|
 |usePassportForWorkKspOtherwiseFail|pbm-2|利用可能な場合は Passport にインポートし、それ以外の場合は失敗します。|
 |その他の方法|1/3|ソフトウェア KSP にインポートします。|
+
 
 
 

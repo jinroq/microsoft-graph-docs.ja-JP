@@ -4,12 +4,12 @@ description: 新しい userPFXCertificate オブジェクトを作成します�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2d71812bc1a4e41f01e8353b49a4e656613a8d2b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 10fa84321b9ebc4a3e1c5b78d338b955ae3261e7
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899733"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34988798"
 ---
 # <a name="create-userpfxcertificate"></a>UserPFXCertificate を作成する
 
@@ -117,6 +117,7 @@ Content-Length: 695
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: ImportedDeviceIdentity オブジェクトのプロパティとリ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2c90b001ce80146365bb5f07c44b6ea860704870
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 87308d152bb7eaaccba03032d8d5345fb09b6962
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33908372"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34981875"
 ---
 # <a name="list-importeddeviceidentities"></a>リスト importedDeviceIdentities
 
@@ -81,6 +81,7 @@ Content-Length: 577
   ]
 }
 ```
+
 
 
 

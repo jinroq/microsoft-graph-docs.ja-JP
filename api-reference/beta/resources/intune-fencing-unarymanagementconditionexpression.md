@@ -4,12 +4,12 @@ description: 単項演算を使用して評価される管理条件式。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eee7a423ca412eb4ee86e3f0b5a5f13ec786a690
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5eb5e7ed67b0731cc795ab791c2463294764ead6
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941200"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990107"
 ---
 # <a name="unarymanagementconditionexpression-resource-type"></a>非 Arymanagementconditionexpression リソースの種類
 
@@ -28,7 +28,7 @@ ms.locfileid: "33941200"
 |operator|[非 Arymanagementconditionexpression 演算子の種類](../resources/intune-fencing-unarymanagementconditionexpressionoperatortype.md)|単項演算の評価に使用する演算子。 可能な値は`not`次のとおりです。|
 |左辺|[Managementconditionexpression モデル](../resources/intune-fencing-managementconditionexpressionmodel.md)|単項演算のオペランド。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -47,6 +47,7 @@ ms.locfileid: "33941200"
   }
 }
 ```
+
 
 
 

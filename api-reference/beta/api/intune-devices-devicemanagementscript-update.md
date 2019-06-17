@@ -4,12 +4,12 @@ description: DeviceManagementScript オブジェクトのプロパティを更�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5dc0554456be285f8f6306bfa52033e851164874
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a8cb1b6978922f99ae357cabe7fbc6d19a58fa2a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33909905"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959041"
 ---
 # <a name="update-devicemanagementscript"></a>DeviceManagementScript の更新
 
@@ -60,7 +60,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|実行コンテキストの種類を示します。 可能な値は、`system`、`user` です。|
 |enforceSignatureCheck|Boolean|スクリプト署名をチェックする必要があるかどうかを示します。|
 |fileName|String|スクリプトファイル名。|
-|roleScopeTagIds|String collection|この PowerShellScript インスタンスの範囲タグ Id のリスト。|
+|roleScopeTagIds|文字列コレクション|この PowerShellScript インスタンスの範囲タグ Id のリスト。|
 |runAs32Bit|Boolean|PowerShell スクリプトを32ビットとして実行する必要があるかどうかを示す値。|
 
 
@@ -122,6 +122,7 @@ Content-Length: 615
   "runAs32Bit": true
 }
 ```
+
 
 
 

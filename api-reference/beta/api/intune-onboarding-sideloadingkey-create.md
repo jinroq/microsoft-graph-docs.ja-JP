@@ -4,12 +4,12 @@ description: 新しい sideLoadingKey オブジェクトを作成します。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2c448e675df87d0706f377b43857adc00f1f5d32
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: be989b909b0d56e6d55c44e3d0df368d5c9c6825
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899901"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34980727"
 ---
 # <a name="create-sideloadingkey"></a>SideLoadingKey を作成する
 
@@ -98,6 +98,7 @@ Content-Length: 295
   "lastUpdatedDateTime": "Last Updated Date Time value"
 }
 ```
+
 
 
 

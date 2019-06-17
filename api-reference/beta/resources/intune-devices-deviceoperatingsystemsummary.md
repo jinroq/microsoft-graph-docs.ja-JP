@@ -4,12 +4,12 @@ description: デバイスのオペレーティング システムの概要。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d53d9fdfcf3dfcc86f40ccadb3d71bdbd6b8686b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b55459189f86e298aa219e0f00d33df8e0625e68
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33942039"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995253"
 ---
 # <a name="deviceoperatingsystemsummary-resource-type"></a>deviceOperatingSystemSummary リソースの種類
 
@@ -29,7 +29,7 @@ ms.locfileid: "33942039"
 |windowsCount|Int32|Windows デバイスの数です。|
 |unknownCount|Int32|不明なデバイスの数です。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -50,6 +50,7 @@ ms.locfileid: "33942039"
   "unknownCount": 1024
 }
 ```
+
 
 
 

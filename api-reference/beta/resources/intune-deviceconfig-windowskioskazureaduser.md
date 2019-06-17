@@ -4,12 +4,12 @@ description: キオスク構成の AzureAD ユーザーアカウントを識別�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 96d91f585d8c762a2e1080d38bfd7cebb75e3acc
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: aa938ff2b99f583255c18111f24b5e5f4d7a17b2
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943949"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34978529"
 ---
 # <a name="windowskioskazureaduser-resource-type"></a>windowsKioskAzureADUser リソースの種類
 
@@ -28,7 +28,7 @@ ms.locfileid: "33943949"
 |userId|String|このキオスク構成にロックされる AzureAD ユーザーの ID|
 |userPrincipalName|String|このキオスク構成にロックされるユーザーアカウント|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -45,6 +45,7 @@ ms.locfileid: "33943949"
   "userPrincipalName": "String"
 }
 ```
+
 
 
 

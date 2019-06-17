@@ -4,12 +4,12 @@ description: Android keyguard 機能。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 00c63a04a2fe84f67fd9e05011eb68fce452a326
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f62e2a8055dd6e8f46ac40a06d0c8f0bfc7677ad
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33948563"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34988939"
 ---
 # <a name="androidkeyguardfeature-enum-type"></a>Androidkeygu/Feature 列挙型
 
@@ -30,6 +30,7 @@ Android keyguard 機能。
 |デジタル|5|セキュリティで保護された keyguard 画面の場合の指紋センサーの使用量。|
 |remoteInput|シックス|セキュリティで保護された keyguard 画面での通知テキスト入力。|
 |allFeatures|7|セキュリティで保護された keyguard 画面上のすべての keyguard 機能。|
+
 
 
 

@@ -4,12 +4,12 @@ description: BitLocker 固定ドライブポリシー。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 326d9c873fd1e0b6b00656aa6b831b7e05ac6bf0
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c5729952f2700c42eaf28a292ef0f520dfbe89da
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947520"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983590"
 ---
 # <a name="bitlockerfixeddrivepolicy-resource-type"></a>Bitlockerfixeddrive Policy リソースの種類
 
@@ -26,7 +26,7 @@ BitLocker 固定ドライブポリシー。
 |requireEncryptionForWriteAccess|Boolean|このポリシー設定は、固定データドライブをコンピューター上で書き込み可能にするために BitLocker 保護が必要かどうかを決定します。|
 |recoveryOptions|[bitLockerRecoveryOptions](../resources/intune-deviceconfig-bitlockerrecoveryoptions.md)|このポリシー設定を使用すると、必要な資格情報が存在しない場合に BitLocker で保護された固定データドライブを回復する方法を制御できます。 このポリシー設定は、BitLocker を有効にしたときに適用されます。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -53,6 +53,7 @@ BitLocker 固定ドライブポリシー。
   }
 }
 ```
+
 
 
 

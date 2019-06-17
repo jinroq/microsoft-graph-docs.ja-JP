@@ -4,12 +4,12 @@ description: 特定のデバイスの MobileApp インテントとインスト�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0bc39ec4db3c777fc7cf34528e9d8054f6d382e8
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 7d6cedfb73b89bff27cc83ec591c0552743170db
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939771"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34988112"
 ---
 # <a name="mobileappintentandstate-resource-type"></a>mobileAppIntentAndState リソースの種類
 
@@ -36,7 +36,7 @@ ms.locfileid: "33939771"
 |userId|String|デバイスを登録しようとするユーザーの識別子。|
 |mobileAppList|[mobileAppIntentAndStateDetail](../resources/intune-troubleshooting-mobileappintentandstatedetail.md)コレクション|テナントのペイロードの意図と状態の一覧。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -73,6 +73,7 @@ ms.locfileid: "33939771"
   ]
 }
 ```
+
 
 
 

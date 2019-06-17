@@ -4,12 +4,12 @@ description: MacOS Vpp アプリでのアクションの結果を定義します
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ad7ad1a2cdf8eabd67c1578c387b424f3e6f6c85
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: cd659ab07b5db81de4e8004461bc149c236ec576
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950222"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989155"
 ---
 # <a name="macosvppapprevokelicensesactionresult-resource-type"></a>macOsVppAppRevokeLicensesActionResult リソースの種類
 
@@ -32,7 +32,7 @@ MacOS Vpp アプリでのアクションの結果を定義します。 ActionRes
 |startDateTime|DateTimeOffset|アクションが開始された時刻|
 |lastUpdatedDateTime|DateTimeOffset|アクション状態の最終更新時刻|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -56,6 +56,7 @@ MacOS Vpp アプリでのアクションの結果を定義します。 ActionRes
   "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

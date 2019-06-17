@@ -4,12 +4,12 @@ description: deviceManagementTroubleshootingEvent を削除します。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 193eb3655f1063c6297a56c10af550dbcd18fb50
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2fd2790ab5ed475d957bdcf96ef1563485d1f8a2
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899355"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990891"
 ---
 # <a name="delete-devicemanagementtroubleshootingevent"></a>deviceManagementTroubleshootingEvent の削除
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/troubleshootingEvents/{
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

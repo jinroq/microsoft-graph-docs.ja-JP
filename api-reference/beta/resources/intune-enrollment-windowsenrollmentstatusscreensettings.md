@@ -4,12 +4,12 @@ description: 登録の状態画面の設定
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 902e833272976495f9e2a6a7b203c061b5faea22
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d22f7497fb79921bbbf34c6f3334ccc2ae4d7d53
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941402"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994903"
 ---
 # <a name="windowsenrollmentstatusscreensettings-resource-type"></a>windowsEnrollmentStatusScreenSettings リソースの種類
 
@@ -30,7 +30,7 @@ ms.locfileid: "33941402"
 |installProgressTimeoutInMinutes|Int32|インストールの進行状況のタイムアウトを分単位で設定する|
 |allowDeviceUseOnInstallFailure|Boolean|インストールエラー時にユーザーがデバイスを引き続き使用できるようにする|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -52,6 +52,7 @@ ms.locfileid: "33941402"
   "allowDeviceUseOnInstallFailure": true
 }
 ```
+
 
 
 

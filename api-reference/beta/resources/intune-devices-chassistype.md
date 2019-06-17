@@ -4,12 +4,12 @@ description: シャーシの種類。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5805828091425ba9a0a949c69dcbab2c5bc752fd
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 7ed8eef585796ce668180d5db5ca91e42501b6a7
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943026"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983296"
 ---
 # <a name="chassistype-enum-type"></a>chassisType 列挙型
 
@@ -31,6 +31,7 @@ ms.locfileid: "33943026"
 |タブレット|101|モバイルタブレット。|
 |mobileOther|102|その他のモバイル。|
 |mobileUnknown|103|不明なモバイル。|
+
 
 
 

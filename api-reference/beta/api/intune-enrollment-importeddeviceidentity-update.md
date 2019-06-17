@@ -4,12 +4,12 @@ description: ImportedDeviceIdentity オブジェクトのプロパティを更�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b114bd928db1d3c05d6ab5a0a1a9a897c91efd60
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5a95cd0b74c35d0d9a8e3a22b6fc9ad66d80d397
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33908359"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34981840"
 ---
 # <a name="update-importeddeviceidentity"></a>ImportedDeviceIdentity の更新
 
@@ -50,7 +50,7 @@ PATCH /deviceManagement/importedDeviceIdentities/{importedDeviceIdentityId}
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|インポートされたデバイス id の Id|
+|id|String|インポートされたデバイス id の id|
 |importedDeviceIdentifier|String|インポートされたデバイス識別子|
 |importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune-enrollment-importeddeviceidentitytype.md)|インポートされたデバイス Id の種類。 可能な値は、`unknown`、`imei`、`serialNumber` です。|
 |lastModifiedDateTime|DateTimeOffset|説明の最終更新日時|
@@ -105,6 +105,7 @@ Content-Length: 504
   "platform": "ios"
 }
 ```
+
 
 
 

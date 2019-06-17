@@ -4,12 +4,12 @@ description: デバイスのプロパティ
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 001e80621709bdb2dcdb9b5cf8e17753ee3458b3
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6e757596be1ffbcb93c48f0a3d450e57c94641dd
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939118"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34988133"
 ---
 # <a name="mobileappsupporteddevicetype-resource-type"></a>mobileAppSupportedDeviceType リソースの種類
 
@@ -20,13 +20,13 @@ ms.locfileid: "33939118"
 デバイスのプロパティ
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |type|[deviceType](../resources/intune-shared-devicetype.md)|デバイスの種類。 可能な値: `desktop`、 `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android`、、、、、、、、、、、、 `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise`, `blackberry`, `palm`, `unknown`.|
 |minimumOperatingSystemVersion|String|最小 OS バージョン|
 |最大化 Umoper/Systemversion|String|最大 OS バージョン|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -44,6 +44,7 @@ ms.locfileid: "33939118"
   "maximumOperatingSystemVersion": "String"
 }
 ```
+
 
 
 

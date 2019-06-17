@@ -4,12 +4,12 @@ description: Windows10SecureAssessment ConfigurationAccount で許可されて�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f194de7010a1b5286a20a3e401922f6a42ddf3d9
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 8ff967766321b5e7be5dd33944a02e4ed2bdc280
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944748"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986649"
 ---
 # <a name="secureassessmentaccounttype-enum-type"></a>secureAssessmentAccountType 列挙型
 
@@ -25,6 +25,7 @@ Windows10SecureAssessment ConfigurationAccount で許可されているアカウ
 |azureADAccount|.0|Azure AD アカウントが AzureAD\username@tenant.com の形式であることを示します。|
 |domainAccount|1-d|ドメインアカウントが domain\user または user@domain.com の形式であることを示します。|
 |localAccount|pbm-2|ユーザー名の形式でローカルアカウントを示します。|
+
 
 
 

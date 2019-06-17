@@ -4,12 +4,12 @@ description: MacOS endpoint protection 構成プロファイル。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 83ae5940d9aa985c7dd5d553c2891478e57ac587
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0fdbd1c46b870a8448381890120fe66f894b7fa4
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946134"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989197"
 ---
 # <a name="macosendpointprotectionconfiguration-resource-type"></a>macOSEndpointProtectionConfiguration リソースの種類
 
@@ -32,12 +32,15 @@ MacOS endpoint protection 構成プロファイル。
 |[MacOSEndpointProtectionConfiguration の更新](../api/intune-deviceconfig-macosendpointprotectionconfiguration-update.md)|[macOSEndpointProtectionConfiguration](../resources/intune-deviceconfig-macosendpointprotectionconfiguration.md)|[Macosendpointprotectionconfiguration](../resources/intune-deviceconfig-macosendpointprotectionconfiguration.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |id|文字列|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|roleScopeTagIds|文字列コレクション|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |supportsScopeTags|Boolean|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|このポリシーの OS エディションの適用。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|このポリシーの OS バージョン適用ルール。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|Devicemanagementの信頼性ルール Devicemode|[Devicemanagementの信頼性ルール Devicemode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|このポリシーのデバイスモード適用ルール。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |description|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|管理者が指定した、デバイス構成の名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
@@ -48,8 +51,17 @@ MacOS endpoint protection 構成プロファイル。
 |firewallBlockAllIncoming|Boolean|[着信接続をすべてブロックする] オプションに対応しています。|
 |firewallEnableStealthMode|Boolean|[ステルスモードを有効にする] に相当します。|
 |firewallApplications|[macOSFirewallApplication](../resources/intune-deviceconfig-macosfirewallapplication.md)コレクション|ファイアウォール設定のあるアプリケーションの一覧。 この一覧にないアプリケーションのファイアウォール設定は、ユーザーによって決まります。 このコレクションには、最大で 500 個の要素を含めることができます。|
+|fileVaultEnabled|Boolean|FileVault を有効にするかどうかを指定します。|
+|fileVaultSelectedRecoveryKeyTypes|[macOSFileVaultRecoveryKeyTypes](../resources/intune-deviceconfig-macosfilevaultrecoverykeytypes.md)|FileVault が有効になっている場合は必須。使用する回復キーの種類を決定します。 . 可能な値は、`notConfigured`、`institutionalRecoveryKey`、`personalRecoveryKey` です。|
+|fileVaultInstitutionalRecoveryKeyCertificate|Binary|選択した回復キーの種類 (s) に InstitutionalRecoveryKey が含まれている場合に必要です。 証明機関の回復キーを設定するために使用する DER でエンコードされた証明書ファイル。|
+|fileVaultInstitutionalRecoveryKeyCertificateFileName|String|UI に表示される、証明書の回復キー証明書のファイル名。 (* der)|
+|fileVaultPersonalRecoveryKeyHelpMessage|String|選択されている回復キーの種類 (s) には、そのような回復キーが含まれている場合に必要です。 ユーザーに対して、個人回復キーを取得する方法を説明する短いメッセージが表示されます。|
+|fileVaultAllowDeferralUntilSignOut|Boolean|省略可能。 True に設定されている場合、ユーザーはサインアウトするまで FileVault の有効化を延期することができます。|
+|fileVaultNumberOfTimesUserCanIgnore|Int32|省略可能。 Defer オプションを使用する場合、ユーザーがサインインするために FileVault が必要になる前に、FileVault を有効にするように求めるプロンプトをユーザーが無視できる最大回数です。 -1 に設定すると、FileVault が有効になるまでは常に FileVault を有効にするかどうかを確認するメッセージが表示されます。ただし、ユーザーは FileVault の有効化をバイパスできます。 この値を0に設定すると、機能が無効になります。|
+|fileVaultDisablePromptAtSignOut|Boolean|省略可能。 Defer オプションを使用する場合、true に設定すると、ユーザーはサインアウト時に FileVault を有効にするかどうかを確認するメッセージを表示しません。|
+|fileVaultPersonalRecoveryKeyRotationInMonths|Int32|省略可能。 選択した回復キーの種類 (s) には、そのキーを月単位で回転する頻度を指定します。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)コレクション|デバイスの構成プロファイルのグループ割り当てのリストです。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
@@ -77,6 +89,27 @@ MacOS endpoint protection 構成プロファイル。
     "String"
   ],
   "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+    "osEditionTypes": [
+      "String"
+    ],
+    "name": "String",
+    "ruleType": "String"
+  },
+  "deviceManagementApplicabilityRuleOsVersion": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+    "minOSVersion": "String",
+    "maxOSVersion": "String",
+    "name": "String",
+    "ruleType": "String"
+  },
+  "deviceManagementApplicabilityRuleDeviceMode": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+    "deviceMode": "String",
+    "name": "String",
+    "ruleType": "String"
+  },
   "createdDateTime": "String (timestamp)",
   "description": "String",
   "displayName": "String",
@@ -92,9 +125,19 @@ MacOS endpoint protection 構成プロファイル。
       "bundleId": "String",
       "allowsIncomingConnections": true
     }
-  ]
+  ],
+  "fileVaultEnabled": true,
+  "fileVaultSelectedRecoveryKeyTypes": "String",
+  "fileVaultInstitutionalRecoveryKeyCertificate": "binary",
+  "fileVaultInstitutionalRecoveryKeyCertificateFileName": "String",
+  "fileVaultPersonalRecoveryKeyHelpMessage": "String",
+  "fileVaultAllowDeferralUntilSignOut": true,
+  "fileVaultNumberOfTimesUserCanIgnore": 1024,
+  "fileVaultDisablePromptAtSignOut": true,
+  "fileVaultPersonalRecoveryKeyRotationInMonths": 1024
 }
 ```
+
 
 
 

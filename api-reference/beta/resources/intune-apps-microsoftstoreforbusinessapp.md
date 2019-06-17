@@ -4,12 +4,12 @@ description: ビジネス向け Microsoft Store のアプリです。 このク�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8870982c1322f5ee2c14dc399020f34e2fcc0924
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f704a3f373aa7dc2e0e02504ade17f177f02bc9c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950047"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986180"
 ---
 # <a name="microsoftstoreforbusinessapp-resource-type"></a>microsoftStoreForBusinessApp リソースの種類
 
@@ -50,7 +50,7 @@ ms.locfileid: "33950047"
 |uploadState|Int32|アップロード状態。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 [MobileApp](../resources/intune-apps-mobileapp.md)から継承されます。 可能な値は、`notPublished`、`processing`、`published` です。|
 |isAssigned|Boolean|アプリが少なくとも1つのグループに割り当てられているかどうかを示す値。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|roleScopeTagIds|String collection|このモバイルアプリの範囲タグ id のリスト。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|roleScopeTagIds|文字列コレクション|このモバイルアプリの範囲タグ id のリスト。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |dependentAppCount|Int32|子アプリが持つ依存関係の合計数。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |usedLicenseCount|Int32|使用中の、ビジネス向け Microsoft Store ライセンスの数。|
 |totalLicenseCount|Int32|ビジネス向け Microsoft Store ライセンスの合計数。|
@@ -59,7 +59,7 @@ ms.locfileid: "33950047"
 |packageIdentityName|String|アプリ パッケージの識別子|
 |licensingType|[vppLicensingType](../resources/intune-apps-vpplicensingtype.md)|サポートされているライセンスの種類。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |categories|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) コレクション|このアプリのカテゴリのリスト。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
@@ -119,6 +119,7 @@ ms.locfileid: "33950047"
   }
 }
 ```
+
 
 
 

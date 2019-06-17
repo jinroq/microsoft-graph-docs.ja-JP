@@ -4,12 +4,12 @@ description: 新しい iosUpdateDeviceStatus オブジェクトを作成しま�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 168f15e16367e070c3400ba27aa450d5c1d376ba
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3bfed8ec9b24353c475b229c4dba92d469691434
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33923217"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34977178"
 ---
 # <a name="create-iosupdatedevicestatus"></a>iosUpdateDeviceStatus の作成
 
@@ -119,6 +119,7 @@ Content-Length: 619
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
 
 
 

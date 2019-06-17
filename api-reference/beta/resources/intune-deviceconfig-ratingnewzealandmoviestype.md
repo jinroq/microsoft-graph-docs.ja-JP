@@ -4,12 +4,12 @@ description: ニュージーランドでの映画の定格ラベル
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 53f2c6f6fc9777b1de8522541f1e0b84284ccca9
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 274d5ea373d00d4b16e5d254e1a244499518c86f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950894"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34984549"
 ---
 # <a name="ratingnewzealandmoviestype-enum-type"></a>ratingNewZealandMoviesType 列挙型
 
@@ -33,6 +33,7 @@ ms.locfileid: "33950894"
 |agesAbove18|8 |R18 の分類は、18年以上に制限されています。|
 |しか|9 |R 分類は特定の対象ユーザーに制限されています。|
 |agesAbove16Restricted|10 |RP16 分類には、16以下の閲覧者が親または成人と共に必要|
+
 
 
 

@@ -4,12 +4,12 @@ description: WindowsAutopilotSettings リソースは、windows device data sync
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d5f7893b7a9dd01a3ea7c41875f235870a5ce27f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d7bbdfa28061b48a0c2ca3ed2e0b714e1f1a1159
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941437"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989715"
 ---
 # <a name="windowsautopilotsettings-resource-type"></a>windowsAutopilotSettings リソースの種類
 
@@ -34,7 +34,7 @@ WindowsAutopilotSettings リソースは、windows device data sync service と�
 |lastManualSyncTriggerDateTime|DateTimeOffset|DDS サービスによる最終データ同期日時。|
 |syncStatus|[windowsAutopilotSyncStatus](../resources/intune-enrollment-windowsautopilotsyncstatus.md)|デバイスデータ同期 (DDS) サービスとの同期の状態を示します。 可能な値は、`unknown`、`inProgress`、`completed`、`failed` です。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -54,6 +54,7 @@ WindowsAutopilotSettings リソースは、windows device data sync service と�
   "syncStatus": "String"
 }
 ```
+
 
 
 

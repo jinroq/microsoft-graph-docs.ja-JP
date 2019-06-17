@@ -4,12 +4,12 @@ description: アイルランドのテレビコンテンツ評価のラベル
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 69115ed96bf3092acd037ec553c3250a0c553826
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0556a00c196e3bf1f543ab034ada344dfdeb98d9
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951006"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34984696"
 ---
 # <a name="ratingirelandtelevisiontype-enum-type"></a>ratingIrelandTelevisionType 列挙型
 
@@ -29,6 +29,7 @@ ms.locfileid: "33951006"
 |youngAdults|2/4|YA の分類は、teenage 対象ユーザーに適しています。|
 |parentalSupervision|5|PS 分類は親とガーディアンを招待して、子のアクセス制限を考慮します。|
 |度|シックス|MA 分類は、大人に適しています。|
+
 
 
 

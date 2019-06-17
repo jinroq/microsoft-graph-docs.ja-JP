@@ -4,12 +4,12 @@ description: まだ文書化されていません
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8e18502f5fef223f0a631f631ce17db025cec227
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 1cd8d1da8587da45339a10208112480cd7f1228b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33902984"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34984304"
 ---
 # <a name="wipe-action"></a>ワイプ アクション
 
@@ -62,6 +62,7 @@ POST https://graph.microsoft.com/beta/deviceAppManagement/windowsInformationProt
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

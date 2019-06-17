@@ -4,12 +4,12 @@ description: GroupPolicyPresentationComboBox オブジェクトのプロパテ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b5a40f8ba5e429e48fcbd9628492f0a1aae62c36
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 21b74c87feb7cdea29c338c0a53458d8f4723150
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33904966"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34985158"
 ---
 # <a name="list-grouppolicypresentationcomboboxes"></a>リスト groupPolicyPresentationComboBoxes ボックス
 
@@ -81,6 +81,7 @@ Content-Length: 419
   ]
 }
 ```
+
 
 
 

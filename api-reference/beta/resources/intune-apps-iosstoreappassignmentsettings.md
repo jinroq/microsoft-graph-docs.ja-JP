@@ -4,12 +4,12 @@ description: グループへの iOS ストア モバイル アプリの割り当
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ef89526a928ed2f8edb9a8c1ce26f199bdfdec77
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e178cd90da96abeb0956577ac1e44247ef225f0e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950418"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986370"
 ---
 # <a name="iosstoreappassignmentsettings-resource-type"></a>iosStoreAppAssignmentSettings リソースの種類
 
@@ -27,7 +27,7 @@ ms.locfileid: "33950418"
 |:---|:---|:---|
 |vpnConfigurationId|文字列型 (String)|このアプリに適用するための VPN 構成 ID。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -43,6 +43,7 @@ ms.locfileid: "33950418"
   "vpnConfigurationId": "String"
 }
 ```
+
 
 
 

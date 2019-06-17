@@ -4,12 +4,12 @@ description: アプリのプロビジョニング構成をグループに割り�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c01dfd8da7d241719ca873fa910338a286f16dbd
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3883c8e088a57a0709f47deea1c3210049dab301
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949914"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991836"
 ---
 # <a name="mobileappprovisioningconfiggroupassignment-resource-type"></a>mobileAppProvisioningConfigGroupAssignment リソースの種類
 
@@ -34,7 +34,7 @@ ms.locfileid: "33949914"
 |targetGroupId|String|アプリのプロビジョニング構成を対象とする AAD グループの ID。|
 |id|String|エンティティのキー。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -52,6 +52,7 @@ ms.locfileid: "33949914"
   "id": "String (identifier)"
 }
 ```
+
 
 
 

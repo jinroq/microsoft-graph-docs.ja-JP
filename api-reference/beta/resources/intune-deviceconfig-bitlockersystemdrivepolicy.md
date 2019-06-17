@@ -4,12 +4,12 @@ description: BitLocker 暗号化の基本ポリシー。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b9301e2199c5e2f032309cb3c11ec01f14d969bb
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: bca77059f2ec819f62326469454f373b3916b7f7
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947485"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990184"
 ---
 # <a name="bitlockersystemdrivepolicy-resource-type"></a>Bitlockersystemdrive Policy リソースの種類
 
@@ -35,7 +35,7 @@ BitLocker 暗号化の基本ポリシー。
 |prebootRecoveryMessage|String|カスタムの回復メッセージを定義します。|
 |prebootRecoveryUrl|String|カスタムの回復 URL を定義します。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -71,6 +71,7 @@ BitLocker 暗号化の基本ポリシー。
   "prebootRecoveryUrl": "String"
 }
 ```
+
 
 
 

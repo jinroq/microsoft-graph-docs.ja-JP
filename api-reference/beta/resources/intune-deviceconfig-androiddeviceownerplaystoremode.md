@@ -4,12 +4,12 @@ description: Android デバイス所有者再生ストアモードの種類。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d37f57dc2481e18871fca840499142eda30ab8fd
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 7e3f13a942c5b678367262400aeeea9c80ed705b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949004"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983807"
 ---
 # <a name="androiddeviceownerplaystoremode-enum-type"></a>androidDeviceOwnerPlayStoreMode 列挙型
 
@@ -25,6 +25,7 @@ Android デバイス所有者再生ストアモードの種類。
 |notConfigured|.0|Not Configured|
 |allowList|1-d|ポリシーに含まれるアプリのみが利用可能であり、ポリシーに含まれていないアプリはデバイスから自動的にアンインストールされます。|
 |blockList|pbm-2|すべてのアプリが利用可能で、デバイス上に配置する必要がないアプリは、アプリケーションポリシーで明示的に ' ブロック ' としてマークされている必要があります。|
+
 
 
 

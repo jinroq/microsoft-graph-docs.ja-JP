@@ -4,12 +4,12 @@ description: 新しい importedDeviceIdentity オブジェクトを作成しま�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1c5148a4d131410ba0947cd597e9ed557a1553a4
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ed588ed0c44011ecf49db132c321c2e014745e9e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33908498"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34981938"
 ---
 # <a name="create-importeddeviceidentity"></a>ImportedDeviceIdentity を作成する
 
@@ -50,7 +50,7 @@ POST /deviceManagement/importedDeviceIdentities
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|インポートされたデバイス id の Id|
+|id|String|インポートされたデバイス id の id|
 |importedDeviceIdentifier|String|インポートされたデバイス識別子|
 |importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune-enrollment-importeddeviceidentitytype.md)|インポートされたデバイス Id の種類。 可能な値は、`unknown`、`imei`、`serialNumber` です。|
 |lastModifiedDateTime|DateTimeOffset|説明の最終更新日時|
@@ -105,6 +105,7 @@ Content-Length: 504
   "platform": "ios"
 }
 ```
+
 
 
 

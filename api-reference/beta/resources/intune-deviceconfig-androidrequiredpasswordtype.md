@@ -4,12 +4,12 @@ description: Android 必要なパスワードの種類。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8bcdf143e880940bd407d3c1d550b51ee491346c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b2cfbf31bc2c263031e2e850e4caf479abb325ec
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33948500"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34988951"
 ---
 # <a name="androidrequiredpasswordtype-enum-type"></a>androidRequiredPasswordType 列挙型
 
@@ -30,6 +30,7 @@ Android 必要なパスワードの種類。
 |数値|5|数字のパスワードが必要です。|
 |numericComplex|シックス|数字の複雑なパスワードが必要です。|
 |any|7|パスワードまたはパターンが必要であり、任意のものが受け入れ可能である。|
+
 
 
 

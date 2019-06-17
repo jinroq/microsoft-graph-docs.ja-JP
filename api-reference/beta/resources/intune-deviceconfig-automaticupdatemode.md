@@ -4,12 +4,12 @@ description: 自動更新モードで可能な値。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 280cdcf50e19736077a10668a7cfc507aca9412e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d2fffa3e1b1a5e7efa43d7ce653792247e3ad790
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947548"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983632"
 ---
 # <a name="automaticupdatemode-enum-type"></a>自動 Updatemode 列挙型
 
@@ -29,6 +29,7 @@ ms.locfileid: "33947548"
 |autoInstallAndRebootAtScheduledTime|2/4|スケジュールされた時刻に自動インストールおよび再起動します。|
 |autoInstallAndRebootWithoutEndUserControl|5|エンドユーザーコントロールを使用せずに自動インストールおよび再起動|
 |windowsDefault|シックス|Windows の既定値にリセットします。|
+
 
 
 

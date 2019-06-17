@@ -4,12 +4,12 @@ description: DepEnrollmentProfile リソースは、Apple Device Enrollment Prog
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: da176fcdd2bd59a504701348e8b2b4f298bd9bda
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d7b12a0fae084e11225e886b70ae4c58b7ab0eaf
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941647"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987881"
 ---
 # <a name="depenrollmentprofile-resource-type"></a>depEnrollmentProfile リソースの種類
 
@@ -66,7 +66,7 @@ DepEnrollmentProfile リソースは、Apple Device Enrollment Program (DEP) 登
 |sharedIPadMaximumUserCount|Int32|これにより、共有 iPad を使用できるユーザーの最大数が指定されます。 共有 iPad モードでのみ適用されます。|
 |enableSharedIPad|Boolean|これは、デバイスを、複数のユーザーシナリオを有効にするモードで登録するかどうかを示します。 共有 Ipad にのみ適用されます。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -119,6 +119,7 @@ DepEnrollmentProfile リソースは、Apple Device Enrollment Program (DEP) 登
   "enableSharedIPad": true
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Win32 アプリを検出するためのレジストリプロパテ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4cd9ce4223d18d001ca1d299f8dbcae31c6f99d2
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3013ca82a0545379c96cf832818783dedd4576f4
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949529"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986106"
 ---
 # <a name="win32lobappregistrydetection-resource-type"></a>win32LobAppRegistryDetection リソースの種類
 
@@ -32,7 +32,7 @@ Win32 アプリを検出するためのレジストリプロパティが含ま�
 |operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|レジストリデータを検出するための演算子。 可能な値は、`notConfigured`、`equal`、`notEqual`、`greaterThan`、`greaterThanOrEqual`、`lessThan`、`lessThanOrEqual` です。|
 |detectionValue|String|レジストリの検出値|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -53,6 +53,7 @@ Win32 アプリを検出するためのレジストリプロパティが含ま�
   "detectionValue": "String"
 }
 ```
+
 
 
 

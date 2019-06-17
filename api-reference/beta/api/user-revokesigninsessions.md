@@ -4,12 +4,12 @@ description: '**SignInSessionsValidFromDateTime** user プロパティを現在�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1221edadd8e69139b28aaf1122409cf311986d6c
-ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.openlocfilehash: 26f2224e74a90bbc4a47a4e31c5738d3b1baf08e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "34453398"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979348"
 ---
 # <a name="user-revokesigninsessions"></a>ユーザー: revokeSignInSessions
 
@@ -19,8 +19,8 @@ ms.locfileid: "34453398"
 
 アプリケーションは、無効にされた更新トークンを使用して、このユーザーの代理アクセストークンの引き換えを試行すると、アプリケーションはエラーを受け取ります。 このような場合、アプリケーションは承認エンドポイントに対して要求を行うことで新しい更新トークンを取得する必要があります。これにより、ユーザーは強制的にサインインできるようになります。
 
-[!NOTE]
-**RevokeSignInSessions**を呼び出した後、トークンが取り消されるまでに少し時間がかかる場合があります。
+>[!NOTE]
+>**RevokeSignInSessions**を呼び出した後、トークンが取り消されるまでに少し時間がかかる場合があります。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -38,10 +38,12 @@ ms.locfileid: "34453398"
 POST /me/revokeSignInSessions
 POST /users/{id | userPrincipalName}/revokeSignInSessions
 ```
+
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値 |
 |:---------------|:--------|
 | Authorization  | ベアラー {トークン}。必須。  |
+| Content-Type  | application/json  |
 
 ## <a name="request-body"></a>要求本文
 この操作には、要求コンテンツはありません。

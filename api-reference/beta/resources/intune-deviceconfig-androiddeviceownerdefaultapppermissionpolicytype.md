@@ -4,12 +4,12 @@ description: Android デバイス所有者既定のアプリアクセス許可�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 73e2d1533cdf1bbcf34c219e5da9e3a0062b3210
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f6e78615a54fcf163a77bb302347f90b3d8d6df1
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949046"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983828"
 ---
 # <a name="androiddeviceownerdefaultapppermissionpolicytype-enum-type"></a>androidDeviceOwnerDefaultAppPermissionPolicyType 列挙型
 
@@ -26,6 +26,7 @@ Android デバイス所有者既定のアプリアクセス許可ポリシーの
 |音声ガイダンス|1-d|・.|
 |autoGrant|pbm-2|自動付与|
 |autoDeny|1/3|自動拒否。|
+
 
 
 

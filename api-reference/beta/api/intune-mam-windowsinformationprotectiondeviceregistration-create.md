@@ -4,12 +4,12 @@ description: 新しい windowsInformationProtectionDeviceRegistration オブジ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3fa83295e3c5dc53d5a1e94e498154be9381d8de
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 76d55c23cbff59eb7d28d85d39c5f7052345ea68
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33903019"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987755"
 ---
 # <a name="create-windowsinformationprotectiondeviceregistration"></a>WindowsInformationProtectionDeviceRegistration を作成する
 
@@ -101,6 +101,7 @@ Content-Length: 415
   "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
 }
 ```
+
 
 
 

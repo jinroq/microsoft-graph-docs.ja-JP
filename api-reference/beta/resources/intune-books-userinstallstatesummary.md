@@ -4,12 +4,12 @@ description: ユーザーのインストール状態の要約のプロパティ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8eb12003c108184739018b62c4ed9d28631103e4
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 7bfc8c23022677d32f7ecd4bbe452650e46b5ff2
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949396"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987923"
 ---
 # <a name="userinstallstatesummary-resource-type"></a>userInstallStateSummary リソースの種類
 
@@ -29,7 +29,7 @@ ms.locfileid: "33949396"
 |[userInstallStateSummary の更新](../api/intune-books-userinstallstatesummary-update.md)|[userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md)|[userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティのキー。|
 |userName|String|ユーザー名です。|
@@ -37,7 +37,7 @@ ms.locfileid: "33949396"
 |failedDeviceCount|Int32|失敗したデバイスの数です。|
 |notInstalledDeviceCount|Int32|インストールされていないデバイスの数です。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |deviceStates|[deviceInstallState](../resources/intune-books-deviceinstallstate.md) コレクション|電子ブックのインストールの状態。|
@@ -60,6 +60,7 @@ ms.locfileid: "33949396"
   "notInstalledDeviceCount": 1024
 }
 ```
+
 
 
 

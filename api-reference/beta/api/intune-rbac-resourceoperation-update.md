@@ -4,12 +4,12 @@ description: resourceOperation オブジェクトのプロパティを更新し�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f1116c50717813ed05a8278deaae134fbd6f26c0
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: be70c6a09d15a431cda97c9ec0fab8fef7b9caf1
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899502"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34985242"
 ---
 # <a name="update-resourceoperation"></a>resourceOperation の更新
 
@@ -98,6 +98,7 @@ Content-Length: 298
   "enabledForScopeValidation": true
 }
 ```
+
 
 
 

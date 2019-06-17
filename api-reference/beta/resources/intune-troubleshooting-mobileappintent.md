@@ -4,12 +4,12 @@ description: デバイス上のモバイルアプリの状態を示します。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 135800266a2737c6c6dc3931b2a78990c059ef2c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 7f29c035b27a943649d10a3a71512630deb146f7
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939687"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34988140"
 ---
 # <a name="mobileappintent-enum-type"></a>mobileAppIntent 列挙型
 
@@ -29,6 +29,7 @@ ms.locfileid: "33939687"
 |Requiredandのインストール|2/4|Requiredandのインストール|
 |登録がありません。|5|登録がありません。|
 |削除|シックス|除外|
+
 
 
 

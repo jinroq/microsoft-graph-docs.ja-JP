@@ -4,12 +4,12 @@ description: Android デバイスの所有者デバイスの電源モードの�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d12dd2fcaa566892a5accb2c095ac19483fa69f8
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6b383f0dad034bcb90d62e9e2a03eab721185663
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949186"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983877"
 ---
 # <a name="androiddeviceownerbatterypluggedmode-enum-type"></a>androidDeviceOwnerBatteryPluggedMode 列挙型
 
@@ -26,6 +26,7 @@ Android デバイスの所有者デバイスの電源モードの状態の値を
 |ac|1-d|電力ソースは AC チャージャー。|
 |ユニバーサル|pbm-2|電源ソースは USB ポートです。|
 |通信|1/3|電力ソースはワイヤレス。|
+
 
 
 

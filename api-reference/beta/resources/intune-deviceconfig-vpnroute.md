@@ -4,12 +4,12 @@ description: VPN ルートの定義。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ffa3569d8d1a769779201cf056de07c80594b68e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 89b07a6f58bcd8ce5159c5bec07d01d2beea9fdd
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944545"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987538"
 ---
 # <a name="vpnroute-resource-type"></a>vpnRoute リソースの種類
 
@@ -25,7 +25,7 @@ VPN ルートの定義。
 |destinationPrefix|String|宛先プレフィックス (IPv4/v6 アドレス)。|
 |prefixSize|Int32|プレフィックスのサイズです。 (1-32)。 有効な値は 1 ~ 32|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -42,6 +42,7 @@ VPN ルートの定義。
   "prefixSize": 1024
 }
 ```
+
 
 
 

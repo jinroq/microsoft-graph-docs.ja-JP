@@ -4,12 +4,12 @@ description: Windows 10 エディションの種類。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 824fe87c381332d90adfa243ef89eeafc8cc1773
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e304cb77694554443b879b145f9735ab6b315069
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944342"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34982288"
 ---
 # <a name="windows10editiontype-enum-type"></a>windows10EditionType 列挙型
 
@@ -35,6 +35,14 @@ Windows 10 エディションの種類。
 |windows10ProfessionalWorkstation|10 |Windows 10 Professional for Workstation|
 |windows10ProfessionalWorkstationN|#|Windows 10 Professional ワークステーション N|
 |notConfigured|個|NotConfigured|
+|windows10Home|スリー|Windows 10 Home|
+|windows10HomeChina|第|Windows 10 Home (中国)|
+|windows10HomeN|約|Windows 10 Home N|
+|windows10HomeSingleLanguage|16|Windows 10 ホームシングル言語|
+|windows10Mobile|インチ|Windows 10 Mobile|
+|windows10IoTCore|個|Windows 10 IoT Core|
+|windows10IoTCoreCommercial|年|Windows 10 IoT Core 商用|
+
 
 
 

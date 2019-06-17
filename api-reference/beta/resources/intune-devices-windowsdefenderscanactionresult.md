@@ -4,12 +4,12 @@ description: Windows Defender の最後のスキャン結果
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5bffa0e1c227a8d1a6c13fc9daac00e5d8df8b03
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f28e33c5edae2efe22368cd827d7e41fa2c51a51
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941724"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994287"
 ---
 # <a name="windowsdefenderscanactionresult-resource-type"></a>windowsDefenderScanActionResult リソースの種類
 
@@ -31,7 +31,7 @@ Windows Defender の最後のスキャン結果
 |lastUpdatedDateTime|DateTimeOffset|アクション状態の最終更新時刻。[deviceActionResult](../resources/intune-devices-deviceactionresult.md) から継承|
 |scanType|文字列型 (String)|スキャンの種類。フル スキャンまたはクイック スキャン|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -51,6 +51,7 @@ Windows Defender の最後のスキャン結果
   "scanType": "String"
 }
 ```
+
 
 
 

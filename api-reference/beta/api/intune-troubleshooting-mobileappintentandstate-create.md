@@ -4,12 +4,12 @@ description: 新しい mobileAppIntentAndState オブジェクトを作成しま
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bdf522608972a8a43d0b6fae2cef8e0afce65eff
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 01de9d8ea65f1462c10cc1fa7048bb19cd4cbbe9
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33898701"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990765"
 ---
 # <a name="create-mobileappintentandstate"></a>MobileAppIntentAndState を作成する
 
@@ -126,6 +126,7 @@ Content-Length: 880
   ]
 }
 ```
+
 
 
 

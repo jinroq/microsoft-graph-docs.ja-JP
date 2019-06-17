@@ -4,12 +4,12 @@ description: Apple Device Enrollment Program と Intune 間の同期
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 597f44a70895de01aacd457df28ae56e84e4b68d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f3ab3225fa30431b72b38f51c0d2cc5354d38fc5
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33908673"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34981553"
 ---
 # <a name="syncwithappledeviceenrollmentprogram-action"></a>syncWithAppleDeviceEnrollmentProgram アクション
 
@@ -62,6 +62,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{de
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

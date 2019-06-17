@@ -4,12 +4,12 @@ description: managedAppOperation オブジェクトのプロパティとリレ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ab1ad0bf001bd621561be521ae77a56a8cbd8e9b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 44b82dd37171353dfa201c632402d6951972c5dc
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33903643"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986516"
 ---
 # <a name="get-managedappoperation"></a>Get managedAppOperation
 
@@ -78,6 +78,7 @@ Content-Length: 303
   }
 }
 ```
+
 
 
 

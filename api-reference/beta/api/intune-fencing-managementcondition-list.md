@@ -4,12 +4,12 @@ description: ManagementCondition オブジェクトのプロパティとリレ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2fdc1c9b6599b1991a48b795b3085f4425549a30
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 24c75435369131265a86620dfe046e9603ef73c0
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33905400"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34984108"
 ---
 # <a name="list-managementconditions"></a>ManagementConditions を一覧表示する
 
@@ -83,6 +83,7 @@ Content-Length: 504
   ]
 }
 ```
+
 
 
 

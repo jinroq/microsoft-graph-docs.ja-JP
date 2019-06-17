@@ -4,12 +4,12 @@ description: iOS モバイル アプリに必要な最小限のオペレーテ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 998c7a1214fb05596d4f851f7883be514d368e88
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 546b63ee0b713e83c90fed8fcabdd4d9382a0740
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950439"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991206"
 ---
 # <a name="iosminimumoperatingsystem-resource-type"></a>iosMinimumOperatingSystem リソースの種類
 
@@ -28,7 +28,7 @@ iOS モバイル アプリに必要な最小限のオペレーティング シ�
 |v11_0|ブール型 (Boolean)|バージョン 11.0 以降。|
 |v12_0|Boolean|バージョン12.0 以降。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -48,6 +48,7 @@ iOS モバイル アプリに必要な最小限のオペレーティング シ�
   "v12_0": true
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: まだ文書化されていません
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 057e81219e67c3b88c96397340fe533237614efe
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 241155aea40dccc08a0b2e37b08329b3d5f4a8f5
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941430"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989729"
 ---
 # <a name="windowsautopilotprofileassignmentdetailedstatus-enum-type"></a>windowsAutopilotProfileAssignmentDetailedStatus 列挙型
 
@@ -24,6 +24,7 @@ ms.locfileid: "33941430"
 |:---|:---|:---|
 |none|.0|割り当ての詳細な状態|
 |hardwareRequirementsNotMet|1-d|ハードウェア要件が満たされていません。 自己展開プロファイルが TPM 2.0 を使用しないデバイスに割り当てられている場合に、この問題が発生することがあります。|
+
 
 
 

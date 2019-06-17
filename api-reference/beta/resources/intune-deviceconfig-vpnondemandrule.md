@@ -4,12 +4,12 @@ description: VPN のオンデマンドルールの定義。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bb17bb1ec1af12f89ea1ab5470cf6a2d808868c4
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: fa1ac8562ac2a43db43bb359cb189f8a4ed9500b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944587"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987580"
 ---
 # <a name="vpnondemandrule-resource-type"></a>vpnOnDemandRule リソースの種類
 
@@ -22,15 +22,15 @@ VPN のオンデマンドルールの定義。
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ssid|String collection|ネットワークサービスセット識別子 (Ssid)。|
-|dnsSearchDomains|String collection|DNS 検索ドメイン。|
+|ssid|文字列コレクション|ネットワークサービスセット識別子 (Ssid)。|
+|dnsSearchDomains|文字列コレクション|DNS 検索ドメイン。|
 |probeUrl|String|プローブする URL。 リダイレクトされていない (200 HTTP 状態コードを返す) この URL が正常に取得された場合、このルールは一致します。|
 |action|[vpnOnDemandRuleConnectionAction](../resources/intune-deviceconfig-vpnondemandruleconnectionaction.md)|Action. 使用可能な値は、`connect`、`evaluateConnection`、`ignore`、`disconnect` です。|
 |domainAction|[vpnOnDemandRuleConnectionDomainAction](../resources/intune-deviceconfig-vpnondemandruleconnectiondomainaction.md)|ドメインアクション (アクションが接続を評価する場合にのみ該当)。 可能な値は、`connectIfNeeded`、`neverConnect` です。|
-|ドメイン|String collection|ドメイン (アクションが接続を評価する場合にのみ該当)。|
+|ドメイン|文字列コレクション|ドメイン (アクションが接続を評価する場合にのみ該当)。|
 |probeRequiredUrl|String|必要な Url をプローブします (アクションが接続を評価する場合にのみ適用され、必要に応じて、DomainAction が connect である)。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -58,6 +58,7 @@ VPN のオンデマンドルールの定義。
   "probeRequiredUrl": "String"
 }
 ```
+
 
 
 

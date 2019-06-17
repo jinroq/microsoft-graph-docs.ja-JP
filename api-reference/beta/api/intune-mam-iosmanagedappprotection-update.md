@@ -4,12 +4,12 @@ description: iosManagedAppProtection オブジェクトのプロパティを更�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a68a3eec677c6adf679efa2264ab48cdfc837059
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 4456b25e2ee366dd58e84e6205891c7b03dbfc67
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33903664"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986229"
 ---
 # <a name="update-iosmanagedappprotection"></a>Update iosManagedAppProtection
 
@@ -54,7 +54,7 @@ PATCH /deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}
 |description|String|ポリシーの説明。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
 |createdDateTime|DateTimeOffset|ポリシーが作成された日時。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|ポリシーが変更された最終日時。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
-|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
+|roleScopeTagIds|文字列コレクション|このエンティティインスタンスの範囲タグのリスト。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
 |id|文字列|エンティティのキー。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
 |version|String|エンティティのバージョン。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
 |periodOfflineBeforeAccessCheck|期間|デバイスがインターネットに接続されていないでこの期間が過ぎると、アクセスがチェックされます。 [managedAppProtection](../resources/intune-mam-managedappprotection.md) から継承します|
@@ -87,8 +87,9 @@ PATCH /deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}
 |minimumWipeAppVersion|String|指定したバージョン以下のバージョンでは、管理対象アプリと関連付けられている会社データがワイプされます。 [managedAppProtection](../resources/intune-mam-managedappprotection.md) から継承します|
 |appActionIfDeviceComplianceRequired|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|DeviceComplianceRequired が true に設定されている場合、デバイスがルートまたは脱獄のどちらかの場合に、管理対象アプリの動作 (ブロックまたはワイプ) を定義します。 [Managedappprotection](../resources/intune-mam-managedappprotection.md)から継承します。 可能な値は、`block`、`wipe`、`warn` です。|
 |appActionIfMaximumPinRetriesExceeded|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|正しくない pin の再試行回数の最大数に基づいて、管理対象アプリの動作 (ブロックまたはワイプ) を定義します。 [Managedappprotection](../resources/intune-mam-managedappprotection.md)から継承します。 可能な値は、`block`、`wipe`、`warn` です。|
-|pinRequiredInsteadOfBiometricTimeout|期間|[Managedappprotection](../resources/intune-mam-managedappprotection.md)から継承された非バイオメトリクスパスコードではなく、アプリ Pin のタイムアウト (分単位)|
+|pinRequiredInsteadOfBiometricTimeout|期間|[Managedappprotection](../resources/intune-mam-managedappprotection.md)から継承された非バイオメトリクスパスコードではなく、アプリ pin のタイムアウト (分単位)|
 |Allowedoutboundクリップの Sharingexceptionlength|Int32|組織データおよびアカウントから任意のアプリケーションに切り取りまたはコピーすることができる文字数を指定します。 この設定は、Allowedoutboundクリップボードの Sharinglevel 制限より優先されます。 既定値 ' 0 ' は、例外が許可されていないことを意味します。 [managedAppProtection](../resources/intune-mam-managedappprotection.md) から継承します|
+|notificationRestriction|[managedAppNotificationRestriction](../resources/intune-mam-managedappnotificationrestriction.md)|[Managedappprotection](../resources/intune-mam-managedappprotection.md)から継承したアプリ通知制限を指定します。 可能な値は、`allow`、`blockOrganizationalData`、`block` です。|
 |isAssigned|Boolean|包含グループにポリシーを配置するかどうかを示します。 [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md) から継承します|
 |targetedAppManagementLevels|[appManagementLevel](../resources/intune-mam-appmanagementlevel.md)|[Targetedmanagedappprotection](../resources/intune-mam-targetedmanagedappprotection.md)から継承したこのポリシーの目的のアプリ管理レベル。 使用可能な値は、`unspecified`、`unmanaged`、`mdm`、`androidEnterprise` です。|
 |appDataEncryptionType|[managedAppDataEncryptionType](../resources/intune-mam-managedappdataencryptiontype.md)|管理対象アプリのデータに使用する暗号化の種類。 可能な値は、`useDeviceSettings`、`afterDeviceRestart`、`whenDeviceLockedExceptOpenFiles`、`whenDeviceLocked` です。|
@@ -116,7 +117,7 @@ PATCH /deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}
 Content-type: application/json
-Content-length: 2566
+Content-length: 2623
 
 {
   "@odata.type": "#microsoft.graph.iosManagedAppProtection",
@@ -160,6 +161,7 @@ Content-length: 2566
   "appActionIfMaximumPinRetriesExceeded": "wipe",
   "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
   "allowedOutboundClipboardSharingExceptionLength": 14,
+  "notificationRestriction": "blockOrganizationalData",
   "isAssigned": true,
   "targetedAppManagementLevels": "unmanaged",
   "appDataEncryptionType": "afterDeviceRestart",
@@ -188,7 +190,7 @@ Content-length: 2566
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2738
+Content-Length: 2795
 
 {
   "@odata.type": "#microsoft.graph.iosManagedAppProtection",
@@ -235,6 +237,7 @@ Content-Length: 2738
   "appActionIfMaximumPinRetriesExceeded": "wipe",
   "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
   "allowedOutboundClipboardSharingExceptionLength": 14,
+  "notificationRestriction": "blockOrganizationalData",
   "isAssigned": true,
   "targetedAppManagementLevels": "unmanaged",
   "appDataEncryptionType": "afterDeviceRestart",
@@ -257,6 +260,7 @@ Content-Length: 2738
   "customBrowserProtocol": "Custom Browser Protocol value"
 }
 ```
+
 
 
 

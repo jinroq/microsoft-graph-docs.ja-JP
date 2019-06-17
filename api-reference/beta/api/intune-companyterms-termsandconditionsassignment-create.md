@@ -4,12 +4,12 @@ description: 新しい termsAndConditionsAssignment オブジェクトを作成�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 18cb89e02a22933fcb284c64169520bce77eacce
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b8bb341ed7b4820f3f0f82291044ded396c53745
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33933810"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34971893"
 ---
 # <a name="create-termsandconditionsassignment"></a>termsAndConditionsAssignment の作成
 
@@ -90,6 +90,7 @@ Content-Length: 217
   }
 }
 ```
+
 
 
 

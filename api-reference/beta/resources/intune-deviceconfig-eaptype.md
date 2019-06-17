@@ -4,12 +4,12 @@ description: 拡張認証プロトコル (EAP) 構成の種類。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 87f2aae2d7ab06ea219c9b1488992b50ce846941
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 656d32f5d98519c913e6e17de7cc7f8feccf8400
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946890"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989876"
 ---
 # <a name="eaptype-enum-type"></a>eapType 列挙型
 
@@ -28,6 +28,7 @@ ms.locfileid: "33946890"
 |eapTtls|21|EAP トンネリングトランスポート層セキュリティ (EAP-TLS)。|
 |peap-gtc|まで|保護された拡張認証プロトコル (PEAP)。|
 |eapFast|43|セキュリティで保護されたトンネリング (EAP-FAST) 経由の EAP による柔軟な認証。|
+
 
 
 

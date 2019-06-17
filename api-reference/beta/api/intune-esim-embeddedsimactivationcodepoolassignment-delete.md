@@ -4,12 +4,12 @@ description: EmbeddedSIMActivationCodePoolAssignment を削除します。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a81edef2db3c1560974d27f5f23c2208a4b2c87a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2947fc5ecfd89dba5a931745c6761537730c49df
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33905561"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34982589"
 ---
 # <a name="delete-embeddedsimactivationcodepoolassignment"></a>EmbeddedSIMActivationCodePoolAssignment の削除
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/embeddedSIMActivationCo
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

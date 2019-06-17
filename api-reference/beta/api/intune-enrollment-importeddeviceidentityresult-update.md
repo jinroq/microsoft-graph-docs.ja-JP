@@ -4,12 +4,12 @@ description: ImportedDeviceIdentityResult オブジェクトのプロパティ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0f746a8a57910e42de3355c9bd0b65c73f1a2c95
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 4dcf68841e75b4cc9a3a29f12e875665273406c9
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33908365"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34981784"
 ---
 # <a name="update-importeddeviceidentityresult"></a>ImportedDeviceIdentityResult の更新
 
@@ -50,9 +50,9 @@ PATCH /deviceManagement/importedDeviceIdentities/{importedDeviceIdentityId}
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|[ImportedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)から継承された、インポートされたデバイス Id の id|
+|id|String|[ImportedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)から継承された、インポートされたデバイス id の id|
 |importedDeviceIdentifier|String|[ImportedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)から継承された、インポートされたデバイス識別子|
-|importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune-enrollment-importeddeviceidentitytype.md)|[ImportedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)から継承された、インポートされたデバイス Id の種類。 可能な値は、`unknown`、`imei`、`serialNumber` です。|
+|importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune-enrollment-importeddeviceidentitytype.md)|[ImportedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)から継承された、インポートされたデバイス id の種類。 可能な値は、`unknown`、`imei`、`serialNumber` です。|
 |lastModifiedDateTime|DateTimeOffset|[ImportedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)から継承された説明の最終更新日時。|
 |createdDateTime|DateTimeOffset|[ImportedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)から継承されたデバイスの日時の作成日時|
 |lastContactedDateTime|DateTimeOffset|[ImportedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)から継承されたデバイスの最後の連絡日時。|
@@ -108,6 +108,7 @@ Content-Length: 529
   "status": true
 }
 ```
+
 
 
 

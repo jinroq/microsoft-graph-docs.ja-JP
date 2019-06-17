@@ -4,12 +4,12 @@ description: Windows management アプリの正常性状態エンティティ。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b443c95b363e926777150013e20bef4bc8bc602d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f423521ddd6e00fd887195d841c1e50518d2c428
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33942172"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983971"
 ---
 # <a name="windowsmanagementapphealthstate-resource-type"></a>windowsManagementAppHealthState リソースの種類
 
@@ -36,9 +36,9 @@ Windows management アプリの正常性状態エンティティ。
 |バージョン|String|Windows management アプリがインストールされているバージョン。|
 |lastCheckInDateTime|DateTimeOffset|Windows management アプリの最終チェックイン時刻。|
 |deviceName|String|Windows management アプリがインストールされているデバイスの名前。|
-|deviceOSVersion|String|Windows 管理アプリがインストールされているデバイスの Windows 10 OS バージョン。|
+|deviceOSVersion|String|Windows 管理アプリがインストールされているデバイスの windows 10 OS バージョン。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -60,6 +60,7 @@ Windows management アプリの正常性状態エンティティ。
   "deviceOSVersion": "String"
 }
 ```
+
 
 
 

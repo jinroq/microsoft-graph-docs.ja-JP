@@ -4,12 +4,12 @@ description: キー値の定義。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 592f3ff070ab7440d5c16d5380b556993915e6ec
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c8e8028a4863ee313499f8c4982b569ca25747b3
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946124"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989379"
 ---
 # <a name="keyvalue-resource-type"></a>keyValue リソースの種類
 
@@ -25,7 +25,7 @@ ms.locfileid: "33946124"
 |Key|String|キー。|
 |value|文字列型 (String)|値。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -42,6 +42,7 @@ ms.locfileid: "33946124"
   "value": "String"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: deviceManagementTroubleshootingEvent オブジェクトのプロパ
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 38fcc4ce0140a36f20887bd4bb58f77facc7a00c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 75ee9c10a766c433fc9f7940c48d2558a28aef5d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33898697"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990807"
 ---
 # <a name="update-devicemanagementtroubleshootingevent"></a>deviceManagementTroubleshootingEvent の更新
 
@@ -136,6 +136,7 @@ Content-Length: 901
   ]
 }
 ```
+
 
 
 

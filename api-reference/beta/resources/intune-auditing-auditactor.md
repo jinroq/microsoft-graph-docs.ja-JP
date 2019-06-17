@@ -4,12 +4,12 @@ description: 監査アクターのプロパティが含まれるクラス。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 16d2aed7e2c72d56340af97936f43984822718e7
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 633f5f4c513d6f770df643c26934b994a134e450
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949431"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34985620"
 ---
 # <a name="auditactor-resource-type"></a>auditActor リソースの種類
 
@@ -20,7 +20,7 @@ ms.locfileid: "33949431"
 監査アクターのプロパティが含まれるクラス。
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |type|String|アクターの種類。|
 |userPermissions|String コレクション|監査の実行時におけるユーザーのアクセス許可の一覧。|
@@ -31,7 +31,7 @@ ms.locfileid: "33949431"
 |ipAddress|文字列型 (String)|IPAddress。|
 |userId|String|ユーザー ID。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -56,6 +56,7 @@ ms.locfileid: "33949431"
   "userId": "String"
 }
 ```
+
 
 
 

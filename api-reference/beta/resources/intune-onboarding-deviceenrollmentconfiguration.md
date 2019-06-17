@@ -4,12 +4,12 @@ description: デバイス登録構成の基本クラス
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d05914e1b25ac3712ac60274facf0904c91d4224
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5975327fbad58a7a84e164139137f4924aac1a9b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940457"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34982428"
 ---
 # <a name="deviceenrollmentconfiguration-resource-type"></a>deviceEnrollmentConfiguration リソースの種類
 
@@ -28,7 +28,7 @@ ms.locfileid: "33940457"
 |[assign アクション](../api/intune-onboarding-deviceenrollmentconfiguration-assign.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |id|文字列|アカウントの一意識別子|
 |displayName|String|デバイス登録構成の表示名|
@@ -38,7 +38,7 @@ ms.locfileid: "33940457"
 |lastModifiedDateTime|DateTimeOffset|デバイス登録構成の最終変更日時 (UTC)|
 |version|Int32|デバイス登録構成のバージョン|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |assignments|[enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) コレクション|デバイス構成プロファイルのグループ割り当ての一覧|
@@ -63,6 +63,7 @@ ms.locfileid: "33940457"
   "version": 1024
 }
 ```
+
 
 
 
