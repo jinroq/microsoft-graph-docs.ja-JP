@@ -4,31 +4,31 @@ description: しましたオブジェクトのプロパティを更新します�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5e8d067d8b6136fc62c6727c23f9d2bccbf8ee93
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 18b6b2fffb2055e6986ec33a91b3c6de65ca0e4b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33908568"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34981560"
 ---
-# <a name="update-enrollmentprofile"></a><span data-ttu-id="b5e83-103">しましたの更新</span><span class="sxs-lookup"><span data-stu-id="b5e83-103">Update enrollmentProfile</span></span>
+# <a name="update-enrollmentprofile"></a><span data-ttu-id="27c8c-103">しましたの更新</span><span class="sxs-lookup"><span data-stu-id="27c8c-103">Update enrollmentProfile</span></span>
 
-> <span data-ttu-id="b5e83-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b5e83-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="27c8c-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="27c8c-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="b5e83-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="b5e83-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="27c8c-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="27c8c-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="b5e83-106">[しました](../resources/intune-enrollment-enrollmentprofile.md)オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="b5e83-106">Update the properties of a [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) object.</span></span>
+<span data-ttu-id="27c8c-106">[しました](../resources/intune-enrollment-enrollmentprofile.md)オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="27c8c-106">Update the properties of a [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="b5e83-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="b5e83-107">Prerequisites</span></span>
-<span data-ttu-id="b5e83-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b5e83-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="27c8c-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="27c8c-107">Prerequisites</span></span>
+<span data-ttu-id="27c8c-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="27c8c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b5e83-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="b5e83-110">Permission type</span></span>|<span data-ttu-id="b5e83-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="b5e83-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="27c8c-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="27c8c-110">Permission type</span></span>|<span data-ttu-id="27c8c-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="27c8c-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="b5e83-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="b5e83-112">Delegated (work or school account)</span></span>|<span data-ttu-id="b5e83-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b5e83-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="b5e83-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="b5e83-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="b5e83-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b5e83-115">Not supported.</span></span>|
-|<span data-ttu-id="b5e83-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="b5e83-116">Application</span></span>|<span data-ttu-id="b5e83-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b5e83-117">Not supported.</span></span>|
+|<span data-ttu-id="27c8c-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="27c8c-112">Delegated (work or school account)</span></span>|<span data-ttu-id="27c8c-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="27c8c-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="27c8c-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="27c8c-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="27c8c-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="27c8c-115">Not supported.</span></span>|
+|<span data-ttu-id="27c8c-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="27c8c-116">Application</span></span>|<span data-ttu-id="27c8c-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="27c8c-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="b5e83-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="b5e83-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="27c8c-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="27c8c-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,36 +37,36 @@ ms.locfileid: "33908568"
 PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentProfiles/{enrollmentProfileId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="b5e83-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b5e83-119">Request headers</span></span>
-|<span data-ttu-id="b5e83-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b5e83-120">Header</span></span>|<span data-ttu-id="b5e83-121">値</span><span class="sxs-lookup"><span data-stu-id="b5e83-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="27c8c-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="27c8c-119">Request headers</span></span>
+|<span data-ttu-id="27c8c-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="27c8c-120">Header</span></span>|<span data-ttu-id="27c8c-121">値</span><span class="sxs-lookup"><span data-stu-id="27c8c-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="b5e83-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="b5e83-122">Authorization</span></span>|<span data-ttu-id="b5e83-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="b5e83-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="b5e83-124">承諾</span><span class="sxs-lookup"><span data-stu-id="b5e83-124">Accept</span></span>|<span data-ttu-id="b5e83-125">application/json</span><span class="sxs-lookup"><span data-stu-id="b5e83-125">application/json</span></span>|
+|<span data-ttu-id="27c8c-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="27c8c-122">Authorization</span></span>|<span data-ttu-id="27c8c-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="27c8c-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="27c8c-124">承諾</span><span class="sxs-lookup"><span data-stu-id="27c8c-124">Accept</span></span>|<span data-ttu-id="27c8c-125">application/json</span><span class="sxs-lookup"><span data-stu-id="27c8c-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="b5e83-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="b5e83-126">Request body</span></span>
-<span data-ttu-id="b5e83-127">要求本文で、[しました](../resources/intune-enrollment-enrollmentprofile.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="b5e83-127">In the request body, supply a JSON representation for the [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="27c8c-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="27c8c-126">Request body</span></span>
+<span data-ttu-id="27c8c-127">要求本文で、[しました](../resources/intune-enrollment-enrollmentprofile.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="27c8c-127">In the request body, supply a JSON representation for the [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) object.</span></span>
 
-<span data-ttu-id="b5e83-128">次の表に、[しました](../resources/intune-enrollment-enrollmentprofile.md)の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="b5e83-128">The following table shows the properties that are required when you create the [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md).</span></span>
+<span data-ttu-id="27c8c-128">次の表に、[しました](../resources/intune-enrollment-enrollmentprofile.md)の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="27c8c-128">The following table shows the properties that are required when you create the [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md).</span></span>
 
-|<span data-ttu-id="b5e83-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="b5e83-129">Property</span></span>|<span data-ttu-id="b5e83-130">型</span><span class="sxs-lookup"><span data-stu-id="b5e83-130">Type</span></span>|<span data-ttu-id="b5e83-131">説明</span><span class="sxs-lookup"><span data-stu-id="b5e83-131">Description</span></span>|
+|<span data-ttu-id="27c8c-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="27c8c-129">Property</span></span>|<span data-ttu-id="27c8c-130">型</span><span class="sxs-lookup"><span data-stu-id="27c8c-130">Type</span></span>|<span data-ttu-id="27c8c-131">説明</span><span class="sxs-lookup"><span data-stu-id="27c8c-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="b5e83-132">id</span><span class="sxs-lookup"><span data-stu-id="b5e83-132">id</span></span>|<span data-ttu-id="b5e83-133">文字列</span><span class="sxs-lookup"><span data-stu-id="b5e83-133">String</span></span>|<span data-ttu-id="b5e83-134">オブジェクトの GUID</span><span class="sxs-lookup"><span data-stu-id="b5e83-134">The GUID for the object</span></span>|
-|<span data-ttu-id="b5e83-135">displayName</span><span class="sxs-lookup"><span data-stu-id="b5e83-135">displayName</span></span>|<span data-ttu-id="b5e83-136">String</span><span class="sxs-lookup"><span data-stu-id="b5e83-136">String</span></span>|<span data-ttu-id="b5e83-137">プロファイルの名前</span><span class="sxs-lookup"><span data-stu-id="b5e83-137">Name of the profile</span></span>|
-|<span data-ttu-id="b5e83-138">description</span><span class="sxs-lookup"><span data-stu-id="b5e83-138">description</span></span>|<span data-ttu-id="b5e83-139">String</span><span class="sxs-lookup"><span data-stu-id="b5e83-139">String</span></span>|<span data-ttu-id="b5e83-140">プロファイルの説明</span><span class="sxs-lookup"><span data-stu-id="b5e83-140">Description of the profile</span></span>|
-|<span data-ttu-id="b5e83-141">requiresUserAuthentication</span><span class="sxs-lookup"><span data-stu-id="b5e83-141">requiresUserAuthentication</span></span>|<span data-ttu-id="b5e83-142">Boolean</span><span class="sxs-lookup"><span data-stu-id="b5e83-142">Boolean</span></span>|<span data-ttu-id="b5e83-143">プロファイルにユーザー認証が必要かどうかを示します</span><span class="sxs-lookup"><span data-stu-id="b5e83-143">Indicates if the profile requires user authentication</span></span>|
-|<span data-ttu-id="b5e83-144">configurationEndpointUrl</span><span class="sxs-lookup"><span data-stu-id="b5e83-144">configurationEndpointUrl</span></span>|<span data-ttu-id="b5e83-145">String</span><span class="sxs-lookup"><span data-stu-id="b5e83-145">String</span></span>|<span data-ttu-id="b5e83-146">登録に使用する構成エンドポイント url</span><span class="sxs-lookup"><span data-stu-id="b5e83-146">Configuration endpoint url to use for Enrollment</span></span>|
-|<span data-ttu-id="b5e83-147">enableAuthenticationViaCompanyPortal</span><span class="sxs-lookup"><span data-stu-id="b5e83-147">enableAuthenticationViaCompanyPortal</span></span>|<span data-ttu-id="b5e83-148">Boolean</span><span class="sxs-lookup"><span data-stu-id="b5e83-148">Boolean</span></span>|<span data-ttu-id="b5e83-149">会社のポータルではなく、Apple セットアップアシスタントを使用して認証することを示します。</span><span class="sxs-lookup"><span data-stu-id="b5e83-149">Indicates to authenticate with Apple Setup Assistant instead of Company Portal.</span></span>|
-|<span data-ttu-id="b5e83-150">requireCompanyPortalOnSetupAssistantEnrolledDevices</span><span class="sxs-lookup"><span data-stu-id="b5e83-150">requireCompanyPortalOnSetupAssistantEnrolledDevices</span></span>|<span data-ttu-id="b5e83-151">Boolean</span><span class="sxs-lookup"><span data-stu-id="b5e83-151">Boolean</span></span>|<span data-ttu-id="b5e83-152">セットアップアシスタントの登録済みデバイスで会社のポータルが必要であることを示します。</span><span class="sxs-lookup"><span data-stu-id="b5e83-152">Indicates that Company Portal is required on setup assistant enrolled devices</span></span>|
+|<span data-ttu-id="27c8c-132">id</span><span class="sxs-lookup"><span data-stu-id="27c8c-132">id</span></span>|<span data-ttu-id="27c8c-133">文字列</span><span class="sxs-lookup"><span data-stu-id="27c8c-133">String</span></span>|<span data-ttu-id="27c8c-134">オブジェクトの GUID</span><span class="sxs-lookup"><span data-stu-id="27c8c-134">The GUID for the object</span></span>|
+|<span data-ttu-id="27c8c-135">displayName</span><span class="sxs-lookup"><span data-stu-id="27c8c-135">displayName</span></span>|<span data-ttu-id="27c8c-136">String</span><span class="sxs-lookup"><span data-stu-id="27c8c-136">String</span></span>|<span data-ttu-id="27c8c-137">プロファイルの名前</span><span class="sxs-lookup"><span data-stu-id="27c8c-137">Name of the profile</span></span>|
+|<span data-ttu-id="27c8c-138">description</span><span class="sxs-lookup"><span data-stu-id="27c8c-138">description</span></span>|<span data-ttu-id="27c8c-139">String</span><span class="sxs-lookup"><span data-stu-id="27c8c-139">String</span></span>|<span data-ttu-id="27c8c-140">プロファイルの説明</span><span class="sxs-lookup"><span data-stu-id="27c8c-140">Description of the profile</span></span>|
+|<span data-ttu-id="27c8c-141">requiresUserAuthentication</span><span class="sxs-lookup"><span data-stu-id="27c8c-141">requiresUserAuthentication</span></span>|<span data-ttu-id="27c8c-142">Boolean</span><span class="sxs-lookup"><span data-stu-id="27c8c-142">Boolean</span></span>|<span data-ttu-id="27c8c-143">プロファイルにユーザー認証が必要かどうかを示します</span><span class="sxs-lookup"><span data-stu-id="27c8c-143">Indicates if the profile requires user authentication</span></span>|
+|<span data-ttu-id="27c8c-144">configurationEndpointUrl</span><span class="sxs-lookup"><span data-stu-id="27c8c-144">configurationEndpointUrl</span></span>|<span data-ttu-id="27c8c-145">String</span><span class="sxs-lookup"><span data-stu-id="27c8c-145">String</span></span>|<span data-ttu-id="27c8c-146">登録に使用する構成エンドポイント url</span><span class="sxs-lookup"><span data-stu-id="27c8c-146">Configuration endpoint url to use for Enrollment</span></span>|
+|<span data-ttu-id="27c8c-147">enableAuthenticationViaCompanyPortal</span><span class="sxs-lookup"><span data-stu-id="27c8c-147">enableAuthenticationViaCompanyPortal</span></span>|<span data-ttu-id="27c8c-148">Boolean</span><span class="sxs-lookup"><span data-stu-id="27c8c-148">Boolean</span></span>|<span data-ttu-id="27c8c-149">会社のポータルではなく、Apple セットアップアシスタントを使用して認証することを示します。</span><span class="sxs-lookup"><span data-stu-id="27c8c-149">Indicates to authenticate with Apple Setup Assistant instead of Company Portal.</span></span>|
+|<span data-ttu-id="27c8c-150">requireCompanyPortalOnSetupAssistantEnrolledDevices</span><span class="sxs-lookup"><span data-stu-id="27c8c-150">requireCompanyPortalOnSetupAssistantEnrolledDevices</span></span>|<span data-ttu-id="27c8c-151">Boolean</span><span class="sxs-lookup"><span data-stu-id="27c8c-151">Boolean</span></span>|<span data-ttu-id="27c8c-152">セットアップアシスタントの登録済みデバイスで会社のポータルが必要であることを示します。</span><span class="sxs-lookup"><span data-stu-id="27c8c-152">Indicates that Company Portal is required on setup assistant enrolled devices</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="b5e83-153">応答</span><span class="sxs-lookup"><span data-stu-id="b5e83-153">Response</span></span>
-<span data-ttu-id="b5e83-154">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[しました](../resources/intune-enrollment-enrollmentprofile.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="b5e83-154">If successful, this method returns a `200 OK` response code and an updated [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="27c8c-153">応答</span><span class="sxs-lookup"><span data-stu-id="27c8c-153">Response</span></span>
+<span data-ttu-id="27c8c-154">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[しました](../resources/intune-enrollment-enrollmentprofile.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="27c8c-154">If successful, this method returns a `200 OK` response code and an updated [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b5e83-155">例</span><span class="sxs-lookup"><span data-stu-id="b5e83-155">Example</span></span>
+## <a name="example"></a><span data-ttu-id="27c8c-155">例</span><span class="sxs-lookup"><span data-stu-id="27c8c-155">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="b5e83-156">要求</span><span class="sxs-lookup"><span data-stu-id="b5e83-156">Request</span></span>
-<span data-ttu-id="b5e83-157">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="b5e83-157">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="27c8c-156">要求</span><span class="sxs-lookup"><span data-stu-id="27c8c-156">Request</span></span>
+<span data-ttu-id="27c8c-157">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="27c8c-157">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentProfiles/{enrollmentProfileId}
 Content-type: application/json
@@ -83,8 +83,8 @@ Content-length: 370
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="b5e83-158">応答</span><span class="sxs-lookup"><span data-stu-id="b5e83-158">Response</span></span>
-<span data-ttu-id="b5e83-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="b5e83-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="27c8c-158">応答</span><span class="sxs-lookup"><span data-stu-id="27c8c-158">Response</span></span>
+<span data-ttu-id="27c8c-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="27c8c-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -101,6 +101,7 @@ Content-Length: 419
   "requireCompanyPortalOnSetupAssistantEnrolledDevices": true
 }
 ```
+
 
 
 
