@@ -4,12 +4,12 @@ description: deviceManagementPartner オブジェクトのプロパティとリ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 735e6ee974e6a7d0f1c2fe07b6e35097a654944b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 405b4c3596cc16cda1b9b6f9cd4dbf338395290c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33900069"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34980958"
 ---
 # <a name="list-devicemanagementpartners"></a>deviceManagementPartners のリスト
 
@@ -83,6 +83,7 @@ Content-Length: 794
   ]
 }
 ```
+
 
 
 

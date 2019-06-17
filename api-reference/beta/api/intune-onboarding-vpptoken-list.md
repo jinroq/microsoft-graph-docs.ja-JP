@@ -4,12 +4,12 @@ description: vppToken オブジェクトのプロパティとリレーション�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9adbf4b8bf156bbcc752742abc47d58ad4c82c0d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 437574024617220b73a92c284cb130658fd2d52d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899768"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34980573"
 ---
 # <a name="list-vpptokens"></a>List vppTokens
 
@@ -100,6 +100,7 @@ Content-Length: 1264
   ]
 }
 ```
+
 
 
 

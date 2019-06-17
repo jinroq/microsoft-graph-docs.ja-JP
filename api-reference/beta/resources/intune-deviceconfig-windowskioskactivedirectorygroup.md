@@ -4,12 +4,12 @@ description: キオスク構成の Azure ディレクトリグループを識別
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d4c0810cfeda4f620f6733a5b824cde8d0234f38
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: fd67f482c0dcd71b871d642b10528a07e7803702
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943964"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994014"
 ---
 # <a name="windowskioskactivedirectorygroup-resource-type"></a>windowsKioskActiveDirectoryGroup リソースの種類
 
@@ -27,7 +27,7 @@ ms.locfileid: "33943964"
 |:---|:---|:---|
 |groupName|String|このキオスク構成にロックされる AD グループの名前|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -43,6 +43,7 @@ ms.locfileid: "33943964"
   "groupName": "String"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: OMA 設定のブール定義。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ab28f26ee4898b3481ae7f24516a650a5fea414f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 7269b8c61603601d0932a000f7f90e63d7cbc44e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950929"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993733"
 ---
 # <a name="omasettingboolean-resource-type"></a>omaSettingBoolean リソースの種類
 
@@ -30,7 +30,7 @@ OMA 設定のブール定義。
 |omaUri|文字列型 (String)|OMA。 [omaSetting](../resources/intune-deviceconfig-omasetting.md) からの継承|
 |value|ブール型 (Boolean)|値。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -49,6 +49,7 @@ OMA 設定のブール定義。
   "value": true
 }
 ```
+
 
 
 

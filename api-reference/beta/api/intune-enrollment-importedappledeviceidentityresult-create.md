@@ -4,12 +4,12 @@ description: 新しい importedAppleDeviceIdentityResult オブジェクトを�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3dcb9bc8cd7594e3e1d44286883d865121b72c02
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 329bcf8c1f7f0d558d3f161ece921259b5383bd8
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33908463"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34982008"
 ---
 # <a name="create-importedappledeviceidentityresult"></a>ImportedAppleDeviceIdentityResult を作成する
 
@@ -115,6 +115,7 @@ Content-Length: 630
   "status": true
 }
 ```
+
 
 
 

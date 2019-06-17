@@ -4,12 +4,12 @@ description: ユーザーのアプリ PIN に使用される文字セット
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 65c83e34f0fef159c60ca0bfcf5d63f82e96fd6b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 96e92f984b03f4bc5fd0280c4566b0bc35c5dc87
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940737"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994791"
 ---
 # <a name="managedapppincharacterset-enum-type"></a>managedAppPinCharacterSet 列挙型
 
@@ -24,6 +24,7 @@ ms.locfileid: "33940737"
 |:---|:---|:---|
 |数値|.0|数字|
 |alphanumericAndSymbol|1-d|英数字と文字の記号|
+
 
 
 

@@ -4,12 +4,12 @@ description: メッセージテンプレートのブランド化オプション�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 97684092c9f704ef4d477b153e4168190f588071
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3056c0965506637a9d16d0d2b52b981b424d004c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940478"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994203"
 ---
 # <a name="notificationtemplatebrandingoptions-enum-type"></a>notificationTemplateBrandingOptions 列挙型
 
@@ -26,6 +26,7 @@ ms.locfileid: "33940478"
 |includeCompanyLogo|1-d|会社のロゴを含めます。|
 |includeCompanyName|pbm-2|会社名を含めます。|
 |情報|2/4|連絡先情報を含めます。|
+
 
 
 

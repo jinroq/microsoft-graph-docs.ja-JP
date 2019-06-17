@@ -4,12 +4,12 @@ description: Web ブラウザーの Cookie 設定。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4e64308ed613c44736143498c9c049c405765059
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 7f17b17f86bfe8ccff5e1a87a3bdbebad015fc0a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944489"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34980363"
 ---
 # <a name="webbrowsercookiesettings-enum-type"></a>webBrowserCookieSettings 列挙型
 
@@ -27,6 +27,7 @@ Web ブラウザーの Cookie 設定。
 |allowCurrentWebSite サイト|pbm-2|現在の Web サイトからの cookie を許可します。|
 |allowFromWebsitesVisited た|1/3|アクセスした web サイトの Cookie を許可します。|
 |allowAlways|2/4|常に cookie を許可します。|
+
 
 
 

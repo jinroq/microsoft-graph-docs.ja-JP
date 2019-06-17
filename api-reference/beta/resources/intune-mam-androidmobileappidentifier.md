@@ -4,12 +4,12 @@ description: Android アプリの識別子。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9ca2a2d9d548a94651514d1b3db2b385b5dc64bd
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6e49b6a3380600bb30e9203b2cf60400b68159e0
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940905"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994238"
 ---
 # <a name="androidmobileappidentifier-resource-type"></a>androidMobileAppIdentifier リソースの種類
 
@@ -27,7 +27,7 @@ Android アプリの識別子。
 |:---|:---|:---|
 |packageId|文字列型 (String)|Play ストアで指定されている、アプリの識別子。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -43,6 +43,7 @@ Android アプリの識別子。
   "packageId": "String"
 }
 ```
+
 
 
 

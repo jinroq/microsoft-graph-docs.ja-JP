@@ -4,12 +4,12 @@ description: 一連のデバイス構成ポリシーの競合の概要。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 94feaec798326c1a2a8c6ad4ed66eedff55344da
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 012a29a7dc0f5cd9fc6332ff99062b6a295792ee
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946995"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995904"
 ---
 # <a name="deviceconfigurationtargeteduseranddevice-resource-type"></a>deviceConfigurationTargetedUserAndDevice リソースの種類
 
@@ -29,7 +29,7 @@ ms.locfileid: "33946995"
 |userPrincipalName|String|チェックイン内のユーザーの UPN。|
 |lastCheckinDateTime|DateTimeOffset|このユーザー/デバイスのペアの最終チェックイン時刻。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -50,6 +50,7 @@ ms.locfileid: "33946995"
   "lastCheckinDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

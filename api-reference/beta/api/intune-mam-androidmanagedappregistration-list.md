@@ -4,12 +4,12 @@ description: androidManagedAppRegistration オブジェクトのプロパティ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4a08a8dbe76c88bd01b37e86801375435275713b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b63189ebeb25b4135bc60718de997413225576e5
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33903993"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34980055"
 ---
 # <a name="list-androidmanagedappregistrations"></a>androidManagedAppRegistrations のリスト
 
@@ -95,6 +95,7 @@ Content-Length: 1116
   ]
 }
 ```
+
 
 
 

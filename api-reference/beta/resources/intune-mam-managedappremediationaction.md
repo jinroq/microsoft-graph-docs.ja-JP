@@ -4,12 +4,12 @@ description: 管理対象アプリで適用される管理者が開始したア�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 79b8ec375b0376a48a1d2639f00ed58742663dda
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: df0abade9e6c96b38723702f3b5ee9b0b0bc36a3
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940688"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994672"
 ---
 # <a name="managedappremediationaction-enum-type"></a>managedAppRemediationAction 列挙型
 
@@ -25,6 +25,7 @@ ms.locfileid: "33940688"
 |拒否|.0|アプリと、ブロックされる対応会社のデータ|
 |ふき|1-d|消去するアプリと対応する会社のデータ|
 |示す|pbm-2|警告対象のアプリと対応するユーザー|
+
 
 
 

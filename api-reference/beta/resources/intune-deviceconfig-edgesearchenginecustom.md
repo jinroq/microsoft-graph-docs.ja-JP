@@ -4,12 +4,12 @@ description: IT 管理者が MDM 制御デバイス用向けのカスタムの�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: de856edf13a8d97e54925ca42537e977351675d7
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5a6c9f18a7a02db7054f8cbc230783fb1224e5ae
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946708"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996401"
 ---
 # <a name="edgesearchenginecustom-resource-type"></a>edgeSearchEngineCustom リソースの種類
 
@@ -27,7 +27,7 @@ IT 管理者が MDM 制御デバイス用向けのカスタムの既定の検索
 |:---|:---|:---|
 |edgeSearchEngineOpenSearchXmlUrl|文字列型 (String)|短縮名と検索エンジンの URL が最低限含まれる OpenSearch xml ファイルが入っている https リンクを指します。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -43,6 +43,7 @@ IT 管理者が MDM 制御デバイス用向けのカスタムの既定の検索
   "edgeSearchEngineOpenSearchXmlUrl": "String"
 }
 ```
+
 
 
 

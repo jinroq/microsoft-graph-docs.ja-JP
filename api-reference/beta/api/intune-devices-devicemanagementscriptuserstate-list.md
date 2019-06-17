@@ -4,12 +4,12 @@ description: DeviceManagementScriptUserState オブジェクトのプロパテ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6b9bb34eea51e11298b1d29b70e1875f5086defc
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5ff71b84cea6aacda4ea126b91f7e825f6663d0e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33909737"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34978319"
 ---
 # <a name="list-devicemanagementscriptuserstates"></a>DeviceManagementScriptUserStates のリスト
 
@@ -76,6 +76,7 @@ Content-Length: 282
   ]
 }
 ```
+
 
 
 

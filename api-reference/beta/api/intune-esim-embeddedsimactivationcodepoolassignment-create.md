@@ -4,12 +4,12 @@ description: 新しい embeddedSIMActivationCodePoolAssignment オブジェク�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 235d7b291532e08596feffef0804716048703277
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 55ce932d8d8bcbac57fcfc1c65cce571a0af0d37
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33905540"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34982603"
 ---
 # <a name="create-embeddedsimactivationcodepoolassignment"></a>EmbeddedSIMActivationCodePoolAssignment を作成する
 
@@ -90,6 +90,7 @@ Content-Length: 228
   }
 }
 ```
+
 
 
 

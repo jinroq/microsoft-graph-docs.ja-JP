@@ -4,12 +4,12 @@ description: 新しい deviceEnrollmentWindowsHelloForBusinessConfiguration オ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6184bccb43171e0323ef60cf166878c8d1b3fa3f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 8e932b69a1d4a83d9f01bcf734c491556f0480e1
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33900224"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34981189"
 ---
 # <a name="create-deviceenrollmentwindowshelloforbusinessconfiguration"></a>deviceEnrollmentWindowsHelloForBusinessConfiguration の作成
 
@@ -69,6 +69,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 |pinPreviousBlockCount|Int32|ユーザーが過去の Pin を使用できないようにする機能を制御します。 0 ~ 50 の範囲で設定する必要があり、ユーザーの現在の PIN がその数に含まれています。 0に設定すると、以前の Pin は保存されません。 Pin をリセットすると、PIN 履歴は保持されません。|
 |pinExpirationInDays|Int32|ユーザーがシステムに PIN を変更することを要求するまでの時間 (日数) を制御します。 0 ~ 730 の範囲で設定する必要があります。 0に設定すると、ユーザーの PIN は期限切れになりません。|
 |enhancedBiometricsState|[購入](../resources/intune-shared-enablement.md)|この機能をサポートするデバイス上の顔認識に対して、スプーフィング対策機能を使用する機能を制御します。 Disabled に設定した場合、スプーフィング対策機能は許可されません。 [未構成] に設定した場合、ユーザーはスプーフィング対策を使用するかどうかを選択できます。 可能な値は、`notConfigured`、`enabled`、`disabled` です。|
+|securityKeyForSignIn|[購入](../resources/intune-shared-enablement.md)|サインインのセキュリティキーでは、リモートでの Windows Hello Sercurity オン/オフの機能が提供されます。構成されていない構成は、clinet で行われる構成を優先します。 可能な値は、`notConfigured`、`enabled`、`disabled` です。|
 
 
 
@@ -82,7 +83,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurations
 Content-type: application/json
-Content-length: 629
+Content-length: 667
 
 {
   "@odata.type": "#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration",
@@ -101,7 +102,8 @@ Content-length: 629
   "remotePassportEnabled": true,
   "pinPreviousBlockCount": 5,
   "pinExpirationInDays": 3,
-  "enhancedBiometricsState": "enabled"
+  "enhancedBiometricsState": "enabled",
+  "securityKeyForSignIn": "enabled"
 }
 ```
 
@@ -110,7 +112,7 @@ Content-length: 629
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 801
+Content-Length: 839
 
 {
   "@odata.type": "#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration",
@@ -132,9 +134,11 @@ Content-Length: 801
   "remotePassportEnabled": true,
   "pinPreviousBlockCount": 5,
   "pinExpirationInDays": 3,
-  "enhancedBiometricsState": "enabled"
+  "enhancedBiometricsState": "enabled",
+  "securityKeyForSignIn": "enabled"
 }
 ```
+
 
 
 

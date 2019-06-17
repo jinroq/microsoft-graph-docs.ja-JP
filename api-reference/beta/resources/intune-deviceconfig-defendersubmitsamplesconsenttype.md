@@ -4,12 +4,12 @@ description: DefenderSubmitSamplesConsentType に指定できる値
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 212215c95a0f9674be793e6f001d8e71d2039b4a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 388ea6c7c99f2d56d63b5336b13d0ae22e3190d5
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947275"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979775"
 ---
 # <a name="defendersubmitsamplesconsenttype-enum-type"></a>defenderSubmitSamplesConsentType 列挙型
 
@@ -26,6 +26,7 @@ DefenderSubmitSamplesConsentType に指定できる値
 |Always プロンプト|1-d|常に確認する|
 |neverSend|pbm-2|送信しない|
 |sendAllSamplesAutomatically|1/3|すべてのサンプルを自動的に送信する|
+
 
 
 

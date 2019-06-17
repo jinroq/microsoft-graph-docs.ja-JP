@@ -4,12 +4,12 @@ description: DepOnboardingSetting は、Intune に利用されている Apple DE
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0dbe83aa09674a161b15f3d5c384a9f9ceb8cba4
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 9079405bf83605a39d2ab5b1a656f89be67a42db
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941605"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993551"
 ---
 # <a name="deponboardingsetting-resource-type"></a>depOnboardingSetting リソースの種類
 
@@ -34,7 +34,7 @@ DepOnboardingSetting は、Intune に利用されている Apple DEP サービ�
 |[unshareForSchoolDataSyncService アクション](../api/intune-enrollment-deponboardingsetting-unshareforschooldatasyncservice.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|オブジェクトの UUID|
 |appleIdentifier|String|現在のトークンを取得するために使用される Apple ID。|
@@ -48,9 +48,9 @@ DepOnboardingSetting は、Intune に利用されている Apple DEP サービ�
 |tokenName|String|Dep トークンのフレンドリ名|
 |syncedDeviceCount|Int32|同期されたデバイスの数を取得する|
 |dataSharingConsentGranted|Boolean|Apple Dep サービスでのデータ共有に対して付与される同意|
-|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。|
+|roleScopeTagIds|文字列コレクション|このエンティティインスタンスの範囲タグのリスト。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |defaultIosEnrollmentProfile|[depIOSEnrollmentProfile](../resources/intune-enrollment-depiosenrollmentprofile.md)|既定の iOS 登録プロファイル|
@@ -86,6 +86,7 @@ DepOnboardingSetting は、Intune に利用されている Apple DEP サービ�
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: TermsAndConditionsGroupAssignment エンティティは、特定の
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 417871f610e9c278e902b41c020c1d8fd904eb6a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 804ac878ef2ec691d1dd4ca5e62cf28ec4ef1770
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949141"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996604"
 ---
 # <a name="termsandconditionsgroupassignment-resource-type"></a>termsAndConditionsGroupAssignment リソースの種類
 
@@ -29,12 +29,12 @@ TermsAndConditionsGroupAssignment エンティティは、特定の使用条件 
 |[TermsAndConditionsGroupAssignment の更新](../api/intune-companyterms-termsandconditionsgroupassignment-update.md)|[termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md)|[TermsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティの一意識別子。|
 |targetGroupId|String|T&C ポリシーが割り当てられているグループの一意識別子。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |termsAndConditions|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md)|割り当てられた使用条件へのナビゲーション リンク。|
@@ -54,6 +54,7 @@ TermsAndConditionsGroupAssignment エンティティは、特定の使用条件 
   "targetGroupId": "String"
 }
 ```
+
 
 
 

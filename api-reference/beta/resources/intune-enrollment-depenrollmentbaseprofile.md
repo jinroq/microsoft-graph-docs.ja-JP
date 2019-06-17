@@ -4,12 +4,12 @@ description: DepEnrollmentBaseProfile リソースは、Apple Device Enrollment 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a0b33d4c8ed70c5391d1bc5f85761dfac6f61a76
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b92a86a3faa3da1af203e3688b7de7318a76dca4
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941661"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34978914"
 ---
 # <a name="depenrollmentbaseprofile-resource-type"></a>depEnrollmentBaseProfile リソースの種類
 
@@ -58,7 +58,7 @@ DepEnrollmentBaseProfile リソースは、Apple Device Enrollment Program (DEP)
 |privacyPaneDisabled|Boolean|プライバシー画面が無効であるかどうかを示します|
 |deviceNameTemplate|String|リテラルまたは名前のパターンを設定します。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -100,6 +100,7 @@ DepEnrollmentBaseProfile リソースは、Apple Device Enrollment Program (DEP)
   "deviceNameTemplate": "String"
 }
 ```
+
 
 
 

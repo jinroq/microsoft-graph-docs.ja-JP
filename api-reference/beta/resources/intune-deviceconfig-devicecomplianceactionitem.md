@@ -4,12 +4,12 @@ description: スケジュール済みのアクションの構成
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ae816f98c4f570c1ab0c72063c7d15ad29054fae
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e27d2fb5e8822dc4adc8503bbc6731e573c87759
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947184"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979537"
 ---
 # <a name="devicecomplianceactionitem-resource-type"></a>deviceComplianceActionItem リソース タイプ
 
@@ -37,7 +37,7 @@ ms.locfileid: "33947184"
 |notificationTemplateId|String|使用する通知メッセージ テンプレート|
 |notificationMessageCCList|String コレクション|この通知メッセージの CC に設定するグループ ID のリスト。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -60,6 +60,7 @@ ms.locfileid: "33947184"
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: アプリの管理レベル
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e8bad117814493cd9b4cc836f40a51e05e8e2bd7
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 153edac4513abcc783b67854a474b380faa95c8c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940933"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994224"
 ---
 # <a name="appmanagementlevel-enum-type"></a>appManagementLevel 列挙型
 
@@ -26,6 +26,7 @@ ms.locfileid: "33940933"
 |unmanaged|1-d|Unmanaged|
 |mdm.exe|pbm-2|MDM.EXE|
 |androidEnterprise|2/4|Android Enterprise|
+
 
 
 
