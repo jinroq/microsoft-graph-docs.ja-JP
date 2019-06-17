@@ -4,31 +4,31 @@ description: macOSCustomConfiguration オブジェクトのプロパティを更
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bfc2a5f248cf8ab1df64ccd81c76d7612dfb8169
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 82f0e629bd1b4f5d6e59ebc03ea99570e843c33d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33922874"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34976842"
 ---
-# <a name="update-macoscustomconfiguration"></a><span data-ttu-id="2bf7e-103">macOSCustomConfiguration の更新</span><span class="sxs-lookup"><span data-stu-id="2bf7e-103">Update macOSCustomConfiguration</span></span>
+# <a name="update-macoscustomconfiguration"></a><span data-ttu-id="a83d4-103">macOSCustomConfiguration の更新</span><span class="sxs-lookup"><span data-stu-id="a83d4-103">Update macOSCustomConfiguration</span></span>
 
-> <span data-ttu-id="2bf7e-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="2bf7e-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="a83d4-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a83d4-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="2bf7e-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="2bf7e-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="a83d4-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="a83d4-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="2bf7e-106">[macOSCustomConfiguration](../resources/intune-deviceconfig-macoscustomconfiguration.md) オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="2bf7e-106">Update the properties of a [macOSCustomConfiguration](../resources/intune-deviceconfig-macoscustomconfiguration.md) object.</span></span>
+<span data-ttu-id="a83d4-106">[macOSCustomConfiguration](../resources/intune-deviceconfig-macoscustomconfiguration.md) オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="a83d4-106">Update the properties of a [macOSCustomConfiguration](../resources/intune-deviceconfig-macoscustomconfiguration.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="2bf7e-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="2bf7e-107">Prerequisites</span></span>
-<span data-ttu-id="2bf7e-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2bf7e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="a83d4-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="a83d4-107">Prerequisites</span></span>
+<span data-ttu-id="a83d4-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a83d4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2bf7e-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="2bf7e-110">Permission type</span></span>|<span data-ttu-id="2bf7e-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="2bf7e-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="a83d4-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="a83d4-110">Permission type</span></span>|<span data-ttu-id="a83d4-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="a83d4-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="2bf7e-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="2bf7e-112">Delegated (work or school account)</span></span>|<span data-ttu-id="2bf7e-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2bf7e-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="2bf7e-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="2bf7e-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="2bf7e-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="2bf7e-115">Not supported.</span></span>|
-|<span data-ttu-id="2bf7e-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="2bf7e-116">Application</span></span>|<span data-ttu-id="2bf7e-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="2bf7e-117">Not supported.</span></span>|
+|<span data-ttu-id="a83d4-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="a83d4-112">Delegated (work or school account)</span></span>|<span data-ttu-id="a83d4-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a83d4-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="a83d4-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="a83d4-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="a83d4-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a83d4-115">Not supported.</span></span>|
+|<span data-ttu-id="a83d4-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="a83d4-116">Application</span></span>|<span data-ttu-id="a83d4-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a83d4-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="2bf7e-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="2bf7e-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a83d4-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="a83d4-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -39,44 +39,47 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssign
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="2bf7e-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="2bf7e-119">Request headers</span></span>
-|<span data-ttu-id="2bf7e-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="2bf7e-120">Header</span></span>|<span data-ttu-id="2bf7e-121">値</span><span class="sxs-lookup"><span data-stu-id="2bf7e-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="a83d4-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="a83d4-119">Request headers</span></span>
+|<span data-ttu-id="a83d4-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="a83d4-120">Header</span></span>|<span data-ttu-id="a83d4-121">値</span><span class="sxs-lookup"><span data-stu-id="a83d4-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="2bf7e-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="2bf7e-122">Authorization</span></span>|<span data-ttu-id="2bf7e-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="2bf7e-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="2bf7e-124">承諾</span><span class="sxs-lookup"><span data-stu-id="2bf7e-124">Accept</span></span>|<span data-ttu-id="2bf7e-125">application/json</span><span class="sxs-lookup"><span data-stu-id="2bf7e-125">application/json</span></span>|
+|<span data-ttu-id="a83d4-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="a83d4-122">Authorization</span></span>|<span data-ttu-id="a83d4-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="a83d4-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="a83d4-124">承諾</span><span class="sxs-lookup"><span data-stu-id="a83d4-124">Accept</span></span>|<span data-ttu-id="a83d4-125">application/json</span><span class="sxs-lookup"><span data-stu-id="a83d4-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="2bf7e-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="2bf7e-126">Request body</span></span>
-<span data-ttu-id="2bf7e-127">要求本文で、[macOSCustomConfiguration](../resources/intune-deviceconfig-macoscustomconfiguration.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="2bf7e-127">In the request body, supply a JSON representation for the [macOSCustomConfiguration](../resources/intune-deviceconfig-macoscustomconfiguration.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a83d4-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="a83d4-126">Request body</span></span>
+<span data-ttu-id="a83d4-127">要求本文で、[macOSCustomConfiguration](../resources/intune-deviceconfig-macoscustomconfiguration.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="a83d4-127">In the request body, supply a JSON representation for the [macOSCustomConfiguration](../resources/intune-deviceconfig-macoscustomconfiguration.md) object.</span></span>
 
-<span data-ttu-id="2bf7e-128">次の表に、[macOSCustomConfiguration](../resources/intune-deviceconfig-macoscustomconfiguration.md) の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="2bf7e-128">The following table shows the properties that are required when you create the [macOSCustomConfiguration](../resources/intune-deviceconfig-macoscustomconfiguration.md).</span></span>
+<span data-ttu-id="a83d4-128">次の表に、[macOSCustomConfiguration](../resources/intune-deviceconfig-macoscustomconfiguration.md) の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="a83d4-128">The following table shows the properties that are required when you create the [macOSCustomConfiguration](../resources/intune-deviceconfig-macoscustomconfiguration.md).</span></span>
 
-|<span data-ttu-id="2bf7e-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="2bf7e-129">Property</span></span>|<span data-ttu-id="2bf7e-130">型</span><span class="sxs-lookup"><span data-stu-id="2bf7e-130">Type</span></span>|<span data-ttu-id="2bf7e-131">説明</span><span class="sxs-lookup"><span data-stu-id="2bf7e-131">Description</span></span>|
+|<span data-ttu-id="a83d4-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="a83d4-129">Property</span></span>|<span data-ttu-id="a83d4-130">型</span><span class="sxs-lookup"><span data-stu-id="a83d4-130">Type</span></span>|<span data-ttu-id="a83d4-131">説明</span><span class="sxs-lookup"><span data-stu-id="a83d4-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="2bf7e-132">id</span><span class="sxs-lookup"><span data-stu-id="2bf7e-132">id</span></span>|<span data-ttu-id="2bf7e-133">文字列</span><span class="sxs-lookup"><span data-stu-id="2bf7e-133">String</span></span>|<span data-ttu-id="2bf7e-134">エンティティのキー。</span><span class="sxs-lookup"><span data-stu-id="2bf7e-134">Key of the entity.</span></span> <span data-ttu-id="2bf7e-135">[deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します</span><span class="sxs-lookup"><span data-stu-id="2bf7e-135">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
-|<span data-ttu-id="2bf7e-136">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="2bf7e-136">lastModifiedDateTime</span></span>|<span data-ttu-id="2bf7e-137">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="2bf7e-137">DateTimeOffset</span></span>|<span data-ttu-id="2bf7e-138">オブジェクトの最終更新の DateTime。</span><span class="sxs-lookup"><span data-stu-id="2bf7e-138">DateTime the object was last modified.</span></span> <span data-ttu-id="2bf7e-139">[deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します</span><span class="sxs-lookup"><span data-stu-id="2bf7e-139">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
-|<span data-ttu-id="2bf7e-140">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="2bf7e-140">roleScopeTagIds</span></span>|<span data-ttu-id="2bf7e-141">String collection</span><span class="sxs-lookup"><span data-stu-id="2bf7e-141">String collection</span></span>|<span data-ttu-id="2bf7e-142">このエンティティインスタンスの範囲タグのリスト。</span><span class="sxs-lookup"><span data-stu-id="2bf7e-142">List of Scope Tags for this Entity instance.</span></span> <span data-ttu-id="2bf7e-143">[deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します</span><span class="sxs-lookup"><span data-stu-id="2bf7e-143">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
-|<span data-ttu-id="2bf7e-144">supportsScopeTags</span><span class="sxs-lookup"><span data-stu-id="2bf7e-144">supportsScopeTags</span></span>|<span data-ttu-id="2bf7e-145">Boolean</span><span class="sxs-lookup"><span data-stu-id="2bf7e-145">Boolean</span></span>|<span data-ttu-id="2bf7e-146">基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="2bf7e-146">Indicates whether or not the underlying Device Configuration supports the assignment of scope tags.</span></span> <span data-ttu-id="2bf7e-147">この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。</span><span class="sxs-lookup"><span data-stu-id="2bf7e-147">Assigning to the ScopeTags property is not allowed when this value is false and entities will not be visible to scoped users.</span></span> <span data-ttu-id="2bf7e-148">これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。</span><span class="sxs-lookup"><span data-stu-id="2bf7e-148">This occurs for Legacy policies created in Silverlight and can be resolved by deleting and recreating the policy in the Azure Portal.</span></span> <span data-ttu-id="2bf7e-149">このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。</span><span class="sxs-lookup"><span data-stu-id="2bf7e-149">This property is read-only.</span></span> <span data-ttu-id="2bf7e-150">[deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します</span><span class="sxs-lookup"><span data-stu-id="2bf7e-150">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
-|<span data-ttu-id="2bf7e-151">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="2bf7e-151">createdDateTime</span></span>|<span data-ttu-id="2bf7e-152">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="2bf7e-152">DateTimeOffset</span></span>|<span data-ttu-id="2bf7e-153">オブジェクトが作成された DateTime。</span><span class="sxs-lookup"><span data-stu-id="2bf7e-153">DateTime the object was created.</span></span> <span data-ttu-id="2bf7e-154">[deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します</span><span class="sxs-lookup"><span data-stu-id="2bf7e-154">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
-|<span data-ttu-id="2bf7e-155">description</span><span class="sxs-lookup"><span data-stu-id="2bf7e-155">description</span></span>|<span data-ttu-id="2bf7e-156">String</span><span class="sxs-lookup"><span data-stu-id="2bf7e-156">String</span></span>|<span data-ttu-id="2bf7e-157">管理者が指定した、デバイス構成についての説明。</span><span class="sxs-lookup"><span data-stu-id="2bf7e-157">Admin provided description of the Device Configuration.</span></span> <span data-ttu-id="2bf7e-158">[deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します</span><span class="sxs-lookup"><span data-stu-id="2bf7e-158">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
-|<span data-ttu-id="2bf7e-159">displayName</span><span class="sxs-lookup"><span data-stu-id="2bf7e-159">displayName</span></span>|<span data-ttu-id="2bf7e-160">String</span><span class="sxs-lookup"><span data-stu-id="2bf7e-160">String</span></span>|<span data-ttu-id="2bf7e-161">管理者が指定した、デバイス構成の名前。</span><span class="sxs-lookup"><span data-stu-id="2bf7e-161">Admin provided name of the device configuration.</span></span> <span data-ttu-id="2bf7e-162">[deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します</span><span class="sxs-lookup"><span data-stu-id="2bf7e-162">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
-|<span data-ttu-id="2bf7e-163">version</span><span class="sxs-lookup"><span data-stu-id="2bf7e-163">version</span></span>|<span data-ttu-id="2bf7e-164">Int32</span><span class="sxs-lookup"><span data-stu-id="2bf7e-164">Int32</span></span>|<span data-ttu-id="2bf7e-165">デバイス構成のバージョン。</span><span class="sxs-lookup"><span data-stu-id="2bf7e-165">Version of the device configuration.</span></span> <span data-ttu-id="2bf7e-166">[deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します</span><span class="sxs-lookup"><span data-stu-id="2bf7e-166">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
-|<span data-ttu-id="2bf7e-167">payloadName</span><span class="sxs-lookup"><span data-stu-id="2bf7e-167">payloadName</span></span>|<span data-ttu-id="2bf7e-168">String</span><span class="sxs-lookup"><span data-stu-id="2bf7e-168">String</span></span>|<span data-ttu-id="2bf7e-169">ユーザーに表示される名前。</span><span class="sxs-lookup"><span data-stu-id="2bf7e-169">Name that is displayed to the user.</span></span>|
-|<span data-ttu-id="2bf7e-170">payloadFileName</span><span class="sxs-lookup"><span data-stu-id="2bf7e-170">payloadFileName</span></span>|<span data-ttu-id="2bf7e-171">String</span><span class="sxs-lookup"><span data-stu-id="2bf7e-171">String</span></span>|<span data-ttu-id="2bf7e-172">ペイロード ファイル名 (\*.mobileconfig</span><span class="sxs-lookup"><span data-stu-id="2bf7e-172">Payload file name (\*.mobileconfig</span></span> | <span data-ttu-id="2bf7e-173">\*.xml)。</span><span class="sxs-lookup"><span data-stu-id="2bf7e-173">\*.xml).</span></span>|
-|<span data-ttu-id="2bf7e-174">payload</span><span class="sxs-lookup"><span data-stu-id="2bf7e-174">payload</span></span>|<span data-ttu-id="2bf7e-175">Binary</span><span class="sxs-lookup"><span data-stu-id="2bf7e-175">Binary</span></span>|<span data-ttu-id="2bf7e-176">ペイロード。</span><span class="sxs-lookup"><span data-stu-id="2bf7e-176">Payload.</span></span> <span data-ttu-id="2bf7e-177">(UTF8 でエンコードされたバイト配列)</span><span class="sxs-lookup"><span data-stu-id="2bf7e-177">(UTF8 encoded byte array)</span></span>|
+|<span data-ttu-id="a83d4-132">id</span><span class="sxs-lookup"><span data-stu-id="a83d4-132">id</span></span>|<span data-ttu-id="a83d4-133">文字列</span><span class="sxs-lookup"><span data-stu-id="a83d4-133">String</span></span>|<span data-ttu-id="a83d4-134">エンティティのキー。</span><span class="sxs-lookup"><span data-stu-id="a83d4-134">Key of the entity.</span></span> <span data-ttu-id="a83d4-135">[deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します</span><span class="sxs-lookup"><span data-stu-id="a83d4-135">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="a83d4-136">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="a83d4-136">lastModifiedDateTime</span></span>|<span data-ttu-id="a83d4-137">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="a83d4-137">DateTimeOffset</span></span>|<span data-ttu-id="a83d4-138">オブジェクトの最終更新の DateTime。</span><span class="sxs-lookup"><span data-stu-id="a83d4-138">DateTime the object was last modified.</span></span> <span data-ttu-id="a83d4-139">[deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します</span><span class="sxs-lookup"><span data-stu-id="a83d4-139">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="a83d4-140">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="a83d4-140">roleScopeTagIds</span></span>|<span data-ttu-id="a83d4-141">文字列コレクション</span><span class="sxs-lookup"><span data-stu-id="a83d4-141">String collection</span></span>|<span data-ttu-id="a83d4-142">このエンティティインスタンスの範囲タグのリスト。</span><span class="sxs-lookup"><span data-stu-id="a83d4-142">List of Scope Tags for this Entity instance.</span></span> <span data-ttu-id="a83d4-143">[deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します</span><span class="sxs-lookup"><span data-stu-id="a83d4-143">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="a83d4-144">supportsScopeTags</span><span class="sxs-lookup"><span data-stu-id="a83d4-144">supportsScopeTags</span></span>|<span data-ttu-id="a83d4-145">Boolean</span><span class="sxs-lookup"><span data-stu-id="a83d4-145">Boolean</span></span>|<span data-ttu-id="a83d4-146">基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="a83d4-146">Indicates whether or not the underlying Device Configuration supports the assignment of scope tags.</span></span> <span data-ttu-id="a83d4-147">この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。</span><span class="sxs-lookup"><span data-stu-id="a83d4-147">Assigning to the ScopeTags property is not allowed when this value is false and entities will not be visible to scoped users.</span></span> <span data-ttu-id="a83d4-148">これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。</span><span class="sxs-lookup"><span data-stu-id="a83d4-148">This occurs for Legacy policies created in Silverlight and can be resolved by deleting and recreating the policy in the Azure Portal.</span></span> <span data-ttu-id="a83d4-149">このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。</span><span class="sxs-lookup"><span data-stu-id="a83d4-149">This property is read-only.</span></span> <span data-ttu-id="a83d4-150">[deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します</span><span class="sxs-lookup"><span data-stu-id="a83d4-150">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="a83d4-151">deviceManagementApplicabilityRuleOsEdition</span><span class="sxs-lookup"><span data-stu-id="a83d4-151">deviceManagementApplicabilityRuleOsEdition</span></span>|[<span data-ttu-id="a83d4-152">deviceManagementApplicabilityRuleOsEdition</span><span class="sxs-lookup"><span data-stu-id="a83d4-152">deviceManagementApplicabilityRuleOsEdition</span></span>](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|<span data-ttu-id="a83d4-153">このポリシーの OS エディションの適用。</span><span class="sxs-lookup"><span data-stu-id="a83d4-153">The OS edition applicability for this Policy.</span></span> <span data-ttu-id="a83d4-154">[deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します</span><span class="sxs-lookup"><span data-stu-id="a83d4-154">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="a83d4-155">deviceManagementApplicabilityRuleOsVersion</span><span class="sxs-lookup"><span data-stu-id="a83d4-155">deviceManagementApplicabilityRuleOsVersion</span></span>|[<span data-ttu-id="a83d4-156">deviceManagementApplicabilityRuleOsVersion</span><span class="sxs-lookup"><span data-stu-id="a83d4-156">deviceManagementApplicabilityRuleOsVersion</span></span>](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|<span data-ttu-id="a83d4-157">このポリシーの OS バージョン適用ルール。</span><span class="sxs-lookup"><span data-stu-id="a83d4-157">The OS version applicability rule for this Policy.</span></span> <span data-ttu-id="a83d4-158">[deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します</span><span class="sxs-lookup"><span data-stu-id="a83d4-158">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="a83d4-159">Devicemanagementの信頼性ルール Devicemode</span><span class="sxs-lookup"><span data-stu-id="a83d4-159">deviceManagementApplicabilityRuleDeviceMode</span></span>|[<span data-ttu-id="a83d4-160">Devicemanagementの信頼性ルール Devicemode</span><span class="sxs-lookup"><span data-stu-id="a83d4-160">deviceManagementApplicabilityRuleDeviceMode</span></span>](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|<span data-ttu-id="a83d4-161">このポリシーのデバイスモード適用ルール。</span><span class="sxs-lookup"><span data-stu-id="a83d4-161">The device mode applicability rule for this Policy.</span></span> <span data-ttu-id="a83d4-162">[deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します</span><span class="sxs-lookup"><span data-stu-id="a83d4-162">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="a83d4-163">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="a83d4-163">createdDateTime</span></span>|<span data-ttu-id="a83d4-164">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="a83d4-164">DateTimeOffset</span></span>|<span data-ttu-id="a83d4-165">オブジェクトが作成された DateTime。</span><span class="sxs-lookup"><span data-stu-id="a83d4-165">DateTime the object was created.</span></span> <span data-ttu-id="a83d4-166">[deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します</span><span class="sxs-lookup"><span data-stu-id="a83d4-166">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="a83d4-167">description</span><span class="sxs-lookup"><span data-stu-id="a83d4-167">description</span></span>|<span data-ttu-id="a83d4-168">String</span><span class="sxs-lookup"><span data-stu-id="a83d4-168">String</span></span>|<span data-ttu-id="a83d4-169">管理者が指定した、デバイス構成についての説明。</span><span class="sxs-lookup"><span data-stu-id="a83d4-169">Admin provided description of the Device Configuration.</span></span> <span data-ttu-id="a83d4-170">[deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します</span><span class="sxs-lookup"><span data-stu-id="a83d4-170">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="a83d4-171">displayName</span><span class="sxs-lookup"><span data-stu-id="a83d4-171">displayName</span></span>|<span data-ttu-id="a83d4-172">String</span><span class="sxs-lookup"><span data-stu-id="a83d4-172">String</span></span>|<span data-ttu-id="a83d4-173">管理者が指定した、デバイス構成の名前。</span><span class="sxs-lookup"><span data-stu-id="a83d4-173">Admin provided name of the device configuration.</span></span> <span data-ttu-id="a83d4-174">[deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します</span><span class="sxs-lookup"><span data-stu-id="a83d4-174">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="a83d4-175">version</span><span class="sxs-lookup"><span data-stu-id="a83d4-175">version</span></span>|<span data-ttu-id="a83d4-176">Int32</span><span class="sxs-lookup"><span data-stu-id="a83d4-176">Int32</span></span>|<span data-ttu-id="a83d4-177">デバイス構成のバージョン。</span><span class="sxs-lookup"><span data-stu-id="a83d4-177">Version of the device configuration.</span></span> <span data-ttu-id="a83d4-178">[deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します</span><span class="sxs-lookup"><span data-stu-id="a83d4-178">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="a83d4-179">payloadName</span><span class="sxs-lookup"><span data-stu-id="a83d4-179">payloadName</span></span>|<span data-ttu-id="a83d4-180">String</span><span class="sxs-lookup"><span data-stu-id="a83d4-180">String</span></span>|<span data-ttu-id="a83d4-181">ユーザーに表示される名前。</span><span class="sxs-lookup"><span data-stu-id="a83d4-181">Name that is displayed to the user.</span></span>|
+|<span data-ttu-id="a83d4-182">payloadFileName</span><span class="sxs-lookup"><span data-stu-id="a83d4-182">payloadFileName</span></span>|<span data-ttu-id="a83d4-183">String</span><span class="sxs-lookup"><span data-stu-id="a83d4-183">String</span></span>|<span data-ttu-id="a83d4-184">ペイロード ファイル名 (\*.mobileconfig</span><span class="sxs-lookup"><span data-stu-id="a83d4-184">Payload file name (\*.mobileconfig</span></span> | <span data-ttu-id="a83d4-185">\*.xml)。</span><span class="sxs-lookup"><span data-stu-id="a83d4-185">\*.xml).</span></span>|
+|<span data-ttu-id="a83d4-186">payload</span><span class="sxs-lookup"><span data-stu-id="a83d4-186">payload</span></span>|<span data-ttu-id="a83d4-187">Binary</span><span class="sxs-lookup"><span data-stu-id="a83d4-187">Binary</span></span>|<span data-ttu-id="a83d4-188">ペイロード。</span><span class="sxs-lookup"><span data-stu-id="a83d4-188">Payload.</span></span> <span data-ttu-id="a83d4-189">(UTF8 でエンコードされたバイト配列)</span><span class="sxs-lookup"><span data-stu-id="a83d4-189">(UTF8 encoded byte array)</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="2bf7e-178">応答</span><span class="sxs-lookup"><span data-stu-id="2bf7e-178">Response</span></span>
-<span data-ttu-id="2bf7e-179">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で更新された [macOSCustomConfiguration](../resources/intune-deviceconfig-macoscustomconfiguration.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="2bf7e-179">If successful, this method returns a `200 OK` response code and an updated [macOSCustomConfiguration](../resources/intune-deviceconfig-macoscustomconfiguration.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="a83d4-190">応答</span><span class="sxs-lookup"><span data-stu-id="a83d4-190">Response</span></span>
+<span data-ttu-id="a83d4-191">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で更新された [macOSCustomConfiguration](../resources/intune-deviceconfig-macoscustomconfiguration.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="a83d4-191">If successful, this method returns a `200 OK` response code and an updated [macOSCustomConfiguration](../resources/intune-deviceconfig-macoscustomconfiguration.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2bf7e-180">例</span><span class="sxs-lookup"><span data-stu-id="2bf7e-180">Example</span></span>
+## <a name="example"></a><span data-ttu-id="a83d4-192">例</span><span class="sxs-lookup"><span data-stu-id="a83d4-192">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="2bf7e-181">要求</span><span class="sxs-lookup"><span data-stu-id="2bf7e-181">Request</span></span>
-<span data-ttu-id="2bf7e-182">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="2bf7e-182">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="a83d4-193">要求</span><span class="sxs-lookup"><span data-stu-id="a83d4-193">Request</span></span>
+<span data-ttu-id="a83d4-194">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="a83d4-194">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 373
+Content-length: 1146
 
 {
   "@odata.type": "#microsoft.graph.macOSCustomConfiguration",
@@ -84,6 +87,27 @@ Content-length: 373
     "Role Scope Tag Ids value"
   ],
   "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+    "osEditionTypes": [
+      "windows10EnterpriseN"
+    ],
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleOsVersion": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+    "minOSVersion": "Min OSVersion value",
+    "maxOSVersion": "Max OSVersion value",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleDeviceMode": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+    "deviceMode": "sModeConfiguration",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
@@ -93,12 +117,12 @@ Content-length: 373
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="2bf7e-183">応答</span><span class="sxs-lookup"><span data-stu-id="2bf7e-183">Response</span></span>
-<span data-ttu-id="2bf7e-p111">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="2bf7e-p111">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="a83d4-195">応答</span><span class="sxs-lookup"><span data-stu-id="a83d4-195">Response</span></span>
+<span data-ttu-id="a83d4-p114">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="a83d4-p114">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 545
+Content-Length: 1318
 
 {
   "@odata.type": "#microsoft.graph.macOSCustomConfiguration",
@@ -108,6 +132,27 @@ Content-Length: 545
     "Role Scope Tag Ids value"
   ],
   "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+    "osEditionTypes": [
+      "windows10EnterpriseN"
+    ],
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleOsVersion": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+    "minOSVersion": "Min OSVersion value",
+    "maxOSVersion": "Max OSVersion value",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleDeviceMode": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+    "deviceMode": "sModeConfiguration",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "description": "Description value",
   "displayName": "Display Name value",
@@ -117,6 +162,7 @@ Content-Length: 545
   "payload": "cGF5bG9hZA=="
 }
 ```
+
 
 
 
