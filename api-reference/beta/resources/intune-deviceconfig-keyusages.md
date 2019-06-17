@@ -4,12 +4,12 @@ description: キー使用法オプション
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 65707cd57031e89f795c0e8e7e4a72e84eca2f79
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a9001780e62c705bd7655f19325f0ece5938beab
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946218"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989400"
 ---
 # <a name="keyusages-enum-type"></a>keyUsages 列挙型
 
@@ -24,6 +24,7 @@ ms.locfileid: "33946218"
 |:---|:---|:---|
 |keyEncipherment|1-d|キーの暗号化の使用法。|
 |digitalSignature|pbm-2|デジタル署名の使用法。|
+
 
 
 

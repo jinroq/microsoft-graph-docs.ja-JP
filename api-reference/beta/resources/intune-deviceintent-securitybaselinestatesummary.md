@@ -4,12 +4,12 @@ description: アカウントのセキュリティベースラインのセキュ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6c7c1cf31ddca02348eed55b9dc19dd5420b016e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: cd3ec6e2b207adc70fbcd6ea793a636a799bf1bc
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943271"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983408"
 ---
 # <a name="securitybaselinestatesummary-resource-type"></a>securityBaselineStateSummary リソースの種類
 
@@ -36,7 +36,7 @@ ms.locfileid: "33943271"
 |conflictCount|Int32|競合デバイスの数|
 |notApplicableCount|Int32|該当しないデバイスの数|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -59,6 +59,7 @@ ms.locfileid: "33943271"
   "notApplicableCount": 1024
 }
 ```
+
 
 
 

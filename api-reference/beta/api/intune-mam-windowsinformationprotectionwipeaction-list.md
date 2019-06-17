@@ -4,12 +4,12 @@ description: Windowsinformationprotectionwipepeaction オブジェクトのプ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 24ccb0323fb0cc0eabccc6cdccbedf3d4922a596
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 99ffffba71de95d0bec7aed2f8f3448f0cc1045b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33900567"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34981504"
 ---
 # <a name="list-windowsinformationprotectionwipeactions"></a>WindowsInformationProtectionWipeActions を一覧表示する
 
@@ -79,6 +79,7 @@ Content-Length: 526
   ]
 }
 ```
+
 
 
 

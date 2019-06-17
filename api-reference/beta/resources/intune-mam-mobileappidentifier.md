@@ -4,12 +4,12 @@ description: モバイル アプリの識別子です。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 45746852cc7b260c8bd634c3ef36590ea1cd0e57
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2148c5e47a551056445723080dd9bd52699ee1d4
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940667"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994602"
 ---
 # <a name="mobileappidentifier-resource-type"></a>mobileAppIdentifier リソースの種類
 
@@ -23,7 +23,7 @@ ms.locfileid: "33940667"
 |プロパティ|型|説明|
 |:---|:---|:---|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -38,6 +38,7 @@ ms.locfileid: "33940667"
   "@odata.type": "#microsoft.graph.mobileAppIdentifier"
 }
 ```
+
 
 
 

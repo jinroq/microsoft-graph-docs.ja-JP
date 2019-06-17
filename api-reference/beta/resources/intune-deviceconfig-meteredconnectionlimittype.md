@@ -4,12 +4,12 @@ description: 従量制課金接続制限設定。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b6e7cabe52bdf3c6b0a77304b7dd11c88f50cc99
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0bb0dfeeed0c348d08e22f01af78d3403ec26c16
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950768"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986691"
 ---
 # <a name="meteredconnectionlimittype-enum-type"></a>meteredConnectionLimitType 列挙型
 
@@ -25,6 +25,7 @@ ms.locfileid: "33950768"
 |Unrestricted|.0|Unrestricted|
 |固定|1-d|Fixed|
 |変数|pbm-2|変数|
+
 
 
 

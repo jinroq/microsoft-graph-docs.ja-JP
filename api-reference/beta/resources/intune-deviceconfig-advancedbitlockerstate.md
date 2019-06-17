@@ -4,12 +4,12 @@ description: 高度な BitLocker 状態
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2a5bf6326006d17d8e562ed429c67afb83f25c9f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ff590f99d019ec62c0bc08f9dd6b4e34bd78b1f8
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949142"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965800"
 ---
 # <a name="advancedbitlockerstate-enum-type"></a>Advanced Bitlockerstate 列挙型
 
@@ -39,6 +39,7 @@ ms.locfileid: "33949142"
 |tpmNotAvailable|8192|BitLocker では TPM を使用できません。 これは、TPM が存在しないこと、または TPM が使用できないレジストリの上書きが設定されているか、またはホスト OS がポータブル/ローマ可能なドライブにあることを意味します。|
 |tpmNotReady|16384|TPM は BitLocker の準備ができていません|
 |networkError|32768|ネットワークを使用できません。 これは、回復キーのバックアップに必要です。 ドライブ暗号化対応デバイスの場合は、このレポートが表示されます。|
+
 
 
 

@@ -4,12 +4,12 @@ description: DataSharingConsent を削除します。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e9427d183e7c908b38b84ec768cc6c1d1cb33f71
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d032b69deab8e7df57c725aa06e4734cb6eb6e45
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33910172"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959223"
 ---
 # <a name="delete-datasharingconsent"></a>DataSharingConsent の削除
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/dataSharingConsents/{da
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

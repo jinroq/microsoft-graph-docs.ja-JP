@@ -4,12 +4,12 @@ description: IPV4、IPV6 アドレス範囲を表す、IP 範囲基底クラス
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 42b7ccf9f4bd0c138b2a64090fc0e6ecf9ffbb62
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a8d371cb47cbddc9ecef1ec19517c1da2596d77c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939655"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996065"
 ---
 # <a name="iprange-resource-type"></a>ipRange リソースの種類
 
@@ -23,7 +23,7 @@ IPV4、IPV6 アドレス範囲を表す、IP 範囲基底クラス
 |プロパティ|型|説明|
 |:---|:---|:---|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -38,6 +38,7 @@ IPV4、IPV6 アドレス範囲を表す、IP 範囲基底クラス
   "@odata.type": "#microsoft.graph.ipRange"
 }
 ```
+
 
 
 

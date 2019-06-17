@@ -4,12 +4,12 @@ description: DmaGuardDeviceEnumerationPolicy の可能な値。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3c46f7e49ad9d9ef31af4ee2d783f171b08c09f1
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f4e534fca412c6d48ab9ea006f308a114c73def2
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946883"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989918"
 ---
 # <a name="dmaguarddeviceenumerationpolicytype-enum-type"></a>dmaGuardDeviceEnumerationPolicyType 列挙型
 
@@ -25,6 +25,7 @@ DmaGuardDeviceEnumerationPolicy の可能な値。
 |deviceDefault|.0|既定値です。 DMA が再マッピングされているデバイス互換性のないドライバーは、ユーザーが画面をロック解除した後にのみ列挙されます。|
 |blockAll|1-d|DMA がマッピングされていないデバイス互換性のないドライバーは、いつでも DMA を開始して実行することはできません。|
 |allowAll|pbm-2|すべての外部 DMA 対応 PCIe デバイスは、いつでも列挙されます。|
+
 
 
 

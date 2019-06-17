@@ -4,12 +4,12 @@ description: VPPトークン オブジェクトのプロパティを更新しま
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1185737bf70976f9384e2005c45023d1b7fb36d1
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a7fc1ead8c4a7c7c2a2fc6410bde39b0cc2c62de
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899846"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34980538"
 ---
 # <a name="update-vpptoken"></a>VPPトークンの更新
 
@@ -67,7 +67,7 @@ PATCH /deviceAppManagement/vppTokens/{vppTokenId}
 |displayName|String|管理者が指定したトークンのフレンドリ名。|
 |Msrtcsip-locationname|String|Apple VPP から返されるトークンの場所。|
 |claimTokenManagementFromExternalMdm|Boolean|管理者の同意を得て、外部 MDM からのトークン管理を許可します。|
-|roleScopeTagIds|String collection|このエンティティに割り当てられているロールスコープタグ Id。|
+|roleScopeTagIds|文字列コレクション|このエンティティに割り当てられているロールスコープタグ Id。|
 
 
 
@@ -153,6 +153,7 @@ Content-Length: 1115
   ]
 }
 ```
+
 
 
 

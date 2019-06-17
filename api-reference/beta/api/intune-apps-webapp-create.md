@@ -4,12 +4,12 @@ description: 新しい webApp オブジェクトを作成します。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 672b8cb247706155e22fbe4f1c2e593247af3cd8
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6cba392ba4ba74264c3c0e109b0ed3a7b2270af4
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934860"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34973377"
 ---
 # <a name="create-webapp"></a>webApp の作成
 
@@ -66,7 +66,7 @@ POST /deviceAppManagement/mobileApps
 |uploadState|Int32|アップロード状態。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 [MobileApp](../resources/intune-apps-mobileapp.md)から継承されます。 可能な値は、`notPublished`、`processing`、`published` です。|
 |isAssigned|Boolean|アプリが少なくとも1つのグループに割り当てられているかどうかを示す値。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|roleScopeTagIds|String collection|このモバイルアプリの範囲タグ id のリスト。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|roleScopeTagIds|文字列コレクション|このモバイルアプリの範囲タグ id のリスト。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |dependentAppCount|Int32|子アプリが持つ依存関係の合計数。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |appUrl|String|Web アプリの URL。|
 |useManagedBrowser|Boolean|管理対象のブラウザーを使用するかどうかを指定します。 このプロパティは、Android と iOS にのみ適用されます。|
@@ -150,6 +150,7 @@ Content-Length: 951
   "useManagedBrowser": true
 }
 ```
+
 
 
 

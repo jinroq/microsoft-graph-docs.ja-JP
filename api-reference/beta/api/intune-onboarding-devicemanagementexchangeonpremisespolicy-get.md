@@ -4,12 +4,12 @@ description: DeviceManagementExchangeOnPremisesPolicy オブジェクトのプ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f66ba598318e2d2ea4613d56a84de5128dadd9b6
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 829ec359997e22c7f70308e2ebc46c84c02b6592
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33900118"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34981021"
 ---
 # <a name="get-devicemanagementexchangeonpremisespolicy"></a>DeviceManagementExchangeOnPremisesPolicy を取得する
 
@@ -95,6 +95,7 @@ Content-Length: 777
   }
 }
 ```
+
 
 
 

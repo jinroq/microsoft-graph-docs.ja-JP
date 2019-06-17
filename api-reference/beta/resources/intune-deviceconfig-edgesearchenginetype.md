@@ -4,12 +4,12 @@ description: MDM で制御されるデバイス用に定義済みの既定の検
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c2467e010d22b79bda353718af6b5b8110d46969
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 65daffdad3510988becccf8f754a639c8b9815b0
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946715"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996422"
 ---
 # <a name="edgesearchenginetype-enum-type"></a>edgeSearchEngineType 列挙型
 
@@ -24,6 +24,7 @@ MDM で制御されるデバイス用に定義済みの既定の検索エンジ�
 |:---|:---|:---|
 |既定値です。|.0|エッジのファクトリ設定を使用して、ユーザー市場ごとに既定の検索エンジンを割り当てます。|
 |地図|1-d|Bing を既定の検索エンジンとして設定する|
+
 
 
 

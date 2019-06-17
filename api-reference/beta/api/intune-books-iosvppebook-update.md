@@ -4,12 +4,12 @@ description: iosVppEBook オブジェクトのプロパティを更新します�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f5129eba23f8e86af9f7cc41fef666702b5089cc
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 03b58a1c76a42882292383543051f45b08d6fe2c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934265"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34972383"
 ---
 # <a name="update-iosvppebook"></a>iosVppEBook の更新
 
@@ -68,7 +68,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}
 |seller|String|販売元。|
 |totalLicenseCount|Int32|ライセンスの合計数。|
 |usedLicenseCount|Int32|使用されているライセンスの数。|
-|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。|
+|roleScopeTagIds|文字列コレクション|このエンティティインスタンスの範囲タグのリスト。|
 
 
 
@@ -151,6 +151,7 @@ Content-Length: 1026
   ]
 }
 ```
+
 
 
 

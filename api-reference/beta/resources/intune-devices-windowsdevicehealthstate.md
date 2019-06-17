@@ -4,12 +4,12 @@ description: コンピューターエンドポイントの保護の状態
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6086dc05d204e4c9cb23c77f79f98c3a207de35c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0ac91095b27f7151d53ca81c43b3a77e3b8c0d87
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941892"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986593"
 ---
 # <a name="windowsdevicehealthstate-enum-type"></a>windowsDeviceHealthState 列挙型
 
@@ -28,6 +28,7 @@ ms.locfileid: "33941892"
 |manualStepsPending|2/4|コンピューターが保留中の手動の手順状態である|
 |offlineScanPending|8 |コンピューターが保留中のオフラインスキャン状態になっている|
 |critical|16|コンピューターは重大なエラー状態です|
+
 
 
 

@@ -4,12 +4,12 @@ description: MacOS ボリューム購入プログラムのライセンス割り�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 879e19b54705e52b12ea18aeb822a2ee712f3eab
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ce80e1283354e69bae6b0a0a0f3cc34ff67bf4e7
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950299"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989169"
 ---
 # <a name="macosvppappassignedlicense-resource-type"></a>macOsVppAppAssignedLicense リソースの種類
 
@@ -37,7 +37,7 @@ MacOS ボリューム購入プログラムのライセンス割り当てです�
 |userName|String|ユーザー名。|
 |userPrincipalName|String|ユーザー プリンシパル名。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -58,6 +58,7 @@ MacOS ボリューム購入プログラムのライセンス割り当てです�
   "userPrincipalName": "String"
 }
 ```
+
 
 
 

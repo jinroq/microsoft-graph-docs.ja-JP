@@ -4,12 +4,12 @@ description: Windows Hello for Business の設定を使用すると、ユーザ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f98f590f049f1941ddcc0a721d66e27b6c56f373
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a5fcc6d83083d79d71f5e7393dd11d23febd92bd
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940408"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993124"
 ---
 # <a name="deviceenrollmentwindowshelloforbusinessconfiguration-resource-type"></a>deviceEnrollmentWindowsHelloForBusinessConfiguration リソースの種類
 
@@ -53,8 +53,9 @@ Windows Hello for Business の設定を使用すると、ユーザーは、バ�
 |pinPreviousBlockCount|Int32|ユーザーが過去の Pin を使用できないようにする機能を制御します。 0 ~ 50 の範囲で設定する必要があり、ユーザーの現在の PIN がその数に含まれています。 0に設定すると、以前の Pin は保存されません。 Pin をリセットすると、PIN 履歴は保持されません。|
 |pinExpirationInDays|Int32|ユーザーがシステムに PIN を変更することを要求するまでの時間 (日数) を制御します。 0 ~ 730 の範囲で設定する必要があります。 0に設定すると、ユーザーの PIN は期限切れになりません。|
 |enhancedBiometricsState|[購入](../resources/intune-shared-enablement.md)|この機能をサポートするデバイス上の顔認識に対して、スプーフィング対策機能を使用する機能を制御します。 Disabled に設定した場合、スプーフィング対策機能は許可されません。 [未構成] に設定した場合、ユーザーはスプーフィング対策を使用するかどうかを選択できます。 可能な値は、`notConfigured`、`enabled`、`disabled` です。|
+|securityKeyForSignIn|[購入](../resources/intune-shared-enablement.md)|サインインのセキュリティキーでは、リモートでの Windows Hello Sercurity オン/オフの機能が提供されます。構成されていない構成は、clinet で行われる構成を優先します。 可能な値は、`notConfigured`、`enabled`、`disabled` です。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |assignments|[enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) コレクション|[DeviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)から継承されたデバイス構成プロファイルのグループ割り当ての一覧|
@@ -88,9 +89,11 @@ Windows Hello for Business の設定を使用すると、ユーザーは、バ�
   "remotePassportEnabled": true,
   "pinPreviousBlockCount": 1024,
   "pinExpirationInDays": 1024,
-  "enhancedBiometricsState": "String"
+  "enhancedBiometricsState": "String",
+  "securityKeyForSignIn": "String"
 }
 ```
+
 
 
 

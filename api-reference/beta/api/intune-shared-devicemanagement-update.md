@@ -4,16 +4,16 @@ description: deviceManagement オブジェクトのプロパティを更新し�
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 2621df4ec2373c06433df5df4f253971d4280a15
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a77605170d7df943b0d1a96fc2fe864b9d46e4f7
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33898487"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989694"
 ---
 # <a name="update-devicemanagement"></a>deviceManagement の更新
 
-> **重要:** Microsoft Graph の/ベータ版の Api は変更される可能性があります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** Microsoft Graph の/ベータ版の Api は変更される可能性があります。 実稼働アプリケーションでは、これらの API の使用はサポートされていません。
 
 > **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
@@ -38,6 +38,7 @@ ms.locfileid: "33898487"
 | &nbsp;&nbsp; **登録** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **フェンス** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp; &nbsp; **通知** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; **Odj** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **オンボーディング** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **役割ベースのアクセス制御 (RBAC)** | DeviceManagementRBAC.ReadWrite.All |
 | &nbsp; &nbsp; **リモート アクセス** | DeviceManagementConfiguration.Read.All |
@@ -79,7 +80,7 @@ PATCH /deviceManagement
 |maximumDepTokens|Int32|テナントごとに許容される DEP トークンの最大数。|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|アカウント レベルの設定。|
 |**デバイスの管理**|
-|accountMoveCompletionDateTime|DateTimeOffset|_AMP_ が、scaleunits 間でテナントデータを移動した日時です。|
+|accountMoveCompletionDateTime|DateTimeOffset|Scaleunits 間でテナントデータを移動したときの日付 & 時刻。|
 |adminConsent|[adminConsent](../resources/intune-devices-adminconsent.md)|管理者の同意情報。|
 |deviceProtectionOverview|[deviceProtectionOverview](../resources/intune-devices-deviceprotectionoverview.md)|デバイス保護の概要。|
 |managedDeviceCleanupSettings|[managedDeviceCleanupSettings](../resources/intune-devices-manageddevicecleanupsettings.md)|デバイスクリーンアップルール|

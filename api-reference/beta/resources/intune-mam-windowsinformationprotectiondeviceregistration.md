@@ -4,12 +4,12 @@ description: 独自のデバイス (BYOD) Windows デバイスのデバイス登
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 39d6d17109b4de5e1a3025bd66ae6f07ccafe56c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c72a094178bbd34849b8a870566c549f5eea37e1
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940590"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994490"
 ---
 # <a name="windowsinformationprotectiondeviceregistration-resource-type"></a>windowsInformationProtectionDeviceRegistration リソースの種類
 
@@ -40,7 +40,7 @@ ms.locfileid: "33940590"
 |deviceMacAddress|String|デバイスの Mac アドレス。|
 |lastCheckInDateTime|DateTimeOffset|デバイスの最終チェックイン時刻。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -63,6 +63,7 @@ ms.locfileid: "33940590"
   "lastCheckInDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

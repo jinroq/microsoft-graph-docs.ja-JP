@@ -4,12 +4,12 @@ description: アカウント全体における、デバイス コンプライア
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f6f90b1b714b8fc5575cfe9cb4fb56f5075df6fa
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 9aef48828c9a774074ffe7396189dc4aad98e700
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947107"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995498"
 ---
 # <a name="devicecompliancepolicysettingstatesummary-resource-type"></a>deviceCompliancePolicySettingStateSummary リソースの種類
 
@@ -29,7 +29,7 @@ ms.locfileid: "33947107"
 |[deviceCompliancePolicySettingStateSummary の更新](../api/intune-deviceconfig-devicecompliancepolicysettingstatesummary-update.md)|[deviceCompliancePolicySettingStateSummary](../resources/intune-deviceconfig-devicecompliancepolicysettingstatesummary.md)|[deviceCompliancePolicySettingStateSummary](../resources/intune-deviceconfig-devicecompliancepolicysettingstatesummary.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティのキー。|
 |setting|String|設定のクラス名とプロパティ名。|
@@ -43,7 +43,7 @@ ms.locfileid: "33947107"
 |errorDeviceCount|Int32|エラー デバイスの数|
 |conflictDeviceCount|Int32|競合デバイスの数|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |deviceComplianceSettingStates|[deviceComplianceSettingState](../resources/intune-deviceconfig-devicecompliancesettingstate.md) コレクション|まだ文書化されていません|
@@ -72,6 +72,7 @@ ms.locfileid: "33947107"
   "conflictDeviceCount": 1024
 }
 ```
+
 
 
 

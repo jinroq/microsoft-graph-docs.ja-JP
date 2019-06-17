@@ -4,12 +4,12 @@ description: DeviceManagementIntentSettingCategory オブジェクトのプロ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5908628ec581db8c1112c18de29bab0c1a3da12b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c894e61ced9a483986e410e8d587a59f9f7e5b2e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33915924"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34960154"
 ---
 # <a name="update-devicemanagementintentsettingcategory"></a>DeviceManagementIntentSettingCategory の更新
 
@@ -86,6 +86,7 @@ Content-Length: 168
   "displayName": "Display Name value"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 暗号化の対応状態
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0cb014b4b895d59175b244a5fc4398a6b12ebe1e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 451b13ecd64845b407830e807eddfb1278e00a66
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946694"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994980"
 ---
 # <a name="encryptionreadinessstate-enum-type"></a>encryptionReadinessState 列挙型
 
@@ -24,6 +24,7 @@ ms.locfileid: "33946694"
 |:---|:---|:---|
 |notReady|.0|使用不可能|
 |しだい|1-d|準備完了|
+
 
 
 

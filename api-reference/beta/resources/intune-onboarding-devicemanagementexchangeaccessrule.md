@@ -4,12 +4,12 @@ description: Exchange のデバイスアクセスルール。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: af40f1b3b0d5602c5a67a524dc7083d95681b988
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e6deeba14da683be36284f469604be70db48ea07
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940401"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993096"
 ---
 # <a name="devicemanagementexchangeaccessrule-resource-type"></a>deviceManagementExchangeAccessRule リソースの種類
 
@@ -25,7 +25,7 @@ Exchange のデバイスアクセスルール。
 |deviceClass|[deviceManagementExchangeDeviceClass](../resources/intune-onboarding-devicemanagementexchangedeviceclass.md)|このルールの影響を受けるデバイスクラス。|
 |accessLevel|[deviceManagementExchangeAccessLevel](../resources/intune-onboarding-devicemanagementexchangeaccesslevel.md)|このルールによって付与される Exchange のアクセスレベル。 可能な値は、`none`、`allow`、`block`、`quarantine` です。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -46,6 +46,7 @@ Exchange のデバイスアクセスルール。
   "accessLevel": "String"
 }
 ```
+
 
 
 

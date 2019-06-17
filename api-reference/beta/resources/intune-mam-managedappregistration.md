@@ -4,12 +4,12 @@ description: ManagedAppEntity は、アプリ管理ワークフロー下にあ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b5532b4feaeaedd631c6e561f9e68722cba47a14
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c618aacd448445fead1a0e55890ac7cb07dd7327
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940702"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994714"
 ---
 # <a name="managedappregistration-resource-type"></a>managedAppRegistration リソース タイプ
 
@@ -28,7 +28,7 @@ ManagedAppRegistration リソースは、組織のメンバーに使用される
 |[getUserIdsWithFlaggedAppRegistration function](../api/intune-mam-managedappregistration-getuseridswithflaggedappregistration.md)|String コレクション|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|作成日時|
 |lastSyncDateTime|DateTimeOffset|アプリが管理サービスと最後に同期した日付と時刻。|
@@ -48,7 +48,7 @@ ManagedAppRegistration リソースは、組織のメンバーに使用される
 |id|文字列|エンティティのキー。|
 |version|文字列型 (String)|エンティティのバージョン。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |appliedPolicies|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md) コレクション|登録済みのアプリが管理サービスと最後に同期したときに、既に適用されていた 0 個以上のポリシーです。|
@@ -89,6 +89,7 @@ ManagedAppRegistration リソースは、組織のメンバーに使用される
   "version": "String"
 }
 ```
+
 
 
 

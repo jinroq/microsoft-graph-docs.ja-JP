@@ -4,12 +4,12 @@ description: NetworkIPv4ConfigurationManagementCondition オブジェクトの�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b19f29064e0fe5bd673c0ffbc0677959b9be844c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 702e3bfba5556b7292f3eba32399552196ad745a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33905274"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34984381"
 ---
 # <a name="update-networkipv4configurationmanagementcondition"></a>NetworkIPv4ConfigurationManagementCondition の更新
 
@@ -62,8 +62,8 @@ PATCH /deviceManagement/managementConditions/{managementConditionId}/managementC
 |ipV4Prefix|String|接続先の IPv4 サブネット。 例: 10.0.0.0/8|
 |ipV4Gateway|String|IPv4 ゲートウェイアドレス。 例: 10.0.0.0|
 |ipV4DHCPServer|String|アダプターの DHCP サーバーの IPv4 アドレス。|
-|ipV4DNSServerList|String collection|アダプターに対して構成されている IPv4 DNS サーバー。|
-|dnsSuffixList|String collection|現在のネットワークの有効な DNS サフィックス。 例: seattle.contoso.com|
+|ipV4DNSServerList|文字列コレクション|アダプターに対して構成されている IPv4 DNS サーバー。|
+|dnsSuffixList|文字列コレクション|現在のネットワークの有効な DNS サフィックス。 例: seattle.contoso.com|
 
 
 
@@ -130,6 +130,7 @@ Content-Length: 697
   ]
 }
 ```
+
 
 
 

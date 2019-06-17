@@ -4,18 +4,18 @@ description: テナント組織、そのデバイス、アプリ、アクセス�
 author: rolyon
 localization_priority: Priority
 ms.prod: intune
-ms.openlocfilehash: 883fce914176b2e08d49e4de414cc7c09776714a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 850f1866c83e755d4075a429f16a453409c2bd9a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941192"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990219"
 ---
 # <a name="working-with-intune-in-microsoft-graph"></a>Microsoft Graph での Intune の操作  
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでは、これらの API の使用はサポートされていません。
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://www.microsoft.com/ja-JP/cloud-platform/microsoft-intune-pricing)を持っている必要があります。
+> **注:** Intune 用 Microsoft Graph API には、テナントの[有効な Intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 Intune 用 Microsoft Graph API を使用すると、テナントの Intune の情報へのプログラムによるアクセスが可能となります。API は **Azure Portal** で使用できるものと同じ Intune 操作を実行します。  
 

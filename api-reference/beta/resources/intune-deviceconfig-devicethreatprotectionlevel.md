@@ -4,12 +4,12 @@ description: デバイス脅威保護 API のデバイスの脅威保護レベ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c60b9f2775fdad7bc9f1f2fa3ae18992fc2e4757
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 895e8bd056c688ed26ba5fe57c688c66ab6ac846
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946904"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989960"
 ---
 # <a name="devicethreatprotectionlevel-enum-type"></a>deviceThreatProtectionLevel 列挙型
 
@@ -28,6 +28,7 @@ ms.locfileid: "33946904"
 |medium|1/3|デバイスの脅威保護レベルの要件: 中。 Medium は、デバイスまたはデバイスデータに重大なリスクをもたらす脅威の重要度を表します。|
 |高額|2/4|デバイスの脅威保護レベルの要件: High。 High は、デバイスまたはデバイスデータに重大なリスクをもたらす脅威の重要度を表します。|
 |notSet|10 |デバイスの脅威保護レベルの要件: 設定されていません。 Not set は、デバイスが脅威保護レベルを満たすための要件がないことを表します。|
+
 
 
 

@@ -4,12 +4,12 @@ description: GroupPolicyPresentationValueMultiText オブジェクトのプロ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7828644fb9960f81e2f2f9ba23d21aa53cc09ff6
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 1470178679a9eac305367614f8d773b7105b4f5c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33904140"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34985809"
 ---
 # <a name="update-grouppolicypresentationvaluemultitext"></a>GroupPolicyPresentationValueMultiText の更新
 
@@ -53,7 +53,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された日付と時刻。 [Grouppolicypresentationvalue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)から継承します。|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された日付と時刻。 [Grouppolicypresentationvalue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)から継承します。|
 |id|String|エンティティのキー。 [Grouppolicypresentationvalue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)から継承します。|
-|values|String collection|関連付けられたプレゼンテーションに対して空ではない文字列のコレクション。|
+|values|文字列コレクション|関連付けられたプレゼンテーションに対して空ではない文字列のコレクション。|
 
 
 
@@ -94,6 +94,7 @@ Content-Length: 292
   ]
 }
 ```
+
 
 
 

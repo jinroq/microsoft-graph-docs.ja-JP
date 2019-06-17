@@ -4,12 +4,12 @@ description: Windows management app エンティティ。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4525767a81b0e69ed1c99ae4b1a20051304cf1f2
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e3db66a737e86ad66e66be8b9bde88e6024f8233
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941913"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983992"
 ---
 # <a name="windowsmanagementapp-resource-type"></a>windowsManagementApp リソースの種類
 
@@ -26,12 +26,12 @@ Windows management app エンティティ。
 |[WindowsManagementApp の更新](../api/intune-devices-windowsmanagementapp-update.md)|[windowsManagementApp](../resources/intune-devices-windowsmanagementapp.md)|[Windowsmanagementapp](../resources/intune-devices-windowsmanagementapp.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|Windows management アプリの一意識別子|
 |プロパティ availableversion|String|Windows management アプリの利用可能なバージョン。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |healthSummary|[windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md)|Windows management アプリの正常性の概要。|
@@ -52,6 +52,7 @@ Windows management app エンティティ。
   "availableVersion": "String"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: MDM モバイル アプリ構成のデバイス状態の要約に�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8ed6550cf071d04b72f1b5d2ba9ad97233d7289b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d59a6a04f37e0d8e6703df77e847dbfcbbd7cc9e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950131"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989560"
 ---
 # <a name="manageddevicemobileappconfigurationdevicesummary-resource-type"></a>managedDeviceMobileAppConfigurationDeviceSummary リソースの種類
 
@@ -39,7 +39,7 @@ MDM モバイル アプリ構成のデバイス状態の要約に関する、プ
 |lastUpdateDateTime|DateTimeOffset|最終更新時刻|
 |configurationVersion|Int32|対象の概要に関するポリシーのバージョン|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -65,6 +65,7 @@ MDM モバイル アプリ構成のデバイス状態の要約に関する、プ
   "configurationVersion": 1024
 }
 ```
+
 
 
 

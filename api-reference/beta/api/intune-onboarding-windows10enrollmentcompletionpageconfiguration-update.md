@@ -4,12 +4,12 @@ description: Windows10EnrollmentCompletionPageConfiguration オブジェクト�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2e6accf7b452a94a54a1006e3b11b9d9c6cbdec6
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e7e46fd0224f0dcf63ebcecb2bab24377446443d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899726"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34988021"
 ---
 # <a name="update-windows10enrollmentcompletionpageconfiguration"></a>Windows10EnrollmentCompletionPageConfiguration の更新
 
@@ -64,7 +64,7 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 |customErrorMessage|String|インストールエラーが発生したときに表示するカスタムエラーメッセージを設定する|
 |installProgressTimeoutInMinutes|Int32|インストールの進行状況のタイムアウトを分単位で設定する|
 |allowDeviceUseOnInstallFailure|Boolean|インストールエラー時にユーザーがデバイスを引き続き使用できるようにする|
-|selectedMobileAppIds|String collection|インストールの状態を追跡するために選択されたアプリケーション|
+|selectedMobileAppIds|文字列コレクション|インストールの状態を追跡するために選択されたアプリケーション|
 
 
 
@@ -127,6 +127,7 @@ Content-Length: 755
   ]
 }
 ```
+
 
 
 

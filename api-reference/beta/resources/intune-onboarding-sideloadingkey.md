@@ -4,12 +4,12 @@ description: SideLoadingKey エンティティは、テナントの基幹業務�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c09cdc1bc620c6f6882abeeae29c7e00613254b1
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c4da3030c9c9a4a858e7ebcac0f7435a247672d1
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940142"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34958600"
 ---
 # <a name="sideloadingkey-resource-type"></a>sideLoadingKey リソースの種類
 
@@ -38,7 +38,7 @@ SideLoadingKey エンティティは、テナントの基幹業務アプリを i
 |totalActivation|Int32|ITPro 管理者に表示されるサイドローディングキーの合計です。|
 |lastUpdatedDateTime|String|サイドローディングキー最終更新日が ITPro の管理者に表示されます。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -60,6 +60,7 @@ SideLoadingKey エンティティは、テナントの基幹業務アプリを i
   "lastUpdatedDateTime": "String"
 }
 ```
+
 
 
 

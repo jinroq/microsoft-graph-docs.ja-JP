@@ -4,12 +4,12 @@ description: 診断状態を表します。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4a896a17a2a79db6eea2ac2ece0973175506bac4
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 907f9940b7cbb4a35f69e0792092e14c99aebdae
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940765"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996296"
 ---
 # <a name="managedappdiagnosticstatus-resource-type"></a>managedAppDiagnosticStatus リソースの種類
 
@@ -26,7 +26,7 @@ ms.locfileid: "33940765"
 |state|String|操作の状態|
 |mitigationInstruction|文字列型 (String)|検証の失敗を減らすための方法に関する説明|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -44,6 +44,7 @@ ms.locfileid: "33940765"
   "mitigationInstruction": "String"
 }
 ```
+
 
 
 

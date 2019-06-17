@@ -4,12 +4,12 @@ description: サポートされているすべてのファイルシステム検�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 460bd6d2d7c785ce4985febf20cf94500726001b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f13238a5369b1a727c42d1b6285c4bc6d6d58f43
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949627"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987384"
 ---
 # <a name="win32lobappfilesystemdetectiontype-enum-type"></a>win32LobAppFileSystemDetectionType 列挙型
 
@@ -29,6 +29,7 @@ ms.locfileid: "33949627"
 |バージョン|2/4|バージョン値の種類。|
 |sizeInMB|5|サイズ検出の種類。|
 |doesNotExist|シックス|指定したファイルまたはフォルダーが存在しません。|
+
 
 
 

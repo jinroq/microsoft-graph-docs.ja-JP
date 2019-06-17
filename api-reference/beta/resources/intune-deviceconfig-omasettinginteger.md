@@ -4,12 +4,12 @@ description: OMA 設定の整数の定義。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ef33fd372d797822a334a4b218df44572648b166
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6bdad3d10587374d913897a8052b1a8b22f74d76
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951076"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34980398"
 ---
 # <a name="omasettinginteger-resource-type"></a>omaSettingInteger リソースの種類
 
@@ -29,8 +29,9 @@ OMA 設定の整数の定義。
 |description|String|説明。 [omaSetting](../resources/intune-deviceconfig-omasetting.md) からの継承|
 |omaUri|文字列型 (String)|OMA。 [omaSetting](../resources/intune-deviceconfig-omasetting.md) からの継承|
 |値|Int32|値。|
+|isReadOnly|Boolean|True に設定すると、OMA-URI で指定された CSP (構成サービスプロバイダー) は、を設定するのではなく、get を実行します。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -46,9 +47,11 @@ OMA 設定の整数の定義。
   "displayName": "String",
   "description": "String",
   "omaUri": "String",
-  "value": 1024
+  "value": 1024,
+  "isReadOnly": true
 }
 ```
+
 
 
 

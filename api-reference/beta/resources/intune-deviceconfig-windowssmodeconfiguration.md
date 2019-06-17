@@ -4,12 +4,12 @@ description: S モードのロック解除を構成するために使用可能�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 467879cf7992a60203164d5db6f7e657a77f87d4
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: db32cab4fa405d9783415710bb5412e08c56239b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943817"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996457"
 ---
 # <a name="windowssmodeconfiguration-enum-type"></a>windowsSModeConfiguration 列挙型
 
@@ -25,6 +25,7 @@ S モードのロック解除を構成するために使用可能なオプショ
 |noRestriction|.0|このオプションを選択すると、ロックを解除するためのすべての制限が削除されます-既定値|
 |拒否|1-d|このオプションは、ユーザーが S モードからデバイスのロックを解除するのをブロックします。|
 |外す|pbm-2|このオプションでは、デバイスを S モードからロック解除します。|
+
 
 
 

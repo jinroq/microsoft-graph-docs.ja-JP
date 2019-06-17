@@ -5,12 +5,12 @@ description: managedDevice オブジェクトのプロパティを更新しま�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0dd5c42bd6dba6208ea06c2f85efce1e7972d6eb
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c154be3a1691f125a8d2c8f68b28e4c246bb4b3c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33909590"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34958201"
 ---
 # <a name="update-manageddevice"></a>managedDevice の更新
 
@@ -120,7 +120,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |managementCertificateExpirationDate|DateTimeOffset|デバイス管理証明書の有効期限を報告する|
 |iccid|String|Ic カード識別子。 SIM カードの一意の識別番号です。|
 |udid|String|IOS および macOS デバイスの一意のデバイス識別子。|
-|roleScopeTagIds|String collection|このデバイスインスタンスの範囲タグ Id のリスト。|
+|roleScopeTagIds|文字列コレクション|このデバイスインスタンスの範囲タグ Id のリスト。|
 |windowsActiveMalwareCount 再計算|Int32|この windows デバイスのアクティブなマルウェアの数|
 |windowsRemediatedMalwareCount|Int32|この windows デバイスの修復済みマルウェアの数|
 |notes|String|IT 管理者によって作成されたデバイスのメモ|
@@ -485,6 +485,7 @@ Content-Length: 7335
   }
 }
 ```
+
 
 
 

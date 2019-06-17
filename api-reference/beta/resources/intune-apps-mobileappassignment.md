@@ -4,12 +4,12 @@ description: モバイル アプリのグループ割り当て用に使用され
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b16f49e0f9d62b0e865f015446f85b9021d59bce
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3355195f396fd55f58e45a39ac9a0ba46f2d8998
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950005"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986096"
 ---
 # <a name="mobileappassignment-resource-type"></a>mobileAppAssignment リソース タイプ
 
@@ -36,7 +36,7 @@ ms.locfileid: "33950005"
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|管理者によって定義された、ターゲット グループの割り当て。|
 |settings|[mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)|管理者によって定義された、ターゲットの割り当ての設定。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -60,6 +60,7 @@ ms.locfileid: "33950005"
   }
 }
 ```
+
 
 
 

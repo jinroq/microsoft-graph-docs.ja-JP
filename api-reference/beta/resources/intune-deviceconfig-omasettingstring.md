@@ -4,12 +4,12 @@ description: OMA 設定の文字列の定義です。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 53840e360446975dcbe6fda170ea26892fce3983
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: dc59c22933b888227678db70d9a48d601d699a8e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950950"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990247"
 ---
 # <a name="omasettingstring-resource-type"></a>omaSettingString リソースの種類
 
@@ -30,7 +30,7 @@ OMA 設定の文字列の定義です。
 |omaUri|文字列型 (String)|OMA。 [omaSetting](../resources/intune-deviceconfig-omasetting.md) からの継承|
 |value|文字列|値。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -49,6 +49,7 @@ OMA 設定の文字列の定義です。
   "value": "String"
 }
 ```
+
 
 
 

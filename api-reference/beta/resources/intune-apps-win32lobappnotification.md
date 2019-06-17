@@ -4,12 +4,12 @@ description: 通知状態の値を格納します。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: be04f8f3b2a830c3acde06d591cfd6f80bf18ee2
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b2a4c17ce7bce7910c68646d5db8a879ec8774c1
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949550"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987370"
 ---
 # <a name="win32lobappnotification-enum-type"></a>win32LobAppNotification 列挙型
 
@@ -25,6 +25,7 @@ ms.locfileid: "33949550"
 |showAll|.0|すべての通知を表示します。|
 |showReboot|1-d|再起動通知のみを表示し、その他の通知を抑制します。|
 |hideAll|pbm-2|すべての通知を非表示にします。|
+
 
 
 

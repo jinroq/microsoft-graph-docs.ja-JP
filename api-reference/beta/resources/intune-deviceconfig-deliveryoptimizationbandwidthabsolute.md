@@ -4,12 +4,12 @@ description: 帯域幅制限 (キロバイト/秒)。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: addb48091e3682019a508b7f19832b5acccd6aa7
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 626c46c035ec4a7af44c06a31f7269cde96a2b8b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947289"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979719"
 ---
 # <a name="deliveryoptimizationbandwidthabsolute-resource-type"></a>deliveryOptimizationBandwidthAbsolute リソースの種類
 
@@ -30,7 +30,7 @@ ms.locfileid: "33947289"
 |maximumUploadBandwidthInKilobytesPerSecond|Int64|配信の最適化 (0-4000000) を使用して、デバイスがすべての同時アップロードアクティビティで使用する最大アップロード帯域幅 (キロバイト/秒) を指定します。 有効な値は 0 ~ 400万
 既定値は0で、無制限に可能な帯域幅を許可します (アップロード帯域幅の使用を最小限にするために最適化されています)。 有効な値は 0 ~ 400万|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -47,6 +47,7 @@ ms.locfileid: "33947289"
   "maximumUploadBandwidthInKilobytesPerSecond": 1024
 }
 ```
+
 
 
 

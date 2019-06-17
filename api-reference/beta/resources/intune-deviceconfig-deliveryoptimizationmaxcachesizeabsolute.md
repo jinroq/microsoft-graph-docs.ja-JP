@@ -4,12 +4,12 @@ description: 配信の最適化最大キャッシュサイズ絶対種類。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 285c1830065d18669bd6d3d02d615400af27e231
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: bfeb2e4279e9858f9fd8f923657c8e32bf129396
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947191"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979586"
 ---
 # <a name="deliveryoptimizationmaxcachesizeabsolute-resource-type"></a>deliveryOptimizationMaxCacheSizeAbsolute リソースの種類
 
@@ -28,7 +28,7 @@ ms.locfileid: "33947191"
 |maximumCacheSizeInGigabytes|Int64|配信最適化キャッシュの最大サイズを GB 単位で指定します。 有効な値は 0 ~ 4294967295
 値 0 (ゼロ) は、"無制限" キャッシュを意味します。 配信の最適化では、デバイスのディスク領域が不足しているときにキャッシュがクリアされます。 有効な値は 0 ~ 4294967295|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -44,6 +44,7 @@ ms.locfileid: "33947191"
   "maximumCacheSizeInGigabytes": 1024
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: ユーザー権限の設定に使用されるローカルユーザ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: acccbb68ecc0b62d27ac20e3eba9e637aac3e11c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e1cd7cb3f197e381da0b334ed849d881d071979e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946939"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990002"
 ---
 # <a name="devicemanagementuserrightslocaluserorgroup-resource-type"></a>deviceManagementUserRightsLocalUserOrGroup リソースの種類
 
@@ -26,7 +26,7 @@ ms.locfileid: "33946939"
 |description|String|このローカルユーザーまたはグループの管理者の説明。|
 |securityIdentifier|String|このローカルユーザーまたはグループのセキュリティ識別子 (たとえば * S-1-5-32-544)。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -44,6 +44,7 @@ ms.locfileid: "33946939"
   "securityIdentifier": "String"
 }
 ```
+
 
 
 

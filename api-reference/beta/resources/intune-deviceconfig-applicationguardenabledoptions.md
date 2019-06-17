@@ -4,12 +4,12 @@ description: ApplicationGuardEnabledOptions に指定できる値
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e40dca252dd9b95afa781aac7ee888afd62ad4aa
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: acf0d6ac7b5eb92b746a4bbe02258f99bc9ef9b6
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947681"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987622"
 ---
 # <a name="applicationguardenabledoptions-enum-type"></a>applicationGuardEnabledOptions 列挙型
 
@@ -26,6 +26,7 @@ ApplicationGuardEnabledOptions に指定できる値
 |enabledForEdge|1-d|エッジに対して有効|
 |enabledForOffice|pbm-2|Office に対して有効|
 |enabledForEdgeAndOffice|1/3|エッジと Office に対して有効|
+
 
 
 

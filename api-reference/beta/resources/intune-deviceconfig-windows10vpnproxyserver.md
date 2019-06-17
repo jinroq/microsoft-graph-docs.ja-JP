@@ -4,12 +4,12 @@ description: VPN プロキシサーバー。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 56b9177c19ec089a3c93bd388084ae20d7865ace
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 72ac0afd77012cfaff67715408a8daa18e71946f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944209"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986824"
 ---
 # <a name="windows10vpnproxyserver-resource-type"></a>windows10VpnProxyServer リソースの種類
 
@@ -30,7 +30,7 @@ VPN プロキシサーバー。
 |ポート|Int32|ポート. [VpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)から継承された有効な値 0 ~ 65535|
 |bypassProxyServerForLocalAddress|Boolean|ローカルアドレスにはプロキシサーバーを使用しないでください。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -49,6 +49,7 @@ VPN プロキシサーバー。
   "bypassProxyServerForLocalAddress": true
 }
 ```
+
 
 
 

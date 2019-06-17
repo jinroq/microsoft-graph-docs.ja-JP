@@ -4,12 +4,12 @@ description: すべてのデバイス アプリの管理機能のコンテナー
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 8b047c470ee60ab99275675626a3917911f2a715
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 9ebb14421204c364e04a7151f7898d253798f440
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939778"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996128"
 ---
 # <a name="deviceappmanagement-resource-type"></a>deviceAppManagement リソースの種類
 
@@ -28,7 +28,7 @@ ms.locfileid: "33939778"
 |[syncMicrosoftStoreForBusinessApps アクション](../api/intune-shared-deviceappmanagement-syncmicrosoftstoreforbusinessapps.md)|なし|ビジネス向け Microsoft Store と Intune アカウントを同期します|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティのキー。|
 |**オンボーディング**|
@@ -38,7 +38,7 @@ ms.locfileid: "33939778"
 |microsoftStoreForBusinessLastSuccessfulSyncDateTime|DateTimeOffset|Microsoft Store for Business のアプリがアカウントに正常に同期された最終日時。|
 |microsoftStoreForBusinessPortalSelection|[microsoftStoreForBusinessPortalSelectionOptions](../resources/intune-onboarding-microsoftstoreforbusinessportalselectionoptions.md)|エンドユーザーポータルの情報は、Microsoft Store for Business から Intune ポータルサイトにアプリケーションを同期するために使用されます。 [会社ポータルのみ]、[ \[ポータルサイトとプライベートストア]、[プライベートストアのみ] から選択するには、3\]つのオプションがあります。 可能な値は、`none`、`companyPortal`、`privateStore` です。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |**アプリ**|
@@ -66,6 +66,8 @@ ms.locfileid: "33939778"
 |**オンボーディング**|
 |sideLoadingKeys|[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)コレクション|Windows 8 および8.1 アプリのインストールに必要なサイドローディングキー。|
 |vppTokens|[vppToken](../resources/intune-onboarding-vpptoken.md) コレクション|この組織への Vpp トークンのリストです。|
+|**パートナー統合**|
+|deviceAppManagementTasks|[Deviceappmanagementtask](../resources/intune-partnerintegration-deviceappmanagementtask.md)コレクション|デバイスアプリの管理タスク。|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。  これは単なる例であることに注意してください。実際のクエリに対するクエリ応答には、コンテキストに適したプロパティが含まれています。  

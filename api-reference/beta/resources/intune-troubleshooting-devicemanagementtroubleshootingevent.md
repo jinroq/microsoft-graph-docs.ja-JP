@@ -4,12 +4,12 @@ description: 一般エラーを表すイベント。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ad7e1f8f02af829613f60ecd3f9b61b1c8bdf403
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d3901da50b524013f8126fe8f163a519b05211f0
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939736"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34988182"
 ---
 # <a name="devicemanagementtroubleshootingevent-resource-type"></a>deviceManagementTroubleshootingEvent リソースの種類
 
@@ -38,7 +38,7 @@ ms.locfileid: "33939736"
 |eventName|String|トラブルシューティングイベントに対応するイベント名。 省略可能なフィールドです。|
 |additionalInformation|[keyValuePair](../resources/intune-shared-keyvaluepair.md) コレクション|トラブルシューティングイベントに関する追加情報を提供する文字列キーと文字列値のペアのセット|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -79,6 +79,7 @@ ms.locfileid: "33939736"
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 新しい deviceManagementIntentDeviceState オブジェクトを�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a997deb898ae2f82ca5eb7f44cf11251ce127e42
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f70b2f77808fe4c2b4f15b54198d77d39a484486
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33916981"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34960294"
 ---
 # <a name="create-devicemanagementintentdevicestate"></a>DeviceManagementIntentDeviceState の作成
 
@@ -101,6 +101,7 @@ Content-Length: 391
   "deviceId": "Device Id value"
 }
 ```
+
 
 
 

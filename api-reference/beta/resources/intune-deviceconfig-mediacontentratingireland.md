@@ -4,12 +4,12 @@ description: まだ文書化されていません
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2f6fee57eb4432781d7600f34b5ac444c498c3d2
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 97275ce5eac5fde8e2c2b3b440960e8d4d003c02
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944881"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34980412"
 ---
 # <a name="mediacontentratingireland-resource-type"></a>mediaContentRatingIreland リソースの種類
 
@@ -25,7 +25,7 @@ ms.locfileid: "33944881"
 |movieRating|[ratingIrelandMoviesType](../resources/intune-deviceconfig-ratingirelandmoviestype.md)|アイルランド向けに選択されている映画のレーティング。 可能な値は、`allAllowed`、`allBlocked`、`general`、`parentalGuidance`、`agesAbove12`、`agesAbove15`、`agesAbove16`、`adults` です。|
 |tvRating|[ratingIrelandTelevisionType](../resources/intune-deviceconfig-ratingirelandtelevisiontype.md)|アイルランド向けに選択されているテレビのレーティング。 可能な値は、`allAllowed`、`allBlocked`、`general`、`children`、`youngAdults`、`parentalSupervision`、`mature` です。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -42,6 +42,7 @@ ms.locfileid: "33944881"
   "tvRating": "String"
 }
 ```
+
 
 
 
