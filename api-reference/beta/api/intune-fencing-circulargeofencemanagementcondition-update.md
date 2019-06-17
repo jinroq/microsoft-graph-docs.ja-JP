@@ -4,12 +4,12 @@ description: CircularGeofenceManagementCondition オブジェクトのプロパ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c0b8a6d870592269ee1e79da783f6a5c4b9774cf
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2d175c4ada491c7162dae7edc4af461c56f6e69e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33905477"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34964781"
 ---
 # <a name="update-circulargeofencemanagementcondition"></a>CircularGeofenceManagementCondition の更新
 
@@ -58,7 +58,7 @@ PATCH /deviceManagement/managementConditions/{managementConditionId}/managementC
 |createdDateTime|DateTimeOffset|管理条件が作成された時刻。 サービス側を生成しました。 [Managementcondition](../resources/intune-fencing-managementcondition.md)から継承します|
 |modifiedDateTime|DateTimeOffset|管理条件が最後に変更された時刻。 サービス側を更新しました。 [Managementcondition](../resources/intune-fencing-managementcondition.md)から継承します|
 |eTag|String|管理条件の ETag。 サービス側を更新しました。 [Managementcondition](../resources/intune-fencing-managementcondition.md)から継承します|
-|アプリケーションのプラットフォーム|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)コレクション|この管理条件の適用可能なプラットフォーム。 [Managementcondition](../resources/intune-fencing-managementcondition.md)から継承されます。 可能な値は`android`、 `androidForWork`、 `iOS` `macOS` `windowsPhone81` `windows81AndLater` `windows10AndLater`、、、、、、`unknown`、です。 `androidWorkProfile`|
+|アプリケーションのプラットフォーム|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)コレクション|この管理条件の適用可能なプラットフォーム。 [Managementcondition](../resources/intune-fencing-managementcondition.md)から継承されます。 可能な値は、`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`unknown` です。|
 |latitude|2 行分|緯度 (度は-90 と + 90 を含む)。|
 |longitude|Double|角度 (単位は-180 と + 180 を含む)。|
 |radiusInMeters|1 行|半径 (メートル単位)。|
@@ -116,6 +116,7 @@ Content-Length: 612
   "radiusInMeters": "<Unknown Primitive Type Edm.Single>"
 }
 ```
+
 
 
 

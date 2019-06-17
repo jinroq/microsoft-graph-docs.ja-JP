@@ -4,12 +4,12 @@ description: Ioseアヒル/Devicを削除します。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 53cb3f564f8ef681b0a686744b9929141f20ea6e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b1641b08fdefe4b642e27ad9d5a6b6c252205f70
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33923560"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34966895"
 ---
 # <a name="delete-ioseducationdeviceconfiguration"></a>Ioseアヒル/Devic/デバイスの削除
 
@@ -17,7 +17,7 @@ ms.locfileid: "33923560"
 
 > **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[Ioseアヒル](../resources/intune-deviceconfig-ioseducationdeviceconfiguration.md)/Devicを削除します。
+[Ioseアヒル](../resources/intune-deviceconfig-ioseducationdeviceconfiguration.md)/devicを削除します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

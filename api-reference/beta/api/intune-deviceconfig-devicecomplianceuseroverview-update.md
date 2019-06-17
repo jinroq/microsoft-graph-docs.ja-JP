@@ -4,12 +4,12 @@ description: deviceComplianceUserOverview オブジェクトのプロパティ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 379e4f534af1857c909c5e06f73f6572d143997a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c0cb7d167475a33f1de7e83e2cee36c8c6af7d5a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33927588"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34968106"
 ---
 # <a name="update-devicecomplianceuseroverview"></a>deviceComplianceUserOverview の更新
 
@@ -107,6 +107,7 @@ Content-Length: 352
   "configurationVersion": 4
 }
 ```
+
 
 
 

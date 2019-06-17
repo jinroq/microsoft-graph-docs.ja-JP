@@ -4,12 +4,12 @@ description: 単一のグループポリシープレゼンテーションの値�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fbfdd15ab81e6da03a95f2cec9073e06f70c799b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0403695c738cff5c709102859196deb510867246
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941038"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34964774"
 ---
 # <a name="grouppolicypresentationvalue-resource-type"></a>groupPolicyPresentationValue リソースの種類
 
@@ -29,13 +29,13 @@ ms.locfileid: "33941038"
 |[GroupPolicyPresentationValue の更新](../api/intune-grouppolicy-grouppolicypresentationvalue-update.md)|[groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|[Grouppolicypresentationvalue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された日付と時刻。|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された日付と時刻。|
 |id|String|エンティティのキー。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |definitionValue|[groupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)|プレゼンテーション値に関連付けられているグループポリシー定義の値。|
@@ -57,6 +57,7 @@ ms.locfileid: "33941038"
   "id": "String (identifier)"
 }
 ```
+
 
 
 

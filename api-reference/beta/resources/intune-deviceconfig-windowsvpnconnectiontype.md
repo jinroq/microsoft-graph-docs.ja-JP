@@ -4,12 +4,12 @@ description: Windows VPN 接続の種類。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3709c516103f43a8bd01ac2728a5cfb5bb15b82a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ff5912fdcef6777c96379bf01f48fdeb3e6ab70a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944104"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34975575"
 ---
 # <a name="windowsvpnconnectiontype-enum-type"></a>windowsVpnConnectionType 列挙型
 
@@ -26,6 +26,7 @@ Windows VPN 接続の種類。
 |f5EdgeClient|1-d|F5 キーを押したエッジクライアント。|
 |dellSonicWallMobileConnect|pbm-2|Dell SonicWALL モバイル接続。|
 |checkPointCapsuleVpn|1/3|[カプセル接続] VPN をチェックします。|
+
 
 
 

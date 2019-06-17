@@ -4,12 +4,12 @@ description: AndroidForWorkMobileAppConfiguration を削除します。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fd05fb76b751f99bc67842a3d9001b9fe973429d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 38be194fc0f4ffa786bf5c1b4879ed97fe1f55eb
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33937436"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965355"
 ---
 # <a name="delete-androidforworkmobileappconfiguration"></a>AndroidForWorkMobileAppConfiguration の削除
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurati
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

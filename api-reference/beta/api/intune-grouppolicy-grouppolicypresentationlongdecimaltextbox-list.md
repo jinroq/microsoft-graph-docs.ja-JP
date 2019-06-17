@@ -4,12 +4,12 @@ description: GroupPolicyPresentationLongDecimalTextBox オブジェクトのプ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 03d40e012f1a89a50bae80dda5b02952b9cb4cf7
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 7e1e9791e42af0e1b848da496154f16e3acf2b0b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33904777"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34964613"
 ---
 # <a name="list-grouppolicypresentationlongdecimaltextboxes"></a>リスト groupPolicyPresentationLongDecimalTextBoxes
 
@@ -81,6 +81,7 @@ Content-Length: 411
   ]
 }
 ```
+
 
 
 

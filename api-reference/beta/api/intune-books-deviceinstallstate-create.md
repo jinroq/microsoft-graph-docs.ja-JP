@@ -4,12 +4,12 @@ description: 新しい deviceInstallState オブジェクトを作成します�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 38798602751655cbf4da997c63c3043af1d2d1bc
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 8c27f63b6a8753335c0c95d496000f5ef23a6d32
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934377"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34972534"
 ---
 # <a name="create-deviceinstallstate"></a>deviceInstallState の作成
 
@@ -108,6 +108,7 @@ Content-Length: 423
   "userName": "User Name value"
 }
 ```
+
 
 
 

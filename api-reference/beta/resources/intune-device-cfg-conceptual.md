@@ -4,18 +4,18 @@ description: テナント組織のデバイスの構成を定義する Intune �
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: a341de5bc6753102e3ce7a6c6c15114296a92248
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 8c13ed037ffb07e8a3e357f3ab5633dc984e4803
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949165"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965858"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Microsoft Intune でのデバイス構成
 
 > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでは、これらの API の使用はサポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing)を持っている必要があります。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 Microsoft Intune のデバイス構成のワークロードを使用して、管理するすべてのデバイスの設定と機能を管理します。
 
@@ -90,6 +90,7 @@ Microsoft Intune のデバイス構成のワークロードを使用して、管
 - [Android 仕事用プロファイル VPN 構成](intune-deviceconfig-androidworkprofilevpnconfiguration.md)
 - [Android 仕事用プロファイル VPN 接続タイプ](intune-deviceconfig-androidworkprofilevpnconnectiontype.md)
 - [Android 仕事用プロファイル Wi-Fi 構成](intune-deviceconfig-androidworkprofilewificonfiguration.md)
+- [アプリのインストールコントロールの種類](intune-deviceconfig-appinstallcontroltype.md)
 - [アプリ リストの項目](intune-deviceconfig-applistitem.md)
 - [アプリ リストの種類](intune-deviceconfig-applisttype.md)
 - [App locker アプリケーションのコントロールの種類](intune-deviceconfig-applockerapplicationcontroltype.md)
@@ -115,6 +116,7 @@ Microsoft Intune のデバイス構成のワークロードを使用して、管
 - [証明書失効状態](intune-deviceconfig-certificaterevocationstatus.md)
 - [証明書ストア](intune-deviceconfig-certificatestore.md)
 - [証明書の有効期間のスケール](intune-deviceconfig-certificatevalidityperiodscale.md)
+- [Uefi 設定の変更アクセス許可](intune-deviceconfig-changeuefisettingspermission.md)
 - [構成の使用法](intune-deviceconfig-configurationusage.md)
 - [カスタム サブジェクト名の別名](intune-deviceconfig-customsubjectalternativename.md)
 - [曜日](intune-deviceconfig-dayofweek.md)
@@ -171,6 +173,10 @@ Microsoft Intune のデバイス構成のワークロードを使用して、管
 - [デバイス構成のユーザー状態の概要](intune-deviceconfig-deviceconfigurationuserstatesummary.md)
 - [デバイス構成のユーザーの状態](intune-deviceconfig-deviceconfigurationuserstatus.md)
 - [Device Guard ローカル システム機関資格情報の保護の種類](intune-deviceconfig-deviceguardlocalsystemauthoritycredentialguardtype.md)
+- [デバイス管理の適用性ルールデバイスモード](intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)
+- [デバイス管理の適用性ルール os エディション](intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)
+- [デバイス管理の適用性ルール os バージョン](intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)
+- [デバイス管理の適用性ルールの種類](intune-deviceconfig-devicemanagementapplicabilityruletype.md)
 - [デバイス管理の派生資格情報発行者](intune-deviceconfig-devicemanagementderivedcredentialissuer.md)
 - [デバイス管理の派生資格情報の種類](intune-deviceconfig-devicemanagementderivedcredentialnotificationtype.md)
 - [デバイス管理の派生資格情報の設定](intune-deviceconfig-devicemanagementderivedcredentialsettings.md)
@@ -273,11 +279,13 @@ Microsoft Intune のデバイス構成のワークロードを使用して、管
 - [iOS 更新デバイスの状態](intune-deviceconfig-iosupdatedevicestatus.md)
 - [iOS の更新プログラムのインストール状態](intune-deviceconfig-iosupdatesinstallstatus.md)
 - [iOS VPN 構成](intune-deviceconfig-iosvpnconfiguration.md)
+- [iOS VPN のセキュリティアソシエーションのパラメーター](intune-deviceconfig-iosvpnsecurityassociationparameters.md)
 - [iOS 壁紙の表示場所](intune-deviceconfig-ioswallpaperdisplaylocation.md)
 - [iOS Web コンテンツ フィルターの自動フィルター](intune-deviceconfig-ioswebcontentfilterautofilter.md)
 - [iOS Web コンテンツ フィルター ベース](intune-deviceconfig-ioswebcontentfilterbase.md)
 - [iOS Web コンテンツ フィルターの特定の Web サイトへのアクセス](intune-deviceconfig-ioswebcontentfilterspecificwebsitesaccess.md)
 - [iOS Wi-Fi 構成](intune-deviceconfig-ioswificonfiguration.md)
+- [iOSik ev2 VPN 構成](intune-deviceconfig-iosikev2vpnconfiguration.md)
 - [キー サイズ](intune-deviceconfig-keysize.md)
 - [キーのストレージ プロバイダー オプション](intune-deviceconfig-keystorageprovideroption.md)
 - [キーの使用](intune-deviceconfig-keyusages.md)
@@ -297,6 +305,7 @@ Microsoft Intune のデバイス構成のワークロードを使用して、管
 - [macOS エンドポイント保護の構成](intune-deviceconfig-macosendpointprotectionconfiguration.md)
 - [macOS enterprise Wi-Fi 構成](intune-deviceconfig-macosenterprisewificonfiguration.md)
 - [macOS 拡張機能の構成](intune-deviceconfig-macosextensionsconfiguration.md)
+- [macOS ファイルヴォールト回復キーの種類](intune-deviceconfig-macosfilevaultrecoverykeytypes.md)
 - [macOS ファイアウォール アプリケーション](intune-deviceconfig-macosfirewallapplication.md)
 - [macOS ゲートキーパー アプリ ソース](intune-deviceconfig-macosgatekeeperappsources.md)
 - [macOS 一般デバイス構成](intune-deviceconfig-macosgeneraldeviceconfiguration.md)
@@ -362,6 +371,7 @@ Microsoft Intune のデバイス構成のワークロードを使用して、管
 - [制限付きのアプリケーションの違反](intune-deviceconfig-restrictedappsviolation.md)
 - [セーフ サーチのフィルターのタイプ](intune-deviceconfig-safesearchfiltertype.md)
 - [安全性評価アカウント タイプ](intune-deviceconfig-secureassessmentaccounttype.md)
+- [D m a 型を使用したセキュアブート](intune-deviceconfig-securebootwithdmatype.md)
 - [サービス開始方法の種類](intune-deviceconfig-servicestarttype.md)
 - [ソースの設定](intune-deviceconfig-settingsource.md)
 - [設定状態とデバイスの要約](intune-deviceconfig-settingstatedevicesummary.md)
@@ -385,7 +395,12 @@ Microsoft Intune のデバイス構成のワークロードを使用して、管
 - [ユーザー名のソース](intune-deviceconfig-usernamesource.md)
 - [表示設定](intune-deviceconfig-visibilitysetting.md)
 - [VPN 認証方法](intune-deviceconfig-vpnauthenticationmethod.md)
+- [VPN クライアントの認証の種類](intune-deviceconfig-vpnclientauthenticationtype.md)
+- [VPN デッドピア検出率](intune-deviceconfig-vpndeadpeerdetectionrate.md)
 - [VPN DNS 規則](intune-deviceconfig-vpndnsrule.md)
+- [VPN 暗号化アルゴリズムの種類](intune-deviceconfig-vpnencryptionalgorithmtype.md)
+- [VPN 整合性アルゴリズムの種類](intune-deviceconfig-vpnintegrityalgorithmtype.md)
+- [VPN ローカル識別子](intune-deviceconfig-vpnlocalidentifier.md)
 - [VPN オンデマンド規則](intune-deviceconfig-vpnondemandrule.md)
 - [VPN オンデマンド規則接続アクション](intune-deviceconfig-vpnondemandruleconnectionaction.md)
 - [VPN オンデマンド規則接続ドメイン アクション](intune-deviceconfig-vpnondemandruleconnectiondomainaction.md)
@@ -393,6 +408,7 @@ Microsoft Intune のデバイス構成のワークロードを使用して、管
 - [VPN プロキシ サーバー](intune-deviceconfig-vpnproxyserver.md)
 - [VPN ルート](intune-deviceconfig-vpnroute.md)
 - [VPN サーバー](intune-deviceconfig-vpnserver.md)
+- [VPN サーバー証明書の種類](intune-deviceconfig-vpnservercertificatetype.md)
 - [VPN トラフィック規則](intune-deviceconfig-vpntrafficrule.md)
 - [VPN トラフィック規則アプリのタイプ](intune-deviceconfig-vpntrafficruleapptype.md)
 - [VPN トラフィック規則ルーティングポリシーのタイプ](intune-deviceconfig-vpntrafficruleroutingpolicytype.md)
@@ -409,6 +425,8 @@ Microsoft Intune のデバイス構成のワークロードを使用して、管
 - [Windows 10 証明書のプロファイル ベース](intune-deviceconfig-windows10certificateprofilebase.md)
 - [Windows 10 コンプライアンス ポリシー](intune-deviceconfig-windows10compliancepolicy.md)
 - [Windows 10 カスタム構成](intune-deviceconfig-windows10customconfiguration.md)
+- [Windows 10 デバイスのファームウェア構成インターフェイス](intune-deviceconfig-windows10devicefirmwareconfigurationinterface.md)
+- [Windows 10 デバイスモードの種類](intune-deviceconfig-windows10devicemodetype.md)
 - [Windows 10 EAS 電子メール プロファイルの構成](intune-deviceconfig-windows10easemailprofileconfiguration.md)
 - [Windows 10 エディションの種類](intune-deviceconfig-windows10editiontype.md)
 - [Windows 10 Endpoint Protection 構成](intune-deviceconfig-windows10endpointprotectionconfiguration.md)
@@ -494,4 +512,4 @@ Microsoft Intune のデバイス構成のワークロードを使用して、管
 - [Windows VPN 構成](intune-deviceconfig-windowsvpnconfiguration.md)
 - [Windows VPN 接続の種類](intune-deviceconfig-windowsvpnconnectiontype.md)
 - [Windows Wi-Fi 構成](intune-deviceconfig-windowswificonfiguration.md)
-- [Windows Wi-Fi Enterprise e a p 構成](intune-deviceconfig-windowswifienterpriseeapconfiguration.md)
+- [Windows Wi-fi エンタープライズ eap 構成](intune-deviceconfig-windowswifienterpriseeapconfiguration.md)

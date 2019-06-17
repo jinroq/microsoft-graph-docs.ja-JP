@@ -4,12 +4,12 @@ description: auditEvent オブジェクトのプロパティを更新します�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 11b8b566379c795ce79e462fcad065fde530a478
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 14a44e8ce8cd617101889adf6c7b998db664dd74
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934370"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34972535"
 ---
 # <a name="update-auditevent"></a>auditEvent の更新
 
@@ -170,6 +170,7 @@ Content-Length: 1439
   "category": "Category value"
 }
 ```
+
 
 
 

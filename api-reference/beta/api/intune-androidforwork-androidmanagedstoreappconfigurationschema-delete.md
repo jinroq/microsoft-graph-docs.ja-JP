@@ -4,12 +4,12 @@ description: AndroidManagedStoreAppConfigurationSchema を削除します。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 744d24718bb2e2365782876cbff9b46da23c62e7
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 45751ab66fb676b107d06fcb938a06bf9ae5d792
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33937443"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965439"
 ---
 # <a name="delete-androidmanagedstoreappconfigurationschema"></a>AndroidManagedStoreAppConfigurationSchema の削除
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/androidManagedStoreAppC
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

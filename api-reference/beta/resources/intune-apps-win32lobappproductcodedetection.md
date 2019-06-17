@@ -4,12 +4,12 @@ description: Win32 アプリを検出するための製品コードとバージ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6c56e3047ccc83e7d417e03bc4a95a8538650341
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3ab90e57f8a6b78057c8358be319921a197c81cd
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949522"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34977360"
 ---
 # <a name="win32lobappproductcodedetection-resource-type"></a>win32LobAppProductCodeDetection リソースの種類
 
@@ -29,7 +29,7 @@ Win32 アプリを検出するための製品コードとバージョンプロ�
 |productVersionOperator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|製品バージョンを検出するための演算子。 可能な値は、`notConfigured`、`equal`、`notEqual`、`greaterThan`、`greaterThanOrEqual`、`lessThan`、`lessThanOrEqual` です。|
 |productVersion|String|Win32 基幹業務 (LoB) アプリの製品バージョン。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -47,6 +47,7 @@ Win32 アプリを検出するための製品コードとバージョンプロ�
   "productVersion": "String"
 }
 ```
+
 
 
 

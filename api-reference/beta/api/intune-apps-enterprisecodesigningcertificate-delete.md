@@ -4,12 +4,12 @@ description: EnterpriseCodeSigningCertificate を削除します。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9af859e696d72687a946445feb26d40aec0d2fcf
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6475d11926d1140e1aeba36153e37d1d71b5c246
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33936995"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965180"
 ---
 # <a name="delete-enterprisecodesigningcertificate"></a>EnterpriseCodeSigningCertificate の削除
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/enterpriseCodeSignin
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 新しい androidManagedStoreAppConfigurationSchema オブジェク
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c0b913bd00aedc74f26deebabe61255a58ec0e20
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 8a5004d4131b9ec127a6a70765cfb49a7c6ab51b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33937520"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965460"
 ---
 # <a name="create-androidmanagedstoreappconfigurationschema"></a>AndroidManagedStoreAppConfigurationSchema の作成
 
@@ -131,6 +131,7 @@ Content-Length: 854
   ]
 }
 ```
+
 
 
 

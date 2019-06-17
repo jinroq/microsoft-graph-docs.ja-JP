@@ -4,12 +4,12 @@ description: 放映印刷先を表します。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 90eb7d01afacf65e96623fea35128c122e55d16b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 665e4d5a8e8c3f715150bd81075385a7a6dd8c1a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949221"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965775"
 ---
 # <a name="airprintdestination-resource-type"></a>放映 Printdestination リソースの種類
 
@@ -27,7 +27,7 @@ ms.locfileid: "33949221"
 |ポート|Int32|放映された印刷先のリスニングポート。 このキーが指定されていない場合、印刷時に既定のポートが使用されます。 IOS 11.0 以降で利用可能です。|
 |forceTls|Boolean|True の場合、放送印刷接続はトランスポート層セキュリティ (TLS) によって保護されます。 既定値は false です。 IOS 11.0 以降で利用可能です。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -46,6 +46,7 @@ ms.locfileid: "33949221"
   "forceTls": true
 }
 ```
+
 
 
 

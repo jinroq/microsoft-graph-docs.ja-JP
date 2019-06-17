@@ -4,12 +4,12 @@ description: Azure AD ユーザー アカウントを表します。directoryObj
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f87ff4df1ea1fab1b727a725c01f024a872a8f1f
-ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.openlocfilehash: a397c3433de4d3615e09475059eeb58254bd3086
+ms.sourcegitcommit: 8aaf10f7c11d1bf481e9acac19884346dbd44cb8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "34475207"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "34914659"
 ---
 # <a name="user-resource-type"></a>user リソースの種類
 
@@ -63,6 +63,7 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |[assignLicense](../api/user-assignlicense.md)|[user](user.md)|ユーザーのサブスクリプションを追加または削除します。また、サブスクリプションに関連付けられている特定のプランを有効または無効にすることもできます。|
 |[licenseDetails を一覧表示する](../api/user-list-licensedetails.md) |[licenseDetails](licensedetails.md) コレクション| licenseDetails オブジェクトのコレクションを取得します。|
 |[checkMemberGroups](../api/user-checkmembergroups.md)|String collection|グループの一覧内のメンバーシップを確認します。チェックは推移的です。|
+|[delta](../api/user-delta.md)|user コレクション| ユーザーに対する増分の変更を取得します。 |
 |[findMeetingTimes](../api/user-findmeetingtimes.md)|[meetingTimeSuggestionsResult](meetingtimesuggestionsresult.md)|出席者の空き時間情報、場所、または時間の制約に基づいて、集まる時間と場所を見つけます。|
 |[findRoomLists](../api/user-findroomlists.md)|[emailaddress.md](emailaddress.md) コレクション | テナントで定義された部屋の一覧を取得します。|
 |[findRooms](../api/user-findrooms.md)|[emailaddress.md](emailaddress.md) コレクション | ユーザーのテナント内、または特定の部屋の一覧内のすべての会議室を取得します。 |
@@ -70,10 +71,9 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |[getMemberGroups](../api/user-getmembergroups.md)|String collection|ユーザーがメンバーであるすべてのグループを返します。チェックは推移的です。|
 |[getMemberObjects](../api/user-getmemberobjects.md)|String コレクション| ユーザーがメンバーになっているすべてのグループ、ディレクトリ ロール、管理単位を返します。 チェックは推移的です。 |
 |[invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md)| なし |**refreshTokensValidFromDateTime** ユーザー プロパティを現在の日時にリセットすることで、アプリケーションに発行されたすべての更新トークンとセッション トークンを無効にします。 これにより、ユーザーは強制的にアプリケーションに再度サインインします。 この方法は、**revokeSignInSessions** に置き換えられます。|
-|[revokeSignInSessions](../api/user-revokesigninsessions.md)| なし |**signInSessionsValidFromDateTime** ユーザー プロパティを現在の日時にリセットすることで、アプリケーションに発行されたすべての更新トークンとセッション トークンを失効にします。 これにより、ユーザーは強制的にアプリケーションに再度サインインします。 この方法は **invalidateAllRefreshTokens** を置き換えるものです。|
 |[reminderView](../api/user-reminderview.md)|[Reminder](reminder.md) collection|指定した開始時刻と終了時刻内の予定表のアラームの一覧を返します。|
-|[delta](../api/user-delta.md)|user コレクション| ユーザーに対する増分の変更を取得します。 |
-|[Outlook ID を変換する](../api/user-translateexchangeids.md) |[convertIdResult resource type](convertidresult.md) コレクション| Outlook 関連リソースの ID の形式を変換します。|
+|[revokeSignInSessions](../api/user-revokesigninsessions.md)| なし |**signInSessionsValidFromDateTime** ユーザー プロパティを現在の日時にリセットすることで、アプリケーションに発行されたすべての更新トークンとセッション トークンを失効にします。 これにより、ユーザーは強制的にアプリケーションに再度サインインします。 この方法は **invalidateAllRefreshTokens** を置き換えるものです。|
+|[translateExchangeIds](../api/user-translateexchangeids.md) |[convertIdResult](convertidresult.md) コレクション| Outlook 関連リソースの ID の形式を変換します。|
 |**オープン拡張機能**| | |
 |[オープン拡張機能を作成する](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| オープン拡張機能を作成し、新規または既存のリソースにカスタム プロパティを追加します。|
 |[オープン拡張機能を取得する](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) コレクション| 拡張機能の名前で識別されるオープン拡張機能を取得します。|

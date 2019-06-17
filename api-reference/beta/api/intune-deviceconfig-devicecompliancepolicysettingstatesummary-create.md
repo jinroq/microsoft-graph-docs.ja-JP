@@ -4,12 +4,12 @@ description: 新しい deviceCompliancePolicySettingStateSummary オブジェク
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 611fcb48aded8802f822b60bbd24adbb7013551a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 616431ae65f8a6dae8a9b4be6962112a72a4afd6
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33927861"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34968316"
 ---
 # <a name="create-devicecompliancepolicysettingstatesummary"></a>deviceCompliancePolicySettingStateSummary の作成
 
@@ -113,6 +113,7 @@ Content-Length: 451
   "conflictDeviceCount": 3
 }
 ```
+
 
 
 

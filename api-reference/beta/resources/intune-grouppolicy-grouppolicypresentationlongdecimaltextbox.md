@@ -4,12 +4,12 @@ description: ADMX longDecimalTextBox 要素と ADMX longDecimal 要素を表し�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 71e3f9cfe101c1c408bfdebdf7b2d0606f0a2231
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0f9e462d0af1665ed3ddb7b5bc703dde81341d96
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941052"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34964887"
 ---
 # <a name="grouppolicypresentationlongdecimaltextbox-resource-type"></a>groupPolicyPresentationLongDecimalTextBox リソースの種類
 
@@ -32,7 +32,7 @@ ADMX longDecimalTextBox 要素と ADMX longDecimal 要素を表します。
 |[GroupPolicyPresentationLongDecimalTextBox の更新](../api/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox-update.md)|[groupPolicyPresentationLongDecimalTextBox](../resources/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox.md)|[GroupPolicyPresentationLongDecimalTextBox](../resources/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |label|String|任意のプレゼンテーションエンティティのローカライズされたテキストラベル。 既定値は空白です。 [GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
 |id|String|エンティティのキー。 [GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
@@ -44,7 +44,7 @@ ADMX longDecimalTextBox 要素と ADMX longDecimal 要素を表します。
 |minValue|Int64|最小許容値を指定する、符号なしの長整数型 (long) の値です。 既定値は 0 です。|
 |maxValue|Int64|最大許容値を指定する、符号なしの長整数型 (long) の値です。 既定値は9999です。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |definition|[groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|プレゼンテーションに関連付けられたグループポリシーの定義。 [GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
@@ -71,6 +71,7 @@ ADMX longDecimalTextBox 要素と ADMX longDecimal 要素を表します。
   "maxValue": 1024
 }
 ```
+
 
 
 

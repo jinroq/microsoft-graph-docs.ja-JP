@@ -4,12 +4,12 @@ description: アカウント全体での Windows defender advanced threat protec
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d96de8e427d265003811c751bce7b6c0675ba667
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ee8058a61daa9c1510dab5a683ac46b2eea0f590
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949123"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965797"
 ---
 # <a name="advancedthreatprotectiononboardingstatesummary-resource-type"></a>advancedThreatProtectionOnboardingStateSummary リソースの種類
 
@@ -26,7 +26,7 @@ ms.locfileid: "33949123"
 |[AdvancedThreatProtectionOnboardingStateSummary の更新](../api/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary-update.md)|[advancedThreatProtectionOnboardingStateSummary](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md)|[AdvancedThreatProtectionOnboardingStateSummary](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|一意識別子|
 |unknownDeviceCount|Int32|不明なデバイスの数|
@@ -38,7 +38,7 @@ ms.locfileid: "33949123"
 |conflictDeviceCount|Int32|競合デバイスの数|
 |notAssignedDeviceCount|Int32|割り当てられていないデバイスの数|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |advancedThreatProtectionOnboardingDeviceSettingStates|[advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md)コレクション|まだ文書化されていません|
@@ -65,6 +65,7 @@ ms.locfileid: "33949123"
   "notAssignedDeviceCount": 1024
 }
 ```
+
 
 
 

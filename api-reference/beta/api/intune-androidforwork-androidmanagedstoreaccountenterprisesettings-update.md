@@ -4,12 +4,12 @@ description: AndroidManagedStoreAccountEnterpriseSettings オブジェクトの�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7f8cce90335c46e4fc11323baf1ac9ed83db0cf8
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5ebb87ad192d2fb435e4119f7df11dac83181b11
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33937352"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965474"
 ---
 # <a name="update-androidmanagedstoreaccountenterprisesettings"></a>AndroidManagedStoreAccountEnterpriseSettings の更新
 
@@ -141,6 +141,7 @@ Content-Length: 1010
   "androidDeviceOwnerFullyManagedEnrollmentEnabled": true
 }
 ```
+
 
 
 

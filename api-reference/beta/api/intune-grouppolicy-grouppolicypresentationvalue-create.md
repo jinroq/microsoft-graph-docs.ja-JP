@@ -4,12 +4,12 @@ description: 新しい groupPolicyPresentationValue オブジェクトを作成�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eff84bf413cfc94ab94be0726becb2bd917d69c5
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ed39804e4a00e681d0d0ca1ea45d53b56e754951
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33904595"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34966020"
 ---
 # <a name="create-grouppolicypresentationvalue"></a>GroupPolicyPresentationValue の作成
 
@@ -87,6 +87,7 @@ Content-Length: 242
   "id": "8132eaab-eaab-8132-abea-3281abea3281"
 }
 ```
+
 
 
 

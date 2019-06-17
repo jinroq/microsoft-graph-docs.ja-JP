@@ -4,12 +4,12 @@ description: 新しい managedEBookAssignment オブジェクトを作成しま�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 89274ed1c8efd2f256727c188d977d42bf297275
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 1f818aa8e988cfc2bb4199bc467934c8b1b66860
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934216"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34972236"
 ---
 # <a name="create-managedebookassignment"></a>managedEBookAssignment の作成
 
@@ -93,6 +93,7 @@ Content-Length: 243
   "installIntent": "required"
 }
 ```
+
 
 
 

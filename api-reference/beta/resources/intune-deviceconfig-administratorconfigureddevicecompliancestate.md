@@ -4,12 +4,12 @@ description: 管理者によって構成されたデバイスコンプライア�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dadc14c3d812af848a41c1d256840ac394abc3aa
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5bc69cf0878da18b4cd80fa01982f71040f6361e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949179"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965810"
 ---
 # <a name="administratorconfigureddevicecompliancestate-enum-type"></a>administratorConfiguredDeviceComplianceState 列挙型
 
@@ -24,6 +24,7 @@ ms.locfileid: "33949179"
 |:---|:---|:---|
 |basedOnDeviceCompliancePolicy|.0|他のコンプライアンスポリシーに基づいてコンプライアンスの状態を設定する|
 |互換性|1-d|準拠を準拠に設定する|
+
 
 
 
