@@ -4,26 +4,27 @@ description: 制限付きのアプリの状態
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 876516221e77d1e3b379c79ff1e3e26fa67f20a4
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 92dec29f6bd5e6a01d5a14d9e1d2041c4e4d98a1
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944797"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986705"
 ---
-# <a name="restrictedappsstate-enum-type"></a><span data-ttu-id="e078f-103">restrictedAppsState 列挙型</span><span class="sxs-lookup"><span data-stu-id="e078f-103">restrictedAppsState enum type</span></span>
+# <a name="restrictedappsstate-enum-type"></a><span data-ttu-id="f512e-103">restrictedAppsState 列挙型</span><span class="sxs-lookup"><span data-stu-id="f512e-103">restrictedAppsState enum type</span></span>
 
-> <span data-ttu-id="e078f-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e078f-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="f512e-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f512e-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="e078f-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="e078f-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="f512e-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="f512e-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="e078f-106">制限付きのアプリの状態</span><span class="sxs-lookup"><span data-stu-id="e078f-106">Restricted apps state</span></span>
+<span data-ttu-id="f512e-106">制限付きのアプリの状態</span><span class="sxs-lookup"><span data-stu-id="f512e-106">Restricted apps state</span></span>
 
-## <a name="members"></a><span data-ttu-id="e078f-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="e078f-107">Members</span></span>
-|<span data-ttu-id="e078f-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="e078f-108">Member</span></span>|<span data-ttu-id="e078f-109">値</span><span class="sxs-lookup"><span data-stu-id="e078f-109">Value</span></span>|<span data-ttu-id="e078f-110">説明</span><span class="sxs-lookup"><span data-stu-id="e078f-110">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="f512e-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="f512e-107">Members</span></span>
+|<span data-ttu-id="f512e-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="f512e-108">Member</span></span>|<span data-ttu-id="f512e-109">値</span><span class="sxs-lookup"><span data-stu-id="f512e-109">Value</span></span>|<span data-ttu-id="f512e-110">説明</span><span class="sxs-lookup"><span data-stu-id="f512e-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="e078f-111">prohibitedApps</span><span class="sxs-lookup"><span data-stu-id="e078f-111">prohibitedApps</span></span>|<span data-ttu-id="e078f-112">.0</span><span class="sxs-lookup"><span data-stu-id="e078f-112">0</span></span>|<span data-ttu-id="e078f-113">禁止されたアプリ</span><span class="sxs-lookup"><span data-stu-id="e078f-113">Prohibited apps</span></span>|
-|<span data-ttu-id="e078f-114">notApprovedApps</span><span class="sxs-lookup"><span data-stu-id="e078f-114">notApprovedApps</span></span>|<span data-ttu-id="e078f-115">1-d</span><span class="sxs-lookup"><span data-stu-id="e078f-115">1</span></span>|<span data-ttu-id="e078f-116">承認されていないアプリ</span><span class="sxs-lookup"><span data-stu-id="e078f-116">Not approved apps</span></span>|
+|<span data-ttu-id="f512e-111">prohibitedApps</span><span class="sxs-lookup"><span data-stu-id="f512e-111">prohibitedApps</span></span>|<span data-ttu-id="f512e-112">.0</span><span class="sxs-lookup"><span data-stu-id="f512e-112">0</span></span>|<span data-ttu-id="f512e-113">禁止されたアプリ</span><span class="sxs-lookup"><span data-stu-id="f512e-113">Prohibited apps</span></span>|
+|<span data-ttu-id="f512e-114">notApprovedApps</span><span class="sxs-lookup"><span data-stu-id="f512e-114">notApprovedApps</span></span>|<span data-ttu-id="f512e-115">1-d</span><span class="sxs-lookup"><span data-stu-id="f512e-115">1</span></span>|<span data-ttu-id="f512e-116">承認されていないアプリ</span><span class="sxs-lookup"><span data-stu-id="f512e-116">Not approved apps</span></span>|
+
 
 
 
