@@ -4,12 +4,12 @@ description: AndroidDeviceOwnerEnrollmentProfile オブジェクトのプロパ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5880e498a3d6d8a6abd53b892a6506ae01085f09
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 32660b1d70cb614304d2c0897df62f1d165a958c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33938584"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34966608"
 ---
 # <a name="list-androiddeviceownerenrollmentprofiles"></a>リスト androidDeviceOwnerEnrollmentProfiles
 
@@ -88,6 +88,7 @@ Content-Length: 838
   ]
 }
 ```
+
 
 
 

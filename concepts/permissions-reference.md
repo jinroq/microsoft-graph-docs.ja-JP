@@ -3,12 +3,12 @@ title: 'Microsoft Graph のアクセス許可のリファレンス '
 description: Microsoft Graph は、アプリがアクセスするリソース (ユーザー、グループ、メールなど) を制御する詳細なアクセス許可を公開しています。 開発者は、アプリが要求する Microsoft Graph のアクセス許可を決定します。
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: fae0b7cd490b32f7ae5691a93e164d1a9eb4a870
-ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
+ms.openlocfilehash: b9574e4aa9c917caeb97ad1dcd602c74f8959f4c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34422501"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34988014"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph のアクセス許可のリファレンス
 
@@ -351,9 +351,11 @@ _Directory.ReadWrite.All_ アクセス許可は、次に示す特権を付与し
 - グループ所有者の更新
 - ライセンス割り当ての管理
 - アプリケーションのスキーマ拡張の定義
+
 > **注**:
-> - ユーザーのパスワードをリセットする権限はありません
-> - リソース (ユーザーまたはグループを含む) を削除する権限はありません
+> - ユーザーのパスワードを再設定する権限はありません。
+> - 他のユーザーの**businessPhones**、**mobilePhone**、または**otherMails** のプロパティの更新を許可されているのは、管理者以外のユーザーまたは次のロールのいずれかを割り当てられたユーザーのみになります。ディレクトリ閲覧者、ゲスト招待元、メッセージ センター閲覧者およびレポート閲覧者。 詳細については、「[Azure AD で使用できるロール](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)」のヘルプデスク (パスワード) 管理者を参照してください。  User.ReadWrite.All または Directory.ReadWrite.All の委任またはアプリケーションのアクセス許可のいずれかが与えられているアプリの場合、これに該当します。
+> - リソース (ユーザーまたはグループを含む) を削除する権限はありません。
 > - 具体的には、上記の一覧に示されていないリソースの作成と更新が除外されます。 これには、application、oAauth2Permissiongrant、appRoleAssignment、device、servicePrincipal、organization、domains などが含まれます。
 
 
@@ -1128,7 +1130,6 @@ _共有_のアクセス許可は、現時点では職場または学校アカウ
 
 ### <a name="remarks"></a>注釈
 
-
 _User.Read_ のアクセス許可があるアプリは、[組織](/graph/api/resources/organization?view=graph-rest-1.0)リソースを通じて職場または学校アカウントでサインインしているユーザーの基本会社情報を読み取ることもできます。使用可能なプロパティは、id、displayName、および verifiedDomains です。
 
 職場または学校アカウントの場合は、完全なプロファイルに[ユーザー](/graph/api/resources/user?view=graph-rest-1.0) リソースの宣言されたプロパティがすべて含まれます。既定では、読み取り時に制限された数のプロパティのみが返されます。既定のセットに含まれていないプロパティを読み取るには、`$select` を使用します。既定のプロパティは、次のとおりです。
@@ -1159,6 +1160,8 @@ _User.Read_ のアクセス許可があるアプリは、[組織](/graph/api/res
 - skills
 
 アプリケーションのアクセス許可の _User.ReadWrite.All_ があるアプリは、職場または学校アカウントのすべての宣言されたプロパティ (パスワードを除く) を更新できるようになります。
+
+_User.ReadWrite.All_の委任またはアプリケーションのアクセス許可とともに、他のユーザーの**businessPhones**、**mobilePhone**または**otherMails**の更新を許可されているのは、管理者以外のユーザーまたは次のロールのいずれかを割り当てられたユーザーのみになります。ディレクトリ閲覧者、ゲスト招待元、メッセージ センター閲覧者およびレポート閲覧者。 詳細については、「[Azure AD で使用できるロール](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)」のヘルプデスク (パスワード) 管理者を参照してください。
 
 職場または学校アカウントの直属の部下 (`directReports`) または上司 (`manager`) を読み取りまたは書き込みするには、アプリに _User.Read.All_ (読み取り専用) または _User.ReadWrite.All_ が付与されている必要があります。
 

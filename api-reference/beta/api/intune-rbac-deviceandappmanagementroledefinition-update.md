@@ -4,12 +4,12 @@ description: deviceAndAppManagementRoleDefinition オブジェクトのプロパ
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 278dde3d8abb9b57a21f6672d2ebb2602683f68e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: cb784b47dc1c3cdfdec70b453e9fe4b434a87903
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899558"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34988644"
 ---
 # <a name="update-deviceandappmanagementroledefinition"></a>deviceAndAppManagementRoleDefinition の更新
 
@@ -58,7 +58,7 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 |rolePermissions|[rolePermission](../resources/intune-rbac-rolepermission.md) コレクション|このロールに実行が許可されている、ロールのアクセス許可のリスト。 これらは、rolePermission の一部として定義されている actionName と一致する必要があります。 [roleDefinition](../resources/intune-rbac-roledefinition.md) から継承します|
 |isBuiltInRoleDefinition|Boolean|ロールの種類。 組み込みの場合は True に設定し、カスタム ロールの定義の場合は False に設定します。 [roleDefinition](../resources/intune-rbac-roledefinition.md) から継承します|
 |isBuiltIn|Boolean|ロールの種類。 組み込みの場合は True に設定し、カスタム ロールの定義の場合は False に設定します。 [roleDefinition](../resources/intune-rbac-roledefinition.md) から継承します|
-|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [roleDefinition](../resources/intune-rbac-roledefinition.md) から継承します|
+|roleScopeTagIds|文字列コレクション|このエンティティインスタンスの範囲タグのリスト。 [roleDefinition](../resources/intune-rbac-roledefinition.md) から継承します|
 
 
 
@@ -181,6 +181,7 @@ Content-Length: 1278
   ]
 }
 ```
+
 
 
 

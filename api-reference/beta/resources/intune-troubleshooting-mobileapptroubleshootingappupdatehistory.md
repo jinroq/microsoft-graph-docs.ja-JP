@@ -4,12 +4,12 @@ description: モバイルアプリのトラブルシューティングイベン�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3a0fca2b5e07a6b5a7941934daa47434fcd418b7
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ab9949c2e8ac11043d53de990549cc461b43a5eb
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939071"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34988056"
 ---
 # <a name="mobileapptroubleshootingappupdatehistory-resource-type"></a>mobileAppTroubleshootingAppUpdateHistory リソースの種類
 
@@ -27,7 +27,7 @@ ms.locfileid: "33939071"
 |:---|:---|:---|
 |occurrenceDateTime|DateTimeOffset|履歴アイテムが発生した時刻。 [MobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)から継承します。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -43,6 +43,7 @@ ms.locfileid: "33939071"
   "occurrenceDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

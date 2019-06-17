@@ -4,12 +4,12 @@ description: 指定した一連のアプリの詳細な管理設定を構成す�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ebe0d7a8c211c1d7066d09caa9f109062fe72ec8
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0f6aed7b1372ed2856699507a1774d0050783b24
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940709"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994707"
 ---
 # <a name="managedappprotection-resource-type"></a>managedAppProtection リソース タイプ
 
@@ -36,7 +36,7 @@ ms.locfileid: "33940709"
 |description|String|ポリシーの説明。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
 |createdDateTime|DateTimeOffset|ポリシーが作成された日時。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|ポリシーが変更された最終日時。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
-|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
+|roleScopeTagIds|文字列コレクション|このエンティティインスタンスの範囲タグのリスト。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
 |id|文字列|エンティティのキー。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
 |version|String|エンティティのバージョン。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
 |periodOfflineBeforeAccessCheck|期間|デバイスがインターネットに接続されていないでこの期間が過ぎると、アクセスがチェックされます。|
@@ -71,8 +71,9 @@ ms.locfileid: "33940709"
 |appActionIfMaximumPinRetriesExceeded|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|正しくない pin の再試行回数の最大数に基づいて、管理対象アプリの動作 (ブロックまたはワイプ) を定義します。 可能な値は、`block`、`wipe`、`warn` です。|
 |pinRequiredInsteadOfBiometricTimeout|期間|非バイオメトリクスパスコードではなく、アプリ pin のタイムアウト (分)|
 |Allowedoutboundクリップの Sharingexceptionlength|Int32|組織データおよびアカウントから任意のアプリケーションに切り取りまたはコピーすることができる文字数を指定します。 この設定は、Allowedoutboundクリップボードの Sharinglevel 制限より優先されます。 既定値 ' 0 ' は、例外が許可されていないことを意味します。|
+|notificationRestriction|[managedAppNotificationRestriction](../resources/intune-mam-managedappnotificationrestriction.md)|アプリ通知制限を指定します。 可能な値は、`allow`、`blockOrganizationalData`、`block` です。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -128,9 +129,11 @@ ms.locfileid: "33940709"
   "appActionIfDeviceComplianceRequired": "String",
   "appActionIfMaximumPinRetriesExceeded": "String",
   "pinRequiredInsteadOfBiometricTimeout": "String (duration)",
-  "allowedOutboundClipboardSharingExceptionLength": 1024
+  "allowedOutboundClipboardSharingExceptionLength": 1024,
+  "notificationRestriction": "String"
 }
 ```
+
 
 
 

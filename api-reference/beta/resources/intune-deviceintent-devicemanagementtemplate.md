@@ -4,12 +4,12 @@ description: デバイス設定の定義済みコレクションを表すエン�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ffaa90db6b47502dfd66c39538f14a3c1a52b669
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 438fbf37cb419145d63b8d25f9e8145005eac6cc
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943411"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34984416"
 ---
 # <a name="devicemanagementtemplate-resource-type"></a>deviceManagementTemplate リソースの種類
 
@@ -28,9 +28,10 @@ ms.locfileid: "33943411"
 |[DeviceManagementTemplate の削除](../api/intune-deviceintent-devicemanagementtemplate-delete.md)|None|[Devicemanagementtemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)を削除します。|
 |[DeviceManagementTemplate の更新](../api/intune-deviceintent-devicemanagementtemplate-update.md)|[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|[Devicemanagementtemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)オブジェクトのプロパティを更新します。|
 |[createInstance アクション](../api/intune-deviceintent-devicemanagementtemplate-createinstance.md)|[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)|まだ文書化されていません|
+|[compare 関数](../api/intune-deviceintent-devicemanagementtemplate-compare.md)|[Devicemanagementsettingcomparison](../resources/intune-deviceintent-devicemanagementsettingcomparison.md)コレクション|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |id|文字列|テンプレート ID|
 |displayName|String|テンプレートの表示名|
@@ -38,8 +39,10 @@ ms.locfileid: "33943411"
 |versionInfo|String|テンプレートのバージョン情報|
 |isDeprecated|Boolean|テンプレートが非推奨になっているか、使用されていません。 推奨されていないテンプレートからは、インテントを作成できません。|
 |intentCount|Int32|このテンプレートから作成されたインテントの数。|
+|templateType|[deviceManagementTemplateType](../resources/intune-deviceintent-devicemanagementtemplatetype.md)|テンプレートの種類を示します。 可能な値は、`securityBaseline`、`specializedDevices`、`advancedThreatProtectionSecurityBaseline`、`deviceConfiguration`、`custom` です。|
+|publishedDateTime|DateTimeOffset|テンプレートが発行されたとき|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |settings|[Devicemanagementsettinginstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)コレクション|このテンプレートに含まれるすべての設定のコレクション|
@@ -62,9 +65,12 @@ ms.locfileid: "33943411"
   "description": "String",
   "versionInfo": "String",
   "isDeprecated": true,
-  "intentCount": 1024
+  "intentCount": 1024,
+  "templateType": "String",
+  "publishedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

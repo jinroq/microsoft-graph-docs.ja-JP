@@ -4,12 +4,12 @@ description: 新しい targetedManagedAppConfiguration オブジェクトを作�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ccb8e9e9e9c592759b73aa022d0a21ceb61fc785
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3139504b569cc607fc467f45a960ecdca1ce449d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33903068"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987062"
 ---
 # <a name="create-targetedmanagedappconfiguration"></a>targetedManagedAppConfiguration の作成
 
@@ -54,7 +54,7 @@ POST /deviceAppManagement/targetedManagedAppConfigurations
 |description|String|ポリシーの説明。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
 |createdDateTime|DateTimeOffset|ポリシーが作成された日時。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|ポリシーが変更された最終日時。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
-|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
+|roleScopeTagIds|文字列コレクション|このエンティティインスタンスの範囲タグのリスト。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
 |id|文字列|エンティティのキー。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
 |version|String|エンティティのバージョン。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
 |customSettings|[keyValuePair](../resources/intune-shared-keyvaluepair.md) コレクション|構成の対象であるユーザーに対して、このサービスで変更せずにアプリに送信される文字列キーと文字列値の一連のペア。[managedAppConfiguration](../resources/intune-mam-managedappconfiguration.md) から継承します|
@@ -124,6 +124,7 @@ Content-Length: 622
   "isAssigned": true
 }
 ```
+
 
 
 

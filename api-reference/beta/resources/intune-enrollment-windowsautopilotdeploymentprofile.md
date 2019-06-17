@@ -4,12 +4,12 @@ description: Windows 自動操縦展開プロファイル
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0596f4cd23c98b271c5e463a973dcfd29cee6dad
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: cfa37dd838e515978db7f6763d1b8e69b5c66417
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941465"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993923"
 ---
 # <a name="windowsautopilotdeploymentprofile-resource-type"></a>windowsAutopilotDeploymentProfile リソースの種類
 
@@ -26,7 +26,7 @@ Windows 自動操縦展開プロファイル
 |[assign アクション](../api/intune-enrollment-windowsautopilotdeploymentprofile-assign.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |id|文字列|プロファイルキー|
 |displayName|String|プロファイルの名前|
@@ -40,9 +40,9 @@ Windows 自動操縦展開プロファイル
 |deviceNameTemplate|String|自動操縦デバイスの名前を指定するときに使用するテンプレートを指定します。 これはカスタムテキストにすることができ、デバイスのシリアル番号またはランダムに生成された番号のいずれかを含めることもできます。 テンプレートによって生成されるテキストの合計の長さは、15文字以下でなければなりません。|
 |deviceType|[windowsAutopilotDeviceType](../resources/intune-enrollment-windowsautopilotdevicetype.md)|このプロファイルを適用できる自動操縦デバイスの種類。 可能な値は、`windowsPc`、`surfaceHub2` です。|
 |Enableホワイトグローブ|Boolean|プロファイルの自動操縦白の手袋を有効にします。|
-|roleScopeTagIds|String collection|プロファイルのスコープタグ。|
+|roleScopeTagIds|文字列コレクション|プロファイルのスコープタグ。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |assignedDevices|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)コレクション|プロファイルに割り当てられているデバイスのリスト。|
@@ -93,6 +93,7 @@ Windows 自動操縦展開プロファイル
   ]
 }
 ```
+
 
 
 

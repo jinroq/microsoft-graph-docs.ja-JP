@@ -4,12 +4,12 @@ description: GroupPolicyPresentationValueLongDecimal を削除します。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 718b7999231a27a875c36eea3507d927cf56f80c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 183ebbc8cd46fe0dd1d7aba4cafd4bbb8737bdcf
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33904266"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34985480"
 ---
 # <a name="delete-grouppolicypresentationvaluelongdecimal"></a>GroupPolicyPresentationValueLongDecimal の削除
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfiguratio
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

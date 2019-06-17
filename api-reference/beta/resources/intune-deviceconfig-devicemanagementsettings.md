@@ -4,12 +4,12 @@ description: まだ文書化されていません
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 079d957d14e5f891af691ba7b41916adb8ac9669
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a087192b9ff46b79f5f585cc9515b9c78d806e99
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946967"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990009"
 ---
 # <a name="devicemanagementsettings-resource-type"></a>deviceManagementSettings リソースの種類
 
@@ -30,7 +30,7 @@ ms.locfileid: "33946967"
 |derivedCredentialProvider|[derivedCredentialProviderType](../resources/intune-deviceconfig-derivedcredentialprovidertype.md)|このアカウントに使用する派生資格情報プロバイダー。 可能な値は、`notConfigured`、`entrustDataCard`、`purebred`、`xTec`、`intercede` です。|
 |derivedCredentialUrl|String|派生資格情報プロバイダーセルフサービス URI。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -52,6 +52,7 @@ ms.locfileid: "33946967"
   "derivedCredentialUrl": "String"
 }
 ```
+
 
 
 

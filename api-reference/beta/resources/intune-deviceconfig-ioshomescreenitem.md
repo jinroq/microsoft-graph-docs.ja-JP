@@ -4,12 +4,12 @@ description: IOS ホーム画面上のアイテムを表します
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f69bb07a54366a84fc9509f900b8a36513f545e3
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 077c0eea7a4953d0cba3e9223a24fd9107f1b6c0
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946463"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990254"
 ---
 # <a name="ioshomescreenitem-resource-type"></a>iosHomeScreenItem リソースの種類
 
@@ -24,7 +24,7 @@ IOS ホーム画面上のアイテムを表します
 |:---|:---|:---|
 |displayName|String|アプリの名前|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -40,6 +40,7 @@ IOS ホーム画面上のアイテムを表します
   "displayName": "String"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: LocalSecurityOptionsInformationShownOnLockScreenType に指定で�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8bad89de28a6e6df85d9b7caf6f9f7f85552cdfc
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ae59b5c3213bf283fce55b51518700a8e43f9040
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946106"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989309"
 ---
 # <a name="localsecurityoptionsinformationshownonlockscreentype-enum-type"></a>localSecurityOptionsInformationShownOnLockScreenType 列挙型
 
@@ -26,6 +26,7 @@ LocalSecurityOptionsInformationShownOnLockScreenType に指定できる値
 |userDisplayNameDomainUser|1-d|ユーザーの表示名、ドメインおよびユーザー名|
 |userDisplayNameOnly|pbm-2|ユーザーの表示名のみ|
 |Displaydisplayuser|1/3|ユーザー情報を表示しない|
+
 
 
 

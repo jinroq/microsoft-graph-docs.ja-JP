@@ -4,12 +4,12 @@ description: モバイルアプリのトラブルシューティングイベン�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6fd3ba328dac666feac9f5a87dd8cfebe7627f43
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a0b90b903c024377ad74509f8a16617b1dd28fb1
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939747"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990968"
 ---
 # <a name="mobileapptroubleshootingapptargethistory-resource-type"></a>mobileAppTroubleshootingAppTargetHistory リソースの種類
 
@@ -30,7 +30,7 @@ ms.locfileid: "33939747"
 |runState|[runState](../resources/intune-shared-runstate.md)|アイテムの状態。 可能な値は、`unknown`、`success`、`fail` です。|
 |errorCode|String|失敗のエラーコード。エラーがない場合は空です。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -49,6 +49,7 @@ ms.locfileid: "33939747"
   "errorCode": "String"
 }
 ```
+
 
 
 

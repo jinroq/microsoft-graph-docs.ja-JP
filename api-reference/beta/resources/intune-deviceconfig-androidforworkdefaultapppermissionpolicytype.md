@@ -4,12 +4,12 @@ description: Android 用の既定のアプリのアクセス許可ポリシー�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8db747055ab1e817b3b6cc1e519586e8add9cf7e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c4d4e4bccb65f87e5a7ba77027e636e076980408
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33948662"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991185"
 ---
 # <a name="androidforworkdefaultapppermissionpolicytype-enum-type"></a>androidForWorkDefaultAppPermissionPolicyType 列挙型
 
@@ -26,6 +26,7 @@ Android 用の既定のアプリのアクセス許可ポリシーの種類。
 |音声ガイダンス|1-d|・.|
 |autoGrant|pbm-2|自動付与|
 |autoDeny|1/3|自動拒否。|
+
 
 
 

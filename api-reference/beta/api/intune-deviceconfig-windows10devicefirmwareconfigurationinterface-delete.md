@@ -1,30 +1,30 @@
 ---
-title: windowsInformationProtectionAppLearningSummary の削除
-description: windowsInformationProtectionAppLearningSummary を削除します。
+title: Windows10DeviceFirmwareConfigurationInterface の削除
+description: Windows10DeviceFirmwareConfigurationInterface を削除します。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cc7ad0d1d1f1873ca4ab9a09f4fd299091c5e2ad
+ms.openlocfilehash: 20d32e183641673b14244426dfb92f493e9fc25c
 ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/14/2019
-ms.locfileid: "34990506"
+ms.locfileid: "35001679"
 ---
-# <a name="delete-windowsinformationprotectionapplearningsummary"></a>windowsInformationProtectionAppLearningSummary の削除
+# <a name="delete-windows10devicefirmwareconfigurationinterface"></a>Windows10DeviceFirmwareConfigurationInterface の削除
 
 > **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
 > **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md) を削除します。
+[Windows10DeviceFirmwareConfigurationInterface](../resources/intune-deviceconfig-windows10devicefirmwareconfigurationinterface.md)を削除します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
-|委任 (職場または学校のアカウント)|DeviceManagementApps.ReadWrite.All|
+|委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -34,7 +34,9 @@ ms.locfileid: "34990506"
 }
 -->
 ``` http
-DELETE /deviceManagement/windowsInformationProtectionAppLearningSummaries/{windowsInformationProtectionAppLearningSummaryId}
+DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
+DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
+DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
@@ -54,7 +56,7 @@ DELETE /deviceManagement/windowsInformationProtectionAppLearningSummaries/{windo
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceManagement/windowsInformationProtectionAppLearningSummaries/{windowsInformationProtectionAppLearningSummaryId}
+DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
 ### <a name="response"></a>応答

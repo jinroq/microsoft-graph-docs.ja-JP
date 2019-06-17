@@ -4,12 +4,12 @@ description: NetworkManagementCondition オブジェクトのプロパティと�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7e4103213a2cb429eef9fe4ecbb252923e0163d0
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 76d8a285e0d4e01788fd84df75dcb88d9c17034d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33905218"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34984969"
 ---
 # <a name="get-networkmanagementcondition"></a>NetworkManagementCondition の取得
 
@@ -84,6 +84,7 @@ Content-Length: 475
   }
 }
 ```
+
 
 
 

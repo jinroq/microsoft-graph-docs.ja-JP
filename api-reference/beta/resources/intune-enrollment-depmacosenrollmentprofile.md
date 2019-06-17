@@ -4,12 +4,12 @@ description: DepMacOSEnrollmentProfile リソースは、macOS 構成に固有�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 04473231f8110228f798a3959977748585018dd4
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b848745087c74a77ee33622603aab377c07f705f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941626"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987314"
 ---
 # <a name="depmacosenrollmentprofile-resource-type"></a>depMacOSEnrollmentProfile リソースの種類
 
@@ -66,7 +66,7 @@ DepMacOSEnrollmentProfile リソースは、macOS 構成に固有の Apple Devic
 |iCloudStorageDisabled|Boolean|ICloud ドキュメントとデスクトップ画面が無効かどうかを示します|
 |[Lockscreenを無効にする] を設定します。|Boolean|ICloud ドキュメントとデスクトップ画面が無効かどうかを示します|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -113,6 +113,7 @@ DepMacOSEnrollmentProfile リソースは、macOS 構成に固有の Apple Devic
   "chooseYourLockScreenDisabled": true
 }
 ```
+
 
 
 

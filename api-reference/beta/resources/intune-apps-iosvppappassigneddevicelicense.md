@@ -4,12 +4,12 @@ description: iOS Volume Purchase Program デバイスライセンスの割り当
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7d0a8809f93c6736db118e682e2a55f22b023452
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6236b6f1d65a5b1d07a70407554f5af7b344258c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950390"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979327"
 ---
 # <a name="iosvppappassigneddevicelicense-resource-type"></a>iosVppAppAssignedDeviceLicense リソースの種類
 
@@ -42,7 +42,7 @@ iOS Volume Purchase Program デバイスライセンスの割り当て。 この
 |managedDeviceId|String|管理されているデバイス ID。|
 |deviceName|String|デバイス名。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -65,6 +65,7 @@ iOS Volume Purchase Program デバイスライセンスの割り当て。 この
   "deviceName": "String"
 }
 ```
+
 
 
 

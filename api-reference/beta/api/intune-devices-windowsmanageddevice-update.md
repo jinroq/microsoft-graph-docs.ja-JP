@@ -4,12 +4,12 @@ description: WindowsManagedDevice オブジェクトのプロパティを更新�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 409515846e70407d7adff4ae37334b16251450bc
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 1e3b100ec607e4829ef8e94ec452640adb133710
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33909226"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34978473"
 ---
 # <a name="update-windowsmanageddevice"></a>WindowsManagedDevice を更新する
 
@@ -117,7 +117,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |managementCertificateExpirationDate|DateTimeOffset|[Manageddevice](../resources/intune-devices-manageddevice.md)から継承されたデバイス管理証明書の有効期限日を報告します|
 |iccid|String|Ic カード識別子。 SIM カードの一意の識別番号です。 [Manageddevice](../resources/intune-devices-manageddevice.md)から継承します|
 |udid|String|IOS および macOS デバイスの一意のデバイス識別子。 [Manageddevice](../resources/intune-devices-manageddevice.md)から継承します|
-|roleScopeTagIds|String collection|このデバイスインスタンスの範囲タグ Id のリスト。 [Manageddevice](../resources/intune-devices-manageddevice.md)から継承します|
+|roleScopeTagIds|文字列コレクション|このデバイスインスタンスの範囲タグ Id のリスト。 [Manageddevice](../resources/intune-devices-manageddevice.md)から継承します|
 |windowsActiveMalwareCount 再計算|Int32|[Manageddevice](../resources/intune-devices-manageddevice.md)から継承された、この windows デバイスのアクティブなマルウェアの数|
 |windowsRemediatedMalwareCount|Int32|[Manageddevice](../resources/intune-devices-manageddevice.md)から継承された、この windows デバイスの修復されたマルウェアの数|
 |notes|String|IT 管理者によって作成された、 [manageddevice](../resources/intune-devices-manageddevice.md)から継承したデバイス上のメモ|
@@ -482,6 +482,7 @@ Content-Length: 7342
   }
 }
 ```
+
 
 
 

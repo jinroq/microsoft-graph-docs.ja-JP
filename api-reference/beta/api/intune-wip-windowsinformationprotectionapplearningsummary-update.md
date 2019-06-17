@@ -4,12 +4,12 @@ description: windowsInformationProtectionAppLearningSummary オブジェクト�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4650343d323cc850ff7dcd96d14b36c1d52127ef
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f0fcbea36afd6503b851544f405eb4cd61b7c75f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33898312"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990457"
 ---
 # <a name="update-windowsinformationprotectionapplearningsummary"></a>windowsInformationProtectionAppLearningSummary の更新
 
@@ -92,6 +92,7 @@ Content-Length: 240
   "deviceCount": 11
 }
 ```
+
 
 
 

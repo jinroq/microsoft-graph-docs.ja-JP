@@ -4,12 +4,12 @@ description: Android アプリケーションのカスタム構成スキーマ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3012542315cd30a565da315a9d383757557b1008
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 706a4daa53201f8bdf295ca26ecf6f20134437da
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950544"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991416"
 ---
 # <a name="androidmanagedstoreappconfigurationschemaitem-resource-type"></a>androidManagedStoreAppConfigurationSchemaItem リソースの種類
 
@@ -32,7 +32,7 @@ Android アプリケーションのカスタム構成スキーマ内の単一構
 |dataType|[androidManagedStoreAppConfigurationSchemaItemDataType](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitemdatatype.md)|このアイテムが記述する値の種類。 可能な値は、`bool`、`integer`、`string`、`choice`、`multiselect`、`bundle`、`bundleArray`、`hidden` です。|
 |selections|[keyValuePair](../resources/intune-shared-keyvaluepair.md) コレクション|このアイテムに設定可能な有効な値に対しての、人間が判読できる名前と値の組のリスト (選択肢と複数選択項目のみ)|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -64,6 +64,7 @@ Android アプリケーションのカスタム構成スキーマ内の単一構
   ]
 }
 ```
+
 
 
 

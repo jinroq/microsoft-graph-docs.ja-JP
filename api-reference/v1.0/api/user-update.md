@@ -4,16 +4,17 @@ description: ユーザー オブジェクトのプロパティを更新します
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 19915ca1dae544deaa6c4b8263430f8b3ccfb669
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 97265c1d6c36e425b312e088e6078341a2cff5b8
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33600702"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993530"
 ---
 # <a name="update-user"></a>ユーザーを更新する
 
 ユーザー オブジェクトのプロパティを更新します。
+
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -23,13 +24,16 @@ ms.locfileid: "33600702"
 |委任 (個人用 Microsoft アカウント) | User.ReadWrite    |
 |アプリケーション | User.ReadWrite.All、Directory.ReadWrite.All |
 
-passwordProfile プロパティを更新するときは、次のアクセス許可が必要です。Directory.AccessAsUser.All。
+>[!NOTE]
+> - **passwordProfile** プロパティを更新するときは、次のアクセス許可が必要です。Directory.AccessAsUser.All。
+> - 他のユーザーの**businessPhones**、**mobilePhone**、または**otherMails** のプロパティの更新を許可されているのは、管理者以外のユーザーまたは次のロールのいずれかを割り当てられたユーザーのみになります。ディレクトリ閲覧者、ゲスト招待元、メッセージ センター閲覧者およびレポート閲覧者。 詳細については、「[Azure AD で使用できるロール](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)」のヘルプデスク (パスワード) 管理者を参照してください。  User.ReadWrite.All または Directory.ReadWrite.All の委任またはアプリケーションのアクセス許可のいずれかが与えられているアプリの場合、これに該当します。
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /users/{id | userPrincipalName}
 ```
+
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値|
 |:-----------|:------|
@@ -42,21 +46,23 @@ PATCH /users/{id | userPrincipalName}
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |aboutMe|String|ユーザーが自分自身について記述する、フリー フォームのテキスト入力フィールド。|
-|accountEnabled|Boolean| アカウントが有効な場合は **true**。そうでない場合は **false**。このプロパティは、ユーザーの作成時に必要です。$filter をサポートします。    |
+|accountEnabled|ブール値| アカウントが有効な場合は **true**。そうでない場合は **false**。 このプロパティは、ユーザーの作成時に必要です。    |
 |birthday|DateTimeOffset|ユーザーの誕生日。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
-|city|String|ユーザーがいる都市。$filter をサポートします。|
-|country|String|ユーザーがいる国/地域。たとえば、「US (米国)」や「UK (英国)」です。$filter をサポートします。|
-|department|String|ユーザーが働いている部門の名前。$filter をサポートします。|
+|businessPhones| String collection | ユーザーの電話番号。注:文字列コレクションですが、このプロパティに設定できるのは 1 つの数字のみです。|
+|city|String|ユーザーがいる都市。|
+|country|String|ユーザーがいる国/地域。たとえば、「US (米国)」や「UK (英国)」です。|
+|department|String|ユーザーが働いている部門の名前。|
 |displayName|String|アドレス帳に表示されるユーザーの名前。これは通常、ユーザーの名前、ミドルネームのイニシャル、姓の組み合わせです。このプロパティは、ユーザーの作成時に必須になります。更新時にクリアすることはできません。$filter および $orderby をサポートします。|
-|givenName|String|ユーザーの名。$filter をサポートします。|
+|givenName|String|ユーザーの名。|
 |hireDate|DateTimeOffset|ユーザーの採用日付。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |interests|String collection|ユーザーが自分の関心事を記述する一覧。|
-|jobTitle|String|ユーザーの役職。$filter をサポートします。|
-|mailNickname|String|ユーザーの電子メール エイリアス。ユーザーの作成時に、このプロパティを指定する必要があります。$filter をサポートします。|
+|jobTitle|String|ユーザーの役職。|
+|mailNickname|String|ユーザーの電子メール エイリアス。 ユーザーの作成時に、このプロパティを指定する必要があります。|
 |mobilePhone|String|ユーザーの主な携帯電話の番号。|
 |mySite|String|ユーザーの個人用サイトの URL。|
 |officeLocation|String|ユーザーの勤務先の場所。|
-|onPremisesImmutableId|String|このプロパティは、オンプレミスの Active Directory ユーザー アカウントを Azure AD ユーザー オブジェクトに関連付けるために使用します。Graph で新しいユーザー アカウントを作成するとき、ユーザーの **userPrincipalName** (UPN) プロパティにフェデレーション ドメインを使用する場合は、このプロパティを指定する必要があります。**重要:****$** と **_** の文字は、このプロパティを指定するときには使用できません。$filter をサポートします。                            |
+|onPremisesImmutableId|String|このプロパティは、オンプレミスの Active Directory ユーザー アカウントを Azure AD ユーザー オブジェクトに関連付けるために使用します。 Graph で新しいユーザー アカウントを作成するとき、ユーザーの **userPrincipalName** (UPN) プロパティにフェデレーション ドメインを使用する場合は、このプロパティを指定する必要があります。 **重要:** **$** と **_** の文字は、このプロパティを指定するときには使用できません。                            |
+|otherMails|String |ユーザーの追加のメール アドレスの一覧 (例: `["bob@contoso.com", "Robert@fabrikam.com"]`)。|
 |passwordPolicies|String|ユーザーのパスワード ポリシーを指定します。この値は列挙値であり、可能な 1 つの値は "DisableStrongPassword" です。この場合は、既定のポリシーより脆弱なパスワードを指定できます。"DisablePasswordExpiration" を指定することもできます。2 つを一緒に指定することもできます。例:"DisablePasswordExpiration, DisableStrongPassword"|
 |passwordProfile|[PasswordProfile](../resources/passwordprofile.md)|ユーザーのパスワード プロファイルを指定します。プロファイルには、ユーザーのパスワードが含まれています。このプロパティは、ユーザーの作成時に必要です。プロファイルにあるパスワードは、**passwordPolicies** プロパティによって指定されている最小要件を満たす必要があります。既定では、強力なパスワードが必要です。|
 |pastProjects|String collection|ユーザーが過去のプロジェクトを列挙する一覧。|
@@ -65,12 +71,12 @@ PATCH /users/{id | userPrincipalName}
 |responsibilities|String collection|ユーザーが自分の責任の範囲を列挙する一覧。|
 |schools|String collection|ユーザーが在籍した学校を列挙する一覧。|
 |skills|String collection|ユーザーが自分のスキルを列挙する一覧。|
-|state|String|ユーザーの住所の都道府県。$filter をサポートします。|
+|state|String|ユーザーの住所の都道府県。|
 |streetAddress|String|ユーザーの勤務先の番地。|
-|surname|String|ユーザーの姓。$filter をサポートします。|
-|usageLocation|String|2 文字の国コード (ISO 規格 3166)国におけるサービスの利用可能性を確認することが法的に義務付けられているため、ライセンスを割り当てられるユーザーには必須です。例:"US"、"JP"、"GB"null 許容ではありません。$filter をサポートします。|
+|surname|String|ユーザーの姓。|
+|usageLocation|String|2 文字の国コード (ISO 規格 3166) 国におけるサービスの利用可能性を確認することが法的に義務付けられているため、ライセンスを割り当てられるユーザーには必須です。  たとえば、"US"、"JP"、"GB" などです。 null 許容ではありません。|
 |userPrincipalName|String|ユーザーのユーザー プリンシパル名 (UPN)。UPN は、インターネット標準 RFC 822 に基づいた、インターネット スタイルのユーザーのログイン名です。規則では、これはユーザーの電子メール名にマップされる必要があります。一般的な形式は alias@domain です。このドメインは、検証済みドメインのテナントのコレクション内に存在している必要があります。このプロパティは、ユーザーの作成時に必要です。テナントの検証済みのドメインには、[organization](../resources/organization.md) の **verifiedDomains** プロパティからアクセスできます。$filter および $orderby をサポートします。
-|userType|String|ディレクトリ内のユーザーの種類を分類するために使用する文字列値 (“Member”、“Guest” など)。$filter をサポートします。          |
+|userType|String|ディレクトリ内のユーザーの種類を分類するために使用する文字列値 (“Member”、“Guest” など)。          |
 
 ## <a name="response"></a>応答
 

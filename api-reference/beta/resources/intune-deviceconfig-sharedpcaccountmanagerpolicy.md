@@ -4,12 +4,12 @@ description: 共有 PC アカウント マネージャー ポリシーです。 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f604df505bea11c59d1e0e3c0acdb5b638295449
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ef25086d573d084e9a4c2917eaa5f56a70bea244
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944720"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34992459"
 ---
 # <a name="sharedpcaccountmanagerpolicy-resource-type"></a>sharedPCAccountManagerPolicy リソース タイプ
 
@@ -27,7 +27,7 @@ ms.locfileid: "33944720"
 |inactiveThresholdDays|Int32|指定した期間にわたってログオンしていない場合にアカウントの削除が始まるタイミングを日数で指定します。 AccountDeletionPolicy が DiskSpaceThreshold または DiskSpaceThresholdOrInactiveThreshold の場合にのみ適用されます。|
 |removeAccountsBelowDiskFreePercentage|Int32|キャッシュ済みのアカウントを削除してディスク領域を空ける前に、PC に残っているディスク領域の割合を設定します。 非アクティブの状態が最長のアカウントから削除されます。 AccountDeletionPolicy が DiskSpaceThresholdOrInactiveThreshold の場合にのみ適用されます。 有効な値は 0 から 100 までです|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -46,6 +46,7 @@ ms.locfileid: "33944720"
   "removeAccountsBelowDiskFreePercentage": 1024
 }
 ```
+
 
 
 

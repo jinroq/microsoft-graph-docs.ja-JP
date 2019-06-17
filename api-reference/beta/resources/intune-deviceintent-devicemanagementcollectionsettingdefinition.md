@@ -4,12 +4,12 @@ description: コレクション設定の定義を表すエンティティ
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d917ed25048d0a63196262aad1c7c945f4ce7d55
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 551b80075fce8a1edf93be6299656fdd8bf0735d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943530"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34988861"
 ---
 # <a name="devicemanagementcollectionsettingdefinition-resource-type"></a>deviceManagementCollectionSettingDefinition リソースの種類
 
@@ -40,12 +40,12 @@ ms.locfileid: "33943530"
 |isTopLevel|Boolean|設定が最上位レベルの場合は、 [Devicemanagementsettingdefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)から継承されたコレクションまたは複雑な設定でラップする必要がなく、構成することができます。|
 |description|String|[Devicemanagementsettingdefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)から継承された設定の説明|
 |Documentation Url|String|[Devicemanagementsettingdefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)から継承されたドキュメントを設定するための Url|
-|keywords|String collection|[Devicemanagementsettingdefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)から継承した設定に関連付けられているキーワード|
+|keywords|文字列コレクション|[Devicemanagementsettingdefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)から継承した設定に関連付けられているキーワード|
 |式|[Devicemanagementconstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)コレクション|[Devicemanagementsettingdefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)から継承された設定値の制約のコレクション|
 |ヲ|[Devicemanagementsettingdependency](../resources/intune-deviceintent-devicemanagementsettingdependency.md)コレクション|[Devicemanagementsettingdefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)から継承された他の設定に対する依存関係のコレクション|
 |elementDefinitionId|String|コレクションの各要素がどのようなものかを示す設定定義 ID。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -87,6 +87,7 @@ ms.locfileid: "33943530"
   "elementDefinitionId": "String"
 }
 ```
+
 
 
 

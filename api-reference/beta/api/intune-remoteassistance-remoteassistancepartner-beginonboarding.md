@@ -4,12 +4,12 @@ description: オンボードを開始する要求。  適切な TeamViewer ア�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0ba1ec22e80cf7c876e3ed2767ade9e05cd8823f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: deddb0d2ac31fd5d395e58e868d11f73b1f053b0
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899418"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989624"
 ---
 # <a name="beginonboarding-action"></a>beginOnboarding アクション
 
@@ -62,6 +62,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/remoteAssistancePartners/
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

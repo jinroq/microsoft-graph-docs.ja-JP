@@ -4,12 +4,12 @@ description: Win32 アプリを検出するためのファイルまたはフォ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 498e4b953b283ac0a0cffa6a7a21ea91232b724b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 90d620a13b6472960dad7ab6edd90b1d237387d2
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949592"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987321"
 ---
 # <a name="win32lobappfilesystemrequirement-resource-type"></a>win32LobAppFileSystemRequirement リソースの種類
 
@@ -32,7 +32,7 @@ Win32 アプリを検出するためのファイルまたはフォルダーの�
 |check32BitOn64System|Boolean|このファイルまたはフォルダーが、64ビットのシステム上の32ビット版アプリをチェックするためのものであるかどうかを示す値。|
 |detectionType|[win32LobAppFileSystemDetectionType](../resources/intune-apps-win32lobappfilesystemdetectiontype.md)|ファイルシステムの検出の種類。 可能な値は、`notConfigured`、`exists`、`modifiedDate`、`createdDate`、`version`、`sizeInMB`、`doesNotExist` です。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -53,6 +53,7 @@ Win32 アプリを検出するためのファイルまたはフォルダーの�
   "detectionType": "String"
 }
 ```
+
 
 
 

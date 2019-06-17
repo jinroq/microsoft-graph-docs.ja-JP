@@ -4,12 +4,12 @@ description: コンプライアンスアプリリストの可能な値。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 98d7f8a71f12dd70eb062a1e6eff5c5c3054fd40
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5df56b14d3c5416a04245ffbccd0b3b887266bde
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947555"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987790"
 ---
 # <a name="applisttype-enum-type"></a>appListType 列挙型
 
@@ -25,6 +25,7 @@ ms.locfileid: "33947555"
 |none|.0|既定値。意図的ではありません。|
 |appsInListCompliant|1-d|リストは、準拠していると見なされるアプリを表します (リスト上のアプリのみが準拠しています)。|
 |appsNotInListCompliant|pbm-2|このリストは、非準拠と見なされるアプリを表します (すべてのアプリはリスト上のアプリ以外に準拠しています)。|
+
 
 
 

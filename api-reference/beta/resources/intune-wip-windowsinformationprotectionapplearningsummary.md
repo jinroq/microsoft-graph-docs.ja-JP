@@ -4,12 +4,12 @@ description: Windows 情報保護アプリの学習概要エンティティ。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5d5362e34ba067f02f794ca587ae1ccceb00e1af
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2d827c38b0b7eb784e58ad722c2039990ce33495
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33938696"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983478"
 ---
 # <a name="windowsinformationprotectionapplearningsummary-resource-type"></a>windowsInformationProtectionAppLearningSummary リソースの種類
 
@@ -36,7 +36,7 @@ Windows 情報保護アプリの学習概要エンティティ。
 |applicationType|[applicationType](../resources/intune-wip-applicationtype.md)|アプリケーションの種類。 可能な値は、`universal`、`desktop` です。|
 |deviceCount|Int32|デバイス数|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -56,6 +56,7 @@ Windows 情報保護アプリの学習概要エンティティ。
   "deviceCount": 1024
 }
 ```
+
 
 
 

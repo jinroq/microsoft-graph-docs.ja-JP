@@ -4,12 +4,12 @@ description: FirewallPacketQueueingMethod に指定できる値
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9b1802e150460e1e687b8303716a723146e4ca67
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a4c7556fb3c37f9bfd564e31744f0e27a4482d6e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946687"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34985851"
 ---
 # <a name="firewallpacketqueueingmethodtype-enum-type"></a>firewallPacketQueueingMethodType 列挙型
 
@@ -27,6 +27,7 @@ FirewallPacketQueueingMethod に指定できる値
 |queueInbound|pbm-2|暗号化された着信パケットをキューに保存する|
 |queueOutbound|1/3|転送のためにキューに復号化された送信パケット|
 |queueBoth|2/4|受信パケットと送信パケットの両方をキューにする|
+
 
 
 

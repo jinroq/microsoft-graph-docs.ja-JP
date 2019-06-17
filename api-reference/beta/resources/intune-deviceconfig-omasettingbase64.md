@@ -4,12 +4,12 @@ description: OMA 設定の Base64 定義。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8affdb1f073831df54837420b54f9a0ea19ad956
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6ecb77bc317216e77cb53c31b8be9bded9cafc19
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951045"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995554"
 ---
 # <a name="omasettingbase64-resource-type"></a>omaSettingBase64 リソースの種類
 
@@ -31,7 +31,7 @@ OMA 設定の Base64 定義。
 |fileName|String|Value プロパティに関連付けられているファイル名 (*.cer | * .crt | *. p7b | * .bin)。|
 |value|文字列|値。 (Base64 エンコード文字列)|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -51,6 +51,7 @@ OMA 設定の Base64 定義。
   "value": "String"
 }
 ```
+
 
 
 

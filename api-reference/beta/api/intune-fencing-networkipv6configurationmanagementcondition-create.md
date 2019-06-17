@@ -4,12 +4,12 @@ description: 新しい networkIPv6ConfigurationManagementCondition オブジェ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: da7d53c1256ed8ea2d09c7ca0f0ee67c8f3a91b8
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ec676bc579644e0328610a42dc172b96c5ee8036
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33905316"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34984367"
 ---
 # <a name="create-networkipv6configurationmanagementcondition"></a>NetworkIPv6ConfigurationManagementCondition を作成する
 
@@ -61,8 +61,8 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 |アプリケーションのプラットフォーム|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)コレクション|この管理条件の適用可能なプラットフォーム。 [Managementcondition](../resources/intune-fencing-managementcondition.md)から継承されます。 可能な値は、`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`unknown` です。|
 |ipV6Prefix|String|接続先の IPv6 サブネット。 例: 2001 年: db8::/32|
 |ipV6Gateway|String|IPv6 ゲートウェイアドレス。 例: 2001 年: db8:: 1|
-|ipV6DNSServerList|String collection|アダプターに対して構成された IPv6 DNS サーバー。|
-|dnsSuffixList|String collection|現在のネットワークの有効な DNS サフィックス。 例: seattle.contoso.com|
+|ipV6DNSServerList|文字列コレクション|アダプターに対して構成された IPv6 DNS サーバー。|
+|dnsSuffixList|文字列コレクション|現在のネットワークの有効な DNS サフィックス。 例: seattle.contoso.com|
 
 
 
@@ -127,6 +127,7 @@ Content-Length: 651
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: GroupPolicyPresentationComboBox オブジェクトのプロパテ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e842333f88f6ba08e68a67feb935819a33963971
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 04bc5333e8f8fc67a4551708823421b6127862a9
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33904994"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34985074"
 ---
 # <a name="update-grouppolicypresentationcombobox"></a>GroupPolicyPresentationComboBox の更新
 
@@ -55,7 +55,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |id|String|エンティティのキー。 [GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
 |lastModifiedDateTime|DateTimeOffset|エンティティが最後に変更された日付と時刻。 [GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
 |defaultValue|String|コンボボックスに表示されるローカライズされた既定の文字列。 既定値は空白です。|
-|助言|String collection|コンボボックスのドロップダウンリストに表示されるローカライズされた文字列。 既定値は空白です。|
+|助言|文字列コレクション|コンボボックスのドロップダウンリストに表示されるローカライズされた文字列。 既定値は空白です。|
 |必須|Boolean|パラメーターに値を指定する必要があるかどうかを指定します。 既定値は false です。|
 |maxLength|Int64|パラメーターのテキスト文字の最大数を指定する符号なし整数。 既定値は1023です。|
 
@@ -105,6 +105,7 @@ Content-Length: 346
   "maxLength": 9
 }
 ```
+
 
 
 

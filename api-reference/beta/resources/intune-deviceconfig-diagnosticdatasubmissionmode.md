@@ -4,12 +4,12 @@ description: デバイスが診断データと使用統計情報 (Watson など)
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5ba90c6cbbd8e242e4cd5902a938d5e670d7d2d7
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: cf69232ee31bf7fd1eebd440e482d76c052f4fbc
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946876"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989925"
 ---
 # <a name="diagnosticdatasubmissionmode-enum-type"></a>diagnosticDataSubmissionMode 列挙型
 
@@ -27,6 +27,7 @@ ms.locfileid: "33946876"
 |基本的な|pbm-2|基本的なテレメトリデータを送信します。|
 |保護|1/3|利用状況データおよびインサイトデータを含む、拡張されたテレメトリデータを送信します。|
 |完全|2/4|システム状態などの診断データを含む完全なテレメトリデータを送信します。|
+
 
 
 

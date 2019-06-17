@@ -4,12 +4,12 @@ description: telecomExpenseManagementPartner リソースは、特定の TEM サ
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7479619bf7493ca2f043d7423d994f9fb0b6f905
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d6f0a0fd7b98627adfb49c88f619c6d8d6fd9fbe
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939827"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991003"
 ---
 # <a name="telecomexpensemanagementpartner-resource-type"></a>telecomExpenseManagementPartner リソースの種類
 
@@ -38,7 +38,7 @@ telecomExpenseManagementPartner リソースは、特定の TEM サービスの�
 |enabled|ブール型 (Boolean)|TEM サービスへの Intune の接続が現在有効であるか、無効であるかを示します。|
 |lastConnectionDateTime|DateTimeOffset|TEM パートナーによって Intune に対して最後に送信された要求のタイムスタンプ。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -60,6 +60,7 @@ telecomExpenseManagementPartner リソースは、特定の TEM サービスの�
   "lastConnectionDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

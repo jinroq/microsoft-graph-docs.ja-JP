@@ -4,16 +4,16 @@ description: deviceAppManagement オブジェクトのプロパティを更新�
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: cd9b4cbfbfc277b0a6b69032b0304ae13370c947
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 03290cf87550427878d1b01d2ea4e3da9712fd8c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33898538"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990086"
 ---
 # <a name="update-deviceappmanagement"></a>Update deviceAppManagement
 
-> **重要:** Microsoft Graph の/ベータ版の Api は変更される可能性があります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** Microsoft Graph の/ベータ版の Api は変更される可能性があります。 実稼働アプリケーションでは、これらの API の使用はサポートされていません。
 
 > **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
@@ -24,7 +24,7 @@ ms.locfileid: "33898538"
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
 | 委任 (職場または学校のアカウント) | |
-| &nbsp;&nbsp; **アプリ**、**ブック**、または**オンボード** | DeviceManagementApps.ReadWrite.All |
+| &nbsp;&nbsp; **アプリ**、**ブック**、**オンボード**、または**パートナーの統合** | DeviceManagementApps.ReadWrite.All |
 | &nbsp;&nbsp; **デバイスの管理** | DeviceManagementManagedDevices.ReadWrite.All |
 | 委任 (個人用 Microsoft アカウント) | サポートされていません。 |
 | アプリケーション | サポートされていません。 |

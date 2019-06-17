@@ -4,12 +4,12 @@ description: termsAndConditions エンティティは、特定の使用条件 (T
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8dc02275b32cdc3b5c0ca789890245c9b8593dec
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 756b66776599b07ca95d54f75ca549a5319ef581
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949158"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989470"
 ---
 # <a name="termsandconditions-resource-type"></a>termsAndConditions リソース タイプ
 
@@ -29,7 +29,7 @@ termsAndConditions エンティティは、特定の使用条件 (T&C) ポリシ
 |[Update termsAndConditions](../api/intune-companyterms-termsandconditions-update.md)|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md)|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |id|文字列|T&C ポリシーの一意識別子。|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。|
@@ -42,7 +42,7 @@ termsAndConditions エンティティは、特定の使用条件 (T&C) ポリシ
 |acceptanceStatement|String|使用条件に関する、管理者指定の説明内容です。通常は、T&C ポリシーに定められた使用条件を受け入れることの意味を記載します。 ユーザーが T&C ポリシーを承諾する際のプロンプトに表示されます。|
 |version|Int32|条件の現行バージョンを示す整数。 管理者が使用条件を変更し、修正された T&C ポリシーを再承諾するようにユーザーに求めると、値が増加します。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |groupAssignments|[termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md)コレクション|この T&C ポリシーのグループの割り当てのリスト。|
@@ -72,6 +72,7 @@ termsAndConditions エンティティは、特定の使用条件 (T&C) ポリシ
   "version": 1024
 }
 ```
+
 
 
 

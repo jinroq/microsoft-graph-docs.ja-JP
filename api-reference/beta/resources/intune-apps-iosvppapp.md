@@ -4,12 +4,12 @@ description: iOS ボリューム購入プログラム (VPP) アプリのプロ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8da9dcc71a33505cb2edc2cce3f01a3d14d0a4e0
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 74d7a872cb4be3b5a485394c94ebf52ff141078c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950404"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990051"
 ---
 # <a name="iosvppapp-resource-type"></a>iosVppApp リソース タイプ
 
@@ -53,7 +53,7 @@ iOS ボリューム購入プログラム (VPP) アプリのプロパティと継
 |uploadState|Int32|アップロード状態。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 [MobileApp](../resources/intune-apps-mobileapp.md)から継承されます。 可能な値は、`notPublished`、`processing`、`published` です。|
 |isAssigned|Boolean|アプリが少なくとも1つのグループに割り当てられているかどうかを示す値。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|roleScopeTagIds|String collection|このモバイルアプリの範囲タグ id のリスト。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|roleScopeTagIds|文字列コレクション|このモバイルアプリの範囲タグ id のリスト。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |dependentAppCount|Int32|子アプリが持つ依存関係の合計数。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |usedLicenseCount|Int32|使用中の VPP ライセンスの数。|
 |totalLicenseCount|Int32|VPP ライセンスの総数。|
@@ -68,7 +68,7 @@ iOS ボリューム購入プログラム (VPP) アプリのプロパティと継
 |vppTokenId|String|このアプリに関連付けられている VPP トークンの識別子。|
 |revokeLicenseActionResults|[iosVppAppRevokeLicensesActionResult](../resources/intune-apps-iosvppapprevokelicensesactionresult.md)コレクション|このアプリでのライセンスの取り消しアクションの結果。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |categories|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) コレクション|このアプリのカテゴリのリスト。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
@@ -151,6 +151,7 @@ iOS ボリューム購入プログラム (VPP) アプリのプロパティと継
   ]
 }
 ```
+
 
 
 

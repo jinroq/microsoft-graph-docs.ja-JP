@@ -4,12 +4,12 @@ description: 役割の割り当てのスコープの種類を指定します。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: faf0b7ea9cabde19746d4741f2a22583930aa31e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e6f413733ffcbf7b3bad6f4abfe4a4bb7feb0e09
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940002"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34982904"
 ---
 # <a name="roleassignmentscopetype-enum-type"></a>roleAssignmentScopeType 列挙型
 
@@ -26,6 +26,7 @@ ms.locfileid: "33940002"
 |allDevices|1-d|すべての Intune デバイスへの割り当てを許可します。|
 |allLicensedUsers|pbm-2|Intune にライセンスされたすべてのユーザーへの割り当てを許可します。|
 |allDevicesAndLicensedUsers|1/3|すべての Intune デバイスおよびライセンスされたユーザーへの割り当てを許可します。|
+
 
 
 

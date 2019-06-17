@@ -4,12 +4,12 @@ description: デバイス保護状態エンティティ。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dbacf6bacdb368418ad2338078e52885b208d69d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: cd507daef4d9055dcabce1e90481e22a77ec8180
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941654"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983919"
 ---
 # <a name="windowsprotectionstate-resource-type"></a>windowsProtectionState リソースの種類
 
@@ -26,7 +26,7 @@ ms.locfileid: "33941654"
 |[WindowsProtectionState の更新](../api/intune-devices-windowsprotectionstate-update.md)|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|[Windowsprotectionstate](../resources/intune-devices-windowsprotectionstate.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|デバイス保護状態オブジェクトの一意の識別子。 これはデバイスのデバイス id です|
 |malwareProtectionEnabled|Boolean|マルウェア対策が有効になっているか、または使用できない|
@@ -47,7 +47,7 @@ ms.locfileid: "33941654"
 |lastFullScanSignatureVersion|String|前回のフルスキャン署名バージョン|
 |lastReportedDateTime|DateTimeOffset|前回のデバイス正常性の状態が報告された時刻|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |detectedMalwareState|[windowsDeviceMalwareState](../resources/intune-devices-windowsdevicemalwarestate.md)コレクション|デバイスマルウェアの一覧|
@@ -83,6 +83,7 @@ ms.locfileid: "33941654"
   "lastReportedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

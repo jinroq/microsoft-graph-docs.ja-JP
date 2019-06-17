@@ -4,12 +4,12 @@ description: まだ文書化されていません
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 49238831005d579baba2dd55e431f1ac684e67d3
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a0c40fc7ade30a73212d1917294671fdb5423483
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943656"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34978767"
 ---
 # <a name="windowsupdateactivehoursinstall-resource-type"></a>windowsUpdateActiveHoursInstall リソースの種類
 
@@ -28,7 +28,7 @@ ms.locfileid: "33943656"
 |activeHoursStart|TimeOfDay|アクティブ時間の開始|
 |activeHoursEnd|TimeOfDay|アクティブ時間の終了|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -45,6 +45,7 @@ ms.locfileid: "33943656"
   "activeHoursEnd": "String (time of day)"
 }
 ```
+
 
 
 

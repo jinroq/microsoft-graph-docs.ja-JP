@@ -4,12 +4,12 @@ description: まだ文書化されていません
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 48698cf0f35fc39c8e385d391344914ea34745ea
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c69f2d22494e23783c39d781fee28ece49241b52
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950880"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986761"
 ---
 # <a name="mediacontentratingnewzealand-resource-type"></a>mediaContentRatingNewZealand リソースの種類
 
@@ -25,7 +25,7 @@ ms.locfileid: "33950880"
 |movieRating|[ratingNewZealandMoviesType](../resources/intune-deviceconfig-ratingnewzealandmoviestype.md)|ニュージーランドで選択されている映画のレーティング。 使用可能な値は、`allAllowed`、`allBlocked`、`general`、`parentalGuidance`、`mature`、`agesAbove13`、`agesAbove15`、`agesAbove16`、`agesAbove18`、`restricted`、`agesAbove16Restricted` です。|
 |tvRating|[ratingNewZealandTelevisionType](../resources/intune-deviceconfig-ratingnewzealandtelevisiontype.md)|ニュージーランド用に選択されているテレビのレーティング。 可能な値は、`allAllowed`、`allBlocked`、`general`、`parentalGuidance`、`adults` です。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -42,6 +42,7 @@ ms.locfileid: "33950880"
   "tvRating": "String"
 }
 ```
+
 
 
 

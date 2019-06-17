@@ -4,12 +4,12 @@ description: このクラスには、iOS のコンプライアンス設定が含
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8a3f3b576b9a9b590d45525fd6e2714ed28a375a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: cdff46b8cd7bd3c1054c02dbab031992a71ae7b5
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946841"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989477"
 ---
 # <a name="ioscompliancepolicy-resource-type"></a>iosCompliancePolicy リソースの種類
 
@@ -34,7 +34,7 @@ ms.locfileid: "33946841"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
+|roleScopeTagIds|文字列コレクション|このエンティティインスタンスの範囲タグのリスト。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |id|文字列|エンティティのキー。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |description|String|管理者が指定した、デバイス構成についての説明。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
@@ -60,7 +60,7 @@ ms.locfileid: "33946841"
 |managedEmailProfileRequired|Boolean|管理された電子メール プロファイルを必要とするかどうかを示します。|
 |restrictedApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) コレクション|デバイスに、指定されたアプリがインストールされていないことを要求します。 このコレクションには、最大100個の要素を含めることができます。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |scheduledActionsForRule|[deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md) コレクション|このルールのスケジュール済みのアクションのリスト ([deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承)|
@@ -119,6 +119,7 @@ ms.locfileid: "33946841"
   ]
 }
 ```
+
 
 
 

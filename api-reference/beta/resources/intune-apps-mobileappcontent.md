@@ -4,12 +4,12 @@ description: 特定のアプリのバージョンに関するコンテンツの�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 83474d02f877da01e5f4dd1076492d691b5097c6
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 1a3ed4b5d1e05b3d1f8621cecf875a6fbbe9d740
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949970"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990310"
 ---
 # <a name="mobileappcontent-resource-type"></a>mobileAppContent リソースの種類
 
@@ -29,11 +29,11 @@ ms.locfileid: "33949970"
 |[mobileAppContent の更新](../api/intune-apps-mobileappcontent-update.md)|[mobileAppContent](../resources/intune-apps-mobileappcontent.md)|[mobileAppContent](../resources/intune-apps-mobileappcontent.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|アプリのコンテンツのバージョンです。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |files|[mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) コレクション|このアプリのコンテンツのバージョンに関するファイルのリストです。|
@@ -53,6 +53,7 @@ ms.locfileid: "33949970"
   "id": "String (identifier)"
 }
 ```
+
 
 
 

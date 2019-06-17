@@ -4,12 +4,12 @@ description: 拡張認証プロトコル (EAP) 構成の種類。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 67636eac6d566fe021e0610aee32c764ebe400a8
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 05824bc47ab4d9c086786c26d93f59d72d4f84f7
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949039"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34988301"
 ---
 # <a name="androideaptype-enum-type"></a>Androide Aptype 列挙型
 
@@ -25,6 +25,7 @@ ms.locfileid: "33949039"
 |eapTls|スリー|拡張認証プロトコル-トランスポート層セキュリティ (EAP-TLS)。|
 |eapTtls|21|拡張認証プロトコル-トンネル転送層セキュリティ (EAP-TLS)。|
 |peap-gtc|まで|保護された拡張認証プロトコル (PEAP)。|
+
 
 
 

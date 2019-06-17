@@ -4,12 +4,12 @@ description: '[ホーム] ボタンを表示します。[ホーム] ボタンを
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 76951c80da374a69a62c45b2676e3f36794d4bb2
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: fdebeb93ea5d2199f2cdf5f5349c960e8466437c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946757"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989806"
 ---
 # <a name="edgehomebuttonopensnewtab-resource-type"></a>edgeHomeButtonOpensNewTab リソースの種類
 
@@ -26,7 +26,7 @@ ms.locfileid: "33946757"
 |プロパティ|型|説明|
 |:---|:---|:---|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -41,6 +41,7 @@ ms.locfileid: "33946757"
   "@odata.type": "#microsoft.graph.edgeHomeButtonOpensNewTab"
 }
 ```
+
 
 
 
