@@ -4,12 +4,12 @@ description: Microsoft Graph を呼び出すには、アプリが Microsoft ID �
 author: matt-steele
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2578d7d4533577e88993e5c83884b393c78dc2af
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 7e532867c9d92e2c2a7dd27e2e17a51fcbc1d2d4
+ms.sourcegitcommit: 118b3cea623d9abec666c9d295a25f18a43a8aee
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951228"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35017767"
 ---
 # <a name="authentication-and-authorization-basics-for-microsoft-graph"></a>Microsoft Graph の認証と承認の基本方法
 
@@ -76,6 +76,15 @@ _有効なアクセス許可_は、アプリが Microsoft Graph に要求を出�
 - 委任されたアクセス許可の場合、アプリの有効なアクセス許可は、アプリに付与されている委任されたアクセス許可 (同意によって付与) と現在サインインしているユーザーの特権が重なる範囲に収まります。 サインインしているユーザーよりも多くの特権がアプリに付与されることはありません。 組織では、サインインしているユーザーの特権は、ポリシーで決まることもあれば、1 つ以上の管理者ロールのメンバーシップで決まることもあります。 管理者ロールに関する詳細については、「[Azure Active Directory での管理者ロールの割り当て](https://docs.microsoft.com/ja-JP/azure/active-directory/active-directory-assign-admin-roles)」を参照してください。<br/><br/>たとえば、委任されたアクセス許可として User.ReadWrite.All がアプリに付与されているとします。 通常、このアクセス許可は、組織内の全ユーザーのプロフィールを読み取り、更新するアクセス許可をアプリに付与します。 サインインしているユーザーが全体管理者の場合、アプリは、組織内のすべてのユーザーのプロファイルを更新できるようになります。 ただし、サインインしているユーザーが管理者ロールに含まれていない場合、アプリは、そのサインインしているユーザーのプロファイルのみを更新できるようになります。 組織にいる他のユーザーのプロフィールは更新できません。アプリが代理するアクセス許可を持つユーザーに、そういった権限が付与されていないためです。
   
 - アプリケーションのアクセス許可の場合、アプリの有効なアクセス許可は、そのアクセス許可が暗示する完全なレベルの権限になります。 たとえば、アプリケーションのアクセス許可として User.ReadWrite.All が付与されているアプリは、組織内の全ユーザーのプロフィールを更新できます。
+
+>**注** 既定では、次のデータ セットに対するアプリケーション アクセス許可が与えられているアプリは、組織内のすべてのメールボックスにアクセスできます。
+
+- [予定表](../permissions-reference.md#calendars-permissions)
+- [連絡先](../permissions-reference.md#contacts-permissions)
+- [メール](../permissions-reference.md#mail-permissions)
+- [メールボックス設定](../permissions-reference.md#mail-permissions)
+
+>管理者は[アプリケーション アクセス ポリシー](../auth-limit-mailbox-access.md)を構成して、アプリのアクセスを_特定_のメールボックスに制限することができます。 
 
 Microsoft Graph に委任されたアクセス許可とアプリケーションのアクセス許可の詳細なリスト、管理者の同意が必要なアクセス許可については、「[アクセス許可のリファレンス](../permissions-reference.md)」を参照してください。
 

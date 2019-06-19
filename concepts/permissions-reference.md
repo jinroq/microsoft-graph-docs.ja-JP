@@ -3,12 +3,12 @@ title: 'Microsoft Graph のアクセス許可のリファレンス '
 description: Microsoft Graph は、アプリがアクセスするリソース (ユーザー、グループ、メールなど) を制御する詳細なアクセス許可を公開しています。 開発者は、アプリが要求する Microsoft Graph のアクセス許可を決定します。
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: b9574e4aa9c917caeb97ad1dcd602c74f8959f4c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: ef2c1ee28c758107581c390cc3131a733f02a436
+ms.sourcegitcommit: 118b3cea623d9abec666c9d295a25f18a43a8aee
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34988014"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35017739"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph のアクセス許可のリファレンス
 
@@ -180,6 +180,7 @@ _Application.ReadWrite.OwnedBy_ アクセス許可は、_Application.ReadWrite.A
 |_Calendars.Read_ |すべてのメールボックスにあるカレンダーの読み取り |サインインしているユーザーなしで、すべてのカレンダーのイベントをアプリで読み取れるようにします。 |必要 |
 |_Calendars.ReadWrite_ |すべてのメールボックスにあるカレンダーの読み取りと書き込み |サインインしているユーザーなしで、すべての予定表のイベントをアプリで作成、読み取り、更新、および削除できるようにします。 |はい |
 
+> **重要** アプリケーションに Calendars.Read または Calendars.ReadWrite のアプリケーション アクセス許可が付与されている場合でも、管理者は[アプリケーション アクセス ポリシー](auth-limit-mailbox-access.md)を構成して、組織内のすべてのメールボックスではなく_特定_のメールボックスにアプリケーション アクセスを制限することができます。
 <br/>
 
 ### <a name="example-usage"></a>使用例
@@ -270,6 +271,8 @@ _Application.ReadWrite.OwnedBy_ アクセス許可は、_Application.ReadWrite.A
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 |_Contacts.Read_ |すべてのメールボックスにある連絡先の読み取り |サインインしているユーザーなしで、すべてのメールボックス内のすべての連絡先をアプリで読み取りできるようにします。 |必要 |
 |_Contacts.ReadWrite_ |すべてのメールボックスにある連絡先の読み取りと書き込み |サインインしているユーザーなしで、すべてのメールボックス内のすべての連絡先をアプリで作成、読み取り、更新、および削除できるようにします。 |はい |
+
+> **重要** アプリケーションに Contacts.Read または Contacts.ReadWrite のアプリケーション アクセス許可が付与されている場合でも、管理者は[アプリケーション アクセス ポリシー](auth-limit-mailbox-access.md)を構成して、組織内のすべてのメールボックスではなく_特定_のメールボックスにアプリケーション アクセスを制限することができます。
 
 ### <a name="example-usage"></a>使用例
 #### <a name="delegated"></a>委任
@@ -683,6 +686,9 @@ _IdentityRiskyUser.Read.All_ は、職場または学校アカウントでのみ
 | _Mail.Send_ |    任意のユーザーからのメールを送信 | サインインしているユーザーなしで、任意のユーザーとしてアプリでメールを送信できるようにします。 | 必要 |
 | _MailboxSettings.Read_ |  すべてのユーザーのメールボックス設定の読み取り | サインインしているユーザーなしで、ユーザーのメールボックス設定をアプリで読み取れるようにします。メールを送信するためのアクセス許可は含まれません。 | いいえ |
 | _MailboxSettings.ReadWrite_ | ユーザーのすべてのメールボックス設定の読み取りと書き込み  | サインインしているユーザーなしで、アプリでユーザーのメールボックス設定の作成、読み取り、更新、削除を行えるようにします。メールを送信するためのアクセス許可は含まれません。 | はい |
+
+> **重要** アプリケーションに Mail.Read、Mail.ReadWrite、Mail.Send、MailboxSettings.Read、または MailboxSettings.ReadWrite のアプリケーション アクセス許可が付与されている場合でも、管理者は[アプリケーション アクセス ポリシー](auth-limit-mailbox-access.md)を構成して、組織内のすべてのメールボックスではなく_特定_のメールボックスにアプリケーション アクセスを制限することができます。
+
 
 ### <a name="remarks"></a>注釈
 
