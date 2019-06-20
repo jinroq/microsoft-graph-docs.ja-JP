@@ -3,11 +3,11 @@ title: workbookNamedItem リソースの種類
 description: セルまたは値の範囲の定義済みの名前を表します。名前には、(以下の型に見られるような) プリミティブ名前付きオブジェクト、範囲オブジェクト、範囲への参照を設定できます。このオブジェクトを使用して、名前に関連付けられた範囲オブジェクトを取得することができます。
 localization_priority: Normal
 ms.openlocfilehash: 49267379385a13b94e8639e4c129c05192b2ae6f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.sourcegitcommit: b523648530fcc8c2a3ded35b419be8047b9fcd10
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348895"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "35084083"
 ---
 # <a name="workbooknameditem-resource-type"></a>workbookNamedItem リソースの種類
 
@@ -28,7 +28,7 @@ ms.locfileid: "33348895"
 |[List](../api/nameditem-list.md) | [workbookNamedItem](workbooknameditem.md)コレクション |namedItem オブジェクトのコレクションを取得します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |name|string|オブジェクトの名前。読み取り専用です。|
 |comment|string|この名前に関連付けられているコメントを表します。|
@@ -37,7 +37,7 @@ ms.locfileid: "33348895"
 |value|string|定義されている名前が参照する数式を表します。例: =Sheet14!$B$2:$H$12、=4.75, など。読み取り専用です。|
 |visible|ブール値|オブジェクトを表示するかどうかを指定します。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 | リレーションシップ     | 型   |説明|
 |:---------------|:--------|:----------|
 |ワークシート|[workbookWorksheet](workbookworksheet.md)|名前付きのアイテムの対象になるワークシートを返します。アイテムの対象がワークシートの場合にのみ使用できます。読み取り専用です。|
