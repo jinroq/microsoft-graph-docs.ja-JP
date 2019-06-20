@@ -9108,6 +9108,13 @@ items:
                 href: api/teamstab-delete.md
           - name: チャット メッセージ
             href: resources/chatmessage.md
+            items:
+              - name: ホストされた画像を一覧表示する
+                href: api/chatmessagehostedimage-list-hostedimages.md
+              - name: ホストされた画像を取得する
+                href: api/chatmessagehostedimage-get.md
+              - name: ホストされた画像バイトを取得する
+                href: api/chatmessagehostedimage-getbytes.md
           - name: カレンダー
             href: resources/event.md
             items:
