@@ -1,44 +1,48 @@
 ---
 title: chatMessage リソースの種類
 description: チャネルまたはチャット エンティティ内の個別のチャット メッセージを表します。 メッセージは、ルート メッセージまたはメッセージの中の **replyToId** プロパティに定義されているスレッドの一部にすることができます。
-localization_priority: Priority
-author: nkramer
+localization_priority: Normal
+author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0639fd0b5317abd4814123b500ec0548f78d05ac
-ms.sourcegitcommit: abca7fcefeaa74b50f4600b35d816b626ba08468
+ms.openlocfilehash: 269041dece2ab626c5f3d0ecccbf70d62c296ede
+ms.sourcegitcommit: b523648530fcc8c2a3ded35b419be8047b9fcd10
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "34311162"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "35084048"
 ---
 # <a name="chatmessage-resource-type"></a>chatMessage リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[チャネル](channel.md)または[チャット](chat.md)内の個別のチャット メッセージを表します。 メッセージは、ルート メッセージまたはメッセージの中の **replyToId** プロパティに定義されているスレッドの一部にすることができます。
+[チャネル](channel.md)または[チャット](chat.md)内の個別のチャット メッセージを表します。
+メッセージは、ルート メッセージまたはメッセージの中の **replyToId** プロパティに定義されているスレッドの一部にすることができます。
 
 ## <a name="methods"></a>メソッド
 
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
-|[チャネル メッセージを一覧表示する](../api/channel-list-messages.md) | [chatmessage](chatmessage.md) コレクション | チャネルのすべてのルート メッセージの一覧を取得します。|
-|[チャネル メッセージを取得する](../api/channel-get-message.md) | [chatmessage](chatmessage.md) | チャネルからのルート メッセージを 1 件取得します。|
-|[メッセージへの返信を一覧表示する](../api/channel-list-messagereplies.md) | [chatmessage](chatmessage.md) コレクション| チャネル内のメッセージへの返信すべての一覧を取得します。|
-|[メッセージへの返信を取得する](../api/channel-get-messagereply.md) | [chatmessage](chatmessage.md)| チャネル内のメッセージへの返信を 1 件取得します。|
-|[チャネル内でメッセージを送信する](../api/channel-post-chatmessage.md) | [chatmessage](chatmessage.md)| チャネル内で新しい最上位レベルのメッセージを作成します。|
-|[チャネル内のメッセージに返信する](../api/channel-post-messagereply.md) | [chatmessage](chatmessage.md)| チャネル内の既存メッセージに返信します。|
-|[チャット内のメッセージを一覧表示する](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | 1 対 1 またはグループ チャットでのメッセージを取得します。 |
+|[チャネル メッセージを一覧表示する](../api/channel-list-messages.md) | [chatMessage](chatmessage.md) コレクション | チャネルのすべてのルート メッセージの一覧。|
+|[チャネル メッセージを取得する](../api/channel-get-message.md) | [chatMessage](chatmessage.md) | チャネルからのルート メッセージを 1 件取得します。|
+|[メッセージへの返信を一覧表示する](../api/channel-list-messagereplies.md) | [chatMessage](chatmessage.md) コレクション| チャネル内のメッセージへの返信すべての一覧。|
+|[メッセージへの返信を取得する](../api/channel-get-messagereply.md) | [chatMessage](chatmessage.md)| チャネル内のメッセージへの返信を 1 件取得します。|
+|[チャネルでの chatMessage の作成](../api/channel-post-messages.md) | [chatMessage](chatmessage.md)| チャネル内で新しい最上位レベルのメッセージを作成します。|
+|[チャネル内のメッセージに返信する](../api/channel-post-messagereply.md) | [chatMessage](chatmessage.md)| チャネル内の既存メッセージに返信します。|
+|[チャット内のメッセージを一覧表示する](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | 1 対 1 またはグループ チャットでのメッセージを一覧表示する。 |
 |[チャット内のメッセージを取得する](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | チャット内の 1 つのメッセージを取得します。 |
+|[ホストされているすべての画像を一覧表示する](../api/chatmessagehostedimage-list-hostedimages.md) | [hostedimage](../resources/chatmessagehostedimage.md)コレクション| メッセージ内のホストされているすべての画像を取得します。|
+|[ホストされている画像を取得する](../api/chatmessagehostedimage-get.md) | [hostedImage](../resources/chatmessagehostedimage.md) | メッセージからホストされている画像を取得します。|
+|[ホストされている画像バイトを取得する](../api/chatmessagehostedimage-getbytes.md) | バイナリ画像データ | メッセージからホストされている画像のバイナリ画像データを取得します。|
 
+## <a name="properties"></a>プロパティ
 
-## <a name="properties"></a>Properties
-| プロパティ     | 型   |説明|
+| プロパティ   | 型 |説明|
 |:---------------|:--------|:----------|
 |id|String| 読み取り専用です。 メッセージの一意の ID。|
-|replyToId| string | スレッドの親メッセージ/ルート メッセージの ID。 (チャットではなく、チャネルのメッセージにのみ適用) |
+|replyToId| string | 読み取り専用です。 スレッドの親メッセージ/ルート メッセージの ID。 (チャットではなく、チャネルのメッセージにのみ適用) |
 |差出人|[identitySet](identityset.md)| 読み取り専用です。 メッセージの送信者の詳細。|
-|etag| string | メッセージのバージョン番号。 |
-|messageType|String|メッセージの種類。現在サポートされている値は message、chatEvent、Typing。|
+|etag| string | 読み取り専用です。 メッセージのバージョン番号。 |
+|messageType|chatMessageType|メッセージの種類。 使用可能な値: `message`。|
 |createdDateTime|dateTimeOffset|読み取り専用です。 メッセージ作成時のタイムスタンプ。|
 |lastModifiedDateTime|dateTimeOffset|読み取り専用です。 メッセージ編集/更新時のタイムスタンプ。|
 |deletedDateTime|dateTimeOffset|読み取り専用です。 メッセージが削除された時間のタイムスタンプ、または削除されていない場合は Null です。 |
@@ -47,10 +51,9 @@ ms.locfileid: "34311162"
 |summary|string| プッシュ通知および概要ビューまたはフォールバック ビューに使用できるメッセージの概要テキスト。 チャット メッセージではなく、チャネル メッセージにのみ適用されます。 |
 |attachments|[chatMessageAttachment](chatmessageattachment.md) コレクション |添付ファイル。 添付ファイルは現在読み取り専用です。添付ファイルの送信はサポートされていません。 |
 |mentions|[chatMessageMention](chatmessagemention.md) コレクション| メッセージに記載されているエンティティの一覧。 現在、user、bot、team、channel がサポートされています。|
-|importance| string | メッセージの重要度: 通常、高。|
+|importance| chatMessageImportance | メッセージの重要度です。 使用可能な値: `normal`、`high`、`urgent`。|
 |reactions| [chatMessageReaction](chatmessagereaction.md) コレクション | このメッセージに対する反応 (例: いいね!)。|
 |locale|string|クライアントに設定されたメッセージのロケール。|
-|webUrl|string|Microsoft Teams のチャネルに移動するハイパーリンク。 これは、Microsoft Teams でチャネルを右クリックし、[チームへのリンクを取得] を選択すると作成される URL です。 この URL は不透明 blob として扱われる必要があり、また解析されません。 読み取り専用です。|
 
 ## <a name="json-representation"></a>JSON 表記
 

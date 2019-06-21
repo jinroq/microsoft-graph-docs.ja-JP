@@ -3,12 +3,12 @@ title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: e4142e63fc319d27632a27850c72da83d4a469ef
-ms.sourcegitcommit: 118b3cea623d9abec666c9d295a25f18a43a8aee
+ms.openlocfilehash: f468abd516fd83b50ebe3902edd1cef616698999
+ms.sourcegitcommit: b523648530fcc8c2a3ded35b419be8047b9fcd10
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017760"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "35084041"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
@@ -231,8 +231,9 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | :-------------- | :------------ | :--------------------------------------- |
 |追加 |v1.0 | [installedApps](/graph/api/resources/teamsappinstallation?view=graph-rest-1.0) リソースに対するアプリケーション アクセス許可のサポートを追加しました。|
 |追加 |v1.0| [channel](/graph/api/resources/channel?view=graph-rest-1.0) に、**email** および **webUrl** プロパティを追加しました。|
-| 追加 | ベータ版 | [チャット](/api-reference/beta/resources/chat.md) リソースと関連メソッドが追加されました。 |
-| 追加 | ベータ版 | [conversation member](/api-reference/beta/resources/conversationmember.md) リソースと関連メソッドが追加されました。 |
+|追加 | ベータ版 | [チャット](/api-reference/beta/resources/chat.md) リソースと関連メソッドが追加されました。 |
+|追加 |ベータ版| メッセージの[画像](/graph/api/resources/chatmessagehostedimage?view=graph-rest-beta)を読み取るための API が追加されました。|
+|追加 | ベータ版 | [conversation member](/api-reference/beta/resources/conversationmember.md) リソースと関連メソッドが追加されました。 |
 
 ### <a name="onedrive-and-sharepoint-apis"></a>OneDrive と SharePoint の API
 
@@ -2089,15 +2090,15 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | 追加        | v1.0        | [Video][] 複合型に、プロパティ **audioBitsPerSample**、**audioChannels**、**audioFormat**、**audioSamplesPerSecond**、**fourCC**、**frameRate** を追加しました。 |
 | 追加        | ベータ版        | [Drive][Drive-beta] リソースに、プロパティ **system** を追加しました。 |
 | 追加        | ベータ版        | [Drive][Drive-beta] リソースに、リレーションシップ **activities** を追加しました。 |
-| 追加        | ベータ版        | [DriveItem][DriveItem-beta] リソースに、プロパティ **publication** を追加しました。 |
+| 追加        | ベータ版        | [DriveItem][DriveItem-beta] ソースに、プロパティ **publication** を追加しました。 |
 | 追加        | ベータ版        | [DriveItem][DriveItem-beta] リソースに、リレーションシップ **activities** と **versions** を追加しました。 |
-| 追加        | ベータ版        | 新しいエンティティを追加しました。[DriveItemVersion][DriveItemVersion-beta]、[ItemActivity][ItemActivity-beta]。 |
-| 追加        | ベータ版        | 新しい複合型を追加しました。[CommentAction][CommentAction-beta]、[CreateAction][CreateAction-beta]、[DeleteAction][DeleteAction-beta]、[EditAction][EditAction-beta]、[ItemActionSet][ItemActionSet-beta]、[ItemActivityTimeSet][ItemActivityTimeSet-beta]、[MentionAction][MentionAction-beta]、[MoveAction][MoveAction-beta]、[PublicationFacet][PublicationFacet-beta]、[RenameAction][RenameAction-beta]、[RestoreAction][RestoreAction-beta]、[ShareAction][ShareAction-beta]、[VersionAction][VersionAction-beta]。 |
+| 追加        | ベータ版        | 新しいエンティティを追加しました。[DriveItemVersion][DriveItemVersion-beta], [ItemActivity][ItemActivity-beta]。 |
+| 追加        | ベータ版        | 新しい複合型を追加しました。[CommentAction][CommentAction-beta], [CreateAction][CreateAction-beta]、[DeleteAction][DeleteAction-beta]、[EditAction][EditAction-beta], [ItemActionSet][ItemActionSet-beta]、[ItemActivityTimeSet][ItemActivityTimeSet-beta]、[MentionAction][MentionAction-beta], [MoveAction][MoveAction-beta]、[PublicationFacet][PublicationFacet-beta]、[RenameAction][RenameAction-beta], [RestoreAction][RestoreAction-beta]、[ShareAction][ShareAction-beta]、および [VersionAction][VersionAction-beta]。 |
 | 追加        | ベータ版        | [ItemReference][ItemReference-beta] 複合型に、プロパティ **driveType** を追加しました。 |
 | 削除        | ベータ版        | [SharepointIds][SharepointIds-beta] 複合型から、プロパティ **tenantId** を削除しました。 |
 | 追加        | v1.0        | [Video][Video-beta] 複合型に、プロパティ **audioBitsPerSample**、**audioChannels**、**audioFormat**、**audioSamplesPerSecond**、**fourCC**、**frameRate** を追加しました。 |
-| 追加        | ベータ版        | [DriveItem][DriveItem-beta] リソースに、アクション [CheckIn][CheckIn-beta] と [CheckOut][CheckOut-beta] を追加しました。 |
-| 追加        | ベータ版        | [DriveItem][DriveItem-beta] リソースのアクション [CreateLink][CreateLink-beta] に、プロパティ **expirationDateTime**、**password**、**message**、**recipients** を追加しました。 |
+| 追加        | ベータ版        | [DriveItem][DriveItem-beta] リソースに、アクション [CheckIn][CheckIn-beta]and [CheckOut][CheckOut-beta] を追加しました。 |
+| 追加        | ベータ版        | リソース [CreateLink][CreateLink-beta]action on a [DriveItem][DriveItem-beta] に、プロパティ **expirationDateTime**、**password**、**message**、**recipients** を追加しました。 |
 
 [Drive]: /graph/api/resources/drive?view=graph-rest-1.0
 [DriveItem]: /graph/api/resources/driveitem?view=graph-rest-1.0
@@ -2176,7 +2177,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | 追加        | v1.0        | 新しいエンティティを追加しました。[ColumnDefinition][]、[ColumnLink][]、[ContentType][]、[List][]、[ListItem][]。 |
 | 追加        | v1.0        | [Site][] リソースに、リレーションシップ **columns**、**contentTypes**、**items**、**lists** を追加しました。 |
 | 追加        | v1.0        | 新しい複合型を追加しました。[BooleanColumn][]、[CalculatedColumn][]、[ChoiceColumn][]、[ContentTypeInfo][]、[ContentTypeOrder][]、[CurrencyColumn][]、[DateTimeColumn][]、[DefaultColumnValue][]、[ListInfo][]、[LookupColumn][]、[NumberColumn][]、[PersonOrGroupColumn][]、[SystemFacet][]、[TextColumn][]。 |
-| 追加        | ベータ版        | 新しいエンティティを追加しました。[BaseItemVersion][BaseItemVersion-beta]、[ColumnLink][ColumnLink-beta]、[ContentType][ContentType-beta]、[ListItemVersion][ListItemVersion-beta]、 |
+| 追加        | ベータ版        | 新しいエンティティを追加しました。[BaseItemVersion][BaseItemVersion-beta], [ColumnLink][ColumnLink-beta]、[ContentType][ContentType-beta]、[ListItemVersion][ListItemVersion-beta]、 |
 | 追加        | ベータ版        | [ColumnDefinition][ColumnDefinition-beta] に、プロパティ **columnGroup**、**currency**、**defaultValue**、**displayName** を追加しました。 |
 | 追加        | ベータ版        | [List][List-beta] リソースに、プロパティ **displayName** と **system** を追加しました。 |
 | 追加        | ベータ版        | [List][List-beta] リソースに、リレーションシップ **activities** と **contentTypes** を追加しました。 |
@@ -2184,7 +2185,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | 追加        | ベータ版        | [ListItem][ListItem-beta] リソースに、リレーションシップ **activities** と **versions** を追加しました。 |
 | 追加        | ベータ版        | [Site][Site-beta] リソースに、リレーションシップ **contentTypes** を追加しました。 |
 | 追加        | ベータ版        | [BooleanColumn][BooleanColumn-beta] 型に、プロパティ **outputType** を追加しました。 |
-| 追加        | ベータ版        | 新しい複合型を追加しました。[ContentTypeInfo][ContentTypeInfo-beta]、[ContentTypeOrder][ContentTypeOrder-beta]、[CurrencyColumn][CurrencyColumn-beta]、[SystemFacet][SystemFacet-beta]。 |
+| 追加        | ベータ版        | 新しい複合型を追加しました。[ContentTypeInfo][ContentTypeInfo-beta], [ContentTypeOrder][ContentTypeOrder-beta]、[CurrencyColumn][CurrencyColumn-beta]、および[SystemFacet][SystemFacet-beta]。 |
 | 追加        | ベータ版        | [ListInfo][ListInfo-beta] 複合型に、プロパティ **contentTypesEnabled** を追加しました。 |
 | 追加        | ベータ版        | [LookupColumn][LookupColumn-beta] 複合型に、プロパティ **allowUnlimitedLength** を追加しました。 |
 | 変更          | ベータ版        | [LookupColumn][LookupColumn-beta] 複合型のプロパティ **allowMultipleValue** の名前を **allowMultipleValues** に変更しました。 |

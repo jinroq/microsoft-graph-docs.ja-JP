@@ -3,12 +3,12 @@ title: 'Microsoft Graph のアクセス許可のリファレンス '
 description: Microsoft Graph は、アプリがアクセスするリソース (ユーザー、グループ、メールなど) を制御する詳細なアクセス許可を公開しています。 開発者は、アプリが要求する Microsoft Graph のアクセス許可を決定します。
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: ef2c1ee28c758107581c390cc3131a733f02a436
-ms.sourcegitcommit: 118b3cea623d9abec666c9d295a25f18a43a8aee
+ms.openlocfilehash: e8751a246baedaf85867f28bbd5be0f656673677
+ms.sourcegitcommit: b523648530fcc8c2a3ded35b419be8047b9fcd10
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017739"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "35084055"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph のアクセス許可のリファレンス
 
@@ -326,7 +326,7 @@ _Application.ReadWrite.OwnedBy_ アクセス許可は、_Application.ReadWrite.A
 | _Directory.ReadWrite.All_ |ディレクトリ データの読み取りおよび書き込み | アプリで、ユーザーやグループなどの組織のディレクトリ内のデータを読み書きできるようにします。アプリでユーザーまたはグループの削除や、ユーザー パスワードのリセットはできません。 | はい | いいえ |
 | _Directory.AccessAsUser.All_ |ディレクトリに対するサインインしたユーザーと同じアクセス  | サインインしているユーザーと同じように、アプリでディレクトリ内の情報にアクセスできるようにします。 | はい | いいえ |
 | _PrivilegedAccess.ReadWrite.AzureAD_ |ディレクトリの Privileged Identity Management データの読み取りと書き込み  | Azure AD の Privileged Identity Management API に対する読み取りおよび書き込みアクセス権をアプリに付与できます。 | はい | いいえ |
-| _PrivilegedAccess.ReadWrite.AzureRBAC_ |Azure リソースの Privileged Identity Management データの読み取りと書き込み | Azure リソースの Privileged Identity Management API に対する読み取りおよび書き込みアクセス権をアプリに付与できます。 | はい | いいえ |
+| _PrivilegedAccess.ReadWrite.AzureResources_ |Azure リソースの Privileged Identity Management データの読み取りと書き込み | Azure リソースの Privileged Identity Management API に対する読み取りおよび書き込みアクセス権をアプリに付与できます。 | はい | いいえ |
 
 <br/>
 
