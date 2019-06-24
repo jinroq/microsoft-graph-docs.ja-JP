@@ -7682,6 +7682,15 @@ items:
                 href: api/application-list-owners.md
               - name: 所有者を割り当てる
                 href: api/application-post-owners.md
+              - name: アプリケーションテンプレート
+                href: resources/applicationtemplate.md
+                items:
+                  - name: アプリケーションテンプレートを一覧表示する
+                    href: api/applicationtemplate-list.md
+                  - name: アプリケーションテンプレートを取得する
+                    href: api/applicationtemplate-get.md
+                  - name: アプリケーションテンプレートをインスタンス化する
+                    href: api/applicationtemplate-instantiate.md
           - name: 監査ログ
             href: resources/azure-ad-auditlog-overview.md
             items:
@@ -9269,7 +9278,7 @@ items:
                 href: api/outlooktaskgroup-get.md
               - name: 更新
                 href: api/outlooktaskgroup-update.md
-              - name: 削除する
+              - name: 削除
                 href: api/outlooktaskfolder-delete.md
               - name: グループ内のタスク フォルダーを一覧表示する
                 href: api/outlooktaskfolder-list-tasks.md
