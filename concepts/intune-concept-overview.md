@@ -4,18 +4,20 @@ description: 'Microsoft Intune は、企業が組織内のデバイスとアプ�
 author: rolyon
 localization_priority: Priority
 ms.prod: intune
-ms.openlocfilehash: 37c77147029f58625ee8a115dffebb91ee432b30
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a18096f53dfa88bd37b0cad11639c3b2285206e6
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951195"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133769"
 ---
 # <a name="intune-devices-and-apps-api-overview"></a>Intune のデバイスとアプリの API の概要
 
 Microsoft Intune は、企業が組織内のデバイスとアプリを管理するのに役立ちます。 Microsoft Graph で Intune API を使用して、デバイスとアプリを管理したり、好みのツールを使用しながら Intune を構成したりできます。 
 
 ISV の場合は、Intune API を使用してクライアントのテナントを管理することもできます。
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/yU1HeqNmN7A]
 
 ## <a name="why-integrate-with-intune"></a>Intune と統合する理由
 

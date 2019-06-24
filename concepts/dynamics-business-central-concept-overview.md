@@ -6,15 +6,17 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 27e9a13b41ce2b8e46321eef2afc4e103248281b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: aafc7e6f1f7a688d1f083c584ceedc8a11878866
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951188"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133741"
 ---
 # <a name="dynamics-365-business-central-api-overview-preview"></a>Dynamics 365 Business Central API の概要 (プレビュー)
 Dynamics 365 Business Central は、簡単に使用および適応できる、オールインワンのビジネス管理ソリューションであり、ビジネスへの接続と高度な意思決定を支援します。 これにより、ビジネスのエンドツーエンドのビューが提供され、財務を管理し、サプライチェーンを自動化してセキュリティで保護し、顧客サービスをさらに向上させ、プロジェクトを時間と予算の下に保持し、運用を最適化することができます。
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/na1kFk53cbk]
 
 ## <a name="why-integrate-with-dynamics-365-business-central"></a>Dynamics 365 Business Central と統合する理由
 アプリケーションを Dynamics 365 Business Central に統合することで、ビジネスニーズにまたがるエクスペリエンスを作成できます。 ユーザーが主要なビジネスタスクおよび機能を実行できるようにするソリューションを作成できます。 Microsoft Graph を使用して、財務報告書にアクセスしたり、取引先担当者と連携したり、販売および購入するドキュメントを作成および送信したり、財務報告を取得したりすることができます。
@@ -37,5 +39,5 @@ Azure AD v2.0 エンドポイントを使用して、Dynamics 365 Business Centr
 「 [Dynamics 365 Business CENTRAL API In Microsoft Graph beta」を](/graph/api/resources/dynamics-graph-reference?view=graph-rest-beta)参照してください。
 
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 Microsoft Graph でサポートされている[ビジネスセンター API とユースケース](/graph/api/resources/dynamics-graph-reference?view=graph-rest-beta)の詳細については、こちらを参照してください。

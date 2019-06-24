@@ -3,12 +3,12 @@ title: 拡張機能を使用してカスタム データをリソースに追加
 description: Microsoft Graph は、ユーザーやメッセージなどの数多くのリソースを通じて、多用なユーザー中心のデータと分析情報にアクセスするための単一の API エンドポイントを提供しますします。独自のアプリケーション データを Microsoft Graph で拡張することもできます。外部にデータの保存を必要とせず、Microsoft Graph のリソースにカスタム プロパティを追加できます。
 author: dkershaw10
 localization_priority: Priority
-ms.openlocfilehash: 7b1789fb12a971dab3b5ad591bc65fc49b85c76e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7c14e9b328d8572142bf19ac232c3405e60b2da4
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526217"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133846"
 ---
 # <a name="add-custom-data-to-resources-using-extensions"></a>拡張機能を使用してカスタム データをリソースに追加する
 
@@ -46,6 +46,8 @@ Microsoft Graph には、2 種類の拡張機能が備わっています。ご�
 
 [オープン拡張機能](/graph/api/resources/opentypeextension?view=graph-rest-1.0) (以前の Office 365 データ拡張機能) は、[オープン タイプ](https://www.odata.org/getting-started/advanced-tutorial/#openType)であり、型指定されていないアプリ データを直接リソース インスタンスに追加するための柔軟な方法を提供します。
 
+> [!VIDEO https://www.youtube-nocookie.com/embed/ibdlADb8IZc]
+
 オープン拡張機能は、カスタム データとともに、リソース インスタンスの**拡張機能**ナビゲーション プロパティを介してアクセスできます。
 オープン拡張機能で_事前に定義される_書き込み可能なプロパティは、**extensionName** プロパティだけです。 オープン拡張機能を作成する場合、**extensionName** プロパティにテナント内で一意の名前を割り当てる必要があります。
 
@@ -61,7 +63,11 @@ Microsoft Graph には、2 種類の拡張機能が備わっています。ご�
 
 ## <a name="schema-extensions"></a>スキーマ拡張機能
 
+
 [スキーマ拡張機能](/graph/api/resources/schemaextension?view=graph-rest-1.0)を使用すると、リソースの種類の拡張に使用するスキーマを定義できます。最初に、スキーマ拡張機能の定義を作成します。次に、それを使用して厳密に型指定されたカスタム データを含むリソース インスタンスを拡張します。さらに、スキーマ拡張機能の[状態](#schema-extensions-lifecycle)を制御し、他のアプリで検出できるようにすることができます。これらのアプリでは、そのデータの拡張機能を使用して、エクスペリエンスを拡張して構築できます。
+
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/3MOAlUFNus0]
 
 スキーマ拡張機能定義を作成する場合、その **id** の一意の名前を指定する必要があります。次の 2 つの名前付けオプションがあります。
 
@@ -146,6 +152,7 @@ Azure AD は、いくつかの [directoryObject](/graph/api/resources/directoryo
 
 ## <a name="see-also"></a>関連項目
 
-- [Office 365 のドメイン](https://technet.microsoft.com/ja-JP/library/office-365-domains.aspx)
+- 
+  [Office 365 のドメイン](https://technet.microsoft.com/ja-JP/library/office-365-domains.aspx)
 
 - [Office 365 テナントのドメインの追加および検証](https://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)

@@ -4,16 +4,18 @@ description: 'Microsoft Graph データ接続は、コア データ パイプラ
 author: ajacks-msft
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: 2a7756223f7a94eafc62ed14f455e67a4aae880a
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.openlocfilehash: 6f82fb3a9e9a5254f36049ab96be8adca41e7be5
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34656420"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133748"
 ---
 # <a name="microsoft-graph-data-connect"></a>Microsoft Graph データ接続
 
 Microsoft Graph データ接続は、ツールセットを使って Office 365 データおよび Microsoft Azure リソースをユーザーに提供します。 Microsoft Graph データ接続を使用すると、Microsoft 提供の優れた開発ツールを使用して貴重なデータにアクセスするインテリジェントなアプリケーションを構築することができます。これらのツールはすべて、Microsoft のセキュリティで保護されたクラウド内にあります。 すべての企業が生産性の向上に関心を持っています。つまり、ナレッジ ワーカーの生産性を向上させる製品を構築することは、非常に大きなビジネス チャンスを意味します。
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/J1WGFRGnc7g]
 
 Microsoft Graph データ接続を活用する場合、「[Microsoft API 使用条件](/legal/microsoft-apis/terms-of-use?context=/graph/context)」、「[Microsoft のプライバシーに関する声明](https://go.microsoft.com/fwlink/p/?LinkId=123161)」、および次に同意することになります。
 

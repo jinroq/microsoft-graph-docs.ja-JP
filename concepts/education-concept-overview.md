@@ -4,20 +4,18 @@ description: Microsoft Graph の教育機関向け API は、教育のさまざ�
 author: mmast-msft
 localization_priority: Priority
 ms.prod: education
-ms.openlocfilehash: f181441a9333d678ecb989eaa369e972b45ba570
-ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
+ms.openlocfilehash: ab3aec0748c2036ba25ac28a3c2ab7b0cd7e4112
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34536513"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133720"
 ---
 # <a name="education-api-overview"></a>教育機関向け API の概要
 
 Microsoft Graph の教育機関向け API は、教育のさまざまなシナリオに関係する情報によって Office 365 のリソースを拡張します。それには、学校、クラス、ユーザー (学生と教師)、課題、および提出に関する情報が含まれます。 これにより、学校やクラスルームのさまざまなシナリオのための教育関連リソースの統合ソリューションを容易に構築できます。
 
-Microsoft Graph の教育機関向け API は、クラス、学校、ユーザー、課題、提出などの情報へのアクセスを提供します。
-
-![EDU グラフの概要](images/edugraph.png)
+> [!VIDEO https://www.youtube-nocookie.com/embed/EnDM7KMTEqQ]
 
 ## <a name="why-integrate-with-education-scenarios"></a>教育のシナリオを統合する理由
 

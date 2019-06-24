@@ -1,12 +1,12 @@
 ---
 title: 国内クラウドの展開
 description: Microsoft のデータセンターのグローバル ネットワークに加えて、Microsoft クラウド サービスは 3 つの独立した国内クラウドで利用できます。 これらの国内クラウドバージョンは、特定の国の地理的な境界内に限定され、ローカル担当者が運用している Microsoft エンタープライズクラウドサービスの物理的および論理的なネットワークの分離されたインスタンスです。
-ms.openlocfilehash: 1eeb6c91f8c5162ae0b372e758a81d57aa0daa7a
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 73d392bae722d0f719f836766e344da19c77c6b2
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33599829"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133733"
 ---
 # <a name="national-cloud-deployments"></a>国内クラウドの展開
 
@@ -23,6 +23,8 @@ Microsoft のデータセンターのグローバル ネットワークに加え
 この記事では、さまざまな Microsoft Graph 国内クラウド展開と、それぞれの開発者が使用できる機能について説明します。
 
 >**注:**[Microsoft Graph データ接続](https://docs.microsoft.com/en-us/graph/data-connect-concept-overview?view=graph-rest-1.0)では、国内クラウド展開はサポートされていません。 
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/R_3E0IVypRM]
 
 ## <a name="app-registration-and-token-service-root-endpoints"></a>アプリの登録とトークンサービスのルートエンドポイント
 

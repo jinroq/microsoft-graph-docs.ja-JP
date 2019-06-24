@@ -3,16 +3,18 @@ title: 'Microsoft Graph 通知を使用して、人中心の通知エクスペ�
 description: '通知は、アプリケーションのユーザーと再びやり取りするのに最も効果的な方法の 1 つです。 優れた通知エクスペリエンスによってほぼリアルタイムにアプリケーション ユーザーとのコミュニケーション チャンネルを開くことができます。これにより、適切なタイミングでアプリケーションの使用が促進され、ユーザーの生産性が向上し、重要なイベントや必要な場合タイムリー アクションが通知されます。 '
 localization_priority: Priority
 ms.prod: notifications
-ms.openlocfilehash: 2b604cc2cab4b08b15b609399574ed4864c002dd
-ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
+ms.openlocfilehash: b83e91be74de44dbd72315331964379992b811de
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34036534"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133566"
 ---
 # <a name="enabling-human-centric-notification-experiences-using-microsoft-graph-notifications"></a>Microsoft Graph 通知を使用して、人中心の通知エクスペリエンスを有効にする
 
 通知は、アプリケーション ユーザーと再びやり取りするのに最も効果的な方法の 1 つです。 優れた通知エクスペリエンスによってほぼリアルタイムにアプリケーション ユーザーとのコミュニケーション チャンネルを開くことができます。これにより、適切なタイミングでアプリケーションの使用が促進され、ユーザーの生産性が向上し、重要なイベントや必要なアクションが通知されます。
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/cmpPFhrS8ZA]
 
 今日、ユーザーはさまざまなプラットフォームやフォーム ファクターを経由してアプリケーションやサービスにアクセスできます。 このようなデバイスの組み合わせでは、マルチプラットフォームの通知システムを理解してサポートし、ユーザーをエンドポイントにマッピングし、デバイス間で通知状態を維持する必要があります。 
 

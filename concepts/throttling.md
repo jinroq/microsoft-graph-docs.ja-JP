@@ -3,12 +3,12 @@ title: Microsoft Graph 調整ガイド
 description: 調整とは、リソースの使いすぎを防ぐために、サービスの同時呼び出し数を制限することをいいます。Microsoft Graph は、大量の要求を処理できるよう設計されています。過剰な数の要求が発生した場合、調整を行うことは Microsoft Graph サービスの最適なパフォーマンスと信頼性の維持に役立ちます。
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: 8b3b8c5b0ec5a5209ad96f87dc677f4331c24e0b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 305487778c1c94996606e00febb023a69625b943
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32580982"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133790"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Microsoft Graph 調整ガイド
 
@@ -16,6 +16,8 @@ ms.locfileid: "32580982"
 調整とは、リソースの使いすぎを防ぐために、サービスの同時呼び出し数を制限することをいいます。Microsoft Graph は、大量の要求を処理できるよう設計されています。過剰な数の要求が発生した場合、調整を行うことは Microsoft Graph サービスの最適なパフォーマンスと信頼性の維持に役立ちます。
 
 制限の調整はシナリオによって異なります。たとえば、大量の書き込みを行う際には、読み込みのみを行う場合に比べて調整が起こる可能性は高くなります。
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/J4CFxVuzNMA]
 
 ## <a name="what-happens-when-throttling-occurs"></a>調整が発生すると、何が起こるのでしょうか
 

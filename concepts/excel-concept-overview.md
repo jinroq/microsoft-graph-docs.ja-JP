@@ -4,16 +4,18 @@ description: Excel は、必要不可欠な生産性向上ツールです。 あ
 localization_priority: Priority
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 940a8e055a6a730bd12a7ab73e7d3a611a63e53f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 11e5cd85a066acf6ee1a3bfcdb659e30afe5cd75
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556131"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133729"
 ---
 # <a name="excel-workbooks-and-charts-api-overview"></a>Excel のブックとグラフの API の概要
 
 Excel は、必要不可欠な生産性向上ツールです。 あらゆる業界と職務のユーザーが、あらゆる種類のデータを保存、追跡、操作するためのツールとして採用しています。 簡単なタスク追跡やデータ管理から複雑な計算や本格的なレポートに至るまで、あらゆる作業に使用されます。 Microsoft Graph で Excel REST API を使用して、データ、計算、レポート、およびダッシュボードの値を拡張できます。
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/I1rSkJww2Dk]
 
 ## <a name="why-integrate-with-excel"></a>Excel と統合する理由
 

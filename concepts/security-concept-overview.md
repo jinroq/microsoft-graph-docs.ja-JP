@@ -4,20 +4,24 @@ description: Microsoft Graph セキュリティ API を使用して Microsoft �
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: b4a858182f1fca4ce123af05d271d68fc13088f5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1036a41a8447b1f6305adf763b200b17fbfa37dd
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32564196"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133839"
 ---
 # <a name="microsoft-graph-security-api-overview"></a>Microsoft Graph セキュリティ API の概要
 
 Microsoft Graph セキュリティ API を使用して Microsoft のセキュリティ製品、サービス、パートナーに接続することで、セキュリティ運用の効率化を図り、脅威の防止、検出、対処の各機能を向上させることができます。 Microsoft Graph セキュリティ API は、単一のプログラム インターフェイスで複数の [Microsoft Graph セキュリティ プロバイダー](/graph/api/resources/securityvendorinformation?view=graph-rest-1.0) (セキュリティ プロバイダーまたはプロバイダーとも呼ばれる) を接続できる中継サービス (ブローカー) です。 Microsoft Graph セキュリティ API に対する要求は、適用可能なすべてのセキュリティ プロバイダーにフェデレーションされます。 次の図に示すように、結果は集計され、要求元のアプリケーションに共通のスキーマで返されます。 詳細については、「[Microsoft Graph セキュリティ API のデータ フロー](security-dataflow.md)」を参照してください。
 
+
 ![security_overview_diagram_1.png](./images/security-overview-diagram-1.png)
 
 承認については、「[承認と Microsoft Graph セキュリティ API](security-authorization.md)」を参照してください。 代理アクセス許可やアプリケーションのアクセス許可などのアクセス許可については、「[アクセス許可](permissions-reference.md#security-permissions)」を参照してください。
+
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/ZXkKjkxdrB4]
 
 ## <a name="why-use-the-microsoft-graph-security-api"></a>Microsoft Graph セキュリティ API を使用する理由
 
