@@ -3,12 +3,12 @@ title: ユーザー データの変更に関する通知の設定
 description: Microsoft Graph の API は、webhook メカニズムを使用して、クライアントに通知を配信します。クライアントは、通知を受信するために自身の URL を構成する Web サービスです。クライアント アプリは通知を使用して、変更時に状態を更新します。
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: 3bffab081e8f9520890f6bfe7c690b9258cd3dee
-ms.sourcegitcommit: 7bf9885c8769c5dfe2614a98ba6d7cc297ae564c
+ms.openlocfilehash: 43e4e4893cae46bb5d3bcecc1f0d7e96da4ccfed
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2019
-ms.locfileid: "34182091"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133783"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>ユーザー データの変更に関する通知の設定
 
@@ -16,8 +16,11 @@ Microsoft Graph の API は、webhook メカニズムを使用して、クライ
 
 Microsoft Graph はサブスクリプション要求を受け入れると、サブスクリプションで指定された URL に通知をプッシュします。 アプリはその後、そのビジネス ロジックに従ってアクションを実行します。 たとえば、詳細データのフェッチ、そのキャッシュやビューの更新などです。
 
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/rC1bunenaq4]
+ 
 > [!div class="nextstepaction"]
-> [.NET Core を使った webhook アプリの作成](/graph/tutorials/change-notifications)
+> [.NET Core を使った Webhook アプリの作成](/graph/tutorials/change-notifications)
 
 ## <a name="supported-resources"></a>サポートされているリソース
 

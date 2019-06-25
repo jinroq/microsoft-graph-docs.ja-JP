@@ -3,12 +3,12 @@ title: 'アプリで Microsoft Graph データをページングする '
 description: "応答内の、結果の次のページへの URL を含む odata.nextLink' プロパティ。 "
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: 6a19d1873057f5a6f6ea1749a6941389b9be8eb5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8c39ff697de2d6afdb2f24c1ec99d2ce5a89b32c
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32564177"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133804"
 ---
 # <a name="paging-microsoft-graph-data-in-your-app"></a>アプリで Microsoft Graph データをページングする 
 
@@ -41,3 +41,8 @@ https://graph.microsoft.com/v1.0/users?$top=5&$skiptoken=X%274453707 ... 6633B90
 - API によって、既定および最大のページ サイズが異なる場合があります。
 - (`$top` クエリ パラメーターを使用して) 対象の API の最大ページ サイズを超えるページ サイズを指定する場合には、API によって動作が異なる可能性があります。 API によっては要求されたページ サイズが無視されることがあります。対象 API の最大ページ サイズに既定で設定されたり、Microsoft Graph によってエラーが返されたりする場合があります。 
 - すべてのリソースまたはリレーションシップでページングがサポートされているわけではありません。たとえば、[directoryRoles](/graph/api/resources/directoryrole?view=graph-rest-1.0) に対するクエリではページングはサポートされていません。これにはロール メンバーおよびロール オブジェクト自体の読み取りも含まれます。
+
+## <a name="learn-more-about-paging"></a>ページングの詳細
+次のビデオでは、Microsoft Graph でのページングについて説明します。
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/DB_NoC9a1JI]

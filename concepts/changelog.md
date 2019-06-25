@@ -3,12 +3,12 @@ title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: f468abd516fd83b50ebe3902edd1cef616698999
-ms.sourcegitcommit: b523648530fcc8c2a3ded35b419be8047b9fcd10
+ms.openlocfilehash: f14b36b11424b46fd092e155482b727f7b19dd4a
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "35084041"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133797"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
@@ -17,6 +17,13 @@ ms.locfileid: "35084041"
 Microsoft Graph API に関する既知の問題の詳細については、「[既知の問題](known-issues.md)」を参照してください。
 
 ## <a name="june-2019"></a>2019 年 6 月
+
+
+### <a name="azure-ad-apis"></a>Azure AD API
+
+| **変更の種類** | **バージョン** | **説明**                  |
+|:----------------|:------------|:-----------------------------------------|
+| 追加        | ベータ版  | 新しいリソースの種類 [applicationTemplate](/graph/api/resources/applicationtemplate.md) を導入しました。 このリソースの種類では、Azure AD アプリケーション ギャラリーからのアプリケーションの[インスタンス化](/graph/api/applicationtemplate-instantiate.md)、[リスト](/graph/api/applicationtemplate-instantiate.md)、[取得](/graph/api/applicationtemplate-get.md)がサポートされています。|
 
 ### <a name="directory-apis"></a>ディレクトリ API
 
@@ -63,14 +70,22 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | :-------------- | :------------ | :--------------------------------------- |
 | 追加 | ベータ版 | [teamDiscoverySettings](/api-reference/beta/resources/teamdiscoverysettings.md)リソースと関連メソッドが追加されました。 |
 
+
 ### <a name="onedrive-and-sharepoint-apis"></a>OneDrive と SharePoint の API
 
 | **変更の種類** | **バージョン** | **説明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | 追加        | ベータ版        | [ユーザー](/graph/api/resources/user?view=graph-rest-beta) エンティティに [followSite](/graph/api/follow-site?view=graph-rest-beta) ナビゲーション プロパティを追加しました |
-| 追加        | ベータ版        | [ユーザー](/graph/api/resources/user?view=graph-rest-beta) エンティティ セットに [unfollowSite](/graph/api/unfollow-site?view=graph-rest-beta) ナビゲーション プロパティを追加しました |
+| 追加        | ベータ版        | [ユーザー](/graph/api/resources/user?view=graph-rest-beta) エンティティに [unfollowSite](/graph/api/unfollow-site?view=graph-rest-beta) ナビゲーション プロパティを追加しました |
 
+
+
+## <a name="may-2019"></a>2019 年 5 月
+
+### <a name="microsoft-teams-apis"></a>Microsoft Teams API
+=======
 ### <a name="outlook-mail-calendar-contacts"></a>Outlook メール、予定表、連絡先
+
 
 | **変更の種類** | **バージョン**   | **説明**                          |
 | :-------------- | :------------ | :--------------------------------------- |

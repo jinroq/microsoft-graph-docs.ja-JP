@@ -3,12 +3,12 @@ title: OneDrive ファイル ストレージ API の概要
 description: OneDrive は、Office 365 のファイル ハブです。
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 9bbc5158140930081beb665580b3f8344f6a1738
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 61e94a9e7fe9e708762ae5e45c69bd54b8be0ef6
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32560768"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133776"
 ---
 # <a name="onedrive-file-storage-api-overview"></a>OneDrive ファイル ストレージ API の概要
 
@@ -20,6 +20,8 @@ Office 365 のファイルは[ドライブ][Drive API]に保存されていま�
 ユーザーは、ファイルを個人的なドライブ - 自分の OneDrive - または [SharePoint][] ドキュメント ライブラリを利用した共有ドライブに保存できます。
 OneDrive の柔軟性のおかげで、ユーザーは、それぞれにとって最適な方法で共同作業をすることができます。
 ユーザーは、ファイルへのリンクを共有したり、ファイルをチーム ドライブにコピーまたは移動したり、Outlook で OneDrive ファイルをメール メッセージに添付したりすることができます。
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/vG-hQxFHCAE]
 
 ## <a name="why-integrate-with-onedrive-file-storage-in-the-cloud"></a>OneDrive ファイル ストレージをクラウドに統合する理由
 
@@ -69,7 +71,7 @@ Microsoft Graph を利用すれば、バイナリをダウンロードしなく�
 - [Microsoft Graph v1.0 の OneDrive ファイル ストレージ API](/graph/api/resources/onedrive?view=graph-rest-1.0)
 - [Microsoft Graph ベータ版の OneDrive ファイル ストレージ API](/graph/api/resources/onedrive?view=graph-rest-beta)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 Microsoft Graph v1.0 における [OneDrive API の使用][Drive API]に関する詳細を確認する。
 
