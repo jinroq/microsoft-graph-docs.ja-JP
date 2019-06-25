@@ -4,16 +4,16 @@ description: " Intune ハイブリッド展開はサポートされていませ�
 author: tfitzmac
 localization_priority: Priority
 ms.prod: intune
-ms.openlocfilehash: 2dfeb5ff55670f3e11b175e0472359002b09bab6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0c30436c80af8621b1c633d12a11489f7e586f00
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551813"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133853"
 ---
 # <a name="working-with-intune-in-microsoft-graph"></a>Microsoft Graph での Intune の操作  
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://www.microsoft.com/ja-JP/cloud-platform/microsoft-intune-pricing)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing)を持っている必要があります。
 
 Intune 用 Microsoft Graph API を使用すると、テナントの Intune の情報へのプログラムによるアクセスが可能となります。API は **Azure Portal** で使用できるものと同じ Intune 操作を実行します。  
 
@@ -37,6 +37,9 @@ Intune は、豊富なエンティティ情報とリレーションシップの�
 
     https://graph.microsoft.com/deviceAppManagement/mobileApps/{id}/deviceStatuses/
 
+## <a name="accessing-the-microsoft-graph-api-for-intune"></a>Intune 用 Microsoft Graph API へのアクセス
+
+Intune は、[委任されたアクセス許可](https://docs.microsoft.com/graph/auth-v2-user)と[アプリケーションのアクセス許可](https://docs.microsoft.com/graph/auth-v2-service)の両方をサポートします。 委任されたアクセス許可は、読み取り操作と書き込み操作の両方でサポートされています。 アプリケーションのアクセス許可は、現在、読み取り操作でのみサポートされています。 委任されたアクセス許可およびアプリケーションのアクセス許可は、シングル テナント アプリケーションおよびマルチテナント アプリケーションの両方をサポートします。 Microsoft Graph で使用できるアクセス許可の詳細については、「[Microsoft Graph のアクセス許可のリファレンス](https://docs.microsoft.com/graph/permissions-reference)」を参照してください。
 
 ## <a name="using-permissions"></a>アクセス許可の使用
 

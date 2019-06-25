@@ -3,12 +3,12 @@ title: JSON バッチ処理を使用した複数要求の単一 HTTP 呼び出�
 description: JSON のバッチ処理を使用すると、複数の要求を単一の JSON オブジェクトに統合することにより、アプリケーションを最適化することができます。たとえば、次のような互いに無関係なデータからビューを作成する場合、
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: f36cc1c8e8ccc016078eab52c4c7f3874892d000
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7b725545008cd512ef0058d678d057f567f40618
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32560898"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133825"
 ---
 # <a name="combine-multiple-requests-in-one-http-call-using-json-batching"></a>JSON バッチ処理を使用した複数要求の単一 HTTP 呼び出しへの統合
 
@@ -19,6 +19,8 @@ JSON のバッチ処理を使用すると、複数の要求を単一の JSON オ
 3. グループの予定表
 
 これらの 3 つの要求を 1 つのバッチ要求にまとめることで、ネットワーク待機時間を大きく削減できます。
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/tzWGOp8zYh8]
 
 ## <a name="first-json-batch-request"></a>JSON の最初のバッチ要求
 
