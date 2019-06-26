@@ -2,12 +2,12 @@
 title: onenoteSection リソースの種類
 description: OneNote ノートブックのセクション。 セクションには、ページを含めることができます。
 localization_priority: Normal
-ms.openlocfilehash: d262065f46052c1cae55b42babaa91a2e065d3ef
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: b07ea378a4338e22896d40065e35aa599db42832
+ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348853"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35236630"
 ---
 # <a name="onenotesection-resource-type"></a>onenoteSection リソースの種類
 
@@ -16,18 +16,18 @@ ms.locfileid: "33348853"
 OneNote ノートブックのセクション。 セクションには、ページを含めることができます。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |createdBy|[identitySet](identityset.md)|そのアイテムを作成したユーザーの ID、デバイス、アプリケーション。読み取り専用です。|
 |createdDateTime|DateTimeOffset|セクションが作成された日時。 Timestamp は、ISO 8601 形式を使用した日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 読み取り専用です。|
-|id|String|セクションの一意識別子。  読み取り専用です。|
+|id|文字列|セクションの一意識別子。  読み取り専用です。|
 |isDefault|ブール型 (Boolean)|これがユーザーの既定のセクションであるかどうかを示します。 読み取り専用です。|
 |lastModifiedBy|[identitySet](identityset.md)|そのアイテムを作成したユーザーの ID、デバイス、アプリケーション。読み取り専用です。|
 |lastModifiedDateTime|DateTimeOffset|セクションが最後に変更された日時。 Timestamp は、ISO 8601 形式を使用した日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 読み取り専用です。|
-|リンク|[sectionlinks](sectionlinks.md)|セクションを開くためのリンク。 リンク`oneNoteClientURL`によって、OneNote native client のセクションがインストールされている場合は、そのセクションが開きます。 リンク`oneNoteWebURL`によって、OneNote Online のセクションが開きます。|
+|リンク|[sectionLinks](sectionlinks.md)|セクションを開くためのリンク。 リンク`oneNoteClientURL`によって、OneNote native client のセクションがインストールされている場合は、そのセクションが開きます。 リンク`oneNoteWebURL`は、web 上の OneNote でセクションを開きます。|
 |displayName|String|セクションの名前。 |
 |pagesUrl|String|セクション`pages`内のすべてのページの詳細を取得できるエンドポイント。 読み取り専用です。|
-|self|String|セクションに関する詳細を取得できるエンドポイント。 読み取り専用です。|
+|self|String|セクションに関する詳細を取得できるエンドポイント。 読み取り専用。|
 
 ## <a name="relationships"></a>関係
 | リレーションシップ | 型   |説明|
@@ -43,8 +43,8 @@ OneNote ノートブックのセクション。 セクションには、ペー�
 |[セクションを取得する](../api/section-get.md) | [onenoteSection](onenotesection.md) |セクションのプロパティとリレーションシップを読み取ります。|
 |[Create page](../api/section-post-pages.md) |[onenotePage](onenotepage.md)| 指定したセクションの pages コレクションへの投稿によってページを作成します。|
 |[ページを一覧表示する](../api/section-list-pages.md) |[onenotePage](onenotepage.md)コレクション| 指定したセクション内のページのコレクションを取得します。|
-|[copyToNotebook](../api/section-copytonotebook.md)|なし|セクションを特定のノートブックにコピーします。|
-|[copyToSectionGroup](../api/section-copytosectiongroup.md)|なし|セクションを特定のセクショングループにコピーします。|
+|[copyToNotebook](../api/section-copytonotebook.md)|None|セクションを特定のノートブックにコピーします。|
+|[copyToSectionGroup](../api/section-copytosectiongroup.md)|None|セクションを特定のセクショングループにコピーします。|
 
 
 ## <a name="json-representation"></a>JSON 表記

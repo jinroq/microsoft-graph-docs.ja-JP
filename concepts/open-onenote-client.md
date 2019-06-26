@@ -3,18 +3,18 @@ title: OneNote クライアントを開く
 description: 'ページまたはノートブックの **links** プロパティを使用して、OneNote アプリケーションで特定のぺージまたはノートブックを開きます。 '
 author: Jewan-microsoft
 localization_priority: Normal
-ms.openlocfilehash: 21f6d07c4a32f3e25c715172a2d18aa09c042920
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: HT
+ms.openlocfilehash: b4ad078443bd6d85c46a6e23552ddc730c725b51
+ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858346"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35236287"
 ---
 # <a name="open-the-onenote-client"></a>OneNote クライアントを開く
 
 ページまたはノートブックの **links** プロパティを使用して、OneNote アプリケーションで特定のぺージまたはノートブックを開きます。 
 
-**links** プロパティは 2 つの URL を含む JSON オブジェクトです。 これらの URL は、OneNote クライアント アプリケーションまたは OneNote Online のページまたはノートブックを開きます。
+**links** プロパティは 2 つの URL を含む JSON オブジェクトです。 Url は、OneNote クライアントアプリケーションまたは web 上の OneNote でページまたはノートブックを開きます。
 
 ```json
 { 
@@ -32,11 +32,11 @@ ms.locfileid: "27858346"
 - **oneNoteClientUrl** 
 
     - OneNote クライアントがデバイスにインストールされている場合は、そのクライアントを開きます。 この URL には、*onenote* プレフィックスが含まれています。
-    - 言語固有のバージョンがデバイスにインストールされている場合は、そのバージョンを開きます。 それ以外の場合は、プラットフォームの言語の設定を使用します。
+    - Opens the language-specific version if one is installed on the device. Otherwise, uses the platform language setting.
 
 - **oneNoteWebUrl** 
 
-    - デバイスの既定のブラウザーが OneNote Online をサポートしている場合は、OneNote Online を開きます。 
+    - デバイスの既定のブラウザーが OneNote をサポートしている場合、その web 上で OneNote を開きます。 
     - ブラウザーの言語設定を使用します。
 
 
@@ -96,7 +96,7 @@ OneNote API は、次の操作の HTTP 応答で **links** プロパティを返
 
 <br/>
 
-応答から URL を解析した後は、次のコードを使用して OneNote を開くことができるようになります。 インストール済みの OneNote クライアントを開くには `oneNoteClientUrl`、OneNote Online を開くには `oneNoteWebURL` を使用します。
+応答から URL を解析した後は、次のコードを使用して OneNote を開くことができるようになります。 を`oneNoteClientUrl`使用して、インストールされ`oneNoteWebURL`ている onenote クライアントを開くか、web 上の onenote を開きます。
 
 ```objc
 NSURL *url = [NSURL URLWithString:standardResponse.oneNoteWebUrl];
@@ -164,7 +164,7 @@ public ApiResponse getResponse() throws Exception {
 
 <br/>
 
-次の例に示すように、応答プロパティを使用すると、アプリで OneNote Online を開くことができます。
+Response プロパティを使用すると、次の例に示すように、アプリから web 上の OneNote を開くことができます。
 
 ```java 
 if (response.getResponseCode() == 201) {

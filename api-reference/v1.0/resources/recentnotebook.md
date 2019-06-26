@@ -2,12 +2,12 @@
 title: recentNotebook リソース型
 description: 最近アクセスした OneNote ノートブック。 **recentNotebook** は、notebook と類似していますが、より少ないプロパティを持ちます。
 localization_priority: Normal
-ms.openlocfilehash: 67c707043e5b6ca65cd72ddc323b5a484f0f2959
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fb5e7a7b75ea62bc644d19cf895666ba106d5dd9
+ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579547"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35236658"
 ---
 # <a name="recentnotebook-resource-type"></a>recentNotebook リソース型
 
@@ -18,7 +18,7 @@ ms.locfileid: "32579547"
 |:---------------|:--------|:----------|
 |displayName|String|ノートブックの名前。|
 |lastAccessedTime|DateTimeOffset|ノートブックが最後に変更された日時。 Timestamp は、ISO 8601 形式を使用した日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 読み取り専用です。|
-|リンク|[recentNotebookLinks](recentnotebooklinks.md)|ノートブックを開くためのリンク。 `oneNoteClientURL` リンクは、OneNote クライアントでノートブックを開きます (インストールされている場合)。 `oneNoteWebURL` リンクは、OneNote Online でノートブックを開きます。|
+|リンク|[recentNotebookLinks](recentnotebooklinks.md)|ノートブックを開くためのリンク。 `oneNoteClientURL` リンクは、OneNote クライアントでノートブックを開きます (インストールされている場合)。 リンク`oneNoteWebURL`は、OneNote で web 上のノートブックを開きます。|
 |sourceService|onenoteSourceService|ノートブックが存在するバックエンド ストア (`OneDriveForBusiness` または `OneDrive` のいずれか)。|
 
 ## <a name="json-representation"></a>JSON 表記

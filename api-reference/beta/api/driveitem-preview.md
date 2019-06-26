@@ -1,22 +1,22 @@
 ---
 title: 'ドライブアイテム: プレビュー'
-description: このアクションを使用すると、一時的なプレビューを表示するために、短時間に埋め込まれた、アイテムの url を取得できます。
+description: このアクションを使用すると、一時的なプレビューを表示するために、短時間に埋め込まれた、アイテムの Url を取得できます。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 74e6058d61fc5672bedd5e6479829f234707c45a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 5e260e3dc360464b39daa5dde671a1bc11c9c6b6
+ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325150"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35236301"
 ---
 # <a name="driveitem-preview"></a>ドライブアイテム: プレビュー
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-このアクションを使用すると、一時的なプレビューを表示するために、短時間に埋め込まれた、アイテムの url を取得できます。
+このアクションを使用すると、一時的なプレビューを表示するために、短時間に埋め込まれた、アイテムの Url を取得できます。
 
-長時間の埋め込み可能なリンクを取得する場合は、代わりに[createlink][] API を使用します。
+長時間の埋め込み可能なリンクを取得する場合は、代わりに[Createlink][] API を使用します。
 
 > **注:** 現在、**プレビュー**アクションは SharePoint および OneDrive for business でのみ使用できます。
 
@@ -52,7 +52,7 @@ POST /shares/{shareId}/driveItem/preview
 
 |   名前      |  型         | 説明
 |:------------|:--------------|:-----------------------------------------------
-| ビューアー      | string        | 省略可能。 使用するプレビューアプリ。 `onedrive` または `office`。 null の場合は、適切なビューアーが自動的に選択されます。
+| ビューアー      | string        | 省略可能。 使用するプレビューアプリ。 `onedrive` または `office`。 Null の場合は、適切なビューアーが自動的に選択されます。
 | chromeless  | ブール値       | 省略可能。 If `true` (既定値) の場合、埋め込まれたビューにコントロールは含まれません。
 | allowEdit   | ブール値       | 省略可能。 の`true`場合は、埋め込み UI からファイルを編集できます。
 | page        | 文字列または数値 | 省略可能。 開始するドキュメントのページ番号 (該当する場合)。 ZIP などのファイルの種類に関する今後のユースケースの文字列として指定されます。
@@ -73,12 +73,12 @@ POST /shares/{shareId}/driveItem/preview
 | 名前           | 型   | 説明
 |:---------------|:-------|:---------------------------------------------------
 | getUrl         | string | HTTP GET (iframes など) を使用した埋め込みに適した URL
-| posturl        | string | HTTP POST (form post、JS など) を使用した埋め込みに適した URL
-| postparameters | string | posturl を使用する場合に含める POST パラメーター
+| postUrl        | string | HTTP POST (form post、JS など) を使用した埋め込みに適した URL
+| postParameters | string | PostUrl を使用する場合に含める POST パラメーター
 
-指定したオプションの embed サポートの現在の状態に応じて、getUrl、posturl、または both のどちらかが返される場合があります。
+指定したオプションの embed サポートの現在の状態に応じて、getUrl、postUrl、または both のどちらかが返される場合があります。
 
-postparameters はとして`application/x-www-form-urlencoded`書式設定された文字列です。 postparameters への投稿を実行する場合は、コンテンツタイプを適宜設定する必要があります。 例:
+postParameters はとして`application/x-www-form-urlencoded`書式設定された文字列です。 postparameters への投稿を実行する場合は、コンテンツタイプを適宜設定する必要があります。 次に例を示します。
 ```
 POST https://www.onedrive.com/embed_by_post
 Content-Type: application/x-www-form-urlencoded
@@ -88,13 +88,13 @@ param1=value&param2=another%20value
 
 ### <a name="viewers"></a>表示者
 
-**viewer**パラメーターには次の値を使用できます。
+**Viewer**パラメーターには次の値を使用できます。
 
 | 種類の値 | 説明
 |:-----------|:----------------------------------------------------------------
 | null     | ファイルをレンダリングするための適切なアプリを選択します。 ほとんどの場合、これは`onedrive`プレビューアーを使用しますが、ファイルの種類によって異なる場合があります。
 | `onedrive` | OneDrive プレビューアーアプリを使用して、ファイルをレンダリングします。
-| `office`   | WAC (Office online) を使用して、ファイルをレンダリングします。 Office ドキュメントに対してのみ有効です。
+| `office`   | Web 版の Office を使用して、ファイルを表示します。 Office ドキュメントに対してのみ有効です。
 
 ### <a name="chrome-vs-chromeless"></a>クロム vs chromeless
 

@@ -2,12 +2,12 @@
 title: recentNotebookLinks リソース型
 description: OneNote ノートブックを開くためのリンクです。 このリソース型は、recentNotebook リソース上のプロパティとして存在します。
 localization_priority: Normal
-ms.openlocfilehash: 846047bd602d19cb4745e0a63f0326aaf7bfb512
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7a906d0ece395aec191702bcd1b27d2cbea01af2
+ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579481"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35236679"
 ---
 # <a name="recentnotebooklinks-resource-type"></a>recentNotebookLinks リソース型
 
@@ -17,7 +17,7 @@ OneNote ノートブックを開くためのリンクです。 このリソー�
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |oneNoteClientUrl|[externalLink](externallink.md)|OneNote のネイティブ クライアントでノートブックを開きます (インストールされている場合)。|
-|oneNoteWebUrl|[externalLink](externallink.md)|OneNote Online でノートブックを開きます。|
+|oneNoteWebUrl|[externalLink](externallink.md)|OneNote で web 上のノートブックを開きます。|
 
 ## <a name="json-representation"></a>JSON 表記
 

@@ -1,21 +1,22 @@
 ---
 title: リスト identityRiskEvents
-description: identityriskevent オブジェクトのリストを取得します。
+description: Identityriskevent オブジェクトのリストを取得します。
 author: cloudhandler
 localization_priority: Normal
 ms.prod: security
-ms.openlocfilehash: 3f26b52f988a02e3a3f9f97ca9f78f7d5c8a6cc0
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: d6e19bf777b96226fa270c1f49301533b63a9cae
+ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328467"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35236420"
 ---
 # <a name="list-identityriskevents"></a>リスト identityRiskEvents
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-identityriskevent オブジェクトのリストを取得します。
+Identityriskevent オブジェクトのリストを取得します。
+
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -50,7 +51,7 @@ GET /identityRiskEvents
   "name": "get_identityriskevents"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/identityRiskEvents
+GET https://graph.microsoft.com/beta/identityRiskEvents
 ```
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。

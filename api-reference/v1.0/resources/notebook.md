@@ -4,12 +4,12 @@ description: OneNote ノートブック。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 96be6a41424260610794f9a0df4ef8e35dc1597f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2d22cfea2e0e64472aa7a1e07e0b005536850ce3
+ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32463111"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35236616"
 ---
 # <a name="notebook-resource-type"></a>ノートブックリソースの種類
 
@@ -52,23 +52,23 @@ OneNote ノートブック。
 |:---------------|:--------|:----------|
 |createdBy|[identitySet](identityset.md)|そのアイテムを作成したユーザーの ID、デバイス、アプリケーション。読み取り専用です。|
 |createdDateTime|DateTimeOffset|ノートブックが作成された日時。 Timestamp は、ISO 8601 形式を使用した日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 読み取り専用です。|
-|id|String|ノートブックの一意識別子。 読み取り専用です。|
+|id|文字列|ノートブックの一意識別子。 読み取り専用です。|
 |isDefault|ブール型 (Boolean)|これがユーザーの既定のノートブックであるかどうかを示します。 読み取り専用です。|
-|isShared|Boolean|ノートブックが共有されているかどうかを示します。 true の場合、所有者以外のユーザーがノートブックの内容を表示できます。 読み取り専用。|
+|isShared|Boolean|ノートブックが共有されているかどうかを示します。 true の場合、所有者以外のユーザーがノートブックの内容を表示できます。 読み取り専用です。|
 |lastModifiedBy|[identitySet](identityset.md)|そのアイテムを作成したユーザーの ID、デバイス、アプリケーション。読み取り専用です。|
 |lastModifiedDateTime|DateTimeOffset|ノートブックが最後に変更された日時。 Timestamp は、ISO 8601 形式を使用した日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 読み取り専用です。|
-|リンク|[NotebookLinks](notebooklinks.md)|ノートブックを開くためのリンク。 リンク`oneNoteClientURL`がインストールされている場合は、OneNote のネイティブクライアントでノートブックを開きます。 `oneNoteWebURL` リンクは、OneNote Online でノートブックを開きます。|
+|リンク|[NotebookLinks](notebooklinks.md)|ノートブックを開くためのリンク。 リンク`oneNoteClientURL`がインストールされている場合は、OneNote のネイティブクライアントでノートブックを開きます。 リンク`oneNoteWebURL`は、OneNote で web 上のノートブックを開きます。|
 |displayName|String|ノートブックの名前。|
-|sectionグループ url|String|`sectionGroups`ナビゲーションプロパティの URL。これは、ノートブック内のすべてのセクショングループを返します。 読み取り専用です。|
+|Sectionグループ Url|String|`sectionGroups`ナビゲーションプロパティの URL。これは、ノートブック内のすべてのセクショングループを返します。 読み取り専用です。|
 |sectionsUrl|String|ノートブック内のすべて`sections`のセクションを返すナビゲーションプロパティの URL。 読み取り専用です。|
 |self|String|ノートブックに関する詳細を取得できるエンドポイント。 読み取り専用です。|
-|userRole|onenoteUserRole|可能な値は、`Owner`、`Contributor`、`Reader`、`None` です。 owner ノートブックへの所有者レベルのアクセス権を表します。 共同作成者は、ノートブックへの読み取り/書き込みアクセスを表します。 閲覧者は、ノートブックへの読み取り専用アクセスを表します。 読み取り専用です。|
+|userRole|onenoteUserRole|使用可能な値は、`Owner`、`Contributor`、`Reader`、`None` です。 Owner ノートブックへの所有者レベルのアクセス権を表します。 共同作成者は、ノートブックへの読み取り/書き込みアクセスを表します。 閲覧者は、ノートブックへの読み取り専用アクセスを表します。 読み取り専用。|
 
 ## <a name="relationships"></a>関係
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|sectionGroups|[SectionGroup](sectiongroup.md)コレクション|ノートブック内のセクション グループ。 読み取り専用です。 Null 許容型。|
-|sections|[OnenoteSection](section.md)コレクション|ノートブックのセクション。 読み取り専用です。 Null 許容型。|
+|sectionGroups|[SectionGroup](sectiongroup.md) collection|ノートブック内のセクション グループ。 読み取り専用です。 Null 許容型。|
+|セクション|[OnenoteSection](section.md) コレクション|ノートブックのセクション。 読み取り専用です。 Null 許容型。|
 
 ## <a name="methods"></a>メソッド
 
@@ -77,11 +77,11 @@ OneNote ノートブック。
 |[ノートブックを取得する](../api/notebook-get.md) | [Notebook](notebook.md) |ノートブックのプロパティとリレーションシップを読み取ります。|
 |[getRecentNotebooks](../api/notebook-getrecentnotebooks.md) | [recentNotebook](recentnotebook.md)コレクション | ユーザーの最近アクセスしたノートブックのコレクションを取得します。 |
 |[getNotebookFromWebUrl](../api/notebook-getnotebookfromweburl.md) | [Notebook](notebook.md) | URL パスを使用して、ノートブックオブジェクトのプロパティとリレーションシップを取得します。 |
-|[セクション グループを作成する](../api/notebook-post-sectiongroups.md) |[SectionGroup](sectiongroup.md)| 指定したノートブックの sectiongroups コレクションに投稿して、セクショングループを作成します。|
-|[セクション グループを一覧表示する](../api/notebook-list-sectiongroups.md) |[SectionGroup](sectiongroup.md)コレクション| 指定されたノートブック内のセクショングループのコレクションを取得します。|
+|[セクション グループを作成する](../api/notebook-post-sectiongroups.md) |[SectionGroup](sectiongroup.md)| 指定したノートブックの sectionGroups コレクションに投稿して、セクショングループを作成します。|
+|[List section groups](../api/notebook-list-sectiongroups.md) |[SectionGroup](sectiongroup.md) collection| 指定されたノートブック内のセクショングループのコレクションを取得します。|
 |[セクションを作成する](../api/notebook-post-sections.md) |[OnenoteSection](section.md)| 指定したノートブックの sections コレクションに投稿してセクションを作成します。|
-|[セクションを一覧表示する](../api/notebook-list-sections.md) |[OnenoteSection](section.md)コレクション| 指定されたノートブック内のセクションのコレクションを取得します。|
-|[copyNotebook](../api/notebook-copynotebook.md)| なし | ノートブックをコピーします。|
+|[List sections](../api/notebook-list-sections.md) |[OnenoteSection](section.md) コレクション| 指定されたノートブック内のセクションのコレクションを取得します。|
+|[copyNotebook](../api/notebook-copynotebook.md)| None | ノートブックをコピーします。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
