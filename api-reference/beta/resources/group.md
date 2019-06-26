@@ -4,12 +4,12 @@ description: Office 365 グループ、Microsoft Teams のチーム、または�
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 41cd5756ffb82a2e32a7e336cc24b839e310187e
-ms.sourcegitcommit: b18ccb24fc79f3abb470cd759e25cdd266fc77c7
+ms.openlocfilehash: f4131d3d2c327c91fc29d31a922b167c72607397
+ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34108967"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35236497"
 ---
 # <a name="group-resource-type"></a>group リソースの種類
 
@@ -17,7 +17,7 @@ ms.locfileid: "34108967"
 
 Office 365 グループ、Microsoft Teams のチーム、またはセキュリティ グループのいずれかの Azure Active Directory (Azure AD) グループを表します。[directoryObject](directoryobject.md) から継承します。
 
-パフォーマンス上の理由から、[create](../api/group-post-groups.md) 操作、[get](../api/group-get.md) 操作、および [list](../api/group-list.md) 操作は、既定ではより一般的に使用されるプロパティのみを返します。 これらの_既定_のプロパティは、「[プロパティ](#properties)」セクションに記載されています。 既定では返されないプロパティを取得するには、そのプロパティを `$select` OData クエリ オプションで指定します。 [例](../api/group-get.md#request-2)を参照してください。
+パフォーマンス上の理由から、[create](../api/group-post-groups.md) 操作、[get](../api/group-get.md) 操作、および [list](../api/group-list.md) 操作は、既定ではより一般的に使用されるプロパティのみを返します。 これらの_既定_のプロパティは、「[プロパティ](#properties)」セクションに記載されています。 既定では返されないプロパティを取得するには、そのプロパティを `$select` OData クエリ オプションで指定します。
 
 このリソースは以下をサポートしています。
 
@@ -112,8 +112,8 @@ Office 365 グループ、Microsoft Teams のチーム、またはセキュリ�
 |displayName|文字列|グループの表示名。 このプロパティは、グループの作成時の必須プロパティであり、更新時にクリアすることはできません。 <br><br>既定で返されます。 $filter および $orderby をサポートします。 |
 |expirationDateTime|DateTimeOffset| グループに設定されている有効期限のタイムスタンプです。 値は変更できず、グループが作成されると自動的に設定されます。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、`'2014-01-01T00:00:00Z'` のようになります。 <br><br>既定で返されます。 読み取り専用です。 |
 |groupTypes|String collection| グループの種類とそのメンバーシップを指定します。  <br><br>コレクションに `Unified` が含まれている場合、そのグループは Office 365 グループです。それ以外の場合はセキュリティ グループです。  <br><br>`DynamicMembership`が含まれている場合、グループは動的メンバーシップがあります。それ以外の場合、メンバーシップは静的です。  <br><br>既定で返されます。 $filter をサポートします。|
-|hasMembersWithLicenseErrors|Boolean| このグループの中に、そのグループに基づくライセンス割り当てのライセンス エラーが発生しているメンバーがいるかどうかを示します。 <br><br>このプロパティは GET 操作では返されません。 これを $ filter 引数として使用して、ライセンス エラーが発生しているメンバーがいるグループを取得できます (つまり、このプロパティが **true** であるフィルターです)。 [例](../api/group-list.md#request-2)を参照してください。|
-|id|String|グループの一意の識別子。 <br><br>既定で返されます。 [directoryObject](directoryobject.md) から継承されます。 キー。 null 許容ではありません。 読み取り専用です。|
+|hasMembersWithLicenseErrors|Boolean| このグループの中に、そのグループに基づくライセンス割り当てのライセンス エラーが発生しているメンバーがいるかどうかを示します。 <br><br>このプロパティは GET 操作では返されません。 これを $ filter 引数として使用して、ライセンス エラーが発生しているメンバーがいるグループを取得できます (つまり、このプロパティが **true** であるフィルターです)。|
+|ID|String|グループの一意の識別子。 <br><br>既定で返されます。 [directoryObject](directoryobject.md) から継承されます。 キー。 null 許容ではありません。 読み取り専用です。|
 |isSubscribedByMail|Boolean|サインインしているユーザーが電子メールの会話を受信するように登録されているかどうかを示します。 既定値は **true** です。 <br><br>$select でのみ返されます。 |
 |licenseProcessingState|String|グループのメンバー全員へのグループ ライセンスの割り当ての状態を示します。 使用可能な値: `QueuedForProcessing`、`ProcessingInProgress`、`ProcessingComplete`。 <br><br>$select でのみ返されます。 読み取り専用です。 |
 |mail|String|グループの SMTP アドレス (たとえば、"Serviceadmins@contoso.onmicrosoft.com")。 <br><br>既定で返されます。 読み取り専用です。 $filter をサポートします。|

@@ -4,12 +4,12 @@ description: 'Office 365 グループまたはセキュリティ グループの
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: aafee2146d4b269f3a755cf867531085c39ffc5a
-ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
+ms.openlocfilehash: e410de0a4ef354a636a1c3fdd9851a9a109ee6dd
+ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34036578"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35236665"
 ---
 # <a name="group-resource-type"></a>group リソースの種類
 
@@ -17,7 +17,7 @@ Office 365 グループまたはセキュリティ グループのいずれか�
 
 [directoryObject](directoryobject.md) から継承します。
 
-パフォーマンス上の理由から、[作成](../api/group-post-groups.md)、[取得](../api/group-get.md)、[一覧表示](../api/group-list.md)の操作は、既定ではより一般的に使用されるプロパティのみを返します。 これらの_既定_のプロパティは、「[プロパティ](#properties)」セクションに記載されています。 既定では返されないプロパティを取得するには、そのプロパティを `$select` OData クエリ オプションで指定します。 [例](../api/group-get.md#request-2)を参照してください。
+パフォーマンス上の理由から、[作成](../api/group-post-groups.md)、[取得](../api/group-get.md)、[一覧表示](../api/group-list.md)の操作は、既定ではより一般的に使用されるプロパティのみを返します。 これらの_既定_のプロパティは、「[プロパティ](#properties)」セクションに記載されています。 既定では返されないプロパティを取得するには、そのプロパティを `$select` OData クエリ オプションで指定します。
 
 このリソースは以下をサポートしています。
 
@@ -108,7 +108,7 @@ Office 365 グループまたはセキュリティ グループのいずれか�
 |createdDateTime|DateTimeOffset| グループ作成時のタイムスタンプです。 値は変更できず、グループが作成されると自動的に設定されます。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、`'2014-01-01T00:00:00Z'` のようになります。 <br><br>既定で返されます。 読み取り専用です。 |
 |説明|String|グループに関するオプションの説明。 <br><br>既定で返されます。|
 |displayName|文字列|グループの表示名。 このプロパティは、グループの作成時の必須プロパティであり、更新時にクリアすることはできません。 <br><br>既定で返されます。 $filter および $orderby をサポートします。 |
-|groupTypes|String collection| グループの種類とそのメンバーシップを指定します。  <br><br>コレクションに `Unified` が含まれている場合、そのグループは Office 365 グループです。それ以外の場合はセキュリティ グループです。  <br><br>コレクションに `DynamicMembership` が含まれている場合、そのグループには動的メンバーシップがあります。それ以外の場合は、メンバーシップは静的です。  <br><br>既定で返されます。 $filter をサポートします。|
+|groupTypes|String collection| グループの種類とそのメンバーシップを指定します。  <br><br>コレクションに `Unified` が含まれている場合、そのグループは Office 365 グループです。それ以外の場合はセキュリティ グループです。  <br><br>`DynamicMembership`が含まれている場合、グループは動的メンバーシップがあります。それ以外の場合、メンバーシップは静的です。  <br><br>既定で返されます。 $filter をサポートします。|
 |hasMembersWithLicenseErrors|Boolean|このグループの中に、そのグループに基づくライセンス割り当てのライセンス エラーが発生しているメンバーがいるかどうかを示します。 <br><br>このプロパティは GET 操作では返されません。 これを $ filter 引数として使用して、ライセンス エラーが発生しているメンバーがいるグループを取得できます (つまり、このプロパティが true であるフィルターです)。 [例](../api/group-list.md)を参照してください。|
 |id|String|グループの一意の識別子。 <br><br>既定で返されます。 [directoryObject](directoryobject.md) から継承されます。 キー。 null 許容ではありません。 読み取り専用です。|
 |isSubscribedByMail|Boolean|サインインしているユーザーが電子メールの会話を受信するように登録されているかどうかを示します。 既定値は **true** です。 <br><br>$select でのみ返されます。 |
