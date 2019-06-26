@@ -3,18 +3,20 @@ title: 'Microsoft Graph のアクセス許可のリファレンス '
 description: Microsoft Graph は、アプリがアクセスするリソース (ユーザー、グループ、メールなど) を制御する詳細なアクセス許可を公開しています。 開発者は、アプリが要求する Microsoft Graph のアクセス許可を決定します。
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: e8751a246baedaf85867f28bbd5be0f656673677
-ms.sourcegitcommit: b523648530fcc8c2a3ded35b419be8047b9fcd10
+ms.openlocfilehash: 9d0d82eddf4aaf283942aa6213f28bdb9d589c65
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "35084055"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133762"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph のアクセス許可のリファレンス
 
 アプリから Microsoft Graph のデータにアクセスする場合、ユーザーまたは管理者は、同意のプロセスを通してそのアプリに正しいアクセス許可を付与する必要があります。 このトピックでは、Microsoft Graph API の各主要なセットに関連付けられているアクセス許可について説明します。 また、アクセス許可の使用方法に関するガイダンスを提供しています。
 
-アクセス許可のしくみを詳細に確認するには、「[認証と承認の基本方法](auth/auth-concepts.md#microsoft-graph-permissions)」を参照してください。
+アクセス許可の詳細については、「[認証と承認の基本](auth/auth-concepts.md#microsoft-graph-permissions)」と、次に示すビデオを参照してください。
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/yXYzgWWVdSM]
 
 ## <a name="microsoft-graph-permission-names"></a>Microsoft Graph のアクセス許可名
 
