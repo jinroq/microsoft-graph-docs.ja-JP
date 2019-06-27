@@ -2,58 +2,58 @@
 title: '同期スキーマ: parseExpression'
 description: '(../resources/synchronization_attributemappingsource.md) オブジェクト。 '
 localization_priority: Normal
-ms.openlocfilehash: 79cb683571fa7a5e1b48f93a1805ae5d7a4f7202
-ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
+ms.openlocfilehash: 3a8ddb4ed8bacc43a56f16237aa026f8559f92a2
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34536149"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35271261"
 ---
-# <a name="synchronizationschema-parseexpression"></a><span data-ttu-id="341f2-103">同期スキーマ: parseExpression</span><span class="sxs-lookup"><span data-stu-id="341f2-103">synchronizationSchema: parseExpression</span></span>
+# <a name="synchronizationschema-parseexpression"></a><span data-ttu-id="41d43-103">同期スキーマ: parseExpression</span><span class="sxs-lookup"><span data-stu-id="41d43-103">synchronizationSchema: parseExpression</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="341f2-104">指定した文字列式を解析します [attributeMappingSource | (../resources/synchronization_attributemappingsource.md) オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="341f2-104">Parse a given string expression into an [attributeMappingSource|(../resources/synchronization_attributemappingsource.md) object.</span></span> 
+<span data-ttu-id="41d43-104">指定した文字列式を解析します [attributeMappingSource | (../resources/synchronization_attributemappingsource.md) オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="41d43-104">Parse a given string expression into an [attributeMappingSource|(../resources/synchronization_attributemappingsource.md) object.</span></span> 
 
-<span data-ttu-id="341f2-105">式の詳細については、「 [Azure Active Directory での属性マッピングの式の書き込み](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="341f2-105">For more information about expressions, see [Writing Expressions for Attribute Mappings in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings).</span></span>
+<span data-ttu-id="41d43-105">式の詳細については、「 [Azure Active Directory での属性マッピングの式の書き込み](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="41d43-105">For more information about expressions, see [Writing Expressions for Attribute Mappings in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="341f2-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="341f2-106">Permissions</span></span>
-<span data-ttu-id="341f2-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="341f2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="41d43-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="41d43-106">Permissions</span></span>
+<span data-ttu-id="41d43-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="41d43-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="341f2-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="341f2-109">Permission type</span></span>                        | <span data-ttu-id="341f2-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="341f2-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="41d43-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="41d43-109">Permission type</span></span>                        | <span data-ttu-id="41d43-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="41d43-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="341f2-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="341f2-111">Delegated (work or school account)</span></span>     |<span data-ttu-id="341f2-112">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="341f2-112">Directory.ReadWrite.All</span></span>  |
-|<span data-ttu-id="341f2-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="341f2-113">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="341f2-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="341f2-114">Not supported.</span></span>|
-|<span data-ttu-id="341f2-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="341f2-115">Application</span></span>                            |<span data-ttu-id="341f2-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="341f2-116">Not supported.</span></span>| 
+|<span data-ttu-id="41d43-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="41d43-111">Delegated (work or school account)</span></span>     |<span data-ttu-id="41d43-112">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="41d43-112">Directory.ReadWrite.All</span></span>  |
+|<span data-ttu-id="41d43-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="41d43-113">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="41d43-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="41d43-114">Not supported.</span></span>|
+|<span data-ttu-id="41d43-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="41d43-115">Application</span></span>                            |<span data-ttu-id="41d43-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="41d43-116">Not supported.</span></span>| 
 
-## <a name="http-request"></a><span data-ttu-id="341f2-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="341f2-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="41d43-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="41d43-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /servicePrincipals/{id}/synchronization/jobs/{id}/schema/parseExpression
 POST /servicePrincipals/{id}/synchronization/templates/{id}/schema/parseExpression
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="341f2-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="341f2-118">Request headers</span></span>
-| <span data-ttu-id="341f2-119">名前</span><span class="sxs-lookup"><span data-stu-id="341f2-119">Name</span></span>       | <span data-ttu-id="341f2-120">説明</span><span class="sxs-lookup"><span data-stu-id="341f2-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="41d43-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="41d43-118">Request headers</span></span>
+| <span data-ttu-id="41d43-119">名前</span><span class="sxs-lookup"><span data-stu-id="41d43-119">Name</span></span>       | <span data-ttu-id="41d43-120">説明</span><span class="sxs-lookup"><span data-stu-id="41d43-120">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="341f2-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="341f2-121">Authorization</span></span>  | <span data-ttu-id="341f2-122">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="341f2-122">Bearer {code}</span></span>|
+| <span data-ttu-id="41d43-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="41d43-121">Authorization</span></span>  | <span data-ttu-id="41d43-122">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="41d43-122">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="341f2-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="341f2-123">Request body</span></span>
-<span data-ttu-id="341f2-124">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="341f2-124">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="41d43-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="41d43-123">Request body</span></span>
+<span data-ttu-id="41d43-124">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="41d43-124">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="341f2-125">パラメーター</span><span class="sxs-lookup"><span data-stu-id="341f2-125">Parameter</span></span>    | <span data-ttu-id="341f2-126">型</span><span class="sxs-lookup"><span data-stu-id="341f2-126">Type</span></span>   |<span data-ttu-id="341f2-127">説明</span><span class="sxs-lookup"><span data-stu-id="341f2-127">Description</span></span>|
+| <span data-ttu-id="41d43-125">パラメーター</span><span class="sxs-lookup"><span data-stu-id="41d43-125">Parameter</span></span>    | <span data-ttu-id="41d43-126">型</span><span class="sxs-lookup"><span data-stu-id="41d43-126">Type</span></span>   |<span data-ttu-id="41d43-127">説明</span><span class="sxs-lookup"><span data-stu-id="41d43-127">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="341f2-128">式</span><span class="sxs-lookup"><span data-stu-id="341f2-128">expression</span></span>               |<span data-ttu-id="341f2-129">String</span><span class="sxs-lookup"><span data-stu-id="341f2-129">String</span></span>               |<span data-ttu-id="341f2-130">解析する式を指定します。</span><span class="sxs-lookup"><span data-stu-id="341f2-130">Expression to parse.</span></span>|
-|<span data-ttu-id="341f2-131">testInputObject</span><span class="sxs-lookup"><span data-stu-id="341f2-131">testInputObject</span></span>          |[<span data-ttu-id="341f2-132">式 Inputobject</span><span class="sxs-lookup"><span data-stu-id="341f2-132">expressionInputObject</span></span>](../resources/synchronization-expressioninputobject.md)|<span data-ttu-id="341f2-133">式を評価するためのテストデータオブジェクト。</span><span class="sxs-lookup"><span data-stu-id="341f2-133">Test data object to evaluate expression against.</span></span> <span data-ttu-id="341f2-134">省略可能。</span><span class="sxs-lookup"><span data-stu-id="341f2-134">Optional.</span></span>|
-|<span data-ttu-id="341f2-135">targetAttributeDefinition</span><span class="sxs-lookup"><span data-stu-id="341f2-135">targetAttributeDefinition</span></span>|[<span data-ttu-id="341f2-136">attributeDefinition</span><span class="sxs-lookup"><span data-stu-id="341f2-136">attributeDefinition</span></span>](../resources/synchronization-attributedefinition.md) |<span data-ttu-id="341f2-137">この式にマップされる属性の定義。</span><span class="sxs-lookup"><span data-stu-id="341f2-137">Definition of the attribute that will be mapped to this expression.</span></span> <span data-ttu-id="341f2-138">省略可能。</span><span class="sxs-lookup"><span data-stu-id="341f2-138">Optional.</span></span>|
+|<span data-ttu-id="41d43-128">式</span><span class="sxs-lookup"><span data-stu-id="41d43-128">expression</span></span>               |<span data-ttu-id="41d43-129">String</span><span class="sxs-lookup"><span data-stu-id="41d43-129">String</span></span>               |<span data-ttu-id="41d43-130">解析する式を指定します。</span><span class="sxs-lookup"><span data-stu-id="41d43-130">Expression to parse.</span></span>|
+|<span data-ttu-id="41d43-131">testInputObject</span><span class="sxs-lookup"><span data-stu-id="41d43-131">testInputObject</span></span>          |[<span data-ttu-id="41d43-132">式 Inputobject</span><span class="sxs-lookup"><span data-stu-id="41d43-132">expressionInputObject</span></span>](../resources/synchronization-expressioninputobject.md)|<span data-ttu-id="41d43-133">式を評価するためのテストデータオブジェクト。</span><span class="sxs-lookup"><span data-stu-id="41d43-133">Test data object to evaluate expression against.</span></span> <span data-ttu-id="41d43-134">省略可能。</span><span class="sxs-lookup"><span data-stu-id="41d43-134">Optional.</span></span>|
+|<span data-ttu-id="41d43-135">targetAttributeDefinition</span><span class="sxs-lookup"><span data-stu-id="41d43-135">targetAttributeDefinition</span></span>|[<span data-ttu-id="41d43-136">attributeDefinition</span><span class="sxs-lookup"><span data-stu-id="41d43-136">attributeDefinition</span></span>](../resources/synchronization-attributedefinition.md) |<span data-ttu-id="41d43-137">この式にマップされる属性の定義。</span><span class="sxs-lookup"><span data-stu-id="41d43-137">Definition of the attribute that will be mapped to this expression.</span></span> <span data-ttu-id="41d43-138">省略可能。</span><span class="sxs-lookup"><span data-stu-id="41d43-138">Optional.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="341f2-139">応答</span><span class="sxs-lookup"><span data-stu-id="341f2-139">Response</span></span>
-<span data-ttu-id="341f2-140">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[parseexpression response](../resources/synchronization-parseexpressionresponse.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="341f2-140">If successful, this method returns a `200 OK` response code and a [parseExpressionResponse](../resources/synchronization-parseexpressionresponse.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="41d43-139">応答</span><span class="sxs-lookup"><span data-stu-id="41d43-139">Response</span></span>
+<span data-ttu-id="41d43-140">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[parseexpression response](../resources/synchronization-parseexpressionresponse.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="41d43-140">If successful, this method returns a `200 OK` response code and a [parseExpressionResponse](../resources/synchronization-parseexpressionresponse.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="341f2-141">例</span><span class="sxs-lookup"><span data-stu-id="341f2-141">Example</span></span>
+## <a name="example"></a><span data-ttu-id="41d43-141">例</span><span class="sxs-lookup"><span data-stu-id="41d43-141">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="341f2-142">要求</span><span class="sxs-lookup"><span data-stu-id="341f2-142">Request</span></span>
-<span data-ttu-id="341f2-143">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="341f2-143">The following is an example of the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="41d43-142">要求</span><span class="sxs-lookup"><span data-stu-id="41d43-142">Request</span></span>
+<span data-ttu-id="41d43-143">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="41d43-143">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "synchronizationschema_parseexpression"
@@ -113,10 +113,10 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="341f2-144">応答</span><span class="sxs-lookup"><span data-stu-id="341f2-144">Response</span></span>
-<span data-ttu-id="341f2-145">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="341f2-145">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="41d43-144">応答</span><span class="sxs-lookup"><span data-stu-id="41d43-144">Response</span></span>
+<span data-ttu-id="41d43-145">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="41d43-145">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="341f2-p104">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="341f2-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="41d43-p104">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="41d43-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -170,13 +170,15 @@ Content-type: application/json
     "parsingSucceeded": true
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="341f2-148">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="341f2-148">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="341f2-149">C#</span><span class="sxs-lookup"><span data-stu-id="341f2-149">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="41d43-148">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="41d43-148">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="41d43-149">C#</span><span class="sxs-lookup"><span data-stu-id="41d43-149">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/synchronizationschema_parseexpression-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="341f2-150">Javascript</span><span class="sxs-lookup"><span data-stu-id="341f2-150">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="41d43-150">Javascript</span><span class="sxs-lookup"><span data-stu-id="41d43-150">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/synchronizationschema_parseexpression-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="41d43-151">目的-C</span><span class="sxs-lookup"><span data-stu-id="41d43-151">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/synchronizationschema_parseexpression-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -191,6 +193,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/synchronization-synchronizationschema-parseexpression.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/synchronization-synchronizationschema-parseexpression.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/synchronization-synchronizationschema-parseexpression.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

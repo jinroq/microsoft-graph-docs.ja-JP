@@ -1,31 +1,31 @@
 ---
 title: アラートを取得する
-description: " alert オブジェクトのプロパティと関係を取得します。"
+description: " Alert オブジェクトのプロパティと関係を取得します。"
 author: preetikr
 localization_priority: Normal
 ms.prod: security
-ms.openlocfilehash: 36629363a3f55a654554dcbbde8bfdc113de1f37
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0fab817aca955f7829237249ae7370c11a0a4a8a
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551443"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35273753"
 ---
-# <a name="get-alert"></a><span data-ttu-id="447de-103">アラートを取得する</span><span class="sxs-lookup"><span data-stu-id="447de-103">Get alert</span></span>
+# <a name="get-alert"></a><span data-ttu-id="dba28-103">アラートを取得する</span><span class="sxs-lookup"><span data-stu-id="dba28-103">Get alert</span></span>
 
- <span data-ttu-id="447de-104">[alert](../resources/alert.md)オブジェクトのプロパティと関係を取得します。</span><span class="sxs-lookup"><span data-stu-id="447de-104">Retrieve the properties and relationships of an [alert](../resources/alert.md) object.</span></span>
+ <span data-ttu-id="dba28-104">[Alert](../resources/alert.md)オブジェクトのプロパティと関係を取得します。</span><span class="sxs-lookup"><span data-stu-id="dba28-104">Retrieve the properties and relationships of an [alert](../resources/alert.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="447de-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="447de-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="dba28-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="dba28-105">Permissions</span></span>
 
-<span data-ttu-id="447de-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="447de-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="dba28-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="dba28-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="447de-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="447de-108">Permission type</span></span>      | <span data-ttu-id="447de-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="447de-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="dba28-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="dba28-108">Permission type</span></span>      | <span data-ttu-id="dba28-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="dba28-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="447de-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="447de-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="447de-111">securityevents. all、securityevents、ReadWrite</span><span class="sxs-lookup"><span data-stu-id="447de-111">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span>   |
-|<span data-ttu-id="447de-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="447de-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="447de-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="447de-113">Not supported.</span></span>  |
-|<span data-ttu-id="447de-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="447de-114">Application</span></span> | <span data-ttu-id="447de-115">securityevents. all、securityevents、ReadWrite</span><span class="sxs-lookup"><span data-stu-id="447de-115">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span> |
+|<span data-ttu-id="dba28-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="dba28-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="dba28-111">SecurityEvents.Read.All、SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dba28-111">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span>   |
+|<span data-ttu-id="dba28-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="dba28-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="dba28-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="dba28-113">Not supported.</span></span>  |
+|<span data-ttu-id="dba28-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="dba28-114">Application</span></span> | <span data-ttu-id="dba28-115">SecurityEvents.Read.All、SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dba28-115">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="447de-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="447de-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="dba28-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="dba28-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -33,25 +33,25 @@ ms.locfileid: "32551443"
 GET /security/alerts/{alert_id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="447de-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="447de-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="dba28-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="dba28-117">Request headers</span></span>
 
-| <span data-ttu-id="447de-118">名前</span><span class="sxs-lookup"><span data-stu-id="447de-118">Name</span></span>      |<span data-ttu-id="447de-119">説明</span><span class="sxs-lookup"><span data-stu-id="447de-119">Description</span></span>|
+| <span data-ttu-id="dba28-118">名前</span><span class="sxs-lookup"><span data-stu-id="dba28-118">Name</span></span>      |<span data-ttu-id="dba28-119">説明</span><span class="sxs-lookup"><span data-stu-id="dba28-119">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="447de-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="447de-120">Authorization</span></span>  | <span data-ttu-id="447de-121">ベアラー {code}。</span><span class="sxs-lookup"><span data-stu-id="447de-121">Bearer {code}.</span></span> <span data-ttu-id="447de-122">必須です。</span><span class="sxs-lookup"><span data-stu-id="447de-122">Required.</span></span>|
+| <span data-ttu-id="dba28-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="dba28-120">Authorization</span></span>  | <span data-ttu-id="dba28-121">ベアラー {code}。</span><span class="sxs-lookup"><span data-stu-id="dba28-121">Bearer {code}.</span></span> <span data-ttu-id="dba28-122">必須です。</span><span class="sxs-lookup"><span data-stu-id="dba28-122">Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="447de-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="447de-123">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="dba28-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="dba28-123">Request body</span></span>
 
-<span data-ttu-id="447de-124">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="447de-124">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="dba28-124">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="dba28-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="447de-125">応答</span><span class="sxs-lookup"><span data-stu-id="447de-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="dba28-125">応答</span><span class="sxs-lookup"><span data-stu-id="dba28-125">Response</span></span>
 
-<span data-ttu-id="447de-126">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で**alert**オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="447de-126">If successful, this method returns a `200 OK` response code and an **alert** object in the response body.</span></span> <span data-ttu-id="447de-127">2xx または404以外の状態コードがプロバイダーから返された場合、またはプロバイダーがタイムアウトになった場合は`206 Partial Content` 、応答は、警告ヘッダー内のプロバイダーの応答と共に状態コードになります。</span><span class="sxs-lookup"><span data-stu-id="447de-127">If a status code other than 2xx or 404 is returned from a provider or if a provider times out, the response will be a `206 Partial Content` status code with the provider's response in a warning header.</span></span> <span data-ttu-id="447de-128">詳細については、「 [Microsoft Graph セキュリティ API のエラー応答](../resources/security-error-codes.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="447de-128">For more information, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).</span></span>
+<span data-ttu-id="dba28-126">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で**alert**オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="dba28-126">If successful, this method returns a `200 OK` response code and an **alert** object in the response body.</span></span> <span data-ttu-id="dba28-127">プロバイダーから 2xx または 404 以外の状態コードが返されるか、プロバイダーがタイムアウトした場合、応答は、警告ヘッダー内のプロバイダーの応答と共に状態コード `206 Partial Content` になります。</span><span class="sxs-lookup"><span data-stu-id="dba28-127">If a status code other than 2xx or 404 is returned from a provider or if a provider times out, the response will be a `206 Partial Content` status code with the provider's response in a warning header.</span></span> <span data-ttu-id="dba28-128">詳細については、「[Microsoft グラフ セキュリティ API のエラー応答](../resources/security-error-codes.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="dba28-128">For more information, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).</span></span>
 
-## <a name="example"></a><span data-ttu-id="447de-129">例</span><span class="sxs-lookup"><span data-stu-id="447de-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="dba28-129">例</span><span class="sxs-lookup"><span data-stu-id="dba28-129">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="447de-130">要求</span><span class="sxs-lookup"><span data-stu-id="447de-130">Request</span></span>
+### <a name="request"></a><span data-ttu-id="dba28-130">要求</span><span class="sxs-lookup"><span data-stu-id="dba28-130">Request</span></span>
 
-<span data-ttu-id="447de-131">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="447de-131">The following is an example of the request.</span></span>
+<span data-ttu-id="dba28-131">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="dba28-131">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_alert"
@@ -61,9 +61,9 @@ GET /security/alerts/{alert_id}
 GET https://graph.microsoft.com/v1.0/security/alerts/{alert_id}
 ```
 
-### <a name="response"></a><span data-ttu-id="447de-132">応答</span><span class="sxs-lookup"><span data-stu-id="447de-132">Response</span></span>
+### <a name="response"></a><span data-ttu-id="dba28-132">応答</span><span class="sxs-lookup"><span data-stu-id="dba28-132">Response</span></span>
 
-<span data-ttu-id="447de-133">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="447de-133">The following is an example of the response.</span></span>
+<span data-ttu-id="dba28-133">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="dba28-133">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,
@@ -231,6 +231,18 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="dba28-134">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="dba28-134">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="dba28-135">C#</span><span class="sxs-lookup"><span data-stu-id="dba28-135">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_alert-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="dba28-136">Javascript</span><span class="sxs-lookup"><span data-stu-id="dba28-136">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_alert-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="dba28-137">目的-C</span><span class="sxs-lookup"><span data-stu-id="dba28-137">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_alert-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -239,5 +251,10 @@ Content-type: application/json
   "description": "Get glert",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/alert-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/alert-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/alert-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->
