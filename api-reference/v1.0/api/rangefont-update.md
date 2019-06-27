@@ -4,56 +4,56 @@ description: rangefont オブジェクトのプロパティを更新します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: d258463ed9ee8ab6968a4b5781b2415fd45ca860
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: f5c668fdf3a70ac157817206ccd17f37b69bba8c
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33607764"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35263673"
 ---
-# <a name="update-rangefont"></a><span data-ttu-id="e1b05-103">ｒangefont を更新する</span><span class="sxs-lookup"><span data-stu-id="e1b05-103">Update rangefont</span></span>
+# <a name="update-rangefont"></a><span data-ttu-id="e3653-103">ｒangefont を更新する</span><span class="sxs-lookup"><span data-stu-id="e3653-103">Update rangefont</span></span>
 
-<span data-ttu-id="e1b05-104">rangefont オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="e1b05-104">Update the properties of rangefont object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="e1b05-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="e1b05-105">Permissions</span></span>
-<span data-ttu-id="e1b05-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e1b05-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e3653-104">rangefont オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="e3653-104">Update the properties of rangefont object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="e3653-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="e3653-105">Permissions</span></span>
+<span data-ttu-id="e3653-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e3653-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e1b05-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="e1b05-108">Permission type</span></span>      | <span data-ttu-id="e1b05-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="e1b05-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e3653-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="e3653-108">Permission type</span></span>      | <span data-ttu-id="e3653-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="e3653-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e1b05-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="e1b05-110">Delegated (work or school account)</span></span> | <span data-ttu-id="e1b05-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e1b05-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="e1b05-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="e1b05-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e1b05-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e1b05-113">Not supported.</span></span>    |
-|<span data-ttu-id="e1b05-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="e1b05-114">Application</span></span> | <span data-ttu-id="e1b05-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e1b05-115">Not supported.</span></span> |
+|<span data-ttu-id="e3653-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="e3653-110">Delegated (work or school account)</span></span> | <span data-ttu-id="e3653-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e3653-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="e3653-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="e3653-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e3653-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e3653-113">Not supported.</span></span>    |
+|<span data-ttu-id="e3653-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="e3653-114">Application</span></span> | <span data-ttu-id="e3653-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e3653-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e1b05-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="e1b05-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e3653-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="e3653-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/names/{name}/range/format/font
 PATCH /workbook/worksheets/{id|name}/range(address='<address>')/format/font
 PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/font
 ```
-## <a name="request-headers"></a><span data-ttu-id="e1b05-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="e1b05-117">Request headers</span></span>
-| <span data-ttu-id="e1b05-118">名前</span><span class="sxs-lookup"><span data-stu-id="e1b05-118">Name</span></span>       | <span data-ttu-id="e1b05-119">説明</span><span class="sxs-lookup"><span data-stu-id="e1b05-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e3653-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="e3653-117">Request headers</span></span>
+| <span data-ttu-id="e3653-118">名前</span><span class="sxs-lookup"><span data-stu-id="e3653-118">Name</span></span>       | <span data-ttu-id="e3653-119">説明</span><span class="sxs-lookup"><span data-stu-id="e3653-119">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="e1b05-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="e1b05-120">Authorization</span></span>  | <span data-ttu-id="e1b05-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="e1b05-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="e1b05-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="e1b05-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="e1b05-p103">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="e1b05-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="e3653-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="e3653-120">Authorization</span></span>  | <span data-ttu-id="e3653-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="e3653-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e3653-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="e3653-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="e3653-p103">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="e3653-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="e1b05-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="e1b05-126">Request body</span></span>
-<span data-ttu-id="e1b05-p104">要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="e1b05-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e3653-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="e3653-126">Request body</span></span>
+<span data-ttu-id="e3653-p104">要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="e3653-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="e1b05-130">プロパティ</span><span class="sxs-lookup"><span data-stu-id="e1b05-130">Property</span></span>     | <span data-ttu-id="e1b05-131">型</span><span class="sxs-lookup"><span data-stu-id="e1b05-131">Type</span></span>   |<span data-ttu-id="e1b05-132">説明</span><span class="sxs-lookup"><span data-stu-id="e1b05-132">Description</span></span>|
+| <span data-ttu-id="e3653-130">プロパティ</span><span class="sxs-lookup"><span data-stu-id="e3653-130">Property</span></span>     | <span data-ttu-id="e3653-131">型</span><span class="sxs-lookup"><span data-stu-id="e3653-131">Type</span></span>   |<span data-ttu-id="e3653-132">説明</span><span class="sxs-lookup"><span data-stu-id="e3653-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="e1b05-133">bold</span><span class="sxs-lookup"><span data-stu-id="e1b05-133">bold</span></span>|<span data-ttu-id="e1b05-134">ブール値</span><span class="sxs-lookup"><span data-stu-id="e1b05-134">boolean</span></span>|<span data-ttu-id="e1b05-135">フォントの太字の状態を表します。</span><span class="sxs-lookup"><span data-stu-id="e1b05-135">Represents the bold status of font.</span></span>|
-|<span data-ttu-id="e1b05-136">color</span><span class="sxs-lookup"><span data-stu-id="e1b05-136">color</span></span>|<span data-ttu-id="e1b05-137">string</span><span class="sxs-lookup"><span data-stu-id="e1b05-137">string</span></span>|<span data-ttu-id="e1b05-p105">テキストの色の HTML カラー コード表記。たとえば、#FF0000 は赤を表します。</span><span class="sxs-lookup"><span data-stu-id="e1b05-p105">HTML color code representation of the text color. E.g. #FF0000 represents Red.</span></span>|
-|<span data-ttu-id="e1b05-141">italic</span><span class="sxs-lookup"><span data-stu-id="e1b05-141">italic</span></span>|<span data-ttu-id="e1b05-142">ブール値</span><span class="sxs-lookup"><span data-stu-id="e1b05-142">boolean</span></span>|<span data-ttu-id="e1b05-143">フォントの斜体の状態を表します。</span><span class="sxs-lookup"><span data-stu-id="e1b05-143">Represents the italic status of the font.</span></span>|
-|<span data-ttu-id="e1b05-144">name</span><span class="sxs-lookup"><span data-stu-id="e1b05-144">name</span></span>|<span data-ttu-id="e1b05-145">string</span><span class="sxs-lookup"><span data-stu-id="e1b05-145">string</span></span>|<span data-ttu-id="e1b05-146">フォント名 (例: "Calibri")</span><span class="sxs-lookup"><span data-stu-id="e1b05-146">Font name (e.g. "Calibri")</span></span>|
-|<span data-ttu-id="e1b05-147">size</span><span class="sxs-lookup"><span data-stu-id="e1b05-147">size</span></span>|<span data-ttu-id="e1b05-148">double</span><span class="sxs-lookup"><span data-stu-id="e1b05-148">double</span></span>|<span data-ttu-id="e1b05-149">フォント サイズ</span><span class="sxs-lookup"><span data-stu-id="e1b05-149">Font size.</span></span>|
-|<span data-ttu-id="e1b05-150">underline</span><span class="sxs-lookup"><span data-stu-id="e1b05-150">underline</span></span>|<span data-ttu-id="e1b05-151">文字列</span><span class="sxs-lookup"><span data-stu-id="e1b05-151">string</span></span>|<span data-ttu-id="e1b05-152">フォントに適用する下線の種類。</span><span class="sxs-lookup"><span data-stu-id="e1b05-152">Type of underline applied to the font.</span></span> <span data-ttu-id="e1b05-153">使用可能な値: `None`、`Single`、`Double`、`SingleAccountant`、`DoubleAccountant`。</span><span class="sxs-lookup"><span data-stu-id="e1b05-153">The possible values are: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.</span></span>|
+|<span data-ttu-id="e3653-133">bold</span><span class="sxs-lookup"><span data-stu-id="e3653-133">bold</span></span>|<span data-ttu-id="e3653-134">ブール値</span><span class="sxs-lookup"><span data-stu-id="e3653-134">boolean</span></span>|<span data-ttu-id="e3653-135">フォントの太字の状態を表します。</span><span class="sxs-lookup"><span data-stu-id="e3653-135">Represents the bold status of font.</span></span>|
+|<span data-ttu-id="e3653-136">color</span><span class="sxs-lookup"><span data-stu-id="e3653-136">color</span></span>|<span data-ttu-id="e3653-137">string</span><span class="sxs-lookup"><span data-stu-id="e3653-137">string</span></span>|<span data-ttu-id="e3653-p105">テキストの色の HTML カラー コード表記。たとえば、#FF0000 は赤を表します。</span><span class="sxs-lookup"><span data-stu-id="e3653-p105">HTML color code representation of the text color. E.g. #FF0000 represents Red.</span></span>|
+|<span data-ttu-id="e3653-141">italic</span><span class="sxs-lookup"><span data-stu-id="e3653-141">italic</span></span>|<span data-ttu-id="e3653-142">ブール値</span><span class="sxs-lookup"><span data-stu-id="e3653-142">boolean</span></span>|<span data-ttu-id="e3653-143">フォントの斜体の状態を表します。</span><span class="sxs-lookup"><span data-stu-id="e3653-143">Represents the italic status of the font.</span></span>|
+|<span data-ttu-id="e3653-144">name</span><span class="sxs-lookup"><span data-stu-id="e3653-144">name</span></span>|<span data-ttu-id="e3653-145">string</span><span class="sxs-lookup"><span data-stu-id="e3653-145">string</span></span>|<span data-ttu-id="e3653-146">フォント名 (例: "Calibri")</span><span class="sxs-lookup"><span data-stu-id="e3653-146">Font name (e.g. "Calibri")</span></span>|
+|<span data-ttu-id="e3653-147">size</span><span class="sxs-lookup"><span data-stu-id="e3653-147">size</span></span>|<span data-ttu-id="e3653-148">double</span><span class="sxs-lookup"><span data-stu-id="e3653-148">double</span></span>|<span data-ttu-id="e3653-149">フォント サイズ</span><span class="sxs-lookup"><span data-stu-id="e3653-149">Font size.</span></span>|
+|<span data-ttu-id="e3653-150">underline</span><span class="sxs-lookup"><span data-stu-id="e3653-150">underline</span></span>|<span data-ttu-id="e3653-151">文字列</span><span class="sxs-lookup"><span data-stu-id="e3653-151">string</span></span>|<span data-ttu-id="e3653-152">フォントに適用する下線の種類。</span><span class="sxs-lookup"><span data-stu-id="e3653-152">Type of underline applied to the font.</span></span> <span data-ttu-id="e3653-153">使用可能な値: `None`、`Single`、`Double`、`SingleAccountant`、`DoubleAccountant`。</span><span class="sxs-lookup"><span data-stu-id="e3653-153">The possible values are: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="e1b05-154">応答</span><span class="sxs-lookup"><span data-stu-id="e1b05-154">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e3653-154">応答</span><span class="sxs-lookup"><span data-stu-id="e3653-154">Response</span></span>
 
-<span data-ttu-id="e1b05-155">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で、更新された[WorkbookRangeFont](../resources/rangefont.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="e1b05-155">If successful, this method returns a `200 OK` response code and updated [WorkbookRangeFont](../resources/rangefont.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="e1b05-156">例</span><span class="sxs-lookup"><span data-stu-id="e1b05-156">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="e1b05-157">要求</span><span class="sxs-lookup"><span data-stu-id="e1b05-157">Request</span></span>
-<span data-ttu-id="e1b05-158">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="e1b05-158">Here is an example of the request.</span></span>
+<span data-ttu-id="e3653-155">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で、更新された[WorkbookRangeFont](../resources/rangefont.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="e3653-155">If successful, this method returns a `200 OK` response code and updated [WorkbookRangeFont](../resources/rangefont.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="e3653-156">例</span><span class="sxs-lookup"><span data-stu-id="e3653-156">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="e3653-157">要求</span><span class="sxs-lookup"><span data-stu-id="e3653-157">Request</span></span>
+<span data-ttu-id="e3653-158">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="e3653-158">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_rangefont"
@@ -72,8 +72,8 @@ Content-length: 134
   "underline": "underline-value"
 }
 ```
-##### <a name="response"></a><span data-ttu-id="e1b05-159">応答</span><span class="sxs-lookup"><span data-stu-id="e1b05-159">Response</span></span>
-<span data-ttu-id="e1b05-p107">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="e1b05-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="e3653-159">応答</span><span class="sxs-lookup"><span data-stu-id="e3653-159">Response</span></span>
+<span data-ttu-id="e3653-p107">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="e3653-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -93,13 +93,15 @@ Content-length: 134
   "underline": "underline-value"
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="e1b05-163">SDK サンプルコード</span><span class="sxs-lookup"><span data-stu-id="e1b05-163">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="e1b05-164">Visual</span><span class="sxs-lookup"><span data-stu-id="e1b05-164">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="e3653-163">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="e3653-163">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="e3653-164">C#</span><span class="sxs-lookup"><span data-stu-id="e3653-164">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_rangefont-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e1b05-165">Java</span><span class="sxs-lookup"><span data-stu-id="e1b05-165">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e3653-165">Javascript</span><span class="sxs-lookup"><span data-stu-id="e3653-165">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_rangefont-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="e3653-166">目的-C</span><span class="sxs-lookup"><span data-stu-id="e3653-166">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_rangefont-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -113,6 +115,7 @@ Content-length: 134
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/rangefont-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/rangefont-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/rangefont-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

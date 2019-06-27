@@ -3,51 +3,53 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: サイト内の SharePoint リストを一覧表示する
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 24ec21489d0a5100eef02d8f31fb63ba8b5cad7f
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 9ea4d8445d9a74a1d557f944427abecbea2a590d
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33598428"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35264590"
 ---
-# <a name="enumerate-lists-in-a-site"></a><span data-ttu-id="95a50-102">サイト内のリストを列挙する</span><span class="sxs-lookup"><span data-stu-id="95a50-102">Enumerate lists in a site</span></span>
+# <a name="enumerate-lists-in-a-site"></a><span data-ttu-id="c40bd-102">サイト内のリストを列挙する</span><span class="sxs-lookup"><span data-stu-id="c40bd-102">Enumerate lists in a site</span></span>
 
-<span data-ttu-id="95a50-103">[サイト][]の[リスト][]のコレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="95a50-103">Get the collection of [lists][] for a [site][].</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+<span data-ttu-id="c40bd-103">[サイト][]の[リスト][]のコレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="c40bd-103">Get the collection of [lists][] for a [site][].</span></span>
 
 [サイト]: ../resources/list.md
 [lists]: ../resources/list.md
 [リスト]: ../resources/site.md
 [site]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="95a50-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="95a50-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="c40bd-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="c40bd-106">Permissions</span></span>
 
-<span data-ttu-id="95a50-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="95a50-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c40bd-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c40bd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="95a50-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="95a50-109">Permission type</span></span>      | <span data-ttu-id="95a50-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="95a50-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c40bd-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="c40bd-109">Permission type</span></span>      | <span data-ttu-id="c40bd-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="c40bd-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="95a50-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="95a50-111">Delegated (work or school account)</span></span> | <span data-ttu-id="95a50-112">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="95a50-112">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="95a50-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="95a50-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="95a50-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="95a50-114">Not supported.</span></span>    |
-|<span data-ttu-id="95a50-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="95a50-115">Application</span></span> | <span data-ttu-id="95a50-116">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="95a50-116">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="c40bd-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="c40bd-111">Delegated (work or school account)</span></span> | <span data-ttu-id="c40bd-112">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c40bd-112">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="c40bd-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="c40bd-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c40bd-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c40bd-114">Not supported.</span></span>    |
+|<span data-ttu-id="c40bd-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="c40bd-115">Application</span></span> | <span data-ttu-id="c40bd-116">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c40bd-116">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="95a50-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="95a50-117">HTTP request</span></span>
-
-```http
-GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
-```
-
-## <a name="example"></a><span data-ttu-id="95a50-118">例</span><span class="sxs-lookup"><span data-stu-id="95a50-118">Example</span></span>
-
-#### <a name="request"></a><span data-ttu-id="95a50-119">要求</span><span class="sxs-lookup"><span data-stu-id="95a50-119">Request</span></span>
-
-<!-- { "blockType": "request", "name": "enum-lists", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
+## <a name="http-request"></a><span data-ttu-id="c40bd-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="c40bd-117">HTTP request</span></span>
 
 ```http
-GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
+GET https://graph.microsoft.com/beta/sites/{site-id}/lists
 ```
 
-##### <a name="response"></a><span data-ttu-id="95a50-120">応答</span><span class="sxs-lookup"><span data-stu-id="95a50-120">Response</span></span>
+## <a name="example"></a><span data-ttu-id="c40bd-118">例</span><span class="sxs-lookup"><span data-stu-id="c40bd-118">Example</span></span>
+
+#### <a name="request"></a><span data-ttu-id="c40bd-119">要求</span><span class="sxs-lookup"><span data-stu-id="c40bd-119">Request</span></span>
+
+<!-- { "blockType": "request", "name": "enum-lists", "scopes": "sites.read.all service.sharepoint" } -->
+
+```http
+GET https://graph.microsoft.com/beta/sites/{site-id}/lists
+```
+
+##### <a name="response"></a><span data-ttu-id="c40bd-120">応答</span><span class="sxs-lookup"><span data-stu-id="c40bd-120">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "isCollection": true, "truncated": true } -->
 
@@ -80,32 +82,37 @@ Content-type: application/json
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="95a50-121">SDK サンプルコード</span><span class="sxs-lookup"><span data-stu-id="95a50-121">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="95a50-122">Visual</span><span class="sxs-lookup"><span data-stu-id="95a50-122">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="c40bd-121">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="c40bd-121">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="c40bd-122">C#</span><span class="sxs-lookup"><span data-stu-id="c40bd-122">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/enum-lists-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="95a50-123">Java</span><span class="sxs-lookup"><span data-stu-id="95a50-123">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="c40bd-123">Javascript</span><span class="sxs-lookup"><span data-stu-id="c40bd-123">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/enum-lists-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="c40bd-124">目的-C</span><span class="sxs-lookup"><span data-stu-id="c40bd-124">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/enum-lists-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-## <a name="remarks"></a><span data-ttu-id="95a50-124">注釈</span><span class="sxs-lookup"><span data-stu-id="95a50-124">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="c40bd-125">注釈</span><span class="sxs-lookup"><span data-stu-id="c40bd-125">Remarks</span></span>
 
-<span data-ttu-id="95a50-125">[system][] ファセットのあるリストは既定では非表示です。</span><span class="sxs-lookup"><span data-stu-id="95a50-125">Lists with the [system][] facet are hidden by default.</span></span>
-<span data-ttu-id="95a50-126">それらを一覧表示するには、`$select` ステートメントに `system` を含めます。</span><span class="sxs-lookup"><span data-stu-id="95a50-126">To list them, include `system` in your `$select` statement.</span></span>
+<span data-ttu-id="c40bd-126">[system][] ファセットのあるリストは既定では非表示です。</span><span class="sxs-lookup"><span data-stu-id="c40bd-126">Lists with the [system][] facet are hidden by default.</span></span>
+<span data-ttu-id="c40bd-127">それらを一覧表示するには、`$select` ステートメントに `system` を含めます。</span><span class="sxs-lookup"><span data-stu-id="c40bd-127">To list them, include `system` in your `$select` statement.</span></span>
 
 [system]: ../resources/systemfacet.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
   "tocPath": "Lists/Enumerate",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/list-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/list-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/beta/api/list-list.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/beta/api/list-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/list-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-} -->
+}
+-->

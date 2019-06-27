@@ -4,28 +4,28 @@ description: 既定の予定表グループ以外の予定表グループを削�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: f1dded8885f99646d48ddf309ff12e64d61988e1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 80e050a6fd8520782501a9d718fba9d4d9840fa7
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32572697"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35264723"
 ---
-# <a name="delete-calendargroup"></a><span data-ttu-id="e4464-103">Delete calendarGroup</span><span class="sxs-lookup"><span data-stu-id="e4464-103">Delete calendarGroup</span></span>
+# <a name="delete-calendargroup"></a><span data-ttu-id="2e7c4-103">Delete calendarGroup</span><span class="sxs-lookup"><span data-stu-id="2e7c4-103">Delete calendarGroup</span></span>
 
-<span data-ttu-id="e4464-104">既定の予定表グループ以外の予定表グループを削除します。</span><span class="sxs-lookup"><span data-stu-id="e4464-104">Delete a calendar group other than the default calendar group.</span></span>
+<span data-ttu-id="2e7c4-104">既定の予定表グループ以外の予定表グループを削除します。</span><span class="sxs-lookup"><span data-stu-id="2e7c4-104">Delete a calendar group other than the default calendar group.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e4464-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="e4464-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="2e7c4-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="2e7c4-105">Permissions</span></span>
 
-<span data-ttu-id="e4464-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e4464-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="2e7c4-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2e7c4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="e4464-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="e4464-108">Permission type</span></span>                        | <span data-ttu-id="e4464-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="e4464-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="2e7c4-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="2e7c4-108">Permission type</span></span>                        | <span data-ttu-id="2e7c4-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="2e7c4-109">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :------------------------------------------ |
-| <span data-ttu-id="e4464-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="e4464-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="e4464-111">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e4464-111">Calendars.ReadWrite</span></span>                         |
-| <span data-ttu-id="e4464-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="e4464-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e4464-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e4464-113">Calendars.ReadWrite</span></span>                         |
-| <span data-ttu-id="e4464-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="e4464-114">Application</span></span>                            | <span data-ttu-id="e4464-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e4464-115">Calendars.ReadWrite</span></span>                         |
+| <span data-ttu-id="2e7c4-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="2e7c4-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="2e7c4-111">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2e7c4-111">Calendars.ReadWrite</span></span>                         |
+| <span data-ttu-id="2e7c4-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="2e7c4-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2e7c4-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2e7c4-113">Calendars.ReadWrite</span></span>                         |
+| <span data-ttu-id="2e7c4-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="2e7c4-114">Application</span></span>                            | <span data-ttu-id="2e7c4-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2e7c4-115">Calendars.ReadWrite</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="e4464-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="e4464-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2e7c4-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="2e7c4-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -34,25 +34,25 @@ DELETE /me/calendarGroups/{id}
 DELETE /users/{id | userPrincipalName}/calendarGroups/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e4464-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="e4464-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="2e7c4-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="2e7c4-117">Request headers</span></span>
 
-| <span data-ttu-id="e4464-118">名前</span><span class="sxs-lookup"><span data-stu-id="e4464-118">Name</span></span>          | <span data-ttu-id="e4464-119">型</span><span class="sxs-lookup"><span data-stu-id="e4464-119">Type</span></span>   | <span data-ttu-id="e4464-120">説明</span><span class="sxs-lookup"><span data-stu-id="e4464-120">Description</span></span>               |
+| <span data-ttu-id="2e7c4-118">名前</span><span class="sxs-lookup"><span data-stu-id="2e7c4-118">Name</span></span>          | <span data-ttu-id="2e7c4-119">型</span><span class="sxs-lookup"><span data-stu-id="2e7c4-119">Type</span></span>   | <span data-ttu-id="2e7c4-120">説明</span><span class="sxs-lookup"><span data-stu-id="2e7c4-120">Description</span></span>               |
 | :------------ | :----- | :------------------------ |
-| <span data-ttu-id="e4464-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="e4464-121">Authorization</span></span> | <span data-ttu-id="e4464-122">string</span><span class="sxs-lookup"><span data-stu-id="e4464-122">string</span></span> | <span data-ttu-id="e4464-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="e4464-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="2e7c4-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="2e7c4-121">Authorization</span></span> | <span data-ttu-id="2e7c4-122">string</span><span class="sxs-lookup"><span data-stu-id="2e7c4-122">string</span></span> | <span data-ttu-id="2e7c4-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="2e7c4-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="e4464-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="e4464-125">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="2e7c4-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="2e7c4-125">Request body</span></span>
 
-<span data-ttu-id="e4464-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="e4464-126">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="2e7c4-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="2e7c4-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e4464-127">応答</span><span class="sxs-lookup"><span data-stu-id="e4464-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="2e7c4-127">応答</span><span class="sxs-lookup"><span data-stu-id="2e7c4-127">Response</span></span>
 
-<span data-ttu-id="e4464-p103">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="e4464-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="2e7c4-p103">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="2e7c4-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e4464-130">例</span><span class="sxs-lookup"><span data-stu-id="e4464-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="2e7c4-130">例</span><span class="sxs-lookup"><span data-stu-id="2e7c4-130">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="e4464-131">要求</span><span class="sxs-lookup"><span data-stu-id="e4464-131">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="2e7c4-131">要求</span><span class="sxs-lookup"><span data-stu-id="2e7c4-131">Request</span></span>
 
-<span data-ttu-id="e4464-132">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="e4464-132">Here is an example of the request.</span></span>
+<span data-ttu-id="2e7c4-132">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="2e7c4-132">Here is an example of the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -63,9 +63,9 @@ DELETE /users/{id | userPrincipalName}/calendarGroups/{id}
 DELETE https://graph.microsoft.com/v1.0/me/calendarGroups/{id}
 ```
 
-##### <a name="response"></a><span data-ttu-id="e4464-133">応答</span><span class="sxs-lookup"><span data-stu-id="e4464-133">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="2e7c4-133">応答</span><span class="sxs-lookup"><span data-stu-id="2e7c4-133">Response</span></span>
 
-<span data-ttu-id="e4464-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="e4464-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="2e7c4-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="2e7c4-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -75,6 +75,18 @@ DELETE https://graph.microsoft.com/v1.0/me/calendarGroups/{id}
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="2e7c4-137">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="2e7c4-137">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="2e7c4-138">C#</span><span class="sxs-lookup"><span data-stu-id="2e7c4-138">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/delete_calendargroup-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="2e7c4-139">Javascript</span><span class="sxs-lookup"><span data-stu-id="2e7c4-139">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/delete_calendargroup-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="2e7c4-140">目的-C</span><span class="sxs-lookup"><span data-stu-id="2e7c4-140">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/delete_calendargroup-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -84,5 +96,10 @@ HTTP/1.1 204 No Content
   "description": "Delete calendarGroup",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/calendargroup-delete.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/calendargroup-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/calendargroup-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->
