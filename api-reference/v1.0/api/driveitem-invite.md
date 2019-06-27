@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: アイテムにアクセスするための招待状を送信する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: f7d3a974143b738b966a8953848f4837c16cd6c8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 37e2bc8a383f5078c413ccc37f369442f55b597c
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548097"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35272864"
 ---
 # <a name="send-a-sharing-invitation"></a>共有の招待状を送信する
 
@@ -62,8 +62,8 @@ POST /users/{userId}/drive/items/{itemId}/invite
 |:-----------------|:-------------------------------|:-------------------------
 | Recipients       | Collection([DriveRecipient][]) | アクセスおよび共有の招待状を受信する、受信者のコレクション。
 | message          | String                         | 共有の招待状に含まれるプレーンテキスト形式のメッセージ。最大の長さは 2000 文字です。
-| requireSignIn    | ブール値                        | 共有アイテムを表示するために、招待状の受信者がサインインする必要があるかどうかを指定します。
-| sendInvitation   | ブール値                        | true の場合、[共有リンク][]は受信者に送信されます。 それ以外の場合は、通知を送信することなく、直接アクセス許可が付与されます。
+| requireSignIn    | Boolean                        | 共有アイテムを表示するために、招待状の受信者がサインインする必要があるかどうかを指定します。
+| sendInvitation   | ブール値                        | True の場合、[共有リンク][]は受信者に送信されます。 それ以外の場合は、通知を送信することなく、直接アクセス許可が付与されます。
 | roles            | Collection(String)             | 共有への招待の受信者に付与する役割を指定します。
 
 ## <a name="example"></a>例
@@ -123,6 +123,18 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/send-sharing-invite-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/send-sharing-invite-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[目的-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/send-sharing-invite-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="remarks"></a>備考
 
@@ -143,5 +155,10 @@ Content-type: application/json
   "description": "Add permissions to an item and optionally send a sharing notification.",
   "keywords": "retrieve,item,metadata",
   "section": "documentation",
-  "tocPath": "Sharing/Add permissions"
+  "tocPath": "Sharing/Add permissions",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/driveitem-invite.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/driveitem-invite.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/driveitem-invite.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 } -->

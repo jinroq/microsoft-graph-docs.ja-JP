@@ -4,14 +4,16 @@ description: 'クラス オブジェクトのリストを取得します。 委�
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 968427c644673abba767975c6c9db85cffc93721
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 8da52dd7130e80c6f4c44b20c719c27d5ba5642b
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33587213"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35259361"
 ---
 # <a name="list-classes"></a>クラスをリストする
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 クラス オブジェクトのリストを取得します。 委任されたトークンを使用した場合、メンバーは自分のクラスに関する情報以外を参照できません。 
 
@@ -52,12 +54,12 @@ GET /education/users/{id}/classes
   "name": "get_classes"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/education/me/classes
+GET https://graph.microsoft.com/beta/education/me/classes
 ```
 ##### <a name="response"></a>応答
 応答の例を次に示します。 
 
->**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
+>**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 
 <!-- {
   "blockType": "response",
@@ -91,27 +93,32 @@ Content-length: 277
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_classes-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_classes-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目的-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_classes-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List classes",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/educationuser-list-classes.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/educationuser-list-classes.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/beta/api/educationuser-list-classes.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/beta/api/educationuser-list-classes.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/educationuser-list-classes.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-}-->
+}
+-->

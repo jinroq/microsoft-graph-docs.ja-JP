@@ -4,12 +4,12 @@ description: グラフ要素の線の書式をクリアします。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 3b9f43d877a008780b8e7ce50b39fea70bd5fa78
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 58f55b188f83d7c111b6bd101e5db7550dbed2ca
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33585239"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35261664"
 ---
 # <a name="chartlineformat-clear"></a>ChartLineFormat: clear
 
@@ -67,13 +67,15 @@ POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{i
 ```http
 HTTP/1.1 200 OK
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/chartlineformat_clear-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/chartlineformat_clear-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目的-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/chartlineformat_clear-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -88,6 +90,7 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/chartlineformat-clear.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/chartlineformat-clear.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/chartlineformat-clear.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

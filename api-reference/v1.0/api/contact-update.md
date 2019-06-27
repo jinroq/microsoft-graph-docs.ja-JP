@@ -4,12 +4,12 @@ description: 連絡先オブジェクトのプロパティを更新します。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 381aa191639e32677d4fccbf9e9f48c99f3d988f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0d8a6d344326d1dfb03a23fc21e7e21680a827dd
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566152"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35277498"
 ---
 # <a name="update-contact"></a>連絡先を更新する
 
@@ -60,7 +60,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |children|String|連絡先の子供の名前。|
 |companyName|String|連絡先の会社の名前。|
 |department|String|連絡先の部署。|
-|displayName|文字列型 (String)|連絡先の表示名。 後で他のプロパティを更新すると、自動的に生成された値が、指定した displayName 値に上書きされる可能性があることに注意してください。 既存の値を保持するには、更新操作で常に displayName として含めます。|
+|displayName|文字列|連絡先の表示名。 後で他のプロパティを更新すると、指定した displayName 値が自動的に生成された値に上書きされますので、ご注意ください。 既存の値を保持するには、[更新] 操作で必ずその値を displayName として含めてください。|
 |emailAddresses|[EmailAddress](../resources/emailaddress.md) collection|連絡先のメール アドレス。|
 |fileAs|String|連絡先がファイルされる名前。|
 |generation|String|連絡先の世代。|
@@ -80,11 +80,11 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |personalNotes|String|連絡先に関するユーザーのメモ。|
 |profession|String|連絡先の専門的職業。|
 |spouseName|String|連絡先の配偶者/パートナーの名前。|
-|surname|文字列|連絡先の姓。|
+|姓|文字列|連絡先の姓。|
 |title|String|連絡先の肩書。|
 |yomiCompanyName|String|連絡先の会社名の読み仮名。このプロパティは省略可能です。|
-|yomiGivenName|String|連絡先の名 (ファースト ネーム) の読み仮名。このプロパティは省略可能です。|
-|yomiSurname|文字列|連絡先の姓 (ラスト ネーム) の読み仮名。このプロパティは省略可能です。|
+|yomiGivenName|文字列|連絡先の名 (ファースト ネーム) の読み仮名。このプロパティは省略可能です。|
+|yomiSurname|String|連絡先の姓 (ラスト ネーム) の読み仮名。このプロパティは省略可能です。|
 
 ## <a name="response"></a>応答
 
@@ -184,6 +184,18 @@ Content-length: 1977
   "children": []
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_contact-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_contact-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[目的-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_contact-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -192,5 +204,10 @@ Content-length: 1977
   "description": "Update contact",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/contact-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/contact-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/contact-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

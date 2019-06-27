@@ -4,12 +4,12 @@ description: 組織のユーザーのデータをエクスポートするため�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 776602eb600ca74feff61c595092e1e2518b49a1
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 58b8d8900a7323b12c17de5bb083e4a181abe68e
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33961300"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35270386"
 ---
 # <a name="user-exportpersonaldata"></a>ユーザー: Exportpersonal Data
 
@@ -21,7 +21,7 @@ ms.locfileid: "33961300"
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) |  すべてのユーザーとユーザーの. すべてをエクスポートします。  |
-|委任 (個人用 Microsoft アカウント) |  該当しない  |
+|委任 (個人用 Microsoft アカウント) |  該当なし  |
 |アプリケーション | すべてのユーザーとユーザーの. すべてをエクスポートします。 |
 
 >**注:** エクスポートは、委任されたアクセス許可を使用する場合にのみ、会社の管理者が実行できます。
@@ -83,6 +83,8 @@ Content-length: 48
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/user_exportpersonaldata-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目的-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/user_exportpersonaldata-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -105,6 +107,7 @@ HTTP/1.1 202 Accepted
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/user-exportpersonaldata.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/user-exportpersonaldata.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/user-exportpersonaldata.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

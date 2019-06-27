@@ -5,12 +5,12 @@ ms.date: 09/11/2017
 title: SharePoint リストを作成する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 5b27d1711511e42707671f8acfae3702acb15867
-ms.sourcegitcommit: 7bf9885c8769c5dfe2614a98ba6d7cc297ae564c
+ms.openlocfilehash: 7a1333cee432c04bbc127298e005350fc21eb525
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2019
-ms.locfileid: "34192766"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35272101"
 ---
 # <a name="create-a-new-list"></a>新しいリストを作成する
 
@@ -106,6 +106,8 @@ Content-type: application/json
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create-list-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目的-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create-list-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -123,6 +125,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "List/Create",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/list-create.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/list-create.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/list-create.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

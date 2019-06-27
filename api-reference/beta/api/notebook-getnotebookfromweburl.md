@@ -4,14 +4,16 @@ description: URL パスを使用して、ノートブックオブジェクトの
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: c726f3ace6663676317ac0a9578b68881d33ee65
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a27f787cdedf77f0ea4237067f537d6756bcc2bc
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33961276"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35266403"
 ---
 # <a name="notebook-getnotebookfromweburl"></a>ノートブック: getNotebookFromWebUrl
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 URL パスを使用して、[ノートブック](../resources/notebook.md)オブジェクトのプロパティとリレーションシップを取得します。
 
@@ -33,7 +35,7 @@ POST /groups/{id}/onenote/notebooks/GetNotebookFromWebUrl
 POST /sites/{id}/onenote/notebooks/GetNotebookFromWebUrl
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | 承諾 | string | `application/json` |
@@ -41,7 +43,7 @@ POST /sites/{id}/onenote/notebooks/GetNotebookFromWebUrl
 ## <a name="request-body"></a>要求本文
 要求本文で、取得するノートブックへの完全な URL パスの JSON 表記を指定します。
 
-| プロパティ     | 種類        | 説明 |
+| プロパティ     | 型        | 説明 |
 |:-------------|:------------|:------------|
 | `webUrl`     |`String`     | 取得するノートブックの URL パス。 また、"onenote:" というプレフィックスを含めることもできます。|
 
@@ -56,7 +58,7 @@ POST /sites/{id}/onenote/notebooks/GetNotebookFromWebUrl
   "name": "notebook_fromweburl"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/onenote/notebooks/GetNotebookFromWebUrl
+POST https://graph.microsoft.com/beta/me/onenote/notebooks/GetNotebookFromWebUrl
 Content-type: application/json
 
 {"webUrl":"webUrl value"}
@@ -101,6 +103,8 @@ Content-Length: 544
 # <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/notebook_fromweburl-Cs-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目的-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/notebook_fromweburl-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -113,7 +117,8 @@ Content-Length: 544
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/notebook-getnotebookfromweburl.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/notebook-getnotebookfromweburl.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/beta/api/notebook-getnotebookfromweburl.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/beta/api/notebook-getnotebookfromweburl.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/notebook-getnotebookfromweburl.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

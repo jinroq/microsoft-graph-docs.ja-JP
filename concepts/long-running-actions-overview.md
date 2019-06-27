@@ -3,12 +3,12 @@ title: 長時間実行アクションの処理 (ベータ版)
 description: この記事では、長時間実行アクションの処理について説明します。
 localization_priority: Normal
 author: daspek
-ms.openlocfilehash: 4512672ea44e944fd77e95249aa439f0ee9e84ba
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0403dd8e099a5f21f3b1da7cf74859b664eefa43
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32560782"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35277771"
 ---
 # <a name="working-with-long-running-actions-beta"></a>長時間実行アクションの処理 (ベータ版)
 
@@ -52,6 +52,18 @@ API は、アクションが承諾されたことと、長時間実行アクシ�
 HTTP/1.1 202 Accepted
 Location: https://api.onedrive.com/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/lro-copy-item-example-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/lro-copy-item-example-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[目的-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/lro-copy-item-example-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 **注:** 場所の URL が返されても、Microsoft Graph API エンドポイントにあるとは限りません。
 
@@ -138,6 +150,18 @@ Content-type: application/json
     "size": 12019
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/lro-copy-item-example-complete-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/lro-copy-item-example-complete-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[目的-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/lro-copy-item-example-complete-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="supported-resources"></a>サポートされているリソース
 
@@ -160,6 +184,11 @@ Content-type: application/json
   "keywords": "monitor,long,running,operation,action",
   "section": "documentation",
   "suppressions": [
+    "Error: /concepts/long-running-actions-overview.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /concepts/long-running-actions-overview.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /concepts/long-running-actions-overview.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /concepts/long-running-actions-overview.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /concepts/long-running-actions-overview.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Error: lro-check-status:
       Unable to locate a definition for resource type: microsoft.graph.asyncJobStatus",
     "Error: lro-check-status-complete:

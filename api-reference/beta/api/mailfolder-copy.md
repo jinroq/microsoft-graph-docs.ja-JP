@@ -4,14 +4,16 @@ description: mailFolder とその内容を別の mailFolder にコピーしま�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: c19903977cb90b119e21fbc4cad944afd87ea1fc
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 4c53c3c400c19a6e65f4dc8df53708463863899f
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33598134"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35266704"
 ---
 # <a name="mailfolder-copy"></a>mailFolder: コピー
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 mailFolder とその内容を別の mailFolder にコピーします。
 
@@ -35,6 +37,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/copy
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
+
 | ヘッダー | 値 |
 |:-------|:------|
 | Authorization | `Bearer {token}`. 必須です。 |
@@ -57,6 +60,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/copy
 以下は、この API を呼び出す方法の例です。
 
 ##### <a name="request"></a>要求
+
 以下は、要求の例です。
 <!-- {
   "blockType": "request",
@@ -64,7 +68,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/copy
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/me/mailFolders/{id}/copy
+POST https://graph.microsoft.com/beta/me/mailFolders/{id}/copy
 Content-type: application/json
 Content-length: 44
 
@@ -78,6 +82,7 @@ Content-length: 44
 以下は、応答の例です。
 
 > **注:**  ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -98,27 +103,32 @@ Content-length: 179
   "id": "id-value"
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/mailfolder_copy-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/mailfolder_copy-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目的-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/mailfolder_copy-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "mailFolder: copy",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/mailfolder-copy.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/mailfolder-copy.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/beta/api/mailfolder-copy.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/beta/api/mailfolder-copy.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/mailfolder-copy.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-}-->
+}
+-->

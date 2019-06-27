@@ -4,12 +4,12 @@ description: Outlook 関連リソースの ID の形式を変換します。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1015ae12f5ecfd63b29efe38f7172321b06386ec
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2b62027af1f21df9118fe278a8ad1b04f6796fe5
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33961230"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35269452"
 ---
 # <a name="user-translateexchangeids"></a>ユーザー: translateExchangeIds
 
@@ -46,7 +46,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 | パラメーター | 型 | 説明 |
 |:----------|:-----|:------------|
-| inputIds | String collection | 変換する識別子のコレクション。 コレクション内のすべての識別子のソース ID の種類は同じである必要があり、同じメールボックス内のアイテムである必要があります。 このコレクションの最大サイズは1000文字列です。 |
+| inputIds | 文字列コレクション | 変換する識別子のコレクション。 コレクション内のすべての識別子のソース ID の種類は同じである必要があり、同じメールボックス内のアイテムである必要があります。 このコレクションの最大サイズは1000文字列です。 |
 | sourceIdType | exchangeIdFormat | `InputIds`パラメーターの識別子の id の種類。 |
 | targetIdType | exchangeIdFormat | 変換先となる要求された ID の種類。 |
 
@@ -131,6 +131,8 @@ Content-type: application/json
 # <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/user_translateexchangeids-Cs-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目的-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/user_translateexchangeids-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -143,6 +145,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/user-translateexchangeids.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/user-translateexchangeids.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/user-translateexchangeids.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

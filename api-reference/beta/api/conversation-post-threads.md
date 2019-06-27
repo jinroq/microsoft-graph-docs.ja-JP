@@ -1,19 +1,21 @@
 ---
 title: スレッドを作成する
-description: '指定した会話に新しいスレッドを作成します。 '
+description: 指定した会話に新しいスレッドを作成します。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 63a2eb54ebeaaeaf0aabfddb4aa8fe7caeb0854e
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 7915637c4e19c56abbd076f5041500348b58b5d7
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33591162"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35261139"
 ---
 # <a name="create-thread"></a>スレッドを作成する
 
-指定した会話に新しいスレッドを作成します。 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+指定した会話に新しいスレッドを作成します。
 
 指定したとおりにスレッドと投稿を作成します。[スレッドに返信](conversationthread-reply.md) を使用して、そのスレッドへの投稿を続けます。また、投稿 ID を取得している場合は、そのスレッドのその投稿にも[返信](post-reply.md)できます。
 
@@ -53,7 +55,7 @@ POST /groups/{id}/conversations/{id}/threads
   "name": "create_conversationthread_from_conversation"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/{id}/conversations/{id}/threads
+POST https://graph.microsoft.com/beta/groups/{id}/conversations/{id}/threads
 Content-type: application/json
 
 {
@@ -69,7 +71,7 @@ Content-type: application/json
 要求の本文に、[conversationThread](../resources/conversationthread.md) オブジェクトの JSON 表記を指定します。
 ##### <a name="response"></a>応答
 
-成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で新しいスレッドの `id` を返します。以下は、応答の例です。 
+成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で新しいスレッドの `id` を返します。以下は、応答の例です。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -84,27 +86,32 @@ Content-length: 346
   "id": "thread-id-value"
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/create_conversationthread_from_conversation-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_conversationthread_from_conversation-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目的-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create_conversationthread_from_conversation-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create thread",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/conversation-post-threads.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/conversation-post-threads.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/beta/api/conversation-post-threads.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/beta/api/conversation-post-threads.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/conversation-post-threads.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-}-->
+}
+-->

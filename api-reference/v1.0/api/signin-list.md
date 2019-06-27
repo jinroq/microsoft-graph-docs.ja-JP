@@ -4,12 +4,12 @@ description: Microsoft Graph API からのサインインリソース (エンテ
 localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1c5d4f2d7bc4e60eb0b1d1d876e4c9bf5000a35c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3052ee368667f14932167f5a5d25dd168ab74264
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951421"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35279276"
 ---
 # <a name="list-signins"></a>signIn を一覧表示する
 
@@ -109,6 +109,8 @@ Content-length: 264
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/list_signins-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目的-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/list_signins-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -173,6 +175,7 @@ Content-length: 264
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/signin-list.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/signin-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/signin-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

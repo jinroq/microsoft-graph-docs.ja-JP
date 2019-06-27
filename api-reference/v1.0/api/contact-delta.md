@@ -4,12 +4,12 @@ description: 指定したフォルダーで追加、削除、更新された連�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: c369460fea021e1487560e5893fc0527dd542358
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7dc111d1c540f35c1f464cef498126cec16e3d45
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566312"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35277519"
 ---
 # <a name="contact-delta"></a>contact: delta
 
@@ -37,7 +37,7 @@ GET /users/{id}/contactFolders/{id}/contacts/delta
 
 連絡先の変更を追跡すると、一連の**デルタ**関数呼び出しが発生します。任意のクエリ パラメーター (`$deltatoken` と `$skiptoken` 以外) を使用する場合は、最初の**デルタ**要求でこれを指定する必要があります。Microsoft Graph は、応答で提供される `nextLink` または `deltaLink` の URL のトークン部分に指定したパラメーターを自動的にエンコードします。必要なクエリ パラメーターを前もって指定しておくだけで済みます。それ以降の要求では、前の応答で `nextLink` または `deltaLink` の URL に必要なパラメーターが既にエンコードされ、含まれているため、この URL をコピーして適用します。
 
-| クエリ パラメーター      | 型   |説明|
+| クエリ パラメーター      | 種類   |説明|
 |:---------------|:--------|:----------|
 | $deltatoken | string | 同じ連絡先コレクションの前の**デルタ**関数呼び出しの `deltaLink` URL で[状態トークン](/graph/delta-query-overview)が返され、変更追跡のその回が完了したことを示します。このコレクションについて、このトークンを含む `deltaLink` URL 全体を、変更追跡の次の回の最初の要求に保存し、適用します。|
 | $skiptoken | string | 前の**デルタ**関数呼び出しの `nextLink` URL で[状態トークン](/graph/delta-query-overview)が返され、同じ連絡先コレクションに追跡すべき変更が他にもあることを示します。 |
@@ -107,11 +107,23 @@ Content-length: 337
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/contact_delta-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/contact_delta-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[目的-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/contact_delta-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="see-also"></a>関連項目
 
 - [デルタ クエリを使用して、Microsoft Graph データの変更を追跡する](/graph/delta-query-overview)
-- [フォルダー内のメッセージへの増分変更を取得する](/graph/delta-query-messages)
+- [フォルダー内のメッセージへの増分の変更を取得する](/graph/delta-query-messages)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -120,5 +132,10 @@ Content-length: 337
   "description": "contact: delta",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/contact-delta.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/contact-delta.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/contact-delta.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

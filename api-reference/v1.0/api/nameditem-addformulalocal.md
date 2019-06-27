@@ -2,12 +2,12 @@
 title: 名前付きアイテム FormulaLocal の追加
 description: ユーザーのロケールを数式に使用して、新しい名前を指定したスコープのコレクションに追加します。
 localization_priority: Normal
-ms.openlocfilehash: 452707d546e7f0b358a840056b03271ca1a0c7ee
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 18cd02a66f7dbce5e58eb7da0bf4494cbb918ccd
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33612136"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35276707"
 ---
 # <a name="add-named-item-formulalocal"></a>名前付きアイテム FormulaLocal の追加
 ユーザーのロケールを数式に使用して、新しい名前を指定したスコープのコレクションに追加します。
@@ -93,13 +93,15 @@ Content-length: 109
     "visible": true
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/NamedItemcollection_add-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/NamedItemcollection_add-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目的-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/NamedItemcollection_add-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -114,6 +116,7 @@ Content-length: 109
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/nameditem-addformulalocal.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/nameditem-addformulalocal.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/nameditem-addformulalocal.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

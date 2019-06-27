@@ -4,15 +4,16 @@ description: messageRule オブジェクトのプロパティとリレーショ�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 06d824e8cb761b4ffadc0b95284cdfb5326a285b
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: eef1f590161a600ec7852cf7af5a60ee024a3e94
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33597917"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35266039"
 ---
 # <a name="get-rule"></a>ルールを取得する
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [messageRule](../resources/messagerule.md) オブジェクトのプロパティとリレーションシップを取得します。
 
@@ -29,8 +30,8 @@ ms.locfileid: "33597917"
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/mailFolders/inbox/messageRules/{id}
-GET /users/{id | userPrincipalName}/mailFolders/inbox/messageRules/{id}
+GET /me/mailFolders/inbox/messagerules/{id}
+GET /users/{id | userPrincipalName}/mailFolders/inbox/messagerules/{id}
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
@@ -50,16 +51,15 @@ GET /users/{id | userPrincipalName}/mailFolders/inbox/messageRules/{id}
 以下は、要求の例です。
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["inbox", "AQAAAJ5dZqA="],
   "name": "get_messagerule"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules/AQAAAJ5dZqA=
+GET https://graph.microsoft.com/beta/me/mailfolders/inbox/messagerules('AQAAAJ5dZqA=')
 ```
 ##### <a name="response"></a>応答
 以下は、応答の例です。 既定では、応答に含まれる日時のプロパティは UTC 形式になります。 
 
-注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -95,13 +95,15 @@ Content-type: application/json
   }
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_messagerule-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_messagerule-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目的-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_messagerule-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -110,14 +112,17 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get rule",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/messagerule-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/messagerule-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/beta/api/messagerule-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/beta/api/messagerule-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/messagerule-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-}-->
+}
+-->

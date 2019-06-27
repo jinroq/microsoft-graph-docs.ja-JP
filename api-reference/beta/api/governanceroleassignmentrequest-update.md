@@ -2,12 +2,12 @@
 title: GovernanceRoleAssignmentRequests の更新
 description: 管理者が、の`AdminApproved` `AdminDenied` `PendingAdminDecision`状態にある governanceRoleAssignmentRequests 上の意思決定 (または) を更新できるようにします。
 localization_priority: Normal
-ms.openlocfilehash: b123345ed14bfe3f12471f70a24df5e02aca0f11
-ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
+ms.openlocfilehash: 7931ae00eae01ca6ccd6f8d5f658fa0b2aa5fd8f
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34422340"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35263512"
 ---
 # <a name="update-governanceroleassignmentrequests"></a>GovernanceRoleAssignmentRequests の更新
 
@@ -80,6 +80,8 @@ POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssign
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/updaterequest_governanceroleassignmentrequest-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目的-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/updaterequest_governanceroleassignmentrequest-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -104,6 +106,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/governanceroleassignmentrequest-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/governanceroleassignmentrequest-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

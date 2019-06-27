@@ -4,12 +4,12 @@ description: 学校オブジェクトのプロパティを更新します。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: dbabebb14bfd107afb1823054e33150c9d170e9d
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 9ad943ae84f5ffed88d3c1b61e09d5152be97169
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33615801"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35276292"
 ---
 # <a name="update-educationschool-properties"></a>educationschool プロパティを更新する
 
@@ -41,7 +41,7 @@ PATCH /education/schools/{id}
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |displayName| String| 学校の表示名| 
-|説明| String | 学校の説明| 
+|description| String | 学校の説明| 
 |principalEmail| String| プリンシパルの電子メール アドレス|
 |principalName| String | プリンシパルの名前|
 |externalPrincipalId| String | 同期システム内のプリンシパルの ID。 |
@@ -76,7 +76,7 @@ Content-length: 292
 ##### <a name="response"></a>応答
 応答の例を次に示します。 
 
->**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
+>**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 
 <!-- {
   "blockType": "response",
@@ -112,13 +112,15 @@ Content-length: 292
   "phone": "+1 (253) 555-0102"
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_educationschool-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_educationschool-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目的-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_educationschool-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -132,6 +134,7 @@ Content-length: 292
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/educationschool-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/educationschool-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/educationschool-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
