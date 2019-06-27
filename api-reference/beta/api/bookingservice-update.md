@@ -4,12 +4,12 @@ description: 指定した bookingservice の bookingService オブジェクト�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 607949e8c4b00230815fa8b29eba751494efb8b3
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 98bade824541db13810071bc2a256c3daf06a887
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636010"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35262567"
 ---
 # <a name="update-bookingservice"></a>Bookingservice を更新する
 
@@ -53,16 +53,16 @@ PATCH /bookingBusinesses/{id}/services/{id}
 |既定の価格|2 行分|サービスの既定の通貨料金。|
 |defaultPriceType|string|サービスの既定の課金方法。 可能な値は、`undefined`、`fixedPrice`、`startingAt`、`hourly`、`free`、`priceVaries`、`callUs`、`notSet` です。|
 |defaultReminders|[Bookingreminder](../resources/bookingreminder.md)コレクション|このサービスの予定に対する既定のアラームのセット。 このプロパティの値は、この**Bookingservice**を ID で読み取る場合にのみ使用できます。|
-|説明|String|サービスのテキストの説明。|
+|description|String|サービスのテキストの説明。|
 |displayName|String|サービス名。|
 |emailAddress|String|電子メールアドレス|
-|id|String| 読み取り専用。|
+|id|String| 読み取り専用です。|
 |isHiddenFromCustomers|Boolean|True は、このサービスを予約にお客様が利用できないことを意味します。|
 |notes|String|このサービスに関する追加情報。|
 |postBuffer|期間|このサービスの予定が終了してから、次の顧客の予定が予約されるまでの時間。|
 |preBuffer|期間|このサービスの予定を開始できるようになるまでの時間。|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|この種類のサービスの予定を作成および管理する方法を決定する一連のポリシー。|
-|staffMemberIds|String collection|このサービスを提供する[スタッフメンバー](../resources/bookingstaffmember.md)を表します。 |
+|staffMemberIds|文字列コレクション|このサービスを提供する[スタッフメンバー](../resources/bookingstaffmember.md)を表します。 |
 
 ## <a name="response"></a>応答
 成功した場合、このメソッドは `204 No content` 応答コードを返します。応答本文には何も返されません。
@@ -91,13 +91,15 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_bookingservice-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_bookingservice-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目的-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_bookingservice-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -112,6 +114,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/bookingservice-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/bookingservice-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/bookingservice-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
