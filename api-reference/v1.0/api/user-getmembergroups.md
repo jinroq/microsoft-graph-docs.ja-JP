@@ -1,19 +1,17 @@
 ---
 title: 'user: getMemberGroups'
 description: ユーザーがメンバーであるすべてのグループを返します。 次の読み取りとは異なり、チェックは推移的です。
-localization_priority: Normal
+localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: beaea8919e8ec9c2f86ec99312294375775b5598
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: a99aca467e34d82025a45d5a898235f5cc7bf368
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33602097"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35277981"
 ---
 # <a name="user-getmembergroups"></a>user: getMemberGroups
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ユーザーがメンバーであるすべてのグループを返します。チェックは推移的であり、ユーザーが直接メンバーであるグループのみを返す [memberOf](../api/user-list-memberof.md) ナビゲーション プロパティの読み取りとは異なります。
 
@@ -25,7 +23,7 @@ ms.locfileid: "33602097"
 
 | アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)                                                                                                          |
 | :------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 委任 (職場または学校のアカウント)     | User.Read、Group.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+| 委任 (職場または学校のアカウント)     |  User.Read、Group.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
 | 委任 (個人用 Microsoft アカウント) | サポートされていません。                                                                                                                                       |
 | アプリケーション                            | Group.Read.All、Directory.Read.All、Directory.ReadWrite.All                                                                                        |
 
@@ -70,7 +68,7 @@ POST /users/{id | userPrincipalName}/getMemberGroups
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/me/getMemberGroups
+POST https://graph.microsoft.com/v1.0/me/getMemberGroups
 Content-type: application/json
 Content-length: 33
 
@@ -108,6 +106,8 @@ Content-length: 39
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/user_getmembergroups-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/user_getmembergroups-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -115,16 +115,15 @@ Content-length: 39
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "user: getMemberGroups",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/user-getmembergroups.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/user-getmembergroups.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/v1.0/api/user-getmembergroups.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/user-getmembergroups.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/user-getmembergroups.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-}
--->
+}-->
