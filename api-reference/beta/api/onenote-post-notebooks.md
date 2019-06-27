@@ -4,26 +4,28 @@ description: 新しい OneNote ノートブックを作成します。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 93b201ba2b5f695497d446c464dbf5e693f06511
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 521e8a1c82ee9ac6bab7d8ca297fa72c013ce2d7
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33597581"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35265913"
 ---
-# <a name="create-notebook"></a><span data-ttu-id="a5d83-103">ノートブックを作成する</span><span class="sxs-lookup"><span data-stu-id="a5d83-103">Create notebook</span></span>
+# <a name="create-notebook"></a><span data-ttu-id="cf941-103">ノートブックを作成する</span><span class="sxs-lookup"><span data-stu-id="cf941-103">Create notebook</span></span>
 
-<span data-ttu-id="a5d83-104">新しい OneNote[ノートブック](../resources/notebook.md)を作成します。</span><span class="sxs-lookup"><span data-stu-id="a5d83-104">Create a new OneNote [notebook](../resources/notebook.md).</span></span>
-## <a name="permissions"></a><span data-ttu-id="a5d83-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="a5d83-105">Permissions</span></span>
-<span data-ttu-id="a5d83-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a5d83-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-|<span data-ttu-id="a5d83-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="a5d83-108">Permission type</span></span>      | <span data-ttu-id="a5d83-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="a5d83-109">Permissions (from least to most privileged)</span></span>              |
+<span data-ttu-id="cf941-104">新しい OneNote[ノートブック](../resources/notebook.md)を作成します。</span><span class="sxs-lookup"><span data-stu-id="cf941-104">Create a new OneNote [notebook](../resources/notebook.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="cf941-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="cf941-105">Permissions</span></span>
+<span data-ttu-id="cf941-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="cf941-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="cf941-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="cf941-108">Permission type</span></span>      | <span data-ttu-id="cf941-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="cf941-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a5d83-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="a5d83-110">Delegated (work or school account)</span></span> | <span data-ttu-id="a5d83-111">Notes.Create、Notes.ReadWrite、Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a5d83-111">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span></span>    |
-|<span data-ttu-id="a5d83-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="a5d83-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a5d83-113">Notes.Create、Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a5d83-113">Notes.Create, Notes.ReadWrite</span></span>    |
-|<span data-ttu-id="a5d83-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="a5d83-114">Application</span></span> | <span data-ttu-id="a5d83-115">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a5d83-115">Notes.ReadWrite.All</span></span> |
+|<span data-ttu-id="cf941-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="cf941-110">Delegated (work or school account)</span></span> | <span data-ttu-id="cf941-111">Notes.Create、Notes.ReadWrite、Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cf941-111">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span></span>    |
+|<span data-ttu-id="cf941-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="cf941-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cf941-113">Notes.Create、Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="cf941-113">Notes.Create, Notes.ReadWrite</span></span>    |
+|<span data-ttu-id="cf941-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="cf941-114">Application</span></span> | <span data-ttu-id="cf941-115">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cf941-115">Notes.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a5d83-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="a5d83-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="cf941-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="cf941-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onenote/notebooks
@@ -31,30 +33,30 @@ POST /users/{id | userPrincipalName}/onenote/notebooks
 POST /groups/{id}/onenote/notebooks
 POST /sites/{id}/onenote/notebooks
 ```
-## <a name="request-headers"></a><span data-ttu-id="a5d83-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="a5d83-117">Request headers</span></span>
-| <span data-ttu-id="a5d83-118">名前</span><span class="sxs-lookup"><span data-stu-id="a5d83-118">Name</span></span>       | <span data-ttu-id="a5d83-119">型</span><span class="sxs-lookup"><span data-stu-id="a5d83-119">Type</span></span> | <span data-ttu-id="a5d83-120">説明</span><span class="sxs-lookup"><span data-stu-id="a5d83-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="cf941-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="cf941-117">Request headers</span></span>
+| <span data-ttu-id="cf941-118">名前</span><span class="sxs-lookup"><span data-stu-id="cf941-118">Name</span></span>       | <span data-ttu-id="cf941-119">型</span><span class="sxs-lookup"><span data-stu-id="cf941-119">Type</span></span> | <span data-ttu-id="cf941-120">説明</span><span class="sxs-lookup"><span data-stu-id="cf941-120">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="a5d83-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="a5d83-121">Authorization</span></span>  | <span data-ttu-id="a5d83-122">string</span><span class="sxs-lookup"><span data-stu-id="a5d83-122">string</span></span>  | <span data-ttu-id="a5d83-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="a5d83-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="a5d83-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="a5d83-125">Content-Type</span></span> | <span data-ttu-id="a5d83-126">string</span><span class="sxs-lookup"><span data-stu-id="a5d83-126">string</span></span> | `application/json` |
+| <span data-ttu-id="cf941-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="cf941-121">Authorization</span></span>  | <span data-ttu-id="cf941-122">string</span><span class="sxs-lookup"><span data-stu-id="cf941-122">string</span></span>  | <span data-ttu-id="cf941-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="cf941-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="cf941-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="cf941-125">Content-Type</span></span> | <span data-ttu-id="cf941-126">string</span><span class="sxs-lookup"><span data-stu-id="cf941-126">string</span></span> | `application/json` |
 
-## <a name="request-body"></a><span data-ttu-id="a5d83-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="a5d83-127">Request body</span></span>
-<span data-ttu-id="a5d83-128">要求本文で、ノートブックの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="a5d83-128">In the request body, supply a name for the notebook.</span></span> 
+## <a name="request-body"></a><span data-ttu-id="cf941-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="cf941-127">Request body</span></span>
+<span data-ttu-id="cf941-128">要求本文で、ノートブックの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="cf941-128">In the request body, supply a name for the notebook.</span></span> 
 
-<span data-ttu-id="a5d83-129">ノートブック名は一意である必要があります。</span><span class="sxs-lookup"><span data-stu-id="a5d83-129">Notebook names must be unique.</span></span> <span data-ttu-id="a5d83-130">名前には、128文字を超える文字や、次の文字を含める\/ことはできません: ? \*: <> | ' "</span><span class="sxs-lookup"><span data-stu-id="a5d83-130">The name cannot contain more than 128 characters or contain the following characters:  ?\*\/:<>|'"</span></span>
+<span data-ttu-id="cf941-129">ノートブック名は一意である必要があります。</span><span class="sxs-lookup"><span data-stu-id="cf941-129">Notebook names must be unique.</span></span> <span data-ttu-id="cf941-130">名前に128文字を超える文字を含めることはできません。また\/、次の文字を含めることはできません:? \*: <>| ' "</span><span class="sxs-lookup"><span data-stu-id="cf941-130">The name cannot contain more than 128 characters or contain the following characters:  ?\*\/:<>|'"</span></span>
 
-## <a name="response"></a><span data-ttu-id="a5d83-131">応答</span><span class="sxs-lookup"><span data-stu-id="a5d83-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="cf941-131">応答</span><span class="sxs-lookup"><span data-stu-id="cf941-131">Response</span></span>
 
-<span data-ttu-id="a5d83-132">成功した場合、このメソッド`201 Created`は応答コードと、応答本文で新しい[notebook](../resources/notebook.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="a5d83-132">If successful, this method returns a `201 Created` response code and the new [notebook](../resources/notebook.md) object in the response body.</span></span>
+<span data-ttu-id="cf941-132">成功した場合、このメソッド`201 Created`は応答コードと、応答本文で新しい[notebook](../resources/notebook.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="cf941-132">If successful, this method returns a `201 Created` response code and the new [notebook](../resources/notebook.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a5d83-133">例</span><span class="sxs-lookup"><span data-stu-id="a5d83-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="a5d83-134">要求</span><span class="sxs-lookup"><span data-stu-id="a5d83-134">Request</span></span>
-<span data-ttu-id="a5d83-135">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="a5d83-135">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="cf941-133">例</span><span class="sxs-lookup"><span data-stu-id="cf941-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="cf941-134">要求</span><span class="sxs-lookup"><span data-stu-id="cf941-134">Request</span></span>
+<span data-ttu-id="cf941-135">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="cf941-135">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_notebook_from_onenote"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/onenote/notebooks
+POST https://graph.microsoft.com/beta/me/onenote/notebooks
 Content-type: application/json
 Content-length: 30
 
@@ -63,8 +65,8 @@ Content-length: 30
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="a5d83-136">応答</span><span class="sxs-lookup"><span data-stu-id="a5d83-136">Response</span></span>
-<span data-ttu-id="a5d83-p104">以下は、応答の例です。注:ここに示す応答オブジェクトは切り詰めて簡略化されています。実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="a5d83-p104">Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="cf941-136">応答</span><span class="sxs-lookup"><span data-stu-id="cf941-136">Response</span></span>
+<span data-ttu-id="cf941-p104">以下は、応答の例です。注:ここに示す応答オブジェクトは切り詰めて簡略化されています。実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="cf941-p104">Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -79,6 +81,7 @@ Content-length: 284
   "isDefault": true,
   "userRole": {
   },
+  "id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
   "isShared": true,
   "sectionsUrl": "sectionsUrl-value",
   "sectionGroupsUrl": "sectionGroupsUrl-value",
@@ -92,27 +95,32 @@ Content-length: 284
   }
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="a5d83-140">SDK サンプルコード</span><span class="sxs-lookup"><span data-stu-id="a5d83-140">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="a5d83-141">Visual</span><span class="sxs-lookup"><span data-stu-id="a5d83-141">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="cf941-140">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="cf941-140">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="cf941-141">C#</span><span class="sxs-lookup"><span data-stu-id="cf941-141">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/create_notebook_from_onenote-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a5d83-142">Java</span><span class="sxs-lookup"><span data-stu-id="a5d83-142">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="cf941-142">Javascript</span><span class="sxs-lookup"><span data-stu-id="cf941-142">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_notebook_from_onenote-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="cf941-143">目的-C</span><span class="sxs-lookup"><span data-stu-id="cf941-143">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create_notebook_from_onenote-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create Notebook",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/onenote-post-notebooks.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/onenote-post-notebooks.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/beta/api/onenote-post-notebooks.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/beta/api/onenote-post-notebooks.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/onenote-post-notebooks.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-}-->
+}
+-->

@@ -4,47 +4,47 @@ description: 指定した連絡先フォルダーの下の子フォルダーの�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 3d0f6d14249e488333954b3a45c3bed0f6eaf93a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c7994f9eae61f345b800d32593433985d68e8cf4
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566235"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35277463"
 ---
-# <a name="list-childfolders"></a><span data-ttu-id="653bb-103">childFolders を一覧表示する</span><span class="sxs-lookup"><span data-stu-id="653bb-103">List childFolders</span></span>
+# <a name="list-childfolders"></a><span data-ttu-id="6db35-103">childFolders を一覧表示する</span><span class="sxs-lookup"><span data-stu-id="6db35-103">List childFolders</span></span>
 
-<span data-ttu-id="653bb-104">指定した連絡先フォルダーの下の子フォルダーのコレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="653bb-104">Get a collection of child folders under the specified contact folder.</span></span>
-## <a name="permissions"></a><span data-ttu-id="653bb-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="653bb-105">Permissions</span></span>
-<span data-ttu-id="653bb-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="653bb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="6db35-104">指定した連絡先フォルダーの下の子フォルダーのコレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="6db35-104">Get a collection of child folders under the specified contact folder.</span></span>
+## <a name="permissions"></a><span data-ttu-id="6db35-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="6db35-105">Permissions</span></span>
+<span data-ttu-id="6db35-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6db35-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="653bb-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="653bb-108">Permission type</span></span>      | <span data-ttu-id="653bb-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="653bb-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="6db35-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="6db35-108">Permission type</span></span>      | <span data-ttu-id="6db35-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="6db35-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="653bb-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="653bb-110">Delegated (work or school account)</span></span> | <span data-ttu-id="653bb-111">Contacts.Read、Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="653bb-111">Contacts.Read, Contacts.ReadWrite</span></span>    |
-|<span data-ttu-id="653bb-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="653bb-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="653bb-113">Contacts.Read、Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="653bb-113">Contacts.Read, Contacts.ReadWrite</span></span>    |
-|<span data-ttu-id="653bb-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="653bb-114">Application</span></span> | <span data-ttu-id="653bb-115">Contacts.Read、Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="653bb-115">Contacts.Read, Contacts.ReadWrite</span></span> |
+|<span data-ttu-id="6db35-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="6db35-110">Delegated (work or school account)</span></span> | <span data-ttu-id="6db35-111">Contacts.Read、Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6db35-111">Contacts.Read, Contacts.ReadWrite</span></span>    |
+|<span data-ttu-id="6db35-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="6db35-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6db35-113">Contacts.Read、Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6db35-113">Contacts.Read, Contacts.ReadWrite</span></span>    |
+|<span data-ttu-id="6db35-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="6db35-114">Application</span></span> | <span data-ttu-id="6db35-115">Contacts.Read、Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6db35-115">Contacts.Read, Contacts.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="653bb-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="653bb-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6db35-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="6db35-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contactFolders/{id}/childFolders
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="653bb-117">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="653bb-117">Optional query parameters</span></span>
-<span data-ttu-id="653bb-118">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="653bb-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="653bb-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="653bb-119">Request headers</span></span>
-| <span data-ttu-id="653bb-120">名前</span><span class="sxs-lookup"><span data-stu-id="653bb-120">Name</span></span>       | <span data-ttu-id="653bb-121">型</span><span class="sxs-lookup"><span data-stu-id="653bb-121">Type</span></span> | <span data-ttu-id="653bb-122">説明</span><span class="sxs-lookup"><span data-stu-id="653bb-122">Description</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="6db35-117">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="6db35-117">Optional query parameters</span></span>
+<span data-ttu-id="6db35-118">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="6db35-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="6db35-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="6db35-119">Request headers</span></span>
+| <span data-ttu-id="6db35-120">名前</span><span class="sxs-lookup"><span data-stu-id="6db35-120">Name</span></span>       | <span data-ttu-id="6db35-121">型</span><span class="sxs-lookup"><span data-stu-id="6db35-121">Type</span></span> | <span data-ttu-id="6db35-122">説明</span><span class="sxs-lookup"><span data-stu-id="6db35-122">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="653bb-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="653bb-123">Authorization</span></span>  | <span data-ttu-id="653bb-124">string</span><span class="sxs-lookup"><span data-stu-id="653bb-124">string</span></span>  | <span data-ttu-id="653bb-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="653bb-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="6db35-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="6db35-123">Authorization</span></span>  | <span data-ttu-id="6db35-124">string</span><span class="sxs-lookup"><span data-stu-id="6db35-124">string</span></span>  | <span data-ttu-id="6db35-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="6db35-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="653bb-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="653bb-127">Request body</span></span>
-<span data-ttu-id="653bb-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="653bb-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6db35-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="6db35-127">Request body</span></span>
+<span data-ttu-id="6db35-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="6db35-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="653bb-129">応答</span><span class="sxs-lookup"><span data-stu-id="653bb-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6db35-129">応答</span><span class="sxs-lookup"><span data-stu-id="6db35-129">Response</span></span>
 
-<span data-ttu-id="653bb-130">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [ContactFolder](../resources/contactfolder.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="653bb-130">If successful, this method returns a `200 OK` response code and collection of [ContactFolder](../resources/contactfolder.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="653bb-131">例</span><span class="sxs-lookup"><span data-stu-id="653bb-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="653bb-132">要求</span><span class="sxs-lookup"><span data-stu-id="653bb-132">Request</span></span>
-<span data-ttu-id="653bb-133">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="653bb-133">Here is an example of the request.</span></span>
+<span data-ttu-id="6db35-130">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [ContactFolder](../resources/contactfolder.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="6db35-130">If successful, this method returns a `200 OK` response code and collection of [ContactFolder](../resources/contactfolder.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="6db35-131">例</span><span class="sxs-lookup"><span data-stu-id="6db35-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="6db35-132">要求</span><span class="sxs-lookup"><span data-stu-id="6db35-132">Request</span></span>
+<span data-ttu-id="6db35-133">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="6db35-133">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_childfolders"
@@ -52,8 +52,8 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders
 ```http
 GET https://graph.microsoft.com/v1.0/me/contactFolders/{id}/childFolders
 ```
-##### <a name="response"></a><span data-ttu-id="653bb-134">応答</span><span class="sxs-lookup"><span data-stu-id="653bb-134">Response</span></span>
-<span data-ttu-id="653bb-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="653bb-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="6db35-134">応答</span><span class="sxs-lookup"><span data-stu-id="6db35-134">Response</span></span>
+<span data-ttu-id="6db35-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="6db35-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -75,6 +75,18 @@ Content-length: 145
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="6db35-138">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="6db35-138">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="6db35-139">C#</span><span class="sxs-lookup"><span data-stu-id="6db35-139">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_childfolders-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="6db35-140">Javascript</span><span class="sxs-lookup"><span data-stu-id="6db35-140">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_childfolders-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="6db35-141">目的-C</span><span class="sxs-lookup"><span data-stu-id="6db35-141">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_childfolders-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -83,5 +95,10 @@ Content-length: 145
   "description": "List childFolders",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/contactfolder-list-childfolders.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/contactfolder-list-childfolders.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/contactfolder-list-childfolders.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

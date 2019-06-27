@@ -4,26 +4,26 @@ description: '承認済み送信者リストからユーザーまたはグルー
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: c2e098e88d4f855c5736f2e176b234f50a4e71b3
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 2ae2b805f10b57f75209b3cf03f89d7ea2fec973
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33614667"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35275867"
 ---
-# <a name="remove-acceptedsender"></a><span data-ttu-id="2f551-103">AcceptedSender の削除</span><span class="sxs-lookup"><span data-stu-id="2f551-103">Remove acceptedSender</span></span>
-<span data-ttu-id="2f551-104">承認済み送信者リストからユーザーまたはグループを削除します。</span><span class="sxs-lookup"><span data-stu-id="2f551-104">Remove a user or group from the accepted-senders list.</span></span> 
+# <a name="remove-acceptedsender"></a><span data-ttu-id="b3bc6-103">AcceptedSender の削除</span><span class="sxs-lookup"><span data-stu-id="b3bc6-103">Remove acceptedSender</span></span>
+<span data-ttu-id="b3bc6-104">承認済み送信者リストからユーザーまたはグループを削除します。</span><span class="sxs-lookup"><span data-stu-id="b3bc6-104">Remove a user or group from the accepted-senders list.</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="2f551-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="2f551-105">Permissions</span></span>
-<span data-ttu-id="2f551-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2f551-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="b3bc6-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="b3bc6-105">Permissions</span></span>
+<span data-ttu-id="b3bc6-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b3bc6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="2f551-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="2f551-108">Permission type</span></span>                        | <span data-ttu-id="2f551-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="2f551-109">Permissions (from least to most privileged)</span></span>  |
+| <span data-ttu-id="b3bc6-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="b3bc6-108">Permission type</span></span>                        | <span data-ttu-id="b3bc6-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="b3bc6-109">Permissions (from least to most privileged)</span></span>  |
 |:---------------------------------------|:-------------------------------------------- |
-| <span data-ttu-id="2f551-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="2f551-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="2f551-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2f551-111">Group.ReadWrite.All</span></span> |
-| <span data-ttu-id="2f551-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="2f551-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2f551-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="2f551-113">Not supported.</span></span> |
-| <span data-ttu-id="2f551-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="2f551-114">Application</span></span>                            | <span data-ttu-id="2f551-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="2f551-115">Not supported.</span></span> |
+| <span data-ttu-id="b3bc6-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="b3bc6-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="b3bc6-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b3bc6-111">Group.ReadWrite.All</span></span> |
+| <span data-ttu-id="b3bc6-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="b3bc6-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b3bc6-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b3bc6-113">Not supported.</span></span> |
+| <span data-ttu-id="b3bc6-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="b3bc6-114">Application</span></span>                            | <span data-ttu-id="b3bc6-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b3bc6-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="2f551-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="2f551-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b3bc6-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="b3bc6-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -31,20 +31,20 @@ DELETE /groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/v1.0/us
 DELETE /groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/v1.0/groups/{other-group-id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="2f551-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="2f551-117">Request headers</span></span>
-| <span data-ttu-id="2f551-118">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="2f551-118">Header</span></span>         | <span data-ttu-id="2f551-119">値</span><span class="sxs-lookup"><span data-stu-id="2f551-119">Value</span></span>                      |
+## <a name="request-headers"></a><span data-ttu-id="b3bc6-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b3bc6-117">Request headers</span></span>
+| <span data-ttu-id="b3bc6-118">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b3bc6-118">Header</span></span>         | <span data-ttu-id="b3bc6-119">値</span><span class="sxs-lookup"><span data-stu-id="b3bc6-119">Value</span></span>                      |
 |:---------------|:---------------------------|
-| <span data-ttu-id="2f551-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="2f551-120">Authorization</span></span>  | <span data-ttu-id="2f551-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="2f551-p102">Bearer {token}. Required.</span></span>  
+| <span data-ttu-id="b3bc6-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="b3bc6-120">Authorization</span></span>  | <span data-ttu-id="b3bc6-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="b3bc6-p102">Bearer {token}. Required.</span></span>  
 
-## <a name="request-body"></a><span data-ttu-id="2f551-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="2f551-123">Request body</span></span>
-<span data-ttu-id="2f551-124">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="2f551-124">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b3bc6-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="b3bc6-123">Request body</span></span>
+<span data-ttu-id="b3bc6-124">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="b3bc6-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="2f551-125">応答</span><span class="sxs-lookup"><span data-stu-id="2f551-125">Response</span></span>
-<span data-ttu-id="2f551-p103">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="2f551-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="b3bc6-125">応答</span><span class="sxs-lookup"><span data-stu-id="b3bc6-125">Response</span></span>
+<span data-ttu-id="b3bc6-p103">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="b3bc6-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2f551-128">例</span><span class="sxs-lookup"><span data-stu-id="2f551-128">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="2f551-129">要求</span><span class="sxs-lookup"><span data-stu-id="2f551-129">Request</span></span>
-<span data-ttu-id="2f551-130">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="2f551-130">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="b3bc6-128">例</span><span class="sxs-lookup"><span data-stu-id="b3bc6-128">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="b3bc6-129">要求</span><span class="sxs-lookup"><span data-stu-id="b3bc6-129">Request</span></span>
+<span data-ttu-id="b3bc6-130">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="b3bc6-130">The following is an example of the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -54,8 +54,8 @@ DELETE /groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/v1.0/gr
 DELETE https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/v1.0/users/{user-id}
 ```
 
-#### <a name="response"></a><span data-ttu-id="2f551-131">応答</span><span class="sxs-lookup"><span data-stu-id="2f551-131">Response</span></span>
-<span data-ttu-id="2f551-132">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="2f551-132">The following is an example of the response.</span></span> 
+#### <a name="response"></a><span data-ttu-id="b3bc6-131">応答</span><span class="sxs-lookup"><span data-stu-id="b3bc6-131">Response</span></span>
+<span data-ttu-id="b3bc6-132">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="b3bc6-132">The following is an example of the response.</span></span> 
 
 <!-- {
   "blockType": "response",
@@ -64,13 +64,15 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders/$ref?$id=htt
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="2f551-133">SDK サンプルコード</span><span class="sxs-lookup"><span data-stu-id="2f551-133">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="2f551-134">Visual</span><span class="sxs-lookup"><span data-stu-id="2f551-134">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="b3bc6-133">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="b3bc6-133">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="b3bc6-134">C#</span><span class="sxs-lookup"><span data-stu-id="b3bc6-134">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/create_directoryobject_from_group-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="2f551-135">Java</span><span class="sxs-lookup"><span data-stu-id="2f551-135">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b3bc6-135">Javascript</span><span class="sxs-lookup"><span data-stu-id="b3bc6-135">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_directoryobject_from_group-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="b3bc6-136">目的-C</span><span class="sxs-lookup"><span data-stu-id="b3bc6-136">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create_directoryobject_from_group-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -84,6 +86,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/group-delete-acceptedsenders.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/group-delete-acceptedsenders.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/group-delete-acceptedsenders.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

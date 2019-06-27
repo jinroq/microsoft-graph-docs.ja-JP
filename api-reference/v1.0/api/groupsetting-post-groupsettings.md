@@ -4,54 +4,54 @@ description: この API を使用して、groupSettingTemplates で利用可能�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d8c559455c1525727a9fb397e4578839c8b6356f
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 3815757591cd565bfa09f6fb1cfeb1e20de332f5
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33613175"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35277148"
 ---
-# <a name="create-a-group-setting"></a><span data-ttu-id="82804-107">グループ設定を作成する</span><span class="sxs-lookup"><span data-stu-id="82804-107">Create a group setting</span></span>
+# <a name="create-a-group-setting"></a><span data-ttu-id="0bf59-107">グループ設定を作成する</span><span class="sxs-lookup"><span data-stu-id="0bf59-107">Create a group setting</span></span>
 
-<span data-ttu-id="82804-p102">この API を使用して、[groupSettingTemplates](../resources/groupsettingtemplate.md) で使用可能なテンプレートに基づいて新しい設定を作成します。これらの設定は、テナント レベルまたはグループ レベルで行うことができます。作成要求は、テンプレートに定義されているすべての設定の [settingValues](../resources/settingvalue.md) を提供する必要があります。グループ固有の設定では、グループのメンバーがゲスト ユーザーを招待できるかどうかの管理のみが設定できます。グループにゲスト ユーザーを追加する機能が一般的に利用可能になると、上記の動作は制御されます。</span><span class="sxs-lookup"><span data-stu-id="82804-p102">Use this API to create a new setting, based on the templates available in [groupSettingTemplates](../resources/groupsettingtemplate.md). These settings can be at the tenant-level or at the group level. The creation request must provide [settingValues](../resources/settingvalue.md) for all the settings defined in the template. For group-specific settings, only the setting governing whether members of a group can invite guest users can be set. This will govern this behavior once the ability to add guest users to a group is generally available.</span></span>
+<span data-ttu-id="0bf59-p102">この API を使用して、[groupSettingTemplates](../resources/groupsettingtemplate.md) で使用可能なテンプレートに基づいて新しい設定を作成します。これらの設定は、テナント レベルまたはグループ レベルで行うことができます。作成要求は、テンプレートに定義されているすべての設定の [settingValues](../resources/settingvalue.md) を提供する必要があります。グループ固有の設定では、グループのメンバーがゲスト ユーザーを招待できるかどうかの管理のみが設定できます。グループにゲスト ユーザーを追加する機能が一般的に利用可能になると、上記の動作は制御されます。</span><span class="sxs-lookup"><span data-stu-id="0bf59-p102">Use this API to create a new setting, based on the templates available in [groupSettingTemplates](../resources/groupsettingtemplate.md). These settings can be at the tenant-level or at the group level. The creation request must provide [settingValues](../resources/settingvalue.md) for all the settings defined in the template. For group-specific settings, only the setting governing whether members of a group can invite guest users can be set. This will govern this behavior once the ability to add guest users to a group is generally available.</span></span>
 
-<span data-ttu-id="82804-113">テンプレートと、それらが v2.0 でサポートするプロパティの一覧については、 [Groupsettingtemplate クエリ](https://developer.microsoft.com/graph/graph-explorer?request=groupSettingTemplates&version=v1.0)を使用してください (ベータ版エンドポイントの場合は、Call [directorysettingtemplates](https://developer.microsoft.com/graph/graph-explorer?request=directorySettingTemplates&version=beta))。</span><span class="sxs-lookup"><span data-stu-id="82804-113">For a list of templates and the properties they support in v1.0, use a [groupSettingTemplate query](https://developer.microsoft.com/graph/graph-explorer?request=groupSettingTemplates&version=v1.0)  (For beta endpoints, call [directorySettingTemplates](https://developer.microsoft.com/graph/graph-explorer?request=directorySettingTemplates&version=beta).)</span></span>
+<span data-ttu-id="0bf59-113">テンプレートと、それらが v2.0 でサポートするプロパティの一覧については、 [Groupsettingtemplate クエリ](https://developer.microsoft.com/graph/graph-explorer?request=groupSettingTemplates&version=v1.0)を使用してください (ベータ版エンドポイントの場合は、Call [directorysettingtemplates](https://developer.microsoft.com/graph/graph-explorer?request=directorySettingTemplates&version=beta))。</span><span class="sxs-lookup"><span data-stu-id="0bf59-113">For a list of templates and the properties they support in v1.0, use a [groupSettingTemplate query](https://developer.microsoft.com/graph/graph-explorer?request=groupSettingTemplates&version=v1.0)  (For beta endpoints, call [directorySettingTemplates](https://developer.microsoft.com/graph/graph-explorer?request=directorySettingTemplates&version=beta).)</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="82804-114">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="82804-114">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="0bf59-114">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="0bf59-114">Permissions</span></span>
 
-<span data-ttu-id="82804-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="82804-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="0bf59-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0bf59-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="82804-117">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="82804-117">Permission type</span></span>      | <span data-ttu-id="82804-118">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="82804-118">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="0bf59-117">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="0bf59-117">Permission type</span></span>      | <span data-ttu-id="0bf59-118">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="0bf59-118">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="82804-119">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="82804-119">Delegated (work or school account)</span></span> | <span data-ttu-id="82804-120">Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="82804-120">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="82804-121">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="82804-121">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="82804-122">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="82804-122">Not supported.</span></span>    |
-|<span data-ttu-id="82804-123">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="82804-123">Application</span></span> | <span data-ttu-id="82804-124">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="82804-124">Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="0bf59-119">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="0bf59-119">Delegated (work or school account)</span></span> | <span data-ttu-id="0bf59-120">Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="0bf59-120">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="0bf59-121">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="0bf59-121">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0bf59-122">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="0bf59-122">Not supported.</span></span>    |
+|<span data-ttu-id="0bf59-123">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="0bf59-123">Application</span></span> | <span data-ttu-id="0bf59-124">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0bf59-124">Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="82804-125">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="82804-125">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0bf59-125">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="0bf59-125">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groupSettings
 POST /groups/{id}/settings
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="82804-126">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="82804-126">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="0bf59-126">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="0bf59-126">Request headers</span></span>
 
-| <span data-ttu-id="82804-127">名前</span><span class="sxs-lookup"><span data-stu-id="82804-127">Name</span></span> | <span data-ttu-id="82804-128">説明</span><span class="sxs-lookup"><span data-stu-id="82804-128">Description</span></span> |
+| <span data-ttu-id="0bf59-127">名前</span><span class="sxs-lookup"><span data-stu-id="0bf59-127">Name</span></span> | <span data-ttu-id="0bf59-128">説明</span><span class="sxs-lookup"><span data-stu-id="0bf59-128">Description</span></span> |
 |:---------------|:----------|
-| <span data-ttu-id="82804-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="82804-129">Authorization</span></span> | <span data-ttu-id="82804-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="82804-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="82804-132">Content-Type</span><span class="sxs-lookup"><span data-stu-id="82804-132">Content-Type</span></span> | <span data-ttu-id="82804-133">application/json</span><span class="sxs-lookup"><span data-stu-id="82804-133">application/json</span></span> |
+| <span data-ttu-id="0bf59-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="0bf59-129">Authorization</span></span> | <span data-ttu-id="0bf59-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="0bf59-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="0bf59-132">Content-Type</span><span class="sxs-lookup"><span data-stu-id="0bf59-132">Content-Type</span></span> | <span data-ttu-id="0bf59-133">application/json</span><span class="sxs-lookup"><span data-stu-id="0bf59-133">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="82804-134">要求本文</span><span class="sxs-lookup"><span data-stu-id="82804-134">Request body</span></span>
-<span data-ttu-id="82804-p105">要求本文で、[groupSetting](../resources/groupsetting.md) オブジェクトの JSON 表記を指定します。ただし、設定の表示名は、参照される設定テンプレート名に基づいて設定されます。</span><span class="sxs-lookup"><span data-stu-id="82804-p105">In the request body, supply a JSON representation of [groupSetting](../resources/groupsetting.md) object. However, the display name for the setting will be set based on the referenced settings template name.</span></span>
+## <a name="request-body"></a><span data-ttu-id="0bf59-134">要求本文</span><span class="sxs-lookup"><span data-stu-id="0bf59-134">Request body</span></span>
+<span data-ttu-id="0bf59-p105">要求本文で、[groupSetting](../resources/groupsetting.md) オブジェクトの JSON 表記を指定します。ただし、設定の表示名は、参照される設定テンプレート名に基づいて設定されます。</span><span class="sxs-lookup"><span data-stu-id="0bf59-p105">In the request body, supply a JSON representation of [groupSetting](../resources/groupsetting.md) object. However, the display name for the setting will be set based on the referenced settings template name.</span></span>
 
-## <a name="response"></a><span data-ttu-id="82804-137">応答</span><span class="sxs-lookup"><span data-stu-id="82804-137">Response</span></span>
+## <a name="response"></a><span data-ttu-id="0bf59-137">応答</span><span class="sxs-lookup"><span data-stu-id="0bf59-137">Response</span></span>
 
-<span data-ttu-id="82804-138">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [groupSetting](../resources/groupsetting.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="82804-138">If successful, this method returns `201 Created` response code and [groupSetting](../resources/groupsetting.md) object in the response body.</span></span>
+<span data-ttu-id="0bf59-138">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [groupSetting](../resources/groupsetting.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="0bf59-138">If successful, this method returns `201 Created` response code and [groupSetting](../resources/groupsetting.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="82804-139">例</span><span class="sxs-lookup"><span data-stu-id="82804-139">Example</span></span>
+## <a name="example"></a><span data-ttu-id="0bf59-139">例</span><span class="sxs-lookup"><span data-stu-id="0bf59-139">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="82804-140">要求</span><span class="sxs-lookup"><span data-stu-id="82804-140">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="0bf59-140">要求</span><span class="sxs-lookup"><span data-stu-id="0bf59-140">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -73,10 +73,10 @@ Content-length: 215
   ]
 }
 ```
-<span data-ttu-id="82804-141">要求本文で、[groupSetting](../resources/groupsetting.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="82804-141">In the request body, supply a JSON representation of [groupSetting](../resources/groupsetting.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="82804-142">応答</span><span class="sxs-lookup"><span data-stu-id="82804-142">Response</span></span>
+<span data-ttu-id="0bf59-141">要求本文で、[groupSetting](../resources/groupsetting.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="0bf59-141">In the request body, supply a JSON representation of [groupSetting](../resources/groupsetting.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="0bf59-142">応答</span><span class="sxs-lookup"><span data-stu-id="0bf59-142">Response</span></span>
 
-<span data-ttu-id="82804-p106">注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="82804-p106">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="0bf59-p106">注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="0bf59-p106">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -99,13 +99,15 @@ Content-length: 238
   "id": "id-value"
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="82804-145">SDK サンプルコード</span><span class="sxs-lookup"><span data-stu-id="82804-145">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="82804-146">Visual</span><span class="sxs-lookup"><span data-stu-id="82804-146">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="0bf59-145">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="0bf59-145">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="0bf59-146">C#</span><span class="sxs-lookup"><span data-stu-id="0bf59-146">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/create_groupsetting_from_groupsettings-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="82804-147">Java</span><span class="sxs-lookup"><span data-stu-id="82804-147">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="0bf59-147">Javascript</span><span class="sxs-lookup"><span data-stu-id="0bf59-147">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_groupsetting_from_groupsettings-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="0bf59-148">目的-C</span><span class="sxs-lookup"><span data-stu-id="0bf59-148">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create_groupsetting_from_groupsettings-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -119,6 +121,7 @@ Content-length: 238
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/groupsetting-post-groupsettings.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/groupsetting-post-groupsettings.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/groupsetting-post-groupsettings.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
