@@ -3,50 +3,50 @@ title: schemaExtensions を一覧表示する
 description: '現在のテナントで所有しているすべてのアプリによって作成された schemaExtension オブジェクトの一覧を取得します ( '
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: eb01bb41fefc8f7eaf4c1778df6d84fe780c2e3f
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 98a1906ddee85ef27a28f90e3624058bad97624c
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33603669"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35277365"
 ---
-# <a name="list-schemaextensions"></a><span data-ttu-id="abd2b-103">schemaExtensions を一覧表示する</span><span class="sxs-lookup"><span data-stu-id="abd2b-103">List schemaExtensions</span></span>
+# <a name="list-schemaextensions"></a><span data-ttu-id="f086c-103">schemaExtensions を一覧表示する</span><span class="sxs-lookup"><span data-stu-id="f086c-103">List schemaExtensions</span></span>
 
-<span data-ttu-id="abd2b-104">現在のテナントで所有しているすべてのアプリによって作成された[Schemaextension](../resources/schemaextension.md)オブジェクトの一覧を取得します (これは、**開発**中、**使用可能**、または**廃止**され**た場合があります)。また、その他のアプリが所有するすべてのスキーマ拡張機能利用可能**です。</span><span class="sxs-lookup"><span data-stu-id="abd2b-104">Get a list of [schemaExtension](../resources/schemaextension.md) objects created by any apps you own in the current tenant (that can be **InDevelopment**, **Available**, or **Deprecated**), and all other schema extensions owned by other apps that are marked as **Available**.</span></span> 
+<span data-ttu-id="f086c-104">現在のテナントで所有しているすべてのアプリによって作成された[Schemaextension](../resources/schemaextension.md)オブジェクトの一覧を取得します (これは、**開発**中、**使用可能**、または**廃止**され**た場合があります)。また、その他のアプリが所有するすべてのスキーマ拡張機能利用可能**です。</span><span class="sxs-lookup"><span data-stu-id="f086c-104">Get a list of [schemaExtension](../resources/schemaextension.md) objects created by any apps you own in the current tenant (that can be **InDevelopment**, **Available**, or **Deprecated**), and all other schema extensions owned by other apps that are marked as **Available**.</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="abd2b-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="abd2b-105">Permissions</span></span>
-<span data-ttu-id="abd2b-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="abd2b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="f086c-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="f086c-105">Permissions</span></span>
+<span data-ttu-id="f086c-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f086c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="abd2b-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="abd2b-108">Permission type</span></span>      | <span data-ttu-id="abd2b-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="abd2b-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f086c-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="f086c-108">Permission type</span></span>      | <span data-ttu-id="f086c-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="f086c-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="abd2b-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="abd2b-110">Delegated (work or school account)</span></span> | <span data-ttu-id="abd2b-111">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="abd2b-111">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="abd2b-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="abd2b-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="abd2b-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="abd2b-113">Not supported.</span></span>    |
-|<span data-ttu-id="abd2b-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="abd2b-114">Application</span></span> | <span data-ttu-id="abd2b-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="abd2b-115">Not supported.</span></span> |
+|<span data-ttu-id="f086c-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="f086c-110">Delegated (work or school account)</span></span> | <span data-ttu-id="f086c-111">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="f086c-111">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="f086c-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="f086c-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f086c-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f086c-113">Not supported.</span></span>    |
+|<span data-ttu-id="f086c-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="f086c-114">Application</span></span> | <span data-ttu-id="f086c-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f086c-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="abd2b-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="abd2b-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f086c-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="f086c-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /schemaExtensions
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="abd2b-117">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="abd2b-117">Optional query parameters</span></span>
-<span data-ttu-id="abd2b-118">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="abd2b-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="f086c-117">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="f086c-117">Optional query parameters</span></span>
+<span data-ttu-id="f086c-118">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="f086c-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="abd2b-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="abd2b-119">Request headers</span></span>
-| <span data-ttu-id="abd2b-120">名前</span><span class="sxs-lookup"><span data-stu-id="abd2b-120">Name</span></span>      |<span data-ttu-id="abd2b-121">説明</span><span class="sxs-lookup"><span data-stu-id="abd2b-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f086c-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f086c-119">Request headers</span></span>
+| <span data-ttu-id="f086c-120">名前</span><span class="sxs-lookup"><span data-stu-id="f086c-120">Name</span></span>      |<span data-ttu-id="f086c-121">説明</span><span class="sxs-lookup"><span data-stu-id="f086c-121">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="abd2b-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="abd2b-122">Authorization</span></span>  | <span data-ttu-id="abd2b-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="abd2b-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="abd2b-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="abd2b-125">Content-Type</span></span>   | <span data-ttu-id="abd2b-126">application/json</span><span class="sxs-lookup"><span data-stu-id="abd2b-126">application/json</span></span> |
+| <span data-ttu-id="f086c-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="f086c-122">Authorization</span></span>  | <span data-ttu-id="f086c-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="f086c-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="f086c-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="f086c-125">Content-Type</span></span>   | <span data-ttu-id="f086c-126">application/json</span><span class="sxs-lookup"><span data-stu-id="f086c-126">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="abd2b-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="abd2b-127">Request body</span></span>
-<span data-ttu-id="abd2b-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="abd2b-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f086c-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="f086c-127">Request body</span></span>
+<span data-ttu-id="f086c-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="f086c-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="abd2b-129">応答</span><span class="sxs-lookup"><span data-stu-id="abd2b-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f086c-129">応答</span><span class="sxs-lookup"><span data-stu-id="f086c-129">Response</span></span>
 
-<span data-ttu-id="abd2b-130">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[schemaextension](../resources/schemaextension.md)オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="abd2b-130">If successful, this method returns a `200 OK` response code and collection of [schemaExtension](../resources/schemaextension.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="abd2b-131">例</span><span class="sxs-lookup"><span data-stu-id="abd2b-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="abd2b-132">要求</span><span class="sxs-lookup"><span data-stu-id="abd2b-132">Request</span></span>
-<span data-ttu-id="abd2b-133">次の例は、一意の**id**でフィルター処理することによって、特定のアクセス可能なすべての拡張機能を確認する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="abd2b-133">The following example shows how to look among all the accessible extensions for a specific one by filtering on its unique **id**.</span></span> 
+<span data-ttu-id="f086c-130">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[schemaextension](../resources/schemaextension.md)オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="f086c-130">If successful, this method returns a `200 OK` response code and collection of [schemaExtension](../resources/schemaextension.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="f086c-131">例</span><span class="sxs-lookup"><span data-stu-id="f086c-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="f086c-132">要求</span><span class="sxs-lookup"><span data-stu-id="f086c-132">Request</span></span>
+<span data-ttu-id="f086c-133">次の例は、一意の**id**でフィルター処理することによって、特定のアクセス可能なすべての拡張機能を確認する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="f086c-133">The following example shows how to look among all the accessible extensions for a specific one by filtering on its unique **id**.</span></span> 
 <!-- {
   "blockType": "request",
   "name": "get_schemaextensions"
@@ -54,8 +54,8 @@ GET /schemaExtensions
 ```http
 GET https://graph.microsoft.com/v1.0/schemaExtensions?$filter=id%20eq%20'graphlearn_test'
 ```
-##### <a name="response"></a><span data-ttu-id="abd2b-134">応答</span><span class="sxs-lookup"><span data-stu-id="abd2b-134">Response</span></span>
-<span data-ttu-id="abd2b-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="abd2b-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="f086c-134">応答</span><span class="sxs-lookup"><span data-stu-id="f086c-134">Response</span></span>
+<span data-ttu-id="f086c-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="f086c-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -87,21 +87,23 @@ Content-length: 274
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="abd2b-138">SDK サンプルコード</span><span class="sxs-lookup"><span data-stu-id="abd2b-138">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="abd2b-139">Visual</span><span class="sxs-lookup"><span data-stu-id="abd2b-139">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="f086c-138">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="f086c-138">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="f086c-139">C#</span><span class="sxs-lookup"><span data-stu-id="f086c-139">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_schemaextensions-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="abd2b-140">Java</span><span class="sxs-lookup"><span data-stu-id="abd2b-140">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f086c-140">Javascript</span><span class="sxs-lookup"><span data-stu-id="f086c-140">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_schemaextensions-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="f086c-141">目的-C</span><span class="sxs-lookup"><span data-stu-id="f086c-141">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_schemaextensions-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-## <a name="see-also"></a><span data-ttu-id="abd2b-141">関連項目</span><span class="sxs-lookup"><span data-stu-id="abd2b-141">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f086c-142">関連項目</span><span class="sxs-lookup"><span data-stu-id="f086c-142">See also</span></span>
 
-- [<span data-ttu-id="abd2b-142">拡張機能を使用したリソースへのカスタム データの追加</span><span class="sxs-lookup"><span data-stu-id="abd2b-142">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
-- [<span data-ttu-id="abd2b-143">スキーマ拡張機能を使用したグループへのカスタム データの追加</span><span class="sxs-lookup"><span data-stu-id="abd2b-143">Add custom data to groups using schema extensions</span></span>](/graph/extensibility-schema-groups)
+- [<span data-ttu-id="f086c-143">拡張機能を使用したリソースへのカスタム データの追加</span><span class="sxs-lookup"><span data-stu-id="f086c-143">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
+- [<span data-ttu-id="f086c-144">スキーマ拡張機能を使用したグループへのカスタム データの追加</span><span class="sxs-lookup"><span data-stu-id="f086c-144">Add custom data to groups using schema extensions</span></span>](/graph/extensibility-schema-groups)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -113,6 +115,7 @@ Content-length: 274
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/schemaextension-list.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/schemaextension-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/schemaextension-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

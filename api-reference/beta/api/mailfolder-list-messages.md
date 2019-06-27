@@ -5,52 +5,52 @@ description: サインインしているユーザーのメールボックス内�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 2e5ec3bd9518fe47840c608ee861056967ec964b
-ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
+ms.openlocfilehash: 11ec048d16906bd1a6c95304f7956a56852bfaf6
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34812930"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35266635"
 ---
-# <a name="list-messages"></a><span data-ttu-id="ad71e-103">メッセージを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="ad71e-103">List messages</span></span>
+# <a name="list-messages"></a><span data-ttu-id="daeed-103">メッセージを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="daeed-103">List messages</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ad71e-104">指定したユーザーのメールボックス内のすべてのメッセージ、またはメールボックス内の指定されたフォルダー内のメッセージを一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="ad71e-104">List all the messages in the specified user's mailbox, or those messages in a specified folder in the mailbox.</span></span>
+<span data-ttu-id="daeed-104">指定したユーザーのメールボックス内のすべてのメッセージ、またはメールボックス内の指定されたフォルダー内のメッセージを一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="daeed-104">List all the messages in the specified user's mailbox, or those messages in a specified folder in the mailbox.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="ad71e-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="ad71e-105">Permissions</span></span>
-<span data-ttu-id="ad71e-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ad71e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="daeed-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="daeed-105">Permissions</span></span>
+<span data-ttu-id="daeed-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="daeed-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ad71e-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="ad71e-108">Permission type</span></span>      | <span data-ttu-id="ad71e-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="ad71e-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="daeed-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="daeed-108">Permission type</span></span>      | <span data-ttu-id="daeed-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="daeed-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ad71e-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="ad71e-110">Delegated (work or school account)</span></span> | <span data-ttu-id="ad71e-111">Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ad71e-111">Mail.Read, Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="ad71e-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="ad71e-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ad71e-113">Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ad71e-113">Mail.Read, Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="ad71e-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="ad71e-114">Application</span></span> | <span data-ttu-id="ad71e-115">Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ad71e-115">Mail.Read, Mail.ReadWrite</span></span> |
+|<span data-ttu-id="daeed-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="daeed-110">Delegated (work or school account)</span></span> | <span data-ttu-id="daeed-111">Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="daeed-111">Mail.Read, Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="daeed-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="daeed-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="daeed-113">Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="daeed-113">Mail.Read, Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="daeed-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="daeed-114">Application</span></span> | <span data-ttu-id="daeed-115">Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="daeed-115">Mail.Read, Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ad71e-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="ad71e-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="daeed-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="daeed-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}/messages
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="ad71e-117">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="ad71e-117">Optional query parameters</span></span>
-<span data-ttu-id="ad71e-118">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="ad71e-118">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="daeed-117">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="daeed-117">Optional query parameters</span></span>
+<span data-ttu-id="daeed-118">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="daeed-118">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="ad71e-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="ad71e-119">Request headers</span></span>
-| <span data-ttu-id="ad71e-120">名前</span><span class="sxs-lookup"><span data-stu-id="ad71e-120">Name</span></span>       | <span data-ttu-id="ad71e-121">型</span><span class="sxs-lookup"><span data-stu-id="ad71e-121">Type</span></span> | <span data-ttu-id="ad71e-122">説明</span><span class="sxs-lookup"><span data-stu-id="ad71e-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="daeed-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="daeed-119">Request headers</span></span>
+| <span data-ttu-id="daeed-120">名前</span><span class="sxs-lookup"><span data-stu-id="daeed-120">Name</span></span>       | <span data-ttu-id="daeed-121">型</span><span class="sxs-lookup"><span data-stu-id="daeed-121">Type</span></span> | <span data-ttu-id="daeed-122">説明</span><span class="sxs-lookup"><span data-stu-id="daeed-122">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="ad71e-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="ad71e-123">Authorization</span></span>  | <span data-ttu-id="ad71e-124">string</span><span class="sxs-lookup"><span data-stu-id="ad71e-124">string</span></span>  | <span data-ttu-id="ad71e-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="ad71e-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="daeed-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="daeed-123">Authorization</span></span>  | <span data-ttu-id="daeed-124">string</span><span class="sxs-lookup"><span data-stu-id="daeed-124">string</span></span>  | <span data-ttu-id="daeed-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="daeed-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="ad71e-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="ad71e-127">Request body</span></span>
-<span data-ttu-id="ad71e-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="ad71e-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="daeed-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="daeed-127">Request body</span></span>
+<span data-ttu-id="daeed-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="daeed-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ad71e-129">応答</span><span class="sxs-lookup"><span data-stu-id="ad71e-129">Response</span></span>
-<span data-ttu-id="ad71e-130">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [Message](../resources/message.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="ad71e-130">If successful, this method returns a `200 OK` response code and collection of [Message](../resources/message.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="daeed-129">応答</span><span class="sxs-lookup"><span data-stu-id="daeed-129">Response</span></span>
+<span data-ttu-id="daeed-130">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [Message](../resources/message.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="daeed-130">If successful, this method returns a `200 OK` response code and collection of [Message](../resources/message.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ad71e-131">例</span><span class="sxs-lookup"><span data-stu-id="ad71e-131">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="ad71e-132">要求</span><span class="sxs-lookup"><span data-stu-id="ad71e-132">Request</span></span>
-<span data-ttu-id="ad71e-133">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="ad71e-133">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="daeed-131">例</span><span class="sxs-lookup"><span data-stu-id="daeed-131">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="daeed-132">要求</span><span class="sxs-lookup"><span data-stu-id="daeed-132">Request</span></span>
+<span data-ttu-id="daeed-133">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="daeed-133">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_messages"
@@ -59,9 +59,9 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/messages
 ```
 
-#### <a name="response"></a><span data-ttu-id="ad71e-134">応答</span><span class="sxs-lookup"><span data-stu-id="ad71e-134">Response</span></span>
-<span data-ttu-id="ad71e-135">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="ad71e-135">The following is an example of the response.</span></span>
-><span data-ttu-id="ad71e-136">**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。</span><span class="sxs-lookup"><span data-stu-id="ad71e-136">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="ad71e-137">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="ad71e-137">All the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="daeed-134">応答</span><span class="sxs-lookup"><span data-stu-id="daeed-134">Response</span></span>
+<span data-ttu-id="daeed-135">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="daeed-135">The following is an example of the response.</span></span>
+><span data-ttu-id="daeed-136">**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。</span><span class="sxs-lookup"><span data-stu-id="daeed-136">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="daeed-137">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="daeed-137">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -135,13 +135,15 @@ Content-length: 317
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="ad71e-138">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="ad71e-138">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="ad71e-139">C#</span><span class="sxs-lookup"><span data-stu-id="ad71e-139">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="daeed-138">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="daeed-138">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="daeed-139">C#</span><span class="sxs-lookup"><span data-stu-id="daeed-139">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_messages-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ad71e-140">Javascript</span><span class="sxs-lookup"><span data-stu-id="ad71e-140">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="daeed-140">Javascript</span><span class="sxs-lookup"><span data-stu-id="daeed-140">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_messages-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="daeed-141">目的-C</span><span class="sxs-lookup"><span data-stu-id="daeed-141">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_messages-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -156,6 +158,7 @@ Content-length: 317
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/mailfolder-list-messages.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/mailfolder-list-messages.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/mailfolder-list-messages.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

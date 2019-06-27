@@ -4,45 +4,45 @@ description: このメソッドを呼び出すと、現在のユーザーがそ�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 66a33d103642972aebf55a0437f03840c55a4ef5
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 6795257a1a86049457ddb475356280980e9a203e
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33613614"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35277631"
 ---
-# <a name="group-subscribebymail"></a><span data-ttu-id="314e8-104">グループ: subscribeByMail</span><span class="sxs-lookup"><span data-stu-id="314e8-104">group: subscribeByMail</span></span>
-<span data-ttu-id="314e8-p102">このメソッドを呼び出すと、現在のユーザーがそのグループ内の新規投稿、イベント、およびファイルに関するメール通知を受信できるようになります。Office 365 のグループのみをサポートします。</span><span class="sxs-lookup"><span data-stu-id="314e8-p102">Calling this method will enable the current user to receive email notifications for this group, about new posts, events, and files in that group. Supported for Office 365 groups only.</span></span>
+# <a name="group-subscribebymail"></a><span data-ttu-id="da85f-104">グループ: subscribeByMail</span><span class="sxs-lookup"><span data-stu-id="da85f-104">group: subscribeByMail</span></span>
+<span data-ttu-id="da85f-p102">このメソッドを呼び出すと、現在のユーザーがそのグループ内の新規投稿、イベント、およびファイルに関するメール通知を受信できるようになります。Office 365 のグループのみをサポートします。</span><span class="sxs-lookup"><span data-stu-id="da85f-p102">Calling this method will enable the current user to receive email notifications for this group, about new posts, events, and files in that group. Supported for Office 365 groups only.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="314e8-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="314e8-107">Permissions</span></span>
-<span data-ttu-id="314e8-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="314e8-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="da85f-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="da85f-107">Permissions</span></span>
+<span data-ttu-id="da85f-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="da85f-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="314e8-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="314e8-110">Permission type</span></span>      | <span data-ttu-id="314e8-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="314e8-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="da85f-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="da85f-110">Permission type</span></span>      | <span data-ttu-id="da85f-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="da85f-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="314e8-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="314e8-112">Delegated (work or school account)</span></span> | <span data-ttu-id="314e8-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="314e8-113">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="314e8-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="314e8-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="314e8-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="314e8-115">Not supported.</span></span>    |
-|<span data-ttu-id="314e8-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="314e8-116">Application</span></span> | <span data-ttu-id="314e8-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="314e8-117">Not supported.</span></span> |
+|<span data-ttu-id="da85f-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="da85f-112">Delegated (work or school account)</span></span> | <span data-ttu-id="da85f-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="da85f-113">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="da85f-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="da85f-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="da85f-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="da85f-115">Not supported.</span></span>    |
+|<span data-ttu-id="da85f-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="da85f-116">Application</span></span> | <span data-ttu-id="da85f-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="da85f-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="314e8-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="314e8-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="da85f-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="da85f-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/subscribeByMail
 ```
-## <a name="request-headers"></a><span data-ttu-id="314e8-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="314e8-119">Request headers</span></span>
-| <span data-ttu-id="314e8-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="314e8-120">Header</span></span>       | <span data-ttu-id="314e8-121">値</span><span class="sxs-lookup"><span data-stu-id="314e8-121">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="da85f-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="da85f-119">Request headers</span></span>
+| <span data-ttu-id="da85f-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="da85f-120">Header</span></span>       | <span data-ttu-id="da85f-121">値</span><span class="sxs-lookup"><span data-stu-id="da85f-121">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="314e8-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="314e8-122">Authorization</span></span>  | <span data-ttu-id="314e8-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="314e8-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="314e8-125">Prefer</span><span class="sxs-lookup"><span data-stu-id="314e8-125">Prefer</span></span> | <span data-ttu-id="314e8-126">return=minimal.</span><span class="sxs-lookup"><span data-stu-id="314e8-126">return=minimal.</span></span> <span data-ttu-id="314e8-127">最小応答ヘッダーが要求ヘッダーに含まれている場合、正常な応答で `204 No Content` コードが返されます。</span><span class="sxs-lookup"><span data-stu-id="314e8-127">If minimal response header is included in the request header, then a successful response returns `204 No Content` code.</span></span> <span data-ttu-id="314e8-128">省略可能。</span><span class="sxs-lookup"><span data-stu-id="314e8-128">Optional.</span></span>  | 
+| <span data-ttu-id="da85f-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="da85f-122">Authorization</span></span>  | <span data-ttu-id="da85f-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="da85f-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="da85f-125">Prefer</span><span class="sxs-lookup"><span data-stu-id="da85f-125">Prefer</span></span> | <span data-ttu-id="da85f-126">return=minimal.</span><span class="sxs-lookup"><span data-stu-id="da85f-126">return=minimal.</span></span> <span data-ttu-id="da85f-127">最小応答ヘッダーが要求ヘッダーに含まれている場合、正常な応答で `204 No Content` コードが返されます。</span><span class="sxs-lookup"><span data-stu-id="da85f-127">If minimal response header is included in the request header, then a successful response returns `204 No Content` code.</span></span> <span data-ttu-id="da85f-128">省略可能。</span><span class="sxs-lookup"><span data-stu-id="da85f-128">Optional.</span></span>  | 
 
-## <a name="request-body"></a><span data-ttu-id="314e8-129">要求本文</span><span class="sxs-lookup"><span data-stu-id="314e8-129">Request body</span></span>
-<span data-ttu-id="314e8-130">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="314e8-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="da85f-129">要求本文</span><span class="sxs-lookup"><span data-stu-id="da85f-129">Request body</span></span>
+<span data-ttu-id="da85f-130">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="da85f-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="314e8-131">応答</span><span class="sxs-lookup"><span data-stu-id="314e8-131">Response</span></span>
-<span data-ttu-id="314e8-p106">成功した場合、このメソッドは `200 OK` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="314e8-p106">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="da85f-131">応答</span><span class="sxs-lookup"><span data-stu-id="da85f-131">Response</span></span>
+<span data-ttu-id="da85f-p106">成功した場合、このメソッドは `200 OK` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="da85f-p106">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="314e8-134">例</span><span class="sxs-lookup"><span data-stu-id="314e8-134">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="314e8-135">要求</span><span class="sxs-lookup"><span data-stu-id="314e8-135">Request</span></span>
-<span data-ttu-id="314e8-136">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="314e8-136">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="da85f-134">例</span><span class="sxs-lookup"><span data-stu-id="da85f-134">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="da85f-135">要求</span><span class="sxs-lookup"><span data-stu-id="da85f-135">Request</span></span>
+<span data-ttu-id="da85f-136">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="da85f-136">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "group_subscribebymail"
@@ -51,8 +51,8 @@ POST /groups/{id}/subscribeByMail
 POST https://graph.microsoft.com/v1.0/groups/{id}/subscribeByMail
 ```
 
-#### <a name="response"></a><span data-ttu-id="314e8-137">応答</span><span class="sxs-lookup"><span data-stu-id="314e8-137">Response</span></span>
-<span data-ttu-id="314e8-138">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="314e8-138">The following is an example of the response.</span></span> 
+#### <a name="response"></a><span data-ttu-id="da85f-137">応答</span><span class="sxs-lookup"><span data-stu-id="da85f-137">Response</span></span>
+<span data-ttu-id="da85f-138">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="da85f-138">The following is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -60,13 +60,15 @@ POST https://graph.microsoft.com/v1.0/groups/{id}/subscribeByMail
 ```http
 HTTP/1.1 200 OK
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="314e8-139">SDK サンプルコード</span><span class="sxs-lookup"><span data-stu-id="314e8-139">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="314e8-140">Visual</span><span class="sxs-lookup"><span data-stu-id="314e8-140">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="da85f-139">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="da85f-139">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="da85f-140">C#</span><span class="sxs-lookup"><span data-stu-id="da85f-140">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/group_subscribebymail-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="314e8-141">Java</span><span class="sxs-lookup"><span data-stu-id="314e8-141">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="da85f-141">Javascript</span><span class="sxs-lookup"><span data-stu-id="da85f-141">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/group_subscribebymail-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="da85f-142">目的-C</span><span class="sxs-lookup"><span data-stu-id="da85f-142">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/group_subscribebymail-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -80,6 +82,7 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/group-subscribebymail.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/group-subscribebymail.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/group-subscribebymail.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
