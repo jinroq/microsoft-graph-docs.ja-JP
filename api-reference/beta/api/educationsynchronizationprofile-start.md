@@ -4,49 +4,49 @@ description: テナント内の特定の school データ同期プロファイ�
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 38d5b8833c424889604751d8b4c4be7f7678b891
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e677090f925d336b47ab80e8e770ca1e2895b84b
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33960845"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35259517"
 ---
-# <a name="start-sync-after-uploading-files-to-an-educationsynchronizationprofile"></a><span data-ttu-id="390ca-107">ファイルを educationSynchronizationProfile にアップロードした後、同期を開始する</span><span class="sxs-lookup"><span data-stu-id="390ca-107">Start sync after uploading files to an educationSynchronizationProfile</span></span>
+# <a name="start-sync-after-uploading-files-to-an-educationsynchronizationprofile"></a><span data-ttu-id="2aaee-107">ファイルを educationSynchronizationProfile にアップロードした後、同期を開始する</span><span class="sxs-lookup"><span data-stu-id="2aaee-107">Start sync after uploading files to an educationSynchronizationProfile</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="390ca-108">テナント内の特定の school データ[同期プロファイル](../resources/educationsynchronizationprofile.md)にアップロードされたファイルを確認します。</span><span class="sxs-lookup"><span data-stu-id="390ca-108">Verify the files uploaded to a specific school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.</span></span> <span data-ttu-id="390ca-109">検証に成功すると、プロファイルの同期が開始されます。</span><span class="sxs-lookup"><span data-stu-id="390ca-109">If the verification is successful, synchronization will start on the profile.</span></span> <span data-ttu-id="390ca-110">それ以外の場合、応答にはエラーと警告が含まれます。</span><span class="sxs-lookup"><span data-stu-id="390ca-110">Otherwise, the response will contain errors and warnings.</span></span> <span data-ttu-id="390ca-111">応答にエラーが含まれている場合、同期は開始されません。</span><span class="sxs-lookup"><span data-stu-id="390ca-111">If the response contains errors, the synchronization will not start.</span></span> <span data-ttu-id="390ca-112">応答に警告のみが含まれている場合は、同期が開始されます。</span><span class="sxs-lookup"><span data-stu-id="390ca-112">If the response contains only warnings, synchronization will start.</span></span>
+<span data-ttu-id="2aaee-108">テナント内の特定の school データ[同期プロファイル](../resources/educationsynchronizationprofile.md)にアップロードされたファイルを確認します。</span><span class="sxs-lookup"><span data-stu-id="2aaee-108">Verify the files uploaded to a specific school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.</span></span> <span data-ttu-id="2aaee-109">検証に成功すると、プロファイルの同期が開始されます。</span><span class="sxs-lookup"><span data-stu-id="2aaee-109">If the verification is successful, synchronization will start on the profile.</span></span> <span data-ttu-id="2aaee-110">それ以外の場合、応答にはエラーと警告が含まれます。</span><span class="sxs-lookup"><span data-stu-id="2aaee-110">Otherwise, the response will contain errors and warnings.</span></span> <span data-ttu-id="2aaee-111">応答にエラーが含まれている場合、同期は開始されません。</span><span class="sxs-lookup"><span data-stu-id="2aaee-111">If the response contains errors, the synchronization will not start.</span></span> <span data-ttu-id="2aaee-112">応答に警告のみが含まれている場合は、同期が開始されます。</span><span class="sxs-lookup"><span data-stu-id="2aaee-112">If the response contains only warnings, synchronization will start.</span></span>
 
-> <span data-ttu-id="390ca-113">**注:** このメソッドは、データプロバイダーの種類が[educationcsvdataprovider](../resources/educationcsvdataprovider.md)の場合にのみ使用します。</span><span class="sxs-lookup"><span data-stu-id="390ca-113">**Note:** Use this method only when the data provider is of type [educationcsvdataprovider](../resources/educationcsvdataprovider.md).</span></span> <span data-ttu-id="390ca-114">また、プロファイルの state プロパティを開始するには、事前に準備しておく必要があります。</span><span class="sxs-lookup"><span data-stu-id="390ca-114">Also, the profile's state property needs to be provisioned before it can be started.</span></span> <span data-ttu-id="390ca-115">プロファイルオブジェクトをポーリングして、その state プロパティを確認します。</span><span class="sxs-lookup"><span data-stu-id="390ca-115">Poll the profile object to check its state property.</span></span>
+> <span data-ttu-id="2aaee-113">**注:** このメソッドは、データプロバイダーの種類が[educationcsvdataprovider](../resources/educationcsvdataprovider.md)の場合にのみ使用します。</span><span class="sxs-lookup"><span data-stu-id="2aaee-113">**Note:** Use this method only when the data provider is of type [educationcsvdataprovider](../resources/educationcsvdataprovider.md).</span></span> <span data-ttu-id="2aaee-114">また、プロファイルの state プロパティを開始するには、事前に準備しておく必要があります。</span><span class="sxs-lookup"><span data-stu-id="2aaee-114">Also, the profile's state property needs to be provisioned before it can be started.</span></span> <span data-ttu-id="2aaee-115">プロファイルオブジェクトをポーリングして、その state プロパティを確認します。</span><span class="sxs-lookup"><span data-stu-id="2aaee-115">Poll the profile object to check its state property.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="390ca-116">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="390ca-116">Permissions</span></span>
-<span data-ttu-id="390ca-p104">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="390ca-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="2aaee-116">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="2aaee-116">Permissions</span></span>
+<span data-ttu-id="2aaee-p104">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2aaee-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="390ca-119">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="390ca-119">Permission type</span></span> | <span data-ttu-id="390ca-120">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="390ca-120">Permissions</span></span> |
+| <span data-ttu-id="2aaee-119">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="2aaee-119">Permission type</span></span> | <span data-ttu-id="2aaee-120">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="2aaee-120">Permissions</span></span> |
 |:-----------|:----------|
-| <span data-ttu-id="390ca-121">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="390ca-121">Delegated (work or school account)</span></span> | <span data-ttu-id="390ca-122">EduAdministration.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="390ca-122">EduAdministration.ReadWrite</span></span> |
-|<span data-ttu-id="390ca-123">委任 (個人 Microsoft アカウント</span><span class="sxs-lookup"><span data-stu-id="390ca-123">Delegated (personal Microsoft account</span></span>|<span data-ttu-id="390ca-124">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="390ca-124">Not supported.</span></span>|
-|<span data-ttu-id="390ca-125">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="390ca-125">Application</span></span>|<span data-ttu-id="390ca-126">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="390ca-126">Not supported.</span></span>|
+| <span data-ttu-id="2aaee-121">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="2aaee-121">Delegated (work or school account)</span></span> | <span data-ttu-id="2aaee-122">EduAdministration.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2aaee-122">EduAdministration.ReadWrite</span></span> |
+|<span data-ttu-id="2aaee-123">委任 (個人 Microsoft アカウント</span><span class="sxs-lookup"><span data-stu-id="2aaee-123">Delegated (personal Microsoft account</span></span>|<span data-ttu-id="2aaee-124">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="2aaee-124">Not supported.</span></span>|
+|<span data-ttu-id="2aaee-125">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="2aaee-125">Application</span></span>|<span data-ttu-id="2aaee-126">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="2aaee-126">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="390ca-127">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="390ca-127">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2aaee-127">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="2aaee-127">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /synchronizationProfiles/{id}/start
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="390ca-128">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="390ca-128">Request headers</span></span>
-| <span data-ttu-id="390ca-129">名前</span><span class="sxs-lookup"><span data-stu-id="390ca-129">Name</span></span>       | <span data-ttu-id="390ca-130">種類</span><span class="sxs-lookup"><span data-stu-id="390ca-130">Type</span></span> | <span data-ttu-id="390ca-131">説明</span><span class="sxs-lookup"><span data-stu-id="390ca-131">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="2aaee-128">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="2aaee-128">Request headers</span></span>
+| <span data-ttu-id="2aaee-129">名前</span><span class="sxs-lookup"><span data-stu-id="2aaee-129">Name</span></span>       | <span data-ttu-id="2aaee-130">型</span><span class="sxs-lookup"><span data-stu-id="2aaee-130">Type</span></span> | <span data-ttu-id="2aaee-131">説明</span><span class="sxs-lookup"><span data-stu-id="2aaee-131">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="390ca-132">Authorization</span><span class="sxs-lookup"><span data-stu-id="390ca-132">Authorization</span></span>  | <span data-ttu-id="390ca-133">string</span><span class="sxs-lookup"><span data-stu-id="390ca-133">string</span></span>  | <span data-ttu-id="390ca-p105">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="390ca-p105">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="2aaee-132">Authorization</span><span class="sxs-lookup"><span data-stu-id="2aaee-132">Authorization</span></span>  | <span data-ttu-id="2aaee-133">string</span><span class="sxs-lookup"><span data-stu-id="2aaee-133">string</span></span>  | <span data-ttu-id="2aaee-p105">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="2aaee-p105">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="390ca-136">要求本文</span><span class="sxs-lookup"><span data-stu-id="390ca-136">Request body</span></span>
-<span data-ttu-id="390ca-137">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="390ca-137">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="390ca-138">応答</span><span class="sxs-lookup"><span data-stu-id="390ca-138">Response</span></span>
-<span data-ttu-id="390ca-139">成功した場合、このメソッドは `200 OK` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="390ca-139">If successful, this method returns a `200 OK` response code.</span></span> <span data-ttu-id="390ca-140">失敗した場合は、 `400 Bad Request`を返します。</span><span class="sxs-lookup"><span data-stu-id="390ca-140">If unsuccessful, it returns a `400 Bad Request`.</span></span> <span data-ttu-id="390ca-141">応答には、 [educationFileSynchronizationVerificationMessage](../resources/educationfilesynchronizationverificationmessage.md)オブジェクトのコレクションが応答本文の一部として含まれています (エラーまたは警告が検出された場合)。</span><span class="sxs-lookup"><span data-stu-id="390ca-141">The response contains a collection of [educationFileSynchronizationVerificationMessage](../resources/educationfilesynchronizationverificationmessage.md) objects as part of the response body if any errors or warnings were found.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2aaee-136">要求本文</span><span class="sxs-lookup"><span data-stu-id="2aaee-136">Request body</span></span>
+<span data-ttu-id="2aaee-137">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="2aaee-137">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="2aaee-138">応答</span><span class="sxs-lookup"><span data-stu-id="2aaee-138">Response</span></span>
+<span data-ttu-id="2aaee-139">成功した場合、このメソッドは `200 OK` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="2aaee-139">If successful, this method returns a `200 OK` response code.</span></span> <span data-ttu-id="2aaee-140">失敗した場合は、 `400 Bad Request`を返します。</span><span class="sxs-lookup"><span data-stu-id="2aaee-140">If unsuccessful, it returns a `400 Bad Request`.</span></span> <span data-ttu-id="2aaee-141">応答には、 [educationFileSynchronizationVerificationMessage](../resources/educationfilesynchronizationverificationmessage.md)オブジェクトのコレクションが応答本文の一部として含まれています (エラーまたは警告が検出された場合)。</span><span class="sxs-lookup"><span data-stu-id="2aaee-141">The response contains a collection of [educationFileSynchronizationVerificationMessage](../resources/educationfilesynchronizationverificationmessage.md) objects as part of the response body if any errors or warnings were found.</span></span>
 
-## <a name="example"></a><span data-ttu-id="390ca-142">例</span><span class="sxs-lookup"><span data-stu-id="390ca-142">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="390ca-143">要求</span><span class="sxs-lookup"><span data-stu-id="390ca-143">Request</span></span>
-<span data-ttu-id="390ca-144">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="390ca-144">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="2aaee-142">例</span><span class="sxs-lookup"><span data-stu-id="2aaee-142">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="2aaee-143">要求</span><span class="sxs-lookup"><span data-stu-id="2aaee-143">Request</span></span>
+<span data-ttu-id="2aaee-144">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="2aaee-144">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "post_educationSynchronizationProfile_start"
@@ -55,10 +55,10 @@ POST /synchronizationProfiles/{id}/start
 POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/start
 ```
 
-##### <a name="response"></a><span data-ttu-id="390ca-145">応答</span><span class="sxs-lookup"><span data-stu-id="390ca-145">Response</span></span>
-<span data-ttu-id="390ca-146">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="390ca-146">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="2aaee-145">応答</span><span class="sxs-lookup"><span data-stu-id="2aaee-145">Response</span></span>
+<span data-ttu-id="2aaee-146">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="2aaee-146">Here is an example of the response.</span></span> 
 
-><span data-ttu-id="390ca-p107">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="390ca-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="2aaee-p107">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="2aaee-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -127,13 +127,15 @@ Content-length: 2105
     ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="390ca-149">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="390ca-149">SDK sample code</span></span>
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="390ca-150">Javascript</span><span class="sxs-lookup"><span data-stu-id="390ca-150">Javascript</span></span>](#tab/javascript)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="2aaee-149">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="2aaee-149">SDK sample code</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="2aaee-150">Javascript</span><span class="sxs-lookup"><span data-stu-id="2aaee-150">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/post_educationSynchronizationProfile_start-Javascript-snippets.md)]
 
-# <a name="ctabcs"></a>[<span data-ttu-id="390ca-151">C#</span><span class="sxs-lookup"><span data-stu-id="390ca-151">C#</span></span>](#tab/cs)
+# <a name="ctabcs"></a>[<span data-ttu-id="2aaee-151">C#</span><span class="sxs-lookup"><span data-stu-id="2aaee-151">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/post_educationSynchronizationProfile_start-Cs-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="2aaee-152">目的-C</span><span class="sxs-lookup"><span data-stu-id="2aaee-152">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/post_educationSynchronizationProfile_start-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -146,6 +148,7 @@ Content-length: 2105
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/educationsynchronizationprofile-start.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/educationsynchronizationprofile-start.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/educationsynchronizationprofile-start.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
