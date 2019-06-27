@@ -2,41 +2,39 @@
 title: イベントを一覧表示する
 description: 予定表のイベント一覧を取得します。一覧には、単一インスタンスの会議と定期的なマスターが含まれています。
 author: angelgolfer-ms
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: f229960ee5fc8f0541fb3c1b91f02ddc9b0a28c6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ba16ca364dddd0b13e889d36eabb2b3f467f3057
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570597"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35264786"
 ---
-# <a name="list-events"></a><span data-ttu-id="9a2a3-104">イベントを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="9a2a3-104">List events</span></span>
+# <a name="list-events"></a><span data-ttu-id="d487f-104">イベントを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="d487f-104">List events</span></span>
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+<span data-ttu-id="d487f-p102">予定表のイベント一覧を取得します。一覧には、単一インスタンスの会議と定期的なマスターが含まれています。</span><span class="sxs-lookup"><span data-stu-id="d487f-p102">Retrieve a list of events in a calendar.  The list contains single instance meetings and series masters.</span></span>
 
-<span data-ttu-id="9a2a3-p102">予定表のイベント一覧を取得します。一覧には、単一インスタンスの会議と定期的なマスターが含まれています。</span><span class="sxs-lookup"><span data-stu-id="9a2a3-p102">Retrieve a list of events in a calendar.  The list contains single instance meetings and series masters.</span></span>
+<span data-ttu-id="d487f-107">拡張イベントのインスタンスを取得すると、[予定表ビューを取得する](calendar-list-calendarview.md)または[イベントのインスタンスを取得する](event-list-instances.md)ことができます。</span><span class="sxs-lookup"><span data-stu-id="d487f-107">To get expanded event instances, you can [get the calendar view](calendar-list-calendarview.md), or [get the instances of an event](event-list-instances.md).</span></span>
 
-<span data-ttu-id="9a2a3-107">拡張イベントのインスタンスを取得すると、[予定表ビューを取得する](calendar-list-calendarview.md)または[イベントのインスタンスを取得する](event-list-instances.md)ことができます。</span><span class="sxs-lookup"><span data-stu-id="9a2a3-107">To get expanded event instances, you can [get the calendar view](calendar-list-calendarview.md), or [get the instances of an event](event-list-instances.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="d487f-108">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="d487f-108">Permissions</span></span>
+<span data-ttu-id="d487f-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d487f-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="9a2a3-108">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="9a2a3-108">Permissions</span></span>
-<span data-ttu-id="9a2a3-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="9a2a3-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
-
-|<span data-ttu-id="9a2a3-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="9a2a3-111">Permission type</span></span>      | <span data-ttu-id="9a2a3-112">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="9a2a3-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="d487f-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="d487f-111">Permission type</span></span>      | <span data-ttu-id="d487f-112">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="d487f-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="9a2a3-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="9a2a3-113">Delegated (work or school account)</span></span> | <span data-ttu-id="9a2a3-114">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="9a2a3-114">Calendars.Read</span></span>    |
-|<span data-ttu-id="9a2a3-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="9a2a3-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9a2a3-116">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="9a2a3-116">Calendars.Read</span></span>    |
-|<span data-ttu-id="9a2a3-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="9a2a3-117">Application</span></span> | <span data-ttu-id="9a2a3-118">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="9a2a3-118">Calendars.Read</span></span> |
+|<span data-ttu-id="d487f-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="d487f-113">Delegated (work or school account)</span></span> | <span data-ttu-id="d487f-114">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="d487f-114">Calendars.Read</span></span>    |
+|<span data-ttu-id="d487f-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="d487f-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d487f-116">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="d487f-116">Calendars.Read</span></span>    |
+|<span data-ttu-id="d487f-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="d487f-117">Application</span></span> | <span data-ttu-id="d487f-118">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="d487f-118">Calendars.Read</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="9a2a3-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="9a2a3-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d487f-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="d487f-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
-<span data-ttu-id="9a2a3-120">ユーザーまたはグループの既定の[予定表](../resources/calendar.md)。</span><span class="sxs-lookup"><span data-stu-id="9a2a3-120">A user's or group's default [calendar](../resources/calendar.md).</span></span>
+<span data-ttu-id="d487f-120">ユーザーまたはグループの既定の[予定表](../resources/calendar.md)。</span><span class="sxs-lookup"><span data-stu-id="d487f-120">A user's or group's default [calendar](../resources/calendar.md).</span></span>
 ```http
 GET /me/calendar/events
 GET /users/{id | userPrincipalName}/calendar/events
 GET /groups/{id}/calendar/events
 ```
-<span data-ttu-id="9a2a3-121">既定の [calendarGroup](../resources/calendargroup.md) のユーザーの[予定表](../resources/calendar.md)。</span><span class="sxs-lookup"><span data-stu-id="9a2a3-121">A user's [calendar](../resources/calendar.md) in the default [calendarGroup](../resources/calendargroup.md).</span></span>
+<span data-ttu-id="d487f-121">既定の [calendarGroup](../resources/calendargroup.md) のユーザーの[予定表](../resources/calendar.md)。</span><span class="sxs-lookup"><span data-stu-id="d487f-121">A user's [calendar](../resources/calendar.md) in the default [calendarGroup](../resources/calendargroup.md).</span></span>
 ```http
 GET /me/calendars/{id}/events
 GET /users/{id | userPrincipalName}/calendars/{id}/events
@@ -44,37 +42,37 @@ GET /users/{id | userPrincipalName}/calendars/{id}/events
 GET /me/calendarGroup/calendars/{id}/events
 GET /users/{id | userPrincipalName}/calendarGroup/calendars/{id}/events
 ```
-<span data-ttu-id="9a2a3-122">指定の [calendarGroup](../resources/calendargroup.md) のユーザーの [予定表](../resources/calendar.md)。</span><span class="sxs-lookup"><span data-stu-id="9a2a3-122">A user's [calendar](../resources/calendar.md) in a specific [calendarGroup](../resources/calendargroup.md).</span></span>
+<span data-ttu-id="d487f-122">指定の [calendarGroup](../resources/calendargroup.md) のユーザーの [予定表](../resources/calendar.md)。</span><span class="sxs-lookup"><span data-stu-id="d487f-122">A user's [calendar](../resources/calendar.md) in a specific [calendarGroup](../resources/calendargroup.md).</span></span>
 ```http
 GET /me/calendarGroups/{id}/calendars/{id}/events
 GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="9a2a3-123">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="9a2a3-123">Optional query parameters</span></span>
-<span data-ttu-id="9a2a3-124">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="9a2a3-124">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="9a2a3-125">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="9a2a3-125">Request headers</span></span>
-| <span data-ttu-id="9a2a3-126">名前</span><span class="sxs-lookup"><span data-stu-id="9a2a3-126">Name</span></span>       | <span data-ttu-id="9a2a3-127">型</span><span class="sxs-lookup"><span data-stu-id="9a2a3-127">Type</span></span> | <span data-ttu-id="9a2a3-128">説明</span><span class="sxs-lookup"><span data-stu-id="9a2a3-128">Description</span></span> |
+## <a name="optional-query-parameters"></a><span data-ttu-id="d487f-123">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="d487f-123">Optional query parameters</span></span>
+<span data-ttu-id="d487f-124">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="d487f-124">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="d487f-125">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="d487f-125">Request headers</span></span>
+| <span data-ttu-id="d487f-126">名前</span><span class="sxs-lookup"><span data-stu-id="d487f-126">Name</span></span>       | <span data-ttu-id="d487f-127">型</span><span class="sxs-lookup"><span data-stu-id="d487f-127">Type</span></span> | <span data-ttu-id="d487f-128">説明</span><span class="sxs-lookup"><span data-stu-id="d487f-128">Description</span></span> |
 |:---------------|:--------|:--------|
-| <span data-ttu-id="9a2a3-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="9a2a3-129">Authorization</span></span>  | <span data-ttu-id="9a2a3-130">string</span><span class="sxs-lookup"><span data-stu-id="9a2a3-130">string</span></span> | <span data-ttu-id="9a2a3-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="9a2a3-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="9a2a3-133">優先: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="9a2a3-133">Prefer: outlook.timezone</span></span>  | <span data-ttu-id="9a2a3-134">string</span><span class="sxs-lookup"><span data-stu-id="9a2a3-134">string</span></span> | <span data-ttu-id="9a2a3-135">これを使用して、応答内の開始および終了時刻のタイム ゾーンを指定します。</span><span class="sxs-lookup"><span data-stu-id="9a2a3-135">Use this to specify the time zone for start and end times in the response.</span></span> <span data-ttu-id="9a2a3-136">指定しない場合、これらの時刻値は UTC で返されます。</span><span class="sxs-lookup"><span data-stu-id="9a2a3-136">If not specified, those time values are returned in UTC.</span></span> <span data-ttu-id="9a2a3-137">省略可能。</span><span class="sxs-lookup"><span data-stu-id="9a2a3-137">Optional.</span></span> |
+| <span data-ttu-id="d487f-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="d487f-129">Authorization</span></span>  | <span data-ttu-id="d487f-130">string</span><span class="sxs-lookup"><span data-stu-id="d487f-130">string</span></span> | <span data-ttu-id="d487f-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="d487f-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="d487f-133">優先: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="d487f-133">Prefer: outlook.timezone</span></span>  | <span data-ttu-id="d487f-134">string</span><span class="sxs-lookup"><span data-stu-id="d487f-134">string</span></span> | <span data-ttu-id="d487f-135">これを使用して、応答内の開始および終了時刻のタイム ゾーンを指定します。</span><span class="sxs-lookup"><span data-stu-id="d487f-135">Use this to specify the time zone for start and end times in the response.</span></span> <span data-ttu-id="d487f-136">指定しない場合、これらの時刻値は UTC で返されます。</span><span class="sxs-lookup"><span data-stu-id="d487f-136">If not specified, those time values are returned in UTC.</span></span> <span data-ttu-id="d487f-137">省略可能。</span><span class="sxs-lookup"><span data-stu-id="d487f-137">Optional.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="9a2a3-138">要求本文</span><span class="sxs-lookup"><span data-stu-id="9a2a3-138">Request body</span></span>
-<span data-ttu-id="9a2a3-139">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="9a2a3-139">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d487f-138">要求本文</span><span class="sxs-lookup"><span data-stu-id="d487f-138">Request body</span></span>
+<span data-ttu-id="d487f-139">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="d487f-139">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="9a2a3-140">応答</span><span class="sxs-lookup"><span data-stu-id="9a2a3-140">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d487f-140">応答</span><span class="sxs-lookup"><span data-stu-id="d487f-140">Response</span></span>
 
-<span data-ttu-id="9a2a3-141">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [Event](../resources/event.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="9a2a3-141">If successful, this method returns a `200 OK` response code and collection of [Event](../resources/event.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="9a2a3-142">例</span><span class="sxs-lookup"><span data-stu-id="9a2a3-142">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="9a2a3-143">要求</span><span class="sxs-lookup"><span data-stu-id="9a2a3-143">Request</span></span>
-<span data-ttu-id="9a2a3-144">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="9a2a3-144">Here is an example of the request.</span></span>
+<span data-ttu-id="d487f-141">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [Event](../resources/event.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="d487f-141">If successful, this method returns a `200 OK` response code and collection of [Event](../resources/event.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="d487f-142">例</span><span class="sxs-lookup"><span data-stu-id="d487f-142">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="d487f-143">要求</span><span class="sxs-lookup"><span data-stu-id="d487f-143">Request</span></span>
+<span data-ttu-id="d487f-144">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="d487f-144">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_events"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/calendar/events
+GET https://graph.microsoft.com/v1.0/me/calendar/events
 ```
-##### <a name="response"></a><span data-ttu-id="9a2a3-145">応答</span><span class="sxs-lookup"><span data-stu-id="9a2a3-145">Response</span></span>
-<span data-ttu-id="9a2a3-p106">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="9a2a3-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="d487f-145">応答</span><span class="sxs-lookup"><span data-stu-id="d487f-145">Response</span></span>
+<span data-ttu-id="d487f-p106">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="d487f-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -93,25 +91,39 @@ Content-length: 354
       "originalEndTimeZone": "originalEndTimeZone-value",
       "responseStatus": {
         "response": "",
-        "time": "2016-10-19T10:37:00Z"
+        "time": "datetime-value"
       },
-      "uid": "iCalUId-value",
+      "iCalUId": "iCalUId-value",
       "reminderMinutesBeforeStart": 99,
       "isReminderOn": true
     }
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="d487f-149">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="d487f-149">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="d487f-150">C#</span><span class="sxs-lookup"><span data-stu-id="d487f-150">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_events-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="d487f-151">Javascript</span><span class="sxs-lookup"><span data-stu-id="d487f-151">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_events-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="d487f-152">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d487f-152">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_events-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List events",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/calendar-list-events.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/calendar-list-events.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/calendar-list-events.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

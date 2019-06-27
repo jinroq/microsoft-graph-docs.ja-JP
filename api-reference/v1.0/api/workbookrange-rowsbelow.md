@@ -4,55 +4,55 @@ description: 指定した範囲の下にある特定の行数を取得します�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: df4e9ee4ab653d525a487f19b3adcf16755bcf28
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 2d7b88a62f65fe15434c431afc16e25d78e22be5
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33601953"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35278457"
 ---
-# <a name="workbookrange-rowsbelow"></a><span data-ttu-id="19c6b-103">workbookRange: rowsBelow</span><span class="sxs-lookup"><span data-stu-id="19c6b-103">workbookRange: rowsBelow</span></span>
+# <a name="workbookrange-rowsbelow"></a><span data-ttu-id="b5b4d-103">workbookRange: rowsBelow</span><span class="sxs-lookup"><span data-stu-id="b5b4d-103">workbookRange: rowsBelow</span></span>
 
-<span data-ttu-id="19c6b-104">指定した範囲の下にある特定の行数を取得します。</span><span class="sxs-lookup"><span data-stu-id="19c6b-104">Gets certain number of rows below a given range.</span></span>
+<span data-ttu-id="b5b4d-104">指定した範囲の下にある特定の行数を取得します。</span><span class="sxs-lookup"><span data-stu-id="b5b4d-104">Gets certain number of rows below a given range.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="19c6b-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="19c6b-105">Permissions</span></span>
-<span data-ttu-id="19c6b-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="19c6b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="b5b4d-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="b5b4d-105">Permissions</span></span>
+<span data-ttu-id="b5b4d-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b5b4d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="19c6b-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="19c6b-108">Permission type</span></span>      | <span data-ttu-id="19c6b-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="19c6b-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b5b4d-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="b5b4d-108">Permission type</span></span>      | <span data-ttu-id="b5b4d-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="b5b4d-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="19c6b-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="19c6b-110">Delegated (work or school account)</span></span> | <span data-ttu-id="19c6b-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="19c6b-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="19c6b-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="19c6b-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="19c6b-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="19c6b-113">Not supported.</span></span>    |
-|<span data-ttu-id="19c6b-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="19c6b-114">Application</span></span> | <span data-ttu-id="19c6b-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="19c6b-115">Not supported.</span></span> |
+|<span data-ttu-id="b5b4d-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="b5b4d-110">Delegated (work or school account)</span></span> | <span data-ttu-id="b5b4d-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b5b4d-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="b5b4d-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="b5b4d-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b5b4d-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b5b4d-113">Not supported.</span></span>    |
+|<span data-ttu-id="b5b4d-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="b5b4d-114">Application</span></span> | <span data-ttu-id="b5b4d-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b5b4d-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="19c6b-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="19c6b-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b5b4d-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="b5b4d-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/drive/root/workbook/worksheets/{id}/range/rowsBelow(count=n)
 
 ```
 
-## <a name="function-parameters"></a><span data-ttu-id="19c6b-117">関数パラメーター</span><span class="sxs-lookup"><span data-stu-id="19c6b-117">Function parameters</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="b5b4d-117">関数パラメーター</span><span class="sxs-lookup"><span data-stu-id="b5b4d-117">Function parameters</span></span>
 
-| <span data-ttu-id="19c6b-118">パラメーター</span><span class="sxs-lookup"><span data-stu-id="19c6b-118">Parameter</span></span>    | <span data-ttu-id="19c6b-119">型</span><span class="sxs-lookup"><span data-stu-id="19c6b-119">Type</span></span>   |<span data-ttu-id="19c6b-120">説明</span><span class="sxs-lookup"><span data-stu-id="19c6b-120">Description</span></span>|
+| <span data-ttu-id="b5b4d-118">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b5b4d-118">Parameter</span></span>    | <span data-ttu-id="b5b4d-119">型</span><span class="sxs-lookup"><span data-stu-id="b5b4d-119">Type</span></span>   |<span data-ttu-id="b5b4d-120">説明</span><span class="sxs-lookup"><span data-stu-id="b5b4d-120">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="19c6b-121">count</span><span class="sxs-lookup"><span data-stu-id="19c6b-121">count</span></span>|<span data-ttu-id="19c6b-122">Int32</span><span class="sxs-lookup"><span data-stu-id="19c6b-122">Int32</span></span>| <span data-ttu-id="19c6b-p102">省略可能。結果の範囲に含める行の数です。通常、正の数値を使用して現在の範囲外に範囲を作成します。負の数値を使用して、現在の範囲内に範囲を作成することもできます。既定値は 1 です。</span><span class="sxs-lookup"><span data-stu-id="19c6b-p102">Optional. The number of rows to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.</span></span>|
+|<span data-ttu-id="b5b4d-121">count</span><span class="sxs-lookup"><span data-stu-id="b5b4d-121">count</span></span>|<span data-ttu-id="b5b4d-122">Int32</span><span class="sxs-lookup"><span data-stu-id="b5b4d-122">Int32</span></span>| <span data-ttu-id="b5b4d-p102">省略可能。結果の範囲に含める行の数です。通常、正の数値を使用して現在の範囲外に範囲を作成します。負の数値を使用して、現在の範囲内に範囲を作成することもできます。既定値は 1 です。</span><span class="sxs-lookup"><span data-stu-id="b5b4d-p102">Optional. The number of rows to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.</span></span>|
 
-## <a name="request-headers"></a><span data-ttu-id="19c6b-128">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="19c6b-128">Request headers</span></span>
-| <span data-ttu-id="19c6b-129">名前</span><span class="sxs-lookup"><span data-stu-id="19c6b-129">Name</span></span>       | <span data-ttu-id="19c6b-130">説明</span><span class="sxs-lookup"><span data-stu-id="19c6b-130">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="b5b4d-128">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b5b4d-128">Request headers</span></span>
+| <span data-ttu-id="b5b4d-129">名前</span><span class="sxs-lookup"><span data-stu-id="b5b4d-129">Name</span></span>       | <span data-ttu-id="b5b4d-130">説明</span><span class="sxs-lookup"><span data-stu-id="b5b4d-130">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="19c6b-131">Authorization</span><span class="sxs-lookup"><span data-stu-id="19c6b-131">Authorization</span></span>  | <span data-ttu-id="19c6b-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="19c6b-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="19c6b-134">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="19c6b-134">Workbook-Session-Id</span></span>  | <span data-ttu-id="19c6b-p104">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="19c6b-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="b5b4d-131">Authorization</span><span class="sxs-lookup"><span data-stu-id="b5b4d-131">Authorization</span></span>  | <span data-ttu-id="b5b4d-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="b5b4d-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="b5b4d-134">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="b5b4d-134">Workbook-Session-Id</span></span>  | <span data-ttu-id="b5b4d-p104">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="b5b4d-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="19c6b-137">要求本文</span><span class="sxs-lookup"><span data-stu-id="19c6b-137">Request body</span></span>
-<span data-ttu-id="19c6b-138">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="19c6b-138">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b5b4d-137">要求本文</span><span class="sxs-lookup"><span data-stu-id="b5b4d-137">Request body</span></span>
+<span data-ttu-id="b5b4d-138">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="b5b4d-138">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="19c6b-139">応答</span><span class="sxs-lookup"><span data-stu-id="19c6b-139">Response</span></span>
-<span data-ttu-id="19c6b-140">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [workbookRange](../resources/range.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="19c6b-140">If successful, this method returns `200 OK` response code and [workbookRange](../resources/range.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="b5b4d-139">応答</span><span class="sxs-lookup"><span data-stu-id="b5b4d-139">Response</span></span>
+<span data-ttu-id="b5b4d-140">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [workbookRange](../resources/range.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="b5b4d-140">If successful, this method returns `200 OK` response code and [workbookRange](../resources/range.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="19c6b-141">例</span><span class="sxs-lookup"><span data-stu-id="19c6b-141">Example</span></span>
-<span data-ttu-id="19c6b-142">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="19c6b-142">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="19c6b-143">要求</span><span class="sxs-lookup"><span data-stu-id="19c6b-143">Request</span></span>
-<span data-ttu-id="19c6b-144">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="19c6b-144">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="b5b4d-141">例</span><span class="sxs-lookup"><span data-stu-id="b5b4d-141">Example</span></span>
+<span data-ttu-id="b5b4d-142">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="b5b4d-142">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="b5b4d-143">要求</span><span class="sxs-lookup"><span data-stu-id="b5b4d-143">Request</span></span>
+<span data-ttu-id="b5b4d-144">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="b5b4d-144">Here is an example of the request.</span></span>
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -63,8 +63,8 @@ POST /me/drive/root/workbook/worksheets/{id}/range/rowsBelow(count=n)
 POST https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range/rowsBelow(count=2)
 ```
 
-##### <a name="response"></a><span data-ttu-id="19c6b-145">応答</span><span class="sxs-lookup"><span data-stu-id="19c6b-145">Response</span></span>
-<span data-ttu-id="19c6b-p105">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="19c6b-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="b5b4d-145">応答</span><span class="sxs-lookup"><span data-stu-id="b5b4d-145">Response</span></span>
+<span data-ttu-id="b5b4d-p105">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="b5b4d-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -84,21 +84,23 @@ Content-length: 157
   "columnIndex": 99
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="19c6b-149">SDK サンプルコード</span><span class="sxs-lookup"><span data-stu-id="19c6b-149">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="19c6b-150">Visual</span><span class="sxs-lookup"><span data-stu-id="19c6b-150">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="b5b4d-149">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="b5b4d-149">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="b5b4d-150">C#</span><span class="sxs-lookup"><span data-stu-id="b5b4d-150">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/workbookrange_rowsBelow-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="19c6b-151">Java</span><span class="sxs-lookup"><span data-stu-id="19c6b-151">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b5b4d-151">Javascript</span><span class="sxs-lookup"><span data-stu-id="b5b4d-151">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/workbookrange_rowsBelow-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="b5b4d-152">目的-C</span><span class="sxs-lookup"><span data-stu-id="b5b4d-152">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/workbookrange_rowsBelow-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-<span data-ttu-id="19c6b-152">`count`パラメーターを指定せずにこの関数を呼び出すと、既定で1つの行になります。</span><span class="sxs-lookup"><span data-stu-id="19c6b-152">If called without the `count` parameter, this function defaults to one row.</span></span>
+<span data-ttu-id="b5b4d-153">`count`パラメーターを指定せずにこの関数を呼び出すと、既定で1つの行になります。</span><span class="sxs-lookup"><span data-stu-id="b5b4d-153">If called without the `count` parameter, this function defaults to one row.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="19c6b-153">要求</span><span class="sxs-lookup"><span data-stu-id="19c6b-153">Request</span></span>
-<span data-ttu-id="19c6b-154">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="19c6b-154">Here is an example of the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="b5b4d-154">要求</span><span class="sxs-lookup"><span data-stu-id="b5b4d-154">Request</span></span>
+<span data-ttu-id="b5b4d-155">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="b5b4d-155">Here is an example of the request.</span></span>
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -109,8 +111,8 @@ Content-length: 157
 GET https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range/rowsBelow
 ```
 
-##### <a name="response"></a><span data-ttu-id="19c6b-155">応答</span><span class="sxs-lookup"><span data-stu-id="19c6b-155">Response</span></span>
-<span data-ttu-id="19c6b-p106">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="19c6b-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="b5b4d-156">応答</span><span class="sxs-lookup"><span data-stu-id="b5b4d-156">Response</span></span>
+<span data-ttu-id="b5b4d-p106">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="b5b4d-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -129,13 +131,15 @@ Content-type: application/json
   "columnIndex": 99
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="19c6b-159">SDK サンプルコード</span><span class="sxs-lookup"><span data-stu-id="19c6b-159">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="19c6b-160">Visual</span><span class="sxs-lookup"><span data-stu-id="19c6b-160">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="b5b4d-160">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="b5b4d-160">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="b5b4d-161">C#</span><span class="sxs-lookup"><span data-stu-id="b5b4d-161">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/workbookrange_rowsBelow_nocount-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="19c6b-161">Java</span><span class="sxs-lookup"><span data-stu-id="19c6b-161">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b5b4d-162">Javascript</span><span class="sxs-lookup"><span data-stu-id="b5b4d-162">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/workbookrange_rowsBelow_nocount-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="b5b4d-163">目的-C</span><span class="sxs-lookup"><span data-stu-id="b5b4d-163">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/workbookrange_rowsBelow_nocount-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -148,6 +152,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/workbookrange-rowsbelow.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/workbookrange-rowsbelow.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/workbookrange-rowsbelow.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Error: /api-reference/v1.0/api/workbookrange-rowsbelow.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",

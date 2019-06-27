@@ -4,47 +4,47 @@ description: グループ オブジェクトが所有する **plannerPlan** オ�
 localization_priority: Priority
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 66373f7a68280c83c0c7d2a6b38d8c2193fa3f09
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 47541242ad646337dec98ae109d067d3ffcea898
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33608901"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35274215"
 ---
-# <a name="list-plans"></a><span data-ttu-id="c5d1d-103">計画をリストする</span><span class="sxs-lookup"><span data-stu-id="c5d1d-103">List plans</span></span>
+# <a name="list-plans"></a><span data-ttu-id="d4152-103">計画をリストする</span><span class="sxs-lookup"><span data-stu-id="d4152-103">List plans</span></span>
 
-<span data-ttu-id="c5d1d-104">[group](../resources/group.md) オブジェクトが所有する **plannerPlan** オブジェクトのリストを取得します。</span><span class="sxs-lookup"><span data-stu-id="c5d1d-104">Retrieve a list of **plannerPlan** objects owned by a [group](../resources/group.md) object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="c5d1d-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="c5d1d-105">Permissions</span></span>
-<span data-ttu-id="c5d1d-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c5d1d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="d4152-104">[group](../resources/group.md) オブジェクトが所有する **plannerPlan** オブジェクトのリストを取得します。</span><span class="sxs-lookup"><span data-stu-id="d4152-104">Retrieve a list of **plannerPlan** objects owned by a [group](../resources/group.md) object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="d4152-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="d4152-105">Permissions</span></span>
+<span data-ttu-id="d4152-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d4152-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c5d1d-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="c5d1d-108">Permission type</span></span>      | <span data-ttu-id="c5d1d-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="c5d1d-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="d4152-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="d4152-108">Permission type</span></span>      | <span data-ttu-id="d4152-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="d4152-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c5d1d-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="c5d1d-110">Delegated (work or school account)</span></span> | <span data-ttu-id="c5d1d-111">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c5d1d-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="c5d1d-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="c5d1d-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c5d1d-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c5d1d-113">Not supported.</span></span>    |
-|<span data-ttu-id="c5d1d-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="c5d1d-114">Application</span></span> | <span data-ttu-id="c5d1d-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c5d1d-115">Not supported.</span></span> |
+|<span data-ttu-id="d4152-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="d4152-110">Delegated (work or school account)</span></span> | <span data-ttu-id="d4152-111">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d4152-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="d4152-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="d4152-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d4152-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d4152-113">Not supported.</span></span>    |
+|<span data-ttu-id="d4152-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="d4152-114">Application</span></span> | <span data-ttu-id="d4152-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d4152-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c5d1d-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="c5d1d-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d4152-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="d4152-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{group-id}/planner/plans
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="c5d1d-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="c5d1d-117">Request headers</span></span>
-| <span data-ttu-id="c5d1d-118">名前</span><span class="sxs-lookup"><span data-stu-id="c5d1d-118">Name</span></span>      |<span data-ttu-id="c5d1d-119">説明</span><span class="sxs-lookup"><span data-stu-id="c5d1d-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="d4152-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="d4152-117">Request headers</span></span>
+| <span data-ttu-id="d4152-118">名前</span><span class="sxs-lookup"><span data-stu-id="d4152-118">Name</span></span>      |<span data-ttu-id="d4152-119">説明</span><span class="sxs-lookup"><span data-stu-id="d4152-119">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="c5d1d-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="c5d1d-120">Authorization</span></span>  | <span data-ttu-id="c5d1d-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="c5d1d-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="d4152-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="d4152-120">Authorization</span></span>  | <span data-ttu-id="d4152-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="d4152-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="c5d1d-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="c5d1d-123">Request body</span></span>
-<span data-ttu-id="c5d1d-124">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="c5d1d-124">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d4152-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="d4152-123">Request body</span></span>
+<span data-ttu-id="d4152-124">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="d4152-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c5d1d-125">応答</span><span class="sxs-lookup"><span data-stu-id="c5d1d-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d4152-125">応答</span><span class="sxs-lookup"><span data-stu-id="d4152-125">Response</span></span>
 
-<span data-ttu-id="c5d1d-126">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [plannerPlan](../resources/plannerplan.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="c5d1d-126">If successful, this method returns a `200 OK` response code and collection of [plannerPlan](../resources/plannerplan.md) objects in the response body.</span></span>
+<span data-ttu-id="d4152-126">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [plannerPlan](../resources/plannerplan.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="d4152-126">If successful, this method returns a `200 OK` response code and collection of [plannerPlan](../resources/plannerplan.md) objects in the response body.</span></span>
 
-<span data-ttu-id="c5d1d-p103">このメソッドは、いずれかの [HTTP 状態コード](/graph/errors)を返します。このメソッドでアプリが処理する最も一般的なエラーは、403 および 404 応答です。これらのエラーの詳細については、「[一般的なプランナーのエラー条件](../resources/planner-overview.md#common-planner-error-conditions)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c5d1d-p103">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
-## <a name="example"></a><span data-ttu-id="c5d1d-130">例</span><span class="sxs-lookup"><span data-stu-id="c5d1d-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="c5d1d-131">要求</span><span class="sxs-lookup"><span data-stu-id="c5d1d-131">Request</span></span>
-<span data-ttu-id="c5d1d-132">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="c5d1d-132">Here is an example of the request.</span></span>
+<span data-ttu-id="d4152-p103">このメソッドは、いずれかの [HTTP 状態コード](/graph/errors)を返します。このメソッドでアプリが処理する最も一般的なエラーは、403 および 404 応答です。これらのエラーの詳細については、「[一般的なプランナーのエラー条件](../resources/planner-overview.md#common-planner-error-conditions)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d4152-p103">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
+## <a name="example"></a><span data-ttu-id="d4152-130">例</span><span class="sxs-lookup"><span data-stu-id="d4152-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="d4152-131">要求</span><span class="sxs-lookup"><span data-stu-id="d4152-131">Request</span></span>
+<span data-ttu-id="d4152-132">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="d4152-132">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_plans"
@@ -52,8 +52,8 @@ GET /groups/{group-id}/planner/plans
 ```http
 GET https://graph.microsoft.com/v1.0/groups/{group-id}/planner/plans
 ```
-##### <a name="response"></a><span data-ttu-id="c5d1d-133">応答</span><span class="sxs-lookup"><span data-stu-id="c5d1d-133">Response</span></span>
-<span data-ttu-id="c5d1d-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="c5d1d-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="d4152-133">応答</span><span class="sxs-lookup"><span data-stu-id="d4152-133">Response</span></span>
+<span data-ttu-id="d4152-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="d4152-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -84,13 +84,15 @@ Content-length: 421
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="c5d1d-137">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="c5d1d-137">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="c5d1d-138">C#</span><span class="sxs-lookup"><span data-stu-id="c5d1d-138">c</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="d4152-137">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="d4152-137">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="d4152-138">C#</span><span class="sxs-lookup"><span data-stu-id="d4152-138">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_plans-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="c5d1d-139">Javascript</span><span class="sxs-lookup"><span data-stu-id="c5d1d-139">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="d4152-139">Javascript</span><span class="sxs-lookup"><span data-stu-id="d4152-139">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_plans-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="d4152-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d4152-140">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_plans-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -104,6 +106,7 @@ Content-length: 421
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/plannergroup-list-plans.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/plannergroup-list-plans.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/plannergroup-list-plans.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

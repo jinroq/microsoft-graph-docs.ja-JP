@@ -4,32 +4,32 @@ description: ID で timeOff を取得します。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2f1fdd14a155c7113425916081ed38f5745267e2
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 7a77e28817503514ec35fccf7c520a5456440afa
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33637536"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35270561"
 ---
-# <a name="get-timeoff"></a><span data-ttu-id="a1298-103">TimeOff を取得する</span><span class="sxs-lookup"><span data-stu-id="a1298-103">Get timeOff</span></span>
+# <a name="get-timeoff"></a><span data-ttu-id="01cf8-103">TimeOff を取得する</span><span class="sxs-lookup"><span data-stu-id="01cf8-103">Get timeOff</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a1298-104">[Timeoff](../resources/timeoff.md)オブジェクトのプロパティと関係を ID で取得します。</span><span class="sxs-lookup"><span data-stu-id="a1298-104">Retrieve the properties and relationships of a [timeOff](../resources/timeoff.md) object by ID.</span></span>
+<span data-ttu-id="01cf8-104">[Timeoff](../resources/timeoff.md)オブジェクトのプロパティと関係を ID で取得します。</span><span class="sxs-lookup"><span data-stu-id="01cf8-104">Retrieve the properties and relationships of a [timeOff](../resources/timeoff.md) object by ID.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a1298-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="a1298-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="01cf8-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="01cf8-105">Permissions</span></span>
 
-<span data-ttu-id="a1298-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a1298-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="01cf8-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="01cf8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a1298-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="a1298-108">Permission type</span></span>      | <span data-ttu-id="a1298-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="a1298-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="01cf8-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="01cf8-108">Permission type</span></span>      | <span data-ttu-id="01cf8-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="01cf8-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a1298-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="a1298-110">Delegated (work or school account)</span></span> | <span data-ttu-id="a1298-111">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a1298-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="a1298-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="a1298-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a1298-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a1298-113">Not supported.</span></span>    |
-|<span data-ttu-id="a1298-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="a1298-114">Application</span></span> | <span data-ttu-id="a1298-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a1298-115">Not supported.</span></span> |
+|<span data-ttu-id="01cf8-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="01cf8-110">Delegated (work or school account)</span></span> | <span data-ttu-id="01cf8-111">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="01cf8-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="01cf8-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="01cf8-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="01cf8-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="01cf8-113">Not supported.</span></span>    |
+|<span data-ttu-id="01cf8-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="01cf8-114">Application</span></span> | <span data-ttu-id="01cf8-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="01cf8-115">Not supported.</span></span> |
 
-> <span data-ttu-id="a1298-116">**注**: この API は、管理者のアクセス許可をサポートします。</span><span class="sxs-lookup"><span data-stu-id="a1298-116">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="a1298-117">グローバル管理者は、所属していないグループにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="a1298-117">Global admins can access groups that they are not a member of.</span></span>
+> <span data-ttu-id="01cf8-116">**注**: この API は、管理者のアクセス許可をサポートします。</span><span class="sxs-lookup"><span data-stu-id="01cf8-116">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="01cf8-117">グローバル管理者は、所属していないグループにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="01cf8-117">Global admins can access groups that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="a1298-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="a1298-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="01cf8-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="01cf8-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -37,25 +37,25 @@ ms.locfileid: "33637536"
 GET /teams/{teamId}/schedule/timesOff/{timeOffId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="a1298-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="a1298-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="01cf8-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="01cf8-119">Request headers</span></span>
 
-| <span data-ttu-id="a1298-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="a1298-120">Header</span></span>       | <span data-ttu-id="a1298-121">値</span><span class="sxs-lookup"><span data-stu-id="a1298-121">Value</span></span> |
+| <span data-ttu-id="01cf8-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="01cf8-120">Header</span></span>       | <span data-ttu-id="01cf8-121">値</span><span class="sxs-lookup"><span data-stu-id="01cf8-121">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="a1298-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="a1298-122">Authorization</span></span>  | <span data-ttu-id="a1298-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="a1298-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="a1298-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="a1298-125">Content-Type</span></span>  | <span data-ttu-id="a1298-126">application/json</span><span class="sxs-lookup"><span data-stu-id="a1298-126">application/json</span></span>  |
+| <span data-ttu-id="01cf8-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="01cf8-122">Authorization</span></span>  | <span data-ttu-id="01cf8-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="01cf8-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="01cf8-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="01cf8-125">Content-Type</span></span>  | <span data-ttu-id="01cf8-126">application/json</span><span class="sxs-lookup"><span data-stu-id="01cf8-126">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="a1298-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="a1298-127">Request body</span></span>
-<span data-ttu-id="a1298-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="a1298-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="01cf8-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="01cf8-127">Request body</span></span>
+<span data-ttu-id="01cf8-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="01cf8-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a1298-129">応答</span><span class="sxs-lookup"><span data-stu-id="a1298-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="01cf8-129">応答</span><span class="sxs-lookup"><span data-stu-id="01cf8-129">Response</span></span>
 
-<span data-ttu-id="a1298-130">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[timeoff](../resources/timeoff.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="a1298-130">If successful, this method returns a `200 OK` response code and a [timeOff](../resources/timeoff.md) object in the response body.</span></span>
+<span data-ttu-id="01cf8-130">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[timeoff](../resources/timeoff.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="01cf8-130">If successful, this method returns a `200 OK` response code and a [timeOff](../resources/timeoff.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a1298-131">例</span><span class="sxs-lookup"><span data-stu-id="a1298-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="01cf8-131">例</span><span class="sxs-lookup"><span data-stu-id="01cf8-131">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="a1298-132">要求</span><span class="sxs-lookup"><span data-stu-id="a1298-132">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="01cf8-132">要求</span><span class="sxs-lookup"><span data-stu-id="01cf8-132">Request</span></span>
 
-<span data-ttu-id="a1298-133">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="a1298-133">The following is an example of the request.</span></span>
+<span data-ttu-id="01cf8-133">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="01cf8-133">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "timeoff-get"
@@ -64,11 +64,11 @@ GET /teams/{teamId}/schedule/timesOff/{timeOffId}
 GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timesOff/{timeOffId}
 ```
 
-#### <a name="response"></a><span data-ttu-id="a1298-134">応答</span><span class="sxs-lookup"><span data-stu-id="a1298-134">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="01cf8-134">応答</span><span class="sxs-lookup"><span data-stu-id="01cf8-134">Response</span></span>
 
-<span data-ttu-id="a1298-135">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="a1298-135">The following is an example of the response.</span></span> 
+<span data-ttu-id="01cf8-135">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="01cf8-135">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="a1298-p104">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="a1298-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="01cf8-p104">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="01cf8-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -107,13 +107,15 @@ Content-length: 401
   }
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="a1298-138">SDK サンプルコード</span><span class="sxs-lookup"><span data-stu-id="a1298-138">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="a1298-139">Visual</span><span class="sxs-lookup"><span data-stu-id="a1298-139">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="01cf8-138">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="01cf8-138">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="01cf8-139">C#</span><span class="sxs-lookup"><span data-stu-id="01cf8-139">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/timeoff-get-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a1298-140">Java</span><span class="sxs-lookup"><span data-stu-id="a1298-140">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="01cf8-140">Javascript</span><span class="sxs-lookup"><span data-stu-id="01cf8-140">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/timeoff-get-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="01cf8-141">目的-C</span><span class="sxs-lookup"><span data-stu-id="01cf8-141">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/timeoff-get-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -128,6 +130,7 @@ Content-length: 401
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/timeoff-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/timeoff-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/timeoff-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

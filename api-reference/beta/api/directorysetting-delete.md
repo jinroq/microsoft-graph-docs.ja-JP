@@ -4,53 +4,53 @@ description: ディレクトリ設定を削除します。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f9bfe5e012e88780fbeba50e58f53d7a55b42883
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.openlocfilehash: 8351d3611f60cc8f4a3422d9b45f2ba22db9980b
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34655839"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35260593"
 ---
-# <a name="delete-a-directory-setting"></a><span data-ttu-id="fefb5-103">ディレクトリ設定を削除する</span><span class="sxs-lookup"><span data-stu-id="fefb5-103">Delete a directory setting</span></span>
+# <a name="delete-a-directory-setting"></a><span data-ttu-id="37e24-103">ディレクトリ設定を削除する</span><span class="sxs-lookup"><span data-stu-id="37e24-103">Delete a directory setting</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="fefb5-104">ディレクトリ設定を削除します。</span><span class="sxs-lookup"><span data-stu-id="fefb5-104">Delete a directory setting.</span></span>
+<span data-ttu-id="37e24-104">ディレクトリ設定を削除します。</span><span class="sxs-lookup"><span data-stu-id="37e24-104">Delete a directory setting.</span></span>
 
-> <span data-ttu-id="fefb5-105">**注**: この API のベータ版は、グループにのみ適用されます。</span><span class="sxs-lookup"><span data-stu-id="fefb5-105">**Note**: The /beta version of this API is only applies to groups.</span></span> <span data-ttu-id="fefb5-106">この API の/v1.0 バージョンは、 *groupSettings を削除*する名前に変更されました。</span><span class="sxs-lookup"><span data-stu-id="fefb5-106">The /v1.0 version of this API has been renamed to *Delete groupSettings*.</span></span>
+> <span data-ttu-id="37e24-105">**注**: この API のベータ版は、グループにのみ適用されます。</span><span class="sxs-lookup"><span data-stu-id="37e24-105">**Note**: The /beta version of this API is only applies to groups.</span></span> <span data-ttu-id="37e24-106">この API の/v1.0 バージョンは、 *groupSettings を削除*する名前に変更されました。</span><span class="sxs-lookup"><span data-stu-id="37e24-106">The /v1.0 version of this API has been renamed to *Delete groupSettings*.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="fefb5-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="fefb5-107">Permissions</span></span>
-<span data-ttu-id="fefb5-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="fefb5-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="37e24-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="37e24-107">Permissions</span></span>
+<span data-ttu-id="37e24-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="37e24-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="fefb5-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="fefb5-110">Permission type</span></span>      | <span data-ttu-id="fefb5-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="fefb5-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="37e24-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="37e24-110">Permission type</span></span>      | <span data-ttu-id="37e24-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="37e24-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="fefb5-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="fefb5-112">Delegated (work or school account)</span></span> | <span data-ttu-id="fefb5-113">Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="fefb5-113">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="fefb5-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="fefb5-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fefb5-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="fefb5-115">Not supported.</span></span>    |
-|<span data-ttu-id="fefb5-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="fefb5-116">Application</span></span> | <span data-ttu-id="fefb5-117">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fefb5-117">Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="37e24-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="37e24-112">Delegated (work or school account)</span></span> | <span data-ttu-id="37e24-113">Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="37e24-113">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="37e24-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="37e24-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="37e24-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="37e24-115">Not supported.</span></span>    |
+|<span data-ttu-id="37e24-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="37e24-116">Application</span></span> | <span data-ttu-id="37e24-117">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="37e24-117">Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="fefb5-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="fefb5-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="37e24-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="37e24-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
-<span data-ttu-id="fefb5-119">特定のテナント全体またはグループ設定を削除する</span><span class="sxs-lookup"><span data-stu-id="fefb5-119">Delete a specific tenant-wide or group setting</span></span>
+<span data-ttu-id="37e24-119">特定のテナント全体またはグループ設定を削除する</span><span class="sxs-lookup"><span data-stu-id="37e24-119">Delete a specific tenant-wide or group setting</span></span>
 ```http
 DELETE /settings/{id}
 DELETE /groups/{id}/settings/{id}
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="fefb5-120">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="fefb5-120">Request headers</span></span>
-| <span data-ttu-id="fefb5-121">名前</span><span class="sxs-lookup"><span data-stu-id="fefb5-121">Name</span></span>       | <span data-ttu-id="fefb5-122">説明</span><span class="sxs-lookup"><span data-stu-id="fefb5-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="37e24-120">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="37e24-120">Request headers</span></span>
+| <span data-ttu-id="37e24-121">名前</span><span class="sxs-lookup"><span data-stu-id="37e24-121">Name</span></span>       | <span data-ttu-id="37e24-122">説明</span><span class="sxs-lookup"><span data-stu-id="37e24-122">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="fefb5-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="fefb5-123">Authorization</span></span>  | <span data-ttu-id="fefb5-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="fefb5-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="37e24-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="37e24-123">Authorization</span></span>  | <span data-ttu-id="37e24-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="37e24-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="fefb5-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="fefb5-126">Request body</span></span>
-<span data-ttu-id="fefb5-127">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="fefb5-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="37e24-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="37e24-126">Request body</span></span>
+<span data-ttu-id="37e24-127">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="37e24-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="fefb5-128">応答</span><span class="sxs-lookup"><span data-stu-id="fefb5-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="37e24-128">応答</span><span class="sxs-lookup"><span data-stu-id="37e24-128">Response</span></span>
 
-<span data-ttu-id="fefb5-p104">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="fefb5-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="37e24-p104">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="37e24-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="fefb5-131">例</span><span class="sxs-lookup"><span data-stu-id="fefb5-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="fefb5-132">要求</span><span class="sxs-lookup"><span data-stu-id="fefb5-132">Request</span></span>
-<span data-ttu-id="fefb5-133">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="fefb5-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="37e24-131">例</span><span class="sxs-lookup"><span data-stu-id="37e24-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="37e24-132">要求</span><span class="sxs-lookup"><span data-stu-id="37e24-132">Request</span></span>
+<span data-ttu-id="37e24-133">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="37e24-133">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_directorysetting"
@@ -58,7 +58,7 @@ DELETE /groups/{id}/settings/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/settings/{id}
 ```
-##### <a name="response"></a><span data-ttu-id="fefb5-134">応答</span><span class="sxs-lookup"><span data-stu-id="fefb5-134">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="37e24-134">応答</span><span class="sxs-lookup"><span data-stu-id="37e24-134">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -66,13 +66,15 @@ DELETE https://graph.microsoft.com/beta/settings/{id}
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="fefb5-135">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="fefb5-135">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="fefb5-136">C#</span><span class="sxs-lookup"><span data-stu-id="fefb5-136">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="37e24-135">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="37e24-135">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="37e24-136">C#</span><span class="sxs-lookup"><span data-stu-id="37e24-136">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/delete_directorysetting-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="fefb5-137">Javascript</span><span class="sxs-lookup"><span data-stu-id="fefb5-137">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="37e24-137">Javascript</span><span class="sxs-lookup"><span data-stu-id="37e24-137">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/delete_directorysetting-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="37e24-138">目的-C</span><span class="sxs-lookup"><span data-stu-id="37e24-138">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/delete_directorysetting-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -87,6 +89,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/directorysetting-delete.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/directorysetting-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/directorysetting-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
