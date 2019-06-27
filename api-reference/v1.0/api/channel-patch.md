@@ -4,12 +4,12 @@ description: 指定したチャネルのプロパティを更新します。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4c3a03aaab52da62f56ca376035e56a9b8584832
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b101b964d166ffd2a757a2c461f019c107d5db7b
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32565577"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35273704"
 ---
 # <a name="patch-channel"></a>パッチチャネル
 
@@ -17,7 +17,7 @@ ms.locfileid: "32565577"
 
 指定した[チャネル](../resources/channel.md)のプロパティを更新します。
 
-> **注**: アプリケーションのアクセス許可とこの API には、既知の問題があります。 詳細については、[既知の問題リスト](/graph/known-issues#application-permissions)を参照してください。
+> **注**: アプリケーションのアクセス許可とこの API には既知の問題があります。 詳細については、「[既知の問題の一覧](/graph/known-issues#application-permissions)」を参照してください。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -42,7 +42,7 @@ PATCH /teams/{id}/channels/{id}
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>要求本文
-要求本文で、 [channel](../resources/channel.md)オブジェクトの JSON 表記を指定します。
+要求本文で、[チャンネル](../resources/channel.md) オブジェクトの JSON 表記を指定します。
 
 ## <a name="response"></a>応答
 
@@ -75,6 +75,14 @@ Content-length: 201
     "displayName": "display-name-value",
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+
+# <a name="objective-ctabobjective-c"></a>[目的-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/patch_channel-Objective-C-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -83,5 +91,8 @@ Content-length: 201
   "description": "Patch channel",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/channel-patch.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)"
+  ]
 }-->

@@ -4,12 +4,12 @@ description: スレッドに以降の投稿を許可あるいは拒否するた�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: a4f09f77c5f11a0933956dd60c9b15ff6be3116f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ff54dd758374700d2dd3b64bfc9354761741c7cc
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32564093"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35275692"
 ---
 # <a name="update-conversationthread"></a>Update conversationthread
 
@@ -41,7 +41,7 @@ PATCH /groups/{id}/conversations/{id}/threads/{id}
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|resource.islocked|ブール値|スレッドがロックされているかどうかを示します。転記を禁止するために `true` に設定します。|
+|Resource.islocked|ブール値|スレッドがロックされているかどうかを示します。転記を禁止するために `true` に設定します。|
 
 ## <a name="response"></a>応答
 
@@ -101,6 +101,18 @@ Content-length: 419
   "isLocked": true 
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_conversationthread-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_conversationthread-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[目的-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_conversationthread-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -109,5 +121,10 @@ Content-length: 419
   "description": "Update conversationthread",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/conversationthread-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/conversationthread-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/conversationthread-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

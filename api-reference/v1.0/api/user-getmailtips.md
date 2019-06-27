@@ -4,16 +4,14 @@ description: サインインしているユーザーが使用できる1人以上
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 872bcdd92208f008a7e59223ad4fd6ee8ba316e4
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: f4fe8a0f4f23f1042a2aeb5c756394eea6dc28b5
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33602139"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35277988"
 ---
 # <a name="user-getmailtips"></a>ユーザー: getMailTips ヒント
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 サインインしている[ユーザー](../resources/user.md)が使用できる1人以上の受信者のメールヒントを取得します。
 
@@ -47,7 +45,7 @@ POST /users/{id|userPrincipalName}/getMailTips
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|EmailAddresses|String collection|メール ヒントを取得する受信者の SMTP アドレスのコレクションです。|
+|EmailAddresses|文字列コレクション|メール ヒントを取得する受信者の SMTP アドレスのコレクションです。|
 |MailTipsOptions|String|要求されたメールヒントを表すフラグの列挙。 可能な値は`automaticReplies`、 `customMailTip`、 `deliveryRestriction` `externalMemberCount` `mailboxFullStatus` `maxMessageSize` `moderationStatus` `recipientScope`、、、、、、、、および`totalMemberCount` `recipientSuggestions`です。|
 
 ## <a name="response"></a>応答
@@ -62,7 +60,7 @@ POST /users/{id|userPrincipalName}/getMailTips
   "name": "user_getmailtips"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/getMailTips
+POST https://graph.microsoft.com/v1.0/me/getMailTips
 Content-Type: application/json
 
 {
@@ -87,7 +85,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.mailTips)",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.mailTips)",
     "value":[
         {
             "emailAddress":{
@@ -125,29 +123,30 @@ Content-type: application/json
 }
 
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/user_getmailtips-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/user_getmailtips-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目的-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/user_getmailtips-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "user: getMailTips",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/user-getmailtips.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/user-getmailtips.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/v1.0/api/user-getmailtips.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/user-getmailtips.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/user-getmailtips.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-}
--->
+}-->
