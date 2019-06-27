@@ -1,19 +1,19 @@
 ---
 title: アラートを取得する
-description: " alert オブジェクトのプロパティと関係を取得します。"
+description: " Alert オブジェクトのプロパティと関係を取得します。"
 author: preetikr
 localization_priority: Normal
 ms.prod: security
-ms.openlocfilehash: 36629363a3f55a654554dcbbde8bfdc113de1f37
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0fab817aca955f7829237249ae7370c11a0a4a8a
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551443"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35273753"
 ---
 # <a name="get-alert"></a>アラートを取得する
 
- [alert](../resources/alert.md)オブジェクトのプロパティと関係を取得します。
+ [Alert](../resources/alert.md)オブジェクトのプロパティと関係を取得します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -21,9 +21,9 @@ ms.locfileid: "32551443"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) |  securityevents. all、securityevents、ReadWrite   |
+|委任 (職場または学校のアカウント) |  SecurityEvents.Read.All、SecurityEvents.ReadWrite.All   |
 |委任 (個人用 Microsoft アカウント) |  サポートされていません。  |
-|アプリケーション | securityevents. all、securityevents、ReadWrite |
+|アプリケーション | SecurityEvents.Read.All、SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -45,7 +45,7 @@ GET /security/alerts/{alert_id}
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッド`200 OK`は応答コードと、応答本文で**alert**オブジェクトを返します。 2xx または404以外の状態コードがプロバイダーから返された場合、またはプロバイダーがタイムアウトになった場合は`206 Partial Content` 、応答は、警告ヘッダー内のプロバイダーの応答と共に状態コードになります。 詳細については、「 [Microsoft Graph セキュリティ API のエラー応答](../resources/security-error-codes.md)」を参照してください。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で**alert**オブジェクトを返します。 プロバイダーから 2xx または 404 以外の状態コードが返されるか、プロバイダーがタイムアウトした場合、応答は、警告ヘッダー内のプロバイダーの応答と共に状態コード `206 Partial Content` になります。 詳細については、「[Microsoft グラフ セキュリティ API のエラー応答](../resources/security-error-codes.md)」を参照してください。
 
 ## <a name="example"></a>例
 
@@ -231,6 +231,18 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_alert-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_alert-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[目的-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_alert-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -239,5 +251,10 @@ Content-type: application/json
   "description": "Get glert",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/alert-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/alert-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/alert-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->
