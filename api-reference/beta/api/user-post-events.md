@@ -4,52 +4,52 @@ description: ユーザーの既定の予定表または指定した予定表で�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 263d4771b140c5383642f8a67347ba3d04a5703b
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 7f392851f6aec619310e1fa83de836e51af8cf72
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33637103"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35269498"
 ---
-# <a name="create-event"></a><span data-ttu-id="71c22-103">イベントを作成する</span><span class="sxs-lookup"><span data-stu-id="71c22-103">Create Event</span></span>
+# <a name="create-event"></a><span data-ttu-id="1a11b-103">イベントを作成する</span><span class="sxs-lookup"><span data-stu-id="1a11b-103">Create Event</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="71c22-104">ユーザーの既定の予定表または指定した予定表で[イベント](../resources/event.md)を作成します。</span><span class="sxs-lookup"><span data-stu-id="71c22-104">Create an [event](../resources/event.md) in the user's default calendar or specified calendar.</span></span>
+<span data-ttu-id="1a11b-104">ユーザーの既定の予定表または指定した予定表で[イベント](../resources/event.md)を作成します。</span><span class="sxs-lookup"><span data-stu-id="1a11b-104">Create an [event](../resources/event.md) in the user's default calendar or specified calendar.</span></span>
 
-<span data-ttu-id="71c22-105">**start** と **end** プロパティの型が [dateTimeTimeZone](../resources/datetimetimezone.md) であるため、これらの値の一部としてイベントの開始時刻と終了時刻のそれぞれにタイム ゾーンを指定できます。</span><span class="sxs-lookup"><span data-stu-id="71c22-105">You can specify the time zone for each of the start and end times of the event as part of these values, as the **start** and **end** properties are of [dateTimeTimeZone](../resources/datetimetimezone.md) type.</span></span>
+<span data-ttu-id="1a11b-105">**start** と **end** プロパティの型が [dateTimeTimeZone](../resources/datetimetimezone.md) であるため、これらの値の一部としてイベントの開始時刻と終了時刻のそれぞれにタイム ゾーンを指定できます。</span><span class="sxs-lookup"><span data-stu-id="1a11b-105">You can specify the time zone for each of the start and end times of the event as part of these values, as the **start** and **end** properties are of [dateTimeTimeZone](../resources/datetimetimezone.md) type.</span></span>
 
-<span data-ttu-id="71c22-106">イベントが送信されるとき、サーバーは出席者全員に招待状を送信します。</span><span class="sxs-lookup"><span data-stu-id="71c22-106">When an event is sent, the server sends invitations to all the attendees.</span></span>
+<span data-ttu-id="1a11b-106">イベントが送信されるとき、サーバーは出席者全員に招待状を送信します。</span><span class="sxs-lookup"><span data-stu-id="1a11b-106">When an event is sent, the server sends invitations to all the attendees.</span></span>
 
-<span data-ttu-id="71c22-107">**イベントでの場所を設定する**</span><span class="sxs-lookup"><span data-stu-id="71c22-107">**Setting the location in an event**</span></span>
+<span data-ttu-id="1a11b-107">**イベントでの場所を設定する**</span><span class="sxs-lookup"><span data-stu-id="1a11b-107">**Setting the location in an event**</span></span>
 
-<span data-ttu-id="71c22-108">Exchange 管理者は、会議室などのリソースや、プロジェクターなどの機器用のメールボックスと電子メール アドレスを設定できます。</span><span class="sxs-lookup"><span data-stu-id="71c22-108">An Exchange administrator can set up a mailbox and an email address for a resource such as a meeting room, or equipment like a projector.</span></span> <span data-ttu-id="71c22-109">そうすると、ユーザーはリソースを参加者として会議に招待できます。</span><span class="sxs-lookup"><span data-stu-id="71c22-109">Users can then invite the resource as an attendee to a meeting.</span></span> <span data-ttu-id="71c22-110">サーバーは、リソースに代わって、リソースの空き時間スケジュールに基づいて会議出席依頼を受諾あるいは拒否します。</span><span class="sxs-lookup"><span data-stu-id="71c22-110">On behalf of the resource, the server accepts or rejects the meeting request based on the free/busy schedule of the resource.</span></span>
-<span data-ttu-id="71c22-111">サーバーがリソースの会議参加を受諾すると、リソースの予定表に会議のイベントが作成されます。</span><span class="sxs-lookup"><span data-stu-id="71c22-111">If the server accepts a meeting for the resource, it creates an event for the meeting in the resource's calendar.</span></span> <span data-ttu-id="71c22-112">会議の予定が変更されると、サーバーはリソースの予定表内のイベントを自動的に更新します。</span><span class="sxs-lookup"><span data-stu-id="71c22-112">If the meeting is rescheduled, the server automatically updates the event in the resource's calendar.</span></span>
+<span data-ttu-id="1a11b-108">Exchange 管理者は、会議室などのリソースや、プロジェクターなどの機器用のメールボックスと電子メール アドレスを設定できます。</span><span class="sxs-lookup"><span data-stu-id="1a11b-108">An Exchange administrator can set up a mailbox and an email address for a resource such as a meeting room, or equipment like a projector.</span></span> <span data-ttu-id="1a11b-109">そうすると、ユーザーはリソースを参加者として会議に招待できます。</span><span class="sxs-lookup"><span data-stu-id="1a11b-109">Users can then invite the resource as an attendee to a meeting.</span></span> <span data-ttu-id="1a11b-110">サーバーは、リソースに代わって、リソースの空き時間スケジュールに基づいて会議出席依頼を受諾あるいは拒否します。</span><span class="sxs-lookup"><span data-stu-id="1a11b-110">On behalf of the resource, the server accepts or rejects the meeting request based on the free/busy schedule of the resource.</span></span>
+<span data-ttu-id="1a11b-111">サーバーがリソースの会議参加を受諾すると、リソースの予定表に会議のイベントが作成されます。</span><span class="sxs-lookup"><span data-stu-id="1a11b-111">If the server accepts a meeting for the resource, it creates an event for the meeting in the resource's calendar.</span></span> <span data-ttu-id="1a11b-112">会議の予定が変更されると、サーバーはリソースの予定表内のイベントを自動的に更新します。</span><span class="sxs-lookup"><span data-stu-id="1a11b-112">If the meeting is rescheduled, the server automatically updates the event in the resource's calendar.</span></span>
 
-<span data-ttu-id="71c22-113">リソースにメールボックスを設定するするもう 1 つの利点は、リソースのスケジュールを管理できることで、たとえば、あるプライベート会議用会議室は役員かその代理人しか予約できないようにできます。</span><span class="sxs-lookup"><span data-stu-id="71c22-113">Another advantage of setting up a mailbox for a resource is to control scheduling of the resource, for example, only executives or their delegates can book a private meeting room.</span></span>
+<span data-ttu-id="1a11b-113">リソースにメールボックスを設定するするもう 1 つの利点は、リソースのスケジュールを管理できることで、たとえば、あるプライベート会議用会議室は役員かその代理人しか予約できないようにできます。</span><span class="sxs-lookup"><span data-stu-id="1a11b-113">Another advantage of setting up a mailbox for a resource is to control scheduling of the resource, for example, only executives or their delegates can book a private meeting room.</span></span>
 
-<span data-ttu-id="71c22-114">会議する場所が必要になるイベントを開催する場合:</span><span class="sxs-lookup"><span data-stu-id="71c22-114">If you're organizing an event that involves a meeting location:</span></span>
+<span data-ttu-id="1a11b-114">会議する場所が必要になるイベントを開催する場合:</span><span class="sxs-lookup"><span data-stu-id="1a11b-114">If you're organizing an event that involves a meeting location:</span></span>
 
-1. <span data-ttu-id="71c22-115">**event** の **location** プロパティを適宜設定します。</span><span class="sxs-lookup"><span data-stu-id="71c22-115">Set the **location** property of the **event** accordingly.</span></span>
-2. <span data-ttu-id="71c22-116">会議場所にメール アドレスがある場合、オプションの **locationEmailAddress** プロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="71c22-116">Set the optional **locationEmailAddress** property if the meeting location has an email address.</span></span>
+1. <span data-ttu-id="1a11b-115">**event** の **location** プロパティを適宜設定します。</span><span class="sxs-lookup"><span data-stu-id="1a11b-115">Set the **location** property of the **event** accordingly.</span></span>
+2. <span data-ttu-id="1a11b-116">会議場所にメール アドレスがある場合、オプションの **locationEmailAddress** プロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="1a11b-116">Set the optional **locationEmailAddress** property if the meeting location has an email address.</span></span>
 
-<span data-ttu-id="71c22-117">さらに、会議の開催場所がリソースとして設定されている場合、あるいはリソースとして設定されている装置がイベントに関わってくる場合は、以下のようにします。</span><span class="sxs-lookup"><span data-stu-id="71c22-117">Additionally, if the meeting location has been set up as a resource, or if the event involves some equipment that has been set up as a resource:</span></span>
+<span data-ttu-id="1a11b-117">さらに、会議の開催場所がリソースとして設定されている場合、あるいはリソースとして設定されている装置がイベントに関わってくる場合は、以下のようにします。</span><span class="sxs-lookup"><span data-stu-id="1a11b-117">Additionally, if the meeting location has been set up as a resource, or if the event involves some equipment that has been set up as a resource:</span></span>
 
-3. <span data-ttu-id="71c22-118">リソースを[出席者](../resources/attendee.md)として招待します。</span><span class="sxs-lookup"><span data-stu-id="71c22-118">Invite the resource as an [attendee](../resources/attendee.md).</span></span>
-4. <span data-ttu-id="71c22-119">出席者の **type** プロパティを `resource` に設定します。</span><span class="sxs-lookup"><span data-stu-id="71c22-119">Set the attendee **type** property as `resource`.</span></span>
-5. <span data-ttu-id="71c22-120">出席者の **emailAddress** をリソースのメール アドレスとして設定します。</span><span class="sxs-lookup"><span data-stu-id="71c22-120">Set the attendee **emailAddress** as the resource email address.</span></span>
+3. <span data-ttu-id="1a11b-118">リソースを[出席者](../resources/attendee.md)として招待します。</span><span class="sxs-lookup"><span data-stu-id="1a11b-118">Invite the resource as an [attendee](../resources/attendee.md).</span></span>
+4. <span data-ttu-id="1a11b-119">出席者の **type** プロパティを `resource` に設定します。</span><span class="sxs-lookup"><span data-stu-id="1a11b-119">Set the attendee **type** property as `resource`.</span></span>
+5. <span data-ttu-id="1a11b-120">出席者の **emailAddress** をリソースのメール アドレスとして設定します。</span><span class="sxs-lookup"><span data-stu-id="1a11b-120">Set the attendee **emailAddress** as the resource email address.</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="71c22-121">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="71c22-121">Permissions</span></span>
-<span data-ttu-id="71c22-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="71c22-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="1a11b-121">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="1a11b-121">Permissions</span></span>
+<span data-ttu-id="1a11b-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1a11b-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="71c22-124">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="71c22-124">Permission type</span></span>      | <span data-ttu-id="71c22-125">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="71c22-125">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="1a11b-124">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="1a11b-124">Permission type</span></span>      | <span data-ttu-id="1a11b-125">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="1a11b-125">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="71c22-126">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="71c22-126">Delegated (work or school account)</span></span> | <span data-ttu-id="71c22-127">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="71c22-127">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="71c22-128">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="71c22-128">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="71c22-129">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="71c22-129">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="71c22-130">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="71c22-130">Application</span></span> | <span data-ttu-id="71c22-131">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="71c22-131">Calendars.ReadWrite</span></span> |
+|<span data-ttu-id="1a11b-126">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="1a11b-126">Delegated (work or school account)</span></span> | <span data-ttu-id="1a11b-127">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1a11b-127">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="1a11b-128">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="1a11b-128">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1a11b-129">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1a11b-129">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="1a11b-130">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="1a11b-130">Application</span></span> | <span data-ttu-id="1a11b-131">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1a11b-131">Calendars.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="71c22-132">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="71c22-132">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1a11b-132">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="1a11b-132">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/events
@@ -61,24 +61,24 @@ POST /users/{id | userPrincipalName}/calendar/events
 POST /me/calendars/{id}/events
 POST /users/{id | userPrincipalName}/calendars/{id}/events
 ```
-## <a name="request-headers"></a><span data-ttu-id="71c22-133">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="71c22-133">Request headers</span></span>
-| <span data-ttu-id="71c22-134">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="71c22-134">Header</span></span>       | <span data-ttu-id="71c22-135">値</span><span class="sxs-lookup"><span data-stu-id="71c22-135">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="1a11b-133">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="1a11b-133">Request headers</span></span>
+| <span data-ttu-id="1a11b-134">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="1a11b-134">Header</span></span>       | <span data-ttu-id="1a11b-135">値</span><span class="sxs-lookup"><span data-stu-id="1a11b-135">Value</span></span> |
 |:-----------|:------|
-| <span data-ttu-id="71c22-136">Authorization</span><span class="sxs-lookup"><span data-stu-id="71c22-136">Authorization</span></span>  | <span data-ttu-id="71c22-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="71c22-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="71c22-139">Content-Type</span><span class="sxs-lookup"><span data-stu-id="71c22-139">Content-Type</span></span>  | <span data-ttu-id="71c22-p104">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="71c22-p104">application/json. Required.</span></span>  |
+| <span data-ttu-id="1a11b-136">Authorization</span><span class="sxs-lookup"><span data-stu-id="1a11b-136">Authorization</span></span>  | <span data-ttu-id="1a11b-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="1a11b-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="1a11b-139">Content-Type</span><span class="sxs-lookup"><span data-stu-id="1a11b-139">Content-Type</span></span>  | <span data-ttu-id="1a11b-p104">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="1a11b-p104">application/json. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="71c22-142">要求本文</span><span class="sxs-lookup"><span data-stu-id="71c22-142">Request body</span></span>
-<span data-ttu-id="71c22-143">要求本文で、[イベント](../resources/event.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="71c22-143">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="1a11b-142">要求本文</span><span class="sxs-lookup"><span data-stu-id="1a11b-142">Request body</span></span>
+<span data-ttu-id="1a11b-143">要求本文で、[イベント](../resources/event.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="1a11b-143">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
 
-<span data-ttu-id="71c22-144">**イベント** リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため、`POST` 操作を使用して、リソースの作成時にカスタム プロパティを独自のデータとともにイベントに追加することができます。</span><span class="sxs-lookup"><span data-stu-id="71c22-144">Since the **event** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the event while creating it.</span></span>
+<span data-ttu-id="1a11b-144">**イベント** リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため、`POST` 操作を使用して、リソースの作成時にカスタム プロパティを独自のデータとともにイベントに追加することができます。</span><span class="sxs-lookup"><span data-stu-id="1a11b-144">Since the **event** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the event while creating it.</span></span>
 
-## <a name="response"></a><span data-ttu-id="71c22-145">応答</span><span class="sxs-lookup"><span data-stu-id="71c22-145">Response</span></span>
+## <a name="response"></a><span data-ttu-id="1a11b-145">応答</span><span class="sxs-lookup"><span data-stu-id="1a11b-145">Response</span></span>
 
-<span data-ttu-id="71c22-146">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で[イベント](../resources/event.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="71c22-146">If successful, this method returns `201 Created` response code and [event](../resources/event.md) object in the response body.</span></span>
+<span data-ttu-id="1a11b-146">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で[イベント](../resources/event.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="1a11b-146">If successful, this method returns `201 Created` response code and [event](../resources/event.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="71c22-147">例</span><span class="sxs-lookup"><span data-stu-id="71c22-147">Example</span></span>
-##### <a name="request-1"></a><span data-ttu-id="71c22-148">要求 1</span><span class="sxs-lookup"><span data-stu-id="71c22-148">Request 1</span></span>
-<span data-ttu-id="71c22-149">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="71c22-149">Here is an example of the request.</span></span> <span data-ttu-id="71c22-150">`Prefer: outlook.timezone` 要求ヘッダーを使用して、応答の**開始**時刻と**終了**時刻に対するタイム ゾーンを指定します。</span><span class="sxs-lookup"><span data-stu-id="71c22-150">It uses the `Prefer: outlook.timezone` request header to specify the time zone for the **start** and **end** times in the response.</span></span>
+## <a name="example"></a><span data-ttu-id="1a11b-147">例</span><span class="sxs-lookup"><span data-stu-id="1a11b-147">Example</span></span>
+##### <a name="request-1"></a><span data-ttu-id="1a11b-148">要求 1</span><span class="sxs-lookup"><span data-stu-id="1a11b-148">Request 1</span></span>
+<span data-ttu-id="1a11b-149">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="1a11b-149">Here is an example of the request.</span></span> <span data-ttu-id="1a11b-150">`Prefer: outlook.timezone` 要求ヘッダーを使用して、応答の**開始**時刻と**終了**時刻に対するタイム ゾーンを指定します。</span><span class="sxs-lookup"><span data-stu-id="1a11b-150">It uses the `Prefer: outlook.timezone` request header to specify the time zone for the **start** and **end** times in the response.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_event_from_user"
@@ -117,10 +117,10 @@ Content-length: 600
   ]
 }
 ```
-<span data-ttu-id="71c22-151">要求本文で、[イベント](../resources/event.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="71c22-151">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
-##### <a name="response-1"></a><span data-ttu-id="71c22-152">応答 1</span><span class="sxs-lookup"><span data-stu-id="71c22-152">Response 1</span></span>
-<span data-ttu-id="71c22-153">この応答の例には、`Prefer: outlook.timezone` ヘッダーに指定されているタイム ゾーンを使用した **start** および **end** プロパティが示されています。</span><span class="sxs-lookup"><span data-stu-id="71c22-153">Here is an example of the response, which shows the **start** and **end** properties use the time zone specified in the `Prefer: outlook.timezone` header.</span></span>
-<span data-ttu-id="71c22-154">注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。</span><span class="sxs-lookup"><span data-stu-id="71c22-154">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="71c22-155">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="71c22-155">All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="1a11b-151">要求本文で、[イベント](../resources/event.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="1a11b-151">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
+##### <a name="response-1"></a><span data-ttu-id="1a11b-152">応答 1</span><span class="sxs-lookup"><span data-stu-id="1a11b-152">Response 1</span></span>
+<span data-ttu-id="1a11b-153">この応答の例には、`Prefer: outlook.timezone` ヘッダーに指定されているタイム ゾーンを使用した **start** および **end** プロパティが示されています。</span><span class="sxs-lookup"><span data-stu-id="1a11b-153">Here is an example of the response, which shows the **start** and **end** properties use the time zone specified in the `Prefer: outlook.timezone` header.</span></span>
+<span data-ttu-id="1a11b-154">注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。</span><span class="sxs-lookup"><span data-stu-id="1a11b-154">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="1a11b-155">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="1a11b-155">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "create_event_from_user",
@@ -212,22 +212,24 @@ Content-length: 2197
     }
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="71c22-156">SDK サンプルコード</span><span class="sxs-lookup"><span data-stu-id="71c22-156">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="71c22-157">Visual</span><span class="sxs-lookup"><span data-stu-id="71c22-157">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="1a11b-156">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="1a11b-156">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="1a11b-157">C#</span><span class="sxs-lookup"><span data-stu-id="1a11b-157">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/create_event_from_user-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="71c22-158">Java</span><span class="sxs-lookup"><span data-stu-id="71c22-158">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="1a11b-158">Javascript</span><span class="sxs-lookup"><span data-stu-id="1a11b-158">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_event_from_user-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="1a11b-159">目的-C</span><span class="sxs-lookup"><span data-stu-id="1a11b-159">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create_event_from_user-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
-##### <a name="request-2"></a><span data-ttu-id="71c22-159">要求 2</span><span class="sxs-lookup"><span data-stu-id="71c22-159">Request 2</span></span>
-<span data-ttu-id="71c22-160">次の要求の例では、3 つの場所を指定して、開催者と出席者がこれらの場所から会議に参加できるようにします。</span><span class="sxs-lookup"><span data-stu-id="71c22-160">The next example request specifies 3 locations where the organizer and attendees can attend the meeting from.</span></span>
+##### <a name="request-2"></a><span data-ttu-id="1a11b-160">要求 2</span><span class="sxs-lookup"><span data-stu-id="1a11b-160">Request 2</span></span>
+<span data-ttu-id="1a11b-161">次の要求の例では、3 つの場所を指定して、開催者と出席者がこれらの場所から会議に参加できるようにします。</span><span class="sxs-lookup"><span data-stu-id="1a11b-161">The next example request specifies 3 locations where the organizer and attendees can attend the meeting from.</span></span>
 
-<span data-ttu-id="71c22-161">要求本文で、[イベント](../resources/event.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="71c22-161">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
+<span data-ttu-id="1a11b-162">要求本文で、[イベント](../resources/event.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="1a11b-162">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_event_from_user_multiple_locations"
@@ -298,9 +300,9 @@ Content-length: 1390
 }
 ```
 
-##### <a name="response-2"></a><span data-ttu-id="71c22-162">応答 2</span><span class="sxs-lookup"><span data-stu-id="71c22-162">Response 2</span></span>
-<span data-ttu-id="71c22-163">次の応答の例には、会議の 3 つの場所に関する情報を指定する、作成されたイベントが示されています。</span><span class="sxs-lookup"><span data-stu-id="71c22-163">The following example response shows the created event that specifies information for the 3 locations for the meeting.</span></span> <span data-ttu-id="71c22-164">`Prefer: outlook.timezone="Pacific Standard Time"` 要求ヘッダーにより、**start** および **end** プロパティは PST で表記されています。</span><span class="sxs-lookup"><span data-stu-id="71c22-164">Because of the `Prefer: outlook.timezone="Pacific Standard Time"` request header, the **start** and **end** properties are expressed in PST.</span></span>
-<span data-ttu-id="71c22-165">注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。</span><span class="sxs-lookup"><span data-stu-id="71c22-165">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="71c22-166">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="71c22-166">All of the properties will be returned from an actual call.</span></span>
+##### <a name="response-2"></a><span data-ttu-id="1a11b-163">応答 2</span><span class="sxs-lookup"><span data-stu-id="1a11b-163">Response 2</span></span>
+<span data-ttu-id="1a11b-164">次の応答の例には、会議の 3 つの場所に関する情報を指定する、作成されたイベントが示されています。</span><span class="sxs-lookup"><span data-stu-id="1a11b-164">The following example response shows the created event that specifies information for the 3 locations for the meeting.</span></span> <span data-ttu-id="1a11b-165">`Prefer: outlook.timezone="Pacific Standard Time"` 要求ヘッダーにより、**start** および **end** プロパティは PST で表記されています。</span><span class="sxs-lookup"><span data-stu-id="1a11b-165">Because of the `Prefer: outlook.timezone="Pacific Standard Time"` request header, the **start** and **end** properties are expressed in PST.</span></span>
+<span data-ttu-id="1a11b-166">注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。</span><span class="sxs-lookup"><span data-stu-id="1a11b-166">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="1a11b-167">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="1a11b-167">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "create_event_from_user_multiple_locations",
@@ -426,20 +428,22 @@ Content-length: 2985
   }
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="71c22-167">SDK サンプルコード</span><span class="sxs-lookup"><span data-stu-id="71c22-167">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="71c22-168">Visual</span><span class="sxs-lookup"><span data-stu-id="71c22-168">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="1a11b-168">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="1a11b-168">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="1a11b-169">C#</span><span class="sxs-lookup"><span data-stu-id="1a11b-169">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/create_event_from_user_multiple_locations-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="71c22-169">Java</span><span class="sxs-lookup"><span data-stu-id="71c22-169">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="1a11b-170">Javascript</span><span class="sxs-lookup"><span data-stu-id="1a11b-170">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_event_from_user_multiple_locations-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="1a11b-171">目的-C</span><span class="sxs-lookup"><span data-stu-id="1a11b-171">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create_event_from_user_multiple_locations-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
-##### <a name="request-3"></a><span data-ttu-id="71c22-170">要求 3</span><span class="sxs-lookup"><span data-stu-id="71c22-170">Request 3</span></span>
-<span data-ttu-id="71c22-171">3 つ目の例は、定期的なイベントを作成する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="71c22-171">The third example shows how to create a recurring event.</span></span> <span data-ttu-id="71c22-172">このイベントは、2017 年 9 月 4 日から年末まで、毎週月曜日の午後 0:00 から午後 2:00 に発生します。</span><span class="sxs-lookup"><span data-stu-id="71c22-172">The event occurs from 12:00pm to 2:00pm, every Monday starting September 4, 2017, through the end of the year.</span></span>
+##### <a name="request-3"></a><span data-ttu-id="1a11b-172">要求 3</span><span class="sxs-lookup"><span data-stu-id="1a11b-172">Request 3</span></span>
+<span data-ttu-id="1a11b-173">3 つ目の例は、定期的なイベントを作成する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="1a11b-173">The third example shows how to create a recurring event.</span></span> <span data-ttu-id="1a11b-174">このイベントは、2017 年 9 月 4 日から年末まで、毎週月曜日の午後 0:00 から午後 2:00 に発生します。</span><span class="sxs-lookup"><span data-stu-id="1a11b-174">The event occurs from 12:00pm to 2:00pm, every Monday starting September 4, 2017, through the end of the year.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_event_recurring"
@@ -488,9 +492,9 @@ Content-type: application/json
   ]
 }
 ```
-<span data-ttu-id="71c22-173">要求本文で、[イベント](../resources/event.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="71c22-173">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
-##### <a name="response-3"></a><span data-ttu-id="71c22-174">応答 3</span><span class="sxs-lookup"><span data-stu-id="71c22-174">Response 3</span></span>
-<span data-ttu-id="71c22-p109">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="71c22-p109">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="1a11b-175">要求本文で、[イベント](../resources/event.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="1a11b-175">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
+##### <a name="response-3"></a><span data-ttu-id="1a11b-176">応答 3</span><span class="sxs-lookup"><span data-stu-id="1a11b-176">Response 3</span></span>
+<span data-ttu-id="1a11b-p109">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="1a11b-p109">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "create_event_recurring",
@@ -601,13 +605,15 @@ Content-type: application/json
     "OnlineMeeting":null
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="71c22-178">SDK サンプルコード</span><span class="sxs-lookup"><span data-stu-id="71c22-178">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="71c22-179">Visual</span><span class="sxs-lookup"><span data-stu-id="71c22-179">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="1a11b-180">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="1a11b-180">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="1a11b-181">C#</span><span class="sxs-lookup"><span data-stu-id="1a11b-181">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/create_event_recurring-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="71c22-180">Java</span><span class="sxs-lookup"><span data-stu-id="71c22-180">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="1a11b-182">Javascript</span><span class="sxs-lookup"><span data-stu-id="1a11b-182">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_event_recurring-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="1a11b-183">目的-C</span><span class="sxs-lookup"><span data-stu-id="1a11b-183">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create_event_recurring-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -615,11 +621,11 @@ Content-type: application/json
 
 
 
-## <a name="see-also"></a><span data-ttu-id="71c22-181">関連項目</span><span class="sxs-lookup"><span data-stu-id="71c22-181">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="1a11b-184">関連項目</span><span class="sxs-lookup"><span data-stu-id="1a11b-184">See also</span></span>
 
-- [<span data-ttu-id="71c22-182">拡張機能を使用してカスタム データをリソースに追加する</span><span class="sxs-lookup"><span data-stu-id="71c22-182">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
-- [<span data-ttu-id="71c22-183">オープン拡張機能を使用してカスタム データをユーザーに追加する</span><span class="sxs-lookup"><span data-stu-id="71c22-183">Add custom data to users using open extensions</span></span>](/graph/extensibility-open-users)
-- [<span data-ttu-id="71c22-184">スキーマ拡張機能を使用したグループへのカスタム データの追加</span><span class="sxs-lookup"><span data-stu-id="71c22-184">Add custom data to groups using schema extensions</span></span>](/graph/extensibility-schema-groups)
+- [<span data-ttu-id="1a11b-185">拡張機能を使用してカスタム データをリソースに追加する</span><span class="sxs-lookup"><span data-stu-id="1a11b-185">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
+- [<span data-ttu-id="1a11b-186">オープン拡張機能を使用してカスタム データをユーザーに追加する</span><span class="sxs-lookup"><span data-stu-id="1a11b-186">Add custom data to users using open extensions</span></span>](/graph/extensibility-open-users)
+- [<span data-ttu-id="1a11b-187">スキーマ拡張機能を使用したグループへのカスタム データの追加</span><span class="sxs-lookup"><span data-stu-id="1a11b-187">Add custom data to groups using schema extensions</span></span>](/graph/extensibility-schema-groups)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -632,6 +638,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/user-post-events.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/user-post-events.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/user-post-events.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Error: /api-reference/beta/api/user-post-events.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",

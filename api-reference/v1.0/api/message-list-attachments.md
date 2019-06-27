@@ -4,58 +4,58 @@ description: メッセージに添付された添付フィル オブジェクト
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 12ac76ab0e2254aa515b62d7d33a6353edf0a3d8
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 6da58306f855caea958e07efa6f8000ff1f07b5a
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33612542"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35275034"
 ---
-# <a name="list-attachments"></a><span data-ttu-id="f22a2-103">添付ファイルを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="f22a2-103">List attachments</span></span>
+# <a name="list-attachments"></a><span data-ttu-id="40392-103">添付ファイルを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="40392-103">List attachments</span></span>
 
-<span data-ttu-id="f22a2-104">メッセージに添付された[添付ファイル](../resources/attachment.md) オブジェクトのリストを取得します。</span><span class="sxs-lookup"><span data-stu-id="f22a2-104">Retrieve a list of [attachment](../resources/attachment.md) objects attached to a message.</span></span>
-## <a name="permissions"></a><span data-ttu-id="f22a2-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="f22a2-105">Permissions</span></span>
-<span data-ttu-id="f22a2-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f22a2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="40392-104">メッセージに添付された[添付ファイル](../resources/attachment.md) オブジェクトのリストを取得します。</span><span class="sxs-lookup"><span data-stu-id="40392-104">Retrieve a list of [attachment](../resources/attachment.md) objects attached to a message.</span></span>
+## <a name="permissions"></a><span data-ttu-id="40392-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="40392-105">Permissions</span></span>
+<span data-ttu-id="40392-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="40392-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f22a2-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="f22a2-108">Permission type</span></span>      | <span data-ttu-id="f22a2-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="f22a2-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="40392-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="40392-108">Permission type</span></span>      | <span data-ttu-id="40392-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="40392-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f22a2-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="f22a2-110">Delegated (work or school account)</span></span> | <span data-ttu-id="f22a2-111">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="f22a2-111">Mail.Read</span></span>    |
-|<span data-ttu-id="f22a2-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="f22a2-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f22a2-113">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="f22a2-113">Mail.Read</span></span>    |
-|<span data-ttu-id="f22a2-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="f22a2-114">Application</span></span> | <span data-ttu-id="f22a2-115">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="f22a2-115">Mail.Read</span></span> |
+|<span data-ttu-id="40392-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="40392-110">Delegated (work or school account)</span></span> | <span data-ttu-id="40392-111">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="40392-111">Mail.Read</span></span>    |
+|<span data-ttu-id="40392-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="40392-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="40392-113">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="40392-113">Mail.Read</span></span>    |
+|<span data-ttu-id="40392-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="40392-114">Application</span></span> | <span data-ttu-id="40392-115">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="40392-115">Mail.Read</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f22a2-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="f22a2-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="40392-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="40392-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
-<span data-ttu-id="f22a2-117">ユーザーのメールボックス内の[メッセージ](../resources/message.md)の添付ファイル。</span><span class="sxs-lookup"><span data-stu-id="f22a2-117">Attachments for a [message](../resources/message.md) in a user's mailbox.</span></span>
+<span data-ttu-id="40392-117">ユーザーのメールボックス内の[メッセージ](../resources/message.md)の添付ファイル。</span><span class="sxs-lookup"><span data-stu-id="40392-117">Attachments for a [message](../resources/message.md) in a user's mailbox.</span></span>
 ```http
 GET /me/messages/{id}/attachments
 GET /users/{id | userPrincipalName}/messages/{id}/attachments
 ```
-<span data-ttu-id="f22a2-118">ユーザーのメールボックスの最上位レベルの [mailFolder](../resources/mailfolder.md) に含まれている[メッセージ](../resources/message.md)の添付ファイル。</span><span class="sxs-lookup"><span data-stu-id="f22a2-118">Attachments for a [message](../resources/message.md) contained in a top level [mailFolder](../resources/mailfolder.md) in a user's mailbox.</span></span>
+<span data-ttu-id="40392-118">ユーザーのメールボックスの最上位レベルの [mailFolder](../resources/mailfolder.md) に含まれている[メッセージ](../resources/message.md)の添付ファイル。</span><span class="sxs-lookup"><span data-stu-id="40392-118">Attachments for a [message](../resources/message.md) contained in a top level [mailFolder](../resources/mailfolder.md) in a user's mailbox.</span></span>
 ```http
 GET /me/mailFolders/{id}/messages/{id}/attachments
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments
 ```
-<span data-ttu-id="f22a2-p102">ユーザーのメールボックスの [mailFolder](../resources/mailfolder.md) の子フォルダーに含まれている[メッセージ](../resources/message.md)の添付ファイル。次の例は、入れ子のレベルの 1 つを示していますが、メッセージは子の子などに入れることができます。</span><span class="sxs-lookup"><span data-stu-id="f22a2-p102">Attachments for a [message](../resources/message.md) contained in a child folder of a [mailFolder](../resources/mailfolder.md) in a user's mailbox.  The example below shows one level of nesting, but a message can be located in a child of a child and so on.</span></span>
+<span data-ttu-id="40392-p102">ユーザーのメールボックスの [mailFolder](../resources/mailfolder.md) の子フォルダーに含まれている[メッセージ](../resources/message.md)の添付ファイル。次の例は、入れ子のレベルの 1 つを示していますが、メッセージは子の子などに入れることができます。</span><span class="sxs-lookup"><span data-stu-id="40392-p102">Attachments for a [message](../resources/message.md) contained in a child folder of a [mailFolder](../resources/mailfolder.md) in a user's mailbox.  The example below shows one level of nesting, but a message can be located in a child of a child and so on.</span></span>
 ```http
 GET /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="f22a2-121">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="f22a2-121">Optional query parameters</span></span>
-<span data-ttu-id="f22a2-122">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="f22a2-122">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="f22a2-123">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f22a2-123">Request headers</span></span>
-| <span data-ttu-id="f22a2-124">名前</span><span class="sxs-lookup"><span data-stu-id="f22a2-124">Name</span></span>       | <span data-ttu-id="f22a2-125">型</span><span class="sxs-lookup"><span data-stu-id="f22a2-125">Type</span></span> | <span data-ttu-id="f22a2-126">説明</span><span class="sxs-lookup"><span data-stu-id="f22a2-126">Description</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="40392-121">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="40392-121">Optional query parameters</span></span>
+<span data-ttu-id="40392-122">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="40392-122">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="40392-123">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="40392-123">Request headers</span></span>
+| <span data-ttu-id="40392-124">名前</span><span class="sxs-lookup"><span data-stu-id="40392-124">Name</span></span>       | <span data-ttu-id="40392-125">型</span><span class="sxs-lookup"><span data-stu-id="40392-125">Type</span></span> | <span data-ttu-id="40392-126">説明</span><span class="sxs-lookup"><span data-stu-id="40392-126">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="f22a2-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="f22a2-127">Authorization</span></span>  | <span data-ttu-id="f22a2-128">string</span><span class="sxs-lookup"><span data-stu-id="f22a2-128">string</span></span>  | <span data-ttu-id="f22a2-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="f22a2-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="40392-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="40392-127">Authorization</span></span>  | <span data-ttu-id="40392-128">string</span><span class="sxs-lookup"><span data-stu-id="40392-128">string</span></span>  | <span data-ttu-id="40392-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="40392-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f22a2-131">要求本文</span><span class="sxs-lookup"><span data-stu-id="f22a2-131">Request body</span></span>
-<span data-ttu-id="f22a2-132">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="f22a2-132">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="40392-131">要求本文</span><span class="sxs-lookup"><span data-stu-id="40392-131">Request body</span></span>
+<span data-ttu-id="40392-132">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="40392-132">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f22a2-133">応答</span><span class="sxs-lookup"><span data-stu-id="f22a2-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="40392-133">応答</span><span class="sxs-lookup"><span data-stu-id="40392-133">Response</span></span>
 
-<span data-ttu-id="f22a2-134">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [Attachment](../resources/attachment.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="f22a2-134">If successful, this method returns a `200 OK` response code and collection of [Attachment](../resources/attachment.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="f22a2-135">例</span><span class="sxs-lookup"><span data-stu-id="f22a2-135">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="f22a2-136">要求</span><span class="sxs-lookup"><span data-stu-id="f22a2-136">Request</span></span>
-<span data-ttu-id="f22a2-137">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="f22a2-137">Here is an example of the request.</span></span>
+<span data-ttu-id="40392-134">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [Attachment](../resources/attachment.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="40392-134">If successful, this method returns a `200 OK` response code and collection of [Attachment](../resources/attachment.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="40392-135">例</span><span class="sxs-lookup"><span data-stu-id="40392-135">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="40392-136">要求</span><span class="sxs-lookup"><span data-stu-id="40392-136">Request</span></span>
+<span data-ttu-id="40392-137">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="40392-137">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_attachments"
@@ -63,8 +63,8 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages/{id}/attachments
 ```
-##### <a name="response"></a><span data-ttu-id="f22a2-138">応答</span><span class="sxs-lookup"><span data-stu-id="f22a2-138">Response</span></span>
-<span data-ttu-id="f22a2-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="f22a2-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="40392-138">応答</span><span class="sxs-lookup"><span data-stu-id="40392-138">Response</span></span>
+<span data-ttu-id="40392-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="40392-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -93,13 +93,15 @@ Content-length: 215
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="f22a2-142">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="f22a2-142">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="f22a2-143">C#</span><span class="sxs-lookup"><span data-stu-id="f22a2-143">c</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="40392-142">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="40392-142">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="40392-143">C#</span><span class="sxs-lookup"><span data-stu-id="40392-143">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_attachments-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f22a2-144">Javascript</span><span class="sxs-lookup"><span data-stu-id="f22a2-144">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="40392-144">Javascript</span><span class="sxs-lookup"><span data-stu-id="40392-144">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_attachments-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="40392-145">Objective-C</span><span class="sxs-lookup"><span data-stu-id="40392-145">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_attachments-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -113,6 +115,7 @@ Content-length: 215
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/message-list-attachments.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/message-list-attachments.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/message-list-attachments.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
