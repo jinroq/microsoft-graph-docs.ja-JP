@@ -1,19 +1,17 @@
 ---
 title: directReports を一覧表示する　
 description: ユーザーの直属の部下を取得します。 このユーザーがマネージャーとして割り当てられているユーザーと連絡先を返します。
-localization_priority: Normal
+localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a843584fb136af1613ca15172b6c97246043a708
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: c292bd5ebfcfda2c69d98c211d552cae814c90be
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33601901"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35277932"
 ---
 # <a name="list-directreports"></a>directReports を一覧表示する　
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ユーザーの直属の部下を取得します。 このユーザーがマネージャーとして割り当てられているユーザーと連絡先を返します。
 ## <a name="permissions"></a>アクセス許可
@@ -53,7 +51,7 @@ GET /users/{id | userPrincipalName}/directReports
   "name": "get_directreports"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/directReports
+GET https://graph.microsoft.com/v1.0/me/directReports
 ```
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
@@ -83,22 +81,23 @@ Content-length: 55
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_directreports-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_directreports-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List directReports",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/user-list-directreports.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/user-list-directreports.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/v1.0/api/user-list-directreports.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/user-list-directreports.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/user-list-directreports.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-}
--->
+}-->

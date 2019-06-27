@@ -4,12 +4,12 @@ description: ソリューション間でアラートの状態と割り当てを�
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 42bc945dde726466439802350796d628ee438e22
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d448a7d23f7370650f7ab621fb0f467a3726bce1
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551511"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35264835"
 ---
 # <a name="update-alert"></a>アラートを更新する
 
@@ -39,7 +39,7 @@ PATCH /security/alerts/{alert_id}
 
 | 名前          | 説明              |
 |:--------------|:-------------------------|
-| Authorization | ベアラー {code}。 必須。 |
+| Authorization | ベアラー {code}。 必須です。 |
 | Prefer        | 戻り値 = 表現    |
 
 ## <a name="request-body"></a>要求本文
@@ -49,12 +49,12 @@ PATCH /security/alerts/{alert_id}
 | プロパティ          | 型                                                                   | 説明 |
 |:------------------|:-----------------------------------------------------------------------|:--|
 | assignedTo        | String                                                                 | トリアージ、調査、または修復のためにアラートが割り当てられたアナリストの名前。 |
-| closeddatetime    | DateTimeOffset                                                         | 通知が終了した時刻。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` |
-| コメント          | String collection                                                      | アラートに関するアナリストのコメント (顧客の警告管理)。 |
-| feedback          | alertFeedback                                                          | アラートに関するアナリストのフィードバック。 可能な値は、`unknown`、`truePositive`、`falsePositive`、`benignPositive` です。 |
-| status            | alertStatus                                                            | アラートライフサイクルの状態 (ステージ)。 可能な値は、`unknown`、`newAlert`、`inProgress`、`resolved` です。 |
-| tags              | String コレクション                                                      | 通知に適用することができ、フィルター条件として機能することができる、ユーザー定義のラベル (たとえば、"hva"、"のこぎり" など)。 |
-| vendorInformation | [securityVendorInformation](../resources/securityvendorinformation.md) | セキュリティ製品/サービスのベンダー、プロバイダ、およびサブプロバイダに関する詳細を含む複合型 (たとえば、vendor = Microsoft; provider = Windows Defender ATP; subprovider = AppLocker)。 **プロバイダーおよびベンダーフィールドは必須です。** |
+| closedDateTime    | DateTimeOffset                                                         | 警告が閉じられた時刻。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表します。これは常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` |
+| comments          | String コレクション                                                      | アラートに関するアナリストのコメント (顧客の警告管理)。 |
+| feedback          | alertFeedback                                                          | 警告に関するアナリストのフィードバック。 使用可能な値は、`unknown`、`truePositive`、`falsePositive`、`benignPositive` です。 |
+| status            | alertStatus                                                            | アラートライフサイクルの状態 (ステージ)。 使用可能な値は、`unknown`、`newAlert`、`inProgress`、`resolved` です。 |
+| タグ              | String collection                                                      | 通知に適用することができ、フィルター条件として機能することができる、ユーザー定義のラベル (たとえば、"HVA"、"のこぎり" など)。 |
+| vendorInformation | [securityVendorInformation](../resources/securityvendorinformation.md) | セキュリティ製品/サービスの仕入先、プロバイダー、サブプロバイダーに関する詳細を含む複合型 (たとえば、仕入先 = Microsoft、プロバイダー = Windows Defender ATP、サブプロバイダー = AppLocker)。 **プロバイダーおよびベンダーフィールドは必須です。** |
 
 ## <a name="response"></a>応答
 
@@ -111,6 +111,18 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_alert-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_alert-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[目的-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_alert-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="example-2-request-with-prefer-header"></a>例 2: 要求ヘッダーを使用した要求
 
@@ -150,7 +162,7 @@ Prefer: return=representation
 
 オプション`Prefer: return=representation`の要求ヘッダーを使用する場合の応答の例を次に示します。
 
-> **注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
+> **注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 
 <!-- {
   "blockType": "response",
@@ -179,5 +191,12 @@ Content-type: application/json
   "description": "Update alert",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/alert-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/alert-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/alert-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/v1.0/api/alert-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/alert-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->
