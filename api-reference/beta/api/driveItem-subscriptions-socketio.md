@@ -1,19 +1,19 @@
 ---
 title: Websocket エンドポイントを取得する
-description: 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+description: 実稼働アプリケーションでは、これらの API の使用はサポートされていません。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 03dbaf8522005c2bb0c038c8ba885becc41f72dc
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: ce3b93cbf9de3523225343ae8659cb09bd08e310
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33591820"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35260285"
 ---
 # <a name="get-websocket-endpoint"></a>Websocket エンドポイントを取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+実稼働アプリケーションでは、これらの API の使用はサポートされていません。
 
 [Socket.io][]を使用して、[ドライブ][]のほぼリアルタイムの変更通知を受け取ることができます。
 Socket.io は、Websocket を利用する JavaScript の一般的な通知ライブラリです。 詳細については、「 [socket.io](https://socket.io)」を参照してください。
@@ -69,13 +69,15 @@ Content-type: application/json
   "notificationUrl": "https://f3hb0mpua.svc.ms/zbaehwg/callback?snthgk=1ff3-2345672zz831837523"
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/drive_root_subscriptions_socketIo-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/drive_root_subscriptions_socketIo-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目的-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/drive_root_subscriptions_socketIo-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -111,6 +113,7 @@ socket.on("notification", (data)=>console.log("Notification!", data));
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/driveItem-subscriptions-socketio.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/driveItem-subscriptions-socketio.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/driveItem-subscriptions-socketio.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

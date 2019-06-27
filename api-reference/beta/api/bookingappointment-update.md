@@ -4,12 +4,12 @@ description: 指定した bookingappointment の bookingAppointment オブジェ
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 32596ae8528f6c73ae4b82852baaed0031db7b57
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 2c6660ca580423483cd9bc3b200f1176e92544df
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636213"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35258269"
 ---
 # <a name="update-bookingappointment"></a>Bookingappointment の更新
 
@@ -64,7 +64,7 @@ PATCH /bookingBusinesses/{id}/appointments/{id}
 |serviceLocation|[location](../resources/location.md)|サービスが配信される場所。|
 |serviceName|String|この予定に関連付けられている**Bookingservice**の名前です。<br>新しい予定を作成するときは、このプロパティは省略可能です。 指定しない場合、 **serviceId**プロパティによって、予定に関連付けられているサービスから計算されます。|
 |serviceNotes|String|[BookingStaffMember](../resources/bookingstaffmember.md)からのメモ。 このプロパティの値は、この**Bookingappointment**を ID で読み取る場合にのみ使用できます。|
-|staffMemberIds|String collection|この予定でスケジュールされている各[bookingStaffMember](../resources/bookingstaffmember.md)の ID。|
+|staffMemberIds|文字列コレクション|この予定でスケジュールされている各[bookingStaffMember](../resources/bookingstaffmember.md)の ID。|
 |開始|[dateTimeTimeZone](../resources/datetimetimezone.md)|予定が開始する日付、時刻、タイムゾーン。|
 
 
@@ -109,13 +109,15 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_bookingappointment-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_bookingappointment-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目的-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_bookingappointment-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -130,6 +132,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/bookingappointment-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/bookingappointment-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/bookingappointment-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
