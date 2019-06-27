@@ -4,50 +4,50 @@ description: テナントに新しい Microsoft 予約ビジネスを作成し�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: e3a41adb95f6749fcbdbdb83af8fbc2cba874ee2
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: a7818556d687d5e967f704316dd16e9c4eb2c02d
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636129"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35258101"
 ---
-# <a name="create-bookingbusiness"></a><span data-ttu-id="cbca4-103">BookingBusiness の作成</span><span class="sxs-lookup"><span data-stu-id="cbca4-103">Create bookingBusiness</span></span>
+# <a name="create-bookingbusiness"></a><span data-ttu-id="b37e3-103">BookingBusiness の作成</span><span class="sxs-lookup"><span data-stu-id="b37e3-103">Create bookingBusiness</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="cbca4-104">テナントに新しい Microsoft 予約ビジネスを作成します。</span><span class="sxs-lookup"><span data-stu-id="cbca4-104">Create a new Microsoft Bookings business in a tenant.</span></span>
+<span data-ttu-id="b37e3-104">テナントに新しい Microsoft 予約ビジネスを作成します。</span><span class="sxs-lookup"><span data-stu-id="b37e3-104">Create a new Microsoft Bookings business in a tenant.</span></span>
 
-<span data-ttu-id="cbca4-105">これは、ビジネス表示名を指定する必要がある、予約ビジネスを設定するための最初の手順です。</span><span class="sxs-lookup"><span data-stu-id="cbca4-105">This is the first step in setting up a Bookings business where you must specify the business display name.</span></span> <span data-ttu-id="cbca4-106">会社の住所、web サイトのアドレス、スケジュールポリシーなどのその他の情報を含めたり、後で**Bookingbusiness**を[更新](bookingbusiness-update.md)してその情報を設定したりすることができます。</span><span class="sxs-lookup"><span data-stu-id="cbca4-106">You can include other information such as business address, web site address, and scheduling policy, or set that information later by [updating](bookingbusiness-update.md) the **bookingBusiness**.</span></span>
-## <a name="permissions"></a><span data-ttu-id="cbca4-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="cbca4-107">Permissions</span></span>
-<span data-ttu-id="cbca4-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="cbca4-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="b37e3-105">これは、ビジネス表示名を指定する必要がある、予約ビジネスを設定するための最初の手順です。</span><span class="sxs-lookup"><span data-stu-id="b37e3-105">This is the first step in setting up a Bookings business where you must specify the business display name.</span></span> <span data-ttu-id="b37e3-106">会社の住所、web サイトのアドレス、スケジュールポリシーなどのその他の情報を含めたり、後で**Bookingbusiness**を[更新](bookingbusiness-update.md)してその情報を設定したりすることができます。</span><span class="sxs-lookup"><span data-stu-id="b37e3-106">You can include other information such as business address, web site address, and scheduling policy, or set that information later by [updating](bookingbusiness-update.md) the **bookingBusiness**.</span></span>
+## <a name="permissions"></a><span data-ttu-id="b37e3-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="b37e3-107">Permissions</span></span>
+<span data-ttu-id="b37e3-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b37e3-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="cbca4-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="cbca4-110">Permission type</span></span>      | <span data-ttu-id="cbca4-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="cbca4-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b37e3-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="b37e3-110">Permission type</span></span>      | <span data-ttu-id="b37e3-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="b37e3-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="cbca4-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="cbca4-112">Delegated (work or school account)</span></span> |  <span data-ttu-id="cbca4-113">予約。すべて</span><span class="sxs-lookup"><span data-stu-id="cbca4-113">Bookings.Manage.All</span></span>  |
-|<span data-ttu-id="cbca4-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="cbca4-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cbca4-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="cbca4-115">Not supported.</span></span>   |
-|<span data-ttu-id="cbca4-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="cbca4-116">Application</span></span> | <span data-ttu-id="cbca4-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="cbca4-117">Not supported.</span></span> |
+|<span data-ttu-id="b37e3-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="b37e3-112">Delegated (work or school account)</span></span> |  <span data-ttu-id="b37e3-113">予約。すべて</span><span class="sxs-lookup"><span data-stu-id="b37e3-113">Bookings.Manage.All</span></span>  |
+|<span data-ttu-id="b37e3-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="b37e3-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b37e3-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b37e3-115">Not supported.</span></span>   |
+|<span data-ttu-id="b37e3-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="b37e3-116">Application</span></span> | <span data-ttu-id="b37e3-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b37e3-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="cbca4-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="cbca4-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b37e3-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="b37e3-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /bookingBusinesses
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="cbca4-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="cbca4-119">Request headers</span></span>
-| <span data-ttu-id="cbca4-120">名前</span><span class="sxs-lookup"><span data-stu-id="cbca4-120">Name</span></span>       | <span data-ttu-id="cbca4-121">説明</span><span class="sxs-lookup"><span data-stu-id="cbca4-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="b37e3-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b37e3-119">Request headers</span></span>
+| <span data-ttu-id="b37e3-120">名前</span><span class="sxs-lookup"><span data-stu-id="b37e3-120">Name</span></span>       | <span data-ttu-id="b37e3-121">説明</span><span class="sxs-lookup"><span data-stu-id="b37e3-121">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="cbca4-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="cbca4-122">Authorization</span></span>  | <span data-ttu-id="cbca4-123">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="cbca4-123">Bearer {code}</span></span>|
+| <span data-ttu-id="b37e3-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="b37e3-122">Authorization</span></span>  | <span data-ttu-id="b37e3-123">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="b37e3-123">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="cbca4-124">要求本文</span><span class="sxs-lookup"><span data-stu-id="cbca4-124">Request body</span></span>
-<span data-ttu-id="cbca4-125">要求本文で、 [Bookingbusiness](../resources/bookingbusiness.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="cbca4-125">In the request body, supply a JSON representation of [bookingBusiness](../resources/bookingbusiness.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b37e3-124">要求本文</span><span class="sxs-lookup"><span data-stu-id="b37e3-124">Request body</span></span>
+<span data-ttu-id="b37e3-125">要求本文で、 [Bookingbusiness](../resources/bookingbusiness.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="b37e3-125">In the request body, supply a JSON representation of [bookingBusiness](../resources/bookingbusiness.md) object.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="cbca4-126">応答</span><span class="sxs-lookup"><span data-stu-id="cbca4-126">Response</span></span>
-<span data-ttu-id="cbca4-127">成功した場合、この`201, Created`メソッドは応答コードと、応答本文で[bookingbusiness](../resources/bookingbusiness.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="cbca4-127">If successful, this method returns `201, Created` response code and [bookingBusiness](../resources/bookingbusiness.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="b37e3-126">応答</span><span class="sxs-lookup"><span data-stu-id="b37e3-126">Response</span></span>
+<span data-ttu-id="b37e3-127">成功した場合、この`201, Created`メソッドは応答コードと、応答本文で[bookingbusiness](../resources/bookingbusiness.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="b37e3-127">If successful, this method returns `201, Created` response code and [bookingBusiness](../resources/bookingbusiness.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="cbca4-128">例</span><span class="sxs-lookup"><span data-stu-id="cbca4-128">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="cbca4-129">要求</span><span class="sxs-lookup"><span data-stu-id="cbca4-129">Request</span></span>
-<span data-ttu-id="cbca4-130">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="cbca4-130">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="b37e3-128">例</span><span class="sxs-lookup"><span data-stu-id="b37e3-128">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="b37e3-129">要求</span><span class="sxs-lookup"><span data-stu-id="b37e3-129">Request</span></span>
+<span data-ttu-id="b37e3-130">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="b37e3-130">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_bookingbusiness_from_bookingbusinesses"
@@ -73,9 +73,9 @@ Content-type: application/json
     "defaultCurrencyIso":"USD"
 }
 ```
-<span data-ttu-id="cbca4-131">要求本文で、 [Bookingbusiness](../resources/bookingbusiness.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="cbca4-131">In the request body, supply a JSON representation of [bookingBusiness](../resources/bookingbusiness.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="cbca4-132">応答</span><span class="sxs-lookup"><span data-stu-id="cbca4-132">Response</span></span>
-<span data-ttu-id="cbca4-133">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="cbca4-133">The following is an example of the response.</span></span> <span data-ttu-id="cbca4-134">注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。</span><span class="sxs-lookup"><span data-stu-id="cbca4-134">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="cbca4-135">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="cbca4-135">All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="b37e3-131">要求本文で、 [Bookingbusiness](../resources/bookingbusiness.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="b37e3-131">In the request body, supply a JSON representation of [bookingBusiness](../resources/bookingbusiness.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="b37e3-132">応答</span><span class="sxs-lookup"><span data-stu-id="b37e3-132">Response</span></span>
+<span data-ttu-id="b37e3-133">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="b37e3-133">The following is an example of the response.</span></span> <span data-ttu-id="b37e3-134">注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。</span><span class="sxs-lookup"><span data-stu-id="b37e3-134">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="b37e3-135">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="b37e3-135">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -173,13 +173,15 @@ Content-type: application/json
     }
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="cbca4-136">SDK サンプルコード</span><span class="sxs-lookup"><span data-stu-id="cbca4-136">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="cbca4-137">Visual</span><span class="sxs-lookup"><span data-stu-id="cbca4-137">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="b37e3-136">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="b37e3-136">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="b37e3-137">C#</span><span class="sxs-lookup"><span data-stu-id="b37e3-137">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/create_bookingbusiness_from_bookingbusinesses-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="cbca4-138">Java</span><span class="sxs-lookup"><span data-stu-id="cbca4-138">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b37e3-138">Javascript</span><span class="sxs-lookup"><span data-stu-id="b37e3-138">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_bookingbusiness_from_bookingbusinesses-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="b37e3-139">目的-C</span><span class="sxs-lookup"><span data-stu-id="b37e3-139">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create_bookingbusiness_from_bookingbusinesses-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -194,6 +196,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/bookingbusiness-post-bookingbusinesses.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/bookingbusiness-post-bookingbusinesses.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/bookingbusiness-post-bookingbusinesses.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
