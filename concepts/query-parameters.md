@@ -3,17 +3,16 @@ title: クエリ パラメーターを使用して応答をカスタマイズす
 description: Microsoft Graph にはオプションのクエリ パラメーターがあり、応答で返されるデータの量を指定したり制御したりするために使用できます。次のクエリ パラメーターがサポートされています。
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: 5f986a84604a5783c16e6febc6130d4d53bd058f
-ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
+ms.openlocfilehash: 26f765f2537bda8c29a6c25c9352da3558d78f9a
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35133818"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35273802"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>クエリ パラメーターを使用して応答をカスタマイズする
 
 Microsoft Graph はオプションのクエリ パラメーターをサポートしており、応答で返されるデータの量を指定したり制御したりするために使用できます。 正確なクエリ パラメーターのサポートは、API 操作ごとに異なり、API によっては、v1.0 とベータ版エンドポイントかでも異なることがあります。 
-
 
 > [!TIP] 
 > ベータ版エンドポイントでは、`$`プレフィックスが省略可能です。 たとえば、`filter` とせずに、`$filter` と指定することもできます。 v1 エンドポイントでは、API のサブセットに対してのみ`$`プレフィックスが省略可能です。 要するに、v1 エンドポイントを使用している場合は、常に`$`が含まれます。
@@ -25,9 +24,11 @@ Microsoft Graph はオプションのクエリ パラメーターをサポート
 ## <a name="odata-system-query-options"></a>OData のシステム クエリ オプション
 Microsoft Graph API 操作は、次の OData のシステム クエリ オプションの 1 つ以上をサポートする可能性があります。 これらのクエリ オプションは、[OData V4 クエリ言語][odata-query]と互換性があります。
 
->**注:** 例をクリックして [Graph エクスプローラー][graph-explorer]で試行します。
+>**注:** OData 4.0 は、GET 操作でのみシステム クエリ オプションをサポートします。
 
-| 名前                     | 説明 | 例
+例をクリックして [Graph エクスプローラー][graph-explorer]で試行します。
+
+| Name                     | 説明 | 例
 |:-------------------------|:------------|:---------|
 | [$count](#count-parameter)         | 一致するリソースの総数を取得します。 | [`/me/messages?$top=2&$count=true`][count-example]
 | [$expand](#expand-parameter)       | 関連リソースを取得します。|[`/groups?$expand=members`][expand-example]

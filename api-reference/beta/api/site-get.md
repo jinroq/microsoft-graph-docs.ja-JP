@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: SharePoint サイトを取得する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: e0242952a0cecef9ab23cad2cdcd3175dd08fe24
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: adf20d242dec40dd2981b90f725fb18980e1a60d
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33638705"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35271583"
 ---
 # <a name="get-a-site-resource"></a>サイト リソースを取得する
 
@@ -19,17 +19,6 @@ ms.locfileid: "33638705"
 [サイト][] リソースのプロパティとリレーションシップを取得します。**サイト** リソースは、SharePoint のチーム サイトを表します。
 
 [サイト]: ../resources/site.md
-
-**サイト**は、以下の値の複合 ID である、一意識別子にアドレス指定されます。
-
-* サイト コレクションのホスト名 (contoso.sharepoint.com)
-* サイト コレクションの一意 ID (GUID)
-* サイトの一意 ID (GUID)
-
-予約済みのサイト識別子 `root` もあります。これは次に示すように、常にターゲットのルート サイトを参照します。
-
-* `/sites/root`:テナントのルート サイト。
-* `/groups/{group-id}/sites/root`:グループのチーム サイト。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -101,13 +90,15 @@ Content-type: application/json
   "webUrl": "https://contoso.sharepoint.com/teams/1drvteam"
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get-site-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get-site-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目的-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get-site-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -120,6 +111,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "Sites/Get by ID",
   "suppressions": [
+    "Error: /api-reference/beta/api/site-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/site-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/site-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
