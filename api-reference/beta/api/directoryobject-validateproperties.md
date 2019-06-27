@@ -4,64 +4,64 @@ description: Office 365 グループの表示名またはメールニックネ�
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4f672d4b6d2f33921f79d74d5213948dc630abda
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.openlocfilehash: 07e71cd541d7afe2d0dce12824eb1f622ce74b6e
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34656042"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35260746"
 ---
-# <a name="directoryobject-validateproperties"></a><span data-ttu-id="48812-105">directoryObject: validateProperties</span><span class="sxs-lookup"><span data-stu-id="48812-105">directoryObject: validateProperties</span></span>
+# <a name="directoryobject-validateproperties"></a><span data-ttu-id="b6dca-105">directoryObject: validateProperties</span><span class="sxs-lookup"><span data-stu-id="b6dca-105">directoryObject: validateProperties</span></span>
 
-<span data-ttu-id="48812-106">Office 365 グループの表示名またはメールニックネームが名前付けポリシーに準拠しているかどうかを検証します。</span><span class="sxs-lookup"><span data-stu-id="48812-106">Validate if an Office 365 group's display name or mail nickname complies with naming policies.</span></span>  <span data-ttu-id="48812-107">クライアントは API を使用して、Office 365 グループを**作成**する前に、表示名またはメールニックネームが有効かどうかを判断します。</span><span class="sxs-lookup"><span data-stu-id="48812-107">Clients can use the API to determine if a display name or mail nickname is valid before trying to **create** an Office 365 group.</span></span> <span data-ttu-id="48812-108">既存のグループのプロパティを検証するには、グループに対して[validateproperties 関数](group-validateproperties.md)を使用します。</span><span class="sxs-lookup"><span data-stu-id="48812-108">For validating properties of an existing group, use the [validateProperties function](group-validateproperties.md) for groups.</span></span>
+<span data-ttu-id="b6dca-106">Office 365 グループの表示名またはメールニックネームが名前付けポリシーに準拠しているかどうかを検証します。</span><span class="sxs-lookup"><span data-stu-id="b6dca-106">Validate if an Office 365 group's display name or mail nickname complies with naming policies.</span></span>  <span data-ttu-id="b6dca-107">クライアントは API を使用して、Office 365 グループを**作成**する前に、表示名またはメールニックネームが有効かどうかを判断します。</span><span class="sxs-lookup"><span data-stu-id="b6dca-107">Clients can use the API to determine if a display name or mail nickname is valid before trying to **create** an Office 365 group.</span></span> <span data-ttu-id="b6dca-108">既存のグループのプロパティを検証するには、グループに対して[validateproperties 関数](group-validateproperties.md)を使用します。</span><span class="sxs-lookup"><span data-stu-id="b6dca-108">For validating properties of an existing group, use the [validateProperties function](group-validateproperties.md) for groups.</span></span>
 
-<span data-ttu-id="48812-109">[表示名] および [メールニックネーム] プロパティに対して、次の検証が実行されます。</span><span class="sxs-lookup"><span data-stu-id="48812-109">The following validations are performed for the display name and mail nickname properties:</span></span> 
-1. <span data-ttu-id="48812-110">プレフィックスとサフィックスの名前付けポリシーを検証する</span><span class="sxs-lookup"><span data-stu-id="48812-110">Validate the prefix and suffix naming policy</span></span>
-2. <span data-ttu-id="48812-111">カスタムの禁止単語のポリシーを検証する</span><span class="sxs-lookup"><span data-stu-id="48812-111">Validate the custom banned words policy</span></span>
-3. <span data-ttu-id="48812-112">メールニックネームが一意であることを確認する</span><span class="sxs-lookup"><span data-stu-id="48812-112">Validate the mail nickname is unique</span></span>
+<span data-ttu-id="b6dca-109">[表示名] および [メールニックネーム] プロパティに対して、次の検証が実行されます。</span><span class="sxs-lookup"><span data-stu-id="b6dca-109">The following validations are performed for the display name and mail nickname properties:</span></span> 
+1. <span data-ttu-id="b6dca-110">プレフィックスとサフィックスの名前付けポリシーを検証する</span><span class="sxs-lookup"><span data-stu-id="b6dca-110">Validate the prefix and suffix naming policy</span></span>
+2. <span data-ttu-id="b6dca-111">カスタムの禁止単語のポリシーを検証する</span><span class="sxs-lookup"><span data-stu-id="b6dca-111">Validate the custom banned words policy</span></span>
+3. <span data-ttu-id="b6dca-112">メールニックネームが一意であることを確認する</span><span class="sxs-lookup"><span data-stu-id="b6dca-112">Validate the mail nickname is unique</span></span>
 
-<span data-ttu-id="48812-113">この API は、最初のエラーが発生したことを返します。</span><span class="sxs-lookup"><span data-stu-id="48812-113">This API returns with the first failure encountered.</span></span> <span data-ttu-id="48812-114">1つ以上のプロパティが複数の検証に失敗した場合、最初の検証に失敗したプロパティのみが返されます。</span><span class="sxs-lookup"><span data-stu-id="48812-114">If one or more properties fail multiple validations, only the property with the first validation failure is returned.</span></span> <span data-ttu-id="48812-115">ただし、プレフィックスとサフィックスの名前付けポリシーのみを検証する場合は、メールニックネームと表示名の両方を検証し、検証エラーのコレクションを受信することができます。</span><span class="sxs-lookup"><span data-stu-id="48812-115">However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.</span></span>
+<span data-ttu-id="b6dca-113">この API は、最初のエラーが発生したことを返します。</span><span class="sxs-lookup"><span data-stu-id="b6dca-113">This API returns with the first failure encountered.</span></span> <span data-ttu-id="b6dca-114">1つ以上のプロパティが複数の検証に失敗した場合、最初の検証に失敗したプロパティのみが返されます。</span><span class="sxs-lookup"><span data-stu-id="b6dca-114">If one or more properties fail multiple validations, only the property with the first validation failure is returned.</span></span> <span data-ttu-id="b6dca-115">ただし、プレフィックスとサフィックスの名前付けポリシーのみを検証する場合は、メールニックネームと表示名の両方を検証し、検証エラーのコレクションを受信することができます。</span><span class="sxs-lookup"><span data-stu-id="b6dca-115">However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="48812-116">前提条件</span><span class="sxs-lookup"><span data-stu-id="48812-116">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="b6dca-116">前提条件</span><span class="sxs-lookup"><span data-stu-id="b6dca-116">Prerequisites</span></span>
 
-<span data-ttu-id="48812-117">この API を実行するには、次の\*\* **アクセス許可**が必要です。</span><span class="sxs-lookup"><span data-stu-id="48812-117">The following **permission** is required to execute this API: *Group.Read.All*</span></span>
+<span data-ttu-id="b6dca-117">この API を実行するには、次の\*\* **アクセス許可**が必要です。</span><span class="sxs-lookup"><span data-stu-id="b6dca-117">The following **permission** is required to execute this API: *Group.Read.All*</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="48812-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="48812-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b6dca-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="b6dca-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ``` http
 POST /directoryObjects/validateProperties
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="48812-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="48812-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="b6dca-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b6dca-119">Request headers</span></span>
 
-| <span data-ttu-id="48812-120">名前</span><span class="sxs-lookup"><span data-stu-id="48812-120">Name</span></span>           | <span data-ttu-id="48812-121">説明</span><span class="sxs-lookup"><span data-stu-id="48812-121">Description</span></span>      |
+| <span data-ttu-id="b6dca-120">名前</span><span class="sxs-lookup"><span data-stu-id="b6dca-120">Name</span></span>           | <span data-ttu-id="b6dca-121">説明</span><span class="sxs-lookup"><span data-stu-id="b6dca-121">Description</span></span>      |
 |:---------------|:-----------------|
-| <span data-ttu-id="48812-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="48812-122">Authorization</span></span>  | <span data-ttu-id="48812-123">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="48812-123">Bearer {code}</span></span>    |
-| <span data-ttu-id="48812-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="48812-124">Content-Type</span></span>   | <span data-ttu-id="48812-125">application/json</span><span class="sxs-lookup"><span data-stu-id="48812-125">application/json</span></span> |
+| <span data-ttu-id="b6dca-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="b6dca-122">Authorization</span></span>  | <span data-ttu-id="b6dca-123">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="b6dca-123">Bearer {code}</span></span>    |
+| <span data-ttu-id="b6dca-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="b6dca-124">Content-Type</span></span>   | <span data-ttu-id="b6dca-125">application/json</span><span class="sxs-lookup"><span data-stu-id="b6dca-125">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="48812-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="48812-126">Request body</span></span>
-<span data-ttu-id="48812-127">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="48812-127">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b6dca-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="b6dca-126">Request body</span></span>
+<span data-ttu-id="b6dca-127">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="b6dca-127">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="48812-128">パラメーター</span><span class="sxs-lookup"><span data-stu-id="48812-128">Parameter</span></span>    | <span data-ttu-id="48812-129">型</span><span class="sxs-lookup"><span data-stu-id="48812-129">Type</span></span>   |<span data-ttu-id="48812-130">説明</span><span class="sxs-lookup"><span data-stu-id="48812-130">Description</span></span>|
+| <span data-ttu-id="b6dca-128">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b6dca-128">Parameter</span></span>    | <span data-ttu-id="b6dca-129">型</span><span class="sxs-lookup"><span data-stu-id="b6dca-129">Type</span></span>   |<span data-ttu-id="b6dca-130">説明</span><span class="sxs-lookup"><span data-stu-id="b6dca-130">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="48812-131">entityType</span><span class="sxs-lookup"><span data-stu-id="48812-131">entityType</span></span>|<span data-ttu-id="48812-132">String</span><span class="sxs-lookup"><span data-stu-id="48812-132">String</span></span>| <span data-ttu-id="48812-133">`Group`は、サポートされている唯一のエンティティの種類です。</span><span class="sxs-lookup"><span data-stu-id="48812-133">`Group` is the only supported entity type.</span></span> |
-|<span data-ttu-id="48812-134">displayName</span><span class="sxs-lookup"><span data-stu-id="48812-134">displayName</span></span>|<span data-ttu-id="48812-135">文字列</span><span class="sxs-lookup"><span data-stu-id="48812-135">String</span></span>| <span data-ttu-id="48812-136">検証するグループの表示名。</span><span class="sxs-lookup"><span data-stu-id="48812-136">The display name of the group to validate.</span></span> <span data-ttu-id="48812-137">プロパティが個別に必要ではありません。</span><span class="sxs-lookup"><span data-stu-id="48812-137">The property is not individually required.</span></span> <span data-ttu-id="48812-138">ただし、少なくとも1つのプロパティ (displayName または mailNickname) が必要です。</span><span class="sxs-lookup"><span data-stu-id="48812-138">However, at least one property (displayName or mailNickname) is required.</span></span> |
-|<span data-ttu-id="48812-139">mailNickname</span><span class="sxs-lookup"><span data-stu-id="48812-139">mailNickname</span></span>|<span data-ttu-id="48812-140">String</span><span class="sxs-lookup"><span data-stu-id="48812-140">String</span></span>| <span data-ttu-id="48812-141">検証するグループのメールニックネーム。</span><span class="sxs-lookup"><span data-stu-id="48812-141">The mail nickname of the group to validate.</span></span> <span data-ttu-id="48812-142">プロパティが個別に必要ではありません。</span><span class="sxs-lookup"><span data-stu-id="48812-142">The property is not individually required.</span></span> <span data-ttu-id="48812-143">ただし、少なくとも1つのプロパティ (displayName または mailNickname) が必要です。</span><span class="sxs-lookup"><span data-stu-id="48812-143">However, at least one property (displayName or mailNickname) is required.</span></span> |
-|<span data-ttu-id="48812-144">onBehalfOfUserId</span><span class="sxs-lookup"><span data-stu-id="48812-144">onBehalfOfUserId</span></span>|<span data-ttu-id="48812-145">Guid</span><span class="sxs-lookup"><span data-stu-id="48812-145">Guid</span></span>| <span data-ttu-id="48812-146">API を呼び出すときに偽装するユーザーのオブジェクト ID。</span><span class="sxs-lookup"><span data-stu-id="48812-146">The object ID of the user to impersonate when calling the API.</span></span> <span data-ttu-id="48812-147">検証結果は、onBehalfOfUserId の属性とロールに対して行われます。</span><span class="sxs-lookup"><span data-stu-id="48812-147">The validation results are for the onBehalfOfUserId's attributes and roles.</span></span> |
+|<span data-ttu-id="b6dca-131">entityType</span><span class="sxs-lookup"><span data-stu-id="b6dca-131">entityType</span></span>|<span data-ttu-id="b6dca-132">String</span><span class="sxs-lookup"><span data-stu-id="b6dca-132">String</span></span>| <span data-ttu-id="b6dca-133">`Group`は、サポートされている唯一のエンティティの種類です。</span><span class="sxs-lookup"><span data-stu-id="b6dca-133">`Group` is the only supported entity type.</span></span> |
+|<span data-ttu-id="b6dca-134">displayName</span><span class="sxs-lookup"><span data-stu-id="b6dca-134">displayName</span></span>|<span data-ttu-id="b6dca-135">文字列</span><span class="sxs-lookup"><span data-stu-id="b6dca-135">String</span></span>| <span data-ttu-id="b6dca-136">検証するグループの表示名。</span><span class="sxs-lookup"><span data-stu-id="b6dca-136">The display name of the group to validate.</span></span> <span data-ttu-id="b6dca-137">プロパティが個別に必要ではありません。</span><span class="sxs-lookup"><span data-stu-id="b6dca-137">The property is not individually required.</span></span> <span data-ttu-id="b6dca-138">ただし、少なくとも1つのプロパティ (displayName または mailNickname) が必要です。</span><span class="sxs-lookup"><span data-stu-id="b6dca-138">However, at least one property (displayName or mailNickname) is required.</span></span> |
+|<span data-ttu-id="b6dca-139">mailNickname</span><span class="sxs-lookup"><span data-stu-id="b6dca-139">mailNickname</span></span>|<span data-ttu-id="b6dca-140">String</span><span class="sxs-lookup"><span data-stu-id="b6dca-140">String</span></span>| <span data-ttu-id="b6dca-141">検証するグループのメールニックネーム。</span><span class="sxs-lookup"><span data-stu-id="b6dca-141">The mail nickname of the group to validate.</span></span> <span data-ttu-id="b6dca-142">プロパティが個別に必要ではありません。</span><span class="sxs-lookup"><span data-stu-id="b6dca-142">The property is not individually required.</span></span> <span data-ttu-id="b6dca-143">ただし、少なくとも1つのプロパティ (displayName または mailNickname) が必要です。</span><span class="sxs-lookup"><span data-stu-id="b6dca-143">However, at least one property (displayName or mailNickname) is required.</span></span> |
+|<span data-ttu-id="b6dca-144">onBehalfOfUserId</span><span class="sxs-lookup"><span data-stu-id="b6dca-144">onBehalfOfUserId</span></span>|<span data-ttu-id="b6dca-145">Guid</span><span class="sxs-lookup"><span data-stu-id="b6dca-145">Guid</span></span>| <span data-ttu-id="b6dca-146">API を呼び出すときに偽装するユーザーのオブジェクト ID。</span><span class="sxs-lookup"><span data-stu-id="b6dca-146">The object ID of the user to impersonate when calling the API.</span></span> <span data-ttu-id="b6dca-147">検証結果は、onBehalfOfUserId の属性とロールに対して行われます。</span><span class="sxs-lookup"><span data-stu-id="b6dca-147">The validation results are for the onBehalfOfUserId's attributes and roles.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="48812-148">応答</span><span class="sxs-lookup"><span data-stu-id="48812-148">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b6dca-148">応答</span><span class="sxs-lookup"><span data-stu-id="b6dca-148">Response</span></span>
 
-<span data-ttu-id="48812-149">成功した場合、検証エラーがない場合、メソッド`204 No Content`は応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="48812-149">If successful and there are no validation errors, the method returns `204 No Content` response code.</span></span> <span data-ttu-id="48812-150">応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="48812-150">It does not return anything in the response body.</span></span>
+<span data-ttu-id="b6dca-149">成功した場合、検証エラーがない場合、メソッド`204 No Content`は応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="b6dca-149">If successful and there are no validation errors, the method returns `204 No Content` response code.</span></span> <span data-ttu-id="b6dca-150">応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="b6dca-150">It does not return anything in the response body.</span></span>
 
-<span data-ttu-id="48812-151">要求が無効である場合、メソッドは`400 Bad Request`応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="48812-151">If the request is invalid, the method returns `400 Bad Request` response code.</span></span> <span data-ttu-id="48812-152">無効な要求に関する詳細を含むエラーメッセージが応答本文で返されます。</span><span class="sxs-lookup"><span data-stu-id="48812-152">An error message with details about the invalid request is returned in the response body.</span></span>
+<span data-ttu-id="b6dca-151">要求が無効である場合、メソッドは`400 Bad Request`応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="b6dca-151">If the request is invalid, the method returns `400 Bad Request` response code.</span></span> <span data-ttu-id="b6dca-152">無効な要求に関する詳細を含むエラーメッセージが応答本文で返されます。</span><span class="sxs-lookup"><span data-stu-id="b6dca-152">An error message with details about the invalid request is returned in the response body.</span></span>
 
-<span data-ttu-id="48812-153">検証エラーが発生した場合、メソッドは`422 Unprocessable Entity`応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="48812-153">If there is a validation error, the method returns `422 Unprocessable Entity` response code.</span></span> <span data-ttu-id="48812-154">エラーメッセージとエラーの詳細のコレクションが応答本文で返されます。</span><span class="sxs-lookup"><span data-stu-id="48812-154">An error message and a collection of error details is returned in the response body.</span></span>
+<span data-ttu-id="b6dca-153">検証エラーが発生した場合、メソッドは`422 Unprocessable Entity`応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="b6dca-153">If there is a validation error, the method returns `422 Unprocessable Entity` response code.</span></span> <span data-ttu-id="b6dca-154">エラーメッセージとエラーの詳細のコレクションが応答本文で返されます。</span><span class="sxs-lookup"><span data-stu-id="b6dca-154">An error message and a collection of error details is returned in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="48812-155">例</span><span class="sxs-lookup"><span data-stu-id="48812-155">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="b6dca-155">例</span><span class="sxs-lookup"><span data-stu-id="b6dca-155">Examples</span></span>
 
-<span data-ttu-id="48812-156">これは、正常な検証要求の例です。</span><span class="sxs-lookup"><span data-stu-id="48812-156">This is an example of a successful validation request.</span></span>
+<span data-ttu-id="b6dca-156">これは、正常な検証要求の例です。</span><span class="sxs-lookup"><span data-stu-id="b6dca-156">This is an example of a successful validation request.</span></span>
 
-### <a name="request"></a><span data-ttu-id="48812-157">要求</span><span class="sxs-lookup"><span data-stu-id="48812-157">Request</span></span>
+### <a name="request"></a><span data-ttu-id="b6dca-157">要求</span><span class="sxs-lookup"><span data-stu-id="b6dca-157">Request</span></span>
 <!-- {
   "blockType": "request",
   "name": "directoryobject_validateproperties"
@@ -79,7 +79,7 @@ Content-length: 164
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="48812-158">応答</span><span class="sxs-lookup"><span data-stu-id="48812-158">Response</span></span>
+### <a name="response"></a><span data-ttu-id="b6dca-158">応答</span><span class="sxs-lookup"><span data-stu-id="b6dca-158">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -87,20 +87,22 @@ Content-length: 164
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="48812-159">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="48812-159">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="48812-160">C#</span><span class="sxs-lookup"><span data-stu-id="48812-160">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="b6dca-159">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="b6dca-159">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="b6dca-160">C#</span><span class="sxs-lookup"><span data-stu-id="b6dca-160">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/directoryobject_validateproperties-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="48812-161">Javascript</span><span class="sxs-lookup"><span data-stu-id="48812-161">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b6dca-161">Javascript</span><span class="sxs-lookup"><span data-stu-id="b6dca-161">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/directoryobject_validateproperties-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="b6dca-162">目的-C</span><span class="sxs-lookup"><span data-stu-id="b6dca-162">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/directoryobject_validateproperties-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-<span data-ttu-id="48812-162">これは、検証エラーが発生した要求の例です。</span><span class="sxs-lookup"><span data-stu-id="48812-162">This is an example of a request with validation errors.</span></span>
+<span data-ttu-id="b6dca-163">これは、検証エラーが発生した要求の例です。</span><span class="sxs-lookup"><span data-stu-id="b6dca-163">This is an example of a request with validation errors.</span></span>
 
-### <a name="request"></a><span data-ttu-id="48812-163">要求</span><span class="sxs-lookup"><span data-stu-id="48812-163">Request</span></span>
+### <a name="request"></a><span data-ttu-id="b6dca-164">要求</span><span class="sxs-lookup"><span data-stu-id="b6dca-164">Request</span></span>
 ```http
 POST https://graph.microsoft.com/beta/directoryObjects/validateProperties
 Content-type: application/json
@@ -114,7 +116,7 @@ Content-length: 164
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="48812-164">応答</span><span class="sxs-lookup"><span data-stu-id="48812-164">Response</span></span>
+### <a name="response"></a><span data-ttu-id="b6dca-165">応答</span><span class="sxs-lookup"><span data-stu-id="b6dca-165">Response</span></span>
 ```http
 HTTP/1.1 422 
 Content-Type: application/json
@@ -156,6 +158,7 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/directoryobject-validateproperties.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/directoryobject-validateproperties.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/directoryobject-validateproperties.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

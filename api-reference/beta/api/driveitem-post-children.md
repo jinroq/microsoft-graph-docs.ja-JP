@@ -5,30 +5,30 @@ ms.date: 09/10/2017
 title: 新しいフォルダーを作成する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 7e232e57a60d5c9b8665bf0ef2a0aee96df5c677
-ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
+ms.openlocfilehash: 24dd98b66eb65d190a8c2177df63a5255def96b5
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34536121"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35260047"
 ---
-# <a name="create-a-new-folder-in-a-drive"></a><span data-ttu-id="819f7-102">ドライブに新しいフォルダーを作成する</span><span class="sxs-lookup"><span data-stu-id="819f7-102">Create a new folder in a drive</span></span>
+# <a name="create-a-new-folder-in-a-drive"></a><span data-ttu-id="7d025-102">ドライブに新しいフォルダーを作成する</span><span class="sxs-lookup"><span data-stu-id="7d025-102">Create a new folder in a drive</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="819f7-103">新しいフォルダーまたは [DriveItem](../resources/driveitem.md) を、親アイテムやパスを指定して[ドライブ](../resources/drive.md)に作成します。</span><span class="sxs-lookup"><span data-stu-id="819f7-103">Create a new folder or [DriveItem](../resources/driveitem.md) in a [Drive](../resources/drive.md) with a specified parent item or path.</span></span>
+<span data-ttu-id="7d025-103">新しいフォルダーまたは [DriveItem](../resources/driveitem.md) を、親アイテムやパスを指定して[ドライブ](../resources/drive.md)に作成します。</span><span class="sxs-lookup"><span data-stu-id="7d025-103">Create a new folder or [DriveItem](../resources/driveitem.md) in a [Drive](../resources/drive.md) with a specified parent item or path.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="819f7-104">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="819f7-104">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="7d025-104">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="7d025-104">Permissions</span></span>
 
-<span data-ttu-id="819f7-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="819f7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="7d025-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7d025-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="819f7-107">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="819f7-107">Permission type</span></span>      | <span data-ttu-id="819f7-108">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="819f7-108">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="7d025-107">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="7d025-107">Permission type</span></span>      | <span data-ttu-id="7d025-108">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="7d025-108">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="819f7-109">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="819f7-109">Delegated (work or school account)</span></span> | <span data-ttu-id="819f7-110">Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="819f7-110">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="819f7-111">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="819f7-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="819f7-112">Files.ReadWrite、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="819f7-112">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="819f7-113">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="819f7-113">Application</span></span> | <span data-ttu-id="819f7-114">Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="819f7-114">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="7d025-109">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="7d025-109">Delegated (work or school account)</span></span> | <span data-ttu-id="7d025-110">Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7d025-110">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="7d025-111">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="7d025-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7d025-112">Files.ReadWrite、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7d025-112">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="7d025-113">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="7d025-113">Application</span></span> | <span data-ttu-id="7d025-114">Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7d025-114">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="819f7-115">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="819f7-115">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7d025-115">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="7d025-115">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -40,20 +40,20 @@ POST /sites/{site-id}/drive/items/{parent-item-id}/children
 POST /users/{user-id}/drive/items/{parent-item-id}/children
 ```
 
-## <a name="request-body"></a><span data-ttu-id="819f7-116">要求本文</span><span class="sxs-lookup"><span data-stu-id="819f7-116">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="7d025-116">要求本文</span><span class="sxs-lookup"><span data-stu-id="7d025-116">Request body</span></span>
 
-<span data-ttu-id="819f7-117">要求本文で、作成する [DriveItem](../resources/driveitem.md) リソースの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="819f7-117">In the request body, supply a JSON representation of the [DriveItem](../resources/driveitem.md) resource to create.</span></span>
+<span data-ttu-id="7d025-117">要求本文で、作成する [DriveItem](../resources/driveitem.md) リソースの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="7d025-117">In the request body, supply a JSON representation of the [DriveItem](../resources/driveitem.md) resource to create.</span></span>
 
-## <a name="response"></a><span data-ttu-id="819f7-118">応答</span><span class="sxs-lookup"><span data-stu-id="819f7-118">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7d025-118">応答</span><span class="sxs-lookup"><span data-stu-id="7d025-118">Response</span></span>
 
-<span data-ttu-id="819f7-119">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [Driveitem](../resources/driveitem.md) リソースを返します。</span><span class="sxs-lookup"><span data-stu-id="819f7-119">If successful, this method returns `201 Created` response code and a [Driveitem](../resources/driveitem.md) resource in the response body.</span></span>
+<span data-ttu-id="7d025-119">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [Driveitem](../resources/driveitem.md) リソースを返します。</span><span class="sxs-lookup"><span data-stu-id="7d025-119">If successful, this method returns `201 Created` response code and a [Driveitem](../resources/driveitem.md) resource in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="819f7-120">例</span><span class="sxs-lookup"><span data-stu-id="819f7-120">Example</span></span>
+## <a name="example"></a><span data-ttu-id="7d025-120">例</span><span class="sxs-lookup"><span data-stu-id="7d025-120">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="819f7-121">要求</span><span class="sxs-lookup"><span data-stu-id="819f7-121">Request</span></span>
+### <a name="request"></a><span data-ttu-id="7d025-121">要求</span><span class="sxs-lookup"><span data-stu-id="7d025-121">Request</span></span>
 
-<span data-ttu-id="819f7-122">以下は、サインイン ユーザーの OneDrive のルート フォルダーに新しいフォルダーを作成する要求の例です。</span><span class="sxs-lookup"><span data-stu-id="819f7-122">Here is an example of the request to create a new folder in the signed-in user's OneDrive root folder.</span></span>
-<span data-ttu-id="819f7-123">使用されている `@microsoft.graph.conflictBehavior` プロパティは、同じ名前のアイテムが既に存在する場合に、サービスはフォルダーを作成する際にフォルダーの新しい名前を選択する必要があることを示します。</span><span class="sxs-lookup"><span data-stu-id="819f7-123">The `@microsoft.graph.conflictBehavior` property used indicates that if an item already exists with the same name, the service should choose a new name for the folder while creating it.</span></span>
+<span data-ttu-id="7d025-122">以下は、サインイン ユーザーの OneDrive のルート フォルダーに新しいフォルダーを作成する要求の例です。</span><span class="sxs-lookup"><span data-stu-id="7d025-122">Here is an example of the request to create a new folder in the signed-in user's OneDrive root folder.</span></span>
+<span data-ttu-id="7d025-123">使用されている `@microsoft.graph.conflictBehavior` プロパティは、同じ名前のアイテムが既に存在する場合に、サービスはフォルダーを作成する際にフォルダーの新しい名前を選択する必要があることを示します。</span><span class="sxs-lookup"><span data-stu-id="7d025-123">The `@microsoft.graph.conflictBehavior` property used indicates that if an item already exists with the same name, the service should choose a new name for the folder while creating it.</span></span>
 
 <!-- { "blockType": "request", "name": "create-folder", "scopes": "files.readwrite" } -->
 
@@ -68,9 +68,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="819f7-124">応答</span><span class="sxs-lookup"><span data-stu-id="819f7-124">Response</span></span>
+### <a name="response"></a><span data-ttu-id="7d025-124">応答</span><span class="sxs-lookup"><span data-stu-id="7d025-124">Response</span></span>
 
-<span data-ttu-id="819f7-125">成功した場合、このメソッドは新しく作成されたフォルダーを [DriveItem][item-resource] リソースとして返します。</span><span class="sxs-lookup"><span data-stu-id="819f7-125">If successful, this method returns the newly created folder as a [DriveItem][item-resource] resource.</span></span>
+<span data-ttu-id="7d025-125">成功した場合、このメソッドは新しく作成されたフォルダーを [DriveItem][item-resource] リソースとして返します。</span><span class="sxs-lookup"><span data-stu-id="7d025-125">If successful, this method returns the newly created folder as a [DriveItem][item-resource] resource.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -107,20 +107,22 @@ Content-Type: application/json
   }
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="819f7-126">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="819f7-126">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="819f7-127">C#</span><span class="sxs-lookup"><span data-stu-id="819f7-127">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="7d025-126">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="7d025-126">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="7d025-127">C#</span><span class="sxs-lookup"><span data-stu-id="7d025-127">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/create-folder-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="819f7-128">Javascript</span><span class="sxs-lookup"><span data-stu-id="819f7-128">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7d025-128">Javascript</span><span class="sxs-lookup"><span data-stu-id="7d025-128">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create-folder-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="7d025-129">目的-C</span><span class="sxs-lookup"><span data-stu-id="7d025-129">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create-folder-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-## <a name="error-response"></a><span data-ttu-id="819f7-129">エラー応答</span><span class="sxs-lookup"><span data-stu-id="819f7-129">Error response</span></span>
+## <a name="error-response"></a><span data-ttu-id="7d025-130">エラー応答</span><span class="sxs-lookup"><span data-stu-id="7d025-130">Error response</span></span>
 
-<span data-ttu-id="819f7-130">エラーがどのように返されるかについては、「[エラー応答][error-response]」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="819f7-130">See [Error Responses][error-response] for more info about how errors are returned.</span></span>
+<span data-ttu-id="7d025-131">エラーがどのように返されるかについては、「[エラー応答][error-response]」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7d025-131">See [Error Responses][error-response] for more info about how errors are returned.</span></span>
 
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
@@ -134,6 +136,7 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "Items/Create folder",
   "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-post-children.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/driveitem-post-children.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/driveitem-post-children.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
