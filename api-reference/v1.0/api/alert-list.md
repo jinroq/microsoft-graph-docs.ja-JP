@@ -1,19 +1,17 @@
 ---
 title: アラートを一覧表示する
 description: alert オブジェクトのリストを取得する。
-localization_priority: Normal
 author: preetikr
+localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: d18f49c5e1a0dcc8d079816ff7ad17c6e21df2ee
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 82861f380005390fe19adcf0073267ad1d5f7e05
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551380"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35273711"
 ---
 # <a name="list-alerts"></a>アラートを一覧表示する
-
- [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [alert](../resources/alert.md) オブジェクトのリストを取得する。
 
@@ -48,7 +46,7 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 - `$orderby`
 - `$select`
 - `$skip`
-- `$top` は、各セキュリティ API プロバイダーから集計された上位の結果を返します。
+- `$top` は、各セキュリティ API プロバイダーから集計された上位の結果を返します。  
 
 別のプロパティ セットを返すには、OData `$select` クエリ パラメーターを使用し、目的の **alert** プロパティのセットを指定します。  例えば、**assignedTo**、**category**、および **severity** プロパティを返すには、以下をクエリに追加します: `$select=assignedTo,category,severity`。
 
@@ -79,14 +77,14 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/security/alerts
+GET https://graph.microsoft.com/v1.0/security/alerts
 ```
 
 ### <a name="response"></a>応答
 
 応答の例を次に示します。
 
->**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
+>**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -111,16 +109,30 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_alerts-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_alerts-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_alerts-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List alerts",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/alert-list.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/alert-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/alert-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

@@ -4,12 +4,12 @@ description: chartlegend オブジェクトのプロパティを更新します�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: bdd765cebe86015bdd01ef42c9db829a89c7749f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 07f5661e996e966a1c8b81901cd5efcf4a81dfd9
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579931"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35272409"
 ---
 # <a name="update-chartlegend"></a>Update chartlegend
 
@@ -40,7 +40,7 @@ PATCH /workbook/worksheets/{id|name}/charts/{name}/legend
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |overlay|ブール値|グラフの凡例をグラフの本体に重ねるかどうかを指定するブール型の値です。|
-|position|string|グラフの凡例の位置を表します。 使用可能な値は`Top`、 `Bottom`、 `Left` `Right` `Corner`、、、 `Custom`、です。|
+|position|string|グラフの凡例の位置を表します。 使用可能な値: `Top`、`Bottom`、`Left`、`Right`、`Corner`、`Custom`。|
 |visible|ブール値|ChartLegend オブジェクトを表示または非表示にするかを表すブール型の値。|
 
 ## <a name="response"></a>応答
@@ -82,6 +82,18 @@ Content-length: 72
   "overlay": true
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_chartlegend-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_chartlegend-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[目的-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_chartlegend-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -90,5 +102,10 @@ Content-length: 72
   "description": "Update chartlegend",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/chartlegend-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/chartlegend-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/chartlegend-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->
