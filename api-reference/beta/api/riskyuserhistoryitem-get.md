@@ -4,51 +4,51 @@ description: RiskyUser オブジェクトの履歴アイテムを取得します
 localization_priority: Normal
 author: cloudhandler
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b185444057349700978786f235249f6222ebfbb9
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 37ab3b0598ce54bec38fbd3feb719b1b0b2047bf
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33960922"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35265003"
 ---
-# <a name="get-riskyuserhistoryitem"></a><span data-ttu-id="bf655-103">RiskyUserHistoryItem を取得する</span><span class="sxs-lookup"><span data-stu-id="bf655-103">Get riskyUserHistoryItem</span></span>
+# <a name="get-riskyuserhistoryitem"></a><span data-ttu-id="6ab2a-103">RiskyUserHistoryItem を取得する</span><span class="sxs-lookup"><span data-stu-id="6ab2a-103">Get riskyUserHistoryItem</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="bf655-104">[RiskyUser](../resources/riskyuser.md)の[RiskyUserHistoryItem](../resources/riskyuserhistoryitem.md)オブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="bf655-104">Get a [riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) object of a [riskyUser](../resources/riskyuser.md).</span></span>
+<span data-ttu-id="6ab2a-104">[RiskyUser](../resources/riskyuser.md)の[riskyUserHistoryItem](../resources/riskyuserhistoryitem.md)オブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="6ab2a-104">Get a [riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) object of a [riskyUser](../resources/riskyuser.md).</span></span>
 
-><span data-ttu-id="bf655-105">**注:** RiskyUsers API を使用するには、Azure AD Premium P2 ライセンスが必要です。</span><span class="sxs-lookup"><span data-stu-id="bf655-105">**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.</span></span>
+><span data-ttu-id="6ab2a-105">**注:** RiskyUsers API を使用するには、Azure AD Premium P2 ライセンスが必要です。</span><span class="sxs-lookup"><span data-stu-id="6ab2a-105">**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="bf655-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="bf655-106">Permissions</span></span>
-<span data-ttu-id="bf655-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="bf655-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="6ab2a-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="6ab2a-106">Permissions</span></span>
+<span data-ttu-id="6ab2a-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6ab2a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="bf655-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="bf655-109">Permission type</span></span>      | <span data-ttu-id="bf655-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="bf655-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="6ab2a-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="6ab2a-109">Permission type</span></span>      | <span data-ttu-id="6ab2a-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="6ab2a-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="bf655-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="bf655-111">Delegated (work or school account)</span></span> | <span data-ttu-id="bf655-112">IdentityRiskyUser、IdentityRiskUser のいずれかを取得します。</span><span class="sxs-lookup"><span data-stu-id="bf655-112">IdentityRiskyUser.Read.All, IdentityRiskUser.ReadWrite.All</span></span>    |
-|<span data-ttu-id="bf655-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="bf655-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bf655-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="bf655-114">Not supported.</span></span>    |
-|<span data-ttu-id="bf655-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="bf655-115">Application</span></span> | <span data-ttu-id="bf655-116">IdentityRiskyUser、IdentityRiskUser のいずれかを取得します。</span><span class="sxs-lookup"><span data-stu-id="bf655-116">IdentityRiskyUser.Read.All, IdentityRiskUser.ReadWrite.All</span></span> |
+|<span data-ttu-id="6ab2a-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="6ab2a-111">Delegated (work or school account)</span></span> | <span data-ttu-id="6ab2a-112">IdentityRiskyUser、IdentityRiskUser のいずれかを取得します。</span><span class="sxs-lookup"><span data-stu-id="6ab2a-112">IdentityRiskyUser.Read.All, IdentityRiskUser.ReadWrite.All</span></span>    |
+|<span data-ttu-id="6ab2a-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="6ab2a-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6ab2a-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="6ab2a-114">Not supported.</span></span>    |
+|<span data-ttu-id="6ab2a-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="6ab2a-115">Application</span></span> | <span data-ttu-id="6ab2a-116">IdentityRiskyUser、IdentityRiskUser のいずれかを取得します。</span><span class="sxs-lookup"><span data-stu-id="6ab2a-116">IdentityRiskyUser.Read.All, IdentityRiskUser.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="bf655-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="bf655-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6ab2a-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="6ab2a-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /riskyUsers/{userid}/history/{id}
 ```
 
 
-## <a name="request-headers"></a><span data-ttu-id="bf655-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="bf655-118">Request headers</span></span>
-| <span data-ttu-id="bf655-119">名前</span><span class="sxs-lookup"><span data-stu-id="bf655-119">Name</span></span>      |<span data-ttu-id="bf655-120">説明</span><span class="sxs-lookup"><span data-stu-id="bf655-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="6ab2a-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="6ab2a-118">Request headers</span></span>
+| <span data-ttu-id="6ab2a-119">名前</span><span class="sxs-lookup"><span data-stu-id="6ab2a-119">Name</span></span>      |<span data-ttu-id="6ab2a-120">説明</span><span class="sxs-lookup"><span data-stu-id="6ab2a-120">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="bf655-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="bf655-121">Authorization</span></span>  | <span data-ttu-id="bf655-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="bf655-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="6ab2a-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="6ab2a-121">Authorization</span></span>  | <span data-ttu-id="6ab2a-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="6ab2a-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="bf655-124">要求本文</span><span class="sxs-lookup"><span data-stu-id="bf655-124">Request body</span></span>
-<span data-ttu-id="bf655-125">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="bf655-125">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6ab2a-124">要求本文</span><span class="sxs-lookup"><span data-stu-id="6ab2a-124">Request body</span></span>
+<span data-ttu-id="6ab2a-125">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="6ab2a-125">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="bf655-126">応答</span><span class="sxs-lookup"><span data-stu-id="bf655-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6ab2a-126">応答</span><span class="sxs-lookup"><span data-stu-id="6ab2a-126">Response</span></span>
 
-<span data-ttu-id="bf655-127">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[riskyUserHistoryItem](../resources/riskyuserhistoryitem.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="bf655-127">If successful, this method returns a `200 OK` response code and a [riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="bf655-128">例</span><span class="sxs-lookup"><span data-stu-id="bf655-128">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="bf655-129">要求</span><span class="sxs-lookup"><span data-stu-id="bf655-129">Request</span></span>
-<span data-ttu-id="bf655-130">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="bf655-130">Here is an example of the request.</span></span>
+<span data-ttu-id="6ab2a-127">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[riskyUserHistoryItem](../resources/riskyuserhistoryitem.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="6ab2a-127">If successful, this method returns a `200 OK` response code and a [riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="6ab2a-128">例</span><span class="sxs-lookup"><span data-stu-id="6ab2a-128">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="6ab2a-129">要求</span><span class="sxs-lookup"><span data-stu-id="6ab2a-129">Request</span></span>
+<span data-ttu-id="6ab2a-130">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="6ab2a-130">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_riskyuser_historyitem",
@@ -57,8 +57,8 @@ GET /riskyUsers/{userid}/history/{id}
 ```http
 GET https://graph.microsoft.com/beta/riskyUsers/41a31b00-3b3b-42d9-8f1c-6d4f14e74c69/history/41a31b00-3b3b-42d9-8f1c-6d4f14e74c69
 ```
-##### <a name="response"></a><span data-ttu-id="bf655-131">応答</span><span class="sxs-lookup"><span data-stu-id="bf655-131">Response</span></span>
-<span data-ttu-id="bf655-132">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="bf655-132">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="6ab2a-131">応答</span><span class="sxs-lookup"><span data-stu-id="6ab2a-131">Response</span></span>
+<span data-ttu-id="6ab2a-132">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="6ab2a-132">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -87,13 +87,15 @@ Content-type: application/json
     }
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="bf655-133">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="bf655-133">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="bf655-134">C#</span><span class="sxs-lookup"><span data-stu-id="bf655-134">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="6ab2a-133">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="6ab2a-133">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="6ab2a-134">C#</span><span class="sxs-lookup"><span data-stu-id="6ab2a-134">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_riskyuser_historyitem-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="bf655-135">Javascript</span><span class="sxs-lookup"><span data-stu-id="bf655-135">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="6ab2a-135">Javascript</span><span class="sxs-lookup"><span data-stu-id="6ab2a-135">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_riskyuser_historyitem-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="6ab2a-136">目的-C</span><span class="sxs-lookup"><span data-stu-id="6ab2a-136">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_riskyuser_historyitem-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -107,6 +109,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/riskyuserhistoryitem-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/riskyuserhistoryitem-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/riskyuserhistoryitem-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

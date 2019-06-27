@@ -4,46 +4,46 @@ description: このAPIを使用して新しいイベントを作成します。
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: 89398b5636734b50c983e5dbb3526b40982d767f
-ms.sourcegitcommit: abca7fcefeaa74b50f4600b35d816b626ba08468
+ms.openlocfilehash: b37358619080b545fa217c2c9264b84571104538
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "34310895"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35277792"
 ---
-# <a name="create-event"></a><span data-ttu-id="ee7a3-103">イベントを作成する</span><span class="sxs-lookup"><span data-stu-id="ee7a3-103">Create event</span></span>
-<span data-ttu-id="ee7a3-104">この API を使用して、新しい[イベント](../resources/event.md)を作成します。</span><span class="sxs-lookup"><span data-stu-id="ee7a3-104">Use this API to create a new [event](../resources/event.md).</span></span>
+# <a name="create-event"></a><span data-ttu-id="99083-103">イベントを作成する</span><span class="sxs-lookup"><span data-stu-id="99083-103">Create event</span></span>
+<span data-ttu-id="99083-104">この API を使用して、新しい[イベント](../resources/event.md)を作成します。</span><span class="sxs-lookup"><span data-stu-id="99083-104">Use this API to create a new [event](../resources/event.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="ee7a3-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="ee7a3-105">Permissions</span></span>
-<span data-ttu-id="ee7a3-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ee7a3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="99083-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="99083-105">Permissions</span></span>
+<span data-ttu-id="99083-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="99083-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ee7a3-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="ee7a3-108">Permission type</span></span>      | <span data-ttu-id="ee7a3-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="ee7a3-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="99083-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="99083-108">Permission type</span></span>      | <span data-ttu-id="99083-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="99083-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ee7a3-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="ee7a3-110">Delegated (work or school account)</span></span> | <span data-ttu-id="ee7a3-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ee7a3-111">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="ee7a3-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="ee7a3-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ee7a3-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="ee7a3-113">Not supported.</span></span>    |
-|<span data-ttu-id="ee7a3-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="ee7a3-114">Application</span></span> | <span data-ttu-id="ee7a3-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="ee7a3-115">Not supported.</span></span> |
+|<span data-ttu-id="99083-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="99083-110">Delegated (work or school account)</span></span> | <span data-ttu-id="99083-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="99083-111">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="99083-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="99083-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="99083-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="99083-113">Not supported.</span></span>    |
+|<span data-ttu-id="99083-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="99083-114">Application</span></span> | <span data-ttu-id="99083-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="99083-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ee7a3-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="ee7a3-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="99083-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="99083-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/events
 POST /groups/{id}/calendar/events
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="ee7a3-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="ee7a3-117">Request headers</span></span>
-| <span data-ttu-id="ee7a3-118">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="ee7a3-118">Header</span></span>       | <span data-ttu-id="ee7a3-119">値</span><span class="sxs-lookup"><span data-stu-id="ee7a3-119">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="99083-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="99083-117">Request headers</span></span>
+| <span data-ttu-id="99083-118">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="99083-118">Header</span></span>       | <span data-ttu-id="99083-119">値</span><span class="sxs-lookup"><span data-stu-id="99083-119">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="ee7a3-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="ee7a3-120">Authorization</span></span>  | <span data-ttu-id="ee7a3-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="ee7a3-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="99083-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="99083-120">Authorization</span></span>  | <span data-ttu-id="99083-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="99083-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="ee7a3-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="ee7a3-123">Request body</span></span>
-<span data-ttu-id="ee7a3-124">要求本文で、[イベント](../resources/event.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="ee7a3-124">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="99083-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="99083-123">Request body</span></span>
+<span data-ttu-id="99083-124">要求本文で、[イベント](../resources/event.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="99083-124">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ee7a3-125">応答</span><span class="sxs-lookup"><span data-stu-id="ee7a3-125">Response</span></span>
-<span data-ttu-id="ee7a3-126">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で[イベント](../resources/event.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="ee7a3-126">If successful, this method returns `201 Created` response code and [event](../resources/event.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="99083-125">応答</span><span class="sxs-lookup"><span data-stu-id="99083-125">Response</span></span>
+<span data-ttu-id="99083-126">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で[イベント](../resources/event.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="99083-126">If successful, this method returns `201 Created` response code and [event](../resources/event.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ee7a3-127">例</span><span class="sxs-lookup"><span data-stu-id="ee7a3-127">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="ee7a3-128">要求</span><span class="sxs-lookup"><span data-stu-id="ee7a3-128">Request</span></span>
-<span data-ttu-id="ee7a3-129">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="ee7a3-129">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="99083-127">例</span><span class="sxs-lookup"><span data-stu-id="99083-127">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="99083-128">要求</span><span class="sxs-lookup"><span data-stu-id="99083-128">Request</span></span>
+<span data-ttu-id="99083-129">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="99083-129">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "sampleKeys": ["01d4ee64-15ce-491e-bad1-b91aa3223df4"],
@@ -81,11 +81,11 @@ Content-type: application/json
   ]
 }
 ```
-<span data-ttu-id="ee7a3-130">要求本文で、[イベント](../resources/event.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="ee7a3-130">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
+<span data-ttu-id="99083-130">要求本文で、[イベント](../resources/event.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="99083-130">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
 
-#### <a name="response"></a><span data-ttu-id="ee7a3-131">応答</span><span class="sxs-lookup"><span data-stu-id="ee7a3-131">Response</span></span>
-<span data-ttu-id="ee7a3-132">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="ee7a3-132">The following is an example of the response.</span></span>
-><span data-ttu-id="ee7a3-p103">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="ee7a3-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="99083-131">応答</span><span class="sxs-lookup"><span data-stu-id="99083-131">Response</span></span>
+<span data-ttu-id="99083-132">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="99083-132">The following is an example of the response.</span></span>
+><span data-ttu-id="99083-p103">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="99083-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -175,13 +175,15 @@ Content-type: application/json
     }
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="ee7a3-135">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="ee7a3-135">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="ee7a3-136">C#</span><span class="sxs-lookup"><span data-stu-id="ee7a3-136">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="99083-135">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="99083-135">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="99083-136">C#</span><span class="sxs-lookup"><span data-stu-id="99083-136">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/create_event_from_group-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ee7a3-137">Javascript</span><span class="sxs-lookup"><span data-stu-id="ee7a3-137">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="99083-137">Javascript</span><span class="sxs-lookup"><span data-stu-id="99083-137">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_event_from_group-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="99083-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="99083-138">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create_event_from_group-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -195,6 +197,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/group-post-events.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/group-post-events.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/group-post-events.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
