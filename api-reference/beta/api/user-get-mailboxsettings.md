@@ -4,43 +4,43 @@ description: 'ユーザーの mailboxSettings を取得します。 これには
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9cf98ffc7e0824737239868bbaadb3b2c4bead0f
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 7643c40daa2a53b4c22ff2f17c7b8026dc93f365
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33637354"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35270344"
 ---
-# <a name="get-user-mailbox-settings"></a><span data-ttu-id="a71b8-104">ユーザーのメールボックスの設定を取得する</span><span class="sxs-lookup"><span data-stu-id="a71b8-104">Get user mailbox settings</span></span>
+# <a name="get-user-mailbox-settings"></a><span data-ttu-id="89285-104">ユーザーのメールボックスの設定を取得する</span><span class="sxs-lookup"><span data-stu-id="89285-104">Get user mailbox settings</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a71b8-105">ユーザーの [mailboxSettings](../resources/mailboxsettings.md) を取得します。</span><span class="sxs-lookup"><span data-stu-id="a71b8-105">Get the user's [mailboxSettings](../resources/mailboxsettings.md).</span></span> <span data-ttu-id="a71b8-106">これには、自動応答の設定 (電子メールの受信時にユーザーに自動的に通知される)、ロケール (言語と国/地域)、タイムゾーン、および稼働時間の設定が含まれます。</span><span class="sxs-lookup"><span data-stu-id="a71b8-106">This includes settings for automatic replies (notify people automatically upon receipt of their email), locale (language and country/region), time zone, and working hours.</span></span>
+<span data-ttu-id="89285-105">ユーザーの [mailboxSettings](../resources/mailboxsettings.md) を取得します。</span><span class="sxs-lookup"><span data-stu-id="89285-105">Get the user's [mailboxSettings](../resources/mailboxsettings.md).</span></span> <span data-ttu-id="89285-106">これには、自動応答の設定 (電子メールの受信時にユーザーに自動的に通知される)、ロケール (言語と国/地域)、タイムゾーン、および稼働時間の設定が含まれます。</span><span class="sxs-lookup"><span data-stu-id="89285-106">This includes settings for automatic replies (notify people automatically upon receipt of their email), locale (language and country/region), time zone, and working hours.</span></span>
 
-<span data-ttu-id="a71b8-107">すべてのメールボックス設定を表示することも、特定の設定を取得することもできます。</span><span class="sxs-lookup"><span data-stu-id="a71b8-107">You can view all mailbox settings, or, get specific settings.</span></span>
+<span data-ttu-id="89285-107">すべてのメールボックス設定を表示することも、特定の設定を取得することもできます。</span><span class="sxs-lookup"><span data-stu-id="89285-107">You can view all mailbox settings, or, get specific settings.</span></span>
 
-<span data-ttu-id="a71b8-108">タイム ゾーンは、ユーザーが自分のメールボックスに設定できる優先設定のうちの 1 つです。</span><span class="sxs-lookup"><span data-stu-id="a71b8-108">Time zone is one of the preferred settings a user can set up for the user's mailbox.</span></span> <span data-ttu-id="a71b8-109">ユーザーは、ユーザーのメールボックスサーバーに対して管理者が設定した、サポートされている[タイムゾーン](outlookuser-supportedtimezones.md)からそれを選択します。</span><span class="sxs-lookup"><span data-stu-id="a71b8-109">The user chooses it from the [supported time zones](outlookuser-supportedtimezones.md) that an administrator has set up for the user's mailbox server.</span></span> <span data-ttu-id="a71b8-110">管理者は、Windows タイムゾーン形式または[インターネット割り当て番号オーソリティ (IANA) タイムゾーン](https://www.iana.org/time-zones)(olson タイムゾーンとも呼ばれる) 形式でタイムゾーンを設定します。</span><span class="sxs-lookup"><span data-stu-id="a71b8-110">The administrator sets up time zones in the Windows time zone format or  [Internet Assigned Numbers Authority (IANA) time zone](https://www.iana.org/time-zones) (also known as Olson time zone) format.</span></span> <span data-ttu-id="a71b8-111">既定値は Windows 形式です。</span><span class="sxs-lookup"><span data-stu-id="a71b8-111">The Windows format is the default.</span></span> 
+<span data-ttu-id="89285-108">タイム ゾーンは、ユーザーが自分のメールボックスに設定できる優先設定のうちの 1 つです。</span><span class="sxs-lookup"><span data-stu-id="89285-108">Time zone is one of the preferred settings a user can set up for the user's mailbox.</span></span> <span data-ttu-id="89285-109">ユーザーは、ユーザーのメールボックスサーバーに対して管理者が設定した、サポートされている[タイムゾーン](outlookuser-supportedtimezones.md)からそれを選択します。</span><span class="sxs-lookup"><span data-stu-id="89285-109">The user chooses it from the [supported time zones](outlookuser-supportedtimezones.md) that an administrator has set up for the user's mailbox server.</span></span> <span data-ttu-id="89285-110">管理者は、Windows タイムゾーン形式または[インターネット割り当て番号オーソリティ (IANA) タイムゾーン](https://www.iana.org/time-zones)(olson タイムゾーンとも呼ばれる) 形式でタイムゾーンを設定します。</span><span class="sxs-lookup"><span data-stu-id="89285-110">The administrator sets up time zones in the Windows time zone format or  [Internet Assigned Numbers Authority (IANA) time zone](https://www.iana.org/time-zones) (also known as Olson time zone) format.</span></span> <span data-ttu-id="89285-111">既定値は Windows 形式です。</span><span class="sxs-lookup"><span data-stu-id="89285-111">The Windows format is the default.</span></span> 
 
-<span data-ttu-id="a71b8-112">ユーザーの優先タイム ゾーンを取得するとき、そのタイム ゾーンは設定された形式で返されます。</span><span class="sxs-lookup"><span data-stu-id="a71b8-112">When you get a user's preferred time zone, the time zone is returned in the format that it was set up.</span></span> <span data-ttu-id="a71b8-113">タイム ゾーンを特定の形式 (Windows または IANA) にする場合は、最初に[メールボックス設定としてその形式の優先タイム ゾーンを更新](user-update-mailboxsettings.md)します。</span><span class="sxs-lookup"><span data-stu-id="a71b8-113">If you want that time zone to be in a specific format (Windows or IANA), you can first [update the preferred time zone in that format as a mailbox setting](user-update-mailboxsettings.md).</span></span> <span data-ttu-id="a71b8-114">その後は、その形式でタイム ゾーンを取得できるようになります。</span><span class="sxs-lookup"><span data-stu-id="a71b8-114">Subsequently you will be able to get the time zone in that format.</span></span> <span data-ttu-id="a71b8-115">または、アプリ内で形式変換を個別に管理することもできます。</span><span class="sxs-lookup"><span data-stu-id="a71b8-115">Alternatively, you can manage the format conversion separately in your app.</span></span>
+<span data-ttu-id="89285-112">ユーザーの優先タイム ゾーンを取得するとき、そのタイム ゾーンは設定された形式で返されます。</span><span class="sxs-lookup"><span data-stu-id="89285-112">When you get a user's preferred time zone, the time zone is returned in the format that it was set up.</span></span> <span data-ttu-id="89285-113">タイム ゾーンを特定の形式 (Windows または IANA) にする場合は、最初に[メールボックス設定としてその形式の優先タイム ゾーンを更新](user-update-mailboxsettings.md)します。</span><span class="sxs-lookup"><span data-stu-id="89285-113">If you want that time zone to be in a specific format (Windows or IANA), you can first [update the preferred time zone in that format as a mailbox setting](user-update-mailboxsettings.md).</span></span> <span data-ttu-id="89285-114">その後は、その形式でタイム ゾーンを取得できるようになります。</span><span class="sxs-lookup"><span data-stu-id="89285-114">Subsequently you will be able to get the time zone in that format.</span></span> <span data-ttu-id="89285-115">または、アプリ内で形式変換を個別に管理することもできます。</span><span class="sxs-lookup"><span data-stu-id="89285-115">Alternatively, you can manage the format conversion separately in your app.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a71b8-116">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="a71b8-116">Permissions</span></span>
-<span data-ttu-id="a71b8-p105">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a71b8-p105">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="89285-116">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="89285-116">Permissions</span></span>
+<span data-ttu-id="89285-p105">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="89285-p105">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a71b8-119">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="a71b8-119">Permission type</span></span>      | <span data-ttu-id="a71b8-120">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="a71b8-120">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="89285-119">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="89285-119">Permission type</span></span>      | <span data-ttu-id="89285-120">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="89285-120">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a71b8-121">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="a71b8-121">Delegated (work or school account)</span></span> | <span data-ttu-id="a71b8-122">MailboxSettings.Read、MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a71b8-122">MailboxSettings.Read, MailboxSettings.ReadWrite</span></span>    |
-|<span data-ttu-id="a71b8-123">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="a71b8-123">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a71b8-124">MailboxSettings.Read、MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a71b8-124">MailboxSettings.Read, MailboxSettings.ReadWrite</span></span>    |
-|<span data-ttu-id="a71b8-125">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="a71b8-125">Application</span></span> | <span data-ttu-id="a71b8-126">MailboxSettings.Read、MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a71b8-126">MailboxSettings.Read, MailboxSettings.ReadWrite</span></span> |
+|<span data-ttu-id="89285-121">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="89285-121">Delegated (work or school account)</span></span> | <span data-ttu-id="89285-122">MailboxSettings.Read、MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="89285-122">MailboxSettings.Read, MailboxSettings.ReadWrite</span></span>    |
+|<span data-ttu-id="89285-123">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="89285-123">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="89285-124">MailboxSettings.Read、MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="89285-124">MailboxSettings.Read, MailboxSettings.ReadWrite</span></span>    |
+|<span data-ttu-id="89285-125">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="89285-125">Application</span></span> | <span data-ttu-id="89285-126">MailboxSettings.Read、MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="89285-126">MailboxSettings.Read, MailboxSettings.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a71b8-127">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="a71b8-127">HTTP request</span></span>
-<span data-ttu-id="a71b8-128">ユーザーのすべてのメールボックス設定を取得するには、次のようにします。</span><span class="sxs-lookup"><span data-stu-id="a71b8-128">To get all the mailbox settings for a user:</span></span>
+## <a name="http-request"></a><span data-ttu-id="89285-127">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="89285-127">HTTP request</span></span>
+<span data-ttu-id="89285-128">ユーザーのすべてのメールボックス設定を取得するには、次のようにします。</span><span class="sxs-lookup"><span data-stu-id="89285-128">To get all the mailbox settings for a user:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings
 GET /users/{id|userPrincipalName}/mailboxSettings
 ```
 
-<span data-ttu-id="a71b8-129">特定の設定を取得するには、自動応答の設定、ロケール、タイムゾーン、または稼働時間のみを取得します。</span><span class="sxs-lookup"><span data-stu-id="a71b8-129">To get specific settings - only the automatic replies settings, locale, time zone, or working hours:</span></span>
+<span data-ttu-id="89285-129">特定の設定を取得するには、自動応答の設定、ロケール、タイムゾーン、または稼働時間のみを取得します。</span><span class="sxs-lookup"><span data-stu-id="89285-129">To get specific settings - only the automatic replies settings, locale, time zone, or working hours:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings/automaticRepliesSetting
@@ -55,29 +55,29 @@ GET /users/{id|userPrincipalName}/mailboxSettings/timeZone
 GET /me/mailboxSettings/workingHours
 GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="a71b8-130">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="a71b8-130">Optional query parameters</span></span>
-<span data-ttu-id="a71b8-131">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="a71b8-131">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="a71b8-132">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="a71b8-132">Request headers</span></span>
-| <span data-ttu-id="a71b8-133">名前</span><span class="sxs-lookup"><span data-stu-id="a71b8-133">Name</span></span>       | <span data-ttu-id="a71b8-134">型</span><span class="sxs-lookup"><span data-stu-id="a71b8-134">Type</span></span> | <span data-ttu-id="a71b8-135">説明</span><span class="sxs-lookup"><span data-stu-id="a71b8-135">Description</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="89285-130">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="89285-130">Optional query parameters</span></span>
+<span data-ttu-id="89285-131">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="89285-131">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="89285-132">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="89285-132">Request headers</span></span>
+| <span data-ttu-id="89285-133">名前</span><span class="sxs-lookup"><span data-stu-id="89285-133">Name</span></span>       | <span data-ttu-id="89285-134">型</span><span class="sxs-lookup"><span data-stu-id="89285-134">Type</span></span> | <span data-ttu-id="89285-135">説明</span><span class="sxs-lookup"><span data-stu-id="89285-135">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="a71b8-136">Authorization</span><span class="sxs-lookup"><span data-stu-id="a71b8-136">Authorization</span></span>  | <span data-ttu-id="a71b8-137">string</span><span class="sxs-lookup"><span data-stu-id="a71b8-137">string</span></span>  | <span data-ttu-id="a71b8-p106">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="a71b8-p106">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="89285-136">Authorization</span><span class="sxs-lookup"><span data-stu-id="89285-136">Authorization</span></span>  | <span data-ttu-id="89285-137">string</span><span class="sxs-lookup"><span data-stu-id="89285-137">string</span></span>  | <span data-ttu-id="89285-p106">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="89285-p106">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="a71b8-140">要求本文</span><span class="sxs-lookup"><span data-stu-id="a71b8-140">Request body</span></span>
-<span data-ttu-id="a71b8-141">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="a71b8-141">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="89285-140">要求本文</span><span class="sxs-lookup"><span data-stu-id="89285-140">Request body</span></span>
+<span data-ttu-id="89285-141">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="89285-141">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a71b8-142">応答</span><span class="sxs-lookup"><span data-stu-id="a71b8-142">Response</span></span>
+## <a name="response"></a><span data-ttu-id="89285-142">応答</span><span class="sxs-lookup"><span data-stu-id="89285-142">Response</span></span>
 
-<span data-ttu-id="a71b8-143">成功した場合、このメソッドは `200 OK` 応答コードと、次に示す要求されたオブジェクトのいずれかを応答本文で返します。</span><span class="sxs-lookup"><span data-stu-id="a71b8-143">If successful, this method returns a `200 OK` response code and one of the following requested objects in the response body:</span></span>
+<span data-ttu-id="89285-143">成功した場合、このメソッドは `200 OK` 応答コードと、次に示す要求されたオブジェクトのいずれかを応答本文で返します。</span><span class="sxs-lookup"><span data-stu-id="89285-143">If successful, this method returns a `200 OK` response code and one of the following requested objects in the response body:</span></span>
 
-- <span data-ttu-id="a71b8-144">[mailboxSettings](../resources/mailboxsettings.md) オブジェクト</span><span class="sxs-lookup"><span data-stu-id="a71b8-144">[mailboxSettings](../resources/mailboxsettings.md) object</span></span>
-- <span data-ttu-id="a71b8-145">[automaticRepliesSetting](../resources/automaticrepliessetting.md) オブジェクト</span><span class="sxs-lookup"><span data-stu-id="a71b8-145">[automaticRepliesSetting](../resources/automaticrepliessetting.md) object</span></span>
-- <span data-ttu-id="a71b8-146">[localeInfo](../resources/localeinfo.md) オブジェクト</span><span class="sxs-lookup"><span data-stu-id="a71b8-146">[localeInfo](../resources/localeinfo.md) object</span></span>
-- <span data-ttu-id="a71b8-147">string (**timeZone** の場合)</span><span class="sxs-lookup"><span data-stu-id="a71b8-147">string (for **timeZone**)</span></span>
-- [<span data-ttu-id="a71b8-148">workingHours</span><span class="sxs-lookup"><span data-stu-id="a71b8-148">workingHours</span></span>](../resources/workinghours.md)
+- <span data-ttu-id="89285-144">[mailboxSettings](../resources/mailboxsettings.md) オブジェクト</span><span class="sxs-lookup"><span data-stu-id="89285-144">[mailboxSettings](../resources/mailboxsettings.md) object</span></span>
+- <span data-ttu-id="89285-145">[automaticRepliesSetting](../resources/automaticrepliessetting.md) オブジェクト</span><span class="sxs-lookup"><span data-stu-id="89285-145">[automaticRepliesSetting](../resources/automaticrepliessetting.md) object</span></span>
+- <span data-ttu-id="89285-146">[localeInfo](../resources/localeinfo.md) オブジェクト</span><span class="sxs-lookup"><span data-stu-id="89285-146">[localeInfo](../resources/localeinfo.md) object</span></span>
+- <span data-ttu-id="89285-147">string (**timeZone** の場合)</span><span class="sxs-lookup"><span data-stu-id="89285-147">string (for **timeZone**)</span></span>
+- [<span data-ttu-id="89285-148">workingHours</span><span class="sxs-lookup"><span data-stu-id="89285-148">workingHours</span></span>](../resources/workinghours.md)
 
-## <a name="example"></a><span data-ttu-id="a71b8-149">例</span><span class="sxs-lookup"><span data-stu-id="a71b8-149">Example</span></span>
-##### <a name="request-1"></a><span data-ttu-id="a71b8-150">要求 1</span><span class="sxs-lookup"><span data-stu-id="a71b8-150">Request 1</span></span>
-<span data-ttu-id="a71b8-151">最初の例では、サインインしているユーザーのメールボックスのすべてのメールボックス設定を取得します。取得される設定には、自動応答、ロケール (言語と国/地域)、タイム ゾーン、就業時間の設定が含まれます。</span><span class="sxs-lookup"><span data-stu-id="a71b8-151">The first example gets all the mailbox settings of the signed-in user's mailbox, which include settings for time zone, automatic replies, locale (language and country/region), and working hours.</span></span>
+## <a name="example"></a><span data-ttu-id="89285-149">例</span><span class="sxs-lookup"><span data-stu-id="89285-149">Example</span></span>
+##### <a name="request-1"></a><span data-ttu-id="89285-150">要求 1</span><span class="sxs-lookup"><span data-stu-id="89285-150">Request 1</span></span>
+<span data-ttu-id="89285-151">最初の例では、サインインしているユーザーのメールボックスのすべてのメールボックス設定を取得します。取得される設定には、自動応答、ロケール (言語と国/地域)、タイム ゾーン、就業時間の設定が含まれます。</span><span class="sxs-lookup"><span data-stu-id="89285-151">The first example gets all the mailbox settings of the signed-in user's mailbox, which include settings for time zone, automatic replies, locale (language and country/region), and working hours.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_mailboxsettings_1"
@@ -85,8 +85,8 @@ GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 ```http
 GET https://graph.microsoft.com/beta/me/mailboxSettings
 ```
-##### <a name="response-1"></a><span data-ttu-id="a71b8-152">応答 1</span><span class="sxs-lookup"><span data-stu-id="a71b8-152">Response 1</span></span>
-<span data-ttu-id="a71b8-153">応答には、サインインしているユーザーのすべてのメールボックス設定が含まれます。</span><span class="sxs-lookup"><span data-stu-id="a71b8-153">The response includes all the mailbox settings of the signed-in user.</span></span> <span data-ttu-id="a71b8-154">注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。</span><span class="sxs-lookup"><span data-stu-id="a71b8-154">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="a71b8-155">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="a71b8-155">All of the properties will be returned from an actual call.</span></span>
+##### <a name="response-1"></a><span data-ttu-id="89285-152">応答 1</span><span class="sxs-lookup"><span data-stu-id="89285-152">Response 1</span></span>
+<span data-ttu-id="89285-153">応答には、サインインしているユーザーのすべてのメールボックス設定が含まれます。</span><span class="sxs-lookup"><span data-stu-id="89285-153">The response includes all the mailbox settings of the signed-in user.</span></span> <span data-ttu-id="89285-154">注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。</span><span class="sxs-lookup"><span data-stu-id="89285-154">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="89285-155">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="89285-155">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -134,19 +134,21 @@ Content-type: application/json
     }
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="a71b8-156">SDK サンプルコード</span><span class="sxs-lookup"><span data-stu-id="a71b8-156">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="a71b8-157">Visual</span><span class="sxs-lookup"><span data-stu-id="a71b8-157">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="89285-156">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="89285-156">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="89285-157">C#</span><span class="sxs-lookup"><span data-stu-id="89285-157">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_mailboxsettings_1-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a71b8-158">Java</span><span class="sxs-lookup"><span data-stu-id="a71b8-158">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="89285-158">Javascript</span><span class="sxs-lookup"><span data-stu-id="89285-158">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_mailboxsettings_1-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="89285-159">目的-C</span><span class="sxs-lookup"><span data-stu-id="89285-159">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_mailboxsettings_1-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-##### <a name="request-2"></a><span data-ttu-id="a71b8-159">要求 2</span><span class="sxs-lookup"><span data-stu-id="a71b8-159">Request 2</span></span>
-<span data-ttu-id="a71b8-160">2 番目の例では、具体的にサインインしているユーザーのメールボックスの自動応答設定を取得します。</span><span class="sxs-lookup"><span data-stu-id="a71b8-160">The second example gets specifically the automatic replies settings of the signed-in user's mailbox.</span></span>
+##### <a name="request-2"></a><span data-ttu-id="89285-160">要求 2</span><span class="sxs-lookup"><span data-stu-id="89285-160">Request 2</span></span>
+<span data-ttu-id="89285-161">2 番目の例では、具体的にサインインしているユーザーのメールボックスの自動応答設定を取得します。</span><span class="sxs-lookup"><span data-stu-id="89285-161">The second example gets specifically the automatic replies settings of the signed-in user's mailbox.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_mailboxsettings_2"
@@ -154,8 +156,8 @@ Content-type: application/json
 ```http
 GET https://graph.microsoft.com/beta/me/mailboxSettings/automaticRepliesSetting
 ```
-##### <a name="response-2"></a><span data-ttu-id="a71b8-161">応答 2</span><span class="sxs-lookup"><span data-stu-id="a71b8-161">Response 2</span></span>
-<span data-ttu-id="a71b8-p108">この応答には自動とうとう設定のみが含まれます。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="a71b8-p108">The response includes only the automatic replies settings. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response-2"></a><span data-ttu-id="89285-162">応答 2</span><span class="sxs-lookup"><span data-stu-id="89285-162">Response 2</span></span>
+<span data-ttu-id="89285-p108">この応答には自動とうとう設定のみが含まれます。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="89285-p108">The response includes only the automatic replies settings. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -182,20 +184,22 @@ Content-type: application/json
     "externalReplyMessage": "<html>\n<body>\n<p>I'm at the Contoso worldwide reunion and will respond to your message as soon as I return.<br>\n</p></body>\n</html>\n"
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="a71b8-165">SDK サンプルコード</span><span class="sxs-lookup"><span data-stu-id="a71b8-165">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="a71b8-166">Visual</span><span class="sxs-lookup"><span data-stu-id="a71b8-166">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="89285-166">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="89285-166">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="89285-167">C#</span><span class="sxs-lookup"><span data-stu-id="89285-167">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_mailboxsettings_2-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a71b8-167">Java</span><span class="sxs-lookup"><span data-stu-id="a71b8-167">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="89285-168">Javascript</span><span class="sxs-lookup"><span data-stu-id="89285-168">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_mailboxsettings_2-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="89285-169">目的-C</span><span class="sxs-lookup"><span data-stu-id="89285-169">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_mailboxsettings_2-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
-##### <a name="request-3"></a><span data-ttu-id="a71b8-168">要求 3</span><span class="sxs-lookup"><span data-stu-id="a71b8-168">Request 3</span></span>
-<span data-ttu-id="a71b8-169">3 番目の例では、サインインしているユーザーのメールボックスの自動応答の設定を具体的に指定して取得します。</span><span class="sxs-lookup"><span data-stu-id="a71b8-169">The third example gets specifically the working hour settings of the signed-in user's mailbox.</span></span>
+##### <a name="request-3"></a><span data-ttu-id="89285-170">要求 3</span><span class="sxs-lookup"><span data-stu-id="89285-170">Request 3</span></span>
+<span data-ttu-id="89285-171">3 番目の例では、サインインしているユーザーのメールボックスの自動応答の設定を具体的に指定して取得します。</span><span class="sxs-lookup"><span data-stu-id="89285-171">The third example gets specifically the working hour settings of the signed-in user's mailbox.</span></span>
 <!-- {
   "blockType": "ignored",
   "name": "get_mailboxsettings_3"
@@ -203,8 +207,8 @@ Content-type: application/json
 ```http
 GET https://graph.microsoft.com/beta/me/mailboxSettings/workingHours
 ```
-##### <a name="response-3"></a><span data-ttu-id="a71b8-170">応答 3</span><span class="sxs-lookup"><span data-stu-id="a71b8-170">Response 3</span></span>
-<span data-ttu-id="a71b8-171">この応答には、自動応答の設定のみが含まれます。</span><span class="sxs-lookup"><span data-stu-id="a71b8-171">The response includes only the working hours settings.</span></span> <span data-ttu-id="a71b8-172">ユーザーの就業時間には、[カスタム タイム ゾーン](../resources/customtimezone.md)が適用されていることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="a71b8-172">Notice that the user's work hours are in a [custom time zone](../resources/customtimezone.md).</span></span> <span data-ttu-id="a71b8-173">注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。</span><span class="sxs-lookup"><span data-stu-id="a71b8-173">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="a71b8-174">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="a71b8-174">All of the properties will be returned from an actual call.</span></span>
+##### <a name="response-3"></a><span data-ttu-id="89285-172">応答 3</span><span class="sxs-lookup"><span data-stu-id="89285-172">Response 3</span></span>
+<span data-ttu-id="89285-173">この応答には、自動応答の設定のみが含まれます。</span><span class="sxs-lookup"><span data-stu-id="89285-173">The response includes only the working hours settings.</span></span> <span data-ttu-id="89285-174">ユーザーの就業時間には、[カスタム タイム ゾーン](../resources/customtimezone.md)が適用されていることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="89285-174">Notice that the user's work hours are in a [custom time zone](../resources/customtimezone.md).</span></span> <span data-ttu-id="89285-175">注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。</span><span class="sxs-lookup"><span data-stu-id="89285-175">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="89285-176">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="89285-176">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "ignored",
   "name": "get_mailboxsettings_3",
@@ -261,6 +265,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/user-get-mailboxsettings.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/user-get-mailboxsettings.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/user-get-mailboxsettings.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Error: /api-reference/beta/api/user-get-mailboxsettings.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
