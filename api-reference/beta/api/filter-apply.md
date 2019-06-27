@@ -2,54 +2,54 @@
 title: 'フィルター: 適用'
 description: 指定した列に指定されたフィルター条件を適用します。
 localization_priority: Normal
-ms.openlocfilehash: 44c08067b6202d445f18b92f31ad87e4520eb9c5
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: be05c2db39a3b0eff84c62a8efec99cfceb5ff5c
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33586437"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35259046"
 ---
-# <a name="filter-apply"></a><span data-ttu-id="c9e8d-103">フィルター: 適用</span><span class="sxs-lookup"><span data-stu-id="c9e8d-103">Filter: apply</span></span>
+# <a name="filter-apply"></a><span data-ttu-id="0a499-103">フィルター: 適用</span><span class="sxs-lookup"><span data-stu-id="0a499-103">Filter: apply</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c9e8d-104">指定した列に指定されたフィルター条件を適用します。</span><span class="sxs-lookup"><span data-stu-id="c9e8d-104">Apply the given filter criteria on the given column.</span></span>
-## <a name="permissions"></a><span data-ttu-id="c9e8d-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="c9e8d-105">Permissions</span></span>
-<span data-ttu-id="c9e8d-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c9e8d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="0a499-104">指定した列に指定されたフィルター条件を適用します。</span><span class="sxs-lookup"><span data-stu-id="0a499-104">Apply the given filter criteria on the given column.</span></span>
+## <a name="permissions"></a><span data-ttu-id="0a499-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="0a499-105">Permissions</span></span>
+<span data-ttu-id="0a499-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0a499-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c9e8d-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="c9e8d-108">Permission type</span></span>      | <span data-ttu-id="c9e8d-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="c9e8d-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="0a499-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="0a499-108">Permission type</span></span>      | <span data-ttu-id="0a499-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="0a499-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c9e8d-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="c9e8d-110">Delegated (work or school account)</span></span> | <span data-ttu-id="c9e8d-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c9e8d-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="c9e8d-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="c9e8d-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c9e8d-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c9e8d-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="c9e8d-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="c9e8d-114">Application</span></span> | <span data-ttu-id="c9e8d-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c9e8d-115">Not supported.</span></span> |
+|<span data-ttu-id="0a499-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="0a499-110">Delegated (work or school account)</span></span> | <span data-ttu-id="0a499-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="0a499-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="0a499-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="0a499-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0a499-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="0a499-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="0a499-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="0a499-114">Application</span></span> | <span data-ttu-id="0a499-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="0a499-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c9e8d-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="c9e8d-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0a499-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="0a499-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/tables/{id|name}/columns/{id|name}/filter/apply
 POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/filter/apply
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="c9e8d-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="c9e8d-117">Request headers</span></span>
-| <span data-ttu-id="c9e8d-118">名前</span><span class="sxs-lookup"><span data-stu-id="c9e8d-118">Name</span></span>       | <span data-ttu-id="c9e8d-119">説明</span><span class="sxs-lookup"><span data-stu-id="c9e8d-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="0a499-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="0a499-117">Request headers</span></span>
+| <span data-ttu-id="0a499-118">名前</span><span class="sxs-lookup"><span data-stu-id="0a499-118">Name</span></span>       | <span data-ttu-id="0a499-119">説明</span><span class="sxs-lookup"><span data-stu-id="0a499-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="c9e8d-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="c9e8d-120">Authorization</span></span>  | <span data-ttu-id="c9e8d-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="c9e8d-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="0a499-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="0a499-120">Authorization</span></span>  | <span data-ttu-id="0a499-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="0a499-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="c9e8d-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="c9e8d-123">Request body</span></span>
-<span data-ttu-id="c9e8d-124">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="c9e8d-124">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="0a499-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="0a499-123">Request body</span></span>
+<span data-ttu-id="0a499-124">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="0a499-124">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="c9e8d-125">パラメーター</span><span class="sxs-lookup"><span data-stu-id="c9e8d-125">Parameter</span></span>    | <span data-ttu-id="c9e8d-126">型</span><span class="sxs-lookup"><span data-stu-id="c9e8d-126">Type</span></span>   |<span data-ttu-id="c9e8d-127">説明</span><span class="sxs-lookup"><span data-stu-id="c9e8d-127">Description</span></span>|
+| <span data-ttu-id="0a499-125">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0a499-125">Parameter</span></span>    | <span data-ttu-id="0a499-126">型</span><span class="sxs-lookup"><span data-stu-id="0a499-126">Type</span></span>   |<span data-ttu-id="0a499-127">説明</span><span class="sxs-lookup"><span data-stu-id="0a499-127">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="c9e8d-128">criteria</span><span class="sxs-lookup"><span data-stu-id="c9e8d-128">criteria</span></span>|<span data-ttu-id="c9e8d-129">workbookFilterCriteria</span><span class="sxs-lookup"><span data-stu-id="c9e8d-129">workbookFilterCriteria</span></span>|<span data-ttu-id="c9e8d-130">適用する基準。</span><span class="sxs-lookup"><span data-stu-id="c9e8d-130">The criteria to apply.</span></span>|
+|<span data-ttu-id="0a499-128">criteria</span><span class="sxs-lookup"><span data-stu-id="0a499-128">criteria</span></span>|<span data-ttu-id="0a499-129">workbookFilterCriteria</span><span class="sxs-lookup"><span data-stu-id="0a499-129">workbookFilterCriteria</span></span>|<span data-ttu-id="0a499-130">適用する基準。</span><span class="sxs-lookup"><span data-stu-id="0a499-130">The criteria to apply.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="c9e8d-131">応答</span><span class="sxs-lookup"><span data-stu-id="c9e8d-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="0a499-131">応答</span><span class="sxs-lookup"><span data-stu-id="0a499-131">Response</span></span>
 
-<span data-ttu-id="c9e8d-p103">成功した場合、このメソッドは `200 OK` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="c9e8d-p103">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="0a499-p103">成功した場合、このメソッドは `200 OK` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="0a499-p103">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c9e8d-134">例</span><span class="sxs-lookup"><span data-stu-id="c9e8d-134">Example</span></span>
-<span data-ttu-id="c9e8d-135">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="c9e8d-135">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="c9e8d-136">要求</span><span class="sxs-lookup"><span data-stu-id="c9e8d-136">Request</span></span>
-<span data-ttu-id="c9e8d-137">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="c9e8d-137">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="0a499-134">例</span><span class="sxs-lookup"><span data-stu-id="0a499-134">Example</span></span>
+<span data-ttu-id="0a499-135">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="0a499-135">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="0a499-136">要求</span><span class="sxs-lookup"><span data-stu-id="0a499-136">Request</span></span>
+<span data-ttu-id="0a499-137">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="0a499-137">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "filter_apply"
@@ -78,8 +78,8 @@ Content-length: 321
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="c9e8d-138">応答</span><span class="sxs-lookup"><span data-stu-id="c9e8d-138">Response</span></span>
-<span data-ttu-id="c9e8d-139">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="c9e8d-139">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="0a499-138">応答</span><span class="sxs-lookup"><span data-stu-id="0a499-138">Response</span></span>
+<span data-ttu-id="0a499-139">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="0a499-139">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -88,13 +88,15 @@ Content-length: 321
 ```http
 HTTP/1.1 200 OK
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="c9e8d-140">SDK サンプルコード</span><span class="sxs-lookup"><span data-stu-id="c9e8d-140">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="c9e8d-141">Visual</span><span class="sxs-lookup"><span data-stu-id="c9e8d-141">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="0a499-140">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="0a499-140">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="0a499-141">C#</span><span class="sxs-lookup"><span data-stu-id="0a499-141">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/filter_apply-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="c9e8d-142">Java</span><span class="sxs-lookup"><span data-stu-id="c9e8d-142">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="0a499-142">Javascript</span><span class="sxs-lookup"><span data-stu-id="0a499-142">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/filter_apply-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="0a499-143">目的-C</span><span class="sxs-lookup"><span data-stu-id="0a499-143">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/filter_apply-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -109,6 +111,7 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/filter-apply.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/filter-apply.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/filter-apply.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

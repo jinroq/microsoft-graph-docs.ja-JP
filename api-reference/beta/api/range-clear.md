@@ -4,28 +4,28 @@ description: 範囲の値、書式、塗りつぶし、罫線などをクリア�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: ca1914c0075d3cd18c1874011553bde6ad321d54
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 883e90cfb87c159a320690c85becd10bdd131711
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33610445"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35267656"
 ---
-# <a name="range-clear"></a><span data-ttu-id="516b8-103">範囲: クリア</span><span class="sxs-lookup"><span data-stu-id="516b8-103">Range: clear</span></span>
+# <a name="range-clear"></a><span data-ttu-id="f00c5-103">範囲: クリア</span><span class="sxs-lookup"><span data-stu-id="f00c5-103">Range: clear</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="516b8-104">範囲の値、書式、塗りつぶし、罫線などをクリアします。</span><span class="sxs-lookup"><span data-stu-id="516b8-104">Clear range values, format, fill, border, etc.</span></span>
-## <a name="permissions"></a><span data-ttu-id="516b8-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="516b8-105">Permissions</span></span>
-<span data-ttu-id="516b8-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="516b8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f00c5-104">範囲の値、書式、塗りつぶし、罫線などをクリアします。</span><span class="sxs-lookup"><span data-stu-id="f00c5-104">Clear range values, format, fill, border, etc.</span></span>
+## <a name="permissions"></a><span data-ttu-id="f00c5-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="f00c5-105">Permissions</span></span>
+<span data-ttu-id="f00c5-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f00c5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="516b8-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="516b8-108">Permission type</span></span>      | <span data-ttu-id="516b8-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="516b8-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f00c5-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="f00c5-108">Permission type</span></span>      | <span data-ttu-id="f00c5-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="f00c5-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="516b8-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="516b8-110">Delegated (work or school account)</span></span> | <span data-ttu-id="516b8-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="516b8-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="516b8-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="516b8-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="516b8-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="516b8-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="516b8-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="516b8-114">Application</span></span> | <span data-ttu-id="516b8-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="516b8-115">Not supported.</span></span> |
+|<span data-ttu-id="f00c5-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="f00c5-110">Delegated (work or school account)</span></span> | <span data-ttu-id="f00c5-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f00c5-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="f00c5-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="f00c5-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f00c5-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f00c5-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="f00c5-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="f00c5-114">Application</span></span> | <span data-ttu-id="f00c5-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f00c5-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="516b8-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="516b8-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f00c5-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="f00c5-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names/{name}/range/clear
@@ -33,27 +33,27 @@ POST /workbook/worksheets/{id|name}/range(address='<address>')/clear
 POST /workbook/tables/{id|name}/columns/{id|name}/range/clear
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="516b8-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="516b8-117">Request headers</span></span>
-| <span data-ttu-id="516b8-118">名前</span><span class="sxs-lookup"><span data-stu-id="516b8-118">Name</span></span>       | <span data-ttu-id="516b8-119">説明</span><span class="sxs-lookup"><span data-stu-id="516b8-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f00c5-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f00c5-117">Request headers</span></span>
+| <span data-ttu-id="f00c5-118">名前</span><span class="sxs-lookup"><span data-stu-id="f00c5-118">Name</span></span>       | <span data-ttu-id="f00c5-119">説明</span><span class="sxs-lookup"><span data-stu-id="f00c5-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="516b8-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="516b8-120">Authorization</span></span>  | <span data-ttu-id="516b8-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="516b8-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="516b8-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="516b8-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="516b8-p103">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="516b8-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="f00c5-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="f00c5-120">Authorization</span></span>  | <span data-ttu-id="f00c5-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="f00c5-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="f00c5-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="f00c5-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="f00c5-p103">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="f00c5-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="516b8-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="516b8-126">Request body</span></span>
-<span data-ttu-id="516b8-127">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="516b8-127">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f00c5-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="f00c5-126">Request body</span></span>
+<span data-ttu-id="f00c5-127">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="f00c5-127">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="516b8-128">パラメーター</span><span class="sxs-lookup"><span data-stu-id="516b8-128">Parameter</span></span>    | <span data-ttu-id="516b8-129">型</span><span class="sxs-lookup"><span data-stu-id="516b8-129">Type</span></span>   |<span data-ttu-id="516b8-130">説明</span><span class="sxs-lookup"><span data-stu-id="516b8-130">Description</span></span>|
+| <span data-ttu-id="f00c5-128">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f00c5-128">Parameter</span></span>    | <span data-ttu-id="f00c5-129">型</span><span class="sxs-lookup"><span data-stu-id="f00c5-129">Type</span></span>   |<span data-ttu-id="f00c5-130">説明</span><span class="sxs-lookup"><span data-stu-id="f00c5-130">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="516b8-131">applyTo</span><span class="sxs-lookup"><span data-stu-id="516b8-131">applyTo</span></span>|<span data-ttu-id="516b8-132">string</span><span class="sxs-lookup"><span data-stu-id="516b8-132">string</span></span>|<span data-ttu-id="516b8-p104">省略可能。クリア操作の種類を決定します。可能な値は、`All`、`Formats`、`Contents` です。</span><span class="sxs-lookup"><span data-stu-id="516b8-p104">Optional. Determines the type of clear action.  Possible values are: `All`, `Formats`, `Contents`.</span></span>|
+|<span data-ttu-id="f00c5-131">applyTo</span><span class="sxs-lookup"><span data-stu-id="f00c5-131">applyTo</span></span>|<span data-ttu-id="f00c5-132">string</span><span class="sxs-lookup"><span data-stu-id="f00c5-132">string</span></span>|<span data-ttu-id="f00c5-p104">省略可能。クリア操作の種類を決定します。可能な値は、`All`、`Formats`、`Contents` です。</span><span class="sxs-lookup"><span data-stu-id="f00c5-p104">Optional. Determines the type of clear action.  Possible values are: `All`, `Formats`, `Contents`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="516b8-136">応答</span><span class="sxs-lookup"><span data-stu-id="516b8-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f00c5-136">応答</span><span class="sxs-lookup"><span data-stu-id="f00c5-136">Response</span></span>
 
-<span data-ttu-id="516b8-p105">成功した場合、このメソッドは `200 OK` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="516b8-p105">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="f00c5-p105">成功した場合、このメソッドは `200 OK` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="f00c5-p105">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="516b8-139">例</span><span class="sxs-lookup"><span data-stu-id="516b8-139">Example</span></span>
-<span data-ttu-id="516b8-140">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="516b8-140">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="516b8-141">要求</span><span class="sxs-lookup"><span data-stu-id="516b8-141">Request</span></span>
-<span data-ttu-id="516b8-142">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="516b8-142">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="f00c5-139">例</span><span class="sxs-lookup"><span data-stu-id="f00c5-139">Example</span></span>
+<span data-ttu-id="f00c5-140">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="f00c5-140">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="f00c5-141">要求</span><span class="sxs-lookup"><span data-stu-id="f00c5-141">Request</span></span>
+<span data-ttu-id="f00c5-142">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="f00c5-142">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "range_clear"
@@ -68,8 +68,8 @@ Content-length: 32
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="516b8-143">応答</span><span class="sxs-lookup"><span data-stu-id="516b8-143">Response</span></span>
-<span data-ttu-id="516b8-144">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="516b8-144">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="f00c5-143">応答</span><span class="sxs-lookup"><span data-stu-id="f00c5-143">Response</span></span>
+<span data-ttu-id="f00c5-144">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="f00c5-144">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -78,13 +78,15 @@ Content-length: 32
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="516b8-145">SDK サンプルコード</span><span class="sxs-lookup"><span data-stu-id="516b8-145">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="516b8-146">Visual</span><span class="sxs-lookup"><span data-stu-id="516b8-146">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="f00c5-145">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="f00c5-145">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="f00c5-146">C#</span><span class="sxs-lookup"><span data-stu-id="f00c5-146">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/range_clear-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="516b8-147">Java</span><span class="sxs-lookup"><span data-stu-id="516b8-147">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f00c5-147">Javascript</span><span class="sxs-lookup"><span data-stu-id="f00c5-147">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/range_clear-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="f00c5-148">目的-C</span><span class="sxs-lookup"><span data-stu-id="f00c5-148">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/range_clear-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -99,6 +101,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/range-clear.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/range-clear.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/range-clear.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

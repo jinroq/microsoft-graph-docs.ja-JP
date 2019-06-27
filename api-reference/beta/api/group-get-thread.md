@@ -4,60 +4,62 @@ description: thread オブジェクトを取得します。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 00ee013c142eaf05ff48c0421cbf03256035fa13
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 403609863e687fff7fdd3f7c8b054615bad387e6
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33593197"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35263246"
 ---
-# <a name="get-conversation-thread"></a><span data-ttu-id="eef03-103">会話スレッドを取得する</span><span class="sxs-lookup"><span data-stu-id="eef03-103">Get conversation thread</span></span>
-<span data-ttu-id="eef03-104">[thread](../resources/conversationthread.md) オブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="eef03-104">Get a [thread](../resources/conversationthread.md) object.</span></span>
+# <a name="get-conversation-thread"></a><span data-ttu-id="7704a-103">会話スレッドを取得する</span><span class="sxs-lookup"><span data-stu-id="7704a-103">Get conversation thread</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="eef03-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="eef03-105">Permissions</span></span>
-<span data-ttu-id="eef03-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="eef03-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-|<span data-ttu-id="eef03-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="eef03-108">Permission type</span></span>      | <span data-ttu-id="eef03-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="eef03-109">Permissions (from least to most privileged)</span></span>              |
+<span data-ttu-id="7704a-104">[thread](../resources/conversationthread.md) オブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="7704a-104">Get a [thread](../resources/conversationthread.md) object.</span></span>
+
+## <a name="permissions"></a><span data-ttu-id="7704a-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="7704a-105">Permissions</span></span>
+<span data-ttu-id="7704a-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7704a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="7704a-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="7704a-108">Permission type</span></span>      | <span data-ttu-id="7704a-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="7704a-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="eef03-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="eef03-110">Delegated (work or school account)</span></span> | <span data-ttu-id="eef03-111">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="eef03-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="eef03-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="eef03-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="eef03-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="eef03-113">Not supported.</span></span>    |
-|<span data-ttu-id="eef03-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="eef03-114">Application</span></span> | <span data-ttu-id="eef03-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="eef03-115">Not supported.</span></span> |
+|<span data-ttu-id="7704a-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="7704a-110">Delegated (work or school account)</span></span> | <span data-ttu-id="7704a-111">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7704a-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="7704a-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="7704a-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7704a-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="7704a-113">Not supported.</span></span>    |
+|<span data-ttu-id="7704a-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="7704a-114">Application</span></span> | <span data-ttu-id="7704a-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="7704a-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="eef03-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="eef03-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7704a-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="7704a-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/threads/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="eef03-117">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="eef03-117">Optional query parameters</span></span>
-<span data-ttu-id="eef03-118">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="eef03-118">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="7704a-117">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="7704a-117">Optional query parameters</span></span>
+<span data-ttu-id="7704a-118">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="7704a-118">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="eef03-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="eef03-119">Request headers</span></span>
-| <span data-ttu-id="eef03-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="eef03-120">Header</span></span>       | <span data-ttu-id="eef03-121">値</span><span class="sxs-lookup"><span data-stu-id="eef03-121">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="7704a-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="7704a-119">Request headers</span></span>
+| <span data-ttu-id="7704a-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="7704a-120">Header</span></span>       | <span data-ttu-id="7704a-121">値</span><span class="sxs-lookup"><span data-stu-id="7704a-121">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="eef03-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="eef03-122">Authorization</span></span>  | <span data-ttu-id="eef03-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="eef03-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="7704a-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="7704a-122">Authorization</span></span>  | <span data-ttu-id="7704a-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="7704a-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="eef03-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="eef03-125">Request body</span></span>
-<span data-ttu-id="eef03-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="eef03-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7704a-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="7704a-125">Request body</span></span>
+<span data-ttu-id="7704a-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="7704a-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="eef03-127">応答</span><span class="sxs-lookup"><span data-stu-id="eef03-127">Response</span></span>
-<span data-ttu-id="eef03-128">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [thread](../resources/conversationthread.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="eef03-128">If successful, this method returns a `200 OK` response code and a [thread](../resources/conversationthread.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="7704a-127">応答</span><span class="sxs-lookup"><span data-stu-id="7704a-127">Response</span></span>
+<span data-ttu-id="7704a-128">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [thread](../resources/conversationthread.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="7704a-128">If successful, this method returns a `200 OK` response code and a [thread](../resources/conversationthread.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="eef03-129">例</span><span class="sxs-lookup"><span data-stu-id="eef03-129">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="eef03-130">要求</span><span class="sxs-lookup"><span data-stu-id="eef03-130">Request</span></span>
-<span data-ttu-id="eef03-131">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="eef03-131">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="7704a-129">例</span><span class="sxs-lookup"><span data-stu-id="7704a-129">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="7704a-130">要求</span><span class="sxs-lookup"><span data-stu-id="7704a-130">Request</span></span>
+<span data-ttu-id="7704a-131">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="7704a-131">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["02bd9fd6-8f93-4758-87c3-1fb73740a315", "AAQkAGI5MWY5ZmUyLTJiNzYtNDE0ZC04OWEwLWM3M2FjYmM3NzNlZgMkABAAG5c7eC4NYEynIoXsuxXB9RAAG5c7eC4NYEynIoXsuxXB9Q=="],
   "name": "get_group_thread"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/threads/AAQkAGI5MWY5ZmUyLTJiNzYtNDE0ZC04OWEwLWM3M2FjYmM3NzNlZgMkABAAG5c7eC4NYEynIoXsuxXB9RAAG5c7eC4NYEynIoXsuxXB9Q==
+GET https://graph.microsoft.com/beta/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/threads/AAQkAGI5MWY5ZmUyLTJiNzYtNDE0ZC04OWEwLWM3M2FjYmM3NzNlZgMkABAAG5c7eC4NYEynIoXsuxXB9RAAG5c7eC4NYEynIoXsuxXB9Q==
 ```
 
-#### <a name="response"></a><span data-ttu-id="eef03-132">応答</span><span class="sxs-lookup"><span data-stu-id="eef03-132">Response</span></span>
-<span data-ttu-id="eef03-133">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="eef03-133">The following is an example of the response.</span></span>
-><span data-ttu-id="eef03-p103">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="eef03-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="7704a-132">応答</span><span class="sxs-lookup"><span data-stu-id="7704a-132">Response</span></span>
+<span data-ttu-id="7704a-133">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="7704a-133">The following is an example of the response.</span></span>
+><span data-ttu-id="7704a-p103">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="7704a-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -81,27 +83,32 @@ Content-length: 655
     "isLocked": false
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="eef03-136">SDK サンプルコード</span><span class="sxs-lookup"><span data-stu-id="eef03-136">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="eef03-137">Visual</span><span class="sxs-lookup"><span data-stu-id="eef03-137">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="7704a-136">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="7704a-136">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="7704a-137">C#</span><span class="sxs-lookup"><span data-stu-id="7704a-137">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_group_thread-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="eef03-138">Java</span><span class="sxs-lookup"><span data-stu-id="eef03-138">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7704a-138">Javascript</span><span class="sxs-lookup"><span data-stu-id="7704a-138">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_group_thread-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="7704a-139">目的-C</span><span class="sxs-lookup"><span data-stu-id="7704a-139">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_group_thread-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get conversation thread",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/group-get-thread.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/group-get-thread.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/beta/api/group-get-thread.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/beta/api/group-get-thread.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/group-get-thread.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-}-->
+}
+-->

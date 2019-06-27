@@ -2,50 +2,50 @@
 title: NamedItem オブジェクトを更新する
 description: nameditem オブジェクトのプロパティを更新します。
 localization_priority: Normal
-ms.openlocfilehash: 8f9f4bd9902b334e6f606e93d287d8f45d5cd787
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 2165df837ec0760ed1dcda8d0c3f66b869b8b5fb
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33612094"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35274579"
 ---
-# <a name="update-nameditem"></a><span data-ttu-id="4d740-103">NamedItem オブジェクトを更新する</span><span class="sxs-lookup"><span data-stu-id="4d740-103">Update nameditem</span></span>
+# <a name="update-nameditem"></a><span data-ttu-id="b91cb-103">NamedItem オブジェクトを更新する</span><span class="sxs-lookup"><span data-stu-id="b91cb-103">Update nameditem</span></span>
 
-<span data-ttu-id="4d740-104">nameditem オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="4d740-104">Update the properties of nameditem object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="4d740-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="4d740-105">Permissions</span></span>
-<span data-ttu-id="4d740-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4d740-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="b91cb-104">nameditem オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="b91cb-104">Update the properties of nameditem object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="b91cb-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="b91cb-105">Permissions</span></span>
+<span data-ttu-id="b91cb-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b91cb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4d740-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="4d740-108">Permission type</span></span>      | <span data-ttu-id="4d740-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="4d740-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b91cb-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="b91cb-108">Permission type</span></span>      | <span data-ttu-id="b91cb-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="b91cb-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="4d740-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="4d740-110">Delegated (work or school account)</span></span> | <span data-ttu-id="4d740-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4d740-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="4d740-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="4d740-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4d740-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="4d740-113">Not supported.</span></span>    |
-|<span data-ttu-id="4d740-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="4d740-114">Application</span></span> | <span data-ttu-id="4d740-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="4d740-115">Not supported.</span></span> |
+|<span data-ttu-id="b91cb-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="b91cb-110">Delegated (work or school account)</span></span> | <span data-ttu-id="b91cb-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b91cb-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="b91cb-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="b91cb-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b91cb-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b91cb-113">Not supported.</span></span>    |
+|<span data-ttu-id="b91cb-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="b91cb-114">Application</span></span> | <span data-ttu-id="b91cb-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b91cb-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="4d740-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="4d740-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b91cb-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="b91cb-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/names/{name}
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="4d740-117">オプションの要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="4d740-117">Optional request headers</span></span>
-| <span data-ttu-id="4d740-118">名前</span><span class="sxs-lookup"><span data-stu-id="4d740-118">Name</span></span>       | <span data-ttu-id="4d740-119">説明</span><span class="sxs-lookup"><span data-stu-id="4d740-119">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="b91cb-117">オプションの要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b91cb-117">Optional request headers</span></span>
+| <span data-ttu-id="b91cb-118">名前</span><span class="sxs-lookup"><span data-stu-id="b91cb-118">Name</span></span>       | <span data-ttu-id="b91cb-119">説明</span><span class="sxs-lookup"><span data-stu-id="b91cb-119">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="4d740-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="4d740-120">Authorization</span></span>  | <span data-ttu-id="4d740-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="4d740-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="4d740-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="4d740-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="4d740-p103">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="4d740-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="b91cb-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="b91cb-120">Authorization</span></span>  | <span data-ttu-id="b91cb-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="b91cb-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="b91cb-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="b91cb-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="b91cb-p103">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="b91cb-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="4d740-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="4d740-126">Request body</span></span>
-<span data-ttu-id="4d740-p104">要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="4d740-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b91cb-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="b91cb-126">Request body</span></span>
+<span data-ttu-id="b91cb-p104">要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="b91cb-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="4d740-130">プロパティ</span><span class="sxs-lookup"><span data-stu-id="4d740-130">Property</span></span>     | <span data-ttu-id="4d740-131">型</span><span class="sxs-lookup"><span data-stu-id="4d740-131">Type</span></span>   |<span data-ttu-id="4d740-132">説明</span><span class="sxs-lookup"><span data-stu-id="4d740-132">Description</span></span>|
+| <span data-ttu-id="b91cb-130">プロパティ</span><span class="sxs-lookup"><span data-stu-id="b91cb-130">Property</span></span>     | <span data-ttu-id="b91cb-131">型</span><span class="sxs-lookup"><span data-stu-id="b91cb-131">Type</span></span>   |<span data-ttu-id="b91cb-132">説明</span><span class="sxs-lookup"><span data-stu-id="b91cb-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="4d740-133">visible</span><span class="sxs-lookup"><span data-stu-id="4d740-133">visible</span></span>|<span data-ttu-id="4d740-134">ブール値</span><span class="sxs-lookup"><span data-stu-id="4d740-134">boolean</span></span>|<span data-ttu-id="4d740-135">オブジェクトを表示するかどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="4d740-135">Specifies whether the object is visible or not.</span></span>|
-|<span data-ttu-id="4d740-136">comment</span><span class="sxs-lookup"><span data-stu-id="4d740-136">comment</span></span>|   <span data-ttu-id="4d740-137">string</span><span class="sxs-lookup"><span data-stu-id="4d740-137">string</span></span>  |<span data-ttu-id="4d740-138">この名前に関連付けられているコメントを表します。</span><span class="sxs-lookup"><span data-stu-id="4d740-138">Represents the comment associated with this name.</span></span>|
+|<span data-ttu-id="b91cb-133">visible</span><span class="sxs-lookup"><span data-stu-id="b91cb-133">visible</span></span>|<span data-ttu-id="b91cb-134">ブール値</span><span class="sxs-lookup"><span data-stu-id="b91cb-134">boolean</span></span>|<span data-ttu-id="b91cb-135">オブジェクトを表示するかどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="b91cb-135">Specifies whether the object is visible or not.</span></span>|
+|<span data-ttu-id="b91cb-136">comment</span><span class="sxs-lookup"><span data-stu-id="b91cb-136">comment</span></span>|   <span data-ttu-id="b91cb-137">string</span><span class="sxs-lookup"><span data-stu-id="b91cb-137">string</span></span>  |<span data-ttu-id="b91cb-138">この名前に関連付けられているコメントを表します。</span><span class="sxs-lookup"><span data-stu-id="b91cb-138">Represents the comment associated with this name.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="4d740-139">応答</span><span class="sxs-lookup"><span data-stu-id="4d740-139">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b91cb-139">応答</span><span class="sxs-lookup"><span data-stu-id="b91cb-139">Response</span></span>
 
-<span data-ttu-id="4d740-140">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で、更新された[WorkbookNamedItem](../resources/nameditem.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="4d740-140">If successful, this method returns a `200 OK` response code and updated [WorkbookNamedItem](../resources/nameditem.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="4d740-141">例</span><span class="sxs-lookup"><span data-stu-id="4d740-141">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="4d740-142">要求</span><span class="sxs-lookup"><span data-stu-id="4d740-142">Request</span></span>
-<span data-ttu-id="4d740-143">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="4d740-143">Here is an example of the request.</span></span>
+<span data-ttu-id="b91cb-140">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で、更新された[WorkbookNamedItem](../resources/nameditem.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="b91cb-140">If successful, this method returns a `200 OK` response code and updated [WorkbookNamedItem](../resources/nameditem.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="b91cb-141">例</span><span class="sxs-lookup"><span data-stu-id="b91cb-141">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="b91cb-142">要求</span><span class="sxs-lookup"><span data-stu-id="b91cb-142">Request</span></span>
+<span data-ttu-id="b91cb-143">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="b91cb-143">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_nameditem"
@@ -64,8 +64,8 @@ Content-length: 87
   "visible": true
 }
 ```
-##### <a name="response"></a><span data-ttu-id="4d740-144">応答</span><span class="sxs-lookup"><span data-stu-id="4d740-144">Response</span></span>
-<span data-ttu-id="4d740-p105">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="4d740-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="b91cb-144">応答</span><span class="sxs-lookup"><span data-stu-id="b91cb-144">Response</span></span>
+<span data-ttu-id="b91cb-p105">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="b91cb-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -84,13 +84,15 @@ Content-length: 87
   "visible": true
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="4d740-148">SDK サンプルコード</span><span class="sxs-lookup"><span data-stu-id="4d740-148">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="4d740-149">Visual</span><span class="sxs-lookup"><span data-stu-id="4d740-149">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="b91cb-148">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="b91cb-148">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="b91cb-149">C#</span><span class="sxs-lookup"><span data-stu-id="b91cb-149">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_nameditem-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="4d740-150">Java</span><span class="sxs-lookup"><span data-stu-id="4d740-150">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b91cb-150">Javascript</span><span class="sxs-lookup"><span data-stu-id="b91cb-150">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_nameditem-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="b91cb-151">目的-C</span><span class="sxs-lookup"><span data-stu-id="b91cb-151">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_nameditem-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -104,6 +106,7 @@ Content-length: 87
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/nameditem-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/nameditem-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/nameditem-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
