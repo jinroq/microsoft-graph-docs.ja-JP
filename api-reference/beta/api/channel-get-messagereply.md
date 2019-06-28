@@ -4,12 +4,12 @@ description: チームのチャネル内のメッセージに対して1回の返
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4d0ec855b2b91ce9ee912725140e7222c32ff630
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 0f06a4ab2a197f6c54e545eb74b6d278f29688cc
+ms.sourcegitcommit: e0de4e41773e361752870411d1b1a74270738127
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35262112"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35348636"
 ---
 # <a name="get-a-reply-to-a-channel-message"></a>チャネルメッセージへの返信を取得する
 
@@ -25,7 +25,7 @@ ms.locfileid: "35262112"
 |---------|-------------|
 |委任 (職場または学校のアカウント)|Group.Read.All、Group.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません|
-|アプリケーション| サポートされていません。 |
+|アプリケーション| Group.Read.All、Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
 

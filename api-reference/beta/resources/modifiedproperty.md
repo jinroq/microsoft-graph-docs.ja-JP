@@ -1,36 +1,42 @@
 ---
 title: modifiedProperty リソースの種類
-description: 変更された Azure AD のリソースについて、古い値と新しい値を持つすべての変更されたプロパティを示します。
+description: ターゲットシステムで実行された変更について説明します。
 localization_priority: Normal
-ms.openlocfilehash: 91e5df357a40b2e44bb26edc5fb3bf6965a260e5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: davidmu1
+ms.prod: microsoft-identity-platform
+doc_type: resourcePageType
+ms.openlocfilehash: 03ae8cb2c36cb811325839341c0fa8b3f395c954
+ms.sourcegitcommit: e0de4e41773e361752870411d1b1a74270738127
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32506237"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35348706"
 ---
 # <a name="modifiedproperty-resource-type"></a>modifiedProperty リソースの種類
-変更された Azure AD のリソースについて、古い値と新しい値を持つすべての変更されたプロパティを示します。
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+ターゲットシステムで実行された変更について説明します。 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
-|:---------------|:--------|:----------|
-|displayName|String|変更されたターゲット属性のプロパティ名を示します。|
-|newValue|文字列型 (String)|これらの更新された値を示します。|
-|oldValue|String|プロパティの以前の値 (更新前) を示します。|
+
+| プロパティ     | 型        | 説明 |
+|:-------------|:------------|:------------|
+|displayName|String|変更されたプロパティの名前。|
+|newValue|文字列型 (String)|新しいプロパティ値。|
+|oldValue|String|Old プロパティの値。|
 
 ## <a name="json-representation"></a>JSON 表記
 
-以下は、リソースの JSON 表記です。
+リソースの JSON 表記を次に示します。
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.modifiedProperty"
+  "@odata.type": "microsoft.graph.modifiedProperty",
+  "baseType": null
 }-->
 
 ```json
@@ -39,11 +45,10 @@ ms.locfileid: "32506237"
   "newValue": "String",
   "oldValue": "String"
 }
-
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "modifiedProperty resource",

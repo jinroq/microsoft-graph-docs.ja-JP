@@ -4,12 +4,12 @@ description: チームのチャネルで単一のメッセージを取得しま�
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8d68adc62df32064c9caa8b57167be723a62e474
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 6393ba9fdd5c012d24fd3e65ee707cda57c93cda
+ms.sourcegitcommit: e0de4e41773e361752870411d1b1a74270738127
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35262140"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35348643"
 ---
 # <a name="get-channel-message"></a>チャネル メッセージを取得する
 
@@ -24,7 +24,7 @@ ms.locfileid: "35262140"
 |---------|-------------|
 |委任 (職場または学校のアカウント)|Group.Read.All、Group.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません|
-|アプリケーション| サポートされていません。 |
+|アプリケーション| Group.Read.All、Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

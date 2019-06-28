@@ -7708,6 +7708,11 @@ items:
                     href: api/signin-list.md
                   - name: サインインを取得する
                     href: api/signin-get.md
+              - name: ログの準備
+                href: resources/provisioningobjectsummary.md
+                items:
+                  - name: ディレクトリのプロビジョニングを一覧表示する
+                    href: api/provisioningobjectsummary-list.md
           - name: 契約書
             href: resources/contract.md
             items:
@@ -7877,6 +7882,13 @@ items:
                     href: api/riskyusers-confirmcompromised.md
                   - name: 無視
                     href: api/riskyusers-dismiss.md
+          - name: リスクの検出
+            href: resources/riskdetection.md
+            items:
+              - name: リスクの検出を一覧表示する
+                href: api/riskdetection-list.md
+              - name: リスクの検出を取得する
+                href: api/riskdetection-get.md
           - name: ID プロバイダー
             href: resources/identityprovider.md
             items:
@@ -9253,7 +9265,7 @@ items:
           - name: Outlook タスク フォルダー
             href: resources/outlooktaskfolder.md
             items:
-              - name: List
+              - name: リスト
                 href: api/outlookuser-list-taskfolders.md
               - name: 作成する
                 href: api/outlookuser-post-taskfolders.md
@@ -9272,7 +9284,7 @@ items:
             items:
               - name: リスト
                 href: api/outlookuser-list-taskgroups.md
-              - name: 作成する
+              - name: 作成
                 href: api/outlookuser-post-taskgroups.md
               - name: 取得
                 href: api/outlooktaskgroup-get.md

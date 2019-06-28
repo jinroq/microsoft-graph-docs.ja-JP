@@ -1,12 +1,12 @@
 ---
 title: 列挙値
 description: Microsoft Graph 列挙値
-ms.openlocfilehash: b9e7dac80f40739854128e874b0e1fa82c0c1844
-ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
+ms.openlocfilehash: 10660c7b44dc80145dd4a3ce14c9cdfc06da7743
+ms.sourcegitcommit: e0de4e41773e361752870411d1b1a74270738127
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34750170"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35348699"
 ---
 ### <a name="contactrelationship-values"></a>contactRelationship 値
 
@@ -719,6 +719,7 @@ Windows 定義ごとに、ユーザーアカウントの種類 (グループメ�
 |userPassedMFADrivenByRiskBasedPolicy|
 |adminDismissedAllRiskForUser|
 |adminConfirmedSigninCompromised|
+|adminConfirmedUserCompromised|
 |hidden|
 |Unknownfuturevalue という|
 
@@ -821,3 +822,30 @@ Windows 定義ごとに、ユーザーアカウントの種類 (グループメ�
 |ノーマル|
 |高額|
 |緊急|
+
+### <a name="tokenissuertype-values"></a>tokenIssuerType の値
+
+|Member|
+|:---|
+|AzureAD|
+|ADFederationServices|
+|Unknownfuturevalue という|
+
+### <a name="riskdetectiontimingtype-values"></a>riskDetectionTimingType の値
+
+|Member|
+|:---|
+|notDefined|
+|realtime|
+|nearRealtime|
+|オフライン|
+|Unknownfuturevalue という|
+
+
+### <a name="activitytype-values"></a>activityType の値
+
+|Member|
+|:---|
+|signin|
+|user|
+|Unknownfuturevalue という|
