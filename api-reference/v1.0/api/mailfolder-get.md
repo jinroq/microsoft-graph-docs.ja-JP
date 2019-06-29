@@ -4,12 +4,12 @@ description: メッセージ フォルダー オブジェクトのプロパテ�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 010e6f0ada9de12655a5ebed341b5bbfdb26e124
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: a475675e8febe78c97c8482379723801951822e7
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33612673"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35266256"
 ---
 # <a name="get-mailfolder"></a>mailFolder を取得する
 
@@ -49,35 +49,47 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}
 ## <a name="response"></a>応答
 
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [mailFolder](../resources/mailfolder.md) オブジェクトを返します。
-## <a name="example"></a>例
-##### <a name="request"></a>要求
-以下は、要求の例です。
+## <a name="examples"></a>例
+### <a name="example-1-get-a-mail-folder"></a>例 1: メール フォルダーを取得する
+
+#### <a name="request"></a>要求
+
+要求の例を次に示します。
+
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkAGVmMDEzM"],
   "name": "get_mailfolder"
 }-->
+
 ```http
-GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}
+GET https://graph.microsoft.com/v1.0/me/mailFolders/AAMkAGVmMDEzM
 ```
-##### <a name="response"></a>応答
-以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+
+#### <a name="response"></a>応答
+
+応答の例を次に示します。
+
+> **注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.mailFolder"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 179
 
 {
-  "displayName": "displayName-value",
-  "parentFolderId": "parentFolderId-value",
-  "childFolderCount": 99,
-  "unreadItemCount": 99,
-  "totalItemCount": 99,
-  "id": "id-value"
+  "id": "AAMkAGVmMDEzM",
+  "displayName": "Inbox",
+  "parentFolderId": "AAMkAGVmMDEzI",
+  "childFolderCount": 2,
+  "unreadItemCount": 59,
+  "totalItemCount": 60,
+  "wellKnownName": "inbox"
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK サンプル コード
@@ -87,9 +99,74 @@ Content-length: 179
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_mailfolder-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_mailfolder-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+### <a name="example-2-get-a-mail-search-folder"></a>例 2: メール検索フォルダーを取得する
+
+#### <a name="request"></a>要求
+
+要求の例を次に示します。
+
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["AAMkAGVmMDEzM"],
+  "name": "get_mailSearchfolder"
+}-->
+
+```http
+GET https://graph.microsoft.com/v1.0/me/mailFolders/AAMkAGVmMDEzN
+```
+
+#### <a name="response"></a>応答
+
+応答の例を次に示します。
+
+> **注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.mailSearchFolder"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.mailSearchFolder",
+  "id": "AAMkAGVmMDEzN",
+  "displayName": "Get MyAnalytics",
+  "parentFolderId": "AAMkAGVmMDEzI",
+  "childFolderCount": 0,
+  "unreadItemCount": 6,
+  "totalItemCount": 6,
+  "wellKnownName": null,
+  "isSupported": true,
+  "includeNestedFolders": true,
+  "sourceFolderIds": [
+    "AAMkAGVmMDEzM"
+  ],
+  "filterQuery": "contains(subject, 'MyAnalytics')"
+}
+```
+#### <a name="sdk-sample-code"></a>SDK サンプル コード
+
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_mailSearchfolder-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_mailSearchfolder-Javascript-snippets.md)]
+# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_mailSearchfolder-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -100,6 +177,7 @@ Content-length: 179
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/mailfolder-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/mailfolder-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/mailfolder-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
