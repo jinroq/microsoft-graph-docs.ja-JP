@@ -4,12 +4,12 @@ description: 指定したグループの一覧のメンバーシップを確認�
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8aec6a92cfa802e0e5a33524a8ab087a68a5cccf
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 2b9bda05fdd07bddf8a179a69c9872d5fa61ed56
+ms.sourcegitcommit: 6d8bf390380b9434ba626d6dc5101afcf6ba6f8b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35260845"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35395143"
 ---
 # <a name="check-member-groups"></a>メンバー グループをチェックする
 
@@ -23,9 +23,16 @@ ms.locfileid: "35260845"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Directory.Read.All    |
+|委任 (職場または学校のアカウント) | すべてのユーザーとグループを取得します。すべて、そして、すべてを読み取ります。すべてのユーザーとグループ。    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | Directory.Read.All |
+|アプリケーション | User.Read.All、Group.Read.All、Directory.Read.All |
+
+使用するアクセス許可の種類を決定するには、次のシナリオのガイダンスを使用します。
+- ユーザーを使用します。すべてのアクセス許可が、サインインしているユーザーのグループメンバーシップを確認します。
+- すべてのユーザーとグループのアクセス許可を使用して、すべての権限を取得します。すべて、または、すべてのユーザーのグループメンバーシップを確認します。
+- グループのグループメンバーシップを確認するには、すべてのアクセス許可を使用します。
+- サービスプリンシパルのグループメンバーシップを確認するには、アプリケーションのすべてのアクセス許可を使用します。
+- ディレクトリオブジェクトのグループメンバーシップを確認するには、すべてのアクセス許可を使用します。
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -33,7 +40,7 @@ ms.locfileid: "35260845"
 POST /me/checkMemberGroups
 POST /users/{id | userPrincipalName}/checkMemberGroups
 POST /groups/{id}/checkMemberGroups
-POST /servciePrincipals/{id}/checkMemberGroups
+POST /servicePrincipals/{id}/checkMemberGroups
 POST /directoryObjects/{id}/checkMemberGroups
 ```
 ## <a name="request-headers"></a>要求ヘッダー

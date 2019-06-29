@@ -4,12 +4,12 @@ description: ユーザーがメンバーであるすべてのグループを返�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 60cc7819511816728dcd901d51174c75ba365f33
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: b50a56dac343181f72a2c1eb102a1e609de15a21
+ms.sourcegitcommit: 6d8bf390380b9434ba626d6dc5101afcf6ba6f8b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35270330"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35395192"
 ---
 # <a name="user-getmembergroups"></a>user: getMemberGroups
 
@@ -25,9 +25,9 @@ ms.locfileid: "35270330"
 
 | アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)                                                                                                          |
 | :------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 委任 (職場または学校のアカウント)     | User.Read、Group.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+| 委任 (職場または学校のアカウント)     | すべてのユーザーとグループを取得します。すべての、Directory.accessasuser.all、およびすべてのディレクトリを取得します。すべてのディレクトリについて確認します。すべてのディレクトリを参照してください。すべてのユーザーの読み取り。 |
 | 委任 (個人用 Microsoft アカウント) | サポートされていません。                                                                                                                                       |
-| アプリケーション                            | Group.Read.All、Directory.Read.All、Directory.ReadWrite.All                                                                                        |
+| アプリケーション                            | (すべて)、すべてのディレクトリを読み取ります。すべての、ディレクトリを読み取ることができます。            |
 
 ## <a name="http-request"></a>HTTP 要求
 

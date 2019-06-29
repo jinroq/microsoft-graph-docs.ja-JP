@@ -4,12 +4,12 @@ description: 指定したグループ一覧内のメンバーシップを確認�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7d8a017372fde8174f70a5a3f2b6960892b73880
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 1ca2f9d35cb5db8799adf6b5909130a922c24ed1
+ms.sourcegitcommit: 6d8bf390380b9434ba626d6dc5101afcf6ba6f8b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35270484"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35395178"
 ---
 # <a name="checkmembergroups"></a>checkMemberGroups
 
@@ -25,11 +25,9 @@ ms.locfileid: "35270484"
 
 | アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)                                                                        |
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------------------- |
-| 委任 (職場または学校のアカウント)     | ~~User.Read.All~~、~~User.ReadWrite.All~~、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+| 委任 (職場または学校のアカウント)     | すべてのユーザーとグループがあります。すべての、Directory.accessasuser.all、およびすべてのディレクトリがあります。すべてのユーザーが取得します。すべて、ディレクトリの読み取り。. すべての、ディレクトリは、になります。. |
 | 委任 (個人用 Microsoft アカウント) | サポートされていません。                                                                                                     |
-| アプリケーション                            | ~~User.Read.All~~、~~User.ReadWrite.All~~、Directory.Read.All、Directory.ReadWrite.All                             |
-
-> **注:** 現在この API には、`Directory.Read.All` 以上のアクセス許可が必要です。 `User.Read.All` または `User.ReadWrite.All` のアクセス許可を使用すると、エラーが返されます。 これは既知のバグです。
+| アプリケーション                            | (すべて)、すべてのユーザーを参照します。すべての、またはすべてのディレクトリを取得します。すべてのディレクトリ。 |
 
 ## <a name="http-request"></a>HTTP 要求
 

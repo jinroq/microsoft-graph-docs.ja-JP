@@ -4,12 +4,12 @@ description: 指定したユーザー、グループ、またはディレクト�
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0a4d216c23b52a539611e4e160e2236d66cc9ca3
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 599462c9589841fe5c49fddfbc6a6167e182ea77
+ms.sourcegitcommit: 6d8bf390380b9434ba626d6dc5101afcf6ba6f8b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35274873"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35395157"
 ---
 # <a name="get-member-groups"></a>メンバー グループを取得する
 
@@ -20,9 +20,16 @@ ms.locfileid: "35274873"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | User.Read.All、Group.Read.All、Directory.Read.All    |
+|委任 (職場または学校のアカウント) | すべてのユーザーとグループを取得します。すべて、そして、すべてを読み取ります。すべてのユーザーとグループ。    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
 |アプリケーション | User.Read.All、Group.Read.All、Directory.Read.All |
+
+使用するアクセス許可の種類を決定するには、次のシナリオのガイダンスを使用します。
+- ユーザーを使用して、サインインしているユーザーのグループメンバーシップを取得します。
+- すべてのユーザーとグループのアクセス許可を使用して、すべての権限を取得します。すべて、またはすべてのアクセス許可を取得します。すべてのユーザーのグループメンバーシップを取得します。
+- グループのグループメンバーシップを取得するには、すべてのアクセス許可を使用します。
+- ディレクトリオブジェクトのグループメンバーシップを取得するには、すべてのアクセス許可を使用します。
+
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
