@@ -3,49 +3,49 @@ title: オープン拡張機能を取得する
 description: 名前または完全修飾名で識別されたオープン拡張機能 (openTypeExtension オブジェクト) を取得します。
 localization_priority: Priority
 author: dkershaw10
-ms.openlocfilehash: 04ace9eb390fb2f0d33b9bd31136ba74eccbd11e
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 6817446c177750f951d18918a2022359050f250d
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33611959"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35274432"
 ---
-# <a name="get-open-extension"></a><span data-ttu-id="65823-103">オープン拡張機能を取得する</span><span class="sxs-lookup"><span data-stu-id="65823-103">Get open extension</span></span>
+# <a name="get-open-extension"></a><span data-ttu-id="ef1f3-103">オープン拡張機能を取得する</span><span class="sxs-lookup"><span data-stu-id="ef1f3-103">Get open extension</span></span>
 
-<span data-ttu-id="65823-104">名前または完全修飾名で識別されたオープン拡張機能 ([openTypeExtension](../resources/opentypeextension.md) オブジェクト) を取得します。</span><span class="sxs-lookup"><span data-stu-id="65823-104">Get an open extension ([openTypeExtension](../resources/opentypeextension.md) object) identified by name or fully qualified name.</span></span>
+<span data-ttu-id="ef1f3-104">名前または完全修飾名で識別されたオープン拡張機能 ([openTypeExtension](../resources/opentypeextension.md) オブジェクト) を取得します。</span><span class="sxs-lookup"><span data-stu-id="ef1f3-104">Get an open extension ([openTypeExtension](../resources/opentypeextension.md) object) identified by name or fully qualified name.</span></span>
 
-<span data-ttu-id="65823-105">次の表は、サポートされているリソース インスタンスからオープン拡張機能を取得できる 3 つのシナリオの一覧です。</span><span class="sxs-lookup"><span data-stu-id="65823-105">The following table lists the three scenarios where you can get an open extension from a supported resource instance.</span></span>
+<span data-ttu-id="ef1f3-105">次の表は、サポートされているリソース インスタンスからオープン拡張機能を取得できる 3 つのシナリオの一覧です。</span><span class="sxs-lookup"><span data-stu-id="ef1f3-105">The following table lists the three scenarios where you can get an open extension from a supported resource instance.</span></span>
 
-|<span data-ttu-id="65823-106">**GET シナリオ**</span><span class="sxs-lookup"><span data-stu-id="65823-106">**GET scenario**</span></span>|<span data-ttu-id="65823-107">**サポートされているリソース**</span><span class="sxs-lookup"><span data-stu-id="65823-107">**Supported resources**</span></span>|<span data-ttu-id="65823-108">**応答本文**</span><span class="sxs-lookup"><span data-stu-id="65823-108">**Response body**</span></span>|
+|<span data-ttu-id="ef1f3-106">**GET シナリオ**</span><span class="sxs-lookup"><span data-stu-id="ef1f3-106">**GET scenario**</span></span>|<span data-ttu-id="ef1f3-107">**サポートされているリソース**</span><span class="sxs-lookup"><span data-stu-id="ef1f3-107">**Supported resources**</span></span>|<span data-ttu-id="ef1f3-108">**応答本文**</span><span class="sxs-lookup"><span data-stu-id="ef1f3-108">**Response body**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="65823-109">既知のリソース インスタンスから特定の拡張機能を取得します。</span><span class="sxs-lookup"><span data-stu-id="65823-109">Get a specific extension from a known resource instance.</span></span>| <span data-ttu-id="65823-110">[デバイス](../resources/device.md)、[イベント](../resources/event.md)、[グループ](../resources/group.md)、[グループ イベント](../resources/event.md)、[グループの投稿](../resources/post.md)、[メッセージ](../resources/message.md)、[組織](../resources/organization.md)、[個人用連絡先](../resources/contact.md)、[ユーザー](../resources/user.md)</span><span class="sxs-lookup"><span data-stu-id="65823-110">[Device](../resources/device.md), [event](../resources/event.md), [group](../resources/group.md), [group event](../resources/event.md), [group post](../resources/post.md), [message](../resources/message.md), [organization](../resources/organization.md), [personal contact](../resources/contact.md), [user](../resources/user.md)</span></span> | <span data-ttu-id="65823-111">オープン拡張機能のみ。</span><span class="sxs-lookup"><span data-stu-id="65823-111">Open extension only.</span></span>|
-|<span data-ttu-id="65823-112">特定の拡張機能で展開された既知のリソース インスタンスを取得します。</span><span class="sxs-lookup"><span data-stu-id="65823-112">Get a known resource instance expanded with a specific extension.</span></span>|<span data-ttu-id="65823-113">デバイス、イベント、グループ、グループ イベント、グループの投稿、メッセージ、組織、個人用連絡先、ユーザー</span><span class="sxs-lookup"><span data-stu-id="65823-113">Device, event, group, group event, group post, message, organization, personal contact, user</span></span> |<span data-ttu-id="65823-114">オープン拡張機能で展開されたリソース インスタンス。</span><span class="sxs-lookup"><span data-stu-id="65823-114">A resource instance expanded with the open extension.</span></span>|
-|<span data-ttu-id="65823-115">特定の拡張機能でリソース インスタンスを検索し、展開します。</span><span class="sxs-lookup"><span data-stu-id="65823-115">Find and expand resource instances with a specific extension.</span></span> |<span data-ttu-id="65823-116">イベント、グループ イベント、グループの投稿、メッセージ、個人用連絡先</span><span class="sxs-lookup"><span data-stu-id="65823-116">Event, group event, group post, message, personal contact</span></span>|<span data-ttu-id="65823-117">オープン拡張機能で展開されたリソース インスタンス。</span><span class="sxs-lookup"><span data-stu-id="65823-117">Resource instances expanded with the open extension.</span></span>|
+|<span data-ttu-id="ef1f3-109">既知のリソース インスタンスから特定の拡張機能を取得します。</span><span class="sxs-lookup"><span data-stu-id="ef1f3-109">Get a specific extension from a known resource instance.</span></span>| <span data-ttu-id="ef1f3-110">[デバイス](../resources/device.md)、[イベント](../resources/event.md)、[グループ](../resources/group.md)、[グループ イベント](../resources/event.md)、[グループの投稿](../resources/post.md)、[メッセージ](../resources/message.md)、[組織](../resources/organization.md)、[個人用連絡先](../resources/contact.md)、[ユーザー](../resources/user.md)</span><span class="sxs-lookup"><span data-stu-id="ef1f3-110">[Device](../resources/device.md), [event](../resources/event.md), [group](../resources/group.md), [group event](../resources/event.md), [group post](../resources/post.md), [message](../resources/message.md), [organization](../resources/organization.md), [personal contact](../resources/contact.md), [user](../resources/user.md)</span></span> | <span data-ttu-id="ef1f3-111">オープン拡張機能のみ。</span><span class="sxs-lookup"><span data-stu-id="ef1f3-111">Open extension only.</span></span>|
+|<span data-ttu-id="ef1f3-112">特定の拡張機能で展開された既知のリソース インスタンスを取得します。</span><span class="sxs-lookup"><span data-stu-id="ef1f3-112">Get a known resource instance expanded with a specific extension.</span></span>|<span data-ttu-id="ef1f3-113">デバイス、イベント、グループ、グループ イベント、グループの投稿、メッセージ、組織、個人用連絡先、ユーザー</span><span class="sxs-lookup"><span data-stu-id="ef1f3-113">Device, event, group, group event, group post, message, organization, personal contact, user</span></span> |<span data-ttu-id="ef1f3-114">オープン拡張機能で展開されたリソース インスタンス。</span><span class="sxs-lookup"><span data-stu-id="ef1f3-114">A resource instance expanded with the open extension.</span></span>|
+|<span data-ttu-id="ef1f3-115">特定の拡張機能でリソース インスタンスを検索し、展開します。</span><span class="sxs-lookup"><span data-stu-id="ef1f3-115">Find and expand resource instances with a specific extension.</span></span> |<span data-ttu-id="ef1f3-116">イベント、グループ イベント、グループの投稿、メッセージ、個人用連絡先</span><span class="sxs-lookup"><span data-stu-id="ef1f3-116">Event, group event, group post, message, personal contact</span></span>|<span data-ttu-id="ef1f3-117">オープン拡張機能で展開されたリソース インスタンス。</span><span class="sxs-lookup"><span data-stu-id="ef1f3-117">Resource instances expanded with the open extension.</span></span>|
 
-## <a name="permissions"></a><span data-ttu-id="65823-118">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="65823-118">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="ef1f3-118">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="ef1f3-118">Permissions</span></span>
 
-<span data-ttu-id="65823-119">拡張機能を含むリソースおよび要求されたアクセス許可の種類（委任またはアプリケーション）に応じて、以下の表で指定されているアクセス許可が、このAPIを呼び出すために最低限必要な特権になります。</span><span class="sxs-lookup"><span data-stu-id="65823-119">Depending on the resource that contains the extension and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API.</span></span> <span data-ttu-id="65823-120">アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="65823-120">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ef1f3-119">拡張機能を含むリソースおよび要求されたアクセス許可の種類（委任またはアプリケーション）に応じて、以下の表で指定されているアクセス許可が、このAPIを呼び出すために最低限必要な特権になります。</span><span class="sxs-lookup"><span data-stu-id="ef1f3-119">Depending on the resource that contains the extension and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API.</span></span> <span data-ttu-id="ef1f3-120">アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ef1f3-120">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="65823-121">サポートされているリソース</span><span class="sxs-lookup"><span data-stu-id="65823-121">Supported resource</span></span> | <span data-ttu-id="65823-122">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="65823-122">Delegated (work or school account)</span></span> | <span data-ttu-id="65823-123">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="65823-123">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="65823-124">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="65823-124">Application</span></span> |
+| <span data-ttu-id="ef1f3-121">サポートされているリソース</span><span class="sxs-lookup"><span data-stu-id="ef1f3-121">Supported resource</span></span> | <span data-ttu-id="ef1f3-122">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="ef1f3-122">Delegated (work or school account)</span></span> | <span data-ttu-id="ef1f3-123">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="ef1f3-123">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ef1f3-124">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="ef1f3-124">Application</span></span> |
 |:-----|:-----|:-----|:-----|
-| [<span data-ttu-id="65823-125">device</span><span class="sxs-lookup"><span data-stu-id="65823-125">device</span></span>](../resources/device.md) | <span data-ttu-id="65823-126">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="65823-126">Directory.Read.All</span></span> | <span data-ttu-id="65823-127">非サポート</span><span class="sxs-lookup"><span data-stu-id="65823-127">Not supported</span></span> | <span data-ttu-id="65823-128">Device.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="65823-128">Device.ReadWrite.All</span></span> |
-| [<span data-ttu-id="65823-129">event</span><span class="sxs-lookup"><span data-stu-id="65823-129">event</span></span>](../resources/event.md) | <span data-ttu-id="65823-130">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="65823-130">Calendars.Read</span></span> | <span data-ttu-id="65823-131">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="65823-131">Calendars.Read</span></span> | <span data-ttu-id="65823-132">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="65823-132">Calendars.Read</span></span> |
-| [<span data-ttu-id="65823-133">グループ</span><span class="sxs-lookup"><span data-stu-id="65823-133">group</span></span>](../resources/group.md) | <span data-ttu-id="65823-134">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="65823-134">Group.Read.All</span></span> | <span data-ttu-id="65823-135">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="65823-135">Not supported</span></span> | <span data-ttu-id="65823-136">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="65823-136">Group.Read.All</span></span> |
-| [<span data-ttu-id="65823-137">グループ イベント</span><span class="sxs-lookup"><span data-stu-id="65823-137">group event</span></span>](../resources/event.md) | <span data-ttu-id="65823-138">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="65823-138">Group.Read.All</span></span> | <span data-ttu-id="65823-139">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="65823-139">Not supported</span></span> | <span data-ttu-id="65823-140">非サポート</span><span class="sxs-lookup"><span data-stu-id="65823-140">Not supported</span></span> |
-| [<span data-ttu-id="65823-141">グループの投稿</span><span class="sxs-lookup"><span data-stu-id="65823-141">group post</span></span>](../resources/post.md) | <span data-ttu-id="65823-142">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="65823-142">Group.Read.All</span></span> | <span data-ttu-id="65823-143">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="65823-143">Not supported</span></span> | <span data-ttu-id="65823-144">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="65823-144">Group.Read.All</span></span> |
-| [<span data-ttu-id="65823-145">message</span><span class="sxs-lookup"><span data-stu-id="65823-145">message</span></span>](../resources/message.md) | <span data-ttu-id="65823-146">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="65823-146">Mail.Read</span></span> | <span data-ttu-id="65823-147">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="65823-147">Mail.Read</span></span> | <span data-ttu-id="65823-148">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="65823-148">Mail.Read</span></span> | 
-| [<span data-ttu-id="65823-149">組織</span><span class="sxs-lookup"><span data-stu-id="65823-149">organization</span></span>](../resources/organization.md) | <span data-ttu-id="65823-150">User.Read</span><span class="sxs-lookup"><span data-stu-id="65823-150">User.Read</span></span> | <span data-ttu-id="65823-151">非サポート</span><span class="sxs-lookup"><span data-stu-id="65823-151">Not supported</span></span> | <span data-ttu-id="65823-152">非サポート</span><span class="sxs-lookup"><span data-stu-id="65823-152">Not supported</span></span> |
-| [<span data-ttu-id="65823-153">個人用連絡先</span><span class="sxs-lookup"><span data-stu-id="65823-153">personal contact</span></span>](../resources/contact.md) | <span data-ttu-id="65823-154">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="65823-154">Contacts.Read</span></span> | <span data-ttu-id="65823-155">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="65823-155">Contacts.Read</span></span> | <span data-ttu-id="65823-156">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="65823-156">Contacts.Read</span></span> |
-| [<span data-ttu-id="65823-157">ユーザー</span><span class="sxs-lookup"><span data-stu-id="65823-157">user</span></span>](../resources/user.md) | <span data-ttu-id="65823-158">User.Read</span><span class="sxs-lookup"><span data-stu-id="65823-158">User.Read</span></span> | <span data-ttu-id="65823-159">User.Read</span><span class="sxs-lookup"><span data-stu-id="65823-159">User.Read</span></span> | <span data-ttu-id="65823-160">User.Read.All</span><span class="sxs-lookup"><span data-stu-id="65823-160">User.Read.All</span></span> |
+| [<span data-ttu-id="ef1f3-125">device</span><span class="sxs-lookup"><span data-stu-id="ef1f3-125">device</span></span>](../resources/device.md) | <span data-ttu-id="ef1f3-126">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="ef1f3-126">Directory.Read.All</span></span> | <span data-ttu-id="ef1f3-127">非サポート</span><span class="sxs-lookup"><span data-stu-id="ef1f3-127">Not supported</span></span> | <span data-ttu-id="ef1f3-128">Device.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ef1f3-128">Device.ReadWrite.All</span></span> |
+| [<span data-ttu-id="ef1f3-129">event</span><span class="sxs-lookup"><span data-stu-id="ef1f3-129">event</span></span>](../resources/event.md) | <span data-ttu-id="ef1f3-130">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="ef1f3-130">Calendars.Read</span></span> | <span data-ttu-id="ef1f3-131">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="ef1f3-131">Calendars.Read</span></span> | <span data-ttu-id="ef1f3-132">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="ef1f3-132">Calendars.Read</span></span> |
+| [<span data-ttu-id="ef1f3-133">グループ</span><span class="sxs-lookup"><span data-stu-id="ef1f3-133">group</span></span>](../resources/group.md) | <span data-ttu-id="ef1f3-134">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="ef1f3-134">Group.Read.All</span></span> | <span data-ttu-id="ef1f3-135">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="ef1f3-135">Not supported</span></span> | <span data-ttu-id="ef1f3-136">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="ef1f3-136">Group.Read.All</span></span> |
+| [<span data-ttu-id="ef1f3-137">グループ イベント</span><span class="sxs-lookup"><span data-stu-id="ef1f3-137">group event</span></span>](../resources/event.md) | <span data-ttu-id="ef1f3-138">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="ef1f3-138">Group.Read.All</span></span> | <span data-ttu-id="ef1f3-139">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="ef1f3-139">Not supported</span></span> | <span data-ttu-id="ef1f3-140">非サポート</span><span class="sxs-lookup"><span data-stu-id="ef1f3-140">Not supported</span></span> |
+| [<span data-ttu-id="ef1f3-141">グループの投稿</span><span class="sxs-lookup"><span data-stu-id="ef1f3-141">group post</span></span>](../resources/post.md) | <span data-ttu-id="ef1f3-142">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="ef1f3-142">Group.Read.All</span></span> | <span data-ttu-id="ef1f3-143">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="ef1f3-143">Not supported</span></span> | <span data-ttu-id="ef1f3-144">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="ef1f3-144">Group.Read.All</span></span> |
+| [<span data-ttu-id="ef1f3-145">message</span><span class="sxs-lookup"><span data-stu-id="ef1f3-145">message</span></span>](../resources/message.md) | <span data-ttu-id="ef1f3-146">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="ef1f3-146">Mail.Read</span></span> | <span data-ttu-id="ef1f3-147">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="ef1f3-147">Mail.Read</span></span> | <span data-ttu-id="ef1f3-148">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="ef1f3-148">Mail.Read</span></span> | 
+| [<span data-ttu-id="ef1f3-149">組織</span><span class="sxs-lookup"><span data-stu-id="ef1f3-149">organization</span></span>](../resources/organization.md) | <span data-ttu-id="ef1f3-150">User.Read</span><span class="sxs-lookup"><span data-stu-id="ef1f3-150">User.Read</span></span> | <span data-ttu-id="ef1f3-151">非サポート</span><span class="sxs-lookup"><span data-stu-id="ef1f3-151">Not supported</span></span> | <span data-ttu-id="ef1f3-152">非サポート</span><span class="sxs-lookup"><span data-stu-id="ef1f3-152">Not supported</span></span> |
+| [<span data-ttu-id="ef1f3-153">個人用連絡先</span><span class="sxs-lookup"><span data-stu-id="ef1f3-153">personal contact</span></span>](../resources/contact.md) | <span data-ttu-id="ef1f3-154">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="ef1f3-154">Contacts.Read</span></span> | <span data-ttu-id="ef1f3-155">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="ef1f3-155">Contacts.Read</span></span> | <span data-ttu-id="ef1f3-156">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="ef1f3-156">Contacts.Read</span></span> |
+| [<span data-ttu-id="ef1f3-157">ユーザー</span><span class="sxs-lookup"><span data-stu-id="ef1f3-157">user</span></span>](../resources/user.md) | <span data-ttu-id="ef1f3-158">User.Read</span><span class="sxs-lookup"><span data-stu-id="ef1f3-158">User.Read</span></span> | <span data-ttu-id="ef1f3-159">User.Read</span><span class="sxs-lookup"><span data-stu-id="ef1f3-159">User.Read</span></span> | <span data-ttu-id="ef1f3-160">User.Read.All</span><span class="sxs-lookup"><span data-stu-id="ef1f3-160">User.Read.All</span></span> |
 
 
-## <a name="http-request"></a><span data-ttu-id="65823-161">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="65823-161">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ef1f3-161">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="ef1f3-161">HTTP request</span></span>
 
-<span data-ttu-id="65823-162">このセクションでは、前述の 3 つの `GET` シナリオの構文について説明します。</span><span class="sxs-lookup"><span data-stu-id="65823-162">This section lists the syntax for each of the three `GET` scenarios described above.</span></span>
+<span data-ttu-id="ef1f3-162">このセクションでは、前述の 3 つの `GET` シナリオの構文について説明します。</span><span class="sxs-lookup"><span data-stu-id="ef1f3-162">This section lists the syntax for each of the three `GET` scenarios described above.</span></span>
 
-### <a name="get-a-specific-extension-in-a-known-resource-instance"></a><span data-ttu-id="65823-163">既知のリソース インスタンス内の特定の拡張機能を取得する</span><span class="sxs-lookup"><span data-stu-id="65823-163">Get a specific extension in a known resource instance</span></span>
+### <a name="get-a-specific-extension-in-a-known-resource-instance"></a><span data-ttu-id="ef1f3-163">既知のリソース インスタンス内の特定の拡張機能を取得する</span><span class="sxs-lookup"><span data-stu-id="ef1f3-163">Get a specific extension in a known resource instance</span></span>
 
-<span data-ttu-id="65823-164">リソース インスタンスを取得するのと同じ REST 要求を使用し、そのインスタンスの **extensions** ナビゲーション プロパティを使用して拡張機能を識別します。</span><span class="sxs-lookup"><span data-stu-id="65823-164">Use the same REST request as getting the resource instance, and identify the extension using the **extensions** navigation property of that instance.</span></span>
+<span data-ttu-id="ef1f3-164">リソース インスタンスを取得するのと同じ REST 要求を使用し、そのインスタンスの **extensions** ナビゲーション プロパティを使用して拡張機能を識別します。</span><span class="sxs-lookup"><span data-stu-id="ef1f3-164">Use the same REST request as getting the resource instance, and identify the extension using the **extensions** navigation property of that instance.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -61,9 +61,9 @@ GET /users/{Id|userPrincipalName}/extensions/{extensionId}
 ```
 
 
-### <a name="get-a-known-resource-instance-expanded-with-a-matching-extension"></a><span data-ttu-id="65823-165">一致する拡張機能で展開された既知のリソース インスタンスを取得する</span><span class="sxs-lookup"><span data-stu-id="65823-165">Get a known resource instance expanded with a matching extension</span></span> 
+### <a name="get-a-known-resource-instance-expanded-with-a-matching-extension"></a><span data-ttu-id="ef1f3-165">一致する拡張機能で展開された既知のリソース インスタンスを取得する</span><span class="sxs-lookup"><span data-stu-id="ef1f3-165">Get a known resource instance expanded with a matching extension</span></span> 
 
-<span data-ttu-id="65823-166">イベント、グループ イベント、グループの投稿、メッセージ、個人用連絡先のリソースの種類に関しては、リソース インスタンスを取得するのと同じ REST 要求を使用して、そのインスタンスの **id** プロパティのフィルターに一致する拡張機能を検索し、拡張機能でインスタンスを展開できます。</span><span class="sxs-lookup"><span data-stu-id="65823-166">For the event, group event, group post, message, personal contact resource types, you can use the same REST request as getting the resource instance, look for an extension that matches a filter on its **id** property, and expand the instance with the extension.</span></span> <span data-ttu-id="65823-167">応答には、リソース プロパティのほとんどが含まれています。</span><span class="sxs-lookup"><span data-stu-id="65823-167">The response includes most of the resource properties.</span></span>
+<span data-ttu-id="ef1f3-166">イベント、グループ イベント、グループの投稿、メッセージ、個人用連絡先のリソースの種類に関しては、リソース インスタンスを取得するのと同じ REST 要求を使用して、そのインスタンスの **id** プロパティのフィルターに一致する拡張機能を検索し、拡張機能でインスタンスを展開できます。</span><span class="sxs-lookup"><span data-stu-id="ef1f3-166">For the event, group event, group post, message, personal contact resource types, you can use the same REST request as getting the resource instance, look for an extension that matches a filter on its **id** property, and expand the instance with the extension.</span></span> <span data-ttu-id="ef1f3-167">応答には、リソース プロパティのほとんどが含まれています。</span><span class="sxs-lookup"><span data-stu-id="ef1f3-167">The response includes most of the resource properties.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -75,7 +75,7 @@ GET /users/{Id|userPrincipalName}/contacts/{Id}?$expand=extensions($filter=id eq
 ```
 
 
-<span data-ttu-id="65823-168">デバイス、グループ、組織、ユーザーのリソースの種類に関しては、リソース インスタンスから **id** プロパティやその他のプロパティを含めるために、`$select` パラメーターを使用する必要もあります。</span><span class="sxs-lookup"><span data-stu-id="65823-168">For the device, group, organization, and user resource types, you must also use a `$select` parameter to include the **id** property and any other properties you want from the resource instance:</span></span>
+<span data-ttu-id="ef1f3-168">デバイス、グループ、組織、ユーザーのリソースの種類に関しては、リソース インスタンスから **id** プロパティやその他のプロパティを含めるために、`$select` パラメーターを使用する必要もあります。</span><span class="sxs-lookup"><span data-stu-id="ef1f3-168">For the device, group, organization, and user resource types, you must also use a `$select` parameter to include the **id** property and any other properties you want from the resource instance:</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -85,9 +85,9 @@ GET /organization/{Id}?$expand=extensions($filter=id eq '{extensionId}')&$select
 GET /users/{Id|userPrincipalName}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
 ```
 
-### <a name="filter-for-resource-instances-expanded-with-a-matching-extension"></a><span data-ttu-id="65823-169">一致する拡張機能で展開されたリソース インスタンスにフィルターをかける</span><span class="sxs-lookup"><span data-stu-id="65823-169">Filter for resource instances expanded with a matching extension</span></span> 
+### <a name="filter-for-resource-instances-expanded-with-a-matching-extension"></a><span data-ttu-id="ef1f3-169">一致する拡張機能で展開されたリソース インスタンスにフィルターをかける</span><span class="sxs-lookup"><span data-stu-id="ef1f3-169">Filter for resource instances expanded with a matching extension</span></span> 
 
-<span data-ttu-id="65823-170">サポートされているリソースのコレクションを取得するのと同じ REST 要求を使用して、対応する **id** プロパティの拡張機能を含むインスタンスのコレクションにフィルターをかけ、拡張機能でこれらのインスタンスを展開します。</span><span class="sxs-lookup"><span data-stu-id="65823-170">Use the same REST request as getting a collection of the supported resource, filter the collection for instances that contain an extension with a matching **id** property, and expand these instances with the extension.</span></span>
+<span data-ttu-id="ef1f3-170">サポートされているリソースのコレクションを取得するのと同じ REST 要求を使用して、対応する **id** プロパティの拡張機能を含むインスタンスのコレクションにフィルターをかけ、拡張機能でこれらのインスタンスを展開します。</span><span class="sxs-lookup"><span data-stu-id="ef1f3-170">Use the same REST request as getting a collection of the supported resource, filter the collection for instances that contain an extension with a matching **id** property, and expand these instances with the extension.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -98,42 +98,42 @@ GET /users/{Id|userPrincipalName}/messages?$filter=Extensions/any(f:f/id eq '{ex
 GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 ```
 
-><span data-ttu-id="65823-p103">**注:** 上記の構文は、拡張機能の取得元となるリソース インスタンスまたはコレクションを特定する一般的な方法を示しています。こうしたリソース インスタンスまたはコレクションを特定するために使用できる他の構文すべても、同様の方法でオープン拡張機能を取得できます。</span><span class="sxs-lookup"><span data-stu-id="65823-p103">**Note:** The above syntax shows some common ways to identify a resource instance or collection, in order to get an extension from it. All other syntax that allows you to identify these resource instances or collections supports getting open extensions from them in a similar way.</span></span>
+><span data-ttu-id="ef1f3-p103">**注:** 上記の構文は、拡張機能の取得元となるリソース インスタンスまたはコレクションを特定する一般的な方法を示しています。こうしたリソース インスタンスまたはコレクションを特定するために使用できる他の構文すべても、同様の方法でオープン拡張機能を取得できます。</span><span class="sxs-lookup"><span data-stu-id="ef1f3-p103">**Note:** The above syntax shows some common ways to identify a resource instance or collection, in order to get an extension from it. All other syntax that allows you to identify these resource instances or collections supports getting open extensions from them in a similar way.</span></span>
 
-## <a name="path-parameters"></a><span data-ttu-id="65823-173">パス パラメーター</span><span class="sxs-lookup"><span data-stu-id="65823-173">Path parameters</span></span>
-|<span data-ttu-id="65823-174">パラメーター</span><span class="sxs-lookup"><span data-stu-id="65823-174">Parameter</span></span>|<span data-ttu-id="65823-175">型</span><span class="sxs-lookup"><span data-stu-id="65823-175">Type</span></span>|<span data-ttu-id="65823-176">説明</span><span class="sxs-lookup"><span data-stu-id="65823-176">Description</span></span>|
+## <a name="path-parameters"></a><span data-ttu-id="ef1f3-173">パス パラメーター</span><span class="sxs-lookup"><span data-stu-id="ef1f3-173">Path parameters</span></span>
+|<span data-ttu-id="ef1f3-174">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ef1f3-174">Parameter</span></span>|<span data-ttu-id="ef1f3-175">型</span><span class="sxs-lookup"><span data-stu-id="ef1f3-175">Type</span></span>|<span data-ttu-id="ef1f3-176">説明</span><span class="sxs-lookup"><span data-stu-id="ef1f3-176">Description</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="65823-177">ID</span><span class="sxs-lookup"><span data-stu-id="65823-177">Id</span></span>|<span data-ttu-id="65823-178">string</span><span class="sxs-lookup"><span data-stu-id="65823-178">string</span></span>|<span data-ttu-id="65823-p104">メッセージ、イベント、連絡先などの対応するコレクションに含まれるオブジェクトの一意識別子を格納するプレースホルダー。必須。**openTypeExtension** の **id** プロパティと混同しないこと。</span><span class="sxs-lookup"><span data-stu-id="65823-p104">Placeholder for a unique identifier for an object in the corresponding collection such as messages, events, contacts. Required. Not to be confused with the **id** property of an **openTypeExtension**.</span></span>|
-|<span data-ttu-id="65823-182">extensionId</span><span class="sxs-lookup"><span data-stu-id="65823-182">extensionId</span></span>|<span data-ttu-id="65823-183">string</span><span class="sxs-lookup"><span data-stu-id="65823-183">string</span></span>|<span data-ttu-id="65823-p105">拡張情報名を表すプレースホルダー。これは、拡張情報の一意のテキスト識別子であるか、拡張情報の種類と一意のテキスト識別子を連結した完全修飾名のいずれかです。完全修飾名は、拡張情報の作成時に **id** プロパティに入れて返されます。必須。</span><span class="sxs-lookup"><span data-stu-id="65823-p105">Placeholder for an extension name which is a unique text identifier for an extension, or a fully qualified name which concatenates the extension type and unique text identifier. The fully qualified name is returned in the **id** property when you create the extension. Required.</span></span>|
+|<span data-ttu-id="ef1f3-177">ID</span><span class="sxs-lookup"><span data-stu-id="ef1f3-177">Id</span></span>|<span data-ttu-id="ef1f3-178">string</span><span class="sxs-lookup"><span data-stu-id="ef1f3-178">string</span></span>|<span data-ttu-id="ef1f3-p104">メッセージ、イベント、連絡先などの対応するコレクションに含まれるオブジェクトの一意識別子を格納するプレースホルダー。必須。**openTypeExtension** の **id** プロパティと混同しないこと。</span><span class="sxs-lookup"><span data-stu-id="ef1f3-p104">Placeholder for a unique identifier for an object in the corresponding collection such as messages, events, contacts. Required. Not to be confused with the **id** property of an **openTypeExtension**.</span></span>|
+|<span data-ttu-id="ef1f3-182">extensionId</span><span class="sxs-lookup"><span data-stu-id="ef1f3-182">extensionId</span></span>|<span data-ttu-id="ef1f3-183">string</span><span class="sxs-lookup"><span data-stu-id="ef1f3-183">string</span></span>|<span data-ttu-id="ef1f3-p105">拡張情報名を表すプレースホルダー。これは、拡張情報の一意のテキスト識別子であるか、拡張情報の種類と一意のテキスト識別子を連結した完全修飾名のいずれかです。完全修飾名は、拡張情報の作成時に **id** プロパティに入れて返されます。必須。</span><span class="sxs-lookup"><span data-stu-id="ef1f3-p105">Placeholder for an extension name which is a unique text identifier for an extension, or a fully qualified name which concatenates the extension type and unique text identifier. The fully qualified name is returned in the **id** property when you create the extension. Required.</span></span>|
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="65823-187">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="65823-187">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="ef1f3-187">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="ef1f3-187">Optional query parameters</span></span>
 
-<span data-ttu-id="65823-188">`$filter` 文字列内のスペース文字には必ず [URL エンコード](https://www.w3schools.com/tags/ref_urlencode.asp)を適用してください。</span><span class="sxs-lookup"><span data-stu-id="65823-188">Make sure you apply [URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the space characters in the `$filter` string.</span></span>
+<span data-ttu-id="ef1f3-188">`$filter` 文字列内のスペース文字には必ず [URL エンコード](https://www.w3schools.com/tags/ref_urlencode.asp)を適用してください。</span><span class="sxs-lookup"><span data-stu-id="ef1f3-188">Make sure you apply [URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the space characters in the `$filter` string.</span></span>
 
-|<span data-ttu-id="65823-189">名前</span><span class="sxs-lookup"><span data-stu-id="65823-189">Name</span></span>|<span data-ttu-id="65823-190">値</span><span class="sxs-lookup"><span data-stu-id="65823-190">Value</span></span>|<span data-ttu-id="65823-191">説明</span><span class="sxs-lookup"><span data-stu-id="65823-191">Description</span></span>|
+|<span data-ttu-id="ef1f3-189">名前</span><span class="sxs-lookup"><span data-stu-id="ef1f3-189">Name</span></span>|<span data-ttu-id="ef1f3-190">値</span><span class="sxs-lookup"><span data-stu-id="ef1f3-190">Value</span></span>|<span data-ttu-id="ef1f3-191">説明</span><span class="sxs-lookup"><span data-stu-id="ef1f3-191">Description</span></span>|
 |:---------------|:--------|:-------|
-|<span data-ttu-id="65823-192">$filter</span><span class="sxs-lookup"><span data-stu-id="65823-192">$filter</span></span>|<span data-ttu-id="65823-193">string</span><span class="sxs-lookup"><span data-stu-id="65823-193">string</span></span>|<span data-ttu-id="65823-194">**id** が `extensionId` パラメーターの値と一致する拡張情報を返します。</span><span class="sxs-lookup"><span data-stu-id="65823-194">Returns an extension with its **id** matching the `extensionId` parameter value.</span></span>|
-|<span data-ttu-id="65823-195">$filter with **any** operator</span><span class="sxs-lookup"><span data-stu-id="65823-195">$filter with **any** operator</span></span>|<span data-ttu-id="65823-196">string</span><span class="sxs-lookup"><span data-stu-id="65823-196">string</span></span>|<span data-ttu-id="65823-197">**id** が `extensionId` パラメーターの値と一致する拡張情報を含むリソース コレクションのインスタンスを返します。</span><span class="sxs-lookup"><span data-stu-id="65823-197">Returns instances of a resource collection that contain an extension with its **id** matching the `extensionId` parameter value.</span></span>|
-|<span data-ttu-id="65823-198">$expand</span><span class="sxs-lookup"><span data-stu-id="65823-198">$expand</span></span>|<span data-ttu-id="65823-199">string</span><span class="sxs-lookup"><span data-stu-id="65823-199">string</span></span>|<span data-ttu-id="65823-200">リソース インスタンスを展開して、拡張情報を組み込みます。</span><span class="sxs-lookup"><span data-stu-id="65823-200">Expands a resource instance to include an extension.</span></span> |
+|<span data-ttu-id="ef1f3-192">$filter</span><span class="sxs-lookup"><span data-stu-id="ef1f3-192">$filter</span></span>|<span data-ttu-id="ef1f3-193">string</span><span class="sxs-lookup"><span data-stu-id="ef1f3-193">string</span></span>|<span data-ttu-id="ef1f3-194">**id** が `extensionId` パラメーターの値と一致する拡張情報を返します。</span><span class="sxs-lookup"><span data-stu-id="ef1f3-194">Returns an extension with its **id** matching the `extensionId` parameter value.</span></span>|
+|<span data-ttu-id="ef1f3-195">$filter with **any** operator</span><span class="sxs-lookup"><span data-stu-id="ef1f3-195">$filter with **any** operator</span></span>|<span data-ttu-id="ef1f3-196">string</span><span class="sxs-lookup"><span data-stu-id="ef1f3-196">string</span></span>|<span data-ttu-id="ef1f3-197">**id** が `extensionId` パラメーターの値と一致する拡張情報を含むリソース コレクションのインスタンスを返します。</span><span class="sxs-lookup"><span data-stu-id="ef1f3-197">Returns instances of a resource collection that contain an extension with its **id** matching the `extensionId` parameter value.</span></span>|
+|<span data-ttu-id="ef1f3-198">$expand</span><span class="sxs-lookup"><span data-stu-id="ef1f3-198">$expand</span></span>|<span data-ttu-id="ef1f3-199">string</span><span class="sxs-lookup"><span data-stu-id="ef1f3-199">string</span></span>|<span data-ttu-id="ef1f3-200">リソース インスタンスを展開して、拡張情報を組み込みます。</span><span class="sxs-lookup"><span data-stu-id="ef1f3-200">Expands a resource instance to include an extension.</span></span> |
 
-## <a name="request-headers"></a><span data-ttu-id="65823-201">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="65823-201">Request headers</span></span>
-| <span data-ttu-id="65823-202">名前</span><span class="sxs-lookup"><span data-stu-id="65823-202">Name</span></span>       | <span data-ttu-id="65823-203">値</span><span class="sxs-lookup"><span data-stu-id="65823-203">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="ef1f3-201">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="ef1f3-201">Request headers</span></span>
+| <span data-ttu-id="ef1f3-202">名前</span><span class="sxs-lookup"><span data-stu-id="ef1f3-202">Name</span></span>       | <span data-ttu-id="ef1f3-203">値</span><span class="sxs-lookup"><span data-stu-id="ef1f3-203">Value</span></span> |
 |:---------------|:----------|
-| <span data-ttu-id="65823-204">Authorization</span><span class="sxs-lookup"><span data-stu-id="65823-204">Authorization</span></span> | <span data-ttu-id="65823-p106">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="65823-p106">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="ef1f3-204">Authorization</span><span class="sxs-lookup"><span data-stu-id="ef1f3-204">Authorization</span></span> | <span data-ttu-id="ef1f3-p106">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="ef1f3-p106">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="65823-207">要求本文</span><span class="sxs-lookup"><span data-stu-id="65823-207">Request body</span></span>
-<span data-ttu-id="65823-208">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="65823-208">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ef1f3-207">要求本文</span><span class="sxs-lookup"><span data-stu-id="ef1f3-207">Request body</span></span>
+<span data-ttu-id="ef1f3-208">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="ef1f3-208">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="65823-209">応答</span><span class="sxs-lookup"><span data-stu-id="65823-209">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ef1f3-209">応答</span><span class="sxs-lookup"><span data-stu-id="ef1f3-209">Response</span></span>
 
-<span data-ttu-id="65823-p107">成功した場合、このメソッドは応答本文で `200 OK` 応答コードと [openTypeExtension](../resources/opentypeextension.md) オブジェクトを返します。GET クエリに応じて、厳密な応答の本体は異なります。</span><span class="sxs-lookup"><span data-stu-id="65823-p107">If successful, this method returns a `200 OK` response code and [openTypeExtension](../resources/opentypeextension.md) object in the response body. Depending on the GET query, the exact response body differs.</span></span>
-## <a name="example"></a><span data-ttu-id="65823-212">例</span><span class="sxs-lookup"><span data-stu-id="65823-212">Example</span></span>
+<span data-ttu-id="ef1f3-p107">成功した場合、このメソッドは応答本文で `200 OK` 応答コードと [openTypeExtension](../resources/opentypeextension.md) オブジェクトを返します。GET クエリに応じて、厳密な応答の本体は異なります。</span><span class="sxs-lookup"><span data-stu-id="ef1f3-p107">If successful, this method returns a `200 OK` response code and [openTypeExtension](../resources/opentypeextension.md) object in the response body. Depending on the GET query, the exact response body differs.</span></span>
+## <a name="example"></a><span data-ttu-id="ef1f3-212">例</span><span class="sxs-lookup"><span data-stu-id="ef1f3-212">Example</span></span>
 
-#### <a name="request-1"></a><span data-ttu-id="65823-213">要求 1</span><span class="sxs-lookup"><span data-stu-id="65823-213">Request 1</span></span>
+#### <a name="request-1"></a><span data-ttu-id="ef1f3-213">要求 1</span><span class="sxs-lookup"><span data-stu-id="ef1f3-213">Request 1</span></span>
 
-<span data-ttu-id="65823-p108">最初の例では、拡張情報を参照する 2 通りの方法を示し、指定されたメッセージ内の拡張情報を取得します。応答は、拡張情報を参照するために使用する方法に関係なく、同じです。</span><span class="sxs-lookup"><span data-stu-id="65823-p108">The first example shows 2 ways of referencing an extension and gets the extension in the specified message. The response is the same regardless of the way used to reference the extension.</span></span>
+<span data-ttu-id="ef1f3-p108">最初の例では、拡張情報を参照する 2 通りの方法を示し、指定されたメッセージ内の拡張情報を取得します。応答は、拡張情報を参照するために使用する方法に関係なく、同じです。</span><span class="sxs-lookup"><span data-stu-id="ef1f3-p108">The first example shows 2 ways of referencing an extension and gets the extension in the specified message. The response is the same regardless of the way used to reference the extension.</span></span>
 
-<span data-ttu-id="65823-216">最初は、名前で参照します。</span><span class="sxs-lookup"><span data-stu-id="65823-216">First, by its name:</span></span> 
+<span data-ttu-id="ef1f3-216">最初は、名前で参照します。</span><span class="sxs-lookup"><span data-stu-id="ef1f3-216">First, by its name:</span></span> 
 
 <!-- {
   "blockType": "request",
@@ -144,25 +144,27 @@ GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{ex
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions/Com.Contoso.Referral
 ```
 
-<span data-ttu-id="65823-217">次に、ID (完全修飾名) で参照します。</span><span class="sxs-lookup"><span data-stu-id="65823-217">Second, by its ID (fully qualified name):</span></span>
+<span data-ttu-id="ef1f3-217">次に、ID (完全修飾名) で参照します。</span><span class="sxs-lookup"><span data-stu-id="ef1f3-217">Second, by its ID (fully qualified name):</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions/Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="65823-218">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="65823-218">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="65823-219">C#</span><span class="sxs-lookup"><span data-stu-id="65823-219">c</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="ef1f3-218">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="ef1f3-218">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="ef1f3-219">C#</span><span class="sxs-lookup"><span data-stu-id="ef1f3-219">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_opentypeextension_1-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="65823-220">Javascript</span><span class="sxs-lookup"><span data-stu-id="65823-220">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ef1f3-220">Javascript</span><span class="sxs-lookup"><span data-stu-id="ef1f3-220">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_opentypeextension_1-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="ef1f3-221">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ef1f3-221">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_opentypeextension_1-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-#### <a name="response-1"></a><span data-ttu-id="65823-221">応答 1</span><span class="sxs-lookup"><span data-stu-id="65823-221">Response 1</span></span>
-<span data-ttu-id="65823-222">最初の例の応答を次に示します。</span><span class="sxs-lookup"><span data-stu-id="65823-222">Here is the response for the first example.</span></span>
+#### <a name="response-1"></a><span data-ttu-id="ef1f3-222">応答 1</span><span class="sxs-lookup"><span data-stu-id="ef1f3-222">Response 1</span></span>
+<span data-ttu-id="ef1f3-223">最初の例の応答を次に示します。</span><span class="sxs-lookup"><span data-stu-id="ef1f3-223">Here is the response for the first example.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,
@@ -188,9 +190,9 @@ Content-type: application/json
 ****
 
 
-#### <a name="request-2"></a><span data-ttu-id="65823-223">要求 2</span><span class="sxs-lookup"><span data-stu-id="65823-223">Request 2</span></span>
+#### <a name="request-2"></a><span data-ttu-id="ef1f3-224">要求 2</span><span class="sxs-lookup"><span data-stu-id="ef1f3-224">Request 2</span></span>
 
-<span data-ttu-id="65823-224">2 番目の例では、名前で拡張情報を参照し、指定されたグループ イベント内の拡張情報を取得します。</span><span class="sxs-lookup"><span data-stu-id="65823-224">The second example references an extension by its name and gets the extension in the specified group event.</span></span>
+<span data-ttu-id="ef1f3-225">2 番目の例では、名前で拡張情報を参照し、指定されたグループ イベント内の拡張情報を取得します。</span><span class="sxs-lookup"><span data-stu-id="ef1f3-225">The second example references an extension by its name and gets the extension in the specified group event.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -201,9 +203,9 @@ Content-type: application/json
 GET https://graph.microsoft.com/v1.0/groups/f5480dfd-7d77-4d0b-ba2e-3391953cc74a/events/AAMkADVl17IsAAA=/extensions/Com.Contoso.Deal/
 ```
 
-#### <a name="response-2"></a><span data-ttu-id="65823-225">応答 2</span><span class="sxs-lookup"><span data-stu-id="65823-225">Response 2</span></span>
+#### <a name="response-2"></a><span data-ttu-id="ef1f3-226">応答 2</span><span class="sxs-lookup"><span data-stu-id="ef1f3-226">Response 2</span></span>
 
-<span data-ttu-id="65823-226">2 番目の例の応答を次に示します。</span><span class="sxs-lookup"><span data-stu-id="65823-226">Here is the response from the second example.</span></span>
+<span data-ttu-id="ef1f3-227">2 番目の例の応答を次に示します。</span><span class="sxs-lookup"><span data-stu-id="ef1f3-227">Here is the response from the second example.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -224,22 +226,24 @@ Content-type: application/json
     "expirationDate": "2015-07-03T13:04:00Z"
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="65823-227">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="65823-227">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="65823-228">C#</span><span class="sxs-lookup"><span data-stu-id="65823-228">c</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="ef1f3-228">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="ef1f3-228">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="ef1f3-229">C#</span><span class="sxs-lookup"><span data-stu-id="ef1f3-229">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_opentypeextension_2-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="65823-229">Javascript</span><span class="sxs-lookup"><span data-stu-id="65823-229">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ef1f3-230">Javascript</span><span class="sxs-lookup"><span data-stu-id="ef1f3-230">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_opentypeextension_2-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="ef1f3-231">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ef1f3-231">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_opentypeextension_2-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ****
 
-#### <a name="request-3"></a><span data-ttu-id="65823-230">要求 3</span><span class="sxs-lookup"><span data-stu-id="65823-230">Request 3</span></span>
+#### <a name="request-3"></a><span data-ttu-id="ef1f3-232">要求 3</span><span class="sxs-lookup"><span data-stu-id="ef1f3-232">Request 3</span></span>
 
-<span data-ttu-id="65823-p109">3 番目の例では、指定されたメッセージを取得し、フィルターから返された拡張情報を組み込んで展開します。このフィルターは、**id** が完全修飾名と一致する拡張情報を返します。</span><span class="sxs-lookup"><span data-stu-id="65823-p109">The third example gets and expands the specified message by including the extension returned from a filter. The filter returns the extension that has its **id** matching a fully qualified name.</span></span>
+<span data-ttu-id="ef1f3-p109">3 番目の例では、指定されたメッセージを取得し、フィルターから返された拡張情報を組み込んで展開します。このフィルターは、**id** が完全修飾名と一致する拡張情報を返します。</span><span class="sxs-lookup"><span data-stu-id="ef1f3-p109">The third example gets and expands the specified message by including the extension returned from a filter. The filter returns the extension that has its **id** matching a fully qualified name.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -251,9 +255,9 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1
 ```
 
 
-#### <a name="response-3"></a><span data-ttu-id="65823-233">応答 3</span><span class="sxs-lookup"><span data-stu-id="65823-233">Response 3</span></span>
+#### <a name="response-3"></a><span data-ttu-id="ef1f3-235">応答 3</span><span class="sxs-lookup"><span data-stu-id="ef1f3-235">Response 3</span></span>
 
-<span data-ttu-id="65823-p110">3 番目の例の応答を次に示します。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="65823-p110">And here is the response from the third example. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="ef1f3-p110">3 番目の例の応答を次に示します。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="ef1f3-p110">And here is the response from the third example. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -332,22 +336,24 @@ Content-type: application/json
      ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="65823-237">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="65823-237">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="65823-238">C#</span><span class="sxs-lookup"><span data-stu-id="65823-238">c</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="ef1f3-239">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="ef1f3-239">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="ef1f3-240">C#</span><span class="sxs-lookup"><span data-stu-id="ef1f3-240">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_opentypeextension_3-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="65823-239">Javascript</span><span class="sxs-lookup"><span data-stu-id="65823-239">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ef1f3-241">Javascript</span><span class="sxs-lookup"><span data-stu-id="ef1f3-241">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_opentypeextension_3-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="ef1f3-242">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ef1f3-242">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_opentypeextension_3-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ****
 
-#### <a name="request-4"></a><span data-ttu-id="65823-240">要求 4</span><span class="sxs-lookup"><span data-stu-id="65823-240">Request 4</span></span>
+#### <a name="request-4"></a><span data-ttu-id="ef1f3-243">要求 4</span><span class="sxs-lookup"><span data-stu-id="ef1f3-243">Request 4</span></span>
 
-<span data-ttu-id="65823-241">4 番目の例では、完全修飾名で拡張情報を参照し、指定されたグループ投稿内の拡張情報を取得します。</span><span class="sxs-lookup"><span data-stu-id="65823-241">The fourth example references an extension by its fully qualified name and gets the extension in the specified group post.</span></span>
+<span data-ttu-id="ef1f3-244">4 番目の例では、完全修飾名で拡張情報を参照し、指定されたグループ投稿内の拡張情報を取得します。</span><span class="sxs-lookup"><span data-stu-id="ef1f3-244">The fourth example references an extension by its fully qualified name and gets the extension in the specified group post.</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -357,9 +363,9 @@ Content-type: application/json
 GET https://graph.microsoft.com/v1.0/groups/37df2ff0-0de0-4c33-8aee-75289364aef6/threads/AAQkADJizZJpEWwqDHsEpV_KA==/posts/AAMkADJiUg96QZUkA-ICwMubAADDEd7UAAA=/extensions/Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate
 ```
 
-#### <a name="response-4"></a><span data-ttu-id="65823-242">応答 4</span><span class="sxs-lookup"><span data-stu-id="65823-242">Response 4</span></span>
+#### <a name="response-4"></a><span data-ttu-id="ef1f3-245">応答 4</span><span class="sxs-lookup"><span data-stu-id="ef1f3-245">Response 4</span></span>
 
-<span data-ttu-id="65823-243">4 番目の例の応答を次に示します。</span><span class="sxs-lookup"><span data-stu-id="65823-243">Here is the response from the fourth example.</span></span> 
+<span data-ttu-id="ef1f3-246">4 番目の例の応答を次に示します。</span><span class="sxs-lookup"><span data-stu-id="ef1f3-246">Here is the response from the fourth example.</span></span> 
 
 <!-- {
   "blockType": "ignored",
@@ -387,9 +393,9 @@ Content-Type: application/json
 ```
 
 
-#### <a name="request-5"></a><span data-ttu-id="65823-244">要求 5</span><span class="sxs-lookup"><span data-stu-id="65823-244">Request 5</span></span>
+#### <a name="request-5"></a><span data-ttu-id="ef1f3-247">要求 5</span><span class="sxs-lookup"><span data-stu-id="ef1f3-247">Request 5</span></span>
 
-<span data-ttu-id="65823-p111">5 番目の例では、サインインしているユーザーのメールボックス内のすべてのメッセージを参照して、フィルターと一致する拡張情報が含まれているメッセージを検出し、拡張情報を組み込んでそれらのメッセージを展開します。このフィルターは、拡張情報名 `Com.Contoso.Referral` と一致する **id** プロパティを持つ拡張情報を返します。</span><span class="sxs-lookup"><span data-stu-id="65823-p111">The fifth example looks at all messages in the signed-in user's mailbox to find those that contain an extension matching a filter, and expands them by including the extension. The filter returns extensions that has the **id** property matching the extension name `Com.Contoso.Referral`.</span></span>
+<span data-ttu-id="ef1f3-p111">5 番目の例では、サインインしているユーザーのメールボックス内のすべてのメッセージを参照して、フィルターと一致する拡張情報が含まれているメッセージを検出し、拡張情報を組み込んでそれらのメッセージを展開します。このフィルターは、拡張情報名 `Com.Contoso.Referral` と一致する **id** プロパティを持つ拡張情報を返します。</span><span class="sxs-lookup"><span data-stu-id="ef1f3-p111">The fifth example looks at all messages in the signed-in user's mailbox to find those that contain an extension matching a filter, and expands them by including the extension. The filter returns extensions that has the **id** property matching the extension name `Com.Contoso.Referral`.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -400,11 +406,11 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=Extensions/any(f:f/id%2
 ```
 
 
-#### <a name="response-5"></a><span data-ttu-id="65823-247">応答 5</span><span class="sxs-lookup"><span data-stu-id="65823-247">Response 5</span></span>
+#### <a name="response-5"></a><span data-ttu-id="ef1f3-250">応答 5</span><span class="sxs-lookup"><span data-stu-id="ef1f3-250">Response 5</span></span>
 
-<span data-ttu-id="65823-248">5 番目の例のこの応答では、**id** が `Com.Contoso.Referral` である拡張情報が含まれているメッセージがユーザーのメールボックスに 1 つだけ存在します。</span><span class="sxs-lookup"><span data-stu-id="65823-248">In this response for the fifth example, there is only one message in the user's mailbox that has an extension with its **id** equal to `Com.Contoso.Referral`.</span></span>
+<span data-ttu-id="ef1f3-251">5 番目の例のこの応答では、**id** が `Com.Contoso.Referral` である拡張情報が含まれているメッセージがユーザーのメールボックスに 1 つだけ存在します。</span><span class="sxs-lookup"><span data-stu-id="ef1f3-251">In this response for the fifth example, there is only one message in the user's mailbox that has an extension with its **id** equal to `Com.Contoso.Referral`.</span></span>
 
-<span data-ttu-id="65823-p112">注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="65823-p112">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="ef1f3-p112">注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="ef1f3-p112">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -502,6 +508,7 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/opentypeextension-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/opentypeextension-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/opentypeextension-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Error: /api-reference/v1.0/api/opentypeextension-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",

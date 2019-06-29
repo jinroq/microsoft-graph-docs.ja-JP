@@ -5,31 +5,31 @@ ms.date: 09/10/2017
 title: フォルダーの内容を一覧表示する
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: f6e76ca362d8c200ee73b327cdd11ad4b0137e73
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a280c68561aa764ccab74dc871465fb134e39d79
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548034"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35272850"
 ---
-# <a name="list-children-of-a-driveitem"></a><span data-ttu-id="391d0-102">driveItem の子を一覧表示する</span><span class="sxs-lookup"><span data-stu-id="391d0-102">List children of a driveItem</span></span>
+# <a name="list-children-of-a-driveitem"></a><span data-ttu-id="7efd9-102">driveItem の子を一覧表示する</span><span class="sxs-lookup"><span data-stu-id="7efd9-102">List children of a driveItem</span></span>
 
-<span data-ttu-id="391d0-103">DriveItem の**子**リレーションシップで [DriveItems](../resources/driveitem.md) のコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="391d0-103">Return a collection of [DriveItems](../resources/driveitem.md) in the **children** relationship of a DriveItem.</span></span>
+<span data-ttu-id="7efd9-103">DriveItem の**子**リレーションシップで [DriveItems](../resources/driveitem.md) のコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="7efd9-103">Return a collection of [DriveItems](../resources/driveitem.md) in the **children** relationship of a DriveItem.</span></span>
 
-<span data-ttu-id="391d0-104">NULL でない **folder** または **package** ファセットがある DriveItems は、1 つ以上の子 DriveItems を持つことができます。</span><span class="sxs-lookup"><span data-stu-id="391d0-104">DriveItems with a non-null **folder** or **package** facet can have one or more child DriveItems.</span></span>
+<span data-ttu-id="7efd9-104">NULL でない **folder** または **package** ファセットがある DriveItems は、1 つ以上の子 DriveItems を持つことができます。</span><span class="sxs-lookup"><span data-stu-id="7efd9-104">DriveItems with a non-null **folder** or **package** facet can have one or more child DriveItems.</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="391d0-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="391d0-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="7efd9-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="7efd9-105">Permissions</span></span>
 
-<span data-ttu-id="391d0-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="391d0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="7efd9-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7efd9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="391d0-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="391d0-108">Permission type</span></span>      | <span data-ttu-id="391d0-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="391d0-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="7efd9-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="7efd9-108">Permission type</span></span>      | <span data-ttu-id="7efd9-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="7efd9-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="391d0-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="391d0-110">Delegated (work or school account)</span></span> | <span data-ttu-id="391d0-111">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="391d0-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="391d0-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="391d0-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="391d0-113">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="391d0-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="391d0-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="391d0-114">Application</span></span> | <span data-ttu-id="391d0-115">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="391d0-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="7efd9-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="7efd9-110">Delegated (work or school account)</span></span> | <span data-ttu-id="7efd9-111">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7efd9-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="7efd9-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="7efd9-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7efd9-113">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7efd9-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="7efd9-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="7efd9-114">Application</span></span> | <span data-ttu-id="7efd9-115">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7efd9-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="391d0-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="391d0-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7efd9-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="7efd9-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -41,40 +41,64 @@ GET /sites/{site-id}/drive/items/{item-id}/children
 GET /users/{user-id}/drive/items/{item-id}/children
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="391d0-117">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="391d0-117">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="7efd9-117">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="7efd9-117">Optional query parameters</span></span>
 
-<span data-ttu-id="391d0-118">このメソッドは、応答をカスタマイズするための `$expand`、`$select`、`$skipToken`、`$top`、`$orderby` の [OData クエリ パラメーター](/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="391d0-118">This method supports the `$expand`, `$select`, `$skipToken`, `$top` and `$orderby` [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
+<span data-ttu-id="7efd9-118">このメソッドは、応答をカスタマイズするための `$expand`、`$select`、`$skipToken`、`$top`、`$orderby` の [OData クエリ パラメーター](/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="7efd9-118">This method supports the `$expand`, `$select`, `$skipToken`, `$top` and `$orderby` [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
 
-### <a name="optional-request-headers"></a><span data-ttu-id="391d0-119">オプションの要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="391d0-119">Optional request headers</span></span>
+### <a name="optional-request-headers"></a><span data-ttu-id="7efd9-119">オプションの要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="7efd9-119">Optional request headers</span></span>
 
-| <span data-ttu-id="391d0-120">名前</span><span class="sxs-lookup"><span data-stu-id="391d0-120">Name</span></span>     | <span data-ttu-id="391d0-121">値</span><span class="sxs-lookup"><span data-stu-id="391d0-121">Value</span></span> | <span data-ttu-id="391d0-122">説明</span><span class="sxs-lookup"><span data-stu-id="391d0-122">Description</span></span>                                                                                                                                              |
+| <span data-ttu-id="7efd9-120">名前</span><span class="sxs-lookup"><span data-stu-id="7efd9-120">Name</span></span>     | <span data-ttu-id="7efd9-121">値</span><span class="sxs-lookup"><span data-stu-id="7efd9-121">Value</span></span> | <span data-ttu-id="7efd9-122">説明</span><span class="sxs-lookup"><span data-stu-id="7efd9-122">Description</span></span>                                                                                                                                              |
 |:----------------|:------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="391d0-123">_if-none-match_</span><span class="sxs-lookup"><span data-stu-id="391d0-123">_if-none-match_</span></span> | <span data-ttu-id="391d0-124">etag</span><span class="sxs-lookup"><span data-stu-id="391d0-124">etag</span></span>  | <span data-ttu-id="391d0-125">この要求ヘッダーが含まれている場合、指定された eTag (または cTag) がファイルの現在のタグに一致すると、`HTTP 304 Not Modified` 応答が返されます。</span><span class="sxs-lookup"><span data-stu-id="391d0-125">If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned.</span></span> |
+| <span data-ttu-id="7efd9-123">_if-none-match_</span><span class="sxs-lookup"><span data-stu-id="7efd9-123">_if-none-match_</span></span> | <span data-ttu-id="7efd9-124">etag</span><span class="sxs-lookup"><span data-stu-id="7efd9-124">etag</span></span>  | <span data-ttu-id="7efd9-125">この要求ヘッダーが含まれている場合、指定された eTag (または cTag) がファイルの現在のタグに一致すると、`HTTP 304 Not Modified` 応答が返されます。</span><span class="sxs-lookup"><span data-stu-id="7efd9-125">If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned.</span></span> |
 
-## <a name="examples"></a><span data-ttu-id="391d0-126">例</span><span class="sxs-lookup"><span data-stu-id="391d0-126">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="7efd9-126">例</span><span class="sxs-lookup"><span data-stu-id="7efd9-126">Examples</span></span>
 
-### <a name="list-children-in-the-root-of-the-current-users-drive"></a><span data-ttu-id="391d0-127">現在のユーザーのドライブのルートの子を一覧表示する</span><span class="sxs-lookup"><span data-stu-id="391d0-127">List children in the root of the current user's drive</span></span>
+### <a name="list-children-in-the-root-of-the-current-users-drive"></a><span data-ttu-id="7efd9-127">現在のユーザーのドライブのルートの子を一覧表示する</span><span class="sxs-lookup"><span data-stu-id="7efd9-127">List children in the root of the current user's drive</span></span>
 
-<span data-ttu-id="391d0-128">ドライブのルートのファイルを取得するには、ドライブ上の `root` リレーションシップを使用して、子のリレーションシップにアクセスします。</span><span class="sxs-lookup"><span data-stu-id="391d0-128">To retrieve files in the root of the drive, use the `root` relationship on the drive, then access the children relationship.</span></span>
+<span data-ttu-id="7efd9-128">ドライブのルートのファイルを取得するには、ドライブ上の `root` リレーションシップを使用して、子のリレーションシップにアクセスします。</span><span class="sxs-lookup"><span data-stu-id="7efd9-128">To retrieve files in the root of the drive, use the `root` relationship on the drive, then access the children relationship.</span></span>
 
 <!-- { "blockType": "request", "name": "list-children-root", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/root/children
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="7efd9-129">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="7efd9-129">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="7efd9-130">C#</span><span class="sxs-lookup"><span data-stu-id="7efd9-130">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/list-children-root-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7efd9-131">Javascript</span><span class="sxs-lookup"><span data-stu-id="7efd9-131">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/list-children-root-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="7efd9-132">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7efd9-132">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/list-children-root-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
-### <a name="list-children-of-a-driveitem-with-a-known-id"></a><span data-ttu-id="391d0-129">既知の ID を持つ DriveItem の子を一覧表示する</span><span class="sxs-lookup"><span data-stu-id="391d0-129">List children of a DriveItem with a known ID</span></span>
+### <a name="list-children-of-a-driveitem-with-a-known-id"></a><span data-ttu-id="7efd9-133">既知の ID を持つ DriveItem の子を一覧表示する</span><span class="sxs-lookup"><span data-stu-id="7efd9-133">List children of a DriveItem with a known ID</span></span>
 
-<span data-ttu-id="391d0-130">ドライブのルートのファイルを取得するには、ドライブ上の `root` リレーションシップを使用して、子のリレーションシップにアクセスします。</span><span class="sxs-lookup"><span data-stu-id="391d0-130">To retrieve files in the root of the drive, use the `root` relationship on the drive, then access the children relationship.</span></span>
+<span data-ttu-id="7efd9-134">ドライブのルートのファイルを取得するには、ドライブ上の `root` リレーションシップを使用して、子のリレーションシップにアクセスします。</span><span class="sxs-lookup"><span data-stu-id="7efd9-134">To retrieve files in the root of the drive, use the `root` relationship on the drive, then access the children relationship.</span></span>
 
-<!-- { "blockType": "request", "name": "list-children", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "list-children-files", "scopes": "files.read" } -->
 
 ```http
 GET /drives/{drive-id}/items/{item-id}/children
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="7efd9-135">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="7efd9-135">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="7efd9-136">C#</span><span class="sxs-lookup"><span data-stu-id="7efd9-136">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/list-children-files-Cs-snippets.md)]
 
-### <a name="list-children-of-a-driveitem-with-a-known-path"></a><span data-ttu-id="391d0-131">既知のパスを持つ DriveItem の子を一覧表示する</span><span class="sxs-lookup"><span data-stu-id="391d0-131">List children of a DriveItem with a known path</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7efd9-137">Javascript</span><span class="sxs-lookup"><span data-stu-id="7efd9-137">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/list-children-files-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="7efd9-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7efd9-138">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/list-children-files-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+### <a name="list-children-of-a-driveitem-with-a-known-path"></a><span data-ttu-id="7efd9-139">既知のパスを持つ DriveItem の子を一覧表示する</span><span class="sxs-lookup"><span data-stu-id="7efd9-139">List children of a DriveItem with a known path</span></span>
 
 <!-- { "blockType": "request", "name": "list-children-from-path", "scopes": "files.read" } -->
 
@@ -82,14 +106,15 @@ GET /drives/{drive-id}/items/{item-id}/children
 GET /drives/{drive-id}/root:/{path-relative-to-root}:/children
 ```
 
-## <a name="response"></a><span data-ttu-id="391d0-132">応答</span><span class="sxs-lookup"><span data-stu-id="391d0-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7efd9-140">応答</span><span class="sxs-lookup"><span data-stu-id="7efd9-140">Response</span></span>
 
-<span data-ttu-id="391d0-p102">成功すると、このメソッドはターゲット アイテムの子コレクション内にあるアイテムの一覧を返します。 子コレクションは、[driveItem][item-resource] リソースで構成されます。</span><span class="sxs-lookup"><span data-stu-id="391d0-p102">If successful, this method returns the list of items in the children collection of the target item. The children collection will be composed of [driveItem][item-resource] resources.</span></span>
+<span data-ttu-id="7efd9-141">成功すると、このメソッドはターゲット アイテムの子コレクション内にあるアイテムの一覧を返します。</span><span class="sxs-lookup"><span data-stu-id="7efd9-141">If successful, this method returns the list of items in the children collection of the target item.</span></span>
+<span data-ttu-id="7efd9-142">子コレクションは、[driveItem][item-resource] リソースで構成されます。</span><span class="sxs-lookup"><span data-stu-id="7efd9-142">The children collection will be composed of [driveItem][item-resource] resources.</span></span>
 
 <!-- { "blockType": "response", 
        "@odata.type": "Collection(microsoft.graph.driveItem)", 
        "truncated": true,
-       "name": [ "list-children-root", "list-children", "list-children-from-path" ] } -->
+       "name": [ "list-children-root", "list-children-files", "list-children-from-path" ] } -->
 
 ```http
 HTTP/1.1 200 OK
@@ -106,13 +131,13 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="391d0-135">**注:** コレクションが既定のページ サイズ (200 アイテム) を超えた場合は、応答で **@odata.nextLink** プロパティが返され、より多くのアイテムが使用できることが示されます。また、アイテムの次のページの要求 URL も提供されます。</span><span class="sxs-lookup"><span data-stu-id="391d0-135">**Note:** If a collection exceeds the default page size (200 items), the **@odata.nextLink** property is returned in the response to indicate more items are available and provide the request URL for the next page of items.</span></span>
+<span data-ttu-id="7efd9-143">**注:** コレクションが既定のページ サイズ (200 アイテム) を超えた場合は、応答で **@odata.nextLink** プロパティが返され、より多くのアイテムが使用できることが示されます。また、アイテムの次のページの要求 URL も提供されます。</span><span class="sxs-lookup"><span data-stu-id="7efd9-143">**Note:** If a collection exceeds the default page size (200 items), the **@odata.nextLink** property is returned in the response to indicate more items are available and provide the request URL for the next page of items.</span></span>
 
-<span data-ttu-id="391d0-136">ページ サイズは[オプションのクエリ文字列パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)で制御できます。</span><span class="sxs-lookup"><span data-stu-id="391d0-136">You can control the page size through [optional query string parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters)</span></span>
+<span data-ttu-id="7efd9-144">ページ サイズは[オプションのクエリ文字列パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)で制御できます。</span><span class="sxs-lookup"><span data-stu-id="7efd9-144">You can control the page size through [optional query string parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters)</span></span>
 
-### <a name="error-responses"></a><span data-ttu-id="391d0-137">エラー応答</span><span class="sxs-lookup"><span data-stu-id="391d0-137">Error responses</span></span>
+### <a name="error-responses"></a><span data-ttu-id="7efd9-145">エラー応答</span><span class="sxs-lookup"><span data-stu-id="7efd9-145">Error responses</span></span>
 
-<span data-ttu-id="391d0-138">エラーがどのように返されるかについては、「[エラー応答][error-response]」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="391d0-138">See [Error Responses][error-response] for more info about how errors are returned.</span></span>
+<span data-ttu-id="7efd9-146">エラーがどのように返されるかについては、「[エラー応答][error-response]」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7efd9-146">See [Error Responses][error-response] for more info about how errors are returned.</span></span>
 
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
@@ -122,5 +147,12 @@ Content-type: application/json
   "description": "List the children of an item.",
   "keywords": "list,children,collection",
   "section": "documentation",
-  "tocPath": "Items/List children"
+  "tocPath": "Items/List children",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/driveitem-list-children.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/driveitem-list-children.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/driveitem-list-children.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/v1.0/api/driveitem-list-children.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/driveitem-list-children.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 } -->
