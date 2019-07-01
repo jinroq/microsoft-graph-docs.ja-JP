@@ -4,17 +4,18 @@ description: グループ オブジェクトのプロパティとリレーショ
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: 4eb677622f56e6bd575a6c391b9ddc08bea4fc2f
-ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
+ms.openlocfilehash: bb1078f5d2d15a2c58e39a98dd6794053f8ade76
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34812769"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35273564"
 ---
 # <a name="get-group"></a>グループを取得する
+
 グループ オブジェクトのプロパティとリレーションシップを取得します。
 
-「[プロパティ](../resources/group.md#properties)」セクションに記載されているように、この操作は既定ですべての使用できるプロパティのサブセットのみを返します。 既定では_返されない_プロパティを取得するには、`$select` OData クエリ オプションでそれらを指定します。 `$select` の[例](#request-2)を参照してください。 例外は **hasMembersWithLicenseErrors** プロパティです。 このプロパティの使用方法の[例](group-list.md#request-2)を参照してください。
+「[プロパティ](../resources/group.md#properties)」セクションに記載されているように、この操作は既定ですべての使用できるプロパティのサブセットのみを返します。 既定では_返されない_プロパティを取得するには、`$select` OData クエリ オプションでそれらを指定します。 **hasMembersWithLicenseErrors** プロパティは例外で、`$select` クエリでは返されません。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -25,6 +26,8 @@ ms.locfileid: "34812769"
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
 |Application | Group.Read.All、Directory.Read.All、Group.ReadWrite.All、Directory.ReadWrite.All |
 
+>**注:** アクセスするグループの機能によっては、アクセス許可が制限される場合があります。 詳細については、「[Microsoft Graph に関する既知の問題](/graph/known-issues)」の[グループ](/graph/known-issues#groups) セクションを参照してください。
+
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -32,7 +35,7 @@ GET /groups/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>省略可能なクエリ パラメーター
-既定では返されないものも含め、特定のグループのプロパティを取得するには `$select` を使用できます。 次の[例](#request-2)を参照してください。
+既定では返されないものも含め、特定のグループのプロパティを取得するには `$select` を使用できます。
 
 OData クエリ オプションの詳細については、「[OData クエリ パラメーター](/graph/query-parameters)」を参照してください。
 
@@ -48,7 +51,13 @@ OData クエリ オプションの詳細については、「[OData クエリ �
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [group](../resources/group.md) オブジェクトを返します。 `$select` を使用して特定のプロパティを指定していない限り、既定のプロパティを返します。
 
 ## <a name="example"></a>例
-#### <a name="request-1"></a>要求 1
+
+### <a name="example-1-return-all-default-properties"></a>例 1: すべての既定のプロパティを返す
+
+すべての既定のプロパティを返します。
+
+#### <a name="request"></a>要求 
+
 GET 要求の例を次に示します。 
 <!-- {
   "blockType": "request",
@@ -59,10 +68,11 @@ GET 要求の例を次に示します。
 GET https://graph.microsoft.com/v1.0/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd
 ```
 
-#### <a name="response-1"></a>応答 1
+#### <a name="response"></a>応答
 応答の例を次に示します。 既定のプロパティのみが含まれています。
 
 >**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しでは、すべて既定のプロパティが返されます。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -103,19 +113,29 @@ Content-type: application/json
     "onPremisesProvisioningErrors": []
 }
 ```
+
 #### <a name="sdk-sample-code"></a>SDK サンプル コード
+
 # <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_group-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_group-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_group-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-#### <a name="request-2"></a>要求 2
-`$select` クエリ オプションを使用して、既定では返されないいくつかのプロパティを取得する例を次に示します。 
+### <a name="example-2-return-additional-properties-by-using-select"></a>例 2: $select を使って追加のプロパティを返す
+
+`$select` を使って追加のプロパティを返します。
+
+#### <a name="request"></a>要求
+
+GET 要求の例を次に示します。
+
 <!-- {
   "blockType": "request",
   "sampleKeys": ["b320ee12-b1cd-4cca-b648-a437be61c5cd"],
@@ -125,7 +145,8 @@ Content-type: application/json
 GET https://graph.microsoft.com/v1.0/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd?$select=allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount
 ```
 
-#### <a name="response-2"></a>応答 2
+#### <a name="response"></a>応答
+
 要求された既定以外のプロパティを含む応答の例を次に示します。
 
 <!-- {
@@ -147,13 +168,17 @@ Content-type: application/json
     "unseenCount": 0
 }
 ```
+
 #### <a name="sdk-sample-code"></a>SDK サンプル コード
+
 # <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_group_non_default-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_group_non_default-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_group_non_default-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -167,6 +192,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/group-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/group-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/group-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Error: /api-reference/v1.0/api/group-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",

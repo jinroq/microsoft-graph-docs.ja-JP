@@ -3,12 +3,12 @@ title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: f14b36b11424b46fd092e155482b727f7b19dd4a
-ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
+ms.openlocfilehash: 065bb9e52477d06e05ae055e920821db6e9d9a7a
+ms.sourcegitcommit: e0de4e41773e361752870411d1b1a74270738127
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35133797"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35348678"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
@@ -18,17 +18,19 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 ## <a name="june-2019"></a>2019 年 6 月
 
+### <a name="identity-protection-apis"></a>Identity Protection API
+| **変更の種類** | **バージョン** | **説明**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| 追加 | ベータ版 | Azure AD Identity Protection でのリスク検出を表す [riskDetection API](/graph/api/resources/riskdetection?view=graph-rest-beta) が追加されました。 |
 
-### <a name="azure-ad-apis"></a>Azure AD API
+
+### <a name="identity-and-access"></a>ID とアクセス
 
 | **変更の種類** | **バージョン** | **説明**                  |
 |:----------------|:------------|:-----------------------------------------|
 | 追加        | ベータ版  | 新しいリソースの種類 [applicationTemplate](/graph/api/resources/applicationtemplate.md) を導入しました。 このリソースの種類では、Azure AD アプリケーション ギャラリーからのアプリケーションの[インスタンス化](/graph/api/applicationtemplate-instantiate.md)、[リスト](/graph/api/applicationtemplate-instantiate.md)、[取得](/graph/api/applicationtemplate-get.md)がサポートされています。|
-
-### <a name="directory-apis"></a>ディレクトリ API
-
-| **変更の種類** | **バージョン** | **説明**                          |
-| :-------------- | :---------- | :--------------------------------------- |
+| 追加 | ベータ版|追加された新しいリソース: </br> [detailsInfo](/graph/api/resources/detailsInfo?view=graph-rest-beta)</br> [initiator](/graph/api/resources/initiator?view=graph-rest-beta)</br> [modifiedProperty](/graph/api/resources/modifiedProperty?view=graph-rest-beta)</br> [provisionedIdentity](/graph/api/resources/provisionedIdentity?view=graph-rest-beta)</br> [provisioningObjectsummary](/graph/api/resources/provisioningObjectsummary?view=graph-rest-beta)</br> [provisioningStep](/graph/api/resources/provisioningStep?view=graph-rest-beta)</br> [provisioningsystemDetails](/graph/api/resources/provisioningsystemDetails?view=graph-rest-beta)</br> [statusBase](/graph/api/resources/statusBase?view=graph-rest-beta)|
+| 追加 |ベータ版 |[List provisioningObjectSummary](/graph/api/resources/provisioning-object-summary-list?view=graph-rest-beta) 操作が追加されました。</br>|                     |
 | 追加 | v1.0 | **signInSessionsValidFromDateTime** プロパティを[ユーザー](/graph/api/resources/user?view=graph-rest-1.0) リソースに追加しました。 |
 | 加算 | v1.0 | [revokeSignInSessions](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) アクションを[ユーザー](/graph/api/resources/user?view=graph-rest-1.0) リソースに追加しました。 |
 
@@ -77,20 +79,6 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | :-------------- | :---------- | :--------------------------------------- |
 | 追加        | ベータ版        | [ユーザー](/graph/api/resources/user?view=graph-rest-beta) エンティティに [followSite](/graph/api/follow-site?view=graph-rest-beta) ナビゲーション プロパティを追加しました |
 | 追加        | ベータ版        | [ユーザー](/graph/api/resources/user?view=graph-rest-beta) エンティティに [unfollowSite](/graph/api/unfollow-site?view=graph-rest-beta) ナビゲーション プロパティを追加しました |
-
-
-
-## <a name="may-2019"></a>2019 年 5 月
-
-### <a name="microsoft-teams-apis"></a>Microsoft Teams API
-=======
-### <a name="outlook-mail-calendar-contacts"></a>Outlook メール、予定表、連絡先
-
-
-| **変更の種類** | **バージョン**   | **説明**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| 追加 | v1.0 | [mailFolder](/graph/api/resources/mailfolder?graph-rest-1.0) エンティティのメソッドから派生し、そのメソッドをサポートする、[mailSearchFolder](/graph/api/resources/mailsearchfolder?graph-rest-1.0) エンティティが追加されました。 |
-| 追加 | v1.0 およびベータ版 | アプリにメール、メールボックス設定、予定表、または連絡先へのアプリケーション アクセス許可が付与されている場合でも、管理者が特定のメールボックスのみにアプリのアクセスを制限できる機能が追加されました。 詳細については、「[アプリケーションのアクセス許可を Exchange Online の特定のメールボックスにスコーピングする](auth-limit-mailbox-access.md)」を参照してください。 |
 
 
 ## <a name="may-2019"></a>2019 年 5 月
@@ -159,7 +147,14 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 |:----------------|:------------|:-----------------------------------------|
 | 追加        | ベータ版        | **urgent**プロパティが[chatMessageImportance](/graph/api/resources/chatMessageImportance?view=graph-rest-beta)列挙型に追加されました。|
 | 加算        | ベータ版        | **hostedContents**ナビゲーション プロパティが[chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta)エンティティに追加されました。|
-| 加算        | ベータ版        | **chatMessageHostedContent**エンティティを[chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta)に関連づけられている Microsoft Teams によってホストされるコンテンツの表記に追加されました。 |
+| 加算        | ベータ版        | **chatMessageHostedContent** エンティティを [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) に関連付けられている Microsoft Teams によってホストされるコンテンツの表記に追加されました。 |
+
+### <a name="outlook-mail-calendar-contacts"></a>Outlook メール、予定表、連絡先
+
+| **変更の種類** | **バージョン**   | **説明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 追加 | v1.0 | [mailFolder](/graph/api/resources/mailfolder?graph-rest-1.0) エンティティのメソッドから派生し、そのメソッドをサポートする、[mailSearchFolder](/graph/api/resources/mailsearchfolder?graph-rest-1.0) エンティティが追加されました。 |
+| 追加 | v1.0 およびベータ版 | アプリにメール、メールボックス設定、予定表、または連絡先へのアプリケーション アクセス許可が付与されている場合でも、管理者が特定のメールボックスのみにアプリのアクセスを制限できる機能が追加されました。 詳細については、「[アプリケーションのアクセス許可を Exchange Online の特定のメールボックスにスコーピングする](auth-limit-mailbox-access.md)」を参照してください。 |
 
 ### <a name="reports-apis"></a>レポート API
 

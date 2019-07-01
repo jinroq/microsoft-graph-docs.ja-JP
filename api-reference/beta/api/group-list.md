@@ -4,24 +4,20 @@ description: Office 365 グループを含み、それに限定されない組�
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: a9b0e1eb2e62b6ef2c45aa3aa1d313a82ae1a818
-ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
+ms.openlocfilehash: 7bda59ff9417492d5001f4cc3c3fea2ceb3bf71d
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34812559"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35263015"
 ---
 # <a name="list-groups"></a>グループの一覧表示
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Office 365 グループを含み、それに限定されない組織で使用可能なすべてのグループを一覧表示します。
+Office 365 グループを含み、それに限定されない組織のすべてのグループを一覧表示します。 
 
-この操作は既定で各グループで頻繁に使用されるプロパティのサブセットのみを返します。 これらの_既定_のプロパティは、「[プロパティ](../resources/group.md#properties)」セクションに記載されています。 
-
-既定で_返されない_プロパティを取得するには、グループに対して [GET](group-get.md) 操作を実行し、`$select` OData クエリ オプションでプロパティを指定します。 [例](group-get.md#request-2)を参照してください。
-
-例外は **hasMembersWithLicenseErrors** プロパティです。 このプロパティの使用方法の[例](#request-2)を参照してください。
+この操作は既定で各グループで頻繁に使用されるプロパティのサブセットのみを返します。 これらの_既定_のプロパティは、「[プロパティ](../resources/group.md#properties)」セクションに記載されています。 既定で_返されない_プロパティを取得するには、グループに対して [GET 操作](group-get.md)を実行し、`$select` OData クエリ オプションでプロパティを指定します。 **hasMembersWithLicenseErrors** プロパティは例外で、`$select` クエリでは返されません。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -30,7 +26,7 @@ Office 365 グループを含み、それに限定されない組織で使用可
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | Group.Read.All、Directory.Read.All、Group.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | Group.Read.All、Directory.Read.All、Group.ReadWrite.All、Directory.ReadWrite.All |
+|Application | Group.Read.All、Directory.Read.All、Group.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -66,7 +62,11 @@ OData クエリ オプションの詳細については、「[OData クエリ �
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [group](../resources/group.md) オブジェクトのコレクションを返します。 応答には、各グループの既定のプロパティのみが含まれています。
 
 ## <a name="example"></a>例
-#### <a name="request-1"></a>要求 1
+
+### <a name="example-1-return-a-list-of-group-objects"></a>例 1: グループ オブジェクトのリストを取得する
+
+#### <a name="request"></a>要求
+
 要求の例を次に示します。
 <!-- {
   "blockType": "request",
@@ -76,7 +76,8 @@ OData クエリ オプションの詳細については、「[OData クエリ �
 GET https://graph.microsoft.com/beta/groups
 ```
 
-#### <a name="response-1"></a>応答 1
+#### <a name="response"></a>応答
+
 応答の例を次に示します。
 >**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しでは、各グループのすべての既定のプロパティが返されます。
 
@@ -162,18 +163,25 @@ Content-type: application/json
 }
 
 ```
+
 #### <a name="sdk-sample-code"></a>SDK サンプル コード
+
 # <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_groups-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_groups-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_groups-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-#### <a name="request-2"></a>要求 2
+### <a name="example-2-return-a-filtered-list-of-group-objects"></a>例 2: フィルター処理されたグループ オブジェクトのリストを返す 
+
+#### <a name="request"></a>要求
+
 この例では、`$filter` クエリ オプションを使用して、グループ ベースのライセンス割り当てによるライセンス エラーが発生したメンバーが含まれているグループを取得します。 また、`$select` クエリ オプションも使用して、各グループの **id** プロパティと **displayName** プロパティのみを応答で取得します (その他の既定または既定以外のプロパティは取得しません)。
 <!-- {
   "blockType": "request",
@@ -183,7 +191,8 @@ Content-type: application/json
 GET https://graph.microsoft.com/beta/groups?$filter=hasMembersWithLicenseErrors+eq+true&$select=id,displayName
 ```
 
-#### <a name="response-2"></a>応答 2
+#### <a name="response"></a>応答
+
 要求したプロパティのみを含む応答の例を次に示します。
 
 <!-- {
@@ -211,13 +220,17 @@ Content-type: application/json
     ]
 }
 ```
+
 #### <a name="sdk-sample-code"></a>SDK サンプル コード
+
 # <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_groups_withlicenseerrors-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_groups_withlicenseerrors-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_groups_withlicenseerrors-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -232,6 +245,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/group-list.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/group-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/group-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Error: /api-reference/beta/api/group-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",

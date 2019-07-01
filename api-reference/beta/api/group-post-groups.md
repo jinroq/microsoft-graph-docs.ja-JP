@@ -4,12 +4,12 @@ description: 新しい Office 365 グループまたはセキュリティ グル
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: e33a1fbfe4ff3c48fe80e71e9a066f8d59e31208
-ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
+ms.openlocfilehash: 918e1b40ff45b92b44d3e18970f232cd318a2865
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34812538"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35262945"
 ---
 # <a name="create-group"></a>グループを作成する
 
@@ -20,9 +20,7 @@ ms.locfileid: "34812538"
 * Office 365 グループ (統合グループ)
 * セキュリティ グループ
 
-この操作は既定で各グループのプロパティのサブセットのみを返します。 これらの既定のプロパティは、「[プロパティ](../resources/group.md#properties)」セクションに記載されています。
-
-既定で_返されない_プロパティを取得するには、GET 操作を実行し、`$select` OData クエリ オプションでプロパティを指定します。 [例](group-get.md#request-2)を参照してください。
+この操作は既定で各グループのプロパティのサブセットのみを返します。 これらの既定のプロパティは、「[プロパティ](../resources/group.md#properties)」セクションに記載されています。 既定で_返されない_プロパティを取得するには、[GET 操作](group-get.md)を実行し、`$select` OData クエリ オプションでプロパティを指定します。
 
 >**注:** [チーム](../resources/team.md)を作成するには、まずグループを作成し、それからそのグループにチームを追加します。[チームの作成](../api/team-put-teams.md)に関するページを参照してください。
 
@@ -167,11 +165,13 @@ Content-type: application/json
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_group-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create_group-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-### <a name="example-2-create-an-office-365-group-with-an-owner-and-members"></a>例 2: 所有者とメンバーを使用して Office 365 グループを作成する
+### <a name="example-2-create-an-office-365-group-with-an-owner-and-members"></a>例 2: 所有者とメンバーを指定して Office 365 グループを作成する
 
 次の例では、所有者とメンバーを指定して Office 365 グループを作成しています。
 
@@ -257,6 +257,8 @@ Content-type: application/json
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_prepopulated_group-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create_prepopulated_group-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -278,6 +280,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/group-post-groups.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/group-post-groups.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/group-post-groups.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Error: /api-reference/beta/api/group-post-groups.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
