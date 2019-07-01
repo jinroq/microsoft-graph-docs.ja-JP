@@ -4,70 +4,70 @@ description: Office 365 グループを含み、それに限定されない組�
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: a9b0e1eb2e62b6ef2c45aa3aa1d313a82ae1a818
-ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
+ms.openlocfilehash: 7bda59ff9417492d5001f4cc3c3fea2ceb3bf71d
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34812559"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35263015"
 ---
-# <a name="list-groups"></a><span data-ttu-id="b3ed8-103">グループの一覧表示</span><span class="sxs-lookup"><span data-stu-id="b3ed8-103">List groups</span></span>
+# <a name="list-groups"></a><span data-ttu-id="40fed-103">グループの一覧表示</span><span class="sxs-lookup"><span data-stu-id="40fed-103">List groups</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b3ed8-104">Office 365 グループを含み、それに限定されない組織で使用可能なすべてのグループを一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="b3ed8-104">List all the groups available in an organization, including but not limited to Office 365 Groups.</span></span>
+<span data-ttu-id="40fed-104">Office 365 グループを含み、それに限定されない組織のすべてのグループを一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="40fed-104">List all the groups available in an organization, including but not limited to Office 365 Groups.</span></span> 
 
-<span data-ttu-id="b3ed8-105">この操作は既定で各グループで頻繁に使用されるプロパティのサブセットのみを返します。</span><span class="sxs-lookup"><span data-stu-id="b3ed8-105">This operation returns by default only a subset of the more commonly used properties for each group.</span></span> <span data-ttu-id="b3ed8-106">これらの_既定_のプロパティは、「[プロパティ](../resources/group.md#properties)」セクションに記載されています。</span><span class="sxs-lookup"><span data-stu-id="b3ed8-106">These _default_ properties are noted in the [Properties](../resources/group.md#properties) section.</span></span> 
+<span data-ttu-id="40fed-105">この操作は既定で各グループで頻繁に使用されるプロパティのサブセットのみを返します。</span><span class="sxs-lookup"><span data-stu-id="40fed-105">This operation returns by default only a subset of the more commonly used properties for each group.</span></span> <span data-ttu-id="40fed-106">これらの_既定_のプロパティは、「[プロパティ](../resources/group.md#properties)」セクションに記載されています。</span><span class="sxs-lookup"><span data-stu-id="40fed-106">These _default_ properties are noted in the [Properties](../resources/group.md#properties) section.</span></span> <span data-ttu-id="40fed-107">既定で_返されない_プロパティを取得するには、グループに対して [GET 操作](group-get.md)を実行し、`$select` OData クエリ オプションでプロパティを指定します。</span><span class="sxs-lookup"><span data-stu-id="40fed-107">To get properties that are _not_ returned by default, do a [GET](group-get.md) operation for the group and specify the properties in a `$select` OData query option.</span></span> <span data-ttu-id="40fed-108">**hasMembersWithLicenseErrors** プロパティは例外で、`$select` クエリでは返されません。</span><span class="sxs-lookup"><span data-stu-id="40fed-108">The **hasMembersWithLicenseErrors** property is an exception and is not returned in the `$select` query.</span></span>
 
-<span data-ttu-id="b3ed8-107">既定で_返されない_プロパティを取得するには、グループに対して [GET](group-get.md) 操作を実行し、`$select` OData クエリ オプションでプロパティを指定します。</span><span class="sxs-lookup"><span data-stu-id="b3ed8-107">To get properties that are _not_ returned by default, do a [GET](group-get.md) operation for the group and specify the properties in a `$select` OData query option.</span></span> <span data-ttu-id="b3ed8-108">[例](group-get.md#request-2)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b3ed8-108">See an [example](group-get.md#request-2).</span></span>
+## <a name="permissions"></a><span data-ttu-id="40fed-109">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="40fed-109">Permissions</span></span>
+<span data-ttu-id="40fed-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="40fed-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="b3ed8-109">例外は **hasMembersWithLicenseErrors** プロパティです。</span><span class="sxs-lookup"><span data-stu-id="b3ed8-109">An exception is the **hasMembersWithLicenseErrors** property.</span></span> <span data-ttu-id="b3ed8-110">このプロパティの使用方法の[例](#request-2)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b3ed8-110">See an [example](#request-2) of how to use this property.</span></span>
-
-## <a name="permissions"></a><span data-ttu-id="b3ed8-111">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="b3ed8-111">Permissions</span></span>
-<span data-ttu-id="b3ed8-p104">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b3ed8-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
-
-|<span data-ttu-id="b3ed8-114">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="b3ed8-114">Permission type</span></span>      | <span data-ttu-id="b3ed8-115">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="b3ed8-115">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="40fed-112">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="40fed-112">Permission type</span></span>      | <span data-ttu-id="40fed-113">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="40fed-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="b3ed8-116">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="b3ed8-116">Delegated (work or school account)</span></span> | <span data-ttu-id="b3ed8-117">Group.Read.All、Directory.Read.All、Group.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="b3ed8-117">Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
-|<span data-ttu-id="b3ed8-118">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="b3ed8-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b3ed8-119">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b3ed8-119">Not supported.</span></span>    |
-|<span data-ttu-id="b3ed8-120">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="b3ed8-120">Application</span></span> | <span data-ttu-id="b3ed8-121">Group.Read.All、Directory.Read.All、Group.ReadWrite.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b3ed8-121">Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="40fed-114">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="40fed-114">Delegated (work or school account)</span></span> | <span data-ttu-id="40fed-115">Group.Read.All、Directory.Read.All、Group.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="40fed-115">Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
+|<span data-ttu-id="40fed-116">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="40fed-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="40fed-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="40fed-117">Not supported.</span></span>    |
+|<span data-ttu-id="40fed-118">Application</span><span class="sxs-lookup"><span data-stu-id="40fed-118">Application</span></span> | <span data-ttu-id="40fed-119">Group.Read.All、Directory.Read.All、Group.ReadWrite.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="40fed-119">Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="b3ed8-122">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="b3ed8-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="40fed-120">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="40fed-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="b3ed8-123">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="b3ed8-123">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="40fed-121">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="40fed-121">Optional query parameters</span></span>
 
-<span data-ttu-id="b3ed8-124">Office 365 グループ (別名統合グループ) のみを一覧表示するには、**groupTypes** にフィルターを適用します。</span><span class="sxs-lookup"><span data-stu-id="b3ed8-124">To list only Office 365 Groups (aka unified groups), apply a filter on **groupTypes**:</span></span>
+<span data-ttu-id="40fed-122">Office 365 グループ (別名統合グループ) のみを一覧表示するには、**groupTypes** にフィルターを適用します。</span><span class="sxs-lookup"><span data-stu-id="40fed-122">To list only Office 365 Groups (aka unified groups), apply a filter on **groupTypes**:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```
 GET https://graph.microsoft.com/beta/groups?$filter=groupTypes/any(c:c+eq+'Unified')
 ```
 
-<span data-ttu-id="b3ed8-125">OData クエリ オプション `$orderby` を使用して、以下の例のように、組織内のグループを **displayName** 値で並べ替えることができます。</span><span class="sxs-lookup"><span data-stu-id="b3ed8-125">You can use the OData query option `$orderby` to sort groups in an organization by the **displayName** values, as shown in the following example:</span></span>
+<span data-ttu-id="40fed-123">OData クエリ オプション `$orderby` を使用して、以下の例のように、組織内のグループを **displayName** 値で並べ替えることができます。</span><span class="sxs-lookup"><span data-stu-id="40fed-123">You can use the OData query option `$orderby` to sort groups in an organization by the **displayName** values, as shown in the following example:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```
 GET https://graph.microsoft.com/beta/groups?$orderby=displayName
 ```
 
-<span data-ttu-id="b3ed8-126">OData クエリ オプションの詳細については、「[OData クエリ パラメーター](/graph/query-parameters)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b3ed8-126">For more information on OData query options, see [OData Query Parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="40fed-124">OData クエリ オプションの詳細については、「[OData クエリ パラメーター](/graph/query-parameters)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="40fed-124">For more information on OData query options, see [OData Query Parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="b3ed8-127">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b3ed8-127">Request headers</span></span>
-| <span data-ttu-id="b3ed8-128">名前</span><span class="sxs-lookup"><span data-stu-id="b3ed8-128">Name</span></span>       | <span data-ttu-id="b3ed8-129">型</span><span class="sxs-lookup"><span data-stu-id="b3ed8-129">Type</span></span> | <span data-ttu-id="b3ed8-130">説明</span><span class="sxs-lookup"><span data-stu-id="b3ed8-130">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="40fed-125">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="40fed-125">Request headers</span></span>
+| <span data-ttu-id="40fed-126">名前</span><span class="sxs-lookup"><span data-stu-id="40fed-126">Name</span></span>       | <span data-ttu-id="40fed-127">型</span><span class="sxs-lookup"><span data-stu-id="40fed-127">Type</span></span> | <span data-ttu-id="40fed-128">説明</span><span class="sxs-lookup"><span data-stu-id="40fed-128">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="b3ed8-131">Authorization</span><span class="sxs-lookup"><span data-stu-id="b3ed8-131">Authorization</span></span>  | <span data-ttu-id="b3ed8-132">string</span><span class="sxs-lookup"><span data-stu-id="b3ed8-132">string</span></span>  | <span data-ttu-id="b3ed8-p105">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="b3ed8-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="40fed-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="40fed-129">Authorization</span></span>  | <span data-ttu-id="40fed-130">string</span><span class="sxs-lookup"><span data-stu-id="40fed-130">string</span></span>  | <span data-ttu-id="40fed-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="40fed-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="b3ed8-135">要求本文</span><span class="sxs-lookup"><span data-stu-id="b3ed8-135">Request body</span></span>
-<span data-ttu-id="b3ed8-136">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="b3ed8-136">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="40fed-133">要求本文</span><span class="sxs-lookup"><span data-stu-id="40fed-133">Request body</span></span>
+<span data-ttu-id="40fed-134">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="40fed-134">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="b3ed8-137">応答</span><span class="sxs-lookup"><span data-stu-id="b3ed8-137">Response</span></span>
-<span data-ttu-id="b3ed8-138">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [group](../resources/group.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="b3ed8-138">If successful, this method returns a `200 OK` response code and collection of [group](../resources/group.md) objects in the response body.</span></span> <span data-ttu-id="b3ed8-139">応答には、各グループの既定のプロパティのみが含まれています。</span><span class="sxs-lookup"><span data-stu-id="b3ed8-139">The response includes only the default properties of each group.</span></span>
+## <a name="response"></a><span data-ttu-id="40fed-135">応答</span><span class="sxs-lookup"><span data-stu-id="40fed-135">Response</span></span>
+<span data-ttu-id="40fed-136">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [group](../resources/group.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="40fed-136">If successful, this method returns a `200 OK` response code and collection of [group](../resources/group.md) objects in the response body.</span></span> <span data-ttu-id="40fed-137">応答には、各グループの既定のプロパティのみが含まれています。</span><span class="sxs-lookup"><span data-stu-id="40fed-137">The response includes only the default properties of each group.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b3ed8-140">例</span><span class="sxs-lookup"><span data-stu-id="b3ed8-140">Example</span></span>
-#### <a name="request-1"></a><span data-ttu-id="b3ed8-141">要求 1</span><span class="sxs-lookup"><span data-stu-id="b3ed8-141">Request 1</span></span>
-<span data-ttu-id="b3ed8-142">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="b3ed8-142">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="40fed-138">例</span><span class="sxs-lookup"><span data-stu-id="40fed-138">Example</span></span>
+
+### <a name="example-1-return-a-list-of-group-objects"></a><span data-ttu-id="40fed-139">例 1: グループ オブジェクトのリストを取得する</span><span class="sxs-lookup"><span data-stu-id="40fed-139">Example 1: Return a list of group objects</span></span>
+
+#### <a name="request"></a><span data-ttu-id="40fed-140">要求</span><span class="sxs-lookup"><span data-stu-id="40fed-140">Request</span></span>
+
+<span data-ttu-id="40fed-141">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="40fed-141">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_groups"
@@ -76,9 +76,10 @@ GET https://graph.microsoft.com/beta/groups?$orderby=displayName
 GET https://graph.microsoft.com/beta/groups
 ```
 
-#### <a name="response-1"></a><span data-ttu-id="b3ed8-143">応答 1</span><span class="sxs-lookup"><span data-stu-id="b3ed8-143">Response 1</span></span>
-<span data-ttu-id="b3ed8-144">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="b3ed8-144">The following is an example of the response.</span></span>
-><span data-ttu-id="b3ed8-145">**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。</span><span class="sxs-lookup"><span data-stu-id="b3ed8-145">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="b3ed8-146">実際の呼び出しでは、各グループのすべての既定のプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="b3ed8-146">All the default properties are returned for each group in an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="40fed-142">応答</span><span class="sxs-lookup"><span data-stu-id="40fed-142">Response</span></span>
+
+<span data-ttu-id="40fed-143">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="40fed-143">The following is an example of the response.</span></span>
+><span data-ttu-id="40fed-144">**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。</span><span class="sxs-lookup"><span data-stu-id="40fed-144">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="40fed-145">実際の呼び出しでは、各グループのすべての既定のプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="40fed-145">All the default properties are returned for each group in an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -162,19 +163,26 @@ Content-type: application/json
 }
 
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="b3ed8-147">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="b3ed8-147">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="b3ed8-148">C#</span><span class="sxs-lookup"><span data-stu-id="b3ed8-148">C#</span></span>](#tab/cs)
+
+#### <a name="sdk-sample-code"></a><span data-ttu-id="40fed-146">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="40fed-146">SDK sample code</span></span>
+
+# <a name="ctabcs"></a>[<span data-ttu-id="40fed-147">C#</span><span class="sxs-lookup"><span data-stu-id="40fed-147">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_groups-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b3ed8-149">Javascript</span><span class="sxs-lookup"><span data-stu-id="b3ed8-149">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="40fed-148">Javascript</span><span class="sxs-lookup"><span data-stu-id="40fed-148">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_groups-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="40fed-149">Objective-C</span><span class="sxs-lookup"><span data-stu-id="40fed-149">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_groups-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-#### <a name="request-2"></a><span data-ttu-id="b3ed8-150">要求 2</span><span class="sxs-lookup"><span data-stu-id="b3ed8-150">Request 2</span></span>
-<span data-ttu-id="b3ed8-151">この例では、`$filter` クエリ オプションを使用して、グループ ベースのライセンス割り当てによるライセンス エラーが発生したメンバーが含まれているグループを取得します。</span><span class="sxs-lookup"><span data-stu-id="b3ed8-151">This example uses a `$filter` query option to get those groups that have members with license errors from their group-based license assignments.</span></span> <span data-ttu-id="b3ed8-152">また、`$select` クエリ オプションも使用して、各グループの **id** プロパティと **displayName** プロパティのみを応答で取得します (その他の既定または既定以外のプロパティは取得しません)。</span><span class="sxs-lookup"><span data-stu-id="b3ed8-152">It also uses a `$select` query option to get only the **id** and **displayName** properties of each group in the response, and not other default or non-default properties.</span></span>
+### <a name="example-2-return-a-filtered-list-of-group-objects"></a><span data-ttu-id="40fed-150">例 2: フィルター処理されたグループ オブジェクトのリストを返す</span><span class="sxs-lookup"><span data-stu-id="40fed-150">Example 2: Return a filtered list of group objects</span></span> 
+
+#### <a name="request"></a><span data-ttu-id="40fed-151">要求</span><span class="sxs-lookup"><span data-stu-id="40fed-151">Request</span></span>
+
+<span data-ttu-id="40fed-152">この例では、`$filter` クエリ オプションを使用して、グループ ベースのライセンス割り当てによるライセンス エラーが発生したメンバーが含まれているグループを取得します。</span><span class="sxs-lookup"><span data-stu-id="40fed-152">This example uses a `$filter` query option to get those groups that have members with license errors from their group-based license assignments.</span></span> <span data-ttu-id="40fed-153">また、`$select` クエリ オプションも使用して、各グループの **id** プロパティと **displayName** プロパティのみを応答で取得します (その他の既定または既定以外のプロパティは取得しません)。</span><span class="sxs-lookup"><span data-stu-id="40fed-153">It also uses a `$select` query option to get only the **id** and **displayName** properties of each group in the response, and not other default or non-default properties.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_groups_withlicenseerrors"
@@ -183,8 +191,9 @@ Content-type: application/json
 GET https://graph.microsoft.com/beta/groups?$filter=hasMembersWithLicenseErrors+eq+true&$select=id,displayName
 ```
 
-#### <a name="response-2"></a><span data-ttu-id="b3ed8-153">応答 2</span><span class="sxs-lookup"><span data-stu-id="b3ed8-153">Response 2</span></span>
-<span data-ttu-id="b3ed8-154">要求したプロパティのみを含む応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="b3ed8-154">The following is an example of the response which includes only the requested properties.</span></span>
+#### <a name="response"></a><span data-ttu-id="40fed-154">応答</span><span class="sxs-lookup"><span data-stu-id="40fed-154">Response</span></span>
+
+<span data-ttu-id="40fed-155">要求したプロパティのみを含む応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="40fed-155">The following is an example of the response which includes only the requested properties.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -211,13 +220,17 @@ Content-type: application/json
     ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="b3ed8-155">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="b3ed8-155">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="b3ed8-156">C#</span><span class="sxs-lookup"><span data-stu-id="b3ed8-156">C#</span></span>](#tab/cs)
+
+#### <a name="sdk-sample-code"></a><span data-ttu-id="40fed-156">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="40fed-156">SDK sample code</span></span>
+
+# <a name="ctabcs"></a>[<span data-ttu-id="40fed-157">C#</span><span class="sxs-lookup"><span data-stu-id="40fed-157">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_groups_withlicenseerrors-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b3ed8-157">Javascript</span><span class="sxs-lookup"><span data-stu-id="b3ed8-157">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="40fed-158">Javascript</span><span class="sxs-lookup"><span data-stu-id="40fed-158">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_groups_withlicenseerrors-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="40fed-159">Objective-C</span><span class="sxs-lookup"><span data-stu-id="40fed-159">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_groups_withlicenseerrors-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -232,6 +245,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/group-list.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/group-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/group-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Error: /api-reference/beta/api/group-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",

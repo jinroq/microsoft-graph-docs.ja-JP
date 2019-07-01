@@ -32,6 +32,8 @@ items:
             href: /graph/tutorials/aspnet
           - name: Microsoft Flow
             href: /graph/tutorials/flow
+          - name: Java
+            href: /graph/tutorials/java
           - name: Node.js
             href: /graph/tutorials/node
           - name: PHP
@@ -319,6 +321,8 @@ items:
                 href: extensibility-open-users.md
               - name: スキーマ拡張機能の使用 (例)
                 href: extensibility-schema-groups.md
+          - name: Postman の使用
+            href: use-postman.md
       - name: 移行
         expanded: false
         items:
@@ -365,6 +369,38 @@ items:
             href: sdks/create-client.md
           - name: 認証プロバイダーの選択
             href: sdks/choose-authentication-providers.md
+      - name: ツールキットを使用する (プレビュー)
+        items:
+          - name: ツールキットの概要
+            href: toolkit/overview.md
+          - name: コンポーネント
+            items:
+              - name: ログイン
+                href: toolkit/components/login.md
+              - name: 人物
+                href: toolkit/components/person.md
+              - name: 複数のユーザー
+                href: toolkit/components/people.md
+              - name: 予定一覧
+                href: toolkit/components/agenda.md
+              - name: タスク
+                href: toolkit/components/tasks.md
+          - name: プロバイダー
+            items:
+              - name: プロバイダーの使用
+                href: toolkit/providers.md
+              - name: MSAL プロバイダー
+                href: toolkit/providers/msal.md
+              - name: SharePoint プロバイダー
+                href: toolkit/providers/sharepoint.md
+              - name: Microsoft Teams プロバイダー
+                href: toolkit/providers/teams.md
+              - name: カスタム プロバイダー
+                href: toolkit/providers/custom.md
+          - name: スタイル コンポーネント
+            href: toolkit/style.md
+          - name: テンプレート コンポーネント
+            href: toolkit/templates.md
       - name: リソース
         expanded: true
         items:
