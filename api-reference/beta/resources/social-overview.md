@@ -1,17 +1,17 @@
 ---
-title: Microsoft Graph API を使用してアプリにソーシャル インテリジェンスを統合する
+title: Microsoft Graph API を使用して、アプリにソーシャル インテリジェンスとワークプレイス インテリジェンスを統合する
 description: Microsoft Graph では、コンテキストにおけるユーザーのソーシャル ジェスチャをサポートし、ユーザーとソーシャルに関する役立つデータにアクセスできます。
 localization_priority: Priority
 author: simonhult
 ms.prod: insights
-ms.openlocfilehash: 45482d2e47c97b6c09302ab60ff9c031cef1e92a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 0118902f42984a541c750f34db945bc0e7ede5f2
+ms.sourcegitcommit: ee710ff556f4a7907181df5c323e345f52808ce2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345710"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35417676"
 ---
-# <a name="use-the-microsoft-graph-api-to-integrate-social-intelligence-in-an-app"></a>Microsoft Graph API を使用してアプリにソーシャル インテリジェンスを統合する
+# <a name="use-the-microsoft-graph-api-to-integrate-social-and-workplace-intelligence-in-an-app"></a>Microsoft Graph API を使用して、アプリにソーシャル インテリジェンスとワークプレイス インテリジェンスを統合する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,6 +22,14 @@ Microsoft Graph では、コンテキストにおけるユーザーのソーシ�
 [person](../resources/person.md) リソースと People API を使用して、メール、連絡先、およびソーシャル ネットワークから、個人に関する情報を集約することができます。 結果は、複数のコミュニケーション、コラボレーション、およびビジネスのリレーションシップを基に、関連性によって並べられます。 API を使用すると、条件に基づいて、個人の閲覧、並べ替え、選択、フィルター、または検索を行うことができます。
 
 - [ユーザーを一覧表示する](../api/user-list-people.md)
+
+## <a name="help-users-get-the-most-relevant-documents-for-their-work"></a>ユーザーの仕事に最適なドキュメントの取得に役立つ
+
+Insights API を使用して、ユーザーに最適なドキュメントを特定する: 
+
+- ユーザーの[周りで人気急上昇中](../api/insights-list-trending.md)のドキュメントを一覧表示する
+- ユーザーによって[使用される](../api/insights-list-used.md)ドキュメントを一覧表示する 
+- ユーザーが[共有先または共有元](../api/insights-list-shared.md)のドキュメントを一覧表示する 
 
 ## <a name="manage--mentions"></a>@- メンションを管理する
 
@@ -47,9 +55,3 @@ Include the next sentence when supporting events.
 
 - 特定のメッセージ内の[メンションを削除する](../api/message-delete.md#request-2)
 
-## <a name="access-social-data-around-and-about-a-user"></a>ユーザーに関するソーシャル データにアクセスする
-
-Office Graph は、Office 365 の各種エンティティ間のリレーションシップをカプセル化します。 Office Graph を使用して、Office 365 全体における各ユーザーのソーシャル インサイトを取得できます。
-
-- ユーザーの[周りで人気急上昇中](../api/insights-list-trending.md)の項目を取得する
-- ユーザーと[仕事をしている](../api/user-list-people.md)ユーザーを一覧表示する
