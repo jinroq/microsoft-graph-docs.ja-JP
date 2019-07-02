@@ -1,18 +1,18 @@
 ---
 title: Microsoft Graph の主要なサービスおよび機能
 description: 'Microsoft Graph では、REST API とクライアント ライブラリを使用して、非常に優れた Office 365、Windows 10、および Microsoft 365 の Enterprise Mobility and Security のサービスを統合することができます。 さらに、ユーザーの生産性、創造性、チーム共同作業を促進し、ビジネス リソースおよびユーザー データを保護することのできるセキュリティおよびソーシャル インテリジェンスが提供されます。 '
-author: jthake-msft
+author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: c8d7a209744eade704432c2c93561d4e60070ec1
-ms.sourcegitcommit: 126b15ac37fb199c7b1001f91e70d8463a18c280
+ms.openlocfilehash: bb100d4b8c64300681dd0463184cb30b925654d2
+ms.sourcegitcommit: ee710ff556f4a7907181df5c323e345f52808ce2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34083254"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35417711"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Microsoft Graph の主要なサービスおよび機能
 
-Microsoft Graph では、REST API とクライアント ライブラリを使用して、非常に優れた Office 365、Windows 10、および Microsoft 365 の Enterprise Mobility and Security のサービスを統合することができます。 さらに、ユーザーの生産性、創造性、チーム共同作業を促進し、ビジネス リソースおよびユーザー データを保護することのできるセキュリティおよびソーシャル インテリジェンスが提供されます。 
+Microsoft Graph では、REST API とクライアント ライブラリを使用して、非常に優れた Office 365、Windows 10、および Microsoft 365 の Enterprise Mobility and Security のサービスを統合することができます。 さらに、ユーザーの生産性、創造性、チーム共同作業の促進と、ビジネス リソースおよびユーザー データの保護が行えるセキュリティおよびインテリジェンスが提供されます。 
 
 ## <a name="users-and-groups"></a>ユーザーとグループ
 
@@ -68,12 +68,12 @@ Microsoft Graph の一部のサービスは、そこで初めて登場したサ�
 |チームワーク |  Microsoft Teams | チームがファイル、ノート、予定表、およびプランを共有するための、デジタル ハブおよびチャット ベースのワークスペース。 | [Microsoft Teams のチームワークの概要](teams-concept-overview.md) |
 
 
-## <a name="social-intelligence-and-analytics"></a>ソーシャル インテリジェンスおよび分析機能
+## <a name="social-and-workplace-intelligence"></a>ソーシャル インテリジェンスおよび職場のインテリジェンス
 
 |機能     |サポートするサービス  |説明 |詳細情報 |
 |:-----------|:--------------------|:-----------|:----------------|
-| ソーシャル インテリジェンス: 連絡先 | Azure AD、Outlook、SharePoint など | ユーザーの通信や共同作業のパターン、またビジネスの付き合いによって決まるユーザーとの関連性に応じて連絡先についての情報を取得します。  | [Microsoft Graph でのソーシャル インテリジェンス](social-intel-concept-overview.md) |
-| ソーシャル インテリジェンス: ドキュメントのインサイト (プレビュー) | Delve、OneDrive、Outlook、SharePoint | 高度な分析機能と機械学習のテクニックを使用して、よく使用されるドキュメントやユーザーが表示、変更、または共有したドキュメントを取得します。  | [Microsoft Graph でのソーシャル インテリジェンス](social-intel-concept-overview.md)  |
+| ソーシャル インテリジェンス: 連絡先 | Azure AD、Outlook、SharePoint など | ユーザーの通信や共同作業のパターン、またビジネスの付き合いによって決まるユーザーとの関連性に応じて連絡先についての情報を取得します。  | [Microsoft Graph のソーシャル インテリジェンスおよび職場のインテリジェンス](social-intel-concept-overview.md) |
+| ソーシャル インテリジェンス: ドキュメントのインサイト (プレビュー) | Delve、OneDrive、Outlook、SharePoint | 高度な分析機能と機械学習のテクニックを使用して、よく使用されるドキュメントやユーザーが表示、変更、または共有したドキュメントを取得します。  | [Microsoft Graph のソーシャル インテリジェンスおよび職場のインテリジェンス](social-intel-concept-overview.md)  |
 
 
 ## <a name="device-management"></a>デバイスの管理

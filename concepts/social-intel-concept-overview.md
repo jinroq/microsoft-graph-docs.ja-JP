@@ -1,17 +1,17 @@
 ---
-title: Microsoft Graph におけるソーシャル インテリジェンスと分析の概要
+title: Microsoft Graph のソーシャル インテリジェンスおよび職場のインテリジェンスの概要
 description: Microsoft Graph では、Microsoft 365 のクラウド サービスを使用する何千万人ものユーザーが中核的な役割を果たします。 ユーザーのデータは、慎重に管理、保護されており、適切な権限があれば、Microsoft Graph サービスでビジネスの生産性や創造性を促進するために利用できます。 ユーザーのデータは Microsoft Graph のあらゆる部分に存在しますが、ユーザーの社会的な交流から得られたデータは特に興味深いものがあります。
 author: simonhult
 localization_priority: Priority
 ms.prod: insights
-ms.openlocfilehash: 3c274c6bef751c0fa39bf38c8f1472b075567da5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a1ab4140272cb227898ba1db79d4ab575073e51f
+ms.sourcegitcommit: ee710ff556f4a7907181df5c323e345f52808ce2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32459782"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35417718"
 ---
-# <a name="overview-of-social-intelligence-and-analytics-in-microsoft-graph"></a>Microsoft Graph におけるソーシャル インテリジェンスと分析の概要
+# <a name="overview-of-social-and-workplace-intelligence-in-microsoft-graph"></a>Microsoft Graph のソーシャル インテリジェンスおよび職場のインテリジェンスの概要
 
 Microsoft Graph では、Microsoft 365 のクラウド サービスを使用する何千万人ものユーザーが中核的な役割を果たします。 ユーザーのデータは、慎重に管理、保護されており、適切な権限があれば、Microsoft Graph サービスでビジネスの生産性や創造性を促進するために利用できます。 ユーザーのデータは Microsoft Graph のあらゆる部分に存在しますが、ユーザーの社会的な交流から得られたデータは特に興味深いものがあります。 たとえば、次のような質問への答えを導く知的なインサイトを得ることができます。
 
@@ -93,9 +93,9 @@ Insights API は、[used](/graph/api/resources/insights-used?view=graph-rest-bet
 これらのサービスの API リファレンスをお探しですか?
 
 - [Microsoft Graph v1.0 の People API](/graph/api/resources/social-overview?view=graph-rest-1.0)
-- [Microsoft Graph ベータ版のソーシャル インテリジェンスと分析用 API](/graph/api/resources/social-overview?view=graph-rest-beta)
+- [Microsoft Graph API を使用して、アプリにソーシャル インテリジェンスと職場のインテリジェンスを統合する](/graph/api/resources/social-overview?view=graph-rest-beta)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 * [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)を使用して、自分のファイルで People および Insights API を試してみてください。 サインインして、左側の列の**サンプルをさらに表示**を選択します。 メニューを使用して **People** と **Insights (beta)** を有効にします。
 * 詳細については、[People API](people-example.md) および [person](/graph/api/resources/person?view=graph-rest-1.0) エンティティを参照してください。

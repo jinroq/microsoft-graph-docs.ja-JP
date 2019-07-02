@@ -4,12 +4,12 @@ description: 指定したグループ一覧内のメンバーシップを確認�
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: 0c0b850857b094567ba04c8c701227a6dda742bc
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 9d76df33ac36ef936a1abfa873332c3be3aa0650
+ms.sourcegitcommit: 6d8bf390380b9434ba626d6dc5101afcf6ba6f8b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35275881"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35395185"
 ---
 # <a name="group-checkmembergroups"></a>グループ: checkMemberGroups
 
@@ -23,11 +23,11 @@ ms.locfileid: "35275881"
 
 | アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)                                                 |
 | :------------------------------------- | :------------------------------------------------------------------------------------------ |
-| 委任 (職場または学校のアカウント)     | ~~Group.Read.All~~、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+| 委任 (職場または学校のアカウント)     | Group.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
 | 委任 (個人用 Microsoft アカウント) | サポートされていません。                                                                              |
-| アプリケーション                            | _Group.Read.All_, Directory.Read.All. Directory.ReadWrite.All                               |
+| アプリケーション                            | Group.Read.All、Directory.Read.All。 Directory.ReadWrite.All                               |
 
-> **注:** 現在この API には、`Directory.Read.All` 以上のアクセス許可が必要です。 `Group.Read.All`のアクセス許可を使用すると、エラーが返されます。 これは既知のバグです。
+
 
 ## <a name="http-request"></a>HTTP 要求
 

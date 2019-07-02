@@ -4,12 +4,12 @@ description: ユーザーがメンバーであるすべてのグループを返�
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a99aca467e34d82025a45d5a898235f5cc7bf368
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 2871dd2bfcc2de54ddeead019a54598989c20e43
+ms.sourcegitcommit: 6d8bf390380b9434ba626d6dc5101afcf6ba6f8b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35277981"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35395199"
 ---
 # <a name="user-getmembergroups"></a>user: getMemberGroups
 
@@ -23,9 +23,9 @@ ms.locfileid: "35277981"
 
 | アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)                                                                                                          |
 | :------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 委任 (職場または学校のアカウント)     |  User.Read、Group.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+| 委任 (職場または学校のアカウント)     | User.ReadBasic.All および Group.Read.All、User.Read および Group.Read.All、User.Read.All および Group.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
 | 委任 (個人用 Microsoft アカウント) | サポートされていません。                                                                                                                                       |
-| アプリケーション                            | Group.Read.All、Directory.Read.All、Directory.ReadWrite.All                                                                                        |
+| Application                            |  User.Read.All および Group.Read.All、Directory.Read.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
 
