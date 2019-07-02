@@ -5,12 +5,12 @@ description: サインインしているユーザーのメールボックス内�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 11ec048d16906bd1a6c95304f7956a56852bfaf6
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 91aa4ed92eb396fc4977796755cb8e377f9eb5bb
+ms.sourcegitcommit: ee710ff556f4a7907181df5c323e345f52808ce2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35266635"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35417726"
 ---
 # <a name="list-messages"></a>メッセージを一覧表示する
 
@@ -23,8 +23,8 @@ ms.locfileid: "35266635"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Mail.Read、Mail.ReadWrite    |
-|委任 (個人用 Microsoft アカウント) | Mail.Read、Mail.ReadWrite    |
+|委任 (職場または学校のアカウント) | メール ReadBasic、Mail. 読み取り、ReadWrite    |
+|委任 (個人用 Microsoft アカウント) | メール ReadBasic、Mail. 読み取り、ReadWrite    |
 |アプリケーション | Mail.Read、Mail.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 要求

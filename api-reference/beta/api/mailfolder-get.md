@@ -4,12 +4,12 @@ description: メッセージ フォルダー オブジェクトのプロパテ�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: d9e8c24bd0581e2369441c2ea75e34f2ceb10f1c
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 33932d16ac51f385a66adfd6fd8010069b650bf2
+ms.sourcegitcommit: ee710ff556f4a7907181df5c323e345f52808ce2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35266711"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35417739"
 ---
 # <a name="get-mailfolder"></a>mailFolder を取得する
 
@@ -28,8 +28,8 @@ ms.locfileid: "35266711"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Mail.Read、Mail.ReadWrite    |
-|委任 (個人用 Microsoft アカウント) | Mail.Read、Mail.ReadWrite    |
+|委任 (職場または学校のアカウント) | メール ReadBasic、Mail. 読み取り、ReadWrite    |
+|委任 (個人用 Microsoft アカウント) | メール ReadBasic、Mail. 読み取り、ReadWrite    |
 |アプリケーション | Mail.Read、Mail.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 要求

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: abae4feb7f68097b828ac4989561c168c81b3491
-ms.sourcegitcommit: e0de4e41773e361752870411d1b1a74270738127
+ms.openlocfilehash: a165ea63e5f2a5c99ba0f76702b0bd266bcd3835
+ms.sourcegitcommit: ee710ff556f4a7907181df5c323e345f52808ce2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35349431"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35417760"
 ---
 # <a name="list-provisioningobjectsummary"></a>リストのプロビジョニングオブジェクトの概要
 
@@ -51,15 +51,12 @@ GET /auditLogs/directoryProvisioning
 |属性名 |サポートされる演算子|
 |:----------------|:------|
 |id| eq、contains|
-|activityDateTime| eq、contains|
+|activityDateTime| eq|
 |tenantid|eq、contains|
 |jobid|eq、contains|
 |changeid|eq、contains|
 |cycleid|eq、contains|
 |action|eq、contains|
-|modifiedproperty/DisplayName| eq、contains|
-|modifiedproperty/oldValue| eq、contains|
-|modifiedproperty/newValue| eq、contains|
 |statusInfo/status|eq、contains|
 |sourceSystem/displayName|eq、contains|
 |targetSystem/displayName|eq、contains|

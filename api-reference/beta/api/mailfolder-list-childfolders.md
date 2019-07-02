@@ -4,12 +4,12 @@ description: '指定したフォルダーの下のフォルダー コレクシ�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 68d85a6430d72222ffdcf52795c9fec3d0a11f2e
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 275f7bcd771db43f5d091848d9be8c50c6ddb124
+ms.sourcegitcommit: ee710ff556f4a7907181df5c323e345f52808ce2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35266886"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35417732"
 ---
 # <a name="list-childfolders"></a>childFolders を一覧表示する
 
@@ -23,8 +23,8 @@ ms.locfileid: "35266886"
 
 | アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ) |
 |:---------------------------------------|:------------------------------------|
-| 委任 (職場または学校のアカウント)     | Mail.Read、Mail.ReadWrite           |
-| 委任 (個人用 Microsoft アカウント) | Mail.Read、Mail.ReadWrite           |
+| 委任 (職場または学校のアカウント)     | メール ReadBasic、Mail. 読み取り、ReadWrite           |
+| 委任 (個人用 Microsoft アカウント) | メール ReadBasic、Mail. 読み取り、ReadWrite           |
 | アプリケーション                            | Mail.Read、Mail.ReadWrite           |
 
 ## <a name="http-request"></a>HTTP 要求
