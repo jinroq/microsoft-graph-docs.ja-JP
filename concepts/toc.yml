@@ -10,6 +10,12 @@ items:
         href: overview.md
       - name: Microsoft Graph のサービス
         href: overview-major-services.md
+      - name: 新機能
+        items:
+          - name: 新たな強み
+            href: whats-new-overview.md
+          - name: API 変更ログ
+            href: changelog.md
       - name: 連絡可能なユーザー
         items:
           - name: 概要
@@ -222,7 +228,7 @@ items:
       - name: サイトとリスト
         href: sharepoint-concept-overview.md
         displayName: 'SharePoint, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal'
-      - name: ソーシャル インテリジェンス
+      - name: ソーシャル インテリジェンスおよび職場のインテリジェンス
         items:
           - name: 概要
             href: social-intel-concept-overview.md
@@ -408,7 +414,7 @@ items:
             href: best-practices-concept.md
           - name: 既知の問題
             href: known-issues.md
-          - name: 変更ログ
+          - name: API 変更ログ
             href: changelog.md
           - name: エラー
             href: errors.md
