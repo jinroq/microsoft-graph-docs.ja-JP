@@ -2,24 +2,40 @@
 title: (me) をシングルトンとして定義します。
 description: Markdown を確認するためにドキュメントに追加する必要があるのは、次のような点です。
 localization_priority: Normal
-ms.openlocfilehash: 62d222b2e6b3145371f3eac564236dc75d222315
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 4ccdfdd669efe83d779cc3294b6372c4294d5179
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35273466"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35459518"
 ---
-# <a name="helpers-examples-that-arent-included-in-the-docs"></a><span data-ttu-id="332b8-103">ヘルパー (ドキュメントに含まれていない例)</span><span class="sxs-lookup"><span data-stu-id="332b8-103">Helpers (examples that aren't included in the docs)</span></span>
+# <a name="helpers-examples-that-arent-included-in-the-docs"></a><span data-ttu-id="b5c47-103">ヘルパー (ドキュメントに含まれていない例)</span><span class="sxs-lookup"><span data-stu-id="b5c47-103">Helpers (examples that aren't included in the docs)</span></span>
 
-<span data-ttu-id="332b8-104">これらはマークダウン スキャナーがグラフ ドキュメントを適切に処理できるようにするため、ドキュメントに追加する必要があったものです。</span><span class="sxs-lookup"><span data-stu-id="332b8-104">These are things I had to add in the docs to make sure the Markdown-Scanner tool was able to properly handle the Graph docs.</span></span>
+<span data-ttu-id="b5c47-104">これらはマークダウン スキャナーがグラフ ドキュメントを適切に処理できるようにするため、ドキュメントに追加する必要があったものです。</span><span class="sxs-lookup"><span data-stu-id="b5c47-104">These are things I had to add in the docs to make sure the Markdown-Scanner tool was able to properly handle the Graph docs.</span></span>
 
 
-## <a name="define-the-me-as-singleton"></a><span data-ttu-id="332b8-105">(me) をシングルトンとして定義します。</span><span class="sxs-lookup"><span data-stu-id="332b8-105">Define the /me as singleton</span></span>
+## <a name="define-the-me-as-singleton"></a><span data-ttu-id="b5c47-105">(me) をシングルトンとして定義します。</span><span class="sxs-lookup"><span data-stu-id="b5c47-105">Define the /me as singleton</span></span>
 
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="b5c47-106">プロトコル</span><span class="sxs-lookup"><span data-stu-id="b5c47-106">HTTP</span></span>](#tab/http)
 <!-- {"blockType": "request", "name": "get_current_user" } -->
 ```http
 GET https://graph.microsoft.com/v1.0/me
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="b5c47-107">C#</span><span class="sxs-lookup"><span data-stu-id="b5c47-107">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-current-user-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b5c47-108">Javascript</span><span class="sxs-lookup"><span data-stu-id="b5c47-108">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-current-user-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="b5c47-109">目的-C</span><span class="sxs-lookup"><span data-stu-id="b5c47-109">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-current-user-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 <!-- {"blockType": "response", "@odata.type": "microsoft.graph.user", truncated: true } -->
 ```http
@@ -29,25 +45,29 @@ Content-Type: application/json
 {
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="332b8-106">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="332b8-106">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="332b8-107">C#</span><span class="sxs-lookup"><span data-stu-id="332b8-107">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_current_user-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="332b8-108">Javascript</span><span class="sxs-lookup"><span data-stu-id="332b8-108">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_current_user-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="332b8-109">目的-C</span><span class="sxs-lookup"><span data-stu-id="332b8-109">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/get_current_user-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
-## <a name="define-drives-as-an-queryable-entityset"></a><span data-ttu-id="332b8-110">ドライブをクエリ可能な entityset として定義します。</span><span class="sxs-lookup"><span data-stu-id="332b8-110">Define drives as an queryable entityset</span></span>
+## <a name="define-drives-as-an-queryable-entityset"></a><span data-ttu-id="b5c47-110">ドライブをクエリ可能な entityset として定義します。</span><span class="sxs-lookup"><span data-stu-id="b5c47-110">Define drives as an queryable entityset</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="b5c47-111">プロトコル</span><span class="sxs-lookup"><span data-stu-id="b5c47-111">HTTP</span></span>](#tab/http)
 <!-- {"blockType": "request", "name": "get_drive_from_id" } -->
 ```http
 GET https://graph.microsoft.com/v1.0/drives/{drive-id}
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="b5c47-112">C#</span><span class="sxs-lookup"><span data-stu-id="b5c47-112">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-drive-from-id-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b5c47-113">Javascript</span><span class="sxs-lookup"><span data-stu-id="b5c47-113">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-drive-from-id-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="b5c47-114">目的-C</span><span class="sxs-lookup"><span data-stu-id="b5c47-114">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-drive-from-id-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 <!-- {"blockType": "response", "@odata.type": "microsoft.graph.drive", truncated: true } -->
 ```http
@@ -57,26 +77,30 @@ Content-Type: application/json
 {
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="332b8-111">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="332b8-111">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="332b8-112">C#</span><span class="sxs-lookup"><span data-stu-id="332b8-112">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_drive_from_id-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="332b8-113">Javascript</span><span class="sxs-lookup"><span data-stu-id="332b8-113">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_drive_from_id-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="332b8-114">目的-C</span><span class="sxs-lookup"><span data-stu-id="332b8-114">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/get_drive_from_id-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
-## <a name="define-users-as-an-queryable-entityset"></a><span data-ttu-id="332b8-115">ユーザーをクエリ可能な entityset として定義します。</span><span class="sxs-lookup"><span data-stu-id="332b8-115">define users as an queryable entityset</span></span>
+## <a name="define-users-as-an-queryable-entityset"></a><span data-ttu-id="b5c47-115">ユーザーをクエリ可能な entityset として定義します。</span><span class="sxs-lookup"><span data-stu-id="b5c47-115">define users as an queryable entityset</span></span>
 
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="b5c47-116">プロトコル</span><span class="sxs-lookup"><span data-stu-id="b5c47-116">HTTP</span></span>](#tab/http)
 <!-- {"blockType": "request", "name": "get_users" } -->
 ```http
 GET https://graph.microsoft.com/v1.0/users/{user-id}
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="b5c47-117">C#</span><span class="sxs-lookup"><span data-stu-id="b5c47-117">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-users-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b5c47-118">Javascript</span><span class="sxs-lookup"><span data-stu-id="b5c47-118">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-users-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="b5c47-119">目的-C</span><span class="sxs-lookup"><span data-stu-id="b5c47-119">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-users-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 <!-- {"blockType": "response", "@odata.type": "microsoft.graph.user", truncated: true } -->
 ```http
@@ -86,18 +110,6 @@ Content-Type: application/json
 {
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="332b8-116">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="332b8-116">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="332b8-117">C#</span><span class="sxs-lookup"><span data-stu-id="332b8-117">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_users-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="332b8-118">Javascript</span><span class="sxs-lookup"><span data-stu-id="332b8-118">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_users-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="332b8-119">目的-C</span><span class="sxs-lookup"><span data-stu-id="332b8-119">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/get_users-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d73
@@ -109,8 +121,5 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /missing-request-examples.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /missing-request-examples.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /missing-request-examples.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->
