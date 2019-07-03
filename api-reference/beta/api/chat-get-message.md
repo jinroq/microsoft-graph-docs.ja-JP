@@ -4,30 +4,30 @@ description: チャット内の 1 つのメッセージを取得します。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 41bdff9689c53c3e852b32ecf167b96b8d50ec85
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: e6b11f28c55210edff69a47121c02ae80a2ff15d
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35261552"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35437874"
 ---
-# <a name="get-chat-message"></a><span data-ttu-id="b5f27-103">チャット メッセージの取得</span><span class="sxs-lookup"><span data-stu-id="b5f27-103">Get chat message</span></span>
+# <a name="get-chat-message"></a><span data-ttu-id="58cfa-103">チャット メッセージの取得</span><span class="sxs-lookup"><span data-stu-id="58cfa-103">Get chat message</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b5f27-104">[チャット](../resources/chat.md)内の 1 つの[メッセージ](../resources/chatmessage.md)を取得します。</span><span class="sxs-lookup"><span data-stu-id="b5f27-104">Retrieve a single [message](../resources/chatmessage.md) in a [chat](../resources/chat.md).</span></span>
+<span data-ttu-id="58cfa-104">[チャット](../resources/chat.md)内の 1 つの[メッセージ](../resources/chatmessage.md)を取得します。</span><span class="sxs-lookup"><span data-stu-id="58cfa-104">Retrieve a single [message](../resources/chatmessage.md) in a [chat](../resources/chat.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="b5f27-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="b5f27-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="58cfa-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="58cfa-105">Permissions</span></span>
 
-<span data-ttu-id="b5f27-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b5f27-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="58cfa-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="58cfa-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b5f27-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="b5f27-108">Permission type</span></span>      | <span data-ttu-id="b5f27-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="b5f27-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="58cfa-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="58cfa-108">Permission type</span></span>      | <span data-ttu-id="58cfa-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="58cfa-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="b5f27-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="b5f27-110">Delegated (work or school account)</span></span> | <span data-ttu-id="b5f27-111">Chat.Read</span><span class="sxs-lookup"><span data-stu-id="b5f27-111">Chat.Read</span></span>   |
-|<span data-ttu-id="b5f27-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="b5f27-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b5f27-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b5f27-113">Not supported.</span></span>    |
-|<span data-ttu-id="b5f27-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="b5f27-114">Application</span></span> | <span data-ttu-id="b5f27-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b5f27-115">Not supported.</span></span>   |
+|<span data-ttu-id="58cfa-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="58cfa-110">Delegated (work or school account)</span></span> | <span data-ttu-id="58cfa-111">Chat.Read</span><span class="sxs-lookup"><span data-stu-id="58cfa-111">Chat.Read</span></span>   |
+|<span data-ttu-id="58cfa-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="58cfa-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="58cfa-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="58cfa-113">Not supported.</span></span>    |
+|<span data-ttu-id="58cfa-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="58cfa-114">Application</span></span> | <span data-ttu-id="58cfa-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="58cfa-115">Not supported.</span></span>   |
 
-## <a name="http-request"></a><span data-ttu-id="b5f27-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="b5f27-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="58cfa-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="58cfa-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -36,25 +36,27 @@ GET /users/{id}/chats/{id}/messages/{id}
 GET /chats/{id}/messages/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="b5f27-117">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="b5f27-117">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="58cfa-117">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="58cfa-117">Optional query parameters</span></span>
 
-<span data-ttu-id="b5f27-118">この操作は現在、応答をカスタマイズする[OData クエリ パラメーター](/graph/query-parameters)をサポートしていません。</span><span class="sxs-lookup"><span data-stu-id="b5f27-118">This operation does not currently support [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
+<span data-ttu-id="58cfa-118">この操作は現在、応答をカスタマイズする[OData クエリ パラメーター](/graph/query-parameters)をサポートしていません。</span><span class="sxs-lookup"><span data-stu-id="58cfa-118">This operation does not currently support [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="b5f27-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b5f27-119">Request headers</span></span>
-| <span data-ttu-id="b5f27-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b5f27-120">Header</span></span>       | <span data-ttu-id="b5f27-121">値</span><span class="sxs-lookup"><span data-stu-id="b5f27-121">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="58cfa-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="58cfa-119">Request headers</span></span>
+| <span data-ttu-id="58cfa-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="58cfa-120">Header</span></span>       | <span data-ttu-id="58cfa-121">値</span><span class="sxs-lookup"><span data-stu-id="58cfa-121">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="b5f27-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="b5f27-122">Authorization</span></span>  | <span data-ttu-id="b5f27-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="b5f27-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="58cfa-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="58cfa-122">Authorization</span></span>  | <span data-ttu-id="58cfa-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="58cfa-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="b5f27-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="b5f27-125">Request body</span></span>
-<span data-ttu-id="b5f27-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="b5f27-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="58cfa-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="58cfa-125">Request body</span></span>
+<span data-ttu-id="58cfa-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="58cfa-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="b5f27-127">応答</span><span class="sxs-lookup"><span data-stu-id="b5f27-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="58cfa-127">応答</span><span class="sxs-lookup"><span data-stu-id="58cfa-127">Response</span></span>
 
-<span data-ttu-id="b5f27-128">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [chatmessage](../resources/chatmessage.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="b5f27-128">If successful, this method returns a `200 OK` response code and a [chatmessage](../resources/chatmessage.md) object in the response body.</span></span>
+<span data-ttu-id="58cfa-128">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [chatmessage](../resources/chatmessage.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="58cfa-128">If successful, this method returns a `200 OK` response code and a [chatmessage](../resources/chatmessage.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b5f27-129">例</span><span class="sxs-lookup"><span data-stu-id="b5f27-129">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="b5f27-130">要求</span><span class="sxs-lookup"><span data-stu-id="b5f27-130">Request</span></span>
-<span data-ttu-id="b5f27-131">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="b5f27-131">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="58cfa-129">例</span><span class="sxs-lookup"><span data-stu-id="58cfa-129">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="58cfa-130">要求</span><span class="sxs-lookup"><span data-stu-id="58cfa-130">Request</span></span>
+<span data-ttu-id="58cfa-131">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="58cfa-131">Here is an example of the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="58cfa-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="58cfa-132">--Http</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_chat_message"
@@ -62,11 +64,25 @@ GET /chats/{id}/messages/{id}
 ```http
 GET https://graph.microsoft.com/beta/me/chats/{id}/messages/{id}
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="58cfa-133">C#</span><span class="sxs-lookup"><span data-stu-id="58cfa-133">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-chat-message-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-##### <a name="response"></a><span data-ttu-id="b5f27-132">応答</span><span class="sxs-lookup"><span data-stu-id="b5f27-132">Response</span></span>
-<span data-ttu-id="b5f27-133">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="b5f27-133">Here is an example of the response.</span></span> 
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="58cfa-134">Javascript</span><span class="sxs-lookup"><span data-stu-id="58cfa-134">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-chat-message-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-><span data-ttu-id="b5f27-134">**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されています。</span><span class="sxs-lookup"><span data-stu-id="b5f27-134">**Note:** The response object shown here is shortened for readability.</span></span> <span data-ttu-id="b5f27-135">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="b5f27-135">All the properties will be returned from an actual call.</span></span>
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="58cfa-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="58cfa-135">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-chat-message-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+##### <a name="response"></a><span data-ttu-id="58cfa-136">応答</span><span class="sxs-lookup"><span data-stu-id="58cfa-136">Response</span></span>
+<span data-ttu-id="58cfa-137">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="58cfa-137">Here is an example of the response.</span></span> 
+
+><span data-ttu-id="58cfa-138">**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されています。</span><span class="sxs-lookup"><span data-stu-id="58cfa-138">**Note:** The response object shown here is shortened for readability.</span></span> <span data-ttu-id="58cfa-139">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="58cfa-139">All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -119,18 +135,6 @@ Content-length: 201
     "reactions": []
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="b5f27-136">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="b5f27-136">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="b5f27-137">C#</span><span class="sxs-lookup"><span data-stu-id="b5f27-137">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_chat_message-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b5f27-138">Javascript</span><span class="sxs-lookup"><span data-stu-id="b5f27-138">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_chat_message-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="b5f27-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b5f27-139">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/get_chat_message-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -142,9 +146,6 @@ Content-length: 201
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/chat-get-message.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/chat-get-message.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/chat-get-message.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->
