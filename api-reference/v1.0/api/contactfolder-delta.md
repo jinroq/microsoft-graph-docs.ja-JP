@@ -4,12 +4,12 @@ description: ユーザーのメールボックスで追加または削除され�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 9824e67b537e934d8671a685fab132afebe9baf5
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 9927142888f11e1d46b6c2d37d8513a5ca623aa4
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35277491"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35443050"
 ---
 # <a name="contactfolder-delta"></a>contactFolder: delta
 
@@ -66,6 +66,8 @@ GET /users/{id}/contactFolders/delta
 
 メール フォルダー内のメッセージ変更を追跡するために状態トークンを使用する方法を示す同様の例については、次をご覧ください。[フォルダー内のメッセージへの増分の変更を取得する](/graph/delta-query-messages)。連絡先フォルダーの追跡とフォルダー内のメッセージの追跡の主な違いは、デルタ クエリ要求 URL のほかに、クエリ応答で **message** コレクションではなく **contactFolder** が返されることです。
 
+
+# <a name="httptabhttp"></a>[プロトコル](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "contactfolder_delta"
@@ -74,6 +76,20 @@ GET /users/{id}/contactFolders/delta
 GET https://graph.microsoft.com/v1.0/me/contactFolders/delta
 Prefer: odata.maxpagesize=2
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/contactfolder-delta-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/contactfolder-delta-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/contactfolder-delta-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### <a name="response"></a>応答
 
@@ -105,18 +121,6 @@ Content-length: 254
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプル コード
-# <a name="ctabcs"></a>[C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/contactfolder_delta-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/contactfolder_delta-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[目的-C](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/contactfolder_delta-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="see-also"></a>関連項目
 
@@ -132,8 +136,5 @@ Content-length: 254
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/contactfolder-delta.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/v1.0/api/contactfolder-delta.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/contactfolder-delta.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

@@ -2,12 +2,12 @@
 title: ディレクトリ拡張属性を使用して同期を構成する
 description: 'Azure Active Directory (Azure AD) ディレクトリの拡張属性を含めるように同期スキーマをカスタマイズできます。 この記事では、ディレクトリ拡張属性 (**extension_9d98asdfl15980a_Nickname**) を使用して、Salesforce の CommunityNickname の値を設定する方法について説明します。 このシナリオでは、Azure AD Connect を設定して、オンプレミスの Windows Server Active Directory から Azure AD にいくつかのディレクトリ拡張属性をプロビジョニングします。 '
 localization_priority: Normal
-ms.openlocfilehash: b16cf5f73c95c34d624de8c1c7a8330b0ce64f4c
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 31728ff072d0c28925590a8dfd4382abaeb274c8
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35277092"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35459980"
 ---
 # <a name="configure-synchronization-with-directory-extension-attributes"></a>ディレクトリ拡張属性を使用して同期を構成する
 
@@ -87,6 +87,8 @@ Authorization: Bearer {Token}
 ## <a name="get-the-synchronization-schema"></a>同期スキーマを取得する
 次の例は、同期スキーマを取得する方法を示しています。
 
+
+# <a name="httptabhttp"></a>[プロトコル](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_synchronizationschema"
@@ -95,6 +97,20 @@ Authorization: Bearer {Token}
 GET https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/schema
 Authorization: Bearer {Token}
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-synchronizationschema-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-synchronizationschema-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-synchronizationschema-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 >**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しでは、すべてのプロパティが返されます。
 
@@ -193,18 +209,6 @@ Content-Type: application/json
         }]
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプル コード
-# <a name="ctabcs"></a>[C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_synchronizationschema-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_synchronizationschema-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[目的-C](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/get_synchronizationschema-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="add-a-definition-for-the-directory-extension-attribute-and-a-mapping-between-the-attributes"></a>ディレクトリ拡張属性の定義を追加し、属性間のマッピングを追加する
 
@@ -295,8 +299,5 @@ HTTP/1.1 201 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-configure-with-directory-extension-attributes.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/resources/synchronization-configure-with-directory-extension-attributes.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/resources/synchronization-configure-with-directory-extension-attributes.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

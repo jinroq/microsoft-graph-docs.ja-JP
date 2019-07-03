@@ -4,12 +4,12 @@ description: Office 365 グループの表示名またはメールニックネ�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: ecf5be372cb00df26bf6ae14fdba933782040bc6
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 7da24d3a28c8640f231b9d94c295e6a16abe040b
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35262805"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35442672"
 ---
 # <a name="group-validateproperties"></a>グループ: validateProperties
 
@@ -66,6 +66,8 @@ POST /groups/<id>/validateProperties
 これは、正常な検証要求の例です。
 
 ### <a name="request"></a>要求
+
+# <a name="httptabhttp"></a>[プロトコル](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_validateproperties"
@@ -81,6 +83,20 @@ Content-length: 132
   "onBehalfOfUserId": "onBehalfOfUserId-value"
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/group-validateproperties-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/group-validateproperties-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/group-validateproperties-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>応答
 <!-- {
@@ -90,18 +106,6 @@ Content-length: 132
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプル コード
-# <a name="ctabcs"></a>[C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/group_validateproperties-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/group_validateproperties-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[目的-C](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/group_validateproperties-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 これは、検証エラーが発生した要求の例です。
 
@@ -151,8 +155,5 @@ Content-length: 223
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/group-validateproperties.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/group-validateproperties.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/group-validateproperties.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

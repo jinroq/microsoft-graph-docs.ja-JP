@@ -4,12 +4,12 @@ description: 組織内のユーザーが開催、企画した電話会議セッ�
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 8f41c1ac733b02afe523ad52b55abc003a328604
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: ad1da5505177e2d5bf5e33bc4e0d0b195191a22f
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35267215"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35446494"
 ---
 # <a name="reportroot-getskypeforbusinessorganizeractivitycounts"></a>reportRoot: getSkypeForBusinessOrganizerActivityCounts
 
@@ -87,6 +87,8 @@ CSV を出力する例を次に示します。
 
 要求の例を次に示します。
 
+
+# <a name="httptabhttp"></a>[プロトコル](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "reportroot_getskypeforbusinessorganizeractivitycounts_csv"
@@ -95,6 +97,20 @@ CSV を出力する例を次に示します。
 ```http
 GET https://graph.microsoft.com/beta/reports/getSkypeForBusinessOrganizerActivityCounts(period='D7')?$format=text/csv
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getskypeforbusinessorganizeractivitycounts-csv-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getskypeforbusinessorganizeractivitycounts-csv-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getskypeforbusinessorganizeractivitycounts-csv-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>応答
 
@@ -107,18 +123,6 @@ HTTP/1.1 302 Found
 Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプル コード
-# <a name="ctabcs"></a>[C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/reportroot_getskypeforbusinessorganizeractivitycounts_csv-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/reportroot_getskypeforbusinessorganizeractivitycounts_csv-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[目的-C](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/reportroot_getskypeforbusinessorganizeractivitycounts_csv-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 302 リダイレクトに従うと、ダウンロードされる CSV ファイルは次のスキーマを持つことになります。
 
@@ -143,6 +147,8 @@ Report Refresh Date,Report Date,Report Period,IM,Audio/Video,App Sharing,Web,Dia
 
 要求の例を次に示します。
 
+
+# <a name="httptabhttp"></a>[プロトコル](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "reportroot_getskypeforbusinessorganizeractivitycounts_json"
@@ -151,6 +157,20 @@ Report Refresh Date,Report Date,Report Period,IM,Audio/Video,App Sharing,Web,Dia
 ```http
 GET https://graph.microsoft.com/beta/reports/getSkypeForBusinessOrganizerActivityCounts(period='D7')?$format=application/json
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getskypeforbusinessorganizeractivitycounts-json-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getskypeforbusinessorganizeractivitycounts-json-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getskypeforbusinessorganizeractivitycounts-json-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>応答
 
@@ -186,18 +206,6 @@ Content-Length: 315
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプル コード
-# <a name="ctabcs"></a>[C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/reportroot_getskypeforbusinessorganizeractivitycounts_json-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/reportroot_getskypeforbusinessorganizeractivitycounts_json-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[目的-C](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/reportroot_getskypeforbusinessorganizeractivitycounts_json-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
 <!-- {
@@ -207,10 +215,5 @@ Content-Length: 315
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/reportroot-getskypeforbusinessorganizeractivitycounts.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/reportroot-getskypeforbusinessorganizeractivitycounts.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #csv (score: 5)",
-    "Error: /api-reference/beta/api/reportroot-getskypeforbusinessorganizeractivitycounts.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
-    "Error: /api-reference/beta/api/reportroot-getskypeforbusinessorganizeractivitycounts.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #csv (score: 5)",
-    "Error: /api-reference/beta/api/reportroot-getskypeforbusinessorganizeractivitycounts.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->
