@@ -5,32 +5,32 @@ ms.date: 09/11/2017
 title: SharePoint リストからアイテムを取得する
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: b3b41aceaad0251eeaf8c6339ef7f691abe1261c
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: cf3afcf2148ef057b38c6a8b93371cc9a7ff76fc
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35271968"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35460722"
 ---
-# <a name="enumerate-items-in-a-list"></a><span data-ttu-id="278ea-102">リスト内のアイテムを列挙する</span><span class="sxs-lookup"><span data-stu-id="278ea-102">Enumerate items in a list</span></span>
+# <a name="enumerate-items-in-a-list"></a><span data-ttu-id="20dc5-102">リスト内のアイテムを列挙する</span><span class="sxs-lookup"><span data-stu-id="20dc5-102">Enumerate items in a list</span></span>
 
-<span data-ttu-id="278ea-103">[リスト][]内の[アイテム][item]のコレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="278ea-103">Get the collection of [items][item] in a [list][].</span></span>
+<span data-ttu-id="20dc5-103">[リスト][]内の[アイテム][item]のコレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="20dc5-103">Get the collection of [items][item] in a [list][].</span></span>
 
 [リスト]: ../resources/list.md
 [list]: ../resources/list.md
 [item]: ../resources/listitem.md
 
-## <a name="permissions"></a><span data-ttu-id="278ea-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="278ea-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="20dc5-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="20dc5-105">Permissions</span></span>
 
-<span data-ttu-id="278ea-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="278ea-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="20dc5-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="20dc5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="278ea-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="278ea-108">Permission type</span></span>      | <span data-ttu-id="278ea-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="278ea-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="20dc5-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="20dc5-108">Permission type</span></span>      | <span data-ttu-id="20dc5-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="20dc5-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="278ea-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="278ea-110">Delegated (work or school account)</span></span> | <span data-ttu-id="278ea-111">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="278ea-111">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="278ea-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="278ea-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="278ea-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="278ea-113">Not supported.</span></span>    |
-|<span data-ttu-id="278ea-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="278ea-114">Application</span></span> | <span data-ttu-id="278ea-115">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="278ea-115">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="20dc5-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="20dc5-110">Delegated (work or school account)</span></span> | <span data-ttu-id="20dc5-111">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="20dc5-111">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="20dc5-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="20dc5-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="20dc5-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="20dc5-113">Not supported.</span></span>    |
+|<span data-ttu-id="20dc5-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="20dc5-114">Application</span></span> | <span data-ttu-id="20dc5-115">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="20dc5-115">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="278ea-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="278ea-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="20dc5-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="20dc5-116">HTTP request</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items
@@ -38,17 +38,33 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expan
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Column1,Column2)
 ```
 
-## <a name="example"></a><span data-ttu-id="278ea-117">例</span><span class="sxs-lookup"><span data-stu-id="278ea-117">Example</span></span>
+## <a name="example"></a><span data-ttu-id="20dc5-117">例</span><span class="sxs-lookup"><span data-stu-id="20dc5-117">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="278ea-118">要求</span><span class="sxs-lookup"><span data-stu-id="278ea-118">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="20dc5-118">要求</span><span class="sxs-lookup"><span data-stu-id="20dc5-118">Request</span></span>
 
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="20dc5-119">HTTP</span><span class="sxs-lookup"><span data-stu-id="20dc5-119">--Http</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-list-items", "scopes": "sites.read.all" } -->
 
 ```http
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Name,Color,Quantity)
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="20dc5-120">C#</span><span class="sxs-lookup"><span data-stu-id="20dc5-120">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-list-items-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="278ea-119">応答</span><span class="sxs-lookup"><span data-stu-id="278ea-119">Response</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="20dc5-121">Javascript</span><span class="sxs-lookup"><span data-stu-id="20dc5-121">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-list-items-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="20dc5-122">Objective-C</span><span class="sxs-lookup"><span data-stu-id="20dc5-122">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-list-items-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="20dc5-123">応答</span><span class="sxs-lookup"><span data-stu-id="20dc5-123">Response</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.listItem)", "truncated": true } -->
 
@@ -85,18 +101,6 @@ Content-type: application/json
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="278ea-120">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="278ea-120">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="278ea-121">C#</span><span class="sxs-lookup"><span data-stu-id="278ea-121">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/get-list-items-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="278ea-122">Javascript</span><span class="sxs-lookup"><span data-stu-id="278ea-122">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get-list-items-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="278ea-123">Objective-C</span><span class="sxs-lookup"><span data-stu-id="278ea-123">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/get-list-items-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- {
   "type": "#page.annotation",
@@ -105,8 +109,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "ListItem/Enumerate",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/listitem-list.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/v1.0/api/listitem-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/listitem-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 } -->
