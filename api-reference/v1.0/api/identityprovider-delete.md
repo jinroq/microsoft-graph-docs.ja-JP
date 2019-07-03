@@ -4,56 +4,58 @@ description: 既存の identityProvider を削除する
 localization_priority: Priority
 author: valnav
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b077493196969c08f6cd0914099c00bf8f8ec8a2
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 464ae5b8490a1cd5f9762dd4c1443c4d74a8acd0
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35276854"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35447363"
 ---
-# <a name="delete-identityprovider"></a><span data-ttu-id="93062-103">identityProvider を削除する</span><span class="sxs-lookup"><span data-stu-id="93062-103">Delete identityProvider</span></span>
+# <a name="delete-identityprovider"></a><span data-ttu-id="878fe-103">identityProvider を削除する</span><span class="sxs-lookup"><span data-stu-id="878fe-103">Delete identityProvider</span></span>
 
-<span data-ttu-id="93062-104">既存の [identityProvider](../resources/identityprovider.md) を削除します。</span><span class="sxs-lookup"><span data-stu-id="93062-104">Delete an existing [identityProvider](../resources/identityprovider.md).</span></span>
+<span data-ttu-id="878fe-104">既存の [identityProvider](../resources/identityprovider.md) を削除します。</span><span class="sxs-lookup"><span data-stu-id="878fe-104">Delete an existing [identityProvider](../resources/identityprovider.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="93062-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="93062-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="878fe-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="878fe-105">Permissions</span></span>
 
-<span data-ttu-id="93062-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="93062-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="878fe-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="878fe-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="93062-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="93062-108">Permission type</span></span>      | <span data-ttu-id="93062-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="93062-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="878fe-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="878fe-108">Permission type</span></span>      | <span data-ttu-id="878fe-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="878fe-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="93062-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="93062-110">Delegated (work or school account)</span></span>|<span data-ttu-id="93062-111">IdentityProvider.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="93062-111">IdentityProvider.ReadWrite.All</span></span>|
-|<span data-ttu-id="93062-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="93062-112">Delegated (personal Microsoft account)</span></span>| <span data-ttu-id="93062-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="93062-113">Not supported.</span></span>|
-|<span data-ttu-id="93062-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="93062-114">Application</span></span>|<span data-ttu-id="93062-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="93062-115">Not supported.</span></span>|
+|<span data-ttu-id="878fe-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="878fe-110">Delegated (work or school account)</span></span>|<span data-ttu-id="878fe-111">IdentityProvider.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="878fe-111">IdentityProvider.ReadWrite.All</span></span>|
+|<span data-ttu-id="878fe-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="878fe-112">Delegated (personal Microsoft account)</span></span>| <span data-ttu-id="878fe-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="878fe-113">Not supported.</span></span>|
+|<span data-ttu-id="878fe-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="878fe-114">Application</span></span>|<span data-ttu-id="878fe-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="878fe-115">Not supported.</span></span>|
 
-<span data-ttu-id="93062-116">職場または学校のアカウントは、テナントのグローバル管理者のものである必要があります。</span><span class="sxs-lookup"><span data-stu-id="93062-116">The work or school account must be a global administrator of the tenant.</span></span>
+<span data-ttu-id="878fe-116">職場または学校のアカウントは、テナントのグローバル管理者のものである必要があります。</span><span class="sxs-lookup"><span data-stu-id="878fe-116">The work or school account must be a global administrator of the tenant.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="93062-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="93062-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="878fe-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="878fe-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /identityProviders/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="93062-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="93062-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="878fe-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="878fe-118">Request headers</span></span>
 
-|<span data-ttu-id="93062-119">名前</span><span class="sxs-lookup"><span data-stu-id="93062-119">Name</span></span>|<span data-ttu-id="93062-120">説明</span><span class="sxs-lookup"><span data-stu-id="93062-120">Description</span></span>|
+|<span data-ttu-id="878fe-119">名前</span><span class="sxs-lookup"><span data-stu-id="878fe-119">Name</span></span>|<span data-ttu-id="878fe-120">説明</span><span class="sxs-lookup"><span data-stu-id="878fe-120">Description</span></span>|
 |:---------------|:----------|
-|<span data-ttu-id="93062-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="93062-121">Authorization</span></span>|<span data-ttu-id="93062-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="93062-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="878fe-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="878fe-121">Authorization</span></span>|<span data-ttu-id="878fe-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="878fe-p102">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="93062-124">要求本文</span><span class="sxs-lookup"><span data-stu-id="93062-124">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="878fe-124">要求本文</span><span class="sxs-lookup"><span data-stu-id="878fe-124">Request body</span></span>
 
-<span data-ttu-id="93062-125">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="93062-125">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="878fe-125">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="878fe-125">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="93062-126">応答</span><span class="sxs-lookup"><span data-stu-id="93062-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="878fe-126">応答</span><span class="sxs-lookup"><span data-stu-id="878fe-126">Response</span></span>
 
-<span data-ttu-id="93062-127">成功した場合、このメソッドは `204 No Content` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="93062-127">If successful, this method returns `204 No Content` response code.</span></span>
+<span data-ttu-id="878fe-127">成功した場合、このメソッドは `204 No Content` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="878fe-127">If successful, this method returns `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="93062-128">例</span><span class="sxs-lookup"><span data-stu-id="93062-128">Example</span></span>
+## <a name="example"></a><span data-ttu-id="878fe-128">例</span><span class="sxs-lookup"><span data-stu-id="878fe-128">Example</span></span>
 
-<span data-ttu-id="93062-129">次の例では、**identityProvider** を削除します。</span><span class="sxs-lookup"><span data-stu-id="93062-129">The following example deletes an **identityProvider**.</span></span>
+<span data-ttu-id="878fe-129">次の例では、**identityProvider** を削除します。</span><span class="sxs-lookup"><span data-stu-id="878fe-129">The following example deletes an **identityProvider**.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="93062-130">要求</span><span class="sxs-lookup"><span data-stu-id="93062-130">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="878fe-130">要求</span><span class="sxs-lookup"><span data-stu-id="878fe-130">Request</span></span>
 
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="878fe-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="878fe-131">--Http</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete-identityprovider"
@@ -61,8 +63,22 @@ DELETE /identityProviders/{id}
 ```http
 DELETE https://graph.microsoft.com/v1.0/identityProviders/Amazon-OAuth
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="878fe-132">C#</span><span class="sxs-lookup"><span data-stu-id="878fe-132">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-identityprovider-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-##### <a name="response"></a><span data-ttu-id="93062-131">応答</span><span class="sxs-lookup"><span data-stu-id="93062-131">Response</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="878fe-133">Javascript</span><span class="sxs-lookup"><span data-stu-id="878fe-133">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-identityprovider-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="878fe-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="878fe-134">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-identityprovider-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+##### <a name="response"></a><span data-ttu-id="878fe-135">応答</span><span class="sxs-lookup"><span data-stu-id="878fe-135">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -71,18 +87,6 @@ DELETE https://graph.microsoft.com/v1.0/identityProviders/Amazon-OAuth
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="93062-132">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="93062-132">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="93062-133">C#</span><span class="sxs-lookup"><span data-stu-id="93062-133">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/delete-identityprovider-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="93062-134">Javascript</span><span class="sxs-lookup"><span data-stu-id="93062-134">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/delete-identityprovider-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="93062-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="93062-135">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/delete-identityprovider-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -93,8 +97,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/identityprovider-delete.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/v1.0/api/identityprovider-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/identityprovider-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->
