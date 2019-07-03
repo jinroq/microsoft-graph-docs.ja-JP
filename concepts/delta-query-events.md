@@ -3,12 +3,12 @@ title: 'カレンダー ビューのイベントへの増分の変更を取得�
 description: 'カレンダー ビューは、既定のカレンダー (../me/calendarview) からの日付/時刻範囲内にあるイベントのコレクションです。 '
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: 2eeb1b403b772ea6693b9644e286fd0c60575731
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: fa759b233aafaf03322d416ef9f686c4315b5a9f
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35272248"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35455162"
 ---
 # <a name="get-incremental-changes-to-events-in-a-calendar-view"></a>カレンダー ビューのイベントへの増分の変更を取得する 
 
@@ -70,6 +70,8 @@ GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datet
 - _startDateTime_ パラメーターと _endDateTime_ パラメーターの日付/時刻の値。
 - [オプションの要求ヘッダー](#optional-request-header)である _odata.maxpagesize_ が一度に 2 つのイベントを返します。
 
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_calendarview_delta_1"
@@ -78,6 +80,20 @@ GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datet
 GET https://graph.microsoft.com/v1.0/me/calendarView/delta?startdatetime=2016-12-01T00:00:00Z&enddatetime=2016-12-30T00:00:00Z HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-calendarview-delta-1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-calendarview-delta-1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-calendarview-delta-1-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="sample-initial-response"></a>最初の応答のサンプル
@@ -155,23 +171,13 @@ Content-type: application/json
     ]
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプル コード
-# <a name="ctabcs"></a>[C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_calendarview_delta_1-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_calendarview_delta_1-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/get_calendarview_delta_1-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="step-2-sample-second-request"></a>手順 2: 2 番目の要求のサンプル
 
 2 番目の要求では、前の応答で返された `nextLink` URL を指定します。最初の要求にあるような同じ _startDateTime_ パラメーターと _endDateTime_ パラメーターを指定する必要はなくなりましたのでご注意ください。これは、`nextLink` URL の `skipToken` によってこれらのパラメーターがエンコードされて含まれるためです。
 
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_calendarview_delta_2"
@@ -180,6 +186,20 @@ Content-type: application/json
 GET https://graph.microsoft.com/v1.0/me/calendarView/delta?$skiptoken=R0usmcCM996atia_s HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-calendarview-delta-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-calendarview-delta-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-calendarview-delta-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="sample-second-response"></a>2 番目の応答のサンプル 
 
@@ -256,18 +276,6 @@ Content-type: application/json
     ]
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプル コード
-# <a name="ctabcs"></a>[C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_calendarview_delta_2-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_calendarview_delta_2-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/get_calendarview_delta_2-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
 ### <a name="step-3-sample-third-request"></a>手順 3: 3 番目の要求のサンプル
@@ -275,6 +283,8 @@ Content-type: application/json
 3 番目の要求は、最後の同期要求から返された最新の `nextLink` を引き続き使用します。 
  
 
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_calendarview_delta_3"
@@ -283,6 +293,20 @@ Content-type: application/json
 GET https://graph.microsoft.com/v1.0/me/calendarView/delta?$skiptoken=R0usmci39OQxqJrxK4 HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-calendarview-delta-3-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-calendarview-delta-3-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-calendarview-delta-3-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="sample-third-and-final-response"></a>3 番目と最後の応答のサンプル
 
@@ -336,24 +360,14 @@ Content-type: application/json
     ]
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプル コード
-# <a name="ctabcs"></a>[C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_calendarview_delta_3-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_calendarview_delta_3-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/get_calendarview_delta_3-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
 ### <a name="the-next-round-sample-first-request"></a>次のラウンド: 最初の要求のサンプル
 
 最後のラウンドの[最後の応答](#step-3-sample-third-request)からの `deltaLink` を使用すると、それ以降にそのカレンダー ビューで (追加、削除、または更新によって) 変更されたこれらのイベントのみを取得できます。次のラウンドの最初の要求は、同じ最大ページ サイズを維持することを前提とすると、次のようになります。
 
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_calendarview_delta_next"
@@ -362,6 +376,20 @@ Content-type: application/json
 GET https://graph.microsoft.com/v1.0/me/calendarView/delta?$deltatoken=R0usmcMDNGg0J1E HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-calendarview-delta-next-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-calendarview-delta-next-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-calendarview-delta-next-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="the-next-round-sample-first-response"></a>次のラウンド: 最初の応答のサンプル
 
@@ -430,18 +458,6 @@ Content-type: application/json
     ]
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプル コード
-# <a name="ctabcs"></a>[C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_calendarview_delta_next-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_calendarview_delta_next-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/get_calendarview_delta_next-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="see-also"></a>関連項目
 
@@ -458,14 +474,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /concepts/delta-query-events.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /concepts/delta-query-events.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /concepts/delta-query-events.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
-    "Error: /concepts/delta-query-events.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /concepts/delta-query-events.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
-    "Error: /concepts/delta-query-events.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /concepts/delta-query-events.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
-    "Error: /concepts/delta-query-events.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /concepts/delta-query-events.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

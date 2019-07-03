@@ -4,12 +4,12 @@ description: ユーザーの既定の予定表または指定した予定表で�
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 21142afc462729dbfd32c6e8bf0156532d6cc9dd
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 1c79fad8e5ec6265d98acf3d16f99d869eaa6db8
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35279409"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35460128"
 ---
 # <a name="create-event"></a>イベントを作成する
 
@@ -77,6 +77,8 @@ POST /users/{id | userPrincipalName}/calendars/{id}/events
 ## <a name="example"></a>例
 ##### <a name="request-1"></a>要求 1
 以下は、要求の例です。 `Prefer: outlook.timezone` 要求ヘッダーを使用して、応答の**開始**時刻と**終了**時刻に対するタイム ゾーンを指定します。
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_event_from_user"
@@ -115,6 +117,20 @@ Content-length: 600
   ]
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-event-from-user-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-event-from-user-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-event-from-user-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 要求本文で、[イベント](../resources/event.md) オブジェクトの JSON 表記を指定します。
 ##### <a name="response-1"></a>応答 1
 この応答の例には、`Prefer: outlook.timezone` ヘッダーに指定されているタイム ゾーンを使用した **start** および **end** プロパティが示されています。 注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
@@ -209,24 +225,14 @@ Content-length: 2197
     }
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプル コード
-# <a name="ctabcs"></a>[C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/create_event_from_user-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create_event_from_user-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/create_event_from_user-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
 ##### <a name="request-2"></a>要求 2
 次の要求の例では、3 つの場所を指定して、開催者と出席者がこれらの場所から会議に参加できるようにします。
 
 要求本文で、[イベント](../resources/event.md) オブジェクトの JSON 表記を指定します。
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_event_from_user_multiple_locations"
@@ -296,6 +302,20 @@ Content-length: 1390
 
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-event-from-user-multiple-locations-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-event-from-user-multiple-locations-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-event-from-user-multiple-locations-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### <a name="response-2"></a>応答 2
 次の応答の例には、会議の 3 つの場所に関する情報を指定する、作成されたイベントが示されています。 `Prefer: outlook.timezone="Pacific Standard Time"` 要求ヘッダーにより、**start** および **end** プロパティは PST で表記されています。
@@ -424,22 +444,12 @@ Content-length: 2985
   }
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプル コード
-# <a name="ctabcs"></a>[C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/create_event_from_user_multiple_locations-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create_event_from_user_multiple_locations-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/create_event_from_user_multiple_locations-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
 ##### <a name="request-3"></a>要求 3
 3 つ目の例は、定期的なイベントを作成する方法を示しています。 このイベントは、2017 年 9 月 4 日から年末まで、毎週月曜日の午後 0:00 から午後 2:00 に発生します。
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_event_recurring"
@@ -488,6 +498,20 @@ Content-type: application/json
   ]
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-event-recurring-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-event-recurring-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-event-recurring-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 要求本文で、[イベント](../resources/event.md) オブジェクトの JSON 表記を指定します。
 ##### <a name="response-3"></a>応答 3
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
@@ -601,18 +625,6 @@ Content-type: application/json
     "OnlineMeeting":null
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプル コード
-# <a name="ctabcs"></a>[C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/create_event_recurring-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create_event_recurring-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/create_event_recurring-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
 ## <a name="see-also"></a>関連項目
@@ -632,12 +644,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/user-post-events.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/v1.0/api/user-post-events.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/user-post-events.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
-    "Error: /api-reference/v1.0/api/user-post-events.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/user-post-events.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
-    "Error: /api-reference/v1.0/api/user-post-events.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/user-post-events.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->
