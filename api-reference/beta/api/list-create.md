@@ -5,12 +5,12 @@ ms.date: 09/11/2017
 title: SharePoint リストを作成する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: d0de56a1fac8ecaa15e0f54ba0dda48d19cf868d
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: d27bb8827d201280ffb9b7ab6f41c3c4c18dc3b7
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35264585"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35449233"
 ---
 # <a name="create-a-new-list"></a>新しいリストを作成する
 
@@ -44,6 +44,8 @@ POST https://graph.microsoft.com/beta/sites/{site-id}/lists
 
 新しい汎用リストを作成する例を次に示します。
 
+
+# <a name="httptabhttp"></a>[プロトコル](#tab/http)
 <!-- { "blockType": "request", "name": "create-list", "scopes": "sites.readwrite.all" } -->
 
 ```http
@@ -67,6 +69,20 @@ Content-Type: application/json
   }
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-list-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-list-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-list-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 **注:** カスタム列はオプションです。
 
@@ -101,18 +117,6 @@ Content-type: application/json
   }
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプル コード
-# <a name="ctabcs"></a>[C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/create-list-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create-list-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[目的-C](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/create-list-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 **注:** 応答オブジェクトは、わかりやすくするために切り詰められています。
 実際の呼び出しでは、既定のプロパティが返されます。
@@ -128,9 +132,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "List/Create",
   "suppressions": [
-    "Error: /api-reference/beta/api/list-create.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/list-create.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/list-create.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

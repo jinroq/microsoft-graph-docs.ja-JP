@@ -8533,16 +8533,42 @@
           items:
             - name: Id とアクセスレポート
               items:
-                - name: アプリケーションサインインの概要
-                  href: resources/applicationsigninsummary.md
+                - name: アプリケーションサインイン
                   items:
-                    - name: 取得
-                      href: api/applicationsigninsummary-get.md
-                - name: アプリケーションサインインの概要の詳細
-                  href: resources/applicationsignindetailedsummary.md
+                    - name: サインインの概要
+                      href: resources/applicationsigninsummary.md
+                      items:
+                        - name: サインインの概要を取得する
+                          href: api/applicationsigninsummary-get.md
+                    - name: サインインの詳細
+                      href: resources/applicationsignindetailedsummary.md
+                      items:
+                        - name: サインインの詳細を取得する
+                          href: api/applicationsignindetailedsummary-get.md
+                - name: 登録と使用
                   items:
-                    - name: 取得
-                      href: api/applicationsignindetailedsummary-get.md
+                    - name: 概要
+                      href: resources/authenticationmethods-usage-insights-overview.md
+                    - name: 資格情報のユーザー登録数
+                      href: resources/credentialuserregistrationcount.md
+                      items:
+                        - name: 登録数を取得する
+                          href: api/reportroot-getcredentialuserregistrationcount.md
+                    - name: 資格情報のユーザー登録の詳細
+                      href: resources/credentialuserregistrationdetails.md
+                      items:
+                        - name: 登録の詳細を一覧表示する
+                          href: api/reportroot-list-credentialuserregistrationdetails.md
+                    - name: ユーザー資格情報の使用状況の詳細
+                      href: resources/usercredentialusagedetails.md
+                      items:
+                        - name: 利用状況の詳細を一覧表示する
+                          href: api/reportroot-list-usercredentialusagedetails.md
+                    - name: 資格情報の使用状況の概要
+                      href: resources/credentialusagesummary.md
+                      items:
+                        - name: 利用状況の概要を取得する
+                          href: api/reportroot-getcredentialusagesummary.md
             - name: Office 365 の使用状況レポート
               items:
                 - name: 概要
@@ -9246,7 +9272,7 @@
             - name: Outlook タスク
               href: resources/outlooktask.md
               items:
-                - name: List
+                - name: リスト
                   href: api/outlookuser-list-tasks.md
                 - name: 作成する
                   href: api/outlookuser-post-tasks.md
@@ -9254,7 +9280,7 @@
                   href: api/outlooktask-get.md
                 - name: 更新
                   href: api/outlooktask-update.md
-                - name: 削除する
+                - name: 削除
                   href: api/outlooktask-delete.md
                 - name: 完了
                   href: api/outlooktask-complete.md
@@ -9267,13 +9293,13 @@
               items:
                 - name: リスト
                   href: api/outlookuser-list-taskfolders.md
-                - name: 作成する
+                - name: 作成
                   href: api/outlookuser-post-taskfolders.md
                 - name: 取得
                   href: api/outlooktaskfolder-get.md
                 - name: 更新
                   href: api/outlooktaskfolder-update.md
-                - name: 削除する
+                - name: 削除
                   href: api/outlooktaskfolder-delete.md
                 - name: フォルダー内のタスクを一覧表示する
                   href: api/outlooktaskfolder-list-tasks.md

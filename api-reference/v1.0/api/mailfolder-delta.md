@@ -4,12 +4,12 @@ description: ユーザーのメールボックスで追加または削除され�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: df8bbcf10d08a1dbd5ff908400290eda15612704
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: eb70e163caff882f5010230e908f973169b39c65
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33612652"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35454420"
 ---
 # <a name="mailfolder-delta"></a>mailFolder: delta
 
@@ -66,6 +66,8 @@ GET /users/{id}/mailFolders/delta
 
 メール フォルダー内のメッセージ変更を追跡するために状態トークンを使用する方法を示す同様の例については、次をご覧ください。「[フォルダー内のメッセージへの増分の変更を取得する](/graph/delta-query-messages)」。メール フォルダーの追跡とフォルダー内のメッセージの追跡の主な違いは、デルタ クエリ要求 URL と、**message** コレクションではなく **mailFolder** を返すクエリ応答にあります。
 
+
+# <a name="httptabhttp"></a>[プロトコル](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "mailfolder_delta"
@@ -75,6 +77,16 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/delta
 
 Prefer: odata.maxpagesize=2
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/mailfolder-delta-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/mailfolder-delta-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### <a name="response"></a>応答
 
@@ -108,16 +120,6 @@ Content-length: 254
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-# <a name="ctabcs"></a>[Visual](#tab/cs)
-[!INCLUDE [sample-code](../includes/mailfolder_delta-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
-[!INCLUDE [sample-code](../includes/mailfolder_delta-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="see-also"></a>関連項目
 
@@ -133,7 +135,5 @@ Content-length: 254
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/mailfolder-delta.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/mailfolder-delta.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

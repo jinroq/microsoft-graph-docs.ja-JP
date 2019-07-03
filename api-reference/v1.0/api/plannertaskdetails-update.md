@@ -4,12 +4,12 @@ description: '**plannertaskdetails** オブジェクトのプロパティを更�
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 76c969158019c39592b819da2e4b281386f53276
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 96d6fcd141148e1ff792817814cb3c9267cabd1f
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33608451"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35454343"
 ---
 # <a name="update-plannertaskdetails"></a>Update plannertaskdetails
 
@@ -40,7 +40,7 @@ PATCH /planner/tasks/{id}/details
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |checklist|[plannerChecklistItems](../resources/plannerchecklistitems.md)|タスク上のチェックリスト項目のコレクション。|
-|説明|String|タスクの説明|
+|description|String|タスクの説明|
 |previewType|string|タスクに表示されるプレビューの種類を設定します。 使用可能な値: `automatic`、`noPreview`、`checklist`、`description`、`reference`。 表示され`automatic`たプレビューに設定した場合は、タスクを表示するアプリによって選択されます。|
 |references|[plannerExternalReferences](../resources/plannerexternalreferences.md)|タスク上の参照のコレクションです。|
 
@@ -53,6 +53,8 @@ PATCH /planner/tasks/{id}/details
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。
+
+# <a name="httptabhttp"></a>[プロトコル](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_plannertaskdetails"
@@ -92,6 +94,12 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
   }
 }
 ```
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-plannertaskdetails-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
@@ -162,14 +170,6 @@ Content-length: 1793
   "id": "gcrYAaAkgU2EQUvpkNNXLGQAGTtu"
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
-[!INCLUDE [sample-code](../includes/update_plannertaskdetails-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -180,6 +180,5 @@ Content-length: 1793
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/plannertaskdetails-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->
