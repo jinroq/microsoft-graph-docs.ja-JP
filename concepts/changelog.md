@@ -3,12 +3,12 @@ title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 065bb9e52477d06e05ae055e920821db6e9d9a7a
-ms.sourcegitcommit: e0de4e41773e361752870411d1b1a74270738127
+ms.openlocfilehash: 42865c9c03f0f0bfc5e815e46b6d2ad04ef9bd47
+ms.sourcegitcommit: ee710ff556f4a7907181df5c323e345f52808ce2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35348678"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35417746"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
@@ -65,6 +65,12 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 |追加|ベータ版|**rotateFileVaultKey** メンバーおよび **getFileVaultKey** メンバーを [remoteAction](/graph/api/resources/intune-devices-remoteaction?view=graph-rest-beta) 列挙型に追加しました|
 |追加|ベータ版|**sharedSecret** メンバーを [vpnAuthenticationMethod](/graph/api/resources/intune-deviceconfig-vpnauthenticationmethod?view=graph-rest-beta) 列挙型に追加しました|
 |追加|ベータ版|**windows10Home**、**windows10HomeChina**、**windows10HomeN**、**windows10HomeSingleLanguage**、**windows10Mobile**、**windows10IoTCore** および **windows10IoTCoreCommercial** 各メンバーを [windows10EditionType](/graph/api/resources/intune-deviceconfig-windows10editiontype?view=graph-rest-beta) 列挙型に追加しました|
+
+### <a name="outlook-mail"></a>Outlook メール
+
+| **変更の種類** | **バージョン**   | **説明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 追加 | ベータ版 | mailFolder API の Mail.ReadBasic アクセス許可に関する以下のサポートが追加されました: [mailfolders を一覧表示する](/graph/api/user-list-mailfolders?view=graph-rest-beta)、[mailfolder を取得する](/graph/api/mailfolder-get?view=graph-rest-beta)、[子フォルダーを一覧表示する](/graph/api/mailfolder-list-childfolders?view=graph-rest-beta)、および [フォルダー内のメッセージを一覧表示する](/graph/api/mailfolder-list-childfolders?view=graph-rest-beta)。 [メッセージのデルタ クエリ](/graph/api/message-delta?view=graph-rest-beta) および [mailFolder のデルタ クエリ](/graph/api/mailfolder-delta?view=graph-rest-beta) に関する Mail.ReadBasic サポートも追加されました。|
 
 ### <a name="microsoft-teams-apis"></a>Microsoft Teams API
 
@@ -2855,7 +2861,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | **変更の種類** | **バージョン**   | **説明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 変更          | v1.0 およびベータ版 | 「Office 365 のデータ拡張機能」というこれまでの名称が「オープン拡張機能」に変更されました。 |
-| 追加        | ベータ版          | [オープン拡張機能](extensibility-overview.md#open-extensions)をサポートする追加リソース: <br/>管理単位<br/>デバイス<br/>group<br/>組織<br/>ユーザー<br/>次の例を参照してください。<br/>[オープン拡張機能を使用したユーザーへのカスタム データの追加 (プレビュー)](extensibility-open-users.md) |
+| 追加        | ベータ版          | [オープン拡張機能](extensibility-overview.md#open-extensions)をサポートする追加リソース: <br/>管理単位<br/>デバイス<br/>group<br/>組織<br/>user<br/>次の例を参照してください。<br/>[オープン拡張機能を使用したユーザーへのカスタム データの追加 (プレビュー)](extensibility-open-users.md) |
 
 ### <a name="directory-apis"></a>ディレクトリ API
 
