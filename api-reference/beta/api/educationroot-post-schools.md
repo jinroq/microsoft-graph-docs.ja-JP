@@ -4,49 +4,51 @@ description: 学校を作成します。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 7d5b23e4a77b6fd6aa42383f2c120a5830092ab5
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: d886b85f1d9124e8ab56b8e223d0acbffcb0ad01
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35259690"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35441535"
 ---
-# <a name="create-educationschool"></a><span data-ttu-id="c221a-103">educationSchool を作成する</span><span class="sxs-lookup"><span data-stu-id="c221a-103">Create educationSchool</span></span>
+# <a name="create-educationschool"></a><span data-ttu-id="3a2d4-103">educationSchool を作成する</span><span class="sxs-lookup"><span data-stu-id="3a2d4-103">Create educationSchool</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c221a-104">学校を作成します。</span><span class="sxs-lookup"><span data-stu-id="c221a-104">Create a school.</span></span>
+<span data-ttu-id="3a2d4-104">学校を作成します。</span><span class="sxs-lookup"><span data-stu-id="3a2d4-104">Create a school.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c221a-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="c221a-105">Permissions</span></span>
-<span data-ttu-id="c221a-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c221a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="3a2d4-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="3a2d4-105">Permissions</span></span>
+<span data-ttu-id="3a2d4-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="3a2d4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c221a-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="c221a-108">Permission type</span></span>      | <span data-ttu-id="c221a-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="c221a-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="3a2d4-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="3a2d4-108">Permission type</span></span>      | <span data-ttu-id="3a2d4-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="3a2d4-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c221a-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="c221a-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="c221a-111">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c221a-111">Not supported.</span></span>  |
-|<span data-ttu-id="c221a-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="c221a-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="c221a-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c221a-113">Not supported.</span></span>  |
-|<span data-ttu-id="c221a-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="c221a-114">Application</span></span> | <span data-ttu-id="c221a-115">EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c221a-115">EduRoster.ReadWrite.All</span></span> | 
+|<span data-ttu-id="3a2d4-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="3a2d4-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="3a2d4-111">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="3a2d4-111">Not supported.</span></span>  |
+|<span data-ttu-id="3a2d4-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="3a2d4-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="3a2d4-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="3a2d4-113">Not supported.</span></span>  |
+|<span data-ttu-id="3a2d4-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="3a2d4-114">Application</span></span> | <span data-ttu-id="3a2d4-115">EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3a2d4-115">EduRoster.ReadWrite.All</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="c221a-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="c221a-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3a2d4-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="3a2d4-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /education/schools
 ```
-## <a name="request-headers"></a><span data-ttu-id="c221a-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="c221a-117">Request headers</span></span>
-| <span data-ttu-id="c221a-118">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="c221a-118">Header</span></span>       | <span data-ttu-id="c221a-119">値</span><span class="sxs-lookup"><span data-stu-id="c221a-119">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="3a2d4-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="3a2d4-117">Request headers</span></span>
+| <span data-ttu-id="3a2d4-118">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="3a2d4-118">Header</span></span>       | <span data-ttu-id="3a2d4-119">値</span><span class="sxs-lookup"><span data-stu-id="3a2d4-119">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="c221a-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="c221a-120">Authorization</span></span>  | <span data-ttu-id="c221a-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="c221a-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="c221a-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="c221a-123">Content-Type</span></span>  | <span data-ttu-id="c221a-124">application/json</span><span class="sxs-lookup"><span data-stu-id="c221a-124">application/json</span></span>  |
+| <span data-ttu-id="3a2d4-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="3a2d4-120">Authorization</span></span>  | <span data-ttu-id="3a2d4-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="3a2d4-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="3a2d4-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="3a2d4-123">Content-Type</span></span>  | <span data-ttu-id="3a2d4-124">application/json</span><span class="sxs-lookup"><span data-stu-id="3a2d4-124">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="c221a-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="c221a-125">Request body</span></span>
-<span data-ttu-id="c221a-126">要求本文で、[educationSchool](../resources/educationschool.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="c221a-126">In the request body, supply a JSON representation of an [educationSchool](../resources/educationschool.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="3a2d4-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="3a2d4-125">Request body</span></span>
+<span data-ttu-id="3a2d4-126">要求本文で、[educationSchool](../resources/educationschool.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="3a2d4-126">In the request body, supply a JSON representation of an [educationSchool](../resources/educationschool.md) object.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="c221a-127">応答</span><span class="sxs-lookup"><span data-stu-id="c221a-127">Response</span></span>
-<span data-ttu-id="c221a-128">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [educationSchool](../resources/educationschool.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="c221a-128">If successful, this method returns a `201 Created` response code and an [educationSchool](../resources/educationschool.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="3a2d4-127">応答</span><span class="sxs-lookup"><span data-stu-id="3a2d4-127">Response</span></span>
+<span data-ttu-id="3a2d4-128">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [educationSchool](../resources/educationschool.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="3a2d4-128">If successful, this method returns a `201 Created` response code and an [educationSchool](../resources/educationschool.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c221a-129">例</span><span class="sxs-lookup"><span data-stu-id="c221a-129">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="c221a-130">要求</span><span class="sxs-lookup"><span data-stu-id="c221a-130">Request</span></span>
-<span data-ttu-id="c221a-131">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="c221a-131">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="3a2d4-129">例</span><span class="sxs-lookup"><span data-stu-id="3a2d4-129">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="3a2d4-130">要求</span><span class="sxs-lookup"><span data-stu-id="3a2d4-130">Request</span></span>
+<span data-ttu-id="3a2d4-131">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="3a2d4-131">The following is an example of the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="3a2d4-132">プロトコル</span><span class="sxs-lookup"><span data-stu-id="3a2d4-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_educationschool_from_educationroot"
@@ -79,11 +81,25 @@ Content-length: 292
   "phone": "+1 (253) 555-0102",
 }
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="3a2d4-133">C#</span><span class="sxs-lookup"><span data-stu-id="3a2d4-133">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-educationschool-from-educationroot-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-##### <a name="response"></a><span data-ttu-id="c221a-132">応答</span><span class="sxs-lookup"><span data-stu-id="c221a-132">Response</span></span>
-<span data-ttu-id="c221a-133">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="c221a-133">The following is an example of the response.</span></span> 
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="3a2d4-134">Javascript</span><span class="sxs-lookup"><span data-stu-id="3a2d4-134">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-educationschool-from-educationroot-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-><span data-ttu-id="c221a-p103">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="c221a-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="3a2d4-135">目的-C</span><span class="sxs-lookup"><span data-stu-id="3a2d4-135">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-educationschool-from-educationroot-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+##### <a name="response"></a><span data-ttu-id="3a2d4-136">応答</span><span class="sxs-lookup"><span data-stu-id="3a2d4-136">Response</span></span>
+<span data-ttu-id="3a2d4-137">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="3a2d4-137">The following is an example of the response.</span></span> 
+
+><span data-ttu-id="3a2d4-p103">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="3a2d4-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -125,18 +141,6 @@ Content-length: 292
   "phone": "+1 (253) 555-0102",
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="c221a-136">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="c221a-136">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="c221a-137">C#</span><span class="sxs-lookup"><span data-stu-id="c221a-137">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/create_educationschool_from_educationroot-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="c221a-138">Javascript</span><span class="sxs-lookup"><span data-stu-id="c221a-138">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create_educationschool_from_educationroot-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="c221a-139">目的-C</span><span class="sxs-lookup"><span data-stu-id="c221a-139">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/create_educationschool_from_educationroot-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -148,9 +152,6 @@ Content-length: 292
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/educationroot-post-schools.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/educationroot-post-schools.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/educationroot-post-schools.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

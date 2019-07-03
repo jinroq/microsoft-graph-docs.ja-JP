@@ -5,52 +5,54 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5d6484d06505f03950aaf5de7247c6e26b359754
-ms.sourcegitcommit: e0de4e41773e361752870411d1b1a74270738127
+ms.openlocfilehash: 2285718c22b423202220ded1b7c36b10c6420e48
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35349424"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35447719"
 ---
-# <a name="get-riskdetection"></a><span data-ttu-id="1a0eb-103">RiskDetection を取得する</span><span class="sxs-lookup"><span data-stu-id="1a0eb-103">Get riskDetection</span></span>
+# <a name="get-riskdetection"></a><span data-ttu-id="daea2-103">RiskDetection を取得する</span><span class="sxs-lookup"><span data-stu-id="daea2-103">Get riskDetection</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1a0eb-104">**RiskDetection**オブジェクトのプロパティを取得します。</span><span class="sxs-lookup"><span data-stu-id="1a0eb-104">Retrieve the properties of a **riskDetection** object.</span></span>
+<span data-ttu-id="daea2-104">**RiskDetection**オブジェクトのプロパティを取得します。</span><span class="sxs-lookup"><span data-stu-id="daea2-104">Retrieve the properties of a **riskDetection** object.</span></span>
 
 >[!NOTE]
-><span data-ttu-id="1a0eb-105">リスク検出 API を使用するには、Azure AD Premium P2 ライセンスが必要です。</span><span class="sxs-lookup"><span data-stu-id="1a0eb-105">You must have an Azure AD Premium P2 license to use the risk detection API.</span></span>
+><span data-ttu-id="daea2-105">リスク検出 API を使用するには、Azure AD Premium P2 ライセンスが必要です。</span><span class="sxs-lookup"><span data-stu-id="daea2-105">You must have an Azure AD Premium P2 license to use the risk detection API.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1a0eb-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="1a0eb-106">Permissions</span></span>
-<span data-ttu-id="1a0eb-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1a0eb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="daea2-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="daea2-106">Permissions</span></span>
+<span data-ttu-id="daea2-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="daea2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1a0eb-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="1a0eb-109">Permission type</span></span>      | <span data-ttu-id="1a0eb-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="1a0eb-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="daea2-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="daea2-109">Permission type</span></span>      | <span data-ttu-id="daea2-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="daea2-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1a0eb-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="1a0eb-111">Delegated (work or school account)</span></span> | <span data-ttu-id="1a0eb-112">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="1a0eb-112">IdentityRiskEvent.Read.All</span></span>    |
-|<span data-ttu-id="1a0eb-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="1a0eb-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1a0eb-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="1a0eb-114">Not supported.</span></span>    |
-|<span data-ttu-id="1a0eb-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="1a0eb-115">Application</span></span> | <span data-ttu-id="1a0eb-116">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="1a0eb-116">IdentityRiskEvent.Read.All</span></span> |
+|<span data-ttu-id="daea2-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="daea2-111">Delegated (work or school account)</span></span> | <span data-ttu-id="daea2-112">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="daea2-112">IdentityRiskEvent.Read.All</span></span>    |
+|<span data-ttu-id="daea2-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="daea2-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="daea2-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="daea2-114">Not supported.</span></span>    |
+|<span data-ttu-id="daea2-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="daea2-115">Application</span></span> | <span data-ttu-id="daea2-116">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="daea2-116">IdentityRiskEvent.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1a0eb-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="1a0eb-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="daea2-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="daea2-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /riskDetections/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="1a0eb-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="1a0eb-118">Request headers</span></span>
-| <span data-ttu-id="1a0eb-119">名前</span><span class="sxs-lookup"><span data-stu-id="1a0eb-119">Name</span></span>      |<span data-ttu-id="1a0eb-120">説明</span><span class="sxs-lookup"><span data-stu-id="1a0eb-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="daea2-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="daea2-118">Request headers</span></span>
+| <span data-ttu-id="daea2-119">名前</span><span class="sxs-lookup"><span data-stu-id="daea2-119">Name</span></span>      |<span data-ttu-id="daea2-120">説明</span><span class="sxs-lookup"><span data-stu-id="daea2-120">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="1a0eb-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="1a0eb-121">Authorization</span></span>  | <span data-ttu-id="1a0eb-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="1a0eb-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="1a0eb-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="1a0eb-124">Content-Type</span></span> | <span data-ttu-id="1a0eb-125">application/json</span><span class="sxs-lookup"><span data-stu-id="1a0eb-125">application/json</span></span> |
+| <span data-ttu-id="daea2-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="daea2-121">Authorization</span></span>  | <span data-ttu-id="daea2-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="daea2-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="daea2-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="daea2-124">Content-Type</span></span> | <span data-ttu-id="daea2-125">application/json</span><span class="sxs-lookup"><span data-stu-id="daea2-125">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="1a0eb-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="1a0eb-126">Request body</span></span>
-<span data-ttu-id="1a0eb-127">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="1a0eb-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="daea2-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="daea2-126">Request body</span></span>
+<span data-ttu-id="daea2-127">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="daea2-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1a0eb-128">応答</span><span class="sxs-lookup"><span data-stu-id="1a0eb-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="daea2-128">応答</span><span class="sxs-lookup"><span data-stu-id="daea2-128">Response</span></span>
 
-<span data-ttu-id="1a0eb-129">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[riskDetection](../resources/riskDetection.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="1a0eb-129">If successful, this method returns a `200 OK` response code and a [riskDetection](../resources/riskDetection.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="1a0eb-130">例</span><span class="sxs-lookup"><span data-stu-id="1a0eb-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="1a0eb-131">要求</span><span class="sxs-lookup"><span data-stu-id="1a0eb-131">Request</span></span>
-<span data-ttu-id="1a0eb-132">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="1a0eb-132">Here is an example of the request.</span></span>
+<span data-ttu-id="daea2-129">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[riskDetection](../resources/riskdetection.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="daea2-129">If successful, this method returns a `200 OK` response code and a [riskDetection](../resources/riskdetection.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="daea2-130">例</span><span class="sxs-lookup"><span data-stu-id="daea2-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="daea2-131">要求</span><span class="sxs-lookup"><span data-stu-id="daea2-131">Request</span></span>
+<span data-ttu-id="daea2-132">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="daea2-132">Here is an example of the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="daea2-133">プロトコル</span><span class="sxs-lookup"><span data-stu-id="daea2-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_riskDetection",
@@ -59,8 +61,22 @@ GET /riskDetections/{id}
 ```http
 GET https://graph.microsoft.com/beta/riskDetections/c2b6c2b9-dddc-acd0-2b39-d519d803dbc3
 ```
-##### <a name="response"></a><span data-ttu-id="1a0eb-133">応答</span><span class="sxs-lookup"><span data-stu-id="1a0eb-133">Response</span></span>
-<span data-ttu-id="1a0eb-134">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="1a0eb-134">Here is an example of the response.</span></span>
+# <a name="ctabcsharp"></a>[<span data-ttu-id="daea2-134">C#</span><span class="sxs-lookup"><span data-stu-id="daea2-134">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-riskdetection-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="daea2-135">Javascript</span><span class="sxs-lookup"><span data-stu-id="daea2-135">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-riskdetection-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="daea2-136">目的-C</span><span class="sxs-lookup"><span data-stu-id="daea2-136">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-riskdetection-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+##### <a name="response"></a><span data-ttu-id="daea2-137">応答</span><span class="sxs-lookup"><span data-stu-id="daea2-137">Response</span></span>
+<span data-ttu-id="daea2-138">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="daea2-138">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -4,51 +4,53 @@ description: 新しいデバイスを作成します。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: bf003c6337e600810d4bc37f4b8bb97506d9348a
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 88c21a7bc977b499c020fc55e2d4d53b229a01f1
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35260915"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35437230"
 ---
-# <a name="create-device"></a><span data-ttu-id="aafb9-103">デバイスを作成する</span><span class="sxs-lookup"><span data-stu-id="aafb9-103">Create device</span></span>
+# <a name="create-device"></a><span data-ttu-id="fd662-103">デバイスを作成する</span><span class="sxs-lookup"><span data-stu-id="fd662-103">Create device</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="aafb9-104">新しいデバイスを作成します。</span><span class="sxs-lookup"><span data-stu-id="aafb9-104">Create a new device.</span></span>
-## <a name="permissions"></a><span data-ttu-id="aafb9-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="aafb9-105">Permissions</span></span>
-<span data-ttu-id="aafb9-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="aafb9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="fd662-104">新しいデバイスを作成します。</span><span class="sxs-lookup"><span data-stu-id="fd662-104">Create a new device.</span></span>
+## <a name="permissions"></a><span data-ttu-id="fd662-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="fd662-105">Permissions</span></span>
+<span data-ttu-id="fd662-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="fd662-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="aafb9-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="aafb9-108">Permission type</span></span>      | <span data-ttu-id="aafb9-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="aafb9-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="fd662-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="fd662-108">Permission type</span></span>      | <span data-ttu-id="fd662-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="fd662-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="aafb9-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="aafb9-110">Delegated (work or school account)</span></span> | <span data-ttu-id="aafb9-111">Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="aafb9-111">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="aafb9-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="aafb9-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="aafb9-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="aafb9-113">Not supported.</span></span>    |
-|<span data-ttu-id="aafb9-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="aafb9-114">Application</span></span> | <span data-ttu-id="aafb9-115">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="aafb9-115">Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="fd662-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="fd662-110">Delegated (work or school account)</span></span> | <span data-ttu-id="fd662-111">Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="fd662-111">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="fd662-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="fd662-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fd662-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="fd662-113">Not supported.</span></span>    |
+|<span data-ttu-id="fd662-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="fd662-114">Application</span></span> | <span data-ttu-id="fd662-115">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fd662-115">Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="aafb9-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="aafb9-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="fd662-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="fd662-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /devices
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="aafb9-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="aafb9-117">Request headers</span></span>
-| <span data-ttu-id="aafb9-118">名前</span><span class="sxs-lookup"><span data-stu-id="aafb9-118">Name</span></span>       | <span data-ttu-id="aafb9-119">型</span><span class="sxs-lookup"><span data-stu-id="aafb9-119">Type</span></span> | <span data-ttu-id="aafb9-120">説明</span><span class="sxs-lookup"><span data-stu-id="aafb9-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="fd662-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="fd662-117">Request headers</span></span>
+| <span data-ttu-id="fd662-118">名前</span><span class="sxs-lookup"><span data-stu-id="fd662-118">Name</span></span>       | <span data-ttu-id="fd662-119">型</span><span class="sxs-lookup"><span data-stu-id="fd662-119">Type</span></span> | <span data-ttu-id="fd662-120">説明</span><span class="sxs-lookup"><span data-stu-id="fd662-120">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="aafb9-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="aafb9-121">Authorization</span></span>  | <span data-ttu-id="aafb9-122">string</span><span class="sxs-lookup"><span data-stu-id="aafb9-122">string</span></span>  | <span data-ttu-id="aafb9-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="aafb9-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="fd662-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="fd662-121">Authorization</span></span>  | <span data-ttu-id="fd662-122">string</span><span class="sxs-lookup"><span data-stu-id="fd662-122">string</span></span>  | <span data-ttu-id="fd662-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="fd662-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="aafb9-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="aafb9-125">Request body</span></span>
-<span data-ttu-id="aafb9-126">要求本文で、[デバイス](../resources/device.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="aafb9-126">In the request body, supply a JSON representation of [device](../resources/device.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="fd662-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="fd662-125">Request body</span></span>
+<span data-ttu-id="fd662-126">要求本文で、[デバイス](../resources/device.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="fd662-126">In the request body, supply a JSON representation of [device](../resources/device.md) object.</span></span>
 
-<span data-ttu-id="aafb9-127">**デバイス**リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため`POST` 、操作を使用して、作成中に独自のデータを持つカスタムプロパティをデバイスインスタンスに追加することができます。</span><span class="sxs-lookup"><span data-stu-id="aafb9-127">Since the **device** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the device instance while creating it.</span></span>
+<span data-ttu-id="fd662-127">**デバイス**リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため`POST` 、操作を使用して、作成中に独自のデータを持つカスタムプロパティをデバイスインスタンスに追加することができます。</span><span class="sxs-lookup"><span data-stu-id="fd662-127">Since the **device** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the device instance while creating it.</span></span>
 
-## <a name="response"></a><span data-ttu-id="aafb9-128">応答</span><span class="sxs-lookup"><span data-stu-id="aafb9-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="fd662-128">応答</span><span class="sxs-lookup"><span data-stu-id="fd662-128">Response</span></span>
 
-<span data-ttu-id="aafb9-129">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で[デバイス](../resources/device.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="aafb9-129">If successful, this method returns `201 Created` response code and [device](../resources/device.md) object in the response body.</span></span>
+<span data-ttu-id="fd662-129">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で[デバイス](../resources/device.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="fd662-129">If successful, this method returns `201 Created` response code and [device](../resources/device.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="aafb9-130">例</span><span class="sxs-lookup"><span data-stu-id="aafb9-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="aafb9-131">要求</span><span class="sxs-lookup"><span data-stu-id="aafb9-131">Request</span></span>
-<span data-ttu-id="aafb9-132">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="aafb9-132">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="fd662-130">例</span><span class="sxs-lookup"><span data-stu-id="fd662-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="fd662-131">要求</span><span class="sxs-lookup"><span data-stu-id="fd662-131">Request</span></span>
+<span data-ttu-id="fd662-132">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="fd662-132">Here is an example of the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="fd662-133">プロトコル</span><span class="sxs-lookup"><span data-stu-id="fd662-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_device_from_devices"
@@ -73,9 +75,23 @@ Content-length: 364
   "deviceVersion": 99
 }
 ```
-<span data-ttu-id="aafb9-133">要求本文で、[デバイス](../resources/device.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="aafb9-133">In the request body, supply a JSON representation of [device](../resources/device.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="aafb9-134">応答</span><span class="sxs-lookup"><span data-stu-id="aafb9-134">Response</span></span>
-<span data-ttu-id="aafb9-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="aafb9-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+# <a name="ctabcsharp"></a>[<span data-ttu-id="fd662-134">C#</span><span class="sxs-lookup"><span data-stu-id="fd662-134">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-device-from-devices-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="fd662-135">Javascript</span><span class="sxs-lookup"><span data-stu-id="fd662-135">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-device-from-devices-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="fd662-136">目的-C</span><span class="sxs-lookup"><span data-stu-id="fd662-136">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-device-from-devices-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+<span data-ttu-id="fd662-137">要求本文で、[デバイス](../resources/device.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="fd662-137">In the request body, supply a JSON representation of [device](../resources/device.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="fd662-138">応答</span><span class="sxs-lookup"><span data-stu-id="fd662-138">Response</span></span>
+<span data-ttu-id="fd662-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="fd662-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -101,24 +117,12 @@ Content-length: 364
   "deviceVersion": 99
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="aafb9-138">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="aafb9-138">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="aafb9-139">C#</span><span class="sxs-lookup"><span data-stu-id="aafb9-139">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/create_device_from_devices-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="aafb9-140">Javascript</span><span class="sxs-lookup"><span data-stu-id="aafb9-140">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create_device_from_devices-Javascript-snippets.md)]
+## <a name="see-also"></a><span data-ttu-id="fd662-142">関連項目</span><span class="sxs-lookup"><span data-stu-id="fd662-142">See also</span></span>
 
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="aafb9-141">目的-C</span><span class="sxs-lookup"><span data-stu-id="aafb9-141">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/create_device_from_devices-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
-
-## <a name="see-also"></a><span data-ttu-id="aafb9-142">関連項目</span><span class="sxs-lookup"><span data-stu-id="aafb9-142">See also</span></span>
-
-- [<span data-ttu-id="aafb9-143">拡張機能を使用してカスタム データをリソースに追加する</span><span class="sxs-lookup"><span data-stu-id="aafb9-143">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
-- [<span data-ttu-id="aafb9-144">オープン拡張機能を使用したユーザーへのカスタム データの追加 (プレビュー)</span><span class="sxs-lookup"><span data-stu-id="aafb9-144">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
-- [<span data-ttu-id="aafb9-145">スキーマ拡張機能を使用したグループへのカスタム データの追加 (プレビュー)</span><span class="sxs-lookup"><span data-stu-id="aafb9-145">Add custom data to groups using schema extensions (preview)</span></span>](/graph/extensibility-schema-groups)
+- [<span data-ttu-id="fd662-143">拡張機能を使用してカスタム データをリソースに追加する</span><span class="sxs-lookup"><span data-stu-id="fd662-143">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
+- [<span data-ttu-id="fd662-144">オープン拡張機能を使用したユーザーへのカスタム データの追加 (プレビュー)</span><span class="sxs-lookup"><span data-stu-id="fd662-144">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
+- [<span data-ttu-id="fd662-145">スキーマ拡張機能を使用したグループへのカスタム データの追加 (プレビュー)</span><span class="sxs-lookup"><span data-stu-id="fd662-145">Add custom data to groups using schema extensions (preview)</span></span>](/graph/extensibility-schema-groups)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -131,9 +135,6 @@ Content-length: 364
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/device-post-devices.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/device-post-devices.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/device-post-devices.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

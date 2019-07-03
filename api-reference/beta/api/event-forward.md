@@ -4,32 +4,32 @@ description: 'このアクションにより、会議イベントの開催者ま
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 5da653eab0dd1d3ab97a3df8bf0de0ffd110c0e3
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 5ad26f76ff9d71bf453f967ad00f3018f6ce4361
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35259158"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35441073"
 ---
-# <a name="event-forward"></a><span data-ttu-id="3b056-103">イベント: 転送</span><span class="sxs-lookup"><span data-stu-id="3b056-103">event: forward</span></span>
+# <a name="event-forward"></a><span data-ttu-id="f96db-103">イベント: 転送</span><span class="sxs-lookup"><span data-stu-id="f96db-103">event: forward</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="3b056-104">このアクションにより、会議[イベント](../resources/event.md)の開催者または出席者は、新しい受信者に会議出席依頼を転送することができます。</span><span class="sxs-lookup"><span data-stu-id="3b056-104">This action allows the organizer or attendee of a meeting [event](../resources/event.md) to forward the meeting request to a new recipient.</span></span> 
+<span data-ttu-id="f96db-104">このアクションにより、会議[イベント](../resources/event.md)の開催者または出席者は、新しい受信者に会議出席依頼を転送することができます。</span><span class="sxs-lookup"><span data-stu-id="f96db-104">This action allows the organizer or attendee of a meeting [event](../resources/event.md) to forward the meeting request to a new recipient.</span></span> 
 
-<span data-ttu-id="3b056-105">会議イベントが出席者の Office 365 メールボックスから別の受信者に転送された場合、この操作を行うと、転送先を開催者に通知するメッセージも送信され、受信者は会議イベントの開催者のコピーに追加されます。</span><span class="sxs-lookup"><span data-stu-id="3b056-105">If the meeting event is forwarded from an attendee's Office 365 mailbox to another recipient, this action also sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's copy of the meeting event.</span></span> <span data-ttu-id="3b056-106">この利便性は、Outlook.com アカウントから転送する場合には使用できません。</span><span class="sxs-lookup"><span data-stu-id="3b056-106">This convenience is not available when forwarding from an Outlook.com account.</span></span>
+<span data-ttu-id="f96db-105">会議イベントが出席者の Office 365 メールボックスから別の受信者に転送された場合、この操作を行うと、転送先を開催者に通知するメッセージも送信され、受信者は会議イベントの開催者のコピーに追加されます。</span><span class="sxs-lookup"><span data-stu-id="f96db-105">If the meeting event is forwarded from an attendee's Office 365 mailbox to another recipient, this action also sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's copy of the meeting event.</span></span> <span data-ttu-id="f96db-106">この利便性は、Outlook.com アカウントから転送する場合には使用できません。</span><span class="sxs-lookup"><span data-stu-id="f96db-106">This convenience is not available when forwarding from an Outlook.com account.</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="3b056-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="3b056-107">Permissions</span></span>
-<span data-ttu-id="3b056-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="3b056-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="f96db-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="f96db-107">Permissions</span></span>
+<span data-ttu-id="f96db-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f96db-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="3b056-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="3b056-110">Permission type</span></span>      | <span data-ttu-id="3b056-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="3b056-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f96db-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="f96db-110">Permission type</span></span>      | <span data-ttu-id="f96db-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="f96db-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="3b056-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="3b056-112">Delegated (work or school account)</span></span> | <span data-ttu-id="3b056-113">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="3b056-113">Calendars.Read</span></span>    |
-|<span data-ttu-id="3b056-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="3b056-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3b056-115">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="3b056-115">Calendars.Read</span></span>    |
-|<span data-ttu-id="3b056-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="3b056-116">Application</span></span> | <span data-ttu-id="3b056-117">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="3b056-117">Calendars.Read</span></span> |
+|<span data-ttu-id="f96db-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="f96db-112">Delegated (work or school account)</span></span> | <span data-ttu-id="f96db-113">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="f96db-113">Calendars.Read</span></span>    |
+|<span data-ttu-id="f96db-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="f96db-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f96db-115">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="f96db-115">Calendars.Read</span></span>    |
+|<span data-ttu-id="f96db-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="f96db-116">Application</span></span> | <span data-ttu-id="f96db-117">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="f96db-117">Calendars.Read</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="3b056-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="3b056-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f96db-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="f96db-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/events/{id}/forward
@@ -49,28 +49,30 @@ POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/fo
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/forward
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/forward
 ```
-## <a name="request-headers"></a><span data-ttu-id="3b056-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="3b056-119">Request headers</span></span>
-| <span data-ttu-id="3b056-120">名前</span><span class="sxs-lookup"><span data-stu-id="3b056-120">Name</span></span>       | <span data-ttu-id="3b056-121">型</span><span class="sxs-lookup"><span data-stu-id="3b056-121">Type</span></span> | <span data-ttu-id="3b056-122">説明</span><span class="sxs-lookup"><span data-stu-id="3b056-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f96db-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f96db-119">Request headers</span></span>
+| <span data-ttu-id="f96db-120">名前</span><span class="sxs-lookup"><span data-stu-id="f96db-120">Name</span></span>       | <span data-ttu-id="f96db-121">型</span><span class="sxs-lookup"><span data-stu-id="f96db-121">Type</span></span> | <span data-ttu-id="f96db-122">説明</span><span class="sxs-lookup"><span data-stu-id="f96db-122">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="3b056-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="3b056-123">Authorization</span></span>  | <span data-ttu-id="3b056-124">string</span><span class="sxs-lookup"><span data-stu-id="3b056-124">string</span></span>  | <span data-ttu-id="3b056-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="3b056-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="3b056-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="3b056-127">Content-Type</span></span> | <span data-ttu-id="3b056-128">string</span><span class="sxs-lookup"><span data-stu-id="3b056-128">string</span></span>  | <span data-ttu-id="3b056-p104">エンティティ本文内のデータの性質です。必須。</span><span class="sxs-lookup"><span data-stu-id="3b056-p104">Nature of the data in the body of an entity. Required.</span></span> |
+| <span data-ttu-id="f96db-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="f96db-123">Authorization</span></span>  | <span data-ttu-id="f96db-124">string</span><span class="sxs-lookup"><span data-stu-id="f96db-124">string</span></span>  | <span data-ttu-id="f96db-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="f96db-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="f96db-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="f96db-127">Content-Type</span></span> | <span data-ttu-id="f96db-128">string</span><span class="sxs-lookup"><span data-stu-id="f96db-128">string</span></span>  | <span data-ttu-id="f96db-p104">エンティティ本文内のデータの性質です。必須。</span><span class="sxs-lookup"><span data-stu-id="f96db-p104">Nature of the data in the body of an entity. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="3b056-131">要求本文</span><span class="sxs-lookup"><span data-stu-id="3b056-131">Request body</span></span>
-<span data-ttu-id="3b056-132">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="3b056-132">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f96db-131">要求本文</span><span class="sxs-lookup"><span data-stu-id="f96db-131">Request body</span></span>
+<span data-ttu-id="f96db-132">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="f96db-132">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="3b056-133">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3b056-133">Parameter</span></span>    | <span data-ttu-id="3b056-134">型</span><span class="sxs-lookup"><span data-stu-id="3b056-134">Type</span></span>   |<span data-ttu-id="3b056-135">説明</span><span class="sxs-lookup"><span data-stu-id="3b056-135">Description</span></span>|
+| <span data-ttu-id="f96db-133">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f96db-133">Parameter</span></span>    | <span data-ttu-id="f96db-134">型</span><span class="sxs-lookup"><span data-stu-id="f96db-134">Type</span></span>   |<span data-ttu-id="f96db-135">説明</span><span class="sxs-lookup"><span data-stu-id="f96db-135">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="3b056-136">Comment</span><span class="sxs-lookup"><span data-stu-id="3b056-136">Comment</span></span>|<span data-ttu-id="3b056-137">String</span><span class="sxs-lookup"><span data-stu-id="3b056-137">String</span></span>|<span data-ttu-id="3b056-p105">含めるコメントです。空の文字列にすることができます。</span><span class="sxs-lookup"><span data-stu-id="3b056-p105">A comment to include. Can be an empty string.</span></span>|
-|<span data-ttu-id="3b056-140">ToRecipients</span><span class="sxs-lookup"><span data-stu-id="3b056-140">ToRecipients</span></span>|<span data-ttu-id="3b056-141">[recipient](../resources/recipient.md) collection</span><span class="sxs-lookup"><span data-stu-id="3b056-141">[recipient](../resources/recipient.md) collection</span></span>|<span data-ttu-id="3b056-142">イベントを転送する受信者の一覧。</span><span class="sxs-lookup"><span data-stu-id="3b056-142">The list of recipients to forward the event to.</span></span>|
+|<span data-ttu-id="f96db-136">Comment</span><span class="sxs-lookup"><span data-stu-id="f96db-136">Comment</span></span>|<span data-ttu-id="f96db-137">String</span><span class="sxs-lookup"><span data-stu-id="f96db-137">String</span></span>|<span data-ttu-id="f96db-p105">含めるコメントです。空の文字列にすることができます。</span><span class="sxs-lookup"><span data-stu-id="f96db-p105">A comment to include. Can be an empty string.</span></span>|
+|<span data-ttu-id="f96db-140">ToRecipients</span><span class="sxs-lookup"><span data-stu-id="f96db-140">ToRecipients</span></span>|<span data-ttu-id="f96db-141">[recipient](../resources/recipient.md) collection</span><span class="sxs-lookup"><span data-stu-id="f96db-141">[recipient](../resources/recipient.md) collection</span></span>|<span data-ttu-id="f96db-142">イベントを転送する受信者の一覧。</span><span class="sxs-lookup"><span data-stu-id="f96db-142">The list of recipients to forward the event to.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="3b056-143">応答</span><span class="sxs-lookup"><span data-stu-id="3b056-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f96db-143">応答</span><span class="sxs-lookup"><span data-stu-id="f96db-143">Response</span></span>
 
-<span data-ttu-id="3b056-p106">成功した場合、このメソッドは `202 Accepted` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="3b056-p106">If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="f96db-p106">成功した場合、このメソッドは `202 Accepted` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="f96db-p106">If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="3b056-146">例</span><span class="sxs-lookup"><span data-stu-id="3b056-146">Example</span></span>
-<span data-ttu-id="3b056-147">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="3b056-147">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="3b056-148">要求</span><span class="sxs-lookup"><span data-stu-id="3b056-148">Request</span></span>
-<span data-ttu-id="3b056-149">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="3b056-149">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="f96db-146">例</span><span class="sxs-lookup"><span data-stu-id="f96db-146">Example</span></span>
+<span data-ttu-id="f96db-147">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="f96db-147">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="f96db-148">要求</span><span class="sxs-lookup"><span data-stu-id="f96db-148">Request</span></span>
+<span data-ttu-id="f96db-149">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="f96db-149">Here is an example of the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="f96db-150">プロトコル</span><span class="sxs-lookup"><span data-stu-id="f96db-150">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "event_forward"
@@ -93,9 +95,23 @@ Content-length: 56
 }
 
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="f96db-151">C#</span><span class="sxs-lookup"><span data-stu-id="f96db-151">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/event-forward-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-##### <a name="response"></a><span data-ttu-id="3b056-150">応答</span><span class="sxs-lookup"><span data-stu-id="3b056-150">Response</span></span>
-<span data-ttu-id="3b056-151">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="3b056-151">Here is an example of the response.</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f96db-152">Javascript</span><span class="sxs-lookup"><span data-stu-id="f96db-152">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/event-forward-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="f96db-153">目的-C</span><span class="sxs-lookup"><span data-stu-id="f96db-153">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/event-forward-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+##### <a name="response"></a><span data-ttu-id="f96db-154">応答</span><span class="sxs-lookup"><span data-stu-id="f96db-154">Response</span></span>
+<span data-ttu-id="f96db-155">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="f96db-155">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -103,18 +119,6 @@ Content-length: 56
 ```http
 HTTP/1.1 202 Accepted
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="3b056-152">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="3b056-152">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="3b056-153">C#</span><span class="sxs-lookup"><span data-stu-id="3b056-153">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/event_forward-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="3b056-154">Javascript</span><span class="sxs-lookup"><span data-stu-id="3b056-154">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/event_forward-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="3b056-155">目的-C</span><span class="sxs-lookup"><span data-stu-id="3b056-155">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/event_forward-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -126,9 +130,6 @@ HTTP/1.1 202 Accepted
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/event-forward.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/event-forward.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/event-forward.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

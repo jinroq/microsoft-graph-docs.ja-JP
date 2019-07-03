@@ -4,46 +4,48 @@ description: "  グループ管理者は、クラス内の教師を表します�
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 9b2db664927c4059d0d95f6190d97a3a5121d956
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: b2f1bbb2e756a32d636154bb3d71e95cf0ae7e11
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35271730"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35449975"
 ---
-# <a name="get-educationclass"></a><span data-ttu-id="88363-104">Get educationClass</span><span class="sxs-lookup"><span data-stu-id="88363-104">Get educationClass</span></span>
+# <a name="get-educationclass"></a><span data-ttu-id="31720-104">Get educationClass</span><span class="sxs-lookup"><span data-stu-id="31720-104">Get educationClass</span></span>
 
-<span data-ttu-id="88363-105">システムからクラスを取得します。</span><span class="sxs-lookup"><span data-stu-id="88363-105">Retrieve a class from the system.</span></span> <span data-ttu-id="88363-106">クラスは、グループがクラスであることをシステムに示す特別なプロパティを持つユニバーサル グループです。</span><span class="sxs-lookup"><span data-stu-id="88363-106">A class is a universal group with a special property that indicates to the system that the group is a class.</span></span> <span data-ttu-id="88363-107">グループのメンバーは学生を表します。グループ管理者はクラスの教師を表します。</span><span class="sxs-lookup"><span data-stu-id="88363-107">Group members represent the students;  group admins represent the teachers in the class.</span></span> <span data-ttu-id="88363-108">委任されたトークンを使用している場合、ユーザーはユーザーがメンバーになっているクラスのみを参照できます。</span><span class="sxs-lookup"><span data-stu-id="88363-108">If you're using the delegated token, the user will only see classes in which they are members.</span></span>
+<span data-ttu-id="31720-105">システムからクラスを取得します。</span><span class="sxs-lookup"><span data-stu-id="31720-105">Retrieve a class from the system.</span></span> <span data-ttu-id="31720-106">クラスは、グループがクラスであることをシステムに示す特別なプロパティを持つユニバーサル グループです。</span><span class="sxs-lookup"><span data-stu-id="31720-106">A class is a universal group with a special property that indicates to the system that the group is a class.</span></span> <span data-ttu-id="31720-107">グループのメンバーは学生を表します。グループ管理者はクラスの教師を表します。</span><span class="sxs-lookup"><span data-stu-id="31720-107">Group members represent the students;  group admins represent the teachers in the class.</span></span> <span data-ttu-id="31720-108">委任されたトークンを使用している場合、ユーザーはユーザーがメンバーになっているクラスのみを参照できます。</span><span class="sxs-lookup"><span data-stu-id="31720-108">If you're using the delegated token, the user will only see classes in which they are members.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="88363-109">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="88363-109">Permissions</span></span>
-<span data-ttu-id="88363-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="88363-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="31720-109">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="31720-109">Permissions</span></span>
+<span data-ttu-id="31720-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="31720-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="88363-112">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="88363-112">Permission type</span></span>      | <span data-ttu-id="88363-113">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="88363-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="31720-112">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="31720-112">Permission type</span></span>      | <span data-ttu-id="31720-113">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="31720-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="88363-114">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="88363-114">Delegated (work or school account)</span></span> |  <span data-ttu-id="88363-115">EduRoster.ReadBasic</span><span class="sxs-lookup"><span data-stu-id="88363-115">EduRoster.ReadBasic</span></span>  |
-|<span data-ttu-id="88363-116">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="88363-116">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="88363-117">サポートされていません</span><span class="sxs-lookup"><span data-stu-id="88363-117">Not supported</span></span>  |
-|<span data-ttu-id="88363-118">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="88363-118">Application</span></span> | <span data-ttu-id="88363-119">EduRoster.Read.All、EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="88363-119">EduRoster.Read.All, EduRoster.ReadWrite.All</span></span> | 
+|<span data-ttu-id="31720-114">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="31720-114">Delegated (work or school account)</span></span> |  <span data-ttu-id="31720-115">EduRoster.ReadBasic</span><span class="sxs-lookup"><span data-stu-id="31720-115">EduRoster.ReadBasic</span></span>  |
+|<span data-ttu-id="31720-116">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="31720-116">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="31720-117">サポートされていません</span><span class="sxs-lookup"><span data-stu-id="31720-117">Not supported</span></span>  |
+|<span data-ttu-id="31720-118">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="31720-118">Application</span></span> | <span data-ttu-id="31720-119">EduRoster.Read.All、EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="31720-119">EduRoster.Read.All, EduRoster.ReadWrite.All</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="88363-120">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="88363-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="31720-120">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="31720-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /education/classes/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="88363-121">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="88363-121">Optional query parameters</span></span>
-<span data-ttu-id="88363-122">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="88363-122">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="31720-121">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="31720-121">Optional query parameters</span></span>
+<span data-ttu-id="31720-122">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="31720-122">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="88363-123">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="88363-123">Request headers</span></span>
-| <span data-ttu-id="88363-124">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="88363-124">Header</span></span>       | <span data-ttu-id="88363-125">値</span><span class="sxs-lookup"><span data-stu-id="88363-125">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="31720-123">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="31720-123">Request headers</span></span>
+| <span data-ttu-id="31720-124">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="31720-124">Header</span></span>       | <span data-ttu-id="31720-125">値</span><span class="sxs-lookup"><span data-stu-id="31720-125">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="88363-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="88363-126">Authorization</span></span>  | <span data-ttu-id="88363-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="88363-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="31720-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="31720-126">Authorization</span></span>  | <span data-ttu-id="31720-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="31720-p104">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="88363-129">要求本文</span><span class="sxs-lookup"><span data-stu-id="88363-129">Request body</span></span>
-<span data-ttu-id="88363-130">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="88363-130">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="88363-131">応答</span><span class="sxs-lookup"><span data-stu-id="88363-131">Response</span></span>
-<span data-ttu-id="88363-132">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [educationClass](../resources/educationclass.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="88363-132">If successful, this method returns a `200 OK` response code and an [educationClass](../resources/educationclass.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="88363-133">例</span><span class="sxs-lookup"><span data-stu-id="88363-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="88363-134">要求</span><span class="sxs-lookup"><span data-stu-id="88363-134">Request</span></span>
-<span data-ttu-id="88363-135">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="88363-135">Here is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="31720-129">要求本文</span><span class="sxs-lookup"><span data-stu-id="31720-129">Request body</span></span>
+<span data-ttu-id="31720-130">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="31720-130">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="31720-131">応答</span><span class="sxs-lookup"><span data-stu-id="31720-131">Response</span></span>
+<span data-ttu-id="31720-132">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [educationClass](../resources/educationclass.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="31720-132">If successful, this method returns a `200 OK` response code and an [educationClass](../resources/educationclass.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="31720-133">例</span><span class="sxs-lookup"><span data-stu-id="31720-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="31720-134">要求</span><span class="sxs-lookup"><span data-stu-id="31720-134">Request</span></span>
+<span data-ttu-id="31720-135">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="31720-135">Here is an example of the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="31720-136">プロトコル</span><span class="sxs-lookup"><span data-stu-id="31720-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_educationclass"
@@ -51,10 +53,24 @@ GET /education/classes/{id}
 ```http
 GET https://graph.microsoft.com/v1.0/education/classes/{class-id}
 ```
-##### <a name="response"></a><span data-ttu-id="88363-136">応答</span><span class="sxs-lookup"><span data-stu-id="88363-136">Response</span></span>
-<span data-ttu-id="88363-137">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="88363-137">The following is an example of the response.</span></span> 
+# <a name="ctabcsharp"></a>[<span data-ttu-id="31720-137">C#</span><span class="sxs-lookup"><span data-stu-id="31720-137">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-educationclass-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-><span data-ttu-id="88363-p105">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="88363-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="31720-138">Javascript</span><span class="sxs-lookup"><span data-stu-id="31720-138">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-educationclass-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="31720-139">目的-C</span><span class="sxs-lookup"><span data-stu-id="31720-139">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-educationclass-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+##### <a name="response"></a><span data-ttu-id="31720-140">応答</span><span class="sxs-lookup"><span data-stu-id="31720-140">Response</span></span>
+<span data-ttu-id="31720-141">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="31720-141">The following is an example of the response.</span></span> 
+
+><span data-ttu-id="31720-p105">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="31720-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -83,18 +99,6 @@ Content-length: 224
   "mailNickname": "fineartschool.net "
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="88363-140">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="88363-140">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="88363-141">C#</span><span class="sxs-lookup"><span data-stu-id="88363-141">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_educationclass-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="88363-142">Javascript</span><span class="sxs-lookup"><span data-stu-id="88363-142">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_educationclass-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="88363-143">目的-C</span><span class="sxs-lookup"><span data-stu-id="88363-143">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/get_educationclass-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -105,8 +109,5 @@ Content-length: 224
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/educationclass-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/v1.0/api/educationclass-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/educationclass-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->
