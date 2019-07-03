@@ -4,66 +4,68 @@ description: ユーザー オブジェクトの一覧を取得します。
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d227f46a8a1974ea76087f5f607cce2c56a608fd
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: b83071ec8ff36fd197d9d27f9326e0019a5f131e
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35272983"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35460176"
 ---
-# <a name="list-users"></a><span data-ttu-id="be2c9-103">ユーザーを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="be2c9-103">List users</span></span>
+# <a name="list-users"></a><span data-ttu-id="a4bfd-103">ユーザーを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="a4bfd-103">List users</span></span>
 
-<span data-ttu-id="be2c9-104">ユーザー オブジェクトの一覧を取得します。</span><span class="sxs-lookup"><span data-stu-id="be2c9-104">Retrieve a list of user objects.</span></span>
+<span data-ttu-id="a4bfd-104">ユーザー オブジェクトの一覧を取得します。</span><span class="sxs-lookup"><span data-stu-id="a4bfd-104">Retrieve a list of user objects.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="be2c9-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="be2c9-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="a4bfd-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="a4bfd-105">Permissions</span></span>
 
-<span data-ttu-id="be2c9-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="be2c9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a4bfd-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a4bfd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="be2c9-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="be2c9-108">Permission type</span></span>      | <span data-ttu-id="be2c9-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="be2c9-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a4bfd-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="a4bfd-108">Permission type</span></span>      | <span data-ttu-id="a4bfd-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="a4bfd-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="be2c9-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="be2c9-110">Delegated (work or school account)</span></span> | <span data-ttu-id="be2c9-111">User.ReadBasic.All、User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="be2c9-111">User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="be2c9-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="be2c9-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="be2c9-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="be2c9-113">Not supported.</span></span>    |
-|<span data-ttu-id="be2c9-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="be2c9-114">Application</span></span> | <span data-ttu-id="be2c9-115">User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="be2c9-115">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="a4bfd-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="a4bfd-110">Delegated (work or school account)</span></span> | <span data-ttu-id="a4bfd-111">User.ReadBasic.All、User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="a4bfd-111">User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="a4bfd-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="a4bfd-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a4bfd-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a4bfd-113">Not supported.</span></span>    |
+|<span data-ttu-id="a4bfd-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="a4bfd-114">Application</span></span> | <span data-ttu-id="a4bfd-115">User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a4bfd-115">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="be2c9-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="be2c9-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a4bfd-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="a4bfd-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="be2c9-117">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="be2c9-117">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="a4bfd-117">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="a4bfd-117">Optional query parameters</span></span>
 
-<span data-ttu-id="be2c9-118">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="be2c9-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+<span data-ttu-id="a4bfd-118">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="a4bfd-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-<span data-ttu-id="be2c9-119">既定では、限定的なプロパティのセットのみが返されます (**businessPhones**、**displayName**、**givenName**、**id**、**jobTitle**、**mail**、**mobilePhone**、**officeLocation**、**preferredLanguage**、**surname**、および **userPrincipalName**)。</span><span class="sxs-lookup"><span data-stu-id="be2c9-119">By default, only a limited set of properties are returned (**businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName**).</span></span> 
+<span data-ttu-id="a4bfd-119">既定では、限定的なプロパティのセットのみが返されます (**businessPhones**、**displayName**、**givenName**、**id**、**jobTitle**、**mail**、**mobilePhone**、**officeLocation**、**preferredLanguage**、**surname**、および **userPrincipalName**)。</span><span class="sxs-lookup"><span data-stu-id="a4bfd-119">By default, only a limited set of properties are returned (**businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName**).</span></span> 
 
-<span data-ttu-id="be2c9-120">別のプロパティ セットを返すには、OData `$select` クエリ パラメーターを使用して、目的の [user](../resources/user.md) プロパティのセットを指定します。</span><span class="sxs-lookup"><span data-stu-id="be2c9-120">To return an alternative property set, you must specify the desired set of [user](../resources/user.md) properties using the OData `$select` query parameter.</span></span> <span data-ttu-id="be2c9-121">たとえば、**displayName**、**givenName**、**postalCode** を返すには、クエリ `$select=displayName,givenName,postalCode` に次を追加します。</span><span class="sxs-lookup"><span data-stu-id="be2c9-121">For example, to return **displayName**, **givenName**, and **postalCode**, you would use the add the following to your query `$select=displayName,givenName,postalCode`</span></span>
+<span data-ttu-id="a4bfd-120">別のプロパティ セットを返すには、OData `$select` クエリ パラメーターを使用して、目的の [user](../resources/user.md) プロパティのセットを指定します。</span><span class="sxs-lookup"><span data-stu-id="a4bfd-120">To return an alternative property set, you must specify the desired set of [user](../resources/user.md) properties using the OData `$select` query parameter.</span></span> <span data-ttu-id="a4bfd-121">たとえば、**displayName**、**givenName**、**postalCode** を返すには、クエリ `$select=displayName,givenName,postalCode` に次を追加します。</span><span class="sxs-lookup"><span data-stu-id="a4bfd-121">For example, to return **displayName**, **givenName**, and **postalCode**, you would use the add the following to your query `$select=displayName,givenName,postalCode`</span></span>
 
-<span data-ttu-id="be2c9-p103">特定のプロパティは、ユーザー コレクションでは返すことができません。[単一のユーザーを取得する](./user-get.md)場合にのみ、**aboutMe**、**birthday**、**hireDate**、**interests**、**mySite**、**pastProjects**、**preferredName**、**responsibilities**、**schools**、**skills**、**mailboxSettings** の各プロパティがサポートされます。</span><span class="sxs-lookup"><span data-stu-id="be2c9-p103">Note: Certain properties cannot be returned within a user collection. The following properties are only supported when [retrieving an single user](./user-get.md): **aboutMe, birthday, hireDate, interests, mySite, pastProjects, preferredName, responsibilities, schools, skills, mailboxSettings**</span></span>
+<span data-ttu-id="a4bfd-p103">特定のプロパティは、ユーザー コレクションでは返すことができません。[単一のユーザーを取得する](./user-get.md)場合にのみ、**aboutMe**、**birthday**、**hireDate**、**interests**、**mySite**、**pastProjects**、**preferredName**、**responsibilities**、**schools**、**skills**、**mailboxSettings** の各プロパティがサポートされます。</span><span class="sxs-lookup"><span data-stu-id="a4bfd-p103">Note: Certain properties cannot be returned within a user collection. The following properties are only supported when [retrieving an single user](./user-get.md): **aboutMe, birthday, hireDate, interests, mySite, pastProjects, preferredName, responsibilities, schools, skills, mailboxSettings**</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="be2c9-124">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="be2c9-124">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="a4bfd-124">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="a4bfd-124">Request headers</span></span>
 
-| <span data-ttu-id="be2c9-125">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="be2c9-125">Header</span></span>        | <span data-ttu-id="be2c9-126">値</span><span class="sxs-lookup"><span data-stu-id="be2c9-126">Value</span></span>                      |
+| <span data-ttu-id="a4bfd-125">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="a4bfd-125">Header</span></span>        | <span data-ttu-id="a4bfd-126">値</span><span class="sxs-lookup"><span data-stu-id="a4bfd-126">Value</span></span>                      |
 |:--------------|:---------------------------|
-| <span data-ttu-id="be2c9-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="be2c9-127">Authorization</span></span> | <span data-ttu-id="be2c9-128">Bearer {トークン} (必須)</span><span class="sxs-lookup"><span data-stu-id="be2c9-128">Bearer {token} (required)</span></span>  |
-| <span data-ttu-id="be2c9-129">Content-Type</span><span class="sxs-lookup"><span data-stu-id="be2c9-129">Content-Type</span></span>  | <span data-ttu-id="be2c9-130">application/json</span><span class="sxs-lookup"><span data-stu-id="be2c9-130">application/json</span></span>           |
+| <span data-ttu-id="a4bfd-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="a4bfd-127">Authorization</span></span> | <span data-ttu-id="a4bfd-128">Bearer {トークン} (必須)</span><span class="sxs-lookup"><span data-stu-id="a4bfd-128">Bearer {token} (required)</span></span>  |
+| <span data-ttu-id="a4bfd-129">Content-Type</span><span class="sxs-lookup"><span data-stu-id="a4bfd-129">Content-Type</span></span>  | <span data-ttu-id="a4bfd-130">application/json</span><span class="sxs-lookup"><span data-stu-id="a4bfd-130">application/json</span></span>           |
 
-## <a name="request-body"></a><span data-ttu-id="be2c9-131">要求本文</span><span class="sxs-lookup"><span data-stu-id="be2c9-131">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="a4bfd-131">要求本文</span><span class="sxs-lookup"><span data-stu-id="a4bfd-131">Request body</span></span>
 
-<span data-ttu-id="be2c9-132">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="be2c9-132">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="a4bfd-132">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="a4bfd-132">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="be2c9-133">応答</span><span class="sxs-lookup"><span data-stu-id="be2c9-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a4bfd-133">応答</span><span class="sxs-lookup"><span data-stu-id="a4bfd-133">Response</span></span>
 
-<span data-ttu-id="be2c9-134">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [user](../resources/user.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="be2c9-134">If successful, this method returns a `200 OK` response code and collection of [user](../resources/user.md) objects in the response body.</span></span> <span data-ttu-id="be2c9-135">大きいユーザー コレクションが返された場合は、[アプリでページング](/graph/paging)を使用することができます。</span><span class="sxs-lookup"><span data-stu-id="be2c9-135">If a large user collection is returned, you can use [paging in your app](/graph/paging).</span></span>
+<span data-ttu-id="a4bfd-134">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [user](../resources/user.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="a4bfd-134">If successful, this method returns a `200 OK` response code and collection of [user](../resources/user.md) objects in the response body.</span></span> <span data-ttu-id="a4bfd-135">大きいユーザー コレクションが返された場合は、[アプリでページング](/graph/paging)を使用することができます。</span><span class="sxs-lookup"><span data-stu-id="a4bfd-135">If a large user collection is returned, you can use [paging in your app](/graph/paging).</span></span>
 
-## <a name="examples"></a><span data-ttu-id="be2c9-136">例</span><span class="sxs-lookup"><span data-stu-id="be2c9-136">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="a4bfd-136">例</span><span class="sxs-lookup"><span data-stu-id="a4bfd-136">Examples</span></span>
 
-### <a name="example-1-standard-users-request"></a><span data-ttu-id="be2c9-137">例 1:標準的なユーザーの要求</span><span class="sxs-lookup"><span data-stu-id="be2c9-137">Example 1: Standard users request</span></span>
+### <a name="example-1-standard-users-request"></a><span data-ttu-id="a4bfd-137">例 1:標準的なユーザーの要求</span><span class="sxs-lookup"><span data-stu-id="a4bfd-137">Example 1: Standard users request</span></span>
 
-<span data-ttu-id="be2c9-138">既定では、限定的なプロパティのセットのみが返されます (**businessPhones**、**displayName**、**givenName**、**id**、**jobTitle**、**mail**、**mobilePhone**、**officeLocation**、**preferredLanguage**、**surname**、**userPrincipalName**)。</span><span class="sxs-lookup"><span data-stu-id="be2c9-138">By default, only a limited set of properties are returned (**businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName**).</span></span> <span data-ttu-id="be2c9-139">この例では、既定の要求と応答を示します。</span><span class="sxs-lookup"><span data-stu-id="be2c9-139">This example illustrates the default request and response.</span></span> 
+<span data-ttu-id="a4bfd-138">既定では、限定的なプロパティのセットのみが返されます (**businessPhones**、**displayName**、**givenName**、**id**、**jobTitle**、**mail**、**mobilePhone**、**officeLocation**、**preferredLanguage**、**surname**、**userPrincipalName**)。</span><span class="sxs-lookup"><span data-stu-id="a4bfd-138">By default, only a limited set of properties are returned (**businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName**).</span></span> <span data-ttu-id="a4bfd-139">この例では、既定の要求と応答を示します。</span><span class="sxs-lookup"><span data-stu-id="a4bfd-139">This example illustrates the default request and response.</span></span> 
 
-##### <a name="request"></a><span data-ttu-id="be2c9-140">要求</span><span class="sxs-lookup"><span data-stu-id="be2c9-140">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="a4bfd-140">要求</span><span class="sxs-lookup"><span data-stu-id="a4bfd-140">Request</span></span>
 
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="a4bfd-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="a4bfd-141">--Http</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_users"
@@ -71,8 +73,22 @@ GET /users
 ```http
 GET https://graph.microsoft.com/v1.0/users
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="a4bfd-142">C#</span><span class="sxs-lookup"><span data-stu-id="a4bfd-142">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-users-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-##### <a name="response"></a><span data-ttu-id="be2c9-141">応答</span><span class="sxs-lookup"><span data-stu-id="be2c9-141">Response</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a4bfd-143">Javascript</span><span class="sxs-lookup"><span data-stu-id="a4bfd-143">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-users-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="a4bfd-144">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a4bfd-144">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-users-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+##### <a name="response"></a><span data-ttu-id="a4bfd-145">応答</span><span class="sxs-lookup"><span data-stu-id="a4bfd-145">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -105,25 +121,15 @@ Content-length: 608
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="be2c9-142">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="be2c9-142">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="be2c9-143">C#</span><span class="sxs-lookup"><span data-stu-id="be2c9-143">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_users-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="be2c9-144">Javascript</span><span class="sxs-lookup"><span data-stu-id="be2c9-144">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_users-Javascript-snippets.md)]
+### <a name="example-2-users-request-using-select"></a><span data-ttu-id="a4bfd-146">例 2:$select を使用したユーザーの要求</span><span class="sxs-lookup"><span data-stu-id="a4bfd-146">Example 2: Users request using $select</span></span>
 
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="be2c9-145">Objective-C</span><span class="sxs-lookup"><span data-stu-id="be2c9-145">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/get_users-Objective-C-snippets.md)]
----
+<span data-ttu-id="a4bfd-147">別のプロパティ セットを必要とする場合、OData `$select` クエリ パラメーターを使用することができます。</span><span class="sxs-lookup"><span data-stu-id="a4bfd-147">If you need a different property set, you can use the OData `$select` query parameter.</span></span> <span data-ttu-id="a4bfd-148">たとえば、**displayName**、**givenName**、**postalCode** を返すには、クエリに `$select=displayName,givenName,postalCode` を追加します。</span><span class="sxs-lookup"><span data-stu-id="a4bfd-148">For example, to return **displayName**, **givenName**, and **postalCode**, you would use the add the following to your query `$select=displayName,givenName,postalCode`</span></span>
 
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+##### <a name="request"></a><span data-ttu-id="a4bfd-149">要求</span><span class="sxs-lookup"><span data-stu-id="a4bfd-149">Request</span></span>
 
-### <a name="example-2-users-request-using-select"></a><span data-ttu-id="be2c9-146">例 2:$select を使用したユーザーの要求</span><span class="sxs-lookup"><span data-stu-id="be2c9-146">Example 2: Users request using $select</span></span>
 
-<span data-ttu-id="be2c9-147">別のプロパティ セットを必要とする場合、OData `$select` クエリ パラメーターを使用することができます。</span><span class="sxs-lookup"><span data-stu-id="be2c9-147">If you need a different property set, you can use the OData `$select` query parameter.</span></span> <span data-ttu-id="be2c9-148">たとえば、**displayName**、**givenName**、**postalCode** を返すには、クエリに `$select=displayName,givenName,postalCode` を追加します。</span><span class="sxs-lookup"><span data-stu-id="be2c9-148">For example, to return **displayName**, **givenName**, and **postalCode**, you would use the add the following to your query `$select=displayName,givenName,postalCode`</span></span>
-
-##### <a name="request"></a><span data-ttu-id="be2c9-149">要求</span><span class="sxs-lookup"><span data-stu-id="be2c9-149">Request</span></span>
-
+# <a name="httptabhttp"></a>[<span data-ttu-id="a4bfd-150">HTTP</span><span class="sxs-lookup"><span data-stu-id="a4bfd-150">--Http</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_users_properties"
@@ -131,10 +137,24 @@ Content-length: 608
 ```http
 GET https://graph.microsoft.com/v1.0/users?$select=displayName,givenName,postalCode
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="a4bfd-151">C#</span><span class="sxs-lookup"><span data-stu-id="a4bfd-151">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-users-properties-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-##### <a name="response"></a><span data-ttu-id="be2c9-150">応答</span><span class="sxs-lookup"><span data-stu-id="be2c9-150">Response</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a4bfd-152">Javascript</span><span class="sxs-lookup"><span data-stu-id="a4bfd-152">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-users-properties-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="be2c9-151">注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。</span><span class="sxs-lookup"><span data-stu-id="be2c9-151">Note: The response object shown here may be truncated for brevity.</span></span>
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="a4bfd-153">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a4bfd-153">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-users-properties-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+##### <a name="response"></a><span data-ttu-id="a4bfd-154">応答</span><span class="sxs-lookup"><span data-stu-id="a4bfd-154">Response</span></span>
+
+<span data-ttu-id="a4bfd-155">注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。</span><span class="sxs-lookup"><span data-stu-id="a4bfd-155">Note: The response object shown here may be truncated for brevity.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -156,18 +176,6 @@ Content-length: 159
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="be2c9-152">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="be2c9-152">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="be2c9-153">C#</span><span class="sxs-lookup"><span data-stu-id="be2c9-153">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_users_properties-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="be2c9-154">Javascript</span><span class="sxs-lookup"><span data-stu-id="be2c9-154">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_users_properties-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="be2c9-155">Objective-C</span><span class="sxs-lookup"><span data-stu-id="be2c9-155">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/get_users_properties-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -178,10 +186,5 @@ Content-length: 159
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/user-list.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/v1.0/api/user-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/user-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
-    "Error: /api-reference/v1.0/api/user-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/user-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

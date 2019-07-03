@@ -5,41 +5,57 @@ ms.date: 09/10/2017
 title: 共有アイテムのファイルの表示
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: f91de5719d95f1e508cfcaf0f9680dc0a6d139d4
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: a12178ceacd1730d8fe8df59508f400c6e460440
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35279346"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35445780"
 ---
-# <a name="list-items-shared-with-the-signed-in-user"></a><span data-ttu-id="8b777-102">サインイン ユーザーと共有しているアイテムを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="8b777-102">List items shared with the signed-in user</span></span>
+# <a name="list-items-shared-with-the-signed-in-user"></a><span data-ttu-id="8436b-102">サインイン ユーザーと共有しているアイテムを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="8436b-102">List items shared with the signed-in user</span></span>
 
-<span data-ttu-id="8b777-103">[ドライブ](../resources/drive.md) の所有者と共有されている、[DriveItem](../resources/driveitem.md) リソースのコレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="8b777-103">Retrieve a collection of [DriveItem](../resources/driveitem.md) resources that have been shared with the owner of the [Drive](../resources/drive.md).</span></span>
+<span data-ttu-id="8436b-103">[ドライブ](../resources/drive.md) の所有者と共有されている、[DriveItem](../resources/driveitem.md) リソースのコレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="8436b-103">Retrieve a collection of [DriveItem](../resources/driveitem.md) resources that have been shared with the owner of the [Drive](../resources/drive.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="8b777-104">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="8b777-104">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="8436b-104">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="8436b-104">Permissions</span></span>
 
-<span data-ttu-id="8b777-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8b777-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="8436b-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8436b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="8b777-107">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="8b777-107">Permission type</span></span>      | <span data-ttu-id="8b777-108">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="8b777-108">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="8436b-107">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="8436b-107">Permission type</span></span>      | <span data-ttu-id="8436b-108">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="8436b-108">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="8b777-109">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="8b777-109">Delegated (work or school account)</span></span> | <span data-ttu-id="8b777-110">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8b777-110">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="8b777-111">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="8b777-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8b777-112">Files.Read.All、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8b777-112">Files.Read.All, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="8b777-113">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="8b777-113">Application</span></span> | <span data-ttu-id="8b777-114">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8b777-114">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="8436b-109">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="8436b-109">Delegated (work or school account)</span></span> | <span data-ttu-id="8436b-110">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8436b-110">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="8436b-111">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="8436b-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8436b-112">Files.Read.All、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8436b-112">Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="8436b-113">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="8436b-113">Application</span></span> | <span data-ttu-id="8436b-114">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8436b-114">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-<span data-ttu-id="8b777-115">**注:** Files.Read または Files.ReadWrite のアクセス許可による /sharedWithMe 要求は成功しますが、いくつかのプロパティが失われている可能性があります。</span><span class="sxs-lookup"><span data-stu-id="8b777-115">**Note:** while the /sharedWithMe request will succeed with Files.Read or Files.ReadWrite permissions, some properties may be missing.</span></span>
-<span data-ttu-id="8b777-116">さらに、**すべて**のアクセス許可のうちの一つがなければ、この API から返された共有項目はアクセスできません。</span><span class="sxs-lookup"><span data-stu-id="8b777-116">Additionally, without one of the  **All** permissions, shared items returned from this API will not be accessible.</span></span>
+<span data-ttu-id="8436b-115">**注:** Files.Read または Files.ReadWrite のアクセス許可による /sharedWithMe 要求は成功しますが、いくつかのプロパティが失われている可能性があります。</span><span class="sxs-lookup"><span data-stu-id="8436b-115">**Note:** while the /sharedWithMe request will succeed with Files.Read or Files.ReadWrite permissions, some properties may be missing.</span></span>
+<span data-ttu-id="8436b-116">さらに、**すべて**のアクセス許可のうちの一つがなければ、この API から返された共有項目はアクセスできません。</span><span class="sxs-lookup"><span data-stu-id="8436b-116">Additionally, without one of the  **All** permissions, shared items returned from this API will not be accessible.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="8b777-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="8b777-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8436b-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="8436b-117">HTTP request</span></span>
 
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="8436b-118">HTTP</span><span class="sxs-lookup"><span data-stu-id="8436b-118">--Http</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "shared-with-me", "scopes": "files.read", "tags": "service.graph", "target": "action" } -->
 
 ```http
 GET /me/drive/sharedWithMe
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="8436b-119">C#</span><span class="sxs-lookup"><span data-stu-id="8436b-119">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/shared-with-me-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-## <a name="response"></a><span data-ttu-id="8b777-118">応答</span><span class="sxs-lookup"><span data-stu-id="8b777-118">Response</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="8436b-120">Javascript</span><span class="sxs-lookup"><span data-stu-id="8436b-120">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/shared-with-me-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="8b777-p103">これは、ドライブの所有者を共有している DriveItem リソースを含む、[DriveItem](../resources/driveitem.md) リソースのコレクションを返します。この例では、ドライブはユーザーの既定のドライブです。そのため、これはサインインしているユーザーと共有しているアイテムを返します。</span><span class="sxs-lookup"><span data-stu-id="8b777-p103">This returns a collection of [DriveItem](../resources/driveitem.md) resources which contain the DriveItem resources shared with the owner of the drive. In this example, since the drive is the user's default drive, this returns items shared with the signed in user.</span></span>
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="8436b-121">Objective-C</span><span class="sxs-lookup"><span data-stu-id="8436b-121">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/shared-with-me-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+## <a name="response"></a><span data-ttu-id="8436b-122">応答</span><span class="sxs-lookup"><span data-stu-id="8436b-122">Response</span></span>
+
+<span data-ttu-id="8436b-p103">これは、ドライブの所有者を共有している DriveItem リソースを含む、[DriveItem](../resources/driveitem.md) リソースのコレクションを返します。この例では、ドライブはユーザーの既定のドライブです。そのため、これはサインインしているユーザーと共有しているアイテムを返します。</span><span class="sxs-lookup"><span data-stu-id="8436b-p103">This returns a collection of [DriveItem](../resources/driveitem.md) resources which contain the DriveItem resources shared with the owner of the drive. In this example, since the drive is the user's default drive, this returns items shared with the signed in user.</span></span>
 
 <!-- {"blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)", "truncated": true} -->
 
@@ -78,22 +94,10 @@ Content-Type: application/json
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="8b777-121">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="8b777-121">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="8b777-122">C#</span><span class="sxs-lookup"><span data-stu-id="8b777-122">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/shared-with-me-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="8b777-123">Javascript</span><span class="sxs-lookup"><span data-stu-id="8b777-123">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/shared-with-me-Javascript-snippets.md)]
+## <a name="remarks"></a><span data-ttu-id="8436b-125">注釈</span><span class="sxs-lookup"><span data-stu-id="8436b-125">Remarks</span></span>
 
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="8b777-124">Objective-C</span><span class="sxs-lookup"><span data-stu-id="8b777-124">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/shared-with-me-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
-
-## <a name="remarks"></a><span data-ttu-id="8b777-125">注釈</span><span class="sxs-lookup"><span data-stu-id="8b777-125">Remarks</span></span>
-
-<span data-ttu-id="8b777-p104">**sharedWithMe** アクションから返された DriveItems には、それらが異なるドライブからのアイテムであることを示す [**remoteItem**](../resources/remoteitem.md) ファセットが必ず含まれます。共有された DriveItem リソースにアクセスするには、**remoteItem** で提供された情報を使用して、以下に示す書式で要求を作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="8b777-p104">DriveItems returned from the **sharedWithMe** action will always include the [**remoteItem**](../resources/remoteitem.md) facet which indicates they are items from a different drive. To access the shared DriveItem resource, you will need to make a request using the information provided in **remoteItem** in the following format:</span></span>
+<span data-ttu-id="8436b-p104">**sharedWithMe** アクションから返された DriveItems には、それらが異なるドライブからのアイテムであることを示す [**remoteItem**](../resources/remoteitem.md) ファセットが必ず含まれます。共有された DriveItem リソースにアクセスするには、**remoteItem** で提供された情報を使用して、以下に示す書式で要求を作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="8436b-p104">DriveItems returned from the **sharedWithMe** action will always include the [**remoteItem**](../resources/remoteitem.md) facet which indicates they are items from a different drive. To access the shared DriveItem resource, you will need to make a request using the information provided in **remoteItem** in the following format:</span></span>
 
 <!-- { "blockType": "ignored", "name": "drives-get-remoteitem" } -->
 
@@ -108,8 +112,5 @@ GET /drives/{remoteItem-driveId}/items/{remoteItem-id}
   "section": "documentation",
   "tocPath": "Sharing/Shared with me",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/drive-sharedwithme.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/v1.0/api/drive-sharedwithme.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/drive-sharedwithme.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 } -->
