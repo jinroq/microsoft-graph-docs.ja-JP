@@ -5,44 +5,44 @@ ms.date: 03/15/2018
 title: サイト内のページを一覧表示する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 938624d1330a36b3f1318f09290b30bf9388e4ce
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: d4d4e525c048b6d2b76b9d361ab841526b07854f
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35271534"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35457143"
 ---
-# <a name="list-the-pages-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="de51c-102">サイトのサイトページリストのページを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="de51c-102">List the pages in the site pages list of a site</span></span>
+# <a name="list-the-pages-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="dc3dd-102">サイトのサイトページリストのページを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="dc3dd-102">List the pages in the site pages list of a site</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="de51c-103">サイト[サイト][]のサイトページ[リスト][]から[sitepage][]オブジェクトのコレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="de51c-103">Get the collection of [sitePage][] objects from the site pages [list][] in a site [site][].</span></span> <span data-ttu-id="de51c-104">サイト内のすべてのページが (改ページ付きで) 返されます。</span><span class="sxs-lookup"><span data-stu-id="de51c-104">All pages in the site are returned (with pagination).</span></span>
+<span data-ttu-id="dc3dd-103">サイト[サイト][]のサイトページ[リスト][]から[sitepage][]オブジェクトのコレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="dc3dd-103">Get the collection of [sitePage][] objects from the site pages [list][] in a site [site][].</span></span> <span data-ttu-id="dc3dd-104">サイト内のすべてのページが (改ページ付きで) 返されます。</span><span class="sxs-lookup"><span data-stu-id="dc3dd-104">All pages in the site are returned (with pagination).</span></span>
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
 [サイト]: ../resources/site.md
 [site]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="de51c-108">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="de51c-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="dc3dd-108">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="dc3dd-108">Permissions</span></span>
 
-<span data-ttu-id="de51c-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="de51c-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="dc3dd-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="dc3dd-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="de51c-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="de51c-111">Permission type</span></span>      | <span data-ttu-id="de51c-112">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="de51c-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="dc3dd-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="dc3dd-111">Permission type</span></span>      | <span data-ttu-id="dc3dd-112">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="dc3dd-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="de51c-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="de51c-113">Delegated (work or school account)</span></span> | <span data-ttu-id="de51c-114">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="de51c-114">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="de51c-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="de51c-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="de51c-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="de51c-116">Not supported.</span></span>    |
-|<span data-ttu-id="de51c-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="de51c-117">Application</span></span> | <span data-ttu-id="de51c-118">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="de51c-118">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="dc3dd-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="dc3dd-113">Delegated (work or school account)</span></span> | <span data-ttu-id="dc3dd-114">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dc3dd-114">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="dc3dd-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="dc3dd-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="dc3dd-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="dc3dd-116">Not supported.</span></span>    |
+|<span data-ttu-id="dc3dd-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="dc3dd-117">Application</span></span> | <span data-ttu-id="dc3dd-118">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dc3dd-118">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="de51c-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="de51c-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="dc3dd-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="dc3dd-119">HTTP request</span></span>
 
 ```http
 GET /sites/{site-id}/pages
 
 ```
 
-## <a name="example"></a><span data-ttu-id="de51c-120">例</span><span class="sxs-lookup"><span data-stu-id="de51c-120">Example</span></span>
+## <a name="example"></a><span data-ttu-id="dc3dd-120">例</span><span class="sxs-lookup"><span data-stu-id="dc3dd-120">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="de51c-121">要求</span><span class="sxs-lookup"><span data-stu-id="de51c-121">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="dc3dd-121">要求</span><span class="sxs-lookup"><span data-stu-id="dc3dd-121">Request</span></span>
 
 <!-- 
 { 
@@ -57,7 +57,7 @@ GET /sites/{site-id}/pages
 GET /sites/{site-id}/pages
 ```
 
-#### <a name="response"></a><span data-ttu-id="de51c-122">応答</span><span class="sxs-lookup"><span data-stu-id="de51c-122">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="dc3dd-122">応答</span><span class="sxs-lookup"><span data-stu-id="dc3dd-122">Response</span></span>
 
 <!-- 
 { 
@@ -231,18 +231,6 @@ Content-type: application/json
     ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="de51c-123">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="de51c-123">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="de51c-124">C#</span><span class="sxs-lookup"><span data-stu-id="de51c-124">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/get-pages-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="de51c-125">Javascript</span><span class="sxs-lookup"><span data-stu-id="de51c-125">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get-pages-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="de51c-126">目的-C</span><span class="sxs-lookup"><span data-stu-id="de51c-126">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/get-pages-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!--
 {
@@ -252,9 +240,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "Pages/Enumerate",
   "suppressions": [
-    "Error: /api-reference/beta/api/sitepage-list.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/sitepage-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/sitepage-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

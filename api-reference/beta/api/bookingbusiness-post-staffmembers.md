@@ -4,52 +4,54 @@ description: 指定した bookingbusiness に新しいスタッフメンバー�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 9ac0e87e5bf051cb0998d05b361bf5149d5b4e08
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 3c4336635303874268cfda64217b5648a561f9ea
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35258115"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35439169"
 ---
-# <a name="create-bookingstaffmember"></a><span data-ttu-id="9ad94-103">BookingStaffMember を作成する</span><span class="sxs-lookup"><span data-stu-id="9ad94-103">Create bookingStaffMember</span></span>
+# <a name="create-bookingstaffmember"></a><span data-ttu-id="f8210-103">BookingStaffMember を作成する</span><span class="sxs-lookup"><span data-stu-id="f8210-103">Create bookingStaffMember</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9ad94-104">指定した[bookingbusiness](../resources/bookingbusiness.md)に新しい[スタッフメンバー](../resources/bookingstaffmember.md)を作成します。</span><span class="sxs-lookup"><span data-stu-id="9ad94-104">Create a new [staff member](../resources/bookingstaffmember.md) in the specified [bookingbusiness](../resources/bookingbusiness.md).</span></span>
-## <a name="permissions"></a><span data-ttu-id="9ad94-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="9ad94-105">Permissions</span></span>
-<span data-ttu-id="9ad94-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="9ad94-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f8210-104">指定した[bookingbusiness](../resources/bookingbusiness.md)に新しい[スタッフメンバー](../resources/bookingstaffmember.md)を作成します。</span><span class="sxs-lookup"><span data-stu-id="f8210-104">Create a new [staff member](../resources/bookingstaffmember.md) in the specified [bookingbusiness](../resources/bookingbusiness.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="f8210-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="f8210-105">Permissions</span></span>
+<span data-ttu-id="f8210-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f8210-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9ad94-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="9ad94-108">Permission type</span></span>      | <span data-ttu-id="9ad94-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="9ad94-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f8210-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="f8210-108">Permission type</span></span>      | <span data-ttu-id="f8210-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="f8210-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="9ad94-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="9ad94-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="9ad94-111">予約します。すべての予約</span><span class="sxs-lookup"><span data-stu-id="9ad94-111">Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
-|<span data-ttu-id="9ad94-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="9ad94-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9ad94-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="9ad94-113">Not supported.</span></span>   |
-|<span data-ttu-id="9ad94-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="9ad94-114">Application</span></span> | <span data-ttu-id="9ad94-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="9ad94-115">Not supported.</span></span>  |
+|<span data-ttu-id="f8210-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="f8210-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="f8210-111">予約します。すべての予約</span><span class="sxs-lookup"><span data-stu-id="f8210-111">Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
+|<span data-ttu-id="f8210-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="f8210-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f8210-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f8210-113">Not supported.</span></span>   |
+|<span data-ttu-id="f8210-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="f8210-114">Application</span></span> | <span data-ttu-id="f8210-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f8210-115">Not supported.</span></span>  |
 
-## <a name="http-request"></a><span data-ttu-id="9ad94-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="9ad94-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f8210-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="f8210-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /bookingBusinesses/{id}/staffMembers
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="9ad94-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="9ad94-117">Request headers</span></span>
-| <span data-ttu-id="9ad94-118">名前</span><span class="sxs-lookup"><span data-stu-id="9ad94-118">Name</span></span>       | <span data-ttu-id="9ad94-119">説明</span><span class="sxs-lookup"><span data-stu-id="9ad94-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f8210-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f8210-117">Request headers</span></span>
+| <span data-ttu-id="f8210-118">名前</span><span class="sxs-lookup"><span data-stu-id="f8210-118">Name</span></span>       | <span data-ttu-id="f8210-119">説明</span><span class="sxs-lookup"><span data-stu-id="f8210-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="9ad94-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="9ad94-120">Authorization</span></span>  | <span data-ttu-id="9ad94-121">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="9ad94-121">Bearer {code}</span></span>|
+| <span data-ttu-id="f8210-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="f8210-120">Authorization</span></span>  | <span data-ttu-id="f8210-121">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="f8210-121">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="9ad94-122">要求本文</span><span class="sxs-lookup"><span data-stu-id="9ad94-122">Request body</span></span>
-<span data-ttu-id="9ad94-123">要求本文で、 [bookingStaffMember](../resources/bookingstaffmember.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="9ad94-123">In the request body, supply a JSON representation of [bookingStaffMember](../resources/bookingstaffmember.md) object.</span></span> <span data-ttu-id="9ad94-124">次のプロパティを含める必要があります。</span><span class="sxs-lookup"><span data-stu-id="9ad94-124">You must include the following properties:</span></span>
+## <a name="request-body"></a><span data-ttu-id="f8210-122">要求本文</span><span class="sxs-lookup"><span data-stu-id="f8210-122">Request body</span></span>
+<span data-ttu-id="f8210-123">要求本文で、 [bookingStaffMember](../resources/bookingstaffmember.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="f8210-123">In the request body, supply a JSON representation of [bookingStaffMember](../resources/bookingstaffmember.md) object.</span></span> <span data-ttu-id="f8210-124">次のプロパティを含める必要があります。</span><span class="sxs-lookup"><span data-stu-id="f8210-124">You must include the following properties:</span></span>
 
-- <span data-ttu-id="9ad94-125">**displayName**</span><span class="sxs-lookup"><span data-stu-id="9ad94-125">**displayName**</span></span>
-- <span data-ttu-id="9ad94-126">**emailAddress**</span><span class="sxs-lookup"><span data-stu-id="9ad94-126">**emailAddress**</span></span>
-- <span data-ttu-id="9ad94-127">**role**</span><span class="sxs-lookup"><span data-stu-id="9ad94-127">**role**</span></span>
+- <span data-ttu-id="f8210-125">**displayName**</span><span class="sxs-lookup"><span data-stu-id="f8210-125">**displayName**</span></span>
+- <span data-ttu-id="f8210-126">**emailAddress**</span><span class="sxs-lookup"><span data-stu-id="f8210-126">**emailAddress**</span></span>
+- <span data-ttu-id="f8210-127">**role**</span><span class="sxs-lookup"><span data-stu-id="f8210-127">**role**</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="9ad94-128">応答</span><span class="sxs-lookup"><span data-stu-id="9ad94-128">Response</span></span>
-<span data-ttu-id="9ad94-129">成功した場合、この`201, Created`メソッドは応答コードと、応答本文で[bookingStaffMember](../resources/bookingstaffmember.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="9ad94-129">If successful, this method returns `201, Created` response code and [bookingStaffMember](../resources/bookingstaffmember.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="f8210-128">応答</span><span class="sxs-lookup"><span data-stu-id="f8210-128">Response</span></span>
+<span data-ttu-id="f8210-129">成功した場合、この`201, Created`メソッドは応答コードと、応答本文で[bookingStaffMember](../resources/bookingstaffmember.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="f8210-129">If successful, this method returns `201, Created` response code and [bookingStaffMember](../resources/bookingstaffmember.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9ad94-130">例</span><span class="sxs-lookup"><span data-stu-id="9ad94-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="9ad94-131">要求</span><span class="sxs-lookup"><span data-stu-id="9ad94-131">Request</span></span>
-<span data-ttu-id="9ad94-132">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="9ad94-132">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="f8210-130">例</span><span class="sxs-lookup"><span data-stu-id="f8210-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="f8210-131">要求</span><span class="sxs-lookup"><span data-stu-id="f8210-131">Request</span></span>
+<span data-ttu-id="f8210-132">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="f8210-132">The following is an example of the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="f8210-133">プロトコル</span><span class="sxs-lookup"><span data-stu-id="f8210-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_bookingstaffmember_from_bookingbusiness"
@@ -137,9 +139,23 @@ Content-length: 309
     ]
 }
 ```
-<span data-ttu-id="9ad94-133">要求本文で、 [bookingStaffMember](../resources/bookingstaffmember.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="9ad94-133">In the request body, supply a JSON representation of [bookingStaffMember](../resources/bookingstaffmember.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="9ad94-134">応答</span><span class="sxs-lookup"><span data-stu-id="9ad94-134">Response</span></span>
-<span data-ttu-id="9ad94-135">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="9ad94-135">The following is an example of the response.</span></span> <span data-ttu-id="9ad94-136">注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。</span><span class="sxs-lookup"><span data-stu-id="9ad94-136">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="9ad94-137">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="9ad94-137">All of the properties will be returned from an actual call.</span></span>
+# <a name="ctabcsharp"></a>[<span data-ttu-id="f8210-134">C#</span><span class="sxs-lookup"><span data-stu-id="f8210-134">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-bookingstaffmember-from-bookingbusiness-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f8210-135">Javascript</span><span class="sxs-lookup"><span data-stu-id="f8210-135">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-bookingstaffmember-from-bookingbusiness-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="f8210-136">目的-C</span><span class="sxs-lookup"><span data-stu-id="f8210-136">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-bookingstaffmember-from-bookingbusiness-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+<span data-ttu-id="f8210-137">要求本文で、 [bookingStaffMember](../resources/bookingstaffmember.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="f8210-137">In the request body, supply a JSON representation of [bookingStaffMember](../resources/bookingstaffmember.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="f8210-138">応答</span><span class="sxs-lookup"><span data-stu-id="f8210-138">Response</span></span>
+<span data-ttu-id="f8210-139">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="f8210-139">The following is an example of the response.</span></span> <span data-ttu-id="f8210-140">注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。</span><span class="sxs-lookup"><span data-stu-id="f8210-140">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="f8210-141">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="f8210-141">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -207,18 +223,6 @@ Content-type: application/json
     ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="9ad94-138">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="9ad94-138">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="9ad94-139">C#</span><span class="sxs-lookup"><span data-stu-id="9ad94-139">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/create_bookingstaffmember_from_bookingbusiness-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="9ad94-140">Javascript</span><span class="sxs-lookup"><span data-stu-id="9ad94-140">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create_bookingstaffmember_from_bookingbusiness-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="9ad94-141">目的-C</span><span class="sxs-lookup"><span data-stu-id="9ad94-141">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/create_bookingstaffmember_from_bookingbusiness-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -230,9 +234,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/bookingbusiness-post-staffmembers.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/bookingbusiness-post-staffmembers.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/bookingbusiness-post-staffmembers.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

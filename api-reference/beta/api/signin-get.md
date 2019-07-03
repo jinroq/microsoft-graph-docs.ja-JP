@@ -4,63 +4,65 @@ description: テナントの特定の Azure AD ユーザーのサインイン �
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 13f95b67a76496f7695efb5d7ae11381c9647108
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: a5e168bccfbecc080cb2a6fdd0e8b06260ae0ede
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35271639"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35453622"
 ---
-# <a name="get-signin"></a><span data-ttu-id="8cfc8-103">signIn を取得する</span><span class="sxs-lookup"><span data-stu-id="8cfc8-103">Get signIn</span></span>
+# <a name="get-signin"></a><span data-ttu-id="45938-103">signIn を取得する</span><span class="sxs-lookup"><span data-stu-id="45938-103">Get signIn</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="8cfc8-104">テナントの特定の Azure AD ユーザーのサインイン イベントを取得します。</span><span class="sxs-lookup"><span data-stu-id="8cfc8-104">Retrieve a specific Azure AD user sign-in event for your tenant.</span></span> <span data-ttu-id="8cfc8-105">本来対話型のサイイン (ユーザー名とパスワードが認証トークンの一部として渡される場合) と、成功したフェデレーション サインインは、現在サインイン ログに含まれています。</span><span class="sxs-lookup"><span data-stu-id="8cfc8-105">Sign-ins that are interactive in nature (where a username/password is passed as part of authorization token) and successful federated sign-ins are currently included in the sign-in logs.</span></span>
+<span data-ttu-id="45938-104">テナントの特定の Azure AD ユーザーのサインイン イベントを取得します。</span><span class="sxs-lookup"><span data-stu-id="45938-104">Retrieve a specific Azure AD user sign-in event for your tenant.</span></span> <span data-ttu-id="45938-105">本来対話型のサイイン (ユーザー名とパスワードが認証トークンの一部として渡される場合) と、成功したフェデレーション サインインは、現在サインイン ログに含まれています。</span><span class="sxs-lookup"><span data-stu-id="45938-105">Sign-ins that are interactive in nature (where a username/password is passed as part of authorization token) and successful federated sign-ins are currently included in the sign-in logs.</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="8cfc8-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="8cfc8-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="45938-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="45938-106">Permissions</span></span>
 
-<span data-ttu-id="8cfc8-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8cfc8-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="45938-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="45938-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="8cfc8-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="8cfc8-109">Permission type</span></span>      | <span data-ttu-id="8cfc8-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="8cfc8-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="45938-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="45938-109">Permission type</span></span>      | <span data-ttu-id="45938-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="45938-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="8cfc8-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="8cfc8-111">Delegated (work or school account)</span></span> | <span data-ttu-id="8cfc8-112">AuditLog.Read.All</span><span class="sxs-lookup"><span data-stu-id="8cfc8-112">AuditLog.Read.All</span></span> |
-|<span data-ttu-id="8cfc8-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="8cfc8-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8cfc8-114">サポートされていません</span><span class="sxs-lookup"><span data-stu-id="8cfc8-114">Not supported</span></span>   |
-|<span data-ttu-id="8cfc8-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="8cfc8-115">Application</span></span> | <span data-ttu-id="8cfc8-116">AuditLog.Read.All</span><span class="sxs-lookup"><span data-stu-id="8cfc8-116">AuditLog.Read.All</span></span> | 
+|<span data-ttu-id="45938-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="45938-111">Delegated (work or school account)</span></span> | <span data-ttu-id="45938-112">AuditLog.Read.All</span><span class="sxs-lookup"><span data-stu-id="45938-112">AuditLog.Read.All</span></span> |
+|<span data-ttu-id="45938-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="45938-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="45938-114">サポートされていません</span><span class="sxs-lookup"><span data-stu-id="45938-114">Not supported</span></span>   |
+|<span data-ttu-id="45938-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="45938-115">Application</span></span> | <span data-ttu-id="45938-116">AuditLog.Read.All</span><span class="sxs-lookup"><span data-stu-id="45938-116">AuditLog.Read.All</span></span> | 
 
-<span data-ttu-id="8cfc8-117">また、アプリは Azure AD に[正しく登録されている](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)必要があります。</span><span class="sxs-lookup"><span data-stu-id="8cfc8-117">In addition, apps must be [properly registered](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to Azure AD.</span></span>
+<span data-ttu-id="45938-117">また、アプリは Azure AD に[正しく登録されている](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)必要があります。</span><span class="sxs-lookup"><span data-stu-id="45938-117">In addition, apps must be [properly registered](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to Azure AD.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="8cfc8-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="8cfc8-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="45938-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="45938-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /auditLogs/signIns/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="8cfc8-119">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="8cfc8-119">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="45938-119">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="45938-119">Optional query parameters</span></span>
 
-<span data-ttu-id="8cfc8-120">このメソッドは、応答をカスタマイズするための OData クエリ パラメーターをサポートします。</span><span class="sxs-lookup"><span data-stu-id="8cfc8-120">This method supports OData query parameters to help customize the response.</span></span> <span data-ttu-id="8cfc8-121">これらのパラメーターを使用する方法の詳細については、[OData クエリ パラメーター](/graph/query_parameters)をご確認ください。</span><span class="sxs-lookup"><span data-stu-id="8cfc8-121">For details about how to use these parameters, see [OData query parameters](/graph/query_parameters).</span></span>
+<span data-ttu-id="45938-120">このメソッドは、応答をカスタマイズするための OData クエリ パラメーターをサポートします。</span><span class="sxs-lookup"><span data-stu-id="45938-120">This method supports OData query parameters to help customize the response.</span></span> <span data-ttu-id="45938-121">これらのパラメーターを使用する方法の詳細については、[OData クエリ パラメーター](/graph/query_parameters)をご確認ください。</span><span class="sxs-lookup"><span data-stu-id="45938-121">For details about how to use these parameters, see [OData query parameters](/graph/query_parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="8cfc8-122">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="8cfc8-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="45938-122">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="45938-122">Request headers</span></span>
 
-| <span data-ttu-id="8cfc8-123">名前</span><span class="sxs-lookup"><span data-stu-id="8cfc8-123">Name</span></span>      |<span data-ttu-id="8cfc8-124">説明</span><span class="sxs-lookup"><span data-stu-id="8cfc8-124">Description</span></span>|
+| <span data-ttu-id="45938-123">名前</span><span class="sxs-lookup"><span data-stu-id="45938-123">Name</span></span>      |<span data-ttu-id="45938-124">説明</span><span class="sxs-lookup"><span data-stu-id="45938-124">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="8cfc8-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="8cfc8-125">Authorization</span></span>  | <span data-ttu-id="8cfc8-126">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="8cfc8-126">Bearer {code}</span></span>|
+| <span data-ttu-id="45938-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="45938-125">Authorization</span></span>  | <span data-ttu-id="45938-126">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="45938-126">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="8cfc8-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="8cfc8-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="45938-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="45938-127">Request body</span></span>
 
-<span data-ttu-id="8cfc8-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="8cfc8-128">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="45938-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="45938-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="8cfc8-129">応答</span><span class="sxs-lookup"><span data-stu-id="8cfc8-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="45938-129">応答</span><span class="sxs-lookup"><span data-stu-id="45938-129">Response</span></span>
 
-<span data-ttu-id="8cfc8-130">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [signIn](../resources/signin.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="8cfc8-130">If successful, this method returns a `200 OK` response code and [signIn](../resources/signin.md) object in the response body.</span></span>
+<span data-ttu-id="45938-130">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [signIn](../resources/signin.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="45938-130">If successful, this method returns a `200 OK` response code and [signIn](../resources/signin.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="8cfc8-131">例</span><span class="sxs-lookup"><span data-stu-id="8cfc8-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="45938-131">例</span><span class="sxs-lookup"><span data-stu-id="45938-131">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="8cfc8-132">要求</span><span class="sxs-lookup"><span data-stu-id="8cfc8-132">Request</span></span>
+### <a name="request"></a><span data-ttu-id="45938-132">要求</span><span class="sxs-lookup"><span data-stu-id="45938-132">Request</span></span>
 
-<span data-ttu-id="8cfc8-133">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="8cfc8-133">Here is an example of the request.</span></span>
+<span data-ttu-id="45938-133">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="45938-133">Here is an example of the request.</span></span>
 
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="45938-134">プロトコル</span><span class="sxs-lookup"><span data-stu-id="45938-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_signin"
@@ -68,10 +70,24 @@ GET /auditLogs/signIns/{id}
 ```http
 GET https://graph.microsoft.com/beta/auditLogs/signIns/{id}
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="45938-135">C#</span><span class="sxs-lookup"><span data-stu-id="45938-135">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-signin-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a><span data-ttu-id="8cfc8-134">応答</span><span class="sxs-lookup"><span data-stu-id="8cfc8-134">Response</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="45938-136">Javascript</span><span class="sxs-lookup"><span data-stu-id="45938-136">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-signin-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="8cfc8-135">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="8cfc8-135">Here is an example of the response.</span></span> 
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="45938-137">目的-C</span><span class="sxs-lookup"><span data-stu-id="45938-137">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-signin-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### <a name="response"></a><span data-ttu-id="45938-138">応答</span><span class="sxs-lookup"><span data-stu-id="45938-138">Response</span></span>
+
+<span data-ttu-id="45938-139">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="45938-139">Here is an example of the response.</span></span> 
 
 <!-- {
   "blockType": "response",
@@ -140,18 +156,6 @@ Content-length: 211
 }
 
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="8cfc8-136">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="8cfc8-136">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="8cfc8-137">C#</span><span class="sxs-lookup"><span data-stu-id="8cfc8-137">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_signin-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="8cfc8-138">Javascript</span><span class="sxs-lookup"><span data-stu-id="8cfc8-138">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_signin-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="8cfc8-139">目的-C</span><span class="sxs-lookup"><span data-stu-id="8cfc8-139">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/get_signin-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -162,8 +166,5 @@ Content-length: 211
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/signin-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/signin-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/signin-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

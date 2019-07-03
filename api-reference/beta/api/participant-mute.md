@@ -4,55 +4,57 @@ description: 通話で特定の参加者をミュートします。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: ea88faca928290e88d52964af040172e12585634
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 6dd848ae967f657bf4639418eee3d4e8815b546e
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35265605"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35453944"
 ---
-# <a name="participant-mute"></a><span data-ttu-id="bcaff-103">参加者: ミュート</span><span class="sxs-lookup"><span data-stu-id="bcaff-103">participant: mute</span></span>
+# <a name="participant-mute"></a><span data-ttu-id="6c305-103">参加者: ミュート</span><span class="sxs-lookup"><span data-stu-id="6c305-103">participant: mute</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="bcaff-104">通話で特定の参加者をミュートします。</span><span class="sxs-lookup"><span data-stu-id="bcaff-104">Mute a specific participant in the call.</span></span>
+<span data-ttu-id="6c305-104">通話で特定の参加者をミュートします。</span><span class="sxs-lookup"><span data-stu-id="6c305-104">Mute a specific participant in the call.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="bcaff-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="bcaff-105">Permissions</span></span>
-<span data-ttu-id="bcaff-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="bcaff-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="6c305-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="6c305-105">Permissions</span></span>
+<span data-ttu-id="6c305-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6c305-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="bcaff-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="bcaff-108">Permission type</span></span> | <span data-ttu-id="bcaff-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="bcaff-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="6c305-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="6c305-108">Permission type</span></span> | <span data-ttu-id="6c305-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="6c305-109">Permissions (from least to most privileged)</span></span> |
 | :-------------- | :------------------------------------------ |
-| <span data-ttu-id="bcaff-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="bcaff-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="bcaff-111">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="bcaff-111">Not Supported</span></span>        |
-| <span data-ttu-id="bcaff-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="bcaff-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bcaff-113">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="bcaff-113">Not Supported</span></span>        |
-| <span data-ttu-id="bcaff-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="bcaff-114">Application</span></span>     | <span data-ttu-id="bcaff-115">None</span><span class="sxs-lookup"><span data-stu-id="bcaff-115">None</span></span>                                        |
+| <span data-ttu-id="6c305-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="6c305-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="6c305-111">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="6c305-111">Not Supported</span></span>        |
+| <span data-ttu-id="6c305-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="6c305-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6c305-113">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="6c305-113">Not Supported</span></span>        |
+| <span data-ttu-id="6c305-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="6c305-114">Application</span></span>     | <span data-ttu-id="6c305-115">None</span><span class="sxs-lookup"><span data-stu-id="6c305-115">None</span></span>                                        |
 
-## <a name="http-request"></a><span data-ttu-id="bcaff-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="bcaff-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6c305-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="6c305-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/participants/{id}/mute
 POST /applications/{id}/calls/{id}/participants/{id}/mute
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="bcaff-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="bcaff-117">Request headers</span></span>
-| <span data-ttu-id="bcaff-118">名前</span><span class="sxs-lookup"><span data-stu-id="bcaff-118">Name</span></span>          | <span data-ttu-id="bcaff-119">説明</span><span class="sxs-lookup"><span data-stu-id="bcaff-119">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="6c305-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="6c305-117">Request headers</span></span>
+| <span data-ttu-id="6c305-118">名前</span><span class="sxs-lookup"><span data-stu-id="6c305-118">Name</span></span>          | <span data-ttu-id="6c305-119">説明</span><span class="sxs-lookup"><span data-stu-id="6c305-119">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="bcaff-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="bcaff-120">Authorization</span></span> | <span data-ttu-id="bcaff-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="bcaff-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="6c305-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="6c305-120">Authorization</span></span> | <span data-ttu-id="6c305-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="6c305-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="bcaff-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="bcaff-123">Request body</span></span>
-<span data-ttu-id="bcaff-124">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="bcaff-124">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6c305-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="6c305-123">Request body</span></span>
+<span data-ttu-id="6c305-124">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="6c305-124">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="bcaff-125">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcaff-125">Parameter</span></span>      | <span data-ttu-id="bcaff-126">型</span><span class="sxs-lookup"><span data-stu-id="bcaff-126">Type</span></span>    |<span data-ttu-id="bcaff-127">説明</span><span class="sxs-lookup"><span data-stu-id="bcaff-127">Description</span></span>|
+| <span data-ttu-id="6c305-125">パラメーター</span><span class="sxs-lookup"><span data-stu-id="6c305-125">Parameter</span></span>      | <span data-ttu-id="6c305-126">型</span><span class="sxs-lookup"><span data-stu-id="6c305-126">Type</span></span>    |<span data-ttu-id="6c305-127">説明</span><span class="sxs-lookup"><span data-stu-id="6c305-127">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="bcaff-128">clientContext</span><span class="sxs-lookup"><span data-stu-id="bcaff-128">clientContext</span></span>|<span data-ttu-id="bcaff-129">String</span><span class="sxs-lookup"><span data-stu-id="bcaff-129">String</span></span>|<span data-ttu-id="bcaff-130">クライアントコンテキスト。</span><span class="sxs-lookup"><span data-stu-id="bcaff-130">The client context.</span></span>|
+|<span data-ttu-id="6c305-128">clientContext</span><span class="sxs-lookup"><span data-stu-id="6c305-128">clientContext</span></span>|<span data-ttu-id="6c305-129">String</span><span class="sxs-lookup"><span data-stu-id="6c305-129">String</span></span>|<span data-ttu-id="6c305-130">クライアントコンテキスト。</span><span class="sxs-lookup"><span data-stu-id="6c305-130">The client context.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="bcaff-131">応答</span><span class="sxs-lookup"><span data-stu-id="bcaff-131">Response</span></span>
-<span data-ttu-id="bcaff-132">成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[commsOperation](../resources/commsoperation.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="bcaff-132">If successful, this method returns `200 OK` response code and [commsOperation](../resources/commsoperation.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="6c305-131">応答</span><span class="sxs-lookup"><span data-stu-id="6c305-131">Response</span></span>
+<span data-ttu-id="6c305-132">成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[commsOperation](../resources/commsoperation.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="6c305-132">If successful, this method returns `200 OK` response code and [commsOperation](../resources/commsoperation.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="bcaff-133">例</span><span class="sxs-lookup"><span data-stu-id="bcaff-133">Example</span></span>
-<span data-ttu-id="bcaff-134">次の例は、この API を呼び出す方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="bcaff-134">The following example shows how to call this API.</span></span>
+## <a name="example"></a><span data-ttu-id="6c305-133">例</span><span class="sxs-lookup"><span data-stu-id="6c305-133">Example</span></span>
+<span data-ttu-id="6c305-134">次の例は、この API を呼び出す方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="6c305-134">The following example shows how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="bcaff-135">要求</span><span class="sxs-lookup"><span data-stu-id="bcaff-135">Request</span></span>
-<span data-ttu-id="bcaff-136">次の例は要求を示しています。</span><span class="sxs-lookup"><span data-stu-id="bcaff-136">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="6c305-135">要求</span><span class="sxs-lookup"><span data-stu-id="6c305-135">Request</span></span>
+<span data-ttu-id="6c305-136">次の例は要求を示しています。</span><span class="sxs-lookup"><span data-stu-id="6c305-136">The following example shows the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="6c305-137">プロトコル</span><span class="sxs-lookup"><span data-stu-id="6c305-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "participant-mute"
@@ -66,10 +68,24 @@ Content-Length: 46
   "clientContext": "clientContext-value"
 }
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="6c305-138">C#</span><span class="sxs-lookup"><span data-stu-id="6c305-138">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/participant-mute-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-##### <a name="response"></a><span data-ttu-id="bcaff-137">応答</span><span class="sxs-lookup"><span data-stu-id="bcaff-137">Response</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="6c305-139">Javascript</span><span class="sxs-lookup"><span data-stu-id="6c305-139">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/participant-mute-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-> <span data-ttu-id="bcaff-p103">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="bcaff-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="6c305-140">目的-C</span><span class="sxs-lookup"><span data-stu-id="6c305-140">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/participant-mute-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+##### <a name="response"></a><span data-ttu-id="6c305-141">応答</span><span class="sxs-lookup"><span data-stu-id="6c305-141">Response</span></span>
+
+> <span data-ttu-id="6c305-p103">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="6c305-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -89,22 +105,10 @@ Content-Length: 259
   "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="bcaff-140">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="bcaff-140">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="bcaff-141">C#</span><span class="sxs-lookup"><span data-stu-id="bcaff-141">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/participant-mute-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="bcaff-142">Javascript</span><span class="sxs-lookup"><span data-stu-id="bcaff-142">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/participant-mute-Javascript-snippets.md)]
+## <a name="example---mute-specific-participant"></a><span data-ttu-id="6c305-144">例-特定の参加者のミュート</span><span class="sxs-lookup"><span data-stu-id="6c305-144">Example - Mute specific participant</span></span>
 
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="bcaff-143">目的-C</span><span class="sxs-lookup"><span data-stu-id="bcaff-143">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/participant-mute-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
-
-## <a name="example---mute-specific-participant"></a><span data-ttu-id="bcaff-144">例-特定の参加者のミュート</span><span class="sxs-lookup"><span data-stu-id="bcaff-144">Example - Mute specific participant</span></span>
-
-##### <a name="request"></a><span data-ttu-id="bcaff-145">要求</span><span class="sxs-lookup"><span data-stu-id="bcaff-145">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="6c305-145">要求</span><span class="sxs-lookup"><span data-stu-id="6c305-145">Request</span></span>
 
 ```http
 POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/participants/0698446E77E24E4D85F80597083CB830/mute
@@ -116,7 +120,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="bcaff-146">応答</span><span class="sxs-lookup"><span data-stu-id="bcaff-146">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="6c305-146">応答</span><span class="sxs-lookup"><span data-stu-id="6c305-146">Response</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -139,7 +143,7 @@ Content-Length: 259
 }
 ```
 
-##### <a name="notification---roster-updated-with-participant-muted"></a><span data-ttu-id="bcaff-147">通知-参加者がミュート状態で更新された名簿</span><span class="sxs-lookup"><span data-stu-id="bcaff-147">Notification - roster updated with participant muted</span></span>
+##### <a name="notification---roster-updated-with-participant-muted"></a><span data-ttu-id="6c305-147">通知-参加者がミュート状態で更新された名簿</span><span class="sxs-lookup"><span data-stu-id="6c305-147">Notification - roster updated with participant muted</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -223,9 +227,6 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/participant-mute.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/participant-mute.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/participant-mute.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

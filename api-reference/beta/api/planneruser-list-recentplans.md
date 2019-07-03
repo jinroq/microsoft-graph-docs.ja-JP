@@ -4,46 +4,48 @@ description: ユーザーが最近閲覧した Plan プランの一覧を取得�
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
-ms.openlocfilehash: d0fe691e1a0cb34fcc29215fafe4784ca85cdc63
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 3428a174e77b46234effef0e505d2516ff34f421
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35264275"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35455155"
 ---
-# <a name="list-recentplans"></a><span data-ttu-id="b15d9-104">リスト recentPlans</span><span class="sxs-lookup"><span data-stu-id="b15d9-104">List recentPlans</span></span>
+# <a name="list-recentplans"></a><span data-ttu-id="52377-104">リスト recentPlans</span><span class="sxs-lookup"><span data-stu-id="52377-104">List recentPlans</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b15d9-105">ユーザーが最近閲覧した[Plan プラン](../resources/plannerplan.md)の一覧を取得します。</span><span class="sxs-lookup"><span data-stu-id="b15d9-105">Retrieve a list of [plannerPlans](../resources/plannerplan.md) recently viewed by a user.</span></span> <span data-ttu-id="b15d9-106">プラン[のユーザーリソースを更新](planneruser-update.md)すると、最近表示されたプランを更新できます。</span><span class="sxs-lookup"><span data-stu-id="b15d9-106">You can update recently viewed plans by [updating the plannerUser resource](planneruser-update.md).</span></span>
-## <a name="permissions"></a><span data-ttu-id="b15d9-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="b15d9-107">Permissions</span></span>
-<span data-ttu-id="b15d9-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b15d9-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="52377-105">ユーザーが最近閲覧した[Plan プラン](../resources/plannerplan.md)の一覧を取得します。</span><span class="sxs-lookup"><span data-stu-id="52377-105">Retrieve a list of [plannerPlans](../resources/plannerplan.md) recently viewed by a user.</span></span> <span data-ttu-id="52377-106">プラン[のユーザーリソースを更新](planneruser-update.md)すると、最近表示されたプランを更新できます。</span><span class="sxs-lookup"><span data-stu-id="52377-106">You can update recently viewed plans by [updating the plannerUser resource](planneruser-update.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="52377-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="52377-107">Permissions</span></span>
+<span data-ttu-id="52377-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="52377-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b15d9-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="b15d9-110">Permission type</span></span>      | <span data-ttu-id="b15d9-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="b15d9-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="52377-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="52377-110">Permission type</span></span>      | <span data-ttu-id="52377-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="52377-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="b15d9-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="b15d9-112">Delegated (work or school account)</span></span> | <span data-ttu-id="b15d9-113">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="b15d9-113">Group.Read.All</span></span>    |
-|<span data-ttu-id="b15d9-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="b15d9-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b15d9-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b15d9-115">Not supported.</span></span>    |
-|<span data-ttu-id="b15d9-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="b15d9-116">Application</span></span> | <span data-ttu-id="b15d9-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b15d9-117">Not supported.</span></span> |
+|<span data-ttu-id="52377-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="52377-112">Delegated (work or school account)</span></span> | <span data-ttu-id="52377-113">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="52377-113">Group.Read.All</span></span>    |
+|<span data-ttu-id="52377-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="52377-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="52377-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="52377-115">Not supported.</span></span>    |
+|<span data-ttu-id="52377-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="52377-116">Application</span></span> | <span data-ttu-id="52377-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="52377-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="b15d9-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="b15d9-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="52377-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="52377-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/planner/recentPlans
 GET /users/<id>/planner/recentPlans
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="b15d9-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b15d9-119">Request headers</span></span>
-| <span data-ttu-id="b15d9-120">名前</span><span class="sxs-lookup"><span data-stu-id="b15d9-120">Name</span></span>      |<span data-ttu-id="b15d9-121">説明</span><span class="sxs-lookup"><span data-stu-id="b15d9-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="52377-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="52377-119">Request headers</span></span>
+| <span data-ttu-id="52377-120">名前</span><span class="sxs-lookup"><span data-stu-id="52377-120">Name</span></span>      |<span data-ttu-id="52377-121">説明</span><span class="sxs-lookup"><span data-stu-id="52377-121">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="b15d9-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="b15d9-122">Authorization</span></span>  | <span data-ttu-id="b15d9-123">ベアラー {code}。</span><span class="sxs-lookup"><span data-stu-id="b15d9-123">Bearer {code}.</span></span> <span data-ttu-id="b15d9-124">必須です。</span><span class="sxs-lookup"><span data-stu-id="b15d9-124">Required.</span></span>|
+| <span data-ttu-id="52377-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="52377-122">Authorization</span></span>  | <span data-ttu-id="52377-123">ベアラー {code}。</span><span class="sxs-lookup"><span data-stu-id="52377-123">Bearer {code}.</span></span> <span data-ttu-id="52377-124">必須です。</span><span class="sxs-lookup"><span data-stu-id="52377-124">Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="b15d9-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="b15d9-125">Request body</span></span>
-<span data-ttu-id="b15d9-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="b15d9-126">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="b15d9-127">応答</span><span class="sxs-lookup"><span data-stu-id="b15d9-127">Response</span></span>
-<span data-ttu-id="b15d9-128">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[プラン](../resources/plannerplan.md)オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="b15d9-128">If successful, this method returns a `200 OK` response code and a collection of [plannerPlan](../resources/plannerplan.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="b15d9-129">例</span><span class="sxs-lookup"><span data-stu-id="b15d9-129">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="b15d9-130">要求</span><span class="sxs-lookup"><span data-stu-id="b15d9-130">Request</span></span>
-<span data-ttu-id="b15d9-131">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="b15d9-131">The following is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="52377-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="52377-125">Request body</span></span>
+<span data-ttu-id="52377-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="52377-126">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="52377-127">応答</span><span class="sxs-lookup"><span data-stu-id="52377-127">Response</span></span>
+<span data-ttu-id="52377-128">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[プラン](../resources/plannerplan.md)オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="52377-128">If successful, this method returns a `200 OK` response code and a collection of [plannerPlan](../resources/plannerplan.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="52377-129">例</span><span class="sxs-lookup"><span data-stu-id="52377-129">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="52377-130">要求</span><span class="sxs-lookup"><span data-stu-id="52377-130">Request</span></span>
+<span data-ttu-id="52377-131">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="52377-131">The following is an example of the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="52377-132">プロトコル</span><span class="sxs-lookup"><span data-stu-id="52377-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_recentplans"
@@ -51,10 +53,24 @@ GET /users/<id>/planner/recentPlans
 ```http
 GET https://graph.microsoft.com/beta/me/planner/recentPlans
 ```
-##### <a name="response"></a><span data-ttu-id="b15d9-132">応答</span><span class="sxs-lookup"><span data-stu-id="b15d9-132">Response</span></span>
-<span data-ttu-id="b15d9-133">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="b15d9-133">The following is an example of the response.</span></span> 
+# <a name="ctabcsharp"></a>[<span data-ttu-id="52377-133">C#</span><span class="sxs-lookup"><span data-stu-id="52377-133">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-recentplans-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-><span data-ttu-id="b15d9-p105">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="b15d9-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="52377-134">Javascript</span><span class="sxs-lookup"><span data-stu-id="52377-134">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-recentplans-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="52377-135">目的-C</span><span class="sxs-lookup"><span data-stu-id="52377-135">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-recentplans-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+##### <a name="response"></a><span data-ttu-id="52377-136">応答</span><span class="sxs-lookup"><span data-stu-id="52377-136">Response</span></span>
+<span data-ttu-id="52377-137">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="52377-137">The following is an example of the response.</span></span> 
+
+><span data-ttu-id="52377-p105">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="52377-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -87,18 +103,6 @@ Content-length: 979
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="b15d9-136">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="b15d9-136">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="b15d9-137">C#</span><span class="sxs-lookup"><span data-stu-id="b15d9-137">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_recentplans-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b15d9-138">Javascript</span><span class="sxs-lookup"><span data-stu-id="b15d9-138">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_recentplans-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="b15d9-139">目的-C</span><span class="sxs-lookup"><span data-stu-id="b15d9-139">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/get_recentplans-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -110,9 +114,6 @@ Content-length: 979
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/planneruser-list-recentplans.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/planneruser-list-recentplans.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/planneruser-list-recentplans.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

@@ -5,41 +5,57 @@ ms.date: 09/10/2017
 title: SharePoint サイトのサブサイトを一覧表示する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 5a2c16b53dd6b89588932d0f562f91a2deba348a
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: a8b684d048c21cc9388336eefa5c9fa5107b0082
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35271576"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35453629"
 ---
-# <a name="enumerate-subsites"></a><span data-ttu-id="928d9-102">サブサイトを列挙する</span><span class="sxs-lookup"><span data-stu-id="928d9-102">Enumerate subsites</span></span>
+# <a name="enumerate-subsites"></a><span data-ttu-id="37e11-102">サブサイトを列挙する</span><span class="sxs-lookup"><span data-stu-id="37e11-102">Enumerate subsites</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="928d9-103">[サイト][] に定義されているサブサイトのコレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="928d9-103">Get a collection of subsites defined for a [site][].</span></span>
+<span data-ttu-id="37e11-103">[サイト][] に定義されているサブサイトのコレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="37e11-103">Get a collection of subsites defined for a [site][].</span></span>
 
 [サイト]: ../resources/site.md
 [site]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="928d9-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="928d9-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="37e11-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="37e11-105">Permissions</span></span>
 
-<span data-ttu-id="928d9-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="928d9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="37e11-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="37e11-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="928d9-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="928d9-108">Permission type</span></span>      | <span data-ttu-id="928d9-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="928d9-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="37e11-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="37e11-108">Permission type</span></span>      | <span data-ttu-id="37e11-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="37e11-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="928d9-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="928d9-110">Delegated (work or school account)</span></span> | <span data-ttu-id="928d9-111">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="928d9-111">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="928d9-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="928d9-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="928d9-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="928d9-113">Not supported.</span></span>    |
-|<span data-ttu-id="928d9-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="928d9-114">Application</span></span> | <span data-ttu-id="928d9-115">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="928d9-115">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="37e11-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="37e11-110">Delegated (work or school account)</span></span> | <span data-ttu-id="37e11-111">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="37e11-111">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="37e11-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="37e11-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="37e11-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="37e11-113">Not supported.</span></span>    |
+|<span data-ttu-id="37e11-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="37e11-114">Application</span></span> | <span data-ttu-id="37e11-115">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="37e11-115">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="928d9-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="928d9-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="37e11-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="37e11-116">HTTP request</span></span>
 
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="37e11-117">プロトコル</span><span class="sxs-lookup"><span data-stu-id="37e11-117">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "list-subsites", "scopes": "service.sharepoint sites.read.all" } -->
 
 ```http
 GET https://graph.microsoft.com/beta/sites/{site-id}/sites
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="37e11-118">C#</span><span class="sxs-lookup"><span data-stu-id="37e11-118">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-subsites-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-## <a name="response"></a><span data-ttu-id="928d9-117">応答</span><span class="sxs-lookup"><span data-stu-id="928d9-117">Response</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="37e11-119">Javascript</span><span class="sxs-lookup"><span data-stu-id="37e11-119">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-subsites-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="37e11-120">目的-C</span><span class="sxs-lookup"><span data-stu-id="37e11-120">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-subsites-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+## <a name="response"></a><span data-ttu-id="37e11-121">応答</span><span class="sxs-lookup"><span data-stu-id="37e11-121">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
@@ -68,18 +84,6 @@ Content-type: application/json
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="928d9-118">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="928d9-118">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="928d9-119">C#</span><span class="sxs-lookup"><span data-stu-id="928d9-119">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/list-subsites-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="928d9-120">Javascript</span><span class="sxs-lookup"><span data-stu-id="928d9-120">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/list-subsites-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="928d9-121">目的-C</span><span class="sxs-lookup"><span data-stu-id="928d9-121">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/list-subsites-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!--
 {
@@ -89,9 +93,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "Sites/List subsites",
   "suppressions": [
-    "Error: /api-reference/beta/api/site-list-subsites.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/site-list-subsites.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/site-list-subsites.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

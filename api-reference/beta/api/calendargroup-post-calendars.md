@@ -4,68 +4,70 @@ description: この API を使って、ユーザー用の予定表グループ�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 079014079eafec22491785ee502853a1bf99fe25
-ms.sourcegitcommit: abca7fcefeaa74b50f4600b35d816b626ba08468
+ms.openlocfilehash: 79ea80ff78cfb2320d6db17146a0d85f1cad5008
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "34310847"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35438819"
 ---
-# <a name="create-calendar"></a><span data-ttu-id="e953c-103">予定表を作成する</span><span class="sxs-lookup"><span data-stu-id="e953c-103">Create Calendar</span></span>
+# <a name="create-calendar"></a><span data-ttu-id="6afc8-103">予定表を作成する</span><span class="sxs-lookup"><span data-stu-id="6afc8-103">Create Calendar</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e953c-104">この API を使って、[ユーザー](../resources/user.md)用の予定表グループに新しい予定表を作成します。</span><span class="sxs-lookup"><span data-stu-id="e953c-104">Use this API to create a new calendar in a calendar group for a [user](../resources/user.md).</span></span>
+<span data-ttu-id="6afc8-104">この API を使って、[ユーザー](../resources/user.md)用の予定表グループに新しい予定表を作成します。</span><span class="sxs-lookup"><span data-stu-id="6afc8-104">Use this API to create a new calendar in a calendar group for a [user](../resources/user.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e953c-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="e953c-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="6afc8-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="6afc8-105">Permissions</span></span>
 
-<span data-ttu-id="e953c-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e953c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="6afc8-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6afc8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="e953c-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="e953c-108">Permission type</span></span>                        | <span data-ttu-id="e953c-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="e953c-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="6afc8-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="6afc8-108">Permission type</span></span>                        | <span data-ttu-id="6afc8-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="6afc8-109">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :------------------------------------------ |
-| <span data-ttu-id="e953c-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="e953c-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="e953c-111">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e953c-111">Calendars.ReadWrite</span></span>                         |
-| <span data-ttu-id="e953c-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="e953c-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e953c-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e953c-113">Calendars.ReadWrite</span></span>                         |
-| <span data-ttu-id="e953c-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="e953c-114">Application</span></span>                            | <span data-ttu-id="e953c-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e953c-115">Calendars.ReadWrite</span></span>                         |
+| <span data-ttu-id="6afc8-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="6afc8-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="6afc8-111">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6afc8-111">Calendars.ReadWrite</span></span>                         |
+| <span data-ttu-id="6afc8-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="6afc8-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6afc8-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6afc8-113">Calendars.ReadWrite</span></span>                         |
+| <span data-ttu-id="6afc8-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="6afc8-114">Application</span></span>                            | <span data-ttu-id="6afc8-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6afc8-115">Calendars.ReadWrite</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="e953c-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="e953c-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6afc8-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="6afc8-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
-<span data-ttu-id="e953c-117">ユーザーの既定 [calendarGroup](../resources/calendargroup.md)。</span><span class="sxs-lookup"><span data-stu-id="e953c-117">A user's default [calendarGroup](../resources/calendargroup.md).</span></span>
+<span data-ttu-id="6afc8-117">ユーザーの既定 [calendarGroup](../resources/calendargroup.md)。</span><span class="sxs-lookup"><span data-stu-id="6afc8-117">A user's default [calendarGroup](../resources/calendargroup.md).</span></span>
 
 ```http
 POST /me/calendarGroup/calendars
 POST /users/{id | userPrincipalName}/calendarGroup/calendars
 ```
 
-<span data-ttu-id="e953c-118">ユーザーの任意の [calendarGroup](../resources/calendargroup.md)。</span><span class="sxs-lookup"><span data-stu-id="e953c-118">Any [calendarGroup](../resources/calendargroup.md) of a user.</span></span>
+<span data-ttu-id="6afc8-118">ユーザーの任意の [calendarGroup](../resources/calendargroup.md)。</span><span class="sxs-lookup"><span data-stu-id="6afc8-118">Any [calendarGroup](../resources/calendargroup.md) of a user.</span></span>
 
 ```http
 POST /me/calendarGroups/{id}/calendars
 POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e953c-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="e953c-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="6afc8-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="6afc8-119">Request headers</span></span>
 
-| <span data-ttu-id="e953c-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="e953c-120">Header</span></span>        | <span data-ttu-id="e953c-121">値</span><span class="sxs-lookup"><span data-stu-id="e953c-121">Value</span></span>                       |
+| <span data-ttu-id="6afc8-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="6afc8-120">Header</span></span>        | <span data-ttu-id="6afc8-121">値</span><span class="sxs-lookup"><span data-stu-id="6afc8-121">Value</span></span>                       |
 | :------------ | :-------------------------- |
-| <span data-ttu-id="e953c-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="e953c-122">Authorization</span></span> | <span data-ttu-id="e953c-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="e953c-p102">Bearer {token}. Required.</span></span>   |
-| <span data-ttu-id="e953c-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="e953c-125">Content-Type</span></span>  | <span data-ttu-id="e953c-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="e953c-p103">application/json. Required.</span></span> |
+| <span data-ttu-id="6afc8-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="6afc8-122">Authorization</span></span> | <span data-ttu-id="6afc8-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="6afc8-p102">Bearer {token}. Required.</span></span>   |
+| <span data-ttu-id="6afc8-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="6afc8-125">Content-Type</span></span>  | <span data-ttu-id="6afc8-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="6afc8-p103">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="e953c-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="e953c-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="6afc8-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="6afc8-128">Request body</span></span>
 
-<span data-ttu-id="e953c-129">要求本文で、[予定表](../resources/calendar.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="e953c-129">In the request body, supply a JSON representation of [calendar](../resources/calendar.md) object.</span></span>
+<span data-ttu-id="6afc8-129">要求本文で、[予定表](../resources/calendar.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="6afc8-129">In the request body, supply a JSON representation of [calendar](../resources/calendar.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e953c-130">応答</span><span class="sxs-lookup"><span data-stu-id="e953c-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6afc8-130">応答</span><span class="sxs-lookup"><span data-stu-id="6afc8-130">Response</span></span>
 
-<span data-ttu-id="e953c-131">成功した場合、このメソッドは応答本文で `201 Created` 応答コードと [予定表](../resources/calendar.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="e953c-131">If successful, this method returns `201 Created` response code and [calendar](../resources/calendar.md) object in the response body.</span></span>
+<span data-ttu-id="6afc8-131">成功した場合、このメソッドは応答本文で `201 Created` 応答コードと [予定表](../resources/calendar.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="6afc8-131">If successful, this method returns `201 Created` response code and [calendar](../resources/calendar.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e953c-132">例</span><span class="sxs-lookup"><span data-stu-id="e953c-132">Example</span></span>
+## <a name="example"></a><span data-ttu-id="6afc8-132">例</span><span class="sxs-lookup"><span data-stu-id="6afc8-132">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="e953c-133">要求</span><span class="sxs-lookup"><span data-stu-id="e953c-133">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="6afc8-133">要求</span><span class="sxs-lookup"><span data-stu-id="6afc8-133">Request</span></span>
 
-<span data-ttu-id="e953c-134">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="e953c-134">Here is an example of the request.</span></span>
+<span data-ttu-id="6afc8-134">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="6afc8-134">Here is an example of the request.</span></span>
 
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="6afc8-135">プロトコル</span><span class="sxs-lookup"><span data-stu-id="6afc8-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkADYAAAR9NR5AAA="],
@@ -81,12 +83,18 @@ Content-type: application/json
   "name": "Marketing calendar"
 }
 ```
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="6afc8-136">Javascript</span><span class="sxs-lookup"><span data-stu-id="6afc8-136">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-calendar-from-calendargroup-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="e953c-135">要求本文で、[予定表](../resources/calendar.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="e953c-135">In the request body, supply a JSON representation of [calendar](../resources/calendar.md) object.</span></span>
+---
 
-##### <a name="response"></a><span data-ttu-id="e953c-136">応答</span><span class="sxs-lookup"><span data-stu-id="e953c-136">Response</span></span>
 
-<span data-ttu-id="e953c-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="e953c-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="6afc8-137">要求本文で、[予定表](../resources/calendar.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="6afc8-137">In the request body, supply a JSON representation of [calendar](../resources/calendar.md) object.</span></span>
+
+##### <a name="response"></a><span data-ttu-id="6afc8-138">応答</span><span class="sxs-lookup"><span data-stu-id="6afc8-138">Response</span></span>
+
+<span data-ttu-id="6afc8-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="6afc8-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -113,16 +121,6 @@ Content-type: application/json
     }
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="e953c-140">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="e953c-140">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="e953c-141">C#</span><span class="sxs-lookup"><span data-stu-id="e953c-141">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/create_calendar_from_calendargroup-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e953c-142">Javascript</span><span class="sxs-lookup"><span data-stu-id="e953c-142">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create_calendar_from_calendargroup-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -135,8 +133,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/calendargroup-post-calendars.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/calendargroup-post-calendars.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

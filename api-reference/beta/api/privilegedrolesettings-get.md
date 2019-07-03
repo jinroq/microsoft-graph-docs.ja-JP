@@ -2,54 +2,56 @@
 title: privilegedRoleSettings を取得する
 description: 特定の役割の役割設定を取得します。 PrivilegedRoleSettings オブジェクトが返されます。
 localization_priority: Normal
-ms.openlocfilehash: 9d96a2ea7375d6e4ed4021cdd00bfe055c548040
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 985b58c560b6f152f01c72de3ebd03e834822042
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35264135"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35444835"
 ---
-# <a name="get-privilegedrolesettings"></a><span data-ttu-id="b310b-104">privilegedRoleSettings を取得する</span><span class="sxs-lookup"><span data-stu-id="b310b-104">Get privilegedRoleSettings</span></span>
+# <a name="get-privilegedrolesettings"></a><span data-ttu-id="dba3f-104">privilegedRoleSettings を取得する</span><span class="sxs-lookup"><span data-stu-id="dba3f-104">Get privilegedRoleSettings</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b310b-105">特定の役割の役割設定を取得します。</span><span class="sxs-lookup"><span data-stu-id="b310b-105">Retrieve the role settings for the given role.</span></span> <span data-ttu-id="b310b-106">[PrivilegedRoleSettings](../resources/privilegedrolesettings.md)オブジェクトが返されます。</span><span class="sxs-lookup"><span data-stu-id="b310b-106">A [privilegedRoleSettings](../resources/privilegedrolesettings.md) object will be returned.</span></span>
-## <a name="permissions"></a><span data-ttu-id="b310b-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="b310b-107">Permissions</span></span>
+<span data-ttu-id="dba3f-105">特定の役割の役割設定を取得します。</span><span class="sxs-lookup"><span data-stu-id="dba3f-105">Retrieve the role settings for the given role.</span></span> <span data-ttu-id="dba3f-106">[PrivilegedRoleSettings](../resources/privilegedrolesettings.md)オブジェクトが返されます。</span><span class="sxs-lookup"><span data-stu-id="dba3f-106">A [privilegedRoleSettings](../resources/privilegedrolesettings.md) object will be returned.</span></span>
+## <a name="permissions"></a><span data-ttu-id="dba3f-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="dba3f-107">Permissions</span></span>
 
-<span data-ttu-id="b310b-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b310b-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="dba3f-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="dba3f-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="b310b-110">リクエスターは、_特権の役割管理者_、_全体管理_者、_セキュリティ管理者_、または_セキュリティ閲覧_者のいずれかの役割を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="b310b-110">The requestor needs to have one of the following roles: _Privileged Role Administrator_, _Global Administrator_, _Security Administrator_, or _Security Reader_.</span></span> 
+<span data-ttu-id="dba3f-110">リクエスターは、_特権の役割管理者_、_全体管理_者、_セキュリティ管理者_、または_セキュリティ閲覧_者のいずれかの役割を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="dba3f-110">The requestor needs to have one of the following roles: _Privileged Role Administrator_, _Global Administrator_, _Security Administrator_, or _Security Reader_.</span></span> 
 
-|<span data-ttu-id="b310b-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="b310b-111">Permission type</span></span>      | <span data-ttu-id="b310b-112">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="b310b-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="dba3f-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="dba3f-111">Permission type</span></span>      | <span data-ttu-id="dba3f-112">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="dba3f-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="b310b-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="b310b-113">Delegated (work or school account)</span></span> | <span data-ttu-id="b310b-114">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="b310b-114">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="b310b-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="b310b-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b310b-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b310b-116">Not supported.</span></span>    |
-|<span data-ttu-id="b310b-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="b310b-117">Application</span></span> | <span data-ttu-id="b310b-118">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b310b-118">Not supported.</span></span> |
+|<span data-ttu-id="dba3f-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="dba3f-113">Delegated (work or school account)</span></span> | <span data-ttu-id="dba3f-114">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="dba3f-114">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="dba3f-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="dba3f-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="dba3f-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="dba3f-116">Not supported.</span></span>    |
+|<span data-ttu-id="dba3f-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="dba3f-117">Application</span></span> | <span data-ttu-id="dba3f-118">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="dba3f-118">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="b310b-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="b310b-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="dba3f-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="dba3f-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /privilegedRoles/{id}/settings
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="b310b-120">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="b310b-120">Optional query parameters</span></span>
-<span data-ttu-id="b310b-121">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="b310b-121">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="dba3f-120">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="dba3f-120">Optional query parameters</span></span>
+<span data-ttu-id="dba3f-121">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="dba3f-121">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="b310b-122">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b310b-122">Request headers</span></span>
-| <span data-ttu-id="b310b-123">名前</span><span class="sxs-lookup"><span data-stu-id="b310b-123">Name</span></span>      |<span data-ttu-id="b310b-124">説明</span><span class="sxs-lookup"><span data-stu-id="b310b-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="dba3f-122">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="dba3f-122">Request headers</span></span>
+| <span data-ttu-id="dba3f-123">名前</span><span class="sxs-lookup"><span data-stu-id="dba3f-123">Name</span></span>      |<span data-ttu-id="dba3f-124">説明</span><span class="sxs-lookup"><span data-stu-id="dba3f-124">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="b310b-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="b310b-125">Authorization</span></span>  | <span data-ttu-id="b310b-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="b310b-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="dba3f-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="dba3f-125">Authorization</span></span>  | <span data-ttu-id="dba3f-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="dba3f-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="b310b-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="b310b-128">Request body</span></span>
-<span data-ttu-id="b310b-129">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="b310b-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="dba3f-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="dba3f-128">Request body</span></span>
+<span data-ttu-id="dba3f-129">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="dba3f-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="b310b-130">応答</span><span class="sxs-lookup"><span data-stu-id="b310b-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="dba3f-130">応答</span><span class="sxs-lookup"><span data-stu-id="dba3f-130">Response</span></span>
 
-<span data-ttu-id="b310b-131">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[privilegedRoleSettings](../resources/privilegedrolesettings.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="b310b-131">If successful, this method returns a `200 OK` response code and [privilegedRoleSettings](../resources/privilegedrolesettings.md) object in the response body.</span></span>
+<span data-ttu-id="dba3f-131">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[privilegedRoleSettings](../resources/privilegedrolesettings.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="dba3f-131">If successful, this method returns a `200 OK` response code and [privilegedRoleSettings](../resources/privilegedrolesettings.md) object in the response body.</span></span>
 
-<span data-ttu-id="b310b-132">テナントが PIM に登録されている必要があることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="b310b-132">Note that the tenant needs to be registered to PIM.</span></span> <span data-ttu-id="b310b-133">それ以外の場合、HTTP 403 の禁止状態コードが返されます。</span><span class="sxs-lookup"><span data-stu-id="b310b-133">Otherwise, the HTTP 403 Forbidden status code will be returned.</span></span>
-## <a name="example"></a><span data-ttu-id="b310b-134">例</span><span class="sxs-lookup"><span data-stu-id="b310b-134">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="b310b-135">要求</span><span class="sxs-lookup"><span data-stu-id="b310b-135">Request</span></span>
-<span data-ttu-id="b310b-136">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="b310b-136">Here is an example of the request.</span></span>
+<span data-ttu-id="dba3f-132">テナントが PIM に登録されている必要があることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="dba3f-132">Note that the tenant needs to be registered to PIM.</span></span> <span data-ttu-id="dba3f-133">それ以外の場合、HTTP 403 の禁止状態コードが返されます。</span><span class="sxs-lookup"><span data-stu-id="dba3f-133">Otherwise, the HTTP 403 Forbidden status code will be returned.</span></span>
+## <a name="example"></a><span data-ttu-id="dba3f-134">例</span><span class="sxs-lookup"><span data-stu-id="dba3f-134">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="dba3f-135">要求</span><span class="sxs-lookup"><span data-stu-id="dba3f-135">Request</span></span>
+<span data-ttu-id="dba3f-136">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="dba3f-136">Here is an example of the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="dba3f-137">プロトコル</span><span class="sxs-lookup"><span data-stu-id="dba3f-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_privilegedrolesettings"
@@ -57,8 +59,22 @@ GET /privilegedRoles/{id}/settings
 ```http
 GET https://graph.microsoft.com/beta/privilegedRoles/{id}/settings
 ```
-##### <a name="response"></a><span data-ttu-id="b310b-137">応答</span><span class="sxs-lookup"><span data-stu-id="b310b-137">Response</span></span>
-<span data-ttu-id="b310b-p106">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="b310b-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+# <a name="ctabcsharp"></a>[<span data-ttu-id="dba3f-138">C#</span><span class="sxs-lookup"><span data-stu-id="dba3f-138">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-privilegedrolesettings-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="dba3f-139">Javascript</span><span class="sxs-lookup"><span data-stu-id="dba3f-139">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-privilegedrolesettings-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="dba3f-140">目的-C</span><span class="sxs-lookup"><span data-stu-id="dba3f-140">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-privilegedrolesettings-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+##### <a name="response"></a><span data-ttu-id="dba3f-141">応答</span><span class="sxs-lookup"><span data-stu-id="dba3f-141">Response</span></span>
+<span data-ttu-id="dba3f-p106">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="dba3f-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -78,18 +94,6 @@ Content-length: 228
   "ticketingInfoOnElevation": true
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="b310b-141">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="b310b-141">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="b310b-142">C#</span><span class="sxs-lookup"><span data-stu-id="b310b-142">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_privilegedrolesettings-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b310b-143">Javascript</span><span class="sxs-lookup"><span data-stu-id="b310b-143">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_privilegedrolesettings-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="b310b-144">目的-C</span><span class="sxs-lookup"><span data-stu-id="b310b-144">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/get_privilegedrolesettings-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -101,9 +105,6 @@ Content-length: 228
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/privilegedrolesettings-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/privilegedrolesettings-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/privilegedrolesettings-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->
