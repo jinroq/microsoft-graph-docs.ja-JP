@@ -4,57 +4,59 @@ description: 連絡先を削除します。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 3235e460c43aa2c4062ffbbbcb798d2e6a6043fe
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 9f969731a6e5b8c8042e2b3d28162f53a1113bdd
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35277526"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35443134"
 ---
-# <a name="delete-contact"></a><span data-ttu-id="826f4-103">連絡先を削除する</span><span class="sxs-lookup"><span data-stu-id="826f4-103">Delete contact</span></span>
+# <a name="delete-contact"></a><span data-ttu-id="d2fcb-103">連絡先を削除する</span><span class="sxs-lookup"><span data-stu-id="d2fcb-103">Delete contact</span></span>
 
-<span data-ttu-id="826f4-104">連絡先を削除します。</span><span class="sxs-lookup"><span data-stu-id="826f4-104">Delete a contact.</span></span>
-## <a name="permissions"></a><span data-ttu-id="826f4-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="826f4-105">Permissions</span></span>
-<span data-ttu-id="826f4-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="826f4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="d2fcb-104">連絡先を削除します。</span><span class="sxs-lookup"><span data-stu-id="d2fcb-104">Delete a contact.</span></span>
+## <a name="permissions"></a><span data-ttu-id="d2fcb-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="d2fcb-105">Permissions</span></span>
+<span data-ttu-id="d2fcb-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d2fcb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="826f4-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="826f4-108">Permission type</span></span>      | <span data-ttu-id="826f4-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="826f4-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="d2fcb-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="d2fcb-108">Permission type</span></span>      | <span data-ttu-id="d2fcb-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="d2fcb-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="826f4-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="826f4-110">Delegated (work or school account)</span></span> | <span data-ttu-id="826f4-111">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="826f4-111">Contacts.ReadWrite</span></span>    |
-|<span data-ttu-id="826f4-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="826f4-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="826f4-113">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="826f4-113">Contacts.ReadWrite</span></span>    |
-|<span data-ttu-id="826f4-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="826f4-114">Application</span></span> | <span data-ttu-id="826f4-115">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="826f4-115">Contacts.ReadWrite</span></span> |
+|<span data-ttu-id="d2fcb-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="d2fcb-110">Delegated (work or school account)</span></span> | <span data-ttu-id="d2fcb-111">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d2fcb-111">Contacts.ReadWrite</span></span>    |
+|<span data-ttu-id="d2fcb-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="d2fcb-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d2fcb-113">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d2fcb-113">Contacts.ReadWrite</span></span>    |
+|<span data-ttu-id="d2fcb-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="d2fcb-114">Application</span></span> | <span data-ttu-id="d2fcb-115">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d2fcb-115">Contacts.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="826f4-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="826f4-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d2fcb-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="d2fcb-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
-<span data-ttu-id="826f4-117">ユーザーの既定 [contactFolder](../resources/contactfolder.md) からの [連絡先](../resources/contact.md)。</span><span class="sxs-lookup"><span data-stu-id="826f4-117">A [contact](../resources/contact.md) from a user's default [contactFolder](../resources/contactfolder.md).</span></span>
+<span data-ttu-id="d2fcb-117">ユーザーの既定 [contactFolder](../resources/contactfolder.md) からの [連絡先](../resources/contact.md)。</span><span class="sxs-lookup"><span data-stu-id="d2fcb-117">A [contact](../resources/contact.md) from a user's default [contactFolder](../resources/contactfolder.md).</span></span>
 ```http
 DELETE /me/contacts/{id}
 DELETE /users/{id | userPrincipalName}/contacts/{id}
 ```
-<span data-ttu-id="826f4-118">ユーザーの最上位レベル [contactFolder](../resources/contactfolder.md) からの [連絡先](../resources/contact.md)。</span><span class="sxs-lookup"><span data-stu-id="826f4-118">A [contact](../resources/contact.md) from a user's top level [contactFolder](../resources/contactfolder.md).</span></span>
+<span data-ttu-id="d2fcb-118">ユーザーの最上位レベル [contactFolder](../resources/contactfolder.md) からの [連絡先](../resources/contact.md)。</span><span class="sxs-lookup"><span data-stu-id="d2fcb-118">A [contact](../resources/contact.md) from a user's top level [contactFolder](../resources/contactfolder.md).</span></span>
 ```http
 DELETE /me/contactFolders/{id}/contacts/{id}
 DELETE /users/{id | userPrincipalName}/contactFolders/{id}/contacts/{id}
 ```
-<span data-ttu-id="826f4-p102">[contactFolder](../resources/mailfolder.md) の子フォルダー内に含まれる [連絡先](../resources/contact.md)。次の例は、入れ子のレベルの 1 つを示していますが、連絡先は子の子などに入れることができます。</span><span class="sxs-lookup"><span data-stu-id="826f4-p102">A [contact](../resources/contact.md) contained in a child folder of a [contactFolder](../resources/mailfolder.md). The example below shows one level of nesting, but a contact can be located in a child of a child and so on.</span></span>
+<span data-ttu-id="d2fcb-p102">[contactFolder](../resources/mailfolder.md) の子フォルダー内に含まれる [連絡先](../resources/contact.md)。次の例は、入れ子のレベルの 1 つを示していますが、連絡先は子の子などに入れることができます。</span><span class="sxs-lookup"><span data-stu-id="d2fcb-p102">A [contact](../resources/contact.md) contained in a child folder of a [contactFolder](../resources/mailfolder.md). The example below shows one level of nesting, but a contact can be located in a child of a child and so on.</span></span>
 ```http
 DELETE /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
 DELETE /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="826f4-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="826f4-121">Request headers</span></span>
-| <span data-ttu-id="826f4-122">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="826f4-122">Header</span></span>       | <span data-ttu-id="826f4-123">値</span><span class="sxs-lookup"><span data-stu-id="826f4-123">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="d2fcb-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="d2fcb-121">Request headers</span></span>
+| <span data-ttu-id="d2fcb-122">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="d2fcb-122">Header</span></span>       | <span data-ttu-id="d2fcb-123">値</span><span class="sxs-lookup"><span data-stu-id="d2fcb-123">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="826f4-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="826f4-124">Authorization</span></span>  | <span data-ttu-id="826f4-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="826f4-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="d2fcb-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="d2fcb-124">Authorization</span></span>  | <span data-ttu-id="d2fcb-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="d2fcb-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="826f4-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="826f4-127">Request body</span></span>
-<span data-ttu-id="826f4-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="826f4-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d2fcb-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="d2fcb-127">Request body</span></span>
+<span data-ttu-id="d2fcb-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="d2fcb-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="826f4-129">応答</span><span class="sxs-lookup"><span data-stu-id="826f4-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d2fcb-129">応答</span><span class="sxs-lookup"><span data-stu-id="d2fcb-129">Response</span></span>
 
-<span data-ttu-id="826f4-p104">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="826f4-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="d2fcb-p104">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="d2fcb-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="826f4-132">例</span><span class="sxs-lookup"><span data-stu-id="826f4-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="826f4-133">要求</span><span class="sxs-lookup"><span data-stu-id="826f4-133">Request</span></span>
-<span data-ttu-id="826f4-134">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="826f4-134">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="d2fcb-132">例</span><span class="sxs-lookup"><span data-stu-id="d2fcb-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="d2fcb-133">要求</span><span class="sxs-lookup"><span data-stu-id="d2fcb-133">Request</span></span>
+<span data-ttu-id="d2fcb-134">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="d2fcb-134">Here is an example of the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="d2fcb-135">プロトコル</span><span class="sxs-lookup"><span data-stu-id="d2fcb-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_contact"
@@ -62,8 +64,22 @@ DELETE /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/con
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/contacts/{id}
 ```
-##### <a name="response"></a><span data-ttu-id="826f4-135">応答</span><span class="sxs-lookup"><span data-stu-id="826f4-135">Response</span></span>
-<span data-ttu-id="826f4-p105">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="826f4-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+# <a name="ctabcsharp"></a>[<span data-ttu-id="d2fcb-136">C#</span><span class="sxs-lookup"><span data-stu-id="d2fcb-136">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-contact-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="d2fcb-137">Javascript</span><span class="sxs-lookup"><span data-stu-id="d2fcb-137">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-contact-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="d2fcb-138">目的-C</span><span class="sxs-lookup"><span data-stu-id="d2fcb-138">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-contact-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+##### <a name="response"></a><span data-ttu-id="d2fcb-139">応答</span><span class="sxs-lookup"><span data-stu-id="d2fcb-139">Response</span></span>
+<span data-ttu-id="d2fcb-p105">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="d2fcb-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -71,18 +87,6 @@ DELETE https://graph.microsoft.com/v1.0/me/contacts/{id}
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="826f4-139">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="826f4-139">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="826f4-140">C#</span><span class="sxs-lookup"><span data-stu-id="826f4-140">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/delete_contact-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="826f4-141">Javascript</span><span class="sxs-lookup"><span data-stu-id="826f4-141">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/delete_contact-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="826f4-142">目的-C</span><span class="sxs-lookup"><span data-stu-id="826f4-142">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/delete_contact-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -93,8 +97,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/contact-delete.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/v1.0/api/contact-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/contact-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

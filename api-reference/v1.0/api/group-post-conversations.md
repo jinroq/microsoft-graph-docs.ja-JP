@@ -4,50 +4,52 @@ description: 'スレッドと投稿を含めて、新しい会話を作成しま
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 050da9afc047f895872c79b85167df6f1adee2cb
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: f5234a380644c9b1d0ea59a7dec53cf74f56283a
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35277848"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35456415"
 ---
-# <a name="create-conversation"></a><span data-ttu-id="f5baf-103">会話を作成する</span><span class="sxs-lookup"><span data-stu-id="f5baf-103">Create conversation</span></span>
-<span data-ttu-id="f5baf-104">スレッドと投稿を含めて、新しい[会話](../resources/conversation.md)を作成します。</span><span class="sxs-lookup"><span data-stu-id="f5baf-104">Create a new [conversation](../resources/conversation.md) by including a thread and a post.</span></span> 
+# <a name="create-conversation"></a><span data-ttu-id="3486b-103">会話を作成する</span><span class="sxs-lookup"><span data-stu-id="3486b-103">Create conversation</span></span>
+<span data-ttu-id="3486b-104">スレッドと投稿を含めて、新しい[会話](../resources/conversation.md)を作成します。</span><span class="sxs-lookup"><span data-stu-id="3486b-104">Create a new [conversation](../resources/conversation.md) by including a thread and a post.</span></span> 
 
-<span data-ttu-id="f5baf-105">[スレッドに返信](conversationthread-reply.md)または[投稿に返信](post-reply.md)を使い、その会話への投稿を続けます。</span><span class="sxs-lookup"><span data-stu-id="f5baf-105">Use [reply thread](conversationthread-reply.md) or [reply post](post-reply.md) to further post to that conversation.</span></span>
+<span data-ttu-id="3486b-105">[スレッドに返信](conversationthread-reply.md)または[投稿に返信](post-reply.md)を使い、その会話への投稿を続けます。</span><span class="sxs-lookup"><span data-stu-id="3486b-105">Use [reply thread](conversationthread-reply.md) or [reply post](post-reply.md) to further post to that conversation.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f5baf-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="f5baf-106">Permissions</span></span>
-<span data-ttu-id="f5baf-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f5baf-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="3486b-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="3486b-106">Permissions</span></span>
+<span data-ttu-id="3486b-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="3486b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f5baf-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="f5baf-109">Permission type</span></span>      | <span data-ttu-id="f5baf-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="f5baf-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="3486b-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="3486b-109">Permission type</span></span>      | <span data-ttu-id="3486b-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="3486b-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f5baf-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="f5baf-111">Delegated (work or school account)</span></span> | <span data-ttu-id="f5baf-112">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f5baf-112">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="f5baf-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="f5baf-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f5baf-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f5baf-114">Not supported.</span></span>    |
-|<span data-ttu-id="f5baf-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="f5baf-115">Application</span></span> | <span data-ttu-id="f5baf-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f5baf-116">Not supported.</span></span> |
+|<span data-ttu-id="3486b-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="3486b-111">Delegated (work or school account)</span></span> | <span data-ttu-id="3486b-112">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3486b-112">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="3486b-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="3486b-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3486b-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="3486b-114">Not supported.</span></span>    |
+|<span data-ttu-id="3486b-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="3486b-115">Application</span></span> | <span data-ttu-id="3486b-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="3486b-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f5baf-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="f5baf-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3486b-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="3486b-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/conversations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="f5baf-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f5baf-118">Request headers</span></span>
-| <span data-ttu-id="f5baf-119">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f5baf-119">Header</span></span>       | <span data-ttu-id="f5baf-120">値</span><span class="sxs-lookup"><span data-stu-id="f5baf-120">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="3486b-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="3486b-118">Request headers</span></span>
+| <span data-ttu-id="3486b-119">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="3486b-119">Header</span></span>       | <span data-ttu-id="3486b-120">値</span><span class="sxs-lookup"><span data-stu-id="3486b-120">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="f5baf-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="f5baf-121">Authorization</span></span>  | <span data-ttu-id="f5baf-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="f5baf-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="f5baf-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="f5baf-124">Content-Type</span></span>  | <span data-ttu-id="f5baf-125">application/json</span><span class="sxs-lookup"><span data-stu-id="f5baf-125">application/json</span></span>  |
+| <span data-ttu-id="3486b-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="3486b-121">Authorization</span></span>  | <span data-ttu-id="3486b-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="3486b-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="3486b-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="3486b-124">Content-Type</span></span>  | <span data-ttu-id="3486b-125">application/json</span><span class="sxs-lookup"><span data-stu-id="3486b-125">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="f5baf-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="f5baf-126">Request body</span></span>
-<span data-ttu-id="f5baf-127">要求の本文に、[conversationThread](../resources/conversationthread.md) と [投稿](../resources/post.md) を含む [会話](../resources/conversation.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="f5baf-127">In the request body, supply a JSON representation of [conversation](../resources/conversation.md) object containing a [conversationThread](../resources/conversationthread.md) and a [post](../resources/post.md).</span></span>
+## <a name="request-body"></a><span data-ttu-id="3486b-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="3486b-126">Request body</span></span>
+<span data-ttu-id="3486b-127">要求の本文に、[conversationThread](../resources/conversationthread.md) と [投稿](../resources/post.md) を含む [会話](../resources/conversation.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="3486b-127">In the request body, supply a JSON representation of [conversation](../resources/conversation.md) object containing a [conversationThread](../resources/conversationthread.md) and a [post](../resources/post.md).</span></span>
 
-## <a name="response"></a><span data-ttu-id="f5baf-128">応答</span><span class="sxs-lookup"><span data-stu-id="f5baf-128">Response</span></span>
-<span data-ttu-id="f5baf-129">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で[会話](../resources/conversation.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="f5baf-129">If successful, this method returns `201 Created` response code and [conversation](../resources/conversation.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="3486b-128">応答</span><span class="sxs-lookup"><span data-stu-id="3486b-128">Response</span></span>
+<span data-ttu-id="3486b-129">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で[会話](../resources/conversation.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="3486b-129">If successful, this method returns `201 Created` response code and [conversation](../resources/conversation.md) object in the response body.</span></span>
 
-<span data-ttu-id="f5baf-130">応答には、新しい会話とスレッドの ID が含まれます。これらの ID は、[投稿の一覧表示](conversationthread-list-posts.md)の操作時の新しい投稿の取得に使用することもできます。</span><span class="sxs-lookup"><span data-stu-id="f5baf-130">The response includes the IDs for the new conversation and thread, which you can use in the [list posts](conversationthread-list-posts.md) operation to get the new post as well.</span></span>
+<span data-ttu-id="3486b-130">応答には、新しい会話とスレッドの ID が含まれます。これらの ID は、[投稿の一覧表示](conversationthread-list-posts.md)の操作時の新しい投稿の取得に使用することもできます。</span><span class="sxs-lookup"><span data-stu-id="3486b-130">The response includes the IDs for the new conversation and thread, which you can use in the [list posts](conversationthread-list-posts.md) operation to get the new post as well.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f5baf-131">例</span><span class="sxs-lookup"><span data-stu-id="f5baf-131">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="f5baf-132">要求</span><span class="sxs-lookup"><span data-stu-id="f5baf-132">Request</span></span>
-<span data-ttu-id="f5baf-133">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="f5baf-133">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="3486b-131">例</span><span class="sxs-lookup"><span data-stu-id="3486b-131">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="3486b-132">要求</span><span class="sxs-lookup"><span data-stu-id="3486b-132">Request</span></span>
+<span data-ttu-id="3486b-133">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="3486b-133">The following is an example of the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="3486b-134">プロトコル</span><span class="sxs-lookup"><span data-stu-id="3486b-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["29981b6a-0e57-42dc-94c9-cd24f5306196"],
@@ -81,10 +83,24 @@ Content-type: application/json
     ]
 }
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="3486b-135">C#</span><span class="sxs-lookup"><span data-stu-id="3486b-135">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-conversation-from-group-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="f5baf-134">応答</span><span class="sxs-lookup"><span data-stu-id="f5baf-134">Response</span></span>
-<span data-ttu-id="f5baf-135">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="f5baf-135">The following is an example of the response.</span></span>
-><span data-ttu-id="f5baf-p103">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="f5baf-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="3486b-136">Javascript</span><span class="sxs-lookup"><span data-stu-id="3486b-136">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-conversation-from-group-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="3486b-137">目的-C</span><span class="sxs-lookup"><span data-stu-id="3486b-137">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-conversation-from-group-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="3486b-138">応答</span><span class="sxs-lookup"><span data-stu-id="3486b-138">Response</span></span>
+<span data-ttu-id="3486b-139">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="3486b-139">The following is an example of the response.</span></span>
+><span data-ttu-id="3486b-p103">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="3486b-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -106,18 +122,6 @@ Content-type: application/json
     ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="f5baf-138">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="f5baf-138">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="f5baf-139">C#</span><span class="sxs-lookup"><span data-stu-id="f5baf-139">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/create_conversation_from_group-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f5baf-140">Javascript</span><span class="sxs-lookup"><span data-stu-id="f5baf-140">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create_conversation_from_group-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="f5baf-141">目的-C</span><span class="sxs-lookup"><span data-stu-id="f5baf-141">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/create_conversation_from_group-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -128,8 +132,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/group-post-conversations.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/v1.0/api/group-post-conversations.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/group-post-conversations.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

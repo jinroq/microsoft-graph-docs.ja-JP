@@ -4,32 +4,32 @@ ms.author: dspektor
 title: Websocket エンドポイントを取得する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: f14f13d3c84d3f352d03ea5533649614367b7e48
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 56a932010801963b4e95bd0009fef0c982c89893
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35276994"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35446039"
 ---
-# <a name="get-websocket-endpoint"></a><span data-ttu-id="6751c-102">Websocket エンドポイントを取得する</span><span class="sxs-lookup"><span data-stu-id="6751c-102">Get websocket endpoint</span></span>
+# <a name="get-websocket-endpoint"></a><span data-ttu-id="a6db0-102">Websocket エンドポイントを取得する</span><span class="sxs-lookup"><span data-stu-id="a6db0-102">Get websocket endpoint</span></span>
 
-<span data-ttu-id="6751c-103">[Socket.io][]を使用して、[ドライブ][]のほぼリアルタイムの変更通知を受け取ることができます。</span><span class="sxs-lookup"><span data-stu-id="6751c-103">Allows you to receive near-real-time change notifications for a [drive][] using [socket.io][].</span></span>
-<span data-ttu-id="6751c-104">Socket.io は、Websocket を利用する JavaScript の一般的な通知ライブラリです。</span><span class="sxs-lookup"><span data-stu-id="6751c-104">Socket.io is a popular notifications library for JavaScript that utilizes WebSockets.</span></span> <span data-ttu-id="6751c-105">詳細については、「 [socket.io](https://socket.io)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6751c-105">To learn more, see [socket.io](https://socket.io).</span></span>
+<span data-ttu-id="a6db0-103">[Socket.io][]を使用して、[ドライブ][]のほぼリアルタイムの変更通知を受け取ることができます。</span><span class="sxs-lookup"><span data-stu-id="a6db0-103">Allows you to receive near-real-time change notifications for a [drive][] using [socket.io][].</span></span>
+<span data-ttu-id="a6db0-104">Socket.io は、Websocket を利用する JavaScript の一般的な通知ライブラリです。</span><span class="sxs-lookup"><span data-stu-id="a6db0-104">Socket.io is a popular notifications library for JavaScript that utilizes WebSockets.</span></span> <span data-ttu-id="a6db0-105">詳細については、「 [socket.io](https://socket.io)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a6db0-105">To learn more, see [socket.io](https://socket.io).</span></span>
 
 [drive]: ../resources/drive.md
 [socket.io]: https://socket.io/
 
-## <a name="permissions"></a><span data-ttu-id="6751c-108">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="6751c-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="a6db0-108">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="a6db0-108">Permissions</span></span>
 
-<span data-ttu-id="6751c-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6751c-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a6db0-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a6db0-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="6751c-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="6751c-111">Permission type</span></span>                        | <span data-ttu-id="6751c-112">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="6751c-112">Permissions (from least to most privileged)</span></span>
+| <span data-ttu-id="a6db0-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="a6db0-111">Permission type</span></span>                        | <span data-ttu-id="a6db0-112">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="a6db0-112">Permissions (from least to most privileged)</span></span>
 |:---------------------------------------|:-------------------------------------------
-| <span data-ttu-id="6751c-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="6751c-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="6751c-114">ファイル。読み取り、ファイルの読み取り/書き込み。すべてのファイル。</span><span class="sxs-lookup"><span data-stu-id="6751c-114">Files.Read, Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>
-| <span data-ttu-id="6751c-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="6751c-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6751c-116">ファイル。読み取り、ファイルの読み取り/書き込み。</span><span class="sxs-lookup"><span data-stu-id="6751c-116">Files.Read, Files.ReadWrite, Files.ReadWrite.All</span></span>
-| <span data-ttu-id="6751c-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="6751c-117">Application</span></span>                            | <span data-ttu-id="6751c-118">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="6751c-118">Not supported.</span></span>
+| <span data-ttu-id="a6db0-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="a6db0-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="a6db0-114">ファイル。読み取り、ファイルの読み取り/書き込み。すべてのファイル。</span><span class="sxs-lookup"><span data-stu-id="a6db0-114">Files.Read, Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>
+| <span data-ttu-id="a6db0-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="a6db0-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a6db0-116">ファイル。読み取り、ファイルの読み取り/書き込み。</span><span class="sxs-lookup"><span data-stu-id="a6db0-116">Files.Read, Files.ReadWrite, Files.ReadWrite.All</span></span>
+| <span data-ttu-id="a6db0-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="a6db0-117">Application</span></span>                            | <span data-ttu-id="a6db0-118">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a6db0-118">Not supported.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="6751c-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="6751c-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a6db0-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="a6db0-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -40,18 +40,34 @@ GET /groups/{groupId}/drive/root/subscriptions/socketIo
 GET /sites/{siteId}/lists/{listId}/drive/root/subscriptions/socketIo
 ```
 
-## <a name="example"></a><span data-ttu-id="6751c-120">例</span><span class="sxs-lookup"><span data-stu-id="6751c-120">Example</span></span>
+## <a name="example"></a><span data-ttu-id="a6db0-120">例</span><span class="sxs-lookup"><span data-stu-id="a6db0-120">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="6751c-121">要求</span><span class="sxs-lookup"><span data-stu-id="6751c-121">Request</span></span>
+### <a name="request"></a><span data-ttu-id="a6db0-121">要求</span><span class="sxs-lookup"><span data-stu-id="a6db0-121">Request</span></span>
 
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="a6db0-122">プロトコル</span><span class="sxs-lookup"><span data-stu-id="a6db0-122">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "drive_root_subscriptions_socketIo" } -->
 ```http
 GET /me/drive/root/subscriptions/socketIo
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="a6db0-123">C#</span><span class="sxs-lookup"><span data-stu-id="a6db0-123">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/drive-root-subscriptions-socketio-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a><span data-ttu-id="6751c-122">応答</span><span class="sxs-lookup"><span data-stu-id="6751c-122">Response</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a6db0-124">Javascript</span><span class="sxs-lookup"><span data-stu-id="a6db0-124">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/drive-root-subscriptions-socketio-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="6751c-123">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[subscription](../resources/subscription.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="6751c-123">If successful, this method returns a `200 OK` response code and a [subscription](../resources/subscription.md) object in the response body.</span></span>
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="a6db0-125">目的-C</span><span class="sxs-lookup"><span data-stu-id="a6db0-125">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/drive-root-subscriptions-socketio-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### <a name="response"></a><span data-ttu-id="a6db0-126">応答</span><span class="sxs-lookup"><span data-stu-id="a6db0-126">Response</span></span>
+
+<span data-ttu-id="a6db0-127">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[subscription](../resources/subscription.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="a6db0-127">If successful, this method returns a `200 OK` response code and a [subscription](../resources/subscription.md) object in the response body.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -67,24 +83,12 @@ Content-type: application/json
   "notificationUrl": "https://f3hb0mpua.svc.ms/zbaehwg/callback?snthgk=1ff3-2345672zz831837523"
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="6751c-124">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="6751c-124">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="6751c-125">C#</span><span class="sxs-lookup"><span data-stu-id="6751c-125">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/drive_root_subscriptions_socketIo-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="6751c-126">Javascript</span><span class="sxs-lookup"><span data-stu-id="6751c-126">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/drive_root_subscriptions_socketIo-Javascript-snippets.md)]
+<span data-ttu-id="a6db0-128">返さ`notificationUrl`れるのは、socket.io エンドポイントの URL です。</span><span class="sxs-lookup"><span data-stu-id="a6db0-128">The `notificationUrl` returned is a socket.io endpoint URL.</span></span>
+<span data-ttu-id="a6db0-129">Socket.io クライアントでこれを使用するには、 `/callback?`トークンの文字列を分割します。</span><span class="sxs-lookup"><span data-stu-id="a6db0-129">To use it with a socket.io client, split the string on the `/callback?` token.</span></span>
+<span data-ttu-id="a6db0-130">Before `/callback?`文字列の部分は socket.io エンドポイント URL で、after 文字列の部分は、ライブラリに指定する必要がある非透過のクエリ文字列です。</span><span class="sxs-lookup"><span data-stu-id="a6db0-130">The part of the string before `/callback?` is the socket.io endpoint URL and the part of the string after is an opaque query string that must be given to the libary.</span></span>
 
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="6751c-127">目的-C</span><span class="sxs-lookup"><span data-stu-id="6751c-127">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/drive_root_subscriptions_socketIo-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
-
-<span data-ttu-id="6751c-128">返さ`notificationUrl`れるのは、socket.io エンドポイントの URL です。</span><span class="sxs-lookup"><span data-stu-id="6751c-128">The `notificationUrl` returned is a socket.io endpoint URL.</span></span>
-<span data-ttu-id="6751c-129">Socket.io クライアントでこれを使用するには、 `/callback?`トークンの文字列を分割します。</span><span class="sxs-lookup"><span data-stu-id="6751c-129">To use it with a socket.io client, split the string on the `/callback?` token.</span></span>
-<span data-ttu-id="6751c-130">Before `/callback?`文字列の部分は socket.io エンドポイント URL で、after 文字列の部分は、ライブラリに指定する必要がある非透過のクエリ文字列です。</span><span class="sxs-lookup"><span data-stu-id="6751c-130">The part of the string before `/callback?` is the socket.io endpoint URL and the part of the string after is an opaque query string that must be given to the libary.</span></span>
-
-<span data-ttu-id="6751c-131">次の例は、 `notificationUrl` JavaScript で with socket.io を使用する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="6751c-131">The following example shows how to use the `notificationUrl` with socket.io in JavaScript.</span></span>
+<span data-ttu-id="a6db0-131">次の例は、 `notificationUrl` JavaScript で with socket.io を使用する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="a6db0-131">The following example shows how to use the `notificationUrl` with socket.io in JavaScript.</span></span>
 
 ```javascript
 // this is the notificationUrl returned from this API
@@ -111,8 +115,5 @@ socket.on("notification", (data)=>console.log("Notification!", data));
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/driveItem-subscriptions-socketio.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/v1.0/api/driveItem-subscriptions-socketio.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/driveItem-subscriptions-socketio.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->
