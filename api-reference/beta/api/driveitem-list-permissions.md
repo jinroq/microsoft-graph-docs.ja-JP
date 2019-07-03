@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: ファイルへのアクセス権を持つユーザーを一覧表示する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 686987a4027ae157a683de6fea9d9f619f38dbd2
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 780a1433b28d9cb13a69d2c5b5e17670b1fe8853
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35260097"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35436369"
 ---
 # <a name="list-sharing-permissions-on-a-driveitem"></a>DriveItem の共有アクセス許可を一覧表示する
 
@@ -76,11 +76,27 @@ DriveItem の有効な共有アクセス許可は、次の 2 つのソースが�
 
 この例では、サインイン ユーザーのドライブ内のアイテムに対するアクセス許可のコレクションを取得します。
 
+
+# <a name="httptabhttp"></a>[プロトコル](#tab/http)
 <!-- { "blockType": "request", "name": "get-item-permissions", "scopes": "files.read" } -->
 
 ```http
 GET /me/drive/items/{item-id}/permissions
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-item-permissions-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-item-permissions-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-item-permissions-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>応答
 
@@ -131,18 +147,6 @@ Content-Type: application/json
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプル コード
-# <a name="ctabcs"></a>[C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/get-item-permissions-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get-item-permissions-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[目的-C](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/get-item-permissions-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="remarks"></a>備考
 
@@ -162,9 +166,6 @@ DriveItem の **permissions** リレーションシップは、[DriveItem の取
   "section": "documentation",
   "tocPath": "Sharing/Permissions",
   "suppressions": [
-    "Error: /api-reference/beta/api/driveitem-list-permissions.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/driveitem-list-permissions.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/driveitem-list-permissions.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

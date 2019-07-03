@@ -4,12 +4,12 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: アクセス許可の取得
 localization_priority: Normal
-ms.openlocfilehash: 24107b2285c5474f3104ceb9e4a9876608a59bdd
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 248d0d0dc54ada045441b76e86df43ae1ffa4b7e
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35268419"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35454301"
 ---
 # <a name="get-sharing-permission-for-a-file-or-folder"></a>ファイルまたはフォルダーの共有アクセス許可を取得する
 
@@ -59,11 +59,27 @@ GET /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 以下は、フォルダーのアクセス許可にアクセスするための要求の例です。
 
+
+# <a name="httptabhttp"></a>[プロトコル](#tab/http)
 <!-- { "blockType": "request", "name": "get-item-permission", "scopes": "files.read" } -->
 
 ```http
 GET https://graph.microsoft.com/beta/me/drive/items/{item-id}/permissions/{perm-id}
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-item-permission-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-item-permission-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-item-permission-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### <a name="response"></a>応答
 
 成功した場合、このメソッドは、指定された ID の [Permission](../resources/permission.md) リソースを返します。 
@@ -85,18 +101,6 @@ Content-type: application/json
   "roles": [ "write" ]
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプル コード
-# <a name="ctabcs"></a>[C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/get-item-permission-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get-item-permission-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[目的-C](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/get-item-permission-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="remarks"></a>備考
 
@@ -116,9 +120,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "OneDrive/Item/Get permission",
   "suppressions": [
-    "Error: /api-reference/beta/api/permission-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/permission-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/permission-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

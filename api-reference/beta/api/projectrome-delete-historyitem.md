@@ -3,12 +3,12 @@ title: 履歴項目を削除する
 description: 既存のユーザーアクティビティの既存の履歴項目を削除します。
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 5a3cac83c220a8fa15a3d5277af319117bd7c927
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 641b7ea0f9ff3a1e705c565f60d9ed6ac88f4485
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35264065"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35455442"
 ---
 # <a name="delete-a-historyitem"></a>履歴項目を削除する
 
@@ -55,6 +55,8 @@ DELETE /me/activities/{id}/historyItems/{id}
 
 以下は、要求の例です。
 
+
+# <a name="httptabhttp"></a>[プロトコル](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_historyItem"
@@ -63,6 +65,12 @@ DELETE /me/activities/{id}/historyItems/{id}
 ```http
 PUT https://graph.microsoft.com/beta/me/activities/13881113971988980728/historyItems/390e06e2-7e5b-4133-8014-fac7ac5991af
 ```
+# <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-historyitem-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### <a name="response"></a>応答
 
@@ -76,14 +84,6 @@ PUT https://graph.microsoft.com/beta/me/activities/13881113971988980728/historyI
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプル コード
-
-# <a name="objective-ctabobjective-c"></a>[目的-C](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/delete_historyItem-Objective-C-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-07 14:57:30 UTC -->
@@ -95,7 +95,6 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/projectrome-delete-historyitem.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)"
   ]
 }
 -->
