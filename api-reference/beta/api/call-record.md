@@ -4,12 +4,12 @@ description: 通話を録音します。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4e864027297f9b96dd6ce3a1ecb08e59444c5cef
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: fad06769f81b9840b89a43cf3e759c86454edef0
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33635723"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35438630"
 ---
 # <a name="call-record"></a>通話: レコード
 
@@ -50,7 +50,7 @@ POST /applications/{id}/calls/{id}/record
 |maxRecordDurationInSeconds|Int32| 最大レコード期間 (秒単位)。|
 |再生のビープ音|Boolean| プロンプトを再生した後、ビープ音を鳴らします。|
 |streamWhileRecording|Boolean|True に設定すると、レコーディングが開始されるとすぐにリソースの場所が提供されます。 |
-|stopTones|String collection|録音を終了するために指定されたトーンを停止します。|
+|stopTones|文字列コレクション|録音を終了するために指定されたトーンを停止します。|
 |clientContext|String|クライアントコンテキスト。|
 
 ## <a name="response"></a>応答
@@ -62,6 +62,8 @@ POST /applications/{id}/calls/{id}/record
 ##### <a name="request"></a>要求
 次の例は要求を示しています。
 
+
+# <a name="httptabhttp"></a>[プロトコル](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-record"
@@ -93,10 +95,16 @@ Content-Length: 394
   "stopTones": [ "#", "11", "*" ]
 }
 ```
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/call-record-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### <a name="response"></a>応答
 
-> **注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
+> **注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 
 <!-- {
   "blockType": "response",
@@ -107,14 +115,6 @@ Content-Length: 394
 HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 ```
-#### <a name="sdk-sample-code"></a>SDK サンプルコード
-
-# <a name="javascripttabjavascript"></a>[Java](#tab/javascript)
-[!INCLUDE [sample-code](../includes/call-record-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ##### <a name="notification---operation-completed"></a>通知-操作が完了しました
 
@@ -159,7 +159,6 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/call-record.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->
