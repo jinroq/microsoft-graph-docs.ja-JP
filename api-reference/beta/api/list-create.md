@@ -5,30 +5,30 @@ ms.date: 09/11/2017
 title: SharePoint リストを作成する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: d0de56a1fac8ecaa15e0f54ba0dda48d19cf868d
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: d27bb8827d201280ffb9b7ab6f41c3c4c18dc3b7
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35264585"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35449233"
 ---
-# <a name="create-a-new-list"></a><span data-ttu-id="2cb02-102">新しいリストを作成する</span><span class="sxs-lookup"><span data-stu-id="2cb02-102">Create a new list</span></span>
+# <a name="create-a-new-list"></a><span data-ttu-id="9d0ec-102">新しいリストを作成する</span><span class="sxs-lookup"><span data-stu-id="9d0ec-102">Create a new list</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="2cb02-103">[site][] で新しい [list][] を作成します。</span><span class="sxs-lookup"><span data-stu-id="2cb02-103">Create a new [list][] in a [site][].</span></span>
+<span data-ttu-id="9d0ec-103">[site][] で新しい [list][] を作成します。</span><span class="sxs-lookup"><span data-stu-id="9d0ec-103">Create a new [list][] in a [site][].</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2cb02-104">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="2cb02-104">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="9d0ec-104">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="9d0ec-104">Permissions</span></span>
 
-<span data-ttu-id="2cb02-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2cb02-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="9d0ec-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="9d0ec-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|            <span data-ttu-id="2cb02-107">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="2cb02-107">Permission type</span></span>             | <span data-ttu-id="2cb02-108">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="2cb02-108">Permissions (from least to most privileged)</span></span> |
+|            <span data-ttu-id="9d0ec-107">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="9d0ec-107">Permission type</span></span>             | <span data-ttu-id="9d0ec-108">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="9d0ec-108">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :------------------------------------------ |
-| <span data-ttu-id="2cb02-109">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="2cb02-109">Delegated (work or school account)</span></span>     | <span data-ttu-id="2cb02-110">Sites.Manage.All</span><span class="sxs-lookup"><span data-stu-id="2cb02-110">Sites.Manage.All</span></span>                            |
-| <span data-ttu-id="2cb02-111">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="2cb02-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2cb02-112">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="2cb02-112">Not supported.</span></span>                              |
-| <span data-ttu-id="2cb02-113">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="2cb02-113">Application</span></span>                            | <span data-ttu-id="2cb02-114">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2cb02-114">Sites.ReadWrite.All</span></span>                         |
+| <span data-ttu-id="9d0ec-109">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="9d0ec-109">Delegated (work or school account)</span></span>     | <span data-ttu-id="9d0ec-110">Sites.Manage.All</span><span class="sxs-lookup"><span data-stu-id="9d0ec-110">Sites.Manage.All</span></span>                            |
+| <span data-ttu-id="9d0ec-111">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="9d0ec-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9d0ec-112">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="9d0ec-112">Not supported.</span></span>                              |
+| <span data-ttu-id="9d0ec-113">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="9d0ec-113">Application</span></span>                            | <span data-ttu-id="9d0ec-114">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9d0ec-114">Sites.ReadWrite.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="2cb02-115">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="2cb02-115">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9d0ec-115">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="9d0ec-115">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,14 +36,16 @@ ms.locfileid: "35264585"
 POST https://graph.microsoft.com/beta/sites/{site-id}/lists
 ```
 
-## <a name="request-body"></a><span data-ttu-id="2cb02-116">要求本文</span><span class="sxs-lookup"><span data-stu-id="2cb02-116">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="9d0ec-116">要求本文</span><span class="sxs-lookup"><span data-stu-id="9d0ec-116">Request body</span></span>
 
-<span data-ttu-id="2cb02-117">要求本文で、作成する [list][] リソースの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="2cb02-117">In the request body, supply a JSON representation of the [list][] resource to create.</span></span>
+<span data-ttu-id="9d0ec-117">要求本文で、作成する [list][] リソースの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="9d0ec-117">In the request body, supply a JSON representation of the [list][] resource to create.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2cb02-118">例</span><span class="sxs-lookup"><span data-stu-id="2cb02-118">Example</span></span>
+## <a name="example"></a><span data-ttu-id="9d0ec-118">例</span><span class="sxs-lookup"><span data-stu-id="9d0ec-118">Example</span></span>
 
-<span data-ttu-id="2cb02-119">新しい汎用リストを作成する例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="2cb02-119">Here is an example of how to create a new generic list.</span></span>
+<span data-ttu-id="9d0ec-119">新しい汎用リストを作成する例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="9d0ec-119">Here is an example of how to create a new generic list.</span></span>
 
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="9d0ec-120">プロトコル</span><span class="sxs-lookup"><span data-stu-id="9d0ec-120">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "create-list", "scopes": "sites.readwrite.all" } -->
 
 ```http
@@ -67,15 +69,29 @@ Content-Type: application/json
   }
 }
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="9d0ec-121">C#</span><span class="sxs-lookup"><span data-stu-id="9d0ec-121">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-list-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="2cb02-120">**注:** カスタム列はオプションです。</span><span class="sxs-lookup"><span data-stu-id="2cb02-120">**Note:** Custom columns are optional.</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="9d0ec-122">Javascript</span><span class="sxs-lookup"><span data-stu-id="9d0ec-122">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-list-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="2cb02-121">ここで指定した列だけでなく、参照された **template** で定義された列も含めて、新しいリストが作成されます。</span><span class="sxs-lookup"><span data-stu-id="2cb02-121">In addition to any columns specified here, new lists are created with columns defined in the referenced **template**.</span></span>
-<span data-ttu-id="2cb02-122">**list** ファセットまたは **template** が指定されていない場合、リストは既定で _Title_ 列を含む `genericList` テンプレートとなります。</span><span class="sxs-lookup"><span data-stu-id="2cb02-122">If the **list** facet or **template** is unspecified, the list defaults to the `genericList` template, which includes a _Title_ column.</span></span>
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="9d0ec-123">目的-C</span><span class="sxs-lookup"><span data-stu-id="9d0ec-123">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-list-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-## <a name="response"></a><span data-ttu-id="2cb02-123">応答</span><span class="sxs-lookup"><span data-stu-id="2cb02-123">Response</span></span>
+---
 
-<span data-ttu-id="2cb02-124">成功した場合、このメソッドは作成されたリストの応答本文で [list][] を返します。</span><span class="sxs-lookup"><span data-stu-id="2cb02-124">If successful, this method returns a [list][] in the response body for the created list.</span></span>
+
+<span data-ttu-id="9d0ec-124">**注:** カスタム列はオプションです。</span><span class="sxs-lookup"><span data-stu-id="9d0ec-124">**Note:** Custom columns are optional.</span></span>
+
+<span data-ttu-id="9d0ec-125">ここで指定した列だけでなく、参照された **template** で定義された列も含めて、新しいリストが作成されます。</span><span class="sxs-lookup"><span data-stu-id="9d0ec-125">In addition to any columns specified here, new lists are created with columns defined in the referenced **template**.</span></span>
+<span data-ttu-id="9d0ec-126">**list** ファセットまたは **template** が指定されていない場合、リストは既定で _Title_ 列を含む `genericList` テンプレートとなります。</span><span class="sxs-lookup"><span data-stu-id="9d0ec-126">If the **list** facet or **template** is unspecified, the list defaults to the `genericList` template, which includes a _Title_ column.</span></span>
+
+## <a name="response"></a><span data-ttu-id="9d0ec-127">応答</span><span class="sxs-lookup"><span data-stu-id="9d0ec-127">Response</span></span>
+
+<span data-ttu-id="9d0ec-128">成功した場合、このメソッドは作成されたリストの応答本文で [list][] を返します。</span><span class="sxs-lookup"><span data-stu-id="9d0ec-128">If successful, this method returns a [list][] in the response body for the created list.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.list", "truncated": true } -->
 
@@ -101,21 +117,9 @@ Content-type: application/json
   }
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="2cb02-125">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="2cb02-125">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="2cb02-126">C#</span><span class="sxs-lookup"><span data-stu-id="2cb02-126">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/create-list-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="2cb02-127">Javascript</span><span class="sxs-lookup"><span data-stu-id="2cb02-127">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create-list-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="2cb02-128">目的-C</span><span class="sxs-lookup"><span data-stu-id="2cb02-128">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/create-list-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
-
-<span data-ttu-id="2cb02-129">**注:** 応答オブジェクトは、わかりやすくするために切り詰められています。</span><span class="sxs-lookup"><span data-stu-id="2cb02-129">**Note:** The response object is truncated for clarity.</span></span>
-<span data-ttu-id="2cb02-130">実際の呼び出しでは、既定のプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="2cb02-130">Default properties will be returned from the actual call.</span></span>
+<span data-ttu-id="9d0ec-129">**注:** 応答オブジェクトは、わかりやすくするために切り詰められています。</span><span class="sxs-lookup"><span data-stu-id="9d0ec-129">**Note:** The response object is truncated for clarity.</span></span>
+<span data-ttu-id="9d0ec-130">実際の呼び出しでは、既定のプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="9d0ec-130">Default properties will be returned from the actual call.</span></span>
 
 [list]: ../resources/list.md
 [サイト]: ../resources/site.md
@@ -129,9 +133,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "List/Create",
   "suppressions": [
-    "Error: /api-reference/beta/api/list-create.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/list-create.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/list-create.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

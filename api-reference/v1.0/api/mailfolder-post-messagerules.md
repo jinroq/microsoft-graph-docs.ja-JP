@@ -4,60 +4,62 @@ description: '条件とアクションのセットを指定して messageRule �
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: fb39494bc01e976f10a8de6a616ee37080d81477
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 75acac9a8f8778ce7e2999960761d72bc5aa0309
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35274985"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35454350"
 ---
-# <a name="create-rule"></a><span data-ttu-id="41ad9-103">ルールを作成する</span><span class="sxs-lookup"><span data-stu-id="41ad9-103">Create rule</span></span>
+# <a name="create-rule"></a><span data-ttu-id="26aa3-103">ルールを作成する</span><span class="sxs-lookup"><span data-stu-id="26aa3-103">Create rule</span></span>
 
 
-<span data-ttu-id="41ad9-104">条件とアクションのセットを指定して [messageRule](../resources/messagerule.md) オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="41ad9-104">Create a [messageRule](../resources/messagerule.md) object by specifying a set of conditions and actions.</span></span> 
+<span data-ttu-id="26aa3-104">条件とアクションのセットを指定して [messageRule](../resources/messagerule.md) オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="26aa3-104">Create a [messageRule](../resources/messagerule.md) object by specifying a set of conditions and actions.</span></span> 
 
-<span data-ttu-id="41ad9-105">Outlook では、ユーザーの受信トレイで受信したメッセージが指定した条件を満たしている場合に、それらのアクションが実行されます。</span><span class="sxs-lookup"><span data-stu-id="41ad9-105">Outlook carries out those actions if an incoming message in the user's Inbox meets the specified conditions.</span></span>
+<span data-ttu-id="26aa3-105">Outlook では、ユーザーの受信トレイで受信したメッセージが指定した条件を満たしている場合に、それらのアクションが実行されます。</span><span class="sxs-lookup"><span data-stu-id="26aa3-105">Outlook carries out those actions if an incoming message in the user's Inbox meets the specified conditions.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="41ad9-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="41ad9-106">Permissions</span></span>
-<span data-ttu-id="41ad9-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="41ad9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="26aa3-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="26aa3-106">Permissions</span></span>
+<span data-ttu-id="26aa3-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="26aa3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="41ad9-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="41ad9-109">Permission type</span></span>      | <span data-ttu-id="41ad9-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="41ad9-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="26aa3-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="26aa3-109">Permission type</span></span>      | <span data-ttu-id="26aa3-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="26aa3-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="41ad9-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="41ad9-111">Delegated (work or school account)</span></span> | <span data-ttu-id="41ad9-112">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="41ad9-112">MailboxSettings.ReadWrite</span></span>    |
-|<span data-ttu-id="41ad9-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="41ad9-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="41ad9-114">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="41ad9-114">MailboxSettings.ReadWrite</span></span>    |
-|<span data-ttu-id="41ad9-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="41ad9-115">Application</span></span> | <span data-ttu-id="41ad9-116">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="41ad9-116">MailboxSettings.ReadWrite</span></span> |
+|<span data-ttu-id="26aa3-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="26aa3-111">Delegated (work or school account)</span></span> | <span data-ttu-id="26aa3-112">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="26aa3-112">MailboxSettings.ReadWrite</span></span>    |
+|<span data-ttu-id="26aa3-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="26aa3-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="26aa3-114">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="26aa3-114">MailboxSettings.ReadWrite</span></span>    |
+|<span data-ttu-id="26aa3-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="26aa3-115">Application</span></span> | <span data-ttu-id="26aa3-116">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="26aa3-116">MailboxSettings.ReadWrite</span></span> |
 
 
-## <a name="http-request"></a><span data-ttu-id="41ad9-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="41ad9-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="26aa3-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="26aa3-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/mailFolders/inbox/messageRules
 POST /users/{id | userPrincipalName}/mailFolders/inbox/messageRules
 ```
-## <a name="request-headers"></a><span data-ttu-id="41ad9-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="41ad9-118">Request headers</span></span>
-| <span data-ttu-id="41ad9-119">名前</span><span class="sxs-lookup"><span data-stu-id="41ad9-119">Name</span></span>       | <span data-ttu-id="41ad9-120">説明</span><span class="sxs-lookup"><span data-stu-id="41ad9-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="26aa3-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="26aa3-118">Request headers</span></span>
+| <span data-ttu-id="26aa3-119">名前</span><span class="sxs-lookup"><span data-stu-id="26aa3-119">Name</span></span>       | <span data-ttu-id="26aa3-120">説明</span><span class="sxs-lookup"><span data-stu-id="26aa3-120">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="41ad9-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="41ad9-121">Authorization</span></span>  | <span data-ttu-id="41ad9-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="41ad9-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="26aa3-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="26aa3-121">Authorization</span></span>  | <span data-ttu-id="26aa3-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="26aa3-p102">Bearer {token}. Required.</span></span> |
 
 
-## <a name="request-body"></a><span data-ttu-id="41ad9-124">要求本文</span><span class="sxs-lookup"><span data-stu-id="41ad9-124">Request body</span></span>
-<span data-ttu-id="41ad9-125">要求本文に、ルールを適用するパラメーターを指定します。</span><span class="sxs-lookup"><span data-stu-id="41ad9-125">In the request body, supply the parameters that are applicable to your rule.</span></span> <span data-ttu-id="41ad9-126">ルールを作成する際に本文に通常指定するパラメーターは、次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="41ad9-126">The following are body parameters that are typically used when creating rules.</span></span> <span data-ttu-id="41ad9-127">必要に応じて、本文に他の書き込み可能な **messageRule** プロパティを指定することもできます。</span><span class="sxs-lookup"><span data-stu-id="41ad9-127">You can specify any other writable **messageRule** properties as appropriate in the request body.</span></span>
+## <a name="request-body"></a><span data-ttu-id="26aa3-124">要求本文</span><span class="sxs-lookup"><span data-stu-id="26aa3-124">Request body</span></span>
+<span data-ttu-id="26aa3-125">要求本文に、ルールを適用するパラメーターを指定します。</span><span class="sxs-lookup"><span data-stu-id="26aa3-125">In the request body, supply the parameters that are applicable to your rule.</span></span> <span data-ttu-id="26aa3-126">ルールを作成する際に本文に通常指定するパラメーターは、次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="26aa3-126">The following are body parameters that are typically used when creating rules.</span></span> <span data-ttu-id="26aa3-127">必要に応じて、本文に他の書き込み可能な **messageRule** プロパティを指定することもできます。</span><span class="sxs-lookup"><span data-stu-id="26aa3-127">You can specify any other writable **messageRule** properties as appropriate in the request body.</span></span>
 
-| <span data-ttu-id="41ad9-128">名前</span><span class="sxs-lookup"><span data-stu-id="41ad9-128">Name</span></span>       | <span data-ttu-id="41ad9-129">型</span><span class="sxs-lookup"><span data-stu-id="41ad9-129">Type</span></span>|<span data-ttu-id="41ad9-130">説明</span><span class="sxs-lookup"><span data-stu-id="41ad9-130">Description</span></span>|
+| <span data-ttu-id="26aa3-128">名前</span><span class="sxs-lookup"><span data-stu-id="26aa3-128">Name</span></span>       | <span data-ttu-id="26aa3-129">型</span><span class="sxs-lookup"><span data-stu-id="26aa3-129">Type</span></span>|<span data-ttu-id="26aa3-130">説明</span><span class="sxs-lookup"><span data-stu-id="26aa3-130">Description</span></span>|
 |:--------|:-------|:----------|
-|<span data-ttu-id="41ad9-131">actions</span><span class="sxs-lookup"><span data-stu-id="41ad9-131">actions</span></span>|[<span data-ttu-id="41ad9-132">messageRuleActions</span><span class="sxs-lookup"><span data-stu-id="41ad9-132">messageRuleActions</span></span>](../resources/messageruleactions.md)|<span data-ttu-id="41ad9-p104">該当する条件があり、それが満たされる場合にメッセージに対して実行されるアクションです。必須。</span><span class="sxs-lookup"><span data-stu-id="41ad9-p104">Actions to be taken on a message when the corresponding conditions, if any, are fulfilled. Required.</span></span>|
-|<span data-ttu-id="41ad9-135">conditions</span><span class="sxs-lookup"><span data-stu-id="41ad9-135">conditions</span></span>|[<span data-ttu-id="41ad9-136">messageRulePredicates</span><span class="sxs-lookup"><span data-stu-id="41ad9-136">messageRulePredicates</span></span>](../resources/messagerulepredicates.md)|<span data-ttu-id="41ad9-p105">満たされた場合に、そのルールに該当するアクションをトリガーする条件です。省略可能。</span><span class="sxs-lookup"><span data-stu-id="41ad9-p105">Conditions that when fulfilled, will trigger the corresponding actions for that rule. Optional.</span></span>|
-|<span data-ttu-id="41ad9-139">displayName</span><span class="sxs-lookup"><span data-stu-id="41ad9-139">displayName</span></span>| <span data-ttu-id="41ad9-140">String</span><span class="sxs-lookup"><span data-stu-id="41ad9-140">String</span></span>  | <span data-ttu-id="41ad9-p106">ルールの表示名。必須。</span><span class="sxs-lookup"><span data-stu-id="41ad9-p106">The display name of the rule. Required.</span></span>|
-|<span data-ttu-id="41ad9-143">exceptions</span><span class="sxs-lookup"><span data-stu-id="41ad9-143">exceptions</span></span>| [<span data-ttu-id="41ad9-144">messageRulePredicates</span><span class="sxs-lookup"><span data-stu-id="41ad9-144">messageRulePredicates</span></span>](../resources/messagerulepredicates.md)| <span data-ttu-id="41ad9-p107">ルールの例外条件を表します。省略可能。</span><span class="sxs-lookup"><span data-stu-id="41ad9-p107">Represents exception conditions for the rule. Optional.</span></span> |
-|<span data-ttu-id="41ad9-147">isEnabled</span><span class="sxs-lookup"><span data-stu-id="41ad9-147">isEnabled</span></span> | <span data-ttu-id="41ad9-148">Boolean</span><span class="sxs-lookup"><span data-stu-id="41ad9-148">Boolean</span></span> | <span data-ttu-id="41ad9-p108">メッセージに対するルールの適用が有効になっているかどうかを示します。省略可能。</span><span class="sxs-lookup"><span data-stu-id="41ad9-p108">Indicates whether the rule is enabled to be applied to messages. Optional.</span></span> |
-|<span data-ttu-id="41ad9-151">sequence</span><span class="sxs-lookup"><span data-stu-id="41ad9-151">sequence</span></span>| <span data-ttu-id="41ad9-152">Int32</span><span class="sxs-lookup"><span data-stu-id="41ad9-152">Int32</span></span> | <span data-ttu-id="41ad9-p109">他のルールもある中で、そのルールが実行される順序を示します。必須。</span><span class="sxs-lookup"><span data-stu-id="41ad9-p109">Indicates the order in which the rule is executed, among other rules. Required.</span></span>|
+|<span data-ttu-id="26aa3-131">actions</span><span class="sxs-lookup"><span data-stu-id="26aa3-131">actions</span></span>|[<span data-ttu-id="26aa3-132">messageRuleActions</span><span class="sxs-lookup"><span data-stu-id="26aa3-132">messageRuleActions</span></span>](../resources/messageruleactions.md)|<span data-ttu-id="26aa3-p104">該当する条件があり、それが満たされる場合にメッセージに対して実行されるアクションです。必須。</span><span class="sxs-lookup"><span data-stu-id="26aa3-p104">Actions to be taken on a message when the corresponding conditions, if any, are fulfilled. Required.</span></span>|
+|<span data-ttu-id="26aa3-135">conditions</span><span class="sxs-lookup"><span data-stu-id="26aa3-135">conditions</span></span>|[<span data-ttu-id="26aa3-136">messageRulePredicates</span><span class="sxs-lookup"><span data-stu-id="26aa3-136">messageRulePredicates</span></span>](../resources/messagerulepredicates.md)|<span data-ttu-id="26aa3-p105">満たされた場合に、そのルールに該当するアクションをトリガーする条件です。省略可能。</span><span class="sxs-lookup"><span data-stu-id="26aa3-p105">Conditions that when fulfilled, will trigger the corresponding actions for that rule. Optional.</span></span>|
+|<span data-ttu-id="26aa3-139">displayName</span><span class="sxs-lookup"><span data-stu-id="26aa3-139">displayName</span></span>| <span data-ttu-id="26aa3-140">String</span><span class="sxs-lookup"><span data-stu-id="26aa3-140">String</span></span>  | <span data-ttu-id="26aa3-p106">ルールの表示名。必須。</span><span class="sxs-lookup"><span data-stu-id="26aa3-p106">The display name of the rule. Required.</span></span>|
+|<span data-ttu-id="26aa3-143">exceptions</span><span class="sxs-lookup"><span data-stu-id="26aa3-143">exceptions</span></span>| [<span data-ttu-id="26aa3-144">messageRulePredicates</span><span class="sxs-lookup"><span data-stu-id="26aa3-144">messageRulePredicates</span></span>](../resources/messagerulepredicates.md)| <span data-ttu-id="26aa3-p107">ルールの例外条件を表します。省略可能。</span><span class="sxs-lookup"><span data-stu-id="26aa3-p107">Represents exception conditions for the rule. Optional.</span></span> |
+|<span data-ttu-id="26aa3-147">isEnabled</span><span class="sxs-lookup"><span data-stu-id="26aa3-147">isEnabled</span></span> | <span data-ttu-id="26aa3-148">Boolean</span><span class="sxs-lookup"><span data-stu-id="26aa3-148">Boolean</span></span> | <span data-ttu-id="26aa3-p108">メッセージに対するルールの適用が有効になっているかどうかを示します。省略可能。</span><span class="sxs-lookup"><span data-stu-id="26aa3-p108">Indicates whether the rule is enabled to be applied to messages. Optional.</span></span> |
+|<span data-ttu-id="26aa3-151">sequence</span><span class="sxs-lookup"><span data-stu-id="26aa3-151">sequence</span></span>| <span data-ttu-id="26aa3-152">Int32</span><span class="sxs-lookup"><span data-stu-id="26aa3-152">Int32</span></span> | <span data-ttu-id="26aa3-p109">他のルールもある中で、そのルールが実行される順序を示します。必須。</span><span class="sxs-lookup"><span data-stu-id="26aa3-p109">Indicates the order in which the rule is executed, among other rules. Required.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="41ad9-155">応答</span><span class="sxs-lookup"><span data-stu-id="41ad9-155">Response</span></span>
-<span data-ttu-id="41ad9-156">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文に **messageRule** オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="41ad9-156">If successful, this method returns `201 Created` response code and a **messageRule** object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="26aa3-155">応答</span><span class="sxs-lookup"><span data-stu-id="26aa3-155">Response</span></span>
+<span data-ttu-id="26aa3-156">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文に **messageRule** オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="26aa3-156">If successful, this method returns `201 Created` response code and a **messageRule** object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="41ad9-157">例</span><span class="sxs-lookup"><span data-stu-id="41ad9-157">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="41ad9-158">要求</span><span class="sxs-lookup"><span data-stu-id="41ad9-158">Request</span></span>
-<span data-ttu-id="41ad9-159">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="41ad9-159">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="26aa3-157">例</span><span class="sxs-lookup"><span data-stu-id="26aa3-157">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="26aa3-158">要求</span><span class="sxs-lookup"><span data-stu-id="26aa3-158">Request</span></span>
+<span data-ttu-id="26aa3-159">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="26aa3-159">Here is an example of the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="26aa3-160">プロトコル</span><span class="sxs-lookup"><span data-stu-id="26aa3-160">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["inbox"],
@@ -90,8 +92,22 @@ Content-type: application/json
 }
 
 ```
-##### <a name="response"></a><span data-ttu-id="41ad9-160">応答</span><span class="sxs-lookup"><span data-stu-id="41ad9-160">Response</span></span>
-<span data-ttu-id="41ad9-p110">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="41ad9-p110">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+# <a name="ctabcsharp"></a>[<span data-ttu-id="26aa3-161">C#</span><span class="sxs-lookup"><span data-stu-id="26aa3-161">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-messagerule-from-mailfolder-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="26aa3-162">Javascript</span><span class="sxs-lookup"><span data-stu-id="26aa3-162">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-messagerule-from-mailfolder-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="26aa3-163">目的-C</span><span class="sxs-lookup"><span data-stu-id="26aa3-163">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-messagerule-from-mailfolder-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+##### <a name="response"></a><span data-ttu-id="26aa3-164">応答</span><span class="sxs-lookup"><span data-stu-id="26aa3-164">Response</span></span>
+<span data-ttu-id="26aa3-p110">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="26aa3-p110">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -127,18 +143,6 @@ Content-type: application/json
 }
 
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="41ad9-164">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="41ad9-164">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="41ad9-165">C#</span><span class="sxs-lookup"><span data-stu-id="41ad9-165">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/create_messagerule_from_mailfolder-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="41ad9-166">Javascript</span><span class="sxs-lookup"><span data-stu-id="41ad9-166">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create_messagerule_from_mailfolder-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="41ad9-167">目的-C</span><span class="sxs-lookup"><span data-stu-id="41ad9-167">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/create_messagerule_from_mailfolder-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -149,8 +153,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/mailfolder-post-messagerules.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/v1.0/api/mailfolder-post-messagerules.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/mailfolder-post-messagerules.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

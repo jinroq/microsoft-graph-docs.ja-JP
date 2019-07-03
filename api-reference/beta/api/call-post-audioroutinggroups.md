@@ -4,53 +4,55 @@ description: 新しい**audioRoutingGroup**を作成します。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 05b7e7230857da139e7331940f014b20001f3b9b
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: fc3f32592bb466bf345734cdd924472fe245730c
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35262259"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35438665"
 ---
-# <a name="create-audio-routing-group"></a><span data-ttu-id="40000-103">音声ルーティング グループを作成する</span><span class="sxs-lookup"><span data-stu-id="40000-103">Create audio routing group</span></span>
+# <a name="create-audio-routing-group"></a><span data-ttu-id="7e819-103">音声ルーティング グループを作成する</span><span class="sxs-lookup"><span data-stu-id="7e819-103">Create audio routing group</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="40000-104">新しい**audioRoutingGroup**を作成します。</span><span class="sxs-lookup"><span data-stu-id="40000-104">Create a new **audioRoutingGroup**.</span></span>
+<span data-ttu-id="7e819-104">新しい**audioRoutingGroup**を作成します。</span><span class="sxs-lookup"><span data-stu-id="7e819-104">Create a new **audioRoutingGroup**.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="40000-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="40000-105">Permissions</span></span>
-<span data-ttu-id="40000-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="40000-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="7e819-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="7e819-105">Permissions</span></span>
+<span data-ttu-id="7e819-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7e819-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="40000-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="40000-108">Permission type</span></span>                        | <span data-ttu-id="40000-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="40000-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="7e819-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="7e819-108">Permission type</span></span>                        | <span data-ttu-id="7e819-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="7e819-109">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="40000-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="40000-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="40000-111">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="40000-111">Not supported.</span></span>                               |
-| <span data-ttu-id="40000-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="40000-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="40000-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="40000-113">Not supported.</span></span>                               |
-| <span data-ttu-id="40000-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="40000-114">Application</span></span>                            | <span data-ttu-id="40000-115">JoinGroupCalls を呼び出します。すべて、InitiateGroupCalls を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="40000-115">Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All</span></span> |
+| <span data-ttu-id="7e819-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="7e819-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="7e819-111">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="7e819-111">Not supported.</span></span>                               |
+| <span data-ttu-id="7e819-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="7e819-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7e819-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="7e819-113">Not supported.</span></span>                               |
+| <span data-ttu-id="7e819-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="7e819-114">Application</span></span>                            | <span data-ttu-id="7e819-115">JoinGroupCalls を呼び出します。すべて、InitiateGroupCalls を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="7e819-115">Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="40000-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="40000-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7e819-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="7e819-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/audioRoutingGroups
 POST /applications/{id}/calls/{id}/audioRoutingGroups
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="40000-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="40000-117">Request headers</span></span>
-| <span data-ttu-id="40000-118">名前</span><span class="sxs-lookup"><span data-stu-id="40000-118">Name</span></span>          | <span data-ttu-id="40000-119">説明</span><span class="sxs-lookup"><span data-stu-id="40000-119">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="7e819-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="7e819-117">Request headers</span></span>
+| <span data-ttu-id="7e819-118">名前</span><span class="sxs-lookup"><span data-stu-id="7e819-118">Name</span></span>          | <span data-ttu-id="7e819-119">説明</span><span class="sxs-lookup"><span data-stu-id="7e819-119">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="40000-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="40000-120">Authorization</span></span> | <span data-ttu-id="40000-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="40000-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="7e819-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="7e819-120">Authorization</span></span> | <span data-ttu-id="7e819-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="7e819-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="40000-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="40000-123">Request body</span></span>
-<span data-ttu-id="40000-124">要求本文で、 [audioRoutingGroup](../resources/audioroutinggroup.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="40000-124">In the request body, supply a JSON representation of [audioRoutingGroup](../resources/audioroutinggroup.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7e819-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="7e819-123">Request body</span></span>
+<span data-ttu-id="7e819-124">要求本文で、 [audioRoutingGroup](../resources/audioroutinggroup.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="7e819-124">In the request body, supply a JSON representation of [audioRoutingGroup](../resources/audioroutinggroup.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="40000-125">応答</span><span class="sxs-lookup"><span data-stu-id="40000-125">Response</span></span>
-<span data-ttu-id="40000-126">成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[audioRoutingGroup](../resources/audioroutinggroup.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="40000-126">If successful, this method returns `200 OK` response code and [audioRoutingGroup](../resources/audioroutinggroup.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="7e819-125">応答</span><span class="sxs-lookup"><span data-stu-id="7e819-125">Response</span></span>
+<span data-ttu-id="7e819-126">成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[audioRoutingGroup](../resources/audioroutinggroup.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="7e819-126">If successful, this method returns `200 OK` response code and [audioRoutingGroup](../resources/audioroutinggroup.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="40000-127">例</span><span class="sxs-lookup"><span data-stu-id="40000-127">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="7e819-127">例</span><span class="sxs-lookup"><span data-stu-id="7e819-127">Examples</span></span>
 
-### <a name="example-1-one-to-one-audio-routing-group"></a><span data-ttu-id="40000-128">例 1: 1 対1の音声ルーティンググループ</span><span class="sxs-lookup"><span data-stu-id="40000-128">Example 1: One-to-one audio routing group</span></span>
+### <a name="example-1-one-to-one-audio-routing-group"></a><span data-ttu-id="7e819-128">例 1: 1 対1の音声ルーティンググループ</span><span class="sxs-lookup"><span data-stu-id="7e819-128">Example 1: One-to-one audio routing group</span></span>
 
-##### <a name="request"></a><span data-ttu-id="40000-129">要求</span><span class="sxs-lookup"><span data-stu-id="40000-129">Request</span></span>
-<span data-ttu-id="40000-130">次の例は要求を示しています。</span><span class="sxs-lookup"><span data-stu-id="40000-130">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="7e819-129">要求</span><span class="sxs-lookup"><span data-stu-id="7e819-129">Request</span></span>
+<span data-ttu-id="7e819-130">次の例は要求を示しています。</span><span class="sxs-lookup"><span data-stu-id="7e819-130">The following example shows the request.</span></span>
 
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="7e819-131">プロトコル</span><span class="sxs-lookup"><span data-stu-id="7e819-131">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create-audioRoutingGroup-from-call"
@@ -71,12 +73,26 @@ Content-Length: 233
   ]
 }
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="7e819-132">C#</span><span class="sxs-lookup"><span data-stu-id="7e819-132">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-audioroutinggroup-from-call-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="40000-131">要求本文で、 [audioRoutingGroup](../resources/audioroutinggroup.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="40000-131">In the request body, supply a JSON representation of [audioRoutingGroup](../resources/audioroutinggroup.md) object.</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7e819-133">Javascript</span><span class="sxs-lookup"><span data-stu-id="7e819-133">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-audioroutinggroup-from-call-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-##### <a name="response"></a><span data-ttu-id="40000-132">応答</span><span class="sxs-lookup"><span data-stu-id="40000-132">Response</span></span>
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="7e819-134">目的-C</span><span class="sxs-lookup"><span data-stu-id="7e819-134">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-audioroutinggroup-from-call-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-> <span data-ttu-id="40000-p103">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="40000-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+---
+
+
+<span data-ttu-id="7e819-135">要求本文で、 [audioRoutingGroup](../resources/audioroutinggroup.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="7e819-135">In the request body, supply a JSON representation of [audioRoutingGroup](../resources/audioroutinggroup.md) object.</span></span>
+
+##### <a name="response"></a><span data-ttu-id="7e819-136">応答</span><span class="sxs-lookup"><span data-stu-id="7e819-136">Response</span></span>
+
+> <span data-ttu-id="7e819-p103">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="7e819-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -99,22 +115,10 @@ Content-Length: 233
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="40000-135">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="40000-135">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="40000-136">C#</span><span class="sxs-lookup"><span data-stu-id="40000-136">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/create-audioRoutingGroup-from-call-Cs-snippets.md)]
+### <a name="example-2-multicast-audioroutinggroup"></a><span data-ttu-id="7e819-139">例 2: マルチキャスト audioRoutingGroup</span><span class="sxs-lookup"><span data-stu-id="7e819-139">Example 2: Multicast audioRoutingGroup</span></span>
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="40000-137">Javascript</span><span class="sxs-lookup"><span data-stu-id="40000-137">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create-audioRoutingGroup-from-call-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="40000-138">目的-C</span><span class="sxs-lookup"><span data-stu-id="40000-138">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/create-audioRoutingGroup-from-call-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
-### <a name="example-2-multicast-audioroutinggroup"></a><span data-ttu-id="40000-139">例 2: マルチキャスト audioRoutingGroup</span><span class="sxs-lookup"><span data-stu-id="40000-139">Example 2: Multicast audioRoutingGroup</span></span>
-
-##### <a name="request"></a><span data-ttu-id="40000-140">要求</span><span class="sxs-lookup"><span data-stu-id="40000-140">Request</span></span>
-<span data-ttu-id="40000-141">次の例は要求を示しています。</span><span class="sxs-lookup"><span data-stu-id="40000-141">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="7e819-140">要求</span><span class="sxs-lookup"><span data-stu-id="7e819-140">Request</span></span>
+<span data-ttu-id="7e819-141">次の例は要求を示しています。</span><span class="sxs-lookup"><span data-stu-id="7e819-141">The following example shows the request.</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups
@@ -142,11 +146,11 @@ Content-Length: 233
 }
 ```
 
-<span data-ttu-id="40000-142">要求本文で、 [audioRoutingGroup](../resources/audioroutinggroup.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="40000-142">In the request body, supply a JSON representation of [audioRoutingGroup](../resources/audioroutinggroup.md) object.</span></span>
+<span data-ttu-id="7e819-142">要求本文で、 [audioRoutingGroup](../resources/audioroutinggroup.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="7e819-142">In the request body, supply a JSON representation of [audioRoutingGroup](../resources/audioroutinggroup.md) object.</span></span>
 
-##### <a name="response"></a><span data-ttu-id="40000-143">応答</span><span class="sxs-lookup"><span data-stu-id="40000-143">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="7e819-143">応答</span><span class="sxs-lookup"><span data-stu-id="7e819-143">Response</span></span>
 
-> <span data-ttu-id="40000-p104">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="40000-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="7e819-p104">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="7e819-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -183,9 +187,6 @@ Content-Length: 233
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/call-post-audioroutinggroups.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/call-post-audioroutinggroups.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/call-post-audioroutinggroups.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

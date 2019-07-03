@@ -4,27 +4,27 @@ description: 添付ファイルをイベントに追加する場合に、この 
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: f252aad90d870f15b74619eadab7ea5f057c74da
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: cab465962b614248bce8149ebbe7d5a347ec6e66
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35279024"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35449856"
 ---
-# <a name="add-attachment"></a><span data-ttu-id="0d031-104">添付ファイルを追加する</span><span class="sxs-lookup"><span data-stu-id="0d031-104">Add attachment</span></span>
+# <a name="add-attachment"></a><span data-ttu-id="66268-104">添付ファイルを追加する</span><span class="sxs-lookup"><span data-stu-id="66268-104">Add attachment</span></span>
 
-<span data-ttu-id="0d031-p102">[添付ファイル](../resources/attachment.md)をイベントに追加する場合に、この API を使用します。現在、各 REST 要求の合計サイズは 4 MB に制限されているため、追加できる添付ファイルのサイズは 4 MB 未満に制限されます。</span><span class="sxs-lookup"><span data-stu-id="0d031-p102">Use this API to add an [attachment](../resources/attachment.md) to an event. Since there is currently a limit of 4MB on the total size of each REST request, this limits the size of the attachment you can add to under 4MB.</span></span>
-## <a name="permissions"></a><span data-ttu-id="0d031-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="0d031-107">Permissions</span></span>
-<span data-ttu-id="0d031-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0d031-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="66268-p102">[添付ファイル](../resources/attachment.md)をイベントに追加する場合に、この API を使用します。現在、各 REST 要求の合計サイズは 4 MB に制限されているため、追加できる添付ファイルのサイズは 4 MB 未満に制限されます。</span><span class="sxs-lookup"><span data-stu-id="66268-p102">Use this API to add an [attachment](../resources/attachment.md) to an event. Since there is currently a limit of 4MB on the total size of each REST request, this limits the size of the attachment you can add to under 4MB.</span></span>
+## <a name="permissions"></a><span data-ttu-id="66268-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="66268-107">Permissions</span></span>
+<span data-ttu-id="66268-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="66268-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="0d031-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="0d031-110">Permission type</span></span>      | <span data-ttu-id="0d031-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="0d031-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="66268-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="66268-110">Permission type</span></span>      | <span data-ttu-id="66268-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="66268-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="0d031-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="0d031-112">Delegated (work or school account)</span></span> | <span data-ttu-id="0d031-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="0d031-113">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="0d031-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="0d031-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0d031-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="0d031-115">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="0d031-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="0d031-116">Application</span></span> | <span data-ttu-id="0d031-117">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="0d031-117">Calendars.ReadWrite</span></span> |
+|<span data-ttu-id="66268-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="66268-112">Delegated (work or school account)</span></span> | <span data-ttu-id="66268-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="66268-113">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="66268-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="66268-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="66268-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="66268-115">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="66268-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="66268-116">Application</span></span> | <span data-ttu-id="66268-117">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="66268-117">Calendars.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="0d031-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="0d031-118">HTTP request</span></span>
-<span data-ttu-id="0d031-119">ユーザーの既定の[予定表](../resources/calendar.md)にある[イベント](../resources/event.md)の添付ファイル。</span><span class="sxs-lookup"><span data-stu-id="0d031-119">Attachments for an [event](../resources/event.md) in the user's default [calendar](../resources/calendar.md).</span></span>
+## <a name="http-request"></a><span data-ttu-id="66268-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="66268-118">HTTP request</span></span>
+<span data-ttu-id="66268-119">ユーザーの既定の[予定表](../resources/calendar.md)にある[イベント](../resources/event.md)の添付ファイル。</span><span class="sxs-lookup"><span data-stu-id="66268-119">Attachments for an [event](../resources/event.md) in the user's default [calendar](../resources/calendar.md).</span></span>
 
 <!--
 Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).
@@ -43,7 +43,7 @@ POST /groups/{id}/events/{id}/attachments
 POST /groups/{id}/calendar/events/{id}/attachments
 -->
 
-<span data-ttu-id="0d031-120">ユーザーの既定 [calendarGroup](../resources/calendargroup.md) に属する[カレンダー](../resources/calendar.md)内[イベント](../resources/event.md)の添付ファイル。</span><span class="sxs-lookup"><span data-stu-id="0d031-120">Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to the user's default [calendarGroup](../resources/calendargroup.md).</span></span>
+<span data-ttu-id="66268-120">ユーザーの既定 [calendarGroup](../resources/calendargroup.md) に属する[カレンダー](../resources/calendar.md)内[イベント](../resources/event.md)の添付ファイル。</span><span class="sxs-lookup"><span data-stu-id="66268-120">Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to the user's default [calendarGroup](../resources/calendargroup.md).</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/calendars/{id}/events/{id}/attachments
@@ -52,29 +52,31 @@ POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments
 POST /me/calendargroup/calendars/{id}/events/{id}/attachments
 POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments
 ```
-<span data-ttu-id="0d031-121">ユーザーの [calendarGroup](../resources/calendargroup.md) に属する[カレンダー](../resources/calendar.md)内[イベント](../resources/event.md)の添付ファイル。</span><span class="sxs-lookup"><span data-stu-id="0d031-121">Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to a user's [calendarGroup](../resources/calendargroup.md).</span></span>
+<span data-ttu-id="66268-121">ユーザーの [calendarGroup](../resources/calendargroup.md) に属する[カレンダー](../resources/calendar.md)内[イベント](../resources/event.md)の添付ファイル。</span><span class="sxs-lookup"><span data-stu-id="66268-121">Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to a user's [calendarGroup](../resources/calendargroup.md).</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments
 ```
-## <a name="request-headers"></a><span data-ttu-id="0d031-122">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="0d031-122">Request headers</span></span>
-| <span data-ttu-id="0d031-123">名前</span><span class="sxs-lookup"><span data-stu-id="0d031-123">Name</span></span>       | <span data-ttu-id="0d031-124">型</span><span class="sxs-lookup"><span data-stu-id="0d031-124">Type</span></span> | <span data-ttu-id="0d031-125">説明</span><span class="sxs-lookup"><span data-stu-id="0d031-125">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="66268-122">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="66268-122">Request headers</span></span>
+| <span data-ttu-id="66268-123">名前</span><span class="sxs-lookup"><span data-stu-id="66268-123">Name</span></span>       | <span data-ttu-id="66268-124">型</span><span class="sxs-lookup"><span data-stu-id="66268-124">Type</span></span> | <span data-ttu-id="66268-125">説明</span><span class="sxs-lookup"><span data-stu-id="66268-125">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="0d031-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="0d031-126">Authorization</span></span>  | <span data-ttu-id="0d031-127">string</span><span class="sxs-lookup"><span data-stu-id="0d031-127">string</span></span>  | <span data-ttu-id="0d031-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="0d031-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="0d031-130">Content-Type</span><span class="sxs-lookup"><span data-stu-id="0d031-130">Content-Type</span></span> | <span data-ttu-id="0d031-131">string</span><span class="sxs-lookup"><span data-stu-id="0d031-131">string</span></span>  | <span data-ttu-id="0d031-p105">エンティティ本文内のデータの性質です。必須。</span><span class="sxs-lookup"><span data-stu-id="0d031-p105">Nature of the data in the body of an entity. Required.</span></span> |
+| <span data-ttu-id="66268-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="66268-126">Authorization</span></span>  | <span data-ttu-id="66268-127">string</span><span class="sxs-lookup"><span data-stu-id="66268-127">string</span></span>  | <span data-ttu-id="66268-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="66268-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="66268-130">Content-Type</span><span class="sxs-lookup"><span data-stu-id="66268-130">Content-Type</span></span> | <span data-ttu-id="66268-131">string</span><span class="sxs-lookup"><span data-stu-id="66268-131">string</span></span>  | <span data-ttu-id="66268-p105">エンティティ本文内のデータの性質です。必須。</span><span class="sxs-lookup"><span data-stu-id="66268-p105">Nature of the data in the body of an entity. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="0d031-134">要求本文</span><span class="sxs-lookup"><span data-stu-id="0d031-134">Request body</span></span>
-<span data-ttu-id="0d031-135">要求本文で、[attachment](../resources/attachment.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="0d031-135">In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="66268-134">要求本文</span><span class="sxs-lookup"><span data-stu-id="66268-134">Request body</span></span>
+<span data-ttu-id="66268-135">要求本文で、[attachment](../resources/attachment.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="66268-135">In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="0d031-136">応答</span><span class="sxs-lookup"><span data-stu-id="0d031-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="66268-136">応答</span><span class="sxs-lookup"><span data-stu-id="66268-136">Response</span></span>
 
-<span data-ttu-id="0d031-137">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [attachment](../resources/attachment.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="0d031-137">If successful, this method returns `201 Created` response code and [attachment](../resources/attachment.md) object in the response body.</span></span>
+<span data-ttu-id="66268-137">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [attachment](../resources/attachment.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="66268-137">If successful, this method returns `201 Created` response code and [attachment](../resources/attachment.md) object in the response body.</span></span>
 
-## <a name="example-file-attachment"></a><span data-ttu-id="0d031-138">例 (添付ファイル)</span><span class="sxs-lookup"><span data-stu-id="0d031-138">Example (file attachment)</span></span>
+## <a name="example-file-attachment"></a><span data-ttu-id="66268-138">例 (添付ファイル)</span><span class="sxs-lookup"><span data-stu-id="66268-138">Example (file attachment)</span></span>
 
-##### <a name="request"></a><span data-ttu-id="0d031-139">要求</span><span class="sxs-lookup"><span data-stu-id="0d031-139">Request</span></span>
-<span data-ttu-id="0d031-140">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="0d031-140">Here is an example of the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="66268-139">要求</span><span class="sxs-lookup"><span data-stu-id="66268-139">Request</span></span>
+<span data-ttu-id="66268-140">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="66268-140">Here is an example of the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="66268-141">プロトコル</span><span class="sxs-lookup"><span data-stu-id="66268-141">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkAGI1AAAt9AHjAAA="],
@@ -91,11 +93,25 @@ Content-length: 151
     "contentBytes": "base64bWFjIGFuZCBjaGVlc2UgdG9kYXk="   
 }
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="66268-142">C#</span><span class="sxs-lookup"><span data-stu-id="66268-142">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-file-attachment-from-event-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="0d031-141">要求本文で、[Attachment](../resources/attachment.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="0d031-141">In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="66268-143">Javascript</span><span class="sxs-lookup"><span data-stu-id="66268-143">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-file-attachment-from-event-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-##### <a name="response"></a><span data-ttu-id="0d031-142">応答</span><span class="sxs-lookup"><span data-stu-id="0d031-142">Response</span></span>
-<span data-ttu-id="0d031-143">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="0d031-143">Here is an example of the response.</span></span>
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="66268-144">目的-C</span><span class="sxs-lookup"><span data-stu-id="66268-144">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-file-attachment-from-event-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+<span data-ttu-id="66268-145">要求本文で、[Attachment](../resources/attachment.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="66268-145">In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.</span></span>
+
+##### <a name="response"></a><span data-ttu-id="66268-146">応答</span><span class="sxs-lookup"><span data-stu-id="66268-146">Response</span></span>
+<span data-ttu-id="66268-147">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="66268-147">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -119,31 +135,15 @@ Content-type: application/json
     "contentBytes":"base64bWFjIGFuZCBjaGVlc2UgdG9kYXk="
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="0d031-144">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="0d031-144">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="0d031-145">C#</span><span class="sxs-lookup"><span data-stu-id="0d031-145">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/create_file_attachment_from_event-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="0d031-146">Javascript</span><span class="sxs-lookup"><span data-stu-id="0d031-146">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create_file_attachment_from_event-Javascript-snippets.md)]
+## <a name="example-item-attachment"></a><span data-ttu-id="66268-148">例 (項目の添付ファイル)</span><span class="sxs-lookup"><span data-stu-id="66268-148">Example (item attachment)</span></span>
 
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="0d031-147">目的-C</span><span class="sxs-lookup"><span data-stu-id="0d031-147">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/create_file_attachment_from_event-Objective-C-snippets.md)]
+##### <a name="request"></a><span data-ttu-id="66268-149">要求</span><span class="sxs-lookup"><span data-stu-id="66268-149">Request</span></span>
 
----
+<span data-ttu-id="66268-150">以下は、アイテムの添付ファイルとしてイベントを別のイベントに添付する例です。</span><span class="sxs-lookup"><span data-stu-id="66268-150">Here is an example which attaches an event with another event as an item attachment.</span></span>
 
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+<!-- { "blockType": "ignored" } -->
 
-## <a name="example-item-attachment"></a><span data-ttu-id="0d031-148">例 (項目の添付ファイル)</span><span class="sxs-lookup"><span data-stu-id="0d031-148">Example (item attachment)</span></span>
-
-##### <a name="request"></a><span data-ttu-id="0d031-149">要求</span><span class="sxs-lookup"><span data-stu-id="0d031-149">Request</span></span>
-
-<span data-ttu-id="0d031-150">以下は、アイテムの添付ファイルとしてイベントを別のイベントに添付する例です。</span><span class="sxs-lookup"><span data-stu-id="0d031-150">Here is an example which attaches an event with another event as an item attachment.</span></span>
-
-<!-- {
-  "blockType": "request",
-  "sampleKeys": ["AAMkAGI1AAAt9AHjAAA="],
-  "name": "create_item_attachment_from_event"
-}-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/events/AAMkAGI1AAAt9AHjAAA=/attachments
 Content-type: application/json
@@ -171,8 +171,9 @@ Content-length: 600
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="0d031-151">応答</span><span class="sxs-lookup"><span data-stu-id="0d031-151">Response</span></span>
-<span data-ttu-id="0d031-152">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="0d031-152">Here is an example of the response.</span></span>
+
+##### <a name="response"></a><span data-ttu-id="66268-151">応答</span><span class="sxs-lookup"><span data-stu-id="66268-151">Response</span></span>
+<span data-ttu-id="66268-152">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="66268-152">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -205,9 +206,5 @@ Content-length: 162
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/event-post-attachments.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/v1.0/api/event-post-attachments.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/event-post-attachments.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
-    "Error: /api-reference/v1.0/api/event-post-attachments.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

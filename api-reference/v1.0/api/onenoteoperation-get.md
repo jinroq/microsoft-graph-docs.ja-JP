@@ -4,33 +4,33 @@ description: '長時間実行している OneNote 操作の状態を取得しま
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: accbed7c935b0b624ab921031b96aea2690211e2
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: ae44a94114c7ed85633393bfc1a9014116ed32ac
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35274439"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35457598"
 ---
-# <a name="get-onenoteoperation"></a><span data-ttu-id="04369-104">OnenoteOperation を取得する</span><span class="sxs-lookup"><span data-stu-id="04369-104">Get onenoteOperation</span></span>
+# <a name="get-onenoteoperation"></a><span data-ttu-id="583d3-104">OnenoteOperation を取得する</span><span class="sxs-lookup"><span data-stu-id="583d3-104">Get onenoteOperation</span></span>
 
-<span data-ttu-id="04369-105">長時間実行している OneNote 操作の状態を取得します。</span><span class="sxs-lookup"><span data-stu-id="04369-105">Get the status of a long-running OneNote operation.</span></span> <span data-ttu-id="04369-106">これ`CopyNotebook`は`CopyToNotebook` `CopyToSectionGroup`、、、、などの応答の**操作場所**ヘッダーを返す操作に適用され`and CopyToSection`ます。</span><span class="sxs-lookup"><span data-stu-id="04369-106">This applies to operations that return the **Operation-Location** header in the response, such as `CopyNotebook`, `CopyToNotebook`, `CopyToSectionGroup`, `and CopyToSection`.</span></span>   
+<span data-ttu-id="583d3-105">長時間実行している OneNote 操作の状態を取得します。</span><span class="sxs-lookup"><span data-stu-id="583d3-105">Get the status of a long-running OneNote operation.</span></span> <span data-ttu-id="583d3-106">これ`CopyNotebook`は`CopyToNotebook` `CopyToSectionGroup`、、、、などの応答の**操作場所**ヘッダーを返す操作に適用され`and CopyToSection`ます。</span><span class="sxs-lookup"><span data-stu-id="583d3-106">This applies to operations that return the **Operation-Location** header in the response, such as `CopyNotebook`, `CopyToNotebook`, `CopyToSectionGroup`, `and CopyToSection`.</span></span>   
 
-<span data-ttu-id="04369-107">プロパティが`status`または`completed` `failed`を返すまで、操作場所エンドポイントをポーリングできます。</span><span class="sxs-lookup"><span data-stu-id="04369-107">You can poll the Operation-Location endpoint until the `status` property returns `completed` or `failed`.</span></span> 
+<span data-ttu-id="583d3-107">プロパティが`status`または`completed` `failed`を返すまで、操作場所エンドポイントをポーリングできます。</span><span class="sxs-lookup"><span data-stu-id="583d3-107">You can poll the Operation-Location endpoint until the `status` property returns `completed` or `failed`.</span></span> 
 
-<span data-ttu-id="04369-108">状態が`completed`の場合、プロパティ`resourceLocation`にはリソースエンドポイント URI が含まれます。</span><span class="sxs-lookup"><span data-stu-id="04369-108">If the status is `completed`, the `resourceLocation` property contains the resource endpoint URI.</span></span> 
+<span data-ttu-id="583d3-108">状態が`completed`の場合、プロパティ`resourceLocation`にはリソースエンドポイント URI が含まれます。</span><span class="sxs-lookup"><span data-stu-id="583d3-108">If the status is `completed`, the `resourceLocation` property contains the resource endpoint URI.</span></span> 
 
-<span data-ttu-id="04369-109">状態がの場合`failed`、エラーおよび`@api.diagnostics`プロパティからエラー情報が得られます。</span><span class="sxs-lookup"><span data-stu-id="04369-109">If the status is `failed`, the error and `@api.diagnostics` properties provide error information.</span></span>
+<span data-ttu-id="583d3-109">状態がの場合`failed`、エラーおよび`@api.diagnostics`プロパティからエラー情報が得られます。</span><span class="sxs-lookup"><span data-stu-id="583d3-109">If the status is `failed`, the error and `@api.diagnostics` properties provide error information.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="04369-110">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="04369-110">Permissions</span></span>
-<span data-ttu-id="04369-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="04369-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="583d3-110">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="583d3-110">Permissions</span></span>
+<span data-ttu-id="583d3-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="583d3-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="04369-113">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="04369-113">Permission type</span></span>      | <span data-ttu-id="04369-114">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="04369-114">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="583d3-113">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="583d3-113">Permission type</span></span>      | <span data-ttu-id="583d3-114">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="583d3-114">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="04369-115">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="04369-115">Delegated (work or school account)</span></span> | <span data-ttu-id="04369-116">Notes.Create、Notes.Read、Notes.ReadWrite、Notes.Read.All、Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="04369-116">Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All</span></span>    |
-|<span data-ttu-id="04369-117">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="04369-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="04369-118">Notes.Create、Notes.Read、Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="04369-118">Notes.Create, Notes.Read, Notes.ReadWrite</span></span>    |
-|<span data-ttu-id="04369-119">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="04369-119">Application</span></span> | <span data-ttu-id="04369-120">Notes.Read.All、Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="04369-120">Notes.Read.All, Notes.ReadWrite.All</span></span> |
+|<span data-ttu-id="583d3-115">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="583d3-115">Delegated (work or school account)</span></span> | <span data-ttu-id="583d3-116">Notes.Create、Notes.Read、Notes.ReadWrite、Notes.Read.All、Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="583d3-116">Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All</span></span>    |
+|<span data-ttu-id="583d3-117">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="583d3-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="583d3-118">Notes.Create、Notes.Read、Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="583d3-118">Notes.Create, Notes.Read, Notes.ReadWrite</span></span>    |
+|<span data-ttu-id="583d3-119">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="583d3-119">Application</span></span> | <span data-ttu-id="583d3-120">Notes.Read.All、Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="583d3-120">Notes.Read.All, Notes.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="04369-121">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="04369-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="583d3-121">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="583d3-121">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onenote/operations/{id}
@@ -38,24 +38,26 @@ GET /users/{id | userPrincipalName}/onenote/operations/{id}
 GET /groups/{id}/onenote/operations/{id}
 GET /sites/{id}/onenote/operations/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="04369-122">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="04369-122">Optional query parameters</span></span>
-<span data-ttu-id="04369-123">なし。</span><span class="sxs-lookup"><span data-stu-id="04369-123">None.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="583d3-122">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="583d3-122">Optional query parameters</span></span>
+<span data-ttu-id="583d3-123">なし。</span><span class="sxs-lookup"><span data-stu-id="583d3-123">None.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="04369-124">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="04369-124">Request headers</span></span>
-| <span data-ttu-id="04369-125">名前</span><span class="sxs-lookup"><span data-stu-id="04369-125">Name</span></span>       | <span data-ttu-id="04369-126">型</span><span class="sxs-lookup"><span data-stu-id="04369-126">Type</span></span> | <span data-ttu-id="04369-127">説明</span><span class="sxs-lookup"><span data-stu-id="04369-127">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="583d3-124">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="583d3-124">Request headers</span></span>
+| <span data-ttu-id="583d3-125">名前</span><span class="sxs-lookup"><span data-stu-id="583d3-125">Name</span></span>       | <span data-ttu-id="583d3-126">型</span><span class="sxs-lookup"><span data-stu-id="583d3-126">Type</span></span> | <span data-ttu-id="583d3-127">説明</span><span class="sxs-lookup"><span data-stu-id="583d3-127">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="04369-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="04369-128">Authorization</span></span>  | <span data-ttu-id="04369-129">string</span><span class="sxs-lookup"><span data-stu-id="04369-129">string</span></span>  | <span data-ttu-id="04369-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="04369-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="04369-132">承諾</span><span class="sxs-lookup"><span data-stu-id="04369-132">Accept</span></span> | <span data-ttu-id="04369-133">string</span><span class="sxs-lookup"><span data-stu-id="04369-133">string</span></span> | `application/json` |
+| <span data-ttu-id="583d3-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="583d3-128">Authorization</span></span>  | <span data-ttu-id="583d3-129">string</span><span class="sxs-lookup"><span data-stu-id="583d3-129">string</span></span>  | <span data-ttu-id="583d3-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="583d3-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="583d3-132">承諾</span><span class="sxs-lookup"><span data-stu-id="583d3-132">Accept</span></span> | <span data-ttu-id="583d3-133">string</span><span class="sxs-lookup"><span data-stu-id="583d3-133">string</span></span> | `application/json` |
 
-## <a name="request-body"></a><span data-ttu-id="04369-134">要求本文</span><span class="sxs-lookup"><span data-stu-id="04369-134">Request body</span></span>
-<span data-ttu-id="04369-135">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="04369-135">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="583d3-134">要求本文</span><span class="sxs-lookup"><span data-stu-id="583d3-134">Request body</span></span>
+<span data-ttu-id="583d3-135">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="583d3-135">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="04369-136">応答</span><span class="sxs-lookup"><span data-stu-id="04369-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="583d3-136">応答</span><span class="sxs-lookup"><span data-stu-id="583d3-136">Response</span></span>
 
-<span data-ttu-id="04369-137">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[onenoteOperation](../resources/onenoteoperation.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="04369-137">If successful, this method returns a `200 OK` response code and [onenoteOperation](../resources/onenoteoperation.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="04369-138">例</span><span class="sxs-lookup"><span data-stu-id="04369-138">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="04369-139">要求</span><span class="sxs-lookup"><span data-stu-id="04369-139">Request</span></span>
-<span data-ttu-id="04369-140">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="04369-140">Here is an example of the request.</span></span>
+<span data-ttu-id="583d3-137">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[onenoteOperation](../resources/onenoteoperation.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="583d3-137">If successful, this method returns a `200 OK` response code and [onenoteOperation](../resources/onenoteoperation.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="583d3-138">例</span><span class="sxs-lookup"><span data-stu-id="583d3-138">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="583d3-139">要求</span><span class="sxs-lookup"><span data-stu-id="583d3-139">Request</span></span>
+<span data-ttu-id="583d3-140">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="583d3-140">Here is an example of the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="583d3-141">プロトコル</span><span class="sxs-lookup"><span data-stu-id="583d3-141">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_onenoteoperation"
@@ -63,8 +65,22 @@ GET /sites/{id}/onenote/operations/{id}
 ```http
 GET https://graph.microsoft.com/v1.0/me/onenote/operations/{id}
 ```
-##### <a name="response"></a><span data-ttu-id="04369-141">応答</span><span class="sxs-lookup"><span data-stu-id="04369-141">Response</span></span>
-<span data-ttu-id="04369-p105">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="04369-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+# <a name="ctabcsharp"></a>[<span data-ttu-id="583d3-142">C#</span><span class="sxs-lookup"><span data-stu-id="583d3-142">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-onenoteoperation-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="583d3-143">Javascript</span><span class="sxs-lookup"><span data-stu-id="583d3-143">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-onenoteoperation-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="583d3-144">目的-C</span><span class="sxs-lookup"><span data-stu-id="583d3-144">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-onenoteoperation-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+##### <a name="response"></a><span data-ttu-id="583d3-145">応答</span><span class="sxs-lookup"><span data-stu-id="583d3-145">Response</span></span>
+<span data-ttu-id="583d3-p105">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="583d3-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -84,18 +100,6 @@ Content-length: 215
   "resourceId": "resourceId-value"
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="04369-145">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="04369-145">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="04369-146">C#</span><span class="sxs-lookup"><span data-stu-id="04369-146">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_onenoteoperation-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="04369-147">Javascript</span><span class="sxs-lookup"><span data-stu-id="04369-147">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_onenoteoperation-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="04369-148">目的-C</span><span class="sxs-lookup"><span data-stu-id="04369-148">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/get_onenoteoperation-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -106,8 +110,5 @@ Content-length: 215
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/onenoteoperation-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/v1.0/api/onenoteoperation-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/onenoteoperation-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

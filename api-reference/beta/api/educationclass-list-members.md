@@ -4,48 +4,50 @@ description: クラスの教師と学生を取得します。 委任されたト
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: be51648f2a6f3549059eb5d0d69bb82198d53328
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: f9506d8ce8a17e0c2b2d3c0a5210b4c4594e7a48
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35259809"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35436047"
 ---
-# <a name="list-members"></a><span data-ttu-id="4f6ec-104">メンバーを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="4f6ec-104">List members</span></span>
+# <a name="list-members"></a><span data-ttu-id="5b4bc-104">メンバーを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="5b4bc-104">List members</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4f6ec-105">クラスの教師と学生を取得します。</span><span class="sxs-lookup"><span data-stu-id="4f6ec-105">Retrieves the teachers and students for a class.</span></span> <span data-ttu-id="4f6ec-106">委任されたトークンを使用した場合、メンバーを参照できるのはクラスの他のメンバーのみになります。</span><span class="sxs-lookup"><span data-stu-id="4f6ec-106">Note that if the delegated token is used, members can only be seen by other members of the class.</span></span>
+<span data-ttu-id="5b4bc-105">クラスの教師と学生を取得します。</span><span class="sxs-lookup"><span data-stu-id="5b4bc-105">Retrieves the teachers and students for a class.</span></span> <span data-ttu-id="5b4bc-106">委任されたトークンを使用した場合、メンバーを参照できるのはクラスの他のメンバーのみになります。</span><span class="sxs-lookup"><span data-stu-id="5b4bc-106">Note that if the delegated token is used, members can only be seen by other members of the class.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="4f6ec-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="4f6ec-107">Permissions</span></span>
-<span data-ttu-id="4f6ec-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4f6ec-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="5b4bc-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="5b4bc-107">Permissions</span></span>
+<span data-ttu-id="5b4bc-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5b4bc-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4f6ec-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="4f6ec-110">Permission type</span></span>      | <span data-ttu-id="4f6ec-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="4f6ec-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="5b4bc-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="5b4bc-110">Permission type</span></span>      | <span data-ttu-id="5b4bc-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="5b4bc-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="4f6ec-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="4f6ec-112">Delegated (work or school account)</span></span> |  <span data-ttu-id="4f6ec-113">EduRoster.ReadBasic</span><span class="sxs-lookup"><span data-stu-id="4f6ec-113">EduRoster.ReadBasic</span></span>  |
-|<span data-ttu-id="4f6ec-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="4f6ec-114">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="4f6ec-115">サポートされていません</span><span class="sxs-lookup"><span data-stu-id="4f6ec-115">Not supported</span></span>  |
-|<span data-ttu-id="4f6ec-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="4f6ec-116">Application</span></span> | <span data-ttu-id="4f6ec-117">Eduroster.readbasic、Eduroster.readbasic、およびすべての正の値を取得します。</span><span class="sxs-lookup"><span data-stu-id="4f6ec-117">EduRoster.Read.All, EduRoster.ReadWrite.All plus Member.Read.Hidden</span></span> | 
+|<span data-ttu-id="5b4bc-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="5b4bc-112">Delegated (work or school account)</span></span> |  <span data-ttu-id="5b4bc-113">EduRoster.ReadBasic</span><span class="sxs-lookup"><span data-stu-id="5b4bc-113">EduRoster.ReadBasic</span></span>  |
+|<span data-ttu-id="5b4bc-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="5b4bc-114">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="5b4bc-115">サポートされていません</span><span class="sxs-lookup"><span data-stu-id="5b4bc-115">Not supported</span></span>  |
+|<span data-ttu-id="5b4bc-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="5b4bc-116">Application</span></span> | <span data-ttu-id="5b4bc-117">Eduroster.readbasic、Eduroster.readbasic、およびすべての正の値を取得します。</span><span class="sxs-lookup"><span data-stu-id="5b4bc-117">EduRoster.Read.All, EduRoster.ReadWrite.All plus Member.Read.Hidden</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="4f6ec-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="4f6ec-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5b4bc-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="5b4bc-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /education/classes/{id}/members
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="4f6ec-119">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="4f6ec-119">Optional query parameters</span></span>
-<span data-ttu-id="4f6ec-120">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="4f6ec-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="5b4bc-119">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="5b4bc-119">Optional query parameters</span></span>
+<span data-ttu-id="5b4bc-120">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="5b4bc-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="4f6ec-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="4f6ec-121">Request headers</span></span>
-| <span data-ttu-id="4f6ec-122">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="4f6ec-122">Header</span></span>       | <span data-ttu-id="4f6ec-123">値</span><span class="sxs-lookup"><span data-stu-id="4f6ec-123">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="5b4bc-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="5b4bc-121">Request headers</span></span>
+| <span data-ttu-id="5b4bc-122">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="5b4bc-122">Header</span></span>       | <span data-ttu-id="5b4bc-123">値</span><span class="sxs-lookup"><span data-stu-id="5b4bc-123">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="4f6ec-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="4f6ec-124">Authorization</span></span>  | <span data-ttu-id="4f6ec-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="4f6ec-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="5b4bc-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="5b4bc-124">Authorization</span></span>  | <span data-ttu-id="5b4bc-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="5b4bc-p104">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="4f6ec-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="4f6ec-127">Request body</span></span>
-<span data-ttu-id="4f6ec-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="4f6ec-128">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="4f6ec-129">応答</span><span class="sxs-lookup"><span data-stu-id="4f6ec-129">Response</span></span>
-<span data-ttu-id="4f6ec-130">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [educationUser](../resources/educationuser.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="4f6ec-130">If successful, this method returns a `200 OK` response code and a collection of [educationUser](../resources/educationuser.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="4f6ec-131">例</span><span class="sxs-lookup"><span data-stu-id="4f6ec-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="4f6ec-132">要求</span><span class="sxs-lookup"><span data-stu-id="4f6ec-132">Request</span></span>
-<span data-ttu-id="4f6ec-133">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="4f6ec-133">The following is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5b4bc-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="5b4bc-127">Request body</span></span>
+<span data-ttu-id="5b4bc-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="5b4bc-128">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="5b4bc-129">応答</span><span class="sxs-lookup"><span data-stu-id="5b4bc-129">Response</span></span>
+<span data-ttu-id="5b4bc-130">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [educationUser](../resources/educationuser.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="5b4bc-130">If successful, this method returns a `200 OK` response code and a collection of [educationUser](../resources/educationuser.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="5b4bc-131">例</span><span class="sxs-lookup"><span data-stu-id="5b4bc-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="5b4bc-132">要求</span><span class="sxs-lookup"><span data-stu-id="5b4bc-132">Request</span></span>
+<span data-ttu-id="5b4bc-133">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="5b4bc-133">The following is an example of the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="5b4bc-134">プロトコル</span><span class="sxs-lookup"><span data-stu-id="5b4bc-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_members"
@@ -53,10 +55,24 @@ GET /education/classes/{id}/members
 ```http
 GET https://graph.microsoft.com/beta/education/classes/11016/members
 ```
-##### <a name="response"></a><span data-ttu-id="4f6ec-134">応答</span><span class="sxs-lookup"><span data-stu-id="4f6ec-134">Response</span></span>
-<span data-ttu-id="4f6ec-135">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="4f6ec-135">The following is an example of the response.</span></span> 
+# <a name="ctabcsharp"></a>[<span data-ttu-id="5b4bc-135">C#</span><span class="sxs-lookup"><span data-stu-id="5b4bc-135">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-members-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-><span data-ttu-id="4f6ec-p105">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="4f6ec-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="5b4bc-136">Javascript</span><span class="sxs-lookup"><span data-stu-id="5b4bc-136">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-members-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="5b4bc-137">目的-C</span><span class="sxs-lookup"><span data-stu-id="5b4bc-137">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-members-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+##### <a name="response"></a><span data-ttu-id="5b4bc-138">応答</span><span class="sxs-lookup"><span data-stu-id="5b4bc-138">Response</span></span>
+<span data-ttu-id="5b4bc-139">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="5b4bc-139">The following is an example of the response.</span></span> 
+
+><span data-ttu-id="5b4bc-p105">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="5b4bc-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -144,18 +160,6 @@ Content-length: 593
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="4f6ec-138">SDK サンプル コード</span><span class="sxs-lookup"><span data-stu-id="4f6ec-138">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="4f6ec-139">C#</span><span class="sxs-lookup"><span data-stu-id="4f6ec-139">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_members-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="4f6ec-140">Javascript</span><span class="sxs-lookup"><span data-stu-id="4f6ec-140">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_members-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="4f6ec-141">目的-C</span><span class="sxs-lookup"><span data-stu-id="4f6ec-141">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/get_members-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -167,9 +171,6 @@ Content-length: 593
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/educationclass-list-members.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/educationclass-list-members.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/educationclass-list-members.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->
