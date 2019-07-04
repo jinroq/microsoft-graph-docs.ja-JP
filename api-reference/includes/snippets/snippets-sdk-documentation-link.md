@@ -1,0 +1,3 @@
+<!-- markdownlint-disable MD041-->
+
+> <span data-ttu-id="ac020-101">SDK をプロジェクトに[追加](https://docs.microsoft.com/en-us/graph/sdks/sdk-installation)し、 [authprovider](https://docs.microsoft.com/en-us/graph/sdks/choose-authentication-providers)インスタンスを作成する方法の詳細については、 [sdk のドキュメント](https://docs.microsoft.com/en-us/graph/sdks/sdks-overview)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ac020-101">Read the [SDK documentation](https://docs.microsoft.com/en-us/graph/sdks/sdks-overview) for details on how to [add the SDK](https://docs.microsoft.com/en-us/graph/sdks/sdk-installation) to your project and [create an authProvider](https://docs.microsoft.com/en-us/graph/sdks/choose-authentication-providers) instance.</span></span>
