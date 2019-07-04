@@ -3,12 +3,12 @@ title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 42865c9c03f0f0bfc5e815e46b6d2ad04ef9bd47
-ms.sourcegitcommit: ee710ff556f4a7907181df5c323e345f52808ce2
+ms.openlocfilehash: 4e4c205c73524c9c26f5f0fe66300e29baf80f4b
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/02/2019
-ms.locfileid: "35417746"
+ms.locfileid: "35447482"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
@@ -18,11 +18,16 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 ## <a name="june-2019"></a>2019 年 6 月
 
+### <a name="reports-apis"></a>レポート API
+
+| **変更の種類** | **バージョン** | **説明**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+|追加|ベータ版| ユーザーの登録と使用状況に関する情報を取得する新しいレポートを追加しました。<br/><ul><li>[reportroot-getcredentialusagesummary](/graph/api/reportroot-getcredentialusagesummary?view=graph-rest-beta) - セルフサービスのパスワード リセットの使用状況を報告する。</li><li>[reportroot-getcredentialuserregistrationcount](/graph/api/reportroot-getcredentialuserregistrationcount?view=graph-rest-beta) - セルフサービスのパスワード リセットと多要素認証の登録数を報告する。</li><li>[reportroot-list-credentialuserregistrationdetails](/graph/api/reportroot-list-credentialuserregistrationdetails?view=graph-rest-beta) - セルフサービスのパスワード リセットと多要素認証の使用状況を報告する。</li><li>[reportroot-list-usercredentialusagedetails](/graph/api/resources/reportroot-list-usercredentialusagedetails?view=graph-rest-beta) - ユーザー向けのセルフサービスのパスワード リセットの使用状況を報告する。</li></ul> |
+
 ### <a name="identity-protection-apis"></a>Identity Protection API
 | **変更の種類** | **バージョン** | **説明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | 追加 | ベータ版 | Azure AD Identity Protection でのリスク検出を表す [riskDetection API](/graph/api/resources/riskdetection?view=graph-rest-beta) が追加されました。 |
-
 
 ### <a name="identity-and-access"></a>ID とアクセス
 
