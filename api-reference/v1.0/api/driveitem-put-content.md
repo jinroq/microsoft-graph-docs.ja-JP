@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: サイズの小さいファイルをアップロードする
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 59036213350b3efa5c22fd277328176999bbbc11
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 716e97cc514b9cbef25baa5155fb456b87e7f1ea
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32572718"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35443953"
 ---
 # <a name="upload-or-replace-the-contents-of-a-driveitem"></a>DriveItem の内容をアップロードまたは置換する
 
@@ -95,6 +95,8 @@ Content-Type: application/json
 
 この例では、既知の ID を持つファイルの内容を置き換えます。
 
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "upload-via-put-id", "scopes": "files.readwrite" } -->
 
 ```http
@@ -103,6 +105,16 @@ Content-Type: text/plain
 
 The contents of the file goes here.
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/upload-via-put-id-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/upload-via-put-id-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>応答
 
@@ -124,7 +136,7 @@ Content-Type: application/json
 
 ## <a name="error-responses"></a>エラー応答
 
-エラーがどのように返されるかについては、「[エラー応答][error-response]」を参照してください。
+エラーがどのように返されるかの詳細については、「[エラー応答][error-response]」を参照してください。
 
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
@@ -133,5 +145,7 @@ Content-Type: application/json
   "type": "#page.annotation",
   "description": "Create a new file with content or update a file's content.",
   "keywords": "insert,upsert,update,upload",
-  "section": "documentation"
+  "section": "documentation",
+  "suppressions": [
+  ]
 } -->

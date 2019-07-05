@@ -4,12 +4,12 @@ description: '作業アイテムを追跡することができる Outlook アイ
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 819f2e30cce8b284e054a172c69bb1940770bca3
-ms.sourcegitcommit: b18ccb24fc79f3abb470cd759e25cdd266fc77c7
+ms.openlocfilehash: 231cb227c33e9f58e0dbe87dbf832b86bf2f017f
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34109539"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35459602"
 ---
 # <a name="outlooktask-resource-type"></a>outlookTask リソースの種類
 
@@ -55,7 +55,7 @@ Prefer: outlook.timezone="Eastern Standard Time"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|assignedTo|String|タスクが割り当てられているユーザーの名前。|
+|assignedTo|String|Outlook でタスクが割り当てられているユーザーの名前。 読み取り専用です。|
 |body|[itemBody](itembody.md)|通常はタスクに関する情報を含むタスク本体。HTML 型のみがサポートされていることに注意してください。|
 |categories|String コレクション|タスクに関連付けられたカテゴリ。 各カテゴリは、ユーザーが定義した [outlookCategory](outlookcategory.md) の **displayName** プロパティに対応しています。|
 |changeKey|String|タスクのバージョン。|
