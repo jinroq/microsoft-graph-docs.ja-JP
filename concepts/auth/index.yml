@@ -5,15 +5,11 @@ metadata:
   title: Microsoft Graph 認証の概要
   description: OAuth 2.0 の基礎と、Microsoft Graph API を呼び出すためにトークンを取得する方法について説明します。
   services: active-directory
-  author: danieldobalian
+  author: CelesteDG
   manager: CelesteDG
-  ms.service: active-directory
-  ms.subservice: develop
-  ms.tgt_pltfrm: na
-  ms.devlang: na
   ms.topic: landing-page
   ms.date: 04/26/2019
-  ms.author: dadobali
+  ms.reviewer: jawoods
 abstract:
   description: Microsoft Graph からセキュリティで保護されたデータにアクセスするためのアクセス許可を認証および操作する方法について説明します。 次のドキュメントを参照して、Microsoft Graph 開発をサポートする Microsoft identity platform のアプリ登録、認証ライブラリ、承認、およびその他の部分について説明します。
   aside:
@@ -43,10 +39,10 @@ sections:
               src: ../images/index/i_overview.svg
             title: 認証の基礎
           - href: /graph/permissions-reference
-            html: <p>Microsoft Graph のスコープ & アプリのアクセス許可の詳細について説明します。</p>
+            html: <p>Microsoft Graph の範囲の詳細については、「app permissions & を参照してください。</p>
             image:
               src: ../images/index/i_code-edit.svg
-            title: アクセス許可 & スコープ
+            title: アクセス許可の範囲 &
           - href: /graph/auth/auth-cloudsolutionprovider
             html: <p>アプリがパートナー管理データにアクセスできるようにします。</p>
             image:
