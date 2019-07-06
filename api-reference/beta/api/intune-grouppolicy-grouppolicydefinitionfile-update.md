@@ -4,12 +4,12 @@ description: GroupPolicyDefinitionFile オブジェクトのプロパティを�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3857e4f7b1ec5f25401f1317cdfa413952989732
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 130e66b47459958cbc32c2e9b64e2968018825cd
+ms.sourcegitcommit: 705b32b9a64516d8138fab34c173b7df4f78a6ad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34984738"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "35576390"
 ---
 # <a name="update-grouppolicydefinitionfile"></a>GroupPolicyDefinitionFile の更新
 
@@ -57,6 +57,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |targetPrefix|String|ADMX ファイル内の名前空間を参照する論理名を指定します。|
 |targetNamespace|String|ADMX ファイル内の名前空間を識別するために使用する URI を指定します。|
 |Msrtcsip-policytype|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|グループポリシーの種類を指定します。 可能な値は、`admxBacked`、`admxIngested` です。|
+|改訂|String|ファイルに関連付けられているリビジョンバージョン。|
 |id|文字列|エンティティのキー。|
 |lastModifiedDateTime|DateTimeOffset|エンティティが最後に変更された日付と時刻。|
 
@@ -72,27 +73,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/groupPolicyDefinitionFiles/{groupPolicyDefinitionFileId}
 Content-type: application/json
-Content-length: 325
-
-{
-  "@odata.type": "#microsoft.graph.groupPolicyDefinitionFile",
-  "displayName": "Display Name value",
-  "description": "Description value",
-  "languageCodes": [
-    "Language Codes value"
-  ],
-  "targetPrefix": "Target Prefix value",
-  "targetNamespace": "Target Namespace value",
-  "policyType": "admxIngested"
-}
-```
-
-### <a name="response"></a>応答
-以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 438
+Content-length: 358
 
 {
   "@odata.type": "#microsoft.graph.groupPolicyDefinitionFile",
@@ -104,12 +85,32 @@ Content-Length: 438
   "targetPrefix": "Target Prefix value",
   "targetNamespace": "Target Namespace value",
   "policyType": "admxIngested",
+  "revision": "Revision value"
+}
+```
+
+### <a name="response"></a>応答
+以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 471
+
+{
+  "@odata.type": "#microsoft.graph.groupPolicyDefinitionFile",
+  "displayName": "Display Name value",
+  "description": "Description value",
+  "languageCodes": [
+    "Language Codes value"
+  ],
+  "targetPrefix": "Target Prefix value",
+  "targetNamespace": "Target Namespace value",
+  "policyType": "admxIngested",
+  "revision": "Revision value",
   "id": "940aa2a1-a2a1-940a-a1a2-0a94a1a20a94",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
-
 
 
 

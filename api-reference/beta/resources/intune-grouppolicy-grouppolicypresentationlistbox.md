@@ -4,12 +4,12 @@ description: ADMX listBox 要素と ADMX list 要素を表します。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d24b70809eb08828b2cc037a7986c6d7b5e255ef
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: dd7e6c5c3d12719bdcc79aef0e0df4462175b4c1
+ms.sourcegitcommit: 705b32b9a64516d8138fab34c173b7df4f78a6ad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34985340"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "35576481"
 ---
 # <a name="grouppolicypresentationlistbox-resource-type"></a>groupPolicyPresentationListBox リソースの種類
 
@@ -38,6 +38,7 @@ ADMX listBox 要素と ADMX list 要素を表します。
 |id|String|エンティティのキー。 [GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
 |lastModifiedDateTime|DateTimeOffset|エンティティが最後に変更された日付と時刻。 [GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
 |explicitValue|Boolean|このオプションが指定されている場合、ユーザーはレジストリサブキーの値とレジストリサブキー名を指定する必要があります。 リストボックスに2つの列が表示されます。1つは名前用、もう1つはデータ用です。 既定値は false です。|
+|valuePrefix|String|まだ文書化されていません|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
@@ -58,11 +59,10 @@ ADMX listBox 要素と ADMX list 要素を表します。
   "label": "String",
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
-  "explicitValue": true
+  "explicitValue": true,
+  "valuePrefix": "String"
 }
 ```
-
-
 
 
 

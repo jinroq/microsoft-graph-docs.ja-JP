@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: de889892e023d5d6036ab1886534d94c4362d641
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 07a3a76f2ec2a4c3e1536f4b4d61e52417c2053c
+ms.sourcegitcommit: 705b32b9a64516d8138fab34c173b7df4f78a6ad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35448592"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "35576467"
 ---
 # <a name="riskdetection-resource-type"></a>riskDetection リソースの種類
 
@@ -18,7 +18,7 @@ ms.locfileid: "35448592"
 
 Azure AD テナントの検出されたリスクに関する情報を表します。 
 
-Azure AD は、さまざまなシグナルやマシン学習に基づいて、ユーザーとサインインのリスクを継続的に評価します。 この API は、Azure AD 環境のすべてのリスク検出へのプログラムによるアクセスを提供します。
+Azure AD は、さまざまなシグナルやマシン学習に基づいて、[ユーザーのリスク](riskyuser.md)とアプリまたはユーザー[のサインイン](signin.md)リスクを継続的に評価します。 この API は、Azure AD 環境のすべてのリスク検出へのプログラムによるアクセスを提供します。
 
 リスクイベントの詳細については、「 [Azure Active Directory Id 保護](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/)」を参照してください。
 

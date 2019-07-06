@@ -3,19 +3,19 @@ title: Microsoft Graph Toolkit (プレビュー)
 description: Microsoft Graph Toolkit は、フレームワークに依存しない web コンポーネントと、Microsoft Graph にアクセスして作業するためのヘルパーのコレクションです。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: e6d5974029625a8dd1bef0c7b981fcf2b36b747c
-ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
+ms.openlocfilehash: ca55500217ab23f9e6a2744da61f332e745af398
+ms.sourcegitcommit: 705b32b9a64516d8138fab34c173b7df4f78a6ad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35243063"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "35576404"
 ---
 # <a name="microsoft-graph-toolkit-preview"></a>Microsoft Graph Toolkit (プレビュー)
 
 Microsoft Graph Toolkit は、フレームワークに依存しない web コンポーネントと、Microsoft Graph にアクセスして作業するためのヘルパーのコレクションです。 すべてのコンポーネントは、カスタマイズを必要とせずに Microsoft Graph にアクセスできます。
 
->[!NOTE]
->このライブラリはプレビュー版で、初期段階の開発に含まれています。 コミュニティからのフィードバックに基づいて、すべてのコンポーネントと Api に変更が加えられ、強化されることを期待しています。
+> [!NOTE]
+> このライブラリはプレビュー版で、初期段階の開発に含まれています。 コミュニティからのフィードバックに基づいて、すべてのコンポーネントと Api に変更が加えられ、強化されることを期待しています。
 
 ## <a name="get-started"></a>作業の開始
 

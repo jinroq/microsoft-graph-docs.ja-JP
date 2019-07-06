@@ -4,12 +4,12 @@ description: エンティティは、ADMX (管理用テンプレート) XML フ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a872671186e55524002b2d0a5f85b2ce1bbf2466
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 384b59a2c9e1b669cd71b294c6420c13b95d1102
+ms.sourcegitcommit: 705b32b9a64516d8138fab34c173b7df4f78a6ad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34975939"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "35576488"
 ---
 # <a name="grouppolicydefinitionfile-resource-type"></a>groupPolicyDefinitionFile リソースの種類
 
@@ -34,6 +34,7 @@ ms.locfileid: "34975939"
 |targetPrefix|String|ADMX ファイル内の名前空間を参照する論理名を指定します。|
 |targetNamespace|String|ADMX ファイル内の名前空間を識別するために使用する URI を指定します。|
 |Msrtcsip-policytype|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|グループポリシーの種類を指定します。 可能な値は、`admxBacked`、`admxIngested` です。|
+|改訂|String|ファイルに関連付けられているリビジョンバージョン。|
 |id|文字列|エンティティのキー。|
 |lastModifiedDateTime|DateTimeOffset|エンティティが最後に変更された日付と時刻。|
 
@@ -61,12 +62,11 @@ ms.locfileid: "34975939"
   "targetPrefix": "String",
   "targetNamespace": "String",
   "policyType": "String",
+  "revision": "String",
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
-
 
 
 
