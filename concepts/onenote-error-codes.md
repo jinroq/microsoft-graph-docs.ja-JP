@@ -5,11 +5,11 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 ms.openlocfilehash: f74f9be52756e068aa3e197f2de526b38c187266
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987854"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32558378"
 ---
 # <a name="error-codes-for-onenote-apis-in-microsoft-graph"></a>Microsoft Graph の OneNote API のエラー コード
 
@@ -192,7 +192,7 @@ PATCH 要求内のペイロードの構成が正しくありません。
 要求で指定されているリソースは削除されました。
 
 ### <a name="20115"></a>20115
-名前に無効な文字が含まれています。 ノートブック名には次の文字を含めることはできません: `? * \ / : < > | ' "`
+The name contains invalid characters. 名前の値に無効な文字が含まれています。ノートブック名には、次の文字を含めることができません: ?*`? * \ / : < > | ' "`:<>|'"
 
 ### <a name="20117"></a>20117
 指定された名前のアイテムは、指定された場所に既に存在します。
@@ -213,7 +213,7 @@ PATCH 要求内のペイロードの構成が正しくありません。
 PATCH 要求は、指定されたページを変更できません。
 
 ### <a name="20124"></a>20124
-マルチパートの PATCH 要求に、PATCH アクションの JSON 構造を指定した "commands" パートが含まれていません。 「[ページ コンテンツの更新](onenote-update-page.md)」を参照してください。
+マルチパートの PATCH 要求に、PATCH アクションの JSON 構造を指定した "commands" パートが含まれていません。「[ページ コンテンツの更新](onenote-update-page.md)」を参照してください。
 
 ### <a name="20125"></a>20125
 PATCH 要求に action が含まれていません。「[ページ コンテンツの更新](onenote-update-page.md)」を参照してください。
@@ -240,7 +240,7 @@ PATCH 要求に action が含まれていません。「[ページ コンテン�
 要求に無効なコンテンツが含まれています。 このエラーのよくある原因は、Content-Type 要求ヘッダーの欠落や、要求の本文にコンテンツが含まれていないことです。 
 
 ### <a name="20133"></a>20133
-要求で指定された PATCH ターゲットはサポートされていません。 「[ページ コンテンツの更新](onenote-update-page.md)」を参照してください。
+要求にはサポートされていない PATCH ターゲットが指定されています。「[ページ コンテンツの更新](onenote-update-page.md)」を参照してください。
 
 ### <a name="20134"></a>20134
 要求に、PATCH アクションのターゲットとして無効な要素が指定されています。ターゲットで **data-id** 識別子が使用されている場合は、プレフィックスとして # 記号が付いていることを確認してください。「[ページ コンテンツの更新](onenote-update-page.md)」を参照してください。
@@ -271,7 +271,7 @@ PATCH 要求のターゲット要素の種類では、**append** 操作はサポ
 「[ノート シールを使用する](onenote-note-tags.md)」を参照してください。
 
 ### <a name="20141"></a>20141
-PATCH 要求のターゲット要素の種類では、指定の操作はサポートされていません。 「[ページ コンテンツの更新](onenote-update-page.md)」を参照してください。
+PATCH 要求のターゲット要素の種類では、指定の操作はサポートされていません。「[ページ コンテンツの更新](onenote-update-page.md)」を参照してください。
 
 ### <a name="20142"></a>20142
 要求に、子エンティティの親、または親エンティティの子に対する **expand** 式が含まれていますが、それはサポートされていません。「[サポートされる OData のクエリ文字列オプション](onenote-get-content.md#supported-odata-query-string-options)」をご覧ください。
@@ -280,7 +280,7 @@ PATCH 要求のターゲット要素の種類では、指定の操作はサポ�
 OData クエリが無効です。
 
 ### <a name="20144"></a>20144
-要求に、ナビゲートでないプロパティに対する **expand** 式が含まれています。 展開できるのは、ナビゲート プロパティだけです。
+要求に、ナビゲートでないプロパティに対する **expand** 式が含まれています。展開できるのは、ナビゲート プロパティだけです。
 
 ### <a name="20145"></a>20145
 要求の **select** 式または **expand** 式に、無効な用語が含まれています。
@@ -289,7 +289,7 @@ OData クエリが無効です。
 要素で `style="position:absolute"` 属性が指定されていますが、**body** 要素で `data-absolute-enabled="true"` が指定されていません。この指定は、配置をサポートするためには必須です。 すべての位置設定が無視されます。 「[絶対位置で配置された要素の作成](onenote-abs-pos.md)」を参照してください。
 
 ### <a name="20147"></a>20147
-サポートされていない **body** 要素の直接の子ではない要素で `style="position:absolute"` 属性が指定されています。 要素が **div**、**img**、**object** の場合、それを body の直接の子にします。直接の子にしない場合、位置設定が無視され、絶対位置で配置された div の中でそのコンテンツがレンダリングされます。 「[絶対位置で配置された要素の作成](onenote-abs-pos.md)」を参照してください。
+**body** 要素の直接の子ではない要素で `style="position:absolute"` 属性が指定されていますが、これはサポートされていません。要素が **div**、**img**、**object** のいずれかの場合、それを body の直接の子にしてください。そうでない場合、位置設定は無視され、コンテンツは絶対位置により配置された div の内側に表示されます。「[絶対位置で配置された要素の作成](onenote-abs-pos.md)」をご覧ください。
 
 ### <a name="20148"></a>20148
 `style="position:absolute"` 属性がそれをサポートしない種類の要素で指定されています。 ページ本文の直接の子である **div**、**img**、**object** 要素だけが位置設定をサポートします。 「[絶対位置で配置された要素の作成](onenote-abs-pos.md)」を参照してください。
@@ -298,16 +298,16 @@ OData クエリが無効です。
 要求が指定しているターゲット要素が見つかりません。
 
 ### <a name="20150"></a>20150
-この認証の種類には、この要求は無効です。 代わりに、`../me/onenote/` パスを使用してください。
+この認証の種類には、この要求は無効です。代わりに、`../me/onenote/` パスを使用してください。
 
 ### <a name="20151"></a>20151
-この認証の種類には、この要求は無効です。 `../me/onenote/section/{id}/pages` エンドポイントを使用し、特定のセクションにページを作成します。
+この認証の種類には、この要求は無効です。`../me/onenote/section/{id}/pages` エンドポイントを使用して、指定のセクションでページを作成してください。
 
 ### <a name="20152"></a>20152
 エンティティに name 値が指定されていません。名前を定義する必要があり、その場合、名前が空白だけであってはなりません。
 
 ### <a name="20153"></a>20153
-エンティティ名に使用できない文字が含まれています。 名前には、以下の文字を含めることはできません: `? * \ / : < > | & # " % ~`
+The entity name contains invalid characters. The name cannot contain the following characters: `? * \ / : < > | & # " % ~`
 
 ### <a name="20154"></a>20154
 エンティティ名を空白で始めることはできません。
@@ -322,7 +322,7 @@ OData クエリが無効です。
 宛先エンティティの指定された ID が無効です。
 
 ### <a name="20158"></a>20158
-要求に指定されているサイト URL のメタデータを取得できません。 指定された URL の形式を確認してください。 サポートされている形式は `https://domain.sharepoint.com/site-a` と `https://domain.com/sites/site-a` です。
+要求で指定されたサイトの URL のメタデータを取得できません。指定された URL の形式を確認してください。サポートされている形式は、`https://domain.sharepoint.com/site-a` と `https://domain.com/sites/site-a` です。
 
 ### <a name="20160"></a>20160
 指定した ID を持つ Office 365 統合グループを見つけることができません。
@@ -336,14 +336,14 @@ OData クエリが無効です。
 詳細については、「[OneNote API の調整とその回避方法](https://blogs.msdn.com/b/onenotedev/archive/2016/01/13/onenote-api-throttling-and-best-practices.aspx)」を参照してください。
 
 ### <a name="20168"></a>20168
-要求に指定されているビデオ ソースはサポートされていません。 現行の一覧については、「[サポートされているビデオ サイト](onenote-images-files.md#adding-videos)」を参照してください。
+The video source specified in the request is not supported. See [Supported video sites](onenote-images-files.md#adding-videos) for the current list.
 
 
 ## <a name="codes-from-30001-to-39999"></a>30001 から 39999 のコード
 ユーザーのアカウントに問題があります。
 
 ### <a name="30101"></a>30101
-ユーザー アカウントの OneDrive のクォータを超えています。「[OneDrive](https://onedrive.live.com/about/ja-JP/)」を参照してください。
+ユーザー アカウントの OneDrive のクォータを超えています。「[OneDrive](https://onedrive.live.com/about/en-us/)」を参照してください。
 
 ### <a name="30102"></a>30102
 要求されたセクションは、最大サイズに達したため、これ以上追加できません。
