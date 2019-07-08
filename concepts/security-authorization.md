@@ -4,12 +4,12 @@ description: Microsoft Graph セキュリティ API からアクセスできる�
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: 795ac1da43c3ba67dcbc83853e4bbb0d54cdae0f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 52f781eecef1da2d801025d4ba2409f9297b5cd8
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32564149"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33621229"
 ---
 # <a name="authorization-and-the-microsoft-graph-security-api"></a>承認と Microsoft Graph セキュリティ API
 
@@ -62,9 +62,9 @@ Azure AD テナント管理者は、アプリケーションにアクセス許�
 
 - アプリケーションをテナント **T1** で再び実行できるようにするには、テナント **T1** の管理者が、アクセス許可 **P1** と **P2** をアプリケーションに明示的に付与する必要があります。
 
-## <a name="register-an-application-in-the-azure-ad-v20-endpoint"></a>Azure AD v2.0 エンドポイントでアプリケーションを登録する
+## <a name="register-an-application-with-the-microsoft-identity-platform-endpoint"></a>Microsoft ID プラットフォーム エンドポイントにアプリケーションを登録する
 
-Azure AD v2.0 エンドポイントでアプリケーションを登録するには、次の情報が必要です。
+Microsoft ID プラットフォーム エンドポイントにアプリケーションを登録するには、次のものが必要です。
 
 - **アプリケーション名** - アプリケーション名として使用される文字列。
 - **リダイレクト URL** - Azure AD からの承認応答の送信先 URL。 最初に、テスト クライアント Web アプリケーション ホーム ページを使用できます。
@@ -72,11 +72,13 @@ Azure AD v2.0 エンドポイントでアプリケーションを登録するに
 
 アプリケーションを登録するには、次の操作を行います。
 
-1. https://apps.dev.microsoft.com/ に移動し、サインインします。
+1. 「[Azure アプリ登録ポータル](https://go.microsoft.com/fwlink/?linkid=2083908)」に移動してサインインします。
     >**注**: テナント管理者である必要はありません。**[マイ アプリケーション]** リストにリダイレクトされます。
-2. 新しいアプリケーションを作成するため、**[アプリの追加]** を選択し、**[アプリケーション名]** にアプリケーションを入力します、
-3. 新しいアプリケーションの登録ページで **[プラットフォームの追加]** > **[Web]** を選択します。 **[リダイレクト URL]** フィールドにリダイレクト URL を入力します。
-4. **[Microsoft Graph のアクセス許可]** セクションの **[委任されたアクセス許可]** で、**[追加]** を選択します。 ダイアログ ボックスで、必要なアクセス許可を選択します。 アクセス許可のリストについては、「[セキュリティのアクセス許可](permissions-reference.md#security-permissions)」を参照してください。
+2. **[新規登録]** を選択します。
+3. 新しいアプリケーションの登録ページで **[名前]** の値を入力して、サポートするアカウントの種類を選択します。 **[リダイレクト URL]** フィールドにリダイレクト URL を入力します。
+4. **[登録]** を選択してアプリを作成し、アプリの概要ページを表示します。
+5. アプリの **[API のアクセス許可]** ページに移動します。
+6. **[アクセス許可を追加する]** を選択して、ポップアップの **[Microsoft Graph]** を選択します。 **[委任されたアクセス許可]** を選択します。 検索ボックスを使用して、必要なアクセス許可を検索して選択します。 アクセス許可のリストについては、「[セキュリティのアクセス許可](permissions-reference.md#security-permissions)」を参照してください。
 
     >**注:** Microsoft Graph Security API では、GET クエリに *.Read.All スコープ、PATCH/POST/DELETE クエリに *.ReadWrite.All スコープが必要です。
 
@@ -84,19 +86,19 @@ Azure AD v2.0 エンドポイントでアプリケーションを登録するに
     |:----------|:-------|:-------------------|
     |SecurityActions.Read.All| &bull; [securityActions](/graph/api/resources/securityaction?view=graph-rest-beta) (プレビュー) | GET |
     |SecurityActions.ReadWrite.All| &bull; [securityActions](/graph/api/resources/securityaction?view=graph-rest-beta) (プレビュー) | GET、POST |
-    |SecurityEvents.Read.All | &bull; [alerts](/graph/api/resources/alert?view=graph-rest-1.0)</br> &bull; [secureScores](/graph/api/resources/securescores?view=graph-rest-beta) (プレビュー)</br> &bull; [secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta) (プレビュー) | GET |
-    |SecurityEvents.ReadWrite.All | &bull; [alerts](/graph/api/resources/alert?view=graph-rest-1.0)</br> &bull; [secureScores](/graph/api/resources/securescores?view=graph-rest-beta) (プレビュー)</br> &bull; [secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta) (プレビュー) | GET、POST、PATCH |
+    |SecurityEvents.Read.All | &bull; [alerts](/graph/api/resources/alert?view=graph-rest-1.0)</br> &bull; [secureScores](/graph/api/resources/securescores?view=graph-rest-beta) </br> &bull; [secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta) | 取得 |
+    |SecurityEvents.ReadWrite.All | &bull; [alerts](/graph/api/resources/alert?view=graph-rest-1.0)</br> &bull; [secureScores](/graph/api/resources/securescores?view=graph-rest-beta) </br> &bull; [secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta) | GET、POST、PATCH |
     |ThreatIndicators.ReadWrite.OwnedBy | &bull; [tiIndicator](/graph/api/resources/tiindicator?view=graph-rest-beta) (プレビュー) | GET、POST、PATCH、DELETE|
 
-5. **[保存]** を選択します。
+7. **[アクセス許可を追加する]** を選択します。
 
 以下の情報を保存します。
 
-- アプリケーション ID
+- アプリケーション (クライアント) ID
 - リダイレクト URL
 - 必要なアクセス許可のリスト
 
-詳細については、「[アプリを Azure AD v2.0 エンドポイントに登録する](auth-register-app-v2.md)」を参照してください。
+詳細情報については、 「[Microsoft ID プラットフォームにアプリを登録する](auth-register-app-v2.md)」を参照してください。
 
 ## <a name="grant-permissions-to-an-application"></a>アプリケーションにアクセス許可を付与する
 
@@ -104,8 +106,8 @@ Azure AD v2.0 エンドポイントでアプリケーションを登録するに
 
 アプリケーションにアクセス許可を付与するには、以下の情報が必要です。
 
-- **アプリケーション ID** - アプリケーション登録ポータルのアプリケーション ID。
-- **リダイレクト URL** - アプリケーション登録ポータルで認証応答のために設定した文字列。
+- **アプリケーション ID** - Azure アプリケーション登録ポータルのアプリケーション ID。
+- **リダイレクト URL** - Azure アプリケーション登録ポータルで認証応答のために設定した文字列。
 
 アクセス許可を付与するには、次の操作を行います。
 
@@ -125,7 +127,7 @@ Azure AD v2.0 エンドポイントでアプリケーションを登録するに
 
 ユーザーにロールを割り当てるには、次の操作を行います。
 
-- [Azure Portal](https://portal.azure.com) (https://portal.azure.com) にサインインします。
+- 「[Azure Portal](https://portal.azure.com) (https://portal.azure.com) 」にサインインします。
 - メニューで **[Azure Active Directory]** > **[ユーザー]** を選択します。
 - ユーザーの名前を選択します。
 - **[管理]** > **[ディレクトリ ロール]** を選択します。
@@ -144,12 +146,18 @@ Azure AD v2.0 エンドポイントでアプリケーションを登録するに
 
 |**アプリケーションの種類**|**認証ライブラリ**|
 |------------------------|----------------------------|
-|[デスクトップ アプリケーション - iOS](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/guidedsetups/active-directory-ios)|[MSAL.framework: iOS 用 Microsoft Authentication Library プレビュー](https://github.com/AzureAD/microsoft-authentication-library-for-objc)|
-|[デスクトップ アプリケーション - Android](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/guidedsetups/active-directory-android)|[Microsoft Authentication Library (MSAL)](https://javadoc.io/doc/com.microsoft.identity.client/msal)|
-|[デスクトップ アプリケーション - .Net](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/guidedsetups/active-directory-windesktop)|[Microsoft Authentication Library (MSAL)](https://www.nuget.org/packages/Microsoft.Identity.Client)|
-|[Web アプリケーション - JavaScript SPA](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/guidedsetups/active-directory-javascriptspa)|[JavaScript 用 Microsoft Authentication Library プレビュー](https://github.com/AzureAD/microsoft-authentication-library-for-js)|
-|[Web アプリケーション - .NET Web Server](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/guidedsetups/active-directory-aspnetwebapp)|OpenIdConnection、Cookies、SystemWeb|
-|[Web アプリケーション - NodeJS Web アプリケーション](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/active-directory-v2-devquickstarts-node-web)||
+|
+  [デスクトップ アプリケーション - iOS](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/guidedsetups/active-directory-ios)|[MSAL.framework: iOS 用 Microsoft Authentication Library プレビュー](https://github.com/AzureAD/microsoft-authentication-library-for-objc)|
+|
+  [デスクトップ アプリケーション - Android](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/guidedsetups/active-directory-android)|[Microsoft Authentication Library (MSAL)](https://javadoc.io/doc/com.microsoft.identity.client/msal)|
+|
+  [デスクトップ アプリケーション - .Net](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/guidedsetups/active-directory-windesktop)|[Microsoft Authentication Library (MSAL)](https://www.nuget.org/packages/Microsoft.Identity.Client)|
+|
+  [Web アプリケーション - JavaScript SPA](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/guidedsetups/active-directory-javascriptspa)|[JavaScript 用 Microsoft Authentication Library プレビュー](https://github.com/AzureAD/microsoft-authentication-library-for-js)|
+|
+  [Web アプリケーション - .NET Web Server](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/guidedsetups/active-directory-aspnetwebapp)|OpenIdConnection、Cookies、SystemWeb|
+|
+  [Web アプリケーション - NodeJS Web アプリケーション](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/active-directory-v2-devquickstarts-node-web)||
 
 既存のライブラリを使用しないアプリケーションの場合は、「[ユーザーの代わりにアクセスを取得](auth-v2-user.md)」を参照してください。
 
