@@ -4,16 +4,20 @@ description: 'Microsoft Teams は、チームワークおよびインテリジ�
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 251bb02af83fc86f996c8bbf0c9ea10a5efad8ad
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: da9999a0719d190950adf20bc119044366126f24
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584345"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33621222"
 ---
 # <a name="microsoft-teams-api-overview"></a>Microsoft Teams API の概要
 
 [Microsoft Teams](https://products.office.com/microsoft-teams) は、チームワークおよびインテリジェントな通信のための究極のハブです。 1 億 2 千万人を超えるユーザーが利用する [Office 365](https://products.office.com/) のパワーと規模に基づいて構築されている Microsoft Teams は、チャット ベースのコラボレーション、会議、通話、およびエンタープライズ ボイスのさまざまな機能を提供します。
+
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/KCvAhQEJmyY]
+
 
 ## <a name="why-integrate-with-microsoft-teams"></a>Microsoft Teams を統合する理由
 
@@ -24,7 +28,7 @@ Microsoft Graph を使用することにより、業務上の新しい問題が�
 
 ![チームの作成、メンバーと所有者の追加、チームの設定、チャネルの追加、アプリのインストール、タブの追加、必要となったタイミングでのチームのアーカイブまたは削除により、チームのライフサイクルを自動化します。](images/teams-lifecycle.png)
 
-業務上の問題が解決し、そのチームが不要になったら、Microsoft Teams API を使用してチームを[アーカイブ](/graph/api/team-archive?view=graph-rest-1.0)または[削除](/graph/api/group-delete?view=graph-rest-1.0)します。 チームを作成する時点で最大期間がわかっている場合は、そのチームについて [Office 365 グループ有効期限ポリシー](https://support.office.com/en-us/article/office-365-group-expiration-policy-8d253fe5-0e09-4b3c-8b5e-f48def064733?ui=en-US&rs=en-US&ad=US)を設定することにより、そのポリシーに従ってチームが自動で削除されます。
+業務上の問題が解決し、そのチームが不要になったら、Microsoft Teams API を使用してチームを[アーカイブ](/graph/api/team-archive?view=graph-rest-1.0)または[削除](/graph/api/group-delete?view=graph-rest-1.0)します。 チームを作成する時点で最大期間がわかっている場合は、そのチームについて [Office 365 グループ有効期限ポリシー](https://support.office.com/ja-JP/article/office-365-group-expiration-policy-8d253fe5-0e09-4b3c-8b5e-f48def064733?ui=en-US&rs=en-US&ad=US)を設定することにより、そのポリシーに従ってチームが自動で削除されます。
 
 ### <a name="get-work-done-even-when-no-one-is-around"></a>誰もいない場合でも作業を完了する
 
@@ -64,14 +68,20 @@ Microsoft Teams API は、Teams 内部および外部のどちらのアプリも
 
 |アプリの種類|シナリオの説明|
 |:-------|:-------------------|
-| [タブ](https://docs.microsoft.com/ja-JP/microsoftteams/platform/concepts/tabs/tabs-overview) |Microsoft Teams でコンテンツを表示します。|
-| [ボット](https://docs.microsoft.com/ja-JP/microsoftteams/platform/concepts/bots/bots-overview) |会話の中でタスクを実行するようユーザーを支援します。|
-| [コネクタ](https://docs.microsoft.com/ja-JP/microsoftteams/platform/concepts/connectors/connectors) |外部サービスからチャネルに対して更新情報を投稿します。|
-| [アクション可能なメッセージング](https://docs.microsoft.com/ja-JP/microsoftteams/platform/concepts/cards/cards) |拡張対話機能をコネクタ カードに追加します。|
-| [メッセージング拡張機能](https://docs.microsoft.com/ja-JP/microsoftteams/platform/concepts/messaging-extensions) |ユーザーが会話の中で情報に関するクエリを実行したり共有したりできるようにします。|
+| 
+  [タブ](https://docs.microsoft.com/ja-JP/microsoftteams/platform/concepts/tabs/tabs-overview) |Microsoft Teams でコンテンツを表示します。|
+| 
+  [ボット](https://docs.microsoft.com/ja-JP/microsoftteams/platform/concepts/bots/bots-overview) |会話の中でタスクを実行するようユーザーを支援します。|
+| 
+  [コネクタ](https://docs.microsoft.com/ja-JP/microsoftteams/platform/concepts/connectors/connectors) |外部サービスからチャネルに対して更新情報を投稿します。|
+| 
+  [アクション可能なメッセージング](https://docs.microsoft.com/ja-JP/microsoftteams/platform/concepts/cards/cards) |拡張対話機能をコネクタ カードに追加します。|
+| 
+  [メッセージング拡張機能](https://docs.microsoft.com/ja-JP/microsoftteams/platform/concepts/messaging-extensions) |ユーザーが会話の中で情報に関するクエリを実行したり共有したりできるようにします。|
 |Web サイト| Web ページに拡張コンテンツを表示します。|
 |サービス|Web サービスによりクライアント アプリケーションを拡張して Microsoft Graph データを使用できるようにします。|
-| [アクティビティ フィード](https://docs.microsoft.com/ja-JP/microsoftteams/platform/concepts/activity-feed)|フィード通知によりユーザーの参加を促します。|
+| 
+  [アクティビティ フィード](https://docs.microsoft.com/ja-JP/microsoftteams/platform/concepts/activity-feed)|フィード通知によりユーザーの参加を促します。|
 | [通話とオンライン会議 (プレビュー)](/graph/api/resources/calls-api-overview?view=graph-rest-beta) |音声/ビデオ通話を開始して参加することができるボットで Microsoft Teams アプリを作成し、対話型音声応答 (IVR) フローに基づいて通話をルーティング/転送し、オンライン会議に参加します。|
 
 ## <a name="api-reference"></a>API リファレンス
@@ -86,6 +96,7 @@ Microsoft Teams API は、Teams 内部および外部のどちらのアプリも
 - [Microsoft Teams API の使用](/graph/api/resources/teams-api-overview?view=graph-rest-1.0)方法を確認する。
 - [チーム](/graph/api/resources/team?view=graph-rest-1.0)、[チャネル](/graph/api/resources/channel?view=graph-rest-1.0)、および [グループ](/graph/api/resources/group?view=graph-rest-1.0)のリソースのメソッド、プロパティ、およびリレーションシップについて詳しく調べる。
 - [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)で API をお試しください。
-- [Microsoft Teams プログラミング モデル](https://docs.microsoft.com/ja-JP/microsoftteams/platform/concepts/concepts-overview)に関する詳細を読む。
+- 
+  [Microsoft Teams プログラミング モデル](https://docs.microsoft.com/ja-JP/microsoftteams/platform/concepts/concepts-overview)に関する詳細を読む。
 - [通話およびオンライン会議 API](/graph/api/resources/calls-api-overview?view=graph-rest-beta)を調べる。
 - サンプル コードですぐに開始する: [Contoso エアライン](https://github.com/microsoftgraph/contoso-airlines-teams-sample)、[C# ミニサンプル](https://github.com/microsoftgraph/csharp-teams-sample-graph)

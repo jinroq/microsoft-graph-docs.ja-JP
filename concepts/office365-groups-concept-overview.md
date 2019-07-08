@@ -4,16 +4,19 @@ description: 'Office 365 グループは、ユーザーが会話、ファイル�
 author: dkershaw10
 localization_priority: Priority
 ms.prod: reports
-ms.openlocfilehash: 3706c7373a80992cec1f920dbfdf5e8829829d10
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: cbd06a28b96680e43bbc6b9c2a440ed1b95b21cd
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32578817"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33621243"
 ---
 # <a name="overview-of-office-365-groups-in-microsoft-graph"></a>Microsoft Graph での Office 365 グループの概要
 
 Office 365 グループは、ユーザーが会話、ファイル、ノート、予定表、プラン、その他の多くのアセットを共有するための基本メンバーシップ サービスを提供します。 
+
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/WB9w6QM9xIU]
 
 ## <a name="why-integrate-with-office-365-groups"></a>Office 365 グループを統合する理由   
 
