@@ -3,18 +3,26 @@ title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 4e4c205c73524c9c26f5f0fe66300e29baf80f4b
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 5c5c364edb6ff8c0b840450b428cda649d4eba11
+ms.sourcegitcommit: 705b32b9a64516d8138fab34c173b7df4f78a6ad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35447482"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "35576418"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
 この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 
 Microsoft Graph API に関する既知の問題の詳細については、「[既知の問題](known-issues.md)」を参照してください。
+
+## <a name="july-2019"></a>2019 年 7 月
+
+### <a name="microsoft-intune-apis"></a>Microsoft Intune API
+|変更の種類|バージョン|説明|
+|:---|:---|:---|
+|追加|ベータ版|[groupPolicyDefinitionFile](/graph/api/resources/intune-grouppolicy-grouppolicydefinitionfile?view=graph-rest-beta) エンティティに **revision** プロパティが追加されました|
+|追加|ベータ版|[groupPolicyPresentationListBox](/graph/api/resources/intune-grouppolicy-grouppolicypresentationlistbox?view=graph-rest-beta) エンティティに **valuePrefix** プロパティが追加されました|
 
 ## <a name="june-2019"></a>2019 年 6 月
 
@@ -24,15 +32,11 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | :-------------- | :---------- | :--------------------------------------- |
 |追加|ベータ版| ユーザーの登録と使用状況に関する情報を取得する新しいレポートを追加しました。<br/><ul><li>[reportroot-getcredentialusagesummary](/graph/api/reportroot-getcredentialusagesummary?view=graph-rest-beta) - セルフサービスのパスワード リセットの使用状況を報告する。</li><li>[reportroot-getcredentialuserregistrationcount](/graph/api/reportroot-getcredentialuserregistrationcount?view=graph-rest-beta) - セルフサービスのパスワード リセットと多要素認証の登録数を報告する。</li><li>[reportroot-list-credentialuserregistrationdetails](/graph/api/reportroot-list-credentialuserregistrationdetails?view=graph-rest-beta) - セルフサービスのパスワード リセットと多要素認証の使用状況を報告する。</li><li>[reportroot-list-usercredentialusagedetails](/graph/api/resources/reportroot-list-usercredentialusagedetails?view=graph-rest-beta) - ユーザー向けのセルフサービスのパスワード リセットの使用状況を報告する。</li></ul> |
 
-### <a name="identity-protection-apis"></a>Identity Protection API
-| **変更の種類** | **バージョン** | **説明**                          |
-| :-------------- | :---------- | :--------------------------------------- |
-| 追加 | ベータ版 | Azure AD Identity Protection でのリスク検出を表す [riskDetection API](/graph/api/resources/riskdetection?view=graph-rest-beta) が追加されました。 |
-
 ### <a name="identity-and-access"></a>ID とアクセス
 
 | **変更の種類** | **バージョン** | **説明**                  |
 |:----------------|:------------|:-----------------------------------------|
+| 追加 | ベータ版 | Azure AD Identity Protection でのリスク検出を表す [riskDetection API](/graph/api/resources/riskdetection?view=graph-rest-beta) が追加されました。 |
 | 追加        | ベータ版  | 新しいリソースの種類 [applicationTemplate](/graph/api/resources/applicationtemplate.md) を導入しました。 このリソースの種類では、Azure AD アプリケーション ギャラリーからのアプリケーションの[インスタンス化](/graph/api/applicationtemplate-instantiate.md)、[リスト](/graph/api/applicationtemplate-instantiate.md)、[取得](/graph/api/applicationtemplate-get.md)がサポートされています。|
 | 追加 | ベータ版|追加された新しいリソース: </br> [detailsInfo](/graph/api/resources/detailsInfo?view=graph-rest-beta)</br> [initiator](/graph/api/resources/initiator?view=graph-rest-beta)</br> [modifiedProperty](/graph/api/resources/modifiedProperty?view=graph-rest-beta)</br> [provisionedIdentity](/graph/api/resources/provisionedIdentity?view=graph-rest-beta)</br> [provisioningObjectsummary](/graph/api/resources/provisioningObjectsummary?view=graph-rest-beta)</br> [provisioningStep](/graph/api/resources/provisioningStep?view=graph-rest-beta)</br> [provisioningsystemDetails](/graph/api/resources/provisioningsystemDetails?view=graph-rest-beta)</br> [statusBase](/graph/api/resources/statusBase?view=graph-rest-beta)|
 | 追加 |ベータ版 |[List provisioningObjectSummary](/graph/api/resources/provisioning-object-summary-list?view=graph-rest-beta) 操作が追加されました。</br>|                     |
@@ -2276,7 +2280,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | 変更の種類 | バージョン | 説明                              |
 | :---------- | :------ | :--------------------------------------- |
 | 追加    | ベータ版    | 追加された新しいエンティティ:<br/>[windowsPrivacyDataAccessControlItem](/graph/api/resources/intune-deviceconfig-windowsprivacydataaccesscontrolitem?view=graph-rest-beta)<br/> |
-| 追加    | ベータ版    | 追加された新しい複合型:<br/>[configurationManagerClientEnabledFeatures](/graph/api/resources/intune-devices-configurationmanagerclientenabledfeatures?view=graph-rest-beta)<br/>[windowsDefenderScanActionResult](/graph/api/resources/intune-devices-windowsdefenderscanactionresult?view=graph-rest-beta)<br/> |
+| 追加    | ベータ版    | 新しい複合型を追加しました。<br/>[configurationManagerClientEnabledFeatures](/graph/api/resources/intune-devices-configurationmanagerclientenabledfeatures?view=graph-rest-beta)<br/>[windowsDefenderScanActionResult](/graph/api/resources/intune-devices-windowsdefenderscanactionresult?view=graph-rest-beta)<br/> |
 | 追加    | ベータ版    | [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) に [windowsDefenderScan](/graph/api/intune-devices-manageddevice-windowsdefenderscan?view=graph-rest-beta) アクションを追加しました |
 | 追加    | ベータ版    | [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) に [windowsDefenderUpdateSignatures](/graph/api/intune-devices-manageddevice-windowsdefenderupdatesignatures?view=graph-rest-beta) アクションを追加しました |
 | 追加    | ベータ版    | [deviceConfiguration](/graph/api/resources/intune-deviceconfig-deviceconfiguration?view=graph-rest-beta) に [windowsPrivacyAccessControls](/graph/api/intune-deviceconfig-deviceconfiguration-windowsprivacyaccesscontrols?view=graph-rest-beta) アクションを追加しました |
