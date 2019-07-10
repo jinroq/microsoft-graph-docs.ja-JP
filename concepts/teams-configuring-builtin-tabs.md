@@ -4,12 +4,12 @@ description: Microsoft Graph API を使用して Microsoft Teams タブを作成
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2940edf1cef2adc6c240fe8dd737d91f434c27e8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: afd06dcfbefdab71a72ea2b73ff12e84328d361e
+ms.sourcegitcommit: 3b39005e7cb76f57460c9e85542d86e039b67c46
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32574597"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35607400"
 ---
 # <a name="configuring-the-built-in-tab-types-in-microsoft-teams"></a>Microsoft Teams の組み込みタブ タイプの構成
 
@@ -120,7 +120,7 @@ Wiki のタブは、Graph による構成をサポートしていません。
 | プロパティ   | 型        | 説明                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
 | entityId   | string      | 空の文字列 ("")                                        |
-| contentUrl | string      | ドキュメントライブラリのルートフォルダーの URL。 この url を確認するには、ブラウザーで SharePoint フォルダーを開き、url をコピーして、"/"/"/" を削除します。 |
+| contentUrl | string      | ドキュメントライブラリのルートフォルダーの URL。 この URL を確認するには、ブラウザーで SharePoint フォルダーを開き、URL をコピーして、"/"/"/" を削除します。 |
 | removeUrl  | string      | Null                                                     |
 | websiteUrl | string      | Null                                                     |
 
@@ -149,8 +149,8 @@ OneNote のタブの場合、`teamsAppId` は `0d820ecd-def2-4297-adad-78056cde7
 | プロパティ   | 型        | 説明                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
 | entityId   | string      | `{randomGuid}_{notebookId}`。ここで、{randomGuid} は、生成する GUID です。                                      |
-| contentUrl | string      | フォームの URL `https://www.onenote.com/teams/TabContent?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{sectionsUrl}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}`。ここで、`{sectionsUrl}`、`{notebookId}`、`{oneNoteWebUrl}` は、[GET /groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta) で見つけることができます。 スラッシュは、エスケープする必要があります。 {locale} と {tid} はリテラルです。 |
-| removeUrl  | string      | フォームの URL `https://www.onenote.com/teams/TabRemove?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{sectionsUrl}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}`。ここで、`{sectionsUrl}`、`{notebookId}`、`{oneNoteWebUrl}` は、[GET /groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta) で見つけることができます。 スラッシュは、エスケープする必要があります。 {locale} と {tid} はリテラルです。 |
+| contentUrl | string      | フォーム`https://www.onenote.com/teams/TabContent?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{groupId}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}`の URL。ここ`{notebookId}` `{oneNoteWebUrl}`で、は[GET/groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta)にあります。 スラッシュは、エスケープする必要があります。 {groupId}、{locale}、{tid} はリテラルです。 |
+| removeUrl  | string      | フォーム`https://www.onenote.com/teams/TabRemove?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{groupId}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}`の URL。ここ`{notebookId}` `{oneNoteWebUrl}`で、は[GET/groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta)にあります。 スラッシュは、エスケープする必要があります。 {groupId}、{locale}、{tid} はリテラルです。 |
 | websiteUrl | 文字列      | フォームの URL `https://www.onenote.com/teams/TabRedirect?redirectUrl={oneNoteWebUrl}`。ここで、`oneNoteWebUrl` は、[GET /groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta) で見つけることができます。 |
 
 ## <a name="power-bi-tabs"></a>Power BI のタブ

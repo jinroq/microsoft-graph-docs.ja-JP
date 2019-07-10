@@ -4,12 +4,12 @@ description: Microsoft Graph セキュリティ API を使用して Microsoft �
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: 1036a41a8447b1f6305adf763b200b17fbfa37dd
-ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
+ms.openlocfilehash: 595c1f80bb7c110197bf755fe74c0c842fa06014
+ms.sourcegitcommit: 3b39005e7cb76f57460c9e85542d86e039b67c46
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35133839"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35607393"
 ---
 # <a name="microsoft-graph-security-api-overview"></a>Microsoft Graph セキュリティ API の概要
 
@@ -21,7 +21,7 @@ Microsoft Graph セキュリティ API を使用して Microsoft のセキュリ
 承認については、「[承認と Microsoft Graph セキュリティ API](security-authorization.md)」を参照してください。 代理アクセス許可やアプリケーションのアクセス許可などのアクセス許可については、「[アクセス許可](permissions-reference.md#security-permissions)」を参照してください。
 
 
-> [!VIDEO https://www.youtube-nocookie.com/embed/ZXkKjkxdrB4]
+> [!VIDEO https://www.youtube-nocookie.com/embed/oYXPGwH9Ho0]
 
 ## <a name="why-use-the-microsoft-graph-security-api"></a>Microsoft Graph セキュリティ API を使用する理由
 
