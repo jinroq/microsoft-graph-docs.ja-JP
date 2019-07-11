@@ -1,15 +1,17 @@
 ---
-title: stringkeystringvaluepair リソースの種類
+title: stringKeyStringValuePair リソースの種類
 description: キーが文字列で、値が文字列であるキーと値のペアを表します。
 localization_priority: Normal
-ms.openlocfilehash: 99e92f542ece2895591a76fcb80c322e3f6d6613
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 01e9dde3631858858e90164b37a5d68a97949454
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324749"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620816"
 ---
-# <a name="stringkeystringvaluepair-resource-type"></a>stringkeystringvaluepair リソースの種類
+# <a name="stringkeystringvaluepair-resource-type"></a>stringKeyStringValuePair リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

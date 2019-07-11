@@ -1,15 +1,17 @@
 ---
-title: referencedobject リソースの種類
+title: referencedObject リソースの種類
 description: 同じディレクトリ定義で定義されている別のオブジェクトへの参照を記述します。
 localization_priority: Normal
-ms.openlocfilehash: 185691c970a5555d23b7b349cef546fb85be0893
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: b06bac82ca78c3d249d3b173c0db7f72a953e2d2
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345603"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620452"
 ---
-# <a name="referencedobject-resource-type"></a>referencedobject リソースの種類
+# <a name="referencedobject-resource-type"></a>referencedObject リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -20,7 +22,7 @@ ms.locfileid: "33345603"
 | プロパティ                   | 型                      | 説明    |
 |:---------------------------|:--------------------------|:---------------|
 |referencedObjectName        |String                     |参照されるオブジェクトの名前を指定します。 [ディレクトリ定義](synchronization-directorydefinition.md)内のいずれかのオブジェクトと一致している必要があります。|
-|referencedproperty          |String                     |**現時点ではサポートされていません**。 参照されるオブジェクト内のプロパティの名前。その値は、参照として使用されます。|
+|referencedProperty          |String                     |**現時点ではサポートされていません**。 参照されるオブジェクト内のプロパティの名前。その値は、参照として使用されます。|
 
 ## <a name="json-representation"></a>JSON 表記
 

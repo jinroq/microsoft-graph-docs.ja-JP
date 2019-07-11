@@ -4,12 +4,12 @@ description: 新しい windows10EndpointProtectionConfiguration オブジェク�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5b6a9f73f7e44b288ec5fa60851c193392c42508
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 1828bcd90fd3cefeead8f15dee09dc411a117300
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34976079"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620382"
 ---
 # <a name="create-windows10endpointprotectionconfiguration"></a>windows10EndpointProtectionConfiguration の作成
 
@@ -217,7 +217,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |deviceGuardSecureBootWithDMA|[secureBootWithDMAType](../resources/intune-deviceconfig-securebootwithdmatype.md)|次回の再起動時にプラットフォームセキュリティレベルを有効にするかどうかを指定します。 可能な値は、`notConfigured`、`withoutDMA`、`withDMA` です。|
 |Devicegu//Systemguard|[購入](../resources/intune-shared-enablement.md)|IT 管理者がシステムガードの起動を構成できるようにします。 可能な値は、`notConfigured`、`enabled`、`disabled` です。|
 |smartScreenEnableInShell|Boolean|IT 管理者が Windows 用の SmartScreen を構成することを許可します。|
-|smartScreenBlockOverrideForFiles|Boolean|ユーザーが SmartScreen 警告を無視し、悪意のあるファイルを実行できるかどうかを IT 管理者が制御することを許可します。|
+|smartScreenBlockOverrideForFiles|Boolean|ユーザーが SmartScreen 警告を無視したり、悪意のあるファイルを実行したりできるかどうかを IT 管理者が制御できるようにします。|
 |applicationGuardEnabled|Boolean|Windows Defender Application Guard を有効にします|
 |applicationGuardEnabledOptions|[applicationGuardEnabledOptions](../resources/intune-deviceconfig-applicationguardenabledoptions.md)|新しい Windows ビルドに対して Windows Defender Application Guard を有効にします。 使用可能な値は、`notConfigured`、`enabledForEdge`、`enabledForOffice`、`enabledForEdgeAndOffice` です。|
 |applicationGuardBlockFileTransfer|[Applicationgu/Blockfiletransfertype](../resources/intune-deviceconfig-applicationguardblockfiletransfertype.md)|画像ファイル、テキストファイル、またはそのどちらも転送しないように、クリップボードをブロックします。 可能な値は、`notConfigured`、`blockImageAndTextFile`、`blockImageFile`、`blockNone`、`blockTextFile` です。|

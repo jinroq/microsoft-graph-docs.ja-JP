@@ -2,12 +2,14 @@
 title: '同期ジョブ: validateCredentials'
 description: テナントで資格情報が有効であることを検証します。
 localization_priority: Normal
-ms.openlocfilehash: 2437cfcf8a0c028d31aeb09ec1c319916de9efb2
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: bdeb174a8e2c1386df22e7adbe231380f067ee0f
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35457010"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621047"
 ---
 # <a name="synchronizationjob-validatecredentials"></a>同期ジョブ: validateCredentials
 

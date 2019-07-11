@@ -2,12 +2,14 @@
 title: attributeMappingFunctionSchema リソースの種類
 description: 同期時に値を変換するために属性マッピングで使用できる関数について説明します。
 localization_priority: Normal
-ms.openlocfilehash: ca66baf7fbc160cd4c57cba0f865ae07de9d5932
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 2290f2c3140d9c955dc3a3d4bc72f9b953a7775f
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345638"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620284"
 ---
 # <a name="attributemappingfunctionschema-resource-type"></a>attributeMappingFunctionSchema リソースの種類
 

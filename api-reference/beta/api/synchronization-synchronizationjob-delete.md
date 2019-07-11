@@ -2,12 +2,14 @@
 title: 同期ジョブの削除
 description: 同期ジョブを停止し、関連付けられているすべての状態を完全に削除します。 同期されたアカウントは、そのまま残ります。
 localization_priority: Normal
-ms.openlocfilehash: cfcce1c3a1741625d409af22e0953df0b0ac20a9
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 45e0f9f44aa87efac3f03a05cbc3fbad22a6cb86
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35458172"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621166"
 ---
 # <a name="delete-synchronizationjob"></a>同期ジョブの削除
 

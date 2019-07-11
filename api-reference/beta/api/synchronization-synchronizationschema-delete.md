@@ -2,12 +2,14 @@
 title: 同期スキーマの削除
 description: カスタマイズされたスキーマを削除し、スキーマを既定の構成にリセットします。 スキーマがテンプレートのコンテキストで削除されると、そのテンプレートに関連付けられている既定のスキーマにリセット`factoryTag`されます。
 localization_priority: Normal
-ms.openlocfilehash: 0871de0ba5b48784e47fd5cc8d3ac890ab23748b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: a4b3410f89e301205eee900fd1164b5c4445b103
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33330622"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621033"
 ---
 # <a name="delete-synchronizationschema"></a>同期スキーマの削除
 

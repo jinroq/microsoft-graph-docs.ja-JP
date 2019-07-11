@@ -2,12 +2,14 @@
 title: synchronizationJobRestartCriteria リソースの種類
 description: 同期ジョブの範囲を定義し[ます。再起動](../api/synchronization_synchronizationjob_restart.md)アクション。
 localization_priority: Normal
-ms.openlocfilehash: b59b960534b7fb3e2d122e1ec92ee7b01c998c0f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: fda28a84f568b9d535a06226397375f3fa8e444a
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340036"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620725"
 ---
 # <a name="synchronizationjobrestartcriteria-resource-type"></a>synchronizationJobRestartCriteria リソースの種類
 
@@ -18,7 +20,7 @@ ms.locfileid: "33340036"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|resetscope|String| `Full`、 `Watermark` `Escrows`、、、、 `ConnectorDataStore`の各値のコンマ区切りの組み合わせ。 `QuarantineState` すべて`Full`のオプションを使用する場合に使用します。|
+|resetScope|String| `Full`、 `Watermark` `Escrows`、、、、 `ConnectorDataStore`の各値のコンマ区切りの組み合わせ。 `QuarantineState` すべて`Full`のオプションを使用する場合に使用します。|
 
 ## <a name="json-representation"></a>JSON 表記
 

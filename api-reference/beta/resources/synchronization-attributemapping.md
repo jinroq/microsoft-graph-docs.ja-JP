@@ -2,12 +2,14 @@
 title: attributeMapping リソースの種類
 description: 特定のターゲット属性の値が同期中にどのように流れるかを定義します。
 localization_priority: Normal
-ms.openlocfilehash: 5e44570440790c98755bc5c02091e8fe31f3fc26
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 1f2884a4fc9f4e3091f1e7523c615d9ed132abc6
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345637"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621392"
 ---
 # <a name="attributemapping-resource-type"></a>attributeMapping リソースの種類
 
@@ -19,10 +21,10 @@ ms.locfileid: "33345637"
 
 | プロパティ                  | 型                      | 説明    |
 |:--------------------------|:--------------------------|:---------------|
-|defaultValue               | String                    |**source**プロパティがに`null`評価された場合に使用される既定値です。 省略可能。|
+|defaultValue               | String                    |**Source**プロパティがに`null`評価された場合に使用される既定値です。 省略可能。|
 |exportMissingReferences    |String                     |内部使用のために用意されています。|
-|flowbehavior               |attributeflowbehavior      |この属性をターゲットディレクトリにエクスポートするタイミングを定義します。 可能な値は`FlowWhenChanged` 、 `FlowAlways`とです。 既定値は `FlowWhenChanged` です。 |
-|flowtype                   |attributeflowtype          |この属性をターゲットディレクトリでいつ更新する必要があるかを定義します。 可能な値は`Always`次のとおりです`ObjectAddOnly` (既定値)。 (新しいオブジェクトが`MultiValueAddOnly`作成された場合のみ)、(変更によって新しい値が複数値属性に追加されている場合のみ)。 |
+|flowBehavior               |attributeFlowBehavior      |この属性をターゲットディレクトリにエクスポートするタイミングを定義します。 可能な値は`FlowWhenChanged` 、 `FlowAlways`とです。 既定値は `FlowWhenChanged` です。 |
+|flowType                   |attributeFlowType          |この属性をターゲットディレクトリでいつ更新する必要があるかを定義します。 可能な値は`Always`次のとおりです`ObjectAddOnly` (既定値)。 (新しいオブジェクトが`MultiValueAddOnly`作成された場合のみ)、(変更によって新しい値が複数値属性に追加されている場合のみ)。 |
 |matchingPriority           |Int32                      |0より大きい場合は、この属性を使用して、ソースディレクトリとターゲットディレクトリの間でオブジェクトの初期一致を実行します。 同期エンジンは、一致する優先度の値が最も小さい属性を使用して、一致するオブジェクトを検索します。 見つからない場合は、次に一致する優先度の属性が使用され、一致が見つかるまで、またはそれ以上一致する属性が残っていないことを示します。 電子メールなどの一意の値を持つことが予想される属性のみを一致属性として使用する必要があります。|
 |source                     |[attributeMappingSource](synchronization-attributemappingsource.md)     | ソースオブジェクトから値を抽出 (変換) する方法を定義します。 |
 |targetAttributeName        |String                     |ターゲットオブジェクトの属性の名前。 |

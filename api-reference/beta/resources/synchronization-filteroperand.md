@@ -1,15 +1,17 @@
 ---
-title: filteroperand リソースの種類
+title: filterOperand リソースの種類
 description: オペランドの値のコレクションを格納します。
 localization_priority: Normal
-ms.openlocfilehash: f5bcce50a608ec542a22bacadd9b686db11d781a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: c93702ecb91da8d892de170c357e0a2381cba2f3
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342967"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621413"
 ---
-# <a name="filteroperand-resource-type"></a>filteroperand リソースの種類
+# <a name="filteroperand-resource-type"></a>filterOperand リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -18,7 +20,7 @@ ms.locfileid: "33342967"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|values|String collection|値のコレクション。|
+|values|文字列コレクション|値のコレクション。|
 
 ## <a name="json-representation"></a>JSON 表記
 

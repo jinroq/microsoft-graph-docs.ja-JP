@@ -2,12 +2,14 @@
 title: 同期ジョブの作成
 description: 既定の同期スキーマを使用して、新しい同期ジョブを作成します。 ジョブは無効な状態で作成されます。 Start ジョブを呼び出して同期を開始します。
 localization_priority: Normal
-ms.openlocfilehash: b57787ee03097b7b6cfadeba077fb49773d569f3
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 65ae773af55a524fdd05d95b736c4b50b22585a3
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35457031"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621096"
 ---
 # <a name="create-synchronizationjob"></a>同期ジョブの作成
 

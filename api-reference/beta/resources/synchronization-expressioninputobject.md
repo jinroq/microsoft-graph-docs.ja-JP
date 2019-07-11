@@ -1,25 +1,27 @@
 ---
-title: 式 inputobject リソースの種類
+title: 式 Inputobject リソースの種類
 description: '[同期スキーマ: parseexpression](../api/synchronization_synchronizationschema_parseexpression.md)アクションが式評価を実行するときに入力テストデータとして使用するオブジェクトを表します。'
 localization_priority: Normal
-ms.openlocfilehash: 90d394639de7050eaed3b696dd8526e144cac03d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: b5fb11471757328bf0b84ae5ea0977d43587d7e4
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345602"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621383"
 ---
-# <a name="expressioninputobject-resource-type"></a>式 inputobject リソースの種類
+# <a name="expressioninputobject-resource-type"></a>式 Inputobject リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[parseexpression](../api/synchronization-synchronizationschema-parseexpression.md)アクションが式の評価を実行するときに入力テストデータとして使用するオブジェクトを表します。
+[Parseexpression](../api/synchronization-synchronizationschema-parseexpression.md)アクションが式の評価を実行するときに入力テストデータとして使用するオブジェクトを表します。
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|definition|[objectdefinition](synchronization-objectdefinition.md)|test オブジェクトの定義。|
-|properties|[stringkeyobjectvaluepair](synchronization-stringkeyobjectvaluepair.md)コレクション|test オブジェクトのプロパティ値を指定します。|
+|definition|[objectDefinition](synchronization-objectdefinition.md)|Test オブジェクトの定義。|
+|properties|[Stringkeyobjectvaluepair](synchronization-stringkeyobjectvaluepair.md)コレクション|Test オブジェクトのプロパティ値を指定します。|
 
 ## <a name="json-representation"></a>JSON 表記
 

@@ -4,12 +4,12 @@ description: Microsoft Graph API (ベータ版) からの directoryAudit リソ�
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 81f7cd6e9af0464f95c3c23b17089b02d550153b
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 6e733085214c780d2115a8053d40f15d3ed405bb
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35437083"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620249"
 ---
 # <a name="list-directoryaudits"></a>directoryAudits を一覧表示する
 
@@ -42,9 +42,9 @@ GET /auditLogs/directoryAudits
 
 |名前     |説明                            |例|
 |:--------------------|----------------|------------------------------------------------------------------------|
-|[$filter](/graph/query-parameters#filter-parameter)|結果 (行) をフィルターします。 |/`auditLogs/directoryAudits?&$filter=createdDateTime le 2018-01-24`
+|[$filter](/graph/query-parameters#filter-parameter)|結果 (行) をフィルターします。 |`/auditLogs/directoryAudits?$filter=createdDateTime le 2018-01-24`<br>`/auditLogs/directoryAudits?$filter=targetResources/any(x: startswith(x/displayName, 'def'))` |
 |[$top](/graph/query-parameters#top-parameter)|結果のページ サイズを設定します。|`/auditLogs/directoryAudits?$top=1`|
-|[$skiptoken](/graph/query-parameters#skiptoken-parameter)|複数ページにわたる結果セットから、結果の次のページを取得します。|`auditLogs/directoryAudits?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
+|[$skiptoken](/graph/query-parameters#skiptoken-parameter)|複数ページにわたる結果セットから、結果の次のページを取得します。|`/auditLogs/directoryAudits?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
 
 ### <a name="attributes-supported-by-filter-parameter"></a>$Filter パラメーターでサポートされている属性
 

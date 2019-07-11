@@ -2,12 +2,14 @@
 title: 同期スキーマリソースの種類
 description: 同期されるオブジェクトと、それらの同期方法を定義します。 同期スキーマには、特定の同期ジョブの設定情報の大部分が含まれています。 通常、属性マッピングの一部をカスタマイズするか、特定の条件を満たすオブジェクトのみを同期するスコープフィルターを追加します。
 localization_priority: Normal
-ms.openlocfilehash: 8fd43a028a7d94b6d4a7c1e5d3c47520bff507ec
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 7d4302cec5fe568f322e5a8d1b86bc4681b50f7c
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339874"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620683"
 ---
 # <a name="synchronizationschema-resource-type"></a>同期スキーマリソースの種類
 
@@ -34,18 +36,18 @@ ms.locfileid: "33339874"
 | メソッド        | 戻り値の型               | 説明                  |
 |:--------------|:--------------------------|:-----------------------------|
 |[スキーマを取得する](../api/synchronization-synchronizationschema-get.md)    |[同期スキーマ](synchronization-synchronizationschema.md)   |**同期スキーマ**オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[スキーマを更新する](../api/synchronization-synchronizationschema-update.md)    |なし   |同期スキーマを更新します。 |
-|[スキーマの削除](../api/synchronization-synchronizationschema-delete.md)    |なし   |カスタマイズしたスキーマを削除し、スキーマを既定の構成にリセットします。 |
-|[リストフィルター演算子](../api/synchronization-synchronizationschema-filteroperators.md)    |[filter演算子スキーマ](../resources/synchronization-filteroperatorschema.md)コレクション   |スコープフィルターでサポートされているすべての演算子を一覧表示します。 |
+|[スキーマを更新する](../api/synchronization-synchronizationschema-update.md)    |None   |同期スキーマを更新します。 |
+|[スキーマの削除](../api/synchronization-synchronizationschema-delete.md)    |None   |カスタマイズしたスキーマを削除し、スキーマを既定の構成にリセットします。 |
+|[リストフィルター演算子](../api/synchronization-synchronizationschema-filteroperators.md)    |[Filter演算子スキーマ](../resources/synchronization-filteroperatorschema.md)コレクション   |スコープフィルターでサポートされているすべての演算子を一覧表示します。 |
 |[リスト属性マッピング関数](../api/synchronization-synchronizationschema-functions.md)    |[attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md)コレクション   |属性マッピング式でサポートされているすべての関数を一覧表示します。 |
-|[解析属性マッピング式](../api/synchronization-synchronizationschema-parseexpression.md)|[parseexpression response](synchronization-parseexpressionresponse.md)|文字列式を解析し、[attributeMappingSource|(../resources/synchronization_attributemappingsource.md) オブジェクト。|
+|[解析属性マッピング式](../api/synchronization-synchronizationschema-parseexpression.md)|[Parseexpression Response](synchronization-parseexpressionresponse.md)|文字列式を解析し、[attributeMappingSource|(../resources/synchronization_attributemappingsource.md) オブジェクト。|
 
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ      | 型      | 説明    |
 |:--------------|:----------|:---------------|
-|移動            |[directorydefinition](synchronization-directorydefinition.md)コレクション   |[同期ジョブ](synchronization-synchronizationjob.md)または[同期のテンプレート](synchronization-synchronizationtemplate.md)の一部であるディレクトリとオブジェクトについて説明します。 |
+|移動            |[Directorydefinition](synchronization-directorydefinition.md)コレクション   |[同期ジョブ](synchronization-synchronizationjob.md)または[同期のテンプレート](synchronization-synchronizationtemplate.md)の一部であるディレクトリとオブジェクトについて説明します。 |
 |同期規則   |[同期ルール](synchronization-synchronizationrule.md)のコレクション   |同期ジョブまたは同期[ジョブ](synchronization-synchronizationjob.md)[テンプレート](synchronization-synchronizationtemplate.md)用に構成されている同期ルールのコレクション。 |
 |version                |String                             |スキーマのバージョンは、すべてのスキーマ変更によって自動的に更新されます。|
 

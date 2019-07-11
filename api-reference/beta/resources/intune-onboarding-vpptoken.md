@@ -4,12 +4,12 @@ description: ビジネス向けまたは教育向けの Apple Volume Purchase Pr
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 268e905b2328b66eaf1bcd19340d96f22d40d9a6
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 8f4575ebcc732b4a26a20a84acd85da4dceff21c
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34958621"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621159"
 ---
 # <a name="vpptoken-resource-type"></a>vppToken リソースの種類
 
@@ -39,7 +39,7 @@ ms.locfileid: "34958621"
 |vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|特定の Apple ボリューム購入プログラムのトークンが関連付けられている、ボリューム購入プログラムの種類。 可能な値は、`business`、`education` です。 可能な値は、`business`、`education` です。|
 |appleId|String|特定の Apple ボリューム購入プログラムのトークンに関連付けられている Apple ID。|
 |expirationDateTime|DateTimeOffset|Apple ボリューム購入プログラムのトークンの有効期限。|
-|lastSyncDateTime|DateTimeOffset|Apple ボリューム購入プログラムのトークンを使用して、Apple ボリューム購入プログラム サービスと最後にアプリケーションの同期を行った日時。|
+|lastSyncDateTime|DateTimeOffset|Apple volume purchase program のトークンを使用して、Apple volume purchase program サービスでアプリケーションの同期が最後に実行された時刻。|
 |token|String|Apple ボリューム購入プログラムからダウンロードした Apple ボリューム購入プログラムのトークン文字列。|
 |lastModifiedDateTime|DateTimeOffset|Apple ボリューム購入プログラムのトークンに関連付けられている最終変更日時。|
 |state|[vppTokenState](../resources/intune-onboarding-vpptokenstate.md)|Apple ボリューム購入プログラムのトークンの現在の状態。 可能な値は、`unknown`、`valid`、`expired`、`invalid`、`assignedToExternalMDM` です。 可能な値は、`unknown`、`valid`、`expired`、`invalid`、`assignedToExternalMDM` です。|

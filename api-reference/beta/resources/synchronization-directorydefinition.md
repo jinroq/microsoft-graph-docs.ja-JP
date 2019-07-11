@@ -1,15 +1,17 @@
 ---
-title: directorydefinition リソースの種類
+title: directoryDefinition リソースの種類
 description: ディレクトリとそのオブジェクトに関する同期エンジン情報を提供します。 このリソースは、同期エンジンに対して、たとえば、ディレクトリには、**ユーザー**と**グループ**という名前のオブジェクト、これらのオブジェクトに対してサポートされている属性、およびそれらの属性の種類を示します。 オブジェクトと属性を同期ルールおよびオブジェクトマッピングに参加させるには、それらをディレクトリ定義の一部として定義する必要があります。
 localization_priority: Normal
-ms.openlocfilehash: 8e622edef39eec5476015ef5e22c5fe9697e0daa
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 2c79855ac07ab9a850fd76ac888afbbcb923d136
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342924"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621438"
 ---
-# <a name="directorydefinition-resource-type"></a>directorydefinition リソースの種類
+# <a name="directorydefinition-resource-type"></a>directoryDefinition リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,10 +25,10 @@ ms.locfileid: "33342924"
 
 | プロパティ      | 型      | 説明    |
 |:--------------|:----------|:---------------|
-|id           |String     |ディレクトリ識別子。 null 許容型ではありません。|
-|metadata       |metadataentry コレクション    |追加の拡張機能のプロパティ。 明示的に記述されていない限り、メタデータ値は変更しないでください。|
-|name           |String     |ディレクトリの名前。 [同期スキーマ](synchronization-synchronizationschema.md)内で一意である必要があります。 null 許容型ではありません。|
-|対象        |[objectdefinition](synchronization-objectdefinition.md)コレクション    |ディレクトリでサポートされているオブジェクトのコレクションです。|
+|id           |文字列     |ディレクトリ識別子。 null 許容ではありません。|
+|metadata       |metadataEntry コレクション    |追加の拡張機能のプロパティ。 明示的に記述されていない限り、メタデータ値は変更しないでください。|
+|name           |String     |ディレクトリの名前。 [同期スキーマ](synchronization-synchronizationschema.md)内で一意である必要があります。 null 許容ではありません。|
+|対象        |[Objectdefinition](synchronization-objectdefinition.md)コレクション    |ディレクトリでサポートされているオブジェクトのコレクションです。|
 
 ## <a name="json-representation"></a>JSON 表記
 

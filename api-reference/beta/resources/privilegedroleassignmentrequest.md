@@ -2,12 +2,12 @@
 title: privilegedRoleAssignmentRequest リソースの種類
 description: Privilegd Identity Management での役割の割り当て操作の要求を表します。
 localization_priority: Normal
-ms.openlocfilehash: ead028d61fcbf6fe7cebf13291c0ba5231f0ba22
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 240c84ecb0bf4f8d0e171f647f21eb6730c28d44
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344272"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621215"
 ---
 # <a name="privilegedroleassignmentrequest-resource-type"></a>privilegedRoleAssignmentRequest リソースの種類
 
@@ -34,9 +34,9 @@ Privilegd Identity Management での役割の割り当て操作の要求を表�
 |割り当ての状態|String| 割り当ての状態を指定します。 この値は、 `Eligible`管理者に`Active`よって直接割り当てら`Active`れている場合、またはユーザーによる資格のある割り当てに対してアクティブ化されている場合に、対象となる割り当てに使用できます。|
 |duration|String| 役割の割り当ての期間。|
 |したがっ|String| 役割の割り当ての理由。|
-|requesteddatetime|DateTimeOffset| 読み取り専用。 要求の作成時刻。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、`'2014-01-01T00:00:00Z'` のようになります。|
+|requestedDateTime|DateTimeOffset| 読み取り専用。 要求の作成時刻。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表します。これは常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |roleId|String| ロールの id。|
-|スケジューリング|[governanceSchedule](governanceschedule.md)| 役割の割り当て要求の schedule オブジェクト。|
+|schedule|[governanceSchedule](governanceschedule.md)| 役割の割り当て要求の schedule オブジェクト。|
 |status|文字列型 (String)| 読み取り専用。役割の割り当て要求の状態。 値`NotStarted``Completed``Revoked``RequestExpired`は、、、、、、、、、、、のようになります。`RequestedApproval``Scheduled``Approved``ApprovalDenied``ApprovalAborted``Cancelling``Cancelled`|
 |ticketNumber|String| 役割の割り当ての ticketNumber。 |
 |ticketSystem|String| 役割の割り当ての ticketSystem。|
@@ -46,7 +46,7 @@ Privilegd Identity Management での役割の割り当て操作の要求を表�
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型        | 説明 |
 |:-------------|:------------|:------------|
-|roleinfo|[privilegedRole](privilegedrole.md)| 役割の割り当て要求の roleinfo オブジェクト。|
+|roleInfo|[privilegedRole](privilegedrole.md)| 役割の割り当て要求の roleInfo オブジェクト。|
 
 ## <a name="json-representation"></a>JSON 表記
 

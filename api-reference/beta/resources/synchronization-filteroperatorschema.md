@@ -1,15 +1,17 @@
 ---
-title: filter演算子スキーマリソースの種類
+title: Filter演算子スキーマリソースの種類
 description: フィルターで使用できる演算子を記述します。
 localization_priority: Normal
-ms.openlocfilehash: 0f0ada4aaa02efa2484ffa75d88b2c8256f15fe8
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: c55838e6e7d12789d1bd84d63dff95b4d9b72efa
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342865"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621369"
 ---
-# <a name="filteroperatorschema-resource-type"></a>filter演算子スキーマリソースの種類
+# <a name="filteroperatorschema-resource-type"></a>Filter演算子スキーマリソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +24,7 @@ ms.locfileid: "33342865"
 |アリ                       |String          |演算子のアリティ。 可能な値は、`Binary`、`Unary` です。 既定値は `Binary` です。|
 |multivaluedComparisonType   |scopeOperatorMultiValuedComparisonType          |可能な値は、`All`、`Any` です。 複数値属性にのみ適用されます。 `All`すべての値が条件を満たす必要があることを意味します。 `Any`少なくとも1つの値が条件を満たす必要があることを意味します。 既定値は `All` です。|
 |name                        |String                     |オペレーター名。 |
-|supportedAttributeTypes     |String collection         |演算子でサポートされている属性の種類。 可能な値は、`Boolean`、`Binary`、`Reference`、`Integer`、`String` です。|
+|supportedAttributeTypes     |文字列コレクション         |演算子でサポートされている属性の種類。 可能な値は、`Boolean`、`Binary`、`Reference`、`Integer`、`String` です。|
 
 ## <a name="json-representation"></a>JSON 表記
 

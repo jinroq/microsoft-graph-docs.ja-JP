@@ -1,27 +1,29 @@
 ---
-title: objectdefinition リソースの種類
-description: オブジェクトとその属性を記述します。 オブジェクト定義は directorydefinition の一部であり、同期スキーマの一部として更新されます。
+title: objectDefinition リソースの種類
+description: オブジェクトとその属性を記述します。 オブジェクト定義は directoryDefinition の一部であり、同期スキーマの一部として更新されます。
 localization_priority: Normal
-ms.openlocfilehash: 0e693b88e6ae983c4f854d40b49eb60405b067b6
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 38a636e8b85758d21cb91bd2951916ed9db9dc7a
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342950"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620529"
 ---
-# <a name="objectdefinition-resource-type"></a>objectdefinition リソースの種類
+# <a name="objectdefinition-resource-type"></a>objectDefinition リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-オブジェクトとその属性を記述します。 オブジェクト定義は[directorydefinition](synchronization-directorydefinition.md)の一部であり、[同期スキーマ](synchronization-synchronizationschema.md)の一部として更新されます。
+オブジェクトとその属性を記述します。 オブジェクト定義は[Directorydefinition](synchronization-directorydefinition.md)の一部であり、[同期スキーマ](synchronization-synchronizationschema.md)の一部として更新されます。
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ      | 型      | 説明    |
 |:--------------|:----------|:---------------|
-|属性     |[attributedefinition](synchronization-attributedefinition.md)コレクション    | オブジェクトの属性を定義します。 |
-|metadata       |[metadataentry](synchronization-metadataentry.md)コレクション   |追加の拡張機能のプロパティ。 明示的に記述されていない限り、メタデータ値は変更しないでください。|
-|name           |String     |オブジェクトの名前。 ディレクトリ定義内で一意である必要があります。 null 許容型ではありません。|
+|属性     |[Attributedefinition](synchronization-attributedefinition.md)コレクション    | オブジェクトの属性を定義します。 |
+|metadata       |[Metadataentry](synchronization-metadataentry.md)コレクション   |追加の拡張機能のプロパティ。 明示的に記述されていない限り、メタデータ値は変更しないでください。|
+|name           |String     |オブジェクトの名前。 ディレクトリ定義内で一意である必要があります。 null 許容ではありません。|
 
 ## <a name="json-representation"></a>JSON 表記
 

@@ -1,15 +1,17 @@
 ---
-title: metadataentry リソースの種類
+title: metadataEntry リソースの種類
 description: 指定したオブジェクトのメタデータ。
 localization_priority: Normal
-ms.openlocfilehash: 829dc5fbbf3d73dbabb2e9e69bfff28814cc203a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 49c43e502cfb06832172f46c1e790b2a20eb0f08
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345600"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620557"
 ---
-# <a name="metadataentry-resource-type"></a>metadataentry リソースの種類
+# <a name="metadataentry-resource-type"></a>metadataEntry リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -2,12 +2,14 @@
 title: 同期ジョブを再開します。
 description: 同期ジョブを再開して、ディレクトリ内のすべてのオブジェクトを強制的に再処理するようにします。 必要に応じて、既存の同期状態および以前のエラーをクリアします。
 localization_priority: Normal
-ms.openlocfilehash: 2c14a77553054fe689aba90bc8eeb53854f63642
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 765b8801c808a71426fc6a5150229e028429436f
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35457017"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621089"
 ---
 # <a name="restart-synchronizationjob"></a>同期ジョブを再開します。
 

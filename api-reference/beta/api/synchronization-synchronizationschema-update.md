@@ -2,12 +2,14 @@
 title: 同期スキーマの更新
 description: 特定のジョブまたはテンプレートの同期スキーマを更新します。 このメソッドは、現在のスキーマを要求で指定されたものに完全に置き換えます。 テンプレートのスキーマを更新するには、アプリケーションオブジェクトに対して呼び出しを行います。 アプリケーションの所有者である必要があります。
 localization_priority: Normal
-ms.openlocfilehash: 0990c1218d93b75e93b20271fc929621ab7e83e2
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 432b22207bc8daee547b7d217a3a2e0f059f9f99
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35458186"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620984"
 ---
 # <a name="update-synchronizationschema"></a>同期スキーマの更新
 

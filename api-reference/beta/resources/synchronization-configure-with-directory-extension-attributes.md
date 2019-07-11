@@ -2,12 +2,14 @@
 title: ディレクトリ拡張属性を使用して同期を構成する
 description: 'Azure Active Directory (Azure AD) ディレクトリの拡張属性を含めるように同期スキーマをカスタマイズできます。 この記事では、ディレクトリ拡張属性 (**extension_9d98asdfl15980a_Nickname**) を使用して、Salesforce の CommunityNickname の値を設定する方法について説明します。 このシナリオでは、Azure AD Connect を設定して、オンプレミスの Windows Server Active Directory から Azure AD にいくつかのディレクトリ拡張属性をプロビジョニングします。 '
 localization_priority: Normal
-ms.openlocfilehash: 31728ff072d0c28925590a8dfd4382abaeb274c8
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: debe6a40e8f65d769a4636c3e088236b98a0dde0
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35459980"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621406"
 ---
 # <a name="configure-synchronization-with-directory-extension-attributes"></a>ディレクトリ拡張属性を使用して同期を構成する
 

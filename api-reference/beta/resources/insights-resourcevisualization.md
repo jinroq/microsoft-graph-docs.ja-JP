@@ -1,21 +1,21 @@
 ---
-title: resourcevisualization リソースの種類
+title: resourceVisualization リソースの種類
 description: Insights のプロパティを含む複合型。
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: a8f6f048576ce5bc6ab532793d98fa1644e5158d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 7eddc083bd38c0902f61d326926c86f48ca78714
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333567"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620910"
 ---
-# <a name="resourcevisualization-resource-type"></a>resourcevisualization リソースの種類
+# <a name="resourcevisualization-resource-type"></a>resourceVisualization リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[insights](officegraphinsights.md)のプロパティを含む複合型。
+[Insights](officegraphinsights.md)のプロパティを含む複合型。
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -46,12 +46,12 @@ ms.locfileid: "33333567"
 | -------------         |---------------| -------------|
 | title                 | String        | アイテムのタイトルテキスト。               |
 | type              | String        | アイテムのメディアの種類。 特定の種類に基づいて特定のファイルをフィルター処理するために使用できます。 サポートされる種類については、以下を参照してください。 |
-| mediaType             | String        | アイテムのメディアの種類。 は、サポートされている IANA メディア Mime タイプに基づいて、特定の種類のファイルをフィルター処理するために使用できます。 すべてのメディア Mime タイプがサポートされるわけではないことに注意してください。 |
+| mediaType             | String        | アイテムのメディアの種類。 サポートされている IANA メディア Mime タイプに基づいて、特定の種類のファイルのフィルター処理に使用できます。 すべてのメディア Mime タイプがサポートされるわけではないことに注意してください。 |
 | previewImageUrl       | String        | アイテムのプレビューイメージの先頭になる URL。 |
 | previewText           | String        | アイテムのプレビューテキスト。 |
 | containerWebUrl       | String        | アイテムが格納されるフォルダーへのパス。 |
 | containerDisplayName  | String        | アイテムが格納されている場所を示す文字列。 たとえば、SharePoint サイトの名前、またはアイテムを格納している OneDrive の所有者を識別するユーザー名。  |
-| containerType         | String | ファイルが格納されているコンテナーの種類によるフィルター処理に使用できます。 サイト、onedrive business など。       |
+| containerType         | String | ファイルが格納されているコンテナーの種類によるフィルター処理に使用できます。 サイト、Onedrive Business など。       |
 
 ## <a name="type-property-values"></a>Type プロパティの値
 -   PowerPoint
@@ -66,7 +66,7 @@ ms.locfileid: "33333567"
 -   Project
 -   Access
 -   メール
--   .csv
+-   .Csv
 -   アーカイブ
 -   Xps
 -   オーディオ
@@ -76,20 +76,20 @@ ms.locfileid: "33333567"
 -   テキスト
 -   Xml
 -   Story
--   externalcontent
+-   ExternalContent
 -   フォルダー
--   その他
+-   Other
 
 クエリの例:`https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
 ## <a name="containertype-property-values"></a>containerType プロパティの値
-サポートされている種類は、 [officegraphinsights](officegraphinsights.md)がファイルを返すコンテナーによって異なる場合があります。 たとえば、"DropBox"、"Box"、および "gdrive" からファイルを取得するのは、 [sharepoint](insights-shared.md)のファイルです。
+サポートされている種類は、 [Officegraphinsights](officegraphinsights.md)がファイルを返すコンテナーによって異なる場合があります。 たとえば、"DropBox"、"Box"、および "GDrive" からファイルを取得するのは、 [sharepoint](insights-shared.md)のファイルです。
 
--   onedrive business
+-   Onedrive Business
 -   Site
 -   メール
 -   DropBox
 -   検索ボックス
--   gdrive
+-   GDrive
 
 クエリの例:`https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`

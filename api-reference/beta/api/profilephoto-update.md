@@ -2,12 +2,12 @@
 title: ProfilePhoto を更新する
 description: サインイン ユーザー、または指定されたグループあるいは連絡先を含むテナント内の任意のユーザーの写真を更新します。 そこから
 localization_priority: Normal
-ms.openlocfilehash: b4f1cc2cf446d540d4143263bdb68bf9c09cccf4
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 8a3c6d2ce042fa068fb0e0d99798fd8fa2be1d07
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35455365"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621342"
 ---
 # <a name="update-profilephoto"></a>profilephoto を更新する
 
@@ -29,6 +29,8 @@ ms.locfileid: "35455365"
 |アプリケーション                            | **user** リソースの場合:<br/>User.ReadWrite.All<br /><br />**group** リソースの場合:<br />Group.ReadWrite.All<br /><br />**contact** リソースの場合:<br />Contacts.ReadWrite |
 
 > **注** 組織内のユーザーの写真を更新するには、アプリにはアプリケーションのアクセス許可 User.ReadWrite.All が必要で、ユーザーの代わりではなく、それ自身の ID でこの API を呼び出す必要があります。 詳細については、「[ユーザーなしでアクセスを取得する](/graph/auth-v2-service)」を参照してください。
+
+> **注:** アプリケーションのアクセス許可を使用してグループ写真にアクセスする際に、[既知の問題](https://docs.microsoft.com/en-us/graph/known-issues#groups)が現在発生しています。
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

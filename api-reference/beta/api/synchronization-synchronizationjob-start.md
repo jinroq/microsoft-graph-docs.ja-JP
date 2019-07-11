@@ -2,12 +2,14 @@
 title: 同期ジョブを開始する
 description: 既存の同期ジョブを開始します。 ジョブが一時停止状態の場合、一時停止していた時点からの変更の処理は続行されます。 ジョブが検疫されている場合、検疫の状態はクリアされます。
 localization_priority: Normal
-ms.openlocfilehash: 977c38fa55de77e572e96be12f145a434caa688e
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: ecf773c234aa0a59288ce81d197b178e8b1aac28
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35458179"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621068"
 ---
 # <a name="start-synchronizationjob"></a>同期ジョブを開始する
 

@@ -4,12 +4,12 @@ description: '予定表オブジェクトのプロパティを更新します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: b81e172e9931ff407339996562945a9710df9386
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 36fd6dbcd41f7a90b4a662ed340f3fcd233f7332
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35438868"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620291"
 ---
 # <a name="update-calendar"></a>予定表を更新する
 

@@ -4,12 +4,12 @@ description: ビジネス アプリの行のコンテンツ バージョンの�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 725a47eda88cbbdad752d73e6ea3451dcc3d140b
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 528c68b352f45a4b029a09c37585eda2be540d1a
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34991311"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620200"
 ---
 # <a name="fileencryptioninfo-resource-type"></a>fileEncryptionInfo リソースの種類
 
@@ -26,7 +26,7 @@ ms.locfileid: "34991311"
 |initializationVector|Binary|暗号化アルゴリズムに使用される初期化ベクトルです。|
 |Mac|Binary|暗号化されたファイル コンテンツのハッシュ + IV (コンテンツ ハッシュ) です。|
 |macKey|Binary|Mac を取得するために使用するキーです。|
-|profileIdentifier|String|プロファイルの識別子です。|
+|profileIdentifier|String|プロファイル識別子。|
 |fileDigest|Binary|暗号化される前のファイル ダイジェストです。|
 |fileDigestAlgorithm|String|ファイル ダイジェストのアルゴリズムです。|
 

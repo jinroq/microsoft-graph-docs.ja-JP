@@ -1,15 +1,17 @@
 ---
-title: objectmapping リソースの種類
+title: objectMapping リソースの種類
 description: 特定のオブジェクトをソースディレクトリからターゲットディレクトリに同期する方法を定義します。 具体的には、ソースディレクトリ内のオブジェクトとターゲットディレクトリのオブジェクトとの照合方法を定義します。特定のオブジェクトをプロビジョニングするかどうか、およびオブジェクト属性をどのように変換するかを決定するために、どのような (もしあれば) スコープフィルターを使用するかを定義します。ソースディレクトリに移動します。
 localization_priority: Normal
-ms.openlocfilehash: 10b57c385d57a1fb5492bbb292e5ddc1fa2ff999
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 667a58f299847188d193a5b50bb9883721d191e9
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345589"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620515"
 ---
-# <a name="objectmapping-resource-type"></a>objectmapping リソースの種類
+# <a name="objectmapping-resource-type"></a>objectMapping リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,11 +25,11 @@ ms.locfileid: "33345589"
 |:--------------|:----------|:---------------|
 |attributeMappings  |[attributeMapping](synchronization-attributemapping.md)コレクション    | 属性マッピングでは、ソースオブジェクトからターゲットオブジェクトにマップする属性、およびそれらのフローを指定します。 元のソースの値の変換をサポートするために、いくつかの関数を使用できます。|
 |enabled        |ブール型 (Boolean)    |の`true`場合、このオブジェクトのマッピングは同期中に処理されます。 の`false`場合、このオブジェクトのマッピングはスキップされます。|
-|flowtypes      |objectflowtypes    |このオブジェクトマッピングに対して有効になるフローの種類。 `Add`ターゲットディレクトリに新しいオブジェクトを作成し`Update` 、既存のオブジェクトを`Delete`変更して、既存のユーザーをプロビジョニングします。 既定値は `Add, Update, Delete` です。 |
-|metadata       |metadataentry コレクション    |追加の拡張機能のプロパティ。 明示的に記述されていない限り、メタデータ値は変更しないでください。|
+|flowTypes      |objectFlowTypes    |このオブジェクトマッピングに対して有効になるフローの種類。 `Add`ターゲットディレクトリに新しいオブジェクトを作成し`Update` 、既存のオブジェクトを`Delete`変更して、既存のユーザーをプロビジョニングします。 既定値は `Add, Update, Delete` です。 |
+|metadata       |metadataEntry コレクション    |追加の拡張機能のプロパティ。 明示的に記述されていない限り、メタデータ値は変更しないでください。|
 |name           |String     |オブジェクトマッピングの人フレンドリ名。|
-|scope          |[filter](synchronization-filter.md)     |特定のオブジェクトをプロビジョニングする必要があるかどうかを決定するときに使用するフィルターを定義します。 たとえば、US にあるユーザーのみをプロビジョニングする場合があります。|
-|sourceobjectname           |String     |ソースディレクトリ内のオブジェクトの名前。 ソース[ディレクトリ定義](synchronization-directorydefinition.md)のオブジェクト名と一致する必要があります。|
+|スコープ          |[filter](synchronization-filter.md)     |特定のオブジェクトをプロビジョニングする必要があるかどうかを決定するときに使用するフィルターを定義します。 たとえば、US にあるユーザーのみをプロビジョニングする場合があります。|
+|sourceObjectName           |String     |ソースディレクトリ内のオブジェクトの名前。 ソース[ディレクトリ定義](synchronization-directorydefinition.md)のオブジェクト名と一致する必要があります。|
 |targetObjectName           |String     |ターゲットディレクトリ内のオブジェクトの名前。 ターゲット[ディレクトリ定義](synchronization-directorydefinition.md)のオブジェクト名と一致する必要があります。|
 
 ## <a name="json-representation"></a>JSON 表記

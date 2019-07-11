@@ -1,15 +1,17 @@
 ---
-title: filterclause リソースの種類
+title: filterClause リソースの種類
 description: 候補オブジェクトが満たす必要がある1つのアサーションを表し、(オブジェクト`true`がアサートを満たす) または`false` (オブジェクトはアサーションを満たしていない) のどちらかに評価されます。
 localization_priority: Normal
-ms.openlocfilehash: 657651af512fff0b1daf08985e0f14983ca253f3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 788dcd8741d89639ce2c57511ae54e466815e366
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342976"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621425"
 ---
-# <a name="filterclause-resource-type"></a>filterclause リソースの種類
+# <a name="filterclause-resource-type"></a>filterClause リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -19,8 +21,8 @@ ms.locfileid: "33342976"
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |オペレーター名|String|ソースとターゲットのオペランドに適用される演算子の名前です。 サポートされている演算子のいずれかである必要があります。 サポートされている演算子を検出できます。|
-|sourceoperandname|String|source オペランドの名前 (テストされているオペランド)。 ソースのオペランド名は、ソースオブジェクトの属性名のいずれかと一致している必要があります。|
-|targetoperand|[filteroperand](synchronization-filteroperand.md)|source オペランドのテスト対象となる値を指定します。|
+|sourceOperandName|String|Source オペランドの名前 (テストされているオペランド)。 ソースのオペランド名は、ソースオブジェクトの属性名のいずれかと一致している必要があります。|
+|targetOperand|[filterOperand](synchronization-filteroperand.md)|Source オペランドのテスト対象となる値を指定します。|
 
 ## <a name="json-representation"></a>JSON 表記
 

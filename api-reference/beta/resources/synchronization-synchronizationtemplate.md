@@ -2,12 +2,14 @@
 title: 同期テンプレートリソースの種類
 description: " すべてのユーザーがテンプレートを取得して、同期スキーマを含む既定の設定を確認できます。"
 localization_priority: Normal
-ms.openlocfilehash: fda63ede321de1a87604e7bca7fe7d7536d42689
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 125b8fe81aedc285da33380c3043827c7c534ab8
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339862"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620648"
 ---
 # <a name="synchronizationtemplate-resource-type"></a>同期テンプレートリソースの種類
 
@@ -37,8 +39,8 @@ ms.locfileid: "33339862"
 |既定値です。        |Boolean                    |`true`このテンプレートをアプリケーションの既定として使用することをお勧めします。|
 |description    |String                     |テンプレートの説明。|
 |発見   |String                     |`true`このテンプレートをアプリケーションインスタンス (サービスプリンシパル) で使用可能なテンプレートのコレクションに表示する必要がある場合。|
-|factoryTag     |String                     |同期エンジンでサポートされている、既知の出荷済みのタグの1つ。 **factoryTag**は、このテンプレートに基づいてジョブを処理するときに使用する実装を同期エンジンに通知します。|
-|metadata       |metadataentry コレクション   |追加の拡張機能のプロパティ。 明示的に記述されていない限り、メタデータ値は変更しないでください。|
+|factoryTag     |String                     |同期エンジンでサポートされている、既知の出荷済みのタグの1つ。 **FactoryTag**は、このテンプレートに基づいてジョブを処理するときに使用する実装を同期エンジンに通知します。|
+|metadata       |metadataEntry コレクション   |追加の拡張機能のプロパティ。 明示的に記述されていない限り、メタデータ値は変更しないでください。|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ      | 型      |説明|
