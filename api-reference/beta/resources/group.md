@@ -4,12 +4,12 @@ description: Office 365 グループ、Microsoft Teams のチーム、または�
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: f4131d3d2c327c91fc29d31a922b167c72607397
-ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
+ms.openlocfilehash: 551ee0939d4a8ba10ea54d61b068078e21e5003a
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35236497"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621138"
 ---
 # <a name="group-resource-type"></a>group リソースの種類
 

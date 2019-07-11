@@ -2,12 +2,12 @@
 title: 写真を取得する
 description: 指定した profilePhoto またはそのメタデータ (**profilePhoto** プロパティ) を取得します。
 localization_priority: Priority
-ms.openlocfilehash: 422b9cb39b7af6527341070cbe35f3bfb59d504d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 7d90054391d27dd15758aa4330d777e23fe21344
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337174"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620599"
 ---
 # <a name="get-photo"></a>写真を取得する
 
@@ -34,6 +34,9 @@ Office 365 上でサポートされている HD Photo のサイズは次のと�
 |委任 (職場または学校のアカウント) | **user** リソースの場合:<br/>User.Read、User.ReadBasic.All、User.Read.All、User.ReadWrite、User.ReadWrite.All<br /><br />**group** リソースの場合:<br />Group.Read.All、Group.ReadWrite.All<br /><br />**contact** リソースの場合:<br />Contacts.Read、Contacts.ReadWrite |
 |委任 (個人用 Microsoft アカウント)  <br /> **注:** メタデータ操作はサポートされていません。 | **user** リソースの場合:<br/>User.Read、User.ReadWrite<br /><br />**contact** リソースの場合:<br />Contacts.Read、Contacts.ReadWrite |
 |アプリケーション                        | **user** リソースの場合:<br/>User.Read.All、User.ReadWrite.All<br /><br />**group** リソースの場合:<br />Group.Read.All、Group.ReadWrite.All<br /><br />**contact** リソースの場合:<br />Contacts.Read、Contacts.ReadWrite |
+
+> 
+  **注:** 現在のところ、アプリケーションのアクセス許可を使用するグループの写真へのアクセスに関する「[既知の問題](https://docs.microsoft.com/ja-JP/graph/known-issues#groups)」があります。
 
 ## <a name="http-request"></a>HTTP 要求 
 
