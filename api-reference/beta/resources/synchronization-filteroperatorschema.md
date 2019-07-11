@@ -1,32 +1,34 @@
 ---
-title: filter演算子スキーマリソースの種類
+title: Filter演算子スキーマリソースの種類
 description: フィルターで使用できる演算子を記述します。
 localization_priority: Normal
-ms.openlocfilehash: 0f0ada4aaa02efa2484ffa75d88b2c8256f15fe8
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: c55838e6e7d12789d1bd84d63dff95b4d9b72efa
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342865"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621369"
 ---
-# <a name="filteroperatorschema-resource-type"></a><span data-ttu-id="c18bf-103">filter演算子スキーマリソースの種類</span><span class="sxs-lookup"><span data-stu-id="c18bf-103">filterOperatorSchema resource type</span></span>
+# <a name="filteroperatorschema-resource-type"></a><span data-ttu-id="30227-103">Filter演算子スキーマリソースの種類</span><span class="sxs-lookup"><span data-stu-id="30227-103">filterOperatorSchema resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c18bf-104">[フィルター](synchronization-filter.md)で使用できる演算子を記述します。</span><span class="sxs-lookup"><span data-stu-id="c18bf-104">Describes an operator that can be used in a [filter](synchronization-filter.md).</span></span>
+<span data-ttu-id="30227-104">[フィルター](synchronization-filter.md)で使用できる演算子を記述します。</span><span class="sxs-lookup"><span data-stu-id="30227-104">Describes an operator that can be used in a [filter](synchronization-filter.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="c18bf-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="c18bf-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="30227-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="30227-105">Properties</span></span>
 
-| <span data-ttu-id="c18bf-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="c18bf-106">Property</span></span>                   | <span data-ttu-id="c18bf-107">型</span><span class="sxs-lookup"><span data-stu-id="c18bf-107">Type</span></span>                      | <span data-ttu-id="c18bf-108">説明</span><span class="sxs-lookup"><span data-stu-id="c18bf-108">Description</span></span>    |
+| <span data-ttu-id="30227-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="30227-106">Property</span></span>                   | <span data-ttu-id="30227-107">型</span><span class="sxs-lookup"><span data-stu-id="30227-107">Type</span></span>                      | <span data-ttu-id="30227-108">説明</span><span class="sxs-lookup"><span data-stu-id="30227-108">Description</span></span>    |
 |:---------------------------|:--------------------------|:---------------|
-|<span data-ttu-id="c18bf-109">アリ</span><span class="sxs-lookup"><span data-stu-id="c18bf-109">arity</span></span>                       |<span data-ttu-id="c18bf-110">String</span><span class="sxs-lookup"><span data-stu-id="c18bf-110">String</span></span>          |<span data-ttu-id="c18bf-111">演算子のアリティ。</span><span class="sxs-lookup"><span data-stu-id="c18bf-111">Arity of the operator.</span></span> <span data-ttu-id="c18bf-112">可能な値は、`Binary`、`Unary` です。</span><span class="sxs-lookup"><span data-stu-id="c18bf-112">Possible values are: `Binary`, `Unary`.</span></span> <span data-ttu-id="c18bf-113">既定値は `Binary` です。</span><span class="sxs-lookup"><span data-stu-id="c18bf-113">The default is `Binary`.</span></span>|
-|<span data-ttu-id="c18bf-114">multivaluedComparisonType</span><span class="sxs-lookup"><span data-stu-id="c18bf-114">multivaluedComparisonType</span></span>   |<span data-ttu-id="c18bf-115">scopeOperatorMultiValuedComparisonType</span><span class="sxs-lookup"><span data-stu-id="c18bf-115">scopeOperatorMultiValuedComparisonType</span></span>          |<span data-ttu-id="c18bf-116">可能な値は、`All`、`Any` です。</span><span class="sxs-lookup"><span data-stu-id="c18bf-116">Possible values are: `All`, `Any`.</span></span> <span data-ttu-id="c18bf-117">複数値属性にのみ適用されます。</span><span class="sxs-lookup"><span data-stu-id="c18bf-117">Applies only to multivalued attributes.</span></span> <span data-ttu-id="c18bf-118">`All`すべての値が条件を満たす必要があることを意味します。</span><span class="sxs-lookup"><span data-stu-id="c18bf-118">`All` means that all values must satisfy the condition.</span></span> <span data-ttu-id="c18bf-119">`Any`少なくとも1つの値が条件を満たす必要があることを意味します。</span><span class="sxs-lookup"><span data-stu-id="c18bf-119">`Any` means that at least one value has to satisfy the condition.</span></span> <span data-ttu-id="c18bf-120">既定値は `All` です。</span><span class="sxs-lookup"><span data-stu-id="c18bf-120">The default is `All`.</span></span>|
-|<span data-ttu-id="c18bf-121">name</span><span class="sxs-lookup"><span data-stu-id="c18bf-121">name</span></span>                        |<span data-ttu-id="c18bf-122">String</span><span class="sxs-lookup"><span data-stu-id="c18bf-122">String</span></span>                     |<span data-ttu-id="c18bf-123">オペレーター名。</span><span class="sxs-lookup"><span data-stu-id="c18bf-123">Operator name.</span></span> |
-|<span data-ttu-id="c18bf-124">supportedAttributeTypes</span><span class="sxs-lookup"><span data-stu-id="c18bf-124">supportedAttributeTypes</span></span>     |<span data-ttu-id="c18bf-125">String collection</span><span class="sxs-lookup"><span data-stu-id="c18bf-125">String collection</span></span>         |<span data-ttu-id="c18bf-126">演算子でサポートされている属性の種類。</span><span class="sxs-lookup"><span data-stu-id="c18bf-126">Attribute types supported by the operator.</span></span> <span data-ttu-id="c18bf-127">可能な値は、`Boolean`、`Binary`、`Reference`、`Integer`、`String` です。</span><span class="sxs-lookup"><span data-stu-id="c18bf-127">Possible values are: `Boolean`, `Binary`, `Reference`, `Integer`, `String`.</span></span>|
+|<span data-ttu-id="30227-109">アリ</span><span class="sxs-lookup"><span data-stu-id="30227-109">arity</span></span>                       |<span data-ttu-id="30227-110">String</span><span class="sxs-lookup"><span data-stu-id="30227-110">String</span></span>          |<span data-ttu-id="30227-111">演算子のアリティ。</span><span class="sxs-lookup"><span data-stu-id="30227-111">Arity of the operator.</span></span> <span data-ttu-id="30227-112">可能な値は、`Binary`、`Unary` です。</span><span class="sxs-lookup"><span data-stu-id="30227-112">Possible values are: `Binary`, `Unary`.</span></span> <span data-ttu-id="30227-113">既定値は `Binary` です。</span><span class="sxs-lookup"><span data-stu-id="30227-113">The default is `Binary`.</span></span>|
+|<span data-ttu-id="30227-114">multivaluedComparisonType</span><span class="sxs-lookup"><span data-stu-id="30227-114">multivaluedComparisonType</span></span>   |<span data-ttu-id="30227-115">scopeOperatorMultiValuedComparisonType</span><span class="sxs-lookup"><span data-stu-id="30227-115">scopeOperatorMultiValuedComparisonType</span></span>          |<span data-ttu-id="30227-116">可能な値は、`All`、`Any` です。</span><span class="sxs-lookup"><span data-stu-id="30227-116">Possible values are: `All`, `Any`.</span></span> <span data-ttu-id="30227-117">複数値属性にのみ適用されます。</span><span class="sxs-lookup"><span data-stu-id="30227-117">Applies only to multivalued attributes.</span></span> <span data-ttu-id="30227-118">`All`すべての値が条件を満たす必要があることを意味します。</span><span class="sxs-lookup"><span data-stu-id="30227-118">`All` means that all values must satisfy the condition.</span></span> <span data-ttu-id="30227-119">`Any`少なくとも1つの値が条件を満たす必要があることを意味します。</span><span class="sxs-lookup"><span data-stu-id="30227-119">`Any` means that at least one value has to satisfy the condition.</span></span> <span data-ttu-id="30227-120">既定値は `All` です。</span><span class="sxs-lookup"><span data-stu-id="30227-120">The default is `All`.</span></span>|
+|<span data-ttu-id="30227-121">name</span><span class="sxs-lookup"><span data-stu-id="30227-121">name</span></span>                        |<span data-ttu-id="30227-122">String</span><span class="sxs-lookup"><span data-stu-id="30227-122">String</span></span>                     |<span data-ttu-id="30227-123">オペレーター名。</span><span class="sxs-lookup"><span data-stu-id="30227-123">Operator name.</span></span> |
+|<span data-ttu-id="30227-124">supportedAttributeTypes</span><span class="sxs-lookup"><span data-stu-id="30227-124">supportedAttributeTypes</span></span>     |<span data-ttu-id="30227-125">文字列コレクション</span><span class="sxs-lookup"><span data-stu-id="30227-125">String collection</span></span>         |<span data-ttu-id="30227-126">演算子でサポートされている属性の種類。</span><span class="sxs-lookup"><span data-stu-id="30227-126">Attribute types supported by the operator.</span></span> <span data-ttu-id="30227-127">可能な値は、`Boolean`、`Binary`、`Reference`、`Integer`、`String` です。</span><span class="sxs-lookup"><span data-stu-id="30227-127">Possible values are: `Boolean`, `Binary`, `Reference`, `Integer`, `String`.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="c18bf-128">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="c18bf-128">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="30227-128">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="30227-128">JSON representation</span></span>
 
-<span data-ttu-id="c18bf-129">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="c18bf-129">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="30227-129">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="30227-129">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
