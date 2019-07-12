@@ -2,12 +2,12 @@
 title: 写真を取得する
 description: 指定した profilePhoto またはそのメタデータ (profilePhoto プロパティ) を取得します。
 localization_priority: Priority
-ms.openlocfilehash: e0b115ecf3ce05d87856e553b111af537ffad0e3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3ab580436a9262e60ef9ab07bc4d61d9ee6f8d04
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576284"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620613"
 ---
 # <a name="get-photo"></a>写真を取得する
 
@@ -31,6 +31,8 @@ Office 365 上でサポートされている HD Photo のサイズは次のと�
 |委任 (個人用 Microsoft アカウント) | サポートされていません |
 |アプリケーション                        | **user** リソースの場合:<br/>User.Read.All、User.ReadWrite.All<br /><br />**group** リソースの場合:<br />Group.Read.All、Group.ReadWrite.All<br /><br />**contact** リソースの場合:<br />Contacts.Read、Contacts.ReadWrite |
 
+> 
+  **注:** 現在のところ、アプリケーションのアクセス許可を使用するグループの写真へのアクセスに関する「[既知の問題](https://docs.microsoft.com/ja-JP/graph/known-issues#groups)」があります。
 
 ## <a name="http-request"></a>HTTP 要求 
 
