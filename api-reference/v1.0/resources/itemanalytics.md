@@ -5,12 +5,12 @@ title: itemAnalytics リソースの種類
 description: ItemAnalytics オブジェクトは、アイテムに対して行われたアクティビティに関する分析を提供します。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 5c716f8faaafffe6afd75987843e6b614f5d6552
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+ms.openlocfilehash: a18d12bd2b431d147f2d23ea2c958cd75078c9a8
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33970755"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620417"
 ---
 # <a name="itemanalytics-resource-type"></a>itemAnalytics リソースの種類
 
@@ -24,10 +24,10 @@ ms.locfileid: "33970755"
 
 | プロパティ      | 型                 | 説明
 |:--------------|:---------------------|:--------------------------------------
-| allTime       | [itemactiv][] | アイテムの寿命を超えた分析。
-| lastSevenDays | [itemactiv][] | 過去7日間の分析。
+| allTime       | [itemActivityStat][] | アイテムの寿命を超えた分析。
+| lastSevenDays | [itemActivityStat][] | 過去7日間の分析。
 
-[itemactiv]: itemactivitystat.md
+[itemActivityStat]: itemactivitystat.md
 [getActivitiesByInterval]: ../api/itemactivitystat-getactivitybyinterval.md
 
 ## <a name="json-representation"></a>JSON 表記
