@@ -4,18 +4,18 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SharingInvitation
 localization_priority: Normal
-ms.openlocfilehash: 1265432ea10e00d0456b4669d5e43e3a6ef7b1f7
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 136f35bc47e304a8dc844a9ee4ac86cd49c8928f
+ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343109"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "35639158"
 ---
 # <a name="sharinginvitation-resource-type"></a>SharingInvitation リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**SharingInvitation** リソースは、招待に関連するデータ項目を 1 つの構造にグループ化します。
+**Sharinginvitation**リソースは、招待に関連するデータ項目を1つの構造体にグループ化します。
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -42,7 +42,7 @@ ms.locfileid: "33343109"
 
 | プロパティ名  | 型                          | 説明                                                                                                                   |
 |:---------------|:------------------------------|:------------------------------------------------------------------------------------------------------------------------------|
-| email          | String                        | 共有への招待の受信者について指定された電子メール アドレス。読み取り専用です。                                          |
+| メール          | String                        | 共有への招待の受信者について指定された電子メール アドレス。読み取り専用です。                                          |
 | invitedBy      | [identitySet](identityset.md) | このアクセス許可を作成した招待状を送信したユーザーに関する情報を提供します (その情報が利用可能な場合)。読み取り専用です。 |
 | signInRequired | ブール値                       | `true` の場合、招待状の受信者は共有アイテムにアクセスするためにサインインする必要があります。読み取り専用です。                     |
 

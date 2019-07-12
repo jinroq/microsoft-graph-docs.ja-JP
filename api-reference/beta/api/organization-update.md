@@ -4,12 +4,13 @@ description: 現在認証されている組織のプロパティを更新しま�
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3f8b8dd73d19cd1697b6ab090415fa56166ba7c8
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: 10b2ab6650bb255e38eb6bfd2def745edcecd87b
+ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35440240"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "35639053"
 ---
 # <a name="update-organization"></a>組織を更新する
 
@@ -23,9 +24,9 @@ ms.locfileid: "35440240"
 
 |アクセス許可の種類 | アクセス許可 (特権の小さいものから大きいものへ) |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Directory.AccessAsUser.All |
+|委任 (職場または学校のアカウント) | Directory.accessasuser.all、すべてのディレクトリを示します。 |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
-|アプリケーション | サポートされていません。 |
+|アプリケーション | 組織の ReadWrite |
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -37,15 +38,17 @@ PATCH /organization/{id}
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前       | 型 | 説明|
-|:-----------|:------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
+| 名前       | 説明|
+|:-----------|:----------|
+| Authorization  | ベアラー {トークン}。必須。 |
+| Content-Type   | application/json |
+
 
 ## <a name="request-body"></a>要求本文
 
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ  | 型 |説明|
 |:---------------|:--------|:----------|
 |marketingNotificationEmails|文字列コレクション|                                        **注**: Null は許容されません。            |
 |privacyProfile|[privacyProfile](../resources/privacyprofile.md)|組織のプライバシー プロファイル (statementUrl と contactEmail を設定します)。            |

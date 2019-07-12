@@ -4,12 +4,12 @@ description: '[削除済みアイテム] から、最近削除されたアイテ
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ff80911e02b9acaaf02abdedd9fd49bc1fc8a82a
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: ce665b06da098661de1ba27a9ea1648470e15ae0
+ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35437125"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "35638973"
 ---
 # <a name="restore-deleted-item"></a>削除済みアイテムを復元する
 
@@ -36,8 +36,8 @@ POST /directory/deleteditems/{id}/restore
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | ベアラー &lt;コード&gt; が*必要*|
-| 承諾 | application/json |
+| Authorization  | ベアラー &lt;トークン&gt;が*必要*|
+| Content-type | application/json |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -47,7 +47,7 @@ POST /directory/deleteditems/{id}/restore
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [directoryObject](../resources/directoryobject.md) オブジェクトを返します。
 
 ## <a name="example"></a>例
-##### <a name="request"></a>要求
+### <a name="request"></a>要求
 
 
 # <a name="httptabhttp"></a>[プロトコル](#tab/http)
@@ -72,8 +72,7 @@ POST https://graph.microsoft.com/beta/directory/deleteditems/46cc6179-19d0-473e-
 
 ---
 
-要求本文に、[directoryObject](../resources/directoryobject.md) オブジェクトの JSON 表記を指定します。
-##### <a name="response"></a>応答
+### <a name="response"></a>応答
 注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",

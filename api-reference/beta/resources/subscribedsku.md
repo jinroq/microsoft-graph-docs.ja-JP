@@ -4,12 +4,12 @@ description: " create、update、および delete はサポートされていま
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9763592ee444cbf0ae73ffbad81288bb5fdd76c2
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.openlocfilehash: c2bca99fed2b8c5328c2f2cf1ac3bf938ddcfcaa
+ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34655118"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "35639025"
 ---
 # <a name="subscribedsku-resource-type"></a>subscribedSku リソースの種類
 
@@ -21,8 +21,8 @@ ms.locfileid: "34655118"
 ## <a name="methods"></a>メソッド
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[subscribedSku を取得する](../api/subscribedsku-get.md) | [subscribedSku](subscribedsku.md) |subscribedSku オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[リスト subscribedsku](../api/subscribedsku-list.md) | [subscribedSku](subscribedsku.md) コレクション |組織で取得した商用サブスクリプションの一覧を取得します。|
+|[subscribedSku を取得する](../api/subscribedsku-get.md) | [subscribedSku](subscribedsku.md) |組織が取得した特定の商用サブスクリプションを取得します。|
+|[リスト subscribedsku](../api/subscribedsku-list.md) | [subscribedSku](subscribedsku.md) コレクション |組織が取得した商用サブスクリプションの一覧を取得します。|
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|

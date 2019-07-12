@@ -4,12 +4,12 @@ description: '`)'
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
-ms.openlocfilehash: a80d9d52d3eff99754fa07c8a778c59d0a39f27a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 6d88fa821aba48538c102ba439439fe22a4d686f
+ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344719"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "35639193"
 ---
 # <a name="using-order-hints-in-planner"></a>Planner でオーダー ヒントを使用する
 
@@ -60,7 +60,7 @@ ms.locfileid: "33344719"
 4. 項目 2 (オーダー ヒント: `'adhg'`)
 5. 項目 1 (オーダー ヒント: `'de5%'`)
 
-リストの最初の項目を作成する場合、前または次の項目がいずれも存在しないため、オーダー ヒントを ` !` として指定することができます。ただし、項目の作成時にオーダー ヒントの値が指定されない場合、そうする必要はありません。これは、サービスが項目のすべてのオーダー ヒントの値を自動生成するためです。 次の例は、以前に空白だったリストに項目を配置する場合、オーダー ヒントを使用する必要があることを示しています。
+リストの最初の項目を作成する場合、前または次の項目がいずれも存在しないため、オーダー ヒントを `!` として指定することができます。ただし、項目の作成時にオーダー ヒントの値が指定されない場合、そうする必要はありません。これは、サービスが項目のすべてのオーダー ヒントの値を自動生成するためです。 次の例は、以前に空白だったリストに項目を配置する場合、オーダー ヒントを使用する必要があることを示しています。
 最初の項目を追加します。
 
 1. 項目 1 (オーダー ヒント: `' !'`)
