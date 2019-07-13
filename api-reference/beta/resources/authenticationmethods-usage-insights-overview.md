@@ -4,12 +4,12 @@ description: '[認証方法] 利用状況レポートを使用すると、セル
 author: davidmu1
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 19f99b0909a762201ea91399125bba841d705338
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: a819276b19f2c7fdfe6ed22bd3dd07023ea08992
+ms.sourcegitcommit: ca55fc5f5711966eaa41da31cd1ae99820e9e586
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35504181"
+ms.lasthandoff: 07/13/2019
+ms.locfileid: "35645234"
 ---
 # <a name="working-with-the-authentication-methods-usage-report-api"></a>認証方法の利用状況レポート API を使用する
 
@@ -29,10 +29,10 @@ ms.locfileid: "35504181"
 
 | Operation | Graph エクスプローラーで試します | 説明 |
 | --------- | --- | ----------- |
-| [getCredentialUserRegistrationcount](/graph/api/resources/credentialUserRegistrationCount?view=graph-rest-beta) | [/Credentialuserregistrationcount の取得](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialUserRegistrationcount()&version=beta) | セルフサービスのパスワードのリセットと MFA に登録されているユーザーの数を取得します。 |
-| [getCredentialUsageSummary](/graph/api/resources/credentialUsagesSummary?view=graph-rest-beta) | [/Credentialusagesummary を取得する](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialUsageSummary&version=beta) | セルフサービスのパスワードのリセットを使用してユーザーの数を取得します。 |
-| [credentialUserRegistrationDetails](/graph/api/resources/credentialUserRegistrationDetails?view=graph-rest-beta) | [/Credentialuserregistrationdetails の取得](https://developer.microsoft.com/graph/graph-explorer?request=reports/credentialUserRegistrationDetails&version=beta) | セルフサービスのパスワードのリセットと MFA の登録アクティビティに関するユーザーの詳細を取得します。 |
-| [Usercredentialの詳細](/graph/api/resources/userCredentialUsageDetails?view=graph-rest-beta) | [/Usercredentialusagedetails を取得する](https://developer.microsoft.com/graph/graph-explorer?request=reports/userCredentialUsageDetails&version=beta) | すべてのセルフサービスのパスワードリセットアクティビティのユーザー詳細を取得します。 |
+| [getCredentialUserRegistrationcount](/graph/api/resources/credentialuserregistrationcount?view=graph-rest-beta) | [/Credentialuserregistrationcount の取得](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialUserRegistrationcount()&version=beta) | セルフサービスのパスワードのリセットと MFA に登録されているユーザーの数を取得します。 |
+| [getCredentialUsageSummary](/graph/api/resources/credentialusagesummary?view=graph-rest-beta) | [/Credentialusagesummary を取得する](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialUsageSummary&version=beta) | セルフサービスのパスワードのリセットを使用してユーザーの数を取得します。 |
+| [credentialUserRegistrationDetails](/graph/api/resources/credentialuserregistrationdetails?view=graph-rest-beta) | [/Credentialuserregistrationdetails の取得](https://developer.microsoft.com/graph/graph-explorer?request=reports/credentialUserRegistrationDetails&version=beta) | セルフサービスのパスワードのリセットと MFA の登録アクティビティに関するユーザーの詳細を取得します。 |
+| [Usercredentialの詳細](/graph/api/resources/usercredentialusagedetails?view=graph-rest-beta) | [/Usercredentialusagedetails を取得する](https://developer.microsoft.com/graph/graph-explorer?request=reports/userCredentialUsageDetails&version=beta) | すべてのセルフサービスのパスワードリセットアクティビティのユーザー詳細を取得します。 |
 
 ## <a name="licenses"></a>ライセンス
 

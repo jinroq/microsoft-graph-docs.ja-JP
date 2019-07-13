@@ -1,5 +1,5 @@
 ---
-title: Microsoft Graph の以前のリリースの特徴
+title: Microsoft Graph の以前のリリースでの主な変更点
 description: Microsoft Graph の以前の新機能
 author: angelgolfer-ms
 localization_priority: Priority
@@ -10,7 +10,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 07/02/2019
 ms.locfileid: "35420438"
 ---
-# <a name="highlights-of-earlier-releases"></a>以前のリリースの特徴
+# <a name="highlights-of-earlier-releases"></a>以前のリリースでの主な変更点
 
 ## <a name="generally-available-released-january---april-2019"></a>一般公開 (2019 年 1 月から 4 月にリリース済み)
 
@@ -32,11 +32,11 @@ ms.locfileid: "35420438"
 
 ## <a name="preview-released-january---april-2019"></a>プレビュー (2019 年 1 月から 4 月にリリース済み)
 
-### <a name="calendar-group-mail-to-do-tasks"></a>カレンダー、グループ、メール、To-do タスク
-イベント、メッセージ、Outlook タスク、グループ投稿に対する[アイテム添付またはファイルの raw/MIME コンテンツの取得](/graph/api/attachment-get?view=graph-rest-beta#get-the-raw-contents-of-a-file-or-item-attachment)
+### <a name="calendar-group-mail-to-do-tasks"></a>カレンダー、グループ、メール、To Do タスク
+イベント、メッセージ、Outlook タスク、グループ投稿での、[添付アイテムまたは添付ファイルの raw/MIME コンテンツの取得](/graph/api/attachment-get?view=graph-rest-beta#get-the-raw-contents-of-a-file-or-item-attachment)
 
 ### <a name="change-notifications"></a>変更通知
-[見逃した Outlook のリソースの変更通知を減らす](webhooks-outlook-authz.md)
+[Outlook リソースの変更通知の見逃しを減らす](webhooks-outlook-authz.md)
 
 ### <a name="devices-and-apps"></a>デバイスとアプリ
 - Intune [1 月](changelog.md#january-2019)の更新プログラム 
@@ -45,15 +45,15 @@ ms.locfileid: "35420438"
 - Intune [4 月](changelog.md#april-2019)の更新プログラム
 
 ### <a name="files"></a>ファイル
-有効期限とパスワードを含む[共有の招待](/graph/api/driveitem-invite?view=graph-rest-beta)
+有効期限とパスワードを含めることができるようになった[共有の招待](/graph/api/driveitem-invite?view=graph-rest-beta)
 
 ### <a name="financials"></a>財務報告
 [Dynamics 365 Business Central](dynamics-business-central-concept-overview.md)
 
 ### <a name="identity-and-access"></a>ID とアクセス
 [アクセス レビュー](/graph/api/resources/accessreviews-root?view=graph-rest-beta) アプリケーション アクセス許可のサポート [監査とサインイン ログ](/graph/api/resources/azure-ad-auditlog-overview?view=graph-rest-beta)
-[Azure AD B2C のカスタム サインインとサインアップ](/graph/api/resources/trustframeworkpolicy?view=graph-rest-beta)
-[危険なユーザー](/graph/api/resources/riskyuser?view=graph-rest-beta) および [履歴](/graph/api/resources/riskyuserhistoryitem?view=graph-rest-beta)
+[Azure AD B2C でのカスタム サインインとサインアップ](/graph/api/resources/trustframeworkpolicy?view=graph-rest-beta)
+[リスクの高いユーザー](/graph/api/resources/riskyuser?view=graph-rest-beta) および [履歴](/graph/api/resources/riskyuserhistoryitem?view=graph-rest-beta)
 
 ### <a name="mail"></a>メール
 [メッセージの MIME コンテンツを取得する](outlook-get-mime-message.md)

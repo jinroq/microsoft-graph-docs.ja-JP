@@ -4,12 +4,12 @@ description: 'Microsoft Graph API (REST) を使用するように Azure Active D
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f8a63c14ef27648a1d586551ebe12e18a5f263a9
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 6b5236f6b7be140e1040a3169edded6e162b5e7a
+ms.sourcegitcommit: ca55fc5f5711966eaa41da31cd1ae99820e9e586
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33630252"
+ms.lasthandoff: 07/13/2019
+ms.locfileid: "35645255"
 ---
 # <a name="deploy-test-and-extend"></a>展開、テスト、拡張
 
@@ -42,7 +42,7 @@ ms.locfileid: "33630252"
 - [チェックリスト](migrate-azure-ad-graph-overview.md)をもう一度確認する
 - [Stackoverflow](https://stackoverflow.com/questions/tagged/microsoft-graph)に質問を投稿する
 - Microsoft Graph サンプルを見直して、既存のアプリケーションコードと比較します。
-  - **REST API を使用するアプリ**:[クイックスタートとサンプル](/graph/get-started)を参照して、選択したプラットフォームを選択し、クイックスタートで実行するか、適切なサンプルを検索します。
+  - **REST API を使用するアプリ**:[クイックスタートとサンプル](https://developer.microsoft.com/graph/get-started)を参照して、選択したプラットフォームを選択し、クイックスタートで実行するか、適切なサンプルを検索します。
   - **.Net クライアントライブラリを使用するアプリ**: レビュー[コンソール-サンプル](https://github.com/microsoftgraph/console-csharp-snippets-sample)、または[dotnetcore-console](https://github.com/microsoftgraph/dotnetcore-console-sample) -サンプル
 
 ## <a name="next-steps"></a>次のステップ

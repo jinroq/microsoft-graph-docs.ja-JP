@@ -4,16 +4,16 @@ description: . を有効にします。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: b8a9389ecbc9dd934f02e75a1d9b870aab832d1b
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 3bd363a48c3e99133246b1ab46c0d7fcb4d8aa1b
+ms.sourcegitcommit: ca55fc5f5711966eaa41da31cd1ae99820e9e586
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35455036"
+ms.lasthandoff: 07/13/2019
+ms.locfileid: "35645262"
 ---
 # <a name="worksheetcollection-add"></a>WorksheetCollection: add
 
-新しいワークシートをブックに追加します。ワークシートは、既存のワークシートの末尾に追加されます。新しく追加したワークシートをアクティブにする場合は、そのワークシートに対して ".activate() を呼び出します。
+新しいワークシートをブックに追加します。 ワークシートは、既存のワークシートの末尾に追加されます。 新しく追加したワークシートをアクティブにするには、そのワークシートで activate () を呼び出します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 

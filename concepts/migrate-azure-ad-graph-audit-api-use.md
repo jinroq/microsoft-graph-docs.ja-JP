@@ -4,12 +4,12 @@ description: Azure Active Directory (Azure AD) Api を監査して、アプリ�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ecf6d1897d8473b42ac8b5bcb45c59747eb36f13
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 14cc61039d97fa43f64599310cf86cce6c348fb2
+ms.sourcegitcommit: ca55fc5f5711966eaa41da31cd1ae99820e9e586
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33630273"
+ms.lasthandoff: 07/13/2019
+ms.locfileid: "35645248"
 ---
 # <a name="examine-azure-ad-graph-apis-app-usage"></a>Azure AD Graph Api アプリの使用状況を調べる
 
@@ -29,7 +29,7 @@ Microsoft Graph では、Azure AD Graph と同じ機能と機能の多くがサ�
 
 アプリが使用している機能に必要なアクセス許可を確認することもできます。  場合によっては、より詳細なアクセス許可を使用できることがあります。
 
-詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
+詳細については、「[アクセス許可](permissions-reference.md)」を参照してください。
 
 ## <a name="next-steps"></a>次のステップ
 

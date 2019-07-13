@@ -4,15 +4,17 @@ description: 組織で取得した特定の商用サブスクリプションを�
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c08884a68cce7f7f85275324d23b7948654e2dd1
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: 387c0a934b2b2ae005248b0fd1c0111da00387d4
+ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35446193"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "35639088"
 ---
 # <a name="get-subscribedsku"></a>subscribedSku を取得する
-組織で取得した特定の商用サブスクリプションを取得します。
+
+組織が取得した特定の商用サブスクリプションを取得します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -20,9 +22,9 @@ ms.locfileid: "35446193"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委任 (職場または学校のアカウント) | Directory.accessasuser.all。すべて、ディレクトリの読み取り、すべてのディレクトリを取得します。すべての    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | Directory.Read.All、Directory.ReadWrite.All |
+|アプリケーション | 。すべて、ディレクトリの読み取り、すべての読み取り、すべての書き込み、すべての. |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -33,9 +35,10 @@ GET /subscribedSkus/{id}
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポート**していません** (例: $filter はここではサポートされていません)。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer &lt;token&gt;。*必須* |
+
+| 名前       | 説明|
+|:-----------|:----------|
+| Authorization  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
