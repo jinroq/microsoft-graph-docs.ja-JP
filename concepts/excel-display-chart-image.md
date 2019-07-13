@@ -4,16 +4,16 @@ description: グラフ イメージを取得する GET 操作を実行すると�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 5cdf5522ccd0a72798ee62211e9221cf2ea9cd53
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 330c7d3a531a5735e824dda61928c3af2f05e5e3
+ms.sourcegitcommit: ca55fc5f5711966eaa41da31cd1ae99820e9e586
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526294"
+ms.lasthandoff: 07/13/2019
+ms.locfileid: "35645215"
 ---
 # <a name="display-a-chart-image-in-excel-with-microsoft-graph"></a>Microsoft Graph を使用して Excel のグラフ イメージを表示する
 
-[グラフ イメージを取得する GET 操作](/api-reference/v1.0/api/chart-image.md)を実行すると、Excel API は Base-64 文字列としてイメージを返します。
+[グラフ イメージを取得する GET 操作](/graph/api/chart-image?view=graph-rest-1.0)を実行すると、Excel API は Base-64 文字列としてイメージを返します。
 
 HTML イメージ タグ: `<img src="data:image/png;base64,{base-64 chart image string}/>` 内の Base-64 文字列を表示できます。
 

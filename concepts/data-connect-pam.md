@@ -4,16 +4,16 @@ description: Microsoft Graph データ接続は、Office 365 管理者がデー�
 author: tlenig
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: b09effe96a0b6c04ee68a23016f464a8e0f9d9e0
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 439a5e50779888ff1ae7ccfb11311d8b3f6b8a14
+ms.sourcegitcommit: ca55fc5f5711966eaa41da31cd1ae99820e9e586
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629818"
+ms.lasthandoff: 07/13/2019
+ms.locfileid: "35645269"
 ---
 # <a name="microsoft-graph-data-connect-integration-with-privileged-access-management"></a>Microsoft Graph データ接続と Privileged Access Management の統合
 
-Microsoft Graph データ接続は、Office 365 管理者がデータ移動の要求を承認できるようにするために、Privileged Access Management (PAM) に依存しています。 データ接続のパイプラインは有効化中に、Office 365 管理者から指定されたデータ アクセス要求の承認者のメンバーによって承認される必要があります。 承認者グループを設定するには、「[はじめに](/concepts/data-connect-get-started.md)」を参照してください。
+Microsoft Graph データ接続は、Office 365 管理者がデータ移動の要求を承認できるようにするために、Privileged Access Management (PAM) に依存しています。 データ接続のパイプラインは有効化中に、Office 365 管理者から指定されたデータ アクセス要求の承認者のメンバーによって承認される必要があります。 承認者グループを設定するには、「[はじめに](data-connect-get-started.md)」を参照してください。
 
 コピー アクティビティが Office 365 データを抽出するためのアクセスを要求したときに、承認要求メールが承認者グループの各メンバーに送信されます。 承認者は、これらの要求を承認または拒否したり、抽出されたデータから削除する必要があるユーザー グループを指定したりすることができます。また、以前に承認した要求を取り消すこともできます。 承認は 6 か月間有効となり、Azure Data Factory のパイプラインでのコピー アクティビティごとに 1 つの承認が必要となります。 
 
@@ -47,9 +47,9 @@ Microsoft Graph データ接続は、Office 365 管理者がデータ移動の�
 
 Exchange Online PowerShell モジュールを使用して要求を処理するには、次の手順を実行します。
 
-1. Exchange Online PowerShell モジュールをインストールします。 インストール方法の詳細については、「[多要素認証を使用して Exchange Online PowerShell に接続する](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps)」を参照してください。
+1. Exchange Online PowerShell モジュールをインストールします。 インストール方法の詳細については、「[多要素認証を使用して Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps)」を参照してください。
 
-2. 多要素認証 (MFA) を使用して Exchange Online PowerShell に接続します。 詳細については、「[多要素認証を使用して Exchange Online PowerShell に接続する](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps)」を参照してください。
+2. 多要素認証 (MFA) を使用して Exchange Online PowerShell に接続します。 詳細については、「[多要素認証を使用して Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps)」を参照してください。
     >**注**: Exchange Online PowerShell への接続中でなくても、組織で多要素認証を有効にしてこれらの手順を実行することができます。 MFA と接続すると、要求への署名のために PAM によって使用される OAuth トークンが作成されます。
 
 3. 自分のアカウントでサインインします。 要求の承認、拒否、または取り消しを行うには、構成済みのデータ アクセスの承認者グループのメンバーである必要があります。 ゲスト ユーザーは承認者グループであっても要求を承認することができません。 
@@ -168,4 +168,4 @@ PAM Web エクスペリエンスを使用して要求を処理するには、次
 
 ## <a name="next-steps"></a>次の手順
 
-「[はじめに](/concepts/data-connect-get-started.md)」の手順をすべて実行して、Microsoft Graph データが使用できるように Privileged Access Management が組織内で正しく構成されていることを確認します。
+「[はじめに](data-connect-get-started.md)」の手順をすべて実行して、Microsoft Graph データが使用できるように Privileged Access Management が組織内で正しく構成されていることを確認します。

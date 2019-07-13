@@ -72,13 +72,13 @@ Microsoft ID プラットフォーム エンドポイントにアプリケーシ
 
 アプリケーションを登録するには、次の操作を行います。
 
-1. 「[Azure アプリ登録ポータル](https://go.microsoft.com/fwlink/?linkid=2083908)」に移動してサインインします。
+1. [Azure アプリ登録ポータル](https://go.microsoft.com/fwlink/?linkid=2083908)に移動してサインインします。
     >**注**: テナント管理者である必要はありません。**[マイ アプリケーション]** リストにリダイレクトされます。
 2. **[新規登録]** を選択します。
-3. 新しいアプリケーションの登録ページで **[名前]** の値を入力して、サポートするアカウントの種類を選択します。 **[リダイレクト URL]** フィールドにリダイレクト URL を入力します。
-4. **[登録]** を選択してアプリを作成し、アプリの概要ページを表示します。
-5. アプリの **[API のアクセス許可]** ページに移動します。
-6. **[アクセス許可を追加する]** を選択して、ポップアップの **[Microsoft Graph]** を選択します。 **[委任されたアクセス許可]** を選択します。 検索ボックスを使用して、必要なアクセス許可を検索して選択します。 アクセス許可のリストについては、「[セキュリティのアクセス許可](permissions-reference.md#security-permissions)」を参照してください。
+3. 新しいアプリケーションの登録ページで [**名前**]の値を入力し、サポートするアカウントの種類を選択します。 [**リダイレクト URL**] フィールドにリダイレクト URL を入力します。
+4. [**登録**] を選択してアプリを作成し、アプリの概要ページを表示します。
+5. アプリの [**API のアクセス許可**] ページに移動します。
+6. [**アクセス許可を追加する**] を選択し、ポップアップで [**Microsoft Graph**] を選択します。 [**委任されたアクセス許可**] を選択します。 検索ボックスを使用して、必要なアクセス許可を検索して選択します。 アクセス許可のリストについては、「[セキュリティのアクセス許可](permissions-reference.md#security-permissions)」を参照してください。
 
     >**注:** Microsoft Graph Security API では、GET クエリに *.Read.All スコープ、PATCH/POST/DELETE クエリに *.ReadWrite.All スコープが必要です。
 
@@ -90,7 +90,7 @@ Microsoft ID プラットフォーム エンドポイントにアプリケーシ
     |SecurityEvents.ReadWrite.All | &bull; [alerts](/graph/api/resources/alert?view=graph-rest-1.0)</br> &bull; [secureScores](/graph/api/resources/securescores?view=graph-rest-beta) </br> &bull; [secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta) | GET、POST、PATCH |
     |ThreatIndicators.ReadWrite.OwnedBy | &bull; [tiIndicator](/graph/api/resources/tiindicator?view=graph-rest-beta) (プレビュー) | GET、POST、PATCH、DELETE|
 
-7. **[アクセス許可を追加する]** を選択します。
+7. [**アクセス許可を追加する**]を選択します。
 
 以下の情報を保存します。
 
@@ -127,7 +127,7 @@ Microsoft ID プラットフォーム エンドポイントにアプリケーシ
 
 ユーザーにロールを割り当てるには、次の操作を行います。
 
-- 「[Azure Portal](https://portal.azure.com) (https://portal.azure.com) 」にサインインします。
+- [Azure Portal](https://portal.azure.com) (https://portal.azure.com)) にサインインします。
 - メニューで **[Azure Active Directory]** > **[ユーザー]** を選択します。
 - ユーザーの名前を選択します。
 - **[管理]** > **[ディレクトリ ロール]** を選択します。
