@@ -4,12 +4,12 @@ description: チャネルまたはチャット エンティティ内の個別の
 localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: 269041dece2ab626c5f3d0ecccbf70d62c296ede
-ms.sourcegitcommit: b523648530fcc8c2a3ded35b419be8047b9fcd10
+ms.openlocfilehash: 3f27434e5dd8e3ccfc949c870a239522dd96d9d3
+ms.sourcegitcommit: ca55fc5f5711966eaa41da31cd1ae99820e9e586
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "35084048"
+ms.lasthandoff: 07/13/2019
+ms.locfileid: "35645241"
 ---
 # <a name="chatmessage-resource-type"></a>chatMessage リソースの種類
 
@@ -44,7 +44,7 @@ ms.locfileid: "35084048"
 |etag| string | 読み取り専用です。 メッセージのバージョン番号。 |
 |messageType|chatMessageType|メッセージの種類。 使用可能な値: `message`。|
 |createdDateTime|dateTimeOffset|読み取り専用です。 メッセージ作成時のタイムスタンプ。|
-|lastModifiedDateTime|dateTimeOffset|読み取り専用です。 メッセージ編集/更新時のタイムスタンプ。|
+|lastModifiedDateTime|dateTimeOffset|読み取り専用です。 メッセージの作成/編集時のタイムスタンプには、返信が行われた時間 (チャネル内のルート メッセージの場合) またはリアクションの追加または削除が行われた時間が含まれます。 |
 |deletedDateTime|dateTimeOffset|読み取り専用です。 メッセージが削除された時間のタイムスタンプ、または削除されていない場合は Null です。 |
 |件名|string| プレーン テキストでの、メッセージの件名です。|
 |本文|[itemBody](itembody.md)|メッセージのコンテンツのプレーンテキスト/HTML 表記。 表記は、本文内の contentType によって指定されます。 メッセージに [chatMessageMention ](chatmessagemention.md) が含まれている場合、コンテンツは常に HTML で表示されます。 |
