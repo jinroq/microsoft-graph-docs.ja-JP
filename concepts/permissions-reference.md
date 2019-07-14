@@ -3,12 +3,12 @@ title: 'Microsoft Graph のアクセス許可のリファレンス '
 description: Microsoft Graph は、アプリがアクセスするリソース (ユーザー、グループ、メールなど) を制御する詳細なアクセス許可を公開しています。 開発者は、アプリが要求する Microsoft Graph のアクセス許可を決定します。
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: 9d0d82eddf4aaf283942aa6213f28bdb9d589c65
-ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
+ms.openlocfilehash: 6e68a9c0a8f0eca222bd46a9ac15dda8d3d12f55
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35133762"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620891"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph のアクセス許可のリファレンス
 
@@ -775,7 +775,7 @@ _Member.Read.Hidden_ は、職場または学校のアカウントでのみ有�
 | _Notes.ReadWrite.All_ |    すべての OneNote ノートブックの読み取りと書き込み | サインインしているユーザーなしで、組織内のすべての OneNote ノートブックをアプリで読み取り、共有、および変更できるようにします。| 必要 |
 
 
-### <a name="remarks"></a>注釈
+### <a name="remarks"></a>Remarks
 _Notes.Read.All_ および _Notes.ReadWrite.All_ は、職場または学校アカウントでのみ有効です。その他すべてのアクセス許可は、Microsoft アカウントと職場または学校アカウントのどちらでも有効です。
 
 _Notes.Create_ のアクセス許可があるアプリは、サインインしているユーザーの OneNote ノートブック階層の表示と、OneNote コンテンツ (ノートブック、セクション グループ、セクション、ページなど) の作成を実行できます。
