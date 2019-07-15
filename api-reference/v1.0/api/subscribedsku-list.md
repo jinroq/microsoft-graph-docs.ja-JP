@@ -4,14 +4,16 @@ description: 組織で取得した商用サブスクリプションの一覧を�
 localization_priority: Priority
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c83cdc223197e78cf1e6d07e69961f1a87e7c8d9
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: 360c7d1ad6242af1569e5c81bf98d06276fc5a7d
+ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35458594"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "35639116"
 ---
 # <a name="list-subscribedskus"></a>subscribedSkus を一覧表示する
+
 組織で取得した商用サブスクリプションの一覧を取得します。
 
 ## <a name="permissions"></a>アクセス許可
@@ -20,9 +22,9 @@ ms.locfileid: "35458594"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委任 (職場または学校のアカウント) | Organization.Read.All、Directory.Read.All、Organization.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | Directory.Read.All、Directory.ReadWrite.All |
+|アプリケーション | Organization.Read.All、Directory.Read.All、Organization.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -33,9 +35,10 @@ GET /subscribedSkus
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポート**していません** (例: $filter はここではサポートされていません)。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer &lt;token&gt;。*必須* |
+
+| 名前       | 説明|
+|:-----------|:----------|
+| Authorization  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
