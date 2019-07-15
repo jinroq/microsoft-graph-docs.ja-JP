@@ -4,12 +4,12 @@ description: Microsoft Graph の教育機関向け API は、教育のさまざ�
 author: mmast-msft
 localization_priority: Priority
 ms.prod: education
-ms.openlocfilehash: ab3aec0748c2036ba25ac28a3c2ab7b0cd7e4112
-ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
+ms.openlocfilehash: 79212e9f196f3eb20468d34c34dc9d4588718615
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35133720"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620151"
 ---
 # <a name="education-api-overview"></a>教育機関向け API の概要
 

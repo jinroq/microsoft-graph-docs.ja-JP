@@ -3,22 +3,22 @@ title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 5c5c364edb6ff8c0b840450b428cda649d4eba11
-ms.sourcegitcommit: 705b32b9a64516d8138fab34c173b7df4f78a6ad
+ms.openlocfilehash: bfe6a16abcfc0b7ce2900c76e142139fc84df176
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "35576418"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621145"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
-この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
+この変更ログでは、Microsoft Graph API と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 
 Microsoft Graph API に関する既知の問題の詳細については、「[既知の問題](known-issues.md)」を参照してください。
 
 ## <a name="july-2019"></a>2019 年 7 月
 
-### <a name="microsoft-intune-apis"></a>Microsoft Intune API
+### <a name="devices-and-apps-microsoft-intune"></a>デバイスとアプリ (Microsoft Intune)
 |変更の種類|バージョン|説明|
 |:---|:---|:---|
 |追加|ベータ版|[groupPolicyDefinitionFile](/graph/api/resources/intune-grouppolicy-grouppolicydefinitionfile?view=graph-rest-beta) エンティティに **revision** プロパティが追加されました|
@@ -26,24 +26,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 ## <a name="june-2019"></a>2019 年 6 月
 
-### <a name="reports-apis"></a>レポート API
-
-| **変更の種類** | **バージョン** | **説明**                          |
-| :-------------- | :---------- | :--------------------------------------- |
-|追加|ベータ版| ユーザーの登録と使用状況に関する情報を取得する新しいレポートを追加しました。<br/><ul><li>[reportroot-getcredentialusagesummary](/graph/api/reportroot-getcredentialusagesummary?view=graph-rest-beta) - セルフサービスのパスワード リセットの使用状況を報告する。</li><li>[reportroot-getcredentialuserregistrationcount](/graph/api/reportroot-getcredentialuserregistrationcount?view=graph-rest-beta) - セルフサービスのパスワード リセットと多要素認証の登録数を報告する。</li><li>[reportroot-list-credentialuserregistrationdetails](/graph/api/reportroot-list-credentialuserregistrationdetails?view=graph-rest-beta) - セルフサービスのパスワード リセットと多要素認証の使用状況を報告する。</li><li>[reportroot-list-usercredentialusagedetails](/graph/api/resources/reportroot-list-usercredentialusagedetails?view=graph-rest-beta) - ユーザー向けのセルフサービスのパスワード リセットの使用状況を報告する。</li></ul> |
-
-### <a name="identity-and-access"></a>ID とアクセス
-
-| **変更の種類** | **バージョン** | **説明**                  |
-|:----------------|:------------|:-----------------------------------------|
-| 追加 | ベータ版 | Azure AD Identity Protection でのリスク検出を表す [riskDetection API](/graph/api/resources/riskdetection?view=graph-rest-beta) が追加されました。 |
-| 追加        | ベータ版  | 新しいリソースの種類 [applicationTemplate](/graph/api/resources/applicationtemplate.md) を導入しました。 このリソースの種類では、Azure AD アプリケーション ギャラリーからのアプリケーションの[インスタンス化](/graph/api/applicationtemplate-instantiate.md)、[リスト](/graph/api/applicationtemplate-instantiate.md)、[取得](/graph/api/applicationtemplate-get.md)がサポートされています。|
-| 追加 | ベータ版|追加された新しいリソース: </br> [detailsInfo](/graph/api/resources/detailsInfo?view=graph-rest-beta)</br> [initiator](/graph/api/resources/initiator?view=graph-rest-beta)</br> [modifiedProperty](/graph/api/resources/modifiedProperty?view=graph-rest-beta)</br> [provisionedIdentity](/graph/api/resources/provisionedIdentity?view=graph-rest-beta)</br> [provisioningObjectsummary](/graph/api/resources/provisioningObjectsummary?view=graph-rest-beta)</br> [provisioningStep](/graph/api/resources/provisioningStep?view=graph-rest-beta)</br> [provisioningsystemDetails](/graph/api/resources/provisioningsystemDetails?view=graph-rest-beta)</br> [statusBase](/graph/api/resources/statusBase?view=graph-rest-beta)|
-| 追加 |ベータ版 |[List provisioningObjectSummary](/graph/api/resources/provisioning-object-summary-list?view=graph-rest-beta) 操作が追加されました。</br>|                     |
-| 追加 | v1.0 | **signInSessionsValidFromDateTime** プロパティを[ユーザー](/graph/api/resources/user?view=graph-rest-1.0) リソースに追加しました。 |
-| 加算 | v1.0 | [revokeSignInSessions](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) アクションを[ユーザー](/graph/api/resources/user?view=graph-rest-1.0) リソースに追加しました。 |
-
-### <a name="microsoft-intune-apis"></a>Microsoft Intune API
+### <a name="devices-and-apps-microsoft-intune"></a>デバイスとアプリ (Microsoft Intune)
 |変更の種類|バージョン|説明|
 |:---|:---|:---|
 |追加|ベータ版|新しいエンティティを追加しました。<br/>[appVulnerabilityManagedDevice](/graph/api/resources/intune-partnerintegration-appvulnerabilitymanageddevice?view=graph-rest-beta)<br/>[appVulnerabilityMobileApp](/graph/api/resources/intune-partnerintegration-appvulnerabilitymobileapp?view=graph-rest-beta)<br/>[appVulnerabilityTask](/graph/api/resources/intune-partnerintegration-appvulnerabilitytask?view=graph-rest-beta)<br/>[deviceAppManagementTask](/graph/api/resources/intune-partnerintegration-deviceappmanagementtask?view=graph-rest-beta)<br/>[deviceManagementDomainJoinConnector](/graph/api/resources/intune-odj-devicemanagementdomainjoinconnector?view=graph-rest-beta)<br/>[iosikEv2VpnConfiguration](/graph/api/resources/intune-deviceconfig-iosikev2vpnconfiguration?view=graph-rest-beta)<br/>[roleScopeTagAutoAssignment](/graph/api/resources/intune-rbac-rolescopetagautoassignment?view=graph-rest-beta)<br/>[windows10DeviceFirmwareConfigurationInterface](/graph/api/resources/intune-deviceconfig-windows10devicefirmwareconfigurationinterface?view=graph-rest-beta)<br/>|
@@ -75,46 +58,51 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 |追加|ベータ版|**sharedSecret** メンバーを [vpnAuthenticationMethod](/graph/api/resources/intune-deviceconfig-vpnauthenticationmethod?view=graph-rest-beta) 列挙型に追加しました|
 |追加|ベータ版|**windows10Home**、**windows10HomeChina**、**windows10HomeN**、**windows10HomeSingleLanguage**、**windows10Mobile**、**windows10IoTCore** および **windows10IoTCoreCommercial** 各メンバーを [windows10EditionType](/graph/api/resources/intune-deviceconfig-windows10editiontype?view=graph-rest-beta) 列挙型に追加しました|
 
-### <a name="outlook-mail"></a>Outlook メール
+### <a name="identity-and-access"></a>ID とアクセス
+
+| **変更の種類** | **バージョン** | **説明**                  |
+|:----------------|:------------|:-----------------------------------------|
+| 追加 | ベータ版 | Azure AD Identity Protection でのリスク検出を表す [riskDetection API](/graph/api/resources/riskdetection?view=graph-rest-beta) が追加されました。 |
+| 追加        | ベータ版  | 新しいリソースの種類 [applicationTemplate](/graph/api/resources/applicationtemplate.md) を導入しました。 このリソースの種類では、Azure AD アプリケーション ギャラリーからのアプリケーションの[インスタンス化](/graph/api/applicationtemplate-instantiate.md)、[リスト](/graph/api/applicationtemplate-instantiate.md)、[取得](/graph/api/applicationtemplate-get.md)がサポートされています。|
+| 追加 | ベータ版|追加された新しいリソース: </br> [detailsInfo](/graph/api/resources/detailsInfo?view=graph-rest-beta)</br> [initiator](/graph/api/resources/initiator?view=graph-rest-beta)</br> [modifiedProperty](/graph/api/resources/modifiedProperty?view=graph-rest-beta)</br> [provisionedIdentity](/graph/api/resources/provisionedIdentity?view=graph-rest-beta)</br> [provisioningObjectsummary](/graph/api/resources/provisioningObjectsummary?view=graph-rest-beta)</br> [provisioningStep](/graph/api/resources/provisioningStep?view=graph-rest-beta)</br> [provisioningsystemDetails](/graph/api/resources/provisioningsystemDetails?view=graph-rest-beta)</br> [statusBase](/graph/api/resources/statusBase?view=graph-rest-beta)|
+| 追加 |ベータ版 |[List provisioningObjectSummary](/graph/api/resources/provisioning-object-summary-list?view=graph-rest-beta) 操作が追加されました。</br>|                     |
+| 追加 | v1.0 | **signInSessionsValidFromDateTime** プロパティを[ユーザー](/graph/api/resources/user?view=graph-rest-1.0) リソースに追加しました。 |
+| 加算 | v1.0 | [revokeSignInSessions](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) アクションを[ユーザー](/graph/api/resources/user?view=graph-rest-1.0) リソースに追加しました。 |
+
+### <a name="mail-outlook"></a>メール (Outlook)
 
 | **変更の種類** | **バージョン**   | **説明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 追加 | ベータ版 | mailFolder API の Mail.ReadBasic アクセス許可に関する以下のサポートが追加されました: [mailfolders を一覧表示する](/graph/api/user-list-mailfolders?view=graph-rest-beta)、[mailfolder を取得する](/graph/api/mailfolder-get?view=graph-rest-beta)、[子フォルダーを一覧表示する](/graph/api/mailfolder-list-childfolders?view=graph-rest-beta)、および [フォルダー内のメッセージを一覧表示する](/graph/api/mailfolder-list-childfolders?view=graph-rest-beta)。 [メッセージのデルタ クエリ](/graph/api/message-delta?view=graph-rest-beta) および [mailFolder のデルタ クエリ](/graph/api/mailfolder-delta?view=graph-rest-beta) に関する Mail.ReadBasic サポートも追加されました。|
 
-### <a name="microsoft-teams-apis"></a>Microsoft Teams API
+### <a name="reports--identity-and-access-reports"></a>レポート | ID およびアクセス レポート
 
-| **変更の種類** | **バージョン**   | **説明**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| 追加 | ベータ版 | [teamDiscoverySettings](/api-reference/beta/resources/teamdiscoverysettings.md)リソースと関連メソッドが追加されました。 |
+| **変更の種類** | **バージョン** | **説明**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+|追加|ベータ版| ユーザーの登録と使用状況に関する情報を取得する新しいレポートを追加しました。<br/><ul><li>[reportroot-getcredentialusagesummary](/graph/api/reportroot-getcredentialusagesummary?view=graph-rest-beta) - セルフサービスのパスワード リセットの使用状況を報告する。</li><li>[reportroot-getcredentialuserregistrationcount](/graph/api/reportroot-getcredentialuserregistrationcount?view=graph-rest-beta) - セルフサービスのパスワード リセットと多要素認証の登録数を報告する。</li><li>[reportroot-list-credentialuserregistrationdetails](/graph/api/reportroot-list-credentialuserregistrationdetails?view=graph-rest-beta) - セルフサービスのパスワード リセットと多要素認証の使用状況を報告する。</li><li>[reportroot-list-usercredentialusagedetails](/graph/api/resources/reportroot-list-usercredentialusagedetails?view=graph-rest-beta) - ユーザー向けのセルフサービスのパスワード リセットの使用状況を報告する。</li></ul> |
 
-
-### <a name="onedrive-and-sharepoint-apis"></a>OneDrive と SharePoint の API
+### <a name="sites-and-lists-sharepoint"></a>サイトとリスト (SharePoint)
 
 | **変更の種類** | **バージョン** | **説明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | 追加        | ベータ版        | [ユーザー](/graph/api/resources/user?view=graph-rest-beta) エンティティに [followSite](/graph/api/follow-site?view=graph-rest-beta) ナビゲーション プロパティを追加しました |
 | 追加        | ベータ版        | [ユーザー](/graph/api/resources/user?view=graph-rest-beta) エンティティに [unfollowSite](/graph/api/unfollow-site?view=graph-rest-beta) ナビゲーション プロパティを追加しました |
 
+### <a name="teamwork-microsoft-teams"></a>チームワーク (Microsoft Teams)
+
+| **変更の種類** | **バージョン**   | **説明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 追加 | ベータ版 | [teamDiscoverySettings](/api-reference/beta/resources/teamdiscoverysettings.md)リソースと関連メソッドが追加されました。 |
 
 ## <a name="may-2019"></a>2019 年 5 月
 
-### <a name="directory-apis"></a>ディレクトリ API
-| **変更の種類** | **バージョン** | **説明** |
+### <a name="calendar-mail-and-personal-contacts-outlook"></a>予定表、メール、個人用連絡先 (Outlook)
+
+| **変更の種類** | **バージョン**   | **説明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| 追加 | ベータ版 | 
-  **assignedlabels**プロパティが[group](https://docs.microsoft.com/ja-JP/graph/api/resources/group?view=graph-rest-beta) エンティティに追加されました。 このプロパティは、グループに関連付けられている機密ラベル ペア (ラベル ID、ラベル名) のリストを表します。
+| 追加 | v1.0 およびベータ版 | アプリにメール、メールボックス設定、予定表、または連絡先へのアプリケーション アクセス許可が付与されている場合でも、管理者が特定のメールボックスのみにアプリのアクセスを制限できる機能が追加されました。 詳細については、「[アプリケーションのアクセス許可を Exchange Online の特定のメールボックスにスコーピングする](auth-limit-mailbox-access.md)」を参照してください。 |
 
-### <a name="education-apis"></a>教育機関 API
-| 変更の種類 | バージョン | 説明                                                                                                                                                      |
-| :---------- | :------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 追加    | ベータ版    | taughtClasses が [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta) に追加されました。                                                                  |
-| 加算    | ベータ版    | [educationCourse](/graph/api/resources/educationCourse?view=graph-rest-beta) が [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta) に追加されました。 |
-| 加算    | ベータ版    | [デルタ](/graph/delta-query-overview) サポートが [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta) に追加されました。                                   |
-| 加算    | ベータ版    | [デルタ](/graph/delta-query-overview)が [educationSchool](/graph/api/resources/educationSchool?view=graph-rest-beta) に追加されました。                                       |
-| 加算    | ベータ版    | [デルタ](/graph/delta-query-overview)が [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta) に追加されました。                                         |
-| 加算    | ベータ版    | `faculty` オプションが [educationUserRole](/graph/api/resources/enums?view=graph-rest-beta#educationuserrole-values) 列挙型に追加されました。                              |
-
-### <a name="microsoft-intune-apis"></a>Microsoft Intune API
+### <a name="devices-and-apps-microsoft-intune"></a>デバイスとアプリ (Microsoft Intune)
 |変更の種類|バージョン|説明|
 |:---|:---|:---|
 |追加|ベータ版|新しいエンティティを追加しました。<br/>[deviceManagementDerivedCredentialSettings](/graph/api/resources/intune-deviceconfig-devicemanagementderivedcredentialsettings?view=graph-rest-beta)<br/>[iosDerivedCredentialAuthenticationConfiguration](/graph/api/resources/intune-deviceconfig-iosderivedcredentialauthenticationconfiguration?view=graph-rest-beta)<br/>[securityBaselineCategoryStateSummary](/graph/api/resources/intune-deviceintent-securitybaselinecategorystatesummary?view=graph-rest-beta)<br/>|
@@ -156,40 +144,55 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 |追加|ベータ版|[vpnAuthenticationMethod](/graph/api/resources/intune-deviceconfig-vpnauthenticationmethod?view=graph-rest-beta) 列挙型に **derivedCredential** メンバーを追加しました|
 |追加|ベータ版|[wiFiAuthenticationMethod](/graph/api/resources/intune-deviceconfig-wifiauthenticationmethod?view=graph-rest-beta) 列挙型に **derivedCredential** メンバーを追加しました|
 
-### <a name="microsoft-teams-apis"></a>Microsoft Teams API
+### <a name="education"></a>Education
+| 変更の種類 | バージョン | 説明                                                                                                                                                      |
+| :---------- | :------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 追加    | ベータ版    | taughtClasses が [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta) に追加されました。                                                                  |
+| 加算    | ベータ版    | [educationCourse](/graph/api/resources/educationCourse?view=graph-rest-beta) が [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta) に追加されました。 |
+| 加算    | ベータ版    | [デルタ](/graph/delta-query-overview) サポートが [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta) に追加されました。                                   |
+| 加算    | ベータ版    | [デルタ](/graph/delta-query-overview)が [educationSchool](/graph/api/resources/educationSchool?view=graph-rest-beta) に追加されました。                                       |
+| 加算    | ベータ版    | [デルタ](/graph/delta-query-overview)が [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta) に追加されました。                                         |
+| 加算    | ベータ版    | `faculty` オプションが [educationUserRole](/graph/api/resources/enums?view=graph-rest-beta#educationuserrole-values) 列挙型に追加されました。                              |
 
-| **変更の種類** | **バージョン** | **説明**                  |
-|:----------------|:------------|:-----------------------------------------|
-| 追加        | ベータ版        | **urgent**プロパティが[chatMessageImportance](/graph/api/resources/chatMessageImportance?view=graph-rest-beta)列挙型に追加されました。|
-| 加算        | ベータ版        | **hostedContents**ナビゲーション プロパティが[chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta)エンティティに追加されました。|
-| 加算        | ベータ版        | **chatMessageHostedContent** エンティティを [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) に関連付けられている Microsoft Teams によってホストされるコンテンツの表記に追加されました。 |
-
-### <a name="outlook-mail-calendar-contacts"></a>Outlook メール、予定表、連絡先
-
-| **変更の種類** | **バージョン**   | **説明**                          |
+### <a name="group"></a>グループ
+| **変更の種類** | **バージョン** | **説明** |
 | :-------------- | :------------ | :--------------------------------------- |
-| 追加 | v1.0 | [mailFolder](/graph/api/resources/mailfolder?graph-rest-1.0) エンティティのメソッドから派生し、そのメソッドをサポートする、[mailSearchFolder](/graph/api/resources/mailsearchfolder?graph-rest-1.0) エンティティが追加されました。 |
-| 追加 | v1.0 およびベータ版 | アプリにメール、メールボックス設定、予定表、または連絡先へのアプリケーション アクセス許可が付与されている場合でも、管理者が特定のメールボックスのみにアプリのアクセスを制限できる機能が追加されました。 詳細については、「[アプリケーションのアクセス許可を Exchange Online の特定のメールボックスにスコーピングする](auth-limit-mailbox-access.md)」を参照してください。 |
+| 追加 | ベータ版 | 
+  **assignedlabels**プロパティが[group](https://docs.microsoft.com/ja-JP/graph/api/resources/group?view=graph-rest-beta) エンティティに追加されました。 このプロパティは、グループに関連付けられている機密ラベル ペア (ラベル ID、ラベル名) のリストを表します。
 
-### <a name="reports-apis"></a>レポート API
-
-| **変更の種類** | **バージョン** | **説明**                  |
-|:----------------|:------------|:-----------------------------------------|
-| 追加        | ベータ版  | **OwnerPrincipalName**プロパティが [oneDriveUsageAccountDetail](/graph/api/resources/oneDriveUsageAccountDetail?view=graph-rest-beta)エンティティに追加されました。|
-| 追加        | ベータ版  | **ownerPrincipalName** プロパティが [sharePointSiteUsageDetail](/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta) エンティティに追加されました。|
-
-### <a name="risky-users-api"></a>リスクの高いユーザーの API
+### <a name="identity-and-access--identity-protection"></a>ID とアクセス | ID 保護
 
 | **変更の種類** | **バージョン**   | **説明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 追加 | ベータ版 | [riskyUserHistoryItem](/graph/api/resources/riskyuserhistoryitem?view=graph-rest-beta) エンティティを追加しました。 |
 | 追加 | ベータ版 | [履歴のリスト](/graph/api/riskyuser-list-history?view=graph-rest-beta)の操作を追加しました。 |
 
-### <a name="security-apis"></a>セキュリティ API
+### <a name="mail-outlook"></a>メール (Outlook)
+
+| **変更の種類** | **バージョン**   | **説明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 追加 | v1.0 | [mailFolder](/graph/api/resources/mailfolder?graph-rest-1.0) エンティティのメソッドから派生し、そのメソッドをサポートする、[mailSearchFolder](/graph/api/resources/mailsearchfolder?graph-rest-1.0) エンティティが追加されました。 |
+
+### <a name="reports--office-365-usage-reports"></a>レポート | Office 365 の使用状況レポート
+
+| **変更の種類** | **バージョン** | **説明**                  |
+|:----------------|:------------|:-----------------------------------------|
+| 追加        | ベータ版  | **OwnerPrincipalName**プロパティが [oneDriveUsageAccountDetail](/graph/api/resources/oneDriveUsageAccountDetail?view=graph-rest-beta)エンティティに追加されました。|
+| 追加        | ベータ版  | **ownerPrincipalName** プロパティが [sharePointSiteUsageDetail](/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta) エンティティに追加されました。|
+
+### <a name="security"></a>セキュリティ
 
 | **変更の種類** | **バージョン** | **説明**              |
 | :-------------- | :---------- | :--------------------------------------- |
 | 追加        | v1.0       | セキュア スコア API を [セキュリティ API](/graph/api/resources/securescore-api-overview?view=graph-rest-1.0) に追加しました。これには次のリソースと操作が含まれています。<br/>[secureScore](/graph/api/resources/securescore?view=graph-rest-1.0) (および関連するエンティティ)<br/>[secureScores のリスト](/graph/api/securescores-list?view=graph-rest-1.0)<br/>[secureScoreControlProfile](/graph/api/resources/securescorecontrolprofile?view=graph-rest-1.0)<br/>[secureScoreControlProfiles のリスト](/graph/api/securescorecontrolprofiles-list?view=graph-rest-1.0)<br/>[secureScoreControlProfiles の更新](/graph/api/securescorecontrolprofiles-update?view=graph-rest-1.0) |
+
+### <a name="teamwork-microsoft-teams"></a>チームワーク (Microsoft Teams)
+
+| **変更の種類** | **バージョン** | **説明**                  |
+|:----------------|:------------|:-----------------------------------------|
+| 追加        | ベータ版        | **urgent**プロパティが[chatMessageImportance](/graph/api/resources/chatMessageImportance?view=graph-rest-beta)列挙型に追加されました。|
+| 加算        | ベータ版        | **hostedContents**ナビゲーション プロパティが[chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta)エンティティに追加されました。|
+| 加算        | ベータ版        | [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) に関連付けられている Microsoft Teams によってホストされているコンテンツを表す **chatMessageHostedContent** エンティティを追加しました。 |
 
 
 ## <a name="april-2019"></a>2019 年 4 月

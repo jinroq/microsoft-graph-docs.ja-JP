@@ -3,12 +3,12 @@ title: サブスクリプションを一覧表示する
 description: アプリ ID、ユーザー、およびテナントでのユーザーの役割に基づいて、Webhook サブスクリプションのプロパティとリレーションシップを取得します。
 localization_priority: Priority
 author: piotrci
-ms.openlocfilehash: 58300c1d3f7c54136bb443c681d477ccc0bd9734
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: a82d47d01a21ee49f12228b8c1dd6e93bda61522
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35450472"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621264"
 ---
 # <a name="list-subscriptions"></a>サブスクリプションを一覧表示する
 
@@ -102,7 +102,7 @@ GET https://graph.microsoft.com/v1.0/subscriptions
 
 ##### <a name="response"></a>応答
 
-応答の例を次に示します。  簡潔にするために、切り詰められている場合があります。  実際の呼び出しからは、サポートされているプロパティのうち、要求と呼び出し元のコンテキストに適しているものすべてが返されます。
+応答の例を下に示します。  簡潔にするために、切り詰められている場合があります。  実際の呼び出しからは、サポートされているプロパティのうち、要求と呼び出し元のコンテキストに適しているものすべてが返されます。
 
 <!-- {
   "blockType": "response",

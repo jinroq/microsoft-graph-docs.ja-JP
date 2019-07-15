@@ -4,12 +4,12 @@ description: " 作成と削除はサポートされません。 directoryObject 
 localization_priority: Priority
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9b24a91b592b3674b7080fbcf5e345937dfae402
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.openlocfilehash: 8b0255883f4e97a7b4aa101073cf0fac1654519e
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34657813"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621397"
 ---
 # <a name="organization-resource-type"></a>組織リソースの種類
 
@@ -31,32 +31,32 @@ ms.locfileid: "34657813"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ                             | 型                                                              | 説明                                                                                                                                                                                                                                                                          |
-|:-------------------------------------|:------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| assignedPlans                        | [assignedPlan](assignedplan.md) コレクション                        | テナントに関連付けられているサービス プランのコレクション。null 許容ではありません。                                                                                                                                                                                                            |
-| businessPhones                      | String コレクション                                         | 組織の電話番号。 メモ: 文字列コレクションですが、このプロパティに設定できるのは 1 つの数字のみです。                                                                                            |
-| city                                 | String                                                            | 組織の住所の市区町村名                                                                                                                                                                                                                                        |
-| country                              | String                                                            | 組織の住所の国/地域名                                                                                                                                                                                                                              |
-| countryLetterCode                    | String                                                            | 組織の国/地域の略称                                                                                                                                                                                                                                     |
-|createdDateTime|DateTimeOffset| 組織作成時のタイムスタンプです。 値は変更できず、組織が作成されると自動的に設定されます。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 読み取り専用です。 |
-| deletedDateTime                    | DateTimeOffset                                                    | ISO 8601 形式を使用して Azure AD テナントが削除されたときの日時を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります: `'2014-01-01T00:00:00Z'`。 読み取り専用です。                                                                                     |
-|createdDateTime|DateTimeOffset| 組織作成時のタイムスタンプです。 値は変更できず、組織が作成されると自動的に設定されます。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 読み取り専用です。 |
-| displayName                          | String                                                            | テナントの表示名。                                                                                                                                                                                                                                                     |
-| id                                   | String                                                            | テナント ID。組織 (またはテナント) を表す一意の識別子です。 [directoryObject](directoryobject.md) から継承されました。 キー。 null 許容ではありません。 読み取り専用です。                                                                                                                                                            |
-|isMultipleDataLocationsForServicesEnabled|Boolean|組織の Multi-Geo が有効の場合 **true**、組織の Multi-Geo が有効ではない場合 **false**、**null** (既定)。 読み取り専用です。 詳細については、「[OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction)」を参照してください。|
-| marketingNotificationEmails          | String collection                                                 | null 許容ではありません。                                                                                                                                                                                                                                                                        |
-| onPremisesLastSyncDateTime               | DateTimeOffset                                                    | 前回テナントがオンプレミスのディレクトリと同期した日付と時刻。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 読み取り専用です。 |
-| onPremisesSyncEnabled                       | Boolean                                                           | このオブジェクトがオンプレミスのディレクトリから同期される場合は **true**。このオブジェクトが最初にオンプレミスのディレクトリから同期されていて、今後は同期されない場合は **false**。このオブジェクトがオンプレミスのディレクトリから一度も同期されたことがない場合は **null** (既定値)。                        |
-| postalCode                           | String                                                            | 組織の住所の郵便番号                                                                                                                                                                                                                                      |
-| preferredLanguage                    | String                                                            | 組織の優先言語。 ISO 639-1 コードに従う必要があります (例: "en")。                                                                                                                                                                                         |
-| privacyProfile                       | [privacyProfile](privacyprofile.md)                               | 組織のプライバシー プロファイル。                                                                                                                                                                                                                                              |
-| provisionedPlans                     | [ProvisionedPlan](provisionedplan.md) コレクション                  | null 許容ではありません。                                                                                                                                                                                                                                                                        |
-| securityComplianceNotificationMails  | String collection                                                 |                                                                                                                                                                                                                                                                                      |
-| securityComplianceNotificationPhones | String collection                                                 |                                                                                                                                                                                                                                                                                      |
-| state                                | String                                                            | 組織の住所の都道府県名                                                                                                                                                                                                                                       |
-| street                               | String                                                            | 組織の住所の番地                                                                                                                                                                                                                                          |
-| technicalNotificationMails           | String collection                                                 | null 許容ではありません。                                                                                                                                                                                                                                                                        |
-| verifiedDomains                      | [VerifiedDomain](verifieddomain.md) コレクション                    | このテナントに関連付けられているドメインのコレクション。null 許容ではありません。                                                                                                                                                                                                                 |
+| プロパティ | 型 | 説明 |
+|:-------- |:---- |:----------- |
+| assignedPlans | [assignedPlan](assignedplan.md) コレクション | テナントに関連付けられているサービス プランのコレクション。null 許容ではありません。 |
+| businessPhones | String コレクション | 組織の電話番号。 メモ: 文字列コレクションですが、このプロパティに設定できるのは 1 つの数字のみです。 |
+| city | String | 組織の住所の市区町村名。 |
+| country | String | 組織の住所の国/地域名。 |
+| countryLetterCode | String | 組織の国/地域の略称。 |
+| createdDateTime | DateTimeOffset | 組織作成時のタイムスタンプです。 値は変更できず、組織が作成されると自動的に設定されます。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 読み取り専用です。 |
+| deletedDateTime | DateTimeOffset | ISO 8601 形式を使用して Azure AD テナントが削除されたときの日時を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります: `'2014-01-01T00:00:00Z'`。 読み取り専用です。 |
+| createdDateTime | DateTimeOffset | 組織作成時のタイムスタンプです。 値は変更できず、組織が作成されると自動的に設定されます。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 読み取り専用です。 |
+| displayName | String | テナントの表示名。 |
+| id | String | テナント ID。組織 (またはテナント) を表す一意の識別子です。 [directoryObject](directoryobject.md) から継承されました。 キー。 null 許容ではありません。 読み取り専用です。 |
+| isMultipleDataLocationsForServicesEnabled | Boolean | 組織の Multi-Geo が有効の場合 **true**、組織の Multi-Geo が有効ではない場合 **false**、**null** (既定)。 読み取り専用です。 詳細については、「[OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction)」を参照してください。 |
+| marketingNotificationEmails | String collection | null 許容ではありません。 |
+| onPremisesLastSyncDateTime | DateTimeOffset | 前回テナントがオンプレミスのディレクトリと同期した日付と時刻。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 読み取り専用です。 |
+| onPremisesSyncEnabled | Boolean | このオブジェクトがオンプレミスのディレクトリから同期される場合は **true**。このオブジェクトが最初にオンプレミスのディレクトリから同期されていて、今後は同期されない場合は **false**。このオブジェクトがオンプレミスのディレクトリから一度も同期されたことがない場合は **null** (既定値)。 |
+| postalCode | String | 組織の住所の郵便番号。 |
+| preferredLanguage | String | 組織の優先言語。 ISO 639-1 コードに従う必要があります (例: "en")。 |
+| privacyProfile | [privacyProfile](privacyprofile.md) | 組織のプライバシー プロファイル。 |
+| provisionedPlans | [ProvisionedPlan](provisionedplan.md) コレクション | null 許容ではありません。 |
+| securityComplianceNotificationMails | String collection ||
+| securityComplianceNotificationPhones | String collection||
+| state | String | 組織の住所の都道府県名。 |
+| 街路 | String | 組織の住所の番地。 |
+| technicalNotificationMails | String collection | null 許容ではありません。 |
+| verifiedDomains | [VerifiedDomain](verifieddomain.md) コレクション | このテナントに関連付けられているドメインのコレクション。null 許容ではありません。 |
 
 ## <a name="relationships"></a>関係
 | リレーションシップ | 型   |説明|
