@@ -4,12 +4,12 @@ description: テナント組織のデバイスの構成を定義する Intune �
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 8c13ed037ffb07e8a3e357f3ab5633dc984e4803
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: b651acefa45cee6e4e89c6c391890dd263cc414a
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34965858"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35731575"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Microsoft Intune でのデバイス構成
 
@@ -214,6 +214,7 @@ Microsoft Intune のデバイス構成のワークロードを使用して、管
 - [暗号化レポート ポリシーの詳細](intune-deviceconfig-encryptionreportpolicydetails.md)
 - [暗号化の状態](intune-deviceconfig-encryptionstate.md)
 - [拡張キーの使用](intune-deviceconfig-extendedkeyusage.md)
+- [ファイルボルトの状態](intune-deviceconfig-filevaultstate.md)
 - [ファイアウォール証明書失効リスト確認方法の種類](intune-deviceconfig-firewallcertificaterevocationlistcheckmethodtype.md)
 - [ファイアウォール パケット キュー メソッドの種類](intune-deviceconfig-firewallpacketqueueingmethodtype.md)
 - [ファイアウォール事前共有キー エンコーディング方法の種類](intune-deviceconfig-firewallpresharedkeyencodingmethodtype.md)
@@ -316,6 +317,7 @@ Microsoft Intune のデバイス構成のワークロードを使用して、管
 - [macOS 信頼済みルート証明書](intune-deviceconfig-macostrustedrootcertificate.md)
 - [macOS VPN 構成](intune-deviceconfig-macosvpnconfiguration.md)
 - [macOS Wi-Fi 構成](intune-deviceconfig-macoswificonfiguration.md)
+- [管理されたすべてのデバイス証明書の状態](intune-deviceconfig-managedalldevicecertificatestate.md)
 - [管理対象デバイス証明書の状態](intune-deviceconfig-manageddevicecertificatestate.md)
 - [管理対象デバイスの暗号化の状態](intune-deviceconfig-manageddeviceencryptionstate.md)
 - [管理対象デバイスの報告されたアプリ](intune-deviceconfig-manageddevicereportedapp.md)
@@ -344,7 +346,10 @@ Microsoft Intune のデバイス構成のワークロードを使用して、管
 - [OMA 設定、整数](intune-deviceconfig-omasettinginteger.md)
 - [OMA 設定、文字列](intune-deviceconfig-omasettingstring.md)
 - [OMA 設定、xml 文字列](intune-deviceconfig-omasettingstringxml.md)
+- [オンプレミスの暗号化されたペイロード](intune-raimportcerts-onpremencryptedpayload.md)
 - [オペレーティング システムのバージョンの範囲](intune-deviceconfig-operatingsystemversionrange.md)
+- [Pfx recryption 要求](intune-raimportcerts-pfxrecryptionrequest.md)
+- [Pfx ユーザー証明書](intune-raimportcerts-pfxusercertificate.md)
 - [ポリシー プラットフォームの種類](intune-deviceconfig-policyplatformtype.md)
 - [プレリリース機能](intune-deviceconfig-prereleasefeatures.md)
 - [アプリの種類の評価](intune-deviceconfig-ratingappstype.md)
@@ -456,6 +461,7 @@ Microsoft Intune のデバイス構成のワークロードを使用して、管
 - [Windows アプリ スタート画面のタイル サイズ](intune-deviceconfig-windowsappstartlayouttilesize.md)
 - [Windows 証明書のプロファイル ベース](intune-deviceconfig-windowscertificateprofilebase.md)
 - [Windows Defender Advanced Threat Protection 構成](intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration.md)
+- [Windows defender 改ざん防止オプション](intune-deviceconfig-windowsdefendertamperprotectionoptions.md)
 - [Windows 配信最適化の構成](intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md)
 - [Windows 配信最適化モード](intune-deviceconfig-windowsdeliveryoptimizationmode.md)
 - [Windows ファイアウォール ネットワーク プロファイル](intune-deviceconfig-windowsfirewallnetworkprofile.md)
@@ -475,6 +481,7 @@ Microsoft Intune のデバイス構成のワークロードを使用して、管
 - [Windows のキオスクの Azure AD ユーザー](intune-deviceconfig-windowskioskazureaduser.md)
 - [Windows のキオスク構成](intune-deviceconfig-windowskioskconfiguration.md)
 - [Windows のキオスクのデスクトップ アプリ](intune-deviceconfig-windowskioskdesktopapp.md)
+- [Windows キオスク強制更新スケジュール](intune-deviceconfig-windowskioskforceupdateschedule.md)
 - [Windows のキオスクのローカル グループ](intune-deviceconfig-windowskiosklocalgroup.md)
 - [Windows のキオスクのローカル ユーザー](intune-deviceconfig-windowskiosklocaluser.md)
 - [Windows のキオスクの複数のアプリ](intune-deviceconfig-windowskioskmultipleapps.md)
@@ -506,10 +513,11 @@ Microsoft Intune のデバイス構成のワークロードを使用して、管
 - [Windows Update インストール スケジュールのタイプ](intune-deviceconfig-windowsupdateinstallscheduletype.md)
 - [Windows Update の通知の表示オプション](intune-deviceconfig-windowsupdatenotificationdisplayoption.md)
 - [Windows Update のスケジュール済みインストール](intune-deviceconfig-windowsupdatescheduledinstall.md)
+- [Windows update の状態](intune-deviceconfig-windowsupdatestate.md)
 - [Windows Update の状態](intune-deviceconfig-windowsupdatestatus.md)
 - [Windows Update の種類](intune-deviceconfig-windowsupdatetype.md)
 - [Windows ユーザー アカウント制御の設定](intune-deviceconfig-windowsuseraccountcontrolsettings.md)
 - [Windows VPN 構成](intune-deviceconfig-windowsvpnconfiguration.md)
 - [Windows VPN 接続の種類](intune-deviceconfig-windowsvpnconnectiontype.md)
 - [Windows Wi-Fi 構成](intune-deviceconfig-windowswificonfiguration.md)
-- [Windows Wi-fi エンタープライズ eap 構成](intune-deviceconfig-windowswifienterpriseeapconfiguration.md)
+- [Windows Wi-Fi Enterprise e a p 構成](intune-deviceconfig-windowswifienterpriseeapconfiguration.md)

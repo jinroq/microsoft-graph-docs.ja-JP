@@ -4,12 +4,12 @@ description: AndroidManagedStoreAppConfigurationSchema オブジェクトのプ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0c0c6b2856af44c4c964c0690958b4898e9500a2
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5cc7413fe6a5f526649aff327c9e0dd2371b1088
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33937331"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35705192"
 ---
 # <a name="get-androidmanagedstoreappconfigurationschema"></a>AndroidManagedStoreAppConfigurationSchema の取得
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/androidManagedStoreAppConf
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 923
+Content-Length: 1755
 
 {
   "value": {
@@ -75,6 +75,32 @@ Content-Length: 923
     "schemaItems": [
       {
         "@odata.type": "microsoft.graph.androidManagedStoreAppConfigurationSchemaItem",
+        "index": 5,
+        "parentIndex": 11,
+        "schemaItemKey": "Schema Item Key value",
+        "displayName": "Display Name value",
+        "description": "Description value",
+        "defaultBoolValue": true,
+        "defaultIntValue": 15,
+        "defaultStringValue": "Default String Value value",
+        "defaultStringArrayValue": [
+          "Default String Array Value value"
+        ],
+        "dataType": "integer",
+        "selections": [
+          {
+            "@odata.type": "microsoft.graph.keyValuePair",
+            "name": "Name value",
+            "value": "Value value"
+          }
+        ]
+      }
+    ],
+    "nestedSchemaItems": [
+      {
+        "@odata.type": "microsoft.graph.androidManagedStoreAppConfigurationSchemaItem",
+        "index": 5,
+        "parentIndex": 11,
         "schemaItemKey": "Schema Item Key value",
         "displayName": "Display Name value",
         "description": "Description value",
@@ -97,6 +123,7 @@ Content-Length: 923
   }
 }
 ```
+
 
 
 

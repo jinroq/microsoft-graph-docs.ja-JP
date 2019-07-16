@@ -1,19 +1,19 @@
 ---
-title: agedAccountsReceivable を取得する
+title: AgedAccountsReceivable を取得する
 description: Dynamics 365 Business Central の期限切れの売掛金勘定オブジェクトを取得します。
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.author: solsen
-ms.openlocfilehash: ccacb3626d982cc2cd08fe31ba443fadcdfaa315
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7270e50881b9e6358052fef4ae879bbb3dcfc5fe
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454224"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35712821"
 ---
-# <a name="get-agedaccountsreceivable"></a>agedAccountsReceivable を取得する
+# <a name="get-agedaccountsreceivable"></a>AgedAccountsReceivable を取得する
 Dynamics 365 Business Central の、古くなった売掛金勘定レポートオブジェクトのプロパティと関係を取得します。
 
 ## <a name="permissions"></a>アクセス許可

@@ -4,12 +4,12 @@ description: Android アプリケーションのカスタム構成を説明す�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 35d2b8a3c380be46865e208471af5467ca6a46f8
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: fbf66567ed8d2404ee8da1dd854c44d4faec23cc
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34987713"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35741207"
 ---
 # <a name="androidmanagedstoreappconfigurationschema-resource-type"></a>androidManagedStoreAppConfigurationSchema リソースの種類
 
@@ -33,7 +33,8 @@ Android アプリケーションのカスタム構成を説明するスキーマ
 |:---|:---|:---|
 |id|String|エンティティのキー。スキーマが対応するアプリケーションの Android パッケージ名です。|
 |exampleJson|Binary|このスキーマに準拠した JSON 文字列の例を含む、UTF8 でエンコードされたバイト配列。このアプリの構成の設定方法を示しています。|
-|schemaItems|[Androidmanagedstoreappconfigurationschemaitem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)コレクション|それぞれがスキーマ内の名前付き構成オプションを示すアイテムのコレクションです。|
+|schemaItems|[Androidmanagedstoreappconfigurationschemaitem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)コレクション|スキーマ内の名前付き構成オプションを表すアイテムのコレクションです。 ルートレベルの構成のみが含まれています。|
+|nestedSchemaItems|[Androidmanagedstoreappconfigurationschemaitem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)コレクション|スキーマ内の名前付き構成オプションを表すアイテムのコレクションです。 このファイルには、すべての構成のフラットなリストが含まれています。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -54,6 +55,32 @@ Android アプリケーションのカスタム構成を説明するスキーマ
   "schemaItems": [
     {
       "@odata.type": "microsoft.graph.androidManagedStoreAppConfigurationSchemaItem",
+      "index": 1024,
+      "parentIndex": 1024,
+      "schemaItemKey": "String",
+      "displayName": "String",
+      "description": "String",
+      "defaultBoolValue": true,
+      "defaultIntValue": 1024,
+      "defaultStringValue": "String",
+      "defaultStringArrayValue": [
+        "String"
+      ],
+      "dataType": "String",
+      "selections": [
+        {
+          "@odata.type": "microsoft.graph.keyValuePair",
+          "name": "String",
+          "value": "String"
+        }
+      ]
+    }
+  ],
+  "nestedSchemaItems": [
+    {
+      "@odata.type": "microsoft.graph.androidManagedStoreAppConfigurationSchemaItem",
+      "index": 1024,
+      "parentIndex": 1024,
       "schemaItemKey": "String",
       "displayName": "String",
       "description": "String",

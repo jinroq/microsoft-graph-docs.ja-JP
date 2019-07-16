@@ -4,12 +4,12 @@ description: windows10SecureAssessmentConfiguration オブジェクトのプロ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bf9d4392e04952eb040ca856cce3c2375c3ebc86
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 25fdcbb6ccf3be8b6ed3a647024c54a859a10019
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34962387"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35715222"
 ---
 # <a name="update-windows10secureassessmentconfiguration"></a>windows10SecureAssessmentConfiguration の更新
 
@@ -65,10 +65,12 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |launchUri|String|安全評価ブラウザーを起動すると自動的に読み込まれる評価への URL リンク。 有効な URL である必要があります (http\[s\]://msdn.microsoft.com/)。|
 |configurationAccount|String|テストを受けるために Windows デバイスを構成する際に使用するアカウント。 ユーザーは、ドメイン アカウント (domain\user)、AAD アカウント (username@tenant.com) またはローカル アカウント (username) のいずれかです。|
-|configurationAccountType|[secureAssessmentAccountType](../resources/intune-deviceconfig-secureassessmentaccounttype.md)|ConfigurationAccount によって使用されるアカウントの種類。 可能な値は、`azureADAccount`、`domainAccount`、`localAccount` です。|
+|configurationAccountType|[secureAssessmentAccountType](../resources/intune-deviceconfig-secureassessmentaccounttype.md)|ConfigurationAccount によって使用されるアカウントの種類。 使用可能な値は、`azureADAccount`、`domainAccount`、`localAccount`、`localGuestAccount` です。|
 |allowPrinting|Boolean|テスト中にアプリが印刷することを許可するかどうかを示します。|
 |allowScreenCapture|Boolean|テスト中に画面の取り込み機能を許可するかどうかを示します。|
 |allowTextSuggestion|Boolean|テスト中に入力ヒントを許可するかどうかを示します。|
+|localGuestAccountName|String|サインイン画面に表示されるローカルゲストアカウントの表示テキストを指定します。 通常は評価の名前です。 ユーザーがサインイン画面でローカルのゲストアカウントをクリックすると、評価アプリが指定された評価 URL で起動されます。 セキュリティで保護された評価は、Windows 10、バージョン1903以降を実行しているデバイスでローカルのゲストアカウントのサインインを使用してのみ構成できます。 重要な注意事項: このプロパティは、セキュリティで保護された評価のためにローカルのゲストアカウントのサインイン操作を正しく動作させるために、assessmentAppUserModelID で設定する必要があります。|
+|assessmentAppUserModelId|String|ユーザーがローカルゲストアカウントでセキュリティで保護された評価にサインインしたときに起動される評価アプリのアプリケーションユーザーモデル ID を指定します。 重要な注意事項: セキュリティで保護された評価を行うために、ローカルゲストアカウントのサインイン操作を正しく動作させるには、このプロパティを localGuestAccountName で設定する必要があります。|
 
 
 
@@ -82,7 +84,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1272
+Content-length: 1403
 
 {
   "@odata.type": "#microsoft.graph.windows10SecureAssessmentConfiguration",
@@ -119,7 +121,9 @@ Content-length: 1272
   "configurationAccountType": "domainAccount",
   "allowPrinting": true,
   "allowScreenCapture": true,
-  "allowTextSuggestion": true
+  "allowTextSuggestion": true,
+  "localGuestAccountName": "Local Guest Account Name value",
+  "assessmentAppUserModelId": "Assessment App User Model Id value"
 }
 ```
 
@@ -128,7 +132,7 @@ Content-length: 1272
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1444
+Content-Length: 1575
 
 {
   "@odata.type": "#microsoft.graph.windows10SecureAssessmentConfiguration",
@@ -168,7 +172,9 @@ Content-Length: 1444
   "configurationAccountType": "domainAccount",
   "allowPrinting": true,
   "allowScreenCapture": true,
-  "allowTextSuggestion": true
+  "allowTextSuggestion": true,
+  "localGuestAccountName": "Local Guest Account Name value",
+  "assessmentAppUserModelId": "Assessment App User Model Id value"
 }
 ```
 
