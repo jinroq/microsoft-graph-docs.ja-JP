@@ -4,12 +4,12 @@ description: 役割のスコープタグ
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 54aa59e99a9697924512da0072e7b4e05e4fa12a
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 1a1a426265caaf2f05beb5678d49b9ae960d31c3
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34993537"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35739268"
 ---
 # <a name="rolescopetag-resource-type"></a>ロール Copetag リソースの種類
 
@@ -28,6 +28,8 @@ ms.locfileid: "34993537"
 |[ロール Copetag の削除](../api/intune-rbac-rolescopetag-delete.md)|None|[ロール Copetag](../resources/intune-rbac-rolescopetag.md)を削除します。|
 |[ロール Copetag の更新](../api/intune-rbac-rolescopetag-update.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)|[ロール Copetag](../resources/intune-rbac-rolescopetag.md)オブジェクトのプロパティを更新します。|
 |[assign アクション](../api/intune-rbac-rolescopetag-assign.md)|[ロール Copetagautoassignment](../resources/intune-rbac-rolescopetagautoassignment.md)コレクション|まだ文書化されていません|
+|[getRoleScopeTagsById アクション](../api/intune-rbac-rolescopetag-getrolescopetagsbyid.md)|[ロール Copetag](../resources/intune-rbac-rolescopetag.md)コレクション|まだ文書化されていません|
+|[Hascustomロール Copetag 関数](../api/intune-rbac-rolescopetag-hascustomrolescopetag.md)|ブール型 (Boolean)|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|

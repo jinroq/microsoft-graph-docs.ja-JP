@@ -4,12 +4,12 @@ description: ユーザー PFX 証明書の目的のためにサポートされ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 66a9509eebffb8434ca629e0c3336d7078d9afff
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 1790b1d1835d19cacb7e3b32262ce06be4daa378
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34993691"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35739282"
 ---
 # <a name="userpfxintendedpurpose-enum-type"></a>userPfxIntendedPurpose 列挙型
 
@@ -22,11 +22,11 @@ ms.locfileid: "34993691"
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|未定義|.0|まだ文書化されていません|
-|smimeEncryption|1-d|まだ文書化されていません|
-|smimeSigning|pbm-2|まだ文書化されていません|
-|仮想|2/4|まだ文書化されていません|
-|wi-fi|8 |まだ文書化されていません|
+|未定義|.0|役割/使用状況は割り当てられていません。|
+|smimeEncryption|1-d|S/MIME 暗号化に対して有効です。|
+|smimeSigning|pbm-2|S/MIME 署名に対して有効です。|
+|仮想|2/4|VPN で使用する場合に有効です。|
+|wi-fi|8 |WiFi で使用するのに有効です。|
 
 
 

@@ -4,12 +4,12 @@ description: ManagedDeviceEncryptionState オブジェクトのプロパティ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2f36c3ce4b584eea67ac345c70c2b1635f810ec8
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2c371c5663632af94dfade0b72b4a6d443aa1758
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33922621"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35715306"
 ---
 # <a name="update-manageddeviceencryptionstate"></a>ManagedDeviceEncryptionState の更新
 
@@ -60,6 +60,7 @@ PATCH /deviceManagement/managedDeviceEncryptionStates/{managedDeviceEncryptionSt
 |encryptionState|[encryptionState](../resources/intune-deviceconfig-encryptionstate.md)|デバイスの暗号化の状態。 可能な値は、`notEncrypted`、`encrypted` です。|
 |encryptionPolicySettingState|[complianceStatus](../resources/intune-shared-compliancestatus.md)|暗号化ポリシーの設定状態。 可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。|
 |Advanced Bitlockerstates|[advancedBitLockerState](../resources/intune-deviceconfig-advancedbitlockerstate.md)|高度な BitLocker 状態。 可能な値は`success`、 `noUserConsent`、 `osVolumeEncryptionMethodMismatch` `osVolumeTpmRequired` `osVolumeTpmOnlyRequired` `osVolumeTpmPinRequired` `osVolumeTpmStartupKeyRequired` `osVolumeTpmPinStartupKeyRequired` `osVolumeUnprotected` `networkError`、、 `fixedDriveNotEncrypted`、、、、、、、、です。 `recoveryKeyBackupFailed` `fixedDriveEncryptionMethodMismatch` `loggedOnUserNonAdmin` `windowsRecoveryEnvironmentNotConfigured` `tpmNotAvailable` `tpmNotReady`|
+|fileVaultStates|[fileVaultState](../resources/intune-deviceconfig-filevaultstate.md)|FileVault の状態です。 使用可能な値は、`success`、`driveEncryptedByUser`、`userDeferredEncryption`、`escrowNotEnabled` です。|
 |policyDetails|[Encryptionreportpolicydetails](../resources/intune-deviceconfig-encryptionreportpolicydetails.md)コレクション|ポリシーの詳細|
 
 
@@ -74,7 +75,7 @@ PATCH /deviceManagement/managedDeviceEncryptionStates/{managedDeviceEncryptionSt
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/managedDeviceEncryptionStates/{managedDeviceEncryptionStateId}
 Content-type: application/json
-Content-length: 658
+Content-length: 704
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceEncryptionState",
@@ -87,6 +88,7 @@ Content-length: 658
   "encryptionState": "encrypted",
   "encryptionPolicySettingState": "notApplicable",
   "advancedBitLockerStates": "noUserConsent",
+  "fileVaultStates": "driveEncryptedByUser",
   "policyDetails": [
     {
       "@odata.type": "microsoft.graph.encryptionReportPolicyDetails",
@@ -102,7 +104,7 @@ Content-length: 658
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 707
+Content-Length: 753
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceEncryptionState",
@@ -116,6 +118,7 @@ Content-Length: 707
   "encryptionState": "encrypted",
   "encryptionPolicySettingState": "notApplicable",
   "advancedBitLockerStates": "noUserConsent",
+  "fileVaultStates": "driveEncryptedByUser",
   "policyDetails": [
     {
       "@odata.type": "microsoft.graph.encryptionReportPolicyDetails",
@@ -125,6 +128,7 @@ Content-Length: 707
   ]
 }
 ```
+
 
 
 

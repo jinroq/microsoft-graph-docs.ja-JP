@@ -4,12 +4,12 @@ description: このプロファイルに構成を提供することで、iOS デ
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 26c189e14850562c39c5fa00737e33ba38c82049
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 69267d6d100f54569450a0469952c5bfe4b788f9
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "35002687"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35737504"
 ---
 # <a name="iosikev2vpnconfiguration-resource-type"></a>iosikEv2VpnConfiguration リソースの種類
 
@@ -75,7 +75,7 @@ ms.locfileid: "35002687"
 |enableEAP|Boolean|EAP のみの認証を有効にします|
 |enablePerfectForwardSecrecy|Boolean|完全な転送機密性 (PFS) を有効にします。|
 |Enableuseinternalサブネット属性|Boolean|内部サブネット属性の使用を有効にします。|
-|localIdentifier|[vpnLocalIdentifier](../resources/intune-deviceconfig-vpnlocalidentifier.md)|VPN 経由で接続しようとしているクライアントを識別する方法。 . 可能な値は`deviceFQDN`次のとおりです。|
+|localIdentifier|[vpnLocalIdentifier](../resources/intune-deviceconfig-vpnlocalidentifier.md)|VPN 経由で接続しようとしているクライアントを識別する方法。 . 可能な値は、`deviceFQDN`、`empty`、`clientCertificateSubjectName` です。|
 |remoteIdentifier|String|IKEv2 サーバーのアドレス。 FQDN、UserFQDN、ネットワークアドレス、または ASN1DN である必要があります。|
 |securityAssociationParameters|[iosVpnSecurityAssociationParameters](../resources/intune-deviceconfig-iosvpnsecurityassociationparameters.md)|セキュリティアソシエーションパラメーター|
 |Server指定 Ecommonname|String|サーバー認証で使用される IKEv2 サーバー証明書の共通名|

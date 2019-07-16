@@ -4,12 +4,12 @@ description: 新しい windowsDeliveryOptimizationConfiguration オブジェク�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7b504d7a403aec15fad14ae370bf4d76fb7bf7f6
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: e3fca045031823e8e8ea383c1018fa72240c0cc0
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34977619"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35715446"
 ---
 # <a name="create-windowsdeliveryoptimizationconfiguration"></a>WindowsDeliveryOptimizationConfiguration を作成する
 
@@ -82,6 +82,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |maximumCacheAgeInDays|Int32|正常にダウンロードされた後に、各ファイルが配信最適化キャッシュに保持される最大時間 (0-3650) を指定します。 有効な値は 0 ~ 3650|
 |maximumCacheSize|[deliveryOptimizationMaxCacheSize](../resources/intune-deviceconfig-deliveryoptimizationmaxcachesize.md)|配信最適化の最大キャッシュサイズをパーセンテージまたは GB で指定します。|
 |vpnPeerCaching キャッシュ|[購入](../resources/intune-shared-enablement.md)|ドメインネットワークに VPN 経由で接続している間、デバイスがピアキャッシュへの参加を許可するかどうかを指定します。 可能な値は、`notConfigured`、`enabled`、`disabled` です。|
+|cacheServerHostNames 名|文字列コレクション|キャッシュサーバーのホスト名を指定します。|
+|cacheServerForegroundDownloadFallbackToHttpDelayInSeconds|Int32|フォアグラウンドダウンロードのためにキャッシュサーバーから HTTP ソースへのフォールバックを遅延させる秒数を指定します。 有効な値は0から2592000です。|
+|cacheServerBackgroundDownloadFallbackToHttpDelayInSeconds|Int32|バックグラウンドをダウンロードするためにキャッシュサーバーから HTTP ソースへのフォールバックを遅延させる秒数を指定します。 有効な値は0から2592000です。|
 
 
 
@@ -95,7 +98,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1833
+Content-length: 2039
 
 {
   "@odata.type": "#microsoft.graph.windowsDeliveryOptimizationConfiguration",
@@ -146,7 +149,12 @@ Content-length: 1833
   "maximumCacheSize": {
     "@odata.type": "microsoft.graph.deliveryOptimizationMaxCacheSize"
   },
-  "vpnPeerCaching": "enabled"
+  "vpnPeerCaching": "enabled",
+  "cacheServerHostNames": [
+    "Cache Server Host Names value"
+  ],
+  "cacheServerForegroundDownloadFallbackToHttpDelayInSeconds": 9,
+  "cacheServerBackgroundDownloadFallbackToHttpDelayInSeconds": 9
 }
 ```
 
@@ -155,7 +163,7 @@ Content-length: 1833
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2005
+Content-Length: 2211
 
 {
   "@odata.type": "#microsoft.graph.windowsDeliveryOptimizationConfiguration",
@@ -209,7 +217,12 @@ Content-Length: 2005
   "maximumCacheSize": {
     "@odata.type": "microsoft.graph.deliveryOptimizationMaxCacheSize"
   },
-  "vpnPeerCaching": "enabled"
+  "vpnPeerCaching": "enabled",
+  "cacheServerHostNames": [
+    "Cache Server Host Names value"
+  ],
+  "cacheServerForegroundDownloadFallbackToHttpDelayInSeconds": 9,
+  "cacheServerBackgroundDownloadFallbackToHttpDelayInSeconds": 9
 }
 ```
 

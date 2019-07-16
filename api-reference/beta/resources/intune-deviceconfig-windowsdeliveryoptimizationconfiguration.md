@@ -4,12 +4,12 @@ description: Windows 配信の最適化の構成
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7c1b4006a9e18bb617c243183e98ff21280410e7
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: c34a8d1a87be09e66c09909486bb8b4ccd8fb2c7
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34994147"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35737658"
 ---
 # <a name="windowsdeliveryoptimizationconfiguration-resource-type"></a>windowsDeliveryOptimizationConfiguration リソースの種類
 
@@ -65,6 +65,9 @@ Windows 配信の最適化の構成
 |maximumCacheAgeInDays|Int32|正常にダウンロードされた後に、各ファイルが配信最適化キャッシュに保持される最大時間 (0-3650) を指定します。 有効な値は 0 ~ 3650|
 |maximumCacheSize|[deliveryOptimizationMaxCacheSize](../resources/intune-deviceconfig-deliveryoptimizationmaxcachesize.md)|配信最適化の最大キャッシュサイズをパーセンテージまたは GB で指定します。|
 |vpnPeerCaching キャッシュ|[購入](../resources/intune-shared-enablement.md)|ドメインネットワークに VPN 経由で接続している間、デバイスがピアキャッシュへの参加を許可するかどうかを指定します。 可能な値は、`notConfigured`、`enabled`、`disabled` です。|
+|cacheServerHostNames 名|文字列コレクション|キャッシュサーバーのホスト名を指定します。|
+|cacheServerForegroundDownloadFallbackToHttpDelayInSeconds|Int32|フォアグラウンドダウンロードのためにキャッシュサーバーから HTTP ソースへのフォールバックを遅延させる秒数を指定します。 有効な値は0から2592000です。|
+|cacheServerBackgroundDownloadFallbackToHttpDelayInSeconds|Int32|バックグラウンドをダウンロードするためにキャッシュサーバーから HTTP ソースへのフォールバックを遅延させる秒数を指定します。 有効な値は0から2592000です。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
@@ -138,7 +141,12 @@ Windows 配信の最適化の構成
   "maximumCacheSize": {
     "@odata.type": "microsoft.graph.deliveryOptimizationMaxCacheSize"
   },
-  "vpnPeerCaching": "String"
+  "vpnPeerCaching": "String",
+  "cacheServerHostNames": [
+    "String"
+  ],
+  "cacheServerForegroundDownloadFallbackToHttpDelayInSeconds": 1024,
+  "cacheServerBackgroundDownloadFallbackToHttpDelayInSeconds": 1024
 }
 ```
 
