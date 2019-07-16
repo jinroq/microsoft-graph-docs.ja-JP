@@ -4,12 +4,12 @@ description: VPN ローカル識別子の種類
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 347ed83a57c2dc893c7d4a771cb16918b6e59c97
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 62dcdce3cfb4d5466d8c50a44ac5ee3ec825310a
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "35002645"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35730637"
 ---
 # <a name="vpnlocalidentifier-enum-type"></a>vpnLocalIdentifier 列挙型
 
@@ -23,6 +23,8 @@ VPN ローカル識別子の種類
 |メンバー|値|説明|
 |:---|:---|:---|
 |deviceFQDN|.0|デバイスの完全修飾ドメイン名|
+|empty|1-d|Empty|
+|clientCertificateSubjectName|pbm-2|クライアント証明書のサブジェクト名|
 
 
 

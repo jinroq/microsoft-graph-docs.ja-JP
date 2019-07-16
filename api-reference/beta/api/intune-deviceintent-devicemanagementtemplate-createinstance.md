@@ -4,12 +4,12 @@ description: まだ文書化されていません
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: babd7aa6a9f0fe5d62e0d62bb8c9657d81e3cc0e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 421b4bb400137f7704ca40737ff422649b66f8b6
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33916001"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35730007"
 ---
 # <a name="createinstance-action"></a>createInstance アクション
 
@@ -54,6 +54,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{devi
 |displayName|String|まだ文書化されていません|
 |description|String|まだ文書化されていません|
 |settingsDelta|[Devicemanagementsettinginstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)コレクション|まだ文書化されていません|
+|roleScopeTagIds|String コレクション|まだ文書化されていません|
 
 
 
@@ -68,7 +69,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{devi
 POST https://graph.microsoft.com/beta/deviceManagement/templates/{deviceManagementTemplateId}/createInstance
 
 Content-type: application/json
-Content-length: 336
+Content-length: 398
 
 {
   "displayName": "Display Name value",
@@ -80,6 +81,9 @@ Content-length: 336
       "definitionId": "Definition Id value",
       "valueJson": "Value Json value"
     }
+  ],
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
   ]
 }
 ```
@@ -89,7 +93,7 @@ Content-length: 336
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 350
+Content-Length: 418
 
 {
   "value": {
@@ -99,10 +103,14 @@ Content-Length: 350
     "description": "Description value",
     "isAssigned": true,
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-    "templateId": "Template Id value"
+    "templateId": "Template Id value",
+    "roleScopeTagIds": [
+      "Role Scope Tag Ids value"
+    ]
   }
 }
 ```
+
 
 
 

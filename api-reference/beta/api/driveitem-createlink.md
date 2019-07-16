@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: ファイルをリンクで共有する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 58e0fc5e76904e133b5e9a31e2b32d8ecf87b91c
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 249b67852d4b796be465c79cadde9b07d97f695a
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35436467"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35713179"
 ---
 # <a name="create-a-sharing-link-for-a-driveitem"></a>DriveItem の共有リンクを作成する
 
@@ -49,10 +49,12 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 要求本文はアプリケーションが要求する共有リンクのプロパティを定義します。
 要求は、次のプロパティを含む JSON オブジェクトである必要があります。
 
-|   名前    |  種類  |                                 説明                                  |
-| :-------- | :----- | :--------------------------------------------------------------------------- |
-| **type**  | string | 作成する共有リンクの種類。`view`、`edit`、または `embed` です。       |
-| **scope** | string | 省略可能。 作成するリンクのスコープ。 `anonymous` または `organization` のどちらかです。 |
+|   プロパティ                 |  型  |                                 説明                                                               |
+| :----------------------| :----- | :---------------------------------------------------------------------------------------------------------|
+|type               | string | 作成する共有リンクの種類。 表示、編集、または埋め込みのいずれかです。                                    |
+|password           | string | 作成者によって設定された共有リンクのパスワード。 省略可能および OneDrive 個人用のみ。         |
+|expirationDateTime | string | Yyyy-mm-ddthh: mm: ssZ DateTime の形式の文字列は、アクセス許可の有効期限を示します。 |
+|scope              | string | 省略可能。 作成するリンクのスコープ。 匿名または組織のどちらかです。                              |
 
 
 ### <a name="link-types"></a>リンクの種類
@@ -61,19 +63,20 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 
 | 種類の値 | 説明                                                                                  |
 |:-----------|:---------------------------------------------------------------------------------------------|
-| `view`     | その DriveItem への読み取り専用リンクを作成します。                                                        |
-| `edit`     | その DriveItem への読み取り/書き込みリンクを作成します。                                                       |
-| `embed`    | その DriveItem への埋め込み可能なリンクを作成します。 このオプションは OneDrive 個人用のファイルでのみ選択可能です。 |
+| ビュー     | その DriveItem への読み取り専用リンクを作成します。                                                        |
+| edit     | その DriveItem への読み取り/書き込みリンクを作成します。                                                       |
+| 埋め込み    | その DriveItem への埋め込み可能なリンクを作成します。 このオプションは OneDrive 個人用のファイルでのみ選択可能です。 |
 
 ### <a name="scope-types"></a>スコープの種類
 
 **scope** パラメーターには次の値を使用できます。
 **scope** パラメーターが指定されていない場合、組織の既定のリンクの種類が作成されます。
 
-| 種類の値     | 説明                                                                                                                   |
-|:---------------|:------------------------------------------------------------------------------------------------------------------------------|
-| `anonymous`    | DriveItem への、すべてのユーザーがアクセス可能なリンクを作成します。 匿名リンクは管理者により無効にされることがあります。                 |
-| `organization` | DriveItem への、ユーザーの組織内のだれでもアクセス可能なリンクを作成します。 組織のリンク スコープは、OneDrive 個人用では使用できません。 |
+| 値          | 説明
+|:---------------|:------------------------------------------------------------
+| 匿名    | リンクを持つすべてのユーザーが、サインインを必要とせずにアクセスできます。 これには、組織外のユーザーが含まれることがあります。 匿名リンクのサポートは、管理者によって無効にされている場合があります。
+| 組織 | 組織 (テナント) にサインインしているユーザーは、リンクを使用してアクセス権を取得することができます。 OneDrive for business と SharePoint でのみ使用できます。
+
 
 ## <a name="response"></a>応答
 
@@ -101,6 +104,7 @@ Content-type: application/json
 
 {
   "type": "view",
+  "password": "ThisIsMyPrivatePassword",
   "scope": "anonymous"
 }
 ```
@@ -138,7 +142,8 @@ Content-Type: application/json
       "id": "1234",
       "displayName": "Sample Application"
     },
-  }
+  },
+  "hasPassword": true
 }
 ```
 

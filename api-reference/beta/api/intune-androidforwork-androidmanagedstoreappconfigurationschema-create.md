@@ -4,12 +4,12 @@ description: 新しい androidManagedStoreAppConfigurationSchema オブジェク
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8a5004d4131b9ec127a6a70765cfb49a7c6ab51b
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: f1eccfe840161e891102710be77c95364c94b9ac
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34965460"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35705199"
 ---
 # <a name="create-androidmanagedstoreappconfigurationschema"></a>AndroidManagedStoreAppConfigurationSchema の作成
 
@@ -52,7 +52,8 @@ POST /deviceManagement/androidManagedStoreAppConfigurationSchemas
 |:---|:---|:---|
 |id|String|エンティティのキー。スキーマが対応するアプリケーションの Android パッケージ名です。|
 |exampleJson|Binary|このスキーマに準拠した JSON 文字列の例を含む、UTF8 でエンコードされたバイト配列。このアプリの構成の設定方法を示しています。|
-|schemaItems|[Androidmanagedstoreappconfigurationschemaitem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)コレクション|それぞれがスキーマ内の名前付き構成オプションを示すアイテムのコレクションです。|
+|schemaItems|[Androidmanagedstoreappconfigurationschemaitem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)コレクション|スキーマ内の名前付き構成オプションを表すアイテムのコレクションです。 ルートレベルの構成のみが含まれています。|
+|nestedSchemaItems|[Androidmanagedstoreappconfigurationschemaitem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)コレクション|スキーマ内の名前付き構成オプションを表すアイテムのコレクションです。 このファイルには、すべての構成のフラットなリストが含まれています。|
 
 
 
@@ -66,7 +67,7 @@ POST /deviceManagement/androidManagedStoreAppConfigurationSchemas
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/androidManagedStoreAppConfigurationSchemas
 Content-type: application/json
-Content-length: 805
+Content-length: 1585
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreAppConfigurationSchema",
@@ -74,6 +75,32 @@ Content-length: 805
   "schemaItems": [
     {
       "@odata.type": "microsoft.graph.androidManagedStoreAppConfigurationSchemaItem",
+      "index": 5,
+      "parentIndex": 11,
+      "schemaItemKey": "Schema Item Key value",
+      "displayName": "Display Name value",
+      "description": "Description value",
+      "defaultBoolValue": true,
+      "defaultIntValue": 15,
+      "defaultStringValue": "Default String Value value",
+      "defaultStringArrayValue": [
+        "Default String Array Value value"
+      ],
+      "dataType": "integer",
+      "selections": [
+        {
+          "@odata.type": "microsoft.graph.keyValuePair",
+          "name": "Name value",
+          "value": "Value value"
+        }
+      ]
+    }
+  ],
+  "nestedSchemaItems": [
+    {
+      "@odata.type": "microsoft.graph.androidManagedStoreAppConfigurationSchemaItem",
+      "index": 5,
+      "parentIndex": 11,
       "schemaItemKey": "Schema Item Key value",
       "displayName": "Display Name value",
       "description": "Description value",
@@ -101,7 +128,7 @@ Content-length: 805
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 854
+Content-Length: 1634
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreAppConfigurationSchema",
@@ -110,6 +137,32 @@ Content-Length: 854
   "schemaItems": [
     {
       "@odata.type": "microsoft.graph.androidManagedStoreAppConfigurationSchemaItem",
+      "index": 5,
+      "parentIndex": 11,
+      "schemaItemKey": "Schema Item Key value",
+      "displayName": "Display Name value",
+      "description": "Description value",
+      "defaultBoolValue": true,
+      "defaultIntValue": 15,
+      "defaultStringValue": "Default String Value value",
+      "defaultStringArrayValue": [
+        "Default String Array Value value"
+      ],
+      "dataType": "integer",
+      "selections": [
+        {
+          "@odata.type": "microsoft.graph.keyValuePair",
+          "name": "Name value",
+          "value": "Value value"
+        }
+      ]
+    }
+  ],
+  "nestedSchemaItems": [
+    {
+      "@odata.type": "microsoft.graph.androidManagedStoreAppConfigurationSchemaItem",
+      "index": 5,
+      "parentIndex": 11,
       "schemaItemKey": "Schema Item Key value",
       "displayName": "Display Name value",
       "description": "Description value",

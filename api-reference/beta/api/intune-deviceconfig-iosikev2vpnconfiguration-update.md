@@ -4,12 +4,12 @@ description: IosikEv2VpnConfiguration オブジェクトのプロパティを更
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 647b5ae72fe33458a68f9098bc32ab8df82841fc
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: dd02a78889306ab7c79df0ad7b890a502c44ce51
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "35001707"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35715376"
 ---
 # <a name="update-iosikev2vpnconfiguration"></a>IosikEv2VpnConfiguration の更新
 
@@ -93,7 +93,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |enableEAP|Boolean|EAP のみの認証を有効にします|
 |enablePerfectForwardSecrecy|Boolean|完全な転送機密性 (PFS) を有効にします。|
 |Enableuseinternalサブネット属性|Boolean|内部サブネット属性の使用を有効にします。|
-|localIdentifier|[vpnLocalIdentifier](../resources/intune-deviceconfig-vpnlocalidentifier.md)|VPN 経由で接続しようとしているクライアントを識別する方法。 . 可能な値は`deviceFQDN`次のとおりです。|
+|localIdentifier|[vpnLocalIdentifier](../resources/intune-deviceconfig-vpnlocalidentifier.md)|VPN 経由で接続しようとしているクライアントを識別する方法。 . 可能な値は、`deviceFQDN`、`empty`、`clientCertificateSubjectName` です。|
 |remoteIdentifier|String|IKEv2 サーバーのアドレス。 FQDN、UserFQDN、ネットワークアドレス、または ASN1DN である必要があります。|
 |securityAssociationParameters|[iosVpnSecurityAssociationParameters](../resources/intune-deviceconfig-iosvpnsecurityassociationparameters.md)|セキュリティアソシエーションパラメーター|
 |Server指定 Ecommonname|String|サーバー認証で使用される IKEv2 サーバー証明書の共通名|
@@ -117,7 +117,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 4237
+Content-length: 4232
 
 {
   "@odata.type": "#microsoft.graph.iosikEv2VpnConfiguration",
@@ -228,7 +228,7 @@ Content-length: 4237
   "enableEAP": true,
   "enablePerfectForwardSecrecy": true,
   "enableUseInternalSubnetAttributes": true,
-  "localIdentifier": "deviceFQDN",
+  "localIdentifier": "empty",
   "remoteIdentifier": "Remote Identifier value",
   "securityAssociationParameters": {
     "@odata.type": "microsoft.graph.iosVpnSecurityAssociationParameters",
@@ -253,7 +253,7 @@ Content-length: 4237
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4409
+Content-Length: 4404
 
 {
   "@odata.type": "#microsoft.graph.iosikEv2VpnConfiguration",
@@ -367,7 +367,7 @@ Content-Length: 4409
   "enableEAP": true,
   "enablePerfectForwardSecrecy": true,
   "enableUseInternalSubnetAttributes": true,
-  "localIdentifier": "deviceFQDN",
+  "localIdentifier": "empty",
   "remoteIdentifier": "Remote Identifier value",
   "securityAssociationParameters": {
     "@odata.type": "microsoft.graph.iosVpnSecurityAssociationParameters",

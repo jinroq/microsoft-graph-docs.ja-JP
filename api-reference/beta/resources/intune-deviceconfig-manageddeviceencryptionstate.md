@@ -4,12 +4,12 @@ description: デバイスごとの暗号化レポート
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d844183854a7d7f4f86574999d28d737712efbdb
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 1c2c86a843c4573d4c00ae4650d857c3f01ec08d
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34992032"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35737497"
 ---
 # <a name="manageddeviceencryptionstate-resource-type"></a>managedDeviceEncryptionState リソースの種類
 
@@ -41,6 +41,7 @@ ms.locfileid: "34992032"
 |encryptionState|[encryptionState](../resources/intune-deviceconfig-encryptionstate.md)|デバイスの暗号化の状態。 可能な値は、`notEncrypted`、`encrypted` です。|
 |encryptionPolicySettingState|[complianceStatus](../resources/intune-shared-compliancestatus.md)|暗号化ポリシーの設定状態。 可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。|
 |Advanced Bitlockerstates|[advancedBitLockerState](../resources/intune-deviceconfig-advancedbitlockerstate.md)|高度な BitLocker 状態。 可能な値は`success`、 `noUserConsent`、 `osVolumeEncryptionMethodMismatch` `osVolumeTpmRequired` `osVolumeTpmOnlyRequired` `osVolumeTpmPinRequired` `osVolumeTpmStartupKeyRequired` `osVolumeTpmPinStartupKeyRequired` `osVolumeUnprotected` `networkError`、、 `fixedDriveNotEncrypted`、、、、、、、、です。 `recoveryKeyBackupFailed` `fixedDriveEncryptionMethodMismatch` `loggedOnUserNonAdmin` `windowsRecoveryEnvironmentNotConfigured` `tpmNotAvailable` `tpmNotReady`|
+|fileVaultStates|[fileVaultState](../resources/intune-deviceconfig-filevaultstate.md)|FileVault の状態です。 使用可能な値は、`success`、`driveEncryptedByUser`、`userDeferredEncryption`、`escrowNotEnabled` です。|
 |policyDetails|[Encryptionreportpolicydetails](../resources/intune-deviceconfig-encryptionreportpolicydetails.md)コレクション|ポリシーの詳細|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -67,6 +68,7 @@ ms.locfileid: "34992032"
   "encryptionState": "String",
   "encryptionPolicySettingState": "String",
   "advancedBitLockerStates": "String",
+  "fileVaultStates": "String",
   "policyDetails": [
     {
       "@odata.type": "microsoft.graph.encryptionReportPolicyDetails",

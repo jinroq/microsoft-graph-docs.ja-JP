@@ -4,12 +4,12 @@ description: インポートした Windows Autopilot デバイス。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c5a5058f3930acb8cc1af4acf59254b4fd5ab67c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 0e22a68bb9805417af9c81b8e1c79b7c49813358
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34992571"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35734452"
 ---
 # <a name="importedwindowsautopilotdeviceidentity-resource-type"></a>importedWindowsAutopilotDeviceIdentity リソースの種類
 
@@ -33,7 +33,8 @@ ms.locfileid: "34992571"
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|オブジェクトの GUID|
-|orderIdentifier|String|Windows オートパイロット デバイスの受注 ID。|
+|orderIdentifier|String|Windows オートパイロット デバイスの受注 ID。 -廃止|
+|groupTag|String|Windows 自動操縦デバイスのグループタグ。|
 |シリアル番号|String|Windows オートパイロット デバイスのシリアル番号。|
 |productKey|String|Windows オートパイロット デバイスのプロダクト キー。|
 |のようにします。|String|Windows 自動操縦デバイスのインポート Id。|
@@ -57,6 +58,7 @@ ms.locfileid: "34992571"
   "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentity",
   "id": "String (identifier)",
   "orderIdentifier": "String",
+  "groupTag": "String",
   "serialNumber": "String",
   "productKey": "String",
   "importId": "String",

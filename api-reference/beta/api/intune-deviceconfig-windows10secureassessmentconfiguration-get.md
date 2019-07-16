@@ -4,12 +4,12 @@ description: windows10SecureAssessmentConfiguration オブジェクトのプロ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 92d49cd4714d1fd3925ad7117c636204b353964c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 9c65f492e42634e0e2775a6663bb93626afaaded
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33918443"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35715278"
 ---
 # <a name="get-windows10secureassessmentconfiguration"></a>Get windows10SecureAssessmentConfiguration
 
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 724
+Content-Length: 1674
 
 {
   "value": {
@@ -78,6 +78,27 @@ Content-Length: 724
       "Role Scope Tag Ids value"
     ],
     "supportsScopeTags": true,
+    "deviceManagementApplicabilityRuleOsEdition": {
+      "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+      "osEditionTypes": [
+        "windows10EnterpriseN"
+      ],
+      "name": "Name value",
+      "ruleType": "exclude"
+    },
+    "deviceManagementApplicabilityRuleOsVersion": {
+      "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+      "minOSVersion": "Min OSVersion value",
+      "maxOSVersion": "Max OSVersion value",
+      "name": "Name value",
+      "ruleType": "exclude"
+    },
+    "deviceManagementApplicabilityRuleDeviceMode": {
+      "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+      "deviceMode": "sModeConfiguration",
+      "name": "Name value",
+      "ruleType": "exclude"
+    },
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "description": "Description value",
     "displayName": "Display Name value",
@@ -87,10 +108,13 @@ Content-Length: 724
     "configurationAccountType": "domainAccount",
     "allowPrinting": true,
     "allowScreenCapture": true,
-    "allowTextSuggestion": true
+    "allowTextSuggestion": true,
+    "localGuestAccountName": "Local Guest Account Name value",
+    "assessmentAppUserModelId": "Assessment App User Model Id value"
   }
 }
 ```
+
 
 
 

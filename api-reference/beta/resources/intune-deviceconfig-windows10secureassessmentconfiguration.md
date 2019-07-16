@@ -4,12 +4,12 @@ description: このトピックでは、secureAssessment リソースによっ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2cb8c31e987482c4d7689c9e7b0df7b0ae5037f0
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 91bff1d9f7d74d676bfb6851349f7f79c6bf6bc6
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34982155"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35715614"
 ---
 # <a name="windows10secureassessmentconfiguration-resource-type"></a>windows10SecureAssessmentConfiguration リソースの種類
 
@@ -47,10 +47,12 @@ ms.locfileid: "34982155"
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |launchUri|String|安全評価ブラウザーを起動すると自動的に読み込まれる評価への URL リンク。 有効な URL である必要があります (http\[s\]://msdn.microsoft.com/)。|
 |configurationAccount|String|テストを受けるために Windows デバイスを構成する際に使用するアカウント。 ユーザーは、ドメイン アカウント (domain\user)、AAD アカウント (username@tenant.com) またはローカル アカウント (username) のいずれかです。|
-|configurationAccountType|[secureAssessmentAccountType](../resources/intune-deviceconfig-secureassessmentaccounttype.md)|ConfigurationAccount によって使用されるアカウントの種類。 可能な値は、`azureADAccount`、`domainAccount`、`localAccount` です。|
+|configurationAccountType|[secureAssessmentAccountType](../resources/intune-deviceconfig-secureassessmentaccounttype.md)|ConfigurationAccount によって使用されるアカウントの種類。 使用可能な値は、`azureADAccount`、`domainAccount`、`localAccount`、`localGuestAccount` です。|
 |allowPrinting|Boolean|テスト中にアプリが印刷することを許可するかどうかを示します。|
 |allowScreenCapture|Boolean|テスト中に画面の取り込み機能を許可するかどうかを示します。|
 |allowTextSuggestion|Boolean|テスト中に入力ヒントを許可するかどうかを示します。|
+|localGuestAccountName|String|サインイン画面に表示されるローカルゲストアカウントの表示テキストを指定します。 通常は評価の名前です。 ユーザーがサインイン画面でローカルのゲストアカウントをクリックすると、評価アプリが指定された評価 URL で起動されます。 セキュリティで保護された評価は、Windows 10、バージョン1903以降を実行しているデバイスでローカルのゲストアカウントのサインインを使用してのみ構成できます。 重要な注意事項: このプロパティは、セキュリティで保護された評価のためにローカルのゲストアカウントのサインイン操作を正しく動作させるために、assessmentAppUserModelID で設定する必要があります。|
+|assessmentAppUserModelId|String|ユーザーがローカルゲストアカウントでセキュリティで保護された評価にサインインしたときに起動される評価アプリのアプリケーションユーザーモデル ID を指定します。 重要な注意事項: セキュリティで保護された評価を行うために、ローカルゲストアカウントのサインイン操作を正しく動作させるには、このプロパティを localGuestAccountName で設定する必要があります。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
@@ -110,7 +112,9 @@ ms.locfileid: "34982155"
   "configurationAccountType": "String",
   "allowPrinting": true,
   "allowScreenCapture": true,
-  "allowTextSuggestion": true
+  "allowTextSuggestion": true,
+  "localGuestAccountName": "String",
+  "assessmentAppUserModelId": "String"
 }
 ```
 

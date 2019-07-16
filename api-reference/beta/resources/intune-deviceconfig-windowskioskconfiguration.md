@@ -4,12 +4,12 @@ description: このエンティティは、kiosk リソースが公開する宣�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a8da4c53d22621f08faf4edb27be2da10ce5674c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 32a7d319314d1fddc40724d686de797dcd1d15d1
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34978508"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35731750"
 ---
 # <a name="windowskioskconfiguration-resource-type"></a>windowsKioskConfiguration リソースの種類
 
@@ -54,6 +54,7 @@ ms.locfileid: "34978508"
 |kioskBrowserBlockedURLs|文字列コレクション|キオスクブラウザーが移動しない Url を指定する|
 |kioskBrowserBlockedUrlExceptions|文字列コレクション|キオスクブラウザーでの移動が許可されている Url を指定する|
 |edgeKioskEnablePublicBrowsing|Boolean|Microsoft Edge ブラウザーのパブリックブラウズキオスクモードを有効にします。 既定値は false です。|
+|windowsKioskForceUpdateSchedule|[windowsKioskForceUpdateSchedule](../resources/intune-deviceconfig-windowskioskforceupdateschedule.md)|キオスクデバイスの更新スケジュールを強制します。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
@@ -150,7 +151,15 @@ ms.locfileid: "34978508"
   "kioskBrowserBlockedUrlExceptions": [
     "String"
   ],
-  "edgeKioskEnablePublicBrowsing": true
+  "edgeKioskEnablePublicBrowsing": true,
+  "windowsKioskForceUpdateSchedule": {
+    "@odata.type": "microsoft.graph.windowsKioskForceUpdateSchedule",
+    "startDateTime": "String (timestamp)",
+    "recurrence": "String",
+    "dayofWeek": "String",
+    "dayofMonth": 1024,
+    "runImmediatelyIfAfterStartDateTime": true
+  }
 }
 ```
 

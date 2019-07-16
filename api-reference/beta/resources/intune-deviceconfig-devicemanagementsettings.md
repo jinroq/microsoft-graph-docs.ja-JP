@@ -4,12 +4,12 @@ description: まだ文書化されていません
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a087192b9ff46b79f5f585cc9515b9c78d806e99
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 025008a74df37daee068fe557df1511d60dcc48f
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34990009"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35734459"
 ---
 # <a name="devicemanagementsettings-resource-type"></a>deviceManagementSettings リソースの種類
 
@@ -29,6 +29,7 @@ ms.locfileid: "34990009"
 |deviceInactivityBeforeRetirementInDay|Int32|指定した日数が経過してもデバイスがチェックインされない場合は、会社のデータが削除されている可能性があり、デバイスは管理下にありません。 有効な値は 30 ~ 270|
 |derivedCredentialProvider|[derivedCredentialProviderType](../resources/intune-deviceconfig-derivedcredentialprovidertype.md)|このアカウントに使用する派生資格情報プロバイダー。 可能な値は、`notConfigured`、`entrustDataCard`、`purebred`、`xTec`、`intercede` です。|
 |derivedCredentialUrl|String|派生資格情報プロバイダーセルフサービス URI。|
+|androidDeviceAdministratorEnrollmentEnabled|Boolean|このアカウントに対して Android デバイス管理者の登録が有効になっているかどうかを判断するプロパティ。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -49,7 +50,8 @@ ms.locfileid: "34990009"
   "enhancedJailBreak": true,
   "deviceInactivityBeforeRetirementInDay": 1024,
   "derivedCredentialProvider": "String",
-  "derivedCredentialUrl": "String"
+  "derivedCredentialUrl": "String",
+  "androidDeviceAdministratorEnrollmentEnabled": true
 }
 ```
 

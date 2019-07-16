@@ -4,12 +4,12 @@ description: WindowsDeliveryOptimizationConfiguration オブジェクトのプ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 01fb15d2270b32d357b10346399e9254dc85b39a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: cf2b79111b88ac46be3c06f469401d5b13b3d3b0
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33917990"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35715691"
 ---
 # <a name="list-windowsdeliveryoptimizationconfigurations"></a>リスト windowsDeliveryOptimizationConfigurations
 
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1389
+Content-Length: 2472
 
 {
   "value": [
@@ -75,6 +75,27 @@ Content-Length: 1389
         "Role Scope Tag Ids value"
       ],
       "supportsScopeTags": true,
+      "deviceManagementApplicabilityRuleOsEdition": {
+        "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+        "osEditionTypes": [
+          "windows10EnterpriseN"
+        ],
+        "name": "Name value",
+        "ruleType": "exclude"
+      },
+      "deviceManagementApplicabilityRuleOsVersion": {
+        "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+        "minOSVersion": "Min OSVersion value",
+        "maxOSVersion": "Max OSVersion value",
+        "name": "Name value",
+        "ruleType": "exclude"
+      },
+      "deviceManagementApplicabilityRuleDeviceMode": {
+        "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+        "deviceMode": "sModeConfiguration",
+        "name": "Name value",
+        "ruleType": "exclude"
+      },
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "description": "Description value",
       "displayName": "Display Name value",
@@ -98,11 +119,17 @@ Content-Length: 1389
       "maximumCacheSize": {
         "@odata.type": "microsoft.graph.deliveryOptimizationMaxCacheSize"
       },
-      "vpnPeerCaching": "enabled"
+      "vpnPeerCaching": "enabled",
+      "cacheServerHostNames": [
+        "Cache Server Host Names value"
+      ],
+      "cacheServerForegroundDownloadFallbackToHttpDelayInSeconds": 9,
+      "cacheServerBackgroundDownloadFallbackToHttpDelayInSeconds": 9
     }
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: WindowsKioskConfiguration オブジェクトのプロパティを�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2e038072ab4130f696d9d0f3b3f7ba4b45cf4a21
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b76505bbb51318288f19004f30a2107f6b3c360f
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33917836"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35721998"
 ---
 # <a name="update-windowskioskconfiguration"></a>WindowsKioskConfiguration の更新
 
@@ -54,8 +54,11 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |:---|:---|:---|
 |id|文字列|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|roleScopeTagIds|String collection|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|roleScopeTagIds|文字列コレクション|このエンティティインスタンスの範囲タグのリスト。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |supportsScopeTags|Boolean|基になるデバイス構成がスコープタグの割り当てをサポートしているかどうかを示します。 この値が false である場合、ScopeTags プロパティへの割り当ては許可されません。エンティティは、スコープを持つユーザーには表示されません。 これは Silverlight で作成された従来のポリシーに対して実行され、Azure ポータルでポリシーを削除して再作成することによって解決できます。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|このポリシーの OS エディションの適用。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|このポリシーの OS バージョン適用ルール。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|Devicemanagementの信頼性ルール Devicemode|[Devicemanagementの信頼性ルール Devicemode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|このポリシーのデバイスモード適用ルール。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |description|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|管理者が指定した、デバイス構成の名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
@@ -66,9 +69,10 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |kioskBrowserEnableNavigationButtons|Boolean|キオスクブラウザーのナビゲーションボタン (前方/後方) を有効にします。 既定では、ナビゲーションボタンは無効になっています。|
 |kioskBrowserEnableEndSessionButton|Boolean|キオスクブラウザーの [セッションの終了] ボタンを有効にします。 既定では、[セッションの終了] ボタンは無効になっています。|
 |kioskBrowserRestartOnIdleTimeInMinutes|Int32|キオスクブラウザーが新しい状態で再起動するまで、セッションがアイドル状態になっている時間 (分) を指定します。  有効な値は1-1440 です。 有効な値は 1 ~ 1440|
-|kioskBrowserBlockedURLs|String collection|キオスクブラウザーが移動しない Url を指定する|
-|kioskBrowserBlockedUrlExceptions|String collection|キオスクブラウザーでの移動が許可されている Url を指定する|
+|kioskBrowserBlockedURLs|文字列コレクション|キオスクブラウザーが移動しない Url を指定する|
+|kioskBrowserBlockedUrlExceptions|文字列コレクション|キオスクブラウザーでの移動が許可されている Url を指定する|
 |edgeKioskEnablePublicBrowsing|Boolean|Microsoft Edge ブラウザーのパブリックブラウズキオスクモードを有効にします。 既定値は false です。|
+|windowsKioskForceUpdateSchedule|[windowsKioskForceUpdateSchedule](../resources/intune-deviceconfig-windowskioskforceupdateschedule.md)|キオスクデバイスの更新スケジュールを強制します。|
 
 
 
@@ -82,7 +86,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1753
+Content-length: 2829
 
 {
   "@odata.type": "#microsoft.graph.windowsKioskConfiguration",
@@ -90,6 +94,27 @@ Content-length: 1753
     "Role Scope Tag Ids value"
   ],
   "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+    "osEditionTypes": [
+      "windows10EnterpriseN"
+    ],
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleOsVersion": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+    "minOSVersion": "Min OSVersion value",
+    "maxOSVersion": "Max OSVersion value",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleDeviceMode": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+    "deviceMode": "sModeConfiguration",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
@@ -135,7 +160,15 @@ Content-length: 1753
   "kioskBrowserBlockedUrlExceptions": [
     "Kiosk Browser Blocked Url Exceptions value"
   ],
-  "edgeKioskEnablePublicBrowsing": true
+  "edgeKioskEnablePublicBrowsing": true,
+  "windowsKioskForceUpdateSchedule": {
+    "@odata.type": "microsoft.graph.windowsKioskForceUpdateSchedule",
+    "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
+    "recurrence": "daily",
+    "dayofWeek": "monday",
+    "dayofMonth": 10,
+    "runImmediatelyIfAfterStartDateTime": true
+  }
 }
 ```
 
@@ -144,7 +177,7 @@ Content-length: 1753
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1925
+Content-Length: 3001
 
 {
   "@odata.type": "#microsoft.graph.windowsKioskConfiguration",
@@ -154,6 +187,27 @@ Content-Length: 1925
     "Role Scope Tag Ids value"
   ],
   "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+    "osEditionTypes": [
+      "windows10EnterpriseN"
+    ],
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleOsVersion": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+    "minOSVersion": "Min OSVersion value",
+    "maxOSVersion": "Max OSVersion value",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleDeviceMode": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+    "deviceMode": "sModeConfiguration",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "description": "Description value",
   "displayName": "Display Name value",
@@ -200,9 +254,18 @@ Content-Length: 1925
   "kioskBrowserBlockedUrlExceptions": [
     "Kiosk Browser Blocked Url Exceptions value"
   ],
-  "edgeKioskEnablePublicBrowsing": true
+  "edgeKioskEnablePublicBrowsing": true,
+  "windowsKioskForceUpdateSchedule": {
+    "@odata.type": "microsoft.graph.windowsKioskForceUpdateSchedule",
+    "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
+    "recurrence": "daily",
+    "dayofWeek": "monday",
+    "dayofMonth": 10,
+    "runImmediatelyIfAfterStartDateTime": true
+  }
 }
 ```
+
 
 
 
