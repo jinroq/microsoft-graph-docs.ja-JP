@@ -4,12 +4,12 @@ description: alert オブジェクトのリストを取得する。
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: 37fa0c35d0995370fac4a2d463d3d44b9adad705
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 7828b525eb494b2904de43cf1215f5b53233e93d
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35443862"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35735136"
 ---
 # <a name="list-alerts"></a>アラートを一覧表示する
 
@@ -34,7 +34,7 @@ GET /security/alerts
 GET /security/alerts?$top=1
 GET /security/alerts?$filter={property} eq '{property-value}'
 GET /security/alerts?$filter={property} eq '{property-value}'&$top=5
-GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{property-value}'
+GET /security/alerts?$filter={property} eq '{property-value}' and {property} eq '{property-value}'
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
