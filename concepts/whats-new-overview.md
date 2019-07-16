@@ -3,18 +3,18 @@ title: Microsoft Graph の新機能
 description: Microsoft Graph の最新機能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 13823057cf45dd89ede984748fc8672b9342404a
-ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
+ms.openlocfilehash: 5500d80f1fc9ac4ec0a0a097c106c619aa76f1c9
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "35638958"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35731792"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph の新機能
 
 Microsoft Graph の一部の新機能は、開発者コミュニティでの要望が高かったことがきっかけとなり提供されるようになりました。 
 
-Microsoft Graph チームでは、お客様のニーズを定期的に評価して API と開発機能の向上を図り、次の順序でそれらを新機能としてリリースします。
+Microsoft Graph チームでは、お客様のニーズを定期的に評価して、次の順序で新機能をリリースします。
 
 1. **_プレビュー_** ステータスでデビューします。 関連するすべての REST API の更新プログラムは、ベータ版のエンドポイントに含まれます(`https://graph.microsoft.com/beta`)。 プレビューの機能は予告なしに変更されることがあります。 製品版アプリにそれらの機能を使用しないでください。 
 
@@ -29,6 +29,9 @@ Exchange 管理者はアプリにアプリケーションのアクセス許可�
 
 ### <a name="example-code-snippets"></a>コード スニペットの例
 v1.0 およびベータ リファレンスのすべての API トピックで、C# と JavaScript に加えて Objective-C のコード スニペットが提供されるようになりました。 [イベントを取得](/graph/api/event-get?view=graph-rest-1.0&tabs=objective-c#example)するための、Objective-C での例をご覧ください。
+
+### <a name="identity-and-access"></a>ID とアクセス
+[新しい委任されたアクセス許可およびアプリケーション アクセス許可](permissions-reference.md#organization-permissions)、_Organization.Read.All_、ならびに _Organization.ReadWrite.All_ を使用して[組織](/graph/api/resources/organization?view=graph-rest-1.0)や [購読している SKUs](/graph/api/resources/subscribedsku?view=graph-rest-1.0) などの関連リソースにアクセスします。
 
 ### <a name="mail"></a>メール
 [メール検索フォルダー](/graph/api/resources/mailsearchfolder?view=graph-rest-1.0) API を使用して、メッセージを検索し、Outlook のメール検索結果にアクセスできます。 関連する[ブログでのお知らせ](https://developer.microsoft.com/en-us/graph/blogs/mail-search-folder-support-for-microsoft-graph-apis/)を参照してください。
@@ -57,6 +60,9 @@ API の動作を学習し、アプリ開発を高速化するために、Graph E
 - [educationSchool](/graph/api/resources/educationschool?view=graph-rest-beta) のデルタ クエリ。
 - [educationClass](/graph/api/resources/educationclass?view=graph-rest-beta) および [educationUser](/graph/api/resources/educationuser?view=graph-rest-beta) のデルタ クエリと追加プロパティ。
 
+### <a name="files"></a>ファイル 
+ファイル、フォルダー、 またはその他の [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) 用の[共有リンクを作成](/graph/api/driveitem-createlink?view=graph-rest-beta)する場合に有効期限の日付と時間またはパスワードを適用します。
+
 ### <a name="group"></a>グループ
 [機密度ラベル](/graph/api/resources/assignedlabel?view=graph-rest-beta)を取得すると、Office 365 グループの機密データを保護し、コンプライアンス ポリシーを満たす目的に役立ちます。 これらのラベルは [assignedLabel](/graph/api/resources/assignedlabel?view=graph-rest-beta) オブジェクトで、Microsoft Information Protection 機能の一部として、管理者が Microsoft 365 セキュリティ/コンプライアンス センターで公開します。 
 
@@ -64,6 +70,7 @@ API の動作を学習し、アプリ開発を高速化するために、Graph E
 - [アプリケーション](/graph/api/resources/applicationtemplate?view=graph-rest-beta)のインスタンスを取得したり、Azure AD アプリケーション ギャラリーのインスタンスをテンプレートとしてディレクトリに追加したりできます。
 - テナントにあるすべての[プロビジョニング イベント](/graph/api/resources/provisioningobjectsummary?view=graph-rest-beta)のリストを取得できます。
 - Azure AD 環境で[検出されたユーザーまたはサインイン リスク](/graph/api/resources/riskdetection?view=graph-rest-beta)に関する情報を取得できます。 このリスク検出機能は、Azure AD Identity Protection の一部です。
+- [新しい委任されたアクセス許可およびアプリケーション アクセス許可](permissions-reference.md#organization-permissions)、_Organization.Read.All_、ならびに _Organization.ReadWrite.All_ を使用して[組織](/graph/api/resources/organization?view=graph-rest-beta)や [購読している SKUs](/graph/api/resources/subscribedsku?view=graph-rest-beta) などの関連リソースにアクセスします。
 
 ### <a name="mail"></a>メール
 [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-beta) API と[メッセージ](/graph/api/resources/message?view=graph-rest-beta)および **mailFolder** に関する[変更通知](webhooks.md)で [Mail.ReadBasic アクセス許可](permissions-reference.md#mail-permissions)を使用できます。
