@@ -4,12 +4,12 @@ description: Google のクラウド管理を使用して COSU デバイスを登
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 92fc907fdc0e50e5d983ac0dbb6f8a122c92641a
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 53c3f1e26956b1f3cce830b7e7b2fed6a2e3df72
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34992893"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35737371"
 ---
 # <a name="androiddeviceownerenrollmentprofile-resource-type"></a>androidDeviceOwnerEnrollmentProfile リソースの種類
 
@@ -43,8 +43,9 @@ Google のクラウド管理を使用して COSU デバイスを登録するた�
 |Tokenの日付/時刻|DateTimeOffset|最後に作成されたトークンが作成された日時。|
 |tokenExpirationDateTime|DateTimeOffset|最後に作成されたトークンの有効期限が切れる日時。|
 |enrolledDeviceCount|Int32|この登録プロファイルを使用して登録した Android デバイスの合計数。|
-|qrCodeContent|String|トークン用の QR コードを生成するために使用された文字列。|
+|qrCodeContent|String|トークンの QR コードを生成するために使用する文字列。|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|トークンの QR コードを生成するために使用する文字列。|
+|scopeTags|文字列コレクション|このエンティティインスタンスの範囲タグのリスト。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -75,7 +76,10 @@ Google のクラウド管理を使用して COSU デバイスを登録するた�
     "@odata.type": "microsoft.graph.mimeContent",
     "type": "String",
     "value": "binary"
-  }
+  },
+  "scopeTags": [
+    "String"
+  ]
 }
 ```
 

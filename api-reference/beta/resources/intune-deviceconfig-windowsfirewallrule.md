@@ -4,12 +4,12 @@ description: Windows ファイアウォールを介したトラフィックを�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2f4191edfee5148094f10b7a57bb50844d3bfcca
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: ae5c51a2ce5b3f86f03e651162611e8d219e7da2
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34994119"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35737665"
 ---
 # <a name="windowsfirewallrule-resource-type"></a>windowsFirewallRule リソースの種類
 
@@ -51,7 +51,9 @@ Windows ファイアウォールを介したトラフィックを制御するル
 - 有効な IPv6 アドレス。
 - スペースを含まない「開始アドレスと終了アドレス」の形式の IPv4 アドレス範囲。
 - 「開始アドレス-終了アドレス」の形式の IPv6 アドレス範囲。スペースは含まれません。
-既定は任意のアドレスです。 || profileTypes |[windowsFirewallRuleNetworkProfileTypes](../resources/intune-deviceconfig-windowsfirewallrulenetworkprofiletypes.md)|ルールが属するプロファイルを指定します。 指定しない場合、既定値は All です。 可能な値: `notConfigured`、 `domain`、 `private`、 `public`。 || action |[Statemanagementsetting](../resources/intune-deviceconfig-statemanagementsetting.md)|ルールによって適用されるアクション。 指定しない場合、既定値を使用できます。 可能な値: `notConfigured`、 `blocked`、 `allowed`. || trafficDirection |[windowsFirewallRuleTrafficDirectionType](../resources/intune-deviceconfig-windowsfirewallruletrafficdirectiontype.md)|ルールが有効になっているトラフィックの方向。 指定しない場合、既定値は "Out" です。可能な値: `notConfigured`、 `out`、 `in`. || interfaceTypes |[windowsFirewallRuleInterfaceTypes](../resources/intune-deviceconfig-windowsfirewallruleinterfacetypes.md)|ルールのインターフェイスの種類。 可能な値: `notConfigured`、 `remoteAccess`、 `wireless`、 `lan`。 || localUserAuthorizations |文字列 |アプリコンテナーに対して承認されたローカルユーザーのリストを指定します。 これは、セキュリティ記述子定義言語 (SDDL) 形式の文字列です。 |
+既定は任意のアドレスです。 || profileTypes |[windowsFirewallRuleNetworkProfileTypes](../resources/intune-deviceconfig-windowsfirewallrulenetworkprofiletypes.md)|ルールが属するプロファイルを指定します。 指定しない場合、既定値は All です。 可能な値: `notConfigured`、 `domain`、 `private`、 `public`。 || action |[Statemanagementsetting](../resources/intune-deviceconfig-statemanagementsetting.md)|ルールによって適用されるアクション。 指定しない場合、既定値を使用できます。 可能な値: `notConfigured`、 `blocked`、 `allowed`. || trafficDirection |[windowsFirewallRuleTrafficDirectionType](../resources/intune-deviceconfig-windowsfirewallruletrafficdirectiontype.md)|ルールが有効になっているトラフィックの方向。 指定しない場合、既定値は "Out" です。可能な値: `notConfigured`、 `out`、 `in`. || interfaceTypes |[windowsFirewallRuleInterfaceTypes](../resources/intune-deviceconfig-windowsfirewallruleinterfacetypes.md)|ルールのインターフェイスの種類。 可能な値: `notConfigured`、 `remoteAccess`、 `wireless`、 `lan`。 || edgeTraversal |[Statemanagementsetting](../resources/intune-deviceconfig-statemanagementsetting.md)|このルールに対してエッジトラバーサルを有効にするか無効にするかを示します。
+EdgeTraversal の設定は、特定の受信トラフィックで、Teredo トンネリングテクノロジを使用して Nat およびその他のエッジデバイスをトンネリングできることを示します。 この設定を正しく動作させるには、受信ファイアウォールルールを持つアプリケーションまたはサービスが IPv6 をサポートする必要があります。 この設定の主なアプリケーションにより、ホスト上のリスナーは Teredo IPv6 アドレスを使用してグローバルにアドレス可能にすることができます。
+新しいルールでは、EdgeTraversal プロパティは既定で無効になっています。 可能な値: `notConfigured`、 `blocked`、 `allowed`. || localUserAuthorizations |文字列 |アプリコンテナーに対して承認されたローカルユーザーのリストを指定します。 これは、セキュリティ記述子定義言語 (SDDL) 形式の文字列です。 |
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -88,6 +90,7 @@ Windows ファイアウォールを介したトラフィックを制御するル
   "action": "String",
   "trafficDirection": "String",
   "interfaceTypes": "String",
+  "edgeTraversal": "String",
   "localUserAuthorizations": "String"
 }
 ```
