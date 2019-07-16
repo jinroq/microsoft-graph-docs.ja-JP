@@ -4,31 +4,31 @@ description: windows10EndpointProtectionConfiguration オブジェクトのプ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9d32ed3e2785d7363017cd3f17f9f155632a59bc
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 4964d87e950b1d00777e5cde25a5ba56480f06d0
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33921675"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35715292"
 ---
-# <a name="list-windows10endpointprotectionconfigurations"></a><span data-ttu-id="e0660-103">windows10EndpointProtectionConfigurations のリスト</span><span class="sxs-lookup"><span data-stu-id="e0660-103">List windows10EndpointProtectionConfigurations</span></span>
+# <a name="list-windows10endpointprotectionconfigurations"></a><span data-ttu-id="c95e7-103">windows10EndpointProtectionConfigurations のリスト</span><span class="sxs-lookup"><span data-stu-id="c95e7-103">List windows10EndpointProtectionConfigurations</span></span>
 
-> <span data-ttu-id="e0660-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e0660-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="c95e7-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c95e7-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="e0660-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="e0660-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="c95e7-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="c95e7-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="e0660-106">[windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) オブジェクトのプロパティとリレーションシップをリストします。</span><span class="sxs-lookup"><span data-stu-id="e0660-106">List properties and relationships of the [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) objects.</span></span>
+<span data-ttu-id="c95e7-106">[windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) オブジェクトのプロパティとリレーションシップをリストします。</span><span class="sxs-lookup"><span data-stu-id="c95e7-106">List properties and relationships of the [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) objects.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="e0660-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="e0660-107">Prerequisites</span></span>
-<span data-ttu-id="e0660-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e0660-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="c95e7-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="c95e7-107">Prerequisites</span></span>
+<span data-ttu-id="c95e7-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c95e7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e0660-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="e0660-110">Permission type</span></span>|<span data-ttu-id="e0660-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="e0660-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="c95e7-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="c95e7-110">Permission type</span></span>|<span data-ttu-id="c95e7-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="c95e7-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="e0660-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="e0660-112">Delegated (work or school account)</span></span>|<span data-ttu-id="e0660-113">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="e0660-113">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="e0660-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="e0660-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="e0660-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e0660-115">Not supported.</span></span>|
-|<span data-ttu-id="e0660-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="e0660-116">Application</span></span>|<span data-ttu-id="e0660-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e0660-117">Not supported.</span></span>|
+|<span data-ttu-id="c95e7-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="c95e7-112">Delegated (work or school account)</span></span>|<span data-ttu-id="c95e7-113">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="c95e7-113">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="c95e7-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="c95e7-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="c95e7-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c95e7-115">Not supported.</span></span>|
+|<span data-ttu-id="c95e7-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="c95e7-116">Application</span></span>|<span data-ttu-id="c95e7-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c95e7-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="e0660-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="e0660-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c95e7-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="c95e7-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,32 +38,32 @@ GET /deviceManagement/deviceConfigurations
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e0660-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="e0660-119">Request headers</span></span>
-|<span data-ttu-id="e0660-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="e0660-120">Header</span></span>|<span data-ttu-id="e0660-121">値</span><span class="sxs-lookup"><span data-stu-id="e0660-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="c95e7-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="c95e7-119">Request headers</span></span>
+|<span data-ttu-id="c95e7-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="c95e7-120">Header</span></span>|<span data-ttu-id="c95e7-121">値</span><span class="sxs-lookup"><span data-stu-id="c95e7-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="e0660-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="e0660-122">Authorization</span></span>|<span data-ttu-id="e0660-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="e0660-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="e0660-124">承諾</span><span class="sxs-lookup"><span data-stu-id="e0660-124">Accept</span></span>|<span data-ttu-id="e0660-125">application/json</span><span class="sxs-lookup"><span data-stu-id="e0660-125">application/json</span></span>|
+|<span data-ttu-id="c95e7-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="c95e7-122">Authorization</span></span>|<span data-ttu-id="c95e7-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="c95e7-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="c95e7-124">承諾</span><span class="sxs-lookup"><span data-stu-id="c95e7-124">Accept</span></span>|<span data-ttu-id="c95e7-125">application/json</span><span class="sxs-lookup"><span data-stu-id="c95e7-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="e0660-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="e0660-126">Request body</span></span>
-<span data-ttu-id="e0660-127">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="e0660-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c95e7-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="c95e7-126">Request body</span></span>
+<span data-ttu-id="c95e7-127">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="c95e7-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e0660-128">応答</span><span class="sxs-lookup"><span data-stu-id="e0660-128">Response</span></span>
-<span data-ttu-id="e0660-129">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="e0660-129">If successful, this method returns a `200 OK` response code and a collection of [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="c95e7-128">応答</span><span class="sxs-lookup"><span data-stu-id="c95e7-128">Response</span></span>
+<span data-ttu-id="c95e7-129">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="c95e7-129">If successful, this method returns a `200 OK` response code and a collection of [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e0660-130">例</span><span class="sxs-lookup"><span data-stu-id="e0660-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="c95e7-130">例</span><span class="sxs-lookup"><span data-stu-id="c95e7-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="e0660-131">要求</span><span class="sxs-lookup"><span data-stu-id="e0660-131">Request</span></span>
-<span data-ttu-id="e0660-132">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="e0660-132">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="c95e7-131">要求</span><span class="sxs-lookup"><span data-stu-id="c95e7-131">Request</span></span>
+<span data-ttu-id="c95e7-132">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="c95e7-132">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ```
 
-### <a name="response"></a><span data-ttu-id="e0660-133">応答</span><span class="sxs-lookup"><span data-stu-id="e0660-133">Response</span></span>
-<span data-ttu-id="e0660-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="e0660-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="c95e7-133">応答</span><span class="sxs-lookup"><span data-stu-id="c95e7-133">Response</span></span>
+<span data-ttu-id="c95e7-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="c95e7-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 30466
+Content-Length: 31927
 
 {
   "value": [
@@ -75,6 +75,27 @@ Content-Length: 30466
         "Role Scope Tag Ids value"
       ],
       "supportsScopeTags": true,
+      "deviceManagementApplicabilityRuleOsEdition": {
+        "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+        "osEditionTypes": [
+          "windows10EnterpriseN"
+        ],
+        "name": "Name value",
+        "ruleType": "exclude"
+      },
+      "deviceManagementApplicabilityRuleOsVersion": {
+        "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+        "minOSVersion": "Min OSVersion value",
+        "maxOSVersion": "Max OSVersion value",
+        "name": "Name value",
+        "ruleType": "exclude"
+      },
+      "deviceManagementApplicabilityRuleDeviceMode": {
+        "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+        "deviceMode": "sModeConfiguration",
+        "name": "Name value",
+        "ruleType": "exclude"
+      },
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "description": "Description value",
       "displayName": "Display Name value",
@@ -105,6 +126,7 @@ Content-Length: 30466
           "action": "blocked",
           "trafficDirection": "out",
           "interfaceTypes": "remoteAccess",
+          "edgeTraversal": "blocked",
           "localUserAuthorizations": "Local User Authorizations value"
         }
       ],
@@ -157,6 +179,18 @@ Content-Length: 30466
         ]
       },
       "userRightsLocalLogOn": {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+        "state": "blocked",
+        "localUsersOrGroups": [
+          {
+            "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+            "name": "Name value",
+            "description": "Description value",
+            "securityIdentifier": "Security Identifier value"
+          }
+        ]
+      },
+      "userRightsDenyLocalLogOn": {
         "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
         "state": "blocked",
         "localUsersOrGroups": [
@@ -528,6 +562,7 @@ Content-Length: 30466
       "defenderSecurityCenterHelpURL": "Defender Security Center Help URL value",
       "defenderSecurityCenterNotificationsFromApp": "blockNoncriticalNotifications",
       "defenderSecurityCenterITContactDisplay": "displayInAppAndInNotifications",
+      "windowsDefenderTamperProtection": "enable",
       "firewallBlockStatefulFTP": true,
       "firewallIdleTimeoutForSecurityAssociationInSeconds": 2,
       "firewallPreSharedKeyEncodingMethod": "none",
@@ -658,6 +693,7 @@ Content-Length: 30466
       "deviceGuardLocalSystemAuthorityCredentialGuardSettings": "enableWithUEFILock",
       "deviceGuardEnableVirtualizationBasedSecurity": true,
       "deviceGuardEnableSecureBootWithDMA": true,
+      "deviceGuardSecureBootWithDMA": "withoutDMA",
       "deviceGuardLaunchSystemGuard": "enabled",
       "smartScreenEnableInShell": true,
       "smartScreenBlockOverrideForFiles": true,
@@ -727,6 +763,7 @@ Content-Length: 30466
   ]
 }
 ```
+
 
 
 
