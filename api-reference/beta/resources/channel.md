@@ -4,12 +4,12 @@ description: 'チャネルは、チーム内の chatMessages のコレクショ�
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1b77afb1560ed451683838a617123db013b71cd6
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 8b284cdfef42e9eb3319fc51c17febcf02eba1a1
+ms.sourcegitcommit: 624ac42e74533a9bf0d0d22b3b15adbb258fd594
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33338762"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34709433"
 ---
 # <a name="channel-resource-type"></a>チャネルのリソースの種類
 
@@ -28,7 +28,8 @@ ms.locfileid: "33338762"
 |[チャネルを更新する](../api/channel-patch.md) | [channel](channel.md) | チャネルのプロパティを更新します。|
 |[チャネルを削除する](../api/channel-delete.md) | なし | チャネルを削除します。|
 |[チャネル メッセージを一覧表示する](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | チャネルのメッセージを取得します。 |
-|[チャネル メッセージを送信する](../api/channel-post-chatmessage.md)  | [chatMessage](../resources/chatmessage.md) | [メッセージをチャネルに送信する](../api/channel-post-chatmessage.md) |
+|[チャネルでの chatMessage の作成](../api/channel-post-messages.md) | [chatMessage](../resources/chatmessage.md) | メッセージをチャネルに送信します。 |
+|[チャネルでの chatMessage 返信の作成](../api/channel-post-messagereply.md) | [chatMessage](../resources/chatmessage.md) | チャネル内のメッセージに返信します。|
 |[タブを一覧表示する](../api/teamstab-list.md) | [teamsTab](teamstab.md) | チャネルにピン留めされているタブを一覧表示します。|
 |[タブを取得する](../api/teamstab-get.md) | [teamsTab](teamstab.md) | チャネルにピン留めされているタブを読み取ります。|
 |[タブを追加する](../api/teamstab-add.md) | [teamsTab](teamstab.md) | タブをチャネルに追加 (ピン留め) します。|
