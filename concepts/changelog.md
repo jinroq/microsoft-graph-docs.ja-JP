@@ -3,12 +3,12 @@ title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: bfe6a16abcfc0b7ce2900c76e142139fc84df176
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 484f4607e14baf6bb6a48e11ad4f0d00461cc014
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35621145"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35736706"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
@@ -19,10 +19,52 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 ## <a name="july-2019"></a>2019 年 7 月
 
 ### <a name="devices-and-apps-microsoft-intune"></a>デバイスとアプリ (Microsoft Intune)
+
+|変更の種類|バージョン|説明|
+|:---|:---|:---|
+|追加|ベータ版|新しいエンティティを追加しました。<br/>[managedAllDeviceCertificateState](/graph/api/resources/intune-deviceconfig-managedalldevicecertificatestate?view=graph-rest-beta)<br/>|
+|追加|ベータ版|新しい複合型を追加しました。<br/>[windowsKioskForceUpdateSchedule](/graph/api/resources/intune-deviceconfig-windowskioskforceupdateschedule?view=graph-rest-beta)<br/>|
+|追加|ベータ版|新しい列挙型を追加しました。<br/>[fileVaultState](/graph/api/resources/intune-deviceconfig-filevaultstate?view=graph-rest-beta)<br/>[windowsDefenderTamperProtectionOptions](/graph/api/resources/intune-deviceconfig-windowsdefendertamperprotectionoptions?view=graph-rest-beta)<br/>|
+|追加|ベータ版|[roleScopeTag](/graph/api/resources/intune-rbac-rolescopetag?view=graph-rest-beta)コレクションに getRoleScopeTagsById アクションを追加しました |
+|追加|ベータ版|[deviceManagementTemplate](/graph/api/resources/intune-deviceintent-devicemanagementtemplate?view=graph-rest-beta)に対する[createInstance](/graph/api/intune-deviceintent-devicemanagementtemplate-createinstance?view=graph-rest-beta) アクションを追加しました。 |
+|追加|ベータ版|[roleScopeTag](/graph/api/resources/intune-rbac-rolescopetag?view=graph-rest-beta) コレクションに hasCustomRoleScopeTag 関数を追加しました |
+|削除|ベータ版|[deviceManagementTemplate](/graph/api/resources/intune-deviceintent-devicemanagementtemplate?view=graph-rest-beta)の[createInstance](/graph/api/intune-deviceintent-devicemanagementtemplate-createinstance?view=graph-rest-beta)アクションを削除しました |
+|削除|ベータ版|[importedWindowsAutopilotDeviceIdentityUpload](/graph/api/resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload?view=graph-rest-beta)の[autopilotDeviceStream](/graph/api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-autopilotdevicestream?view=graph-rest-beta)関数を削除しました |
+|追加|ベータ版|[androidDeviceOwnerEnrollmentProfile](/graph/api/resources/intune-androidforwork-androiddeviceownerenrollmentprofile?view=graph-rest-beta)エンティティに**scopeTags**プロパティを追加しました|
+|追加|ベータ版|[androidManagedStoreAppConfigurationSchema](/graph/api/resources/intune-androidforwork-androidmanagedstoreappconfigurationschema?view=graph-rest-beta) エンティティに **nestedSchemaItems** プロパティを追加しました|
+|追加|ベータ版|[importedWindowsAutopilotDeviceIdentity](/graph/api/resources/intune-enrollment-importedwindowsautopilotdeviceidentity?view=graph-rest-beta) エンティティに**groupTag** プロパティを追加しました|
+|追加|ベータ版|[managedDeviceEncryptionState](/graph/api/resources/intune-deviceconfig-manageddeviceencryptionstate?view=graph-rest-beta) エンティティに**fileVaultStates** プロパティを追加しました|
+|追加|ベータ版|[windows10EndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-beta) エンティティに**userRightsDenyLocalLogOn** プロパティと **windowsDefenderTamperProtection** プロパティを追加しました|
+|追加|ベータ版|[windows10SecureAssessmentConfiguration](/graph/api/resources/intune-deviceconfig-windows10secureassessmentconfiguration?view=graph-rest-beta) エンティティに **localGuestAccountName** プロパティと **assessmentAppUserModelId** プロパティを追加しました|
+|追加|ベータ版|[windowsDeliveryOptimizationConfiguration](/graph/api/resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration?view=graph-rest-beta) エンティティに **cacheServerHostNames** プロパティ、**cacheServerForegroundDownloadFallbackToHttpDelayInSeconds** プロパティおよび **cacheServerBackgroundDownloadFallbackToHttpDelayInSeconds** プロパティを追加しました|
+|追加|ベータ版|[windowsKioskConfiguration](/graph/api/resources/intune-deviceconfig-windowskioskconfiguration?view=graph-rest-beta) エンティティに **windowsKioskForceUpdateSchedule** プロパティを追加しました|
+|追加|ベータ版|[deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta) エンティティに **deviceConfigurationsAllManagedDeviceCertificateStates** ナビゲーション プロパティを追加しました|
+|削除|ベータ版|[deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta) エンティティから**importedWindowsAutopilotDeviceIdentityUploads** ナビゲーション プロパティを削除しました|
+|追加|ベータ版|[windowsUpdateForBusinessConfiguration](/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-beta) エンティティに **deviceUpdateStates** ナビゲーション プロパティを追加しました|
+|追加|ベータ版|[androidManagedStoreAppConfigurationSchemaItem](/graph/api/resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem?view=graph-rest-beta)複合型に **index** プロパティおよび **parentIndex** プロパティを追加しました|
+|追加|ベータ版|[deviceManagementSettings](/graph/api/resources/intune-deviceconfig-devicemanagementsettings?view=graph-rest-beta) 複合型に**androidDeviceAdministratorEnrollmentEnabled** プロパティを追加しました|
+|追加|ベータ版|[windowsFirewallRule](/graph/api/resources/intune-deviceconfig-windowsfirewallrule?view=graph-rest-beta) 複合型に**edgeTraversal** プロパティを追加しました|
+|追加|ベータ版|[secureAssessmentAccountType](/graph/api/resources/intune-deviceconfig-secureassessmentaccounttype?view=graph-rest-beta) 列挙型に **localGuestAccount** メンバーを追加しました|
+|追加|ベータ版|[vpnLocalIdentifier](/graph/api/resources/intune-deviceconfig-vpnlocalidentifier?view=graph-rest-beta) 列挙型に **empty** メンバーおよび **clientCertificateSubjectName** メンバーを追加しました|
+
+### <a name="devices-and-apps-microsoft-intune"></a>デバイスとアプリ (Microsoft Intune)
+
 |変更の種類|バージョン|説明|
 |:---|:---|:---|
 |追加|ベータ版|[groupPolicyDefinitionFile](/graph/api/resources/intune-grouppolicy-grouppolicydefinitionfile?view=graph-rest-beta) エンティティに **revision** プロパティが追加されました|
 |追加|ベータ版|[groupPolicyPresentationListBox](/graph/api/resources/intune-grouppolicy-grouppolicypresentationlistbox?view=graph-rest-beta) エンティティに **valuePrefix** プロパティが追加されました|
+
+### <a name="files-onedrive"></a>ファイル (OneDrive)
+|変更の種類|バージョン|説明|
+|:---|:---|:---|
+|追加|ベータ版|[createLink](/graph/api/driveitem-createlink?view=graph-rest-beta) アクションに**expirationDatetime** プロパティおよび **password** プロパティを追加しました。 |
+
+### <a name="identity-and-access"></a>ID とアクセス
+
+| **変更の種類** | **バージョン** | **説明**                  |
+|:----------------|:------------|:-----------------------------------------|
+| 追加 | v1.0 | [組織 API](/graph/api/resources/organization?view=graph-rest-1.0) リソースの取得および更新をして、[subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-1.0) リソースを取得するために、[新しい委任されたアクセス許可とアプリケーションのアクセス許可](/graph/permissions-reference?#organization-permissions) _Organization.Read.All_ および _Organization.ReadWrite.All_を追加しました。 |
+| 追加 | ベータ版 | [組織 API](/graph/api/resources/organization?view=graph-rest-beta) リソースの取得および更新をして、[subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-beta) リソースを取得するために、[新しい委任されたアクセス許可とアプリケーションのアクセス許可](/graph/permissions-reference?#organization-permissions) _Organization.Read.All_ および _Organization.ReadWrite.All_を追加しました。 |
 
 ## <a name="june-2019"></a>2019 年 6 月
 
@@ -905,7 +947,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | **変更の種類** | **バージョン** | **説明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | 追加          | ベータ版        | [notification](/graph/api/resources/projectrome-notification?view=graph-rest-beta) というリソースの種類を追加しました。 |
-| 追加          | ベータ版        | [通知の作成と発行] (/graph/api/projectrome_notification_post?view=graph-rest-beta) API を追加しました。|
+| 追加          | ベータ版        | [通知を作成して発行する](/graph/api/projectrome_notification_post?view=graph-rest-beta) API を追加しました。|
 
 ### <a name="security-apis"></a>セキュリティ API
 
