@@ -4,12 +4,12 @@ description: Microsoft Graph の教育機関向け API は、教育のさまざ�
 author: mmast-msft
 localization_priority: Priority
 ms.prod: education
-ms.openlocfilehash: 79212e9f196f3eb20468d34c34dc9d4588718615
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: c1a93242071f8ad1aa208ca3361f16d08c13d682
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620151"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778755"
 ---
 # <a name="education-api-overview"></a>教育機関向け API の概要
 
@@ -71,16 +71,16 @@ Office 365 の Microsoft Teams は、会話、コンテンツ、およびアプ�
 ## <a name="next-steps"></a>次のステップ
 
 - 教育機関向け API を初めて使用する場合は、以下を参照してください:
-    - [名簿 API を使用する](/graph/api/resources/education-overview?view=graph-rest-1.0)
-    - [割り当て API を使用する](/graph/api/resources/educationassignment?view=graph-rest-beta)
-    - [SDS 管理 API を使用する](/graph/api/resources/educationsynchronizationprofile?view=graph-rest-beta)
+  - [名簿 API を使用する](/graph/api/resources/education-overview?view=graph-rest-1.0)
+  - [割り当て API を使用する](/graph/api/resources/educationassignment?view=graph-rest-beta)
+  - [SDS 管理 API を使用する](/graph/api/resources/educationsynchronizationprofile?view=graph-rest-beta)
 - [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) で教育機関向け API を試す。
 - 次の教育関連サンプルについて調べる:
-    - [SSO および名簿管理についての .NET サンプル](https://github.com/OfficeDev/O365-EDU-AspNetMVC-Samples)
-    - [SSO および名簿管理についての Angular ノード サンプル](https://github.com/OfficeDev/O365-EDU-AngularNodeJS-Samples)   
-    - [SSO および名簿管理についての Python サンプル](https://github.com/OfficeDev/O365-EDU-Python-Samples)
-    - [SSO および名簿管理についての PHP サンプル](https://github.com/OfficeDev/O365-EDU-PHP-Samples)
-    - [プロファイル管理 API のサンプル](https://github.com/OfficeDev/O365-EDU-SDS-AspNetMVC-Samples) 
+  - [SSO および名簿管理についての .NET サンプル](https://github.com/OfficeDev/O365-EDU-AspNetMVC-Samples)
+  - [SSO および名簿管理についての Angular ノード サンプル](https://github.com/OfficeDev/O365-EDU-AngularNodeJS-Samples)   
+  - [SSO および名簿管理についての Python サンプル](https://github.com/OfficeDev/O365-EDU-Python-Samples)
+  - [SSO および名簿管理についての PHP サンプル](https://github.com/OfficeDev/O365-EDU-PHP-Samples)
+  - [プロファイル管理 API のサンプル](https://github.com/OfficeDev/O365-EDU-SDS-AspNetMVC-Samples) 
 
 
 

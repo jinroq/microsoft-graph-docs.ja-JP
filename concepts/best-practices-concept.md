@@ -2,12 +2,12 @@
 title: Microsoft Graph の操作に関するベスト プラクティス
 description: この記事では、アプリケーションで Microsoft Graph を最大限に活用するのに役立つベスト プラクティスについて説明します。これには、Microsoft Graph の概要、アプリのパフォーマンス向上、エンドユーザーに対してアプリケーションの信頼性を高める方法が含まれます。
 localization_priority: Priority
-ms.openlocfilehash: 4d0f0a382b7a61fe636ae5fb0fc791ed1f63327d
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.openlocfilehash: 50b5149708a342b08e953790aa1b40c9335c418c
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34657610"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778682"
 ---
 # <a name="best-practices-for-working-with-microsoft-graph"></a>Microsoft Graph の操作に関するベスト プラクティス
 
@@ -40,15 +40,15 @@ Microsoft Authentication Library API ([MSAL](https://docs.microsoft.com/ja-JP/az
 <!-- LG: Use a more clear lead-in here, like "Consider the end user and admin experience"? -->
 - **慎重にアプリを構成する**。 これは、エンドユーザーや管理者のエクスペリエンス、およびアプリケーションの導入とセキュリティに直接影響します。 例:
 
-    - アプリケーションのプライバシーに関する声明、使用条件、名前、ロゴ、ドメインは、同意その他の操作で表示されるので、エンドユーザーが理解できるように慎重に構成する必要があります。
-    - アプリケーションに同意するのがどのようなユーザーなのか (エンドユーザーか管理者か) を考慮した上で、アプリケーションが[適切なアクセス許可を要求する](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/active-directory-v2-scopes)ように構成します。
-    - 
+  - アプリケーションのプライバシーに関する声明、使用条件、名前、ロゴ、ドメインは、同意その他の操作で表示されるので、エンドユーザーが理解できるように慎重に構成する必要があります。
+  - アプリケーションに同意するのがどのようなユーザーなのか (エンドユーザーか管理者か) を考慮した上で、アプリケーションが[適切なアクセス許可を要求する](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/active-directory-v2-scopes)ように構成します。
+  - 
   [静的、動的、増分同意](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/active-directory-v2-compare#incremental-and-dynamic-consent)の違いを確実に理解している必要があります。
 
 - **マルチテナント アプリケーションを考慮する**。 ユーザーによって、アプリケーションや同意のコントロールはまちまちで、その状態もさまざまであることを想定します。 例:
 
-    - テナント管理者は、エンドユーザーがアプリケーションに同意する機能を無効にできます。 この例では、管理者がユーザーに代わって同意する必要があります。
-    - テナント管理者は、ユーザーが他のユーザーのプロファイルを読み取れないようにする場合や、セルフ サービスのグループ作成を限られたユーザーのみに限定する場合のように、カスタム承認ポリシーを設定できます。 この例では、アプリケーションがあるユーザーの代理として動作している場合、そのアプリケーションが 403 エラー応答を処理することを想定する必要があります。
+  - テナント管理者は、エンドユーザーがアプリケーションに同意する機能を無効にできます。 この例では、管理者がユーザーに代わって同意する必要があります。
+  - テナント管理者は、ユーザーが他のユーザーのプロファイルを読み取れないようにする場合や、セルフ サービスのグループ作成を限られたユーザーのみに限定する場合のように、カスタム承認ポリシーを設定できます。 この例では、アプリケーションがあるユーザーの代理として動作している場合、そのアプリケーションが 403 エラー応答を処理することを想定する必要があります。
 
 ## <a name="handle-responses-effectively"></a>応答を効果的に処理する
 

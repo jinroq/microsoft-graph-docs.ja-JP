@@ -4,12 +4,12 @@ description: Microsoft Graph Security プロバイダーは、単一の REST エ
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: 22ed2806bcaea999fe396fb88f4547e6bbf7f116
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 865dde2f2f67f61c82c5172ee0f5df763ba4c024
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33621292"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778307"
 ---
 # <a name="integrate-microsoft-graph-security-api-alerts-with-your-siem-using-azure-monitor"></a>Azure Monitor を使った Microsoft Graph セキュリティ API の警告と SIEM の統合
 
@@ -67,10 +67,7 @@ Azure Monitor を使った組織のセキュリティの警告のストリーミ
 
 3. 次のような診断設定要求の JSON ファイルを準備します。
 
-<!-- {
-  "blockType": "ignored"
-} -->
-
+    <!-- { "blockType": "ignored" } -->
     ``` json
     {
       "location": "",
@@ -91,13 +88,13 @@ Azure Monitor を使った組織のセキュリティの警告のストリーミ
     }
     ```
 
-JSON ファイル内の値を次のように置き換えます。
+    JSON ファイル内の値を次のように置き換えます。
 
-  * **SUBSCRIPTION_ID** は、組織からセキュリティの警告を送信するときに使用するリソース グループとイベント ハブの名前空間をホストする Azure サブスクリプションのサブスクリプション ID です。
-  * **RESOURCE_GROUP** は、組織からセキュリティの警告を送信するときに使用するイベント ハブの名前空間を含むリソース グループです。
-  * **EVENT_HUB_NAMESPACE** は、組織からセキュリティ警告を送信するときに使用するイベント ハブの名前空間です。
-  * **“days”:** は、イベント ハブにメッセージを保持する日数です。
-  
+    * **SUBSCRIPTION_ID** は、組織からセキュリティの警告を送信するときに使用するリソース グループとイベント ハブの名前空間をホストする Azure サブスクリプションのサブスクリプション ID です。
+    * **RESOURCE_GROUP** は、組織からセキュリティの警告を送信するときに使用するイベント ハブの名前空間を含むリソース グループです。
+    * **EVENT_HUB_NAMESPACE** は、組織からセキュリティ警告を送信するときに使用するイベント ハブの名前空間です。
+    * **“days”:** は、イベント ハブにメッセージを保持する日数です。
+
 
 4. ARMClient.exe を起動するディレクトリに、このファイルを JSON 形式で保存します。 たとえば、ファイル名を **AzMonConfig.json** とします。
 

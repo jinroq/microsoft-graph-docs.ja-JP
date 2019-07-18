@@ -4,12 +4,12 @@ description: 職場または学校の環境で一般的なシナリオとして�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 5e8fd1cd96c852c07c87bcaa35396fdd0fa5857d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 171a8a41b2f51335d7f5d5f38b63590421d94d48
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555207"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778286"
 ---
 # <a name="get-freebusy-schedule-of-users-and-resources"></a>ユーザーとリソースの空き時間スケジュールを取得する
 
@@ -174,8 +174,8 @@ Alex の空き時間スケジュールと勤務時間以外に、**getSchedule**
 
 - イベントの秘密度レベルが低く (`normal` または `personal`)、さらに次の条件の 1 つ以上が適用される場合:
 
-   - 要求されたユーザーの予定表の設定は、サインインしているユーザーに件名と場所を表示します。
-   - 要求されたユーザーの予定表は、サインインしたユーザーと共有されています
+  - 要求されたユーザーの予定表の設定は、サインインしているユーザーに件名と場所を表示します。
+  - 要求されたユーザーの予定表は、サインインしたユーザーと共有されています
 
 これらの条件は、サインインしているユーザーが組織の管理者かどうかにかかわらず適用されます。 要求されたユーザーは、返されるイベント データを制御します。
 

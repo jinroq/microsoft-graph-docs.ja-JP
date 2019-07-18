@@ -3,12 +3,12 @@ title: schemaExtension リソースの種類 (スキーマ拡張機能)
 description: 'スキーマの拡張機能を使用すると、拡張するスキーマを定義し、厳密に型指定されたカスタム データをリソースの種類に追加できます。カスタム データは拡張したリソースの複合型として表示されます。 '
 localization_priority: Priority
 author: dkershaw10
-ms.openlocfilehash: 64c9fa09b83af23604bf8a6e550533b259f1b0a5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 72260112e2b23bf185ea86d039fec9e0af778fb9
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579227"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778349"
 ---
 # <a name="schemaextension-resource-type-schema-extensions"></a>schemaExtension リソースの種類 (スキーマ拡張機能)
 
@@ -16,14 +16,14 @@ ms.locfileid: "32579227"
 
 スキーマ拡張機能は次のリソースの種類でサポートされています。
 
- - [contact](contact.md)
- - [device](device.md)
- - ユーザーまたは Office 365 グループ カレンダーの [event](event.md)
- - Office 365 グループの [post](post.md)
- - [group](group.md)
- - [message](message.md) 
- - [organization](organization.md)
- - [user](user.md)
+- [contact](contact.md)
+- [device](device.md)
+- ユーザーまたは Office 365 グループ カレンダーの [event](event.md)
+- Office 365 グループの [post](post.md)
+- [group](group.md)
+- [message](message.md) 
+- [organization](organization.md)
+- [user](user.md)
 
 カスタム データのグループへの追加方法については、[スキーマ拡張機能の例](/graph/extensibility-schema-groups)を参照してください。
 

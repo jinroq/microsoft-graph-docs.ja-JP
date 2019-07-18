@@ -3,12 +3,12 @@ title: Microsoft Graph 通知のためのアプリの登録と API アクセス�
 description: Microsoft Graph 経由で送信される通知を受信するためには、最初に、Microsoft Azure portal でアプリケーションを登録する必要があります。
 localization_priority: Priority
 ms.prod: notifications
-ms.openlocfilehash: 93ee4d83afac73b7d7ae90abe8e2876ffe688b68
-ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
+ms.openlocfilehash: dc102f451b3f206bbfefe1d3c38c3995041f04fa
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34063376"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778636"
 ---
 # <a name="manage-app-registration-and-api-permission-for-microsoft-graph-notifications"></a>Microsoft Graph 通知のためのアプリの登録と API アクセス許可を管理する
 
@@ -43,19 +43,19 @@ Microsoft Graph の通知を使用するために追加の許可を追加する�
     
 以下のアクセス許可を追加します。
 
-  - User.Read - ユーザーにサインインするアプリケーションを許可する
+- User.Read - ユーザーにサインインするアプリケーションを許可する
 
-  - Device.Read - デバイスのユーザーの一覧の ID を許可する
+- Device.Read - デバイスのユーザーの一覧の ID を許可する
 
-  - Device.Command - ユーザーのデバイスとの通信を許可する
+- Device.Command - ユーザーのデバイスとの通信を許可する
 
-  - UserActivity.ReadWrite.CreatedByApp - 通知を取得するためのアプリのサブスクリプションを許可する
+- UserActivity.ReadWrite.CreatedByApp - 通知を取得するためのアプリのサブスクリプションを許可する
 
-  - Notifications.ReadWrite.CreatedByApp - アクセスと配信の通知を許可する
+- Notifications.ReadWrite.CreatedByApp - アクセスと配信の通知を許可する
 
-  - wns.connect - windows の通知サービスへの接続を許可する
+- wns.connect - windows の通知サービスへの接続を許可する
 
-  ![Azure portal で通知を行うのための代理アクセス権を示すスクリーン ショット](images/notifications-api-permissions-list.png)
+![Azure portal で通知を行うのための代理アクセス権を示すスクリーン ショット](images/notifications-api-permissions-list.png)
 
 ## <a name="next-steps"></a>次の手順
 

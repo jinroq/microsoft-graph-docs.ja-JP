@@ -4,12 +4,12 @@ description: Microsoft Graph Security プロバイダーは、単一の REST エ
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: 83e631a4e276e06ac4f43366d95cde7a2f455777
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 49db00a3a667922d6d7fc50365ea1ad9282c3a8d
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573503"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778279"
 ---
 # <a name="integrate-microsoft-graph-security-api-alerts-with-ibm-qradar-siem-using-azure-monitor"></a>Azure Monitor を使った Microsoft Graph Security API の警告と IBM QRadar SIEM の統合
 
@@ -34,7 +34,8 @@ Microsoft Graph Security プロバイダーは、単一の REST エンドポイ�
 - イベント ハブの既定のコンシューマー グループを使用することをお勧めします。 2 つの異なるツールが同じイベント ハブの同じデータを使用しない限り、追加のコンシューマー グループを作成したり、別のコンシューマー グループを使用したりする必要はありません。
 - 通常、イベント ハブのデータを使用するマシンのポート 5671 と 5672 を開く必要があります。
 
-[Event Hubs のよく寄せられる質問](https://docs.microsoft.com/ja-JP/azure/event-hubs/event-hubs-faq)も参照してください。
+
+  [Event Hubs のよく寄せられる質問](https://docs.microsoft.com/ja-JP/azure/event-hubs/event-hubs-faq)も参照してください。
 
 1. [Azure Portal](https://portal.azure.com/) にログオンし、画面左上の **[リソースの作成]** を選択します。
 
@@ -83,14 +84,12 @@ Azure Monitor を使った組織のセキュリティの警告のストリーミ
     }
     ```
 
-  JSON ファイル内の値を次のように置き換えます。
+    JSON ファイル内の値を次のように置き換えます。
 
-  * **SUBSCRIPTION_ID** は、組織からセキュリティの警告を送信するときに使用するリソース グループとイベント ハブの名前空間をホストする Azure サブスクリプションのサブスクリプション ID です。
-  * **RESOURCE_GROUP** は、組織からセキュリティの警告を送信するときに使用するイベント ハブの名前空間を含むリソース グループです。
-  * **EVENT_HUB_NAMESPACE** は、組織からセキュリティ警告を送信するときに使用するイベント ハブの名前空間です。
-  * **“days”:** は、イベント ハブにメッセージを保持する日数です。
-  
-&nbsp;
+    * **SUBSCRIPTION_ID** は、組織からセキュリティの警告を送信するときに使用するリソース グループとイベント ハブの名前空間をホストする Azure サブスクリプションのサブスクリプション ID です。
+    * **RESOURCE_GROUP** は、組織からセキュリティの警告を送信するときに使用するイベント ハブの名前空間を含むリソース グループです。
+    * **EVENT_HUB_NAMESPACE** は、組織からセキュリティ警告を送信するときに使用するイベント ハブの名前空間です。
+    * **“days”:** は、イベント ハブにメッセージを保持する日数です。
 
 4. ARMClient.exe を起動するディレクトリに、このファイルを JSON 形式で保存します。 たとえば、ファイル名を **AzMonConfig.json** とします。
 

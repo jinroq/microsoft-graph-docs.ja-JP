@@ -3,12 +3,12 @@ title: Outlook リソースのサブスクリプションと通知の喪失を�
 description: ユーザーのパスワードのリセットなどのセキュリティ イベントが原因で、Outlook で変更通知の配信が一時的に停止されることがあります。 通知の配信が中断されないよう、特殊なライフサイクル イベントである `subscriptionRemoved` および `missed` を処理する必要があります。
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: 1c430743f860536ef20fa2ad9974e580c78a6f0d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7f273046c084e83375c835349b43caebcefca473
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32683981"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778244"
 ---
 # <a name="reduce-missing-subscriptions-and-notifications-for-outlook-resources-preview"></a>Outlook リソースのサブスクリプションと通知の喪失を減らす (プレビュー) 
 
@@ -138,7 +138,7 @@ Content-Type: application/json
 ### <a name="actions-to-take"></a>必要なアクション
 
 1. POST 呼び出しに `202 - Accepted` で応答し、通知の受信を[確認通知](webhooks.md#notifications)します。
-  - シグナルを無視する場合は、特に操作は必要ありません。 無視しない場合は:
+    - シグナルを無視する場合は、特に操作は必要ありません。 無視しない場合は:
 2. 通知の信頼性を[検証します](webhooks.md#notifications)。
 3. 通知として配信されなかった変更を特定するために、すべてのデータを対象にリソースの再同期を実行します。 
 

@@ -4,12 +4,12 @@ description: 予定表内のイベントです。
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 852384ec4c1dd18216df7f642a7c958c53897280
-ms.sourcegitcommit: b18ccb24fc79f3abb470cd759e25cdd266fc77c7
+ms.openlocfilehash: 01aac673f5bf9f4a1ecbc4b1fa3b82b9cd001537
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34108974"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778468"
 ---
 # <a name="event-resource-type"></a>event リソースの種類
 
@@ -25,9 +25,9 @@ ms.locfileid: "34108974"
 
 > **注:** ユーザーの予定表とグループの予定表、およびそのイベントの操作方法には、わずかな相違点がいくつかあります。
 
- - [calendarGroup](calendargroup.md) にはユーザーの予定表のみを整理できます。
- - Outlook はグループの代わりにすべての会議出席依頼を自動的に受け入れます。 _ユーザー_の予定表の会議出席依頼のみを[承諾](../api/event-accept.md)、[仮承諾](../api/event-tentativelyaccept.md)、または[辞退](../api/event-decline.md)できます。
-  - Outlook はグループ イベントのアラームをサポートしていません。 _ユーザー_の予定表についてのみ、[リマインダー](reminder.md)を[再起動](../api/event-snoozereminder.md)または[無視](../api/event-dismissreminder.md)できます。
+- [calendarGroup](calendargroup.md) にはユーザーの予定表のみを整理できます。
+- Outlook はグループの代わりにすべての会議出席依頼を自動的に受け入れます。 _ユーザー_の予定表の会議出席依頼のみを[承諾](../api/event-accept.md)、[仮承諾](../api/event-tentativelyaccept.md)、または[辞退](../api/event-decline.md)できます。
+- Outlook はグループ イベントのアラームをサポートしていません。 _ユーザー_の予定表についてのみ、[リマインダー](reminder.md)を[再起動](../api/event-snoozereminder.md)または[無視](../api/event-dismissreminder.md)できます。
 
 ## <a name="json-representation"></a>JSON 表記
 
