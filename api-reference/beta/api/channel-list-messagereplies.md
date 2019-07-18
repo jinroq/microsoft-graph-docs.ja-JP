@@ -4,12 +4,12 @@ description: チームのチャネル内のメッセージのすべての返信�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 7bc637d1eaec19bd3de18517c9339b8c15c9d663
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 2db1c418ef669776c945e4c2176a49648ba185c4
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35438476"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778414"
 ---
 # <a name="list-channel-message-replies"></a>チャネルメッセージの返信を一覧表示する
 
@@ -26,7 +26,10 @@ ms.locfileid: "35438476"
 |---------|-------------|
 |委任 (職場または学校のアカウント)|Group.Read.All、Group.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません|
-|アプリケーション| サポートされていません。 |
+|アプリケーション| Group.Read.All、Group.ReadWrite.All|
+
+> [!NOTE]
+> アプリケーションのアクセス許可でこの API を呼び出す前に、アクセスを要求する必要があります。 詳細については、「 [Microsoft Teams の保護された api](/graph/teams-protected-apis)」を参照してください。
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

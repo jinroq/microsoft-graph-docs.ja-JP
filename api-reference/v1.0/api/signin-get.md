@@ -4,12 +4,12 @@ description: Microsoft Graph API からのサインインリソース (エンテ
 localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7f4c10ffcf600fd51b0d6531f78c38cc2066ae4a
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 0f258b49d763ddda90b5ee5b05de92a2b44722f0
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35444191"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778443"
 ---
 # <a name="get-signin"></a>signIn を取得する
 
@@ -23,7 +23,7 @@ ms.locfileid: "35444191"
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | 監査ログ。 all および All を参照してください。 |
 |委任 (個人用 Microsoft アカウント) | サポートされていません   |
-|アプリケーション | AuditLog.Read.All |
+|アプリケーション | 監査ログ。 all および All を参照してください。 |
 
 ## <a name="http-request"></a>HTTP 要求
 

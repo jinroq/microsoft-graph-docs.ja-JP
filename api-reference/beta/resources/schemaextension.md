@@ -3,12 +3,12 @@ title: schemaExtension リソースの種類 (スキーマ拡張機能)
 description: 'スキーマの拡張機能を使用すると、拡張するスキーマを定義し、厳密に型指定されたカスタム データをリソースの種類に追加できます。カスタム データは拡張したリソースの複合型として表示されます。 '
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: a6d7ed28b1fedefe1b4172bb780e3a014e4d3ff7
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 65b70a00b9da6b41a178d07b9eeb42ed8e92a2f6
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343468"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778662"
 ---
 # <a name="schemaextension-resource-type-schema-extensions"></a>schemaExtension リソースの種類 (スキーマ拡張機能)
 
@@ -18,15 +18,15 @@ ms.locfileid: "33343468"
 
 スキーマ拡張機能は次のリソースの種類でサポートされています。
 
- - [administrativeUnit](administrativeunit.md)
- - [contact](contact.md)
- - [device](device.md)
- - ユーザーまたは Office 365 グループ カレンダーの [event](event.md)
- - Office 365 グループの [post](post.md)
- - [group](group.md)
- - [message](message.md) 
- - [organization](organization.md)
- - [user](user.md)
+- [administrativeUnit](administrativeunit.md)
+- [contact](contact.md)
+- [device](device.md)
+- ユーザーまたは Office 365 グループ カレンダーの [event](event.md)
+- Office 365 グループの [post](post.md)
+- [group](group.md)
+- [message](message.md) 
+- [organization](organization.md)
+- [user](user.md)
 
 カスタム データのグループへの追加方法については、[スキーマ拡張機能の例](/graph/extensibility-schema-groups)を参照してください。
 
@@ -35,7 +35,7 @@ ms.locfileid: "33343468"
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
 |[Create](../api/schemaextension-post-schemaextensions.md) | schemaExtension |スキーマ拡張機能の定義を作成します。|
-|[List](../api/schemaextension-list.md) | schemaExtension |avaialbe schemaextension 日とそのプロパティを一覧表示します。|
+|[List](../api/schemaextension-list.md) | schemaExtension |Avaialbe schemaExtension 日とそのプロパティを一覧表示します。|
 |[Get](../api/schemaextension-get.md) | schemaExtension |特定の schemaExtension 定義のプロパティを読み取ります。|
 |[Update](../api/schemaextension-update.md) | schemaExtension   |schemaExtension 定義を更新します。 |
 |[Delete](../api/schemaextension-delete.md) | なし |schemaExtension 定義を削除します。 |
@@ -44,11 +44,11 @@ ms.locfileid: "33343468"
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |description|String|スキーマ拡張機能の説明。|
-|id|String|スキーマ拡張機能の定義の一意の識別子。 <br>値の割り当ては、以下の 2 方法のいずれかで行うことができます。 <ul><li>確認されたドメインの内の 1 つの名前とスキーマ拡張機能の名前を連結して、\{_&#65279;domainName_\}\_\{_&#65279;schemaName_\} という形式の一意の文字列を形成します。たとえば、`contoso_mySchema` です。 </li><li>スキーマ名を指定し、Microsoft Graph がそのスキーマ名を使用して **id** 割り当てを完了するには、次の形式を使用します。ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}。たとえば、`extkvbmkofy_mySchema` です。</li></ul>作成後、このプロパティは変更できません。 |
+|id|文字列|スキーマ拡張機能の定義の一意の識別子。 <br>値の割り当ては、以下の 2 方法のいずれかで行うことができます。 <ul><li>確認されたドメインの内の 1 つの名前とスキーマ拡張機能の名前を連結して、\{_&#65279;domainName_\}\_\{_&#65279;schemaName_\} という形式の一意の文字列を形成します。たとえば、`contoso_mySchema` です。 </li><li>スキーマ名を指定し、Microsoft Graph がそのスキーマ名を使用して **id** 割り当てを完了するには、次の形式を使用します。ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}。たとえば、`extkvbmkofy_mySchema` です。</li></ul>作成後、このプロパティは変更できません。 |
 |owner|String|スキーマ拡張機能の所有者であるアプリケーションの `appId` です。 このプロパティは作成時に指定して所有者を設定できます。  指定しない場合、呼び出し元のアプリケーションの `appId` が所有者として設定されます。 どちらの場合も、サインインしたユーザーがアプリケーションの所有者でなければなりません。 設定すると、このプロパティは読み取り専用で、変更することはできません。|
 |properties|[extensionSchemaProperty](extensionschemaproperty.md) コレクション|スキーマ拡張機能の定義を構成するプロパティ名と種類のコレクション。|
 |status|String|スキーマ拡張機能のライフサイクル状態。 考えられる状態は、**InDevelopment**、**Available**、および **Deprecated** です。 作成時に自動で **InDevelopment** に設定されます。 考えられる状態遷移と動作の詳細については、「[スキーマ拡張機能](/graph/extensibility-overview#schema-extensions)」をご覧ください。|
-|targetTypes|String コレクション|スキーマ拡張機能に適用できる (拡張機能をサポートできる) 一連の Microsoft Graph の種類。 **administrativeUnit**、**連絡先**、**デバイス**、**イベント**、**グループ**、**メッセージ**、**組織**、**投稿**、**ユーザー**のいずれかを選択します。|
+|targetTypes|String コレクション|スキーマ拡張機能に適用できる (拡張機能をサポートできる) 一連の Microsoft Graph の種類。 **AdministrativeUnit**、**連絡先**、**デバイス**、**イベント**、**グループ**、**メッセージ**、**組織**、**投稿**、**ユーザー**のいずれかを選択します。|
 
 ## <a name="json-representation"></a>JSON 表記
 

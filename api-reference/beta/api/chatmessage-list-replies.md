@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 44d90dd085a09639467c054dbc2af516d270eb3b
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: c2159d7922c061bb1072ca8f1603677ed3fd6d75
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35437748"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778384"
 ---
 # <a name="list-replies"></a>返信の一覧表示
 
@@ -27,6 +27,9 @@ Chatmessage オブジェクトの一覧を取得します。
 | 委任 (職場または学校のアカウント)     | チャット。読み取り、読み取り/書き込み |
 | 委任 (個人用 Microsoft アカウント) | サポートされていません。 |
 | アプリケーション                            | Chat.Read.All |
+
+> [!NOTE]
+> アプリケーションのアクセス許可でこの API を呼び出す前に、アクセスを要求する必要があります。 詳細については、「 [Microsoft Teams の保護された api](/graph/teams-protected-apis)」を参照してください。
 
 ## <a name="http-request"></a>HTTP 要求
 

@@ -4,12 +4,12 @@ description: " Office 365 のエンタープライズ ノートブック"
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 97a9acb8244446191b09d99753e30d94c47c4f1e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1c7aad42687dac87eda907f66e99ff1a4b11b861
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555249"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778741"
 ---
 # <a name="update-onenote-page-content"></a>OneNote ページ コンテンツを更新する
 
@@ -139,8 +139,8 @@ Microsoft Graph は、更新可能なページで要素に対して **id** 値�
 
 - **append** アクションと **insert** アクションでは、いずれの ID もターゲット値として使用できます。
 - **replace** アクションでは、すべての要素について、生成された IDを使用する必要があります。ただし、ページ タイトル、および div 内の画像とオブジェクトを除きます。 
-    - タイトルを置換する場合は、**title** キーワードを使用します。 
-    - div 内の画像とオブジェクトを置換する場合は、**data-id** または **id** のどちらかを使用します。
+  - タイトルを置換する場合は、**title** キーワードを使用します。 
+  - div 内の画像とオブジェクトを置換する場合は、**data-id** または **id** のどちらかを使用します。
 
 次の例では、ターゲットに **id** 値を使用します。生成された ID と共に # プレフィックスを使用しないでください。
 

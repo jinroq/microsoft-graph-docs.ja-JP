@@ -2,12 +2,12 @@
 title: ProgramControl を作成する
 description: Azure AD access レビュー機能で、新しい programControl オブジェクトを作成します。  これにより、アクセスレビューがプログラムにリンクされます。
 localization_priority: Normal
-ms.openlocfilehash: 5c8bf73cc62a937848577baf3358ead189f88aae
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 101606433c16f711e0d0301cf97b325149459bd3
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35450080"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778449"
 ---
 # <a name="create-programcontrol"></a>ProgramControl を作成する
 
@@ -17,9 +17,9 @@ Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、�
 
 この要求を行う前に、発信者が以前に
 
- - の`programId`値を要求に含めるには、[プログラムを作成](program-create.md)するか、[プログラムを取得](program-list.md)しました。
- - の`controlId`値を要求に含めるために、[アクセスレビューを作成](accessreview-create.md)するか、[アクセスレビューを取得](accessreview-get.md)しました。
- - の`controlTypeId`値を要求に含めるために、[プログラムコントロールの種類の一覧を取得](programcontroltype-list.md)しました。
+- の`programId`値を要求に含めるには、[プログラムを作成](program-create.md)するか、[プログラムを取得](program-list.md)しました。
+- の`controlId`値を要求に含めるために、[アクセスレビューを作成](accessreview-create.md)するか、[アクセスレビューを取得](accessreview-get.md)しました。
+- の`controlTypeId`値を要求に含めるために、[プログラムコントロールの種類の一覧を取得](programcontroltype-list.md)しました。
 
 
 ## <a name="permissions"></a>アクセス許可

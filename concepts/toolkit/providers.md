@@ -3,12 +3,12 @@ title: Microsoft Graph ツールキットプロバイダー
 description: Microsoft Graph Toolkit プロバイダーを使用すると、すべてのコンポーネントに対して認証と Microsoft Graph へのアクセスが可能になります。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: e89247daf92471b4a7c6aa16f34396eaedaaa37a
-ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
+ms.openlocfilehash: 3e5d587e8c2690d2b71a2e70e41266519566f91e
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35243059"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778713"
 ---
 # <a name="microsoft-graph-toolkit-providers"></a>Microsoft Graph ツールキットプロバイダー
 
@@ -37,13 +37,13 @@ Providers.globalProvider = new MsalProvider({
 
 グローバル`Providers`変数は、次のプロパティと関数を公開します。
 
-   - `globalProvider : IProvider`
+- `globalProvider : IProvider`
 
 このプロパティをグローバルに使用するプロバイダーに設定します。 すべてのコンポーネントこのプロパティを使用して、プロバイダーへの参照を取得します。 このプロパティを設定すると`onProvidersChanged` 、イベントが発生します。
 
-   - `function onProviderUpdated(callbackFunction)`
+- `function onProviderUpdated(callbackFunction)`
 
- この`callbackFunction`関数は、プロバイダーが変更されたとき、またはプロバイダーの状態が変更されたときに呼び出されます。 `ProvidersChangedState`列挙値は、更新されたものを示すために関数に渡されます。
+この`callbackFunction`関数は、プロバイダーが変更されたとき、またはプロバイダーの状態が変更されたときに呼び出されます。 `ProvidersChangedState`列挙値は、更新されたものを示すために関数に渡されます。
 
 ## <a name="implement-your-own-provider"></a>独自のプロバイダーを実装する
 

@@ -4,12 +4,12 @@ description: テナントの特定の Azure AD ユーザーのサインイン �
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a5e168bccfbecc080cb2a6fdd0e8b06260ae0ede
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: c7111e8f63684cd98a1c21d0de72e9adb246353c
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35453622"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778454"
 ---
 # <a name="get-signin"></a>signIn を取得する
 
@@ -25,8 +25,11 @@ ms.locfileid: "35453622"
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | AuditLog.Read.All |
+|委任 (職場または学校のアカウント) | Directory.Read.All |
 |委任 (個人用 Microsoft アカウント) | サポートされていません   |
 |アプリケーション | AuditLog.Read.All | 
+|アプリケーション | Directory.Read.All | 
+
 
 また、アプリは Azure AD に[正しく登録されている](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)必要があります。
 

@@ -4,12 +4,12 @@ description: チャットは、1人または複数の参加者間の chatMessage
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4d0f1009079c4994814385ae8758af6c211f17a2
-ms.sourcegitcommit: afea19508ad74a3583b11b5f7b544c53eafb3740
+ms.openlocfilehash: e95adb1c00b88fcc2649acb669ee693caef6cccf
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "34344977"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778661"
 ---
 # <a name="chat-resource-type"></a>チャットリソースの種類
 
@@ -25,8 +25,8 @@ ms.locfileid: "34344977"
 |[チャットの取得](../api/chat-get.md) | [チャット](channel.md) | チャットのプロパティと関係を読み取ります。|
 |[チャットメンバーを一覧表示する](../api/conversationmember-list.md) | [conversationmember](conversationmember.md)コレクション | チャット内のすべてのユーザーの一覧を取得します。|
 |[チャットメンバーを取得する](../api/conversationmember-get.md) | [conversationmember](conversationmember.md) | チャットで1人のユーザーを取得します。|
-|[チャット内のメッセージを一覧表示する](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | 1 対 1 またはグループ チャットでのメッセージを取得します。 |
-|[チャット内のメッセージを取得する](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | チャット内の 1 つのメッセージを取得します。 |
+|[チャット内のメッセージを一覧表示する](../api/chatmessage-list.md)  | [chatMessage](../resources/chatmessage.md) | 1 対 1 またはグループ チャットでのメッセージを取得します。 |
+|[チャット内のメッセージを取得する](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | チャット内の 1 つのメッセージを取得します。 |
 
 ## <a name="properties"></a>Properties
 

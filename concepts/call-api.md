@@ -4,12 +4,12 @@ description: 'Microsoft Graph リソースにアクセスして操作するに�
 localization_priority: Normal
 author: VinodRavichandran
 ms.prod: microsoft-teams
-ms.openlocfilehash: 627fb614f8084abe6980ed095a7a55adfa6a3f12
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b2b1af0aa2d2e31bbaa4fd70ef87a2dddef5284f
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570251"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778629"
 ---
 # <a name="calling-the-microsoft-graph-api"></a>Microsoft Graph API を呼び出す
 
@@ -34,7 +34,7 @@ Microsoft Graph API のすべての要求は、次の基本的な URL パター�
 - `{resource}` は、以下のようなリソースのセグメントまたはパスです。
   - `users`, `groups`, `devices`, `organization`
   - 別名 `me`、サインインしているユーザーに解決されます
-   - ユーザーに属するリソース (`me/events`、`me/drive`、`me/messages` など)
+  - ユーザーに属するリソース (`me/events`、`me/drive`、`me/messages` など)
   - 別名 `myOrganization`、サインインしているユーザーの組織のテナントに解決されます
 - `[query_parameters]` は、追加のクエリ パラメーター (`$filter` や `$select` など) を表します。
 

@@ -3,12 +3,12 @@ title: Microsoft Graph クライアントを作成する
 description: Microsoft Graph への呼び出しを行うために使用するクライアントを作成する方法について説明します。 認証を設定し、独立 cloud を選択する方法について説明します。
 localization_priority: Normal
 author: MichaelMainer
-ms.openlocfilehash: 3d120f626f3623545366a105aaf9c072c8501e1b
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: cfff3b8f19b27e360977259d06df730abfd38bf3
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33630189"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778734"
 ---
 # <a name="create-a-microsoft-graph-client"></a>Microsoft Graph クライアントを作成する
 
@@ -16,15 +16,20 @@ Microsoft Graph クライアントは、Microsoft Graph を呼び出すことが
 
 次のコード例は、サポートされている言語で認証プロバイダを使用して Microsoft Graph クライアントのインスタンスを作成する方法を示しています。 認証プロバイダーは、アプリケーションのアクセストークンの取得を処理します。 言語とプラットフォームごとに、さまざまな認証プロバイダを使用できます。 さまざまなアプリケーションプロバイダーが、さまざまなクライアントシナリオをサポートしています。 シナリオに適したプロバイダーとオプションの詳細については、「[認証プロバイダーを選択](choose-authentication-providers.md)する」を参照してください。
 
-# <a name="ctabcs"></a>[Visual](#tab/CS)
+# <a name="ctabcs"></a>[C#](#tab/CS)
 
 ```csharp
-var app = DeviceCodeProvider.CreateClientApplication("INSERT-CLIENT-APP-ID");
-var authProvider = new DeviceCodeProvider(app);
-var client = new GraphServiceClient(authProvider);
+// Build a client application.
+IPublicClientApplication publicClientApplication = PublicClientApplicationBuilder
+            .Create("INSERT-CLIENT-APP-ID")
+            .Build();
+// Create an authentication provider by passing in a client application and graph scopes.
+DeviceCodeProvider authProvider = new DeviceCodeProvider(publicClientApplication, graphScopes);
+// Create a new instance of GraphServiceClient with the authentication provider.
+GraphServiceClient graphClient = new GraphServiceClient(authProvider);
 ```
 
-# <a name="javascripttabjavascript"></a>[Java](#tab/Javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/Javascript)
 
 ```javascript
 const clientId = "INSERT-CLIENT-APP-ID"; // Client Id of the registered application
@@ -37,7 +42,7 @@ const graphScopes = ["user.read", "mail.send"]; // An array of graph scopes
 
 // Initialize the MSAL @see https://github.com/AzureAD/microsoft-authentication-library-for-js/wiki/MSAL-basics#initialization-of-msal
 const userAgentApplication = new UserAgentApplication(clientId, undefined, callback, options);
-const authProvider = new MSALAuthenticationProvider(userAgentApplication, scopes);
+const authProvider = new MSALAuthenticationProvider(userAgentApplication, graphScopes );
 ```
 
 # <a name="javatabjava"></a>[Java](#tab/Java)

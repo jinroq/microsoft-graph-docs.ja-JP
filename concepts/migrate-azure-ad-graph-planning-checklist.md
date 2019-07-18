@@ -4,12 +4,12 @@ description: Azure AD Graph から Microsoft Graph にアプリを移行する�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 78b6ba30d84a2ca71ae8998df1321b2b8e0ba331
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 905a692e6a4fddf71b6488e1695957cba5b182ae
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33630224"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778265"
 ---
 # <a name="app-migration-planning-checklist"></a>アプリの移行計画チェックリスト
 
@@ -41,9 +41,9 @@ ms.locfileid: "33630224"
 
 ## <a name="step-3-review-app-details"></a>手順 3: アプリの詳細を確認する
 
-  - [アプリの登録](migrate-azure-ad-graph-app-registration.md)と同意の変更 (none である必要があります)。
-  - トークンの取得と[認証のライブラリ](migrate-azure-ad-graph-authentication-library.md)。
-  - .NET アプリケーションの場合、[クライアントライブラリ](migrate-azure-ad-graph-client-libraries.md)を使用します。
+- [アプリの登録](migrate-azure-ad-graph-app-registration.md)と同意の変更 (none である必要があります)。
+- トークンの取得と[認証のライブラリ](migrate-azure-ad-graph-authentication-library.md)。
+- .NET アプリケーションの場合、[クライアントライブラリ](migrate-azure-ad-graph-client-libraries.md)を使用します。
 
 ## <a name="step-4-deploy-test-and-extend-your-app"></a>手順 4: アプリの展開、テスト、拡張
 

@@ -3,12 +3,12 @@ title: OneNote クライアントを開く
 description: 'ページまたはノートブックの **links** プロパティを使用して、OneNote アプリケーションで特定のぺージまたはノートブックを開きます。 '
 author: Jewan-microsoft
 localization_priority: Normal
-ms.openlocfilehash: b4ad078443bd6d85c46a6e23552ddc730c725b51
-ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
+ms.openlocfilehash: d9f4ec45e79ed0526b4d02a6c3f676944384ab46
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35236287"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778293"
 ---
 # <a name="open-the-onenote-client"></a>OneNote クライアントを開く
 
@@ -31,13 +31,13 @@ ms.locfileid: "35236287"
 
 - **oneNoteClientUrl** 
 
-    - OneNote クライアントがデバイスにインストールされている場合は、そのクライアントを開きます。 この URL には、*onenote* プレフィックスが含まれています。
-    - Opens the language-specific version if one is installed on the device. Otherwise, uses the platform language setting.
+  - OneNote クライアントがデバイスにインストールされている場合は、そのクライアントを開きます。 この URL には、*onenote* プレフィックスが含まれています。
+  - Opens the language-specific version if one is installed on the device. Otherwise, uses the platform language setting.
 
 - **oneNoteWebUrl** 
 
-    - デバイスの既定のブラウザーが OneNote をサポートしている場合、その web 上で OneNote を開きます。 
-    - ブラウザーの言語設定を使用します。
+  - デバイスの既定のブラウザーが OneNote をサポートしている場合、その web 上で OneNote を開きます。 
+  - ブラウザーの言語設定を使用します。
 
 
 OneNote API は、次の操作の HTTP 応答で **links** プロパティを返します。
