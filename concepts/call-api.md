@@ -4,72 +4,72 @@ description: 'Microsoft Graph リソースにアクセスして操作するに�
 localization_priority: Normal
 author: VinodRavichandran
 ms.prod: microsoft-teams
-ms.openlocfilehash: 627fb614f8084abe6980ed095a7a55adfa6a3f12
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b2b1af0aa2d2e31bbaa4fd70ef87a2dddef5284f
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570251"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778629"
 ---
-# <a name="calling-the-microsoft-graph-api"></a><span data-ttu-id="53f12-103">Microsoft Graph API を呼び出す</span><span class="sxs-lookup"><span data-stu-id="53f12-103">Calling the Microsoft Graph API</span></span>
+# <a name="calling-the-microsoft-graph-api"></a><span data-ttu-id="16096-103">Microsoft Graph API を呼び出す</span><span class="sxs-lookup"><span data-stu-id="16096-103">Calling the Microsoft Graph API</span></span>
 
-<span data-ttu-id="53f12-104">Microsoft Graph リソースにアクセスして操作するには、次の操作のいずれを使用して、リソース URL を呼び出し指定します。</span><span class="sxs-lookup"><span data-stu-id="53f12-104">To access and manipulate a Microsoft Graph resource, you call and specify the resource URLs using one of the following operations:</span></span>   
+<span data-ttu-id="16096-104">Microsoft Graph リソースにアクセスして操作するには、次の操作のいずれを使用して、リソース URL を呼び出し指定します。</span><span class="sxs-lookup"><span data-stu-id="16096-104">To access and manipulate a Microsoft Graph resource, you call and specify the resource URLs using one of the following operations:</span></span>   
 
-- <span data-ttu-id="53f12-105">GET</span><span class="sxs-lookup"><span data-stu-id="53f12-105">GET</span></span>
-- <span data-ttu-id="53f12-106">POST</span><span class="sxs-lookup"><span data-stu-id="53f12-106">POST</span></span>
-- <span data-ttu-id="53f12-107">PATCH</span><span class="sxs-lookup"><span data-stu-id="53f12-107">PATCH</span></span>
-- <span data-ttu-id="53f12-108">PUT</span><span class="sxs-lookup"><span data-stu-id="53f12-108">PUT</span></span>
-- <span data-ttu-id="53f12-109">DELETE</span><span class="sxs-lookup"><span data-stu-id="53f12-109">DELETE</span></span> 
+- <span data-ttu-id="16096-105">GET</span><span class="sxs-lookup"><span data-stu-id="16096-105">GET</span></span>
+- <span data-ttu-id="16096-106">POST</span><span class="sxs-lookup"><span data-stu-id="16096-106">POST</span></span>
+- <span data-ttu-id="16096-107">PATCH</span><span class="sxs-lookup"><span data-stu-id="16096-107">PATCH</span></span>
+- <span data-ttu-id="16096-108">PUT</span><span class="sxs-lookup"><span data-stu-id="16096-108">PUT</span></span>
+- <span data-ttu-id="16096-109">DELETE</span><span class="sxs-lookup"><span data-stu-id="16096-109">DELETE</span></span> 
 
-<span data-ttu-id="53f12-110">Microsoft Graph API のすべての要求は、次の基本的な URL パターンを使用します。</span><span class="sxs-lookup"><span data-stu-id="53f12-110">All Microsoft Graph API requests use the following basic URL pattern:</span></span>
+<span data-ttu-id="16096-110">Microsoft Graph API のすべての要求は、次の基本的な URL パターンを使用します。</span><span class="sxs-lookup"><span data-stu-id="16096-110">All Microsoft Graph API requests use the following basic URL pattern:</span></span>
 
 ```
     https://graph.microsoft.com/{version}/{resource}?[query_parameters]
 ```
 
-<span data-ttu-id="53f12-111">この URL で、</span><span class="sxs-lookup"><span data-stu-id="53f12-111">For this URL:</span></span>
+<span data-ttu-id="16096-111">この URL で、</span><span class="sxs-lookup"><span data-stu-id="16096-111">For this URL:</span></span>
 
-- <span data-ttu-id="53f12-112">`https://graph.microsoft.com` は、Microsoft Graph API エンドポイントです。</span><span class="sxs-lookup"><span data-stu-id="53f12-112">`https://graph.microsoft.com` is the Microsoft Graph API endpoint.</span></span>
-- <span data-ttu-id="53f12-113">`{version}` は、ターゲットのサービス バージョンです。たとえば、`v1.0` または `beta` です。</span><span class="sxs-lookup"><span data-stu-id="53f12-113">`{version}` is the target service version, for example, `v1.0` or `beta`.</span></span>
-- <span data-ttu-id="53f12-114">`{resource}` は、以下のようなリソースのセグメントまたはパスです。</span><span class="sxs-lookup"><span data-stu-id="53f12-114">`{resource}` is resource segment or path, such as:</span></span>
-  - <span data-ttu-id="53f12-115">`users`, `groups`, `devices`, `organization`</span><span class="sxs-lookup"><span data-stu-id="53f12-115"></span></span>
-  - <span data-ttu-id="53f12-116">別名 `me`、サインインしているユーザーに解決されます</span><span class="sxs-lookup"><span data-stu-id="53f12-116">The alias `me`, which resolves to the signed-in user</span></span>
-   - <span data-ttu-id="53f12-117">ユーザーに属するリソース (`me/events`、`me/drive`、`me/messages` など)</span><span class="sxs-lookup"><span data-stu-id="53f12-117">The resources belonging to a user, such as `me/events`, `me/drive` or `me/messages`</span></span>
-  - <span data-ttu-id="53f12-118">別名 `myOrganization`、サインインしているユーザーの組織のテナントに解決されます</span><span class="sxs-lookup"><span data-stu-id="53f12-118">The alias `myOrganization`, which resolves to the tenant of the organization signed-in user</span></span>
-- <span data-ttu-id="53f12-119">`[query_parameters]` は、追加のクエリ パラメーター (`$filter` や `$select` など) を表します。</span><span class="sxs-lookup"><span data-stu-id="53f12-119">`[query_parameters]` represents additional query parameters such as `$filter` and `$select`.</span></span>
+- <span data-ttu-id="16096-112">`https://graph.microsoft.com` は、Microsoft Graph API エンドポイントです。</span><span class="sxs-lookup"><span data-stu-id="16096-112">`https://graph.microsoft.com` is the Microsoft Graph API endpoint.</span></span>
+- <span data-ttu-id="16096-113">`{version}` は、ターゲットのサービス バージョンです。たとえば、`v1.0` または `beta` です。</span><span class="sxs-lookup"><span data-stu-id="16096-113">`{version}` is the target service version, for example, `v1.0` or `beta`.</span></span>
+- <span data-ttu-id="16096-114">`{resource}` は、以下のようなリソースのセグメントまたはパスです。</span><span class="sxs-lookup"><span data-stu-id="16096-114">`{resource}` is resource segment or path, such as:</span></span>
+  - <span data-ttu-id="16096-115">`users`, `groups`, `devices`, `organization`</span><span class="sxs-lookup"><span data-stu-id="16096-115"></span></span>
+  - <span data-ttu-id="16096-116">別名 `me`、サインインしているユーザーに解決されます</span><span class="sxs-lookup"><span data-stu-id="16096-116">The alias `me`, which resolves to the signed-in user</span></span>
+  - <span data-ttu-id="16096-117">ユーザーに属するリソース (`me/events`、`me/drive`、`me/messages` など)</span><span class="sxs-lookup"><span data-stu-id="16096-117">The resources belonging to a user, such as `me/events`, `me/drive` or `me/messages`</span></span>
+  - <span data-ttu-id="16096-118">別名 `myOrganization`、サインインしているユーザーの組織のテナントに解決されます</span><span class="sxs-lookup"><span data-stu-id="16096-118">The alias `myOrganization`, which resolves to the tenant of the organization signed-in user</span></span>
+- <span data-ttu-id="16096-119">`[query_parameters]` は、追加のクエリ パラメーター (`$filter` や `$select` など) を表します。</span><span class="sxs-lookup"><span data-stu-id="16096-119">`[query_parameters]` represents additional query parameters such as `$filter` and `$select`.</span></span>
 
-<span data-ttu-id="53f12-p101">必要に応じて、テナントを要求の一部としても指定できます。`me` を使用する場合は、テナントを指定しません。一般的な要求の一覧については、「[Microsoft Graph の概要](overview.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="53f12-p101">Optionally, you can also specify the tenant as part of your request. When using `me`, do not specify the tenant. For a list of common requests, see [Overview of Microsoft Graph](overview.md).</span></span>
+<span data-ttu-id="16096-p101">必要に応じて、テナントを要求の一部としても指定できます。`me` を使用する場合は、テナントを指定しません。一般的な要求の一覧については、「[Microsoft Graph の概要](overview.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="16096-p101">Optionally, you can also specify the tenant as part of your request. When using `me`, do not specify the tenant. For a list of common requests, see [Overview of Microsoft Graph](overview.md).</span></span>
 
-## <a name="microsoft-graph-api-metadata"></a><span data-ttu-id="53f12-123">Microsoft Graph API メタデータ</span><span class="sxs-lookup"><span data-stu-id="53f12-123">Microsoft Graph API metadata</span></span>
-<span data-ttu-id="53f12-p102">メタデータ ドキュメント ($metadata) が、サービス ルートに公開されます。たとえば、v1.0 およびベータ版のサービス ドキュメントは、次の URL で表示できます。</span><span class="sxs-lookup"><span data-stu-id="53f12-p102">The metadata document ($metadata) is published at the service root. For example, you can view the service document for the v1.0 and beta versions via the following URLs.</span></span>
+## <a name="microsoft-graph-api-metadata"></a><span data-ttu-id="16096-123">Microsoft Graph API メタデータ</span><span class="sxs-lookup"><span data-stu-id="16096-123">Microsoft Graph API metadata</span></span>
+<span data-ttu-id="16096-p102">メタデータ ドキュメント ($metadata) が、サービス ルートに公開されます。たとえば、v1.0 およびベータ版のサービス ドキュメントは、次の URL で表示できます。</span><span class="sxs-lookup"><span data-stu-id="16096-p102">The metadata document ($metadata) is published at the service root. For example, you can view the service document for the v1.0 and beta versions via the following URLs.</span></span>
 
-<span data-ttu-id="53f12-126">Microsoft Graph API `v1.0` メタデータ。</span><span class="sxs-lookup"><span data-stu-id="53f12-126">Microsoft Graph API `v1.0` metadata.</span></span>
+<span data-ttu-id="16096-126">Microsoft Graph API `v1.0` メタデータ。</span><span class="sxs-lookup"><span data-stu-id="16096-126">Microsoft Graph API `v1.0` metadata.</span></span>
 ```
     https://graph.microsoft.com/v1.0/$metadata
 ```
-<span data-ttu-id="53f12-127">Microsoft Graph API `beta` メタデータ。</span><span class="sxs-lookup"><span data-stu-id="53f12-127">Microsoft Graph API `beta` metadata.</span></span>
+<span data-ttu-id="16096-127">Microsoft Graph API `beta` メタデータ。</span><span class="sxs-lookup"><span data-stu-id="16096-127">Microsoft Graph API `beta` metadata.</span></span>
 ```
     https://graph.microsoft.com/beta/$metadata
 ```
 
-<span data-ttu-id="53f12-128">メタデータにより、Microsoft Graph が送受信する要求および応答パケットを構成するエンティティの種類およびセット、複合型、列挙型などの、Microsoft Graph のデータ モデルを参照し、理解することができます。</span><span class="sxs-lookup"><span data-stu-id="53f12-128">The metadata allows you to see and understand the data model of Microsoft Graph, including the entity types and sets, complex types, and enums that make up the request and response packets sent to and from Microsoft Graph.</span></span>
-<span data-ttu-id="53f12-129">メタデータを使用して、Microsoft Graph のエンティティ間のリレーションシップを理解することができ、また、エンティティ間を移動する URL を確立することができます。</span><span class="sxs-lookup"><span data-stu-id="53f12-129">You can use the metadata to understand the realtionships between entities in Microsoft Graph and establish URLs that navigate between entities.</span></span>
-<span data-ttu-id="53f12-130">このナビゲーション ベースの相互関連性は、Microsoft Graph 固有の特徴となっています。</span><span class="sxs-lookup"><span data-stu-id="53f12-130">This navigation-based interconnectedness gives Microsoft Graph its unique character.</span></span>
+<span data-ttu-id="16096-128">メタデータにより、Microsoft Graph が送受信する要求および応答パケットを構成するエンティティの種類およびセット、複合型、列挙型などの、Microsoft Graph のデータ モデルを参照し、理解することができます。</span><span class="sxs-lookup"><span data-stu-id="16096-128">The metadata allows you to see and understand the data model of Microsoft Graph, including the entity types and sets, complex types, and enums that make up the request and response packets sent to and from Microsoft Graph.</span></span>
+<span data-ttu-id="16096-129">メタデータを使用して、Microsoft Graph のエンティティ間のリレーションシップを理解することができ、また、エンティティ間を移動する URL を確立することができます。</span><span class="sxs-lookup"><span data-stu-id="16096-129">You can use the metadata to understand the realtionships between entities in Microsoft Graph and establish URLs that navigate between entities.</span></span>
+<span data-ttu-id="16096-130">このナビゲーション ベースの相互関連性は、Microsoft Graph 固有の特徴となっています。</span><span class="sxs-lookup"><span data-stu-id="16096-130">This navigation-based interconnectedness gives Microsoft Graph its unique character.</span></span>
 
-<span data-ttu-id="53f12-131">パス URL リソース名、クエリ パラメーター、アクション パラメーターと値は、大文字と小文字が区別されません。</span><span class="sxs-lookup"><span data-stu-id="53f12-131">Path URL resource names, query parameters, and action parameters and values are case insensitive.</span></span> <span data-ttu-id="53f12-132">ただし、割り当てる値、エンティティ ID、その他の base64 でエンコードされた値では大文字と小文字が区別されます。</span><span class="sxs-lookup"><span data-stu-id="53f12-132">However, values you assign, entity IDs, and other base64-encoded values are case-sensitive.</span></span>
+<span data-ttu-id="16096-131">パス URL リソース名、クエリ パラメーター、アクション パラメーターと値は、大文字と小文字が区別されません。</span><span class="sxs-lookup"><span data-stu-id="16096-131">Path URL resource names, query parameters, and action parameters and values are case insensitive.</span></span> <span data-ttu-id="16096-132">ただし、割り当てる値、エンティティ ID、その他の base64 でエンコードされた値では大文字と小文字が区別されます。</span><span class="sxs-lookup"><span data-stu-id="16096-132">However, values you assign, entity IDs, and other base64-encoded values are case-sensitive.</span></span>
 
-<span data-ttu-id="53f12-133">次のセクションでは、Microsoft Graph API を呼び出す基本的なプログラミング パターンをいくつか示します。</span><span class="sxs-lookup"><span data-stu-id="53f12-133">The following sections show a few basic programming pattern calls to the Microsoft Graph API.</span></span>
+<span data-ttu-id="16096-133">次のセクションでは、Microsoft Graph API を呼び出す基本的なプログラミング パターンをいくつか示します。</span><span class="sxs-lookup"><span data-stu-id="16096-133">The following sections show a few basic programming pattern calls to the Microsoft Graph API.</span></span>
 
-## <a name="navigate-from-a-set-to-a-member"></a><span data-ttu-id="53f12-134">セットからメンバーへの移動</span><span class="sxs-lookup"><span data-stu-id="53f12-134">Navigate from a set to a member</span></span>
+## <a name="navigate-from-a-set-to-a-member"></a><span data-ttu-id="16096-134">セットからメンバーへの移動</span><span class="sxs-lookup"><span data-stu-id="16096-134">Navigate from a set to a member</span></span>
 
-<span data-ttu-id="53f12-p105">ユーザーに関する情報を表示するには、HTTPS GET 要求を使用して、`users` コレクションから識別子によって識別される特定ユーザーの `User` エンティティを取得します。`User` エンティティでは、`id` プロパティと `userPrincipalName` プロパティのいずれかを識別子として使用できます。次の要求の例では、ユーザーの ID として `userPrincipalName` の値が使用されています。</span><span class="sxs-lookup"><span data-stu-id="53f12-p105">To view the information about a user, you get the `User` entity from the `users` collection to the specific user identified by its identifier, using an HTTPS GET request. For a `User` entity, either the `id` or `userPrincipalName` property can be used as the identifier. The following example request uses the `userPrincipalName` value as the user's id.</span></span> 
+<span data-ttu-id="16096-p105">ユーザーに関する情報を表示するには、HTTPS GET 要求を使用して、`users` コレクションから識別子によって識別される特定ユーザーの `User` エンティティを取得します。`User` エンティティでは、`id` プロパティと `userPrincipalName` プロパティのいずれかを識別子として使用できます。次の要求の例では、ユーザーの ID として `userPrincipalName` の値が使用されています。</span><span class="sxs-lookup"><span data-stu-id="16096-p105">To view the information about a user, you get the `User` entity from the `users` collection to the specific user identified by its identifier, using an HTTPS GET request. For a `User` entity, either the `id` or `userPrincipalName` property can be used as the identifier. The following example request uses the `userPrincipalName` value as the user's id.</span></span> 
 
 ```no-highlight 
 GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com HTTP/1.1
 Authorization : Bearer <access_token>
 ```
 
-<span data-ttu-id="53f12-138">成功した場合は、次のように、ペイロードにユーザー リソース表現を含む 200 OK 応答が返されるはずです。</span><span class="sxs-lookup"><span data-stu-id="53f12-138">If successful, you should get a 200 OK response containing the user resource representation in the payload, as shown as follows:</span></span>
+<span data-ttu-id="16096-138">成功した場合は、次のように、ペイロードにユーザー リソース表現を含む 200 OK 応答が返されるはずです。</span><span class="sxs-lookup"><span data-stu-id="16096-138">If successful, you should get a 200 OK response containing the user resource representation in the payload, as shown as follows:</span></span>
 
 ```no-highlight 
 HTTP/1.1 200 OK
@@ -91,15 +91,15 @@ content-length: 982
 ```
 
 
-## <a name="project-from-an-entity-to-properties"></a><span data-ttu-id="53f12-139">1 つのエンティティから複数のプロパティへのプロジェクション</span><span class="sxs-lookup"><span data-stu-id="53f12-139">Project from an entity to properties</span></span>
-<span data-ttu-id="53f12-p106">ユーザーから提供された _About me_ の記述やスキル セットなどのユーザーの個人データのみを取得するには、以前の要求に _select_ クエリ パラメーターを追加することができます。たとえば、</span><span class="sxs-lookup"><span data-stu-id="53f12-p106">To retrieve only the user's biographical data, such as the user's provided _About me_ description and their skill set, you can add the _select_ query parameter to the previous request. For example:</span></span>
+## <a name="project-from-an-entity-to-properties"></a><span data-ttu-id="16096-139">1 つのエンティティから複数のプロパティへのプロジェクション</span><span class="sxs-lookup"><span data-stu-id="16096-139">Project from an entity to properties</span></span>
+<span data-ttu-id="16096-p106">ユーザーから提供された _About me_ の記述やスキル セットなどのユーザーの個人データのみを取得するには、以前の要求に _select_ クエリ パラメーターを追加することができます。たとえば、</span><span class="sxs-lookup"><span data-stu-id="16096-p106">To retrieve only the user's biographical data, such as the user's provided _About me_ description and their skill set, you can add the _select_ query parameter to the previous request. For example:</span></span>
 
 ```no-highlight 
 GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com?$select=displayName,aboutMe,skills HTTP/1.1
 Authorization : Bearer <access_token>
 ```
 
-<span data-ttu-id="53f12-142">成功した場合の応答は、200 OK 状態と次の形式のペイロードを返します。</span><span class="sxs-lookup"><span data-stu-id="53f12-142">The successful response returns the 200 OK status and a payload of the following format:</span></span>
+<span data-ttu-id="16096-142">成功した場合の応答は、200 OK 状態と次の形式のペイロードを返します。</span><span class="sxs-lookup"><span data-stu-id="16096-142">The successful response returns the 200 OK status and a payload of the following format:</span></span>
 
 ```no-highlight 
 HTTP/1.1 200 OK
@@ -118,17 +118,17 @@ content-length: 169
 }
 ```
 
-<span data-ttu-id="53f12-143">ここでは、`user` エンティティ上のプロパティ セット全体ではなく、`aboutMe` プロパティと `displayName` プロパティと `skills` プロパティのみが返されます。</span><span class="sxs-lookup"><span data-stu-id="53f12-143">Here, instead of the entire property sets on the `user` entity, only the `aboutMe`, `displayName`, and `skills` properties are returned.</span></span>
+<span data-ttu-id="16096-143">ここでは、`user` エンティティ上のプロパティ セット全体ではなく、`aboutMe` プロパティと `displayName` プロパティと `skills` プロパティのみが返されます。</span><span class="sxs-lookup"><span data-stu-id="16096-143">Here, instead of the entire property sets on the `user` entity, only the `aboutMe`, `displayName`, and `skills` properties are returned.</span></span>
 
-## <a name="traverse-to-another-resource-via-relationship"></a><span data-ttu-id="53f12-144">リレーションシップ経由の別のリソースへの走査</span><span class="sxs-lookup"><span data-stu-id="53f12-144">Traverse to another resource via relationship</span></span>
-<span data-ttu-id="53f12-p107">上司は、直属の部下である他のユーザーとの `directReports` リレーションシップを保持します。ユーザーの直属の部下の一覧を問い合わせるために、次の HTTPS GET 要求を使用して、リレーションシップ走査経由で指定されたターゲットに移動できます。</span><span class="sxs-lookup"><span data-stu-id="53f12-p107">A manager holds a `directReports` relationship with the other users reporting to him or her. To query the list of the direct reports of a user, you can use the following HTTPS GET request to navigate to the intended target via relationship traversal.</span></span> 
+## <a name="traverse-to-another-resource-via-relationship"></a><span data-ttu-id="16096-144">リレーションシップ経由の別のリソースへの走査</span><span class="sxs-lookup"><span data-stu-id="16096-144">Traverse to another resource via relationship</span></span>
+<span data-ttu-id="16096-p107">上司は、直属の部下である他のユーザーとの `directReports` リレーションシップを保持します。ユーザーの直属の部下の一覧を問い合わせるために、次の HTTPS GET 要求を使用して、リレーションシップ走査経由で指定されたターゲットに移動できます。</span><span class="sxs-lookup"><span data-stu-id="16096-p107">A manager holds a `directReports` relationship with the other users reporting to him or her. To query the list of the direct reports of a user, you can use the following HTTPS GET request to navigate to the intended target via relationship traversal.</span></span> 
 
 ```no-highlight 
 GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com/directReports HTTP/1.1
 Authorization : Bearer <access_token>
 ```
 
-<span data-ttu-id="53f12-147">成功した場合の応答は、200 OK 状態と次の形式のペイロードを返します。</span><span class="sxs-lookup"><span data-stu-id="53f12-147">The successful response returns the 200 OK status and a payload of the following format:</span></span>
+<span data-ttu-id="16096-147">成功した場合の応答は、200 OK 状態と次の形式のペイロードを返します。</span><span class="sxs-lookup"><span data-stu-id="16096-147">The successful response returns the 200 OK status and a payload of the following format:</span></span>
 
 ```no-highlight 
 HTTP/1.1 200 OK
@@ -146,7 +146,7 @@ content-length: 152
 }
 ```
 
-<span data-ttu-id="53f12-p108">同様に、リレーションシップをフォローすると関連リソースに移動できます。たとえば、`user => messages` リレーションシップは、Azure AD ユーザーから Outlook メール メッセージのセットへのグラフ走査を可能にします。次の例は、REST API 呼び出しでこれを行う方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="53f12-p108">Similarly, you can follow a relationship to navigate to related resources. For example, the `user => messages` relationship enables traversal from an Azure AD User to a set of Outlook mail messages. The following example shows how to do this in a REST API call:</span></span>
+<span data-ttu-id="16096-p108">同様に、リレーションシップをフォローすると関連リソースに移動できます。たとえば、`user => messages` リレーションシップは、Azure AD ユーザーから Outlook メール メッセージのセットへのグラフ走査を可能にします。次の例は、REST API 呼び出しでこれを行う方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="16096-p108">Similarly, you can follow a relationship to navigate to related resources. For example, the `user => messages` relationship enables traversal from an Azure AD User to a set of Outlook mail messages. The following example shows how to do this in a REST API call:</span></span>
 
 
 ```no-highlight 
@@ -155,7 +155,7 @@ Authorization : Bearer <access_token>
 ```
 
     
-<span data-ttu-id="53f12-151">成功した場合の応答は、200 OK 状態と次の形式のペイロードを返します。</span><span class="sxs-lookup"><span data-stu-id="53f12-151">The successful response returns the 200 OK status and a payload of the following format:</span></span>
+<span data-ttu-id="16096-151">成功した場合の応答は、200 OK 状態と次の形式のペイロードを返します。</span><span class="sxs-lookup"><span data-stu-id="16096-151">The successful response returns the 200 OK status and a payload of the following format:</span></span>
 
 
 ```no-highlight 
@@ -192,15 +192,15 @@ content-length: 147
 }
 ```
 
-## <a name="project-from-entities-to-properties"></a><span data-ttu-id="53f12-152">複数のエンティティから複数のプロパティへのプロジェクション</span><span class="sxs-lookup"><span data-stu-id="53f12-152">Project from entities to properties</span></span>
-<span data-ttu-id="53f12-p109">単一のエンティティからそのプロパティへのプロジェクションに加えて、同様の `select` クエリ オプションをエンティティ コレクションに適用して、それらのプロパティのいずれかのコレクションにプロジェクションさせることもできます。たとえば、サインインしているユーザーのドライブにある項目を問い合わせるには、次の HTTPS GET 要求を送信します。</span><span class="sxs-lookup"><span data-stu-id="53f12-p109">In addition to projection from a single entity to its properties, you can also apply the similar `select` query option to an entity collection to project them to a collection of some of their properties. For example, to query the name of the signed-in user's drive items, you can submit the following HTTPS GET request:</span></span>
+## <a name="project-from-entities-to-properties"></a><span data-ttu-id="16096-152">複数のエンティティから複数のプロパティへのプロジェクション</span><span class="sxs-lookup"><span data-stu-id="16096-152">Project from entities to properties</span></span>
+<span data-ttu-id="16096-p109">単一のエンティティからそのプロパティへのプロジェクションに加えて、同様の `select` クエリ オプションをエンティティ コレクションに適用して、それらのプロパティのいずれかのコレクションにプロジェクションさせることもできます。たとえば、サインインしているユーザーのドライブにある項目を問い合わせるには、次の HTTPS GET 要求を送信します。</span><span class="sxs-lookup"><span data-stu-id="16096-p109">In addition to projection from a single entity to its properties, you can also apply the similar `select` query option to an entity collection to project them to a collection of some of their properties. For example, to query the name of the signed-in user's drive items, you can submit the following HTTPS GET request:</span></span>
 
 ```no-highlight 
 GET https://graph.microsoft.com/v1.0/me/drive/root/children?$select=name HTTP/1.1
 Authorization : Bearer <access_token>
 ```
 
-<span data-ttu-id="53f12-155">成功した場合の応答は、次の例に示すように、200 OK 状態コードと、共有ファイルの名前と種類を含むペイロードを返します。</span><span class="sxs-lookup"><span data-stu-id="53f12-155">The successful response returns a 200 OK status code and a payload containing the names and types of the shared files, as shown in the following example:</span></span>
+<span data-ttu-id="16096-155">成功した場合の応答は、次の例に示すように、200 OK 状態コードと、共有ファイルの名前と種類を含むペイロードを返します。</span><span class="sxs-lookup"><span data-stu-id="16096-155">The successful response returns a 200 OK status code and a payload containing the names and types of the shared files, as shown in the following example:</span></span>
 
 ```no-highlight 
 {
@@ -222,8 +222,8 @@ Authorization : Bearer <access_token>
 }
 ```
 
-## <a name="query-a-subset-of-users-with-the-filtering-query-option"></a><span data-ttu-id="53f12-156">フィルター処理クエリ オプションを使用してユーザーのサブセットを問い合わせる</span><span class="sxs-lookup"><span data-stu-id="53f12-156">Query a subset of users with the filtering query option</span></span>
-<span data-ttu-id="53f12-p110">組織内の特定の役職の従業員を検索するには、ユーザー コレクションから移動してから、_filter_ クエリ オプションを指定することができます。次に、例を示します。</span><span class="sxs-lookup"><span data-stu-id="53f12-p110">To find the employees of a specific job title within an organization, you can navigate from the users collection and then specify a _filter_ query option. An example is shown as follows:</span></span>
+## <a name="query-a-subset-of-users-with-the-filtering-query-option"></a><span data-ttu-id="16096-156">フィルター処理クエリ オプションを使用してユーザーのサブセットを問い合わせる</span><span class="sxs-lookup"><span data-stu-id="16096-156">Query a subset of users with the filtering query option</span></span>
+<span data-ttu-id="16096-p110">組織内の特定の役職の従業員を検索するには、ユーザー コレクションから移動してから、_filter_ クエリ オプションを指定することができます。次に、例を示します。</span><span class="sxs-lookup"><span data-stu-id="16096-p110">To find the employees of a specific job title within an organization, you can navigate from the users collection and then specify a _filter_ query option. An example is shown as follows:</span></span>
 
     
 ```no-highlight 
@@ -231,7 +231,7 @@ GET https://graph.microsoft.com/v1.0/users/?$filter=jobTitle+eq+%27Helper%27 HTT
 Authorization : Bearer <access_token>
 ```
 
-<span data-ttu-id="53f12-159">成功した場合の応答は、次の例に示すように、200 OK 状態コードと指定された役職 (`'Helper'`) を持つユーザーの一覧を返します。</span><span class="sxs-lookup"><span data-stu-id="53f12-159">The successful response returns the 200 OK status code and a list of users with the specified job title (`'Helper'`), as shown in the following example:</span></span>
+<span data-ttu-id="16096-159">成功した場合の応答は、次の例に示すように、200 OK 状態コードと指定された役職 (`'Helper'`) を持つユーザーの一覧を返します。</span><span class="sxs-lookup"><span data-stu-id="16096-159">The successful response returns the 200 OK status code and a list of users with the specified job title (`'Helper'`), as shown in the following example:</span></span>
 
 ```no-highlight 
 HTTP/1.1 200 OK
@@ -268,8 +268,8 @@ content-length: 986
 }
 ```
 
-## <a name="call-actions-or-functions"></a><span data-ttu-id="53f12-160">アクションまたは関数を呼び出す</span><span class="sxs-lookup"><span data-stu-id="53f12-160">Call actions or functions</span></span>
-<span data-ttu-id="53f12-p111">Microsoft Graph は、_アクション_および_関数_もサポートし、標準の HTTP メソッドとは単純に一致しない方法でリソースを操作します。たとえば、次の HTTPS POST 要求は、サインインしているユーザー (`me`) に電子メール メッセージを送信させます。</span><span class="sxs-lookup"><span data-stu-id="53f12-p111">Microsoft Graph also supports _actions_ and _functions_ to manipulate resources in ways that are not a simple fit with standard HTTP methods. For example, the following HTTPS POST request lets the signed-in user (`me`) send an email message:</span></span>
+## <a name="call-actions-or-functions"></a><span data-ttu-id="16096-160">アクションまたは関数を呼び出す</span><span class="sxs-lookup"><span data-stu-id="16096-160">Call actions or functions</span></span>
+<span data-ttu-id="16096-p111">Microsoft Graph は、_アクション_および_関数_もサポートし、標準の HTTP メソッドとは単純に一致しない方法でリソースを操作します。たとえば、次の HTTPS POST 要求は、サインインしているユーザー (`me`) に電子メール メッセージを送信させます。</span><span class="sxs-lookup"><span data-stu-id="16096-p111">Microsoft Graph also supports _actions_ and _functions_ to manipulate resources in ways that are not a simple fit with standard HTTP methods. For example, the following HTTPS POST request lets the signed-in user (`me`) send an email message:</span></span>
 ```no-highlight 
 POST https://graph.microsoft.com/v1.0/me/sendMail HTTP/1.1
 authorization: bearer <access_token>
@@ -302,9 +302,9 @@ content-length: 96
 }
 ```
 
-<span data-ttu-id="53f12-163">要求ペイロードには、`sendMail` アクションへの入力が含まれています。これは、$metadata でも定義されています。</span><span class="sxs-lookup"><span data-stu-id="53f12-163">The request payload contains the input to the `sendMail` action, which is also defined in the $metadata.</span></span>
+<span data-ttu-id="16096-163">要求ペイロードには、`sendMail` アクションへの入力が含まれています。これは、$metadata でも定義されています。</span><span class="sxs-lookup"><span data-stu-id="16096-163">The request payload contains the input to the `sendMail` action, which is also defined in the $metadata.</span></span>
 
-## <a name="use-microsoft-graph-client-libraries"></a><span data-ttu-id="53f12-164">Microsoft Graph クライアント ライブラリを使う</span><span class="sxs-lookup"><span data-stu-id="53f12-164">Use Microsoft Graph client libraries</span></span>
-<span data-ttu-id="53f12-p112">SDK のパワーと使いやすさは気に入っていただけましたか?REST API を使用していつでも Microsoft Graph を呼び出すことができますが、多数の一般的なプラットフォームのための SDK も用意されています。</span><span class="sxs-lookup"><span data-stu-id="53f12-p112">Like the power and ease of SDKs? While you can always call Microsoft Graph using the REST API, we also provide SDKs for many popular platforms.</span></span>
+## <a name="use-microsoft-graph-client-libraries"></a><span data-ttu-id="16096-164">Microsoft Graph クライアント ライブラリを使う</span><span class="sxs-lookup"><span data-stu-id="16096-164">Use Microsoft Graph client libraries</span></span>
+<span data-ttu-id="16096-p112">SDK のパワーと使いやすさは気に入っていただけましたか?REST API を使用していつでも Microsoft Graph を呼び出すことができますが、多数の一般的なプラットフォームのための SDK も用意されています。</span><span class="sxs-lookup"><span data-stu-id="16096-p112">Like the power and ease of SDKs? While you can always call Microsoft Graph using the REST API, we also provide SDKs for many popular platforms.</span></span>
 
-<span data-ttu-id="53f12-167">[コード サンプルと SDK](https://developer.microsoft.com/graph/code-samples-and-sdks) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="53f12-167">Explore our [code samples and SDKs](https://developer.microsoft.com/graph/code-samples-and-sdks).</span></span>
+<span data-ttu-id="16096-167">[コード サンプルと SDK](https://developer.microsoft.com/graph/code-samples-and-sdks) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="16096-167">Explore our [code samples and SDKs](https://developer.microsoft.com/graph/code-samples-and-sdks).</span></span>

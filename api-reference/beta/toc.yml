@@ -9217,9 +9217,9 @@
                 - name: チャットの取得
                   href: api/chat-get.md
                 - name: チャット内のメッセージを一覧表示する
-                  href: api/chat-list-messages.md
+                  href: api/chatmessage-list.md
                 - name: チャット内のメッセージを取得する
-                  href: api/chat-get-message.md
+                  href: api/chatmessage-get.md
                 - name: チャットのメンバーを取得する
                   href: api/conversationmember-list.md
                 - name: チャットで1人のメンバーを取得する

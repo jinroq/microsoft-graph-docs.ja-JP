@@ -4,82 +4,82 @@ description: Microsoft Graph API からのサインインリソース (エンテ
 localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8a6f2e36a909575388b0df1ca77272e21824760f
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 44df448a514e173d4e22d615a27afdd07843593f
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35461499"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778475"
 ---
-# <a name="list-signins"></a><span data-ttu-id="d9af5-103">signIn を一覧表示する</span><span class="sxs-lookup"><span data-stu-id="d9af5-103">List signIns</span></span>
+# <a name="list-signins"></a><span data-ttu-id="20e53-103">signIn を一覧表示する</span><span class="sxs-lookup"><span data-stu-id="20e53-103">List signIns</span></span>
 
-<span data-ttu-id="d9af5-104">テナントの Azure AD ユーザーのサインインを取得します。</span><span class="sxs-lookup"><span data-stu-id="d9af5-104">Retrieve the Azure AD user sign-ins for your tenant.</span></span> <span data-ttu-id="d9af5-105">ユーザー名とパスワードが認証トークンの一部として渡され、正常なフェデレーションサインインがサインインログに含まれているなど、本質的に対話型のサインインは現在ありません。</span><span class="sxs-lookup"><span data-stu-id="d9af5-105">Sign-ins that are interactive in nature (where a username/password is passed as part of auth token) and successful federated sign-ins are currently included in the sign-in logs.</span></span>
+<span data-ttu-id="20e53-104">テナントの Azure AD ユーザーのサインインを取得します。</span><span class="sxs-lookup"><span data-stu-id="20e53-104">Retrieve the Azure AD user sign-ins for your tenant.</span></span> <span data-ttu-id="20e53-105">ユーザー名とパスワードが認証トークンの一部として渡され、正常なフェデレーションサインインがサインインログに含まれているなど、本質的に対話型のサインインは現在ありません。</span><span class="sxs-lookup"><span data-stu-id="20e53-105">Sign-ins that are interactive in nature (where a username/password is passed as part of auth token) and successful federated sign-ins are currently included in the sign-in logs.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="d9af5-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="d9af5-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="20e53-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="20e53-106">Permissions</span></span>
 
-<span data-ttu-id="d9af5-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions_reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d9af5-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).</span></span>
+<span data-ttu-id="20e53-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions_reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="20e53-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).</span></span>
 
-|<span data-ttu-id="d9af5-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="d9af5-109">Permission type</span></span>      | <span data-ttu-id="d9af5-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="d9af5-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="20e53-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="20e53-109">Permission type</span></span>      | <span data-ttu-id="20e53-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="20e53-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="d9af5-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="d9af5-111">Delegated (work or school account)</span></span> | <span data-ttu-id="d9af5-112">監査ログ。 all および All を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d9af5-112">AuditLog.Read.All and Directory.Read.All</span></span> |
-|<span data-ttu-id="d9af5-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="d9af5-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d9af5-114">サポートされていません</span><span class="sxs-lookup"><span data-stu-id="d9af5-114">Not supported</span></span>   |
-|<span data-ttu-id="d9af5-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="d9af5-115">Application</span></span> | <span data-ttu-id="d9af5-116">AuditLog.Read.All</span><span class="sxs-lookup"><span data-stu-id="d9af5-116">AuditLog.Read.All</span></span> |
+|<span data-ttu-id="20e53-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="20e53-111">Delegated (work or school account)</span></span> | <span data-ttu-id="20e53-112">監査ログ。 all および All を参照してください。</span><span class="sxs-lookup"><span data-stu-id="20e53-112">AuditLog.Read.All and Directory.Read.All</span></span> |
+|<span data-ttu-id="20e53-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="20e53-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="20e53-114">サポートされていません</span><span class="sxs-lookup"><span data-stu-id="20e53-114">Not supported</span></span>   |
+|<span data-ttu-id="20e53-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="20e53-115">Application</span></span> | <span data-ttu-id="20e53-116">監査ログ。 all および All を参照してください。</span><span class="sxs-lookup"><span data-stu-id="20e53-116">AuditLog.Read.All and Directory.Read.All</span></span>  |
 
-## <a name="http-request"></a><span data-ttu-id="d9af5-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="d9af5-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="20e53-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="20e53-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET auditLogs/signIns
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="d9af5-118">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="d9af5-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="20e53-118">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="20e53-118">Optional query parameters</span></span>
 
-<span data-ttu-id="d9af5-119">このメソッドは、応答をカスタマイズするために、次の OData クエリパラメーターをサポートします。</span><span class="sxs-lookup"><span data-stu-id="d9af5-119">This method supports the following OData query parameters to help customize the response.</span></span> <span data-ttu-id="d9af5-120">これらのパラメーターを使用する方法の詳細については、[OData クエリ パラメーター](/graph/query_parameters)をご確認ください。</span><span class="sxs-lookup"><span data-stu-id="d9af5-120">For details about how to use these parameters, see [OData query parameters](/graph/query_parameters).</span></span>
+<span data-ttu-id="20e53-119">このメソッドは、応答をカスタマイズするために、次の OData クエリパラメーターをサポートします。</span><span class="sxs-lookup"><span data-stu-id="20e53-119">This method supports the following OData query parameters to help customize the response.</span></span> <span data-ttu-id="20e53-120">これらのパラメーターを使用する方法の詳細については、[OData クエリ パラメーター](/graph/query_parameters)をご確認ください。</span><span class="sxs-lookup"><span data-stu-id="20e53-120">For details about how to use these parameters, see [OData query parameters](/graph/query_parameters).</span></span>
 
-|<span data-ttu-id="d9af5-121">Name</span><span class="sxs-lookup"><span data-stu-id="d9af5-121">Name</span></span>     |<span data-ttu-id="d9af5-122">説明</span><span class="sxs-lookup"><span data-stu-id="d9af5-122">Description</span></span>                            |<span data-ttu-id="d9af5-123">例</span><span class="sxs-lookup"><span data-stu-id="d9af5-123">Example</span></span>|
+|<span data-ttu-id="20e53-121">Name</span><span class="sxs-lookup"><span data-stu-id="20e53-121">Name</span></span>     |<span data-ttu-id="20e53-122">説明</span><span class="sxs-lookup"><span data-stu-id="20e53-122">Description</span></span>                            |<span data-ttu-id="20e53-123">例</span><span class="sxs-lookup"><span data-stu-id="20e53-123">Example</span></span>|
 |:--------------------|----------------|------------------------------------------------------------------------|
-|[<span data-ttu-id="d9af5-124">$filter</span><span class="sxs-lookup"><span data-stu-id="d9af5-124">$filter</span></span>](/graph/query_parameters#filter-parameter)|<span data-ttu-id="d9af5-125">結果 (行) をフィルターします。</span><span class="sxs-lookup"><span data-stu-id="d9af5-125">Filters results (rows).</span></span> |`/auditLogs/signIns?&$filter=createdDateTime le 2018-01-24`
-|[<span data-ttu-id="d9af5-126">$top</span><span class="sxs-lookup"><span data-stu-id="d9af5-126">$top</span></span>](/graph/query_parameters#top-parameter)|<span data-ttu-id="d9af5-127">結果のページ サイズを設定します。</span><span class="sxs-lookup"><span data-stu-id="d9af5-127">Sets the page size of results.</span></span>|`/auditLogs/signIns?$top=1`|
-|[<span data-ttu-id="d9af5-128">$skiptoken</span><span class="sxs-lookup"><span data-stu-id="d9af5-128">$skiptoken</span></span>](/graph/query_parameters#skiptoken-parameter)|<span data-ttu-id="d9af5-129">複数ページにわたる結果セットから、結果の次のページを取得します。</span><span class="sxs-lookup"><span data-stu-id="d9af5-129">Retrieves the next page of results from result sets that span multiple pages.</span></span>|`/auditLogs/signIns?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
+|[<span data-ttu-id="20e53-124">$filter</span><span class="sxs-lookup"><span data-stu-id="20e53-124">$filter</span></span>](/graph/query_parameters#filter-parameter)|<span data-ttu-id="20e53-125">結果 (行) をフィルターします。</span><span class="sxs-lookup"><span data-stu-id="20e53-125">Filters results (rows).</span></span> |`/auditLogs/signIns?&$filter=createdDateTime le 2018-01-24`
+|[<span data-ttu-id="20e53-126">$top</span><span class="sxs-lookup"><span data-stu-id="20e53-126">$top</span></span>](/graph/query_parameters#top-parameter)|<span data-ttu-id="20e53-127">結果のページ サイズを設定します。</span><span class="sxs-lookup"><span data-stu-id="20e53-127">Sets the page size of results.</span></span>|`/auditLogs/signIns?$top=1`|
+|[<span data-ttu-id="20e53-128">$skiptoken</span><span class="sxs-lookup"><span data-stu-id="20e53-128">$skiptoken</span></span>](/graph/query_parameters#skiptoken-parameter)|<span data-ttu-id="20e53-129">複数ページにわたる結果セットから、結果の次のページを取得します。</span><span class="sxs-lookup"><span data-stu-id="20e53-129">Retrieves the next page of results from result sets that span multiple pages.</span></span>|`/auditLogs/signIns?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
 
-### <a name="attributes-supported-by-filter-parameter"></a><span data-ttu-id="d9af5-130">$Filter パラメーターでサポートされている属性</span><span class="sxs-lookup"><span data-stu-id="d9af5-130">Attributes supported by $filter parameter</span></span>
+### <a name="attributes-supported-by-filter-parameter"></a><span data-ttu-id="20e53-130">$Filter パラメーターでサポートされている属性</span><span class="sxs-lookup"><span data-stu-id="20e53-130">Attributes supported by $filter parameter</span></span>
 
-|<span data-ttu-id="d9af5-131">属性名</span><span class="sxs-lookup"><span data-stu-id="d9af5-131">Attribute name</span></span> |<span data-ttu-id="d9af5-132">サポートされる演算子</span><span class="sxs-lookup"><span data-stu-id="d9af5-132">Supported operators</span></span>|
+|<span data-ttu-id="20e53-131">属性名</span><span class="sxs-lookup"><span data-stu-id="20e53-131">Attribute name</span></span> |<span data-ttu-id="20e53-132">サポートされる演算子</span><span class="sxs-lookup"><span data-stu-id="20e53-132">Supported operators</span></span>|
 |:----------------|:------|
-|<span data-ttu-id="d9af5-133">id</span><span class="sxs-lookup"><span data-stu-id="d9af5-133">id</span></span>|<span data-ttu-id="d9af5-134">eq</span><span class="sxs-lookup"><span data-stu-id="d9af5-134">eq</span></span>|
-|<span data-ttu-id="d9af5-135">userId</span><span class="sxs-lookup"><span data-stu-id="d9af5-135">userId</span></span>|<span data-ttu-id="d9af5-136">eq</span><span class="sxs-lookup"><span data-stu-id="d9af5-136">eq</span></span>|
-|<span data-ttu-id="d9af5-137">appId</span><span class="sxs-lookup"><span data-stu-id="d9af5-137">appId</span></span>|<span data-ttu-id="d9af5-138">eq</span><span class="sxs-lookup"><span data-stu-id="d9af5-138">eq</span></span>|
-|<span data-ttu-id="d9af5-139">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="d9af5-139">createdDateTime</span></span>| <span data-ttu-id="d9af5-140">eq、le、ge</span><span class="sxs-lookup"><span data-stu-id="d9af5-140">eq, le, ge</span></span>|
-|<span data-ttu-id="d9af5-141">userDisplayName</span><span class="sxs-lookup"><span data-stu-id="d9af5-141">userDisplayName</span></span>| <span data-ttu-id="d9af5-142">eq、startswith</span><span class="sxs-lookup"><span data-stu-id="d9af5-142">eq, startswith</span></span>|
-|<span data-ttu-id="d9af5-143">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="d9af5-143">userPrincipalName</span></span>| <span data-ttu-id="d9af5-144">eq、startswith</span><span class="sxs-lookup"><span data-stu-id="d9af5-144">eq, startswith</span></span>|
-|<span data-ttu-id="d9af5-145">appDisplayName</span><span class="sxs-lookup"><span data-stu-id="d9af5-145">appDisplayName</span></span>| <span data-ttu-id="d9af5-146">eq、startswith</span><span class="sxs-lookup"><span data-stu-id="d9af5-146">eq, startswith</span></span>|
-|<span data-ttu-id="d9af5-147">ipAddress</span><span class="sxs-lookup"><span data-stu-id="d9af5-147">ipAddress</span></span>| <span data-ttu-id="d9af5-148">eq、startswith</span><span class="sxs-lookup"><span data-stu-id="d9af5-148">eq, startswith</span></span>|
-|<span data-ttu-id="d9af5-149">location/city</span><span class="sxs-lookup"><span data-stu-id="d9af5-149">location/city</span></span>| <span data-ttu-id="d9af5-150">eq、startswith</span><span class="sxs-lookup"><span data-stu-id="d9af5-150">eq, startswith</span></span>|
-|<span data-ttu-id="d9af5-151">location/state</span><span class="sxs-lookup"><span data-stu-id="d9af5-151">location/state</span></span>| <span data-ttu-id="d9af5-152">eq、startswith</span><span class="sxs-lookup"><span data-stu-id="d9af5-152">eq, startswith</span></span>|
-|<span data-ttu-id="d9af5-153">location/countryOrRegion</span><span class="sxs-lookup"><span data-stu-id="d9af5-153">location/countryOrRegion</span></span>| <span data-ttu-id="d9af5-154">eq、startswith</span><span class="sxs-lookup"><span data-stu-id="d9af5-154">eq, startswith</span></span>|
-|<span data-ttu-id="d9af5-155">status/errorCode</span><span class="sxs-lookup"><span data-stu-id="d9af5-155">status/errorCode</span></span>|<span data-ttu-id="d9af5-156">eq</span><span class="sxs-lookup"><span data-stu-id="d9af5-156">eq</span></span>|
-|<span data-ttu-id="d9af5-157">initiatedBy/user/id</span><span class="sxs-lookup"><span data-stu-id="d9af5-157">initiatedBy/user/id</span></span>|<span data-ttu-id="d9af5-158">eq</span><span class="sxs-lookup"><span data-stu-id="d9af5-158">eq</span></span>|
-|<span data-ttu-id="d9af5-159">initiatedBy/user/displayName</span><span class="sxs-lookup"><span data-stu-id="d9af5-159">initiatedBy/user/displayName</span></span>| <span data-ttu-id="d9af5-160">eq</span><span class="sxs-lookup"><span data-stu-id="d9af5-160">eq</span></span>|
-|<span data-ttu-id="d9af5-161">initiatedBy/user/userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="d9af5-161">initiatedBy/user/userPrincipalName</span></span>| <span data-ttu-id="d9af5-162">eq、startswith</span><span class="sxs-lookup"><span data-stu-id="d9af5-162">eq, startswith</span></span>|
-|<span data-ttu-id="d9af5-163">clientAppUsed</span><span class="sxs-lookup"><span data-stu-id="d9af5-163">clientAppUsed</span></span>| <span data-ttu-id="d9af5-164">eq</span><span class="sxs-lookup"><span data-stu-id="d9af5-164">eq</span></span>|
-|<span data-ttu-id="d9af5-165">conditionalAccessStatus</span><span class="sxs-lookup"><span data-stu-id="d9af5-165">conditionalAccessStatus</span></span> | <span data-ttu-id="d9af5-166">eq</span><span class="sxs-lookup"><span data-stu-id="d9af5-166">eq</span></span>|
-|<span data-ttu-id="d9af5-167">deviceDetails/browser</span><span class="sxs-lookup"><span data-stu-id="d9af5-167">deviceDetails/browser</span></span>| <span data-ttu-id="d9af5-168">eq、startswith</span><span class="sxs-lookup"><span data-stu-id="d9af5-168">eq, startswith</span></span>|
-|<span data-ttu-id="d9af5-169">deviceDetails/operatingSystem</span><span class="sxs-lookup"><span data-stu-id="d9af5-169">deviceDetails/operatingSystem</span></span>| <span data-ttu-id="d9af5-170">eq、startswith</span><span class="sxs-lookup"><span data-stu-id="d9af5-170">eq, startswith</span></span>|
-|<span data-ttu-id="d9af5-171">correlationId</span><span class="sxs-lookup"><span data-stu-id="d9af5-171">correlationId</span></span>| <span data-ttu-id="d9af5-172">eq</span><span class="sxs-lookup"><span data-stu-id="d9af5-172">eq</span></span>|
-|<span data-ttu-id="d9af5-173">isRisky</span><span class="sxs-lookup"><span data-stu-id="d9af5-173">isRisky</span></span>| <span data-ttu-id="d9af5-174">eq</span><span class="sxs-lookup"><span data-stu-id="d9af5-174">eq</span></span>|
+|<span data-ttu-id="20e53-133">id</span><span class="sxs-lookup"><span data-stu-id="20e53-133">id</span></span>|<span data-ttu-id="20e53-134">eq</span><span class="sxs-lookup"><span data-stu-id="20e53-134">eq</span></span>|
+|<span data-ttu-id="20e53-135">userId</span><span class="sxs-lookup"><span data-stu-id="20e53-135">userId</span></span>|<span data-ttu-id="20e53-136">eq</span><span class="sxs-lookup"><span data-stu-id="20e53-136">eq</span></span>|
+|<span data-ttu-id="20e53-137">appId</span><span class="sxs-lookup"><span data-stu-id="20e53-137">appId</span></span>|<span data-ttu-id="20e53-138">eq</span><span class="sxs-lookup"><span data-stu-id="20e53-138">eq</span></span>|
+|<span data-ttu-id="20e53-139">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="20e53-139">createdDateTime</span></span>| <span data-ttu-id="20e53-140">eq、le、ge</span><span class="sxs-lookup"><span data-stu-id="20e53-140">eq, le, ge</span></span>|
+|<span data-ttu-id="20e53-141">userDisplayName</span><span class="sxs-lookup"><span data-stu-id="20e53-141">userDisplayName</span></span>| <span data-ttu-id="20e53-142">eq、startswith</span><span class="sxs-lookup"><span data-stu-id="20e53-142">eq, startswith</span></span>|
+|<span data-ttu-id="20e53-143">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="20e53-143">userPrincipalName</span></span>| <span data-ttu-id="20e53-144">eq、startswith</span><span class="sxs-lookup"><span data-stu-id="20e53-144">eq, startswith</span></span>|
+|<span data-ttu-id="20e53-145">appDisplayName</span><span class="sxs-lookup"><span data-stu-id="20e53-145">appDisplayName</span></span>| <span data-ttu-id="20e53-146">eq、startswith</span><span class="sxs-lookup"><span data-stu-id="20e53-146">eq, startswith</span></span>|
+|<span data-ttu-id="20e53-147">ipAddress</span><span class="sxs-lookup"><span data-stu-id="20e53-147">ipAddress</span></span>| <span data-ttu-id="20e53-148">eq、startswith</span><span class="sxs-lookup"><span data-stu-id="20e53-148">eq, startswith</span></span>|
+|<span data-ttu-id="20e53-149">location/city</span><span class="sxs-lookup"><span data-stu-id="20e53-149">location/city</span></span>| <span data-ttu-id="20e53-150">eq、startswith</span><span class="sxs-lookup"><span data-stu-id="20e53-150">eq, startswith</span></span>|
+|<span data-ttu-id="20e53-151">location/state</span><span class="sxs-lookup"><span data-stu-id="20e53-151">location/state</span></span>| <span data-ttu-id="20e53-152">eq、startswith</span><span class="sxs-lookup"><span data-stu-id="20e53-152">eq, startswith</span></span>|
+|<span data-ttu-id="20e53-153">location/countryOrRegion</span><span class="sxs-lookup"><span data-stu-id="20e53-153">location/countryOrRegion</span></span>| <span data-ttu-id="20e53-154">eq、startswith</span><span class="sxs-lookup"><span data-stu-id="20e53-154">eq, startswith</span></span>|
+|<span data-ttu-id="20e53-155">status/errorCode</span><span class="sxs-lookup"><span data-stu-id="20e53-155">status/errorCode</span></span>|<span data-ttu-id="20e53-156">eq</span><span class="sxs-lookup"><span data-stu-id="20e53-156">eq</span></span>|
+|<span data-ttu-id="20e53-157">initiatedBy/user/id</span><span class="sxs-lookup"><span data-stu-id="20e53-157">initiatedBy/user/id</span></span>|<span data-ttu-id="20e53-158">eq</span><span class="sxs-lookup"><span data-stu-id="20e53-158">eq</span></span>|
+|<span data-ttu-id="20e53-159">initiatedBy/user/displayName</span><span class="sxs-lookup"><span data-stu-id="20e53-159">initiatedBy/user/displayName</span></span>| <span data-ttu-id="20e53-160">eq</span><span class="sxs-lookup"><span data-stu-id="20e53-160">eq</span></span>|
+|<span data-ttu-id="20e53-161">initiatedBy/user/userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="20e53-161">initiatedBy/user/userPrincipalName</span></span>| <span data-ttu-id="20e53-162">eq、startswith</span><span class="sxs-lookup"><span data-stu-id="20e53-162">eq, startswith</span></span>|
+|<span data-ttu-id="20e53-163">clientAppUsed</span><span class="sxs-lookup"><span data-stu-id="20e53-163">clientAppUsed</span></span>| <span data-ttu-id="20e53-164">eq</span><span class="sxs-lookup"><span data-stu-id="20e53-164">eq</span></span>|
+|<span data-ttu-id="20e53-165">conditionalAccessStatus</span><span class="sxs-lookup"><span data-stu-id="20e53-165">conditionalAccessStatus</span></span> | <span data-ttu-id="20e53-166">eq</span><span class="sxs-lookup"><span data-stu-id="20e53-166">eq</span></span>|
+|<span data-ttu-id="20e53-167">deviceDetails/browser</span><span class="sxs-lookup"><span data-stu-id="20e53-167">deviceDetails/browser</span></span>| <span data-ttu-id="20e53-168">eq、startswith</span><span class="sxs-lookup"><span data-stu-id="20e53-168">eq, startswith</span></span>|
+|<span data-ttu-id="20e53-169">deviceDetails/operatingSystem</span><span class="sxs-lookup"><span data-stu-id="20e53-169">deviceDetails/operatingSystem</span></span>| <span data-ttu-id="20e53-170">eq、startswith</span><span class="sxs-lookup"><span data-stu-id="20e53-170">eq, startswith</span></span>|
+|<span data-ttu-id="20e53-171">correlationId</span><span class="sxs-lookup"><span data-stu-id="20e53-171">correlationId</span></span>| <span data-ttu-id="20e53-172">eq</span><span class="sxs-lookup"><span data-stu-id="20e53-172">eq</span></span>|
+|<span data-ttu-id="20e53-173">isRisky</span><span class="sxs-lookup"><span data-stu-id="20e53-173">isRisky</span></span>| <span data-ttu-id="20e53-174">eq</span><span class="sxs-lookup"><span data-stu-id="20e53-174">eq</span></span>|
 
-## <a name="response"></a><span data-ttu-id="d9af5-175">応答</span><span class="sxs-lookup"><span data-stu-id="d9af5-175">Response</span></span>
+## <a name="response"></a><span data-ttu-id="20e53-175">応答</span><span class="sxs-lookup"><span data-stu-id="20e53-175">Response</span></span>
 
-<span data-ttu-id="d9af5-176">成功した場合、このメソッドは `200 OK` 応答コードと、[signIn](../resources/signin.md) オブジェクトのコレクションを応答本文で返します。</span><span class="sxs-lookup"><span data-stu-id="d9af5-176">If successful, this method returns a `200 OK` response code and collection of [signIn](../resources/signin.md) objects in the response body.</span></span>
+<span data-ttu-id="20e53-176">成功した場合、このメソッドは `200 OK` 応答コードと、[signIn](../resources/signin.md) オブジェクトのコレクションを応答本文で返します。</span><span class="sxs-lookup"><span data-stu-id="20e53-176">If successful, this method returns a `200 OK` response code and collection of [signIn](../resources/signin.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d9af5-177">例</span><span class="sxs-lookup"><span data-stu-id="d9af5-177">Example</span></span>
+## <a name="example"></a><span data-ttu-id="20e53-177">例</span><span class="sxs-lookup"><span data-stu-id="20e53-177">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="d9af5-178">要求</span><span class="sxs-lookup"><span data-stu-id="d9af5-178">Request</span></span>
+### <a name="request"></a><span data-ttu-id="20e53-178">要求</span><span class="sxs-lookup"><span data-stu-id="20e53-178">Request</span></span>
 
-<span data-ttu-id="d9af5-179">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="d9af5-179">Here is an example of the request.</span></span>
+<span data-ttu-id="20e53-179">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="20e53-179">Here is an example of the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="d9af5-180">プロトコル</span><span class="sxs-lookup"><span data-stu-id="d9af5-180">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="20e53-180">プロトコル</span><span class="sxs-lookup"><span data-stu-id="20e53-180">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_signins"
@@ -87,25 +87,25 @@ GET auditLogs/signIns
 ```http
 GET https://graph.microsoft.com/v1.0/auditLogs/signIns
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="d9af5-181">C#</span><span class="sxs-lookup"><span data-stu-id="d9af5-181">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="20e53-181">C#</span><span class="sxs-lookup"><span data-stu-id="20e53-181">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-signins-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="d9af5-182">Javascript</span><span class="sxs-lookup"><span data-stu-id="d9af5-182">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="20e53-182">Javascript</span><span class="sxs-lookup"><span data-stu-id="20e53-182">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-signins-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="d9af5-183">目的-C</span><span class="sxs-lookup"><span data-stu-id="d9af5-183">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="20e53-183">目的-C</span><span class="sxs-lookup"><span data-stu-id="20e53-183">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-signins-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="d9af5-184">応答</span><span class="sxs-lookup"><span data-stu-id="d9af5-184">Response</span></span>
+### <a name="response"></a><span data-ttu-id="20e53-184">応答</span><span class="sxs-lookup"><span data-stu-id="20e53-184">Response</span></span>
 
-<span data-ttu-id="d9af5-185">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="d9af5-185">Here is an example of the response.</span></span>
-><span data-ttu-id="d9af5-p104">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="d9af5-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="20e53-185">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="20e53-185">Here is an example of the response.</span></span>
+><span data-ttu-id="20e53-p104">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="20e53-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
