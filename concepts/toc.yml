@@ -248,6 +248,8 @@ items:
             href: teams-list-all-teams.md
           - name: 組み込みのタブを設定する
             href: teams-configuring-builtin-tabs.md
+          - name: 保護された API
+            href: teams-protected-apis.md
       - name: ブックとグラフ
         displayName: Excel
         items:
