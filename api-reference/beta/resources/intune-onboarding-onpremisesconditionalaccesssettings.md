@@ -4,12 +4,12 @@ description: テナントの Exchange OnPremises 条件付きアクセス設定�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5a0e4151150b53947fceff1a3937e703256b42f8
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 21b35b3d3926fe01b9fab9270ff3083df3320221
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940170"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34958670"
 ---
 # <a name="onpremisesconditionalaccesssettings-resource-type"></a>onPremisesConditionalAccessSettings リソースの種類
 
@@ -34,7 +34,7 @@ ms.locfileid: "33940170"
 |excludedGroups|Guid コレクション|オンプレミスの条件付きアクセスで除外されるユーザー グループ。 これらのグループ内のすべてのユーザーは、条件付きアクセス ポリシーから除外されます。|
 |overrideDefaultRule|ブール型 (Boolean)|デバイスでアクセスが付与されていることを確認できるようにするとき、既定のアクセス ルールを上書きします。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -59,6 +59,7 @@ ms.locfileid: "33940170"
   "overrideDefaultRule": true
 }
 ```
+
 
 
 

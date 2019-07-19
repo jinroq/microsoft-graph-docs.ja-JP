@@ -4,12 +4,12 @@ description: DeviceManagementIntentDeviceSettingStateSummary を削除します�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 74720c39ac2dc2715bf84d00b7f14871df5c4feb
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 51cdac2f7ca3d213190fac59ca047b65e01fd4a8
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33916113"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34960336"
 ---
 # <a name="delete-devicemanagementintentdevicesettingstatesummary"></a>DeviceManagementIntentDeviceSettingStateSummary の削除
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManageme
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: DataSharingConsent オブジェクトのプロパティを更新し
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4bbe415e838d49d379a1e3f02af6a25a5b8ef559
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 584830ca0733c6526a4ef44c6bd277bfd952e8fe
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33910136"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959195"
 ---
 # <a name="update-datasharingconsent"></a>DataSharingConsent の更新
 
@@ -101,6 +101,7 @@ Content-Length: 382
   "grantedByUserId": "Granted By User Id value"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 認証に使用する EAP 以外のメソッド。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5fd5116edef51ed794e4f8cb838101e85f894a21
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 08c8240f28b015939a10a41bfd437c8f62fd4003
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951025"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34958817"
 ---
 # <a name="noneapauthenticationmethodforeapttlstype-enum-type"></a>None Apauthenticationmethod_ Apttlstype 列挙型
 
@@ -26,6 +26,7 @@ ms.locfileid: "33951025"
 |challengeHandshakeAuthenticationProtocol|1-d|チャレンジハンドシェイク認証プロトコル (CHAP)。|
 |Microsoft Chap|pbm-2| Microsoft CHAP (ms-chap)。|
 |microsoftChapVersionTwo|1/3|Microsoft CHAP バージョン 2 (ms-chap v2)。|
+
 
 
 

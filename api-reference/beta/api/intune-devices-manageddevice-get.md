@@ -4,12 +4,12 @@ description: managedDevice オブジェクトのプロパティとリレーシ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 586824b92e1c22363f14bd066e30f0f3e22369ec
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a42bf7215b3ea1d551678040719e0a4748972dc8
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33909688"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34958439"
 ---
 # <a name="get-manageddevice"></a>Get managedDevice
 
@@ -241,6 +241,7 @@ Content-Length: 7686
   }
 }
 ```
+
 
 
 

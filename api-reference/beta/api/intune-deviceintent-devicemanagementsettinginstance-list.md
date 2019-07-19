@@ -4,12 +4,12 @@ description: DeviceManagementSettingInstance オブジェクトのプロパテ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d02c227af57811a2dddc7939a8fb3199cf391e9b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 92494650cb11834124c6c66f22f1d99cb6517c71
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33917100"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959825"
 ---
 # <a name="list-devicemanagementsettinginstances"></a>DeviceManagementSettingInstances を一覧表示する
 
@@ -78,6 +78,7 @@ Content-Length: 249
   ]
 }
 ```
+
 
 
 

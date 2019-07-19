@@ -4,12 +4,12 @@ description: MacOS LOB アプリのプロパティと継承されたプロパテ
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ff19a274464d75ede2a78f93ad30e29da6894a06
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6433f01da0e1dbdf238e34a0e89ed237d401069e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950313"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34957707"
 ---
 # <a name="macoslobapp-resource-type"></a>macOSLobApp リソースの種類
 
@@ -50,7 +50,7 @@ MacOS LOB アプリのプロパティと継承されたプロパティが含ま�
 |uploadState|Int32|アップロード状態。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 [MobileApp](../resources/intune-apps-mobileapp.md)から継承されます。 可能な値は、`notPublished`、`processing`、`published` です。|
 |isAssigned|Boolean|アプリが少なくとも1つのグループに割り当てられているかどうかを示す値。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|roleScopeTagIds|String collection|このモバイルアプリの範囲タグ id のリスト。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|roleScopeTagIds|文字列コレクション|このモバイルアプリの範囲タグ id のリスト。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |dependentAppCount|Int32|子アプリが持つ依存関係の合計数。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |committedContentVersion|String|内部にコミットされたコンテンツのバージョン。 [mobileLobApp](../resources/intune-apps-mobilelobapp.md) から継承します|
 |fileName|String|メインの LOB アプリケーションのファイル名。 [mobileLobApp](../resources/intune-apps-mobilelobapp.md) から継承します|
@@ -62,10 +62,10 @@ MacOS LOB アプリのプロパティと継承されたプロパティが含ま�
 |childApps|[Macoslobchildapp](../resources/intune-apps-macoslobchildapp.md)コレクション|このバンドルパッケージのアプリリスト|
 |identityVersion|String|ID のバージョン。|
 |md5HashChunkSize|Int32|MD5 ハッシュのチャンクサイズ|
-|md5Hash|String collection|MD5 ハッシュコード|
+|md5Hash|文字列コレクション|MD5 ハッシュコード|
 |ignoreVersionDetection|Boolean|アプリをデバイスにインストールした後に、アプリのバージョンを使用してアプリを検出するかどうかを制御するブール値。 自己更新機能を使用する macOS 基幹業務 (LoB) アプリの場合は、true に設定します。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |categories|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) コレクション|このアプリのカテゴリのリスト。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
@@ -143,6 +143,7 @@ MacOS LOB アプリのプロパティと継承されたプロパティが含ま�
   "ignoreVersionDetection": true
 }
 ```
+
 
 
 

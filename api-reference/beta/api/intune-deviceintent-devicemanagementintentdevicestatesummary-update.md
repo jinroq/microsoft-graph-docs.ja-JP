@@ -4,12 +4,12 @@ description: DeviceManagementIntentDeviceStateSummary オブジェクトのプ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 21533dbc87ec722ce731ae7f166fb22cdb954bca
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6ad514cf26038dc71875e22c9ca2c774e4f17819
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33917170"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34960224"
 ---
 # <a name="update-devicemanagementintentdevicestatesummary"></a>DeviceManagementIntentDeviceStateSummary の更新
 
@@ -101,6 +101,7 @@ Content-Length: 286
   "successCount": 12
 }
 ```
+
 
 
 

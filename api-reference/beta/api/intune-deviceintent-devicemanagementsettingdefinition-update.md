@@ -4,12 +4,12 @@ description: DeviceManagementSettingDefinition オブジェクトのプロパテ
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 95e2052a56fcae6cd3ff48dba96512d0658f88b4
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: bccf0e045881c90a76539e0b40b3dbb0c8d77ea8
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33917086"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959909"
 ---
 # <a name="update-devicemanagementsettingdefinition"></a>DeviceManagementSettingDefinition の更新
 
@@ -59,7 +59,7 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/categories/{devic
 |isTopLevel|Boolean|設定が最上位レベルの場合は、コレクションまたは複雑な設定でラップする必要がなく構成できます。|
 |description|String|設定の説明|
 |Documentation Url|String|ドキュメントを設定するための Url|
-|keywords|String collection|設定に関連付けられているキーワード|
+|keywords|文字列コレクション|設定に関連付けられているキーワード|
 |式|[Devicemanagementconstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)コレクション|設定値の制約のコレクション|
 |ヲ|[Devicemanagementsettingdependency](../resources/intune-deviceintent-devicemanagementsettingdependency.md)コレクション|他の設定に対する依存関係のコレクション|
 
@@ -142,6 +142,7 @@ Content-Length: 777
   ]
 }
 ```
+
 
 
 

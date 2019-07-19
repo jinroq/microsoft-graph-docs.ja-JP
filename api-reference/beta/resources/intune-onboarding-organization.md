@@ -4,12 +4,12 @@ description: organization リソースは、グローバル設定インスタン
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0c587d5a15fa0161e10058eec4a2f8c6183a28a1
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 46186451d55247c3a405df83955113cfcf05e143
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940156"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34958628"
 ---
 # <a name="organization-resource-type"></a>組織リソースの種類
 
@@ -34,7 +34,7 @@ organization リソースは、グローバル設定インスタンスと、テ�
 |mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune-onboarding-mdmauthority.md)|モバイル デバイス管理権限。 可能な値は、`unknown`、`intune`、`sccm`、`office365` です。|
 |certificateConnectorSetting|[certificateConnectorSetting](../resources/intune-onboarding-certificateconnectorsetting.md)|証明書コネクタの設定。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -61,6 +61,7 @@ organization リソースは、グローバル設定インスタンスと、テ�
   }
 }
 ```
+
 
 
 

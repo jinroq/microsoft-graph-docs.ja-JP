@@ -4,12 +4,12 @@ description: 新しい dataSharingConsent オブジェクトを作成します�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 83928d0ee472d4c902ac7df75a17ab1cebe66ff3
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0748a104a9976f691f0f2f84e542ef37f57edbac
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33910179"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959258"
 ---
 # <a name="create-datasharingconsent"></a>DataSharingConsent を作成する
 
@@ -101,6 +101,7 @@ Content-Length: 382
   "grantedByUserId": "Granted By User Id value"
 }
 ```
+
 
 
 

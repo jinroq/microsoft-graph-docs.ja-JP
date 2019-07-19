@@ -4,12 +4,12 @@ description: デバイスのすべての Apple Vpp ライセンスを取り消�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 58d9a88e832a1648e7350ca98e59d5bf5a453df1
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b423bd3354df7c31f87079f0137d158f19b95af1
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33909562"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34958292"
 ---
 # <a name="revokeapplevpplicenses-action"></a>revokeAppleVppLicenses アクション
 
@@ -65,6 +65,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDe
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

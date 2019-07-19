@@ -4,12 +4,12 @@ description: DeviceManagementStringSettingInstance オブジェクトのプロ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0fd44c818384ac42e943158e506a8df512134824
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: cd6aaf22b6373c5b0f2d741590e50df1142ed941
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33916995"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959832"
 ---
 # <a name="get-devicemanagementstringsettinginstance"></a>DeviceManagementStringSettingInstance を取得する
 
@@ -80,6 +80,7 @@ Content-Length: 262
   }
 }
 ```
+
 
 
 

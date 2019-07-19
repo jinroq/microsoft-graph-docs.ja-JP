@@ -4,12 +4,12 @@ description: 新しい deviceManagementCollectionSettingDefinition オブジェ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a59f1bead14aa5a764ef1213dc65af56e4b9c0fd
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 161a0d432fcd1c8401fe81b36338e0debef12019
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33916672"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34960896"
 ---
 # <a name="create-devicemanagementcollectionsettingdefinition"></a>DeviceManagementCollectionSettingDefinition の作成
 
@@ -59,7 +59,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories/{device
 |isTopLevel|Boolean|設定が最上位レベルの場合は、 [Devicemanagementsettingdefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)から継承されたコレクションまたは複雑な設定でラップする必要がなく、構成することができます。|
 |description|String|[Devicemanagementsettingdefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)から継承された設定の説明|
 |Documentation Url|String|[Devicemanagementsettingdefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)から継承されたドキュメントを設定するための Url|
-|keywords|String collection|[Devicemanagementsettingdefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)から継承した設定に関連付けられているキーワード|
+|keywords|文字列コレクション|[Devicemanagementsettingdefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)から継承した設定に関連付けられているキーワード|
 |式|[Devicemanagementconstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)コレクション|[Devicemanagementsettingdefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)から継承された設定値の制約のコレクション|
 |ヲ|[Devicemanagementsettingdependency](../resources/intune-deviceintent-devicemanagementsettingdependency.md)コレクション|[Devicemanagementsettingdefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)から継承された他の設定に対する依存関係のコレクション|
 |elementDefinitionId|String|コレクションの各要素がどのようなものかを示す設定定義 ID。|
@@ -145,6 +145,7 @@ Content-Length: 844
   "elementDefinitionId": "Element Definition Id value"
 }
 ```
+
 
 
 

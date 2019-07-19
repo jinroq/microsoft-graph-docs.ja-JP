@@ -4,12 +4,12 @@ description: AppLogCollectionRequest オブジェクトのプロパティを更�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4bd90622a2062e80f16b090e5930e5cba18f405c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: cd916909727f24f6e767d9f197dd75eb0e1e9b05
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33910603"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959273"
 ---
 # <a name="update-applogcollectionrequest"></a>AppLogCollectionRequest の更新
 
@@ -53,7 +53,7 @@ PATCH /deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshooting
 |id|String|一意の識別子。 これは userId_DeviceId_AppId id です。|
 |status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|ログのアップロードの状態。 可能な値は、`pending`、`completed`、`failed` です。|
 |errorMessage|String|アップロードプロセス中にエラーメッセージが表示される場合|
-|customLogFolders|String collection|ログフォルダーの一覧。 |
+|customLogFolders|文字列コレクション|ログフォルダーの一覧。 |
 |CompletedDateTime|DateTimeOffset|アップロードログ要求がターミナル状態に達した時刻|
 
 
@@ -99,6 +99,7 @@ Content-Length: 306
   "completedDateTime": "2016-12-31T23:58:52.3534526-08:00"
 }
 ```
+
 
 
 

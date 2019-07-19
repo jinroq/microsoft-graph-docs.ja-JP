@@ -4,12 +4,12 @@ description: Mobile Threat Defense パートナーとの接続を表すエンテ
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e69bba98a6017769a4b70333e5e76888ecd6bbb4
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 9b000d99d4dfe88a281549d44308f4f68abaa711
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940331"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34958656"
 ---
 # <a name="mobilethreatdefenseconnector-resource-type"></a>mobileThreatDefenseConnector リソースの種類
 
@@ -46,7 +46,7 @@ Mobile Threat Defense パートナーとの接続を表すエンティティで�
 |partnerUnresponsivenessThresholdInDays|Int32|このパートナー統合に関する、テナントごとの無応答許容範囲を取得または設定します|
 |allowPartnerToCollectIOSApplicationMetadata|Boolean|IOS デバイスでは、管理者が、インストールされたアプリケーションに関するメタデータを Intune からも収集できるかどうかを管理者が構成できるようにします。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -76,6 +76,7 @@ Mobile Threat Defense パートナーとの接続を表すエンティティで�
   "allowPartnerToCollectIOSApplicationMetadata": true
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: CartToClassAssociation を削除します。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fec432dffea4f05e1d4320e69a76954a123f6e1a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: aed7b22246b62e8403a385ea32a90f49704f4d1b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33927917"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34968764"
 ---
 # <a name="delete-carttoclassassociation"></a>CartToClassAssociation の削除
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/cartToClassAssociations
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

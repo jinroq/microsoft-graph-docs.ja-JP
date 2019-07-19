@@ -4,12 +4,12 @@ description: 新しい deviceManagementComplexSettingDefinition オブジェク�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bf20d32d41abcac75486a345ceb423a6a8198827
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: cb4447ca1e82cbc64eeccd9d9ffd242c4dc525ad
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33916651"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34960777"
 ---
 # <a name="create-devicemanagementcomplexsettingdefinition"></a>DeviceManagementComplexSettingDefinition の作成
 
@@ -59,10 +59,10 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories/{device
 |isTopLevel|Boolean|設定が最上位レベルの場合は、 [Devicemanagementsettingdefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)から継承されたコレクションまたは複雑な設定でラップする必要がなく、構成することができます。|
 |description|String|[Devicemanagementsettingdefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)から継承された設定の説明|
 |Documentation Url|String|[Devicemanagementsettingdefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)から継承されたドキュメントを設定するための Url|
-|keywords|String collection|[Devicemanagementsettingdefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)から継承した設定に関連付けられているキーワード|
+|keywords|文字列コレクション|[Devicemanagementsettingdefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)から継承した設定に関連付けられているキーワード|
 |式|[Devicemanagementconstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)コレクション|[Devicemanagementsettingdefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)から継承された設定値の制約のコレクション|
 |ヲ|[Devicemanagementsettingdependency](../resources/intune-deviceintent-devicemanagementsettingdependency.md)コレクション|[Devicemanagementsettingdefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)から継承された他の設定に対する依存関係のコレクション|
-|propertyDefinitionIds|String collection|複合設定の各プロパティの定義|
+|propertyDefinitionIds|文字列コレクション|複合設定の各プロパティの定義|
 
 
 
@@ -149,6 +149,7 @@ Content-Length: 857
   ]
 }
 ```
+
 
 
 

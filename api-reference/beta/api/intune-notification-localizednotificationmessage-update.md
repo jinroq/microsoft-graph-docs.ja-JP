@@ -4,12 +4,12 @@ description: localizedNotificationMessage オブジェクトのプロパティ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 636107db33d933961b30134cfe3917ca56d9ed8f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 86efe25dc74c2a5b29623748f296d9741b1492b0
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33900602"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34957848"
 ---
 # <a name="update-localizednotificationmessage"></a>localizedNotificationMessage の更新
 
@@ -97,6 +97,7 @@ Content-Length: 313
   "isDefault": true
 }
 ```
+
 
 
 

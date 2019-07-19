@@ -4,12 +4,12 @@ description: オーストラリアでのテレビコンテンツの評価のラ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1ea45fe86e4d7e9a909ad6314cf1f6932df947c9
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a33d4998e3e2949c6833d82110b7e24c574b0307
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951038"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995778"
 ---
 # <a name="ratingaustraliatelevisiontype-enum-type"></a>ratingAustraliaTelevisionType 列挙型
 
@@ -31,6 +31,7 @@ ms.locfileid: "33951038"
 |度|シックス|15を超える閲覧者には M 分類が推奨されています|
 |agesAbove15|7|MA15 + 分類は15以下の閲覧者には適していません|
 |agesAbove15AdultViolence|8 |AV15 + 分類は、15の下の閲覧者には適していません。成人の暴力に固有のものです。|
+
 
 
 

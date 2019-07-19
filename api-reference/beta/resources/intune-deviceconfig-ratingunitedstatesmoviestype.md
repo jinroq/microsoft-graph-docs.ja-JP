@@ -4,12 +4,12 @@ description: 米国での映画の定格ラベル
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b32de63fe5b559b76a0de0ca2471230c8f637406
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 1e561a14c8ed5cf7fd51eef167c635c46e4b93ef
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944846"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34957634"
 ---
 # <a name="ratingunitedstatesmoviestype-enum-type"></a>ratingUnitedStatesMoviesType 列挙型
 
@@ -29,6 +29,7 @@ ms.locfileid: "33944846"
 |parentalGuidance13|2/4|PG13 では、いくつかの素材が13の子に対して不適切な場合があります。|
 |しか|5|R、17の下の閲覧者には、親または成人のガーディアンが必要です|
 |保護者|シックス|NC17、大人のみ|
+
 
 
 

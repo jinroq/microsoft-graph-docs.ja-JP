@@ -4,12 +4,12 @@ description: DeviceManagementIntentUserState を削除します。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: da636738219b5c9bedbe5eeea839249d6d9f2548
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d2c4f157c899aee694e6f768207b3bb362253e0b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33915854"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34960126"
 ---
 # <a name="delete-devicemanagementintentuserstate"></a>DeviceManagementIntentUserState の削除
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManageme
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

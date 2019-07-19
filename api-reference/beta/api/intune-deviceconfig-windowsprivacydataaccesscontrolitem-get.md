@@ -4,12 +4,12 @@ description: WindowsPrivacyDataAccessControlItem オブジェクトのプロパ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 13db4dc420fba0ca6843f32119eb03376d478294
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: bcd8d3c15a64532c31a8b258c90a40f540557e31
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33917465"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34961386"
 ---
 # <a name="get-windowsprivacydataaccesscontrolitem"></a>WindowsPrivacyDataAccessControlItem を取得する
 
@@ -78,6 +78,7 @@ Content-Length: 330
   }
 }
 ```
+
 
 
 

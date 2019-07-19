@@ -4,12 +4,12 @@ description: DeviceManagementScriptGroupAssignment オブジェクトのプロ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8316ec8f33714fe2839f5269c60c5eee901c972f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5aaa72cdbcadc99e2fe30728437abf1c2bec14a8
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33909842"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34958845"
 ---
 # <a name="list-devicemanagementscriptgroupassignments"></a>DeviceManagementScriptGroupAssignments の一覧を表示する
 
@@ -74,6 +74,7 @@ Content-Length: 218
   ]
 }
 ```
+
 
 
 

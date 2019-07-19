@@ -4,12 +4,12 @@ description: ADMX multiTextBox 要素と ADMX Multitextbox 要素を表します
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 810ae2c187f900fbd649a6e25b5c70ed488ec669
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 7e564b08aa13696993c68e611171d760baae184c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941059"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34964921"
 ---
 # <a name="grouppolicypresentationmultitextbox-resource-type"></a>groupPolicyPresentationMultiTextBox リソースの種類
 
@@ -32,7 +32,7 @@ ADMX multiTextBox 要素と ADMX Multitextbox 要素を表します。
 |[GroupPolicyPresentationMultiTextBox の更新](../api/intune-grouppolicy-grouppolicypresentationmultitextbox-update.md)|[groupPolicyPresentationMultiTextBox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md)|[Grouppolicypresentationmultitextbox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |label|String|任意のプレゼンテーションエンティティのローカライズされたテキストラベル。 既定値は空白です。 [GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
 |id|String|エンティティのキー。 [GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
@@ -41,7 +41,7 @@ ADMX multiTextBox 要素と ADMX Multitextbox 要素を表します。
 |maxLength|Int64|テキストの最大文字数を指定する符号なし整数。 既定値は1023です。|
 |maxStrings|Int64|文字列の最大数を指定する符号なし整数。 既定値は 0 です。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |definition|[groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|プレゼンテーションに関連付けられたグループポリシーの定義。 [GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。|
@@ -65,6 +65,7 @@ ADMX multiTextBox 要素と ADMX Multitextbox 要素を表します。
   "maxStrings": 1024
 }
 ```
+
 
 
 

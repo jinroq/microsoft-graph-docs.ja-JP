@@ -4,12 +4,12 @@ description: 新しい securityBaselineDeviceState オブジェクトを作成�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 871c2b5ce94ef19580cc89bc23c6bc16541bb25a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b7ef6764971b84a0364317e3aee0ba1074a74ad8
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33914577"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959552"
 ---
 # <a name="create-securitybaselinedevicestate"></a>SecurityBaselineDeviceState を作成する
 
@@ -98,6 +98,7 @@ Content-Length: 359
   "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
 }
 ```
+
 
 
 

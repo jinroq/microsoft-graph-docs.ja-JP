@@ -4,12 +4,12 @@ description: DeviceManagementScriptAssignment オブジェクトのプロパテ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ada1557172fa40f651e89a188f6c8411f6e7eca7
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ad578a8ca230c8585ef5d617c140b53879cf7de1
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33909919"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959020"
 ---
 # <a name="get-devicemanagementscriptassignment"></a>DeviceManagementScriptAssignment を取得する
 
@@ -77,6 +77,7 @@ Content-Length: 250
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 不在時の環境設定
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fb8a3c0358343a3d1051258188028ffa5c1f0293
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 92a7e8e2a65817ff6aa144deaa408978804ed963
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941500"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34963528"
 ---
 # <a name="outofboxexperiencesettings-resource-type"></a>outOfBoxExperienceSettings リソースの種類
 
@@ -29,7 +29,7 @@ ms.locfileid: "33941500"
 |Skipキーボードの Selectionpage|Boolean|設定されている場合は、言語と地域が設定されている場合は、キーボードの選択ページをスキップします。|
 |hideEscapeLink|Boolean|True に設定されている場合、ユーザーは別のアカウントを使用してサインインすることはできません (会社のサインイン時)。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -50,6 +50,7 @@ ms.locfileid: "33941500"
   "hideEscapeLink": true
 }
 ```
+
 
 
 

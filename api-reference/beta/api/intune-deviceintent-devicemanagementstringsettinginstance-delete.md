@@ -4,12 +4,12 @@ description: DeviceManagementStringSettingInstance を削除します。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 460eff518ceb46a07c5d5f34ca74980372c6312c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5df1677eb7b20adec8e96f894e1e5a907b403c6f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33917114"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959874"
 ---
 # <a name="delete-devicemanagementstringsettinginstance"></a>DeviceManagementStringSettingInstance の削除
 
@@ -65,6 +65,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManageme
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

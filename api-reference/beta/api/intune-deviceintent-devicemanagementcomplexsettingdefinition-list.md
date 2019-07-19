@@ -4,12 +4,12 @@ description: DeviceManagementComplexSettingDefinition オブジェクトのプ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b8ad87490780c4d030d4a4cafa5d55d177363c6f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d18c8ad05f58e1203ffe4d48e490b851519d0d3c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33916623"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34960707"
 ---
 # <a name="list-devicemanagementcomplexsettingdefinitions"></a>DeviceManagementComplexSettingDefinitions のリスト
 
@@ -103,6 +103,7 @@ Content-Length: 1006
   ]
 }
 ```
+
 
 
 

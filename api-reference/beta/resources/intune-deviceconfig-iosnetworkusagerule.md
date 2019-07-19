@@ -4,12 +4,12 @@ description: ネットワーク使用規則により、企業は管理対象ア�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d7d11b8a7591d2fce03b3f8a023e9ef90fab4f1b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2dc693eb993e6740098ab90dcae53214d8af4d0c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946925"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995694"
 ---
 # <a name="iosnetworkusagerule-resource-type"></a>iosNetworkUsageRule リソースの種類
 
@@ -26,7 +26,7 @@ ms.locfileid: "33946925"
 |cellularDataBlockWhenRoaming|Boolean|true に設定すると、ローミングの際、対応する管理対象アプリで携帯電話データを使用できなくなります。|
 |cellularDataBlocked|Boolean|true に設定すると、いかなる場合でも、対応する管理対象アプリで携帯電話データを使用できなくなります。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記
@@ -52,6 +52,7 @@ ms.locfileid: "33946925"
   "cellularDataBlocked": true
 }
 ```
+
 
 
 

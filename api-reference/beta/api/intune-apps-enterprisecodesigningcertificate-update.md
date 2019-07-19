@@ -4,12 +4,12 @@ description: EnterpriseCodeSigningCertificate オブジェクトのプロパテ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e53d669f47649489e6ff7801f7ea443c044b9fc3
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 72d0da953e40652c7349929d9b9b62a4bda80eca
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33936890"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965145"
 ---
 # <a name="update-enterprisecodesigningcertificate"></a>EnterpriseCodeSigningCertificate の更新
 
@@ -107,6 +107,7 @@ Content-Length: 439
   "uploadDateTime": "2016-12-31T23:58:46.5747426-08:00"
 }
 ```
+
 
 
 

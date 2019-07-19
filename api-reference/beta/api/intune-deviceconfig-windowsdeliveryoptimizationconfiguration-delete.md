@@ -4,12 +4,12 @@ description: WindowsDeliveryOptimizationConfiguration を削除します。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4dd11ed019ef01c5e78d25ee4be850413302c983
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d388e53c25d55bbd2e1d07a3e313a28cc892ad5b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33918032"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34962009"
 ---
 # <a name="delete-windowsdeliveryoptimizationconfiguration"></a>WindowsDeliveryOptimizationConfiguration の削除
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

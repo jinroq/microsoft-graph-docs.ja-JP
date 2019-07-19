@@ -4,12 +4,12 @@ description: 新しい cartToClassAssociation オブジェクトを作成しま�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 68700982b642798a8fd0b29cbe31d063ca48b38c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 16bf6c253ff8ee69f12fe50f1aaf12252a6ed67e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33928066"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34968785"
 ---
 # <a name="create-carttoclassassociation"></a>CartToClassAssociation を作成する
 
@@ -56,8 +56,8 @@ POST /deviceManagement/cartToClassAssociations
 |version|Int32|CartToClassAssociation のバージョン。|
 |displayName|String|管理者が指定した、デバイス構成の名前。|
 |description|String|CartToClassAssociation の管理者提供の説明。|
-|deviceCartIds|String collection|クラスに関連付けられるデバイスカートの識別子。|
-|classroomIds|String collection|デバイスカートに関連付ける教室の識別子。|
+|deviceCartIds|文字列コレクション|クラスに関連付けられるデバイスカートの識別子。|
+|classroomIds|文字列コレクション|デバイスカートに関連付ける教室の識別子。|
 
 
 
@@ -110,6 +110,7 @@ Content-Length: 443
   ]
 }
 ```
+
 
 
 

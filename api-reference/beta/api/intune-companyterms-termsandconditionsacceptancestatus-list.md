@@ -4,12 +4,12 @@ description: termsAndConditionsAcceptanceStatus オブジェクトのプロパ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9f6b4318940692a0b1eb5fd04b1f5d094ae83efc
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 04fa6a64f043839f151c0fbe24b963f9d04d42de
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33933873"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34971921"
 ---
 # <a name="list-termsandconditionsacceptancestatuses"></a>termsAndConditionsAcceptanceStatuses のリスト
 
@@ -76,6 +76,7 @@ Content-Length: 313
   ]
 }
 ```
+
 
 
 

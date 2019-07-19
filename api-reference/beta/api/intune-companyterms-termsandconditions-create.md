@@ -4,12 +4,12 @@ description: 新しい termsAndConditions オブジェクトを作成します�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bad30650679f54e245e8f6bcd736e17bf15cce8a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 304dbc84a56c6c6b1880320bc28064fcbe50f946
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33933929"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34972075"
 ---
 # <a name="create-termsandconditions"></a>termsAndConditions の作成
 
@@ -107,6 +107,7 @@ Content-Length: 505
   "version": 7
 }
 ```
+
 
 
 
