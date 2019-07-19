@@ -4,12 +4,12 @@ description: 英国での映画の評価のラベル
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 892a9f0317d7a33b59386e4a08e977df55a1b0f5
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d4673a80102fe481852a7cb4fbff950983058463
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951111"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34957655"
 ---
 # <a name="ratingunitedkingdommoviestype-enum-type"></a>ratingUnitedKingdomMoviesType 列挙型
 
@@ -31,6 +31,7 @@ ms.locfileid: "33951111"
 |agesAbove12Cinema|シックス|12A、cinema リリースは、12年以上に適しています。|
 |agesAbove15|7|15年以前にのみ適切|
 |保護者|8 |大人にのみ適している|
+
 
 
 
