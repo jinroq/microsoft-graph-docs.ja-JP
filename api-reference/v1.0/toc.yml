@@ -178,7 +178,7 @@
                 - name: 差分を取得する
                   href: api/user-delta.md
             - name: カレンダー
-              href: resources/event.md
+              href: resources/calendar.md
               displayName: 'Outlook, Outlook calendar'
               items:
                 - name: イベントを一覧表示する
@@ -245,8 +245,10 @@
             - name: グループ
               href: resources/group.md
               items:
-                - name: memberOf を一覧表示する
+                - name: 所属を一覧表示する
                   href: api/user-list-memberof.md
+                - name: の推移性のメンバーを一覧表示する
+                  href: api/user-list-transitivememberof.md
             - name: メール
               href: resources/message.md
               items:
@@ -353,10 +355,16 @@
                   href: api/group-list-grouplifecyclepolicies.md
                 - name: 所属を一覧表示する
                   href: api/group-list-memberof.md
+                - name: の推移性のメンバーを一覧表示する
+                  href: api/group-list-transitivememberof.md
                 - name: メンバーを一覧表示する
                   href: api/group-list-members.md
+                - name: 推移的なメンバーを一覧表示する
+                  href: api/group-list-transitivemembers.md
                 - name: 所有者を一覧表示する
                   href: api/group-list-owners.md
+                - name: 写真の一覧表示
+                  href: api/group-list-photos.md
                 - name: グループを更新する
                   href: api/group-update.md
                 - name: お気に入りを削除する
@@ -390,6 +398,8 @@
                       href: api/grouplifecyclepolicy-addgroup.md
                     - name: グループを削除する
                       href: api/grouplifecyclepolicy-removegroup.md
+                - name: プロパティの検証
+                  href: api/group-validateproperties.md
             - name: 添付ファイル
               href: resources/attachment.md
               items:
@@ -863,7 +873,7 @@
                 - name: iOS VPP 電子ブックの割り当て
                   href: resources/intune-books-iosvppebookassignment.md
                   items:
-                    - name: 一覧表示
+                    - name: リスト
                       href: api/intune-books-iosvppebookassignment-list.md
                     - name: Get
                       href: api/intune-books-iosvppebookassignment-get.md
@@ -1296,7 +1306,7 @@
                   items:
                     - name: リスト
                       href: api/intune-deviceconfig-androidcustomconfiguration-list.md
-                    - name: 取得
+                    - name: Get
                       href: api/intune-deviceconfig-androidcustomconfiguration-get.md
                     - name: 作成
                       href: api/intune-deviceconfig-androidcustomconfiguration-create.md
@@ -1729,9 +1739,9 @@
                 - name: 更新された iOS デバイスの状態
                   href: resources/intune-deviceconfig-iosupdatedevicestatus.md
                   items:
-                    - name: 一覧表示
+                    - name: リスト
                       href: api/intune-deviceconfig-iosupdatedevicestatus-list.md
-                    - name: Get
+                    - name: 取得
                       href: api/intune-deviceconfig-iosupdatedevicestatus-get.md
                     - name: 作成
                       href: api/intune-deviceconfig-iosupdatedevicestatus-create.md
@@ -2580,7 +2590,7 @@
                   items:
                     - name: リスト
                       href: api/intune-mam-targetedmanagedapppolicyassignment-list.md
-                    - name: Get
+                    - name: 取得
                       href: api/intune-mam-targetedmanagedapppolicyassignment-get.md
                     - name: 削除
                       href: api/intune-mam-targetedmanagedapppolicyassignment-delete.md
@@ -3229,6 +3239,8 @@
                   href: api/device-post-registeredusers.md
                 - name: デバイス グループを一覧表示する
                   href: api/device-list-memberof.md
+                - name: デバイスの推移性のグループを一覧表示する
+                  href: api/device-list-transitivememberof.md
             - name: ディレクトリ オブジェクト
               href: resources/directoryobject.md
               items:
@@ -3244,6 +3256,8 @@
                   href: api/directoryobject-checkmembergroups.md
                 - name: ID によってオブジェクトを取得する
                   href: api/directoryobject-getbyids.md
+                - name: プロパティの検証
+                  href: api/directoryobject-validateproperties.md
             - name: ディレクトリ ロール
               href: resources/directoryrole.md
               items:

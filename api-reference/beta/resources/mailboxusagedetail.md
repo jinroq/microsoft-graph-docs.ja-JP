@@ -4,36 +4,38 @@ description: リソースの JSON 表記を次に示します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 63b4b997a0ae559338fffd2acfabaa35dcc306e0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2890205db7cec6f20eef17c24da112517bf169a1
+ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581269"
+ms.lasthandoff: 07/20/2019
+ms.locfileid: "35805222"
 ---
-# <a name="mailboxusagedetail-resource-type"></a><span data-ttu-id="36b44-103">mailboxUsageDetail リソースの種類</span><span class="sxs-lookup"><span data-stu-id="36b44-103">mailboxUsageDetail resource type</span></span>
+# <a name="mailboxusagedetail-resource-type"></a><span data-ttu-id="9b194-103">mailboxUsageDetail リソースの種類</span><span class="sxs-lookup"><span data-stu-id="9b194-103">mailboxUsageDetail resource type</span></span>
 
-## <a name="properties"></a><span data-ttu-id="36b44-104">プロパティ</span><span class="sxs-lookup"><span data-stu-id="36b44-104">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="9b194-104">プロパティ</span><span class="sxs-lookup"><span data-stu-id="9b194-104">Properties</span></span>
 
-| <span data-ttu-id="36b44-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="36b44-105">Property</span></span>                        | <span data-ttu-id="36b44-106">型</span><span class="sxs-lookup"><span data-stu-id="36b44-106">Type</span></span>    |
+| <span data-ttu-id="9b194-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="9b194-105">Property</span></span>                        | <span data-ttu-id="9b194-106">型</span><span class="sxs-lookup"><span data-stu-id="9b194-106">Type</span></span>    |
 | :------------------------------ | :------ |
-| <span data-ttu-id="36b44-107">reportrefreshdate</span><span class="sxs-lookup"><span data-stu-id="36b44-107">reportRefreshDate</span></span>               | <span data-ttu-id="36b44-108">Date</span><span class="sxs-lookup"><span data-stu-id="36b44-108">Date</span></span>    |
-| <span data-ttu-id="36b44-109">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="36b44-109">userPrincipalName</span></span>               | <span data-ttu-id="36b44-110">String</span><span class="sxs-lookup"><span data-stu-id="36b44-110">String</span></span>  |
-| <span data-ttu-id="36b44-111">displayName</span><span class="sxs-lookup"><span data-stu-id="36b44-111">displayName</span></span>                     | <span data-ttu-id="36b44-112">String</span><span class="sxs-lookup"><span data-stu-id="36b44-112">String</span></span>  |
-| <span data-ttu-id="36b44-113">isDeleted</span><span class="sxs-lookup"><span data-stu-id="36b44-113">isDeleted</span></span>                       | <span data-ttu-id="36b44-114">Boolean</span><span class="sxs-lookup"><span data-stu-id="36b44-114">Boolean</span></span> |
-| <span data-ttu-id="36b44-115">deletedDate</span><span class="sxs-lookup"><span data-stu-id="36b44-115">deletedDate</span></span>                     | <span data-ttu-id="36b44-116">Date</span><span class="sxs-lookup"><span data-stu-id="36b44-116">Date</span></span>    |
-| <span data-ttu-id="36b44-117">createdDate</span><span class="sxs-lookup"><span data-stu-id="36b44-117">createdDate</span></span>                     | <span data-ttu-id="36b44-118">Date</span><span class="sxs-lookup"><span data-stu-id="36b44-118">Date</span></span>    |
-| <span data-ttu-id="36b44-119">lastactivitydate</span><span class="sxs-lookup"><span data-stu-id="36b44-119">lastActivityDate</span></span>                | <span data-ttu-id="36b44-120">Date</span><span class="sxs-lookup"><span data-stu-id="36b44-120">Date</span></span>    |
-| <span data-ttu-id="36b44-121">itemCount</span><span class="sxs-lookup"><span data-stu-id="36b44-121">itemCount</span></span>                       | <span data-ttu-id="36b44-122">Int64</span><span class="sxs-lookup"><span data-stu-id="36b44-122">Int64</span></span>   |
-| <span data-ttu-id="36b44-123">storageused inbytes</span><span class="sxs-lookup"><span data-stu-id="36b44-123">storageUsedInBytes</span></span>              | <span data-ttu-id="36b44-124">Int64</span><span class="sxs-lookup"><span data-stu-id="36b44-124">Int64</span></span>   |
-| <span data-ttu-id="36b44-125">warnings ewarnings quot/バイト</span><span class="sxs-lookup"><span data-stu-id="36b44-125">issueWarningQuotaInBytes</span></span>        | <span data-ttu-id="36b44-126">Int64</span><span class="sxs-lookup"><span data-stu-id="36b44-126">Int64</span></span>   |
-| <span data-ttu-id="36b44-127">prohibitSendQuotaInBytes</span><span class="sxs-lookup"><span data-stu-id="36b44-127">prohibitSendQuotaInBytes</span></span>        | <span data-ttu-id="36b44-128">Int64</span><span class="sxs-lookup"><span data-stu-id="36b44-128">Int64</span></span>   |
-| <span data-ttu-id="36b44-129">prohibitSendReceiveQuotaInBytes</span><span class="sxs-lookup"><span data-stu-id="36b44-129">prohibitSendReceiveQuotaInBytes</span></span> | <span data-ttu-id="36b44-130">Int64</span><span class="sxs-lookup"><span data-stu-id="36b44-130">Int64</span></span>   |
-| <span data-ttu-id="36b44-131">reportperiod</span><span class="sxs-lookup"><span data-stu-id="36b44-131">reportPeriod</span></span>                    | <span data-ttu-id="36b44-132">String</span><span class="sxs-lookup"><span data-stu-id="36b44-132">String</span></span>  |
+| <span data-ttu-id="9b194-107">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="9b194-107">reportRefreshDate</span></span>               | <span data-ttu-id="9b194-108">日付</span><span class="sxs-lookup"><span data-stu-id="9b194-108">Date</span></span>    |
+| <span data-ttu-id="9b194-109">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="9b194-109">userPrincipalName</span></span>               | <span data-ttu-id="9b194-110">String</span><span class="sxs-lookup"><span data-stu-id="9b194-110">String</span></span>  |
+| <span data-ttu-id="9b194-111">displayName</span><span class="sxs-lookup"><span data-stu-id="9b194-111">displayName</span></span>                     | <span data-ttu-id="9b194-112">文字列</span><span class="sxs-lookup"><span data-stu-id="9b194-112">String</span></span>  |
+| <span data-ttu-id="9b194-113">isDeleted</span><span class="sxs-lookup"><span data-stu-id="9b194-113">isDeleted</span></span>                       | <span data-ttu-id="9b194-114">Boolean</span><span class="sxs-lookup"><span data-stu-id="9b194-114">Boolean</span></span> |
+| <span data-ttu-id="9b194-115">deletedDate</span><span class="sxs-lookup"><span data-stu-id="9b194-115">deletedDate</span></span>                     | <span data-ttu-id="9b194-116">日付</span><span class="sxs-lookup"><span data-stu-id="9b194-116">Date</span></span>    |
+| <span data-ttu-id="9b194-117">createdDate</span><span class="sxs-lookup"><span data-stu-id="9b194-117">createdDate</span></span>                     | <span data-ttu-id="9b194-118">日付</span><span class="sxs-lookup"><span data-stu-id="9b194-118">Date</span></span>    |
+| <span data-ttu-id="9b194-119">lastActivityDate</span><span class="sxs-lookup"><span data-stu-id="9b194-119">lastActivityDate</span></span>                | <span data-ttu-id="9b194-120">日付</span><span class="sxs-lookup"><span data-stu-id="9b194-120">Date</span></span>    |
+| <span data-ttu-id="9b194-121">itemCount</span><span class="sxs-lookup"><span data-stu-id="9b194-121">itemCount</span></span>                       | <span data-ttu-id="9b194-122">Int64</span><span class="sxs-lookup"><span data-stu-id="9b194-122">Int64</span></span>   |
+| <span data-ttu-id="9b194-123">Storageused Inbytes</span><span class="sxs-lookup"><span data-stu-id="9b194-123">storageUsedInBytes</span></span>              | <span data-ttu-id="9b194-124">Int64</span><span class="sxs-lookup"><span data-stu-id="9b194-124">Int64</span></span>   |
+| <span data-ttu-id="9b194-125">deletedItemCount</span><span class="sxs-lookup"><span data-stu-id="9b194-125">deletedItemCount</span></span>                | <span data-ttu-id="9b194-126">Int64</span><span class="sxs-lookup"><span data-stu-id="9b194-126">Int64</span></span>   |
+| <span data-ttu-id="9b194-127">deletedItemSizeInBytes</span><span class="sxs-lookup"><span data-stu-id="9b194-127">deletedItemSizeInBytes</span></span>          | <span data-ttu-id="9b194-128">Int64</span><span class="sxs-lookup"><span data-stu-id="9b194-128">Int64</span></span>   |
+| <span data-ttu-id="9b194-129">Warnings Ewarnings Quot/バイト</span><span class="sxs-lookup"><span data-stu-id="9b194-129">issueWarningQuotaInBytes</span></span>        | <span data-ttu-id="9b194-130">Int64</span><span class="sxs-lookup"><span data-stu-id="9b194-130">Int64</span></span>   |
+| <span data-ttu-id="9b194-131">prohibitSendQuotaInBytes</span><span class="sxs-lookup"><span data-stu-id="9b194-131">prohibitSendQuotaInBytes</span></span>        | <span data-ttu-id="9b194-132">Int64</span><span class="sxs-lookup"><span data-stu-id="9b194-132">Int64</span></span>   |
+| <span data-ttu-id="9b194-133">prohibitSendReceiveQuotaInBytes</span><span class="sxs-lookup"><span data-stu-id="9b194-133">prohibitSendReceiveQuotaInBytes</span></span> | <span data-ttu-id="9b194-134">Int64</span><span class="sxs-lookup"><span data-stu-id="9b194-134">Int64</span></span>   |
+| <span data-ttu-id="9b194-135">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="9b194-135">reportPeriod</span></span>                    | <span data-ttu-id="9b194-136">String</span><span class="sxs-lookup"><span data-stu-id="9b194-136">String</span></span>  |
 
-## <a name="json-representation"></a><span data-ttu-id="36b44-133">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="36b44-133">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="9b194-137">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="9b194-137">JSON representation</span></span>
 
-<span data-ttu-id="36b44-134">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="36b44-134">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="9b194-138">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="9b194-138">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -51,6 +53,8 @@ ms.locfileid: "32581269"
   "lastActivityDate": "Date", 
   "itemCount": 1024, 
   "storageUsedInBytes": 1024, 
+  "deletedItemCount": 1024,
+  "deletedItemSizeInBytes": 1024, 
   "issueWarningQuotaInBytes": 1024, 
   "prohibitSendQuotaInBytes": 1024, 
   "prohibitSendReceiveQuotaInBytes": 1024, 
