@@ -2,12 +2,14 @@
 title: dateTimeTimeZone リソースの種類
 description: 特定時点の日付、時刻、およびタイム ゾーンを記述します。
 localization_priority: Normal
-ms.openlocfilehash: 4bf62081d190e3af031d305c7db7f64d606926b6
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: e3554386c599b4d36f4041f6e42dc091f9763817
+ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340964"
+ms.lasthandoff: 07/20/2019
+ms.locfileid: "35805259"
 ---
 # <a name="datetimetimezone-resource-type"></a>dateTimeTimeZone リソースの種類
 
@@ -18,10 +20,14 @@ ms.locfileid: "33340964"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|dateTime|String|特定時点の日付と時刻を組み合わせた表現 (`{date}T{time}`)。 たとえば、"2019-04-16t09:00:00" とします。|
-|timeZone|String|次に示すようなタイムゾーンの名前。|
+|dateTime|String|特定時点の日付と時刻を組み合わせた表現 (`{date}T{time}`)。 たとえば、"2019-04-16T09:00:00" とします。|
+|timeZone|String|タイムゾーン ("太平洋標準時" など) を表します。 指定可能な値については、以下を参照してください。|
 
-**timeZone**プロパティは、Windows でサポートされている任意のタイムゾーン、および次のタイムゾーン名に設定できます。
+通常、 **timeZone**プロパティは、 [Windows で現在サポートさ](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/default-time-zones)れている任意のタイムゾーン、および[予定表 API でサポートさ](#additional-time-zones)れている追加のタイムゾーンに設定_でき_ます。 
+
+**DateTimeTimeZone**をメソッド (イベントの[作成](../api/user-post-events.md)や[更新](../api/event-update.md)など) と組み合わせて使用する場合は、サポートされている実際のタイムゾーンをメモする必要があります。これは小さなサブセットになることがあります。
+
+### <a name="additional-time-zones"></a>追加のタイムゾーン
 
 Etc/GMT+12
 

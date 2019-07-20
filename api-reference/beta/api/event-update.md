@@ -4,18 +4,21 @@ description: イベント オブジェクトのプロパティを更新する。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 911f15257ce10e628cb63db2ca4ee9517b5cbe81
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 36f7c643bd843f20488304dbc365455c01877354
+ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35440940"
+ms.lasthandoff: 07/20/2019
+ms.locfileid: "35805068"
 ---
 # <a name="update-event"></a>イベントを更新する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [イベント](../resources/event.md) オブジェクトのプロパティを更新する。
+
+イベントの開始時刻または終了時刻のタイムゾーンを更新する場合は、まず、[サポートされているタイム](outlookuser-supportedtimezones.md)ゾーンを検索して、ユーザーのメールボックスサーバーに対して構成されているタイムゾーンのみを設定するようにします。 
+
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -58,10 +61,10 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 | attendees|参加者|イベントの参加者のコレクションです。|
 | body|ItemBody|イベントに関連付けられたメッセージの本文。|
 | categories|String|イベントに関連付けられたカテゴリ。|
-| end|DateTimeTimeZone|イベントが終了する日時。<br/><br/>既定で、終了時刻は UTC 単位です。EndTimeZone でオプションのタイム ゾーンを指定して、そのタイム ゾーンで終了時刻を表現し、UTC からの時間オフセットを含めることができます。EndTimeZone を使用する場合、StartTimeZone の値も指定する必要があります。<br/><br/>この例では、太平洋標準時で 2015 年 2 月 25 日午後 9:34 を指定します ("2015-02-25T21:34:00-08:00")。 |
+| end|DateTimeTimeZone|イベントが終了する日付、時刻、タイムゾーン |
 | importance|String|イベントの重要度。 可能な値は `low`、`normal`、`high` です。|
 | isAllDay|Boolean|イベントが一日中続く場合に、true に設定します。|
-| isReminderOn|Boolean|ユーザーにイベントを通知するアラートを設定する場合は、true に設定します。|
+| isReminderOn|ブール値|ユーザーにイベントを通知するアラートを設定する場合は、true に設定します。|
 | location|場所|イベントの場所。|
 |locations|[Location](../resources/location.md) コレクション|イベントを開催する場所、または参加者がいる場所。 **location** プロパティと **locations** プロパティは常に互いに一致します。 **location** プロパティを更新すると、**locations** コレクションに含まれる既存のすべての場所が削除されて、**location** の新しい値に置き換えられます。 |
 | recurrence|PatternedRecurrence|イベントの繰り返しパターン。|
@@ -69,7 +72,7 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 | responseRequested|Boolean|イベントが承諾または辞退されたときに、送信者が応答を要求する場合に、true に設定します。|
 | sensitivity|String| 使用可能な値: `normal`、`personal`、`private`、`confidential`。|
 | showAs|String|表示するステータス。 可能な値は`free` 、 `tentative`、 `busy` `oof` `workingElsewhere`、、、 `unknown`、です。|
-| 開始|DateTimeTimeZone|イベントの開始時刻です。 <br/><br/>既定で、開始時刻は UTC 単位です。EndTimeZone でオプションのタイム ゾーンを指定して、そのタイム ゾーンで開始時刻を表現し、UTC からの時間オフセットを含めることができます。StartTimeZone を使用する場合、EndTimeZone の値も指定する必要があります。<br/><br/>この例では、太平洋標準時で 2015 年 2 月 25 日午後 7:34 を指定します "2015-02-25T19:34:00-08:00".  |
+| 開始|DateTimeTimeZone|イベントの開始日、時刻、タイムゾーンを指定します。 |
 | subject|String|イベントの件名行のテキスト。|
 
 **イベント** リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため、`PATCH` 操作を使用して、既存の**イベント** インスタンスで拡張機能のカスタム プロパティにあるアプリ固有のデータを追加、更新、または削除することができます。

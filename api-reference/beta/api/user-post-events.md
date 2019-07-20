@@ -2,14 +2,14 @@
 title: イベントを作成する
 description: ユーザーの既定の予定表または指定した予定表でイベントを作成します。
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 11e4787d7ca12a42d69f0fcc7cd13b6ed525fda2
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: fae2a5d543ac6e0dc852a2b4e98cea03afcf5308
+ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35456779"
+ms.lasthandoff: 07/20/2019
+ms.locfileid: "35805089"
 ---
 # <a name="create-event"></a>イベントを作成する
 
@@ -17,7 +17,7 @@ ms.locfileid: "35456779"
 
 ユーザーの既定の予定表または指定した予定表で[イベント](../resources/event.md)を作成します。
 
-**start** と **end** プロパティの型が [dateTimeTimeZone](../resources/datetimetimezone.md) であるため、これらの値の一部としてイベントの開始時刻と終了時刻のそれぞれにタイム ゾーンを指定できます。
+**開始**および**終了**のプロパティは[dateTimeTimeZone](../resources/datetimetimezone.md)型であるため、イベントの開始時刻と終了時刻のそれぞれのタイムゾーンを値の一部として指定できます。 最初に、ユーザーのメールボックスサーバーに対して構成されているタイムゾーンのみを設定していることを確認するために[、サポートされているタイムゾーンを検索](outlookuser-supportedtimezones.md)します。 
 
 イベントが送信されるとき、サーバーは出席者全員に招待状を送信します。
 
