@@ -1,20 +1,23 @@
 ---
 title: メンバーを追加する
-description: この API を使用して、**members** ナビゲーション プロパティを通じて Office 365 のグループ、セキュリティ グループ、メールが有効なセキュリティ グループにメンバーを追加できます。
+description: '**members** ナビゲーション プロパティを通じて Office 365 のグループ、セキュリティ グループ、メールが有効なセキュリティ グループにメンバーを追加できます。'
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 9a819ee95010a6702aabf55c92f0106716fdd80d
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: a3ccacd1ebb1985cd09de31f9568df86660451af
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35456394"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778431"
 ---
 # <a name="add-member"></a>メンバーを追加する
-この API を使用して、**members** ナビゲーション プロパティを通じて Office 365 のグループ、セキュリティ グループ、メールが有効なセキュリティ グループにメンバーを追加できます。
+**members** ナビゲーション プロパティを通じて Office 365 のグループ、またはセキュリティ グループにメンバーを追加できます。
 
-ユーザーや他のグループを追加できます。 重要: Office 365 のグループには、ユーザーのみを追加できます。
+ユーザーや他のグループを追加できます。 
+
+> [!IMPORTANT]
+> Office 365 のグループには、ユーザーのみを追加できます。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。

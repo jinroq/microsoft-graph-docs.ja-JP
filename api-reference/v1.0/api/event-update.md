@@ -4,16 +4,19 @@ description: イベント オブジェクトのプロパティを更新する。
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: b8d767f406d9d635a3a76ba03120851917b91689
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 8f9209909fb4c9aee6180ddbf07f60714bce7152
+ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35444380"
+ms.lasthandoff: 07/20/2019
+ms.locfileid: "35805061"
 ---
 # <a name="update-event"></a>イベントを更新する
 
 [イベント](../resources/event.md) オブジェクトのプロパティを更新する。
+
+イベントの開始時刻または終了時刻のタイムゾーンを更新する際に、まず、[サポートされているタイム ゾーンを検索](outlookuser-supportedtimezones.md)して、ユーザーのメールボックス サーバー用に構成されているタイム ゾーンのみ設定されることを確認します。 
+
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -56,7 +59,7 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 |attendees|[Attendee](../resources/attendee.md)|イベントの参加者のコレクションです。|
 |body|[ItemBody](../resources/itembody.md)|イベントに関連付けられたメッセージの本文。|
 |categories|String|イベントに関連付けられたカテゴリ。|
-|end|[DateTimeTimeZone](../resources/datetimetimezone.md)|イベントが終了する日時。<br/><br/>既定で、終了時刻は UTC 単位です。EndTimeZone でオプションのタイム ゾーンを指定して、そのタイム ゾーンで終了時刻を表現し、UTC からの時間オフセットを含めることができます。EndTimeZone を使用する場合、StartTimeZone の値も指定する必要があります。<br/><br/>この例では、太平洋標準時で 2015 年 2 月 25 日午後 9:34 を指定します ("2015-02-25T21:34:00-08:00")。 |
+| end|DateTimeTimeZone|イベントが終了する日付、時刻、タイムゾーン。|
 |importance|String|イベントの重要度。 使用可能な値: `low`、`normal`、`high`。|
 |isAllDay|Boolean|イベントが一日中続く場合に、true に設定します。|
 |isReminderOn|Boolean|ユーザーにイベントを通知するアラートを設定する場合は、true に設定します。|
@@ -67,7 +70,7 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 |responseRequested|Boolean|イベントが承諾または辞退されたときに、送信者が応答を要求する場合に、true に設定します。|
 |sensitivity|String| 使用可能な値: `normal`、`personal`、`private`、`confidential`。|
 |showAs|String|表示するステータス。 使用可能な値: `free`、`tentative`、`busy`、`oof`、`workingElsewhere`、`unknown`。|
-|開始|[DateTimeTimeZone](../resources/datetimetimezone.md)|イベントの開始時刻です。 <br/><br/>既定で、開始時刻は UTC 単位です。EndTimeZone でオプションのタイム ゾーンを指定して、そのタイム ゾーンで開始時刻を表現し、UTC からの時間オフセットを含めることができます。StartTimeZone を使用する場合、EndTimeZone の値も指定する必要があります。<br/><br/>この例では、太平洋標準時で 2015 年 2 月 25 日午後 7:34 を指定します "2015-02-25T19:34:00-08:00".  |
+| 開始|DateTimeTimeZone|イベントの開始日、時間、タイム ゾーン。 |
 |subject|String|イベントの件名行のテキスト。|
 
 **イベント** リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため、`PATCH` 操作を使用して、既存の**イベント** インスタンスで拡張機能のカスタム プロパティにあるアプリ固有のデータを追加、更新、または削除することができます。  
