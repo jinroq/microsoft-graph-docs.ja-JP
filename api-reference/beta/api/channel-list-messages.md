@@ -4,12 +4,12 @@ description: 'チームのチャネルに含まれるメッセージの一覧を
 localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: be255279415c8c973666b328c9edf922607a8d7b
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 741c5f31e0b867a5fe6624cb81ea790e61c1fedb
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35438462"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778398"
 ---
 # <a name="list-channel-messages"></a>チャネル メッセージを一覧表示する
 
@@ -27,7 +27,10 @@ ms.locfileid: "35438462"
 |---------|-------------|
 |委任 (職場または学校のアカウント)|Group.Read.All、Group.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません|
-|アプリケーション| サポートされていません。 |
+|Application| Group.Read.All、Group.ReadWrite.All|
+
+> [!NOTE]
+> この API をアプリケーションのアクセス許可で呼び出す前に、アクセスを要求する必要があります。 詳細については、「[Microsoft Teams の保護された API](/graph/teams-protected-apis)」を参照してください。
 
 ## <a name="http-request"></a>HTTP 要求
 

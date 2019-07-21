@@ -4,12 +4,12 @@ description: チームのチャネルで単一のメッセージを取得しま�
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: ea69a9926a07c0f9fcd05a70bdf409fd9bd4d922
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 884da7f1f27c20c3012c8f8a1d38681d472a8337
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35438511"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778412"
 ---
 # <a name="get-channel-message"></a>チャネル メッセージを取得する
 
@@ -25,6 +25,9 @@ ms.locfileid: "35438511"
 |委任 (職場または学校のアカウント)|Group.Read.All、Group.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません|
 |アプリケーション| Group.Read.All、Group.ReadWrite.All |
+
+> [!NOTE]
+> この API をアプリケーションのアクセス許可で呼び出す前に、アクセスを要求する必要があります。 詳細については、「[Microsoft Teams の保護された API](/graph/teams-protected-apis)」を参照してください。
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
