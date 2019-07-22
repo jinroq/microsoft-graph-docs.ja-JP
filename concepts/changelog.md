@@ -3,12 +3,12 @@ title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 5d294584e402875980cee1fd0ca2666c68256681
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+ms.openlocfilehash: 7f88a9370b59e13c571c10863b3c07eee9a6e480
+ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778748"
+ms.lasthandoff: 07/20/2019
+ms.locfileid: "35805236"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
@@ -46,11 +46,6 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 |追加|ベータ版|[windowsFirewallRule](/graph/api/resources/intune-deviceconfig-windowsfirewallrule?view=graph-rest-beta) 複合型に**edgeTraversal** プロパティを追加しました|
 |追加|ベータ版|[secureAssessmentAccountType](/graph/api/resources/intune-deviceconfig-secureassessmentaccounttype?view=graph-rest-beta) 列挙型に **localGuestAccount** メンバーを追加しました|
 |追加|ベータ版|[vpnLocalIdentifier](/graph/api/resources/intune-deviceconfig-vpnlocalidentifier?view=graph-rest-beta) 列挙型に **empty** メンバーおよび **clientCertificateSubjectName** メンバーを追加しました|
-
-### <a name="devices-and-apps-microsoft-intune"></a>デバイスとアプリ (Microsoft Intune)
-
-|変更の種類|バージョン|説明|
-|:---|:---|:---|
 |追加|ベータ版|[groupPolicyDefinitionFile](/graph/api/resources/intune-grouppolicy-grouppolicydefinitionfile?view=graph-rest-beta) エンティティに **revision** プロパティが追加されました|
 |追加|ベータ版|[groupPolicyPresentationListBox](/graph/api/resources/intune-grouppolicy-grouppolicypresentationlistbox?view=graph-rest-beta) エンティティに **valuePrefix** プロパティが追加されました|
 
@@ -65,6 +60,15 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 |:----------------|:------------|:-----------------------------------------|
 | 追加 | v1.0 | [組織 API](/graph/api/resources/organization?view=graph-rest-1.0) リソースの取得および更新をして、[subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-1.0) リソースを取得するために、[新しい委任されたアクセス許可とアプリケーションのアクセス許可](/graph/permissions-reference?#organization-permissions) _Organization.Read.All_ および _Organization.ReadWrite.All_を追加しました。 |
 | 追加 | ベータ版 | [組織 API](/graph/api/resources/organization?view=graph-rest-beta) リソースを取得および更新して、[subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-beta) リソースを取得するために、[新しい委任されたアクセス許可とアプリケーションのアクセス許可](/graph/permissions-reference?#organization-permissions)、_Organization.Read.All_ および _Organization.ReadWrite.All_ を追加しました。 |
+| 追加 | v1.0 | [グループ:validateProperties 関数](/graph/api/group-validateproperties?view=graph-rest-1.0) と [directoryobject:validateProperties 関数](/graph/api/group-validateproperties?view=graph-rest-1.0) が [グループ](/graph/api/group-delta?view=graph-rest-1.0)に追加されました。そしてそれは、Office 365 グループの表示名またはメール ニックネームが名前付けポリシーに準拠していることを検証します。 |
+
+### <a name="reports"></a>レポート
+
+| **変更の種類** | **バージョン** | **説明**                  |
+|:----------------|:------------|:-----------------------------------------|
+| 追加        | ベータ版  | **deletedItemCount** プロパティが[mailboxUsageDetail](/graph/api/resources/mailboxUsageDetail?view=graph-rest-beta) エンティティに追加されました。|
+| 追加        | ベータ版  | **deletedItemSizeInBytes** プロパティが[mailboxUsageDetail](/graph/api/resources/mailboxUsageDetail?view=graph-rest-beta)エンティティに追加されました。|
+| 追加        | ベータ版  | **groupId** プロパティが[office365GroupsActivityDetail](/graph/api/resources/office365GroupsActivityDetail?view=graph-rest-beta)エンティティに追加されました。|
 
 ### <a name="teamwork-microsoft-teams"></a>チームワーク (Microsoft Teams)
 
@@ -597,7 +601,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | **変更の種類** | **バージョン**   | **説明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 追加 | ベータ版 | 
-  [グループ](https://docs.microsoft.com/ja-JP/graph/api/group-list-transitivemembers?view=graph-rest-beta)に、[グループの有効期限](https://docs.microsoft.com/ja-JP/azure/active-directory/users-groups-roles/groups-lifecycle)に関する新しいプロパティ `expirationDateTime` を追加しました。|
+  [グループ](https://docs.microsoft.com/ja-JP/graph/api/resources/group?view=graph-rest-beta)に、[グループの有効期限](https://docs.microsoft.com/ja-JP/azure/active-directory/users-groups-roles/groups-lifecycle)に関する新しいプロパティ `expirationDateTime` を追加しました。|
 | 追加 | ベータ版 | 新しいリソースの種類 [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta) を追加します。|
 | 追加 | ベータ版 | [organization](/graph/api/resources/organization?view=graph-rest-beta) リソースに `createdDateTime` プロパティを追加しました。|
 | 追加 | v1.0 | [デバイス](/graph/api/resources/device?view=graph-rest-1.0)のダイレクト [メンバーシップ](/graph/api/device-list-memberOf?view=graph-rest-1.0)を取得する `memberOf` メソッドを追加しました。 このメソッドは、入れ子になったメンバーシップを含むメンバーシップのリストを取得するために追加されました。|
