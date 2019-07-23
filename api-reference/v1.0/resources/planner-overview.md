@@ -1,17 +1,17 @@
 ---
-title: プランナーの REST API を使用します
+title: Planner REST APIを使用する
 description: Microsoft GraphのPlanner APIを使用してタスクを作成し、それらをOffice 365のグループ内のユーザーに割り当てることができます。
 author: TarkanSevilmis
 localization_priority: Priority
 ms.prod: planner
-ms.openlocfilehash: 86d5c950b2e281a0af254d48a7d133d7e352341f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d14ec6e535dc8f4ca690f50cdf7712eafcf5d2bb
+ms.sourcegitcommit: b198efc2391a12a840e4f1b8c42c18a55b06037f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462397"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35820774"
 ---
-# <a name="use-the-planner-rest-api"></a>プランナーの REST API を使用します
+# <a name="use-the-planner-rest-api"></a>Planner REST APIを使用する
 
 Microsoft GraphのPlanner APIを使用してタスクを作成し、それらをOffice 365のグループ内のユーザーに割り当てることができます。
 
@@ -23,21 +23,21 @@ Office 365 のグループは、Planner API のプランの所有者です。
 [グループが所有するプランを取得する](../api/plannergroup-list-plans.md)には、次に示す HTTP 要求を行います。
 
 ``` http
-GET /groups/{id}/planner/plans
+GET /groups/{group-id}/planner/plans
 ```
 
-[新しいプランを作成する](../api/planner-post-plans.md)場合は、プラン オブジェクトに `owner` プロパティを設定するだけで、グループを所有者にできます。 プランはグループによって所有される必要があります。
+[新しいプランを作成する](../api/planner-post-plans.md)場合は、プラン オブジェクトに `owner` プロパティを設定することで、グループを所有者にできます。 プランはグループによって所有される必要があります。
 
 >**注意:** プランを作成するユーザーは、プランを所有するグループのメンバーである必要があります。 あなたが新しいグループを[グループの作成](../api/group-post-groups.md)を使用して作成しても、メンバーとしてそのグループに追加されることはありません。 グループを作成したら、[グループ投稿メンバー](../api/group-post-members.md)を使用して自分自身をメンバーとして追加します。
 
 ## <a name="plans"></a>プラン
 
-[プラン](plannerplan.md)は[タスク](plannertask.md)の容器です。 [プランのタスクを作成する](../api/planner-post-tasks.md)には、タスクの作成時にタスク オブジェクトの `planId` プロパティをプランの ID に設定します。
+[プラン](plannerplan.md)は[タスク](plannertask.md)のコンテナーです。 [プランのタスクを作成する](../api/planner-post-tasks.md)には、タスクの作成時にタスク オブジェクトの `planId` プロパティをプランの ID に設定します。
 現在、プランなしでタスクを作成することはできません。
 [プラン内のタスクを取得する](../api/plannerplan-list-tasks.md)には、次のHTTPリクエストを行います。
 
 ``` http
-GET /planner/plans/{id}/tasks
+GET /planner/plans/{plan-id}/tasks
 ```
 
 ## <a name="tasks"></a>タスク
@@ -67,8 +67,8 @@ Planner API は、タスクとプランのデータのほかに、データの�
 
 ## <a name="planner-resource-versioning"></a>Planner のリソースのバージョン管理
 
-Planner は **etags**を使ってすべてのリソースをバージョン管理します。 これらの**etags**は各リソースの`@odata.etag`プロパティとともに返されます 。 `PATCH`と`DELETE` リクエストは、クライアントが知っている最後の**etag**を`If-Match`ヘッダで指定することを要求します。
-同じリソースに対してPlannerサービスによって受け入れることを意図された新しい変更と競合しない場合、Plannerは古いバージョンのリソースへの変更を許可します。 クライアントは、**etag**順序文字列の比較でどの値が大きいかを計算することによって、同じリソースのどの**etag**がより新しいかを識別できます 。 各リソースには固有の **etag**があります。 包含関係を持つものを含め、種類の違うリソースのetag値を比較することはできません。
+Plannerはすべてのリソースを **etags**を使ってバージョン管理します。 これらの**etags**は各リソースの`@odata.etag`プロパティとともに返されます 。 `PATCH`と`DELETE` リクエストは、クライアントが知っている最後の**etag**を`If-Match`ヘッダで指定することを要求します。
+目的の変更が同じリソース上の Planner サービスによって受け入れられた新しい変更と競合しない場合、Planner は古いバージョンのリソースに変更を加えることができます。 クライアントは、**etag**順序文字列の比較でどの値が大きいかを計算することによって、同じリソースのどの**etag**がより新しいかを識別できます 。 各リソースには固有の **etag**があります。 異なるリソースの Etag 値は比較できません (包含関係のあるものを含む)。
 クライアントアプリは、アイテムの最新バージョンを読み取り、競合する変更を解決することで、バージョニング関連の[エラーコード](/graph/errors) **409** および**412**を処理することが期待されています。
 
 ## <a name="common-planner-error-conditions"></a>一般的な Planner のエラー条件
@@ -86,7 +86,7 @@ Microsoft Graph に適用される[一般的なエラー](/graph/errors)のほ�
 ### <a name="403-forbidden"></a>403 Forbidden
 
 Planner API では、一般的なエラーのほかに、サービスで定義された制限を超えた場合にも403 ステータスコードを返します。 この場合、エラー リソースの種類の `code` プロパティは、要求が超過した制限の種類を示します。
-制限の種類の有効な値は次のとおりです。
+以下は、制限タイプに有効な値です。
 
 | 値                         | 説明                                                                                                                                                                                              |
 | :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

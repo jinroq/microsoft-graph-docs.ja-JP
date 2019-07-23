@@ -4,12 +4,12 @@ description: Microsoft GraphのPlanner APIを使用してタスクを作成し�
 author: TarkanSevilmis
 localization_priority: Priority
 ms.prod: planner
-ms.openlocfilehash: 29fdbe5403292638e8b6067a5e8b81d8e1bef250
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: b09efbb6e20946f18a1a4fd6a4c7d4ea77319a52
+ms.sourcegitcommit: b198efc2391a12a840e4f1b8c42c18a55b06037f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344617"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35820683"
 ---
 # <a name="use-the-planner-rest-api"></a>Planner REST APIを使用する
 
@@ -25,7 +25,7 @@ Office 365 のグループは、Planner API のプランの所有者です。
 [グループが所有するプランを取得する](../api/plannergroup-list-plans.md)には、次に示す HTTP 要求を行います。
 
 ``` http
-GET /groups/{id}/planner/plans
+GET /groups/{group-id}/planner/plans
 ```
 
 [新しいプランを作成する](../api/planner-post-plans.md)場合は、プラン オブジェクトに `owner` プロパティを設定することで、グループを所有者にできます。 プランはグループによって所有される必要があります。
@@ -39,7 +39,7 @@ GET /groups/{id}/planner/plans
 [プラン内のタスクを取得する](../api/plannerplan-list-tasks.md)には、次のHTTPリクエストを行います。
 
 ``` http
-GET /planner/plans/{id}/tasks
+GET /planner/plans/{plan-id}/tasks
 ```
 
 ## <a name="tasks"></a>タスク
