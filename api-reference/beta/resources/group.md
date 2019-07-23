@@ -4,12 +4,12 @@ description: Office 365 グループ、Microsoft Teams のチーム、または�
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 551ee0939d4a8ba10ea54d61b068078e21e5003a
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 9fd24cb22b027990c9673017a645c937ee3e1384
+ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35621138"
+ms.lasthandoff: 07/20/2019
+ms.locfileid: "35805264"
 ---
 # <a name="group-resource-type"></a>group リソースの種類
 
@@ -71,6 +71,7 @@ Office 365 グループ、Microsoft Teams のチーム、またはセキュリ�
 |[会話を取得する](../api/group-get-conversation.md) |[conversation](conversation.md)| conversation オブジェクトのプロパティを読み取ります。|
 |[会話を一覧表示する](../api/group-list-conversations.md) |[conversation](conversation.md) コレクション| conversation オブジェクトのコレクションを取得します。|
 |[会話を削除する](../api/group-delete-conversation.md) |なし|conversation オブジェクトを削除します。|
+|[Create thread](../api/group-post-threads.md)|[conversationThread](conversationthread.md)| 新しい会話スレッドを作成します。|
 |[スレッドを取得する](../api/group-get-thread.md) |[conversationThread](conversationthread.md)| thread オブジェクトのプロパティを読み取ります。|
 |[スレッドを一覧表示する](../api/group-list-threads.md) |[conversationThread](conversationthread.md) コレクション| グループのすべてのスレッドを取得します。|
 |[スレッドを更新する](../api/group-update-thread.md) |なし| thread オブジェクトのプロパティを更新します。|

@@ -4,12 +4,12 @@ description: 'Office 365 グループまたはセキュリティ グループの
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 57587b183ccc15c4ebc46784161724d9cc7af773
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 170f89c0e7c4e701e8b98a5aac8c02404b174b4e
+ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620781"
+ms.lasthandoff: 07/20/2019
+ms.locfileid: "35805243"
 ---
 # <a name="group-resource-type"></a>group リソースの種類
 
@@ -55,7 +55,8 @@ Office 365 グループまたはセキュリティ グループのいずれか�
 |[設定を一覧表示する](../api/groupsetting-list.md) | [groupSetting](groupsetting.md) コレクション | すべての設定オブジェクトのプロパティを一覧表示します。 |
 |[設定を更新する](../api/groupsetting-update.md) | [groupSetting](groupsetting.md) | 設定オブジェクトを更新します。 |
 |[設定を削除する](../api/groupsetting-delete.md) | なし | 設定オブジェクトを削除します。 |
-|**予定表**| | |
+|[validateProperties](../api/group-validateproperties.md)|JSON| 名前付けポリシーに準拠した Office 365 グループの表示名またはメールのニックネームを検証します。 |
+|**Calendar**| | |
 |[イベントを作成する](../api/group-post-events.md) |[event](event.md)| event コレクションへの投稿によって、新しいイベントを作成します。|
 |[イベントを取得する](../api/group-get-event.md) |[event](event.md)|event オブジェクトのプロパティを読み取ります。|
 |[イベントを一覧表示する](../api/group-list-events.md) |[event](event.md) コレクション| event オブジェクトのコレクションを取得します。|
@@ -67,6 +68,7 @@ Office 365 グループまたはセキュリティ グループのいずれか�
 |[会話を取得する](../api/group-get-conversation.md) |[conversation](conversation.md)| conversation オブジェクトのプロパティを読み取ります。|
 |[会話を一覧表示する](../api/group-list-conversations.md) |[conversation](conversation.md) コレクション| conversation オブジェクトのコレクションを取得します。|
 |[会話を削除する](../api/group-delete-conversation.md) |なし|conversation オブジェクトを削除します。|
+|[Create thread](../api/group-post-threads.md)|[conversationThread](conversationthread.md)| 新しい会話スレッドを作成します。|
 |[スレッドを取得する](../api/group-get-thread.md) |[conversationThread](conversationthread.md)| thread オブジェクトのプロパティを読み取ります。|
 |[スレッドを一覧表示する](../api/group-list-threads.md) |[conversationThread](conversationthread.md) コレクション| グループのすべてのスレッドを取得します。|
 |[スレッドを更新する](../api/group-update-thread.md) |なし| thread オブジェクトのプロパティを更新します。|
@@ -82,6 +84,8 @@ Office 365 グループまたはセキュリティ グループのいずれか�
 |[設定を一覧表示する](../api/groupsetting-list.md) | [groupSetting](groupsetting.md) コレクション | すべての設定オブジェクトのプロパティを一覧表示します。 |
 |[設定を更新する](../api/groupsetting-update.md) | なし | 設定オブジェクトを更新します。 |
 |[設定を削除する](../api/groupsetting-delete.md) | なし | 設定オブジェクトを削除します。 |
+|[設定テンプレートを取得する](../api/groupsettingtemplate-get.md) | なし | 設定テンプレートのプロパティを読み取ります。 |
+|[設定テンプレートを一覧表示する](../api/groupsettingtemplate-list.md) | なし | すべての設定テンプレートを一覧表示します。 |
 |**オープン拡張機能**| | |
 |[オープン拡張機能を作成する](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| オープン拡張機能を作成し、新規または既存のリソースにカスタム プロパティを追加します。|
 |[オープン拡張機能を取得する](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) コレクション| 拡張機能の名前で識別されるオープン拡張機能を取得します。|

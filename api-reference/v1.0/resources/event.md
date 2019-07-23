@@ -4,12 +4,12 @@ description: 予定表内のイベントです。
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 0be46df98faf4540e221a140daf0ec22355fc24a
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+ms.openlocfilehash: 887674cb70f5c3247d4a617f6ab6f591340bd0c4
+ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778727"
+ms.lasthandoff: 07/20/2019
+ms.locfileid: "35805278"
 ---
 # <a name="event-resource-type"></a>event リソースの種類
 
@@ -64,7 +64,7 @@ ms.locfileid: "35778727"
 |categories|String collection|イベントに関連付けられたカテゴリ。|
 |changeKey|String|イベント オブジェクトのバージョンを識別します。イベントを変更するたびに ChangeKey も変更されます。これにより、Exchange は正しいバージョンのオブジェクトに変更を適用できます。|
 |createdDateTime|DateTimeOffset|Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
-|end|[dateTimeTimeZone](datetimetimezone.md)|イベントが終了する日付、時刻、タイムゾーン|
+|end|[dateTimeTimeZone](datetimetimezone.md)|イベントが終了する日付、時刻、タイムゾーン 既定で、終了時刻は UTC 単位です。|
 |hasAttachments|Boolean|イベントに添付ファイルが含まれている場合、true に設定します。|
 |iCalUId|String|複数の予定表で 1 つのイベントのすべてのインスタンスによって共有される一意識別子。 読み取り専用です。|
 |id|String| 読み取り専用。|
@@ -88,7 +88,7 @@ ms.locfileid: "35778727"
 |sensitivity|sensitivity| 使用可能な値: `normal`、`personal`、`private`、`confidential`。|
 |seriesMasterId|String|対象イベントが定期的なアイテムの一部である場合、定期的なアイテムのマスター アイテムの ID。|
 |showAs|freeBusyStatus|表示するステータス。 使用可能な値: `free`、`tentative`、`busy`、`oof`、`workingElsewhere`、`unknown`。|
-|開始|[dateTimeTimeZone](datetimetimezone.md)|イベントが開始する日付、時刻、タイムゾーン。|
+|開始|[dateTimeTimeZone](datetimetimezone.md)|イベントが開始する日付、時刻、タイムゾーン。 既定で、開始時刻は UTC 単位です。|
 |subject|String|イベントの件名行のテキスト。|
 |type|eventType|イベントの種類。 使用可能な値: `singleInstance`、`occurrence`、`exception`、`seriesMaster`。 読み取り専用です。|
 |webLink|String|Outlook Web App でイベントを開く URL。<br/><br/>Outlook Web App のメールボックスにログインしている場合、ブラウザーでイベントが開きます。まだブラウザーでログインしていない場合、ログインするように求められます。<br/><br/>この URL には、iFrame 内からアクセスできます。|

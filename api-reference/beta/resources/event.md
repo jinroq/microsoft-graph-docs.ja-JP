@@ -4,12 +4,12 @@ description: 予定表内のイベントです。
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 01aac673f5bf9f4a1ecbc4b1fa3b82b9cd001537
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+ms.openlocfilehash: 0d8e25276613461098f2194daa60bf260cc7887b
+ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778468"
+ms.lasthandoff: 07/20/2019
+ms.locfileid: "35805271"
 ---
 # <a name="event-resource-type"></a>event リソースの種類
 
@@ -102,7 +102,7 @@ ms.locfileid: "35778468"
 |categories|String collection|イベントに関連付けられたカテゴリ。 各カテゴリは、ユーザーに対して定義されている [outlookCategory](outlookcategory.md) の **displayName** プロパティに対応しています。|
 |changeKey|String|イベント オブジェクトのバージョンを識別します。イベントを変更するたびに ChangeKey も変更されます。これにより、Exchange は正しいバージョンのオブジェクトに変更を適用できます。|
 |createdDateTime|DateTimeOffset|Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
-|end|[DateTimeTimeZone](datetimetimezone.md)|イベントが終了する日時。|
+|end|[DateTimeTimeZone](datetimetimezone.md)|イベントが終了する日付、時刻、タイムゾーン。 既定で、終了時刻は UTC 単位です。|
 |hasAttachments|Boolean|イベントに添付ファイルが含まれている場合、true に設定します。|
 |id|String| イベントの一意の識別子。 [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] 読み取り専用です。 |
 |importance|String|イベントの重要度。 可能な値は `low`、`normal`、`high` です。|
@@ -125,7 +125,7 @@ ms.locfileid: "35778468"
 |sensitivity|String| 使用可能な値: `normal`、`personal`、`private`、`confidential`。|
 |seriesMasterId|String|対象イベントが定期的なアイテムの一部である場合、定期的なアイテムのマスター アイテムの ID。|
 |showAs|String|表示するステータス。 使用可能な値: `free`、`tentative`、`busy`、`oof`、`workingElsewhere`、`unknown`。|
-|開始|[DateTimeTimeZone](datetimetimezone.md)|イベントの開始時刻です。|
+|開始|[DateTimeTimeZone](datetimetimezone.md)|イベントの開始日、時間、タイム ゾーン。 既定で、開始時刻は UTC 単位です。|
 |subject|String|イベントの件名行のテキスト。|
 |type|String|イベントの種類。 使用可能な値は、`singleInstance`、`occurrence`、`exception`、`seriesMaster` です。 読み取り専用|
 |uid|String|複数の予定表で 1 つのイベントのすべてのインスタンスによって共有される一意識別子。 **注:** このプロパティは、v1.0 エンドポイントの [event リソース](/graph/api/resources/event?view=graph-rest-1.0) の `iCalUid` プロパティと同じ目的に使用できますが、必ずしも同じ値になるとは限りません。|

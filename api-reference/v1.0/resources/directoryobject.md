@@ -4,12 +4,12 @@ description: Azure Active Directory オブジェクトを表します。**direct
 localization_priority: Priority
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b71de12ba6a0053cd97749fd72dc22f7ab961539
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.openlocfilehash: ae7340d273a2a02673fdfe5115e602f24680c221
+ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34658030"
+ms.lasthandoff: 07/20/2019
+ms.locfileid: "35805208"
 ---
 # <a name="directoryobject-resource-type"></a>directoryObject リソースの種類
 
@@ -25,6 +25,7 @@ Azure Active Directory オブジェクトを表します。**directoryObject** �
 |[getMemberGroups](../api/directoryobject-getmembergroups.md)|String collection|ユーザー オブジェクト、グループ オブジェクト、またはディレクトリ オブジェクトがメンバーであるすべてのグループを返します。チェックは推移的です。|
 |[getMemberObjects](../api/directoryobject-getmemberobjects.md)|String collection| ユーザー オブジェクト、グループ オブジェクト、またはディレクトリ オブジェクトがメンバーであるすべてのグループとディレクトリ ロールを返します。チェックは推移的です。 |
 |[getByIds](../api/directoryobject-getbyids.md) | [directoryObject](directoryobject.md) コレクション | 指定された一連の ID に基づいて、一連のディレクトリ オブジェクトを取得します。 |
+|[validateProperties](../api/directoryobject-validateproperties.md)|Json| 名前付けポリシーに準拠した Office 365 グループの表示名またはメールのニックネームを検証します。 |
 
 ## <a name="properties"></a>プロパティ
 
