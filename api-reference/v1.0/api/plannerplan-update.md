@@ -4,12 +4,12 @@ description: '**Plan**オブジェクトのプロパティを更新します。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: a1b4ef284a243135ad26a01dbed662f37bdfbd33
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 93aa7a3529c887c97bc40540ed3f94ef9eae8b35
+ms.sourcegitcommit: b198efc2391a12a840e4f1b8c42c18a55b06037f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35452327"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35820795"
 ---
 # <a name="update-plannerplan"></a>プランを更新する plan
 
@@ -27,7 +27,7 @@ ms.locfileid: "35452327"
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /planner/plans/{id}
+PATCH /planner/plans/{plan-id}
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
@@ -38,7 +38,7 @@ PATCH /planner/plans/{id}
 | If-Match  | 更新する plannerPlan の最後の既知の ETag 値。必須。|
 
 ## <a name="request-body"></a>要求本文
-要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
+要求本文で、関連するフィールドの値を [更新済み] に指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。 最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
@@ -47,7 +47,7 @@ PATCH /planner/plans/{id}
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で更新された [plannerPlan](../resources/plannerplan.md) オブジェクトを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[プランのプラン](../resources/plannerplan.md)オブジェクトを返します。
 
 このメソッドは、いずれかの [HTTP 状態コード](/graph/errors)を返します。このメソッドでアプリが処理する最も一般的なエラーは、400、403、404、409、412 応答です。これらのエラーの詳細については、「[一般的なプランナーのエラー条件](../resources/planner-overview.md#common-planner-error-conditions)」を参照してください。
 
@@ -85,7 +85,9 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ---
 
 ##### <a name="response"></a>応答
-以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+以下は、応答の例です。 
+
+>**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

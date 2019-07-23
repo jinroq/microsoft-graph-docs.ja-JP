@@ -1,15 +1,15 @@
 ---
 title: 'user: delta'
-description: ユーザーコレクション全体を完全に読み取ることなく、新しく作成、更新、または削除されたユーザーを取得します。 詳細は変更の追跡をご覧ください。
+description: ユーザーコレクション全体を完全に読み取ることなく、新しく作成、更新、または削除されたユーザーを取得します。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3f6d940617e85715b1986f417993d956eab283c0
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 05e0e6addf6b075621d6e66467d2fbb4fbfa8af4
+ms.sourcegitcommit: b198efc2391a12a840e4f1b8c42c18a55b06037f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35450892"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35820823"
 ---
 # <a name="user-delta"></a>user: delta
 
@@ -68,7 +68,7 @@ GET /users/delta
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 
-### <a name="response"></a>応答
+## <a name="response"></a>応答
 
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [user](../resources/user.md) コレクション オブジェクトを返します。 応答には`nextLink` URLまたは`deltaLink` URLも含まれます。
 
@@ -80,7 +80,7 @@ GET /users/delta
   - これは、返されるリソースの既存の状態に関するデータがこれ以上ないことを示します。 `deltaLink` URL を、次回のラウンドでリソースへの変更について学ぶために保存して使ってください。
   - `Prefer:return=minimal` ヘッダーを指定して、`deltaLink`発行後に変更されたプロパティのみをレスポンス値に含めるように選択することもできます。
 
-#### <a name="default-return-the-same-properties-as-initial-delta-request"></a>デフォルト：初期デルタリクエストと同じプロパティを返します
+### <a name="default-return-the-same-properties-as-initial-delta-request"></a>デフォルト：初期デルタリクエストと同じプロパティを返します
 
 デフォルトでは、`deltaLink`または`nextLink`を使用したリクエストは、最初のデルタクエリで選択されたものと同じプロパティを次のように返します:
 
@@ -89,20 +89,22 @@ GET /users/delta
 - プロパティが設定されたことがない場合は、応答にまったく含まれません。
 
 
-> **注意:** この動作では、応答を見ても、プロパティが変化しているかどうかを判断することはできません。 また、デルタ応答は-以下の[2番目の例](#request-2)に示されるようにすべてのプロパティ値を含むため、大きくなる傾向があります 。
+> **注意:** この動作では、応答を見ても、プロパティが変化しているかどうかを判断することはできません。 また、デルタ応答は、[例 2](#example-2-selecting-three-properties)に示すように、すべてのプロパティ値を含むため、サイズが大きくなる傾向があります。
 
-#### <a name="alternative-return-only-the-changed-properties"></a>代替案：変更されたプロパティのみを返す
+### <a name="alternative-return-only-the-changed-properties"></a>代替案：変更されたプロパティのみを返す
 
 オプションのリクエストヘッダを追加すると、- `prefer:return=minimal` - 次のようになります:
 
 - プロパティを変更した場合は、応答には新しい値が含まれます。 これには、null 値に設定されているプロパティが含まれます。
 - プロパティが変更されていない場合、そのプロパティは応答にまったく含まれません。 (既定の動作と異なる)
 
-> **注意:** ヘッダーは、デルタサイクルのどの時点でも `deltaLink`要求に追加できます。 ヘッダーは応答に含まれる一連のプロパティにのみ影響し、デルタクエリの実行方法には影響しません。 以下の[三番目の例](#request-3)を参照してください。
+> **注意:** ヘッダーは、デルタサイクルのどの時点でも `deltaLink`要求に追加できます。 ヘッダーは応答に含まれる一連のプロパティにのみ影響し、デルタクエリの実行方法には影響しません。 [例 3](#example-3-alternative-minimal-response-behavior)を参照してください。
 
-### <a name="example"></a>例
+## <a name="examples"></a>例
 
-#### <a name="request-1"></a>要求 1
+### <a name="example-1-default-properties"></a>例 1: 既定のプロパティ
+
+#### <a name="request"></a>要求
 
 要求の例を次に示します。 `$select`パラメータがないため、デフォルトのプロパティセットが追跡されて返されます。
 
@@ -130,7 +132,7 @@ GET https://graph.microsoft.com/beta/users/delta
 ---
 
 
-#### <a name="response-1"></a>応答 1
+#### <a name="response"></a>応答
 
 以下は、クエリ初期化から取得した`deltaLink` を使用した場合の応答の例です。
 
@@ -170,9 +172,11 @@ Content-type: application/json
 }
 ```
 
-#### <a name="request-2"></a>要求 2
+### <a name="example-2-selecting-three-properties"></a>例 2: 3 つのプロパティの選択
 
-次の例は、デフォルトの応答動作で、変更追跡のために3つのプロパティを選択する最初の要求を示しています。
+#### <a name="request"></a>要求
+
+次の例は、既定の応答動作を使用して、変更追跡の3つのプロパティを選択する最初の要求を示しています。
 
 # <a name="httptabhttp"></a>[プロトコル](#tab/http)
 <!-- {
@@ -198,9 +202,9 @@ GET https://graph.microsoft.com/beta/users/delta?$select=displayName,jobTitle,mo
 ---
 
 
-#### <a name="response-2"></a>応答 2
+#### <a name="response"></a>応答
 
-以下は、クエリ初期化から取得した`deltaLink` を使用した場合の応答の例です。 3つのプロパティすべてがレスポンスに含まれており、`deltaLink`が取得されてからどのプロパティが変更されたのかはわかりません。
+以下は、クエリ初期化から取得した`deltaLink` を使用した場合の応答の例です。 3つのプロパティはすべて応答に含まれており、 `deltaLink`取得した後に変更されたプロパティが不明であることに注意してください。
 
 <!-- {
   "blockType": "response",
@@ -226,9 +230,11 @@ Content-type: application/json
 }
 ```
 
-#### <a name="request-3"></a>要求 3
+### <a name="example-3-alternative-minimal-response-behavior"></a>例 3: 代替の最小応答動作
 
-次の例は、最初のリクエストが代替の最小限の応答の変更追跡のために3つのプロパティを選択していることを示しています。
+#### <a name="request"></a>要求
+
+次の例は、変更追跡のために3つのプロパティを選択する最初の要求を示しています。これには、別の最低限の応答動作があります。
 
 # <a name="httptabhttp"></a>[プロトコル](#tab/http)
 <!-- {
@@ -255,7 +261,7 @@ Prefer: return=minimal
 ---
 
 
-#### <a name="response-3"></a>応答 3
+#### <a name="response"></a>応答
 
 以下は、クエリ初期化から取得した`deltaLink` を使用した場合の応答の例です。 この`mobilePhone`プロパティは含まれていないことに注意してください 。つまり、最後のデルタクエリ以降変更されていません;`displayName`と`jobTitle` が含まれており、それらの値は変更されていることを意味します。
 
@@ -281,6 +287,7 @@ Content-type: application/json
   ]
 }
 ```
+## <a name="see-also"></a>関連項目
 
 - [デルタクエリを使用してMicrosoft Graphデータの変更を追跡します](/graph/delta-query-overview)。
 - [ユーザーの増分変更を取得します](/graph/delta-query-users)。

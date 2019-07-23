@@ -1,21 +1,21 @@
 ---
 title: List tasks
-description: plannerPlan オブジェクトに関連付けられている **plannertask** オブジェクトのリストを取得します。
+description: Plan オブジェクトに関連**** 付けられているプランのリストを取得します。
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: d6ffb5b9c8c1173d768f997efea31d415338bb9d
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: cdffe20f835a0cea1166e6111a69a84e85c8d645
+ms.sourcegitcommit: b198efc2391a12a840e4f1b8c42c18a55b06037f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35445822"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35820753"
 ---
-# <a name="list-tasks"></a>List tasks
+# <a name="list-tasks"></a>タスクを一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[plannerPlan](../resources/plannerplan.md) オブジェクトに関連付けられている **plannertask** オブジェクトのリストを取得します。
+Plan オブジェクトに関連[](../resources/plannertask.md)付けられている[プラン](../resources/plannerplan.md)のリストを取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -28,7 +28,7 @@ ms.locfileid: "35445822"
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /planner/plans/<id>/tasks
+GET /planner/plans/{plan-id}/tasks
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
@@ -41,7 +41,7 @@ GET /planner/plans/<id>/tasks
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [plannerTask](../resources/plannertask.md) オブジェクトのコレクションを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で、[プランの task](../resources/plannertask.md)オブジェクトのコレクションを返します。
 
 このメソッドは、いずれかの [HTTP 状態コード](/graph/errors)を返します。このメソッドでアプリが処理する最も一般的なエラーは、403 および 404 応答です。これらのエラーの詳細については、「[一般的なプランナーのエラー条件](../resources/planner-overview.md#common-planner-error-conditions)」を参照してください。
 
@@ -72,7 +72,9 @@ GET https://graph.microsoft.com/beta/planner/plans/xqQg5FS2LkCp935s-FIFm2QAFkHM/
 ---
 
 ##### <a name="response"></a>応答
-以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+以下は、応答の例です。 
+
+>**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

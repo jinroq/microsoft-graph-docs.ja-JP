@@ -2,14 +2,14 @@
 title: calendarView を一覧表示する
 description: 既定の予定表から、時間範囲で定義した予定表ビューのイベントの発生、例外、および単一インスタンスを取得します。
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 82531d628968449cc7bc0b3bdb10b0b771d8ec37
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: b749fccd28d5f785dfb29d23b444257af09955d2
+ms.sourcegitcommit: b198efc2391a12a840e4f1b8c42c18a55b06037f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35457794"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35820725"
 ---
 # <a name="list-calendarview"></a>calendarView を一覧表示する
 
@@ -59,7 +59,11 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/calendarV
 |startDateTime|String|時間範囲の開始日時は、ISO 8601 形式で表されます。例: "2015-11-08T19:00:00.0000000"。|
 |endDateTime|String|時間範囲の終了日時は、ISO 8601 形式で表されます。例: "2015-11-08T20:00:00.0000000"。|
 
-また、このメソッドは応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)もサポートします。
+このメソッドは、応答をカスタマイズするための[OData クエリパラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)の一部もサポートしています。
+
+> [!NOTE] 
+> [イベント](../resources/event.md)の**lastModifiedDateTime**プロパティは、をサポート**** `$select`していません。 値を取得するには、 **calendarView**を適用`$select`せずに単にクエリを実行します。
+
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明 |
 |:---------------|:--------|:--------|
@@ -72,7 +76,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/calendarV
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [Event](../resources/event.md) オブジェクトのコレクションを返します。
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [event](../resources/event.md) オブジェクトのコレクションを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

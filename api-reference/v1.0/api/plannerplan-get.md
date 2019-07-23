@@ -4,16 +4,16 @@ description: '**plannerplan** オブジェクトのプロパティと関係を�
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 4c7af021e91ac9ec2bad82f3850726605890de4e
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: db61db4d793e77d68f4f900e4c921e95e094a12b
+ms.sourcegitcommit: b198efc2391a12a840e4f1b8c42c18a55b06037f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35459581"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35820786"
 ---
 # <a name="get-plannerplan"></a>Get plannerPlan
 
-**plannerplan** オブジェクトのプロパティと関係を取得します。
+[Plan](../resources/plannerplan.md)オブジェクトのプロパティとリレーションシップを取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -26,7 +26,7 @@ ms.locfileid: "35459581"
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /planner/plans/{id}
+GET /planner/plans/{plan-id}
 ```
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前      |説明|
@@ -38,7 +38,7 @@ GET /planner/plans/{id}
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [plannerPlan](../resources/plannerplan.md) オブジェクトを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で、[プラン](../resources/plannerplan.md)オブジェクトを返します。
 
 このメソッドは、いずれかの [HTTP 状態コード](/graph/errors)を返します。このメソッドでアプリが処理する最も一般的なエラーは、403 および 404 応答です。これらのエラーの詳細については、「[一般的なプランナーのエラー条件](../resources/planner-overview.md#common-planner-error-conditions)」を参照してください。
 
@@ -69,7 +69,9 @@ GET https://graph.microsoft.com/v1.0/planner/plans/{plan-id}
 ---
 
 ##### <a name="response"></a>応答
-以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+以下は、応答の例です。 
+
+>**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

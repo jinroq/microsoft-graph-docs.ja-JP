@@ -4,12 +4,12 @@ description: 時間範囲で定義した予定表ビューから、予定、例�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 7e90ed2c30b9affed32a418254ace7032f364331
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 5d47c6891fda52a94d2fe1ac7474490419764683
+ms.sourcegitcommit: b198efc2391a12a840e4f1b8c42c18a55b06037f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35441738"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35820613"
 ---
 # <a name="list-calendarview"></a>calendarView を一覧表示する
 グループの既定の予定表から、時間範囲で定義した予定表ビューのイベントの発生、例外、および単一インスタンスを取得します。
@@ -37,7 +37,10 @@ GET /groups/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_da
 |startDateTime|String|時間範囲の開始日時は、ISO 8601 形式で表されます。例: "2015-11-08T19:00:00.0000000"。|
 |endDateTime|String|時間範囲の終了日時は、ISO 8601 形式で表されます。例: "2015-11-08T20:00:00.0000000"。|
 
-また、このメソッドは応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)もサポートします。
+このメソッドは、応答をカスタマイズするための[OData クエリパラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)の一部もサポートしています。
+
+> [!NOTE] 
+> [イベント](../resources/event.md)の**lastModifiedDateTime**プロパティは、をサポート**** `$select`していません。 値を取得するには、 **calendarView**を適用`$select`せずに単にクエリを実行します。
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明 |
