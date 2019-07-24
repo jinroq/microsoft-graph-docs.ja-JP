@@ -4,12 +4,12 @@ description: Office 365 グループ、Microsoft Teams のチーム、または�
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 9fd24cb22b027990c9673017a645c937ee3e1384
-ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
+ms.openlocfilehash: 81a87d1ec6575516e12edab99ee205056b8b4593
+ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2019
-ms.locfileid: "35805264"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35840748"
 ---
 # <a name="group-resource-type"></a>group リソースの種類
 
@@ -57,7 +57,6 @@ Office 365 グループ、Microsoft Teams のチーム、またはセキュリ�
 |[設定を削除する](../api/directorysetting-delete.md) | なし |設定オブジェクトを削除します。 |
 |[エンドポイントを一覧表示する](../api/group-list-endpoints.md) |[endpoint](endpoint.md) コレクション| endpoint オブジェクトのコレクションを取得します。 |
 |[エンドポイントを取得する](../api/endpoint-get.md) | [endpoint](endpoint.md) | endpoint オブジェクトのプロパティと関係を読み取ります。 |
-|[delta](../api/group-delta.md)|group コレクション| グループに対する増分の変更を取得します。 |
 |[validateProperties](../api/group-validateproperties.md)|JSON| 名前付けポリシーに準拠した Office 365 グループの表示名またはメール ニックネームを検証します。 | 
 |**Calendar**| | |
 |[イベントを作成する](../api/group-post-events.md) |[event](event.md)| event コレクションへの投稿によって、新しいイベントを作成します。|

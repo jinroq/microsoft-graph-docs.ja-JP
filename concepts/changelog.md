@@ -3,12 +3,12 @@ title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 7f88a9370b59e13c571c10863b3c07eee9a6e480
-ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
+ms.openlocfilehash: a5231180e4477d5ac200bc56fee5e8f1464c612e
+ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2019
-ms.locfileid: "35805236"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35840636"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
@@ -17,6 +17,17 @@ ms.locfileid: "35805236"
 Microsoft Graph API に関する既知の問題の詳細については、「[既知の問題](known-issues.md)」を参照してください。
 
 ## <a name="july-2019"></a>2019 年 7 月
+
+### <a name="calendar--places"></a>予定表 | 場所
+
+アプリ内の場所に関する詳細情報を提供する Places API の導入。
+
+| **変更の種類** | **バージョン** | **説明**                  |
+|:----------------|:------------|:-----------------------------------------|
+| 追加        | ベータ版  | [room list](/graph/api/resources/roomlist?view=graph-rest-beta) リソースを追加しました|
+| 追加        | ベータ版  | [room](/graph/api/resources/room?view=graph-rest-beta) リソースを追加しました|
+| 追加        | ベータ版  | [place](/graph/api/resources/place?view=graph-rest-beta) リソースを追加しました|
+|追加         | ベータ版  | [Places API 用の委任されたアクセス許可とアプリケーション アクセス許可](permissions-reference.md#places-permissions)を追加しました: Place.Read.All |
 
 ### <a name="devices-and-apps-microsoft-intune"></a>デバイスとアプリ (Microsoft Intune)
 
@@ -77,9 +88,11 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | 追加 | ベータ版 | [[チャネル メッセージを一覧表示する](/api-reference/beta/api/channel-list-messages.md)]、[[チャネル メッセージを取得する](/api-reference/beta/api/channel-get-message.md)]、[[メッセージへの返信を一覧表示する](/api-reference/beta/api/channel-list-messagereplies.md)]、および [[メッセージへの返信を取得する](/api-reference/beta/api/channel-get-messagereply.md)] にアプリケーション アクセス許可のサポートを追加しました。 |
 | 追加 | ベータ版 | [[チャット内のメッセージを一覧表示する](/api-reference/beta/api/chatmessage-list.md)]、および [[チャット内のメッセージを取得する](/api-reference/beta/api/chatmessage-get.md)] にアプリケーション アクセス許可のサポートを追加しました。 |
 
+
 ## <a name="june-2019"></a>2019 年 6 月
 
 ### <a name="devices-and-apps-microsoft-intune"></a>デバイスとアプリ (Microsoft Intune)
+
 |変更の種類|バージョン|説明|
 |:---|:---|:---|
 |追加|ベータ版|新しいエンティティを追加しました。<br/>[appVulnerabilityManagedDevice](/graph/api/resources/intune-partnerintegration-appvulnerabilitymanageddevice?view=graph-rest-beta)<br/>[appVulnerabilityMobileApp](/graph/api/resources/intune-partnerintegration-appvulnerabilitymobileapp?view=graph-rest-beta)<br/>[appVulnerabilityTask](/graph/api/resources/intune-partnerintegration-appvulnerabilitytask?view=graph-rest-beta)<br/>[deviceAppManagementTask](/graph/api/resources/intune-partnerintegration-deviceappmanagementtask?view=graph-rest-beta)<br/>[deviceManagementDomainJoinConnector](/graph/api/resources/intune-odj-devicemanagementdomainjoinconnector?view=graph-rest-beta)<br/>[iosikEv2VpnConfiguration](/graph/api/resources/intune-deviceconfig-iosikev2vpnconfiguration?view=graph-rest-beta)<br/>[roleScopeTagAutoAssignment](/graph/api/resources/intune-rbac-rolescopetagautoassignment?view=graph-rest-beta)<br/>[windows10DeviceFirmwareConfigurationInterface](/graph/api/resources/intune-deviceconfig-windows10devicefirmwareconfigurationinterface?view=graph-rest-beta)<br/>|

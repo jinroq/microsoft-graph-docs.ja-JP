@@ -4,12 +4,12 @@ description: グループとは、Microsoft サービス内またはアプリ内
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: 6905021b15b163bf18f6e08c36fba8e9a2a31229
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fe906f193f7bcac28496c41dae60af049f75144d
+ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547381"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35840741"
 ---
 # <a name="working-with-groups-in-microsoft-graph"></a>Microsoft Graph でのグループの操作
 
@@ -17,7 +17,7 @@ ms.locfileid: "32547381"
 
 > **注**:グループは、職場または学校のアカウントでのみ作成できます。 個人用 Microsoft アカウントはグループをサポートしません。
 
-| 種類              | 使用例 | groupType | メールが有効 | セキュリティが有効 | API 経由で作成できますか? |
+| 種類              | 使用例 | groupType | メールが有効 | セキュリティが有効 | API 経由で作成して管理することはできますか? |
 |-------------------|----------|-----------|--------------|------------------|--------------------------------|
 | [Office 365 グループ](#office-365-groups) | 共有の Microsoft オンライン リソースを持つユーザーのコラボレーションを容易にします。 | `["Unified"]` | `true` | `false` | はい |
 | [セキュリティ グループ](#security-groups-and-mail-enabled-security-groups) | ユーザーのアプリ内リソースへのアクセスを制御します。 | `[]` | `false` | `true` | はい |
@@ -71,7 +71,7 @@ Office 365 グループと管理者の操作性の詳細については、「[Of
 
 セキュリティ グループは、リソースへのユーザー アクセスを制御するためのものです。 ユーザーがセキュリティ グループのメンバーであるかどうかを確認することで、そのユーザーがアプリ内のいくつかのセキュア リソースにアクセスしようとしているときに、アプリが承認を判断することができます。 セキュリティ グループには、ユーザーおよび他のセキュリティ グループをメンバーとして含めることができます。
 
-メールが有効なセキュリティ グループは、セキュリティ グループと同じ方法で使用されますが、グループの共有メールボックス機能が追加されています。 API では、メールが有効なセキュリティ グループを作成することはできませんが、他のグループ操作は動作します。 メールが有効なセキュリティ グループは読み取り専用です。 詳細については、「[メールが有効なセキュリティ グループの管理](https://technet.microsoft.com/ja-JP/library/bb123521%28v=exchg.160%29.aspx)」の Exchange 記事を参照してください。
+メールが有効なセキュリティ グループは、セキュリティ グループと同じ方法で使用されますが、グループの共有メールボックス機能が追加されています。 API では、メールが有効なセキュリティ グループを作成することはできませんが、他のグループ操作は動作します。 メールが有効なセキュリティ グループは読み取り専用です。 詳細については、「[メールが有効なセキュリティ グループの管理](https://technet.microsoft.com/en-us/library/bb123521%28v=exchg.160%29.aspx)」の Exchange 記事を参照してください。
 
 ### <a name="security-group-example"></a>セキュリティ グループの例
 
@@ -118,7 +118,7 @@ POST https://graph.microsoft.com/beta/groups
 
 membershipRule の数式化の詳細については、「[Azure Active Directory で動的グループ メンバーシップの属性ベースのルールを作成する](https://docs.microsoft.com/ja-JP/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal)」を参照してください。
 
-> **注**: 動的メンバーシップ ルールには、[Azure Active Directory Premium P1](https://azure.microsoft.com/ja-JP/pricing/details/active-directory/) 以上の階層のライセンスを持つテナントが必要です。
+> **注**: 動的メンバーシップ ルールには、[Azure Active Directory Premium P1](https://azure.microsoft.com/en-us/pricing/details/active-directory/) 以上の階層のライセンスを持つテナントが必要です。
 
 ## <a name="other-types-of-groups"></a>その他の種類のグループ
 

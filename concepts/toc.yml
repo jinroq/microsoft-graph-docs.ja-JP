@@ -290,6 +290,8 @@ items:
         items:
           - name: 概要
             href: use-the-api.md
+          - name: アクセス データとアクセス方法
+            href: traverse-the-graph.md
           - name: ページング
             href: paging.md
           - name: クエリ パラメーターの使用
