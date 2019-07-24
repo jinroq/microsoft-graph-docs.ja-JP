@@ -4,12 +4,12 @@ description: " Office 365 のエンタープライズ ノートブック"
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 1c7aad42687dac87eda907f66e99ff1a4b11b861
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+ms.openlocfilehash: 939875ce060abeb4a76d33bea68b3e3bbb49a203
+ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778741"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35840762"
 ---
 # <a name="update-onenote-page-content"></a>OneNote ページ コンテンツを更新する
 
@@ -58,13 +58,16 @@ OneNote ページの HTML には、**div** 要素、**img** 要素、**ol** 要�
 
 2 つの変更を定義する配列を次に示します。最初の変更では画像が兄弟として段落の上に挿入され、2 番目の変更ではアイテムが最後の子としてリストに追加されます。
 
+> [!NOTE]
+> OneNote ページのイメージを更新する場合、www リンクは使用できません。 このサービスは、ランダムなリソースのダウンロードを試行しません。 代わりに、画像が要求の一部である必要があります。イメージデータ url またはマルチパート要求のパーツ名を使用する必要があります。
+
 ```json
 [
    {
     'target':'#para-id',
     'action':'insert',
     'position':'before',
-    'content':'<img src="image-url-or-part-name" alt="Image above the target paragraph" />'
+    'content':'<img src="image-data-url-or-part-name" alt="Image above the target paragraph" />'
   }, 
   {
     'target':'#list-id',
@@ -280,7 +283,7 @@ Microsoft Graph は、更新可能なページで要素に対して **id** 値�
      'target':'#para1',
      'action':'insert',
      'position':'before',
-     'content':'<img src="image-url-or-part-name" alt="Image inserted above the target" />'
+     'content':'<img src="image-data-url-or-part-name" alt="Image inserted above the target" />'
   },
   {
     'target':'#para2',
@@ -384,7 +387,7 @@ Authorization: Bearer {token}
     'target':'#para-id',
     'action':'insert',
     'position':'before',
-    'content':'<img src="image-url" alt="New image from a URL" />'
+    'content':'<img src="image-data-url" alt="New image from a URL" />'
   }, 
   {
     'target':'#list-id',

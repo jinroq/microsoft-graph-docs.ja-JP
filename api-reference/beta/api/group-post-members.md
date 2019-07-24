@@ -1,23 +1,26 @@
 ---
 title: メンバーを追加する
-description: この API を使用して、**members** ナビゲーション プロパティを通じて Office 365 のグループ、セキュリティ グループ、メールが有効なセキュリティ グループにメンバーを追加できます。
+description: '**Members**ナビゲーションプロパティを使用して、Office 365 グループまたはセキュリティグループにメンバーを追加します。'
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 9ed8ef9f054a9d0c7a69ab21067664b7fd2f6853
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: a735b65e1b391e77c270b861a551cc833d9f12e2
+ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35440261"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35840734"
 ---
 # <a name="add-member"></a>メンバーを追加する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-この API を使用して、**members** ナビゲーション プロパティを通じて Office 365 のグループ、セキュリティ グループ、メールが有効なセキュリティ グループにメンバーを追加できます。
+**Members**ナビゲーションプロパティを使用して、Office 365 グループまたはセキュリティグループにメンバーを追加します。
 
-ユーザーや他のグループを追加できます。 重要: Office 365 のグループには、ユーザーのみを追加できます。
+ユーザーや他のグループを追加できます。 
+
+> [!Important]
+> Office 365 グループにユーザーのみを追加できます。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -35,9 +38,9 @@ POST /groups/{id}/members/$ref
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
-|:---------------|:--------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
+| 名前 | 説明|
+|:---- |:-----------|
+| Authorization | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 要求本文で、追加する [directoryObject](../resources/directoryobject.md)、[ユーザー](../resources/user.md) または [グループ](../resources/group.md) オブジェクトの JSON 表記を指定します。
@@ -46,7 +49,7 @@ POST /groups/{id}/members/$ref
 成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。
 
 ## <a name="example"></a>例
-#### <a name="request"></a>要求
+### <a name="request"></a>要求
 要求の例を次に示します。
 
 # <a name="httptabhttp"></a>[プロトコル](#tab/http)
@@ -75,7 +78,7 @@ Content-length: 30
 
 要求本文で、追加する[Directoryobject](../resources/directoryobject.md)、 [user](../resources/user.md)、 `id`または[group](../resources/group.md)オブジェクトの JSON 表記を指定します。
 
-#### <a name="response"></a>応答
+### <a name="response"></a>応答
 応答の例を次に示します。
 >**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
