@@ -1,15 +1,15 @@
 ---
-title: Microsoft Graph のスキャン
+title: Microsoft Graph 内を移動してデータとメソッドにアクセスする
 description: Microsoft Graph API を使用してデータの読み取りと書き込みを行うだけでなく、多数の要求パターンを使用して Microsoft Graph のリソースをスキャンすることができます。また、メタデータ ドキュメントによって、リソースのデータ モデル、および Microsoft Graph 内のリレーションシップを理解することができます。
 localization_priority: Priority
-ms.openlocfilehash: 6f368568f34e1a81bddb38948325e5d97150f493
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2b02ca0ed623fa17d9b640ff0bb1c17c3b3e022e
+ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951227"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35840650"
 ---
-# <a name="traverse-microsoft-graph"></a>Microsoft Graph のスキャン
+# <a name="access-data-and-methods-by-navigating-microsoft-graph"></a>Microsoft Graph 内を移動してデータとメソッドにアクセスする
 
 Microsoft Graph API を使用してデータの読み取りと書き込みを行うだけでなく、多数の要求パターンを使用して Microsoft Graph のリソースをスキャンすることができます。また、メタデータ ドキュメントによって、リソースのデータ モデル、および Microsoft Graph 内のリレーションシップを理解することができます。
 
@@ -30,22 +30,25 @@ Microsoft Graph API を使用してデータの読み取りと書き込みを行
 
 メタデータにより、要求および応答パケットが表すリソースを構成するエンティティの種類、複合型、列挙型を含む、Microsoft Graph のデータ モデルを参照し、理解することができます。
 
-メタデータを使用して、Microsoft Graph のエンティティ間のリレーションシップを学ぶことができ、また、それらのエンティティ間を移動する URL を確立することができます。
+メタデータを使用して、Microsoft Graph のエンティティ間のリレーションシップを学ぶことができ、また、それらのエンティティ間を移動する URL を作成することができます。
 
-パス URL リソース名、クエリ パラメーター、アクション パラメーターと値は、大文字と小文字が区別されません。ただし、割り当てる値、エンティティ ID、その他の base-64 でエンコードされた値は、大文字と小文字が区別されます。
+> [!NOTE]
+> - リソース ID の大文字と小文字の区別 は、Microsoft Graph API から返されたものと同じものを使用します。
+> - リソース ID、ユーザーが割り当てる値、およびその他の base-64 でエンコードされた値は、_大文字と小文字が区別される_ものと考えてください。
+> - パス URL リソース名、クエリ パラメーター、アクション パラメーターと値は、_大文字と小文字は区別されない_ものと考えてください。
 
 ## <a name="view-a-collection-of-resources"></a>リソースのコレクションを表示する
 
-Microsoft Graph では、HTTP GET クエリを使用してテナント内のリソースを表示することができます。クエリの応答には各リソースのプロパティが含まれており、各リソースはその ID によって識別されます。リソース ID の形式は GUID にすることができ、一般に、リソースの種類によって異なります。
+Microsoft Graph では、HTTP `GET` クエリを使用してテナント内のリソースを表示することができます。 クエリの応答には、各リソースのプロパティが含まれます。 各エンティティ リソースはそれぞれの ID によって識別されます。 リソース ID の形式は GUID にすることができ、一般に、リソースの種類によって異なります。
 
-たとえば、テナント内で定義されているユーザーのコレクションを取得できます。
+たとえば、テナント内で定義されている [user](/graph/api/resources/user?view=graph-rest-1.0) リソースのコレクションを取得できます。
 
 ```no-highlight
 GET https://graph.microsoft.com/v1.0/users HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
-成功した場合は、200 OK 応答が返され、そのペイロードに [user](/graph/api/resources/user?view=graph-rest-1.0) リソースのコレクションが含まれています。各ユーザーは **id** プロパティによって識別され、既定のプロパティが返されます。簡潔にするため、以下に示すペイロードは切り捨てられています。
+成功した場合は、200 OK 応答が返され、そのペイロードに **user** リソースのコレクションが含まれています。各ユーザーは **id** プロパティによって識別され、既定のプロパティが返されます。簡潔にするため、以下に示すペイロードは切り捨てられています。
 
 ```no-highlight
 HTTP/1.1 200 OK
@@ -137,7 +140,9 @@ Content-type: application/json
 
 ## <a name="view-a-specific-resource-from-a-collection-by-id"></a>ID ごとにコレクションから特定のリソースを表示する
 
-引き続き例として **user** を使用します。ユーザーに関する情報を表示するには、HTTPS GET 要求を使用してユーザーの ID から特定のユーザーを取得します。**user** エンティティでは、**id** プロパティまたは **userPrincipalName** プロパティのいずれかを識別子として使用できます。次の要求の例では、ユーザーの ID として **userPrincipalName** の値を使用しています。
+引き続き例として **user** を使用します。ユーザーに関する情報を表示するには、HTTPS GET 要求を使用してユーザーの ID から特定のユーザーを取得します。 **user** エンティティでは、**id** プロパティまたは **userPrincipalName** プロパティのいずれかを識別子として使用できます。
+
+次の要求の例では、ユーザーの ID として **userPrincipalName** の値を使用しています。
 
 ```no-highlight
 GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com HTTP/1.1
@@ -194,7 +199,9 @@ content-length: 169
 ここでは、**user** エンティティのプロパティ セット全体ではなく、**aboutMe**、**displayName**、**skills** という基本的なプロパティのみが返されます。
 
 ## <a name="read-specific-properties-of-the-resources-in-a-collection"></a>コレクション内リソースの特定のプロパティの読み取り
-1 つのリソースの特定のプロパティを読み取ることに加え、類似の [$select](query-parameters.md) クエリ パラメーターをコレクションに適用し、それぞれに返される特定のプロパティだけを使用してコレクション内のすべてのリソースを戻すことができます。たとえば、サインインしているユーザーのドライブにある項目の名前を問い合わせるには、次の HTTPS GET 要求を送信します。
+1 つのリソースの特定のプロパティを読み取ることに加え、類似の [$select](query-parameters.md) クエリ パラメーターをコレクションに適用し、それぞれに返される特定のプロパティだけを使用してコレクション内のすべてのリソースを戻すことができます。
+
+たとえば、サインインしているユーザーのドライブにある項目の名前を問い合わせるには、次の HTTPS GET 要求を送信します。
 
 ```no-highlight
 GET https://graph.microsoft.com/v1.0/me/drive/root/children?$select=name HTTP/1.1
@@ -294,10 +301,10 @@ content-length: 147
   ]
 }
 ```
-メタデータを参照し、EntityType を検索し、その EntityType のすべての NavigationProperties を探すことにより、指定されたリソースのすべてのリレーションシップを表示することができます。
+メタデータを参照し、`EntityType` を検索し、その `NavigationProperty` のすべての `EntityType` を確認することにより、特定のリソースのすべてのリレーションシップを確認できます。
 
-## <a name="call-functions"></a>関数を呼び出す
-Microsoft Graph は、単なる作成、読み取り、更新、削除 (CRUD) 操作ではない方法でリソースを操作するため、_関数_もサポートしています。関数の引数を入力するために HTTPS POST 要求の形を取ることがよくあります。たとえば、次の関数はサインインしているユーザー (`me`) に電子メール メッセージを送信させます。
+## <a name="call-actions-and-functions"></a>呼び出しのアクションと関数
+Microsoft Graph は、単なる作成、読み取り、更新、削除 (CRUD) 操作ではない方法でリソースを操作するための_アクション_と_関数_もサポートしています。 アクションまたは関数の引数を入力するために HTTPS POST 要求の形を取ることがよくあります。 たとえば、次のアクションはサインインしているユーザー (`me`) に電子メール メッセージを送信させます。
 
 ```no-highlight
 POST https://graph.microsoft.com/v1.0/me/sendMail HTTP/1.1
@@ -315,7 +322,7 @@ content-length: 96
     "toRecipients": [
       {
         "emailAddress": {
-          "address": "garthf@a830edad9050849NDA1.onmicrosoft.com"
+          "address": "garthf@contoso.onmicrosoft.com"
         }
       }
     ],
