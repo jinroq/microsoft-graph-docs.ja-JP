@@ -4,12 +4,12 @@ description: Outlook カレンダーは、Office 365 の Outlook メッセージ
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 66b9bee8f7059678a97af6c2571132212dad73dd
-ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
+ms.openlocfilehash: e0f161e50cf32b6d50820799826884da4bf67f89
+ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34422494"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35840783"
 ---
 # <a name="outlook-calendar-api-overview"></a>Outlook カレンダー API の概要
 
@@ -18,12 +18,17 @@ Outlook カレンダーは、Office 365 の Outlook メッセージング ハブ
 > [!VIDEO https://www.youtube-nocookie.com/embed/_ST4nyz4g9E]
 
 ## <a name="why-integrate-with-outlook-calendar"></a>Outlook カレンダーと統合する理由
+Outlook カレンダーの高度な機能とその API により、さまざまな操作がアプリで実行可能になります。 以下のセクションでは、その中からいくつかの機能を紹介いたします。
 
-### <a name="reach-hundreds-of-millions-of-customers-and-build-rich-scenarios"></a>何億というユーザーに達する豊富なシナリオの構築
+## <a name="reach-hundreds-of-millions-of-customers-and-build-rich-scenarios"></a>何億というユーザーに達する豊富なシナリオの構築
 
 何百万人ものユーザーが、効果的な通信や作業を可能にする統合ハブの一部として、Outlook カレンダーを利用しています。 そのようなユーザーは、会議の設定、メール管理、連絡先や他のユーザーに関する情報の検索、会話やオンライン会議の開始などを、Web 上であれ、モバイル端末やデスクトップであれ、すべて 1 つの場所で実行できます。 Microsoft Graph は、これらのユーザーのカレンダー、メール、連絡先にアプリを接続するだけでなく、アプリを使って [Microsoft 365 の長所と統合](overview-major-services.md)し、生産性とコラボレーションの向上につながるさまざまなシナリオをサポートすることができます。
 
-### <a name="automate-appointment-organization-and-calendaring"></a>自動予約機構とカレンダーの作成
+Outlook カレンダー API のほとんどの機能は、個人用の Microsoft アカウントおよび職場または学校のアカウントのカレンダーに適用されます。
+
+<sup>**</sup> は、職場または学校のアカウントの Outlook カレンダーのみに適用される機能を示します。
+
+## <a name="automate-appointment-organization-and-calendaring"></a>自動予約機構とカレンダーの作成
 
 多くのユーザーは、Outlook による仕事予定、家族や個人の活動時間の整理方法を好んで利用しています。 Microsoft Graph REST API は、操作感がこのカスタマー エクスペリエンスとよく似ており、アプリを使ったイベントの作成、管理、応答を次のように自然に行えます。
 
@@ -33,7 +38,7 @@ Outlook カレンダーは、Office 365 の Outlook メッセージング ハブ
 
 - カレンダー フォルダーでは、1 回きりの[イベント](/graph/api/resources/event?view=graph-rest-1.0)を[作成](/graph/api/user-post-events?view=graph-rest-1.0)および[更新](/graph/api/event-update?view=graph-rest-1.0)できるだけでなく、[定期的なイベントをスケジュールして管理](outlook-schedule-recurring-events.md)することもできます。 ユーザーは[会議出席依頼](/graph/api/resources/eventmessage?view=graph-rest-1.0)に回答でき、関連付けられている**イベント** ナビゲーション プロパティを使用すると、[アラーム](/graph/api/resources/reminder?view=graph-rest-1.0)の[再通知](/graph/api/event-snoozereminder?view=graph-rest-1.0)や[解除](/graph/api/event-dismissreminder?view=graph-rest-1.0)もできます。
 
-### <a name="help-customers-stay-synchronized-and-navigate-their-day"></a>同期維持と予定日の操作に関するユーザー支援機能
+## <a name="help-customers-stay-synchronized-and-navigate-their-day"></a>同期維持と予定日の操作に関するユーザー支援機能
 
 カレンダー API を使うと、次に示すように、予定日の操作や生産性の向上が容易になります。
 
@@ -45,24 +50,22 @@ Outlook カレンダーは、Office 365 の Outlook メッセージング ハブ
 - ユーザーは、会議の[承諾](/graph/api/event-accept?view=graph-rest-1.0)や出席を **webLink** プロパティを介してオンラインで行うことができます。webLink プロパティにより、会議は Outlook on the web で開催されます。
 - ユーザーは、会議の[仮承諾](/graph/api/event-tentativelyaccept?view=graph-rest-1.0)または[辞退](/graph/api/event-decline?view=graph-rest-1.0)を外出中でも回答できます。
 
-### <a name="enhance-collaboration"></a>コラボレーションの強化
+## <a name="enhance-collaboration"></a>コラボレーションの強化
 
 - Outlook では、ユーザーどうしでカレンダーを共有でき、カレンダーの内容の読み取り、書き込み、削除に関するアクセス許可を付与できます。 また、ユーザーは自分の代わりに別のユーザーが会議出席依頼に返信するように、カレンダーに指定できます。 あるユーザーの代理をする共有アクションや委任アクションをプログラムを使用して開始することはできませんが、一連のプロパティ (**canEdit**、**canShare**、**canViewPrivateItems**、**isShared**、**isSharedWithMe**) を使用すると、共有ステータスを確認し、共有カレンダーや委任されたカレンダーに関するシナリオを有効にできます。
 - カレンダー API を利用することにより、サインイン ユーザー、またはサインイン ユーザーとカレンダーを共有または委任しているユーザーの予定表アイテムを取得できます。 たとえば、Garth がカレンダーを John と共有している場合、または Garth が John にアクセスを委任している場合、John からの[アクセス許可委任](auth/auth-concepts.md#microsoft-graph-permissions)があれば、Garth の共有カレンダーとその内容にも読み取りアクセスが可能になります。
-- ** Office 365 グループを使用すると、グループ メンバーの共同作業や、グループでの会話やカレンダーへのアクセスが、Outlook で直接行うことができます。 グループ カレンダーとユーザー カレンダーに細かな違いがいくつかあることを除けば、カレンダー API を使用することで、ユーザー カレンダーとほぼ同様にグループ カレンダーを操作できます。 詳細については、[calendar](/graph/api/resources/calendar?view=graph-rest-1.0) リソースをご覧ください。
+- Office 365 グループを使用すると、グループ メンバーの共同作業や、グループでの会話やカレンダーへのアクセスが、Outlook で直接行うことができます。 グループ カレンダーとユーザー カレンダーに細かな違いがいくつかあることを除けば、カレンダー API を使用することで、ユーザー カレンダーとほぼ同様にグループ カレンダーを操作できます。 詳細については、[calendar](/graph/api/resources/calendar?view=graph-rest-1.0) リソースをご覧ください<sup>**</sup>。
 
-** 職場または学校のアカウントで Outlook カレンダーに特に適用可能な機能を示します。
-
-### <a name="schedule-smart"></a>スマートなスケジュール設定
+## <a name="schedule-smart"></a>スマートなスケジュール設定
 
 Outlook とカレンダー API には、イベントのスケジュールに便利な機能が豊富に用意されています。
 
 - Outlook カレンダーのアプリ設定により、ユーザーは、フライト、ホテル、食事の予約などのメールや請求書からイベントを自動で追加できます。 追加されたイベントは、ユーザーのメールボックスにある他の [event](/graph/api/resources/event?view=graph-rest-1.0) オブジェクトと同様に操作できるので、Outlook のこの機能に基づいてクリエイティブなシナリオを構築できます。
-- ** Outlook では、会議室の予約も、出席者を**イベント**に追加するのと同じほど簡単に行えます。 カレンダー API では、会議室が [emailAddress](/graph/api/resources/emailaddress?view=graph-rest-1.0) オブジェクトとして表されます。 テナントで使用できる[会議室の取得 (プレビュー)](/graph/api/user-findrooms?view=graph-rest-beta) や、[会議室一覧の取得 (プレビュー)](/graph/api/user-findroomlists?view=graph-rest-beta) を行うことができます。 特定の会議室での会議を計画するには、その会議室を**イベント**の **location** プロパティに割り当てます。
-- ** 特定の期間の[ユーザーとリソースに関する空き時間情報の確認](outlook-get-free-busy-schedule.md) ができます。 このデータを、リソース計画やイベント スケジュールなどのさまざまなシナリオに適用できます。
-- ** 最適な時間に会議をスケジュールしなければならないシナリオでは、[開催可能な会議日時を特定する findMeetingTimes の使用](findmeetingtimes-example.md)を検討できます。 [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-1.0) 関数は、出席者の空き時間情報、会議室や日時に関する希望、およびユーザーが指定した他の制約事項を考慮します。 最初の試行で全員参加可能な会議日時が返されない場合は、理由を確認してから条件を変更し、もう一度 **findMeetingTimes** を呼び出してください。
+- Outlook では、会議室の予約も、出席者を**イベント**に追加するのと同じくらい簡単に行えます。 カレンダー API では、会議室が [emailAddress](/graph/api/resources/emailaddress?view=graph-rest-1.0) オブジェクトとして表されます。 テナントで使用できる[会議室の取得 (プレビュー)](/graph/api/user-findrooms?view=graph-rest-beta) や、[会議室一覧の取得 (プレビュー)](/graph/api/user-findroomlists?view=graph-rest-beta) を行うことができます。 特定の会議室での会議を計画するには、その会議室を**イベント**の **location** プロパティに割り当てます。<sup>**</sup>
+- 特定の期間の[ユーザーとリソースに関する空き時間情報の確認](outlook-get-free-busy-schedule.md) ができます。 このデータを、リソース計画やイベント スケジュールなどのさまざまなシナリオに適用できます。<sup>**</sup>
+- 最適な時間に会議をスケジュールしなければならないシナリオでは、[開催可能な会議日時を特定する findMeetingTimes の使用](findmeetingtimes-example.md)を検討できます。 [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-1.0) 関数は、出席者の空き時間情報、会議室や日時に関する希望、およびユーザーが指定した他の制約事項を考慮します。 最初の試行で全員参加可能な会議日時が返されない場合は、理由を確認してから条件を変更し、もう一度 **findMeetingTimes** を呼び出してください。<sup>**</sup>
 
-### <a name="teleconference-across-multiple-locations-and-time-zones"></a>複数の場所とタイム ゾーンをまたぐ電話会議
+## <a name="teleconference-across-multiple-locations-and-time-zones"></a>複数の場所とタイム ゾーンをまたぐ電話会議
 
 グローバル化に伴い、現代のビジネス会議には、出席者がさまざまな場所やタイム ゾーンから参加していることも少なくありません。 カレンダー API を使用してそのような会議を管理する方法を次に示します。
 
@@ -70,7 +73,18 @@ Outlook とカレンダー API には、イベントのスケジュールに便�
 - Outlook では、柔軟にイベントを組織し、イベントの開始日時と終了日時ごとにタイム ゾーンを指定できます。 このような柔軟性をサポートするため、既定では、カレンダー API は**イベント**の**開始**日時と**終了**日時を UTC で返し、用意されている **originalStartTimeZone** プロパティと **originalEndTimeZone** プロパティで、イベントの作成時に使用されたタイム ゾーンを示します。
 - 代わりに、`Prefer: outlook.timezone="{time zone name}"` ヘッダーを指定して、GET イベント操作が**開始**日時と**終了**日時を指定したタイム ゾーンで返すようにすることもできます。 タイム ゾーン名は、この[リスト](/graph/api/resources/datetimetimezone?view=graph-rest-1.0)にあるものだけでなく、Windows でサポートされている任意の名前を使用できます。 `Prefer` ヘッダーの使用[例](/graph/api/event-get?view=graph-rest-1.0#request-1)をご覧ください。
 
-### <a name="take-advantage-of-social-intelligence-and-other-developer-conveniences-in-microsoft-graph"></a>Microsoft Graph でのソーシャル インテリジェンス、および開発者向けのその他の便利な機能の活用
+## <a name="build-apps-with-location-awareness-and-provide-intelligent-context-preview"></a>場所の認識能力を持つアプリを構築することで、インテリジェントなコンテキストを提供します (プレビュー)
+
+[Places API](/graph/api/resources/place?view=graph-rest-beta) (プレビュー) を使用して、ユーザーが場所に移動しやすくなります。また、ユーザーいる場所に基づいて高度なソリューションを提供できます。 以下にシナリオの例を示します。
+
+- 場所に関する情報をカレンダー イベントに取り込むことで、ユーザーがより簡単に日々の予定をこなし、生産性を高めることができます。<sup>**</sup>
+- Places API をケータリング アプリケーションで活用することで、会場内での移動やセットアップの効率化を図ります。<sup>**</sup>
+- 参加者への会議の事前情報のメール送信を自動化し、メールに地図を含めて会議室への行き方を説明できます。<sup>**</sup>
+- ボットの受信アシスタントをセットアップして、建物内の特定の会議室に関する情報を提供します。<sup>**</sup> 
+
+アプリのシナリオによっては、Outlook の一部として、または Outlook とは別に、Places API を使用することができます。
+
+## <a name="take-advantage-of-social-intelligence-and-other-developer-conveniences-in-microsoft-graph"></a>Microsoft Graph でのソーシャル インテリジェンス、および開発者向けのその他の便利な機能の活用
 
 Microsoft Graph では、[people API](people-example.md) を使用し、ユーザーの通信パターンやコラボレーション パターン、ビジネス上の関係に基づく [人物データ](/graph/api/resources/person?view=graph-rest-1.0)に接続できます。 ユーザー選択などのコントロールを実装し、ユーザーの代わりに会議を組織するときに、ユーザーに関係のある人物を提案できます。
 
@@ -90,8 +104,8 @@ Microsoft Graph では、[people API](people-example.md) を使用し、ユー�
   - [開催可能な会議日時を Outlook カレンダーで検索する](findmeetingtimes-example.md)
   - [ユーザーとリソースの空き時間スケジュールを取得する](outlook-get-free-busy-schedule.md)
   - [繰り返される予定を Outlook で定期的なイベントとしてスケジュール設定する](outlook-schedule-recurring-events.md)
-  - [Outlook リソースの不変識別子の取得](outlook-immutable-id.md)
   - [共有イベントを取得する](outlook-get-shared-events-calendars.md)
+  - [Outlook リソースの不変識別子の取得](outlook-immutable-id.md)
 - Outlook [カレンダー API](/graph/api/resources/calendar?view=graph-rest-1.0) リファレンスを確認します。
 
 <!-- Replace the last item with the calendar API overview when it's published.

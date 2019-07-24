@@ -3,12 +3,12 @@ title: 'Microsoft Graph のアクセス許可のリファレンス '
 description: Microsoft Graph は、アプリがアクセスするリソース (ユーザー、グループ、メールなど) を制御する詳細なアクセス許可を公開しています。 開発者は、アプリが要求する Microsoft Graph のアクセス許可を決定します。
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: 6e68a9c0a8f0eca222bd46a9ac15dda8d3d12f55
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 5f2af5521071821d7271547f207ccefa0d17aade
+ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620891"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35840755"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph のアクセス許可のリファレンス
 
@@ -544,7 +544,7 @@ _IdentityProvider.Read.All_ と _IdentityProvider.ReadWrite.All_ は、職場ま
 * _IdentityProvider.ReadWrite.All_: 既存の ID プロバイダーを更新します (`PATCH /beta/identityProviders/{id}`)
 * _IdentityProvider.ReadWrite.All_: 既存の ID プロバイダーを削除します (`DELETE /beta/identityProviders/{id}`)
 
-より複雑な複数のアクセス許可を伴うシナリオについては、「[アクセス許可のシナリオ](#permission-scenarios)」を参照してください。
+複数のアクセス許可を伴うより複雑なシナリオについては、「[アクセス許可のシナリオ](#permission-scenarios)」を参照してください。
 
 ---
 
@@ -844,6 +844,22 @@ _Notes.Create_ のアクセス許可があるアプリは、サインインし�
 
 ---
 
+## <a name="on-premises-publishing-profiles-permissions"></a>オンプレミスの発行プロファイルのアクセス許可
+
+#### <a name="delegated-permissions"></a>委任されたアクセス許可
+
+|   アクセス許可    |  表示文字列   |  説明 | 管理者の同意が必要 | Microsoft アカウントのサポート |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| OnPremisesPublishingProfiles.ReadWrite.All |    オンプレミスの発行プロファイルにアクセスする| サインインしたユーザーの代理としてオンプレミスの発行済みリソース、オンプレミスのエージェントおよびエージェント グループを作成、表示、更新、削除することで、アプリがハイブリッド ID サービスの構成を管理できるようにします。 | 不要 | いいえ |
+
+#### <a name="application-permissions"></a>アプリケーションのアクセス許可
+
+|   アクセス許可    |  表示文字列   |  説明 | 管理者の同意が必要 | Microsoft アカウントのサポート |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| OnPremisesPublishingProfiles.ReadWrite.All |    オンプレミスの発行プロファイルにアクセスする| サインインしたユーザーの代理としてオンプレミスの発行済みリソース、オンプレミスのエージェントおよびエージェント グループを作成、表示、更新、削除することで、アプリがハイブリッド ID サービスの構成を管理できるようにします。 | いいえ | いいえ |
+
+---
+
 ## <a name="openid-permissions"></a>OpenID のアクセス許可
 
 #### <a name="delegated-permissions"></a>委任されたアクセス許可
@@ -867,6 +883,37 @@ Azure AD (v1.0) エンドポイントでは、_openid_ アクセス許可のみ�
 Azure AD v2.0 エンドポイントでは、_scope_ パラメーターで_offline\_access_ アクセス許可を指定して、OAuth 2.0 または OpenID Connect プロトコルを使用するときに明示的に更新トークンを要求します。OpenID Connect では、_openid_ アクセス許可を指定して ID トークンを要求します。_email_ アクセス許可、_profile_ アクセス許可、あるいはその両方で ID トークンに追加の要求が返されるように指定できます。v2.0 エンドポイントでは、ID トークンを返すよう _User.Read_ を指定する必要はありません。詳細については、「[OpenID Connect のスコープ](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes#openid-connect-scopes)」を参照してください。
 
 > **重要**Microsoft Authentication Library (MSAL) では現在、承認要求およびトークン要求に既定で _offline\_access_、_openid_、_profile_、_email_ が指定されています。つまり、既定では、これらのアクセス許可を明示的に指定すると、Azure AD ではエラーが返される場合があります。
+
+---
+
+## <a name="organization-permissions"></a>組織のアクセス許可
+
+#### <a name="delegated-permissions"></a>委任されたアクセス許可
+
+|   アクセス許可    |  表示文字列   |  説明 | 管理者の同意が必要 | Microsoft アカウントのサポート |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Organization.Read.All_ |会社情報の読み取り | サインインしたユーザーの代理として、アプリで組織および関連するリソースの読み取りを実行できるようにします。関連するリソースには、購読している SKU やテナントのブランド情報などがあります。|はい | いいえ |
+| _Organization.ReadWrite.All_ |組織情報の読み取りと書き込み | サインインしたユーザーの代理として、アプリで組織および関連するリソースの読み取りと書き込みを実行できるようにします。関連するリソースには、購読している SKU やテナントのブランド情報などがあります。 |はい | いいえ |
+
+<br/>
+
+#### <a name="application-permissions"></a>アプリケーションのアクセス許可
+
+|アクセス許可    |表示文字列   |説明 |管理者の同意が必要 |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Organization.Read.All_ |会社情報の読み取り | サインインしたユーザーがいない場合でも、アプリで組織および関連するリソースの読み取りを実行できるようにします。関連するリソースには、購読している SKU やテナントのブランド情報などがあります。 | はい |
+| _Organization.ReadWrite.All_ |組織情報の読み取りと書き込み | サインインしたユーザーがいない場合でも、アプリで組織および関連するリソースの読み取りと書き込みを実行できるようにします。関連するリソースには、購読している SKU やテナントのブランド情報などがあります。 |はい |
+
+### <a name="example-usage"></a>使用例
+
+#### <a name="delegated"></a>委任
+
+* _Organization.Read.All_: 組織情報を取得 (`GET /organization`)。
+* _Organization.Read.All_: 組織が購読した SKU を取得 (`GET /subscribedSkus`)。
+
+#### <a name="application"></a>アプリケーション
+
+* _Organization.ReadWrite.All_: 組織情報を更新 (**technicalNotificationMails** など) (`PATCH /organization/{id}`)。
 
 ---
 
@@ -896,6 +943,22 @@ People.Read.All アクセス許可は会社用および学校用のアカウン�
 * _People.Read.All_:同じ組織内の他のユーザーに関連する人物のリストを読み取ります (`GET /users('{id})/people`)
 
 より複雑な複数のアクセス許可を伴うシナリオについては、「[アクセス許可のシナリオ](#permission-scenarios)」を参照してください。
+
+---
+
+## <a name="places-permissions"></a>場所のアクセス許可
+
+#### <a name="delegated-permissions"></a>委任されたアクセス許可
+
+|   アクセス許可    |  表示文字列   |  説明 | 管理者の同意が必要 | Microsoft アカウントのサポート |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Place.Read.All_ |会社全体の場所を読み取る |アプリでカレンダー イベントやその他のアプリケーション用に会社内の場所 (会議室や会議室一覧) の読み取りを実行できるようにします。 |不要 | いいえ |
+
+#### <a name="application-permissions"></a>アプリケーションのアクセス許可
+
+|   アクセス許可    |  表示文字列   |  説明 | 管理者の同意が必要 |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Place.Read.All_ |   会社全体の場所を読み取る | アプリでカレンダー イベントやその他のアプリケーション用に会社内の場所 (会議室や会議室一覧) の読み取りを実行できるようにします。| はい |
 
 ---
 
