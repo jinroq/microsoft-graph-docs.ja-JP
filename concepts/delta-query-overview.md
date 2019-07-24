@@ -3,12 +3,12 @@ title: デルタ クエリを使用して、Microsoft Graph データの変更�
 description: デルタ クエリを使用すると、アプリケーションは、要求ごとにターゲット リソースをすべて読み取ることなく、新しく作成、更新、または削除されたエンティティを検出できます。Microsoft Graph アプリケーションはデルタ クエリを使用して、変更をローカル データ ストアと効率的に同期させることができます。
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: 9c040ad61902dd623ffc2010716e6a843c4d1a38
-ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
+ms.openlocfilehash: e053811ae0c070f767ea8aefc20d768d188d355a
+ms.sourcegitcommit: b198efc2391a12a840e4f1b8c42c18a55b06037f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34750193"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35820802"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>デルタ クエリを使用して、Microsoft Graph データの変更を追跡する
 
@@ -44,7 +44,14 @@ ms.locfileid: "34750193"
 
 ### <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 
-クライアントがクエリ パラメーターを使用する場合は、最初の要求で指定する必要があります。Microsoft Graph は、応答で提供される `nextLink` または `deltaLink` に指定したパラメーターを自動的にエンコードします。呼び出し元のアプリケーションで必要な操作は、必要なクエリ パラメーターを最初に一度指定することだけです。Microsoft Graph は、すべての後続の要求に対して自動的に指定されたパラメーターを追加します。
+クライアントがクエリ パラメーターを使用する場合は、最初の要求で指定する必要があります。Microsoft Graph は、応答で提供される `nextLink` または `deltaLink` に指定したパラメーターを自動的にエンコードします。呼び出し元のアプリケーションで必要な操作は、クエリ パラメーターを最初に一度指定することだけです。Microsoft Graph は、すべての後続の要求に対して自動的に指定されたパラメーターを追加します。
+
+オプションのクエリ パラメーターについては、次の点に注意してください。
+
+- `$orderby` は、差分クエリに対してサポートされるクエリ パラメーターではありません。
+ - 差分クエリから返された応答の特定のシーケンスは想定しません。 `nextLink` シーケンスのどこにでも同じアイテムが出現する可能性があると想定し、マージ ロジックの中でそれを処理します。
+
+ユーザーとグループには、いくつかのクエリ パラメーターの使用に次の制約事項が適用されます。
 
 ユーザーとグループには、いくつかのクエリ パラメーターの使用に関する制限があります。
 

@@ -4,12 +4,12 @@ description: 新しい Office 365 グループまたはセキュリティ グル
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: cee571584f37feece435892caef0b0c648d13184
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: fdce0d9422f15a72d8857372c7685e58e70c802c
+ms.sourcegitcommit: b198efc2391a12a840e4f1b8c42c18a55b06037f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35440282"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35820655"
 ---
 # <a name="create-group"></a>グループを作成する
 
@@ -63,13 +63,13 @@ POST /groups
 
 **グループ** リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため、`POST` 操作を使用して、リソースの作成時にカスタム プロパティを独自のデータとともにグループに追加することができます。
 
->**注:** ユーザー コンテキストを使用せず、所有者を指定せずにプログラムで Office 365 グループを作成すると、そのグループは匿名で作成されます。  この操作を行うと、さらに手動操作が行われるまで、関連付けられている SharePoint Online サイトが自動的に作成されない可能性があります。  
+>**注:** アプリ専用コンテキストを使用し、所有者を指定せずにプログラムで Office 365 グループを作成すると、そのグループは匿名で作成されます。 この操作を行うと、さらに手動操作が行われるまで、関連付けられている SharePoint Online サイトが自動的に作成されない可能性があります。  
 
 グループの必要に応じて他の書き込み可能なプロパティを指定します。 詳細については、[group](../resources/group.md) リソースのプロパティをご覧ください。
 
 ### <a name="grouptypes-options"></a>groupTypes オプション
 
-以下に示すように、**groupTypes** プロパティを使用し、グループの種類とグループのメンバーシップを管理します:
+示すように、**groupTypes** プロパティを使用し、グループの種類とグループのメンバーシップを管理します:
 
 | グループの種類 | 割り当て済みのメンバーシップ | 動的メンバーシップ |
 |:--------------|:------------------------|:---------------|
@@ -84,7 +84,7 @@ POST /groups
 
 ### <a name="example-1-create-an-office-365-group"></a>例 1: Office 365 グループを作成する
 
-次の例では、Office 365 グループを作成しています。
+次の例では、Office 365 グループを作成します。
 
 #### <a name="request"></a>要求
 

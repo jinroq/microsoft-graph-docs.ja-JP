@@ -4,12 +4,12 @@ description: '要求本文で指定した新しいグループを作成します
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: b1fca0941b04099be02e2f9929c0683655dfeaa1
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: f6b911e0e3e602ce96c10cab22a27ed26788df6e
+ms.sourcegitcommit: b198efc2391a12a840e4f1b8c42c18a55b06037f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35456408"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35820606"
 ---
 # <a name="create-group"></a>グループを作成する
 要求本文で指定した新しいグループを作成します。 次に示す種類のグループを作成できます。
@@ -21,7 +21,7 @@ ms.locfileid: "35456408"
 
 既定で_返されない_プロパティを取得するには、[GET 操作](group-get.md)を実行し、`$select` OData クエリ オプションでプロパティを指定します。
 
-> **注**:Microsoft Teams は Office 365 グループに基づいていますが、現在、この API を使用してチームを作成することはできません。Microsoft Teams UI で作成されたチームを管理するには、その他のグループ API を使用できます。
+> **注**: Microsoft Teams は Office 365 グループで構築されていますが、この API を使用してチームを作成することは現在できません。 Microsoft Teams UI で作成されたチームの管理に、その他のグループ API を使用することができます。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -60,11 +60,11 @@ POST /groups
 
 グループの必要に応じて他の書き込み可能なプロパティを指定します。 詳細については、[group](../resources/group.md) リソースのプロパティをご覧ください。
 
->**注:**  ユーザー コンテキストを使用せず、所有者を指定せずにプログラムで Office 365 グループを作成すると、そのグループは匿名で作成されます。  この操作を行うと、さらに手動操作が行われるまで、関連付けられている SharePoint Online サイトが自動的に作成されない可能性があります。  
+>**注:**  アプリ専用コンテキストを使用し、所有者を指定せずにプログラムで Office 365 グループを作成すると、そのグループは匿名で作成されます。 この操作を行うと、さらに手動操作が行われるまで、関連付けられている SharePoint Online サイトが自動的に作成されない可能性があります。  
 
 ### <a name="grouptypes-options"></a>groupTypes オプション
 
-以下に示すように、**groupTypes** プロパティを使用し、グループの種類とグループのメンバーシップを管理します:
+示すように、**groupTypes** プロパティを使用し、グループの種類とグループのメンバーシップを管理します:
 
 | グループの種類 | 割り当て済みのメンバーシップ | 動的メンバーシップ |
 |:--------------|:------------------------|:---------------|
