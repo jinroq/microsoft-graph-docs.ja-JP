@@ -1,17 +1,18 @@
 ---
 description: 自動的に生成されたファイル。 変更しない
-ms.openlocfilehash: 6d644451770f4a3507c225656445cd4c14f3d4bc
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 1a3c6575e38c5a3c44b4b0206669325ff90ffc9d
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35486139"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35871613"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var getYammerDeviceUsageUserDetail = await graphClient.Reports.GetYammerDeviceUsageUserDetail('D7')
+var getYammerDeviceUsageUserDetail = await graphClient.Reports
+    .GetYammerDeviceUsageUserDetail('D7')
     .Request()
     .GetAsync();
 
