@@ -4,12 +4,12 @@ description: 複数の要求ではなく1つの要求で複数の通知を更新
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 109767fb4d3bfaea173337a7d853e84e2261ef85
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 7b061b1ab8e323158b12a20262349321b80236fc
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35439750"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35855359"
 ---
 # <a name="alert-updatealerts"></a>通知: updateAlerts
 
@@ -101,6 +101,10 @@ Content-type: application/json
 
 # <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/alert-updatealerts-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/alert-updatealerts-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

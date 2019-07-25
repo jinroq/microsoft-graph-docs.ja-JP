@@ -4,12 +4,12 @@ description: ユーザーの scopedRoleMembership の一覧を取得します。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ffbe82664f4338fa61498dc1a98efaa7fc3b7e6e
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 80c74905a8fb98bc34dc317766647b1ec170f760
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35457682"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35867081"
 ---
 # <a name="list-scopedadministratorof"></a>scopedAdministratorOf を一覧表示する
 
@@ -69,6 +69,10 @@ GET https://graph.microsoft.com/beta/me/scopedAdministratorOf
 
 # <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-scopedadministratorof-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-scopedadministratorof-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

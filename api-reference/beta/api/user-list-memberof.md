@@ -4,12 +4,12 @@ description: ユーザーが直接メンバーであるグループ、ディレ�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d09fc1f9b969c45c4b8db592cd45d066e2ff2caa
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 33243636157197eb20c99cb303ab7a1037ce6124
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35457717"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35867186"
 ---
 # <a name="list-user-memberof"></a>ユーザーの所属を一覧表示する
 
@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/beta/me/memberOf
 
 # <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-user-memberof-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-user-memberof-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
