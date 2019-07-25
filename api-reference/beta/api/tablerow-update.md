@@ -4,12 +4,12 @@ description: tablerow オブジェクトのプロパティを更新します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 002b67e3a68a34b9c8852ea2a18fa4465da18de1
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 63bc3a31b7fbbd407103bec79fd039cb00f0072f
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35453314"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35868508"
 ---
 # <a name="update-tablerow"></a>tablerow を更新する　
 
@@ -76,6 +76,10 @@ Content-length: 45
 
 # <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-tablerow-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-tablerow-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

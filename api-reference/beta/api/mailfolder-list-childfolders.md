@@ -4,12 +4,12 @@ description: '指定したフォルダーの下のフォルダー コレクシ�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 50b5a36d2529e295a4876e851cf89459cc386a77
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 023ead7f1dfaf671be8c9d32a678a92eee348005
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35445297"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35880063"
 ---
 # <a name="list-childfolders"></a>childFolders を一覧表示する
 
@@ -25,7 +25,7 @@ ms.locfileid: "35445297"
 |:---------------------------------------|:------------------------------------|
 | 委任 (職場または学校のアカウント)     | メール ReadBasic、Mail. 読み取り、ReadWrite           |
 | 委任 (個人用 Microsoft アカウント) | メール ReadBasic、Mail. 読み取り、ReadWrite           |
-| アプリケーション                            | Mail.Read、Mail.ReadWrite           |
+| アプリケーション                            | -ReadBasic、mail. 読み取り、および書き込み           |
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -66,22 +66,26 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 # <a name="httptabhttp"></a>[プロトコル](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_childfolders"
+  "name": "mailfolder_get_childfolders"
 }-->
 
 ```http
 GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/childFolders
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-childfolders-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/mailfolder-get-childfolders-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-childfolders-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/mailfolder-get-childfolders-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-childfolders-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/mailfolder-get-childfolders-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/mailfolder-get-childfolders-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -165,6 +169,10 @@ GET https://graph.microsoft.com/beta/me/mailFolders/searchfolders/childFolders
 
 # <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-childfolders-of-searchfolders-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-childfolders-of-searchfolders-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

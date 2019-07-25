@@ -1,0 +1,102 @@
+---
+title: 'directoryDefinition: discover'
+description: 'アプリケーションへのプロビジョニングに関する最新のスキーマ定義を検出します。 '
+localization_priority: Normal
+author: davidmu1
+ms.prod: microsoft-identity-platform
+doc_type: apiPageType
+ms.openlocfilehash: aafd4ad57d8e6d75ebdcd3c7bf2fba4506e48f56
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35879590"
+---
+# <a name="directorydefinition-discover"></a>directoryDefinition: discover
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+アプリケーションへのプロビジョニングに関する最新のスキーマ定義を検出します。 
+
+## <a name="permissions"></a>アクセス許可
+
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+
+| アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ) |
+|:---------------------------------------|:--------------------------------------------|
+| 委任 (職場または学校のアカウント)     | Directory.ReadWrite.All |
+| 委任 (個人用 Microsoft アカウント) | サポートされていません。 |
+| アプリケーション専用                            | なし。 |
+
+## <a name="http-request"></a>HTTP 要求
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/schema/directories/{directoryId}/discover
+```
+
+## <a name="request-headers"></a>要求ヘッダー
+
+| ヘッダー        | 値                      |
+|:--------------|:---------------------------|
+| Authorization | Bearer {トークン} (必須)  |
+
+## <a name="request-body"></a>要求本文
+
+このメソッドには、要求本文を指定しません。 
+
+## <a name="response"></a>応答
+
+成功した場合、このメソッド`200 OK`は[directorydefinition](../resources/synchronization-directorydefinition.md)オブジェクトを持つ応答を返します。
+
+## <a name="example"></a>例
+
+### <a name="request"></a>要求
+要求の例を次に示します。
+<!-- {
+  "blockType": "request",
+  "name": "discover_directorydefinition"
+}-->
+```http
+POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema/directories/{directoryId}/discover
+```
+
+### <a name="response"></a>応答
+
+応答の例を次に示します。
+
+>**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryDefinition"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "discoverabilities": "AttributeNames, AttributeDataTypes",
+  "discoveryDateTime": "2019-03-20T15:47:50.4707552Z",
+  "id": "directoryDefinitionId",
+  "objects": [{
+        "name": "User",
+        "attributes": [{
+                "name": "Id",
+                "type": "String"
+            }, {
+                "name": "FirstName",
+                "type": "String"
+            },
+            {
+                "name": "CustomExendedAttribute",
+                "type": "String"
+            }  
+        ]
+    }],
+  "version": "bf8c03ac-d45e-47fe-b3a1-711a9418b2b1"
+}
+ ```

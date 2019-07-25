@@ -3,12 +3,12 @@ title: サブスクリプションを作成する
 description: Microsoft Graph リソース上のデータが変更されたときに通知を受信するリスナーアプリケーションをサブスクライブします。
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: b23cfa1eec29ed77f822cdaa0ff3073100df722b
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: a57baef119e64178f5d3a306c4b09c7b3b23e617
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35458200"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35869468"
 ---
 # <a name="create-subscription"></a>サブスクリプションを作成する
 
@@ -99,6 +99,10 @@ Content-type: application/json
 
 # <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-subscription-from-subscriptions-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-subscription-from-subscriptions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,12 +2,12 @@
 title: 名前付きアイテムの追加
 description: ユーザーのロケールを数式に使用して、新しい名前を指定したスコープのコレクションに追加します。
 localization_priority: Normal
-ms.openlocfilehash: 9f3f6d4735649003d64f2569c3b8229217e695d6
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 2657326b774d111adbb0012f983eb99acccb15f7
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35447893"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35879270"
 ---
 # <a name="add-named-item"></a>名前付きアイテムの追加
 
@@ -84,6 +84,10 @@ Content-length: 54
 
 # <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/nameditemcollection-add-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/nameditemcollection-add-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

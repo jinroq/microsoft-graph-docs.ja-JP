@@ -2,12 +2,12 @@
 title: 'privilegedRoleAssignment: makeEligible'
 description: ロールの割り当てを有効にします。 呼び出し前に役割の割り当てが既に適用されている場合は、何も行われません。 役割の割り当てが永続的で、要求元がターゲットユーザーと異なる場合は、役割の割り当てが対象となり、その役割は対象ユーザーに対して無効になります。 リクエスターが対象ユーザーで、役割がセキュリティ管理者または特権の役割管理者である場合、役割は既定の有効期限を使用してアクティブ化されます。
 localization_priority: Normal
-ms.openlocfilehash: 83255aec605a39ae6e86d6845ab0ab983d9413f8
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 0cc2b650e90064dd18e66ede1a59c50dc23665e2
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35444947"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35875697"
 ---
 # <a name="privilegedroleassignment-makeeligible"></a>privilegedRoleAssignment: makeEligible
 
@@ -67,6 +67,10 @@ POST https://graph.microsoft.com/beta/privilegedRoleAssignments/{id}/makeEligibl
 
 # <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/privilegedroleassignment-makeeligible-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/privilegedroleassignment-makeeligible-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

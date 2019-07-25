@@ -1,11 +1,11 @@
 ---
 description: 自動的に生成されたファイル。 変更しない
 ms.openlocfilehash: 10086cd9d4975ce50b3ce5c45f0b7d8a38f00ace
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35513277"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35731067"
 ---
 ```objc
 
