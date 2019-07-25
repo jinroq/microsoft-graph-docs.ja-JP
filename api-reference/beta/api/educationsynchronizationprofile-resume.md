@@ -4,12 +4,12 @@ description: テナント内の特定の学校データ同期プロファイル�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: fc442cda70e2ed1e6adac6bc1764ba8afc9b3fb5
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 6381798a6bd7361e567f60cf086ef2c781ef39d9
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35441290"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35860001"
 ---
 # <a name="resume-sync-on-an-educationsynchronizationprofile"></a>EducationSynchronizationProfile での同期の再開
 
@@ -64,6 +64,10 @@ POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/res
 
 # <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/post-educationsynchronizationprofile-resume-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-educationsynchronizationprofile-resume-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -4,12 +4,12 @@ description: 指定したイベントオブジェクトのプロパティと関�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: f6962d6240e4315d9a2e9589387483351a9e0915
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 5ccfd75ab142908d48ebe8271a899eb8e9d52970
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35441094"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35859631"
 ---
 # <a name="get-event"></a>イベントを取得する
 
@@ -111,6 +111,10 @@ Prefer: outlook.timezone="Pacific Standard Time"
 
 # <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-event-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-event-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -220,6 +224,10 @@ Prefer: outlook.body-content-type="text"
 [!INCLUDE [sample-code](../includes/snippets/objc/get-event-in-text-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-event-in-text-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### <a name="response-2"></a>応答 2
@@ -274,6 +282,10 @@ GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=sub
 
 # <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-event-multiple-locations-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-event-multiple-locations-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

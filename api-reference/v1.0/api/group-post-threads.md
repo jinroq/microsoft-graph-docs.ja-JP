@@ -4,12 +4,12 @@ description: '最初にスレッドを作成して、新しいグループ会話
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 298372a8b60927aa7e0bc17490f77f69abde052d
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: a05c893914f55e36bf86de0c822432bce2e52776
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35456373"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35885457"
 ---
 # <a name="create-conversation-thread"></a>会話スレッドを作成する
 最初にスレッドを作成して、新しいグループ会話を開始します。 
@@ -83,6 +83,10 @@ Content-type: application/json
 
 # <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-conversationthread-from-group-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-conversationthread-from-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

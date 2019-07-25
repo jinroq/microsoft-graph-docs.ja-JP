@@ -4,12 +4,12 @@ description: '**Plan**オブジェクトのプロパティを更新します。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 93aa7a3529c887c97bc40540ed3f94ef9eae8b35
-ms.sourcegitcommit: b198efc2391a12a840e4f1b8c42c18a55b06037f
+ms.openlocfilehash: 05de44ac1a85410f71a48bc63f79a979925a5056
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "35820795"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35887122"
 ---
 # <a name="update-plannerplan"></a>プランを更新する plan
 
@@ -80,6 +80,10 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
 # <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-plannerplan-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-plannerplan-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

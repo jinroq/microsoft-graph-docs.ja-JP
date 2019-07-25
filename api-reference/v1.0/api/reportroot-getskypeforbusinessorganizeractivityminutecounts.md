@@ -4,12 +4,12 @@ description: 組織内のユーザーが開催、企画した電話会議セッ�
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: de9ce9969d30f9c63bc6024fd57443ea640f61cd
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: f634106abb29420c6b87e861f6b126a25c95b8cd
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35444437"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35892371"
 ---
 # <a name="reportroot-getskypeforbusinessorganizeractivityminutecounts"></a>reportRoot: getSkypeForBusinessOrganizerActivityMinuteCounts
 
@@ -92,6 +92,10 @@ GET https://graph.microsoft.com/v1.0/reports/getSkypeForBusinessOrganizerActivit
 
 # <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getskypeforbusinessorganizeractivityminutecounts-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getskypeforbusinessorganizeractivityminutecounts-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

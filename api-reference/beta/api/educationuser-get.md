@@ -4,12 +4,12 @@ description: ユーザーのプロパティとリレーションシップを取�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 79fbfd4fafa19f5451a32b6ccc15715dce6c419f
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 1a1d14b0fd69fa84c4933dceb612e2aae2667626
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35441234"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35859844"
 ---
 # <a name="get-educationuser"></a>educationUser を取得する
 
@@ -65,6 +65,10 @@ GET https://graph.microsoft.com/beta/education/users/13012
 
 # <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-educationuser-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-educationuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
