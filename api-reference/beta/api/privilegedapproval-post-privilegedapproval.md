@@ -2,12 +2,12 @@
 title: privilegedApproval を作成する
 description: この API を使用して、新しい privilegedApproval を作成します。
 localization_priority: Normal
-ms.openlocfilehash: cfc090c6fdc18f54746558ec7b936afded736827
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 82e265e5b76c9649445b3e6d4edaf035cbddbc82
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35445080"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35875893"
 ---
 # <a name="create-privilegedapproval"></a>privilegedApproval を作成する
 
@@ -76,6 +76,10 @@ Content-length: 180
 
 # <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-privilegedapproval-from-privilegedapproval-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-privilegedapproval-from-privilegedapproval-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
