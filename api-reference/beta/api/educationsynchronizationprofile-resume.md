@@ -4,49 +4,49 @@ description: テナント内の特定の学校データ同期プロファイル�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: fc442cda70e2ed1e6adac6bc1764ba8afc9b3fb5
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 6381798a6bd7361e567f60cf086ef2c781ef39d9
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35441290"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35860001"
 ---
-# <a name="resume-sync-on-an-educationsynchronizationprofile"></a><span data-ttu-id="ebce5-103">EducationSynchronizationProfile での同期の再開</span><span class="sxs-lookup"><span data-stu-id="ebce5-103">Resume sync on an educationSynchronizationProfile</span></span>
+# <a name="resume-sync-on-an-educationsynchronizationprofile"></a><span data-ttu-id="e83f6-103">EducationSynchronizationProfile での同期の再開</span><span class="sxs-lookup"><span data-stu-id="e83f6-103">Resume sync on an educationSynchronizationProfile</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ebce5-104">テナント内の特定の学校データ[同期プロファイル](../resources/educationsynchronizationprofile.md)の同期を再開します。</span><span class="sxs-lookup"><span data-stu-id="ebce5-104">Resume the sync of a specific school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.</span></span>
+<span data-ttu-id="e83f6-104">テナント内の特定の学校データ[同期プロファイル](../resources/educationsynchronizationprofile.md)の同期を再開します。</span><span class="sxs-lookup"><span data-stu-id="e83f6-104">Resume the sync of a specific school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="ebce5-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="ebce5-105">Permissions</span></span>
-<span data-ttu-id="ebce5-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ebce5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="e83f6-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="e83f6-105">Permissions</span></span>
+<span data-ttu-id="e83f6-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e83f6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="ebce5-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="ebce5-108">Permission type</span></span> | <span data-ttu-id="ebce5-109">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="ebce5-109">Permissions</span></span> |
+| <span data-ttu-id="e83f6-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="e83f6-108">Permission type</span></span> | <span data-ttu-id="e83f6-109">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="e83f6-109">Permissions</span></span> |
 |:-----------|:----------|
-| <span data-ttu-id="ebce5-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="ebce5-110">Delegated (work or school account)</span></span> | <span data-ttu-id="ebce5-111">EduAdministration.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ebce5-111">EduAdministration.ReadWrite</span></span> |
-|<span data-ttu-id="ebce5-112">委任 (個人 Microsoft アカウント</span><span class="sxs-lookup"><span data-stu-id="ebce5-112">Delegated (personal Microsoft account</span></span>|<span data-ttu-id="ebce5-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="ebce5-113">Not supported.</span></span>|
-|<span data-ttu-id="ebce5-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="ebce5-114">Application</span></span>|<span data-ttu-id="ebce5-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="ebce5-115">Not supported.</span></span>|
+| <span data-ttu-id="e83f6-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="e83f6-110">Delegated (work or school account)</span></span> | <span data-ttu-id="e83f6-111">EduAdministration.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e83f6-111">EduAdministration.ReadWrite</span></span> |
+|<span data-ttu-id="e83f6-112">委任 (個人 Microsoft アカウント</span><span class="sxs-lookup"><span data-stu-id="e83f6-112">Delegated (personal Microsoft account</span></span>|<span data-ttu-id="e83f6-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e83f6-113">Not supported.</span></span>|
+|<span data-ttu-id="e83f6-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="e83f6-114">Application</span></span>|<span data-ttu-id="e83f6-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e83f6-115">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="ebce5-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="ebce5-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e83f6-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="e83f6-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /synchronizationProfiles/{id}/resume
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="ebce5-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="ebce5-117">Request headers</span></span>
-| <span data-ttu-id="ebce5-118">名前</span><span class="sxs-lookup"><span data-stu-id="ebce5-118">Name</span></span>       | <span data-ttu-id="ebce5-119">型</span><span class="sxs-lookup"><span data-stu-id="ebce5-119">Type</span></span> | <span data-ttu-id="ebce5-120">説明</span><span class="sxs-lookup"><span data-stu-id="ebce5-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e83f6-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="e83f6-117">Request headers</span></span>
+| <span data-ttu-id="e83f6-118">名前</span><span class="sxs-lookup"><span data-stu-id="e83f6-118">Name</span></span>       | <span data-ttu-id="e83f6-119">型</span><span class="sxs-lookup"><span data-stu-id="e83f6-119">Type</span></span> | <span data-ttu-id="e83f6-120">説明</span><span class="sxs-lookup"><span data-stu-id="e83f6-120">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="ebce5-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="ebce5-121">Authorization</span></span>  | <span data-ttu-id="ebce5-122">string</span><span class="sxs-lookup"><span data-stu-id="ebce5-122">string</span></span>  | <span data-ttu-id="ebce5-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="ebce5-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="e83f6-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="e83f6-121">Authorization</span></span>  | <span data-ttu-id="e83f6-122">string</span><span class="sxs-lookup"><span data-stu-id="e83f6-122">string</span></span>  | <span data-ttu-id="e83f6-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="e83f6-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="ebce5-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="ebce5-125">Request body</span></span>
-<span data-ttu-id="ebce5-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="ebce5-126">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="ebce5-127">応答</span><span class="sxs-lookup"><span data-stu-id="ebce5-127">Response</span></span>
-<span data-ttu-id="ebce5-128">成功した場合、このメソッドは `200 OK` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="ebce5-128">If successful, this method returns a `200 OK` response code.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e83f6-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="e83f6-125">Request body</span></span>
+<span data-ttu-id="e83f6-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="e83f6-126">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="e83f6-127">応答</span><span class="sxs-lookup"><span data-stu-id="e83f6-127">Response</span></span>
+<span data-ttu-id="e83f6-128">成功した場合、このメソッドは `200 OK` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="e83f6-128">If successful, this method returns a `200 OK` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ebce5-129">例</span><span class="sxs-lookup"><span data-stu-id="ebce5-129">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="ebce5-130">要求</span><span class="sxs-lookup"><span data-stu-id="ebce5-130">Request</span></span>
-<span data-ttu-id="ebce5-131">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="ebce5-131">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="e83f6-129">例</span><span class="sxs-lookup"><span data-stu-id="e83f6-129">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="e83f6-130">要求</span><span class="sxs-lookup"><span data-stu-id="e83f6-130">Request</span></span>
+<span data-ttu-id="e83f6-131">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="e83f6-131">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="ebce5-132">プロトコル</span><span class="sxs-lookup"><span data-stu-id="ebce5-132">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="e83f6-132">プロトコル</span><span class="sxs-lookup"><span data-stu-id="e83f6-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_educationSynchronizationProfile_resume"
@@ -54,24 +54,28 @@ POST /synchronizationProfiles/{id}/resume
 ```http
 POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/resume
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="ebce5-133">C#</span><span class="sxs-lookup"><span data-stu-id="ebce5-133">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="e83f6-133">C#</span><span class="sxs-lookup"><span data-stu-id="e83f6-133">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-educationsynchronizationprofile-resume-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ebce5-134">Javascript</span><span class="sxs-lookup"><span data-stu-id="ebce5-134">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e83f6-134">Javascript</span><span class="sxs-lookup"><span data-stu-id="e83f6-134">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/post-educationsynchronizationprofile-resume-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="ebce5-135">目的-C</span><span class="sxs-lookup"><span data-stu-id="ebce5-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="e83f6-135">目的-C</span><span class="sxs-lookup"><span data-stu-id="e83f6-135">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/post-educationsynchronizationprofile-resume-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="e83f6-136">Java</span><span class="sxs-lookup"><span data-stu-id="e83f6-136">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-educationsynchronizationprofile-resume-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="ebce5-136">応答</span><span class="sxs-lookup"><span data-stu-id="ebce5-136">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="e83f6-137">応答</span><span class="sxs-lookup"><span data-stu-id="e83f6-137">Response</span></span>
 
-<span data-ttu-id="ebce5-137">応答本文はありません。</span><span class="sxs-lookup"><span data-stu-id="ebce5-137">There is no response body.</span></span>
+<span data-ttu-id="e83f6-138">応答本文はありません。</span><span class="sxs-lookup"><span data-stu-id="e83f6-138">There is no response body.</span></span>
 
 <!-- {
   "blockType": "response",

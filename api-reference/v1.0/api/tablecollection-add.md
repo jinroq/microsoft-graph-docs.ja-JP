@@ -4,61 +4,61 @@ description: 新しいテーブルを作成します。範囲のソース アド
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 406dac3f3c96223dc2f8af75782ff288f83dcdc1
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 19b8d825e8b55e2516e495407ca9fe3feeb61cde
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35456634"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35889538"
 ---
-# <a name="tablecollection-add"></a><span data-ttu-id="5ce4c-105">TableCollection: 追加</span><span class="sxs-lookup"><span data-stu-id="5ce4c-105">TableCollection: add</span></span>
+# <a name="tablecollection-add"></a><span data-ttu-id="51673-105">TableCollection: 追加</span><span class="sxs-lookup"><span data-stu-id="51673-105">TableCollection: add</span></span>
 
-<span data-ttu-id="5ce4c-p102">新しいテーブルを作成します。範囲のソース アドレスにより、テーブルが追加されるワークシートが判断されます。テーブルが追加できない場合 (たとえば、アドレスが無効な場合や、テーブルが別のテーブルと重複している場合) は、エラーがスローされます。</span><span class="sxs-lookup"><span data-stu-id="5ce4c-p102">Create a new table. The range source address determines the worksheet under which the table will be added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another table), an error will be thrown.</span></span>
+<span data-ttu-id="51673-p102">新しいテーブルを作成します。範囲のソース アドレスにより、テーブルが追加されるワークシートが判断されます。テーブルが追加できない場合 (たとえば、アドレスが無効な場合や、テーブルが別のテーブルと重複している場合) は、エラーがスローされます。</span><span class="sxs-lookup"><span data-stu-id="51673-p102">Create a new table. The range source address determines the worksheet under which the table will be added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another table), an error will be thrown.</span></span>
 
-## <a name="error-handling"></a><span data-ttu-id="5ce4c-109">エラー処理</span><span class="sxs-lookup"><span data-stu-id="5ce4c-109">Error Handling</span></span>
+## <a name="error-handling"></a><span data-ttu-id="51673-109">エラー処理</span><span class="sxs-lookup"><span data-stu-id="51673-109">Error Handling</span></span>
 
-<span data-ttu-id="5ce4c-110">この要求に対して、504 HTTP エラーが表示されることがあります。</span><span class="sxs-lookup"><span data-stu-id="5ce4c-110">This request might occasionally receive a 504 HTTP error.</span></span> <span data-ttu-id="5ce4c-111">このエラーに対する適切な対応は、要求を繰り返すことです。</span><span class="sxs-lookup"><span data-stu-id="5ce4c-111">The appropriate response to this error is to repeat the request.</span></span>
+<span data-ttu-id="51673-110">この要求に対して、504 HTTP エラーが表示されることがあります。</span><span class="sxs-lookup"><span data-stu-id="51673-110">This request might occasionally receive a 504 HTTP error.</span></span> <span data-ttu-id="51673-111">このエラーに対する適切な対応は、要求を繰り返すことです。</span><span class="sxs-lookup"><span data-stu-id="51673-111">The appropriate response to this error is to repeat the request.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="5ce4c-112">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="5ce4c-112">Permissions</span></span>
-<span data-ttu-id="5ce4c-p104">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5ce4c-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="51673-112">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="51673-112">Permissions</span></span>
+<span data-ttu-id="51673-p104">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="51673-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="5ce4c-115">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="5ce4c-115">Permission type</span></span>      | <span data-ttu-id="5ce4c-116">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="5ce4c-116">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="51673-115">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="51673-115">Permission type</span></span>      | <span data-ttu-id="51673-116">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="51673-116">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="5ce4c-117">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="5ce4c-117">Delegated (work or school account)</span></span> | <span data-ttu-id="5ce4c-118">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5ce4c-118">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="5ce4c-119">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="5ce4c-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5ce4c-120">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="5ce4c-120">Not supported.</span></span>    |
-|<span data-ttu-id="5ce4c-121">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="5ce4c-121">Application</span></span> | <span data-ttu-id="5ce4c-122">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="5ce4c-122">Not supported.</span></span> |
+|<span data-ttu-id="51673-117">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="51673-117">Delegated (work or school account)</span></span> | <span data-ttu-id="51673-118">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="51673-118">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="51673-119">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="51673-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="51673-120">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="51673-120">Not supported.</span></span>    |
+|<span data-ttu-id="51673-121">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="51673-121">Application</span></span> | <span data-ttu-id="51673-122">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="51673-122">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="5ce4c-123">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="5ce4c-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="51673-123">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="51673-123">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/tables/add
 POST /workbook/worksheets/{id|name}/tables/add
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="5ce4c-124">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="5ce4c-124">Request headers</span></span>
-| <span data-ttu-id="5ce4c-125">名前</span><span class="sxs-lookup"><span data-stu-id="5ce4c-125">Name</span></span>       | <span data-ttu-id="5ce4c-126">説明</span><span class="sxs-lookup"><span data-stu-id="5ce4c-126">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="51673-124">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="51673-124">Request headers</span></span>
+| <span data-ttu-id="51673-125">名前</span><span class="sxs-lookup"><span data-stu-id="51673-125">Name</span></span>       | <span data-ttu-id="51673-126">説明</span><span class="sxs-lookup"><span data-stu-id="51673-126">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="5ce4c-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="5ce4c-127">Authorization</span></span>  | <span data-ttu-id="5ce4c-p105">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="5ce4c-p105">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="5ce4c-130">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="5ce4c-130">Workbook-Session-Id</span></span>  | <span data-ttu-id="5ce4c-p106">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="5ce4c-p106">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="51673-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="51673-127">Authorization</span></span>  | <span data-ttu-id="51673-p105">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="51673-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="51673-130">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="51673-130">Workbook-Session-Id</span></span>  | <span data-ttu-id="51673-p106">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="51673-p106">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="5ce4c-133">要求本文</span><span class="sxs-lookup"><span data-stu-id="5ce4c-133">Request body</span></span>
-<span data-ttu-id="5ce4c-134">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="5ce4c-134">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="51673-133">要求本文</span><span class="sxs-lookup"><span data-stu-id="51673-133">Request body</span></span>
+<span data-ttu-id="51673-134">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="51673-134">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="5ce4c-135">パラメーター</span><span class="sxs-lookup"><span data-stu-id="5ce4c-135">Parameter</span></span>    | <span data-ttu-id="5ce4c-136">型</span><span class="sxs-lookup"><span data-stu-id="5ce4c-136">Type</span></span>   |<span data-ttu-id="5ce4c-137">説明</span><span class="sxs-lookup"><span data-stu-id="5ce4c-137">Description</span></span>|
+| <span data-ttu-id="51673-135">パラメーター</span><span class="sxs-lookup"><span data-stu-id="51673-135">Parameter</span></span>    | <span data-ttu-id="51673-136">型</span><span class="sxs-lookup"><span data-stu-id="51673-136">Type</span></span>   |<span data-ttu-id="51673-137">説明</span><span class="sxs-lookup"><span data-stu-id="51673-137">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="5ce4c-138">address</span><span class="sxs-lookup"><span data-stu-id="5ce4c-138">address</span></span>|<span data-ttu-id="5ce4c-139">string</span><span class="sxs-lookup"><span data-stu-id="5ce4c-139">string</span></span>|<span data-ttu-id="5ce4c-p107">データ ソースを表す Range オブジェクトのアドレスまたは名前。アドレスにシート名が含まれていない場合は、現在作業中のシートが使用されます。</span><span class="sxs-lookup"><span data-stu-id="5ce4c-p107">Address or name of the range object representing the data source. If the address does not contain a sheet name, the currently-active sheet is used.</span></span>|
-|<span data-ttu-id="5ce4c-142">hasHeaders</span><span class="sxs-lookup"><span data-stu-id="5ce4c-142">hasHeaders</span></span>|<span data-ttu-id="5ce4c-143">ブール値</span><span class="sxs-lookup"><span data-stu-id="5ce4c-143">boolean</span></span>|<span data-ttu-id="5ce4c-p108">インポートされたデータに列ラベルがあるかどうかを示すブール値。ソースにヘッダーが含まれていない場合 (このプロパティが false に設定されている場合)、Excel はデータを下方向に 1 行シフトして、自動的にヘッダーを生成します。</span><span class="sxs-lookup"><span data-stu-id="5ce4c-p108">Boolean value that indicates whether the data being imported has column labels. If the source does not contain headers (i.e,. when this property set to false), Excel will automatically generate header shifting the data down by one row.</span></span>|
+|<span data-ttu-id="51673-138">address</span><span class="sxs-lookup"><span data-stu-id="51673-138">address</span></span>|<span data-ttu-id="51673-139">string</span><span class="sxs-lookup"><span data-stu-id="51673-139">string</span></span>|<span data-ttu-id="51673-p107">データ ソースを表す Range オブジェクトのアドレスまたは名前。アドレスにシート名が含まれていない場合は、現在作業中のシートが使用されます。</span><span class="sxs-lookup"><span data-stu-id="51673-p107">Address or name of the range object representing the data source. If the address does not contain a sheet name, the currently-active sheet is used.</span></span>|
+|<span data-ttu-id="51673-142">hasHeaders</span><span class="sxs-lookup"><span data-stu-id="51673-142">hasHeaders</span></span>|<span data-ttu-id="51673-143">ブール値</span><span class="sxs-lookup"><span data-stu-id="51673-143">boolean</span></span>|<span data-ttu-id="51673-p108">インポートされたデータに列ラベルがあるかどうかを示すブール値。ソースにヘッダーが含まれていない場合 (このプロパティが false に設定されている場合)、Excel はデータを下方向に 1 行シフトして、自動的にヘッダーを生成します。</span><span class="sxs-lookup"><span data-stu-id="51673-p108">Boolean value that indicates whether the data being imported has column labels. If the source does not contain headers (i.e,. when this property set to false), Excel will automatically generate header shifting the data down by one row.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="5ce4c-147">応答</span><span class="sxs-lookup"><span data-stu-id="5ce4c-147">Response</span></span>
+## <a name="response"></a><span data-ttu-id="51673-147">応答</span><span class="sxs-lookup"><span data-stu-id="51673-147">Response</span></span>
 
-<span data-ttu-id="5ce4c-148">成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[WorkbookTable](../resources/table.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="5ce4c-148">If successful, this method returns `200 OK` response code and [WorkbookTable](../resources/table.md) object in the response body.</span></span>
+<span data-ttu-id="51673-148">成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[WorkbookTable](../resources/table.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="51673-148">If successful, this method returns `200 OK` response code and [WorkbookTable](../resources/table.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="5ce4c-149">例</span><span class="sxs-lookup"><span data-stu-id="5ce4c-149">Example</span></span>
-<span data-ttu-id="5ce4c-150">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="5ce4c-150">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="5ce4c-151">要求</span><span class="sxs-lookup"><span data-stu-id="5ce4c-151">Request</span></span>
-<span data-ttu-id="5ce4c-152">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="5ce4c-152">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="51673-149">例</span><span class="sxs-lookup"><span data-stu-id="51673-149">Example</span></span>
+<span data-ttu-id="51673-150">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="51673-150">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="51673-151">要求</span><span class="sxs-lookup"><span data-stu-id="51673-151">Request</span></span>
+<span data-ttu-id="51673-152">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="51673-152">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="5ce4c-153">プロトコル</span><span class="sxs-lookup"><span data-stu-id="5ce4c-153">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="51673-153">プロトコル</span><span class="sxs-lookup"><span data-stu-id="51673-153">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tablecollection_add"
@@ -73,23 +73,27 @@ Content-length: 54
   "hasHeaders": true
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="5ce4c-154">C#</span><span class="sxs-lookup"><span data-stu-id="5ce4c-154">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="51673-154">C#</span><span class="sxs-lookup"><span data-stu-id="51673-154">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/tablecollection-add-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="5ce4c-155">Javascript</span><span class="sxs-lookup"><span data-stu-id="5ce4c-155">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="51673-155">Javascript</span><span class="sxs-lookup"><span data-stu-id="51673-155">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/tablecollection-add-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="5ce4c-156">目的-C</span><span class="sxs-lookup"><span data-stu-id="5ce4c-156">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="51673-156">目的-C</span><span class="sxs-lookup"><span data-stu-id="51673-156">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/tablecollection-add-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="51673-157">Java</span><span class="sxs-lookup"><span data-stu-id="51673-157">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/tablecollection-add-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="5ce4c-157">応答</span><span class="sxs-lookup"><span data-stu-id="5ce4c-157">Response</span></span>
-<span data-ttu-id="5ce4c-p109">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="5ce4c-p109">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="51673-158">応答</span><span class="sxs-lookup"><span data-stu-id="51673-158">Response</span></span>
+<span data-ttu-id="51673-p109">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="51673-p109">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

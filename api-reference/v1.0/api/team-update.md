@@ -4,55 +4,55 @@ description: 指定されたチームのプロパティを更新します。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0673d19ae54ca14b33605c1cc41053618fe44d24
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 001b9056eaad2adb456adecd9277e9ae83a3f2c0
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35455169"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35888032"
 ---
-# <a name="update-team"></a><span data-ttu-id="6a421-103">チームを更新する</span><span class="sxs-lookup"><span data-stu-id="6a421-103">Update team</span></span>
+# <a name="update-team"></a><span data-ttu-id="c2c61-103">チームを更新する</span><span class="sxs-lookup"><span data-stu-id="c2c61-103">Update team</span></span>
 
 
 
-<span data-ttu-id="6a421-104">指定した[チーム](../resources/team.md)のプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="6a421-104">Update the properties of the specified [team](../resources/team.md).</span></span>
+<span data-ttu-id="c2c61-104">指定した[チーム](../resources/team.md)のプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="c2c61-104">Update the properties of the specified [team](../resources/team.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="6a421-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="6a421-105">Permissions</span></span>
-<span data-ttu-id="6a421-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6a421-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="c2c61-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="c2c61-105">Permissions</span></span>
+<span data-ttu-id="c2c61-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c2c61-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="6a421-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="6a421-108">Permission type</span></span>      | <span data-ttu-id="6a421-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="6a421-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c2c61-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="c2c61-108">Permission type</span></span>      | <span data-ttu-id="c2c61-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="c2c61-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="6a421-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="6a421-110">Delegated (work or school account)</span></span> | <span data-ttu-id="6a421-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6a421-111">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="6a421-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="6a421-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6a421-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="6a421-113">Not supported.</span></span>    |
-|<span data-ttu-id="6a421-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="6a421-114">Application</span></span> | <span data-ttu-id="6a421-115">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6a421-115">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="c2c61-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="c2c61-110">Delegated (work or school account)</span></span> | <span data-ttu-id="c2c61-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c2c61-111">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="c2c61-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="c2c61-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c2c61-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c2c61-113">Not supported.</span></span>    |
+|<span data-ttu-id="c2c61-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="c2c61-114">Application</span></span> | <span data-ttu-id="c2c61-115">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c2c61-115">Group.Read.All, Group.ReadWrite.All</span></span>    |
 
-> <span data-ttu-id="6a421-116">**注**: この API は、管理者のアクセス許可をサポートします。</span><span class="sxs-lookup"><span data-stu-id="6a421-116">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="6a421-117">グローバル管理者と Microsoft Teams サービス管理者は、メンバーではないチームにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="6a421-117">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
+> <span data-ttu-id="c2c61-116">**注**: この API は、管理者のアクセス許可をサポートします。</span><span class="sxs-lookup"><span data-stu-id="c2c61-116">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="c2c61-117">グローバル管理者と Microsoft Teams サービス管理者は、メンバーではないチームにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="c2c61-117">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="6a421-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="6a421-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c2c61-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="c2c61-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /teams/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="6a421-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="6a421-119">Request headers</span></span>
-| <span data-ttu-id="6a421-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="6a421-120">Header</span></span>       | <span data-ttu-id="6a421-121">値</span><span class="sxs-lookup"><span data-stu-id="6a421-121">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="c2c61-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="c2c61-119">Request headers</span></span>
+| <span data-ttu-id="c2c61-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="c2c61-120">Header</span></span>       | <span data-ttu-id="c2c61-121">値</span><span class="sxs-lookup"><span data-stu-id="c2c61-121">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="6a421-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="6a421-122">Authorization</span></span>  | <span data-ttu-id="6a421-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="6a421-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="6a421-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="6a421-125">Content-Type</span></span>  | <span data-ttu-id="6a421-126">application/json</span><span class="sxs-lookup"><span data-stu-id="6a421-126">application/json</span></span>  |
+| <span data-ttu-id="c2c61-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="c2c61-122">Authorization</span></span>  | <span data-ttu-id="c2c61-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="c2c61-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="c2c61-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="c2c61-125">Content-Type</span></span>  | <span data-ttu-id="c2c61-126">application/json</span><span class="sxs-lookup"><span data-stu-id="c2c61-126">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="6a421-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="6a421-127">Request body</span></span>
-<span data-ttu-id="6a421-128">要求本文で、 [team](../resources/team.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="6a421-128">In the request body, supply a JSON representation of [team](../resources/team.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c2c61-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="c2c61-127">Request body</span></span>
+<span data-ttu-id="c2c61-128">要求本文で、 [team](../resources/team.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="c2c61-128">In the request body, supply a JSON representation of [team](../resources/team.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="6a421-129">応答</span><span class="sxs-lookup"><span data-stu-id="6a421-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c2c61-129">応答</span><span class="sxs-lookup"><span data-stu-id="c2c61-129">Response</span></span>
 
-<span data-ttu-id="6a421-130">成功した場合、このメソッドは `204 No Content` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="6a421-130">If successful, this method returns a `204 No Content` response code.</span></span>
+<span data-ttu-id="c2c61-130">成功した場合、このメソッドは `204 No Content` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="c2c61-130">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="6a421-131">例</span><span class="sxs-lookup"><span data-stu-id="6a421-131">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="6a421-132">要求</span><span class="sxs-lookup"><span data-stu-id="6a421-132">Request</span></span>
-<span data-ttu-id="6a421-133">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="6a421-133">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="c2c61-131">例</span><span class="sxs-lookup"><span data-stu-id="c2c61-131">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="c2c61-132">要求</span><span class="sxs-lookup"><span data-stu-id="c2c61-132">Request</span></span>
+<span data-ttu-id="c2c61-133">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="c2c61-133">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="6a421-134">プロトコル</span><span class="sxs-lookup"><span data-stu-id="6a421-134">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="c2c61-134">プロトコル</span><span class="sxs-lookup"><span data-stu-id="c2c61-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_team"
@@ -76,21 +76,25 @@ Content-length: 211
   }
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="6a421-135">C#</span><span class="sxs-lookup"><span data-stu-id="6a421-135">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="c2c61-135">C#</span><span class="sxs-lookup"><span data-stu-id="c2c61-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-team-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="6a421-136">Javascript</span><span class="sxs-lookup"><span data-stu-id="6a421-136">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="c2c61-136">Javascript</span><span class="sxs-lookup"><span data-stu-id="c2c61-136">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-team-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="6a421-137">目的-C</span><span class="sxs-lookup"><span data-stu-id="6a421-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="c2c61-137">目的-C</span><span class="sxs-lookup"><span data-stu-id="c2c61-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-team-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="c2c61-138">Java</span><span class="sxs-lookup"><span data-stu-id="c2c61-138">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-team-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### <a name="response"></a><span data-ttu-id="6a421-138">応答</span><span class="sxs-lookup"><span data-stu-id="6a421-138">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="c2c61-139">応答</span><span class="sxs-lookup"><span data-stu-id="c2c61-139">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
