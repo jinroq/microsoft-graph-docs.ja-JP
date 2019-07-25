@@ -4,52 +4,52 @@ description: AdministrativeUnit を削除します。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3b1851738892d1e0c7a83ddc19655271fdaec466
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: f2f8073058767e54bcb36626ad864ea3257924fa
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35439946"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35855880"
 ---
-# <a name="delete-administrativeunit"></a><span data-ttu-id="c23aa-103">AdministrativeUnit の削除</span><span class="sxs-lookup"><span data-stu-id="c23aa-103">Delete administrativeUnit</span></span>
+# <a name="delete-administrativeunit"></a><span data-ttu-id="76082-103">AdministrativeUnit の削除</span><span class="sxs-lookup"><span data-stu-id="76082-103">Delete administrativeUnit</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c23aa-104">[AdministrativeUnit](../resources/administrativeunit.md)を削除します。</span><span class="sxs-lookup"><span data-stu-id="c23aa-104">Delete an [administrativeUnit](../resources/administrativeunit.md).</span></span>
+<span data-ttu-id="76082-104">[AdministrativeUnit](../resources/administrativeunit.md)を削除します。</span><span class="sxs-lookup"><span data-stu-id="76082-104">Delete an [administrativeUnit](../resources/administrativeunit.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c23aa-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="c23aa-105">Permissions</span></span>
-<span data-ttu-id="c23aa-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c23aa-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="76082-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="76082-105">Permissions</span></span>
+<span data-ttu-id="76082-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="76082-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="c23aa-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="c23aa-108">Permission type</span></span>      | <span data-ttu-id="c23aa-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="c23aa-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="76082-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="76082-108">Permission type</span></span>      | <span data-ttu-id="76082-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="76082-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c23aa-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="c23aa-110">Delegated (work or school account)</span></span> | <span data-ttu-id="c23aa-111">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="c23aa-111">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="c23aa-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="c23aa-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c23aa-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c23aa-113">Not supported.</span></span>    |
-|<span data-ttu-id="c23aa-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="c23aa-114">Application</span></span> | <span data-ttu-id="c23aa-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c23aa-115">Not supported.</span></span> |
+|<span data-ttu-id="76082-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="76082-110">Delegated (work or school account)</span></span> | <span data-ttu-id="76082-111">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="76082-111">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="76082-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="76082-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="76082-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="76082-113">Not supported.</span></span>    |
+|<span data-ttu-id="76082-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="76082-114">Application</span></span> | <span data-ttu-id="76082-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="76082-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c23aa-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="c23aa-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="76082-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="76082-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /administrativeUnits/{id}
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="c23aa-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="c23aa-117">Request headers</span></span>
-| <span data-ttu-id="c23aa-118">名前</span><span class="sxs-lookup"><span data-stu-id="c23aa-118">Name</span></span>       | <span data-ttu-id="c23aa-119">説明</span><span class="sxs-lookup"><span data-stu-id="c23aa-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="76082-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="76082-117">Request headers</span></span>
+| <span data-ttu-id="76082-118">名前</span><span class="sxs-lookup"><span data-stu-id="76082-118">Name</span></span>       | <span data-ttu-id="76082-119">説明</span><span class="sxs-lookup"><span data-stu-id="76082-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="c23aa-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="c23aa-120">Authorization</span></span>  | <span data-ttu-id="c23aa-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="c23aa-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="76082-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="76082-120">Authorization</span></span>  | <span data-ttu-id="76082-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="76082-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="c23aa-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="c23aa-123">Request body</span></span>
-<span data-ttu-id="c23aa-124">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="c23aa-124">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="76082-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="76082-123">Request body</span></span>
+<span data-ttu-id="76082-124">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="76082-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c23aa-125">応答</span><span class="sxs-lookup"><span data-stu-id="c23aa-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="76082-125">応答</span><span class="sxs-lookup"><span data-stu-id="76082-125">Response</span></span>
 
-<span data-ttu-id="c23aa-p103">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="c23aa-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="76082-p103">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="76082-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c23aa-128">例</span><span class="sxs-lookup"><span data-stu-id="c23aa-128">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="c23aa-129">要求</span><span class="sxs-lookup"><span data-stu-id="c23aa-129">Request</span></span>
-<span data-ttu-id="c23aa-130">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="c23aa-130">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="76082-128">例</span><span class="sxs-lookup"><span data-stu-id="76082-128">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="76082-129">要求</span><span class="sxs-lookup"><span data-stu-id="76082-129">Request</span></span>
+<span data-ttu-id="76082-130">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="76082-130">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="c23aa-131">プロトコル</span><span class="sxs-lookup"><span data-stu-id="c23aa-131">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="76082-131">プロトコル</span><span class="sxs-lookup"><span data-stu-id="76082-131">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_administrativeunit"
@@ -57,22 +57,26 @@ DELETE /administrativeUnits/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/administrativeUnits/{id}
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="c23aa-132">C#</span><span class="sxs-lookup"><span data-stu-id="c23aa-132">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="76082-132">C#</span><span class="sxs-lookup"><span data-stu-id="76082-132">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-administrativeunit-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="c23aa-133">Javascript</span><span class="sxs-lookup"><span data-stu-id="c23aa-133">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="76082-133">Javascript</span><span class="sxs-lookup"><span data-stu-id="76082-133">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-administrativeunit-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="c23aa-134">目的-C</span><span class="sxs-lookup"><span data-stu-id="c23aa-134">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="76082-134">目的-C</span><span class="sxs-lookup"><span data-stu-id="76082-134">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-administrativeunit-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="76082-135">Java</span><span class="sxs-lookup"><span data-stu-id="76082-135">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-administrativeunit-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="c23aa-135">応答</span><span class="sxs-lookup"><span data-stu-id="c23aa-135">Response</span></span>
-<span data-ttu-id="c23aa-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="c23aa-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="76082-136">応答</span><span class="sxs-lookup"><span data-stu-id="76082-136">Response</span></span>
+<span data-ttu-id="76082-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="76082-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

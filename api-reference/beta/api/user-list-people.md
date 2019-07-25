@@ -4,30 +4,30 @@ description: ユーザーのコミュニケーションとコラボレーショ�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 9249ce42ef1f1cfd66c43713e737c14319eeb831
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: d3b7f815fb75b17f88db234cae4fdea626d34bfb
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35457675"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35867146"
 ---
-# <a name="list-people"></a><span data-ttu-id="c802a-103">ユーザーを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="c802a-103">List people</span></span>
+# <a name="list-people"></a><span data-ttu-id="5ed95-103">ユーザーを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="5ed95-103">List people</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c802a-104">ユーザーのコミュニケーションとコラボレーションパターン、およびビジネス上の関係によって決定される、[ユーザー](../resources/user.md)に対して関連性のある人物が注文した[人物](../resources/person.md)オブジェクトのリストを取得します。</span><span class="sxs-lookup"><span data-stu-id="c802a-104">Retrieve a list of [person](../resources/person.md) objects ordered by their relevance to the [user](../resources/user.md), which is determined by the user's communication and collaboration patterns, and business relationships.</span></span>
+<span data-ttu-id="5ed95-104">ユーザーのコミュニケーションとコラボレーションパターン、およびビジネス上の関係によって決定される、[ユーザー](../resources/user.md)に対して関連性のある人物が注文した[人物](../resources/person.md)オブジェクトのリストを取得します。</span><span class="sxs-lookup"><span data-stu-id="5ed95-104">Retrieve a list of [person](../resources/person.md) objects ordered by their relevance to the [user](../resources/user.md), which is determined by the user's communication and collaboration patterns, and business relationships.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c802a-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="c802a-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="5ed95-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="5ed95-105">Permissions</span></span>
 
-<span data-ttu-id="c802a-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c802a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="5ed95-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5ed95-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c802a-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="c802a-108">Permission type</span></span>      | <span data-ttu-id="c802a-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="c802a-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="5ed95-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="5ed95-108">Permission type</span></span>      | <span data-ttu-id="5ed95-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="5ed95-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c802a-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="c802a-110">Delegated (work or school account)</span></span> | <span data-ttu-id="c802a-111">People.Read</span><span class="sxs-lookup"><span data-stu-id="c802a-111">People.Read</span></span>    |
-|<span data-ttu-id="c802a-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="c802a-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c802a-113">People.Read</span><span class="sxs-lookup"><span data-stu-id="c802a-113">People.Read</span></span>    |
-|<span data-ttu-id="c802a-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="c802a-114">Application</span></span> | <span data-ttu-id="c802a-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c802a-115">Not supported.</span></span> |
+|<span data-ttu-id="5ed95-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="5ed95-110">Delegated (work or school account)</span></span> | <span data-ttu-id="5ed95-111">People.Read</span><span class="sxs-lookup"><span data-stu-id="5ed95-111">People.Read</span></span>    |
+|<span data-ttu-id="5ed95-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="5ed95-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5ed95-113">People.Read</span><span class="sxs-lookup"><span data-stu-id="5ed95-113">People.Read</span></span>    |
+|<span data-ttu-id="5ed95-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="5ed95-114">Application</span></span> | <span data-ttu-id="5ed95-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="5ed95-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c802a-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="c802a-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5ed95-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="5ed95-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,47 +36,47 @@ GET /me/people
 GET /users/{id | userPrincipalName}/people
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="c802a-117">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="c802a-117">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="5ed95-117">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="5ed95-117">Optional query parameters</span></span>
 
-<span data-ttu-id="c802a-118">このメソッドは、応答をカスタマイズするために、次の OData クエリパラメーターをサポートします。</span><span class="sxs-lookup"><span data-stu-id="c802a-118">This method supports the following OData query parameters to help customize the response.</span></span>
+<span data-ttu-id="5ed95-118">このメソッドは、応答をカスタマイズするために、次の OData クエリパラメーターをサポートします。</span><span class="sxs-lookup"><span data-stu-id="5ed95-118">This method supports the following OData query parameters to help customize the response.</span></span>
 
-|<span data-ttu-id="c802a-119">名前</span><span class="sxs-lookup"><span data-stu-id="c802a-119">Name</span></span>|<span data-ttu-id="c802a-120">値</span><span class="sxs-lookup"><span data-stu-id="c802a-120">Value</span></span>|<span data-ttu-id="c802a-121">説明</span><span class="sxs-lookup"><span data-stu-id="c802a-121">Description</span></span>|
+|<span data-ttu-id="5ed95-119">名前</span><span class="sxs-lookup"><span data-stu-id="5ed95-119">Name</span></span>|<span data-ttu-id="5ed95-120">値</span><span class="sxs-lookup"><span data-stu-id="5ed95-120">Value</span></span>|<span data-ttu-id="5ed95-121">説明</span><span class="sxs-lookup"><span data-stu-id="5ed95-121">Description</span></span>|
 |:---------------|:--------|:-------|
-|<span data-ttu-id="c802a-122">$filter</span><span class="sxs-lookup"><span data-stu-id="c802a-122">$filter</span></span>|<span data-ttu-id="c802a-123">string</span><span class="sxs-lookup"><span data-stu-id="c802a-123">string</span></span>|<span data-ttu-id="c802a-124">応答を、指定した条件に等しいレコードを持つ人物のみに制限します。</span><span class="sxs-lookup"><span data-stu-id="c802a-124">Limits the response to only those people whose record contains the specified criteria.</span></span>|
-|<span data-ttu-id="c802a-125">$orderby</span><span class="sxs-lookup"><span data-stu-id="c802a-125">$orderby</span></span>|<span data-ttu-id="c802a-126">string</span><span class="sxs-lookup"><span data-stu-id="c802a-126">string</span></span>|<span data-ttu-id="c802a-127">既定では、応答に含まれる人物は、クエリとの関連性で並べ替えられます。</span><span class="sxs-lookup"><span data-stu-id="c802a-127">By default the people in the response are sorted by their relevance to your query.</span></span> <span data-ttu-id="c802a-128">応答に含まれる人物の順序は、*$orderby* パラメーターを使用することで変更できます。</span><span class="sxs-lookup"><span data-stu-id="c802a-128">You can change the order of the people in the response using the *$orderby* parameter.</span></span>|
-|<span data-ttu-id="c802a-129">$search</span><span class="sxs-lookup"><span data-stu-id="c802a-129">$search</span></span>|<span data-ttu-id="c802a-130">string</span><span class="sxs-lookup"><span data-stu-id="c802a-130">string</span></span>|<span data-ttu-id="c802a-131">名またはエイリアスで人物を検索します。</span><span class="sxs-lookup"><span data-stu-id="c802a-131">Search for people by name or alias.</span></span> <span data-ttu-id="c802a-132">ファジー マッチをサポートします。</span><span class="sxs-lookup"><span data-stu-id="c802a-132">Supports Fuzzy matching.</span></span> <span data-ttu-id="c802a-133">パラメーターは、サインインしたユーザーの関連人物を検索するためにのみ機能し、他のユーザーに関連する人物を検索するためには機能しません。</span><span class="sxs-lookup"><span data-stu-id="c802a-133">Parameter only works for searching the signed-in user's relevant people, not for searching people relevant to other users.</span></span> <span data-ttu-id="c802a-134">その人とのメール会話から抽出されたトピックに基づいて人を見つける `topic` キーワードもサポートします。</span><span class="sxs-lookup"><span data-stu-id="c802a-134">Also supports the `topic` keyword to find people based on topics extracted from e-mail conversations with that person.</span></span> <span data-ttu-id="c802a-135">情報と例については、[関係者の情報を取得する](/graph/people-example#perform-a-fuzzy-search)の*あいまい検索の実行*セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="c802a-135">See the *Perform a fuzzy search* section at [Get relevant information about people](/graph/people-example#perform-a-fuzzy-search) for information and examples.</span></span>|
-|<span data-ttu-id="c802a-136">$select</span><span class="sxs-lookup"><span data-stu-id="c802a-136">$select</span></span>|<span data-ttu-id="c802a-137">string</span><span class="sxs-lookup"><span data-stu-id="c802a-137">string</span></span>|<span data-ttu-id="c802a-p104">応答に含めるプロパティを示すコンマ区切りのリスト。最適なパフォーマンスを得るには、必要なプロパティのサブセットのみを選択します。</span><span class="sxs-lookup"><span data-stu-id="c802a-p104">Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.</span></span>|
-|<span data-ttu-id="c802a-140">$skip</span><span class="sxs-lookup"><span data-stu-id="c802a-140">$skip</span></span>|<span data-ttu-id="c802a-141">int</span><span class="sxs-lookup"><span data-stu-id="c802a-141">int</span></span>|<span data-ttu-id="c802a-p105">最初の n 個の結果をスキップします。これはページングに役立ちます。これは *$search* の使用時にはサポートされません。</span><span class="sxs-lookup"><span data-stu-id="c802a-p105">Skip the first n results, useful for paging. This is not supported when using *$search*.</span></span>|
-|<span data-ttu-id="c802a-144">$top</span><span class="sxs-lookup"><span data-stu-id="c802a-144">$top</span></span>|<span data-ttu-id="c802a-145">int</span><span class="sxs-lookup"><span data-stu-id="c802a-145">int</span></span>|<span data-ttu-id="c802a-146">返される結果の数。</span><span class="sxs-lookup"><span data-stu-id="c802a-146">Number of results to be returned.</span></span>|
+|<span data-ttu-id="5ed95-122">$filter</span><span class="sxs-lookup"><span data-stu-id="5ed95-122">$filter</span></span>|<span data-ttu-id="5ed95-123">string</span><span class="sxs-lookup"><span data-stu-id="5ed95-123">string</span></span>|<span data-ttu-id="5ed95-124">応答を、指定した条件に等しいレコードを持つ人物のみに制限します。</span><span class="sxs-lookup"><span data-stu-id="5ed95-124">Limits the response to only those people whose record contains the specified criteria.</span></span>|
+|<span data-ttu-id="5ed95-125">$orderby</span><span class="sxs-lookup"><span data-stu-id="5ed95-125">$orderby</span></span>|<span data-ttu-id="5ed95-126">string</span><span class="sxs-lookup"><span data-stu-id="5ed95-126">string</span></span>|<span data-ttu-id="5ed95-127">既定では、応答に含まれる人物は、クエリとの関連性で並べ替えられます。</span><span class="sxs-lookup"><span data-stu-id="5ed95-127">By default the people in the response are sorted by their relevance to your query.</span></span> <span data-ttu-id="5ed95-128">応答に含まれる人物の順序は、*$orderby* パラメーターを使用することで変更できます。</span><span class="sxs-lookup"><span data-stu-id="5ed95-128">You can change the order of the people in the response using the *$orderby* parameter.</span></span>|
+|<span data-ttu-id="5ed95-129">$search</span><span class="sxs-lookup"><span data-stu-id="5ed95-129">$search</span></span>|<span data-ttu-id="5ed95-130">string</span><span class="sxs-lookup"><span data-stu-id="5ed95-130">string</span></span>|<span data-ttu-id="5ed95-131">名またはエイリアスで人物を検索します。</span><span class="sxs-lookup"><span data-stu-id="5ed95-131">Search for people by name or alias.</span></span> <span data-ttu-id="5ed95-132">ファジー マッチをサポートします。</span><span class="sxs-lookup"><span data-stu-id="5ed95-132">Supports Fuzzy matching.</span></span> <span data-ttu-id="5ed95-133">パラメーターは、サインインしたユーザーの関連人物を検索するためにのみ機能し、他のユーザーに関連する人物を検索するためには機能しません。</span><span class="sxs-lookup"><span data-stu-id="5ed95-133">Parameter only works for searching the signed-in user's relevant people, not for searching people relevant to other users.</span></span> <span data-ttu-id="5ed95-134">その人とのメール会話から抽出されたトピックに基づいて人を見つける `topic` キーワードもサポートします。</span><span class="sxs-lookup"><span data-stu-id="5ed95-134">Also supports the `topic` keyword to find people based on topics extracted from e-mail conversations with that person.</span></span> <span data-ttu-id="5ed95-135">情報と例については、[関係者の情報を取得する](/graph/people-example#perform-a-fuzzy-search)の*あいまい検索の実行*セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="5ed95-135">See the *Perform a fuzzy search* section at [Get relevant information about people](/graph/people-example#perform-a-fuzzy-search) for information and examples.</span></span>|
+|<span data-ttu-id="5ed95-136">$select</span><span class="sxs-lookup"><span data-stu-id="5ed95-136">$select</span></span>|<span data-ttu-id="5ed95-137">string</span><span class="sxs-lookup"><span data-stu-id="5ed95-137">string</span></span>|<span data-ttu-id="5ed95-p104">応答に含めるプロパティを示すコンマ区切りのリスト。最適なパフォーマンスを得るには、必要なプロパティのサブセットのみを選択します。</span><span class="sxs-lookup"><span data-stu-id="5ed95-p104">Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.</span></span>|
+|<span data-ttu-id="5ed95-140">$skip</span><span class="sxs-lookup"><span data-stu-id="5ed95-140">$skip</span></span>|<span data-ttu-id="5ed95-141">int</span><span class="sxs-lookup"><span data-stu-id="5ed95-141">int</span></span>|<span data-ttu-id="5ed95-p105">最初の n 個の結果をスキップします。これはページングに役立ちます。これは *$search* の使用時にはサポートされません。</span><span class="sxs-lookup"><span data-stu-id="5ed95-p105">Skip the first n results, useful for paging. This is not supported when using *$search*.</span></span>|
+|<span data-ttu-id="5ed95-144">$top</span><span class="sxs-lookup"><span data-stu-id="5ed95-144">$top</span></span>|<span data-ttu-id="5ed95-145">int</span><span class="sxs-lookup"><span data-stu-id="5ed95-145">int</span></span>|<span data-ttu-id="5ed95-146">返される結果の数。</span><span class="sxs-lookup"><span data-stu-id="5ed95-146">Number of results to be returned.</span></span>|
 
-## <a name="request-headers"></a><span data-ttu-id="c802a-147">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="c802a-147">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="5ed95-147">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="5ed95-147">Request headers</span></span>
 
-| <span data-ttu-id="c802a-148">名前</span><span class="sxs-lookup"><span data-stu-id="c802a-148">Name</span></span>      |<span data-ttu-id="c802a-149">説明</span><span class="sxs-lookup"><span data-stu-id="c802a-149">Description</span></span>|
+| <span data-ttu-id="5ed95-148">名前</span><span class="sxs-lookup"><span data-stu-id="5ed95-148">Name</span></span>      |<span data-ttu-id="5ed95-149">説明</span><span class="sxs-lookup"><span data-stu-id="5ed95-149">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="c802a-150">Authorization</span><span class="sxs-lookup"><span data-stu-id="c802a-150">Authorization</span></span>  | <span data-ttu-id="c802a-p106">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="c802a-p106">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="c802a-153">承諾</span><span class="sxs-lookup"><span data-stu-id="c802a-153">Accept</span></span> | <span data-ttu-id="c802a-154">application/json</span><span class="sxs-lookup"><span data-stu-id="c802a-154">application/json</span></span> |
+| <span data-ttu-id="5ed95-150">Authorization</span><span class="sxs-lookup"><span data-stu-id="5ed95-150">Authorization</span></span>  | <span data-ttu-id="5ed95-p106">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="5ed95-p106">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="5ed95-153">承諾</span><span class="sxs-lookup"><span data-stu-id="5ed95-153">Accept</span></span> | <span data-ttu-id="5ed95-154">application/json</span><span class="sxs-lookup"><span data-stu-id="5ed95-154">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="c802a-155">要求本文</span><span class="sxs-lookup"><span data-stu-id="c802a-155">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="5ed95-155">要求本文</span><span class="sxs-lookup"><span data-stu-id="5ed95-155">Request body</span></span>
 
-<span data-ttu-id="c802a-156">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="c802a-156">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="5ed95-156">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="5ed95-156">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c802a-157">応答</span><span class="sxs-lookup"><span data-stu-id="c802a-157">Response</span></span>
+## <a name="response"></a><span data-ttu-id="5ed95-157">応答</span><span class="sxs-lookup"><span data-stu-id="5ed95-157">Response</span></span>
 
-<span data-ttu-id="c802a-158">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[person](../resources/person.md)オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="c802a-158">If successful, this method returns a `200 OK` response code and a collection of [person](../resources/person.md) objects in the response body.</span></span>
+<span data-ttu-id="5ed95-158">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[person](../resources/person.md)オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="5ed95-158">If successful, this method returns a `200 OK` response code and a collection of [person](../resources/person.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="c802a-159">例</span><span class="sxs-lookup"><span data-stu-id="c802a-159">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="5ed95-159">例</span><span class="sxs-lookup"><span data-stu-id="5ed95-159">Examples</span></span>
 
-### <a name="browse"></a><span data-ttu-id="c802a-160">参照</span><span class="sxs-lookup"><span data-stu-id="c802a-160">Browse</span></span>
+### <a name="browse"></a><span data-ttu-id="5ed95-160">参照</span><span class="sxs-lookup"><span data-stu-id="5ed95-160">Browse</span></span>
 
-<span data-ttu-id="c802a-161">このセクションの要求は、コミュニケーション、コラボレーション、およびビジネスのリレーションシップに基づいて`/me`、サインインしているユーザーに最も関連のある人物を取得します ()。</span><span class="sxs-lookup"><span data-stu-id="c802a-161">The requests in this section get the people most relevant to the signed-in user (`/me`), based on communication, collaboration, and business relationships.</span></span>
+<span data-ttu-id="5ed95-161">このセクションの要求は、コミュニケーション、コラボレーション、およびビジネスのリレーションシップに基づいて`/me`、サインインしているユーザーに最も関連のある人物を取得します ()。</span><span class="sxs-lookup"><span data-stu-id="5ed95-161">The requests in this section get the people most relevant to the signed-in user (`/me`), based on communication, collaboration, and business relationships.</span></span>
 
-<span data-ttu-id="c802a-162">既定では、応答ごとに 10 件のレコードが返されます。ただし、$top パラメーターを使用することで、*これを変更*できます。</span><span class="sxs-lookup"><span data-stu-id="c802a-162">By default, each response returns 10 records, but you can change this using the *$top* parameter.</span></span> <span data-ttu-id="c802a-163">これらの要求には、ユーザーの読み取りアクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="c802a-163">These requests require the People.Read permission.</span></span>
+<span data-ttu-id="5ed95-162">既定では、応答ごとに 10 件のレコードが返されます。ただし、$top パラメーターを使用することで、*これを変更*できます。</span><span class="sxs-lookup"><span data-stu-id="5ed95-162">By default, each response returns 10 records, but you can change this using the *$top* parameter.</span></span> <span data-ttu-id="5ed95-163">これらの要求には、ユーザーの読み取りアクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="5ed95-163">These requests require the People.Read permission.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="c802a-164">要求</span><span class="sxs-lookup"><span data-stu-id="c802a-164">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="5ed95-164">要求</span><span class="sxs-lookup"><span data-stu-id="5ed95-164">Request</span></span>
 
-<span data-ttu-id="c802a-165">既定の要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="c802a-165">The following is an example of the default request.</span></span>
+<span data-ttu-id="5ed95-165">既定の要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="5ed95-165">The following is an example of the default request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="c802a-166">プロトコル</span><span class="sxs-lookup"><span data-stu-id="c802a-166">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="5ed95-166">プロトコル</span><span class="sxs-lookup"><span data-stu-id="5ed95-166">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_person_collection_beta"
@@ -85,25 +85,29 @@ GET /users/{id | userPrincipalName}/people
 ```http
 GET https://graph.microsoft.com/beta/me/people
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="c802a-167">C#</span><span class="sxs-lookup"><span data-stu-id="c802a-167">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="5ed95-167">C#</span><span class="sxs-lookup"><span data-stu-id="5ed95-167">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-person-collection-beta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="c802a-168">Javascript</span><span class="sxs-lookup"><span data-stu-id="c802a-168">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="5ed95-168">Javascript</span><span class="sxs-lookup"><span data-stu-id="5ed95-168">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-person-collection-beta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="c802a-169">目的-C</span><span class="sxs-lookup"><span data-stu-id="c802a-169">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="5ed95-169">目的-C</span><span class="sxs-lookup"><span data-stu-id="5ed95-169">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-person-collection-beta-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="5ed95-170">Java</span><span class="sxs-lookup"><span data-stu-id="5ed95-170">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-person-collection-beta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="c802a-170">応答</span><span class="sxs-lookup"><span data-stu-id="c802a-170">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="5ed95-171">応答</span><span class="sxs-lookup"><span data-stu-id="5ed95-171">Response</span></span>
 
-<span data-ttu-id="c802a-171">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="c802a-171">The following is an example of the response.</span></span>
-><span data-ttu-id="c802a-p108">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="c802a-p108">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="5ed95-172">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="5ed95-172">The following is an example of the response.</span></span>
+><span data-ttu-id="5ed95-p108">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="5ed95-p108">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -193,95 +197,95 @@ Content-length: 1326
 }
 ```
 
-#### <a name="requesting-a-subsequent-page-of-people"></a><span data-ttu-id="c802a-174">人物の続きのページの要求</span><span class="sxs-lookup"><span data-stu-id="c802a-174">Requesting a subsequent page of people</span></span>
+#### <a name="requesting-a-subsequent-page-of-people"></a><span data-ttu-id="5ed95-175">人物の続きのページの要求</span><span class="sxs-lookup"><span data-stu-id="5ed95-175">Requesting a subsequent page of people</span></span>
 
-<span data-ttu-id="c802a-p109">最初の応答に関連のある人物のリストを完全に含められない場合は、追加の情報ページを要求するために、*$top* と *$skip* を使用して 2 番目の要求を行うことができます。前の要求に追加情報が含まれている場合は、次の要求でサーバーから人物についての後続ページを取得します。</span><span class="sxs-lookup"><span data-stu-id="c802a-p109">If the first response does not contain the complete list of relevant people, you can make a second request using *$top* and *$skip* to request additional pages of information. If the previous request has additional information, the following request gets the next page of people from the server.</span></span>
+<span data-ttu-id="5ed95-p109">最初の応答に関連のある人物のリストを完全に含められない場合は、追加の情報ページを要求するために、*$top* と *$skip* を使用して 2 番目の要求を行うことができます。前の要求に追加情報が含まれている場合は、次の要求でサーバーから人物についての後続ページを取得します。</span><span class="sxs-lookup"><span data-stu-id="5ed95-p109">If the first response does not contain the complete list of relevant people, you can make a second request using *$top* and *$skip* to request additional pages of information. If the previous request has additional information, the following request gets the next page of people from the server.</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$top=10&$skip=10
 ```
 
-#### <a name="sort-the-response"></a><span data-ttu-id="c802a-177">応答の並べ替え</span><span class="sxs-lookup"><span data-stu-id="c802a-177">Sort the response</span></span>
+#### <a name="sort-the-response"></a><span data-ttu-id="5ed95-178">応答の並べ替え</span><span class="sxs-lookup"><span data-stu-id="5ed95-178">Sort the response</span></span>
 
-<span data-ttu-id="c802a-p110">既定では、応答に含まれる人物は、クエリとの関連性で並べ替えられます。 応答に含まれる人物の順序は、*$orderby* パラメーターを使用することで変更できます。 このクエリでは、自分に最も関連のある人物を選択し、その人物を表示名で並べ替えてから、最初の 10 人の人物を並べ替え済みのリストで返します。</span><span class="sxs-lookup"><span data-stu-id="c802a-p110">By default the people in the response are sorted by their relevance to your query. You can change the order of the people in the response using the *$orderby* parameter. This query selects the people most relevant to you, sorts them by their display name, and then returns the first 10 people on the sorted list.</span></span>
+<span data-ttu-id="5ed95-p110">既定では、応答に含まれる人物は、クエリとの関連性で並べ替えられます。 応答に含まれる人物の順序は、*$orderby* パラメーターを使用することで変更できます。 このクエリでは、自分に最も関連のある人物を選択し、その人物を表示名で並べ替えてから、最初の 10 人の人物を並べ替え済みのリストで返します。</span><span class="sxs-lookup"><span data-stu-id="5ed95-p110">By default the people in the response are sorted by their relevance to your query. You can change the order of the people in the response using the *$orderby* parameter. This query selects the people most relevant to you, sorts them by their display name, and then returns the first 10 people on the sorted list.</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$orderby=DisplayName
 ```
 
-#### <a name="changing-the-number-of-people-returned-and-the-fields-returned"></a><span data-ttu-id="c802a-181">返される人物の数と返されるフィールドの変更</span><span class="sxs-lookup"><span data-stu-id="c802a-181">Changing the number of people returned and the fields returned</span></span>
+#### <a name="changing-the-number-of-people-returned-and-the-fields-returned"></a><span data-ttu-id="5ed95-182">返される人物の数と返されるフィールドの変更</span><span class="sxs-lookup"><span data-stu-id="5ed95-182">Changing the number of people returned and the fields returned</span></span>
 
-<span data-ttu-id="c802a-182">応答で返される人物の数は、*$top* パラメーターを設定することで変更できます。</span><span class="sxs-lookup"><span data-stu-id="c802a-182">You can change the number of people returned in the response by setting the *$top* parameter.</span></span>
+<span data-ttu-id="5ed95-183">応答で返される人物の数は、*$top* パラメーターを設定することで変更できます。</span><span class="sxs-lookup"><span data-stu-id="5ed95-183">You can change the number of people returned in the response by setting the *$top* parameter.</span></span>
 
-<span data-ttu-id="c802a-183">次の例では、最も関連のある`/me`1000 ユーザーを要求します。</span><span class="sxs-lookup"><span data-stu-id="c802a-183">The following example requests the 1,000 people most relevant to `/me`.</span></span> <span data-ttu-id="c802a-184">また、この要求では、人物の表示名のみを要求することで、サーバーから返されるデータの量も制限しています。</span><span class="sxs-lookup"><span data-stu-id="c802a-184">The request also limits the amount of data sent back from the server by requesting only the display name of the person.</span></span>
+<span data-ttu-id="5ed95-184">次の例では、最も関連のある`/me`1000 ユーザーを要求します。</span><span class="sxs-lookup"><span data-stu-id="5ed95-184">The following example requests the 1,000 people most relevant to `/me`.</span></span> <span data-ttu-id="5ed95-185">また、この要求では、人物の表示名のみを要求することで、サーバーから返されるデータの量も制限しています。</span><span class="sxs-lookup"><span data-stu-id="5ed95-185">The request also limits the amount of data sent back from the server by requesting only the display name of the person.</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$top=1000&$select=DisplayName
 ```
 
-#### <a name="selecting-the-fields-to-return"></a><span data-ttu-id="c802a-185">返されるフィールドの選択</span><span class="sxs-lookup"><span data-stu-id="c802a-185">Selecting the fields to return</span></span>
+#### <a name="selecting-the-fields-to-return"></a><span data-ttu-id="5ed95-186">返されるフィールドの選択</span><span class="sxs-lookup"><span data-stu-id="5ed95-186">Selecting the fields to return</span></span>
 
-<span data-ttu-id="c802a-p112">サーバーから返されるデータの量は、1 つ以上のフィールドを選択する *$select* パラメーターを使用することで制限できます。*@odata.id* フィールドは常に返されます。</span><span class="sxs-lookup"><span data-stu-id="c802a-p112">You can limit the amount of data returned from the server by using the *$select* parameter to choose one or more fields. The *@odata.id* field is always returned.</span></span>
+<span data-ttu-id="5ed95-p112">サーバーから返されるデータの量は、1 つ以上のフィールドを選択する *$select* パラメーターを使用することで制限できます。*@odata.id* フィールドは常に返されます。</span><span class="sxs-lookup"><span data-stu-id="5ed95-p112">You can limit the amount of data returned from the server by using the *$select* parameter to choose one or more fields. The *@odata.id* field is always returned.</span></span>
 
-<span data-ttu-id="c802a-188">次に示す例では、最も関連のある 10 人の人物の *DisplayName* と *EmailAddress* に応答を制限します。</span><span class="sxs-lookup"><span data-stu-id="c802a-188">The following example limits the response to the *DisplayName* and *EmailAddress* of the 10 most relevant people.</span></span>
+<span data-ttu-id="5ed95-189">次に示す例では、最も関連のある 10 人の人物の *DisplayName* と *EmailAddress* に応答を制限します。</span><span class="sxs-lookup"><span data-stu-id="5ed95-189">The following example limits the response to the *DisplayName* and *EmailAddress* of the 10 most relevant people.</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$select=DisplayName,EmailAddresses
 ```
 
-#### <a name="using-a-filter-to-limit-the-response"></a><span data-ttu-id="c802a-189">フィルターを使用した応答の制限</span><span class="sxs-lookup"><span data-stu-id="c802a-189">Using a filter to limit the response</span></span>
+#### <a name="using-a-filter-to-limit-the-response"></a><span data-ttu-id="5ed95-190">フィルターを使用した応答の制限</span><span class="sxs-lookup"><span data-stu-id="5ed95-190">Using a filter to limit the response</span></span>
 
-<span data-ttu-id="c802a-190">*$filter* パラメーターを使用すると、指定した条件に等しいレコードを持つ人物のみに応答を制限できます。</span><span class="sxs-lookup"><span data-stu-id="c802a-190">You can use the *$filter* parameter to limit the response to only those people whose record contains the specified criteria.</span></span>
+<span data-ttu-id="5ed95-191">*$filter* パラメーターを使用すると、指定した条件に等しいレコードを持つ人物のみに応答を制限できます。</span><span class="sxs-lookup"><span data-stu-id="5ed95-191">You can use the *$filter* parameter to limit the response to only those people whose record contains the specified criteria.</span></span>
 
-<span data-ttu-id="c802a-191">次のクエリは、ソース "Directory" を持つユーザーに対する応答を制限します。</span><span class="sxs-lookup"><span data-stu-id="c802a-191">The following query limits the response to people with the source "Directory."</span></span>
+<span data-ttu-id="5ed95-192">次のクエリは、ソース "Directory" を持つユーザーに対する応答を制限します。</span><span class="sxs-lookup"><span data-stu-id="5ed95-192">The following query limits the response to people with the source "Directory."</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$filter=Sources/Any (source: source/Type  eq 'Directory')
 ```
 
-#### <a name="selecting-the-fields-to-return-in-a-filtered-response"></a><span data-ttu-id="c802a-192">フィルター処理された応答で返されるフィールドを選択する</span><span class="sxs-lookup"><span data-stu-id="c802a-192">Selecting the fields to return in a filtered response</span></span>
+#### <a name="selecting-the-fields-to-return-in-a-filtered-response"></a><span data-ttu-id="5ed95-193">フィルター処理された応答で返されるフィールドを選択する</span><span class="sxs-lookup"><span data-stu-id="5ed95-193">Selecting the fields to return in a filtered response</span></span>
 
-<span data-ttu-id="c802a-193">*$select* パラメーターと *$filter* パラメーターを組み合わせることで、ユーザーに関連のある人物のカスタム リストを作成し、アプリケーションで必要になるフィールドのみを取得できます。</span><span class="sxs-lookup"><span data-stu-id="c802a-193">You can combine the *$select* and *$filter* parameters to create a custom list of people relevant to the user and get only the fields that your application needs.</span></span>
+<span data-ttu-id="5ed95-194">*$select* パラメーターと *$filter* パラメーターを組み合わせることで、ユーザーに関連のある人物のカスタム リストを作成し、アプリケーションで必要になるフィールドのみを取得できます。</span><span class="sxs-lookup"><span data-stu-id="5ed95-194">You can combine the *$select* and *$filter* parameters to create a custom list of people relevant to the user and get only the fields that your application needs.</span></span>
 
-<span data-ttu-id="c802a-p113">次に示す例では、指定した名前と等しい表示名を持つ人物の *DisplayName* と *EmailAddress* を取得します。 この例では、表示名が "Nestor Kellum" と等しい人物のみが返されます。</span><span class="sxs-lookup"><span data-stu-id="c802a-p113">The following example gets the *DisplayName* and *EmailAddress* of people whose display name equals the specified name. In this example, only people whose display name equals "Nestor Kellum" are returned.</span></span>
+<span data-ttu-id="5ed95-p113">次に示す例では、指定した名前と等しい表示名を持つ人物の *DisplayName* と *EmailAddress* を取得します。 この例では、表示名が "Nestor Kellum" と等しい人物のみが返されます。</span><span class="sxs-lookup"><span data-stu-id="5ed95-p113">The following example gets the *DisplayName* and *EmailAddress* of people whose display name equals the specified name. In this example, only people whose display name equals "Nestor Kellum" are returned.</span></span>
 
 ```http
 +GET https://graph.microsoft.com/beta/me/people/?$select=DisplayName,EmailAddresses&$filter=DisplayName eq 'Nestor Kellum'
 ```
 
-### <a name="search-people"></a><span data-ttu-id="c802a-196">人物の検索</span><span class="sxs-lookup"><span data-stu-id="c802a-196">Search people</span></span>
+### <a name="search-people"></a><span data-ttu-id="5ed95-197">人物の検索</span><span class="sxs-lookup"><span data-stu-id="5ed95-197">Search people</span></span>
 
-<span data-ttu-id="c802a-197">このセクションの要求は、サインインしているユーザーに最も関連のある人物を`/me`取得することもできます ()。</span><span class="sxs-lookup"><span data-stu-id="c802a-197">The requests in this section also get the people most relevant to the signed-in user (`/me`).</span></span> <span data-ttu-id="c802a-198">検索要求には、ユーザーの読み取りアクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="c802a-198">Search requests require the People.Read permission.</span></span>
+<span data-ttu-id="5ed95-198">このセクションの要求は、サインインしているユーザーに最も関連のある人物を`/me`取得することもできます ()。</span><span class="sxs-lookup"><span data-stu-id="5ed95-198">The requests in this section also get the people most relevant to the signed-in user (`/me`).</span></span> <span data-ttu-id="5ed95-199">検索要求には、ユーザーの読み取りアクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="5ed95-199">Search requests require the People.Read permission.</span></span>
 
-#### <a name="using-search-to-select-people"></a><span data-ttu-id="c802a-199">検索による人物の選択</span><span class="sxs-lookup"><span data-stu-id="c802a-199">Using search to select people</span></span>
+#### <a name="using-search-to-select-people"></a><span data-ttu-id="5ed95-200">検索による人物の選択</span><span class="sxs-lookup"><span data-stu-id="5ed95-200">Using search to select people</span></span>
 
-<span data-ttu-id="c802a-200">*$search* パラメーターを使用して、特定の条件セットを満たす人物を選びます。</span><span class="sxs-lookup"><span data-stu-id="c802a-200">Use the *$search* parameter to select people who meet a particular set of criteria.</span></span>
+<span data-ttu-id="5ed95-201">*$search* パラメーターを使用して、特定の条件セットを満たす人物を選びます。</span><span class="sxs-lookup"><span data-stu-id="5ed95-201">Use the *$search* parameter to select people who meet a particular set of criteria.</span></span>
 
-<span data-ttu-id="c802a-201">次の検索クエリは、GivenName また`/me`は姓が "j" という文字で始まる人物を返します。</span><span class="sxs-lookup"><span data-stu-id="c802a-201">The following search query returns people relevant to `/me` whose GivenName or Surname begins with the letter "j".</span></span>
+<span data-ttu-id="5ed95-202">次の検索クエリは、GivenName また`/me`は姓が "j" という文字で始まる人物を返します。</span><span class="sxs-lookup"><span data-stu-id="5ed95-202">The following search query returns people relevant to `/me` whose GivenName or Surname begins with the letter "j".</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$search=j
 ```
 
-#### <a name="using-search-to-specify-a-relevant-topic"></a><span data-ttu-id="c802a-202">検索による関連するトピックの指定</span><span class="sxs-lookup"><span data-stu-id="c802a-202">Using search to specify a relevant topic</span></span>
+#### <a name="using-search-to-specify-a-relevant-topic"></a><span data-ttu-id="5ed95-203">検索による関連するトピックの指定</span><span class="sxs-lookup"><span data-stu-id="5ed95-203">Using search to specify a relevant topic</span></span>
 
-<span data-ttu-id="c802a-203">次の要求では、名前`/me`に "ma" が含まれていて、"機能の計画" と関連付けられている人物を返します。</span><span class="sxs-lookup"><span data-stu-id="c802a-203">The following request returns people relevant to `/me` whose name contains "ma" and who have an association with "feature planning."</span></span>
+<span data-ttu-id="5ed95-204">次の要求では、名前`/me`に "ma" が含まれていて、"機能の計画" と関連付けられている人物を返します。</span><span class="sxs-lookup"><span data-stu-id="5ed95-204">The following request returns people relevant to `/me` whose name contains "ma" and who have an association with "feature planning."</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$search="ma topic: feature planning"
 ```
 
-#### <a name="performing-a-fuzzy-search"></a><span data-ttu-id="c802a-204">あいまい検索の実行</span><span class="sxs-lookup"><span data-stu-id="c802a-204">Performing a fuzzy search</span></span>
+#### <a name="performing-a-fuzzy-search"></a><span data-ttu-id="5ed95-205">あいまい検索の実行</span><span class="sxs-lookup"><span data-stu-id="5ed95-205">Performing a fuzzy search</span></span>
 
-<span data-ttu-id="c802a-205">次に示す要求では、"Hermaini Hall" という名前の人物について検索を実行します。</span><span class="sxs-lookup"><span data-stu-id="c802a-205">The following request does a search for a person named "Hermaini Hall."</span></span> <span data-ttu-id="c802a-206">サインインしているユーザーに関連する "Herminia Hull" という名前の人物が存在するため、"Herminia Hull" の情報が返されます。</span><span class="sxs-lookup"><span data-stu-id="c802a-206">Because there is a person named "Herminia Hull" relevant to the signed-in user, the information for "Herminia Hull" is returned.</span></span>
+<span data-ttu-id="5ed95-206">次に示す要求では、"Hermaini Hall" という名前の人物について検索を実行します。</span><span class="sxs-lookup"><span data-stu-id="5ed95-206">The following request does a search for a person named "Hermaini Hall."</span></span> <span data-ttu-id="5ed95-207">サインインしているユーザーに関連する "Herminia Hull" という名前の人物が存在するため、"Herminia Hull" の情報が返されます。</span><span class="sxs-lookup"><span data-stu-id="5ed95-207">Because there is a person named "Herminia Hull" relevant to the signed-in user, the information for "Herminia Hull" is returned.</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$search="hermaini hall"
 ```
 
-### <a name="related-people"></a><span data-ttu-id="c802a-207">関連する人</span><span class="sxs-lookup"><span data-stu-id="c802a-207">Related people</span></span>
+### <a name="related-people"></a><span data-ttu-id="5ed95-208">関連する人</span><span class="sxs-lookup"><span data-stu-id="5ed95-208">Related people</span></span>
 
-<span data-ttu-id="c802a-208">次の要求は、ユーザーの組織内の他のユーザーに最も関連のある人物を取得します。</span><span class="sxs-lookup"><span data-stu-id="c802a-208">The following request gets the people most relevant to another person in the user's organization.</span></span> <span data-ttu-id="c802a-209">この要求には、ユーザーに対してすべてのアクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="c802a-209">This request requires the User.ReadBasic.All for People.Read.All permission.</span></span> <span data-ttu-id="c802a-210">この例では、Nestor Kellum の関連する人物が表示されます。</span><span class="sxs-lookup"><span data-stu-id="c802a-210">In this example, Nestor Kellum's relevant people are displayed.</span></span>
+<span data-ttu-id="5ed95-209">次の要求は、ユーザーの組織内の他のユーザーに最も関連のある人物を取得します。</span><span class="sxs-lookup"><span data-stu-id="5ed95-209">The following request gets the people most relevant to another person in the user's organization.</span></span> <span data-ttu-id="5ed95-210">この要求には、ユーザーに対してすべてのアクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="5ed95-210">This request requires the User.ReadBasic.All for People.Read.All permission.</span></span> <span data-ttu-id="5ed95-211">この例では、Nestor Kellum の関連する人物が表示されます。</span><span class="sxs-lookup"><span data-stu-id="5ed95-211">In this example, Nestor Kellum's relevant people are displayed.</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/users('nestork@contoso.com')/people/
