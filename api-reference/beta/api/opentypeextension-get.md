@@ -3,50 +3,50 @@ title: オープン拡張機能を取得する
 description: 名前または完全修飾名で識別されたオープン拡張機能 (openTypeExtension オブジェクト) を取得します。
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: ff1cd39be16bb4d97f5d2cd2fa69afe63e561cfe
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: ec0e75b9c72640888e27c78fa04c5c539237b58b
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35450542"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35878232"
 ---
-# <a name="get-open-extension"></a><span data-ttu-id="b0fd2-103">オープン拡張機能を取得する</span><span class="sxs-lookup"><span data-stu-id="b0fd2-103">Get open extension</span></span>
+# <a name="get-open-extension"></a><span data-ttu-id="cacea-103">オープン拡張機能を取得する</span><span class="sxs-lookup"><span data-stu-id="cacea-103">Get open extension</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b0fd2-104">名前または完全修飾名で識別されたオープン拡張機能 ([openTypeExtension](../resources/opentypeextension.md) オブジェクト) を取得します。</span><span class="sxs-lookup"><span data-stu-id="b0fd2-104">Get an open extension ([openTypeExtension](../resources/opentypeextension.md) object) identified by name or fully qualified name.</span></span>
+<span data-ttu-id="cacea-104">名前または完全修飾名で識別されたオープン拡張機能 ([openTypeExtension](../resources/opentypeextension.md) オブジェクト) を取得します。</span><span class="sxs-lookup"><span data-stu-id="cacea-104">Get an open extension ([openTypeExtension](../resources/opentypeextension.md) object) identified by name or fully qualified name.</span></span>
 
-<span data-ttu-id="b0fd2-105">次の表は、サポートされているリソース インスタンスからオープン拡張機能を取得できる 3 つのシナリオの一覧です。</span><span class="sxs-lookup"><span data-stu-id="b0fd2-105">The following table lists the three scenarios where you can get an open extension from a supported resource instance.</span></span>
+<span data-ttu-id="cacea-105">次の表は、サポートされているリソース インスタンスからオープン拡張機能を取得できる 3 つのシナリオの一覧です。</span><span class="sxs-lookup"><span data-stu-id="cacea-105">The following table lists the three scenarios where you can get an open extension from a supported resource instance.</span></span>
 
-|<span data-ttu-id="b0fd2-106">**GET シナリオ**</span><span class="sxs-lookup"><span data-stu-id="b0fd2-106">**GET scenario**</span></span>|<span data-ttu-id="b0fd2-107">**サポートされているリソース**</span><span class="sxs-lookup"><span data-stu-id="b0fd2-107">**Supported resources**</span></span>|<span data-ttu-id="b0fd2-108">**応答本文**</span><span class="sxs-lookup"><span data-stu-id="b0fd2-108">**Response body**</span></span>|
+|<span data-ttu-id="cacea-106">**GET シナリオ**</span><span class="sxs-lookup"><span data-stu-id="cacea-106">**GET scenario**</span></span>|<span data-ttu-id="cacea-107">**サポートされているリソース**</span><span class="sxs-lookup"><span data-stu-id="cacea-107">**Supported resources**</span></span>|<span data-ttu-id="cacea-108">**応答本文**</span><span class="sxs-lookup"><span data-stu-id="cacea-108">**Response body**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="b0fd2-109">既知のリソース インスタンスから特定の拡張機能を取得します。</span><span class="sxs-lookup"><span data-stu-id="b0fd2-109">Get a specific extension from a known resource instance.</span></span>| <span data-ttu-id="b0fd2-110">[管理単位](../resources/administrativeunit.md)、[デバイス](../resources/device.md)、[イベント](../resources/event.md)、[グループ](../resources/group.md)、[グループイベント](../resources/event.md)、[グループの投稿](../resources/post.md)、[メッセージ](../resources/message.md)、[組織](../resources/organization.md)、[個人用連絡先](../resources/contact.md)、[ユーザー](../resources/user.md)</span><span class="sxs-lookup"><span data-stu-id="b0fd2-110">[Administrative unit](../resources/administrativeunit.md), [device](../resources/device.md), [event](../resources/event.md), [group](../resources/group.md), [group event](../resources/event.md), [group post](../resources/post.md), [message](../resources/message.md), [organization](../resources/organization.md), [personal contact](../resources/contact.md), [user](../resources/user.md)</span></span> | <span data-ttu-id="b0fd2-111">オープン拡張機能のみ。</span><span class="sxs-lookup"><span data-stu-id="b0fd2-111">Open extension only.</span></span>|
-|<span data-ttu-id="b0fd2-112">特定の拡張機能で展開された既知のリソース インスタンスを取得します。</span><span class="sxs-lookup"><span data-stu-id="b0fd2-112">Get a known resource instance expanded with a specific extension.</span></span>|<span data-ttu-id="b0fd2-113">管理単位、デバイス、イベント、グループ、グループイベント、グループの投稿、メッセージ、組織、個人用連絡先、ユーザー</span><span class="sxs-lookup"><span data-stu-id="b0fd2-113">Administrative unit, device, event, group, group event, group post, message, organization, personal contact, user</span></span> |<span data-ttu-id="b0fd2-114">オープン拡張機能で展開されたリソース インスタンス。</span><span class="sxs-lookup"><span data-stu-id="b0fd2-114">A resource instance expanded with the open extension.</span></span>|
-|<span data-ttu-id="b0fd2-115">特定の拡張機能でリソース インスタンスを検索し、展開します。</span><span class="sxs-lookup"><span data-stu-id="b0fd2-115">Find and expand resource instances with a specific extension.</span></span> | <span data-ttu-id="b0fd2-116">イベント、グループ イベント、グループの投稿、メッセージ、個人用連絡先</span><span class="sxs-lookup"><span data-stu-id="b0fd2-116">Event, group event, group post, message, personal contact</span></span> |<span data-ttu-id="b0fd2-117">オープン拡張機能で展開されたリソース インスタンス。</span><span class="sxs-lookup"><span data-stu-id="b0fd2-117">Resource instances expanded with the open extension.</span></span>|
+|<span data-ttu-id="cacea-109">既知のリソース インスタンスから特定の拡張機能を取得します。</span><span class="sxs-lookup"><span data-stu-id="cacea-109">Get a specific extension from a known resource instance.</span></span>| <span data-ttu-id="cacea-110">[管理単位](../resources/administrativeunit.md)、[デバイス](../resources/device.md)、[イベント](../resources/event.md)、[グループ](../resources/group.md)、[グループイベント](../resources/event.md)、[グループの投稿](../resources/post.md)、[メッセージ](../resources/message.md)、[組織](../resources/organization.md)、[個人用連絡先](../resources/contact.md)、[ユーザー](../resources/user.md)</span><span class="sxs-lookup"><span data-stu-id="cacea-110">[Administrative unit](../resources/administrativeunit.md), [device](../resources/device.md), [event](../resources/event.md), [group](../resources/group.md), [group event](../resources/event.md), [group post](../resources/post.md), [message](../resources/message.md), [organization](../resources/organization.md), [personal contact](../resources/contact.md), [user](../resources/user.md)</span></span> | <span data-ttu-id="cacea-111">オープン拡張機能のみ。</span><span class="sxs-lookup"><span data-stu-id="cacea-111">Open extension only.</span></span>|
+|<span data-ttu-id="cacea-112">特定の拡張機能で展開された既知のリソース インスタンスを取得します。</span><span class="sxs-lookup"><span data-stu-id="cacea-112">Get a known resource instance expanded with a specific extension.</span></span>|<span data-ttu-id="cacea-113">管理単位、デバイス、イベント、グループ、グループイベント、グループの投稿、メッセージ、組織、個人用連絡先、ユーザー</span><span class="sxs-lookup"><span data-stu-id="cacea-113">Administrative unit, device, event, group, group event, group post, message, organization, personal contact, user</span></span> |<span data-ttu-id="cacea-114">オープン拡張機能で展開されたリソース インスタンス。</span><span class="sxs-lookup"><span data-stu-id="cacea-114">A resource instance expanded with the open extension.</span></span>|
+|<span data-ttu-id="cacea-115">特定の拡張機能でリソース インスタンスを検索し、展開します。</span><span class="sxs-lookup"><span data-stu-id="cacea-115">Find and expand resource instances with a specific extension.</span></span> | <span data-ttu-id="cacea-116">イベント、グループ イベント、グループの投稿、メッセージ、個人用連絡先</span><span class="sxs-lookup"><span data-stu-id="cacea-116">Event, group event, group post, message, personal contact</span></span> |<span data-ttu-id="cacea-117">オープン拡張機能で展開されたリソース インスタンス。</span><span class="sxs-lookup"><span data-stu-id="cacea-117">Resource instances expanded with the open extension.</span></span>|
 
-## <a name="permissions"></a><span data-ttu-id="b0fd2-118">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="b0fd2-118">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="cacea-118">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="cacea-118">Permissions</span></span>
 
-<span data-ttu-id="b0fd2-119">拡張機能を含むリソースおよび要求されたアクセス許可の種類（委任またはアプリケーション）に応じて、以下の表で指定されているアクセス許可が、このAPIを呼び出すために最低限必要な特権になります。</span><span class="sxs-lookup"><span data-stu-id="b0fd2-119">Depending on the resource that contains the extension and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API.</span></span> <span data-ttu-id="b0fd2-120">アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b0fd2-120">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="cacea-119">拡張機能を含むリソースおよび要求されたアクセス許可の種類（委任またはアプリケーション）に応じて、以下の表で指定されているアクセス許可が、このAPIを呼び出すために最低限必要な特権になります。</span><span class="sxs-lookup"><span data-stu-id="cacea-119">Depending on the resource that contains the extension and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API.</span></span> <span data-ttu-id="cacea-120">アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="cacea-120">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="b0fd2-121">サポートされているリソース</span><span class="sxs-lookup"><span data-stu-id="b0fd2-121">Supported resource</span></span> | <span data-ttu-id="b0fd2-122">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="b0fd2-122">Delegated (work or school account)</span></span> | <span data-ttu-id="b0fd2-123">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="b0fd2-123">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b0fd2-124">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="b0fd2-124">Application</span></span> |
+| <span data-ttu-id="cacea-121">サポートされているリソース</span><span class="sxs-lookup"><span data-stu-id="cacea-121">Supported resource</span></span> | <span data-ttu-id="cacea-122">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="cacea-122">Delegated (work or school account)</span></span> | <span data-ttu-id="cacea-123">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="cacea-123">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cacea-124">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="cacea-124">Application</span></span> |
 |:-----|:-----|:-----|:-----|
-| [<span data-ttu-id="b0fd2-125">device</span><span class="sxs-lookup"><span data-stu-id="b0fd2-125">device</span></span>](../resources/device.md) | <span data-ttu-id="b0fd2-126">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="b0fd2-126">Directory.Read.All</span></span> | <span data-ttu-id="b0fd2-127">非サポート</span><span class="sxs-lookup"><span data-stu-id="b0fd2-127">Not supported</span></span> | <span data-ttu-id="b0fd2-128">Device.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b0fd2-128">Device.ReadWrite.All</span></span> |
-| [<span data-ttu-id="b0fd2-129">event</span><span class="sxs-lookup"><span data-stu-id="b0fd2-129">event</span></span>](../resources/event.md) | <span data-ttu-id="b0fd2-130">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="b0fd2-130">Calendars.Read</span></span> | <span data-ttu-id="b0fd2-131">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="b0fd2-131">Calendars.Read</span></span> | <span data-ttu-id="b0fd2-132">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="b0fd2-132">Calendars.Read</span></span> |
-| [<span data-ttu-id="b0fd2-133">グループ</span><span class="sxs-lookup"><span data-stu-id="b0fd2-133">group</span></span>](../resources/group.md) | <span data-ttu-id="b0fd2-134">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="b0fd2-134">Group.Read.All</span></span> | <span data-ttu-id="b0fd2-135">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="b0fd2-135">Not supported</span></span> | <span data-ttu-id="b0fd2-136">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="b0fd2-136">Group.Read.All</span></span> |
-| [<span data-ttu-id="b0fd2-137">グループ イベント</span><span class="sxs-lookup"><span data-stu-id="b0fd2-137">group event</span></span>](../resources/event.md) | <span data-ttu-id="b0fd2-138">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="b0fd2-138">Group.Read.All</span></span> | <span data-ttu-id="b0fd2-139">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="b0fd2-139">Not supported</span></span> | <span data-ttu-id="b0fd2-140">非サポート</span><span class="sxs-lookup"><span data-stu-id="b0fd2-140">Not supported</span></span> |
-| [<span data-ttu-id="b0fd2-141">グループの投稿</span><span class="sxs-lookup"><span data-stu-id="b0fd2-141">group post</span></span>](../resources/post.md) | <span data-ttu-id="b0fd2-142">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="b0fd2-142">Group.Read.All</span></span> | <span data-ttu-id="b0fd2-143">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="b0fd2-143">Not supported</span></span> | <span data-ttu-id="b0fd2-144">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="b0fd2-144">Group.Read.All</span></span> |
-| [<span data-ttu-id="b0fd2-145">message</span><span class="sxs-lookup"><span data-stu-id="b0fd2-145">message</span></span>](../resources/message.md) | <span data-ttu-id="b0fd2-146">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="b0fd2-146">Mail.Read</span></span> | <span data-ttu-id="b0fd2-147">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="b0fd2-147">Mail.Read</span></span> | <span data-ttu-id="b0fd2-148">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="b0fd2-148">Mail.Read</span></span> | 
-| [<span data-ttu-id="b0fd2-149">組織</span><span class="sxs-lookup"><span data-stu-id="b0fd2-149">organization</span></span>](../resources/organization.md) | <span data-ttu-id="b0fd2-150">User.Read</span><span class="sxs-lookup"><span data-stu-id="b0fd2-150">User.Read</span></span> | <span data-ttu-id="b0fd2-151">非サポート</span><span class="sxs-lookup"><span data-stu-id="b0fd2-151">Not supported</span></span> | <span data-ttu-id="b0fd2-152">非サポート</span><span class="sxs-lookup"><span data-stu-id="b0fd2-152">Not supported</span></span> |
-| [<span data-ttu-id="b0fd2-153">個人用連絡先</span><span class="sxs-lookup"><span data-stu-id="b0fd2-153">personal contact</span></span>](../resources/contact.md) | <span data-ttu-id="b0fd2-154">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="b0fd2-154">Contacts.Read</span></span> | <span data-ttu-id="b0fd2-155">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="b0fd2-155">Contacts.Read</span></span> | <span data-ttu-id="b0fd2-156">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="b0fd2-156">Contacts.Read</span></span> |
-| [<span data-ttu-id="b0fd2-157">ユーザー</span><span class="sxs-lookup"><span data-stu-id="b0fd2-157">user</span></span>](../resources/user.md) | <span data-ttu-id="b0fd2-158">User.Read</span><span class="sxs-lookup"><span data-stu-id="b0fd2-158">User.Read</span></span> | <span data-ttu-id="b0fd2-159">User.Read</span><span class="sxs-lookup"><span data-stu-id="b0fd2-159">User.Read</span></span> | <span data-ttu-id="b0fd2-160">User.Read.All</span><span class="sxs-lookup"><span data-stu-id="b0fd2-160">User.Read.All</span></span> |
+| [<span data-ttu-id="cacea-125">device</span><span class="sxs-lookup"><span data-stu-id="cacea-125">device</span></span>](../resources/device.md) | <span data-ttu-id="cacea-126">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="cacea-126">Directory.Read.All</span></span> | <span data-ttu-id="cacea-127">非サポート</span><span class="sxs-lookup"><span data-stu-id="cacea-127">Not supported</span></span> | <span data-ttu-id="cacea-128">Device.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cacea-128">Device.ReadWrite.All</span></span> |
+| [<span data-ttu-id="cacea-129">event</span><span class="sxs-lookup"><span data-stu-id="cacea-129">event</span></span>](../resources/event.md) | <span data-ttu-id="cacea-130">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="cacea-130">Calendars.Read</span></span> | <span data-ttu-id="cacea-131">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="cacea-131">Calendars.Read</span></span> | <span data-ttu-id="cacea-132">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="cacea-132">Calendars.Read</span></span> |
+| [<span data-ttu-id="cacea-133">グループ</span><span class="sxs-lookup"><span data-stu-id="cacea-133">group</span></span>](../resources/group.md) | <span data-ttu-id="cacea-134">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="cacea-134">Group.Read.All</span></span> | <span data-ttu-id="cacea-135">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="cacea-135">Not supported</span></span> | <span data-ttu-id="cacea-136">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="cacea-136">Group.Read.All</span></span> |
+| [<span data-ttu-id="cacea-137">グループ イベント</span><span class="sxs-lookup"><span data-stu-id="cacea-137">group event</span></span>](../resources/event.md) | <span data-ttu-id="cacea-138">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="cacea-138">Group.Read.All</span></span> | <span data-ttu-id="cacea-139">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="cacea-139">Not supported</span></span> | <span data-ttu-id="cacea-140">非サポート</span><span class="sxs-lookup"><span data-stu-id="cacea-140">Not supported</span></span> |
+| [<span data-ttu-id="cacea-141">グループの投稿</span><span class="sxs-lookup"><span data-stu-id="cacea-141">group post</span></span>](../resources/post.md) | <span data-ttu-id="cacea-142">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="cacea-142">Group.Read.All</span></span> | <span data-ttu-id="cacea-143">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="cacea-143">Not supported</span></span> | <span data-ttu-id="cacea-144">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="cacea-144">Group.Read.All</span></span> |
+| [<span data-ttu-id="cacea-145">message</span><span class="sxs-lookup"><span data-stu-id="cacea-145">message</span></span>](../resources/message.md) | <span data-ttu-id="cacea-146">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="cacea-146">Mail.Read</span></span> | <span data-ttu-id="cacea-147">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="cacea-147">Mail.Read</span></span> | <span data-ttu-id="cacea-148">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="cacea-148">Mail.Read</span></span> | 
+| [<span data-ttu-id="cacea-149">組織</span><span class="sxs-lookup"><span data-stu-id="cacea-149">organization</span></span>](../resources/organization.md) | <span data-ttu-id="cacea-150">User.Read</span><span class="sxs-lookup"><span data-stu-id="cacea-150">User.Read</span></span> | <span data-ttu-id="cacea-151">非サポート</span><span class="sxs-lookup"><span data-stu-id="cacea-151">Not supported</span></span> | <span data-ttu-id="cacea-152">非サポート</span><span class="sxs-lookup"><span data-stu-id="cacea-152">Not supported</span></span> |
+| [<span data-ttu-id="cacea-153">個人用連絡先</span><span class="sxs-lookup"><span data-stu-id="cacea-153">personal contact</span></span>](../resources/contact.md) | <span data-ttu-id="cacea-154">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="cacea-154">Contacts.Read</span></span> | <span data-ttu-id="cacea-155">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="cacea-155">Contacts.Read</span></span> | <span data-ttu-id="cacea-156">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="cacea-156">Contacts.Read</span></span> |
+| [<span data-ttu-id="cacea-157">ユーザー</span><span class="sxs-lookup"><span data-stu-id="cacea-157">user</span></span>](../resources/user.md) | <span data-ttu-id="cacea-158">User.Read</span><span class="sxs-lookup"><span data-stu-id="cacea-158">User.Read</span></span> | <span data-ttu-id="cacea-159">User.Read</span><span class="sxs-lookup"><span data-stu-id="cacea-159">User.Read</span></span> | <span data-ttu-id="cacea-160">User.Read.All</span><span class="sxs-lookup"><span data-stu-id="cacea-160">User.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="b0fd2-161">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="b0fd2-161">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="cacea-161">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="cacea-161">HTTP request</span></span>
 
-<span data-ttu-id="b0fd2-162">このセクションでは、前述の 3 つの `GET` シナリオの構文について説明します。</span><span class="sxs-lookup"><span data-stu-id="b0fd2-162">This section lists the syntax for each of the three `GET` scenarios described above.</span></span>
+<span data-ttu-id="cacea-162">このセクションでは、前述の 3 つの `GET` シナリオの構文について説明します。</span><span class="sxs-lookup"><span data-stu-id="cacea-162">This section lists the syntax for each of the three `GET` scenarios described above.</span></span>
 
-### <a name="get-a-specific-extension-in-a-known-resource-instance"></a><span data-ttu-id="b0fd2-163">既知のリソース インスタンス内の特定の拡張機能を取得する</span><span class="sxs-lookup"><span data-stu-id="b0fd2-163">Get a specific extension in a known resource instance</span></span>
+### <a name="get-a-specific-extension-in-a-known-resource-instance"></a><span data-ttu-id="cacea-163">既知のリソース インスタンス内の特定の拡張機能を取得する</span><span class="sxs-lookup"><span data-stu-id="cacea-163">Get a specific extension in a known resource instance</span></span>
 
-<span data-ttu-id="b0fd2-164">リソース インスタンスを取得するのと同じ REST 要求を使用し、そのインスタンスの **extensions** ナビゲーション プロパティを使用して拡張機能を識別します。</span><span class="sxs-lookup"><span data-stu-id="b0fd2-164">Use the same REST request as getting the resource instance, and identify the extension using the **extensions** navigation property of that instance.</span></span>
+<span data-ttu-id="cacea-164">リソース インスタンスを取得するのと同じ REST 要求を使用し、そのインスタンスの **extensions** ナビゲーション プロパティを使用して拡張機能を識別します。</span><span class="sxs-lookup"><span data-stu-id="cacea-164">Use the same REST request as getting the resource instance, and identify the extension using the **extensions** navigation property of that instance.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -62,9 +62,9 @@ GET /users/{Id|userPrincipalName}/contacts/{Id}/extensions/{extensionId}
 GET /users/{Id|userPrincipalName}/extensions/{extensionId}
 ```
 
-### <a name="get-a-known-resource-instance-expanded-with-a-matching-extension"></a><span data-ttu-id="b0fd2-165">一致する拡張機能で展開された既知のリソース インスタンスを取得する</span><span class="sxs-lookup"><span data-stu-id="b0fd2-165">Get a known resource instance expanded with a matching extension</span></span> 
+### <a name="get-a-known-resource-instance-expanded-with-a-matching-extension"></a><span data-ttu-id="cacea-165">一致する拡張機能で展開された既知のリソース インスタンスを取得する</span><span class="sxs-lookup"><span data-stu-id="cacea-165">Get a known resource instance expanded with a matching extension</span></span> 
 
-<span data-ttu-id="b0fd2-166">イベント、グループ イベント、グループの投稿、メッセージ、個人用連絡先のリソースの種類に関しては、リソース インスタンスを取得するのと同じ REST 要求を使用して、そのインスタンスの **id** プロパティのフィルターに一致する拡張機能を検索し、拡張機能でインスタンスを展開できます。</span><span class="sxs-lookup"><span data-stu-id="b0fd2-166">For the event, group event, group post, message, personal contact resource types, you can use the same REST request as getting the resource instance, look for an extension that matches a filter on its **id** property, and expand the instance with the extension.</span></span> <span data-ttu-id="b0fd2-167">応答には、リソース プロパティのほとんどが含まれています。</span><span class="sxs-lookup"><span data-stu-id="b0fd2-167">The response includes most of the resource properties.</span></span>
+<span data-ttu-id="cacea-166">イベント、グループ イベント、グループの投稿、メッセージ、個人用連絡先のリソースの種類に関しては、リソース インスタンスを取得するのと同じ REST 要求を使用して、そのインスタンスの **id** プロパティのフィルターに一致する拡張機能を検索し、拡張機能でインスタンスを展開できます。</span><span class="sxs-lookup"><span data-stu-id="cacea-166">For the event, group event, group post, message, personal contact resource types, you can use the same REST request as getting the resource instance, look for an extension that matches a filter on its **id** property, and expand the instance with the extension.</span></span> <span data-ttu-id="cacea-167">応答には、リソース プロパティのほとんどが含まれています。</span><span class="sxs-lookup"><span data-stu-id="cacea-167">The response includes most of the resource properties.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -76,7 +76,7 @@ GET /users/{Id|userPrincipalName}/contacts/{Id}?$expand=extensions($filter=id eq
 ```
 
 
-<span data-ttu-id="b0fd2-168">デバイス、グループ、組織、ユーザーのリソースの種類に関しては、リソース インスタンスから **id** プロパティやその他のプロパティを含めるために、`$select` パラメーターを使用する必要もあります。</span><span class="sxs-lookup"><span data-stu-id="b0fd2-168">For the device, group, organization, and user resource types, you must also use a `$select` parameter to include the **id** property and any other properties you want from the resource instance:</span></span>
+<span data-ttu-id="cacea-168">デバイス、グループ、組織、ユーザーのリソースの種類に関しては、リソース インスタンスから **id** プロパティやその他のプロパティを含めるために、`$select` パラメーターを使用する必要もあります。</span><span class="sxs-lookup"><span data-stu-id="cacea-168">For the device, group, organization, and user resource types, you must also use a `$select` parameter to include the **id** property and any other properties you want from the resource instance:</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -87,9 +87,9 @@ GET /users/{Id|userPrincipalName}?$expand=extensions($filter=id eq '{extensionId
 ```
 
 
-### <a name="filter-for-resource-instances-expanded-with-a-matching-extension"></a><span data-ttu-id="b0fd2-169">一致する拡張機能で展開されたリソース インスタンスにフィルターをかける</span><span class="sxs-lookup"><span data-stu-id="b0fd2-169">Filter for resource instances expanded with a matching extension</span></span> 
+### <a name="filter-for-resource-instances-expanded-with-a-matching-extension"></a><span data-ttu-id="cacea-169">一致する拡張機能で展開されたリソース インスタンスにフィルターをかける</span><span class="sxs-lookup"><span data-stu-id="cacea-169">Filter for resource instances expanded with a matching extension</span></span> 
 
-<span data-ttu-id="b0fd2-170">サポートされているリソースのコレクションを取得するのと同じ REST 要求を使用して、対応する **id** プロパティの拡張機能を含むインスタンスのコレクションにフィルターをかけ、拡張機能でこれらのインスタンスを展開します。</span><span class="sxs-lookup"><span data-stu-id="b0fd2-170">Use the same REST request as getting a collection of the supported resource, filter the collection for instances that contain an extension with a matching **id** property, and expand these instances with the extension.</span></span>
+<span data-ttu-id="cacea-170">サポートされているリソースのコレクションを取得するのと同じ REST 要求を使用して、対応する **id** プロパティの拡張機能を含むインスタンスのコレクションにフィルターをかけ、拡張機能でこれらのインスタンスを展開します。</span><span class="sxs-lookup"><span data-stu-id="cacea-170">Use the same REST request as getting a collection of the supported resource, filter the collection for instances that contain an extension with a matching **id** property, and expand these instances with the extension.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -100,46 +100,46 @@ GET /users/{Id|userPrincipalName}/messages?$filter=Extensions/any(f:f/id eq '{ex
 GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 ```
 
-><span data-ttu-id="b0fd2-p103">**注:** 上記の構文は、拡張機能の取得元となるリソース インスタンスまたはコレクションを特定する一般的な方法を示しています。こうしたリソース インスタンスまたはコレクションを特定するために使用できる他の構文すべても、同様の方法でオープン拡張機能を取得できます。</span><span class="sxs-lookup"><span data-stu-id="b0fd2-p103">**Note:** The above syntax shows some common ways to identify a resource instance or collection, in order to get an extension from it. All other syntax that allows you to identify these resource instances or collections supports getting open extensions from them in a similar way.</span></span>
+><span data-ttu-id="cacea-p103">**注:** 上記の構文は、拡張機能の取得元となるリソース インスタンスまたはコレクションを特定する一般的な方法を示しています。こうしたリソース インスタンスまたはコレクションを特定するために使用できる他の構文すべても、同様の方法でオープン拡張機能を取得できます。</span><span class="sxs-lookup"><span data-stu-id="cacea-p103">**Note:** The above syntax shows some common ways to identify a resource instance or collection, in order to get an extension from it. All other syntax that allows you to identify these resource instances or collections supports getting open extensions from them in a similar way.</span></span>
 
 
-## <a name="path-parameters"></a><span data-ttu-id="b0fd2-173">パス パラメーター</span><span class="sxs-lookup"><span data-stu-id="b0fd2-173">Path parameters</span></span>
-|<span data-ttu-id="b0fd2-174">**パラメーター**</span><span class="sxs-lookup"><span data-stu-id="b0fd2-174">**Parameter**</span></span>|<span data-ttu-id="b0fd2-175">**型**</span><span class="sxs-lookup"><span data-stu-id="b0fd2-175">**Type**</span></span>|<span data-ttu-id="b0fd2-176">**説明**</span><span class="sxs-lookup"><span data-stu-id="b0fd2-176">**Description**</span></span>|
+## <a name="path-parameters"></a><span data-ttu-id="cacea-173">パス パラメーター</span><span class="sxs-lookup"><span data-stu-id="cacea-173">Path parameters</span></span>
+|<span data-ttu-id="cacea-174">**パラメーター**</span><span class="sxs-lookup"><span data-stu-id="cacea-174">**Parameter**</span></span>|<span data-ttu-id="cacea-175">**型**</span><span class="sxs-lookup"><span data-stu-id="cacea-175">**Type**</span></span>|<span data-ttu-id="cacea-176">**説明**</span><span class="sxs-lookup"><span data-stu-id="cacea-176">**Description**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="b0fd2-177">ID</span><span class="sxs-lookup"><span data-stu-id="b0fd2-177">Id</span></span>|<span data-ttu-id="b0fd2-178">string</span><span class="sxs-lookup"><span data-stu-id="b0fd2-178">string</span></span>|<span data-ttu-id="b0fd2-p104">メッセージ、イベント、連絡先などの対応するコレクションに含まれるオブジェクトの一意識別子を格納するプレースホルダー。必須。**openTypeExtension** の **id** プロパティと混同しないこと。</span><span class="sxs-lookup"><span data-stu-id="b0fd2-p104">Placeholder for a unique identifier for an object in the corresponding collection such as messages, events, contacts. Required. Not to be confused with the **id** property of an **openTypeExtension**.</span></span>|
-|<span data-ttu-id="b0fd2-182">extensionId</span><span class="sxs-lookup"><span data-stu-id="b0fd2-182">extensionId</span></span>|<span data-ttu-id="b0fd2-183">string</span><span class="sxs-lookup"><span data-stu-id="b0fd2-183">string</span></span>|<span data-ttu-id="b0fd2-p105">拡張情報名を表すプレースホルダー。これは、拡張情報の一意のテキスト識別子であるか、拡張情報の種類と一意のテキスト識別子を連結した完全修飾名のいずれかです。完全修飾名は、拡張情報の作成時に **id** プロパティに入れて返されます。必須。</span><span class="sxs-lookup"><span data-stu-id="b0fd2-p105">Placeholder for an extension name which is a unique text identifier for an extension, or a fully qualified name which concatenates the extension type and unique text identifier. The fully qualified name is returned in the **id** property when you create the extension. Required.</span></span>|
+|<span data-ttu-id="cacea-177">ID</span><span class="sxs-lookup"><span data-stu-id="cacea-177">Id</span></span>|<span data-ttu-id="cacea-178">string</span><span class="sxs-lookup"><span data-stu-id="cacea-178">string</span></span>|<span data-ttu-id="cacea-p104">メッセージ、イベント、連絡先などの対応するコレクションに含まれるオブジェクトの一意識別子を格納するプレースホルダー。必須。**openTypeExtension** の **id** プロパティと混同しないこと。</span><span class="sxs-lookup"><span data-stu-id="cacea-p104">Placeholder for a unique identifier for an object in the corresponding collection such as messages, events, contacts. Required. Not to be confused with the **id** property of an **openTypeExtension**.</span></span>|
+|<span data-ttu-id="cacea-182">extensionId</span><span class="sxs-lookup"><span data-stu-id="cacea-182">extensionId</span></span>|<span data-ttu-id="cacea-183">string</span><span class="sxs-lookup"><span data-stu-id="cacea-183">string</span></span>|<span data-ttu-id="cacea-p105">拡張情報名を表すプレースホルダー。これは、拡張情報の一意のテキスト識別子であるか、拡張情報の種類と一意のテキスト識別子を連結した完全修飾名のいずれかです。完全修飾名は、拡張情報の作成時に **id** プロパティに入れて返されます。必須。</span><span class="sxs-lookup"><span data-stu-id="cacea-p105">Placeholder for an extension name which is a unique text identifier for an extension, or a fully qualified name which concatenates the extension type and unique text identifier. The fully qualified name is returned in the **id** property when you create the extension. Required.</span></span>|
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="b0fd2-187">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="b0fd2-187">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="cacea-187">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="cacea-187">Optional query parameters</span></span>
 
-<span data-ttu-id="b0fd2-188">`$filter` 文字列内のスペース文字には必ず [URL エンコード](https://www.w3schools.com/tags/ref_urlencode.asp)を適用してください。</span><span class="sxs-lookup"><span data-stu-id="b0fd2-188">Make sure you apply [URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the space characters in the `$filter` string.</span></span>
+<span data-ttu-id="cacea-188">`$filter` 文字列内のスペース文字には必ず [URL エンコード](https://www.w3schools.com/tags/ref_urlencode.asp)を適用してください。</span><span class="sxs-lookup"><span data-stu-id="cacea-188">Make sure you apply [URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the space characters in the `$filter` string.</span></span>
 
-|<span data-ttu-id="b0fd2-189">**名前**</span><span class="sxs-lookup"><span data-stu-id="b0fd2-189">**Name**</span></span>|<span data-ttu-id="b0fd2-190">**値**</span><span class="sxs-lookup"><span data-stu-id="b0fd2-190">**Value**</span></span>|<span data-ttu-id="b0fd2-191">**説明**</span><span class="sxs-lookup"><span data-stu-id="b0fd2-191">**Description**</span></span>|
+|<span data-ttu-id="cacea-189">**名前**</span><span class="sxs-lookup"><span data-stu-id="cacea-189">**Name**</span></span>|<span data-ttu-id="cacea-190">**値**</span><span class="sxs-lookup"><span data-stu-id="cacea-190">**Value**</span></span>|<span data-ttu-id="cacea-191">**説明**</span><span class="sxs-lookup"><span data-stu-id="cacea-191">**Description**</span></span>|
 |:---------------|:--------|:-------|
-|<span data-ttu-id="b0fd2-192">$filter</span><span class="sxs-lookup"><span data-stu-id="b0fd2-192">$filter</span></span>|<span data-ttu-id="b0fd2-193">string</span><span class="sxs-lookup"><span data-stu-id="b0fd2-193">string</span></span>|<span data-ttu-id="b0fd2-194">**id** が `extensionId` パラメーターの値と一致する拡張情報を返します。</span><span class="sxs-lookup"><span data-stu-id="b0fd2-194">Returns an extension with its **id** matching the `extensionId` parameter value.</span></span>|
-|<span data-ttu-id="b0fd2-195">$filter with **any** operator</span><span class="sxs-lookup"><span data-stu-id="b0fd2-195">$filter with **any** operator</span></span>|<span data-ttu-id="b0fd2-196">string</span><span class="sxs-lookup"><span data-stu-id="b0fd2-196">string</span></span>|<span data-ttu-id="b0fd2-197">**id** が `extensionId` パラメーターの値と一致する拡張情報を含むリソース コレクションのインスタンスを返します。</span><span class="sxs-lookup"><span data-stu-id="b0fd2-197">Returns instances of a resource collection that contain an extension with its **id** matching the `extensionId` parameter value.</span></span>|
-|<span data-ttu-id="b0fd2-198">$expand</span><span class="sxs-lookup"><span data-stu-id="b0fd2-198">$expand</span></span>|<span data-ttu-id="b0fd2-199">string</span><span class="sxs-lookup"><span data-stu-id="b0fd2-199">string</span></span>|<span data-ttu-id="b0fd2-200">リソース インスタンスを展開して、拡張情報を組み込みます。</span><span class="sxs-lookup"><span data-stu-id="b0fd2-200">Expands a resource instance to include an extension.</span></span> |
+|<span data-ttu-id="cacea-192">$filter</span><span class="sxs-lookup"><span data-stu-id="cacea-192">$filter</span></span>|<span data-ttu-id="cacea-193">string</span><span class="sxs-lookup"><span data-stu-id="cacea-193">string</span></span>|<span data-ttu-id="cacea-194">**id** が `extensionId` パラメーターの値と一致する拡張情報を返します。</span><span class="sxs-lookup"><span data-stu-id="cacea-194">Returns an extension with its **id** matching the `extensionId` parameter value.</span></span>|
+|<span data-ttu-id="cacea-195">$filter with **any** operator</span><span class="sxs-lookup"><span data-stu-id="cacea-195">$filter with **any** operator</span></span>|<span data-ttu-id="cacea-196">string</span><span class="sxs-lookup"><span data-stu-id="cacea-196">string</span></span>|<span data-ttu-id="cacea-197">**id** が `extensionId` パラメーターの値と一致する拡張情報を含むリソース コレクションのインスタンスを返します。</span><span class="sxs-lookup"><span data-stu-id="cacea-197">Returns instances of a resource collection that contain an extension with its **id** matching the `extensionId` parameter value.</span></span>|
+|<span data-ttu-id="cacea-198">$expand</span><span class="sxs-lookup"><span data-stu-id="cacea-198">$expand</span></span>|<span data-ttu-id="cacea-199">string</span><span class="sxs-lookup"><span data-stu-id="cacea-199">string</span></span>|<span data-ttu-id="cacea-200">リソース インスタンスを展開して、拡張情報を組み込みます。</span><span class="sxs-lookup"><span data-stu-id="cacea-200">Expands a resource instance to include an extension.</span></span> |
 
-## <a name="request-headers"></a><span data-ttu-id="b0fd2-201">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b0fd2-201">Request headers</span></span>
-| <span data-ttu-id="b0fd2-202">名前</span><span class="sxs-lookup"><span data-stu-id="b0fd2-202">Name</span></span>       | <span data-ttu-id="b0fd2-203">値</span><span class="sxs-lookup"><span data-stu-id="b0fd2-203">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="cacea-201">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="cacea-201">Request headers</span></span>
+| <span data-ttu-id="cacea-202">名前</span><span class="sxs-lookup"><span data-stu-id="cacea-202">Name</span></span>       | <span data-ttu-id="cacea-203">値</span><span class="sxs-lookup"><span data-stu-id="cacea-203">Value</span></span> |
 |:---------------|:----------|
-| <span data-ttu-id="b0fd2-204">Authorization</span><span class="sxs-lookup"><span data-stu-id="b0fd2-204">Authorization</span></span> | <span data-ttu-id="b0fd2-p106">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="b0fd2-p106">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="cacea-204">Authorization</span><span class="sxs-lookup"><span data-stu-id="cacea-204">Authorization</span></span> | <span data-ttu-id="cacea-p106">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="cacea-p106">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="b0fd2-207">要求本文</span><span class="sxs-lookup"><span data-stu-id="b0fd2-207">Request body</span></span>
-<span data-ttu-id="b0fd2-208">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="b0fd2-208">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="cacea-207">要求本文</span><span class="sxs-lookup"><span data-stu-id="cacea-207">Request body</span></span>
+<span data-ttu-id="cacea-208">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="cacea-208">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="b0fd2-209">応答</span><span class="sxs-lookup"><span data-stu-id="b0fd2-209">Response</span></span>
+## <a name="response"></a><span data-ttu-id="cacea-209">応答</span><span class="sxs-lookup"><span data-stu-id="cacea-209">Response</span></span>
 
-<span data-ttu-id="b0fd2-p107">成功した場合、このメソッドは応答本文で `200 OK` 応答コードと [openTypeExtension](../resources/opentypeextension.md) オブジェクトを返します。GET クエリに応じて、厳密な応答の本体は異なります。</span><span class="sxs-lookup"><span data-stu-id="b0fd2-p107">If successful, this method returns a `200 OK` response code and [openTypeExtension](../resources/opentypeextension.md) object in the response body. Depending on the GET query, the exact response body differs.</span></span>
-## <a name="example"></a><span data-ttu-id="b0fd2-212">例</span><span class="sxs-lookup"><span data-stu-id="b0fd2-212">Example</span></span>
+<span data-ttu-id="cacea-p107">成功した場合、このメソッドは応答本文で `200 OK` 応答コードと [openTypeExtension](../resources/opentypeextension.md) オブジェクトを返します。GET クエリに応じて、厳密な応答の本体は異なります。</span><span class="sxs-lookup"><span data-stu-id="cacea-p107">If successful, this method returns a `200 OK` response code and [openTypeExtension](../resources/opentypeextension.md) object in the response body. Depending on the GET query, the exact response body differs.</span></span>
+## <a name="example"></a><span data-ttu-id="cacea-212">例</span><span class="sxs-lookup"><span data-stu-id="cacea-212">Example</span></span>
 
-#### <a name="request-1"></a><span data-ttu-id="b0fd2-213">要求 1</span><span class="sxs-lookup"><span data-stu-id="b0fd2-213">Request 1</span></span>
+#### <a name="request-1"></a><span data-ttu-id="cacea-213">要求 1</span><span class="sxs-lookup"><span data-stu-id="cacea-213">Request 1</span></span>
 
-<span data-ttu-id="b0fd2-p108">最初の例では、拡張情報を参照する 2 通りの方法を示し、指定されたメッセージ内の拡張情報を取得します。応答は、拡張情報を参照するために使用する方法に関係なく、同じです。</span><span class="sxs-lookup"><span data-stu-id="b0fd2-p108">The first example shows 2 ways of referencing an extension and gets the extension in the specified message. The response is the same regardless of the way used to reference the extension.</span></span>
+<span data-ttu-id="cacea-p108">最初の例では、拡張情報を参照する 2 通りの方法を示し、指定されたメッセージ内の拡張情報を取得します。応答は、拡張情報を参照するために使用する方法に関係なく、同じです。</span><span class="sxs-lookup"><span data-stu-id="cacea-p108">The first example shows 2 ways of referencing an extension and gets the extension in the specified message. The response is the same regardless of the way used to reference the extension.</span></span>
 
-<span data-ttu-id="b0fd2-216">最初は、名前で参照します。</span><span class="sxs-lookup"><span data-stu-id="b0fd2-216">First, by its name:</span></span> 
+<span data-ttu-id="cacea-216">最初は、名前で参照します。</span><span class="sxs-lookup"><span data-stu-id="cacea-216">First, by its name:</span></span> 
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="b0fd2-217">プロトコル</span><span class="sxs-lookup"><span data-stu-id="b0fd2-217">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="cacea-217">プロトコル</span><span class="sxs-lookup"><span data-stu-id="cacea-217">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_opentypeextension_1"
@@ -147,30 +147,34 @@ GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{ex
 ```http
 GET https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl==='/extensions/Com.Contoso.Referral
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="b0fd2-218">C#</span><span class="sxs-lookup"><span data-stu-id="b0fd2-218">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="cacea-218">C#</span><span class="sxs-lookup"><span data-stu-id="cacea-218">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-opentypeextension-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b0fd2-219">Javascript</span><span class="sxs-lookup"><span data-stu-id="b0fd2-219">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="cacea-219">Javascript</span><span class="sxs-lookup"><span data-stu-id="cacea-219">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-opentypeextension-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="b0fd2-220">目的-C</span><span class="sxs-lookup"><span data-stu-id="b0fd2-220">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="cacea-220">目的-C</span><span class="sxs-lookup"><span data-stu-id="cacea-220">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-opentypeextension-1-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="cacea-221">Java</span><span class="sxs-lookup"><span data-stu-id="cacea-221">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-opentypeextension-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-<span data-ttu-id="b0fd2-221">次に、ID (完全修飾名) で参照します。</span><span class="sxs-lookup"><span data-stu-id="b0fd2-221">Second, by its ID (fully qualified name):</span></span>
+<span data-ttu-id="cacea-222">次に、ID (完全修飾名) で参照します。</span><span class="sxs-lookup"><span data-stu-id="cacea-222">Second, by its ID (fully qualified name):</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl==='/extensions/Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')
 ```
 
-#### <a name="response-1"></a><span data-ttu-id="b0fd2-222">応答 1</span><span class="sxs-lookup"><span data-stu-id="b0fd2-222">Response 1</span></span>
-<span data-ttu-id="b0fd2-223">最初の例の応答を次に示します。</span><span class="sxs-lookup"><span data-stu-id="b0fd2-223">Here is the response for the first example.</span></span>
+#### <a name="response-1"></a><span data-ttu-id="cacea-223">応答 1</span><span class="sxs-lookup"><span data-stu-id="cacea-223">Response 1</span></span>
+<span data-ttu-id="cacea-224">最初の例の応答を次に示します。</span><span class="sxs-lookup"><span data-stu-id="cacea-224">Here is the response for the first example.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,
@@ -196,12 +200,12 @@ Content-type: application/json
 ****
 
 
-#### <a name="request-2"></a><span data-ttu-id="b0fd2-224">要求 2</span><span class="sxs-lookup"><span data-stu-id="b0fd2-224">Request 2</span></span>
+#### <a name="request-2"></a><span data-ttu-id="cacea-225">要求 2</span><span class="sxs-lookup"><span data-stu-id="cacea-225">Request 2</span></span>
 
-<span data-ttu-id="b0fd2-225">2 番目の例では、名前で拡張情報を参照し、指定されたグループ イベント内の拡張情報を取得します。</span><span class="sxs-lookup"><span data-stu-id="b0fd2-225">The second example references an extension by its name and gets the extension in the specified group event.</span></span>
+<span data-ttu-id="cacea-226">2 番目の例では、名前で拡張情報を参照し、指定されたグループ イベント内の拡張情報を取得します。</span><span class="sxs-lookup"><span data-stu-id="cacea-226">The second example references an extension by its name and gets the extension in the specified group event.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="b0fd2-226">プロトコル</span><span class="sxs-lookup"><span data-stu-id="b0fd2-226">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="cacea-227">プロトコル</span><span class="sxs-lookup"><span data-stu-id="cacea-227">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_opentypeextension_2"
@@ -209,24 +213,28 @@ Content-type: application/json
 ```http
 GET https://graph.microsoft.com/beta/groups/f5480dfd-7d77-4d0b-ba2e-3391953cc74a/events/AAMkADVl17IsAAA=/extensions/Com.Contoso.Deal
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="b0fd2-227">C#</span><span class="sxs-lookup"><span data-stu-id="b0fd2-227">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="cacea-228">C#</span><span class="sxs-lookup"><span data-stu-id="cacea-228">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-opentypeextension-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b0fd2-228">Javascript</span><span class="sxs-lookup"><span data-stu-id="b0fd2-228">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="cacea-229">Javascript</span><span class="sxs-lookup"><span data-stu-id="cacea-229">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-opentypeextension-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="b0fd2-229">目的-C</span><span class="sxs-lookup"><span data-stu-id="b0fd2-229">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="cacea-230">目的-C</span><span class="sxs-lookup"><span data-stu-id="cacea-230">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-opentypeextension-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="cacea-231">Java</span><span class="sxs-lookup"><span data-stu-id="cacea-231">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-opentypeextension-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response-2"></a><span data-ttu-id="b0fd2-230">応答 2</span><span class="sxs-lookup"><span data-stu-id="b0fd2-230">Response 2</span></span>
+#### <a name="response-2"></a><span data-ttu-id="cacea-232">応答 2</span><span class="sxs-lookup"><span data-stu-id="cacea-232">Response 2</span></span>
 
-<span data-ttu-id="b0fd2-231">2 番目の例の応答を次に示します。</span><span class="sxs-lookup"><span data-stu-id="b0fd2-231">Here is the response from the second example.</span></span>
+<span data-ttu-id="cacea-233">2 番目の例の応答を次に示します。</span><span class="sxs-lookup"><span data-stu-id="cacea-233">Here is the response from the second example.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -250,12 +258,12 @@ Content-type: application/json
 
 ****
 
-#### <a name="request-3"></a><span data-ttu-id="b0fd2-232">要求 3</span><span class="sxs-lookup"><span data-stu-id="b0fd2-232">Request 3</span></span>
+#### <a name="request-3"></a><span data-ttu-id="cacea-234">要求 3</span><span class="sxs-lookup"><span data-stu-id="cacea-234">Request 3</span></span>
 
-<span data-ttu-id="b0fd2-p109">3 番目の例では、指定されたメッセージを取得し、フィルターから返された拡張情報を組み込んで展開します。このフィルターは、**id** が完全修飾名と一致する拡張情報を返します。</span><span class="sxs-lookup"><span data-stu-id="b0fd2-p109">The third example gets and expands the specified message by including the extension returned from a filter. The filter returns the extension that has its **id** matching a fully qualified name.</span></span>
+<span data-ttu-id="cacea-p109">3 番目の例では、指定されたメッセージを取得し、フィルターから返された拡張情報を組み込んで展開します。このフィルターは、**id** が完全修飾名と一致する拡張情報を返します。</span><span class="sxs-lookup"><span data-stu-id="cacea-p109">The third example gets and expands the specified message by including the extension returned from a filter. The filter returns the extension that has its **id** matching a fully qualified name.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="b0fd2-235">プロトコル</span><span class="sxs-lookup"><span data-stu-id="b0fd2-235">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="cacea-237">プロトコル</span><span class="sxs-lookup"><span data-stu-id="cacea-237">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_opentypeextension_3"
@@ -263,25 +271,29 @@ Content-type: application/json
 ```http
 GET https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/?$expand=extensions($filter=id%20eq%20'Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="b0fd2-236">C#</span><span class="sxs-lookup"><span data-stu-id="b0fd2-236">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="cacea-238">C#</span><span class="sxs-lookup"><span data-stu-id="cacea-238">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-opentypeextension-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b0fd2-237">Javascript</span><span class="sxs-lookup"><span data-stu-id="b0fd2-237">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="cacea-239">Javascript</span><span class="sxs-lookup"><span data-stu-id="cacea-239">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-opentypeextension-3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="b0fd2-238">目的-C</span><span class="sxs-lookup"><span data-stu-id="b0fd2-238">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="cacea-240">目的-C</span><span class="sxs-lookup"><span data-stu-id="cacea-240">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-opentypeextension-3-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="cacea-241">Java</span><span class="sxs-lookup"><span data-stu-id="cacea-241">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-opentypeextension-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
 
-#### <a name="response-3"></a><span data-ttu-id="b0fd2-239">応答 3</span><span class="sxs-lookup"><span data-stu-id="b0fd2-239">Response 3</span></span>
+#### <a name="response-3"></a><span data-ttu-id="cacea-242">応答 3</span><span class="sxs-lookup"><span data-stu-id="cacea-242">Response 3</span></span>
 
-<span data-ttu-id="b0fd2-p110">3 番目の例の応答を次に示します。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="b0fd2-p110">And here is the response from the third example. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="cacea-p110">3 番目の例の応答を次に示します。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="cacea-p110">And here is the response from the third example. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -363,12 +375,12 @@ Content-type: application/json
 
 ****
 
-#### <a name="request-4"></a><span data-ttu-id="b0fd2-243">要求 4</span><span class="sxs-lookup"><span data-stu-id="b0fd2-243">Request 4</span></span>
+#### <a name="request-4"></a><span data-ttu-id="cacea-246">要求 4</span><span class="sxs-lookup"><span data-stu-id="cacea-246">Request 4</span></span>
 
-<span data-ttu-id="b0fd2-244">4 番目の例では、完全修飾名で拡張情報を参照し、指定されたグループ投稿内の拡張情報を取得します。</span><span class="sxs-lookup"><span data-stu-id="b0fd2-244">The fourth example references an extension by its fully qualified name and gets the extension in the specified group post.</span></span>
+<span data-ttu-id="cacea-247">4 番目の例では、完全修飾名で拡張情報を参照し、指定されたグループ投稿内の拡張情報を取得します。</span><span class="sxs-lookup"><span data-stu-id="cacea-247">The fourth example references an extension by its fully qualified name and gets the extension in the specified group post.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="b0fd2-245">プロトコル</span><span class="sxs-lookup"><span data-stu-id="b0fd2-245">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="cacea-248">プロトコル</span><span class="sxs-lookup"><span data-stu-id="cacea-248">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_opentypeextension_4"
@@ -376,24 +388,28 @@ Content-type: application/json
 ```http
 GET https://graph.microsoft.com/beta/groups/37df2ff0-0de0-4c33-8aee-75289364aef6/threads/AAQkADJizZJpEWwqDHsEpV_KA==/posts/AAMkADJiUg96QZUkA-ICwMubAADDEd7UAAA=/extensions/Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="b0fd2-246">C#</span><span class="sxs-lookup"><span data-stu-id="b0fd2-246">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="cacea-249">C#</span><span class="sxs-lookup"><span data-stu-id="cacea-249">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-opentypeextension-4-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b0fd2-247">Javascript</span><span class="sxs-lookup"><span data-stu-id="b0fd2-247">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="cacea-250">Javascript</span><span class="sxs-lookup"><span data-stu-id="cacea-250">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-opentypeextension-4-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="b0fd2-248">目的-C</span><span class="sxs-lookup"><span data-stu-id="b0fd2-248">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="cacea-251">目的-C</span><span class="sxs-lookup"><span data-stu-id="cacea-251">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-opentypeextension-4-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="cacea-252">Java</span><span class="sxs-lookup"><span data-stu-id="cacea-252">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-opentypeextension-4-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response-4"></a><span data-ttu-id="b0fd2-249">応答 4</span><span class="sxs-lookup"><span data-stu-id="b0fd2-249">Response 4</span></span>
+#### <a name="response-4"></a><span data-ttu-id="cacea-253">応答 4</span><span class="sxs-lookup"><span data-stu-id="cacea-253">Response 4</span></span>
 
-<span data-ttu-id="b0fd2-250">4 番目の例の応答を次に示します。</span><span class="sxs-lookup"><span data-stu-id="b0fd2-250">Here is the response from the fourth example.</span></span> 
+<span data-ttu-id="cacea-254">4 番目の例の応答を次に示します。</span><span class="sxs-lookup"><span data-stu-id="cacea-254">Here is the response from the fourth example.</span></span> 
 
 <!-- {
   "blockType": "response",
@@ -421,9 +437,9 @@ Content-Type: application/json
 ```
 
 
-#### <a name="request-5"></a><span data-ttu-id="b0fd2-251">要求 5</span><span class="sxs-lookup"><span data-stu-id="b0fd2-251">Request 5</span></span>
+#### <a name="request-5"></a><span data-ttu-id="cacea-255">要求 5</span><span class="sxs-lookup"><span data-stu-id="cacea-255">Request 5</span></span>
 
-<span data-ttu-id="b0fd2-p111">5 番目の例では、サインインしているユーザーのメールボックス内のすべてのメッセージを参照して、フィルターと一致する拡張情報が含まれているメッセージを検出し、拡張情報を組み込んでそれらのメッセージを展開します。このフィルターは、拡張情報名 `Com.Contoso.Referral` と一致する **id** プロパティを持つ拡張情報を返します。</span><span class="sxs-lookup"><span data-stu-id="b0fd2-p111">The fifth example looks at all messages in the signed-in user's mailbox to find those that contain an extension matching a filter, and expands them by including the extension. The filter returns extensions that has the **id** property matching the extension name `Com.Contoso.Referral`.</span></span>
+<span data-ttu-id="cacea-p111">5 番目の例では、サインインしているユーザーのメールボックス内のすべてのメッセージを参照して、フィルターと一致する拡張情報が含まれているメッセージを検出し、拡張情報を組み込んでそれらのメッセージを展開します。このフィルターは、拡張情報名 `Com.Contoso.Referral` と一致する **id** プロパティを持つ拡張情報を返します。</span><span class="sxs-lookup"><span data-stu-id="cacea-p111">The fifth example looks at all messages in the signed-in user's mailbox to find those that contain an extension matching a filter, and expands them by including the extension. The filter returns extensions that has the **id** property matching the extension name `Com.Contoso.Referral`.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -434,11 +450,11 @@ GET https://graph.microsoft.com/beta/me/messages?$filter=Extensions/any(f:f/id%2
 ```
 
 
-#### <a name="response-5"></a><span data-ttu-id="b0fd2-254">応答 5</span><span class="sxs-lookup"><span data-stu-id="b0fd2-254">Response 5</span></span>
+#### <a name="response-5"></a><span data-ttu-id="cacea-258">応答 5</span><span class="sxs-lookup"><span data-stu-id="cacea-258">Response 5</span></span>
 
-<span data-ttu-id="b0fd2-255">5 番目の例のこの応答では、**id** が `Com.Contoso.Referral` である拡張情報が含まれているメッセージがユーザーのメールボックスに 1 つだけ存在します。</span><span class="sxs-lookup"><span data-stu-id="b0fd2-255">In this response for the fifth example, there is only one message in the user's mailbox that has an extension with its **id** equal to `Com.Contoso.Referral`.</span></span>
+<span data-ttu-id="cacea-259">5 番目の例のこの応答では、**id** が `Com.Contoso.Referral` である拡張情報が含まれているメッセージがユーザーのメールボックスに 1 つだけ存在します。</span><span class="sxs-lookup"><span data-stu-id="cacea-259">In this response for the fifth example, there is only one message in the user's mailbox that has an extension with its **id** equal to `Com.Contoso.Referral`.</span></span>
 
-<span data-ttu-id="b0fd2-p112">注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="b0fd2-p112">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="cacea-p112">注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="cacea-p112">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
