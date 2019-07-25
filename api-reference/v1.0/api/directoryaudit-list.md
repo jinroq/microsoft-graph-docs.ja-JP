@@ -4,12 +4,12 @@ description: Microsoft Graph API からの directoryAudit リソース (エン�
 localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a9de0f618fe4582af02e2202ef8ae529448a9838
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 52f67940086ea7e23331feb4addabeeffcd9d2c0
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35455981"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35880421"
 ---
 # <a name="list-directoryaudits"></a>directoryAudits を一覧表示する
 
@@ -19,15 +19,16 @@ Azure Active Directory によって生成された監査ログの一覧を取得
 
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
-|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
-|:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | 監査ログ。 all および All を参照してください。 |
-|委任 (個人用 Microsoft アカウント) | サポートされていません   |
-|アプリケーション | AuditLog.Read.All |
+| アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ) |
+| :------------------------------------- | :------------------------------------------ |
+| 委任 (職場または学校のアカウント)     | 監査ログ。 all および All を参照してください。    |
+| 委任 (個人用 Microsoft アカウント) | サポートされていません                               |
+| アプリケーション                            | AuditLog.Read.All                           |
 
 ## <a name="http-request"></a>HTTP 要求
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /auditLogs/directoryaudits
 ```
@@ -36,33 +37,33 @@ GET /auditLogs/directoryaudits
 
 このメソッドは、応答をカスタマイズするために、次の OData クエリパラメーターをサポートします。 これらのパラメーターを使用する方法の詳細については、[OData クエリ パラメーター](/graph/query_parameters)をご確認ください。
 
-|Name     |説明                            |例|
-|:--------------------|:----------------|:--------------------------------------|
-|[$filter](/graph/query_parameters#filter-parameter)|結果 (行) をフィルターします。 |`/auditLogs/directoryAudits?&$filter=createdDateTime le 2018-01-24`
-|[$top](/graph/query_parameters#top-parameter)|結果のページ サイズを設定します。|`/auditLogs/directoryAudits?$top=1`|
-|[$skiptoken](/graph/query_parameters#skiptoken-parameter)|複数ページにわたる結果セットから、結果の次のページを取得します。|`/auditLogs/directoryAudits?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
+| Name                                                       | 説明                                                                   | 例                                                                     |
+| :--------------------------------------------------------- | :---------------------------------------------------------------------------- | :-------------------------------------------------------------------------- |
+| [\$仕訳](/graph/query_parameters#filter-parameter)       | 結果 (行) をフィルターします。                                                       | `/auditLogs/directoryAudits?&$filter=createdDateTime le 2018-01-24`         |
+| [\$ページのトップへ](/graph/query_parameters#top-parameter)             | 結果のページ サイズを設定します。                                                | `/auditLogs/directoryAudits?$top=1`                                         |
+| [\$skiptoken](/graph/query_parameters#skiptoken-parameter) | 複数ページにわたる結果セットから、結果の次のページを取得します。 | `/auditLogs/directoryAudits?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1` |
 
-### <a name="attributes-supported-by-filter-parameter"></a>$Filter パラメーターでサポートされている属性
+### <a name="attributes-supported-by-filter-parameter"></a>Filter パラメーターで\$サポートされている属性
 
-|属性名 |サポートされる演算子|
-|:----------------|:------|
-|activityDisplayName| eq、startswith|
-|activityDateTime| eq、ge、le|
-|loggedByService|eq|
-|initiatedBy/user/id|eq|
-|initiatedBy/user/displayName| eq|
-|initiatedBy/user/userPrincipalName| eq、startswith|
-|initiatedBy/app/appId| eq|
-|initiatedBy/app/appDisplayName| eq|
-|targetResource/any (t: t/id eq ' {value} ')| eq|
-|targetResource/any (t: t/displayName eq ' {value} ') | eq |
-|targetResources/any (x: startswith (x/displayName, ' {value} '))| startswith|
+| 属性名                                               | サポートされる演算子 |
+| :----------------------------------------------------------- | :------------------ |
+| activityDisplayName                                          | eq、startswith      |
+| activityDateTime                                             | eq、ge、le          |
+| loggedByService                                              | eq                  |
+| initiatedBy/user/id                                          | eq                  |
+| initiatedBy/user/displayName                                 | eq                  |
+| initiatedBy/user/userPrincipalName                           | eq、startswith      |
+| initiatedBy/app/appId                                        | eq                  |
+| initiatedBy/app/appDisplayName                               | eq                  |
+| targetResources/any (t: t/id eq ' {value} ')                    | eq                  |
+| targetResources/any (t: t/displayName eq ' {value} ')            | eq                  |
+| targetResources/any (x: startswith (x/displayName, ' {value} ')) | startswith          |
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前      |説明|
-|:----------|:----------|
-| Authorization  | Bearer {code}|
+| 名前          | 説明   |
+| :------------ | :------------ |
+| Authorization | Bearer {code} |
 
 ## <a name="request-body"></a>要求本文
 
@@ -84,6 +85,7 @@ GET /auditLogs/directoryaudits
   "blockType": "request",
   "name": "get_directoryaudit"
 }-->
+
 ```http
 GET https://graph.microsoft.com/v1.0/auditLogs/directoryAudits
 ```
@@ -99,13 +101,18 @@ GET https://graph.microsoft.com/v1.0/auditLogs/directoryAudits
 [!INCLUDE [sample-code](../includes/snippets/objc/get-directoryaudit-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-directoryaudit-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>応答
 
 以下は、応答の例です。
->**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
+
+> **注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 
 <!-- {
   "blockType": "response",
@@ -113,11 +120,14 @@ GET https://graph.microsoft.com/v1.0/auditLogs/directoryAudits
   "@odata.type": "microsoft.graph.directoryaudit",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 271
 ```
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ```json
 {
@@ -140,7 +150,7 @@ Content-length: 271
             },
             "app": null
         },
-        "targetResource": [{
+        "targetResources": [{
             "id": "ef7e527d-6c92-4234-8c6d-cf6fdfb57f95",
             "displayName": "Example.com",
             "Type": "Group",

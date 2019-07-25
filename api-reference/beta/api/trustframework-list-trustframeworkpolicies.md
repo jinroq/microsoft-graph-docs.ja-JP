@@ -4,12 +4,12 @@ description: この操作では、Azure AD B2C テナントのすべての trust
 localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e565d20f974267c039996a2a1bef518e0039048d
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 67531e5364256e55bb94f88647b1b56a915dce36
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35451004"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35867956"
 ---
 # <a name="list-trustframeworkpolicies"></a>TrustFrameworkPolicies を一覧表示する
 
@@ -78,6 +78,10 @@ GET https://graph.microsoft.com/beta/trustFramework/policies
 
 # <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-trustframeworks-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-trustframeworks-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

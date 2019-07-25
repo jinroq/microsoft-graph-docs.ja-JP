@@ -4,12 +4,12 @@ description: 現在のユーザーのお気に入りのグループ一覧から�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 633c3986b45556fef554b26961a62e3abf88cd6d
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: e01bd43238bee98658bea1acccee3a8876a3679c
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35456359"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35885429"
 ---
 # <a name="group-removefavorite"></a>グループ: removeFavorite
 現在のユーザーのお気に入りのグループ一覧からグループを削除します。Office 365 のグループのみをサポートします。
@@ -62,6 +62,10 @@ POST https://graph.microsoft.com/v1.0/groups/{id}/removeFavorite
 
 # <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-removefavorite-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-removefavorite-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

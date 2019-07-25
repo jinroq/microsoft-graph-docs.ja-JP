@@ -4,12 +4,12 @@ description: '[削除済みアイテム] から、最近削除されたアイテ
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 80a719b2212dc06fcb1351b61b8e3338b8d8eec9
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 4abcfcd7442934ac87125301603ea11c8166212a
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35437118"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35862566"
 ---
 # <a name="list-deleted-items"></a>削除済みアイテムを一覧表示する
 
@@ -71,6 +71,10 @@ GET https://graph.microsoft.com/beta/directory/deleteditems/microsoft.graph.grou
 
 # <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-deleteditems-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-deleteditems-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

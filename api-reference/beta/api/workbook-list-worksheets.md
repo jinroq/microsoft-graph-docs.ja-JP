@@ -4,12 +4,12 @@ description: ワークシート オブジェクトの一覧を取得します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 30d10b995cdd40a058c85269ff67bad84921882c
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 85c5b813995aaa11a3f6e0a691bed9c383a131c4
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35448512"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35866549"
 ---
 # <a name="list-worksheets"></a>ワークシートを一覧表示する
 
@@ -67,6 +67,10 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets
 
 # <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-worksheets-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-worksheets-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
