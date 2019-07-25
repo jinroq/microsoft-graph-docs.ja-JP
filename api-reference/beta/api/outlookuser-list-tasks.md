@@ -4,57 +4,57 @@ description: ユーザーのメールボックス内のすべての Outlook タ�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 5d08e9e8ade8a3537d27ec33a61006456668ddae
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 5bdb0c23fb74c5a8ada8e228a0b3f6a1554aa308
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35447139"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35877408"
 ---
-# <a name="list-tasks"></a><span data-ttu-id="20946-103">タスクを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="20946-103">List tasks</span></span>
+# <a name="list-tasks"></a><span data-ttu-id="19a7f-103">タスクを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="19a7f-103">List tasks</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="20946-104">ユーザーのメールボックス内のすべての Outlook タスクを取得します。</span><span class="sxs-lookup"><span data-stu-id="20946-104">Get all the Outlook tasks in the user's mailbox.</span></span>
+<span data-ttu-id="19a7f-104">ユーザーのメールボックス内のすべての Outlook タスクを取得します。</span><span class="sxs-lookup"><span data-stu-id="19a7f-104">Get all the Outlook tasks in the user's mailbox.</span></span>
 
-<span data-ttu-id="20946-105">既定では、この操作 (および POST、PATCH、および[完了](../api/outlooktask-complete.md)タスク操作) は、日付関連プロパティを UTC で返します。</span><span class="sxs-lookup"><span data-stu-id="20946-105">By default, this operation (and the POST, PATCH, and [complete](../api/outlooktask-complete.md) task operations) returns date-related properties in UTC.</span></span>
-<span data-ttu-id="20946-106">`Prefer: outlook.timezone` ヘッダーを使用して、応答内のすべての日付関連プロパティを UTC 以外のタイム ゾーンで表すことができます。</span><span class="sxs-lookup"><span data-stu-id="20946-106">You can use the `Prefer: outlook.timezone` header to have all the date-related properties in the response represented in a time zone different than UTC.</span></span> <span data-ttu-id="20946-107">1つのタスクを取得する[例](outlooktask-get.md#example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="20946-107">See an [example](outlooktask-get.md#example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time) for getting a single task.</span></span> <span data-ttu-id="20946-108">同じようにヘッダーを適用して、複数のタスクを取得することができます。</span><span class="sxs-lookup"><span data-stu-id="20946-108">You can apply the header similarly to get multiple tasks.</span></span>
+<span data-ttu-id="19a7f-105">既定では、この操作 (および POST、PATCH、および[完了](../api/outlooktask-complete.md)タスク操作) は、日付関連プロパティを UTC で返します。</span><span class="sxs-lookup"><span data-stu-id="19a7f-105">By default, this operation (and the POST, PATCH, and [complete](../api/outlooktask-complete.md) task operations) returns date-related properties in UTC.</span></span>
+<span data-ttu-id="19a7f-106">`Prefer: outlook.timezone` ヘッダーを使用して、応答内のすべての日付関連プロパティを UTC 以外のタイム ゾーンで表すことができます。</span><span class="sxs-lookup"><span data-stu-id="19a7f-106">You can use the `Prefer: outlook.timezone` header to have all the date-related properties in the response represented in a time zone different than UTC.</span></span> <span data-ttu-id="19a7f-107">1つのタスクを取得する[例](outlooktask-get.md#example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="19a7f-107">See an [example](outlooktask-get.md#example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time) for getting a single task.</span></span> <span data-ttu-id="19a7f-108">同じようにヘッダーを適用して、複数のタスクを取得することができます。</span><span class="sxs-lookup"><span data-stu-id="19a7f-108">You can apply the header similarly to get multiple tasks.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="20946-109">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="20946-109">Permissions</span></span>
-<span data-ttu-id="20946-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="20946-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="19a7f-109">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="19a7f-109">Permissions</span></span>
+<span data-ttu-id="19a7f-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="19a7f-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="20946-112">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="20946-112">Permission type</span></span>      | <span data-ttu-id="20946-113">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="20946-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="19a7f-112">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="19a7f-112">Permission type</span></span>      | <span data-ttu-id="19a7f-113">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="19a7f-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="20946-114">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="20946-114">Delegated (work or school account)</span></span> | <span data-ttu-id="20946-115">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="20946-115">Tasks.Read</span></span>    |
-|<span data-ttu-id="20946-116">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="20946-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="20946-117">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="20946-117">Tasks.Read</span></span>    |
-|<span data-ttu-id="20946-118">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="20946-118">Application</span></span> | <span data-ttu-id="20946-119">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="20946-119">Not supported.</span></span> |
+|<span data-ttu-id="19a7f-114">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="19a7f-114">Delegated (work or school account)</span></span> | <span data-ttu-id="19a7f-115">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="19a7f-115">Tasks.Read</span></span>    |
+|<span data-ttu-id="19a7f-116">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="19a7f-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="19a7f-117">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="19a7f-117">Tasks.Read</span></span>    |
+|<span data-ttu-id="19a7f-118">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="19a7f-118">Application</span></span> | <span data-ttu-id="19a7f-119">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="19a7f-119">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="20946-120">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="20946-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="19a7f-120">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="19a7f-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/outlook/tasks
 GET /users/{id|userPrincipalName}/outlook/tasks
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="20946-121">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="20946-121">Optional query parameters</span></span>
-<span data-ttu-id="20946-122">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="20946-122">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="19a7f-121">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="19a7f-121">Optional query parameters</span></span>
+<span data-ttu-id="19a7f-122">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="19a7f-122">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="20946-123">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="20946-123">Request headers</span></span>
-| <span data-ttu-id="20946-124">名前</span><span class="sxs-lookup"><span data-stu-id="20946-124">Name</span></span>      |<span data-ttu-id="20946-125">説明</span><span class="sxs-lookup"><span data-stu-id="20946-125">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="19a7f-123">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="19a7f-123">Request headers</span></span>
+| <span data-ttu-id="19a7f-124">名前</span><span class="sxs-lookup"><span data-stu-id="19a7f-124">Name</span></span>      |<span data-ttu-id="19a7f-125">説明</span><span class="sxs-lookup"><span data-stu-id="19a7f-125">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="20946-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="20946-126">Authorization</span></span>  | <span data-ttu-id="20946-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="20946-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="20946-129">優先: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="20946-129">Prefer: outlook.timezone</span></span> | <span data-ttu-id="20946-130">応答の時間プロパティのタイムゾーンを指定します。このヘッダーが指定されていない場合は、UTC になります。</span><span class="sxs-lookup"><span data-stu-id="20946-130">Specifies the time zone for time properties in the response, which would be in UTC if this header is not specified.</span></span> <span data-ttu-id="20946-131">省略可能。</span><span class="sxs-lookup"><span data-stu-id="20946-131">Optional.</span></span>|
+| <span data-ttu-id="19a7f-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="19a7f-126">Authorization</span></span>  | <span data-ttu-id="19a7f-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="19a7f-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="19a7f-129">優先: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="19a7f-129">Prefer: outlook.timezone</span></span> | <span data-ttu-id="19a7f-130">応答の時間プロパティのタイムゾーンを指定します。このヘッダーが指定されていない場合は、UTC になります。</span><span class="sxs-lookup"><span data-stu-id="19a7f-130">Specifies the time zone for time properties in the response, which would be in UTC if this header is not specified.</span></span> <span data-ttu-id="19a7f-131">省略可能。</span><span class="sxs-lookup"><span data-stu-id="19a7f-131">Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="20946-132">要求本文</span><span class="sxs-lookup"><span data-stu-id="20946-132">Request body</span></span>
-<span data-ttu-id="20946-133">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="20946-133">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="19a7f-132">要求本文</span><span class="sxs-lookup"><span data-stu-id="19a7f-132">Request body</span></span>
+<span data-ttu-id="19a7f-133">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="19a7f-133">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="20946-134">応答</span><span class="sxs-lookup"><span data-stu-id="20946-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="19a7f-134">応答</span><span class="sxs-lookup"><span data-stu-id="19a7f-134">Response</span></span>
 
-<span data-ttu-id="20946-135">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[outlooktask](../resources/outlooktask.md)オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="20946-135">If successful, this method returns a `200 OK` response code and collection of [outlookTask](../resources/outlooktask.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="20946-136">例</span><span class="sxs-lookup"><span data-stu-id="20946-136">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="20946-137">要求</span><span class="sxs-lookup"><span data-stu-id="20946-137">Request</span></span>
-<span data-ttu-id="20946-138">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="20946-138">Here is an example of the request.</span></span>
+<span data-ttu-id="19a7f-135">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[outlooktask](../resources/outlooktask.md)オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="19a7f-135">If successful, this method returns a `200 OK` response code and collection of [outlookTask](../resources/outlooktask.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="19a7f-136">例</span><span class="sxs-lookup"><span data-stu-id="19a7f-136">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="19a7f-137">要求</span><span class="sxs-lookup"><span data-stu-id="19a7f-137">Request</span></span>
+<span data-ttu-id="19a7f-138">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="19a7f-138">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="20946-139">プロトコル</span><span class="sxs-lookup"><span data-stu-id="20946-139">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="19a7f-139">プロトコル</span><span class="sxs-lookup"><span data-stu-id="19a7f-139">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_tasks"
@@ -62,24 +62,28 @@ GET /users/{id|userPrincipalName}/outlook/tasks
 ```http
 GET https://graph.microsoft.com/beta/me/outlook/tasks
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="20946-140">C#</span><span class="sxs-lookup"><span data-stu-id="20946-140">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="19a7f-140">C#</span><span class="sxs-lookup"><span data-stu-id="19a7f-140">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-tasks-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="20946-141">Javascript</span><span class="sxs-lookup"><span data-stu-id="20946-141">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="19a7f-141">Javascript</span><span class="sxs-lookup"><span data-stu-id="19a7f-141">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-tasks-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="20946-142">目的-C</span><span class="sxs-lookup"><span data-stu-id="20946-142">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="19a7f-142">目的-C</span><span class="sxs-lookup"><span data-stu-id="19a7f-142">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-tasks-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="19a7f-143">Java</span><span class="sxs-lookup"><span data-stu-id="19a7f-143">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-tasks-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="20946-143">応答</span><span class="sxs-lookup"><span data-stu-id="20946-143">Response</span></span>
-<span data-ttu-id="20946-144">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="20946-144">Here is an example of the response.</span></span> <span data-ttu-id="20946-145">既定では、応答に含まれる日時のプロパティは UTC 形式になります。</span><span class="sxs-lookup"><span data-stu-id="20946-145">By default, the date-time properties in the response are in UTC.</span></span>
+##### <a name="response"></a><span data-ttu-id="19a7f-144">応答</span><span class="sxs-lookup"><span data-stu-id="19a7f-144">Response</span></span>
+<span data-ttu-id="19a7f-145">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="19a7f-145">Here is an example of the response.</span></span> <span data-ttu-id="19a7f-146">既定では、応答に含まれる日時のプロパティは UTC 形式になります。</span><span class="sxs-lookup"><span data-stu-id="19a7f-146">By default, the date-time properties in the response are in UTC.</span></span>
 
-<span data-ttu-id="20946-p106">注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="20946-p106">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="19a7f-p106">注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="19a7f-p106">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

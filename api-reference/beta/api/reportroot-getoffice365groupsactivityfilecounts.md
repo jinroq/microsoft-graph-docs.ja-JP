@@ -4,32 +4,32 @@ description: Office 365 グループに関連付けられたグループ サイ�
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: c7d0049907b663a583f1baf45090991a91a2984c
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 9e1cb1c443da8c100a01e5a1e43dbc80f8a1e34f
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35446879"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35873382"
 ---
-# <a name="reportroot-getoffice365groupsactivityfilecounts"></a><span data-ttu-id="5025b-103">reportRoot: getOffice365GroupsActivityFileCounts</span><span class="sxs-lookup"><span data-stu-id="5025b-103">reportRoot: getOffice365GroupsActivityFileCounts</span></span>
+# <a name="reportroot-getoffice365groupsactivityfilecounts"></a><span data-ttu-id="a81a6-103">reportRoot: getOffice365GroupsActivityFileCounts</span><span class="sxs-lookup"><span data-stu-id="a81a6-103">reportRoot: getOffice365GroupsActivityFileCounts</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5025b-104">Office 365 グループに関連付けられたグループ サイト全体での、ファイルの合計数と、そのうちのアクティブにされたファイルの数を取得します。</span><span class="sxs-lookup"><span data-stu-id="5025b-104">Get the total number of files and how many of them were active across all group sites associated with an Office 365 Group.</span></span>
+<span data-ttu-id="a81a6-104">Office 365 グループに関連付けられたグループ サイト全体での、ファイルの合計数と、そのうちのアクティブにされたファイルの数を取得します。</span><span class="sxs-lookup"><span data-stu-id="a81a6-104">Get the total number of files and how many of them were active across all group sites associated with an Office 365 Group.</span></span>
 
-> <span data-ttu-id="5025b-105">**注:** 別のレポートのビューとレポート名についての詳細は、「[Office 365 レポート: Office 365 グループ](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5025b-105">**Note:** For details about different report views and names, see [Office 365 Reports - Office 365 groups](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40).</span></span>
+> <span data-ttu-id="a81a6-105">**注:** 別のレポートのビューとレポート名についての詳細は、「[Office 365 レポート: Office 365 グループ](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a81a6-105">**Note:** For details about different report views and names, see [Office 365 Reports - Office 365 groups](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="5025b-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="5025b-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="a81a6-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="a81a6-106">Permissions</span></span>
 
-<span data-ttu-id="5025b-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5025b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a81a6-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a81a6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="5025b-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="5025b-109">Permission type</span></span>                        | <span data-ttu-id="5025b-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="5025b-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="a81a6-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="a81a6-109">Permission type</span></span>                        | <span data-ttu-id="a81a6-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="a81a6-110">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :--------------------------------------- |
-| <span data-ttu-id="5025b-111">委任 (職場または学校アカウント)</span><span class="sxs-lookup"><span data-stu-id="5025b-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="5025b-112">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="5025b-112">Reports.Read.All</span></span>                         |
-| <span data-ttu-id="5025b-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="5025b-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5025b-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="5025b-114">Not supported.</span></span>                           |
-| <span data-ttu-id="5025b-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="5025b-115">Application</span></span>                            | <span data-ttu-id="5025b-116">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="5025b-116">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="a81a6-111">委任 (職場または学校アカウント)</span><span class="sxs-lookup"><span data-stu-id="a81a6-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="a81a6-112">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="a81a6-112">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="a81a6-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="a81a6-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a81a6-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a81a6-114">Not supported.</span></span>                           |
+| <span data-ttu-id="a81a6-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="a81a6-115">Application</span></span>                            | <span data-ttu-id="a81a6-116">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="a81a6-116">Reports.Read.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="5025b-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="5025b-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a81a6-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="a81a6-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -37,54 +37,54 @@ ms.locfileid: "35446879"
 GET /reports/getOffice365GroupsActivityFileCounts(period='{period_value}')
 ```
 
-## <a name="function-parameters"></a><span data-ttu-id="5025b-118">関数パラメーター</span><span class="sxs-lookup"><span data-stu-id="5025b-118">Function parameters</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="a81a6-118">関数パラメーター</span><span class="sxs-lookup"><span data-stu-id="a81a6-118">Function parameters</span></span>
 
-<span data-ttu-id="5025b-119">要求 URL に、次のパラメーターと有効な値を指定します。</span><span class="sxs-lookup"><span data-stu-id="5025b-119">In the request URL, provide the following parameter with a valid value.</span></span>
+<span data-ttu-id="a81a6-119">要求 URL に、次のパラメーターと有効な値を指定します。</span><span class="sxs-lookup"><span data-stu-id="a81a6-119">In the request URL, provide the following parameter with a valid value.</span></span>
 
-| <span data-ttu-id="5025b-120">パラメーター</span><span class="sxs-lookup"><span data-stu-id="5025b-120">Parameter</span></span> | <span data-ttu-id="5025b-121">型</span><span class="sxs-lookup"><span data-stu-id="5025b-121">Type</span></span>   | <span data-ttu-id="5025b-122">説明</span><span class="sxs-lookup"><span data-stu-id="5025b-122">Description</span></span>                              |
+| <span data-ttu-id="a81a6-120">パラメーター</span><span class="sxs-lookup"><span data-stu-id="a81a6-120">Parameter</span></span> | <span data-ttu-id="a81a6-121">型</span><span class="sxs-lookup"><span data-stu-id="a81a6-121">Type</span></span>   | <span data-ttu-id="a81a6-122">説明</span><span class="sxs-lookup"><span data-stu-id="a81a6-122">Description</span></span>                              |
 | :-------- | :----- | :--------------------------------------- |
-| <span data-ttu-id="5025b-123">period</span><span class="sxs-lookup"><span data-stu-id="5025b-123">period</span></span>    | <span data-ttu-id="5025b-124">文字列</span><span class="sxs-lookup"><span data-stu-id="5025b-124">string</span></span> | <span data-ttu-id="5025b-125">レポートを集計する期間の長さを指定します。</span><span class="sxs-lookup"><span data-stu-id="5025b-125">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="5025b-126">{period_value} でサポートされている値は D7、D30、D90、D180 です。</span><span class="sxs-lookup"><span data-stu-id="5025b-126">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="5025b-127">これらの値は、D*n* の形式 (*n* はレポートを集計する日数) に従います。</span><span class="sxs-lookup"><span data-stu-id="5025b-127">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> <span data-ttu-id="5025b-128">必須。</span><span class="sxs-lookup"><span data-stu-id="5025b-128">Required.</span></span> |
+| <span data-ttu-id="a81a6-123">period</span><span class="sxs-lookup"><span data-stu-id="a81a6-123">period</span></span>    | <span data-ttu-id="a81a6-124">文字列</span><span class="sxs-lookup"><span data-stu-id="a81a6-124">string</span></span> | <span data-ttu-id="a81a6-125">レポートを集計する期間の長さを指定します。</span><span class="sxs-lookup"><span data-stu-id="a81a6-125">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="a81a6-126">{period_value} でサポートされている値は D7、D30、D90、D180 です。</span><span class="sxs-lookup"><span data-stu-id="a81a6-126">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="a81a6-127">これらの値は、D*n* の形式 (*n* はレポートを集計する日数) に従います。</span><span class="sxs-lookup"><span data-stu-id="a81a6-127">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> <span data-ttu-id="a81a6-128">必須。</span><span class="sxs-lookup"><span data-stu-id="a81a6-128">Required.</span></span> |
 
-<span data-ttu-id="5025b-129">このメソッドは、 `$format`応答をカスタマイズするための[OData クエリパラメーター](/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="5025b-129">This method supports the `$format` [OData query parameter](/graph/query-parameters) to customize the response.</span></span> <span data-ttu-id="5025b-130">既定の出力の種類は、text/csv です。</span><span class="sxs-lookup"><span data-stu-id="5025b-130">The default output type is text/csv.</span></span> <span data-ttu-id="5025b-131">ただし、出力の種類を指定する場合は、OData $format クエリパラメーターを text/csv または application/json に設定します。</span><span class="sxs-lookup"><span data-stu-id="5025b-131">However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.</span></span>
+<span data-ttu-id="a81a6-129">このメソッドは、 `$format`応答をカスタマイズするための[OData クエリパラメーター](/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="a81a6-129">This method supports the `$format` [OData query parameter](/graph/query-parameters) to customize the response.</span></span> <span data-ttu-id="a81a6-130">既定の出力の種類は、text/csv です。</span><span class="sxs-lookup"><span data-stu-id="a81a6-130">The default output type is text/csv.</span></span> <span data-ttu-id="a81a6-131">ただし、出力の種類を指定する場合は、OData $format クエリパラメーターを text/csv または application/json に設定します。</span><span class="sxs-lookup"><span data-stu-id="a81a6-131">However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="5025b-132">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="5025b-132">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="a81a6-132">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="a81a6-132">Request headers</span></span>
 
-| <span data-ttu-id="5025b-133">名前</span><span class="sxs-lookup"><span data-stu-id="5025b-133">Name</span></span>          | <span data-ttu-id="5025b-134">説明</span><span class="sxs-lookup"><span data-stu-id="5025b-134">Description</span></span>               |
+| <span data-ttu-id="a81a6-133">名前</span><span class="sxs-lookup"><span data-stu-id="a81a6-133">Name</span></span>          | <span data-ttu-id="a81a6-134">説明</span><span class="sxs-lookup"><span data-stu-id="a81a6-134">Description</span></span>               |
 | :------------ | :------------------------ |
-| <span data-ttu-id="5025b-135">Authorization</span><span class="sxs-lookup"><span data-stu-id="5025b-135">Authorization</span></span> | <span data-ttu-id="5025b-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="5025b-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="a81a6-135">Authorization</span><span class="sxs-lookup"><span data-stu-id="a81a6-135">Authorization</span></span> | <span data-ttu-id="a81a6-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="a81a6-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="5025b-138">応答</span><span class="sxs-lookup"><span data-stu-id="5025b-138">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a81a6-138">応答</span><span class="sxs-lookup"><span data-stu-id="a81a6-138">Response</span></span>
 
-### <a name="csv"></a><span data-ttu-id="5025b-139">CSV</span><span class="sxs-lookup"><span data-stu-id="5025b-139">CSV</span></span>
+### <a name="csv"></a><span data-ttu-id="a81a6-139">CSV</span><span class="sxs-lookup"><span data-stu-id="a81a6-139">CSV</span></span>
 
-<span data-ttu-id="5025b-140">成功すると、レポートの事前認証されたダウンロード URL にリダイレクトする `302 Found` 応答が返されます。</span><span class="sxs-lookup"><span data-stu-id="5025b-140">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="5025b-141">その URL は、応答の `Location` ヘッダー内にあります。</span><span class="sxs-lookup"><span data-stu-id="5025b-141">That URL can be found in the `Location` header in the response.</span></span>
+<span data-ttu-id="a81a6-140">成功すると、レポートの事前認証されたダウンロード URL にリダイレクトする `302 Found` 応答が返されます。</span><span class="sxs-lookup"><span data-stu-id="a81a6-140">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="a81a6-141">その URL は、応答の `Location` ヘッダー内にあります。</span><span class="sxs-lookup"><span data-stu-id="a81a6-141">That URL can be found in the `Location` header in the response.</span></span>
 
-<span data-ttu-id="5025b-142">事前認証されたダウンロード URL は、短期間 (数分) のみ有効で、`Authorization` ヘッダーを必要としません。</span><span class="sxs-lookup"><span data-stu-id="5025b-142">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
+<span data-ttu-id="a81a6-142">事前認証されたダウンロード URL は、短期間 (数分) のみ有効で、`Authorization` ヘッダーを必要としません。</span><span class="sxs-lookup"><span data-stu-id="a81a6-142">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
 
-<span data-ttu-id="5025b-143">この CSV ファイルには、次の列ヘッダーがあります。</span><span class="sxs-lookup"><span data-stu-id="5025b-143">The CSV file has the following headers for columns.</span></span>
+<span data-ttu-id="a81a6-143">この CSV ファイルには、次の列ヘッダーがあります。</span><span class="sxs-lookup"><span data-stu-id="a81a6-143">The CSV file has the following headers for columns.</span></span>
 
-- <span data-ttu-id="5025b-144">レポートの更新日</span><span class="sxs-lookup"><span data-stu-id="5025b-144">Report Refresh Date</span></span>
-- <span data-ttu-id="5025b-145">合計</span><span class="sxs-lookup"><span data-stu-id="5025b-145">Total</span></span>
-- <span data-ttu-id="5025b-146">アクティブ</span><span class="sxs-lookup"><span data-stu-id="5025b-146">Active</span></span>
-- <span data-ttu-id="5025b-147">レポート日付</span><span class="sxs-lookup"><span data-stu-id="5025b-147">Report Date</span></span>
-- <span data-ttu-id="5025b-148">レポート期間</span><span class="sxs-lookup"><span data-stu-id="5025b-148">Report Period</span></span>
+- <span data-ttu-id="a81a6-144">レポートの更新日</span><span class="sxs-lookup"><span data-stu-id="a81a6-144">Report Refresh Date</span></span>
+- <span data-ttu-id="a81a6-145">合計</span><span class="sxs-lookup"><span data-stu-id="a81a6-145">Total</span></span>
+- <span data-ttu-id="a81a6-146">アクティブ</span><span class="sxs-lookup"><span data-stu-id="a81a6-146">Active</span></span>
+- <span data-ttu-id="a81a6-147">レポート日付</span><span class="sxs-lookup"><span data-stu-id="a81a6-147">Report Date</span></span>
+- <span data-ttu-id="a81a6-148">レポート期間</span><span class="sxs-lookup"><span data-stu-id="a81a6-148">Report Period</span></span>
 
-### <a name="json"></a><span data-ttu-id="5025b-149">JSON</span><span class="sxs-lookup"><span data-stu-id="5025b-149">JSON</span></span>
+### <a name="json"></a><span data-ttu-id="a81a6-149">JSON</span><span class="sxs-lookup"><span data-stu-id="a81a6-149">JSON</span></span>
 
-<span data-ttu-id="5025b-150">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で**[office365GroupsActivityFileCounts](../resources/office365groupsactivityfilecounts.md)** オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="5025b-150">If successful, this method returns a `200 OK` response code and an **[office365GroupsActivityFileCounts](../resources/office365groupsactivityfilecounts.md)** object in the response body.</span></span>
+<span data-ttu-id="a81a6-150">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で**[office365GroupsActivityFileCounts](../resources/office365groupsactivityfilecounts.md)** オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="a81a6-150">If successful, this method returns a `200 OK` response code and an **[office365GroupsActivityFileCounts](../resources/office365groupsactivityfilecounts.md)** object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="5025b-151">例</span><span class="sxs-lookup"><span data-stu-id="5025b-151">Example</span></span>
+## <a name="example"></a><span data-ttu-id="a81a6-151">例</span><span class="sxs-lookup"><span data-stu-id="a81a6-151">Example</span></span>
 
-### <a name="csv"></a><span data-ttu-id="5025b-152">CSV</span><span class="sxs-lookup"><span data-stu-id="5025b-152">CSV</span></span>
+### <a name="csv"></a><span data-ttu-id="a81a6-152">CSV</span><span class="sxs-lookup"><span data-stu-id="a81a6-152">CSV</span></span>
 
-<span data-ttu-id="5025b-153">CSV を出力する例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="5025b-153">The following is an example that outputs CSV.</span></span>
+<span data-ttu-id="a81a6-153">CSV を出力する例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="a81a6-153">The following is an example that outputs CSV.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="5025b-154">要求</span><span class="sxs-lookup"><span data-stu-id="5025b-154">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="a81a6-154">要求</span><span class="sxs-lookup"><span data-stu-id="a81a6-154">Request</span></span>
 
-<span data-ttu-id="5025b-155">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="5025b-155">The following is an example of the request.</span></span>
+<span data-ttu-id="a81a6-155">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="a81a6-155">The following is an example of the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="5025b-156">プロトコル</span><span class="sxs-lookup"><span data-stu-id="5025b-156">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="a81a6-156">プロトコル</span><span class="sxs-lookup"><span data-stu-id="a81a6-156">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "reportroot_getoffice365groupsactivityfilecounts_csv"
@@ -93,24 +93,28 @@ GET /reports/getOffice365GroupsActivityFileCounts(period='{period_value}')
 ```http
 GET https://graph.microsoft.com/beta/reports/getOffice365GroupsActivityFileCounts(period='D7')?$format=text/csv
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="5025b-157">C#</span><span class="sxs-lookup"><span data-stu-id="5025b-157">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="a81a6-157">C#</span><span class="sxs-lookup"><span data-stu-id="a81a6-157">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getoffice365groupsactivityfilecounts-csv-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="5025b-158">Javascript</span><span class="sxs-lookup"><span data-stu-id="5025b-158">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a81a6-158">Javascript</span><span class="sxs-lookup"><span data-stu-id="a81a6-158">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getoffice365groupsactivityfilecounts-csv-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="5025b-159">目的-C</span><span class="sxs-lookup"><span data-stu-id="5025b-159">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="a81a6-159">目的-C</span><span class="sxs-lookup"><span data-stu-id="a81a6-159">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getoffice365groupsactivityfilecounts-csv-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="a81a6-160">Java</span><span class="sxs-lookup"><span data-stu-id="a81a6-160">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getoffice365groupsactivityfilecounts-csv-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="5025b-160">応答</span><span class="sxs-lookup"><span data-stu-id="5025b-160">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="a81a6-161">応答</span><span class="sxs-lookup"><span data-stu-id="a81a6-161">Response</span></span>
 
-<span data-ttu-id="5025b-161">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="5025b-161">The following is an example of the response.</span></span>
+<span data-ttu-id="a81a6-162">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="a81a6-162">The following is an example of the response.</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -120,7 +124,7 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-<span data-ttu-id="5025b-162">302 リダイレクトに従うと、ダウンロードされる CSV ファイルは次のスキーマを持つことになります。</span><span class="sxs-lookup"><span data-stu-id="5025b-162">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
+<span data-ttu-id="a81a6-163">302 リダイレクトに従うと、ダウンロードされる CSV ファイルは次のスキーマを持つことになります。</span><span class="sxs-lookup"><span data-stu-id="a81a6-163">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -135,16 +139,16 @@ Content-Type: application/octet-stream
 Report Refresh Date,Total,Active,Report Date,Report Period
 ```
 
-### <a name="json"></a><span data-ttu-id="5025b-163">JSON</span><span class="sxs-lookup"><span data-stu-id="5025b-163">JSON</span></span>
+### <a name="json"></a><span data-ttu-id="a81a6-164">JSON</span><span class="sxs-lookup"><span data-stu-id="a81a6-164">JSON</span></span>
 
-<span data-ttu-id="5025b-164">次の例は、JSON を返します。</span><span class="sxs-lookup"><span data-stu-id="5025b-164">The following is an example that returns JSON.</span></span>
+<span data-ttu-id="a81a6-165">次の例は、JSON を返します。</span><span class="sxs-lookup"><span data-stu-id="a81a6-165">The following is an example that returns JSON.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="5025b-165">要求</span><span class="sxs-lookup"><span data-stu-id="5025b-165">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="a81a6-166">要求</span><span class="sxs-lookup"><span data-stu-id="a81a6-166">Request</span></span>
 
-<span data-ttu-id="5025b-166">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="5025b-166">The following is an example of the request.</span></span>
+<span data-ttu-id="a81a6-167">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="a81a6-167">The following is an example of the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="5025b-167">プロトコル</span><span class="sxs-lookup"><span data-stu-id="5025b-167">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="a81a6-168">プロトコル</span><span class="sxs-lookup"><span data-stu-id="a81a6-168">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "reportroot_getoffice365groupsactivityfilecounts_json"
@@ -153,26 +157,30 @@ Report Refresh Date,Total,Active,Report Date,Report Period
 ```http
 GET https://graph.microsoft.com/beta/reports/getOffice365GroupsActivityFileCounts(period='D7')?$format=application/json
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="5025b-168">C#</span><span class="sxs-lookup"><span data-stu-id="5025b-168">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="a81a6-169">C#</span><span class="sxs-lookup"><span data-stu-id="a81a6-169">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getoffice365groupsactivityfilecounts-json-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="5025b-169">Javascript</span><span class="sxs-lookup"><span data-stu-id="5025b-169">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a81a6-170">Javascript</span><span class="sxs-lookup"><span data-stu-id="a81a6-170">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getoffice365groupsactivityfilecounts-json-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="5025b-170">目的-C</span><span class="sxs-lookup"><span data-stu-id="5025b-170">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="a81a6-171">目的-C</span><span class="sxs-lookup"><span data-stu-id="a81a6-171">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getoffice365groupsactivityfilecounts-json-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="a81a6-172">Java</span><span class="sxs-lookup"><span data-stu-id="a81a6-172">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getoffice365groupsactivityfilecounts-json-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="5025b-171">応答</span><span class="sxs-lookup"><span data-stu-id="5025b-171">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="a81a6-173">応答</span><span class="sxs-lookup"><span data-stu-id="a81a6-173">Response</span></span>
 
-<span data-ttu-id="5025b-172">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="5025b-172">The following is an example of the response.</span></span>
+<span data-ttu-id="a81a6-174">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="a81a6-174">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="5025b-p106">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="5025b-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="a81a6-p106">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="a81a6-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

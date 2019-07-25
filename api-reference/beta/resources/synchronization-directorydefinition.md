@@ -1,38 +1,48 @@
 ---
 title: directoryDefinition リソースの種類
-description: ディレクトリとそのオブジェクトに関する同期エンジン情報を提供します。 このリソースは、同期エンジンに対して、たとえば、ディレクトリには、**ユーザー**と**グループ**という名前のオブジェクト、これらのオブジェクトに対してサポートされている属性、およびそれらの属性の種類を示します。 オブジェクトと属性を同期ルールおよびオブジェクトマッピングに参加させるには、それらをディレクトリ定義の一部として定義する必要があります。
+description: ディレクトリとそのオブジェクトに関する同期エンジン情報を提供します。
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2c79855ac07ab9a850fd76ac888afbbcb923d136
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+doc_type: resourcePageType
+ms.openlocfilehash: 56c1f5a6a15f7ab6724feff68aa38eba1ef22694
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35621438"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35888140"
 ---
-# <a name="directorydefinition-resource-type"></a><span data-ttu-id="203e7-105">directoryDefinition リソースの種類</span><span class="sxs-lookup"><span data-stu-id="203e7-105">directoryDefinition resource type</span></span>
+# <a name="directorydefinition-resource-type"></a><span data-ttu-id="440cb-103">directoryDefinition リソースの種類</span><span class="sxs-lookup"><span data-stu-id="440cb-103">directoryDefinition resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="203e7-106">ディレクトリとそのオブジェクトに関する同期エンジン情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="203e7-106">Provides the synchronization engine information about a directory and its objects.</span></span> <span data-ttu-id="203e7-107">このリソースは、同期エンジンに対して、たとえば、ディレクトリには、**ユーザー**と**グループ**という名前のオブジェクト、これらのオブジェクトに対してサポートされている属性、およびそれらの属性の種類を示します。</span><span class="sxs-lookup"><span data-stu-id="203e7-107">This resource tells the synchronization engine, for example, that the directory has objects named **user** and **group**, which attributes are supported for those objects, and the types for those attributes.</span></span> <span data-ttu-id="203e7-108">オブジェクトと属性を[同期ルール](synchronization-synchronizationrule.md)および[オブジェクトマッピング](synchronization-objectmapping.md)に参加させるには、それらをディレクトリ定義の一部として定義する必要があります。</span><span class="sxs-lookup"><span data-stu-id="203e7-108">In order for the object and attribute to participate in [synchronization rules](synchronization-synchronizationrule.md) and [object mappings](synchronization-objectmapping.md), they must be defined as part of the directory definition.</span></span>
+<span data-ttu-id="440cb-104">ディレクトリとそのオブジェクトに関する同期エンジン情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="440cb-104">Provides the synchronization engine information about a directory and its objects.</span></span> <span data-ttu-id="440cb-105">このリソースは、同期エンジンに対して、たとえば、ディレクトリには、**ユーザー**と**グループ**という名前のオブジェクト、これらのオブジェクトに対してサポートされている属性、およびそれらの属性の種類を示します。</span><span class="sxs-lookup"><span data-stu-id="440cb-105">This resource tells the synchronization engine, for example, that the directory has objects named **user** and **group**, which attributes are supported for those objects, and the types for those attributes.</span></span> <span data-ttu-id="440cb-106">オブジェクトと属性を[同期ルール](synchronization-synchronizationrule.md)および[オブジェクトマッピング](synchronization-objectmapping.md)に参加させるには、それらをディレクトリ定義の一部として定義する必要があります。</span><span class="sxs-lookup"><span data-stu-id="440cb-106">In order for the object and attribute to participate in [synchronization rules](synchronization-synchronizationrule.md) and [object mappings](synchronization-objectmapping.md), they must be defined as part of the directory definition.</span></span>
 
-<span data-ttu-id="203e7-109">通常、[同期テンプレート](synchronization-synchronizationtemplate.md)の一部として提供される既定の[同期スキーマ](synchronization-synchronizationschema.md)は、そのディレクトリに最もよく使用されるオブジェクトと属性を定義します。</span><span class="sxs-lookup"><span data-stu-id="203e7-109">In general, the default [synchronization schema](synchronization-synchronizationschema.md) provided as part of the [synchronization template](synchronization-synchronizationtemplate.md) will define most commonly used objects and attributes for that directory.</span></span> <span data-ttu-id="203e7-110">ただし、ディレクトリでカスタム属性の追加がサポートされている場合は、独自のカスタムオブジェクトまたは属性を使用して、既定の定義を拡張することもできます。</span><span class="sxs-lookup"><span data-stu-id="203e7-110">However, if the directory supports the addition of custom attributes, you might want to expand the default definition with your own custom objects or attributes.</span></span> <span data-ttu-id="203e7-111">詳細については、「[カスタム属性を使用して同期を構成する](synchronization-configure-with-custom-target-attributes.md)」および「 [configure synchronization with directory extension attributes](synchronization-configure-with-directory-extension-attributes.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="203e7-111">For more information, see [Configure synchronization with custom attributes](synchronization-configure-with-custom-target-attributes.md) and [Configure synchronization with directory extension attributes](synchronization-configure-with-directory-extension-attributes.md).</span></span>
+<span data-ttu-id="440cb-107">通常、[同期テンプレート](synchronization-synchronizationtemplate.md)の一部として提供される既定の[同期スキーマ](synchronization-synchronizationschema.md)は、そのディレクトリに最もよく使用されるオブジェクトと属性を定義します。</span><span class="sxs-lookup"><span data-stu-id="440cb-107">In general, the default [synchronization schema](synchronization-synchronizationschema.md) provided as part of the [synchronization template](synchronization-synchronizationtemplate.md) will define most commonly used objects and attributes for that directory.</span></span> <span data-ttu-id="440cb-108">ただし、ディレクトリでカスタム属性の追加がサポートされている場合は、独自のカスタムオブジェクトまたは属性を使用して、既定の定義を拡張することもできます。</span><span class="sxs-lookup"><span data-stu-id="440cb-108">However, if the directory supports the addition of custom attributes, you might want to expand the default definition with your own custom objects or attributes.</span></span> <span data-ttu-id="440cb-109">詳細については、「[カスタム属性を使用して同期を構成する](synchronization-configure-with-custom-target-attributes.md)」および「 [configure synchronization with directory extension attributes](synchronization-configure-with-directory-extension-attributes.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="440cb-109">For more information, see [Configure synchronization with custom attributes](synchronization-configure-with-custom-target-attributes.md) and [Configure synchronization with directory extension attributes](synchronization-configure-with-directory-extension-attributes.md).</span></span>
 
-<span data-ttu-id="203e7-112">ディレクトリ定義は、[同期スキーマ](synchronization-synchronizationschema.md)の一部として更新されます。</span><span class="sxs-lookup"><span data-stu-id="203e7-112">Directory definitions are updated as part of the [synchronization schema](synchronization-synchronizationschema.md).</span></span>
+<span data-ttu-id="440cb-110">ディレクトリ定義は、[同期スキーマ](synchronization-synchronizationschema.md)の一部として更新されます。</span><span class="sxs-lookup"><span data-stu-id="440cb-110">Directory definitions are updated as part of the [synchronization schema](synchronization-synchronizationschema.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="203e7-113">プロパティ</span><span class="sxs-lookup"><span data-stu-id="203e7-113">Properties</span></span>
+## <a name="methods"></a><span data-ttu-id="440cb-111">メソッド</span><span class="sxs-lookup"><span data-stu-id="440cb-111">Methods</span></span>
 
-| <span data-ttu-id="203e7-114">プロパティ</span><span class="sxs-lookup"><span data-stu-id="203e7-114">Property</span></span>      | <span data-ttu-id="203e7-115">型</span><span class="sxs-lookup"><span data-stu-id="203e7-115">Type</span></span>      | <span data-ttu-id="203e7-116">説明</span><span class="sxs-lookup"><span data-stu-id="203e7-116">Description</span></span>    |
+| <span data-ttu-id="440cb-112">メソッド</span><span class="sxs-lookup"><span data-stu-id="440cb-112">Method</span></span>       | <span data-ttu-id="440cb-113">戻り値の型</span><span class="sxs-lookup"><span data-stu-id="440cb-113">Return Type</span></span>  |<span data-ttu-id="440cb-114">説明</span><span class="sxs-lookup"><span data-stu-id="440cb-114">Description</span></span>|
+|:---------------|:--------|:----------|
+|[<span data-ttu-id="440cb-115">Discover directoryDefinition</span><span class="sxs-lookup"><span data-stu-id="440cb-115">Discover directoryDefinition</span></span>](../api/directorydefinition-discover.md) | [<span data-ttu-id="440cb-116">directoryDefinition</span><span class="sxs-lookup"><span data-stu-id="440cb-116">directoryDefinition</span></span>](synchronization-directorydefinition.md) |<span data-ttu-id="440cb-117">ディレクトリのスキーマとサポートされているプロパティを検出します。</span><span class="sxs-lookup"><span data-stu-id="440cb-117">Discover the schema and supported properties of the directory.</span></span>|
+
+## <a name="properties"></a><span data-ttu-id="440cb-118">プロパティ</span><span class="sxs-lookup"><span data-stu-id="440cb-118">Properties</span></span>
+
+| <span data-ttu-id="440cb-119">プロパティ</span><span class="sxs-lookup"><span data-stu-id="440cb-119">Property</span></span>      | <span data-ttu-id="440cb-120">型</span><span class="sxs-lookup"><span data-stu-id="440cb-120">Type</span></span>      | <span data-ttu-id="440cb-121">説明</span><span class="sxs-lookup"><span data-stu-id="440cb-121">Description</span></span>    |
 |:--------------|:----------|:---------------|
-|<span data-ttu-id="203e7-117">id</span><span class="sxs-lookup"><span data-stu-id="203e7-117">id</span></span>           |<span data-ttu-id="203e7-118">文字列</span><span class="sxs-lookup"><span data-stu-id="203e7-118">String</span></span>     |<span data-ttu-id="203e7-119">ディレクトリ識別子。</span><span class="sxs-lookup"><span data-stu-id="203e7-119">Directory identifier.</span></span> <span data-ttu-id="203e7-120">null 許容ではありません。</span><span class="sxs-lookup"><span data-stu-id="203e7-120">Not nullable.</span></span>|
-|<span data-ttu-id="203e7-121">metadata</span><span class="sxs-lookup"><span data-stu-id="203e7-121">metadata</span></span>       |<span data-ttu-id="203e7-122">metadataEntry コレクション</span><span class="sxs-lookup"><span data-stu-id="203e7-122">metadataEntry collection</span></span>    |<span data-ttu-id="203e7-123">追加の拡張機能のプロパティ。</span><span class="sxs-lookup"><span data-stu-id="203e7-123">Additional extension properties.</span></span> <span data-ttu-id="203e7-124">明示的に記述されていない限り、メタデータ値は変更しないでください。</span><span class="sxs-lookup"><span data-stu-id="203e7-124">Unless mentioned explicitly, metadata values should not be changed.</span></span>|
-|<span data-ttu-id="203e7-125">name</span><span class="sxs-lookup"><span data-stu-id="203e7-125">name</span></span>           |<span data-ttu-id="203e7-126">String</span><span class="sxs-lookup"><span data-stu-id="203e7-126">String</span></span>     |<span data-ttu-id="203e7-127">ディレクトリの名前。</span><span class="sxs-lookup"><span data-stu-id="203e7-127">Name of the directory.</span></span> <span data-ttu-id="203e7-128">[同期スキーマ](synchronization-synchronizationschema.md)内で一意である必要があります。</span><span class="sxs-lookup"><span data-stu-id="203e7-128">Must be unique within the [synchronization schema](synchronization-synchronizationschema.md).</span></span> <span data-ttu-id="203e7-129">null 許容ではありません。</span><span class="sxs-lookup"><span data-stu-id="203e7-129">Not nullable.</span></span>|
-|<span data-ttu-id="203e7-130">対象</span><span class="sxs-lookup"><span data-stu-id="203e7-130">objects</span></span>        |<span data-ttu-id="203e7-131">[Objectdefinition](synchronization-objectdefinition.md)コレクション</span><span class="sxs-lookup"><span data-stu-id="203e7-131">[objectDefinition](synchronization-objectdefinition.md) collection</span></span>    |<span data-ttu-id="203e7-132">ディレクトリでサポートされているオブジェクトのコレクションです。</span><span class="sxs-lookup"><span data-stu-id="203e7-132">Collection of objects supported by the directory.</span></span>|
+|<span data-ttu-id="440cb-122">id</span><span class="sxs-lookup"><span data-stu-id="440cb-122">id</span></span>           |<span data-ttu-id="440cb-123">文字列</span><span class="sxs-lookup"><span data-stu-id="440cb-123">String</span></span>     |<span data-ttu-id="440cb-124">ディレクトリ識別子。</span><span class="sxs-lookup"><span data-stu-id="440cb-124">Directory identifier.</span></span> <span data-ttu-id="440cb-125">null 許容ではありません。</span><span class="sxs-lookup"><span data-stu-id="440cb-125">Not nullable.</span></span>|
+|<span data-ttu-id="440cb-126">metadata</span><span class="sxs-lookup"><span data-stu-id="440cb-126">metadata</span></span>       |<span data-ttu-id="440cb-127">metadataEntry コレクション</span><span class="sxs-lookup"><span data-stu-id="440cb-127">metadataEntry collection</span></span>    |<span data-ttu-id="440cb-128">追加の拡張機能のプロパティ。</span><span class="sxs-lookup"><span data-stu-id="440cb-128">Additional extension properties.</span></span> <span data-ttu-id="440cb-129">明示的に記述されていない限り、メタデータ値は変更しないでください。</span><span class="sxs-lookup"><span data-stu-id="440cb-129">Unless mentioned explicitly, metadata values should not be changed.</span></span>|
+|<span data-ttu-id="440cb-130">name</span><span class="sxs-lookup"><span data-stu-id="440cb-130">name</span></span>           |<span data-ttu-id="440cb-131">String</span><span class="sxs-lookup"><span data-stu-id="440cb-131">String</span></span>     |<span data-ttu-id="440cb-132">ディレクトリの名前。</span><span class="sxs-lookup"><span data-stu-id="440cb-132">Name of the directory.</span></span> <span data-ttu-id="440cb-133">[同期スキーマ](synchronization-synchronizationschema.md)内で一意である必要があります。</span><span class="sxs-lookup"><span data-stu-id="440cb-133">Must be unique within the [synchronization schema](synchronization-synchronizationschema.md).</span></span> <span data-ttu-id="440cb-134">null 許容ではありません。</span><span class="sxs-lookup"><span data-stu-id="440cb-134">Not nullable.</span></span>|
+|<span data-ttu-id="440cb-135">対象</span><span class="sxs-lookup"><span data-stu-id="440cb-135">objects</span></span>        |<span data-ttu-id="440cb-136">[Objectdefinition](synchronization-objectdefinition.md)コレクション</span><span class="sxs-lookup"><span data-stu-id="440cb-136">[objectDefinition](synchronization-objectdefinition.md) collection</span></span>    |<span data-ttu-id="440cb-137">ディレクトリでサポートされているオブジェクトのコレクションです。</span><span class="sxs-lookup"><span data-stu-id="440cb-137">Collection of objects supported by the directory.</span></span>|
+|<span data-ttu-id="440cb-138">version</span><span class="sxs-lookup"><span data-stu-id="440cb-138">version</span></span>|<span data-ttu-id="440cb-139">String</span><span class="sxs-lookup"><span data-stu-id="440cb-139">String</span></span>|<span data-ttu-id="440cb-140">検出されたバージョンを示す値を取得します。</span><span class="sxs-lookup"><span data-stu-id="440cb-140">Read only value that indicates version discovered.</span></span> <span data-ttu-id="440cb-141">検出がまだ行われていない場合は、Null。</span><span class="sxs-lookup"><span data-stu-id="440cb-141">Null if discovery has not yet occurred.</span></span>|
+|<span data-ttu-id="440cb-142">discoveryDateTime</span><span class="sxs-lookup"><span data-stu-id="440cb-142">discoveryDateTime</span></span>|<span data-ttu-id="440cb-143">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="440cb-143">DateTimeOffset</span></span>| <span data-ttu-id="440cb-144">は、ISO 8601 形式を使用した検出日時を表し、常に UTC 時間です。</span><span class="sxs-lookup"><span data-stu-id="440cb-144">Represents the discovery date and time using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="440cb-145">たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`</span><span class="sxs-lookup"><span data-stu-id="440cb-145">For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>|
+|<span data-ttu-id="440cb-146">discoverabilities</span><span class="sxs-lookup"><span data-stu-id="440cb-146">discoverabilities</span></span>|<span data-ttu-id="440cb-147">string</span><span class="sxs-lookup"><span data-stu-id="440cb-147">string</span></span>| <span data-ttu-id="440cb-148">アプリでサポートされている検出の種類を示す値の読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="440cb-148">Read only value indicating what type of discovery the app supports.</span></span> <span data-ttu-id="440cb-149">使用可能な値: `AttributeDataTypes`、`AttributeNames`、`AttributeReadOnly`、`None`、`ReferenceAttributes`、`UnknownFutureValue`。</span><span class="sxs-lookup"><span data-stu-id="440cb-149">Possible values are: `AttributeDataTypes`, `AttributeNames`, `AttributeReadOnly`, `None`, `ReferenceAttributes`, `UnknownFutureValue`.</span></span>| 
 
-## <a name="json-representation"></a><span data-ttu-id="203e7-133">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="203e7-133">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="440cb-150">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="440cb-150">JSON representation</span></span>
 
-<span data-ttu-id="203e7-134">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="203e7-134">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="440cb-151">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="440cb-151">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -44,220 +54,15 @@ ms.locfileid: "35621438"
 
 ```json
 {
+  "discoverabilities": "String",
+  "discoveryDateTime": "DateTimeOffset",
   "id": "String",
+  "metadata": [{"@odata.type": "microsoft.graph.stringKeyStringValuePair"}],
   "name": "String",
-  "objects": [{"@odata.type": "microsoft.graph.objectDefinition"}]
+  "objects": [{"@odata.type": "microsoft.graph.objectDefinition"}],
+  "version": "String"
 }
 
-```
-
-## <a name="json-example"></a><span data-ttu-id="203e7-135">JSON の例</span><span class="sxs-lookup"><span data-stu-id="203e7-135">JSON Example</span></span>
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.directoryDefinition"
-}-->
-
-```json
-{
-    "id": "8ffa6169-f354-4751-9b77-9c00765be92d",
-    "name": "salesforce.com",
-    "objects": [
-        {
-            "attributes": [
-                {
-                    "anchor": true,
-                    "name": "Id",
-                    "type": "String"
-                },
-                {
-                    "name": "IsActive",
-                    "required": true,
-                    "type": "Boolean"
-                },
-                {
-                    "mutability": "ReadWrite",
-                    "name": "Alias",
-                    "required": true,
-                    "type": "String"
-                },
-                {
-                    "name": "CompanyName",
-                    "type": "String"
-                },
-                {
-                    "name": "CommunityNickname",
-                    "type": "String"
-                },
-                {
-                    "name": "Email",
-                    "required": true,
-                    "type": "String"
-                },
-                {
-                    "name": "EmailEncodingKey",
-                    "required": true,
-                    "type": "String"
-                },
-                {
-                    "name": "LanguageLocaleKey",
-                    "required": true,
-                    "type": "String"
-                },
-                {
-                    "name": "FirstName",
-                    "required": true,
-                    "type": "String"
-                },
-                {
-                    "name": "LastName",
-                    "required": true,
-                    "type": "String"
-                },
-                {
-                    "name": "LocaleSidKey",
-                    "required": true,
-                    "type": "String"
-                },
-                {
-                    "metadata": [
-                        {
-                            "key": "LinkTypeName",
-                            "value": "PermissionSetAssignment"
-                        },
-                        {
-                            "key": "LinkPropertyNames",
-                            "value": "[\"PermissionSetId\"]"
-                        }
-                    ],
-                    "name": "PermissionSets",
-                    "referencedObjects": [
-                        {
-                            "referencedObjectName": "PermissionSet"
-                        }
-                    ],
-                    "type": "Reference"
-                },
-                {
-                    "name": "ProfileId",
-                    "required": true,
-                    "type": "String"
-                },
-                {
-                    "name": "ProfileName",
-                    "required": true,
-                    "type": "String"
-                },
-                {
-                    "name": "TimeZoneSidKey",
-                    "required": true,
-                    "type": "String"
-                },
-                {
-                    "name": "Username",
-                    "required": true,
-                    "type": "String"
-                },
-                {
-                    "name": "UserPermissionsCallCenterAutoLogin",
-                    "required": true,
-                    "type": "Boolean"
-                },
-                {
-                    "name": "UserPermissionsMarketingUser",
-                    "required": true,
-                    "type": "Boolean"
-                },
-                {
-                    "name": "Street",
-                    "type": "String"
-                },
-                {
-                    "name": "City",
-                    "type": "String"
-                },
-                {
-                    "name": "Division",
-                    "type": "String"
-                },
-                {
-                    "name": "EmployeeNumber",
-                    "type": "String"
-                },
-                {
-                    "name": "State",
-                    "type": "String"
-                },
-                {
-                    "name": "PostalCode",
-                    "type": "String"
-                },
-                {
-                    "name": "Country",
-                    "type": "String"
-                },
-                {
-                    "name": "Department",
-                    "type": "String"
-                },
-                {
-                    "name": "MobilePhone",
-                    "type": "String"
-                },
-                {
-                    "name": "Phone",
-                    "type": "String"
-                },
-                {
-                    "name": "Title",
-                    "type": "String"
-                },
-                {
-                    "name": "FederationIdentifier",
-                    "required": true,
-                    "type": "String"
-                },
-                {
-                    "name": "ManagerId",
-                    "referencedObjects": [
-                        {
-                            "referencedObjectName": "User"
-                        }
-                    ],
-                    "type": "Reference"
-                },
-                {
-                    "name": "UserRoleId",
-                    "referencedObjects": [
-                        {
-                            "referencedObjectName": "UserRole"
-                        }
-                    ],
-                    "type": "Reference"
-                }
-            ],
-            "metadata": [
-                {
-                    "key": "IsSoftDeletionSupported",
-                    "value": "false"
-                },
-                {
-                    "key": "ConnectorDataStorageRequired",
-                    "value": "false"
-                },
-                {
-                    "key": "IsSynchronizeAllSupported",
-                    "value": "false"
-                }
-            ],
-            "name": "User"
-        }
-    ],
-    "metadata": []
-}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
