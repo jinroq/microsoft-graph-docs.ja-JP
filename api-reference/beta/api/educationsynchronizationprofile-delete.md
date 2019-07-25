@@ -4,12 +4,12 @@ description: 識別子に基づいて、テナント内の学校データ同期�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: cc5b5230265bfaee468735fb06380652520afdd3
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: ce0d895413a02d2a3ea4b7e84fd25ca8da7dc3e7
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35441332"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35860086"
 ---
 # <a name="delete-a-educationsynchronizationprofile"></a>EducationSynchronizationProfile を削除する
 
@@ -64,6 +64,10 @@ DELETE https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}
 
 # <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-synchronizationprofile-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-synchronizationprofile-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -4,12 +4,12 @@ description: ディレクトリ設定テンプレートは、ディレクトリ�
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 954317077ffa7052ef72c94fcf9ffa54927f8d5c
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 81b29387cac2ee66aaeab290fb756323122bd1a5
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35436761"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35861987"
 ---
 # <a name="list-directorysettingtemplates"></a>DirectorySettingTemplates を一覧表示する
 
@@ -69,6 +69,10 @@ GET https://graph.microsoft.com/beta/directorySettingTemplates
 
 # <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-directorysettingtemplates-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-directorysettingtemplates-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
