@@ -5,52 +5,52 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 387c0a934b2b2ae005248b0fd1c0111da00387d4
-ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
+ms.openlocfilehash: 5a4540c8cfb41cfaf382dc02242855dd8814fa62
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "35639088"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35890594"
 ---
-# <a name="get-subscribedsku"></a><span data-ttu-id="6688a-103">subscribedSku を取得する</span><span class="sxs-lookup"><span data-stu-id="6688a-103">Get subscribedSku</span></span>
+# <a name="get-subscribedsku"></a><span data-ttu-id="8f9a7-103">subscribedSku を取得する</span><span class="sxs-lookup"><span data-stu-id="8f9a7-103">Get subscribedSku</span></span>
 
-<span data-ttu-id="6688a-104">組織が取得した特定の商用サブスクリプションを取得します。</span><span class="sxs-lookup"><span data-stu-id="6688a-104">Get a specific commercial subscription that an organization has acquired.</span></span>
+<span data-ttu-id="8f9a7-104">組織が取得した特定の商用サブスクリプションを取得します。</span><span class="sxs-lookup"><span data-stu-id="8f9a7-104">Get a specific commercial subscription that an organization has acquired.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="6688a-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="6688a-105">Permissions</span></span>
-<span data-ttu-id="6688a-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6688a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="8f9a7-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="8f9a7-105">Permissions</span></span>
+<span data-ttu-id="8f9a7-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8f9a7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="6688a-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="6688a-108">Permission type</span></span>      | <span data-ttu-id="6688a-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="6688a-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="8f9a7-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="8f9a7-108">Permission type</span></span>      | <span data-ttu-id="8f9a7-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="8f9a7-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="6688a-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="6688a-110">Delegated (work or school account)</span></span> | <span data-ttu-id="6688a-111">Directory.accessasuser.all。すべて、ディレクトリの読み取り、すべてのディレクトリを取得します。すべての</span><span class="sxs-lookup"><span data-stu-id="6688a-111">Organization.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="6688a-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="6688a-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6688a-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="6688a-113">Not supported.</span></span>    |
-|<span data-ttu-id="6688a-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="6688a-114">Application</span></span> | <span data-ttu-id="6688a-115">。すべて、ディレクトリの読み取り、すべての読み取り、すべての書き込み、すべての.</span><span class="sxs-lookup"><span data-stu-id="6688a-115">Organization.Read.All, Directory.Read.All, Organization.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="8f9a7-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="8f9a7-110">Delegated (work or school account)</span></span> | <span data-ttu-id="8f9a7-111">Directory.accessasuser.all。すべて、ディレクトリの読み取り、すべてのディレクトリを取得します。すべての</span><span class="sxs-lookup"><span data-stu-id="8f9a7-111">Organization.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="8f9a7-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="8f9a7-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8f9a7-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="8f9a7-113">Not supported.</span></span>    |
+|<span data-ttu-id="8f9a7-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="8f9a7-114">Application</span></span> | <span data-ttu-id="8f9a7-115">。すべて、ディレクトリの読み取り、すべての読み取り、すべての書き込み、すべての.</span><span class="sxs-lookup"><span data-stu-id="8f9a7-115">Organization.Read.All, Directory.Read.All, Organization.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="6688a-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="6688a-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8f9a7-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="8f9a7-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /subscribedSkus/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="6688a-117">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="6688a-117">Optional query parameters</span></span>
-<span data-ttu-id="6688a-118">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポート**していません** (例: $filter はここではサポートされていません)。</span><span class="sxs-lookup"><span data-stu-id="6688a-118">This method does **not** support the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response (e.g. $filter is not supported here).</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="8f9a7-117">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="8f9a7-117">Optional query parameters</span></span>
+<span data-ttu-id="8f9a7-118">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポート**していません** (例: $filter はここではサポートされていません)。</span><span class="sxs-lookup"><span data-stu-id="8f9a7-118">This method does **not** support the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response (e.g. $filter is not supported here).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="6688a-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="6688a-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="8f9a7-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="8f9a7-119">Request headers</span></span>
 
-| <span data-ttu-id="6688a-120">名前</span><span class="sxs-lookup"><span data-stu-id="6688a-120">Name</span></span>       | <span data-ttu-id="6688a-121">説明</span><span class="sxs-lookup"><span data-stu-id="6688a-121">Description</span></span>|
+| <span data-ttu-id="8f9a7-120">名前</span><span class="sxs-lookup"><span data-stu-id="8f9a7-120">Name</span></span>       | <span data-ttu-id="8f9a7-121">説明</span><span class="sxs-lookup"><span data-stu-id="8f9a7-121">Description</span></span>|
 |:-----------|:----------|
-| <span data-ttu-id="6688a-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="6688a-122">Authorization</span></span>  | <span data-ttu-id="6688a-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="6688a-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="8f9a7-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="8f9a7-122">Authorization</span></span>  | <span data-ttu-id="8f9a7-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="8f9a7-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="6688a-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="6688a-125">Request body</span></span>
-<span data-ttu-id="6688a-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="6688a-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="8f9a7-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="8f9a7-125">Request body</span></span>
+<span data-ttu-id="8f9a7-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="8f9a7-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="6688a-127">応答</span><span class="sxs-lookup"><span data-stu-id="6688a-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="8f9a7-127">応答</span><span class="sxs-lookup"><span data-stu-id="8f9a7-127">Response</span></span>
 
-<span data-ttu-id="6688a-128">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [subscribedSku](../resources/subscribedsku.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="6688a-128">If successful, this method returns a `200 OK` response code and [subscribedSku](../resources/subscribedsku.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="6688a-129">例</span><span class="sxs-lookup"><span data-stu-id="6688a-129">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="6688a-130">要求</span><span class="sxs-lookup"><span data-stu-id="6688a-130">Request</span></span>
-<span data-ttu-id="6688a-131">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="6688a-131">Here is an example of the request.</span></span>
+<span data-ttu-id="8f9a7-128">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [subscribedSku](../resources/subscribedsku.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="8f9a7-128">If successful, this method returns a `200 OK` response code and [subscribedSku](../resources/subscribedsku.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="8f9a7-129">例</span><span class="sxs-lookup"><span data-stu-id="8f9a7-129">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="8f9a7-130">要求</span><span class="sxs-lookup"><span data-stu-id="8f9a7-130">Request</span></span>
+<span data-ttu-id="8f9a7-131">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="8f9a7-131">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="6688a-132">プロトコル</span><span class="sxs-lookup"><span data-stu-id="6688a-132">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="8f9a7-132">プロトコル</span><span class="sxs-lookup"><span data-stu-id="8f9a7-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_subscribedsku"
@@ -58,22 +58,26 @@ GET /subscribedSkus/{id}
 ```http
 GET https://graph.microsoft.com/v1.0/subscribedSkus/{id}
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="6688a-133">C#</span><span class="sxs-lookup"><span data-stu-id="6688a-133">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="8f9a7-133">C#</span><span class="sxs-lookup"><span data-stu-id="8f9a7-133">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-subscribedsku-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="6688a-134">Javascript</span><span class="sxs-lookup"><span data-stu-id="6688a-134">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="8f9a7-134">Javascript</span><span class="sxs-lookup"><span data-stu-id="8f9a7-134">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-subscribedsku-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="6688a-135">目的-C</span><span class="sxs-lookup"><span data-stu-id="6688a-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="8f9a7-135">目的-C</span><span class="sxs-lookup"><span data-stu-id="8f9a7-135">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-subscribedsku-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="8f9a7-136">Java</span><span class="sxs-lookup"><span data-stu-id="8f9a7-136">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-subscribedsku-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="6688a-136">応答</span><span class="sxs-lookup"><span data-stu-id="6688a-136">Response</span></span>
-<span data-ttu-id="6688a-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="6688a-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="8f9a7-137">応答</span><span class="sxs-lookup"><span data-stu-id="8f9a7-137">Response</span></span>
+<span data-ttu-id="8f9a7-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="8f9a7-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
