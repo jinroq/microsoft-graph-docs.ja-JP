@@ -4,28 +4,28 @@ description: .
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 9351acf4210324cbf1e2a4b68772ad021728917f
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 237cd2c65aa8dd28a80d1747a799ca240ce20bd5
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35459098"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35882934"
 ---
-# <a name="range-lastrow"></a><span data-ttu-id="b1cc8-103">範囲:LastRow</span><span class="sxs-lookup"><span data-stu-id="b1cc8-103">Range: LastRow</span></span>
+# <a name="range-lastrow"></a><span data-ttu-id="e1339-103">範囲:LastRow</span><span class="sxs-lookup"><span data-stu-id="e1339-103">Range: LastRow</span></span>
 
-<span data-ttu-id="b1cc8-p101">範囲内の最後の行を取得します。たとえば、"B2:D5" の最後の行は "B5:D5" になります。</span><span class="sxs-lookup"><span data-stu-id="b1cc8-p101">Gets the last row within the range. For example, the last row of "B2:D5" is "B5:D5".</span></span>
-## <a name="permissions"></a><span data-ttu-id="b1cc8-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="b1cc8-106">Permissions</span></span>
-<span data-ttu-id="b1cc8-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b1cc8-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e1339-p101">範囲内の最後の行を取得します。たとえば、"B2:D5" の最後の行は "B5:D5" になります。</span><span class="sxs-lookup"><span data-stu-id="e1339-p101">Gets the last row within the range. For example, the last row of "B2:D5" is "B5:D5".</span></span>
+## <a name="permissions"></a><span data-ttu-id="e1339-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="e1339-106">Permissions</span></span>
+<span data-ttu-id="e1339-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e1339-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b1cc8-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="b1cc8-109">Permission type</span></span>      | <span data-ttu-id="b1cc8-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="b1cc8-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e1339-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="e1339-109">Permission type</span></span>      | <span data-ttu-id="e1339-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="e1339-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="b1cc8-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="b1cc8-111">Delegated (work or school account)</span></span> | <span data-ttu-id="b1cc8-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b1cc8-112">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="b1cc8-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="b1cc8-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b1cc8-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b1cc8-114">Not supported.</span></span>    |
-|<span data-ttu-id="b1cc8-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="b1cc8-115">Application</span></span> | <span data-ttu-id="b1cc8-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b1cc8-116">Not supported.</span></span> |
+|<span data-ttu-id="e1339-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="e1339-111">Delegated (work or school account)</span></span> | <span data-ttu-id="e1339-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e1339-112">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="e1339-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="e1339-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e1339-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e1339-114">Not supported.</span></span>    |
+|<span data-ttu-id="e1339-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="e1339-115">Application</span></span> | <span data-ttu-id="e1339-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e1339-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="b1cc8-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="b1cc8-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e1339-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="e1339-117">HTTP request</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="b1cc8-118">プロトコル</span><span class="sxs-lookup"><span data-stu-id="b1cc8-118">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="e1339-118">プロトコル</span><span class="sxs-lookup"><span data-stu-id="e1339-118">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/names/{name}/range/lastRow
@@ -33,22 +33,22 @@ GET /workbook/worksheets/{id|name}/range(address='<address>')/lastRow
 GET /workbook/tables/{id|name}/columns/{id|name}/range/lastRow
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="b1cc8-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b1cc8-119">Request headers</span></span>
-| <span data-ttu-id="b1cc8-120">名前</span><span class="sxs-lookup"><span data-stu-id="b1cc8-120">Name</span></span>       | <span data-ttu-id="b1cc8-121">説明</span><span class="sxs-lookup"><span data-stu-id="b1cc8-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e1339-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="e1339-119">Request headers</span></span>
+| <span data-ttu-id="e1339-120">名前</span><span class="sxs-lookup"><span data-stu-id="e1339-120">Name</span></span>       | <span data-ttu-id="e1339-121">説明</span><span class="sxs-lookup"><span data-stu-id="e1339-121">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="b1cc8-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="b1cc8-122">Authorization</span></span>  | <span data-ttu-id="b1cc8-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="b1cc8-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="b1cc8-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="b1cc8-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="b1cc8-p104">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="b1cc8-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="e1339-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="e1339-122">Authorization</span></span>  | <span data-ttu-id="e1339-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="e1339-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e1339-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="e1339-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="e1339-p104">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="e1339-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="b1cc8-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="b1cc8-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="e1339-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="e1339-128">Request body</span></span>
 
-## <a name="response"></a><span data-ttu-id="b1cc8-129">応答</span><span class="sxs-lookup"><span data-stu-id="b1cc8-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e1339-129">応答</span><span class="sxs-lookup"><span data-stu-id="e1339-129">Response</span></span>
 
-<span data-ttu-id="b1cc8-130">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [Range](../resources/range.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="b1cc8-130">If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
+<span data-ttu-id="e1339-130">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [Range](../resources/range.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="e1339-130">If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b1cc8-131">例</span><span class="sxs-lookup"><span data-stu-id="b1cc8-131">Example</span></span>
-<span data-ttu-id="b1cc8-132">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="b1cc8-132">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="b1cc8-133">要求</span><span class="sxs-lookup"><span data-stu-id="b1cc8-133">Request</span></span>
-<span data-ttu-id="b1cc8-134">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="b1cc8-134">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="e1339-131">例</span><span class="sxs-lookup"><span data-stu-id="e1339-131">Example</span></span>
+<span data-ttu-id="e1339-132">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="e1339-132">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="e1339-133">要求</span><span class="sxs-lookup"><span data-stu-id="e1339-133">Request</span></span>
+<span data-ttu-id="e1339-134">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="e1339-134">Here is an example of the request.</span></span>
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -57,23 +57,27 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/lastRow
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/lastRow
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="b1cc8-135">C#</span><span class="sxs-lookup"><span data-stu-id="b1cc8-135">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="e1339-135">C#</span><span class="sxs-lookup"><span data-stu-id="e1339-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/range-lastrow-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b1cc8-136">Javascript</span><span class="sxs-lookup"><span data-stu-id="b1cc8-136">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e1339-136">Javascript</span><span class="sxs-lookup"><span data-stu-id="e1339-136">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/range-lastrow-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="b1cc8-137">目的-C</span><span class="sxs-lookup"><span data-stu-id="b1cc8-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="e1339-137">目的-C</span><span class="sxs-lookup"><span data-stu-id="e1339-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/range-lastrow-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="e1339-138">Java</span><span class="sxs-lookup"><span data-stu-id="e1339-138">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/range-lastrow-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="b1cc8-138">応答</span><span class="sxs-lookup"><span data-stu-id="b1cc8-138">Response</span></span>
-<span data-ttu-id="b1cc8-p105">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="b1cc8-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="e1339-139">応答</span><span class="sxs-lookup"><span data-stu-id="e1339-139">Response</span></span>
+<span data-ttu-id="e1339-p105">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="e1339-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
