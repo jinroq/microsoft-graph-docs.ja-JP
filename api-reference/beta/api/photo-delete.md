@@ -2,12 +2,12 @@
 title: 写真を削除する
 description: 写真を削除します。
 localization_priority: Normal
-ms.openlocfilehash: 6a1cf131933151c297fe72806d66e155ad9aabda
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 2477b27d0bff760d46e8f812ba3343ddaeb2ddd1
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35454287"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35876957"
 ---
 # <a name="delete-photo"></a>写真を削除する
 
@@ -66,6 +66,10 @@ DELETE https://graph.microsoft.com/beta/users/{id|userPrincipalName}/photo
 
 # <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-photo-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-photo-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

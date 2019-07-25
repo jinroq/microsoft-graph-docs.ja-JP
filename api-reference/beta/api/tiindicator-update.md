@@ -4,12 +4,12 @@ description: TiIndicator オブジェクトのプロパティを更新します�
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: e19213c34730d42bd133ae446c02b182865f5f70
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: e505ad68f25ebe2fc0057c8d8aa7ac373295c1ba
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35457955"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35868180"
 ---
 # <a name="update-tiindicator"></a>tiIndicator を更新する
 
@@ -138,6 +138,10 @@ Content-type: application/json
 
 # <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-tiindicator-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-tiindicator-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

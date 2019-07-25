@@ -2,12 +2,12 @@
 title: appRoleAssignment を作成する
 description: この API を使用して、新しい appRoleAssignment を作成します。
 localization_priority: Normal
-ms.openlocfilehash: 5f47d1d7809182f963469b02e6781462997e5d67
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 3b3820394681ed27b862465e041f21d34c2b0835
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35457213"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35869901"
 ---
 # <a name="create-approleassignment"></a>appRoleAssignment を作成する
 
@@ -74,6 +74,10 @@ Content-length: 233
 
 # <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-approleassignment-from-serviceprincipal-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-approleassignment-from-serviceprincipal-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
