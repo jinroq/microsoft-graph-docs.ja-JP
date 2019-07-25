@@ -1,17 +1,17 @@
 ---
-title: ChatMessage の取得
+title: chatMessage を取得する
 description: チャット内の 1 つのメッセージを取得します。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: c4f59c4f881f971a514b4922e572619a5d9a757b
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
-ms.translationtype: MT
+ms.openlocfilehash: 8d2335ea5e98816c86aff400685663320afa0325
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778391"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35863581"
 ---
-# <a name="get-chatmessage"></a>ChatMessage の取得
+# <a name="get-chatmessage"></a>chatMessage を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,12 +23,12 @@ ms.locfileid: "35778391"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | チャット。読み取り、読み取り/書き込み   |
+|委任 (職場または学校のアカウント) | Chat.Read、Chat.ReadWrite   |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | Chat.Read.All   |
+|Application | Chat.Read.All   |
 
 > [!NOTE]
-> アプリケーションのアクセス許可でこの API を呼び出す前に、アクセスを要求する必要があります。 詳細については、「 [Microsoft Teams の保護された api](/graph/teams-protected-apis)」を参照してください。
+> この API をアプリケーションのアクセス許可で呼び出す前に、アクセスを要求する必要があります。 詳細については、「[Microsoft Teams の保護された API](/graph/teams-protected-apis)」を参照してください。
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -59,7 +59,7 @@ GET /chats/{id}/messages/{id}
 ##### <a name="request"></a>要求
 以下は、要求の例です。
 
-# <a name="httptabhttp"></a>[プロトコル](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_chat_message"
@@ -75,8 +75,12 @@ GET https://graph.microsoft.com/beta/me/chats/{id}/messages/{id}
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-chat-message-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-chat-message-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-chat-message-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

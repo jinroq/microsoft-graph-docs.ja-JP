@@ -3,12 +3,12 @@ title: サブスクリプションを一覧表示する
 description: アプリ ID、ユーザー、およびテナントでのユーザーの役割に基づいて、Webhook サブスクリプションのプロパティとリレーションシップを取得します。
 localization_priority: Priority
 author: piotrci
-ms.openlocfilehash: a82d47d01a21ee49f12228b8c1dd6e93bda61522
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 56a24582d5eb40a10bded2c82a01c1c24b3736c6
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35621264"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35894336"
 ---
 # <a name="list-subscriptions"></a>サブスクリプションを一覧表示する
 
@@ -95,6 +95,10 @@ GET https://graph.microsoft.com/v1.0/subscriptions
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-subscriptions-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-subscriptions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
