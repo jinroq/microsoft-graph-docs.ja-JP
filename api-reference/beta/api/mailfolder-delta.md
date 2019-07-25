@@ -4,12 +4,12 @@ description: ユーザーのメールボックスで追加または削除され�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: c06c080c7198ce9465a51199cbc23265bf5d2573
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 7e9190a4932aef2532ebf3592c9c8bec5c412345
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35448798"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35880120"
 ---
 # <a name="mailfolder-delta"></a>mailFolder: delta
 
@@ -27,7 +27,7 @@ ms.locfileid: "35448798"
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | メール ReadBasic、Mail. 読み取り、ReadWrite    |
 |委任 (個人用 Microsoft アカウント) | メール ReadBasic、Mail. 読み取り、ReadWrite    |
-|アプリケーション | Mail.Read、Mail.ReadWrite |
+|アプリケーション | -ReadBasic、mail. 読み取り、および書き込み |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -85,6 +85,10 @@ Prefer: odata.maxpagesize=2
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/mailfolder-delta-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/mailfolder-delta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
