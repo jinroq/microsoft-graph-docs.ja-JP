@@ -2,50 +2,50 @@
 title: inferenceClassificationOverride を削除する
 description: ID で指定された優先受信トレイの上書きを削除します。
 localization_priority: Normal
-ms.openlocfilehash: b1b7eac0e4f3b8a94526306f8918f8d88a117a7d
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 97ce2f0aab82e031fec2b2b96e3ffd8d08c92a3b
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35441822"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35857504"
 ---
-# <a name="delete-inferenceclassificationoverride"></a><span data-ttu-id="ad8e1-103">inferenceClassificationOverride を削除する</span><span class="sxs-lookup"><span data-stu-id="ad8e1-103">Delete inferenceClassificationOverride</span></span>
+# <a name="delete-inferenceclassificationoverride"></a><span data-ttu-id="cc12e-103">inferenceClassificationOverride を削除する</span><span class="sxs-lookup"><span data-stu-id="cc12e-103">Delete inferenceClassificationOverride</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ad8e1-104">ID で指定された[優先受信トレイ](../resources/manage-focused-inbox.md)の上書きを削除します。</span><span class="sxs-lookup"><span data-stu-id="ad8e1-104">Delete a [Focused Inbox](../resources/manage-focused-inbox.md) override specified by its ID.</span></span>
-## <a name="permissions"></a><span data-ttu-id="ad8e1-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="ad8e1-105">Permissions</span></span>
-<span data-ttu-id="ad8e1-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ad8e1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="cc12e-104">ID で指定された[優先受信トレイ](../resources/manage-focused-inbox.md)の上書きを削除します。</span><span class="sxs-lookup"><span data-stu-id="cc12e-104">Delete a [Focused Inbox](../resources/manage-focused-inbox.md) override specified by its ID.</span></span>
+## <a name="permissions"></a><span data-ttu-id="cc12e-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="cc12e-105">Permissions</span></span>
+<span data-ttu-id="cc12e-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="cc12e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ad8e1-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="ad8e1-108">Permission type</span></span>      | <span data-ttu-id="ad8e1-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="ad8e1-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="cc12e-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="cc12e-108">Permission type</span></span>      | <span data-ttu-id="cc12e-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="cc12e-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ad8e1-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="ad8e1-110">Delegated (work or school account)</span></span> | <span data-ttu-id="ad8e1-111">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ad8e1-111">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="ad8e1-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="ad8e1-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ad8e1-113">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ad8e1-113">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="ad8e1-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="ad8e1-114">Application</span></span> | <span data-ttu-id="ad8e1-115">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ad8e1-115">Mail.ReadWrite</span></span> |
+|<span data-ttu-id="cc12e-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="cc12e-110">Delegated (work or school account)</span></span> | <span data-ttu-id="cc12e-111">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="cc12e-111">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="cc12e-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="cc12e-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cc12e-113">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="cc12e-113">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="cc12e-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="cc12e-114">Application</span></span> | <span data-ttu-id="cc12e-115">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="cc12e-115">Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ad8e1-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="ad8e1-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="cc12e-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="cc12e-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/inferenceClassification/overrides/{id}
 DELETE /users/{id}/inferenceClassification/overrides/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="ad8e1-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="ad8e1-117">Request headers</span></span>
-| <span data-ttu-id="ad8e1-118">名前</span><span class="sxs-lookup"><span data-stu-id="ad8e1-118">Name</span></span>       | <span data-ttu-id="ad8e1-119">型</span><span class="sxs-lookup"><span data-stu-id="ad8e1-119">Type</span></span> | <span data-ttu-id="ad8e1-120">説明</span><span class="sxs-lookup"><span data-stu-id="ad8e1-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="cc12e-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="cc12e-117">Request headers</span></span>
+| <span data-ttu-id="cc12e-118">名前</span><span class="sxs-lookup"><span data-stu-id="cc12e-118">Name</span></span>       | <span data-ttu-id="cc12e-119">型</span><span class="sxs-lookup"><span data-stu-id="cc12e-119">Type</span></span> | <span data-ttu-id="cc12e-120">説明</span><span class="sxs-lookup"><span data-stu-id="cc12e-120">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="ad8e1-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="ad8e1-121">Authorization</span></span>  | <span data-ttu-id="ad8e1-122">string</span><span class="sxs-lookup"><span data-stu-id="ad8e1-122">string</span></span>  | <span data-ttu-id="ad8e1-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="ad8e1-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="cc12e-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="cc12e-121">Authorization</span></span>  | <span data-ttu-id="cc12e-122">string</span><span class="sxs-lookup"><span data-stu-id="cc12e-122">string</span></span>  | <span data-ttu-id="cc12e-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="cc12e-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="ad8e1-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="ad8e1-125">Request body</span></span>
-<span data-ttu-id="ad8e1-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="ad8e1-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="cc12e-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="cc12e-125">Request body</span></span>
+<span data-ttu-id="cc12e-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="cc12e-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ad8e1-127">応答</span><span class="sxs-lookup"><span data-stu-id="ad8e1-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="cc12e-127">応答</span><span class="sxs-lookup"><span data-stu-id="cc12e-127">Response</span></span>
 
-<span data-ttu-id="ad8e1-p103">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="ad8e1-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="cc12e-p103">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="cc12e-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ad8e1-130">例</span><span class="sxs-lookup"><span data-stu-id="ad8e1-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="ad8e1-131">要求</span><span class="sxs-lookup"><span data-stu-id="ad8e1-131">Request</span></span>
-<span data-ttu-id="ad8e1-132">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="ad8e1-132">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="cc12e-130">例</span><span class="sxs-lookup"><span data-stu-id="cc12e-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="cc12e-131">要求</span><span class="sxs-lookup"><span data-stu-id="cc12e-131">Request</span></span>
+<span data-ttu-id="cc12e-132">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="cc12e-132">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="ad8e1-133">プロトコル</span><span class="sxs-lookup"><span data-stu-id="ad8e1-133">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="cc12e-133">プロトコル</span><span class="sxs-lookup"><span data-stu-id="cc12e-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_inferenceclassificationoverride"
@@ -53,22 +53,26 @@ DELETE /users/{id}/inferenceClassification/overrides/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/me/inferenceClassification/overrides/98f5bdef-576a-404d-a2ea-07a3cf34af4r
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="ad8e1-134">C#</span><span class="sxs-lookup"><span data-stu-id="ad8e1-134">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="cc12e-134">C#</span><span class="sxs-lookup"><span data-stu-id="cc12e-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-inferenceclassificationoverride-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ad8e1-135">Javascript</span><span class="sxs-lookup"><span data-stu-id="ad8e1-135">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="cc12e-135">Javascript</span><span class="sxs-lookup"><span data-stu-id="cc12e-135">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-inferenceclassificationoverride-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="ad8e1-136">目的-C</span><span class="sxs-lookup"><span data-stu-id="ad8e1-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="cc12e-136">目的-C</span><span class="sxs-lookup"><span data-stu-id="cc12e-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-inferenceclassificationoverride-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="cc12e-137">Java</span><span class="sxs-lookup"><span data-stu-id="cc12e-137">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-inferenceclassificationoverride-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="ad8e1-137">応答</span><span class="sxs-lookup"><span data-stu-id="ad8e1-137">Response</span></span>
-<span data-ttu-id="ad8e1-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="ad8e1-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="cc12e-138">応答</span><span class="sxs-lookup"><span data-stu-id="cc12e-138">Response</span></span>
+<span data-ttu-id="cc12e-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="cc12e-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

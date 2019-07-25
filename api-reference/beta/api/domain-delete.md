@@ -4,60 +4,60 @@ description: テナントからドメインを削除します。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f20c68bf95a1d60df27a8ae8412dd23cbf28a118
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: c8774a5919f96455514059b7d1e325be1eda349c
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35436740"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35861970"
 ---
-# <a name="delete-domain"></a><span data-ttu-id="a292e-103">ドメインを削除する</span><span class="sxs-lookup"><span data-stu-id="a292e-103">Delete domain</span></span>
+# <a name="delete-domain"></a><span data-ttu-id="870dd-103">ドメインを削除する</span><span class="sxs-lookup"><span data-stu-id="870dd-103">Delete domain</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a292e-104">テナントからドメインを削除します。</span><span class="sxs-lookup"><span data-stu-id="a292e-104">Deletes a domain from a tenant.</span></span>
+<span data-ttu-id="870dd-104">テナントからドメインを削除します。</span><span class="sxs-lookup"><span data-stu-id="870dd-104">Deletes a domain from a tenant.</span></span>
 
-> <span data-ttu-id="a292e-105">**重要:** 削除されたドメインは復元できません。</span><span class="sxs-lookup"><span data-stu-id="a292e-105">**Important:** Deleted domains are not recoverable.</span></span>
+> <span data-ttu-id="870dd-105">**重要:** 削除されたドメインは復元できません。</span><span class="sxs-lookup"><span data-stu-id="870dd-105">**Important:** Deleted domains are not recoverable.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a292e-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="a292e-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="870dd-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="870dd-106">Permissions</span></span>
 
-<span data-ttu-id="a292e-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a292e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="870dd-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="870dd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="a292e-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="a292e-109">Permission type</span></span>      | <span data-ttu-id="a292e-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="a292e-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="870dd-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="870dd-109">Permission type</span></span>      | <span data-ttu-id="870dd-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="870dd-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a292e-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="a292e-111">Delegated (work or school account)</span></span> | <span data-ttu-id="a292e-112">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="a292e-112">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="a292e-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="a292e-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a292e-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a292e-114">Not supported.</span></span>    |
-|<span data-ttu-id="a292e-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="a292e-115">Application</span></span> | <span data-ttu-id="a292e-116">Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a292e-116">Domain.ReadWrite.All</span></span> |
+|<span data-ttu-id="870dd-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="870dd-111">Delegated (work or school account)</span></span> | <span data-ttu-id="870dd-112">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="870dd-112">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="870dd-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="870dd-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="870dd-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="870dd-114">Not supported.</span></span>    |
+|<span data-ttu-id="870dd-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="870dd-115">Application</span></span> | <span data-ttu-id="870dd-116">Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="870dd-116">Domain.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a292e-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="a292e-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="870dd-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="870dd-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /domains/{id}
 ```
 
-> <span data-ttu-id="a292e-118">{Id} には、ドメインを完全修飾ドメイン名で指定します。</span><span class="sxs-lookup"><span data-stu-id="a292e-118">For {id}, specify the domain with its fully qualified domain name.</span></span>
+> <span data-ttu-id="870dd-118">{Id} には、ドメインを完全修飾ドメイン名で指定します。</span><span class="sxs-lookup"><span data-stu-id="870dd-118">For {id}, specify the domain with its fully qualified domain name.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="a292e-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="a292e-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="870dd-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="870dd-119">Request headers</span></span>
 
-| <span data-ttu-id="a292e-120">名前</span><span class="sxs-lookup"><span data-stu-id="a292e-120">Name</span></span>       | <span data-ttu-id="a292e-121">説明</span><span class="sxs-lookup"><span data-stu-id="a292e-121">Description</span></span>|
+| <span data-ttu-id="870dd-120">名前</span><span class="sxs-lookup"><span data-stu-id="870dd-120">Name</span></span>       | <span data-ttu-id="870dd-121">説明</span><span class="sxs-lookup"><span data-stu-id="870dd-121">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="a292e-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="a292e-122">Authorization</span></span>  | <span data-ttu-id="a292e-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="a292e-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="a292e-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="a292e-125">Content-Type</span></span>  | <span data-ttu-id="a292e-126">application/json</span><span class="sxs-lookup"><span data-stu-id="a292e-126">application/json</span></span> |
+| <span data-ttu-id="870dd-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="870dd-122">Authorization</span></span>  | <span data-ttu-id="870dd-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="870dd-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="870dd-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="870dd-125">Content-Type</span></span>  | <span data-ttu-id="870dd-126">application/json</span><span class="sxs-lookup"><span data-stu-id="870dd-126">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="a292e-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="a292e-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="870dd-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="870dd-127">Request body</span></span>
 
-<span data-ttu-id="a292e-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="a292e-128">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="870dd-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="870dd-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a292e-129">応答</span><span class="sxs-lookup"><span data-stu-id="a292e-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="870dd-129">応答</span><span class="sxs-lookup"><span data-stu-id="870dd-129">Response</span></span>
 
-<span data-ttu-id="a292e-p103">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文は返されません。</span><span class="sxs-lookup"><span data-stu-id="a292e-p103">If successful, this method returns `204 No Content` response code. It does not return a response body.</span></span>
+<span data-ttu-id="870dd-p103">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文は返されません。</span><span class="sxs-lookup"><span data-stu-id="870dd-p103">If successful, this method returns `204 No Content` response code. It does not return a response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a292e-132">例</span><span class="sxs-lookup"><span data-stu-id="a292e-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="a292e-133">要求</span><span class="sxs-lookup"><span data-stu-id="a292e-133">Request</span></span>
+## <a name="example"></a><span data-ttu-id="870dd-132">例</span><span class="sxs-lookup"><span data-stu-id="870dd-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="870dd-133">要求</span><span class="sxs-lookup"><span data-stu-id="870dd-133">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="a292e-134">プロトコル</span><span class="sxs-lookup"><span data-stu-id="a292e-134">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="870dd-134">プロトコル</span><span class="sxs-lookup"><span data-stu-id="870dd-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_domain"
@@ -65,24 +65,28 @@ DELETE /domains/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/domains/contoso.com
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="a292e-135">C#</span><span class="sxs-lookup"><span data-stu-id="a292e-135">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="870dd-135">C#</span><span class="sxs-lookup"><span data-stu-id="870dd-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-domain-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a292e-136">Javascript</span><span class="sxs-lookup"><span data-stu-id="a292e-136">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="870dd-136">Javascript</span><span class="sxs-lookup"><span data-stu-id="870dd-136">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-domain-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="a292e-137">目的-C</span><span class="sxs-lookup"><span data-stu-id="a292e-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="870dd-137">目的-C</span><span class="sxs-lookup"><span data-stu-id="870dd-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-domain-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="870dd-138">Java</span><span class="sxs-lookup"><span data-stu-id="870dd-138">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-domain-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="a292e-138">応答</span><span class="sxs-lookup"><span data-stu-id="a292e-138">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="870dd-139">応答</span><span class="sxs-lookup"><span data-stu-id="870dd-139">Response</span></span>
 
-<span data-ttu-id="a292e-p104">注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="a292e-p104">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="870dd-p104">注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="870dd-p104">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

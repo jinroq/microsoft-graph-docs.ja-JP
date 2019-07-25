@@ -4,57 +4,57 @@ description: 特定のジョブまたはテンプレートの同期スキーマ�
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 432b22207bc8daee547b7d217a3a2e0f059f9f99
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 63e1ed50035cd7d04775a3af66b0127d6da17395
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620984"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35869110"
 ---
-# <a name="update-synchronizationschema"></a><span data-ttu-id="2394e-106">同期スキーマの更新</span><span class="sxs-lookup"><span data-stu-id="2394e-106">Update synchronizationSchema</span></span>
+# <a name="update-synchronizationschema"></a><span data-ttu-id="6a7e9-106">同期スキーマの更新</span><span class="sxs-lookup"><span data-stu-id="6a7e9-106">Update synchronizationSchema</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="2394e-107">特定のジョブまたはテンプレートの同期スキーマを更新します。</span><span class="sxs-lookup"><span data-stu-id="2394e-107">Update the synchronization schema for a given job or template.</span></span> <span data-ttu-id="2394e-108">このメソッドは、現在のスキーマを要求で指定されたものに完全に置き換えます。</span><span class="sxs-lookup"><span data-stu-id="2394e-108">This method fully replaces the current schema with the one provided in the request.</span></span> <span data-ttu-id="2394e-109">テンプレートのスキーマを更新するには、アプリケーションオブジェクトに対して呼び出しを行います。</span><span class="sxs-lookup"><span data-stu-id="2394e-109">To update the schema of a template, make the call on the application object.</span></span> <span data-ttu-id="2394e-110">アプリケーションの所有者である必要があります。</span><span class="sxs-lookup"><span data-stu-id="2394e-110">You must be the owner of the application.</span></span>
+<span data-ttu-id="6a7e9-107">特定のジョブまたはテンプレートの同期スキーマを更新します。</span><span class="sxs-lookup"><span data-stu-id="6a7e9-107">Update the synchronization schema for a given job or template.</span></span> <span data-ttu-id="6a7e9-108">このメソッドは、現在のスキーマを要求で指定されたものに完全に置き換えます。</span><span class="sxs-lookup"><span data-stu-id="6a7e9-108">This method fully replaces the current schema with the one provided in the request.</span></span> <span data-ttu-id="6a7e9-109">テンプレートのスキーマを更新するには、アプリケーションオブジェクトに対して呼び出しを行います。</span><span class="sxs-lookup"><span data-stu-id="6a7e9-109">To update the schema of a template, make the call on the application object.</span></span> <span data-ttu-id="6a7e9-110">アプリケーションの所有者である必要があります。</span><span class="sxs-lookup"><span data-stu-id="6a7e9-110">You must be the owner of the application.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2394e-111">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="2394e-111">Permissions</span></span>
-<span data-ttu-id="2394e-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2394e-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="6a7e9-111">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="6a7e9-111">Permissions</span></span>
+<span data-ttu-id="6a7e9-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6a7e9-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2394e-114">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="2394e-114">Permission type</span></span>                        | <span data-ttu-id="2394e-115">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="2394e-115">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="6a7e9-114">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="6a7e9-114">Permission type</span></span>                        | <span data-ttu-id="6a7e9-115">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="6a7e9-115">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="2394e-116">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="2394e-116">Delegated (work or school account)</span></span>     |<span data-ttu-id="2394e-117">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2394e-117">Directory.ReadWrite.All</span></span>  |
-|<span data-ttu-id="2394e-118">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="2394e-118">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="2394e-119">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="2394e-119">Not supported.</span></span>|
-|<span data-ttu-id="2394e-120">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="2394e-120">Application</span></span>                            |<span data-ttu-id="2394e-121">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="2394e-121">Not supported.</span></span>| 
+|<span data-ttu-id="6a7e9-116">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="6a7e9-116">Delegated (work or school account)</span></span>     |<span data-ttu-id="6a7e9-117">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6a7e9-117">Directory.ReadWrite.All</span></span>  |
+|<span data-ttu-id="6a7e9-118">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="6a7e9-118">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="6a7e9-119">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="6a7e9-119">Not supported.</span></span>|
+|<span data-ttu-id="6a7e9-120">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="6a7e9-120">Application</span></span>                            |<span data-ttu-id="6a7e9-121">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="6a7e9-121">Not supported.</span></span>| 
 
-## <a name="http-request"></a><span data-ttu-id="2394e-122">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="2394e-122">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6a7e9-122">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="6a7e9-122">HTTP Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PUT /servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
 PUT /applications/{id}/synchronization/templates/{templateId}/schema
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="2394e-123">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="2394e-123">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="6a7e9-123">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="6a7e9-123">Request headers</span></span>
 
-| <span data-ttu-id="2394e-124">名前</span><span class="sxs-lookup"><span data-stu-id="2394e-124">Name</span></span>           | <span data-ttu-id="2394e-125">型</span><span class="sxs-lookup"><span data-stu-id="2394e-125">Type</span></span>    | <span data-ttu-id="2394e-126">説明</span><span class="sxs-lookup"><span data-stu-id="2394e-126">Description</span></span>|
+| <span data-ttu-id="6a7e9-124">名前</span><span class="sxs-lookup"><span data-stu-id="6a7e9-124">Name</span></span>           | <span data-ttu-id="6a7e9-125">型</span><span class="sxs-lookup"><span data-stu-id="6a7e9-125">Type</span></span>    | <span data-ttu-id="6a7e9-126">説明</span><span class="sxs-lookup"><span data-stu-id="6a7e9-126">Description</span></span>|
 |:---------------|:--------|:-----------|
-| <span data-ttu-id="2394e-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="2394e-127">Authorization</span></span>  | <span data-ttu-id="2394e-128">string</span><span class="sxs-lookup"><span data-stu-id="2394e-128">string</span></span>  | <span data-ttu-id="2394e-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="2394e-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="6a7e9-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="6a7e9-127">Authorization</span></span>  | <span data-ttu-id="6a7e9-128">string</span><span class="sxs-lookup"><span data-stu-id="6a7e9-128">string</span></span>  | <span data-ttu-id="6a7e9-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="6a7e9-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="2394e-131">要求本文</span><span class="sxs-lookup"><span data-stu-id="2394e-131">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="6a7e9-131">要求本文</span><span class="sxs-lookup"><span data-stu-id="6a7e9-131">Request body</span></span>
 
-<span data-ttu-id="2394e-132">要求本文で、既存のスキーマを置換するための[同期スキーマ](../resources/synchronization-synchronizationschema.md)オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="2394e-132">In the request body, supply the [synchronizationSchema](../resources/synchronization-synchronizationschema.md) object to replace the existing schema with.</span></span>
+<span data-ttu-id="6a7e9-132">要求本文で、既存のスキーマを置換するための[同期スキーマ](../resources/synchronization-synchronizationschema.md)オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="6a7e9-132">In the request body, supply the [synchronizationSchema](../resources/synchronization-synchronizationschema.md) object to replace the existing schema with.</span></span>
 
-## <a name="response"></a><span data-ttu-id="2394e-133">応答</span><span class="sxs-lookup"><span data-stu-id="2394e-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6a7e9-133">応答</span><span class="sxs-lookup"><span data-stu-id="6a7e9-133">Response</span></span>
 
-<span data-ttu-id="2394e-134">成功した場合は`204 No Content` 、応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="2394e-134">If successful, returns a `204 No Content` response code.</span></span> <span data-ttu-id="2394e-135">応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="2394e-135">It does not return anything in the response body.</span></span>
+<span data-ttu-id="6a7e9-134">成功した場合は`204 No Content` 、応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="6a7e9-134">If successful, returns a `204 No Content` response code.</span></span> <span data-ttu-id="6a7e9-135">応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="6a7e9-135">It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2394e-136">例</span><span class="sxs-lookup"><span data-stu-id="2394e-136">Example</span></span>
+## <a name="example"></a><span data-ttu-id="6a7e9-136">例</span><span class="sxs-lookup"><span data-stu-id="6a7e9-136">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="2394e-137">要求</span><span class="sxs-lookup"><span data-stu-id="2394e-137">Request</span></span>
-<span data-ttu-id="2394e-138">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="2394e-138">The following is an example of a request.</span></span>
+##### <a name="request"></a><span data-ttu-id="6a7e9-137">要求</span><span class="sxs-lookup"><span data-stu-id="6a7e9-137">Request</span></span>
+<span data-ttu-id="6a7e9-138">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="6a7e9-138">The following is an example of a request.</span></span>
 
-><span data-ttu-id="2394e-139">**注:** ここに示す要求オブジェクトは読みやすいように短縮されています。</span><span class="sxs-lookup"><span data-stu-id="2394e-139">**Note:** The request object shown here is shortened for readability.</span></span> <span data-ttu-id="2394e-140">実際の呼び出しですべてのプロパティを指定します。</span><span class="sxs-lookup"><span data-stu-id="2394e-140">Supply all the properties in an actual call.</span></span>
+><span data-ttu-id="6a7e9-139">**注:** ここに示す要求オブジェクトは読みやすいように短縮されています。</span><span class="sxs-lookup"><span data-stu-id="6a7e9-139">**Note:** The request object shown here is shortened for readability.</span></span> <span data-ttu-id="6a7e9-140">実際の呼び出しですべてのプロパティを指定します。</span><span class="sxs-lookup"><span data-stu-id="6a7e9-140">Supply all the properties in an actual call.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="2394e-141">プロトコル</span><span class="sxs-lookup"><span data-stu-id="2394e-141">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="6a7e9-141">プロトコル</span><span class="sxs-lookup"><span data-stu-id="6a7e9-141">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_synchronizationschema"
@@ -105,23 +105,27 @@ Content-type: application/json
 }
 
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="2394e-142">C#</span><span class="sxs-lookup"><span data-stu-id="2394e-142">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="6a7e9-142">C#</span><span class="sxs-lookup"><span data-stu-id="6a7e9-142">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-synchronizationschema-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="2394e-143">Javascript</span><span class="sxs-lookup"><span data-stu-id="2394e-143">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="6a7e9-143">Javascript</span><span class="sxs-lookup"><span data-stu-id="6a7e9-143">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-synchronizationschema-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="2394e-144">目的-C</span><span class="sxs-lookup"><span data-stu-id="2394e-144">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="6a7e9-144">目的-C</span><span class="sxs-lookup"><span data-stu-id="6a7e9-144">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-synchronizationschema-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="6a7e9-145">Java</span><span class="sxs-lookup"><span data-stu-id="6a7e9-145">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-synchronizationschema-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="2394e-145">応答</span><span class="sxs-lookup"><span data-stu-id="2394e-145">Response</span></span>
-<span data-ttu-id="2394e-146">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="2394e-146">The following is an example of a response.</span></span>
+##### <a name="response"></a><span data-ttu-id="6a7e9-146">応答</span><span class="sxs-lookup"><span data-stu-id="6a7e9-146">Response</span></span>
+<span data-ttu-id="6a7e9-147">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="6a7e9-147">The following is an example of a response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
