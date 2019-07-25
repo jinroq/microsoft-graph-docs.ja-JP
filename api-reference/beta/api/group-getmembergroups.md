@@ -4,12 +4,12 @@ description: 指定されたグループがメンバーであるすべてのグ�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: bfd6df7cffd3c16f1063af85800cae33eef7db57
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 51ab29cfd44f9812d994cabcfdd5531f03f893cb
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35440534"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35858587"
 ---
 # <a name="group-getmembergroups"></a>グループ: getMemberGroups
 
@@ -87,6 +87,10 @@ Content-length: 33
 
 # <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-getmembergroups-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-getmembergroups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

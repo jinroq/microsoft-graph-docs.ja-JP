@@ -4,12 +4,12 @@ description: '`/education` 名前空間は、教育機関に固有の機能を�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 84b7312515174c19837a5cda3fa3ffb466f65c23
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 5d845d22571f8c5b88badfb34e66c330e5c38300
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35458755"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35884855"
 ---
 # <a name="educationroot-resource-type"></a>educationRoot リソースの種類
 
@@ -71,6 +71,10 @@ GET https://graph.microsoft.com/v1.0/education
 
 # <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-education-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-education-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

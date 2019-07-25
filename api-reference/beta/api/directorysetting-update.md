@@ -4,12 +4,12 @@ description: 特定のディレクトリ設定オブジェクトのプロパテ�
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d3b62044ad833d9d8f2e05d49e430d375654c766
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 509c3eaba1a7de10da717d778d0feb59c1e39c51
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35436760"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35862033"
 ---
 # <a name="update-a-directory-setting"></a>ディレクトリ設定を更新する
 
@@ -84,6 +84,10 @@ Content-length: 178
 
 # <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-directorysetting-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-directorysetting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

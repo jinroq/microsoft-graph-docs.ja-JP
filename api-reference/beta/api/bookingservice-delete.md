@@ -4,12 +4,12 @@ description: 指定した bookingservice の bookingService オブジェクト�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: b570263eca174522cac0e2069909619b2e348057
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: ca96dc60ed0221cc58ddd5901ab3fd898033b0a8
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35439071"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35865331"
 ---
 # <a name="delete-bookingservice"></a>BookingService の削除
 
@@ -65,6 +65,10 @@ DELETE https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M
 
 # <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-bookingservice-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-bookingservice-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -3,12 +3,12 @@ title: ListItem のバージョンの一覧表示
 description: SharePoint は、リスト アイテムの履歴を保持するように構成できます。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 35d44b6daf866b1fa05423ea4fb5f39318b68bbb
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: fcff5934cddaef1b49b03e01f023c9e3c7ce1e71
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35460785"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35884561"
 ---
 # <a name="listing-versions-of-a-listitem"></a>ListItem のバージョンの一覧表示
 
@@ -64,6 +64,10 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions
 
 # <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-previous-versions-listitem-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-previous-versions-listitem-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

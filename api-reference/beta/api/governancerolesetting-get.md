@@ -2,12 +2,12 @@
 title: GovernanceRoleSetting を取得する
 description: GovernanceRoleSetting のプロパティとリレーションシップを取得します。
 localization_priority: Normal
-ms.openlocfilehash: 8b3334cbe1103d88d53868545cc0313b67a8f97f
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: a4896fdea201d0137c00d2117f4cfc5ffd735f1f
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35440737"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35859049"
 ---
 # <a name="get-governancerolesetting"></a>GovernanceRoleSetting を取得する
 
@@ -64,6 +64,10 @@ GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleSetting
 
 # <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-governancerolesetting-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-governancerolesetting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

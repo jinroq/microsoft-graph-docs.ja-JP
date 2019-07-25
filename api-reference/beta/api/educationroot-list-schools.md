@@ -4,12 +4,12 @@ description: すべての学校オブジェクトのリストを取得します�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 87b521dd870eaf715d67afc72128e0bc5f006db1
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: f86f280ad1be9e17fa1010fe8f08f8aae7d05128
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35441577"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35860487"
 ---
 # <a name="list-educationschools"></a>educationSchools をリストする
 
@@ -30,23 +30,23 @@ ms.locfileid: "35441577"
 <!-- { "blockType": "ignored" } -->
 ```http GET /education/schools
 ```
-## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
+このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 
-## Request headers
-| Header       | Value |
+## <a name="request-headers"></a>要求ヘッダー
+| ヘッダー       | 値 |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+| Authorization  | ベアラー {トークン}。必須。  |
 
-## Request body
-Do not supply a request body for this method.
-## Response
-If successful, this method returns a `200 OK` response code and a collection of [educationSchool](../resources/educationschool.md) objects in the response body.
-## Example
-##### Request
-The following is an example of the request.
+## <a name="request-body"></a>要求本文
+このメソッドには、要求本文を指定しません。
+## <a name="response"></a>応答
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [educationSchool](../resources/educationschool.md) オブジェクトのコレクションを返します。
+## <a name="example"></a>例
+##### <a name="request"></a>要求
+要求の例を次に示します。
 
-# [HTTP](#tab/http)
+# <a name="httptabhttp"></a>[プロトコル](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_schools"
@@ -64,6 +64,10 @@ GET https://graph.microsoft.com/beta/education/schools
 
 # <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-schools-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-schools-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
