@@ -4,12 +4,12 @@ description: メッセージ フォルダー オブジェクトのプロパテ�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: e167dba46dc817d49d562fb1ce8858eb23c176c1
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: f997ebe701ce55b16415b0f87d52e0b7fadd2f51
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35448777"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35880098"
 ---
 # <a name="get-mailfolder"></a>mailFolder を取得する
 
@@ -30,7 +30,7 @@ ms.locfileid: "35448777"
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | メール ReadBasic、Mail. 読み取り、ReadWrite    |
 |委任 (個人用 Microsoft アカウント) | メール ReadBasic、Mail. 読み取り、ReadWrite    |
-|アプリケーション | Mail.Read、Mail.ReadWrite |
+|アプリケーション | -ReadBasic、mail. 読み取り、および書き込み |
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM
 
 # <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-mailfolder-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-mailfolder-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -149,6 +153,10 @@ GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzN
 
 # <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-mailsearchfolder-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-mailsearchfolder-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
