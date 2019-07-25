@@ -1,11 +1,11 @@
 ---
 description: 自動的に生成されたファイル。 変更しない
-ms.openlocfilehash: 796b1d9aef3ac56745a70da4c79945a3530a3cb0
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: e70b436cc2efeef29334ee8f0bcf3826c95a1c91
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35526027"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35877319"
 ---
 ```csharp
 
@@ -13,7 +13,6 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var outlookTask = new OutlookTask
 {
-    AssignedTo = "Dana Swope",
     Subject = "Shop for children's weekend",
     StartDateTime = new DateTimeTimeZone
     {
