@@ -4,30 +4,30 @@ description: 新しい securityAction オブジェクトを作成します。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 293be54ec8dcf6aaa069186a366b6fd13db8a430
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 96f0c5b9ffbcdcda125cb43421fdcffc617c89ea
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35453783"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35870251"
 ---
-# <a name="create-securityaction"></a><span data-ttu-id="bed06-103">securityAction を作成する</span><span class="sxs-lookup"><span data-stu-id="bed06-103">Create securityAction</span></span>
+# <a name="create-securityaction"></a><span data-ttu-id="587b8-103">securityAction を作成する</span><span class="sxs-lookup"><span data-stu-id="587b8-103">Create securityAction</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="bed06-104">新しい[securityAction](../resources/securityaction.md)オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="bed06-104">Create a new [securityAction](../resources/securityaction.md) object.</span></span>
+<span data-ttu-id="587b8-104">新しい[securityAction](../resources/securityaction.md)オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="587b8-104">Create a new [securityAction](../resources/securityaction.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="bed06-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="bed06-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="587b8-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="587b8-105">Permissions</span></span>
 
-<span data-ttu-id="bed06-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="bed06-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="587b8-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="587b8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="bed06-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="bed06-108">Permission type</span></span>                        | <span data-ttu-id="bed06-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="bed06-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="587b8-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="587b8-108">Permission type</span></span>                        | <span data-ttu-id="587b8-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="587b8-109">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="bed06-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="bed06-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="bed06-111">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="bed06-111">Not supported.</span></span> |
-| <span data-ttu-id="bed06-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="bed06-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bed06-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="bed06-113">Not supported.</span></span> |
-| <span data-ttu-id="bed06-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="bed06-114">Application</span></span>                            | <span data-ttu-id="bed06-115">SecurityActions.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bed06-115">SecurityActions.ReadWrite.All</span></span> |
+| <span data-ttu-id="587b8-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="587b8-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="587b8-111">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="587b8-111">Not supported.</span></span> |
+| <span data-ttu-id="587b8-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="587b8-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="587b8-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="587b8-113">Not supported.</span></span> |
+| <span data-ttu-id="587b8-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="587b8-114">Application</span></span>                            | <span data-ttu-id="587b8-115">SecurityActions.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="587b8-115">SecurityActions.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="bed06-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="bed06-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="587b8-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="587b8-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -35,27 +35,27 @@ ms.locfileid: "35453783"
 POST /security/securityActions
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="bed06-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="bed06-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="587b8-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="587b8-117">Request headers</span></span>
 
-| <span data-ttu-id="bed06-118">名前</span><span class="sxs-lookup"><span data-stu-id="bed06-118">Name</span></span>          | <span data-ttu-id="bed06-119">説明</span><span class="sxs-lookup"><span data-stu-id="bed06-119">Description</span></span>   |
+| <span data-ttu-id="587b8-118">名前</span><span class="sxs-lookup"><span data-stu-id="587b8-118">Name</span></span>          | <span data-ttu-id="587b8-119">説明</span><span class="sxs-lookup"><span data-stu-id="587b8-119">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="bed06-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="bed06-120">Authorization</span></span> | <span data-ttu-id="bed06-121">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="bed06-121">Bearer {code}</span></span> |
+| <span data-ttu-id="587b8-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="587b8-120">Authorization</span></span> | <span data-ttu-id="587b8-121">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="587b8-121">Bearer {code}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="bed06-122">要求本文</span><span class="sxs-lookup"><span data-stu-id="bed06-122">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="587b8-122">要求本文</span><span class="sxs-lookup"><span data-stu-id="587b8-122">Request body</span></span>
 
-<span data-ttu-id="bed06-123">要求本文で、 [securityAction](../resources/securityaction.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="bed06-123">In the request body, supply a JSON representation of a [securityAction](../resources/securityaction.md) object.</span></span>
+<span data-ttu-id="587b8-123">要求本文で、 [securityAction](../resources/securityaction.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="587b8-123">In the request body, supply a JSON representation of a [securityAction](../resources/securityaction.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="bed06-124">応答</span><span class="sxs-lookup"><span data-stu-id="bed06-124">Response</span></span>
+## <a name="response"></a><span data-ttu-id="587b8-124">応答</span><span class="sxs-lookup"><span data-stu-id="587b8-124">Response</span></span>
 
-<span data-ttu-id="bed06-125">成功した場合、この`201 Created`メソッドは応答コードと、応答本文で[securityAction](../resources/securityaction.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="bed06-125">If successful, this method returns `201 Created` response code and a [securityAction](../resources/securityaction.md) object in the response body.</span></span>
+<span data-ttu-id="587b8-125">成功した場合、この`201 Created`メソッドは応答コードと、応答本文で[securityAction](../resources/securityaction.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="587b8-125">If successful, this method returns `201 Created` response code and a [securityAction](../resources/securityaction.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="bed06-126">例</span><span class="sxs-lookup"><span data-stu-id="bed06-126">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="587b8-126">例</span><span class="sxs-lookup"><span data-stu-id="587b8-126">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="bed06-127">要求</span><span class="sxs-lookup"><span data-stu-id="bed06-127">Request</span></span>
+### <a name="request"></a><span data-ttu-id="587b8-127">要求</span><span class="sxs-lookup"><span data-stu-id="587b8-127">Request</span></span>
 
-<span data-ttu-id="bed06-128">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="bed06-128">The following is an example of the request.</span></span>
+<span data-ttu-id="587b8-128">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="587b8-128">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="bed06-129">プロトコル</span><span class="sxs-lookup"><span data-stu-id="bed06-129">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="587b8-129">プロトコル</span><span class="sxs-lookup"><span data-stu-id="587b8-129">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_securityaction_from_security"
@@ -80,27 +80,31 @@ Content-type: application/json
   }
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="bed06-130">C#</span><span class="sxs-lookup"><span data-stu-id="bed06-130">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="587b8-130">C#</span><span class="sxs-lookup"><span data-stu-id="587b8-130">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-securityaction-from-security-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="bed06-131">Javascript</span><span class="sxs-lookup"><span data-stu-id="bed06-131">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="587b8-131">Javascript</span><span class="sxs-lookup"><span data-stu-id="587b8-131">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-securityaction-from-security-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="bed06-132">目的-C</span><span class="sxs-lookup"><span data-stu-id="bed06-132">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="587b8-132">目的-C</span><span class="sxs-lookup"><span data-stu-id="587b8-132">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-securityaction-from-security-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="587b8-133">Java</span><span class="sxs-lookup"><span data-stu-id="587b8-133">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-securityaction-from-security-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="bed06-133">応答</span><span class="sxs-lookup"><span data-stu-id="bed06-133">Response</span></span>
+### <a name="response"></a><span data-ttu-id="587b8-134">応答</span><span class="sxs-lookup"><span data-stu-id="587b8-134">Response</span></span>
 
-<span data-ttu-id="bed06-134">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="bed06-134">The following is an example of the response.</span></span>
+<span data-ttu-id="587b8-135">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="587b8-135">The following is an example of the response.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="bed06-135">ここに示す response オブジェクトは読みやすいように短縮される場合があります。</span><span class="sxs-lookup"><span data-stu-id="bed06-135">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="bed06-136">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="bed06-136">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="587b8-136">ここに示す response オブジェクトは読みやすいように短縮される場合があります。</span><span class="sxs-lookup"><span data-stu-id="587b8-136">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="587b8-137">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="587b8-137">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
