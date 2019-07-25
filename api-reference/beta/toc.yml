@@ -8297,6 +8297,11 @@
                   href: resources/synchronization-configure-with-custom-target-attributes.md
                 - name: ディレクトリ拡張機能の属性を同期する
                   href: resources/synchronization-configure-with-directory-extension-attributes.md
+                - name: ディレクトリ定義
+                  href: resources/synchronization-directorydefinition.md
+                  items:
+                    - name: 検出
+                      href: api/directorydefinition-discover.md
                 - name: ジョブ
                   href: resources/synchronization-synchronizationjob.md
                   items:
@@ -9468,7 +9473,7 @@
             - name: Outlook タスク フォルダー
               href: resources/outlooktaskfolder.md
               items:
-                - name: List
+                - name: リスト
                   href: api/outlookuser-list-taskfolders.md
                 - name: 作成する
                   href: api/outlookuser-post-taskfolders.md
@@ -9487,7 +9492,7 @@
               items:
                 - name: リスト
                   href: api/outlookuser-list-taskgroups.md
-                - name: 作成する
+                - name: 作成
                   href: api/outlookuser-post-taskgroups.md
                 - name: 取得
                   href: api/outlooktaskgroup-get.md
