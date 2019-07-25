@@ -4,12 +4,12 @@ description: Tiindicator オブジェクトのプロパティとリレーショ�
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 32d168c6cda1f90528d5bb250b363c4b5c2b99a2
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: f192327d12f68a72686808db480f82c2907e45da
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35457948"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35868222"
 ---
 # <a name="get-threat-intelligence-indicator"></a>脅威インテリジェンス指標の取得
 
@@ -78,6 +78,10 @@ GET https://graph.microsoft.com/beta/security/tiIndicators/{id}
 
 # <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-tiindicator-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-tiindicator-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
