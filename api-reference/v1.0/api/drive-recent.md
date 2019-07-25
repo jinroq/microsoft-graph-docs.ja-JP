@@ -5,31 +5,31 @@ ms.date: 09/10/2017
 title: 最近使用したファイルを一覧表示する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: dec3b2065276a8db1e8cd16c823d1ef876a510d5
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 72818351e59605ffddc1a23dd6a5cce8495a4803
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35458916"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35881863"
 ---
-# <a name="list-recent-files"></a><span data-ttu-id="2b80d-102">最近使用したファイルを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="2b80d-102">List recent files</span></span>
+# <a name="list-recent-files"></a><span data-ttu-id="df0b7-102">最近使用したファイルを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="df0b7-102">List recent files</span></span>
 
-<span data-ttu-id="2b80d-p101">サインインしたユーザーによって最近使用されたアイテムのセットを一覧表示します。このコレクションには、ユーザーのドライブにあるアイテムと、他のドライブとの間でアクセス可能なアイテムが含まれています。</span><span class="sxs-lookup"><span data-stu-id="2b80d-p101">List a set of items that have been recently used by the signed in user. This collection includes items that are in the user's drive as well as items they have access to from other drives.</span></span>
+<span data-ttu-id="df0b7-p101">サインインしたユーザーによって最近使用されたアイテムのセットを一覧表示します。このコレクションには、ユーザーのドライブにあるアイテムと、他のドライブとの間でアクセス可能なアイテムが含まれています。</span><span class="sxs-lookup"><span data-stu-id="df0b7-p101">List a set of items that have been recently used by the signed in user. This collection includes items that are in the user's drive as well as items they have access to from other drives.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2b80d-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="2b80d-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="df0b7-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="df0b7-105">Permissions</span></span>
 
-<span data-ttu-id="2b80d-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2b80d-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="df0b7-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="df0b7-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2b80d-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="2b80d-108">Permission type</span></span>      | <span data-ttu-id="2b80d-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="2b80d-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="df0b7-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="df0b7-108">Permission type</span></span>      | <span data-ttu-id="df0b7-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="df0b7-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="2b80d-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="2b80d-110">Delegated (work or school account)</span></span> | <span data-ttu-id="2b80d-111">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2b80d-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="2b80d-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="2b80d-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2b80d-113">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2b80d-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="2b80d-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="2b80d-114">Application</span></span> | <span data-ttu-id="2b80d-115">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2b80d-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="df0b7-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="df0b7-110">Delegated (work or school account)</span></span> | <span data-ttu-id="df0b7-111">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="df0b7-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="df0b7-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="df0b7-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="df0b7-113">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="df0b7-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="df0b7-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="df0b7-114">Application</span></span> | <span data-ttu-id="df0b7-115">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="df0b7-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="2b80d-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="2b80d-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="df0b7-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="df0b7-116">HTTP request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="2b80d-117">プロトコル</span><span class="sxs-lookup"><span data-stu-id="2b80d-117">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="df0b7-117">プロトコル</span><span class="sxs-lookup"><span data-stu-id="df0b7-117">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request",
        "name": "view-recent-files", 
        "scopes": "files.read",
@@ -39,24 +39,28 @@ ms.locfileid: "35458916"
 ```http
 GET /me/drive/recent
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="2b80d-118">C#</span><span class="sxs-lookup"><span data-stu-id="2b80d-118">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="df0b7-118">C#</span><span class="sxs-lookup"><span data-stu-id="df0b7-118">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/view-recent-files-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="2b80d-119">Javascript</span><span class="sxs-lookup"><span data-stu-id="2b80d-119">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="df0b7-119">Javascript</span><span class="sxs-lookup"><span data-stu-id="df0b7-119">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/view-recent-files-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="2b80d-120">目的-C</span><span class="sxs-lookup"><span data-stu-id="2b80d-120">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="df0b7-120">目的-C</span><span class="sxs-lookup"><span data-stu-id="df0b7-120">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/view-recent-files-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="df0b7-121">Java</span><span class="sxs-lookup"><span data-stu-id="df0b7-121">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/view-recent-files-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-## <a name="response"></a><span data-ttu-id="2b80d-121">応答</span><span class="sxs-lookup"><span data-stu-id="2b80d-121">Response</span></span>
+## <a name="response"></a><span data-ttu-id="df0b7-122">応答</span><span class="sxs-lookup"><span data-stu-id="df0b7-122">Response</span></span>
 
-<span data-ttu-id="2b80d-122">このメソッドは、ドライブの所有者が最近アクセスしたアイテムの [DriveItem](../resources/driveitem.md) リソースのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="2b80d-122">This method returns a collection of [DriveItem](../resources/driveitem.md) resources for items which the owner of the drive has recently accessed.</span></span>
+<span data-ttu-id="df0b7-123">このメソッドは、ドライブの所有者が最近アクセスしたアイテムの [DriveItem](../resources/driveitem.md) リソースのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="df0b7-123">This method returns a collection of [DriveItem](../resources/driveitem.md) resources for items which the owner of the drive has recently accessed.</span></span>
 
 <!-- { "blockType": "response",
        "@odata.type": "Collection(microsoft.graph.driveItem)",
@@ -102,9 +106,9 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a><span data-ttu-id="2b80d-123">備考</span><span class="sxs-lookup"><span data-stu-id="2b80d-123">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="df0b7-124">備考</span><span class="sxs-lookup"><span data-stu-id="df0b7-124">Remarks</span></span>
 
-<span data-ttu-id="2b80d-p103">**recent** アクションから返された DriveItems の中には、それらが異なるドライブからのアイテムであることを示す **remoteItem** ファセットが含まれるものがあります。元の DriveItem オブジェクトにアクセスするには、**remoteItem** で提供された情報を使用して、以下に示す書式で要求を作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2b80d-p103">Some driveItems returned from the **recent** action will include the **remoteItem** facet which indicates they are items from another drive. To access the original driveItem object, you will need to make a request using the information provided in **remoteItem** in the following format:</span></span>
+<span data-ttu-id="df0b7-p103">**recent** アクションから返された DriveItems の中には、それらが異なるドライブからのアイテムであることを示す **remoteItem** ファセットが含まれるものがあります。元の DriveItem オブジェクトにアクセスするには、**remoteItem** で提供された情報を使用して、以下に示す書式で要求を作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="df0b7-p103">Some driveItems returned from the **recent** action will include the **remoteItem** facet which indicates they are items from another drive. To access the original driveItem object, you will need to make a request using the information provided in **remoteItem** in the following format:</span></span>
 
 <!-- { "blockType": "ignored", "name": "drives-get-remoteitem" } -->
 
