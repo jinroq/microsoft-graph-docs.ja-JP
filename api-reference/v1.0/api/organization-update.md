@@ -4,17 +4,17 @@ description: 現在認証されている組織のプロパティを更新しま�
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4201bed43327b17e808750d5f3f38f41e776bd77
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: 4cafafa13b37c819a15b3ba63e5ec9b1ae2f03d2
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35447468"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35894414"
 ---
 # <a name="update-organization"></a>組織を更新する
 
 現在認証されている組織のプロパティを更新します。 この例では`organization` 、は、1つのレコードのコレクションとして定義されているため、要求でその**ID**を指定する必要があります。  **ID**は、組織の**tenantId**とも呼ばれます。
-
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -22,9 +22,9 @@ ms.locfileid: "35447468"
 
 |アクセス許可の種類 | アクセス許可 (特権の小さいものから大きいものへ) |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Directory.AccessAsUser.All    |
+|委任 (職場または学校のアカウント) | Directory.accessasuser.all、すべてのディレクトリを示します。    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | サポートされていません。 |
+|アプリケーション | 組織の ReadWrite |
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -32,14 +32,14 @@ ms.locfileid: "35447468"
 
 ```http
 PATCH /organization/{id}
-
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前       | 型 | 説明|
-|:-----------|:------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
+| 名前       | 説明|
+|:-----------|:----------|
+| Authorization  | ベアラー {トークン}。必須。 |
+| Content-Type   | application/json |
 
 ## <a name="request-body"></a>要求本文
 
@@ -95,6 +95,10 @@ Content-length: 411
 
 # <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-organization-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-organization-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
