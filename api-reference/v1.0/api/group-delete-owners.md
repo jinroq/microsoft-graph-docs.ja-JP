@@ -4,12 +4,12 @@ description: この API を使用して、owners ナビゲーション プロパ
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: c423d520bdf94b7b78d7836930d4566845dd8003
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: bf43a501f00271f3d89f7c40a06413caee86de2d
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35448118"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35890734"
 ---
 # <a name="remove-owner"></a>所有者の削除
 この API を使用して、owners ナビゲーション プロパティを通じて Office 365 のグループ、セキュリティ グループ、メールが有効なセキュリティ グループから所有者を削除できます。
@@ -62,6 +62,10 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}/owners/{id}/$ref
 
 # <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-owner-from-group-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-owner-from-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
