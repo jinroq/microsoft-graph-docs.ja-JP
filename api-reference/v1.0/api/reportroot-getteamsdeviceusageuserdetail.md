@@ -4,28 +4,28 @@ description: ユーザーごとに、Microsoft Teams デバイスの使用状況
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: d26096c5769ee94252163674764276f8735cd2ca
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: a33a614ef42b82c7f91cc5023d354d8a9741cf7c
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35458741"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35855576"
 ---
-# <a name="reportroot-getteamsdeviceusageuserdetail"></a><span data-ttu-id="2f4a1-103">reportRoot: getTeamsDeviceUsageUserDetail</span><span class="sxs-lookup"><span data-stu-id="2f4a1-103">reportRoot: getTeamsDeviceUsageUserDetail</span></span>
+# <a name="reportroot-getteamsdeviceusageuserdetail"></a><span data-ttu-id="4006b-103">reportRoot: getTeamsDeviceUsageUserDetail</span><span class="sxs-lookup"><span data-stu-id="4006b-103">reportRoot: getTeamsDeviceUsageUserDetail</span></span>
 
-<span data-ttu-id="2f4a1-104">ユーザーごとに、Microsoft Teams デバイスの使用状況の詳細を取得します。</span><span class="sxs-lookup"><span data-stu-id="2f4a1-104">Get details about Microsoft Teams device usage by user.</span></span>
+<span data-ttu-id="4006b-104">ユーザーごとに、Microsoft Teams デバイスの使用状況の詳細を取得します。</span><span class="sxs-lookup"><span data-stu-id="4006b-104">Get details about Microsoft Teams device usage by user.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2f4a1-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="2f4a1-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="4006b-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="4006b-105">Permissions</span></span>
 
-<span data-ttu-id="2f4a1-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2f4a1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="4006b-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4006b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="2f4a1-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="2f4a1-108">Permission type</span></span>                        | <span data-ttu-id="2f4a1-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="2f4a1-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="4006b-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="4006b-108">Permission type</span></span>                        | <span data-ttu-id="4006b-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="4006b-109">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :--------------------------------------- |
-| <span data-ttu-id="2f4a1-110">委任 (職場または学校アカウント)</span><span class="sxs-lookup"><span data-stu-id="2f4a1-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="2f4a1-111">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="2f4a1-111">Reports.Read.All</span></span>                         |
-| <span data-ttu-id="2f4a1-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="2f4a1-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2f4a1-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="2f4a1-113">Not supported.</span></span>                           |
-| <span data-ttu-id="2f4a1-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="2f4a1-114">Application</span></span>                            | <span data-ttu-id="2f4a1-115">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="2f4a1-115">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="4006b-110">委任 (職場または学校アカウント)</span><span class="sxs-lookup"><span data-stu-id="4006b-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="4006b-111">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="4006b-111">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="4006b-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="4006b-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4006b-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="4006b-113">Not supported.</span></span>                           |
+| <span data-ttu-id="4006b-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="4006b-114">Application</span></span>                            | <span data-ttu-id="4006b-115">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="4006b-115">Reports.Read.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="2f4a1-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="2f4a1-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4006b-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="4006b-116">HTTP request</span></span>
 
 <!-- { "blockType": "samples" } -->
 
@@ -34,52 +34,52 @@ GET /reports/getTeamsDeviceUsageUserDetail(period='{period_value}')
 GET /reports/getTeamsDeviceUsageUserDetail(date={date_value})
 ```
 
-## <a name="function-parameters"></a><span data-ttu-id="2f4a1-117">関数パラメーター</span><span class="sxs-lookup"><span data-stu-id="2f4a1-117">Function parameters</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="4006b-117">関数パラメーター</span><span class="sxs-lookup"><span data-stu-id="4006b-117">Function parameters</span></span>
 
-<span data-ttu-id="2f4a1-118">要求 URL に、次のうちの 1 つのパラメーターと有効な値を指定します。</span><span class="sxs-lookup"><span data-stu-id="2f4a1-118">In the request URL, provide one of the following parameters with a valid value.</span></span>
+<span data-ttu-id="4006b-118">要求 URL に、次のうちの 1 つのパラメーターと有効な値を指定します。</span><span class="sxs-lookup"><span data-stu-id="4006b-118">In the request URL, provide one of the following parameters with a valid value.</span></span>
 
-| <span data-ttu-id="2f4a1-119">パラメーター</span><span class="sxs-lookup"><span data-stu-id="2f4a1-119">Parameter</span></span> | <span data-ttu-id="2f4a1-120">型</span><span class="sxs-lookup"><span data-stu-id="2f4a1-120">Type</span></span>   | <span data-ttu-id="2f4a1-121">説明</span><span class="sxs-lookup"><span data-stu-id="2f4a1-121">Description</span></span>                              |
+| <span data-ttu-id="4006b-119">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4006b-119">Parameter</span></span> | <span data-ttu-id="4006b-120">型</span><span class="sxs-lookup"><span data-stu-id="4006b-120">Type</span></span>   | <span data-ttu-id="4006b-121">説明</span><span class="sxs-lookup"><span data-stu-id="4006b-121">Description</span></span>                              |
 | :-------- | :----- | :--------------------------------------- |
-| <span data-ttu-id="2f4a1-122">period</span><span class="sxs-lookup"><span data-stu-id="2f4a1-122">period</span></span>    | <span data-ttu-id="2f4a1-123">文字列</span><span class="sxs-lookup"><span data-stu-id="2f4a1-123">string</span></span> | <span data-ttu-id="2f4a1-124">レポートを集計する期間の長さを指定します。</span><span class="sxs-lookup"><span data-stu-id="2f4a1-124">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="2f4a1-125">{period_value} でサポートされている値は D7、D30、D90、D180 です。</span><span class="sxs-lookup"><span data-stu-id="2f4a1-125">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="2f4a1-126">これらの値は、D*n* の形式 (*n* はレポートを集計する日数) に従います。</span><span class="sxs-lookup"><span data-stu-id="2f4a1-126">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> |
-| <span data-ttu-id="2f4a1-127">date</span><span class="sxs-lookup"><span data-stu-id="2f4a1-127">date</span></span>      | <span data-ttu-id="2f4a1-128">日付</span><span class="sxs-lookup"><span data-stu-id="2f4a1-128">Date</span></span>   | <span data-ttu-id="2f4a1-129">何らかのアクティビティを実行したユーザーを表示する日付を指定します。</span><span class="sxs-lookup"><span data-stu-id="2f4a1-129">Specifies the date for which you would like to view the users who performed any activity.</span></span> <span data-ttu-id="2f4a1-130">{date_value} は YYYY-MM-DD の形式にします。</span><span class="sxs-lookup"><span data-stu-id="2f4a1-130">{date_value} must have a format of YYYY-MM-DD.</span></span> <span data-ttu-id="2f4a1-131">このレポートは、過去 30 日間のみ利用可能であり、{date_value} はその範囲内の日付である必要があります。</span><span class="sxs-lookup"><span data-stu-id="2f4a1-131">As this report is only available for the past 30 days, {date_value} should be a date from that range.</span></span> |
+| <span data-ttu-id="4006b-122">period</span><span class="sxs-lookup"><span data-stu-id="4006b-122">period</span></span>    | <span data-ttu-id="4006b-123">文字列</span><span class="sxs-lookup"><span data-stu-id="4006b-123">string</span></span> | <span data-ttu-id="4006b-124">レポートを集計する期間の長さを指定します。</span><span class="sxs-lookup"><span data-stu-id="4006b-124">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="4006b-125">{period_value} でサポートされている値は D7、D30、D90、D180 です。</span><span class="sxs-lookup"><span data-stu-id="4006b-125">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="4006b-126">これらの値は、D*n* の形式 (*n* はレポートを集計する日数) に従います。</span><span class="sxs-lookup"><span data-stu-id="4006b-126">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> |
+| <span data-ttu-id="4006b-127">date</span><span class="sxs-lookup"><span data-stu-id="4006b-127">date</span></span>      | <span data-ttu-id="4006b-128">日付</span><span class="sxs-lookup"><span data-stu-id="4006b-128">Date</span></span>   | <span data-ttu-id="4006b-129">何らかのアクティビティを実行したユーザーを表示する日付を指定します。</span><span class="sxs-lookup"><span data-stu-id="4006b-129">Specifies the date for which you would like to view the users who performed any activity.</span></span> <span data-ttu-id="4006b-130">{date_value} は YYYY-MM-DD の形式にします。</span><span class="sxs-lookup"><span data-stu-id="4006b-130">{date_value} must have a format of YYYY-MM-DD.</span></span> <span data-ttu-id="4006b-131">このレポートは、過去 30 日間のみ利用可能であり、{date_value} はその範囲内の日付である必要があります。</span><span class="sxs-lookup"><span data-stu-id="4006b-131">As this report is only available for the past 30 days, {date_value} should be a date from that range.</span></span> |
 
-> <span data-ttu-id="2f4a1-132">**注:** URL に期間または日付を設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2f4a1-132">**Note:** You need to set either period or date in the URL.</span></span>
+> <span data-ttu-id="4006b-132">**注:** URL に期間または日付を設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="4006b-132">**Note:** You need to set either period or date in the URL.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="2f4a1-133">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="2f4a1-133">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="4006b-133">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="4006b-133">Request headers</span></span>
 
-| <span data-ttu-id="2f4a1-134">名前</span><span class="sxs-lookup"><span data-stu-id="2f4a1-134">Name</span></span>          | <span data-ttu-id="2f4a1-135">説明</span><span class="sxs-lookup"><span data-stu-id="2f4a1-135">Description</span></span>               |
+| <span data-ttu-id="4006b-134">名前</span><span class="sxs-lookup"><span data-stu-id="4006b-134">Name</span></span>          | <span data-ttu-id="4006b-135">説明</span><span class="sxs-lookup"><span data-stu-id="4006b-135">Description</span></span>               |
 | :------------ | :------------------------ |
-| <span data-ttu-id="2f4a1-136">Authorization</span><span class="sxs-lookup"><span data-stu-id="2f4a1-136">Authorization</span></span> | <span data-ttu-id="2f4a1-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="2f4a1-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="4006b-136">Authorization</span><span class="sxs-lookup"><span data-stu-id="4006b-136">Authorization</span></span> | <span data-ttu-id="4006b-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="4006b-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="2f4a1-139">応答</span><span class="sxs-lookup"><span data-stu-id="2f4a1-139">Response</span></span>
+## <a name="response"></a><span data-ttu-id="4006b-139">応答</span><span class="sxs-lookup"><span data-stu-id="4006b-139">Response</span></span>
 
-<span data-ttu-id="2f4a1-140">成功すると、レポートの事前認証されたダウンロード URL にリダイレクトする `302 Found` 応答が返されます。</span><span class="sxs-lookup"><span data-stu-id="2f4a1-140">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="2f4a1-141">その URL は、応答の `Location` ヘッダー内にあります。</span><span class="sxs-lookup"><span data-stu-id="2f4a1-141">That URL can be found in the `Location` header in the response.</span></span>
+<span data-ttu-id="4006b-140">成功すると、レポートの事前認証されたダウンロード URL にリダイレクトする `302 Found` 応答が返されます。</span><span class="sxs-lookup"><span data-stu-id="4006b-140">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="4006b-141">その URL は、応答の `Location` ヘッダー内にあります。</span><span class="sxs-lookup"><span data-stu-id="4006b-141">That URL can be found in the `Location` header in the response.</span></span>
 
-<span data-ttu-id="2f4a1-142">事前認証されたダウンロード URL は、短期間 (数分) のみ有効で、`Authorization` ヘッダーを必要としません。</span><span class="sxs-lookup"><span data-stu-id="2f4a1-142">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
+<span data-ttu-id="4006b-142">事前認証されたダウンロード URL は、短期間 (数分) のみ有効で、`Authorization` ヘッダーを必要としません。</span><span class="sxs-lookup"><span data-stu-id="4006b-142">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
 
-<span data-ttu-id="2f4a1-143">この CSV ファイルには、次の列ヘッダーがあります。</span><span class="sxs-lookup"><span data-stu-id="2f4a1-143">The CSV file has the following headers for columns:</span></span>
+<span data-ttu-id="4006b-143">この CSV ファイルには、次の列ヘッダーがあります。</span><span class="sxs-lookup"><span data-stu-id="4006b-143">The CSV file has the following headers for columns:</span></span>
 
-- <span data-ttu-id="2f4a1-144">レポートの更新日</span><span class="sxs-lookup"><span data-stu-id="2f4a1-144">Report Refresh Date</span></span>
-- <span data-ttu-id="2f4a1-145">ユーザー プリンシパル名</span><span class="sxs-lookup"><span data-stu-id="2f4a1-145">User Principal Name</span></span>
-- <span data-ttu-id="2f4a1-146">最後のアクティビティ日付</span><span class="sxs-lookup"><span data-stu-id="2f4a1-146">Last Activity Date</span></span>
-- <span data-ttu-id="2f4a1-147">削除済み</span><span class="sxs-lookup"><span data-stu-id="2f4a1-147">Is Deleted</span></span>
-- <span data-ttu-id="2f4a1-148">削除日</span><span class="sxs-lookup"><span data-stu-id="2f4a1-148">Deleted Date</span></span>
-- <span data-ttu-id="2f4a1-149">Web の使用</span><span class="sxs-lookup"><span data-stu-id="2f4a1-149">Used Web</span></span>
-- <span data-ttu-id="2f4a1-150">Windows スマートフォンの使用</span><span class="sxs-lookup"><span data-stu-id="2f4a1-150">Used Windows Phone</span></span>
-- <span data-ttu-id="2f4a1-151">iOS の使用</span><span class="sxs-lookup"><span data-stu-id="2f4a1-151">Used iOS</span></span>
-- <span data-ttu-id="2f4a1-152">Mac の使用</span><span class="sxs-lookup"><span data-stu-id="2f4a1-152">Used Mac</span></span>
-- <span data-ttu-id="2f4a1-153">Android スマートフォンの使用</span><span class="sxs-lookup"><span data-stu-id="2f4a1-153">Used Android Phone</span></span>
-- <span data-ttu-id="2f4a1-154">Windows の使用</span><span class="sxs-lookup"><span data-stu-id="2f4a1-154">Used Windows</span></span>
-- <span data-ttu-id="2f4a1-155">レポート期間</span><span class="sxs-lookup"><span data-stu-id="2f4a1-155">Report Period</span></span>
+- <span data-ttu-id="4006b-144">レポートの更新日</span><span class="sxs-lookup"><span data-stu-id="4006b-144">Report Refresh Date</span></span>
+- <span data-ttu-id="4006b-145">ユーザー プリンシパル名</span><span class="sxs-lookup"><span data-stu-id="4006b-145">User Principal Name</span></span>
+- <span data-ttu-id="4006b-146">最後のアクティビティ日付</span><span class="sxs-lookup"><span data-stu-id="4006b-146">Last Activity Date</span></span>
+- <span data-ttu-id="4006b-147">削除済み</span><span class="sxs-lookup"><span data-stu-id="4006b-147">Is Deleted</span></span>
+- <span data-ttu-id="4006b-148">削除日</span><span class="sxs-lookup"><span data-stu-id="4006b-148">Deleted Date</span></span>
+- <span data-ttu-id="4006b-149">Web の使用</span><span class="sxs-lookup"><span data-stu-id="4006b-149">Used Web</span></span>
+- <span data-ttu-id="4006b-150">Windows スマートフォンの使用</span><span class="sxs-lookup"><span data-stu-id="4006b-150">Used Windows Phone</span></span>
+- <span data-ttu-id="4006b-151">iOS の使用</span><span class="sxs-lookup"><span data-stu-id="4006b-151">Used iOS</span></span>
+- <span data-ttu-id="4006b-152">Mac の使用</span><span class="sxs-lookup"><span data-stu-id="4006b-152">Used Mac</span></span>
+- <span data-ttu-id="4006b-153">Android スマートフォンの使用</span><span class="sxs-lookup"><span data-stu-id="4006b-153">Used Android Phone</span></span>
+- <span data-ttu-id="4006b-154">Windows の使用</span><span class="sxs-lookup"><span data-stu-id="4006b-154">Used Windows</span></span>
+- <span data-ttu-id="4006b-155">レポート期間</span><span class="sxs-lookup"><span data-stu-id="4006b-155">Report Period</span></span>
 
-## <a name="example"></a><span data-ttu-id="2f4a1-156">例</span><span class="sxs-lookup"><span data-stu-id="2f4a1-156">Example</span></span>
+## <a name="example"></a><span data-ttu-id="4006b-156">例</span><span class="sxs-lookup"><span data-stu-id="4006b-156">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="2f4a1-157">要求</span><span class="sxs-lookup"><span data-stu-id="2f4a1-157">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="4006b-157">要求</span><span class="sxs-lookup"><span data-stu-id="4006b-157">Request</span></span>
 
-<span data-ttu-id="2f4a1-158">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="2f4a1-158">The following is an example of the request.</span></span>
+<span data-ttu-id="4006b-158">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="4006b-158">The following is an example of the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="2f4a1-159">プロトコル</span><span class="sxs-lookup"><span data-stu-id="2f4a1-159">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="4006b-159">プロトコル</span><span class="sxs-lookup"><span data-stu-id="4006b-159">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "reportroot_getteamsdeviceusageuserdetail"
@@ -88,24 +88,28 @@ GET /reports/getTeamsDeviceUsageUserDetail(date={date_value})
 ```http
 GET https://graph.microsoft.com/v1.0/reports/getTeamsDeviceUsageUserDetail(period='D7')
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="2f4a1-160">C#</span><span class="sxs-lookup"><span data-stu-id="2f4a1-160">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="4006b-160">C#</span><span class="sxs-lookup"><span data-stu-id="4006b-160">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getteamsdeviceusageuserdetail-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="2f4a1-161">Javascript</span><span class="sxs-lookup"><span data-stu-id="2f4a1-161">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="4006b-161">Javascript</span><span class="sxs-lookup"><span data-stu-id="4006b-161">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getteamsdeviceusageuserdetail-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="2f4a1-162">目的-C</span><span class="sxs-lookup"><span data-stu-id="2f4a1-162">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="4006b-162">目的-C</span><span class="sxs-lookup"><span data-stu-id="4006b-162">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getteamsdeviceusageuserdetail-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="4006b-163">Java</span><span class="sxs-lookup"><span data-stu-id="4006b-163">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getteamsdeviceusageuserdetail-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="2f4a1-163">応答</span><span class="sxs-lookup"><span data-stu-id="2f4a1-163">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="4006b-164">応答</span><span class="sxs-lookup"><span data-stu-id="4006b-164">Response</span></span>
 
-<span data-ttu-id="2f4a1-164">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="2f4a1-164">The following is an example of the response.</span></span>
+<span data-ttu-id="4006b-165">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="4006b-165">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -119,7 +123,7 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-<span data-ttu-id="2f4a1-165">302 リダイレクトに従うと、ダウンロードされる CSV ファイルは次のスキーマを持つことになります。</span><span class="sxs-lookup"><span data-stu-id="2f4a1-165">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
+<span data-ttu-id="4006b-166">302 リダイレクトに従うと、ダウンロードされる CSV ファイルは次のスキーマを持つことになります。</span><span class="sxs-lookup"><span data-stu-id="4006b-166">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 

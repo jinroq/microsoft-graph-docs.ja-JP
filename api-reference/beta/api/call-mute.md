@@ -4,58 +4,58 @@ description: アプリケーションが自分自身をミュートできるよ�
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 40edbab3f97fd7a98a8687a0950c854fb7bf1f44
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: f4d09b9fa309750a2444bbb5e18d0d6d45529719
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35438693"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35864736"
 ---
-# <a name="call-mute"></a><span data-ttu-id="f9447-103">通話: ミュート</span><span class="sxs-lookup"><span data-stu-id="f9447-103">call: mute</span></span>
+# <a name="call-mute"></a><span data-ttu-id="dc079-103">通話: ミュート</span><span class="sxs-lookup"><span data-stu-id="dc079-103">call: mute</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f9447-104">アプリケーションが自分自身をミュートできるようにします。</span><span class="sxs-lookup"><span data-stu-id="f9447-104">Allows the application to mute itself.</span></span>
+<span data-ttu-id="dc079-104">アプリケーションが自分自身をミュートできるようにします。</span><span class="sxs-lookup"><span data-stu-id="dc079-104">Allows the application to mute itself.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f9447-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="f9447-105">Permissions</span></span>
-<span data-ttu-id="f9447-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f9447-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="dc079-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="dc079-105">Permissions</span></span>
+<span data-ttu-id="dc079-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="dc079-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="f9447-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="f9447-108">Permission type</span></span>                        | <span data-ttu-id="f9447-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="f9447-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="dc079-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="dc079-108">Permission type</span></span>                        | <span data-ttu-id="dc079-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="dc079-109">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="f9447-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="f9447-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="f9447-111">サポートされません。</span><span class="sxs-lookup"><span data-stu-id="f9447-111">Not Supported.</span></span>                               |
-| <span data-ttu-id="f9447-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="f9447-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f9447-113">サポートされません。</span><span class="sxs-lookup"><span data-stu-id="f9447-113">Not Supported.</span></span>                               |
-| <span data-ttu-id="f9447-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="f9447-114">Application</span></span>                            | <span data-ttu-id="f9447-115">なし。</span><span class="sxs-lookup"><span data-stu-id="f9447-115">None.</span></span>                                        |
+| <span data-ttu-id="dc079-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="dc079-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="dc079-111">サポートされません。</span><span class="sxs-lookup"><span data-stu-id="dc079-111">Not Supported.</span></span>                               |
+| <span data-ttu-id="dc079-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="dc079-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="dc079-113">サポートされません。</span><span class="sxs-lookup"><span data-stu-id="dc079-113">Not Supported.</span></span>                               |
+| <span data-ttu-id="dc079-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="dc079-114">Application</span></span>                            | <span data-ttu-id="dc079-115">なし。</span><span class="sxs-lookup"><span data-stu-id="dc079-115">None.</span></span>                                        |
 
-## <a name="http-request"></a><span data-ttu-id="f9447-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="f9447-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="dc079-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="dc079-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/mute
 POST /applications/{id}/calls/{id}/mute
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="f9447-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f9447-117">Request headers</span></span>
-| <span data-ttu-id="f9447-118">名前</span><span class="sxs-lookup"><span data-stu-id="f9447-118">Name</span></span>          | <span data-ttu-id="f9447-119">説明</span><span class="sxs-lookup"><span data-stu-id="f9447-119">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="dc079-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="dc079-117">Request headers</span></span>
+| <span data-ttu-id="dc079-118">名前</span><span class="sxs-lookup"><span data-stu-id="dc079-118">Name</span></span>          | <span data-ttu-id="dc079-119">説明</span><span class="sxs-lookup"><span data-stu-id="dc079-119">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="f9447-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="f9447-120">Authorization</span></span> | <span data-ttu-id="f9447-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="f9447-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="dc079-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="dc079-120">Authorization</span></span> | <span data-ttu-id="dc079-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="dc079-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f9447-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="f9447-123">Request body</span></span>
-<span data-ttu-id="f9447-124">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="f9447-124">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="dc079-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="dc079-123">Request body</span></span>
+<span data-ttu-id="dc079-124">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="dc079-124">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="f9447-125">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f9447-125">Parameter</span></span>      | <span data-ttu-id="f9447-126">型</span><span class="sxs-lookup"><span data-stu-id="f9447-126">Type</span></span>    |<span data-ttu-id="f9447-127">説明</span><span class="sxs-lookup"><span data-stu-id="f9447-127">Description</span></span>|
+| <span data-ttu-id="dc079-125">パラメーター</span><span class="sxs-lookup"><span data-stu-id="dc079-125">Parameter</span></span>      | <span data-ttu-id="dc079-126">型</span><span class="sxs-lookup"><span data-stu-id="dc079-126">Type</span></span>    |<span data-ttu-id="dc079-127">説明</span><span class="sxs-lookup"><span data-stu-id="dc079-127">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="f9447-128">clientContext</span><span class="sxs-lookup"><span data-stu-id="f9447-128">clientContext</span></span>|<span data-ttu-id="f9447-129">String</span><span class="sxs-lookup"><span data-stu-id="f9447-129">String</span></span>|<span data-ttu-id="f9447-130">クライアントコンテキスト。</span><span class="sxs-lookup"><span data-stu-id="f9447-130">The client context.</span></span>|
+|<span data-ttu-id="dc079-128">clientContext</span><span class="sxs-lookup"><span data-stu-id="dc079-128">clientContext</span></span>|<span data-ttu-id="dc079-129">String</span><span class="sxs-lookup"><span data-stu-id="dc079-129">String</span></span>|<span data-ttu-id="dc079-130">クライアントコンテキスト。</span><span class="sxs-lookup"><span data-stu-id="dc079-130">The client context.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="f9447-131">応答</span><span class="sxs-lookup"><span data-stu-id="f9447-131">Response</span></span>
-<span data-ttu-id="f9447-132">成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[commsOperation](../resources/commsoperation.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="f9447-132">If successful, this method returns `200 OK` response code and a [commsOperation](../resources/commsoperation.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="dc079-131">応答</span><span class="sxs-lookup"><span data-stu-id="dc079-131">Response</span></span>
+<span data-ttu-id="dc079-132">成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[commsOperation](../resources/commsoperation.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="dc079-132">If successful, this method returns `200 OK` response code and a [commsOperation](../resources/commsoperation.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f9447-133">例</span><span class="sxs-lookup"><span data-stu-id="f9447-133">Example</span></span>
-<span data-ttu-id="f9447-134">次の例は、この API を呼び出す方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="f9447-134">The following example shows how to call this API.</span></span>
+## <a name="example"></a><span data-ttu-id="dc079-133">例</span><span class="sxs-lookup"><span data-stu-id="dc079-133">Example</span></span>
+<span data-ttu-id="dc079-134">次の例は、この API を呼び出す方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="dc079-134">The following example shows how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="f9447-135">要求</span><span class="sxs-lookup"><span data-stu-id="f9447-135">Request</span></span>
-<span data-ttu-id="f9447-136">次の例は要求を示しています。</span><span class="sxs-lookup"><span data-stu-id="f9447-136">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="dc079-135">要求</span><span class="sxs-lookup"><span data-stu-id="dc079-135">Request</span></span>
+<span data-ttu-id="dc079-136">次の例は要求を示しています。</span><span class="sxs-lookup"><span data-stu-id="dc079-136">The following example shows the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="f9447-137">プロトコル</span><span class="sxs-lookup"><span data-stu-id="f9447-137">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="dc079-137">プロトコル</span><span class="sxs-lookup"><span data-stu-id="dc079-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-mute"
@@ -69,24 +69,28 @@ Content-Length: 46
   "clientContext": "clientContext-value"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="f9447-138">C#</span><span class="sxs-lookup"><span data-stu-id="f9447-138">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="dc079-138">C#</span><span class="sxs-lookup"><span data-stu-id="dc079-138">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-mute-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f9447-139">Javascript</span><span class="sxs-lookup"><span data-stu-id="f9447-139">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="dc079-139">Javascript</span><span class="sxs-lookup"><span data-stu-id="dc079-139">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-mute-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="f9447-140">目的-C</span><span class="sxs-lookup"><span data-stu-id="f9447-140">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="dc079-140">目的-C</span><span class="sxs-lookup"><span data-stu-id="dc079-140">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-mute-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="dc079-141">Java</span><span class="sxs-lookup"><span data-stu-id="dc079-141">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/call-mute-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="f9447-141">応答</span><span class="sxs-lookup"><span data-stu-id="f9447-141">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="dc079-142">応答</span><span class="sxs-lookup"><span data-stu-id="dc079-142">Response</span></span>
 
-> <span data-ttu-id="f9447-p103">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="f9447-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="dc079-p103">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="dc079-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

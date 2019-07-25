@@ -2,68 +2,68 @@
 title: GovernanceRoleSetting の更新
 description: GovernanceRoleSetting のプロパティを更新します。
 localization_priority: Normal
-ms.openlocfilehash: b5a38be7944aec81a3d94c3cae195995c07ece20
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: fc2cb9864d65ca32ae62a32201b3821ab16264e8
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35440730"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35859092"
 ---
-# <a name="update-governancerolesetting"></a><span data-ttu-id="09c1b-103">GovernanceRoleSetting の更新</span><span class="sxs-lookup"><span data-stu-id="09c1b-103">Update governanceRoleSetting</span></span>
+# <a name="update-governancerolesetting"></a><span data-ttu-id="45b62-103">GovernanceRoleSetting の更新</span><span class="sxs-lookup"><span data-stu-id="45b62-103">Update governanceRoleSetting</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="09c1b-104">[GovernanceRoleSetting](../resources/governancerolesetting.md)のプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="09c1b-104">Update the properties of [governanceRoleSetting](../resources/governancerolesetting.md).</span></span>
+<span data-ttu-id="45b62-104">[GovernanceRoleSetting](../resources/governancerolesetting.md)のプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="45b62-104">Update the properties of [governanceRoleSetting](../resources/governancerolesetting.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="09c1b-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="09c1b-105">Permissions</span></span>
-<span data-ttu-id="09c1b-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="09c1b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="45b62-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="45b62-105">Permissions</span></span>
+<span data-ttu-id="45b62-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="45b62-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-><span data-ttu-id="09c1b-108">**注:** また、この API では、リクエスターがリソースに`Active`対して少なくと`owner`も`user access administrator`1 つの管理者ロールの割り当て (または) を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="09c1b-108">**Note:** This API also requires that the requester have at least one `Active` administrator role assignment (`owner` or `user access administrator`) on the resource.</span></span>
+><span data-ttu-id="45b62-108">**注:** また、この API では、リクエスターがリソースに`Active`対して少なくと`owner`も`user access administrator`1 つの管理者ロールの割り当て (または) を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="45b62-108">**Note:** This API also requires that the requester have at least one `Active` administrator role assignment (`owner` or `user access administrator`) on the resource.</span></span>
 
-|<span data-ttu-id="09c1b-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="09c1b-109">Permission type</span></span>      | <span data-ttu-id="09c1b-110">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="09c1b-110">Permissions</span></span>              |
+|<span data-ttu-id="45b62-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="45b62-109">Permission type</span></span>      | <span data-ttu-id="45b62-110">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="45b62-110">Permissions</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="09c1b-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="09c1b-111">Delegated (work or school account)</span></span> | <span data-ttu-id="09c1b-112">PrivilegedAccess AzureResources</span><span class="sxs-lookup"><span data-stu-id="09c1b-112">PrivilegedAccess.ReadWrite.AzureResources</span></span>  |
-|<span data-ttu-id="09c1b-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="09c1b-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="09c1b-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="09c1b-114">Not supported.</span></span>    |
-|<span data-ttu-id="09c1b-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="09c1b-115">Application</span></span> | <span data-ttu-id="09c1b-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="09c1b-116">Not supported.</span></span> |
+|<span data-ttu-id="45b62-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="45b62-111">Delegated (work or school account)</span></span> | <span data-ttu-id="45b62-112">PrivilegedAccess AzureResources</span><span class="sxs-lookup"><span data-stu-id="45b62-112">PrivilegedAccess.ReadWrite.AzureResources</span></span>  |
+|<span data-ttu-id="45b62-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="45b62-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="45b62-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="45b62-114">Not supported.</span></span>    |
+|<span data-ttu-id="45b62-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="45b62-115">Application</span></span> | <span data-ttu-id="45b62-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="45b62-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="09c1b-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="09c1b-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="45b62-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="45b62-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /privilegedAccess/azureResources/roleSettings/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="09c1b-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="09c1b-118">Request headers</span></span>
-| <span data-ttu-id="09c1b-119">名前</span><span class="sxs-lookup"><span data-stu-id="09c1b-119">Name</span></span>       | <span data-ttu-id="09c1b-120">説明</span><span class="sxs-lookup"><span data-stu-id="09c1b-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="45b62-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="45b62-118">Request headers</span></span>
+| <span data-ttu-id="45b62-119">名前</span><span class="sxs-lookup"><span data-stu-id="45b62-119">Name</span></span>       | <span data-ttu-id="45b62-120">説明</span><span class="sxs-lookup"><span data-stu-id="45b62-120">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="09c1b-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="09c1b-121">Authorization</span></span>  | <span data-ttu-id="09c1b-122">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="09c1b-122">Bearer {code}</span></span>|
-| <span data-ttu-id="09c1b-123">Content-type</span><span class="sxs-lookup"><span data-stu-id="09c1b-123">Content-type</span></span>  | <span data-ttu-id="09c1b-124">application/json</span><span class="sxs-lookup"><span data-stu-id="09c1b-124">application/json</span></span>|
+| <span data-ttu-id="45b62-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="45b62-121">Authorization</span></span>  | <span data-ttu-id="45b62-122">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="45b62-122">Bearer {code}</span></span>|
+| <span data-ttu-id="45b62-123">Content-type</span><span class="sxs-lookup"><span data-stu-id="45b62-123">Content-type</span></span>  | <span data-ttu-id="45b62-124">application/json</span><span class="sxs-lookup"><span data-stu-id="45b62-124">application/json</span></span>|
 
 
-## <a name="request-body"></a><span data-ttu-id="09c1b-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="09c1b-125">Request body</span></span>
-<span data-ttu-id="09c1b-126">要求本文で、更新する必要がある[governanceRuleSettings](../resources/governancerulesetting.md)の値を指定します。</span><span class="sxs-lookup"><span data-stu-id="09c1b-126">In the request body, supply the values for [governanceRuleSettings](../resources/governancerulesetting.md) that need to be updated.</span></span> 
+## <a name="request-body"></a><span data-ttu-id="45b62-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="45b62-125">Request body</span></span>
+<span data-ttu-id="45b62-126">要求本文で、更新する必要がある[governanceRuleSettings](../resources/governancerulesetting.md)の値を指定します。</span><span class="sxs-lookup"><span data-stu-id="45b62-126">In the request body, supply the values for [governanceRuleSettings](../resources/governancerulesetting.md) that need to be updated.</span></span> 
 
-| <span data-ttu-id="09c1b-127">プロパティ</span><span class="sxs-lookup"><span data-stu-id="09c1b-127">Property</span></span>     | <span data-ttu-id="09c1b-128">型</span><span class="sxs-lookup"><span data-stu-id="09c1b-128">Type</span></span>   |<span data-ttu-id="09c1b-129">説明</span><span class="sxs-lookup"><span data-stu-id="09c1b-129">Description</span></span>|
+| <span data-ttu-id="45b62-127">プロパティ</span><span class="sxs-lookup"><span data-stu-id="45b62-127">Property</span></span>     | <span data-ttu-id="45b62-128">型</span><span class="sxs-lookup"><span data-stu-id="45b62-128">Type</span></span>   |<span data-ttu-id="45b62-129">説明</span><span class="sxs-lookup"><span data-stu-id="45b62-129">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="09c1b-130">adminEligibleSettings</span><span class="sxs-lookup"><span data-stu-id="09c1b-130">adminEligibleSettings</span></span>|<span data-ttu-id="09c1b-131">[governanceRuleSetting](../resources/governancerulesetting.md)コレクション</span><span class="sxs-lookup"><span data-stu-id="09c1b-131">[governanceRuleSetting](../resources/governancerulesetting.md) collection</span></span>|<span data-ttu-id="09c1b-132">管理者が対象となる役割の割り当てを追加しようとしたときに評価されるルールの設定。</span><span class="sxs-lookup"><span data-stu-id="09c1b-132">The rule settings that are evaluated when an administrator tries to add an eligible role assignment.</span></span>|
-|<span data-ttu-id="09c1b-133">adminMemberSettings</span><span class="sxs-lookup"><span data-stu-id="09c1b-133">adminMemberSettings</span></span>|<span data-ttu-id="09c1b-134">[governanceRuleSetting](../resources/governancerulesetting.md)コレクション</span><span class="sxs-lookup"><span data-stu-id="09c1b-134">[governanceRuleSetting](../resources/governancerulesetting.md) collection</span></span>|<span data-ttu-id="09c1b-135">管理者が直接メンバーの役割の割り当てを追加しようとしたときに評価されるルールの設定。</span><span class="sxs-lookup"><span data-stu-id="09c1b-135">The rule settings that are evaluated when an administrator tries to add a direct member role assignment.</span></span>|
-|<span data-ttu-id="09c1b-136">userEligibleSettings</span><span class="sxs-lookup"><span data-stu-id="09c1b-136">userEligibleSettings</span></span>|<span data-ttu-id="09c1b-137">[governanceRuleSetting](../resources/governancerulesetting.md)コレクション</span><span class="sxs-lookup"><span data-stu-id="09c1b-137">[governanceRuleSetting](../resources/governancerulesetting.md) collection</span></span>|<span data-ttu-id="09c1b-138">ユーザーが対象となる役割の割り当てを追加しようとしたときに評価されるルールの設定。</span><span class="sxs-lookup"><span data-stu-id="09c1b-138">The rule settings that are evaluated when a user tries to add an eligible role assignment.</span></span> <span data-ttu-id="09c1b-139">これは、現在の`pimforazurerbac`シナリオではサポートされておらず、今後のシナリオで利用できる場合があります。</span><span class="sxs-lookup"><span data-stu-id="09c1b-139">This is not supported for `pimforazurerbac` scenario for now, and may be available in the future scenarios.</span></span>|
-|<span data-ttu-id="09c1b-140">userMemberSettings</span><span class="sxs-lookup"><span data-stu-id="09c1b-140">userMemberSettings</span></span>|<span data-ttu-id="09c1b-141">[governanceRuleSetting](../resources/governancerulesetting.md)コレクション</span><span class="sxs-lookup"><span data-stu-id="09c1b-141">[governanceRuleSetting](../resources/governancerulesetting.md) collection</span></span>|<span data-ttu-id="09c1b-142">ユーザーが役割の割り当てをアクティブ化しようとしたときに評価されるルールの設定。</span><span class="sxs-lookup"><span data-stu-id="09c1b-142">The rule settings that are evaluated when a user tries to activate his role assignment.</span></span>|
+|<span data-ttu-id="45b62-130">adminEligibleSettings</span><span class="sxs-lookup"><span data-stu-id="45b62-130">adminEligibleSettings</span></span>|<span data-ttu-id="45b62-131">[governanceRuleSetting](../resources/governancerulesetting.md)コレクション</span><span class="sxs-lookup"><span data-stu-id="45b62-131">[governanceRuleSetting](../resources/governancerulesetting.md) collection</span></span>|<span data-ttu-id="45b62-132">管理者が対象となる役割の割り当てを追加しようとしたときに評価されるルールの設定。</span><span class="sxs-lookup"><span data-stu-id="45b62-132">The rule settings that are evaluated when an administrator tries to add an eligible role assignment.</span></span>|
+|<span data-ttu-id="45b62-133">adminMemberSettings</span><span class="sxs-lookup"><span data-stu-id="45b62-133">adminMemberSettings</span></span>|<span data-ttu-id="45b62-134">[governanceRuleSetting](../resources/governancerulesetting.md)コレクション</span><span class="sxs-lookup"><span data-stu-id="45b62-134">[governanceRuleSetting](../resources/governancerulesetting.md) collection</span></span>|<span data-ttu-id="45b62-135">管理者が直接メンバーの役割の割り当てを追加しようとしたときに評価されるルールの設定。</span><span class="sxs-lookup"><span data-stu-id="45b62-135">The rule settings that are evaluated when an administrator tries to add a direct member role assignment.</span></span>|
+|<span data-ttu-id="45b62-136">userEligibleSettings</span><span class="sxs-lookup"><span data-stu-id="45b62-136">userEligibleSettings</span></span>|<span data-ttu-id="45b62-137">[governanceRuleSetting](../resources/governancerulesetting.md)コレクション</span><span class="sxs-lookup"><span data-stu-id="45b62-137">[governanceRuleSetting](../resources/governancerulesetting.md) collection</span></span>|<span data-ttu-id="45b62-138">ユーザーが対象となる役割の割り当てを追加しようとしたときに評価されるルールの設定。</span><span class="sxs-lookup"><span data-stu-id="45b62-138">The rule settings that are evaluated when a user tries to add an eligible role assignment.</span></span> <span data-ttu-id="45b62-139">これは、現在の`pimforazurerbac`シナリオではサポートされておらず、今後のシナリオで利用できる場合があります。</span><span class="sxs-lookup"><span data-stu-id="45b62-139">This is not supported for `pimforazurerbac` scenario for now, and may be available in the future scenarios.</span></span>|
+|<span data-ttu-id="45b62-140">userMemberSettings</span><span class="sxs-lookup"><span data-stu-id="45b62-140">userMemberSettings</span></span>|<span data-ttu-id="45b62-141">[governanceRuleSetting](../resources/governancerulesetting.md)コレクション</span><span class="sxs-lookup"><span data-stu-id="45b62-141">[governanceRuleSetting](../resources/governancerulesetting.md) collection</span></span>|<span data-ttu-id="45b62-142">ユーザーが役割の割り当てをアクティブ化しようとしたときに評価されるルールの設定。</span><span class="sxs-lookup"><span data-stu-id="45b62-142">The rule settings that are evaluated when a user tries to activate his role assignment.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="09c1b-143">応答</span><span class="sxs-lookup"><span data-stu-id="09c1b-143">Response</span></span>
-<span data-ttu-id="09c1b-p103">成功した場合、このメソッドは `204 NoContent` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="09c1b-p103">If successful, this method returns a `204 NoContent` response code. It does not return anything in the response body.</span></span> 
+## <a name="response"></a><span data-ttu-id="45b62-143">応答</span><span class="sxs-lookup"><span data-stu-id="45b62-143">Response</span></span>
+<span data-ttu-id="45b62-p103">成功した場合、このメソッドは `204 NoContent` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="45b62-p103">If successful, this method returns a `204 NoContent` response code. It does not return anything in the response body.</span></span> 
 
-### <a name="error-codes"></a><span data-ttu-id="09c1b-146">エラー コード</span><span class="sxs-lookup"><span data-stu-id="09c1b-146">Error codes</span></span>
-<span data-ttu-id="09c1b-147">この API は、標準の HTTP エラーコードを返します。</span><span class="sxs-lookup"><span data-stu-id="09c1b-147">This API returns the standard HTTP error codes.</span></span> <span data-ttu-id="09c1b-148">さらに、次のカスタムエラーコードが返されます。</span><span class="sxs-lookup"><span data-stu-id="09c1b-148">In addition, it returns the following custom error codes.</span></span>
+### <a name="error-codes"></a><span data-ttu-id="45b62-146">エラー コード</span><span class="sxs-lookup"><span data-stu-id="45b62-146">Error codes</span></span>
+<span data-ttu-id="45b62-147">この API は、標準の HTTP エラーコードを返します。</span><span class="sxs-lookup"><span data-stu-id="45b62-147">This API returns the standard HTTP error codes.</span></span> <span data-ttu-id="45b62-148">さらに、次のカスタムエラーコードが返されます。</span><span class="sxs-lookup"><span data-stu-id="45b62-148">In addition, it returns the following custom error codes.</span></span>
 
-|<span data-ttu-id="09c1b-149">エラー コード</span><span class="sxs-lookup"><span data-stu-id="09c1b-149">Error code</span></span>     | <span data-ttu-id="09c1b-150">エラー メッセージ</span><span class="sxs-lookup"><span data-stu-id="09c1b-150">Error message</span></span>         | <span data-ttu-id="09c1b-151">詳細</span><span class="sxs-lookup"><span data-stu-id="09c1b-151">Details</span></span>             |
+|<span data-ttu-id="45b62-149">エラー コード</span><span class="sxs-lookup"><span data-stu-id="45b62-149">Error code</span></span>     | <span data-ttu-id="45b62-150">エラー メッセージ</span><span class="sxs-lookup"><span data-stu-id="45b62-150">Error message</span></span>         | <span data-ttu-id="45b62-151">詳細</span><span class="sxs-lookup"><span data-stu-id="45b62-151">Details</span></span>             |
 |:--------------| :---------------------|:--------------------|
-| <span data-ttu-id="09c1b-152">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="09c1b-152">400 BadRequest</span></span>| <span data-ttu-id="09c1b-153">RoleSettingNotFound</span><span class="sxs-lookup"><span data-stu-id="09c1b-153">RoleSettingNotFound</span></span>   | <span data-ttu-id="09c1b-154">[GovernanceRoleSetting](../resources/governancerolesetting.md)は、システムに存在しません。</span><span class="sxs-lookup"><span data-stu-id="09c1b-154">The [governanceRoleSetting](../resources/governancerolesetting.md) does not exist in system.</span></span>
-| <span data-ttu-id="09c1b-155">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="09c1b-155">400 BadRequest</span></span>| <span data-ttu-id="09c1b-156">InvalidRoleSetting</span><span class="sxs-lookup"><span data-stu-id="09c1b-156">InvalidRoleSetting</span></span>    | <span data-ttu-id="09c1b-157">要求本文で指定された[governanceRuleSettings](../resources/governancerulesetting.md)値が無効です。</span><span class="sxs-lookup"><span data-stu-id="09c1b-157">The [governanceRuleSettings](../resources/governancerulesetting.md) values provided in the request body are not valid.</span></span>
+| <span data-ttu-id="45b62-152">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="45b62-152">400 BadRequest</span></span>| <span data-ttu-id="45b62-153">RoleSettingNotFound</span><span class="sxs-lookup"><span data-stu-id="45b62-153">RoleSettingNotFound</span></span>   | <span data-ttu-id="45b62-154">[GovernanceRoleSetting](../resources/governancerolesetting.md)は、システムに存在しません。</span><span class="sxs-lookup"><span data-stu-id="45b62-154">The [governanceRoleSetting](../resources/governancerolesetting.md) does not exist in system.</span></span>
+| <span data-ttu-id="45b62-155">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="45b62-155">400 BadRequest</span></span>| <span data-ttu-id="45b62-156">InvalidRoleSetting</span><span class="sxs-lookup"><span data-stu-id="45b62-156">InvalidRoleSetting</span></span>    | <span data-ttu-id="45b62-157">要求本文で指定された[governanceRuleSettings](../resources/governancerulesetting.md)値が無効です。</span><span class="sxs-lookup"><span data-stu-id="45b62-157">The [governanceRuleSettings](../resources/governancerulesetting.md) values provided in the request body are not valid.</span></span>
 
-## <a name="example"></a><span data-ttu-id="09c1b-158">例</span><span class="sxs-lookup"><span data-stu-id="09c1b-158">Example</span></span> 
-<span data-ttu-id="09c1b-159">この例では、サブスクリプションの Wingtip Toys-製品のカスタムロール3のロール設定を更新します。</span><span class="sxs-lookup"><span data-stu-id="09c1b-159">This example updates the role setting for Custom Role 3 in the subscription Wingtip Toys - Prod.</span></span>
-##### <a name="request"></a><span data-ttu-id="09c1b-160">要求</span><span class="sxs-lookup"><span data-stu-id="09c1b-160">Request</span></span>
+## <a name="example"></a><span data-ttu-id="45b62-158">例</span><span class="sxs-lookup"><span data-stu-id="45b62-158">Example</span></span> 
+<span data-ttu-id="45b62-159">この例では、サブスクリプションの Wingtip Toys-製品のカスタムロール3のロール設定を更新します。</span><span class="sxs-lookup"><span data-stu-id="45b62-159">This example updates the role setting for Custom Role 3 in the subscription Wingtip Toys - Prod.</span></span>
+##### <a name="request"></a><span data-ttu-id="45b62-160">要求</span><span class="sxs-lookup"><span data-stu-id="45b62-160">Request</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="09c1b-161">プロトコル</span><span class="sxs-lookup"><span data-stu-id="09c1b-161">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="45b62-161">プロトコル</span><span class="sxs-lookup"><span data-stu-id="45b62-161">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_governancerolesetting"
@@ -82,21 +82,25 @@ Content-length: 350
    ]
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="09c1b-162">C#</span><span class="sxs-lookup"><span data-stu-id="09c1b-162">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="45b62-162">C#</span><span class="sxs-lookup"><span data-stu-id="45b62-162">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-governancerolesetting-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="09c1b-163">Javascript</span><span class="sxs-lookup"><span data-stu-id="09c1b-163">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="45b62-163">Javascript</span><span class="sxs-lookup"><span data-stu-id="45b62-163">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-governancerolesetting-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="09c1b-164">目的-C</span><span class="sxs-lookup"><span data-stu-id="09c1b-164">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="45b62-164">目的-C</span><span class="sxs-lookup"><span data-stu-id="45b62-164">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-governancerolesetting-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="45b62-165">Java</span><span class="sxs-lookup"><span data-stu-id="45b62-165">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-governancerolesetting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="09c1b-165">応答</span><span class="sxs-lookup"><span data-stu-id="09c1b-165">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="45b62-166">応答</span><span class="sxs-lookup"><span data-stu-id="45b62-166">Response</span></span>
 <!-- {
   "blockType": "response",
   "@odata.type": "microsoft.graph.None"
