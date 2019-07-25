@@ -3,28 +3,28 @@ title: 最近のユーザーアクティビティを取得する
 description: " トレース. サービスは最新の履歴項目を照会してから、関連するアクティビティを抽出します。 アクティビティは、**履歴アイテム**の最新の**lastModified**に従って並べ替えられます。 これは、**履歴アイテム**のないアクティビティは応答に含まれないことを意味します。 また、アプリケーションによって作成されたアクティビティのみが返されるように、アプリのアクセス許可は、応答に特別なフィルター処理も適用します。 このサーバー側のフィルタリングは、ユーザーが特にアクティブで、その他のアプリケーションがより新しいアクティビティを作成した場合に、空のページになる可能性があります。 アプリケーションのアクティビティを取得するには、 **Nextlink**プロパティを使用して改ページにします。"
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 6c1e52f89ba867e4da9704d1d569cb9c805b9ca1
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 8f33522988e405eb2f05e0a0b719a867690d111f
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35459238"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35890121"
 ---
-# <a name="get-recent-user-activities"></a><span data-ttu-id="de803-109">最近のユーザーアクティビティを取得する</span><span class="sxs-lookup"><span data-stu-id="de803-109">Get recent user activities</span></span>
+# <a name="get-recent-user-activities"></a><span data-ttu-id="6592a-109">最近のユーザーアクティビティを取得する</span><span class="sxs-lookup"><span data-stu-id="6592a-109">Get recent user activities</span></span>
 
-<span data-ttu-id="de803-110">特定のユーザーの最近のアクティビティを取得します。</span><span class="sxs-lookup"><span data-stu-id="de803-110">Get recent activities for a given user.</span></span> <span data-ttu-id="de803-111">この OData 関数には、"最近使用された" API のように動作するようにするための既定の動作がいくつか含まれています。</span><span class="sxs-lookup"><span data-stu-id="de803-111">This OData function has some default behaviors included to make it operate like a "most recently used" API.</span></span> <span data-ttu-id="de803-112">サービスは最新の[履歴項目](../resources/projectrome-historyitem.md)を照会してから、関連するアクティビティを抽出します。</span><span class="sxs-lookup"><span data-stu-id="de803-112">The service will query for the most recent [historyItems](../resources/projectrome-historyitem.md), and then pull those related activities.</span></span> <span data-ttu-id="de803-113">アクティビティは、**履歴アイテム**の最新の**lastModified**に従って並べ替えられます。</span><span class="sxs-lookup"><span data-stu-id="de803-113">Activities will be sorted according to the most recent **lastModified** on the **historyItem**.</span></span> <span data-ttu-id="de803-114">これは、**履歴アイテム**のないアクティビティは応答に含まれないことを意味します。</span><span class="sxs-lookup"><span data-stu-id="de803-114">This means that activities without **historyItems** will not be included in the response.</span></span> <span data-ttu-id="de803-115">また、アプリケーションによって作成されたアクティビティのみが返されるように、アプリのアクセス許可は、応答に特別なフィルター処理も適用します。</span><span class="sxs-lookup"><span data-stu-id="de803-115">The UserActivity.ReadWrite.CreatedByApp permission will also apply extra filtering to the response, so that only activities created by your application are returned.</span></span> <span data-ttu-id="de803-116">このサーバー側のフィルタリングは、ユーザーが特にアクティブで、その他のアプリケーションがより新しいアクティビティを作成した場合に、空のページになる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="de803-116">This server-side filtering might result in empty pages if the user is particularly active and other applications have created more recent activities.</span></span> <span data-ttu-id="de803-117">アプリケーションのアクティビティを取得するには、 **Nextlink**プロパティを使用して改ページにします。</span><span class="sxs-lookup"><span data-stu-id="de803-117">To get your application's activities, use the **nextLink** property to paginate.</span></span>
+<span data-ttu-id="6592a-110">特定のユーザーの最近のアクティビティを取得します。</span><span class="sxs-lookup"><span data-stu-id="6592a-110">Get recent activities for a given user.</span></span> <span data-ttu-id="6592a-111">この OData 関数には、"最近使用された" API のように動作するようにするための既定の動作がいくつか含まれています。</span><span class="sxs-lookup"><span data-stu-id="6592a-111">This OData function has some default behaviors included to make it operate like a "most recently used" API.</span></span> <span data-ttu-id="6592a-112">サービスは最新の[履歴項目](../resources/projectrome-historyitem.md)を照会してから、関連するアクティビティを抽出します。</span><span class="sxs-lookup"><span data-stu-id="6592a-112">The service will query for the most recent [historyItems](../resources/projectrome-historyitem.md), and then pull those related activities.</span></span> <span data-ttu-id="6592a-113">アクティビティは、**履歴アイテム**の最新の**lastModified**に従って並べ替えられます。</span><span class="sxs-lookup"><span data-stu-id="6592a-113">Activities will be sorted according to the most recent **lastModified** on the **historyItem**.</span></span> <span data-ttu-id="6592a-114">これは、**履歴アイテム**のないアクティビティは応答に含まれないことを意味します。</span><span class="sxs-lookup"><span data-stu-id="6592a-114">This means that activities without **historyItems** will not be included in the response.</span></span> <span data-ttu-id="6592a-115">また、アプリケーションによって作成されたアクティビティのみが返されるように、アプリのアクセス許可は、応答に特別なフィルター処理も適用します。</span><span class="sxs-lookup"><span data-stu-id="6592a-115">The UserActivity.ReadWrite.CreatedByApp permission will also apply extra filtering to the response, so that only activities created by your application are returned.</span></span> <span data-ttu-id="6592a-116">このサーバー側のフィルタリングは、ユーザーが特にアクティブで、その他のアプリケーションがより新しいアクティビティを作成した場合に、空のページになる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="6592a-116">This server-side filtering might result in empty pages if the user is particularly active and other applications have created more recent activities.</span></span> <span data-ttu-id="6592a-117">アプリケーションのアクティビティを取得するには、 **Nextlink**プロパティを使用して改ページにします。</span><span class="sxs-lookup"><span data-stu-id="6592a-117">To get your application's activities, use the **nextLink** property to paginate.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="de803-118">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="de803-118">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="6592a-118">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="6592a-118">Permissions</span></span>
 
-<span data-ttu-id="de803-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="de803-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="6592a-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6592a-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="de803-121">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="de803-121">Permission type</span></span>      | <span data-ttu-id="de803-122">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="de803-122">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="6592a-121">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="6592a-121">Permission type</span></span>      | <span data-ttu-id="6592a-122">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="6592a-122">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="de803-123">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="de803-123">Delegated (work or school account)</span></span> | <span data-ttu-id="de803-124">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="de803-124">UserActivity.ReadWrite.CreatedByApp</span></span>    |
-|<span data-ttu-id="de803-125">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="de803-125">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="de803-126">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="de803-126">UserActivity.ReadWrite.CreatedByApp</span></span>    |
-|<span data-ttu-id="de803-127">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="de803-127">Application</span></span> | <span data-ttu-id="de803-128">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="de803-128">Not supported.</span></span> |
+|<span data-ttu-id="6592a-123">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="6592a-123">Delegated (work or school account)</span></span> | <span data-ttu-id="6592a-124">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="6592a-124">UserActivity.ReadWrite.CreatedByApp</span></span>    |
+|<span data-ttu-id="6592a-125">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="6592a-125">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6592a-126">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="6592a-126">UserActivity.ReadWrite.CreatedByApp</span></span>    |
+|<span data-ttu-id="6592a-127">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="6592a-127">Application</span></span> | <span data-ttu-id="6592a-128">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="6592a-128">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="de803-129">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="de803-129">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6592a-129">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="6592a-129">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -32,15 +32,15 @@ ms.locfileid: "35459238"
 GET /me/activities/recent
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="de803-130">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="de803-130">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="6592a-130">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="6592a-130">Optional query parameters</span></span>
 
-<span data-ttu-id="de803-131">このメソッドは、応答をカスタマイズするための[OData クエリパラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="de803-131">This method supports some [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span> <span data-ttu-id="de803-132">次のクエリパラメーターがサポートされています。</span><span class="sxs-lookup"><span data-stu-id="de803-132">The following query parameters are supported:</span></span>
+<span data-ttu-id="6592a-131">このメソッドは、応答をカスタマイズするための[OData クエリパラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="6592a-131">This method supports some [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span> <span data-ttu-id="6592a-132">次のクエリパラメーターがサポートされています。</span><span class="sxs-lookup"><span data-stu-id="6592a-132">The following query parameters are supported:</span></span>
 
-- <span data-ttu-id="de803-133">**履歴項目**ナビゲーションプロパティの $expand。</span><span class="sxs-lookup"><span data-stu-id="de803-133">$expand for the **historyItems** navigation property.</span></span>
-- <span data-ttu-id="de803-134">ページ間でのアイテムの最大数を制限する $top。</span><span class="sxs-lookup"><span data-stu-id="de803-134">$top to limit the maximum number of items across pages.</span></span>
-- <span data-ttu-id="de803-135">**lastModifiedDateTime**プロパティを使用して、**アクティビティ**または**履歴アイテム**(展開されている場合) のどちらかを $filter します。</span><span class="sxs-lookup"><span data-stu-id="de803-135">$filter on the **lastModifiedDateTime** property for either **activities** or **historyItems**, if expanded.</span></span>
+- <span data-ttu-id="6592a-133">**履歴項目**ナビゲーションプロパティの $expand。</span><span class="sxs-lookup"><span data-stu-id="6592a-133">$expand for the **historyItems** navigation property.</span></span>
+- <span data-ttu-id="6592a-134">ページ間でのアイテムの最大数を制限する $top。</span><span class="sxs-lookup"><span data-stu-id="6592a-134">$top to limit the maximum number of items across pages.</span></span>
+- <span data-ttu-id="6592a-135">**lastModifiedDateTime**プロパティを使用して、**アクティビティ**または**履歴アイテム**(展開されている場合) のどちらかを $filter します。</span><span class="sxs-lookup"><span data-stu-id="6592a-135">$filter on the **lastModifiedDateTime** property for either **activities** or **historyItems**, if expanded.</span></span>
 
-<span data-ttu-id="de803-136">次に、URL エンコードでサポートされているクエリの例をいくつか示します。</span><span class="sxs-lookup"><span data-stu-id="de803-136">The following are some examples of supported queries with URL encoding.</span></span>
+<span data-ttu-id="6592a-136">次に、URL エンコードでサポートされているクエリの例をいくつか示します。</span><span class="sxs-lookup"><span data-stu-id="6592a-136">The following are some examples of supported queries with URL encoding.</span></span>
 
 ```
 /me/activities/recent?$expand=historyItems($filter=lastModifiedDateTime%20gt%202018-01-22T21:45:00.347Z%20and%20lastModifiedDateTime%20lt%202018-01-22T22:00:00.347Z)
@@ -50,28 +50,28 @@ GET /me/activities/recent
 /me/activities/recent?$top=5
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="de803-137">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="de803-137">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="6592a-137">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="6592a-137">Request headers</span></span>
 
-|<span data-ttu-id="de803-138">名前</span><span class="sxs-lookup"><span data-stu-id="de803-138">Name</span></span> | <span data-ttu-id="de803-139">型</span><span class="sxs-lookup"><span data-stu-id="de803-139">Type</span></span> | <span data-ttu-id="de803-140">説明</span><span class="sxs-lookup"><span data-stu-id="de803-140">Description</span></span>|
+|<span data-ttu-id="6592a-138">名前</span><span class="sxs-lookup"><span data-stu-id="6592a-138">Name</span></span> | <span data-ttu-id="6592a-139">型</span><span class="sxs-lookup"><span data-stu-id="6592a-139">Type</span></span> | <span data-ttu-id="6592a-140">説明</span><span class="sxs-lookup"><span data-stu-id="6592a-140">Description</span></span>|
 |:----|:-----|:-----------|
-|<span data-ttu-id="de803-141">Authorization</span><span class="sxs-lookup"><span data-stu-id="de803-141">Authorization</span></span> | <span data-ttu-id="de803-142">string</span><span class="sxs-lookup"><span data-stu-id="de803-142">string</span></span> | <span data-ttu-id="de803-p105">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="de803-p105">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="6592a-141">Authorization</span><span class="sxs-lookup"><span data-stu-id="6592a-141">Authorization</span></span> | <span data-ttu-id="6592a-142">string</span><span class="sxs-lookup"><span data-stu-id="6592a-142">string</span></span> | <span data-ttu-id="6592a-p105">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="6592a-p105">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="de803-145">要求本文</span><span class="sxs-lookup"><span data-stu-id="de803-145">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="6592a-145">要求本文</span><span class="sxs-lookup"><span data-stu-id="6592a-145">Request body</span></span>
 
-<span data-ttu-id="de803-146">要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="de803-146">Do not specify a request body.</span></span>
+<span data-ttu-id="6592a-146">要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="6592a-146">Do not specify a request body.</span></span>
 
-## <a name="response"></a><span data-ttu-id="de803-147">応答</span><span class="sxs-lookup"><span data-stu-id="de803-147">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6592a-147">応答</span><span class="sxs-lookup"><span data-stu-id="6592a-147">Response</span></span>
 
-<span data-ttu-id="de803-148">成功した場合、このメソッド`200 OK`は、アプリケーションのユーザーの最近のアクティビティで応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="de803-148">If successful, this method returns the `200 OK` response code with the user's recent activities for your application.</span></span>
+<span data-ttu-id="6592a-148">成功した場合、このメソッド`200 OK`は、アプリケーションのユーザーの最近のアクティビティで応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="6592a-148">If successful, this method returns the `200 OK` response code with the user's recent activities for your application.</span></span>
 
-## <a name="example"></a><span data-ttu-id="de803-149">例</span><span class="sxs-lookup"><span data-stu-id="de803-149">Example</span></span>
+## <a name="example"></a><span data-ttu-id="6592a-149">例</span><span class="sxs-lookup"><span data-stu-id="6592a-149">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="de803-150">要求</span><span class="sxs-lookup"><span data-stu-id="de803-150">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="6592a-150">要求</span><span class="sxs-lookup"><span data-stu-id="6592a-150">Request</span></span>
 
-<span data-ttu-id="de803-151">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="de803-151">The following is an example of the request.</span></span>
+<span data-ttu-id="6592a-151">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="6592a-151">The following is an example of the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="de803-152">プロトコル</span><span class="sxs-lookup"><span data-stu-id="de803-152">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="6592a-152">プロトコル</span><span class="sxs-lookup"><span data-stu-id="6592a-152">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_recent_activities"
@@ -80,24 +80,28 @@ GET /me/activities/recent
 ```http
 GET https://graph.microsoft.com/v1.0/me/activities/recent
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="de803-153">C#</span><span class="sxs-lookup"><span data-stu-id="de803-153">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="6592a-153">C#</span><span class="sxs-lookup"><span data-stu-id="6592a-153">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-recent-activities-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="de803-154">Javascript</span><span class="sxs-lookup"><span data-stu-id="de803-154">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="6592a-154">Javascript</span><span class="sxs-lookup"><span data-stu-id="6592a-154">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-recent-activities-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="de803-155">目的-C</span><span class="sxs-lookup"><span data-stu-id="de803-155">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="6592a-155">目的-C</span><span class="sxs-lookup"><span data-stu-id="6592a-155">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-recent-activities-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="6592a-156">Java</span><span class="sxs-lookup"><span data-stu-id="6592a-156">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-recent-activities-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="de803-156">応答</span><span class="sxs-lookup"><span data-stu-id="de803-156">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="6592a-157">応答</span><span class="sxs-lookup"><span data-stu-id="6592a-157">Response</span></span>
 
-<span data-ttu-id="de803-157">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="de803-157">The following is an example of the response.</span></span>
+<span data-ttu-id="6592a-158">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="6592a-158">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",

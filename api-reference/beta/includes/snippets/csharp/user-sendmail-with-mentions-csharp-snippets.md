@@ -1,11 +1,11 @@
 ---
 description: 自動的に生成されたファイル。 変更しない
 ms.openlocfilehash: 072691670f66f3165b1152e96d5ce71b54ceacc4
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35527737"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35716339"
 ---
 ```csharp
 
