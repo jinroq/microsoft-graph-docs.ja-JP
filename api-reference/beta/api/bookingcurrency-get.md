@@ -4,12 +4,12 @@ description: Microsoft の予約業務で利用できる bookingCurrency オブ�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: b90e4fe8f01711b5cfbecba287e3d424b139a7e3
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 2969bfa6b89b539310d9a20216cbccdbbe68afa5
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35439106"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35865428"
 ---
 # <a name="get-bookingcurrency"></a>BookingCurrency の取得
 
@@ -65,6 +65,10 @@ GET https://graph.microsoft.com/beta/bookingCurrencies/USD
 
 # <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-bookingcurrency-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-bookingcurrency-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

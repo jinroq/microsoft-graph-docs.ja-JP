@@ -2,12 +2,12 @@
 title: identityProvider を一覧表示する
 description: すべての identityProvider ディレクトリ内で取得します。
 localization_priority: Normal
-ms.openlocfilehash: 8af8806c2d932bbaa488252dbf5a665640ac4c6a
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: ed70262efd04878d054852d5fa0f692afe6238e2
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35442238"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35857610"
 ---
 # <a name="list-identityproviders"></a>identityProvider を一覧表示する
 
@@ -73,6 +73,10 @@ GET https://graph.microsoft.com/beta/identityProviders
 
 # <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-identityproviders-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-identityproviders-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

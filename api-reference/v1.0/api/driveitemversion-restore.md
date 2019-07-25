@@ -3,12 +3,12 @@ title: DriveItem の旧バージョンを復元する
 description: DriveItem の旧バージョンを現在のバージョンに復元します。 旧バージョンのコンテンツを持つ新しいバージョンを作成します。しかし、ファイルの既存のバージョンはすべて保持されます。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: a929703ab572e9aac57f91eb5c6f9b18988918cb
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: c9cddabccf3d3e9d09ae18cd1f1e4aa1743cf0a8
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35448062"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35881592"
 ---
 # <a name="restore-a-previous-version-of-a-driveitem"></a>DriveItem の旧バージョンを復元する
 
@@ -61,6 +61,10 @@ POST /drives/{drive-id}/items/{item-id}/versions/{version-id}/restoreVersion
 
 # <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/restore-item-version-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/restore-item-version-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
