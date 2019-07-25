@@ -4,92 +4,92 @@ description: 新しい Office 365 グループまたはセキュリティ グル
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: fdce0d9422f15a72d8857372c7685e58e70c802c
-ms.sourcegitcommit: b198efc2391a12a840e4f1b8c42c18a55b06037f
+ms.openlocfilehash: ff1fa946f5a2a9d47e7dd102d0ba456d8d61e1da
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "35820655"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35858156"
 ---
-# <a name="create-group"></a><span data-ttu-id="5ae3c-103">グループを作成する</span><span class="sxs-lookup"><span data-stu-id="5ae3c-103">Create group</span></span>
+# <a name="create-group"></a><span data-ttu-id="7abc2-103">グループを作成する</span><span class="sxs-lookup"><span data-stu-id="7abc2-103">Create group</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5ae3c-104">要求本文で指定した新しい[グループ](../resources/group.md)を作成します。</span><span class="sxs-lookup"><span data-stu-id="5ae3c-104">Use this API to create a new [group](../resources/group.md) as specified in the request body.</span></span> <span data-ttu-id="5ae3c-105">以下のいずれかのグループを作成できます:</span><span class="sxs-lookup"><span data-stu-id="5ae3c-105">You can create one of the following groups:</span></span>
+<span data-ttu-id="7abc2-104">要求本文で指定した新しい[グループ](../resources/group.md)を作成します。</span><span class="sxs-lookup"><span data-stu-id="7abc2-104">Use this API to create a new [group](../resources/group.md) as specified in the request body.</span></span> <span data-ttu-id="7abc2-105">以下のいずれかのグループを作成できます:</span><span class="sxs-lookup"><span data-stu-id="7abc2-105">You can create one of the following groups:</span></span>
 
-* <span data-ttu-id="5ae3c-106">Office 365 グループ (統合グループ)</span><span class="sxs-lookup"><span data-stu-id="5ae3c-106">Office 365 Group (unified group)</span></span>
-* <span data-ttu-id="5ae3c-107">セキュリティ グループ</span><span class="sxs-lookup"><span data-stu-id="5ae3c-107">Security group</span></span>
+* <span data-ttu-id="7abc2-106">Office 365 グループ (統合グループ)</span><span class="sxs-lookup"><span data-stu-id="7abc2-106">Office 365 Group (unified group)</span></span>
+* <span data-ttu-id="7abc2-107">セキュリティ グループ</span><span class="sxs-lookup"><span data-stu-id="7abc2-107">Security group</span></span>
 
-<span data-ttu-id="5ae3c-108">この操作は既定で各グループのプロパティのサブセットのみを返します。</span><span class="sxs-lookup"><span data-stu-id="5ae3c-108">This operation returns by default only a subset of the properties for each group.</span></span> <span data-ttu-id="5ae3c-109">これらの既定のプロパティは、「[プロパティ](../resources/group.md#properties)」セクションに記載されています。</span><span class="sxs-lookup"><span data-stu-id="5ae3c-109">These default properties are noted in the [Properties](../resources/group.md#properties) section.</span></span> <span data-ttu-id="5ae3c-110">既定で_返されない_プロパティを取得するには、[GET 操作](group-get.md)を実行し、`$select` OData クエリ オプションでプロパティを指定します。</span><span class="sxs-lookup"><span data-stu-id="5ae3c-110">To get properties that are _not_ returned by default, do a GET operation and specify the properties in a `$select` OData query option.</span></span>
+<span data-ttu-id="7abc2-108">この操作は既定で各グループのプロパティのサブセットのみを返します。</span><span class="sxs-lookup"><span data-stu-id="7abc2-108">This operation returns by default only a subset of the properties for each group.</span></span> <span data-ttu-id="7abc2-109">これらの既定のプロパティは、「[プロパティ](../resources/group.md#properties)」セクションに記載されています。</span><span class="sxs-lookup"><span data-stu-id="7abc2-109">These default properties are noted in the [Properties](../resources/group.md#properties) section.</span></span> <span data-ttu-id="7abc2-110">既定で_返されない_プロパティを取得するには、[GET 操作](group-get.md)を実行し、`$select` OData クエリ オプションでプロパティを指定します。</span><span class="sxs-lookup"><span data-stu-id="7abc2-110">To get properties that are _not_ returned by default, do a GET operation and specify the properties in a `$select` OData query option.</span></span>
 
-><span data-ttu-id="5ae3c-111">**注:** [チーム](../resources/team.md)を作成するには、まずグループを作成し、それからそのグループにチームを追加します。[チームの作成](../api/team-put-teams.md)に関するページを参照してください。</span><span class="sxs-lookup"><span data-stu-id="5ae3c-111">**Note**: To create a [team](../resources/team.md), first create a group then add a team to it, see [create team](../api/team-put-teams.md).</span></span>
+><span data-ttu-id="7abc2-111">**注:** [チーム](../resources/team.md)を作成するには、まずグループを作成し、それからそのグループにチームを追加します。[チームの作成](../api/team-put-teams.md)に関するページを参照してください。</span><span class="sxs-lookup"><span data-stu-id="7abc2-111">**Note**: To create a [team](../resources/team.md), first create a group then add a team to it, see [create team](../api/team-put-teams.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="5ae3c-112">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="5ae3c-112">Permissions</span></span>
-<span data-ttu-id="5ae3c-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5ae3c-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="7abc2-112">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="7abc2-112">Permissions</span></span>
+<span data-ttu-id="7abc2-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7abc2-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="5ae3c-115">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="5ae3c-115">Permission type</span></span>      | <span data-ttu-id="5ae3c-116">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="5ae3c-116">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="7abc2-115">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="7abc2-115">Permission type</span></span>      | <span data-ttu-id="7abc2-116">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="7abc2-116">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="5ae3c-117">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="5ae3c-117">Delegated (work or school account)</span></span> | <span data-ttu-id="5ae3c-118">Group.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="5ae3c-118">Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>  |
-|<span data-ttu-id="5ae3c-119">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="5ae3c-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5ae3c-120">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="5ae3c-120">Not supported.</span></span>    |
-|<span data-ttu-id="5ae3c-121">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="5ae3c-121">Application</span></span> | <span data-ttu-id="5ae3c-122">Group.ReadWrite.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5ae3c-122">Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="7abc2-117">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="7abc2-117">Delegated (work or school account)</span></span> | <span data-ttu-id="7abc2-118">Group.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="7abc2-118">Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>  |
+|<span data-ttu-id="7abc2-119">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="7abc2-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7abc2-120">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="7abc2-120">Not supported.</span></span>    |
+|<span data-ttu-id="7abc2-121">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="7abc2-121">Application</span></span> | <span data-ttu-id="7abc2-122">Group.ReadWrite.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7abc2-122">Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="5ae3c-123">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="5ae3c-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7abc2-123">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="7abc2-123">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="5ae3c-124">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="5ae3c-124">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="7abc2-124">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="7abc2-124">Request headers</span></span>
 
-| <span data-ttu-id="5ae3c-125">名前</span><span class="sxs-lookup"><span data-stu-id="5ae3c-125">Name</span></span>       | <span data-ttu-id="5ae3c-126">型</span><span class="sxs-lookup"><span data-stu-id="5ae3c-126">Type</span></span> | <span data-ttu-id="5ae3c-127">説明</span><span class="sxs-lookup"><span data-stu-id="5ae3c-127">Description</span></span>|
+| <span data-ttu-id="7abc2-125">名前</span><span class="sxs-lookup"><span data-stu-id="7abc2-125">Name</span></span>       | <span data-ttu-id="7abc2-126">型</span><span class="sxs-lookup"><span data-stu-id="7abc2-126">Type</span></span> | <span data-ttu-id="7abc2-127">説明</span><span class="sxs-lookup"><span data-stu-id="7abc2-127">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="5ae3c-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="5ae3c-128">Authorization</span></span>  | <span data-ttu-id="5ae3c-129">string</span><span class="sxs-lookup"><span data-stu-id="5ae3c-129">string</span></span>  | <span data-ttu-id="5ae3c-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="5ae3c-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="7abc2-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="7abc2-128">Authorization</span></span>  | <span data-ttu-id="7abc2-129">string</span><span class="sxs-lookup"><span data-stu-id="7abc2-129">string</span></span>  | <span data-ttu-id="7abc2-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="7abc2-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="5ae3c-132">要求本文</span><span class="sxs-lookup"><span data-stu-id="5ae3c-132">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="7abc2-132">要求本文</span><span class="sxs-lookup"><span data-stu-id="7abc2-132">Request body</span></span>
 
-<span data-ttu-id="5ae3c-133">次の表は、グループを作成するときに指定する [group](../resources/group.md) リソースのプロパティを示しています。</span><span class="sxs-lookup"><span data-stu-id="5ae3c-133">The following table shows the properties of the [group](../resources/group.md) resource to specify when you create a group.</span></span> 
+<span data-ttu-id="7abc2-133">次の表は、グループを作成するときに指定する [group](../resources/group.md) リソースのプロパティを示しています。</span><span class="sxs-lookup"><span data-stu-id="7abc2-133">The following table shows the properties of the [group](../resources/group.md) resource to specify when you create a group.</span></span> 
 
-| <span data-ttu-id="5ae3c-134">プロパティ</span><span class="sxs-lookup"><span data-stu-id="5ae3c-134">Property</span></span> | <span data-ttu-id="5ae3c-135">型</span><span class="sxs-lookup"><span data-stu-id="5ae3c-135">Type</span></span> | <span data-ttu-id="5ae3c-136">説明</span><span class="sxs-lookup"><span data-stu-id="5ae3c-136">Description</span></span>|
+| <span data-ttu-id="7abc2-134">プロパティ</span><span class="sxs-lookup"><span data-stu-id="7abc2-134">Property</span></span> | <span data-ttu-id="7abc2-135">型</span><span class="sxs-lookup"><span data-stu-id="7abc2-135">Type</span></span> | <span data-ttu-id="7abc2-136">説明</span><span class="sxs-lookup"><span data-stu-id="7abc2-136">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="5ae3c-137">displayName</span><span class="sxs-lookup"><span data-stu-id="5ae3c-137">displayName</span></span> | <span data-ttu-id="5ae3c-138">string</span><span class="sxs-lookup"><span data-stu-id="5ae3c-138">string</span></span> | <span data-ttu-id="5ae3c-139">アドレス帳に表示するグループの名前。</span><span class="sxs-lookup"><span data-stu-id="5ae3c-139">The name to display in the address book for the group.</span></span> <span data-ttu-id="5ae3c-140">必須です。</span><span class="sxs-lookup"><span data-stu-id="5ae3c-140">Required.</span></span> |
-| <span data-ttu-id="5ae3c-141">mailEnabled</span><span class="sxs-lookup"><span data-stu-id="5ae3c-141">mailEnabled</span></span> | <span data-ttu-id="5ae3c-142">boolean</span><span class="sxs-lookup"><span data-stu-id="5ae3c-142">boolean</span></span> | <span data-ttu-id="5ae3c-143">メールが有効なグループの場合は、**true** に設定します。</span><span class="sxs-lookup"><span data-stu-id="5ae3c-143">Set to **true** for mail-enabled groups.</span></span> <span data-ttu-id="5ae3c-144">必須。</span><span class="sxs-lookup"><span data-stu-id="5ae3c-144">Required.</span></span> |
-| <span data-ttu-id="5ae3c-145">mailNickname</span><span class="sxs-lookup"><span data-stu-id="5ae3c-145">mailNickname</span></span> | <span data-ttu-id="5ae3c-146">string</span><span class="sxs-lookup"><span data-stu-id="5ae3c-146">string</span></span> | <span data-ttu-id="5ae3c-147">グループのメール エイリアス。</span><span class="sxs-lookup"><span data-stu-id="5ae3c-147">The mail alias for the group.</span></span> <span data-ttu-id="5ae3c-148">必須です。</span><span class="sxs-lookup"><span data-stu-id="5ae3c-148">Required.</span></span> |
-| <span data-ttu-id="5ae3c-149">securityEnabled</span><span class="sxs-lookup"><span data-stu-id="5ae3c-149">securityEnabled</span></span> | <span data-ttu-id="5ae3c-150">ブール値</span><span class="sxs-lookup"><span data-stu-id="5ae3c-150">boolean</span></span> | <span data-ttu-id="5ae3c-151">Office 365 グループを含む、セキュリティが有効なグループに **true** を設定します。</span><span class="sxs-lookup"><span data-stu-id="5ae3c-151">Set to **true** for security-enabled groups, including Office 365 groups.</span></span> <span data-ttu-id="5ae3c-152">必須。</span><span class="sxs-lookup"><span data-stu-id="5ae3c-152">Required.</span></span> |
-| <span data-ttu-id="5ae3c-153">owners</span><span class="sxs-lookup"><span data-stu-id="5ae3c-153">owners</span></span> | <span data-ttu-id="5ae3c-154">[directoryObject](../resources/directoryobject.md) コレクション</span><span class="sxs-lookup"><span data-stu-id="5ae3c-154">[directoryObject](../resources/directoryobject.md) collection</span></span> | <span data-ttu-id="5ae3c-155">このプロパティは、作成時のグループの所有者を表します。</span><span class="sxs-lookup"><span data-stu-id="5ae3c-155">This property represents the owners for the group at creation time.</span></span> <span data-ttu-id="5ae3c-156">省略可能。</span><span class="sxs-lookup"><span data-stu-id="5ae3c-156">Optional.</span></span> |
-| <span data-ttu-id="5ae3c-157">members</span><span class="sxs-lookup"><span data-stu-id="5ae3c-157">members</span></span> | <span data-ttu-id="5ae3c-158">[directoryObject](../resources/directoryobject.md) コレクション</span><span class="sxs-lookup"><span data-stu-id="5ae3c-158">[directoryObject](../resources/directoryobject.md) collection</span></span> | <span data-ttu-id="5ae3c-159">このプロパティは、作成時のグループのメンバーを表します。</span><span class="sxs-lookup"><span data-stu-id="5ae3c-159">This property represents the members for the group at creation time.</span></span> <span data-ttu-id="5ae3c-160">省略可能。</span><span class="sxs-lookup"><span data-stu-id="5ae3c-160">Optional.</span></span> |
+| <span data-ttu-id="7abc2-137">displayName</span><span class="sxs-lookup"><span data-stu-id="7abc2-137">displayName</span></span> | <span data-ttu-id="7abc2-138">string</span><span class="sxs-lookup"><span data-stu-id="7abc2-138">string</span></span> | <span data-ttu-id="7abc2-139">アドレス帳に表示するグループの名前。</span><span class="sxs-lookup"><span data-stu-id="7abc2-139">The name to display in the address book for the group.</span></span> <span data-ttu-id="7abc2-140">必須です。</span><span class="sxs-lookup"><span data-stu-id="7abc2-140">Required.</span></span> |
+| <span data-ttu-id="7abc2-141">mailEnabled</span><span class="sxs-lookup"><span data-stu-id="7abc2-141">mailEnabled</span></span> | <span data-ttu-id="7abc2-142">boolean</span><span class="sxs-lookup"><span data-stu-id="7abc2-142">boolean</span></span> | <span data-ttu-id="7abc2-143">メールが有効なグループの場合は、**true** に設定します。</span><span class="sxs-lookup"><span data-stu-id="7abc2-143">Set to **true** for mail-enabled groups.</span></span> <span data-ttu-id="7abc2-144">必須。</span><span class="sxs-lookup"><span data-stu-id="7abc2-144">Required.</span></span> |
+| <span data-ttu-id="7abc2-145">mailNickname</span><span class="sxs-lookup"><span data-stu-id="7abc2-145">mailNickname</span></span> | <span data-ttu-id="7abc2-146">string</span><span class="sxs-lookup"><span data-stu-id="7abc2-146">string</span></span> | <span data-ttu-id="7abc2-147">グループのメール エイリアス。</span><span class="sxs-lookup"><span data-stu-id="7abc2-147">The mail alias for the group.</span></span> <span data-ttu-id="7abc2-148">必須です。</span><span class="sxs-lookup"><span data-stu-id="7abc2-148">Required.</span></span> |
+| <span data-ttu-id="7abc2-149">securityEnabled</span><span class="sxs-lookup"><span data-stu-id="7abc2-149">securityEnabled</span></span> | <span data-ttu-id="7abc2-150">ブール値</span><span class="sxs-lookup"><span data-stu-id="7abc2-150">boolean</span></span> | <span data-ttu-id="7abc2-151">Office 365 グループを含む、セキュリティが有効なグループに **true** を設定します。</span><span class="sxs-lookup"><span data-stu-id="7abc2-151">Set to **true** for security-enabled groups, including Office 365 groups.</span></span> <span data-ttu-id="7abc2-152">必須。</span><span class="sxs-lookup"><span data-stu-id="7abc2-152">Required.</span></span> |
+| <span data-ttu-id="7abc2-153">owners</span><span class="sxs-lookup"><span data-stu-id="7abc2-153">owners</span></span> | <span data-ttu-id="7abc2-154">[directoryObject](../resources/directoryobject.md) コレクション</span><span class="sxs-lookup"><span data-stu-id="7abc2-154">[directoryObject](../resources/directoryobject.md) collection</span></span> | <span data-ttu-id="7abc2-155">このプロパティは、作成時のグループの所有者を表します。</span><span class="sxs-lookup"><span data-stu-id="7abc2-155">This property represents the owners for the group at creation time.</span></span> <span data-ttu-id="7abc2-156">省略可能。</span><span class="sxs-lookup"><span data-stu-id="7abc2-156">Optional.</span></span> |
+| <span data-ttu-id="7abc2-157">members</span><span class="sxs-lookup"><span data-stu-id="7abc2-157">members</span></span> | <span data-ttu-id="7abc2-158">[directoryObject](../resources/directoryobject.md) コレクション</span><span class="sxs-lookup"><span data-stu-id="7abc2-158">[directoryObject](../resources/directoryobject.md) collection</span></span> | <span data-ttu-id="7abc2-159">このプロパティは、作成時のグループのメンバーを表します。</span><span class="sxs-lookup"><span data-stu-id="7abc2-159">This property represents the members for the group at creation time.</span></span> <span data-ttu-id="7abc2-160">省略可能。</span><span class="sxs-lookup"><span data-stu-id="7abc2-160">Optional.</span></span> |
 
-> <span data-ttu-id="5ae3c-161">**注**: Microsoft Azure portal を使用して作成されるグループでは、**securityEnabled** は最初は常に `true` に設定されます。</span><span class="sxs-lookup"><span data-stu-id="5ae3c-161">**Note:** Groups created using the Microsoft Azure portal always have **securityEnabled** initially set to `true`.</span></span>
+> <span data-ttu-id="7abc2-161">**注**: Microsoft Azure portal を使用して作成されるグループでは、**securityEnabled** は最初は常に `true` に設定されます。</span><span class="sxs-lookup"><span data-stu-id="7abc2-161">**Note:** Groups created using the Microsoft Azure portal always have **securityEnabled** initially set to `true`.</span></span>
 
-<span data-ttu-id="5ae3c-162">**グループ** リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため、`POST` 操作を使用して、リソースの作成時にカスタム プロパティを独自のデータとともにグループに追加することができます。</span><span class="sxs-lookup"><span data-stu-id="5ae3c-162">Since the **group** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the group while creating it.</span></span>
+<span data-ttu-id="7abc2-162">**グループ** リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため、`POST` 操作を使用して、リソースの作成時にカスタム プロパティを独自のデータとともにグループに追加することができます。</span><span class="sxs-lookup"><span data-stu-id="7abc2-162">Since the **group** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the group while creating it.</span></span>
 
-><span data-ttu-id="5ae3c-163">**注:** アプリ専用コンテキストを使用し、所有者を指定せずにプログラムで Office 365 グループを作成すると、そのグループは匿名で作成されます。</span><span class="sxs-lookup"><span data-stu-id="5ae3c-163">**Note:** Creating an Office 365 Group programmatically without a user context and  without specifying owners will create the group anonymously.</span></span> <span data-ttu-id="5ae3c-164">この操作を行うと、さらに手動操作が行われるまで、関連付けられている SharePoint Online サイトが自動的に作成されない可能性があります。</span><span class="sxs-lookup"><span data-stu-id="5ae3c-164">Doing so can result in the associated SharePoint Online site not being created automatically until further manual action is taken.</span></span>  
+><span data-ttu-id="7abc2-163">**注:** アプリ専用コンテキストを使用し、所有者を指定せずにプログラムで Office 365 グループを作成すると、そのグループは匿名で作成されます。</span><span class="sxs-lookup"><span data-stu-id="7abc2-163">**Note:** Creating an Office 365 Group programmatically without a user context and  without specifying owners will create the group anonymously.</span></span> <span data-ttu-id="7abc2-164">この操作を行うと、さらに手動操作が行われるまで、関連付けられている SharePoint Online サイトが自動的に作成されない可能性があります。</span><span class="sxs-lookup"><span data-stu-id="7abc2-164">Doing so can result in the associated SharePoint Online site not being created automatically until further manual action is taken.</span></span>  
 
-<span data-ttu-id="5ae3c-165">グループの必要に応じて他の書き込み可能なプロパティを指定します。</span><span class="sxs-lookup"><span data-stu-id="5ae3c-165">Specify other writable properties as necessary for your group.</span></span> <span data-ttu-id="5ae3c-166">詳細については、[group](../resources/group.md) リソースのプロパティをご覧ください。</span><span class="sxs-lookup"><span data-stu-id="5ae3c-166">For more information, see the properties of the [group](../resources/group.md) resource.</span></span>
+<span data-ttu-id="7abc2-165">グループの必要に応じて他の書き込み可能なプロパティを指定します。</span><span class="sxs-lookup"><span data-stu-id="7abc2-165">Specify other writable properties as necessary for your group.</span></span> <span data-ttu-id="7abc2-166">詳細については、[group](../resources/group.md) リソースのプロパティをご覧ください。</span><span class="sxs-lookup"><span data-stu-id="7abc2-166">For more information, see the properties of the [group](../resources/group.md) resource.</span></span>
 
-### <a name="grouptypes-options"></a><span data-ttu-id="5ae3c-167">groupTypes オプション</span><span class="sxs-lookup"><span data-stu-id="5ae3c-167">groupTypes options</span></span>
+### <a name="grouptypes-options"></a><span data-ttu-id="7abc2-167">groupTypes オプション</span><span class="sxs-lookup"><span data-stu-id="7abc2-167">groupTypes options</span></span>
 
-<span data-ttu-id="5ae3c-168">示すように、**groupTypes** プロパティを使用し、グループの種類とグループのメンバーシップを管理します:</span><span class="sxs-lookup"><span data-stu-id="5ae3c-168">Use the **groupTypes** property to control the type of group and its membership, as shown.</span></span>
+<span data-ttu-id="7abc2-168">示すように、**groupTypes** プロパティを使用し、グループの種類とグループのメンバーシップを管理します:</span><span class="sxs-lookup"><span data-stu-id="7abc2-168">Use the **groupTypes** property to control the type of group and its membership, as shown.</span></span>
 
-| <span data-ttu-id="5ae3c-169">グループの種類</span><span class="sxs-lookup"><span data-stu-id="5ae3c-169">Type of group</span></span> | <span data-ttu-id="5ae3c-170">割り当て済みのメンバーシップ</span><span class="sxs-lookup"><span data-stu-id="5ae3c-170">Assigned membership</span></span> | <span data-ttu-id="5ae3c-171">動的メンバーシップ</span><span class="sxs-lookup"><span data-stu-id="5ae3c-171">Dynamic membership</span></span> |
+| <span data-ttu-id="7abc2-169">グループの種類</span><span class="sxs-lookup"><span data-stu-id="7abc2-169">Type of group</span></span> | <span data-ttu-id="7abc2-170">割り当て済みのメンバーシップ</span><span class="sxs-lookup"><span data-stu-id="7abc2-170">Assigned membership</span></span> | <span data-ttu-id="7abc2-171">動的メンバーシップ</span><span class="sxs-lookup"><span data-stu-id="7abc2-171">Dynamic membership</span></span> |
 |:--------------|:------------------------|:---------------|
-| <span data-ttu-id="5ae3c-172">Office 365 (統合グループともいいます)</span><span class="sxs-lookup"><span data-stu-id="5ae3c-172">Office 365 (aka unified group)</span></span>| `["Unified"]` | `["Unified","DynamicMembership"]`
-| <span data-ttu-id="5ae3c-173">Dynamic</span><span class="sxs-lookup"><span data-stu-id="5ae3c-173">Dynamic</span></span> | <span data-ttu-id="5ae3c-174">`[]` (_null_)</span><span class="sxs-lookup"><span data-stu-id="5ae3c-174">Null</span></span> | `["DynamicMembership"]`|
+| <span data-ttu-id="7abc2-172">Office 365 (統合グループともいいます)</span><span class="sxs-lookup"><span data-stu-id="7abc2-172">Office 365 (aka unified group)</span></span>| `["Unified"]` | `["Unified","DynamicMembership"]`
+| <span data-ttu-id="7abc2-173">Dynamic</span><span class="sxs-lookup"><span data-stu-id="7abc2-173">Dynamic</span></span> | <span data-ttu-id="7abc2-174">`[]` (_null_)</span><span class="sxs-lookup"><span data-stu-id="7abc2-174">Null</span></span> | `["DynamicMembership"]`|
 
-## <a name="response"></a><span data-ttu-id="5ae3c-175">応答</span><span class="sxs-lookup"><span data-stu-id="5ae3c-175">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7abc2-175">応答</span><span class="sxs-lookup"><span data-stu-id="7abc2-175">Response</span></span>
 
-<span data-ttu-id="5ae3c-176">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [group](../resources/group.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="5ae3c-176">If successful, this method returns a `201 Created` response code and a [group](../resources/group.md) object in the response body.</span></span> <span data-ttu-id="5ae3c-177">応答には、そのグループの既定のプロパティのみが含まれます。</span><span class="sxs-lookup"><span data-stu-id="5ae3c-177">The response includes only the default properties of the group.</span></span>
+<span data-ttu-id="7abc2-176">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [group](../resources/group.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="7abc2-176">If successful, this method returns a `201 Created` response code and a [group](../resources/group.md) object in the response body.</span></span> <span data-ttu-id="7abc2-177">応答には、そのグループの既定のプロパティのみが含まれます。</span><span class="sxs-lookup"><span data-stu-id="7abc2-177">The response includes only the default properties of the group.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="5ae3c-178">例</span><span class="sxs-lookup"><span data-stu-id="5ae3c-178">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="7abc2-178">例</span><span class="sxs-lookup"><span data-stu-id="7abc2-178">Examples</span></span>
 
-### <a name="example-1-create-an-office-365-group"></a><span data-ttu-id="5ae3c-179">例 1: Office 365 グループを作成する</span><span class="sxs-lookup"><span data-stu-id="5ae3c-179">Create an Office 365 group</span></span>
+### <a name="example-1-create-an-office-365-group"></a><span data-ttu-id="7abc2-179">例 1: Office 365 グループを作成する</span><span class="sxs-lookup"><span data-stu-id="7abc2-179">Create an Office 365 group</span></span>
 
-<span data-ttu-id="5ae3c-180">次の例では、Office 365 グループを作成します。</span><span class="sxs-lookup"><span data-stu-id="5ae3c-180">The following example creates an Office 365 group.</span></span>
+<span data-ttu-id="7abc2-180">次の例では、Office 365 グループを作成します。</span><span class="sxs-lookup"><span data-stu-id="7abc2-180">The following example creates an Office 365 group.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="5ae3c-181">要求</span><span class="sxs-lookup"><span data-stu-id="5ae3c-181">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="7abc2-181">要求</span><span class="sxs-lookup"><span data-stu-id="7abc2-181">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="5ae3c-182">HTTP</span><span class="sxs-lookup"><span data-stu-id="5ae3c-182">--Http</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="7abc2-182">HTTP</span><span class="sxs-lookup"><span data-stu-id="7abc2-182">--Http</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_group"
@@ -110,26 +110,30 @@ Content-length: 244
   "securityEnabled": false
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="5ae3c-183">C#</span><span class="sxs-lookup"><span data-stu-id="5ae3c-183">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="7abc2-183">C#</span><span class="sxs-lookup"><span data-stu-id="7abc2-183">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="5ae3c-184">Javascript</span><span class="sxs-lookup"><span data-stu-id="5ae3c-184">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7abc2-184">Javascript</span><span class="sxs-lookup"><span data-stu-id="7abc2-184">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="5ae3c-185">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5ae3c-185">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="7abc2-185">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7abc2-185">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-group-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="7abc2-186">Java</span><span class="sxs-lookup"><span data-stu-id="7abc2-186">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="5ae3c-186">応答</span><span class="sxs-lookup"><span data-stu-id="5ae3c-186">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="7abc2-187">応答</span><span class="sxs-lookup"><span data-stu-id="7abc2-187">Response</span></span>
 
-<span data-ttu-id="5ae3c-187">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="5ae3c-187">The following is an example of the response.</span></span>
+<span data-ttu-id="7abc2-188">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="7abc2-188">The following is an example of the response.</span></span>
 
-><span data-ttu-id="5ae3c-188">**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。</span><span class="sxs-lookup"><span data-stu-id="5ae3c-188">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="5ae3c-189">実際の呼び出しからは、すべての既定のプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="5ae3c-189">All the default properties are returned from an actual call.</span></span>
+><span data-ttu-id="7abc2-189">**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。</span><span class="sxs-lookup"><span data-stu-id="7abc2-189">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="7abc2-190">実際の呼び出しからは、すべての既定のプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="7abc2-190">All the default properties are returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -175,14 +179,14 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-create-an-office-365-group-with-an-owner-and-members"></a><span data-ttu-id="5ae3c-190">例 2: 所有者とメンバーを指定して Office 365 グループを作成する</span><span class="sxs-lookup"><span data-stu-id="5ae3c-190">Example 2: Create an Office 365 group with an owner and members</span></span>
+### <a name="example-2-create-an-office-365-group-with-an-owner-and-members"></a><span data-ttu-id="7abc2-191">例 2: 所有者とメンバーを指定して Office 365 グループを作成する</span><span class="sxs-lookup"><span data-stu-id="7abc2-191">Example 2: Create an Office 365 group with an owner and members</span></span>
 
-<span data-ttu-id="5ae3c-191">次の例では、所有者とメンバーを指定して Office 365 グループを作成しています。</span><span class="sxs-lookup"><span data-stu-id="5ae3c-191">The second example request creates an Office 365 group with an owner and members specified.</span></span>
+<span data-ttu-id="7abc2-192">次の例では、所有者とメンバーを指定して Office 365 グループを作成しています。</span><span class="sxs-lookup"><span data-stu-id="7abc2-192">The second example request creates an Office 365 group with an owner and members specified.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="5ae3c-192">要求</span><span class="sxs-lookup"><span data-stu-id="5ae3c-192">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="7abc2-193">要求</span><span class="sxs-lookup"><span data-stu-id="7abc2-193">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="5ae3c-193">HTTP</span><span class="sxs-lookup"><span data-stu-id="5ae3c-193">--Http</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="7abc2-194">HTTP</span><span class="sxs-lookup"><span data-stu-id="7abc2-194">--Http</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_prepopulated_group"
@@ -209,26 +213,30 @@ Content-Type: application/json
   ]
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="5ae3c-194">C#</span><span class="sxs-lookup"><span data-stu-id="5ae3c-194">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="7abc2-195">C#</span><span class="sxs-lookup"><span data-stu-id="7abc2-195">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-prepopulated-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="5ae3c-195">Javascript</span><span class="sxs-lookup"><span data-stu-id="5ae3c-195">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7abc2-196">Javascript</span><span class="sxs-lookup"><span data-stu-id="7abc2-196">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-prepopulated-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="5ae3c-196">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5ae3c-196">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="7abc2-197">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7abc2-197">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-prepopulated-group-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="7abc2-198">Java</span><span class="sxs-lookup"><span data-stu-id="7abc2-198">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-prepopulated-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="5ae3c-197">応答</span><span class="sxs-lookup"><span data-stu-id="5ae3c-197">Response</span></span> 
+#### <a name="response"></a><span data-ttu-id="7abc2-199">応答</span><span class="sxs-lookup"><span data-stu-id="7abc2-199">Response</span></span> 
 
-<span data-ttu-id="5ae3c-198">成功応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="5ae3c-198">The following is an example of a successful response.</span></span> <span data-ttu-id="5ae3c-199">既定のプロパティのみが含まれています。</span><span class="sxs-lookup"><span data-stu-id="5ae3c-199">It includes only default properties.</span></span> <span data-ttu-id="5ae3c-200">その後は、グループの **owners** ナビゲーション プロパティまたは **members** ナビゲーション プロパティを取得して所有者またはメンバーの詳細を確認できます。</span><span class="sxs-lookup"><span data-stu-id="5ae3c-200">You can subsequently get the **owners** or **members** navigation properties of the group to verify the owner or members.</span></span> 
+<span data-ttu-id="7abc2-200">成功応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="7abc2-200">The following is an example of a successful response.</span></span> <span data-ttu-id="7abc2-201">既定のプロパティのみが含まれています。</span><span class="sxs-lookup"><span data-stu-id="7abc2-201">It includes only default properties.</span></span> <span data-ttu-id="7abc2-202">その後は、グループの **owners** ナビゲーション プロパティまたは **members** ナビゲーション プロパティを取得して所有者またはメンバーの詳細を確認できます。</span><span class="sxs-lookup"><span data-stu-id="7abc2-202">You can subsequently get the **owners** or **members** navigation properties of the group to verify the owner or members.</span></span> 
 
-><span data-ttu-id="5ae3c-201">**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。</span><span class="sxs-lookup"><span data-stu-id="5ae3c-201">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="5ae3c-202">実際の呼び出しからは、すべての既定のプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="5ae3c-202">All the default properties are returned from an actual call.</span></span>
+><span data-ttu-id="7abc2-203">**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。</span><span class="sxs-lookup"><span data-stu-id="7abc2-203">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="7abc2-204">実際の呼び出しからは、すべての既定のプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="7abc2-204">All the default properties are returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -271,11 +279,11 @@ Content-type: application/json
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="5ae3c-203">関連項目</span><span class="sxs-lookup"><span data-stu-id="5ae3c-203">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="7abc2-205">関連項目</span><span class="sxs-lookup"><span data-stu-id="7abc2-205">See also</span></span>
 
-- [<span data-ttu-id="5ae3c-204">拡張機能を使用してカスタム データをリソースに追加する</span><span class="sxs-lookup"><span data-stu-id="5ae3c-204">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
-- [<span data-ttu-id="5ae3c-205">オープン拡張機能を使用したユーザーへのカスタム データの追加 (プレビュー)</span><span class="sxs-lookup"><span data-stu-id="5ae3c-205">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
-- [<span data-ttu-id="5ae3c-206">スキーマ拡張機能を使用したグループへのカスタム データの追加 (プレビュー)</span><span class="sxs-lookup"><span data-stu-id="5ae3c-206">Add custom data to groups using schema extensions (preview)</span></span>](/graph/extensibility-schema-groups)
+- [<span data-ttu-id="7abc2-206">拡張機能を使用してカスタム データをリソースに追加する</span><span class="sxs-lookup"><span data-stu-id="7abc2-206">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
+- [<span data-ttu-id="7abc2-207">オープン拡張機能を使用したユーザーへのカスタム データの追加 (プレビュー)</span><span class="sxs-lookup"><span data-stu-id="7abc2-207">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
+- [<span data-ttu-id="7abc2-208">スキーマ拡張機能を使用したグループへのカスタム データの追加 (プレビュー)</span><span class="sxs-lookup"><span data-stu-id="7abc2-208">Add custom data to groups using schema extensions (preview)</span></span>](/graph/extensibility-schema-groups)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
