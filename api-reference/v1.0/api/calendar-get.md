@@ -4,12 +4,12 @@ description: '予定表オブジェクトのプロパティと関係を取得し
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: b0d08fe21b5264dbe1da11a34b6716da68ac3fde
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: cb26ceb1d75814919f8d796eb10b2848fdb6f034
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35443827"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35882468"
 ---
 # <a name="get-calendar"></a>予定表を取得する
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/v1.0/me/calendar
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-calendar-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-calendar-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
