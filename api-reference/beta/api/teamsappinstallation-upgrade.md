@@ -1,15 +1,16 @@
 ---
 title: チーム内のアプリをアップグレードする
 description: チーム内のアプリのインストールをアップグレードする
-author: nkramer
+author: clearab
+doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 569fb5b0f8f117ebfa8496fd5f9b2ba023a113d9
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: f40951eb3c33b638542a8e2210911adffb15a444
+ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335288"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "35908328"
 ---
 # <a name="upgrade-an-app-in-a-team"></a>チーム内のアプリをアップグレードする
 
@@ -34,11 +35,13 @@ POST /teams/{id}/installedApps/{id}/upgrade
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
+
 | ヘッダー       | 値 |
 |:---------------|:--------|
 | Authorization  | ベアラー {トークン}。必須。  |
 
 ## <a name="request-body"></a>要求本文
+
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
@@ -47,24 +50,26 @@ POST /teams/{id}/installedApps/{id}/upgrade
 
 ## <a name="example"></a>例
 
-#### <a name="request"></a>要求
+### <a name="request"></a>要求
+
 要求の例を次に示します。
 <!-- {
-  "blockType": "ignored",
-  "name": "get_team"
+  "blockType": "request",
+  "name": "upgrade_teamsapp"
 }-->
 
 ```http
 POST /teams/{id}/installedApps/{id}/upgrade
 ```
-#### <a name="response"></a>応答
+
+### <a name="response"></a>応答
+
 応答の例を次に示します。 
 
->**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 <!-- {
-  "blockType": "ignored",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.team"
+  "blockType": "response",
+  "name": "upgrade_teamsapp",
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 204 No Content

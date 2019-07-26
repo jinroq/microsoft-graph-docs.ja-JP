@@ -1,15 +1,16 @@
 ---
 title: チャットリソースの種類
 description: チャットは、1人または複数の参加者間の chatMessages のコレクションです。
-author: nkramer
+author: clearab
+doc_type: resourcePageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: e95adb1c00b88fcc2649acb669ee693caef6cccf
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+ms.openlocfilehash: 83ab8428fb09a7a2dc0546dcebdf2f409d90d25a
+ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778661"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "35908494"
 ---
 # <a name="chat-resource-type"></a>チャットリソースの種類
 
@@ -19,7 +20,7 @@ ms.locfileid: "35778661"
 
 ## <a name="methods"></a>メソッド
 
-|  メソッド       |  戻り値の型  | 説明| 
+|  メソッド       |  戻り値の型  | 説明|
 |:---------------|:--------|:----------|
 |[チャットの一覧表示](../api/chat-list.md) | [chat](channel.md)コレクション | ユーザーが属するチャットのリストを取得します。|
 |[チャットの取得](../api/chat-get.md) | [チャット](channel.md) | チャットのプロパティと関係を読み取ります。|
@@ -30,7 +31,7 @@ ms.locfileid: "35778661"
 
 ## <a name="properties"></a>Properties
 
-| プロパティ     | 型   |説明|
+| プロパティ   | 型 |説明|
 |:---------------|:--------|:----------|
 | id| String| チャットの一意識別子。 読み取り専用です。|
 | topic| String|  オプションチャットの件名またはトピック。 グループチャットでのみ使用できます。|
@@ -38,8 +39,10 @@ ms.locfileid: "35778661"
 | lastUpdatedDateTime| dateTimeOffset|  チャットが更新された日付と時刻。 読み取り専用です。|
 
 ## <a name="relationships"></a>関係
-| リレーションシップ | 型   |説明|
+
+| リレーションシップ | 型 |説明|
 |:---------------|:--------|:----------|
+| installedApps | [teamsAppInstallation](teamsappinstallation.md) コレクション | チャット内のすべてのアプリのコレクション。 Null 許容型。 |
 | members | [conversationMember](conversationmember.md)コレクション | チャット内のすべてのユーザーのコレクション。 Null 許容型。 |
 | messages | [chatMessage](chatmessage.md) コレクション | チャット内のすべてのメッセージのコレクション。 Null 許容型。 |
 

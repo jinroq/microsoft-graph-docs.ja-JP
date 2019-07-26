@@ -1,19 +1,18 @@
 ---
 title: チームのアプリを一覧表示する
 description: 指定したチームにインストールされているアプリのリストを取得します。
-author: nkramer
+author: clearab
+doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: a961d849e62b40cd4017b9abe83a42535ddedd16
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: a5396201db71ce5cfb399fed367313818cd3c5c4
+ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35893240"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "35908503"
 ---
 # <a name="list-apps-in-team"></a>チームのアプリを一覧表示する
-
-
 
 指定した[チーム](../resources/team.md)に[インストールされているアプリ](../resources/teamsappinstallation.md)のリストを取得します。
 
@@ -51,15 +50,17 @@ GET /teams/{id}/installedApps
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[teamsapp](../resources/teamsapp.md)オブジェクトのコレクションを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[teamsAppInstallation](../resources/teamsappinstallation.md)オブジェクトのコレクションを返します。
 
-## <a name="example"></a>例
+## <a name="examples"></a>例
 
-### <a name="request"></a>要求
+### <a name="example-1-list-installed-apps"></a>例 1: インストールされているアプリを一覧表示する
+#### <a name="request"></a>要求
 
 要求の例を次に示します。
 
 # <a name="httptabhttp"></a>[プロトコル](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_installed_teams_apps"
@@ -86,22 +87,21 @@ GET /teams/{id}/installedApps
 
 ---
 
-
-### <a name="response"></a>応答
+#### <a name="response"></a>応答
 
 応答の例を次に示します。
 >**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
+  "name": "get_installed_teams_apps",
   "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject",
+  "@odata.type": "microsoft.graph.teamsAppInstallation",
   "isCollection": true
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
   "value": [
@@ -112,9 +112,9 @@ Content-length: 55
 }
 ```
 
-## <a name="example----getting-the-names-of-the-installed-apps"></a>例--インストールされているアプリの名前を取得する
+### <a name="example-2-get-the-names-and-other-details-of-installed-apps"></a>例 2: インストールされているアプリの名前とその他の詳細を取得する
 
-### <a name="request"></a>要求
+#### <a name="request"></a>要求
 
 要求の例を次に示します。
 
@@ -145,23 +145,22 @@ GET https://graph.microsoft.com/v1.0/teams/{id}/installedApps?$expand=teamsAppDe
 
 ---
 
-
-### <a name="response"></a>応答
+#### <a name="response"></a>応答
 
 応答の例を次に示します。
 
 >**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
+  "name": "get_installed_teams_apps_expand",
   "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject",
+  "@odata.type": "microsoft.graph.teamsAppInstallation",
   "isCollection": true
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
     "value": [

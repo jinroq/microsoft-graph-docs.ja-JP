@@ -3,12 +3,12 @@ title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: a5231180e4477d5ac200bc56fee5e8f1464c612e
-ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
+ms.openlocfilehash: 730b9a2526e82c055c282d3c02bfa1bad35d8031
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35840636"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35890331"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
@@ -61,6 +61,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 |追加|ベータ版|[groupPolicyPresentationListBox](/graph/api/resources/intune-grouppolicy-grouppolicypresentationlistbox?view=graph-rest-beta) エンティティに **valuePrefix** プロパティが追加されました|
 
 ### <a name="files-onedrive-for-business"></a>ファイル (OneDrive for Business)
+
 |変更の種類|バージョン|説明|
 |:---|:---|:---|
 |追加|ベータ版|[createLink](/graph/api/driveitem-createlink?view=graph-rest-beta) アクションに **expirationDatetime** プロパティおよび **password** プロパティを追加しました。 |
@@ -72,6 +73,15 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | 追加 | v1.0 | [組織 API](/graph/api/resources/organization?view=graph-rest-1.0) リソースの取得および更新をして、[subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-1.0) リソースを取得するために、[新しい委任されたアクセス許可とアプリケーションのアクセス許可](/graph/permissions-reference?#organization-permissions) _Organization.Read.All_ および _Organization.ReadWrite.All_を追加しました。 |
 | 追加 | ベータ版 | [組織 API](/graph/api/resources/organization?view=graph-rest-beta) リソースを取得および更新して、[subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-beta) リソースを取得するために、[新しい委任されたアクセス許可とアプリケーションのアクセス許可](/graph/permissions-reference?#organization-permissions)、_Organization.Read.All_ および _Organization.ReadWrite.All_ を追加しました。 |
 | 追加 | v1.0 | [グループ:validateProperties 関数](/graph/api/group-validateproperties?view=graph-rest-1.0) と [directoryobject:validateProperties 関数](/graph/api/group-validateproperties?view=graph-rest-1.0) が [グループ](/graph/api/group-delta?view=graph-rest-1.0)に追加されました。そしてそれは、Office 365 グループの表示名またはメール ニックネームが名前付けポリシーに準拠していることを検証します。 |
+| 追加 | ベータ版 |リソースの種類の[directoryDefinition](/graph/api/resources/synchronization-directorydefinition?view=graph-rest-beta)に 'version' プロパティ、'discoveryDateTime' プロパティ、'discoverabilities' プロパティを追加しました。|
+| 追加 | ベータ版 |[directoryDefinition: discover](/graph/api/resources/directorydefinition-discover?view=graph-rest-beta) メソッドを追加しました。|
+
+### <a name="mail-outlook"></a>メール (Outlook)
+
+| **変更の種類** | **バージョン**   | **説明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 追加 | ベータ版 | mailFolder API に Mail.ReadBasic.All アプリケーションのアクセス許可に関する次のサポートが追加されました: [mailfolders を一覧表示する](/graph/api/user-list-mailfolders?view=graph-rest-beta)、[mailfolder を取得する](/graph/api/mailfolder-get?view=graph-rest-beta)、[子フォルダーを一覧表示する](/graph/api/mailfolder-list-childfolders?view=graph-rest-beta)、および [メール フォルダー内のメッセージを一覧表示する](/graph/api/mailfolder-list-childfolders?view=graph-rest-beta)。 [メッセージのデルタ クエリ](/graph/api/message-delta?view=graph-rest-beta) および [mailFolder のデルタ クエリ](/graph/api/mailfolder-delta?view=graph-rest-beta) に関する Mail.ReadBasic.All サポートも追加されました。|
+
 
 ### <a name="reports"></a>レポート
 
@@ -162,8 +172,6 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 ## <a name="may-2019"></a>2019 年 5 月
 
-### <a name="calendar-mail-and-personal-contacts-outlook"></a>予定表、メール、個人用連絡先 (Outlook)
-
 | **変更の種類** | **バージョン**   | **説明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 追加 | v1.0 およびベータ版 | アプリにメール、メールボックス設定、予定表、または連絡先へのアプリケーション アクセス許可が付与されている場合でも、管理者が特定のメールボックスのみにアプリのアクセスを制限できる機能が追加されました。 詳細については、「[アプリケーションのアクセス許可を Exchange Online の特定のメールボックスにスコーピングする](auth-limit-mailbox-access.md)」を参照してください。 |
@@ -246,7 +254,6 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | 追加        | ベータ版  | **OwnerPrincipalName**プロパティが [oneDriveUsageAccountDetail](/graph/api/resources/oneDriveUsageAccountDetail?view=graph-rest-beta)エンティティに追加されました。|
 | 追加        | ベータ版  | **ownerPrincipalName** プロパティが [sharePointSiteUsageDetail](/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta) エンティティに追加されました。|
 
-### <a name="security"></a>セキュリティ
 
 | **変更の種類** | **バージョン** | **説明**              |
 | :-------------- | :---------- | :--------------------------------------- |
