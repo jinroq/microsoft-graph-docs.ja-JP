@@ -4115,15 +4115,9 @@
                   href: api/channel-post.md
                 - name: チャネルを取得する
                   href: api/channel-get.md
-            - name: アプリ
+            - name: アプリ カタログ
               href: resources/teamsapp.md
               items:
-                - name: チームのアプリを一覧表示する
-                  href: api/teamsappinstallation-list.md
-                - name: アプリをチームに追加する
-                  href: api/teamsappinstallation-add.md
-                - name: チームからアプリを削除する
-                  href: api/teamsappinstallation-delete.md
                 - name: アプリ カタログを公開する
                   href: api/teamsapp-publish.md
                 - name: カタログのアプリを一覧表示する
@@ -4132,6 +4126,21 @@
                   href: api/teamsapp-update.md
                 - name: カタログからアプリを削除する
                   href: api/teamsapp-delete.md
+            - name: アプリ
+              items:
+                - name: インストールされたアプリ
+                  href: resources/teamsappinstallation.md
+                - name: チームのアプリを一覧表示する
+                  href: api/teamsappinstallation-list.md
+                - name: アプリをチームに追加する
+                  href: api/teamsappinstallation-add.md
+                - name: チームからアプリを削除する
+                  href: api/teamsappinstallation-delete.md
+                - name: インストールされているチームのアプリのアップグレード
+                  href: api/teamsappinstallation-upgrade.md
+            - name: Tab
+              href: resources/teamstab.md
+              items:
                 - name: タブを一覧表示する
                   href: api/teamstab-list.md
                 - name: タブを取得する
