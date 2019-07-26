@@ -4,29 +4,29 @@ description: この API を使用して、新しいメッセージの下書き�
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a97a4cdc8884091c4b391d39288b842ed76994bb
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: fe5f0a3c8a6ac1a8933cf7586ccf0be9b7cf8feb
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35449030"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35885651"
 ---
-# <a name="create-message"></a><span data-ttu-id="d2ece-105">メッセージの作成</span><span class="sxs-lookup"><span data-stu-id="d2ece-105">Create Message</span></span>
+# <a name="create-message"></a><span data-ttu-id="7bb4e-105">メッセージの作成</span><span class="sxs-lookup"><span data-stu-id="7bb4e-105">Create Message</span></span>
 
-<span data-ttu-id="d2ece-p102">この API を使用して、新しいメッセージの下書きを作成します。下書きを任意のフォルダーに作成し、必要に応じて送信前に更新できます。[下書き] フォルダーに保存するには、/messages ショートカットを使用します。</span><span class="sxs-lookup"><span data-stu-id="d2ece-p102">Use this API to create a draft of a new message. Drafts can be created in any folder and optionally updated before sending. To save to the Drafts folder, use the /messages shortcut.</span></span>
+<span data-ttu-id="7bb4e-p102">この API を使用して、新しいメッセージの下書きを作成します。下書きを任意のフォルダーに作成し、必要に応じて送信前に更新できます。[下書き] フォルダーに保存するには、/messages ショートカットを使用します。</span><span class="sxs-lookup"><span data-stu-id="7bb4e-p102">Use this API to create a draft of a new message. Drafts can be created in any folder and optionally updated before sending. To save to the Drafts folder, use the /messages shortcut.</span></span>
 
-<span data-ttu-id="d2ece-109">同じ **POST** の呼び出しで下書きを作成するときに、[添付ファイル](../resources/attachment.md)を含めることができます。</span><span class="sxs-lookup"><span data-stu-id="d2ece-109">While creating the draft in the same **POST** call, you can include an [attachment](../resources/attachment.md).</span></span>
+<span data-ttu-id="7bb4e-109">同じ **POST** の呼び出しで下書きを作成するときに、[添付ファイル](../resources/attachment.md)を含めることができます。</span><span class="sxs-lookup"><span data-stu-id="7bb4e-109">While creating the draft in the same **POST** call, you can include an [attachment](../resources/attachment.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="d2ece-110">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="d2ece-110">Permissions</span></span>
-<span data-ttu-id="d2ece-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d2ece-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="7bb4e-110">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="7bb4e-110">Permissions</span></span>
+<span data-ttu-id="7bb4e-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7bb4e-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="d2ece-113">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="d2ece-113">Permission type</span></span>      | <span data-ttu-id="d2ece-114">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="d2ece-114">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="7bb4e-113">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="7bb4e-113">Permission type</span></span>      | <span data-ttu-id="7bb4e-114">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="7bb4e-114">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="d2ece-115">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="d2ece-115">Delegated (work or school account)</span></span> | <span data-ttu-id="d2ece-116">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d2ece-116">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="d2ece-117">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="d2ece-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d2ece-118">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d2ece-118">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="d2ece-119">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="d2ece-119">Application</span></span> | <span data-ttu-id="d2ece-120">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d2ece-120">Mail.ReadWrite</span></span> |
+|<span data-ttu-id="7bb4e-115">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="7bb4e-115">Delegated (work or school account)</span></span> | <span data-ttu-id="7bb4e-116">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7bb4e-116">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="7bb4e-117">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="7bb4e-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7bb4e-118">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7bb4e-118">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="7bb4e-119">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="7bb4e-119">Application</span></span> | <span data-ttu-id="7bb4e-120">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7bb4e-120">Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="d2ece-121">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="d2ece-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7bb4e-121">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="7bb4e-121">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/messages
@@ -34,26 +34,26 @@ POST /users/{id|userPrincipalName}/messages
 POST /me/mailFolders/{id}/messages
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ```
-## <a name="request-headers"></a><span data-ttu-id="d2ece-122">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="d2ece-122">Request headers</span></span>
-| <span data-ttu-id="d2ece-123">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="d2ece-123">Header</span></span>       | <span data-ttu-id="d2ece-124">値</span><span class="sxs-lookup"><span data-stu-id="d2ece-124">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="7bb4e-122">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="7bb4e-122">Request headers</span></span>
+| <span data-ttu-id="7bb4e-123">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="7bb4e-123">Header</span></span>       | <span data-ttu-id="7bb4e-124">値</span><span class="sxs-lookup"><span data-stu-id="7bb4e-124">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="d2ece-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="d2ece-125">Authorization</span></span>  | <span data-ttu-id="d2ece-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="d2ece-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="d2ece-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="d2ece-128">Content-Type</span></span>  | <span data-ttu-id="d2ece-129">application/json</span><span class="sxs-lookup"><span data-stu-id="d2ece-129">application/json</span></span>  |
+| <span data-ttu-id="7bb4e-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="7bb4e-125">Authorization</span></span>  | <span data-ttu-id="7bb4e-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="7bb4e-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="7bb4e-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="7bb4e-128">Content-Type</span></span>  | <span data-ttu-id="7bb4e-129">application/json</span><span class="sxs-lookup"><span data-stu-id="7bb4e-129">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="d2ece-130">要求本文</span><span class="sxs-lookup"><span data-stu-id="d2ece-130">Request body</span></span>
-<span data-ttu-id="d2ece-131">要求本文で、[メッセージ](../resources/message.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="d2ece-131">In the request body, supply a JSON representation of [message](../resources/message.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7bb4e-130">要求本文</span><span class="sxs-lookup"><span data-stu-id="7bb4e-130">Request body</span></span>
+<span data-ttu-id="7bb4e-131">要求本文で、[メッセージ](../resources/message.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="7bb4e-131">In the request body, supply a JSON representation of [message](../resources/message.md) object.</span></span>
 
-<span data-ttu-id="d2ece-132">**メッセージ** リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため、`POST` 操作を使用して、リソースの作成時にカスタム プロパティを独自のデータとともにメッセージに追加することができます。</span><span class="sxs-lookup"><span data-stu-id="d2ece-132">Since the **message** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the message while creating it.</span></span>
+<span data-ttu-id="7bb4e-132">**メッセージ** リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため、`POST` 操作を使用して、リソースの作成時にカスタム プロパティを独自のデータとともにメッセージに追加することができます。</span><span class="sxs-lookup"><span data-stu-id="7bb4e-132">Since the **message** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the message while creating it.</span></span>
 
-## <a name="response"></a><span data-ttu-id="d2ece-133">応答</span><span class="sxs-lookup"><span data-stu-id="d2ece-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7bb4e-133">応答</span><span class="sxs-lookup"><span data-stu-id="7bb4e-133">Response</span></span>
 
-<span data-ttu-id="d2ece-134">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [message](../resources/message.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="d2ece-134">If successful, this method returns `201 Created` response code and [message](../resources/message.md) object in the response body.</span></span>
+<span data-ttu-id="7bb4e-134">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [message](../resources/message.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="7bb4e-134">If successful, this method returns `201 Created` response code and [message](../resources/message.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d2ece-135">例</span><span class="sxs-lookup"><span data-stu-id="d2ece-135">Example</span></span>
-##### <a name="request-1"></a><span data-ttu-id="d2ece-136">要求 1</span><span class="sxs-lookup"><span data-stu-id="d2ece-136">Request 1</span></span>
-<span data-ttu-id="d2ece-137">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="d2ece-137">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="7bb4e-135">例</span><span class="sxs-lookup"><span data-stu-id="7bb4e-135">Example</span></span>
+##### <a name="request-1"></a><span data-ttu-id="7bb4e-136">要求 1</span><span class="sxs-lookup"><span data-stu-id="7bb4e-136">Request 1</span></span>
+<span data-ttu-id="7bb4e-137">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="7bb4e-137">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="d2ece-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="d2ece-138">--Http</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="7bb4e-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="7bb4e-138">--Http</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_message_from_user"
@@ -78,23 +78,27 @@ Content-type: application/json
     ]
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="d2ece-139">C#</span><span class="sxs-lookup"><span data-stu-id="d2ece-139">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="7bb4e-139">C#</span><span class="sxs-lookup"><span data-stu-id="7bb4e-139">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-message-from-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="d2ece-140">Javascript</span><span class="sxs-lookup"><span data-stu-id="d2ece-140">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7bb4e-140">Javascript</span><span class="sxs-lookup"><span data-stu-id="7bb4e-140">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-message-from-user-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="d2ece-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d2ece-141">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="7bb4e-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7bb4e-141">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-message-from-user-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="7bb4e-142">Java</span><span class="sxs-lookup"><span data-stu-id="7bb4e-142">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-message-from-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-<span data-ttu-id="d2ece-142">要求本文で、[メッセージ](../resources/message.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="d2ece-142">In the request body, supply a JSON representation of [message](../resources/message.md) object.</span></span>
-##### <a name="response-1"></a><span data-ttu-id="d2ece-143">応答 1</span><span class="sxs-lookup"><span data-stu-id="d2ece-143">Response 1</span></span>
-<span data-ttu-id="d2ece-p105">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="d2ece-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="7bb4e-143">要求本文で、[メッセージ](../resources/message.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="7bb4e-143">In the request body, supply a JSON representation of [message](../resources/message.md) object.</span></span>
+##### <a name="response-1"></a><span data-ttu-id="7bb4e-144">応答 1</span><span class="sxs-lookup"><span data-stu-id="7bb4e-144">Response 1</span></span>
+<span data-ttu-id="7bb4e-p105">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="7bb4e-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "create_message_from_user",
@@ -154,10 +158,10 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request-2"></a><span data-ttu-id="d2ece-147">要求 2</span><span class="sxs-lookup"><span data-stu-id="d2ece-147">Request 2</span></span>
-<span data-ttu-id="d2ece-148">次の例では、メッセージの下書きを作成する際に顧客のインターネット メッセージ ヘッダーをいくつか追加します。</span><span class="sxs-lookup"><span data-stu-id="d2ece-148">The next example adds a couple of customer Internet message headers when creating the message draft.</span></span>
+##### <a name="request-2"></a><span data-ttu-id="7bb4e-148">要求 2</span><span class="sxs-lookup"><span data-stu-id="7bb4e-148">Request 2</span></span>
+<span data-ttu-id="7bb4e-149">次の例では、メッセージの下書きを作成する際に顧客のインターネット メッセージ ヘッダーをいくつか追加します。</span><span class="sxs-lookup"><span data-stu-id="7bb4e-149">The next example adds a couple of customer Internet message headers when creating the message draft.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="d2ece-149">HTTP</span><span class="sxs-lookup"><span data-stu-id="d2ece-149">--Http</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="7bb4e-150">HTTP</span><span class="sxs-lookup"><span data-stu-id="7bb4e-150">--Http</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_message_with_headers_from_user"
@@ -191,23 +195,27 @@ Content-type: application/json
     ]
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="d2ece-150">C#</span><span class="sxs-lookup"><span data-stu-id="d2ece-150">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="7bb4e-151">C#</span><span class="sxs-lookup"><span data-stu-id="7bb4e-151">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-message-with-headers-from-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="d2ece-151">Javascript</span><span class="sxs-lookup"><span data-stu-id="d2ece-151">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7bb4e-152">Javascript</span><span class="sxs-lookup"><span data-stu-id="7bb4e-152">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-message-with-headers-from-user-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="d2ece-152">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d2ece-152">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="7bb4e-153">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7bb4e-153">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-message-with-headers-from-user-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="7bb4e-154">Java</span><span class="sxs-lookup"><span data-stu-id="7bb4e-154">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-message-with-headers-from-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-<span data-ttu-id="d2ece-153">要求本文で、[メッセージ](../resources/message.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="d2ece-153">In the request body, supply a JSON representation of [message](../resources/message.md) object.</span></span>
-##### <a name="response-2"></a><span data-ttu-id="d2ece-154">応答 2</span><span class="sxs-lookup"><span data-stu-id="d2ece-154">Response 2</span></span>
-<span data-ttu-id="d2ece-155">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="d2ece-155">Here is an example of the response.</span></span> <span data-ttu-id="d2ece-156">注: インターネット メッセージ ヘッダーは、既定で POST レスポンスに返されません。</span><span class="sxs-lookup"><span data-stu-id="d2ece-156">Note: Internet message headers are not returned by default in a POST response.</span></span> <span data-ttu-id="d2ece-157">簡潔にするために、ここに示す応答オブジェクトも切り詰められている場合があります。</span><span class="sxs-lookup"><span data-stu-id="d2ece-157">The response object shown here may also be truncated for brevity.</span></span> <span data-ttu-id="d2ece-158">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="d2ece-158">All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="7bb4e-155">要求本文で、[メッセージ](../resources/message.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="7bb4e-155">In the request body, supply a JSON representation of [message](../resources/message.md) object.</span></span>
+##### <a name="response-2"></a><span data-ttu-id="7bb4e-156">応答 2</span><span class="sxs-lookup"><span data-stu-id="7bb4e-156">Response 2</span></span>
+<span data-ttu-id="7bb4e-157">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="7bb4e-157">Here is an example of the response.</span></span> <span data-ttu-id="7bb4e-158">注: インターネット メッセージ ヘッダーは、既定で POST レスポンスに返されません。</span><span class="sxs-lookup"><span data-stu-id="7bb4e-158">Note: Internet message headers are not returned by default in a POST response.</span></span> <span data-ttu-id="7bb4e-159">簡潔にするために、ここに示す応答オブジェクトも切り詰められている場合があります。</span><span class="sxs-lookup"><span data-stu-id="7bb4e-159">The response object shown here may also be truncated for brevity.</span></span> <span data-ttu-id="7bb4e-160">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="7bb4e-160">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "create_message_with_headers_from_user",
@@ -270,10 +278,10 @@ Content-type: application/json
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="d2ece-159">関連項目</span><span class="sxs-lookup"><span data-stu-id="d2ece-159">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="7bb4e-161">関連項目</span><span class="sxs-lookup"><span data-stu-id="7bb4e-161">See also</span></span>
 
-- [<span data-ttu-id="d2ece-160">拡張機能を使用してカスタム データをリソースに追加する</span><span class="sxs-lookup"><span data-stu-id="d2ece-160">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
-- [<span data-ttu-id="d2ece-161">オープン拡張機能を使用したユーザーへのカスタム データの追加 (プレビュー)</span><span class="sxs-lookup"><span data-stu-id="d2ece-161">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
+- [<span data-ttu-id="7bb4e-162">拡張機能を使用してカスタム データをリソースに追加する</span><span class="sxs-lookup"><span data-stu-id="7bb4e-162">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
+- [<span data-ttu-id="7bb4e-163">オープン拡張機能を使用したユーザーへのカスタム データの追加 (プレビュー)</span><span class="sxs-lookup"><span data-stu-id="7bb4e-163">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
 <!--
 - [Add custom data to groups using schema extensions (preview)](/graph/extensibility-schema-groups)
 -->
