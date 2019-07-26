@@ -4,16 +4,19 @@ description: 現在認証されている組織のプロパティとリレーシ�
 localization_priority: Priority
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 124f4a05f30196b622b62ecd82ea15a892e3682b
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: 252664f760f4eee57d0365a0850e040b0315fdc2
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35448334"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35890723"
 ---
 # <a name="get-organization"></a>組織を取得する
 
 現在認証されている組織のプロパティとリレーションシップを取得します。
+
+**organization** リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため、`GET` 操作を使用して、**organization** インスタンスでカスタム プロパティと拡張機能データを取得することもできます。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -21,11 +24,11 @@ ms.locfileid: "35448334"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校アカウント) | User.Read、Directory.Read.All、Directory.ReadWrite.All   |
+|委任 (職場または学校のアカウント) | User.Read、Organization.Read.All、Directory.Read.All、Organization.ReadWrite.All、Directory.ReadWrite.All   |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | Directory.Read.All、Directory.ReadWrite.All |
+|アプリケーション | Organization.Read.All、Directory.Read.All、Organization.ReadWrite.All、Directory.ReadWrite.All |
 
-> 注: User.Read アクセス許可を付与されたアプリケーションは、組織の *id*、*displayName*、および *verifiedDomains* プロパティのみを読み取ることができます。  他のすべてのプロパティは `null` 値を返します。 すべてのプロパティを読み取るには、Directory.Read.All を使用します。
+> **注**: User.Read アクセス許可を付与されたアプリケーションは、組織の **id**、**displayName**、および **verifiedDomains** プロパティのみを読み取ることができます。  他のすべてのプロパティは `null` 値を返します。 すべてのプロパティを読み取るには、Organization.Read.All を使用します。
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -41,9 +44,9 @@ GET /organization
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前       | 型 | 説明|
-|:-----------|:------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
+| 名前       | 説明|
+|:-----------|:----------|
+| Authorization  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 
@@ -78,6 +81,10 @@ GET https://graph.microsoft.com/v1.0/organization
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-organization-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-organization-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
