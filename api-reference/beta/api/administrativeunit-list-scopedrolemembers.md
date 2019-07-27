@@ -4,12 +4,12 @@ description: ScopedRoleMembership リソースのリストを取得します。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6c45fc15879a08935efe5d6011d747fcae9f4a3d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 83eb193d46b6ee206beb3c86404e35fb8ed10cad
+ms.sourcegitcommit: 27e8ddb53b699f70b676c9648db8f06bb8d831a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35855817"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "35917959"
 ---
 # <a name="list-scopedrolemembers"></a>リスト scopedRoleMembers
 
@@ -22,9 +22,9 @@ ms.locfileid: "35855817"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委任 (職場または学校のアカウント) | AdministrativeUnit、AdministrativeUnit、Directory.accessasuser.all のいずれかの値を取得します。    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | Directory.Read.All、Directory.ReadWrite.All |
+|アプリケーション | AdministrativeUnit、AdministrativeUnit のいずれかを取得します。 |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

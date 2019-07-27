@@ -4,12 +4,12 @@ description: AdministrativeUnit を削除します。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f2f8073058767e54bcb36626ad864ea3257924fa
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 6d23a1d9de8bb844fe3595a26cdf6869b4f2817e
+ms.sourcegitcommit: 27e8ddb53b699f70b676c9648db8f06bb8d831a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35855880"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "35917993"
 ---
 # <a name="delete-administrativeunit"></a>AdministrativeUnit の削除
 
@@ -23,9 +23,9 @@ ms.locfileid: "35855880"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Directory.AccessAsUser.All    |
+|委任 (職場または学校のアカウント) | AdministrativeUnit。すべての Directory.accessasuser.all について    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | サポートされていません。 |
+|アプリケーション | AdministrativeUnit |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

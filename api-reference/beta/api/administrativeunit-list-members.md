@@ -4,12 +4,12 @@ description: この API を使用して、管理単位でメンバーリスト (
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d48bf767e8d786002bb523e39970a3e77f72738e
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.openlocfilehash: 2257ece4adf624dcd18499e18a01d9a0e89de3c8
+ms.sourcegitcommit: 27e8ddb53b699f70b676c9648db8f06bb8d831a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34655307"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "35917947"
 ---
 # <a name="list-members"></a>メンバーを一覧表示する
 
@@ -23,9 +23,9 @@ ms.locfileid: "34655307"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委任 (職場または学校のアカウント) | AdministrativeUnit、AdministrativeUnit、Directory.accessasuser.all のいずれかの値を取得します。    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | Directory.Read.All、Directory.ReadWrite.All |
+|アプリケーション | AdministrativeUnit、AdministrativeUnit のいずれかを取得します。 |
 
 > 注: 管理単位の非表示のメンバーシップのメンバーを一覧表示するには、"Hidden" アクセス許可が必要です。
 

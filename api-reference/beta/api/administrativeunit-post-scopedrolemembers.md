@@ -4,12 +4,12 @@ description: '新しい scopedRoleMembership を追加します。 注: スコ�
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 868cedf2a499f4895b5ab9c3cc29f60de37a53d0
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: acc2dc7011d14e4832eb79407e1d08f68239f1c0
+ms.sourcegitcommit: 27e8ddb53b699f70b676c9648db8f06bb8d831a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35855634"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "35918042"
 ---
 # <a name="add-a-scopedrolemember"></a>ScopedRoleMember を追加する
 
@@ -23,9 +23,9 @@ ms.locfileid: "35855634"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Directory.AccessAsUser.All    |
+|委任 (職場または学校のアカウント) | AdministrativeUnit。すべての Directory.accessasuser.all について    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | サポートされていません。 |
+|アプリケーション | AdministrativeUnit |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

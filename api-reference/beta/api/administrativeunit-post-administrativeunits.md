@@ -4,12 +4,12 @@ description: この API を使用して、新しい administrativeUnit を作成
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e98b9ebc4b9159e9ac604f45d7d1e36edf859dd8
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 81b35e8dca3942ca23952ca79257a80612a3a5a1
+ms.sourcegitcommit: 27e8ddb53b699f70b676c9648db8f06bb8d831a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35855760"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "35917965"
 ---
 # <a name="create-administrativeunit"></a>AdministrativeUnit を作成する
 
@@ -22,9 +22,9 @@ ms.locfileid: "35855760"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Directory.AccessAsUser.All    |
+|委任 (職場または学校のアカウント) | AdministrativeUnit。すべての Directory.accessasuser.all について    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | サポートされていません。 |
+|アプリケーション | AdministrativeUnit |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
