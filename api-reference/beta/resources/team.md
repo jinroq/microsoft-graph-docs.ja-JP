@@ -1,15 +1,16 @@
 ---
 title: team リソースの種類
 description: 'Microsoft Teams のチームは、チャネルのコレクションです。 '
-author: nkramer
+author: clearab
+doc_type: resourcePageType
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 52837993d26b764aa8590aadec327fd3a660f104
-ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
+ms.openlocfilehash: 85315d43b1de42e74b83d0ba9664ebfdb7847258
+ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34812832"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "35908517"
 ---
 # <a name="team-resource-type"></a>team リソースの種類
 
@@ -17,9 +18,7 @@ ms.locfileid: "34812832"
 
 Microsoft Teams のチームは、[channel](channel.md) オブジェクトのコレクションです。 チャネルは 1 つのトピック、つまりチーム内でのディスカッションの論理的分離を表します。
 
-各チームには[グループ](../resources/group.md)が関連付けられています。
-グループの ID はチームと同じです。たとえば、/groups/{id}/team は /teams/{id} と同じです。
-チームのメンバーおよびグループの操作の詳細については、「[Microsoft Graph REST API を使用して Microsoft Teams を操作する](teams-api-overview.md)」を参照してください。
+各チームには[グループ](../resources/group.md)が関連付けられています。 グループでは、チームと同じ ID を持ちます。例えば、`/groups/{id}/team`と`/teams/{id}`が同じになります。 チームのメンバーおよびグループの操作の詳細については、「[Microsoft Graph REST API を使用して Microsoft Teams を操作する](teams-api-overview.md)」を参照してください。
 
 ## <a name="methods"></a>メソッド
 
@@ -44,7 +43,7 @@ Microsoft Teams のチームは、[channel](channel.md) オブジェクトのコ
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 型   | 説明 |
+| プロパティ | 型 | 説明 |
 |:---------------|:--------|:----------|
 |displayName|string| チームの名前。 |
 |説明|string| チームに関するオプションの説明。 |
@@ -62,17 +61,17 @@ Microsoft Teams のチームは、[channel](channel.md) オブジェクトのコ
 
 ## <a name="relationships"></a>リレーションシップ
 
-| リレーションシップ | 型   | 説明 |
+| リレーションシップ | 型 | 説明 |
 |:---------------|:--------|:----------|
 |apps|[teamsApp](teamsapp.md) コレクション| (現在不使用) このチームにインストールされているアプリ。|
 |channels|[channel](channel.md) コレクション|チームに関連付けられているチャネルとメッセージのコレクション。|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) コレクション|このチームにインストールされているアプリ。|
 |owners|[user](user.md)| このチームの所有者の一覧。 現時点では、アプリケーションのアクセス許可を使用してチームを作成するときに、必ず 1 つの所有者を指定してください。 ユーザー委任アクセス許可を使用するときには、所有者を指定できません (現在のユーザーが所有者になります)。 所有者は、UPN ではなくオブジェクト ID (GUID) として指定する必要があります。 |
 |operations|[teamsAsyncOperation](teamsasyncoperation.md) コレクション| このチームで実行済みまたは実行中の非同期操作です。 | 
+|primaryChannel|[channel](channel.md)|チームに関連付けられているプライマリ チャネル。|
 |schedule|[schedule](schedule.md)| このチームのシフトのスケジュール。|
 |template|[teamsTemplate](teamstemplate.md)| このチームの作成元テンプレート。 
   [使用可能なテンプレート](https://docs.microsoft.com/ja-JP/MicrosoftTeams/get-started-with-teams-templates)を参照してください。 |
-
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -117,5 +116,6 @@ Microsoft Teams のチームは、[channel](channel.md) オブジェクトのコ
 -->
 
 ## <a name="see-also"></a>関連項目
+
 - [チームを使用してグループを作成する](/graph/teams-create-group-and-team)
 - [Teams API の概要](teams-api-overview.md)

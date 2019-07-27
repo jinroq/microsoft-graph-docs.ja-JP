@@ -4,12 +4,12 @@ description: Azure AD ユーザー アカウントを表します。directoryObj
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 67a43e13be16b8e57832c8b9bcacf0658b3c0531
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: c71d9d5d64750c6df48a6e9fdf602d4bec4a0760
+ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34995022"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "35908493"
 ---
 # <a name="user-resource-type"></a>user リソースの種類
 
@@ -52,7 +52,7 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |[List manager](../api/user-list-manager.md) |[directoryObject](directoryobject.md) | そのユーザーの上司であるユーザーまたは連絡先を、マネージャー ナビゲーション プロパティから取得します。|
 |[List memberOf](../api/user-list-memberof.md) |[directoryObject](directoryobject.md) コレクション| そのユーザーが直接のメンバーであるグループ、ディレクトリ ロール、および管理単位を、memberOf ナビゲーション プロパティから取得します。|
 |[推移的な memberOf を一覧表示する](../api/user-list-transitivememberof.md) |[directoryObject](directoryobject.md) コレクション| ユーザーがメンバーになっているグループ、ディレクトリ ロール、および管理単位を一覧表示します。 この操作は推移的で、このユーザーが入れ子のメンバーになっているグループが含まれます。 |
-|[joinedTeams を一覧表示する](../api/user-list-joinedteams.md) |[groups](group.md) コレクション| そのユーザーが直接のメンバーである Microsoft Teams のチームを、joinedTeams ナビゲーション プロパティから取得します。|
+|[参加チームのリストを作成する](../api/user-list-joinedteams.md) |[team](team.md) コレクション| そのユーザーが直接のメンバーである Microsoft Teams のチームを、joinedTeams ナビゲーション プロパティから取得します。|
 |[ownedDevices を一覧表示する](../api/user-list-owneddevices.md) |[directoryObject](directoryobject.md) collection| そのユーザーにより所有されているデバイスを、OwnedDevices ナビゲーション プロパティから取得します。|
 |[List ownedObjects](../api/user-list-ownedobjects.md) |[directoryObject](directoryobject.md) collection| そのユーザーにより所有されているディレクトリ オブジェクトを、ownedObjects ナビゲーション プロパティから取得します。|
 |[plannerTasks を一覧表示する](../api/planneruser-list-tasks.md) |[plannerTask](plannertask.md) コレクション| ユーザーに割り当てられている Planner タスクを取得します。|
@@ -214,7 +214,8 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |mailFolders|[mailFolder](mailfolder.md) コレクション| ユーザーのメール フォルダー。読み取り専用です。Null 許容型。|
 |manager|[directoryObject](directoryobject.md)|このユーザーの上司であるユーザーまたは連絡先。読み取り専用です。(HTTP メソッド:GET、PUT、DELETE)|
 |memberOf|[directoryObject](directoryobject.md) コレクション|ユーザーがメンバーになっているグループ、ディレクトリ ロール、および管理単位を一覧表示します。読み取り専用です。Null 許容型。|
-|joinedTeams|[group](group.md) コレクション|ユーザーがメンバーである Microsoft Teams のチームを一覧表示します。 読み取り専用です。 Null 許容型。|
+|joinedTeams|[team](team.md) コレクション|ユーザーがメンバーである Microsoft Teams のチーム。 読み取り専用。 Null 許容型です。|
+|チームワーク|[userTeamwork](userteamwork.md)| ユーザーが使用できる Microsoft Teams の機能のコンテナーです。 読み取り専用。 Null 許容型。|
 |messages|[message](message.md) コレクション|メールボックスまたはフォルダー内のメッセージ。読み取り専用です。Null 許容型。|
 |onenote|[onenote](onenote.md)| 読み取り専用です。|
 |outlook|[outlookUser](outlookuser.md)| ユーザーが使用できる選択的 Outlook サービス。 読み取り専用です。 Null 許容型。|
@@ -253,6 +254,7 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
     "manager",
     "memberOf",
     "joinedTeams",
+    "teamwork",
     "messages",
     "onenote",
     "oauth2PermissionGrants",
@@ -352,6 +354,7 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
   "manager": {"@odata.type": "microsoft.graph.directoryObject"},
   "memberOf": [{"@odata.type": "microsoft.graph.directoryObject"}],
   "joinedTeams": [{"@odata.type": "microsoft.graph.group"}],
+  "teamwork": {"@odata.type": "microsoft.graph.teamwork"},
   "messages": [{ "@odata.type": "microsoft.graph.message"}],
   "outlook": {"@odata.type": "microsoft.graph.outlookUser"},
   "ownedDevices": [{"@odata.type": "microsoft.graph.directoryObject"}],
