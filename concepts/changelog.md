@@ -3,12 +3,12 @@ title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 4bc30ed6b491587d4b809ce3457aaa20bb7e9c4a
-ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
+ms.openlocfilehash: 5d0ad220d99ddc12671fcdb54c4f3f88a54cb758
+ms.sourcegitcommit: 27e8ddb53b699f70b676c9648db8f06bb8d831a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "35908447"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "35918056"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
@@ -75,13 +75,14 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | 追加 | v1.0 | [グループ:validateProperties 関数](/graph/api/group-validateproperties?view=graph-rest-1.0) と [directoryobject:validateProperties 関数](/graph/api/group-validateproperties?view=graph-rest-1.0) が [グループ](/graph/api/group-delta?view=graph-rest-1.0)に追加されました。そしてそれは、Office 365 グループの表示名またはメール ニックネームが名前付けポリシーに準拠していることを検証します。 |
 | 追加 | ベータ版 |リソースの種類の[directoryDefinition](/graph/api/resources/synchronization-directorydefinition?view=graph-rest-beta)に 'version' プロパティ、'discoveryDateTime' プロパティ、'discoverabilities' プロパティを追加しました。|
 | 追加 | ベータ版 |[directoryDefinition: discover](/graph/api/resources/directorydefinition-discover?view=graph-rest-beta) メソッドを追加しました。|
+| 追加 | ベータ版 | [administrative unit API](/graph/api/resources/administrativeunit?view=graph-rest-beta) リソースを取得する、新しい[委任およびアプリケーションのアクセス許可](/graph/permissions-reference?#organization-permissions) _AdministrativeUnit.Read.All_ および _AdministrativeUnit.ReadWrite.All_ を追加しました。 |
+| 追加 | v1.0 | [directory role API](/graph/api/resources/directoryRole?view=graph-rest-1.0) リソース、[directory role template API](/graph/api/resources/directoryRoleTemplate?view=graph-rest-1.0) リソースを取得する、新しい[委任およびアプリケーションのアクセス許可](/graph/permissions-reference?#organization-permissions) _RoleManagement.Read.Directory_ および _RoleManagement.ReadWrite.Directory_ を追加しました。 |
 
 ### <a name="mail-outlook"></a>メール (Outlook)
 
 | **変更の種類** | **バージョン**   | **説明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 追加 | ベータ版 | mailFolder API に Mail.ReadBasic.All アプリケーションのアクセス許可に関する次のサポートが追加されました: [mailfolders を一覧表示する](/graph/api/user-list-mailfolders?view=graph-rest-beta)、[mailfolder を取得する](/graph/api/mailfolder-get?view=graph-rest-beta)、[子フォルダーを一覧表示する](/graph/api/mailfolder-list-childfolders?view=graph-rest-beta)、および [メール フォルダー内のメッセージを一覧表示する](/graph/api/mailfolder-list-childfolders?view=graph-rest-beta)。 [メッセージのデルタ クエリ](/graph/api/message-delta?view=graph-rest-beta) および [mailFolder のデルタ クエリ](/graph/api/mailfolder-delta?view=graph-rest-beta) に関する Mail.ReadBasic.All サポートも追加されました。|
-
 
 ### <a name="reports"></a>レポート
 
