@@ -3,12 +3,12 @@ title: 'Microsoft Graph のアクセス許可のリファレンス '
 description: Microsoft Graph は、アプリがアクセスするリソース (ユーザー、グループ、メールなど) を制御する詳細なアクセス許可を公開しています。 開発者は、アプリが要求する Microsoft Graph のアクセス許可を決定します。
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: 2fb1c89f8862131862869caabb5bb384fc6cb4c9
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: eb9c334049dced94111cd78e22481e532c5ecd7c
+ms.sourcegitcommit: 27e8ddb53b699f70b676c9648db8f06bb8d831a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35893152"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "35918000"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph のアクセス許可のリファレンス
 
@@ -70,6 +70,42 @@ _AccessReview.Read.All_ と _AccessReview.ReadWrite.All_ は、職場または�
 Azure AD ロールのアクセス レビューを読み取るための委任されたアクセス許可があるアプリの場合、サインインしているユーザーが「全体管理者」、「セキュリティ管理者」、「セキュリティ閲覧者」、または「特権ロール管理者」のいずれかの管理者ロールのメンバーになっている必要があります。 Azure AD ロールのアクセス レビューを書き込むための委任されたアクセス許可があるアプリの場合、サインインしているユーザーが「全体管理者」または「特権ロール管理者」のいずれかの管理者ロールのメンバーになっている必要があります。
 
 管理者ロールの詳細については、「[Azure Active Directory での管理者ロールの割り当て](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)」を参照してください。
+
+---
+
+## <a name="administrative-units-permissions"></a>管理単位のアクセス許可
+
+#### <a name="delegated-permissions"></a>委任されたアクセス許可
+
+|   アクセス許可    |  表示文字列   |  説明 | 管理者の同意が必要 | Microsoft アカウントのサポート |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _AdministrativeUnit.Read.All_ |   管理単位を読み取る  | サインインしているユーザーの代わりに、アプリで管理単位および管理単位のメンバーシップの読み取りを実行できるようにします。 | はい | いいえ |
+| _AdministrativeUnit.ReadWrite.All_ |   管理単位の読み取りと書き込み  | サインインしたユーザーの代わりに、アプリで管理単位の作成、読み取り、更新、削除および管理単位のメンバーシップの管理を実行できるようにします。 | はい | いいえ |
+
+
+#### <a name="application-permissions"></a>アプリケーションのアクセス許可
+
+|   アクセス許可    |  表示文字列   |  説明 | 管理者の同意が必要 |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _AdministrativeUnit.Read.All_ |   すべての管理単位を読み取る | サインインしているユーザーがいない場合でも、アプリで管理単位および管理単位のメンバーシップの読み取りを実行できるようにします。 | はい |
+| _AdministrativeUnit.ReadWrite.All_ |   すべての管理単位の読み取りと書き込み | サインインしたユーザーがいない場合でも、アプリで管理単位の作成、読み取り、更新、削除および管理単位のメンバーシップの管理を実行できるようにします。 | はい |
+
+### <a name="remarks"></a>Remarks
+_AdministrativeUnit.Read.All_ のアクセス許可を持つアプリケーションでは、メンバーを含む管理単位情報を読み取ることができます。 
+
+_AdministrativeUnit.ReadWrite.All_ のアクセス許可を持つアプリケーションでは、メンバーを含む管理単位情報の作成、読み取り、更新、削除を行うことができます。
+
+_AdministrativeUnit.Read.All_ および _AdministrativeUnit.ReadWrite.All_ は、職場または学校のアカウントでのみ有効です。
+
+### <a name="example-usage"></a>使用例
+
+- _AdministrativeUnit.Read.All_: 管理単位を読み取ります (`GET /beta/administrativeUnits`)
+- _AdministrativeUnit.Read.All_: 管理単位のメンバーの一覧を読み取ります (`GET /beta/administrativeUnits/<id>/members`)
+- _AdministrativeUnit.ReadWrite.All_: 管理単位を作成します (`POST /beta/administrativeUnits`)
+- _AdministrativeUnit.ReadWrite.All_: 管理単位を更新します (`PATCH /beta/administrativeUnits/<id>`)
+- _AdministrativeUnit.ReadWrite.All_: 管理単位にメンバーを追加します (`POST /beta/administrativeUnits/<id>/members`)
+
+複数のアクセス許可を伴うより複雑なシナリオについては、「[アクセス許可のシナリオ](#permission-scenarios)」を参照してください。
 
 ---
 
@@ -1013,7 +1049,44 @@ _ProgramControl.Read.All_ と _ProgramControl.ReadWrite.All_ は、職場また�
 * _Reports.Read.All_:'2017-01-01' の日付で電子メールのアクティビティ詳細レポートを読み取ります (`GET /reports/EmailActivity(view='Detail',data='2017-01-01')/content`)。
 * _Reports.Read.All_:Office 365 ライセンス認証詳細レポートを読み取ります (`GET /reports/Office365Activations(view='Detail')/content`)。
 
-より複雑な複数のアクセス許可を伴うシナリオについては、「[アクセス許可のシナリオ](#permission-scenarios)」を参照してください。
+複数のアクセス許可を伴うより複雑なシナリオについては、「[アクセス許可のシナリオ](#permission-scenarios)」を参照してください。
+
+---
+
+## <a name="role-management-permissions"></a>役割管理のアクセス許可
+
+#### <a name="delegated-permissions"></a>委任されたアクセス許可
+
+|   アクセス許可    |  表示文字列   |  説明 | 管理者の同意が必要 | Microsoft アカウントのサポート |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _RoleManagement.Read.Directory_ | ディレクトリの RBAC 設定を読み取る | サインインしたユーザーの代わりに、アプリで会社のディレクトリの役割ベースのアクセス制御 (RBAC) 設定の読み取りを実行できるようにします。  これには、ディレクトリ ロール テンプレート、ディレクトリ ロール、およびメンバーシップの読み取りが含まれます。 | はい | いいえ |
+| _RoleManagement.ReadWrite.Directory_ | ディレクトリの RBAC 設定の読み取りと書き込み | サインインしたユーザーの代わりに、アプリでディレクトリの役割ベースのアクセス制御 (RBAC) 設定の読み取りと管理を実行できるようにします。 これには、ディレクトリ ロールのインスタンスの作成、ディレクトリ ロール メンバーシップの管理、およびディレクトリ ロール テンプレート、ディレクトリ ロール、メンバーシップの読み取りが含まれます。 | はい | いいえ |
+
+#### <a name="application-permissions"></a>アプリケーションのアクセス許可
+
+|   アクセス許可    |  表示文字列   |  説明 | 管理者の同意が必要 |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _RoleManagement.Read.Directory_ | ディレクトリのすべての RBAC 設定を読み取る | サインインしているユーザーがいない場合でも、アプリで会社のディレクトリの役割ベースのアクセス制御 (RBAC) 設定の読み取りを実行できるようにします。  これには、ディレクトリ ロール テンプレート、ディレクトリ ロール、およびメンバーシップの読み取りが含まれます。 | はい |
+| _RoleManagement.ReadWrite.Directory_ | ディレクトリのすべての RBAC 設定の読み取りと書き込み | サインインしているユーザーがいない場合でも、アプリでディレクトリの役割ベースのアクセス制御 (RBAC) 設定の読み取りと管理を実行できるようにします。 これには、ディレクトリ ロールのインスタンスの作成、ディレクトリ ロール メンバーシップの管理、およびディレクトリ ロール テンプレート、ディレクトリ ロール、メンバーシップの読み取りが含まれます。 | はい |
+
+### <a name="remarks"></a>Remarks
+_RoleManagement.Read.Directory_ のアクセス許可を持つアプリケーションでは、directoryRoles および directoryRoleTemplates を読み取ることができます。 これには、ディレクトリ ロールのメンバーシップ情報の読み取りが含まれます。
+
+_RoleManagement.ReadWrite.Directory_ のアクセス許可を持つアプリケーションでは、directoryRoles (directoryRoleTemplates は読み取り専用リソースです) の読み取りと書き込みを行えます。 これには、ディレクトリ ロールでのメンバーの追加と削除が含まれます。
+
+役割管理のアクセス許可は、職場または学校アカウントでのみ有効です。
+
+### <a name="example-usage"></a>使用例
+
+- _RoleManagement.Read.Directory_: 利用可能なロール テンプレートの一覧を読み取ります (`GET /directoryRoleTemplates`)
+- _RoleManagement.Read.Directory_: ディレクトリで有効化された役割の一覧を読み取ります (`GET /directoryRoles`)
+- _RoleManagement.Read.Directory_: 役割のメンバーの一覧を読み取ります (`GET /directoryRoles/<id>/members`)
+- _RoleManagement.Read.Directory_: 役割の、管理単位の対象メンバーの一覧を読み取ります (`GET /directoryRoles/<id>/scopedMembers`)
+- _RoleManagement.ReadWrite.Directory_: ロール テンプレートからディレクトリ ロールを有効化します (`POST /directoryRoles`)
+- _RoleManagement.ReadWrite.Directory_: メンバーをディレクトリ ロールに追加します (`POST /directoryRoles/<id>/members`)
+- _RoleManagement.ReadWrite.Directory_: 管理単位の対象メンバーをディレクトリ ロールに追加します (`POST /directoryRoles/<id>/scopedMembers`)
+
+複数のアクセス許可を伴うより複雑なシナリオについては、「[アクセス許可のシナリオ](#permission-scenarios)」を参照してください。
 
 ---
 
