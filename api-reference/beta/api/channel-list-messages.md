@@ -4,66 +4,66 @@ description: 'チームのチャネルに含まれるメッセージの一覧を
 localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1c7f5eb6a5358a4cfd4d9bfcac3a7fd1756c4db4
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: f50b14c91bb86c81de000d9593b889f1224cd063
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35864476"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35931061"
 ---
-# <a name="list-channel-messages"></a><span data-ttu-id="7e56b-104">チャネル メッセージを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="7e56b-104">List channel messages</span></span>
+# <a name="list-channel-messages"></a><span data-ttu-id="95fba-104">チャネル メッセージを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="95fba-104">List channel messages</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="7e56b-105">[チーム](../resources/team.md)の[チャネル](../resources/channel.md)で[メッセージ](../resources/chatmessage.md)の一覧を取得します (返信なし)。</span><span class="sxs-lookup"><span data-stu-id="7e56b-105">Retrieve the list of [messages](../resources/chatmessage.md) (without the replies) in a [channel](../resources/channel.md) of a [team](../resources/team.md).</span></span> 
+<span data-ttu-id="95fba-105">[チーム](../resources/team.md)の[チャネル](../resources/channel.md)で[メッセージ](../resources/chatmessage.md)の一覧を取得します (返信なし)。</span><span class="sxs-lookup"><span data-stu-id="95fba-105">Retrieve the list of [messages](../resources/chatmessage.md) (without the replies) in a [channel](../resources/channel.md) of a [team](../resources/team.md).</span></span> 
 
-<span data-ttu-id="7e56b-106">メッセージの返信を取得するには、[メッセージの返信一覧](channel-get-messagereply.md) API または [メッセージの返信取得](channel-list-messagereplies.md) API を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="7e56b-106">To get the replies for a message, call the [list message replies](channel-get-messagereply.md) or the [get message reply](channel-list-messagereplies.md) API.</span></span> 
+<span data-ttu-id="95fba-106">メッセージの返信を取得するには、[メッセージの返信一覧](channel-list-messagereplies.md) API または [メッセージの返信取得](channel-get-messagereply.md) API を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="95fba-106">To get the replies for a message, call the [list message replies](channel-list-messagereplies.md) or the [get message reply](channel-get-messagereply.md) API.</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="7e56b-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="7e56b-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="95fba-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="95fba-107">Permissions</span></span>
 
-<span data-ttu-id="7e56b-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7e56b-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="95fba-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="95fba-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="7e56b-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="7e56b-110">Permission Type</span></span>|<span data-ttu-id="7e56b-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="7e56b-111">Permissions (from least to most privileged)</span></span>|
+|<span data-ttu-id="95fba-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="95fba-110">Permission Type</span></span>|<span data-ttu-id="95fba-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="95fba-111">Permissions (from least to most privileged)</span></span>|
 |---------|-------------|
-|<span data-ttu-id="7e56b-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="7e56b-112">Delegated (work or school account)</span></span>|<span data-ttu-id="7e56b-113">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7e56b-113">Group.Read.All,Group.ReadWrite.All</span></span>|
-|<span data-ttu-id="7e56b-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="7e56b-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="7e56b-115">サポートされていません</span><span class="sxs-lookup"><span data-stu-id="7e56b-115">Not supported</span></span>|
-|<span data-ttu-id="7e56b-116">Application</span><span class="sxs-lookup"><span data-stu-id="7e56b-116">Application</span></span>| <span data-ttu-id="7e56b-117">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7e56b-117">Group.Read.All,Group.ReadWrite.All</span></span>|
+|<span data-ttu-id="95fba-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="95fba-112">Delegated (work or school account)</span></span>|<span data-ttu-id="95fba-113">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="95fba-113">Group.Read.All,Group.ReadWrite.All</span></span>|
+|<span data-ttu-id="95fba-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="95fba-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="95fba-115">サポートされていません</span><span class="sxs-lookup"><span data-stu-id="95fba-115">Not supported</span></span>|
+|<span data-ttu-id="95fba-116">Application</span><span class="sxs-lookup"><span data-stu-id="95fba-116">Application</span></span>| <span data-ttu-id="95fba-117">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="95fba-117">Group.Read.All,Group.ReadWrite.All</span></span>|
 
 > [!NOTE]
-> <span data-ttu-id="7e56b-118">この API をアプリケーションのアクセス許可で呼び出す前に、アクセスを要求する必要があります。</span><span class="sxs-lookup"><span data-stu-id="7e56b-118">Before calling this API with application permissions, you must request access.</span></span> <span data-ttu-id="7e56b-119">詳細については、「[Microsoft Teams の保護された API](/graph/teams-protected-apis)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7e56b-119">For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).</span></span>
+> <span data-ttu-id="95fba-118">この API をアプリケーションのアクセス許可で呼び出す前に、アクセスを要求する必要があります。</span><span class="sxs-lookup"><span data-stu-id="95fba-118">Before calling this API with application permissions, you must request access.</span></span> <span data-ttu-id="95fba-119">詳細については、「[Microsoft Teams の保護された API](/graph/teams-protected-apis)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="95fba-119">For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="7e56b-120">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="7e56b-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="95fba-120">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="95fba-120">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{id}/channels/{id}/messages
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="7e56b-121">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="7e56b-121">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="95fba-121">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="95fba-121">Optional query parameters</span></span>
 
-<span data-ttu-id="7e56b-122">[$top](/graph/query-parameters#top-parameter)クエリ パラメーターで応答ごとのアイテム数を制御することができます。</span><span class="sxs-lookup"><span data-stu-id="7e56b-122">You can use the [$top](/graph/query-parameters#top-parameter) query parameter to control the number of items per response.</span></span> <span data-ttu-id="7e56b-123">その他の[OData クエリ パラメーター](/graph/query-parameters)は現在サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="7e56b-123">The other [OData query parameters](/graph/query-parameters) are not currently supported.</span></span>
+<span data-ttu-id="95fba-122">[$top](/graph/query-parameters#top-parameter)クエリ パラメーターで応答ごとのアイテム数を制御することができます。</span><span class="sxs-lookup"><span data-stu-id="95fba-122">You can use the [$top](/graph/query-parameters#top-parameter) query parameter to control the number of items per response.</span></span> <span data-ttu-id="95fba-123">その他の[OData クエリ パラメーター](/graph/query-parameters)は現在サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="95fba-123">The other [OData query parameters](/graph/query-parameters) are not currently supported.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="7e56b-124">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="7e56b-124">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="95fba-124">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="95fba-124">Request headers</span></span>
 
-| <span data-ttu-id="7e56b-125">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="7e56b-125">Header</span></span>       | <span data-ttu-id="7e56b-126">値</span><span class="sxs-lookup"><span data-stu-id="7e56b-126">Value</span></span> |
+| <span data-ttu-id="95fba-125">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="95fba-125">Header</span></span>       | <span data-ttu-id="95fba-126">値</span><span class="sxs-lookup"><span data-stu-id="95fba-126">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="7e56b-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="7e56b-127">Authorization</span></span>  | <span data-ttu-id="7e56b-p105">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="7e56b-p105">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="95fba-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="95fba-127">Authorization</span></span>  | <span data-ttu-id="95fba-p105">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="95fba-p105">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="7e56b-130">要求本文</span><span class="sxs-lookup"><span data-stu-id="7e56b-130">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="95fba-130">要求本文</span><span class="sxs-lookup"><span data-stu-id="95fba-130">Request body</span></span>
 
-<span data-ttu-id="7e56b-131">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="7e56b-131">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="95fba-131">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="95fba-131">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="7e56b-132">応答</span><span class="sxs-lookup"><span data-stu-id="7e56b-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="95fba-132">応答</span><span class="sxs-lookup"><span data-stu-id="95fba-132">Response</span></span>
 
-<span data-ttu-id="7e56b-133">このメソッドは、成功すると `200 OK` 応答コードと [chatMessage](../resources/chatmessage.md) オブジェクトのコレクションを応答本文で返します。</span><span class="sxs-lookup"><span data-stu-id="7e56b-133">If successful, this method returns a `200 OK` response code and a collection of [chatMessage](../resources/chatmessage.md) objects in the response body.</span></span>
+<span data-ttu-id="95fba-133">このメソッドは、成功すると `200 OK` 応答コードと [chatMessage](../resources/chatmessage.md) オブジェクトのコレクションを応答本文で返します。</span><span class="sxs-lookup"><span data-stu-id="95fba-133">If successful, this method returns a `200 OK` response code and a collection of [chatMessage](../resources/chatmessage.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7e56b-134">例</span><span class="sxs-lookup"><span data-stu-id="7e56b-134">Example</span></span>
+## <a name="example"></a><span data-ttu-id="95fba-134">例</span><span class="sxs-lookup"><span data-stu-id="95fba-134">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="7e56b-135">要求</span><span class="sxs-lookup"><span data-stu-id="7e56b-135">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="95fba-135">要求</span><span class="sxs-lookup"><span data-stu-id="95fba-135">Request</span></span>
 
-<span data-ttu-id="7e56b-136">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="7e56b-136">Here is an example of the request.</span></span>
+<span data-ttu-id="95fba-136">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="95fba-136">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="7e56b-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="7e56b-137">--Http</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="95fba-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="95fba-137">--Http</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["303d2c1c-f1c5-40ce-b68e-544343d7f42b", "19:fec4b0f2825d4c8c82abc09027a64184@thread.skype"],
@@ -72,28 +72,28 @@ GET /teams/{id}/channels/{id}/messages
 ```http
 GET https://graph.microsoft.com/beta/teams/303d2c1c-f1c5-40ce-b68e-544343d7f42b/channels/19:fec4b0f2825d4c8c82abc09027a64184@thread.skype/messages
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="7e56b-138">C#</span><span class="sxs-lookup"><span data-stu-id="7e56b-138">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="95fba-138">C#</span><span class="sxs-lookup"><span data-stu-id="95fba-138">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-channel-messages-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7e56b-139">Javascript</span><span class="sxs-lookup"><span data-stu-id="7e56b-139">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="95fba-139">Javascript</span><span class="sxs-lookup"><span data-stu-id="95fba-139">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-channel-messages-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="7e56b-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7e56b-140">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="95fba-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="95fba-140">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-channel-messages-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="7e56b-141">Java</span><span class="sxs-lookup"><span data-stu-id="7e56b-141">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="95fba-141">Java</span><span class="sxs-lookup"><span data-stu-id="95fba-141">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-channel-messages-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="7e56b-142">応答</span><span class="sxs-lookup"><span data-stu-id="7e56b-142">Response</span></span>
-<span data-ttu-id="7e56b-143">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="7e56b-143">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="95fba-142">応答</span><span class="sxs-lookup"><span data-stu-id="95fba-142">Response</span></span>
+<span data-ttu-id="95fba-143">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="95fba-143">Here is an example of the response.</span></span> 
 
-><span data-ttu-id="7e56b-p106">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="7e56b-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="95fba-p106">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="95fba-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
