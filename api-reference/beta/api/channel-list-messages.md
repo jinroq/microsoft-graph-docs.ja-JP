@@ -4,12 +4,12 @@ description: 'チームのチャネルに含まれるメッセージの一覧を
 localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1c7f5eb6a5358a4cfd4d9bfcac3a7fd1756c4db4
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: f50b14c91bb86c81de000d9593b889f1224cd063
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35864476"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35931061"
 ---
 # <a name="list-channel-messages"></a>チャネル メッセージを一覧表示する
 
@@ -17,7 +17,7 @@ ms.locfileid: "35864476"
 
 [チーム](../resources/team.md)の[チャネル](../resources/channel.md)で[メッセージ](../resources/chatmessage.md)の一覧を取得します (返信なし)。 
 
-メッセージの返信を取得するには、[メッセージの返信一覧](channel-get-messagereply.md) API または [メッセージの返信取得](channel-list-messagereplies.md) API を呼び出します。 
+メッセージの返信を取得するには、[メッセージの返信一覧](channel-list-messagereplies.md) API または [メッセージの返信取得](channel-get-messagereply.md) API を呼び出します。 
 
 ## <a name="permissions"></a>アクセス許可
 
