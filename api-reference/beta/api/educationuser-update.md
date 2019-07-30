@@ -4,12 +4,12 @@ description: '**educationuser** オブジェクトのプロパティを更新し
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 49e2853233919051ada1dfc29db197f4f43e890f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 117acfb747457986af3e615f1006a6de1ceefe0b
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35859855"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35931185"
 ---
 # <a name="update-educationuser-properties"></a>educationUser プロパティを更新する
 
@@ -54,7 +54,7 @@ PATCH /education/users/{id}
 |residenceAddress|[physicalAddress](../resources/physicaladdress.md)| ユーザーが在住している場所のアドレス。|
 |primaryRole|string| ユーザーの既定のロール。  ユーザーのロールは、個々のクラスで異なる場合があります。 使用可能な値: `student`、`teacher`、`enum_sentinel`。|
 |student|[educationStudent](../resources/educationstudent.md)| プライマリ ロールが学生の場合、このブロックには学生固有のデータが含まれます。|
-|teacher|[educationTeacher](../resources/educationteacher.md)| プライマリ ロールが教師の場合、このブロックには教師固有のデータが含まれます。|
+|teacher|[educationTeacher](../resources/educationteacher.md)| プライマリロールが教師の場合、このブロックには教師固有のデータが含まれます。|
 
 
 ## <a name="response"></a>応答

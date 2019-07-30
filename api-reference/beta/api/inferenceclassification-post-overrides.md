@@ -2,12 +2,12 @@
 title: inferenceClassificationOverride を作成する
 description: 'SMTP アドレスによって識別される送信者の優先受信トレイの上書きを作成します。 その SMTP アドレスからの今後のメッセージは一貫して分類されます。 '
 localization_priority: Normal
-ms.openlocfilehash: 3d47140ff4e5aa9c333dc279e2722d93d9ea8ace
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 310171e99df0c41b07d3c178fe6ee676f317ea1b
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35857509"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35931151"
 ---
 # <a name="create-inferenceclassificationoverride"></a>inferenceClassificationOverride を作成する
 
@@ -15,9 +15,9 @@ ms.locfileid: "35857509"
 
 SMTP アドレスによって識別される送信者の[優先受信トレイ](../resources/manage-focused-inbox.md)の上書きを作成します。 この SMTP アドレスからの将来のメッセージは、オーバーライドで指定されたとおり一貫して分類されます。
 
-**メモ**
+**注意**
 
-- 同じ STMP アドレスですでにオーバーライドがある場合は、そのオーバーライドの **ClassifyAs** および **Name** フィールドが指定の値で更新されます。
+- 同じ SMTP アドレスを持つオーバーライドが既に存在する場合は**** 、そのオーバーライドの [フィールド名] フィールドと [**名前**] フィールドが、指定された値で更新されます。
 - メールボックスでサポートされているオーバーライドは、一意の送信者 SMTP アドレスに基づき、最大 1000 件までです。
 - POST 操作では、同時に作成できるオーバーライドは 1 件です。
 

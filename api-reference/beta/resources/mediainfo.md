@@ -4,12 +4,12 @@ description: プロンプトのアクションで使用されるメディア情�
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4c6f8e4f4ceea184f9663c433672d0892ed92467
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 81fbb1228e8b8821a3a92a6f285a3abc758701ca
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342644"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35932470"
 ---
 # <a name="mediainfo-resource-type"></a>mediaInfo リソースの種類
 
@@ -20,8 +20,9 @@ ms.locfileid: "33342644"
 ## <a name="properties"></a>プロパティ
 | プロパティ       | 型    | 説明                      |
 |:---------------|:--------|:---------------------------------|
-| resourceId     | String  | リソースの一意の id です。 |
-| uri            | String  | リソースへのパス。            |
+| resourceId     | String  | 省略可能。リソースを一意に識別するために使用されます。 渡された場合、プロンプト uri はこの resourceId に対してキーとしてキャッシュされます。 |
+| uri            | String  | 再生するプロンプトへのパス。 現時点では、Wave ファイル (.wav) 形式のみで、16000 (16KHz) のサンプリングレートを持つ16ビットのサンプルのみがサポートされています。 |
+
 
 ## <a name="json-representation"></a>JSON 表記
 

@@ -2,12 +2,12 @@
 title: GovernanceRoleAssignmentRequests の更新
 description: 管理者が、の`AdminApproved` `AdminDenied` `PendingAdminDecision`状態にある governanceRoleAssignmentRequests 上の意思決定 (または) を更新できるようにします。
 localization_priority: Normal
-ms.openlocfilehash: 2fc215fd95cd621e3aa29ef0fcd653964dc6208d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 5995addbd9c7a491b884aea505f2ab8d4b8c750d
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35859064"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35931179"
 ---
 # <a name="update-governanceroleassignmentrequests"></a>GovernanceRoleAssignmentRequests の更新
 
@@ -18,7 +18,7 @@ ms.locfileid: "35859064"
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
->**注:** この API では、 [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)が属しているリソース`Active`に対して、要求者が少なくとも1つの管理者ロールの割り当て`owner` `user access administrator`を持っている必要があります。 
+>**注:** この API では、 [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)が属しているリソース`Active`に対して、少なくとも1人の管理者の役割の割り当て (`owner`または`user access administrator`) が要求者に必要になります。 
 
 |アクセス許可の種類      | アクセス許可              |
 |:--------------------|:---------------------------------------------------------|

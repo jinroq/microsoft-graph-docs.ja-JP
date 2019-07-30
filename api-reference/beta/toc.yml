@@ -7442,6 +7442,8 @@
                   href: api/itemactivity-getbyinterval.md
                 - name: プレビュー項目
                   href: api/driveitem-preview.md
+                - name: バンドル
+                  href: resources/bundle.md
             - name: アクセス許可
               href: resources/permission.md
               items:
@@ -7449,6 +7451,8 @@
                   href: api/driveitem-createlink.md
                 - name: 共有リンクを使用する
                   href: api/shares-get.md
+                - name: 共有リンクにユーザーを追加する
+                  href: api/permission-grant.md
                 - name: アクセス許可を一覧表示する
                   href: api/driveitem-list-permissions.md
                 - name: アクセス許可を追加する
@@ -9485,7 +9489,7 @@
               items:
                 - name: リスト
                   href: api/outlookuser-list-tasks.md
-                - name: 作成する
+                - name: 作成
                   href: api/outlookuser-post-tasks.md
                 - name: 取得
                   href: api/outlooktask-get.md

@@ -2,12 +2,12 @@
 title: privilegedRoleAssignmentRequest リソースの種類
 description: Privilegd Identity Management での役割の割り当て操作の要求を表します。
 localization_priority: Normal
-ms.openlocfilehash: 240c84ecb0bf4f8d0e171f647f21eb6730c28d44
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 54d3fe72ab0cd9145f549e88e356ed30e2b9ef56
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35621215"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35932529"
 ---
 # <a name="privilegedroleassignmentrequest-resource-type"></a>privilegedRoleAssignmentRequest リソースの種類
 
@@ -40,7 +40,7 @@ Privilegd Identity Management での役割の割り当て操作の要求を表�
 |status|文字列型 (String)| 読み取り専用。役割の割り当て要求の状態。 値`NotStarted``Completed``Revoked``RequestExpired`は、、、、、、、、、、、のようになります。`RequestedApproval``Scheduled``Approved``ApprovalDenied``ApprovalAborted``Cancelling``Cancelled`|
 |ticketNumber|String| 役割の割り当ての ticketNumber。 |
 |ticketSystem|String| 役割の割り当ての ticketSystem。|
-|type|String| 役割の割り当てに対する操作の種類を表します。 値は次の`AdminAdd`ようになります。「ユーザーを役割に追加する」。`UserAdd`: ユーザーが役割の割り当てを追加します。|
+|type|String| 役割の割り当てに対する操作の種類を表します。 値は次の`AdminAdd`ようになります。管理者が役割にユーザーを追加します。`UserAdd`: ユーザーが役割の割り当てを追加します。|
 |userId|String| ユーザーの id。|
 
 ## <a name="relationships"></a>リレーションシップ

@@ -1,27 +1,26 @@
 ---
-title: mediaprompt リソースの種類
-description: mediaprompt の種類。
+title: mediaPrompt リソースの種類
+description: MediaPrompt の種類。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: aa08436d46777b4e82712e3288ec17047c33a1ff
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: cd2a700298c6f8163e3162e244f66468e1a94e7c
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342633"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35932486"
 ---
-# <a name="mediaprompt-resource-type"></a>mediaprompt リソースの種類
+# <a name="mediaprompt-resource-type"></a>mediaPrompt リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-mediaprompt の種類。
+MediaPrompt の種類。
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ    | 型                      | 説明                                                                     |
 | :---------- | :------------------------ | :------------------------------------------------------------------------------ |
-| for        | Int32                     | ループカウント。 0は無限にループすることを示します。 既定値は `1` です。 |
 | mediaInfo   | [mediaInfo](mediainfo.md) | メディア情報                                                           |
 
 ## <a name="json-representation"></a>JSON 表記
@@ -38,7 +37,6 @@ mediaprompt の種類。
 
 ```json
 {
-  "loop": 1024,
   "mediaInfo": { "@odata.type": "#microsoft.graph.mediaInfo" }
 }
 ```
@@ -51,11 +49,12 @@ mediaprompt の種類。
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.mediaPrompt",
   "mediaInfo": {
+    "@odata.type": "#microsoft.graph.mediaInfo",
     "uri": "https://cdn.contoso.com/beep.wav",
     "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E"
-  },
-  "loop": 5
+  }
 }
 ```
 

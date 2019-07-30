@@ -4,12 +4,12 @@ description: システム内のユーザーです。 これは教育機関に固
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 616c11bca1711dead0007d153b77bcf377490a7a
-ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
+ms.openlocfilehash: 028107941c134569caf7f4c1efc13f7d752dcb1b
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34750109"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35932011"
 ---
 # <a name="educationuser-resource-type"></a>educationUser リソースの種類
 
@@ -58,7 +58,7 @@ ms.locfileid: "34750109"
 | residenceAddress  | [physicalAddress]                                     | ユーザーが在住している場所のアドレス。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | student           | [educationStudent]                                    | プライマリ ロールが学生の場合、このブロックには学生固有のデータが含まれます。                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | surname           | String                                                | ユーザーの姓。 フィルター \$をサポートします。                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| teacher           | [educationTeacher]                                    | プライマリ ロールが教師の場合、このブロックには教師固有のデータが含まれます。                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| teacher           | [educationTeacher]                                    | プライマリロールが教師の場合、このブロックには教師固有のデータが含まれます。                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | usageLocation     | String                                                | 2 文字の国コード (ISO 規格 3166) 国や地域におけるサービスの利用可能性を確認することが法的に義務付けられているため、ライセンスを割り当てられるユーザーには必須です。 たとえば、"US"、"JP"、"GB" などです。 null 許容ではありません。 フィルター \$をサポートします。                                                                                                                                                                                                                                                               |
 | userPrincipalName | String                                                | ユーザーのユーザー プリンシパル名 (UPN)。UPN は、インターネット標準 RFC 822 に基づいた、インターネット スタイルのユーザーのログイン名です。規則では、これはユーザーの電子メール名にマップされる必要があります。一般的な形式は alias@domain です。このドメインは、検証済みドメインのテナントのコレクション内に存在している必要があります。このプロパティは、ユーザーの作成時に必要です。テナントの検証済みのドメインには、[organization](organization.md) の **verifiedDomains** プロパティからアクセスできます。$filter および $orderby をサポートします。 |
 | userType          | String                                                | ディレクトリ内のユーザーの種類を分類するために使用する文字列値 (“Member”、“Guest” など)。 フィルター \$をサポートします。                                                                                                                                                                                                                                                                                                                                                                                                       |

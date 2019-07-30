@@ -4,12 +4,12 @@ description: 管理単位は、ユーザーおよびグループのディレク�
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 94d6c359449400ad2b37840b34d1b62e6f1b2138
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.openlocfilehash: a773df792a0f21480510c2a4eaf2aa32e3e10ba9
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34656847"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35932069"
 ---
 # <a name="administrativeunit-resource-type"></a>administrativeUnit リソースの種類
 
@@ -38,7 +38,7 @@ ms.locfileid: "34656847"
 |[メンバーを取得する](../api/administrativeunit-get-members.md) |[directoryObject](directoryobject.md)| 特定のメンバーを取得します。|
 |[メンバーを削除する](../api/administrativeunit-delete-members.md) |[directoryObject](directoryobject.md)| メンバーを削除します。|
 |[スコープロールのメンバーを追加する](../api/administrativeunit-post-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| スコープ付きの役割メンバーを追加します。|
-|[スコープが指定された役割のメンバーを一覧表示する](../api/administrativeunit-list-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md) コレクション| スコープが設定された役割の担当者の一覧を取得します。|
+|[スコープが指定された役割のメンバーを一覧表示する](../api/administrativeunit-list-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md) コレクション| スコープの役割を持つ管理者の一覧を取得します。|
 |[スコープロールのメンバーを取得する](../api/administrativeunit-get-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| 特定の範囲の役割メンバーを取得します。|
 |[スコープ指定された役割メンバーを削除する](../api/administrativeunit-delete-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| スコープ指定された役割メンバーを削除します。|
 |**オープン拡張機能**| | |

@@ -2,12 +2,12 @@
 title: PrivilegedRoleAssignmentRequest を作成する
 description: Privilegedroleassignmentrequest オブジェクトを作成します。
 localization_priority: Normal
-ms.openlocfilehash: f2b69bd44b1d8506f016757b5c309bf50ed0423f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 0cb7e958e9eaf8550d1262ed00e66ee477cbd195
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35875544"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35931853"
 ---
 # <a name="create-privilegedroleassignmentrequest"></a>PrivilegedRoleAssignmentRequest を作成する
 
@@ -41,7 +41,7 @@ POST /privilegedRoleAssignmentRequests
 | プロパティ     | 型    |  説明|
 |:---------------|:--------|:----------|
 |roleId|String|ロールの ID。 必須。|
-|type|String|役割の割り当てに対する操作の種類を表します。 値は次の`AdminAdd`ようになります。「ユーザーを役割に追加する」。`UserAdd`: ユーザーが役割の割り当てを追加します。 必須です。|
+|type|String|役割の割り当てに対する操作の種類を表します。 値は次の`AdminAdd`ようになります。管理者が役割にユーザーを追加します。`UserAdd`: ユーザーが役割の割り当てを追加します。 必須です。|
 |割り当ての状態|String|割り当ての状態を指定します。 この値は、 `Eligible`管理者に`Active`よって直接割り当てら`Active`れている場合、またはユーザーによる資格のある割り当てに対してアクティブ化されている場合に、対象となる割り当てに使用できます。 使用可能な値は、``NotStarted``、`Completed`、`RequestedApproval`、`Scheduled`、`Approved`、`ApprovalDenied`、`ApprovalAborted`、`Cancelling`、`Cancelled`、`Revoked`、`RequestExpired` です。 必須です。|
 |したがっ|String|監査およびレビューの目的で、役割の割り当て要求に対して理由を提供する必要があります。|
 |schedule|[governanceSchedule](../resources/governanceschedule.md)|役割の割り当て要求のスケジュール。|
