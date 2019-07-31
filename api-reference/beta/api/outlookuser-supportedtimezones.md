@@ -4,34 +4,35 @@ description: ユーザーに対してサポートされている (ユーザー�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 43cf4472dc074539c235bc7d7b00b6655a9b55ce
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 5961de82c66be5368b52ae017a6d5d49be1ff7e9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35877281"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35983608"
 ---
-# <a name="outlookuser-supportedtimezones"></a><span data-ttu-id="e0d48-103">outlookUser: supportedTimeZones</span><span class="sxs-lookup"><span data-stu-id="e0d48-103">outlookUser: supportedTimeZones</span></span>
+# <a name="outlookuser-supportedtimezones"></a><span data-ttu-id="f2d1c-103">outlookUser: supportedTimeZones</span><span class="sxs-lookup"><span data-stu-id="f2d1c-103">outlookUser: supportedTimeZones</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e0d48-104">ユーザーに対してサポートされている (ユーザーのメールボックス サーバーで構成されている) タイム ゾーンのリストを取得します。</span><span class="sxs-lookup"><span data-stu-id="e0d48-104">Get the list of time zones that are supported for the user, as configured on the user's mailbox server.</span></span>
+<span data-ttu-id="f2d1c-104">ユーザーに対してサポートされている (ユーザーのメールボックス サーバーで構成されている) タイム ゾーンのリストを取得します。</span><span class="sxs-lookup"><span data-stu-id="f2d1c-104">Get the list of time zones that are supported for the user, as configured on the user's mailbox server.</span></span>
 
-<span data-ttu-id="e0d48-105">Windows のタイム ゾーン形式または [Internet Assigned Numbers Authority (IANA) のタイム ゾーン](https://www.iana.org/time-zones) (別称: Olson タイム ゾーン) 形式でタイム ゾーンが返されるよう、明示的に指定できます。</span><span class="sxs-lookup"><span data-stu-id="e0d48-105">You can explicitly specify to have time zones returned in the Windows time zone format or  [Internet Assigned Numbers Authority (IANA) time zone](https://www.iana.org/time-zones) (also known as Olson time zone) format.</span></span> <span data-ttu-id="e0d48-106">既定値は Windows 形式です。</span><span class="sxs-lookup"><span data-stu-id="e0d48-106">The Windows format is the default.</span></span>
+<span data-ttu-id="f2d1c-105">Windows のタイム ゾーン形式または [Internet Assigned Numbers Authority (IANA) のタイム ゾーン](https://www.iana.org/time-zones) (別称: Olson タイム ゾーン) 形式でタイム ゾーンが返されるよう、明示的に指定できます。</span><span class="sxs-lookup"><span data-stu-id="f2d1c-105">You can explicitly specify to have time zones returned in the Windows time zone format or  [Internet Assigned Numbers Authority (IANA) time zone](https://www.iana.org/time-zones) (also known as Olson time zone) format.</span></span> <span data-ttu-id="f2d1c-106">既定値は Windows 形式です。</span><span class="sxs-lookup"><span data-stu-id="f2d1c-106">The Windows format is the default.</span></span>
 
-<span data-ttu-id="e0d48-107">Outlook クライアントを設定する際は、このサポートされているリストから、優先するタイム ゾーンを選択します。</span><span class="sxs-lookup"><span data-stu-id="e0d48-107">When setting up an Outlook client, the user selects the preferred time zone from this supported list.</span></span> <span data-ttu-id="e0d48-108">これにより、[ユーザーのメールボックス設定を取得](user-get-mailboxsettings.md)することによって、優先タイム ゾーンを取得できるようになります。</span><span class="sxs-lookup"><span data-stu-id="e0d48-108">You can subsequently get the preferred time zone by [getting the user's mailbox settings](user-get-mailboxsettings.md).</span></span>
+<span data-ttu-id="f2d1c-107">Outlook クライアントを設定する際は、このサポートされているリストから、優先するタイム ゾーンを選択します。</span><span class="sxs-lookup"><span data-stu-id="f2d1c-107">When setting up an Outlook client, the user selects the preferred time zone from this supported list.</span></span> <span data-ttu-id="f2d1c-108">これにより、[ユーザーのメールボックス設定を取得](user-get-mailboxsettings.md)することによって、優先タイム ゾーンを取得できるようになります。</span><span class="sxs-lookup"><span data-stu-id="f2d1c-108">You can subsequently get the preferred time zone by [getting the user's mailbox settings](user-get-mailboxsettings.md).</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="e0d48-109">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="e0d48-109">Permissions</span></span>
-<span data-ttu-id="e0d48-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e0d48-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="f2d1c-109">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="f2d1c-109">Permissions</span></span>
+<span data-ttu-id="f2d1c-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f2d1c-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e0d48-112">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="e0d48-112">Permission type</span></span>      | <span data-ttu-id="e0d48-113">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="e0d48-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f2d1c-112">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="f2d1c-112">Permission type</span></span>      | <span data-ttu-id="f2d1c-113">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="f2d1c-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e0d48-114">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="e0d48-114">Delegated (work or school account)</span></span> | <span data-ttu-id="e0d48-115">User.Read、User.ReadBasic.All</span><span class="sxs-lookup"><span data-stu-id="e0d48-115">User.Read, User.ReadBasic.All</span></span>    |
-|<span data-ttu-id="e0d48-116">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="e0d48-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e0d48-117">User.Read</span><span class="sxs-lookup"><span data-stu-id="e0d48-117">User.Read</span></span>    |
-|<span data-ttu-id="e0d48-118">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="e0d48-118">Application</span></span> | <span data-ttu-id="e0d48-119">User.Read.All</span><span class="sxs-lookup"><span data-stu-id="e0d48-119">User.Read.All</span></span> |
+|<span data-ttu-id="f2d1c-114">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="f2d1c-114">Delegated (work or school account)</span></span> | <span data-ttu-id="f2d1c-115">User.Read、User.ReadBasic.All</span><span class="sxs-lookup"><span data-stu-id="f2d1c-115">User.Read, User.ReadBasic.All</span></span>    |
+|<span data-ttu-id="f2d1c-116">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="f2d1c-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f2d1c-117">User.Read</span><span class="sxs-lookup"><span data-stu-id="f2d1c-117">User.Read</span></span>    |
+|<span data-ttu-id="f2d1c-118">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="f2d1c-118">Application</span></span> | <span data-ttu-id="f2d1c-119">User.Read.All</span><span class="sxs-lookup"><span data-stu-id="f2d1c-119">User.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e0d48-120">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="e0d48-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f2d1c-120">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="f2d1c-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/outlook/supportedTimeZones
@@ -41,28 +42,28 @@ GET /me/outlook/supportedTimeZones(TimeZoneStandard=microsoft.graph.timeZoneStan
 GET /users/{id|userPrincipalName}/outlook/supportedTimeZones(TimeZoneStandard=microsoft.graph.timeZoneStandard'{timezone_format}')
 ```
 
-## <a name="function-parameters"></a><span data-ttu-id="e0d48-121">関数パラメーター</span><span class="sxs-lookup"><span data-stu-id="e0d48-121">Function parameters</span></span>
-| <span data-ttu-id="e0d48-122">パラメーター</span><span class="sxs-lookup"><span data-stu-id="e0d48-122">Parameter</span></span>      | <span data-ttu-id="e0d48-123">型</span><span class="sxs-lookup"><span data-stu-id="e0d48-123">Type</span></span>    | <span data-ttu-id="e0d48-124">説明</span><span class="sxs-lookup"><span data-stu-id="e0d48-124">Description</span></span>|
+## <a name="function-parameters"></a><span data-ttu-id="f2d1c-121">関数パラメーター</span><span class="sxs-lookup"><span data-stu-id="f2d1c-121">Function parameters</span></span>
+| <span data-ttu-id="f2d1c-122">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f2d1c-122">Parameter</span></span>      | <span data-ttu-id="f2d1c-123">型</span><span class="sxs-lookup"><span data-stu-id="f2d1c-123">Type</span></span>    | <span data-ttu-id="f2d1c-124">説明</span><span class="sxs-lookup"><span data-stu-id="f2d1c-124">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="e0d48-125">TimeZoneStandard</span><span class="sxs-lookup"><span data-stu-id="e0d48-125">TimeZoneStandard</span></span>  | <span data-ttu-id="e0d48-126">String</span><span class="sxs-lookup"><span data-stu-id="e0d48-126">String</span></span>  | <span data-ttu-id="e0d48-127">タイム ゾーンの形式。</span><span class="sxs-lookup"><span data-stu-id="e0d48-127">A time zone format.</span></span> <span data-ttu-id="e0d48-128">サポートされている値は `Windows` および `Iana` です。</span><span class="sxs-lookup"><span data-stu-id="e0d48-128">Supported values are: `Windows`, and `Iana`.</span></span> <span data-ttu-id="e0d48-129">省略可能。</span><span class="sxs-lookup"><span data-stu-id="e0d48-129">Optional.</span></span> |
+| <span data-ttu-id="f2d1c-125">TimeZoneStandard</span><span class="sxs-lookup"><span data-stu-id="f2d1c-125">TimeZoneStandard</span></span>  | <span data-ttu-id="f2d1c-126">String</span><span class="sxs-lookup"><span data-stu-id="f2d1c-126">String</span></span>  | <span data-ttu-id="f2d1c-127">タイム ゾーンの形式。</span><span class="sxs-lookup"><span data-stu-id="f2d1c-127">A time zone format.</span></span> <span data-ttu-id="f2d1c-128">サポートされている値は `Windows` および `Iana` です。</span><span class="sxs-lookup"><span data-stu-id="f2d1c-128">Supported values are: `Windows`, and `Iana`.</span></span> <span data-ttu-id="f2d1c-129">省略可能。</span><span class="sxs-lookup"><span data-stu-id="f2d1c-129">Optional.</span></span> |
 
-## <a name="request-headers"></a><span data-ttu-id="e0d48-130">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="e0d48-130">Request headers</span></span>
-| <span data-ttu-id="e0d48-131">名前</span><span class="sxs-lookup"><span data-stu-id="e0d48-131">Name</span></span>       | <span data-ttu-id="e0d48-132">型</span><span class="sxs-lookup"><span data-stu-id="e0d48-132">Type</span></span> | <span data-ttu-id="e0d48-133">説明</span><span class="sxs-lookup"><span data-stu-id="e0d48-133">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f2d1c-130">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f2d1c-130">Request headers</span></span>
+| <span data-ttu-id="f2d1c-131">名前</span><span class="sxs-lookup"><span data-stu-id="f2d1c-131">Name</span></span>       | <span data-ttu-id="f2d1c-132">型</span><span class="sxs-lookup"><span data-stu-id="f2d1c-132">Type</span></span> | <span data-ttu-id="f2d1c-133">説明</span><span class="sxs-lookup"><span data-stu-id="f2d1c-133">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="e0d48-134">Authorization</span><span class="sxs-lookup"><span data-stu-id="e0d48-134">Authorization</span></span>  | <span data-ttu-id="e0d48-135">string</span><span class="sxs-lookup"><span data-stu-id="e0d48-135">string</span></span>  | <span data-ttu-id="e0d48-p105">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="e0d48-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="f2d1c-134">Authorization</span><span class="sxs-lookup"><span data-stu-id="f2d1c-134">Authorization</span></span>  | <span data-ttu-id="f2d1c-135">string</span><span class="sxs-lookup"><span data-stu-id="f2d1c-135">string</span></span>  | <span data-ttu-id="f2d1c-p105">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="f2d1c-p105">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="e0d48-138">要求本文</span><span class="sxs-lookup"><span data-stu-id="e0d48-138">Request body</span></span>
-<span data-ttu-id="e0d48-139">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="e0d48-139">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f2d1c-138">要求本文</span><span class="sxs-lookup"><span data-stu-id="f2d1c-138">Request body</span></span>
+<span data-ttu-id="f2d1c-139">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="f2d1c-139">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e0d48-140">応答</span><span class="sxs-lookup"><span data-stu-id="e0d48-140">Response</span></span>
-<span data-ttu-id="e0d48-141">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文に [timeZoneInformation](../resources/timezoneinformation.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="e0d48-141">If successful, this method returns `200 OK` response code and a collection of [timeZoneInformation](../resources/timezoneinformation.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="f2d1c-140">応答</span><span class="sxs-lookup"><span data-stu-id="f2d1c-140">Response</span></span>
+<span data-ttu-id="f2d1c-141">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文に [timeZoneInformation](../resources/timezoneinformation.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="f2d1c-141">If successful, this method returns `200 OK` response code and a collection of [timeZoneInformation](../resources/timezoneinformation.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e0d48-142">例</span><span class="sxs-lookup"><span data-stu-id="e0d48-142">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f2d1c-142">例</span><span class="sxs-lookup"><span data-stu-id="f2d1c-142">Example</span></span>
 
-##### <a name="request-1"></a><span data-ttu-id="e0d48-143">要求 1</span><span class="sxs-lookup"><span data-stu-id="e0d48-143">Request 1</span></span>
-<span data-ttu-id="e0d48-144">次の例では、`timeZoneStandard` パラメーターを指定せずに、Windows のタイム ゾーン形式で表記されたサポート対象タイム ゾーンのリストを取得します。</span><span class="sxs-lookup"><span data-stu-id="e0d48-144">The following example does not specify the `timeZoneStandard` parameter, and gets the list of supported time zones represented in the Windows time zone format.</span></span> 
+##### <a name="request-1"></a><span data-ttu-id="f2d1c-143">要求 1</span><span class="sxs-lookup"><span data-stu-id="f2d1c-143">Request 1</span></span>
+<span data-ttu-id="f2d1c-144">次の例では、`timeZoneStandard` パラメーターを指定せずに、Windows のタイム ゾーン形式で表記されたサポート対象タイム ゾーンのリストを取得します。</span><span class="sxs-lookup"><span data-stu-id="f2d1c-144">The following example does not specify the `timeZoneStandard` parameter, and gets the list of supported time zones represented in the Windows time zone format.</span></span> 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="e0d48-145">プロトコル</span><span class="sxs-lookup"><span data-stu-id="e0d48-145">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="f2d1c-145">プロトコル</span><span class="sxs-lookup"><span data-stu-id="f2d1c-145">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_supportedtimezones_default"
@@ -70,27 +71,27 @@ GET /users/{id|userPrincipalName}/outlook/supportedTimeZones(TimeZoneStandard=mi
 ```http
 GET https://graph.microsoft.com/beta/me/outlook/supportedTimeZones
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="e0d48-146">C#</span><span class="sxs-lookup"><span data-stu-id="e0d48-146">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="f2d1c-146">C#</span><span class="sxs-lookup"><span data-stu-id="f2d1c-146">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-supportedtimezones-default-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e0d48-147">Javascript</span><span class="sxs-lookup"><span data-stu-id="e0d48-147">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f2d1c-147">Javascript</span><span class="sxs-lookup"><span data-stu-id="f2d1c-147">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-supportedtimezones-default-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="e0d48-148">目的-C</span><span class="sxs-lookup"><span data-stu-id="e0d48-148">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="f2d1c-148">目的-C</span><span class="sxs-lookup"><span data-stu-id="f2d1c-148">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-supportedtimezones-default-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="e0d48-149">Java</span><span class="sxs-lookup"><span data-stu-id="e0d48-149">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="f2d1c-149">Java</span><span class="sxs-lookup"><span data-stu-id="f2d1c-149">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-supportedtimezones-default-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response-1"></a><span data-ttu-id="e0d48-150">応答 1</span><span class="sxs-lookup"><span data-stu-id="e0d48-150">Response 1</span></span>
-<span data-ttu-id="e0d48-151">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="e0d48-151">Here is an example of the response.</span></span> 
+##### <a name="response-1"></a><span data-ttu-id="f2d1c-150">応答 1</span><span class="sxs-lookup"><span data-stu-id="f2d1c-150">Response 1</span></span>
+<span data-ttu-id="f2d1c-151">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="f2d1c-151">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "name": "user_supportedtimezones_default",
@@ -125,11 +126,11 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request-2"></a><span data-ttu-id="e0d48-152">要求 2</span><span class="sxs-lookup"><span data-stu-id="e0d48-152">Request 2</span></span>
-<span data-ttu-id="e0d48-153">次の例では、`TimeZoneStandard` パラメーターに `Iana` を指定して、IANA 形式で表記されたサポート対象タイム ゾーンのリストを取得します。</span><span class="sxs-lookup"><span data-stu-id="e0d48-153">The following example specifies `Iana` for the `TimeZoneStandard` parameter, and gets the list of supported time zones represented in IANA format.</span></span> 
+##### <a name="request-2"></a><span data-ttu-id="f2d1c-152">要求 2</span><span class="sxs-lookup"><span data-stu-id="f2d1c-152">Request 2</span></span>
+<span data-ttu-id="f2d1c-153">次の例では、`TimeZoneStandard` パラメーターに `Iana` を指定して、IANA 形式で表記されたサポート対象タイム ゾーンのリストを取得します。</span><span class="sxs-lookup"><span data-stu-id="f2d1c-153">The following example specifies `Iana` for the `TimeZoneStandard` parameter, and gets the list of supported time zones represented in IANA format.</span></span> 
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="e0d48-154">プロトコル</span><span class="sxs-lookup"><span data-stu-id="e0d48-154">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="f2d1c-154">プロトコル</span><span class="sxs-lookup"><span data-stu-id="f2d1c-154">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_supportedtimezones_iana"
@@ -138,27 +139,27 @@ Content-type: application/json
 ```http
 GET https://graph.microsoft.com/beta/me/outlook/supportedTimeZones(TimeZoneStandard=microsoft.graph.timeZoneStandard'Iana')
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="e0d48-155">C#</span><span class="sxs-lookup"><span data-stu-id="e0d48-155">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="f2d1c-155">C#</span><span class="sxs-lookup"><span data-stu-id="f2d1c-155">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-supportedtimezones-iana-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e0d48-156">Javascript</span><span class="sxs-lookup"><span data-stu-id="e0d48-156">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f2d1c-156">Javascript</span><span class="sxs-lookup"><span data-stu-id="f2d1c-156">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-supportedtimezones-iana-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="e0d48-157">目的-C</span><span class="sxs-lookup"><span data-stu-id="e0d48-157">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="f2d1c-157">目的-C</span><span class="sxs-lookup"><span data-stu-id="f2d1c-157">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-supportedtimezones-iana-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="e0d48-158">Java</span><span class="sxs-lookup"><span data-stu-id="e0d48-158">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="f2d1c-158">Java</span><span class="sxs-lookup"><span data-stu-id="f2d1c-158">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-supportedtimezones-iana-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response-2"></a><span data-ttu-id="e0d48-159">応答 2</span><span class="sxs-lookup"><span data-stu-id="e0d48-159">Response 2</span></span>
-<span data-ttu-id="e0d48-160">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="e0d48-160">Here is an example of the response.</span></span> 
+##### <a name="response-2"></a><span data-ttu-id="f2d1c-159">応答 2</span><span class="sxs-lookup"><span data-stu-id="f2d1c-159">Response 2</span></span>
+<span data-ttu-id="f2d1c-160">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="f2d1c-160">Here is an example of the response.</span></span> 
 
 <!-- {
   "blockType": "response",
