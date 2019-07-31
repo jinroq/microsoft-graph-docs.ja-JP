@@ -4,12 +4,13 @@ description: deviceEnrollmentLimitConfiguration オブジェクトのプロパ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5b8dbadcacb8d791c35a14b3714d1f7f0c3bcfac
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 806452c46f6a9c01c8fa418a55e19b5bb0040fc1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34981252"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35994083"
 ---
 # <a name="update-deviceenrollmentlimitconfiguration"></a>deviceEnrollmentLimitConfiguration の更新
 

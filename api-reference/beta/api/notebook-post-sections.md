@@ -4,12 +4,13 @@ description: 指定されたノートブックに新しいセクションを作�
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 35ff9b5ea2e070019b803ac282864ae6058fa2a6
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: f2c342f12de66e76dec7e308c0741fdf3ba0ee92
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35879017"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35988973"
 ---
 # <a name="create-section"></a>セクションを作成する
 

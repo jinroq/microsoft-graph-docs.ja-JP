@@ -4,12 +4,13 @@ description: managedAppRegistration オブジェクトのプロパティとリ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cfb036a0fad602d06a7f0a201b9339aa45ec560e
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 6bf7855fa0106424497171a144f93d4e986921bf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34987209"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35994608"
 ---
 # <a name="list-managedappregistrations"></a>managedAppRegistrations のリスト
 

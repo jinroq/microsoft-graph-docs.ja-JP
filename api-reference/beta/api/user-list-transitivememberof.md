@@ -4,12 +4,13 @@ description: ユーザーがメンバーになっているグループ、ディ�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b3b543556a690cf800eb8656f078eb3b3001fa7e
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: d9ae849cab9e35fc536fd9ca689229d3dd092779
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35867052"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987552"
 ---
 # <a name="list-user-transitive-memberof"></a>ユーザー推移的な memberOf を一覧表示する
 

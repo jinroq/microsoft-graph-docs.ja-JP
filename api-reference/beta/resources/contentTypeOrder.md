@@ -1,15 +1,17 @@
 ---
 author: daspek
-ms.author: dspektor
+description: contentTypeOrder リソースは、コンテンツ タイプが選択 UI に表示される順序を指定します。
 ms.date: 09/13/2017
 title: ContentTypeOrder
 localization_priority: Normal
-ms.openlocfilehash: 32cca632933cf2b0fad1f8e9149973d95b4322d3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 464ac5978f505e74ca99226080c35574917fd550
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341233"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973206"
 ---
 # <a name="contenttypeorder-resource-type"></a>ContentTypeOrder リソースの種類
 

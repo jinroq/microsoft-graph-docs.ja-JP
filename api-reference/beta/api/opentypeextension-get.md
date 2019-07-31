@@ -3,12 +3,14 @@ title: オープン拡張機能を取得する
 description: 名前または完全修飾名で識別されたオープン拡張機能 (openTypeExtension オブジェクト) を取得します。
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: ec0e75b9c72640888e27c78fa04c5c539237b58b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+ms.openlocfilehash: beaf6064ec6b175b09a648ba6b938089ed2d650c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35878232"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35983783"
 ---
 # <a name="get-open-extension"></a>オープン拡張機能を取得する
 

@@ -4,12 +4,13 @@ description: 管理者の同意情報。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a25dd46c8f1f8efdc3149472dae88910774e44a9
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 7f13e8abbaf20f57e94923918a4e5c2bb5bcf9b9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34983373"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35968611"
 ---
 # <a name="adminconsent-resource-type"></a>adminConsent リソースの種類
 

@@ -4,12 +4,13 @@ description: ノートブックオブジェクトのプロパティとリレー�
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 304f5177930a6cb50f0e9b478f263c0d832c522b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: dddc5086e4e7a96bff02091ecac0adf280c36f79
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35879141"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992732"
 ---
 # <a name="get-notebook"></a>ノートブックを取得する
 

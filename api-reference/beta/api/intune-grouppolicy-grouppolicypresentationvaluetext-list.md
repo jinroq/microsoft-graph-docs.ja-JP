@@ -4,12 +4,13 @@ description: GroupPolicyPresentationValueText オブジェクトのプロパテ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2bd3e417cb2efc6b7f52a3c309b7bec3b5b3fa76
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 538ade47d93bd85bdf827f601f4cb202ecffa63e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34985697"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35995084"
 ---
 # <a name="list-grouppolicypresentationvaluetexts"></a>リスト groupPolicyPresentationValueTexts
 

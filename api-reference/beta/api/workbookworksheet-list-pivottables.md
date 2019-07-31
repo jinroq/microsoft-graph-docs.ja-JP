@@ -4,12 +4,13 @@ description: workbookpivottable オブジェクトの一覧を取得します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 9b2d7b298d7ade35e8d89a926a009477964fa451
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 2132766c43538f50ce2eb9f177581e9964d391e3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35866290"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35995854"
 ---
 # <a name="list-pivottables"></a>pivotTables を一覧表示する
 

@@ -4,12 +4,13 @@ description: この API を使用して、outlookTask に添付ファイルを�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: d48b04d6c5882cc5b90eaec2138f1070f8b4db7b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 3b3fd460aeebbe57f5b2e26489328d61fa43bb44
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35877679"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35983749"
 ---
 # <a name="create-attachment"></a>添付ファイルを作成する
 

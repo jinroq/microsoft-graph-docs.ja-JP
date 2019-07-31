@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: SharePoint は、リスト アイテムの履歴を保持するように構成できます。
 ms.date: 09/10/2017
 title: 旧バージョンの SharePoint リスト レコードを取得する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 843c2f501217f7ce1d7923835bf0a7b44a010950
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: cf3d0a88f250a954e5143c1000bcf4aaf61c0c1e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333497"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993068"
 ---
 # <a name="listing-versions-of-a-listitem-preview"></a>ListItem のバージョンを一覧表示する (プレビュー)
 

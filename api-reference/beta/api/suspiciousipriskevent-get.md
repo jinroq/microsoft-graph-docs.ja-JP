@@ -1,19 +1,22 @@
 ---
 title: suspiciousIpRiskEvent を取得する
-description: suspiciousipriskevent オブジェクトのプロパティとリレーションシップを取得します。
+description: Suspiciousipriskevent オブジェクトのプロパティとリレーションシップを取得します。
 localization_priority: Normal
-ms.openlocfilehash: 8e3e069f18553575a5d69a5fb17c2c289f44fe82
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 7f874b4f5bc4e20d162d56a757596789b581ed1e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335737"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991108"
 ---
 # <a name="get-suspiciousipriskevent"></a>suspiciousIpRiskEvent を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-suspiciousipriskevent オブジェクトのプロパティとリレーションシップを取得します。
+Suspiciousipriskevent オブジェクトのプロパティとリレーションシップを取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 

@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: 共有アクセス許可のプロパティを更新するには、アクセス許可リソースのパッチを適用します。
 ms.date: 09/10/2017
 title: 共有アクセス許可の変更
 localization_priority: Normal
-ms.openlocfilehash: f2bc5954380836af12382ec02f4d04f9fa4c29c3
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+ms.openlocfilehash: ef46b64db30c6d8ceaf65a2f4a7f4c935834b9b0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35876994"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35983496"
 ---
 # <a name="update-sharing-permission"></a>共有アクセス許可を更新する
 

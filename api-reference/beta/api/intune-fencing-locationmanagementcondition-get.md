@@ -4,12 +4,13 @@ description: LocationManagementCondition オブジェクトのプロパティと
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 608e15cfafd61b838f2a799f8ae695b17652a2d7
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 25c8b0dc0c685f022b652b13bf0c0625d46b7b8f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34983912"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35990366"
 ---
 # <a name="get-locationmanagementcondition"></a>LocationManagementCondition の取得
 

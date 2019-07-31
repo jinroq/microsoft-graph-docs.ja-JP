@@ -1,19 +1,22 @@
 ---
 title: リスト leakedCredentialsRiskEvents
-description: leakedcredentialsriskevent オブジェクトのリストを取得します。
+description: Leakedcredentialsriskevent オブジェクトのリストを取得します。
 localization_priority: Normal
-ms.openlocfilehash: 4846c9f27ded5beee29f8cfb3212551613190092
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+author: ''
+ms.prod: ''
+ms.openlocfilehash: 9345d64f0015e58cb921459aaf6c5b40bd147abd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33338827"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993166"
 ---
 # <a name="list-leakedcredentialsriskevents"></a>リスト leakedCredentialsRiskEvents
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-leakedcredentialsriskevent オブジェクトのリストを取得します。
+Leakedcredentialsriskevent オブジェクトのリストを取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 

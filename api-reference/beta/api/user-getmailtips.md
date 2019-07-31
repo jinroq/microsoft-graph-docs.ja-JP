@@ -4,12 +4,13 @@ description: サインインしているユーザーが使用できる1人以上
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0140d7179432a7d04a7d70f0f9721d4ef5533501
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 9c623429eda707f639e4d6e039542b3dcbe77c9f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35867640"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987727"
 ---
 # <a name="user-getmailtips"></a>ユーザー: getMailTips ヒント
 

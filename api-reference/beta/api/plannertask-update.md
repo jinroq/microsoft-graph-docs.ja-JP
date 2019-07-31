@@ -4,12 +4,13 @@ description: '**plannertask** オブジェクトのプロパティを更新し�
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 5dd7ac6e263d0578f99af7cdb89e9f1e71c9b36b
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: 9734e7a8cfcf70afd67fea8b0989abd47a9d943c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35448355"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992214"
 ---
 # <a name="update-plannertask"></a>Update plannertask
 

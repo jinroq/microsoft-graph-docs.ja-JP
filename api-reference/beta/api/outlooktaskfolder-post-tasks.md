@@ -1,17 +1,18 @@
 ---
-title: outlooktask の作成
+title: OutlookTask の作成
 description: 指定したタスクフォルダーに Outlook のタスクを作成します。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 050d45319f822531c951a665788f1c1669406532
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: a6e26dc9640baaf5c6f7a81bda29ba5b1c035a51
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337913"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35988693"
 ---
-# <a name="create-outlooktask"></a>outlooktask の作成
+# <a name="create-outlooktask"></a>OutlookTask の作成
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,7 +44,7 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/task
 | 優先: outlook.timezone | 応答の時間プロパティのタイムゾーンを指定します。このヘッダーが指定されていない場合は、UTC になります。 省略可能。|
 
 ## <a name="request-body"></a>要求本文
-要求本文で、 [outlooktask](../resources/outlooktask.md)オブジェクトの JSON 表記を指定します。
+要求本文で、 [Outlooktask](../resources/outlooktask.md)オブジェクトの JSON 表記を指定します。
 
 ## <a name="response"></a>応答
 
@@ -73,11 +74,11 @@ Content-length: 376
   }
 }
 ```
-要求本文で、 [outlooktask](../resources/outlooktask.md)オブジェクトの JSON 表記を指定します。
+要求本文で、 [Outlooktask](../resources/outlooktask.md)オブジェクトの JSON 表記を指定します。
 ##### <a name="response"></a>応答
 POST メソッドは、要求本文の時間部分を無視し、時間が常に、指定されたタイム ゾーン (PST) の午前 0 時であると想定します。既定では、POST メソッドはすべての日付関連プロパティを変換し、応答ではそれらを UTC で表示します。
 
-注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。
+注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -4,12 +4,13 @@ description: Orgcontact へオブジェクトのプロパティを更新しま�
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 99cc8b77dcb3fcbea9e1e22bd4a04e7f68b8f3c4
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 6d80c06b061da1471654e01593611127252cb5e0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35877833"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35995532"
 ---
 # <a name="update-orgcontact"></a>Orgcontact への更新
 

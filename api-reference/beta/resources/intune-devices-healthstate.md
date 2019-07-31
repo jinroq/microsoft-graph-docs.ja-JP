@@ -4,12 +4,13 @@ description: Windows management アプリの正常性の状態を示します。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6bef3f1e2414ddfd17d79346fb7bcaaf5acf703e
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 6bb14eaa531f67bbaa1c812ce143282cc038af6a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34995204"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35968352"
 ---
 # <a name="healthstate-enum-type"></a>healthState 列挙型
 

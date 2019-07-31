@@ -1,15 +1,16 @@
 ---
 title: signIns を一覧表示する
+doc_type: apiPageType
 description: ディレクトリ (テナント) のアクティビティ (ベータ版) を監査するための、Microsoft Graph API (REST) の signIn リソース (エンティティ) を一覧表示する方法について説明します。
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 658d4abbbdeaff1f6f6de7c01756d821f4d4433b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: ef799169f8a22b99f4340ed4d78e8314b18fb9ed
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35869747"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991332"
 ---
 # <a name="list-signins"></a>signIn を一覧表示する
 
