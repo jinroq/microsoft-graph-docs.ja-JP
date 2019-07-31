@@ -4,65 +4,66 @@ description: 学校オブジェクトのプロパティを更新します。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 7688e57b38ff6788425a217e76afdec146944a22
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: acfb65d782d514520640c0a75ef87f7ddfadd85a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35860191"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955139"
 ---
-# <a name="update-educationschool-properties"></a><span data-ttu-id="3267f-103">educationschool プロパティを更新する</span><span class="sxs-lookup"><span data-stu-id="3267f-103">Update educationschool properties</span></span>
+# <a name="update-educationschool-properties"></a><span data-ttu-id="49d20-103">educationschool プロパティを更新する</span><span class="sxs-lookup"><span data-stu-id="49d20-103">Update educationschool properties</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="3267f-104">学校オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="3267f-104">Update the properties of a school object.</span></span>
+<span data-ttu-id="49d20-104">学校オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="49d20-104">Update the properties of a school object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="3267f-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="3267f-105">Permissions</span></span>
-<span data-ttu-id="3267f-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="3267f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="49d20-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="49d20-105">Permissions</span></span>
+<span data-ttu-id="49d20-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="49d20-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="3267f-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="3267f-108">Permission type</span></span>      | <span data-ttu-id="3267f-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="3267f-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="49d20-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="49d20-108">Permission type</span></span>      | <span data-ttu-id="49d20-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="49d20-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="3267f-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="3267f-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="3267f-111">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="3267f-111">Not supported.</span></span>  |
-|<span data-ttu-id="3267f-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="3267f-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="3267f-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="3267f-113">Not supported.</span></span>  |
-|<span data-ttu-id="3267f-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="3267f-114">Application</span></span> | <span data-ttu-id="3267f-115">EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3267f-115">EduRoster.ReadWrite.All</span></span> |
+|<span data-ttu-id="49d20-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="49d20-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="49d20-111">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="49d20-111">Not supported.</span></span>  |
+|<span data-ttu-id="49d20-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="49d20-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="49d20-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="49d20-113">Not supported.</span></span>  |
+|<span data-ttu-id="49d20-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="49d20-114">Application</span></span> | <span data-ttu-id="49d20-115">EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="49d20-115">EduRoster.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="3267f-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="3267f-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="49d20-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="49d20-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /education/schools/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="3267f-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="3267f-117">Request headers</span></span>
-| <span data-ttu-id="3267f-118">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="3267f-118">Header</span></span>       | <span data-ttu-id="3267f-119">値</span><span class="sxs-lookup"><span data-stu-id="3267f-119">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="49d20-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="49d20-117">Request headers</span></span>
+| <span data-ttu-id="49d20-118">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="49d20-118">Header</span></span>       | <span data-ttu-id="49d20-119">値</span><span class="sxs-lookup"><span data-stu-id="49d20-119">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="3267f-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="3267f-120">Authorization</span></span>  | <span data-ttu-id="3267f-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="3267f-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="3267f-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="3267f-123">Content-Type</span></span>  | <span data-ttu-id="3267f-124">application/json</span><span class="sxs-lookup"><span data-stu-id="3267f-124">application/json</span></span>  |
+| <span data-ttu-id="49d20-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="49d20-120">Authorization</span></span>  | <span data-ttu-id="49d20-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="49d20-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="49d20-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="49d20-123">Content-Type</span></span>  | <span data-ttu-id="49d20-124">application/json</span><span class="sxs-lookup"><span data-stu-id="49d20-124">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="3267f-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="3267f-125">Request body</span></span>
-<span data-ttu-id="3267f-126">要求本文で、更新する関連フィールドの値を指定します。</span><span class="sxs-lookup"><span data-stu-id="3267f-126">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="3267f-127">要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。</span><span class="sxs-lookup"><span data-stu-id="3267f-127">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="3267f-128">最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="3267f-128">For best performance, don't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="49d20-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="49d20-125">Request body</span></span>
+<span data-ttu-id="49d20-126">要求本文で、更新する関連フィールドの値を指定します。</span><span class="sxs-lookup"><span data-stu-id="49d20-126">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="49d20-127">要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。</span><span class="sxs-lookup"><span data-stu-id="49d20-127">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="49d20-128">最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="49d20-128">For best performance, don't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="3267f-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="3267f-129">Property</span></span>     | <span data-ttu-id="3267f-130">型</span><span class="sxs-lookup"><span data-stu-id="3267f-130">Type</span></span>   |<span data-ttu-id="3267f-131">説明</span><span class="sxs-lookup"><span data-stu-id="3267f-131">Description</span></span>|
+| <span data-ttu-id="49d20-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="49d20-129">Property</span></span>     | <span data-ttu-id="49d20-130">型</span><span class="sxs-lookup"><span data-stu-id="49d20-130">Type</span></span>   |<span data-ttu-id="49d20-131">説明</span><span class="sxs-lookup"><span data-stu-id="49d20-131">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="3267f-132">displayName</span><span class="sxs-lookup"><span data-stu-id="3267f-132">displayName</span></span>| <span data-ttu-id="3267f-133">String</span><span class="sxs-lookup"><span data-stu-id="3267f-133">String</span></span>| <span data-ttu-id="3267f-134">学校の表示名</span><span class="sxs-lookup"><span data-stu-id="3267f-134">Display name of the school</span></span>| 
-|<span data-ttu-id="3267f-135">description</span><span class="sxs-lookup"><span data-stu-id="3267f-135">description</span></span>| <span data-ttu-id="3267f-136">String</span><span class="sxs-lookup"><span data-stu-id="3267f-136">String</span></span> | <span data-ttu-id="3267f-137">学校の説明</span><span class="sxs-lookup"><span data-stu-id="3267f-137">Description of the school</span></span>| 
-|<span data-ttu-id="3267f-138">principalEmail</span><span class="sxs-lookup"><span data-stu-id="3267f-138">principalEmail</span></span>| <span data-ttu-id="3267f-139">String</span><span class="sxs-lookup"><span data-stu-id="3267f-139">String</span></span>| <span data-ttu-id="3267f-140">プリンシパルの電子メール アドレス</span><span class="sxs-lookup"><span data-stu-id="3267f-140">Email address of the principal</span></span>|
-|<span data-ttu-id="3267f-141">principalName</span><span class="sxs-lookup"><span data-stu-id="3267f-141">principalName</span></span>| <span data-ttu-id="3267f-142">String</span><span class="sxs-lookup"><span data-stu-id="3267f-142">String</span></span> | <span data-ttu-id="3267f-143">プリンシパルの名前</span><span class="sxs-lookup"><span data-stu-id="3267f-143">Name of the principal</span></span>|
-|<span data-ttu-id="3267f-144">externalPrincipalId</span><span class="sxs-lookup"><span data-stu-id="3267f-144">externalPrincipalId</span></span>| <span data-ttu-id="3267f-145">String</span><span class="sxs-lookup"><span data-stu-id="3267f-145">String</span></span> | <span data-ttu-id="3267f-146">同期システム内のプリンシパルの ID。</span><span class="sxs-lookup"><span data-stu-id="3267f-146">Id of principal in syncing system.</span></span> |
-|<span data-ttu-id="3267f-147">highestGrade</span><span class="sxs-lookup"><span data-stu-id="3267f-147">highestGrade</span></span>|<span data-ttu-id="3267f-148">String</span><span class="sxs-lookup"><span data-stu-id="3267f-148">String</span></span>| <span data-ttu-id="3267f-149">授業を受けている最高学年。</span><span class="sxs-lookup"><span data-stu-id="3267f-149">Highest grade taught.</span></span> |
-|<span data-ttu-id="3267f-150">lowestGrade</span><span class="sxs-lookup"><span data-stu-id="3267f-150">lowestGrade</span></span>|<span data-ttu-id="3267f-151">String</span><span class="sxs-lookup"><span data-stu-id="3267f-151">String</span></span>| <span data-ttu-id="3267f-152">授業を受けている最低学年。</span><span class="sxs-lookup"><span data-stu-id="3267f-152">Lowest grade taught.</span></span> |
-|<span data-ttu-id="3267f-153">schoolNumber</span><span class="sxs-lookup"><span data-stu-id="3267f-153">schoolNumber</span></span>|<span data-ttu-id="3267f-154">String</span><span class="sxs-lookup"><span data-stu-id="3267f-154">String</span></span>| <span data-ttu-id="3267f-155">学校番号。</span><span class="sxs-lookup"><span data-stu-id="3267f-155">School Number.</span></span>|
-|<span data-ttu-id="3267f-156">externalId</span><span class="sxs-lookup"><span data-stu-id="3267f-156">externalId</span></span>|<span data-ttu-id="3267f-157">String</span><span class="sxs-lookup"><span data-stu-id="3267f-157">String</span></span>| <span data-ttu-id="3267f-158">同期システム内の学校の ID。</span><span class="sxs-lookup"><span data-stu-id="3267f-158">Id of school in syncing system.</span></span> |
-|<span data-ttu-id="3267f-159">phone</span><span class="sxs-lookup"><span data-stu-id="3267f-159">phone</span></span>|<span data-ttu-id="3267f-160">String</span><span class="sxs-lookup"><span data-stu-id="3267f-160">String</span></span>| <span data-ttu-id="3267f-161">学校の電話番号。</span><span class="sxs-lookup"><span data-stu-id="3267f-161">Phone number of school.</span></span> |
-|<span data-ttu-id="3267f-162">fax</span><span class="sxs-lookup"><span data-stu-id="3267f-162">fax</span></span>|<span data-ttu-id="3267f-163">String</span><span class="sxs-lookup"><span data-stu-id="3267f-163">String</span></span>| <span data-ttu-id="3267f-164">学校の FAX 番号。</span><span class="sxs-lookup"><span data-stu-id="3267f-164">Fax number of school.</span></span> |
-|<span data-ttu-id="3267f-165">address</span><span class="sxs-lookup"><span data-stu-id="3267f-165">address</span></span>|[<span data-ttu-id="3267f-166">physicalAddress</span><span class="sxs-lookup"><span data-stu-id="3267f-166">physicalAddress</span></span>](../resources/physicaladdress.md)| <span data-ttu-id="3267f-167">学校のアドレス。</span><span class="sxs-lookup"><span data-stu-id="3267f-167">Address of the School.</span></span>|
-|<span data-ttu-id="3267f-168">createdBy</span><span class="sxs-lookup"><span data-stu-id="3267f-168">createdBy</span></span>|[<span data-ttu-id="3267f-169">identitySet</span><span class="sxs-lookup"><span data-stu-id="3267f-169">identitySet</span></span>](../resources/identityset.md)|<span data-ttu-id="3267f-170">学校を作成したエンティティ。</span><span class="sxs-lookup"><span data-stu-id="3267f-170">Entity who created the school.</span></span>|
+|<span data-ttu-id="49d20-132">displayName</span><span class="sxs-lookup"><span data-stu-id="49d20-132">displayName</span></span>| <span data-ttu-id="49d20-133">String</span><span class="sxs-lookup"><span data-stu-id="49d20-133">String</span></span>| <span data-ttu-id="49d20-134">学校の表示名</span><span class="sxs-lookup"><span data-stu-id="49d20-134">Display name of the school</span></span>| 
+|<span data-ttu-id="49d20-135">description</span><span class="sxs-lookup"><span data-stu-id="49d20-135">description</span></span>| <span data-ttu-id="49d20-136">String</span><span class="sxs-lookup"><span data-stu-id="49d20-136">String</span></span> | <span data-ttu-id="49d20-137">学校の説明</span><span class="sxs-lookup"><span data-stu-id="49d20-137">Description of the school</span></span>| 
+|<span data-ttu-id="49d20-138">principalEmail</span><span class="sxs-lookup"><span data-stu-id="49d20-138">principalEmail</span></span>| <span data-ttu-id="49d20-139">String</span><span class="sxs-lookup"><span data-stu-id="49d20-139">String</span></span>| <span data-ttu-id="49d20-140">プリンシパルの電子メール アドレス</span><span class="sxs-lookup"><span data-stu-id="49d20-140">Email address of the principal</span></span>|
+|<span data-ttu-id="49d20-141">principalName</span><span class="sxs-lookup"><span data-stu-id="49d20-141">principalName</span></span>| <span data-ttu-id="49d20-142">String</span><span class="sxs-lookup"><span data-stu-id="49d20-142">String</span></span> | <span data-ttu-id="49d20-143">プリンシパルの名前</span><span class="sxs-lookup"><span data-stu-id="49d20-143">Name of the principal</span></span>|
+|<span data-ttu-id="49d20-144">externalPrincipalId</span><span class="sxs-lookup"><span data-stu-id="49d20-144">externalPrincipalId</span></span>| <span data-ttu-id="49d20-145">String</span><span class="sxs-lookup"><span data-stu-id="49d20-145">String</span></span> | <span data-ttu-id="49d20-146">同期システム内のプリンシパルの ID。</span><span class="sxs-lookup"><span data-stu-id="49d20-146">Id of principal in syncing system.</span></span> |
+|<span data-ttu-id="49d20-147">highestGrade</span><span class="sxs-lookup"><span data-stu-id="49d20-147">highestGrade</span></span>|<span data-ttu-id="49d20-148">String</span><span class="sxs-lookup"><span data-stu-id="49d20-148">String</span></span>| <span data-ttu-id="49d20-149">授業を受けている最高学年。</span><span class="sxs-lookup"><span data-stu-id="49d20-149">Highest grade taught.</span></span> |
+|<span data-ttu-id="49d20-150">lowestGrade</span><span class="sxs-lookup"><span data-stu-id="49d20-150">lowestGrade</span></span>|<span data-ttu-id="49d20-151">String</span><span class="sxs-lookup"><span data-stu-id="49d20-151">String</span></span>| <span data-ttu-id="49d20-152">授業を受けている最低学年。</span><span class="sxs-lookup"><span data-stu-id="49d20-152">Lowest grade taught.</span></span> |
+|<span data-ttu-id="49d20-153">schoolNumber</span><span class="sxs-lookup"><span data-stu-id="49d20-153">schoolNumber</span></span>|<span data-ttu-id="49d20-154">String</span><span class="sxs-lookup"><span data-stu-id="49d20-154">String</span></span>| <span data-ttu-id="49d20-155">学校番号。</span><span class="sxs-lookup"><span data-stu-id="49d20-155">School Number.</span></span>|
+|<span data-ttu-id="49d20-156">externalId</span><span class="sxs-lookup"><span data-stu-id="49d20-156">externalId</span></span>|<span data-ttu-id="49d20-157">String</span><span class="sxs-lookup"><span data-stu-id="49d20-157">String</span></span>| <span data-ttu-id="49d20-158">同期システム内の学校の ID。</span><span class="sxs-lookup"><span data-stu-id="49d20-158">Id of school in syncing system.</span></span> |
+|<span data-ttu-id="49d20-159">phone</span><span class="sxs-lookup"><span data-stu-id="49d20-159">phone</span></span>|<span data-ttu-id="49d20-160">String</span><span class="sxs-lookup"><span data-stu-id="49d20-160">String</span></span>| <span data-ttu-id="49d20-161">学校の電話番号。</span><span class="sxs-lookup"><span data-stu-id="49d20-161">Phone number of school.</span></span> |
+|<span data-ttu-id="49d20-162">fax</span><span class="sxs-lookup"><span data-stu-id="49d20-162">fax</span></span>|<span data-ttu-id="49d20-163">String</span><span class="sxs-lookup"><span data-stu-id="49d20-163">String</span></span>| <span data-ttu-id="49d20-164">学校の FAX 番号。</span><span class="sxs-lookup"><span data-stu-id="49d20-164">Fax number of school.</span></span> |
+|<span data-ttu-id="49d20-165">address</span><span class="sxs-lookup"><span data-stu-id="49d20-165">address</span></span>|[<span data-ttu-id="49d20-166">physicalAddress</span><span class="sxs-lookup"><span data-stu-id="49d20-166">physicalAddress</span></span>](../resources/physicaladdress.md)| <span data-ttu-id="49d20-167">学校のアドレス。</span><span class="sxs-lookup"><span data-stu-id="49d20-167">Address of the School.</span></span>|
+|<span data-ttu-id="49d20-168">createdBy</span><span class="sxs-lookup"><span data-stu-id="49d20-168">createdBy</span></span>|[<span data-ttu-id="49d20-169">identitySet</span><span class="sxs-lookup"><span data-stu-id="49d20-169">identitySet</span></span>](../resources/identityset.md)|<span data-ttu-id="49d20-170">学校を作成したエンティティ。</span><span class="sxs-lookup"><span data-stu-id="49d20-170">Entity who created the school.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="3267f-171">応答</span><span class="sxs-lookup"><span data-stu-id="3267f-171">Response</span></span>
-<span data-ttu-id="3267f-172">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で更新された [educationSchool](../resources/educationschool.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="3267f-172">If successful, this method returns a `200 OK` response code and an updated [educationSchool](../resources/educationschool.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="3267f-173">例</span><span class="sxs-lookup"><span data-stu-id="3267f-173">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="3267f-174">要求</span><span class="sxs-lookup"><span data-stu-id="3267f-174">Request</span></span>
-<span data-ttu-id="3267f-175">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="3267f-175">The following is an example of the request.</span></span>
+## <a name="response"></a><span data-ttu-id="49d20-171">応答</span><span class="sxs-lookup"><span data-stu-id="49d20-171">Response</span></span>
+<span data-ttu-id="49d20-172">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で更新された [educationSchool](../resources/educationschool.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="49d20-172">If successful, this method returns a `200 OK` response code and an updated [educationSchool](../resources/educationschool.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="49d20-173">例</span><span class="sxs-lookup"><span data-stu-id="49d20-173">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="49d20-174">要求</span><span class="sxs-lookup"><span data-stu-id="49d20-174">Request</span></span>
+<span data-ttu-id="49d20-175">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="49d20-175">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="3267f-176">プロトコル</span><span class="sxs-lookup"><span data-stu-id="3267f-176">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="49d20-176">プロトコル</span><span class="sxs-lookup"><span data-stu-id="49d20-176">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_educationschool"
@@ -77,28 +78,28 @@ Content-length: 292
   "description": "Magnate school for the arts. Los Angeles School District"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="3267f-177">C#</span><span class="sxs-lookup"><span data-stu-id="3267f-177">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="49d20-177">C#</span><span class="sxs-lookup"><span data-stu-id="49d20-177">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-educationschool-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="3267f-178">Javascript</span><span class="sxs-lookup"><span data-stu-id="3267f-178">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="49d20-178">Javascript</span><span class="sxs-lookup"><span data-stu-id="49d20-178">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationschool-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="3267f-179">目的-C</span><span class="sxs-lookup"><span data-stu-id="3267f-179">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="49d20-179">目的-C</span><span class="sxs-lookup"><span data-stu-id="49d20-179">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationschool-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="3267f-180">Java</span><span class="sxs-lookup"><span data-stu-id="3267f-180">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="49d20-180">Java</span><span class="sxs-lookup"><span data-stu-id="49d20-180">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationschool-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="3267f-181">応答</span><span class="sxs-lookup"><span data-stu-id="3267f-181">Response</span></span>
-<span data-ttu-id="3267f-182">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="3267f-182">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="49d20-181">応答</span><span class="sxs-lookup"><span data-stu-id="49d20-181">Response</span></span>
+<span data-ttu-id="49d20-182">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="49d20-182">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="3267f-p104">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="3267f-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="49d20-p104">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="49d20-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

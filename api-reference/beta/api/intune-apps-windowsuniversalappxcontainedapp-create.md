@@ -4,31 +4,32 @@ description: 新しい windowsUniversalAppXContainedApp オブジェクトを作
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4294a45fabb46781f1f4483f2607a9d2ad5a8835
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: a6c4aba276a3436ace62de1643c2e896a68bdea1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34972705"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35959622"
 ---
-# <a name="create-windowsuniversalappxcontainedapp"></a><span data-ttu-id="dbba4-103">WindowsUniversalAppXContainedApp を作成する</span><span class="sxs-lookup"><span data-stu-id="dbba4-103">Create windowsUniversalAppXContainedApp</span></span>
+# <a name="create-windowsuniversalappxcontainedapp"></a><span data-ttu-id="0006e-103">WindowsUniversalAppXContainedApp を作成する</span><span class="sxs-lookup"><span data-stu-id="0006e-103">Create windowsUniversalAppXContainedApp</span></span>
 
-> <span data-ttu-id="dbba4-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="dbba4-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="0006e-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="0006e-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="dbba4-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="dbba4-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="0006e-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="0006e-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="dbba4-106">新しい[windowsUniversalAppXContainedApp](../resources/intune-apps-windowsuniversalappxcontainedapp.md)オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="dbba4-106">Create a new [windowsUniversalAppXContainedApp](../resources/intune-apps-windowsuniversalappxcontainedapp.md) object.</span></span>
+<span data-ttu-id="0006e-106">新しい[windowsUniversalAppXContainedApp](../resources/intune-apps-windowsuniversalappxcontainedapp.md)オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="0006e-106">Create a new [windowsUniversalAppXContainedApp](../resources/intune-apps-windowsuniversalappxcontainedapp.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="dbba4-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="dbba4-107">Prerequisites</span></span>
-<span data-ttu-id="dbba4-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="dbba4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="0006e-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="0006e-107">Prerequisites</span></span>
+<span data-ttu-id="0006e-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0006e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="dbba4-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="dbba4-110">Permission type</span></span>|<span data-ttu-id="dbba4-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="dbba4-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="0006e-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="0006e-110">Permission type</span></span>|<span data-ttu-id="0006e-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="0006e-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="dbba4-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="dbba4-112">Delegated (work or school account)</span></span>|<span data-ttu-id="dbba4-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dbba4-113">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="dbba4-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="dbba4-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="dbba4-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="dbba4-115">Not supported.</span></span>|
-|<span data-ttu-id="dbba4-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="dbba4-116">Application</span></span>|<span data-ttu-id="dbba4-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="dbba4-117">Not supported.</span></span>|
+|<span data-ttu-id="0006e-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="0006e-112">Delegated (work or school account)</span></span>|<span data-ttu-id="0006e-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0006e-113">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="0006e-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="0006e-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="0006e-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="0006e-115">Not supported.</span></span>|
+|<span data-ttu-id="0006e-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="0006e-116">Application</span></span>|<span data-ttu-id="0006e-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="0006e-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="dbba4-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="dbba4-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0006e-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="0006e-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -39,31 +40,31 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.microsoftStor
 POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUniversalAppX/committedContainedApps
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="dbba4-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="dbba4-119">Request headers</span></span>
-|<span data-ttu-id="dbba4-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="dbba4-120">Header</span></span>|<span data-ttu-id="dbba4-121">値</span><span class="sxs-lookup"><span data-stu-id="dbba4-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="0006e-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="0006e-119">Request headers</span></span>
+|<span data-ttu-id="0006e-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="0006e-120">Header</span></span>|<span data-ttu-id="0006e-121">値</span><span class="sxs-lookup"><span data-stu-id="0006e-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="dbba4-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="dbba4-122">Authorization</span></span>|<span data-ttu-id="dbba4-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="dbba4-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="dbba4-124">承諾</span><span class="sxs-lookup"><span data-stu-id="dbba4-124">Accept</span></span>|<span data-ttu-id="dbba4-125">application/json</span><span class="sxs-lookup"><span data-stu-id="dbba4-125">application/json</span></span>|
+|<span data-ttu-id="0006e-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="0006e-122">Authorization</span></span>|<span data-ttu-id="0006e-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="0006e-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="0006e-124">承諾</span><span class="sxs-lookup"><span data-stu-id="0006e-124">Accept</span></span>|<span data-ttu-id="0006e-125">application/json</span><span class="sxs-lookup"><span data-stu-id="0006e-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="dbba4-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="dbba4-126">Request body</span></span>
-<span data-ttu-id="dbba4-127">要求本文で、windowsUniversalAppXContainedApp オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="dbba4-127">In the request body, supply a JSON representation for the windowsUniversalAppXContainedApp object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="0006e-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="0006e-126">Request body</span></span>
+<span data-ttu-id="0006e-127">要求本文で、windowsUniversalAppXContainedApp オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="0006e-127">In the request body, supply a JSON representation for the windowsUniversalAppXContainedApp object.</span></span>
 
-<span data-ttu-id="dbba4-128">次の表に、windowsUniversalAppXContainedApp の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="dbba4-128">The following table shows the properties that are required when you create the windowsUniversalAppXContainedApp.</span></span>
+<span data-ttu-id="0006e-128">次の表に、windowsUniversalAppXContainedApp の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="0006e-128">The following table shows the properties that are required when you create the windowsUniversalAppXContainedApp.</span></span>
 
-|<span data-ttu-id="dbba4-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="dbba4-129">Property</span></span>|<span data-ttu-id="dbba4-130">型</span><span class="sxs-lookup"><span data-stu-id="dbba4-130">Type</span></span>|<span data-ttu-id="dbba4-131">説明</span><span class="sxs-lookup"><span data-stu-id="dbba4-131">Description</span></span>|
+|<span data-ttu-id="0006e-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="0006e-129">Property</span></span>|<span data-ttu-id="0006e-130">型</span><span class="sxs-lookup"><span data-stu-id="0006e-130">Type</span></span>|<span data-ttu-id="0006e-131">説明</span><span class="sxs-lookup"><span data-stu-id="0006e-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="dbba4-132">id</span><span class="sxs-lookup"><span data-stu-id="dbba4-132">id</span></span>|<span data-ttu-id="dbba4-133">String</span><span class="sxs-lookup"><span data-stu-id="dbba4-133">String</span></span>|<span data-ttu-id="dbba4-134">エンティティのキー。</span><span class="sxs-lookup"><span data-stu-id="dbba4-134">Key of the entity.</span></span> <span data-ttu-id="dbba4-135">[MobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)から継承します。</span><span class="sxs-lookup"><span data-stu-id="dbba4-135">Inherited from [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)</span></span>|
-|<span data-ttu-id="dbba4-136">appUserModelId</span><span class="sxs-lookup"><span data-stu-id="dbba4-136">appUserModelId</span></span>|<span data-ttu-id="dbba4-137">String</span><span class="sxs-lookup"><span data-stu-id="dbba4-137">String</span></span>|<span data-ttu-id="dbba4-138">WindowsUniversalAppX アプリの含まれているアプリのアプリユーザーモデル ID。</span><span class="sxs-lookup"><span data-stu-id="dbba4-138">The app user model ID of the contained app of a WindowsUniversalAppX app.</span></span>|
+|<span data-ttu-id="0006e-132">id</span><span class="sxs-lookup"><span data-stu-id="0006e-132">id</span></span>|<span data-ttu-id="0006e-133">String</span><span class="sxs-lookup"><span data-stu-id="0006e-133">String</span></span>|<span data-ttu-id="0006e-134">エンティティのキー。</span><span class="sxs-lookup"><span data-stu-id="0006e-134">Key of the entity.</span></span> <span data-ttu-id="0006e-135">[MobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)から継承します。</span><span class="sxs-lookup"><span data-stu-id="0006e-135">Inherited from [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)</span></span>|
+|<span data-ttu-id="0006e-136">appUserModelId</span><span class="sxs-lookup"><span data-stu-id="0006e-136">appUserModelId</span></span>|<span data-ttu-id="0006e-137">String</span><span class="sxs-lookup"><span data-stu-id="0006e-137">String</span></span>|<span data-ttu-id="0006e-138">WindowsUniversalAppX アプリの含まれているアプリのアプリユーザーモデル ID。</span><span class="sxs-lookup"><span data-stu-id="0006e-138">The app user model ID of the contained app of a WindowsUniversalAppX app.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="dbba4-139">応答</span><span class="sxs-lookup"><span data-stu-id="dbba4-139">Response</span></span>
-<span data-ttu-id="dbba4-140">成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[windowsUniversalAppXContainedApp](../resources/intune-apps-windowsuniversalappxcontainedapp.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="dbba4-140">If successful, this method returns a `201 Created` response code and a [windowsUniversalAppXContainedApp](../resources/intune-apps-windowsuniversalappxcontainedapp.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="0006e-139">応答</span><span class="sxs-lookup"><span data-stu-id="0006e-139">Response</span></span>
+<span data-ttu-id="0006e-140">成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[windowsUniversalAppXContainedApp](../resources/intune-apps-windowsuniversalappxcontainedapp.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="0006e-140">If successful, this method returns a `201 Created` response code and a [windowsUniversalAppXContainedApp](../resources/intune-apps-windowsuniversalappxcontainedapp.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="dbba4-141">例</span><span class="sxs-lookup"><span data-stu-id="dbba4-141">Example</span></span>
+## <a name="example"></a><span data-ttu-id="0006e-141">例</span><span class="sxs-lookup"><span data-stu-id="0006e-141">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="dbba4-142">要求</span><span class="sxs-lookup"><span data-stu-id="dbba4-142">Request</span></span>
-<span data-ttu-id="dbba4-143">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="dbba4-143">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="0006e-142">要求</span><span class="sxs-lookup"><span data-stu-id="0006e-142">Request</span></span>
+<span data-ttu-id="0006e-143">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="0006e-143">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}/containedApps
 Content-type: application/json
@@ -75,8 +76,8 @@ Content-length: 122
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="dbba4-144">応答</span><span class="sxs-lookup"><span data-stu-id="dbba4-144">Response</span></span>
-<span data-ttu-id="dbba4-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="dbba4-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="0006e-144">応答</span><span class="sxs-lookup"><span data-stu-id="0006e-144">Response</span></span>
+<span data-ttu-id="0006e-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="0006e-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
