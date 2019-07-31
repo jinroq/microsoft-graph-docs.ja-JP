@@ -4,31 +4,32 @@ description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API は
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: d543bf16617ed28d50d2e7082372ff2014cd24c5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: e6f543a85ac2974f9b3e99d4290fb9d93a8cc025
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343302"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965216"
 ---
 # <a name="securityvendorinformation-resource-type"></a>securityVendorInformation リソースの種類
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-セキュリティ製品/サービスベンダー、プロバイダ、およびサブプロバイダに関する詳細情報が含まれています (たとえば、ベンダー = Microsoft; provider = Windows Defender ATP; subprovider = AppLocker)。
+セキュリティ製品/サービスベンダー、プロバイダ、およびサブプロバイダに関する詳細情報が含まれています (たとえば、ベンダー = Microsoft; provider = Windows Defender ATP; subProvider = AppLocker)。
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ   | 型|説明|
 |:---------------|:--------|:----------|
-|供給 |String|特定のプロバイダー (製品/サービス-ベンダー会社ではない)。たとえば、windowsdefenderatp のようになります。|
-|providerversion|String|通知を生成したプロバイダーまたはサブプロバイダのバージョン (存在する場合)。 **必須**|
-|subprovider|String|特定のサブプロバイダ (集計プロバイダーの場合)。たとえば、windowsdefenderatp。|
-|ベンダ |String|通知ベンダーの名前 (Microsoft、Dell、焼討アイなど)。 **必須**|
+|供給 |String|特定のプロバイダー (製品/サービス-ベンダー会社ではない)。たとえば、WindowsDefenderATP のようになります。|
+|providerVersion|String|通知を生成したプロバイダーまたはサブプロバイダのバージョン (存在する場合)。 **Required**|
+|subProvider|String|特定のサブプロバイダ (集計プロバイダーの場合)。たとえば、WindowsDefenderATP。|
+|ベンダ |String|通知ベンダーの名前 (Microsoft、Dell、焼討アイなど)。 **Required**|
 
 ## <a name="json-representation"></a>JSON 表記
 
-folllowing は、リソースの JSON 表記です。
+Folllowing は、リソースの JSON 表記です。
 <!-- {
   "blockType": "resource",
   "optionalProperties": [

@@ -4,12 +4,13 @@ description: このオブジェクトは、オブジェクトのフォントの�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 76b84a86c0d5796b4831fa362ee98c0b1093e830
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: b3982a8026cd720fe614b11405a37bed8626042d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348898"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964051"
 ---
 # <a name="workbookrangefont-resource-type"></a>workbookRangeFont リソースの種類
 
@@ -22,20 +23,20 @@ ms.locfileid: "33348898"
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[workbookRangeFont を取得する](../api/rangefont-get.md) | [workbookRangeFont](workbookrangefont.md) |rangeFont オブジェクトのプロパティと関係を読み取ります。|
+|[WorkbookRangeFont を取得する](../api/rangefont-get.md) | [workbookRangeFont](workbookrangefont.md) |rangeFont オブジェクトのプロパティと関係を読み取ります。|
 |[Update](../api/rangefont-update.md) | [workbookRangeFont](workbookrangefont.md)   |RangeFont オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|bold|boolean|フォントの太字の状態を表します。|
+|bold|ブール値|フォントの太字の状態を表します。|
 |color|string|テキストの色の HTML カラー コード表記。たとえば、#FF0000 は赤を表します。|
 |italic|ブール値|フォントの斜体の状態を表します。|
 |name|string|フォント名 (例: "Calibri")|
 |size|double|フォント サイズ|
 |underline| String |フォントに適用する下線の種類。 可能な値は、`None`、`Single`、`Double`、`SingleAccountant`、`DoubleAccountant` です。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 

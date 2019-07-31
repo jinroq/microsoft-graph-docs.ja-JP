@@ -1,19 +1,20 @@
 ---
-title: paymentTerms の更新
+title: PaymentTerms の更新
 description: Dynamics 365 Business Central の支払い用語オブジェクトを更新します。
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 04b04461bdf46ec08c1c0230949c3bed89acebd6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 3a7c596850989831c549f7cb642318e31f7fa420
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458496"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956024"
 ---
-# <a name="update-paymentterms"></a>paymentTerms の更新
+# <a name="update-paymentterms"></a>PaymentTerms の更新
 Dynamics 365 Business Central の支払い用語オブジェクトのプロパティを更新します。
 
 ## <a name="permissions"></a>アクセス許可

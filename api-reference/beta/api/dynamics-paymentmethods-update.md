@@ -1,19 +1,20 @@
 ---
-title: paymentMethods の更新
+title: PaymentMethods の更新
 description: Dynamics 365 Business Central の支払い方法オブジェクトを更新します。
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 55af41d002548a9920c22e6c492ac7ed3eaff54e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 95e9fc2e0de68f737bc68c51e16d55caaa573208
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458503"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956080"
 ---
-# <a name="update-paymentmethods"></a>paymentMethods の更新
+# <a name="update-paymentmethods"></a>PaymentMethods の更新
 Dynamics 365 Business Central の支払い方法オブジェクトのプロパティを更新します。
 
 ## <a name="permissions"></a>アクセス許可

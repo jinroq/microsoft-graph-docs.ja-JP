@@ -4,12 +4,13 @@ description: 新しい macOSOfficeSuiteApp オブジェクトを作成します�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b4b84586a79a41adb6a4a9910b66e7e6c2467241
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 11321fd0e786c5c960b371428ae176a957fb050f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34975281"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35962092"
 ---
 # <a name="create-macosofficesuiteapp"></a>macOSOfficeSuiteApp の作成
 

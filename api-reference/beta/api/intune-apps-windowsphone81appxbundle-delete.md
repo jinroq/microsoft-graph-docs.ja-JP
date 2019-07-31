@@ -4,12 +4,13 @@ description: WindowsPhone81AppXBundle を削除します。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 15b55d31aa880dcb90640ccc5eabc89ddd128acb
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: b27731b6f828cad31cebb49cc4ffc6dd613d8216
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34973027"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35959965"
 ---
 # <a name="delete-windowsphone81appxbundle"></a>WindowsPhone81AppXBundle の削除
 

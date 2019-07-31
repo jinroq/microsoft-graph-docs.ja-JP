@@ -1,17 +1,18 @@
 ---
-title: alerttrigger リソースの種類
+title: alertTrigger リソースの種類
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでは、これらの API の使用はサポートされていません。"
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 9142c4d86b627f1d1e1e790c9b3b279b07005ad2
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 682ff7952b39cd71399441014c528eaba32ac4b6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339161"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013394"
 ---
-# <a name="alerttrigger-resource-type"></a>alerttrigger リソースの種類
+# <a name="alerttrigger-resource-type"></a>alertTrigger リソースの種類
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

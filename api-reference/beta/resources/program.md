@@ -2,12 +2,15 @@
 title: program リソースの種類
 description: 'Azure AD access のレビュー機能であるプログラムは、プログラムコントロールを保持するコンテナーです。 テナントには、1つ以上のプログラムを含めることができます。  各コントロールは、アクセスレビューをプログラムにリンクして、関連するアクセスレビューを簡単に見つけられるようにします。  '
 localization_priority: Normal
-ms.openlocfilehash: 7c0016cb194acd7ad8533acb34650b57df720ace
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: c6a978ef4bb68c09b2f5659e255d16681c9c805d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344030"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965671"
 ---
 # <a name="program-resource-type"></a>program リソースの種類
 
@@ -15,7 +18,7 @@ ms.locfileid: "33344030"
 
 Azure AD access の[レビュー](accessreviews-root.md)機能であるプログラムは、プログラムコントロールを保持するコンテナーです。 テナントには、1つ以上のプログラムを含めることができます。  各コントロールは、アクセスレビューをプログラムにリンクして、関連するアクセスレビューを簡単に見つけられるようにします。  
 
-boarded Azure AD アクセスレビューを持つ各テナントには、 `Default program`1 つのプログラムがあります。  グローバル管理者は、コンプライアンスイニシアチブを表すなど、追加のプログラムを作成できます。 
+Boarded Azure AD アクセスレビューを持つ各テナントには、 `Default program`1 つのプログラムがあります。  グローバル管理者は、コンプライアンスイニシアチブを表すなど、追加のプログラムを作成できます。 
 
 
 ## <a name="methods"></a>メソッド
@@ -25,7 +28,7 @@ boarded Azure AD アクセスレビューを持つ各テナントには、 `Defa
 |[プログラムを作成する](../api/program-create.md) |   [アプリケーション](program.md)   |   新しいプログラムを作成します。|
 |[プログラムの削除](../api/program-delete.md) |   なし。   |   プログラムを削除します。|
 |[プログラムの一覧表示](../api/program-list.md) |  [プログラム](program.md)コレクション|   すべてのプログラムのコレクションを取得します。|
-|[プログラムの programcontrols を一覧表示する](../api/program-listcontrols.md) |      [programcontrol](programcontrol.md)コレクション| プログラムのコントロールのコレクションを取得します。|
+|[プログラムの programControls を一覧表示する](../api/program-listcontrols.md) |      [Programcontrol](programcontrol.md)コレクション| プログラムのコントロールのコレクションを取得します。|
 |[プログラムの更新](../api/program-update.md) |   [アプリケーション](program.md)|  プログラムを更新します。|
 
 ## <a name="properties"></a>プロパティ
@@ -38,7 +41,7 @@ boarded Azure AD アクセスレビューを持つ各テナントには、 `Defa
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-| `controls`                  |[programcontrol](programcontrol.md) | プログラムに関連付けられているコントロール。 |
+| `controls`                  |[programControl](programcontrol.md) | プログラムに関連付けられているコントロール。 |
 
 ## <a name="json-representation"></a>JSON 表記
 

@@ -4,12 +4,13 @@ description: Azure AD ユーザーのリスク履歴を表します。
 author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 37f38a649aa3721e65b44e64571dafb797259cf6
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+doc_type: resourcePageType
+ms.openlocfilehash: 586fdb046adc8977550cc386a27284752cf487c3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33620837"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965335"
 ---
 # <a name="riskyuserhistoryitem-resource-type"></a>riskyUserHistoryItem リソースの種類
 

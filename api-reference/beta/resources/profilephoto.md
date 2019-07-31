@@ -2,12 +2,15 @@
 title: profilePhoto リソースの種類
 description: Exchange Online または Azure Active Directory (AAD) からアクセスされるユーザー、グループ、または Outlook 連絡先のプロファイル写真。 base 64 でエンコードされていないバイナリ データです。
 localization_priority: Normal
-ms.openlocfilehash: edff2919192403b41096a6f9dfcd6dbdcf1446ed
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: eee47378343aef1b0a471ac186099d4598124862
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344101"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965678"
 ---
 # <a name="profilephoto-resource-type"></a>profilePhoto リソースの種類
 

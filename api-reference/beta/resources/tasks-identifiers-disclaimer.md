@@ -2,12 +2,15 @@
 title: タスクの識別子
 description: タスク内のオブジェクトの識別子は、サービスによって生成された文字列値です。 . 値の長さは28文字で、大文字と小文字は区別されます。 として渡された場合、サービスは識別子の簡単な形式の検証を実行します。形式の検証が失敗した場合、発信者はこの問題を示す無効な要求 (400) のエラー応答を受信します。 このエラーは、次のような呼び出し元のアプリケーションにバグがあることを示しています。
 localization_priority: Normal
-ms.openlocfilehash: 654e097895d86add54c79b3b6df7b6735bd0db22
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 726c9953d514796384ee23c948a157c29099d81f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341436"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964565"
 ---
 # <a name="identifiers-in-tasks"></a>タスクの識別子
 

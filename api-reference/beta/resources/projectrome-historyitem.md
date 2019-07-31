@@ -3,12 +3,14 @@ title: 履歴項目リソースの種類
 description: アプリ内のアクティビティの履歴アイテムを表します。 ユーザーアクティビティは、テレビ番組、ドキュメント、ビデオゲームの現在のキャンペーンなど、アプリ内の単一の場所を表します。 ユーザーがそのアクティビティを使用すると、そのアクティビティの開始時刻と終了時刻を示す履歴項目として契約が取得されます。 ユーザーが時間をかけてそのアクティビティを再実行すると、1つのユーザーアクティビティに対して複数の履歴項目が記録されます。
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: c43a4f0515f8d61625e11abe8bbdbe2464c729f9
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+author: ''
+ms.openlocfilehash: d5d71d36a2a88492c51e06670815ceec323790b7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344081"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965594"
 ---
 # <a name="historyitem-resource-type"></a>履歴項目リソースの種類
 
@@ -23,19 +25,19 @@ ms.locfileid: "33344081"
 |メソッド | 戻り値の型 | 説明|
 |:------|:------------|:-----------|
 |[履歴項目を作成または置換する](../api/projectrome-put-historyitem.md) | [historyItem](projectrome-historyitem.md) | そのアクティビティの既存の**履歴アイテム**を作成または置換します (upsert)。 ID は GUID である必要があります。|
-|[履歴項目を削除する](../api/projectrome-delete-historyitem.md) | No Content | そのアクティビティの指定した**履歴アイテム**を削除します。|
+|[履歴項目を削除する](../api/projectrome-delete-historyitem.md) | コンテンツはありません | そのアクティビティの指定した**履歴アイテム**を削除します。|
 
 ## <a name="properties"></a>プロパティ
 
 |名前 | 型 | 説明|
 |:----|:-----|:-----------|
 |status | string | サーバーによって設定されます。 有効なオブジェクトを識別するために使用される状態コード。 値: アクティブ、更新済み、削除済み、無視。|
-|usertimezone | String | 省略可能。 アクティビティの生成に使用されたユーザーのデバイスがアクティビティの作成時に配置されたタイムゾーン。 クロスプラットフォーム表現をサポートするために olson id として提供される値。|
+|userTimezone | String | 省略可能。 アクティビティの生成に使用されたユーザーのデバイスがアクティビティの作成時に配置されたタイムゾーン。 クロスプラットフォーム表現をサポートするために Olson Id として提供される値。|
 |createdDateTime | DateTimeOffset | サーバーによって設定されます。 サーバー上でオブジェクトが作成された日時 (UTC)。|
 |lastModifiedDateTime | DateTimeOffset | サーバーによって設定されます。 サーバー上のオブジェクトが変更された日時 (UTC)。|
 |id | String | 必須。 **履歴項目**オブジェクトのクライアントセット GUID。|
 |開始日時 | DateTimeOffset | 必須です。 **履歴アイテム**(アクティビティセッション) が開始された UTC の DateTime。 タイムライン履歴に必要です。|
-|lastactivedatetime | DateTimeOffset | 省略可能。 **履歴項目**(アクティビティセッション) が最後にアクティブまたは完了として認識された UTC の DateTime。 null の場合は、**履歴アイテム**の状態が進行中である必要があります。|
+|lastActiveDateTime | DateTimeOffset | 省略可能。 **履歴項目**(アクティビティセッション) が最後にアクティブまたは完了として認識された UTC の DateTime。 null の場合は、**履歴アイテム**の状態が進行中である必要があります。|
 |expirationDateTime | DateTimeOffset | 省略可能。 **履歴アイテム**がハード削除されるときの UTC DateTime。 クライアントによって設定できます。|
 |activeDurationSeconds | int | 省略可能。 アクティブなユーザー契約の期間。 指定しない場合、これは開始日**** と**lastactivedatetime**から計算されます。|
 

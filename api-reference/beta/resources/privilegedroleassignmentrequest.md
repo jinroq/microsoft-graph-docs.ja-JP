@@ -2,12 +2,15 @@
 title: privilegedRoleAssignmentRequest リソースの種類
 description: Privilegd Identity Management での役割の割り当て操作の要求を表します。
 localization_priority: Normal
-ms.openlocfilehash: 54d3fe72ab0cd9145f549e88e356ed30e2b9ef56
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 881f5e47d7a441a297c21a0463e49496aeaf7a07
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932529"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965734"
 ---
 # <a name="privilegedroleassignmentrequest-resource-type"></a>privilegedRoleAssignmentRequest リソースの種類
 

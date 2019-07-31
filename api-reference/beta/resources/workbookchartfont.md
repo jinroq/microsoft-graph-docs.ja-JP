@@ -4,12 +4,13 @@ description: このオブジェクトは、グラフ オブジェクトのフォ
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: b710f6245d093717b257f91c8f98bd9ac8bd03a7
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 0a0cd29ef679d5534dab2ec38d9814fac5a89d29
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348920"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964052"
 ---
 # <a name="workbookchartfont-resource-type"></a>workbookChartFont リソースの種類
 
@@ -22,20 +23,20 @@ ms.locfileid: "33348920"
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[workbookChartFont を取得する](../api/chartfont-get.md) | [workbookChartFont](workbookchartfont.md) |chartFont オブジェクトのプロパティと関係を読み取ります。|
+|[WorkbookChartFont を取得する](../api/chartfont-get.md) | [workbookChartFont](workbookchartfont.md) |chartFont オブジェクトのプロパティと関係を読み取ります。|
 |[Update](../api/chartfont-update.md) | [workbookChartFont](workbookchartfont.md)   |ChartFont オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|bold|boolean|フォントの太字の状態を表します。|
+|bold|ブール値|フォントの太字の状態を表します。|
 |color|string|テキストの色の HTML カラー コード表記。たとえば、#FF0000 は赤を表します。|
 |italic|ブール値|フォントの斜体の状態を表します。|
 |name|string|フォント名 (例: "Calibri")|
 |size|double|フォント サイズ (例: 11)|
 |underline|文字列|フォントに適用する下線の種類。 使用可能な値は`None`、 `Single`、です。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 

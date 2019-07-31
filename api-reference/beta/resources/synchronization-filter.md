@@ -2,14 +2,15 @@
 title: filter リソースの種類
 description: アプリケーションにどのオブジェクトをプロビジョニングするかを指定します。 たとえば、US にあるユーザーのみをプロビジョニングする場合があります。 スコープフィルターが指定されている場合、フィルターを満たしていないオブジェクトは、同期中にスキップされます。
 localization_priority: Normal
+doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4c350216d4d323d736b7d1e3f88234ca206a8116
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: afc100b7f75554506a7752036dc9bdeb856ca72f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35621417"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964829"
 ---
 # <a name="filter-resource-type"></a>filter リソースの種類
 

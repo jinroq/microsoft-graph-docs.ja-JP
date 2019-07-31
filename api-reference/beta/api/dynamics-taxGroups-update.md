@@ -1,19 +1,20 @@
 ---
-title: taxGroups の更新
+title: TaxGroups の更新
 description: Dynamics 365 Business Central の税グループオブジェクトを更新します。
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 1eb998bb101af576f570717c15d6fc5f1d30cacb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 0e6be1a9e084b615d7ece25edc4ab374e4fe4773
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458433"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955968"
 ---
-# <a name="update-taxgroups"></a>taxGroups の更新
+# <a name="update-taxgroups"></a>TaxGroups の更新
 Dynamics 365 Business Central の税グループオブジェクトのプロパティを更新します。
 
 ## <a name="permissions"></a>アクセス許可

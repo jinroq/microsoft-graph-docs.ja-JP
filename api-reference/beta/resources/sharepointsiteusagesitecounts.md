@@ -1,27 +1,29 @@
 ---
-title: sharepointsiteusagesitecounts リソースの種類
+title: sharePointSiteUsageSiteCounts リソースの種類
 description: リソースの JSON 表記を次に示します。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: d261bb6db255f9e901c7f86d0767b8dcf0121aba
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+author: ''
+ms.openlocfilehash: 96bb3c9835ea6490893c41595a89a08601e9e88c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584020"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965104"
 ---
-# <a name="sharepointsiteusagesitecounts-resource-type"></a>sharepointsiteusagesitecounts リソースの種類
+# <a name="sharepointsiteusagesitecounts-resource-type"></a>sharePointSiteUsageSiteCounts リソースの種類
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ          | 型   |
 | :---------------- | :----- |
-| reportrefreshdate | Date   |
-| sitetype          | String |
+| reportRefreshDate | 日付   |
+| siteType          | String |
 | total             | Int64  |
 | active            | Int64  |
-| reportDate        | Date   |
-| reportperiod      | String |
+| reportDate        | 日付   |
+| reportPeriod      | String |
 
 ## <a name="json-representation"></a>JSON 表記
 

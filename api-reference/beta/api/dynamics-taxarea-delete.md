@@ -1,19 +1,20 @@
 ---
-title: taxAreas の削除
+title: TaxAreas の削除
 description: Dynamics 365 Business Central の税エリアオブジェクトを削除します。
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 631f043819d45ded32f4a79cf68e644221f2a4aa
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 5ddbc2cb4053456e76ee57ca06375f6a64ffa106
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458314"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955954"
 ---
-# <a name="delete-taxareas"></a>taxAreas の削除
+# <a name="delete-taxareas"></a>TaxAreas の削除
 Dynamics 365 Business Central から税エリアオブジェクトを削除します。
 
 ## <a name="permissions"></a>アクセス許可

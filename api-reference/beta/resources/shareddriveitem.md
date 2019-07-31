@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: sharedDriveItem リソースは、Shares API を使用して共有 driveItem にアクセスする場合に返されます。
 ms.date: 09/10/2017
 title: SharedDriveItem
 localization_priority: Normal
-ms.openlocfilehash: 3c0fa155088e39d69d52d4b14f33662d92666ed6
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 7d5af60c4ba5c67046909f6998d298444fa06d51
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343200"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965160"
 ---
 # <a name="shareddriveitem-resource-type"></a>SharedDriveItem リソースの種類
 
@@ -50,7 +52,7 @@ ms.locfileid: "33343200"
 
 | プロパティ | 型                          | 説明                                                      |
 | :------- | :---------------------------- | :--------------------------------------------------------------- |
-| id       | String                        | アクセスされている共有の一意識別子。              |
+| id       | 文字列                        | アクセスされている共有の一意識別子。              |
 | name     | String                        | 共有項目の表示名。                             |
 | owner    | [IdentitySet](identityset.md) | 参照されている共有アイテムの所有者に関する情報。 |
 
@@ -59,16 +61,16 @@ ms.locfileid: "33343200"
 | リレーションシップ名 | 種類                | 説明
 | ------------------|:--------------------|:-----------------------------------
 | **driveItem**     | [**driveItem**][driveItem] | 基になる **driveItem** にアクセスするために使用
-| **list**          | [**list**][list]           | 基になる **list** にアクセスするために使用
+| **list**          | [**一覧**][list]           | 基になる **list** にアクセスするために使用
 | **listItem**      | [**listItem**][listItem]   | 基になる **listItem** にアクセスするために使用
 | **permission**    | [**権**][permission] | 基になる共有リンクを表す**アクセス許可**へのアクセスに使用されます。
-| **site**          | [**site**][site]           | 基になる **site** にアクセスするために使用
+| **リスト**          | [**サイト**][site]           | 基になる **site** にアクセスするために使用
 
 または、個人用の OneDrive アカウントから共有される **driveItem** には、次のリレーションシップも使用できます。
 
 | リレーションシップ名 | 種類                         | 説明
 | ------------------|:-----------------------------|:-----------------------------------
-| **items**         | [**driveItem**][driveItem] コレクション | 共有ルートに含まれているすべての driveItem。 このコレクションを列挙することはできません。
+| **items**         | [**Drive item**][driveItem]コレクション | 共有ルートに含まれているすべての driveItem。 このコレクションを列挙することはできません。
 | **driveItem**     | [**driveItem**][driveItem]            | 基になる **driveItem** にアクセスするために使用
 
 [driveItem]: driveitem.md

@@ -4,12 +4,13 @@ description: '指定したユーザーが所有している最近削除された
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 899466b91f6b2fbd58705b5bbf500157682c3b56
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+doc_type: apiPageType
+ms.openlocfilehash: e7aa5d86af4d076c8aa52c7ee174ac355f1c6f14
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34656133"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35951212"
 ---
 # <a name="list-deleted-items-owned-by-a-user"></a>**ユーザーが所有する削除済みアイテムを一覧表示する**
 

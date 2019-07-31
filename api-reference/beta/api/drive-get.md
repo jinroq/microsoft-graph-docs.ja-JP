@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: Drive リソースのプロパティと関係を取得します。
 ms.date: 09/10/2017
 title: ドライブを取得する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 818923b6c8f72a972d6979813e5e0365359c42d2
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: d4d4f548eb5deffd307bffbeb78cb42a414ff87c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35861641"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957375"
 ---
 # <a name="get-drive"></a>ドライブを取得する
 

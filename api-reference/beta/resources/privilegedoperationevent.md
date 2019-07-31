@@ -2,12 +2,15 @@
 title: privilegedOperationEvent リソースの種類
 description: 管理者が特権のある役割を管理する、ユーザーが自分の役割をアクティブにし、ユーザーがその役割を非アクティブ化するなどの役割操作について特権 Id 管理によって生成される監査イベントを表します。
 localization_priority: Normal
-ms.openlocfilehash: 58444ab6beac8796dba9945697bc809070f435fe
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 88cc7870ef8db503dd2d0fd5f5de93ddf51bdac4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35621257"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965762"
 ---
 # <a name="privilegedoperationevent-resource-type"></a>privilegedOperationEvent リソースの種類
 

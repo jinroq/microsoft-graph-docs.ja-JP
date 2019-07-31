@@ -3,12 +3,14 @@ title: sharePointActivityPages リソースの種類
 description: リソースの JSON 表記を次に示します。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: febca3bb97bc81d39838f168779d271a6e986bef
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+author: ''
+ms.openlocfilehash: a3d54e388d5a43489cac285a481b6ca1137aeba5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584041"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965097"
 ---
 # <a name="sharepointactivitypages-resource-type"></a>sharePointActivityPages リソースの種類
 
@@ -16,10 +18,10 @@ ms.locfileid: "32584041"
 
 | プロパティ          | 型   |
 | :---------------- | :----- |
-| reportrefreshdate | Date   |
+| reportRefreshDate | 日付   |
 | visitedPageCount  | Int64  |
-| reportDate        | Date   |
-| reportperiod      | String |
+| reportDate        | 日付   |
+| reportPeriod      | String |
 
 ## <a name="json-representation"></a>JSON 表記
 

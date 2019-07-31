@@ -1,21 +1,22 @@
 ---
-title: プラン/お気に入りプラン referencecollection リソースの種類
+title: プラン/お気に入りプラン Referencecollection リソースの種類
 description: " この値は、\"プラン参照\" オブジェクトを示します。"
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
-ms.openlocfilehash: 8c43108ed5c9e2f27b824d772716c6e467d56942
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 67149f0ccf8ec04fe702a0d77b1fb2f5f6020365
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344519"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965951"
 ---
-# <a name="plannerfavoriteplanreferencecollection-resource-type"></a>プラン/お気に入りプラン referencecollection リソースの種類
+# <a name="plannerfavoriteplanreferencecollection-resource-type"></a>プラン/お気に入りプラン Referencecollection リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**plan**は、ユーザーによってお気に入りとしてマークされているプランへの参照のコレクションを表します。 このリソースはオープンタイプで、[プランのユーザー](planneruser.md)オブジェクトの一部です。 プロパティと値のペアのプロパティ名は、対応するプランの ID です。この値は、"[プラン参照](plannerfavoriteplanreference.md)" オブジェクトを示します。
+**Plan**は、ユーザーによってお気に入りとしてマークされているプランへの参照のコレクションを表します。 このリソースはオープンタイプで、[プランのユーザー](planneruser.md)オブジェクトの一部です。 プロパティと値のペアのプロパティ名は、対応するプランの ID です。この値は、"[プラン参照](plannerfavoriteplanreference.md)" オブジェクトを示します。
 
 
 ## <a name="properties"></a>プロパティ

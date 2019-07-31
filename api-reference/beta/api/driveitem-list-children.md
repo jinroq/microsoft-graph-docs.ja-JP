@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: DriveItem の子リレーションシップで DriveItems のコレクションを返します。
 ms.date: 09/10/2017
 title: フォルダーの内容を一覧表示する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: db11d1bb36e608a477669ec174ef8bdb09dbdf55
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: fdb0bd3b1c0ec346252bb4a45763c26d3cec96d1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35861119"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957095"
 ---
 # <a name="list-children-of-a-driveitem"></a>driveItem の子を一覧表示する
 
@@ -57,7 +58,7 @@ GET /users/{user-id}/drive/items/{item-id}/children
 
 ### <a name="list-children-in-the-root-of-the-current-users-drive"></a>現在のユーザーのドライブのルートの子を一覧表示する
 
-ドライブのルートのファイルを取得するには、ドライブ上の `root` リレーションシップを使用して、子のリレーションシップにアクセスします。
+ドライブのルートのファイルを取得するには、ドライブ上の `root` リレーションシップを使用し、子のリレーションシップにアクセスします。
 
 
 # <a name="httptabhttp"></a>[プロトコル](#tab/http)

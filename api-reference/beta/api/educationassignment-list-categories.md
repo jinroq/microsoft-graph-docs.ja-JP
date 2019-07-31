@@ -4,12 +4,13 @@ description: この割り当てに関連付けられているすべてのカテ�
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 3a66e74a0addd6b6064e1e5ad66aba74895f0451
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: e74e1bfd808e3bc7a5dcd7b5e3bc18aebf248b11
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324731"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955667"
 ---
 # <a name="list-categories"></a>カテゴリを一覧表示する
 
@@ -56,7 +57,7 @@ GET https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/c
 ##### <a name="response"></a>応答
 応答の例を次に示します。 
 
->**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 すべてのプロパティは実際の呼び出しから返されます。
+>**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
 
 <!-- {
   "blockType": "ignored",

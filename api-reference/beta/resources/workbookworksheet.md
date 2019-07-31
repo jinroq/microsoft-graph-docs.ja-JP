@@ -4,12 +4,13 @@ description: Excel のワークシートは、セルのグリッドです。 デ
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 1700c61ed84b1ac218163e2cff3ac812f59cc8ed
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 93386edf60e30069068ceb2fa437fb128b239302
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348863"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35963858"
 ---
 # <a name="workbookworksheet-resource-type"></a>workbookWorksheet リソースの種類
 
@@ -38,7 +39,7 @@ Excel のワークシートは、セルのグリッドです。 データ、表�
 |[pivotTables を一覧表示する](../api/workbookworksheet-list-pivottables.md) |[workbookPivotTable](workbookpivottable.md) コレクション| workbookPivotTable オブジェクト コレクションを取得します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |id|string|指定されたブックのワークシートを一意に識別する値を返します。この識別子の値は、ワークシートの名前を変更したり移動したりしても同じままです。値の取得のみ可能です。|
 |name|string|ワークシートの表示名。|

@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: サインインしたユーザーによって最近使用されたアイテムのセットを一覧表示します。
 ms.date: 09/10/2017
 title: 最近使用したファイルを一覧表示する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: e0e7d6fc4dc16f11f76b4c021f957a8ae580acba
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 745e002342eca8c04a990d49e7a2cb0daa1c42dc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35861511"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957298"
 ---
 # <a name="list-recent-files"></a>最近使用したファイルを一覧表示する
 

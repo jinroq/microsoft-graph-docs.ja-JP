@@ -4,12 +4,13 @@ description: iosVppEBook オブジェクトのプロパティとリレーショ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5152b8e4c0ca89e03269f714c459316d26a30626
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 148bfb97538ff4ad09ff46d4a167e2261d7289ef
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34972418"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35959349"
 ---
 # <a name="get-iosvppebook"></a>Get iosVppEBook
 

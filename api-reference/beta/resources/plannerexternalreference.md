@@ -1,21 +1,22 @@
 ---
 title: プラン/外部参照リソースの種類
-description: '**plan/externalreference**リソースは、参照 (ファイル、URL などの添付ファイル) のメタデータを表します。 これは、externalreferences オブジェクトのプロパティと値のペアの値です。'
+description: '**Plan/externalreference**リソースは、参照 (ファイル、URL などの添付ファイル) のメタデータを表します。 これは、externalReferences オブジェクトのプロパティと値のペアの値です。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 6d2bce70afbeee3848f3055530daf732afe8a2b5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 2ac2b6bef3f2e4e24bfc6e789536f4952d89bb6d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344824"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966008"
 ---
 # <a name="plannerexternalreference-resource-type"></a>プラン/外部参照リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**plan/externalreference**リソースは、参照 (ファイル、URL などの添付ファイル) のメタデータを表します。 これは、 [externalreferences オブジェクト](plannerexternalreferences.md)のプロパティと値のペアの値です。
+**Plan/externalreference**リソースは、参照 (ファイル、URL などの添付ファイル) のメタデータを表します。 これは、 [Externalreferences オブジェクト](plannerexternalreferences.md)のプロパティと値のペアの値です。
 
 
 

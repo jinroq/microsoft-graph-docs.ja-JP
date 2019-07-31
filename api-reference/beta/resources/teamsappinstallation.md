@@ -2,15 +2,15 @@
 title: teamsAppInstallation リソースの種類
 description: 'チーム、チャット、またはユーザーの個人用スコープにインストールされている teamsApp。 '
 author: clearab
-doc_type: resourcePageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 55e1246616b7a3d76c6170a02286a2cde2a15d3a
-ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
+doc_type: resourcePageType
+ms.openlocfilehash: 2dd382e21a92662615535f69edc3ca2c99c0d7b9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "35908510"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964481"
 ---
 # <a name="teamsappinstallation-resource-type"></a>teamsAppInstallation リソースの種類
 

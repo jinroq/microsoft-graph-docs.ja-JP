@@ -1,19 +1,20 @@
 ---
-title: countriesRegions の更新
+title: CountriesRegions の更新
 description: Dynamics 365 Business Central の国/地域オブジェクトを更新します。
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 29677ac148a79b0a6aa8fd8b7650c0d9fa8d26e9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: e50717c7b541bbc90d4937a3419be230bf636f92
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454154"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956766"
 ---
-# <a name="update-countriesregions"></a>countriesRegions の更新
+# <a name="update-countriesregions"></a>CountriesRegions の更新
 Dynamics 365 Business Central の国/地域オブジェクトのプロパティを更新します。
 
 ## <a name="permissions"></a>アクセス許可

@@ -1,19 +1,20 @@
 ---
-title: countriesRegions を作成する
+title: CountriesRegions を作成する
 description: Dynamics 365 Business Central に国/地域オブジェクトを作成します。
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: a78ba9ce04dc1b9a5a39cf9e742de7503afc9c3f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: bea9934594c1f8218ca9f04fc3cdf60f4c3d7fe0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454133"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956752"
 ---
-# <a name="create-countriesregions"></a>countriesRegions を作成する
+# <a name="create-countriesregions"></a>CountriesRegions を作成する
 Dynamics 365 Business Central で countriesRegions オブジェクトを作成します。
 
 ## <a name="permissions"></a>アクセス許可

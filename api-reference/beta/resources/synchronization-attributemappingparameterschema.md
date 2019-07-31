@@ -2,14 +2,15 @@
 title: attributeMappingParameterSchema リソースの種類
 description: AttributeMappingFunctionSchema で使用される1つのパラメーターを記述します。
 localization_priority: Normal
+doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d8624851d37f475df66ec51f1951ebbbe1ea97a8
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 14be19389d7c84c3e1a212239f2ba9e414927254
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620270"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964843"
 ---
 # <a name="attributemappingparameterschema-resource-type"></a>attributeMappingParameterSchema リソースの種類
 

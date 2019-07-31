@@ -1,22 +1,23 @@
 ---
-title: プラン/プラン contextのコレクションリソースの種類
-description: " 値は、\"plan/コンテキスト詳細\" オブジェクトです。"
+title: プラン/プラン Contextのコレクションリソースの種類
+description: " 値は、\"Plan/コンテキスト詳細\" オブジェクトです。"
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
-ms.openlocfilehash: 2e2f292de763674510f6da5a8aad90fe8e17ab7f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: b8adf130dc925a4d9eb17819acf7b2a670a6c7b9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344400"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965902"
 ---
-# <a name="plannerplancontextdetailscollection-resource-type"></a>プラン/プラン contextのコレクションリソースの種類
+# <a name="plannerplancontextdetailscollection-resource-type"></a>プラン/プラン Contextのコレクションリソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-plan**グループ**は、プランがリンクされている外部コンテキストのコレクションを表します。 このリソースは、オープンタイプであり、" [plan" プランの詳細](plannerplandetails.md)オブジェクトの一部です。 プロパティと値のペアのプロパティ名は、コンテキストのアプリケーション固有の識別子です。値は、" [plan/コンテキスト詳細](plannerplancontextdetails.md)" オブジェクトです。
+Plan**グループ**は、プランがリンクされている外部コンテキストのコレクションを表します。 このリソースは、オープンタイプであり、" [plan" プランの詳細](plannerplandetails.md)オブジェクトの一部です。 プロパティと値のペアのプロパティ名は、コンテキストのアプリケーション固有の識別子です。値は、" [plan/コンテキスト詳細](plannerplancontextdetails.md)" オブジェクトです。
 
 
 ## <a name="properties"></a>プロパティ

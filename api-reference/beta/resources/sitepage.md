@@ -1,38 +1,39 @@
 ---
 author: rahmit
-ms.author: rahmit
+description: このリソースは、SitePages リストのページを表します。
 ms.date: 03/15/2018
-title: sitepage
+title: SitePage
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 6a9192423c4caf47913029e3671e975884533333
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 240ab50f31d500fad960768bb6c45cb9c6ff6511
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343079"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965048"
 ---
-# <a name="sitepage-resource"></a>sitepage リソース
+# <a name="sitepage-resource"></a>sitePage リソース
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-このリソースは、sitepages[リスト][]のページを表します。
+このリソースは、SitePages[リスト][]のページを表します。
 これには、タイトル、レイアウト、および[webPart][]のコレクションが含まれています。
 
 ## <a name="tasks-on-a-page"></a>ページ上のタスク
 
-**sitepage**リソースでは、次のタスクを使用できます。
+**Sitepage**リソースでは、次のタスクを使用できます。
 以下のすべての例は、[サイト][]に関連し`https://graph.microsoft.com/{api-version}/sites/{site-id}`ています。例:。
 
 | 共通タスク                     | HTTP メソッド
 |:--------------------------------|:------------------------------
-| [List pages][]                  | ページを取得する
+| [ページを一覧表示する][]                  | ページを取得する
 | [ページを取得する][]                    | ページを取得する/ページ/{pagefrom id}
 | [Create][]                      | 投稿/ページ
-| [削除][]                      | 削除/ページ/{page¥ id}
+| [Delete][]                      | 削除/ページ/{page¥ id}
 | [Publish][]                     | 投稿/ページ/_ page/発行
 
-[List pages]: ../api/sitepage-list.md
+[ページを一覧表示する]: ../api/sitepage-list.md
 [ページを取得する]: ../api/sitepage-get.md
 [Create]: ../api/sitepage-create.md
 [Delete]: ../api/sitepage-delete.md
@@ -40,7 +41,7 @@ ms.locfileid: "33343079"
 
 ## <a name="json-representation"></a>JSON 表記
 
-ここでは、 **sitepage**リソースの JSON 表記を示します。
+ここでは、 **Sitepage**リソースの JSON 表記を示します。
 
 <!--{
   "blockType": "resource",
@@ -78,7 +79,7 @@ ms.locfileid: "33343079"
 
 ## <a name="properties"></a>プロパティ
 
-**sitepage**リソースには、次のプロパティがあります。
+**Sitepage**リソースには、次のプロパティがあります。
 
 | プロパティ名    | 種類                         | 説明
 |:-----------------|:-----------------------------|:---------------------------
@@ -86,7 +87,7 @@ ms.locfileid: "33343079"
 
 ## <a name="page-content"></a>ページのコンテンツ
 
-**sitepage**リソースには、次のコンテンツフィールドがあります。
+**Sitepage**リソースには、次のコンテンツフィールドがあります。
 
 | プロパティ名      | 種類                       | 説明
 |:-------------------|:---------------------------|:---------------------------
@@ -96,7 +97,7 @@ ms.locfileid: "33343079"
 
 ## <a name="authoring-metadata"></a>メタデータを作成する
 
-**sitepage**リソースには、次の作成関連のメタデータがあります。 発行状態プロパティは、チェックアウトまたは発行されたページ作成状態を反映します。
+**Sitepage**リソースには、次の作成関連のメタデータがあります。 発行状態プロパティは、チェックアウトまたは発行されたページ作成状態を反映します。
 
 | プロパティ名          | 種類                   | 説明
 |:-----------------------|:-----------------------|:---------------------------
@@ -117,7 +118,7 @@ ms.locfileid: "33343079"
 
 ## <a name="relationships"></a>リレーションシップ
 
-**sitepage**リソースには、他のリソースとの関係がありません。
+**Sitepage**リソースには、他のリソースとの関係がありません。
 
 [baseItem]: baseitem.md
 [contentTypeInfo]: contenttypeinfo.md
@@ -128,7 +129,7 @@ ms.locfileid: "33343079"
 [listInfo]: listinfo.md
 [listItem]: listitem.md
 [publicationFacet]: publicationfacet.md
-[サイト]: site.md
+[リスト]: site.md
 [パーツ]: webpart.md
 
 <!--

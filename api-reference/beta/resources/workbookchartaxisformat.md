@@ -4,12 +4,13 @@ description: グラフ軸の書式設定プロパティをカプセル化しま�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 8c152971dde5efb188cfde30c30b54a1266b44fb
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 91e749fd0f1449883eca261f5ef27c0f2a7ba5dc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348848"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964089"
 ---
 # <a name="workbookchartaxisformat-resource-type"></a>workbookChartAxisFormat リソースの種類
 
@@ -19,11 +20,11 @@ ms.locfileid: "33348848"
 
 
 ## <a name="methods"></a>メソッド
-なし
+None
 ## <a name="properties"></a>プロパティ
 なし
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |font|[workbookChartFont](workbookchartfont.md)|グラフ軸要素のフォント属性 (フォント名、フォント サイズ、色など) を表します。値の取得のみ可能です。|

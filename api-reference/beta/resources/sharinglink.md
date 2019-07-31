@@ -1,23 +1,25 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: SharingLink リソースは、リンク関連のデータ項目を単一の構造にグループ化します。
 ms.date: 09/10/2017
 title: SharingLink
 localization_priority: Normal
-ms.openlocfilehash: c5a08ca3a1a7b91d5cd2277a71f1301adf5edc93
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: f1ebff332227410bcb67d87de50a97dd2e078660
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343095"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965132"
 ---
-# <a name="sharinglink-resource-type"></a>sharinglink リソースの種類
+# <a name="sharinglink-resource-type"></a>sharingLink リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**sharinglink**リソースは、リンク関連のデータ項目を単一の構造にグループ化します。
+**Sharinglink**リソースは、リンク関連のデータ項目を単一の構造にグループ化します。
 
-[**アクセス許可**](permission.md)リソースに非 null の**sharinglink**ファセットがある場合、アクセス許可は (ユーザーまたはグループに付与されたアクセス許可ではなく) 共有リンクを表します。
+[**アクセス許可**](permission.md)リソースに非 Null の**sharinglink**ファセットがある場合、アクセス許可は (ユーザーまたはグループに付与されたアクセス許可ではなく) 共有リンクを表します。
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -47,7 +49,7 @@ ms.locfileid: "33343095"
 | application    | [identity][]  | リンクが関連付けられているアプリケーションです。
 | type           | String        | 作成されたリンクの種類。
 | scope          | String        | このアクセス許可によって表されるリンクの範囲です。値 `anonymous` は、すべてのユーザーがリンクを使用できることを示し、`organization` は同じテナントにサインインしたユーザーのみがリンクを使用できることを示します。
-| preventsDownload | Boolean       | true の場合、ユーザーはこのリンクを使用して web 上のアイテムを表示することができ、アイテムのコンテンツをダウンロードするために使用することはできません。 OneDrive for business と SharePoint の場合のみ。
+| preventsDownload | Boolean       | True の場合、ユーザーはこのリンクを使用して web 上のアイテムを表示することができ、アイテムのコンテンツをダウンロードするために使用することはできません。 OneDrive for business と SharePoint の場合のみ。
 | webHtml        | String        | `embed` リンクの場合、このプロパティには、Web ページに項目を埋め込む `<iframe>` 要素の HTML コードが格納されます。
 | webUrl         | 文字列        | OneDrive の web サイト上で、項目をブラウザーに開く URL です。
 

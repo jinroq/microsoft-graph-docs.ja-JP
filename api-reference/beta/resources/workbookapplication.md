@@ -4,12 +4,13 @@ description: ブックを管理する Excel workbookApplication を表します�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 3db8c640ebb2fd36a0902563c28a3ec51bfa99d8
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 71c7c92e623fc2a9c05b9e1e8448f329615c51e3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348880"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964110"
 ---
 # <a name="workbookapplication-resource-type"></a>workbookApplication リソースの種類
 
@@ -22,8 +23,8 @@ ms.locfileid: "33348880"
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[workbookApplication を取得する](../api/workbookapplication-get.md) | [workbookApplication](workbookapplication.md) |workbookApplication オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[Calculate](../api/workbookapplication-calculate.md)|なし|Excel で現在開いているすべてのブックを再計算します。|
+|[WorkbookApplication を取得する](../api/workbookapplication-get.md) | [workbookApplication](workbookapplication.md) |WorkbookApplication オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[Calculate](../api/workbookapplication-calculate.md)|None|Excel で現在開いているすべてのブックを再計算します。|
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|

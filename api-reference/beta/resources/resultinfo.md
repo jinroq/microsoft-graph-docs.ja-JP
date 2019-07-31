@@ -1,20 +1,22 @@
 ---
-title: resultinfo リソースの種類
-description: resultinfo 型。
+title: resultInfo リソースの種類
+description: ResultInfo 型。
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 2406c29c12af81ee6981b8ffa59e630a5451c2fc
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 1e5f6a523a8aca4454cd3355e2a0287fef9fc90d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343550"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965370"
 ---
-# <a name="resultinfo-resource-type"></a>resultinfo リソースの種類
+# <a name="resultinfo-resource-type"></a>resultInfo リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-resultinfo 型。
+ResultInfo 型。
 
 ## <a name="properties"></a>プロパティ
 

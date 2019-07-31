@@ -4,12 +4,13 @@ description: userInstallStateSummary オブジェクトのプロパティを更�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c17bfbaf09f5dccb36602027efd1abdc7d693877
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 88a403e6e9249be93bbd2debefa0bac978a65f23
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34972051"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35958999"
 ---
 # <a name="update-userinstallstatesummary"></a>userInstallStateSummary の更新
 

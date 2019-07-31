@@ -2,12 +2,15 @@
 title: workbookSortField リソースの種類
 description: 並べ替え操作の条件を表します。
 localization_priority: Normal
-ms.openlocfilehash: 239c0e3b9f95108165ed32e7e22f94049e787432
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: excel
+author: ''
+ms.openlocfilehash: 55a1f822e080f786b588837dd6d9120cea546d4b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348913"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35963907"
 ---
 # <a name="workbooksortfield-resource-type"></a>workbookSortField リソースの種類
 
@@ -16,7 +19,7 @@ ms.locfileid: "33348913"
 並べ替え操作の条件を表します。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |ascending|ブール値|昇順の方法で並べ替えを行うかどうかを表します。|
 |color|string|並べ替えがフォントまたはセルの色で行われるときに条件の対象となる色を表します。|
@@ -24,7 +27,7 @@ ms.locfileid: "33348913"
 |Key|int|条件の対象とする列 (または行。並べ替えの方向によって異なります) を表します。最初の列 (または行) からのオフセットとして表します。|
 |sortOn|string|この条件の並べ替えの種類を表します。可能な値は、`Value`、`CellColor`、`FontColor`、`Icon` です。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |アイコン|[workbookIcon](workbookicon.md)|並べ替えがセルのアイコンで行われる場合に、条件の対象となるアイコンを表します。|

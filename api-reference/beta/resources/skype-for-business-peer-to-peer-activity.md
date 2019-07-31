@@ -4,12 +4,13 @@ description: 組織全体のピアツーピアアクティビティの詳細を�
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 263ebb855a122a413d7a06b20411afbb0cf7bc64
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.openlocfilehash: 60f8e5c5878822eaae64d5f10d0ff52dd4bc004f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342853"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964992"
 ---
 # <a name="skype-for-business-peer-to-peer-activity-reports"></a>Skype for Business ピア ツー ピア アクティビティ レポート
 

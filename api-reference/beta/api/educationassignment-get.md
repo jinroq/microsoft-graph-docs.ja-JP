@@ -1,17 +1,18 @@
 ---
-title: educationAssignment を取得する
+title: EducationAssignment を取得する
 description: " 教師は、クラス内のすべての割り当てを表示できます。"
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: df0c4859b650b181ac317374a74093dac7b64353
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 22db7dc1c85de37c991078ba4c7b718c2e2dbc52
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325112"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955668"
 ---
-# <a name="get-educationassignment"></a>educationAssignment を取得する
+# <a name="get-educationassignment"></a>EducationAssignment を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -58,7 +59,7 @@ GET https://graph.microsoft.com/beta/education/classes/11014/assignments/19002
 ##### <a name="response"></a>応答
 応答の例を次に示します。 
 
->**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
+>**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 
 <!-- {
   "blockType": "ignored",

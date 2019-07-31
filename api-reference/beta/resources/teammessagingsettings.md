@@ -1,17 +1,18 @@
 ---
-title: teammessagingsettings リソースの種類
+title: teamMessagingSettings リソースの種類
 description: チームでメッセージとメンションを構成する設定。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 48d9281a032bebd9d65936cbf9effd78416ffc7d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 3a89ed35c820338cde7b3f22a7345c860b1a4427
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341465"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964530"
 ---
-# <a name="teammessagingsettings-resource-type"></a>teammessagingsettings リソースの種類
+# <a name="teammessagingsettings-resource-type"></a>teamMessagingSettings リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -20,11 +21,11 @@ ms.locfileid: "33341465"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|allowusereditmessages|Boolean|true に設定されている場合、ユーザーは自分のメッセージを編集できます。|
-|allowUserDeleteMessages|Boolean|true に設定されている場合、ユーザーは自分のメッセージを削除できます。|
-|allowOwnerDeleteMessages|Boolean|true に設定されている場合、所有者は任意のメッセージを削除できます。|
-|allowteammentions ション|Boolean|true に設定すると @team メンションが許可されます。|
-|allowchannelmentions ション|Boolean|true に設定すると @channel メンションが許可されます。|
+|allowUserEditMessages|Boolean|True に設定されている場合、ユーザーは自分のメッセージを編集できます。|
+|allowUserDeleteMessages|Boolean|True に設定されている場合、ユーザーは自分のメッセージを削除できます。|
+|allowOwnerDeleteMessages|Boolean|True に設定されている場合、所有者は任意のメッセージを削除できます。|
+|allowTeamMentions ション|Boolean|True に設定すると @team メンションが許可されます。|
+|allowChannelMentions ション|Boolean|True に設定すると @channel メンションが許可されます。|
 
 ## <a name="json-representation"></a>JSON 表記
 

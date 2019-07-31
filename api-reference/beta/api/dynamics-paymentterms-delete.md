@@ -1,19 +1,20 @@
 ---
-title: paymentTerms の削除
+title: PaymentTerms の削除
 description: Dynamics 365 Business Central の支払い用語オブジェクトを削除します。
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 2ab608cc7e8f0e6ea17ea9911746fea52fc66a7a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: bd78a3125aaf10199be0e14c5f90148a5bc5d000
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458692"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956038"
 ---
-# <a name="delete-paymentterms"></a>paymentTerms の削除
+# <a name="delete-paymentterms"></a>PaymentTerms の削除
 Dynamics 365 Business Central から支払い用語オブジェクトを削除します。
 
 ## <a name="permissions"></a>アクセス許可

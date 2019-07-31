@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: driveItem リソースをチェックアウトして、他者がドキュメントを編集できないようにします。また、ドキュメントがチェックインされるまで、変更内容が表示されないようにします。
 ms.date: 09/10/2017
 title: ファイルをチェックアウトする
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: e92af4dea2e5b0678e72bc3311042acba9266a5b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: eeaa36c2aa71469572a31f02b5692727508a62fe
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35861408"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957228"
 ---
 # <a name="check-out-a-driveitem-resource"></a>DriveItem リソースをチェックアウトする
 

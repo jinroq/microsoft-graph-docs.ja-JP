@@ -4,12 +4,13 @@ description: ターゲットグループを使用して、新しいセキュリ�
 localization_priority: Normal
 author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 87b30f78cd2c5bf8c97b3b08f2db490152767c0d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: 78295df3c9abdb3f3185d312ae31726541a8c89d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33933999"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35958852"
 ---
 # <a name="create-windowsofficeclientconfiguration"></a>WindowsOfficeClientConfiguration を作成する
 

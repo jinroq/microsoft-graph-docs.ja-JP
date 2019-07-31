@@ -2,12 +2,15 @@
 title: signInLocation リソースの種類
 description: サインインが行われた場所から、市区町村、都道府県、および国/地域を提供します。
 localization_priority: Normal
-ms.openlocfilehash: 49d6dfb07c635ac3754b3e873d75911a43593a73
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: bf0cdec3a2c5feae1b178fc92d02e433d87737a1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551765"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965027"
 ---
 # <a name="signinlocation-resource-type"></a>signInLocation リソースの種類
 サインインが行われた場所から、市区町村、都道府県、および国/地域を提供します。

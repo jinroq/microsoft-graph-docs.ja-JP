@@ -2,18 +2,21 @@
 title: privilegedAccess リソースの種類
 description: " たとえば、は`privilegedAccess/azureResources` 、Azure リソースへの特権アクセスを管理する PIM を表します。"
 localization_priority: Normal
-ms.openlocfilehash: 2dd131dd8f1ba5a2e7668949d2a03a9ab3321d1d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 7f59f8420be6ff97511415e944d154cb5d59950f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344278"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965790"
 ---
 # <a name="privilegedaccess-resource-type"></a>privilegedAccess リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-特権 id 管理 (PIM) サービスによって提供される機能のグループを表します。 PIM が管理`privilegedAccess`するさまざまなプロバイダーを表すさまざまなインスタンス。たとえば、は`privilegedAccess/azureResources` 、Azure リソースへの特権アクセスを管理する PIM を表します。
+特権 Id 管理 (PIM) サービスによって提供される機能のグループを表します。 PIM が管理`privilegedAccess`するさまざまなプロバイダーを表すさまざまなインスタンス。たとえば、は`privilegedAccess/azureResources` 、Azure リソースへの特権アクセスを管理する PIM を表します。
 
 
 `privilegedAccess`現時点では読み取り専用です。 `PATCH` `DELETE` `POST` `PUT`エンティティセットでは、、、、または操作はサポートされていません。 `privilegedAccess`
@@ -21,7 +24,7 @@ ms.locfileid: "33344278"
 ## <a name="properties"></a>プロパティ
 | プロパティ  | 型      |説明|
 |:----------|:----------|:----------|
-|id         |String     |PIM によって管理されるプロバイダーの id です。|
+|id         |文字列     |PIM によって管理されるプロバイダーの id です。|
 |displayName|String     |PIM によって管理されるプロバイダーの表示名。|
 
 
@@ -31,8 +34,8 @@ ms.locfileid: "33344278"
 |リソース       |[governanceResource](../resources/governanceresource.md)コレクション            |プロバイダーのリソースのコレクション。|
 |roleAssignments |[governanceRoleAssignment](../resources/governanceroleassignment.md)コレクション|プロバイダーのロール割り当てのコレクション。|
 |roleDefinitions |[governanceRoleDefinition](../resources/governanceroledefinition.md)コレクション|プロバイダーのロール日のコレクション。|
-|rolerequests 要求 |[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)コレクション|プロバイダーのロール割り当て要求のコレクション。|
-|rolesettings |[governanceRoleSetting](../resources/governancerolesetting.md)コレクション|プロバイダーのロール設定のコレクション。|
+|Rolerequests 要求 |[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)コレクション|プロバイダーのロール割り当て要求のコレクション。|
+|roleSettings |[governanceRoleSetting](../resources/governancerolesetting.md)コレクション|プロバイダーのロール設定のコレクション。|
 
 
 ## <a name="json-representation"></a>JSON 表記

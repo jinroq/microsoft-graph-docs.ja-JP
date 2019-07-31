@@ -2,12 +2,15 @@
 title: skypeForBusinessOrganizerActivityMinuteCounts リソースの種類
 description: リソースの JSON 表記を次に示します。
 localization_priority: Normal
-ms.openlocfilehash: e2eba759ab8c22d8105267779bac46f909262bb8
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: c06f2f266cf86d0eae9166b5520a4519d045f948
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342822"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964894"
 ---
 # <a name="skypeforbusinessorganizeractivityminutecounts-resource-type"></a>skypeForBusinessOrganizerActivityMinuteCounts リソースの種類
 
@@ -17,10 +20,10 @@ ms.locfileid: "33342822"
 | :----------------- | :----- |
 | audioVideo         | Int64  |
 | dialInMicrosoft    | Int64  |
-| ダイヤルアウト microsoft   | Int64  |
-| reportrefreshdate  | 日付   |
+| ダイヤルアウト Microsoft   | Int64  |
+| reportRefreshDate  | 日付   |
 | reportDate         | 日付   |
-| reportperiod       | String |
+| reportPeriod       | String |
 
 ## <a name="json-representation"></a>JSON 表記
 
