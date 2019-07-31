@@ -2,12 +2,15 @@
 title: accessReviewSettings リソースの種類
 description: ''
 localization_priority: Normal
-ms.openlocfilehash: b19db8add3143f02f51cc0ef9d38d483d54438e1
-ms.sourcegitcommit: b523648530fcc8c2a3ded35b419be8047b9fcd10
+doc_type: resourcePageType
+ms.prod: microsoft-identity-platform
+author: ''
+ms.openlocfilehash: 2c51d94b3143d9929c03093cfb1a6625d6a9e3db
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "35084069"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974538"
 ---
 # <a name="accessreviewsettings-resource-type"></a>accessReviewSettings リソースの種類
 
