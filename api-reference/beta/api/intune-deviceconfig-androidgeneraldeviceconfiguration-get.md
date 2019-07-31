@@ -4,31 +4,32 @@ description: androidGeneralDeviceConfiguration オブジェクトのプロパテ
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f214308b0b09dff49d833c154c985a1393f904ab
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 9686f704b429cdd2848a8c4e132c57b7a4462c5e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34970255"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35962968"
 ---
-# <a name="get-androidgeneraldeviceconfiguration"></a><span data-ttu-id="c54be-103">Get androidGeneralDeviceConfiguration</span><span class="sxs-lookup"><span data-stu-id="c54be-103">Get androidGeneralDeviceConfiguration</span></span>
+# <a name="get-androidgeneraldeviceconfiguration"></a><span data-ttu-id="cfdeb-103">Get androidGeneralDeviceConfiguration</span><span class="sxs-lookup"><span data-stu-id="cfdeb-103">Get androidGeneralDeviceConfiguration</span></span>
 
-> <span data-ttu-id="c54be-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c54be-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="cfdeb-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="cfdeb-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="c54be-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="c54be-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="cfdeb-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="cfdeb-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="c54be-106">[androidGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidgeneraldeviceconfiguration.md) オブジェクトのプロパティとリレーションシップを読み取ります。</span><span class="sxs-lookup"><span data-stu-id="c54be-106">Read properties and relationships of the [androidGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidgeneraldeviceconfiguration.md) object.</span></span>
+<span data-ttu-id="cfdeb-106">[androidGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidgeneraldeviceconfiguration.md) オブジェクトのプロパティとリレーションシップを読み取ります。</span><span class="sxs-lookup"><span data-stu-id="cfdeb-106">Read properties and relationships of the [androidGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidgeneraldeviceconfiguration.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="c54be-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="c54be-107">Prerequisites</span></span>
-<span data-ttu-id="c54be-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c54be-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="cfdeb-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="cfdeb-107">Prerequisites</span></span>
+<span data-ttu-id="cfdeb-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="cfdeb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c54be-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="c54be-110">Permission type</span></span>|<span data-ttu-id="c54be-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="c54be-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="cfdeb-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="cfdeb-110">Permission type</span></span>|<span data-ttu-id="cfdeb-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="cfdeb-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="c54be-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="c54be-112">Delegated (work or school account)</span></span>|<span data-ttu-id="c54be-113">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="c54be-113">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="c54be-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="c54be-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="c54be-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c54be-115">Not supported.</span></span>|
-|<span data-ttu-id="c54be-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="c54be-116">Application</span></span>|<span data-ttu-id="c54be-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c54be-117">Not supported.</span></span>|
+|<span data-ttu-id="cfdeb-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="cfdeb-112">Delegated (work or school account)</span></span>|<span data-ttu-id="cfdeb-113">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="cfdeb-113">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="cfdeb-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="cfdeb-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="cfdeb-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="cfdeb-115">Not supported.</span></span>|
+|<span data-ttu-id="cfdeb-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="cfdeb-116">Application</span></span>|<span data-ttu-id="cfdeb-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="cfdeb-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="c54be-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="c54be-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="cfdeb-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="cfdeb-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -39,31 +40,31 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignme
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="c54be-119">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="c54be-119">Optional query parameters</span></span>
-<span data-ttu-id="c54be-120">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://docs.microsoft.com/en-us/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="c54be-120">This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="cfdeb-119">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="cfdeb-119">Optional query parameters</span></span>
+<span data-ttu-id="cfdeb-120">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://docs.microsoft.com/en-us/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="cfdeb-120">This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="c54be-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="c54be-121">Request headers</span></span>
-|<span data-ttu-id="c54be-122">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="c54be-122">Header</span></span>|<span data-ttu-id="c54be-123">値</span><span class="sxs-lookup"><span data-stu-id="c54be-123">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="cfdeb-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="cfdeb-121">Request headers</span></span>
+|<span data-ttu-id="cfdeb-122">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="cfdeb-122">Header</span></span>|<span data-ttu-id="cfdeb-123">値</span><span class="sxs-lookup"><span data-stu-id="cfdeb-123">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="c54be-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="c54be-124">Authorization</span></span>|<span data-ttu-id="c54be-125">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="c54be-125">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="c54be-126">承諾</span><span class="sxs-lookup"><span data-stu-id="c54be-126">Accept</span></span>|<span data-ttu-id="c54be-127">application/json</span><span class="sxs-lookup"><span data-stu-id="c54be-127">application/json</span></span>|
+|<span data-ttu-id="cfdeb-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="cfdeb-124">Authorization</span></span>|<span data-ttu-id="cfdeb-125">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="cfdeb-125">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="cfdeb-126">承諾</span><span class="sxs-lookup"><span data-stu-id="cfdeb-126">Accept</span></span>|<span data-ttu-id="cfdeb-127">application/json</span><span class="sxs-lookup"><span data-stu-id="cfdeb-127">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="c54be-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="c54be-128">Request body</span></span>
-<span data-ttu-id="c54be-129">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="c54be-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="cfdeb-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="cfdeb-128">Request body</span></span>
+<span data-ttu-id="cfdeb-129">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="cfdeb-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c54be-130">応答</span><span class="sxs-lookup"><span data-stu-id="c54be-130">Response</span></span>
-<span data-ttu-id="c54be-131">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [androidGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidgeneraldeviceconfiguration.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="c54be-131">If successful, this method returns a `200 OK` response code and [androidGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidgeneraldeviceconfiguration.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="cfdeb-130">応答</span><span class="sxs-lookup"><span data-stu-id="cfdeb-130">Response</span></span>
+<span data-ttu-id="cfdeb-131">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [androidGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidgeneraldeviceconfiguration.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="cfdeb-131">If successful, this method returns a `200 OK` response code and [androidGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidgeneraldeviceconfiguration.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c54be-132">例</span><span class="sxs-lookup"><span data-stu-id="c54be-132">Example</span></span>
+## <a name="example"></a><span data-ttu-id="cfdeb-132">例</span><span class="sxs-lookup"><span data-stu-id="cfdeb-132">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="c54be-133">要求</span><span class="sxs-lookup"><span data-stu-id="c54be-133">Request</span></span>
-<span data-ttu-id="c54be-134">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="c54be-134">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="cfdeb-133">要求</span><span class="sxs-lookup"><span data-stu-id="cfdeb-133">Request</span></span>
+<span data-ttu-id="cfdeb-134">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="cfdeb-134">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
-### <a name="response"></a><span data-ttu-id="c54be-135">応答</span><span class="sxs-lookup"><span data-stu-id="c54be-135">Response</span></span>
-<span data-ttu-id="c54be-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="c54be-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="cfdeb-135">応答</span><span class="sxs-lookup"><span data-stu-id="cfdeb-135">Response</span></span>
+<span data-ttu-id="cfdeb-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="cfdeb-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

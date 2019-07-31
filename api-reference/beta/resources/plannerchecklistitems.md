@@ -1,29 +1,30 @@
 ---
 title: plannerChecklistItems リソースの種類
-description: '**plan? checklistitemcollection**リソースは、タスクのチェックリストアイテムのコレクションを表します。 オープンな種類です。 タスクの詳細オブジェクトの一部です。 プロパティと値のペアの値は、checklistitem オブジェクトです。'
+description: '**Plan? Checklistitemcollection**リソースは、タスクのチェックリストアイテムのコレクションを表します。 オープンな種類です。 タスクの詳細オブジェクトの一部です。 プロパティと値のペアの値は、checklistItem オブジェクトです。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 502bda597ba0e021dc449812a104d0fd516f6ef1
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: bebec56f57f546dcfc0b16eedb1fb9635d0fb16f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344521"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966009"
 ---
-# <a name="plannerchecklistitems-resource-type"></a><span data-ttu-id="662c7-106">plannerChecklistItems リソースの種類</span><span class="sxs-lookup"><span data-stu-id="662c7-106">plannerChecklistItems resource type</span></span>
+# <a name="plannerchecklistitems-resource-type"></a><span data-ttu-id="185b1-106">plannerChecklistItems リソースの種類</span><span class="sxs-lookup"><span data-stu-id="185b1-106">plannerChecklistItems resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="662c7-107">**plan? checklistitemcollection**リソースは、タスクのチェックリストアイテムのコレクションを表します。</span><span class="sxs-lookup"><span data-stu-id="662c7-107">The **plannerChecklistItemCollection** resource represents the collection of checklist items on a task.</span></span> <span data-ttu-id="662c7-108">オープンな種類です。</span><span class="sxs-lookup"><span data-stu-id="662c7-108">It is an Open Type.</span></span> <span data-ttu-id="662c7-109">[タスクの詳細](plannertaskdetails.md)オブジェクトの一部です。</span><span class="sxs-lookup"><span data-stu-id="662c7-109">It is part of the [task details](plannertaskdetails.md) object.</span></span> <span data-ttu-id="662c7-110">プロパティと値のペアの値は、 [checklistitem](plannerchecklistitem.md)オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="662c7-110">The value in the property-value pair is the [checklistItem](plannerchecklistitem.md) object.</span></span>
+<span data-ttu-id="185b1-107">**Plan? Checklistitemcollection**リソースは、タスクのチェックリストアイテムのコレクションを表します。</span><span class="sxs-lookup"><span data-stu-id="185b1-107">The **plannerChecklistItemCollection** resource represents the collection of checklist items on a task.</span></span> <span data-ttu-id="185b1-108">オープンな種類です。</span><span class="sxs-lookup"><span data-stu-id="185b1-108">It is an Open Type.</span></span> <span data-ttu-id="185b1-109">[タスクの詳細](plannertaskdetails.md)オブジェクトの一部です。</span><span class="sxs-lookup"><span data-stu-id="185b1-109">It is part of the [task details](plannertaskdetails.md) object.</span></span> <span data-ttu-id="185b1-110">プロパティと値のペアの値は、 [Checklistitem](plannerchecklistitem.md)オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="185b1-110">The value in the property-value pair is the [checklistItem](plannerchecklistitem.md) object.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="662c7-111">プロパティ</span><span class="sxs-lookup"><span data-stu-id="662c7-111">Properties</span></span>
-<span data-ttu-id="662c7-112">オープン型のプロパティは、クライアントで定義できます。</span><span class="sxs-lookup"><span data-stu-id="662c7-112">Properties of an Open Type can be defined by the client.</span></span> <span data-ttu-id="662c7-113">この場合、クライアントは**guid**をプロパティとして提供し、それらの値は[checklistitem](plannerchecklistitem.md)オブジェクトである必要があります。</span><span class="sxs-lookup"><span data-stu-id="662c7-113">In this case, the client should provide **GUIDs** as properties and their values must be [checklistItem](plannerchecklistitem.md) objects.</span></span> <span data-ttu-id="662c7-114">例を以下に示します。</span><span class="sxs-lookup"><span data-stu-id="662c7-114">Example is shown below.</span></span> <span data-ttu-id="662c7-115">チェックリストの項目を削除するには、プロパティの値をに`null`設定します。</span><span class="sxs-lookup"><span data-stu-id="662c7-115">To remove an item in the checklist, set the value of the property to `null`.</span></span>
+## <a name="properties"></a><span data-ttu-id="185b1-111">プロパティ</span><span class="sxs-lookup"><span data-stu-id="185b1-111">Properties</span></span>
+<span data-ttu-id="185b1-112">オープン型のプロパティは、クライアントで定義できます。</span><span class="sxs-lookup"><span data-stu-id="185b1-112">Properties of an Open Type can be defined by the client.</span></span> <span data-ttu-id="185b1-113">この場合、クライアントは**guid**をプロパティとして提供し、それらの値は[checklistitem](plannerchecklistitem.md)オブジェクトである必要があります。</span><span class="sxs-lookup"><span data-stu-id="185b1-113">In this case, the client should provide **GUIDs** as properties and their values must be [checklistItem](plannerchecklistitem.md) objects.</span></span> <span data-ttu-id="185b1-114">例を以下に示します。</span><span class="sxs-lookup"><span data-stu-id="185b1-114">Example is shown below.</span></span> <span data-ttu-id="185b1-115">チェックリストの項目を削除するには、プロパティの値をに`null`設定します。</span><span class="sxs-lookup"><span data-stu-id="185b1-115">To remove an item in the checklist, set the value of the property to `null`.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="662c7-116">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="662c7-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="185b1-116">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="185b1-116">JSON representation</span></span>
 
-<span data-ttu-id="662c7-117">以下は、リソースの JSON 表記です</span><span class="sxs-lookup"><span data-stu-id="662c7-117">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="185b1-117">以下は、リソースの JSON 表記です</span><span class="sxs-lookup"><span data-stu-id="185b1-117">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -45,7 +46,7 @@ ms.locfileid: "33344521"
   }
 }
 ```
-<span data-ttu-id="662c7-118">例</span><span class="sxs-lookup"><span data-stu-id="662c7-118">// Example</span></span>
+<span data-ttu-id="185b1-118">例</span><span class="sxs-lookup"><span data-stu-id="185b1-118">// Example</span></span>
 
 ```json
 {

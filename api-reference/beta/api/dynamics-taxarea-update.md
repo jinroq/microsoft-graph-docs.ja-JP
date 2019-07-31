@@ -1,57 +1,58 @@
 ---
-title: taxAreas の更新
+title: TaxAreas の更新
 description: Dynamics 365 Business Central の tax areas オブジェクトを更新します。
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 42a53f03e71ca5fe41293db0dc5459990f4560e6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: c6c3cedd16e8cca7a801d597718482ef1b6c12a8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458300"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955926"
 ---
-# <a name="update-taxareas"></a><span data-ttu-id="c4145-103">taxAreas の更新</span><span class="sxs-lookup"><span data-stu-id="c4145-103">Update taxAreas</span></span>
-<span data-ttu-id="c4145-104">Dynamics 365 Business Central の税エリアオブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="c4145-104">Update the properties of a tax area object for Dynamics 365 Business Central.</span></span>
+# <a name="update-taxareas"></a><span data-ttu-id="5cd87-103">TaxAreas の更新</span><span class="sxs-lookup"><span data-stu-id="5cd87-103">Update taxAreas</span></span>
+<span data-ttu-id="5cd87-104">Dynamics 365 Business Central の税エリアオブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="5cd87-104">Update the properties of a tax area object for Dynamics 365 Business Central.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c4145-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="c4145-105">Permissions</span></span>
-<span data-ttu-id="c4145-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c4145-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="5cd87-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="5cd87-105">Permissions</span></span>
+<span data-ttu-id="5cd87-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5cd87-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c4145-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="c4145-108">Permission type</span></span> |<span data-ttu-id="c4145-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="c4145-109">Permissions (from least to most privileged)</span></span>|
+|<span data-ttu-id="5cd87-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="5cd87-108">Permission type</span></span> |<span data-ttu-id="5cd87-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="5cd87-109">Permissions (from least to most privileged)</span></span>|
 |:---------------|:------------------------------------------|
-|<span data-ttu-id="c4145-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="c4145-110">Delegated (work or school account)</span></span>|<span data-ttu-id="c4145-111">Financials.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c4145-111">Financials.ReadWrite.All</span></span> |
-|<span data-ttu-id="c4145-112">委任 (個人 Microsoft アカウント</span><span class="sxs-lookup"><span data-stu-id="c4145-112">Delegated (personal Microsoft account</span></span>|<span data-ttu-id="c4145-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c4145-113">Not supported.</span></span>|
-|<span data-ttu-id="c4145-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="c4145-114">Application</span></span>|<span data-ttu-id="c4145-115">Financials.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c4145-115">Financials.ReadWrite.All</span></span>|
+|<span data-ttu-id="5cd87-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="5cd87-110">Delegated (work or school account)</span></span>|<span data-ttu-id="5cd87-111">Financials.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5cd87-111">Financials.ReadWrite.All</span></span> |
+|<span data-ttu-id="5cd87-112">委任 (個人 Microsoft アカウント</span><span class="sxs-lookup"><span data-stu-id="5cd87-112">Delegated (personal Microsoft account</span></span>|<span data-ttu-id="5cd87-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="5cd87-113">Not supported.</span></span>|
+|<span data-ttu-id="5cd87-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="5cd87-114">Application</span></span>|<span data-ttu-id="5cd87-115">Financials.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5cd87-115">Financials.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="c4145-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="c4145-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5cd87-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="5cd87-116">HTTP request</span></span>
 
 ```
 PATCH /financials/companies('{id}')/taxAreas('{id}')
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="c4145-117">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="c4145-117">Optional query parameters</span></span>
-<span data-ttu-id="c4145-118">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="c4145-118">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="5cd87-117">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="5cd87-117">Optional query parameters</span></span>
+<span data-ttu-id="5cd87-118">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="5cd87-118">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="c4145-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="c4145-119">Request headers</span></span>
-|<span data-ttu-id="c4145-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="c4145-120">Header</span></span>|<span data-ttu-id="c4145-121">値</span><span class="sxs-lookup"><span data-stu-id="c4145-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="5cd87-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="5cd87-119">Request headers</span></span>
+|<span data-ttu-id="5cd87-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="5cd87-120">Header</span></span>|<span data-ttu-id="5cd87-121">値</span><span class="sxs-lookup"><span data-stu-id="5cd87-121">Value</span></span>|
 |------|-----|
-|<span data-ttu-id="c4145-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="c4145-122">Authorization</span></span> |<span data-ttu-id="c4145-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="c4145-p102">Bearer {token}. Required.</span></span>|
-|<span data-ttu-id="c4145-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="c4145-125">Content-Type</span></span>  |<span data-ttu-id="c4145-126">application/json</span><span class="sxs-lookup"><span data-stu-id="c4145-126">application/json</span></span>|
-|<span data-ttu-id="c4145-127">If-Match</span><span class="sxs-lookup"><span data-stu-id="c4145-127">If-Match</span></span>      |<span data-ttu-id="c4145-128">必須です。</span><span class="sxs-lookup"><span data-stu-id="c4145-128">Required.</span></span> <span data-ttu-id="c4145-129">この要求ヘッダーが含まれていて、指定された eTag が**taxAreas**の現在のタグと一致しない場合、 **taxAreas**は更新されません。</span><span class="sxs-lookup"><span data-stu-id="c4145-129">When this request header is included and the eTag provided does not match the current tag on the **taxAreas**, the **taxAreas** will not be updated.</span></span> |
+|<span data-ttu-id="5cd87-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="5cd87-122">Authorization</span></span> |<span data-ttu-id="5cd87-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="5cd87-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="5cd87-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="5cd87-125">Content-Type</span></span>  |<span data-ttu-id="5cd87-126">application/json</span><span class="sxs-lookup"><span data-stu-id="5cd87-126">application/json</span></span>|
+|<span data-ttu-id="5cd87-127">If-Match</span><span class="sxs-lookup"><span data-stu-id="5cd87-127">If-Match</span></span>      |<span data-ttu-id="5cd87-128">必須です。</span><span class="sxs-lookup"><span data-stu-id="5cd87-128">Required.</span></span> <span data-ttu-id="5cd87-129">この要求ヘッダーが含まれていて、指定された eTag が**taxAreas**の現在のタグと一致しない場合、 **taxAreas**は更新されません。</span><span class="sxs-lookup"><span data-stu-id="5cd87-129">When this request header is included and the eTag provided does not match the current tag on the **taxAreas**, the **taxAreas** will not be updated.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="c4145-130">要求本文</span><span class="sxs-lookup"><span data-stu-id="c4145-130">Request body</span></span>
-<span data-ttu-id="c4145-p104">要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="c4145-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5cd87-130">要求本文</span><span class="sxs-lookup"><span data-stu-id="5cd87-130">Request body</span></span>
+<span data-ttu-id="5cd87-p104">要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="5cd87-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c4145-134">応答</span><span class="sxs-lookup"><span data-stu-id="c4145-134">Response</span></span>
-<span data-ttu-id="c4145-135">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された**taxAreas**オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="c4145-135">If successful, this method returns a `200 OK` response code and an updated **taxAreas** object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="5cd87-134">応答</span><span class="sxs-lookup"><span data-stu-id="5cd87-134">Response</span></span>
+<span data-ttu-id="5cd87-135">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された**taxAreas**オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="5cd87-135">If successful, this method returns a `200 OK` response code and an updated **taxAreas** object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c4145-136">例</span><span class="sxs-lookup"><span data-stu-id="c4145-136">Example</span></span>
+## <a name="example"></a><span data-ttu-id="5cd87-136">例</span><span class="sxs-lookup"><span data-stu-id="5cd87-136">Example</span></span>
 
-<span data-ttu-id="c4145-137">**要求**</span><span class="sxs-lookup"><span data-stu-id="c4145-137">**Request**</span></span>
+<span data-ttu-id="5cd87-137">**要求**</span><span class="sxs-lookup"><span data-stu-id="5cd87-137">**Request**</span></span>
 
-<span data-ttu-id="c4145-138">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="c4145-138">Here is an example of the request.</span></span>
+<span data-ttu-id="5cd87-138">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="5cd87-138">Here is an example of the request.</span></span>
 ```json
 PATCH https://graph.microsoft.com/beta/financials/companies('{id}')/taxAreas('{id}')
 Content-type: application/json
@@ -62,11 +63,11 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="c4145-139">**応答**</span><span class="sxs-lookup"><span data-stu-id="c4145-139">**Response**</span></span>
+<span data-ttu-id="5cd87-139">**応答**</span><span class="sxs-lookup"><span data-stu-id="5cd87-139">**Response**</span></span>
 
-<span data-ttu-id="c4145-140">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="c4145-140">Here is an example of the response.</span></span> 
+<span data-ttu-id="5cd87-140">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="5cd87-140">Here is an example of the response.</span></span> 
 
-> <span data-ttu-id="c4145-141">**注**: ここに示す応答オブジェクトは読みやすいように短縮される場合があります。</span><span class="sxs-lookup"><span data-stu-id="c4145-141">**Note**: The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="c4145-142">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="c4145-142">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="5cd87-141">**注**: ここに示す応答オブジェクトは読みやすいように短縮される場合があります。</span><span class="sxs-lookup"><span data-stu-id="5cd87-141">**Note**: The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="5cd87-142">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="5cd87-142">All the properties will be returned from an actual call.</span></span>
 
 ```json
 HTTP/1.1 200 OK
