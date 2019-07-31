@@ -2,12 +2,15 @@
 title: 'servicePrincipal: getMemberObjects'
 description: このサービスプリンシパルがメンバーになっているグループとディレクトリロールの一覧を取得します。  このチェックは推移的です。
 localization_priority: Normal
-ms.openlocfilehash: de351ff8b8429b6ff88a0a1e8a388dfdca2a1738
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 440bbf9a51f0b1b7b13fc42397307e47ad0cff75
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35870126"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991472"
 ---
 # <a name="serviceprincipal-getmemberobjects"></a>servicePrincipal: getMemberObjects
 

@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: ID リソースは、アクター の ID を表します。
 ms.date: 09/14/2017
 title: ID
 localization_priority: Normal
-ms.openlocfilehash: a2ba76d5bac372be0a40001028dfb54e690a14fa
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: cb05aa4a8ddf9d4e641bcebdff3f5984ddd34d61
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333672"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35971824"
 ---
 # <a name="identity-resource-type"></a>id リソースの種類
 
@@ -34,8 +36,8 @@ ms.locfileid: "33333672"
 
 | プロパティ            | 型   | 説明                                                                                                                                                                                                                                                                                                           |
 |:--------------------|:-------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| displayName         | 文字列 | ID の表示名。使用可能でない場合や、最新の状態ではない場合があることにご注意ください。たとえば、ユーザーが表示名を変更する場合、API は、将来の応答に新しい値を表示することがあります。しかし、ユーザーに関連付けられたアイテムについては、[delta](../api/driveitem-delta.md) の使用時に変更されたことは表示されません。  |
-| id                  | String | ID の一意識別子。                                                                                                                                                                                                                                                                                   |
+| displayName         | String | ID の表示名。使用可能でない場合や、最新の状態ではない場合があることにご注意ください。たとえば、ユーザーが表示名を変更する場合、API は、将来の応答に新しい値を表示することがあります。しかし、ユーザーに関連付けられたアイテムについては、[delta](../api/driveitem-delta.md) の使用時に変更されたことは表示されません。  |
+| id                  | 文字列 | ID の一意識別子。                                                                                                                                                                                                                                                                                   |
 | tenantId            | String | テナントの一意の id (オプション)。                                                                                                                                                                                                                                                                             |
 
 ## <a name="remarks"></a>注釈

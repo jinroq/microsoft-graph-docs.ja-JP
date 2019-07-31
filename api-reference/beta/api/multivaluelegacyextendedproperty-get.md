@@ -2,12 +2,15 @@
 title: multiValueLegacyExtendedProperty を取得する
 description: '[] を展開します。'
 localization_priority: Normal
-ms.openlocfilehash: f4d1f162126f6b8d0f5fac3dcdfa5aa3aa08dcd0
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: cdde391b0dfec4932a8142ede97a08621a5f16bd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333164"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992788"
 ---
 # <a name="get-multivaluelegacyextendedproperty"></a>multiValueLegacyExtendedProperty を取得する
 
@@ -22,9 +25,9 @@ ms.locfileid: "33333164"
 - [calendar](../resources/calendar.md)
 - [contact](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md) 
-- [イベント](../resources/event.md)
+- [event](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
-- [メッセージ](../resources/message.md) 
+- [message](../resources/message.md) 
 - [Outlook タスク](../resources/outlooktask.md)
 - [Outlook タスク フォルダー](../resources/outlooktaskfolder.md)
 
@@ -44,13 +47,13 @@ ms.locfileid: "33333164"
 | [calendar](../resources/calendar.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 | [連絡先](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [contactFolder](../resources/contactfolder.md) | Contacts.Read | Contacts.Read | Contacts.Read |
-| [イベント](../resources/event.md) | Calendars.Read | Calendars.Read |  Calendars.Read|
+| [event](../resources/event.md) | Calendars.Read | Calendars.Read |  Calendars.Read|
 | グループ [calendar](../resources/calendar.md) | Group.Read.All | 非サポート | 非サポート |
 | グループ [event](../resources/event.md) | Group.Read.All | 非サポート | 非サポート |
 | グループ [post](../resources/post.md) | Group.Read.All | サポート対象外 | Group.Read.All |
 | [mailFolder](../resources/mailfolder.md) | Mail.Read | Mail.Read | Mail.Read |
-| [メッセージ](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
-| [Outlook タスク](../resources/outlooktask.md) | Tasks.Read | Tasks.Read | 非サポート |
+| [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
+| [Outlook タスク](../resources/outlooktask.md) | Tasks.Read | Tasks.Read | サポートされていません |
 | [Outlook タスク フォルダー](../resources/outlooktaskfolder.md) | Tasks.Read | Tasks.Read | 非サポート |
  
 ## <a name="http-request"></a>HTTP 要求
@@ -98,7 +101,7 @@ GET /me/contactfolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '
 GET /users/{id|userPrincipalName}/contactFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-**outlooktask**インスタンスを取得します。
+**Outlooktask**インスタンスを取得します。
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/outlook/tasks/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
@@ -108,7 +111,7 @@ GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks/{id}?$expand=mu
 GET /me/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-**outlooktaskfolder**インスタンスを取得します。
+**Outlooktaskfolder**インスタンスを取得します。
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/outlook/taskFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')

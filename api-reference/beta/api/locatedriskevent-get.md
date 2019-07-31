@@ -1,19 +1,22 @@
 ---
-title: locatedRiskEvent を取得する
-description: locatedriskevent オブジェクトのプロパティとリレーションシップを取得します。
+title: LocatedRiskEvent を取得する
+description: Locatedriskevent オブジェクトのプロパティとリレーションシップを取得します。
 localization_priority: Normal
-ms.openlocfilehash: 9834bd3f4619e5fa55692e354701106778589be5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: a90ecf29119a74e3d102e61ca1f2987683d5c54d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33338713"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35984095"
 ---
-# <a name="get-locatedriskevent"></a>locatedRiskEvent を取得する
+# <a name="get-locatedriskevent"></a>LocatedRiskEvent を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-locatedriskevent オブジェクトのプロパティとリレーションシップを取得します。
+Locatedriskevent オブジェクトのプロパティとリレーションシップを取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 

@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: リストに新しい listItem を作成します。
 ms.date: 09/11/2017
 title: SharePoint リストに新しいエントリを作成する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 3c93ecf2eed61cc6509631dd873ded2e442e5bee
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: ebf41cf176956f90a40f75ac593714fcd6359e0b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35880337"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993110"
 ---
 # <a name="create-a-new-item-in-a-list"></a>リストに新しいアイテムを作成する
 

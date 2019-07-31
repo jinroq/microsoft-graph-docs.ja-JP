@@ -4,12 +4,13 @@ description: レポート期間中の日ごとのアクティブ ユーザー数
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 946951461d85b1340477631705c79f8f7a076378
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 45eb9835652a78d11172ec6b28379079e559784d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35873491"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35988231"
 ---
 # <a name="reportroot-getoffice365activeusercounts"></a>reportRoot: getOffice365ActiveUserCounts
 

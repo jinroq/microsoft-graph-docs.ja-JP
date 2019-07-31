@@ -4,12 +4,13 @@ description: 現在テーブルに適用されているすべてのフィルタ�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 13ba4815d607b9f886451173c7c185d1bf28a90c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: ea03dc8b36734f87f2ed56ae5791d15086f924fa
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35869036"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991122"
 ---
 # <a name="table-clearfilters"></a>Table: clearFilters
 

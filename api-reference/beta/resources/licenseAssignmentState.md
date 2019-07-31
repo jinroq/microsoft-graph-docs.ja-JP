@@ -2,12 +2,15 @@
 title: License割り当て状態リソースの種類
 description: 'User エンティティの**License割り当て状態**プロパティは、 **license割り当て状態**のコレクションです。 ユーザーへのライセンス割り当てに関する詳細を提供します。 詳細には、次のような情報が含まれます。  '
 localization_priority: Normal
-ms.openlocfilehash: e720070c4c97c58fd3c99e49656d7ca33f5fb9d4
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: d85b4e2d45739f0d82e11bf029d00cad91a0e726
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778430"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966956"
 ---
 # <a name="licenseassignmentstate-resource-type"></a>License割り当て状態リソースの種類
 

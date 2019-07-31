@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 1cec20dee4a124bb704d60ceb8229ea820aa55b0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 7c0609d96f6d97503faf5c5251d3641979a4f6e8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534858"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972853"
 ---
 # <a name="vendors-resource-type"></a>ベンダーリソースの種類
 Dynamics 365 Business Central のベンダーを表します。
@@ -23,7 +24,7 @@ Dynamics 365 Business Central のベンダーを表します。
 |[ベンダーを取得する](../api/dynamics-vendor-get.md)|主要|ベンダーオブジェクトを取得します。|
 |[ベンダーを投稿する](../api/dynamics-create-vendor.md)|主要|ベンダーオブジェクトを作成します。|
 |[パッチベンダー](../api/dynamics-vendor-update.md)|主要|ベンダーオブジェクトを更新します。|
-|[仕入先を削除する](../api/dynamics-vendor-delete.md)|なし|ベンダーオブジェクトを削除します。|
+|[仕入先を削除する](../api/dynamics-vendor-delete.md)|none|ベンダーオブジェクトを削除します。|
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
@@ -31,7 +32,7 @@ Dynamics 365 Business Central のベンダーを表します。
 |id|GUID|ベンダーの一意の ID。 編集できません。|
 |番号|string|仕入先番号。|
 |displayName|string|仕入先の表示名。|
-|address|[ナビゲーション."postaladdress](../resources/dynamics-complextypes.md)|仕入先の住所。|
+|address|[ナビゲーション."Postaladdress](../resources/dynamics-complextypes.md)|仕入先の住所。|
 |phoneNumber|string|仕入先の電話番号。|
 |email|string|仕入先の電子メールアドレス。|
 |Web サイト|string|ベンダーの web サイトアドレス。|

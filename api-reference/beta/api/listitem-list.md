@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: リスト内のアイテムのコレクションを取得します。
 ms.date: 09/11/2017
 title: SharePoint リストからアイテムを取得する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: b5cdb31aa3f12fa6c5fee867f0a7b5ea62f16fd2
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: dd188f69ea39acf98117231ad6c153852cb4f5b0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35880205"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993054"
 ---
 # <a name="enumerate-items-in-a-list"></a>リスト内のアイテムを列挙する
 
@@ -18,7 +19,7 @@ ms.locfileid: "35880205"
 
 [リスト][]内の[アイテム][item]のコレクションを取得します。
 
-[リスト]: ../resources/list.md
+[list]: ../resources/list.md
 [item]: ../resources/listitem.md
 
 ## <a name="permissions"></a>アクセス許可

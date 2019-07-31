@@ -4,12 +4,13 @@ description: この API を使用して、新しいメッセージの下書き�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d2fcb035e2f00b8c91eb3c3a4b6dc161fa870b97
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: fa1c42bac6f4176eb8257e381a330a72e9875104
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35866866"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987461"
 ---
 # <a name="create-message"></a>メッセージの作成
 

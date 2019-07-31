@@ -2,12 +2,15 @@
 title: 'privilegedApproval: myRequests'
 description: リクエスターの承認要求を取得します。
 localization_priority: Normal
-ms.openlocfilehash: ba7ae2f191c36754188d1074a455b6ecc9ed8562
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 8c59bb1aabb6f356cc1dc468d705c968db360698
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35875913"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35983398"
 ---
 # <a name="privilegedapproval-myrequests"></a>privilegedApproval: myRequests
 
