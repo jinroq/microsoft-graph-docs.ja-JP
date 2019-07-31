@@ -5,32 +5,33 @@ description: ユーザーがフォローしているアイテムのフォロー�
 title: フォロー取り消しドライブ項目
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: de93302c0d08f343a0b078ceb32325cba5e4cac0
-ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
+doc_type: apiPageType
+ms.openlocfilehash: 93d07621b745755cd57afaff458d711498e02863
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "35908342"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956948"
 ---
-# <a name="unfollow-drive-item"></a><span data-ttu-id="397dd-103">フォロー取り消しドライブ項目</span><span class="sxs-lookup"><span data-stu-id="397dd-103">Unfollow drive item</span></span>
+# <a name="unfollow-drive-item"></a><span data-ttu-id="f595e-103">フォロー取り消しドライブ項目</span><span class="sxs-lookup"><span data-stu-id="f595e-103">Unfollow drive item</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="397dd-104">[ドライブ](../resources/driveitem.md)のフォローを取り消します。</span><span class="sxs-lookup"><span data-stu-id="397dd-104">Unfollow a [driveItem](../resources/driveitem.md).</span></span>
+<span data-ttu-id="f595e-104">[ドライブ](../resources/driveitem.md)のフォローを取り消します。</span><span class="sxs-lookup"><span data-stu-id="f595e-104">Unfollow a [driveItem](../resources/driveitem.md).</span></span>
 
-><span data-ttu-id="397dd-105">**注:** アイテムをフォローするには、「[アイテムをフォロー](driveitem-follow.md)する」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="397dd-105">**Note:** To follow an item, see [Follow Item](driveitem-follow.md).</span></span>
+><span data-ttu-id="f595e-105">**注:** アイテムをフォローするには、「[アイテムをフォロー](driveitem-follow.md)する」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f595e-105">**Note:** To follow an item, see [Follow Item](driveitem-follow.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="397dd-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="397dd-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="f595e-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="f595e-106">Permissions</span></span>
 
-<span data-ttu-id="397dd-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="397dd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f595e-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f595e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="397dd-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="397dd-109">Permission type</span></span>      | <span data-ttu-id="397dd-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="397dd-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f595e-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="f595e-109">Permission type</span></span>      | <span data-ttu-id="f595e-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="f595e-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="397dd-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="397dd-111">Delegated (work or school account)</span></span> | <span data-ttu-id="397dd-112">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="397dd-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="397dd-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="397dd-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="397dd-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="397dd-114">Not supported.</span></span>    |
-|<span data-ttu-id="397dd-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="397dd-115">Application</span></span> | <span data-ttu-id="397dd-116">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="397dd-116">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="f595e-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="f595e-111">Delegated (work or school account)</span></span> | <span data-ttu-id="f595e-112">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f595e-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="f595e-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="f595e-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f595e-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f595e-114">Not supported.</span></span>    |
+|<span data-ttu-id="f595e-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="f595e-115">Application</span></span> | <span data-ttu-id="f595e-116">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f595e-116">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="397dd-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="397dd-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f595e-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="f595e-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -41,45 +42,45 @@ POST /me/drive/items/{item-id}/unfollow
 POST /users/{user-id}/drive/items/{item-id}/unfollow
 ```
 
-## <a name="request-body"></a><span data-ttu-id="397dd-118">要求本文</span><span class="sxs-lookup"><span data-stu-id="397dd-118">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="f595e-118">要求本文</span><span class="sxs-lookup"><span data-stu-id="f595e-118">Request body</span></span>
 
-<span data-ttu-id="397dd-119">要求の本文は必要ありません。</span><span class="sxs-lookup"><span data-stu-id="397dd-119">No request body is required.</span></span>
+<span data-ttu-id="f595e-119">要求の本文は必要ありません。</span><span class="sxs-lookup"><span data-stu-id="f595e-119">No request body is required.</span></span>
 
-## <a name="response"></a><span data-ttu-id="397dd-120">応答</span><span class="sxs-lookup"><span data-stu-id="397dd-120">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f595e-120">応答</span><span class="sxs-lookup"><span data-stu-id="f595e-120">Response</span></span>
 
-<span data-ttu-id="397dd-121">成功すると、API 呼び出しは `204 No Content` を返します。</span><span class="sxs-lookup"><span data-stu-id="397dd-121">If successful, the API call returns a `204 No Content`.</span></span> <span data-ttu-id="397dd-122">応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="397dd-122">It does not return anything in the response body.</span></span>
+<span data-ttu-id="f595e-121">成功すると、API 呼び出しは `204 No Content` を返します。</span><span class="sxs-lookup"><span data-stu-id="f595e-121">If successful, the API call returns a `204 No Content`.</span></span> <span data-ttu-id="f595e-122">応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="f595e-122">It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="397dd-123">例</span><span class="sxs-lookup"><span data-stu-id="397dd-123">Example</span></span>
-### <a name="request"></a><span data-ttu-id="397dd-124">要求</span><span class="sxs-lookup"><span data-stu-id="397dd-124">Request</span></span>
-<span data-ttu-id="397dd-125">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="397dd-125">Here is an example of the request.</span></span>
-<span data-ttu-id="397dd-126">この例では、で識別さ`{item-id}`れるアイテムのフォローを取り消します。</span><span class="sxs-lookup"><span data-stu-id="397dd-126">This example unfollows an item identified by `{item-id}`.</span></span>
+## <a name="example"></a><span data-ttu-id="f595e-123">例</span><span class="sxs-lookup"><span data-stu-id="f595e-123">Example</span></span>
+### <a name="request"></a><span data-ttu-id="f595e-124">要求</span><span class="sxs-lookup"><span data-stu-id="f595e-124">Request</span></span>
+<span data-ttu-id="f595e-125">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="f595e-125">Here is an example of the request.</span></span>
+<span data-ttu-id="f595e-126">この例では、で識別さ`{item-id}`れるアイテムのフォローを取り消します。</span><span class="sxs-lookup"><span data-stu-id="f595e-126">This example unfollows an item identified by `{item-id}`.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="397dd-127">プロトコル</span><span class="sxs-lookup"><span data-stu-id="397dd-127">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="f595e-127">プロトコル</span><span class="sxs-lookup"><span data-stu-id="f595e-127">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "unfollow-item", "scopes": "files.read" } -->
 
 ```http
 DELETE /me/drive/items/{item-id}/unfollow
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="397dd-128">C#</span><span class="sxs-lookup"><span data-stu-id="397dd-128">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="f595e-128">C#</span><span class="sxs-lookup"><span data-stu-id="f595e-128">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/unfollow-item-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="397dd-129">Javascript</span><span class="sxs-lookup"><span data-stu-id="397dd-129">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f595e-129">Javascript</span><span class="sxs-lookup"><span data-stu-id="f595e-129">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/unfollow-item-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="397dd-130">目的-C</span><span class="sxs-lookup"><span data-stu-id="397dd-130">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="f595e-130">目的-C</span><span class="sxs-lookup"><span data-stu-id="f595e-130">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/unfollow-item-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="397dd-131">Java</span><span class="sxs-lookup"><span data-stu-id="397dd-131">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="f595e-131">Java</span><span class="sxs-lookup"><span data-stu-id="f595e-131">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/unfollow-item-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### <a name="response"></a><span data-ttu-id="397dd-132">応答</span><span class="sxs-lookup"><span data-stu-id="397dd-132">Response</span></span>
+### <a name="response"></a><span data-ttu-id="f595e-132">応答</span><span class="sxs-lookup"><span data-stu-id="f595e-132">Response</span></span>
 <!-- { 
     "blockType": "response", 
     "truncated": true 

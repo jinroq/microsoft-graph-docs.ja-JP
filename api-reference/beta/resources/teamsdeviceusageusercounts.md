@@ -1,35 +1,36 @@
 ---
-title: teamsdevice使い方 user計数リソースの種類
+title: Teamsdevice使い方 User計数リソースの種類
 description: リソースの JSON 表記を次に示します。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 671dfada02b9c16d3392d0a97023b82020fd1218
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 99cb675880962591d6298062f979f0930bc0a15d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32553597"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964397"
 ---
-# <a name="teamsdeviceusageusercounts-resource-type"></a><span data-ttu-id="2ad8c-103">teamsdevice使い方 user計数リソースの種類</span><span class="sxs-lookup"><span data-stu-id="2ad8c-103">teamsDeviceUsageUserCounts resource type</span></span>
+# <a name="teamsdeviceusageusercounts-resource-type"></a><span data-ttu-id="5c533-103">Teamsdevice使い方 User計数リソースの種類</span><span class="sxs-lookup"><span data-stu-id="5c533-103">teamsDeviceUsageUserCounts resource type</span></span>
 
-## <a name="properties"></a><span data-ttu-id="2ad8c-104">プロパティ</span><span class="sxs-lookup"><span data-stu-id="2ad8c-104">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="5c533-104">プロパティ</span><span class="sxs-lookup"><span data-stu-id="5c533-104">Properties</span></span>
 
-| <span data-ttu-id="2ad8c-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="2ad8c-105">Property</span></span>          | <span data-ttu-id="2ad8c-106">型</span><span class="sxs-lookup"><span data-stu-id="2ad8c-106">Type</span></span>   |
+| <span data-ttu-id="5c533-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="5c533-105">Property</span></span>          | <span data-ttu-id="5c533-106">型</span><span class="sxs-lookup"><span data-stu-id="5c533-106">Type</span></span>   |
 | :---------------- | :----- |
-| <span data-ttu-id="2ad8c-107">reportrefreshdate</span><span class="sxs-lookup"><span data-stu-id="2ad8c-107">reportRefreshDate</span></span> | <span data-ttu-id="2ad8c-108">Date</span><span class="sxs-lookup"><span data-stu-id="2ad8c-108">Date</span></span>   |
-| <span data-ttu-id="2ad8c-109">web</span><span class="sxs-lookup"><span data-stu-id="2ad8c-109">web</span></span>               | <span data-ttu-id="2ad8c-110">Int64</span><span class="sxs-lookup"><span data-stu-id="2ad8c-110">Int64</span></span>  |
-| <span data-ttu-id="2ad8c-111">windowsPhone</span><span class="sxs-lookup"><span data-stu-id="2ad8c-111">windowsPhone</span></span>      | <span data-ttu-id="2ad8c-112">Int64</span><span class="sxs-lookup"><span data-stu-id="2ad8c-112">Int64</span></span>  |
-| <span data-ttu-id="2ad8c-113">androidphone</span><span class="sxs-lookup"><span data-stu-id="2ad8c-113">androidPhone</span></span>      | <span data-ttu-id="2ad8c-114">Int64</span><span class="sxs-lookup"><span data-stu-id="2ad8c-114">Int64</span></span>  |
-| <span data-ttu-id="2ad8c-115">ios</span><span class="sxs-lookup"><span data-stu-id="2ad8c-115">ios</span></span>               | <span data-ttu-id="2ad8c-116">Int64</span><span class="sxs-lookup"><span data-stu-id="2ad8c-116">Int64</span></span>  |
-| <span data-ttu-id="2ad8c-117">Mac</span><span class="sxs-lookup"><span data-stu-id="2ad8c-117">mac</span></span>               | <span data-ttu-id="2ad8c-118">Int64</span><span class="sxs-lookup"><span data-stu-id="2ad8c-118">Int64</span></span>  |
-| <span data-ttu-id="2ad8c-119">ws</span><span class="sxs-lookup"><span data-stu-id="2ad8c-119">windows</span></span>           | <span data-ttu-id="2ad8c-120">Int64</span><span class="sxs-lookup"><span data-stu-id="2ad8c-120">Int64</span></span>  |
-| <span data-ttu-id="2ad8c-121">reportDate</span><span class="sxs-lookup"><span data-stu-id="2ad8c-121">reportDate</span></span>        | <span data-ttu-id="2ad8c-122">Date</span><span class="sxs-lookup"><span data-stu-id="2ad8c-122">Date</span></span>   |
-| <span data-ttu-id="2ad8c-123">reportperiod</span><span class="sxs-lookup"><span data-stu-id="2ad8c-123">reportPeriod</span></span>      | <span data-ttu-id="2ad8c-124">String</span><span class="sxs-lookup"><span data-stu-id="2ad8c-124">String</span></span> |
+| <span data-ttu-id="5c533-107">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="5c533-107">reportRefreshDate</span></span> | <span data-ttu-id="5c533-108">日付</span><span class="sxs-lookup"><span data-stu-id="5c533-108">Date</span></span>   |
+| <span data-ttu-id="5c533-109">Web</span><span class="sxs-lookup"><span data-stu-id="5c533-109">web</span></span>               | <span data-ttu-id="5c533-110">Int64</span><span class="sxs-lookup"><span data-stu-id="5c533-110">Int64</span></span>  |
+| <span data-ttu-id="5c533-111">windowsPhone</span><span class="sxs-lookup"><span data-stu-id="5c533-111">windowsPhone</span></span>      | <span data-ttu-id="5c533-112">Int64</span><span class="sxs-lookup"><span data-stu-id="5c533-112">Int64</span></span>  |
+| <span data-ttu-id="5c533-113">androidPhone</span><span class="sxs-lookup"><span data-stu-id="5c533-113">androidPhone</span></span>      | <span data-ttu-id="5c533-114">Int64</span><span class="sxs-lookup"><span data-stu-id="5c533-114">Int64</span></span>  |
+| <span data-ttu-id="5c533-115">ios</span><span class="sxs-lookup"><span data-stu-id="5c533-115">ios</span></span>               | <span data-ttu-id="5c533-116">Int64</span><span class="sxs-lookup"><span data-stu-id="5c533-116">Int64</span></span>  |
+| <span data-ttu-id="5c533-117">Mac</span><span class="sxs-lookup"><span data-stu-id="5c533-117">mac</span></span>               | <span data-ttu-id="5c533-118">Int64</span><span class="sxs-lookup"><span data-stu-id="5c533-118">Int64</span></span>  |
+| <span data-ttu-id="5c533-119">ws</span><span class="sxs-lookup"><span data-stu-id="5c533-119">windows</span></span>           | <span data-ttu-id="5c533-120">Int64</span><span class="sxs-lookup"><span data-stu-id="5c533-120">Int64</span></span>  |
+| <span data-ttu-id="5c533-121">reportDate</span><span class="sxs-lookup"><span data-stu-id="5c533-121">reportDate</span></span>        | <span data-ttu-id="5c533-122">日付</span><span class="sxs-lookup"><span data-stu-id="5c533-122">Date</span></span>   |
+| <span data-ttu-id="5c533-123">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="5c533-123">reportPeriod</span></span>      | <span data-ttu-id="5c533-124">String</span><span class="sxs-lookup"><span data-stu-id="5c533-124">String</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="2ad8c-125">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="2ad8c-125">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="5c533-125">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="5c533-125">JSON representation</span></span>
 
-<span data-ttu-id="2ad8c-126">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="2ad8c-126">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="5c533-126">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="5c533-126">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

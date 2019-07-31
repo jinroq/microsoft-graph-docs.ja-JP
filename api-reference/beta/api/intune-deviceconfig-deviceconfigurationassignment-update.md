@@ -4,31 +4,32 @@ description: deviceConfigurationAssignment オブジェクトのプロパティ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f15174d943d880e805a96f148e1665dcaffa504e
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: ea5a6278c63d746c28271b7b23af41b22a373402
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34967868"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35949287"
 ---
-# <a name="update-deviceconfigurationassignment"></a><span data-ttu-id="4e3ce-103">deviceConfigurationAssignment の更新</span><span class="sxs-lookup"><span data-stu-id="4e3ce-103">Update deviceConfigurationAssignment</span></span>
+# <a name="update-deviceconfigurationassignment"></a><span data-ttu-id="5bfe3-103">deviceConfigurationAssignment の更新</span><span class="sxs-lookup"><span data-stu-id="5bfe3-103">Update deviceConfigurationAssignment</span></span>
 
-> <span data-ttu-id="4e3ce-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="4e3ce-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="5bfe3-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="5bfe3-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="4e3ce-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="4e3ce-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="5bfe3-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="5bfe3-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="4e3ce-106">[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="4e3ce-106">Update the properties of a [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) object.</span></span>
+<span data-ttu-id="5bfe3-106">[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="5bfe3-106">Update the properties of a [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="4e3ce-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="4e3ce-107">Prerequisites</span></span>
-<span data-ttu-id="4e3ce-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4e3ce-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="5bfe3-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="5bfe3-107">Prerequisites</span></span>
+<span data-ttu-id="5bfe3-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5bfe3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4e3ce-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="4e3ce-110">Permission type</span></span>|<span data-ttu-id="4e3ce-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="4e3ce-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="5bfe3-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="5bfe3-110">Permission type</span></span>|<span data-ttu-id="5bfe3-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="5bfe3-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="4e3ce-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="4e3ce-112">Delegated (work or school account)</span></span>|<span data-ttu-id="4e3ce-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4e3ce-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="4e3ce-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="4e3ce-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="4e3ce-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="4e3ce-115">Not supported.</span></span>|
-|<span data-ttu-id="4e3ce-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="4e3ce-116">Application</span></span>|<span data-ttu-id="4e3ce-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="4e3ce-117">Not supported.</span></span>|
+|<span data-ttu-id="5bfe3-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="5bfe3-112">Delegated (work or school account)</span></span>|<span data-ttu-id="5bfe3-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5bfe3-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="5bfe3-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="5bfe3-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="5bfe3-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="5bfe3-115">Not supported.</span></span>|
+|<span data-ttu-id="5bfe3-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="5bfe3-116">Application</span></span>|<span data-ttu-id="5bfe3-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="5bfe3-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="4e3ce-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="4e3ce-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5bfe3-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="5bfe3-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -45,31 +46,31 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsWifiEnterpriseEAPConfiguration/rootCertificatesForServerValidation/{windows81TrustedRootCertificateId}/assignments/{deviceConfigurationAssignmentId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="4e3ce-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="4e3ce-119">Request headers</span></span>
-|<span data-ttu-id="4e3ce-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="4e3ce-120">Header</span></span>|<span data-ttu-id="4e3ce-121">値</span><span class="sxs-lookup"><span data-stu-id="4e3ce-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="5bfe3-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="5bfe3-119">Request headers</span></span>
+|<span data-ttu-id="5bfe3-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="5bfe3-120">Header</span></span>|<span data-ttu-id="5bfe3-121">値</span><span class="sxs-lookup"><span data-stu-id="5bfe3-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="4e3ce-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="4e3ce-122">Authorization</span></span>|<span data-ttu-id="4e3ce-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="4e3ce-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="4e3ce-124">承諾</span><span class="sxs-lookup"><span data-stu-id="4e3ce-124">Accept</span></span>|<span data-ttu-id="4e3ce-125">application/json</span><span class="sxs-lookup"><span data-stu-id="4e3ce-125">application/json</span></span>|
+|<span data-ttu-id="5bfe3-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="5bfe3-122">Authorization</span></span>|<span data-ttu-id="5bfe3-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="5bfe3-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="5bfe3-124">承諾</span><span class="sxs-lookup"><span data-stu-id="5bfe3-124">Accept</span></span>|<span data-ttu-id="5bfe3-125">application/json</span><span class="sxs-lookup"><span data-stu-id="5bfe3-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="4e3ce-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="4e3ce-126">Request body</span></span>
-<span data-ttu-id="4e3ce-127">要求本文で、[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="4e3ce-127">In the request body, supply a JSON representation for the [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5bfe3-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="5bfe3-126">Request body</span></span>
+<span data-ttu-id="5bfe3-127">要求本文で、[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="5bfe3-127">In the request body, supply a JSON representation for the [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) object.</span></span>
 
-<span data-ttu-id="4e3ce-128">次の表に、[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="4e3ce-128">The following table shows the properties that are required when you create the [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md).</span></span>
+<span data-ttu-id="5bfe3-128">次の表に、[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="5bfe3-128">The following table shows the properties that are required when you create the [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md).</span></span>
 
-|<span data-ttu-id="4e3ce-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="4e3ce-129">Property</span></span>|<span data-ttu-id="4e3ce-130">型</span><span class="sxs-lookup"><span data-stu-id="4e3ce-130">Type</span></span>|<span data-ttu-id="4e3ce-131">説明</span><span class="sxs-lookup"><span data-stu-id="4e3ce-131">Description</span></span>|
+|<span data-ttu-id="5bfe3-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="5bfe3-129">Property</span></span>|<span data-ttu-id="5bfe3-130">型</span><span class="sxs-lookup"><span data-stu-id="5bfe3-130">Type</span></span>|<span data-ttu-id="5bfe3-131">説明</span><span class="sxs-lookup"><span data-stu-id="5bfe3-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="4e3ce-132">id</span><span class="sxs-lookup"><span data-stu-id="4e3ce-132">id</span></span>|<span data-ttu-id="4e3ce-133">String</span><span class="sxs-lookup"><span data-stu-id="4e3ce-133">String</span></span>|<span data-ttu-id="4e3ce-134">割り当てのキー。</span><span class="sxs-lookup"><span data-stu-id="4e3ce-134">The key of the assignment.</span></span>|
-|<span data-ttu-id="4e3ce-135">target</span><span class="sxs-lookup"><span data-stu-id="4e3ce-135">target</span></span>|[<span data-ttu-id="4e3ce-136">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="4e3ce-136">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="4e3ce-137">デバイス構成の割り当て先。</span><span class="sxs-lookup"><span data-stu-id="4e3ce-137">The assignment target for the device configuration.</span></span>|
+|<span data-ttu-id="5bfe3-132">id</span><span class="sxs-lookup"><span data-stu-id="5bfe3-132">id</span></span>|<span data-ttu-id="5bfe3-133">String</span><span class="sxs-lookup"><span data-stu-id="5bfe3-133">String</span></span>|<span data-ttu-id="5bfe3-134">割り当てのキー。</span><span class="sxs-lookup"><span data-stu-id="5bfe3-134">The key of the assignment.</span></span>|
+|<span data-ttu-id="5bfe3-135">target</span><span class="sxs-lookup"><span data-stu-id="5bfe3-135">target</span></span>|[<span data-ttu-id="5bfe3-136">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="5bfe3-136">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="5bfe3-137">デバイス構成の割り当て先。</span><span class="sxs-lookup"><span data-stu-id="5bfe3-137">The assignment target for the device configuration.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="4e3ce-138">応答</span><span class="sxs-lookup"><span data-stu-id="4e3ce-138">Response</span></span>
-<span data-ttu-id="4e3ce-139">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で更新された [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="4e3ce-139">If successful, this method returns a `200 OK` response code and an updated [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="5bfe3-138">応答</span><span class="sxs-lookup"><span data-stu-id="5bfe3-138">Response</span></span>
+<span data-ttu-id="5bfe3-139">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で更新された [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="5bfe3-139">If successful, this method returns a `200 OK` response code and an updated [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4e3ce-140">例</span><span class="sxs-lookup"><span data-stu-id="4e3ce-140">Example</span></span>
+## <a name="example"></a><span data-ttu-id="5bfe3-140">例</span><span class="sxs-lookup"><span data-stu-id="5bfe3-140">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="4e3ce-141">要求</span><span class="sxs-lookup"><span data-stu-id="4e3ce-141">Request</span></span>
-<span data-ttu-id="4e3ce-142">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="4e3ce-142">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="5bfe3-141">要求</span><span class="sxs-lookup"><span data-stu-id="5bfe3-141">Request</span></span>
+<span data-ttu-id="5bfe3-142">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="5bfe3-142">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignments/{deviceConfigurationAssignmentId}
 Content-type: application/json
@@ -83,8 +84,8 @@ Content-length: 169
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="4e3ce-143">応答</span><span class="sxs-lookup"><span data-stu-id="4e3ce-143">Response</span></span>
-<span data-ttu-id="4e3ce-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="4e3ce-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="5bfe3-143">応答</span><span class="sxs-lookup"><span data-stu-id="5bfe3-143">Response</span></span>
+<span data-ttu-id="5bfe3-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="5bfe3-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

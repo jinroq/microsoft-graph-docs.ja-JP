@@ -2,63 +2,66 @@
 title: GovernanceRoleAssignmentRequest を取得する
 description: 'GovernanceRoleAssignmentRequest を取得します。 '
 localization_priority: Normal
-ms.openlocfilehash: ce48ed5596d9ad3000bc7ee24ff67c08d0b1814b
-ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
+doc_type: apiPageType
+author: ''
+ms.prod: ''
+ms.openlocfilehash: 6ad57ac8f330a28de6f5684f0e0fa07a34878c7f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34422417"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954222"
 ---
-# <a name="get-governanceroleassignmentrequest"></a><span data-ttu-id="bd68a-103">GovernanceRoleAssignmentRequest を取得する</span><span class="sxs-lookup"><span data-stu-id="bd68a-103">Get governanceRoleAssignmentRequest</span></span>
+# <a name="get-governanceroleassignmentrequest"></a><span data-ttu-id="f95c7-103">GovernanceRoleAssignmentRequest を取得する</span><span class="sxs-lookup"><span data-stu-id="f95c7-103">Get governanceRoleAssignmentRequest</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="bd68a-104">[GovernanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)を取得します。</span><span class="sxs-lookup"><span data-stu-id="bd68a-104">Get a [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).</span></span> 
+<span data-ttu-id="f95c7-104">[GovernanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)を取得します。</span><span class="sxs-lookup"><span data-stu-id="f95c7-104">Get a [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="bd68a-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="bd68a-105">Permissions</span></span>
-<span data-ttu-id="bd68a-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="bd68a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="f95c7-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="f95c7-105">Permissions</span></span>
+<span data-ttu-id="f95c7-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f95c7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="bd68a-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="bd68a-108">Permission type</span></span>      | <span data-ttu-id="bd68a-109">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="bd68a-109">Permissions</span></span>              |
+|<span data-ttu-id="f95c7-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="f95c7-108">Permission type</span></span>      | <span data-ttu-id="f95c7-109">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="f95c7-109">Permissions</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="bd68a-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="bd68a-110">Delegated (work or school account)</span></span> | <span data-ttu-id="bd68a-111">PrivilegedAccess AzureResources</span><span class="sxs-lookup"><span data-stu-id="bd68a-111">PrivilegedAccess.ReadWrite.AzureResources</span></span>  |
-|<span data-ttu-id="bd68a-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="bd68a-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bd68a-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="bd68a-113">Not supported.</span></span>    |
-|<span data-ttu-id="bd68a-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="bd68a-114">Application</span></span> | <span data-ttu-id="bd68a-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="bd68a-115">Not supported.</span></span> |
+|<span data-ttu-id="f95c7-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="f95c7-110">Delegated (work or school account)</span></span> | <span data-ttu-id="f95c7-111">PrivilegedAccess AzureResources</span><span class="sxs-lookup"><span data-stu-id="f95c7-111">PrivilegedAccess.ReadWrite.AzureResources</span></span>  |
+|<span data-ttu-id="f95c7-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="f95c7-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f95c7-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f95c7-113">Not supported.</span></span>    |
+|<span data-ttu-id="f95c7-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="f95c7-114">Application</span></span> | <span data-ttu-id="f95c7-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f95c7-115">Not supported.</span></span> |
 
-<span data-ttu-id="bd68a-116">アクセス許可スコープの他に、要求者が必要です。</span><span class="sxs-lookup"><span data-stu-id="bd68a-116">Besides the permission scope, it requires the requestor</span></span> 
-*   <span data-ttu-id="bd68a-117">リソースに対して少なくとも1つの役割の割り当てを行う。や</span><span class="sxs-lookup"><span data-stu-id="bd68a-117">to have at least one role assignment on the resource; or</span></span>
-*   <span data-ttu-id="bd68a-118">は、 [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)の件名です。</span><span class="sxs-lookup"><span data-stu-id="bd68a-118">is the subject of the [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).</span></span>
+<span data-ttu-id="f95c7-116">アクセス許可スコープの他に、要求者が必要です。</span><span class="sxs-lookup"><span data-stu-id="f95c7-116">Besides the permission scope, it requires the requestor</span></span> 
+*   <span data-ttu-id="f95c7-117">リソースに対して少なくとも1つの役割の割り当てを行う。や</span><span class="sxs-lookup"><span data-stu-id="f95c7-117">to have at least one role assignment on the resource; or</span></span>
+*   <span data-ttu-id="f95c7-118">は、 [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)の件名です。</span><span class="sxs-lookup"><span data-stu-id="f95c7-118">is the subject of the [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="bd68a-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="bd68a-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f95c7-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="f95c7-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /privilegedAccess/azureResources/roleAssignmentRequests/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="bd68a-120">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="bd68a-120">Optional query parameters</span></span>
-<span data-ttu-id="bd68a-121">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="bd68a-121">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="f95c7-120">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="f95c7-120">Optional query parameters</span></span>
+<span data-ttu-id="f95c7-121">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="f95c7-121">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="bd68a-122">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="bd68a-122">Request headers</span></span>
-| <span data-ttu-id="bd68a-123">名前</span><span class="sxs-lookup"><span data-stu-id="bd68a-123">Name</span></span>      |<span data-ttu-id="bd68a-124">説明</span><span class="sxs-lookup"><span data-stu-id="bd68a-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f95c7-122">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f95c7-122">Request headers</span></span>
+| <span data-ttu-id="f95c7-123">名前</span><span class="sxs-lookup"><span data-stu-id="f95c7-123">Name</span></span>      |<span data-ttu-id="f95c7-124">説明</span><span class="sxs-lookup"><span data-stu-id="f95c7-124">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="bd68a-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="bd68a-125">Authorization</span></span>  | <span data-ttu-id="bd68a-126">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="bd68a-126">Bearer {code}</span></span>|
+| <span data-ttu-id="f95c7-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="f95c7-125">Authorization</span></span>  | <span data-ttu-id="f95c7-126">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="f95c7-126">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="bd68a-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="bd68a-127">Request body</span></span>
-<span data-ttu-id="bd68a-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="bd68a-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f95c7-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="f95c7-127">Request body</span></span>
+<span data-ttu-id="f95c7-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="f95c7-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="bd68a-129">応答</span><span class="sxs-lookup"><span data-stu-id="bd68a-129">Response</span></span>
-<span data-ttu-id="bd68a-130">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="bd68a-130">If successful, this method returns a `200 OK` response code and a [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="f95c7-129">応答</span><span class="sxs-lookup"><span data-stu-id="f95c7-129">Response</span></span>
+<span data-ttu-id="f95c7-130">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="f95c7-130">If successful, this method returns a `200 OK` response code and a [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="bd68a-131">例</span><span class="sxs-lookup"><span data-stu-id="bd68a-131">Example</span></span>
-<span data-ttu-id="bd68a-132">役割の割り当て要求を取得する</span><span class="sxs-lookup"><span data-stu-id="bd68a-132">Get a role assignment request</span></span>
+## <a name="example"></a><span data-ttu-id="f95c7-131">例</span><span class="sxs-lookup"><span data-stu-id="f95c7-131">Example</span></span>
+<span data-ttu-id="f95c7-132">役割の割り当て要求を取得する</span><span class="sxs-lookup"><span data-stu-id="f95c7-132">Get a role assignment request</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_governanceroleassignmentrequest"
 }-->
-##### <a name="request"></a><span data-ttu-id="bd68a-133">要求</span><span class="sxs-lookup"><span data-stu-id="bd68a-133">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="f95c7-133">要求</span><span class="sxs-lookup"><span data-stu-id="f95c7-133">Request</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignmentRequests/e68ff888-4af5-4ccb-8b74-39156090344b
 ```
-##### <a name="response"></a><span data-ttu-id="bd68a-134">応答</span><span class="sxs-lookup"><span data-stu-id="bd68a-134">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="f95c7-134">応答</span><span class="sxs-lookup"><span data-stu-id="f95c7-134">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

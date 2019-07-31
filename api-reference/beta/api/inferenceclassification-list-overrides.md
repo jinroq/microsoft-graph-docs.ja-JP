@@ -2,52 +2,55 @@
 title: リストのオーバーライド
 description: 特定の送信者からのメッセージを常に特定の方法で分類するようにユーザーが設定した優先受信トレイの上書きを取得します。
 localization_priority: Normal
-ms.openlocfilehash: 74e32bc6b4727c22971fc42f9fdbb6184abf77c9
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+author: ''
+ms.prod: ''
+ms.openlocfilehash: 8c824ed0ee2809281974006209773731919630f2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35857525"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953105"
 ---
-# <a name="list-overrides"></a><span data-ttu-id="ee7ab-103">リストのオーバーライド</span><span class="sxs-lookup"><span data-stu-id="ee7ab-103">List overrides</span></span>
+# <a name="list-overrides"></a><span data-ttu-id="ca30f-103">リストのオーバーライド</span><span class="sxs-lookup"><span data-stu-id="ca30f-103">List overrides</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ee7ab-104">特定の送信者からのメッセージを常に特定の方法で分類するようにユーザーが設定した[優先受信トレイ](../resources/manage-focused-inbox.md)の上書きを取得します。</span><span class="sxs-lookup"><span data-stu-id="ee7ab-104">Get the [Focused Inbox](../resources/manage-focused-inbox.md) overrides that a user has set up to always classify messages from certain senders in specific ways.</span></span>
+<span data-ttu-id="ca30f-104">特定の送信者からのメッセージを常に特定の方法で分類するようにユーザーが設定した[優先受信トレイ](../resources/manage-focused-inbox.md)の上書きを取得します。</span><span class="sxs-lookup"><span data-stu-id="ca30f-104">Get the [Focused Inbox](../resources/manage-focused-inbox.md) overrides that a user has set up to always classify messages from certain senders in specific ways.</span></span>
 
-<span data-ttu-id="ee7ab-105">それぞれのオーバーライドは、送信者の SMTP アドレスに対応します。</span><span class="sxs-lookup"><span data-stu-id="ee7ab-105">Each override corresponds to an SMTP address of a sender.</span></span> <span data-ttu-id="ee7ab-106">最初は、ユーザーにはオーバーライドはありません。</span><span class="sxs-lookup"><span data-stu-id="ee7ab-106">Initially, a user does not have any overrides.</span></span>
-## <a name="permissions"></a><span data-ttu-id="ee7ab-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="ee7ab-107">Permissions</span></span>
-<span data-ttu-id="ee7ab-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ee7ab-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ca30f-105">それぞれのオーバーライドは、送信者の SMTP アドレスに対応します。</span><span class="sxs-lookup"><span data-stu-id="ca30f-105">Each override corresponds to an SMTP address of a sender.</span></span> <span data-ttu-id="ca30f-106">最初は、ユーザーにはオーバーライドはありません。</span><span class="sxs-lookup"><span data-stu-id="ca30f-106">Initially, a user does not have any overrides.</span></span>
+## <a name="permissions"></a><span data-ttu-id="ca30f-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="ca30f-107">Permissions</span></span>
+<span data-ttu-id="ca30f-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ca30f-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ee7ab-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="ee7ab-110">Permission type</span></span>      | <span data-ttu-id="ee7ab-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="ee7ab-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ca30f-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="ca30f-110">Permission type</span></span>      | <span data-ttu-id="ca30f-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="ca30f-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ee7ab-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="ee7ab-112">Delegated (work or school account)</span></span> | <span data-ttu-id="ee7ab-113">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="ee7ab-113">Mail.Read</span></span>    |
-|<span data-ttu-id="ee7ab-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="ee7ab-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ee7ab-115">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="ee7ab-115">Mail.Read</span></span>    |
-|<span data-ttu-id="ee7ab-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="ee7ab-116">Application</span></span> | <span data-ttu-id="ee7ab-117">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="ee7ab-117">Mail.Read</span></span> |
+|<span data-ttu-id="ca30f-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="ca30f-112">Delegated (work or school account)</span></span> | <span data-ttu-id="ca30f-113">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="ca30f-113">Mail.Read</span></span>    |
+|<span data-ttu-id="ca30f-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="ca30f-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ca30f-115">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="ca30f-115">Mail.Read</span></span>    |
+|<span data-ttu-id="ca30f-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="ca30f-116">Application</span></span> | <span data-ttu-id="ca30f-117">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="ca30f-117">Mail.Read</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ee7ab-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="ee7ab-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ca30f-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="ca30f-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/inferenceClassification/overrides
 GET /users/{id}/inferenceClassification/overrides
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="ee7ab-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="ee7ab-119">Request headers</span></span>
-| <span data-ttu-id="ee7ab-120">名前</span><span class="sxs-lookup"><span data-stu-id="ee7ab-120">Name</span></span>       | <span data-ttu-id="ee7ab-121">型</span><span class="sxs-lookup"><span data-stu-id="ee7ab-121">Type</span></span> | <span data-ttu-id="ee7ab-122">説明</span><span class="sxs-lookup"><span data-stu-id="ee7ab-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="ca30f-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="ca30f-119">Request headers</span></span>
+| <span data-ttu-id="ca30f-120">名前</span><span class="sxs-lookup"><span data-stu-id="ca30f-120">Name</span></span>       | <span data-ttu-id="ca30f-121">型</span><span class="sxs-lookup"><span data-stu-id="ca30f-121">Type</span></span> | <span data-ttu-id="ca30f-122">説明</span><span class="sxs-lookup"><span data-stu-id="ca30f-122">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="ee7ab-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="ee7ab-123">Authorization</span></span>  | <span data-ttu-id="ee7ab-124">string</span><span class="sxs-lookup"><span data-stu-id="ee7ab-124">string</span></span>  | <span data-ttu-id="ee7ab-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="ee7ab-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="ca30f-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="ca30f-123">Authorization</span></span>  | <span data-ttu-id="ca30f-124">string</span><span class="sxs-lookup"><span data-stu-id="ca30f-124">string</span></span>  | <span data-ttu-id="ca30f-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="ca30f-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="ee7ab-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="ee7ab-127">Request body</span></span>
-<span data-ttu-id="ee7ab-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="ee7ab-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ca30f-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="ca30f-127">Request body</span></span>
+<span data-ttu-id="ca30f-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="ca30f-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ee7ab-129">応答</span><span class="sxs-lookup"><span data-stu-id="ee7ab-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ca30f-129">応答</span><span class="sxs-lookup"><span data-stu-id="ca30f-129">Response</span></span>
 
-<span data-ttu-id="ee7ab-130">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="ee7ab-130">If successful, this method returns a `200 OK` response code and a collection of [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="ee7ab-131">例</span><span class="sxs-lookup"><span data-stu-id="ee7ab-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="ee7ab-132">要求</span><span class="sxs-lookup"><span data-stu-id="ee7ab-132">Request</span></span>
-<span data-ttu-id="ee7ab-133">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="ee7ab-133">Here is an example of the request.</span></span>
+<span data-ttu-id="ca30f-130">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="ca30f-130">If successful, this method returns a `200 OK` response code and a collection of [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="ca30f-131">例</span><span class="sxs-lookup"><span data-stu-id="ca30f-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="ca30f-132">要求</span><span class="sxs-lookup"><span data-stu-id="ca30f-132">Request</span></span>
+<span data-ttu-id="ca30f-133">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="ca30f-133">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="ee7ab-134">プロトコル</span><span class="sxs-lookup"><span data-stu-id="ee7ab-134">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="ca30f-134">プロトコル</span><span class="sxs-lookup"><span data-stu-id="ca30f-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_overrides"
@@ -55,26 +58,26 @@ GET /users/{id}/inferenceClassification/overrides
 ```http
 GET https://graph.microsoft.com/beta/me/inferenceClassification/overrides
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="ee7ab-135">C#</span><span class="sxs-lookup"><span data-stu-id="ee7ab-135">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="ca30f-135">C#</span><span class="sxs-lookup"><span data-stu-id="ca30f-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-overrides-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ee7ab-136">Javascript</span><span class="sxs-lookup"><span data-stu-id="ee7ab-136">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ca30f-136">Javascript</span><span class="sxs-lookup"><span data-stu-id="ca30f-136">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-overrides-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="ee7ab-137">目的-C</span><span class="sxs-lookup"><span data-stu-id="ee7ab-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="ca30f-137">目的-C</span><span class="sxs-lookup"><span data-stu-id="ca30f-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-overrides-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="ee7ab-138">Java</span><span class="sxs-lookup"><span data-stu-id="ee7ab-138">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="ca30f-138">Java</span><span class="sxs-lookup"><span data-stu-id="ca30f-138">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-overrides-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="ee7ab-139">応答</span><span class="sxs-lookup"><span data-stu-id="ee7ab-139">Response</span></span>
-<span data-ttu-id="ee7ab-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="ee7ab-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="ca30f-139">応答</span><span class="sxs-lookup"><span data-stu-id="ca30f-139">Response</span></span>
+<span data-ttu-id="ca30f-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="ca30f-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

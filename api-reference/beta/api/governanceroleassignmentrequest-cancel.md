@@ -2,61 +2,64 @@
 title: GovernanceRoleAssignmentRequest のキャンセル
 description: GovernanceRoleAssignmentRequest を取り消します。
 localization_priority: Normal
-ms.openlocfilehash: 8ba825cc94dfc6108ee04706e34ca30990a36ed3
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+author: ''
+ms.prod: ''
+ms.openlocfilehash: 8c34e2e81882cbb9b01235c70a8e7554ea13fc53
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35859134"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954215"
 ---
-# <a name="cancel-governanceroleassignmentrequest"></a><span data-ttu-id="f75ad-103">GovernanceRoleAssignmentRequest のキャンセル</span><span class="sxs-lookup"><span data-stu-id="f75ad-103">Cancel governanceRoleAssignmentRequest</span></span>
+# <a name="cancel-governanceroleassignmentrequest"></a><span data-ttu-id="99b0b-103">GovernanceRoleAssignmentRequest のキャンセル</span><span class="sxs-lookup"><span data-stu-id="99b0b-103">Cancel governanceRoleAssignmentRequest</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f75ad-104">[GovernanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)を取り消します。</span><span class="sxs-lookup"><span data-stu-id="f75ad-104">Cancel a [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).</span></span>
+<span data-ttu-id="99b0b-104">[GovernanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)を取り消します。</span><span class="sxs-lookup"><span data-stu-id="99b0b-104">Cancel a [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f75ad-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="f75ad-105">Permissions</span></span>
-<span data-ttu-id="f75ad-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f75ad-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="99b0b-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="99b0b-105">Permissions</span></span>
+<span data-ttu-id="99b0b-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="99b0b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f75ad-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="f75ad-108">Permission type</span></span>      | <span data-ttu-id="f75ad-109">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="f75ad-109">Permissions</span></span>              |
+|<span data-ttu-id="99b0b-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="99b0b-108">Permission type</span></span>      | <span data-ttu-id="99b0b-109">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="99b0b-109">Permissions</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f75ad-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="f75ad-110">Delegated (work or school account)</span></span> | <span data-ttu-id="f75ad-111">PrivilegedAccess AzureResources</span><span class="sxs-lookup"><span data-stu-id="f75ad-111">PrivilegedAccess.ReadWrite.AzureResources</span></span>  |
-|<span data-ttu-id="f75ad-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="f75ad-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f75ad-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f75ad-113">Not supported.</span></span>    |
-|<span data-ttu-id="f75ad-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="f75ad-114">Application</span></span> | <span data-ttu-id="f75ad-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f75ad-115">Not supported.</span></span> |
+|<span data-ttu-id="99b0b-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="99b0b-110">Delegated (work or school account)</span></span> | <span data-ttu-id="99b0b-111">PrivilegedAccess AzureResources</span><span class="sxs-lookup"><span data-stu-id="99b0b-111">PrivilegedAccess.ReadWrite.AzureResources</span></span>  |
+|<span data-ttu-id="99b0b-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="99b0b-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="99b0b-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="99b0b-113">Not supported.</span></span>    |
+|<span data-ttu-id="99b0b-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="99b0b-114">Application</span></span> | <span data-ttu-id="99b0b-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="99b0b-115">Not supported.</span></span> |
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="f75ad-116">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="f75ad-116">Optional query parameters</span></span>
-<span data-ttu-id="f75ad-117">このメソッドは、 [OData クエリパラメーター](/graph/query-parameters)をサポートし**ていません**。</span><span class="sxs-lookup"><span data-stu-id="f75ad-117">This method does **not** support [OData Query Parameters](/graph/query-parameters).</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="99b0b-116">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="99b0b-116">Optional query parameters</span></span>
+<span data-ttu-id="99b0b-117">このメソッドは、 [OData クエリパラメーター](/graph/query-parameters)をサポートし**ていません**。</span><span class="sxs-lookup"><span data-stu-id="99b0b-117">This method does **not** support [OData Query Parameters](/graph/query-parameters).</span></span>
 
-### <a name="http-request"></a><span data-ttu-id="f75ad-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="f75ad-118">HTTP request</span></span>
+### <a name="http-request"></a><span data-ttu-id="99b0b-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="99b0b-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/cancel
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="f75ad-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f75ad-119">Request headers</span></span>
-| <span data-ttu-id="f75ad-120">名前</span><span class="sxs-lookup"><span data-stu-id="f75ad-120">Name</span></span>       | <span data-ttu-id="f75ad-121">説明</span><span class="sxs-lookup"><span data-stu-id="f75ad-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="99b0b-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="99b0b-119">Request headers</span></span>
+| <span data-ttu-id="99b0b-120">名前</span><span class="sxs-lookup"><span data-stu-id="99b0b-120">Name</span></span>       | <span data-ttu-id="99b0b-121">説明</span><span class="sxs-lookup"><span data-stu-id="99b0b-121">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="f75ad-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="f75ad-122">Authorization</span></span>  | <span data-ttu-id="f75ad-123">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="f75ad-123">Bearer {code}</span></span>|
-| <span data-ttu-id="f75ad-124">Content-type</span><span class="sxs-lookup"><span data-stu-id="f75ad-124">Content-type</span></span>  | <span data-ttu-id="f75ad-125">application/json</span><span class="sxs-lookup"><span data-stu-id="f75ad-125">application/json</span></span>|
+| <span data-ttu-id="99b0b-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="99b0b-122">Authorization</span></span>  | <span data-ttu-id="99b0b-123">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="99b0b-123">Bearer {code}</span></span>|
+| <span data-ttu-id="99b0b-124">Content-type</span><span class="sxs-lookup"><span data-stu-id="99b0b-124">Content-type</span></span>  | <span data-ttu-id="99b0b-125">application/json</span><span class="sxs-lookup"><span data-stu-id="99b0b-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="f75ad-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="f75ad-126">Request body</span></span>
-<span data-ttu-id="f75ad-127">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="f75ad-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="99b0b-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="99b0b-126">Request body</span></span>
+<span data-ttu-id="99b0b-127">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="99b0b-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f75ad-128">応答</span><span class="sxs-lookup"><span data-stu-id="f75ad-128">Response</span></span>
-<span data-ttu-id="f75ad-p102">成功した場合、このメソッドは `204 NoContent` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="f75ad-p102">If successful, this method returns `204 NoContent` response code. It does not return anything in the response body.</span></span> 
+## <a name="response"></a><span data-ttu-id="99b0b-128">応答</span><span class="sxs-lookup"><span data-stu-id="99b0b-128">Response</span></span>
+<span data-ttu-id="99b0b-p102">成功した場合、このメソッドは `204 NoContent` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="99b0b-p102">If successful, this method returns `204 NoContent` response code. It does not return anything in the response body.</span></span> 
 
-## <a name="error-codes"></a><span data-ttu-id="f75ad-131">エラー コード</span><span class="sxs-lookup"><span data-stu-id="f75ad-131">Error codes</span></span>
-<span data-ttu-id="f75ad-132">この API は、HTTP コードの標準に従います。</span><span class="sxs-lookup"><span data-stu-id="f75ad-132">This API follows the standard of HTTP codes.</span></span> <span data-ttu-id="f75ad-133">それに加えて、カスタムエラーコードは以下のとおりです。</span><span class="sxs-lookup"><span data-stu-id="f75ad-133">Besides, the custom error codes are shown below.</span></span>
-|<span data-ttu-id="f75ad-134">エラー コード</span><span class="sxs-lookup"><span data-stu-id="f75ad-134">Error code</span></span>     | <span data-ttu-id="f75ad-135">エラー メッセージ</span><span class="sxs-lookup"><span data-stu-id="f75ad-135">Error message</span></span>              | <span data-ttu-id="f75ad-136">詳細</span><span class="sxs-lookup"><span data-stu-id="f75ad-136">Details</span></span> |
+## <a name="error-codes"></a><span data-ttu-id="99b0b-131">エラー コード</span><span class="sxs-lookup"><span data-stu-id="99b0b-131">Error codes</span></span>
+<span data-ttu-id="99b0b-132">この API は、HTTP コードの標準に従います。</span><span class="sxs-lookup"><span data-stu-id="99b0b-132">This API follows the standard of HTTP codes.</span></span> <span data-ttu-id="99b0b-133">それに加えて、カスタムエラーコードは以下のとおりです。</span><span class="sxs-lookup"><span data-stu-id="99b0b-133">Besides, the custom error codes are shown below.</span></span>
+|<span data-ttu-id="99b0b-134">エラー コード</span><span class="sxs-lookup"><span data-stu-id="99b0b-134">Error code</span></span>     | <span data-ttu-id="99b0b-135">エラー メッセージ</span><span class="sxs-lookup"><span data-stu-id="99b0b-135">Error message</span></span>              | <span data-ttu-id="99b0b-136">詳細</span><span class="sxs-lookup"><span data-stu-id="99b0b-136">Details</span></span> |
 |:--------------------| :---------------------|:--------------------|
-| <span data-ttu-id="f75ad-137">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="f75ad-137">400 BadRequest</span></span> | <span data-ttu-id="f75ad-138">RoleAssignmentRequestNotFound</span><span class="sxs-lookup"><span data-stu-id="f75ad-138">RoleAssignmentRequestNotFound</span></span> | <span data-ttu-id="f75ad-139">GovernanceRoleAssignmentRequest は、システムに存在しません。</span><span class="sxs-lookup"><span data-stu-id="f75ad-139">The governanceRoleAssignmentRequest does not exist in system.</span></span>
-| <span data-ttu-id="f75ad-140">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="f75ad-140">400 BadRequest</span></span> | <span data-ttu-id="f75ad-141">RequestCannotBeCancelled</span><span class="sxs-lookup"><span data-stu-id="f75ad-141">RequestCannotBeCancelled</span></span>    | <span data-ttu-id="f75ad-142">、 `Granted` `PendingApproval`、、の状態の要求のみ`PendingAdminDecision`を取り消すことができます。 `PendingApprovalProvisioning`</span><span class="sxs-lookup"><span data-stu-id="f75ad-142">Only requests in status of `Granted`, `PendingApproval`, `PendingApprovalProvisioning` and `PendingAdminDecision` can be cancelled.</span></span>
+| <span data-ttu-id="99b0b-137">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="99b0b-137">400 BadRequest</span></span> | <span data-ttu-id="99b0b-138">RoleAssignmentRequestNotFound</span><span class="sxs-lookup"><span data-stu-id="99b0b-138">RoleAssignmentRequestNotFound</span></span> | <span data-ttu-id="99b0b-139">GovernanceRoleAssignmentRequest は、システムに存在しません。</span><span class="sxs-lookup"><span data-stu-id="99b0b-139">The governanceRoleAssignmentRequest does not exist in system.</span></span>
+| <span data-ttu-id="99b0b-140">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="99b0b-140">400 BadRequest</span></span> | <span data-ttu-id="99b0b-141">RequestCannotBeCancelled</span><span class="sxs-lookup"><span data-stu-id="99b0b-141">RequestCannotBeCancelled</span></span>    | <span data-ttu-id="99b0b-142">、 `Granted` `PendingApproval`、、の状態の要求のみ`PendingAdminDecision`を取り消すことができます。 `PendingApprovalProvisioning`</span><span class="sxs-lookup"><span data-stu-id="99b0b-142">Only requests in status of `Granted`, `PendingApproval`, `PendingApprovalProvisioning` and `PendingAdminDecision` can be cancelled.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f75ad-143">例</span><span class="sxs-lookup"><span data-stu-id="f75ad-143">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="f75ad-144">要求</span><span class="sxs-lookup"><span data-stu-id="f75ad-144">Request</span></span>
-<span data-ttu-id="f75ad-145">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="f75ad-145">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="99b0b-143">例</span><span class="sxs-lookup"><span data-stu-id="99b0b-143">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="99b0b-144">要求</span><span class="sxs-lookup"><span data-stu-id="99b0b-144">Request</span></span>
+<span data-ttu-id="99b0b-145">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="99b0b-145">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="f75ad-146">プロトコル</span><span class="sxs-lookup"><span data-stu-id="f75ad-146">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="99b0b-146">プロトコル</span><span class="sxs-lookup"><span data-stu-id="99b0b-146">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "cancel_governanceroleassignmentrequest"
@@ -64,26 +67,26 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/cancel
 ```http
 POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignmentRequests/7c53453e-d5a4-41e0-8eb1-32d5ec8bfdee/cancel
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="f75ad-147">C#</span><span class="sxs-lookup"><span data-stu-id="f75ad-147">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="99b0b-147">C#</span><span class="sxs-lookup"><span data-stu-id="99b0b-147">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/cancel-governanceroleassignmentrequest-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f75ad-148">Javascript</span><span class="sxs-lookup"><span data-stu-id="f75ad-148">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="99b0b-148">Javascript</span><span class="sxs-lookup"><span data-stu-id="99b0b-148">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/cancel-governanceroleassignmentrequest-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="f75ad-149">目的-C</span><span class="sxs-lookup"><span data-stu-id="f75ad-149">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="99b0b-149">目的-C</span><span class="sxs-lookup"><span data-stu-id="99b0b-149">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/cancel-governanceroleassignmentrequest-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="f75ad-150">Java</span><span class="sxs-lookup"><span data-stu-id="f75ad-150">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="99b0b-150">Java</span><span class="sxs-lookup"><span data-stu-id="99b0b-150">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/cancel-governanceroleassignmentrequest-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="f75ad-151">応答</span><span class="sxs-lookup"><span data-stu-id="f75ad-151">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="99b0b-151">応答</span><span class="sxs-lookup"><span data-stu-id="99b0b-151">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,

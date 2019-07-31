@@ -4,29 +4,30 @@ description: 1つの DTMF イベント。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 9cf89df775bb663fbfb4c844b98c6cb35d085aa4
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 0eaa4b4159ffd5e7455b1155a7f3cd82c89b19aa
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345492"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964250"
 ---
-# <a name="toneinfo-resource-type"></a><span data-ttu-id="72207-103">toneInfo リソースの種類</span><span class="sxs-lookup"><span data-stu-id="72207-103">toneInfo resource type</span></span>
+# <a name="toneinfo-resource-type"></a><span data-ttu-id="4b297-103">toneInfo リソースの種類</span><span class="sxs-lookup"><span data-stu-id="4b297-103">toneInfo resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="72207-104">1つの DTMF イベント。</span><span class="sxs-lookup"><span data-stu-id="72207-104">A single DTMF event.</span></span>
+<span data-ttu-id="4b297-104">1つの DTMF イベント。</span><span class="sxs-lookup"><span data-stu-id="4b297-104">A single DTMF event.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="72207-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="72207-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="4b297-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="4b297-105">Properties</span></span>
 
-| <span data-ttu-id="72207-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="72207-106">Property</span></span>       | <span data-ttu-id="72207-107">型</span><span class="sxs-lookup"><span data-stu-id="72207-107">Type</span></span>    | <span data-ttu-id="72207-108">説明</span><span class="sxs-lookup"><span data-stu-id="72207-108">Description</span></span>|
+| <span data-ttu-id="4b297-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="4b297-106">Property</span></span>       | <span data-ttu-id="4b297-107">型</span><span class="sxs-lookup"><span data-stu-id="4b297-107">Type</span></span>    | <span data-ttu-id="4b297-108">説明</span><span class="sxs-lookup"><span data-stu-id="4b297-108">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="72207-109">sequenceid</span><span class="sxs-lookup"><span data-stu-id="72207-109">sequenceId</span></span> | <span data-ttu-id="72207-110">Int64</span><span class="sxs-lookup"><span data-stu-id="72207-110">Int64</span></span> | <span data-ttu-id="72207-111">DTMF イベントの順序付けに使用される増分識別子。</span><span class="sxs-lookup"><span data-stu-id="72207-111">An incremental identifier used for ordering DTMF events.</span></span> |
-| <span data-ttu-id="72207-112">低音</span><span class="sxs-lookup"><span data-stu-id="72207-112">tone</span></span> | <span data-ttu-id="72207-113">String</span><span class="sxs-lookup"><span data-stu-id="72207-113">String</span></span> | <span data-ttu-id="72207-114">可能な値は`tone0`、 `tone1`、 `tone2` `tone3` `tone4` `tone5` `tone6` `tone7` `tone8` `flash`、、 `star`、、、、、、、、です。 `tone9` `pound` `a` `b` `c` `d`</span><span class="sxs-lookup"><span data-stu-id="72207-114">Possible values are: `tone0`, `tone1`, `tone2`, `tone3`, `tone4`, `tone5`, `tone6`, `tone7`, `tone8`, `tone9`, `star`, `pound`, `a`, `b`, `c`, `d`, `flash`.</span></span> |
+| <span data-ttu-id="4b297-109">sequenceId</span><span class="sxs-lookup"><span data-stu-id="4b297-109">sequenceId</span></span> | <span data-ttu-id="4b297-110">Int64</span><span class="sxs-lookup"><span data-stu-id="4b297-110">Int64</span></span> | <span data-ttu-id="4b297-111">DTMF イベントの順序付けに使用される増分識別子。</span><span class="sxs-lookup"><span data-stu-id="4b297-111">An incremental identifier used for ordering DTMF events.</span></span> |
+| <span data-ttu-id="4b297-112">低音</span><span class="sxs-lookup"><span data-stu-id="4b297-112">tone</span></span> | <span data-ttu-id="4b297-113">String</span><span class="sxs-lookup"><span data-stu-id="4b297-113">String</span></span> | <span data-ttu-id="4b297-114">可能な値は`tone0`、 `tone1`、 `tone2` `tone3` `tone4` `tone5` `tone6` `tone7` `tone8` `flash`、、 `star`、、、、、、、、です。 `tone9` `pound` `a` `b` `c` `d`</span><span class="sxs-lookup"><span data-stu-id="4b297-114">Possible values are: `tone0`, `tone1`, `tone2`, `tone3`, `tone4`, `tone5`, `tone6`, `tone7`, `tone8`, `tone9`, `star`, `pound`, `a`, `b`, `c`, `d`, `flash`.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="72207-115">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="72207-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="4b297-115">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="4b297-115">JSON representation</span></span>
 
-<span data-ttu-id="72207-116">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="72207-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="4b297-116">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="4b297-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
