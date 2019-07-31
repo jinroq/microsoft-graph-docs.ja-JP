@@ -4,12 +4,13 @@ description: 新しい windows10EasEmailProfileConfiguration オブジェクト�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 02c665a989275c98f2f02e9fa6830d64988672fc
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: f550e12f258f33724e1366bfd667d2688ac3e2ce
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34962702"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35975600"
 ---
 # <a name="create-windows10easemailprofileconfiguration"></a>Windows10EasEmailProfileConfiguration を作成する
 

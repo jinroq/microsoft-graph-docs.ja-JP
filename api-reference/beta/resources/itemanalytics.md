@@ -1,15 +1,17 @@
 ---
 author: daspek
-ms.author: dspektor
+description: ItemAnalytics リソースは、アイテムに対して行われたアクティビティに分析を提供します。 このリソースは現在、SharePoint および OneDrive for business でのみ使用できます。
 ms.date: 09/14/2017
 title: ItemAnalytics
 localization_priority: Normal
-ms.openlocfilehash: 862b0b14f1efeb3a83dd4b842c0eb995abeabb80
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: d2be5c7665961248e989101a1a9bd21eb805e6e3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620263"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967102"
 ---
 # <a name="itemanalytics-resource-type"></a>itemAnalytics リソースの種類
 

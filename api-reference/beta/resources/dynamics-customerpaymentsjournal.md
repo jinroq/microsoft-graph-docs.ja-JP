@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: a8b01124db732866e1a7b971af57d7e0a2b692e1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 0791fe2b8c36bdff535f7fc56dea54abe1632647
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507253"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973633"
 ---
 # <a name="customerpaymentsjournals-resource-type"></a>customerPaymentsJournals リソースの種類
 Dynamics 365 Business Central の顧客支払仕訳帳を表します。
@@ -20,10 +21,10 @@ Dynamics 365 Business Central の顧客支払仕訳帳を表します。
 
 | メソッド               | 戻り値の型             |説明                      |
 |:---------------------|:------------------------|:--------------------------------|
-|[customerPaymentJournals を取得する](../api/dynamics-customerpaymentsjournal-get.md)      |customerPaymentJournals|顧客支払仕訳帳を取得します。   |
+|[CustomerPaymentJournals を取得する](../api/dynamics-customerpaymentsjournal-get.md)      |customerPaymentJournals|顧客支払仕訳帳を取得します。   |
 |[Post customerPaymentJournals](../api/dynamics-create-customerpaymentsjournal.md)  |customerPaymentJournals|顧客支払仕訳帳を作成します。|
 |[Patch customerPaymentJournals](../api/dynamics-customerpaymentsjournal-update.md) |customerPaymentJournals|顧客支払仕訳帳を更新します。|
-|[customerPaymentJournals の削除](../api/dynamics-customerpaymentsjournal-delete.md)|なし                     |顧客支払仕訳帳を削除します。|
+|[CustomerPaymentJournals の削除](../api/dynamics-customerpaymentsjournal-delete.md)|none                     |顧客支払仕訳帳を削除します。|
 
 ## <a name="properties"></a>プロパティ
 | プロパティ           | 型                  |説明                                                             |

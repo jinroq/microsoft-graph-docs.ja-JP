@@ -4,12 +4,13 @@ description: Windows10PkcsCertificateProfile オブジェクトのプロパテ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dab8e014077c24dca3f6db52bf7cb41e0876c4a9
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 28d943b9d1c204375325c50dd8194e0abd4950eb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34977990"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35975355"
 ---
 # <a name="get-windows10pkcscertificateprofile"></a>Windows10PkcsCertificateProfile を取得する
 

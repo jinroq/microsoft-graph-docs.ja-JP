@@ -4,12 +4,13 @@ description: サインインに使用するデバイスに関連付けられて�
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f3a0d7f141723beb5194860b025fe6fa349eb95a
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+doc_type: resourcePageType
+ms.openlocfilehash: 45d87629f1ac513fe13c98592637f20f5fac0129
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34657701"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973773"
 ---
 # <a name="devicedetail-resource-type"></a>deviceDetail リソースの種類
 サインインに使用するデバイスに関連付けられているデバイスの詳細を示します。 デバイスが Azure AD で管理されている場合、デバイスブラウザーや OS 情報などの情報が含まれます。

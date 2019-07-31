@@ -4,12 +4,13 @@ description: 特定のテナントに属するデバイスで開始されたリ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: daaf42914d18e2016c7db566f9a91bd4037b10a6
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 5a691997c985de17646a28d3a72262ae3c99c174
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34963885"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35968324"
 ---
 # <a name="remoteactionaudit-resource-type"></a>remoteActionAudit リソースの種類
 

@@ -4,12 +4,13 @@ description: リソースの JSON 表記を次に示します。
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: c94e79f688e117960b3a8a0f2c9888a908634a82
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: c1e441b142ef27abbdde4ac613ef8d75848f5001
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581724"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966553"
 ---
 # <a name="office365groupsactivitycounts-resource-type"></a>office365GroupsActivityCounts リソースの種類
 
@@ -17,13 +18,13 @@ ms.locfileid: "32581724"
 
 | プロパティ               | 型   | 説明                              |
 | :--------------------- | :----- | ---------------------------------------- |
-| reportrefreshdate      | Date   | コンテンツの最新の日付。          |
+| reportRefreshDate      | 日付   | コンテンツの最新の日付。          |
 | exchangeEmailsReceived | Int64  | グループメールボックスで受信したメールの数。 |
 | yammerMessagesPosted   | Int64  | Yammer グループに投稿されたメッセージの数。 |
 | yammerMessagesRead     | Int64  | Yammer グループで読み取られたメッセージの数。 |
 | yammerMessagesLiked    | Int64  | Yammer グループに賛同されたメッセージの数。 |
-| reportDate             | Date   | グループメールボックスに送信されたメールの数またはメッセージ数が Yammer グループで投稿、読み取り、または賛同された日付 |
-| reportperiod           | String | レポートの対象となる日数を指定します。    |
+| reportDate             | 日付   | グループメールボックスに送信されたメールの数またはメッセージ数が Yammer グループで投稿、読み取り、または賛同された日付 |
+| reportPeriod           | String | レポートの対象となる日数を指定します。    |
 
 ## <a name="json-representation"></a>JSON 表記
 

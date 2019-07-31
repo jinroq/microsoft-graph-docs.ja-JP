@@ -2,12 +2,15 @@
 title: PrivilegedRoleAssignmentRequest を作成する
 description: Privilegedroleassignmentrequest オブジェクトを作成します。
 localization_priority: Normal
-ms.openlocfilehash: 0cb7e958e9eaf8550d1262ed00e66ee477cbd195
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: ea9158154aaa528f90be03a153ff1e74c650e14c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35931853"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978694"
 ---
 # <a name="create-privilegedroleassignmentrequest"></a>PrivilegedRoleAssignmentRequest を作成する
 

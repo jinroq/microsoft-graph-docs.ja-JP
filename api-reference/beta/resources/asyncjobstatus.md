@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: このリソースは、非同期ジョブの進行状況に関する情報を提供します。
 ms.date: 09/10/2017
 title: AsyncJobStatus
 localization_priority: Normal
-ms.openlocfilehash: 74ead4ca8e45c5baebe3ea74377ce102d9e2ee88
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: e8a745a6ab03728eb879767c6af45a423f151d63
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328651"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974305"
 ---
 # <a name="asyncjobstatus-resource"></a>AsyncJobStatus リソース
 

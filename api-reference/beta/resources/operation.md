@@ -2,12 +2,15 @@
 title: operation リソースの種類
 description: 長時間実行されている操作の状態。
 localization_priority: Normal
-ms.openlocfilehash: e1e0f7a886d460bc378fdc75041e17b997897e2d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 237e16373db30db9f4a9ed61c6182f6dd826d956
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341785"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966364"
 ---
 # <a name="operation-resource-type"></a>operation リソースの種類
 
@@ -17,15 +20,15 @@ ms.locfileid: "33341785"
 
 ## <a name="methods"></a>メソッド
 
-なし
+None
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ           | 型            | 説明                                                                     |
 | :----------------- | :-------------- | :-------------------------------------------------------------------------------|
 | createdDateTime    | DateTimeOffset  | 操作の開始時刻。                                                |
-| id                 | String          | 操作 id。読み取り専用です。 サーバーによって生成されます。                                  |
-| lastactiondatetime | DateTimeOffset  | 操作の最後の操作の時刻。                                   |
+| id                 | 文字列          | 操作 id。読み取り専用です。 サーバーによって生成されます。                                  |
+| lastActionDateTime | DateTimeOffset  | 操作の最後の操作の時刻。                                   |
 | status             | String          | 使用可能な値: `notStarted`、`running`、`completed`、`failed`。 読み取り専用です。 |
 
 ## <a name="relationships"></a>関係

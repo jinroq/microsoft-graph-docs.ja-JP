@@ -4,12 +4,13 @@ description: Windows81SCEPCertificateProfile オブジェクトのプロパテ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8444f848d0b151f728265d6418fc956dc534dcfe
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 0344fd8c4f3636374b18cde3db1a39eae601d924
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34977780"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977126"
 ---
 # <a name="get-windows81scepcertificateprofile"></a>Windows81SCEPCertificateProfile を取得する
 

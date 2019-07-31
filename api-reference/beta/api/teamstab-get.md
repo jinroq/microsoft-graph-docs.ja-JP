@@ -4,12 +4,13 @@ description: '指定したタブのプロパティとリレーションシップ
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 5077cbd7fbdebd946e9dbe79dfebb320e20e15a7
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: a2408bb63d3f4cb1e6cb44a303e689ae77416af5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33330116"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977476"
 ---
 # <a name="get-tab"></a>タブを取得する
 
@@ -57,7 +58,7 @@ GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}?$expand=
 #### <a name="response"></a>応答
 応答の例を次に示します。 
 
->**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
+>**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

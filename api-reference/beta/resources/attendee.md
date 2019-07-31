@@ -2,12 +2,15 @@
 title: 参加者リソースの種類
 description: イベントの参加者です。 これはユーザー、またはテナントの Exchange Server 上でリソースとしてセットアップされている会議室や備品などのリソースとなります。
 localization_priority: Normal
-ms.openlocfilehash: 12512ea274e549cacba364fb394a3346e6bfee56
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 435a9b3badf20ddb79affd4e40e5ca8b66ff34c8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328622"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974292"
 ---
 # <a name="attendee-resource-type"></a>参加者リソースの種類
 

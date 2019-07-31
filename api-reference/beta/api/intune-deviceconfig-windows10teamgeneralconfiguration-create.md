@@ -4,12 +4,13 @@ description: 新しい windows10TeamGeneralConfiguration オブジェクトを�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d1d343e9b654234c9ededd7713be787c4f58d62e
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 262a161159e582d206292b8e37f2dcdf7ab66bb6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34977955"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35975243"
 ---
 # <a name="create-windows10teamgeneralconfiguration"></a>windows10TeamGeneralConfiguration の作成
 

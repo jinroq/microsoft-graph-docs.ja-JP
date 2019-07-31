@@ -4,12 +4,13 @@ description: managedAppStatusRaw オブジェクトのプロパティとリレ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3612a3f7b268f7d9a6a196e8f73bbe9e3ab94070
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: f83a5adcaad71edbf8dc7949c90e47cb12056177
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34987188"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35980675"
 ---
 # <a name="get-managedappstatusraw"></a>Get managedAppStatusRaw
 

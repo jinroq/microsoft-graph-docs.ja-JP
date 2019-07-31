@@ -1,15 +1,16 @@
 ---
 title: chatMessage リソースの種類
 description: チャネルまたはチャット エンティティ内の個別のチャット メッセージを表します。 メッセージは、ルート メッセージまたはメッセージの中の **replyToId** プロパティに定義されているスレッドの一部にすることができます。
+doc_type: resourcePageType
 localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: 99e69bd51a661b67fd4cb325fffe80db91214714
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+ms.openlocfilehash: f807c45fcff2a5e2ea928105ed970d426cfdc1f3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778671"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974032"
 ---
 # <a name="chatmessage-resource-type"></a>chatMessage リソースの種類
 

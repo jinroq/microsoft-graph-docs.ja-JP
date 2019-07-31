@@ -2,12 +2,15 @@
 title: licenseUnitsDetail リソースの種類
 description: '**subscribedSku** エンティティの prepaidUnits のプロパティは、**licenseUnitsDetail** 型です。'
 localization_priority: Normal
-ms.openlocfilehash: a119ea5d81689a814a9f7f8b10da8b267e98dd03
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 4482f9661b41981717422c7c874319fbca7be23d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345318"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966976"
 ---
 # <a name="licenseunitsdetail-resource-type"></a>licenseUnitsDetail リソースの種類
 

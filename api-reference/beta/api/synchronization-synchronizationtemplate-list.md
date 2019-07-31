@@ -2,14 +2,15 @@
 title: 既存の同期テンプレートを一覧表示する
 description: 特定のアプリケーションまたはサービスプリンシパルに関連付けられている同期テンプレートを一覧表示します。
 localization_priority: Normal
+doc_type: apiPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5f8d68f7da852e6026b0f146bf76db455645d597
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: c38f65a0e91a3a1c8c9a89042bfd08a27fb1dbce
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35869096"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977606"
 ---
 # <a name="list-existing-synchronization-templates"></a>既存の同期テンプレートを一覧表示する
 

@@ -2,12 +2,15 @@
 title: attendeeBase リソースの種類
 description: 出席者の種類です。
 localization_priority: Normal
-ms.openlocfilehash: a0095a2076cd09bee2d4b934bac29cd030924ec1
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: dfa873daf5b3c5a47e10ab480292ffb11b656b01
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328581"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974299"
 ---
 # <a name="attendeebase-resource-type"></a>attendeeBase リソースの種類
 

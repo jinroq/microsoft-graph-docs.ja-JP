@@ -1,21 +1,22 @@
 ---
-title: callroute リソースの種類
-description: callroute の種類。
+title: callRoute リソースの種類
+description: CallRoute の種類。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 06dd1a2265c5a6bda9feba0b51e7fd731d7945c3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 9978bffd55f62f0646f84d2405df70eba6232d68
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328278"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974058"
 ---
-# <a name="callroute-resource-type"></a>callroute リソースの種類
+# <a name="callroute-resource-type"></a>callRoute リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-callroute の種類。
+CallRoute の種類。
 
 ## <a name="properties"></a>プロパティ
 
@@ -23,7 +24,7 @@ callroute の種類。
 | :------------------ | :---------------------------- | :----------------------------------------------------------- |
 | 最終的な               | [identitySet](identityset.md) | 呼び出しで解決された id。               |
 | 翻訳元            | [identitySet](identityset.md) | 最初に呼び出しで使用された id。           |
-| routingtype         | String                        | 可能な値は、`forwarded`、`lookup`、`selfFork` です。  |
+| routingType         | String                        | 可能な値は、`forwarded`、`lookup`、`selfFork` です。  |
 
 ## <a name="json-representation"></a>JSON 表記
 

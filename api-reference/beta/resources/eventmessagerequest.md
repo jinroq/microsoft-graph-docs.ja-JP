@@ -1,17 +1,18 @@
 ---
-title: eventmessagerequest リソースの種類
+title: eventMessageRequest リソースの種類
 description: 会議出席依頼を表すメッセージ。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: ead65f036fe5537b7e349124b2771eff575be22f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 3d691b814517a6180a42ecd13954e019cc75be8b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333955"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973592"
 ---
-# <a name="eventmessagerequest-resource-type"></a>eventmessagerequest リソースの種類
+# <a name="eventmessagerequest-resource-type"></a>eventMessageRequest リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -91,7 +92,7 @@ ms.locfileid: "33333955"
 |endDateTime|[DateTimeTimeZone](datetimetimezone.md)|要求された会議の終了時刻。|
 |from|[recipient](recipient.md)|メッセージのメールボックス所有者と送信者。|
 |hasAttachments|Boolean|メッセージに添付ファイルがあるかどうかを示します。|
-|id|String|読み取り専用です。|
+|id|文字列|読み取り専用です。|
 |importance|String| メッセージの重要度: `Low`、`Normal`、`High`。|
 |inferenceClassification|String| 可能な値は、`Focused`、`Other` です。|
 |isDeliveryReceiptRequested|Boolean|メッセージの開封確認メッセージが要求されているかどうかを示します。|
@@ -103,7 +104,7 @@ ms.locfileid: "33333955"
 |location|[Location](location.md)|要求された会議の場所。|
 |meetingMessageType|String| イベント メッセージの種類: `none`、`meetingRequest`、`meetingCancelled``meetingAccepted``meetingTentativelyAccepted``meetingDeclined`。|
 |parentFolderId|String|メッセージの親 mailFolder の一意識別子。|
-|前の enddatetime|[DateTimeTimeZone](datetimetimezone.md)|要求された会議の前回の終了時刻。|
+|前の Enddatetime|[DateTimeTimeZone](datetimetimezone.md)|要求された会議の前回の終了時刻。|
 |previousLocation|[Location](location.md)|会議出席依頼の以前の場所。|
 |previousStartDateTime|[DateTimeTimeZone](datetimetimezone.md)|要求された会議の前回の開始時刻。|
 |receivedDateTime|DateTimeOffset|メッセージが受信された日時です。|
@@ -133,14 +134,14 @@ ms.locfileid: "33333955"
 |[添付ファイルの作成](../api/eventmessage-post-attachments.md) |[Attachment](attachment.md)| 添付ファイル コレクションへの投稿により、新しい添付ファイルを作成します。|
 |[添付ファイルを一覧表示する](../api/eventmessage-list-attachments.md) |[Attachment](attachment.md) コレクション| 添付ファイルのオブジェクト コレクションを取得します。|
 |[更新する](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |eventMessage オブジェクトを更新します。 |
-|[削除](../api/eventmessage-delete.md) | None |eventMessage オブジェクトを削除します。 |
+|[Delete](../api/eventmessage-delete.md) | None |eventMessage オブジェクトを削除します。 |
 |[コピー](../api/message-copy.md)|[Message](message.md)||
 |[createForward](../api/message-createforward.md)|[Message](message.md)||
 |[createReply](../api/message-createreply.md)|[Message](message.md)||
 |[createReplyAll](../api/message-createreplyall.md)|[Message](message.md)||
-|[forward](../api/message-forward.md)|なし|メッセージを転送します。 その後、メッセージは [送信済みアイテム] フォルダーに保存されます。|
-|[move](../api/message-move.md)|[Message](message.md)|メッセージを mailfolder に移動します。|
-|[返信](../api/message-reply.md)|なし|メッセージの送信者に replys を送信します。 その後、メッセージは [送信済みアイテム] フォルダーに保存されます。|
+|[forward](../api/message-forward.md)|None|メッセージを転送します。 その後、メッセージは [送信済みアイテム] フォルダーに保存されます。|
+|[move](../api/message-move.md)|[Message](message.md)|メッセージを mailFolder に移動します。|
+|[返信](../api/message-reply.md)|None|メッセージの送信者に replys を送信します。 その後、メッセージは [送信済みアイテム] フォルダーに保存されます。|
 |[replyAll](../api/message-replyall.md)|なし|メッセージの受信者すべてに返信します。その後、メッセージは送信済みアイテム フォルダーに保存されます。|
 |[送信](../api/message-send.md)|なし|以前に作成したメッセージの下書きを送信します。その後、メッセージは送信済みアイテム フォルダーに保存されます。|
 

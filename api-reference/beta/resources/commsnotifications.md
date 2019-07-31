@@ -1,17 +1,18 @@
 ---
-title: commsnotifications リソースの種類
+title: commsNotifications リソースの種類
 description: 複数の通知を1つのバッチで送信するために通信サーバーによって使用される通知の一覧。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4497e2e1ba28e7f2d0b203f8f982053c5eb8ae1f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 770122387b89e96fdd8dbd9077488a9956fd90f4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341469"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973252"
 ---
-# <a name="commsnotifications-resource-type"></a>commsnotifications リソースの種類
+# <a name="commsnotifications-resource-type"></a>commsNotifications リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,7 +22,7 @@ ms.locfileid: "33341469"
 
 | プロパティ       | 型                                                 | 説明                                   |
 |:---------------|:-----------------------------------------------------|:----------------------------------------------|
-| value          | [commsnotification](commsnotification.md)コレクション | リソースの変更の通知。 |
+| value          | [Commsnotification](commsnotification.md)コレクション | リソースの変更の通知。 |
 
 ## <a name="json-representation"></a>JSON 表記
 

@@ -4,12 +4,13 @@ description: 新しい resourceOperation オブジェクトを作成します。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b2351eeb6f65b1d12dae4fdd6b28eaf525cbdc87
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 152bcb9ee25833b2b2ce19b766ef1356cd0a1235
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34988637"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35980080"
 ---
 # <a name="create-resourceoperation"></a>resourceOperation の作成
 

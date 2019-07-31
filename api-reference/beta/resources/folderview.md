@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: FolderView リソースは、フォルダーのユーザー エクスペリエンスに関する推奨事項を提供または設定します。
 ms.date: 09/10/2017
 title: FolderView
 localization_priority: Normal
-ms.openlocfilehash: fa1ecc3152492ceeee61a9bc94ae1b4dfbb8ff3d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 5238c749d509339cd0e922e49b7e2d4d2da3b23f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333735"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973549"
 ---
 # <a name="folderview-resource-type"></a>FolderView リソースの種類
 
@@ -17,7 +19,7 @@ ms.locfileid: "33333735"
 
 **FolderView** リソースは、フォルダーのユーザー エクスペリエンスに関する推奨事項を提供または設定します。
 
-これは、[driveItem][item-resource] リソースの [folder][folder-facet] プロパティから使用できます。
+このプロパティは、 [Drive item][item-resource]リソースの[folder][folder-facet]プロパティから使用できます。
 
 ## <a name="json-representation"></a>JSON 表記
 

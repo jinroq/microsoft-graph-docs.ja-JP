@@ -4,12 +4,13 @@ description: 'メッセージは会議出席依頼、キャンセル、応答 (�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: d4fa746df2c2dcde7785d768c0bd9268c19c113f
-ms.sourcegitcommit: b18ccb24fc79f3abb470cd759e25cdd266fc77c7
+doc_type: resourcePageType
+ms.openlocfilehash: d22287c8c2605a623829adc94e8d05db1e1ec020
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34108981"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973619"
 ---
 # <a name="eventmessage-resource-type"></a>eventMessage リソースの種類
 
@@ -154,9 +155,9 @@ ms.locfileid: "34108981"
 |[createForward](../api/message-createforward.md)|[message](message.md)|転送メッセージの下書きを作成します。その後、下書きを[更新](../api/message-update.md)または[送信](../api/message-send.md)できます。|
 |[createReply](../api/message-createreply.md)|[message](message.md)|返信メッセージの下書きを作成します。その後、下書きを[更新](../api/message-update.md)または[送信](../api/message-send.md)できます。|
 |[createReplyAll](../api/message-createreplyall.md)|[message](message.md)|全員に返信メッセージの下書きを作成します。その後、下書きを[更新](../api/message-update.md)または[送信](../api/message-send.md)できます。|
-|[forward](../api/message-forward.md)|なし|メッセージを転送します。その後、メッセージは送信済みアイテム フォルダーに保存されます。|
+|[forward](../api/message-forward.md)|None|メッセージを転送します。その後、メッセージは送信済みアイテム フォルダーに保存されます。|
 |[移動](../api/message-move.md)|[message](message.md)|メッセージをフォルダーに移動します。これにより、宛先フォルダーにメッセージの新しいコピーが作成されます。|
-|[返信](../api/message-reply.md)|なし|メッセージの送信者に返信します。その後、メッセージは送信済みアイテム フォルダーに保存されます。|
+|[返信](../api/message-reply.md)|None|メッセージの送信者に返信します。その後、メッセージは送信済みアイテム フォルダーに保存されます。|
 |[replyAll](../api/message-replyall.md)|なし|メッセージの受信者すべてに返信します。その後、メッセージは送信済みアイテム フォルダーに保存されます。|
 |[送信](../api/message-send.md)|なし|以前に作成したメッセージの下書きを送信します。その後、メッセージは送信済みアイテム フォルダーに保存されます。|
 |[unsubscribe](../api/message-unsubscribe.md)|なし|List-Unsubscribe ヘッダー内の最初の mailto コマンドで指定されたデータとアドレスを使用して、メッセージを送信します。|

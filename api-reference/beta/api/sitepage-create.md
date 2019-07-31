@@ -1,16 +1,17 @@
 ---
 author: rahmit
-ms.author: rahmit
+description: サイトの [サイトページ] リストに新しいサイトページを作成します。
 ms.date: 05/07/2018
 title: SharePoint サイトで新しいページを作成する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 93376d4b724bfea59c44456eb61bc22f9837444b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: bb54af97b1a2527893c5090e52e5bb7aa8381c94
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33330178"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977868"
 ---
 # <a name="create-a-page-in-the-site-pages-list-of-a-site"></a>サイトのサイトページリストにページを作成する
 
@@ -38,7 +39,7 @@ POST /sites/{site-id}/pages
 
 ## <a name="request-body"></a>要求本文
 
-要求本文で、作成する[sitepage][]リソースの JSON 表記を指定します。
+要求本文で、作成する[Sitepage][]リソースの JSON 表記を指定します。
 
 ## <a name="example"></a>例
 
@@ -101,7 +102,7 @@ Content-Type: application/json
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは作成されたページの応答本文で[sitepage][]を返します。
+成功した場合、このメソッドは作成されたページの応答本文で[Sitepage][]を返します。
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePage", "truncated": true } -->
 

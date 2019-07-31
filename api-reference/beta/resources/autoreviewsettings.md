@@ -1,15 +1,18 @@
 ---
-title: autoreviewsettings リソースの種類
+title: autoReviewSettings リソースの種類
 description: ''
 localization_priority: Normal
-ms.openlocfilehash: 9c7f55761c0aeaae479c4377c5642e0c7b50db27
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 5dbd6212d1b568871d5a61750da822353f0a816f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348400"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974263"
 ---
-# <a name="autoreviewsettings-resource-type"></a>autoreviewsettings リソースの種類
+# <a name="autoreviewsettings-resource-type"></a>autoReviewSettings リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -19,7 +22,7 @@ ms.locfileid: "33348400"
 |:---|:---|:---|
 | notReviewedResult | String |  |
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記

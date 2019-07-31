@@ -2,12 +2,15 @@
 title: プログラムの programControls を一覧表示する
 description: Azure AD access レビュー機能で、特定のプログラムにリンクされているすべての programControl オブジェクトを一覧表示します。
 localization_priority: Normal
-ms.openlocfilehash: c809bbf95900875d306a8d2cbb0270f832a4968d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: b01e755ead872b61ac4f3523bbe8d93ebd670fbd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35875390"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978568"
 ---
 # <a name="list-programcontrols-of-a-program"></a>プログラムの programControls を一覧表示する
 

@@ -3,12 +3,14 @@ title: サブスクリプションを削除する
 description: サブスクリプションを削除します。
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: cb76dca373d6d175ad68c38cedb8b00573d69816
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+ms.openlocfilehash: d5085f616d386d6fc9438b163b13173d19cfcfe1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35869510"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977828"
 ---
 # <a name="delete-subscription"></a>サブスクリプションを削除する
 
