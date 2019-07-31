@@ -4,12 +4,13 @@ description: ユーザーをデバイスの登録済み所有者として追加�
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a392d1d9c998bad74d29ad4f8c74a3bec1c61ff4
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: ff7ec2b69721039a166df32e4c1a9cdf37db4993
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35437195"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35951352"
 ---
 # <a name="create-registeredowner"></a>RegisteredOwner を作成する
 

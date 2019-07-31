@@ -4,12 +4,13 @@ description: WindowsOfficeClientSecurityConfiguration オブジェクトのプ�
 localization_priority: Normal
 author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 87f6378c8f2febcb01d836dcc82a4cb4f765b984
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: b8c93cfff24291ce7dfe9d17fe0dde5d77c99fa5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33933922"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35958719"
 ---
 # <a name="update-windowsofficeclientsecurityconfiguration"></a>WindowsOfficeClientSecurityConfiguration の更新
 

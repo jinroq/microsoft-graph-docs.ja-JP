@@ -4,12 +4,13 @@ description: 単一のデルタクエリで、次の種類の新規作成、更�
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 477760601072d5cae461d3dfb5eb2cb8c251f6f3
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: d9a02cd054c7cb7c47de27d227bb100303b8ca84
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35862460"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35951184"
 ---
 # <a name="directoryobject-delta"></a>directoryObject: delta
 

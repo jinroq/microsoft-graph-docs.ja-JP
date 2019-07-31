@@ -1,19 +1,20 @@
 ---
-title: itemcategories の更新
+title: ItemCategories の更新
 description: Dynamics 365 Business Central のアイテムカテゴリを更新します。
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: f924cef68ab9d8ca0816f35acade54b5f20d770a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: a44da57af784d0506392090e06a0851887499f34
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458545"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956192"
 ---
-# <a name="update-itemcategories"></a>itemcategories の更新
+# <a name="update-itemcategories"></a>ItemCategories の更新
 Dynamics 365 Business Central のアイテムカテゴリオブジェクトのプロパティを更新します。
 
 ## <a name="permissions"></a>アクセス許可
@@ -39,7 +40,7 @@ PATCH /financials/companies('{id}')/itemCategories('{id}')
 |-------------|-------------------------|
 |Authorization|ベアラー {トークン}。必須。|
 |Content-Type |application/json         |
-|If-Match     |必須です。 この要求ヘッダーが含まれていて、指定された eTag が**itemcategories**の現在のタグと一致しない場合、 **itemcategories**は更新されません。 |
+|If-Match     |必須です。 この要求ヘッダーが含まれていて、指定された eTag が**Itemcategories**の現在のタグと一致しない場合、 **itemcategories**は更新されません。 |
 
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。

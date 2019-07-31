@@ -4,12 +4,13 @@ description: 新しい windowsOfficeClientSecurityConfiguration オブジェク�
 localization_priority: Normal
 author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: ad78622d6353ff8bee262e8d7f6c55ea70a48799
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: aea9c8207d904eb001b0c3bf86a42233385fd2ea
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33933978"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35958782"
 ---
 # <a name="create-windowsofficeclientsecurityconfiguration"></a>WindowsOfficeClientSecurityConfiguration を作成する
 

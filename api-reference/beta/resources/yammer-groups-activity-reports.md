@@ -1,21 +1,22 @@
 ---
 title: Yammer グループ アクティビティ レポート
-description: 組織内の yammer グループのアクティビティについての洞察を得て、作成され、使用されている yammer グループの数を確認できます。
+description: 組織内の Yammer グループのアクティビティについての洞察を得て、作成され、使用されている Yammer グループの数を確認できます。
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 9035984cf33c56811dc411a6c9cc01e6d438d194
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.openlocfilehash: 07a78a4b2047e03beee611443240f56739f76b4f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342794"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35963842"
 ---
 # <a name="yammer-groups-activity-reports"></a>Yammer グループ アクティビティ レポート
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-組織内の yammer グループのアクティビティについての洞察を得て、作成され、使用されている yammer グループの数を確認できます。
+組織内の Yammer グループのアクティビティについての洞察を得て、作成され、使用されている Yammer グループの数を確認できます。
 
 > **注:** 別のレポートのビューとレポート名についての詳細は、「[Office 365 レポート: Yammer グループ アクティビティ](https://support.office.com/client/Yammer-groups-activity-report-94dd92ec-ea73-43c6-b51f-2a11fd78aa31)」を参照してください。
 

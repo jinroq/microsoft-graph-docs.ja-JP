@@ -4,12 +4,13 @@ description: グラフに凡例を表します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 2e9c032966f62ac48e178aa6625b3f9891d2518a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 42414f0089cf3e33529796ebbeb53b95bc1d4ef2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348890"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964040"
 ---
 # <a name="workbookchartlegend-resource-type"></a>workbookChartLegend リソースの種類
 
@@ -21,17 +22,17 @@ ms.locfileid: "33348890"
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[workbookChartLegend を取得する](../api/chartlegend-get.md) | [workbookChartLegend](workbookchartlegend.md) |chartLegend オブジェクトのプロパティと関係を読み取ります。|
+|[WorkbookChartLegend を取得する](../api/chartlegend-get.md) | [workbookChartLegend](workbookchartlegend.md) |chartLegend オブジェクトのプロパティと関係を読み取ります。|
 |[Update](../api/chartlegend-update.md) | [workbookChartLegend](workbookchartlegend.md) |ChartLegend オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |overlay|ブール値|グラフの凡例をグラフの本体に重ねるかどうかを指定するブール型の値です。|
-|position|string|グラフの凡例の位置を表します。 使用可能な値は`Top`、 `Bottom`、 `Left` `Right` `Corner`、、、 `Custom`、です。|
+|position|string|グラフの凡例の位置を表します。 使用可能な値: `Top`、`Bottom`、`Left`、`Right`、`Corner`、`Custom`。|
 |visible|ブール値|ChartLegend オブジェクトを表示または非表示にするかを表すブール型の値。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |format|[workbookChartLegendFormat](workbookchartlegendformat.md)|塗りつぶしとフォントの書式設定を含む、グラフの凡例の書式設定を表します。 読み取り専用です。|

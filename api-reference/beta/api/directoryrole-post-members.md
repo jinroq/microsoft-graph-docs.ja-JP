@@ -4,12 +4,13 @@ description: この API を使用して、新しいディレクトリ ロール�
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 733370a56c142a9379d95ac3afa39a3d5a91c667
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: 1af429043398166a85c2745c02f780c116041c0b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35436852"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957643"
 ---
 # <a name="add-directory-role-member"></a>ディレクトリ ロールのメンバーを追加する
 
@@ -21,9 +22,9 @@ ms.locfileid: "35436852"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Directory.AccessAsUser.All    |
+|委任 (職場または学校のアカウント) | RoleManagement、Directory.accessasuser.all、およびすべてのディレクトリ    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | サポートされていません。 |
+|アプリケーション | RoleManagement |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

@@ -4,12 +4,13 @@ description: Win32LobApp オブジェクトのプロパティとリレーショ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 98d6ac957d683d3545286f5b8d5ff0be0ba818f3
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 655059e6b7daac90ea0bf495ff8afbedea0bf08b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34973328"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35960245"
 ---
 # <a name="get-win32lobapp"></a>Win32LobApp を取得する
 

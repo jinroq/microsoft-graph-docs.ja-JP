@@ -1,15 +1,18 @@
 ---
-title: programcontrol リソースの種類
+title: programControl リソースの種類
 description: Azure AD access レビュー機能では、program control オブジェクトは、アクセスレビューをプログラムにリンクするコントロールを表します。
 localization_priority: Normal
-ms.openlocfilehash: 7d194f3e80f44eb57be0deb7d2ffd71624c385d7
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 16824c2ed0c053f0cc4f3a0a2903324ff1a2bf5e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344023"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965636"
 ---
-# <a name="programcontrol-resource-type"></a>programcontrol リソースの種類
+# <a name="programcontrol-resource-type"></a>programControl リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -20,17 +23,17 @@ Azure AD [access レビュー](accessreviews-root.md)機能では、program cont
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[programcontrol を作成する](../api/programcontrol-create.md) |     [programcontrol](programcontrol.md) |   プログラムに programcontrol を追加します。|
-|[programcontrol の削除](../api/programcontrol-delete.md) |     なし。   |   プログラムから programcontrol を削除します。|
-|[programcontrols のリスト](../api/programcontrol-list.md) | [programcontrol](programcontrol.md)コレクション| テナント内のすべてのプログラムでコントロールを一覧表示します。|
+|[ProgramControl を作成する](../api/programcontrol-create.md) |     [programControl](programcontrol.md) |   プログラムに programControl を追加します。|
+|[ProgramControl の削除](../api/programcontrol-delete.md) |     なし。   |   プログラムから programControl を削除します。|
+|[ProgramControls のリスト](../api/programcontrol-list.md) | [Programcontrol](programcontrol.md)コレクション| テナント内のすべてのプログラムでコントロールを一覧表示します。|
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 | `id`                     |`String`                | プログラムとコントロール間のリンクの機能割り当て識別子                                      |
-| `programId`              |`String`                | このコントロールが含まれるプログラムの programid。 作成時に必要です。                            |
+| `programId`              |`String`                | このコントロールが含まれるプログラムの programId。 作成時に必要です。                            |
 | `controlId`              |`String`                | コントロールの controlId (特にアクセスレビューの識別子)。 作成時に必要です。                                                |
-| `controlTypeId`          |`String`                | programcontroltype には、プログラムコントロールの種類を指定します。たとえば、ゲストアクセスレビューにリンクしているコントロールがあります。 作成時に必要です。 |
+| `controlTypeId`          |`String`                | ProgramControlType には、プログラムコントロールの種類を指定します。たとえば、ゲストアクセスレビューにリンクしているコントロールがあります。 作成時に必要です。 |
 | `displayName`            |`String`                | コントロールの名前を指定します。                                                             |
 | `status`                 |`String`                | コントロールのライフサイクル状態。                                                 |
 | `createdDateTime`        |`DateTimeOffset`        | プログラムコントロールの作成日時。                                        |
@@ -46,8 +49,8 @@ Azure AD [access レビュー](accessreviews-root.md)機能では、program cont
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[プログラムの programcontrols を一覧表示する](../api/program-listcontrols.md) |      [programcontrol](programcontrol.md)コレクション| プログラムのコントロールのコレクションを取得します。|
-|[programcontroltypes のリスト](../api/programcontroltype-list.md) | [programcontroltype](programcontroltype.md)コレクション| プログラムコントロールの種類を一覧表示します。 |
+|[プログラムの programControls を一覧表示する](../api/program-listcontrols.md) |      [Programcontrol](programcontrol.md)コレクション| プログラムのコントロールのコレクションを取得します。|
+|[ProgramControlTypes のリスト](../api/programcontroltype-list.md) | [Programcontroltype](programcontroltype.md)コレクション| プログラムコントロールの種類を一覧表示します。 |
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -76,9 +79,9 @@ Azure AD [access レビュー](accessreviews-root.md)機能では、program cont
 
 ```
 
-## <a name="the-programresource-complex-type"></a>programresource 複合型
+## <a name="the-programresource-complex-type"></a>ProgramResource 複合型
 
-program control オブジェクト内に含まれるプログラムリソースは、アクセスレビューのターゲットであるオブジェクトへの参照を表します。
+Program control オブジェクト内に含まれるプログラムリソースは、アクセスレビューのターゲットであるオブジェクトへの参照を表します。
 
 この型はから`microsoft.graph.identity`継承され、さらに1つのプロパティが追加されています。
 

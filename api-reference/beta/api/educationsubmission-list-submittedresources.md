@@ -1,17 +1,18 @@
 ---
-title: submittedresources を一覧表示する
+title: SubmittedResources を一覧表示する
 description: 正式に提出されたリソースを一覧表示します。 提出物を所有する学生は、割り当てを再送信せずに、送信されたリストを変更することはできません。 これは、実際のリソースに関するラッパーであり、リソースが割り当てからコピーされた場合は、実際の割り当てリソースへのポインターを格納できます。
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: fa98baff82250e8da68f21c2b3779b387977f763
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 371302640df794465764755492088ec2015278ef
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325195"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955123"
 ---
-# <a name="list-submittedresources"></a>submittedresources を一覧表示する
+# <a name="list-submittedresources"></a>SubmittedResources を一覧表示する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -56,7 +57,7 @@ GET https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/s
 ##### <a name="response"></a>応答
 応答の例を次に示します。 
 
->**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
+>**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 
 <!-- {
   "blockType": "ignored",

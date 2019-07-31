@@ -1,19 +1,20 @@
 ---
-title: journalLines を作成する
+title: JournalLines を作成する
 description: Dynamics 365 Business Central の仕訳帳明細行を作成します。
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: c6ed8b1ccbe1f33cad174e1c5e4f9b3832f2a5c9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 74c5f1210b4d8be40ca74eff5f0cf29769b5b691
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32463580"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956619"
 ---
-# <a name="create-journallines"></a>journalLines を作成する
+# <a name="create-journallines"></a>JournalLines を作成する
 Dynamics 365 Business Central に、ジャーナル明細行オブジェクトを作成します。
 
 ## <a name="permissions"></a>アクセス許可

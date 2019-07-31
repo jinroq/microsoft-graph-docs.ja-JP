@@ -1,20 +1,21 @@
 ---
-title: paymentMethods を作成する
+title: PaymentMethods を作成する
 description: Dynamics 365 Business Central に支払い方法オブジェクトを作成します。
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 08ef2450c06040820dac0b1807c16382bff262dd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 682b59383c9e6c791f57162871ed4ecbb8ab8c93
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458622"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956612"
 ---
-# <a name="create-paymentmethods"></a>paymentMethods を作成する
-ddynamics 365 Business Central で支払い方法オブジェクトを作成します。
+# <a name="create-paymentmethods"></a>PaymentMethods を作成する
+DDynamics 365 Business Central で支払い方法オブジェクトを作成します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。

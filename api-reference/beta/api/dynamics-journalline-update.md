@@ -1,19 +1,20 @@
 ---
-title: journalLines の更新
+title: JournalLines の更新
 description: Dynamics 365 Business Central の仕訳帳明細行を更新します。
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 1f404a4a344f6fddc9759da9808b7c5bec1bc7ef
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: aa5f11574769e1a9b171353dd27afb5ef02e5ea1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458524"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956108"
 ---
-# <a name="update-journallines"></a>journalLines の更新
+# <a name="update-journallines"></a>JournalLines の更新
 Dynamics 365 Business Central の journal 明細行オブジェクトのプロパティを更新します。
 
 ## <a name="permissions"></a>アクセス許可

@@ -1,15 +1,18 @@
 ---
-title: programcontroltype リソースの種類
+title: programControlType リソースの種類
 description: 'Azure AD access のレビュー機能では、プログラムにコントロールを関連付けるときにコントロールの種類としてコントロールを使用し、コントロールのアクセスレビューの種類を指定します。  '
 localization_priority: Normal
-ms.openlocfilehash: 489fa6e5cac31165fec9f7ce9939d58fa84cb1ab
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: c7b4360ffa22711c9af9961fbb9f48cee7d29424
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344060"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965629"
 ---
-# <a name="programcontroltype-resource-type"></a>programcontroltype リソースの種類
+# <a name="programcontroltype-resource-type"></a>programControlType リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +25,7 @@ Azure AD access の[レビュー](accessreviews-root.md)機能では、プログ
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[programcontroltypes のリスト](../api/programcontroltype-list.md) | [programcontroltype](programcontroltype.md)コレクション| プログラムコントロールの種類を一覧表示します。 |
+|[ProgramControlTypes のリスト](../api/programcontroltype-list.md) | [Programcontroltype](programcontroltype.md)コレクション| プログラムコントロールの種類を一覧表示します。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
@@ -40,7 +43,7 @@ Azure AD access の[レビュー](accessreviews-root.md)機能では、プログ
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[programcontrol を作成する](../api/programcontrol-create.md) |     [programcontrol](programcontrol.md) |   プログラムに programcontrol を追加します。|
+|[ProgramControl を作成する](../api/programcontrol-create.md) |     [programControl](programcontrol.md) |   プログラムに programControl を追加します。|
 
 
 ## <a name="json-representation"></a>JSON 表記

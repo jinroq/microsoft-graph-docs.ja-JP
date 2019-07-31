@@ -1,17 +1,18 @@
 ---
-title: educationAssignmentResource の更新
+title: EducationAssignmentResource の更新
 description: '割り当てに関連付けられているリソースのプロパティを更新します。 クラス内の教師のみが、割り当てリソースオブジェクトを変更できます。  '
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: d3ce0db2353d91f17f059fe8a2dfd9d6c775e1e2
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: aa9c2738b894457234cb82daee1364605fd64ba9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324689"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955552"
 ---
-# <a name="update-educationassignmentresource"></a>educationAssignmentResource の更新
+# <a name="update-educationassignmentresource"></a>EducationAssignmentResource の更新
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -66,7 +67,7 @@ Content-length: 822
 ##### <a name="response"></a>応答
 応答の例を次に示します。 
 
->**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 すべてのプロパティは実際の呼び出しから返されます。
+>**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
 
 
 <!-- {

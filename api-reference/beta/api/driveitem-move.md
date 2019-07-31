@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: DriveItem を新しい親アイテムに移動する場合は、移動する DriveItem の parentReference をアプリで更新します。
 ms.date: 09/10/2017
 title: ファイルまたはフォルダーを移動する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: b18fc6616104f20722721c76fdec8c711c48aa7d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: d6398650661a0940c68f2c79563c6a092d8a97ec
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35860995"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957025"
 ---
 # <a name="move-a-driveitem-to-a-new-folder"></a>DriveItem を新しいフォルダーに移動する
 

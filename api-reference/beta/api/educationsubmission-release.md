@@ -4,12 +4,13 @@ description: " を指定します。 このアクションは教師のみが実�
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: d2fe5403534fc6e7140c7e0b8e8731707feac5b7
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: ddf437c60ae4ca56a800bd82b081b149a686eabe
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322860"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955080"
 ---
 # <a name="educationsubmission-release"></a>educationSubmission: release
 

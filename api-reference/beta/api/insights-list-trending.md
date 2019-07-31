@@ -4,12 +4,13 @@ description: ユーザーの周囲のアイテムのリストを返す、計算�
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 49f777e77663a4c055e186860f791459db57ca9c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 2d84e2c4470b17b3073856a73d0b8cb7251ea830
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33323697"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953060"
 ---
 # <a name="list-trending"></a>人気上昇中を一覧表示する
 
@@ -44,7 +45,7 @@ GET /users/{id | userPrincipalName}/insights/trending
 
 `https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
 
-利用可能なコンテナーの種類と種類を表示します。これは、 [resourcevisualization](../resources/insights-resourcevisualization.md)でフィルター処理できます。
+利用可能なコンテナーの種類と種類を表示します。これは、 [Resourcevisualization](../resources/insights-resourcevisualization.md)でフィルター処理できます。
 
 
 ## <a name="request-headers"></a>要求ヘッダー

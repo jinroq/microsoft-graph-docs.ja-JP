@@ -1,17 +1,18 @@
 ---
-title: educationSubmission を取得する
+title: EducationSubmission を取得する
 description: '特定の送信を取得します。 送信オブジェクトは、割り当てに対する学生の作業を表します。 送信に関連付けられているリソースは、この作業を表します。 提出物が割り当てられている受講者のみが、提出物を表示および変更できます。 教師は、すべての送信にフルアクセスできます。 '
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 97cdc45c8af271d0996ea5edabf145f239162210
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: d33fea58845fb9c9034d4fef100e3393bcdd4188
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325177"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955132"
 ---
-# <a name="get-educationsubmission"></a>educationSubmission を取得する
+# <a name="get-educationsubmission"></a>EducationSubmission を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -58,7 +59,7 @@ GET https://graph.microsoft.com/beta/education/classes/11010/assignments/19002/s
 ##### <a name="response"></a>応答
 応答の例を次に示します。 
 
->**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
+>**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 
 <!-- {
   "blockType": "ignored",

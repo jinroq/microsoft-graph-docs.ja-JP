@@ -4,12 +4,13 @@ description: グラフのデータ ラベルの書式設定プロパティをカ
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: a4bf03bb2c40ce0dc78c24d76e859d040526cf17
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: bd60187d5bc62675b53b4a0a254afa3632e9c1d6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348410"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964003"
 ---
 # <a name="workbookchartdatalabelformat-resource-type"></a>workbookChartDataLabelFormat リソースの種類
 
@@ -19,12 +20,12 @@ ms.locfileid: "33348410"
 
 
 ## <a name="methods"></a>メソッド
-なし
+None
 
 ## <a name="properties"></a>プロパティ
 なし
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |fill|[workbookChartFill](workbookchartfill.md)|現在のグラフのデータ ラベルの塗りつぶしの書式を表します。値の取得のみ可能です。|

@@ -1,19 +1,20 @@
 ---
-title: agedaccountspayable を取得する
+title: AgedAccountsPayable を取得する
 description: Dynamics 365 Business Central の期限切れの買掛金勘定オブジェクトを取得します。
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 8d70ce2aca31a4cbfd3acbe25399cc51b3726d8b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 5945a7386ce8cd946bd0249c0848d9265e1ed392
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454175"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956864"
 ---
-# <a name="get-agedaccountspayable"></a>agedaccountspayable を取得する
+# <a name="get-agedaccountspayable"></a>AgedAccountsPayable を取得する
 Dynamics 365 Business Central の、古いアカウントの買掛金のレポートオブジェクトのプロパティとリレーションシップを取得します。
 
 ## <a name="permissions"></a>アクセス許可
@@ -41,7 +42,7 @@ GET /financials/companies('{id}')/agedAccountsPayable
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-成功した場合、このメソッド`200 OK`は応答コードと、応答本文で**agedaccountspayable**オブジェクトを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で**Agedaccountspayable**オブジェクトを返します。
 
 ## <a name="example"></a>例
 

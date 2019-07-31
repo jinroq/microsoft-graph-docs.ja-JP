@@ -1,15 +1,18 @@
 ---
-title: skypeforbusinessオーガナイザー eractivityuser計数リソースの種類
+title: Skypeforbusinessオーガナイザー Eractivityuser計数リソースの種類
 description: リソースの JSON 表記を次に示します。
 localization_priority: Normal
-ms.openlocfilehash: 39ab5844adb9525b4e0f100892927d200609040c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: b6fcb2114e78bd9aabb170795b49d80bb58e6844
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534865"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964873"
 ---
-# <a name="skypeforbusinessorganizeractivityusercounts-resource-type"></a>skypeforbusinessオーガナイザー eractivityuser計数リソースの種類
+# <a name="skypeforbusinessorganizeractivityusercounts-resource-type"></a>Skypeforbusinessオーガナイザー Eractivityuser計数リソースの種類
 
 ## <a name="properties"></a>プロパティ
 
@@ -18,12 +21,12 @@ ms.locfileid: "32534865"
 | im                 | Int64  |
 | audioVideo         | Int64  |
 | appSharing         | Int64  |
-| web                | Int64  |
+| Web                | Int64  |
 | dialInOut3rdParty  | Int64  |
-| ダイヤルアウト microsoft | Int64  |
-| reportrefreshdate  | Date   |
-| reportDate         | Date   |
-| reportperiod       | String |
+| ダイヤルアウト Microsoft | Int64  |
+| reportRefreshDate  | 日付   |
+| reportDate         | 日付   |
+| reportPeriod       | String |
 
 ## <a name="json-representation"></a>JSON 表記
 

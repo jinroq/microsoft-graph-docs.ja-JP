@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: 特殊なコレクションを使用して、名前で特殊フォルダーにアクセスします。
 ms.date: 09/10/2017
 title: 特別なフォルダーを取得する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 019852314e905e16d157637e70f3fa2231564c45
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 557e5f8e3efe822c13fbcdaaad16c6be70fa6568
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35861602"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957368"
 ---
 # <a name="get-a-special-folder-by-name"></a>名前で特殊フォルダーを取得する
 

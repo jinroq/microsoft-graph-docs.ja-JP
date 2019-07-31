@@ -1,19 +1,20 @@
 ---
-title: customerPaymentJournals を取得する
+title: CustomerPaymentJournals を取得する
 description: Dynamics 365 Business Central の顧客支払仕訳帳を取得します。
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 14d90b40dc7584b50024ff82921242d0213ed790
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 2231ce57c86e3a6070c62a7c900dedb3b386507f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458657"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956353"
 ---
-# <a name="get-customerpaymentjournals"></a>customerPaymentJournals を取得する
+# <a name="get-customerpaymentjournals"></a>CustomerPaymentJournals を取得する
 Dynamics 365 Business Central の顧客支払いジャーナルオブジェクトのプロパティと関係を取得します。
 
 ## <a name="permissions"></a>アクセス許可

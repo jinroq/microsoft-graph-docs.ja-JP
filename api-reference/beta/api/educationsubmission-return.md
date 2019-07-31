@@ -4,12 +4,13 @@ description: この操作によって、この送信に関連付けられてい�
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: f43e158c5b6a59b45724aac5151e1f03d27a0c79
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 9139b362d85aeff1f7ad291e259ab5e4a7182626
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35860207"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955055"
 ---
 # <a name="educationsubmission-return"></a>educationSubmission: return
 

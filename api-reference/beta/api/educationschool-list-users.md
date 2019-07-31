@@ -4,12 +4,13 @@ description: 学校のユーザーのリストを取得します。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 154d3a9dcb2e3dd3a4203677d2eb57eae44daafd
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: dd4ac5f4d15913054e011cf1b7adb67288c34ca1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35860310"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955181"
 ---
 # <a name="list-educationusers"></a>educationUsers をリストする
 

@@ -4,12 +4,13 @@ description: Category オブジェクトのリストを取得します。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: d540f5d6f9f04516cf7d6efdff4b5e8a932dd273
-ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
+doc_type: apiPageType
+ms.openlocfilehash: 6757f64942ee87d4e13b577964645f9a35839477
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34750046"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955426"
 ---
 # <a name="list-educationcategories"></a>リスト educationCategories
 

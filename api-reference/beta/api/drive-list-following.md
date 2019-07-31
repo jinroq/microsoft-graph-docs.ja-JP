@@ -1,15 +1,16 @@
 ---
 author: chackman
-ms.author: chackman
+description: サインインしているユーザーがフォローされているアイテムを一覧表示します。
 title: フォローされたアイテムを一覧表示する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 1efa34191693a0511e28d00ea29accd54877a586
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 4c8310314904ffb7affecebf937481a72a83cdcf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35861584"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957326"
 ---
 # <a name="list-followed-items"></a>フォローされたアイテムを一覧表示する
 

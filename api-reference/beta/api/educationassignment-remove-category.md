@@ -1,21 +1,22 @@
 ---
-title: educationCategory の削除
+title: EducationCategory の削除
 description: 既存の educationCategory をこの educationAssignment から削除します。
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: 9c92ab53cd62a7ed32aff6300386e2e76699275e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: deb55b14c40acb25b366eec140cbc433e9ee203d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324788"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955666"
 ---
-# <a name="remove-educationcategory"></a>educationCategory の削除
+# <a name="remove-educationcategory"></a>EducationCategory の削除
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[educationAssignment](../resources/educationassignment.md)から[educationCategory](../resources/educationcategory.md)を削除します。
+[EducationAssignment](../resources/educationassignment.md)から[educationCategory](../resources/educationcategory.md)を削除します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -58,7 +59,7 @@ DELETE https://graph.microsoft.com/beta/education/classes/11021/assignments/1900
 ##### <a name="response"></a>応答
 応答の例を次に示します。 
 
->**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 すべてのプロパティは実際の呼び出しから返されます。
+>**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
 
 
 <!-- {

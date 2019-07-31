@@ -1,19 +1,20 @@
 ---
-title: 一般に備えた gerentries エントリを取得する
+title: 一般に備えた Gerentries エントリを取得する
 description: Dynamics 365 Business Central の総勘定元帳エントリオブジェクトを取得します。
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 06884308987eb8010be965d30d09e064e3d67d5e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: b28ec56e2f7fa47726eaff46d37932ddaba16665
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458510"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956276"
 ---
-# <a name="get-generalledgerentries"></a>一般に備えた gerentries エントリを取得する
+# <a name="get-generalledgerentries"></a>一般に備えた Gerentries エントリを取得する
 Dynamics 365 Business Central の総勘定元帳エントリオブジェクトのプロパティとリレーションシップを取得します。
 
 ## <a name="permissions"></a>アクセス許可

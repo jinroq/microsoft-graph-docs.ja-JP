@@ -1,21 +1,22 @@
 ---
-title: plan/assignment リソースの種類
-description: '[ **plan] 割り当て**リソースは、ユーザーに対するタスクの割り当てを表します。 この型は、オープンタイププランの割り当てで使用されます。'
+title: Plan/Assignment リソースの種類
+description: '[ **Plan] 割り当て**リソースは、ユーザーに対するタスクの割り当てを表します。 この型は、オープンタイププランの割り当てで使用されます。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: fddb3214417fc1320b6218b4e9fd0266b176e26a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 27b012374882e98da1669ac0921416bc1a9d1c63
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344615"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966042"
 ---
-# <a name="plannerassignment-resource-type"></a>plan/assignment リソースの種類
+# <a name="plannerassignment-resource-type"></a>Plan/Assignment リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[ **plan] 割り当て**リソースは、ユーザーに対するタスクの割り当てを表します。 この型は、オープンタイププランの[割り当て](plannerassignments.md)で使用されます。
+[ **Plan] 割り当て**リソースは、ユーザーに対するタスクの割り当てを表します。 この型は、オープンタイププランの[割り当て](plannerassignments.md)で使用されます。
 
 
 ## <a name="properties"></a>プロパティ

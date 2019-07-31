@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 54ff3632680d0819c33a6594a2a3c3b9e882fd98
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: ce3980118a26276ab712e2c422b9260b8624b31c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458601"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956514"
 ---
 # <a name="delete-currencies"></a>通貨を削除する
 Dynamics 365 Business Central から currency オブジェクトを削除します。

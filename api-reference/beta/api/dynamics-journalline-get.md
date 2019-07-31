@@ -1,19 +1,20 @@
 ---
-title: journalLines を取得する
+title: JournalLines を取得する
 description: Dynamics 365 Business Central の journal 明細行オブジェクトを取得します。
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 361731a346d1a7e649d92629d41d9aa83a4cf5d2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 27d7188d8f0443d11ab6799172a04b855cce5261
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458580"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956122"
 ---
-# <a name="get-journallines"></a>journalLines を取得する
+# <a name="get-journallines"></a>JournalLines を取得する
 Dynamics 365 Business Central の journal 明細行オブジェクトのプロパティとリレーションシップを取得します。
 
 ## <a name="permissions"></a>アクセス許可

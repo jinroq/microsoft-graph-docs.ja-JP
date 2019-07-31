@@ -4,12 +4,13 @@ description: 参加者に関する情報を記録します。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 17da055e1cf40922075ba06de3e229c669d2e40f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: ebb9e7d6a5c62b12073d6fa26e76147eb0cbb137
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343935"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965482"
 ---
 # <a name="recordinginfo-resource-type"></a>recordingInfo リソースの種類
 

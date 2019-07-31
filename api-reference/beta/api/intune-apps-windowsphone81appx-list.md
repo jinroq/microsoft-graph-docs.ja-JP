@@ -4,12 +4,13 @@ description: WindowsPhone81AppX オブジェクトのプロパティとリレー
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 961aa30ac36d6443deed24cf5865375ae5cb0a21
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 89a8ed71c5a51f7009066cbc5b1ce9bfff69234f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34973062"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35960007"
 ---
 # <a name="list-windowsphone81appxs"></a>リスト windowsPhone81AppXs
 

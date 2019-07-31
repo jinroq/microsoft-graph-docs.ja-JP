@@ -4,12 +4,13 @@ description: 他のユーザーがチームの探索可能性を構成するた�
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 56284b678dec74e00724eeb429958aa54444208d
-ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
+doc_type: resourcePageType
+ms.openlocfilehash: 6dd1c3728d91be88689f72e020b773f7875807a1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34818705"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964572"
 ---
 # <a name="teamdiscoverysettings-resource-type"></a>teamDiscoverySettings リソースの種類
 

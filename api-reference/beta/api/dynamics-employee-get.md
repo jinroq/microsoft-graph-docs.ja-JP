@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 9adab4c18d2c380f949d3fd7894aae4a8de7c0da
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 565c4f1222b143ed9635a68bf29d88e544e4c8e8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458454"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956304"
 ---
 # <a name="get-employees"></a>従業員の取得
 Dynamics 365 Business Central の employee オブジェクトのプロパティと関係を取得します。

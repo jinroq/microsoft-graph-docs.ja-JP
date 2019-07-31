@@ -3,12 +3,14 @@ title: 通知リソースの種類
 description: '指定したユーザーを対象とするアプリサーバーによって発行される通知を表します。 通知は Microsoft Graph に格納され、ユーザーが所有する異なるデバイスエンドポイントに配布されます。 '
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 13839cdc946ecaf47e59d37e90fe4be144789a6d
-ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
+doc_type: resourcePageType
+author: ''
+ms.openlocfilehash: f9d9a4ff77190e18b8c090cf9c976decb4edfc3d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34036483"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965580"
 ---
 # <a name="notification-resource-type"></a>通知リソースの種類
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -25,7 +27,7 @@ ms.locfileid: "34036483"
 |[通知の作成](../api/notifications-post.md) | [お知らせ](projectrome-notification.md) |通知を作成し、送信します。 |
 
 ## <a name="properties"></a>プロパティ
-|名前 | 種類 | 説明|
+|名前 | 型 | 説明|
 |:----|:-----|:-----------|
 | targetHostName | String | 指定されたユーザーについて、呼び出し元サービスが通知を投稿するアプリケーションのホスト名を表します。 |
 | appNotificationId | String | 通知のアプリサーバーによって設定された一意の id。個別の通知を識別して対象にします。 |

@@ -1,19 +1,20 @@
 ---
-title: unitsOfMeasure の更新
+title: UnitsOfMeasure の更新
 description: Dynamics 365 Business Central の測定単位オブジェクトを更新します。
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: e69768736121eaa580c3d1eccd34c20be0051f88
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 1d18b2093c5b00a6e08ad4a8c8e91161c2d5216e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32464294"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955842"
 ---
-# <a name="update-unitsofmeasure"></a>unitsOfMeasure の更新
+# <a name="update-unitsofmeasure"></a>UnitsOfMeasure の更新
 Dynamics 365 Business Central の測定単位オブジェクトのプロパティを更新します。
 
 ## <a name="permissions"></a>アクセス許可
@@ -37,7 +38,7 @@ PATCH /financials/companies('{id}')/unitsOfMeasure('{id}')
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |------|-----|
-|Authorization |ベアラー. 必須。|
+|Authorization |ベアラー. 必須です。|
 |Content-Type  |application/json|
 |If-Match      |必須です。 この要求ヘッダーが含まれていて、指定された eTag が**unitsOfMeasure**の現在のタグと一致しない場合、 **unitsOfMeasure**は更新されません。 |
 

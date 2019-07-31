@@ -1,19 +1,20 @@
 ---
-title: trialbalance の取得
+title: TrialBalance の取得
 description: Dynamics 365 Business Central の試算表オブジェクトを取得します。
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 0729155ddef94d28afb0cb0a85fd095931ffdbb4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: b3e5881964d49fa1a42cf1aa4f9da8fba818d6e5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458370"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955870"
 ---
-# <a name="get-trialbalance"></a>trialbalance の取得
+# <a name="get-trialbalance"></a>TrialBalance の取得
 Dynamics 365 Business Central の試算表レポートオブジェクトのプロパティと関係を取得します。
 
 ## <a name="permissions"></a>アクセス許可

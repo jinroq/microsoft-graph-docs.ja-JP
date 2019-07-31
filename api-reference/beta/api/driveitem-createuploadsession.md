@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: アプリで最大ファイル サイズまでファイルをアップロードできるようにするには、アップロード セッションを作成します。
 ms.date: 09/10/2017
 title: 再開可能なファイル アップロード
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 3801be631ab64c6ab2cb25ce48b4e846f9d77287
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 182a03c3ad95f4d2223c437ef667b2c27aaa7d71
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325337"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957193"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>アップロード セッションを使ってサイズが大きいファイルをアップロードする
 
@@ -89,8 +90,8 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 
 | パラメーター            | 型                          | 説明
 |:---------------------|:------------------------------|:---------------------------------
-| item                 | ドライブ itemuploadableproperties | アップロードされるファイルに関するデータ
-| deferCommit          | Boolean                       | true に設定されている場合、コピー先でのファイルの最終作成では明示的な要求が必要になります。 OneDrive for business でのみ使用できます。
+| item                 | ドライブ Itemuploadableproperties | アップロードされるファイルに関するデータ
+| deferCommit          | Boolean                       | True に設定されている場合、コピー先でのファイルの最終作成では明示的な要求が必要になります。 OneDrive for business でのみ使用できます。
 
 ## <a name="item-properties"></a>アイテムのプロパティ
 
@@ -215,7 +216,7 @@ Content-Type: application/json
 ## <a name="completing-a-file"></a>ファイルの完成
 
 が`deferCommit` false または unset の場合は、ファイルの最後のバイト範囲がアップロード URL に格納されると、アップロードが自動的に完了します。
-が`deferCommit` true の場合は、ファイルの最後のバイト範囲がアップロード url に配置された後に、長さがゼロのコンテンツを含むアップロード url への最終 POST 要求によってアップロードが明示的に完了する必要があります。
+が`deferCommit` true の場合は、ファイルの最後のバイト範囲がアップロード URL に配置された後に、長さがゼロのコンテンツを含むアップロード url への最終 POST 要求によってアップロードが明示的に完了する必要があります。
 
 アップロードが完了すると、サーバーは、 `HTTP 201 Created`または`HTTP 200 OK`の最後の要求に応答します。
 応答本文には完全なファイルを表す **driveItem** の既定のプロパティ セットも含まれます。

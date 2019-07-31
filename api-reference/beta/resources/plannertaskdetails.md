@@ -1,29 +1,30 @@
 ---
 title: プラン/タスクの詳細リソースの種類
-description: "\" **plan\" taskdetails**リソースは、タスクに関する追加情報を表します。 各 task オブジェクトには details オブジェクトがあります。"
+description: "\" **Plan\" Taskdetails**リソースは、タスクに関する追加情報を表します。 各 task オブジェクトには details オブジェクトがあります。"
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: d11b0ca1f6090c65a1c5eaa45ce368d102994299
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 6eaeaf65271309270d7ecfd042ed75e5c32451a5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344384"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965854"
 ---
 # <a name="plannertaskdetails-resource-type"></a>プラン/タスクの詳細リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-" **plan" taskdetails**リソースは、タスクに関する追加情報を表します。 各[task](plannertask.md)オブジェクトには details オブジェクトがあります。
+" **Plan" Taskdetails**リソースは、タスクに関する追加情報を表します。 各[task](plannertask.md)オブジェクトには details オブジェクトがあります。
 
 
 ## <a name="methods"></a>メソッド
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[Get plannerTaskDetails](../api/plannertaskdetails-get.md) | [plannerTaskDetails](plannertaskdetails.md) |**plan**オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[更新する](../api/plannertaskdetails-update.md) | [plannerTaskDetails](plannertaskdetails.md)    |プランの更新方法の**詳細**オブジェクトを表示します。 |
+|[Get plannerTaskDetails](../api/plannertaskdetails-get.md) | [plannerTaskDetails](plannertaskdetails.md) |**Plan**オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[Update](../api/plannertaskdetails-update.md) | [plannerTaskDetails](plannertaskdetails.md)    |プランの更新方法の**詳細**オブジェクトを表示します。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|

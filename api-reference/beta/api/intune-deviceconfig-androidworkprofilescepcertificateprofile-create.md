@@ -4,12 +4,13 @@ description: 新しい Androidwork プロファイル Cepcertificateprofile オ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f8949b22e88456379d673d157fd552cd37b07f70
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: f7078d12f7fcb4f6afc4cdf2182304088df936aa
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34969100"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35950547"
 ---
 # <a name="create-androidworkprofilescepcertificateprofile"></a>Androidwork プロファイル Cepcertificateprofile の作成
 
