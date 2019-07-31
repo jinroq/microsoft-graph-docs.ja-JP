@@ -2,12 +2,15 @@
 title: 'フィルター: クリア'
 description: 指定した列のフィルターをクリアします。
 localization_priority: Normal
-ms.openlocfilehash: 13f0cf39d43ba96e1d66689286791cf969f6b49c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+author: ''
+ms.prod: ''
+ms.openlocfilehash: 266664d3ec58368361febff5714d367555744745
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35859276"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954387"
 ---
 # <a name="filter-clear"></a>フィルター: クリア
 

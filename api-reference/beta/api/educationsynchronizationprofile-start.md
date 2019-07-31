@@ -4,12 +4,13 @@ description: テナント内の特定の school データ同期プロファイ�
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 88ddd87c67c5e85eee0335d7b04a94ade383abc3
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: b0f738f7e122126df2ce3611866e75eb5697b160
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35859988"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954768"
 ---
 # <a name="start-sync-after-uploading-files-to-an-educationsynchronizationprofile"></a>ファイルを educationSynchronizationProfile にアップロードした後、同期を開始する
 

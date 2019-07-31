@@ -3,12 +3,14 @@ title: Microsoft Graph API を使用して変更通知を取得する
 description: Microsoft Graph REST API は、webhook メカニズムを使用して、クライアントに変更通知を配信します。 クライアントは、通知を受信するために自身の URL を構成する Web サービスです。 クライアント アプリは通知を使用して、変更時に状態を更新します。 受信通知をサブスクライブおよび処理する方法などの詳細については、「ユーザーデータの変更の通知を設定する」を参照してください。
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: 8422328061ac1c2ad736435204b699544bffd2ed
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.prod: ''
+ms.openlocfilehash: 8f37e7cfbfe206cfb932661335c78dc370180bac
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341506"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964142"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Microsoft Graph API を使用して変更通知を取得する
 
@@ -44,7 +46,7 @@ Microsoft Graph の API を使用すると、アプリは次のリソースに�
 - [サブスクリプションのリスト作成](../api/subscription-list.md)
 - [サブスクリプションを取得する](../api/subscription-get.md)
 - [サブスクリプションを作成する](../api/subscription-post-subscriptions.md)
-- [Update subscription](../api/subscription-update.md)
+- [サブスクリプションの更新](../api/subscription-update.md)
 - [サブスクリプションの削除](../api/subscription-delete.md)
 
 [連絡先]: ./contact.md

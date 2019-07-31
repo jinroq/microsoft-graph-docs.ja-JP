@@ -1,17 +1,18 @@
 ---
-title: educationSubmittedSubmissionResource を取得する
+title: EducationSubmittedSubmissionResource を取得する
 description: 送信されたリソースを返します。 これは、学生が提出された後に教師が使用できるようになり、教師が提出をリリースした後に学生が使用できるようになります。  教師は一部のリソースにメモを残すことができますのでご注意ください。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 89f1fc8172909e8bb031be5a055a63ac9a4bd130
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: f3703de6176af8cc475e83408d77d4880e2ef77b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322372"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954922"
 ---
-# <a name="get-educationsubmittedsubmissionresource"></a>educationSubmittedSubmissionResource を取得する
+# <a name="get-educationsubmittedsubmissionresource"></a>EducationSubmittedSubmissionResource を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -56,7 +57,7 @@ GET https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/s
 ##### <a name="response"></a>応答
 応答の例を次に示します。 
 
->**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
+>**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 
 <!-- {
   "blockType": "ignored",

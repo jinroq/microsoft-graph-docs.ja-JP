@@ -4,12 +4,13 @@ description: グループの所有者の一覧を取得します。所有者は�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 1cbd4d4b4f90c364def8c37628ac9389ba4a45c3
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 9760fdb7f6932e94d5a6baddad13b5dab8d8b949
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35858358"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953704"
 ---
 # <a name="list-owners"></a>所有者を一覧表示する
 

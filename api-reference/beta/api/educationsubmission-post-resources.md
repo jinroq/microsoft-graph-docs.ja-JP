@@ -1,21 +1,22 @@
 ---
-title: educationSubmissionResource を作成する
-description: 'リソースをリソースリストに追加します。 このアクションは、この送信を割り当てられている学生のみが実行できます。 **allowStudentsToAddResources**フラグが true に設定されていない場合、このアクションは成功しません。 呼び出し元が新しいファイルベースのリソースを作成する場合は、提出物に関連付けられた resources フォルダーにファイルをアップロードする必要があります。 ファイルが存在しない場合、またはそのフォルダー内にない場合、POST 要求は失敗します。 '
+title: EducationSubmissionResource を作成する
+description: 'リソースをリソースリストに追加します。 このアクションは、この送信を割り当てられている学生のみが実行できます。 **AllowStudentsToAddResources**フラグが true に設定されていない場合、このアクションは成功しません。 呼び出し元が新しいファイルベースのリソースを作成する場合は、提出物に関連付けられた resources フォルダーにファイルをアップロードする必要があります。 ファイルが存在しない場合、またはそのフォルダー内にない場合、POST 要求は失敗します。 '
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 8eb183d13832767a63800cc4957769eb6062d516
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 36b7f0432577dacb716c0eaa2ee232cc3e49a40e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322874"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955071"
 ---
-# <a name="create-educationsubmissionresource"></a>educationSubmissionResource を作成する
+# <a name="create-educationsubmissionresource"></a>EducationSubmissionResource を作成する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-リソースをリソースリストに追加します。 このアクションは、この送信を割り当てられている学生のみが実行できます。 **allowStudentsToAddResources**フラグが true に設定されていない場合、このアクションは成功しません。 呼び出し元が新しいファイルベースのリソースを作成する場合は、提出物に関連付けられた resources フォルダーにファイルをアップロードする必要があります。 ファイルが存在しない場合、またはそのフォルダー内にない場合、POST 要求は失敗します。 
+リソースをリソースリストに追加します。 このアクションは、この送信を割り当てられている学生のみが実行できます。 **AllowStudentsToAddResources**フラグが true に設定されていない場合、このアクションは成功しません。 呼び出し元が新しいファイルベースのリソースを作成する場合は、提出物に関連付けられた resources フォルダーにファイルをアップロードする必要があります。 ファイルが存在しない場合、またはそのフォルダー内にない場合、POST 要求は失敗します。 
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -90,7 +91,7 @@ Content-length: 1097
 ##### <a name="response"></a>応答
 応答の例を次に示します。 
 
->**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
+>**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 
 <!-- {
   "blockType": "ignored",

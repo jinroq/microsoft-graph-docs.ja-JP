@@ -2,12 +2,15 @@
 title: identityProvider を作成する
 description: 表示名、identityProvider の種類、クライアント ID、クライアント シークレットを指定して、新しい  identityProvider  を作成します。
 localization_priority: Normal
-ms.openlocfilehash: 66f6b9bc009f207ca0eeef096791ce2877d1e45b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+author: ''
+ms.prod: ''
+ms.openlocfilehash: 5f6a855039c0a76bde9d54717f008d823755247b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35857590"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953221"
 ---
 # <a name="create-identityprovider"></a>identityProvider を作成する
 

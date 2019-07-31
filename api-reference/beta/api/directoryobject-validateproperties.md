@@ -4,12 +4,13 @@ description: Office 365 グループの表示名またはメールニックネ�
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0a23343ebbba2872b9f1984fc31f891f133a90be
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 6ffc7200ed36d752d11f459c2ff7eab225d663b7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35862328"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957746"
 ---
 # <a name="directoryobject-validateproperties"></a>directoryObject: validateProperties
 

@@ -4,12 +4,13 @@ description: この API を使用して、**members** ナビゲーション プ�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 7840cd40f56e1a43b74219c29be810f684246e37
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: b73ed8d1fc599a3c65b9b08e3caffcfc272bb332
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35858938"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954054"
 ---
 # <a name="remove-member"></a>メンバーを削除する
 

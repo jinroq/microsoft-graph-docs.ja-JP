@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: ターゲットとなる User、Group、または Site が利用可能な Drive リソースの一覧を取得します。
 ms.date: 09/10/2017
 title: ドライブを一覧表示する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 5dbebad65bacae554c1e2739c01634d0647d1660
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 2c7061d645d9dd1271b41805461bca9547852d6d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35861555"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957333"
 ---
 # <a name="list-available-drives"></a>利用可能なドライブの一覧表示
 

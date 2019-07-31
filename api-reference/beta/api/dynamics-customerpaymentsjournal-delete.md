@@ -1,19 +1,20 @@
 ---
-title: customerPaymentJournals の削除
+title: CustomerPaymentJournals の削除
 description: Dynamics 365 Business Central の顧客支払仕訳帳を削除します。
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 6309aac868d360867e4690e6efa71ebd64a5fbb3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 6979115205152fec6d9bb4f16d0489539491e4a9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458356"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956388"
 ---
-# <a name="delete-customerpaymentjournals"></a>customerPaymentJournals の削除
+# <a name="delete-customerpaymentjournals"></a>CustomerPaymentJournals の削除
 Dynamics 365 Business Central から顧客支払仕訳帳オブジェクトを削除します。
 
 ## <a name="permissions"></a>アクセス許可

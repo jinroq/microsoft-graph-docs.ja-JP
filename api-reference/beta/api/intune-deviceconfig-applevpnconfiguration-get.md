@@ -4,12 +4,13 @@ description: りんご Evpnconfiguration オブジェクトのプロパティと
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 95ab016aebc163c3e38ffa7fbbb7fa035f124135
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 022bf32bff13c4843bf95b93f3dd439387a08617
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34968843"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35950246"
 ---
 # <a name="get-applevpnconfiguration"></a>作業環境の設定を取得する
 

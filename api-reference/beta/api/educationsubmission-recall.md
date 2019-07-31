@@ -4,12 +4,13 @@ description: '学生が提出を希望していることを示します。 こ�
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: fc365e61def62dbbf65c47d9bc0163f15be9475d
-ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
+doc_type: apiPageType
+ms.openlocfilehash: d37d34685aabe00bff82de453e68a8ebba36aa3a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34749962"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955081"
 ---
 # <a name="educationsubmission-recall"></a>educationSubmission: 呼び戻し
 

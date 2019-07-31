@@ -4,12 +4,13 @@ description: このデバイスが直接メンバーであるグループを取�
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7a9702a427226b61cf55e6f87ceac4adeea0c8cb
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 7436e7a7da2599bfe21062158f28f4332e76daf4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35862770"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35951429"
 ---
 # <a name="list-device-groups"></a>デバイス グループを一覧表示する
 

@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: e9ef641d8c1d6995e93eaaf87a7131e246c9a0f9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 06982a3f48ccd81ed606c62dd8d02965561530a4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458629"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955828"
 ---
 # <a name="delete-vendors"></a>仕入先の削除
 Dynamics 365 Business Central からベンダーオブジェクトを削除します。

@@ -4,12 +4,13 @@ description: グループがメンバーになっているすべてのグルー�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 7d673541e87300a1cd83eba0ad1dfa529fc77a1b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: b0379ab01d0c5fc2677801e6fa6eb08c9bf47521
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35858566"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953879"
 ---
 # <a name="group-getmemberobjects"></a>group: getMemberObjects
 

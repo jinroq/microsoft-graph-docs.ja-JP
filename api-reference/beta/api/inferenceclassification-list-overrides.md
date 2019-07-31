@@ -2,12 +2,15 @@
 title: リストのオーバーライド
 description: 特定の送信者からのメッセージを常に特定の方法で分類するようにユーザーが設定した優先受信トレイの上書きを取得します。
 localization_priority: Normal
-ms.openlocfilehash: 74e32bc6b4727c22971fc42f9fdbb6184abf77c9
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+author: ''
+ms.prod: ''
+ms.openlocfilehash: 8c824ed0ee2809281974006209773731919630f2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35857525"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953105"
 ---
 # <a name="list-overrides"></a>リストのオーバーライド
 

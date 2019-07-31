@@ -1,19 +1,22 @@
 ---
 title: impossibleTravelRiskEvent を取得する
-description: impossibletravelriskevent オブジェクトのプロパティとリレーションシップを取得します。
+description: Impossibletravelriskevent オブジェクトのプロパティとリレーションシップを取得します。
 localization_priority: Normal
-ms.openlocfilehash: 0889a14a9a7fd2654fb122963df5b1cc58d0f5c1
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+author: ''
+ms.prod: ''
+ms.openlocfilehash: 81487cf62230708d151f67250b9980e18bcbb7c7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328478"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953144"
 ---
 # <a name="get-impossibletravelriskevent"></a>impossibleTravelRiskEvent を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-impossibletravelriskevent オブジェクトのプロパティとリレーションシップを取得します。
+Impossibletravelriskevent オブジェクトのプロパティとリレーションシップを取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 

@@ -1,17 +1,18 @@
 ---
-title: educationsubmission の更新
+title: Educationsubmission の更新
 description: 提出物にグレードとフィードバックを追加します。 この操作を実行できるのは教師だけです。 基本アクセス許可には、学年プロパティへのアクセス権がないため、グレードまたはフィードバックに書き込めないことに注意してください。 この操作では、学年とフィードバックが生徒にリリースされることはありません。 教師は、成績データが学生に返されるように、明示的な release アクションを受ける必要があります。
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: c83617fc6882c2ea39f16bb5313f952b76c44105
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 3ad2c4663eb2d93d36a370762a650f4a38f48c03
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324718"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954950"
 ---
-# <a name="update-educationsubmission"></a>educationsubmission の更新
+# <a name="update-educationsubmission"></a>Educationsubmission の更新
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -92,7 +93,7 @@ Content-length: 658
 ##### <a name="response"></a>応答
 応答の例を次に示します。 
 
->**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
+>**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 >
 <!-- {
   "blockType": "ignored",

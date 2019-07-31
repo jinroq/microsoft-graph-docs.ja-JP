@@ -4,12 +4,13 @@ description: deviceComplianceDeviceStatus オブジェクトのプロパティ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dd5496cf7494724046655d855458e7881a9ecd5e
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 906f6e173a0647915a0041a31a40c372e93985cd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34968526"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35949931"
 ---
 # <a name="list-devicecompliancedevicestatuses"></a>List deviceComplianceDeviceStatuses
 

@@ -4,12 +4,13 @@ description: mobileAppContent オブジェクトのプロパティを更新し�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8fcd81a3fd62b1670b84f9ad43fb5cb5233c0dcc
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 42fa5dd5b0d67cdabf50baa834b3245b1c1b6716
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34974014"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35960868"
 ---
 # <a name="update-mobileappcontent"></a>mobileAppContent の更新
 

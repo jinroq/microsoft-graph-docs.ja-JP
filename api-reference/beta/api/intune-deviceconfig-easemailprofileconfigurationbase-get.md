@@ -4,12 +4,13 @@ description: EasEmailProfileConfigurationBase オブジェクトのプロパテ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: edd4b81a1b562639fbbd1a57446070f4655dfe45
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 111ba7e3bbac1f1fe319056dd1f4e1e3f742f4ab
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34967567"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35948881"
 ---
 # <a name="get-easemailprofileconfigurationbase"></a>EasEmailProfileConfigurationBase を取得する
 

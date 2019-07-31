@@ -4,12 +4,13 @@ description: 新しい iosVppAppAssignedLicense オブジェクトを作成し�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e92fbb7a39229a9b9f3ab18f719338187e6b70ed
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 296d75deb90514baf12ed5ff45a65e6987d639c0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34975540"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35962335"
 ---
 # <a name="create-iosvppappassignedlicense"></a>IosVppAppAssignedLicense を作成する
 

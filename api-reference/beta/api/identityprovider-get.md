@@ -2,12 +2,15 @@
 title: identityProvider を入手する
 description: '既存の Identityprovider.readwrite.all: のプロパティを取得します。'
 localization_priority: Normal
-ms.openlocfilehash: c6f9468e800319e18368f5d6d6d8ed8b26240491
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+author: ''
+ms.prod: ''
+ms.openlocfilehash: c515293c376793c9e29f76fc834c0f687ff69055
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35857638"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953235"
 ---
 # <a name="get-identityprovider"></a>identityProvider を入手する
 

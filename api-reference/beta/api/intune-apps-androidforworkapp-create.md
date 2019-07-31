@@ -4,12 +4,13 @@ description: 新しい Androidforwork App オブジェクトを作成します�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 029ed51231790ffd983db6f5cf55d15be39d522a
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 2c0f589e7955ae5f5663f83ec26b327eea9100a5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34966412"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35952465"
 ---
 # <a name="create-androidforworkapp"></a>Androidforwork アプリの作成
 

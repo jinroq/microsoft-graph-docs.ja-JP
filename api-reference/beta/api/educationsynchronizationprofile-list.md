@@ -4,12 +4,13 @@ description: テナント内の学校データ同期プロファイルのコレ�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: d42685d46aea1ec53c32710ea5efce81055cf515
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: ee295989618b4095425267fd1ff3d0bebfaf8baf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324409"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954873"
 ---
 # <a name="list-educationsynchronizationprofiles"></a>リスト educationSynchronizationProfiles
 
@@ -59,7 +60,7 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles
 ##### <a name="response"></a>応答
 応答の例を次に示します。 
 
->**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
+>**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 
 <!-- {
   "blockType": "ignored",

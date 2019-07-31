@@ -2,12 +2,15 @@
 title: GovernanceRoleAssignmentRequests の更新
 description: 管理者が、の`AdminApproved` `AdminDenied` `PendingAdminDecision`状態にある governanceRoleAssignmentRequests 上の意思決定 (または) を更新できるようにします。
 localization_priority: Normal
-ms.openlocfilehash: 5995addbd9c7a491b884aea505f2ab8d4b8c750d
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+doc_type: apiPageType
+author: ''
+ms.prod: ''
+ms.openlocfilehash: ed3622c24e21dc3da5bec0d308861adaa671eb27
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35931179"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954139"
 ---
 # <a name="update-governanceroleassignmentrequests"></a>GovernanceRoleAssignmentRequests の更新
 

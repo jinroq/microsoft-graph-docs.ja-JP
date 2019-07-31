@@ -1,20 +1,21 @@
 ---
-title: itemcategories の削除
+title: ItemCategories の削除
 description: Dynamics 365 Business Central のアイテムカテゴリを削除します。
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: de4ecc7a59833522fd359f865fb82d681c770073
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 0b0d848af5389e26b53effb70063ee07ae5d4714
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458405"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956220"
 ---
-# <a name="delete-itemcategories"></a>itemcategories の削除
-Dynamics 365 Business Central から itemcategory を削除します。
+# <a name="delete-itemcategories"></a>ItemCategories の削除
+Dynamics 365 Business Central から itemCategory を削除します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -37,7 +38,7 @@ DELETE /financials/companies('{id}')/itemCategories('{id}')
 |ヘッダー         |値                     |
 |---------------|--------------------------|
 |Authorization  |ベアラー {トークン}。必須。 |
-|If-Match       |必須です。 この要求ヘッダーが含まれていて、指定された eTag が**itemcategories**の現在のタグと一致しない場合、 **itemcategories**は更新されません。 |
+|If-Match       |必須です。 この要求ヘッダーが含まれていて、指定された eTag が**Itemcategories**の現在のタグと一致しない場合、 **itemcategories**は更新されません。 |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。

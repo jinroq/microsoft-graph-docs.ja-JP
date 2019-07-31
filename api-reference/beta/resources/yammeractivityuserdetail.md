@@ -4,12 +4,13 @@ description: リソースの JSON 表記を次に示します。
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: eea520e6024bb050001461fb5ada5c90ea2b2125
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 960945d72db1cc347228983b9567968dfcfc52d7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32541186"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35963788"
 ---
 # <a name="yammeractivityuserdetail-resource-type"></a>yammerActivityUserDetail リソースの種類
 
@@ -17,17 +18,17 @@ ms.locfileid: "32541186"
 
 | プロパティ          | 型              |
 | :---------------- | :---------------- |
-| reportrefreshdate | Date              |
+| reportRefreshDate | 日付              |
 | userPrincipalName | String            |
-| displayName       | String            |
+| displayName       | 文字列            |
 | userState         | String            |
-| stateChangeDate   | Date              |
-| lastactivitydate  | Date              |
+| stateChangeDate   | 日付              |
+| lastActivityDate  | 日付              |
 | postedCount       | Int64             |
-| readcount         | Int64             |
-| dcount        | Int64             |
-| assignedProducts  | String collection |
-| reportperiod      | String            |
+| readCount         | Int64             |
+| Dcount        | Int64             |
+| assignedProducts  | 文字列コレクション |
+| reportPeriod      | String            |
 
 ## <a name="json-representation"></a>JSON 表記
 

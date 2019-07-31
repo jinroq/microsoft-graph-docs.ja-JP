@@ -2,12 +2,15 @@
 title: inferenceClassificationOverride を作成する
 description: 'SMTP アドレスによって識別される送信者の優先受信トレイの上書きを作成します。 その SMTP アドレスからの今後のメッセージは一貫して分類されます。 '
 localization_priority: Normal
-ms.openlocfilehash: 310171e99df0c41b07d3c178fe6ee676f317ea1b
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+doc_type: apiPageType
+author: ''
+ms.prod: ''
+ms.openlocfilehash: 1eb476df8e973459b2e0b152db3ba11c5506b1a2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35931151"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953110"
 ---
 # <a name="create-inferenceclassificationoverride"></a>inferenceClassificationOverride を作成する
 

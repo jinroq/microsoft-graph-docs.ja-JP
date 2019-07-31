@@ -4,12 +4,13 @@ description: 提出物からリソースを削除します。 この操作は、
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: f9831a848c79ab2622b6a5d55fa4980b887c3069
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: ab0b8272d6672e56030a29d9c73625b96de3390a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35860106"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954943"
 ---
 # <a name="delete-educationsubmissionresource"></a>EducationSubmissionResource の削除
 

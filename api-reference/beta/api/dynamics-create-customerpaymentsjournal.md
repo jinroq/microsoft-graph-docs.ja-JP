@@ -1,19 +1,20 @@
 ---
-title: customerPaymentJournals を作成する
+title: CustomerPaymentJournals を作成する
 description: Dynamics 365 Business Central に顧客の支払仕訳帳オブジェクトを作成します。
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: a633ef91fe15b4999285d7290ca6eed8c10846a3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 3f1bcae115bd1d5e9c117b6bc90981402397ab0e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454210"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956696"
 ---
-# <a name="create-customerpaymentjournals"></a>customerPaymentJournals を作成する
+# <a name="create-customerpaymentjournals"></a>CustomerPaymentJournals を作成する
 Dynamics 365 Business Central に顧客支払仕訳帳オブジェクトを作成します。
 
 ## <a name="permissions"></a>アクセス許可

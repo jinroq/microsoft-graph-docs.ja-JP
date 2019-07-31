@@ -4,12 +4,13 @@ description: AndroidOmaCpConfiguration オブジェクトのプロパティを�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8853e1da34d5b7ac789a6dbf1e3a8a115ebaef57
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: f0934c350d475288c197b50333702c7f4cfa3fcf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34970045"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35962786"
 ---
 # <a name="update-androidomacpconfiguration"></a>AndroidOmaCpConfiguration の更新
 

@@ -4,12 +4,13 @@ description: windowsUniversalAppX オブジェクトのプロパティを更新�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 42f0b7b9f2a1073b065248a7d7a247ef63b4be0e
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 3a49b42e050b2dbc9229b71a13dede3a82f8a529
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34972698"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35959650"
 ---
 # <a name="update-windowsuniversalappx"></a>windowsUniversalAppX の更新
 

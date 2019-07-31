@@ -4,12 +4,13 @@ description: AndroidVpnConfiguration オブジェクトのプロパティとリ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 04b5b58416af8fbd39c5f48ff87e879a6c73e671
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 155dd2a2b72d3d3a76f0bff6c36678d011bafe47
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34969766"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35962520"
 ---
 # <a name="list-androidvpnconfigurations"></a>AndroidVpnConfigurations のリスト
 

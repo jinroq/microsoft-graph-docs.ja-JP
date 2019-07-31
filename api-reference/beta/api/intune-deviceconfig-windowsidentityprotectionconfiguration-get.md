@@ -4,12 +4,13 @@ description: WindowsIdentityProtectionConfiguration オブジェクトのプロ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b6bb690e80228465efdf72fb2f621b57e2fbb4b6
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 87d1375046a640fc07039d01c8158c09413424a5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34961855"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35962408"
 ---
 # <a name="get-windowsidentityprotectionconfiguration"></a>WindowsIdentityProtectionConfiguration を取得する
 

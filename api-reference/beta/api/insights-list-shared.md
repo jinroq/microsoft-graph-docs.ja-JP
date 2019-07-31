@@ -4,12 +4,13 @@ description: ユーザーと共有されるファイルの一覧を返す、計�
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: fd3f784ca48c408b8616faaa965b327aec48c538
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 5fa615e27f6fe1833af8d1b7c62c952623f5b703
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328559"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953067"
 ---
 # <a name="list-shared"></a>共有リスト
 
@@ -30,7 +31,7 @@ ms.locfileid: "33328559"
 ```http
 GET /me/insights/shared
 ```
-' user id ' または ' userPrincipalName ' を持つ要求は、ユーザーのみがアクセスでき、他のユーザーはアクセスできません。
+' User id ' または ' userPrincipalName ' を持つ要求は、ユーザーのみがアクセスでき、他のユーザーはアクセスできません。
 ```http
 GET /users/{id | userPrincipalName}/insights/shared
 ```
@@ -42,13 +43,13 @@ GET /users/{id | userPrincipalName}/insights/shared
 
 `https://graph.microsoft.com/beta/me/insights/shared?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
-利用可能なコンテナーの種類と種類を表示します。これは、 [resourcevisualization](../resources/insights-resourcevisualization.md)でフィルター処理できます。
+利用可能なコンテナーの種類と種類を表示します。これは、 [Resourcevisualization](../resources/insights-resourcevisualization.md)でフィルター処理できます。
 
 特定のユーザーによって共有されているファイルを取得することもできます。 たとえば、次のように`lastshared/sharedby/address`プロパティを指定します。
 
 `https://graph.microsoft.com/beta/me/insights/shared?$filter=lastshared/sharedby/address eq 'kellygraham@contoso.com'`
 
-[sharingdetail](../resources/insights-sharingdetail.md)複合型を参照してください。
+[Sharingdetail](../resources/insights-sharingdetail.md)複合型を参照してください。
 
 
 ## <a name="request-headers"></a>要求ヘッダー

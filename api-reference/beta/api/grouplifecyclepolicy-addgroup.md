@@ -4,12 +4,13 @@ description: ライフ サイクル ポリシーにグループを追加しま�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: e52364353587b97e4d6cb983705d228ab93d75b3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 4062d807df2c1613735ccb6d37f56e663fe46d78
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328480"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953368"
 ---
 # <a name="grouplifecyclepolicy-addgroup"></a>groupLifecyclePolicy: addGroup
 

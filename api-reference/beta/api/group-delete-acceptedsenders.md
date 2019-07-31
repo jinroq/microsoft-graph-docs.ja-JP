@@ -4,12 +4,13 @@ description: '承認済み送信者リストからユーザーまたはグルー
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 22e81f8bbbb497b8209e6faa744a54b24029391c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 341f887de0252dd6ae1ebc9f899263c67716658f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33329768"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954031"
 ---
 # <a name="remove-acceptedsender"></a>AcceptedSender の削除
 

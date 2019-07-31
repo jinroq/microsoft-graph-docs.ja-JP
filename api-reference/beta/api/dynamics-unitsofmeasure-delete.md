@@ -1,19 +1,20 @@
 ---
-title: unitsOfMeasure の削除
+title: UnitsOfMeasure の削除
 description: Dynamics 365 Business Central の測定単位オブジェクトを削除します。
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 571fc240ecaa244132278455ee64a8ad879ae030
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 93e92d21d2f23660a7966ed278c50c02df576917
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32464377"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955877"
 ---
-# <a name="delete-unitsofmeasure"></a>unitsOfMeasure の削除
+# <a name="delete-unitsofmeasure"></a>UnitsOfMeasure の削除
 Dynamics 365 Business Central から、測定単位オブジェクトを削除します。
 
 ## <a name="permissions"></a>アクセス許可

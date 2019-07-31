@@ -4,12 +4,13 @@ description: directoryRole からメンバーを削除します。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c4ec110aa671ddd11327e515308929fb8865235f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 6e194ee131c60be9d9563fac04e0ca1fb8f3b5c6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35862306"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957753"
 ---
 # <a name="remove-directory-role-member"></a>ディレクトリ ロールのメンバーを削除する
 
@@ -24,9 +25,9 @@ directoryRole からメンバーを削除します。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Directory.AccessAsUser.All    |
+|委任 (職場または学校のアカウント) | RoleManagement、Directory.accessasuser.all、およびすべてのディレクトリ    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | サポートされていません。 |
+|アプリケーション | RoleManagement |
 
 ## <a name="http-request"></a>HTTP 要求
 

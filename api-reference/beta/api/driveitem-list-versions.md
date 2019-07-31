@@ -3,12 +3,14 @@ title: ドライブ項目のバージョンを一覧表示する
 description: OneDrive と SharePoint は、ファイルの履歴を保持するように構成できます。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 1b3e703b5214db47467f6bd9117201e34e1eae6e
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+author: ''
+ms.openlocfilehash: aa9a02994173d508e71b782fa085438074af66de
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35861010"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957046"
 ---
 # <a name="listing-versions-of-a-driveitem"></a>ドライブ項目のバージョンを一覧表示する
 

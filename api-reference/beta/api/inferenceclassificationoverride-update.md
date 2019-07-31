@@ -2,12 +2,15 @@
 title: InferenceClassificationOverride の更新
 description: '指定どおり**** に優先受信トレイの設定の [分類] フィールドを変更します。 '
 localization_priority: Normal
-ms.openlocfilehash: 83832c11f09afdfdb27c0020005870c945f4a28d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+author: ''
+ms.prod: ''
+ms.openlocfilehash: 23002bd7afa8f174904d221e5e48b0852c3ee4ae
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35857470"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953116"
 ---
 # <a name="update-inferenceclassificationoverride"></a>InferenceClassificationOverride の更新
 

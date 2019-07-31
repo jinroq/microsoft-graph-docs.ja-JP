@@ -1,19 +1,20 @@
 ---
-title: itemcategories の作成
+title: ItemCategories の作成
 description: Dynamics 365 Business Central にアイテムカテゴリオブジェクトを作成します。
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 6d3e2918854e169c13971d0c71fc66091874d3ab
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: d8031b46d8ded0170dae1bcceeac68038fde0e5c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32463734"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956654"
 ---
-# <a name="create-itemcategories"></a>itemcategories の作成
+# <a name="create-itemcategories"></a>ItemCategories の作成
 アイテムカテゴリオブジェクト Dynamics 365 Business Central を作成します。
 
 ## <a name="permissions"></a>アクセス許可
@@ -40,7 +41,7 @@ POST /financials/companies('{id}')/itemCategories
 |Content-Type |application/json         |
 
 ## <a name="request-body"></a>要求本文
-要求本文で、 **itemcategories**オブジェクトの JSON 表記を指定します。
+要求本文で、 **Itemcategories**オブジェクトの JSON 表記を指定します。
 
 ## <a name="response"></a>応答
 成功した場合、この```201 Created```メソッドは応答コードと、応答本文で**itemcategories**オブジェクトを返します。

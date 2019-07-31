@@ -1,21 +1,22 @@
 ---
-title: plan グループリソースの種類
-description: '**plan グループ**リソースは、グループの Planner リソースへのアクセスを提供します。 使用可能なプロパティは含まれていません。'
+title: Plan グループリソースの種類
+description: '**Plan グループ**リソースは、グループの Planner リソースへのアクセスを提供します。 使用可能なプロパティは含まれていません。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 043cec9c3953f8c78a37e141a7b0f1259eb89d52
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 308c64e7eb086f48859581cf2d66aae07269fe6e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344481"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965965"
 ---
-# <a name="plannergroup-resource-type"></a>plan グループリソースの種類
+# <a name="plannergroup-resource-type"></a>Plan グループリソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**plan グループ**リソースは、[グループ](group.md)の Planner リソースへのアクセスを提供します。 使用可能なプロパティは含まれていません。
+**Plan グループ**リソースは、[グループ](group.md)の Planner リソースへのアクセスを提供します。 使用可能なプロパティは含まれていません。
 
 ## <a name="methods"></a>メソッド
 
@@ -26,12 +27,12 @@ ms.locfileid: "33344481"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|id|String| 読み取り専用です。 **plan グループ**の識別子|
+|id|String| 読み取り専用です。 **Plan グループ**の識別子|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|plans|[plannerPlan](plannerplan.md) コレクション| 読み取り専用です。 Null 許容型。 グループが所有している[plan プラン](plannerplan.md)を返します。|
+|plans|[plannerPlan](plannerplan.md) コレクション| 読み取り専用です。 Null 許容型。 グループが所有している[Plan プラン](plannerplan.md)を返します。|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。

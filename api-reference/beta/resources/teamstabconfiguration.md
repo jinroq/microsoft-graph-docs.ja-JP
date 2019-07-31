@@ -1,17 +1,18 @@
 ---
-title: teamstabconfiguration リソースの種類 (オープンタイプ)
+title: teamsTabConfiguration リソースの種類 (オープンタイプ)
 description: タブの内容を決定する設定。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: beeb9c6b06457795b802e18a1a2f7fac909e0c6c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: c53fdc0b21a00c5eae43b8c170a1512e55d496b0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345731"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964432"
 ---
-# <a name="teamstabconfiguration-resource-type-open-type"></a>teamstabconfiguration リソースの種類 (オープンタイプ)
+# <a name="teamstabconfiguration-resource-type-open-type"></a>teamsTabConfiguration リソースの種類 (オープンタイプ)
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +25,7 @@ ms.locfileid: "33345731"
 |-|-|-|
 |  entityId   |   string |  タブプロバイダによってホストされているエンティティの識別子。     |
 |  contentUrl |   string |  Teams でのタブのコンテンツのレンダリングに使用される Url。 必須です。    |
-|  removeUrl  |   string |  teams クライアントを使用してタブを削除したときに teams クライアントによって呼び出される Url。     |
+|  removeUrl  |   string |  Teams クライアントを使用してタブを削除したときに Teams クライアントによって呼び出される Url。     |
 |  websiteUrl |   string |  Teams の外部にタブのコンテンツを表示するための Url。     |
 
 ## <a name="json-representation"></a>JSON 表記

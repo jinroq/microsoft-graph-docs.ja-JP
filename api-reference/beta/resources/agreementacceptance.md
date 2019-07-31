@@ -1,19 +1,22 @@
 ---
 title: agreementAcceptance リソースの種類
-description: azure Active Directory (azure AD) によって提供される会社のカスタマイズ可能な使用条件の範囲内でのユーザーの現在の状態を表します。
+description: Azure Active Directory (Azure AD) によって提供される会社のカスタマイズ可能な使用条件の範囲内でのユーザーの現在の状態を表します。
 localization_priority: Normal
-ms.openlocfilehash: 84b54998e8afaad501d2cf46d564400aa2307507
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 58ed332429d7976b75929b433d57bd77536b9e70
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339148"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013452"
 ---
 # <a name="agreementacceptance-resource-type"></a>agreementAcceptance リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-azure Active Directory (azure AD) によって提供される会社のカスタマイズ可能な使用条件の範囲内でのユーザーの現在の状態を表します。
+Azure Active Directory (Azure AD) によって提供される会社のカスタマイズ可能な使用条件の範囲内でのユーザーの現在の状態を表します。
 
 <!--
 ## Methods

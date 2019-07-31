@@ -2,12 +2,15 @@
 title: GovernanceRoleAssignmentRequest を作成する
 description: 役割の割り当てに対して必要な操作を表すための役割の割り当て要求を作成します。 次の表に、操作の一覧を示します。
 localization_priority: Normal
-ms.openlocfilehash: 674a69f5697f5abf6e654ea71419bdfdfd660343
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+author: ''
+ms.prod: ''
+ms.openlocfilehash: 65ba674740fc7bc756d24fa3fc57b8db13d874b6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35859113"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954131"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>GovernanceRoleAssignmentRequest を作成する
 

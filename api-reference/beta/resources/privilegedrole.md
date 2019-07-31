@@ -2,12 +2,15 @@
 title: privilegedRole リソースの種類
 description: Azure AD 管理者の役割 (**全体管理者、課金管理者、サービス管理者、ユーザー管理者、パスワード管理者**など) を表します。
 localization_priority: Normal
-ms.openlocfilehash: 9b5454745257bea071f967b654d3b6174c3c3289
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 98e5cd2c53b398339e8db65bec520a16f72d8f39
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344292"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965748"
 ---
 # <a name="privilegedrole-resource-type"></a>privilegedRole リソースの種類
 
@@ -20,11 +23,11 @@ Azure AD 管理者の役割 (**全体管理者、課金管理者、サービス�
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[privilegedRole オブジェクトを一覧表示する](../api/privilegedrole-list.md) | [privilegedRole](privilegedrole.md)コレクション|privilegedRole のコレクションを取得します。|
-|[privilegedRole を取得する](../api/privilegedrole-get.md) | [privilegedRole](privilegedrole.md) |privilegedRole オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[割り当てを一覧表示する](../api/privilegedrole-list-assignments.md) |[privilegedRoleAssignment](privilegedroleassignment.md)コレクション| このロールの割り当てオブジェクトのコレクションを取得します。|
-|[selfactivate](../api/privilegedrole-selfactivate.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|割り当てられた役割をアクティブ化します。|
-|[selfdeactivate](../api/privilegedrole-selfdeactivate.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|割り当てられた役割を非アクティブ化します。|
+|[PrivilegedRole オブジェクトを一覧表示する](../api/privilegedrole-list.md) | [privilegedRole](privilegedrole.md) コレクション|PrivilegedRole のコレクションを取得します。|
+|[privilegedRole を取得する](../api/privilegedrole-get.md) | [privilegedRole](privilegedrole.md) |PrivilegedRole オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[割り当てを一覧表示する](../api/privilegedrole-list-assignments.md) |[privilegedRoleAssignment](privilegedroleassignment.md) コレクション| このロールの割り当てオブジェクトのコレクションを取得します。|
+|[selfActivate](../api/privilegedrole-selfactivate.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|割り当てられた役割をアクティブ化します。|
+|[selfDeactivate](../api/privilegedrole-selfdeactivate.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|割り当てられた役割を非アクティブ化します。|
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
@@ -35,7 +38,7 @@ Azure AD 管理者の役割 (**全体管理者、課金管理者、サービス�
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|assignments|[privilegedRoleAssignment](privilegedroleassignment.md)コレクション| この役割の割り当て。 読み取り専用です。 Null 許容型。|
+|assignments|[privilegedRoleAssignment](privilegedroleassignment.md) コレクション| この役割の割り当て。 読み取り専用です。 Null 許容型。|
 |settings|[privilegedRoleSettings](privilegedrolesettings.md)| この役割の設定。 読み取り専用です。 Null 許容型。|
 |summary|[privilegedRoleSummary](privilegedrolesummary.md)| このロールの概要情報。 読み取り専用です。 Null 許容型。|
 

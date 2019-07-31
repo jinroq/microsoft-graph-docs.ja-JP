@@ -4,12 +4,13 @@ description: ScopedRoleMembership リソースのリストを取得します。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 83eb193d46b6ee206beb3c86404e35fb8ed10cad
-ms.sourcegitcommit: 27e8ddb53b699f70b676c9648db8f06bb8d831a9
+doc_type: apiPageType
+ms.openlocfilehash: 155691a6fd521a8561555aaa0194da9e9824bc99
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "35917959"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945814"
 ---
 # <a name="list-scopedrolemembers"></a>リスト scopedRoleMembers
 
@@ -22,9 +23,9 @@ ms.locfileid: "35917959"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | AdministrativeUnit、AdministrativeUnit、Directory.accessasuser.all のいずれかの値を取得します。    |
+|委任 (職場または学校のアカウント) | RoleManagement、RoleManagement、Directory.accessasuser.all、および all のいずれかを取得します。すべてのディレクトリについては。    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | AdministrativeUnit、AdministrativeUnit のいずれかを取得します。 |
+|アプリケーション | RoleManagement、RoleManagement、および All のいずれかのディレクトリを参照しています。 |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

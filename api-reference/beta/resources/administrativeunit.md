@@ -4,12 +4,13 @@ description: 管理単位は、ユーザーおよびグループのディレク�
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a773df792a0f21480510c2a4eaf2aa32e3e10ba9
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+doc_type: resourcePageType
+ms.openlocfilehash: 507b74a32a175bfc37405bd66ddef6f5bfa49c9f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932069"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013466"
 ---
 # <a name="administrativeunit-resource-type"></a>administrativeUnit リソースの種類
 

@@ -4,12 +4,13 @@ description: クラスから教師を削除します。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 35151136f38bcf1e74d958f3f48f4e6819ab73cf
-ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
+doc_type: apiPageType
+ms.openlocfilehash: 2eb74a916dc73d1433ce7f3bb8820ba593183770
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34750018"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955496"
 ---
 # <a name="remove-teacher"></a>教師を削除する
 

@@ -1,17 +1,18 @@
 ---
-title: educationCategories の追加
+title: EducationCategories の追加
 description: 既存の educationCategory をこの educationAssignment に追加する
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: afb89d40dd0f074da9ef1f6c7b0aeb1ff952c43f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: b5395ab656d0a5e44b4f3a45f7c136009c5bcc61
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325217"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955793"
 ---
-# <a name="add-educationcategories"></a>educationCategories の追加
+# <a name="add-educationcategories"></a>EducationCategories の追加
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -65,7 +66,7 @@ Content-length: 212
 ##### <a name="response"></a>応答
 応答の例を次に示します。 
 
->**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 すべてのプロパティは実際の呼び出しから返されます。
+>**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
 
 
 <!-- {

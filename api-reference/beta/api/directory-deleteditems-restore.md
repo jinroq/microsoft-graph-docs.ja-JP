@@ -4,12 +4,13 @@ description: '[削除済みアイテム] から、最近削除されたアイテ
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a2fc8dbb220aaae467d9f5e715f2eb70b59fb6d4
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 9c5c0a7228d0a32f04ad4d1468ff00d1d3061aa8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35862545"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35951261"
 ---
 # <a name="restore-deleted-item"></a>削除済みアイテムを復元する
 

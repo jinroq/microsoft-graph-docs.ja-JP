@@ -1,19 +1,20 @@
 ---
-title: journalLines の削除
+title: JournalLines の削除
 description: Dynamics 365 Business Central の仕訳帳明細行を削除します。
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: c65a742d617818b2d25b936cbd9ba8eb0fc63d83
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: f26c0de4263de6d9644590e16616538455844b33
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458307"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956136"
 ---
-# <a name="delete-journallines"></a>journalLines の削除
+# <a name="delete-journallines"></a>JournalLines の削除
 Dynamics 365 Business Central から、ジャーナル明細行オブジェクトを削除します。
 
 ## <a name="permissions"></a>アクセス許可

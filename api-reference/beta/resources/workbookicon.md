@@ -2,12 +2,15 @@
 title: workbookIcon リソースの種類
 description: セルのアイコンを表します。
 localization_priority: Normal
-ms.openlocfilehash: dae8d9c050dfa8e5ce9c27b7c3d1933a733239e4
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: excel
+author: ''
+ms.openlocfilehash: 2b61bbf8e0b35f7d9e7599cd75a27a245449f9a5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348896"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964021"
 ---
 # <a name="workbookicon-resource-type"></a>workbookIcon リソースの種類
 
@@ -29,7 +32,7 @@ ms.locfileid: "33348896"
 |index|int|指定したセット内のアイコンのインデックスを表します。|
 |set|string|アイコンがその一部であるセットを表します。可能な値は、`Invalid`、`ThreeArrows`、`ThreeArrowsGray`、`ThreeFlags`、`ThreeTrafficLights1`、`ThreeTrafficLights2`、`ThreeSigns`、`ThreeSymbols`、`ThreeSymbols2`、`FourArrows`、`FourArrowsGray`、`FourRedToBlack`、`FourRating`、`FourTrafficLights`、`FiveArrows`、`FiveArrowsGray`、`FiveRating`、`FiveQuarters`、`ThreeStars`、`ThreeTriangles`、`FiveBoxes` です。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 

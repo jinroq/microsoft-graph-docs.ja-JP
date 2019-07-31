@@ -4,12 +4,13 @@ description: rejectedSender リストに新しいユーザーやグループを�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: a730b8a6278f2ca803081643ce2396aae149befe
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: dc1b701a80a145ce0c8e119910f1d239e37ee1fc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35857976"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953522"
 ---
 # <a name="create-rejectedsender"></a>rejectedSender の作成
 

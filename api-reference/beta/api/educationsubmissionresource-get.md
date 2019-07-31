@@ -1,17 +1,18 @@
 ---
-title: educationSubmissionResource を取得する
+title: EducationSubmissionResource を取得する
 description: 送信に関連付けられている特定のリソースのプロパティを取得します。 このリソースは、「作業中」のリソースリストにあり、学生が処理する作業と見なされる必要があります。 このリソースは、割り当てからコピーされた場合、割り当てリソースへの可能なポインターでラップされます。
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: e6678bc3572623e24fc45db5af5d5c4733e227e6
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 9c4362080907ae3425dd68ab3fc5653ba4d57807
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324648"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954936"
 ---
-# <a name="get-educationsubmissionresource"></a>educationSubmissionResource を取得する
+# <a name="get-educationsubmissionresource"></a>EducationSubmissionResource を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -56,7 +57,7 @@ GET https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/s
 ##### <a name="response"></a>応答
 応答の例を次に示します。 
 
->**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
+>**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 
 <!-- {
   "blockType": "ignored",

@@ -1,19 +1,20 @@
 ---
-title: taxGroups の削除
+title: TaxGroups の削除
 description: Dynamics 365 Business Central の税グループオブジェクトを削除します。
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 0de10e65843efbf06968273930c7835a5d4941a2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 36be8d31d7ee43c125d77b5cf233c0c63848cf45
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458636"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955912"
 ---
-# <a name="delete-taxgroups"></a>taxGroups の削除
+# <a name="delete-taxgroups"></a>TaxGroups の削除
 Dynamics 365 Business Central から税グループオブジェクトを削除します。
 
 ## <a name="permissions"></a>アクセス許可

@@ -4,12 +4,13 @@ description: この API を使用して、owners ナビゲーション プロパ
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 348b9c8938523cef80ceab2084d769f5294421ee
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 9f95f242dde1447383f07508e686f42ab64b0da1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35858893"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954017"
 ---
 # <a name="remove-owner"></a>所有者の削除
 

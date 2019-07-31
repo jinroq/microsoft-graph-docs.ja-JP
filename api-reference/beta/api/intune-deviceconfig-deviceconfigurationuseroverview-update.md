@@ -4,12 +4,13 @@ description: deviceConfigurationUserOverview オブジェクトのプロパテ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f477f9742cde277dbca6fc891f1a17aec6d0049b
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: a9f0c8f2f98b432b07344afb3987a664c1b7d716
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34967581"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35948993"
 ---
 # <a name="update-deviceconfigurationuseroverview"></a>deviceConfigurationUserOverview の更新
 

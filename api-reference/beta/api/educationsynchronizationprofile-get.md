@@ -1,17 +1,18 @@
 ---
-title: educationSynchronizationProfile を取得する
+title: EducationSynchronizationProfile を取得する
 description: 識別子に基づいて、テナント内の学校データ同期プロファイルを取得します。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: b000ccc4912516a4264d83ff053f493e332f9e8b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 52d40288237b417138d7ad54a290fc4529f3e10f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322940"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954868"
 ---
-# <a name="get-an-educationsynchronizationprofile"></a>educationSynchronizationProfile を取得する
+# <a name="get-an-educationsynchronizationprofile"></a>EducationSynchronizationProfile を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -56,7 +57,7 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}
 ##### <a name="response"></a>応答
 応答の例を次に示します。 
 
->**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
+>**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 
 <!-- {
   "blockType": "ignored",

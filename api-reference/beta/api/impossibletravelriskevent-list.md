@@ -1,19 +1,22 @@
 ---
 title: リスト impossibleTravelRiskEvents
-description: impossibletravelriskevent オブジェクトのリストを取得します。
+description: Impossibletravelriskevent オブジェクトのリストを取得します。
 localization_priority: Normal
-ms.openlocfilehash: ca526129abbee7381da1a6f957d5092ae00a06f5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+author: ''
+ms.prod: ''
+ms.openlocfilehash: 51618f9d90771aaa8364828872bb5c15b8efa291
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328626"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953137"
 ---
 # <a name="list-impossibletravelriskevents"></a>リスト impossibleTravelRiskEvents
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-impossibletravelriskevent オブジェクトのリストを取得します。
+Impossibletravelriskevent オブジェクトのリストを取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 

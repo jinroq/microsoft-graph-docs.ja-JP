@@ -1,17 +1,18 @@
 ---
-title: educationAssignmentResource を作成する
+title: EducationAssignmentResource を作成する
 description: odata。作成されるリソースの種類を示します。 ファイルベースのリソースは、まず、割り当てリソース**フォルダー**にアップロードする必要があることに注意してください。
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: 408ff1b44fda0d4e9b6f16c2234ed06a4ca24852
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 86cf738f7558814a76d07e7a7eb5ffd22d988d29
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324709"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955670"
 ---
-# <a name="create-educationassignmentresource"></a>educationAssignmentResource を作成する
+# <a name="create-educationassignmentresource"></a>EducationAssignmentResource を作成する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -70,7 +71,7 @@ Content-length: 212
 ##### <a name="response"></a>応答
 応答の例を次に示します。 
 
->**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 すべてのプロパティは実際の呼び出しから返されます。
+>**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
 
 
 <!-- {

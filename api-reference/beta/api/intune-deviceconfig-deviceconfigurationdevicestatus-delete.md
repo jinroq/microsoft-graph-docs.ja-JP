@@ -4,12 +4,13 @@ description: deviceConfigurationDeviceStatus を削除します。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7c81dd1d58a68efd8f84d23eec92695e20f76d05
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: ac3f8ab304e4854dd1738735b9c345755aba3f0f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34967735"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35949133"
 ---
 # <a name="delete-deviceconfigurationdevicestatus"></a>deviceConfigurationDeviceStatus の削除
 

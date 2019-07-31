@@ -1,17 +1,18 @@
 ---
-title: teamguestsettings リソースの種類
+title: teamGuestSettings リソースの種類
 description: ゲストがチームでチャネルを作成、更新、削除できるかどうかを構成する設定。
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: b195590b696002d2ece9828ad8b65fb5b607765f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 2d6e10ccde127e2318ad9c2f3015f5d911574513
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341712"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964558"
 ---
-# <a name="teamguestsettings-resource-type"></a>teamguestsettings リソースの種類
+# <a name="teamguestsettings-resource-type"></a>teamGuestSettings リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -20,8 +21,8 @@ ms.locfileid: "33341712"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|allowCreateUpdateChannels|Boolean|true に設定すると、ゲストはチャネルを追加および更新できるようになります。|
-|allowDeleteChannels|Boolean|true に設定されている場合、ゲストはチャネルを削除できます。|
+|allowCreateUpdateChannels|Boolean|True に設定すると、ゲストはチャネルを追加および更新できるようになります。|
+|allowDeleteChannels|Boolean|True に設定されている場合、ゲストはチャネルを削除できます。|
 
 ## <a name="json-representation"></a>JSON 表記
 

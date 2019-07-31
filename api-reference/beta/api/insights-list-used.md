@@ -4,12 +4,13 @@ description: ユーザーが使用するファイルの一覧を返す、計算�
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 053f36b893cf2167cd30ea8ca1fe639a6df22494
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 31115a845c3b5af80aaba700e55e0ede05d922b7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328655"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953074"
 ---
 # <a name="list-used"></a>使用するリスト
 
@@ -46,7 +47,7 @@ GET /users/{id | userPrincipalName}/insights/used
 
 `https://graph.microsoft.com/beta/me/insights/used?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
 
-利用可能なコンテナーの種類と種類を表示します。これは、 [resourcevisualization](../resources/insights-resourcevisualization.md)でフィルター処理できます。
+利用可能なコンテナーの種類と種類を表示します。これは、 [Resourcevisualization](../resources/insights-resourcevisualization.md)でフィルター処理できます。
 
 
 ## <a name="request-headers"></a>要求ヘッダー

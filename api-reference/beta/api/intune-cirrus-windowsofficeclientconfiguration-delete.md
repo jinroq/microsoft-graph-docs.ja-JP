@@ -4,12 +4,13 @@ description: 特定のセキュリティ以外のポリシーを削除します�
 localization_priority: Normal
 author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: e243e660aa85b7b370da3bbe13f58d1bf89756d1
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageTypes
+ms.openlocfilehash: 5d4e3456a0147feac57a47ae5cc5caf91fc99de6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934020"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35958838"
 ---
 # <a name="delete-windowsofficeclientconfiguration"></a>WindowsOfficeClientConfiguration の削除
 

@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 68bb1e1c8fbfa3c7675b5ef6dc39de24ffad2ecd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: db6622a6f58bb4fb84a19b56b62f20d305fc74f6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32463769"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956668"
 ---
 # <a name="create-items"></a>アイテムを作成する
 「Dynamics 365 Business Central」に、請求書、見積もりなどで使用するアイテムを作成します。
