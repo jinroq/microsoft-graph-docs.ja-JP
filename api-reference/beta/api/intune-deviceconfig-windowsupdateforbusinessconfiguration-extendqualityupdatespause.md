@@ -4,12 +4,13 @@ description: ビジネスリングの Windows Update に対する品質更新プ
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 127562e9fc3b4b89c1d2d83756dad76eb41f9886
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 8123012a5ebb65f6abfe43f9301c67678b272608
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34961323"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35981935"
 ---
 # <a name="extendqualityupdatespause-action"></a>extendQualityUpdatesPause アクション
 

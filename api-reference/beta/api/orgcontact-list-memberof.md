@@ -4,12 +4,13 @@ description: 連絡先がメンバーになっているグループと、事業�
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 278ec1b03af07271b3373e9039ec43c77d9ac48f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: f6c52654daacc7a5f583b418a715116495c0696b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35878020"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35988833"
 ---
 # <a name="orgcontact-list-memberof"></a>orgContact: List memberOf
 

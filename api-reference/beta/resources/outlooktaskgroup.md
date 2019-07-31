@@ -1,21 +1,22 @@
 ---
-title: outlooktaskgroup リソースの種類
-description: 'Outlook のタスク (outlooktask オブジェクトのコレクション) を含むフォルダーのグループ (outlooktaskfolder)。 '
+title: outlookTaskGroup リソースの種類
+description: 'Outlook のタスク (outlookTask オブジェクトのコレクション) を含むフォルダーのグループ (outlookTaskFolder)。 '
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: af5599773c6a4edef97356e99daa522760d9b37a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: d519e18723ac9fbd38e7cec64a6758b0c9396bc2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345535"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966280"
 ---
-# <a name="outlooktaskgroup-resource-type"></a>outlooktaskgroup リソースの種類
+# <a name="outlooktaskgroup-resource-type"></a>outlookTaskGroup リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Outlook のタスク ( [outlooktask](outlooktask.md)オブジェクトのコレクション) を含むフォルダーのグループ ([outlooktaskfolder](outlooktaskfolder.md))。 
+Outlook のタスク ( [Outlooktask](outlooktask.md)オブジェクトのコレクション) を含むフォルダーのグループ ([outlooktaskfolder](outlooktaskfolder.md))。 
 
 Outlook には、名前を変更または削除することができない既定のタスク グループ `My Tasks` があります。 ただし、タスク グループを作成することはできます。 
 
@@ -24,25 +25,25 @@ Outlook には、名前を変更または削除することができない既定
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[outlooktaskgroup の取得](../api/outlooktaskgroup-get.md) | [outlookTaskGroup](outlooktaskgroup.md) |指定された Outlook タスクグループのプロパティとリレーションシップを取得します。|
-|[outlooktaskfolder の作成](../api/outlooktaskgroup-post-taskfolders.md) |[outlookTaskFolder](outlooktaskfolder.md)| Outlook のタスクフォルダーを作成します。|
-|[taskfolders を一覧表示する](../api/outlooktaskgroup-list-taskfolders.md) |[outlooktaskfolder](outlooktaskfolder.md)コレクション| Outlook タスクフォルダーのコレクションを取得します。|
+|[OutlookTaskGroup の取得](../api/outlooktaskgroup-get.md) | [outlookTaskGroup](outlooktaskgroup.md) |指定された Outlook タスクグループのプロパティとリレーションシップを取得します。|
+|[OutlookTaskFolder の作成](../api/outlooktaskgroup-post-taskfolders.md) |[outlookTaskFolder](outlooktaskfolder.md)| Outlook のタスクフォルダーを作成します。|
+|[TaskFolders を一覧表示する](../api/outlooktaskgroup-list-taskfolders.md) |[Outlooktaskfolder](outlooktaskfolder.md)コレクション| Outlook タスクフォルダーのコレクションを取得します。|
 |[Update](../api/outlooktaskgroup-update.md) | [outlookTaskGroup](outlooktaskgroup.md)  |Outlook タスクグループの書き込み可能なプロパティを更新します。 |
-|[Delete](../api/outlooktaskgroup-delete.md) | なし |指定された Outlook タスクグループを削除します。 |
+|[Delete](../api/outlooktaskgroup-delete.md) | None |指定された Outlook タスクグループを削除します。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |changeKey|String|タスク グループのバージョン。|
-|groupkey|Edm.Guid|タスク グループの一意の GUID 識別子。|
-|id|文字列型 (String)|タスクグループの一意の文字列識別子。 読み取り専用です。|
-|isdefaultgroup|ブール型|タスク グループが既定のタスク グループの場合は true。|
+|groupKey|Edm.Guid|タスク グループの一意の GUID 識別子。|
+|id|文字列|タスクグループの一意の文字列識別子。 読み取り専用です。|
+|isDefaultGroup|ブール型|タスク グループが既定のタスク グループの場合は true。|
 |name|String|タスク グループの名前。|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|taskfolders|[outlooktaskfolder](outlooktaskfolder.md)コレクション| タスクグループ内のタスクフォルダーのコレクション。 読み取り専用です。 Null 許容型。|
+|taskFolders|[Outlooktaskfolder](outlooktaskfolder.md)コレクション| タスクグループ内のタスクフォルダーのコレクション。 読み取り専用です。 Null 許容型。|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。

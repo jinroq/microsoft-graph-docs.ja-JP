@@ -1,19 +1,22 @@
 ---
 title: leakedCredentialsRiskEvent を取得する
-description: leakedcredentialsriskevent オブジェクトのプロパティとリレーションシップを取得します。
+description: Leakedcredentialsriskevent オブジェクトのプロパティとリレーションシップを取得します。
 localization_priority: Normal
-ms.openlocfilehash: 2fd58105111b7f04976881729e17d073e223ff52
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+author: ''
+ms.prod: ''
+ms.openlocfilehash: ae53a9ee3f9687a9bc4f248804c2e4c9060953f7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333541"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979100"
 ---
 # <a name="get-leakedcredentialsriskevent"></a>leakedCredentialsRiskEvent を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-leakedcredentialsriskevent オブジェクトのプロパティとリレーションシップを取得します。
+Leakedcredentialsriskevent オブジェクトのプロパティとリレーションシップを取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 

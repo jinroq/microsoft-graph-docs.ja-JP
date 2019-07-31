@@ -4,12 +4,13 @@ description: テーブルのデータ本体に関連付けられた範囲オブ�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 8ad03d072b248d3a4cf9395260c12c3d0b496bd1
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: f9599bf5595e4ed98b796752a5fab55bb70f8e97
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35868992"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35982659"
 ---
 # <a name="table-databodyrange"></a>Table:DataBodyRange
 

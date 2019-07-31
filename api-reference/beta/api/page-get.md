@@ -1,21 +1,22 @@
 ---
 title: ページを取得する
-description: page オブジェクトのプロパティとリレーションシップを取得します。
+description: Page オブジェクトのプロパティとリレーションシップを取得します。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: b4138c46a4717db4590d0e929518e1f8df2893ed
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 11166c6c8e61fcb905fa3f9fe847b1bfa39c37ca
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337818"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35983580"
 ---
 # <a name="get-page"></a>ページを取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[page](../resources/onenotepage.md)オブジェクトのプロパティとリレーションシップを取得します。
+[Page](../resources/onenotepage.md)オブジェクトのプロパティとリレーションシップを取得します。
 
 **ページ情報を取得する**
 
@@ -78,7 +79,7 @@ GET /sites/{id}/onenote/pages/{id}
 GET https://graph.microsoft.com/beta/me/onenote/pages/{id}
 ```
 ##### <a name="response"></a>応答
-以下は、応答の例です。 注: 簡潔にするために、ここに示す response オブジェクトは切り詰められています。 すべてのプロパティは実際の呼び出しから返されます。
+以下は、応答の例です。 注: 簡潔にするために、ここに示す response オブジェクトは切り詰められています。 実際の呼び出しではすべてのプロパティが返されます。
  <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK

@@ -1,21 +1,23 @@
 ---
 author: daspek
-ms.author: dspektor
+description: ItemActivity に accessAction リソースが存在する場合は、アクティビティがアイテムにアクセスしたことを示します。
 ms.date: 09/12/2018
-title: accessaction
+title: AccessAction
 localization_priority: Normal
-ms.openlocfilehash: ae515a9eca368846cf6352b5a68f95f162866710
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 6ff8489cea29f5ee249266f36b784b3bd246daab
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339336"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974541"
 ---
-# <a name="accessaction-resource-type"></a>accessaction リソースの種類
+# <a name="accessaction-resource-type"></a>accessAction リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[**itemactivity**] [ activity]に**accessaction**リソースが存在する場合は、アクティビティがアイテムにアクセスしたことを示します。
+[**Itemactivity**][activity]に**accessaction**リソースが存在する場合は、アクティビティがアイテムにアクセスしたことを示します。
 
 >**注:** 現在、アクセスアクティビティレコードは、SharePoint と OneDrive for business でのみ使用できます。
 

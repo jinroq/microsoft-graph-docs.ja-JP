@@ -2,12 +2,15 @@
 title: 写真を削除する
 description: 写真を削除します。
 localization_priority: Normal
-ms.openlocfilehash: 2477b27d0bff760d46e8f812ba3343ddaeb2ddd1
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: dffd830a66ce90f536f9d0e7e1b6f3a71fbebd69
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35876957"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992410"
 ---
 # <a name="delete-photo"></a>写真を削除する
 

@@ -4,12 +4,13 @@ description: 'Microsoft Graph を使用すると、アプリは個人または�
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 6d92faecfd58c74f519802fe308071828a3713dc
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.openlocfilehash: 5df39b82febc9e68df3fe0facadf67fe8caeb943
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345552"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966462"
 ---
 # <a name="use-the-onenote-rest-api"></a>OneNote REST API を使用する
 

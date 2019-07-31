@@ -1,23 +1,25 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: 以下は、columnDefinition リソースの JSON 表記です。
 ms.date: 09/11/2017
 title: ColumnDefinition
 localization_priority: Normal
-ms.openlocfilehash: c5cce4c3db7b66ff46a6bab0bbfaacd0ecc9a6cc
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 7f60d33f8fbfe76c9dfd0ca02c98df96ca6ab380
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341417"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973301"
 ---
-# <a name="columndefinition-resource-type"></a>columndefinition リソースの種類
+# <a name="columndefinition-resource-type"></a>columnDefinition リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ## <a name="json-representation"></a>JSON 表記
 
-以下は、columndefinition リソースの JSON 表記です。
+以下は、columnDefinition リソースの JSON 表記です。
 
 <!--{
   "blockType": "resource",
@@ -64,10 +66,10 @@ ms.locfileid: "33341417"
 | **columnGroup**         | string  | サイト列の場合、この列が属するグループの名前。 関連する列を整理するのに役立ちます。
 | **説明**         | string  | 列に関するユーザー向けの説明。
 | **displayName**         | string  | 列を示すユーザー向けの名前。
-| **enforceUniqueValues** | boolean | True の場合、この列で 2 つのリスト アイテムの値を同じにすることはできません。
-| **hidden**              | boolean | この列がユーザー インターフェイスに表示されるかどうかを指定します。
+| **enforceUniqueValues** | ブール値 | True の場合、この列で 2 つのリスト アイテムの値を同じにすることはできません。
+| **hidden**              | ブール値 | この列がユーザー インターフェイスに表示されるかどうかを指定します。
 | **id**                  | string  | 列の一意識別子。
-| **indexed**             | boolean | 列の値を、並べ替えと検索に使用できるかどうかを指定します。
+| **indexed**             | ブール値 | 列の値を、並べ替えと検索に使用できるかどうかを指定します。
 | **name**                | string  | [listItem][] の [fields][] に表示される、列を示す API 向けの名前。 ユーザー向けの名前については **displayName** をご覧ください。
 | **readOnly**            | bool    | 列の値を変更できるかどうかを指定します。
 | **required**            | boolean | 列の値が省略不可であるかどうかを指定します。
@@ -77,7 +79,7 @@ ms.locfileid: "33341417"
 | **currency**      | [currencyColumn][]      | この列には通貨値が格納されます。
 | **dateTime**      | [dateTimeColumn][]      | この列には日時の値が格納されます。
 | **defaultValue**  | [defaultColumnValue][]  | この列の既定値です。
-| **地理位置情報**   | [geolocationcolumn][]   | この列には、地理位置情報が格納されます。
+| **地理位置情報**   | [geolocationColumn][]   | この列には、地理位置情報が格納されます。
 | **lookup**        | [lookupColumn][]        | この列のデータは、サイト内の別のソースから検索されます。
 | **number**        | [numberColumn][]        | この列には数値が格納されます。
 | **personOrGroup** | [personOrGroupColumn][] | この列にはユーザーまたはグループの値が格納されます。
@@ -99,7 +101,7 @@ ms.locfileid: "33341417"
 [currencyColumn]: currencycolumn.md
 [dateTimeColumn]: datetimecolumn.md
 [defaultColumnValue]: defaultcolumnvalue.md
-[geolocationcolumn]: geolocationcolumn.md
+[geolocationColumn]: geolocationcolumn.md
 [lookupColumn]: lookupcolumn.md
 [numberColumn]: numbercolumn.md
 [personOrGroupColumn]: personorgroupcolumn.md

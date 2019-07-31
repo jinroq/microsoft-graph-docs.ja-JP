@@ -2,12 +2,15 @@
 title: " complianceInformation リソースの種類"
 description: このリソースには、セキュリティで保護されたスコアコントロールに関連するコンプライアンスデータが含まれています。
 localization_priority: Normal
-ms.openlocfilehash: 7a3968e6e043d2019100870061c5e34b03b1b8bd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: b93e01bf6274591282fd5e486bebb878672d8cc3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543365"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973231"
 ---
 #  <a name="complianceinformation-resource-type"></a>complianceInformation リソースの種類
 
@@ -15,7 +18,7 @@ ms.locfileid: "32543365"
 
 |プロパティ |型 |説明 |
 |:--|:--|:--|
-|certificationName | string | コンプライアンス証明書の名前 (たとえば、ISO 27018:2014、GDPR、fedramp、NIST 800-171) |
+|certificationName | string | コンプライアンス証明書の名前 (たとえば、ISO 27018:2014、GDPR、FedRAMP、NIST 800-171) |
 |certificationControls | [certificationControl](certificationcontrol.md)コレクション | 証明書に関連付けられている証明書コントロールのコレクション |
 
 ## <a name="json-representation"></a>JSON 表記

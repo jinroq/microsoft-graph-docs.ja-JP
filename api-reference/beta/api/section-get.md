@@ -4,12 +4,13 @@ description: Section オブジェクトのプロパティとリレーション�
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 0d764de61b52776e3606ac1dfc384a96a21e8a1b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 4672f570ed677c0848b150c50a6537ac6d3cf744
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35870524"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991535"
 ---
 # <a name="get-section"></a>セクションを取得する
 

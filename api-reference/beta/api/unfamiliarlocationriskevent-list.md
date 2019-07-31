@@ -1,19 +1,22 @@
 ---
 title: リスト unfamiliarLocationRiskEvents
-description: unfamiliarlocationriskevent オブジェクトのリストを取得します。
+description: Unfamiliarlocationriskevent オブジェクトのリストを取得します。
 localization_priority: Normal
-ms.openlocfilehash: 672eda941298c4da8cee3e2e0a3ba034ee361234
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: b12bc0520bfa285b654b615cfb74582683b04c49
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335123"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987902"
 ---
 # <a name="list-unfamiliarlocationriskevents"></a>リスト unfamiliarLocationRiskEvents
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-unfamiliarlocationriskevent オブジェクトのリストを取得します。
+Unfamiliarlocationriskevent オブジェクトのリストを取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 

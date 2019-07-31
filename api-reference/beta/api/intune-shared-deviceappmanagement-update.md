@@ -4,12 +4,13 @@ description: deviceAppManagement オブジェクトのプロパティを更新�
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 03290cf87550427878d1b01d2ea4e3da9712fd8c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 577e8f4de67eb7de276cda4a77caac908aba87ff
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34990086"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993698"
 ---
 # <a name="update-deviceappmanagement"></a>Update deviceAppManagement
 

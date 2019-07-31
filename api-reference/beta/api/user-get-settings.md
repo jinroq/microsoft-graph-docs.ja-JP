@@ -1,22 +1,23 @@
 ---
 title: 設定を取得する
-description: ユーザーと組織の設定オブジェクトを読み取ります。
+description: ユーザーおよび組織の設定 オブジェクトを読み取ります。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: dcd9079956b4db8b349ba6b81bd85d8472630643
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: b0e34e790ae88eceb7e8959dd6e3b9710bf850f7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334913"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987748"
 ---
 # <a name="get-settings"></a>設定を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ユーザーと組織の[設定](../resources/user-settings.md)オブジェクトを読み取ります。
-[settings](../resources/user-settings.md)オブジェクトのプロパティを更新する方法については、「[ユーザーの設定を更新](user-update-settings.md)する」を参照してください。
+ユーザーおよび組織の[設定](../resources/user-settings.md) オブジェクトを取得します。
+[設定](../resources/user-settings.md)オブジェクトのプロパティを更新する方法については、[ユーザー設定を更新する](user-update-settings.md)を参照してください。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -26,7 +27,7 @@ ms.locfileid: "33334913"
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | User.Read.All、User.ReadWrite.All    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | user。すべてのユーザーを取得します。 |
+|アプリケーション | User.Read.All,User.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -34,7 +35,7 @@ ms.locfileid: "33334913"
 GET /me/settings/
 ```
 
-' user id ' または ' userPrincipalName ' を持つ要求は、ユーザーまたはすべてのアクセス許可を持つユーザーのみがアクセスできます。 詳細については、「 [Permissions](/graph/permissions-reference)」を参照してください。
+「user id」または「userPrincipalName」を持つリクエストは、ユーザーまたは User.ReadWrite.All 権限を持つユーザーのみがアクセスできます。 詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 ```http
 GET /users/{id | userPrincipalName}/settings/
@@ -46,7 +47,7 @@ GET /users/{id | userPrincipalName}/settings/
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[ユーザー設定](../resources/user-settings.md)オブジェクトを返します。
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で[ユーザー](../resources/user-settings.md)設定 オブジェクトを返します。
 
 ## <a name="example"></a>例
 

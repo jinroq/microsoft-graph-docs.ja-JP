@@ -4,12 +4,13 @@ description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API は
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 1d3c55961161ea820eac97baa0da2ad2daf24cd2
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 77b1cf812edd334197c268c92bb982954fb11b12
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328263"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974123"
 ---
 # <a name="bookingschedulingpolicy-resource-type"></a>bookingSchedulingPolicy リソースの種類
 
@@ -21,9 +22,9 @@ Microsoft の予約予定表で予定を作成する方法を決定する一連�
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |allowStaffSelection|Boolean|True の場合、ユーザーは予約の特定のユーザーを選択することができます。|
-|maximumadvance|期間|予約を事前に作成できる最大日数。 [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html)形式に従います。|
+|maximumAdvance|期間|予約を事前に作成できる最大日数。 [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html)形式に従います。|
 |minimumLeadTime|期間|予約と取り消しを行う必要のある最小時間。 [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html)形式に従います。|
-|sendConfirmationsToOwner|Boolean| True は、予約が作成または変更されたときに電子メールでビジネスに通知します。 会社の**bookingbusiness**エンティティの**email**プロパティで指定された電子メールアドレスを使用します。 |
+|sendConfirmationsToOwner|Boolean| True は、予約が作成または変更されたときに電子メールでビジネスに通知します。 会社の**Bookingbusiness**エンティティの**email**プロパティで指定された電子メールアドレスを使用します。 |
 |timeSlotInterval|期間|各時間帯の期間は、 [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html)形式で示されます。|
 
 ## <a name="json-representation"></a>JSON 表記

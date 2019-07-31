@@ -1,19 +1,22 @@
 ---
 title: デバイス コマンドを送信する
-description: 'この API を使用すると、Project ローマ機能を使用して、Microsoft アカウントに関連付けられているデバイスにコマンドを実行できます。 GET 呼び出しを実行した`me/devices`後、デバイスにコマンドを発行するデバイスの ID を渡します。 launchuri と appservices という2種類のコマンドがサポートされています。 launchuri を使用している場合は、 *type*パラメーターと*payload*パラメーターを指定します。 AppService の呼び出しの場合は、 '
+description: 'この API を使用すると、Project ローマ機能を使用して、Microsoft アカウントに関連付けられているデバイスにコマンドを実行できます。 GET 呼び出しを実行した`me/devices`後、デバイスにコマンドを発行するデバイスの ID を渡します。 LaunchURI と AppServices という2種類のコマンドがサポートされています。 LaunchURI を使用している場合は、 *type*パラメーターと*payload*パラメーターを指定します。 AppService の呼び出しの場合は、 '
 localization_priority: Normal
-ms.openlocfilehash: 4ec87825eec72a68dce236d61b17b504a194e75a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: fd45047d673dc6def51d3f417861cf15a38a2f98
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33336040"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991514"
 ---
 # <a name="send-device-command"></a>デバイス コマンドを送信する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-この API を使用すると、Project ローマ機能を使用して、Microsoft アカウントに関連付けられているデバイスにコマンドを実行できます。 GET 呼び出しを実行した`me/devices`後、デバイスにコマンドを発行するデバイスの ID を渡します。 launchuri と appservices という2種類のコマンドがサポートされています。 launchuri を使用している場合は、 *type*パラメーターと*payload*パラメーターを指定します。 AppService の呼び出しの場合は、 *type*、 *payload*、 *efamilyname*、 *appservicename*の各パラメーターを指定します。
+この API を使用すると、Project ローマ機能を使用して、Microsoft アカウントに関連付けられているデバイスにコマンドを実行できます。 GET 呼び出しを実行した`me/devices`後、デバイスにコマンドを発行するデバイスの ID を渡します。 LaunchURI と AppServices という2種類のコマンドがサポートされています。 LaunchURI を使用している場合は、 *type*パラメーターと*payload*パラメーターを指定します。 AppService の呼び出しの場合は、 *type*、 *payload*、 *Efamilyname*、 *appservicename*の各パラメーターを指定します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -81,18 +84,18 @@ HTTP/1.1 201 OK
 |**名前**|**Type**|**説明**|
 |:----|:------|:------|
 |payload | microsoft graph| アプリサービスに送信するペイロード、またはデバイスで URI を起動するためのペイロード。 |
-|responsepayload | microsoft graph| ターゲットデバイスから返されたペイロード。 |
+|responsePayload | microsoft graph| ターゲットデバイスから返されたペイロード。 |
 |postBackURI | String | 今後の更新通知を送信するための URI をポストバックします。 |
-|パッケージ efamilyname | String | Windows パッケージファミリアプリケーションの名前。 |
-|appservicename | String | ターゲットアプリケーションによって定義された app service の名前です。 app service を開始する場合に必要です。 |
-|type| String | launchuri または AppService。 |
-|id| String | デバイスに送信されたコマンドの ID。 |
-|actionstatus | String | コマンドの[状態](get-device-command-status.md)を示します。 |
+|パッケージ Efamilyname | String | Windows パッケージファミリアプリケーションの名前。 |
+|appServiceName | String | ターゲットアプリケーションによって定義された app service の名前です。 App service を開始する場合に必要です。 |
+|type| String | LaunchURI または AppService。 |
+|id| 文字列 | デバイスに送信されたコマンドの ID。 |
+|actionStatus | String | コマンドの[状態](get-device-command-status.md)を示します。 |
 |error| String| ターゲットアプリケーションからの要求に関連付けられているエラー。 |
 
 ## <a name="launch-uri-example"></a>開始 URI の例
 
-ここでは、launchuri 要求の例を示します。ターゲットデバイス上の URI またはアプリケーションを起動します。 URI またはアプリを起動するには、デバイスの ID を使用して POST を発行します (GET 呼び出し`me/devices`の実行によって取得されます)。 *型*パラメーターを*launchuri*に設定し、などの URI 値をhttps://bing.com指定します。
+ここでは、LaunchURI 要求の例を示します。ターゲットデバイス上の URI またはアプリケーションを起動します。 URI またはアプリを起動するには、デバイスの ID を使用して POST を発行します (GET 呼び出し`me/devices`の実行によって取得されます)。 *型*パラメーターを*launchuri*に設定し、などの URI 値をhttps://bing.com指定します。
 
 #### <a name="request"></a>要求
 

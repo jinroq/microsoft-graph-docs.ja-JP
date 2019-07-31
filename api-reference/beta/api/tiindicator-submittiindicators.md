@@ -4,12 +4,13 @@ description: 複数の脅威インテリジェンス (TI) インジケーター�
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 612dcdd385a708edba5d410b037d2332d78bbcbd
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 4b0067aeb0945db706ff24c667489f33ce49feff
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35868200"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987909"
 ---
 # <a name="tiindicator-submittiindicators"></a>tiIndicator: submitTiIndicators
 

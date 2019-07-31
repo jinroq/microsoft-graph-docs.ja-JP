@@ -2,12 +2,15 @@
 title: 'servicePrincipal: delta'
 description: リソースコレクション全体の完全な読み取りを実行せずに、新しく作成、更新、または削除されたサービスプリンシパルを取得します。 詳細については、「デルタクエリの使用」を参照してください。
 localization_priority: Normal
-ms.openlocfilehash: 2a0dd5a7e4b7573c1a0fd738ff5a54fd88ad7246
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: ea3b2549209bef654bae182d3ff30922a97050f9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35870178"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977938"
 ---
 # <a name="serviceprincipal-delta"></a>servicePrincipal: delta
 

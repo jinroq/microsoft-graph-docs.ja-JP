@@ -4,12 +4,13 @@ description: 新しい groupPolicyPresentationValueMultiText オブジェクト�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cbfc1fb0b8b84c90c9f96a788cd89ef955d7397e
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 0927ddf3523c9e7cccd473749cc76f84ef9474d5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34980139"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35989008"
 ---
 # <a name="create-grouppolicypresentationvaluemultitext"></a>GroupPolicyPresentationValueMultiText を作成する
 

@@ -2,12 +2,15 @@
 title: Microsoft Graph ベータ版のエンドポイント リファレンス
 description: このセクションのリファレンス コンテンツは、Microsoft Graph ベータ版のエンドポイントを文書化しています。 ベータ版のエンドポイントには、現在プレビュー段階で一般提供されていない API が含まれます。 これらの API を試して、次のチャネルからフィードバックをお寄せください。
 localization_priority: Priority
-ms.openlocfilehash: 9f9223c36679865b40303dc3530dee9c2c93950d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: adfb0abf2feab3d6846d6636136f413d7986f375
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32544009"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974494"
 ---
 # <a name="microsoft-graph-beta-endpoint-reference"></a>Microsoft Graph ベータ版のエンドポイント リファレンス
 

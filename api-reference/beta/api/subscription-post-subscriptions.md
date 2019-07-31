@@ -3,12 +3,14 @@ title: サブスクリプションを作成する
 description: Microsoft Graph リソース上のデータが変更されたときに通知を受信するリスナーアプリケーションをサブスクライブします。
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: a57baef119e64178f5d3a306c4b09c7b3b23e617
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+ms.openlocfilehash: 77f62bae77c42b7142ece240195c76bd2aaeb276
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35869468"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991164"
 ---
 # <a name="create-subscription"></a>サブスクリプションを作成する
 

@@ -4,12 +4,13 @@ description: ユーザーが作業しているユーザーのリストについ�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 906a0f579ff66f7df6d2d5e2b72758cdd397182d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 587a9e34db293a738e1242b3d41406bb15990834
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334808"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987482"
 ---
 # <a name="list-workingwith"></a>リスト workingWith
 

@@ -4,12 +4,13 @@ description: 添付ファイルを投稿に追加する場合に、この API �
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 610b305ba6152dfd1d37f1cefa164c7a30bb264d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 2b54818d602d9226303c96cb002cf72e453cae13
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35876034"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35983419"
 ---
 # <a name="add-attachment"></a>添付ファイルを追加する
 

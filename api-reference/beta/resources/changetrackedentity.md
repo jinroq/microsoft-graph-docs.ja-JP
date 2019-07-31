@@ -2,12 +2,15 @@
 title: changeTrackedEntity リソースの種類
 description: ''
 localization_priority: Normal
-ms.openlocfilehash: 838aeca84b6928c709a3c4775c95ab3ef8fd7692
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 3815b22c7bd76a894df0e98415e0c30bb77decd1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33347944"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974057"
 ---
 # <a name="changetrackedentity-resource-type"></a>changeTrackedEntity リソースの種類
 
@@ -20,7 +23,7 @@ ms.locfileid: "33347944"
 |lastModifiedDateTime| DateTimeOffset| |
 |lastModifiedBy| [identitySet](identityset.md) | |
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。

@@ -4,12 +4,13 @@ description: 'Microsoft Graph を使用すると、OneDrive、SharePoint、ま�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: fbb07f14f9cd43212109fdee45171ac09bbdd64d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.openlocfilehash: d19fea84715a685efd87400b92da6aa42b1ee744
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333905"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972076"
 ---
 # <a name="working-with-excel-in-microsoft-graph"></a>Microsoft Graph での Excel の操作
 
@@ -21,7 +22,7 @@ Microsoft Graph を使用すると、OneDrive、SharePoint、またはその他�
 `https://graph.microsoft.com/{version}/me/drive/root:/{item-path}:/workbook/`  
 
 ブックに対して作成、読み取り、更新、削除 (CRUD) 操作を実行するための標準 REST API を使用して、一連の Excel オブジェクト (テーブル、範囲、またはグラフなど) にアクセスできます。たとえば、`https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/` では、  
-ブックの一部であるワークシート オブジェクトのコレクションが返されます。    
+ワークブックの一部であるワークシート オブジェクトのコレクションが返されます。    
 
 
 **注:** Excel REST API では、Office Open XML ファイル形式のブックのみがサポートされています。 `.xls` 拡張子のブックはサポートされていません。 

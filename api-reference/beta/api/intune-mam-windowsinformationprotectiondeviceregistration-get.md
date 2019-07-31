@@ -4,12 +4,13 @@ description: WindowsInformationProtectionDeviceRegistration オブジェクト�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4921289bc8ae3bcbe4b2e2b7ee8f9a0725ab65b9
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 3995b7783c4cffab945607df8f5dde4fc2523c3b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34987825"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35984714"
 ---
 # <a name="get-windowsinformationprotectiondeviceregistration"></a>WindowsInformationProtectionDeviceRegistration を取得する
 

@@ -4,12 +4,13 @@ description: rangeborder オブジェクトのプロパティを更新します�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: e4f993f5e3de66575e5d3c5ea3c91fcb49e53ba5
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: df26b12d69cb781a2064b088271dcb7c37667b4f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35874603"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35988385"
 ---
 # <a name="update-rangeborder"></a>rangeborder を更新する
 

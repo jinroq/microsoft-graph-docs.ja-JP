@@ -4,12 +4,13 @@ description: windows10EndpointProtectionConfiguration オブジェクトのプ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4964d87e950b1d00777e5cde25a5ba56480f06d0
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: 11f79a93c3cdb4acfb173507743d03f348dd329c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35715292"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35976881"
 ---
 # <a name="list-windows10endpointprotectionconfigurations"></a>windows10EndpointProtectionConfigurations のリスト
 

@@ -4,12 +4,13 @@ description: '以前に Microsoft Teams アプリカタログに発行したア�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 48bf1682821578c786ad9e52b00409f35b6fab66
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 02822690d18076ee5ce2535c06e2856afe89e3c1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33330670"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977553"
 ---
 # <a name="update-apps-published-to-your-organizations-app-catalog"></a>組織のアプリカタログに発行されたアプリを更新する
 
@@ -44,9 +45,9 @@ PUT /appCatalogs/teamsApps/{id}
 
 ## <a name="request-body"></a>要求本文
 
-teams zip マニフェストペイロード: teams アプリケーション zip ファイルについ[ては、「アプリパッケージを作成する」を参照してください](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)。
+Teams Zip マニフェストペイロード: Teams アプリケーション zip ファイルについ[ては、「アプリパッケージを作成する」を参照してください](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)。
 
->**注:** の[発行済みアプリの一覧](./teamsapp-list.md)から返された ID を使用して、更新するアプリを参照します。 zip アプリパッケージのマニフェストからの ID は使用しないでください。
+>**注:** の[発行済みアプリの一覧](./teamsapp-list.md)から返された ID を使用して、更新するアプリを参照します。 Zip アプリパッケージのマニフェストからの ID は使用しないでください。
 
 ## <a name="response"></a>応答
 

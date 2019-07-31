@@ -4,12 +4,13 @@ description: 営業時間に対する割合としての帯域幅制限。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d1ad2bbfef3a055a4d5449f7f165bd4bf2f9a07a
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 022bada2d0dcfff6cf09ad5ae7719e3cd54107c0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34979698"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35970795"
 ---
 # <a name="deliveryoptimizationbandwidthhourswithpercentage-resource-type"></a>deliveryOptimizationBandwidthHoursWithPercentage リソースの種類
 
