@@ -4,30 +4,31 @@ description: Alert オブジェクトのプロパティと関係を取得する
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: d6343a35df40431760aed7c425fd1adafa3de24e
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: c7a50b1d7dd66d86f5e5796c89189b66ce8c1b49
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35855414"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945674"
 ---
-# <a name="get-alert"></a><span data-ttu-id="481b5-103">アラートを取得する</span><span class="sxs-lookup"><span data-stu-id="481b5-103">Get alert</span></span>
+# <a name="get-alert"></a><span data-ttu-id="34952-103">アラートを取得する</span><span class="sxs-lookup"><span data-stu-id="34952-103">Get alert</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="481b5-104">[Alert](../resources/alert.md)オブジェクトのプロパティと関係を取得します。</span><span class="sxs-lookup"><span data-stu-id="481b5-104">Retrieve the properties and relationships of an [alert](../resources/alert.md) object.</span></span>
+<span data-ttu-id="34952-104">[Alert](../resources/alert.md)オブジェクトのプロパティと関係を取得します。</span><span class="sxs-lookup"><span data-stu-id="34952-104">Retrieve the properties and relationships of an [alert](../resources/alert.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="481b5-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="481b5-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="34952-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="34952-105">Permissions</span></span>
 
-<span data-ttu-id="481b5-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="481b5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="34952-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="34952-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="481b5-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="481b5-108">Permission type</span></span>      | <span data-ttu-id="481b5-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="481b5-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="34952-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="34952-108">Permission type</span></span>      | <span data-ttu-id="34952-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="34952-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="481b5-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="481b5-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="481b5-111">SecurityEvents.Read.All、SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="481b5-111">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span>   |
-|<span data-ttu-id="481b5-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="481b5-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="481b5-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="481b5-113">Not supported.</span></span>  |
-|<span data-ttu-id="481b5-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="481b5-114">Application</span></span> | <span data-ttu-id="481b5-115">SecurityEvents.Read.All、SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="481b5-115">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span> |
+|<span data-ttu-id="34952-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="34952-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="34952-111">SecurityEvents.Read.All、SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="34952-111">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span>   |
+|<span data-ttu-id="34952-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="34952-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="34952-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="34952-113">Not supported.</span></span>  |
+|<span data-ttu-id="34952-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="34952-114">Application</span></span> | <span data-ttu-id="34952-115">SecurityEvents.Read.All、SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="34952-115">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="481b5-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="481b5-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="34952-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="34952-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -35,27 +36,27 @@ ms.locfileid: "35855414"
 GET /security/alerts/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="481b5-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="481b5-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="34952-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="34952-117">Request headers</span></span>
 
-| <span data-ttu-id="481b5-118">名前</span><span class="sxs-lookup"><span data-stu-id="481b5-118">Name</span></span>      |<span data-ttu-id="481b5-119">説明</span><span class="sxs-lookup"><span data-stu-id="481b5-119">Description</span></span>|
+| <span data-ttu-id="34952-118">名前</span><span class="sxs-lookup"><span data-stu-id="34952-118">Name</span></span>      |<span data-ttu-id="34952-119">説明</span><span class="sxs-lookup"><span data-stu-id="34952-119">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="481b5-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="481b5-120">Authorization</span></span>  | <span data-ttu-id="481b5-121">ベアラー {code}。</span><span class="sxs-lookup"><span data-stu-id="481b5-121">Bearer {code}.</span></span> <span data-ttu-id="481b5-122">必須です。</span><span class="sxs-lookup"><span data-stu-id="481b5-122">Required.</span></span>|
+| <span data-ttu-id="34952-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="34952-120">Authorization</span></span>  | <span data-ttu-id="34952-121">ベアラー {code}。</span><span class="sxs-lookup"><span data-stu-id="34952-121">Bearer {code}.</span></span> <span data-ttu-id="34952-122">必須です。</span><span class="sxs-lookup"><span data-stu-id="34952-122">Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="481b5-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="481b5-123">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="34952-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="34952-123">Request body</span></span>
 
-<span data-ttu-id="481b5-124">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="481b5-124">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="34952-124">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="34952-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="481b5-125">応答</span><span class="sxs-lookup"><span data-stu-id="481b5-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="34952-125">応答</span><span class="sxs-lookup"><span data-stu-id="34952-125">Response</span></span>
 
-<span data-ttu-id="481b5-126">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で**alert**オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="481b5-126">If successful, this method returns a `200 OK` response code and an **alert** object in the response body.</span></span> <span data-ttu-id="481b5-127">プロバイダーから 2xx または 404 以外の状態コードが返されるか、プロバイダーがタイムアウトした場合、応答は、警告ヘッダー内のプロバイダーの応答と共に状態コード `206 Partial Content` になります。</span><span class="sxs-lookup"><span data-stu-id="481b5-127">If a status code other than 2xx or 404 is returned from a provider or if a provider times out, the response will be a `206 Partial Content` status code with the provider's response in a warning header.</span></span> <span data-ttu-id="481b5-128">詳細については、「[Microsoft グラフ セキュリティ API のエラー応答](../resources/security-error-codes.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="481b5-128">For more information, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).</span></span>
+<span data-ttu-id="34952-126">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で**alert**オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="34952-126">If successful, this method returns a `200 OK` response code and an **alert** object in the response body.</span></span> <span data-ttu-id="34952-127">プロバイダーから 2xx または 404 以外の状態コードが返されるか、プロバイダーがタイムアウトした場合、応答は、警告ヘッダー内のプロバイダーの応答と共に状態コード `206 Partial Content` になります。</span><span class="sxs-lookup"><span data-stu-id="34952-127">If a status code other than 2xx or 404 is returned from a provider or if a provider times out, the response will be a `206 Partial Content` status code with the provider's response in a warning header.</span></span> <span data-ttu-id="34952-128">詳細については、「[Microsoft グラフ セキュリティ API のエラー応答](../resources/security-error-codes.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="34952-128">For more information, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).</span></span>
 
-## <a name="example"></a><span data-ttu-id="481b5-129">例</span><span class="sxs-lookup"><span data-stu-id="481b5-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="34952-129">例</span><span class="sxs-lookup"><span data-stu-id="34952-129">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="481b5-130">要求</span><span class="sxs-lookup"><span data-stu-id="481b5-130">Request</span></span>
+### <a name="request"></a><span data-ttu-id="34952-130">要求</span><span class="sxs-lookup"><span data-stu-id="34952-130">Request</span></span>
 
-<span data-ttu-id="481b5-131">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="481b5-131">The following is an example of the request.</span></span>
+<span data-ttu-id="34952-131">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="34952-131">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="481b5-132">プロトコル</span><span class="sxs-lookup"><span data-stu-id="481b5-132">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="34952-132">プロトコル</span><span class="sxs-lookup"><span data-stu-id="34952-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_alert"
@@ -64,28 +65,28 @@ GET /security/alerts/{id}
 ```http
 GET https://graph.microsoft.com/beta/security/alerts/{id}
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="481b5-133">C#</span><span class="sxs-lookup"><span data-stu-id="481b5-133">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="34952-133">C#</span><span class="sxs-lookup"><span data-stu-id="34952-133">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-alert-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="481b5-134">Javascript</span><span class="sxs-lookup"><span data-stu-id="481b5-134">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="34952-134">Javascript</span><span class="sxs-lookup"><span data-stu-id="34952-134">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-alert-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="481b5-135">目的-C</span><span class="sxs-lookup"><span data-stu-id="481b5-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="34952-135">目的-C</span><span class="sxs-lookup"><span data-stu-id="34952-135">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-alert-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="481b5-136">Java</span><span class="sxs-lookup"><span data-stu-id="481b5-136">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="34952-136">Java</span><span class="sxs-lookup"><span data-stu-id="34952-136">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-alert-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="481b5-137">応答</span><span class="sxs-lookup"><span data-stu-id="481b5-137">Response</span></span>
+### <a name="response"></a><span data-ttu-id="34952-137">応答</span><span class="sxs-lookup"><span data-stu-id="34952-137">Response</span></span>
 
-<span data-ttu-id="481b5-138">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="481b5-138">The following is an example of the response.</span></span>
+<span data-ttu-id="34952-138">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="34952-138">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,

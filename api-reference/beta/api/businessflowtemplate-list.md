@@ -2,50 +2,53 @@
 title: BusinessFlowTemplates を一覧表示する
 description: Azure AD access レビュー機能で、すべての businessFlowTemplate オブジェクトを一覧表示します。
 localization_priority: Normal
-ms.openlocfilehash: 738986efa97f97c58eb76abad0eeb01e3a0a12fc
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 88a67360fc6d60f9751cecf932dba40dd8be4e08
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35865183"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944832"
 ---
-# <a name="list-businessflowtemplates"></a><span data-ttu-id="851b7-103">BusinessFlowTemplates を一覧表示する</span><span class="sxs-lookup"><span data-stu-id="851b7-103">List businessFlowTemplates</span></span>
+# <a name="list-businessflowtemplates"></a><span data-ttu-id="ebcdf-103">BusinessFlowTemplates を一覧表示する</span><span class="sxs-lookup"><span data-stu-id="ebcdf-103">List businessFlowTemplates</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="851b7-104">Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、すべての[businessflowtemplate](../resources/businessflowtemplate.md)オブジェクトを一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="851b7-104">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, list all the [businessFlowTemplate](../resources/businessflowtemplate.md) objects.</span></span>
-## <a name="permissions"></a><span data-ttu-id="851b7-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="851b7-105">Permissions</span></span>
-<span data-ttu-id="851b7-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="851b7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ebcdf-104">Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、すべての[businessflowtemplate](../resources/businessflowtemplate.md)オブジェクトを一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="ebcdf-104">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, list all the [businessFlowTemplate](../resources/businessflowtemplate.md) objects.</span></span>
+## <a name="permissions"></a><span data-ttu-id="ebcdf-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="ebcdf-105">Permissions</span></span>
+<span data-ttu-id="ebcdf-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ebcdf-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="851b7-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="851b7-108">Permission type</span></span>                        | <span data-ttu-id="851b7-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="851b7-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ebcdf-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="ebcdf-108">Permission type</span></span>                        | <span data-ttu-id="ebcdf-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="ebcdf-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="851b7-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="851b7-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="851b7-111">AccessReview を参照してください。</span><span class="sxs-lookup"><span data-stu-id="851b7-111">AccessReview.Read.All, AccessReview.ReadWrite.All</span></span>  |
-|<span data-ttu-id="851b7-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="851b7-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="851b7-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="851b7-113">Not supported.</span></span> |
-|<span data-ttu-id="851b7-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="851b7-114">Application</span></span>                            | <span data-ttu-id="851b7-115">AccessReview.Read.All</span><span class="sxs-lookup"><span data-stu-id="851b7-115">AccessReview.Read.All</span></span> |
+|<span data-ttu-id="ebcdf-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="ebcdf-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="ebcdf-111">AccessReview を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ebcdf-111">AccessReview.Read.All, AccessReview.ReadWrite.All</span></span>  |
+|<span data-ttu-id="ebcdf-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="ebcdf-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ebcdf-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="ebcdf-113">Not supported.</span></span> |
+|<span data-ttu-id="ebcdf-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="ebcdf-114">Application</span></span>                            | <span data-ttu-id="ebcdf-115">AccessReview.Read.All</span><span class="sxs-lookup"><span data-stu-id="ebcdf-115">AccessReview.Read.All</span></span> |
 
-<span data-ttu-id="851b7-116">また、サインインしているユーザーは、アクセスレビューを読み取ることができるようにするためのディレクトリロールにある必要があります。</span><span class="sxs-lookup"><span data-stu-id="851b7-116">The signed in user must also be in a directory role that permits them to read an access review.</span></span>
+<span data-ttu-id="ebcdf-116">また、サインインしているユーザーは、アクセスレビューを読み取ることができるようにするためのディレクトリロールにある必要があります。</span><span class="sxs-lookup"><span data-stu-id="ebcdf-116">The signed in user must also be in a directory role that permits them to read an access review.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="851b7-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="851b7-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ebcdf-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="ebcdf-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /businessFlowTemplates
 ```
-## <a name="request-headers"></a><span data-ttu-id="851b7-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="851b7-118">Request headers</span></span>
-| <span data-ttu-id="851b7-119">名前</span><span class="sxs-lookup"><span data-stu-id="851b7-119">Name</span></span>         | <span data-ttu-id="851b7-120">型</span><span class="sxs-lookup"><span data-stu-id="851b7-120">Type</span></span>        | <span data-ttu-id="851b7-121">説明</span><span class="sxs-lookup"><span data-stu-id="851b7-121">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="ebcdf-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="ebcdf-118">Request headers</span></span>
+| <span data-ttu-id="ebcdf-119">名前</span><span class="sxs-lookup"><span data-stu-id="ebcdf-119">Name</span></span>         | <span data-ttu-id="ebcdf-120">型</span><span class="sxs-lookup"><span data-stu-id="ebcdf-120">Type</span></span>        | <span data-ttu-id="ebcdf-121">説明</span><span class="sxs-lookup"><span data-stu-id="ebcdf-121">Description</span></span> |
 |:-------------|:------------|:------------|
-| <span data-ttu-id="851b7-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="851b7-122">Authorization</span></span> | <span data-ttu-id="851b7-123">string</span><span class="sxs-lookup"><span data-stu-id="851b7-123">string</span></span> | <span data-ttu-id="851b7-p102">ベアラー \{トークン\}。必須。</span><span class="sxs-lookup"><span data-stu-id="851b7-p102">Bearer \{token\}. Required.</span></span> |
+| <span data-ttu-id="ebcdf-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="ebcdf-122">Authorization</span></span> | <span data-ttu-id="ebcdf-123">string</span><span class="sxs-lookup"><span data-stu-id="ebcdf-123">string</span></span> | <span data-ttu-id="ebcdf-p102">ベアラー \{トークン\}。必須。</span><span class="sxs-lookup"><span data-stu-id="ebcdf-p102">Bearer \{token\}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="851b7-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="851b7-126">Request body</span></span>
-<span data-ttu-id="851b7-127">要求本文を指定する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="851b7-127">No request body should be supplied.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ebcdf-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="ebcdf-126">Request body</span></span>
+<span data-ttu-id="ebcdf-127">要求本文を指定する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="ebcdf-127">No request body should be supplied.</span></span>
 
-## <a name="response"></a><span data-ttu-id="851b7-128">応答</span><span class="sxs-lookup"><span data-stu-id="851b7-128">Response</span></span>
-<span data-ttu-id="851b7-129">成功した場合、このメソッド`200, OK`は応答コードと、応答本文で[businessflowtemplate](../resources/businessflowtemplate.md)オブジェクトの配列を返します。</span><span class="sxs-lookup"><span data-stu-id="851b7-129">If successful, this method returns a `200, OK` response code and an array of [businessFlowTemplate](../resources/businessflowtemplate.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="ebcdf-128">応答</span><span class="sxs-lookup"><span data-stu-id="ebcdf-128">Response</span></span>
+<span data-ttu-id="ebcdf-129">成功した場合、このメソッド`200, OK`は応答コードと、応答本文で[businessflowtemplate](../resources/businessflowtemplate.md)オブジェクトの配列を返します。</span><span class="sxs-lookup"><span data-stu-id="ebcdf-129">If successful, this method returns a `200, OK` response code and an array of [businessFlowTemplate](../resources/businessflowtemplate.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="851b7-130">例</span><span class="sxs-lookup"><span data-stu-id="851b7-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="851b7-131">要求</span><span class="sxs-lookup"><span data-stu-id="851b7-131">Request</span></span>
+## <a name="example"></a><span data-ttu-id="ebcdf-130">例</span><span class="sxs-lookup"><span data-stu-id="ebcdf-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="ebcdf-131">要求</span><span class="sxs-lookup"><span data-stu-id="ebcdf-131">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="851b7-132">プロトコル</span><span class="sxs-lookup"><span data-stu-id="851b7-132">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="ebcdf-132">プロトコル</span><span class="sxs-lookup"><span data-stu-id="ebcdf-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_businessFlowTemplate"
@@ -53,27 +56,27 @@ GET /businessFlowTemplates
 ```http
 GET https://graph.microsoft.com/beta/businessFlowTemplates
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="851b7-133">C#</span><span class="sxs-lookup"><span data-stu-id="851b7-133">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="ebcdf-133">C#</span><span class="sxs-lookup"><span data-stu-id="ebcdf-133">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-businessflowtemplate-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="851b7-134">Javascript</span><span class="sxs-lookup"><span data-stu-id="851b7-134">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ebcdf-134">Javascript</span><span class="sxs-lookup"><span data-stu-id="ebcdf-134">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-businessflowtemplate-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="851b7-135">目的-C</span><span class="sxs-lookup"><span data-stu-id="851b7-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="ebcdf-135">目的-C</span><span class="sxs-lookup"><span data-stu-id="ebcdf-135">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-businessflowtemplate-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="851b7-136">Java</span><span class="sxs-lookup"><span data-stu-id="851b7-136">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="ebcdf-136">Java</span><span class="sxs-lookup"><span data-stu-id="ebcdf-136">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-businessflowtemplate-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="851b7-137">応答</span><span class="sxs-lookup"><span data-stu-id="851b7-137">Response</span></span>
-><span data-ttu-id="851b7-p103">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="851b7-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="ebcdf-137">応答</span><span class="sxs-lookup"><span data-stu-id="ebcdf-137">Response</span></span>
+><span data-ttu-id="ebcdf-p103">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="ebcdf-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -107,11 +110,11 @@ Content-type: application/json
 
 ```
 
-## <a name="see-also"></a><span data-ttu-id="851b7-140">関連項目</span><span class="sxs-lookup"><span data-stu-id="851b7-140">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ebcdf-140">関連項目</span><span class="sxs-lookup"><span data-stu-id="ebcdf-140">See also</span></span>
 
-| <span data-ttu-id="851b7-141">メソッド</span><span class="sxs-lookup"><span data-stu-id="851b7-141">Method</span></span>           | <span data-ttu-id="851b7-142">戻り値の型</span><span class="sxs-lookup"><span data-stu-id="851b7-142">Return Type</span></span>    |<span data-ttu-id="851b7-143">説明</span><span class="sxs-lookup"><span data-stu-id="851b7-143">Description</span></span>|
+| <span data-ttu-id="ebcdf-141">メソッド</span><span class="sxs-lookup"><span data-stu-id="ebcdf-141">Method</span></span>           | <span data-ttu-id="ebcdf-142">戻り値の型</span><span class="sxs-lookup"><span data-stu-id="ebcdf-142">Return Type</span></span>    |<span data-ttu-id="ebcdf-143">説明</span><span class="sxs-lookup"><span data-stu-id="ebcdf-143">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="851b7-144">AccessReview を作成する</span><span class="sxs-lookup"><span data-stu-id="851b7-144">Create accessReview</span></span>](accessreview-create.md) |    [<span data-ttu-id="851b7-145">accessReview</span><span class="sxs-lookup"><span data-stu-id="851b7-145">accessReview</span></span>](../resources/accessreview.md) |  <span data-ttu-id="851b7-146">新しい accessReview を作成します。</span><span class="sxs-lookup"><span data-stu-id="851b7-146">Create a new accessReview.</span></span> |
+|[<span data-ttu-id="ebcdf-144">AccessReview を作成する</span><span class="sxs-lookup"><span data-stu-id="ebcdf-144">Create accessReview</span></span>](accessreview-create.md) |    [<span data-ttu-id="ebcdf-145">accessReview</span><span class="sxs-lookup"><span data-stu-id="ebcdf-145">accessReview</span></span>](../resources/accessreview.md) |  <span data-ttu-id="ebcdf-146">新しい accessReview を作成します。</span><span class="sxs-lookup"><span data-stu-id="ebcdf-146">Create a new accessReview.</span></span> |
 
 
 

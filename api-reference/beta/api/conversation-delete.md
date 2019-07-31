@@ -4,49 +4,50 @@ description: 会話を削除します。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 174f3ddbcbae729aa66d913c07de21f878bf3979
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 9137ac4acf5f9708b3b472a3a8ac40a4025ec9fc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35863042"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943201"
 ---
-# <a name="delete-conversation"></a><span data-ttu-id="a893f-103">Delete conversation</span><span class="sxs-lookup"><span data-stu-id="a893f-103">Delete conversation</span></span>
+# <a name="delete-conversation"></a><span data-ttu-id="da176-103">Delete conversation</span><span class="sxs-lookup"><span data-stu-id="da176-103">Delete conversation</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a893f-104">会話を削除します。</span><span class="sxs-lookup"><span data-stu-id="a893f-104">Delete conversation.</span></span>
-## <a name="permissions"></a><span data-ttu-id="a893f-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="a893f-105">Permissions</span></span>
-<span data-ttu-id="a893f-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a893f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="da176-104">会話を削除します。</span><span class="sxs-lookup"><span data-stu-id="da176-104">Delete conversation.</span></span>
+## <a name="permissions"></a><span data-ttu-id="da176-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="da176-105">Permissions</span></span>
+<span data-ttu-id="da176-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="da176-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a893f-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="a893f-108">Permission type</span></span>      | <span data-ttu-id="a893f-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="a893f-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="da176-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="da176-108">Permission type</span></span>      | <span data-ttu-id="da176-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="da176-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a893f-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="a893f-110">Delegated (work or school account)</span></span> | <span data-ttu-id="a893f-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a893f-111">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="a893f-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="a893f-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a893f-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a893f-113">Not supported.</span></span>    |
-|<span data-ttu-id="a893f-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="a893f-114">Application</span></span> | <span data-ttu-id="a893f-115">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a893f-115">Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="da176-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="da176-110">Delegated (work or school account)</span></span> | <span data-ttu-id="da176-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="da176-111">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="da176-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="da176-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="da176-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="da176-113">Not supported.</span></span>    |
+|<span data-ttu-id="da176-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="da176-114">Application</span></span> | <span data-ttu-id="da176-115">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="da176-115">Group.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a893f-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="a893f-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="da176-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="da176-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /groups/{id}/conversations/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="a893f-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="a893f-117">Request headers</span></span>
-| <span data-ttu-id="a893f-118">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="a893f-118">Header</span></span>       | <span data-ttu-id="a893f-119">値</span><span class="sxs-lookup"><span data-stu-id="a893f-119">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="da176-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="da176-117">Request headers</span></span>
+| <span data-ttu-id="da176-118">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="da176-118">Header</span></span>       | <span data-ttu-id="da176-119">値</span><span class="sxs-lookup"><span data-stu-id="da176-119">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="a893f-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="a893f-120">Authorization</span></span>  | <span data-ttu-id="a893f-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="a893f-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="da176-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="da176-120">Authorization</span></span>  | <span data-ttu-id="da176-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="da176-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="a893f-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="a893f-123">Request body</span></span>
-<span data-ttu-id="a893f-124">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="a893f-124">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="da176-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="da176-123">Request body</span></span>
+<span data-ttu-id="da176-124">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="da176-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a893f-125">応答</span><span class="sxs-lookup"><span data-stu-id="a893f-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="da176-125">応答</span><span class="sxs-lookup"><span data-stu-id="da176-125">Response</span></span>
 
-<span data-ttu-id="a893f-p103">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="a893f-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="da176-p103">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="da176-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a893f-128">例</span><span class="sxs-lookup"><span data-stu-id="a893f-128">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="a893f-129">要求</span><span class="sxs-lookup"><span data-stu-id="a893f-129">Request</span></span>
-<span data-ttu-id="a893f-130">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="a893f-130">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="da176-128">例</span><span class="sxs-lookup"><span data-stu-id="da176-128">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="da176-129">要求</span><span class="sxs-lookup"><span data-stu-id="da176-129">Request</span></span>
+<span data-ttu-id="da176-130">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="da176-130">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="a893f-131">プロトコル</span><span class="sxs-lookup"><span data-stu-id="a893f-131">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="da176-131">プロトコル</span><span class="sxs-lookup"><span data-stu-id="da176-131">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_conversation"
@@ -54,26 +55,26 @@ DELETE /groups/{id}/conversations/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/groups/{id}/conversations/{id}
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="a893f-132">C#</span><span class="sxs-lookup"><span data-stu-id="a893f-132">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="da176-132">C#</span><span class="sxs-lookup"><span data-stu-id="da176-132">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-conversation-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a893f-133">Javascript</span><span class="sxs-lookup"><span data-stu-id="a893f-133">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="da176-133">Javascript</span><span class="sxs-lookup"><span data-stu-id="da176-133">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-conversation-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="a893f-134">目的-C</span><span class="sxs-lookup"><span data-stu-id="a893f-134">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="da176-134">目的-C</span><span class="sxs-lookup"><span data-stu-id="da176-134">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-conversation-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="a893f-135">Java</span><span class="sxs-lookup"><span data-stu-id="a893f-135">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="da176-135">Java</span><span class="sxs-lookup"><span data-stu-id="da176-135">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-conversation-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="a893f-136">応答</span><span class="sxs-lookup"><span data-stu-id="a893f-136">Response</span></span>
-<span data-ttu-id="a893f-137">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="a893f-137">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="da176-136">応答</span><span class="sxs-lookup"><span data-stu-id="da176-136">Response</span></span>
+<span data-ttu-id="da176-137">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="da176-137">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true

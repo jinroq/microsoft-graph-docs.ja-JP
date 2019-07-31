@@ -4,50 +4,51 @@ description: Azure AD access レビュー機能で、呼び出し元ユーザー
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e0c7b130b84c76c8c0a99c52ef7942271f1bbb8f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 069905c8a3391396ee880f98197bd5adfd8e5c72
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35856000"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35946022"
 ---
-# <a name="list-my-accessreview-decisions"></a><span data-ttu-id="5beb8-103">自分の accessReview の決定事項を一覧表示する</span><span class="sxs-lookup"><span data-stu-id="5beb8-103">List my accessReview decisions</span></span>
+# <a name="list-my-accessreview-decisions"></a><span data-ttu-id="0b173-103">自分の accessReview の決定事項を一覧表示する</span><span class="sxs-lookup"><span data-stu-id="0b173-103">List my accessReview decisions</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5beb8-104">Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、呼び出し元ユーザーの[accessreview](../resources/accessreview.md)オブジェクトの決定をレビュー担当者として取得します。</span><span class="sxs-lookup"><span data-stu-id="5beb8-104">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, retrieve the decisions of an [accessReview](../resources/accessreview.md) object for the calling user as reviewer.</span></span>
-## <a name="permissions"></a><span data-ttu-id="5beb8-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="5beb8-105">Permissions</span></span>
-<span data-ttu-id="5beb8-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5beb8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="0b173-104">Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、呼び出し元ユーザーの[accessreview](../resources/accessreview.md)オブジェクトの決定をレビュー担当者として取得します。</span><span class="sxs-lookup"><span data-stu-id="0b173-104">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, retrieve the decisions of an [accessReview](../resources/accessreview.md) object for the calling user as reviewer.</span></span>
+## <a name="permissions"></a><span data-ttu-id="0b173-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="0b173-105">Permissions</span></span>
+<span data-ttu-id="0b173-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0b173-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="5beb8-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="5beb8-108">Permission type</span></span>                        | <span data-ttu-id="5beb8-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="5beb8-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="0b173-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="0b173-108">Permission type</span></span>                        | <span data-ttu-id="0b173-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="0b173-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="5beb8-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="5beb8-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="5beb8-111">AccessReview を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5beb8-111">AccessReview.Read.All, AccessReview.ReadWrite.All</span></span>   |
-|<span data-ttu-id="5beb8-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="5beb8-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5beb8-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="5beb8-113">Not supported.</span></span> |
-|<span data-ttu-id="5beb8-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="5beb8-114">Application</span></span>                            | <span data-ttu-id="5beb8-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="5beb8-115">Not supported.</span></span> |
+|<span data-ttu-id="0b173-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="0b173-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="0b173-111">AccessReview を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0b173-111">AccessReview.Read.All, AccessReview.ReadWrite.All</span></span>   |
+|<span data-ttu-id="0b173-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="0b173-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0b173-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="0b173-113">Not supported.</span></span> |
+|<span data-ttu-id="0b173-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="0b173-114">Application</span></span>                            | <span data-ttu-id="0b173-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="0b173-115">Not supported.</span></span> |
 
-<span data-ttu-id="5beb8-116">サインインしているユーザーは、この特定のアクセスレビューを読み取ることも許可されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="5beb8-116">The signed in user must also be permitted to read this particular access review.</span></span>
+<span data-ttu-id="0b173-116">サインインしているユーザーは、この特定のアクセスレビューを読み取ることも許可されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="0b173-116">The signed in user must also be permitted to read this particular access review.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="5beb8-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="5beb8-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0b173-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="0b173-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /accessReviews('{reviewId}')/myDecisions
 ```
-## <a name="request-headers"></a><span data-ttu-id="5beb8-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="5beb8-118">Request headers</span></span>
-| <span data-ttu-id="5beb8-119">名前</span><span class="sxs-lookup"><span data-stu-id="5beb8-119">Name</span></span>         | <span data-ttu-id="5beb8-120">型</span><span class="sxs-lookup"><span data-stu-id="5beb8-120">Type</span></span>        | <span data-ttu-id="5beb8-121">説明</span><span class="sxs-lookup"><span data-stu-id="5beb8-121">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="0b173-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="0b173-118">Request headers</span></span>
+| <span data-ttu-id="0b173-119">名前</span><span class="sxs-lookup"><span data-stu-id="0b173-119">Name</span></span>         | <span data-ttu-id="0b173-120">型</span><span class="sxs-lookup"><span data-stu-id="0b173-120">Type</span></span>        | <span data-ttu-id="0b173-121">説明</span><span class="sxs-lookup"><span data-stu-id="0b173-121">Description</span></span> |
 |:-------------|:------------|:------------|
-| <span data-ttu-id="5beb8-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="5beb8-122">Authorization</span></span> | <span data-ttu-id="5beb8-123">string</span><span class="sxs-lookup"><span data-stu-id="5beb8-123">string</span></span> | <span data-ttu-id="5beb8-p102">ベアラー \{トークン\}。必須。</span><span class="sxs-lookup"><span data-stu-id="5beb8-p102">Bearer \{token\}. Required.</span></span> |
+| <span data-ttu-id="0b173-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="0b173-122">Authorization</span></span> | <span data-ttu-id="0b173-123">string</span><span class="sxs-lookup"><span data-stu-id="0b173-123">string</span></span> | <span data-ttu-id="0b173-p102">ベアラー \{トークン\}。必須。</span><span class="sxs-lookup"><span data-stu-id="0b173-p102">Bearer \{token\}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="5beb8-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="5beb8-126">Request body</span></span>
-<span data-ttu-id="5beb8-127">要求本文を指定する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="5beb8-127">No request body should be supplied.</span></span>
+## <a name="request-body"></a><span data-ttu-id="0b173-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="0b173-126">Request body</span></span>
+<span data-ttu-id="0b173-127">要求本文を指定する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="0b173-127">No request body should be supplied.</span></span>
 
-## <a name="response"></a><span data-ttu-id="5beb8-128">応答</span><span class="sxs-lookup"><span data-stu-id="5beb8-128">Response</span></span>
-<span data-ttu-id="5beb8-129">成功した場合、このメソッド`200, OK`は応答コードと、応答本文で[accessReviewDecision](../resources/accessreviewdecision.md)オブジェクトの配列を返します。これは、呼び出し元ユーザーが割り当てられた校閲者です。</span><span class="sxs-lookup"><span data-stu-id="5beb8-129">If successful, this method returns a `200, OK` response code and an array of [accessReviewDecision](../resources/accessreviewdecision.md) objects in the response body, for which the calling user is an assigned reviewer.</span></span>
+## <a name="response"></a><span data-ttu-id="0b173-128">応答</span><span class="sxs-lookup"><span data-stu-id="0b173-128">Response</span></span>
+<span data-ttu-id="0b173-129">成功した場合、このメソッド`200, OK`は応答コードと、応答本文で[accessReviewDecision](../resources/accessreviewdecision.md)オブジェクトの配列を返します。これは、呼び出し元ユーザーが割り当てられた校閲者です。</span><span class="sxs-lookup"><span data-stu-id="0b173-129">If successful, this method returns a `200, OK` response code and an array of [accessReviewDecision](../resources/accessreviewdecision.md) objects in the response body, for which the calling user is an assigned reviewer.</span></span>
 
-## <a name="example"></a><span data-ttu-id="5beb8-130">例</span><span class="sxs-lookup"><span data-stu-id="5beb8-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="5beb8-131">要求</span><span class="sxs-lookup"><span data-stu-id="5beb8-131">Request</span></span>
+## <a name="example"></a><span data-ttu-id="0b173-130">例</span><span class="sxs-lookup"><span data-stu-id="0b173-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="0b173-131">要求</span><span class="sxs-lookup"><span data-stu-id="0b173-131">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="5beb8-132">プロトコル</span><span class="sxs-lookup"><span data-stu-id="5beb8-132">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="0b173-132">プロトコル</span><span class="sxs-lookup"><span data-stu-id="0b173-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_accessReview_decisions"
@@ -55,27 +56,27 @@ GET /accessReviews('{reviewId}')/myDecisions
 ```http
 GET https://graph.microsoft.com/beta/accessReviews/2b83cc42-09db-46f6-8c6e-16fec466a82d/myDecisions
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="5beb8-133">C#</span><span class="sxs-lookup"><span data-stu-id="5beb8-133">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="0b173-133">C#</span><span class="sxs-lookup"><span data-stu-id="0b173-133">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-accessreview-decisions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="5beb8-134">Javascript</span><span class="sxs-lookup"><span data-stu-id="5beb8-134">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="0b173-134">Javascript</span><span class="sxs-lookup"><span data-stu-id="0b173-134">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-accessreview-decisions-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="5beb8-135">目的-C</span><span class="sxs-lookup"><span data-stu-id="5beb8-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="0b173-135">目的-C</span><span class="sxs-lookup"><span data-stu-id="0b173-135">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-accessreview-decisions-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="5beb8-136">Java</span><span class="sxs-lookup"><span data-stu-id="5beb8-136">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="0b173-136">Java</span><span class="sxs-lookup"><span data-stu-id="0b173-136">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-accessreview-decisions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="5beb8-137">応答</span><span class="sxs-lookup"><span data-stu-id="5beb8-137">Response</span></span>
-><span data-ttu-id="5beb8-p103">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="5beb8-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="0b173-137">応答</span><span class="sxs-lookup"><span data-stu-id="0b173-137">Response</span></span>
+><span data-ttu-id="0b173-p103">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="0b173-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -99,12 +100,12 @@ Content-type: application/json
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="5beb8-140">関連項目</span><span class="sxs-lookup"><span data-stu-id="5beb8-140">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="0b173-140">関連項目</span><span class="sxs-lookup"><span data-stu-id="0b173-140">See also</span></span>
 
-| <span data-ttu-id="5beb8-141">メソッド</span><span class="sxs-lookup"><span data-stu-id="5beb8-141">Method</span></span>           | <span data-ttu-id="5beb8-142">戻り値の型</span><span class="sxs-lookup"><span data-stu-id="5beb8-142">Return Type</span></span>    |<span data-ttu-id="5beb8-143">説明</span><span class="sxs-lookup"><span data-stu-id="5beb8-143">Description</span></span>|
+| <span data-ttu-id="0b173-141">メソッド</span><span class="sxs-lookup"><span data-stu-id="0b173-141">Method</span></span>           | <span data-ttu-id="0b173-142">戻り値の型</span><span class="sxs-lookup"><span data-stu-id="0b173-142">Return Type</span></span>    |<span data-ttu-id="0b173-143">説明</span><span class="sxs-lookup"><span data-stu-id="0b173-143">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="5beb8-144">AccessReview を取得する</span><span class="sxs-lookup"><span data-stu-id="5beb8-144">Get accessReview</span></span>](accessreview-get.md) |  [<span data-ttu-id="5beb8-145">accessReview</span><span class="sxs-lookup"><span data-stu-id="5beb8-145">accessReview</span></span>](../resources/accessreview.md) |  <span data-ttu-id="5beb8-146">アクセスレビューを取得します。</span><span class="sxs-lookup"><span data-stu-id="5beb8-146">Retrieve an access review.</span></span> |
-|[<span data-ttu-id="5beb8-147">AccessReview に関する決定事項を一覧表示する</span><span class="sxs-lookup"><span data-stu-id="5beb8-147">List accessReview decisions</span></span>](accessreview-listdecisions.md) |     <span data-ttu-id="5beb8-148">[accessReviewDecision](../resources/accessreviewdecision.md)コレクション</span><span class="sxs-lookup"><span data-stu-id="5beb8-148">[accessReviewDecision](../resources/accessreviewdecision.md) collection</span></span>|    <span data-ttu-id="5beb8-149">AccessReview のすべての決定事項を取得します。</span><span class="sxs-lookup"><span data-stu-id="5beb8-149">Retrieve all the decisions of an accessReview.</span></span>|
+|[<span data-ttu-id="0b173-144">AccessReview を取得する</span><span class="sxs-lookup"><span data-stu-id="0b173-144">Get accessReview</span></span>](accessreview-get.md) |  [<span data-ttu-id="0b173-145">accessReview</span><span class="sxs-lookup"><span data-stu-id="0b173-145">accessReview</span></span>](../resources/accessreview.md) |  <span data-ttu-id="0b173-146">アクセスレビューを取得します。</span><span class="sxs-lookup"><span data-stu-id="0b173-146">Retrieve an access review.</span></span> |
+|[<span data-ttu-id="0b173-147">AccessReview に関する決定事項を一覧表示する</span><span class="sxs-lookup"><span data-stu-id="0b173-147">List accessReview decisions</span></span>](accessreview-listdecisions.md) |     <span data-ttu-id="0b173-148">[accessReviewDecision](../resources/accessreviewdecision.md)コレクション</span><span class="sxs-lookup"><span data-stu-id="0b173-148">[accessReviewDecision](../resources/accessreviewdecision.md) collection</span></span>|    <span data-ttu-id="0b173-149">AccessReview のすべての決定事項を取得します。</span><span class="sxs-lookup"><span data-stu-id="0b173-149">Retrieve all the decisions of an accessReview.</span></span>|
 
 
 <!--
