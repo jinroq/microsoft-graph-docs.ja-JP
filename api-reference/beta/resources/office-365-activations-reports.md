@@ -1,21 +1,22 @@
 ---
 title: Office 365 アクティブ化レポート
-description: office 365 アクティブ化レポートには、少なくとも1つのデバイスで office 365 サブスクリプションをアクティブ化したユーザーが表示されます。 これにより、office 365 ProPlus、Project、および Visio Pro for office 365 サブスクリプションのライセンス認証の内訳に加え、デスクトップとデバイス間でのライセンス認証の内訳が提供されます。 このレポートは、Office サブスクリプションのライセンス認証を行うために追加のサポートが必要になる可能性があるユーザーを特定するのに役立ちます。
+description: Office 365 アクティブ化レポートには、少なくとも1つのデバイスで Office 365 サブスクリプションをアクティブ化したユーザーが表示されます。 これにより、Office 365 ProPlus、Project、および Visio Pro for Office 365 サブスクリプションのライセンス認証の内訳に加え、デスクトップとデバイス間でのライセンス認証の内訳が提供されます。 このレポートは、Office サブスクリプションのライセンス認証を行うために追加のサポートが必要になる可能性があるユーザーを特定するのに役立ちます。
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: a0baa50cee545dbbf6f3074e89eafdd91c511ac9
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.openlocfilehash: 1e3a3831c3ea5c2b4307ae612630421365992759
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342059"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009553"
 ---
 # <a name="office-365-activations-reports"></a>Office 365 アクティブ化レポート
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-office 365 アクティブ化レポートには、少なくとも1つのデバイスで office 365 サブスクリプションをアクティブ化したユーザーが表示されます。 これにより、office 365 ProPlus、Project、および Visio Pro for office 365 サブスクリプションのライセンス認証の内訳に加え、デスクトップとデバイス間でのライセンス認証の内訳が提供されます。 このレポートは、Office サブスクリプションのライセンス認証を行うために追加のサポートが必要になる可能性があるユーザーを特定するのに役立ちます。
+Office 365 アクティブ化レポートには、少なくとも1つのデバイスで Office 365 サブスクリプションをアクティブ化したユーザーが表示されます。 これにより、Office 365 ProPlus、Project、および Visio Pro for Office 365 サブスクリプションのライセンス認証の内訳に加え、デスクトップとデバイス間でのライセンス認証の内訳が提供されます。 このレポートは、Office サブスクリプションのライセンス認証を行うために追加のサポートが必要になる可能性があるユーザーを特定するのに役立ちます。
 
 > **注:** 別のレポートのビューとレポート名についての詳細は、「[Office 365 レポート: Microsoft Office ライセンス認証](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60)」を参照してください。
 

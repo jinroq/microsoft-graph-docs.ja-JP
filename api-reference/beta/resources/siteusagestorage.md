@@ -1,26 +1,28 @@
 ---
-title: siteの種類ストレージリソースの種類
+title: Siteの種類ストレージリソースの種類
 description: リソースの JSON 表記を次に示します。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: c136b776e0c96a8bc63a1c82ae2ad17f059026cc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+author: ''
+ms.openlocfilehash: 1ed15d4efb1c9a0fa81fdd79faeb9542d8093aab
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583201"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008230"
 ---
-# <a name="siteusagestorage-resource-type"></a>siteの種類ストレージリソースの種類
+# <a name="siteusagestorage-resource-type"></a>Siteの種類ストレージリソースの種類
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ           | 型   |
 | :----------------- | :----- |
-| reportrefreshdate  | Date   |
-| sitetype           | String |
-| storageused inbytes | Int64  |
-| reportDate         | Date   |
-| reportperiod       | String |
+| reportRefreshDate  | 日付   |
+| siteType           | String |
+| Storageused Inbytes | Int64  |
+| reportDate         | 日付   |
+| reportPeriod       | String |
 
 ## <a name="json-representation"></a>JSON 表記
 

@@ -4,12 +4,13 @@ description: Microsoft GraphのPlanner APIを使用してタスクを作成し�
 author: TarkanSevilmis
 localization_priority: Priority
 ms.prod: planner
-ms.openlocfilehash: b09efbb6e20946f18a1a4fd6a4c7d4ea77319a52
-ms.sourcegitcommit: b198efc2391a12a840e4f1b8c42c18a55b06037f
+doc_type: conceptualPageType
+ms.openlocfilehash: c18262f6ae437d674214845228876177c65a62f5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "35820683"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009126"
 ---
 # <a name="use-the-planner-rest-api"></a>Planner REST APIを使用する
 

@@ -2,12 +2,15 @@
 title: assignedPlan リソースの種類
 description: '**ユーザー** エンティティと組織エンティティの両方の assignedPlans プロパティは、**assignedPlan** のコレクションです。'
 localization_priority: Normal
-ms.openlocfilehash: 0f44e96e5591d46d6a22b0cdd951b4dfb1e05e75
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: f699b635fb71d668cdd2a8fd11618786f3194d08
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339090"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013270"
 ---
 # <a name="assignedplan-resource-type"></a>assignedPlan リソースの種類
 

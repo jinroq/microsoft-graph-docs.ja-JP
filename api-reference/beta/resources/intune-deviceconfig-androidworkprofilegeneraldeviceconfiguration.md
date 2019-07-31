@@ -4,12 +4,13 @@ description: Android 作業プロファイルの一般的なデバイス構成�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: abcd09695c0b04d5cf2bcfa76ebfe3152d3bc511
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 9b55e5949bf10e79a98eb6889ae0d3e102c0e9aa
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34993874"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36011653"
 ---
 # <a name="androidworkprofilegeneraldeviceconfiguration-resource-type"></a>Androidwork Profileて Devic/リソースの種類
 

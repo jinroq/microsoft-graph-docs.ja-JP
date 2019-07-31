@@ -4,12 +4,13 @@ description: ユーザーの受信トレイ内のメッセージに適用され�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: d74d4c6a5121355113a883c5c8096420986b6549
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 2bdcdba51424f7f864acb454869522b0996ef254
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342260"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009701"
 ---
 # <a name="messagerule-resource-type"></a>messageRule リソースの種類
 
@@ -30,7 +31,7 @@ Outlook では、受信トレイ内の受信メッセージに対し、一定の
 | displayName | String | ルールの表示名。 |
 | exceptions | [messageRulePredicates](messagerulepredicates.md) | ルールの例外条件。 |
 | hasError | Boolean | ルールがエラー状態かどうかを示します。 読み取り専用です。 |
-| id |String|ルールの一意識別子。 読み取り専用。|
+| id |文字列|ルールの一意識別子。 読み取り専用。|
 | isEnabled | Boolean | メッセージに対するルールの適用が有効になっているかどうかを示します。 |
 | isReadOnly | Boolean | ルールが読み取り専用のため、ルールの REST API による変更や削除ができないことを示します。 |
 | sequence | Int32 | 他のルールもある中で、そのルールが実行される順序を示します。 |
@@ -68,7 +69,7 @@ Outlook では、受信トレイ内の受信メッセージに対し、一定の
 |[ルールの取得](../api/messagerule-get.md) | [messageRule](messagerule.md) |**messageRule** オブジェクトのプロパティとリレーションシップを読み取ります。|
 |[作成](../api/mailfolder-post-messagerules.md) | [messageRule](messagerule.md) |条件とアクションのセットを指定して **messageRule** オブジェクトを作成します。|
 |[更新](../api/messagerule-update.md) | [messageRule](messagerule.md) |**messageRule** オブジェクトの書き込み可能なプロパティを変更し、変更を保存します。 |
-|[削除](../api/messagerule-delete.md) | なし |指定した **messageRule** オブジェクトを削除します。 |
+|[Delete](../api/messagerule-delete.md) | None |指定した **messageRule** オブジェクトを削除します。 |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

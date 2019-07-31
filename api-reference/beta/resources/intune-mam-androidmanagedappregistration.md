@@ -4,12 +4,13 @@ description: 特定のユーザーに対する、Android アプリの管理機�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d8d7c496540f5200e0232f388bbe3fac3b999cba
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 5b37472fa2dfb1884cb41f64889b707d1e0d05e6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34978627"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35998500"
 ---
 # <a name="androidmanagedappregistration-resource-type"></a>androidManagedAppRegistration リソースの種類
 

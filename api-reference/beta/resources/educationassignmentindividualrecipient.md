@@ -4,12 +4,13 @@ description: 'プロパティへの割り当ての中で使用されます。 �
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: 39d3fb4875412546cd6f182de05ad1779b05abdd
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 7408382cadcb53d857bb36b06702f7857d64a8f4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334418"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006452"
 ---
 # <a name="educationassignmentindividualrecipient-resource-type"></a>educationAssignmentIndividualRecipient リソースの種類
 
@@ -22,7 +23,7 @@ ms.locfileid: "33334418"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|recipients|String collection|受信者の id のコレクション。|
+|recipients|文字列コレクション|受信者の id のコレクション。|
 
 ## <a name="json-representation"></a>JSON 表記
 

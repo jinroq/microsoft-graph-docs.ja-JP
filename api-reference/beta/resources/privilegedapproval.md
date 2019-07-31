@@ -1,38 +1,41 @@
 ---
 title: privilegedApproval リソースの種類
-description: ロールを取得するために特権 id 管理で要求される承認を表します。
+description: ロールを取得するために特権 Id 管理で要求される承認を表します。
 localization_priority: Normal
-ms.openlocfilehash: 754fcd9b61321db1675408172c945557e38dc0e0
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: e920d34cc9a42c29138a97a83786087c86b7ee10
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344235"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008916"
 ---
 # <a name="privilegedapproval-resource-type"></a>privilegedApproval リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ロールを取得するために特権 id 管理で要求される承認を表します。
+ロールを取得するために特権 Id 管理で要求される承認を表します。
 
 
 ## <a name="methods"></a>メソッド
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[privilegedApproval を取得する](../api/privilegedapproval-get.md) | [privilegedApproval](privilegedapproval.md) |privilegedApproval オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[privilegedApproval オブジェクトを一覧表示する](../api/privilegedapproval-list.md) | [privilegedApproval](privilegedapproval.md)コレクション|privilegedApproval のコレクションを取得します。|
+|[privilegedApproval を取得する](../api/privilegedapproval-get.md) | [privilegedApproval](privilegedapproval.md) |PrivilegedApproval オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[PrivilegedApproval オブジェクトを一覧表示する](../api/privilegedapproval-list.md) | [privilegedApproval](privilegedapproval.md) コレクション|PrivilegedApproval のコレクションを取得します。|
 |[privilegedApproval を作成する](../api/privilegedapproval-post-privilegedapproval.md) | [privilegedApproval](privilegedapproval.md)    |privilegedApproval オブジェクトを作成します。 |
-|[privilegedApproval の更新](../api/privilegedapproval-update.md) | [privilegedApproval](privilegedapproval.md) |privilegedApproval オブジェクトを更新します。 |
-|[myrequests](../api/privilegedapproval-myrequests.md)|[privilegedApproval](privilegedapproval.md)|要求者の承認要求を取得します。|
+|[privilegedApproval を更新する](../api/privilegedapproval-update.md) | [privilegedApproval](privilegedapproval.md) |privilegedApproval オブジェクトを更新します。 |
+|[Myrequests](../api/privilegedapproval-myrequests.md)|[privilegedApproval](privilegedapproval.md)|リクエスターの承認要求を取得します。|
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|approvalduration|期間||
-|approvalstate|string| 可能な値は、`pending`、`approved`、`denied`、`aborted`、`canceled` です。|
+|approvalDuration|期間||
+|approvalState|string| 可能な値は、`pending`、`approved`、`denied`、`aborted`、`canceled` です。|
 |approvalType|String||
-|approverreason|String||
+|approverReason|String||
 |endDateTime|DateTimeOffset|Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |id|String| 読み取り専用です。|
 |requestorReason|String||
@@ -43,7 +46,7 @@ ms.locfileid: "33344235"
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|roleinfo|[privilegedRole](privilegedrole.md)| 読み取り専用です。 Null 許容型。|
+|roleInfo|[privilegedRole](privilegedrole.md)| 読み取り専用です。 Null 許容型。|
 |タキ|[privilegedRoleAssignmentRequest](privilegedroleassignmentrequest.md)| 読み取り専用です。 この承認オブジェクトの役割の割り当て要求|
 
 ## <a name="json-representation"></a>JSON 表記

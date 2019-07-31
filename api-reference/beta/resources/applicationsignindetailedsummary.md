@@ -4,12 +4,13 @@ description: アプリケーションサインインの詳細な概要を表し�
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4d4fcd00e305c19f1d445738a22125cc8addc143
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+doc_type: resourcePageType
+ms.openlocfilehash: 527d60ff025e9a6d081226a51ec8cbefc53c20de
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34657638"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013334"
 ---
 # <a name="applicationsignindetailedsummary-resource-type"></a>applicationSignInDetailedSummary リソースの種類
 

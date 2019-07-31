@@ -2,12 +2,15 @@
 title: keyValue リソースの種類
 description: 以下は、リソースの JSON 表記です。
 localization_priority: Normal
-ms.openlocfilehash: 0b5a1c2e9baa32db91e82f6821a598e74c5b5fbb
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 4de03faca5ac11345fbaba24995da24e7d456708
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345311"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36010022"
 ---
 # <a name="keyvalue-resource-type"></a>keyValue リソースの種類
 

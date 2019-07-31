@@ -4,12 +4,13 @@ description: ブック内のグラフ オブジェクトを表します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 55d5278c08a63e853383e3f80ff015e97afcb9b6
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: c180d6d2649f7c55868ffa04a5318c5c5f522ddd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348844"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007383"
 ---
 # <a name="workbookchart-resource-type"></a>workbookChart リソースの種類
 
@@ -27,15 +28,15 @@ ms.locfileid: "33348844"
 |[データ系列を一覧表示する](../api/chart-list-series.md) |[workbookChartSeries](workbookchartseries.md)コレクション| ChartSeries オブジェクトのコレクションを取得します。|
 |[Update](../api/chart-update.md) | [workbookChart](workbookchart.md)   |グラフ オブジェクトを更新します。 |
 |[Image](../api/chart-image.md)|Base64 でエンコードされた文字列の画像|指定したサイズに合わせてグラフを拡大・縮小することで、グラフを Base64 でエンコードされた画像としてレンダリングします。|
-|[Delete](../api/chart-delete.md)|なし|グラフ オブジェクトを削除します。|
-|[Setdata](../api/chart-setdata.md)|なし|グラフの元データをリセットします。|
+|[Delete](../api/chart-delete.md)|None|グラフ オブジェクトを削除します。|
+|[Setdata](../api/chart-setdata.md)|None|グラフの元データをリセットします。|
 |[Setposition](../api/chart-setposition.md)|なし|ワークシート上のセルを基準にしてグラフを配置します。|
 |[List](../api/chart-list.md) | [workbookChart](workbookchart.md)コレクション |グラフ オブジェクトのコレクションを取得します。 |
 |[Itemat](../api/chartcollection-itemat.md)|[workbookChart](workbookchart.md)|コレクション内での位置を基にグラフを取得します。|
 |[Add](../api/chartcollection-add.md)|[workbookChart](workbookchart.md)|新しいグラフを作成します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |height|double|グラフ オブジェクトの高さをポイント単位で表します。|
 |id|string|コレクション内での位置を基にグラフを取得します。読み取り専用です。|
@@ -44,7 +45,7 @@ ms.locfileid: "33348844"
 |top|double|オブジェクトの上端から (ワークシートの) 1 行目の上部または (グラフの) グラフ領域の上部までの距離をポイント単位で表します。|
 |width|double|グラフ オブジェクトの幅をポイント単位で表します。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |axes|[workbookChartAxes](workbookchartaxes.md)|グラフの軸を表します。値の取得のみ可能です。|

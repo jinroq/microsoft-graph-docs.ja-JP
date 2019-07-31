@@ -1,15 +1,18 @@
 ---
-title: 実行時 contentcommand リソースの種類
+title: 実行時 Contentcommand リソースの種類
 description: PATCH 要求で OneNote ページに加えられた変更。
 localization_priority: Normal
-ms.openlocfilehash: 80fa4308fdcf5dc05287051f6ae586b228a02073
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 2408d08434b97f865ae19cbc70fd1dc16ff6868b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345007"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009210"
 ---
-# <a name="patchcontentcommand-resource-type"></a>実行時 contentcommand リソースの種類
+# <a name="patchcontentcommand-resource-type"></a>実行時 Contentcommand リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -4,12 +4,13 @@ description: ユーザーが登録できるデバイスの種類を制限する�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b4f4dc3eb25efe1fe14bd1b12bea2f196f92ccea
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: e3eecac7134d76007a4c23d219c5a4dee5780121
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34993131"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35998185"
 ---
 # <a name="deviceenrollmentplatformrestrictionsconfiguration-resource-type"></a>deviceEnrollmentPlatformRestrictionsConfiguration リソースの種類
 

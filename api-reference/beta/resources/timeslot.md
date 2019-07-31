@@ -2,14 +2,15 @@
 title: timeSlot リソースの種類
 description: 期間です。
 localization_priority: Normal
+doc_type: resourcePageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 930e0ca20bf6b69641aeb0410514ec4ad37d7ee7
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 8843b8418bff068564e5716d715a9ad11579f01b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341947"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007537"
 ---
 # <a name="timeslot-resource-type"></a>timeSlot リソースの種類
 
@@ -40,7 +41,7 @@ ms.locfileid: "33341947"
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |end|[dateTimeTimeZone](datetimetimezone.md)|期間が始まる日付、時刻、タイムゾーン。 |
-|start|[dateTimeTimeZone](datetimetimezone.md)|期間が終了する日付、時刻、タイムゾーン。|
+|開始|[dateTimeTimeZone](datetimetimezone.md)|期間が終了する日付、時刻、タイムゾーン。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
