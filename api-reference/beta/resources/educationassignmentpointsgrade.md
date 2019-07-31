@@ -4,28 +4,29 @@ description: 1つの割り当てがポイントグレードの種類に設定さ
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: 166f6b5ce377441641cf12232c2194dff1184765
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 6e74c6bb74c830cb1ceb80e149903282c4da33ae
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340586"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972818"
 ---
-# <a name="educationassignmentpointsgrade-resource-type"></a><span data-ttu-id="5c3fd-104">educationAssignmentPointsGrade リソースの種類</span><span class="sxs-lookup"><span data-stu-id="5c3fd-104">educationAssignmentPointsGrade resource type</span></span>
+# <a name="educationassignmentpointsgrade-resource-type"></a><span data-ttu-id="f0935-104">educationAssignmentPointsGrade リソースの種類</span><span class="sxs-lookup"><span data-stu-id="f0935-104">educationAssignmentPointsGrade resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5c3fd-105">1つの割り当てがポイントグレードの種類に設定されている場合、各提出物には、"**成績**" プロパティに関連付けられたオブジェクトがあります。</span><span class="sxs-lookup"><span data-stu-id="5c3fd-105">When an assignment is set to a points grade type, each submission will have this object associated with the **submission.grade** property.</span></span> <span data-ttu-id="5c3fd-106">これにより、 [educationAssignmentGrade](educationassignmentgrade.md)からサブクラスが作成され、このプロパティに who データが追加されます。</span><span class="sxs-lookup"><span data-stu-id="5c3fd-106">This creates a subclass from [educationAssignmentGrade](educationassignmentgrade.md), which will add the who data to this property.</span></span> <span data-ttu-id="5c3fd-107">max 要素は、 **assignments**プロパティに格納されます。</span><span class="sxs-lookup"><span data-stu-id="5c3fd-107">The max points is stored in the **assignments.grading** property.</span></span>
+<span data-ttu-id="f0935-105">1つの割り当てがポイントグレードの種類に設定されている場合、各提出物には、"**成績**" プロパティに関連付けられたオブジェクトがあります。</span><span class="sxs-lookup"><span data-stu-id="f0935-105">When an assignment is set to a points grade type, each submission will have this object associated with the **submission.grade** property.</span></span> <span data-ttu-id="f0935-106">これにより、 [educationAssignmentGrade](educationassignmentgrade.md)からサブクラスが作成され、このプロパティに who データが追加されます。</span><span class="sxs-lookup"><span data-stu-id="f0935-106">This creates a subclass from [educationAssignmentGrade](educationassignmentgrade.md), which will add the who data to this property.</span></span> <span data-ttu-id="f0935-107">Max 要素は、 **assignments**プロパティに格納されます。</span><span class="sxs-lookup"><span data-stu-id="f0935-107">The max points is stored in the **assignments.grading** property.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="5c3fd-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="5c3fd-108">Properties</span></span>
-| <span data-ttu-id="5c3fd-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="5c3fd-109">Property</span></span>     | <span data-ttu-id="5c3fd-110">型</span><span class="sxs-lookup"><span data-stu-id="5c3fd-110">Type</span></span>   |<span data-ttu-id="5c3fd-111">説明</span><span class="sxs-lookup"><span data-stu-id="5c3fd-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="f0935-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="f0935-108">Properties</span></span>
+| <span data-ttu-id="f0935-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="f0935-109">Property</span></span>     | <span data-ttu-id="f0935-110">型</span><span class="sxs-lookup"><span data-stu-id="f0935-110">Type</span></span>   |<span data-ttu-id="f0935-111">説明</span><span class="sxs-lookup"><span data-stu-id="f0935-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="5c3fd-112">points</span><span class="sxs-lookup"><span data-stu-id="5c3fd-112">points</span></span>|<span data-ttu-id="5c3fd-113">1 行</span><span class="sxs-lookup"><span data-stu-id="5c3fd-113">Single</span></span>|<span data-ttu-id="5c3fd-114">教師がこの送信オブジェクトを提供しているポイントの数。</span><span class="sxs-lookup"><span data-stu-id="5c3fd-114">Number of points a teacher is giving this submission object.</span></span>|
+|<span data-ttu-id="f0935-112">points</span><span class="sxs-lookup"><span data-stu-id="f0935-112">points</span></span>|<span data-ttu-id="f0935-113">1 行</span><span class="sxs-lookup"><span data-stu-id="f0935-113">Single</span></span>|<span data-ttu-id="f0935-114">教師がこの送信オブジェクトを提供しているポイントの数。</span><span class="sxs-lookup"><span data-stu-id="f0935-114">Number of points a teacher is giving this submission object.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="5c3fd-115">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="5c3fd-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f0935-115">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="f0935-115">JSON representation</span></span>
 
-<span data-ttu-id="5c3fd-116">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="5c3fd-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="f0935-116">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="f0935-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

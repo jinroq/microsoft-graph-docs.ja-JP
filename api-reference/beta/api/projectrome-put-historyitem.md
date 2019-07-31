@@ -3,31 +3,33 @@ title: 履歴アイテムを作成または置換する
 description: 既存のユーザーアクティビティに対して、既存の履歴アイテムを新規作成するか、置き換えます。
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 0a8d03029350ce96e7442473dffa0595278bc195
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+author: ''
+ms.openlocfilehash: f72755f6410e3c1b04cf39ba8315b3c5162550ba
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337272"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978512"
 ---
-# <a name="create-or-replace-a-historyitem"></a><span data-ttu-id="a8a7b-103">履歴アイテムを作成または置換する</span><span class="sxs-lookup"><span data-stu-id="a8a7b-103">Create or replace a historyItem</span></span>
+# <a name="create-or-replace-a-historyitem"></a><span data-ttu-id="84b76-103">履歴アイテムを作成または置換する</span><span class="sxs-lookup"><span data-stu-id="84b76-103">Create or replace a historyItem</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a8a7b-104">既存のユーザーアクティビティに対して、既存の履歴アイテムを新規作成するか、置き換えます。</span><span class="sxs-lookup"><span data-stu-id="a8a7b-104">Create a new or replace an existing history item for an existing user activity.</span></span>
+<span data-ttu-id="84b76-104">既存のユーザーアクティビティに対して、既存の履歴アイテムを新規作成するか、置き換えます。</span><span class="sxs-lookup"><span data-stu-id="84b76-104">Create a new or replace an existing history item for an existing user activity.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a8a7b-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="a8a7b-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="84b76-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="84b76-105">Permissions</span></span>
 
-<span data-ttu-id="a8a7b-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a8a7b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="84b76-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="84b76-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="a8a7b-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="a8a7b-108">Permission type</span></span>      | <span data-ttu-id="a8a7b-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="a8a7b-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="84b76-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="84b76-108">Permission type</span></span>      | <span data-ttu-id="84b76-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="84b76-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a8a7b-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="a8a7b-110">Delegated (work or school account)</span></span> | <span data-ttu-id="a8a7b-111">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="a8a7b-111">UserActivity.ReadWrite.CreatedByApp</span></span>    |
-|<span data-ttu-id="a8a7b-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="a8a7b-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a8a7b-113">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="a8a7b-113">UserActivity.ReadWrite.CreatedByApp</span></span>    |
-|<span data-ttu-id="a8a7b-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="a8a7b-114">Application</span></span> | <span data-ttu-id="a8a7b-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a8a7b-115">Not supported.</span></span> |
+|<span data-ttu-id="84b76-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="84b76-110">Delegated (work or school account)</span></span> | <span data-ttu-id="84b76-111">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="84b76-111">UserActivity.ReadWrite.CreatedByApp</span></span>    |
+|<span data-ttu-id="84b76-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="84b76-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="84b76-113">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="84b76-113">UserActivity.ReadWrite.CreatedByApp</span></span>    |
+|<span data-ttu-id="84b76-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="84b76-114">Application</span></span> | <span data-ttu-id="84b76-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="84b76-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a8a7b-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="a8a7b-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="84b76-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="84b76-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -35,27 +37,27 @@ ms.locfileid: "33337272"
 PUT /me/activities/{id}/historyItems/{id}
 ```
 
-<span data-ttu-id="a8a7b-117">Id は GUID である必要があります。</span><span class="sxs-lookup"><span data-stu-id="a8a7b-117">Id needs to be a GUID.</span></span>
+<span data-ttu-id="84b76-117">Id は GUID である必要があります。</span><span class="sxs-lookup"><span data-stu-id="84b76-117">Id needs to be a GUID.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="a8a7b-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="a8a7b-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="84b76-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="84b76-118">Request headers</span></span>
 
-|<span data-ttu-id="a8a7b-119">名前</span><span class="sxs-lookup"><span data-stu-id="a8a7b-119">Name</span></span> | <span data-ttu-id="a8a7b-120">型</span><span class="sxs-lookup"><span data-stu-id="a8a7b-120">Type</span></span> | <span data-ttu-id="a8a7b-121">説明</span><span class="sxs-lookup"><span data-stu-id="a8a7b-121">Description</span></span>|
+|<span data-ttu-id="84b76-119">名前</span><span class="sxs-lookup"><span data-stu-id="84b76-119">Name</span></span> | <span data-ttu-id="84b76-120">型</span><span class="sxs-lookup"><span data-stu-id="84b76-120">Type</span></span> | <span data-ttu-id="84b76-121">説明</span><span class="sxs-lookup"><span data-stu-id="84b76-121">Description</span></span>|
 |:----|:-----|:-----------|
-|<span data-ttu-id="a8a7b-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="a8a7b-122">Authorization</span></span> | <span data-ttu-id="a8a7b-123">string</span><span class="sxs-lookup"><span data-stu-id="a8a7b-123">string</span></span> | <span data-ttu-id="a8a7b-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="a8a7b-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="84b76-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="84b76-122">Authorization</span></span> | <span data-ttu-id="84b76-123">string</span><span class="sxs-lookup"><span data-stu-id="84b76-123">string</span></span> | <span data-ttu-id="84b76-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="84b76-p102">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="a8a7b-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="a8a7b-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="84b76-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="84b76-126">Request body</span></span>
 
-<span data-ttu-id="a8a7b-127">要求本文で、[履歴アイテム](../resources/projectrome-historyitem.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="a8a7b-127">In the request body, supply a JSON representation of a [historyItem](../resources/projectrome-historyitem.md) object.</span></span>
+<span data-ttu-id="84b76-127">要求本文で、[履歴アイテム](../resources/projectrome-historyitem.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="84b76-127">In the request body, supply a JSON representation of a [historyItem](../resources/projectrome-historyitem.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a8a7b-128">応答</span><span class="sxs-lookup"><span data-stu-id="a8a7b-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="84b76-128">応答</span><span class="sxs-lookup"><span data-stu-id="84b76-128">Response</span></span>
 
-<span data-ttu-id="a8a7b-129">成功した場合、このメソッド`201 Created`は、履歴アイテムが作成された`200 OK`場合、または履歴アイテムが置き換えられた場合に、応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="a8a7b-129">If successful, this method returns the `201 Created` response code if the historyItem was created or `200 OK` if the historyItem was replaced.</span></span>
+<span data-ttu-id="84b76-129">成功した場合、このメソッド`201 Created`は、履歴アイテムが作成された`200 OK`場合、または履歴アイテムが置き換えられた場合に、応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="84b76-129">If successful, this method returns the `201 Created` response code if the historyItem was created or `200 OK` if the historyItem was replaced.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a8a7b-130">例</span><span class="sxs-lookup"><span data-stu-id="a8a7b-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="84b76-130">例</span><span class="sxs-lookup"><span data-stu-id="84b76-130">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="a8a7b-131">要求</span><span class="sxs-lookup"><span data-stu-id="a8a7b-131">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="84b76-131">要求</span><span class="sxs-lookup"><span data-stu-id="84b76-131">Request</span></span>
 
-<span data-ttu-id="a8a7b-132">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="a8a7b-132">Here is an example of the request.</span></span>
+<span data-ttu-id="84b76-132">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="84b76-132">Here is an example of the request.</span></span>
 
 <!-- {
     "blockType": "ignored",
@@ -74,9 +76,9 @@ Content-length: 364
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="a8a7b-133">応答</span><span class="sxs-lookup"><span data-stu-id="a8a7b-133">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="84b76-133">応答</span><span class="sxs-lookup"><span data-stu-id="84b76-133">Response</span></span>
 
-<span data-ttu-id="a8a7b-134">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="a8a7b-134">Here is an example of the response.</span></span>
+<span data-ttu-id="84b76-134">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="84b76-134">Here is an example of the response.</span></span>
 
 <!-- {
     "blockType": "ignored",

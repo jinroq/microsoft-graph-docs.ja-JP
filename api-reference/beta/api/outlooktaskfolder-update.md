@@ -4,30 +4,31 @@ description: Outlook タスクフォルダーの書き込み可能なプロパ�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 9785eafa31154b7c3bd8f55182077ef38ad6851c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 8da97f756d449bf6494f13bd43b6228fa6a21c89
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35877573"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35983706"
 ---
-# <a name="update-outlooktaskfolder"></a><span data-ttu-id="7d8ad-103">Outlooktaskfolder を更新する</span><span class="sxs-lookup"><span data-stu-id="7d8ad-103">Update outlooktaskfolder</span></span>
+# <a name="update-outlooktaskfolder"></a><span data-ttu-id="cda2c-103">Outlooktaskfolder を更新する</span><span class="sxs-lookup"><span data-stu-id="cda2c-103">Update outlooktaskfolder</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="7d8ad-104">Outlook タスクフォルダーの書き込み可能なプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="7d8ad-104">Update the writable properties of an Outlook task folder.</span></span>
+<span data-ttu-id="cda2c-104">Outlook タスクフォルダーの書き込み可能なプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="cda2c-104">Update the writable properties of an Outlook task folder.</span></span>
 
-<span data-ttu-id="7d8ad-105">既定のタスクフォルダー "Tasks" の " **name/名前**" プロパティの値を変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="7d8ad-105">You cannot change the **name** property value of the default task folder, "Tasks".</span></span>
-## <a name="permissions"></a><span data-ttu-id="7d8ad-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="7d8ad-106">Permissions</span></span>
-<span data-ttu-id="7d8ad-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7d8ad-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="cda2c-105">既定のタスクフォルダー "Tasks" の " **name/名前**" プロパティの値を変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="cda2c-105">You cannot change the **name** property value of the default task folder, "Tasks".</span></span>
+## <a name="permissions"></a><span data-ttu-id="cda2c-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="cda2c-106">Permissions</span></span>
+<span data-ttu-id="cda2c-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="cda2c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="7d8ad-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="7d8ad-109">Permission type</span></span>      | <span data-ttu-id="7d8ad-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="7d8ad-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="cda2c-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="cda2c-109">Permission type</span></span>      | <span data-ttu-id="cda2c-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="cda2c-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="7d8ad-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="7d8ad-111">Delegated (work or school account)</span></span> | <span data-ttu-id="7d8ad-112">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7d8ad-112">Tasks.ReadWrite</span></span>    |
-|<span data-ttu-id="7d8ad-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="7d8ad-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7d8ad-114">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7d8ad-114">Tasks.ReadWrite</span></span>    |
-|<span data-ttu-id="7d8ad-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="7d8ad-115">Application</span></span> | <span data-ttu-id="7d8ad-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="7d8ad-116">Not supported.</span></span> |
+|<span data-ttu-id="cda2c-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="cda2c-111">Delegated (work or school account)</span></span> | <span data-ttu-id="cda2c-112">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="cda2c-112">Tasks.ReadWrite</span></span>    |
+|<span data-ttu-id="cda2c-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="cda2c-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cda2c-114">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="cda2c-114">Tasks.ReadWrite</span></span>    |
+|<span data-ttu-id="cda2c-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="cda2c-115">Application</span></span> | <span data-ttu-id="cda2c-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="cda2c-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="7d8ad-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="7d8ad-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="cda2c-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="cda2c-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /me/outlook/taskFolders/{id}
@@ -35,26 +36,26 @@ PATCH /me/outlook/taskGroups/{id}/taskFolders/{id}
 PATCH /users/{id|userPrincipalName}/outlook/taskFolders/{id}
 PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="7d8ad-118">オプションの要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="7d8ad-118">Optional request headers</span></span>
-| <span data-ttu-id="7d8ad-119">名前</span><span class="sxs-lookup"><span data-stu-id="7d8ad-119">Name</span></span>       | <span data-ttu-id="7d8ad-120">説明</span><span class="sxs-lookup"><span data-stu-id="7d8ad-120">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="cda2c-118">オプションの要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="cda2c-118">Optional request headers</span></span>
+| <span data-ttu-id="cda2c-119">名前</span><span class="sxs-lookup"><span data-stu-id="cda2c-119">Name</span></span>       | <span data-ttu-id="cda2c-120">説明</span><span class="sxs-lookup"><span data-stu-id="cda2c-120">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="7d8ad-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="7d8ad-121">Authorization</span></span>  | <span data-ttu-id="7d8ad-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="7d8ad-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="cda2c-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="cda2c-121">Authorization</span></span>  | <span data-ttu-id="cda2c-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="cda2c-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="7d8ad-124">要求本文</span><span class="sxs-lookup"><span data-stu-id="7d8ad-124">Request body</span></span>
-<span data-ttu-id="7d8ad-p103">要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="7d8ad-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="cda2c-124">要求本文</span><span class="sxs-lookup"><span data-stu-id="cda2c-124">Request body</span></span>
+<span data-ttu-id="cda2c-p103">要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="cda2c-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="7d8ad-128">プロパティ</span><span class="sxs-lookup"><span data-stu-id="7d8ad-128">Property</span></span>     | <span data-ttu-id="7d8ad-129">型</span><span class="sxs-lookup"><span data-stu-id="7d8ad-129">Type</span></span>   |<span data-ttu-id="7d8ad-130">説明</span><span class="sxs-lookup"><span data-stu-id="7d8ad-130">Description</span></span>|
+| <span data-ttu-id="cda2c-128">プロパティ</span><span class="sxs-lookup"><span data-stu-id="cda2c-128">Property</span></span>     | <span data-ttu-id="cda2c-129">型</span><span class="sxs-lookup"><span data-stu-id="cda2c-129">Type</span></span>   |<span data-ttu-id="cda2c-130">説明</span><span class="sxs-lookup"><span data-stu-id="cda2c-130">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="7d8ad-131">name</span><span class="sxs-lookup"><span data-stu-id="7d8ad-131">name</span></span>|<span data-ttu-id="7d8ad-132">String</span><span class="sxs-lookup"><span data-stu-id="7d8ad-132">String</span></span>|<span data-ttu-id="7d8ad-133">タスク フォルダーの名前。</span><span class="sxs-lookup"><span data-stu-id="7d8ad-133">The name of the task folder.</span></span>|
+|<span data-ttu-id="cda2c-131">name</span><span class="sxs-lookup"><span data-stu-id="cda2c-131">name</span></span>|<span data-ttu-id="cda2c-132">String</span><span class="sxs-lookup"><span data-stu-id="cda2c-132">String</span></span>|<span data-ttu-id="cda2c-133">タスク フォルダーの名前。</span><span class="sxs-lookup"><span data-stu-id="cda2c-133">The name of the task folder.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="7d8ad-134">応答</span><span class="sxs-lookup"><span data-stu-id="7d8ad-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="cda2c-134">応答</span><span class="sxs-lookup"><span data-stu-id="cda2c-134">Response</span></span>
 
-<span data-ttu-id="7d8ad-135">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[outlooktaskfolder](../resources/outlooktaskfolder.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="7d8ad-135">If successful, this method returns a `200 OK` response code and updated [outlookTaskFolder](../resources/outlooktaskfolder.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="7d8ad-136">例</span><span class="sxs-lookup"><span data-stu-id="7d8ad-136">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="7d8ad-137">要求</span><span class="sxs-lookup"><span data-stu-id="7d8ad-137">Request</span></span>
-<span data-ttu-id="7d8ad-138">次の例では、指定したタスクフォルダーの`Charity work`名前をに変更します。</span><span class="sxs-lookup"><span data-stu-id="7d8ad-138">The following example changes the name of the specified task folder to `Charity work`.</span></span>
+<span data-ttu-id="cda2c-135">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[outlooktaskfolder](../resources/outlooktaskfolder.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="cda2c-135">If successful, this method returns a `200 OK` response code and updated [outlookTaskFolder](../resources/outlooktaskfolder.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="cda2c-136">例</span><span class="sxs-lookup"><span data-stu-id="cda2c-136">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="cda2c-137">要求</span><span class="sxs-lookup"><span data-stu-id="cda2c-137">Request</span></span>
+<span data-ttu-id="cda2c-138">次の例では、指定したタスクフォルダーの`Charity work`名前をに変更します。</span><span class="sxs-lookup"><span data-stu-id="cda2c-138">The following example changes the name of the specified task folder to `Charity work`.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="7d8ad-139">プロトコル</span><span class="sxs-lookup"><span data-stu-id="7d8ad-139">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="cda2c-139">プロトコル</span><span class="sxs-lookup"><span data-stu-id="cda2c-139">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_outlooktaskfolder"
@@ -68,26 +69,26 @@ Content-length: 31
   "name": "Charity work"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="7d8ad-140">C#</span><span class="sxs-lookup"><span data-stu-id="7d8ad-140">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="cda2c-140">C#</span><span class="sxs-lookup"><span data-stu-id="cda2c-140">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-outlooktaskfolder-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7d8ad-141">Javascript</span><span class="sxs-lookup"><span data-stu-id="7d8ad-141">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="cda2c-141">Javascript</span><span class="sxs-lookup"><span data-stu-id="cda2c-141">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-outlooktaskfolder-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="7d8ad-142">目的-C</span><span class="sxs-lookup"><span data-stu-id="7d8ad-142">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="cda2c-142">目的-C</span><span class="sxs-lookup"><span data-stu-id="cda2c-142">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-outlooktaskfolder-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="7d8ad-143">Java</span><span class="sxs-lookup"><span data-stu-id="7d8ad-143">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="cda2c-143">Java</span><span class="sxs-lookup"><span data-stu-id="cda2c-143">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-outlooktaskfolder-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="7d8ad-144">応答</span><span class="sxs-lookup"><span data-stu-id="7d8ad-144">Response</span></span>
-<span data-ttu-id="7d8ad-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="7d8ad-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="cda2c-144">応答</span><span class="sxs-lookup"><span data-stu-id="cda2c-144">Response</span></span>
+<span data-ttu-id="cda2c-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="cda2c-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
