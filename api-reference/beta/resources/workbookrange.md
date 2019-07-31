@@ -4,12 +4,13 @@ description: 範囲は、1 つ以上の隣接するセル (セル、行、列、
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: bf3a142452e6582808731c979e060540fb456760
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: baf4dc86e4a13436e1dc96edc4f1a84967a88e38
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348894"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007082"
 ---
 # <a name="workbookrange-resource-type"></a>workbookRange リソースの種類
 
@@ -40,7 +41,7 @@ ms.locfileid: "33348894"
 |[Rowsabove](../api/workbookrange-rowsabove.md)|[workbookRangeView](workbookrangeview.md)|指定した範囲の上にある特定の行数を取得します。|
 |[Rowsbelow](../api/workbookrange-rowsbelow.md)|[workbookRangeView](workbookrangeview.md)|指定した範囲の下にある特定の行数を取得します。|
 |[Usedrange](../api/range-usedrange.md)|[workbookRange](workbookrange.md)|指定した範囲オブジェクトのうち使用されている範囲を返します。|
-|[Clear](../api/range-clear.md)|なし|範囲の値、書式、塗りつぶし、罫線などをクリアします。|
+|[Clear](../api/range-clear.md)|None|範囲の値、書式、塗りつぶし、罫線などをクリアします。|
 |[Delete](../api/range-delete.md)|None|範囲に関連付けられているセルを削除します。|
 |[Insert](../api/range-insert.md)|[workbookRange](workbookrange.md)|この範囲を占めるセルまたはセルの範囲をワークシートに挿入し、領域を空けるために他のセルをシフトします。この時点で空き領域に位置する、新しい Range オブジェクトが返されます。|
 |[Merge](../api/range-merge.md)|なし|範囲内のセルをワークシートの 1 つの領域に結合します。|

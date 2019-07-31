@@ -4,12 +4,13 @@ description: Range オブジェクトの背景を表します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: eea7337fa4aefb1bde607740b9a2fc78264dae91
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: cb61352964323b0ded8733aa52ddd19854e028d2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348881"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007096"
 ---
 # <a name="workbookrangefill-resource-type"></a>workbookRangeFill リソースの種類
 
@@ -22,7 +23,7 @@ Range オブジェクトの背景を表します。
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[workbookRangeFill を取得する](../api/rangefill-get.md) | [workbookRangeFill](workbookrangefill.md) |rangeFill オブジェクトのプロパティと関係を読み取ります。|
+|[WorkbookRangeFill を取得する](../api/rangefill-get.md) | [workbookRangeFill](workbookrangefill.md) |rangeFill オブジェクトのプロパティと関係を読み取ります。|
 |[Update](../api/rangefill-update.md) | [workbookRangeFill](workbookrangefill.md)   |RangeFill オブジェクトを更新します。 |
 |[Clear](../api/rangefill-clear.md)|なし|範囲の背景をリセットします。|
 
@@ -31,7 +32,7 @@ Range オブジェクトの背景を表します。
 |:---------------|:--------|:----------|
 |color|string|枠線の色を表す HTML カラー コード。形式は #RRGGBB (例: "FFA500")、または名前付きの HTML 色 (例: "オレンジ")|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 

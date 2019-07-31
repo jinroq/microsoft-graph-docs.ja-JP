@@ -2,12 +2,15 @@
 title: workbookFilter リソースの種類
 description: テーブルの列のフィルター処理を管理します。
 localization_priority: Normal
-ms.openlocfilehash: 79ded0bfca0ace3b2d7c1bcdb4cd8dd2696802a4
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: excel
+author: ''
+ms.openlocfilehash: f3622a2efd952907214add4343bb5958adebe606
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348906"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007124"
 ---
 # <a name="workbookfilter-resource-type"></a>workbookFilter リソースの種類
 
@@ -20,13 +23,13 @@ ms.locfileid: "33348906"
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[Apply](../api/filter-apply.md)|なし|指定した列に指定されたフィルター条件を適用します。|
+|[Apply](../api/filter-apply.md)|None|指定した列に指定されたフィルター条件を適用します。|
 |[Clear](../api/filter-clear.md)|なし|指定した列のフィルターをクリアします。|
 
 ## <a name="properties"></a>プロパティ
 なし
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |criteria|[workbookFilterCriteria](workbookfiltercriteria.md)|指定した列に現在適用されているフィルターです。 読み取り専用です。|

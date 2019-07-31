@@ -1,22 +1,23 @@
 ---
 author: rahmit
-ms.author: rahmit
+description: WebPart リソースは、サイトページ上の web パーツの種類とレンダリング情報を表します。
 ms.date: 09/01/2018
 title: WebPart
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 03b5f1007d8dbe6587da736cdf0ac0fdc1ed8a55
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 71626440abe9eb63af3419b3e65c4351ae442dea
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345793"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007355"
 ---
 # <a name="webpart-resource"></a>webPart リソース
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**webPart**リソースは、[サイトページ](sitepage.md)上の web パーツの種類とレンダリング情報を表します。
+**WebPart**リソースは、[サイトページ](sitepage.md)上の web パーツの種類とレンダリング情報を表します。
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -37,16 +38,16 @@ ms.locfileid: "33345793"
 
 | プロパティ                | 型             | 説明
 |:------------------------|:-----------------|:----------------------------------
-| **type**                | String           | webPart の種類を指定する一意の識別子。 読み取り専用です。
-| **data**                | [sitepagedata][] | webpart に必要なプロパティ (webpart によって異なります)
+| **type**                | String           | WebPart の種類を指定する一意の識別子。 読み取り専用です。
+| **data**                | [sitePageData][] | WebPart に必要なプロパティ (webPart によって異なります)
 
-[sitepagedata]: sitepagedata.md
+[sitePageData]: sitepagedata.md
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 Web パーツでは、**データ**の下に必要なプロパティを定義できます。
 
-ページの詳細については、「 [sitepage](sitepage.md)」を参照してください。
+ページの詳細については、「 [Sitepage](sitepage.md)」を参照してください。
 <!--
 {
   "type": "#page.annotation",

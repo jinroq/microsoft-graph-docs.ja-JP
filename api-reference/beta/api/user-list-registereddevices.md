@@ -4,12 +4,13 @@ description: ユーザーの登録済みデバイスの一覧を取得します�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: bb9c96bdf632e1ac27e1f3299806cf556198774a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 076b15dcfcb9dc4bf7d24fcc81006156eb0ab176
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35867094"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996218"
 ---
 # <a name="list-registereddevices"></a>registeredDevices を一覧表示する
 

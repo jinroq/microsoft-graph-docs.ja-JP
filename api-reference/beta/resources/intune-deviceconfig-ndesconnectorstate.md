@@ -4,12 +4,13 @@ description: Ndes Connector の現在の状態。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 686b4cc5a0b7fbd55e844cefa054af0ca07deae7
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: db0b0cb9e044602e7181215ce836d47d3466d530
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34992698"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36000817"
 ---
 # <a name="ndesconnectorstate-enum-type"></a>Ndesコネクタ状態列挙型
 

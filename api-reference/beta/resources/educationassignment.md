@@ -1,40 +1,41 @@
 ---
 title: educationAssignment リソースの種類
-description: '**educationAssignment**リソースは、クラス内の学生またはチームメンバーに割り当てられた作業の1つまたは複数の作業単位を調査の一環として表します。 割り当てを作成できるのは、教師またはチームの所有者のみです。 割り当てには、教師が学生の作業を希望する配布資料とタスクが含まれています。 各受講者の割り当てには、教師が有効にすることを求められた仕事がすべて含まれている送信が関連付けられています。 教師は、生徒が行った提出物にスコアとフィードバックを追加することができます。'
+description: '**EducationAssignment**リソースは、クラス内の学生またはチームメンバーに割り当てられた作業の1つまたは複数の作業単位を調査の一環として表します。 割り当てを作成できるのは、教師またはチームの所有者のみです。 割り当てには、教師が学生の作業を希望する配布資料とタスクが含まれています。 各受講者の割り当てには、教師が有効にすることを求められた仕事がすべて含まれている送信が関連付けられています。 教師は、生徒が行った提出物にスコアとフィードバックを追加することができます。'
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: 9722a5eec59431b4c4c8bbf7dfc9ebfc39d4a459
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 84345bd87cb1b4ba02746045d69ba783d1710804
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334538"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006480"
 ---
 # <a name="educationassignment-resource-type"></a>educationAssignment リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**educationAssignment**リソースは、クラス内の学生またはチームメンバーに割り当てられた作業の1つまたは複数の作業単位を調査の一環として表します。 割り当てを作成できるのは、教師またはチームの所有者のみです。 割り当てには、教師が学生の作業を希望する配布資料とタスクが含まれています。 各受講者の割り当てには、教師が有効にすることを求められた仕事がすべて含まれている[送信](educationsubmissionresource.md)が関連付けられています。 教師は、生徒が行った提出物にスコアとフィードバックを追加することができます。
+**EducationAssignment**リソースは、クラス内の学生またはチームメンバーに割り当てられた作業の1つまたは複数の作業単位を調査の一環として表します。 割り当てを作成できるのは、教師またはチームの所有者のみです。 割り当てには、教師が学生の作業を希望する配布資料とタスクが含まれています。 各受講者の割り当てには、教師が有効にすることを求められた仕事がすべて含まれている[送信](educationsubmissionresource.md)が関連付けられています。 教師は、生徒が行った提出物にスコアとフィードバックを追加することができます。
 
 割り当てが作成されると、その割り当ては下書き状態になります。 学生は、割り当てを表示できません。送信は作成されません。 "[発行](../api/educationassignment-publish.md)" アクションを使用して、割り当ての状態を変更できます。 PATCH 要求を使用して割り当ての状態を変更することはできません。
 
-割り当て api は、クラスの名前空間で公開されます。
+割り当て Api は、クラスの名前空間で公開されます。
 
 ## <a name="methods"></a>メソッド
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[割り当てを取得する](../api/educationassignment-get.md) | [educationAssignment](educationassignment.md) |**educationAssignment**オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[割り当てリソースを作成する](../api/educationassignment-post-resources.md) |[educationAssignmentResource](educationassignmentresource.md)| resources コレクションへの投稿によって新しい**educationAssignmentResource**を作成します。|
-|[リソースを一覧表示する](../api/educationassignment-list-resources.md) |[educationAssignmentResource](educationassignmentresource.md)コレクション| **educationAssignmentResource**オブジェクトのコレクションを取得します。|
-|[送信の一覧表示](../api/educationassignment-list-submissions.md) |[educationSubmission](educationsubmission.md)コレクション| **educationSubmission**オブジェクトのコレクションを取得します。|
-|[カテゴリの一覧表示](../api/educationassignment-list-categories.md) |[educationCategory](educationcategory.md)コレクション| **educationCategory**オブジェクトのコレクションを取得します。|
+|[割り当てを取得する](../api/educationassignment-get.md) | [educationAssignment](educationassignment.md) |**EducationAssignment**オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[割り当てリソースを作成する](../api/educationassignment-post-resources.md) |[educationAssignmentResource](educationassignmentresource.md)| Resources コレクションへの投稿によって新しい**educationAssignmentResource**を作成します。|
+|[リソースを一覧表示する](../api/educationassignment-list-resources.md) |[educationAssignmentResource](educationassignmentresource.md)コレクション| **EducationAssignmentResource**オブジェクトのコレクションを取得します。|
+|[送信の一覧表示](../api/educationassignment-list-submissions.md) |[educationSubmission](educationsubmission.md)コレクション| **EducationSubmission**オブジェクトのコレクションを取得します。|
+|[カテゴリの一覧表示](../api/educationassignment-list-categories.md) |[educationCategory](educationcategory.md)コレクション| **EducationCategory**オブジェクトのコレクションを取得します。|
 |[カテゴリを追加する](../api/educationassignment-add-categories.md) |[educationCategory](educationcategory.md) | クラスに属する**educationCategory**をこの割り当てに割り当てます。|
-|[カテゴリを削除する](../api/educationassignment-remove-category.md) |なし| クラスに属する**educationCategory**をこの割り当てから削除します。|
-|[更新する](../api/educationassignment-update.md) | [educationAssignment](educationassignment.md) |**educationAssignment**オブジェクトを更新します。 |
-|[削除](../api/educationassignment-delete.md) | なし |**educationAssignment**オブジェクトを削除します。 |
-|[Publish](../api/educationassignment-publish.md)|[educationAssignment](educationassignment.md)|**educationAssignment**オブジェクトの状態を下書きから発行済みに変更します。|
+|[カテゴリを削除する](../api/educationassignment-remove-category.md) |None| クラスに属する**educationCategory**をこの割り当てから削除します。|
+|[Update](../api/educationassignment-update.md) | [educationAssignment](educationassignment.md) |**EducationAssignment**オブジェクトを更新します。 |
+|[Delete](../api/educationassignment-delete.md) | None |**EducationAssignment**オブジェクトを削除します。 |
+|[Publish](../api/educationassignment-publish.md)|[educationAssignment](educationassignment.md)|**EducationAssignment**オブジェクトの状態を下書きから発行済みに変更します。|
 |[リソース フォルダーの URL を取得する](../api/educationassignment-getresourcesfolderurl.md)| string| 割り当てリソースの一部として、ファイルベースのリソースが配置される OneDrive フォルダーです。 ファイルをリソースとして追加するには、このフォルダーに配置する必要があります。|
 
 ## <a name="properties"></a>プロパティ
@@ -43,7 +44,7 @@ ms.locfileid: "33334538"
 |id|String| 読み取り専用です。|
 |allowLateSubmissions|Boolean| 学生が期日を過ぎて送信できるかどうかを指定します。 このプロパティが作成時に指定されていない場合、既定値は true になります。 |
 |allowStudentsToAddResourcesToSubmission|Boolean| 学生が自分のリソースを提出することができるかどうか、または教師が追加したリソースのみを変更できるかどうかを識別します。 |
-|割り当ての datetime|DateTimeOffset|割り当てがアクティブになる日付を指定します。  今後、この日まで学生に割り当てが表示されることはありません。  **Timestamp**型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
+|割り当ての Datetime|DateTimeOffset|割り当てがアクティブになる日付を指定します。  今後、この日まで学生に割り当てが表示されることはありません。  **Timestamp**型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |への割り当て|[educationAssignmentRecipient](educationassignmentrecipient.md)| 割り当てが発行されると、どのユーザーまたはクラス全体が送信オブジェクトを受け取るかを指定します。 |
 |assignedDateTime|DateTimeOffset|割り当てが学生に公開され、課題が生徒のタイムラインに表示されます。  Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |classId|String| この割り当てが属するクラス。 |

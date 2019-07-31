@@ -4,12 +4,13 @@ description: このトピックでは、windowsPhone81GeneralConfiguration リ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5a73a8a6dfeb2ea730989fac2791146a92a70952
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: a42473064320bd425343ba69a9e9addc7be90692
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34996545"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36000271"
 ---
 # <a name="windowsphone81generalconfiguration-resource-type"></a>windowsPhone81GeneralConfiguration リソース タイプ
 

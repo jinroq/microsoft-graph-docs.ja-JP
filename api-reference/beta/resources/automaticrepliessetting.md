@@ -2,12 +2,15 @@
 title: automaticRepliesSetting リソースの種類
 description: '受信メールの送信者にメッセージを自動的に通知するための構成設定 '
 localization_priority: Normal
-ms.openlocfilehash: 6d7be13a47359e74b4d7a1dc44a4cca38924396e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 3a4320a687ca47d89e04d61c659075cea7722e32
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328224"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013158"
 ---
 # <a name="automaticrepliessetting-resource-type"></a>automaticRepliesSetting リソースの種類
 

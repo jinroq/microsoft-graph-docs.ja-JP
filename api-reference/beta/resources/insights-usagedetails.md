@@ -4,12 +4,13 @@ description: 使用されているアイテムのプロパティを含む複合�
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: d8a8893f2c5fcb21e2e578eefa4cf5733782db07
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 2b91275840546f0ff7486d8ecd5bdde2c1ff31e3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333534"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36005696"
 ---
 # <a name="usagedetails-resource-type"></a>種類の詳細リソースの種類
 

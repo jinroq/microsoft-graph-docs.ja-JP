@@ -1,15 +1,18 @@
 ---
-title: attachment リソース型
-description: 関連するコンテンツをイベントに追加できます。
+title: 添付ファイル リソースの種類
+description: 関連コンテンツをイベントに追加できます。
 localization_priority: Normal
-ms.openlocfilehash: 5cd02b665e9491ab4cf4b6046571273d88fee7e9
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 6ee3ba645f71b100b78b01fa1821bf91ca21cb26
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339048"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013263"
 ---
-# <a name="attachment-resource-type"></a>attachment リソース型
+# <a name="attachment-resource-type"></a>添付ファイル リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -36,7 +39,7 @@ ms.locfileid: "33339048"
 |[メッセージの添付ファイルを一覧表示する](../api/message-list-attachments.md) | [attachment](attachment.md) コレクション | メッセージの添付ファイルの一覧を取得します。 |
 |[Outlook タスクの添付ファイルを一覧表示する](../api/outlooktask-list-attachments.md) | [attachment](attachment.md) コレクション | Outlook タスクの添付ファイルの一覧を取得します。 |
 |[投稿の添付ファイルを一覧表示する](../api/post-list-attachments.md) | [attachment](attachment.md) コレクション | 投稿の添付ファイルの一覧を取得します。 |
-|[削除](../api/attachment-delete.md) | なし |イベント、メッセージ、Outlook タスク、または投稿の添付ファイルを削除します。 |
+|[削除](../api/attachment-delete.md) | None |イベント、メッセージ、Outlook タスク、または投稿の添付ファイルを削除します。 |
 
 ## <a name="properties"></a>プロパティ
 
@@ -45,7 +48,7 @@ ms.locfileid: "33339048"
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |contentType|String|MIME タイプ。|
-|id|String| 読み取り専用です。|
+|id|文字列| 読み取り専用。|
 |isInline|Boolean|添付ファイルがインライン添付ファイルの場合は `true`、それ以外の場合は `false`。|
 |lastModifiedDateTime|DateTimeOffset|Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |name|String|添付ファイルの表示名。実際のファイル名である必要はありません。|

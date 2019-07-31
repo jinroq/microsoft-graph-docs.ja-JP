@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: このリソースは、SharePoint の list 内のアイテムを表します。
 ms.date: 09/11/2017
 title: ListItem
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 9f813511ffa8a033d2ee85f8c7e5d2d5a271dd1e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 3c05125257eeec9d7b21a7d1eb03de79bc189ccd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345247"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009980"
 ---
 # <a name="listitem-resource"></a>ListItem リソース
 
@@ -29,7 +30,7 @@ ms.locfileid: "33345247"
 | [取得][]                        | GET /items/{item-id}
 | [列の値の取得][取得]       | GET /items/{item-id}?expand=fields
 | [分析を取得する][]              | アイテムを取得する (英語)
-| [間隔によりアクティビティを取得する][] | /items/{item-id}/getActivitiesByInterval を取得する
+| [間隔によりアクティビティを取得する][] | /Items/{item-id}/getActivitiesByInterval を取得する
 | [作成][]                     | POST /items
 | [削除][]                     | DELETE /items/{item-id}
 | [更新][]                     | PATCH /items/{item-id}
@@ -110,7 +111,7 @@ ms.locfileid: "33345247"
 | リレーションシップ名 | 種類                           | 説明
 |:------------------|:-------------------------------|:-------------------------------
 | アクティビティ        | [itemActivity][] コレクション    | このアイテムに対して行われた最近のアクティビティのリストです。
-| analytics         | [itemAnalytics][] リソース     | このアイテムに対して行われたビューアクティビティに関する分析。
+| 分析         | [itemAnalytics][] リソース     | このアイテムについて行われたビュー アクティビティに関する分析。
 | driveItem         | [driveItem][]                  | ドキュメント ライブラリの場合、**driveItem** リレーションシップは listItem を **[driveItem][]** として公開します。
 | フィールド            | [fieldValueSet][]              | このリスト アイテムの列セットの値です。
 | versions          | [listItemVersion][] コレクション | リスト アイテムの以前のバージョンのリスト。

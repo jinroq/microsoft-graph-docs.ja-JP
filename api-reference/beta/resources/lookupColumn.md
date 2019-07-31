@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: columnDefinition リソースの lookupColumn は、列の値がサイト内の別のソースから検索されることを示します。
 ms.date: 09/11/2017
 title: LookupColumn
 localization_priority: Normal
-ms.openlocfilehash: 04b9a92bfd723b188fc6869717a5665e10b6af30
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 8c92bce6b6d7ba401f6b9274f2ba0eee4439929e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345181"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009910"
 ---
 # <a name="lookupcolumn-resource-type"></a>LookupColumn リソースの種類
 
@@ -36,7 +38,7 @@ ms.locfileid: "33345181"
 
 | プロパティ名             | 種類    | 説明
 |:--------------------------|:--------|:---------------------------------------
-| **allowMultipleValues**   | boolean | ソースから複数の値を選択できるかどうかを示します。
+| **allowMultipleValues**   | ブール値 | ソースから複数の値を選択できるかどうかを示します。
 | **allowUnlimitedLength**  | boolean | 列の値が標準の 255 文字の制限を超えることができるかどうかを示します。
 | **columnName**            | string  | 検索元の列の名前。
 | **listId**                | string  | 検索元リストの一意識別子。

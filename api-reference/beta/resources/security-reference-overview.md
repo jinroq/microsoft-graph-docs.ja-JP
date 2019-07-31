@@ -4,12 +4,13 @@ description: セキュリティ上の脅威の高度化が引き続きエスカ�
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 853f09ca30378c4fa7e8132f495d789ec142f13c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.openlocfilehash: 71ff9c4eb4e22b20e9c4d9b9ebb7b78ccb6f18f0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343393"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008524"
 ---
 # <a name="use-the-microsoft-graph-api-for-security-threat-detection-and-protection-preview"></a>Microsoft Graph API を使用してセキュリティの脅威の検出と保護を行う (プレビュー)
 
@@ -19,7 +20,7 @@ ms.locfileid: "33343393"
 
 インテリジェントセキュリティグラフは、Microsoft、セキュリティ運用センター、世界中のパートナーからのセキュリティインテリジェンスを一体化して、統合されたセキュリティソリューションのエコシステムを形成します。 インテリジェントなセキュリティグラフは、機械学習、行動監視、およびクラウドの規模を使用して、脅威を迅速かつ包括的に保護、検出、応答することができます。 [セキュリティ API](security-api-overview.md)は、[インテリジェントセキュリティグラフ](https://www.microsoft.com/en-us/security/intelligence-security-api)に接続して、実践的で包括的なソリューションを支援します。
 
-[identity protection リスクイベント API](identityprotection-root.md)は、 [id 保護によってリスクの検出](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-identityprotection-graph-getting-started)を照会し、SIEM システムおよびセキュリティアプリケーションでそれらのイベントを使用するための、Azure AD Premium P1 と P2 のお客様への簡単なアクセスを提供します。
+[Identity protection リスクイベント API](identityprotection-root.md)は、 [id 保護によってリスクの検出](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-identityprotection-graph-getting-started)を照会し、SIEM システムおよびセキュリティアプリケーションでそれらのイベントを使用するための、Azure AD Premium P1 と P2 のお客様への簡単なアクセスを提供します。
 
 ## <a name="see-also"></a>関連項目
 

@@ -2,12 +2,15 @@
 title: appRole リソースの種類
 description: 別のアプリケーションを呼び出しているクライアントアプリケーションによって要求されるか、または指定されたアプリケーションロールのユーザーまたはグループにアプリケーションを割り当てるために使用される可能性があるアプリケーションロールを表します。 ServicePrincipal エンティティおよび application エンティティの**approles**プロパティは、 **approles**のコレクションです。
 localization_priority: Normal
-ms.openlocfilehash: 4043d600bd19c61156cccd72f0d4e4f2e8352640
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 35c26e52c5d7eb9529474d08a43b68fceddfc954
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778685"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013327"
 ---
 # <a name="approle-resource-type"></a>appRole リソースの種類
 

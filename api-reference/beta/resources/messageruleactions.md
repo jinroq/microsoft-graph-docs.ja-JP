@@ -4,12 +4,13 @@ description: ルールに使用可能なアクションのセットを表しま�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 5582bbe2d6dcf054b276bd583a8544752d6d5eb4
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 74462319b2878d4f0915b3f03d70a6dae06534b7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342234"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009686"
 ---
 # <a name="messageruleactions-resource-type"></a>messageRuleActions リソースの種類
 

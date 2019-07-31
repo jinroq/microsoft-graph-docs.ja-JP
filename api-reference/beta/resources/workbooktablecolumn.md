@@ -4,12 +4,13 @@ description: テーブル内にある 1 つの列を表します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: af0472d5cfdd95af731a4d9280b90d3ed1b44621
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 07dbcd2e900ced3fe235300cfab2b4922ddccc9f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348899"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007075"
 ---
 # <a name="workbooktablecolumn-resource-type"></a>workbookTableColumn リソースの種類
 
@@ -28,13 +29,13 @@ ms.locfileid: "33348899"
 |[Headerrowrange](../api/tablecolumn-headerrowrange.md)|[workbookRange](workbookrange.md)|列のヘッダー行に関連付けられた範囲オブジェクトを取得します。|
 |[Range](../api/tablecolumn-range.md)|[workbookRange](workbookrange.md)|列全体に関連付けられた範囲オブジェクトを取得します。|
 |[Totalrowrange](../api/tablecolumn-totalrowrange.md)|[workbookRange](workbookrange.md)|列の集計行に関連付けられた範囲オブジェクトを取得します。|
-|[Delete](../api/tablecolumn-delete.md)|なし|テーブルから列を削除します。|
+|[Delete](../api/tablecolumn-delete.md)|None|テーブルから列を削除します。|
 |[List](../api/tablecolumn-list.md) | [workbookTableColumn](workbooktablecolumn.md)コレクション |tableColumn オブジェクトのコレクションを取得します。 |
 |[Itemat](../api/tablecolumncollection-itemat.md)|[workbookTableColumn](workbooktablecolumn.md)|コレクション内の位置に基づいて列を取得します。|
 |[Add](../api/tablecolumncollection-add.md)|[workbookTableColumn](workbooktablecolumn.md)|テーブルに新しい列を追加します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |id|int|テーブル内の列を識別する一意のキーを返します。読み取り専用です。|
 |index|int|テーブルの列コレクション内の列のインデックス番号を返します。0 を起点とする番号になります。読み取り専用です。|

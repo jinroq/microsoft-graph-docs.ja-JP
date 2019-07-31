@@ -4,12 +4,13 @@ description: ユーザーに関連するドキュメントへのユーザー接�
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 90ebc84aa66fcd3dfd352d79256b725bf7a6d0e7
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 7963a3c518fd4fc946da4f6714a3aa52aa4b87eb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333576"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006221"
 ---
 # <a name="trending-resource-type"></a>傾向のあるリソースの種類
 

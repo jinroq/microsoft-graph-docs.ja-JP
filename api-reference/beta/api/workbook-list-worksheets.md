@@ -4,12 +4,13 @@ description: ワークシート オブジェクトの一覧を取得します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 85c5b813995aaa11a3f6e0a691bed9c383a131c4
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 3232450db212edc6e7b8c1d18a811d7337e53597
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35866549"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996134"
 ---
 # <a name="list-worksheets"></a>ワークシートを一覧表示する
 

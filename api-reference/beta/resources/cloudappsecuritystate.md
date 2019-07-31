@@ -1,24 +1,27 @@
 ---
-title: cloudappsecuritystate リソースの種類
-description: クラウドアプリケーション (destinationservicename、destinationserviceip) に関するステートフルな情報を含みます。
+title: cloudAppSecurityState リソースの種類
+description: クラウドアプリケーション (destinationServiceName、destinationServiceIp) に関するステートフルな情報を含みます。
 localization_priority: Normal
-ms.openlocfilehash: ff76adf1d3879c3dac3f19ae122d82c9523d5193
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 515c567c2360d0d37ddcba6c805f6723312b8030
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32460661"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012927"
 ---
-# <a name="cloudappsecuritystate-resource-type"></a>cloudappsecuritystate リソースの種類
+# <a name="cloudappsecuritystate-resource-type"></a>cloudAppSecurityState リソースの種類
 
-クラウドアプリケーション (destinationservicename、destinationserviceip) に関するステートフルな情報を含みます。
+クラウドアプリケーション (destinationServiceName、destinationServiceIp) に関するステートフルな情報を含みます。
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ     | 型        | 説明 |
 |:-------------|:------------|:------------|
-|destinationserviceip|String|クラウドアプリケーション/サービスへの接続の宛先 IP アドレス。|
-|destinationservicename|String|クラウドアプリケーション/サービス名 ("Salesforce"、"DropBox" など)。|
+|destinationServiceIp|String|クラウドアプリケーション/サービスへの接続の宛先 IP アドレス。|
+|destinationServiceName|String|クラウドアプリケーション/サービス名 ("Salesforce"、"DropBox" など)。|
 |riskScore|String|プロバイダーが生成/計算する、クラウドアプリケーション/サービスのリスクスコア。 推奨値の範囲0-1。パーセンテージに相当します。|
 
 ## <a name="json-representation"></a>JSON 表記

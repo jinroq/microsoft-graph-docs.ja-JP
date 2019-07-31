@@ -4,12 +4,13 @@ description: テナント内の特定のドメインの DNS ゾーンファイ�
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4032ac4987f423efed49a61b0bebf5090ba42c09
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+doc_type: resourcePageType
+ms.openlocfilehash: 30324c84bdfdc9fdb1ce7e6fd2379d5a60235d72
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34657162"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012731"
 ---
 # <a name="domaindnstxtrecord-resource-type"></a>Domaindnst・ Record リソースの種類
 
