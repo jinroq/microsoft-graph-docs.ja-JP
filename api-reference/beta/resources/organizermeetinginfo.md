@@ -4,12 +4,13 @@ description: 会議の開催者を含むミーティング情報。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 129e8a60edd89d45eb6e48715a59231475d52b99
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 3cc56b8834ec9b9c09706bf293fe0011a14d701d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341761"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009273"
 ---
 # <a name="organizermeetinginfo-resource-type"></a>組織の情報リソースの種類
 
@@ -22,7 +23,7 @@ ms.locfileid: "33341761"
 | プロパティ                     | 型                          | 説明                                     |
 | :--------------------------- | :---------------------------- | :-----------------------------------------------|
 | allowConversationWithoutHost | Boolean                       | 会話のホストが離れると、会話が続行できるかどうかを示します。 |
-| organizer                    | [identitySet](identityset.md) | 開催者 Azure Active Directory の id。  |
+| 構成内容変更                    | [identitySet](identityset.md) | 開催者 Azure Active Directory の id。  |
 
 ## <a name="json-representation"></a>JSON 表記
 

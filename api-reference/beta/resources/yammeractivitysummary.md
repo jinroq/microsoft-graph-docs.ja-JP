@@ -4,12 +4,13 @@ description: リソースの JSON 表記を次に示します。
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: c220ce211c9c6b61d41aa5773e3bcc01697f4e31
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 14cd88848e85d8260ccdadfbec8925faf4acba85
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555116"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006991"
 ---
 # <a name="yammeractivitysummary-resource-type"></a>yammerActivitySummary リソースの種類
 
@@ -17,12 +18,12 @@ ms.locfileid: "32555116"
 
 | プロパティ          | 型   |
 | :---------------- | :----- |
-| reportrefreshdate | Date   |
+| reportRefreshDate | 日付   |
 | 好き             | Int64  |
 | れ            | Int64  |
 | 読み込む              | Int64  |
-| reportDate        | Date   |
-| reportperiod      | String |
+| reportDate        | 日付   |
+| reportPeriod      | String |
 
 ## <a name="json-representation"></a>JSON 表記
 

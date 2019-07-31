@@ -4,12 +4,13 @@ description: Windows 用の office ポリシー設定を説明するエンティ
 localization_priority: Normal
 author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 854a563cbe9f810944215c4889ef27b9a84d1f41
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: resourcePageType
+ms.openlocfilehash: 05e52f7f7fbef4748259bde1f048203f4b49a32e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949333"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36004786"
 ---
 # <a name="windowsofficeclientconfiguration-resource-type"></a>windowsOfficeClientConfiguration リソースの種類
 
@@ -31,7 +32,7 @@ Windows 用の office ポリシー設定を説明するエンティティ。
 |[WindowsOfficeClientConfiguration の更新](../api/intune-cirrus-windowsofficeclientconfiguration-update.md)|[windowsOfficeClientConfiguration](../resources/intune-cirrus-windowsofficeclientconfiguration.md)|[WindowsOfficeClientConfiguration](../resources/intune-cirrus-windowsofficeclientconfiguration.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |id|文字列|Office クライアント構成ポリシーの Id。 [OfficeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承します。|
 |userPreferencePayload|Stream|プリファレンス設定 JSON 文字列はバイナリ形式です。これらの値はユーザーが上書きできます。 [OfficeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承します。|
@@ -43,7 +44,7 @@ Windows 用の office ポリシー設定を説明するエンティティ。
 |userCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|ポリシーのユーザーチェックインの概要。 [OfficeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承します。|
 |checkinStatuses|[officeClientCheckinStatus](../resources/intune-cirrus-officeclientcheckinstatus.md)コレクション|Office クライアントのチェックイン状態のリスト。 [OfficeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承します。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |assignments|[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md)コレクション|ポリシーのグループの割り当てのリスト。 [OfficeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承します。|

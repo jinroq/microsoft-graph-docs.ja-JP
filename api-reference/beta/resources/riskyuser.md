@@ -3,13 +3,14 @@ title: riskyUser リソースの種類
 description: 危険にさらされている Azure AD ユーザーを表します。 Azure AD は、さまざまなシグナルやマシン学習に基づいて、ユーザーのリスクを継続的に評価します。 この API は、プログラムによって Azure AD 内のすべてのリスクユーザーにアクセスを提供します。
 author: cloudhandler
 localization_priority: Normal
+doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 02c1fe3bbbcf532298a5f615971d7ffbc273bf5a
-ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
+ms.openlocfilehash: 3548be0439eaa5335d710a35f51fdbaecb19060c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34537296"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008727"
 ---
 # <a name="riskyuser-resource-type"></a>riskyUser リソースの種類
 

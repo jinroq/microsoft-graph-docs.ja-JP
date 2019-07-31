@@ -2,12 +2,15 @@
 title: privilegedRoleAssignment リソースの種類
 description: '特定のユーザーの特権の役割の割り当てを表します。 '
 localization_priority: Normal
-ms.openlocfilehash: 1e58f144eb3dda19225a836aa966f9479d3a9350
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 010dbf110de414e5221873263ffb5bcffe30db48
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344238"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008881"
 ---
 # <a name="privilegedroleassignment-resource-type"></a>privilegedRoleAssignment リソースの種類
 
@@ -20,28 +23,28 @@ ms.locfileid: "33344238"
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[privilegedRoleAssignment コレクションを一覧表示する](../api/privilegedroleassignment-list.md) | [privilegedRoleAssignment](privilegedroleassignment.md)コレクション|privilegedRoleAssignment オブジェクトのコレクションを取得します。|
-|[privilegedRoleAssignment を取得する](../api/privilegedroleassignment-get.md) | [privilegedRoleAssignment](privilegedroleassignment.md) |privilegedRoleAssignment オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[割り当てを作成する](../api/privilegedroleassignment-post-privilegedroleassignments.md) |[privilegedRoleAssignment](privilegedroleassignment.md)| assignments コレクションに投稿して、新しい割り当てを作成します。|
-|[削除](../api/privilegedroleassignment-delete.md) | なし |privilegedRoleAssignment オブジェクトを削除します。 |
-|[makePermanent](../api/privilegedroleassignment-makepermanent.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|役割の割り当てを永続的に設定します。|
-|[makeEligible](../api/privilegedroleassignment-makeeligible.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|役割の割り当てを対象として設定します。|
-|[私の](../api/privilegedroleassignment-my.md)|[privilegedRoleAssignment](privilegedroleassignment.md)コレクション|現在のユーザーの特権の役割の割り当てを取得します。|
+|[PrivilegedRoleAssignment コレクションを一覧表示する](../api/privilegedroleassignment-list.md) | [privilegedRoleAssignment](privilegedroleassignment.md) コレクション|PrivilegedRoleAssignment オブジェクトのコレクションを取得します。|
+|[privilegedRoleAssignment を取得する](../api/privilegedroleassignment-get.md) | [privilegedRoleAssignment](privilegedroleassignment.md) |PrivilegedRoleAssignment オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[割り当てを作成する](../api/privilegedroleassignment-post-privilegedroleassignments.md) |[privilegedRoleAssignment](privilegedroleassignment.md)| Assignments コレクションに投稿して、新しい割り当てを作成します。|
+|[Delete](../api/privilegedroleassignment-delete.md) | None |privilegedRoleAssignment オブジェクトを削除します。 |
+|[makePermanent](../api/privilegedroleassignment-makepermanent.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|ロールの割り当てを永続的にします。|
+|[makeEligible](../api/privilegedroleassignment-makeeligible.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|ロールの割り当てを有効にします。|
+|[my](../api/privilegedroleassignment-my.md)|[privilegedRoleAssignment](privilegedroleassignment.md) コレクション|現在のユーザーの特権の役割の割り当てを取得します。|
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |expirationDateTime|dateTimeOffset|一時的な特権の役割の割り当てが期限切れになる UTC の DateTime。 永続的な役割の割り当ての場合、値は null になります。|
-|id|string| 特権の役割の割り当ての一意識別子。 読み取り専用です。 これは ' userId_roleId ' の形式になっています。ここで、userId は azure AD ユーザー id の guid 文字列で、roleId は azure 管理者の役割 id の guid 文字列です。|
-|isElevated|boolean|役割の割り当てがアクティブ化されている場合は**true** 。 **false**を指定すると、役割の割り当てが非アクティブになります。|
-|resultmessage|string|サービスによって設定された結果メッセージ。|
+|id|string| 特権の役割の割り当ての一意識別子。 読み取り専用です。 これは ' userId_roleId ' の形式になっています。ここで、userId は Azure AD ユーザー id の GUID 文字列で、roleId は Azure 管理者の役割 id の GUID 文字列です。|
+|isElevated|ブール値|役割の割り当てがアクティブ化されている場合は**true** 。 **false**を指定すると、役割の割り当てが非アクティブになります。|
+|resultMessage|string|サービスによって設定された結果メッセージ。|
 |roleId|string|ロール識別子。 GUID 文字列形式。|
 |userId|string|ユーザー識別子。 GUID 文字列形式。|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|roleinfo|[privilegedRole](privilegedrole.md)| 読み取り専用です。 Null 許容型。 関連付けられているロール情報。|
+|roleInfo|[privilegedRole](privilegedrole.md)| 読み取り専用です。 Null 許容型。 関連付けられているロール情報。|
 
 ## <a name="json-representation"></a>JSON 表記
 

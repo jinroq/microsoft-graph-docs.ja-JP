@@ -1,21 +1,22 @@
 ---
 title: teamsAppDefinition リソースの種類
-description: 1つのバージョンの teamsapp の詳細。
+description: 1つのバージョンの teamsApp の詳細。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4b350c5ebe39da336dfe467bb73f5b91270dc31c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: c4849afe745a8554243bd37d85cb82d831e00a64
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345803"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007705"
 ---
 # <a name="teamsappdefinition-resource-type"></a>teamsAppDefinition リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-1つのバージョンの[teamsapp](teamsapp.md)の詳細。
+1つのバージョンの[Teamsapp](teamsapp.md)の詳細。
 
 ## <a name="properties"></a>プロパティ
 

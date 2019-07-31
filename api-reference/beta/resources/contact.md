@@ -4,12 +4,13 @@ description: 連絡先は、連絡を取り合う人や組織に関する情報�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 6c5c1bf0b04117a4a0ff7761866cf414f008ee7d
-ms.sourcegitcommit: b18ccb24fc79f3abb470cd759e25cdd266fc77c7
+doc_type: resourcePageType
+ms.openlocfilehash: 8eb692a3671672b82891a66531c64df1fcaa0e5c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34108988"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012885"
 ---
 # <a name="contact-resource-type"></a>contact リソース型
 
@@ -133,9 +134,9 @@ ms.locfileid: "34108988"
 ## <a name="methods"></a>メソッド
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[連絡先を取得する](../api/contact-get.md) | [連絡先](contact.md) |連絡先オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[作成](../api/user-post-contacts.md) | [連絡先](contact.md) |連絡先をルート連絡先フォルダーまたは別の連絡先フォルダーの連絡先エンドポイントに追加します。|
-|[更新する](../api/contact-update.md) | [連絡先](contact.md) |連絡先オブジェクトを更新します。 |
+|[連絡先を取得する](../api/contact-get.md) | [contact](contact.md) |連絡先オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[作成](../api/user-post-contacts.md) | [contact](contact.md) |連絡先をルート連絡先フォルダーまたは別の連絡先フォルダーの連絡先エンドポイントに追加します。|
+|[更新する](../api/contact-update.md) | [contact](contact.md) |連絡先オブジェクトを更新します。 |
 |[削除](../api/contact-delete.md) | なし |連絡先オブジェクトを削除します。 |
 |[delta](../api/contact-delta.md)|[contact](contact.md)コレクション| 指定したフォルダーで追加、削除、更新された連絡先のセットを取得します。|
 |**オープン拡張機能**| | |
@@ -144,8 +145,8 @@ ms.locfileid: "34108988"
 |**スキーマ拡張機能**| | |
 |[スキーマ拡張機能の値を追加する](/graph/extensibility-schema-groups) || スキーマ拡張機能の定義を作成し、それを使用してカスタマイズされた種類のデータをリソースに追加します。|
 |**拡張プロパティ**| | |
-|[単一値の拡張プロパティを作成する](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[連絡先](contact.md)  |新規または既存の連絡先に、1 つ以上の単一値の拡張プロパティを作成します。   |
-|[単一値の拡張プロパティを持つ連絡先を取得する](../api/singlevaluelegacyextendedproperty-get.md)  | [連絡先](contact.md) | `$expand` または `$filter` を使用して、単一値の拡張プロパティを含む連絡先を取得します。 |
+|[単一値の拡張プロパティを作成する](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[contact](contact.md)  |新規または既存の連絡先に、1 つ以上の単一値の拡張プロパティを作成します。   |
+|[単一値の拡張プロパティを持つ連絡先を取得する](../api/singlevaluelegacyextendedproperty-get.md)  | [contact](contact.md) | `$expand` または `$filter` を使用して、単一値の拡張プロパティを含む連絡先を取得します。 |
 |[複数値の拡張プロパティを作成する](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [contact](contact.md) | 新規または既存の連絡先に、1 つ以上の複数値の拡張プロパティを作成します。  |
 |[複数値の拡張プロパティを持つ連絡先を取得する](../api/multivaluelegacyextendedproperty-get.md)  | [contact](contact.md) | `$expand` を使用して、複数値の拡張プロパティを含む連絡先を取得します。 |
 

@@ -4,12 +4,13 @@ description: このプロファイルに構成を提供することにより、�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 47b3951a797661dc8b788d3e121f42f031b9d08a
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 93ee5b28a6bcff67026cb22799e8a10ad6f0f70e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34993754"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36011562"
 ---
 # <a name="androidworkprofilevpnconfiguration-resource-type"></a>Androidwork Profilevpnconfiguration リソースの種類
 

@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: columnDefinition リソースの calculatedColumn は、列のデータがサイト内の他の列に基づいて計算されることを示します。
 ms.date: 09/11/2017
 title: CalculatedColumn
 localization_priority: Normal
-ms.openlocfilehash: e09fab8a6bd59b0a878dfe6c70bd040612ce3b8a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 8492dcf39cbdee92a998a418599fc00b314078c6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328301"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013060"
 ---
 # <a name="calculatedcolumn-resource-type"></a>CalculatedColumn リソースの種類
 
