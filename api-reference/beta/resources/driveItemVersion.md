@@ -1,43 +1,44 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: DriveItemVersion リソースは、DriveItem の特定のバージョンを表しています。
 ms.date: 09/17/2017
 title: DriveItemVersion
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 2f8b846652f930bd7d9337c0accc0ccbe7a60d1a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: e3886c27ded6b26082609933d5ac7382dc182b45
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334570"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973092"
 ---
-# <a name="driveitemversion-resource-type"></a><span data-ttu-id="c9a17-102">DriveItemVersion リソースの種類</span><span class="sxs-lookup"><span data-stu-id="c9a17-102">DriveItemVersion resource type</span></span>
+# <a name="driveitemversion-resource-type"></a><span data-ttu-id="5a6c5-103">DriveItemVersion リソースの種類</span><span class="sxs-lookup"><span data-stu-id="5a6c5-103">DriveItemVersion resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c9a17-103">**DriveItemVersion** リソースは、[DriveItem](driveitem.md) の特定のバージョンを表しています。</span><span class="sxs-lookup"><span data-stu-id="c9a17-103">The **DriveItemVersion** resource represents a specific version of a [DriveItem](driveitem.md).</span></span>
+<span data-ttu-id="5a6c5-104">**DriveItemVersion** リソースは、[DriveItem](driveitem.md) の特定のバージョンを表しています。</span><span class="sxs-lookup"><span data-stu-id="5a6c5-104">The **DriveItemVersion** resource represents a specific version of a [DriveItem](driveitem.md).</span></span>
 
 
-## <a name="tasks-on-driveitemversion-resources"></a><span data-ttu-id="c9a17-104">DriveItemVersion リソースのタスク</span><span class="sxs-lookup"><span data-stu-id="c9a17-104">Tasks on DriveItemVersion resources</span></span>
+## <a name="tasks-on-driveitemversion-resources"></a><span data-ttu-id="5a6c5-105">DriveItemVersion リソースのタスク</span><span class="sxs-lookup"><span data-stu-id="5a6c5-105">Tasks on DriveItemVersion resources</span></span>
 
-<span data-ttu-id="c9a17-105">driveItemVersion リソースで使用可能なタスクを次に示します。</span><span class="sxs-lookup"><span data-stu-id="c9a17-105">The following tasks are available for driveItemVersion resources.</span></span>
+<span data-ttu-id="5a6c5-106">driveItemVersion リソースで使用可能なタスクを次に示します。</span><span class="sxs-lookup"><span data-stu-id="5a6c5-106">The following tasks are available for driveItemVersion resources.</span></span>
 
-|            <span data-ttu-id="c9a17-106">共通タスク</span><span class="sxs-lookup"><span data-stu-id="c9a17-106">Common task</span></span>             |         <span data-ttu-id="c9a17-107">HTTP メソッド</span><span class="sxs-lookup"><span data-stu-id="c9a17-107">HTTP method</span></span>         |
+|            <span data-ttu-id="5a6c5-107">共通タスク</span><span class="sxs-lookup"><span data-stu-id="5a6c5-107">Common task</span></span>             |         <span data-ttu-id="5a6c5-108">HTTP メソッド</span><span class="sxs-lookup"><span data-stu-id="5a6c5-108">HTTP method</span></span>         |
 | :--------------------------------- | :-------------------------- |
-| <span data-ttu-id="c9a17-108">[バージョンの一覧表示][version-list]</span><span class="sxs-lookup"><span data-stu-id="c9a17-108">[List versions][version-list]</span></span>      | `GET /drive/items/{item-id}/versions`  |
-| <span data-ttu-id="c9a17-109">[バージョンの取得][version-get]</span><span class="sxs-lookup"><span data-stu-id="c9a17-109">[Get version][version-get]</span></span>         | `GET /drive/items/{item-id}/versions/{version-id}`     |
-| <span data-ttu-id="c9a17-110">[コンテンツの取得][content-get]</span><span class="sxs-lookup"><span data-stu-id="c9a17-110">[Get contents][content-get]</span></span>        | `GET /drive/items/{item-id}/versions/{version-id}/content` |
-| <span data-ttu-id="c9a17-111">[バージョンの復元][version-restore]</span><span class="sxs-lookup"><span data-stu-id="c9a17-111">[Restore version][version-restore]</span></span> | `POST /drive/items/{item-id}/versions/{version-id}/restoreversion` |
+| <span data-ttu-id="5a6c5-109">[バージョンを一覧表示する][version-list]</span><span class="sxs-lookup"><span data-stu-id="5a6c5-109">[List versions][version-list]</span></span>      | `GET /drive/items/{item-id}/versions`  |
+| <span data-ttu-id="5a6c5-110">[バージョンの取得][version-get]</span><span class="sxs-lookup"><span data-stu-id="5a6c5-110">[Get version][version-get]</span></span>         | `GET /drive/items/{item-id}/versions/{version-id}`     |
+| <span data-ttu-id="5a6c5-111">[コンテンツの取得][content-get]</span><span class="sxs-lookup"><span data-stu-id="5a6c5-111">[Get contents][content-get]</span></span>        | `GET /drive/items/{item-id}/versions/{version-id}/content` |
+| <span data-ttu-id="5a6c5-112">[バージョンの復元][version-restore]</span><span class="sxs-lookup"><span data-stu-id="5a6c5-112">[Restore version][version-restore]</span></span> | `POST /drive/items/{item-id}/versions/{version-id}/restoreversion` |
 
 [version-list]: ../api/driveitem-list-versions.md
 [version-get]: ../api/driveitemversion-get.md
 [content-get]: ../api/driveitemversion-get-contents.md
 [version-restore]: ../api/driveitemversion-restore.md
 
-<span data-ttu-id="c9a17-112">前の表では、例に `/drive` を使用していますが、他にも有効な要求が多数あります。</span><span class="sxs-lookup"><span data-stu-id="c9a17-112">In the previous table, the examples use `/drive`, but there are many valid requests.</span></span>
+<span data-ttu-id="5a6c5-113">前の表では、例に `/drive` を使用していますが、他にも有効な要求が多数あります。</span><span class="sxs-lookup"><span data-stu-id="5a6c5-113">In the previous table, the examples use `/drive`, but there are many valid requests.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="c9a17-113">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="c9a17-113">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="5a6c5-114">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="5a6c5-114">JSON representation</span></span>
 
 <!-- { "blockType": "resource","keyProperty":"id", "@odata.type": "microsoft.graph.driveItemVersion", "@type.aka": "oneDrive.driveItemVersion" } -->
 
@@ -52,23 +53,23 @@ ms.locfileid: "33334570"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="c9a17-114">プロパティ</span><span class="sxs-lookup"><span data-stu-id="c9a17-114">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="5a6c5-115">プロパティ</span><span class="sxs-lookup"><span data-stu-id="5a6c5-115">Properties</span></span>
 
-|      <span data-ttu-id="c9a17-115">プロパティ名</span><span class="sxs-lookup"><span data-stu-id="c9a17-115">Property name</span></span>       |                         <span data-ttu-id="c9a17-116">種類</span><span class="sxs-lookup"><span data-stu-id="c9a17-116">Type</span></span>                         |                               <span data-ttu-id="c9a17-117">説明</span><span class="sxs-lookup"><span data-stu-id="c9a17-117">Description</span></span>                               |
+|      <span data-ttu-id="5a6c5-116">プロパティ名</span><span class="sxs-lookup"><span data-stu-id="5a6c5-116">Property name</span></span>       |                         <span data-ttu-id="5a6c5-117">種類</span><span class="sxs-lookup"><span data-stu-id="5a6c5-117">Type</span></span>                         |                               <span data-ttu-id="5a6c5-118">説明</span><span class="sxs-lookup"><span data-stu-id="5a6c5-118">Description</span></span>                               |
 | :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
-| <span data-ttu-id="c9a17-118">**id**</span><span class="sxs-lookup"><span data-stu-id="c9a17-118">**id**</span></span>                   | <span data-ttu-id="c9a17-119">string</span><span class="sxs-lookup"><span data-stu-id="c9a17-119">string</span></span>                                               | <span data-ttu-id="c9a17-120">バージョンの ID。</span><span class="sxs-lookup"><span data-stu-id="c9a17-120">The ID of the version.</span></span> <span data-ttu-id="c9a17-121">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="c9a17-121">Read-only.</span></span>                                       |
-| <span data-ttu-id="c9a17-122">**lastModifiedBy**</span><span class="sxs-lookup"><span data-stu-id="c9a17-122">**lastModifiedBy**</span></span>       | [<span data-ttu-id="c9a17-123">IdentitySet</span><span class="sxs-lookup"><span data-stu-id="c9a17-123">IdentitySet</span></span>](../resources/identityset.md)           | <span data-ttu-id="c9a17-124">最後にバージョンを変更したユーザーの ID。</span><span class="sxs-lookup"><span data-stu-id="c9a17-124">Identity of the user which last modified the version.</span></span> <span data-ttu-id="c9a17-125">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="c9a17-125">Read-only.</span></span>        |
-| <span data-ttu-id="c9a17-126">**lastModifiedDateTime**</span><span class="sxs-lookup"><span data-stu-id="c9a17-126">**lastModifiedDateTime**</span></span> | [<span data-ttu-id="c9a17-127">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="c9a17-127">DateTimeOffset</span></span>](../resources/timestamp.md)          | <span data-ttu-id="c9a17-128">バージョンが最後に変更された日時。</span><span class="sxs-lookup"><span data-stu-id="c9a17-128">Date and time the version was last modified.</span></span> <span data-ttu-id="c9a17-129">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="c9a17-129">Read-only.</span></span>                 |
-| <span data-ttu-id="c9a17-130">**publication**</span><span class="sxs-lookup"><span data-stu-id="c9a17-130">**publication**</span></span>          | [<span data-ttu-id="c9a17-131">PublicationFacet</span><span class="sxs-lookup"><span data-stu-id="c9a17-131">PublicationFacet</span></span>](../resources/publicationfacet.md) | <span data-ttu-id="c9a17-132">特定のバージョンのパブリケーション ステータスを示します。</span><span class="sxs-lookup"><span data-stu-id="c9a17-132">Indicates the publication status of this particular version.</span></span> <span data-ttu-id="c9a17-133">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="c9a17-133">Read-only.</span></span> |
-| <span data-ttu-id="c9a17-134">**size**</span><span class="sxs-lookup"><span data-stu-id="c9a17-134">**size**</span></span>                 | <span data-ttu-id="c9a17-135">Int64</span><span class="sxs-lookup"><span data-stu-id="c9a17-135">Int64</span></span>                                                | <span data-ttu-id="c9a17-136">アイテムのこのバージョンのコンテンツ ストリームのサイズを示します。</span><span class="sxs-lookup"><span data-stu-id="c9a17-136">Indicates the size of the content stream for this version of the item.</span></span>  |
+| <span data-ttu-id="5a6c5-119">**id**</span><span class="sxs-lookup"><span data-stu-id="5a6c5-119">**id**</span></span>                   | <span data-ttu-id="5a6c5-120">string</span><span class="sxs-lookup"><span data-stu-id="5a6c5-120">string</span></span>                                               | <span data-ttu-id="5a6c5-121">バージョンの ID。</span><span class="sxs-lookup"><span data-stu-id="5a6c5-121">The ID of the version.</span></span> <span data-ttu-id="5a6c5-122">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="5a6c5-122">Read-only.</span></span>                                       |
+| <span data-ttu-id="5a6c5-123">**lastModifiedBy**</span><span class="sxs-lookup"><span data-stu-id="5a6c5-123">**lastModifiedBy**</span></span>       | [<span data-ttu-id="5a6c5-124">IdentitySet</span><span class="sxs-lookup"><span data-stu-id="5a6c5-124">IdentitySet</span></span>](../resources/identityset.md)           | <span data-ttu-id="5a6c5-125">最後にバージョンを変更したユーザーの ID。</span><span class="sxs-lookup"><span data-stu-id="5a6c5-125">Identity of the user which last modified the version.</span></span> <span data-ttu-id="5a6c5-126">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="5a6c5-126">Read-only.</span></span>        |
+| <span data-ttu-id="5a6c5-127">**lastModifiedDateTime**</span><span class="sxs-lookup"><span data-stu-id="5a6c5-127">**lastModifiedDateTime**</span></span> | [<span data-ttu-id="5a6c5-128">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="5a6c5-128">DateTimeOffset</span></span>](../resources/timestamp.md)          | <span data-ttu-id="5a6c5-129">バージョンが最後に変更された日時。</span><span class="sxs-lookup"><span data-stu-id="5a6c5-129">Date and time the version was last modified.</span></span> <span data-ttu-id="5a6c5-130">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="5a6c5-130">Read-only.</span></span>                 |
+| <span data-ttu-id="5a6c5-131">**publication**</span><span class="sxs-lookup"><span data-stu-id="5a6c5-131">**publication**</span></span>          | [<span data-ttu-id="5a6c5-132">PublicationFacet</span><span class="sxs-lookup"><span data-stu-id="5a6c5-132">PublicationFacet</span></span>](../resources/publicationfacet.md) | <span data-ttu-id="5a6c5-133">特定のバージョンのパブリケーション ステータスを示します。</span><span class="sxs-lookup"><span data-stu-id="5a6c5-133">Indicates the publication status of this particular version.</span></span> <span data-ttu-id="5a6c5-134">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="5a6c5-134">Read-only.</span></span> |
+| <span data-ttu-id="5a6c5-135">**size**</span><span class="sxs-lookup"><span data-stu-id="5a6c5-135">**size**</span></span>                 | <span data-ttu-id="5a6c5-136">Int64</span><span class="sxs-lookup"><span data-stu-id="5a6c5-136">Int64</span></span>                                                | <span data-ttu-id="5a6c5-137">アイテムのこのバージョンのコンテンツ ストリームのサイズを示します。</span><span class="sxs-lookup"><span data-stu-id="5a6c5-137">Indicates the size of the content stream for this version of the item.</span></span>  |
 
-## <a name="relationships"></a><span data-ttu-id="c9a17-137">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="c9a17-137">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="5a6c5-138">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="5a6c5-138">Relationships</span></span>
 
-<span data-ttu-id="c9a17-138">次の表は、**driveItemVersion** リソースが他のリソースに対して持っているリレーションシップを定義しています。</span><span class="sxs-lookup"><span data-stu-id="c9a17-138">The following table defines the relationships that the **driveItemVersion** resource has to other resources.</span></span>
+<span data-ttu-id="5a6c5-139">次の表は、**driveItemVersion** リソースが他のリソースに対して持っているリレーションシップを定義しています。</span><span class="sxs-lookup"><span data-stu-id="5a6c5-139">The following table defines the relationships that the **driveItemVersion** resource has to other resources.</span></span>
 
-| <span data-ttu-id="c9a17-139">リレーションシップ名</span><span class="sxs-lookup"><span data-stu-id="c9a17-139">Relationship name</span></span> |  <span data-ttu-id="c9a17-140">種類</span><span class="sxs-lookup"><span data-stu-id="c9a17-140">Type</span></span>  |            <span data-ttu-id="c9a17-141">説明</span><span class="sxs-lookup"><span data-stu-id="c9a17-141">Description</span></span>             |
+| <span data-ttu-id="5a6c5-140">リレーションシップ名</span><span class="sxs-lookup"><span data-stu-id="5a6c5-140">Relationship name</span></span> |  <span data-ttu-id="5a6c5-141">種類</span><span class="sxs-lookup"><span data-stu-id="5a6c5-141">Type</span></span>  |            <span data-ttu-id="5a6c5-142">説明</span><span class="sxs-lookup"><span data-stu-id="5a6c5-142">Description</span></span>             |
 | :---------------- | :----- | :--------------------------------- |
-| <span data-ttu-id="c9a17-142">**content**</span><span class="sxs-lookup"><span data-stu-id="c9a17-142">**content**</span></span>       | <span data-ttu-id="c9a17-143">ストリーム</span><span class="sxs-lookup"><span data-stu-id="c9a17-143">Stream</span></span> | <span data-ttu-id="c9a17-144">バージョンのコンテンツ ストリーム。</span><span class="sxs-lookup"><span data-stu-id="c9a17-144">The content stream of the version.</span></span> |
+| <span data-ttu-id="5a6c5-143">**content**</span><span class="sxs-lookup"><span data-stu-id="5a6c5-143">**content**</span></span>       | <span data-ttu-id="5a6c5-144">ストリーム</span><span class="sxs-lookup"><span data-stu-id="5a6c5-144">Stream</span></span> | <span data-ttu-id="5a6c5-145">バージョンのコンテンツ ストリーム。</span><span class="sxs-lookup"><span data-stu-id="5a6c5-145">The content stream of the version.</span></span> |
 
 <!--
 {

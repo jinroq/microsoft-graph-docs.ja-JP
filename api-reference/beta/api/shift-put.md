@@ -4,34 +4,35 @@ description: 既存の稼働時間帯を置き換えます。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: af7fb164dc74a37d4d96789c30a2e9f00b3b234d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 7a7c1f965b5cfb3f8ac26677bb6a40507bbc5e7f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35869782"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35982831"
 ---
-# <a name="replace-shift"></a><span data-ttu-id="2a18a-103">Shift を置換する</span><span class="sxs-lookup"><span data-stu-id="2a18a-103">Replace shift</span></span>
+# <a name="replace-shift"></a><span data-ttu-id="8f919-103">Shift を置換する</span><span class="sxs-lookup"><span data-stu-id="8f919-103">Replace shift</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="2a18a-104">既存の[稼働時間帯](../resources/shift.md)を置き換えます。</span><span class="sxs-lookup"><span data-stu-id="2a18a-104">Replace an existing [shift](../resources/shift.md).</span></span>
+<span data-ttu-id="8f919-104">既存の[稼働時間帯](../resources/shift.md)を置き換えます。</span><span class="sxs-lookup"><span data-stu-id="8f919-104">Replace an existing [shift](../resources/shift.md).</span></span>
 
-<span data-ttu-id="2a18a-105">指定した[シフト](../resources/shift.md)が存在しない場合、 `404 Not found`このメソッドはを返します。</span><span class="sxs-lookup"><span data-stu-id="2a18a-105">If the specified [shift](../resources/shift.md) doesn't exist, this method returns `404 Not found`.</span></span>
+<span data-ttu-id="8f919-105">指定した[シフト](../resources/shift.md)が存在しない場合、 `404 Not found`このメソッドはを返します。</span><span class="sxs-lookup"><span data-stu-id="8f919-105">If the specified [shift](../resources/shift.md) doesn't exist, this method returns `404 Not found`.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2a18a-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="2a18a-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="8f919-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="8f919-106">Permissions</span></span>
 
-<span data-ttu-id="2a18a-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2a18a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="8f919-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8f919-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2a18a-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="2a18a-109">Permission type</span></span>      | <span data-ttu-id="2a18a-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="2a18a-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="8f919-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="8f919-109">Permission type</span></span>      | <span data-ttu-id="8f919-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="8f919-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="2a18a-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="2a18a-111">Delegated (work or school account)</span></span> | <span data-ttu-id="2a18a-112">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2a18a-112">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="2a18a-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="2a18a-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2a18a-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="2a18a-114">Not supported.</span></span>    |
-|<span data-ttu-id="2a18a-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="2a18a-115">Application</span></span> | <span data-ttu-id="2a18a-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="2a18a-116">Not supported.</span></span> |
+|<span data-ttu-id="8f919-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="8f919-111">Delegated (work or school account)</span></span> | <span data-ttu-id="8f919-112">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8f919-112">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="8f919-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="8f919-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8f919-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="8f919-114">Not supported.</span></span>    |
+|<span data-ttu-id="8f919-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="8f919-115">Application</span></span> | <span data-ttu-id="8f919-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="8f919-116">Not supported.</span></span> |
 
-> <span data-ttu-id="2a18a-117">**注**: この API は、管理者のアクセス許可をサポートします。</span><span class="sxs-lookup"><span data-stu-id="2a18a-117">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="2a18a-118">グローバル管理者は、所属していないグループにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="2a18a-118">Global admins can access groups that they are not a member of.</span></span>
+> <span data-ttu-id="8f919-117">**注**: この API は、管理者のアクセス許可をサポートします。</span><span class="sxs-lookup"><span data-stu-id="8f919-117">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="8f919-118">グローバル管理者は、所属していないグループにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="8f919-118">Global admins can access groups that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="2a18a-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="2a18a-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8f919-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="8f919-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -39,28 +40,28 @@ ms.locfileid: "35869782"
 PUT /teams/{teamId}/schedule/shifts/{shiftId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="2a18a-120">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="2a18a-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="8f919-120">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="8f919-120">Request headers</span></span>
 
-| <span data-ttu-id="2a18a-121">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="2a18a-121">Header</span></span>       | <span data-ttu-id="2a18a-122">値</span><span class="sxs-lookup"><span data-stu-id="2a18a-122">Value</span></span> |
+| <span data-ttu-id="8f919-121">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="8f919-121">Header</span></span>       | <span data-ttu-id="8f919-122">値</span><span class="sxs-lookup"><span data-stu-id="8f919-122">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="2a18a-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="2a18a-123">Authorization</span></span>  | <span data-ttu-id="2a18a-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="2a18a-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="2a18a-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="2a18a-126">Content-Type</span></span>  | <span data-ttu-id="2a18a-127">application/json</span><span class="sxs-lookup"><span data-stu-id="2a18a-127">application/json</span></span>  |
+| <span data-ttu-id="8f919-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="8f919-123">Authorization</span></span>  | <span data-ttu-id="8f919-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="8f919-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="8f919-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="8f919-126">Content-Type</span></span>  | <span data-ttu-id="8f919-127">application/json</span><span class="sxs-lookup"><span data-stu-id="8f919-127">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="2a18a-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="2a18a-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="8f919-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="8f919-128">Request body</span></span>
 
-<span data-ttu-id="2a18a-129">要求本文で、 [shift](../resources/shift.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="2a18a-129">In the request body, supply a JSON representation of a [shift](../resources/shift.md) object.</span></span>
+<span data-ttu-id="8f919-129">要求本文で、 [shift](../resources/shift.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="8f919-129">In the request body, supply a JSON representation of a [shift](../resources/shift.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="2a18a-130">応答</span><span class="sxs-lookup"><span data-stu-id="2a18a-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="8f919-130">応答</span><span class="sxs-lookup"><span data-stu-id="8f919-130">Response</span></span>
 
-<span data-ttu-id="2a18a-131">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[shift](../resources/shift.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="2a18a-131">If successful, this method returns a `200 OK` response code and a [shift](../resources/shift.md) object in the response body.</span></span>
+<span data-ttu-id="8f919-131">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[shift](../resources/shift.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="8f919-131">If successful, this method returns a `200 OK` response code and a [shift](../resources/shift.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2a18a-132">例</span><span class="sxs-lookup"><span data-stu-id="2a18a-132">Example</span></span>
+## <a name="example"></a><span data-ttu-id="8f919-132">例</span><span class="sxs-lookup"><span data-stu-id="8f919-132">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="2a18a-133">要求</span><span class="sxs-lookup"><span data-stu-id="2a18a-133">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="8f919-133">要求</span><span class="sxs-lookup"><span data-stu-id="8f919-133">Request</span></span>
 
-<span data-ttu-id="2a18a-134">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="2a18a-134">The following is an example of the request.</span></span>
+<span data-ttu-id="8f919-134">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="8f919-134">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="2a18a-135">プロトコル</span><span class="sxs-lookup"><span data-stu-id="2a18a-135">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="8f919-135">プロトコル</span><span class="sxs-lookup"><span data-stu-id="8f919-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "shift-put"
@@ -119,30 +120,30 @@ Prefer: return=representation
   }
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="2a18a-136">C#</span><span class="sxs-lookup"><span data-stu-id="2a18a-136">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="8f919-136">C#</span><span class="sxs-lookup"><span data-stu-id="8f919-136">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/shift-put-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="2a18a-137">Javascript</span><span class="sxs-lookup"><span data-stu-id="2a18a-137">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="8f919-137">Javascript</span><span class="sxs-lookup"><span data-stu-id="8f919-137">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/shift-put-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="2a18a-138">目的-C</span><span class="sxs-lookup"><span data-stu-id="2a18a-138">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="8f919-138">目的-C</span><span class="sxs-lookup"><span data-stu-id="8f919-138">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/shift-put-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="2a18a-139">Java</span><span class="sxs-lookup"><span data-stu-id="2a18a-139">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="8f919-139">Java</span><span class="sxs-lookup"><span data-stu-id="8f919-139">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/shift-put-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="2a18a-140">応答</span><span class="sxs-lookup"><span data-stu-id="2a18a-140">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="8f919-140">応答</span><span class="sxs-lookup"><span data-stu-id="8f919-140">Response</span></span>
 
-<span data-ttu-id="2a18a-141">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="2a18a-141">The following is an example of the response.</span></span> 
+<span data-ttu-id="8f919-141">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="8f919-141">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="2a18a-p104">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="2a18a-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="8f919-p104">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="8f919-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

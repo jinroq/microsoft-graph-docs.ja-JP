@@ -4,31 +4,32 @@ description: ImportedDeviceIdentityResult を削除します。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d189992d0368497572e4d8bb2fc58258177f85b4
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: f65e2eb7168f9e248ca0403f826e3f7f10e4a6d7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34981805"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35986800"
 ---
-# <a name="delete-importeddeviceidentityresult"></a><span data-ttu-id="0c917-103">ImportedDeviceIdentityResult の削除</span><span class="sxs-lookup"><span data-stu-id="0c917-103">Delete importedDeviceIdentityResult</span></span>
+# <a name="delete-importeddeviceidentityresult"></a><span data-ttu-id="5bcee-103">ImportedDeviceIdentityResult の削除</span><span class="sxs-lookup"><span data-stu-id="5bcee-103">Delete importedDeviceIdentityResult</span></span>
 
-> <span data-ttu-id="0c917-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="0c917-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="5bcee-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="5bcee-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="0c917-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="0c917-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="5bcee-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="5bcee-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="0c917-106">[ImportedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md)を削除します。</span><span class="sxs-lookup"><span data-stu-id="0c917-106">Deletes a [importedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md).</span></span>
+<span data-ttu-id="5bcee-106">[ImportedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md)を削除します。</span><span class="sxs-lookup"><span data-stu-id="5bcee-106">Deletes a [importedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md).</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="0c917-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="0c917-107">Prerequisites</span></span>
-<span data-ttu-id="0c917-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0c917-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="5bcee-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="5bcee-107">Prerequisites</span></span>
+<span data-ttu-id="5bcee-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5bcee-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="0c917-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="0c917-110">Permission type</span></span>|<span data-ttu-id="0c917-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="0c917-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="5bcee-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="5bcee-110">Permission type</span></span>|<span data-ttu-id="5bcee-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="5bcee-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="0c917-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="0c917-112">Delegated (work or school account)</span></span>|<span data-ttu-id="0c917-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0c917-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="0c917-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="0c917-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="0c917-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="0c917-115">Not supported.</span></span>|
-|<span data-ttu-id="0c917-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="0c917-116">Application</span></span>|<span data-ttu-id="0c917-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="0c917-117">Not supported.</span></span>|
+|<span data-ttu-id="5bcee-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="5bcee-112">Delegated (work or school account)</span></span>|<span data-ttu-id="5bcee-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5bcee-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="5bcee-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="5bcee-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="5bcee-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="5bcee-115">Not supported.</span></span>|
+|<span data-ttu-id="5bcee-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="5bcee-116">Application</span></span>|<span data-ttu-id="5bcee-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="5bcee-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="0c917-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="0c917-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5bcee-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="5bcee-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,28 +38,28 @@ ms.locfileid: "34981805"
 DELETE /deviceManagement/importedDeviceIdentities/{importedDeviceIdentityId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="0c917-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="0c917-119">Request headers</span></span>
-|<span data-ttu-id="0c917-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="0c917-120">Header</span></span>|<span data-ttu-id="0c917-121">値</span><span class="sxs-lookup"><span data-stu-id="0c917-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="5bcee-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="5bcee-119">Request headers</span></span>
+|<span data-ttu-id="5bcee-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="5bcee-120">Header</span></span>|<span data-ttu-id="5bcee-121">値</span><span class="sxs-lookup"><span data-stu-id="5bcee-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="0c917-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="0c917-122">Authorization</span></span>|<span data-ttu-id="0c917-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="0c917-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="0c917-124">承諾</span><span class="sxs-lookup"><span data-stu-id="0c917-124">Accept</span></span>|<span data-ttu-id="0c917-125">application/json</span><span class="sxs-lookup"><span data-stu-id="0c917-125">application/json</span></span>|
+|<span data-ttu-id="5bcee-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="5bcee-122">Authorization</span></span>|<span data-ttu-id="5bcee-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="5bcee-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="5bcee-124">承諾</span><span class="sxs-lookup"><span data-stu-id="5bcee-124">Accept</span></span>|<span data-ttu-id="5bcee-125">application/json</span><span class="sxs-lookup"><span data-stu-id="5bcee-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="0c917-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="0c917-126">Request body</span></span>
-<span data-ttu-id="0c917-127">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="0c917-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5bcee-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="5bcee-126">Request body</span></span>
+<span data-ttu-id="5bcee-127">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="5bcee-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="0c917-128">応答</span><span class="sxs-lookup"><span data-stu-id="0c917-128">Response</span></span>
-<span data-ttu-id="0c917-129">成功した場合、このメソッドは `204 No Content` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="0c917-129">If successful, this method returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="5bcee-128">応答</span><span class="sxs-lookup"><span data-stu-id="5bcee-128">Response</span></span>
+<span data-ttu-id="5bcee-129">成功した場合、このメソッドは `204 No Content` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="5bcee-129">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="0c917-130">例</span><span class="sxs-lookup"><span data-stu-id="0c917-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="5bcee-130">例</span><span class="sxs-lookup"><span data-stu-id="5bcee-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="0c917-131">要求</span><span class="sxs-lookup"><span data-stu-id="0c917-131">Request</span></span>
-<span data-ttu-id="0c917-132">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="0c917-132">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="5bcee-131">要求</span><span class="sxs-lookup"><span data-stu-id="5bcee-131">Request</span></span>
+<span data-ttu-id="5bcee-132">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="5bcee-132">Here is an example of the request.</span></span>
 ``` http
 DELETE https://graph.microsoft.com/beta/deviceManagement/importedDeviceIdentities/{importedDeviceIdentityId}
 ```
 
-### <a name="response"></a><span data-ttu-id="0c917-133">応答</span><span class="sxs-lookup"><span data-stu-id="0c917-133">Response</span></span>
-<span data-ttu-id="0c917-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="0c917-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="5bcee-133">応答</span><span class="sxs-lookup"><span data-stu-id="5bcee-133">Response</span></span>
+<span data-ttu-id="5bcee-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="5bcee-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```

@@ -4,28 +4,29 @@ description: 範囲内のセルをワークシートの 1 つの領域にマー�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 11bc82ad632a26b5b92672c51a4b7ae20a344146
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 8bada1d0b755b48d64e1c0c9cb9b5528d570e424
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35874749"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35988462"
 ---
-# <a name="range-merge"></a><span data-ttu-id="744fd-103">範囲: マージ</span><span class="sxs-lookup"><span data-stu-id="744fd-103">Range: merge</span></span>
+# <a name="range-merge"></a><span data-ttu-id="aa433-103">範囲: マージ</span><span class="sxs-lookup"><span data-stu-id="aa433-103">Range: merge</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="744fd-104">範囲内のセルをワークシートの 1 つの領域にマージします。</span><span class="sxs-lookup"><span data-stu-id="744fd-104">Merge the range cells into one region in the worksheet.</span></span>
-## <a name="permissions"></a><span data-ttu-id="744fd-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="744fd-105">Permissions</span></span>
-<span data-ttu-id="744fd-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="744fd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="aa433-104">範囲内のセルをワークシートの 1 つの領域にマージします。</span><span class="sxs-lookup"><span data-stu-id="aa433-104">Merge the range cells into one region in the worksheet.</span></span>
+## <a name="permissions"></a><span data-ttu-id="aa433-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="aa433-105">Permissions</span></span>
+<span data-ttu-id="aa433-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="aa433-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="744fd-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="744fd-108">Permission type</span></span>      | <span data-ttu-id="744fd-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="744fd-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="aa433-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="aa433-108">Permission type</span></span>      | <span data-ttu-id="aa433-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="aa433-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="744fd-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="744fd-110">Delegated (work or school account)</span></span> | <span data-ttu-id="744fd-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="744fd-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="744fd-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="744fd-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="744fd-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="744fd-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="744fd-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="744fd-114">Application</span></span> | <span data-ttu-id="744fd-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="744fd-115">Not supported.</span></span> |
+|<span data-ttu-id="aa433-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="aa433-110">Delegated (work or school account)</span></span> | <span data-ttu-id="aa433-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="aa433-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="aa433-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="aa433-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="aa433-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="aa433-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="aa433-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="aa433-114">Application</span></span> | <span data-ttu-id="aa433-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="aa433-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="744fd-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="744fd-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="aa433-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="aa433-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names/{name}/range/merge
@@ -33,29 +34,29 @@ POST /workbook/worksheets/{id|name}/range(address='<address>')/merge
 POST /workbook/tables/{id|name}/columns/{id|name}/range/merge
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="744fd-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="744fd-117">Request headers</span></span>
-| <span data-ttu-id="744fd-118">名前</span><span class="sxs-lookup"><span data-stu-id="744fd-118">Name</span></span>       | <span data-ttu-id="744fd-119">説明</span><span class="sxs-lookup"><span data-stu-id="744fd-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="aa433-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="aa433-117">Request headers</span></span>
+| <span data-ttu-id="aa433-118">名前</span><span class="sxs-lookup"><span data-stu-id="aa433-118">Name</span></span>       | <span data-ttu-id="aa433-119">説明</span><span class="sxs-lookup"><span data-stu-id="aa433-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="744fd-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="744fd-120">Authorization</span></span>  | <span data-ttu-id="744fd-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="744fd-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="744fd-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="744fd-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="744fd-p103">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="744fd-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="aa433-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="aa433-120">Authorization</span></span>  | <span data-ttu-id="aa433-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="aa433-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="aa433-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="aa433-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="aa433-p103">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="aa433-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="744fd-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="744fd-126">Request body</span></span>
-<span data-ttu-id="744fd-127">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="744fd-127">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="aa433-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="aa433-126">Request body</span></span>
+<span data-ttu-id="aa433-127">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="aa433-127">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="744fd-128">パラメーター</span><span class="sxs-lookup"><span data-stu-id="744fd-128">Parameter</span></span>    | <span data-ttu-id="744fd-129">型</span><span class="sxs-lookup"><span data-stu-id="744fd-129">Type</span></span>   |<span data-ttu-id="744fd-130">説明</span><span class="sxs-lookup"><span data-stu-id="744fd-130">Description</span></span>|
+| <span data-ttu-id="aa433-128">パラメーター</span><span class="sxs-lookup"><span data-stu-id="aa433-128">Parameter</span></span>    | <span data-ttu-id="aa433-129">型</span><span class="sxs-lookup"><span data-stu-id="aa433-129">Type</span></span>   |<span data-ttu-id="aa433-130">説明</span><span class="sxs-lookup"><span data-stu-id="aa433-130">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="744fd-131">across</span><span class="sxs-lookup"><span data-stu-id="744fd-131">across</span></span>|<span data-ttu-id="744fd-132">ブール値</span><span class="sxs-lookup"><span data-stu-id="744fd-132">boolean</span></span>|<span data-ttu-id="744fd-p104">省略可能。指定した範囲のセルを行ごとに結合して、行ごとに別のセルを作成する場合は True に設定します。既定値は False です。</span><span class="sxs-lookup"><span data-stu-id="744fd-p104">Optional. Set true to merge cells in each row of the specified range as separate merged cells. The default value is false.</span></span>|
+|<span data-ttu-id="aa433-131">across</span><span class="sxs-lookup"><span data-stu-id="aa433-131">across</span></span>|<span data-ttu-id="aa433-132">ブール値</span><span class="sxs-lookup"><span data-stu-id="aa433-132">boolean</span></span>|<span data-ttu-id="aa433-p104">省略可能。指定した範囲のセルを行ごとに結合して、行ごとに別のセルを作成する場合は True に設定します。既定値は False です。</span><span class="sxs-lookup"><span data-stu-id="aa433-p104">Optional. Set true to merge cells in each row of the specified range as separate merged cells. The default value is false.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="744fd-136">応答</span><span class="sxs-lookup"><span data-stu-id="744fd-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="aa433-136">応答</span><span class="sxs-lookup"><span data-stu-id="aa433-136">Response</span></span>
 
-<span data-ttu-id="744fd-p105">成功した場合、このメソッドは `200 OK` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="744fd-p105">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="aa433-p105">成功した場合、このメソッドは `200 OK` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="aa433-p105">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="744fd-139">例</span><span class="sxs-lookup"><span data-stu-id="744fd-139">Example</span></span>
-<span data-ttu-id="744fd-140">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="744fd-140">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="744fd-141">要求</span><span class="sxs-lookup"><span data-stu-id="744fd-141">Request</span></span>
-<span data-ttu-id="744fd-142">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="744fd-142">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="aa433-139">例</span><span class="sxs-lookup"><span data-stu-id="aa433-139">Example</span></span>
+<span data-ttu-id="aa433-140">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="aa433-140">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="aa433-141">要求</span><span class="sxs-lookup"><span data-stu-id="aa433-141">Request</span></span>
+<span data-ttu-id="aa433-142">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="aa433-142">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="744fd-143">プロトコル</span><span class="sxs-lookup"><span data-stu-id="744fd-143">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="aa433-143">プロトコル</span><span class="sxs-lookup"><span data-stu-id="aa433-143">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "range_merge"
@@ -69,27 +70,27 @@ Content-length: 20
   "across": true
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="744fd-144">C#</span><span class="sxs-lookup"><span data-stu-id="744fd-144">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="aa433-144">C#</span><span class="sxs-lookup"><span data-stu-id="aa433-144">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/range-merge-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="744fd-145">Javascript</span><span class="sxs-lookup"><span data-stu-id="744fd-145">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="aa433-145">Javascript</span><span class="sxs-lookup"><span data-stu-id="aa433-145">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/range-merge-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="744fd-146">目的-C</span><span class="sxs-lookup"><span data-stu-id="744fd-146">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="aa433-146">目的-C</span><span class="sxs-lookup"><span data-stu-id="aa433-146">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/range-merge-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="744fd-147">Java</span><span class="sxs-lookup"><span data-stu-id="744fd-147">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="aa433-147">Java</span><span class="sxs-lookup"><span data-stu-id="aa433-147">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/range-merge-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="744fd-148">応答</span><span class="sxs-lookup"><span data-stu-id="744fd-148">Response</span></span>
-<span data-ttu-id="744fd-149">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="744fd-149">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="aa433-148">応答</span><span class="sxs-lookup"><span data-stu-id="aa433-148">Response</span></span>
+<span data-ttu-id="aa433-149">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="aa433-149">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,
