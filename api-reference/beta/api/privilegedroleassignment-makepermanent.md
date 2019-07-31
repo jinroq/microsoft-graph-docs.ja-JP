@@ -2,61 +2,64 @@
 title: 'privilegedRoleAssignment: makePermanent'
 description: ロールの割り当てを永続的にします。
 localization_priority: Normal
-ms.openlocfilehash: 05a3bf4ac8993ecfaa228ce8e41a279a20bc3c5a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: aa0ac75a74b7bba089b40826e4709f2c557f632e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35875683"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978775"
 ---
-# <a name="privilegedroleassignment-makepermanent"></a><span data-ttu-id="e80f6-103">privilegedRoleAssignment: makePermanent</span><span class="sxs-lookup"><span data-stu-id="e80f6-103">privilegedRoleAssignment: makePermanent</span></span>
+# <a name="privilegedroleassignment-makepermanent"></a><span data-ttu-id="51fde-103">privilegedRoleAssignment: makePermanent</span><span class="sxs-lookup"><span data-stu-id="51fde-103">privilegedRoleAssignment: makePermanent</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e80f6-104">ロールの割り当てを永続的にします。</span><span class="sxs-lookup"><span data-stu-id="e80f6-104">Make the role assignment as permanent.</span></span>
+<span data-ttu-id="51fde-104">ロールの割り当てを永続的にします。</span><span class="sxs-lookup"><span data-stu-id="51fde-104">Make the role assignment as permanent.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e80f6-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="e80f6-105">Permissions</span></span>
-<span data-ttu-id="e80f6-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e80f6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="51fde-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="51fde-105">Permissions</span></span>
+<span data-ttu-id="51fde-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="51fde-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="e80f6-108">テナントは PIM に登録する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e80f6-108">The tenant needs to be registered to PIM.</span></span> <span data-ttu-id="e80f6-109">それ以外の場合、HTTP 403 禁止のエラーが返されます。</span><span class="sxs-lookup"><span data-stu-id="e80f6-109">Otherwise, HTTP 403 Forbidden error will be returned.</span></span>
+<span data-ttu-id="51fde-108">テナントは PIM に登録する必要があります。</span><span class="sxs-lookup"><span data-stu-id="51fde-108">The tenant needs to be registered to PIM.</span></span> <span data-ttu-id="51fde-109">それ以外の場合、HTTP 403 禁止のエラーが返されます。</span><span class="sxs-lookup"><span data-stu-id="51fde-109">Otherwise, HTTP 403 Forbidden error will be returned.</span></span>
 
-<span data-ttu-id="e80f6-110">リクエスターは、特権の_役割管理者_の役割を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="e80f6-110">The requestor needs to have _Privileged Role Administrator_ role.</span></span> 
+<span data-ttu-id="51fde-110">リクエスターは、特権の_役割管理者_の役割を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="51fde-110">The requestor needs to have _Privileged Role Administrator_ role.</span></span> 
 
-|<span data-ttu-id="e80f6-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="e80f6-111">Permission type</span></span>      | <span data-ttu-id="e80f6-112">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="e80f6-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="51fde-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="51fde-111">Permission type</span></span>      | <span data-ttu-id="51fde-112">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="51fde-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e80f6-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="e80f6-113">Delegated (work or school account)</span></span> | <span data-ttu-id="e80f6-114">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="e80f6-114">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="e80f6-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="e80f6-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e80f6-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e80f6-116">Not supported.</span></span>    |
-|<span data-ttu-id="e80f6-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="e80f6-117">Application</span></span> | <span data-ttu-id="e80f6-118">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e80f6-118">Not supported.</span></span> |
+|<span data-ttu-id="51fde-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="51fde-113">Delegated (work or school account)</span></span> | <span data-ttu-id="51fde-114">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="51fde-114">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="51fde-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="51fde-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="51fde-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="51fde-116">Not supported.</span></span>    |
+|<span data-ttu-id="51fde-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="51fde-117">Application</span></span> | <span data-ttu-id="51fde-118">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="51fde-118">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e80f6-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="e80f6-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="51fde-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="51fde-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /privilegedRoleAssignments/{id}/makePermanent
 ```
-## <a name="request-headers"></a><span data-ttu-id="e80f6-120">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="e80f6-120">Request headers</span></span>
-| <span data-ttu-id="e80f6-121">名前</span><span class="sxs-lookup"><span data-stu-id="e80f6-121">Name</span></span>       | <span data-ttu-id="e80f6-122">説明</span><span class="sxs-lookup"><span data-stu-id="e80f6-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="51fde-120">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="51fde-120">Request headers</span></span>
+| <span data-ttu-id="51fde-121">名前</span><span class="sxs-lookup"><span data-stu-id="51fde-121">Name</span></span>       | <span data-ttu-id="51fde-122">説明</span><span class="sxs-lookup"><span data-stu-id="51fde-122">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="e80f6-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="e80f6-123">Authorization</span></span>  | <span data-ttu-id="e80f6-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="e80f6-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="51fde-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="51fde-123">Authorization</span></span>  | <span data-ttu-id="51fde-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="51fde-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="e80f6-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="e80f6-126">Request body</span></span>
-<span data-ttu-id="e80f6-127">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="e80f6-127">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="51fde-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="51fde-126">Request body</span></span>
+<span data-ttu-id="51fde-127">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="51fde-127">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="e80f6-128">パラメーター</span><span class="sxs-lookup"><span data-stu-id="e80f6-128">Parameter</span></span>    | <span data-ttu-id="e80f6-129">型</span><span class="sxs-lookup"><span data-stu-id="e80f6-129">Type</span></span>   |<span data-ttu-id="e80f6-130">説明</span><span class="sxs-lookup"><span data-stu-id="e80f6-130">Description</span></span>|
+| <span data-ttu-id="51fde-128">パラメーター</span><span class="sxs-lookup"><span data-stu-id="51fde-128">Parameter</span></span>    | <span data-ttu-id="51fde-129">型</span><span class="sxs-lookup"><span data-stu-id="51fde-129">Type</span></span>   |<span data-ttu-id="51fde-130">説明</span><span class="sxs-lookup"><span data-stu-id="51fde-130">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="e80f6-131">したがっ</span><span class="sxs-lookup"><span data-stu-id="e80f6-131">reason</span></span>|<span data-ttu-id="e80f6-132">string</span><span class="sxs-lookup"><span data-stu-id="e80f6-132">string</span></span>|<span data-ttu-id="e80f6-133">省略可能。</span><span class="sxs-lookup"><span data-stu-id="e80f6-133">Optional.</span></span> <span data-ttu-id="e80f6-134">この呼び出しを行う理由。</span><span class="sxs-lookup"><span data-stu-id="e80f6-134">The reason to make this call.</span></span>|
-|<span data-ttu-id="e80f6-135">ticketNumber</span><span class="sxs-lookup"><span data-stu-id="e80f6-135">ticketNumber</span></span>|<span data-ttu-id="e80f6-136">string</span><span class="sxs-lookup"><span data-stu-id="e80f6-136">string</span></span>|<span data-ttu-id="e80f6-137">省略可能。</span><span class="sxs-lookup"><span data-stu-id="e80f6-137">Optional.</span></span> <span data-ttu-id="e80f6-138">このアクションに関連付けられているチケット番号。</span><span class="sxs-lookup"><span data-stu-id="e80f6-138">The ticket number that is associated with this action.</span></span>|
-|<span data-ttu-id="e80f6-139">ticketSystem</span><span class="sxs-lookup"><span data-stu-id="e80f6-139">ticketSystem</span></span>|<span data-ttu-id="e80f6-140">string</span><span class="sxs-lookup"><span data-stu-id="e80f6-140">string</span></span>|<span data-ttu-id="e80f6-141">省略可能。</span><span class="sxs-lookup"><span data-stu-id="e80f6-141">Optional.</span></span> <span data-ttu-id="e80f6-142">チケットシステム。</span><span class="sxs-lookup"><span data-stu-id="e80f6-142">The ticket system.</span></span>|
+|<span data-ttu-id="51fde-131">したがっ</span><span class="sxs-lookup"><span data-stu-id="51fde-131">reason</span></span>|<span data-ttu-id="51fde-132">string</span><span class="sxs-lookup"><span data-stu-id="51fde-132">string</span></span>|<span data-ttu-id="51fde-133">省略可能。</span><span class="sxs-lookup"><span data-stu-id="51fde-133">Optional.</span></span> <span data-ttu-id="51fde-134">この呼び出しを行う理由。</span><span class="sxs-lookup"><span data-stu-id="51fde-134">The reason to make this call.</span></span>|
+|<span data-ttu-id="51fde-135">ticketNumber</span><span class="sxs-lookup"><span data-stu-id="51fde-135">ticketNumber</span></span>|<span data-ttu-id="51fde-136">string</span><span class="sxs-lookup"><span data-stu-id="51fde-136">string</span></span>|<span data-ttu-id="51fde-137">省略可能。</span><span class="sxs-lookup"><span data-stu-id="51fde-137">Optional.</span></span> <span data-ttu-id="51fde-138">このアクションに関連付けられているチケット番号。</span><span class="sxs-lookup"><span data-stu-id="51fde-138">The ticket number that is associated with this action.</span></span>|
+|<span data-ttu-id="51fde-139">ticketSystem</span><span class="sxs-lookup"><span data-stu-id="51fde-139">ticketSystem</span></span>|<span data-ttu-id="51fde-140">string</span><span class="sxs-lookup"><span data-stu-id="51fde-140">string</span></span>|<span data-ttu-id="51fde-141">省略可能。</span><span class="sxs-lookup"><span data-stu-id="51fde-141">Optional.</span></span> <span data-ttu-id="51fde-142">チケットシステム。</span><span class="sxs-lookup"><span data-stu-id="51fde-142">The ticket system.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="e80f6-143">応答</span><span class="sxs-lookup"><span data-stu-id="e80f6-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="51fde-143">応答</span><span class="sxs-lookup"><span data-stu-id="51fde-143">Response</span></span>
 
-<span data-ttu-id="e80f6-144">成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[privilegedRoleAssignment](../resources/privilegedroleassignment.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="e80f6-144">If successful, this method returns `200 OK` response code and [privilegedRoleAssignment](../resources/privilegedroleassignment.md) object in the response body.</span></span>
+<span data-ttu-id="51fde-144">成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[privilegedRoleAssignment](../resources/privilegedroleassignment.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="51fde-144">If successful, this method returns `200 OK` response code and [privilegedRoleAssignment](../resources/privilegedroleassignment.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e80f6-145">例</span><span class="sxs-lookup"><span data-stu-id="e80f6-145">Example</span></span>
-<span data-ttu-id="e80f6-146">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="e80f6-146">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="e80f6-147">要求</span><span class="sxs-lookup"><span data-stu-id="e80f6-147">Request</span></span>
-<span data-ttu-id="e80f6-148">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="e80f6-148">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="51fde-145">例</span><span class="sxs-lookup"><span data-stu-id="51fde-145">Example</span></span>
+<span data-ttu-id="51fde-146">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="51fde-146">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="51fde-147">要求</span><span class="sxs-lookup"><span data-stu-id="51fde-147">Request</span></span>
+<span data-ttu-id="51fde-148">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="51fde-148">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="e80f6-149">プロトコル</span><span class="sxs-lookup"><span data-stu-id="e80f6-149">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="51fde-149">プロトコル</span><span class="sxs-lookup"><span data-stu-id="51fde-149">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "privilegedroleassignment_makepermanent"
@@ -72,27 +75,27 @@ Content-length: 110
   "ticketSystem": "ticketSystem-value"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="e80f6-150">C#</span><span class="sxs-lookup"><span data-stu-id="e80f6-150">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="51fde-150">C#</span><span class="sxs-lookup"><span data-stu-id="51fde-150">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/privilegedroleassignment-makepermanent-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e80f6-151">Javascript</span><span class="sxs-lookup"><span data-stu-id="e80f6-151">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="51fde-151">Javascript</span><span class="sxs-lookup"><span data-stu-id="51fde-151">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/privilegedroleassignment-makepermanent-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="e80f6-152">目的-C</span><span class="sxs-lookup"><span data-stu-id="e80f6-152">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="51fde-152">目的-C</span><span class="sxs-lookup"><span data-stu-id="51fde-152">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/privilegedroleassignment-makepermanent-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="e80f6-153">Java</span><span class="sxs-lookup"><span data-stu-id="e80f6-153">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="51fde-153">Java</span><span class="sxs-lookup"><span data-stu-id="51fde-153">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/privilegedroleassignment-makepermanent-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="e80f6-154">応答</span><span class="sxs-lookup"><span data-stu-id="e80f6-154">Response</span></span>
-<span data-ttu-id="e80f6-p107">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="e80f6-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="51fde-154">応答</span><span class="sxs-lookup"><span data-stu-id="51fde-154">Response</span></span>
+<span data-ttu-id="51fde-p107">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="51fde-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,26 +1,28 @@
 ---
 author: daspek
-ms.author: dspektor
+description: CommentActionリソースは、アイテムに対して行われたコメント アクティビティに関する情報を提供します。
 ms.date: 09/14/2017
 title: CommentAction
 localization_priority: Normal
-ms.openlocfilehash: c472a0b1b992c91b60174859e4900ffcee04c007
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: b7782c6e4dd30b503a9be88737ef6bd2dbad109b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341482"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973259"
 ---
-# <a name="commentaction-resource-type"></a><span data-ttu-id="fc9e9-102">CommentAction リソースの種類</span><span class="sxs-lookup"><span data-stu-id="fc9e9-102">CommentAction resource type</span></span>
+# <a name="commentaction-resource-type"></a><span data-ttu-id="4334c-103">CommentAction リソースの種類</span><span class="sxs-lookup"><span data-stu-id="4334c-103">CommentAction resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="fc9e9-103">**CommentAction**リソースは、アイテムに対して行われたコメント [アクティビティ][]に関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="fc9e9-103">The **CommentAction** resource provides information about a comment [activity][] made on an item.</span></span>
+<span data-ttu-id="4334c-104">**CommentAction**リソースは、アイテムに対して行われたコメント [アクティビティ][]に関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="4334c-104">The **CommentAction** resource provides information about a comment [activity][] made on an item.</span></span>
 
 [アクティビティ]: itemactivity.md
 [activity]: itemactivity.md
 
-## <a name="json-representation"></a><span data-ttu-id="fc9e9-105">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="fc9e9-105">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="4334c-106">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="4334c-106">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -36,19 +38,19 @@ ms.locfileid: "33341482"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="fc9e9-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="fc9e9-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="4334c-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="4334c-107">Properties</span></span>
 
-| <span data-ttu-id="fc9e9-107">プロパティ名</span><span class="sxs-lookup"><span data-stu-id="fc9e9-107">Property name</span></span>    | <span data-ttu-id="fc9e9-108">種類</span><span class="sxs-lookup"><span data-stu-id="fc9e9-108">Type</span></span>                       | <span data-ttu-id="fc9e9-109">説明</span><span class="sxs-lookup"><span data-stu-id="fc9e9-109">Description</span></span>
+| <span data-ttu-id="4334c-108">プロパティ名</span><span class="sxs-lookup"><span data-stu-id="4334c-108">Property name</span></span>    | <span data-ttu-id="4334c-109">種類</span><span class="sxs-lookup"><span data-stu-id="4334c-109">Type</span></span>                       | <span data-ttu-id="4334c-110">説明</span><span class="sxs-lookup"><span data-stu-id="4334c-110">Description</span></span>
 |:-----------------|:---------------------------|:-----------------------------
-| <span data-ttu-id="fc9e9-110">isReply</span><span class="sxs-lookup"><span data-stu-id="fc9e9-110">isReply</span></span>          | <span data-ttu-id="fc9e9-111">boolean</span><span class="sxs-lookup"><span data-stu-id="fc9e9-111">boolean</span></span>                    | <span data-ttu-id="fc9e9-112">true の場合、このアクティビティは既存のコメント スレッドへの返信だったことを示します。</span><span class="sxs-lookup"><span data-stu-id="fc9e9-112">If true, this activity was a reply to an existing comment thread.</span></span>
-| <span data-ttu-id="fc9e9-113">parentAuthor</span><span class="sxs-lookup"><span data-stu-id="fc9e9-113">parentAuthor</span></span>     | <span data-ttu-id="fc9e9-114">[identitySet][]</span><span class="sxs-lookup"><span data-stu-id="fc9e9-114">[identitySet][]</span></span>            | <span data-ttu-id="fc9e9-115">コメント スレッドを開始したユーザーの ID。</span><span class="sxs-lookup"><span data-stu-id="fc9e9-115">The identity of the user who started the comment thread.</span></span>
-| <span data-ttu-id="fc9e9-116">participants</span><span class="sxs-lookup"><span data-stu-id="fc9e9-116">participants</span></span>     | <span data-ttu-id="fc9e9-117">[identitySet][] コレクション</span><span class="sxs-lookup"><span data-stu-id="fc9e9-117">[identitySet][] collection</span></span> | <span data-ttu-id="fc9e9-118">該当のコメント スレッドに参加しているユーザーの ID。</span><span class="sxs-lookup"><span data-stu-id="fc9e9-118">The identities of the users participating in this comment thread.</span></span>
+| <span data-ttu-id="4334c-111">isReply</span><span class="sxs-lookup"><span data-stu-id="4334c-111">isReply</span></span>          | <span data-ttu-id="4334c-112">boolean</span><span class="sxs-lookup"><span data-stu-id="4334c-112">boolean</span></span>                    | <span data-ttu-id="4334c-113">true の場合、このアクティビティは既存のコメント スレッドへの返信だったことを示します。</span><span class="sxs-lookup"><span data-stu-id="4334c-113">If true, this activity was a reply to an existing comment thread.</span></span>
+| <span data-ttu-id="4334c-114">parentAuthor</span><span class="sxs-lookup"><span data-stu-id="4334c-114">parentAuthor</span></span>     | <span data-ttu-id="4334c-115">[identitySet][]</span><span class="sxs-lookup"><span data-stu-id="4334c-115">[identitySet][]</span></span>            | <span data-ttu-id="4334c-116">コメント スレッドを開始したユーザーの ID。</span><span class="sxs-lookup"><span data-stu-id="4334c-116">The identity of the user who started the comment thread.</span></span>
+| <span data-ttu-id="4334c-117">participants</span><span class="sxs-lookup"><span data-stu-id="4334c-117">participants</span></span>     | <span data-ttu-id="4334c-118">[identitySet][] コレクション</span><span class="sxs-lookup"><span data-stu-id="4334c-118">[identitySet][] collection</span></span> | <span data-ttu-id="4334c-119">該当のコメント スレッドに参加しているユーザーの ID。</span><span class="sxs-lookup"><span data-stu-id="4334c-119">The identities of the users participating in this comment thread.</span></span>
 
 [identitySet]: identityset.md
 
-## <a name="remarks"></a><span data-ttu-id="fc9e9-120">備考</span><span class="sxs-lookup"><span data-stu-id="fc9e9-120">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="4334c-121">備考</span><span class="sxs-lookup"><span data-stu-id="4334c-121">Remarks</span></span>
 
-<span data-ttu-id="fc9e9-121">アイテムのアクティビティの記録は、現在、SharePoint と OneDrive for Business でのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="fc9e9-121">Item activity records are currently only available on SharePoint and OneDrive for Business.</span></span>
+<span data-ttu-id="4334c-122">アイテムのアクティビティの記録は、現在、SharePoint と OneDrive for Business でのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="4334c-122">Item activity records are currently only available on SharePoint and OneDrive for Business.</span></span>
 
 <!--
 {

@@ -4,31 +4,32 @@ description: WindowsManagementAppHealthSummary オブジェクトのプロパテ
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 97ed5c3f5d9126e73fd421e2c9868e09f61e0fe4
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 51dc82bea5bee9b92306c0d315f2e5b7a6500eb8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34978381"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35985631"
 ---
-# <a name="update-windowsmanagementapphealthsummary"></a><span data-ttu-id="31115-103">WindowsManagementAppHealthSummary の更新</span><span class="sxs-lookup"><span data-stu-id="31115-103">Update windowsManagementAppHealthSummary</span></span>
+# <a name="update-windowsmanagementapphealthsummary"></a><span data-ttu-id="20e67-103">WindowsManagementAppHealthSummary の更新</span><span class="sxs-lookup"><span data-stu-id="20e67-103">Update windowsManagementAppHealthSummary</span></span>
 
-> <span data-ttu-id="31115-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="31115-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="20e67-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="20e67-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="31115-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="31115-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="20e67-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="20e67-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="31115-106">[WindowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md)オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="31115-106">Update the properties of a [windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md) object.</span></span>
+<span data-ttu-id="20e67-106">[WindowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md)オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="20e67-106">Update the properties of a [windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="31115-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="31115-107">Prerequisites</span></span>
-<span data-ttu-id="31115-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="31115-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="20e67-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="20e67-107">Prerequisites</span></span>
+<span data-ttu-id="20e67-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="20e67-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="31115-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="31115-110">Permission type</span></span>|<span data-ttu-id="31115-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="31115-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="20e67-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="20e67-110">Permission type</span></span>|<span data-ttu-id="20e67-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="20e67-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="31115-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="31115-112">Delegated (work or school account)</span></span>|<span data-ttu-id="31115-113">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="31115-113">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="31115-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="31115-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="31115-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="31115-115">Not supported.</span></span>|
-|<span data-ttu-id="31115-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="31115-116">Application</span></span>|<span data-ttu-id="31115-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="31115-117">Not supported.</span></span>|
+|<span data-ttu-id="20e67-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="20e67-112">Delegated (work or school account)</span></span>|<span data-ttu-id="20e67-113">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="20e67-113">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="20e67-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="20e67-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="20e67-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="20e67-115">Not supported.</span></span>|
+|<span data-ttu-id="20e67-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="20e67-116">Application</span></span>|<span data-ttu-id="20e67-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="20e67-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="31115-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="31115-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="20e67-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="20e67-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,33 +38,33 @@ ms.locfileid: "34978381"
 PATCH /deviceAppManagement/windowsManagementApp/healthSummary
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="31115-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="31115-119">Request headers</span></span>
-|<span data-ttu-id="31115-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="31115-120">Header</span></span>|<span data-ttu-id="31115-121">値</span><span class="sxs-lookup"><span data-stu-id="31115-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="20e67-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="20e67-119">Request headers</span></span>
+|<span data-ttu-id="20e67-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="20e67-120">Header</span></span>|<span data-ttu-id="20e67-121">値</span><span class="sxs-lookup"><span data-stu-id="20e67-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="31115-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="31115-122">Authorization</span></span>|<span data-ttu-id="31115-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="31115-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="31115-124">承諾</span><span class="sxs-lookup"><span data-stu-id="31115-124">Accept</span></span>|<span data-ttu-id="31115-125">application/json</span><span class="sxs-lookup"><span data-stu-id="31115-125">application/json</span></span>|
+|<span data-ttu-id="20e67-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="20e67-122">Authorization</span></span>|<span data-ttu-id="20e67-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="20e67-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="20e67-124">承諾</span><span class="sxs-lookup"><span data-stu-id="20e67-124">Accept</span></span>|<span data-ttu-id="20e67-125">application/json</span><span class="sxs-lookup"><span data-stu-id="20e67-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="31115-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="31115-126">Request body</span></span>
-<span data-ttu-id="31115-127">要求本文で、 [windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="31115-127">In the request body, supply a JSON representation for the [windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="20e67-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="20e67-126">Request body</span></span>
+<span data-ttu-id="20e67-127">要求本文で、 [windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="20e67-127">In the request body, supply a JSON representation for the [windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md) object.</span></span>
 
-<span data-ttu-id="31115-128">次の表に、 [windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md)の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="31115-128">The following table shows the properties that are required when you create the [windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md).</span></span>
+<span data-ttu-id="20e67-128">次の表に、 [windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md)の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="20e67-128">The following table shows the properties that are required when you create the [windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md).</span></span>
 
-|<span data-ttu-id="31115-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="31115-129">Property</span></span>|<span data-ttu-id="31115-130">型</span><span class="sxs-lookup"><span data-stu-id="31115-130">Type</span></span>|<span data-ttu-id="31115-131">説明</span><span class="sxs-lookup"><span data-stu-id="31115-131">Description</span></span>|
+|<span data-ttu-id="20e67-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="20e67-129">Property</span></span>|<span data-ttu-id="20e67-130">型</span><span class="sxs-lookup"><span data-stu-id="20e67-130">Type</span></span>|<span data-ttu-id="20e67-131">説明</span><span class="sxs-lookup"><span data-stu-id="20e67-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="31115-132">id</span><span class="sxs-lookup"><span data-stu-id="31115-132">id</span></span>|<span data-ttu-id="31115-133">String</span><span class="sxs-lookup"><span data-stu-id="31115-133">String</span></span>|<span data-ttu-id="31115-134">Windows management app health summary エンティティのキー。</span><span class="sxs-lookup"><span data-stu-id="31115-134">Key of the Windows management app health summary entity.</span></span>|
-|<span data-ttu-id="31115-135">healthyDeviceCount</span><span class="sxs-lookup"><span data-stu-id="31115-135">healthyDeviceCount</span></span>|<span data-ttu-id="31115-136">Int32</span><span class="sxs-lookup"><span data-stu-id="31115-136">Int32</span></span>|<span data-ttu-id="31115-137">正常なデバイス数。</span><span class="sxs-lookup"><span data-stu-id="31115-137">Healthy device count.</span></span>|
-|<span data-ttu-id="31115-138">unhealthyDeviceCount</span><span class="sxs-lookup"><span data-stu-id="31115-138">unhealthyDeviceCount</span></span>|<span data-ttu-id="31115-139">Int32</span><span class="sxs-lookup"><span data-stu-id="31115-139">Int32</span></span>|<span data-ttu-id="31115-140">異常なデバイス数。</span><span class="sxs-lookup"><span data-stu-id="31115-140">Unhealthy device count.</span></span>|
-|<span data-ttu-id="31115-141">unknownDeviceCount</span><span class="sxs-lookup"><span data-stu-id="31115-141">unknownDeviceCount</span></span>|<span data-ttu-id="31115-142">Int32</span><span class="sxs-lookup"><span data-stu-id="31115-142">Int32</span></span>|<span data-ttu-id="31115-143">デバイス数が不明です。</span><span class="sxs-lookup"><span data-stu-id="31115-143">Unknown device count.</span></span>|
+|<span data-ttu-id="20e67-132">id</span><span class="sxs-lookup"><span data-stu-id="20e67-132">id</span></span>|<span data-ttu-id="20e67-133">String</span><span class="sxs-lookup"><span data-stu-id="20e67-133">String</span></span>|<span data-ttu-id="20e67-134">Windows management app health summary エンティティのキー。</span><span class="sxs-lookup"><span data-stu-id="20e67-134">Key of the Windows management app health summary entity.</span></span>|
+|<span data-ttu-id="20e67-135">healthyDeviceCount</span><span class="sxs-lookup"><span data-stu-id="20e67-135">healthyDeviceCount</span></span>|<span data-ttu-id="20e67-136">Int32</span><span class="sxs-lookup"><span data-stu-id="20e67-136">Int32</span></span>|<span data-ttu-id="20e67-137">正常なデバイス数。</span><span class="sxs-lookup"><span data-stu-id="20e67-137">Healthy device count.</span></span>|
+|<span data-ttu-id="20e67-138">unhealthyDeviceCount</span><span class="sxs-lookup"><span data-stu-id="20e67-138">unhealthyDeviceCount</span></span>|<span data-ttu-id="20e67-139">Int32</span><span class="sxs-lookup"><span data-stu-id="20e67-139">Int32</span></span>|<span data-ttu-id="20e67-140">異常なデバイス数。</span><span class="sxs-lookup"><span data-stu-id="20e67-140">Unhealthy device count.</span></span>|
+|<span data-ttu-id="20e67-141">unknownDeviceCount</span><span class="sxs-lookup"><span data-stu-id="20e67-141">unknownDeviceCount</span></span>|<span data-ttu-id="20e67-142">Int32</span><span class="sxs-lookup"><span data-stu-id="20e67-142">Int32</span></span>|<span data-ttu-id="20e67-143">デバイス数が不明です。</span><span class="sxs-lookup"><span data-stu-id="20e67-143">Unknown device count.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="31115-144">応答</span><span class="sxs-lookup"><span data-stu-id="31115-144">Response</span></span>
-<span data-ttu-id="31115-145">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="31115-145">If successful, this method returns a `200 OK` response code and an updated [windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="20e67-144">応答</span><span class="sxs-lookup"><span data-stu-id="20e67-144">Response</span></span>
+<span data-ttu-id="20e67-145">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="20e67-145">If successful, this method returns a `200 OK` response code and an updated [windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="31115-146">例</span><span class="sxs-lookup"><span data-stu-id="31115-146">Example</span></span>
+## <a name="example"></a><span data-ttu-id="20e67-146">例</span><span class="sxs-lookup"><span data-stu-id="20e67-146">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="31115-147">要求</span><span class="sxs-lookup"><span data-stu-id="31115-147">Request</span></span>
-<span data-ttu-id="31115-148">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="31115-148">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="20e67-147">要求</span><span class="sxs-lookup"><span data-stu-id="20e67-147">Request</span></span>
+<span data-ttu-id="20e67-148">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="20e67-148">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/windowsManagementApp/healthSummary
 Content-type: application/json
@@ -77,8 +78,8 @@ Content-length: 161
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="31115-149">応答</span><span class="sxs-lookup"><span data-stu-id="31115-149">Response</span></span>
-<span data-ttu-id="31115-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="31115-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="20e67-149">応答</span><span class="sxs-lookup"><span data-stu-id="20e67-149">Response</span></span>
+<span data-ttu-id="20e67-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="20e67-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
