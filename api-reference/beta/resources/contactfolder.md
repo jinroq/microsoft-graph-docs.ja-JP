@@ -4,12 +4,13 @@ description: 連絡先が格納されたフォルダーです。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: fe980bc27aed3579a70c52941b1a784696b553e3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 4a9fe3263bed04252e8eba5129437d0a7c155d42
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341203"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973192"
 ---
 # <a name="contactfolder-resource-type"></a>contactFolder リソース型
 
@@ -26,12 +27,12 @@ ms.locfileid: "33341203"
 |:---------------|:--------|:----------|
 |[contactFolder を取得する](../api/contactfolder-get.md) | [contactFolder](contactfolder.md) |連絡先フォルダー ID を使用して連絡先フォルダーを取得します。|
 |[更新する](../api/contactfolder-update.md) | [contactFolder](contactfolder.md) |contactFolder オブジェクトを更新します。 |
-|[削除](../api/contactfolder-delete.md) | なし |contactFolder オブジェクトを削除します。 |
+|[Delete](../api/contactfolder-delete.md) | None |contactFolder オブジェクトを削除します。 |
 |[childFolders を一覧表示する](../api/contactfolder-list-childfolders.md) |[contactFolder](contactfolder.md) コレクション| 指定した連絡先フォルダーの下の子フォルダーのコレクションを取得します。|
 |[子 contactFolder を作成する](../api/contactfolder-post-childfolders.md) |[contactFolder](contactfolder.md)| 指定したフォルダーの子として新しい contactFolder を作成します。|
 |[delta](../api/contact-delta.md)|[contact](contact.md)コレクション| ユーザーのメールボックスで追加または削除された一連の連絡先フォルダーを取得します。|
 |[フォルダー内の連絡先を一覧表示する](../api/contactfolder-list-contacts.md) |[contact](contact.md) コレクション| サインイン中のユーザーの既定の連絡先フォルダーから連絡先のコレクションを取得する (`.../me/contacts`) か、指定した連絡先フォルダーから取得します。|
-|[フォルダー内に連絡先を作成する](../api/contactfolder-post-contacts.md) |[連絡先](contact.md)| 連絡先をルート連絡先フォルダーまたは別の連絡先フォルダーの `contacts` エンドポイントに追加します。|
+|[フォルダー内に連絡先を作成する](../api/contactfolder-post-contacts.md) |[contact](contact.md)| 連絡先をルート連絡先フォルダーまたは別の連絡先フォルダーの `contacts` エンドポイントに追加します。|
 |**拡張プロパティ**| | |
 |[単一値の拡張プロパティを作成する](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[contactFolder](contactfolder.md)  |新規または既存の contactFolder に、1 つ以上の単一値の拡張プロパティを作成します。   |
 |[単一値の拡張プロパティを持つ contactFolder を取得する](../api/singlevaluelegacyextendedproperty-get.md)  | [contactFolder](contactfolder.md) | `$expand` または `$filter` を使用して、単一値の拡張プロパティを含む contactFolder を取得します。 |

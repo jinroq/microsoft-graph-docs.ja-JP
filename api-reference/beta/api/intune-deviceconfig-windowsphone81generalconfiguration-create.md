@@ -4,12 +4,13 @@ description: 新しい windowsPhone81GeneralConfiguration オブジェクトを�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 49f5b8609bd302f03ef3be697e92c73038604700
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 0485c2ca9618fd671b3855c59a8bb38cbb73a7b9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34961694"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35982187"
 ---
 # <a name="create-windowsphone81generalconfiguration"></a>Create windowsPhone81GeneralConfiguration
 

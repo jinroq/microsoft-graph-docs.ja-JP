@@ -3,12 +3,14 @@ title: schemaExtensions を一覧表示する
 description: '現在のテナントで所有しているすべてのアプリによって作成された schemaExtension オブジェクトの一覧を取得します ( '
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: bb1b73aa3ea706cba5c7481f913cd1b6c13af949
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+ms.openlocfilehash: 5209dfcbf7a31f4b1004f773208635af4373b8de
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35870664"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991584"
 ---
 # <a name="list-schemaextensions"></a>schemaExtensions を一覧表示する
 

@@ -4,12 +4,13 @@ description: 新しい activeDirectoryWindowsAutopilotDeploymentProfile オブ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1ce952d6f84f9666a46820821c071622e096d51e
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 054d4ae2db44e69f9c9718bd488fa4a186e98b8b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34978326"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35981123"
 ---
 # <a name="create-activedirectorywindowsautopilotdeploymentprofile"></a>ActiveDirectoryWindowsAutopilotDeploymentProfile を作成する
 

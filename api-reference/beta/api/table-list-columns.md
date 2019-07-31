@@ -4,12 +4,13 @@ description: tablecolumn オブジェクトのリストを取得します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: b4860e7bc9589074ed3e3fd6f52a5a2d59947bbd
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: e35e2bbab016e8521019726b60b497777bc1c675
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35868929"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35982668"
 ---
 # <a name="list-columns"></a>列を一覧表示する
 

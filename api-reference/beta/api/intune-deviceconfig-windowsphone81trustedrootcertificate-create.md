@@ -4,12 +4,13 @@ description: 新しい windowsPhone81TrustedRootCertificate オブジェクト�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f557888fa8606d93b629dfbc0fdb4945d95782ad
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: ecec43b1d7bb11ea49d1565083ff535e9960342b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34961561"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35982040"
 ---
 # <a name="create-windowsphone81trustedrootcertificate"></a>WindowsPhone81TrustedRootCertificate を作成する
 

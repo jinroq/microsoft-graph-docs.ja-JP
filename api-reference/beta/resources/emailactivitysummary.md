@@ -1,28 +1,29 @@
 ---
-title: emailactivitysummary リソースの種類
+title: emailActivitySummary リソースの種類
 description: リソースの JSON 表記を次に示します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 84958874af09b31aafed694c1a62d080a5c798ce
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 64c9468d79a93b6f82fff0f04206a0fb6e95e4fb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32506672"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972223"
 ---
-# <a name="emailactivitysummary-resource-type"></a>emailactivitysummary リソースの種類
+# <a name="emailactivitysummary-resource-type"></a>emailActivitySummary リソースの種類
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ          | 型   |
 | :---------------- | :----- |
-| reportrefreshdate | Date   |
+| reportRefreshDate | 日付   |
 | 送信              | Int64  |
 | 送信           | Int64  |
 | 読み込む              | Int64  |
-| reportDate        | Date   |
-| reportperiod      | String |
+| reportDate        | 日付   |
+| reportPeriod      | String |
 
 ## <a name="json-representation"></a>JSON 表記
 

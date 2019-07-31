@@ -4,12 +4,13 @@ description: 会議の参加者。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: f6446ec0b896854e2566d4de82acfdb53bee893d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: b88a59b3d9def58217ca3badd833b275760b49c1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342409"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966834"
 ---
 # <a name="meetingparticipants-resource-type"></a>会議参加者リソースの種類
 
@@ -22,7 +23,7 @@ ms.locfileid: "33342409"
 | プロパティ       | 型    | 説明|
 |:---------------|:--------|:----------|
 | attendees | [meetingParticipantInfo](meetingparticipantinfo.md)コレクション |  |
-| organizer | [meetingParticipantInfo](meetingparticipantinfo.md) |  |
+| 構成内容変更 | [meetingParticipantInfo](meetingparticipantinfo.md) |  |
 
 ## <a name="json-representation"></a>JSON 表記
 

@@ -1,22 +1,23 @@
 ---
 author: rahmit
-ms.author: rahmit
+description: SitePage リソースの最新バージョンを発行します。これにより、すべてのユーザーがページのバージョンを使用できるようになります。 ページがチェックアウトされている場合は、ページをチェックインして発行します。 ページがこの API の呼び出し元にチェックアウトされている場合、ページは自動的にチェックインされてから発行されます。
 ms.date: 09/10/2018
 title: ページの発行
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: d9bf699c0038e785a11560ee7326cfb2324345f3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 5f4404b33a54979271750d4074a9c6da235966ea
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335898"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991213"
 ---
 # <a name="sitepage-publish"></a>サイトページ: 発行
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[sitepage][]リソースの最新バージョンを発行します。これにより、すべてのユーザーがページのバージョンを使用できるようになります。 ページがチェックアウトされている場合は、ページをチェックインして発行します。 ページがこの API の呼び出し元にチェックアウトされている場合、ページは自動的にチェックインされてから発行されます。
+[Sitepage][]リソースの最新バージョンを発行します。これにより、すべてのユーザーがページのバージョンを使用できるようになります。 ページがチェックアウトされている場合は、ページをチェックインして発行します。 ページがこの API の呼び出し元にチェックアウトされている場合、ページは自動的にチェックインされてから発行されます。
 
 [sitePage]: ../resources/sitepage.md
 

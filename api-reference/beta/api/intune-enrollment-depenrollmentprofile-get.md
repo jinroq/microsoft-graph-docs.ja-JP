@@ -4,12 +4,13 @@ description: DepEnrollmentProfile オブジェクトのプロパティとリレ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8a57190b8d8dbd16e0e24e507a588d114ce4134f
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 35134f645433e660a2f409eed795ebbc9f3ef923
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34979075"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35985449"
 ---
 # <a name="get-depenrollmentprofile"></a>DepEnrollmentProfile を取得する
 

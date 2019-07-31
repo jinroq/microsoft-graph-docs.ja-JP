@@ -4,12 +4,13 @@ description: mdmWindowsInformationProtectionPolicy オブジェクトのプロ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 365f3cc005fcdb581e1fc72b2c3881159392a07d
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 3ec5027b7edb6ea3c3986a0d4c28ce11ce509f09
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34987482"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35980570"
 ---
 # <a name="list-mdmwindowsinformationprotectionpolicies"></a>mdmWindowsInformationProtectionPolicies のリスト
 

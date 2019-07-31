@@ -4,16 +4,17 @@ description: 複数のワークフローをサポートする Microsoft Graph AP
 localization_priority: Normal
 author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: b94a62e896bda2cf6a39b065df0fd698924a4c21
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: 58e41160bac079b131b1afe462ddb1309e9137b9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33898277"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979646"
 ---
 # <a name="update-mobileapptroubleshootingevent"></a>MobileAppTroubleshootingEvent の更新
 
-> **重要:** Microsoft Graph の/ベータ版の Api は変更される可能性があります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** Microsoft Graph の/ベータ版の Api は変更される可能性があります。 実稼働アプリケーションでは、これらの API の使用はサポートされていません。
 
 > **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
@@ -59,7 +60,7 @@ PATCH /users/{usersId}/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingE
 |applicationId|文字列型 (String)|Intune アプリケーション識別子。|
 |correlationId|String|サービスのエラーをトレースするために使用される ID。 |
 |eventDateTime|DateTimeOffset|イベントが発生した時刻。 |
-|eventName|String|トラブルシューティングイベントに対応するイベント名。 省略可能です。|
+|eventName|String|トラブルシューティングイベントに対応するイベント名。 省略可能。|
 |履歴|[mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)コレクション|Intune モバイルアプリケーションのトラブルシューティングの履歴項目。|
 |managedDeviceIdentifier|String|Intune によって作成または収集されるデバイス識別子。|
 |トラブルシューティングのエラーの詳細|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|エラーとその修復に関する詳細情報を含むオブジェクト。 |

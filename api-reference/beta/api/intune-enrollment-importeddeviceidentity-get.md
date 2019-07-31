@@ -4,12 +4,13 @@ description: ImportedDeviceIdentity オブジェクトのプロパティとリ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9b1280184cadf24080ae363b10a20d7b728ede58
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: be045824452d69f95f8a99a97ed5fd1170308560
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34981910"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35981004"
 ---
 # <a name="get-importeddeviceidentity"></a>ImportedDeviceIdentity を取得する
 

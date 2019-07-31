@@ -5,12 +5,13 @@ title: バンドルリソースの種類
 description: 他のドライブ項目の論理グループであるドライブ項目を記述するファセット
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 596dc8a77ce5b1e580b14e3e5c56c9e985b0dfbf
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+doc_type: resourcePageType
+ms.openlocfilehash: f843afa112f95e391761d0c8804600018a67534c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932877"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974096"
 ---
 # <a name="bundle-resource-type"></a>バンドルリソースの種類
 

@@ -3,12 +3,14 @@ title: schemaExtension の作成
 description: サポートするリソースの種類を拡張するために、schemaExtension 定義を新規作成します。
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: ac9ffdd0a64737c11e2749cb01cb7c99ae0af4de
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+ms.openlocfilehash: 534bc192e8480af3e9dbeb90790e0e59b3758cf5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35870665"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991570"
 ---
 # <a name="create-schemaextension"></a>schemaExtension の作成
 

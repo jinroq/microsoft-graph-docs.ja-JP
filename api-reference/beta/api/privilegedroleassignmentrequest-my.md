@@ -2,12 +2,15 @@
 title: 'privilegedRoleAssignmentRequest: my'
 description: 要求者の特権の役割の割り当て要求を取得します。
 localization_priority: Normal
-ms.openlocfilehash: 669a3bca407e7cd5744a9a7f38031ff02abd48da
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: fceb9405f7efb7f6720ead360cfc07eac7852e42
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35875568"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992039"
 ---
 # <a name="privilegedroleassignmentrequest-my"></a>privilegedRoleAssignmentRequest: my
 

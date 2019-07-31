@@ -2,12 +2,15 @@
 title: ポリシーの更新
 description: 既存のポリシーのプロパティを更新します。
 localization_priority: Normal
-ms.openlocfilehash: 53b7af8966c932598328e8b78e76022ca6db9c8a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 85104248d840478a9595382b54d3eaa7ea7e1e5b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337399"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978862"
 ---
 # <a name="update-policy"></a>ポリシーの更新
 
@@ -42,7 +45,7 @@ PATCH /policies/{id}
 |:---------------|:--------|:----------|
 |definition|String|文字列バージョンの[ポリシー](../resources/policy.md)オブジェクト。|
 |displayName|文字列|ポリシーのカスタム名。|
-|is組織既定|Boolean|このポリシーを既定で適用するかどうかを指定します。|
+|Is組織既定|Boolean|このポリシーを既定で適用するかどうかを指定します。|
 |type|String|ポリシーの種類を指定します。 現在、"TokenLifetimePolicy" である必要があります。|
 
 ## <a name="response"></a>応答

@@ -4,12 +4,13 @@ description: 列全体に関連付けられた範囲オブジェクトを取得�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: c501ac9bc86c85d9cf60a5c617008fd005abc944
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 5a56f2896f6d913b4780f389b2f3df891aa2a595
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35868655"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35990982"
 ---
 # <a name="tablecolumn-range"></a>TableColumn:Range
 

@@ -2,12 +2,15 @@
 title: 'privilegedRoleAssignment: makeEligible'
 description: ロールの割り当てを有効にします。 呼び出し前に役割の割り当てが既に適用されている場合は、何も行われません。 役割の割り当てが永続的で、要求元がターゲットユーザーと異なる場合は、役割の割り当てが対象となり、その役割は対象ユーザーに対して無効になります。 リクエスターが対象ユーザーで、役割がセキュリティ管理者または特権の役割管理者である場合、役割は既定の有効期限を使用してアクティブ化されます。
 localization_priority: Normal
-ms.openlocfilehash: 0cc2b650e90064dd18e66ede1a59c50dc23665e2
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: d44cbbd682a02d5a8d89bbfe148f310c31b0313b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35875697"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992081"
 ---
 # <a name="privilegedroleassignment-makeeligible"></a>privilegedRoleAssignment: makeEligible
 

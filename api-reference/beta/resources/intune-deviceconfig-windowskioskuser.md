@@ -4,12 +4,13 @@ description: キオスク構成のアカウント情報を識別するために�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7d2b8ae31099d670b52eaea7f701988351d56354
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 7b6a2b026897395f4dc90a0c453eeb2f0a40e0ee
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34957627"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35968877"
 ---
 # <a name="windowskioskuser-resource-type"></a>windowsKioskUser リソースの種類
 

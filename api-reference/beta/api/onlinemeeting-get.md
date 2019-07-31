@@ -4,12 +4,13 @@ description: '**OnlineMeeting**オブジェクトのプロパティとリレー�
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1b1c704ad0ebe417c9e5bf6cbf0a5db64e719fab
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: d823d3291e125274c7f2c9ae06be7362ed774701
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35878757"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992690"
 ---
 # <a name="get-online-meeting"></a>オンライン会議を取得する
 

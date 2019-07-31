@@ -4,12 +4,13 @@ description: 音声ルーティンググループでは、複数の参加者の�
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: c5139b9f1f0c56b93848868c0d76ebf3051a148c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: db5f94f9ac500dfeb97c6eb787783e9f749ae507
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328253"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974277"
 ---
 # <a name="audioroutinggroup-resource-type"></a>audioRoutingGroup リソースの種類
 
@@ -23,9 +24,9 @@ ms.locfileid: "33328253"
 
 | メソッド                                                  | 戻り値の型                               | 説明                                  |
 |:--------------------------------------------------------|:------------------------------------------|:---------------------------------------------|
-| [audioRoutingGroup を取得する](../api/audioroutinggroup-get.md)| [audioRoutingGroup](audioroutinggroup.md) | audioRoutingGroup オブジェクトのプロパティとリレーションシップを読み取ります。|
+| [AudioRoutingGroup を取得する](../api/audioroutinggroup-get.md)| [audioRoutingGroup](audioroutinggroup.md) | AudioRoutingGroup オブジェクトのプロパティとリレーションシップを読み取ります。|
 | [Update](../api/audioroutinggroup-update.md)            | [audioRoutingGroup](audioroutinggroup.md) | 受信者の一覧を更新します。                       |
-| [Delete](../api/audioroutinggroup-delete.md)            | なし                                      | オーディオルーティンググループを削除します。              |
+| [Delete](../api/audioroutinggroup-delete.md)            | None                                      | オーディオルーティンググループを削除します。              |
 
 ## <a name="properties"></a>プロパティ
 
@@ -33,7 +34,7 @@ ms.locfileid: "33328253"
 | :----------   | :---------------- | :--------------------------------------------------------------------|
 | id            | string            | 読み取り専用です。 サーバーによって生成されます。                                         |
 | 配信     | collection(string) | 受信側参加者 id のリスト。                                   |
-| routingmode   | string            | ルーティンググループモード。  可能な値は、`oneToOne`、`multicast` です。   |
+| routingMode   | string            | ルーティンググループモード。  可能な値は、`oneToOne`、`multicast` です。   |
 | sources       | collection(string) | ソース参加者 id のリスト。                                      |
 
 > **注:** ルーティングモードは、送信元と受信者に対する制限を決定します。 次のルーティンググループのみがサポートされています。

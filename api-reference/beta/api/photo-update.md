@@ -2,12 +2,15 @@
 title: 写真を更新する
 description: 写真オブジェクトのプロパティを更新します。
 localization_priority: Normal
-ms.openlocfilehash: 0d12b83f7c9436cce14a27ed5f27741b4ac92da3
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: fccd85b7ef3acf72f2f79f639fc8fccacc5dedb8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35876908"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992389"
 ---
 # <a name="update-photo"></a>写真を更新する
 

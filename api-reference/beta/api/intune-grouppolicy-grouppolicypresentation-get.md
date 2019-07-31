@@ -4,12 +4,13 @@ description: GroupPolicyPresentation オブジェクトのプロパティとリ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4ba5d2527be67a7375b56758677dd15e8b88742b
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 53a251d1c8dda2aa50e41d284d3a08b4e6cae44f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34985025"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35989834"
 ---
 # <a name="get-grouppolicypresentation"></a>GroupPolicyPresentation を取得する
 

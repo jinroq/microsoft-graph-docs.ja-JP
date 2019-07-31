@@ -4,12 +4,13 @@ description: リソースアカウントを自動操縦デバイスに割り当�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7421cbc03b43af03a0d94ae5b9311540207e5d7b
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: b9a443b477a54718867f923e3857ca1780e8cdb7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34982848"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35990576"
 ---
 # <a name="assignresourceaccounttodevice-action"></a>assignResourceAccountToDevice アクション
 

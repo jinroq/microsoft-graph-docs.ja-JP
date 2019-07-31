@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: listItemVersion リソースは、ListItem リソースの旧バージョンを表しています。
 ms.date: 09/17/2017
 title: ListItemVersion
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 56413ad243e5c6c2c2a7ae3a81dab50586f42db8
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: ff3fbd3144a62939f9d4f6077c556c9d5884c687
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345243"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966964"
 ---
 # <a name="listitemversion-resource-type"></a>ListItemVersion リソースの種類
 
@@ -24,7 +25,7 @@ listItemVersion リソースで使用可能なタスクを次に示します。
 
 |            共通タスク             |         HTTP メソッド         |
 | :--------------------------------- | :-------------------------- |
-| [バージョンの一覧表示][version-list]      | `GET /sites/{site-id}/items/{item-id}/versions`  |
+| [バージョンを一覧表示する][version-list]      | `GET /sites/{site-id}/items/{item-id}/versions`  |
 | [バージョンの取得][version-get]         | `GET /sites/{site-id}/items/versions/{version-id}`     |
 | [バージョンの復元][version-restore] | `POST /sites/{site-id}/items/versions/{version-id}/restore` |
 

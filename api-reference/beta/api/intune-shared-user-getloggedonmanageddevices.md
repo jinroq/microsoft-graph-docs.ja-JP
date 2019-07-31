@@ -4,16 +4,17 @@ description: まだ文書化されていません
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: d8e53199a02b3f28ed8826cd1555f2386276fcfa
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: db9db9ebdd30d80761d8bdfdd6064109bf6d9339
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33898403"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979667"
 ---
 # <a name="getloggedonmanageddevices-function"></a>getLoggedOnManagedDevices 関数
 
-> **重要:** Microsoft Graph の/ベータ版の Api は変更される可能性があります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** Microsoft Graph の/ベータ版の Api は変更される可能性があります。 実稼働アプリケーションでは、これらの API の使用はサポートされていません。
 
 > **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 

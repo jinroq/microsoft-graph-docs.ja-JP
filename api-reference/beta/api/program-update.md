@@ -2,12 +2,15 @@
 title: プログラムの更新
 description: Azure AD access レビュー機能で、既存のプログラムオブジェクトを更新します。
 localization_priority: Normal
-ms.openlocfilehash: b2918f59033d26372dd7ec8010c7ef2e90a65934
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 26f85f664c1d40bffff4be3e77ae421342b4cff5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35875368"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992025"
 ---
 # <a name="update-program"></a>プログラムの更新
 

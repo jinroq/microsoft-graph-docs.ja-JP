@@ -4,12 +4,13 @@ description: 新しい windows81TrustedRootCertificate オブジェクトを作�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b8c975efdc65ffaff3dd048b871449b531930274
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: f3c38ff8695eff9b194f51dfb74580b1a845eea2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34962191"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974928"
 ---
 # <a name="create-windows81trustedrootcertificate"></a>Windows81TrustedRootCertificate を作成する
 

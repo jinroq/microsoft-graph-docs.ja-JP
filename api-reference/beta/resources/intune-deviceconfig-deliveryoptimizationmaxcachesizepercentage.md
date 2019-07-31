@@ -4,12 +4,13 @@ description: 配信の最適化最大キャッシュサイズの割合の種類�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3f80634e421b7106bee5f9a1b369e22c3b4e6155
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: adc27f85a4b02adbf5a8a589fd2bd07db0622978
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34979579"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35970725"
 ---
 # <a name="deliveryoptimizationmaxcachesizepercentage-resource-type"></a>deliveryOptimizationMaxCacheSizePercentage リソースの種類
 

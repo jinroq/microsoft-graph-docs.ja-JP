@@ -4,12 +4,13 @@ description: 特定の outlookTaskGroup 内の Outlook タスクフォルダー�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: ea26b67bc356cad55c8609a61a9b427d1f4e04e6
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 1199877d1efa15a994e6ded5c5ac8e98c7c1d594
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35877492"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992515"
 ---
 # <a name="list-taskfolders"></a>TaskFolders を一覧表示する
 

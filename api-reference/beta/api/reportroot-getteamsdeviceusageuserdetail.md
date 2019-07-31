@@ -4,12 +4,13 @@ description: ユーザーごとに、Microsoft Teams デバイスの使用状況
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: f0606b14c23063e3784818529b7a5f7e47d05cdb
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 57507740113047f4bd40a47cc7ce3316142eaed0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35871776"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991808"
 ---
 # <a name="reportroot-getteamsdeviceusageuserdetail"></a>reportRoot: getTeamsDeviceUsageUserDetail
 

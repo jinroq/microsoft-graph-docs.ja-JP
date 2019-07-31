@@ -4,12 +4,13 @@ description: 新しい groupPolicyPresentationCheckBox オブジェクトを作�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 81f8206f93b850d0ba6c274e132d0839e13266ab
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 06532deef6a8f89ae00f4cb2e35bd97f53eb1b5d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34985137"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35989841"
 ---
 # <a name="create-grouppolicypresentationcheckbox"></a>GroupPolicyPresentationCheckBox の作成
 

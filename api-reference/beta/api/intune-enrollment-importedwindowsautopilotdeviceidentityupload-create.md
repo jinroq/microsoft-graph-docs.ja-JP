@@ -1,24 +1,24 @@
 ---
-title: GroupPolicyConfiguration の作成
-description: 新しい groupPolicyConfiguration オブジェクトを作成します。
+title: ImportedWindowsAutopilotDeviceIdentityUpload を作成する
+description: 新しい importedWindowsAutopilotDeviceIdentityUpload オブジェクトを作成します。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fdd22a4ecad1291fc16b493109bf1499bad96dde
+ms.openlocfilehash: bc8be9c3f4562d93977448549d671f8c603adb7f
 ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/31/2019
-ms.locfileid: "35990065"
+ms.locfileid: "35985575"
 ---
-# <a name="create-grouppolicyconfiguration"></a>GroupPolicyConfiguration の作成
+# <a name="create-importedwindowsautopilotdeviceidentityupload"></a>ImportedWindowsAutopilotDeviceIdentityUpload を作成する
 
 > **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
 > **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-新しい[Grouppolicyconfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md)オブジェクトを作成します。
+新しい[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)オブジェクトを作成します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -35,7 +35,7 @@ ms.locfileid: "35990065"
 }
 -->
 ``` http
-POST /deviceManagement/groupPolicyConfigurations
+POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
@@ -45,36 +45,34 @@ POST /deviceManagement/groupPolicyConfigurations
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求本文で、groupPolicyConfiguration オブジェクトの JSON 表記を指定します。
+要求本文で、importedWindowsAutopilotDeviceIdentityUpload オブジェクトの JSON 表記を指定します。
 
-次の表に、groupPolicyConfiguration の作成時に必要なプロパティを示します。
+次の表に、importedWindowsAutopilotDeviceIdentityUpload の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|オブジェクトが作成された日付と時刻。|
-|displayName|String|ユーザーが指定した resource オブジェクトの名前。|
-|description|String|ユーザーが指定した resource オブジェクトの説明。|
-|id|文字列|エンティティのキー。|
-|lastModifiedDateTime|DateTimeOffset|エンティティが最後に変更された日付と時刻。|
+|id|String|オブジェクトの GUID|
+|createdDateTimeUtc|DateTimeOffset|エンティティが作成された日時。|
+|status|[importedWindowsAutopilotDeviceIdentityUploadStatus](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md)|アップロードの状態。 可能な値は、`noUpload`、`pending`、`complete`、`error` です。|
 
 
 
 ## <a name="response"></a>応答
-成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[grouppolicyconfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md)オブジェクトを返します。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfigurations
+POST https://graph.microsoft.com/beta/deviceManagement/importedWindowsAutopilotDeviceIdentityUploads
 Content-type: application/json
-Content-length: 145
+Content-length: 172
 
 {
-  "@odata.type": "#microsoft.graph.groupPolicyConfiguration",
-  "displayName": "Display Name value",
-  "description": "Description value"
+  "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentityUpload",
+  "createdDateTimeUtc": "2016-12-31T23:59:45.8788427-08:00",
+  "status": "pending"
 }
 ```
 
@@ -83,15 +81,13 @@ Content-length: 145
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 317
+Content-Length: 221
 
 {
-  "@odata.type": "#microsoft.graph.groupPolicyConfiguration",
-  "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
-  "displayName": "Display Name value",
-  "description": "Description value",
-  "id": "27b935ec-35ec-27b9-ec35-b927ec35b927",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
+  "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentityUpload",
+  "id": "8d639524-9524-8d63-2495-638d2495638d",
+  "createdDateTimeUtc": "2016-12-31T23:59:45.8788427-08:00",
+  "status": "pending"
 }
 ```
 

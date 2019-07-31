@@ -4,12 +4,13 @@ description: mailFolder とその内容を別の mailFolder にコピーしま�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: c4e4429cb8cbd0b16142b4008952270248d583bf
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 4acf4d1a25b9652088701d6d92c2441be4f04d21
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35880171"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993047"
 ---
 # <a name="mailfolder-copy"></a>mailFolder: コピー
 

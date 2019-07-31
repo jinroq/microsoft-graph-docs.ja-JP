@@ -4,16 +4,17 @@ description: 対象ユーザーの管理からすべてのデバイスを破棄�
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 83fbe8bc730c8519f2f0bcb0fb1da89dbce0f0c6
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: dd2fd7e9794e816e40c6f844e24110e1ef1bcdaf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33898109"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993495"
 ---
 # <a name="removealldevicesfrommanagement-action"></a>removeAllDevicesFromManagement アクション
 
-> **重要:** Microsoft Graph の/ベータ版の Api は変更される可能性があります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** Microsoft Graph の/ベータ版の Api は変更される可能性があります。 実稼働アプリケーションでは、これらの API の使用はサポートされていません。
 
 > **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 

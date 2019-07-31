@@ -3,12 +3,14 @@ title: 通知を作成し送信する
 description: 'Microsoft Graph を使用してユーザーを対象にした通知を作成し、送信します。 通知は Microsoft Graph 通知フィードストアに格納され、ユーザーがサインインしているすべてのデバイスエンドポイント上のすべてのアプリクライアントに送信されます。  '
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 86e67d040dcae3a013d8848c638ffadca41e4f5f
-ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
+doc_type: apiPageType
+author: ''
+ms.openlocfilehash: a5ed743e93a5cafcb7ee919acbbcee5f2734a5de
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34063457"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992648"
 ---
 # <a name="create-and-send-a-notification"></a>通知を作成し送信する
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -30,7 +32,7 @@ Microsoft Graph を使用してユーザーを対象にした通知を作成し�
 POST /me/notifications/
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-|名前 | 種類 | 説明|
+|名前 | 型 | 説明|
 |:----|:-----|:-----------|
 |Authorization | string |認証ヘッダーは、呼び出し元の資格情報を渡すために使用されます。 ベアラー {token}。 必須です。 |
 ## <a name="request-body"></a>要求本文
