@@ -2,14 +2,15 @@
 title: mailFolders を一覧表示する　
 description: サインインしているユーザーのメールボックス内のすべてのメールフォルダーを取得します。
 localization_priority: Normal
+doc_type: apiPageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: c006e1f4b8714c332b9a1d3144c660784fda11f5
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: ecffc08e39b21afff4818d25a98a6fc1d2156c43
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35867241"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987628"
 ---
 # <a name="list-mailfolders"></a>mailFolders を一覧表示する　
 

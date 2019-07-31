@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: aeda0ca136c178355a8a8f9589eb7410399ef62a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 09c1c51fed961489d824136f28aaa2f5b3859b44
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507232"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972895"
 ---
 # <a name="taxareas-resource-type"></a>taxAreas リソースの種類
 Dynamics 365 Business Central の税エリアリソースの種類を表します。
@@ -19,10 +20,10 @@ Dynamics 365 Business Central の税エリアリソースの種類を表しま�
 ## <a name="methods"></a>メソッド
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
-|[taxAreas を取得する](../api/dynamics-taxarea-get.md)|taxAreas|税エリアオブジェクトを取得します。|
-|[Post taxAreas](../api/dynamics-create-taxarea.md)|taxAreas|tax area オブジェクトを作成します。|
-|[Patch taxAreas](../api/dynamics-taxarea-update.md)|taxAreas|tax area オブジェクトを更新します。|
-|[taxAreas の削除](../api/dynamics-taxarea-delete.md)|なし|tax area オブジェクトを削除します。|
+|[TaxAreas を取得する](../api/dynamics-taxarea-get.md)|taxAreas|税エリアオブジェクトを取得します。|
+|[Post taxAreas](../api/dynamics-create-taxarea.md)|taxAreas|Tax area オブジェクトを作成します。|
+|[Patch taxAreas](../api/dynamics-taxarea-update.md)|taxAreas|Tax area オブジェクトを更新します。|
+|[TaxAreas の削除](../api/dynamics-taxarea-delete.md)|none|Tax area オブジェクトを削除します。|
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|

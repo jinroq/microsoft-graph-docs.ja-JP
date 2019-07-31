@@ -2,12 +2,15 @@
 title: 'servicePrincipal: getMemberGroups'
 description: このサービスプリンシパルがメンバーになっているグループの一覧を取得します。  チェックは推移的です。
 localization_priority: Normal
-ms.openlocfilehash: 5bf175e73a68857e04dbb0ca4da51176a969acbe
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: a8214cff24f86805b4454f1b8ef9c51025366a93
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35870139"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991458"
 ---
 # <a name="serviceprincipal-getmembergroups"></a>servicePrincipal: getMemberGroups
 

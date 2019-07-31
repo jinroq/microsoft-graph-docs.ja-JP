@@ -4,12 +4,13 @@ description: WindowsPhone81TrustedRootCertificate オブジェクトのプロパ
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a9cf64c8bd6ba85e31ec7fbb85b77b63f2394adc
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 3ea01f330ef14efbd43a5ce7c0d66a4e71fad307
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34961533"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35986513"
 ---
 # <a name="update-windowsphone81trustedrootcertificate"></a>WindowsPhone81TrustedRootCertificate の更新
 

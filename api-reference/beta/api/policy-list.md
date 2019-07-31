@@ -2,12 +2,15 @@
 title: リストポリシー
 description: ディレクトリ内のすべてのポリシーオブジェクトを取得します。
 localization_priority: Normal
-ms.openlocfilehash: 7f4b70391b68a47073866248c31395df4ebaaf45
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: d7ab2de4944019eff936554cc4da2e0dc15166c2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337387"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35983454"
 ---
 # <a name="list-policies"></a>リストポリシー
 

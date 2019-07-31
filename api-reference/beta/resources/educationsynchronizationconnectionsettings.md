@@ -1,21 +1,22 @@
 ---
 title: educationSynchronizationConnectionSettings リソースの種類
-description: 'プロバイダー接続の設定を表します。 これにより、システムはプロバイダ api への接続方法を知ることができます。 '
+description: 'プロバイダー接続の設定を表します。 これにより、システムはプロバイダ Api への接続方法を知ることができます。 '
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 387c002240d54d1ec12e58564e91831d6f0e8a50
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: c82d912b13ca68dcdccd5ace0232ed65f92cd879
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334115"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972490"
 ---
 # <a name="educationsynchronizationconnectionsettings-resource-type"></a>educationSynchronizationConnectionSettings リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-プロバイダー接続の設定を表します。 これにより、システムはプロバイダ api への接続方法を知ることができます。 
+プロバイダー接続の設定を表します。 これにより、システムはプロバイダ Api への接続方法を知ることができます。 
 
 > **注:** この複合型は抽象型です。 一覧にある特定の種類の接続設定を参照してください。
 

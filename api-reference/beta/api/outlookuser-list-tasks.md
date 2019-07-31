@@ -4,12 +4,13 @@ description: ユーザーのメールボックス内のすべての Outlook タ�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 5bdb0c23fb74c5a8ada8e228a0b3f6a1554aa308
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 71164356bc4648d088e480215eda41d3177223c9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35877408"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992501"
 ---
 # <a name="list-tasks"></a>タスクを一覧表示する
 

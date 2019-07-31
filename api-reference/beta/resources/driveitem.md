@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: driveItem リソースは、ドライブに格納されているファイル、フォルダーなどのアイテムを表します。
 ms.date: 09/10/2017
 title: DriveItem
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: a7a921bafda04497ff97c7c28bdb9f21d4b3d15f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 93c73fa61c871afce4ce4c7ed00e3c1ef554ca79
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340696"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972972"
 ---
 # <a name="driveitem-resource-type"></a>driveItem リソース型
 
@@ -114,12 +115,12 @@ ms.locfileid: "33340696"
 | file                 | [file][]           | ファイルのメタデータ (アイテムがファイルである場合)。読み取り専用です。
 | fileSystemInfo       | [fileSystemInfo][] | クライアント上のファイル システム情報。読み取り/書き込み。
 | folder               | [フォルダー][]         | フォルダーのメタデータ (アイテムがフォルダーである場合)。読み取り専用です。
-| id                   | String             | ドライブ内のアイテムの一意識別子。読み取り専用です。
+| id                   | 文字列             | ドライブ内のアイテムの一意識別子。読み取り専用です。
 | image                | [image][]          | 画像のメタデータ (アイテムが画像である場合)。読み取り専用です。
 | lastModifiedBy       | [identitySet][]    | アイテムを最終更新したユーザーの ID、デバイス、アプリケーション。読み取り専用です。
 | lastModifiedDateTime | DateTimeOffset     | アイテムが最後に変更された日時。読み取り専用です。
 | location             | [geoCoordinates][] | 場所のメタデータ (アイテムに場所データが含まれている場合)。読み取り専用です。
-| name                 | String             | アイテムの名前 (ファイル名と拡張子)。読み取り/書き込み。
+| name                 | 文字列             | アイテムの名前 (ファイル名と拡張子)。読み取り/書き込み。
 | package              | [package][]        | これがある場合、アイテムはフォルダーやファイルではなく、パッケージです。パッケージは、コンテキスト次第で、ファイルとして、あるいはフォルダーとして扱われます。読み取り専用です。
 | parentReference      | [itemReference][]  | 親の情報 (アイテムに親がある場合)。読み取り/書き込み。
 | 写真                | [photo][]          | 写真のメタデータ (アイテムが写真である場合)。読み取り専用です。
@@ -142,7 +143,7 @@ ms.locfileid: "33340696"
 | リレーションシップ       | 型                        | 説明
 |:-------------------|:----------------------------|:--------------------------
 | アクティビティ         | [itemActivity][] コレクション | このアイテムに対して行われた最近のアクティビティのリストです。
-| analytics          | [itemAnalytics][] リソース  | このアイテムに対して行われたビューアクティビティに関する分析。
+| 分析          | [itemAnalytics][] リソース  | このアイテムについて行われたビュー アクティビティに関する分析。
 | children           | driveItem コレクション        | アイテムの直接の子のアイテム オブジェクトを格納するコレクション。子が含まれるのは、フォルダーを表すアイテムのみです。読み取り専用です。Null 許容型。
 | createdByUser      | [user][]                    | アイテムを作成したユーザーの ID です。 読み取り専用です。
 | lastModifiedByUser | [user][]                    | アイテムを最後に変更したユーザーの ID です。 読み取り専用です。

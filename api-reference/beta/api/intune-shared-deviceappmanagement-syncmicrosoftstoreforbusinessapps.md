@@ -4,16 +4,17 @@ description: ビジネス向け Microsoft Store と Intune アカウントを同
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: cb26c120a643fc8c1b8c03d3d8367eeb4b53315d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: 4071e90884edde1d1d3d6ad3740d736d2acedfd8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33898596"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993691"
 ---
 # <a name="syncmicrosoftstoreforbusinessapps-action"></a>syncMicrosoftStoreForBusinessApps アクション
 
-> **重要:** Microsoft Graph の/ベータ版の Api は変更される可能性があります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** Microsoft Graph の/ベータ版の Api は変更される可能性があります。 実稼働アプリケーションでは、これらの API の使用はサポートされていません。
 
 > **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 

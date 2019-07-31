@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: DriveItemVersion リソースは、DriveItem の特定のバージョンを表しています。
 ms.date: 09/17/2017
 title: DriveItemVersion
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 2f8b846652f930bd7d9337c0accc0ccbe7a60d1a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: e3886c27ded6b26082609933d5ac7382dc182b45
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334570"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973092"
 ---
 # <a name="driveitemversion-resource-type"></a>DriveItemVersion リソースの種類
 
@@ -25,7 +26,7 @@ driveItemVersion リソースで使用可能なタスクを次に示します。
 
 |            共通タスク             |         HTTP メソッド         |
 | :--------------------------------- | :-------------------------- |
-| [バージョンの一覧表示][version-list]      | `GET /drive/items/{item-id}/versions`  |
+| [バージョンを一覧表示する][version-list]      | `GET /drive/items/{item-id}/versions`  |
 | [バージョンの取得][version-get]         | `GET /drive/items/{item-id}/versions/{version-id}`     |
 | [コンテンツの取得][content-get]        | `GET /drive/items/{item-id}/versions/{version-id}/content` |
 | [バージョンの復元][version-restore] | `POST /drive/items/{item-id}/versions/{version-id}/restoreversion` |

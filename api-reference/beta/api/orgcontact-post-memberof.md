@@ -4,12 +4,13 @@ description: この API を使用して、新しい memberOf を作成します�
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 07fc249adc19fc02db0005fb2d56ebda6c161728
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: 353cf9b076b97ae1f6a93426d395f478d58d2d8c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35445318"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35988798"
 ---
 # <a name="create-memberof"></a>MemberOf の作成
 

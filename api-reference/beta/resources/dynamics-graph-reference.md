@@ -6,23 +6,24 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: ee67d28a90732bdc1d804da41994de32bf0a7f4f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.openlocfilehash: 5173bdba342b6774ffc931ae0b769b1d1228894d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543080"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972937"
 ---
 # <a name="working-with-the-dynamics-365-business-central-api-in-microsoft-graph"></a>Microsoft Graph で Dynamics 365 Business Central API を使用する
-microsoft Graph を使用して、microsoft Dynamics 365 Business Central と web サービスまたは SaaS ソリューションとの接続と統合を行うことができます。 microsoft Graph を使用すると、microsoft Dynamics 365 Business Central data へのアクセスを許可し、シームレスに統合するアプリを作成できます。
+Microsoft Graph を使用して、Microsoft Dynamics 365 Business Central と web サービスまたは SaaS ソリューションとの接続と統合を行うことができます。 Microsoft Graph を使用すると、Microsoft Dynamics 365 Business Central data へのアクセスを許可し、シームレスに統合するアプリを作成できます。
 
 ## <a name="authorization"></a>Authorization
-Azure AD v2.0 エンドポイントを使用して、Dynamics 365 Business Central api を認証します。 すべての api に`Authorization: Bearer {access-token}`は、要求ヘッダーが必要です。 承認の詳細については、「 [Microsoft Graph を呼び出せるようにアクセストークンを取得する](https://developer.microsoft.com/graph/docs/concepts/auth_overview)」を参照してください。
+Azure AD v2.0 エンドポイントを使用して、Dynamics 365 Business Central Api を認証します。 すべての Api に`Authorization: Bearer {access-token}`は、要求ヘッダーが必要です。 承認の詳細については、「 [Microsoft Graph を呼び出せるようにアクセストークンを取得する](https://developer.microsoft.com/graph/docs/concepts/auth_overview)」を参照してください。
 
 ## <a name="common-dynamics-365-business-central-scenarios"></a>一般的な Dynamics 365 ビジネス中央シナリオ
 Dynamics 365 Business Central API を使用すると、1つのエンドポイントを介して接続および統合されたアプリを使用して、ビジネスデータの読み取りと変更を行うことができます。 たとえば、API を使用して[顧客](../resources/dynamics-customer.md)や[ベンダー](../resources/dynamics-vendor.md)の情報にアクセスしたり、[支払いの延滞を表示](../resources/dynamics-agedaccountspayable.md)したりします。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 Dynamics 365 Business Central API は、ユーザーと連携するための新しい方法を開くことができます。 詳細については、次のトピックを参照してください。
 
 + [Dynamics 365 Business Central の概要](/graph/dynamics-business-central-concept-overview)

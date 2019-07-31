@@ -4,12 +4,13 @@ description: 複数の要求ではなく1つの要求で複数の脅威インテ
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 16b71829cb7653216206310c5192c56330d9e60d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: cdc1f1f6bb0d467afd86c653d147cf3c7bed8a62
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35868250"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987923"
 ---
 # <a name="tiindicator-deletetiindicatorsbyexternalid"></a>tiIndicator: deleteTiIndicatorsByExternalId
 

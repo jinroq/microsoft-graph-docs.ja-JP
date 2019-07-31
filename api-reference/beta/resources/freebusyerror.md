@@ -2,12 +2,15 @@
 title: freeBusyError リソースの種類
 description: ユーザー、配布リスト、またはリソースの空き時間情報を取得しようとしたときに発生したエラー情報を表します。
 localization_priority: Normal
-ms.openlocfilehash: cb83c99cf52a562bc10244143785313fe3a6c149
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 82350bc8cfeece76e0cd5c6873810988194cfb01
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340177"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35971964"
 ---
 # <a name="freebusyerror-resource-type"></a>freeBusyError リソースの種類
 

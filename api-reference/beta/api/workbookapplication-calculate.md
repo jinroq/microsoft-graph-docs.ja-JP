@@ -4,12 +4,13 @@ description: Excel で現在開いているすべてのブックを再計算し�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: e5514d72c9cf59c4e909adda43f525329d570c26
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 5a80666d13a1783d1f7deabd6b74f89fcae7e928
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35866479"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987391"
 ---
 # <a name="workbookapplication-calculate"></a>workbookApplication: 計算
 

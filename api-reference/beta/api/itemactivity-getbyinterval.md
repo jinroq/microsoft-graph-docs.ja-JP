@@ -1,27 +1,29 @@
 ---
 author: daspek
-ms.author: dspektor
+description: このリソースの下で、指定された期間内に行われたアクティビティの itemActivityStats を取得します。
 ms.date: 10/06/2017
 title: 間隔ごとにアイテムアクティビティの統計情報を取得する
 localization_priority: Normal
-ms.openlocfilehash: 3a05488aefbb01ab147dfff1da0e8d432259b248
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+ms.openlocfilehash: 6d1f7a3b4e6a326f107a0d0ff33db59ed73f2794
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333548"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979107"
 ---
 # <a name="get-item-activity-stats-by-interval"></a>間隔ごとにアイテムアクティビティの統計情報を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-このリソースの下で、指定された期間内に行われたアクティビティの[itemactivitystats][]を取得します。
+このリソースの下で、指定された期間内に行われたアクティビティの[Itemactivitystats][]を取得します。
 
->**注:****itemanalytics**リソースは、すべての[国内展開](/graph/deployments)でまだ使用できません。
+>**注:****Itemanalytics**リソースは、すべての[国内展開](/graph/deployments)でまだ使用できません。
 
 分析集約は、すべてのアクションの種類では使用できない場合があります。
 
-[itemactivitystats]: ../resources/itemactivitystat.md
+[itemActivityStats]: ../resources/itemactivitystat.md
 
 ## <a name="permissions"></a>アクセス許可
 

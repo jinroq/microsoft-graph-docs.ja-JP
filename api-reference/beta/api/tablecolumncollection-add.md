@@ -4,12 +4,13 @@ description: テーブルに新しい列を追加します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: b26ab8176931b2c7dd6a5890517fdd1a6e72caa7
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 7d1604573d66a6a7d36831fe8340c6e3cc7cd3a6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35868593"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35982516"
 ---
 # <a name="tablecolumncollection-add"></a>TableColumnCollection: 追加
 

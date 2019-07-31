@@ -1,26 +1,29 @@
 ---
-title: privilegedapproval の更新
-description: privilegedapproval オブジェクトのプロパティを更新します。
+title: Privilegedapproval の更新
+description: Privilegedapproval オブジェクトのプロパティを更新します。
 localization_priority: Normal
-ms.openlocfilehash: 240036a9ee4df57745ca1a613511b2141eec6796
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 6103e01ea9832bd7858215576eaeb4319514d6be
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33332082"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978806"
 ---
-# <a name="update-privilegedapproval"></a>privilegedapproval の更新
+# <a name="update-privilegedapproval"></a>Privilegedapproval の更新
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-privilegedapproval オブジェクトのプロパティを更新します。
+Privilegedapproval オブジェクトのプロパティを更新します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | PrivilegedAccess、AzureAD、および directory.accessasuser.all。    |
+|委任 (職場または学校のアカウント) | PrivilegedAccess、AzureAD、および Directory.accessasuser.all。    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
 |アプリケーション | サポートされていません。 |
 
@@ -39,10 +42,10 @@ PATCH /privilegedApproval/<id>
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|approvalduration|期間||
-|approvalstate|string| 可能な値は、`pending`、`approved`、`denied`、`aborted`、`canceled` です。|
+|approvalDuration|期間||
+|approvalState|string| 可能な値は、`pending`、`approved`、`denied`、`aborted`、`canceled` です。|
 |approvalType|String||
-|approverreason|String||
+|approverReason|String||
 |endDateTime|DateTimeOffset||
 |requestorReason|String||
 |roleId|String||

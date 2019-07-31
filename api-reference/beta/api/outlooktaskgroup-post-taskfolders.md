@@ -1,21 +1,22 @@
 ---
-title: outlooktaskfolder の作成
-description: 指定した outlooktaskgroup の下に Outlook のタスクフォルダーを作成します。
+title: OutlookTaskFolder の作成
+description: 指定した outlookTaskGroup の下に Outlook のタスクフォルダーを作成します。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 59f6b6b2d12a68ded2cd22c8f859686f7b2fef20
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 6290b055322c1264117e7aae75573774b4831e72
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337932"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35983699"
 ---
-# <a name="create-outlooktaskfolder"></a>outlooktaskfolder の作成
+# <a name="create-outlooktaskfolder"></a>OutlookTaskFolder の作成
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指定した[outlooktaskgroup](../resources/outlooktaskgroup.md)の下に Outlook のタスクフォルダーを作成します。
+指定した[Outlooktaskgroup](../resources/outlooktaskgroup.md)の下に Outlook のタスクフォルダーを作成します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -37,7 +38,7 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders
 | Authorization  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
-要求本文で、 [outlooktaskfolder](../resources/outlooktaskfolder.md)オブジェクトの JSON 表記を指定します。
+要求本文で、 [Outlooktaskfolder](../resources/outlooktaskfolder.md)オブジェクトの JSON 表記を指定します。
 
 ## <a name="response"></a>応答
 
@@ -59,7 +60,7 @@ Content-length: 131
   "name": "Cooking"
 }
 ```
-要求本文で、 [outlooktaskfolder](../resources/outlooktaskfolder.md)オブジェクトの JSON 表記を指定します。
+要求本文で、 [Outlooktaskfolder](../resources/outlooktaskfolder.md)オブジェクトの JSON 表記を指定します。
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {

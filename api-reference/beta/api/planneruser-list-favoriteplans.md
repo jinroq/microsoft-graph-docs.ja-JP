@@ -4,12 +4,13 @@ description: ユーザーによってお気に入りとしてマークされて�
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
-ms.openlocfilehash: 0e0ee8a174611f44b8fb5af9d45570694a4c9db8
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 41011d78af23562464f0eb5678ac2e5e26633f48
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35876187"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992249"
 ---
 # <a name="list-favoriteplans"></a>お気に入りのプランを一覧表示する
 

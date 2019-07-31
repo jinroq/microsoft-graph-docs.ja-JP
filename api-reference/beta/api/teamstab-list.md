@@ -4,12 +4,13 @@ description: 'チーム内の指定されたチャネルのタブのリストを
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: d9566462439d760e3331037afeae2c4c7b04b060
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: a5521b0f450dc8c05f886a83dcf554f6f3315f68
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33330173"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987944"
 ---
 # <a name="list-tabs-in-channel"></a>チャネル内のリストタブ
 
@@ -58,7 +59,7 @@ GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs?$expand=teams
 
 #### <a name="response"></a>応答
 応答の例を次に示します。
->**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
+>**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 ```http
 HTTP/1.1 200 Success
 Content-type: application/json
