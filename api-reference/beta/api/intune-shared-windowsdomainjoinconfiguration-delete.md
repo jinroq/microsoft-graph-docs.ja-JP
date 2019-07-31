@@ -4,16 +4,17 @@ description: WindowsDomainJoinConfiguration を削除します。
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: e1ed4774bf522ca820880f6a5e07e4bf87ed1f07
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: af184a56a2391e8fb76cfa61ece292a9fa8af2f2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33897850"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979527"
 ---
 # <a name="delete-windowsdomainjoinconfiguration"></a>WindowsDomainJoinConfiguration の削除
 
-> **重要:** Microsoft Graph の/ベータ版の Api は変更される可能性があります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** Microsoft Graph の/ベータ版の Api は変更される可能性があります。 実稼働アプリケーションでは、これらの API の使用はサポートされていません。
 
 > **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 

@@ -4,12 +4,13 @@ description: チームのコピーを作成します。 この操作では、対
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 7a78312d755befccff6e4b12cc0ba432e4754317
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 892a6de6dd191b43fe139acf7f8340fd14c8da5a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33330594"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35990849"
 ---
 # <a name="clone-a-team"></a>チームのクローンを作成する
 
@@ -57,10 +58,10 @@ POST /teams/{id}/clone
 |:---------------|:--------|:----------|
 |classification|String (省略可能)|グループの分類 (低、中、高のビジネスへの影響など) を記述します。 このプロパティの有効な値は、[テンプレート定義](../resources/directorysettingtemplate.md)に基づいて ClassificationList[設定](../resources/directorysetting.md)値を作成することによって定義されます。 分類が指定されていない場合は、元のチーム/グループから分類がコピーされます。|
 |description|String (省略可能)|グループに関するオプションの説明。 このプロパティが指定されていない場合は、空白のままになります。|
-|displayName|文字列|グループの表示名。このプロパティは、グループの作成時の必須プロパティであり、更新時にクリアすることはできません。$filter および $orderby をサポートします。|
+|displayName|String|グループの表示名。このプロパティは、グループの作成時の必須プロパティであり、更新時にクリアすることはできません。$filter および $orderby をサポートします。|
 |mailNickname|String|グループのメール エイリアスです (組織内で一意)。 このプロパティは、グループの作成時に指定する必要があります。 $filter をサポートします。 このプロパティが指定されていない場合は、displayName から計算されます。 既知の問題: このプロパティは現在無視されています。|
-|partstoclone| [clonableTeamParts](../resources/clonableteamparts.md) |クローンするパーツのコンマ区切りのリスト。 法的パーツとは、「アプリ、タブ、設定、チャネル、メンバー」のことです。|
-|visibility|[teamVisibilityType](../resources/teamvisibilitytype.md)オプション| グループを表示するかどうかを指定します。 可能な値は、 **Private**、 **Public**です。 visibility が指定されていない場合、表示は元のチーム/グループからコピーされます。 複製対象のチームが**educationClass**チームの場合、visibility パラメーターは無視され、新しいグループの表示が HiddenMembership に設定されます。|
+|partsToClone| [clonableTeamParts](../resources/clonableteamparts.md) |クローンするパーツのコンマ区切りのリスト。 法的パーツとは、「アプリ、タブ、設定、チャネル、メンバー」のことです。|
+|visibility|[teamVisibilityType](../resources/teamvisibilitytype.md)オプション| グループを表示するかどうかを指定します。 可能な値は、 **Private**、 **Public**です。 Visibility が指定されていない場合、表示は元のチーム/グループからコピーされます。 複製対象のチームが**educationClass**チームの場合、visibility パラメーターは無視され、新しいグループの表示が HiddenMembership に設定されます。|
 
 ## <a name="response"></a>応答
 

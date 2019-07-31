@@ -4,12 +4,13 @@ description: 受信トレイや下書きなどの、ユーザーのメールボ�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 294f2a9a6b4775ad30165352dec5520fb0efa804
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 87195cf98406e37e0f4a419833fbc1d101b19563
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342774"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966882"
 ---
 # <a name="mailfolder-resource-type"></a>mailFolder リソースの種類
 
@@ -17,38 +18,38 @@ ms.locfileid: "33342774"
 
 受信トレイや下書きなどの、ユーザーのメールボックス内のメール フォルダーです。 メール フォルダーには、メッセージ、他の Outlook アイテム、子メール フォルダーを含めることができます。
 
-このリソースでは、[デルタ](../api/mailfolder-delta.md)関数を用意すれば、増分の追加、削除、更新に[デルタ クエリ](/graph/delta-query-overview)を使用できます。
+このリソースは、[デルタ](../api/mailfolder-delta.md)関数を提供することによって、増分の追加、削除、および更新を追跡するための[デルタ クエリ](/graph/delta-query-overview)の使用をサポートしています。
 
 **既知のフォルダー名**
 
-Outlook では、既定でユーザー用の特定のフォルダーを作成します。 このようなフォルダーにアクセスする場合は、対応するフォルダー **id**値を使用する代わりに、以下の表にある、既知のフォルダー名を使用することもできます。 たとえば、次のクエリを使用して、既知の名前を使用して [下書き] フォルダーを取得できます。
+Outlookは、デフォルトでユーザー用の特定のフォルダーを作成します。 対応するフォルダ**id**値を使用する代わりに、便宜上、これらのフォルダにアクセスするときに、下の表にある既知のフォルダ名を使用できます。 たとえば、次のクエリで、よく知られている名前を使用して[下書き]フォルダを取得できます。
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/drafts
 ```
 
-既知の名前は、ユーザーのメールボックスのロケールに関係なく動作するので、上記のクエリは、名前の指定に関係なく、常にユーザーの [下書き] フォルダーを返します。
+既知の名前はユーザーのメールボックスのロケールに関係なく機能するため、上記のクエリでは名前の付け方にかかわらず常にユーザーの[下書き]フォルダーが返されます。
 
 | 既知のフォルダー名 | 説明 |
 |:-----------------------|:------------|
-| ・ | アーカイブフォルダーのメッセージは、それをサポートする Outlook クライアントで One_Click アーカイブ機能を使用するときに送信されます。 **注:** これは、Exchange online のアーカイブメールボックス機能と同じではありません。 |
-| 整頓 | 低優先メール機能フォルダー低優先度のメッセージは、低優先メール機能を使用している場合に移動されます。 |
-| 解消 | メールボックス内の競合するアイテムを含むフォルダー。 |
-| conversationhistory | skype が IM 会話を保存するフォルダー (skype が設定されている場合)。 |
-| deleteditems | フォルダーアイテムは、削除されたときに移動されます。 |
-| 未公開 | 未送信メッセージを含むフォルダー。 |
-| ボックス | 受信トレイフォルダー。 |
-| junkemail | 迷惑メールフォルダー。 |
-| localfailures | ローカルクライアント上に存在するが、サーバーにアップロードできないアイテムを含むフォルダー。 |
-| msgfolderroot | "インフォメーションストアのトップ" フォルダー このフォルダーは、受信トレイなど、通常のメールクライアントに表示されるフォルダーの親フォルダーです。 |
-| 送信トレイ | 送信トレイフォルダー。 |
-| recoverableitemsdeletions | 削除済みアイテムフォルダーから削除された、または Outlook で shift + del キーを押して削除されたアイテムを含むフォルダー。 このフォルダーは、outlook 電子メールクライアントでは表示されませんが、エンドユーザーは、outlook または web 上の outlook の [**サーバーからの削除済みアイテムを復元**する] 機能を使用して操作できます。 |
-| スケジュール済み | iOS 版 Outlook のスケジュール機能を使用して、受信トレイに再表示するようにスケジュールされたメッセージを含むフォルダー。 |
-| searchfolders | ユーザーのメールボックスに定義されているすべての検索フォルダーの親フォルダーです。 |
-| sentitems | 送信済みアイテムフォルダー。 |
-| serverfailures | サーバー上に存在するが、ローカルクライアントに同期できなかったアイテムを含むフォルダー。 |
-| syncissues 問題 | Outlook によって作成された同期ログが格納されているフォルダー。 |
+| アーカイブ | アーカイブ フォルダーのメッセージは、対応する Outlook クライアントで One_Click アーカイブ機能を使用するときに送信されます。 **注意:** これはExchange Onlineのアーカイブメールボックス機能と同じではありません。 |
+| 低優先メール | [Clutter]機能を使用すると、clutterフォルダに優先順位の低いメッセージがに移動されます。 |
+| 競合 | メールボックス内で競合するアイテムが含まれているフォルダ。 |
+| conversationhistory | SkypeがIM会話を保存するフォルダ（Skypeがそうするように設定されている場合）。 |
+| deleteditems | フォルダ項目は、削除されたときに移動されます。 |
+| 下書き | 未送信メッセージが含まれているフォルダ。 |
+| inbox | 受信トレイ フォルダー。 |
+| junkemail | [迷惑メール] フォルダー。 |
+| localfailures | ローカルクライアントに存在するがサーバーにアップロードできなかったアイテムを含むフォルダ。 |
+| msgfolderroot | "Top of Information Store" フォルダ。 このフォルダは、受信トレイなど、通常のメールクライアントに表示されるフォルダの親フォルダです。 |
+| 送信トレイ | 送信トレイ フォルダー。 |
+| recoverableitemsdeletions | ソフト削除されたアイテムを含むフォルダ：[削除済みアイテム]フォルダから削除するか、OutlookでShift + Deleteキーを押して削除したアイテム。 このフォルダはどのOutlook電子メールクライアントにも表示されませんが、エンドユーザーはOutlookまたはWeb上のOutlookの**サーバーから削除済みアイテムを回復**機能を使用して操作できます。 |
+| スケジュール済み | iOS用Outlookのスケジュール機能を使用して受信トレイに再表示されるようにスケジュールされているメッセージを含むフォルダ。 |
+| searchfolders | ユーザーのメールボックスに定義されているすべての検索フォルダーの親フォルダー。 |
+| sentitems | 送信済みアイテム フォルダー。 |
+| serverfailures | サーバー上に存在するがローカルクライアントと同期できなかったアイテムを含むフォルダー。 |
+| syncissues | Outlookによって作成された同期ログを含むフォルダー。 |
 
 ## <a name="methods"></a>メソッド
 
@@ -75,33 +76,33 @@ GET /me/mailFolders/drafts
 | プロパティ | 型 | 説明 |
 |:---------|:-----|:------------|
 |childFolderCount|Int32|現在の mailFolder の直下の子 mailFolder の数。|
-|displayName|文字列|mailFolder の表示名。|
-|id|String|mailfolder の一意の識別子。|
+|displayName|String|mailFolder の表示名。|
+|id|文字列|mailFolder の一意識別子。|
 |parentFolderId|String|mailFolder の親 mailFolder の一意識別子。|
 |totalItemCount|Int32|mailFolder に含まれるアイテムの数|
 |unreadItemCount|Int32|mailFolder 内で未読としてマークされているアイテムの数。|
 |wellKnownName|String|フォルダーの既知のフォルダー名。 指定できる値は、上記のとおりです。 このプロパティは、Outlook によって作成された既定のフォルダーに対してのみ設定されます。 その他のフォルダーの場合、このプロパティは**null**になります。|
 
-**アイテム数の効率的な取得**
+**アイテム数を効率的に取得する**
 
-フォルダー `TotalItemCount`の`UnreadItemCount`プロパティとプロパティを使用すると、フォルダー内の閲覧アイテムの数を簡単に計算できます。
-これにより、大幅な遅延が発生する可能性がある次のようなクエリを回避できます。
+フォルダーの `TotalItemCount`プロパティと `UnreadItemCount` プロパティを使用すると、ファイル内の既読アイテム数を簡単に算出できます。
+大幅な待ち時間を招く可能性がある次のようなクエリを避けることができます。
 
 ```http
 https://outlook.office.com/api/beta/me/folders/inbox/messages?$count=true&$filter=isread%20eq%20false
 ```
 
-Outlook のメールフォルダーには、複数の種類のアイテムを含めることができます。たとえば、受信トレイには、メールアイテムとは異なる会議出席依頼アイテムを含めることができます。 `TotalItemCount`アイテム`UnreadItemCount`の種類に関係なく、メールフォルダーにアイテムを追加します。
+Outlookのメールフォルダには複数の種類のアイテムを含めることができます。たとえば、受信トレイにはメールアイテムとは異なる会議出席依頼アイテムを含めることができます。 `TotalItemCount` と `UnreadItemCount` には、アイテムの種類に関係なく、フォルダー内のアイテム全てが含まれます。
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 
 | リレーションシップ | 型 | 説明 |
 |:-------------|:-----|:------------|
 |childFolders|[MailFolder](mailfolder.md) コレクション|mailFolder 内の子フォルダーのコレクション。|
 |messageRules | [messageRule](messagerule.md) コレクション | ユーザーの受信トレイ フォルダーに適用されるルールのコレクション。 |
-|messages|[Message](message.md) collection|mailFolder 内のメッセージのコレクション。|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) コレクション| mailFolder に対して定義された、複数値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) コレクション| mailFolder に対して定義された、単一値の拡張プロパティのコレクションです。読み取り専用。Null 許容型。|
+|messages|[Message](message.md) コレクション|mailFolder 内のメッセージのコレクション。|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| mailFolder に対して定義された、複数値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| mailFolder に対して定義された、単一値の拡張プロパティのコレクションです。読み取り専用。Null 許容型。|
 
 ## <a name="json-representation"></a>JSON 表記
 

@@ -1,33 +1,34 @@
 ---
-title: emailappの appsuser計数リソースの種類
+title: Emailappの Appsuser計数リソースの種類
 description: リソースの JSON 表記を次に示します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 220770fab755c0e345af23f3fc3113732af63ff0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 0ca694c5d416dcc062984ba03a3521a39a010a87
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32542812"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972181"
 ---
-# <a name="emailappusageappsusercounts-resource-type"></a>emailappの appsuser計数リソースの種類
+# <a name="emailappusageappsusercounts-resource-type"></a>Emailappの Appsuser計数リソースの種類
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ          | 型   |
 | :---------------- | :----- |
-| reportrefreshdate | Date   |
-| mailformac        | Int64  |
-| outlookformac     | Int64  |
-| outlookforwindows | Int64  |
-| outlookformobile  | Int64  |
-| otherformobile    | Int64  |
-| outlookforweb     | Int64  |
+| reportRefreshDate | 日付   |
+| mailForMac        | Int64  |
+| outlookForMac     | Int64  |
+| outlookForWindows | Int64  |
+| outlookForMobile  | Int64  |
+| otherForMobile    | Int64  |
+| outlookForWeb     | Int64  |
 | pop3App           | Int64  |
 | imap4App          | Int64  |
 | smtpApp           | Int64  |
-| reportperiod      | String |
+| reportPeriod      | String |
 
 ## <a name="json-representation"></a>JSON 表記
 

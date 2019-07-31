@@ -1,15 +1,17 @@
 ---
 author: daspek
-ms.author: dspektor
+description: ItemActivity リソースは、アイテムまたはコンテナー内で発生したアクティビティについての情報を提供します。
 ms.date: 09/14/2017
 title: ItemActivity
 localization_priority: Normal
-ms.openlocfilehash: bcb68f94574512fd7e952db036a86f242652851d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: ab96c3169a2d2dc37e6b94ab325866e93fa4d6c0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339861"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967101"
 ---
 # <a name="itemactivity-resource-type"></a>ItemActivity リソースの種類
 
@@ -46,7 +48,7 @@ ms.locfileid: "33339861"
 | プロパティ | 型                    | 説明
 |:---------|:------------------------|:----------------------------------------
 | id       | string                  | アクティビティの一意識別子。 読み取り専用です。
-| 接続   | [accessaction][]        | アイテムがアクセスされました。
+| 接続   | [accessAction][]        | アイテムがアクセスされました。
 | action   | [itemActionSet][]       | 発生したアクションについての詳細。 読み取り専用です。
 | actor    | [identitySet][]         | アクションを実行したユーザーの識別情報。 読み取り専用です。
 | location | [location][]            | アクションが実行された物理的な場所。 読み取り専用です。
@@ -85,7 +87,7 @@ ms.locfileid: "33339861"
 | share       | [shareAction][]   | アイテムが共有されました。
 | version     | [versionAction][] | アイテムのバージョンが更新されました。
 
-[accessaction]: accessaction.md
+[accessAction]: accessaction.md
 [commentAction]: commentaction.md
 [createAction]: createaction.md
 [deleteAction]: deleteaction.md

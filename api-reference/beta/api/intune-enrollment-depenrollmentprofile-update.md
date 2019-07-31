@@ -4,12 +4,13 @@ description: DepEnrollmentProfile オブジェクトのプロパティを更新�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ff10fda496fd640454ae37bda6e673da4b0a68a6
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 57d66b30e73a17a21499df2a938180e5a75a4e1c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34979033"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35985463"
 ---
 # <a name="update-depenrollmentprofile"></a>DepEnrollmentProfile の更新
 

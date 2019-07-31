@@ -1,19 +1,22 @@
 ---
 title: assignedLicense リソースの種類
-description: ユーザーに割り当てられているライセンスを表します。 user エンティティの**assignedLicenses**プロパティは、 **assignedLicense**のコレクションです。
+description: ユーザーに割り当てられているライセンスを表します。 User エンティティの**assignedLicenses**プロパティは、 **assignedLicense**のコレクションです。
 localization_priority: Normal
-ms.openlocfilehash: 619ce666c86abfd669fefc11b22760e7ac250ff5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 8e23ed2430dcf20b49e8c792311f91507d3192ce
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328566"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974312"
 ---
 # <a name="assignedlicense-resource-type"></a>assignedLicense リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ユーザーに割り当てられているライセンスを表します。 [user](user.md)エンティティの**assignedLicenses**プロパティは、 **assignedLicense**のコレクションです。
+ユーザーに割り当てられているライセンスを表します。 [User](user.md)エンティティの**assignedLicenses**プロパティは、 **assignedLicense**のコレクションです。
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|

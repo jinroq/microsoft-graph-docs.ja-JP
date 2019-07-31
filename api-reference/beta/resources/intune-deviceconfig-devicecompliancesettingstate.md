@@ -4,12 +4,13 @@ description: 特定のデバイスに関する、デバイスのコンプライ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 63d73fbf584daeda20de327c1b62a9ccaf38b3ac
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 8cf16b54a86a7964f728883880323d30279baa00
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34995463"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35970501"
 ---
 # <a name="devicecompliancesettingstate-resource-type"></a>deviceComplianceSettingState リソース タイプ
 

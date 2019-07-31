@@ -2,18 +2,21 @@
 title: fileAttachment リソースの種類
 description: イベントに添付されたファイル (テキストファイルや Word 文書など)
 localization_priority: Normal
-ms.openlocfilehash: d4c33619c7521d980c1c6c51fd7158390aec47b1
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 966de812c8b0507c3d757d42fba5624c0b82ce4f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340229"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972041"
 ---
 # <a name="fileattachment-resource-type"></a>fileAttachment リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[イベント](../resources/event.md)、[メッセージ](../resources/message.md)、 [Outlook タスク](../resources/outlooktask.md)、または[投稿](../resources/post.md)に添付されたファイル (テキストファイルや Word 文書など)。 **contentbytes**プロパティには、ファイルの base64 でエンコードされたコンテンツが含まれています。  
+[イベント](../resources/event.md)、[メッセージ](../resources/message.md)、 [Outlook タスク](../resources/outlooktask.md)、または[投稿](../resources/post.md)に添付されたファイル (テキストファイルや Word 文書など)。 **Contentbytes**プロパティには、ファイルの base64 でエンコードされたコンテンツが含まれています。  
 
 添付ファイルを作成する場合は、要求本文に以下が含まれます。
 
@@ -27,7 +30,7 @@ ms.locfileid: "33340229"
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
 |[取得](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |fileattachment オブジェクトのプロパティと関係を読み取ります。|
-|[Delete](../api/attachment-delete.md) | なし |fileAttachment オブジェクトを削除します。 |
+|[Delete](../api/attachment-delete.md) | None |fileAttachment オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
@@ -36,7 +39,7 @@ ms.locfileid: "33340229"
 |contentId|String|Exchange ストア内の添付ファイルの ID。|
 |contentLocation|String|このプロパティは、サポートされていないため、使用しないでください。|
 |contentType|String|添付ファイルのコンテンツ タイプ。|
-|id|String|添付ファイル ID。|
+|id|文字列|添付ファイル ID。|
 |isInline|Boolean|インライン添付ファイルの場合、true に設定します。|
 |lastModifiedDateTime|DateTimeOffset|添付ファイルが最後に変更された日時です。|
 |name|String|埋め込み添付ファイルを表すアイコンの下に表示されるテキストを表す名前。これは、実際のファイル名にする必要はありません。|

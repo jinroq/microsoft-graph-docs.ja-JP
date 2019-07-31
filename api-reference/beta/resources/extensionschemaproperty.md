@@ -2,12 +2,15 @@
 title: extensionSchemaProperty リソースの種類
 description: '**extensionSchemaProperty** リソースを使用して、schemaExtension 定義の一部としてプロパティの名前とその種類を定義します。'
 localization_priority: Normal
-ms.openlocfilehash: 05fb5eb94f760bce26ba09bf3e8e862ff5fd2fb8
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: d36cf90e82e0240842fd9631e2471f9ee834fcb7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340266"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972062"
 ---
 # <a name="extensionschemaproperty-resource-type"></a>extensionSchemaProperty リソースの種類
 

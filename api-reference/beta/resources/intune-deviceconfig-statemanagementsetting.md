@@ -4,12 +4,13 @@ description: 状態管理の設定。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2fac1b537cf49ed0aa944b2d8fae3c255ed3bc93
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 61b60be87795fed1c33e73a8f9277c27e404ab1c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34991976"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35969647"
 ---
 # <a name="statemanagementsetting-enum-type"></a>stateManagementSetting 列挙型
 

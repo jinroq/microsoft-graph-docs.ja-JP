@@ -1,15 +1,17 @@
 ---
 author: daspek
-ms.author: dspektor
+description: CommentActionリソースは、アイテムに対して行われたコメント アクティビティに関する情報を提供します。
 ms.date: 09/14/2017
 title: CommentAction
 localization_priority: Normal
-ms.openlocfilehash: c472a0b1b992c91b60174859e4900ffcee04c007
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: b7782c6e4dd30b503a9be88737ef6bd2dbad109b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341482"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973259"
 ---
 # <a name="commentaction-resource-type"></a>CommentAction リソースの種類
 

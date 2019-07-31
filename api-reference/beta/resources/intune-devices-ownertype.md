@@ -4,12 +4,13 @@ description: デバイスの所有者の種類。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4c504ffa45e5d76e57f49416b34e498a660daef7
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: cef679611009c5207265fda8a97527f0ced67221
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34963878"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35968331"
 ---
 # <a name="ownertype-enum-type"></a>ownerType 列挙型
 

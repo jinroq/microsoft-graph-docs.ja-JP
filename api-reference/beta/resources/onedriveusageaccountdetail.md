@@ -3,12 +3,14 @@ title: Onedrive のアカウント詳細リソースの種類
 description: リソースの JSON 表記を次に示します。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: bcf75fad8c39a543e69fc378546a2621f24eaeab
-ms.sourcegitcommit: afea19508ad74a3583b11b5f7b544c53eafb3740
+doc_type: resourcePageType
+author: ''
+ms.openlocfilehash: cc80110a2f8f755ef984b2f993ea660798a86743
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "34344928"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966469"
 ---
 # <a name="onedriveusageaccountdetail-resource-type"></a>Onedrive のアカウント詳細リソースの種類
 

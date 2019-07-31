@@ -4,12 +4,13 @@ description: プロパティへの割り当てで使用され**ます。** こ�
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: 2f7c9c6dcf634ceb030a2958d7cc4761428b5af6
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 1b47a9de683c62986054e6ed2b5926af03bbd4ba
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340610"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972784"
 ---
 # <a name="educationassignmentrecipient-resource-type"></a>educationAssignmentRecipient リソースの種類
 
@@ -18,7 +19,7 @@ ms.locfileid: "33340610"
 プロパティへの割り当てで使用され**ます。** このスーパークラスは abstract であるため、この値に割り当てのプロパティを設定することはできません。 このスーパークラスは、割り当てが発行されたときに割り当てられるユーザーを表します。
 
 
-[educationAssignmentClassRecipient](educationassignmentclassrecipient.md)リソースは、このスーパークラスのサブクラスです。
+[EducationAssignmentClassRecipient](educationassignmentclassrecipient.md)リソースは、このスーパークラスのサブクラスです。
 
 ## <a name="properties"></a>プロパティ
 なし。

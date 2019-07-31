@@ -2,12 +2,15 @@
 title: governanceRoleAssignment リソースの種類
 description: ユーザーまたはグループの役割への割り当てを表します。
 localization_priority: Normal
-ms.openlocfilehash: 3b70d356886a14b17fda7ed37292797ba99d51e9
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 518fbe18fcd09b1b4cc9730c6b7f0112adabfeae
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340256"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35971894"
 ---
 # <a name="governanceroleassignment-resource-type"></a>governanceRoleAssignment リソースの種類
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -23,7 +26,7 @@ Privileged Identity Management (PIM) は、次の2種類の割り当てをサポ
 
 | メソッド          | 戻り値の型 |説明|
 |:------------|:--------|:--------|
-|[取得](../api/governanceroleassignment-get.md) |  [governanceRoleAssignment](../resources/governanceroleassignment.md) |役割割り当てエンティティのプロパティと関係を読み取ります。|
+|[Get](../api/governanceroleassignment-get.md) |  [governanceRoleAssignment](../resources/governanceroleassignment.md) |役割割り当てエンティティのプロパティと関係を読み取ります。|
 |[List](../api/governanceroleassignment-list.md) | [governanceRoleAssignment](../resources/governanceroleassignment.md)コレクション|リソースに対する役割の割り当てのコレクションを一覧表示します。 |
 |[Export](../api/governanceroleassignment-export.md) | オクテットストリーム |リソースに対する役割の割り当てのコレクションをダウンロードし、 `.csv`ファイルとして保存します。|
 
@@ -32,7 +35,7 @@ Privileged Identity Management (PIM) は、次の2種類の割り当てをサポ
 ## <a name="properties"></a>プロパティ
 | プロパティ  | 型      |説明|
 |:----------|:----------|:----------|
-|id         |String     |役割の割り当ての ID。 GUID 形式です。|
+|id         |文字列     |役割の割り当ての ID。 GUID 形式です。|
 |resourceId |String     |必須。 役割の割り当てが関連付けられているリソースの ID。 |
 |roleDefinitionId|String|必須。 役割の割り当てが関連付けられているロール定義の ID。 |
 |subjectId|String       |必須。 役割の割り当てが関連付けられているサブジェクトの ID。 |

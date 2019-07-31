@@ -4,12 +4,13 @@ description: このプロファイルに構成を提供することで、Android
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 90a70133a801bc6e4cb6166a5f4ceb22a8f85d64
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 16cf448e26956bc3681aff1db4749c64ad16f0d6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34991080"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35971369"
 ---
 # <a name="androidforworknineworkeasconfiguration-resource-type"></a>androidForWorkNineWorkEasConfiguration リソースの種類
 

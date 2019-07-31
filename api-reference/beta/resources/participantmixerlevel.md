@@ -4,12 +4,13 @@ description: 特定の音声参加者のミキサーレベルの構成
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 00beb746a29ae06de838f00b699a97e01f2f1941
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 27ddc297f779d1a40350bd4cc24015a2c60dd9ee
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344935"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966236"
 ---
 # <a name="participantmixerlevel-resource-type"></a>participantMixerLevel リソースの種類
 
@@ -21,8 +22,8 @@ ms.locfileid: "33344935"
 
 | プロパティ               | 型                                                      | 説明                                                                                         |
 | :--------------------- | :-------------------------------------------------------- | :---------------------------------------------------------------------------------------------------|
-| ducking                | [audioアヒルの構成](audioduckingconfiguration.md) | この partipant カスタムミックスの他のソースの ducking (段階的なインとアウト) の構成。       |
-| exclusiveMode          | boolean                                                   | 明示的なソースレベルを持たないソースをミックスから削除する必要があるかどうか。                       |
+| ducking                | [Audioアヒルの構成](audioduckingconfiguration.md) | この partipant カスタムミックスの他のソースの ducking (段階的なインとアウト) の構成。       |
+| exclusiveMode          | ブール値                                                   | 明示的なソースレベルを持たないソースをミックスから削除する必要があるかどうか。                       |
 | 積極的            | String                                                    | ミキサーを構成する参加者。                                             |
 | sourceLevels           | [audioSourceLevel](audiosourcelevel.md)コレクション        | 他のソースのレベルの構成。                                                              |
 

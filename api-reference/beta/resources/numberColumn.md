@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: columnDefinition リソースの numberColumn は、列の値が数値であることを示します。
 ms.date: 09/11/2017
 title: NumberColumn
 localization_priority: Normal
-ms.openlocfilehash: f70a1d71729be68fc4d5dcb3de2599ff131bb8a9
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: c8abaca08682e4a68e8e5efbeb798a8810b20bfb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342094"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966637"
 ---
 # <a name="numbercolumn-resource-type"></a>numberColumn リソースの種類
 

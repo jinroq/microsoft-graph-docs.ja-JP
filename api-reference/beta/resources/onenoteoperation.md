@@ -4,12 +4,13 @@ description: 長時間実行されている特定の OneNote 操作の状態。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: f336021221cd86a45f8c5683a9736cc6f838a913
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 3f6a8bdfc6cee8b71fb77fb7778171677acb5df9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341437"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966434"
 ---
 # <a name="onenoteoperation-resource-type"></a>onenoteOperation リソースの種類
 
@@ -48,7 +49,7 @@ ms.locfileid: "33341437"
 |createdDateTime| DateTimeOffset |操作の開始時刻。|
 |error|[onenoteOperationError](onenoteoperationerror.md)|操作によって返されたエラー。|
 |id|string|操作 id。読み取り専用です。|
-|lastactiondatetime| DateTimeOffset |操作の最後の操作の時刻。|
+|lastActionDateTime| DateTimeOffset |操作の最後の操作の時刻。|
 |resourceId|string|リソース id。|
 |resourceLocation|string|オブジェクトのリソース URI。 たとえば、コピーされたページまたはセクションのリソース URI。 |
 |status|string|操作の現在の状態: `notstarted`、 `running` `completed`、、`failed` |

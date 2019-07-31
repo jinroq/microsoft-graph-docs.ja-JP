@@ -4,12 +4,13 @@ description: 暗号化プロバイダーで使用される埋め込み方式の�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1a079075d3e0a44a773c854df55df1635d54584c
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: enumPageType
+ms.openlocfilehash: a3c4d4d07a3891167838af6de7ea854883a5b1e5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35739275"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967701"
 ---
 # <a name="userpfxpaddingscheme-enum-type"></a>Userpfxps/スキーム列挙型
 

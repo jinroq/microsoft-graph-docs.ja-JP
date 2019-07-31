@@ -1,15 +1,18 @@
 ---
-title: auditactivityinitiator リソースの種類
+title: auditActivityInitiator リソースの種類
 description: アクティビティを開始する resource オブジェクトを識別します。 イニシエーターには、ユーザー、アプリ、またはシステム (アプリとして考えられる) を指定できます。
 localization_priority: Normal
-ms.openlocfilehash: 14c92a4df42c3d8dbcd6836695df8d6caac3cf87
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 2f76c071efd10d2d43887bdd5dd04df0d2aa86d5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543769"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974228"
 ---
-# <a name="auditactivityinitiator-resource-type"></a>auditactivityinitiator リソースの種類
+# <a name="auditactivityinitiator-resource-type"></a>auditActivityInitiator リソースの種類
 アクティビティを開始する resource オブジェクトを識別します。 イニシエーターには、ユーザー、アプリ、またはシステム (アプリとして考えられる) を指定できます。
 
 
@@ -17,8 +20,8 @@ ms.locfileid: "32543769"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|アプリ|[appidentity](appidentity.md)|アクティビティを開始するリソースがアプリの場合、このプロパティは appId、name、servicePrincipalId、name などのアプリ関連情報をすべて示します。|
-|user|[userIdentity](useridentity.md)|アクティビティを開始するリソースがユーザーの場合、このプロパティは、userId、Name、userprinicpalname など、すべてのユーザー関連情報を示します。|
+|アプリ|[appIdentity](appidentity.md)|アクティビティを開始するリソースがアプリの場合、このプロパティは appId、Name、servicePrincipalId、Name などのアプリ関連情報をすべて示します。|
+|user|[userIdentity](useridentity.md)|アクティビティを開始するリソースがユーザーの場合、このプロパティは、userId、Name、UserPrinicpalName など、すべてのユーザー関連情報を示します。|
 
 ## <a name="json-representation"></a>JSON 表記
 

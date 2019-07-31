@@ -1,19 +1,22 @@
 ---
-title: businessflowtemplate リソースの種類
-description: azure ad access レビュー機能では、は`businesFlowTemplate` azure ad ビジネスフローテンプレートを表します。 グループのゲストメンバーを確認するなどのテンプレートの識別子は、アクセスレビューを作成するときに発信者によって提供されます。
+title: businessFlowTemplate リソースの種類
+description: Azure AD access レビュー機能では、は`businesFlowTemplate` azure ad ビジネスフローテンプレートを表します。 グループのゲストメンバーを確認するなどのテンプレートの識別子は、アクセスレビューを作成するときに発信者によって提供されます。
 localization_priority: Normal
-ms.openlocfilehash: 0cca72bc8ccd372cdaf9952b385bc63f81b0631d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 6890ed724c1a71c69a881ce0e2e70675b3537520
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33338831"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973500"
 ---
-# <a name="businessflowtemplate-resource-type"></a>businessflowtemplate リソースの種類
+# <a name="businessflowtemplate-resource-type"></a>businessFlowTemplate リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-azure ad [access レビュー](accessreviews-root.md)機能では、は`businesFlowTemplate` azure ad ビジネスフローテンプレートを表します。 グループのゲストメンバーを確認するなどのテンプレートの識別子は、アクセスレビューを作成するときに発信者によって提供されます。
+Azure AD [access レビュー](accessreviews-root.md)機能では、は`businesFlowTemplate` azure ad ビジネスフローテンプレートを表します。 グループのゲストメンバーを確認するなどのテンプレートの識別子は、アクセスレビューを作成するときに発信者によって提供されます。
 
 ビジネスフローテンプレートオブジェクトは、グローバル管理者がテナントを介してアクセスレビュー機能を使用すると、自動的に生成されます。  追加のビジネスフローテンプレートを作成することはできません。
 
@@ -22,7 +25,7 @@ azure ad [access レビュー](accessreviews-root.md)機能では、は`businesF
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[businessflowtemplates を一覧表示する](../api/businessflowtemplate-list.md) | [businessflowtemplate](businessflowtemplate.md)コレクション| レビューにアクセスするための適切なビジネスフローテンプレートを取得します。|
+|[BusinessFlowTemplates を一覧表示する](../api/businessflowtemplate-list.md) | [Businessflowtemplate](businessflowtemplate.md)コレクション| レビューにアクセスするための適切なビジネスフローテンプレートを取得します。|
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
@@ -39,7 +42,7 @@ azure ad [access レビュー](accessreviews-root.md)機能では、は`businesF
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[accessreview を作成する](../api/accessreview-create.md) | [accessreview](accessreview.md) |   新しい accessreview を作成します。 |
+|[AccessReview を作成する](../api/accessreview-create.md) | [accessReview](accessreview.md) |   新しい accessReview を作成します。 |
 
 
 ## <a name="json-representation"></a>JSON 表記

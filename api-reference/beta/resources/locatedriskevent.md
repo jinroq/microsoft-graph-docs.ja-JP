@@ -1,38 +1,41 @@
 ---
 title: locatedRiskEvent リソースの種類
-description: 場所データに基づく Azure Active Directory id 保護によって検出されたリスクイベント。 存在するリスクイベントの種類は次のとおりです。
+description: 場所データに基づく Azure Active Directory Id 保護によって検出されたリスクイベント。 存在するリスクイベントの種類は次のとおりです。
 localization_priority: Normal
-ms.openlocfilehash: 2c7503c08700a0d7c2d2ad67e8868901bdb008e2
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: e024b5311d6385888e7ed8e53ba9e37e8b2d2ed5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345371"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966994"
 ---
 # <a name="locatedriskevent-resource-type"></a>locatedRiskEvent リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-場所データに基づく[Azure Active Directory id 保護](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/)によって検出されたリスクイベント。 存在するリスクイベントの種類は次のとおりです。
+場所データに基づく[Azure Active Directory Id 保護](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/)によって検出されたリスクイベント。 存在するリスクイベントの種類は次のとおりです。
 * [匿名 IP アドレスからのサインイン](anonymousipriskevent.md)
 * [マルウェアに感染したデバイスからのサインイン](malwareriskevent.md)
 * [例外的でない場所への移動は不可能](impossibletravelriskevent.md)
 * [疑わしい IP アドレスからのサインイン](suspiciousipriskevent.md)
-* [見慣れない場所からのサインイン](unfamiliarlocationriskevent.md)リスクイベントに関する詳細な情報については、「 [Azure AD Identity Protection](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection-risk-events-types/)」のドキュメントを参照してください。
+* [見慣れない場所からのサインイン](unfamiliarlocationriskevent.md)リスクイベントに関する詳細な情報については、「 [AZURE AD Identity Protection](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection-risk-events-types/)」のドキュメントを参照してください。
 
 
 ## <a name="methods"></a>メソッド
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[locatedRiskEvent を取得する](../api/locatedriskevent-get.md) | [locatedRiskEvent](locatedriskevent.md) |locatedRiskEvent オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[LocatedRiskEvent を取得する](../api/locatedriskevent-get.md) | [locatedRiskEvent](locatedriskevent.md) |LocatedRiskEvent オブジェクトのプロパティとリレーションシップを読み取ります。|
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|closeddatetime|dateTimeOffset| リスクイベントが終了した日付と時刻|
+|closedDateTime|dateTimeOffset| リスクイベントが終了した日付と時刻|
 |createdDateTime|dateTimeOffset| リスクイベントが作成された日時。 これは常に、リスクイベント自体の datetime と同じかそれよりも大きくなります。 これは、リスクイベントを照会するときにフィルターとして使用する適切なプロパティです。|
-|id|文字列| 読み取り専用|
+|id|string| 読み取り専用|
 |ipAddress|string| サインインの IP アドレス|
 |location|string| サインインの IP アドレスに関連付けられている場所|
 |riskEventDateTime|dateTimeOffset| リスクイベントが発生した日付と時刻|
@@ -46,7 +49,7 @@ ms.locfileid: "33345371"
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|impactedUser|[user](user.md)| 読み取り専用。Null 許容型です。|
+|impactedUser|[ユーザー](user.md)| 読み取り専用。Null 許容型です。|
 
 ## <a name="json-representation"></a>JSON 表記
 

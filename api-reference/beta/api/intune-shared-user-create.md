@@ -4,16 +4,17 @@ description: 新しいユーザー オブジェクトを作成します。
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: c8324bd70d073b45ecb7ef1ecccbb5019debf89a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: 90557192f23d369587955d198025abb066df24b0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33898102"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35984140"
 ---
 # <a name="create-user"></a>ユーザーを作成する
 
-> **重要:** Microsoft Graph の/ベータ版の Api は変更される可能性があります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** Microsoft Graph の/ベータ版の Api は変更される可能性があります。 実稼働アプリケーションでは、これらの API の使用はサポートされていません。
 
 > **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 

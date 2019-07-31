@@ -4,12 +4,13 @@ description: すべてのグループ メールボックスとグループ サ�
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: acdb27f2b331706d625ea2dc42d7e14636d253b9
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 7b56a49f321ddaffcfb0e9b1686e5ddb9d600953
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35873274"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35983272"
 ---
 # <a name="reportroot-getoffice365groupsactivitystorage"></a>reportRoot: getOffice365GroupsActivityStorage
 

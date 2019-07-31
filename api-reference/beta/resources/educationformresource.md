@@ -1,21 +1,22 @@
 ---
 title: educationFormResource リソースの種類
-description: educationResource のサブクラス。 このリソースはフォームです。
+description: EducationResource のサブクラス。 このリソースはフォームです。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 3f2747d94c80732091db06294b26546afc567e03
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: d2e10ea6db0236b7deff3581c2e1b4f97c589045
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334266"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972720"
 ---
 # <a name="educationformresource-resource-type"></a>educationFormResource リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[educationResource](educationresource.md)のサブクラス。 このリソースはフォームです。
+[EducationResource](educationresource.md)のサブクラス。 このリソースはフォームです。
 
 
 ## <a name="properties"></a>プロパティ
@@ -23,10 +24,10 @@ ms.locfileid: "33334266"
 |:---------------|:--------|:----------|
 |originalFormId|String|フォームの元の id。|
 |formId|String|フォームの Id。|
-|isgroupform|Boolean|フォームがクラスグループに属しているかどうか。|
-|viewurl|String|フォームの学生の URL。|
-|viewurl|String|フォームの学生の URL。|
-|editurl|String|フォームの教師 URL。|
+|isGroupForm|Boolean|フォームがクラスグループに属しているかどうか。|
+|viewUrl|String|フォームの学生の URL。|
+|viewUrl|String|フォームの学生の URL。|
+|editUrl|String|フォームの教師 URL。|
 
 ## <a name="json-representation"></a>JSON 表記
 

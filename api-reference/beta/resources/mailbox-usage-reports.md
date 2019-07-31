@@ -4,12 +4,13 @@ description: メールボックスと、主に電子メールの送受信に基�
 localization_priority: Normal
 author: pranoychaudhuri
 ms.prod: reports
-ms.openlocfilehash: 324f936e497142b5f8bab5ea6607005ea1c35c2b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.openlocfilehash: 83530708465673e61c22e087179c9de5a9070c96
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345111"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966987"
 ---
 # <a name="mailbox-usage-reports"></a>メールボックス使用状況レポート
 

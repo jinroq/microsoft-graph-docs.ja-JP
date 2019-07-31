@@ -4,12 +4,13 @@ description: Windows Phone 8.1 + 信頼されたルート証明書の構成プ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 40123c37d9f868dc34865890c4b07e00e38d0e95
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: edbef72265921e5d8c390ffdeaf2dfbae041c912
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34996555"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35968758"
 ---
 # <a name="windowsphone81trustedrootcertificate-resource-type"></a>windowsPhone81TrustedRootCertificate リソースの種類
 

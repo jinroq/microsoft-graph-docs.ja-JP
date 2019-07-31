@@ -4,12 +4,13 @@ description: windows10EnterpriseModernAppManagementConfiguration オブジェク
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5a474b70c23ecfe18043b321c108fc3e305c7047
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 795514c5c03e28799fc2b2690197a9105cc0be83
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34962625"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35976846"
 ---
 # <a name="get-windows10enterprisemodernappmanagementconfiguration"></a>Get windows10EnterpriseModernAppManagementConfiguration
 

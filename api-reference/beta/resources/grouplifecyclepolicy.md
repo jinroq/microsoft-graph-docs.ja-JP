@@ -4,12 +4,13 @@ description: Office 365 グループのライフサイクルポリシーを表�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 766050909a9ee9a417db666061d2427e12d3a6c9
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+doc_type: resourcePageType
+ms.openlocfilehash: 7eccede97fb4f9eafc69a04136612c30ad2c27ee
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620858"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35971831"
 ---
 # <a name="grouplifecyclepolicy-resource-type"></a>groupLifecyclePolicy リソース タイプ
 

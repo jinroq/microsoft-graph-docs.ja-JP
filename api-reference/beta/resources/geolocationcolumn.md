@@ -1,25 +1,27 @@
 ---
 author: kevklam
-ms.author: kevinlam
+description: ColumnDefinition リソースの geolocationColumn は、その列が位置情報を保持していることを示します。
 ms.date: 09/10/2018
-title: geolocationcolumn
+title: GeolocationColumn
 localization_priority: Normal
-ms.openlocfilehash: 1a7af7746dcfddcc67c4bfe9831bee9acfe82152
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 7ab8617ea48e02a1deca29e4aed725a938a5a07c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333731"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973522"
 ---
-# <a name="geolocationcolumn-resource-type"></a>geolocationcolumn リソースの種類
+# <a name="geolocationcolumn-resource-type"></a>geolocationColumn リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[columndefinition](columndefinition.md)リソースの**geolocationcolumn**は、その列が位置情報を保持していることを示します。
+[Columndefinition](columndefinition.md)リソースの**geolocationcolumn**は、その列が位置情報を保持していることを示します。
 
 ## <a name="json-representation"></a>JSON 表記
 
-**geolocationcolumn**リソースの JSON 表記を次に示します。
+**Geolocationcolumn**リソースの JSON 表記を次に示します。
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.geolocationColumn" } -->
 
 ```json
@@ -29,7 +31,7 @@ ms.locfileid: "33333731"
 
 ## <a name="properties"></a>プロパティ
 
-**geolocationcolumn**リソースには、プロパティが含まれていません。
+**Geolocationcolumn**リソースには、プロパティが含まれていません。
 
 <!--
 {

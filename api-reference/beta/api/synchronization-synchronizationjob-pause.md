@@ -2,14 +2,15 @@
 title: '同期ジョブ: 一時停止'
 description: 一時的に同期を停止します。 ジョブの状態を含むすべての進行状況が持続され、開始呼び出しが行われたときにジョブは中断したところから続行されます。
 localization_priority: Normal
+doc_type: apiPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 29b5f01231f36c9c20d6fe653d2898dc7c2c4ceb
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 0a1503aa6de14f3738248020c10c3b5d53111476
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35869349"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977809"
 ---
 # <a name="synchronizationjob-pause"></a>同期ジョブ: 一時停止
 

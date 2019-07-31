@@ -4,12 +4,13 @@ description: 提出物を割り当てることができるユーザーの異な�
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: f46e0a7208779e6f3d65b6e4949e6935c44250b5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: a95060696d581837976ed08e66f85bb53ff9ca10
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334111"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972496"
 ---
 # <a name="educationsubmissionrecipient-resource-type"></a>educationSubmissionRecipient リソースの種類
 

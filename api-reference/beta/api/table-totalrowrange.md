@@ -4,12 +4,13 @@ description: テーブルの集計行に関連付けられた範囲オブジェ�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 37dae4173c29182aba2442ada88be366c18cbcb9
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 6f5027008df7cb9e3174e21760b81cc69ce751b3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35868802"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35982607"
 ---
 # <a name="table-totalrowrange"></a>Table:TotalRowRange
 

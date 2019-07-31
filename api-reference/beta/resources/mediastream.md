@@ -1,21 +1,22 @@
 ---
-title: mediastream リソースの種類
-description: mediastream の種類。
+title: mediaStream リソースの種類
+description: MediaStream の種類。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 69d8088ba161bdf4dbf0482fdab8ad757347126d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: c39c4eb0754f327361fec04852293ef084b0c412
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342619"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966827"
 ---
-# <a name="mediastream-resource-type"></a>mediastream リソースの種類
+# <a name="mediastream-resource-type"></a>mediaStream リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-mediastream の種類。
+MediaStream の種類。
 
 ## <a name="properties"></a>プロパティ
 
@@ -24,7 +25,7 @@ mediastream の種類。
 | direction   | String  | 方向を示します。 使用可能な値`inactive`は`sendOnly` `receiveOnly`、、 `sendReceive`、です。                  |
 | label       | String  | メディアストリームのラベル。                                                                                       |
 | mediaType   | String  | メディアの種類。 使用可能な値`unknown`は`audio` `video` `videoBasedScreenSharing`、、、 `data`、です。        |
-| servermuted | Boolean | メディアがサーバーによってミュートされている場合。                                                                          |
+| serverMuted | Boolean | メディアがサーバーによってミュートされている場合。                                                                          |
 | sourceId    | String  | ソース ID。                                                                                                |
 
 ## <a name="json-representation"></a>JSON 表記

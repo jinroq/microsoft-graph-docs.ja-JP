@@ -4,12 +4,13 @@ description: アクションパラメーターのキーと値のペア。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 86a5415c20721f717947238838341345ec9a4250
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: db8d3b14ceaa0ff05181894af803b8b6feea77c6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345324"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967036"
 ---
 # <a name="keyvaluepair-resource-type"></a>keyValuePair リソースの種類
 
