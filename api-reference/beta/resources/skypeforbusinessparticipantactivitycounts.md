@@ -2,31 +2,34 @@
 title: skypeForBusinessParticipantActivityCounts リソースの種類
 description: リソースの JSON 表記を次に示します。
 localization_priority: Normal
-ms.openlocfilehash: de86c49da34c9af48478a912a6ab042a354a7bf5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 9e070dd3dc4687ee70f3189812e5f55ea90d718a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568090"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008125"
 ---
-# <a name="skypeforbusinessparticipantactivitycounts-resource-type"></a><span data-ttu-id="61738-103">skypeForBusinessParticipantActivityCounts リソースの種類</span><span class="sxs-lookup"><span data-stu-id="61738-103">skypeForBusinessParticipantActivityCounts resource type</span></span>
+# <a name="skypeforbusinessparticipantactivitycounts-resource-type"></a><span data-ttu-id="25710-103">skypeForBusinessParticipantActivityCounts リソースの種類</span><span class="sxs-lookup"><span data-stu-id="25710-103">skypeForBusinessParticipantActivityCounts resource type</span></span>
 
-## <a name="properties"></a><span data-ttu-id="61738-104">プロパティ</span><span class="sxs-lookup"><span data-stu-id="61738-104">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="25710-104">プロパティ</span><span class="sxs-lookup"><span data-stu-id="25710-104">Properties</span></span>
 
-| <span data-ttu-id="61738-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="61738-105">Property</span></span>          | <span data-ttu-id="61738-106">型</span><span class="sxs-lookup"><span data-stu-id="61738-106">Type</span></span>   |
+| <span data-ttu-id="25710-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="25710-105">Property</span></span>          | <span data-ttu-id="25710-106">型</span><span class="sxs-lookup"><span data-stu-id="25710-106">Type</span></span>   |
 | :---------------- | :----- |
-| <span data-ttu-id="61738-107">im</span><span class="sxs-lookup"><span data-stu-id="61738-107">im</span></span>                | <span data-ttu-id="61738-108">Int64</span><span class="sxs-lookup"><span data-stu-id="61738-108">Int64</span></span>  |
-| <span data-ttu-id="61738-109">audioVideo</span><span class="sxs-lookup"><span data-stu-id="61738-109">audioVideo</span></span>        | <span data-ttu-id="61738-110">Int64</span><span class="sxs-lookup"><span data-stu-id="61738-110">Int64</span></span>  |
-| <span data-ttu-id="61738-111">appSharing</span><span class="sxs-lookup"><span data-stu-id="61738-111">appSharing</span></span>        | <span data-ttu-id="61738-112">Int64</span><span class="sxs-lookup"><span data-stu-id="61738-112">Int64</span></span>  |
-| <span data-ttu-id="61738-113">web</span><span class="sxs-lookup"><span data-stu-id="61738-113">web</span></span>               | <span data-ttu-id="61738-114">Int64</span><span class="sxs-lookup"><span data-stu-id="61738-114">Int64</span></span>  |
-| <span data-ttu-id="61738-115">dialInOut3rdParty</span><span class="sxs-lookup"><span data-stu-id="61738-115">dialInOut3rdParty</span></span> | <span data-ttu-id="61738-116">Int64</span><span class="sxs-lookup"><span data-stu-id="61738-116">Int64</span></span>  |
-| <span data-ttu-id="61738-117">reportrefreshdate</span><span class="sxs-lookup"><span data-stu-id="61738-117">reportRefreshDate</span></span> | <span data-ttu-id="61738-118">Date</span><span class="sxs-lookup"><span data-stu-id="61738-118">Date</span></span>   |
-| <span data-ttu-id="61738-119">reportDate</span><span class="sxs-lookup"><span data-stu-id="61738-119">reportDate</span></span>        | <span data-ttu-id="61738-120">Date</span><span class="sxs-lookup"><span data-stu-id="61738-120">Date</span></span>   |
-| <span data-ttu-id="61738-121">reportperiod</span><span class="sxs-lookup"><span data-stu-id="61738-121">reportPeriod</span></span>      | <span data-ttu-id="61738-122">String</span><span class="sxs-lookup"><span data-stu-id="61738-122">String</span></span> |
+| <span data-ttu-id="25710-107">im</span><span class="sxs-lookup"><span data-stu-id="25710-107">im</span></span>                | <span data-ttu-id="25710-108">Int64</span><span class="sxs-lookup"><span data-stu-id="25710-108">Int64</span></span>  |
+| <span data-ttu-id="25710-109">audioVideo</span><span class="sxs-lookup"><span data-stu-id="25710-109">audioVideo</span></span>        | <span data-ttu-id="25710-110">Int64</span><span class="sxs-lookup"><span data-stu-id="25710-110">Int64</span></span>  |
+| <span data-ttu-id="25710-111">appSharing</span><span class="sxs-lookup"><span data-stu-id="25710-111">appSharing</span></span>        | <span data-ttu-id="25710-112">Int64</span><span class="sxs-lookup"><span data-stu-id="25710-112">Int64</span></span>  |
+| <span data-ttu-id="25710-113">Web</span><span class="sxs-lookup"><span data-stu-id="25710-113">web</span></span>               | <span data-ttu-id="25710-114">Int64</span><span class="sxs-lookup"><span data-stu-id="25710-114">Int64</span></span>  |
+| <span data-ttu-id="25710-115">dialInOut3rdParty</span><span class="sxs-lookup"><span data-stu-id="25710-115">dialInOut3rdParty</span></span> | <span data-ttu-id="25710-116">Int64</span><span class="sxs-lookup"><span data-stu-id="25710-116">Int64</span></span>  |
+| <span data-ttu-id="25710-117">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="25710-117">reportRefreshDate</span></span> | <span data-ttu-id="25710-118">日付</span><span class="sxs-lookup"><span data-stu-id="25710-118">Date</span></span>   |
+| <span data-ttu-id="25710-119">reportDate</span><span class="sxs-lookup"><span data-stu-id="25710-119">reportDate</span></span>        | <span data-ttu-id="25710-120">日付</span><span class="sxs-lookup"><span data-stu-id="25710-120">Date</span></span>   |
+| <span data-ttu-id="25710-121">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="25710-121">reportPeriod</span></span>      | <span data-ttu-id="25710-122">String</span><span class="sxs-lookup"><span data-stu-id="25710-122">String</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="61738-123">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="61738-123">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="25710-123">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="25710-123">JSON representation</span></span>
 
-<span data-ttu-id="61738-124">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="61738-124">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="25710-124">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="25710-124">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
