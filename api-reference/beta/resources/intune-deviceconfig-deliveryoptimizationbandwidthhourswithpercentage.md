@@ -4,35 +4,36 @@ description: 営業時間に対する割合としての帯域幅制限。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d1ad2bbfef3a055a4d5449f7f165bd4bf2f9a07a
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 022bada2d0dcfff6cf09ad5ae7719e3cd54107c0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34979698"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35970795"
 ---
-# <a name="deliveryoptimizationbandwidthhourswithpercentage-resource-type"></a><span data-ttu-id="b038f-103">deliveryOptimizationBandwidthHoursWithPercentage リソースの種類</span><span class="sxs-lookup"><span data-stu-id="b038f-103">deliveryOptimizationBandwidthHoursWithPercentage resource type</span></span>
+# <a name="deliveryoptimizationbandwidthhourswithpercentage-resource-type"></a><span data-ttu-id="9f954-103">deliveryOptimizationBandwidthHoursWithPercentage リソースの種類</span><span class="sxs-lookup"><span data-stu-id="9f954-103">deliveryOptimizationBandwidthHoursWithPercentage resource type</span></span>
 
-> <span data-ttu-id="b038f-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b038f-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="9f954-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="9f954-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="b038f-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="b038f-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="9f954-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="9f954-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="b038f-106">営業時間に対する割合としての帯域幅制限。</span><span class="sxs-lookup"><span data-stu-id="b038f-106">Bandwidth limit as a percentage with business hours.</span></span>
+<span data-ttu-id="9f954-106">営業時間に対する割合としての帯域幅制限。</span><span class="sxs-lookup"><span data-stu-id="9f954-106">Bandwidth limit as a percentage with business hours.</span></span>
 
 
-<span data-ttu-id="b038f-107">[DeliveryOptimizationBandwidth](../resources/intune-deviceconfig-deliveryoptimizationbandwidth.md)から継承します。</span><span class="sxs-lookup"><span data-stu-id="b038f-107">Inherits from [deliveryOptimizationBandwidth](../resources/intune-deviceconfig-deliveryoptimizationbandwidth.md)</span></span>
+<span data-ttu-id="9f954-107">[DeliveryOptimizationBandwidth](../resources/intune-deviceconfig-deliveryoptimizationbandwidth.md)から継承します。</span><span class="sxs-lookup"><span data-stu-id="9f954-107">Inherits from [deliveryOptimizationBandwidth](../resources/intune-deviceconfig-deliveryoptimizationbandwidth.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="b038f-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="b038f-108">Properties</span></span>
-|<span data-ttu-id="b038f-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="b038f-109">Property</span></span>|<span data-ttu-id="b038f-110">型</span><span class="sxs-lookup"><span data-stu-id="b038f-110">Type</span></span>|<span data-ttu-id="b038f-111">説明</span><span class="sxs-lookup"><span data-stu-id="b038f-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="9f954-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="9f954-108">Properties</span></span>
+|<span data-ttu-id="9f954-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="9f954-109">Property</span></span>|<span data-ttu-id="9f954-110">型</span><span class="sxs-lookup"><span data-stu-id="9f954-110">Type</span></span>|<span data-ttu-id="9f954-111">説明</span><span class="sxs-lookup"><span data-stu-id="9f954-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="b038f-112">bandwidthBackgroundPercentageHours</span><span class="sxs-lookup"><span data-stu-id="b038f-112">bandwidthBackgroundPercentageHours</span></span>|[<span data-ttu-id="b038f-113">deliveryOptimizationBandwidthBusinessHoursLimit</span><span class="sxs-lookup"><span data-stu-id="b038f-113">deliveryOptimizationBandwidthBusinessHoursLimit</span></span>](../resources/intune-deviceconfig-deliveryoptimizationbandwidthbusinesshourslimit.md)|<span data-ttu-id="b038f-114">バックグラウンドダウンロードの割合 (時間)。</span><span class="sxs-lookup"><span data-stu-id="b038f-114">Background download percentage hours.</span></span>|
-|<span data-ttu-id="b038f-115">bandwidthForegroundPercentageHours</span><span class="sxs-lookup"><span data-stu-id="b038f-115">bandwidthForegroundPercentageHours</span></span>|[<span data-ttu-id="b038f-116">deliveryOptimizationBandwidthBusinessHoursLimit</span><span class="sxs-lookup"><span data-stu-id="b038f-116">deliveryOptimizationBandwidthBusinessHoursLimit</span></span>](../resources/intune-deviceconfig-deliveryoptimizationbandwidthbusinesshourslimit.md)|<span data-ttu-id="b038f-117">フォアグラウンドダウンロードの割合 (時間)。</span><span class="sxs-lookup"><span data-stu-id="b038f-117">Foreground download percentage hours.</span></span>|
+|<span data-ttu-id="9f954-112">bandwidthBackgroundPercentageHours</span><span class="sxs-lookup"><span data-stu-id="9f954-112">bandwidthBackgroundPercentageHours</span></span>|[<span data-ttu-id="9f954-113">deliveryOptimizationBandwidthBusinessHoursLimit</span><span class="sxs-lookup"><span data-stu-id="9f954-113">deliveryOptimizationBandwidthBusinessHoursLimit</span></span>](../resources/intune-deviceconfig-deliveryoptimizationbandwidthbusinesshourslimit.md)|<span data-ttu-id="9f954-114">バックグラウンドダウンロードの割合 (時間)。</span><span class="sxs-lookup"><span data-stu-id="9f954-114">Background download percentage hours.</span></span>|
+|<span data-ttu-id="9f954-115">bandwidthForegroundPercentageHours</span><span class="sxs-lookup"><span data-stu-id="9f954-115">bandwidthForegroundPercentageHours</span></span>|[<span data-ttu-id="9f954-116">deliveryOptimizationBandwidthBusinessHoursLimit</span><span class="sxs-lookup"><span data-stu-id="9f954-116">deliveryOptimizationBandwidthBusinessHoursLimit</span></span>](../resources/intune-deviceconfig-deliveryoptimizationbandwidthbusinesshourslimit.md)|<span data-ttu-id="9f954-117">フォアグラウンドダウンロードの割合 (時間)。</span><span class="sxs-lookup"><span data-stu-id="9f954-117">Foreground download percentage hours.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="b038f-118">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="b038f-118">Relationships</span></span>
-<span data-ttu-id="b038f-119">なし</span><span class="sxs-lookup"><span data-stu-id="b038f-119">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="9f954-118">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="9f954-118">Relationships</span></span>
+<span data-ttu-id="9f954-119">なし</span><span class="sxs-lookup"><span data-stu-id="9f954-119">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="b038f-120">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="b038f-120">JSON Representation</span></span>
-<span data-ttu-id="b038f-121">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="b038f-121">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="9f954-120">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="9f954-120">JSON Representation</span></span>
+<span data-ttu-id="9f954-121">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="9f954-121">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deliveryOptimizationBandwidthHoursWithPercentage"

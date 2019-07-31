@@ -4,31 +4,32 @@ description: まだ文書化されていません
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f1a5afe7c3c664ac0a0cf808e058617fa3140050
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: d6453d2b47b370a3642409794f3fed96a5f579f6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34958187"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35981375"
 ---
-# <a name="updatewindowsdeviceaccount-action"></a><span data-ttu-id="70497-103">updateWindowsDeviceAccount アクション</span><span class="sxs-lookup"><span data-stu-id="70497-103">updateWindowsDeviceAccount action</span></span>
+# <a name="updatewindowsdeviceaccount-action"></a><span data-ttu-id="30481-103">updateWindowsDeviceAccount アクション</span><span class="sxs-lookup"><span data-stu-id="30481-103">updateWindowsDeviceAccount action</span></span>
 
-> <span data-ttu-id="70497-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="70497-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="30481-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="30481-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="70497-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="70497-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="30481-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="30481-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="70497-106">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="70497-106">Not yet documented</span></span>
+<span data-ttu-id="30481-106">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="30481-106">Not yet documented</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="70497-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="70497-107">Prerequisites</span></span>
-<span data-ttu-id="70497-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="70497-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="30481-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="30481-107">Prerequisites</span></span>
+<span data-ttu-id="30481-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="30481-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="70497-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="70497-110">Permission type</span></span>|<span data-ttu-id="70497-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="70497-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="30481-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="30481-110">Permission type</span></span>|<span data-ttu-id="30481-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="30481-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="70497-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="70497-112">Delegated (work or school account)</span></span>|<span data-ttu-id="70497-113">DeviceManagementManagedDevices.PriviligedOperation.All</span><span class="sxs-lookup"><span data-stu-id="70497-113">DeviceManagementManagedDevices.PriviligedOperation.All</span></span>|
-|<span data-ttu-id="70497-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="70497-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="70497-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="70497-115">Not supported.</span></span>|
-|<span data-ttu-id="70497-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="70497-116">Application</span></span>|<span data-ttu-id="70497-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="70497-117">Not supported.</span></span>|
+|<span data-ttu-id="30481-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="30481-112">Delegated (work or school account)</span></span>|<span data-ttu-id="30481-113">DeviceManagementManagedDevices.PriviligedOperation.All</span><span class="sxs-lookup"><span data-stu-id="30481-113">DeviceManagementManagedDevices.PriviligedOperation.All</span></span>|
+|<span data-ttu-id="30481-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="30481-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="30481-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="30481-115">Not supported.</span></span>|
+|<span data-ttu-id="30481-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="30481-116">Application</span></span>|<span data-ttu-id="30481-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="30481-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="70497-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="70497-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="30481-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="30481-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,30 +41,30 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/updateWindowsDeviceAccount
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="70497-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="70497-119">Request headers</span></span>
-|<span data-ttu-id="70497-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="70497-120">Header</span></span>|<span data-ttu-id="70497-121">値</span><span class="sxs-lookup"><span data-stu-id="70497-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="30481-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="30481-119">Request headers</span></span>
+|<span data-ttu-id="30481-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="30481-120">Header</span></span>|<span data-ttu-id="30481-121">値</span><span class="sxs-lookup"><span data-stu-id="30481-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="70497-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="70497-122">Authorization</span></span>|<span data-ttu-id="70497-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="70497-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="70497-124">承諾</span><span class="sxs-lookup"><span data-stu-id="70497-124">Accept</span></span>|<span data-ttu-id="70497-125">application/json</span><span class="sxs-lookup"><span data-stu-id="70497-125">application/json</span></span>|
+|<span data-ttu-id="30481-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="30481-122">Authorization</span></span>|<span data-ttu-id="30481-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="30481-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="30481-124">承諾</span><span class="sxs-lookup"><span data-stu-id="30481-124">Accept</span></span>|<span data-ttu-id="30481-125">application/json</span><span class="sxs-lookup"><span data-stu-id="30481-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="70497-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="70497-126">Request body</span></span>
-<span data-ttu-id="70497-127">要求本文で、パラメーターの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="70497-127">In the request body, supply JSON representation of the parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="30481-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="30481-126">Request body</span></span>
+<span data-ttu-id="30481-127">要求本文で、パラメーターの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="30481-127">In the request body, supply JSON representation of the parameters.</span></span>
 
-<span data-ttu-id="70497-128">次の表に、このアクションで使用できるパラメーターを示します。</span><span class="sxs-lookup"><span data-stu-id="70497-128">The following table shows the parameters that can be used with this action.</span></span>
+<span data-ttu-id="30481-128">次の表に、このアクションで使用できるパラメーターを示します。</span><span class="sxs-lookup"><span data-stu-id="30481-128">The following table shows the parameters that can be used with this action.</span></span>
 
-|<span data-ttu-id="70497-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="70497-129">Property</span></span>|<span data-ttu-id="70497-130">型</span><span class="sxs-lookup"><span data-stu-id="70497-130">Type</span></span>|<span data-ttu-id="70497-131">説明</span><span class="sxs-lookup"><span data-stu-id="70497-131">Description</span></span>|
+|<span data-ttu-id="30481-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="30481-129">Property</span></span>|<span data-ttu-id="30481-130">型</span><span class="sxs-lookup"><span data-stu-id="30481-130">Type</span></span>|<span data-ttu-id="30481-131">説明</span><span class="sxs-lookup"><span data-stu-id="30481-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="70497-132">updateWindowsDeviceAccountActionParameter</span><span class="sxs-lookup"><span data-stu-id="70497-132">updateWindowsDeviceAccountActionParameter</span></span>|[<span data-ttu-id="70497-133">updateWindowsDeviceAccountActionParameter</span><span class="sxs-lookup"><span data-stu-id="70497-133">updateWindowsDeviceAccountActionParameter</span></span>](../resources/intune-devices-updatewindowsdeviceaccountactionparameter.md)|<span data-ttu-id="70497-134">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="70497-134">Not yet documented</span></span>|
+|<span data-ttu-id="30481-132">updateWindowsDeviceAccountActionParameter</span><span class="sxs-lookup"><span data-stu-id="30481-132">updateWindowsDeviceAccountActionParameter</span></span>|[<span data-ttu-id="30481-133">updateWindowsDeviceAccountActionParameter</span><span class="sxs-lookup"><span data-stu-id="30481-133">updateWindowsDeviceAccountActionParameter</span></span>](../resources/intune-devices-updatewindowsdeviceaccountactionparameter.md)|<span data-ttu-id="30481-134">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="30481-134">Not yet documented</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="70497-135">応答</span><span class="sxs-lookup"><span data-stu-id="70497-135">Response</span></span>
-<span data-ttu-id="70497-136">成功した場合、このアクションは `204 No Content` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="70497-136">If successful, this action returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="30481-135">応答</span><span class="sxs-lookup"><span data-stu-id="30481-135">Response</span></span>
+<span data-ttu-id="30481-136">成功した場合、このアクションは `204 No Content` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="30481-136">If successful, this action returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="70497-137">例</span><span class="sxs-lookup"><span data-stu-id="70497-137">Example</span></span>
+## <a name="example"></a><span data-ttu-id="30481-137">例</span><span class="sxs-lookup"><span data-stu-id="30481-137">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="70497-138">要求</span><span class="sxs-lookup"><span data-stu-id="70497-138">Request</span></span>
-<span data-ttu-id="70497-139">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="70497-139">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="30481-138">要求</span><span class="sxs-lookup"><span data-stu-id="30481-138">Request</span></span>
+<span data-ttu-id="30481-139">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="30481-139">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}/updateWindowsDeviceAccount
 
@@ -86,8 +87,8 @@ Content-length: 532
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="70497-140">応答</span><span class="sxs-lookup"><span data-stu-id="70497-140">Response</span></span>
-<span data-ttu-id="70497-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="70497-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="30481-140">応答</span><span class="sxs-lookup"><span data-stu-id="30481-140">Response</span></span>
+<span data-ttu-id="30481-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="30481-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```
