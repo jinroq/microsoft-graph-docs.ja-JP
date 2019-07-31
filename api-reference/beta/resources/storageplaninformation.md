@@ -1,23 +1,25 @@
 ---
 author: psampath
-ms.author: psampath
+description: Storageplan Information リソースは、ドライブの記憶域クォータプランに関する情報を提供します。
 ms.date: 06/20/2018
 title: StoragePlanInformation
 localization_priority: Normal
-ms.openlocfilehash: 3911d3af5f2149d1043ed246e7c11d287c840842
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: d8ddb39f9f7c6443f0e669052084af27b8fd5cec
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342953"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008083"
 ---
-# <a name="storageplaninformation-resource-type"></a><span data-ttu-id="8492b-102">storageplan 情報リソースの種類</span><span class="sxs-lookup"><span data-stu-id="8492b-102">storagePlanInformation resource type</span></span>
+# <a name="storageplaninformation-resource-type"></a><span data-ttu-id="6086a-103">Storageplan 情報リソースの種類</span><span class="sxs-lookup"><span data-stu-id="6086a-103">storagePlanInformation resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="8492b-103">**storageplan information**リソースは、ドライブの記憶域クォータプランに関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="8492b-103">The **storagePlanInformation** resource provides information about the drive's storage quota plans.</span></span>
+<span data-ttu-id="6086a-104">**Storageplan information**リソースは、ドライブの記憶域クォータプランに関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="6086a-104">The **storagePlanInformation** resource provides information about the drive's storage quota plans.</span></span>
 
-### <a name="json-representation"></a><span data-ttu-id="8492b-104">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="8492b-104">JSON representation</span></span>
+### <a name="json-representation"></a><span data-ttu-id="6086a-105">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="6086a-105">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -31,11 +33,11 @@ ms.locfileid: "33342953"
 }
 
 ```
-## <a name="properties"></a><span data-ttu-id="8492b-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="8492b-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="6086a-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="6086a-106">Properties</span></span>
 
-| <span data-ttu-id="8492b-106">プロパティ名</span><span class="sxs-lookup"><span data-stu-id="8492b-106">Property name</span></span>     | <span data-ttu-id="8492b-107">種類</span><span class="sxs-lookup"><span data-stu-id="8492b-107">Type</span></span>      | <span data-ttu-id="8492b-108">説明</span><span class="sxs-lookup"><span data-stu-id="8492b-108">Description</span></span>                                                             |
+| <span data-ttu-id="6086a-107">プロパティ名</span><span class="sxs-lookup"><span data-stu-id="6086a-107">Property name</span></span>     | <span data-ttu-id="6086a-108">種類</span><span class="sxs-lookup"><span data-stu-id="6086a-108">Type</span></span>      | <span data-ttu-id="6086a-109">説明</span><span class="sxs-lookup"><span data-stu-id="6086a-109">Description</span></span>                                                             |
 |:------------------|:----------|:----------------------------------------------------------------------- |
-| <span data-ttu-id="8492b-109">upgradeavailable</span><span class="sxs-lookup"><span data-stu-id="8492b-109">upgradeAvailable</span></span>  | <span data-ttu-id="8492b-110">Boolean</span><span class="sxs-lookup"><span data-stu-id="8492b-110">Boolean</span></span>   | <span data-ttu-id="8492b-111">利用可能なストレージクォータプランが高であるかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="8492b-111">Indicates if there are higher storage quota plans available.</span></span> <span data-ttu-id="8492b-112">値の取得のみ可能です。</span><span class="sxs-lookup"><span data-stu-id="8492b-112">Read-only.</span></span> |
+| <span data-ttu-id="6086a-110">upgradeAvailable</span><span class="sxs-lookup"><span data-stu-id="6086a-110">upgradeAvailable</span></span>  | <span data-ttu-id="6086a-111">Boolean</span><span class="sxs-lookup"><span data-stu-id="6086a-111">Boolean</span></span>   | <span data-ttu-id="6086a-112">利用可能なストレージクォータプランが高であるかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="6086a-112">Indicates if there are higher storage quota plans available.</span></span> <span data-ttu-id="6086a-113">値の取得のみ可能です。</span><span class="sxs-lookup"><span data-stu-id="6086a-113">Read-only.</span></span> |
 
 
 <!--

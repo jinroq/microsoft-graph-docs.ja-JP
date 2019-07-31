@@ -4,28 +4,29 @@ description: 通話への接続に使用されるメディア構成。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: aa8ec08ce5f4092a8f3d8c89af4a405d3a5c347d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 4d00470d517c4d701a028a1911efe02a6f441639
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342661"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009777"
 ---
-# <a name="mediaconfig-resource-type"></a><span data-ttu-id="21074-103">mediaConfig リソースの種類</span><span class="sxs-lookup"><span data-stu-id="21074-103">mediaConfig resource type</span></span>
+# <a name="mediaconfig-resource-type"></a><span data-ttu-id="375f2-103">mediaConfig リソースの種類</span><span class="sxs-lookup"><span data-stu-id="375f2-103">mediaConfig resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="21074-104">通話への接続に使用されるメディア構成。</span><span class="sxs-lookup"><span data-stu-id="21074-104">The media configuration used to connect to a call.</span></span>
+<span data-ttu-id="375f2-104">通話への接続に使用されるメディア構成。</span><span class="sxs-lookup"><span data-stu-id="375f2-104">The media configuration used to connect to a call.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="21074-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="21074-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="375f2-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="375f2-105">Properties</span></span>
 
-| <span data-ttu-id="21074-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="21074-106">Property</span></span>       | <span data-ttu-id="21074-107">型</span><span class="sxs-lookup"><span data-stu-id="21074-107">Type</span></span>    | <span data-ttu-id="21074-108">説明</span><span class="sxs-lookup"><span data-stu-id="21074-108">Description</span></span>|
+| <span data-ttu-id="375f2-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="375f2-106">Property</span></span>       | <span data-ttu-id="375f2-107">型</span><span class="sxs-lookup"><span data-stu-id="375f2-107">Type</span></span>    | <span data-ttu-id="375f2-108">説明</span><span class="sxs-lookup"><span data-stu-id="375f2-108">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="21074-109">removefromdefaultaudiogroup</span><span class="sxs-lookup"><span data-stu-id="21074-109">removeFromDefaultAudioGroup</span></span> | <span data-ttu-id="21074-110">Boolean</span><span class="sxs-lookup"><span data-stu-id="21074-110">Boolean</span></span> |  |
+| <span data-ttu-id="375f2-109">removeFromDefaultAudioGroup</span><span class="sxs-lookup"><span data-stu-id="375f2-109">removeFromDefaultAudioGroup</span></span> | <span data-ttu-id="375f2-110">Boolean</span><span class="sxs-lookup"><span data-stu-id="375f2-110">Boolean</span></span> |  |
 
-## <a name="json-representation"></a><span data-ttu-id="21074-111">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="21074-111">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="375f2-111">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="375f2-111">JSON representation</span></span>
 
-<span data-ttu-id="21074-112">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="21074-112">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="375f2-112">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="375f2-112">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

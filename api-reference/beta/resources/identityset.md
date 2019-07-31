@@ -1,27 +1,29 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: Identity Set リソースは、id リソースのキー付きコレクションです。
 ms.date: 09/10/2017
 title: IdentitySet
 localization_priority: Normal
-ms.openlocfilehash: b1570fc0ec0a6e28bab569dfae6992675d8b3537
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: c43981c1f7e79567afe901217030a0b5abed6f53
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333661"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006291"
 ---
-# <a name="identityset-resource-type"></a><span data-ttu-id="c4833-102">id セットリソースの種類</span><span class="sxs-lookup"><span data-stu-id="c4833-102">identitySet resource type</span></span>
+# <a name="identityset-resource-type"></a><span data-ttu-id="55456-103">id セットリソースの種類</span><span class="sxs-lookup"><span data-stu-id="55456-103">identitySet resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c4833-103">identity **set**リソースは、 [id](identity.md)リソースのキー付きコレクションです。</span><span class="sxs-lookup"><span data-stu-id="c4833-103">The **identitySet** resource is a keyed collection of [identity](identity.md) resources.</span></span>
+<span data-ttu-id="55456-104">Identity **set**リソースは、 [id](identity.md)リソースのキー付きコレクションです。</span><span class="sxs-lookup"><span data-stu-id="55456-104">The **identitySet** resource is a keyed collection of [identity](identity.md) resources.</span></span>
 
-<span data-ttu-id="c4833-104">_作成者_または_最終更新者_など、アイテムのさまざまなイベントに関連付けられている id のセットを表すために使用されます。</span><span class="sxs-lookup"><span data-stu-id="c4833-104">It is used to represent a set of identities associated with various events for an item, such as _created by_ or _last modified by_.</span></span>
+<span data-ttu-id="55456-105">_作成者_または_最終更新者_など、アイテムのさまざまなイベントに関連付けられている id のセットを表すために使用されます。</span><span class="sxs-lookup"><span data-stu-id="55456-105">It is used to represent a set of identities associated with various events for an item, such as _created by_ or _last modified by_.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="c4833-105">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="c4833-105">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="55456-106">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="55456-106">JSON representation</span></span>
 
-<span data-ttu-id="c4833-106">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="c4833-106">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="55456-107">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="55456-107">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -53,20 +55,20 @@ ms.locfileid: "33333661"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="c4833-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="c4833-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="55456-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="55456-108">Properties</span></span>
 
-| <span data-ttu-id="c4833-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="c4833-108">Property</span></span>    | <span data-ttu-id="c4833-109">型</span><span class="sxs-lookup"><span data-stu-id="c4833-109">Type</span></span>                    | <span data-ttu-id="c4833-110">説明</span><span class="sxs-lookup"><span data-stu-id="c4833-110">Description</span></span>                                             |
+| <span data-ttu-id="55456-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="55456-109">Property</span></span>    | <span data-ttu-id="55456-110">型</span><span class="sxs-lookup"><span data-stu-id="55456-110">Type</span></span>                    | <span data-ttu-id="55456-111">説明</span><span class="sxs-lookup"><span data-stu-id="55456-111">Description</span></span>                                             |
 |:------------|:------------------------|:--------------------------------------------------------|
-| <span data-ttu-id="c4833-111">application</span><span class="sxs-lookup"><span data-stu-id="c4833-111">application</span></span> | [<span data-ttu-id="c4833-112">ID</span><span class="sxs-lookup"><span data-stu-id="c4833-112">Identity</span></span>](identity.md) | <span data-ttu-id="c4833-p101">省略可能。このアクションに関連付けられているアプリケーション。</span><span class="sxs-lookup"><span data-stu-id="c4833-p101">Optional. The application associated with this action.</span></span>  |
-| <span data-ttu-id="c4833-115">conversation</span><span class="sxs-lookup"><span data-stu-id="c4833-115">conversation</span></span>| [<span data-ttu-id="c4833-116">Identity</span><span class="sxs-lookup"><span data-stu-id="c4833-116">Identity</span></span>](identity.md) | <span data-ttu-id="c4833-117">省略可能。</span><span class="sxs-lookup"><span data-stu-id="c4833-117">Optional.</span></span> <span data-ttu-id="c4833-118">このアクションに関連付けられているチームまたはチャネル。</span><span class="sxs-lookup"><span data-stu-id="c4833-118">The team or channel associated with this action.</span></span>       |
-| <span data-ttu-id="c4833-119">conversationIdentityType</span><span class="sxs-lookup"><span data-stu-id="c4833-119">conversationIdentityType</span></span>| [<span data-ttu-id="c4833-120">Identity</span><span class="sxs-lookup"><span data-stu-id="c4833-120">Identity</span></span>](identity.md) | <span data-ttu-id="c4833-121">省略可能。</span><span class="sxs-lookup"><span data-stu-id="c4833-121">Optional.</span></span> <span data-ttu-id="c4833-122">**会話**プロパティがチームまたはチャネルを識別するかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="c4833-122">Indicates whether the **conversation** property identifies a team or channel.</span></span>|
-| <span data-ttu-id="c4833-123">デバイス</span><span class="sxs-lookup"><span data-stu-id="c4833-123">device</span></span>      | [<span data-ttu-id="c4833-124">ID</span><span class="sxs-lookup"><span data-stu-id="c4833-124">Identity</span></span>](identity.md) | <span data-ttu-id="c4833-p104">省略可能。このアクションに関連付けられているデバイス。</span><span class="sxs-lookup"><span data-stu-id="c4833-p104">Optional. The device associated with this action.</span></span>       |
-| <span data-ttu-id="c4833-127">phone</span><span class="sxs-lookup"><span data-stu-id="c4833-127">phone</span></span>       | [<span data-ttu-id="c4833-128">identity</span><span class="sxs-lookup"><span data-stu-id="c4833-128">identity</span></span>](identity.md) | <span data-ttu-id="c4833-129">省略可能。</span><span class="sxs-lookup"><span data-stu-id="c4833-129">Optional.</span></span> <span data-ttu-id="c4833-130">このアクションに関連付けられている電話番号。</span><span class="sxs-lookup"><span data-stu-id="c4833-130">The phone number associated with this action.</span></span> |
-| <span data-ttu-id="c4833-131">user</span><span class="sxs-lookup"><span data-stu-id="c4833-131">user</span></span>        | [<span data-ttu-id="c4833-132">Identity</span><span class="sxs-lookup"><span data-stu-id="c4833-132">Identity</span></span>](identity.md) | <span data-ttu-id="c4833-p106">省略可能。このアクションに関連付けられているユーザー。</span><span class="sxs-lookup"><span data-stu-id="c4833-p106">Optional. The user associated with this action.</span></span>         |
+| <span data-ttu-id="55456-112">application</span><span class="sxs-lookup"><span data-stu-id="55456-112">application</span></span> | [<span data-ttu-id="55456-113">ID</span><span class="sxs-lookup"><span data-stu-id="55456-113">Identity</span></span>](identity.md) | <span data-ttu-id="55456-p101">省略可能。このアクションに関連付けられているアプリケーション。</span><span class="sxs-lookup"><span data-stu-id="55456-p101">Optional. The application associated with this action.</span></span>  |
+| <span data-ttu-id="55456-116">conversation</span><span class="sxs-lookup"><span data-stu-id="55456-116">conversation</span></span>| [<span data-ttu-id="55456-117">Identity</span><span class="sxs-lookup"><span data-stu-id="55456-117">Identity</span></span>](identity.md) | <span data-ttu-id="55456-118">省略可能。</span><span class="sxs-lookup"><span data-stu-id="55456-118">Optional.</span></span> <span data-ttu-id="55456-119">このアクションに関連付けられているチームまたはチャネル。</span><span class="sxs-lookup"><span data-stu-id="55456-119">The team or channel associated with this action.</span></span>       |
+| <span data-ttu-id="55456-120">conversationIdentityType</span><span class="sxs-lookup"><span data-stu-id="55456-120">conversationIdentityType</span></span>| [<span data-ttu-id="55456-121">Identity</span><span class="sxs-lookup"><span data-stu-id="55456-121">Identity</span></span>](identity.md) | <span data-ttu-id="55456-122">省略可能。</span><span class="sxs-lookup"><span data-stu-id="55456-122">Optional.</span></span> <span data-ttu-id="55456-123">**会話**プロパティがチームまたはチャネルを識別するかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="55456-123">Indicates whether the **conversation** property identifies a team or channel.</span></span>|
+| <span data-ttu-id="55456-124">デバイス</span><span class="sxs-lookup"><span data-stu-id="55456-124">device</span></span>      | [<span data-ttu-id="55456-125">ID</span><span class="sxs-lookup"><span data-stu-id="55456-125">Identity</span></span>](identity.md) | <span data-ttu-id="55456-p104">省略可能。このアクションに関連付けられているデバイス。</span><span class="sxs-lookup"><span data-stu-id="55456-p104">Optional. The device associated with this action.</span></span>       |
+| <span data-ttu-id="55456-128">phone</span><span class="sxs-lookup"><span data-stu-id="55456-128">phone</span></span>       | [<span data-ttu-id="55456-129">identity</span><span class="sxs-lookup"><span data-stu-id="55456-129">identity</span></span>](identity.md) | <span data-ttu-id="55456-130">省略可能。</span><span class="sxs-lookup"><span data-stu-id="55456-130">Optional.</span></span> <span data-ttu-id="55456-131">このアクションに関連付けられている電話番号。</span><span class="sxs-lookup"><span data-stu-id="55456-131">The phone number associated with this action.</span></span> |
+| <span data-ttu-id="55456-132">user</span><span class="sxs-lookup"><span data-stu-id="55456-132">user</span></span>        | [<span data-ttu-id="55456-133">Identity</span><span class="sxs-lookup"><span data-stu-id="55456-133">Identity</span></span>](identity.md) | <span data-ttu-id="55456-p106">省略可能。このアクションに関連付けられているユーザー。</span><span class="sxs-lookup"><span data-stu-id="55456-p106">Optional. The user associated with this action.</span></span>         |
 
-## <a name="remarks"></a><span data-ttu-id="c4833-135">注釈</span><span class="sxs-lookup"><span data-stu-id="c4833-135">Remarks</span></span> 
+## <a name="remarks"></a><span data-ttu-id="55456-136">注釈</span><span class="sxs-lookup"><span data-stu-id="55456-136">Remarks</span></span> 
 
-<span data-ttu-id="c4833-136">「[呼び出し](call.md)を使用したリソースの**設定**」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c4833-136">See [Call](call.md) for usage of **identitySet** resources.</span></span>
+<span data-ttu-id="55456-137">「[呼び出し](call.md)を使用したリソースの**設定**」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="55456-137">See [Call](call.md) for usage of **identitySet** resources.</span></span>
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
