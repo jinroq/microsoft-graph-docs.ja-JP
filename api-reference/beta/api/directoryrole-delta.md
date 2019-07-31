@@ -4,12 +4,13 @@ description: リソースコレクション全体の完全な読み取りを実�
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b7265470a3d78e972339b300cd612e0e3364b651
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 5a705ccd50d23a426f85d468d4b911a9771eb55f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35862283"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957718"
 ---
 # <a name="directoryrole-delta"></a>directoryRole: delta
 
@@ -23,9 +24,9 @@ ms.locfileid: "35862283"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委任 (職場または学校のアカウント) | RoleManagement、RoleManagement、Directory.accessasuser.all、および all のいずれかを取得します。すべてのディレクトリについては。    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | Directory.Read.All、Directory.ReadWrite.All |
+|アプリケーション | RoleManagement、RoleManagement、および All のいずれかのディレクトリを参照しています。 |
 
 ## <a name="http-request"></a>HTTP 要求
 

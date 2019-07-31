@@ -4,12 +4,13 @@ description: グラフの軸の目盛線または補助目盛線を表します�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: dce652981a16445d82b4d6e556fc7d5ce839ed26
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: bf2b481b3b60b7cf5893a1c7ab6e2f168c7cc1ca
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348901"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964023"
 ---
 # <a name="workbookchartgridlines-resource-type"></a>workbookChartGridlines リソースの種類
 
@@ -22,15 +23,15 @@ ms.locfileid: "33348901"
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[workbookChartGridlines を取得する](../api/chartgridlines-get.md) | [workbookChartGridlines](workbookchartgridlines.md) |chartGridlines オブジェクトのプロパティと関係を読み取ります。|
+|[WorkbookChartGridlines を取得する](../api/chartgridlines-get.md) | [workbookChartGridlines](workbookchartgridlines.md) |chartGridlines オブジェクトのプロパティと関係を読み取ります。|
 |[Update](../api/chartgridlines-update.md) | [workbookChartGridlines](workbookchartgridlines.md)    |ChartGridlines オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |visible|ブール値|軸の目盛線を表示するか非表示にするかを表すブール型の値。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |format|[workbookChartGridlinesFormat](workbookchartgridlinesformat.md)|グラフの目盛線の書式設定を表します。 読み取り専用です。|

@@ -4,12 +4,13 @@ description: モバイルアプリのトラブルシューティングイベン�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: efef2bb43c34c004df48453ca6a2713d445ec970
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: resourcePageType
+ms.openlocfilehash: 2d145212645283738d1248bd05c50b1f6658460f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35737364"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967218"
 ---
 # <a name="mobileapptroubleshootingappstatehistory-resource-type"></a>mobileAppTroubleshootingAppStateHistory リソースの種類
 

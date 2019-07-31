@@ -4,12 +4,13 @@ description: Apple Vpp トークントラブルシューティングイベント
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 66fde3fafad097ed59b30de279efe13b358984b8
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: e740f551c8504fa5786f10f9a4d8ff49aa207cae
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34988203"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967281"
 ---
 # <a name="applevpptokentroubleshootingevent-resource-type"></a>りんご Evpptokenのトラブルシューティングイベントリソースの種類
 

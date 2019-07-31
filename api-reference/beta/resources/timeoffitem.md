@@ -1,29 +1,30 @@
 ---
-title: timeoffitem リソースの種類
-description: timeoff のバージョンを表します。
+title: timeOffItem リソースの種類
+description: TimeOff のバージョンを表します。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3b5b819b9179d266064d7ddf0f6636b9027591af
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType_
+ms.openlocfilehash: 6b240f587e20e2da178f9afa3e8d712cf2ae114d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345503"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964306"
 ---
-# <a name="timeoffitem-resource-type"></a>timeoffitem リソースの種類
+# <a name="timeoffitem-resource-type"></a>timeOffItem リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[timeoff](timeoff.md)のバージョンを表します。
+[Timeoff](timeoff.md)のバージョンを表します。
 
 ## <a name="properties"></a>プロパティ
 | プロパティ                         | 型                    | 説明                                                                                                                                                                        |
 |------------------------------|-------------------------|---------------------------------------------------------------------------------------------|
-| timeoff理由 id               | string                  | `timeOffReason`のの ID `timeOffItem`。 必須です。     |
+| Timeoff理由 Id               | string                  | `timeOffReason`のの ID `timeOffItem`。 必須です。     |
 | startDateTime               | DateTimeOffset                  | の開始日時`timeOffItem`。 必須です。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表します。これは常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、'2014-01-01T00:00:00Z'.のようになります。 |
 | endDateTime               | DateTimeOffset                  | の終了日時`timeOffItem`。 必須です。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表します。これは常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、'2014-01-01T00:00:00Z'.のようになります。 |
-| theme | scheduleentitytheme   | サポートされている色: 白。水色緑青紫色ピンクイエロー灰色darkBlue;darkGreen;darkPurple;darkPink;darkYellow。 |
+| theme | scheduleEntityTheme   | サポートされている色: 白。水色緑青紫色ピンクイエロー灰色darkBlue;darkGreen;darkPurple;darkPink;darkYellow. |
 
 ## <a name="json-representation"></a>JSON 表記
 

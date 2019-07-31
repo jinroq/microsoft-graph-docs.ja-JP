@@ -4,12 +4,13 @@ description: コンテキストに応じて、デバイスのインスタンス�
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
-ms.openlocfilehash: c975abfa3cb580d107967c7adaf66627bad2ad2e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: resourcePageType
+ms.openlocfilehash: 474ac908edee316a63c3610782cc4b8dcce070f5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33938731"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967374"
 ---
 # <a name="reportroot-resource-type"></a>reportRoot リソースの種類
 
@@ -39,7 +40,7 @@ ms.locfileid: "33938731"
 |:---|:---|:---|
 |id|String|このエンティティの一意識別子です。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記

@@ -4,12 +4,13 @@ description: androidLobApp オブジェクトのプロパティを更新しま�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c4641370fe8e37994fd715bae92b84493167db8e
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 928620e0ac689d139fe1ae953b7697efd2371119
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34966321"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35952269"
 ---
 # <a name="update-androidlobapp"></a>androidLobApp の更新
 

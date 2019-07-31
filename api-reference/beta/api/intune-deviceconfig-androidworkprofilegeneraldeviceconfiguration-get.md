@@ -4,12 +4,13 @@ description: Androidwork Profile一般の Devic/オブジェクトのプロパ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a2773dec43aff42f911630a0e6af0ea27f785f66
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 7936e34f8d226e5e1495e14f12a73badfc171522
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34969380"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35950799"
 ---
 # <a name="get-androidworkprofilegeneraldeviceconfiguration"></a>Androidwork Profileの Devic/デバイスを取得する
 

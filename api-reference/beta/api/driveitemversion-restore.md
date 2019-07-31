@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: DriveItem の旧バージョンを現在のバージョンに復元します。 旧バージョンのコンテンツを持つ新しいバージョンを作成します。しかし、ファイルの既存のバージョンはすべて保持されます。
 ms.date: 09/10/2017
 title: 前のバージョンを復元する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 01e423c5bfb96b0f48c34f4615e1b49e1b533a27
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 73c5f590976dc8b6f2e529421449895bb1863f8d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35860828"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956906"
 ---
 # <a name="restore-a-previous-version-of-a-driveitem"></a>DriveItem の旧バージョンを復元する
 

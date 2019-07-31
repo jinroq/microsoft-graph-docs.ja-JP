@@ -4,12 +4,13 @@ description: シート保護のオプションを表します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: c5f5a953490eebf456ce4cc37b515c758630b3ce
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 396a8ad931c78dc6a7aa48b3c241debbaf91a132
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348860"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35963841"
 ---
 # <a name="workbookworksheetprotectionoptions-resource-type"></a>workbookWorksheetProtectionOptions リソースの種類
 
@@ -20,16 +21,16 @@ ms.locfileid: "33348860"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|allowAutoFilter|boolean|自動フィルター機能の使用を可能にするワークシート保護オプションを表します。|
-|allowDeleteColumns|boolean|列の削除を可能にするワークシート保護オプションを表します。|
-|allowDeleteRows|boolean|行の削除を可能にするワークシート保護オプションを表します。|
-|allowFormatCells|boolean|セルの書式設定を可能にするワークシート保護オプションを表します。|
-|allowFormatColumns|boolean|列の書式設定を可能にするワークシート保護オプションを表します。|
-|allowFormatRows|boolean|行の書式設定を可能にするワークシート保護オプションを表します。|
-|allowInsertColumns|boolean|列の挿入を可能にするワークシート保護オプションを表します。|
-|allowInsertHyperlinks|boolean|ハイパーリンクの挿入を可能にするワークシート保護オプションを表します。|
-|allowInsertRows|boolean|行の挿入を可能にするワークシート保護オプションを表します。|
-|allowPivotTables|boolean|ピボット テーブル機能の使用を可能にするワークシート保護オプションを表します。|
+|allowAutoFilter|ブール値|自動フィルター機能の使用を可能にするワークシート保護オプションを表します。|
+|allowDeleteColumns|ブール値|列の削除を可能にするワークシート保護オプションを表します。|
+|allowDeleteRows|ブール値|行の削除を可能にするワークシート保護オプションを表します。|
+|allowFormatCells|ブール値|セルの書式設定を可能にするワークシート保護オプションを表します。|
+|allowFormatColumns|ブール値|列の書式設定を可能にするワークシート保護オプションを表します。|
+|allowFormatRows|ブール値|行の書式設定を可能にするワークシート保護オプションを表します。|
+|allowInsertColumns|ブール値|列の挿入を可能にするワークシート保護オプションを表します。|
+|allowInsertHyperlinks|ブール値|ハイパーリンクの挿入を可能にするワークシート保護オプションを表します。|
+|allowInsertRows|ブール値|行の挿入を可能にするワークシート保護オプションを表します。|
+|allowPivotTables|ブール値|ピボット テーブル機能の使用を可能にするワークシート保護オプションを表します。|
 |allowSort|ブール値|並ベ替え機能の使用を可能にするワークシート保護オプションを表します。|
 
 ## <a name="json-representation"></a>JSON 表記

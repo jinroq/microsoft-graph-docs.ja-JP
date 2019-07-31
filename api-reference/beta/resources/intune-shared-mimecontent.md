@@ -4,12 +4,13 @@ description: 汎用 MIME コンテンツのプロパティが含まれていま�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d8114074b99957c687079ac80abef7a4f704444b
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: f548cf98adba98518fcbc0f3c4b06b583ff5e234
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34986376"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967358"
 ---
 # <a name="mimecontent-resource-type"></a>mimeContent リソースの種類
 

@@ -4,12 +4,13 @@ description: '**InvitationParticipant**は、会話出席依頼に関連付け�
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 56eb1ad90410edca795a8e29ecaa4b8b94e915ee
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 570c2740cce2f4bc3b5584ba04ed50c9467591af
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345442"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967155"
 ---
 # <a name="invitationparticipantinfo-resource-type"></a>invitationParticipantInfo リソースの種類
 
@@ -21,7 +22,7 @@ ms.locfileid: "33345442"
 
 | プロパティ                           | 型                          | 説明                                                                          |
 | :--------------------------------- | :---------------------------- | :----------------------------------------------------------------------------------- |
-| endpointtype                       | String                        | 使用可能な値は、`default`、`voicemail` です。 |
+| endpointType                       | String                        | 使用可能な値は、`default`、`voicemail` です。 |
 | 独自性                           | [identitySet](identityset.md) | この招待に関連付けられている id[セット](identityset.md)。                   |
 | languageId                         | String                        | 言語のカルチャ文字列。                                                                                     |
 | エリア                             | String                        | 参加者の地域。                                                           |

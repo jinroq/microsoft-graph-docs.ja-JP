@@ -2,12 +2,15 @@
 title: アイコンを更新する
 description: アイコン オブジェクトのプロパティを更新します。
 localization_priority: Normal
-ms.openlocfilehash: fec104af279586fe1d532361ba7b016ed3a64bf3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+author: ''
+ms.prod: ''
+ms.openlocfilehash: 5228bd86e11aeccd76003f419f095a87228613e5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33323931"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953214"
 ---
 # <a name="update-icon"></a>アイコンを更新する
 

@@ -1,21 +1,22 @@
 ---
-title: educationCategory を作成する
+title: EducationCategory を作成する
 description: 新しいカテゴリを作成します。
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: eb169310f77e2f4f13a06dbb9871db07dc392101
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 16f7f4bf6ea58aa5d29ae63b95f4b104d0dd1d93
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324675"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955370"
 ---
-# <a name="create-educationcategory"></a>educationCategory を作成する
+# <a name="create-educationcategory"></a>EducationCategory を作成する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[educationClass](../resources/educationclass.md)に新しい[educationCategory](../resources/educationcategory.md)を作成します。
+[EducationClass](../resources/educationclass.md)に新しい[educationCategory](../resources/educationcategory.md)を作成します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -66,7 +67,7 @@ Content-length: 33
 ##### <a name="response"></a>応答
 応答の例を次に示します。 
 
->**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
+>**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 
 <!-- {
   "blockType": "ignored",

@@ -1,19 +1,22 @@
 ---
 title: デバイス コマンドの状態を取得する
-description: デバイス上のコマンドの状態を取得します。 状態コードの完全な一覧については、「actionstatus の一覧」を参照してください。
+description: デバイス上のコマンドの状態を取得します。 状態コードの完全な一覧については、「actionStatus の一覧」を参照してください。
 localization_priority: Normal
-ms.openlocfilehash: 9b914cdfde78ce50df812acb09dc034c978c7e08
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+author: ''
+ms.prod: ''
+ms.openlocfilehash: 74104859b0621e51c0af9eced15912632fe5b9fb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324998"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954306"
 ---
 # <a name="get-device-command-status"></a>デバイス コマンドの状態を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-デバイス上のコマンドの状態を取得します。 状態コードの完全な一覧については、「 [actionstatus の一覧](#list-of-actionstatus)」を参照してください。
+デバイス上のコマンドの状態を取得します。 状態コードの完全な一覧については、「 [actionStatus の一覧](#list-of-actionstatus)」を参照してください。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -63,15 +66,15 @@ HTTP/1.1 200 OK
   }
 ```
 
-## <a name="list-of-actionstatus"></a>actionstatus の一覧
+## <a name="list-of-actionstatus"></a>ActionStatus の一覧
 
 - 要求のコマンドが作成され、処理を待っています
 - 送信ターゲット、//コマンドがターゲットデバイスに送信されました
 - コマンドを実行中で、ターゲットデバイスの確認済み受信を実行中です。
 - 完了、//コマンドの実行が完了
 - 失敗/送信、//サービスがターゲットデバイスにコマンドを送信できませんでした
-- executionfailed、//コマンドの実行に失敗しました
-- デバイスが connectedstandby の状態にある場合、コマンドはクライアントによってドロップされています。
+- executionFailed、//コマンドの実行に失敗しました
+- デバイスが ConnectedStandby の状態にある場合、コマンドはクライアントによってドロップされています。
 - cancel、コマンドをキャンセルする
 - コマンドをキャンセルする、//キャンセルする
 - 取り消し済み//コマンドは取り消されました
@@ -82,7 +85,7 @@ HTTP/1.1 200 OK
 
 ## <a name="example"></a>例
 
-この例では、デバイスの id と、デバイスに発行されたコマンドの id が必要になります。 デバイス ID は GET 呼び出し`/me/devices`を発行したときに返され、に対して`/me/devices/{id}/command`POST 呼び出しを実行すると、コマンド id が返されます。
+この例では、デバイスの ID と、デバイスに発行されたコマンドの ID が必要になります。 デバイス ID は GET 呼び出し`/me/devices`を発行したときに返され、に対して`/me/devices/{id}/command`POST 呼び出しを実行すると、コマンド id が返されます。
 
 #### <a name="request"></a>要求
 
@@ -176,7 +179,7 @@ HTTP/1.1 200 OK
 
 ### <a name="example"></a>例
 
-この例では、デバイスの id と、デバイスに発行されたコマンドの id が必要になります。 デバイス ID は GET 呼び出し`/me/devices`を発行したときに返され、に対して`/me/devices/{id}/command`POST 呼び出しを実行すると、コマンド id が返されます。
+この例では、デバイスの ID と、デバイスに発行されたコマンドの ID が必要になります。 デバイス ID は GET 呼び出し`/me/devices`を発行したときに返され、に対して`/me/devices/{id}/command`POST 呼び出しを実行すると、コマンド id が返されます。
 
 #### <a name="request"></a>要求
 

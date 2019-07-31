@@ -4,12 +4,13 @@ description: モバイルデバイスを管理に追加する方法には、次�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3ae3edcb1d6411e889381c2171f0daeb1cbcc528
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 89efb76eb78121937dd2f0558986af0df1750aa9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34996142"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967470"
 ---
 # <a name="deviceenrollmenttype-enum-type"></a>deviceEnrollmentType 列挙型
 

@@ -4,12 +4,13 @@ description: Microsoft Graph API (ベータ版) からの directoryAudit リソ�
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e46a12652e36a2395590286c884c95a7e2cf9612
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: dd6cf452e7e26a4ab1ff0e3b0776ecd9130dfebf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35862514"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35951240"
 ---
 # <a name="get-directoryaudit"></a>directoryAudit を取得する
 

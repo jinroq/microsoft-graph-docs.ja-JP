@@ -2,12 +2,15 @@
 title: secureScoreControlProfile リソースの種類
 description: テナントのセキュリティスコア (コントロールデータごと) を表します。 既定では、テナントのすべてのコントロールを返し、個々のコントロールを明示的に取得することができます。
 localization_priority: Normal
-ms.openlocfilehash: 41a74af0de47bbe77b8ea04cbea011a6f085d1bb
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 5e244576cb014719d454fe37bd8395054efe2e2b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343412"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965281"
 ---
 # <a name="securescorecontrolprofile-resource-type"></a>secureScoreControlProfile リソースの種類
 
@@ -20,7 +23,7 @@ ms.locfileid: "33343412"
 
 | メソッド   | 戻り値の型|説明|
 |:---------------|:--------|:----------|
-|[secureScoreControlProfiles のリスト](../api/securescorecontrolprofiles-list.md) | [secureScoreControlProfile](securescorecontrolprofiles.md)コレクション |secureScoreControlProfile オブジェクトのコレクションを取得します。|
+|[secureScoreControlProfiles のリスト](../api/securescorecontrolprofiles-list.md) | [secureScoreControlProfile](securescorecontrolprofiles.md)コレクション |SecureScoreControlProfile オブジェクトのコレクションを取得します。|
 
 
 ## <a name="properties"></a>プロパティ
@@ -31,20 +34,20 @@ ms.locfileid: "33343412"
 |   controlName |   String  |   コントロールの名前を指定します。 |
 |   title   |   String  |   コントロールのタイトルを指定します。   |
 | complianceInformation | [complianceInformation](complianceinformation.md)コレクション | セキュリティで保護されたスコアコントロールに関連付けられているコンプライアンス情報のコレクション |
-|   controlcategory |   String  |   コントロールアクションカテゴリ (アカウント、データ、デバイス、アプリ、インフラストラクチャ)。  |
+|   controlCategory |   String  |   コントロールアクションカテゴリ (アカウント、データ、デバイス、アプリ、インフラストラクチャ)。  |
 |   actionType  |   String  |   アクションの種類 (Config、Review、Behavior) を制御します。 |
 |   service |   String  |   コントロールを所有するサービス (Exchange、Sharepoint、Azure AD)。 |
-|   maxscore |  String  |   指定された日付における現在の取得最高スコア。   |
+|   maxScore |  String  |   指定された日付における現在の取得最高スコア。   |
 |   層 |  String  |   Control 層 (コア、多層防御、詳細)    |
-|   userimpact |    String  | 制御を実装するユーザーへの影響 (低、中、高)。    |
-|   implementationCost |    String  |   implemmentating コントロールのリソースコスト (低、中、高)。 |
+|   userImpact |    String  | 制御を実装するユーザーへの影響 (低、中、高)。    |
+|   implementationCost |    String  |   Implemmentating コントロールのリソースコスト (低、中、高)。 |
 |   rank |  Int32   |   Microsoft のスタックランキング。   |
-|   主 |   String コレクション   |   統制によって軽減される脅威のリスト (accountbreach、datadeletion、dataexのフィルター、dataSpillage、elevationOfPrivilege、maliciousInsider、passwordcracking、phishingOrWhaling、スプーフィング)。 |
+|   主 |   String コレクション   |   統制によって軽減される脅威のリスト (accountBreach、dataDeletion、Dataexのフィルター、dataSpillage、elevationOfPrivilege、maliciousInsider、passwordCracking、phishingOrWhaling、スプーフィング)。 |
 |   予定 |    Boolean |   コントロールが減価償却されているかどうかを示すフラグです。   |
 |   修復 |   String  |   修復に役立つコントロールの説明。 |
 |   remediationImpact | String  |   修復のユーザーへの影響についての説明。 |
 |   actionUrl | String  |   コントロールを actioned できる場所の URL。 |
-|   controlstateupdates | [secureScoreControlStateUpdate](securescorecontrolstateupdate.md)コレクション |    テナントがコントロールをマークした場所を示すフラグ (ignore、thirdParty、レビュー済み) ([更新プログラム](../api/securescorecontrolprofiles-update.md)をサポート)。 |
+|   controlStateUpdates | [secureScoreControlStateUpdate](securescorecontrolstateupdate.md)コレクション |    テナントがコントロールをマークした場所を示すフラグ (ignore、thirdParty、レビュー済み) ([更新プログラム](../api/securescorecontrolprofiles-update.md)をサポート)。 |
 |   vendorInformation | [securityVendorInformation](securityvendorinformation.md) |
 
 ## <a name="relationships"></a>リレーションシップ

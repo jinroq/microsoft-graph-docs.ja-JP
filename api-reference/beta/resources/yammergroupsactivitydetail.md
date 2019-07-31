@@ -4,12 +4,13 @@ description: リソースの JSON 表記を次に示します。
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: c5b580f643686c27497fd24a6fe00c7750a6a938
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: f16eda3f28556a18c47c68d532ace4244edfad19
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551422"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35963753"
 ---
 # <a name="yammergroupsactivitydetail-resource-type"></a>yammerGroupsActivityDetail リソースの種類
 
@@ -17,18 +18,18 @@ ms.locfileid: "32551422"
 
 | プロパティ           | 型    |
 | :----------------- | :------ |
-| reportrefreshdate  | Date    |
-| groupdisplayname   | String  |
-| isDeleted          | ブール値 |
+| reportRefreshDate  | 日付    |
+| groupDisplayName   | String  |
+| isDeleted          | Boolean |
 | ownerPrincipalName | String  |
-| lastactivitydate   | Date    |
+| lastActivityDate   | 日付    |
 | groupType          | String  |
-| office365Connected | ブール値 |
+| office365Connected | Boolean |
 | memberCount        | Int64   |
 | postedCount        | Int64   |
-| readcount          | Int64   |
-| dcount         | Int64   |
-| reportperiod       | String  |
+| readCount          | Int64   |
+| Dcount         | Int64   |
+| reportPeriod       | String  |
 
 ## <a name="json-representation"></a>JSON 表記
 
