@@ -1,16 +1,16 @@
 ---
 author: JeremyKelley
 ms.author: JeremyKelley
-ms.date: 09/10/2017
-title: Drive
+title: Drive リソース型
+description: ユーザーの OneDrive または SharePoint のドキュメント ライブラリを表すドライブ リソース
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: a01a2a8a8ad827145ee98a3ef0687546581d3096
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: f47bacdac64a535ba3d7ff695d1aa0c1c46b06b8
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340659"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35932012"
 ---
 # <a name="drive-resource-type"></a>Drive リソース型
 
@@ -19,6 +19,54 @@ ms.locfileid: "33340659"
 ドライブ リソースは、ユーザーの OneDrive または SharePoint のドキュメント ライブラリを表す、最上位のオブジェクトです。
 
 OneDrive のユーザーは、少なくとも 1 つのドライブ (そのユーザーの既定のドライブ) を常に使用できます。OneDrive のライセンスが付与されていないユーザーには、使用可能な既定のドライブがないことがあります。
+
+## <a name="methods"></a>メソッド
+
+|                        メソッド                              |         戻り値の種類         | 説明 |
+| :--------------------------------------------------------- | :-------------------------- |-------------|
+| [ドライブを取得する][drive-get]                                     | ドライブ                       | ドライブに関するメタデータを取得する |
+| [ドライブのルートを取得する][item-get]                                 | [driveItem][]               | ドライブのルート フォルダーを取得する |
+| [アクティビティを一覧表示する][drive-activities]                        | [itemActivity][] コレクション | ドライブの下に発生したアクティビティを一覧表示する |
+| [フォローされたアイテムを一覧表示する][drive-following]                     | [driveItem][] コレクション    | ユーザーのフォローされたドライブアイテムを一覧表示する |
+| [子を一覧表示する][item-children]                             | [driveItem][] コレクション    | ドライブのルート フォルダーの子を一覧表示する |
+| [変更を一覧表示する][item-changes]                               | [driveItem][] コレクション    | ドライブ内のすべてのドライブアイテムの変更を一覧表示する |
+| [検索][item-search]                                      | [driveItem][] コレクション    | ドライブでドライブアイテムを検索する |
+| [特殊なフォルダーを取得する](../api/drive-get-specialfolder.md)    | [driveItem][]               | 特殊なフォルダーに正規名でアクセスする |
+
+
+## <a name="properties"></a>プロパティ
+
+| プロパティ             | 型                          | 説明                                                                                                                                                                                                                      |
+| :------------------- | :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| createdBy            | [identitySet][]               | アイテムを作成したユーザーの ID、デバイス、アプリケーション。読み取り専用です。                                                                                                                                                  |
+| createdDateTime      | dateTimeOffset                | アイテム作成の日時。読み取り専用です。                                                                                                                                                                                       |
+| 説明          | String                        | ユーザーに表示されるドライブの説明を提供します。 読み取り/書き込み。
+| driveType            | String                        | このリソースで表されるドライブの種類についての説明。OneDrive 個人用のドライブは `personal` を返します。OneDrive for Business は `business` を返します。SharePoint ドキュメント ライブラリは `documentLibrary` を返します。読み取り専用。 |
+| id                   | String                        | ドライブの一意識別子。読み取り専用。                                                                                                                                                                                   |
+| lastModifiedBy       | [identitySet][]               | アイテムを最終更新したユーザーの ID、デバイス、アプリケーション。読み取り専用です。                                                                                                                                           |
+| lastModifiedDateTime | dateTimeOffset                | アイテムが最後に変更された日時。読み取り専用です。                                                                                                                                                                             |
+| name                 | string                        | アイテムの名前。読み取り/書き込み。                                                                                                                                                                                                |
+| owner                | [identitySet](identityset.md) | 省略可能。ドライブを所有しているユーザー アカウント。読み取り専用です。                                                                                                                                                                       |
+| quota                | [quota](quota.md)             | 省略可能。ドライブの記憶領域クォータに関する情報。読み取り専用です。                                                                                                                                                          |
+| sharepointIds        | [sharepointIds][]             | SharePoint REST 互換性に役立つ識別子を返します。読み取り専用です。                                                                                                                                                         |
+| system               | [systemFacet][]               | 存在する場合は、これがシステム管理のドライブであることを示しています。 読み取り専用です。
+| webUrl               | string (URL)                  | ブラウザーでリソースを表示するための URL。読み取り専用です。                                                                                                                                                                        |
+
+[identitySet]: identityset.md
+[sharepointIds]: sharepointids.md
+[systemFacet]: systemfacet.md
+
+## <a name="relationships"></a>リレーションシップ
+
+| リレーションシップ | 型                                 | 説明
+|:-------------|:-------------------------------------|:-----------------------
+| アクティビティ   | [itemActivity][] コレクション          | このドライブに対して行われた最近のアクティビティのリストです。
+| バンドル      | [driveItem][] コレクション             | [バンドル][bundle] のコレクション (アルバムとアイテムの複数選択共有セット)。 個人用 OneDrive でのみ。
+| フォロー中    | [driveItem][] コレクション             | ユーザーがフォローしているアイテムの一覧。 OneDrive for Business のみ。
+| items        | [driveItem][] コレクション             | ドライブに含まれているすべてのアイテム。読み取り専用。Null 許容型。
+| root         | [driveItem][]                        | ドライブのルート フォルダー。読み取り専用。
+| special      | [driveItem][] コレクション             | OneDrive で使用可能な共通フォルダーのコレクション。読み取り専用。Null 許容型。
+
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -70,53 +118,9 @@ Drive リソースの JSON 表記を以下に示します。
 }
 ```
 
-## <a name="properties"></a>プロパティ
 
-| プロパティ             | 型                          | 説明                                                                                                                                                                                                                      |
-| :------------------- | :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| createdBy            | [identitySet][]               | アイテムを作成したユーザーの ID、デバイス、アプリケーション。読み取り専用です。                                                                                                                                                  |
-| createdDateTime      | dateTimeOffset                | アイテム作成の日時。読み取り専用です。                                                                                                                                                                                       |
-| 説明          | String                        | ユーザーに表示されるドライブの説明を提供します。 読み取り/書き込み。
-| driveType            | String                        | このリソースで表されるドライブの種類についての説明。OneDrive 個人用のドライブは `personal` を返します。OneDrive for Business は `business` を返します。SharePoint ドキュメント ライブラリは `documentLibrary` を返します。読み取り専用。 |
-| id                   | String                        | ドライブの一意識別子。読み取り専用。                                                                                                                                                                                   |
-| lastModifiedBy       | [identitySet][]               | アイテムを最終更新したユーザーの ID、デバイス、アプリケーション。読み取り専用です。                                                                                                                                           |
-| lastModifiedDateTime | dateTimeOffset                | アイテムが最後に変更された日時。読み取り専用です。                                                                                                                                                                             |
-| name                 | string                        | アイテムの名前。読み取り/書き込み。                                                                                                                                                                                                |
-| owner                | [identitySet](identityset.md) | 省略可能。ドライブを所有しているユーザー アカウント。読み取り専用です。                                                                                                                                                                       |
-| quota                | [quota](quota.md)             | 省略可能。ドライブの記憶領域クォータに関する情報。読み取り専用です。                                                                                                                                                          |
-| sharepointIds        | [sharepointIds][]             | SharePoint REST 互換性に役立つ識別子を返します。読み取り専用です。                                                                                                                                                         |
-| system               | [systemFacet][]               | 存在する場合は、これがシステム管理のドライブであることを示しています。 読み取り専用です。
-| webUrl               | string (URL)                  | ブラウザーでリソースを表示するための URL。読み取り専用です。                                                                                                                                                                        |
-
-[identitySet]: identityset.md
-[sharepointIds]: sharepointids.md
-[systemFacet]: systemfacet.md
-
-## <a name="relationships"></a>リレーションシップ
-
-| リレーションシップ | 型                                 | 説明
-|:-------------|:-------------------------------------|:-----------------------
-| アクティビティ   | [itemActivity][] コレクション          | このドライブに対して行われた最近のアクティビティのリストです。
-| items        | [driveItem](driveitem.md) コレクション | ドライブに含まれているすべてのアイテム。読み取り専用。Null 許容型。
-| root         | [driveItem](driveitem.md)            | ドライブのルート フォルダー。読み取り専用。
-| special      | [driveItem](driveitem.md) コレクション | OneDrive で使用可能な共通フォルダーのコレクション。読み取り専用。Null 許容型。
-| フォロー中    | [driveItem](driveitem.md) コレクション | ユーザーがフォローしているアイテムの一覧。 OneDrive for Business のみ。
-
-## <a name="methods"></a>メソッド
-
-|                        共通タスク                         |         HTTP メソッド         |
-| :--------------------------------------------------------- | :-------------------------- |
-| [別の Drive の Drive メタデータを取得する][drive-get]           | `GET /drives/{drive-id}`    |
-| [ユーザーの既定のドライブのルート フォルダーを取得する][item-get]       | `GET /drive/root`           |
-| [ドライブのアクティビティを一覧表示する][drive-activities]        | `GET /drive/activities`     |
-| [フォローされたアイテムを一覧表示する][drive-following]                     | `GET /drive/following`      |
-| [ドライブの子を一覧表示する][item-children]             | `GET /drive/root/children`  |
-| [ドライブ内のすべてのアイテムの変更を一覧表示する][item-changes]    | `GET /drive/root/delta`     |
-| [ドライブ内のアイテムを検索する][item-search]               | `GET /drive/root/search`    |
-| [特別なフォルダーにアクセスする](../api/drive-get-specialfolder.md) | `GET /drive/special/{name}` |
-
-前の表では例に `/drive` を使用していますが、他のパスも有効です。
-
+[bundle]: bundle.md
+[driveItem]: driveItem.md
 [itemActivity]: itemactivity.md
 [item-resource]: driveitem.md
 [identity-set]: identityset.md

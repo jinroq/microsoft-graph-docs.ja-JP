@@ -1,30 +1,31 @@
 ---
-title: teamstab リソースの種類
-description: 'teamstab は、チーム内のチャネルに固定 (接続) されたタブです。 '
+title: teamsTab リソースの種類
+description: 'TeamsTab は、チーム内のチャネルに固定 (接続) されたタブです。 '
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6666fbcd69ac46e778ef46380c426c4e94a129fc
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 318e3df2d643011537c5d1d9597910fc6b045362
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345695"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007649"
 ---
-# <a name="teamstab-resource-type"></a>teamstab リソースの種類
+# <a name="teamstab-resource-type"></a>teamsTab リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-teamstab は、[チーム](team.md)内の[チャネル](channel.md)に固定 (接続) された[タブ](../resources/teamstab.md)です。 
+TeamsTab は、[チーム](team.md)内の[チャネル](channel.md)に固定 (接続) された[タブ](../resources/teamstab.md)です。 
 
 ## <a name="methods"></a>メソッド
 
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
-|[タブを一覧表示する](../api/teamstab-list.md) | [teamsTab](teamstab.md) | チャネルにピン留めされたタブを一覧表示します。|
-|[タブを取得する](../api/teamstab-get.md) | [teamsTab](teamstab.md) | チャネルにピン留めされたタブを読み取ります。|
-|[タブを追加する](../api/teamstab-add.md) | [teamsTab](teamstab.md) | チャネルにタブを追加 (ピン留め) します。|
-|[タブの削除](../api/teamstab-delete.md) | なし | チャネルからタブを削除 (固定解除) します。|
+|[タブを一覧表示する](../api/teamstab-list.md) | [teamsTab](teamstab.md) | チャネルにピン留めされているタブを一覧表示します。|
+|[タブを取得する](../api/teamstab-get.md) | [teamsTab](teamstab.md) | チャネルにピン留めされているタブを読み取ります。|
+|[タブを追加する](../api/teamstab-add.md) | [teamsTab](teamstab.md) | タブをチャネルに追加 (ピン留め) します。|
+|[タブを削除する](../api/teamstab-delete.md) | なし | チャネルからタブを削除します (ピン留めを外します)。|
 |[タブを更新する](../api/teamstab-update.md) | [teamsTab](teamstab.md) | タブのプロパティを更新します。|
 
 
@@ -36,9 +37,9 @@ teamstab は、[チーム](team.md)内の[チャネル](channel.md)に固定 (�
 |  displayName            |   string                  |  タブの名前を指定します。     |
 |  name            |   string                  |  予定タブの名前を指定します。     |
 |  teamsAppId           |   string             |  タブのアプリ定義識別子。この値は、タブの作成後に変更することはできません。     |
-|  sortorderindex  |   string                  |  タブの並べ替えに使用される順序のインデックスです。     |
-|  webUrl          |   string                  |  tab インスタンスのディープリンク url。 読み取り専用です。     |
-|  環境        |   [teamstabconfiguration](teamstabconfiguration.md) |  タブに適用されるカスタム設定のコンテナーです。このプロパティが設定されると、タブは構成されたことを示します。     |
+|  sortOrderIndex  |   string                  |  タブの並べ替えに使用される順序のインデックスです。     |
+|  webUrl          |   string                  |  Tab インスタンスのディープリンク url。 読み取り専用です。     |
+|  環境        |   [teamsTabConfiguration](teamstabconfiguration.md) |  タブに適用されるカスタム設定のコンテナーです。このプロパティが設定されると、タブは構成されたことを示します。     |
 
 ## <a name="relationships"></a>リレーションシップ
 

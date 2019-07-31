@@ -4,12 +4,13 @@ description: 直線要素の書式設定オプションをカプセル化しま�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: b40c72240771edd3517f2b29df269d83adeec8f8
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: fe36b0448d430566b51ee836e93d02f08cdbdbd5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348886"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007243"
 ---
 # <a name="workbookchartlineformat-resource-type"></a>workbookChartLineFormat リソースの種類
 
@@ -22,7 +23,7 @@ ms.locfileid: "33348886"
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[workbookChartLineFormat を取得する](../api/chartlineformat-get.md) | [workbookChartLineFormat](workbookchartlineformat.md) |chartLineFormat オブジェクトのプロパティと関係を読み取ります。|
+|[WorkbookChartLineFormat を取得する](../api/chartlineformat-get.md) | [workbookChartLineFormat](workbookchartlineformat.md) |chartLineFormat オブジェクトのプロパティと関係を読み取ります。|
 |[Update](../api/chartlineformat-update.md) | [workbookChartLineFormat](workbookchartlineformat.md) |ChartLineFormat オブジェクトを更新します。 |
 |[Clear](../api/chartlineformat-clear.md)|なし|グラフ要素の線の書式をクリアします。|
 
@@ -31,7 +32,7 @@ ms.locfileid: "33348886"
 |:---------------|:--------|:----------|
 |color|string|グラフの線の色を表す HTML カラー コード。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 

@@ -4,12 +4,13 @@ description: 個人の電子メールアドレスに基づいて、ユーザー�
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 28a77b393f2d5574453d08b93df487ffc5203e2c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 6c182ad015882a0e34289efbecb4dbcfd1cb8369
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342325"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009728"
 ---
 # <a name="mention-resource-type"></a>言及リソースの種類
 
@@ -23,7 +24,7 @@ ms.locfileid: "33342325"
 
 メッセージでメンションを指定してメンションを取得するためのこのメカニズムにより、説明を作成しているユーザーが既存のコンテキスト (メッセージ本文の作成など) を既存のコンテキスト**** 内に残すことができます。. 指定された人物は、 `GET` `$filter`または`$expand`クエリパラメーターを使用して、要求によってどこにあるか、どこにあるかを簡単に確認できます。  
 
-たとえば、outlook メールクライアントでは、ユーザーがメッセージの作成`@`中に入力すると、ユーザーは名前を選択または入力して、@ メンションを完了できます。 Outlook は、メッセージまたはイベントを作成して送信する前に、**メンション**プロパティを設定します。 Outlook で`GET` `$filter`は、および`$expand`を使用して、サインインしているユーザーに、ユーザーに通知するメッセージを検索させ、処理アイテムまたはディスカッションについての警告を表示して、応答を高速化することもできます。
+たとえば、Outlook メールクライアントでは、ユーザーがメッセージの作成`@`中に入力すると、ユーザーは名前を選択または入力して、@ メンションを完了できます。 Outlook は、メッセージまたはイベントを作成して送信する前に、**メンション**プロパティを設定します。 Outlook で`GET` `$filter`は、および`$expand`を使用して、サインインしているユーザーに、ユーザーに通知するメッセージを検索させ、処理アイテムまたはディスカッションについての警告を表示して、応答を高速化することもできます。
 
 
 ## <a name="json-representation"></a>JSON 表記
@@ -56,14 +57,14 @@ ms.locfileid: "33342325"
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |application | String | メンションが作成されたアプリケーションの名前。 省略可能。 使用されず、**メッセージ**の既定値として null になります。 |
-|clientreference | String | リソースインスタンスの親を表す一意の識別子。 省略可能。 使用されず、**メッセージ**の既定値として null になります。 |
+|clientReference | String | リソースインスタンスの親を表す一意の識別子。 省略可能。 使用されず、**メッセージ**の既定値として null になります。 |
 |createdBy  | [emailAddress](../resources/emailaddress.md) | メンションを行ったユーザーの電子メール情報。 |
 |createdDateTime  |DateTimeOffset |クライアントでメンションが作成された日時。 |
 |リンク | String | リソースインスタンス内のメンションのコンテキストへのディープ web リンク。 省略可能。 使用されず、**メッセージ**の既定値として null になります。 |
 |id | String| リソース インスタンス内のメンションの一意の識別子。|
 |明記 | [emailAddress](../resources/emailaddress.md) | 記載されているユーザーの電子メール情報。 必須です。 |
 |mentionText | String | 省略可能。 使用されず、**メッセージ**の既定値として null になります。 メッセージ内のメンションを取得するには、代わりにメッセージの**bodyPreview**プロパティを参照してください。 |
-|serverん datetime | DateTimeOffset | メンションがサーバー上に作成された日付と時刻。 省略可能。 使用されず、**メッセージ**の既定値として null になります。 |
+|Serverん Datetime | DateTimeOffset | メンションがサーバー上に作成された日付と時刻。 省略可能。 使用されず、**メッセージ**の既定値として null になります。 |
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -73,11 +74,11 @@ ms.locfileid: "33342325"
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[投稿](../api/user-sendmail.md#request-2)と送信 | なし | 新しいメッセージの一部としてメンションを作成して送信します。|
+|[投稿](../api/user-sendmail.md#request-2)と送信 | None | 新しいメッセージの一部としてメンションを作成して送信します。|
 |新しい下書きに[投稿](../api/user-post-messages.md#request-2)する | 1つまたは複数の**メンション**オブジェクトを含む[メッセージ](../resources/message.md)。 | 新しいメッセージの下書きを作成し、1つまたは複数の**メンション**オブジェクトを含めます。|
 |自分宛てのメッセージを[取得](../api/user-list-messages.md#request-2)する | [message](../resources/message.md) コレクション | このユーザーの**メンション**を含む、サインインしているユーザーのメールボックス内のすべてのメッセージを取得します。|
 |メッセージとそのメンションを[取得](../api/message-get.md#request-2)する | [message](../resources/message.md) コレクション | メッセージを取得して、メッセージ内の各**メンション**の詳細を展開します。|
-|メンションを[削除](../api/message-delete.md#request-2)する | なし |サインインしているユーザーのメールボックス内で指定したメッセージにおいて、指定したメンションを削除します。 |
+|メンションを[削除](../api/message-delete.md#request-2)する | None |サインインしているユーザーのメールボックス内で指定したメッセージにおいて、指定したメンションを削除します。 |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

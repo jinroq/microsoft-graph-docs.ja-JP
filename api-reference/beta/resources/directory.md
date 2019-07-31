@@ -4,12 +4,13 @@ description: . 削除されたアイテムは、最大 30 日間、復元可能�
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e9437f2f57c1ac53dc8f227149e679edd32d1ff1
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+doc_type: resourcePageType
+ms.openlocfilehash: ba2c40e5987ee8b6bd89e4385c4c6bf242084edd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34657687"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012808"
 ---
 # <a name="directory-resource-type-deleted-items"></a>directory リソースの種類 (削除済みアイテム)
 

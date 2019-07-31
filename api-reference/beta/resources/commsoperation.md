@@ -4,12 +4,13 @@ description: 長時間実行されている特定の操作の状態。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 34e6ff32c250308e71e05cb5d5c4d04d5671535d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: a10b652179a8a3d369c07d34cb2681c4986b3abf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341367"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012899"
 ---
 # <a name="commsoperation-resource-type"></a>commsOperation リソースの種類
 
@@ -18,7 +19,7 @@ ms.locfileid: "33341367"
 長時間実行されている特定の操作の状態。
 
 ## <a name="methods"></a>メソッド
-なし
+None
 
 ## <a name="properties"></a>プロパティ
 
@@ -26,8 +27,8 @@ ms.locfileid: "33341367"
 | :----------------- | :-------------------------- | :-------------------------------------------------------------------------------|
 | clientContext      | String                      | クライアントコンテキスト。                                                             |
 | createdDateTime    | DateTimeOffset              | 操作の開始時刻。                                                |
-| id                 | String                      | 操作 id。読み取り専用です。 サーバーによって生成されます。                                  |
-| lastactiondatetime | DateTimeOffset              | 操作の最後の操作の時刻。                                   |
+| id                 | 文字列                      | 操作 id。読み取り専用です。 サーバーによって生成されます。                                  |
+| lastActionDateTime | DateTimeOffset              | 操作の最後の操作の時刻。                                   |
 | resultInfo         | [resultInfo](resultinfo.md) | 結果の情報。 読み取り専用です。 サーバーによって生成されます。                            |
 | status             | String                      | 使用可能な値: `notStarted`、`running`、`completed`、`failed`。 読み取り専用。 |
 

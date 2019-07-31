@@ -4,12 +4,13 @@ description: テナントのチェックイン統計を記述するエンティ�
 localization_priority: Normal
 author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 9ee53bbdbb02a3d5716f49941ec108e23a09ae88
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: resourcePageType
+ms.openlocfilehash: c364fe1a6da382ed8947b4b2bf63d2bce203d6ad
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949270"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36004800"
 ---
 # <a name="officeusercheckinsummary-resource-type"></a>officeUserCheckinSummary リソースの種類
 
@@ -25,7 +26,7 @@ ms.locfileid: "33949270"
 |succeededUserCount|Int32|過去3か月間の成功したユーザーチェックインの合計数。|
 |failedUserCount|Int32|過去3か月間のユーザーチェックに失敗した合計数。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記

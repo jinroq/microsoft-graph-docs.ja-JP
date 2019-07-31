@@ -4,12 +4,13 @@ description: 要求本文に指定されたメッセージを送信します。�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 335cb20b36bf36155d5ec67418c7b7b65965a928
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: e672045254b14b2e793aaf58d8d745fdbe10a723
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35866718"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996176"
 ---
 # <a name="send-mail"></a>メールを送信する
 

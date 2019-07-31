@@ -4,12 +4,13 @@ description: すべてのデバイス管理機能のコンテナーとして機�
 localization_priority: Normal
 author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 7dfa6ead3de28daa0a5e3f4269578028dbc6b766
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: resourcePageType
+ms.openlocfilehash: 47ee6458d8c045ff99ce244a43e3058d040093fa
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949277"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36011975"
 ---
 # <a name="officeconfiguration-resource-type"></a>office/リソースの種類
 
@@ -26,13 +27,13 @@ ms.locfileid: "33949277"
 |Officeの変更の更新|[officeConfiguration](../resources/intune-cirrus-officeconfiguration.md)|[オフィス](../resources/intune-cirrus-officeconfiguration.md)のプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|Office 構成の Id。|
 |tenantCheckinStatuses|[officeClientCheckinStatus](../resources/intune-cirrus-officeclientcheckinstatus.md)コレクション|Office クライアントのチェックイン状態のリスト。|
 |tenantUserCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|テナントのチェックイン statues を記述するエンティティ|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |clientConfigurations|[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)コレクション|Office クライアント構成のリスト。|

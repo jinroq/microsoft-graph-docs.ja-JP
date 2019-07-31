@@ -4,12 +4,13 @@ description: Win32 アプリのプロパティと継承されたプロパティ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f6577b93a3b3eab19f0688ae2b26dcec03a526bd
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 6da503b47f1f8530ca55faf2a9306453dcf6ea2a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34993271"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012367"
 ---
 # <a name="win32lobapp-resource-type"></a>win32LobApp リソースの種類
 

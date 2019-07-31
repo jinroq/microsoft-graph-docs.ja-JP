@@ -4,12 +4,13 @@ description: '**まもなくサポートが提供される**'
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 49aadd4609e214937e02dd21238110addb9ed2ea
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 9ffbc20a73aaed885d118094a7d1946459eb7efc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341804"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009364"
 ---
 # <a name="onenoteidentityset-resource-type"></a>oneNoteIdentitySet リソースの種類
 

@@ -4,12 +4,13 @@ description: Android アプリのアクセス許可と Android のアクショ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5237cc214ed6e5d7319d947b308cc666337e6d1b
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: ca8511f584ae0fe69ee558d4808e333d57259142
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34991290"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006095"
 ---
 # <a name="androidpermissionaction-resource-type"></a>androidPermissionAction リソースの種類
 

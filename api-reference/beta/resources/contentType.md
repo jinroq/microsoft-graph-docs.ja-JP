@@ -1,22 +1,24 @@
 ---
 author: daspek
-ms.author: dspektor
+description: contentType リソースは、SharePoint のコンテンツ タイプを表します。
 ms.date: 09/12/2017
 title: ContentType
 localization_priority: Normal
-ms.openlocfilehash: bf35a3cbeee8003db8ed121e5bafbc88df098d9a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: b7376b431154595f9b3d2de1931918b629e74acb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341243"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012864"
 ---
 # <a name="contenttype-resource-type"></a>ContentType リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **contentType** リソースは、SharePoint の_コンテンツ タイプ_を表します。
-コンテンツ タイプによって、[**list**][list] 内のすべての [**listItem**][listItem] に存在する必要のある列のセットを定義することができます。
+コンテンツタイプを使用すると、[**リスト**][list]内のすべての[**listItem**][listItem]に存在する必要がある列のセットを定義できます。
 
 [list]: list.md
 [listItem]: listitem.md
@@ -49,13 +51,13 @@ ms.locfileid: "33341243"
 |:------------------|:---------------------|:----------------------------------
 | **説明**   | string               | アイテムの説明テキストです。
 | **group**         | string               | このコンテンツ タイプが属するグループの名前。 関連するコンテンツ タイプを整理するのに役立ちます。
-| **hidden**        | boolean              | コンテンツ タイプがリストの [新規作成] メニューで非表示かどうかを示します。
+| **hidden**        | ブール値              | コンテンツ タイプがリストの [新規作成] メニューで非表示かどうかを示します。
 | **id**            | string               | コンテンツ タイプの一意識別子。
 | **inheritedFrom** | [itemReference][]    | このコンテンツ タイプが、別のスコープ (サイトなど) から継承されている場合、そのコンテンツ タイプが定義されているアイテムへの参照を提供します。
 | **name**          | string               | コンテンツ タイプの名前。
 | **order**         | [contentTypeOrder][] | 選択 UI でコンテンツ タイプを表示する順番を指定します。
 | **parentId**      | string               | コンテンツ タイプの一意識別子。
-| **readOnly**      | boolean              | `true` である場合、コンテンツ タイプは変更できません。変更する場合は、この値を先に `false` に設定します。
+| **readOnly**      | ブール値              | `true` である場合、コンテンツ タイプは変更できません。変更する場合は、この値を先に `false` に設定します。
 | **sealed**        | boolean              | `true` である場合、ユーザーまたはプッシュダウン操作ではコンテンツ タイプを変更できません。 サイト コレクションの管理者だけがコンテンツ タイプのシールまたはシール解除ができます。
 
 ## <a name="relationships"></a>リレーションシップ

@@ -4,12 +4,13 @@ description: リソースの JSON 表記を次に示します。
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 0485fd95046bc83350983bc1333dba83c79139d6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: a3168ad417f246017ba1018aca265ec0363c951e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32505551"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009462"
 ---
 # <a name="office365groupsactivitystorage-resource-type"></a>office365GroupsActivityStorage リソースの種類
 
@@ -17,11 +18,11 @@ ms.locfileid: "32505551"
 
 | プロパティ                  | 型   | 説明                              |
 | :------------------------ | :----- | ---------------------------------------- |
-| reportrefreshdate         | Date   | コンテンツの最新の日付。          |
+| reportRefreshDate         | 日付   | コンテンツの最新の日付。          |
 | mailboxStorageUsedInBytes | Int64  | グループメールボックスで使用されている記憶域。       |
-| sitestorageused inbytes    | Int64  | SharePoint ドキュメントライブラリで使用されているストレージ。 |
-| reportDate                | Date   | Exchange および SharePoint で使用されたストレージのスナップショット日付。 |
-| reportperiod              | String | レポートの対象となる日数を指定します。    |
+| Sitestorageused Inbytes    | Int64  | SharePoint ドキュメントライブラリで使用されているストレージ。 |
+| reportDate                | 日付   | Exchange および SharePoint で使用されたストレージのスナップショット日付。 |
+| reportPeriod              | String | レポートの対象となる日数を指定します。    |
 
 ## <a name="json-representation"></a>JSON 表記
 

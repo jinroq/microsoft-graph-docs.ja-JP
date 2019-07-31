@@ -4,12 +4,13 @@ description: Office クライアントの構成の割り当て。
 localization_priority: Normal
 author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 7c222d16166d9dc63500a970d378ff0d28271eed
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: resourcePageType
+ms.openlocfilehash: b046938b6772f4d2ad99030dc2087150fd935ff5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949256"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36011989"
 ---
 # <a name="officeclientconfigurationassignment-resource-type"></a>officeClientConfigurationAssignment リソースの種類
 
@@ -34,7 +35,7 @@ Office クライアントの構成の割り当て。
 |id|String|OfficeConfigurationAssignment の Id。|
 |target|[officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)|管理者によって定義されたターゲットの割り当て。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。

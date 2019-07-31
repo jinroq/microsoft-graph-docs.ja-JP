@@ -4,12 +4,13 @@ description: テナント組織の使用条件を定義する Intune エンド�
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
-ms.openlocfilehash: c10487c6d708c3c8f7868abd07a629084b6447c2
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: conceptualPageType
+ms.openlocfilehash: a94e8179bd0064c7eb10f88551b7192f830cdcd4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34989505"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36011947"
 ---
 # <a name="company-terms-and-conditions-in-microsoft-intune"></a>Microsoft Intune の会社の使用条件
 

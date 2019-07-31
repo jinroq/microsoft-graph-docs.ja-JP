@@ -1,15 +1,16 @@
 ---
 title: shift リソースの種類
-description: shift は、スケジュールのスケジュールされた作業の単位です。
+description: Shift は、スケジュールのスケジュールされた作業の単位です。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: f5c66d0f555ae6e5740883ed72964a8fa36df303
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType_
+ms.openlocfilehash: f76cd25a36ba070d9fa8281f31a1520a0d7b4435
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343052"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008349"
 ---
 # <a name="shift-resource-type"></a>shift リソースの種類
 
@@ -21,11 +22,11 @@ ms.locfileid: "33343052"
 
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
-|[shift を作成する](../api/schedule-post-shifts.md) | [制](shift.md) | 新しい `shift` を作成します。|
+|[Shift を作成する](../api/schedule-post-shifts.md) | [制](shift.md) | 新しい `shift` を作成します。|
 |[シフトの一覧表示](../api/schedule-list-shifts.md) | [shift](shift.md)コレクション | このスケジュール内の`shifts`のリストを取得します。|
-|[shift を取得する](../api/shift-get.md) | [制](shift.md) | ID で `shift` を取得します。|
-|[shift を置換する](../api/shift-put.md) | [制](shift.md) | `shift` を置き換えます。|
-|[shift を削除する](../api/shift-delete.md) | なし | スケジュールから`shift`を削除します。|
+|[Shift を取得する](../api/shift-get.md) | [制](shift.md) | ID で `shift` を取得します。|
+|[Shift を置換する](../api/shift-put.md) | [制](shift.md) | `shift` を置き換えます。|
+|[Shift を削除する](../api/shift-delete.md) | None | スケジュールから`shift`を削除します。|
 
 ## <a name="properties"></a>プロパティ
 |名前          |型           |説明                                                                                                                                      |
@@ -33,7 +34,7 @@ ms.locfileid: "33343052"
 | id            |`string`      |`shift` の ID。|
 | userId            |`string`      |に割り当てられているユーザー `shift`の ID。 必須です。 |
 | schedulingGroupId         |`string`      |`shift`が含まれるスケジュールグループの ID。 必須です。 |
-| sharedshift   |[佐々木](shiftitem.md)  |従業員とマネージャーの両方`shift`に表示される共有バージョン。 必須です。 |
+| sharedShift   |[佐々木](shiftitem.md)  |従業員とマネージャーの両方`shift`に表示される共有バージョン。 必須です。 |
 | draftShift        |[佐々木](shiftitem.md)        |この`shift`の下書きバージョンは、マネージャーが表示できます。 必須。 |
 | createdDateTime       |`DateTimeOffset`        |最初に作成さ`shift`れたタイムスタンプ。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表します。これは常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、'2014-01-01T00:00:00Z'.のようになります。 |
 | lastModifiedDateTime      |`DateTimeOffset`        |最後に更新され`shift`たタイムスタンプ。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表します。これは常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、'2014-01-01T00:00:00Z'.のようになります。 |

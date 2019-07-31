@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: publicationFacet リソースは、driveItemVersion または driveItem リソースの公開ステータスの詳細情報を提供します。
 ms.date: 09/10/2017
 title: PublicationFacet
 localization_priority: Normal
-ms.openlocfilehash: a95ec524b8e33ce65d9ecb7030a90a49305cdf6c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 9c09f0863376e1569fb4af0acc0044fa1c7c8cfa
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344091"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008860"
 ---
 # <a name="publicationfacet-resource-type"></a>PublicationFacet リソースの種類
 

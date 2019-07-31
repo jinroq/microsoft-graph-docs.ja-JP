@@ -4,12 +4,13 @@ description: Office クライアントの構成。
 localization_priority: Normal
 author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: c762158345e957c265d3784e46f2ef91421603be
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: resourcePageType
+ms.openlocfilehash: 3688503cf19d8cebe51b4afe7abd1563257f9192
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949403"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36004763"
 ---
 # <a name="officeclientconfiguration-resource-type"></a>officeClientConfiguration リソースの種類
 
@@ -28,7 +29,7 @@ Office クライアントの構成。
 |[updatePriorities アクション](../api/intune-cirrus-officeclientconfiguration-updatepriorities.md)|None|ポリシーの優先度を更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |id|文字列|Office クライアント構成ポリシーの Id。|
 |userPreferencePayload|Stream|プリファレンス設定 JSON 文字列はバイナリ形式です。これらの値はユーザーが上書きできます。|
@@ -40,7 +41,7 @@ Office クライアントの構成。
 |userCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|ポリシーのユーザーチェックインの概要。|
 |checkinStatuses|[officeClientCheckinStatus](../resources/intune-cirrus-officeclientcheckinstatus.md)コレクション|Office クライアントのチェックイン状態のリスト。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |assignments|[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md)コレクション|ポリシーのグループの割り当てのリスト。|

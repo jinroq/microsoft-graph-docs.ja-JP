@@ -2,14 +2,15 @@
 title: 同期スキーマリソースの種類
 description: 同期されるオブジェクトと、それらの同期方法を定義します。 同期スキーマには、特定の同期ジョブの設定情報の大部分が含まれています。 通常、属性マッピングの一部をカスタマイズするか、特定の条件を満たすオブジェクトのみを同期するスコープフィルターを追加します。
 localization_priority: Normal
+doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7d4302cec5fe568f322e5a8d1b86bc4681b50f7c
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 95cb2a9bc38b3c23d8ddece5abe5520bf0fe25a8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620683"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007782"
 ---
 # <a name="synchronizationschema-resource-type"></a>同期スキーマリソースの種類
 

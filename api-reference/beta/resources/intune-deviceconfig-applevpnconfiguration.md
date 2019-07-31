@@ -4,12 +4,13 @@ description: Apple VPN 構成プロファイル。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 57f3e7416dc984cf39b67638557aecf5a92a48a7
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 953cdbd58ff2f0d1d52e2b879028b4efd2f22e1b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34987678"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36011548"
 ---
 # <a name="applevpnconfiguration-resource-type"></a>りんご Evpnconfiguration リソースの種類
 

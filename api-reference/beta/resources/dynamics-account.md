@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 4252c20e9d11f67a6de40871b1649a165cbd787c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: cd42177d4886793adedc222cb360a2b3e89faa7e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507575"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012689"
 ---
 # <a name="accounts-resource-type"></a>accounts リソースの種類
 Dynamics 365 Business Central の account オブジェクトを表します。
@@ -20,13 +21,13 @@ Dynamics 365 Business Central の account オブジェクトを表します。
 
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
-|[アカウントを取得する](../api/dynamics-account-get.md)|アカウント|accounts オブジェクトを取得します。|
+|[アカウントを取得する](../api/dynamics-account-get.md)|アカウント|Accounts オブジェクトを取得します。|
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |id|GUID|アカウントの一意の ID。|
-|number|文字列、最大サイズ20|G/L アカウントの番号を指定します。|
+|番号|文字列、最大サイズ20|G/L アカウントの番号を指定します。|
 |displayName|文字列、最大サイズ50|G/L アカウントの名前を指定します。|
 |category|文字列、最大サイズ20|G/L アカウントのカテゴリを指定します。|
 |カテゴリー|文字列、最大サイズ80|G/L アカウントのアカウントカテゴリのサブカテゴリを指定します。|

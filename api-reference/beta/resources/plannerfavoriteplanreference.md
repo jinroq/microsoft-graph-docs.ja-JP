@@ -4,12 +4,13 @@ description: 'プラン [**参照**リソースの種類表す workbookconnectio
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 239376a9d1cb8a761cc8f479ff600519b01effcb
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 07803375ca31162f0f7e392d81edb83ab2bd6da3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344495"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009070"
 ---
 # <a name="plannerfavoriteplanreference-resource-type"></a>プラン "お気に入り" プラン参照リソースの種類
 

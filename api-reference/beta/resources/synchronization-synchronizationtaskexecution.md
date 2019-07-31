@@ -2,14 +2,15 @@
 title: 同期タスク実行リソースの種類
 description: 同期ジョブの実行結果の概要を示します。
 localization_priority: Normal
+doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2aeb64d0ef08d25a8be9b2ed711d6deabfe522a1
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 4e5a863111861d78b8a4131b68b8637b005aba49
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620662"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007754"
 ---
 # <a name="synchronizationtaskexecution-resource-type"></a>同期タスク実行リソースの種類
 

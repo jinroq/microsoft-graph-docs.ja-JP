@@ -1,17 +1,18 @@
 ---
-title: audioアヒルの構成リソースの種類
+title: Audioアヒルの構成リソースの種類
 description: 他のソースの ducking のパラメーター (他のソースの段階的なインおよび out)。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: c19a8d364c681fd199bf998a6951123a1cb5da86
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: cfff0ca240a13c9c4396d605def05a52e1916778
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339067"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013221"
 ---
-# <a name="audioduckingconfiguration-resource-type"></a>audioアヒルの構成リソースの種類
+# <a name="audioduckingconfiguration-resource-type"></a>Audioアヒルの構成リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

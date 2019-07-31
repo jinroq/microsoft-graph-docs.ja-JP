@@ -4,12 +4,13 @@ description: 会議の場所に関して、クライアントが表明してい�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: d22e351217125cc54f2fa7f95e4be1d3d70fc6a2
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 6828d7afdb9caec79978f4196106ff687faa2a1d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345310"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009938"
 ---
 # <a name="locationconstraint-resource-type"></a>locationConstraint リソースの種類
 

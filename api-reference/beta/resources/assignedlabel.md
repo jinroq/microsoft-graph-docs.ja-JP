@@ -4,18 +4,19 @@ description: Office 365 グループに割り当てられた機密ラベルを�
 localization_priority: Normal
 author: krbain
 ms.prod: groups
-ms.openlocfilehash: 430387f228bf632a7f9f9b4a046537bbe5ff4953
-ms.sourcegitcommit: b18ccb24fc79f3abb470cd759e25cdd266fc77c7
+doc_type: resourcePageType
+ms.openlocfilehash: 118a8a85a8abb68f59438db9024952d16f7a279c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34117621"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013291"
 ---
 # <a name="assignedlabel-resource-type"></a>assignedLabel リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Office 365 グループに割り当てられた機密ラベルを表します。 機密ラベルを使用すると、管理者はグループに分類を割り当てることにより、グループに特定のグループ設定を適用することができます (機密、高機密、一般)。 機密ラベルは microsoft 365 Security & コンプライアンスセンターの管理者によって、Microsoft Information Protection 機能の一部として公開されています。 機密ラベルの詳細については、「[感度ラベルの概要](https://docs.microsoft.com/en-us/Office365/SecurityCompliance/sensitivity-labels)」を参照してください。
+Office 365 グループに割り当てられた機密ラベルを表します。 機密ラベルを使用すると、管理者はグループに分類を割り当てることにより、グループに特定のグループ設定を適用することができます (機密、高機密、一般)。 機密ラベルは、microsoft の情報保護機能の一部として、Microsoft 365 セキュリティ & コンプライアンスセンターで管理者によって公開されます。 機密ラベルの詳細については、「[感度ラベルの概要](https://docs.microsoft.com/en-us/Office365/SecurityCompliance/sensitivity-labels)」を参照してください。
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|

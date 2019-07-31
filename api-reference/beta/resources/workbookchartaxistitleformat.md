@@ -4,12 +4,13 @@ description: グラフ軸のタイトルの書式設定を表します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: c98cfee5c776f761c4e84479bb6a4b3f2814bb06
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: e992f083bd063ea7708f0aec4261ec04cbcc8539
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348841"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007285"
 ---
 # <a name="workbookchartaxistitleformat-resource-type"></a>workbookChartAxisTitleFormat リソースの種類
 
@@ -19,12 +20,12 @@ ms.locfileid: "33348841"
 
 
 ## <a name="methods"></a>メソッド
-なし
+None
 
 ## <a name="properties"></a>プロパティ
 なし
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |font|[workbookChartFont](workbookchartfont.md)|グラフの軸タイトルのオブジェクトのフォント属性 (フォント名、フォント サイズ、色など) を表します。 読み取り専用です。|

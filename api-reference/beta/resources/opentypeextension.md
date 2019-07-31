@@ -3,12 +3,14 @@ title: openTypeExtension リソース タイプ (オープン拡張機能)
 description: オープン拡張 (旧称は Office 365 のデータ拡張機能) を使用すると、型指定されていないプロパティを Microsoft Graph のリソースに簡単に直接追加できます。
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: 2d060a318e615bc9d1d21d38e0c289cff0b3f358
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 260ece8f5764250e4d728dd279d73ac94d77af5d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341833"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009322"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>openTypeExtension リソース タイプ (オープン拡張)
 
@@ -82,10 +84,10 @@ Outlook リソースのオープン拡張を作成する場合は、次のガイ
 
 | メソッド | 戻り値の型 | 説明 |
 |:---------------|:--------|:----------|
-|[Post](../api/opentypeextension-post-opentypeextension.md) | [opentypeextension](opentypeextension.md)(既存のリソースインスタンスの場合)、または opentypeextension オブジェクトを含む新しい[連絡先](../resources/contact.md)、[イベント](../resources/event.md)、または[メッセージ](../resources/message.md)。 | 既存または新規のリソース インスタンス内に openTypeExtension オブジェクトを作成します。|
+|[Post](../api/opentypeextension-post-opentypeextension.md) | [Opentypeextension](opentypeextension.md)(既存のリソースインスタンスの場合)、または openTypeExtension オブジェクトを含む新しい[連絡先](../resources/contact.md)、[イベント](../resources/event.md)、または[メッセージ](../resources/message.md)。 | 既存または新規のリソース インスタンス内に openTypeExtension オブジェクトを作成します。|
 |[Get](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |openTypeExtension オブジェクトのプロパティと関係を読み取ります。|
 |[更新する](../api/opentypeextension-update.md) | [openTypeExtension](opentypeextension.md) |openTypeExtension オブジェクトを更新します。 |
-|[削除](../api/opentypeextension-delete.md) | なし |openTypeExtension オブジェクトを削除します。 |
+|[削除](../api/opentypeextension-delete.md) | None |openTypeExtension オブジェクトを削除します。 |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

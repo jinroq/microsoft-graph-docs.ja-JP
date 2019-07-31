@@ -4,12 +4,13 @@ description: グループに、ビジネス向け Microsoft Store モバイル �
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e117e805a4fff60eb3271310f1e501413b3ebb33
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: f0579cedd2ae9b6768848206da732c177cede79a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34986194"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012521"
 ---
 # <a name="microsoftstoreforbusinessappassignmentsettings-resource-type"></a>microsoftStoreForBusinessAppAssignmentSettings リソースの種類
 

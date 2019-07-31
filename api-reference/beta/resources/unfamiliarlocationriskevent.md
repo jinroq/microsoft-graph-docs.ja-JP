@@ -1,33 +1,36 @@
 ---
 title: unfamiliarLocationRiskEvent リソースの種類
-description: Azure Active Directory id 保護によって検出された、そのユーザーの新しい場所からアカウントのサインイン試行が行われたリスクイベント。 リスクイベントに関する詳細な情報については、「Azure AD Identity Protection」のドキュメントを参照してください。
+description: Azure Active Directory Id 保護によって検出された、そのユーザーの新しい場所からアカウントのサインイン試行が行われたリスクイベント。 リスクイベントに関する詳細な情報については、「Azure AD Identity Protection」のドキュメントを参照してください。
 localization_priority: Normal
-ms.openlocfilehash: 984f11f7e47a251d49acd315d29504216b7995f6
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 106310a0ed0f3294842fbe7e2afd29e1d906cdec
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345480"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007558"
 ---
 # <a name="unfamiliarlocationriskevent-resource-type"></a>unfamiliarLocationRiskEvent リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[Azure Active Directory id 保護](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/)によって検出された、そのユーザーの新しい場所からアカウントのサインイン試行が行われたリスクイベント。 リスクイベントに関する詳細な情報については、「 [Azure AD Identity Protection](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection-risk-events-types/)」のドキュメントを参照してください。
+[Azure Active Directory Id 保護](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/)によって検出された、そのユーザーの新しい場所からアカウントのサインイン試行が行われたリスクイベント。 リスクイベントに関する詳細な情報については、「 [AZURE AD Identity Protection](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection-risk-events-types/)」のドキュメントを参照してください。
 
 
 ## <a name="methods"></a>メソッド
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[unfamiliarLocationRiskEvent を取得する](../api/unfamiliarlocationriskevent-get.md) | [unfamiliarLocationRiskEvent](unfamiliarlocationriskevent.md) |unfamiliarLocationRiskEvent オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[unfamiliarLocationRiskEvent を取得する](../api/unfamiliarlocationriskevent-get.md) | [unfamiliarLocationRiskEvent](unfamiliarlocationriskevent.md) |UnfamiliarLocationRiskEvent オブジェクトのプロパティとリレーションシップを読み取ります。|
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|closeddatetime|dateTimeOffset| リスクイベントが終了した日付と時刻|
+|closedDateTime|dateTimeOffset| リスクイベントが終了した日付と時刻|
 |createdDateTime|dateTimeOffset| リスクイベントが作成された日時。 これは常に、リスクイベント自体の datetime と同じかそれよりも大きくなります。 これは、リスクイベントを照会するときにフィルターとして使用する適切なプロパティです。|
-|id|文字列| 読み取り専用|
+|id|string| 読み取り専用|
 |ipAddress|string| サインインの IP アドレス|
 |location|string| サインインの IP アドレスに関連付けられている場所|
 |riskEventDateTime|dateTimeOffset| リスクイベントが発生した日付と時刻|
@@ -41,7 +44,7 @@ ms.locfileid: "33345480"
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|impactedUser|[user](user.md)| 読み取り専用。Null 許容型です。|
+|impactedUser|[ユーザー](user.md)| 読み取り専用。Null 許容型です。|
 
 ## <a name="json-representation"></a>JSON 表記
 

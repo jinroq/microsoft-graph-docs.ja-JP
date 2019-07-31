@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: サムネイル リソースの種類は、ビットマップ表示を含む画像、ビデオ、ドキュメント、任意のアイテムのサムネイルを表します。
 ms.date: 09/10/2017
 title: Thumbnail
 localization_priority: Normal
-ms.openlocfilehash: db8c8c37313402d694d9e0badfd244b739c0459a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 752d46f1c8a769f9f571fd13d940586fda653a58
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342003"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007663"
 ---
 # <a name="thumbnail-resource-type"></a>サムネイル リソースの種類
 

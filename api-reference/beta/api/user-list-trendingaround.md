@@ -4,12 +4,13 @@ description: ユーザーの周囲でのアイテムのリストを返す、計�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8dcc8788bb7c9fd9dcaf887e66e3cc2ae35d00d3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: dc7b6176fe4fceeeeea78d63c6b7140568ff6875
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33329824"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996190"
 ---
 # <a name="list-trendingaround"></a>リスト trendingAround
 
@@ -17,7 +18,7 @@ ms.locfileid: "33329824"
 
 ユーザーの周囲でのアイテムのリストを返す、計算された洞察。
 
-**注:** この api は非推奨になり、[トレンド api](../resources/insights-trending.md)に置き換えられます。
+**注:** この API は非推奨になり、[トレンド api](../resources/insights-trending.md)に置き換えられます。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。

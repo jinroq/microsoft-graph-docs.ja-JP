@@ -1,29 +1,30 @@
 ---
-title: bookingcurrency リソースの種類
+title: bookingCurrency リソースの種類
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでは、これらの API の使用はサポートされていません。"
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 6ab74cff24e1f575166f6672523ecc5d94bc1826
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: f7b12f8ac48457ed0ea36c2fec2aa39be2ff7a01
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328236"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013116"
 ---
-# <a name="bookingcurrency-resource-type"></a>bookingcurrency リソースの種類
+# <a name="bookingcurrency-resource-type"></a>bookingCurrency リソースの種類
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-[bookingbusiness](bookingbusiness.md)でサポートされている通貨通貨を表します。
+[Bookingbusiness](bookingbusiness.md)でサポートされている通貨通貨を表します。
 
 
 ## <a name="methods"></a>メソッド
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[bookingcurrencies のリスト](../api/bookingcurrency-list.md) | [bookingcurrency](bookingcurrency.md)コレクション |Microsoft の予約ビジネスで使用できる**bookingcurrency**オブジェクトの一覧を取得します。|
-|[bookingcurrency の取得](../api/bookingcurrency-get.md) | [bookingCurrency](bookingcurrency.md) |**bookingcurrency**オブジェクトのプロパティを取得します。|
+|[BookingCurrencies のリスト](../api/bookingcurrency-list.md) | [Bookingcurrency](bookingcurrency.md)コレクション |Microsoft の予約ビジネスで使用できる**Bookingcurrency**オブジェクトの一覧を取得します。|
+|[BookingCurrency の取得](../api/bookingcurrency-get.md) | [bookingCurrency](bookingcurrency.md) |**Bookingcurrency**オブジェクトのプロパティを取得します。|
 
 
 ## <a name="properties"></a>プロパティ

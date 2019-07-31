@@ -1,15 +1,18 @@
 ---
-title: mfadetail リソースの種類
+title: mfaDetail リソースの種類
 description: '特定のサインインの MFA の詳細を示します。 これには、サインインと認証の詳細 (たとえば、電話、SMS、ボイスメール) に使用される認証方法が含まれています。 '
 localization_priority: Normal
-ms.openlocfilehash: 5069045fd202d443a94a80f7333f12ab5e707ada
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 3f38fae4d0360386592f956bee05d55738ad6910
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581479"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009665"
 ---
-# <a name="mfadetail-resource-type"></a>mfadetail リソースの種類
+# <a name="mfadetail-resource-type"></a>mfaDetail リソースの種類
 特定のサインインの MFA の詳細を示します。 これには、サインインと認証の詳細 (たとえば、電話、SMS、ボイスメール) に使用される認証方法が含まれています。 
 
 
@@ -17,8 +20,8 @@ ms.locfileid: "32581479"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|authdetail|String|mfa が必須である、対応するサインインアクティビティの mfa 認証詳細が "Yes" であることを示します。|
-|authmethod|String|mfa 必須フィールドが "Yes" の場合に、対応するサインインアクティビティの mfa 認証方法 (SMS、Phone、Authenticator アプリ) を示します。|
+|authDetail|String|MFA が必須である、対応するサインインアクティビティの MFA 認証詳細が "Yes" であることを示します。|
+|authMethod|String|MFA 必須フィールドが "Yes" の場合に、対応するサインインアクティビティの MFA 認証方法 (SMS、Phone、Authenticator アプリ) を示します。|
 
 ## <a name="json-representation"></a>JSON 表記
 

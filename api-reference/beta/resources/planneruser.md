@@ -1,21 +1,22 @@
 ---
 title: プランユーザーリソースの種類
-description: '**plan ユーザー**リソースは、ユーザーの Planner リソースへのアクセスを提供します。 '
+description: '**Plan ユーザー**リソースは、ユーザーの Planner リソースへのアクセスを提供します。 '
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: fd279e541df4b45e47d1c389d2e8a1e212b01a41
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 2229020f00331e761eceeadf0739c84995e5bbdb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344342"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008993"
 ---
 # <a name="planneruser-resource-type"></a>プランユーザーリソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**plan ユーザー**リソースは、[ユーザー](user.md)の Planner リソースへのアクセスを提供します。 
+**Plan ユーザー**リソースは、[ユーザー](user.md)の Planner リソースへのアクセスを提供します。 
 
 
 ## <a name="methods"></a>メソッド
@@ -25,7 +26,7 @@ ms.locfileid: "33344342"
 |[List tasks](../api/planneruser-list-tasks.md) |[plannerTask](plannertask.md) コレクション| ユーザーに割り当てられている[プラン](plannertask.md)を取得します。|
 |[お気に入りのプランを一覧表示する](../api/planneruser-list-favoriteplans.md) |[plannerPlan](plannerplan.md) コレクション| ユーザーによってお気に入りとしてマークされた[プラン](plannerplan.md)を取得します。|
 |[リスト recentPlans](../api/planneruser-list-recentplans.md) |[plannerPlan](plannerplan.md) コレクション| ユーザーが最近閲覧した[プラン](plannerplan.md)を取得します。|
-|[更新する](../api/planneruser-update.md) | [plannerUser](planneruser.md)| プランの**ユーザー**オブジェクトを更新します。 |
+|[Update](../api/planneruser-update.md) | [plannerUser](planneruser.md)| プランの**ユーザー**オブジェクトを更新します。 |
 
 
 ## <a name="properties"></a>プロパティ

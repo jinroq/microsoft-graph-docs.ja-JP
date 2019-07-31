@@ -1,24 +1,26 @@
 ---
-title: visualinfo リソースの種類
-description: activity オブジェクトの**visualelements**プロパティを表すための複合型。
+title: visualInfo リソースの種類
+description: Activity オブジェクトの**Visualelements**プロパティを表すための複合型。
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: edf02c7318f45f711da3a27b03747aac94fd9706
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+author: ''
+ms.openlocfilehash: 9656252250cf795bcf7c9a1c7682111d7cc37ab1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344062"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008874"
 ---
-# <a name="visualinfo-resource-type"></a>visualinfo リソースの種類
+# <a name="visualinfo-resource-type"></a>visualInfo リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[activity](../resources/projectrome-activity.md)オブジェクトの**visualelements**プロパティを表すための複合型。
+[Activity](../resources/projectrome-activity.md)オブジェクトの**visualelements**プロパティを表すための複合型。
 
 各ユーザーアクティビティは、アダプティブカードとしてタイムラインに表示されます。 アプリ開発者は、アプリで行われたアクティビティの本質をキャプチャするカスタムカードを提供することをお勧めします。 これは、コンテンツプロパティにカスタム JSON カードを提供することによって可能になります。
 
-アプリでは、アダプティブカードを使用したビジュアルメタデータに加えて、コンテンツメタデータを指定できます。これにより、ユーザーのアクティビティに対する推論を構築する際に使用されるデータが提供されます。 これは、アクティビティの contentinfo プロパティを使用して、コンテンツを説明するために schema.org プロパティを活用する JSON オブジェクトを提供することによって可能になります。
+アプリでは、アダプティブカードを使用したビジュアルメタデータに加えて、コンテンツメタデータを指定できます。これにより、ユーザーのアクティビティに対する推論を構築する際に使用されるデータが提供されます。 これは、アクティビティの contentInfo プロパティを使用して、コンテンツを説明するために schema.org プロパティを活用する JSON オブジェクトを提供することによって可能になります。
 
 カスタムカードが提供されていない場合は、表示テキストと説明のプロパティを使用して、簡単なカードが生成されます。 カスタムカードは、アプリ内から最適なコンテンツを示すために推奨されています。
 

@@ -4,12 +4,13 @@ description: テナントのチェックイン統計を記述するエンティ�
 localization_priority: Normal
 author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: a7cbc54ac2e276932273130f194f484f3ee23b7c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: resourcePageType
+ms.openlocfilehash: df8f1927329a34a51b5f6d8738faec05be01b451
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949291"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012003"
 ---
 # <a name="officeclientcheckinstatus-resource-type"></a>officeClientCheckinStatus リソースの種類
 
@@ -29,9 +30,9 @@ ms.locfileid: "33949291"
 |userId|String|デバイスを使用するユーザー識別子。|
 |checkinDateTime|DateTimeOffset|前回のデバイスのチェックイン時刻 (UTC)。|
 |errorMessage|String|前回のチェックインに関連付けられたエラーメッセージ。|
-|appliedPolicies|String collection|前回のチェックインとしてデバイスに配信されたポリシーの一覧です。|
+|appliedPolicies|文字列コレクション|前回のチェックインとしてデバイスに配信されたポリシーの一覧です。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記

@@ -4,12 +4,13 @@ description: 他のソースのレベルの構成。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: bc2b0c11b18a3cf8120cab0bb9c745ae8880cfc6
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: fa3a06d319eea0e3af5c016a9ef799591f76fabb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339064"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013214"
 ---
 # <a name="audiosourcelevel-resource-type"></a>audioSourceLevel リソースの種類
 
@@ -21,8 +22,8 @@ ms.locfileid: "33339064"
 
 | プロパティ               | 型    | 説明                                                                                         |
 | :--------------------- | :------ | :---------------------------------------------------------------------------------------------------|
-| その他のウィ氏             | Boolean | このソースが、アクティブな他のソースをアヒルに使用できるようにします。 true に設定する場合は、ducking level を設定する必要があります。|
-| 大まか                  | Int64   | Ducking がに`true`設定され`duckOthers`ている場合のソースのレベル。                                     |
+| その他のウィ氏             | Boolean | このソースが、アクティブな他のソースをアヒルに使用できるようにします。 True に設定する場合は、ducking level を設定する必要があります。|
+| level                  | Int64   | Ducking がに`true`設定され`duckOthers`ている場合のソースのレベル。                                     |
 | 積極的            | String  | ソース参加者のオーディオストリーム。                                                                |
 
 ## <a name="json-representation"></a>JSON 表記

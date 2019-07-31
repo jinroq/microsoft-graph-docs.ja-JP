@@ -2,14 +2,15 @@
 title: referencedObject リソースの種類
 description: 同じディレクトリ定義で定義されている別のオブジェクトへの参照を記述します。
 localization_priority: Normal
+doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b06bac82ca78c3d249d3b173c0db7f72a953e2d2
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: c1c7e1554764031efbfa3a5d1c1280f4b72bc160
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620452"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007859"
 ---
 # <a name="referencedobject-resource-type"></a>referencedObject リソースの種類
 

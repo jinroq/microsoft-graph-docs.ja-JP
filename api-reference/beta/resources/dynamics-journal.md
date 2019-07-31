@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: bef5008bbacb1729f48758b228e55a3f6adc2af0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 7cfc723a4370c2b30440dcd4e33b50ed066ac89b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507302"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006593"
 ---
 # <a name="journal-resource-type"></a>履歴リソースの種類
 Dynamics 365 Business Central のジャーナルを表します。
@@ -23,7 +24,7 @@ Dynamics 365 Business Central のジャーナルを表します。
 |[仕訳帳を取得する](../api/dynamics-journal-get.md)      |雑誌    |ジャーナルを取得します。   |
 |[仕訳帳の投稿](../api/dynamics-create-journal.md)  |雑誌    |仕訳帳を作成します。|
 |[Patch ジャーナル](../api/dynamics-journal-update.md) |雑誌    |仕訳帳を更新します。|
-|[仕訳帳を削除する](../api/dynamics-journal-delete.md)|なし       |仕訳帳を削除します。|
+|[仕訳帳を削除する](../api/dynamics-journal-delete.md)|none       |仕訳帳を削除します。|
 
 ## <a name="properties"></a>プロパティ
 | プロパティ           | 型                  |説明                                           |

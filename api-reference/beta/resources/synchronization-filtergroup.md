@@ -2,14 +2,15 @@
 title: filterGroup リソースの種類
 description: オブジェクトがスコープ内で考慮される必要がある一連の句を定義します。 グループのすべての句が評価される場合にのみ、グループの`true`スコープ内でオブジェクトが考慮され`true`ます (グループは評価されます)。
 localization_priority: Normal
+doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c411b85f2661829fe8739b8f8dc1cdd09639723c
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: dd2b30c8ffa07eab87949bf53eaa98e6d88851c1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35621446"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007943"
 ---
 # <a name="filtergroup-resource-type"></a>filterGroup リソースの種類
 

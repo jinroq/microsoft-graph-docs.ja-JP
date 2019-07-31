@@ -4,12 +4,13 @@ description: グラフ系列の書式設定プロパティをカプセル化し�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 5d07dbaf17fd715b93dcd039fe3fb9e264bd7f63
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 739a874545047c2ed6927cb4e31d2e006f4e6ba4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348904"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007166"
 ---
 # <a name="workbookchartseriesformat-resource-type"></a>workbookChartSeriesFormat リソースの種類
 
@@ -19,12 +20,12 @@ ms.locfileid: "33348904"
 
 
 ## <a name="methods"></a>メソッド
-なし
+None
 
 ## <a name="properties"></a>プロパティ
 なし
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |fill|[workbookChartFill](workbookchartfill.md)|グラフ系列の塗りつぶしの書式を表します。これには背景の書式設定情報などがあります。値の取得のみ可能です。|

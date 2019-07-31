@@ -4,12 +4,13 @@ description: グラフ軸のタイトルを表します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: bb6eeb7afb270d1cbc16fe5ab818f6a650800d1a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 685ed8ce049fda8cdba12d4bc9171156b458e443
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348842"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007299"
 ---
 # <a name="workbookchartaxistitle-resource-type"></a>workbookChartAxisTitle リソースの種類
 
@@ -26,12 +27,12 @@ ms.locfileid: "33348842"
 |[Update](../api/chartaxistitle-update.md) | [workbookChartAxisTitle](workbookchartaxistitle.md)    |ChartAxisTitle オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |text|string|軸タイトルを表します。|
 |visible|ブール値|軸のタイトルの表示/非表示を指定するブール型の値です。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |format|[workbookChartAxisTitleFormat](workbookchartaxistitleformat.md)|グラフ軸のタイトルの書式設定を表します。 読み取り専用です。|

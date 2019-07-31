@@ -4,12 +4,12 @@ description: ユーザーがダイレクト メンバーになっている Micro
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2ee7834dbb9366ab1db726eaf53575b4d4c33d1f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 3124f72b30a9ca82efe7f2583a6afc766bed1718
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35867281"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35931486"
 ---
 # <a name="list-joinedteams"></a>joinedTeams を一覧表示する
 
@@ -51,7 +51,8 @@ GET /users/{id}/joinedTeams
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [group](../resources/group.md) オブジェクトのコレクションを返します。
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [team](../resources/team.md) オブジェクトのコレクションを返します。
+
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

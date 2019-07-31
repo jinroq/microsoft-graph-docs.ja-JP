@@ -4,12 +4,13 @@ description: エンティティは、ポリシー定義のリストボックス�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d74b4d7383f76a395dba5dab14754ab349d70526
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: d4efb34c0f725c7253f30a04ba606ce5cf27a669
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34992298"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35998528"
 ---
 # <a name="grouppolicypresentationvaluelist-resource-type"></a>groupPolicyPresentationValueList リソースの種類
 

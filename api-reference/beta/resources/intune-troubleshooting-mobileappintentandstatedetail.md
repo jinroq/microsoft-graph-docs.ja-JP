@@ -4,12 +4,13 @@ description: 特定のデバイスのモバイルアプリの意図とインス�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 99374d098d103b9a9898f10ea105ab41ca7bef41
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 381fde8c3631c640691af346cccd3199d9018c50
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34988077"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36010204"
 ---
 # <a name="mobileappintentandstatedetail-resource-type"></a>mobileAppIntentAndStateDetail リソースの種類
 

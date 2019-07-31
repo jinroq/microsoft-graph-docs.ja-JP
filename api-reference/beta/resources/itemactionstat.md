@@ -1,21 +1,23 @@
 ---
 author: daspek
-ms.author: dspektor
+description: ItemActionStat リソースは、一定期間にわたるアクションについての集約された詳細を提供します。
 ms.date: 09/14/2017
-title: itemactionstat
+title: ItemActionStat
 localization_priority: Normal
-ms.openlocfilehash: a0e3bc3f217308d96eaadf6ab367431c7f1b8c3e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 719a443af65fd9642feee3bc8ddbc832eb3964c4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345450"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36010113"
 ---
-# <a name="itemactionstat-resource-type"></a>itemactionstat リソースの種類
+# <a name="itemactionstat-resource-type"></a>itemActionStat リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**itemactionstat**リソースは、一定期間にわたるアクションについての集約された詳細を提供します。
+**Itemactionstat**リソースは、一定期間にわたるアクションについての集約された詳細を提供します。
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -36,7 +38,7 @@ ms.locfileid: "33345450"
 
 | プロパティ    | 型  | 説明
 |:------------|:------|:-------------------------------------------------------
-| actioncount | Int32 | アクションが行われた回数。 読み取り専用です。
+| actionCount | Int32 | アクションが行われた回数。 読み取り専用です。
 | actorCount  | Int32 | アクションを実行した個別のアクターの数。 値の取得のみ可能です。
 
 <!--

@@ -4,12 +4,13 @@ description: ポリシーの Suppoorted プラットフォームの種類。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 87193858c706b0a70a851d041ad674e5dc61990d
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 3d20c6df61477a137deb5fa45afc0c54c1bafe02
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34992851"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36011387"
 ---
 # <a name="policyplatformtype-enum-type"></a>policyPlatformType 列挙型
 

@@ -1,28 +1,31 @@
 ---
-title: skypeforbusinessdevice使い方 user計数リソースの種類
+title: Skypeforbusinessdevice使い方 User計数リソースの種類
 description: リソースの JSON 表記を次に示します。
 localization_priority: Normal
-ms.openlocfilehash: d98590e83637e45d35f135c56f2c0b8ff7d282bb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 04f14ce10a93d8bff870613e644b80f554d26573
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583502"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008209"
 ---
-# <a name="skypeforbusinessdeviceusageusercounts-resource-type"></a>skypeforbusinessdevice使い方 user計数リソースの種類
+# <a name="skypeforbusinessdeviceusageusercounts-resource-type"></a>Skypeforbusinessdevice使い方 User計数リソースの種類
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ          | 型   |
 | :---------------- | :----- |
-| reportrefreshdate | Date   |
+| reportRefreshDate | 日付   |
 | ws           | Int64  |
 | windowsPhone      | Int64  |
-| androidphone      | Int64  |
+| androidPhone      | Int64  |
 | iPhone            | Int64  |
 | iPad              | Int64  |
-| reportDate        | Date   |
-| reportperiod      | String |
+| reportDate        | 日付   |
+| reportPeriod      | String |
 
 ## <a name="json-representation"></a>JSON 表記
 

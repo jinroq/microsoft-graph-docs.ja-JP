@@ -2,14 +2,15 @@
 title: objectDefinition リソースの種類
 description: オブジェクトとその属性を記述します。 オブジェクト定義は directoryDefinition の一部であり、同期スキーマの一部として更新されます。
 localization_priority: Normal
+doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 38a636e8b85758d21cb91bd2951916ed9db9dc7a
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: bbd02d40408ef53f8c731cadb4bd96aca6475102
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620529"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007873"
 ---
 # <a name="objectdefinition-resource-type"></a>objectDefinition リソースの種類
 

@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 9063a9066c51956596e4f0aa918a2e7a53bf2ab9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 4a1c777d51dd1ba706af85f431162cda16b5d25b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543100"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012605"
 ---
 # <a name="customerpayments-resource-type"></a>顧客の支払いリソースの種類
 Dynamics 365 Business Central の顧客の支払いを表します。 顧客支払は、顧客の支払仕訳帳に明細行として入力されます。
@@ -23,7 +24,7 @@ Dynamics 365 Business Central の顧客の支払いを表します。 顧客支�
 |[顧客の支払いを取得する](../api/dynamics-customerpayment-get.md)|顧客の支払い|顧客支払を取得します。|
 |[顧客の支払いを投稿する](../api/dynamics-create-customerpayment.md)|顧客の支払い|顧客の支払いを作成します。|
 |[更新プログラムの顧客の支払い](../api/dynamics-customerpayment-update.md)|顧客の支払い|顧客の支払いを更新します。|
-|[顧客の支払いを削除する](../api/dynamics-customerpayment-delete.md)|なし|顧客の支払を削除します。|
+|[顧客の支払いを削除する](../api/dynamics-customerpayment-delete.md)|none|顧客の支払を削除します。|
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型    |説明|
@@ -31,12 +32,12 @@ Dynamics 365 Business Central の顧客の支払いを表します。 顧客支�
 |id|GUID|顧客の支払の一意の ID。 編集できません。|
 |journalDisplayName|string|支払いレコードが行である顧客支払仕訳帳。|
 |lineNumber|整数|顧客の支払回数。|
-|id|GUID|支払いが関連付けられている顧客の一意の ID。|
+|Id|GUID|支払いが関連付けられている顧客の一意の ID。|
 |顧客番号|文字列、最大サイズ20|支払いが関連付けられている顧客の番号。|
 |contactId|文字列、最大サイズ250|指定された顧客の exchange 連絡先 id。 顧客 id が指定されていない場合は、連絡先 id を使用して検索します。|
-|postingdate|日付|顧客の支払が転記される日付。|
-|documentnumber|文字列、最大サイズ20|顧客支払のドキュメント番号を指定します。|
-|externaldocumentnumber|文字列、最大サイズ20|顧客支払の外部ドキュメント番号を指定します。|
+|postingDate|date|顧客の支払が転記される日付。|
+|documentNumber|文字列、最大サイズ20|顧客支払のドキュメント番号を指定します。|
+|externalDocumentNumber|文字列、最大サイズ20|顧客支払の外部ドキュメント番号を指定します。|
 |値|decimal|顧客の支払を構成する合計金額 (VAT を含む) を指定します。|
 |appliesToInvoiceId|GUID|支払が関連付けられている請求書の一意の ID。|
 |appliesToInvoiceNumber|文字列、最大サイズ20|支払が関連付けられている請求書の番号。|

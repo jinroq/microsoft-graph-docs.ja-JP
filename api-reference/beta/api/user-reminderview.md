@@ -4,12 +4,13 @@ description: '指定した開始時刻と終了時刻内の予定表のアラー
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 02a4e0ff951e3ebd0e9f0df7e056f33e2f6cc4db
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: f714b89ddd3f26abad849fabe90ebb534cd6b5af
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35866783"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996169"
 ---
 # <a name="user-reminderview"></a>user: reminderView
 

@@ -4,12 +4,13 @@ description: 組織全体で開催された会議アクティビティの詳細�
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: e715e2b345dac4aae4c41b123b0c94a5d66ddc44
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.openlocfilehash: 1c5962466933b0479f76c51bc15bf3a36bcc9d43
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342866"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008223"
 ---
 # <a name="skype-for-business-organizer-activity-reports"></a>Skype for Business 開催者アクティビティ レポート
 
@@ -23,6 +24,6 @@ ms.locfileid: "33342866"
 
 | 関数                                 | CSV 戻り値の型 | JSON 戻り値の種類                         | 説明                              |
 | :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |
-| [アクティビティの数を取得する](../api/reportroot-getskypeforbusinessorganizeractivitycounts.md) | ストリーム          | [skypeforbusinessオーガナイザー eractivity計数](../resources/skypeforbusinessorganizeractivitycounts.md) | 組織内のユーザーが開催、企画した電話会議セッションの数と種類に関する使用状況の傾向を取得します。 会議セッションの種類には、IM、オーディオ/ビデオ、アプリケーション共有、Web、サード パーティへのダイヤルイン/ダイヤルアウト、Microsoft へのダイヤルイン/ダイヤルアウトなどがあります。 |
-| [ユーザーの数を取得する](../api/reportroot-getskypeforbusinessorganizeractivityusercounts.md) | Stream          | [skypeforbusinessオーガナイザー eractivityuser計数](../resources/skypeforbusinessorganizeractivityusercounts.md) | 一意のユーザー数と組織内のユーザーが開催、企画した電話会議セッションの数と種類に関する使用傾向を取得します。 会議セッションの種類には、IM、オーディオ/ビデオ、アプリケーション共有、Web、サード パーティへのダイヤルイン/ダイヤルアウト、Microsoft へのダイヤルイン/ダイヤルアウトなどがあります。 |
+| [アクティビティの数を取得する](../api/reportroot-getskypeforbusinessorganizeractivitycounts.md) | ストリーム          | [Skypeforbusinessオーガナイザー Eractivity計数](../resources/skypeforbusinessorganizeractivitycounts.md) | 組織内のユーザーが開催、企画した電話会議セッションの数と種類に関する使用状況の傾向を取得します。 会議セッションの種類には、IM、オーディオ/ビデオ、アプリケーション共有、Web、サード パーティへのダイヤルイン/ダイヤルアウト、Microsoft へのダイヤルイン/ダイヤルアウトなどがあります。 |
+| [ユーザーの数を取得する](../api/reportroot-getskypeforbusinessorganizeractivityusercounts.md) | Stream          | [Skypeforbusinessオーガナイザー Eractivityuser計数](../resources/skypeforbusinessorganizeractivityusercounts.md) | 一意のユーザー数と組織内のユーザーが開催、企画した電話会議セッションの数と種類に関する使用傾向を取得します。 会議セッションの種類には、IM、オーディオ/ビデオ、アプリケーション共有、Web、サード パーティへのダイヤルイン/ダイヤルアウト、Microsoft へのダイヤルイン/ダイヤルアウトなどがあります。 |
 | [時間 (分) を取得する](../api/reportroot-getskypeforbusinessorganizeractivityminutecounts.md) | Stream          | [skypeForBusinessOrganizerActivityMinuteCounts](../resources/skypeforbusinessorganizeractivityminutecounts.md) | 組織内のユーザーが開催、企画した電話会議セッションの長さ (分数) と種類に関する使用状況の傾向を取得します。 電話会議セッションの種類には、オーディオ/ビデオ、および Microsoft へのダイヤルインとダイヤルアウトがあります。 |

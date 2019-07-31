@@ -2,14 +2,15 @@
 title: Azure AD 同期 API の概要
 description: ) を使用すると、削除、管理、およびクラウドでの id の作成、保守、および削除 (たとえば、サービスとしてのソフトウェア、または SaaS) アプリケーション (Dropbox、Salesforce、ServiceNow など) を自動化できます。 Microsoft Graph の同期 Api を使用して、次のようなプログラムによって id 同期を管理できます。
 localization_priority: Normal
+doc_type: conceptualPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c500eeb188461eaf245b6a9149421216cfaf2f43
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 818f5060db1fe4f6c05f0473e438095877ead119
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620501"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007866"
 ---
 # <a name="azure-ad-synchronization-api-overview"></a>Azure AD 同期 API の概要
 

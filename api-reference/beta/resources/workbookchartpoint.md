@@ -4,12 +4,13 @@ description: グラフの系列のポイントを表します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: e12cc2f9a700ef66ec47a72aa88a2c30f2c2c3f6
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: db0037e91f1ee9279a131c5a318c4425e7878aed
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348907"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007257"
 ---
 # <a name="workbookchartpoint-resource-type"></a>workbookChartPoint リソースの種類
 
@@ -22,20 +23,20 @@ ms.locfileid: "33348907"
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[workbookChartPoint を取得する](../api/chartpoint-get.md) | [workbookChartPoint](workbookchartpoint.md) |chartPoint オブジェクトのプロパティと関係を読み取ります。|
+|[WorkbookChartPoint を取得する](../api/chartpoint-get.md) | [workbookChartPoint](workbookchartpoint.md) |chartPoint オブジェクトのプロパティと関係を読み取ります。|
 |[List](../api/chartpoint-list.md) | [workbookChartPoint](workbookchartpoint.md)コレクション |chartPoint オブジェクトのコレクションを取得します。 |
 |[ItemAt](../api/chartpointscollection-itemat.md)|[workbookChartPoint](workbookchartpoint.md)|データ系列内の位置に基づくポイントを取得します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |value|Json|グラフのポイントの値を返します。 読み取り専用です。|
 |id|string|一意識別子|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|format|[workbookChartPointFormat](workbookchartpointformat.md)|グラフのポイントの書式設定プロパティをカプセル化します。 読み取り専用です。|
+|format|[workbookChartPointFormat](workbookchartpointformat.md)|グラフのポイントの書式設定プロパティをカプセル化します。 値の取得のみ可能です。|
 
 ## <a name="json-representation"></a>JSON 表記
 

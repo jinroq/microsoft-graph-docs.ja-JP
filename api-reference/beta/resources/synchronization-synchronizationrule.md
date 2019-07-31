@@ -2,14 +2,15 @@
 title: 同期規則リソースの種類
 description: 同期エンジンに対して同期を実行する方法を定義します。どのオブジェクトを同期するか、どの方向に、どのようにソースディレクトリのオブジェクトをターゲットディレクトリのオブジェクトと照合するか、どのように属性を使用するかを指定します。ソースとターゲットディレクトリの同期時に変換する必要があります。
 localization_priority: Normal
+doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 83bb8751a60197b8afd9132618ba994c33f370c8
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 367c0f00fb4abe4a41785f3b73599c06a2b31d6f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620711"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007775"
 ---
 # <a name="synchronizationrule-resource-type"></a>同期規則リソースの種類
 

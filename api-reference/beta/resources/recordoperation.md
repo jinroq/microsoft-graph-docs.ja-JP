@@ -1,21 +1,22 @@
 ---
 title: recordOperation リソースの種類
-description: recordOperation の種類
+description: RecordOperation の種類
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 75760e38dde13a02624db987d521e3b02977901d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 00b05cd86eeb9cf8be26cdc09fb8a9b254b510db
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343931"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008804"
 ---
 # <a name="recordoperation-resource-type"></a>recordOperation リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-recordOperation の種類
+RecordOperation の種類
 
 ## <a name="properties"></a>プロパティ
 
@@ -24,10 +25,10 @@ recordOperation の種類
 | clientContext                  | String                      | クライアントコンテキスト。                                                                                                                               |
 | 「補完の理由」               | String                      | 可能な値は、`operationCanceled`、`stopToneDetected`、`maxRecordDurationReached`、`initialSilenceTimeout`、`maxSilenceTimeout`、`playPromptFailed`、`playBeepFailed`、`mediaReceiveTimeout`、`unspecifiedError`、`none` です。 |
 | createdDateTime                | DateTimeOffset              | レコーディングが作成された時刻。                                                                                                          |
-| id                             | String                      | サーバー操作 id。読み取り専用です。 サーバーによって生成されます。                                                                                             |
-| lastactiondatetime             | DateTimeOffset              | 操作の最後の操作の時刻。                                                                                                     |
+| id                             | 文字列                      | サーバー操作 id。読み取り専用です。 サーバーによって生成されます。                                                                                             |
+| lastActionDateTime             | DateTimeOffset              | 操作の最後の操作の時刻。                                                                                                     |
 | recordResourceAccessToken      | String                      | レコーディングを取得するために必要なアクセストークン。                                                                                              |
-| recordresourcelocation         | String                      | レコーディングが配置されている場所。                                                                                                      |
+| recordResourceLocation         | String                      | レコーディングが配置されている場所。                                                                                                      |
 | resultInfo                     | [resultInfo](resultinfo.md) | 結果の情報。  読み取り専用です。 サーバーによって生成されます。                                                                                             |
 | status                         | String                      | 使用可能な値: `notStarted`、`running`、`completed`、`failed`。 読み取り専用です。 サーバーによって生成されます。                                                 |
 

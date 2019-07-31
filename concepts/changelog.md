@@ -3,12 +3,12 @@ title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 5d0ad220d99ddc12671fcdb54c4f3f88a54cb758
-ms.sourcegitcommit: 27e8ddb53b699f70b676c9648db8f06bb8d831a9
+ms.openlocfilehash: 60ad1361f5d188beacf4a34b040ee46196fb8304
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "35918056"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35930567"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
@@ -224,7 +224,16 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 |追加|ベータ版|[vpnAuthenticationMethod](/graph/api/resources/intune-deviceconfig-vpnauthenticationmethod?view=graph-rest-beta) 列挙型に **derivedCredential** メンバーを追加しました|
 |追加|ベータ版|[wiFiAuthenticationMethod](/graph/api/resources/intune-deviceconfig-wifiauthenticationmethod?view=graph-rest-beta) 列挙型に **derivedCredential** メンバーを追加しました|
 
-### <a name="education"></a>Education
+### <a name="files-onedrive"></a>ファイル (OneDrive)
+| **変更の種類** | **バージョン**   | **説明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 追加 | ベータ版 | [bundle](/graph/api/resources/bundle?view=graph-rest-beta) 複合型が追加されました |
+| 追加 | ベータ版 | [album](/graph/api/resources/album?view=graph-rest-beta) 複合型が追加されました |
+| 追加 | ベータ版 | [drive](/graph/api/resources/drive?view=graph-rest-beta) エンティティに **bundles** ナビゲーション プロパティを追加しました |
+| 追加 | ベータ版 | [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) エンティティに **bundle** プロパティを追加しました |
+| 追加 | ベータ版 | **permission** エンティティに [grant](/graph/api/resources/permission?view=graph-rest-beta) アクションを追加しました |
+
+### <a name="education"></a>教育
 | 変更の種類 | バージョン | 説明                                                                                                                                                      |
 | :---------- | :------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 追加    | ベータ版    | taughtClasses が [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta) に追加されました。                                                                  |

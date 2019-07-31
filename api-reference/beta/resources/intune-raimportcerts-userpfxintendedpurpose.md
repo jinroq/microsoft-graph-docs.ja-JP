@@ -4,12 +4,13 @@ description: ユーザー PFX 証明書の目的のためにサポートされ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1790b1d1835d19cacb7e3b32262ce06be4daa378
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: enumPageType
+ms.openlocfilehash: 473f06515b1cb9a1eee966a471c8a8adb81aca7d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35739282"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36010610"
 ---
 # <a name="userpfxintendedpurpose-enum-type"></a>userPfxIntendedPurpose 列挙型
 

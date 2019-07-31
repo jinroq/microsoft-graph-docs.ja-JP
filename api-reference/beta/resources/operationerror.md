@@ -1,25 +1,28 @@
 ---
-title: operationerror リソースの種類
-description: teamsAsyncOperation のエラーについて説明します。
+title: operationError リソースの種類
+description: TeamsAsyncOperation のエラーについて説明します。
 localization_priority: Normal
-ms.openlocfilehash: 957f1ed2960c33f2e7bc07f79e7f749a3b9f15a5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 43486d21f7c8f852a965c5378688f826c26ac58b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341764"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009301"
 ---
-# <a name="operationerror-resource-type"></a>operationerror リソースの種類
+# <a name="operationerror-resource-type"></a>operationError リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[teamsAsyncOperation](teamsasyncoperation.md)のエラーについて説明します。
+[TeamsAsyncOperation](teamsasyncoperation.md)のエラーについて説明します。
 
-## <a name="operationerror-properties"></a>operationerror プロパティ
+## <a name="operationerror-properties"></a>operationError プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |code|string (読み取り専用)|操作エラーコード。|
-|メッセージ​​|string (読み取り専用)|操作エラーメッセージ。|
+|message|string (読み取り専用)|操作エラーメッセージ。|
 
 ## <a name="json-representation"></a>JSON 表記
 

@@ -1,21 +1,22 @@
 ---
-title: token会議情報リソースの種類
-description: token会議情報の種類。
+title: Token会議情報リソースの種類
+description: Token会議情報の種類。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 38a5aae17cf4364a1cfd58680c2e7b9437cf0e40
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 0df9a7a66420f20ff62677f54e617d64e9db0273
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345508"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007544"
 ---
-# <a name="tokenmeetinginfo-resource-type"></a>token会議情報リソースの種類
+# <a name="tokenmeetinginfo-resource-type"></a>Token会議情報リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-token会議情報の種類。
+Token会議情報の種類。
 
 ## <a name="properties"></a>プロパティ
 

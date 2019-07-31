@@ -4,12 +4,13 @@ description: MSI Win32LobApp のパッケージの種類を示します。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 81d8e108f98d8c301063fe64c65ec7fd691fcb49
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: c5770c82f67c50c00ad4986168c79e370fbec757
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34994371"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012283"
 ---
 # <a name="win32lobappmsipackagetype-enum-type"></a>win32LobAppMsiPackageType 列挙型
 

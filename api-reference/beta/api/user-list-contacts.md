@@ -4,12 +4,13 @@ description: ユーザーのメールボックス内の連絡先を取得しま�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 26142b18764e503dbdc33e50733bf767318cc944
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 4b01046e06404387af632acd70e3bc60ec6ba5fc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35867393"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996274"
 ---
 # <a name="list-contacts"></a>連絡先を一覧表示する
 

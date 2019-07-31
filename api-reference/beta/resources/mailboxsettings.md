@@ -4,12 +4,13 @@ description: サインイン ユーザーのプライマリ メールボック�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: bf5ca7b6e9a653946f5ea1ff0a302c8499f2e02d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 769912b4fc818a892420111749b80614fefc7be9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345126"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009882"
 ---
 # <a name="mailboxsettings-resource-type"></a>mailboxSettings リソースの種類
 

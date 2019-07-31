@@ -4,12 +4,13 @@ description: グラフの 1 つの軸を表します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: ce18f029e3e5e48597ac5074d683e6a8cdb64674
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 929fd2569067e67af6770b9281bce1d09cd9eca4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348849"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007376"
 ---
 # <a name="workbookchartaxis-resource-type"></a>workbookChartAxis リソースの種類
 
@@ -26,7 +27,7 @@ ms.locfileid: "33348849"
 |[Update](../api/chartaxis-update.md) | [workbookChartAxis](workbookchartaxis.md)   |ChartAxis オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 | id       |string   | 一意の識別子。 読み取り専用です。|
 |majorUnit|Json|2 つの大きい目盛の間隔を表します。数値の値または空の文字列を設定できます。戻り値は常に数値です。|
@@ -34,7 +35,7 @@ ms.locfileid: "33348849"
 |minimum|Json|数値軸の最小値を表します。数値の値または空の文字列を設定できます (軸の値が自動の場合)。戻り値は常に数値です。|
 |minorUnit|Json|2 つの小さい目盛の間隔を表します。"数値の値または空の文字列を設定できます (軸の値が自動の場合)。戻り値は常に数値です。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |format|[workbookChartAxisFormat](workbookchartaxisformat.md)|グラフ オブジェクトの書式設定を表します。これには線とフォントの書式設定などがあります。値の取得のみ可能です。|

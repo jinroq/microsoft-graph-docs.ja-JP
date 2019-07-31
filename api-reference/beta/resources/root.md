@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: Root ファセットは、オブジェクトが階層内の最上位であることを示します。
 ms.date: 09/10/2017
 title: 原因
 localization_priority: Normal
-ms.openlocfilehash: 83211263f4ba7998ea9e1863756f5aba7b6ff070
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 78a0bd7da9ab0d2f6f0c15a06416ce09ae53219a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343508"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008650"
 ---
 # <a name="root-resource-type"></a>Root リソースの種類
 

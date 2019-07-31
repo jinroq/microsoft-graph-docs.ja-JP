@@ -4,12 +4,13 @@ description: Intune 経由で管理または事前登録された Windows デバ
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8e4d94c8f27d4fc651283476b0eb92518d5bdfde
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 9c3cdc65f53e79bf5a9bb5b31e1438d74ccc876f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34983974"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35999410"
 ---
 # <a name="windowsmanageddevice-resource-type"></a>windowsManagedDevice リソースの種類
 

@@ -1,29 +1,31 @@
 ---
-title: sharepointactivityusercounts リソースの種類
+title: sharePointActivityUserCounts リソースの種類
 description: リソースの JSON 表記を次に示します。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 9656b39572eac5b6474dd7884eb7d1d2edb17310
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+author: ''
+ms.openlocfilehash: 97fbcb8c611bd497a7bf6613a5bde53738aff5e8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583950"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008454"
 ---
-# <a name="sharepointactivityusercounts-resource-type"></a>sharepointactivityusercounts リソースの種類
+# <a name="sharepointactivityusercounts-resource-type"></a>sharePointActivityUserCounts リソースの種類
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ          | 型   |
 | :---------------- | :----- |
-| reportrefreshdate | Date   |
+| reportRefreshDate | 日付   |
 | visitedPage       | Int64  |
 | viewedOrEdited    | Int64  |
 | 同期            | Int64  |
-| sharedinternally  | Int64  |
+| sharedInternally  | Int64  |
 | sharedExternally  | Int64  |
-| reportDate        | Date   |
-| reportperiod      | String |
+| reportDate        | 日付   |
+| reportPeriod      | String |
 
 ## <a name="json-representation"></a>JSON 表記
 
