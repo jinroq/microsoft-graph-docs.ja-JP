@@ -1,25 +1,27 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: ThumbnailSet リソースは、サムネイル リソースのキー付きコレクションです。
 ms.date: 09/10/2017
 title: ThumbnailSet
 localization_priority: Normal
-ms.openlocfilehash: e3e3305e398651478c88d4c3aa75e753ce26acd5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: bb8c286cd8c3827317edc9a24e4d14dbe963a05d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342046"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964348"
 ---
-# <a name="thumbnailset-resource-type"></a><span data-ttu-id="299be-102">ThumbnailSet リソースの種類</span><span class="sxs-lookup"><span data-stu-id="299be-102">ThumbnailSet resource type</span></span>
+# <a name="thumbnailset-resource-type"></a><span data-ttu-id="5c41a-103">ThumbnailSet リソースの種類</span><span class="sxs-lookup"><span data-stu-id="5c41a-103">ThumbnailSet resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="299be-p101">**ThumbnailSet** リソースは、[サムネイル](thumbnail.md) リソースのキー付きコレクションです。DriveItem に関連付けられているサムネイルのセットを表すために使用されます。</span><span class="sxs-lookup"><span data-stu-id="299be-p101">The **ThumbnailSet** resource is a keyed collection of [thumbnail](thumbnail.md) resources. It is used to represent a set of thumbnails associated with a DriveItem.</span></span>
+<span data-ttu-id="5c41a-p101">**ThumbnailSet** リソースは、[サムネイル](thumbnail.md) リソースのキー付きコレクションです。DriveItem に関連付けられているサムネイルのセットを表すために使用されます。</span><span class="sxs-lookup"><span data-stu-id="5c41a-p101">The **ThumbnailSet** resource is a keyed collection of [thumbnail](thumbnail.md) resources. It is used to represent a set of thumbnails associated with a DriveItem.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="299be-105">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="299be-105">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="5c41a-106">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="5c41a-106">JSON representation</span></span>
 
-<span data-ttu-id="299be-106">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="299be-106">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="5c41a-107">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="5c41a-107">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -39,15 +41,15 @@ ms.locfileid: "33342046"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="299be-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="299be-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="5c41a-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="5c41a-108">Properties</span></span>
 
-| <span data-ttu-id="299be-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="299be-108">Property</span></span> | <span data-ttu-id="299be-109">型</span><span class="sxs-lookup"><span data-stu-id="299be-109">Type</span></span>                      | <span data-ttu-id="299be-110">説明</span><span class="sxs-lookup"><span data-stu-id="299be-110">Description</span></span>                                                                       |
+| <span data-ttu-id="5c41a-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="5c41a-109">Property</span></span> | <span data-ttu-id="5c41a-110">型</span><span class="sxs-lookup"><span data-stu-id="5c41a-110">Type</span></span>                      | <span data-ttu-id="5c41a-111">説明</span><span class="sxs-lookup"><span data-stu-id="5c41a-111">Description</span></span>                                                                       |
 |:---------|:--------------------------|:----------------------------------------------------------------------------------|
-| <span data-ttu-id="299be-111">id</span><span class="sxs-lookup"><span data-stu-id="299be-111">id</span></span>       | <span data-ttu-id="299be-112">String</span><span class="sxs-lookup"><span data-stu-id="299be-112">String</span></span>                    | <span data-ttu-id="299be-p102">アイテム内の ID。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="299be-p102">The id within the item. Read-only.</span></span>                                                |
-| <span data-ttu-id="299be-115">large</span><span class="sxs-lookup"><span data-stu-id="299be-115">large</span></span>    | [<span data-ttu-id="299be-116">Thumbnail</span><span class="sxs-lookup"><span data-stu-id="299be-116">Thumbnail</span></span>](thumbnail.md) | <span data-ttu-id="299be-117">1920 x 1920 にスケーリングされたサムネイル。</span><span class="sxs-lookup"><span data-stu-id="299be-117">A 1920x1920 scaled thumbnail.</span></span>                                                     |
-| <span data-ttu-id="299be-118">medium</span><span class="sxs-lookup"><span data-stu-id="299be-118">medium</span></span>   | [<span data-ttu-id="299be-119">Thumbnail</span><span class="sxs-lookup"><span data-stu-id="299be-119">Thumbnail</span></span>](thumbnail.md) | <span data-ttu-id="299be-120">176x176 にスケーリングされたサムネイル。</span><span class="sxs-lookup"><span data-stu-id="299be-120">A 176x176 scaled thumbnail.</span></span>                                                       |
-| <span data-ttu-id="299be-121">small</span><span class="sxs-lookup"><span data-stu-id="299be-121">small</span></span>    | [<span data-ttu-id="299be-122">Thumbnail</span><span class="sxs-lookup"><span data-stu-id="299be-122">Thumbnail</span></span>](thumbnail.md) | <span data-ttu-id="299be-123">48 x 48 にトリミングされたサムネイル。</span><span class="sxs-lookup"><span data-stu-id="299be-123">A 48x48 cropped thumbnail.</span></span>                                                        |
-| <span data-ttu-id="299be-124">source</span><span class="sxs-lookup"><span data-stu-id="299be-124">source</span></span>   | [<span data-ttu-id="299be-125">Thumbnail</span><span class="sxs-lookup"><span data-stu-id="299be-125">Thumbnail</span></span>](thumbnail.md) | <span data-ttu-id="299be-126">カスタムのサムネイル イメージ、または他のサムネイルを生成するために使用する元のイメージ。</span><span class="sxs-lookup"><span data-stu-id="299be-126">A custom thumbnail image or the original image used to generate other thumbnails.</span></span> |
+| <span data-ttu-id="5c41a-112">id</span><span class="sxs-lookup"><span data-stu-id="5c41a-112">id</span></span>       | <span data-ttu-id="5c41a-113">String</span><span class="sxs-lookup"><span data-stu-id="5c41a-113">String</span></span>                    | <span data-ttu-id="5c41a-p102">アイテム内の ID。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="5c41a-p102">The id within the item. Read-only.</span></span>                                                |
+| <span data-ttu-id="5c41a-116">large</span><span class="sxs-lookup"><span data-stu-id="5c41a-116">large</span></span>    | [<span data-ttu-id="5c41a-117">Thumbnail</span><span class="sxs-lookup"><span data-stu-id="5c41a-117">Thumbnail</span></span>](thumbnail.md) | <span data-ttu-id="5c41a-118">1920 x 1920 にスケーリングされたサムネイル。</span><span class="sxs-lookup"><span data-stu-id="5c41a-118">A 1920x1920 scaled thumbnail.</span></span>                                                     |
+| <span data-ttu-id="5c41a-119">medium</span><span class="sxs-lookup"><span data-stu-id="5c41a-119">medium</span></span>   | [<span data-ttu-id="5c41a-120">Thumbnail</span><span class="sxs-lookup"><span data-stu-id="5c41a-120">Thumbnail</span></span>](thumbnail.md) | <span data-ttu-id="5c41a-121">176x176 にスケーリングされたサムネイル。</span><span class="sxs-lookup"><span data-stu-id="5c41a-121">A 176x176 scaled thumbnail.</span></span>                                                       |
+| <span data-ttu-id="5c41a-122">small</span><span class="sxs-lookup"><span data-stu-id="5c41a-122">small</span></span>    | [<span data-ttu-id="5c41a-123">Thumbnail</span><span class="sxs-lookup"><span data-stu-id="5c41a-123">Thumbnail</span></span>](thumbnail.md) | <span data-ttu-id="5c41a-124">48 x 48 にトリミングされたサムネイル。</span><span class="sxs-lookup"><span data-stu-id="5c41a-124">A 48x48 cropped thumbnail.</span></span>                                                        |
+| <span data-ttu-id="5c41a-125">source</span><span class="sxs-lookup"><span data-stu-id="5c41a-125">source</span></span>   | [<span data-ttu-id="5c41a-126">Thumbnail</span><span class="sxs-lookup"><span data-stu-id="5c41a-126">Thumbnail</span></span>](thumbnail.md) | <span data-ttu-id="5c41a-127">カスタムのサムネイル イメージ、または他のサムネイルを生成するために使用する元のイメージ。</span><span class="sxs-lookup"><span data-stu-id="5c41a-127">A custom thumbnail image or the original image used to generate other thumbnails.</span></span> |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

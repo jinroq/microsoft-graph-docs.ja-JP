@@ -1,25 +1,27 @@
 ---
 author: daspek
-ms.author: dspektor
+description: itemActivity に RenameAction リソースがある場合、アクティビティがアイテムの名前を変更したことを示します。
 ms.date: 09/14/2017
 title: RenameAction
 localization_priority: Normal
-ms.openlocfilehash: c204efb50802fb35ea059a923bf1ce0bc08ed519
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: d62d3f7f836ece716bdc3e616e1943de8c040652
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343844"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965423"
 ---
-# <a name="renameaction-resource-type"></a><span data-ttu-id="e4428-102">RenameAction リソースの種類</span><span class="sxs-lookup"><span data-stu-id="e4428-102">RenameAction resource type</span></span>
+# <a name="renameaction-resource-type"></a><span data-ttu-id="3b96d-103">RenameAction リソースの種類</span><span class="sxs-lookup"><span data-stu-id="3b96d-103">RenameAction resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e4428-103">[**itemActivity**][activity] に **RenameAction** リソースがある場合、アクティビティがアイテムの名前を変更したことを示します。</span><span class="sxs-lookup"><span data-stu-id="e4428-103">The presence of the **RenameAction** resource on an [**itemActivity**][activity] indicates that the activity renamed an item.</span></span>
+<span data-ttu-id="3b96d-104">[**itemActivity**][activity] に **RenameAction** リソースがある場合、アクティビティがアイテムの名前を変更したことを示します。</span><span class="sxs-lookup"><span data-stu-id="3b96d-104">The presence of the **RenameAction** resource on an [**itemActivity**][activity] indicates that the activity renamed an item.</span></span>
 
 [activity]: itemactivity.md
 
-## <a name="json-representation"></a><span data-ttu-id="e4428-104">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="e4428-104">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="3b96d-105">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="3b96d-105">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -34,16 +36,16 @@ ms.locfileid: "33343844"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="e4428-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="e4428-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="3b96d-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="3b96d-106">Properties</span></span>
 
-| <span data-ttu-id="e4428-106">プロパティ名</span><span class="sxs-lookup"><span data-stu-id="e4428-106">Property name</span></span> | <span data-ttu-id="e4428-107">種類</span><span class="sxs-lookup"><span data-stu-id="e4428-107">Type</span></span>   | <span data-ttu-id="e4428-108">説明</span><span class="sxs-lookup"><span data-stu-id="e4428-108">Description</span></span>
+| <span data-ttu-id="3b96d-107">プロパティ名</span><span class="sxs-lookup"><span data-stu-id="3b96d-107">Property name</span></span> | <span data-ttu-id="3b96d-108">種類</span><span class="sxs-lookup"><span data-stu-id="3b96d-108">Type</span></span>   | <span data-ttu-id="3b96d-109">説明</span><span class="sxs-lookup"><span data-stu-id="3b96d-109">Description</span></span>
 |:--------------|:-------|:----------------------------------------------------
-| <span data-ttu-id="e4428-109">oldName</span><span class="sxs-lookup"><span data-stu-id="e4428-109">oldName</span></span>       | <span data-ttu-id="e4428-110">string</span><span class="sxs-lookup"><span data-stu-id="e4428-110">string</span></span> | <span data-ttu-id="e4428-111">アイテムの変更前の名前。</span><span class="sxs-lookup"><span data-stu-id="e4428-111">The previous name of the item.</span></span>
-| <span data-ttu-id="e4428-112">newName</span><span class="sxs-lookup"><span data-stu-id="e4428-112">newName</span></span>       | <span data-ttu-id="e4428-113">string</span><span class="sxs-lookup"><span data-stu-id="e4428-113">string</span></span> | <span data-ttu-id="e4428-114">アイテムの新しい名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="e4428-114">The new name of the item.</span></span>
+| <span data-ttu-id="3b96d-110">oldName</span><span class="sxs-lookup"><span data-stu-id="3b96d-110">oldName</span></span>       | <span data-ttu-id="3b96d-111">string</span><span class="sxs-lookup"><span data-stu-id="3b96d-111">string</span></span> | <span data-ttu-id="3b96d-112">アイテムの変更前の名前。</span><span class="sxs-lookup"><span data-stu-id="3b96d-112">The previous name of the item.</span></span>
+| <span data-ttu-id="3b96d-113">newName</span><span class="sxs-lookup"><span data-stu-id="3b96d-113">newName</span></span>       | <span data-ttu-id="3b96d-114">string</span><span class="sxs-lookup"><span data-stu-id="3b96d-114">string</span></span> | <span data-ttu-id="3b96d-115">アイテムの新しい名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="3b96d-115">The new name of the item.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="e4428-115">備考</span><span class="sxs-lookup"><span data-stu-id="e4428-115">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="3b96d-116">備考</span><span class="sxs-lookup"><span data-stu-id="3b96d-116">Remarks</span></span>
 
-<span data-ttu-id="e4428-116">アイテムのアクティビティの記録は、現在、SharePoint と OneDrive for Business でのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="e4428-116">Item activity records are currently only available on SharePoint and OneDrive for Business.</span></span>
+<span data-ttu-id="3b96d-117">アイテムのアクティビティの記録は、現在、SharePoint と OneDrive for Business でのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="3b96d-117">Item activity records are currently only available on SharePoint and OneDrive for Business.</span></span>
 
 <!--
 {

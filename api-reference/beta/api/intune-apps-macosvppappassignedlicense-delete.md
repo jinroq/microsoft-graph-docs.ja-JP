@@ -4,31 +4,32 @@ description: MacOsVppAppAssignedLicense を削除します。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9b83dedf8aba3995d9fc506b026bafc0c0d37ff2
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 37a623837e9c006b59c7f0c66e9b8f0aa3255e83
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34975120"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35961946"
 ---
-# <a name="delete-macosvppappassignedlicense"></a><span data-ttu-id="dacbf-103">MacOsVppAppAssignedLicense の削除</span><span class="sxs-lookup"><span data-stu-id="dacbf-103">Delete macOsVppAppAssignedLicense</span></span>
+# <a name="delete-macosvppappassignedlicense"></a><span data-ttu-id="14866-103">MacOsVppAppAssignedLicense の削除</span><span class="sxs-lookup"><span data-stu-id="14866-103">Delete macOsVppAppAssignedLicense</span></span>
 
-> <span data-ttu-id="dacbf-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="dacbf-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="14866-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="14866-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="dacbf-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="dacbf-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="14866-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="14866-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="dacbf-106">[MacOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md)を削除します。</span><span class="sxs-lookup"><span data-stu-id="dacbf-106">Deletes a [macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md).</span></span>
+<span data-ttu-id="14866-106">[MacOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md)を削除します。</span><span class="sxs-lookup"><span data-stu-id="14866-106">Deletes a [macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md).</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="dacbf-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="dacbf-107">Prerequisites</span></span>
-<span data-ttu-id="dacbf-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="dacbf-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="14866-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="14866-107">Prerequisites</span></span>
+<span data-ttu-id="14866-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="14866-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="dacbf-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="dacbf-110">Permission type</span></span>|<span data-ttu-id="dacbf-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="dacbf-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="14866-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="14866-110">Permission type</span></span>|<span data-ttu-id="14866-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="14866-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="dacbf-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="dacbf-112">Delegated (work or school account)</span></span>|<span data-ttu-id="dacbf-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dacbf-113">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="dacbf-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="dacbf-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="dacbf-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="dacbf-115">Not supported.</span></span>|
-|<span data-ttu-id="dacbf-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="dacbf-116">Application</span></span>|<span data-ttu-id="dacbf-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="dacbf-117">Not supported.</span></span>|
+|<span data-ttu-id="14866-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="14866-112">Delegated (work or school account)</span></span>|<span data-ttu-id="14866-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="14866-113">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="14866-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="14866-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="14866-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="14866-115">Not supported.</span></span>|
+|<span data-ttu-id="14866-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="14866-116">Application</span></span>|<span data-ttu-id="14866-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="14866-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="dacbf-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="dacbf-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="14866-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="14866-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,28 +38,28 @@ ms.locfileid: "34975120"
 DELETE /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.macOsVppApp/assignedLicenses/{macOsVppAppAssignedLicenseId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="dacbf-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="dacbf-119">Request headers</span></span>
-|<span data-ttu-id="dacbf-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="dacbf-120">Header</span></span>|<span data-ttu-id="dacbf-121">値</span><span class="sxs-lookup"><span data-stu-id="dacbf-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="14866-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="14866-119">Request headers</span></span>
+|<span data-ttu-id="14866-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="14866-120">Header</span></span>|<span data-ttu-id="14866-121">値</span><span class="sxs-lookup"><span data-stu-id="14866-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="dacbf-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="dacbf-122">Authorization</span></span>|<span data-ttu-id="dacbf-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="dacbf-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="dacbf-124">承諾</span><span class="sxs-lookup"><span data-stu-id="dacbf-124">Accept</span></span>|<span data-ttu-id="dacbf-125">application/json</span><span class="sxs-lookup"><span data-stu-id="dacbf-125">application/json</span></span>|
+|<span data-ttu-id="14866-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="14866-122">Authorization</span></span>|<span data-ttu-id="14866-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="14866-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="14866-124">承諾</span><span class="sxs-lookup"><span data-stu-id="14866-124">Accept</span></span>|<span data-ttu-id="14866-125">application/json</span><span class="sxs-lookup"><span data-stu-id="14866-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="dacbf-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="dacbf-126">Request body</span></span>
-<span data-ttu-id="dacbf-127">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="dacbf-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="14866-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="14866-126">Request body</span></span>
+<span data-ttu-id="14866-127">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="14866-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="dacbf-128">応答</span><span class="sxs-lookup"><span data-stu-id="dacbf-128">Response</span></span>
-<span data-ttu-id="dacbf-129">成功した場合、このメソッドは `204 No Content` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="dacbf-129">If successful, this method returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="14866-128">応答</span><span class="sxs-lookup"><span data-stu-id="14866-128">Response</span></span>
+<span data-ttu-id="14866-129">成功した場合、このメソッドは `204 No Content` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="14866-129">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="dacbf-130">例</span><span class="sxs-lookup"><span data-stu-id="dacbf-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="14866-130">例</span><span class="sxs-lookup"><span data-stu-id="14866-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="dacbf-131">要求</span><span class="sxs-lookup"><span data-stu-id="dacbf-131">Request</span></span>
-<span data-ttu-id="dacbf-132">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="dacbf-132">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="14866-131">要求</span><span class="sxs-lookup"><span data-stu-id="14866-131">Request</span></span>
+<span data-ttu-id="14866-132">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="14866-132">Here is an example of the request.</span></span>
 ``` http
 DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.macOsVppApp/assignedLicenses/{macOsVppAppAssignedLicenseId}
 ```
 
-### <a name="response"></a><span data-ttu-id="dacbf-133">応答</span><span class="sxs-lookup"><span data-stu-id="dacbf-133">Response</span></span>
-<span data-ttu-id="dacbf-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="dacbf-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="14866-133">応答</span><span class="sxs-lookup"><span data-stu-id="14866-133">Response</span></span>
+<span data-ttu-id="14866-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="14866-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```

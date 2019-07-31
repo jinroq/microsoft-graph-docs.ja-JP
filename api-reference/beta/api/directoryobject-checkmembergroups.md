@@ -4,37 +4,38 @@ description: 指定したグループの一覧のメンバーシップを確認�
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d296a57a4bb50eb4fca48d836d32674a2b33b2eb
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 471435b7ff0ea7dc9bfcdba82db41772a3945b53
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35862482"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35951233"
 ---
-# <a name="check-member-groups"></a><span data-ttu-id="deed7-103">メンバー グループをチェックする</span><span class="sxs-lookup"><span data-stu-id="deed7-103">Check member groups</span></span>
+# <a name="check-member-groups"></a><span data-ttu-id="e863e-103">メンバー グループをチェックする</span><span class="sxs-lookup"><span data-stu-id="e863e-103">Check member groups</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="deed7-104">指定したグループの一覧のメンバーシップを確認し、指定されたユーザー、グループ、サービスプリンシパル、またはディレクトリオブジェクトがメンバーであるグループをリストから返します。</span><span class="sxs-lookup"><span data-stu-id="deed7-104">Check for membership in a specified list of groups, and returns from that list those groups of which the specified user, group, service principal or directory object is a member.</span></span> <span data-ttu-id="deed7-105">この関数は、推移的です。</span><span class="sxs-lookup"><span data-stu-id="deed7-105">This function is transitive.</span></span>
+<span data-ttu-id="e863e-104">指定したグループの一覧のメンバーシップを確認し、指定されたユーザー、グループ、サービスプリンシパル、またはディレクトリオブジェクトがメンバーであるグループをリストから返します。</span><span class="sxs-lookup"><span data-stu-id="e863e-104">Check for membership in a specified list of groups, and returns from that list those groups of which the specified user, group, service principal or directory object is a member.</span></span> <span data-ttu-id="e863e-105">この関数は、推移的です。</span><span class="sxs-lookup"><span data-stu-id="e863e-105">This function is transitive.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="deed7-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="deed7-106">Permissions</span></span>
-<span data-ttu-id="deed7-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="deed7-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="e863e-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="e863e-106">Permissions</span></span>
+<span data-ttu-id="e863e-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e863e-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="deed7-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="deed7-109">Permission type</span></span>      | <span data-ttu-id="deed7-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="deed7-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e863e-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="e863e-109">Permission type</span></span>      | <span data-ttu-id="e863e-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="e863e-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="deed7-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="deed7-111">Delegated (work or school account)</span></span> | <span data-ttu-id="deed7-112">すべてのユーザーとグループを取得します。すべて、そして、すべてを読み取ります。すべてのユーザーとグループ。</span><span class="sxs-lookup"><span data-stu-id="deed7-112">User.ReadBasic.All and Group.Read.All, User.Read.All and Group.Read.All, Directory.Read.All</span></span>    |
-|<span data-ttu-id="deed7-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="deed7-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="deed7-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="deed7-114">Not supported.</span></span>    |
-|<span data-ttu-id="deed7-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="deed7-115">Application</span></span> | <span data-ttu-id="deed7-116">User.Read.All、Group.Read.All、Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="deed7-116">User.Read.All and Group.Read.All, Directory.Read.All</span></span> |
+|<span data-ttu-id="e863e-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="e863e-111">Delegated (work or school account)</span></span> | <span data-ttu-id="e863e-112">すべてのユーザーとグループを取得します。すべて、そして、すべてを読み取ります。すべてのユーザーとグループ。</span><span class="sxs-lookup"><span data-stu-id="e863e-112">User.ReadBasic.All and Group.Read.All, User.Read.All and Group.Read.All, Directory.Read.All</span></span>    |
+|<span data-ttu-id="e863e-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="e863e-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e863e-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e863e-114">Not supported.</span></span>    |
+|<span data-ttu-id="e863e-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="e863e-115">Application</span></span> | <span data-ttu-id="e863e-116">User.Read.All、Group.Read.All、Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="e863e-116">User.Read.All and Group.Read.All, Directory.Read.All</span></span> |
 
-<span data-ttu-id="deed7-117">使用するアクセス許可の種類を決定するには、次のシナリオのガイダンスを使用します。</span><span class="sxs-lookup"><span data-stu-id="deed7-117">Use the follow scenario guidance to help determine which permission types to use:</span></span>
-- <span data-ttu-id="deed7-118">ユーザーを使用します。すべてのアクセス許可が、サインインしているユーザーのグループメンバーシップを確認します。</span><span class="sxs-lookup"><span data-stu-id="deed7-118">Use User.Read and Group.Read.All permissions to check group memberships for the signed-in user.</span></span>
-- <span data-ttu-id="deed7-119">すべてのユーザーとグループのアクセス許可を使用して、すべての権限を取得します。すべて、または、すべてのユーザーのグループメンバーシップを確認します。</span><span class="sxs-lookup"><span data-stu-id="deed7-119">Use User.ReadBasic.All and Group.Read.All or User.Read.All and Group.Read.All permissions to check group memberships for any user.</span></span>
-- <span data-ttu-id="deed7-120">グループのグループメンバーシップを確認するには、すべてのアクセス許可を使用します。</span><span class="sxs-lookup"><span data-stu-id="deed7-120">Use Group.Read.All permission to check group memberships for a group.</span></span>
-- <span data-ttu-id="deed7-121">サービスプリンシパルのグループメンバーシップを確認するには、アプリケーションのすべてのアクセス許可を使用します。</span><span class="sxs-lookup"><span data-stu-id="deed7-121">Use Application.ReadWrite.All and Group.Read.All permissions to check group memberships for a service principal.</span></span>
-- <span data-ttu-id="deed7-122">ディレクトリオブジェクトのグループメンバーシップを確認するには、すべてのアクセス許可を使用します。</span><span class="sxs-lookup"><span data-stu-id="deed7-122">Use Directory.Read.All permission to check group memberships for a directory object.</span></span>
+<span data-ttu-id="e863e-117">使用するアクセス許可の種類を決定するには、次のシナリオのガイダンスを使用します。</span><span class="sxs-lookup"><span data-stu-id="e863e-117">Use the follow scenario guidance to help determine which permission types to use:</span></span>
+- <span data-ttu-id="e863e-118">ユーザーを使用します。すべてのアクセス許可が、サインインしているユーザーのグループメンバーシップを確認します。</span><span class="sxs-lookup"><span data-stu-id="e863e-118">Use User.Read and Group.Read.All permissions to check group memberships for the signed-in user.</span></span>
+- <span data-ttu-id="e863e-119">すべてのユーザーとグループのアクセス許可を使用して、すべての権限を取得します。すべて、または、すべてのユーザーのグループメンバーシップを確認します。</span><span class="sxs-lookup"><span data-stu-id="e863e-119">Use User.ReadBasic.All and Group.Read.All or User.Read.All and Group.Read.All permissions to check group memberships for any user.</span></span>
+- <span data-ttu-id="e863e-120">グループのグループメンバーシップを確認するには、すべてのアクセス許可を使用します。</span><span class="sxs-lookup"><span data-stu-id="e863e-120">Use Group.Read.All permission to check group memberships for a group.</span></span>
+- <span data-ttu-id="e863e-121">サービスプリンシパルのグループメンバーシップを確認するには、アプリケーションのすべてのアクセス許可を使用します。</span><span class="sxs-lookup"><span data-stu-id="e863e-121">Use Application.ReadWrite.All and Group.Read.All permissions to check group memberships for a service principal.</span></span>
+- <span data-ttu-id="e863e-122">ディレクトリオブジェクトのグループメンバーシップを確認するには、すべてのアクセス許可を使用します。</span><span class="sxs-lookup"><span data-stu-id="e863e-122">Use Directory.Read.All permission to check group memberships for a directory object.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="deed7-123">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="deed7-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e863e-123">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="e863e-123">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/checkMemberGroups
@@ -43,29 +44,29 @@ POST /groups/{id}/checkMemberGroups
 POST /servicePrincipals/{id}/checkMemberGroups
 POST /directoryObjects/{id}/checkMemberGroups
 ```
-## <a name="request-headers"></a><span data-ttu-id="deed7-124">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="deed7-124">Request headers</span></span>
-| <span data-ttu-id="deed7-125">名前</span><span class="sxs-lookup"><span data-stu-id="deed7-125">Name</span></span>       | <span data-ttu-id="deed7-126">型</span><span class="sxs-lookup"><span data-stu-id="deed7-126">Type</span></span> | <span data-ttu-id="deed7-127">説明</span><span class="sxs-lookup"><span data-stu-id="deed7-127">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e863e-124">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="e863e-124">Request headers</span></span>
+| <span data-ttu-id="e863e-125">名前</span><span class="sxs-lookup"><span data-stu-id="e863e-125">Name</span></span>       | <span data-ttu-id="e863e-126">型</span><span class="sxs-lookup"><span data-stu-id="e863e-126">Type</span></span> | <span data-ttu-id="e863e-127">説明</span><span class="sxs-lookup"><span data-stu-id="e863e-127">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="deed7-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="deed7-128">Authorization</span></span>  | <span data-ttu-id="deed7-129">string</span><span class="sxs-lookup"><span data-stu-id="deed7-129">string</span></span>  | <span data-ttu-id="deed7-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="deed7-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="deed7-132">Content-Type</span><span class="sxs-lookup"><span data-stu-id="deed7-132">Content-Type</span></span>  | <span data-ttu-id="deed7-133">application/json</span><span class="sxs-lookup"><span data-stu-id="deed7-133">application/json</span></span>  |
+| <span data-ttu-id="e863e-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="e863e-128">Authorization</span></span>  | <span data-ttu-id="e863e-129">string</span><span class="sxs-lookup"><span data-stu-id="e863e-129">string</span></span>  | <span data-ttu-id="e863e-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="e863e-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e863e-132">Content-Type</span><span class="sxs-lookup"><span data-stu-id="e863e-132">Content-Type</span></span>  | <span data-ttu-id="e863e-133">application/json</span><span class="sxs-lookup"><span data-stu-id="e863e-133">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="deed7-134">要求本文</span><span class="sxs-lookup"><span data-stu-id="deed7-134">Request body</span></span>
-<span data-ttu-id="deed7-135">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="deed7-135">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e863e-134">要求本文</span><span class="sxs-lookup"><span data-stu-id="e863e-134">Request body</span></span>
+<span data-ttu-id="e863e-135">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="e863e-135">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="deed7-136">パラメーター</span><span class="sxs-lookup"><span data-stu-id="deed7-136">Parameter</span></span>    | <span data-ttu-id="deed7-137">型</span><span class="sxs-lookup"><span data-stu-id="deed7-137">Type</span></span>   |<span data-ttu-id="deed7-138">説明</span><span class="sxs-lookup"><span data-stu-id="deed7-138">Description</span></span>|
+| <span data-ttu-id="e863e-136">パラメーター</span><span class="sxs-lookup"><span data-stu-id="e863e-136">Parameter</span></span>    | <span data-ttu-id="e863e-137">型</span><span class="sxs-lookup"><span data-stu-id="e863e-137">Type</span></span>   |<span data-ttu-id="e863e-138">説明</span><span class="sxs-lookup"><span data-stu-id="e863e-138">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="deed7-139">groupIds</span><span class="sxs-lookup"><span data-stu-id="deed7-139">groupIds</span></span>|<span data-ttu-id="deed7-140">文字列コレクション</span><span class="sxs-lookup"><span data-stu-id="deed7-140">String collection</span></span> |<span data-ttu-id="deed7-p104">メンバーシップを確認するためのグループのオブジェクト ID を含むコレクションです。最大 20 グループを指定することが可能です。</span><span class="sxs-lookup"><span data-stu-id="deed7-p104">A collection that contains the object IDs of the groups in which to check membership. Up to 20 groups may be specified.</span></span>|
+|<span data-ttu-id="e863e-139">groupIds</span><span class="sxs-lookup"><span data-stu-id="e863e-139">groupIds</span></span>|<span data-ttu-id="e863e-140">文字列コレクション</span><span class="sxs-lookup"><span data-stu-id="e863e-140">String collection</span></span> |<span data-ttu-id="e863e-p104">メンバーシップを確認するためのグループのオブジェクト ID を含むコレクションです。最大 20 グループを指定することが可能です。</span><span class="sxs-lookup"><span data-stu-id="e863e-p104">A collection that contains the object IDs of the groups in which to check membership. Up to 20 groups may be specified.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="deed7-143">応答</span><span class="sxs-lookup"><span data-stu-id="deed7-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e863e-143">応答</span><span class="sxs-lookup"><span data-stu-id="e863e-143">Response</span></span>
 
-<span data-ttu-id="deed7-144">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で文字列コレクション オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="deed7-144">If successful, this method returns `200 OK` response code and String collection object in the response body.</span></span>
+<span data-ttu-id="e863e-144">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で文字列コレクション オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="e863e-144">If successful, this method returns `200 OK` response code and String collection object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="deed7-145">例</span><span class="sxs-lookup"><span data-stu-id="deed7-145">Example</span></span>
+## <a name="example"></a><span data-ttu-id="e863e-145">例</span><span class="sxs-lookup"><span data-stu-id="e863e-145">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="deed7-146">要求</span><span class="sxs-lookup"><span data-stu-id="deed7-146">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="e863e-146">要求</span><span class="sxs-lookup"><span data-stu-id="e863e-146">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="deed7-147">プロトコル</span><span class="sxs-lookup"><span data-stu-id="deed7-147">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="e863e-147">プロトコル</span><span class="sxs-lookup"><span data-stu-id="e863e-147">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "directoryobject_checkmembergroups"
@@ -81,27 +82,27 @@ Content-type: application/json
   ]
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="deed7-148">C#</span><span class="sxs-lookup"><span data-stu-id="deed7-148">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="e863e-148">C#</span><span class="sxs-lookup"><span data-stu-id="e863e-148">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/directoryobject-checkmembergroups-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="deed7-149">Javascript</span><span class="sxs-lookup"><span data-stu-id="deed7-149">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e863e-149">Javascript</span><span class="sxs-lookup"><span data-stu-id="e863e-149">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/directoryobject-checkmembergroups-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="deed7-150">目的-C</span><span class="sxs-lookup"><span data-stu-id="deed7-150">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="e863e-150">目的-C</span><span class="sxs-lookup"><span data-stu-id="e863e-150">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/directoryobject-checkmembergroups-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="deed7-151">Java</span><span class="sxs-lookup"><span data-stu-id="deed7-151">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="e863e-151">Java</span><span class="sxs-lookup"><span data-stu-id="e863e-151">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/directoryobject-checkmembergroups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="deed7-152">応答</span><span class="sxs-lookup"><span data-stu-id="deed7-152">Response</span></span>
-<span data-ttu-id="deed7-p105">注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="deed7-p105">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="e863e-152">応答</span><span class="sxs-lookup"><span data-stu-id="e863e-152">Response</span></span>
+<span data-ttu-id="e863e-p105">注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="e863e-p105">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

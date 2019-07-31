@@ -1,32 +1,34 @@
 ---
-title: resultinfo リソースの種類
-description: resultinfo 型。
+title: resultInfo リソースの種類
+description: ResultInfo 型。
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 2406c29c12af81ee6981b8ffa59e630a5451c2fc
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 1e5f6a523a8aca4454cd3355e2a0287fef9fc90d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343550"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965370"
 ---
-# <a name="resultinfo-resource-type"></a><span data-ttu-id="a3de6-103">resultinfo リソースの種類</span><span class="sxs-lookup"><span data-stu-id="a3de6-103">resultInfo resource type</span></span>
+# <a name="resultinfo-resource-type"></a><span data-ttu-id="b814e-103">resultInfo リソースの種類</span><span class="sxs-lookup"><span data-stu-id="b814e-103">resultInfo resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a3de6-104">resultinfo 型。</span><span class="sxs-lookup"><span data-stu-id="a3de6-104">The resultInfo type.</span></span>
+<span data-ttu-id="b814e-104">ResultInfo 型。</span><span class="sxs-lookup"><span data-stu-id="b814e-104">The resultInfo type.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="a3de6-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="a3de6-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="b814e-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="b814e-105">Properties</span></span>
 
-| <span data-ttu-id="a3de6-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="a3de6-106">Property</span></span> | <span data-ttu-id="a3de6-107">型</span><span class="sxs-lookup"><span data-stu-id="a3de6-107">Type</span></span>   | <span data-ttu-id="a3de6-108">説明</span><span class="sxs-lookup"><span data-stu-id="a3de6-108">Description</span></span>          |
+| <span data-ttu-id="b814e-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="b814e-106">Property</span></span> | <span data-ttu-id="b814e-107">型</span><span class="sxs-lookup"><span data-stu-id="b814e-107">Type</span></span>   | <span data-ttu-id="b814e-108">説明</span><span class="sxs-lookup"><span data-stu-id="b814e-108">Description</span></span>          |
 | :------- | :----- | :------------------  |
-| <span data-ttu-id="a3de6-109">code</span><span class="sxs-lookup"><span data-stu-id="a3de6-109">code</span></span>     | <span data-ttu-id="a3de6-110">String</span><span class="sxs-lookup"><span data-stu-id="a3de6-110">String</span></span> | <span data-ttu-id="a3de6-111">結果コード。</span><span class="sxs-lookup"><span data-stu-id="a3de6-111">The result code.</span></span>     |
-| <span data-ttu-id="a3de6-112">message</span><span class="sxs-lookup"><span data-stu-id="a3de6-112">message</span></span>  | <span data-ttu-id="a3de6-113">String</span><span class="sxs-lookup"><span data-stu-id="a3de6-113">String</span></span> | <span data-ttu-id="a3de6-114">メッセージ。</span><span class="sxs-lookup"><span data-stu-id="a3de6-114">The message.</span></span>         |
-| <span data-ttu-id="a3de6-115">subCode</span><span class="sxs-lookup"><span data-stu-id="a3de6-115">subCode</span></span>  | <span data-ttu-id="a3de6-116">String</span><span class="sxs-lookup"><span data-stu-id="a3de6-116">String</span></span> | <span data-ttu-id="a3de6-117">結果サブコード。</span><span class="sxs-lookup"><span data-stu-id="a3de6-117">The result sub-code.</span></span> |
+| <span data-ttu-id="b814e-109">code</span><span class="sxs-lookup"><span data-stu-id="b814e-109">code</span></span>     | <span data-ttu-id="b814e-110">String</span><span class="sxs-lookup"><span data-stu-id="b814e-110">String</span></span> | <span data-ttu-id="b814e-111">結果コード。</span><span class="sxs-lookup"><span data-stu-id="b814e-111">The result code.</span></span>     |
+| <span data-ttu-id="b814e-112">message</span><span class="sxs-lookup"><span data-stu-id="b814e-112">message</span></span>  | <span data-ttu-id="b814e-113">String</span><span class="sxs-lookup"><span data-stu-id="b814e-113">String</span></span> | <span data-ttu-id="b814e-114">メッセージ。</span><span class="sxs-lookup"><span data-stu-id="b814e-114">The message.</span></span>         |
+| <span data-ttu-id="b814e-115">subCode</span><span class="sxs-lookup"><span data-stu-id="b814e-115">subCode</span></span>  | <span data-ttu-id="b814e-116">String</span><span class="sxs-lookup"><span data-stu-id="b814e-116">String</span></span> | <span data-ttu-id="b814e-117">結果サブコード。</span><span class="sxs-lookup"><span data-stu-id="b814e-117">The result sub-code.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="a3de6-118">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="a3de6-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="b814e-118">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="b814e-118">JSON representation</span></span>
 
-<span data-ttu-id="a3de6-119">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="a3de6-119">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="b814e-119">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="b814e-119">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -43,7 +45,7 @@ ms.locfileid: "33343550"
 }
 ```
 
-## <a name="example-error-result"></a><span data-ttu-id="a3de6-120">エラー結果の例</span><span class="sxs-lookup"><span data-stu-id="a3de6-120">Example Error result</span></span>
+## <a name="example-error-result"></a><span data-ttu-id="b814e-120">エラー結果の例</span><span class="sxs-lookup"><span data-stu-id="b814e-120">Example Error result</span></span>
 
 <!-- {
   "blockType": "example",
@@ -57,7 +59,7 @@ ms.locfileid: "33343550"
 }
 ```
 
-## <a name="example-generic-success-result"></a><span data-ttu-id="a3de6-121">一般的な成功結果の例</span><span class="sxs-lookup"><span data-stu-id="a3de6-121">Example Generic success result</span></span>
+## <a name="example-generic-success-result"></a><span data-ttu-id="b814e-121">一般的な成功結果の例</span><span class="sxs-lookup"><span data-stu-id="b814e-121">Example Generic success result</span></span>
 
 <!-- {
   "blockType": "example",
@@ -71,7 +73,7 @@ ms.locfileid: "33343550"
 }
 ```
 
-## <a name="example-record-success-result"></a><span data-ttu-id="a3de6-122">レコード成功の例</span><span class="sxs-lookup"><span data-stu-id="a3de6-122">Example Record Success result</span></span>
+## <a name="example-record-success-result"></a><span data-ttu-id="b814e-122">レコード成功の例</span><span class="sxs-lookup"><span data-stu-id="b814e-122">Example Record Success result</span></span>
 
 <!-- {
   "blockType": "example",
