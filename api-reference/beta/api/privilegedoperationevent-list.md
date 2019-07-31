@@ -2,18 +2,21 @@
 title: リスト privilegedOperationEvents
 description: filter ' ' 式。
 localization_priority: Normal
-ms.openlocfilehash: 672035f460043c795b293cd90b18918389fe7137
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: d7eb411a7cdd134ae1f2bfaaaf691ec900a4fb46
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337352"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992060"
 ---
 # <a name="list-privilegedoperationevents"></a>リスト privilegedOperationEvents
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[privilegedOperationEvent](../resources/privilegedoperationevent.md)オブジェクトのリストを取得します。これは、ロール操作の特権 id 管理によって生成される監査イベントを表します。 audit イベントの詳細については、「 [privilegedOperationEvent](../resources/privilegedoperationevent.md)」を参照してください。 クエリ結果をフィルター処理するには、標準``$filter``の OData 式を使用します。
+[PrivilegedOperationEvent](../resources/privilegedoperationevent.md)オブジェクトのリストを取得します。これは、ロール操作の特権 id 管理によって生成される監査イベントを表します。 Audit イベントの詳細については、「 [privilegedOperationEvent](../resources/privilegedoperationevent.md)」を参照してください。 クエリ結果をフィルター処理するには、標準``$filter``の OData 式を使用します。
 
 
 ## <a name="permissions"></a>アクセス許可
@@ -114,7 +117,7 @@ Content-length: 547
 ```
 ### <a name="get-audit-events-for-the-operations-of-self-role-activation-and-makepermanent"></a>自己ロールライセンス認証の操作の監査イベントを取得し、永続的なものにする
 ##### <a name="request"></a>要求
-次の例は、自己ロールライセンス認証の操作の監査イベントを取得する要求と、makepermanent を示しています。 この場合、 ``requestType``値は``Activate``です。
+次の例は、自己ロールライセンス認証の操作の監査イベントを取得する要求と、makePermanent を示しています。 この場合、 ``requestType``値は``Activate``です。
 
 <!-- { "blockType": "request" } -->
 ```http

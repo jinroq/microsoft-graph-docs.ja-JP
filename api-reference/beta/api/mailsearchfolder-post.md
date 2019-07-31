@@ -4,12 +4,13 @@ description: この API を使用して、指定したユーザーのメール�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: d77445f288c6b08dfa782a849d319f3502383b66
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 69ebdb4bfb701375a933cfd5c63a3cb93413e066
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35879866"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35983968"
 ---
 # <a name="create-mailsearchfolder"></a>MailSearchFolder を作成する
 

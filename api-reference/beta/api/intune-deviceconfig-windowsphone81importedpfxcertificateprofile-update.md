@@ -4,12 +4,13 @@ description: WindowsPhone81ImportedPFXCertificateProfile オブジェクトの�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 05bdba994ec1b60fc3d686c5ba94b5ab5d3d1932
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 3b21bdc460013034cdb8ec3ec3549c1dbf985b11
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34961596"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35982054"
 ---
 # <a name="update-windowsphone81importedpfxcertificateprofile"></a>WindowsPhone81ImportedPFXCertificateProfile の更新
 

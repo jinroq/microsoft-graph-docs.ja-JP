@@ -4,18 +4,19 @@ description: 1つの割り当てがポイントグレードの種類に設定さ
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: 166f6b5ce377441641cf12232c2194dff1184765
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 6e74c6bb74c830cb1ceb80e149903282c4da33ae
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340586"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972818"
 ---
 # <a name="educationassignmentpointsgrade-resource-type"></a>educationAssignmentPointsGrade リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-1つの割り当てがポイントグレードの種類に設定されている場合、各提出物には、"**成績**" プロパティに関連付けられたオブジェクトがあります。 これにより、 [educationAssignmentGrade](educationassignmentgrade.md)からサブクラスが作成され、このプロパティに who データが追加されます。 max 要素は、 **assignments**プロパティに格納されます。
+1つの割り当てがポイントグレードの種類に設定されている場合、各提出物には、"**成績**" プロパティに関連付けられたオブジェクトがあります。 これにより、 [educationAssignmentGrade](educationassignmentgrade.md)からサブクラスが作成され、このプロパティに who データが追加されます。 Max 要素は、 **assignments**プロパティに格納されます。
 
 
 ## <a name="properties"></a>プロパティ

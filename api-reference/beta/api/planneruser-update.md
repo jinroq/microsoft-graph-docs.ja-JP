@@ -4,12 +4,13 @@ description: プランのユーザーオブジェクトのプロパティを更�
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 77f76a8b2324fd287cc3f73d1aa78a99accb4ea2
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 269741aff4f17a0855bda4681ae49799c03cd4f6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337559"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992172"
 ---
 # <a name="update-planneruser"></a>プランのユーザーを更新する
 
@@ -51,7 +52,7 @@ PATCH /me/planner
 このメソッドは、いずれかの [HTTP 状態コード](/graph/errors)を返します。このメソッドでアプリが処理する最も一般的なエラーは、400、403、404、409、412 応答です。これらのエラーの詳細については、「[一般的なプランナーのエラー条件](../resources/planner-overview.md#common-planner-error-conditions)」を参照してください。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
-要求の例を次に示します。 この要求は、"jd8S5gOaFk2S8aWCIAJz42QAAxtD" という id を持つプラン "次のリリースディスカッション" をユーザーのお気に入りとして追加し、"7oTB5aMIAE2rVo-1n-L7RmQAGX2q" という id のプランを [お気に入りのプラン] の一覧から削除します。
+要求の例を次に示します。 この要求は、"jd8S5gOaFk2S8aWCIAJz42QAAxtD" という ID を持つプラン "次のリリースディスカッション" をユーザーのお気に入りとして追加し、"7oTB5aMIAE2rVo-1N-L7RmQAGX2q" という ID のプランを [お気に入りのプラン] の一覧から削除します。
 また、"jd8S5gOaFk2S8aWCIAJz42QAAxtD" プランの最終ビュー時刻も更新します。
 <!-- {
   "blockType": "ignored",
@@ -84,7 +85,7 @@ If-Match: W/"JzEtVXNlckRldGFpbHMgQEBAQEBAQEBAQEBAQEBIWCc="
 ##### <a name="response"></a>応答
 応答の例を次に示します。 
 
->**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
+>**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 
 <!-- {
   "blockType": "ignored",

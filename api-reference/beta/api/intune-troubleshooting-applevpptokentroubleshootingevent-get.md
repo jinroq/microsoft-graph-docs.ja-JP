@@ -4,12 +4,13 @@ description: このイベントオブジェクトのプロパティとリレー�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2a8c455a58fd700488d4d6e0585a3b2365339f08
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 8c5897b48984b944a0372d3ddaf2ce33ee6bcfa8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34990919"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979513"
 ---
 # <a name="get-applevpptokentroubleshootingevent"></a>作業中の作業のトラブルシューティングイベントを取得する
 

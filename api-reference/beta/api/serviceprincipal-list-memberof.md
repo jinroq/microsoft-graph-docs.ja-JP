@@ -2,12 +2,15 @@
 title: ServicePrincipal memberOf のリスト
 description: このサービスプリンシパルが直接メンバになっているグループとディレクトリロールを取得します。 この操作は推移的ではありません。
 localization_priority: Normal
-ms.openlocfilehash: f58210131c0ae8e107f5e4f4f7361cf741aec8b7
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 7ccc338adb1b715719281507d63cba709a8e28bc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35870048"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991381"
 ---
 # <a name="list-serviceprincipal-memberof"></a>ServicePrincipal memberOf のリスト
 

@@ -4,12 +4,13 @@ description: スケジュールから timeOff インスタンスを削除しま�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: ffc2068041a86ac452913dcfe5255222c4bfe59d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 48186a56bba49ea9ebcd76f66127a6f395381c48
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35868082"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35990681"
 ---
 # <a name="delete-timeoff"></a>TimeOff の削除
 

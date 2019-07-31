@@ -4,12 +4,13 @@ description: デバイスの種類別に日次ユーザーの数を取得しま�
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 7982a1211e5dc714a76cdf188981e930952e6761
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 378966e49b4ac9a22be4030a18b98e7aa9604d1a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35871532"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991745"
 ---
 # <a name="reportroot-getyammerdeviceusageusercounts"></a>reportRoot: getYammerDeviceUsageUserCounts
 

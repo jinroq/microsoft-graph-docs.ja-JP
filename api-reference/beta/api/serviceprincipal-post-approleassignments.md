@@ -2,12 +2,15 @@
 title: appRoleAssignment を作成する
 description: この API を使用して、新しい appRoleAssignment を作成します。
 localization_priority: Normal
-ms.openlocfilehash: 3b3820394681ed27b862465e041f21d34c2b0835
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 969698b2c012c156ffc3e525c73c626b67ae519a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35869901"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977903"
 ---
 # <a name="create-approleassignment"></a>appRoleAssignment を作成する
 

@@ -2,14 +2,15 @@
 title: 同期ジョブを一覧表示する
 description: 特定のアプリケーションインスタンス (サービスプリンシパル) の既存のジョブを一覧表示します。
 localization_priority: Normal
+doc_type: apiPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7ca62db05bb38dc1c96c80d7602ef4396fc6ac35
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: d9a8211d57c65a8a66287a1da82892fd7b416a7d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35869363"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977815"
 ---
 # <a name="list-synchronization-jobs"></a>同期ジョブを一覧表示する
 

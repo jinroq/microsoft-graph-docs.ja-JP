@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: ListItem の特定のバージョンのメタデータを取得します。
 ms.date: 09/10/2017
 title: 旧バージョンのリスト アイテムを取得する - SharePoint API
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 2193c2e23ad5227e9118f23a782fbaa24756f88b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 752287ac5e004688e1dd1747f3689c5f460dc946
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33338706"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35984096"
 ---
 # <a name="get-a-listitemversion-resource-preview"></a>ListItemVersion リソースを取得する (プレビュー)
 

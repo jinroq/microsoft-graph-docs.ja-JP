@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: 特定のアクセス許可リソースに対する、有効な共有アクセス許可を返します。
 ms.date: 09/10/2017
 title: アクセス許可の取得
 localization_priority: Normal
-ms.openlocfilehash: 5f06c118d43731f47bc713052f69537cf429186d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+ms.openlocfilehash: 1a102867af744ebe78cdb6db75caf19ddcef37d2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35876979"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35983510"
 ---
 # <a name="get-sharing-permission-for-a-file-or-folder"></a>ファイルまたはフォルダーの共有アクセス許可を取得する
 

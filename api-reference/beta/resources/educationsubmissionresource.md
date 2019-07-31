@@ -4,12 +4,13 @@ description: '提出物で使用するためにリソースをラップするラ
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: b96607a0d37a3ec8af0f6ff0bad61215d6e9008c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 48f4549354603346e39b5e1f6f387b207e2f14ef
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340591"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972483"
 ---
 # <a name="educationsubmissionresource-resource-type"></a>educationSubmissionResource リソースの種類
 
@@ -22,13 +23,13 @@ ms.locfileid: "33340591"
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[educationSubmissionResource を取得する](../api/educationsubmissionresource-get.md) | [educationSubmissionResource](educationsubmissionresource.md) |**educationSubmissionResource**オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[削除](../api/educationsubmissionresource-delete.md) | なし |**educationSubmissionResource**オブジェクトを削除します。 |
+|[EducationSubmissionResource を取得する](../api/educationsubmissionresource-get.md) | [educationSubmissionResource](educationsubmissionresource.md) |**EducationSubmissionResource**オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[Delete](../api/educationsubmissionresource-delete.md) | None |**EducationSubmissionResource**オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|割り当て resourceurl|String|このリソースがコピーされた割り当てへのポインター。 この値が null の場合、学生はリソースをアップロードしました。|
+|割り当て Resourceurl|String|このリソースがコピーされた割り当てへのポインター。 この値が null の場合、学生はリソースをアップロードしました。|
 |id|String| 読み取り専用です。|
 |リソース|[educationResource](educationresource.md)|Resource オブジェクト。|
 

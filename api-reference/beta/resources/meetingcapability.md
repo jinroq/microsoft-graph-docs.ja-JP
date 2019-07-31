@@ -4,12 +4,13 @@ description: 会議の機能が含まれています。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 55a577490ee4c40bbd4adcc63a7e4aa7f38c8dd1
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 1de406cf0614a4cbb64749cef763a97a3723eb48
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342599"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966861"
 ---
 # <a name="meetingcapability-resource-type"></a>会議機能リソースの種類
 

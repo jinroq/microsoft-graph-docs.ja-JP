@@ -4,16 +4,17 @@ description: user を削除します。
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 394876368b6de7bd76b4eb6a5f11cc4d923fdc88
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: df68bf0089ca8f3e8aba35cac7f8a9ac5e0872b1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33898145"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979653"
 ---
 # <a name="delete-user"></a>ユーザーを削除する
 
-> **重要:** Microsoft Graph の/ベータ版の Api は変更される可能性があります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** Microsoft Graph の/ベータ版の Api は変更される可能性があります。 実稼働アプリケーションでは、これらの API の使用はサポートされていません。
 
 > **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 

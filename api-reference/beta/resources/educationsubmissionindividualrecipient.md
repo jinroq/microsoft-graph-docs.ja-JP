@@ -1,21 +1,22 @@
 ---
 title: educationSubmissionIndividualRecipient リソースの種類
-description: 'educationSubmissionRecipient のサブクラスで、送信がクラス内の個々に割り当てられていることを示します。  '
+description: 'EducationSubmissionRecipient のサブクラスで、送信がクラス内の個々に割り当てられていることを示します。  '
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: de58dc743cd50f0e31021b4651bb0a3b3b192197
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 2eecdc7e7ddd30ecad9a520b42cd11df9565fa71
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340556"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972510"
 ---
 # <a name="educationsubmissionindividualrecipient-resource-type"></a>educationSubmissionIndividualRecipient リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[educationSubmissionRecipient](educationsubmissionrecipient.md)のサブクラスで、送信がクラス内の個々に割り当てられていることを示します。  
+[EducationSubmissionRecipient](educationsubmissionrecipient.md)のサブクラスで、送信がクラス内の個々に割り当てられていることを示します。  
 
 
 ## <a name="properties"></a>プロパティ

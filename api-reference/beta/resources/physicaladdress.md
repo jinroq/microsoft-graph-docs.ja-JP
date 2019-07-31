@@ -4,12 +4,13 @@ description: 連絡先やイベントなどのリソースの番地を表しま�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: d6081f21069cef6014c8a028898f11ea9a3f4f3c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 35826dabd9052023abdc9d8c83ac9640ef550061
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345005"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966120"
 ---
 # <a name="physicaladdress-resource-type"></a>physicalAddress リソースの種類
 
@@ -24,7 +25,7 @@ ms.locfileid: "33345005"
 |city|String|市区町村。|
 |countryOrRegion|String|国または地域。自由形式の文字列値です。例: 「米国」。|
 |postalCode|String|郵便番号。|
-|postofficebox が|String|郵便局の私書箱番号。|
+|Postofficebox が|String|郵便局の私書箱番号。|
 |state|String|都道府県。|
 |street|String|番地。|
 |type|physicalAddressType|住所の種類。 使用可能な値は、`unknown`、`home`、`business`、`other` です。|

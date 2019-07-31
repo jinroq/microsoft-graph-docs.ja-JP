@@ -1,19 +1,22 @@
 ---
 title: governanceRoleAssignmentRequestStatus リソースの種類
-description: governanceRoleAssignmentRequest の状態を表します。
+description: GovernanceRoleAssignmentRequest の状態を表します。
 localization_priority: Normal
-ms.openlocfilehash: 768ef092dbe52b0989277905bae03eee091ca8c6
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: ca61e5e3ef5456889eafcef3914f16fc072dfb6b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340322"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35971865"
 ---
 # <a name="governanceroleassignmentrequeststatus-resource-type"></a>governanceRoleAssignmentRequestStatus リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)の状態を表します。
+[GovernanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)の状態を表します。
 
 
 ## <a name="properties"></a>プロパティ
@@ -21,7 +24,7 @@ ms.locfileid: "33340322"
 |:----|:-------------|:-----|
 |status |String| 役割の割り当て要求の状態。 値には、 `InProgress`また`Closed`はを指定できます。|
 |サブ |String| 役割の割り当て要求のサブ状態。 値には、 `Accepted`、 `PendingEvaluation`、 `Granted`、 `Denied`、 `PendingProvisioning`、 `Provisioned`、 `PendingRevocation`、 `Revoked`、 `Canceled`、 `Failed`、 `PendingApprovalProvisioning`、 `PendingApproval`、 `FailedAsResourceIsLocked`、 `PendingAdminDecision`、、、 `TimedOut`、、 `ProvisioningStarted`の各値を指定`AdminApproved` `AdminDenied`できます。|
-|statusdetails       |[keyvalue](../resources/keyvalue.md) コレクション| 役割の割り当て要求の状態の詳細。 さまざまなルールの評価結果を表します。 |
+|statusDetails       |[keyvalue](../resources/keyvalue.md) コレクション| 役割の割り当て要求の状態の詳細。 さまざまなルールの評価結果を表します。 |
 
 ## <a name="json-representation"></a>JSON 表記
 
