@@ -1,15 +1,17 @@
 ---
 author: VinodRavichandran
+description: オーディオ リソースは、アイテムのオーディオ関連のプロパティを単一の構造にグループ化します。
 ms.date: 09/10/2017
 title: オーディオ
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: f526fc92c766f3ae91831d5026a31e3bd69b4b8b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 078ade2fd92d6eaf8d9017fe5cd8255a7449769e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339103"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013228"
 ---
 # <a name="audio-facet"></a>Audio ファセット
 
@@ -57,7 +59,7 @@ ms.locfileid: "33339103"
 | **discCount**         | Int32   | このアルバムの合計ディスク数。                             |
 | **duration**          | Int64   | オーディオ ファイルの継続時間。ミリ秒単位で表されます。                |
 | **genre**             | string  | このオーディオ ファイルのジャンル。                                        |
-| **hasDrm**            | boolean | ファイルがデジタル著作権管理で保護されているかどうかを示します。   |
+| **hasDrm**            | ブール値 | ファイルがデジタル著作権管理で保護されているかどうかを示します。   |
 | **isVariableBitrate** | boolean | ファイルが可変ビットレートでエンコードされているかどうかを示します。            |
 | **title**             | string  | オーディオ ファイルのタイトル。                                         |
 | **track**             | Int32   | このオーディオ ファイルの元のディスクでのトラック番号。    |

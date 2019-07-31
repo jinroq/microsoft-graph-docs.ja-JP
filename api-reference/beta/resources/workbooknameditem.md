@@ -2,12 +2,15 @@
 title: workbookNamedItem リソースの種類
 description: セルまたは値の範囲の定義済みの名前を表します。名前には、(以下の型に見られるような) プリミティブ名前付きオブジェクト、範囲オブジェクト、範囲への参照を設定できます。このオブジェクトを使用して、名前に関連付けられた範囲オブジェクトを取得することができます。
 localization_priority: Normal
-ms.openlocfilehash: 49267379385a13b94e8639e4c129c05192b2ae6f
-ms.sourcegitcommit: b523648530fcc8c2a3ded35b419be8047b9fcd10
+doc_type: resourcePageType
+ms.prod: excel
+author: ''
+ms.openlocfilehash: 90c816bde49cf7062bf2b04deebd8ce6a7e08669
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "35084083"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007117"
 ---
 # <a name="workbooknameditem-resource-type"></a>workbookNamedItem リソースの種類
 

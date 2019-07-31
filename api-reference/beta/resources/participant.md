@@ -4,12 +4,13 @@ description: 参加者の種類。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4a138267529127562fa9df42d8b20a985939b50e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: a903eb34191401100d9b19aa17eba6fb9f5c6617
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345020"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009217"
 ---
 # <a name="participant-resource-type"></a>参加者リソースの種類
 
@@ -33,9 +34,9 @@ ms.locfileid: "33345020"
 | :------------------- | :--------------------------------------- | :------------------------------------------------------------|
 | id                   | String                                   | 参加者 id。                                          |
 | info                 | [participantInfo](participantinfo.md)    | 参加者の参加者。                          |
-| isInLobby            | boolean                                  | 参加者がロビーにある場合は true                          |
-| ismuted              | boolean                                  | 参加者がミュートされている場合は true (クライアントまたはサーバーがミュート状態)    |
-| mediastreams         | [mediastream](mediastream.md)コレクション | メディアストリームのリスト。                                   |
+| isInLobby            | ブール値                                  | 参加者がロビーにある場合は true                          |
+| isMuted              | ブール値                                  | 参加者がミュートされている場合は true (クライアントまたはサーバーがミュート状態)    |
+| mediaStreams         | [Mediastream](mediastream.md)コレクション | メディアストリームのリスト。                                   |
 | metadata             | String                                   | 参加者が名簿に提供するデータの blob     |
 | recordingInfo        | [recordingInfo](recordinginfo.md)        | 参加者にレコーディング機能があるかどうかに関する情報。 |
 

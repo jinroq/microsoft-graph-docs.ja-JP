@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: DriveRecipient リソースは、出席依頼アクションを使用して共有する個人、グループ、または他の受信者を表します。
 ms.date: 09/10/2017
 title: DriveRecipient
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: c1a121969bf6b36c8afccd367a084a4b75599eaf
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: f86b79567b4148934f1c9624124026472fbb3395
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334608"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012710"
 ---
 # <a name="driverecipient-resource"></a>DriveRecipient リソース
 
@@ -37,7 +38,7 @@ ms.locfileid: "33334608"
 
 | プロパティ名 | 種類   | 説明                                                                                             |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------|
-| email         | String | 受信者が関連付けられた電子メール アドレスを設定している場合は、受信者の電子メール アドレスです。                  |
+| メール         | String | 受信者が関連付けられた電子メール アドレスを設定している場合は、受信者の電子メール アドレスです。                  |
 | alias         | String | 電子メール アドレスが使用できない場合は、ドメイン オブジェクトのエイリアス (セキュリティ グループなど) です。 |
 | objectId      | String | ディレクトリ内の受信者の一意識別子。                                               |
 

@@ -4,12 +4,13 @@ description: 範囲のフォント、塗りつぶし、境界線、配置など�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 3ee55e1a398dab1727dfdc24d9ebd5c66b7440d3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 6ec27300e720892debbd458970063f1b79270597
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348916"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007068"
 ---
 # <a name="workbookrangeformat-resource-type"></a>workbookRangeFormat リソースの種類
 
@@ -22,15 +23,15 @@ ms.locfileid: "33348916"
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[workbookRangeFormat を取得する](../api/rangeformat-get.md) | [workbookRangeFormat](workbookrangeformat.md) |rangeFormat オブジェクトのプロパティと関係を読み取ります。|
-|[workbookRangeBorder を作成する](../api/rangeformat-post-borders.md) |[workbookRangeBorder](workbookrangeborder.md)| 境界線コレクションに投稿して、新しい RangeBorder を作成します。|
+|[WorkbookRangeFormat を取得する](../api/rangeformat-get.md) | [workbookRangeFormat](workbookrangeformat.md) |rangeFormat オブジェクトのプロパティと関係を読み取ります。|
+|[WorkbookRangeBorder を作成する](../api/rangeformat-post-borders.md) |[workbookRangeBorder](workbookrangeborder.md)| 境界線コレクションに投稿して、新しい RangeBorder を作成します。|
 |[境界線を一覧表示する](../api/rangeformat-list-borders.md) |[workbookRangeBorder](workbookrangeborder.md)コレクション| RangeBorder オブジェクトのコレクションを取得します。|
 |[Update](../api/rangeformat-update.md) | [workbookRangeFormat](workbookrangeformat.md) |RangeFormat オブジェクトを更新します。 |
-|[Autofitcolumns](../api/rangeformat-autofitcolumns.md)|なし|現在の列のデータに基づいて、現在の範囲の列の幅を最適な幅に変更します。|
+|[Autofitcolumns](../api/rangeformat-autofitcolumns.md)|None|現在の列のデータに基づいて、現在の範囲の列の幅を最適な幅に変更します。|
 |[Autofitrows](../api/rangeformat-autofitrows.md)|なし|現在の行のデータに基づいて、現在の範囲の行の高さを最適な高さに変更します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |columnWidth|double|範囲内のすべての列の幅を取得または設定します。列の幅が均一でない場合は、null が返されます。|
 |horizontalAlignment|string|指定したオブジェクトの水平方向の配置を表します。可能な値は、`General`、`Left`、`Center`、`Right`、`Fill`、`Justify`、`CenterAcrossSelection`、`Distributed` です。|
@@ -38,7 +39,7 @@ ms.locfileid: "33348916"
 |verticalAlignment|string|指定したオブジェクトの垂直方向の配置を表します。可能な値は、`Top`、`Center`、`Bottom`、`Justify`、`Distributed` です。|
 |wrapText|ブール値|オブジェクト内のテキストを Excel でラップするかどうかを表します。null 値は、範囲全体に一様なラップ設定がないことを表します。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |borders|[workbookRangeBorder](workbookrangeborder.md)コレクション|選択した範囲全体に適用する境界線オブジェクトのコレクションです。読み取り専用です。|

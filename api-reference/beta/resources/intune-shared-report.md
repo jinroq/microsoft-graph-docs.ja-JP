@@ -4,12 +4,13 @@ description: 複数のワークフローをサポートする Microsoft Graph AP
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
-ms.openlocfilehash: f94be1bcc5dfde092c6360bbdddd96d604d30a55
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: resourcePageType
+ms.openlocfilehash: c27df6cb965e4be5c186ee8bf14a65e467f538b4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939673"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36010393"
 ---
 # <a name="report-resource-type"></a>レポート リソースの種類
 
@@ -27,7 +28,7 @@ ms.locfileid: "33939673"
 |:---|:---|:---|
 |content|Stream|レポートコンテンツ。詳細はレポートの種類によって異なります。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記

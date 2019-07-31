@@ -4,12 +4,13 @@ description: 割り当てに関連付けられているリソースを格納す�
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: 08a716edabc31c83a7fb3e358fbafd023d5fa784
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 60181a2289b272809cff025abeee83c594ae833e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334411"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006431"
 ---
 # <a name="educationassignmentresource-resource-type"></a>educationAssignmentResource リソースの種類
 
@@ -22,9 +23,9 @@ ms.locfileid: "33334411"
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[educationAssignmentResource を取得する](../api/educationassignmentresource-get.md) | [educationAssignmentResource](educationassignmentresource.md) |**educationAssignmentResource**オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[更新する](../api/educationassignmentresource-update.md) | [educationAssignmentResource](educationassignmentresource.md) |**educationAssignmentResource**オブジェクトを更新します。 |
-|[削除](../api/educationassignmentresource-delete.md) | なし |**educationAssignmentResource**オブジェクトを削除します。 |
+|[EducationAssignmentResource を取得する](../api/educationassignmentresource-get.md) | [educationAssignmentResource](educationassignmentresource.md) |**EducationAssignmentResource**オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[Update](../api/educationassignmentresource-update.md) | [educationAssignmentResource](educationassignmentresource.md) |**EducationAssignmentResource**オブジェクトを更新します。 |
+|[Delete](../api/educationassignmentresource-delete.md) | None |**EducationAssignmentResource**オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|

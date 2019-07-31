@@ -4,12 +4,13 @@ description: グラフの凡例の書式設定プロパティをカプセル化�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 6bd5fd708574950aea8752396b7fd6495ca6b782
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 987753588beeec62ded346d2f2ff8611c0436e48
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348872"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007264"
 ---
 # <a name="workbookchartlegendformat-resource-type"></a>workbookChartLegendFormat リソースの種類
 
@@ -18,12 +19,12 @@ ms.locfileid: "33348872"
 グラフの凡例の書式設定プロパティをカプセル化します。
 
 ## <a name="methods"></a>メソッド
-なし
+None
 
 ## <a name="properties"></a>プロパティ
 なし
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |fill|[workbookChartFill](workbookchartfill.md)|背景の書式設定情報を含む、オブジェクトの塗りつぶしの書式を表します。値の取得のみ可能です。|

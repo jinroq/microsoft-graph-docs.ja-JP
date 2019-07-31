@@ -4,12 +4,13 @@ description: まだ文書化されていません
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aee85a811b03c67a14d960846c044fe78f9db7d8
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 0fdbfced3a6e3024bd0901ca0335bf56708cd242
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34986145"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012507"
 ---
 # <a name="microsoftstoreforbusinesslicensetype-enum-type"></a>Microsoft Storeforbusinesslicensetype 列挙型
 

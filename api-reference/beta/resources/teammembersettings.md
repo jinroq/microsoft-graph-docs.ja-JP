@@ -1,17 +1,18 @@
 ---
-title: teammembersettings リソースの種類
+title: teamMemberSettings リソースの種類
 description: メンバーが特定のアクション (チャネルの作成、ボットの追加など) をチーム内で実行できるかどうかを構成する設定。
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 33f1930096ff63968db39e06ddec26c53ae8bcc9
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: c7c6690eb293581a60cba20d3f3ef63187339c35
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341723"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007698"
 ---
-# <a name="teammembersettings-resource-type"></a>teammembersettings リソースの種類
+# <a name="teammembersettings-resource-type"></a>teamMemberSettings リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -20,11 +21,11 @@ ms.locfileid: "33341723"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|allowCreateUpdateChannels|Boolean|true に設定されている場合、メンバーはチャネルを追加および更新できます。|
-|allowDeleteChannels|Boolean|true に設定されている場合、メンバーはチャネルを削除できます。|
-|allowaddremoveapps|Boolean|true に設定すると、メンバーはアプリを追加および削除できるようになります。|
-|allowCreateUpdateRemoveTabs|Boolean|true に設定されている場合、メンバーはタブの追加、更新、および削除を行うことができます。 |
-|allowCreateUpdateRemoveConnectors|Boolean|true に設定されている場合、メンバーはコネクタの追加、更新、および削除を行うことができます。|
+|allowCreateUpdateChannels|Boolean|True に設定されている場合、メンバーはチャネルを追加および更新できます。|
+|allowDeleteChannels|Boolean|True に設定されている場合、メンバーはチャネルを削除できます。|
+|allowAddRemoveApps|Boolean|True に設定すると、メンバーはアプリを追加および削除できるようになります。|
+|allowCreateUpdateRemoveTabs|Boolean|True に設定されている場合、メンバーはタブの追加、更新、および削除を行うことができます。 |
+|allowCreateUpdateRemoveConnectors|Boolean|True に設定されている場合、メンバーはコネクタの追加、更新、および削除を行うことができます。|
 
 ## <a name="json-representation"></a>JSON 表記
 

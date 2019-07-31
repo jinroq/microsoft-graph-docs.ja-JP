@@ -2,12 +2,15 @@
 title: コネクタリソースの種類
 description: 以下は、リソースの JSON 表記です。
 localization_priority: Normal
-ms.openlocfilehash: 5467d2a4625ad3813ff2777838db87be3ca5b713
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: ec4d3fdb415533d5b3f2effc72688fe912551bc8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341220"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012878"
 ---
 # <a name="connector-resource-type"></a>コネクタリソースの種類
 
@@ -25,13 +28,13 @@ ms.locfileid: "33341220"
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
 |[コネクタの取得](../api/connector-get.md) | [コネクター](connector.md) |コネクタオブジェクトのプロパティとリレーションシップを読み取ります。|
-|[List memberOf](../api/connector-list-memberof.md) |[コネクタグループ](connectorgroup.md)コレクション| コネクタに関連付けられているコネクタグループオブジェクトを取得します。|
+|[memberOf を一覧表示する](../api/connector-list-memberof.md) |[コネクタグループ](connectorgroup.md)コレクション| コネクタに関連付けられているコネクタグループオブジェクトを取得します。|
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|externalip|String|コネクタコンピューターのサービスによって検出された外部 IP アドレス。 読み取り専用|
-|id|String| コネクタのオブジェクト id。 <BR>読み取り専用です。|
+|externalIp|String|コネクタコンピューターのサービスによって検出された外部 IP アドレス。 読み取り専用|
+|id|文字列| コネクタのオブジェクト id。 <BR>読み取り専用です。|
 |マシン|String| コネクタが実行されているコンピューターの名前。 <BR>読み取り専用|
 |status|string| コネクタの状態を示します。 可能な値は、`active`、`inactive` です。 読み取り専用 |
 

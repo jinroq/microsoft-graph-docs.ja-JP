@@ -4,12 +4,13 @@ description: RangeView は、親の範囲の表示されているセルのセッ
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: fdc09b4c88e3105624f322697784cfa4e654ee96
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: b71f6eadcf110c2942cf02f43b3aa8b5db2db4cc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345828"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007089"
 ---
 # <a name="workbookrangeview-resource-type"></a>workbookRangeView リソースの種類
 

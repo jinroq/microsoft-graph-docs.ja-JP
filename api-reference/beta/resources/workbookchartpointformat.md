@@ -4,12 +4,13 @@ description: グラフのポイントのオブジェクトの書式設定を表�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: f0896001fda140ff1d2693b3463c472568f1d28e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 9c3d968c4d36b8220d505edb6b7503a2b1206416
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348884"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007236"
 ---
 # <a name="workbookchartpointformat-resource-type"></a>workbookChartPointFormat リソースの種類
 
@@ -19,12 +20,12 @@ ms.locfileid: "33348884"
 
 
 ## <a name="methods"></a>メソッド
-なし
+None
 
 ## <a name="properties"></a>プロパティ
 なし
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |fill|[workbookChartFill](workbookchartfill.md)|背景の書式設定情報を含むグラフの塗りつぶしの書式を表します。 読み取り専用です。|

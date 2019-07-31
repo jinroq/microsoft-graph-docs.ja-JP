@@ -4,12 +4,13 @@ description: 監視対象となる、循環する地域フェンス管理条件 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 06acd4ae1912297d14bc23c2a942b23d9bbbf8a2
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: c92e2f4abd636abd39d67448fa341587847cc58c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34994826"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35998724"
 ---
 # <a name="circulargeofencemanagementcondition-resource-type"></a>circularGeofenceManagementCondition リソースの種類
 

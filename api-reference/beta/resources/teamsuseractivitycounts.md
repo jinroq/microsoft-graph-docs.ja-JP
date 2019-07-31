@@ -1,29 +1,30 @@
 ---
-title: teamsuseractivitycounts リソースの種類
+title: teamsUserActivityCounts リソースの種類
 description: リソースの JSON 表記を次に示します。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: bcc0e9d1ed5c93c3d9f4ba97165d0413025a89cd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 9e1a40d962ded7825b72d31675cefb9869750866
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32582921"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007621"
 ---
-# <a name="teamsuseractivitycounts-resource-type"></a>teamsuseractivitycounts リソースの種類
+# <a name="teamsuseractivitycounts-resource-type"></a>teamsUserActivityCounts リソースの種類
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ            | 型   |
 | :------------------ | :----- |
-| reportrefreshdate   | Date   |
-| reportDate          | Date   |
-| teamchatmessages    | Int64  |
+| reportRefreshDate   | 日付   |
+| reportDate          | 日付   |
+| teamChatMessages    | Int64  |
 | privateChatMessages | Int64  |
 | calls               | Int64  |
 | meetings            | Int64  |
-| reportperiod        | String |
+| reportPeriod        | String |
 
 
 ## <a name="json-representation"></a>JSON 表記

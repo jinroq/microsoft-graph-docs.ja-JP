@@ -4,12 +4,13 @@ description: エンティティは、ポリシー定義の複数行テキスト�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 175d0113ccf4cda201ca9feb17d684397ac064db
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: ba837a63b984a546d7133948dd40646a62067e16
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34987846"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35998493"
 ---
 # <a name="grouppolicypresentationvaluemultitext-resource-type"></a>groupPolicyPresentationValueMultiText リソースの種類
 

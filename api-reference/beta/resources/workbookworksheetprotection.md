@@ -4,12 +4,13 @@ description: シート オブジェクトの保護を表します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 7e4a2f3130c71df35b1106d1a342004cfc6fdf25
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: ed6f52074836368eade8851ea32f1e8ef64e493e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348862"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007040"
 ---
 # <a name="workbookworksheetprotection-resource-type"></a>workbookWorksheetProtection リソースの種類
 
@@ -22,8 +23,8 @@ ms.locfileid: "33348862"
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[workbookWorksheetProtection を取得する](../api/worksheetprotection-get.md) | [workbookWorksheetProtection](workbookworksheetprotection.md) |workbookWorksheetProtection オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[Protect](../api/worksheetprotection-protect.md)|なし|ワークシートを保護します。ワークシートが保護されている場合はスローします。|
+|[WorkbookWorksheetProtection を取得する](../api/worksheetprotection-get.md) | [workbookWorksheetProtection](workbookworksheetprotection.md) |WorkbookWorksheetProtection オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[Protect](../api/worksheetprotection-protect.md)|None|ワークシートを保護します。ワークシートが保護されている場合はスローします。|
 |[Unprotect](../api/worksheetprotection-unprotect.md)|なし|ワークシートの保護を解除します。|
 
 ## <a name="properties"></a>プロパティ

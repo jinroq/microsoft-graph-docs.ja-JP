@@ -4,12 +4,13 @@ description: 管理条件式モデルは、管理条件式のモデル表現で�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e984c0f8fde29ed19a92faee2fe6330fdd9fe68a
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: a12737a922d69ecd2fc9ceceee34d3700807b5f7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34979208"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35998745"
 ---
 # <a name="managementconditionexpressionmodel-resource-type"></a>Managementconditionexpression Model リソースの種類
 
