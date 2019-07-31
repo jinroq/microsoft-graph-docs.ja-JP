@@ -4,12 +4,13 @@ description: chartPoint オブジェクトのプロパティと関係を取得�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 7633239c58be2c909624e9a80f2da025b30ad2ec
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 235d89fb8cef67e20cd46062374cc7cedc63e770
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35863881"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943804"
 ---
 # <a name="get-chartpoint"></a>Get ChartPoint
 

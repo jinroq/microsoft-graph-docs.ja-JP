@@ -4,12 +4,13 @@ description: サインインしているユーザーのメールボックス内�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 1d515a4049f764250130d6eba0123737d18e0116
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 230fa87233dfb5bfc2fc22cf2d64a4f6131b1ef0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35863193"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943247"
 ---
 # <a name="list-contacts"></a>連絡先を一覧表示する
 

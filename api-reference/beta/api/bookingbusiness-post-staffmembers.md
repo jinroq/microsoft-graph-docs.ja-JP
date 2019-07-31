@@ -4,12 +4,13 @@ description: 指定した bookingbusiness に新しいスタッフメンバー�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 2e14e849bfa25c01efa2d912292ccfd3268b20a0
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: d811f0141659d45d11e76b24052c679723a50d3a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35865496"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945068"
 ---
 # <a name="create-bookingstaffmember"></a>BookingStaffMember を作成する
 

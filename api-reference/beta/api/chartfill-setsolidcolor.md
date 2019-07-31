@@ -4,12 +4,13 @@ description: グラフ要素の塗りつぶしの書式設定を均一な色に�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: ad5c8ed36fd541756e281ec03de13bf157aaa005
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 9249e0517754d18407682d9f52c82e480fc9fcda
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35864056"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943947"
 ---
 # <a name="chartfill-setsolidcolor"></a>ChartFill: setSolidColor
 

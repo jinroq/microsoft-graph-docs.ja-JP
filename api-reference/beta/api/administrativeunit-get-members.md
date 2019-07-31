@@ -4,12 +4,13 @@ description: この API を使用して、管理単位で特定のメンバー (
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3a9752d37fed21ebadbd0e05cc30831b13f30ef5
-ms.sourcegitcommit: 27e8ddb53b699f70b676c9648db8f06bb8d831a9
+doc_type: apiPageType
+ms.openlocfilehash: 81a1165148dbaa81740cdc4d7b9dbf65f7d8cd4b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "35917957"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945859"
 ---
 # <a name="get-a-member"></a>メンバーを取得する
 
@@ -23,9 +24,9 @@ ms.locfileid: "35917957"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | AdministrativeUnit、AdministrativeUnit、Directory.accessasuser.all のいずれかの値を取得します。    |
+|委任 (職場または学校のアカウント) | AdministrativeUnit、AdministrativeUnit、Directory.accessasuser.all、および all のいずれかを取得します。すべてのディレクトリは、です。    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | AdministrativeUnit、AdministrativeUnit のいずれかを取得します。 |
+|アプリケーション | AdministrativeUnit。すべて、AdministrativeUnit、およびすべてのディレクトリを読み取ることができます。すべての |
 
 ## <a name="http-request"></a>HTTP 要求
 

@@ -2,12 +2,15 @@
 title: 契約を一覧表示する
 description: アグリーメントオブジェクトの一覧を取得します。
 localization_priority: Normal
-ms.openlocfilehash: bb6ea113238c9a6e991b3ae3068182497969390e
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 7c07a0308443c1d631122dd22c031789d8eb5acf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35855510"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945712"
 ---
 # <a name="list-agreements"></a>契約を一覧表示する
 

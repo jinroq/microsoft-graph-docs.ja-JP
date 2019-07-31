@@ -4,12 +4,13 @@ description: スレッドに以降の投稿を許可あるいは拒否するた�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: e7dac6648bfa8eed6b95971779750d003cb45f97
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 38e79a96b9d7d41d36188db0a51f8626dd73d1d8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35862878"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943065"
 ---
 # <a name="update-conversationthread"></a>Update conversationthread
 

@@ -5,12 +5,13 @@ title: バンドルの削除
 description: ドライブ項目のバンドルを削除する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 5bd1fd3f5d9befb538aa797481346a406ff0b53f
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+doc_type: apiPageType
+ms.openlocfilehash: 5854daeabf14e69ec859fe04563e0ee68d76ed22
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932859"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944823"
 ---
 # <a name="delete-bundle"></a>バンドルの削除
 

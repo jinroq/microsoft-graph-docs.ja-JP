@@ -4,12 +4,13 @@ description: charttitle オブジェクトのプロパティと関係を取得�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 210b401719cd17913e6fe08b321668e06d683802
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 42e66a1192eb563d64c1050c861c028d379f04c0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35863739"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943667"
 ---
 # <a name="get-charttitle"></a>Get ChartTitle
 

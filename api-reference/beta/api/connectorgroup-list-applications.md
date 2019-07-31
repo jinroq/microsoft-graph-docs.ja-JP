@@ -2,12 +2,15 @@
 title: アプリケーションを一覧表示する
 description: コネクタグループに関連付けられているアプリケーションオブジェクトの一覧を取得します。
 localization_priority: Normal
-ms.openlocfilehash: a1670a88d50a5aa46a5eca0c59f58604a48ec369
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 772dc51a25595de71dec9a760cceb1281347ea8e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33327585"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943464"
 ---
 # <a name="list-applications"></a>アプリケーションを一覧表示する
 

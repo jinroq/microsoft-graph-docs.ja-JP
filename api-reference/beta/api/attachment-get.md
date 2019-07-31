@@ -2,14 +2,15 @@
 title: 添付ファイルを取得する
 description: イベント、メッセージ、Outlook タスク、または投稿に添付されている添付ファイルのプロパティとリレーションシップを読み取ります。
 localization_priority: Normal
+doc_type: apiPageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: f55264b156a6687f0eb9e544f97eaf7df84dbeb3
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 09a336da0f2ead60235240b60b3539007df6bd15
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35857162"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945362"
 ---
 # <a name="get-attachment"></a>添付ファイルを取得する
 

@@ -4,12 +4,13 @@ description: 新しい settingStateDeviceSummary オブジェクトを作成し�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: df407dbcf131dfa2ab61fc3599878babf3ca33b8
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: d25c3bcbb3c54c6ed8d316df035fa861de135a61
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34976345"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35946475"
 ---
 # <a name="create-settingstatedevicesummary"></a>settingStateDeviceSummary の作成
 

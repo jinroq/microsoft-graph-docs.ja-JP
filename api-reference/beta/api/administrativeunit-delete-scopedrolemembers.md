@@ -4,12 +4,13 @@ description: 管理単位からスコープ付き役割のメンバーを削除�
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0fc95837a1d4d0079e18f2fcddd5d60180d39b66
-ms.sourcegitcommit: 27e8ddb53b699f70b676c9648db8f06bb8d831a9
+doc_type: apiPageType
+ms.openlocfilehash: 9321343e797bd45ca98ce470018481a7014684fa
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "35917981"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945887"
 ---
 # <a name="remove-a-scopedrolemember"></a>ScopedRoleMember を削除する
 
@@ -23,9 +24,9 @@ ms.locfileid: "35917981"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | AdministrativeUnit。すべての Directory.accessasuser.all について    |
+|委任 (職場または学校のアカウント) | RoleManagement、Directory.accessasuser.all、およびすべてのディレクトリ    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | AdministrativeUnit |
+|アプリケーション | RoleManagement |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

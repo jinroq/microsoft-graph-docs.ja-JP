@@ -5,12 +5,13 @@ title: バンドルを更新する
 description: ドライブ項目のバンドルを更新する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: bbeb9f62a0053a4735358097e2441bac08078ef7
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+doc_type: apiPageType
+ms.openlocfilehash: e3d7e684b9987aa5bcd4c601654956c84b6f7904
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932826"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944816"
 ---
 # <a name="update-bundle"></a>バンドルの更新
 

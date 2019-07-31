@@ -4,12 +4,13 @@ description: グラフ要素の線の書式をクリアします。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 883e691dc7209e3618cc556bc9d10394813f5725
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: a74b7c6c9adf5e9aef2022416723d0e28ba36b85
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35863958"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943842"
 ---
 # <a name="chartlineformat-clear"></a>ChartLineFormat: clear
 

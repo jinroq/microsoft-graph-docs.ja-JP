@@ -2,12 +2,15 @@
 title: コネクタグループの作成
 description: この API を使用して、新しいコネクタグループを作成します。
 localization_priority: Normal
-ms.openlocfilehash: 90b3d0cdbdd02876e1dfaf3d6743f6dac2199202
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 2b99d52303547bd94deb8c3866e4e62745f5b2d4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33327678"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943401"
 ---
 # <a name="create-connectorgroup"></a>コネクタグループの作成
 

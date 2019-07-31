@@ -4,12 +4,13 @@ description: macOSDeviceFeaturesConfiguration オブジェクトのプロパテ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5b0560e86a6de5e406e96b6f377ea6ae40fc7adf
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 01b48b75172a3d6dcf2c3d37095446e96a267c10
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34963381"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35947397"
 ---
 # <a name="list-macosdevicefeaturesconfigurations"></a>macOSDeviceFeaturesConfigurations のリスト
 

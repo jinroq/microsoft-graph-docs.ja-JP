@@ -4,12 +4,13 @@ description: この API を使用して、管理単位にメンバー (ユーザ
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a86fc2eaccb318164b91b8101577b4e3ffd64fbe
-ms.sourcegitcommit: 27e8ddb53b699f70b676c9648db8f06bb8d831a9
+doc_type: apiPageType
+ms.openlocfilehash: 6c0465488949244a66c2e25149b4e9958c6b94bc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "35918014"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945754"
 ---
 # <a name="add-a-member"></a>メンバーを追加する
 

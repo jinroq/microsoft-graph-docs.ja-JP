@@ -4,12 +4,13 @@ description: アプリケーションが自分自身をミュートできるよ�
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: f4d09b9fa309750a2444bbb5e18d0d6d45529719
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: cc0a3b1744b774747de67e2a65c2f4fc2bc68439
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35864736"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944539"
 ---
 # <a name="call-mute"></a>通話: ミュート
 

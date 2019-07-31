@@ -4,12 +4,13 @@ description: softwareUpdateStatusSummary オブジェクトのプロパティと
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c673c4d91ea36812b906733b4879baf59ebe579e
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 914ddc3be9b0e964a63a42163a498b686a3749ed
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34976240"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35946335"
 ---
 # <a name="get-softwareupdatestatussummary"></a>softwareUpdateStatusSummary の取得
 

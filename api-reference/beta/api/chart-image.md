@@ -4,12 +4,13 @@ description: 指定したサイズに合わせてグラフを拡大、縮小す�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: e82f0600cb43ba515bfb8bee9ecde90e645ea062
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: b75b7700d3b4a862e04a086000831f6fd4b50489
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328141"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944150"
 ---
 # <a name="chart-image"></a>グラフ:画像
 

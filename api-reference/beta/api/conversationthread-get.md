@@ -4,12 +4,13 @@ description: 'グループに属している特定のスレッドを取得しま
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: ef2dd2e2bedc87bff6eed4e2da260436342a5e73
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 7a969fcb1a799bffc16ec9cf74314e4bf671944b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35862929"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943085"
 ---
 # <a name="get-conversationthread"></a>conversationThread を取得する
 

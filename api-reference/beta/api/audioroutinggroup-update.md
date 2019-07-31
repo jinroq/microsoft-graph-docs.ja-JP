@@ -4,12 +4,13 @@ description: AudioRoutingGroup のソースとレシーバーを変更します�
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 694991d4ffcd01dbe05ecc068a4ea815683cd115
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: b99feecbd10a1d50551972a7d7b7dc38275f97a6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35856965"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945299"
 ---
 # <a name="update-audio-routing-group"></a>音声ルーティング グループを更新する
 

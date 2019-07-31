@@ -1,19 +1,22 @@
 ---
 title: anonymousIpRiskEvent を取得する
-description: anonymousipriskevent オブジェクトのプロパティとリレーションシップを取得します。
+description: Anonymousipriskevent オブジェクトのプロパティとリレーションシップを取得します。
 localization_priority: Normal
-ms.openlocfilehash: e460f8d7d08a8f20a84e12aab7a6b130ac93ba25
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: dd89350360f045659697da747525bf0bfa6ec96a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322666"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945586"
 ---
 # <a name="get-anonymousipriskevent"></a>anonymousIpRiskEvent を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-anonymousipriskevent オブジェクトのプロパティとリレーションシップを取得します。
+Anonymousipriskevent オブジェクトのプロパティとリレーションシップを取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 

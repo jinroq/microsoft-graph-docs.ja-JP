@@ -4,12 +4,13 @@ description: IntuneBrandingProfileAssignment オブジェクトのプロパテ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d10c051f8e2152e5f991963512acd0a23d3f76d8
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: b8168a3273993b40d75dce03c8abb1f2169b22b3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34990555"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979205"
 ---
 # <a name="get-intunebrandingprofileassignment"></a>IntuneBrandingProfileAssignment を取得する
 

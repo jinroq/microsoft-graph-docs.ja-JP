@@ -4,12 +4,13 @@ description: データ系列内の位置に基づくポイントを取得しま�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 0904a60381e6a937094d3c856f43423bd4db3283
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: c5ba2e5e0a65aa6c05771b084ed395a016622206
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35437986"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943765"
 ---
 # <a name="chartpointscollection-itemat"></a>ChartPointsCollection: ItemAt
 

@@ -4,12 +4,13 @@ description: 指定した bookingservice の bookingService オブジェクト�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: b45081b79c1d0a6308fd10f39403307c4aa8c563
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 5400a917a9e795fbb0e37f1c609ad06b3231407f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35865688"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945187"
 ---
 # <a name="list-services"></a>サービスを一覧表示する
 

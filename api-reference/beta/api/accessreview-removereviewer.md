@@ -4,12 +4,13 @@ description: 'Azure AD access レビュー機能で、既存の accessReview オ
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0caca20a3499b001fea3431e852d5b6373836a11
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: d49aa473fed17a427f0e0f2785b76210e566cf69
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35856027"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945978"
 ---
 # <a name="remove-accessreview-reviewer"></a>AccessReview レビュー担当者を削除する
 

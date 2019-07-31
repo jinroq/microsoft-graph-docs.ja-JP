@@ -4,12 +4,13 @@ description: 非 Supporteddevic/オブジェクトのプロパティとリレー
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d4e04fe2128578bdd8868036d5ec38ec11e9362e
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: ddee5a14405a31686071ce3b842d5d419cc27023
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34962821"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35946272"
 ---
 # <a name="list-unsupporteddeviceconfigurations"></a>非 Supporteddeviceconfigurウニを一覧表示する
 

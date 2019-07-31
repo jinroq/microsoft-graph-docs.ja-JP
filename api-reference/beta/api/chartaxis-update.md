@@ -4,12 +4,13 @@ description: Workbookchartaxis オブジェクトのプロパティを更新し�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 40aad2334ed48d69687da2a03c7c46650055caf4
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 2b529a053d8892771b79949e8be4ec8923a0e032
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35864203"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944067"
 ---
 # <a name="update-workbookchartaxis"></a>WorkbookChartAxis の更新
 

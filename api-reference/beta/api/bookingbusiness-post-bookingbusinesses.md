@@ -4,12 +4,13 @@ description: テナントに新しい Microsoft 予約ビジネスを作成し�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 8d8146b79ad02d07a1b1f8df7f49520ea3922db7
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 202d3dfa73ebdb7f1249172e6a6e20ae782398eb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35865596"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945104"
 ---
 # <a name="create-bookingbusiness"></a>BookingBusiness の作成
 

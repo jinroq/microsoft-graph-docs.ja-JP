@@ -4,12 +4,13 @@ description: 指定した bookingappointment の bookingAppointment オブジェ
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: db5e7492802eacf551ae49c74c65a24f676dbba2
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: aa9e862e8acdc82edbf19117d912489b836bb1be
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35865754"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945215"
 ---
 # <a name="list-appointments"></a>予定を一覧表示する
 

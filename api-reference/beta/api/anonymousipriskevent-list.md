@@ -1,19 +1,22 @@
 ---
 title: リスト anonymousIpRiskEvents
-description: anonymousipriskevent オブジェクトのリストを取得します。
+description: Anonymousipriskevent オブジェクトのリストを取得します。
 localization_priority: Normal
-ms.openlocfilehash: 44f366755396924c15422a44af0712e668327469
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 7935b5bcb98d5f7122f3967aeed1313315259a29
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322671"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945572"
 ---
 # <a name="list-anonymousipriskevents"></a>リスト anonymousIpRiskEvents
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-anonymousipriskevent オブジェクトのリストを取得します。
+Anonymousipriskevent オブジェクトのリストを取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 

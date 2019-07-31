@@ -4,12 +4,13 @@ description: WorkbookChartAxis オブジェクトのプロパティとリレー�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 949f77ec6aaa7e4d1638e57ad7c0bdfecce060bb
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: c4cfa92da99a1d0fdfa7a8d7218558260ad9310f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35864224"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944087"
 ---
 # <a name="get-workbookchartaxis"></a>WorkbookChartAxis を取得する
 

@@ -4,12 +4,13 @@ description: ワークシート上のセルを基準にしてグラフを配置�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: ce5b93e7a5d26facf84aa1c06c32f517ed90af2b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: ab43c7ade66df98c0acd7f7bb1bbd734cd4891d3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35864267"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944081"
 ---
 # <a name="chart-setposition"></a>Chart: setPosition
 
