@@ -2,12 +2,15 @@
 title: FilterDatetime リソースの種類
 description: 値をフィルター処理するときに日付をフィルター処理する方法を表します。
 localization_priority: Normal
-ms.openlocfilehash: 49587bf34c90e9a42145fade30177f03c49ed0b6
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 27dafb0583380af299a4f5d8632c60a7e8af1a54
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333765"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973556"
 ---
 # <a name="filterdatetime-resource-type"></a>FilterDatetime リソースの種類
 

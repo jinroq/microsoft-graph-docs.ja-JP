@@ -4,12 +4,13 @@ description: このクラスには、Android のコンプライアンス設定�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 53d7d0e05ad252224e0a8872b0679569efcf3ed3
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 9a3f9a2782e6c0baaa30714e92cb34706f80594b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34965747"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35971578"
 ---
 # <a name="androidcompliancepolicy-resource-type"></a>androidCompliancePolicy リソース タイプ
 

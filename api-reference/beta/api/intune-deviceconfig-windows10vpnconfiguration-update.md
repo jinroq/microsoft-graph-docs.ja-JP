@@ -4,12 +4,13 @@ description: Windows10VpnConfiguration オブジェクトのプロパティを�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: babf3ae910851940851e638530cf956f0fbb5aac
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: c0041ebeb336ba787ef6b77b4eb6901add04cf1b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34962352"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35975110"
 ---
 # <a name="update-windows10vpnconfiguration"></a>Windows10VpnConfiguration の更新
 

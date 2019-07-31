@@ -4,12 +4,13 @@ description: メール、連絡先、ソーシャルネットワークにわた�
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 0def5d62dd941122858ffa61bf224a9ef672ad0c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 762d3bf04c891c9a2388368ca90a90ce904dc6e9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344925"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966162"
 ---
 # <a name="person-resource-type"></a>person リソースの種類
 
@@ -31,10 +32,10 @@ ms.locfileid: "33344925"
 |companyName|string|人物の会社名。|
 |department|string|人物の部署。|
 |displayName|string|人物の表示名。|
-|emailAddresses|[rankedemailaddress](rankedemailaddress.md)コレクション|人物の電子メール アドレス。|
+|emailAddresses|[Rankedemailaddress](rankedemailaddress.md)コレクション|人物の電子メール アドレス。|
 |givenName|string|人物に指定された名前。|
 |id|string|人物の一意の識別子。読み取り専用です。|
-|isFavorite|boolean|ユーザーがこの人物をお気に入りとしてフラグを設定した場合は `true`。|
+|isFavorite|ブール値|ユーザーがこの人物をお気に入りとしてフラグを設定した場合は `true`。|
 |mailboxType|string|ユーザーの電子メールアドレスによって表されるメールボックスの種類。|
 |officeLocation|string|人物のオフィスの所在地。|
 |personNotes|string|ユーザーがこの人物について記入した自由形式のメモ。|

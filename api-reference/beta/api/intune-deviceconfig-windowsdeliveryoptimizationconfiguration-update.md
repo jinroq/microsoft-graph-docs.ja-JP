@@ -4,12 +4,13 @@ description: WindowsDeliveryOptimizationConfiguration オブジェクトのプ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 10f2834fcc8888f12ea6abea0ded80d48e543591
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: 65fd744d58ff9ec34b9b0a70643fe98faf500af6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35722026"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35982215"
 ---
 # <a name="update-windowsdeliveryoptimizationconfiguration"></a>WindowsDeliveryOptimizationConfiguration の更新
 

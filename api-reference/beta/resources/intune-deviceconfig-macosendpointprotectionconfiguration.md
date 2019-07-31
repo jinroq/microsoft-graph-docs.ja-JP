@@ -4,12 +4,13 @@ description: MacOS endpoint protection 構成プロファイル。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0fdbd1c46b870a8448381890120fe66f894b7fa4
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 87ca81c7ae47abd7a278aabade15548a7cd2d720
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34989197"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35970214"
 ---
 # <a name="macosendpointprotectionconfiguration-resource-type"></a>macOSEndpointProtectionConfiguration リソースの種類
 

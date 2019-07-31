@@ -4,12 +4,13 @@ description: ファイアウォールルールに適用されるネットワー�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5dd5ac398700338cb4e26d435fae042773c03f8a
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: d89ddee30e04ac8d22cf0f754139101b858c259b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34994098"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35969052"
 ---
 # <a name="windowsfirewallrulenetworkprofiletypes-enum-type"></a>windowsFirewallRuleNetworkProfileTypes 列挙型
 

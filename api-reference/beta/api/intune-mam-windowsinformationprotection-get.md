@@ -4,12 +4,13 @@ description: windowsInformationProtection オブジェクトのプロパティ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d6eddb7aa59878b6d91fa818e6ba6a5b043aeb33
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: d19bbeccde881ab72fefb1eb976e0293821c947e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34987447"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35980430"
 ---
 # <a name="get-windowsinformationprotection"></a>Get windowsInformationProtection
 

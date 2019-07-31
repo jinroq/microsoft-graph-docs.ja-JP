@@ -4,12 +4,13 @@ description: リソースの JSON 表記を次に示します。
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 0d5ed2af02f429f5fd4d6e92b408d2e8e420f4d0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 33339578f498460aacd24481f166ab717138f8fa
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581514"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966567"
 ---
 # <a name="office365activationsusercounts-resource-type"></a>office365ActivationsUserCounts リソースの種類
 
@@ -17,11 +18,11 @@ ms.locfileid: "32581514"
 
 | プロパティ                 | 型   | 説明                              |
 | :----------------------- | :----- | ---------------------------------------- |
-| reportrefreshdate        | Date   | コンテンツの最新の日付。          |
-| productType              | String | "office 365 ProPlus"、"Project Client"、または "Visio Pro for Office 365" などの製品の種類。 |
+| reportRefreshDate        | 日付   | コンテンツの最新の日付。          |
+| productType              | String | "Office 365 ProPlus"、"Project Client"、または "Visio Pro for Office 365" などの製品の種類。 |
 | ら                 | Int64  | 製品ライセンスに割り当てられているユーザーの数。 |
 | アクティブ化                | Int64  | 製品をライセンス認証したユーザーの数。 |
-| sharedcomputeractivation | Int64  | 共有コンピューターで製品を使用したユーザーの数。 |
+| sharedComputerActivation | Int64  | 共有コンピューターで製品を使用したユーザーの数。 |
 
 ## <a name="json-representation"></a>JSON 表記
 

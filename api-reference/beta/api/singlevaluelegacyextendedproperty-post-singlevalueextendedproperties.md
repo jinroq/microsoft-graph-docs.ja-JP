@@ -2,12 +2,15 @@
 title: 単一値の拡張プロパティを作成する
 description: 'リソースの新規または既存のインスタンスに、1 つ以上の単一値の拡張プロパティを作成します。 '
 localization_priority: Normal
-ms.openlocfilehash: 193cf8608829e2f4c06f49fa9675b7384941e7e7
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: f1fdb6a9b329f16c7973a5c60e645d525a8bd913
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33330991"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35982789"
 ---
 # <a name="create-single-value-extended-property"></a>単一値の拡張プロパティを作成する
 
@@ -20,7 +23,7 @@ ms.locfileid: "33330991"
 - [calendar](../resources/calendar.md)
 - [contact](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md) 
-- [イベント](../resources/event.md)
+- [event](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
 - [message](../resources/message.md)
 - [Outlook タスク](../resources/outlooktask.md)
@@ -40,7 +43,7 @@ ms.locfileid: "33330991"
 | サポートされているリソース | 委任 (職場または学校のアカウント) | 委任 (個人用 Microsoft アカウント) | アプリケーション |
 |:-----|:-----|:-----|:-----|
 | [calendar](../resources/calendar.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
-| [連絡先](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [contactFolder](../resources/contactfolder.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [イベント](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite |  Calendars.ReadWrite|
 | グループ [calendar](../resources/calendar.md) | Group.ReadWrite.All | サポート対象外 | 非サポート |

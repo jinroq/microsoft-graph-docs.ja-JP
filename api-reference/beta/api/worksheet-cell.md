@@ -4,12 +4,13 @@ description: 行と列の番号に基づいて、1 つのセルを含んだ範�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: aca0ee396860a1f12fe820faea2fdc99355e6f03
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 553a09f0619fb16d0e9ee7c1ac9fe8dfac4a3b14
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339640"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987307"
 ---
 # <a name="worksheet-cell"></a>ワークシート:セル
 
