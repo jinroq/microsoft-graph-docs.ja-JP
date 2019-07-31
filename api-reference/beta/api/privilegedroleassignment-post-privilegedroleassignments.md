@@ -2,52 +2,55 @@
 title: privilegedRoleAssignment を作成する
 description: この API を使用して、新しい privilegedRoleAssignment を作成します。
 localization_priority: Normal
-ms.openlocfilehash: 2e0f77b74825ebacedc5647524f38ba32ef14d62
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 72e30c3ea64f52657d1c70c31cea0a74c46c131a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35875634"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978790"
 ---
-# <a name="create-privilegedroleassignment"></a><span data-ttu-id="7c1cd-103">privilegedRoleAssignment を作成する</span><span class="sxs-lookup"><span data-stu-id="7c1cd-103">Create privilegedRoleAssignment</span></span>
+# <a name="create-privilegedroleassignment"></a><span data-ttu-id="ec26d-103">privilegedRoleAssignment を作成する</span><span class="sxs-lookup"><span data-stu-id="ec26d-103">Create privilegedRoleAssignment</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="7c1cd-104">この API を使用して、新しい[privilegedRoleAssignment](../resources/privilegedroleassignment.md)を作成します。</span><span class="sxs-lookup"><span data-stu-id="7c1cd-104">Use this API to create a new  [privilegedRoleAssignment](../resources/privilegedroleassignment.md).</span></span>
-## <a name="permissions"></a><span data-ttu-id="7c1cd-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="7c1cd-105">Permissions</span></span>
-<span data-ttu-id="7c1cd-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7c1cd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ec26d-104">この API を使用して、新しい[privilegedRoleAssignment](../resources/privilegedroleassignment.md)を作成します。</span><span class="sxs-lookup"><span data-stu-id="ec26d-104">Use this API to create a new  [privilegedRoleAssignment](../resources/privilegedroleassignment.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="ec26d-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="ec26d-105">Permissions</span></span>
+<span data-ttu-id="ec26d-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ec26d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="7c1cd-108">リクエスターは、特権の_役割管理者_の役割を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="7c1cd-108">The requestor needs to have _Privileged Role Administrator_ role.</span></span> 
+<span data-ttu-id="ec26d-108">リクエスターは、特権の_役割管理者_の役割を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="ec26d-108">The requestor needs to have _Privileged Role Administrator_ role.</span></span> 
 
-|<span data-ttu-id="7c1cd-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="7c1cd-109">Permission type</span></span>      | <span data-ttu-id="7c1cd-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="7c1cd-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ec26d-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="ec26d-109">Permission type</span></span>      | <span data-ttu-id="ec26d-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="ec26d-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="7c1cd-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="7c1cd-111">Delegated (work or school account)</span></span> | <span data-ttu-id="7c1cd-112">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="7c1cd-112">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="7c1cd-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="7c1cd-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7c1cd-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="7c1cd-114">Not supported.</span></span>    |
-|<span data-ttu-id="7c1cd-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="7c1cd-115">Application</span></span> | <span data-ttu-id="7c1cd-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="7c1cd-116">Not supported.</span></span> |
+|<span data-ttu-id="ec26d-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="ec26d-111">Delegated (work or school account)</span></span> | <span data-ttu-id="ec26d-112">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="ec26d-112">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="ec26d-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="ec26d-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ec26d-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="ec26d-114">Not supported.</span></span>    |
+|<span data-ttu-id="ec26d-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="ec26d-115">Application</span></span> | <span data-ttu-id="ec26d-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="ec26d-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="7c1cd-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="7c1cd-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ec26d-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="ec26d-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /privilegedRoleAssignments
 ```
-## <a name="request-headers"></a><span data-ttu-id="7c1cd-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="7c1cd-118">Request headers</span></span>
-| <span data-ttu-id="7c1cd-119">名前</span><span class="sxs-lookup"><span data-stu-id="7c1cd-119">Name</span></span>       | <span data-ttu-id="7c1cd-120">説明</span><span class="sxs-lookup"><span data-stu-id="7c1cd-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="ec26d-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="ec26d-118">Request headers</span></span>
+| <span data-ttu-id="ec26d-119">名前</span><span class="sxs-lookup"><span data-stu-id="ec26d-119">Name</span></span>       | <span data-ttu-id="ec26d-120">説明</span><span class="sxs-lookup"><span data-stu-id="ec26d-120">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="7c1cd-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="7c1cd-121">Authorization</span></span>  | <span data-ttu-id="7c1cd-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="7c1cd-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="ec26d-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="ec26d-121">Authorization</span></span>  | <span data-ttu-id="ec26d-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="ec26d-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="7c1cd-124">要求本文</span><span class="sxs-lookup"><span data-stu-id="7c1cd-124">Request body</span></span>
-<span data-ttu-id="7c1cd-125">要求本文で、 [privilegedRoleAssignment](../resources/privilegedroleassignment.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="7c1cd-125">In the request body, supply a JSON representation of [privilegedRoleAssignment](../resources/privilegedroleassignment.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ec26d-124">要求本文</span><span class="sxs-lookup"><span data-stu-id="ec26d-124">Request body</span></span>
+<span data-ttu-id="ec26d-125">要求本文で、 [privilegedRoleAssignment](../resources/privilegedroleassignment.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="ec26d-125">In the request body, supply a JSON representation of [privilegedRoleAssignment](../resources/privilegedroleassignment.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="7c1cd-126">応答</span><span class="sxs-lookup"><span data-stu-id="7c1cd-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ec26d-126">応答</span><span class="sxs-lookup"><span data-stu-id="ec26d-126">Response</span></span>
 
-<span data-ttu-id="7c1cd-127">成功した場合、この`201 Created`メソッドは応答コードと、応答本文で[privilegedRoleAssignment](../resources/privilegedroleassignment.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="7c1cd-127">If successful, this method returns `201 Created` response code and [privilegedRoleAssignment](../resources/privilegedroleassignment.md) object in the response body.</span></span>
+<span data-ttu-id="ec26d-127">成功した場合、この`201 Created`メソッドは応答コードと、応答本文で[privilegedRoleAssignment](../resources/privilegedroleassignment.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="ec26d-127">If successful, this method returns `201 Created` response code and [privilegedRoleAssignment](../resources/privilegedroleassignment.md) object in the response body.</span></span>
 
-<span data-ttu-id="7c1cd-128">テナントが PIM に登録されている必要があることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="7c1cd-128">Note that the tenant needs to be registered to PIM.</span></span> <span data-ttu-id="7c1cd-129">それ以外の場合、HTTP 403 の禁止状態コードが返されます。</span><span class="sxs-lookup"><span data-stu-id="7c1cd-129">Otherwise, the HTTP 403 Forbidden status code will be returned.</span></span>
-## <a name="example"></a><span data-ttu-id="7c1cd-130">例</span><span class="sxs-lookup"><span data-stu-id="7c1cd-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="7c1cd-131">要求</span><span class="sxs-lookup"><span data-stu-id="7c1cd-131">Request</span></span>
-<span data-ttu-id="7c1cd-132">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="7c1cd-132">Here is an example of the request.</span></span>
+<span data-ttu-id="ec26d-128">テナントが PIM に登録されている必要があることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="ec26d-128">Note that the tenant needs to be registered to PIM.</span></span> <span data-ttu-id="ec26d-129">それ以外の場合、HTTP 403 の禁止状態コードが返されます。</span><span class="sxs-lookup"><span data-stu-id="ec26d-129">Otherwise, the HTTP 403 Forbidden status code will be returned.</span></span>
+## <a name="example"></a><span data-ttu-id="ec26d-130">例</span><span class="sxs-lookup"><span data-stu-id="ec26d-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="ec26d-131">要求</span><span class="sxs-lookup"><span data-stu-id="ec26d-131">Request</span></span>
+<span data-ttu-id="ec26d-132">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="ec26d-132">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="7c1cd-133">プロトコル</span><span class="sxs-lookup"><span data-stu-id="7c1cd-133">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="ec26d-133">プロトコル</span><span class="sxs-lookup"><span data-stu-id="ec26d-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_privilegedroleassignment_from_privilegedroleassignments"
@@ -62,27 +65,27 @@ Content-length: 164
   "roleId": "roleId-value"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="7c1cd-134">C#</span><span class="sxs-lookup"><span data-stu-id="7c1cd-134">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="ec26d-134">C#</span><span class="sxs-lookup"><span data-stu-id="ec26d-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-privilegedroleassignment-from-privilegedroleassignments-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7c1cd-135">Javascript</span><span class="sxs-lookup"><span data-stu-id="7c1cd-135">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ec26d-135">Javascript</span><span class="sxs-lookup"><span data-stu-id="ec26d-135">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-privilegedroleassignment-from-privilegedroleassignments-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="7c1cd-136">目的-C</span><span class="sxs-lookup"><span data-stu-id="7c1cd-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="ec26d-136">目的-C</span><span class="sxs-lookup"><span data-stu-id="ec26d-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-privilegedroleassignment-from-privilegedroleassignments-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="7c1cd-137">Java</span><span class="sxs-lookup"><span data-stu-id="7c1cd-137">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="ec26d-137">Java</span><span class="sxs-lookup"><span data-stu-id="ec26d-137">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-privilegedroleassignment-from-privilegedroleassignments-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-<span data-ttu-id="7c1cd-138">要求本文で、 [privilegedRoleAssignment](../resources/privilegedroleassignment.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="7c1cd-138">In the request body, supply a JSON representation of [privilegedRoleAssignment](../resources/privilegedroleassignment.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="7c1cd-139">応答</span><span class="sxs-lookup"><span data-stu-id="7c1cd-139">Response</span></span>
-<span data-ttu-id="7c1cd-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="7c1cd-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="ec26d-138">要求本文で、 [privilegedRoleAssignment](../resources/privilegedroleassignment.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="ec26d-138">In the request body, supply a JSON representation of [privilegedRoleAssignment](../resources/privilegedroleassignment.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="ec26d-139">応答</span><span class="sxs-lookup"><span data-stu-id="ec26d-139">Response</span></span>
+<span data-ttu-id="ec26d-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="ec26d-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -4,60 +4,61 @@ description: '**Plan**オブジェクトのプロパティを更新します。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: dcdb829448e803f0a11d764c4178930fec40bc01
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 65233ac4976c5e495dc9d0a6ef60d6605ab34305
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35876376"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979048"
 ---
-# <a name="update-plannerplan"></a><span data-ttu-id="02a02-103">プランを更新する plan</span><span class="sxs-lookup"><span data-stu-id="02a02-103">Update plannerPlan</span></span>
+# <a name="update-plannerplan"></a><span data-ttu-id="92555-103">プランを更新する plan</span><span class="sxs-lookup"><span data-stu-id="92555-103">Update plannerPlan</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="02a02-104">**Plan**オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="02a02-104">Update the properties of a **plannerPlan** object.</span></span>
+<span data-ttu-id="92555-104">**Plan**オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="92555-104">Update the properties of a **plannerPlan** object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="02a02-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="02a02-105">Permissions</span></span>
-<span data-ttu-id="02a02-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="02a02-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="92555-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="92555-105">Permissions</span></span>
+<span data-ttu-id="92555-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="92555-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="02a02-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="02a02-108">Permission type</span></span>      | <span data-ttu-id="02a02-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="02a02-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="92555-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="92555-108">Permission type</span></span>      | <span data-ttu-id="92555-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="92555-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="02a02-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="02a02-110">Delegated (work or school account)</span></span> | <span data-ttu-id="02a02-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="02a02-111">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="02a02-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="02a02-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="02a02-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="02a02-113">Not supported.</span></span>    |
-|<span data-ttu-id="02a02-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="02a02-114">Application</span></span> | <span data-ttu-id="02a02-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="02a02-115">Not supported.</span></span> |
+|<span data-ttu-id="92555-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="92555-110">Delegated (work or school account)</span></span> | <span data-ttu-id="92555-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="92555-111">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="92555-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="92555-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="92555-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="92555-113">Not supported.</span></span>    |
+|<span data-ttu-id="92555-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="92555-114">Application</span></span> | <span data-ttu-id="92555-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="92555-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="02a02-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="02a02-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="92555-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="92555-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /planner/plans/{plan-id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="02a02-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="02a02-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="92555-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="92555-117">Request headers</span></span>
 
-| <span data-ttu-id="02a02-118">名前</span><span class="sxs-lookup"><span data-stu-id="02a02-118">Name</span></span>       | <span data-ttu-id="02a02-119">説明</span><span class="sxs-lookup"><span data-stu-id="02a02-119">Description</span></span>|
+| <span data-ttu-id="92555-118">名前</span><span class="sxs-lookup"><span data-stu-id="92555-118">Name</span></span>       | <span data-ttu-id="92555-119">説明</span><span class="sxs-lookup"><span data-stu-id="92555-119">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="02a02-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="02a02-120">Authorization</span></span>  | <span data-ttu-id="02a02-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="02a02-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="02a02-123">If-Match</span><span class="sxs-lookup"><span data-stu-id="02a02-123">If-Match</span></span>  | <span data-ttu-id="02a02-p103">更新する plannerPlan の最後の既知の ETag 値。必須。</span><span class="sxs-lookup"><span data-stu-id="02a02-p103">Last known ETag value for the plannerPlan to be updated. Required.</span></span>|
+| <span data-ttu-id="92555-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="92555-120">Authorization</span></span>  | <span data-ttu-id="92555-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="92555-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="92555-123">If-Match</span><span class="sxs-lookup"><span data-stu-id="92555-123">If-Match</span></span>  | <span data-ttu-id="92555-p103">更新する plannerPlan の最後の既知の ETag 値。必須。</span><span class="sxs-lookup"><span data-stu-id="92555-p103">Last known ETag value for the plannerPlan to be updated. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="02a02-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="02a02-126">Request body</span></span>
-<span data-ttu-id="02a02-127">要求本文で、更新する関連フィールドの値を指定します。</span><span class="sxs-lookup"><span data-stu-id="02a02-127">In the request body, supply the values for relevant fields to update.</span></span> <span data-ttu-id="02a02-128">要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。</span><span class="sxs-lookup"><span data-stu-id="02a02-128">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="02a02-129">最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="02a02-129">For best performance, don't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="92555-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="92555-126">Request body</span></span>
+<span data-ttu-id="92555-127">要求本文で、更新する関連フィールドの値を指定します。</span><span class="sxs-lookup"><span data-stu-id="92555-127">In the request body, supply the values for relevant fields to update.</span></span> <span data-ttu-id="92555-128">要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。</span><span class="sxs-lookup"><span data-stu-id="92555-128">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="92555-129">最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="92555-129">For best performance, don't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="02a02-130">プロパティ</span><span class="sxs-lookup"><span data-stu-id="02a02-130">Property</span></span>     | <span data-ttu-id="02a02-131">型</span><span class="sxs-lookup"><span data-stu-id="02a02-131">Type</span></span>   |<span data-ttu-id="02a02-132">説明</span><span class="sxs-lookup"><span data-stu-id="02a02-132">Description</span></span>|
+| <span data-ttu-id="92555-130">プロパティ</span><span class="sxs-lookup"><span data-stu-id="92555-130">Property</span></span>     | <span data-ttu-id="92555-131">型</span><span class="sxs-lookup"><span data-stu-id="92555-131">Type</span></span>   |<span data-ttu-id="92555-132">説明</span><span class="sxs-lookup"><span data-stu-id="92555-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="02a02-133">owner</span><span class="sxs-lookup"><span data-stu-id="02a02-133">owner</span></span>|<span data-ttu-id="02a02-134">String</span><span class="sxs-lookup"><span data-stu-id="02a02-134">String</span></span>|<span data-ttu-id="02a02-p105">計画を所有する [グループ](../resources/group.md) `id`。このフィールドを設定するためには、有効なグループが存在していなければなりません。一度設定したら、所有者のみが更新できます。</span><span class="sxs-lookup"><span data-stu-id="02a02-p105">[Group](../resources/group.md) `id` by which the plan is owned. A valid group must exist before this field can be set. Once set, this can only be updated by the owner.</span></span>|
-|<span data-ttu-id="02a02-138">title</span><span class="sxs-lookup"><span data-stu-id="02a02-138">title</span></span>|<span data-ttu-id="02a02-139">String</span><span class="sxs-lookup"><span data-stu-id="02a02-139">String</span></span>|<span data-ttu-id="02a02-140">計画のタイトル。</span><span class="sxs-lookup"><span data-stu-id="02a02-140">Title of the plan.</span></span>|
+|<span data-ttu-id="92555-133">owner</span><span class="sxs-lookup"><span data-stu-id="92555-133">owner</span></span>|<span data-ttu-id="92555-134">String</span><span class="sxs-lookup"><span data-stu-id="92555-134">String</span></span>|<span data-ttu-id="92555-p105">計画を所有する [グループ](../resources/group.md) `id`。このフィールドを設定するためには、有効なグループが存在していなければなりません。一度設定したら、所有者のみが更新できます。</span><span class="sxs-lookup"><span data-stu-id="92555-p105">[Group](../resources/group.md) `id` by which the plan is owned. A valid group must exist before this field can be set. Once set, this can only be updated by the owner.</span></span>|
+|<span data-ttu-id="92555-138">title</span><span class="sxs-lookup"><span data-stu-id="92555-138">title</span></span>|<span data-ttu-id="92555-139">String</span><span class="sxs-lookup"><span data-stu-id="92555-139">String</span></span>|<span data-ttu-id="92555-140">計画のタイトル。</span><span class="sxs-lookup"><span data-stu-id="92555-140">Title of the plan.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="02a02-141">応答</span><span class="sxs-lookup"><span data-stu-id="02a02-141">Response</span></span>
+## <a name="response"></a><span data-ttu-id="92555-141">応答</span><span class="sxs-lookup"><span data-stu-id="92555-141">Response</span></span>
 
-<span data-ttu-id="02a02-142">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[プランのプラン](../resources/plannerplan.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="02a02-142">If successful, this method returns a `200 OK` response code and an updated [plannerPlan](../resources/plannerplan.md) object in the response body.</span></span>
+<span data-ttu-id="92555-142">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で更新された[プランのプラン](../resources/plannerplan.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="92555-142">If successful, this method returns a `200 OK` response code and an updated [plannerPlan](../resources/plannerplan.md) object in the response body.</span></span>
 
-<span data-ttu-id="02a02-p106">このメソッドは、いずれかの [HTTP 状態コード](/graph/errors)を返します。このメソッドでアプリが処理する最も一般的なエラーは、400、403、404、409、412 応答です。これらのエラーの詳細については、「[一般的なプランナーのエラー条件](../resources/planner-overview.md#common-planner-error-conditions)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="02a02-p106">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
+<span data-ttu-id="92555-p106">このメソッドは、いずれかの [HTTP 状態コード](/graph/errors)を返します。このメソッドでアプリが処理する最も一般的なエラーは、400、403、404、409、412 応答です。これらのエラーの詳細については、「[一般的なプランナーのエラー条件](../resources/planner-overview.md#common-planner-error-conditions)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="92555-p106">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
 
-## <a name="example"></a><span data-ttu-id="02a02-146">例</span><span class="sxs-lookup"><span data-stu-id="02a02-146">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="02a02-147">要求</span><span class="sxs-lookup"><span data-stu-id="02a02-147">Request</span></span>
-<span data-ttu-id="02a02-148">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="02a02-148">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="92555-146">例</span><span class="sxs-lookup"><span data-stu-id="92555-146">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="92555-147">要求</span><span class="sxs-lookup"><span data-stu-id="92555-147">Request</span></span>
+<span data-ttu-id="92555-148">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="92555-148">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="02a02-149">プロトコル</span><span class="sxs-lookup"><span data-stu-id="02a02-149">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="92555-149">プロトコル</span><span class="sxs-lookup"><span data-stu-id="92555-149">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_plannerplan"
@@ -72,28 +73,28 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
   "title": "title-value"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="02a02-150">C#</span><span class="sxs-lookup"><span data-stu-id="02a02-150">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="92555-150">C#</span><span class="sxs-lookup"><span data-stu-id="92555-150">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-plannerplan-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="02a02-151">Javascript</span><span class="sxs-lookup"><span data-stu-id="02a02-151">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="92555-151">Javascript</span><span class="sxs-lookup"><span data-stu-id="92555-151">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-plannerplan-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="02a02-152">目的-C</span><span class="sxs-lookup"><span data-stu-id="02a02-152">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="92555-152">目的-C</span><span class="sxs-lookup"><span data-stu-id="92555-152">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-plannerplan-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="02a02-153">Java</span><span class="sxs-lookup"><span data-stu-id="02a02-153">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="92555-153">Java</span><span class="sxs-lookup"><span data-stu-id="92555-153">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-plannerplan-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="02a02-154">応答</span><span class="sxs-lookup"><span data-stu-id="02a02-154">Response</span></span>
-<span data-ttu-id="02a02-155">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="02a02-155">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="92555-154">応答</span><span class="sxs-lookup"><span data-stu-id="92555-154">Response</span></span>
+<span data-ttu-id="92555-155">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="92555-155">Here is an example of the response.</span></span> 
 
-><span data-ttu-id="02a02-p107">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="02a02-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="92555-p107">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="92555-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
