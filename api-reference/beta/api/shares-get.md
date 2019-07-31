@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: shareId または共有の URL を使用して、共有 DriveItem または共有アイテムのコレクションにアクセスします。
 ms.date: 09/10/2017
 title: 共有アイテムへのアクセス
 localization_priority: Normal
-ms.openlocfilehash: 887567bc780c65b88989d8df79fdaec0f7b4c676
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+ms.openlocfilehash: 332d5f98f43f00a014d3ca9c30e328840cb8634b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35869853"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977896"
 ---
 # <a name="accessing-shared-driveitems"></a>共有 DriveItems へのアクセス
 

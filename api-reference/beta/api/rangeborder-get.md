@@ -4,12 +4,13 @@ description: rangeborder オブジェクトのプロパティと関係を取得�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 996b9be75094103e0d66740bf7595155d3eec75e
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 0e51e0a1fdb23ae2724e0a56ab40502b13043243
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35874659"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978386"
 ---
 # <a name="get-rangeborder"></a>RangeBorder を取得する
 

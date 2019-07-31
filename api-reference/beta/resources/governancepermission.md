@@ -2,12 +2,15 @@
 title: governancePermission リソースの種類
 description: 'GovernanceSubject が特定の governanceResource に対して持つアクセス許可を表します。  '
 localization_priority: Normal
-ms.openlocfilehash: cd5b15a85dee7a193962a6072bcdf34b1d4f131a
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 8bf32b855ed77ccdf712b1a739ef913d0a3dade0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35621306"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35971944"
 ---
 # <a name="governancepermission-resource-type"></a>governancePermission リソースの種類
 

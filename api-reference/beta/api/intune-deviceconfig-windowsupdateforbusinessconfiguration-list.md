@@ -4,12 +4,13 @@ description: windowsUpdateForBusinessConfiguration オブジェクトのプロ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0688297f64732453da573b66073785b7774ced87
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 27245bdbcb422e7ec0f4da2be4cacae94c74bbf6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34961295"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35986268"
 ---
 # <a name="list-windowsupdateforbusinessconfigurations"></a>windowsUpdateForBusinessConfigurations のリスト
 

@@ -4,12 +4,13 @@ description: targetedManagedAppConfiguration オブジェクトのプロパテ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7cee4582d69f0347004e91cf2b2e0ecd10dc3036
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: e1cec240a289012a48a3928f1bf9440966e0f1ab
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34986950"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35994433"
 ---
 # <a name="update-targetedmanagedappconfiguration"></a>targetedManagedAppConfiguration の更新
 

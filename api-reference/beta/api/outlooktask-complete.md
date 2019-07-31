@@ -1,25 +1,26 @@
 ---
-title: 'outlooktask: 完了'
-description: '**completedDateTime**プロパティを現在の日付に設定する Outlook のタスクを完了します。 '
+title: 'outlookTask: 完了'
+description: '**CompletedDateTime**プロパティを現在の日付に設定する Outlook のタスクを完了します。 '
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: c1d1fb36f94c2948cd2430e07f35c682b0608962
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: afa90b4217aa39cef327c58dbe5216d173dff4f5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33338061"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35995511"
 ---
-# <a name="outlooktask-complete"></a>outlooktask: 完了
+# <a name="outlooktask-complete"></a>outlookTask: 完了
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**completedDateTime**プロパティを現在の日付に設定し、 **status**プロパティをに`completed`設定する Outlook のタスクを完了します。
+**CompletedDateTime**プロパティを現在の日付に設定し、 **status**プロパティをに`completed`設定する Outlook のタスクを完了します。
 
 一連のタスクを定期的に実行している場合、返信には、タスクのコレクションには、データ系列の完了したタスクと、一連の次のタスクが含まれます。
 
-**completedDateTime**プロパティは、タスクが終了した日付を表します。 **completedDateTime**の時間部分は、既定で UTC の午前0時に設定されます。
+**CompletedDateTime**プロパティは、タスクが終了した日付を表します。 **CompletedDateTime**の時間部分は、既定で UTC の午前0時に設定されます。
 
 既定では、この操作 (および POST、GET、および PATCH タスクの操作) は、日付関連プロパティを UTC で返します。 `Prefer: outlook.timezone` ヘッダーを使用して、応答内のすべての日付関連プロパティを UTC 以外のタイム ゾーンで表すことができます。
 
@@ -78,7 +79,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 
 以下は、応答の例です。 応答内の**completedDateTime**およびその他の日付関連プロパティは、PST で表されます。
 
-> **注:** 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 すべてのプロパティは実際の呼び出しから返されます。
+> **注:** 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

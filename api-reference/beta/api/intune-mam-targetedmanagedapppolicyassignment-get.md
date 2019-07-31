@@ -4,12 +4,13 @@ description: targetedManagedAppPolicyAssignment オブジェクトのプロパ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3f01b392a23200476f0253496ce2946cdc92f3ea
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 430a4d713745b74f029926d6977cee801343445e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34986873"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35994440"
 ---
 # <a name="get-targetedmanagedapppolicyassignment"></a>Get targetedManagedAppPolicyAssignment
 

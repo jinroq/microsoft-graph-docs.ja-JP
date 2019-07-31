@@ -4,12 +4,13 @@ description: managedAppPolicy オブジェクトのプロパティとリレー�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e396a393db3755b78f2630a13e41680ab9d6d6b9
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 00508a1246dd4adc0f2fdaedc079b1506defda88
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34986530"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35994678"
 ---
 # <a name="get-managedapppolicy"></a>Get managedAppPolicy
 
