@@ -4,12 +4,13 @@ description: 指定したタブのプロパティを更新します。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0b809ada1f0a3324930bb75f84a1e4d3b965332f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 43d698e300cb4a9f2d9b6b094250fcbcd33d2821
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335250"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977471"
 ---
 # <a name="update-tab"></a>タブを更新する
 

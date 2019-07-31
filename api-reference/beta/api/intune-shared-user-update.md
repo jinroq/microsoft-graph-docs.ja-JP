@@ -4,16 +4,17 @@ description: ユーザー オブジェクトのプロパティを更新します
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: c4b898a3c9b1907f6b2a05c16daa241b5b363c6b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: 03a4f28b854e9e94b4bf7a821109e18c4fc0d537
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33897885"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979548"
 ---
 # <a name="update-user"></a>ユーザーを更新する
 
-> **重要:** Microsoft Graph の/ベータ版の Api は変更される可能性があります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** Microsoft Graph の/ベータ版の Api は変更される可能性があります。 実稼働アプリケーションでは、これらの API の使用はサポートされていません。
 
 > **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 

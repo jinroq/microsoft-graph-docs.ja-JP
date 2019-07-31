@@ -1,21 +1,22 @@
 ---
 title: educationSynchronizationError リソースの種類
-description: school data profile validation または sync の間に発生したエラーを表します。azure Active Directory (azure AD) との検証や同期を失敗したすべてのエントリに対して一意のエラーが生成されます。
+description: School data profile validation または sync の間に発生したエラーを表します。Azure Active Directory (Azure AD) との検証や同期を失敗したすべてのエントリに対して一意のエラーが生成されます。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 3c512f921e77468bb30e5109eec29afa9b395b7e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 11e5be9893c6a50615774e0d2a8e4d51c9576da6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340531"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972412"
 ---
 # <a name="educationsynchronizationerror-resource-type"></a>educationSynchronizationError リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-school data profile validation または sync の間に発生したエラーを表します。azure Active Directory (azure AD) との検証や同期を失敗したすべてのエントリに対して一意のエラーが生成されます。
+School data profile validation または sync の間に発生したエラーを表します。Azure Active Directory (Azure AD) との検証や同期を失敗したすべてのエントリに対して一意のエラーが生成されます。
 
 ## <a name="methods"></a>メソッド
 
@@ -27,12 +28,12 @@ school data profile validation または sync の間に発生したエラーを�
 
 | プロパティ | 型 | 説明 |
 |:-|:-|:-|
-| **entrytype** | string |  同期エンティティ (school、section、student、教師) を表します。       |
+| **entryType** | string |  同期エンティティ (school、section、student、教師) を表します。       |
 | **errorCode** | string |  このエラーのエラーコードを表します。         |
 | **errorMessage** | string |  エラーの説明を格納します。        |
-| **joiningvalue** | string |  エントリの一意識別子。         |
+| **joiningValue** | string |  エントリの一意識別子。         |
 | **recordedDateTime** | DateTimeOffset | このエラーが発生した時刻。         |
-| **reportableidentifier** | string | このエラーエントリの識別子。       |
+| **reportableIdentifier** | string | このエラーエントリの識別子。       |
 
 ## <a name="json-representation"></a>JSON 表記
 <!-- {

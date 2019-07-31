@@ -4,12 +4,13 @@ description: Dynamics 365 Business Central の顧客を表します。
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: e4daa28018001fb6cb6e4866bedf8e256a72abef
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 2a3ad7bade33af9456e65e3c19b988b9d2f679b2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507260"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973640"
 ---
 # <a name="customers-resource-type"></a>customers リソースの種類
 Dynamics 365 Business Central の顧客を表します。
@@ -21,16 +22,16 @@ Dynamics 365 Business Central の顧客を表します。
 |[顧客を取得する](../api/dynamics-customer-get.md)      |ユーザー   |顧客を取得します。   |
 |[顧客を作成する](../api/dynamics-create-customer.md)|ユーザー   |顧客を作成します。|
 |[顧客を更新する](../api/dynamics-customer-update.md)|ユーザー   |顧客を更新します。|
-|[顧客を削除する](../api/dynamics-customer-delete.md)|なし        |顧客を削除します。|
+|[顧客を削除する](../api/dynamics-customer-delete.md)|none        |顧客を削除します。|
 
 ## <a name="properties"></a>プロパティ
 | プロパティ    | 型     |説明|
 |:------------|:---------|:----------|
 |id           |GUID      |アイテムの一意の ID です。 編集できません。|
-|number       |string    |顧客番号。|
+|番号       |string    |顧客番号。|
 |displayName  |string    |顧客の名前を指定します。 この名前は、顧客のすべての販売ドキュメントに表示されます。|
 |type         |string    |顧客の種類として、"Company" または "Person" を指定します。|
-|address      |[ナビゲーション."postaladdress](../resources/dynamics-complextypes.md)|顧客の住所を指定します。 この住所は、お客様のすべてのセールスドキュメントに表示されます。|
+|address      |[ナビゲーション."Postaladdress](../resources/dynamics-complextypes.md)|顧客の住所を指定します。 この住所は、お客様のすべてのセールスドキュメントに表示されます。|
 |phoneNumber  |string    |顧客の電話番号を指定します。|
 |email        |string    |顧客の電子メールアドレスを指定します。|
 |Web サイト      |string    |顧客のホームページのアドレスを指定します。|
@@ -57,7 +58,7 @@ Dynamics 365 Business Central の顧客を表します。
 
 送付方法 (shipmentMethod) は、送付方法テーブルに存在する必要があります。
 
-支払い方法 ([cash]) は支払い方法テーブルに存在する必要があります。
+支払い方法 ([Cash]) は支払い方法テーブルに存在する必要があります。
 
 税エリア (taxArea) は、税エリアテーブルに存在する必要があります。
 

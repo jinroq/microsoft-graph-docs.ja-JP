@@ -2,14 +2,15 @@
 title: '同期スキーマ: 関数'
 description: AttributeMappingSource で現在サポートされているすべての関数を一覧表示します。
 localization_priority: Normal
+doc_type: apiPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 38b996ca64beb05736ee65d93a3d176f7cc1ab35
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: f3bedf17e9174f0be1c95a11d922fe5c29e3f9d0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35869186"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977668"
 ---
 # <a name="synchronizationschema-functions"></a>同期スキーマ: 関数
 

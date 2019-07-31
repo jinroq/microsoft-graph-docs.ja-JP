@@ -1,15 +1,17 @@
 ---
 author: daspek
-ms.author: dspektor
+description: このリソースの下で行われたビューに関する itemAnalytics を取得します。
 ms.date: 10/06/2017
 title: 分析を取得する
 localization_priority: Normal
-ms.openlocfilehash: 1af4f95549a4970e6bf3758e0d9b0c70f62d9132
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+ms.openlocfilehash: 47ee4b3d003c81b077e67cf8dca8e8cec047d37d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35880291"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993180"
 ---
 # <a name="get-analytics"></a>分析を取得する
 

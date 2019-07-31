@@ -1,21 +1,22 @@
 ---
-title: trustframeworkpolicy の作成
-description: この操作により、Azure AD B2C テナントに新しい trustframeworkpolicy オブジェクトが作成されます。
+title: TrustFrameworkPolicy の作成
+description: この操作により、Azure AD B2C テナントに新しい trustFrameworkPolicy オブジェクトが作成されます。
 localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f5b06048859853fbf15b1d82cdee97ac507513fc
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: ac3e1546e72e91988ef5339ad201fab7f3f2224d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33329817"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35990569"
 ---
-# <a name="create-trustframeworkpolicy"></a>trustframeworkpolicy の作成
+# <a name="create-trustframeworkpolicy"></a>TrustFrameworkPolicy の作成
 
 > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでは、これらの API の使用はサポートされていません。
 
-新しい[trustframeworkpolicy](../resources/trustframeworkpolicy.md)オブジェクトを作成します。
+新しい[Trustframeworkpolicy](../resources/trustframeworkpolicy.md)オブジェクトを作成します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -45,7 +46,7 @@ POST /trustFramework/policies
 
 ## <a name="request-body"></a>要求本文
 
-要求本文で、 [trustframeworkpolicy](../resources/trustframeworkpolicy.md)オブジェクトの XML 表現を指定します。 コンテンツ タイプは `application/xml` でなければなりません。
+要求本文で、 [Trustframeworkpolicy](../resources/trustframeworkpolicy.md)オブジェクトの XML 表現を指定します。 コンテンツ タイプは `application/xml` でなければなりません。
 
 ## <a name="response"></a>応答
 
@@ -53,7 +54,7 @@ POST /trustFramework/policies
 
 ## <a name="example"></a>例
 
-次の例では、 **trustframeworkpolicy**を作成します。
+次の例では、 **Trustframeworkpolicy**を作成します。
 
 ##### <a name="request"></a>要求
 

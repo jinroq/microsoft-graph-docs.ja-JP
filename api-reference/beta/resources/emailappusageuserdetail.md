@@ -1,38 +1,39 @@
 ---
-title: emailapp使い方 userdetail リソースの種類
+title: Emailapp使い方 Userdetail リソースの種類
 description: リソースの JSON 表記を次に示します。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 1ebc99f25bf0b16343f48686496c1dbd7d329e65
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: ae0409124569f4318df94f97729402a91d4b8e45
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32542840"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972146"
 ---
-# <a name="emailappusageuserdetail-resource-type"></a>emailapp使い方 userdetail リソースの種類
+# <a name="emailappusageuserdetail-resource-type"></a>Emailapp使い方 Userdetail リソースの種類
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ          | 型              |
 | :---------------- | :---------------- |
-| reportrefreshdate | Date              |
+| reportRefreshDate | 日付              |
 | userPrincipalName | String            |
-| displayName       | String            |
-| isDeleted         | ブール値           |
-| deletedDate       | Date              |
-| lastactivitydate  | Date              |
-| mailformac        | String collection |
-| outlookformac     | String collection |
-| outlookforwindows | String collection |
-| outlookformobile  | String collection |
-| otherformobile    | String collection |
-| outlookforweb     | String collection |
-| pop3App           | String collection |
-| imap4App          | String collection |
-| smtpApp           | String collection |
-| reportperiod      | String            |
+| displayName       | 文字列            |
+| isDeleted         | Boolean           |
+| deletedDate       | 日付              |
+| lastActivityDate  | 日付              |
+| mailForMac        | 文字列コレクション |
+| outlookForMac     | 文字列コレクション |
+| outlookForWindows | 文字列コレクション |
+| outlookForMobile  | 文字列コレクション |
+| otherForMobile    | 文字列コレクション |
+| outlookForWeb     | 文字列コレクション |
+| pop3App           | 文字列コレクション |
+| imap4App          | 文字列コレクション |
+| smtpApp           | 文字列コレクション |
+| reportPeriod      | String            |
 
 ## <a name="json-representation"></a>JSON 表記
 

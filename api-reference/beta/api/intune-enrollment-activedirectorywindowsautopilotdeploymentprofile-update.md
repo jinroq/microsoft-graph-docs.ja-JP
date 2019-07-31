@@ -4,12 +4,13 @@ description: ActiveDirectoryWindowsAutopilotDeploymentProfile オブジェクト
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0b2a45e0fa86e54aef6e42503866d19fc3d6a90c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 1f79ace995db36f18d53ec33a47d60e7bcb7c9c9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34979145"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35981095"
 ---
 # <a name="update-activedirectorywindowsautopilotdeploymentprofile"></a>ActiveDirectoryWindowsAutopilotDeploymentProfile の更新
 

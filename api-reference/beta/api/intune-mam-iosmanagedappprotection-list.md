@@ -4,12 +4,13 @@ description: iosManagedAppProtection オブジェクトのプロパティとリ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 44b6f27f0de3a250468ff17f4b2e50cda97471bb
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 6268c4e1910ff26d18f52aa4e7ea37dcdafa38e3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34985984"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35994874"
 ---
 # <a name="list-iosmanagedappprotections"></a>iosManagedAppProtections のリスト
 

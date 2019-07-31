@@ -4,12 +4,13 @@ description: DepMacOSEnrollmentProfile を削除します。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2e28c530626e7aaac1632409161da8bbf90f81c5
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 921b5967b769607c9467f3c48529ca57ad5d185b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34980314"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35985358"
 ---
 # <a name="delete-depmacosenrollmentprofile"></a>DepMacOSEnrollmentProfile の削除
 

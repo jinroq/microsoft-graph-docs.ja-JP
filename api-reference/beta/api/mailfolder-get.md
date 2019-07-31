@@ -4,12 +4,13 @@ description: メッセージ フォルダー オブジェクトのプロパテ�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: f997ebe701ce55b16415b0f87d52e0b7fadd2f51
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 3590463acd26ee6d363f6511fce2a4ef7933c60b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35880098"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35984061"
 ---
 # <a name="get-mailfolder"></a>mailFolder を取得する
 

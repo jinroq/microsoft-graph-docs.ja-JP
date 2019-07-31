@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: list 内の item のメタデータを返します。
 ms.date: 09/11/2017
 title: SharePoint リストからエントリを取得する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 90095dce5b5cfdadfd37696cd9b43a7a5475b6f6
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 94536503949c5348da8a66a04cfc18fdb25f9223
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35880235"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993082"
 ---
 # <a name="get-an-item-in-a-list"></a>リスト内のアイテムを取得する
 

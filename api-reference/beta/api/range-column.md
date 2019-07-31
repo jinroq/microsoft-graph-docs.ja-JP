@@ -4,12 +4,13 @@ description: 範囲に含まれる列を 1 つ取得します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: d78fc241ceac41c4978b148c617e01df55db4d8b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: ed2b41cc9c72607da4a9777d9685cabfd1f51980
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337225"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991941"
 ---
 # <a name="range-column"></a>範囲:列
 

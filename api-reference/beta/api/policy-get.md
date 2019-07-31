@@ -2,12 +2,15 @@
 title: ポリシーを取得する
 description: ポリシーのプロパティを取得します。
 localization_priority: Normal
-ms.openlocfilehash: 853809ad26910b73bcf6c957e4c55e60f04dea49
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 435e711c711675b94b089d818b7451b551f8b5ac
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33332221"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978883"
 ---
 # <a name="get-policy"></a>ポリシーを取得する
 
@@ -39,7 +42,7 @@ GET /policies/{id}
 
 ## <a name="response"></a>応答
 
-成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[ポリシー](../resources/policy.md)オブジェクトを返します。 unsucccessful
+成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[ポリシー](../resources/policy.md)オブジェクトを返します。 Unsucccessful
 
 ## <a name="example"></a>例
 次の例では、特定のポリシーを取得します。

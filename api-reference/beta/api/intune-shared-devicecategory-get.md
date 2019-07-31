@@ -4,16 +4,17 @@ description: deviceCategory オブジェクトのプロパティとリレーシ�
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: c65c06e13067b3ba299e0e6ca4fe15584667c99b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: ad5b6b583c77a8f6b609541c66b2536a725ba079
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899299"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979814"
 ---
 # <a name="get-devicecategory"></a>deviceCategory の取得
 
-> **重要:** Microsoft Graph の/ベータ版の Api は変更される可能性があります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+> **重要:** Microsoft Graph の/ベータ版の Api は変更される可能性があります。 実稼働アプリケーションでは、これらの API の使用はサポートされていません。
 
 > **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 

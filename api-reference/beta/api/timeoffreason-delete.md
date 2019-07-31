@@ -4,12 +4,13 @@ description: IsActive プロパティを設定して timeOffReason を非アク�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: bee8118b0ae6144e89c95a913c827271919481b8
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 04d7c654c212d3287eb9d204e55f959abd97c85a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35868025"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35990653"
 ---
 # <a name="delete-timeoffreason"></a>TimeOffReason の削除
 

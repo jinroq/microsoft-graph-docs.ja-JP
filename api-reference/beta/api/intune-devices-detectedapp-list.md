@@ -4,12 +4,13 @@ description: detectedApp オブジェクトのプロパティとリレーショ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bb91f3b13324d17c4b5d4c3522afd9bdb785becd
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 54d5ff45879ea46292f7164ce1235a17a3069191
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34959160"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35986114"
 ---
 # <a name="list-detectedapps"></a>detectedApps のリスト
 

@@ -4,12 +4,13 @@ description: onversationThread は、投稿のコレクションです。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 39861bdebbc6bb869a4e55d379fd44b2ceb73400
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: a44234c2ec82b0b28df6c9bbf57b8d8069f129f8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341002"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973949"
 ---
 # <a name="conversationthread-resource-type"></a>conversationThread リソースの種類
 
@@ -27,7 +28,7 @@ onversationThread は、[投稿](post.md)のコレクションです。
 |[スレッドを作成する](../api/group-post-threads.md) | [conversationThread](conversationthread.md) |最初にスレッドを作成して、新しい会話を開始します。グループには、新しい会話、会話スレッド、および投稿が作成されます。|
 |[conversationThread を取得する](../api/conversationthread-get.md) | [conversationThread](conversationthread.md) |グループに属している特定のスレッドを取得します。 |
 |[Update](../api/conversationthread-update.md) | [conversationThread](conversationthread.md)  |conversationThread オブジェクトを更新します。 |
-|[削除](../api/conversationthread-delete.md) | なし |conversationThread オブジェクトを削除します。 |
+|[Delete](../api/conversationthread-delete.md) | None |conversationThread オブジェクトを削除します。 |
 |[返信](../api/conversationthread-reply.md)|なし|新しい投稿のエンティティを作成して、このスレッドに返信します。|
 |[投稿を一覧表示する](../api/conversationthread-list-posts.md) |[post](post.md) collection| 指定したスレッドの投稿を取得します。 |
 
@@ -42,7 +43,7 @@ onversationThread は、[投稿](post.md)のコレクションです。
 |lastDeliveredDateTime|DateTimeOffset|Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |uniqueSenders|String collection|このスレッドにメッセージを送信したすべてのユーザー。|
 |preview|String|この会話における最新投稿の本文からの短い概要。|
-|resource.islocked|ブール値|スレッドがロックされているかどうかを示します。|
+|Resource.islocked|ブール値|スレッドがロックされているかどうかを示します。|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|

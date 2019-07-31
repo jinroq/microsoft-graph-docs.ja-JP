@@ -2,15 +2,15 @@
 title: チャットリソースの種類
 description: チャットは、1人または複数の参加者間の chatMessages のコレクションです。
 author: clearab
-doc_type: resourcePageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 83ab8428fb09a7a2dc0546dcebdf2f409d90d25a
-ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
+doc_type: resourcePageType
+ms.openlocfilehash: 61c23e32d455dd18af639dad31806d54d9e8bd07
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "35908494"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974026"
 ---
 # <a name="chat-resource-type"></a>チャットリソースの種類
 

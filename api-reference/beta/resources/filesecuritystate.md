@@ -2,12 +2,15 @@
 title: fileSecurityState リソースの種類
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでは、これらの API の使用はサポートされていません。"
 localization_priority: Normal
-ms.openlocfilehash: 8709df89c1a8b82f2381ab450fa235ba325a9f88
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: f061ca71bcd16c16e0292673338e2cb8d915e845
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333755"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972013"
 ---
 # <a name="filesecuritystate-resource-type"></a>fileSecurityState リソースの種類
 

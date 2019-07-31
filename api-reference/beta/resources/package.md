@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: " または、個別のアイテムではなく、コレクションとして扱われるアイテムのコレクションです。"
 ms.date: 09/10/2017
-title: パッケージ
+title: プログラム
 localization_priority: Normal
-ms.openlocfilehash: 22acb26168e2973a789a5de919063f250fb77e8b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 6ae382d1f69a88d814339370264dc5dc7fac9414
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344970"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966266"
 ---
 # <a name="package-resource-type"></a>Package リソースの種類
 
