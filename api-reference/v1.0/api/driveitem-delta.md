@@ -5,12 +5,14 @@ ms.date: 09/10/2017
 title: ドライブのコンテンツを同期する
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: fae431014e03b70e9d81d68977a4fa386b5447c7
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: このメソッドを使用すると、ドライブおよびその子への変更履歴を時間の経過とともにアプリで記録できます。
+doc_type: apiPageType
+ms.openlocfilehash: bd71a74cbcd77af19d3ddc87d894bc84ddf8dd3b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35891039"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015517"
 ---
 # <a name="track-changes-for-a-drive"></a>ドライブの変更履歴を記録する
 

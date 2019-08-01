@@ -5,12 +5,14 @@ ms.date: 09/10/2017
 title: 再開可能なファイル アップロード
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 6c430d0887736aed62053bf38541147229071a8b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: アプリで最大ファイル サイズまでファイルをアップロードできるようにするには、アップロード セッションを作成します。
+doc_type: apiPageType
+ms.openlocfilehash: 1e61635d64974d98fa32c60c622ea576aa0ccfbe
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548251"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015531"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>アップロード セッションを使ってサイズが大きいファイルをアップロードする
 

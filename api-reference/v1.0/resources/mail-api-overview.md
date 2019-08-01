@@ -4,12 +4,13 @@ description: Microsoft Graph を使用すると、アプリは個人または組
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 8cc7a8621cb47cf5f0dde8210cbf0d53a7279332
-ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
+doc_type: conceptualPageType
+ms.openlocfilehash: 8be03135f0d85f9a40360cc832b1fe3acb72042f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34812587"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036310"
 ---
 # <a name="use-the-outlook-mail-rest-api"></a>Outlook メール REST API を使用する
 
@@ -45,7 +46,7 @@ Microsoft Graph API には、メッセージの一般的なユース ケース�
 | メッセージを下書き、読み取り、返信、転送、送信、更新、削除する | [message](../resources/message.md) | [message のメソッド](../resources/message.md#methods) |
 | メールボックス所有者の代理としてメッセージを送信するように別のユーザーに委任する | [message](../resources/message.md) | [メッセージ](../resources/message.md)の **from** プロパティと **sender** プロパティの設定 |
 | ユーザーがより重要なメッセージを最初に表示できるようにする | [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) | [優先受信トレイ](../resources/manage-focused-inbox.md) |
-| 検索フォルダ―でメッセージの検索を行い、メッセージを取得する  | [mailSearchFolder ](../resources/mailsearchfolder.md) | [mailSearchFolder のメソッド](../resources/mailsearchfolder.md#methods) |
+| 検索フォルダ―でメッセージの検索を行い、メッセージを取得する  | [mailSearchFolder](../resources/mailsearchfolder.md) | [mailSearchFolder のメソッド](../resources/mailsearchfolder.md#methods) |
 | メッセージの添付ファイルを追加、取得、削除する | [attachment](../resources/attachment.md)、 <br> [fileAttachment](../resources/fileattachment.md)、 <br> [itemAttachment](../resources/itemattachment.md)、 <br> [referenceAttachment](../resources/referenceattachment.md)、 <br> [message](../resources/message.md) | [添付ファイルのメソッド](../resources/attachment.md#methods) |
 | ユーザーの自動応答、ロケール、タイム ゾーン、就業時間を取得または更新する | [mailboxSettings](../resources/mailboxsettings.md)、 <br> [automaticRepliesSetting](../resources/automaticrepliessetting.md)、 <br> [localeInfo](../resources/localeinfo.md)、 <br> [workingHours](../resources/workinghours.md) | [ユーザーのメールボックスの設定を取得する](../api/user-get-mailboxsettings.md)、 <br> [ユーザーのメールボックスの設定を更新する](../api/user-update-mailboxsettings.md) |
 | 不在など、他の受信者の特別な状態のメールヒントを取得する | [user](../resources/user.md)、 <br> [mailTips](../resources/mailtips.md) | [メール ヒントを取得する](../api/user-getmailtips.md) |

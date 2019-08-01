@@ -4,12 +4,13 @@ description: メールボックス使用状況レポートを使用して、主�
 localization_priority: Priority
 author: pranoychaudhuri
 ms.prod: reports
-ms.openlocfilehash: 6b02821da78338e8af1dec99fe73bedf81561116
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.openlocfilehash: f88f940541bee75a6898ac638fe80e44fc368320
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32574090"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036296"
 ---
 # <a name="mailbox-usage-reports"></a>メールボックス使用状況レポート
 

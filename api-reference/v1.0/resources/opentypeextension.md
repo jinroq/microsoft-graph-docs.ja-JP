@@ -3,12 +3,14 @@ title: openTypeExtension リソース タイプ (オープン拡張機能)
 description: オープン拡張 (旧称は Office 365 のデータ拡張機能) を使用すると、型指定されていないプロパティを Microsoft Graph のリソースに簡単に直接追加できます。
 localization_priority: Priority
 author: dkershaw10
-ms.openlocfilehash: 854897e1cc4d887fc0f4d2f184a4e745e5cdc468
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 51633d9d166d28033f49463176232c62aa557c59
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462635"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035746"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>openTypeExtension リソース タイプ (オープン拡張)
 

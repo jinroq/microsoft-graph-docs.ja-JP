@@ -5,12 +5,14 @@ ms.date: 09/10/2017
 title: 他の形式に変換する
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: e66d302c7397690f6975363f9c3785f8b620756d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: この API を使用して、アイテムのコンテンツを特定の形式で取得します。
+doc_type: apiPageType
+ms.openlocfilehash: 6472daba727cb412fb9c4ab3fa3e3b2160b560e8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35890973"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015496"
 ---
 # <a name="download-a-file-in-another-format"></a>別の形式でファイルをダウンロードする
 

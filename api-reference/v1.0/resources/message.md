@@ -4,12 +4,13 @@ description: mailFolder のメッセージ。
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 40bb849ba7dd62a3571ab5bf95e70eb6b9a27a85
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: e27963f18d3925bca6ee200434f4044c2c0b9197
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32463048"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036142"
 ---
 # <a name="message-resource-type"></a>メッセージ リソースの種類
 
@@ -82,7 +83,8 @@ mailFolder のメッセージ。
 |parentFolderId|String|メッセージの親 mailFolder の一意識別子。|
 |receivedDateTime|DateTimeOffset|メッセージが受信された日時です。|
 |replyTo|[recipient](recipient.md) collection|返信時に使用される電子メール アドレス。|
-|sender|[recipient](recipient.md)|メッセージを生成するために実際に使用されるアカウント。 ほとんどの場合、この値は **from** プロパティと同じです。 [共有メールボックス](https://docs.microsoft.com/ja-JP/exchange/collaboration/shared-mailboxes/shared-mailboxes)からメッセージを送信するとき、またはメッセージを [delegate](https://support.office.com/ja-JP/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926) として送信するときには、このプロパティに異なる値を設定できます。 いずれの場合でも、この値は、実際に使用されているメールボックスに対応している必要があります。 メッセージの[from プロパティと sender プロパティの設定](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties)に関する詳細情報を参照してください。|
+|sender|[recipient](recipient.md)|メッセージを生成するために実際に使用されるアカウント。 ほとんどの場合、この値は **from** プロパティと同じです。 
+  [共有メールボックス](https://docs.microsoft.com/ja-JP/exchange/collaboration/shared-mailboxes/shared-mailboxes)からメッセージを送信するとき、またはメッセージを [delegate](https://support.office.com/ja-JP/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926) として送信するときには、このプロパティに異なる値を設定できます。 いずれの場合でも、この値は、実際に使用されているメールボックスに対応している必要があります。 メッセージの[from プロパティと sender プロパティの設定](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties)に関する詳細情報を参照してください。|
 |sentDateTime|DateTimeOffset|メッセージが送信された日時。|
 |subject|String|メッセージの件名。|
 |toRecipients|[recipient](recipient.md) collection|メッセージの宛先。|
