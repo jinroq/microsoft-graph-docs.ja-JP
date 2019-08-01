@@ -4,28 +4,28 @@ description: 指定されたセクションに新しいページを作成しま�
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 3617022652bd1e5fc0df0ed3497fb4b5f2e4f576
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 34d72be148975c7d8ef4fad83af228d5b0595be1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521041"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36024750"
 ---
-# <a name="create-page"></a><span data-ttu-id="9ebcb-103">page を作成する</span><span class="sxs-lookup"><span data-stu-id="9ebcb-103">Create page</span></span>
+# <a name="create-page"></a><span data-ttu-id="708dd-103">page を作成する</span><span class="sxs-lookup"><span data-stu-id="708dd-103">Create page</span></span>
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+<span data-ttu-id="708dd-104">指定されたセクションに新しい[ページ](../resources/page.md)を作成します。</span><span class="sxs-lookup"><span data-stu-id="708dd-104">Create a new [page](../resources/page.md) in the specified section.</span></span>
 
-<span data-ttu-id="9ebcb-104">指定されたセクションに新しい[ページ](../resources/page.md)を作成します。</span><span class="sxs-lookup"><span data-stu-id="9ebcb-104">Create a new [page](../resources/page.md) in the specified section.</span></span>
-## <a name="permissions"></a><span data-ttu-id="9ebcb-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="9ebcb-105">Permissions</span></span>
-<span data-ttu-id="9ebcb-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="9ebcb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="708dd-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="708dd-105">Permissions</span></span>
+<span data-ttu-id="708dd-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="708dd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9ebcb-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="9ebcb-108">Permission type</span></span>      | <span data-ttu-id="9ebcb-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="9ebcb-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="708dd-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="708dd-108">Permission type</span></span>      | <span data-ttu-id="708dd-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="708dd-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="9ebcb-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="9ebcb-110">Delegated (work or school account)</span></span> | <span data-ttu-id="9ebcb-111">Notes.Create、Notes.ReadWrite、Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9ebcb-111">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span></span>    |
-|<span data-ttu-id="9ebcb-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="9ebcb-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9ebcb-113">Notes.Create、Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="9ebcb-113">Notes.Create, Notes.ReadWrite</span></span>    |
-|<span data-ttu-id="9ebcb-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="9ebcb-114">Application</span></span> | <span data-ttu-id="9ebcb-115">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9ebcb-115">Notes.ReadWrite.All</span></span> |
+|<span data-ttu-id="708dd-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="708dd-110">Delegated (work or school account)</span></span> | <span data-ttu-id="708dd-111">Notes.Create、Notes.ReadWrite、Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="708dd-111">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span></span>    |
+|<span data-ttu-id="708dd-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="708dd-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="708dd-113">Notes.Create、Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="708dd-113">Notes.Create, Notes.ReadWrite</span></span>    |
+|<span data-ttu-id="708dd-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="708dd-114">Application</span></span> | <span data-ttu-id="708dd-115">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="708dd-115">Notes.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="9ebcb-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="9ebcb-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="708dd-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="708dd-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onenote/sections/{id}/pages
@@ -33,28 +33,28 @@ POST /users/{id | userPrincipalName}/onenote/sections/{id}/pages
 POST /groups/{id}/onenote/sections/{id}/pages
 POST /sites/{id}/onenote/sections/{id}/pages
 ```
-## <a name="request-headers"></a><span data-ttu-id="9ebcb-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="9ebcb-117">Request headers</span></span>
-| <span data-ttu-id="9ebcb-118">名前</span><span class="sxs-lookup"><span data-stu-id="9ebcb-118">Name</span></span>       | <span data-ttu-id="9ebcb-119">型</span><span class="sxs-lookup"><span data-stu-id="9ebcb-119">Type</span></span> | <span data-ttu-id="9ebcb-120">説明</span><span class="sxs-lookup"><span data-stu-id="9ebcb-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="708dd-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="708dd-117">Request headers</span></span>
+| <span data-ttu-id="708dd-118">名前</span><span class="sxs-lookup"><span data-stu-id="708dd-118">Name</span></span>       | <span data-ttu-id="708dd-119">型</span><span class="sxs-lookup"><span data-stu-id="708dd-119">Type</span></span> | <span data-ttu-id="708dd-120">説明</span><span class="sxs-lookup"><span data-stu-id="708dd-120">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="9ebcb-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="9ebcb-121">Authorization</span></span>  | <span data-ttu-id="9ebcb-122">string</span><span class="sxs-lookup"><span data-stu-id="9ebcb-122">string</span></span>  | <span data-ttu-id="9ebcb-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="9ebcb-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="9ebcb-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="9ebcb-125">Content-Type</span></span> | <span data-ttu-id="9ebcb-126">string</span><span class="sxs-lookup"><span data-stu-id="9ebcb-126">string</span></span> | <span data-ttu-id="9ebcb-p103">HTML コンテンツを表す `text/html` または `application/xhtml+xml` (マルチパート要求の必須の "Presentation" パートを含む)。マルチパート要求では `multipart/form-data; boundary=your-boundary` コンテンツ タイプを使用します。</span><span class="sxs-lookup"><span data-stu-id="9ebcb-p103">`text/html` or `application/xhtml+xml` for the HTML content, including for the required "Presentation" part of multipart requests. Multipart requests use the `multipart/form-data; boundary=your-boundary` content type.</span></span> |
+| <span data-ttu-id="708dd-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="708dd-121">Authorization</span></span>  | <span data-ttu-id="708dd-122">string</span><span class="sxs-lookup"><span data-stu-id="708dd-122">string</span></span>  | <span data-ttu-id="708dd-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="708dd-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="708dd-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="708dd-125">Content-Type</span></span> | <span data-ttu-id="708dd-126">string</span><span class="sxs-lookup"><span data-stu-id="708dd-126">string</span></span> | <span data-ttu-id="708dd-p103">HTML コンテンツを表す `text/html` または `application/xhtml+xml` (マルチパート要求の必須の "Presentation" パートを含む)。マルチパート要求では `multipart/form-data; boundary=your-boundary` コンテンツ タイプを使用します。</span><span class="sxs-lookup"><span data-stu-id="708dd-p103">`text/html` or `application/xhtml+xml` for the HTML content, including for the required "Presentation" part of multipart requests. Multipart requests use the `multipart/form-data; boundary=your-boundary` content type.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="9ebcb-129">要求本文</span><span class="sxs-lookup"><span data-stu-id="9ebcb-129">Request body</span></span>
-<span data-ttu-id="9ebcb-130">要求本文には、ページの HTML コンテンツを指定します。</span><span class="sxs-lookup"><span data-stu-id="9ebcb-130">In the request body, supply the page HTML content.</span></span>
+## <a name="request-body"></a><span data-ttu-id="708dd-129">要求本文</span><span class="sxs-lookup"><span data-stu-id="708dd-129">Request body</span></span>
+<span data-ttu-id="708dd-130">要求本文には、ページの HTML コンテンツを指定します。</span><span class="sxs-lookup"><span data-stu-id="708dd-130">In the request body, supply the page HTML content.</span></span>
 
-<span data-ttu-id="9ebcb-p104">本文には、要求本文に直接入力した HTML を含めることができます。または、例に示すようにマルチパート メッセージ形式を含めることもできます。バイナリ データを送信する場合は、マルチパート要求を送信する必要があります。</span><span class="sxs-lookup"><span data-stu-id="9ebcb-p104">The body can contain HTML placed directly in the request body, or it can contain a multipart message format as shown in the example. If you're sending binary data, then you must send a multipart request.</span></span>
+<span data-ttu-id="708dd-p104">本文には、要求本文に直接入力した HTML を含めることができます。または、例に示すようにマルチパート メッセージ形式を含めることもできます。バイナリ データを送信する場合は、マルチパート要求を送信する必要があります。</span><span class="sxs-lookup"><span data-stu-id="708dd-p104">The body can contain HTML placed directly in the request body, or it can contain a multipart message format as shown in the example. If you're sending binary data, then you must send a multipart request.</span></span>
 
-## <a name="response"></a><span data-ttu-id="9ebcb-133">応答</span><span class="sxs-lookup"><span data-stu-id="9ebcb-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="708dd-133">応答</span><span class="sxs-lookup"><span data-stu-id="708dd-133">Response</span></span>
 
-<span data-ttu-id="9ebcb-134">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で新規 [page](../resources/page.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="9ebcb-134">If successful, this method returns `201 Created` response code and the new [page](../resources/page.md) object in the response body.</span></span>
+<span data-ttu-id="708dd-134">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で新規 [page](../resources/page.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="708dd-134">If successful, this method returns `201 Created` response code and the new [page](../resources/page.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9ebcb-135">例</span><span class="sxs-lookup"><span data-stu-id="9ebcb-135">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="9ebcb-136">要求</span><span class="sxs-lookup"><span data-stu-id="9ebcb-136">Request</span></span>
-<span data-ttu-id="9ebcb-137">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="9ebcb-137">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="708dd-135">例</span><span class="sxs-lookup"><span data-stu-id="708dd-135">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="708dd-136">要求</span><span class="sxs-lookup"><span data-stu-id="708dd-136">Request</span></span>
+<span data-ttu-id="708dd-137">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="708dd-137">Here is an example of the request.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/beta/me/onenote/sections/{id}/pages
+POST https://graph.microsoft.com/v1.0/me/onenote/sections/{id}/pages
 Content-length: 312
 Content-type: multipart/form-data; boundary=MyPartBoundary198374
 
@@ -92,8 +92,8 @@ Content-Type:application/pdf
 
 --MyPartBoundary198374--
 ```
-##### <a name="response"></a><span data-ttu-id="9ebcb-138">応答</span><span class="sxs-lookup"><span data-stu-id="9ebcb-138">Response</span></span>
-<span data-ttu-id="9ebcb-p105">以下は、応答の例です。注:ここに示す応答オブジェクトは切り詰めて簡略化されています。実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="9ebcb-p105">Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call. </span></span><!-- { "blockType": "ignored" } -->
+##### <a name="response"></a><span data-ttu-id="708dd-138">応答</span><span class="sxs-lookup"><span data-stu-id="708dd-138">Response</span></span>
+<span data-ttu-id="708dd-p105">以下は、応答の例です。注:ここに示す応答オブジェクトは切り詰めて簡略化されています。実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="708dd-p105">Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call. </span></span><!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -117,15 +117,10 @@ Content-length: 312
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create Page",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/section-post-pages.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

@@ -4,30 +4,31 @@ description: サインイン ユーザーのプライマリ メールボック�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 53ded2d60161d833f70a3b747e0ec35953d5bd39
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 3fdef250b1614cc19e57af4341f7983fa0fe9fa0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573999"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036303"
 ---
-# <a name="mailboxsettings-resource-type"></a><span data-ttu-id="1b398-103">mailboxSettings リソースの種類</span><span class="sxs-lookup"><span data-stu-id="1b398-103">mailboxSettings resource type</span></span>
+# <a name="mailboxsettings-resource-type"></a><span data-ttu-id="2d5a8-103">mailboxSettings リソースの種類</span><span class="sxs-lookup"><span data-stu-id="2d5a8-103">mailboxSettings resource type</span></span>
 
-<span data-ttu-id="1b398-104">サインイン ユーザーのプライマリ メールボックスの設定。</span><span class="sxs-lookup"><span data-stu-id="1b398-104">Settings for the primary mailbox of the signed-in user.</span></span>
+<span data-ttu-id="2d5a8-104">サインイン ユーザーのプライマリ メールボックスの設定。</span><span class="sxs-lookup"><span data-stu-id="2d5a8-104">Settings for the primary mailbox of the signed-in user.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="1b398-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="1b398-105">Properties</span></span>
-| <span data-ttu-id="1b398-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="1b398-106">Property</span></span>     | <span data-ttu-id="1b398-107">型</span><span class="sxs-lookup"><span data-stu-id="1b398-107">Type</span></span>   |<span data-ttu-id="1b398-108">説明</span><span class="sxs-lookup"><span data-stu-id="1b398-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="2d5a8-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="2d5a8-105">Properties</span></span>
+| <span data-ttu-id="2d5a8-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="2d5a8-106">Property</span></span>     | <span data-ttu-id="2d5a8-107">型</span><span class="sxs-lookup"><span data-stu-id="2d5a8-107">Type</span></span>   |<span data-ttu-id="2d5a8-108">説明</span><span class="sxs-lookup"><span data-stu-id="2d5a8-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="1b398-109">archiveFolder</span><span class="sxs-lookup"><span data-stu-id="1b398-109">archiveFolder</span></span>|<span data-ttu-id="1b398-110">string</span><span class="sxs-lookup"><span data-stu-id="1b398-110">string</span></span>|<span data-ttu-id="1b398-111">ユーザーのアーカイブ フォルダーのフォルダー ID。</span><span class="sxs-lookup"><span data-stu-id="1b398-111">Folder ID of an archive folder for the user.</span></span>|
-|<span data-ttu-id="1b398-112">automaticRepliesSetting</span><span class="sxs-lookup"><span data-stu-id="1b398-112">automaticRepliesSetting</span></span>|[<span data-ttu-id="1b398-113">automaticRepliesSetting</span><span class="sxs-lookup"><span data-stu-id="1b398-113">automaticRepliesSetting</span></span>](automaticrepliessetting.md)|<span data-ttu-id="1b398-114">サインイン ユーザーからのメッセージを使用して、着信メールの送信者に自動的に通知する構成設定。</span><span class="sxs-lookup"><span data-stu-id="1b398-114">Configuration settings to automatically notify the sender of an incoming email with a message from the signed-in user.</span></span>|
-|<span data-ttu-id="1b398-115">language</span><span class="sxs-lookup"><span data-stu-id="1b398-115">language</span></span>|[<span data-ttu-id="1b398-116">localeInfo</span><span class="sxs-lookup"><span data-stu-id="1b398-116">localeInfo</span></span>](localeinfo.md)|<span data-ttu-id="1b398-117">優先言語および国/地域を含むユーザーのロケール情報。</span><span class="sxs-lookup"><span data-stu-id="1b398-117">The locale information for the user, including the preferred language and country/region.</span></span>|
-|<span data-ttu-id="1b398-118">timeZone</span><span class="sxs-lookup"><span data-stu-id="1b398-118">timeZone</span></span>|<span data-ttu-id="1b398-119">string</span><span class="sxs-lookup"><span data-stu-id="1b398-119">string</span></span>|<span data-ttu-id="1b398-120">ユーザーのメールボックスの既定のタイム ゾーン。</span><span class="sxs-lookup"><span data-stu-id="1b398-120">The default time zone for the user's mailbox.</span></span>|
-|<span data-ttu-id="1b398-121">workingHours</span><span class="sxs-lookup"><span data-stu-id="1b398-121">workingHours</span></span>|[<span data-ttu-id="1b398-122">workingHours</span><span class="sxs-lookup"><span data-stu-id="1b398-122">workingHours</span></span>](workinghours.md)|<span data-ttu-id="1b398-123">ユーザーが働く曜日と、特定のタイムゾーンの時間。</span><span class="sxs-lookup"><span data-stu-id="1b398-123">The days of the week and hours in a specific time zone that the user works.</span></span>|
+|<span data-ttu-id="2d5a8-109">archiveFolder</span><span class="sxs-lookup"><span data-stu-id="2d5a8-109">archiveFolder</span></span>|<span data-ttu-id="2d5a8-110">string</span><span class="sxs-lookup"><span data-stu-id="2d5a8-110">string</span></span>|<span data-ttu-id="2d5a8-111">ユーザーのアーカイブ フォルダーのフォルダー ID。</span><span class="sxs-lookup"><span data-stu-id="2d5a8-111">Folder ID of an archive folder for the user.</span></span>|
+|<span data-ttu-id="2d5a8-112">automaticRepliesSetting</span><span class="sxs-lookup"><span data-stu-id="2d5a8-112">automaticRepliesSetting</span></span>|[<span data-ttu-id="2d5a8-113">automaticRepliesSetting</span><span class="sxs-lookup"><span data-stu-id="2d5a8-113">automaticRepliesSetting</span></span>](automaticrepliessetting.md)|<span data-ttu-id="2d5a8-114">サインイン ユーザーからのメッセージを使用して、着信メールの送信者に自動的に通知する構成設定。</span><span class="sxs-lookup"><span data-stu-id="2d5a8-114">Configuration settings to automatically notify the sender of an incoming email with a message from the signed-in user.</span></span>|
+|<span data-ttu-id="2d5a8-115">language</span><span class="sxs-lookup"><span data-stu-id="2d5a8-115">language</span></span>|[<span data-ttu-id="2d5a8-116">localeInfo</span><span class="sxs-lookup"><span data-stu-id="2d5a8-116">localeInfo</span></span>](localeinfo.md)|<span data-ttu-id="2d5a8-117">優先言語および国/地域を含むユーザーのロケール情報。</span><span class="sxs-lookup"><span data-stu-id="2d5a8-117">The locale information for the user, including the preferred language and country/region.</span></span>|
+|<span data-ttu-id="2d5a8-118">timeZone</span><span class="sxs-lookup"><span data-stu-id="2d5a8-118">timeZone</span></span>|<span data-ttu-id="2d5a8-119">string</span><span class="sxs-lookup"><span data-stu-id="2d5a8-119">string</span></span>|<span data-ttu-id="2d5a8-120">ユーザーのメールボックスの既定のタイム ゾーン。</span><span class="sxs-lookup"><span data-stu-id="2d5a8-120">The default time zone for the user's mailbox.</span></span>|
+|<span data-ttu-id="2d5a8-121">workingHours</span><span class="sxs-lookup"><span data-stu-id="2d5a8-121">workingHours</span></span>|[<span data-ttu-id="2d5a8-122">workingHours</span><span class="sxs-lookup"><span data-stu-id="2d5a8-122">workingHours</span></span>](workinghours.md)|<span data-ttu-id="2d5a8-123">ユーザーが働く曜日と、特定のタイムゾーンの時間。</span><span class="sxs-lookup"><span data-stu-id="2d5a8-123">The days of the week and hours in a specific time zone that the user works.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="1b398-124">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="1b398-124">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="2d5a8-124">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="2d5a8-124">JSON representation</span></span>
 
-<span data-ttu-id="1b398-125">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="1b398-125">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="2d5a8-125">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="2d5a8-125">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

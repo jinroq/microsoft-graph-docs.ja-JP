@@ -4,26 +4,27 @@ description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4490568adae1437ff01ac269a910c1fa2f3c4831
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 194f4ec9ea0bcb7c0f8434835cf548aa902bd204
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551772"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030598"
 ---
-# <a name="importedwindowsautopilotdeviceidentityuploadstatus-enum-type"></a><span data-ttu-id="2ce03-103">importedWindowsAutopilotDeviceIdentityUploadStatus 列挙型</span><span class="sxs-lookup"><span data-stu-id="2ce03-103">importedWindowsAutopilotDeviceIdentityUploadStatus enum type</span></span>
+# <a name="importedwindowsautopilotdeviceidentityuploadstatus-enum-type"></a><span data-ttu-id="d7c2f-103">importedWindowsAutopilotDeviceIdentityUploadStatus 列挙型</span><span class="sxs-lookup"><span data-stu-id="d7c2f-103">importedWindowsAutopilotDeviceIdentityUploadStatus enum type</span></span>
 
-> <span data-ttu-id="2ce03-104">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="2ce03-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="d7c2f-104">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="d7c2f-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="2ce03-105">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="2ce03-105">Not yet documented</span></span>
+<span data-ttu-id="d7c2f-105">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="d7c2f-105">Not yet documented</span></span>
 
-## <a name="members"></a><span data-ttu-id="2ce03-106">メンバー</span><span class="sxs-lookup"><span data-stu-id="2ce03-106">Members</span></span>
-|<span data-ttu-id="2ce03-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="2ce03-107">Member</span></span>|<span data-ttu-id="2ce03-108">値</span><span class="sxs-lookup"><span data-stu-id="2ce03-108">Value</span></span>|<span data-ttu-id="2ce03-109">説明</span><span class="sxs-lookup"><span data-stu-id="2ce03-109">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="d7c2f-106">メンバー</span><span class="sxs-lookup"><span data-stu-id="d7c2f-106">Members</span></span>
+|<span data-ttu-id="d7c2f-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="d7c2f-107">Member</span></span>|<span data-ttu-id="d7c2f-108">値</span><span class="sxs-lookup"><span data-stu-id="d7c2f-108">Value</span></span>|<span data-ttu-id="d7c2f-109">説明</span><span class="sxs-lookup"><span data-stu-id="d7c2f-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="2ce03-110">noUpload</span><span class="sxs-lookup"><span data-stu-id="2ce03-110">noUpload</span></span>|<span data-ttu-id="2ce03-111">.0</span><span class="sxs-lookup"><span data-stu-id="2ce03-111">0</span></span>|<span data-ttu-id="2ce03-112">アップロードの状態はありません。</span><span class="sxs-lookup"><span data-stu-id="2ce03-112">No upload status.</span></span>|
-|<span data-ttu-id="2ce03-113">対する</span><span class="sxs-lookup"><span data-stu-id="2ce03-113">pending</span></span>|<span data-ttu-id="2ce03-114">1 </span><span class="sxs-lookup"><span data-stu-id="2ce03-114">1</span></span>|<span data-ttu-id="2ce03-115">保留中の状態。</span><span class="sxs-lookup"><span data-stu-id="2ce03-115">Pending status.</span></span>|
-|<span data-ttu-id="2ce03-116">complete</span><span class="sxs-lookup"><span data-stu-id="2ce03-116">complete</span></span>|<span data-ttu-id="2ce03-117">2 </span><span class="sxs-lookup"><span data-stu-id="2ce03-117">2</span></span>|<span data-ttu-id="2ce03-118">完全な状態。</span><span class="sxs-lookup"><span data-stu-id="2ce03-118">Complete status.</span></span>|
-|<span data-ttu-id="2ce03-119">error</span><span class="sxs-lookup"><span data-stu-id="2ce03-119">error</span></span>|<span data-ttu-id="2ce03-120">3 </span><span class="sxs-lookup"><span data-stu-id="2ce03-120">3</span></span>|<span data-ttu-id="2ce03-121">エラー状態。</span><span class="sxs-lookup"><span data-stu-id="2ce03-121">Error status.</span></span>|
+|<span data-ttu-id="d7c2f-110">noUpload</span><span class="sxs-lookup"><span data-stu-id="d7c2f-110">noUpload</span></span>|<span data-ttu-id="d7c2f-111">.0</span><span class="sxs-lookup"><span data-stu-id="d7c2f-111">0</span></span>|<span data-ttu-id="d7c2f-112">アップロードの状態はありません。</span><span class="sxs-lookup"><span data-stu-id="d7c2f-112">No upload status.</span></span>|
+|<span data-ttu-id="d7c2f-113">対する</span><span class="sxs-lookup"><span data-stu-id="d7c2f-113">pending</span></span>|<span data-ttu-id="d7c2f-114">1-d</span><span class="sxs-lookup"><span data-stu-id="d7c2f-114">1</span></span>|<span data-ttu-id="d7c2f-115">保留中の状態。</span><span class="sxs-lookup"><span data-stu-id="d7c2f-115">Pending status.</span></span>|
+|<span data-ttu-id="d7c2f-116">complete</span><span class="sxs-lookup"><span data-stu-id="d7c2f-116">complete</span></span>|<span data-ttu-id="d7c2f-117">pbm-2</span><span class="sxs-lookup"><span data-stu-id="d7c2f-117">2</span></span>|<span data-ttu-id="d7c2f-118">完全な状態。</span><span class="sxs-lookup"><span data-stu-id="d7c2f-118">Complete status.</span></span>|
+|<span data-ttu-id="d7c2f-119">error</span><span class="sxs-lookup"><span data-stu-id="d7c2f-119">error</span></span>|<span data-ttu-id="d7c2f-120">1/3</span><span class="sxs-lookup"><span data-stu-id="d7c2f-120">3</span></span>|<span data-ttu-id="d7c2f-121">エラー状態。</span><span class="sxs-lookup"><span data-stu-id="d7c2f-121">Error status.</span></span>|
 
 
 

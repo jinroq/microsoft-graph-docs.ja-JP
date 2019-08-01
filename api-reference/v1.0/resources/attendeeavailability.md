@@ -4,20 +4,21 @@ description: 出席者の空き時間。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 63014553824b833e2e4cdfb03485fcb7962c01a0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: ffdff0945522d04361510cfcc5917381fecfaa03
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569362"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030059"
 ---
-# <a name="attendeeavailability-resource-type"></a><span data-ttu-id="75a78-103">attendeeAvailability リソースの種類</span><span class="sxs-lookup"><span data-stu-id="75a78-103">attendeeAvailability resource type</span></span>
+# <a name="attendeeavailability-resource-type"></a><span data-ttu-id="99e3e-103">attendeeAvailability リソースの種類</span><span class="sxs-lookup"><span data-stu-id="99e3e-103">attendeeAvailability resource type</span></span>
 
-<span data-ttu-id="75a78-104">出席者の空き時間。</span><span class="sxs-lookup"><span data-stu-id="75a78-104">The availability of an attendee.</span></span>
+<span data-ttu-id="99e3e-104">出席者の空き時間。</span><span class="sxs-lookup"><span data-stu-id="99e3e-104">The availability of an attendee.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="75a78-105">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="75a78-105">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="99e3e-105">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="99e3e-105">JSON representation</span></span>
 
-<span data-ttu-id="75a78-106">以下は、リソースの JSON 表記です</span><span class="sxs-lookup"><span data-stu-id="75a78-106">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="99e3e-106">以下は、リソースの JSON 表記です</span><span class="sxs-lookup"><span data-stu-id="99e3e-106">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -34,11 +35,11 @@ ms.locfileid: "32569362"
 }
 
 ```
-## <a name="properties"></a><span data-ttu-id="75a78-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="75a78-107">Properties</span></span>
-| <span data-ttu-id="75a78-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="75a78-108">Property</span></span>     | <span data-ttu-id="75a78-109">型</span><span class="sxs-lookup"><span data-stu-id="75a78-109">Type</span></span>   |<span data-ttu-id="75a78-110">説明</span><span class="sxs-lookup"><span data-stu-id="75a78-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="99e3e-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="99e3e-107">Properties</span></span>
+| <span data-ttu-id="99e3e-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="99e3e-108">Property</span></span>     | <span data-ttu-id="99e3e-109">型</span><span class="sxs-lookup"><span data-stu-id="99e3e-109">Type</span></span>   |<span data-ttu-id="99e3e-110">説明</span><span class="sxs-lookup"><span data-stu-id="99e3e-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="75a78-111">attendee</span><span class="sxs-lookup"><span data-stu-id="75a78-111">attendee</span></span>|[<span data-ttu-id="75a78-112">attendeeBase</span><span class="sxs-lookup"><span data-stu-id="75a78-112">attendeeBase</span></span>](attendeebase.md)|<span data-ttu-id="75a78-113">出席者の電子メールアドレスと種類。個人またはリソースのいずれかを指定します。また、必要かどうかは、ユーザーの場合はオプションです。</span><span class="sxs-lookup"><span data-stu-id="75a78-113">The email address and type of attendee - whether it's a person or a resource, and whether required or optional if it's a person.</span></span>|
-|<span data-ttu-id="75a78-114">availability</span><span class="sxs-lookup"><span data-stu-id="75a78-114">availability</span></span>|<span data-ttu-id="75a78-115">freeBusyStatus</span><span class="sxs-lookup"><span data-stu-id="75a78-115">freeBusyStatus</span></span>| <span data-ttu-id="75a78-116">出席者の空き時間の状態。</span><span class="sxs-lookup"><span data-stu-id="75a78-116">The availability status of the attendee.</span></span> <span data-ttu-id="75a78-117">使用可能な値は`free`、 `tentative`、 `busy` `oof` `workingElsewhere`、、、 `unknown`、です。</span><span class="sxs-lookup"><span data-stu-id="75a78-117">The possible values are: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.</span></span>|
+|<span data-ttu-id="99e3e-111">attendee</span><span class="sxs-lookup"><span data-stu-id="99e3e-111">attendee</span></span>|[<span data-ttu-id="99e3e-112">attendeeBase</span><span class="sxs-lookup"><span data-stu-id="99e3e-112">attendeeBase</span></span>](attendeebase.md)|<span data-ttu-id="99e3e-113">出席者の電子メールアドレスと種類。個人またはリソースのいずれかを指定します。また、必要かどうかは、ユーザーの場合はオプションです。</span><span class="sxs-lookup"><span data-stu-id="99e3e-113">The email address and type of attendee - whether it's a person or a resource, and whether required or optional if it's a person.</span></span>|
+|<span data-ttu-id="99e3e-114">availability</span><span class="sxs-lookup"><span data-stu-id="99e3e-114">availability</span></span>|<span data-ttu-id="99e3e-115">freeBusyStatus</span><span class="sxs-lookup"><span data-stu-id="99e3e-115">freeBusyStatus</span></span>| <span data-ttu-id="99e3e-116">出席者の空き時間の状態。</span><span class="sxs-lookup"><span data-stu-id="99e3e-116">The availability status of the attendee.</span></span> <span data-ttu-id="99e3e-117">使用可能な値: `free`、`tentative`、`busy`、`oof`、`workingElsewhere`、`unknown`。</span><span class="sxs-lookup"><span data-stu-id="99e3e-117">The possible values are: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.</span></span>|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

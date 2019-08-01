@@ -4,55 +4,56 @@ description: rangeborder オブジェクトのプロパティを更新します�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: f06c07b68362840da88ef55a05810cbf6e78e8c1
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: fa1cbefa030df4a4af137585ffd90ce07c0e336d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35889885"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35975824"
 ---
-# <a name="update-rangeborder"></a><span data-ttu-id="a4390-103">rangeborder を更新する</span><span class="sxs-lookup"><span data-stu-id="a4390-103">Update rangeborder</span></span>
+# <a name="update-rangeborder"></a><span data-ttu-id="f6569-103">rangeborder を更新する</span><span class="sxs-lookup"><span data-stu-id="f6569-103">Update rangeborder</span></span>
 
-<span data-ttu-id="a4390-104">rangeborder オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="a4390-104">Update the properties of rangeborder object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="a4390-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="a4390-105">Permissions</span></span>
-<span data-ttu-id="a4390-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a4390-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f6569-104">rangeborder オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="f6569-104">Update the properties of rangeborder object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="f6569-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="f6569-105">Permissions</span></span>
+<span data-ttu-id="f6569-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f6569-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a4390-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="a4390-108">Permission type</span></span>      | <span data-ttu-id="a4390-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="a4390-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f6569-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="f6569-108">Permission type</span></span>      | <span data-ttu-id="f6569-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="f6569-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a4390-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="a4390-110">Delegated (work or school account)</span></span> | <span data-ttu-id="a4390-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a4390-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="a4390-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="a4390-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a4390-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a4390-113">Not supported.</span></span>    |
-|<span data-ttu-id="a4390-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="a4390-114">Application</span></span> | <span data-ttu-id="a4390-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a4390-115">Not supported.</span></span> |
+|<span data-ttu-id="f6569-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="f6569-110">Delegated (work or school account)</span></span> | <span data-ttu-id="f6569-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f6569-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="f6569-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="f6569-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f6569-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f6569-113">Not supported.</span></span>    |
+|<span data-ttu-id="f6569-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="f6569-114">Application</span></span> | <span data-ttu-id="f6569-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f6569-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a4390-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="a4390-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f6569-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="f6569-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/names/{name}/range/format/borders/{sideIndex}
 PATCH /workbook/worksheets/{id|name}/range(address='<address>')/format/borders/{sideIndex}
 PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/borders/{sideIndex}
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="a4390-117">オプションの要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="a4390-117">Optional request headers</span></span>
-| <span data-ttu-id="a4390-118">名前</span><span class="sxs-lookup"><span data-stu-id="a4390-118">Name</span></span>       | <span data-ttu-id="a4390-119">説明</span><span class="sxs-lookup"><span data-stu-id="a4390-119">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="f6569-117">オプションの要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f6569-117">Optional request headers</span></span>
+| <span data-ttu-id="f6569-118">名前</span><span class="sxs-lookup"><span data-stu-id="f6569-118">Name</span></span>       | <span data-ttu-id="f6569-119">説明</span><span class="sxs-lookup"><span data-stu-id="f6569-119">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="a4390-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="a4390-120">Authorization</span></span>  | <span data-ttu-id="a4390-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="a4390-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="a4390-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="a4390-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="a4390-p103">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="a4390-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="f6569-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="f6569-120">Authorization</span></span>  | <span data-ttu-id="f6569-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="f6569-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="f6569-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="f6569-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="f6569-p103">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="f6569-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="a4390-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="a4390-126">Request body</span></span>
-<span data-ttu-id="a4390-p104">要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="a4390-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f6569-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="f6569-126">Request body</span></span>
+<span data-ttu-id="f6569-p104">要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="f6569-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="a4390-130">プロパティ</span><span class="sxs-lookup"><span data-stu-id="a4390-130">Property</span></span>     | <span data-ttu-id="a4390-131">型</span><span class="sxs-lookup"><span data-stu-id="a4390-131">Type</span></span>   |<span data-ttu-id="a4390-132">説明</span><span class="sxs-lookup"><span data-stu-id="a4390-132">Description</span></span>|
+| <span data-ttu-id="f6569-130">プロパティ</span><span class="sxs-lookup"><span data-stu-id="f6569-130">Property</span></span>     | <span data-ttu-id="f6569-131">型</span><span class="sxs-lookup"><span data-stu-id="f6569-131">Type</span></span>   |<span data-ttu-id="f6569-132">説明</span><span class="sxs-lookup"><span data-stu-id="f6569-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="a4390-133">color</span><span class="sxs-lookup"><span data-stu-id="a4390-133">color</span></span>|<span data-ttu-id="a4390-134">文字列</span><span class="sxs-lookup"><span data-stu-id="a4390-134">string</span></span>|<span data-ttu-id="a4390-135">枠線の色を表す HTML カラー コード。形式は #RRGGBB (例: "FFA500")、または名前付きの HTML 色 (例: "オレンジ") です。</span><span class="sxs-lookup"><span data-stu-id="a4390-135">HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").</span></span>|
-|<span data-ttu-id="a4390-136">style</span><span class="sxs-lookup"><span data-stu-id="a4390-136">style</span></span>|<span data-ttu-id="a4390-137">string</span><span class="sxs-lookup"><span data-stu-id="a4390-137">string</span></span>|<span data-ttu-id="a4390-138">罫線の線スタイルを指定する、線スタイル定数のいずれか 1 つ。</span><span class="sxs-lookup"><span data-stu-id="a4390-138">One of the constants of line style specifying the line style for the border.</span></span> <span data-ttu-id="a4390-139">使用可能な値は`None`、 `Continuous`、 `Dash` `DashDot` `DashDotDot` `Dot` `Double`、、、、、 `SlantDashDot`、です。</span><span class="sxs-lookup"><span data-stu-id="a4390-139">The possible values are: `None`, `Continuous`, `Dash`, `DashDot`, `DashDotDot`, `Dot`, `Double`, `SlantDashDot`.</span></span>|
-|<span data-ttu-id="a4390-140">weight</span><span class="sxs-lookup"><span data-stu-id="a4390-140">weight</span></span>|<span data-ttu-id="a4390-141">string</span><span class="sxs-lookup"><span data-stu-id="a4390-141">string</span></span>|<span data-ttu-id="a4390-142">範囲を取り囲む罫線の太さを指定します。</span><span class="sxs-lookup"><span data-stu-id="a4390-142">Specifies the weight of the border around a range.</span></span> <span data-ttu-id="a4390-143">使用可能な値: `Hairline`、`Thin`、`Medium`、`Thick`。</span><span class="sxs-lookup"><span data-stu-id="a4390-143">The possible values are: `Hairline`, `Thin`, `Medium`, `Thick`.</span></span>|
+|<span data-ttu-id="f6569-133">color</span><span class="sxs-lookup"><span data-stu-id="f6569-133">color</span></span>|<span data-ttu-id="f6569-134">文字列</span><span class="sxs-lookup"><span data-stu-id="f6569-134">string</span></span>|<span data-ttu-id="f6569-135">枠線の色を表す HTML カラー コード。形式は #RRGGBB (例: "FFA500")、または名前付きの HTML 色 (例: "オレンジ") です。</span><span class="sxs-lookup"><span data-stu-id="f6569-135">HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").</span></span>|
+|<span data-ttu-id="f6569-136">style</span><span class="sxs-lookup"><span data-stu-id="f6569-136">style</span></span>|<span data-ttu-id="f6569-137">string</span><span class="sxs-lookup"><span data-stu-id="f6569-137">string</span></span>|<span data-ttu-id="f6569-138">罫線の線スタイルを指定する、線スタイル定数のいずれか 1 つ。</span><span class="sxs-lookup"><span data-stu-id="f6569-138">One of the constants of line style specifying the line style for the border.</span></span> <span data-ttu-id="f6569-139">使用可能な値は`None`、 `Continuous`、 `Dash` `DashDot` `DashDotDot` `Dot` `Double`、、、、、 `SlantDashDot`、です。</span><span class="sxs-lookup"><span data-stu-id="f6569-139">The possible values are: `None`, `Continuous`, `Dash`, `DashDot`, `DashDotDot`, `Dot`, `Double`, `SlantDashDot`.</span></span>|
+|<span data-ttu-id="f6569-140">weight</span><span class="sxs-lookup"><span data-stu-id="f6569-140">weight</span></span>|<span data-ttu-id="f6569-141">string</span><span class="sxs-lookup"><span data-stu-id="f6569-141">string</span></span>|<span data-ttu-id="f6569-142">範囲を取り囲む罫線の太さを指定します。</span><span class="sxs-lookup"><span data-stu-id="f6569-142">Specifies the weight of the border around a range.</span></span> <span data-ttu-id="f6569-143">使用可能な値: `Hairline`、`Thin`、`Medium`、`Thick`。</span><span class="sxs-lookup"><span data-stu-id="f6569-143">The possible values are: `Hairline`, `Thin`, `Medium`, `Thick`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="a4390-144">応答</span><span class="sxs-lookup"><span data-stu-id="a4390-144">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f6569-144">応答</span><span class="sxs-lookup"><span data-stu-id="f6569-144">Response</span></span>
 
-<span data-ttu-id="a4390-145">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で、更新された[WorkbookRangeBorder](../resources/rangeborder.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="a4390-145">If successful, this method returns a `200 OK` response code and updated [WorkbookRangeBorder](../resources/rangeborder.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="a4390-146">例</span><span class="sxs-lookup"><span data-stu-id="a4390-146">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="a4390-147">要求</span><span class="sxs-lookup"><span data-stu-id="a4390-147">Request</span></span>
-<span data-ttu-id="a4390-148">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="a4390-148">Here is an example of the request.</span></span>
+<span data-ttu-id="f6569-145">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で、更新された[WorkbookRangeBorder](../resources/rangeborder.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="f6569-145">If successful, this method returns a `200 OK` response code and updated [WorkbookRangeBorder](../resources/rangeborder.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="f6569-146">例</span><span class="sxs-lookup"><span data-stu-id="f6569-146">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="f6569-147">要求</span><span class="sxs-lookup"><span data-stu-id="f6569-147">Request</span></span>
+<span data-ttu-id="f6569-148">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="f6569-148">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="a4390-149">プロトコル</span><span class="sxs-lookup"><span data-stu-id="a4390-149">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="f6569-149">プロトコル</span><span class="sxs-lookup"><span data-stu-id="f6569-149">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_rangeborder"
@@ -69,26 +70,26 @@ Content-length: 136
   "weight": "weight-value"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="a4390-150">C#</span><span class="sxs-lookup"><span data-stu-id="a4390-150">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="f6569-150">C#</span><span class="sxs-lookup"><span data-stu-id="f6569-150">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-rangeborder-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a4390-151">Javascript</span><span class="sxs-lookup"><span data-stu-id="a4390-151">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f6569-151">Javascript</span><span class="sxs-lookup"><span data-stu-id="f6569-151">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-rangeborder-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="a4390-152">目的-C</span><span class="sxs-lookup"><span data-stu-id="a4390-152">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="f6569-152">目的-C</span><span class="sxs-lookup"><span data-stu-id="f6569-152">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-rangeborder-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="a4390-153">Java</span><span class="sxs-lookup"><span data-stu-id="a4390-153">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="f6569-153">Java</span><span class="sxs-lookup"><span data-stu-id="f6569-153">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-rangeborder-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="a4390-154">応答</span><span class="sxs-lookup"><span data-stu-id="a4390-154">Response</span></span>
-<span data-ttu-id="a4390-p107">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="a4390-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="f6569-154">応答</span><span class="sxs-lookup"><span data-stu-id="f6569-154">Response</span></span>
+<span data-ttu-id="f6569-p107">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="f6569-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

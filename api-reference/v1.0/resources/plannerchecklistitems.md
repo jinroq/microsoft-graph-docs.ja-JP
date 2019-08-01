@@ -1,35 +1,33 @@
 ---
 title: plannerChecklistItems リソースの種類
-description: '**plan? checklistitemcollection**リソースは、タスクのチェックリストアイテムのコレクションを表します。 オープンな種類です。 タスクの詳細オブジェクトの一部です。 プロパティと値のペアの値は、checklistitem オブジェクトです。'
+description: '**Plan? Checklistitemcollection**リソースは、タスクのチェックリストアイテムのコレクションを表します。 オープンな種類です。 タスクの詳細オブジェクトの一部です。 プロパティと値のペアの値は、checklistItem オブジェクトです。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 17c1d8c0529e0d85ebc784d25c2dc284f1775c0f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: c17b0f0e4127c570514dad0498f3f5384e4a69ab
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462285"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035281"
 ---
-# <a name="plannerchecklistitems-resource-type"></a><span data-ttu-id="0ed1f-106">plannerChecklistItems リソースの種類</span><span class="sxs-lookup"><span data-stu-id="0ed1f-106">plannerChecklistItems resource type</span></span>
+# <a name="plannerchecklistitems-resource-type"></a><span data-ttu-id="3746a-106">plannerChecklistItems リソースの種類</span><span class="sxs-lookup"><span data-stu-id="3746a-106">plannerChecklistItems resource type</span></span>
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-<span data-ttu-id="0ed1f-107">**plan? checklistitemcollection**リソースは、タスクのチェックリストアイテムのコレクションを表します。</span><span class="sxs-lookup"><span data-stu-id="0ed1f-107">The **plannerChecklistItemCollection** resource represents the collection of checklist items on a task.</span></span> <span data-ttu-id="0ed1f-108">オープンな種類です。</span><span class="sxs-lookup"><span data-stu-id="0ed1f-108">It is an Open Type.</span></span> <span data-ttu-id="0ed1f-109">[タスクの詳細](plannertaskdetails.md)オブジェクトの一部です。</span><span class="sxs-lookup"><span data-stu-id="0ed1f-109">It is part of the [task details](plannertaskdetails.md) object.</span></span> <span data-ttu-id="0ed1f-110">プロパティと値のペアの値は、 [checklistitem](plannerchecklistitem.md)オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="0ed1f-110">The value in the property-value pair is the [checklistItem](plannerchecklistitem.md) object.</span></span>
+<span data-ttu-id="3746a-107">**Plan? Checklistitemcollection**リソースは、タスクのチェックリストアイテムのコレクションを表します。</span><span class="sxs-lookup"><span data-stu-id="3746a-107">The **plannerChecklistItemCollection** resource represents the collection of checklist items on a task.</span></span> <span data-ttu-id="3746a-108">オープンな種類です。</span><span class="sxs-lookup"><span data-stu-id="3746a-108">It is an Open Type.</span></span> <span data-ttu-id="3746a-109">[タスクの詳細](plannertaskdetails.md)オブジェクトの一部です。</span><span class="sxs-lookup"><span data-stu-id="3746a-109">It is part of the [task details](plannertaskdetails.md) object.</span></span> <span data-ttu-id="3746a-110">プロパティと値のペアの値は、 [Checklistitem](plannerchecklistitem.md)オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="3746a-110">The value in the property-value pair is the [checklistItem](plannerchecklistitem.md) object.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="0ed1f-111">プロパティ</span><span class="sxs-lookup"><span data-stu-id="0ed1f-111">Properties</span></span>
-<span data-ttu-id="0ed1f-112">オープン型のプロパティは、クライアントで定義できます。</span><span class="sxs-lookup"><span data-stu-id="0ed1f-112">Properties of an Open Type can be defined by the client.</span></span> <span data-ttu-id="0ed1f-113">この場合、クライアントは**guid**をプロパティとして提供し、それらの値は[checklistitem](plannerchecklistitem.md)オブジェクトである必要があります。</span><span class="sxs-lookup"><span data-stu-id="0ed1f-113">In this case, the client should provide **GUIDs** as properties and their values must be [checklistItem](plannerchecklistitem.md) objects.</span></span> <span data-ttu-id="0ed1f-114">例を以下に示します。</span><span class="sxs-lookup"><span data-stu-id="0ed1f-114">Example is shown below.</span></span> <span data-ttu-id="0ed1f-115">チェックリストの項目を削除するには、プロパティの値をに`null`設定します。</span><span class="sxs-lookup"><span data-stu-id="0ed1f-115">To remove an item in the checklist, set the value of the property to `null`.</span></span>
+## <a name="properties"></a><span data-ttu-id="3746a-111">プロパティ</span><span class="sxs-lookup"><span data-stu-id="3746a-111">Properties</span></span>
+<span data-ttu-id="3746a-112">オープン型のプロパティは、クライアントで定義できます。</span><span class="sxs-lookup"><span data-stu-id="3746a-112">Properties of an Open Type can be defined by the client.</span></span> <span data-ttu-id="3746a-113">この場合、クライアントは**guid**をプロパティとして提供し、それらの値は[checklistitem](plannerchecklistitem.md)オブジェクトである必要があります。</span><span class="sxs-lookup"><span data-stu-id="3746a-113">In this case, the client should provide **GUIDs** as properties and their values must be [checklistItem](plannerchecklistitem.md) objects.</span></span> <span data-ttu-id="3746a-114">例を以下に示します。</span><span class="sxs-lookup"><span data-stu-id="3746a-114">Example is shown below.</span></span> <span data-ttu-id="3746a-115">チェックリストの項目を削除するには、プロパティの値をに`null`設定します。</span><span class="sxs-lookup"><span data-stu-id="3746a-115">To remove an item in the checklist, set the value of the property to `null`.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="0ed1f-116">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="0ed1f-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="3746a-116">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="3746a-116">JSON representation</span></span>
 
-<span data-ttu-id="0ed1f-117">以下は、リソースの JSON 表記です</span><span class="sxs-lookup"><span data-stu-id="0ed1f-117">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="3746a-117">以下は、リソースの JSON 表記です</span><span class="sxs-lookup"><span data-stu-id="3746a-117">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [ "String-value" ],
   "@odata.type": "microsoft.graph.plannerChecklistItems"
 }-->
 
@@ -45,7 +43,7 @@ ms.locfileid: "32462285"
   }
 }
 ```
-<span data-ttu-id="0ed1f-118">例</span><span class="sxs-lookup"><span data-stu-id="0ed1f-118">// Example</span></span>
+<span data-ttu-id="3746a-118">例</span><span class="sxs-lookup"><span data-stu-id="3746a-118">// Example</span></span>
 
 ```json
 {
@@ -81,15 +79,10 @@ ms.locfileid: "32462285"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "plannerChecklistItems resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/plannerchecklistitems.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

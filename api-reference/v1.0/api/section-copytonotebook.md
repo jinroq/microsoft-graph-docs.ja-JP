@@ -4,58 +4,59 @@ description: 特定のノートブックにセクションをコピーします�
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: f1a69334b10499295649ba09d64b1fa10bcb86b0
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: dc3934fbf4e7a38af81e9065d0edffb195aa9e30
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35884406"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36024764"
 ---
-# <a name="section-copytonotebook"></a><span data-ttu-id="8d201-103">セクション: copyToNotebook</span><span class="sxs-lookup"><span data-stu-id="8d201-103">section: copyToNotebook</span></span>
-<span data-ttu-id="8d201-104">特定のノートブックにセクションをコピーします。</span><span class="sxs-lookup"><span data-stu-id="8d201-104">Copies a section to a specific notebook.</span></span>
+# <a name="section-copytonotebook"></a><span data-ttu-id="6b51a-103">セクション: copyToNotebook</span><span class="sxs-lookup"><span data-stu-id="6b51a-103">section: copyToNotebook</span></span>
+<span data-ttu-id="6b51a-104">特定のノートブックにセクションをコピーします。</span><span class="sxs-lookup"><span data-stu-id="6b51a-104">Copies a section to a specific notebook.</span></span>
 
-<span data-ttu-id="8d201-105">コピー操作では、非同期呼び出しパターンに従います。最初に Copy アクションを呼び出してから、結果の操作エンドポイントをポーリングします。</span><span class="sxs-lookup"><span data-stu-id="8d201-105">For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.</span></span>
-## <a name="permissions"></a><span data-ttu-id="8d201-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="8d201-106">Permissions</span></span>
-<span data-ttu-id="8d201-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8d201-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="6b51a-105">コピー操作では、非同期呼び出しパターンに従います。最初に Copy アクションを呼び出してから、結果の操作エンドポイントをポーリングします。</span><span class="sxs-lookup"><span data-stu-id="6b51a-105">For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.</span></span>
+## <a name="permissions"></a><span data-ttu-id="6b51a-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="6b51a-106">Permissions</span></span>
+<span data-ttu-id="6b51a-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6b51a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="8d201-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="8d201-109">Permission type</span></span>      | <span data-ttu-id="8d201-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="8d201-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="6b51a-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="6b51a-109">Permission type</span></span>      | <span data-ttu-id="6b51a-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="6b51a-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="8d201-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="8d201-111">Delegated (work or school account)</span></span> | <span data-ttu-id="8d201-112">Notes.Create、Notes.ReadWrite、Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8d201-112">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span></span>    |
-|<span data-ttu-id="8d201-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="8d201-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8d201-114">Notes.Create、Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8d201-114">Notes.Create, Notes.ReadWrite</span></span>    |
-|<span data-ttu-id="8d201-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="8d201-115">Application</span></span> | <span data-ttu-id="8d201-116">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8d201-116">Notes.ReadWrite.All</span></span> |
+|<span data-ttu-id="6b51a-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="6b51a-111">Delegated (work or school account)</span></span> | <span data-ttu-id="6b51a-112">Notes.Create、Notes.ReadWrite、Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6b51a-112">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span></span>    |
+|<span data-ttu-id="6b51a-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="6b51a-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6b51a-114">Notes.Create、Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6b51a-114">Notes.Create, Notes.ReadWrite</span></span>    |
+|<span data-ttu-id="6b51a-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="6b51a-115">Application</span></span> | <span data-ttu-id="6b51a-116">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6b51a-116">Notes.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="8d201-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="8d201-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6b51a-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="6b51a-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onenote/sections/{id}/copyToNotebook
 POST /users/{id | userPrincipalName}/onenote/sections/{id}/copyToNotebook
 POST /groups/{id}/onenote/sections/{id}/copyToNotebook
 ```
-## <a name="request-headers"></a><span data-ttu-id="8d201-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="8d201-118">Request headers</span></span>
-| <span data-ttu-id="8d201-119">名前</span><span class="sxs-lookup"><span data-stu-id="8d201-119">Name</span></span>       | <span data-ttu-id="8d201-120">型</span><span class="sxs-lookup"><span data-stu-id="8d201-120">Type</span></span> | <span data-ttu-id="8d201-121">説明</span><span class="sxs-lookup"><span data-stu-id="8d201-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="6b51a-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="6b51a-118">Request headers</span></span>
+| <span data-ttu-id="6b51a-119">名前</span><span class="sxs-lookup"><span data-stu-id="6b51a-119">Name</span></span>       | <span data-ttu-id="6b51a-120">型</span><span class="sxs-lookup"><span data-stu-id="6b51a-120">Type</span></span> | <span data-ttu-id="6b51a-121">説明</span><span class="sxs-lookup"><span data-stu-id="6b51a-121">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="8d201-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="8d201-122">Authorization</span></span>  | <span data-ttu-id="8d201-123">string</span><span class="sxs-lookup"><span data-stu-id="8d201-123">string</span></span>  | <span data-ttu-id="8d201-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="8d201-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="8d201-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="8d201-126">Content-Type</span></span> | <span data-ttu-id="8d201-127">string</span><span class="sxs-lookup"><span data-stu-id="8d201-127">string</span></span> | `application/json` |
+| <span data-ttu-id="6b51a-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="6b51a-122">Authorization</span></span>  | <span data-ttu-id="6b51a-123">string</span><span class="sxs-lookup"><span data-stu-id="6b51a-123">string</span></span>  | <span data-ttu-id="6b51a-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="6b51a-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="6b51a-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="6b51a-126">Content-Type</span></span> | <span data-ttu-id="6b51a-127">string</span><span class="sxs-lookup"><span data-stu-id="6b51a-127">string</span></span> | `application/json` |
 
-## <a name="request-body"></a><span data-ttu-id="8d201-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="8d201-128">Request body</span></span>
-<span data-ttu-id="8d201-129">要求本文で、操作に必要なパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="8d201-129">In the request body, provide a JSON object that contains the parameters that your operation needs.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6b51a-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="6b51a-128">Request body</span></span>
+<span data-ttu-id="6b51a-129">要求本文で、操作に必要なパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="6b51a-129">In the request body, provide a JSON object that contains the parameters that your operation needs.</span></span>
 
-| <span data-ttu-id="8d201-130">パラメーター</span><span class="sxs-lookup"><span data-stu-id="8d201-130">Parameter</span></span>    | <span data-ttu-id="8d201-131">型</span><span class="sxs-lookup"><span data-stu-id="8d201-131">Type</span></span>   |<span data-ttu-id="8d201-132">説明</span><span class="sxs-lookup"><span data-stu-id="8d201-132">Description</span></span>|
+| <span data-ttu-id="6b51a-130">パラメーター</span><span class="sxs-lookup"><span data-stu-id="6b51a-130">Parameter</span></span>    | <span data-ttu-id="6b51a-131">型</span><span class="sxs-lookup"><span data-stu-id="6b51a-131">Type</span></span>   |<span data-ttu-id="6b51a-132">説明</span><span class="sxs-lookup"><span data-stu-id="6b51a-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="8d201-133">groupId</span><span class="sxs-lookup"><span data-stu-id="8d201-133">groupId</span></span>|<span data-ttu-id="8d201-134">文字列型 (String)</span><span class="sxs-lookup"><span data-stu-id="8d201-134">String</span></span>|<span data-ttu-id="8d201-135">コピー先のグループの id。</span><span class="sxs-lookup"><span data-stu-id="8d201-135">The id of the group to copy to.</span></span> <span data-ttu-id="8d201-136">Office 365 グループにコピーする場合にのみ使用します。</span><span class="sxs-lookup"><span data-stu-id="8d201-136">Use only when copying to an Office 365 group.</span></span>|
-|<span data-ttu-id="8d201-137">id</span><span class="sxs-lookup"><span data-stu-id="8d201-137">id</span></span>|<span data-ttu-id="8d201-138">String</span><span class="sxs-lookup"><span data-stu-id="8d201-138">String</span></span>|<span data-ttu-id="8d201-139">必須。</span><span class="sxs-lookup"><span data-stu-id="8d201-139">Required.</span></span> <span data-ttu-id="8d201-140">コピー先のノートブックの id を指定します。</span><span class="sxs-lookup"><span data-stu-id="8d201-140">The id of the destination notebook.</span></span> |
-|<span data-ttu-id="8d201-141">renameAs</span><span class="sxs-lookup"><span data-stu-id="8d201-141">renameAs</span></span>|<span data-ttu-id="8d201-142">String</span><span class="sxs-lookup"><span data-stu-id="8d201-142">String</span></span>|<span data-ttu-id="8d201-143">コピーするフィルターの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="8d201-143">The name of the copy.</span></span> <span data-ttu-id="8d201-144">Defaults to the name of the existing item.</span><span class="sxs-lookup"><span data-stu-id="8d201-144">Defaults to the name of the existing item.</span></span> |
+|<span data-ttu-id="6b51a-133">groupId</span><span class="sxs-lookup"><span data-stu-id="6b51a-133">groupId</span></span>|<span data-ttu-id="6b51a-134">文字列型 (String)</span><span class="sxs-lookup"><span data-stu-id="6b51a-134">String</span></span>|<span data-ttu-id="6b51a-135">コピー先のグループの id。</span><span class="sxs-lookup"><span data-stu-id="6b51a-135">The id of the group to copy to.</span></span> <span data-ttu-id="6b51a-136">Office 365 グループにコピーする場合にのみ使用します。</span><span class="sxs-lookup"><span data-stu-id="6b51a-136">Use only when copying to an Office 365 group.</span></span>|
+|<span data-ttu-id="6b51a-137">id</span><span class="sxs-lookup"><span data-stu-id="6b51a-137">id</span></span>|<span data-ttu-id="6b51a-138">String</span><span class="sxs-lookup"><span data-stu-id="6b51a-138">String</span></span>|<span data-ttu-id="6b51a-139">必須。</span><span class="sxs-lookup"><span data-stu-id="6b51a-139">Required.</span></span> <span data-ttu-id="6b51a-140">コピー先のノートブックの id を指定します。</span><span class="sxs-lookup"><span data-stu-id="6b51a-140">The id of the destination notebook.</span></span> |
+|<span data-ttu-id="6b51a-141">renameAs</span><span class="sxs-lookup"><span data-stu-id="6b51a-141">renameAs</span></span>|<span data-ttu-id="6b51a-142">String</span><span class="sxs-lookup"><span data-stu-id="6b51a-142">String</span></span>|<span data-ttu-id="6b51a-143">コピーするフィルターの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="6b51a-143">The name of the copy.</span></span> <span data-ttu-id="6b51a-144">Defaults to the name of the existing item.</span><span class="sxs-lookup"><span data-stu-id="6b51a-144">Defaults to the name of the existing item.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="8d201-145">応答</span><span class="sxs-lookup"><span data-stu-id="8d201-145">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6b51a-145">応答</span><span class="sxs-lookup"><span data-stu-id="6b51a-145">Response</span></span>
 
-<span data-ttu-id="8d201-146">成功した場合、このメソッド`202 Accepted`は応答コードと`Operation-Location`ヘッダーを返します。</span><span class="sxs-lookup"><span data-stu-id="8d201-146">If successful, this method returns a `202 Accepted` response code and an `Operation-Location` header.</span></span> <span data-ttu-id="8d201-147">操作の場所のエンドポイントをポーリングして、[コピー操作の状態を取得](onenoteoperation-get.md)します。</span><span class="sxs-lookup"><span data-stu-id="8d201-147">Poll the Operation-Location endpoint to [get the status of the copy operation](onenoteoperation-get.md).</span></span>
+<span data-ttu-id="6b51a-146">成功した場合、このメソッド`202 Accepted`は応答コードと`Operation-Location`ヘッダーを返します。</span><span class="sxs-lookup"><span data-stu-id="6b51a-146">If successful, this method returns a `202 Accepted` response code and an `Operation-Location` header.</span></span> <span data-ttu-id="6b51a-147">操作の場所のエンドポイントをポーリングして、[コピー操作の状態を取得](onenoteoperation-get.md)します。</span><span class="sxs-lookup"><span data-stu-id="6b51a-147">Poll the Operation-Location endpoint to [get the status of the copy operation](onenoteoperation-get.md).</span></span>
 
-## <a name="example"></a><span data-ttu-id="8d201-148">例</span><span class="sxs-lookup"><span data-stu-id="8d201-148">Example</span></span>
-<span data-ttu-id="8d201-149">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="8d201-149">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="8d201-150">要求</span><span class="sxs-lookup"><span data-stu-id="8d201-150">Request</span></span>
-<span data-ttu-id="8d201-151">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="8d201-151">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="6b51a-148">例</span><span class="sxs-lookup"><span data-stu-id="6b51a-148">Example</span></span>
+<span data-ttu-id="6b51a-149">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="6b51a-149">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="6b51a-150">要求</span><span class="sxs-lookup"><span data-stu-id="6b51a-150">Request</span></span>
+<span data-ttu-id="6b51a-151">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="6b51a-151">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="8d201-152">プロトコル</span><span class="sxs-lookup"><span data-stu-id="8d201-152">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="6b51a-152">プロトコル</span><span class="sxs-lookup"><span data-stu-id="6b51a-152">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "section_copytonotebook"
@@ -71,27 +72,27 @@ Content-length: 84
   "renameAs": "renameAs-value"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="8d201-153">C#</span><span class="sxs-lookup"><span data-stu-id="8d201-153">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="6b51a-153">C#</span><span class="sxs-lookup"><span data-stu-id="6b51a-153">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/section-copytonotebook-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="8d201-154">Javascript</span><span class="sxs-lookup"><span data-stu-id="8d201-154">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="6b51a-154">Javascript</span><span class="sxs-lookup"><span data-stu-id="6b51a-154">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/section-copytonotebook-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="8d201-155">目的-C</span><span class="sxs-lookup"><span data-stu-id="8d201-155">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="6b51a-155">目的-C</span><span class="sxs-lookup"><span data-stu-id="6b51a-155">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/section-copytonotebook-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="8d201-156">Java</span><span class="sxs-lookup"><span data-stu-id="8d201-156">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="6b51a-156">Java</span><span class="sxs-lookup"><span data-stu-id="6b51a-156">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/section-copytonotebook-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="8d201-157">応答</span><span class="sxs-lookup"><span data-stu-id="8d201-157">Response</span></span>
-<span data-ttu-id="8d201-158">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="8d201-158">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="6b51a-157">応答</span><span class="sxs-lookup"><span data-stu-id="6b51a-157">Response</span></span>
+<span data-ttu-id="6b51a-158">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="6b51a-158">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
