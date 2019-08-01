@@ -2,12 +2,15 @@
 title: fileSecurityState リソースの種類
 description: 通知に関連するファイル (プロセスではない) に関する情報が含まれます。
 localization_priority: Normal
-ms.openlocfilehash: 14ffa41b395bde04972f0af0436297aa4d038524
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 6e6f30625412022006d88179e3192b1463c797c0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32564793"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032495"
 ---
 # <a name="filesecuritystate-resource-type"></a>fileSecurityState リソースの種類
 

@@ -2,12 +2,15 @@
 title: privacyProfile リソースの種類
 description: 会社のプライバシー プロファイルを表します。このプライバシー プロファイルには、プライバシー ステートメントの URL と、プライバシー ステートメントに関する連絡先担当者が含まれます。
 localization_priority: Normal
-ms.openlocfilehash: 29c4a01cde0e05c42ce74576e769ca005840e854
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 02942e654eb198986d765489e2f35b75e2611e92
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579882"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035092"
 ---
 # <a name="privacyprofile-resource-type"></a>privacyProfile リソースの種類
 

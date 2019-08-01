@@ -4,16 +4,17 @@ description: 新しい managedEBookAssignment オブジェクトを作成しま�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f62d14f924474103c288ab92920839cadc9c97d2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: ae5b68a513b61d7576a7d75ddcec3021da0ee9ff
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32524957"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36018422"
 ---
 # <a name="create-managedebookassignment"></a>managedEBookAssignment の作成
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい [managedEBookAssignment](../resources/intune-books-managedebookassignment.md) オブジェクトを作成します。
 

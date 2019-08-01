@@ -4,12 +4,13 @@ description: Skype for Business を介して組織内で行われた会議セッ
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 6e73319028d48d5e50f7f46de8ffbca64e923427
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: c8840c2b4a34bfd786913cae9697782c1a972e9f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35892537"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36024974"
 ---
 # <a name="reportroot-getskypeforbusinessactivityusercounts"></a>reportRoot: getSkypeForBusinessActivityUserCounts
 

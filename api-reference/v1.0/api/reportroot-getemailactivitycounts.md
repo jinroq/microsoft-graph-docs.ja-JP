@@ -4,12 +4,13 @@ description: 組織内の電子メール アクティビティ (送信、読み�
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 217b1d0783a2b76eb7cf96221eb110f32a36335d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 2dd98b73f3dbba6881bc7e68f4d0657d49e1b3c4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35891839"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36022090"
 ---
 # <a name="reportroot-getemailactivitycounts"></a>reportRoot: getEmailActivityCounts
 

@@ -2,12 +2,15 @@
 title: followupFlag リソースの種類
 description: 'ユーザーが後でフォローアップできるように、アイテムにフラグを設定することができます。 '
 localization_priority: Normal
-ms.openlocfilehash: 60d2e40a10c3ba5b2af9aa798b84aadaebedd57a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: adf67d503fa7576ad7446845a98bf799218f768d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32541998"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030290"
 ---
 # <a name="followupflag-resource-type"></a>followupFlag リソースの種類
 
@@ -17,7 +20,7 @@ ms.locfileid: "32541998"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|CompletedDateTime|[dateTimeTimeZone](datetimetimezone.md)|フォローアップが終了した日時。|
+|completedDateTime|[dateTimeTimeZone](datetimetimezone.md)|フォローアップが終了した日時。|
 |dueDateTime|**dateTimeTimeZone**|フォローアップが終了する予定の日時。|
 |FlagStatus|followupFlagStatus|アイテムのフォローアップ状態。 可能な値は、`notFlagged`、`complete`、`flagged` です。|
 |startDateTime|**dateTimeTimeZone**|フォローアップを開始する予定の日時。|

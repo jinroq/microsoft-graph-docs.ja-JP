@@ -1,19 +1,20 @@
 ---
-title: statemanagementsetting 列挙型
+title: stateManagementSetting 列挙型
 description: 状態管理の設定。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5af70df2d1a873a670d36f02e4da9005a4b6b866
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 0870f6644fa8008617e67a5795a8ea8387627803
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534522"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36031102"
 ---
-# <a name="statemanagementsetting-enum-type"></a>statemanagementsetting 列挙型
+# <a name="statemanagementsetting-enum-type"></a>stateManagementSetting 列挙型
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 状態管理の設定。
 
@@ -21,8 +22,8 @@ ms.locfileid: "32534522"
 |メンバー|値|説明|
 |:---|:---|:---|
 |notConfigured|.0|構成されていません。|
-|ブロック|1 |ブロック.|
-|れる|2 |れる.|
+|ブロック|1-d|ブロック.|
+|れる|pbm-2|れる.|
 
 
 

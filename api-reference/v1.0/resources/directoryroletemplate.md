@@ -4,12 +4,13 @@ description: ディレクトリ ロール テンプレートを表します。 �
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fdacca1f601485e48767364ef99911d061be17e0
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+doc_type: resourcePageType
+ms.openlocfilehash: 5480e32498b4503cf4119b56c1025979c383a21c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34658002"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029450"
 ---
 # <a name="directoryroletemplate-resource-type"></a>directoryRoleTemplate リソース型
 

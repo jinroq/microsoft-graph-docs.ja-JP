@@ -4,12 +4,13 @@ description: 指定した messageRule オブジェクトを削除します。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: ec36f8bdf9155afbd2c91734317e8652459ac895
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 5795652a97433a3059d31412f31229419fa19ec1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35890441"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35976650"
 ---
 # <a name="delete-messagerule"></a>messageRule を削除する
 

@@ -1,14 +1,14 @@
 ---
 title: Microsoft Graph に関する既知の問題
 description: この記事では、Microsoft Graph に関する既知の問題について説明します。最新の更新プログラムについては、「Microsoft Graph の変更ログ」を参照してください。
-author: jthake-msft
+author: ''
 localization_priority: Priority
-ms.openlocfilehash: 2858701aaa795bad617c395c91d15508f6dd650f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 13bea7e626232caabb0eb58dc3b9eb7b6d458e9e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341349"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033258"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph に関する既知の問題
 

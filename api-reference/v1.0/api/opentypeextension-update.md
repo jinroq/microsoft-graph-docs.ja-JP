@@ -3,12 +3,14 @@ title: オープン拡張機能を更新する
 description: 要求本文内のプロパティでオープン拡張機能 (openTypeExtension オブジェクト) を更新します。
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: 80009db1f90393fbb706876264272b581575ce3d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.prod: ''
+doc_type: apiPageType
+ms.openlocfilehash: 6465c6b342032ff1e14e43487b534e39f1443ea0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32572571"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36022636"
 ---
 # <a name="update-open-extension"></a>オープン拡張機能を更新する
 
@@ -25,15 +27,15 @@ ms.locfileid: "32572571"
 
 | サポートされているリソース | 委任 (職場または学校のアカウント) | 委任 (個人用 Microsoft アカウント) | アプリケーション |
 |:-----|:-----|:-----|:-----|
-| [device](../resources/device.md) | Directory.AccessAsUser.All | サポート対象外 | Device.ReadWrite.All |
-| [event](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [device](../resources/device.md) | Directory.AccessAsUser.All | サポートされていません | Device.ReadWrite.All |
+| [イベント](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
 | [グループ](../resources/group.md) | Group.ReadWrite.All | サポート対象外 | Group.ReadWrite.All |
-| [グループ イベント](../resources/event.md) | Group.ReadWrite.All | サポート対象外 | サポート対象外 |
+| [グループ イベント](../resources/event.md) | Group.ReadWrite.All | サポート対象外 | 非サポート |
 | [グループの投稿](../resources/post.md) | Group.ReadWrite.All | サポート対象外 | Group.ReadWrite.All |
 | [メッセージ](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
-| [組織](../resources/organization.md) | Directory.AccessAsUser.All | サポート対象外 | 非サポート |
+| [組織](../resources/organization.md) | Directory.AccessAsUser.All | サポートされていません。 | 非サポート |
 | [個人用連絡先](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
-| [ユーザー](../resources/user.md) | User.ReadWrite.All | User.ReadWrite | User.ReadWrite.All |
+| [user](../resources/user.md) | User.ReadWrite.All | User.ReadWrite | User.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
 要求で、リソース インスタンスを識別し、そのインスタンスの **extensions** ナビゲーション プロパティを使用して拡張機能を識別し、その拡張インスタンスで `PATCH` を行います。
@@ -74,7 +76,7 @@ PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
 
 | 名前       | 値 |
 |:---------------|:----------|
-| @odata.type | microsoft graph の opentypeextension |
+| @odata.type | microsoft.graph.openTypeExtension |
 | extensionName | %unique_string% |
 
 ## <a name="response"></a>応答

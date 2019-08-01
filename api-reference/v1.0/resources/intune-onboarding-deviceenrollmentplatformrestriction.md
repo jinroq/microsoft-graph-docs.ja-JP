@@ -4,16 +4,17 @@ description: プラットフォーム固有の登録の制限
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 306f280928c843b596c57e7bdab454fd138851cc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 380e40f04c21bb4276c859597610fa3af769fd11
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32571199"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36037521"
 ---
 # <a name="deviceenrollmentplatformrestriction-resource-type"></a>deviceEnrollmentPlatformRestriction リソースの種類
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 プラットフォーム固有の登録の制限
 
@@ -25,7 +26,7 @@ ms.locfileid: "32571199"
 |osMinimumVersion|String|サポートされる最小 OS バージョン|
 |osMaximumVersion|文字列型 (String)|サポートされる最大 OS バージョン|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記

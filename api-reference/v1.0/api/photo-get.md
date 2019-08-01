@@ -2,12 +2,15 @@
 title: 写真を取得する
 description: 写真オブジェクトのプロパティとリレーションシップを取得します。
 localization_priority: Normal
-ms.openlocfilehash: c39a303dfbd27d25f18ac74bce796584109fc004
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+author: ''
+ms.prod: ''
+doc_type: apiPageType
+ms.openlocfilehash: 4e27ea00126e101ad21112fb9ed4cf235bf03e44
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35855072"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36022524"
 ---
 # <a name="get-photo"></a>写真を取得する
 

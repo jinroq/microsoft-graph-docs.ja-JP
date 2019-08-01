@@ -4,12 +4,13 @@ description: グラフのポイントにあるすべてのデータ ラベルの
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 48d6cb0d35e82fc0117a24aad1c5e171bc869870
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: e1369ee83abb98d7d673fab4a8f37c2b4c13e317
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569005"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029821"
 ---
 # <a name="chartdatalabels-resource-type"></a>ChartDataLabels リソースの種類
 
@@ -38,7 +39,7 @@ ms.locfileid: "32569005"
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|format|[WorkbookChartDataLabelFormat](chartdatalabelformat.md)|グラフのデータ ラベルの書式 (塗りつぶしとフォントの書式設定を含む) を表します。 値の取得のみ可能です。|
+|format|[WorkbookChartDataLabelFormat](chartdatalabelformat.md)|グラフのデータ ラベルの書式 (塗りつぶしとフォントの書式設定を含む) を表します。 読み取り専用です。|
 
 ## <a name="json-representation"></a>JSON 表記
 

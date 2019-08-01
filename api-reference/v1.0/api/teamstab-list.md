@@ -4,16 +4,16 @@ description: 'チーム内の指定されたチャネルのタブのリストを
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: cb4a90109c58fb30f268bead15a90178d7317a71
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: be29685f40b925e2e4156de4e653d03db6712818
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521748"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027189"
 ---
 # <a name="list-tabs-in-channel"></a>チャネル内のリストタブ
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [チーム](../resources/team.md)内の指定された[チャネル](../resources/channel.md)の[タブ](../resources/teamstab.md)のリストを取得します。 
 
@@ -53,12 +53,12 @@ GET /teams/{id}/channels/{id}/tabs
 #### <a name="request"></a>要求
 要求の例を次に示します。
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs?$expand=teamsApp
+GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs?$expand=teamsApp
 ```
 
 #### <a name="response"></a>応答
 応答の例を次に示します。
->**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
+>**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 ```http
 HTTP/1.1 200 Success
 Content-type: application/json
@@ -105,9 +105,6 @@ Content-type: application/json
   "description": "List all tabs in channel",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/teamstab-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "tocPath": ""
 }
 -->

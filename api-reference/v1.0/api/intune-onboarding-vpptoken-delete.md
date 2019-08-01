@@ -4,16 +4,17 @@ description: vppTokenを削除します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 693edc46517b0b7ecb01fcaf7fe07a0a8975d9cb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: d08bb46b3ab4ffa3012ad45405cb3e34ccc0b953
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561636"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36023987"
 ---
 # <a name="delete-vpptoken"></a>VppTokenを削除します。
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [vppToken](../resources/intune-onboarding-vpptoken.md)を削除します。
 

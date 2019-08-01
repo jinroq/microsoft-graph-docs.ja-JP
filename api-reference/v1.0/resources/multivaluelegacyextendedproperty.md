@@ -2,12 +2,15 @@
 title: multiValueLegacyExtendedProperty リソースの種類
 description: 値のコレクションが含まれる拡張プロパティ。
 localization_priority: Normal
-ms.openlocfilehash: 87823559bad3e149ef3c4d4d6f21f43cf66c41fa
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: e513925810d7357f131790445a015be6c193624f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32580269"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036009"
 ---
 # <a name="multivaluelegacyextendedproperty-resource-type"></a>multiValueLegacyExtendedProperty リソースの種類
 
@@ -28,7 +31,7 @@ ms.locfileid: "32580269"
 |id|string|プロパティ識別子。読み取り専用です。|
 |value|string collection|プロパティ値のコレクション。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 

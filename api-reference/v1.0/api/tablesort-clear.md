@@ -4,12 +4,13 @@ description: テーブルに現在設定されている並べ替えをクリア�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: c7461529dfdde7c84816ee34d761debc93718f40
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 39cc8f742da7a31edc45d3e0edb172b86e88ab11
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35894157"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36024300"
 ---
 # <a name="tablesort-clear"></a>TableSort: clear　
 

@@ -4,12 +4,13 @@ description: この API を使用して、新しいグラフを作成します�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: cb1cf41c5ccbfe595526cf425a6f7c89e24d94fd
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 31d38873d49a65c6c16153210c95bcc6f807ef37
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35884301"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36026153"
 ---
 # <a name="create-chart"></a>グラフを作成します。
 

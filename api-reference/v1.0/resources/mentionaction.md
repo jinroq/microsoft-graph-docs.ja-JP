@@ -5,12 +5,13 @@ title: mentionAction リソースの種類
 description: MentionAction オブジェクトは、活動中に説明されたユーザーに関する情報を提供します。
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: d8c09de2a36be2cd83d5e33cf2ed948c25819fe4
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+doc_type: resourcePageType
+ms.openlocfilehash: 511519439f4079b2d7d618767855582f201c00f7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33970778"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036184"
 ---
 # <a name="mentionaction-resource-type"></a>mentionAction リソースの種類
 

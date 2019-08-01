@@ -2,12 +2,15 @@
 title: Microsoft Graph API を使用してプロジェクトローマを操作する
 description: プロジェクトローマは、クロスデバイスエクスペリエンスプラットフォームを構築するための Microsoft イニシアティブです。 プロジェクトローマは、ローカルクライアントまたはサービスのアプリが、クライアントデバイスでのサインインに使用したのと同じ Microsoft アカウントを使用してサインインしたときに、リモートホスト上のアプリとサービスを操作することを可能にします。 これにより、デバイスではなくユーザーのタスクを中心としたクロスデバイスとクロスプラットフォームのエクスペリエンスをプログラミングできます。
 localization_priority: Normal
-ms.openlocfilehash: d103bb68560a39cc4491460969a36bb81bb6da44
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: conceptualPageType
+ms.openlocfilehash: 03b0aefabdb793cc723b1968a900a35800e04a01
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579672"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035050"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-project-rome"></a>Microsoft Graph API を使用してプロジェクトローマを操作する
 
@@ -27,7 +30,7 @@ Microsoft Graph のアクティビティを使用すると、デバイスやプ�
 
 アプリケーションがユーザーアクティビティオブジェクトを公開すると、そのオブジェクトが Windows の新しい UI サーフェスの一部に表示されます。たとえば、Cortana の通知とタイムラインです。 アクティビティオブジェクトでは、リッチメタデータ (アクティビティを正しいコンテキストで表示できるようにする) とリッチビジュアル ([アダプティブカード](https://adaptivecards.io/)マークアップを使用) の両方を指定できます。
 
-ユーザーアクティビティを作成および取得するには、次の Microsoft Graph api を使用できます。
+ユーザーアクティビティを作成および取得するには、次の Microsoft Graph Api を使用できます。
 
 - [アクティビティを作成または置換する](../api/projectrome-put-activity.md)
 - [アクティビティを取得する](../api/projectrome-get-activities.md)

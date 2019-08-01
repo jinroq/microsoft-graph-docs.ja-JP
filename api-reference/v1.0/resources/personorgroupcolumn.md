@@ -4,12 +4,14 @@ ms.date: 09/11/2017
 title: PersonOrGroupColumn
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 5ff8d61a2796edd615a66416b4f8f4d6d565909a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: columnDefinition リソースの PersonOrGroupColumn は、列の値がディレクトリから選択した個人またはグループを表すことを示しています。
+doc_type: resourcePageType
+ms.openlocfilehash: d8ce31e7eb044e588f73afefb2b370e161fa7cdf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462474"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035519"
 ---
 # <a name="personorgroupcolumn-resource-type"></a>PersonOrGroupColumn リソースの種類
 
@@ -36,7 +38,7 @@ ms.locfileid: "32462474"
 | **displayAs**              | string  | 選択された個人またはグループについての情報を表示する方法。 以下を参照してください。
 | **chooseFromType**         | string  | 個人のみ選択、または個人とグループの選択が可能かどうか。 `peopleAndGroups` または `peopleOnly` のいずれかでなければなりません。
 
-## <a name="displayas-options"></a>displayas オプション
+## <a name="displayas-options"></a>DisplayAs オプション
 
 | DisplayAs 値               | 説明
 |:------------------------------|:-----------------------

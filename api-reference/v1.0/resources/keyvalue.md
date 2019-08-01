@@ -2,12 +2,15 @@
 title: keyValue リソースの種類
 description: 標準のキーと値のペアのリソースの種類。
 localization_priority: Normal
-ms.openlocfilehash: aa026f36d69e894e056f21ba19865c730ec5b643
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 7a3008b328337e4dd4d816f4b0d7432b7e24c08d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629272"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036492"
 ---
 # <a name="keyvalue-resource-type"></a>keyValue リソースの種類
 

@@ -4,16 +4,17 @@ description: Azure Active Directory ユーザー オブジェクトを表しま�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: a7a6c87b5c073e00b660db807ff38c454c302d94
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: d8fc3604329a5062a8fe1afb90c2ac64f52f0bed
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32571850"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036835"
 ---
 # <a name="user-resource-type"></a>user リソースの種類
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 Azure Active Directory ユーザー オブジェクトを表します。
 
@@ -23,10 +24,10 @@ Azure Active Directory ユーザー オブジェクトを表します。
 |[ユーザーオブジェクトを一覧表示](../api/intune-shared-user-list.md)します。|[user](../resources/intune-shared-user.md) コレクション|[user](../resources/intune-shared-user.md) オブジェクトのプロパティとリレーションシップをリストします。|
 |[ユーザー](../api/intune-shared-user-get.md)オブジェクトを取得します。|[user](../resources/intune-shared-user.md) コレクション|[user](../resources/intune-shared-user.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
 |[ユーザー](../api/intune-shared-user-create.md)オブジェクトを作成します。|[user](../resources/intune-shared-user.md) コレクション|新しい [user](../resources/intune-shared-user.md) オブジェクトを作成します。|
-|[ユーザーを削除](../api/intune-shared-user-delete.md)します。|なし|[user](../resources/intune-shared-user.md) を削除します。|
+|[ユーザーを削除](../api/intune-shared-user-delete.md)します。|None|[user](../resources/intune-shared-user.md) を削除します。|
 |[ユーザー](../api/intune-shared-user-update.md)オブジェクトを更新します。|[user](../resources/intune-shared-user.md)|[user](../resources/intune-shared-user.md) オブジェクトのプロパティを更新します。|
 |**デバイスの管理**|
-|[removeAllDevicesFromManagement アクション](../api/intune-shared-user-removealldevicesfrommanagement.md)|なし|対象ユーザーの管理からすべてのデバイスを破棄します|
+|[removeAllDevicesFromManagement アクション](../api/intune-shared-user-removealldevicesfrommanagement.md)|None|対象ユーザーの管理からすべてのデバイスを破棄します|
 |**モバイル アプリの管理 (MAM)**|
 |[getManagedAppDiagnosticStatuses 関数](../api/intune-shared-user-getmanagedappdiagnosticstatuses.md)|[managedAppDiagnosticStatus](../resources/intune-mam-managedappdiagnosticstatus.md) コレクション|特定のユーザーの診断検証状態を取得します。|
 |[getManagedAppPolicies 関数](../api/intune-shared-user-getmanagedapppolicies.md)|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md) コレクション|特定のユーザーのアプリ制限を取得します。|

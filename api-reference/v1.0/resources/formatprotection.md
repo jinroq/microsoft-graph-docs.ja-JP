@@ -2,12 +2,15 @@
 title: FormatProtection リソースの種類
 description: 範囲オブジェクトの書式保護を表します。
 localization_priority: Normal
-ms.openlocfilehash: e4c32c8be8f6ef3aeaaf763ee88998bcbe235503
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: babd1192e216179c59b40d78175f24b0e8366d71
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32542054"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032439"
 ---
 # <a name="formatprotection-resource-type"></a>FormatProtection リソースの種類
 

@@ -4,16 +4,17 @@ description: 新しい deviceInstallState オブジェクトを作成します�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 616f300d96026e090c74b6da03ece4b45a7199f2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: d7a0bc5a820786e7f7dc20d758d84f42166669d4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570590"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013613"
 ---
 # <a name="create-deviceinstallstate"></a>deviceInstallState の作成
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい [deviceInstallState](../resources/intune-books-deviceinstallstate.md) オブジェクトを作成します。
 

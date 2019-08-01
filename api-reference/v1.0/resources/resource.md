@@ -2,12 +2,15 @@
 title: OneNoteResource リソースの種類
 description: 'OneNote ページ上の画像またはその他のファイルリソース。 '
 localization_priority: Normal
-ms.openlocfilehash: ed2fb0dd4b6e68c24da1f2441a157f734a5025f6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: cd8ea18047aa3f24343411f8dafd7a79357da87b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579325"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034693"
 ---
 # <a name="onenoteresource-resource-type"></a>OneNoteResource リソースの種類
 
@@ -30,7 +33,7 @@ OneNote ページ上の画像またはその他のファイルリソース。
 }
 ```
 
-特定のリソースのバイナリデータを取得するために、get 要求をリソースの`content`エンドポイントに送信します。
+特定のリソースのバイナリデータを取得するために、GET 要求をリソースの`content`エンドポイントに送信します。
 
 ```
 GET ../onenote/resources/{id}/content
@@ -51,7 +54,7 @@ GET ../onenote/pages/{id}/content
     data-fullres-src-type="media-type" ... />
 ```
 
-`object`タグ (PDF、.docx、PNG などのファイルを表す) には、 `data`属性のファイルリソースのエンドポイントが含まれています。
+`object`タグ (PDF、.DOCX、PNG などのファイルを表す) には、 `data`属性のファイルリソースのエンドポイントが含まれています。
 
 ```
 <object

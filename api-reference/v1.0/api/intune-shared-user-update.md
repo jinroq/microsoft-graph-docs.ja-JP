@@ -4,16 +4,17 @@ description: ユーザー オブジェクトのプロパティを更新します
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 8fb82586ea0fda24297179963b730a097b2d81fa
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 45307fcf1ff7f784a8fabcf3c6883b1a2faae258
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576648"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025758"
 ---
 # <a name="update-user"></a>ユーザーを更新する
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [user](../resources/intune-shared-user.md) オブジェクトのプロパティを更新します。
 

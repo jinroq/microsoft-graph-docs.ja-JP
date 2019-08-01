@@ -4,12 +4,13 @@ description: LicenseDetails オブジェクトの一覧を取得します。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f5fd5c332983e20b4988205eb01a150ce59c625b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: d1d9e245f6986a0a6ea252b2f908009366313ca8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35888878"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36026888"
 ---
 # <a name="list-licensedetails"></a>licenseDetails を一覧表示する
 

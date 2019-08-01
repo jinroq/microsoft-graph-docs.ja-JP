@@ -4,12 +4,13 @@ description: '学校内のクラスを表します。 **educationClass** リソ�
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: c5b145d12dd99293eef9c338ff840d5781c5ef3f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 1dc246c3a8f48980b65c896bba4b6fbe1ae66809
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562714"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029331"
 ---
 # <a name="educationclass-resource-type"></a>educationClass リソース タイプ
 
@@ -28,15 +29,15 @@ ms.locfileid: "32562714"
 |[Add teacher](../api/educationclass-post-teachers.md) |[educationUser](educationuser.md)| teachers ナビゲーション プロパティに投稿することで、クラスの新しい **educationUser** を追加します。|
 |[List teachers](../api/educationclass-list-teachers.md) |[educationUser](educationuser.md) コレクション| クラスの教師一覧を取得します。|
 |[Remove teacher](../api/educationclass-delete-teachers.md) |[educationUser](educationuser.md)| teachers ナビゲーション プロパティによって、クラスから **educationUser** を削除します。|
-|[Get group](../api/educationclass-get-group.md) |[group](group.md)| この **educationClass** に対応する Office 365 **group**を取得します。|
+|[グループを取得する](../api/educationclass-get-group.md) |[group](group.md)| この **educationClass** に対応する Office 365 **group**を取得します。|
 |[Update](../api/educationclass-update.md) | [educationClass](educationclass.md)    |**educationClass** オブジェクトを更新します。 |
-|[削除](../api/educationclass-delete.md) | なし |**educationClass** オブジェクトを削除します。 |
+|[Delete](../api/educationclass-delete.md) | None |**educationClass** オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|id| String| クラスの一意の識別子。|
-|説明|String| クラスの説明。|
+|id| 文字列| クラスの一意の識別子。|
+|description|String| クラスの説明。|
 |displayName|文字列| クラスの名前。|
 |mailNickname|String| すべてのメンバーに電子メールを送信する際のメール名 (この機能が有効な場合)。 |
 |createdBy|[identitySet](identityset.md)| クラスを作成したエンティティ。 |
@@ -49,10 +50,10 @@ ms.locfileid: "32562714"
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|members|[educationUser](../resources/educationuser.md) コレクション| クラスのすべてのユーザー。 Null 許容型です。|
+|members|[educationUser](../resources/educationuser.md) コレクション| クラスのすべてのユーザー。 Null 許容型。|
 |schools|[educationSchool](../resources/educationschool.md) コレクション| このクラスに関連付けられているすべての学校。 Null 許容型。|
 |teachers|[educationUser](../resources/educationuser.md) コレクション|  このクラスのすべての教師。 Null 許容型。|
-|グループ|[グループ](../resources/group.md)| このクラスに対応するディレクトリグループ。|
+|group|[group](../resources/group.md)| このクラスに対応するディレクトリグループ。|
 
 ## <a name="json-representation"></a>JSON 表記
 

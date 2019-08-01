@@ -6,12 +6,13 @@ title: サイトを検索する
 description: 提供されたキーワードに一致するサイトの SharePoint テナント全体を検索します。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 9815eb67128e5b13611d142f2c595efb169b80e7
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 800894f8db91392df040311b9c929aebda2f29d2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35892219"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36024680"
 ---
 # <a name="search-for-sites"></a>サイトを検索する
 

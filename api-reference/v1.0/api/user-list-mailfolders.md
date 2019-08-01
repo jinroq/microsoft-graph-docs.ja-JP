@@ -3,13 +3,14 @@ title: mailFolders を一覧表示する　
 description: 'サインイン中のユーザーのルート フォルダーからメール フォルダー コレクションを取得します。 '
 author: angelgolfer-ms
 localization_priority: Priority
+doc_type: apiPageType
 ms.prod: outlook
-ms.openlocfilehash: 30ade50ea548e9310ca5971c8ba4b7b1212d096d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 753123c2cee6ddf670c983f2c56f5e8f53877716
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35893842"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36026874"
 ---
 # <a name="list-mailfolders"></a>mailFolders を一覧表示する　
 

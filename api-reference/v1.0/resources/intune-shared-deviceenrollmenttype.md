@@ -4,16 +4,17 @@ description: モバイルデバイスを管理に追加する方法には、次�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 62ff257e2f758776265f52a0d64cde52dbc26115
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: afb007893ac0b41d4439635ed78b528058d41364
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32585364"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036961"
 ---
 # <a name="deviceenrollmenttype-enum-type"></a>deviceEnrollmentType 列挙型
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 モバイルデバイスを管理に追加する方法には、次のようなものがあります。
 
@@ -21,15 +22,15 @@ ms.locfileid: "32585364"
 |メンバー|値|説明|
 |:---|:---|:---|
 |不明|.0|既定値。登録の種類は収集されませんでした。|
-|userenrollment|1-d|byod channel 経由のユーザー主導型の登録。|
+|userEnrollment|1-d|BYOD channel 経由のユーザー主導型の登録。|
 |deviceEnrollmentManager|pbm-2|デバイス登録マネージャーアカウントを使用したユーザー登録。|
 |appleBulkWithUser|1/3|ユーザーチャレンジを使用した Apple 一括登録。 (DEP、Apple Configurator)|
 |appleBulkWithoutUser|2/4|ユーザーチャレンジなしの Apple 一括登録。 (DEP、Apple Configurator、モバイル構成)|
 |windowsAzureADJoin|5|Windows 10 Azure AD Join。|
-|windowsbulkuserless|シックス|Windows 10 証明書を使用した ICD による一括登録。|
-|windowsautoenrollment 登録|7|Windows 10 の自動登録。 (作業アカウントの追加)|
-|windowsbulkazuredomainjoin|~|Windows 10 一括 Azure AD Join。|
-|windowsCoManagement|i-9|Windows 10 の共同管理は、自動操縦またはグループポリシーによって開始されます。|
+|windowsBulkUserless|シックス|Windows 10 証明書を使用した ICD による一括登録。|
+|windowsAutoEnrollment 登録|7|Windows 10 の自動登録。 (作業アカウントの追加)|
+|windowsBulkAzureDomainJoin|8 |Windows 10 一括 Azure AD Join。|
+|windowsCoManagement|9 |Windows 10 の共同管理は、自動操縦またはグループポリシーによって開始されます。|
 
 
 

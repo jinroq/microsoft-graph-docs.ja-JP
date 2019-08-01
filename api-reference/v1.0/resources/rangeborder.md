@@ -4,12 +4,13 @@ description: オブジェクトの輪郭を表します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 9c32264311400951152f892e6f88d70645f47064
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 8b5a12c05bed39363d8a8a01eef749f2e88b929e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579488"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034931"
 ---
 # <a name="rangeborder-resource-type"></a>RangeBorder リソースの種類
 
@@ -29,12 +30,12 @@ ms.locfileid: "32579488"
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |color|文字列|枠線の色を表す HTML カラー コード。形式は #RRGGBB (例: "FFA500")、または名前付きの HTML 色 (例: "オレンジ") です。|
-|id|string|罫線の識別子を表します。 使用可能な値は`EdgeTop`、 `EdgeBottom`、 `EdgeLeft` `EdgeRight` `InsideVertical` `InsideHorizontal` `DiagonalDown`、、、、、 `DiagonalUp`、です。 読み取り専用。|
-|sideindex|string|罫線の特定の辺を表す定数値。 使用可能な値は`EdgeTop`、 `EdgeBottom`、 `EdgeLeft` `EdgeRight` `InsideVertical` `InsideHorizontal` `DiagonalDown`、、、、、 `DiagonalUp`、です。 読み取り専用です。|
+|id|string|罫線の識別子を表します。 使用可能な値は`EdgeTop`、 `EdgeBottom`、 `EdgeLeft` `EdgeRight` `InsideVertical` `InsideHorizontal` `DiagonalDown`、、、、、 `DiagonalUp`、です。 読み取り専用です。|
+|sideIndex|string|罫線の特定の辺を表す定数値。 使用可能な値は`EdgeTop`、 `EdgeBottom`、 `EdgeLeft` `EdgeRight` `InsideVertical` `InsideHorizontal` `DiagonalDown`、、、、、 `DiagonalUp`、です。 読み取り専用です。|
 |style|string|罫線の線スタイルを指定する、線スタイル定数のいずれか 1 つ。 使用可能な値は`None`、 `Continuous`、 `Dash` `DashDot` `DashDotDot` `Dot` `Double`、、、、、 `SlantDashDot`、です。|
-|weight|string|範囲を取り囲む罫線の太さを指定します。 使用可能な値は`Hairline`、 `Thin`、 `Medium`、 `Thick`、です。|
+|weight|string|範囲を取り囲む罫線の太さを指定します。 使用可能な値: `Hairline`、`Thin`、`Medium`、`Thick`。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 

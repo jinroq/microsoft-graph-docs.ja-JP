@@ -1,17 +1,18 @@
 ---
-title: alerttrigger リソースの種類
+title: alertTrigger リソースの種類
 description: 検出をトリガーしたプロパティに関する情報が含まれています (アラートエンティティにプロパティが存在します)。
 author: preetikr
 localization_priority: Normal
 ms.prod: security
-ms.openlocfilehash: 3a2f6818bad0c5600e4b2a2a2682707643d1900c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 49a262e1ab0aa046f7326b935b8437824dcf8c08
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569467"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030115"
 ---
-# <a name="alerttrigger-resource-type"></a>alerttrigger リソースの種類
+# <a name="alerttrigger-resource-type"></a>alertTrigger リソースの種類
 
 検出をトリガーしたプロパティに関する情報が含まれています (アラートエンティティにプロパティが存在します)。
 
