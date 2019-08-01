@@ -4,25 +4,26 @@ description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e0b26daab72e7910f0796cee226f8c722cee6822
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 75150c1944043e3c3c9e1f08fb89a8b7ac4b2bc7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32553926"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36037087"
 ---
-# <a name="remoteassistanceonboardingstatus-enum-type"></a><span data-ttu-id="b4421-103">remoteAssistanceOnboardingStatus 列挙型</span><span class="sxs-lookup"><span data-stu-id="b4421-103">remoteAssistanceOnboardingStatus enum type</span></span>
+# <a name="remoteassistanceonboardingstatus-enum-type"></a><span data-ttu-id="6c145-103">remoteAssistanceOnboardingStatus 列挙型</span><span class="sxs-lookup"><span data-stu-id="6c145-103">remoteAssistanceOnboardingStatus enum type</span></span>
 
-> <span data-ttu-id="b4421-104">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="b4421-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="6c145-104">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="6c145-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="b4421-105">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="b4421-105">Not yet documented</span></span>
+<span data-ttu-id="6c145-105">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="6c145-105">Not yet documented</span></span>
 
-## <a name="members"></a><span data-ttu-id="b4421-106">メンバー</span><span class="sxs-lookup"><span data-stu-id="b4421-106">Members</span></span>
-|<span data-ttu-id="b4421-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="b4421-107">Member</span></span>|<span data-ttu-id="b4421-108">値</span><span class="sxs-lookup"><span data-stu-id="b4421-108">Value</span></span>|<span data-ttu-id="b4421-109">説明</span><span class="sxs-lookup"><span data-stu-id="b4421-109">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="6c145-106">メンバー</span><span class="sxs-lookup"><span data-stu-id="6c145-106">Members</span></span>
+|<span data-ttu-id="6c145-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="6c145-107">Member</span></span>|<span data-ttu-id="6c145-108">値</span><span class="sxs-lookup"><span data-stu-id="6c145-108">Value</span></span>|<span data-ttu-id="6c145-109">説明</span><span class="sxs-lookup"><span data-stu-id="6c145-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="b4421-110">notOnboarded</span><span class="sxs-lookup"><span data-stu-id="b4421-110">notOnboarded</span></span>|<span data-ttu-id="b4421-111">.0</span><span class="sxs-lookup"><span data-stu-id="b4421-111">0</span></span>|<span data-ttu-id="b4421-112">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="b4421-112">Not yet documented</span></span>|
-|<span data-ttu-id="b4421-113">契約</span><span class="sxs-lookup"><span data-stu-id="b4421-113">onboarding</span></span>|<span data-ttu-id="b4421-114">1 </span><span class="sxs-lookup"><span data-stu-id="b4421-114">1</span></span>|<span data-ttu-id="b4421-115">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="b4421-115">Not yet documented</span></span>|
-|<span data-ttu-id="b4421-116">利用</span><span class="sxs-lookup"><span data-stu-id="b4421-116">onboarded</span></span>|<span data-ttu-id="b4421-117">2 </span><span class="sxs-lookup"><span data-stu-id="b4421-117">2</span></span>|<span data-ttu-id="b4421-118">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="b4421-118">Not yet documented</span></span>|
+|<span data-ttu-id="6c145-110">notOnboarded</span><span class="sxs-lookup"><span data-stu-id="6c145-110">notOnboarded</span></span>|<span data-ttu-id="6c145-111">.0</span><span class="sxs-lookup"><span data-stu-id="6c145-111">0</span></span>|<span data-ttu-id="6c145-112">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="6c145-112">Not yet documented</span></span>|
+|<span data-ttu-id="6c145-113">契約</span><span class="sxs-lookup"><span data-stu-id="6c145-113">onboarding</span></span>|<span data-ttu-id="6c145-114">1-d</span><span class="sxs-lookup"><span data-stu-id="6c145-114">1</span></span>|<span data-ttu-id="6c145-115">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="6c145-115">Not yet documented</span></span>|
+|<span data-ttu-id="6c145-116">利用</span><span class="sxs-lookup"><span data-stu-id="6c145-116">onboarded</span></span>|<span data-ttu-id="6c145-117">pbm-2</span><span class="sxs-lookup"><span data-stu-id="6c145-117">2</span></span>|<span data-ttu-id="6c145-118">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="6c145-118">Not yet documented</span></span>|
 
 
 

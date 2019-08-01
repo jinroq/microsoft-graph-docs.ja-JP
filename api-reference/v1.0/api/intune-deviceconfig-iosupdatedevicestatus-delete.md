@@ -4,29 +4,30 @@ description: iosUpdateDeviceStatus の削除
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bc1030d43de700f43809a0f94a8c945dc03cf49a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 49eb8330028f3ffbdafced80e01ad1397182b98a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549847"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36017190"
 ---
-# <a name="delete-iosupdatedevicestatus"></a><span data-ttu-id="b0a73-103">iosUpdateDeviceStatus の削除</span><span class="sxs-lookup"><span data-stu-id="b0a73-103">Delete iosUpdateDeviceStatus</span></span>
+# <a name="delete-iosupdatedevicestatus"></a><span data-ttu-id="5d222-103">iosUpdateDeviceStatus の削除</span><span class="sxs-lookup"><span data-stu-id="5d222-103">Delete iosUpdateDeviceStatus</span></span>
 
-> <span data-ttu-id="b0a73-104">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="b0a73-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="5d222-104">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="5d222-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="b0a73-105">[iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md) の削除</span><span class="sxs-lookup"><span data-stu-id="b0a73-105">Deletes a [iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md).</span></span>
+<span data-ttu-id="5d222-105">[iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md) の削除</span><span class="sxs-lookup"><span data-stu-id="5d222-105">Deletes a [iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md).</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="b0a73-106">前提条件</span><span class="sxs-lookup"><span data-stu-id="b0a73-106">Prerequisites</span></span>
-<span data-ttu-id="b0a73-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b0a73-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="5d222-106">前提条件</span><span class="sxs-lookup"><span data-stu-id="5d222-106">Prerequisites</span></span>
+<span data-ttu-id="5d222-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5d222-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b0a73-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="b0a73-109">Permission type</span></span>|<span data-ttu-id="b0a73-110">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="b0a73-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="5d222-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="5d222-109">Permission type</span></span>|<span data-ttu-id="5d222-110">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="5d222-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="b0a73-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="b0a73-111">Delegated (work or school account)</span></span>|<span data-ttu-id="b0a73-112">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b0a73-112">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="b0a73-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="b0a73-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="b0a73-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b0a73-114">Not supported.</span></span>|
-|<span data-ttu-id="b0a73-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="b0a73-115">Application</span></span>|<span data-ttu-id="b0a73-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b0a73-116">Not supported.</span></span>|
+|<span data-ttu-id="5d222-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="5d222-111">Delegated (work or school account)</span></span>|<span data-ttu-id="5d222-112">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5d222-112">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="5d222-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="5d222-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="5d222-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="5d222-114">Not supported.</span></span>|
+|<span data-ttu-id="5d222-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="5d222-115">Application</span></span>|<span data-ttu-id="5d222-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="5d222-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="b0a73-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="b0a73-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5d222-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="5d222-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -35,28 +36,28 @@ ms.locfileid: "32549847"
 DELETE /deviceManagement/iosUpdateStatuses/{iosUpdateDeviceStatusId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="b0a73-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b0a73-118">Request headers</span></span>
-|<span data-ttu-id="b0a73-119">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b0a73-119">Header</span></span>|<span data-ttu-id="b0a73-120">値</span><span class="sxs-lookup"><span data-stu-id="b0a73-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="5d222-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="5d222-118">Request headers</span></span>
+|<span data-ttu-id="5d222-119">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="5d222-119">Header</span></span>|<span data-ttu-id="5d222-120">値</span><span class="sxs-lookup"><span data-stu-id="5d222-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="b0a73-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="b0a73-121">Authorization</span></span>|<span data-ttu-id="b0a73-122">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="b0a73-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="b0a73-123">承諾</span><span class="sxs-lookup"><span data-stu-id="b0a73-123">Accept</span></span>|<span data-ttu-id="b0a73-124">application/json</span><span class="sxs-lookup"><span data-stu-id="b0a73-124">application/json</span></span>|
+|<span data-ttu-id="5d222-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="5d222-121">Authorization</span></span>|<span data-ttu-id="5d222-122">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="5d222-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="5d222-123">承諾</span><span class="sxs-lookup"><span data-stu-id="5d222-123">Accept</span></span>|<span data-ttu-id="5d222-124">application/json</span><span class="sxs-lookup"><span data-stu-id="5d222-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="b0a73-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="b0a73-125">Request body</span></span>
-<span data-ttu-id="b0a73-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="b0a73-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5d222-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="5d222-125">Request body</span></span>
+<span data-ttu-id="5d222-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="5d222-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="b0a73-127">応答</span><span class="sxs-lookup"><span data-stu-id="b0a73-127">Response</span></span>
-<span data-ttu-id="b0a73-128">成功した場合、このメソッドは `204 No Content` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="b0a73-128">If successful, this method returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="5d222-127">応答</span><span class="sxs-lookup"><span data-stu-id="5d222-127">Response</span></span>
+<span data-ttu-id="5d222-128">成功した場合、このメソッドは `204 No Content` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="5d222-128">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b0a73-129">例</span><span class="sxs-lookup"><span data-stu-id="b0a73-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="5d222-129">例</span><span class="sxs-lookup"><span data-stu-id="5d222-129">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="b0a73-130">要求</span><span class="sxs-lookup"><span data-stu-id="b0a73-130">Request</span></span>
-<span data-ttu-id="b0a73-131">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="b0a73-131">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="5d222-130">要求</span><span class="sxs-lookup"><span data-stu-id="5d222-130">Request</span></span>
+<span data-ttu-id="5d222-131">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="5d222-131">Here is an example of the request.</span></span>
 ``` http
 DELETE https://graph.microsoft.com/v1.0/deviceManagement/iosUpdateStatuses/{iosUpdateDeviceStatusId}
 ```
 
-### <a name="response"></a><span data-ttu-id="b0a73-132">応答</span><span class="sxs-lookup"><span data-stu-id="b0a73-132">Response</span></span>
-<span data-ttu-id="b0a73-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="b0a73-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="5d222-132">応答</span><span class="sxs-lookup"><span data-stu-id="5d222-132">Response</span></span>
+<span data-ttu-id="5d222-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="5d222-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```

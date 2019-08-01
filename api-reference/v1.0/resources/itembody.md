@@ -2,26 +2,29 @@
 title: itemBody リソースの種類
 description: メッセージ、イベント、またはグループの投稿など、アイテムの本文のプロパティを表します。
 localization_priority: Normal
-ms.openlocfilehash: df2e7e8cea9e1b2e6a6d1011029a1898e2794f45
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 406a753ef8b58ba5ff19f7669239c3d9abb860c5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32585308"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036555"
 ---
-# <a name="itembody-resource-type"></a><span data-ttu-id="687b3-103">itemBody リソースの種類</span><span class="sxs-lookup"><span data-stu-id="687b3-103">itemBody resource type</span></span>
+# <a name="itembody-resource-type"></a><span data-ttu-id="0da96-103">itemBody リソースの種類</span><span class="sxs-lookup"><span data-stu-id="0da96-103">itemBody resource type</span></span>
 
-<span data-ttu-id="687b3-104">メッセージ、イベント、またはグループの投稿など、アイテムの本文のプロパティを表します。</span><span class="sxs-lookup"><span data-stu-id="687b3-104">Represents properties of the body of an item, such as a message, event or group post.</span></span>
+<span data-ttu-id="0da96-104">メッセージ、イベント、またはグループの投稿など、アイテムの本文のプロパティを表します。</span><span class="sxs-lookup"><span data-stu-id="0da96-104">Represents properties of the body of an item, such as a message, event or group post.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="687b3-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="687b3-105">Properties</span></span>
-| <span data-ttu-id="687b3-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="687b3-106">Property</span></span>     | <span data-ttu-id="687b3-107">型</span><span class="sxs-lookup"><span data-stu-id="687b3-107">Type</span></span>   |<span data-ttu-id="687b3-108">説明</span><span class="sxs-lookup"><span data-stu-id="687b3-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="0da96-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="0da96-105">Properties</span></span>
+| <span data-ttu-id="0da96-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="0da96-106">Property</span></span>     | <span data-ttu-id="0da96-107">型</span><span class="sxs-lookup"><span data-stu-id="0da96-107">Type</span></span>   |<span data-ttu-id="0da96-108">説明</span><span class="sxs-lookup"><span data-stu-id="0da96-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="687b3-109">content</span><span class="sxs-lookup"><span data-stu-id="687b3-109">content</span></span>|<span data-ttu-id="687b3-110">String</span><span class="sxs-lookup"><span data-stu-id="687b3-110">String</span></span>|<span data-ttu-id="687b3-111">アイテムのコンテンツ。</span><span class="sxs-lookup"><span data-stu-id="687b3-111">The content of the item.</span></span>|
-|<span data-ttu-id="687b3-112">contentType</span><span class="sxs-lookup"><span data-stu-id="687b3-112">contentType</span></span>|<span data-ttu-id="687b3-113">bodyType</span><span class="sxs-lookup"><span data-stu-id="687b3-113">bodyType</span></span>|<span data-ttu-id="687b3-114">コンテンツの種類。</span><span class="sxs-lookup"><span data-stu-id="687b3-114">The type of the content.</span></span> <span data-ttu-id="687b3-115">可能な値は、`text` と `HTML` です。</span><span class="sxs-lookup"><span data-stu-id="687b3-115">Possible values are `text` and `HTML`.</span></span>|
+|<span data-ttu-id="0da96-109">content</span><span class="sxs-lookup"><span data-stu-id="0da96-109">content</span></span>|<span data-ttu-id="0da96-110">String</span><span class="sxs-lookup"><span data-stu-id="0da96-110">String</span></span>|<span data-ttu-id="0da96-111">アイテムのコンテンツ。</span><span class="sxs-lookup"><span data-stu-id="0da96-111">The content of the item.</span></span>|
+|<span data-ttu-id="0da96-112">contentType</span><span class="sxs-lookup"><span data-stu-id="0da96-112">contentType</span></span>|<span data-ttu-id="0da96-113">bodyType</span><span class="sxs-lookup"><span data-stu-id="0da96-113">bodyType</span></span>|<span data-ttu-id="0da96-114">コンテンツの種類。</span><span class="sxs-lookup"><span data-stu-id="0da96-114">The type of the content.</span></span> <span data-ttu-id="0da96-115">可能な値は、`text` と `HTML` です。</span><span class="sxs-lookup"><span data-stu-id="0da96-115">Possible values are `text` and `HTML`.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="687b3-116">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="687b3-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="0da96-116">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="0da96-116">JSON representation</span></span>
 
-<span data-ttu-id="687b3-117">以下は、リソースの JSON 表記です</span><span class="sxs-lookup"><span data-stu-id="687b3-117">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="0da96-117">以下は、リソースの JSON 表記です</span><span class="sxs-lookup"><span data-stu-id="0da96-117">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
