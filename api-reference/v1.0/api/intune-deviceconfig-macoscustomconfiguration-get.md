@@ -4,29 +4,30 @@ description: macOSCustomConfiguration オブジェクトのプロパティとリ
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 518de1a8e9710109b672a1b231852cfb92dedafd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 768a93bcde5bfe4924236b076b3767295a83fed0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581290"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35997499"
 ---
-# <a name="get-macoscustomconfiguration"></a><span data-ttu-id="b8dce-103">macOSCustomConfiguration の取得</span><span class="sxs-lookup"><span data-stu-id="b8dce-103">Get macOSCustomConfiguration</span></span>
+# <a name="get-macoscustomconfiguration"></a><span data-ttu-id="43879-103">macOSCustomConfiguration の取得</span><span class="sxs-lookup"><span data-stu-id="43879-103">Get macOSCustomConfiguration</span></span>
 
-> <span data-ttu-id="b8dce-104">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="b8dce-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="43879-104">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="43879-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="b8dce-105">[macOSCustomConfiguration](../resources/intune-deviceconfig-macoscustomconfiguration.md) オブジェクトのプロパティとリレーションシップを読み取ります。</span><span class="sxs-lookup"><span data-stu-id="b8dce-105">Read properties and relationships of the [macOSCustomConfiguration](../resources/intune-deviceconfig-macoscustomconfiguration.md) object.</span></span>
+<span data-ttu-id="43879-105">[macOSCustomConfiguration](../resources/intune-deviceconfig-macoscustomconfiguration.md) オブジェクトのプロパティとリレーションシップを読み取ります。</span><span class="sxs-lookup"><span data-stu-id="43879-105">Read properties and relationships of the [macOSCustomConfiguration](../resources/intune-deviceconfig-macoscustomconfiguration.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="b8dce-106">前提条件</span><span class="sxs-lookup"><span data-stu-id="b8dce-106">Prerequisites</span></span>
-<span data-ttu-id="b8dce-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b8dce-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="43879-106">前提条件</span><span class="sxs-lookup"><span data-stu-id="43879-106">Prerequisites</span></span>
+<span data-ttu-id="43879-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="43879-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b8dce-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="b8dce-109">Permission type</span></span>|<span data-ttu-id="b8dce-110">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="b8dce-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="43879-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="43879-109">Permission type</span></span>|<span data-ttu-id="43879-110">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="43879-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="b8dce-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="b8dce-111">Delegated (work or school account)</span></span>|<span data-ttu-id="b8dce-112">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="b8dce-112">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="b8dce-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="b8dce-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="b8dce-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b8dce-114">Not supported.</span></span>|
-|<span data-ttu-id="b8dce-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="b8dce-115">Application</span></span>|<span data-ttu-id="b8dce-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b8dce-116">Not supported.</span></span>|
+|<span data-ttu-id="43879-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="43879-111">Delegated (work or school account)</span></span>|<span data-ttu-id="43879-112">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="43879-112">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="43879-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="43879-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="43879-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="43879-114">Not supported.</span></span>|
+|<span data-ttu-id="43879-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="43879-115">Application</span></span>|<span data-ttu-id="43879-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="43879-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="b8dce-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="b8dce-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="43879-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="43879-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -35,31 +36,31 @@ ms.locfileid: "32581290"
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="b8dce-118">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="b8dce-118">Optional query parameters</span></span>
-<span data-ttu-id="b8dce-119">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://docs.microsoft.com/en-us/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="b8dce-119">This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="43879-118">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="43879-118">Optional query parameters</span></span>
+<span data-ttu-id="43879-119">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://docs.microsoft.com/en-us/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="43879-119">This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="b8dce-120">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b8dce-120">Request headers</span></span>
-|<span data-ttu-id="b8dce-121">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b8dce-121">Header</span></span>|<span data-ttu-id="b8dce-122">値</span><span class="sxs-lookup"><span data-stu-id="b8dce-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="43879-120">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="43879-120">Request headers</span></span>
+|<span data-ttu-id="43879-121">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="43879-121">Header</span></span>|<span data-ttu-id="43879-122">値</span><span class="sxs-lookup"><span data-stu-id="43879-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="b8dce-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="b8dce-123">Authorization</span></span>|<span data-ttu-id="b8dce-124">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="b8dce-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="b8dce-125">承諾</span><span class="sxs-lookup"><span data-stu-id="b8dce-125">Accept</span></span>|<span data-ttu-id="b8dce-126">application/json</span><span class="sxs-lookup"><span data-stu-id="b8dce-126">application/json</span></span>|
+|<span data-ttu-id="43879-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="43879-123">Authorization</span></span>|<span data-ttu-id="43879-124">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="43879-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="43879-125">承諾</span><span class="sxs-lookup"><span data-stu-id="43879-125">Accept</span></span>|<span data-ttu-id="43879-126">application/json</span><span class="sxs-lookup"><span data-stu-id="43879-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="b8dce-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="b8dce-127">Request body</span></span>
-<span data-ttu-id="b8dce-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="b8dce-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="43879-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="43879-127">Request body</span></span>
+<span data-ttu-id="43879-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="43879-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="b8dce-129">応答</span><span class="sxs-lookup"><span data-stu-id="b8dce-129">Response</span></span>
-<span data-ttu-id="b8dce-130">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [macOSCustomConfiguration](../resources/intune-deviceconfig-macoscustomconfiguration.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="b8dce-130">If successful, this method returns a `200 OK` response code and [macOSCustomConfiguration](../resources/intune-deviceconfig-macoscustomconfiguration.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="43879-129">応答</span><span class="sxs-lookup"><span data-stu-id="43879-129">Response</span></span>
+<span data-ttu-id="43879-130">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [macOSCustomConfiguration](../resources/intune-deviceconfig-macoscustomconfiguration.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="43879-130">If successful, this method returns a `200 OK` response code and [macOSCustomConfiguration](../resources/intune-deviceconfig-macoscustomconfiguration.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b8dce-131">例</span><span class="sxs-lookup"><span data-stu-id="b8dce-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="43879-131">例</span><span class="sxs-lookup"><span data-stu-id="43879-131">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="b8dce-132">要求</span><span class="sxs-lookup"><span data-stu-id="b8dce-132">Request</span></span>
-<span data-ttu-id="b8dce-133">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="b8dce-133">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="43879-132">要求</span><span class="sxs-lookup"><span data-stu-id="43879-132">Request</span></span>
+<span data-ttu-id="43879-133">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="43879-133">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
-### <a name="response"></a><span data-ttu-id="b8dce-134">応答</span><span class="sxs-lookup"><span data-stu-id="b8dce-134">Response</span></span>
-<span data-ttu-id="b8dce-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="b8dce-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="43879-134">応答</span><span class="sxs-lookup"><span data-stu-id="43879-134">Response</span></span>
+<span data-ttu-id="43879-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="43879-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
