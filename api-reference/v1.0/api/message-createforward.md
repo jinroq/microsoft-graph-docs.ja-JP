@@ -4,28 +4,29 @@ description: 指定したメッセージを転送するための下書きを作�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: e901136df717872a000cfa33692f8d3261baf963
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 4291827db19bed9f6811d9e8093167571bba8629
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35880640"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025436"
 ---
-# <a name="message-createforward"></a><span data-ttu-id="93a61-104">メッセージ: createForward</span><span class="sxs-lookup"><span data-stu-id="93a61-104">message: createForward</span></span>
+# <a name="message-createforward"></a><span data-ttu-id="9a456-104">メッセージ: createForward</span><span class="sxs-lookup"><span data-stu-id="9a456-104">message: createForward</span></span>
 
-<span data-ttu-id="93a61-105">指定した[メッセージ](../resources/message.md)を転送するための下書きを作成します。</span><span class="sxs-lookup"><span data-stu-id="93a61-105">Create a draft to forward the specified [message](../resources/message.md).</span></span> <span data-ttu-id="93a61-106">下書きを[更新](../api/message-update.md)して**本文**にコンテンツを追加したり、その他のメッセージのプロパティを変更することも、下書きをそのまま[送信](../api/message-send.md)することもできます。</span><span class="sxs-lookup"><span data-stu-id="93a61-106">You can then [update](../api/message-update.md) the draft to add content to the **body** or change other message properties, or, simply [send](../api/message-send.md) the draft.</span></span>
+<span data-ttu-id="9a456-105">指定した[メッセージ](../resources/message.md)を転送するための下書きを作成します。</span><span class="sxs-lookup"><span data-stu-id="9a456-105">Create a draft to forward the specified [message](../resources/message.md).</span></span> <span data-ttu-id="9a456-106">下書きを[更新](../api/message-update.md)して**本文**にコンテンツを追加したり、その他のメッセージのプロパティを変更することも、下書きをそのまま[送信](../api/message-send.md)することもできます。</span><span class="sxs-lookup"><span data-stu-id="9a456-106">You can then [update](../api/message-update.md) the draft to add content to the **body** or change other message properties, or, simply [send](../api/message-send.md) the draft.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="93a61-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="93a61-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="9a456-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="9a456-107">Permissions</span></span>
 
-<span data-ttu-id="93a61-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="93a61-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="9a456-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="9a456-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="93a61-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="93a61-110">Permission type</span></span>      | <span data-ttu-id="93a61-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="93a61-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="9a456-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="9a456-110">Permission type</span></span>      | <span data-ttu-id="9a456-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="9a456-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="93a61-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="93a61-112">Delegated (work or school account)</span></span> | <span data-ttu-id="93a61-113">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="93a61-113">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="93a61-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="93a61-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="93a61-115">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="93a61-115">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="93a61-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="93a61-116">Application</span></span> | <span data-ttu-id="93a61-117">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="93a61-117">Mail.ReadWrite</span></span> |
+|<span data-ttu-id="9a456-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="9a456-112">Delegated (work or school account)</span></span> | <span data-ttu-id="9a456-113">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="9a456-113">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="9a456-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="9a456-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9a456-115">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="9a456-115">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="9a456-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="9a456-116">Application</span></span> | <span data-ttu-id="9a456-117">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="9a456-117">Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="93a61-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="93a61-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9a456-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="9a456-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,29 +37,29 @@ POST /me/mailFolders/{id}/messages/{id}/createForward
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForward
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="93a61-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="93a61-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="9a456-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="9a456-119">Request headers</span></span>
 
-| <span data-ttu-id="93a61-120">名前</span><span class="sxs-lookup"><span data-stu-id="93a61-120">Name</span></span>       | <span data-ttu-id="93a61-121">型</span><span class="sxs-lookup"><span data-stu-id="93a61-121">Type</span></span> | <span data-ttu-id="93a61-122">説明</span><span class="sxs-lookup"><span data-stu-id="93a61-122">Description</span></span>|
+| <span data-ttu-id="9a456-120">名前</span><span class="sxs-lookup"><span data-stu-id="9a456-120">Name</span></span>       | <span data-ttu-id="9a456-121">型</span><span class="sxs-lookup"><span data-stu-id="9a456-121">Type</span></span> | <span data-ttu-id="9a456-122">説明</span><span class="sxs-lookup"><span data-stu-id="9a456-122">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="93a61-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="93a61-123">Authorization</span></span>  | <span data-ttu-id="93a61-124">string</span><span class="sxs-lookup"><span data-stu-id="93a61-124">string</span></span>  | <span data-ttu-id="93a61-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="93a61-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="9a456-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="9a456-123">Authorization</span></span>  | <span data-ttu-id="9a456-124">string</span><span class="sxs-lookup"><span data-stu-id="9a456-124">string</span></span>  | <span data-ttu-id="9a456-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="9a456-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="93a61-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="93a61-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="9a456-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="9a456-127">Request body</span></span>
 
-<span data-ttu-id="93a61-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="93a61-128">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="9a456-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="9a456-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="93a61-129">応答</span><span class="sxs-lookup"><span data-stu-id="93a61-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="9a456-129">応答</span><span class="sxs-lookup"><span data-stu-id="9a456-129">Response</span></span>
 
-<span data-ttu-id="93a61-130">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [Message](../resources/message.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="93a61-130">If successful, this method returns `201 Created` response code and [Message](../resources/message.md) object in the response body.</span></span>
+<span data-ttu-id="9a456-130">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [Message](../resources/message.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="9a456-130">If successful, this method returns `201 Created` response code and [Message](../resources/message.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="93a61-131">例</span><span class="sxs-lookup"><span data-stu-id="93a61-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="9a456-131">例</span><span class="sxs-lookup"><span data-stu-id="9a456-131">Example</span></span>
 
-<span data-ttu-id="93a61-132">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="93a61-132">Here is an example of how to call this API.</span></span>
+<span data-ttu-id="9a456-132">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="9a456-132">Here is an example of how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="93a61-133">要求</span><span class="sxs-lookup"><span data-stu-id="93a61-133">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="9a456-133">要求</span><span class="sxs-lookup"><span data-stu-id="9a456-133">Request</span></span>
 
-<span data-ttu-id="93a61-134">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="93a61-134">Here is an example of the request.</span></span>
+<span data-ttu-id="9a456-134">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="9a456-134">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="93a61-135">プロトコル</span><span class="sxs-lookup"><span data-stu-id="93a61-135">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="9a456-135">プロトコル</span><span class="sxs-lookup"><span data-stu-id="9a456-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "message_createforward"
@@ -67,28 +68,28 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForwar
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages/{id}/createForward
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="93a61-136">C#</span><span class="sxs-lookup"><span data-stu-id="93a61-136">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="9a456-136">C#</span><span class="sxs-lookup"><span data-stu-id="9a456-136">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/message-createforward-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="93a61-137">Javascript</span><span class="sxs-lookup"><span data-stu-id="93a61-137">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="9a456-137">Javascript</span><span class="sxs-lookup"><span data-stu-id="9a456-137">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/message-createforward-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="93a61-138">目的-C</span><span class="sxs-lookup"><span data-stu-id="93a61-138">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="9a456-138">目的-C</span><span class="sxs-lookup"><span data-stu-id="9a456-138">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/message-createforward-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="93a61-139">Java</span><span class="sxs-lookup"><span data-stu-id="93a61-139">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="9a456-139">Java</span><span class="sxs-lookup"><span data-stu-id="9a456-139">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/message-createforward-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="93a61-140">応答</span><span class="sxs-lookup"><span data-stu-id="93a61-140">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="9a456-140">応答</span><span class="sxs-lookup"><span data-stu-id="9a456-140">Response</span></span>
 
-<span data-ttu-id="93a61-p105">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="93a61-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="9a456-p105">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="9a456-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
