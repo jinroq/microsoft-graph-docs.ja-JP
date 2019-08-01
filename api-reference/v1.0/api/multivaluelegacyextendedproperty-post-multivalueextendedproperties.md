@@ -2,12 +2,15 @@
 title: 複数値の拡張プロパティを作成する
 description: 'リソースの新規または既存のインスタンスに、1 つ以上の複数値の拡張プロパティを作成します。 '
 localization_priority: Normal
-ms.openlocfilehash: ded36690cdbe684f78bed6af6aee9dba0b09854d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: apiPageType
+ms.openlocfilehash: 87cb6d617d719575705bdfb9379f4b5a87ddfe57
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32560992"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35976601"
 ---
 # <a name="create-multi-value-extended-property"></a>複数値の拡張プロパティを作成する
 
@@ -18,9 +21,9 @@ ms.locfileid: "32560992"
 - [calendar](../resources/calendar.md)
 - [contact](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md) 
-- [イベント](../resources/event.md)
+- [event](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
-- [メッセージ](../resources/message.md)
+- [message](../resources/message.md)
 
 次のグループ リソースもサポートされます。
 
@@ -36,12 +39,12 @@ ms.locfileid: "32560992"
 | サポートされているリソース | 委任 (職場または学校のアカウント) | 委任 (個人用 Microsoft アカウント) | アプリケーション |
 |:-----|:-----|:-----|:-----|
 | [calendar](../resources/calendar.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
-| [連絡先](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [contactFolder](../resources/contactfolder.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [イベント](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite |  Calendars.ReadWrite|
-| グループ [calendar](../resources/calendar.md) | Group.ReadWrite.All | サポート対象外 | サポート対象外 |
-| グループ [event](../resources/event.md) | Group.ReadWrite.All | サポート対象外 | サポート対象外 |
-| グループ [post](../resources/post.md) | Group.ReadWrite.All | サポート対象外 | サポート対象外 |
+| グループ [calendar](../resources/calendar.md) | Group.ReadWrite.All | サポート対象外 | 非サポート |
+| グループ [event](../resources/event.md) | Group.ReadWrite.All | サポート対象外 | 非サポート |
+| グループ [post](../resources/post.md) | Group.ReadWrite.All | サポート対象外 | 非サポート |
 | [mailFolder](../resources/mailfolder.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
 | [メッセージ](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
 
@@ -127,7 +130,7 @@ PATCH /groups/{id}/events/{id}
 |id|String|**multiValueExtendedProperties** コレクションの各プロパティに対してこれを指定し、プロパティを特定します。サポートされている形式のいずれかに従う必要があります。詳しくは、[「Outlook の拡張プロパティの概要」](../resources/extended-properties-overview.md)をご覧ください。必須。|
 |value|string|**multiValueExtendedProperties** コレクションの各プロパティに対し、プロパティの値を特定します。必須。|
 
-新しいリソースインスタンスに拡張プロパティを__ 作成するときに、新しい**multivalueextendedproperties**コレクションに加えて、そのリソースインスタンスの JSON 表記も指定します (つまり、 [message](../resources/message.md)、 [mailfolder)。](../resources/mailfolder.md)、[イベント](../resources/event.md)など)。
+新しいリソースインスタンスに拡張プロパティを__ 作成するときに、新しい**Multivalueextendedproperties**コレクションに加えて、そのリソースインスタンスの JSON 表記も指定します (つまり、 [message](../resources/message.md)、 [mailfolder)。](../resources/mailfolder.md)、[イベント](../resources/event.md)など)。
 
 
 ## <a name="response"></a>応答

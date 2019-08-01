@@ -2,12 +2,15 @@
 title: アラーム リソースの種類
 description: ユーザーの予定表のイベントのアラーム。
 localization_priority: Normal
-ms.openlocfilehash: e8aa591f078b90249b36d3dc2f666ddac4502461
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 1fd2198113187ec5e4a1c507cf31d35457662d8f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579346"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034749"
 ---
 # <a name="reminder-resource-type"></a>アラーム リソースの種類
 
@@ -17,12 +20,12 @@ ms.locfileid: "32579346"
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |changeKey|String|アラームのバージョンを識別します。アラームを変更するたびに **changeKey** も変更されます。これにより、Exchange は正しいバージョンのオブジェクトに変更を適用できます。|
-|eventendtime|[DateTimeTimeZone](datetimetimezone.md)|イベントが終了する日付、時刻、タイムゾーン。|
+|eventEndTime|[DateTimeTimeZone](datetimetimezone.md)|イベントが終了する日付、時刻、タイムゾーン。|
 |イベント|String|イベントの一意の ID。読み取り専用です。|
-|eventlocation|[Location](location.md)|イベントの場所。|
-|eventstarttime|[DateTimeTimeZone](datetimetimezone.md)|イベントが開始する日付、時刻、タイムゾーン。|
-|eventsubject|String|イベントの件名行のテキスト。|
-|eventweblink|String|Web 上の Outlook でイベントを開く URL。<br/><br/>Web 上の Outlook のメールボックスにログインしている場合、ブラウザーでイベントが開きます。まだブラウザーでログインしていない場合、ログインするように求められます。<br/><br/>この URL には、iFrame 内からアクセスできます。|
+|eventLocation|[Location](location.md)|イベントの場所。|
+|eventStartTime|[DateTimeTimeZone](datetimetimezone.md)|イベントが開始する日付、時刻、タイムゾーン。|
+|eventSubject|String|イベントの件名行のテキスト。|
+|eventWebLink|String|Web 上の Outlook でイベントを開く URL。<br/><br/>Web 上の Outlook のメールボックスにログインしている場合、ブラウザーでイベントが開きます。まだブラウザーでログインしていない場合、ログインするように求められます。<br/><br/>この URL には、iFrame 内からアクセスできます。|
 |reminderFireTime|[DateTimeTimeZone](datetimetimezone.md)|アラームの発生を設定する日付、時刻、タイムゾーン。|
 
 ## <a name="json-representation"></a>JSON 表記

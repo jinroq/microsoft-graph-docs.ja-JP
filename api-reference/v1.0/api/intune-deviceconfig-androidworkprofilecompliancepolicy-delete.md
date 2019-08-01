@@ -1,21 +1,22 @@
 ---
-title: androidWorkProfileCompliancePolicy の削除
-description: androidWorkProfileCompliancePolicy を削除します。
+title: AndroidWorkProfileCompliancePolicy の削除
+description: AndroidWorkProfileCompliancePolicy を削除します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 430fe0ee970542e308aa8c0a7a1398719cf1ef7c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: ebfc23a0ceba9e3083adf70d88ba6b52f63e4983
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32503878"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36019584"
 ---
-# <a name="delete-androidworkprofilecompliancepolicy"></a>androidWorkProfileCompliancePolicy の削除
+# <a name="delete-androidworkprofilecompliancepolicy"></a>AndroidWorkProfileCompliancePolicy の削除
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md)を削除します。
+[AndroidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md)を削除します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。

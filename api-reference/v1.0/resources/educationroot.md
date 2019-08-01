@@ -4,12 +4,13 @@ description: '`/education` 名前空間は、教育機関に固有の機能を�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 5d845d22571f8c5b88badfb34e66c330e5c38300
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: resourcePageType
+ms.openlocfilehash: 0742621ccf5261c3d4e3d9de5d185aa7e0ec3dfa
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35884855"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030528"
 ---
 # <a name="educationroot-resource-type"></a>educationRoot リソースの種類
 

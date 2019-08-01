@@ -4,16 +4,17 @@ description: Intune のアプリの単一カテゴリのプロパティが含ま
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 82d5f81afca53b01027547b42db4582586a4819f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 82567e991e7528b6c77dfa3b9b0df4185784fdbb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32558147"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032194"
 ---
 # <a name="mobileappcategory-resource-type"></a>mobileAppCategory リソースの種類
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 Intune のアプリの単一カテゴリのプロパティが含まれています。
 
@@ -29,7 +30,7 @@ Intune のアプリの単一カテゴリのプロパティが含まれていま�
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|id|文字列|エンティティのキー。|
 |displayName|String|アプリのカテゴリの名前。|
 |lastModifiedDateTime|DateTimeOffset|mobileAppCategory が最後に変更された日時です。|
 

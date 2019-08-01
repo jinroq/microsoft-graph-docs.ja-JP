@@ -5,16 +5,17 @@ title: ItemActionSet リソースの種類
 description: ItemActionSet オブジェクトは、アイテムのアクティビティの一部として行われたアクションに関する情報を提供します。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 065a6126e2e4a2f78cecfb2ae5497fac28e16899
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+doc_type: resourcePageType
+ms.openlocfilehash: a28a3380761e2d1914d7c088e5927fc5d3addd4b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33970759"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036723"
 ---
 # <a name="itemactionset-resource-type"></a>itemActionSet リソースの種類
 
-**Itemactionset**リソースは、アイテムの[アクティビティ][ itemActivity]を構成したアクションに関する情報を提供します。
+**Itemactionset**リソースは、アイテムの[アクティビティ][itemActivity]を構成したアクションに関する情報を提供します。
 
 >**注:** 現時点では、アイテムアクティビティレコードは SharePoint および OneDrive for business でのみ使用できます。
 

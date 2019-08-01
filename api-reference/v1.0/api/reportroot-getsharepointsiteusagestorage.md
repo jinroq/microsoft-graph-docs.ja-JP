@@ -4,12 +4,13 @@ description: レポート期間中に割り当てられ、消費したストレ�
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 37bfab80a4589aa9e720da24f1ad81610fe95181
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 1503def2d2096dbd575afa21770eeb6a9097989f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35893358"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025009"
 ---
 # <a name="reportroot-getsharepointsiteusagestorage"></a>reportRoot: getSharePointSiteUsageStorage
 

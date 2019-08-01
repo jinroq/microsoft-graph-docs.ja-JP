@@ -1,21 +1,22 @@
 ---
-title: androidwork profileの devic/デバイスを取得する
-description: androidwork profile一般の devic/オブジェクトのプロパティとリレーションシップを読み取ります。
+title: Androidwork Profileの Devic/デバイスを取得する
+description: Androidwork Profile一般の Devic/オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fbebbbc28efb46d370aff602565077ce6973ea65
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: b03513d9b32caf25e721eb0ab1996863f1fedebb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550015"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36017911"
 ---
-# <a name="get-androidworkprofilegeneraldeviceconfiguration"></a>androidwork profileの devic/デバイスを取得する
+# <a name="get-androidworkprofilegeneraldeviceconfiguration"></a>Androidwork Profileの Devic/デバイスを取得する
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[androidwork profile一般](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md)の devic/オブジェクトのプロパティとリレーションシップを読み取ります。
+[Androidwork Profile一般](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md)の devic/オブジェクトのプロパティとリレーションシップを読み取ります。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -48,7 +49,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[androidwork profileprofiledevicオブジェクト](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md)を返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[Androidwork profileprofiledevicオブジェクト](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md)を返します。
 
 ## <a name="example"></a>例
 

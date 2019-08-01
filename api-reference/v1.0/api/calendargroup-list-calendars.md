@@ -4,12 +4,13 @@ description: 予定表グループに属している予定表のリストを取�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 3d77904106f2b88e19846d169cf5e78ce0f64b4f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 31c219632a1dc069baf030d9adf6878de913462c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35882375"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36003939"
 ---
 # <a name="list-calendars"></a>予定表を一覧表示する
 

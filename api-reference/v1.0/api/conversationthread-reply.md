@@ -4,12 +4,13 @@ description: 'グループ会話のスレッドに返信して、新しい投稿
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 711a16aad7bae595eb4cc55f2cdc24ec784dfa69
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: d19bb119cfca3ccf22af257eeda18d880e310cbe
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35883601"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36003022"
 ---
 # <a name="conversationthread-reply"></a>conversationThread: 返信
 

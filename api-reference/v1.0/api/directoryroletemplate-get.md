@@ -4,12 +4,13 @@ description: directoryroletemplate オブジェクトのプロパティと関係
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: eab967c0ca5cb7ab0d50b803939f328d13a81687
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 45d6981b8c89bb061086045094ce8f5bc22c8671
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35888628"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36016714"
 ---
 # <a name="get-directoryroletemplate"></a>directoryRoleTemplate を取得する
 
@@ -19,9 +20,9 @@ directoryroletemplate オブジェクトのプロパティと関係を取得し�
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委任 (職場または学校のアカウント) | RoleManagement、RoleManagement、Directory.accessasuser.all、および all のいずれかを取得します。すべてのディレクトリについては。    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | Directory.Read.All、Directory.ReadWrite.All |
+|アプリケーション | RoleManagement、RoleManagement、および All のいずれかのディレクトリを参照しています。 |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

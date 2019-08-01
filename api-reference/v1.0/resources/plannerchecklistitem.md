@@ -1,27 +1,27 @@
 ---
-title: プラン、listitem リソースの種類
-description: '**plan**は、タスクのチェックリストの項目を表します。 タスクのチェックリストは、checklistItems オブジェクトによって表されます。'
+title: プラン、Listitem リソースの種類
+description: '**Plan**は、タスクのチェックリストの項目を表します。 タスクのチェックリストは、checklistItems オブジェクトによって表されます。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 554391577fb0d48c2e0fd9fe265298e1dc1dd4fb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: c1955b0c746ddb3f552428e63ca42dfebe9f5e3c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462481"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035295"
 ---
-# <a name="plannerchecklistitem-resource-type"></a>プラン、listitem リソースの種類
+# <a name="plannerchecklistitem-resource-type"></a>プラン、Listitem リソースの種類
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**plan**は、タスクのチェックリストの項目を表します。 タスクのチェックリストは、 [checklistItems オブジェクト](plannerchecklistitems.md)によって表されます。
+**Plan**は、タスクのチェックリストの項目を表します。 タスクのチェックリストは、 [checklistItems オブジェクト](plannerchecklistitems.md)によって表されます。
 
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|ischecked|Boolean|値は`true` 、アイテムがチェックされ`false`ているかどうかを示します。|
+|isChecked|Boolean|値は`true` 、アイテムがチェックされ`false`ているかどうかを示します。|
 |lastModifiedBy|[identitySet](identityset.md)| 読み取り専用です。 これを最後に変更するユーザー ID。|
 |lastModifiedDateTime|DateTimeOffset|読み取り専用。 この時刻が最後に変更された日時。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |orderHint|String|チェックリストの項目の相対的な順序を設定するために使用します。 この形式は、[ここで](planner-order-hint-format.md)説明するように定義されています。|
@@ -51,15 +51,10 @@ ms.locfileid: "32462481"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "plannerChecklistItem resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/plannerchecklistitem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

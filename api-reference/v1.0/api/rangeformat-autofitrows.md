@@ -4,12 +4,13 @@ description: 現在の列のデータに基づいて、現在の範囲の行の�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 95e8e22ac7831eae9d9609bbd6b5a2a03a127f72
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 1137be426980a455f295a27a28bf86fbed9472ba
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35880655"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36022122"
 ---
 # <a name="rangeformat-autofitrows"></a>RangeFormat: autofitRows
 

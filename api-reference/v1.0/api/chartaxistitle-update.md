@@ -4,12 +4,13 @@ description: chartaxistitle オブジェクトのプロパティを更新しま�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: c7cfa8c83c91f2f49a383910a229ca01ab9cfbc9
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: cb4233056925fb7449235af6e959dcab43d52a13
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35882005"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36003659"
 ---
 # <a name="update-chartaxistitle"></a>Update chartaxistitle
 

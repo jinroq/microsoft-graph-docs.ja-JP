@@ -4,12 +4,13 @@ description: 範囲のフォント、塗りつぶし、境界線、配置など�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: f0e57522812b966c39a6981de964e786d33c5006
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 3e1b79c80c20197cc14a5097efdf9eb0513b43e4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579502"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034889"
 ---
 # <a name="rangeformat-resource-type"></a>RangeFormat リソースの種類
 
@@ -24,7 +25,7 @@ ms.locfileid: "32579502"
 |[RangeBorder を作成する](../api/rangeformat-post-borders.md) |[WorkbookRangeBorder](rangeborder.md)| 境界線コレクションに投稿して、新しい RangeBorder を作成します。|
 |[境界線を一覧表示する](../api/rangeformat-list-borders.md) |[WorkbookRangeBorder](rangeborder.md)コレクション| RangeBorder オブジェクトのコレクションを取得します。|
 |[Update](../api/rangeformat-update.md) | [WorkbookRangeFormat](rangeformat.md) |RangeFormat オブジェクトを更新します。 |
-|[Autofitcolumns](../api/rangeformat-autofitcolumns.md)|なし|現在の列のデータに基づいて、現在の範囲の列の幅を最適な幅に変更します。|
+|[Autofitcolumns](../api/rangeformat-autofitcolumns.md)|None|現在の列のデータに基づいて、現在の範囲の列の幅を最適な幅に変更します。|
 |[Autofitrows](../api/rangeformat-autofitrows.md)|なし|現在の行のデータに基づいて、現在の範囲の行の高さを最適な高さに変更します。|
 
 ## <a name="properties"></a>プロパティ

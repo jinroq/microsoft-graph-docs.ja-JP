@@ -4,16 +4,17 @@ description: 履歴レポートのインスタンスを表すリソースです�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 98f29935304c5eac2262049f76a9bcf006aa694b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 8a8fa8011ad4550ec80acd0b4d6d2159f10647de
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32571822"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036863"
 ---
 # <a name="reportroot-resource-type"></a>reportRoot リソースの種類
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 履歴レポートのインスタンスを表すリソースです。
 
@@ -35,7 +36,7 @@ ms.locfileid: "32571822"
 |:---|:---|:---|
 |id|String|このエンティティの一意識別子です。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記

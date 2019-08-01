@@ -1,19 +1,20 @@
 ---
-title: windowsスポットライト enablementsettings 列挙型
+title: Windowsスポットライト Enablementsettings 列挙型
 description: MDM で制御されるデバイス用に定義済みの既定の検索エンジンを設定できるようにする
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 779db41264e2c0d499b6757fac0c1fee199c1a52
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 9b80136c998da1ecab121a050455ac031ba1aa77
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32463440"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027616"
 ---
-# <a name="windowsspotlightenablementsettings-enum-type"></a>windowsスポットライト enablementsettings 列挙型
+# <a name="windowsspotlightenablementsettings-enum-type"></a>Windowsスポットライト Enablementsettings 列挙型
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 MDM で制御されるデバイス用に定義済みの既定の検索エンジンを設定できるようにする
 

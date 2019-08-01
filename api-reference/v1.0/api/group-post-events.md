@@ -4,12 +4,13 @@ description: このAPIを使用して新しいイベントを作成します。
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: ea63872c132ab387f26b9b76afdd56c562826129
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 3328e22eef7cf5434ac5e20791e4083e188f5bae
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35856548"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36016285"
 ---
 # <a name="create-event"></a>イベントを作成する
 この API を使用して、新しい[イベント](../resources/event.md)を作成します。

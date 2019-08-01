@@ -5,16 +5,16 @@ ms.date: 09/11/2017
 title: ListInfo
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 9be9d0dc133c9b62a89504a79ce9da4836337cfe
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: listInfo 複合型は、list に関する追加情報を提供します。
+doc_type: resourcePageType
+ms.openlocfilehash: dd6b2d892746c5aafc599b988113aefaa0b9973d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32519879"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036415"
 ---
 # <a name="listinfo-resource"></a>ListInfo リソース
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **listInfo** 複合型は、[list][] に関する追加情報を提供します。
 
@@ -43,7 +43,7 @@ ms.locfileid: "32519879"
 
 | プロパティ名           | 種類    | 説明
 |:------------------------|:--------|:------------------------------------------------
-| **contentTypesEnabled** | ブール型 | `true` である場合、このリストのコンテンツ タイプが有効であることを示します。
+| **contentTypesEnabled** | Boolean | `true` である場合、このリストのコンテンツ タイプが有効であることを示します。
 | **hidden**              | Boolean | `true` である場合、リストが通常 SharePoint ユーザー エクスペリエンスに表示されないことを示します。
 | **template**            | String  | リストの作成に使用される基本リスト テンプレートを表す列挙値。 代入可能な値は `documentLibrary`、`genericList`、`task`、`survey`、`announcements`、`contacts` などです。
 
@@ -55,15 +55,14 @@ SharePoint の CSOM API に詳しい開発者へ: `template` の値は `SPListTe
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/resources/listinfo.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+    "Warning: /api-reference/v1.0/resources/listinfo.md:
+      Found potential enums in resource example that weren't defined in a table:(documentLibrary,genericList,tasks,survey,links,announcements,contacts,...) are in resource, but () are in table"
+  ],
+  "tocPath": ""
+}-->
