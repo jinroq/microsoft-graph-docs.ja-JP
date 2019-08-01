@@ -4,32 +4,31 @@ description: 'プラン**** に対して定義されているカテゴリの説�
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 1cf1ee1c6e8ccc4e90f78985b352062fce37df88
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 7543b231fbad190be6ad7840611aec034adae053
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462264"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035309"
 ---
-# <a name="plannercategorydescriptions-resource-type"></a><span data-ttu-id="0c31a-105">プラン? カテゴリの説明リソースの種類</span><span class="sxs-lookup"><span data-stu-id="0c31a-105">plannerCategoryDescriptions resource type</span></span>
+# <a name="plannercategorydescriptions-resource-type"></a><span data-ttu-id="caba3-105">プラン? カテゴリの説明リソースの種類</span><span class="sxs-lookup"><span data-stu-id="caba3-105">plannerCategoryDescriptions resource type</span></span>
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-<span data-ttu-id="0c31a-106">プラン\*\*\*\* に対して定義されているカテゴリの説明的なラベルを表します。</span><span class="sxs-lookup"><span data-stu-id="0c31a-106">The **plannerCategoryDescriptions** resource represents the descriptive labels for the categories that have been defined for a plan.</span></span> <span data-ttu-id="0c31a-107">[プランの詳細](plannerplandetails.md)オブジェクトに属します。</span><span class="sxs-lookup"><span data-stu-id="0c31a-107">It belongs to the [plan details](plannerplandetails.md) object.</span></span> <span data-ttu-id="0c31a-108">最大6つのカテゴリが定義されています。</span><span class="sxs-lookup"><span data-stu-id="0c31a-108">There can be up to 6 categories defined.</span></span> 
+<span data-ttu-id="caba3-106">プラン\*\*\*\* に対して定義されているカテゴリの説明的なラベルを表します。</span><span class="sxs-lookup"><span data-stu-id="caba3-106">The **plannerCategoryDescriptions** resource represents the descriptive labels for the categories that have been defined for a plan.</span></span> <span data-ttu-id="caba3-107">[プランの詳細](plannerplandetails.md)オブジェクトに属します。</span><span class="sxs-lookup"><span data-stu-id="caba3-107">It belongs to the [plan details](plannerplandetails.md) object.</span></span> <span data-ttu-id="caba3-108">最大6つのカテゴリが定義されています。</span><span class="sxs-lookup"><span data-stu-id="caba3-108">There can be up to 6 categories defined.</span></span> 
 
 
-## <a name="properties"></a><span data-ttu-id="0c31a-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="0c31a-109">Properties</span></span>
-| <span data-ttu-id="0c31a-110">プロパティ</span><span class="sxs-lookup"><span data-stu-id="0c31a-110">Property</span></span>     | <span data-ttu-id="0c31a-111">型</span><span class="sxs-lookup"><span data-stu-id="0c31a-111">Type</span></span>   |<span data-ttu-id="0c31a-112">説明</span><span class="sxs-lookup"><span data-stu-id="0c31a-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="caba3-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="caba3-109">Properties</span></span>
+| <span data-ttu-id="caba3-110">プロパティ</span><span class="sxs-lookup"><span data-stu-id="caba3-110">Property</span></span>     | <span data-ttu-id="caba3-111">型</span><span class="sxs-lookup"><span data-stu-id="caba3-111">Type</span></span>   |<span data-ttu-id="caba3-112">説明</span><span class="sxs-lookup"><span data-stu-id="caba3-112">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="0c31a-113">category1</span><span class="sxs-lookup"><span data-stu-id="0c31a-113">category1</span></span>|<span data-ttu-id="0c31a-114">String</span><span class="sxs-lookup"><span data-stu-id="0c31a-114">String</span></span>|<span data-ttu-id="0c31a-115">カテゴリ1に関連付けられているラベル</span><span class="sxs-lookup"><span data-stu-id="0c31a-115">The label associated with Category 1</span></span>|
-|<span data-ttu-id="0c31a-116">category2</span><span class="sxs-lookup"><span data-stu-id="0c31a-116">category2</span></span>|<span data-ttu-id="0c31a-117">String</span><span class="sxs-lookup"><span data-stu-id="0c31a-117">String</span></span>|<span data-ttu-id="0c31a-118">カテゴリ2に関連付けられているラベル</span><span class="sxs-lookup"><span data-stu-id="0c31a-118">The label associated with Category 2</span></span>|
-|<span data-ttu-id="0c31a-119">category3</span><span class="sxs-lookup"><span data-stu-id="0c31a-119">category3</span></span>|<span data-ttu-id="0c31a-120">String</span><span class="sxs-lookup"><span data-stu-id="0c31a-120">String</span></span>|<span data-ttu-id="0c31a-121">カテゴリ3に関連付けられているラベル</span><span class="sxs-lookup"><span data-stu-id="0c31a-121">The label associated with Category 3</span></span>|
-|<span data-ttu-id="0c31a-122">category4</span><span class="sxs-lookup"><span data-stu-id="0c31a-122">category4</span></span>|<span data-ttu-id="0c31a-123">String</span><span class="sxs-lookup"><span data-stu-id="0c31a-123">String</span></span>|<span data-ttu-id="0c31a-124">Category 4 に関連付けられているラベル</span><span class="sxs-lookup"><span data-stu-id="0c31a-124">The label associated with Category 4</span></span>|
-|<span data-ttu-id="0c31a-125">category5</span><span class="sxs-lookup"><span data-stu-id="0c31a-125">category5</span></span>|<span data-ttu-id="0c31a-126">String</span><span class="sxs-lookup"><span data-stu-id="0c31a-126">String</span></span>|<span data-ttu-id="0c31a-127">カテゴリ5に関連付けられているラベル</span><span class="sxs-lookup"><span data-stu-id="0c31a-127">The label associated with Category 5</span></span>|
-|<span data-ttu-id="0c31a-128">category6</span><span class="sxs-lookup"><span data-stu-id="0c31a-128">category6</span></span>|<span data-ttu-id="0c31a-129">String</span><span class="sxs-lookup"><span data-stu-id="0c31a-129">String</span></span>|<span data-ttu-id="0c31a-130">カテゴリ6に関連付けられているラベル</span><span class="sxs-lookup"><span data-stu-id="0c31a-130">The label associated with Category 6</span></span>|
+|<span data-ttu-id="caba3-113">category1</span><span class="sxs-lookup"><span data-stu-id="caba3-113">category1</span></span>|<span data-ttu-id="caba3-114">String</span><span class="sxs-lookup"><span data-stu-id="caba3-114">String</span></span>|<span data-ttu-id="caba3-115">カテゴリ1に関連付けられているラベル</span><span class="sxs-lookup"><span data-stu-id="caba3-115">The label associated with Category 1</span></span>|
+|<span data-ttu-id="caba3-116">category2</span><span class="sxs-lookup"><span data-stu-id="caba3-116">category2</span></span>|<span data-ttu-id="caba3-117">String</span><span class="sxs-lookup"><span data-stu-id="caba3-117">String</span></span>|<span data-ttu-id="caba3-118">カテゴリ2に関連付けられているラベル</span><span class="sxs-lookup"><span data-stu-id="caba3-118">The label associated with Category 2</span></span>|
+|<span data-ttu-id="caba3-119">category3</span><span class="sxs-lookup"><span data-stu-id="caba3-119">category3</span></span>|<span data-ttu-id="caba3-120">String</span><span class="sxs-lookup"><span data-stu-id="caba3-120">String</span></span>|<span data-ttu-id="caba3-121">カテゴリ3に関連付けられているラベル</span><span class="sxs-lookup"><span data-stu-id="caba3-121">The label associated with Category 3</span></span>|
+|<span data-ttu-id="caba3-122">category4</span><span class="sxs-lookup"><span data-stu-id="caba3-122">category4</span></span>|<span data-ttu-id="caba3-123">String</span><span class="sxs-lookup"><span data-stu-id="caba3-123">String</span></span>|<span data-ttu-id="caba3-124">Category 4 に関連付けられているラベル</span><span class="sxs-lookup"><span data-stu-id="caba3-124">The label associated with Category 4</span></span>|
+|<span data-ttu-id="caba3-125">category5</span><span class="sxs-lookup"><span data-stu-id="caba3-125">category5</span></span>|<span data-ttu-id="caba3-126">String</span><span class="sxs-lookup"><span data-stu-id="caba3-126">String</span></span>|<span data-ttu-id="caba3-127">カテゴリ5に関連付けられているラベル</span><span class="sxs-lookup"><span data-stu-id="caba3-127">The label associated with Category 5</span></span>|
+|<span data-ttu-id="caba3-128">category6</span><span class="sxs-lookup"><span data-stu-id="caba3-128">category6</span></span>|<span data-ttu-id="caba3-129">String</span><span class="sxs-lookup"><span data-stu-id="caba3-129">String</span></span>|<span data-ttu-id="caba3-130">カテゴリ6に関連付けられているラベル</span><span class="sxs-lookup"><span data-stu-id="caba3-130">The label associated with Category 6</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="0c31a-131">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="0c31a-131">JSON representation</span></span>
-<span data-ttu-id="0c31a-132">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="0c31a-132">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="caba3-131">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="caba3-131">JSON representation</span></span>
+<span data-ttu-id="caba3-132">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="caba3-132">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -53,15 +52,10 @@ ms.locfileid: "32462264"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "plannerCategoryDescriptions resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/plannercategorydescriptions.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->
