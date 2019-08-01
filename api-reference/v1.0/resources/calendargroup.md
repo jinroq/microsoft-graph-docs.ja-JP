@@ -4,12 +4,13 @@ description: ユーザーカレンダーのグループ。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 5b75ebf253276876129859be7d37ecb6748fc0d9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 3931359b3b7eec65e2c675fbc5b6ef40176b13fb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569404"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033055"
 ---
 # <a name="calendargroup-resource-type"></a>calendarGroup リソースの種類
 
@@ -23,7 +24,7 @@ ms.locfileid: "32569404"
 | [予定表グループを作成する](../api/user-post-calendargroups.md) | [Calendar](calendar.md)            | 新しい予定表グループを作成します。                                  |
 | [予定表グループを取得する](../api/calendargroup-get.md)           | [calendarGroup](calendargroup.md)  | 予定表グループ オブジェクトのプロパティと関係を読み取ります。 |
 | [Update](../api/calendargroup-update.md)                    | [calendarGroup](calendargroup.md)  | calendarGroup オブジェクトを更新します。                                  |
-| [削除](../api/calendargroup-delete.md)                    | なし                               | calendarGroup オブジェクトを削除します。                                  |
+| [Delete](../api/calendargroup-delete.md)                    | None                               | calendarGroup オブジェクトを削除します。                                  |
 | [List calendars](../api/calendargroup-list-calendars.md)    | [Calendar](calendar.md) collection | 予定表グループ内の予定表を一覧表示する                           |
 | [予定表を作成する](../api/calendargroup-post-calendars.md)   | [Calendar](calendar.md)            | 予定表グループに新しい予定表を作成します。                    |
 

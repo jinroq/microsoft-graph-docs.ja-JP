@@ -4,12 +4,13 @@ description: テーブル内の行を表します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: c266476715da36bcdc0b621538722ba6320eba85
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 44f9a60197c066115f704b45d7382ba88563aaeb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563757"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033993"
 ---
 # <a name="tablerow-resource-type"></a>TableRow リソースの種類
 
@@ -23,7 +24,7 @@ ms.locfileid: "32563757"
 |[TableRow を取得する　](../api/tablerow-get.md) | [WorkbookTableRow](tablerow.md) |tableRow オブジェクトのプロパティと関係を読み取ります。|
 |[Update](../api/tablerow-update.md) | [WorkbookTableRow](tablerow.md)  |TableRow を更新します。 |
 |[Range](../api/tablerow-range.md)|[Range](range.md)|行全体に関連付けられた範囲オブジェクトを返します。|
-|[削除](../api/tablerow-delete.md)|なし|テーブルから行を削除します。|
+|[Delete](../api/tablerow-delete.md)|None|テーブルから行を削除します。|
 |[List](../api/tablerow-list.md) | [WorkbookTableRow](tablerow.md) コレクション |tableRow オブジェクトのコレクションを取得します。 |
 |[Itemat](../api/tablerowcollection-itemat.md)|[WorkbookTableRow](tablerow.md)|コレクション内の位置を基に行を取得します。|
 |[Add](../api/tablerowcollection-add.md)|[WorkbookTableRow](tablerow.md)|新しい行をテーブルに追加します。|

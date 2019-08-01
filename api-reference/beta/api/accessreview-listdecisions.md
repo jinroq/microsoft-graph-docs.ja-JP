@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e0b31628a44422283ebd3f403a4e83bf2b4d1ccf
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 466bf38854f50e2896388af02928641dd9180edf
+ms.sourcegitcommit: a700f1c283a5d847cd1697e26bcd47bc8625384e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35946027"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36049611"
 ---
 # <a name="list-accessreview-decisions"></a>AccessReview に関する決定事項を一覧表示する
 
@@ -27,7 +27,7 @@ Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、 [
 |:--------------------------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント)     | AccessReview を参照してください。  |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
-|アプリケーション                            | AccessReview.Read.All |
+|アプリケーション                            | AccessReview を参照してください。 |
 
  また、サインインしているユーザーは、アクセスレビューを読み取ることができるようにするためのディレクトリロールにある必要があります。
 

@@ -4,12 +4,13 @@ description: このオブジェクトは、グラフ オブジェクトのフォ
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 85a11d59e58d6968154a4ede12fa978b1f061de1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 9241691296b93eb21e19e10b81f36e692fea0692
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568991"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032999"
 ---
 # <a name="chartfont-resource-type"></a>ChartFont リソースの種類
 
@@ -33,7 +34,7 @@ ms.locfileid: "32568991"
 |size|double|フォント サイズ (例: 11)|
 |underline|文字列|フォントに適用する下線の種類。 使用可能な値は`None`、 `Single`、です。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 

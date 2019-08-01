@@ -4,16 +4,17 @@ description: macOSCompliancePolicy を削除します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 42f04c38f497dc268ae0e0abcb39f24db292a3f4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 66a1a39537b28334c7980c25cb162345f5d15b3f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549854"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35997569"
 ---
 # <a name="delete-macoscompliancepolicy"></a>Delete macOSCompliancePolicy
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [macOSCompliancePolicy](../resources/intune-deviceconfig-macoscompliancepolicy.md) を削除します。
 

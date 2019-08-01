@@ -4,12 +4,13 @@ description: このメソッドを呼び出すと、現在のユーザーがそ�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 73c340832b3cb9ae52146a0af79f27e873a7ddc9
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: ba29352f6ce0b913f0a9af70484a123952945343
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35885379"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014726"
 ---
 # <a name="group-subscribebymail"></a>グループ: subscribeByMail
 このメソッドを呼び出すと、現在のユーザーがそのグループ内の新規投稿、イベント、およびファイルに関するメール通知を受信できるようになります。Office 365 のグループのみをサポートします。

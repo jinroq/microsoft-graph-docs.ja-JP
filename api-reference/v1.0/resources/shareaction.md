@@ -5,16 +5,17 @@ title: /アクションリソースの種類
 description: Share Action オブジェクトは、共有アクションでアイテムが共有されたユーザーに関する情報を提供します。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: a61ec47aae94eb99c2a192c863127d18a80fc087
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+doc_type: resourcePageType
+ms.openlocfilehash: 73b847bbd9608a7647f3895e8d67fff9dbdc9a68
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33970752"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034350"
 ---
 # <a name="shareaction-resource-type"></a>/アクションリソースの種類
 
-" **Sharepoint**の共有" アクションリソースは、アイテムを共有した[アクティビティ][ activity]に関する情報を提供します。
+" **Sharepoint**の共有" アクションリソースは、アイテムを共有した[アクティビティ][activity]に関する情報を提供します。
 
 >**注:** 現時点では、アイテムアクティビティレコードは SharePoint および OneDrive for business でのみ使用できます。
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 88a67360fc6d60f9751cecf932dba40dd8be4e08
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8f9c1bc8747d2057374c4aac6809987572475fdf
+ms.sourcegitcommit: a700f1c283a5d847cd1697e26bcd47bc8625384e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35944832"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36049639"
 ---
 # <a name="list-businessflowtemplates"></a>BusinessFlowTemplates を一覧表示する
 
@@ -24,7 +24,7 @@ Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、�
 |:--------------------------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント)     | AccessReview を参照してください。  |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
-|アプリケーション                            | AccessReview.Read.All |
+|アプリケーション                            | AccessReview を参照してください。 |
 
 また、サインインしているユーザーは、アクセスレビューを読み取ることができるようにするためのディレクトリロールにある必要があります。
 

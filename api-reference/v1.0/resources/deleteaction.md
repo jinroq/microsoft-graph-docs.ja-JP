@@ -5,16 +5,17 @@ title: deleteAction リソースの種類
 description: DeleteAction オブジェクトは、アイテムの削除に関する情報を提供します。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: ba5004c17f1cc71f66420a81b5eb66603df00eee
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+doc_type: resourcePageType
+ms.openlocfilehash: 93f605e74a0a483a94593a9aaa40d6fd30efe914
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33970779"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032733"
 ---
 # <a name="deleteaction-resource-type"></a>deleteAction リソースの種類
 
-[**Itemactivity**] [ activity]に**deleteaction**リソースが存在することは、アクティビティがアイテムを削除したことを示します。
+[**Itemactivity**][activity]に**deleteaction**リソースが存在することは、アクティビティがアイテムを削除したことを示します。
 
 >**注:** 現時点では、アイテムアクティビティレコードは SharePoint および OneDrive for business でのみ使用できます。
 

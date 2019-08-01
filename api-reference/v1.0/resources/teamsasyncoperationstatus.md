@@ -1,21 +1,22 @@
 ---
 title: teamsAsyncOperationStatus 列挙型
-description: teamsAsyncOperation の現在の状態を表します。
+description: TeamsAsyncOperation の現在の状態を表します。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: b3ceaca73fe013b76f44cdf9290f3c0935e93b0a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 4ffd6653752968c16d469ade39fc0e399fbee37c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462229"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033734"
 ---
 # <a name="teamsasyncoperationstatus-enum-type"></a>teamsAsyncOperationStatus 列挙型
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[teamsAsyncOperation](teamsasyncoperation.md)の現在の状態を表します。
+
+[TeamsAsyncOperation](teamsasyncoperation.md)の現在の状態を表します。
 
 ## <a name="members"></a>メンバー
 
@@ -26,11 +27,3 @@ ms.locfileid: "32462229"
 |inProgress|pbm-2|操作が実行されています。|
 |失敗|1/3|操作が正常に完了しました。|
 |フェール|2/4|操作は失敗しました。|
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/teamsasyncoperationstatus.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

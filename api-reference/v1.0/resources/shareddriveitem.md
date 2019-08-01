@@ -4,12 +4,15 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SharedDriveItem
 localization_priority: Normal
-ms.openlocfilehash: 0d0c5a34d12fe467196c0616befc7376835b632c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: sharedDriveItem リソースは、Shares API を使用して共有 driveItem にアクセスする場合に返されます。
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 1f6684e9c266a800f5a76a7085a8af22ea9518e8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549637"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034336"
 ---
 # <a name="shareddriveitem-resource-type"></a>SharedDriveItem リソースの種類
 
@@ -47,7 +50,7 @@ ms.locfileid: "32549637"
 
 | プロパティ | 型                          | 説明                                                      |
 | :------- | :---------------------------- | :--------------------------------------------------------------- |
-| id       | String                        | アクセスされている共有の一意識別子。              |
+| id       | 文字列                        | アクセスされている共有の一意識別子。              |
 | name     | String                        | 共有項目の表示名。                             |
 | owner    | [IdentitySet](identityset.md) | 参照されている共有アイテムの所有者に関する情報。 |
 
@@ -56,15 +59,15 @@ ms.locfileid: "32549637"
 | リレーションシップ名 | 種類                | 説明
 | ------------------|:--------------------|:-----------------------------------
 | **driveItem**     | [**driveItem**][driveItem]   | 基になる **driveItem** にアクセスするために使用
-| **list**          | [**list**][list]        | 基になる **list** にアクセスするために使用
+| **list**          | [**一覧**][list]        | 基になる **list** にアクセスするために使用
 | **listItem**      | [**listItem**][listItem]    | 基になる **listItem** にアクセスするために使用
-| **site**          | [**site**][site]        | 基になる **site** にアクセスするために使用
+| **site**          | [**サイト**][site]        | 基になる **site** にアクセスするために使用
 
 または、個人用の OneDrive アカウントから共有される **driveItem** には、次のリレーションシップも使用できます。
 
 | リレーションシップ名 | 種類                         | 説明
 | ------------------|:-----------------------------|:-----------------------------------
-| **items**         | [**driveItem**][driveItem] コレクション | 共有ルートに含まれているすべての driveItem。 このコレクションを列挙することはできません。
+| **items**         | [**Drive item**][driveItem]コレクション | 共有ルートに含まれているすべての driveItem。 このコレクションを列挙することはできません。
 | **root**          | [**driveItem**][driveItem]   | 基になる**ドライブ項目**へのアクセスに使用されます。 非推奨-- `driveItem`代わりに使用します。
 
 [driveItem]: driveitem.md

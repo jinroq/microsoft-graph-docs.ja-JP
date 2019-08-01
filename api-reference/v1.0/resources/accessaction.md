@@ -5,16 +5,17 @@ title: accessAction リソースの種類
 description: AccessAction オブジェクトは、アイテムへのアクセスに関する情報を提供します。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: eb2cb0a0c8fd78a1977320a3a02f9de5eb31946c
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+doc_type: resourcePageType
+ms.openlocfilehash: e27c7513e86932569849cdf794ab55ef4b40b039
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33970750"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033279"
 ---
 # <a name="accessaction-resource-type"></a>accessAction リソースの種類
 
-[**Itemactivity**] [ activity]に**accessaction**リソースが存在する場合は、アクティビティがアイテムにアクセスしたことを示します。
+[**Itemactivity**][activity]に**accessaction**リソースが存在する場合は、アクティビティがアイテムにアクセスしたことを示します。
 
 >**注:** 現在、アクセスアクティビティレコードは、SharePoint と OneDrive for business でのみ使用できます。
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1b447ddc1a627c1a3e42a53916c0de716dc6dec5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: adc47fbbee90330af210207470afc25fb859d970
+ms.sourcegitcommit: a700f1c283a5d847cd1697e26bcd47bc8625384e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35946060"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36049604"
 ---
 # <a name="delete-accessreview"></a>AccessReview の削除
 
@@ -24,7 +24,7 @@ Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、 [
 |:--------------------------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント)     | AccessReview.ReadWrite.All |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
-|アプリケーション                            | サポートされていません。 |
+|アプリケーション                            | AccessReview の構成 |
 
 また、呼び出し元には、 [programcontrol](../resources/programcontrol.md)を削除できるように、すべてのアクセス許可が含まれている必要があります。
 

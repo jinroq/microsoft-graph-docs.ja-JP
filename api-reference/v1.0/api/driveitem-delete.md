@@ -5,12 +5,14 @@ ms.date: 09/10/2017
 title: ファイルまたはフォルダーを削除する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 9bb6661ff7a43fbf29c80a77e5b909322bfbf569
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: DriveItem を、ID またはパスを使用して削除します。
+doc_type: apiPageType
+ms.openlocfilehash: c9ee8f0f92625c51e44bca12158822f4054f5004
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35881755"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015524"
 ---
 # <a name="delete-a-driveitem"></a>DriveItem を削除する
 

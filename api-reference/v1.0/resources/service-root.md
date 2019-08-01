@@ -2,12 +2,15 @@
 title: サービス ルート
 description: 2015-10-25 14:57:30 UTC-->
 localization_priority: Normal
-ms.openlocfilehash: 7fc6729eac7dc32e0f92770fc3357af960510dd8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: conceptualPageType
+ms.openlocfilehash: 8a4c31b24fd22929fae3d4848c141efacb894ef7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549658"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034413"
 ---
 # <a name="service-root"></a>サービス ルート
 
@@ -20,7 +23,7 @@ ms.locfileid: "32549658"
 |:---------------|:--------|:----------|
 |[デバイスを作成する](../api/device-post-devices.md) |[device](device.md)| デバイス コレクションに投稿して、新しいイベントを作成します。|
 |[デバイスを一覧表示する](../api/device-list.md) | [device](device.md) コレクション |デバイス オブジェクトのコレクションを取得します。 |
-|[ irectoryRole をアクティブにする](../api/directoryrole-post-directoryroles.md) | [directoryRole](directoryrole.md) |ディレクトリ ロールをアクティブにします。 |
+|[Activate directoryRole](../api/directoryrole-post-directoryroles.md) | [directoryRole](directoryrole.md) |ディレクトリ ロールをアクティブにします。 |
 |[directoryRole を一覧表示する](../api/directoryrole-list.md) | [directoryRole](directoryrole.md) コレクション |directoryRole オブジェクトのコレクションを取得します。 |
 |[directoryRoleTemplate を一覧表示する](../api/directoryroletemplate-list.md) | [directoryRoleTemplate](directoryroletemplate.md) コレクション |directoryRoleTemplate オブジェクトのコレクションを取得します。 |
 |[ドライブを一覧表示する](../api/drive-list.md) | [drive](drive.md) コレクション |ドライブ オブジェクトのコレクションを取得します。 |

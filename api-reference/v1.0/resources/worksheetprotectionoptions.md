@@ -4,16 +4,15 @@ description: シート保護のオプションを表します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 80a77f0ca9e1945a75f1b07aa40ccae490942f6d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 083cc86ef5fd7361f2dfd11f8cb2aff501d06035
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521874"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033237"
 ---
 # <a name="worksheetprotectionoptions-resource-type"></a>WorksheetProtectionOptions リソースの種類
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 シート保護のオプションを表します。
 
@@ -41,7 +40,7 @@ ms.locfileid: "32521874"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.worksheetProtectionOptions"
+  "@odata.type": "microsoft.graph.workbookWorksheetProtectionOptions"
 }-->
 
 ```json
@@ -63,15 +62,10 @@ ms.locfileid: "32521874"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "WorksheetProtectionOptions resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/worksheetprotectionoptions.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

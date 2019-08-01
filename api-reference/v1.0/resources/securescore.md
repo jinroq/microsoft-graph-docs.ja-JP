@@ -3,12 +3,14 @@ title: secureScore リソースの種類
 description: テナントとコントロールレベルでのスコアデータの1日あたりのテナントのセキュリティスコアを表します。
 localization_priority: Normal
 author: preetikr
-ms.openlocfilehash: 89842579457365f7da10509b2b4ade31f55de4f9
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 395c5ed0594d1f509bb664b5aee6ea18bb42af0a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629265"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034483"
 ---
 # <a name="securescore-resource-type"></a>secureScore リソースの種類
 
@@ -20,7 +22,7 @@ ms.locfileid: "33629265"
 | メソッド   | 戻り値の型|説明|
 |:---------------|:--------|:----------|
 |[secureScores のリスト](../api/security-list-securescores.md) | [secureScores](securescore.md)コレクション |SecureScore オブジェクトのコレクションを取得します。|
-|[SecureScore を取得する](../api/securescore-get.md) | [secureScore](securescore.md) |SecureScore オブジェクトのプロパティとメタデータを読み取ります。 | 
+|[secureScore の取得](../api/securescore-get.md) | [secureScore](securescore.md) |SecureScore オブジェクトのプロパティとメタデータを読み取ります。 | 
 
 
 
@@ -33,7 +35,7 @@ ms.locfileid: "33629265"
 |   activeUserCount |   Int32   |   指定したテナントのアクティブなユーザー数。  |
 |   createdDateTime |   DateTimeOffset  |   エンティティが作成された日付。  |
 |   currentScore    |   2 行分  |   指定された日付における現在のテナントのスコア。    |
-|   enabledServices |   String collection   |   テナントの Microsoft 提供のサービス (Exchange online、Skype、Sharepoint など)。   |
+|   enabledServices |   文字列コレクション   |   テナントの Microsoft 提供のサービス (Exchange online、Skype、Sharepoint など)。   |
 |   licensedUserCount   |   Int32   |   指定したテナントのライセンスされたユーザーカウント。    |
 |   maxScore |  2 行分  |   指定した日付の有効なテナントの最大スコア。    |
 |   averageComparativeScores |  [averageComparativeScore](averagecomparativescore.md)コレクション    |範囲内の別のスコープ (たとえば、業種別平均、座席の平均)、コントロールカテゴリ (Id、データ、デバイス、アプリ、インフラストラクチャ) の平均スコア。 |

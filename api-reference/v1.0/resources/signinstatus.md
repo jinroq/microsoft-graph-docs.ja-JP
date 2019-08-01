@@ -4,12 +4,13 @@ description: サインインの状態 (成功または失敗) を提供します
 localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3a57e5bb0e53f5deec4d0c6d92541f7d2bd4744d
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+doc_type: resourcePageType
+ms.openlocfilehash: 97f564ed8e17eed8a3e4c24b7dc2e012bdb9ec6a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629223"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034196"
 ---
 # <a name="signinstatus-resource-type"></a>signInStatus リソースの種類
 

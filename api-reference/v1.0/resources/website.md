@@ -2,12 +2,15 @@
 title: web サイトリソースの種類
 description: Web サイトを表します。
 localization_priority: Normal
-ms.openlocfilehash: 1ffbee8a67527aac97bb4f60b7f8b1637ba1ebe5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 6a59022426392bbf3a94c6fb82b941131db3c1d8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457026"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033384"
 ---
 # <a name="website-resource-type"></a>web サイトリソースの種類
 
@@ -18,7 +21,7 @@ Web サイトを表します。
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |type|websiteType| 使用可能な値: `other`、`home`、`work`、`blog`、`profile`。|
-|address|string|web サイトの URL。|
+|address|string|Web サイトの URL。|
 |displayName|string|Web サイトの表示名。|
 
 ## <a name="json-representation"></a>JSON 表記

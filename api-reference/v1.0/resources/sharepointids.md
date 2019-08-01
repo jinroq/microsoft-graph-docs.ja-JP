@@ -5,12 +5,14 @@ ms.date: 09/10/2017
 title: SharePointIds
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 233c2aa4b8ce67b2382996181c9ba2ab57b9e69c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: SharePointIds リソースは、SharePoint サイトまたは OneDrive for Business に保存されているアイテムのさまざまな識別子を 1 つの構造にグループ化します。
+doc_type: resourcePageType
+ms.openlocfilehash: a7dfd936770ac85b458cb8b086ff05e328d2ea9c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549588"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034280"
 ---
 # <a name="sharepointids-resource-type"></a>SharePointIds リソースの種類
 

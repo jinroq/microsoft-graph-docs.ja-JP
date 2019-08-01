@@ -4,16 +4,17 @@ description: 新しい mobileAppCategory オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3abe0c2df1695f5e1f27a414265bfc357d832b1a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 71d82b40a7acff811ef474c7c505fbbd6825002b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32541690"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36016133"
 ---
 # <a name="create-mobileappcategory"></a>mobileAppCategory の作成
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい [mobileAppCategory](../resources/intune-apps-mobileappcategory.md) オブジェクトを作成します。
 
@@ -49,7 +50,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/categories
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|id|文字列|エンティティのキー。|
 |displayName|String|アプリのカテゴリの名前。|
 |lastModifiedDateTime|DateTimeOffset|mobileAppCategory が最後に変更された日時。|
 

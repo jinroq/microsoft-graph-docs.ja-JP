@@ -2,12 +2,15 @@
 title: singleValueLegacyExtendedProperty リソースの種類
 description: '単一値が含まれる拡張プロパティ。 '
 localization_priority: Normal
-ms.openlocfilehash: f865da1a8a4211ac99a70881b2851b38b8e72727
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 11fb56ec66ffb74a284f0636d4577f911e9993d1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549644"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034189"
 ---
 # <a name="singlevaluelegacyextendedproperty-resource-type"></a>singleValueLegacyExtendedProperty リソースの種類
 
@@ -29,7 +32,7 @@ ms.locfileid: "32549644"
 |id|string|プロパティの識別に使用されるプロパティ ID。読み取り専用です。|
 |value|string|プロパティ値。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 

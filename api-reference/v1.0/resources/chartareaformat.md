@@ -4,12 +4,13 @@ description: グラフ領域全体の書式設定プロパティをカプセル�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: a447b604807f3ae223445db953d45928eda9f36b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: ee39e1fc58fe604ff24433dcb540b44e22bb3ee9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569390"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033006"
 ---
 # <a name="chartareaformat-resource-type"></a>ChartAreaFormat リソースの種類
 
@@ -17,7 +18,7 @@ ms.locfileid: "32569390"
 
 
 ## <a name="methods"></a>メソッド
-なし
+None
 
 ## <a name="properties"></a>プロパティ
 なし
@@ -26,7 +27,7 @@ ms.locfileid: "32569390"
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |fill|[WorkbookChartFill](chartfill.md)|背景の書式設定情報を含む、オブジェクトの塗りつぶしの書式を表します。値の取得のみ可能です。|
-|font|[WorkbookChartFont](chartfont.md)|現在のオブジェクトのフォント属性 (フォント名、フォント サイズ、色など) を表します。 値の取得のみ可能です。|
+|font|[WorkbookChartFont](chartfont.md)|現在のオブジェクトのフォント属性 (フォント名、フォント サイズ、色など) を表します。 読み取り専用です。|
 
 ## <a name="json-representation"></a>JSON 表記
 

@@ -4,16 +4,17 @@ description: managedAndroidStoreApp を削除します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 15158ab9f9868f24496787c56297fb253940b996
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 942eb8dd0d1f643101ef80b32e5b5338ac9196c0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32578597"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36002406"
 ---
 # <a name="delete-managedandroidstoreapp"></a>Delete managedAndroidStoreApp
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [managedAndroidStoreApp](../resources/intune-apps-managedandroidstoreapp.md) を削除します。
 

@@ -4,12 +4,13 @@ description: 監査アクティビティに関連付けられているターゲ�
 localization_priority: Normal
 author: dhanyahk
 ms.prod: azure-ad
-ms.openlocfilehash: 33a381d6088245be235f37549184183443fe3237
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+doc_type: resourcePageType
+ms.openlocfilehash: e21e2fad07dca15c5be42b8de29aa5c791c50d69
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629216"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033902"
 ---
 # <a name="targetresource-resource-type"></a>targetResource リソースの種類
 

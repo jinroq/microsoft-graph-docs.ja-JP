@@ -4,16 +4,17 @@ description: iosVppEBookAssignment を削除します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 17556ff93c13032457d0cf69cae9f2a15a9d7035
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 0dfb0950b6827d73c84e24a58448ec34c45a1d4a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32524915"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015804"
 ---
 # <a name="delete-iosvppebookassignment"></a>iosVppEBookAssignment の削除
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md) を削除します。
 

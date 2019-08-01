@@ -2,12 +2,15 @@
 title: workingHours リソースの種類
 description: ユーザーが働く曜日と、特定のタイムゾーンの時間を表します。
 localization_priority: Normal
-ms.openlocfilehash: e0f2cf09f1e0f2270b5d1ae08ce9e5757c5900da
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: c3449e64f94a3e90bae443a23e7b941116df0291
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345394"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033328"
 ---
 # <a name="workinghours-resource-type"></a>workingHours リソースの種類
 

@@ -4,12 +4,13 @@ description: テナント (ディレクトリ) のユーザーおよびアプリ
 author: dhanyahk
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fb73b843643c5ffba1b5cdac3d7fd519819109ba
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+doc_type: resourcePageType
+ms.openlocfilehash: 735f7cc453a15ebf36aabc0e4d6a7a845a6c416c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629244"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034231"
 ---
 # <a name="signin-resource-type"></a>サインイン リソースの種類
 

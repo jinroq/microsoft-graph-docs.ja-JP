@@ -4,16 +4,17 @@ description: windowsUniversalAppX を削除します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cfe7f8047c3a1c01650ccf51329b573554c6a82b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 5235d20b1086bee93d1172dd8c6a865ebc1ab090
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32453759"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015979"
 ---
 # <a name="delete-windowsuniversalappx"></a>Delete windowsUniversalAppX
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [windowsUniversalAppX](../resources/intune-apps-windowsuniversalappx.md) を削除します。
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 838278fe9b1f77d1dfeae048e932ac62792a4606
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2d052357fd5ff609a701753348f6a276d0d12338
+ms.sourcegitcommit: a700f1c283a5d847cd1697e26bcd47bc8625384e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35946034"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36049549"
 ---
 # <a name="get-accessreview"></a>AccessReview を取得する
 
@@ -27,9 +27,9 @@ Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、 [
 
 |アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント)     | AccessReview.Read.All  |
+|委任 (職場または学校のアカウント)     | AccessReview を参照してください。  |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
-|アプリケーション                            | AccessReview.Read.All  |
+|アプリケーション                            | AccessReview を参照してください。  |
 
 この API を呼び出すためには、サインインしているユーザーが、アクセスレビューを読み取ることを許可するディレクトリロールにあるか、アクセスレビューのレビュー担当者としてユーザーを割り当てることも必要です。  詳細については、「[アクセスレビュー](../resources/accessreviews-root.md)の役割とアクセス許可の要件」を参照してください。
 

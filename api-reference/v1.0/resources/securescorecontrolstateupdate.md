@@ -3,12 +3,14 @@ title: secureScoreControlStateUpdate リソースの種類
 description: このリソースには、ユーザーが更新したコントロールの状態の履歴が含まれています (コントロールの状態には、Default、ThirdParty、、レビュー済み) などがあります。
 localization_priority: Normal
 author: preetikr
-ms.openlocfilehash: ac66fb2085949e375c79b18bfdfd39e84392159d
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 9e051f2c4319a2b2ae1e3dbd9ba633785a345c4a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629251"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034476"
 ---
 #  <a name="securescorecontrolstateupdate-resource-type"></a>secureScoreControlStateUpdate リソースの種類
 

@@ -2,12 +2,15 @@
 title: verifiedDomain リソースの種類
 description: テナントのドメインを指定します。 組織エンティティの**verifiedDomains**プロパティは、 **VerifiedDomain**のコレクションです。
 localization_priority: Normal
-ms.openlocfilehash: 6eb6490ce8dac29f2617b7873230fad7c7b5c536
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 758d76bd5e1eb577223a41e4e0452179d8bdafc7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456907"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033461"
 ---
 # <a name="verifieddomain-resource-type"></a>verifiedDomain リソースの種類
 
@@ -19,7 +22,7 @@ ms.locfileid: "32456907"
 |:---------------|:--------|:----------|
 |capabilities|String|「電子メール」、「OfficeCommunicationsOnline」など。|
 |isDefault|ブール型 (Boolean)|                これがテナントに関連付けられている既定のドメインの場合は **true**、それ以外の場合は **false**。            |
-|isinitial|ブール値|これがテナントに関連付けられている初期ドメインの場合は **true**、それ以外の場合は **false**。|
+|isInitial|ブール値|これがテナントに関連付けられている初期ドメインの場合は **true**、それ以外の場合は **false**。|
 |name|String|ドメイン名。「contoso.onmicrosoft.com」など。|
 |type|String|「管理対象」など。|
 

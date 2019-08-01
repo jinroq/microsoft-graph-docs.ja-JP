@@ -4,16 +4,17 @@ description: deviceInstallState を削除します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d19c1e9052e231cfd6f6ebcdec6bdf7255806d28
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: b982dcff27100d699fcd1b99f9d62f1545bd1ae3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570569"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015881"
 ---
 # <a name="delete-deviceinstallstate"></a>Delete deviceInstallState
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [deviceInstallState](../resources/intune-books-deviceinstallstate.md) を削除します。
 

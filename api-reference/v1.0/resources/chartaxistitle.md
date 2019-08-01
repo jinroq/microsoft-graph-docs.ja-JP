@@ -4,12 +4,13 @@ description: グラフ軸のタイトルを表します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 877635e2455dcf63c2b420283a2ec858f590fa17
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 5c89b3e90cce7dcc064dfd7186eafcc26a37dd0c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569229"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033027"
 ---
 # <a name="chartaxistitle-resource-type"></a>ChartAxisTitle リソースの種類
 
@@ -32,7 +33,7 @@ ms.locfileid: "32569229"
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|format|[WorkbookChartAxisTitleFormat](chartaxistitleformat.md)|グラフ軸のタイトルの書式設定を表します。 値の取得のみ可能です。|
+|format|[WorkbookChartAxisTitleFormat](chartaxistitleformat.md)|グラフ軸のタイトルの書式設定を表します。 読み取り専用です。|
 
 ## <a name="json-representation"></a>JSON 表記
 

@@ -4,12 +4,13 @@ description: グラフの 1 つの軸を表します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 88066c356306a619ee620a13eefb6592d7b5f100
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 77d688d71757cac9f6d58b9d1bc344d37550e3a3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569243"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033017"
 ---
 # <a name="chartaxis-resource-type"></a>ChartAxis リソースの種類
 
@@ -26,7 +27,7 @@ ms.locfileid: "32569243"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-| id       |string   | 一意の識別子。 読み取り専用。|
+| id       |string   | 一意の識別子。 読み取り専用です。|
 |majorUnit|Json|2 つの大きい目盛の間隔を表します。数値の値または空の文字列を設定できます。戻り値は常に数値です。|
 |maximum|Json|数値軸の最大値を表します。数値の値または空の文字列を設定できます (軸の値が自動の場合)。戻り値は常に数値です。|
 |minimum|Json|数値軸の最小値を表します。数値の値または空の文字列を設定できます (軸の値が自動の場合)。戻り値は常に数値です。|
@@ -38,7 +39,7 @@ ms.locfileid: "32569243"
 |format|[WorkbookChartAxisFormat](chartaxisformat.md)|グラフ オブジェクトの書式設定を表します。これには線とフォントの書式設定などがあります。値の取得のみ可能です。|
 |majorGridlines|[WorkbookChartGridlines](chartgridlines.md)|指定された軸の目盛線を表す gridlines オブジェクトを返します。値の取得のみ可能です。|
 |minorGridlines|[WorkbookChartGridlines](chartgridlines.md)|指定された軸の小さい目盛線を表す gridlines オブジェクトを返します。値の取得のみ可能です。|
-|title|[WorkbookChartAxisTitle](chartaxistitle.md)|軸タイトルを表します。 値の取得のみ可能です。|
+|title|[WorkbookChartAxisTitle](chartaxistitle.md)|軸タイトルを表します。 読み取り専用です。|
 
 ## <a name="json-representation"></a>JSON 表記
 

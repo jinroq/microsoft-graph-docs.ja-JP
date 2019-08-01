@@ -4,12 +4,13 @@ description: 適用される条件付きアクセスポリシーに関連する�
 localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: bb5562b07e60b10a36dafac37d5839d9bacc060a
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+doc_type: resourcePageType
+ms.openlocfilehash: d8b569436152e2a57e152f0fe2f2c632f0d2d93a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629342"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033251"
 ---
 # <a name="appliedconditionalaccesspolicy-resource-type"></a>appliedConditionalAccessPolicy リソースの種類
 
@@ -20,8 +21,8 @@ ms.locfileid: "33629342"
 | プロパティ   | 型 |説明|
 |:---------------|:--------|:----------|
 |displayName|String|条件付きアクセスポリシーの名前を参照します (例: "Salesforce の MFA が必要")。|
-|enforcedGrantControls|String collection|条件付きアクセスポリシーによって適用される grant コントロールを参照します (例: "多要素認証を必要とする")。|
-|enforcedSessionControls|String collection|条件付きアクセスポリシーによって適用されるセッションコントロールを参照します (例: "アプリ強制コントロールが必要です")。|
+|enforcedGrantControls|文字列コレクション|条件付きアクセスポリシーによって適用される grant コントロールを参照します (例: "多要素認証を必要とする")。|
+|enforcedSessionControls|文字列コレクション|条件付きアクセスポリシーによって適用されるセッションコントロールを参照します (例: "アプリ強制コントロールが必要です")。|
 |id|文字列|条件付きアクセスの一意の GUID。 y|
 |result|String| トリガーされた CA ポリシーの結果を示します。 使用可能な値は次のいずれかです。<br/>`success`<br/>`failure`<br/>`notApplied`-ポリシー条件が満たされていないため、ポリシーは適用されません。<br/>`notEnabled`-これは、ポリシーが無効な状態になっているためです。|
 

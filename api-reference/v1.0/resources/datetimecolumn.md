@@ -4,12 +4,15 @@ ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: DateTimeColumn
 localization_priority: Normal
-ms.openlocfilehash: ba650ccbe307ba286cf2182bda35a21f3c675114
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: columnDefinition リソースの dateTimeColumn は、列の値が日付または時刻であることを示します。
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 35a80a369f348193858a54226ae5b239df67447f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32574765"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032775"
 ---
 # <a name="datetimecolumn-resource-type"></a>DateTimeColumn リソースの種類
 
@@ -34,7 +37,7 @@ ms.locfileid: "32574765"
 | **displayAs**      | string             | UX での値の表示方法です。 `default`、`friendly`、`standard` のいずれかでなければなりません。 詳細については、後述します。 指定しない場合、`default` として扱われます。
 | **format**         | string             | 値を日付のみで表示するか、日付と時刻で表示するかを示します。 `dateOnly` または `dateTime` のいずれかでなければなりません。
 
-## <a name="displayas-options"></a>displayas オプション
+## <a name="displayas-options"></a>DisplayAs オプション
 
 | 値        | 説明
 |:-------------|:--------------------------------------------------------------

@@ -1,15 +1,18 @@
 ---
-title: settingtemplatevalue リソースの種類
+title: settingTemplateValue リソースの種類
 description: 設定がインスタンス化されていない場合に、設定の既定値を含む、個々のテンプレート設定の定義を表します。
 localization_priority: Normal
-ms.openlocfilehash: 0cb3376177e3a4efcae54a591a083914db6b56d7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: f4ac39001e260d7f65b3a593d90976f94acd4693
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549693"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034392"
 ---
-# <a name="settingtemplatevalue-resource-type"></a>settingtemplatevalue リソースの種類
+# <a name="settingtemplatevalue-resource-type"></a>settingTemplateValue リソースの種類
 
 設定がインスタンス化されていない場合に、設定の既定値を含む、個々のテンプレート設定の定義を表します。
 

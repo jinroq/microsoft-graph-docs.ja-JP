@@ -4,12 +4,13 @@ description: 指定したグループの一覧のメンバーシップを確認�
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: cb091ab11587a749a2aea90b039f345307798cc3
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 4dab149dcf4881ed23c8852f26d89aee43edb123
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35893318"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36016980"
 ---
 # <a name="check-member-groups"></a>メンバー グループをチェックする
 

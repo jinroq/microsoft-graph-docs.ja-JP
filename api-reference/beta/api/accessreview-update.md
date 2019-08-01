@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6818c8f2c8d7c0dca57577b784f85a7b9da30d5a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2ab56d4c9ffaced579b4b1933f461227cccb25ff
+ms.sourcegitcommit: a700f1c283a5d847cd1697e26bcd47bc8625384e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35945950"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36049520"
 ---
 # <a name="update-accessreview"></a>AccessReview を更新する
 
@@ -28,7 +28,7 @@ Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、�
 |:--------------------------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント)     | AccessReview.ReadWrite.All |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
-|アプリケーション                            | サポートされていません。 |
+|アプリケーション                            | AccessReview の構成 |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

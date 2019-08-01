@@ -4,12 +4,13 @@ description: グラフの凡例の書式設定プロパティをカプセル化�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: f35f7a3cf152024bd89f03daf8be98ec1d8066b0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 2148b6b5baf8bb680f85954d000da097bcf8f0b9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569096"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032957"
 ---
 # <a name="chartlegendformat-resource-type"></a>ChartLegendFormat リソースの種類
 
@@ -17,7 +18,7 @@ ms.locfileid: "32569096"
 
 
 ## <a name="methods"></a>メソッド
-なし
+None
 
 ## <a name="properties"></a>プロパティ
 なし
@@ -26,7 +27,7 @@ ms.locfileid: "32569096"
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |fill|[WorkbookChartFill](chartfill.md)|背景の書式設定情報を含む、オブジェクトの塗りつぶしの書式を表します。値の取得のみ可能です。|
-|font|[WorkbookChartFont](chartfont.md)|グラフの凡例のフォント属性 (フォント名、フォント サイズ、色など) を表します。 値の取得のみ可能です。|
+|font|[WorkbookChartFont](chartfont.md)|グラフの凡例のフォント属性 (フォント名、フォント サイズ、色など) を表します。 読み取り専用です。|
 
 
 ## <a name="json-representation"></a>JSON 表記

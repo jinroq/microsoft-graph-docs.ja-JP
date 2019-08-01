@@ -5,12 +5,14 @@ ms.date: 09/10/2017
 title: ファイルまたはフォルダーのサムネイルを取得する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 3321089ce2ac1e57a6dc176d5ab14f03e3530333
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: DriveItem リソースの ThumbnailSet リソースのコレクションを取得します。
+doc_type: apiPageType
+ms.openlocfilehash: 1a0b500bf14c8fb09819d3c4e38336e90bd3b1ef
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35888095"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015433"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>DriveItem のサムネイルを一覧表示する
 

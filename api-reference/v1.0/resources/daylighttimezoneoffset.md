@@ -2,12 +2,15 @@
 title: daylightTimeZoneOffset リソースの種類
 description: タイム ゾーンが標準時から夏時間に切り替わるタイミングを指定します。
 localization_priority: Normal
-ms.openlocfilehash: 740b6da9a934c1a30a382d46e64377f9a73ffaa1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: d5950fe533150fe41072c339f65c8757897255ba
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32574737"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032768"
 ---
 # <a name="daylighttimezoneoffset-resource-type"></a>daylightTimeZoneOffset リソースの種類
 

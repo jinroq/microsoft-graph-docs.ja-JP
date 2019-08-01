@@ -2,12 +2,15 @@
 title: SortField リソースの種類
 description: 並べ替え操作の条件を表します。
 localization_priority: Normal
-ms.openlocfilehash: 2c1b9a272fd024455d1297c5f59ca7684283e1a1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 33c2d37f46d4fdfdaef4bc5b6d92557668bf9d70
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561300"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034056"
 ---
 # <a name="sortfield-resource-type"></a>SortField リソースの種類
 
@@ -20,7 +23,7 @@ ms.locfileid: "32561300"
 |color|string|並べ替えがフォントまたはセルの色で行われるときに条件の対象となる色を表します。|
 |dataOption|string|このフィールドのその他の並べ替えオプションを表します。 使用可能な値は`Normal`、 `TextAsNumber`、です。|
 |Key|int|条件の対象とする列 (または行。並べ替えの方向によって異なります) を表します。最初の列 (または行) からのオフセットとして表します。|
-|sortOn|string|この条件の並べ替えの種類を表します。 使用可能な値は`Value`、 `CellColor`、 `FontColor`、 `Icon`、です。|
+|sortOn|string|この条件の並べ替えの種類を表します。 使用可能な値: `Value`、`CellColor`、`FontColor`、`Icon`。|
 |アイコン|[WorkbookIcon](icon.md)|並べ替えがセルのアイコンで行われる場合に、条件の対象となるアイコンを表します。|
 
 ## <a name="json-representation"></a>JSON 表記

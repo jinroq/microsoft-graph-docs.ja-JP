@@ -4,12 +4,13 @@ description: Excel のピボットテーブルを表します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 5f6360ce1eacc313f1bcc8a9f59b44b216a87b84
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: c5b841495b19a81967ba056f702a88c4cbe74efc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456865"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033363"
 ---
 # <a name="pivottable-resource-type"></a>ピボットテーブル リソースの種類
 
@@ -26,7 +27,7 @@ Excel のピボットテーブルを表します。
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|id|String| ピボットテーブルの ID。 読み取り専用です。|
+|id|文字列| ピボットテーブルの ID。 読み取り専用です。|
 |name|String|ピボットテーブルの名前。    |
 
 ## <a name="relationships"></a>リレーションシップ

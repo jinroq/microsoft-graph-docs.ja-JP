@@ -4,16 +4,17 @@ description: macOSOfficeSuiteApp を削除します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c42cfc23db99125bac58fd42f412cdddddc42c7e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 6834e097ccc3a6b447f7508914b584ca582cf7be
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32577239"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36002483"
 ---
 # <a name="delete-macosofficesuiteapp"></a>macOSOfficeSuiteApp の削除
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [macOSOfficeSuiteApp](../resources/intune-apps-macosofficesuiteapp.md) を削除します。
 

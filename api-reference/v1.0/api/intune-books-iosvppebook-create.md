@@ -4,16 +4,17 @@ description: 新しい iosVppEBook オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6251e3ecda1597653ff2fed9575e7357e89f652f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 267ee13b37657d18a3123cec15eb3ea88d70a47d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32577106"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015839"
 ---
 # <a name="create-iosvppebook"></a>iosVppEBook の作成
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい [iosVppEBook](../resources/intune-books-iosvppebook.md) オブジェクトを作成します。
 
@@ -48,9 +49,9 @@ POST /deviceAppManagement/managedEBooks
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
+|id|文字列|エンティティのキー。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
 |displayName|String|電子ブックの名前。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
-|説明|文字列型 (String)|説明。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
+|description|文字列型 (String)|説明。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
 |publisher|String|発行元。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
 |publishedDateTime|DateTimeOffset|電子ブックが発行された日時。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|ブック カバー。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|

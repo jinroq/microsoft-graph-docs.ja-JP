@@ -4,12 +4,15 @@ ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: TextColumn
 localization_priority: Normal
-ms.openlocfilehash: 1e10997bd70f97fa91177aee48a6ffcecff40ab5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: columnDefinition リソースの textColumn は、列の値がテキストであることを示します。
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 37a5bbd985d163cf627f4bc0a16a756eaf00af66
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456998"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033657"
 ---
 # <a name="textcolumn-resource-type"></a>TableColumn リソースの種類
 

@@ -3,12 +3,14 @@ title: controlScore リソースの種類
 description: このリソースには、各コントロールのテナントのスコアと説明が含まれています。
 localization_priority: Normal
 author: preetikr
-ms.openlocfilehash: 64b5377fce01273ab31d7ec293f5dc7a6e1342ff
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 68e4bf278b7d1b6ea6f00f75192847abab1ae3a4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629286"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032845"
 ---
 #  <a name="controlscore-resource-type"></a>controlScore リソースの種類
 
@@ -21,7 +23,7 @@ ms.locfileid: "33629286"
 |controlName|String|一意の名前を制御します。|
 |score|2 行分|コントロールのテナントが獲得したスコア (コントロールのテナント操作に応じて日によって日付が変化します)。|
 |controlCategory|String|コントロールアクションカテゴリ (Id、データ、デバイス、アプリ、インフラストラクチャ)。|
-|説明|String| コントロールの説明。|
+|description|String| コントロールの説明。|
 
 ## <a name="json-representation"></a>JSON 表記
 

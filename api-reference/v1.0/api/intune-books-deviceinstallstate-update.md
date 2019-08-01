@@ -4,16 +4,17 @@ description: deviceInstallState オブジェクトのプロパティを更新し
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e1571508451dee371e5c000b8cc8d8234c1b661a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 5da7df5df6966cabf5b2435057a09399c00f8152
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554521"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015867"
 ---
 # <a name="update-deviceinstallstate"></a>deviceInstallState の更新
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [deviceInstallState](../resources/intune-books-deviceinstallstate.md) オブジェクトのプロパティを更新します。
 

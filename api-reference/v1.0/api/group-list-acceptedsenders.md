@@ -4,12 +4,13 @@ description: このグループの許可された送信者リストに含まれ�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: a00c29dc1a3667bf89a4ecc7b46837c4dd35ffa6
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 4981f733db2f1f9949484456d970d71254c69c9c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35889289"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36016371"
 ---
 # <a name="list-acceptedsenders"></a>acceptedSenders のリスト化
 このグループの許可された送信者リストに含まれるユーザーまたはグループの一覧を取得します。

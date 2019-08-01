@@ -4,12 +4,13 @@ description: グラフのデータ系列を表します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: b9a857f127848f1ed0da8de673902527e3858ffe
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 4ecdc4c6f249b6783b023d0a69832a9415fc8549
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569040"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032915"
 ---
 # <a name="chartseries-resource-type"></a>ChartSeries リソースの種類
 
@@ -36,7 +37,7 @@ ms.locfileid: "32569040"
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |format|[WorkbookChartSeriesFormat](chartseriesformat.md)|グラフ の系列の書式設定を表します。これには塗りつぶしと線の書式設定などがあります。値の取得のみ可能です。|
-|points|[WorkbookChartPoint](chartpoint.md)コレクション|データ系列にあるすべてのポイントのコレクションを返します。 値の取得のみ可能です。|
+|points|[WorkbookChartPoint](chartpoint.md)コレクション|データ系列にあるすべてのポイントのコレクションを返します。 読み取り専用です。|
 
 ## <a name="json-representation"></a>JSON 表記
 

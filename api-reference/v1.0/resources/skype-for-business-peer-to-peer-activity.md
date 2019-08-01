@@ -4,12 +4,13 @@ description: Skype for Business ピア ツー ピア アクティビティ レ�
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 395babe88a330ddbd037a23575b06ba1dfa8059f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.openlocfilehash: 1bfab79ef77f0d92e47a9cabbd3c27d8cdcbbce6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555910"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034077"
 ---
 # <a name="skype-for-business-peer-to-peer-activity-reports"></a>Skype for Business ピア ツー ピア アクティビティ レポート
 

@@ -1,17 +1,18 @@
 ---
-title: usersecuritystate リソースの種類
+title: userSecurityState リソースの種類
 description: ユーザーアカウントに関するステートフルな情報を含みます。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9f451f2bc42500eee15bd59809c124a79186916f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 9f5a856a9ec04eaf9a04b82e2ed7697a6735ad88
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32463811"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033475"
 ---
-# <a name="usersecuritystate-resource-type"></a>usersecuritystate リソースの種類
+# <a name="usersecuritystate-resource-type"></a>userSecurityState リソースの種類
 
 ユーザーアカウントに関するステートフルな情報を含みます。
 
@@ -19,19 +20,19 @@ ms.locfileid: "32463811"
 
 | プロパティ   | 型 |説明|
 |:---------------|:--------|:----------|
-|usersecuritystate|String|AAD user オブジェクト識別子 (GUID)-物理/マルチアカウントユーザーエンティティを表します。|
-|アカウント|String|ユーザーアカウントのアカウント名 (Active Directory ドメインまたは DNS ドメインなし)-(と`mailNickName`も呼ばれます)。|
+|Usersecuritystate|String|AAD User オブジェクト識別子 (GUID)-物理/マルチアカウントユーザーエンティティを表します。|
+|accountName|String|ユーザーアカウントのアカウント名 (Active Directory ドメインまたは DNS ドメインなし)-(と`mailNickName`も呼ばれます)。|
 |domainName|String|ユーザーアカウントの NetBIOS/Active Directory ドメイン (つまり、"ドメイン \ ユーザー名" の形式)。|
-|emailRole|emailRole|電子メール関連の警告の場合-ユーザーアカウントの電子メール ' ロール '。 使用可能な値は、`unknown`、`sender`、`recipient` です。|
-|isvpn|Boolean|ユーザーが VPN を介してログオンしたかどうかを示します。|
-|logondatetime|DateTimeOffset|サインインが発生した時刻。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、`'2014-01-01T00:00:00Z'` のようになります。|
+|emailRole|emailRole|電子メール関連の警告の場合-ユーザーアカウントの電子メール ' ロール '。 可能な値は、`unknown`、`sender`、`recipient` です。|
+|isVpn|Boolean|ユーザーが VPN を介してログオンしたかどうかを示します。|
+|logonDateTime|DateTimeOffset|サインインが発生した時刻。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表します。これは常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |logonId|String|ユーザーのサインイン ID。|
 |logonIp|String|サインイン要求の送信元の IP アドレス。|
-|logonlocation|String|このユーザーによってユーザーのサインインイベントに関連付けられている場所 (IP アドレスマッピング)。|
-|logonType|logonType|ユーザーのサインイン方法。 可能な値は `unknown`、`interactive`、`remoteInteractive`、`network`、`batch`、`service` です。|
+|logonLocation|String|このユーザーによってユーザーのサインインイベントに関連付けられている場所 (IP アドレスマッピング)。|
+|logonType|logonType|ユーザーのサインイン方法。 使用可能な値: `unknown`、`interactive`、`remoteInteractive`、`network`、`batch`、`service`。|
 |onPremisesSecurityIdentifier|String|ユーザーの Active Directory (社内) セキュリティ識別子 (SID)。|
 |riskScore|String|ユーザーアカウントのプロバイダーが生成/計算したリスクスコア。 推奨値の範囲0-1。パーセンテージに相当します。|
-|userAccountType|userAccountSecurityType|ユーザーアカウントの種類 (グループメンバーシップ) (Windows 定義あたり)。 可能な値は、`unknown`、`standard`、`power`、`administrator` です。|
+|userAccountType|userAccountSecurityType|ユーザーアカウントの種類 (グループメンバーシップ) (Windows 定義あたり)。 使用可能な値は、`unknown`、`standard`、`power`、`administrator` です。|
 |userPrincipalName|String|ユーザーのサインイン名-インターネット形式: (ユーザーアカウント名) @ (ユーザーアカウントの DNS ドメイン名)。|
 
 ## <a name="json-representation"></a>JSON 表記

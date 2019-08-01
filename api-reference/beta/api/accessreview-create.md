@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ab1711a370d766631611d9cd5f96635760f98f48
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b55a35b3debe6d041c3e20aa54744339b963515c
+ms.sourcegitcommit: a700f1c283a5d847cd1697e26bcd47bc8625384e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35946059"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36049547"
 ---
 # <a name="create-accessreview"></a>AccessReview を作成する
 
@@ -29,7 +29,7 @@ Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、�
 |:--------------------------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント)     | AccessReview.ReadWrite.All |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
-|アプリケーション                            | サポートされていません。 |
+|アプリケーション                            | AccessReview の構成 |
 
 また、呼び出し元は、アクセスレビューを作成した後、プログラムの[制御](../resources/programcontrol.md)を作成できるようにするために、プログラムによる制御が必要になります。
 さらに、サインインしているユーザーも、アクセスレビューを作成することを許可するディレクトリロールにある必要があります。  詳細については、「[アクセスレビュー](../resources/accessreviews-root.md)の役割とアクセス許可の要件」を参照してください。

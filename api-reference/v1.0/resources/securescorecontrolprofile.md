@@ -3,12 +3,14 @@ title: secureScoreControlProfile リソースの種類
 description: テナントのセキュリティスコア (コントロールデータごと) を表します。 既定では、テナントのすべてのコントロールを返し、個々のコントロールを明示的に取得することができます。
 localization_priority: Normal
 author: preetikr
-ms.openlocfilehash: 98b335d536ab64000b65756f8c60e0f401f028fd
-ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 40bee951d3030772973911510ebba7cc90f412ae
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34537199"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034490"
 ---
 # <a name="securescorecontrolprofile-resource-type"></a>secureScoreControlProfile リソースの種類
 

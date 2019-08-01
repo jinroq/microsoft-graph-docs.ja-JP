@@ -4,12 +4,13 @@ description: directoryrole オブジェクトのプロパティを取得しま�
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7ae26075004d940ad522425d7665bfbb6abc4750
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 533efc66023ccf53df29ba484eee4ff1bd9d6e9d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35865943"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36016749"
 ---
 # <a name="get-directoryrole"></a>Get directoryRole
 
@@ -20,9 +21,9 @@ directoryrole オブジェクトのプロパティを取得します。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委任 (職場または学校のアカウント) | RoleManagement、RoleManagement、Directory.accessasuser.all、および all のいずれかを取得します。すべてのディレクトリについては。    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | Directory.Read.All、Directory.ReadWrite.All |
+|アプリケーション | RoleManagement、RoleManagement、および All のいずれかのディレクトリを参照しています。 |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

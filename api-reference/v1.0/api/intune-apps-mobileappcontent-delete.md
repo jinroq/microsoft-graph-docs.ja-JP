@@ -4,16 +4,17 @@ description: mobileAppContent を削除します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8ab7fba2cf5fdeec7e73f9cd07f53428ac37c85d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 23fc3b6e3c4b1f72c9f39068f16f89c6fcd8ead6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32541641"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36016063"
 ---
 # <a name="delete-mobileappcontent"></a>Delete mobileAppContent
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [mobileAppContent](../resources/intune-apps-mobileappcontent.md) を削除します。
 

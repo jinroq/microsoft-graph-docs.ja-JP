@@ -4,12 +4,13 @@ description: サインインが行われた場所から、市区町村、都道�
 localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6f81556526c9de1177248b7015bb276e47cb73d9
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+doc_type: resourcePageType
+ms.openlocfilehash: 35c6511b7dba69a362b44a9390974913c46b73ee
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629237"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034217"
 ---
 # <a name="signinlocation-resource-type"></a>signInLocation リソースの種類
 

@@ -4,12 +4,13 @@ description: thread オブジェクトを更新します。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: f95969a16437bdbb9a8b300c1a8cdd0d9ffe52d9
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: 9f7ce06bc976d58878df31150a0ccc5882e45176
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35450661"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014677"
 ---
 # <a name="update-conversation-thread"></a>会話スレッドを更新する
 [thread](../resources/conversationthread.md) オブジェクトを更新します。
