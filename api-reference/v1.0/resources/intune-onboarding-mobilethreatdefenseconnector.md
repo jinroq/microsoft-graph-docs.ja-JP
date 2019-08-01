@@ -4,16 +4,17 @@ description: Mobile Threat Defense パートナーとの接続を表すエンテ
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 03d98440c2aee12e018307f244b3e8198c54bc3c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 7e21789aeaf34066e34215df2d8cc6dcde2d331d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32585245"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36037347"
 ---
 # <a name="mobilethreatdefenseconnector-resource-type"></a>mobileThreatDefenseConnector リソースの種類
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 Mobile Threat Defense パートナーとの接続を表すエンティティです。
 
@@ -31,7 +32,7 @@ Mobile Threat Defense パートナーとの接続を表すエンティティで�
 |:---|:---|:---|
 |id|String|まだ文書化されていません|
 |lastHeartbeatDateTime|DateTimeOffset|データ同期パートナーから受信した最後のハートビートの日時|
-|partnerState|[mobileThreatPartnerTenantState](../resources/intune-onboarding-mobilethreatpartnertenantstate.md)|このアカウントのデータ同期パートナーの状態。 可能な値は、`unavailable`、`available`、`enabled`、`unresponsive` です。|
+|partnerState|[mobileThreatPartnerTenantState](../resources/intune-onboarding-mobilethreatpartnertenantstate.md)|このアカウントのデータ同期パートナーの状態。 使用可能な値は、`unavailable`、`available`、`enabled`、`unresponsive` です。|
 |androidEnabled|Boolean|Android において、準拠評価時にデータ同期パートナーからのデータを使用するかどうかを設定します|
 |iosEnabled|Boolean|IOS において、準拠評価時にデータ同期パートナーからのデータを使用するかどうかを取得または設定します|
 |androidDeviceBlockedOnMissingPartnerData|Boolean|Android において、デバイスを準拠させる前に Intune がデータ同期パートナーからデータを受信する必要があるかどうかを設定します|

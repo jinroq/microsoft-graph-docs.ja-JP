@@ -4,12 +4,13 @@ description: グラフ軸の書式設定プロパティをカプセル化しま�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 92258887c9646890ee63d14aebcd32ada7a8aaa6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 1d52063e63e179540bcbd5c3b4ec0cd09fb620d7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569250"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029856"
 ---
 # <a name="chartaxisformat-resource-type"></a>ChartAxisFormat リソースの種類
 
@@ -17,7 +18,7 @@ ms.locfileid: "32569250"
 
 
 ## <a name="methods"></a>メソッド
-なし
+None
 ## <a name="properties"></a>プロパティ
 なし
 
@@ -25,7 +26,7 @@ ms.locfileid: "32569250"
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |font|[WorkbookChartFont](chartfont.md)|グラフ軸要素のフォント属性 (フォント名、フォント サイズ、色など) を表します。値の取得のみ可能です。|
-|line|[WorkbookChartLineFormat](chartlineformat.md)|グラフの線の書式設定を表します。 値の取得のみ可能です。|
+|line|[WorkbookChartLineFormat](chartlineformat.md)|グラフの線の書式設定を表します。 読み取り専用です。|
 
 
 ## <a name="json-representation"></a>JSON 表記

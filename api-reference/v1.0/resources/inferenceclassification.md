@@ -2,16 +2,17 @@
 title: inferenceClassification リソースの種類
 description: 'ユーザーにとって、より関連性や重要性があるメッセージに注意が向けられるようにするためのユーザー メッセージの分類です。 '
 localization_priority: Normal
-ms.openlocfilehash: 8dfd76b31e452532181b46cdb0b5c321e92273a7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: ba2c32a7dcbe1574f2135cd098207eeb23716136
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32567509"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032397"
 ---
 # <a name="inferenceclassification-resource-type"></a>inferenceClassification リソースの種類
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ユーザーにとって、より関連性や重要性があるメッセージに注意が向けられるようにするためのユーザー メッセージの分類です。 
 
@@ -28,7 +29,7 @@ ms.locfileid: "32567509"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|id|string| 読み取り専用。|
+|id|string| 読み取り専用です。|
 
 ## <a name="relationships"></a>関係
 | リレーションシップ | 型   |説明|
@@ -41,11 +42,21 @@ ms.locfileid: "32567509"
 
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.inferenceClassification"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.inferenceClassification",
+  "@odata.annotations": [
+    {
+      "property": "overrides",
+      "capabilities": {
+        "changeTracking": false,
+        "expandable": false,
+        "searchable": false
+      }
+    }
+  ]
 }-->
 
 ```json
@@ -57,13 +68,10 @@ ms.locfileid: "32567509"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "inferenceClassification resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": []
-}
--->
+  "tocPath": ""
+}-->

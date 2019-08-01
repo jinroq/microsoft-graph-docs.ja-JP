@@ -3,12 +3,14 @@ title: 旧バージョンのリスト アイテムを復元する
 description: 旧バージョンのリスト アイテムを現在のバージョンに復元します。 旧バージョンのコンテンツを持つ新しいバージョンを作成します。しかし、アイテムの既存のバージョンはすべて保持されます。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 8c6c4a67988d9e073942c44b9787cfa91330dbeb
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+author: ''
+doc_type: apiPageType
+ms.openlocfilehash: 91671a0e974cedfeaae491771054fe040348fa43
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35885828"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36023108"
 ---
 # <a name="restore-a-previous-version-of-a-listitem"></a>旧バージョンのリスト アイテムを復元する
 

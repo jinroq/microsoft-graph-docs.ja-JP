@@ -2,12 +2,15 @@
 title: physicalAddress リソースの種類
 description: 連絡先やイベントなどのリソースの番地を表します。
 localization_priority: Normal
-ms.openlocfilehash: 2bbfc3f38d4d353d370b9c8ba859b06cc2e4398b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: f301947d6d277cd4fd51b7db035ef4f7134a5e65
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462467"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035511"
 ---
 # <a name="physicaladdress-resource-type"></a>physicalAddress リソースの種類
 

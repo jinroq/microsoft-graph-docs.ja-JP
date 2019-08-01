@@ -3,12 +3,14 @@ title: サブスクリプション リソースの種類
 description: 'サブスクリプションは、Microsoft Graph 上のデータの変更に関する通知の受信をクライアント アプリに許可します。 サブスクリプションは現在、以下のリソースで有効です:'
 localization_priority: Priority
 author: piotrci
-ms.openlocfilehash: 30671dcd93b4593015a5c3cf2eeddac8d7e00c4d
-ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 60219f50b78cf5c636fab1b24aa75922893002fe
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34536779"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033970"
 ---
 # <a name="subscription-resource-type"></a>サブスクリプション リソースの種類
 

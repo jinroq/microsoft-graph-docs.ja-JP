@@ -1,21 +1,22 @@
 ---
 title: deviceManagement リソースの種類
-description: 'deviceManagement リソースは、次のようなワークフローに従ってコンテンツが変化するコンテナーを表します。  '
+description: 'DeviceManagement リソースは、次のようなワークフローに従ってコンテンツが変化するコンテナーを表します。  '
 localization_priority: Normal
 author: tfitzmac
 ms.prod: intune
-ms.openlocfilehash: 08f04242b379fee6ebcc4496e10d342fd3ec342e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 8f8ef8fcb3d38ca46ab95e63a92e5f108d8a7782
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32571913"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036947"
 ---
 # <a name="devicemanagement-resource-type"></a>deviceManagement リソースの種類
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-deviceManagement リソースは、次のようなワークフローに従ってコンテンツが変化するコンテナーを表します。  
+DeviceManagement リソースは、次のようなワークフローに従ってコンテンツが変化するコンテナーを表します。  
 
 - 監査イベント  
 - 会社の使用条件   
@@ -39,7 +40,7 @@ deviceManagement リソースは、次のようなワークフローに従って
 |**オンボーディング**|
 |[verifyWindowsEnrollmentAutoDiscovery function](../api/intune-shared-devicemanagement-verifywindowsenrollmentautodiscovery.md)|Boolean|まだ文書化されていません|
 |**RBAC**|
-|[getEffectivePermissions 関数](../api/intune-shared-devicemanagement-geteffectivepermissions.md)|[rolepermission](../resources/intune-rbac-rolepermission.md)コレクションまたは文字列コレクション|現在の認証ユーザーの有効なアクセス許可を取得します|
+|[getEffectivePermissions 関数](../api/intune-shared-devicemanagement-geteffectivepermissions.md)|[Rolepermission](../resources/intune-rbac-rolepermission.md)コレクションまたは文字列コレクション|現在の認証ユーザーの有効なアクセス許可を取得します|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|

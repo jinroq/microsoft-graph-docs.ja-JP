@@ -4,16 +4,17 @@ description: デバイス構成です。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2a3d0ecc27fc0fe29ed2ed3ca4080e3fea70d264
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: b054e2472965f59d8350a52fe22134ab98e00fdf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32560789"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36028435"
 ---
 # <a name="deviceconfiguration-resource-type"></a>deviceConfiguration リソースの種類
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 デバイス構成です。
 
@@ -27,14 +28,14 @@ ms.locfileid: "32560789"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列型 (String)|エンティティのキー。|
+|id|文字列|エンティティのキー。|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。|
-|説明|String|デバイス構成について管理者が提供した説明です。|
+|description|String|デバイス構成について管理者が提供した説明です。|
 |displayName|String|デバイス構成について管理者が指定した名前です。|
 |version|Int32|デバイス構成のバージョン。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) コレクション|デバイスの構成プロファイルの割り当てのリスト。|

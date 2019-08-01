@@ -4,16 +4,17 @@ description: deviceCategory オブジェクトのプロパティを更新しま�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 831232fc656ad4aa0968e40aca5ae54b1e13ceef
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: a32034bd88c0295eaff9fc5c29e7dc45961bb4ac
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576966"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36023469"
 ---
 # <a name="update-devicecategory"></a>deviceCategory の更新
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [deviceCategory](../resources/intune-shared-devicecategory.md) オブジェクトのプロパティを更新します。
 
@@ -53,7 +54,7 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 |id|文字列|デバイス カテゴリの一意識別子。 読み取り専用です。|
 |**オンボーディング**|
 |displayName|String|デバイス カテゴリの表示名。|
-|説明|String|デバイス カテゴリに関するオプションの説明。|
+|description|String|デバイス カテゴリに関するオプションの説明。|
 
 
 
@@ -77,7 +78,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 ```
 
 ### <a name="response"></a>応答
-以下は、応答の例です。 注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 応答プロパティは、状況に応じて異なります。
+以下は、応答の例です。 注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 応答プロパティは、状況に応じて異なります。
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

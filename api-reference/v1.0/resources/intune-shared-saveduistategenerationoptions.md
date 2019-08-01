@@ -4,24 +4,25 @@ description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4939061dc18ef7fbea6f8945f74226b363a3bc3c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 556dd303bb5ad8f8ad5b804fb684319cd1d32a06
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32571801"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036842"
 ---
 # <a name="saveduistategenerationoptions-enum-type"></a>savedUIStateGenerationOptions 列挙型
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 まだ文書化されていません
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|なし|.0|まだ文書化されていません|
-|omitSilverlightPolicyReferences|1 |まだ文書化されていません|
+|none|.0|まだ文書化されていません|
+|omitSilverlightPolicyReferences|1-d|まだ文書化されていません|
 
 
 

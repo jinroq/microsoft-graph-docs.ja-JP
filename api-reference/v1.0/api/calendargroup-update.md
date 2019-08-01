@@ -4,12 +4,13 @@ description: calendargroup オブジェクトのプロパティを更新しま�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 39e8c7b5b6777a4b5c1a2bcab25db3b49a6f98df
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 31b056b2a94b23f3949bbbf39d762e9e8dc096d2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35882335"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36003897"
 ---
 # <a name="update-calendargroup"></a>CalendarGroup を更新する
 

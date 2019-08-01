@@ -4,16 +4,17 @@ description: ホーム画面上のアプリのページが含まれるフォル�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a44800da46d771251a47df676af84ceb778cbbd6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 5a22b20049c886b7cb1de2f7737b269fbd411749
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554661"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36031521"
 ---
 # <a name="ioshomescreenfolder-resource-type"></a>iosHomeScreenFolder リソースの種類
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 ホーム画面上のアプリのページが含まれるフォルダー
 

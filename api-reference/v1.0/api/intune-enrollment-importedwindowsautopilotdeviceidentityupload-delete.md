@@ -1,21 +1,22 @@
 ---
-title: importedWindowsAutopilotDeviceIdentityUpload の削除
-description: importedWindowsAutopilotDeviceIdentityUpload を削除します。
+title: ImportedWindowsAutopilotDeviceIdentityUpload の削除
+description: ImportedWindowsAutopilotDeviceIdentityUpload を削除します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7a775f2b487f9e9520f0687ca594f7848a90173a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 3ce6f21a7e40366ba7286fca9495f6d11e142a62
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566095"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996869"
 ---
-# <a name="delete-importedwindowsautopilotdeviceidentityupload"></a>importedWindowsAutopilotDeviceIdentityUpload の削除
+# <a name="delete-importedwindowsautopilotdeviceidentityupload"></a>ImportedWindowsAutopilotDeviceIdentityUpload の削除
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)を削除します。
+[ImportedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)を削除します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。

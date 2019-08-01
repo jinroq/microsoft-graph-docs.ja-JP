@@ -3,12 +3,14 @@ title: certificationControl リソースの種類
 description: このリソースには、セキュリティで保護されたスコアコントロールに関連するコンプライアンス証明書データが含まれています。
 localization_priority: Normal
 author: preetikr
-ms.openlocfilehash: c92d129b6849898abe7202b9c2f539f26d2e1ebe
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: ad7c07d269f9dc627de41db621e4d73f0d2c10b0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629314"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029905"
 ---
 #  <a name="certificationcontrol-resource-type"></a>certificationControl リソースの種類
 

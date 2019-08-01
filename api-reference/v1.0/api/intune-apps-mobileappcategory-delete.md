@@ -4,16 +4,17 @@ description: mobileAppCategory を削除します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ea8e90b77962c4bd28dc6a02849c26dd5848b9b1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 905d66c307be7bcd31eb1411b5d635e1c9ec3a18
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32541697"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013753"
 ---
 # <a name="delete-mobileappcategory"></a>Delete mobileAppCategory
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [mobileAppCategory](../resources/intune-apps-mobileappcategory.md) を削除します。
 

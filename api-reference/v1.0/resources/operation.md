@@ -2,12 +2,15 @@
 title: operation リソースの種類
 description: 長時間実行されている操作の状態。
 localization_priority: Normal
-ms.openlocfilehash: 4f2e2c9a6fb9eb6d26a3511c637e79822919e2f5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 8088d704d5a075131d5ee1b2c3b9edf75785708b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462677"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035729"
 ---
 # <a name="operation-resource-type"></a>operation リソースの種類
 
@@ -36,8 +39,8 @@ ms.locfileid: "32462677"
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |createdDateTime| DateTimeOffset |操作の開始時刻。|
-|lastactiondatetime| DateTimeOffset |操作の最後の操作の時刻。|
-|status|operationstatus|操作の現在の状態: `notStarted`、 `running` `completed`、、`failed` |
+|lastActionDateTime| DateTimeOffset |操作の最後の操作の時刻。|
+|status|operationStatus|操作の現在の状態: `notStarted`、 `running` `completed`、、`failed` |
 
 <!-- uuid: 13fa92b1-3b41-498b-aab1-f943464a124f
 2018-03-30 10:29:30 UTC -->

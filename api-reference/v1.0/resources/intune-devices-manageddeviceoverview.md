@@ -4,16 +4,17 @@ description: 管理対象デバイスの概要データ
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: accc6d976db80421cd06fd8071417bf07684a71a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: f10e34f8db0a671463740f0cbf42785c09170286
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550659"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030738"
 ---
 # <a name="manageddeviceoverview-resource-type"></a>managedDeviceOverview リソースの種類
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 管理対象デバイスの概要データ
 

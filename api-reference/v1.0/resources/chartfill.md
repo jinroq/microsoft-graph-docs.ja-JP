@@ -4,12 +4,13 @@ description: グラフ要素の塗りつぶしの書式設定を表します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: f24d2eea95216ec02cb371f3d016742af77a46e9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: a81a9ff88479f5779d6387242c410b35dce6f737
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569047"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029793"
 ---
 # <a name="chartfill-resource-type"></a>ChartFill リソースの種類
 
@@ -21,12 +22,12 @@ ms.locfileid: "32569047"
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
 |[Clear](../api/chartfill-clear.md)|なし|グラフ要素の塗りつぶしの色をクリアします。|
-|[Setsolidcolor](../api/chartfill-setsolidcolor.md)|なし|グラフ要素の塗りつぶしの書式設定を均一な色に設定します。|
+|[Setsolidcolor](../api/chartfill-setsolidcolor.md)|None|グラフ要素の塗りつぶしの書式設定を均一な色に設定します。|
 
 ## <a name="properties"></a>プロパティ
 なし
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 

@@ -2,12 +2,15 @@
 title: multiValueLegacyExtendedProperty を取得する
 description: '[] を展開します。'
 localization_priority: Normal
-ms.openlocfilehash: c1d95e319637df17f04e706055245d5e19762a87
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: apiPageType
+ms.openlocfilehash: c8ca94f253b2949dc25c6cacf8ccdef516827a9d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32585315"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36022804"
 ---
 # <a name="get-multivaluelegacyextendedproperty"></a>multiValueLegacyExtendedProperty を取得する
 
@@ -20,9 +23,9 @@ ms.locfileid: "32585315"
 - [calendar](../resources/calendar.md)
 - [contact](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md) 
-- [イベント](../resources/event.md)
+- [event](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
-- [メッセージ](../resources/message.md) 
+- [message](../resources/message.md) 
 
 次のグループ リソースもサポートされます。
 
@@ -41,8 +44,8 @@ ms.locfileid: "32585315"
 | [連絡先](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [contactFolder](../resources/contactfolder.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [event](../resources/event.md) | Calendars.Read | Calendars.Read |  Calendars.Read|
-| グループ [calendar](../resources/calendar.md) | Group.Read.All | サポート対象外 | 非サポート |
-| グループ [event](../resources/event.md) | Group.Read.All | サポート対象外 | 非サポート |
+| グループ [calendar](../resources/calendar.md) | Group.Read.All | 非サポート | 非サポート |
+| グループ [event](../resources/event.md) | Group.Read.All | 非サポート | 非サポート |
 | グループ [post](../resources/post.md) | Group.Read.All | サポート対象外 | Group.Read.All |
 | [mailFolder](../resources/mailfolder.md) | Mail.Read | Mail.Read | Mail.Read |
 | [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |

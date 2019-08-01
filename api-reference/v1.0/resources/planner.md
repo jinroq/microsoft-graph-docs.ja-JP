@@ -1,19 +1,20 @@
 ---
 title: planner リソースの種類
-description: '**planner**リソースは、planner オブジェクトモデルのエントリポイントです。 シングルトン**プランナー**リソースを返します。  使用可能なプロパティは含まれていません。'
+description: '**Planner**リソースは、planner オブジェクトモデルのエントリポイントです。 シングルトン**プランナー**リソースを返します。  使用可能なプロパティは含まれていません。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: f6d25238436b79dec0397df1d005e67e6b17239a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: b5cbf089e2d926440999c3ec73341bb3458668db
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462278"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035358"
 ---
 # <a name="planner-resource-type"></a>planner リソースの種類
 
-**planner**リソースは、planner オブジェクトモデルのエントリポイントです。 シングルトン**プランナー**リソースを返します。  使用可能なプロパティは含まれていません。
+**Planner**リソースは、planner オブジェクトモデルのエントリポイントです。 シングルトン**プランナー**リソースを返します。  使用可能なプロパティは含まれていません。
 
 
 ## <a name="methods"></a>メソッド
@@ -27,7 +28,7 @@ ms.locfileid: "32462278"
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|buckets|[プラン | バケット](plannerbucket.md)コレクション| 読み取り専用です。 Null 許容型。 指定したバケットのコレクションを返します。|
+|buckets|[plannerBucket](plannerbucket.md) コレクション| 読み取り専用です。 Null 許容型。 指定したバケットのコレクションを返します。|
 |plans|[plannerPlan](plannerplan.md) コレクション| 読み取り専用です。 Null 許容型。 指定したプランのコレクションを返します。|
 |tasks|[plannerTask](plannertask.md) コレクション| 読み取り専用です。 Null 許容型。 指定したタスクのコレクションを返します。|
 

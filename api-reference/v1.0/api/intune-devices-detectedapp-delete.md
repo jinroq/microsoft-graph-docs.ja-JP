@@ -4,16 +4,17 @@ description: detectedApp を削除します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d68a0e2ff298efb852dfd41639ae15354eb175de
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 7192d562d6a3390a5d45623ddd4529794fe6b3be
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32541984"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36018730"
 ---
 # <a name="delete-detectedapp"></a>Delete detectedApp
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [detectedApp](../resources/intune-devices-detectedapp.md) を削除します。
 

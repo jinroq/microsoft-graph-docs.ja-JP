@@ -4,12 +4,13 @@ description: identityProvider をすべて取得する
 localization_priority: Priority
 author: valnav
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 788722408838c58e4423d8aac792e5985e9f3c4e
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: b38dc049dfec8071858c544cd7f3b09d18d021f4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35880893"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014425"
 ---
 # <a name="list-identityproviders"></a>identityProvider を一覧表示する
 

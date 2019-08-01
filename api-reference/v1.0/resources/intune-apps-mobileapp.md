@@ -4,16 +4,17 @@ description: Intune モバイル アプリの基本プロパティを含む抽�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 91167967a543ea4556c1704a2bba4ec9a10a4c3d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 08bc3cb0c6b1a7b815e30179aa79861b08ad3b15
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32557895"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36028953"
 ---
 # <a name="mobileapp-resource-type"></a>mobileApp リソースの種類
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 Intune モバイル アプリの基本プロパティを含む抽象クラスです。
 
@@ -27,8 +28,8 @@ Intune モバイル アプリの基本プロパティを含む抽象クラスで
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列型 (String)|エンティティのキー。|
-|displayName|String|管理者が提供またはインポートしたアプリのタイトルです。|
+|id|文字列|エンティティのキー。|
+|displayName|文字列|管理者が提供またはインポートしたアプリのタイトルです。|
 |description|String|アプリの説明。|
 |publisher|String|アプリの発行元。|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|アプリの詳細に表示され、アイコンのアップロードに使用される大きいアイコン。|

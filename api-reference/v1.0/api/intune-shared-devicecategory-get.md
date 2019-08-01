@@ -4,16 +4,17 @@ description: deviceCategory オブジェクトのプロパティとリレーシ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: ab4ad6a1a1b5647d2b3f1033d35adae7535812ef
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 1341a64d5f6301ce930531c8881291246a460c6f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32577029"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36023483"
 ---
 # <a name="get-devicecategory"></a>deviceCategory の取得
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [deviceCategory](../resources/intune-shared-devicecategory.md) オブジェクトのプロパティとリレーションシップを読み取ります。
 
@@ -64,7 +65,7 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/deviceCategories/{deviceCa
 ```
 
 ### <a name="response"></a>応答
-以下は、応答の例です。 注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しから返されるプロパティは、コンテキストに応じて異なります。
+以下は、応答の例です。 注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しから返されるプロパティは、コンテキストに応じて異なります。
 
 ``` http
 HTTP/1.1 200 OK

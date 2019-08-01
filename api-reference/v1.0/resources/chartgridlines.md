@@ -4,12 +4,13 @@ description: グラフの軸の目盛線または補助目盛線を表します�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 7347ac1b7ff251b12764534df217cd883ba730b3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: af1f9576c486174b6aa78dd3196c813e744a1552
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569026"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029800"
 ---
 # <a name="chartgridlines-resource-type"></a>ChartGridlines リソースの種類
 
@@ -31,7 +32,7 @@ ms.locfileid: "32569026"
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|format|[WorkbookChartGridlinesFormat](chartgridlinesformat.md)|グラフの目盛線の書式設定を表します。 値の取得のみ可能です。|
+|format|[WorkbookChartGridlinesFormat](chartgridlinesformat.md)|グラフの目盛線の書式設定を表します。 読み取り専用です。|
 
 ## <a name="json-representation"></a>JSON 表記
 
