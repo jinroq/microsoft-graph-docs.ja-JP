@@ -4,12 +4,13 @@ description: グループメンバーシップの変更を含む、新しく作�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 2e2ab2c2842b6bd2423a57c54eebde03664f8a7c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 201539a14d00732d3aa9cbadfe9bdfc65e436d17
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35890864"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006669"
 ---
 # <a name="group-delta"></a>group: delta
 グループメンバーシップの変更を含む、新しく作成、更新、または削除されたグループを取得します。グループコレクション全体の完全な読み取りを実行する必要はありません。 詳細については、「[デルタクエリの使用](/graph/delta-query-overview)」を参照してください。

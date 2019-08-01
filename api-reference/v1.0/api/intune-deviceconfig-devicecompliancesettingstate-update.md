@@ -4,16 +4,17 @@ description: deviceComplianceSettingState オブジェクトのプロパティ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 735f9f3b564d7e810347d63a1c90233be7ff1de7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 3d6e875526141cedd020b12b2032ac16edf1f754
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32578072"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36019262"
 ---
 # <a name="update-devicecompliancesettingstate"></a>deviceComplianceSettingState の更新
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [deviceComplianceSettingState](../resources/intune-deviceconfig-devicecompliancesettingstate.md) オブジェクトのプロパティを更新します。
 
@@ -48,7 +49,7 @@ PATCH /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompl
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー|
+|id|文字列|エンティティのキー|
 |setting|String|設定のクラス名とプロパティ名。|
 |settingName|String|レポートされている設定名。|
 |deviceId|String|レポートされているデバイス ID。|

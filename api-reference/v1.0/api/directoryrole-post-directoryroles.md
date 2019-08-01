@@ -4,12 +4,13 @@ description: ディレクトリ ロールをアクティブ化します。 デ�
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: dd7c199f25f3e2fa324fd49cf46bad93c1cd0901
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: bcb1fbf3878d54050eb43ff5df3e7e303ee46f55
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35865902"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36016689"
 ---
 # <a name="activate-directoryrole"></a>directoryRole をアクティブにする
 
@@ -20,9 +21,9 @@ ms.locfileid: "35865902"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委任 (職場または学校のアカウント) | RoleManagement、Directory.accessasuser.all、およびすべてのディレクトリ    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | Directory.ReadWrite.All |
+|アプリケーション | RoleManagement |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

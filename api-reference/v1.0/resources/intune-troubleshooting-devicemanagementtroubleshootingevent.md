@@ -4,16 +4,17 @@ description: 一般エラーを表すイベント。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 154d6686605a22c2e3286b301601829f34c00cb1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: b6278ed7b7fe66655b1450bbae9e10cf7b8d78ed
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32571752"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036744"
 ---
 # <a name="devicemanagementtroubleshootingevent-resource-type"></a>deviceManagementTroubleshootingEvent リソースの種類
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 一般エラーを表すイベント。
 
@@ -29,11 +30,11 @@ ms.locfileid: "32571752"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|オブジェクトの UUID|
+|id|文字列|オブジェクトの UUID|
 |eventDateTime|DateTimeOffset|イベントが発生した時刻。|
 |correlationId|String|サービスのエラーをトレースするための ID。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記

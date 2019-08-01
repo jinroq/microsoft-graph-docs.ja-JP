@@ -1,27 +1,28 @@
 ---
 title: プランワークプランの詳細リソースの種類
-description: "\"plan/プランの**詳細**\" リソースは、プランに関する追加情報を表します。 各 plan オブジェクトには details オブジェクトがあります。"
+description: "\"Plan/プランの**詳細**\" リソースは、プランに関する追加情報を表します。 各 plan オブジェクトには details オブジェクトがあります。"
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 5661477ff59036e633eb82c23e9c50d7c2c8b4a9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: d75bbf877fcd70203b71159b198f5bad5f1bc3f0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462332"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035190"
 ---
 # <a name="plannerplandetails-resource-type"></a>プランワークプランの詳細リソースの種類
 
 
-"plan/プランの**詳細**" リソースは、プランに関する追加情報を表します。 各[plan](plannerplan.md)オブジェクトには details オブジェクトがあります。
+"Plan/プランの**詳細**" リソースは、プランに関する追加情報を表します。 各[plan](plannerplan.md)オブジェクトには details オブジェクトがあります。
 
 
 ## <a name="methods"></a>メソッド
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[Get plannerPlanDetails](../api/plannerplandetails-get.md) | [plannerPlanDetails](plannerplandetails.md) |**plan**オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[Get plannerPlanDetails](../api/plannerplandetails-get.md) | [plannerPlanDetails](plannerplandetails.md) |**Plan**オブジェクトのプロパティとリレーションシップを読み取ります。|
 |[Update](../api/plannerplandetails-update.md) | [plannerPlanDetails](plannerplandetails.md)    |**プランの詳細**オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ

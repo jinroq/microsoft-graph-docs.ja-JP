@@ -2,12 +2,15 @@
 title: recurrencePattern リソースの種類
 description: '定期的なイベントを繰り返す頻度について説明します。 '
 localization_priority: Normal
-ms.openlocfilehash: ebdb8a71d9f3acfb40191a7148f55999f6158aa1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 51134e6e7ca92c1c80450dfa8b23dd327f40a468
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579388"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034812"
 ---
 # <a name="recurrencepattern-resource-type"></a>recurrencePattern リソースの種類
 

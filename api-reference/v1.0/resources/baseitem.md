@@ -4,12 +4,15 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: BaseItem
 localization_priority: Normal
-ms.openlocfilehash: ae22b0a36acb46c2a9d872f224c0a6d4c567782c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: BaseItem リソースは、他のいくつかのリソースの種類で共有される共通のプロパティセットが含まれる抽象リソースです。
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 2bde386a736805d52758f6d80e629c585f82d87e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569334"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029982"
 ---
 # <a name="baseitem-resource-type"></a>BaseItem リソースの種類
 

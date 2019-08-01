@@ -1,30 +1,31 @@
 ---
-title: webbrowsercookiesettings 列挙型
+title: webBrowserCookieSettings 列挙型
 description: Web ブラウザーの Cookie 設定。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2933889c15f8bd849922bc5268a0e2beeec78357
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 9985b7056e17f6b7adb2d42563d322714d8ac724
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554535"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36031081"
 ---
-# <a name="webbrowsercookiesettings-enum-type"></a>webbrowsercookiesettings 列挙型
+# <a name="webbrowsercookiesettings-enum-type"></a>webBrowserCookieSettings 列挙型
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 Web ブラウザーの Cookie 設定。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|browserdefault|.0|ブラウザーの既定値。意図的ではありません。|
-|blockalways|1 |常に cookie をブロックします。|
-|allowcurrentwebsite サイト|2 |現在の Web サイトからの cookie を許可します。|
-|allowfromwebsitesvisited た|3 |アクセスした web サイトの cookie を許可します。|
-|allowalways|4 |常に cookie を許可します。|
+|browserDefault|.0|ブラウザーの既定値。意図的ではありません。|
+|blockAlways|1-d|常に cookie をブロックします。|
+|allowCurrentWebSite サイト|pbm-2|現在の Web サイトからの cookie を許可します。|
+|allowFromWebsitesVisited た|1/3|アクセスした web サイトの Cookie を許可します。|
+|allowAlways|2/4|常に cookie を許可します。|
 
 
 

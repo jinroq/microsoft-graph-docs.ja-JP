@@ -4,16 +4,17 @@ description: 自動操縦装置ストリームを使用して、アップロー�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9730986d9282abb95f08fb2a297f0b2bb0a3dc6e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: ab33dab66b8d9b57a57d8521ea8b27728c8037e5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32578744"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36018520"
 ---
 # <a name="autopilotdevicestream-function"></a>autopilotDeviceStream 関数
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 自動操縦装置ストリームを使用して、アップロード要求を作成します。
 

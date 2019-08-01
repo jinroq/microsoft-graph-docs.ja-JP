@@ -4,12 +4,13 @@ description: 変更された Azure AD リソースのすべてのプロパティ
 localization_priority: Normal
 author: dhanyahk
 ms.prod: azure-ad
-ms.openlocfilehash: d87d0170dc811db074026e60efc63df928c65ada
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+doc_type: resourcePageType
+ms.openlocfilehash: 0c5375ea3e188d6023e3588531e07877f6de38ee
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629279"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036100"
 ---
 # <a name="modifiedproperty-resource-type"></a>modifiedProperty リソースの種類
 

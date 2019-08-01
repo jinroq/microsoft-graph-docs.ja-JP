@@ -2,18 +2,19 @@
 title: チームをアーカイブする
 description: '指定されたチームをアーカイブします。 '
 author: nkramer
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 28c1ea9d96d55587f95af85c9aba50a43fe08d60
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: cb2a6ca3962804ae9fc4ae85d1b8db93ead9bac6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32520250"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36021166"
 ---
 # <a name="archive-team"></a>チームをアーカイブする
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 
 指定された[チーム](../resources/team.md)をアーカイブします。 チームをアーカイブすると、ユーザーはチームのチャネルでメッセージを送信したり、いいねしたり、チームの名前、説明、またはその他の設定、通常、チームへの変更がほとんどできなくなります。
 チームへのメンバーシップの変更はそのまま許可されます。
@@ -66,7 +67,7 @@ POST /teams/{id}/archive
   "name": "archive_team"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/archive
+POST https://graph.microsoft.com/v1.0/teams/{id}/archive
 ```
 #### <a name="response"></a>応答
 応答の例を次に示します。
@@ -78,15 +79,10 @@ Content-Length: 0
 ```
 <!-- uuid: e848414b-4669-4484-ac36-1504c58a3fb8
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Archive team",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/team-archive.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

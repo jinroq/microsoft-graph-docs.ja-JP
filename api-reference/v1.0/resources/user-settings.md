@@ -4,12 +4,13 @@ description: '現在のユーザー設定。 '
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 433824e715940f2309619a0467179ef99ee3daec
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 6a1cf4deb5da03daeb9d90e03ea63fa069a0701e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456934"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033524"
 ---
 # <a name="settings-resource-type"></a>リソースの種類の設定
 
@@ -30,8 +31,9 @@ ms.locfileid: "32456934"
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|contributionToContentDiscoveryDisabled|ブール値|ユーザーの代理人アクセスを true に設定すると、ユーザーの[トレンド](/graph/api/resources/insights-trending?view=graph-rest-beta) API は無効になります。 True に設定する場合、ユーザーの Office Delve のドキュメントは無効になります。 True に設定する場合、たとえばSharePoint Home のおすすめサイトや OneDrive for Business の Discover ビューなどの Office 365 で表示されるコンテンツの関連性にも影響が出ます。 ユーザーがこの設定で [Office Delve](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout)を制御することができます。 |
-|contributionToContentDiscoveryAsOrganizationDisabled|ブール値|[組織レベルの設定](https://support.office.com/ja-JP/article/office-delve-for-office-365-admins-54f87a42-15a4-44b4-9df0-d36287d9531b#bkmk_delveonoff)が代理人アクセスを制御して、[トレンド](/graph/api/resources/insights-trending?view=graph-rest-beta) API へ反映します。 True に設定する場合は、組織は Office Delve へアクセスすることができません。 Office 365 で表示されるコンテンツの関連性、たとえばSharePoint Home のおすすめサイトや OneDrive for Business の Discover ビューなどは、組織全体に影響が出ます。 この設定は読み取り専用で、[SharePoint 管理センター](https://support.office.com/article/about-the-office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23?ui=en-US&rs=en-US&ad=US)の管理者しか変更することができません。|
+|contributionToContentDiscoveryDisabled|ブール値|ユーザーの代理人アクセスを true に設定すると、ユーザーの[トレンド](/graph/api/resources/insights-trending?view=graph-rest-beta) API は無効になります。 True に設定する場合、ユーザーの Office Delve のドキュメントは無効になります。 True に設定する場合、たとえばSharePoint Home のおすすめサイトや OneDrive for Business の Discover ビューなどの Office 365 で表示されるコンテンツの関連性にも影響が出ます。 ユーザーがこの設定で [Office Delve](https://support.office.com/ja-JP/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout)を制御することができます。 |
+|contributionToContentDiscoveryAsOrganizationDisabled|ブール値|
+  [組織レベルの設定](https://support.office.com/ja-JP/article/office-delve-for-office-365-admins-54f87a42-15a4-44b4-9df0-d36287d9531b#bkmk_delveonoff)が代理人アクセスを制御して、[トレンド](/graph/api/resources/insights-trending?view=graph-rest-beta) API へ反映します。 True に設定する場合は、組織は Office Delve へアクセスすることができません。 Office 365 で表示されるコンテンツの関連性、たとえばSharePoint Home のおすすめサイトや OneDrive for Business の Discover ビューなどは、組織全体に影響が出ます。 この設定は読み取り専用で、[SharePoint 管理センター](https://support.office.com/article/about-the-office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23?ui=en-US&rs=en-US&ad=US)の管理者しか変更することができません。|
 
 
 ## <a name="json-representation"></a>JSON 表記

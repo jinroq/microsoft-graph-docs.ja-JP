@@ -4,16 +4,17 @@ description: macOSCustomConfiguration を削除します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 98f23dcd9c1fd0555204aeacba7090ee22a23f14
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 5db9b2f12a046e970169fd173385f1a1d7a0b275
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576074"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36017120"
 ---
 # <a name="delete-macoscustomconfiguration"></a>Delete macOSCustomConfiguration
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [macOSCustomConfiguration](../resources/intune-deviceconfig-macoscustomconfiguration.md) を削除します。
 

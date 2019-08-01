@@ -4,12 +4,15 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: RemoteItem
 localization_priority: Normal
-ms.openlocfilehash: ceb66fdacd4a108318c84fd9297aca8b2332c3f3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: remoteItem リソースは、driveItem が別のドライブに存在するアイテムを参照することを示します。
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 0d19034475f72984f023cef368e1fec5f75fe456
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579339"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034728"
 ---
 # <a name="remoteitem-resource-type"></a>RemoteItem リソースの種類
 
@@ -57,7 +60,7 @@ ms.locfileid: "32579339"
 | file                 | [File](file.md)                     | リモート項目がファイルであることを示します。読み取り専用。                                                                                                              |
 | fileSystemInfo       | [FileSystemInfo](filesysteminfo.md) | ローカル ファイル システムからのリモート項目についての情報。読み取り専用。                                                                                          |
 | folder               | [Folder](folder.md)                 | リモート項目がフォルダーであることを示します。読み取り専用。                                                                                                            |
-| id                   | String                              | ドライブ内のリモート項目の固有識別子です。読み取り専用。                                                                                                    |
+| id                   | 文字列                              | ドライブ内のリモート項目の固有識別子です。読み取り専用。                                                                                                    |
 | lastModifiedBy       | [IdentitySet](identityset.md)       | アイテムを最終更新したユーザーの ID、デバイス、アプリケーション。読み取り専用です。                                                                            |
 | lastModifiedDateTime | Timestamp                           | アイテムが最後に変更された日時。読み取り専用です。                                                                                                              |
 | name                 | String                              | 省略可能。リモート項目のファイル名です。読み取り専用。                                                                                                                 |

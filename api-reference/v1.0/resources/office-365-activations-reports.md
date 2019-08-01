@@ -4,12 +4,13 @@ description: Office 365 アクティブ化レポートでは、1 つ以上のデ
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 44775b2a14bbd00452d27a04f8e225612100b3fa
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.openlocfilehash: 5ecf1aeb0014ec8ead97fc7d1b01d366c9565291
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32463055"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035988"
 ---
 # <a name="office-365-activations-reports"></a>Office 365 アクティブ化レポート
 
@@ -20,6 +21,6 @@ Office 365 アクティブ化レポートでは、1 つ以上のデバイスで 
 ## <a name="reports"></a>レポート
 | 関数                                 | 戻り値の型 | 説明                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
-| [ユーザーの詳細を取得する](../api/reportroot-getoffice365activationsuserdetail.md) | Stream      | Office 365 がアクティブ化されているユーザーに関する詳細情報を取得します。 |
+| [ユーザーの詳細を取得する](../api/reportroot-getoffice365activationsuserdetail.md) | ストリーム      | Office 365 がアクティブ化されているユーザーに関する詳細情報を取得します。 |
 | [ライセンス認証の数を取得する](../api/reportroot-getoffice365activationcounts.md) | Stream      | デスクトップとデバイスでの Office 365 のライセンス認証の数を取得します。 |
 | [ユーザーの数を取得する](../api/reportroot-getoffice365activationsusercounts.md) | Stream      | 有効なユーザーで、デスクトップまたはデバイスで Office サブスクリプションがアクティブ化されているユーザーの数を取得します。 |

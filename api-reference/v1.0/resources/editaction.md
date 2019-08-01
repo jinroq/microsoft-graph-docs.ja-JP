@@ -5,16 +5,17 @@ title: editAction リソースの種類
 description: EditAction オブジェクトは、アイテムを編集したアクティビティに関する情報を提供します。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 6b4ffcd71f02a7a465aa6f7148063772ab73b596
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+doc_type: resourcePageType
+ms.openlocfilehash: 9d53760827b324dc8ea9c6b16629dfc2948c5e01
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33970758"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029359"
 ---
 # <a name="editaction-resource-type"></a>editAction リソースの種類
 
-[**Itemactivity**] [ activity]に**editaction**リソースが存在する場合は、アクティビティがアイテムを編集したことを示します。
+[**Itemactivity**][activity]に**editaction**リソースが存在する場合は、アクティビティがアイテムを編集したことを示します。
 
 **注**: このリソースは、現在空です。 将来的には、追加のプロパティが設定される場合があります。
 

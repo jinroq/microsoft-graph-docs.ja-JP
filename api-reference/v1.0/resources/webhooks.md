@@ -3,12 +3,14 @@ title: Microsoft Graph API を使用して変更通知を取得する
 description: Microsoft Graph の REST API は、webhook メカニズムを使用して、クライアントに変更通知を配信します。 クライアントは、通知を受信するために自身の URL を構成する Web サービスです。 クライアント アプリは通知を使用して、変更時に状態を更新します。 着信通知のサブスクライブ方法や処理方法などの詳細については、「ユーザー データの変更に関する通知の設定」をご覧ください。
 localization_priority: Priority
 author: piotrci
-ms.openlocfilehash: 60def6f31ac13ad5417ad3d00e48e700550f6efe
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.prod: ''
+doc_type: conceptualPageType
+ms.openlocfilehash: 1722f888cc7e29e958a84720f8e714f2379db7da
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159375"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033405"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Microsoft Graph API を使用して変更通知を取得する
 
@@ -28,7 +30,7 @@ Microsoft Graph の API を使用すると、アプリは次のリソースの�
 
 ## <a name="permissions"></a>アクセス許可
 
-一般に、サブスクリプション操作にはリソースへの読み取りアクセス許可が必要です。たとえば、メッセージの通知を受信するには、アプリに `Mail.Read` アクセス許可が必要です。記事「[サブスクリプションを作成する](../api/subscription-post-subscriptions.md)」では、リソースの種類ごとに必要なアクセス許可がリストされています。次の表に、アプリが特定のリソースの種類に対して Webhook を使用するために要求できるアクセス許可の種類を示します。
+一般に、サブスクリプション操作にはリソースへの読み取りアクセス許可が必要です。 たとえば、メッセージの通知を受信するには、アプリに `Mail.Read` アクセス許可が必要です。 記事「[サブスクリプションを作成する](../api/subscription-post-subscriptions.md)」では、リソースの種類ごとに必要なアクセス許可がリストされています。 次の一覧表に、アプリが特定のリソースの種類に対して Webhook を使用するために要求できるアクセス許可の種類を示します。
 
 | アクセス許可の種類                        | サポートされているリソースの種類                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------------ |

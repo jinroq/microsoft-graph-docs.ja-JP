@@ -4,12 +4,13 @@ description: 新しい identityProvider を作成する
 localization_priority: Priority
 author: valnav
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 63a1ae5fddcc1279c3980b8475c7cbdad0bd74f8
-ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
+doc_type: apiPageType
+ms.openlocfilehash: 5ffd1f600395a1c72f2ab4c72ef1c3d3a358e387
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34537589"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36016154"
 ---
 # <a name="create-identityprovider"></a>identityProvider を作成する
 

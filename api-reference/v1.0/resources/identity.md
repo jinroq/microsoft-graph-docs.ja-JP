@@ -4,12 +4,15 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: ID
 localization_priority: Normal
-ms.openlocfilehash: 103657764b2f7073d553a01cd3794c0abecdf4f4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: ID リソースは、アクター の ID を表します。
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: e545ddc582404f963cab35d1e57f46817c5dfec0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32567817"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029261"
 ---
 # <a name="identity-resource-type"></a>ID リソースの種類
 
@@ -33,7 +36,7 @@ ms.locfileid: "32567817"
 | プロパティ    | 型   | 説明                                                                                                                                                                                                                                                                                                           |
 |:------------|:-------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | displayName | String | ID の表示名。使用可能でない場合や、最新の状態ではない場合があることにご注意ください。たとえば、ユーザーが表示名を変更する場合、API は、将来の応答に新しい値を表示することがあります。しかし、ユーザーに関連付けられたアイテムについては、[delta](../api/driveitem-delta.md) の使用時に変更されたことは表示されません。     |
-| id          | String | ID の一意識別子。                                                                                                                                                                                                                                                                                   |
+| id          | 文字列 | ID の一意識別子。                                                                                                                                                                                                                                                                                   |
 
 ## <a name="remarks"></a>注釈
 

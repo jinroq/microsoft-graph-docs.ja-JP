@@ -1,19 +1,20 @@
 ---
-title: plan/バケットリソースの種類
+title: Plan/バケットリソースの種類
 description: ) Office 365 のプラン内のタスク。 これはプランに含まれており、plan グループのタスクのコレクションを持つことができます。
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
-ms.openlocfilehash: 8cfc25e5554b20d4f808c8929b53549f4c44d7a2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: b6810a62ecab5209ca1c17aa7f3ca9e4753a50a9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462299"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035324"
 ---
-# <a name="plannerbucket-resource-type"></a>plan/バケットリソースの種類
+# <a name="plannerbucket-resource-type"></a>Plan/バケットリソースの種類
 
-**plan**は、Office 365 のプランに含まれるタスクのバケット (または "ユーザー設定列") を表します。 これは[プラン](plannerplan.md)に含まれており、plan グループの[タスク](plannertask.md)のコレクションを持つことができます。
+**Plan**は、Office 365 のプランに含まれるタスクのバケット (または "ユーザー設定列") を表します。 これは[プラン](plannerplan.md)に含まれており、plan グループの[タスク](plannertask.md)のコレクションを持つことができます。
 
 
 
@@ -22,15 +23,15 @@ ms.locfileid: "32462299"
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
 |[Get plannerBucket](../api/plannerbucket-get.md) | [plannerBucket](plannerbucket.md) |**プラン**オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[plannerTasks を一覧表示する](../api/plannerbucket-list-tasks.md) |[plannerTask](plannertask.md) コレクション| プランを取得する**タスク**オブジェクトコレクション。|
+|[plannerTasks を一覧表示する](../api/plannerbucket-list-tasks.md) |[plannerTask](plannertask.md) コレクション| **plannerTask** オブジェクト コレクションを取得します。|
 |[Create](../api/planner-post-buckets.md) | [plannerBucket](plannerbucket.md)   | 新しい**プラン**のオブジェクトを作成します。 |
 |[Update](../api/plannerbucket-update.md) | [plannerBucket](plannerbucket.md)   |**プラン**オブジェクトを更新します。 |
-|[削除する](../api/plannerbucket-delete.md) | なし |**プラン**オブジェクトを削除します。 |
+|[Delete](../api/plannerbucket-delete.md) | None |**プラン**オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|id|String| 読み取り専用です。 バケットの ID。 28 文字長で、大文字と小文字の区別があります。 [書式検証](planner-identifiers-disclaimer.md)はサービスによって行われます。|
+|id|文字列| 読み取り専用。 バケットの ID。 28 文字長で、大文字と小文字の区別があります。 [書式検証](planner-identifiers-disclaimer.md)はサービスによって行われます。|
 |name|String|バケットの名前。|
 |orderHint|String|リスト ビューでこの種類の項目の順序付けに使用するヒント。形式は[ここ](planner-order-hint-format.md)の説明に従って定義されます。|
 |planId|String|バケットが属している計画 ID。|

@@ -5,12 +5,13 @@ title: コメントアクションリソースの種類
 description: Comment アクションオブジェクトは、アイテムに対して行われたコメントについての情報を提供します。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 12e6cd68d5809b8e4c1765234eeb77b40b30a78e
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+doc_type: resourcePageType
+ms.openlocfilehash: 72502e466ff90ec0a299eb993346968c9038e2d1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33970749"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029681"
 ---
 # <a name="commentaction-resource-type"></a>コメントアクションリソースの種類
 

@@ -4,12 +4,13 @@ description: ユーザーが Outlook アイテム (メッセージやイベン�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 490ecaf2e6303cc943646dbed99b3202b8d57525
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 11e3e67a9a8c4a6a9b9bab807985711d246eb0cd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462652"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035687"
 ---
 # <a name="outlookcategory-resource-type"></a>outlookCategory リソースの種類
 
@@ -85,7 +86,7 @@ ms.locfileid: "32462652"
 |[カテゴリの取得](../api/outlookcategory-get.md) | [outlookCategory](../resources/outlookcategory.md) |指定した **outlookCategory** オブジェクトのプロパティとリレーションシップを取得します。|
 |[作成](../api/outlookuser-post-mastercategories.md) | [outlookCategory](../resources/outlookcategory.md) |ユーザーのマスター カテゴリ リスト内に **outlookCategory** オブジェクトを作成します。|
 |[更新](../api/outlookcategory-update.md) | [outlookCategory](../resources/outlookcategory.md) |指定した **outlookCategory** オブジェクトの書き込み可能な **color** プロパティを更新します。 |
-|[削除する](../api/outlookcategory-delete.md) | なし |指定した **outlookCategory** オブジェクトを削除します。 |
+|[Delete](../api/outlookcategory-delete.md) | None |指定した **outlookCategory** オブジェクトを削除します。 |
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

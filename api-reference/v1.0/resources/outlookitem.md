@@ -4,12 +4,13 @@ description: 以下は、リソースの JSON 表記です
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 3bbfe6119d279a1a708b44128a7d134664d7b040
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 7b04d84019cbb38f78ef1df63e4e39480c4d949b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462642"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035659"
 ---
 # <a name="outlookitem-resource-type"></a>outlookItem リソースの種類
 
@@ -41,13 +42,13 @@ ms.locfileid: "32462642"
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |categories|String collection|アイテムに関連付けられているカテゴリ|
-|changeKey|String|アイテムのバージョンを識別します。 項目が変更されるたびに、changekey も変更されます。 これにより、Exchange は正しいバージョンのオブジェクトに変更を適用できます。 読み取り専用です。|
+|changeKey|String|アイテムのバージョンを識別します。 項目が変更されるたびに、changeKey も変更されます。 これにより、Exchange は正しいバージョンのオブジェクトに変更を適用できます。 読み取り専用です。|
 |createdDateTime|DateTimeOffset|Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |id|String| 読み取り専用です。|
 |lastModifiedDateTime|DateTimeOffset|Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 
 ## <a name="relationships"></a>リレーションシップ
-なし
+None
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

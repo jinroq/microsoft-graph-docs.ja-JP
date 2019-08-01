@@ -1,21 +1,22 @@
 ---
-title: androidWorkProfileCustomConfiguration を取得する
-description: androidWorkProfileCustomConfiguration オブジェクトのプロパティとリレーションシップを読み取ります。
+title: AndroidWorkProfileCustomConfiguration を取得する
+description: AndroidWorkProfileCustomConfiguration オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b5fece69c0d287c8f8bdc8aa4a5121153c4cf3b1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 0c2deffd52d9ab88b7576e6366b6592ba16a80ae
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32524009"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36019507"
 ---
-# <a name="get-androidworkprofilecustomconfiguration"></a>androidWorkProfileCustomConfiguration を取得する
+# <a name="get-androidworkprofilecustomconfiguration"></a>AndroidWorkProfileCustomConfiguration を取得する
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)オブジェクトのプロパティとリレーションシップを読み取ります。
+[AndroidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)オブジェクトのプロパティとリレーションシップを読み取ります。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。

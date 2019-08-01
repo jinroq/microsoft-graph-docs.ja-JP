@@ -4,12 +4,13 @@ description: 電子メール アクティビティ レポートを使用して�
 localization_priority: Priority
 author: pranoychaudhuri
 ms.prod: reports
-ms.openlocfilehash: 861e206e2f63a314c551f8242d9fc20cc002064d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.openlocfilehash: 87340d09655ef682cfbc98bb8795ceaa4bdd33a6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32463909"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032600"
 ---
 # <a name="email-activity-reports"></a>電子メール アクティビティ レポート
 

@@ -4,12 +4,13 @@ description: メッセージの受信者すべてに返信します。その後�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: cae1712c74c57c3a7d8c1f1ae5710b9759d7daae
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: a5a285becea0fd351011e8d74cfbcb5d70fd2e84
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35884714"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36022860"
 ---
 # <a name="message-replyall"></a>メッセージ: replyAll
 

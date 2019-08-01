@@ -4,16 +4,17 @@ description: settingStateDeviceSummary を削除します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 498d1eb5cc61b92636987163a9282222def62826
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 0b772cb14bc3595df63a267e2b4cea1536feec6c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561272"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36020333"
 ---
 # <a name="delete-settingstatedevicesummary"></a>settingStateDeviceSummary の削除
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md) を削除します。
 

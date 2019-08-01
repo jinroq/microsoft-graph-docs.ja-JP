@@ -4,12 +4,13 @@ description: ルールで使用可能な条件および例外のセットを表�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: e3f423cdc1c00bdaa7be410fc755b8fe3a065dd3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 4cf6edbf7652ae3a7aebcbc73fc398587b1fac30
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32564205"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036093"
 ---
 # <a name="messagerulepredicates-resource-type"></a>messageRulePredicates リソースの種類
 
@@ -41,7 +42,7 @@ ms.locfileid: "32564205"
 | notSentToMe | Boolean | 条件または例外を適用するために、メールボックスの所有者が受信メッセージの受信者でないことを示します。 |
 | recipientContains | Collection(String) | 条件または例外を適用するために、受信メッセージの **ToRecipients** または **CcRecipients** プロパティに表示される文字列を表します。 |
 | senderContains | Collection(String) | 条件または例外を適用するために、受信メッセージの **From** プロパティに表示される文字列を表します。 |
-| sensitivity | sensitivity | 条件または例外を適用するために、受信メッセージにスタンプする必要がある秘密度レベルを表します。 使用可能な値は`normal`、 `personal`、 `private`、 `confidential`、です。 |
+| sensitivity | sensitivity | 条件または例外を適用するために、受信メッセージにスタンプする必要がある秘密度レベルを表します。 使用可能な値: `normal`、`personal`、`private`、`confidential`。 |
 | sentCcMe | Boolean | 条件または例外を適用するために、メールボックスの所有者が受信メッセージの **ccRecipients** プロパティにあるかどうかを示します。 |
 | sentOnlyToMe | Boolean | 条件または例外を適用するために、メールボックスの所有者が受信メッセージの唯一の受信者かどうかを示します。 |
 | sentToAddresses | コレクション ([受信者](recipient.md)) | 条件または例外を適用するために、受信メッセージが送信されたメール アドレスを表します。 |

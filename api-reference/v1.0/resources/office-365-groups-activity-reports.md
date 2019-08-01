@@ -4,12 +4,13 @@ description: グループ アクティビティ レポートを使用して、�
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 5d8c414034a110db64b770a72fe2e3540806acdd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.openlocfilehash: c6733b76626e45673940d235f7b9d33aee899ce3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462950"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035953"
 ---
 # <a name="office-365-groups-activity-reports"></a>Office 365 グループ アクティビティ レポート
 

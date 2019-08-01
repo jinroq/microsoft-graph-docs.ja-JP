@@ -4,12 +4,15 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: ItemReference
 localization_priority: Normal
-ms.openlocfilehash: 5c60ee4a0ac8538d71d37403e6f790e32d6a74cf
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: ItemReference リソースは、DriveItem を処理するために必要な情報を API を介して提供します。
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: f7d8f6d524b605b544785b0379a273d4c022c9c9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32585224"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036527"
 ---
 # <a name="itemreference-resource-type"></a>ItemReference リソースの種類
 
@@ -43,7 +46,7 @@ ms.locfileid: "32585224"
 |:--------------|:------------------|:-----------------------------------------
 | driveId       | String            | アイテムを含むドライブ インスタンスの一意識別子。読み取り専用です。
 | driveType     | String            | ドライブの種類を表します。 値については [drive][] リソースを参照してください。
-| id            | 文字列型 (String)            | ドライブ内のアイテムの一意識別子。読み取り専用です。
+| id            | 文字列            | ドライブ内のアイテムの一意識別子。読み取り専用です。
 | name          | String            | 参照中のアイテムの名前。読み取り専用です。
 | path          | String            | アイテムへの移動に使用可能なパス。読み取り専用です。
 | shareId       | String            | [共有][] API 経由でアクセスできる共有リソースの一意識別子。

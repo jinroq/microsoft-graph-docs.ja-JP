@@ -4,12 +4,14 @@ ms.author: dspektor
 title: Websocket エンドポイントを取得する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 131b8ebd7cb26185b161e5f6dca776284ee19fe5
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: Socket.io を使用して、ドライブのほぼリアルタイムの変更通知を受け取ることができます。
+doc_type: apiPageType
+ms.openlocfilehash: a412dd24ab95762002afb1cbfff979112da23096
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35881810"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36016462"
 ---
 # <a name="get-websocket-endpoint"></a>Websocket エンドポイントを取得する
 

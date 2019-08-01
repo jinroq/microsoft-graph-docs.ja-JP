@@ -4,16 +4,17 @@ description: windows10GeneralConfiguration を削除します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8051f2142bd0276c671414e30d8e49557c0ad7f4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: a8315d4056fc6ca374497fb2b85fd2f54bc6c497
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32571430"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35997310"
 ---
 # <a name="delete-windows10generalconfiguration"></a>Delete windows10GeneralConfiguration
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md) を削除します。
 

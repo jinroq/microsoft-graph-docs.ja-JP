@@ -4,12 +4,13 @@ description: 新しい windows10EndpointProtectionConfiguration オブジェク�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 84e69acb17a5e164e45865c0b9fc4460f17e26d7
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+doc_type: apiPageType
+ms.openlocfilehash: ad8b6d6d3a389f787a16020a4fbe5cce7e4154bd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620620"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35997352"
 ---
 # <a name="create-windows10endpointprotectionconfiguration"></a>windows10EndpointProtectionConfiguration の作成
 

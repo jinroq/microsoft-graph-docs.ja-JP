@@ -4,16 +4,17 @@ description: '以前に Microsoft Teams アプリカタログに発行したア�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: b89380a423bf01f6a2bd7e56086cc9290be094cb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: a963b2f91c149cef6fd5c291888aa2f6a8bb1ad2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521832"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027308"
 ---
 # <a name="update-apps-published-to-your-organizations-app-catalog"></a>組織のアプリカタログに発行されたアプリを更新する
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 
 以前に Microsoft Teams アプリカタログに発行した[アプリ](../resources/teamsapp.md)を更新します。 この API は、組織のアプリカタログ (テナントのアプリカタログ) に公開されたアプリを特に更新します。 組織のアプリカタログに発行するには、 `organization` teamsCatalogApp リソース**** の " [](../resources/teamsapp.md) " としてを指定します。
 
@@ -44,9 +45,9 @@ PUT /appCatalogs/teamsApps/{id}
 
 ## <a name="request-body"></a>要求本文
 
-teams zip マニフェストペイロード: teams アプリケーション zip ファイルについ[ては、「アプリパッケージを作成する」を参照してください](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)。
+Teams Zip マニフェストペイロード: Teams アプリケーション zip ファイルについ[ては、「アプリパッケージを作成する」を参照してください](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)。
 
->**注:** の[発行済みアプリの一覧](./teamsapp-list.md)から返された ID を使用して、更新するアプリを参照します。 zip アプリパッケージのマニフェストからの ID は使用しないでください。
+>**注:** の[発行済みアプリの一覧](./teamsapp-list.md)から返された ID を使用して、更新するアプリを参照します。 Zip アプリパッケージのマニフェストからの ID は使用しないでください。
 
 ## <a name="response"></a>応答
 
@@ -59,7 +60,7 @@ HTTP/1.1 204 No Content
 ### <a name="request"></a>要求
 
 ```
-PUT https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8
+PUT https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8
 Content-type: application/zip
 Content-length: 244
 
@@ -73,11 +74,3 @@ Teams アプリケーションの zip ファイルについては、 [「アプ�
 ```
 HTTP/1.1 204 No Content
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/teamsapp-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

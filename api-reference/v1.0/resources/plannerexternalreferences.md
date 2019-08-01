@@ -1,19 +1,20 @@
 ---
 title: プランリソースの種類
-description: "\" **plan/外部参照**\" リソースは、タスクに対する参照のコレクションを表します。 これはオープン型です。 タスクの詳細オブジェクトの一部です。 プロパティと値のペアの値は、externalreference オブジェクトです。"
+description: "\" **Plan/外部参照**\" リソースは、タスクに対する参照のコレクションを表します。 これはオープン型です。 タスクの詳細オブジェクトの一部です。 プロパティと値のペアの値は、externalReference オブジェクトです。"
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 8048a8a412935cc69e805a1d7c77ff8b1fbf5f7c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 35e26aaf13686a030d35d5d75ec3c99c8df93a6a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462306"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035225"
 ---
 # <a name="plannerexternalreferences-resource-type"></a>プランリソースの種類
 
-" **plan/外部参照**" リソースは、タスクに対する参照のコレクションを表します。 これはオープン型です。 [タスクの詳細](plannertaskdetails.md)オブジェクトの一部です。 プロパティと値のペアの値は、 [externalreference](plannerexternalreference.md)オブジェクトです。
+" **Plan/外部参照**" リソースは、タスクに対する参照のコレクションを表します。 これはオープン型です。 [タスクの詳細](plannertaskdetails.md)オブジェクトの一部です。 プロパティと値のペアの値は、 [Externalreference](plannerexternalreference.md)オブジェクトです。
 
 
 ## <a name="properties"></a>プロパティ

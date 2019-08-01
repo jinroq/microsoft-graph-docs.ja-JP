@@ -2,12 +2,15 @@
 title: FilterCriteria リソースの種類
 description: 列に適用するフィルター条件を表します。
 localization_priority: Normal
-ms.openlocfilehash: 27fd3b6b211934c2cc81a11f203287c530993dde
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 4d15c1ddc0c53d32648c67d8f5bdacc32072ea5d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32564303"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030311"
 ---
 # <a name="filtercriteria-resource-type"></a>FilterCriteria リソースの種類
 

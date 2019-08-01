@@ -4,12 +4,13 @@ description: 'グループが直接メンバーであるグループを取得し
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: 01cda0abbbfb6f3646cb67b05a6d7a2865eccd2a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: f8d159be0519580121ad7303813c5d4c0656a918
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35889144"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36016364"
 ---
 # <a name="list-memberof"></a>memberOf を一覧表示する
 グループが直接メンバーであるグループを取得します。 

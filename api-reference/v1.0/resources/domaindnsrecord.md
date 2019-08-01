@@ -4,12 +4,13 @@ description: テナント内のドメインごとに、ドメインを Microsoft
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 77dcc09e19038e06974968fae1c4cb6672f2a335
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+doc_type: resourcePageType
+ms.openlocfilehash: a590895a905852b37c7cc14b0390573c7b57e72f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34657967"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029429"
 ---
 # <a name="domaindnsrecord-resource-type"></a>domainDnsRecord リソースの種類
 

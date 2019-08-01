@@ -4,16 +4,17 @@ description: OMA 設定の浮動小数点の定義です。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4720d635eeb119a2e1cacc741ab9c96f8ac55d4f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 122a8fd7ffdef7d314e16bf6154838e09598f7d5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568998"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36031319"
 ---
 # <a name="omasettingfloatingpoint-resource-type"></a>omaSettingFloatingPoint リソースの種類
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 OMA 設定の浮動小数点の定義です。
 
@@ -24,11 +25,11 @@ OMA 設定の浮動小数点の定義です。
 |プロパティ|型|説明|
 |:---|:---|:---|
 |displayName|String|表示名。 [omaSetting](../resources/intune-deviceconfig-omasetting.md) からの継承|
-|説明|String|説明。 [omaSetting](../resources/intune-deviceconfig-omasetting.md) からの継承|
+|description|String|説明。 [omaSetting](../resources/intune-deviceconfig-omasetting.md) からの継承|
 |omaUri|文字列型 (String)|OMA。 [omaSetting](../resources/intune-deviceconfig-omasetting.md) からの継承|
 |値|単精度浮動小数点型 (Single)|値。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記

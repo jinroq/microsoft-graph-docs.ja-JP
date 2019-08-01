@@ -4,12 +4,13 @@ description: 指定したセクショングループにセクションをコピ�
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: a22240d5d9299c12cc4e5c5f6f7c983b57eccacd
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 9deb5c9003471026905457a910c6d966463df66b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35884084"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36021586"
 ---
 # <a name="section-copytosectiongroup"></a>セクション: copyToSectionGroup
 指定したセクショングループにセクションをコピーします。

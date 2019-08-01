@@ -4,12 +4,13 @@ description: 会話オブジェクトのプロパティと関係を取得しま�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: aaab6d8593bd55fd4c0ceffaeb6294879e91ff2d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 7661ceba1ef5719e2cc1711b1126771c40a4ebec
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35883741"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36003113"
 ---
 # <a name="get-conversation"></a>会話を取得する
 

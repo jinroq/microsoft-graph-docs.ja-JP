@@ -4,12 +4,13 @@ description: グラフの軸を表します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 483a69f11425f3b8991305e6acdf6b970d0e2db1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 7e8ee5eac8face4d16418799d627d3aa168c48c2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569432"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029877"
 ---
 # <a name="chartaxes-resource-type"></a>ChartAxes リソースの種類
 
@@ -17,7 +18,7 @@ ms.locfileid: "32569432"
 
 
 ## <a name="methods"></a>メソッド
-なし
+None
 
 ## <a name="properties"></a>プロパティ
 なし
@@ -27,7 +28,7 @@ ms.locfileid: "32569432"
 |:---------------|:--------|:----------|
 |categoryAxis|[WorkbookChartAxis](chartaxis.md)|グラフの項目軸を表します。値の取得のみ可能です。|
 |系列軸|[WorkbookChartAxis](chartaxis.md)|3 次元グラフの系列軸を表します。値の取得のみ可能です。|
-|数値軸|[WorkbookChartAxis](chartaxis.md)|軸の数値軸を表します。 値の取得のみ可能です。|
+|数値軸|[WorkbookChartAxis](chartaxis.md)|軸の数値軸を表します。 読み取り専用です。|
 
 ## <a name="json-representation"></a>JSON 表記
 

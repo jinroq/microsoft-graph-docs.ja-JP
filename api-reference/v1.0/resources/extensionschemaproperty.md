@@ -2,12 +2,15 @@
 title: extensionSchemaProperty リソースの種類
 description: '**extensionSchemaProperty** リソースを使用して、schemaExtension 定義の一部としてプロパティの名前とその種類を定義します。'
 localization_priority: Normal
-ms.openlocfilehash: 384f60c323ca6c6fb23d2f4811a6d2cb918bf844
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 362072f8727d82e4b5b5744922d8b819e0eae079
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575787"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032537"
 ---
 # <a name="extensionschemaproperty-resource-type"></a>extensionSchemaProperty リソースの種類
 
@@ -28,7 +31,7 @@ ms.locfileid: "32575787"
 | Binary | 最大 256 バイトです。 |
 | Boolean | 連絡先、メッセージ、イベント、投稿ではサポートされていません。 |
 | DateTime | ISO 8601 形式で指定する必要があります。UTC で格納されます。 |
-| Integer | 32 ビット値です。 連絡先、メッセージ、イベント、投稿ではサポートされていません。 |
+| 整数 | 32 ビット値です。 連絡先、メッセージ、イベント、投稿ではサポートされていません。 |
 | String | 最大 256 文字です。 |
 
 ## <a name="json-representation"></a>JSON 表記

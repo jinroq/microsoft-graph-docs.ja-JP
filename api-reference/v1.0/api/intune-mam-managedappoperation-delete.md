@@ -4,16 +4,17 @@ description: managedAppOperation を削除します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8ca650656ed832d3516dba6b075cf0ccb79a9032
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: c51fe1fc2afe4865afd6baecb93718b6765cef8e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32571045"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36018303"
 ---
 # <a name="delete-managedappoperation"></a>Delete managedAppOperation
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [managedAppOperation](../resources/intune-mam-managedappoperation.md) を削除します。
 

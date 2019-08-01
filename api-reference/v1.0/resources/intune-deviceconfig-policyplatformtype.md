@@ -4,16 +4,17 @@ description: ポリシーの Suppoorted プラットフォームの種類。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 757cc2aa3b5e5b27a0b36d2d077da1c7a66f35ce
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 8205f6530047518082732fe1fe7c24ee7df7ae99
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568760"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36031284"
 ---
 # <a name="policyplatformtype-enum-type"></a>policyPlatformType 列挙型
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 ポリシーの Suppoorted プラットフォームの種類。
 
@@ -21,12 +22,12 @@ ms.locfileid: "32568760"
 |メンバー|値|説明|
 |:---|:---|:---|
 |android|.0|Android.|
-|iOS|2 |iOS.|
-|macOS|3 |MacOS.|
-|windowsPhone81|4 |WindowsPhone 8.1|
-|windows81AndLater|5 |Windows 8.1 以降|
-|windows10AndLater|6 |Windows 10 以降。|
-|androidWorkProfile|7 |AndroidWorkProfile.|
+|iOS|pbm-2|iOS.|
+|macOS|1/3|MacOS.|
+|windowsPhone81|2/4|WindowsPhone 8.1|
+|windows81AndLater|5|Windows 8.1 以降|
+|windows10AndLater|シックス|Windows 10 以降。|
+|androidWorkProfile|7|AndroidWorkProfile.|
 |すべての|100|すべてのプラットフォーム。|
 
 

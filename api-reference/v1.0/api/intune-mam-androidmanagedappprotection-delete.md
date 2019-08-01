@@ -4,16 +4,17 @@ description: androidManagedAppProtection を削除します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e1cac72de8c0d2745b15e6b0582f0628c1b68648
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: bef862835d9b18cef8ec5bb2a471f0882836e7cd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458797"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36020774"
 ---
 # <a name="delete-androidmanagedappprotection"></a>Delete androidManagedAppProtection
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md) を削除します。
 

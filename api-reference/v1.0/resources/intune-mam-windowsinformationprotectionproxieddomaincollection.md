@@ -4,16 +4,17 @@ description: Windows 情報保護のプロキシ化されたドメイン コレ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 026a69dc7697a0b779d72dfcab1695cf8c219d83
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 0de9ee342cdb0fb42460d9118c87ed7e2a747b55
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550561"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36037633"
 ---
 # <a name="windowsinformationprotectionproxieddomaincollection-resource-type"></a>windowsInformationProtectionProxiedDomainCollection リソースの種類
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 Windows 情報保護のプロキシ化されたドメイン コレクション
 
@@ -23,7 +24,7 @@ Windows 情報保護のプロキシ化されたドメイン コレクション
 |displayName|String|表示名|
 |proxiedDomains|[proxiedDomain](../resources/intune-mam-proxieddomain.md) コレクション|プロキシ化されたドメインのコレクション|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記

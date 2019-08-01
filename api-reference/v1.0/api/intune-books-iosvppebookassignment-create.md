@@ -4,16 +4,17 @@ description: 新しい iosVppEBookAssignment オブジェクトを作成しま�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b45e4a986306fbecf039abee29c2a6939f9b4e69
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 56a560c45be3c1932636c988c11359125469b6b3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32577127"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013585"
 ---
 # <a name="create-iosvppebookassignment"></a>iosVppEBookAssignment の作成
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい [iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md) オブジェクトを作成します。
 
@@ -50,7 +51,7 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 |:---|:---|:---|
 |id|String|エンティティのキー。 [managedEBookAssignment](../resources/intune-books-managedebookassignment.md) から継承します|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|電子ブックの割り当て先。 [managedEBookAssignment](../resources/intune-books-managedebookassignment.md) から継承します|
-|installIntent|[installIntent](../resources/intune-shared-installintent.md)|電子ブックのインストールの目的。 [managedebookassignment](../resources/intune-books-managedebookassignment.md)から継承します。 可能な値は、`available`、`required`、`uninstall`、`availableWithoutEnrollment` です。|
+|installIntent|[installIntent](../resources/intune-shared-installintent.md)|電子ブックのインストールの目的。 [Managedebookassignment](../resources/intune-books-managedebookassignment.md)から継承します。 可能な値は、`available`、`required`、`uninstall`、`availableWithoutEnrollment` です。|
 
 
 
