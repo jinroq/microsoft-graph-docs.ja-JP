@@ -4,12 +4,13 @@ description: 指定した期間について、ユーザー、配布リスト、�
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 027e3ec5764c0868236b34c90f558b0bd7db45fc
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+doc_type: apiPageType
+ms.openlocfilehash: ee74761e658a36452dafc7fed077c7d3bb5eaecd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932100"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36004051"
 ---
 # <a name="calendar-getschedule"></a>calendar: getSchedule
 
@@ -32,7 +33,7 @@ POST /users/{id|userPrincipalName}/calendar/getSchedule
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type  | string | エンティティの本体内にあるデータの性質 (application/json)。 必須。  |

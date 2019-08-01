@@ -4,12 +4,13 @@ description: '**calendarView** において追加、削除、更新された一�
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: d147320287bdf62b21e5804d26792e95c07b33b3
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: d1091131d341b2b6acdbab7c1688bc660107b6f9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35887438"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006746"
 ---
 # <a name="event-delta"></a>イベント: デルタ
 
@@ -51,7 +52,7 @@ GET /users/{id}/calendarView/delta?startDateTime={start_datetime}&endDateTime={e
 
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明 |
+| 名前       | 種類 | 説明 |
 |:---------------|:----------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type  | string  | application/json. Required. |

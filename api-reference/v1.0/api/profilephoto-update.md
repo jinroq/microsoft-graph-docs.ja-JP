@@ -2,12 +2,15 @@
 title: ProfilePhoto を更新する
 description: サインイン **ユーザー**、または指定された**グループ**または**連絡先**の写真を更新します。 そこから
 localization_priority: Priority
-ms.openlocfilehash: eac653df8f0188b292c765076af8d81b9543ca2d
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+author: ''
+ms.prod: ''
+doc_type: apiPageType
+ms.openlocfilehash: 73eca65512c166deff7a55d15a170761dd8d263c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620629"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35975922"
 ---
 # <a name="update-profilephoto"></a>profilephoto を更新する
 

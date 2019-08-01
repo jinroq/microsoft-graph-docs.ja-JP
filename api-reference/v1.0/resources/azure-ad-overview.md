@@ -2,12 +2,15 @@
 title: Microsoft Graph での Azure Active Directory リソースの使用
 description: 'Microsoft Graph を使用すると、Azure Active Directory (Azure AD) リソースにアクセスして、管理者 (ディレクトリ) ロールの管理や外部ユーザーの組織への招待、クラウド ソリューション プロバイダー (CSP) の場合は顧客のデータの管理などのシナリオを有効にできます。 Microsoft Graph には、たとえばグループやロールにおけるユーザーの推移的なメンバーシップに関する情報を検出するメソッドなど、アプリで使用できるメソッドも用意されています。 '
 localization_priority: Priority
-ms.openlocfilehash: 5269725a130a2aada958ec5998f21bc6489696b6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: conceptualPageType
+ms.openlocfilehash: 43da5931c6328fabc77a4e75beaf77c3605e506f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569348"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029965"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>Microsoft Graph での Azure Active Directory リソースの使用
 

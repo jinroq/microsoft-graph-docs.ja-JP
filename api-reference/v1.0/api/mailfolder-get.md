@@ -4,12 +4,13 @@ description: メッセージ フォルダー オブジェクトのプロパテ�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 139c58dd7fbc24a63bfd4e4af50b6bcd57c928df
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: a8821cef613a86e7630117a38cef3636eee40e9b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35856572"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36023049"
 ---
 # <a name="get-mailfolder"></a>mailFolder を取得する
 
@@ -39,7 +40,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

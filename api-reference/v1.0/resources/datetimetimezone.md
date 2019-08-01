@@ -2,14 +2,15 @@
 title: dateTimeTimeZone リソースの種類
 description: 特定時点の日付、時刻、およびタイム ゾーンを記述します。
 localization_priority: Priority
+doc_type: resourcePageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 5927c10a99b91e0130b8ceb30c33ae1fa19af3dd
-ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
+ms.openlocfilehash: e265e6de20491e44ba7756ffd02f4dc4d09d0b31
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2019
-ms.locfileid: "35805054"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029541"
 ---
 # <a name="datetimetimezone-resource-type"></a>dateTimeTimeZone リソースの種類
 

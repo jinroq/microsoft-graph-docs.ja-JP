@@ -2,14 +2,15 @@
 title: calendarView を一覧表示する
 description: '既定の予定表から、時間範囲で定義した予定表ビューのイベントの発生、例外、および単一インスタンスを取得します。 '
 localization_priority: Priority
+doc_type: apiPageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 798eecc72d64d9f579dcfda4eb6c742e5824ce2a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: ec5f3b405ff4c000451f4659fddfc6892bd7d01c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35886053"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027000"
 ---
 # <a name="list-calendarview"></a>calendarView を一覧表示する
 
@@ -64,7 +65,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/calendarV
 > [イベント](../resources/event.md)の **createdDateTime** プロパティおよび **lastModifiedDateTime** プロパティは、`$select` をサポートしません。 これらの値を取得するには、**calendarView** にクエリするだけで、`$select` を適用しません。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明 |
+| 名前       | 種類 | 説明 |
 |:---------------|:--------|:--------|
 | Authorization  | string | ベアラー {トークン}。必須。  |
 | 優先: outlook.timezone  | string | これを使用して、応答内の開始および終了時刻のタイム ゾーンを指定します。 指定しない場合、これらの時刻値は UTC で返されます。 省略可能。 |

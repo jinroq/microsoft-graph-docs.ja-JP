@@ -2,18 +2,17 @@
 title: 設定を取得する
 description: ユーザーおよび組織の設定 オブジェクトを読み取ります。
 author: dkershaw10
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 59685923c939dae2ae066a2e146398ea8f87a05c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 64ecf4c4f44cf59bf3c6344edda7510a6997d813
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32567936"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027077"
 ---
 # <a name="get-settings"></a>設定を取得する
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ユーザーおよび組織の[設定](../resources/user-settings.md) オブジェクトを取得します。
 [設定](../resources/user-settings.md)オブジェクトのプロパティを更新する方法については、[ユーザー設定を更新する](user-update-settings.md)を参照してください。
@@ -53,7 +52,7 @@ GET /users/{id | userPrincipalName}/settings/
 ##### <a name="request"></a>要求
 
 ```http
-GET https://graph.microsoft.com/beta/me/settings
+GET https://graph.microsoft.com/v1.0/me/settings
 ```
 
 ##### <a name="response"></a>応答
@@ -70,3 +69,4 @@ Content-length: 72
   "contributionToContentDiscoveryDisabled": false
 }
 ```
+

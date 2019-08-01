@@ -5,12 +5,13 @@ description: サインインしているユーザーのメールボックス内�
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: d1e77130a6181d6b32b832312568c7005eb4b37f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 057d441e994f54417d6ed111e401e06ff9dcc26e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35856469"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025492"
 ---
 # <a name="list-messages"></a>メッセージを一覧表示する
 
@@ -33,7 +34,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

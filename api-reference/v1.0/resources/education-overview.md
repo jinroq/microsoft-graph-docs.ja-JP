@@ -4,12 +4,13 @@ description: Microsoft Graph の教育機関 API は、Office 365 のリソー�
 localization_priority: Priority
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 1b12910899ce5645d8d3f69f96cb7a8f61ba0df5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.openlocfilehash: 142c946ea71e734baf58521ae8c4e9b51d54405c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562826"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029345"
 ---
 # <a name="working-with-education-apis-in-microsoft-graph"></a>Microsoft Graph での教育機関 API の操作
 

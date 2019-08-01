@@ -4,12 +4,13 @@ description: グループとは、Microsoft サービス内またはアプリ内
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: 46d8f1db9a2c3c12add07787d62fe02c588cd6ae
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.openlocfilehash: 7e523fd27aabc5c1051a45f80b5505db2dd51e16
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570835"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032425"
 ---
 # <a name="working-with-groups-in-microsoft-graph"></a>Microsoft Graph でのグループの操作
 
@@ -71,7 +72,7 @@ Office 365 グループと管理者の操作性の詳細については、「[Of
 
 セキュリティ グループは、リソースへのユーザー アクセスを制御するためのものです。 ユーザーがセキュリティ グループのメンバーであるかどうかを確認することで、そのユーザーがアプリ内のいくつかのセキュア リソースにアクセスしようとしているときに、アプリが承認を判断することができます。 セキュリティ グループには、ユーザーおよび他のセキュリティ グループをメンバーとして含めることができます。
 
-メールが有効なセキュリティ グループは、セキュリティ グループと同じ方法で使用されますが、グループの共有メールボックス機能が追加されています。 API では、メールが有効なセキュリティ グループを作成することはできませんが、他のグループ操作は動作します。  メールが有効なセキュリティ グループは読み取り専用です。 詳細については、「[メールが有効なセキュリティ グループの管理](https://technet.microsoft.com/ja-JP/library/bb123521%28v=exchg.160%29.aspx)」の Exchange 記事を参照してください。
+メールが有効なセキュリティ グループは、セキュリティ グループと同じ方法で使用されますが、グループの共有メールボックス機能が追加されています。 API では、メールが有効なセキュリティ グループを作成することはできませんが、他のグループ操作は動作します。  メールが有効なセキュリティ グループは読み取り専用です。 詳細については、「[メールが有効なセキュリティ グループの管理](https://technet.microsoft.com/en-us/library/bb123521%28v=exchg.160%29.aspx)」の Exchange 記事を参照してください。
 
 ### <a name="security-group-example"></a>セキュリティ グループの例
 
@@ -118,7 +119,7 @@ POST https://graph.microsoft.com/beta/groups
 
 membershipRule の数式化の詳細については、「[Azure Active Directory で動的グループ メンバーシップの属性ベースのルールを作成する](https://docs.microsoft.com/ja-JP/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal)」を参照してください。
 
-> **注**: 動的メンバーシップ ルールには、[Azure Active Directory Premium P1](https://azure.microsoft.com/ja-JP/pricing/details/active-directory/) 以上の階層のライセンスを持つテナントが必要です。
+> **注**: 動的メンバーシップ ルールには、[Azure Active Directory Premium P1](https://azure.microsoft.com/en-us/pricing/details/active-directory/) 以上の階層のライセンスを持つテナントが必要です。
 
 ## <a name="other-types-of-groups"></a>その他の種類のグループ
 

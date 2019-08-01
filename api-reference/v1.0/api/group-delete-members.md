@@ -4,12 +4,13 @@ description: この API を使用して、**メンバー** ナビゲーション
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 1e8b47c7441c2d4964e792a881932fe7ef3167d8
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: b2f4c19ae7472d196940c0e6419e49df7f617380
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35890879"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006641"
 ---
 # <a name="remove-member"></a>メンバーを削除する
 この API を使用して、**メンバー** ナビゲーション プロパティ経由でグループからメンバーを削除します。
@@ -30,7 +31,7 @@ DELETE /groups/{id}/members/{id}/$ref
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

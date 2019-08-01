@@ -3,12 +3,14 @@ title: schemaExtension リソースの種類 (スキーマ拡張機能)
 description: 'スキーマの拡張機能を使用すると、拡張するスキーマを定義し、厳密に型指定されたカスタム データをリソースの種類に追加できます。カスタム データは拡張したリソースの複合型として表示されます。 '
 localization_priority: Priority
 author: dkershaw10
-ms.openlocfilehash: 72260112e2b23bf185ea86d039fec9e0af778fb9
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 7c0bf49bc0de24cda47e309fdbfb1c4e75b42283
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778349"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034616"
 ---
 # <a name="schemaextension-resource-type-schema-extensions"></a>schemaExtension リソースの種類 (スキーマ拡張機能)
 
