@@ -5,61 +5,61 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a278330685e8be053d3ada5adf2edf183998984a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9a1affb6af03a60bd2b9c164254e0ae4a9bf4f43
+ms.sourcegitcommit: a700f1c283a5d847cd1697e26bcd47bc8625384e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35946101"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36049534"
 ---
-# <a name="apply-accessreview"></a><span data-ttu-id="b053c-104">AccessReview を適用する</span><span class="sxs-lookup"><span data-stu-id="b053c-104">Apply accessReview</span></span>
+# <a name="apply-accessreview"></a><span data-ttu-id="1dbe5-104">AccessReview を適用する</span><span class="sxs-lookup"><span data-stu-id="1dbe5-104">Apply accessReview</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b053c-105">Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、完了した[accessreview](../resources/accessreview.md)の決定を適用します。</span><span class="sxs-lookup"><span data-stu-id="b053c-105">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, apply the decisions of a completed [accessReview](../resources/accessreview.md).</span></span>  <span data-ttu-id="b053c-106">ターゲットオブジェクトは、1回限りのアクセスレビュー、または定期的なアクセスレビューのインスタンスのいずれかになります。</span><span class="sxs-lookup"><span data-stu-id="b053c-106">The target object can be either a one-time access review, or an instance of a recurring access review.</span></span>  
+<span data-ttu-id="1dbe5-105">Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、完了した[accessreview](../resources/accessreview.md)の決定を適用します。</span><span class="sxs-lookup"><span data-stu-id="1dbe5-105">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, apply the decisions of a completed [accessReview](../resources/accessreview.md).</span></span>  <span data-ttu-id="1dbe5-106">ターゲットオブジェクトは、1回限りのアクセスレビュー、または定期的なアクセスレビューのインスタンスのいずれかになります。</span><span class="sxs-lookup"><span data-stu-id="1dbe5-106">The target object can be either a one-time access review, or an instance of a recurring access review.</span></span>  
 
 
-<span data-ttu-id="b053c-107">終了日に達したか、管理者が手動で停止したためにアクセスレビューが終了し、レビューのために自動適用が構成されていない場合は、[適用] を呼び出して変更を適用できます。</span><span class="sxs-lookup"><span data-stu-id="b053c-107">After an access review is finished, either because it reached the end date or an administrator stopped it manually, and auto-apply wasn't configured for the review, you can call Apply to apply the changes.</span></span> <span data-ttu-id="b053c-108">適用が行われるまで、アクセス権を削除するための決定はソースリソースに表示されず、インスタンスのユーザーはグループメンバーシップを保持します。</span><span class="sxs-lookup"><span data-stu-id="b053c-108">Until apply occurs, the decisions to remove access rights do not appear on the source resource, the users for instance retain their group memberships.</span></span> <span data-ttu-id="b053c-109">[適用] を呼び出すと、レビューの結果が、グループまたはアプリケーションを更新することによって実装されます。</span><span class="sxs-lookup"><span data-stu-id="b053c-109">By calling apply, the outcome of the review is implemented by updating the group or application.</span></span> <span data-ttu-id="b053c-110">ユーザーのアクセスがレビューで拒否された場合、管理者がこの API を呼び出すと、Azure AD はそれらのメンバーシップまたはアプリケーション割り当てを削除します。</span><span class="sxs-lookup"><span data-stu-id="b053c-110">If a user's access was denied in the review, when an administrator calls this API, Azure AD removes their membership or application assignment.</span></span> 
+<span data-ttu-id="1dbe5-107">終了日に達したか、管理者が手動で停止したためにアクセスレビューが終了し、レビューのために自動適用が構成されていない場合は、[適用] を呼び出して変更を適用できます。</span><span class="sxs-lookup"><span data-stu-id="1dbe5-107">After an access review is finished, either because it reached the end date or an administrator stopped it manually, and auto-apply wasn't configured for the review, you can call Apply to apply the changes.</span></span> <span data-ttu-id="1dbe5-108">適用が行われるまで、アクセス権を削除するための決定はソースリソースに表示されず、インスタンスのユーザーはグループメンバーシップを保持します。</span><span class="sxs-lookup"><span data-stu-id="1dbe5-108">Until apply occurs, the decisions to remove access rights do not appear on the source resource, the users for instance retain their group memberships.</span></span> <span data-ttu-id="1dbe5-109">[適用] を呼び出すと、レビューの結果が、グループまたはアプリケーションを更新することによって実装されます。</span><span class="sxs-lookup"><span data-stu-id="1dbe5-109">By calling apply, the outcome of the review is implemented by updating the group or application.</span></span> <span data-ttu-id="1dbe5-110">ユーザーのアクセスがレビューで拒否された場合、管理者がこの API を呼び出すと、Azure AD はそれらのメンバーシップまたはアプリケーション割り当てを削除します。</span><span class="sxs-lookup"><span data-stu-id="1dbe5-110">If a user's access was denied in the review, when an administrator calls this API, Azure AD removes their membership or application assignment.</span></span> 
 
-<span data-ttu-id="b053c-111">アクセスレビューが完了し、自動適用が構成されると、レビューの状態は [完了] から [中間状態] に変わり、最後に [適用済みの状態] に変わります。</span><span class="sxs-lookup"><span data-stu-id="b053c-111">After an access review is finished, and auto-apply was configured, then the status of the review will change from Completed through intermediate states and finally will change to state Applied.</span></span> <span data-ttu-id="b053c-112">却下されたユーザーが存在する場合は、リソースグループのメンバーシップまたはアプリの割り当てから数分で削除されることを確認する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b053c-112">You should expect to see denied users, if any, being removed from the resource group membership or app assignment in a few minutes.</span></span>
+<span data-ttu-id="1dbe5-111">アクセスレビューが完了し、自動適用が構成されると、レビューの状態は [完了] から [中間状態] に変わり、最後に [適用済みの状態] に変わります。</span><span class="sxs-lookup"><span data-stu-id="1dbe5-111">After an access review is finished, and auto-apply was configured, then the status of the review will change from Completed through intermediate states and finally will change to state Applied.</span></span> <span data-ttu-id="1dbe5-112">却下されたユーザーが存在する場合は、リソースグループのメンバーシップまたはアプリの割り当てから数分で削除されることを確認する必要があります。</span><span class="sxs-lookup"><span data-stu-id="1dbe5-112">You should expect to see denied users, if any, being removed from the resource group membership or app assignment in a few minutes.</span></span>
 
-<span data-ttu-id="b053c-113">構成済みの自動適用レビュー、または [適用] を選択しても、オンプレミスディレクトリまたは動的グループで発生するグループには影響しません。</span><span class="sxs-lookup"><span data-stu-id="b053c-113">A configured auto applying review, or selecting Apply doesn't have an effect on a group that originates in an on-premises directory or a dynamic group.</span></span> <span data-ttu-id="b053c-114">オンプレミスで発生したグループを変更する場合は、結果をダウンロードして、そのディレクトリ内のグループの表現にその変更を適用します。</span><span class="sxs-lookup"><span data-stu-id="b053c-114">If you want to change a group that originates on-premises, download the results and apply those changes to the representation of the group in that directory.</span></span>
+<span data-ttu-id="1dbe5-113">構成済みの自動適用レビュー、または [適用] を選択しても、オンプレミスディレクトリまたは動的グループで発生するグループには影響しません。</span><span class="sxs-lookup"><span data-stu-id="1dbe5-113">A configured auto applying review, or selecting Apply doesn't have an effect on a group that originates in an on-premises directory or a dynamic group.</span></span> <span data-ttu-id="1dbe5-114">オンプレミスで発生したグループを変更する場合は、結果をダウンロードして、そのディレクトリ内のグループの表現にその変更を適用します。</span><span class="sxs-lookup"><span data-stu-id="1dbe5-114">If you want to change a group that originates on-premises, download the results and apply those changes to the representation of the group in that directory.</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="b053c-115">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="b053c-115">Permissions</span></span>
-<span data-ttu-id="b053c-p106">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b053c-p106">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="1dbe5-115">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="1dbe5-115">Permissions</span></span>
+<span data-ttu-id="1dbe5-p106">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1dbe5-p106">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b053c-118">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="b053c-118">Permission type</span></span>                        | <span data-ttu-id="b053c-119">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="b053c-119">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="1dbe5-118">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="1dbe5-118">Permission type</span></span>                        | <span data-ttu-id="1dbe5-119">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="1dbe5-119">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="b053c-120">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="b053c-120">Delegated (work or school account)</span></span>     | <span data-ttu-id="b053c-121">AccessReview.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b053c-121">AccessReview.ReadWrite.All</span></span> |
-|<span data-ttu-id="b053c-122">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="b053c-122">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b053c-123">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b053c-123">Not supported.</span></span> |
-|<span data-ttu-id="b053c-124">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="b053c-124">Application</span></span>                            | <span data-ttu-id="b053c-125">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b053c-125">Not supported.</span></span> |
+|<span data-ttu-id="1dbe5-120">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="1dbe5-120">Delegated (work or school account)</span></span>     | <span data-ttu-id="1dbe5-121">AccessReview.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1dbe5-121">AccessReview.ReadWrite.All</span></span> |
+|<span data-ttu-id="1dbe5-122">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="1dbe5-122">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1dbe5-123">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="1dbe5-123">Not supported.</span></span> |
+|<span data-ttu-id="1dbe5-124">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="1dbe5-124">Application</span></span>                            | <span data-ttu-id="1dbe5-125">AccessReview の構成</span><span class="sxs-lookup"><span data-stu-id="1dbe5-125">AccessReview.ReadWrite.Membership</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="b053c-126">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="b053c-126">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1dbe5-126">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="1dbe5-126">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /accessReviews('<id>')/applyDecisions()
 ```
-## <a name="request-headers"></a><span data-ttu-id="b053c-127">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b053c-127">Request headers</span></span>
-| <span data-ttu-id="b053c-128">名前</span><span class="sxs-lookup"><span data-stu-id="b053c-128">Name</span></span>         | <span data-ttu-id="b053c-129">型</span><span class="sxs-lookup"><span data-stu-id="b053c-129">Type</span></span>        | <span data-ttu-id="b053c-130">説明</span><span class="sxs-lookup"><span data-stu-id="b053c-130">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="1dbe5-127">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="1dbe5-127">Request headers</span></span>
+| <span data-ttu-id="1dbe5-128">名前</span><span class="sxs-lookup"><span data-stu-id="1dbe5-128">Name</span></span>         | <span data-ttu-id="1dbe5-129">型</span><span class="sxs-lookup"><span data-stu-id="1dbe5-129">Type</span></span>        | <span data-ttu-id="1dbe5-130">説明</span><span class="sxs-lookup"><span data-stu-id="1dbe5-130">Description</span></span> |
 |:-------------|:------------|:------------|
-| <span data-ttu-id="b053c-131">Authorization</span><span class="sxs-lookup"><span data-stu-id="b053c-131">Authorization</span></span> | <span data-ttu-id="b053c-132">string</span><span class="sxs-lookup"><span data-stu-id="b053c-132">string</span></span> | <span data-ttu-id="b053c-p107">ベアラー \{トークン\}。必須。</span><span class="sxs-lookup"><span data-stu-id="b053c-p107">Bearer \{token\}. Required.</span></span> |
+| <span data-ttu-id="1dbe5-131">Authorization</span><span class="sxs-lookup"><span data-stu-id="1dbe5-131">Authorization</span></span> | <span data-ttu-id="1dbe5-132">string</span><span class="sxs-lookup"><span data-stu-id="1dbe5-132">string</span></span> | <span data-ttu-id="1dbe5-p107">ベアラー \{トークン\}。必須。</span><span class="sxs-lookup"><span data-stu-id="1dbe5-p107">Bearer \{token\}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="b053c-135">要求本文</span><span class="sxs-lookup"><span data-stu-id="b053c-135">Request body</span></span>
-<span data-ttu-id="b053c-136">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="b053c-136">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="1dbe5-135">要求本文</span><span class="sxs-lookup"><span data-stu-id="1dbe5-135">Request body</span></span>
+<span data-ttu-id="1dbe5-136">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="1dbe5-136">Do not supply a request body for this method.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="b053c-137">応答</span><span class="sxs-lookup"><span data-stu-id="b053c-137">Response</span></span>
-<span data-ttu-id="b053c-p108">成功した場合、このメソッドは `204, No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="b053c-p108">If successful, this method returns a `204, No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="1dbe5-137">応答</span><span class="sxs-lookup"><span data-stu-id="1dbe5-137">Response</span></span>
+<span data-ttu-id="1dbe5-p108">成功した場合、このメソッドは `204, No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="1dbe5-p108">If successful, this method returns a `204, No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="b053c-140">関連項目</span><span class="sxs-lookup"><span data-stu-id="b053c-140">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="1dbe5-140">関連項目</span><span class="sxs-lookup"><span data-stu-id="1dbe5-140">See also</span></span>
 
-- [<span data-ttu-id="b053c-141">アクセスレビューを完了する方法</span><span class="sxs-lookup"><span data-stu-id="b053c-141">How to complete an access review</span></span>](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-azure-ad-controls-complete-access-review)
+- [<span data-ttu-id="1dbe5-141">アクセスレビューを完了する方法</span><span class="sxs-lookup"><span data-stu-id="1dbe5-141">How to complete an access review</span></span>](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-azure-ad-controls-complete-access-review)
 
-## <a name="example"></a><span data-ttu-id="b053c-142">例</span><span class="sxs-lookup"><span data-stu-id="b053c-142">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="b053c-143">要求</span><span class="sxs-lookup"><span data-stu-id="b053c-143">Request</span></span>
+## <a name="example"></a><span data-ttu-id="1dbe5-142">例</span><span class="sxs-lookup"><span data-stu-id="1dbe5-142">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="1dbe5-143">要求</span><span class="sxs-lookup"><span data-stu-id="1dbe5-143">Request</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="b053c-144">プロトコル</span><span class="sxs-lookup"><span data-stu-id="b053c-144">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="1dbe5-144">プロトコル</span><span class="sxs-lookup"><span data-stu-id="1dbe5-144">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "apply_accessReview"
@@ -67,26 +67,26 @@ POST /accessReviews('<id>')/applyDecisions()
 ```http
 POST https://graph.microsoft.com/beta/accessReviews/2975E9B5-44CE-4E71-93D3-30F03B5AA992/applyDecisions
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="b053c-145">C#</span><span class="sxs-lookup"><span data-stu-id="b053c-145">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="1dbe5-145">C#</span><span class="sxs-lookup"><span data-stu-id="1dbe5-145">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/apply-accessreview-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b053c-146">Javascript</span><span class="sxs-lookup"><span data-stu-id="b053c-146">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="1dbe5-146">Javascript</span><span class="sxs-lookup"><span data-stu-id="1dbe5-146">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/apply-accessreview-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="b053c-147">目的-C</span><span class="sxs-lookup"><span data-stu-id="b053c-147">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="1dbe5-147">目的-C</span><span class="sxs-lookup"><span data-stu-id="1dbe5-147">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/apply-accessreview-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="b053c-148">Java</span><span class="sxs-lookup"><span data-stu-id="b053c-148">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="1dbe5-148">Java</span><span class="sxs-lookup"><span data-stu-id="1dbe5-148">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/apply-accessreview-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="b053c-149">応答</span><span class="sxs-lookup"><span data-stu-id="b053c-149">Response</span></span>
-><span data-ttu-id="b053c-p109">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="b053c-p109">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="1dbe5-149">応答</span><span class="sxs-lookup"><span data-stu-id="1dbe5-149">Response</span></span>
+><span data-ttu-id="1dbe5-p109">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="1dbe5-p109">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -2,29 +2,30 @@
 title: timeZoneBase リソースの種類
 description: タイム ゾーンの基本的な表現です。
 localization_priority: Normal
-ms.openlocfilehash: 4c112a3118bf3f4d00be790d7923bc0fe82dc72f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 4ddc8b01f494ee861d3ab50583dc12ea4c68c623
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456951"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033573"
 ---
-# <a name="timezonebase-resource-type"></a><span data-ttu-id="849d2-103">timeZoneBase リソースの種類</span><span class="sxs-lookup"><span data-stu-id="849d2-103">timeZoneBase resource type</span></span>
+# <a name="timezonebase-resource-type"></a><span data-ttu-id="6ea42-103">timeZoneBase リソースの種類</span><span class="sxs-lookup"><span data-stu-id="6ea42-103">timeZoneBase resource type</span></span>
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-<span data-ttu-id="849d2-104">タイム ゾーンの基本的な表現です。</span><span class="sxs-lookup"><span data-stu-id="849d2-104">The basic representation of a time zone.</span></span>
+<span data-ttu-id="6ea42-104">タイム ゾーンの基本的な表現です。</span><span class="sxs-lookup"><span data-stu-id="6ea42-104">The basic representation of a time zone.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="849d2-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="849d2-105">Properties</span></span>
-| <span data-ttu-id="849d2-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="849d2-106">Property</span></span>     | <span data-ttu-id="849d2-107">型</span><span class="sxs-lookup"><span data-stu-id="849d2-107">Type</span></span>   |<span data-ttu-id="849d2-108">説明</span><span class="sxs-lookup"><span data-stu-id="849d2-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="6ea42-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="6ea42-105">Properties</span></span>
+| <span data-ttu-id="6ea42-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="6ea42-106">Property</span></span>     | <span data-ttu-id="6ea42-107">型</span><span class="sxs-lookup"><span data-stu-id="6ea42-107">Type</span></span>   |<span data-ttu-id="6ea42-108">説明</span><span class="sxs-lookup"><span data-stu-id="6ea42-108">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="849d2-109">name</span><span class="sxs-lookup"><span data-stu-id="849d2-109">name</span></span> | <span data-ttu-id="849d2-110">string</span><span class="sxs-lookup"><span data-stu-id="849d2-110">string</span></span> | <span data-ttu-id="849d2-111">タイム ゾーンの名前。</span><span class="sxs-lookup"><span data-stu-id="849d2-111">The name of a time zone.</span></span> <span data-ttu-id="849d2-112">標準的なタイム ゾーンの名前 ("ハワイ アリューシャン標準時" など) を使用することも、カスタム タイム ゾーンとして "カスタム タイム ゾーン" という名前を指定することもできます。</span><span class="sxs-lookup"><span data-stu-id="849d2-112">It can be a standard time zone name such as "Hawaii-Aleutian Standard Time", or "Customized Time Zone" for a custom time zone.</span></span> |
+| <span data-ttu-id="6ea42-109">name</span><span class="sxs-lookup"><span data-stu-id="6ea42-109">name</span></span> | <span data-ttu-id="6ea42-110">string</span><span class="sxs-lookup"><span data-stu-id="6ea42-110">string</span></span> | <span data-ttu-id="6ea42-111">タイム ゾーンの名前。</span><span class="sxs-lookup"><span data-stu-id="6ea42-111">The name of a time zone.</span></span> <span data-ttu-id="6ea42-112">標準的なタイム ゾーンの名前 ("ハワイ アリューシャン標準時" など) を使用することも、カスタム タイム ゾーンとして "カスタム タイム ゾーン" という名前を指定することもできます。</span><span class="sxs-lookup"><span data-stu-id="6ea42-112">It can be a standard time zone name such as "Hawaii-Aleutian Standard Time", or "Customized Time Zone" for a custom time zone.</span></span> |
 
 
-## <a name="json-representation"></a><span data-ttu-id="849d2-113">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="849d2-113">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="6ea42-113">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="6ea42-113">JSON representation</span></span>
 
-<span data-ttu-id="849d2-114">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="849d2-114">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="6ea42-114">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="6ea42-114">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -43,15 +44,10 @@ ms.locfileid: "32456951"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "timeZoneBase resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/timezonebase.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

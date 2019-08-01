@@ -4,20 +4,23 @@ ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: TextColumn
 localization_priority: Normal
-ms.openlocfilehash: 1e10997bd70f97fa91177aee48a6ffcecff40ab5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: columnDefinition リソースの textColumn は、列の値がテキストであることを示します。
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 37a5bbd985d163cf627f4bc0a16a756eaf00af66
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456998"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033657"
 ---
-# <a name="textcolumn-resource-type"></a><span data-ttu-id="f9354-102">TableColumn リソースの種類</span><span class="sxs-lookup"><span data-stu-id="f9354-102">TextColumn resource type</span></span>
+# <a name="textcolumn-resource-type"></a><span data-ttu-id="f476c-103">TableColumn リソースの種類</span><span class="sxs-lookup"><span data-stu-id="f476c-103">TextColumn resource type</span></span>
 
-<span data-ttu-id="f9354-103">[columnDefinition](columndefinition.md) リソースの **textColumn** は、列の値がテキストであることを示します。</span><span class="sxs-lookup"><span data-stu-id="f9354-103">The **textColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values are text.</span></span>
+<span data-ttu-id="f476c-104">[columnDefinition](columndefinition.md) リソースの **textColumn** は、列の値がテキストであることを示します。</span><span class="sxs-lookup"><span data-stu-id="f476c-104">The **textColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values are text.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="f9354-104">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="f9354-104">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f476c-105">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="f476c-105">JSON representation</span></span>
 
-<span data-ttu-id="f9354-105">以下は、**textColumn** リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="f9354-105">Here is a JSON representation of a **textColumn** resource.</span></span>
+<span data-ttu-id="f476c-106">以下は、**textColumn** リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="f476c-106">Here is a JSON representation of a **textColumn** resource.</span></span>
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.textColumn" } -->
 
 ```json
@@ -30,15 +33,15 @@ ms.locfileid: "32456998"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="f9354-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="f9354-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="f476c-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="f476c-107">Properties</span></span>
 
-| <span data-ttu-id="f9354-107">プロパティ名</span><span class="sxs-lookup"><span data-stu-id="f9354-107">Property name</span></span>                   | <span data-ttu-id="f9354-108">種類</span><span class="sxs-lookup"><span data-stu-id="f9354-108">Type</span></span>    | <span data-ttu-id="f9354-109">説明</span><span class="sxs-lookup"><span data-stu-id="f9354-109">Description</span></span>
+| <span data-ttu-id="f476c-108">プロパティ名</span><span class="sxs-lookup"><span data-stu-id="f476c-108">Property name</span></span>                   | <span data-ttu-id="f476c-109">種類</span><span class="sxs-lookup"><span data-stu-id="f476c-109">Type</span></span>    | <span data-ttu-id="f476c-110">説明</span><span class="sxs-lookup"><span data-stu-id="f476c-110">Description</span></span>
 |:--------------------------------|:--------|:---------------------------------
-| <span data-ttu-id="f9354-110">**allowMultipleLines**</span><span class="sxs-lookup"><span data-stu-id="f9354-110">**allowMultipleLines**</span></span>          | <span data-ttu-id="f9354-111">ブール値</span><span class="sxs-lookup"><span data-stu-id="f9354-111">boolean</span></span> | <span data-ttu-id="f9354-112">複数行のテキストを許可するかどうか。</span><span class="sxs-lookup"><span data-stu-id="f9354-112">Whether to allow multiple lines of text.</span></span>
-| <span data-ttu-id="f9354-113">**appendChangesToExistingText**</span><span class="sxs-lookup"><span data-stu-id="f9354-113">**appendChangesToExistingText**</span></span> | <span data-ttu-id="f9354-114">ブール値</span><span class="sxs-lookup"><span data-stu-id="f9354-114">boolean</span></span> | <span data-ttu-id="f9354-115">この列への更新が既存のテキストを置き換えるか、または追加するか。</span><span class="sxs-lookup"><span data-stu-id="f9354-115">Whether updates to this column should replace existing text, or append to it.</span></span>
-| <span data-ttu-id="f9354-116">**linesForEditing**</span><span class="sxs-lookup"><span data-stu-id="f9354-116">**linesForEditing**</span></span>             | <span data-ttu-id="f9354-117">int32</span><span class="sxs-lookup"><span data-stu-id="f9354-117">int32</span></span>   | <span data-ttu-id="f9354-118">テキスト ボックスのサイズ。</span><span class="sxs-lookup"><span data-stu-id="f9354-118">The size of the text box.</span></span>
-| <span data-ttu-id="f9354-119">**maxLength**</span><span class="sxs-lookup"><span data-stu-id="f9354-119">**maxLength**</span></span>                   | <span data-ttu-id="f9354-120">int32</span><span class="sxs-lookup"><span data-stu-id="f9354-120">int32</span></span>   | <span data-ttu-id="f9354-121">値に使用できる最大文字数。</span><span class="sxs-lookup"><span data-stu-id="f9354-121">The maximum number of characters for the value.</span></span>
-| <span data-ttu-id="f9354-122">**textType**</span><span class="sxs-lookup"><span data-stu-id="f9354-122">**textType**</span></span>                    | <span data-ttu-id="f9354-123">string</span><span class="sxs-lookup"><span data-stu-id="f9354-123">string</span></span>  | <span data-ttu-id="f9354-124">格納されているテキストの種類。</span><span class="sxs-lookup"><span data-stu-id="f9354-124">The type of text being stored.</span></span> <span data-ttu-id="f9354-125">`plain` または `richText` のいずれかでなければなりません。</span><span class="sxs-lookup"><span data-stu-id="f9354-125">Must be one of `plain` or `richText`</span></span>
+| <span data-ttu-id="f476c-111">**allowMultipleLines**</span><span class="sxs-lookup"><span data-stu-id="f476c-111">**allowMultipleLines**</span></span>          | <span data-ttu-id="f476c-112">ブール値</span><span class="sxs-lookup"><span data-stu-id="f476c-112">boolean</span></span> | <span data-ttu-id="f476c-113">複数行のテキストを許可するかどうか。</span><span class="sxs-lookup"><span data-stu-id="f476c-113">Whether to allow multiple lines of text.</span></span>
+| <span data-ttu-id="f476c-114">**appendChangesToExistingText**</span><span class="sxs-lookup"><span data-stu-id="f476c-114">**appendChangesToExistingText**</span></span> | <span data-ttu-id="f476c-115">ブール値</span><span class="sxs-lookup"><span data-stu-id="f476c-115">boolean</span></span> | <span data-ttu-id="f476c-116">この列への更新が既存のテキストを置き換えるか、または追加するか。</span><span class="sxs-lookup"><span data-stu-id="f476c-116">Whether updates to this column should replace existing text, or append to it.</span></span>
+| <span data-ttu-id="f476c-117">**linesForEditing**</span><span class="sxs-lookup"><span data-stu-id="f476c-117">**linesForEditing**</span></span>             | <span data-ttu-id="f476c-118">int32</span><span class="sxs-lookup"><span data-stu-id="f476c-118">int32</span></span>   | <span data-ttu-id="f476c-119">テキスト ボックスのサイズ。</span><span class="sxs-lookup"><span data-stu-id="f476c-119">The size of the text box.</span></span>
+| <span data-ttu-id="f476c-120">**maxLength**</span><span class="sxs-lookup"><span data-stu-id="f476c-120">**maxLength**</span></span>                   | <span data-ttu-id="f476c-121">int32</span><span class="sxs-lookup"><span data-stu-id="f476c-121">int32</span></span>   | <span data-ttu-id="f476c-122">値に使用できる最大文字数。</span><span class="sxs-lookup"><span data-stu-id="f476c-122">The maximum number of characters for the value.</span></span>
+| <span data-ttu-id="f476c-123">**textType**</span><span class="sxs-lookup"><span data-stu-id="f476c-123">**textType**</span></span>                    | <span data-ttu-id="f476c-124">string</span><span class="sxs-lookup"><span data-stu-id="f476c-124">string</span></span>  | <span data-ttu-id="f476c-125">格納されているテキストの種類。</span><span class="sxs-lookup"><span data-stu-id="f476c-125">The type of text being stored.</span></span> <span data-ttu-id="f476c-126">`plain` または `richText` のいずれかでなければなりません。</span><span class="sxs-lookup"><span data-stu-id="f476c-126">Must be one of `plain` or `richText`</span></span>
 
 <!-- {
   "type": "#page.annotation",

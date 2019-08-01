@@ -4,39 +4,40 @@ description: グラフ軸のタイトルを表します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 877635e2455dcf63c2b420283a2ec858f590fa17
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 5c89b3e90cce7dcc064dfd7186eafcc26a37dd0c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569229"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033027"
 ---
-# <a name="chartaxistitle-resource-type"></a><span data-ttu-id="bf2b4-103">ChartAxisTitle リソースの種類</span><span class="sxs-lookup"><span data-stu-id="bf2b4-103">ChartAxisTitle resource type</span></span>
+# <a name="chartaxistitle-resource-type"></a><span data-ttu-id="ead37-103">ChartAxisTitle リソースの種類</span><span class="sxs-lookup"><span data-stu-id="ead37-103">ChartAxisTitle resource type</span></span>
 
-<span data-ttu-id="bf2b4-104">グラフ軸のタイトルを表します。</span><span class="sxs-lookup"><span data-stu-id="bf2b4-104">Represents the title of a chart axis.</span></span>
+<span data-ttu-id="ead37-104">グラフ軸のタイトルを表します。</span><span class="sxs-lookup"><span data-stu-id="ead37-104">Represents the title of a chart axis.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="bf2b4-105">メソッド</span><span class="sxs-lookup"><span data-stu-id="bf2b4-105">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="ead37-105">メソッド</span><span class="sxs-lookup"><span data-stu-id="ead37-105">Methods</span></span>
 
-| <span data-ttu-id="bf2b4-106">メソッド</span><span class="sxs-lookup"><span data-stu-id="bf2b4-106">Method</span></span>           | <span data-ttu-id="bf2b4-107">戻り値の型</span><span class="sxs-lookup"><span data-stu-id="bf2b4-107">Return Type</span></span>    |<span data-ttu-id="bf2b4-108">説明</span><span class="sxs-lookup"><span data-stu-id="bf2b4-108">Description</span></span>|
+| <span data-ttu-id="ead37-106">メソッド</span><span class="sxs-lookup"><span data-stu-id="ead37-106">Method</span></span>           | <span data-ttu-id="ead37-107">戻り値の型</span><span class="sxs-lookup"><span data-stu-id="ead37-107">Return Type</span></span>    |<span data-ttu-id="ead37-108">説明</span><span class="sxs-lookup"><span data-stu-id="ead37-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="bf2b4-109">Get ChartAxisTitle</span><span class="sxs-lookup"><span data-stu-id="bf2b4-109">Get ChartAxisTitle</span></span>](../api/chartaxistitle-get.md) | [<span data-ttu-id="bf2b4-110">WorkbookChartAxisTitle</span><span class="sxs-lookup"><span data-stu-id="bf2b4-110">WorkbookChartAxisTitle</span></span>](chartaxistitle.md) |<span data-ttu-id="bf2b4-111">chartAxisTitle オブジェクトのプロパティと関係を読み取ります。</span><span class="sxs-lookup"><span data-stu-id="bf2b4-111">Read properties and relationships of chartAxisTitle object.</span></span>|
-|[<span data-ttu-id="bf2b4-112">Update</span><span class="sxs-lookup"><span data-stu-id="bf2b4-112">Update</span></span>](../api/chartaxistitle-update.md) | [<span data-ttu-id="bf2b4-113">WorkbookChartAxisTitle</span><span class="sxs-lookup"><span data-stu-id="bf2b4-113">WorkbookChartAxisTitle</span></span>](chartaxistitle.md)    |<span data-ttu-id="bf2b4-114">ChartAxisTitle オブジェクトを更新します。</span><span class="sxs-lookup"><span data-stu-id="bf2b4-114">Update ChartAxisTitle object.</span></span> |
+|[<span data-ttu-id="ead37-109">Get ChartAxisTitle</span><span class="sxs-lookup"><span data-stu-id="ead37-109">Get ChartAxisTitle</span></span>](../api/chartaxistitle-get.md) | [<span data-ttu-id="ead37-110">WorkbookChartAxisTitle</span><span class="sxs-lookup"><span data-stu-id="ead37-110">WorkbookChartAxisTitle</span></span>](chartaxistitle.md) |<span data-ttu-id="ead37-111">chartAxisTitle オブジェクトのプロパティと関係を読み取ります。</span><span class="sxs-lookup"><span data-stu-id="ead37-111">Read properties and relationships of chartAxisTitle object.</span></span>|
+|[<span data-ttu-id="ead37-112">Update</span><span class="sxs-lookup"><span data-stu-id="ead37-112">Update</span></span>](../api/chartaxistitle-update.md) | [<span data-ttu-id="ead37-113">WorkbookChartAxisTitle</span><span class="sxs-lookup"><span data-stu-id="ead37-113">WorkbookChartAxisTitle</span></span>](chartaxistitle.md)    |<span data-ttu-id="ead37-114">ChartAxisTitle オブジェクトを更新します。</span><span class="sxs-lookup"><span data-stu-id="ead37-114">Update ChartAxisTitle object.</span></span> |
 
-## <a name="properties"></a><span data-ttu-id="bf2b4-115">プロパティ</span><span class="sxs-lookup"><span data-stu-id="bf2b4-115">Properties</span></span>
-| <span data-ttu-id="bf2b4-116">プロパティ</span><span class="sxs-lookup"><span data-stu-id="bf2b4-116">Property</span></span>     | <span data-ttu-id="bf2b4-117">型</span><span class="sxs-lookup"><span data-stu-id="bf2b4-117">Type</span></span>   |<span data-ttu-id="bf2b4-118">説明</span><span class="sxs-lookup"><span data-stu-id="bf2b4-118">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="ead37-115">プロパティ</span><span class="sxs-lookup"><span data-stu-id="ead37-115">Properties</span></span>
+| <span data-ttu-id="ead37-116">プロパティ</span><span class="sxs-lookup"><span data-stu-id="ead37-116">Property</span></span>     | <span data-ttu-id="ead37-117">型</span><span class="sxs-lookup"><span data-stu-id="ead37-117">Type</span></span>   |<span data-ttu-id="ead37-118">説明</span><span class="sxs-lookup"><span data-stu-id="ead37-118">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="bf2b4-119">text</span><span class="sxs-lookup"><span data-stu-id="bf2b4-119">text</span></span>|<span data-ttu-id="bf2b4-120">string</span><span class="sxs-lookup"><span data-stu-id="bf2b4-120">string</span></span>|<span data-ttu-id="bf2b4-121">軸タイトルを表します。</span><span class="sxs-lookup"><span data-stu-id="bf2b4-121">Represents the axis title.</span></span>|
-|<span data-ttu-id="bf2b4-122">visible</span><span class="sxs-lookup"><span data-stu-id="bf2b4-122">visible</span></span>|<span data-ttu-id="bf2b4-123">ブール値</span><span class="sxs-lookup"><span data-stu-id="bf2b4-123">boolean</span></span>|<span data-ttu-id="bf2b4-124">軸のタイトルの表示/非表示を指定するブール型の値です。</span><span class="sxs-lookup"><span data-stu-id="bf2b4-124">A boolean that specifies the visibility of an axis title.</span></span>|
+|<span data-ttu-id="ead37-119">text</span><span class="sxs-lookup"><span data-stu-id="ead37-119">text</span></span>|<span data-ttu-id="ead37-120">string</span><span class="sxs-lookup"><span data-stu-id="ead37-120">string</span></span>|<span data-ttu-id="ead37-121">軸タイトルを表します。</span><span class="sxs-lookup"><span data-stu-id="ead37-121">Represents the axis title.</span></span>|
+|<span data-ttu-id="ead37-122">visible</span><span class="sxs-lookup"><span data-stu-id="ead37-122">visible</span></span>|<span data-ttu-id="ead37-123">ブール値</span><span class="sxs-lookup"><span data-stu-id="ead37-123">boolean</span></span>|<span data-ttu-id="ead37-124">軸のタイトルの表示/非表示を指定するブール型の値です。</span><span class="sxs-lookup"><span data-stu-id="ead37-124">A boolean that specifies the visibility of an axis title.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="bf2b4-125">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="bf2b4-125">Relationships</span></span>
-| <span data-ttu-id="bf2b4-126">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="bf2b4-126">Relationship</span></span> | <span data-ttu-id="bf2b4-127">型</span><span class="sxs-lookup"><span data-stu-id="bf2b4-127">Type</span></span>   |<span data-ttu-id="bf2b4-128">説明</span><span class="sxs-lookup"><span data-stu-id="bf2b4-128">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="ead37-125">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="ead37-125">Relationships</span></span>
+| <span data-ttu-id="ead37-126">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="ead37-126">Relationship</span></span> | <span data-ttu-id="ead37-127">型</span><span class="sxs-lookup"><span data-stu-id="ead37-127">Type</span></span>   |<span data-ttu-id="ead37-128">説明</span><span class="sxs-lookup"><span data-stu-id="ead37-128">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="bf2b4-129">format</span><span class="sxs-lookup"><span data-stu-id="bf2b4-129">format</span></span>|[<span data-ttu-id="bf2b4-130">WorkbookChartAxisTitleFormat</span><span class="sxs-lookup"><span data-stu-id="bf2b4-130">WorkbookChartAxisTitleFormat</span></span>](chartaxistitleformat.md)|<span data-ttu-id="bf2b4-131">グラフ軸のタイトルの書式設定を表します。</span><span class="sxs-lookup"><span data-stu-id="bf2b4-131">Represents the formatting of chart axis title.</span></span> <span data-ttu-id="bf2b4-132">値の取得のみ可能です。</span><span class="sxs-lookup"><span data-stu-id="bf2b4-132">Read-only.</span></span>|
+|<span data-ttu-id="ead37-129">format</span><span class="sxs-lookup"><span data-stu-id="ead37-129">format</span></span>|[<span data-ttu-id="ead37-130">WorkbookChartAxisTitleFormat</span><span class="sxs-lookup"><span data-stu-id="ead37-130">WorkbookChartAxisTitleFormat</span></span>](chartaxistitleformat.md)|<span data-ttu-id="ead37-131">グラフ軸のタイトルの書式設定を表します。</span><span class="sxs-lookup"><span data-stu-id="ead37-131">Represents the formatting of chart axis title.</span></span> <span data-ttu-id="ead37-132">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="ead37-132">Read-only.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="bf2b4-133">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="bf2b4-133">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="ead37-133">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="ead37-133">JSON representation</span></span>
 
-<span data-ttu-id="bf2b4-134">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="bf2b4-134">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="ead37-134">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="ead37-134">Here is a JSON representation of the resource.</span></span>
 
 <!--{
   "blockType": "resource",
