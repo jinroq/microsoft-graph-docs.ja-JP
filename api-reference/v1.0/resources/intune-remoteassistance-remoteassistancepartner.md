@@ -4,16 +4,17 @@ description: remoteAssistPartner リソースは、特定のリモート アシ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0557eb45fb770c257f1734bf967f78e9e00cac81
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 7bd14d3978e629c75ee9c232a07f88446ca545d1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554199"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36037052"
 ---
 # <a name="remoteassistancepartner-resource-type"></a>remoteAssistancePartner リソースの種類
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 remoteAssistPartner リソースは、特定のリモート アシスタンス パートナー サービスのメタデータおよび状態を表します。
 
@@ -25,16 +26,16 @@ remoteAssistPartner リソースは、特定のリモート アシスタンス �
 |[Create remoteAssistancePartner](../api/intune-remoteassistance-remoteassistancepartner-create.md)|[remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md)|新しい [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) オブジェクトを作成します。|
 |[Delete remoteAssistancePartner](../api/intune-remoteassistance-remoteassistancepartner-delete.md)|なし|[remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) を削除します。|
 |[Update remoteAssistancePartner](../api/intune-remoteassistance-remoteassistancepartner-update.md)|[remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md)|[remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) オブジェクトのプロパティを更新します。|
-|[beginOnboarding アクション](../api/intune-remoteassistance-remoteassistancepartner-beginonboarding.md)|なし|まだ文書化されていません|
+|[beginOnboarding アクション](../api/intune-remoteassistance-remoteassistancepartner-beginonboarding.md)|None|まだ文書化されていません|
 |[disconnect アクション](../api/intune-remoteassistance-remoteassistancepartner-disconnect.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|パートナーの一意識別子。|
+|id|文字列|パートナーの一意識別子。|
 |displayName|String|パートナーの表示名。|
 |onboardingUrl|String|パートナーのオンボーディング ポータルの URL。このポータルでは、管理者がパートナーのリモート アシスタンス サービスを構成できます。|
-|onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune-remoteassistance-remoteassistanceonboardingstatus.md)|TBD. 使用可能な値は、`notOnboarded`、`onboarding`、`onboarded` です。|
+|onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune-remoteassistance-remoteassistanceonboardingstatus.md)|TBD. 可能な値は、`notOnboarded`、`onboarding`、`onboarded` です。|
 |lastConnectionDateTime|DateTimeOffset|TEM パートナーによって Intune に対して最後に送信された要求のタイムスタンプ。|
 
 ## <a name="relationships"></a>リレーションシップ

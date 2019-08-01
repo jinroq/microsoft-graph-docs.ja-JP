@@ -4,12 +4,13 @@ description: rangeformat オブジェクトのプロパティと関係を取得�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: a11f8bc45133707ea725ed9e697c972cd1463264
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: e980c59580a407bbf08e1820c550240035068364
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35880610"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025226"
 ---
 # <a name="get-rangeformat"></a>RangeFormat を取得する
 

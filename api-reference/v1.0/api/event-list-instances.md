@@ -4,12 +4,13 @@ description: 指定した時間範囲のイベントのインスタンス (発�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: b09eb74ac6366ddfdf0e04606aec189eff942012
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: e3722c614311a5d251309d81fcfe6c843731d041
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35887311"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006711"
 ---
 # <a name="list-instances"></a>インスタンスの一覧表示
 

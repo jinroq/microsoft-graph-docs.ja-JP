@@ -4,12 +4,13 @@ description: チームのコピーを作成します。 この操作では、対
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: c3b6b8e9615491275f981a759fabc4ed6a683373
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: fe33df030e5f92ee9780c22e1f73b6aa88a021a8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534725"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36024281"
 ---
 # <a name="clone-a-team"></a>チームのクローンを作成する
 
@@ -59,8 +60,8 @@ POST /teams/{id}/clone
 |description|String (省略可能)|グループに関するオプションの説明。 このプロパティが指定されていない場合は、空白のままになります。|
 |displayName|String|グループの表示名。このプロパティは、グループの作成時の必須プロパティであり、更新時にクリアすることはできません。$filter および $orderby をサポートします。|
 |mailNickname|String|グループのメール エイリアスです (組織内で一意)。 このプロパティは、グループの作成時に指定する必要があります。 $filter をサポートします。 このプロパティが指定されていない場合は、displayName から計算されます。 既知の問題: このプロパティは現在無視されています。|
-|partstoclone| [clonableTeamParts](../resources/clonableteamparts.md) |クローンするパーツのコンマ区切りのリスト。 法的パーツとは、「アプリ、タブ、設定、チャネル、メンバー」のことです。|
-|visibility|[teamVisibilityType](../resources/teamvisibilitytype.md)オプション| グループを表示するかどうかを指定します。 可能な値は、 **Private**、 **Public**です。 visibility が指定されていない場合、表示は元のチーム/グループからコピーされます。 複製対象のチームが**educationClass**チームの場合、visibility パラメーターは無視され、新しいグループの表示が HiddenMembership に設定されます。|
+|partsToClone| [clonableTeamParts](../resources/clonableteamparts.md) |クローンするパーツのコンマ区切りのリスト。 法的パーツとは、「アプリ、タブ、設定、チャネル、メンバー」のことです。|
+|visibility|[teamVisibilityType](../resources/teamvisibilitytype.md)オプション| グループを表示するかどうかを指定します。 可能な値は、 **Private**、 **Public**です。 Visibility が指定されていない場合、表示は元のチーム/グループからコピーされます。 複製対象のチームが**educationClass**チームの場合、visibility パラメーターは無視され、新しいグループの表示が HiddenMembership に設定されます。|
 
 ## <a name="response"></a>応答
 

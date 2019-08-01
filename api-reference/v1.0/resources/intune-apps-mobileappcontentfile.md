@@ -4,16 +4,17 @@ description: 特定の mobileAppContent バージョンに関連付けられて�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f8edeebdc3df12d3e1a458ae57e805052e47e3d8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 48cb6d12234135aa3bdab6eaba123f99faa51bf8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32557881"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032159"
 ---
 # <a name="mobileappcontentfile-resource-type"></a>mobileAppContentFile リソース タイプ
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 特定の mobileAppContent バージョンに関連付けられている単一のインストーラー ファイルのプロパティが含まれています。
 
@@ -23,9 +24,9 @@ ms.locfileid: "32557881"
 |[List mobileAppContentFiles](../api/intune-apps-mobileappcontentfile-list.md)|[mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) コレクション|[mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) オブジェクトのプロパティとリレーションシップをリストします。|
 |[Get mobileAppContentFile](../api/intune-apps-mobileappcontentfile-get.md)|[mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md)|[mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
 |[Create mobileAppContentFile](../api/intune-apps-mobileappcontentfile-create.md)|[mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md)|新しい [mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) オブジェクトを作成します。|
-|[Delete mobileAppContentFile](../api/intune-apps-mobileappcontentfile-delete.md)|なし|[mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) を削除します。|
+|[Delete mobileAppContentFile](../api/intune-apps-mobileappcontentfile-delete.md)|None|[mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) を削除します。|
 |[Update mobileAppContentFile](../api/intune-apps-mobileappcontentfile-update.md)|[mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md)|[mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) オブジェクトのプロパティを更新します。|
-|[commit action](../api/intune-apps-mobileappcontentfile-commit.md)|なし|特定のアプリのファイルをコミットします。|
+|[commit action](../api/intune-apps-mobileappcontentfile-commit.md)|None|特定のアプリのファイルをコミットします。|
 |[renewUpload action](../api/intune-apps-mobileappcontentfile-renewupload.md)|なし|アプリケーション ファイルのアップロード用の SAS URI を更新します。|
 
 ## <a name="properties"></a>プロパティ
@@ -33,7 +34,7 @@ ms.locfileid: "32557881"
 |:---|:---|:---|
 |azureStorageUri|String|Azure ストレージ URI。|
 |isCommitted|Boolean|ファイルがコミットされたかどうかを示す値。|
-|id|String|ファイル ID。|
+|id|文字列|ファイル ID。|
 |createdDateTime|DateTimeOffset|ファイルが作成された時刻。|
 |name|String|ファイル名。|
 |size|Int64|暗号化する前のファイルのサイズ。|

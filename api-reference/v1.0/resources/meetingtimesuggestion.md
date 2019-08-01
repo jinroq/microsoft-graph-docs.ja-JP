@@ -4,12 +4,13 @@ description: '会議の時間、出席の可能性、個人などの情報を含
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 4c5a4cb4d094e7fd7fe9b0e56227a556c6e5b5d1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 723468d14ebd089d8ed5b020f56e0c70c426ed9b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573978"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036205"
 ---
 # <a name="meetingtimesuggestion-resource-type"></a>meetingTimeSuggestion リソースの種類
 
@@ -47,7 +48,7 @@ ms.locfileid: "32573978"
 |locations|[location](location.md) コレクション|この提案された会議の各会議場所の名前と地理的な場所を指定する配列。|
 |会議タイムスロット|[timeSlot](timeslot.md)|会議の提案されている期間。|
 |降順|Int32|同じ信頼度がある場合に、chronology によって並べ替えられた、会議の時間の候補の順序 (高から低まで)。 |
-|組織の空き時間情報|freeBusyStatus| この提案されている会議の開催者の空き時間情報。 使用可能な値は`free`、 `tentative`、 `busy` `oof` `workingElsewhere`、、、 `unknown`、です。|
+|組織の空き時間情報|freeBusyStatus| この提案されている会議の開催者の空き時間情報。 使用可能な値: `free`、`tentative`、`busy`、`oof`、`workingElsewhere`、`unknown`。|
 |suggestionReason|String|会議時間を提案する理由。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -1,21 +1,22 @@
 ---
-title: androidWorkProfileCustomConfiguration の削除
-description: androidWorkProfileCustomConfiguration を削除します。
+title: AndroidWorkProfileCustomConfiguration の削除
+description: AndroidWorkProfileCustomConfiguration を削除します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f683a2c44114e264f56bf28c6a02766f4f7841d8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: a65e82cfaf5484578b6bd65ad0e2d7893056d35b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32503631"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36019540"
 ---
-# <a name="delete-androidworkprofilecustomconfiguration"></a>androidWorkProfileCustomConfiguration の削除
+# <a name="delete-androidworkprofilecustomconfiguration"></a>AndroidWorkProfileCustomConfiguration の削除
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)を削除します。
+[AndroidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)を削除します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。

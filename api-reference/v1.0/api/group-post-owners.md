@@ -4,12 +4,13 @@ description: グループ所有者にユーザーを追加します。所有者�
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 418ee5fef2c511b394703b82a7cecbd4ea0b818d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 6237c3f82d5154b5f3db602fb0ffa7b0f94cc48f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35884763"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014866"
 ---
 # <a name="add-group-owner"></a>グループ所有者の追加
 グループ所有者にユーザーを追加します。所有者は、グループ オブジェクトの変更を許可されている管理者以外のユーザーです。

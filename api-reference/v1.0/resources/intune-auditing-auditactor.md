@@ -4,16 +4,17 @@ description: 監査アクターのプロパティが含まれるクラス。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 632e3018f606b62171461b4b1235ccdafc6b1b5a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 2b2aab468a6638b2e3bb525fd54c6554f5a5694a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584706"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032082"
 ---
 # <a name="auditactor-resource-type"></a>auditActor リソースの種類
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 監査アクターのプロパティが含まれるクラス。
 
@@ -24,10 +25,10 @@ ms.locfileid: "32584706"
 |userPermissions|String コレクション|監査の実行時におけるユーザーのアクセス許可の一覧。|
 |applicationId|String|AAD アプリケーション ID。|
 |applicationDisplayName|String|アプリケーションの名前。|
-|userPrincipalName|String|ユーザー プリンシパル名 (UPN)。|
+|userPrincipalName|文字列|ユーザー プリンシパル名 (UPN)。|
 |servicePrincipalName|String|サービス プリンシパル名 (SPN)。|
-|ipAddress|String|IPAddress。|
-|userId|文字列型 (String)|ユーザー ID。|
+|ipAddress|文字列型 (String)|IPAddress。|
+|userId|String|ユーザー ID。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

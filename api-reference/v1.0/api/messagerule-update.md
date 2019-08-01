@@ -4,12 +4,13 @@ description: messageRule オブジェクトの書き込み可能なプロパテ�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 13629fd8a7af750a17feb580239e369eb24acca7
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: ab56b8889c07912d2f11075a3c157d6dacc824d6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35890370"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35976615"
 ---
 # <a name="update-rule"></a>ルールを更新する
 

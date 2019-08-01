@@ -4,16 +4,17 @@ description: iosVppEBook を削除します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 519bb118777d13f2126ebb853046b0dda42ec2b4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 95bbaee4109a4fa2b1b787604a633d94e2f9159d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549983"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013592"
 ---
 # <a name="delete-iosvppebook"></a>Delete iosVppEBook
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [iosVppEBook](../resources/intune-books-iosvppebook.md) を削除します。
 

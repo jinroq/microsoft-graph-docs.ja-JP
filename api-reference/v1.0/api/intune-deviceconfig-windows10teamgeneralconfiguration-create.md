@@ -4,16 +4,17 @@ description: 新しい windows10TeamGeneralConfiguration オブジェクトを�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cabccd8f44f26b4ab8c848866e25f30302dc0198
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: b4083c1bc0c9673c1cf8d773e4ce836cc2243ea3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32558112"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35997191"
 ---
 # <a name="create-windows10teamgeneralconfiguration"></a>windows10TeamGeneralConfiguration の作成
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい [windows10TeamGeneralConfiguration](../resources/intune-deviceconfig-windows10teamgeneralconfiguration.md) オブジェクトを作成します。
 
@@ -48,25 +49,25 @@ POST /deviceManagement/deviceConfigurations
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列型 (String)|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|id|文字列|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |description|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|管理者が指定した、デバイス構成の名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|azureOperationalInsightsBlockTelemetry|ブール値|Azure Operational Insights をブロックするかどうかを示します。|
+|azureOperationalInsightsBlockTelemetry|Boolean|Azure Operational Insights をブロックするかどうかを示します。|
 |azureOperationalInsightsWorkspaceId|String|Azure Operational Insights のワークスペース ID。|
 |azureOperationalInsightsWorkspaceKey|String|Azure Operational Insights のワークスペース キー。|
-|connectAppBlockAutoLaunch|ブール値|投影を開始するたびに、接続アプリを自動的に起動するかどうかを指定します。|
-|maintenanceWindowBlocked|ブール値|デバイス更新のメンテナンス ウィンドウの設定をブロックするかどうかを示します。|
+|connectAppBlockAutoLaunch|Boolean|投影を開始するたびに、接続アプリを自動的に起動するかどうかを指定します。|
+|maintenanceWindowBlocked|Boolean|デバイス更新のメンテナンス ウィンドウの設定をブロックするかどうかを示します。|
 |maintenanceWindowDurationInHours|Int32|デバイス更新のためのメンテナンス期間の長さ (時間)。 有効な値は 0 から 5 までです|
 |maintenanceWindowStartTime|TimeOfDay|デバイス更新のためのメンテナンス期間の開始時刻。|
 |miracastChannel|[miracastChannel](../resources/intune-deviceconfig-miracastchannel.md)|チャネル。 可能な値は、`userDefined`、`one`、`two`、`three`、`four`、`five`、`six`、`seven`、`eight`、`nine`、`ten`、`eleven`、`thirtySix`、`forty`、`fortyFour`、`fortyEight`、`oneHundredFortyNine`、`oneHundredFiftyThree`、`oneHundredFiftySeven`、`oneHundredSixtyOne`、`oneHundredSixtyFive` です。|
-|miracastBlocked|ブール値|ワイヤレス投影をブロックするかどうかを示します。|
-|miracastRequirePin|ブール値|ワイヤレス投影の pin が必要かどうかを示します。|
-|settingsBlockMyMeetingsAndFiles|ブール値|スタート メニューで [会議とファイル] 機能を無効にするかどうかを指定します。この機能は、サインイン ユーザーの会議とファイルを Office 365 から表示します。|
-|settingsBlockSessionResume|ブール値|セッションがタイムアウトになった際にセッションを再開する機能を許可するかどうかを指定します。|
-|settingsBlockSigninSuggestions|ブール値|スケジュールされている会議の招待者をサインイン ダイアログに自動入力する機能を無効にするかどうかを指定します。|
+|miracastBlocked|Boolean|ワイヤレス投影をブロックするかどうかを示します。|
+|miracastRequirePin|Boolean|ワイヤレス投影の pin が必要かどうかを示します。|
+|settingsBlockMyMeetingsAndFiles|Boolean|スタート メニューで [会議とファイル] 機能を無効にするかどうかを指定します。この機能は、サインイン ユーザーの会議とファイルを Office 365 から表示します。|
+|settingsBlockSessionResume|Boolean|セッションがタイムアウトになった際にセッションを再開する機能を許可するかどうかを指定します。|
+|settingsBlockSigninSuggestions|Boolean|スケジュールされている会議の招待者をサインイン ダイアログに自動入力する機能を無効にするかどうかを指定します。|
 |settingsDefaultVolume|Int32|新しいセッションの既定のボリューム値を指定します。 許可される値は、0 から 100 までです。 既定値は 45 です。 有効な値は 0 から 100 までです|
 |settingsScreenTimeoutInMinutes|Int32|ハブ スクリーンがオフになるまでの分数を指定します。|
 |settingsSessionTimeoutInMinutes|Int32|セッションがタイムアウトになるまでの分数を指定します。|

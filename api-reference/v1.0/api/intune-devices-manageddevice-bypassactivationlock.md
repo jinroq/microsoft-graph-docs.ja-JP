@@ -4,16 +4,17 @@ description: アクティベーション ロックをバイパスする
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9f398d5f0e431588ea68e2c1eff1031dbe09e7e4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: bd33c40e5be77629cbca590c36de9a8b7b9f6ac5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584755"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36020998"
 ---
 # <a name="bypassactivationlock-action"></a>bypassActivationLock アクション
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 アクティベーション ロックをバイパスする
 

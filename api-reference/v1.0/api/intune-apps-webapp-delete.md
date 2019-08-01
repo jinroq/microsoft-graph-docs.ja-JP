@@ -4,16 +4,17 @@ description: webApp を削除します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f3ecfe7fc30d54f34734cd891ae36c297ea6716a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 60d078acde26d9eff4e20d3a42cfffd7eda1b891
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32580581"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013683"
 ---
 # <a name="delete-webapp"></a>Delete webApp
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [webApp](../resources/intune-apps-webapp.md) を削除します。
 

@@ -5,16 +5,17 @@ title: moveAction リソースの種類
 description: MoveAction オブジェクトは、アイテムを移動したアクティビティに関する情報を提供します。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 525558d040109e637e2f3532d16c308a197e45fb
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+doc_type: resourcePageType
+ms.openlocfilehash: 8ef93cd83c8fd020af91a9ea8c9288c1d27d5cf6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33970777"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036072"
 ---
 # <a name="moveaction-resource-type"></a>moveAction リソースの種類
 
-[**Itemactivity**] [ activity]に**moveaction**リソースが存在することは、アクティビティがアイテムを移動したことを示します。
+[**Itemactivity**][activity]に**moveaction**リソースが存在することは、アクティビティがアイテムを移動したことを示します。
 
 >**注:** 現時点では、アイテムアクティビティレコードは SharePoint および OneDrive for business でのみ使用できます。
 

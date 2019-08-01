@@ -5,16 +5,17 @@ title: renameAction リソースの種類
 description: RenameAction オブジェクトは、アイテムの名前を変更したアクティビティに関する情報を提供します。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: bce040130d74b7977fc1f988a34edde674f9e0d4
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+doc_type: resourcePageType
+ms.openlocfilehash: 2949a3875d657dba3c64b6753855476c1d66bfb3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33970763"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034721"
 ---
 # <a name="renameaction-resource-type"></a>renameAction リソースの種類
 
-[**Itemactivity**] [ activity]に**renameaction**リソースが存在することは、アクティビティがアイテムの名前を変更したことを示します。
+[**Itemactivity**][activity]に**renameaction**リソースが存在することは、アクティビティがアイテムの名前を変更したことを示します。
 
 >**注:** 現時点では、アイテムアクティビティレコードは SharePoint および OneDrive for business でのみ使用できます。
 

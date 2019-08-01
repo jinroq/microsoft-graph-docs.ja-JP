@@ -4,12 +4,13 @@ description: グラフ要素の塗りつぶしの色をクリアします。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: f4f6dcdd41fa4edb791a47e0f6e1bbbfbbc6dddd
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 6af09d536c543dd8d5c157490c368eca905ebe07
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35886234"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36003596"
 ---
 # <a name="chartfill-clear"></a>ChartFill: clear
 

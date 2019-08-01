@@ -4,12 +4,15 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 領域
 localization_priority: Normal
-ms.openlocfilehash: a9a5da54aeef3c9666c22c7a2f9bc0d92fc7a405
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: クォータ リソースは、ドライブ リソースの領域の制約に関する詳細を提供します。
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: ee93ddfe54e785ea8a8fa245ab3828c548928cc0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579495"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034959"
 ---
 # <a name="quota-resource-type"></a>クォータ リソースの種類
 

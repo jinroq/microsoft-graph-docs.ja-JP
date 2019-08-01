@@ -2,12 +2,15 @@
 title: clonableTeamParts 列挙型
 description: 'チームのどの部分を複製するかについて説明します。 '
 localization_priority: Normal
-ms.openlocfilehash: e7f7b1e8fa73bdd4a188e8d8f5d40635d302a023
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: enumPageType
+ms.openlocfilehash: cbc91912bbcacbc26f481380e684ceccc1621784
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584972"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029709"
 ---
 # <a name="clonableteamparts-enum-type"></a>clonableTeamParts 列挙型
 
@@ -22,5 +25,5 @@ ms.locfileid: "32584972"
 |apps|1-d|インストールされているアプリのリストをコピーします。|
 |tabs|pbm-2|チャネル内のタブをコピーします。|
 |settings|2/4|主要なグループ設定と共に、チーム内のすべての設定をコピーします。|
-|channels|~|チャネル構造をコピーします (チャネル内のメッセージはコピーしません)。|
+|channels|8 |チャネル構造をコピーします (チャネル内のメッセージはコピーしません)。|
 |members|16|チームのメンバーと所有者をコピーします。|

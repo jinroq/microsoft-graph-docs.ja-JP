@@ -2,12 +2,15 @@
 title: provisionedPlan リソースの種類
 description: '**ユーザー** エンティティと組織エンティティの provisionedPlans プロパティは、**provisionedPlan** のコレクションです。'
 localization_priority: Normal
-ms.openlocfilehash: dd8d4f5b406a2291a829d7c11d4948bd9a08d453
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 3560aab132448a0d13c4b4abe2590d4802cdf9f3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579665"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034994"
 ---
 # <a name="provisionedplan-resource-type"></a>provisionedPlan リソースの種類
 

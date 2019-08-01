@@ -4,12 +4,13 @@ description: 会話はスレッドのコレクションであり、スレッド�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 0066a636d2b36e74443380598c2ca6e8daf826c1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 4c34f6f0d55cb27e5ce7f5f2ba6459cfbb4d5291
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563792"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029597"
 ---
 # <a name="conversation-resource-type"></a>会話リソースの種類
 
@@ -22,9 +23,9 @@ ms.locfileid: "32563792"
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
 |[会話を一覧表示する](../api/group-list-conversations.md) | [conversation](conversation.md) コレクション |このグループの会話の一覧を取得します。|
-|[Create](../api/group-post-conversations.md) |[会話](conversation.md)| スレッドと投稿を含めて、新しい会話を作成します。|
+|[Create](../api/group-post-conversations.md) |[conversation](conversation.md)| スレッドと投稿を含めて、新しい会話を作成します。|
 |[会話を取得する](../api/conversation-get.md) | [conversation](conversation.md) |会話オブジェクトのプロパティと関係を読み取ります。|
-|[削除](../api/conversation-delete.md) | なし |会話オブジェクトを削除します。 |
+|[Delete](../api/conversation-delete.md) | なし |conversation オブジェクトを削除します。 |
 |[会話スレッドを一覧表示する](../api/conversation-list-threads.md) |[conversationThread](conversationthread.md) コレクション| グループの会話のすべてのスレッドを取得します。|
 |[会話スレッドを作成する](../api/conversation-post-threads.md) |[conversationThread](conversationthread.md) コレクション| 指定した会話にスレッドを作成します。|
 
@@ -41,7 +42,7 @@ ms.locfileid: "32563792"
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|スレッド|[conversationThread](conversationthread.md) コレクション|会話内のすべての会話スレッドのコレクションです。ナビゲーションのプロパティです。読み取り専用です。Null 許容型。|
+|threads|[conversationThread](conversationthread.md) コレクション|会話内のすべての会話スレッドのコレクションです。ナビゲーションのプロパティです。読み取り専用です。Null 許容型。|
 
 ## <a name="json-representation"></a>JSON 表記
 

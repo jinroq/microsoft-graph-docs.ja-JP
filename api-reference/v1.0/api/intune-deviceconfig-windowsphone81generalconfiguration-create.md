@@ -4,16 +4,17 @@ description: 新しい windowsPhone81GeneralConfiguration オブジェクトを�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dfda055c4b2c525617d7a97aa9ae73edc5195770
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 29885620b5d7303fa10a8f335b45d28db220a364
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32519984"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35997023"
 ---
 # <a name="create-windowsphone81generalconfiguration"></a>Create windowsPhone81GeneralConfiguration
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい [windowsPhone81GeneralConfiguration](../resources/intune-deviceconfig-windowsphone81generalconfiguration.md) オブジェクトを作成します。
 
@@ -48,24 +49,24 @@ POST /deviceManagement/deviceConfigurations
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列型 (String)|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|id|文字列|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|説明|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|description|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|管理者が指定した、デバイス構成の名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|applyOnlyToWindowsPhone81|ブール型|このポリシーを Windows Phone 8.1 にのみ適用するかどうかを示す値。 このプロパティは読み取り専用です。|
-|appsBlockCopyPaste|ブール型|コピー/貼り付けを禁止するかどうかを示します。|
-|bluetoothBlocked|ブール型|Bluetooth をブロックするかどうかを示します。|
-|cameraBlocked|ブール型|カメラをブロックするかどうかを示します。|
-|cellularBlockWifiTethering|ブール型|Wi-Fi テザリングをブロックするかどうかを示します。 Wi-Fi がブロックされていれば、この値は関係ありません。|
+|applyOnlyToWindowsPhone81|Boolean|このポリシーを Windows Phone 8.1 にのみ適用するかどうかを示す値。 このプロパティは読み取り専用です。|
+|appsBlockCopyPaste|Boolean|コピー/貼り付けを禁止するかどうかを示します。|
+|bluetoothBlocked|Boolean|Bluetooth をブロックするかどうかを示します。|
+|cameraBlocked|Boolean|カメラをブロックするかどうかを示します。|
+|cellularBlockWifiTethering|Boolean|Wi-Fi テザリングをブロックするかどうかを示します。 Wi-Fi がブロックされていれば、この値は関係ありません。|
 |compliantAppsList|[appListItem](../resources/intune-deviceconfig-applistitem.md) コレクション|コンプライアンス内のアプリのリスト (CompliantAppListType によって制御される、許可リストまたは禁止リスト)。 このコレクションには、最大で 10000 個の要素を含めることができます。|
-|compliantAppListType|[アプライアンスの種類](../resources/intune-deviceconfig-applisttype.md)|AppComplianceList 内にあるリスト。 使用可能な値は、`none`、`appsInListCompliant`、`appsNotInListCompliant` です。|
-|diagnosticDataBlockSubmission|ブール型|診断データの送信をブロックするかどうかを示します。|
+|compliantAppListType|[アプライアンスの種類](../resources/intune-deviceconfig-applisttype.md)|AppComplianceList 内にあるリスト。 可能な値は、`none`、`appsInListCompliant`、`appsNotInListCompliant` です。|
+|diagnosticDataBlockSubmission|Boolean|診断データの送信をブロックするかどうかを示します。|
 |emailBlockAddingAccounts|Boolean|カスタム電子メール アカウントをブロックするかどうかを示します。|
-|locationServicesBlocked|ブール型|位置情報サービスをブロックするかどうかを示します。|
-|microsoftAccountBlocked|ブール型|Microsoft アカウントの使用を禁止するかどうかを示します。|
-|nfcBlocked|ブール型|近距離無線通信をブロックするかどうかを示します。|
+|locationServicesBlocked|Boolean|位置情報サービスをブロックするかどうかを示します。|
+|microsoftAccountBlocked|Boolean|Microsoft アカウントの使用を禁止するかどうかを示します。|
+|nfcBlocked|Boolean|近距離無線通信をブロックするかどうかを示します。|
 |passwordBlockSimple|Boolean|カレンダーの同期を禁止するかどうかを示します。|
 |passwordExpirationDays|Int32|パスワードの有効期限が切れるまでの日数。|
 |passwordMinimumLength|Int32|パスワードの最小の長さ。|
@@ -73,14 +74,14 @@ POST /deviceManagement/deviceConfigurations
 |passwordMinimumCharacterSetCount|Int32|パスワードが含まなければならない文字セットの数。|
 |passwordPreviousPasswordBlockCount|Int32|ブロックする、以前のパスワードの数。 有効な値は 0 から 24 までです|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|出荷時の設定にリセットされるまでの、失敗が許可されるサインインの回数。|
-|passwordRequiredType|[requiredpasswordtype](../resources/intune-deviceconfig-requiredpasswordtype.md)|必要なパスワードの種類。 可能な値は、`deviceDefault`、`alphanumeric`、`numeric` です。|
-|passwordRequired|ブール型|パスワードを要求するかどうかを指定します。|
-|screenCaptureBlocked|ブール型|スクリーンショットを禁止するかどうかを示します。|
-|storageBlockRemovableStorage|ブール型|リムーバブル記憶域をブロックするかどうかを示します。|
-|storageRequireEncryption|ブール型|暗号化が必要かどうかを示します。|
-|webBrowserBlocked|ブール型|Web ブラウザーをブロックするかどうかを示します。|
-|wifiBlocked|ブール型|Wi-Fi をブロックするかどうかを示します。|
-|wifiBlockAutomaticConnectHotspots|ブール型|Wi-Fi ホットスポットへの自動接続をブロックするかどうかを示します。 Wi-Fi がブロックされていれば、この値は関係ありません。|
+|passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|必要なパスワードの種類。 可能な値は、`deviceDefault`、`alphanumeric`、`numeric` です。|
+|passwordRequired|Boolean|パスワードを要求するかどうかを指定します。|
+|screenCaptureBlocked|Boolean|スクリーンショットを禁止するかどうかを示します。|
+|storageBlockRemovableStorage|Boolean|リムーバブル記憶域をブロックするかどうかを示します。|
+|storageRequireEncryption|Boolean|暗号化が必要かどうかを示します。|
+|webBrowserBlocked|Boolean|Web ブラウザーをブロックするかどうかを示します。|
+|wifiBlocked|Boolean|Wi-Fi をブロックするかどうかを示します。|
+|wifiBlockAutomaticConnectHotspots|Boolean|Wi-Fi ホットスポットへの自動接続をブロックするかどうかを示します。 Wi-Fi がブロックされていれば、この値は関係ありません。|
 |wifiBlockHotspotReporting|Boolean|Wi-Fi ホットスポット レポートをブロックするかどうかを示します。 Wi-Fi がブロックされていれば、この値は関係ありません。|
 |windowsStoreBlocked|Boolean|Windows ストアをブロックするかどうかを示します。|
 

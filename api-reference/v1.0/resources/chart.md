@@ -4,12 +4,13 @@ description: ブック内のグラフ オブジェクトを表します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 831cea99e2eefaf87db814b149798506950bf407
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 0606528083a282338681f40373ecaccb146428f3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569446"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029891"
 ---
 # <a name="chart-resource-type"></a>グラフ リソースの種類
 
@@ -25,10 +26,10 @@ ms.locfileid: "32569446"
 |[データ系列を一覧表示する](../api/chart-list-series.md) |[WorkbookChartSeries](chartseries.md)コレクション| ChartSeries オブジェクトのコレクションを取得します。|
 |[Update](../api/chart-update.md) | [WorkbookChart](chart.md)   |グラフ オブジェクトを更新します。 |
 |[Image](../api/chart-image.md)|Base64 でエンコードされた文字列の画像|指定したサイズに合わせてグラフを拡大・縮小することで、グラフを Base64 でエンコードされた画像としてレンダリングします。|
-|[削除](../api/chart-delete.md)|なし|グラフ オブジェクトを削除します。|
-|[Setdata](../api/chart-setdata.md)|なし|グラフの元データをリセットします。|
+|[Delete](../api/chart-delete.md)|None|グラフ オブジェクトを削除します。|
+|[Setdata](../api/chart-setdata.md)|None|グラフの元データをリセットします。|
 |[Setposition](../api/chart-setposition.md)|なし|ワークシート上のセルを基準にしてグラフを配置します。|
-|[List](../api/chart-list.md) | [WorkbookChart](chart.md)コレクション |グラフ オブジェクトのコレクションを取得します。 |
+|[List](../api/chart-list.md) | [WorkbookChart](chart.md) コレクション |グラフ オブジェクトのコレクションを取得します。 |
 |[Itemat](../api/chartcollection-itemat.md)|[WorkbookChart](chart.md)|コレクション内での位置を基にグラフを取得します。|
 |[Add](../api/chartcollection-add.md)|[WorkbookChart](chart.md)|新しいグラフを作成します。|
 

@@ -4,16 +4,17 @@ description: MDM モバイル アプリ構成のユーザー状態の要約に�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 96ec2f44864e29f374ab9ccf3f63a65a91692087
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 17924a16893f42a130c5bde593bccaf6b5729bca
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32564023"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032257"
 ---
 # <a name="manageddevicemobileappconfigurationusersummary-resource-type"></a>managedDeviceMobileAppConfigurationUserSummary リソースの種類
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 MDM モバイル アプリ構成のユーザー状態の要約に関する、プロパティ、継承済みのプロパティ、アクションが含まれています。
 
@@ -35,7 +36,7 @@ MDM モバイル アプリ構成のユーザー状態の要約に関する、プ
 |lastUpdateDateTime|DateTimeOffset|最終更新時刻|
 |configurationVersion|Int32|対象の概要に関するポリシーのバージョン|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記

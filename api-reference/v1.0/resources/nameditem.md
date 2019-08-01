@@ -2,12 +2,15 @@
 title: NamedItem リソースの種類
 description: セルまたは値の範囲の定義済みの名前を表します。名前には、(以下の型に見られるような) プリミティブ名前付きオブジェクト、範囲オブジェクト、範囲への参照を設定できます。このオブジェクトを使用して、名前に関連付けられた範囲オブジェクトを取得することができます。
 localization_priority: Normal
-ms.openlocfilehash: e413361cc42a0f8f65e23e12d36b49d2c7bcebb3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: b53b223a3f9d894f8ab140014528c0cd02c224dc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548526"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036002"
 ---
 # <a name="nameditem-resource-type"></a>NamedItem リソースの種類
 
@@ -23,7 +26,7 @@ ms.locfileid: "32548526"
 |[NamedItem を取得する](../api/nameditem-get.md) | [WorkbookNamedItem](nameditem.md) |namedItem オブジェクトのプロパティと関係を読み取ります。|
 |[Update](../api/nameditem-update.md) | [WorkbookNamedItem](nameditem.md)   |NamedItem オブジェクトを更新します。 |
 |[Range](../api/nameditem-range.md)|[Range](range.md)|名前に関連付けられている範囲オブジェクトを返します。名前付き項目の型が範囲でない場合、例外をスローします。|
-|[List](../api/nameditem-list.md) | [WorkbookNamedItem](nameditem.md) コレクション |namedItem オブジェクトのコレクションを取得します。 |
+|[List](../api/nameditem-list.md) | [WorkbookNamedItem](nameditem.md)コレクション |namedItem オブジェクトのコレクションを取得します。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|

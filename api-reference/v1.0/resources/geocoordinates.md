@@ -4,12 +4,15 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: GeoCoordinates
 localization_priority: Normal
-ms.openlocfilehash: cafd9d72e6c7959b32672744959393ae9478c5b1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: GeoCoordinates リソースは、ファイルに含まれているメタデータに基づいて、場所の地理的な座標と仰角を提供します。
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 64b81bc2946658ffc8617662879bc6cb20e25047
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32558077"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029310"
 ---
 # <a name="geocoordinates-resource-type"></a>GeoCoordinates リソースの種類
 
@@ -39,8 +42,8 @@ ms.locfileid: "32558077"
 
 | プロパティ  | 型   | 説明
 |:----------|:-------|:--------------------------------------------------------
-| altitude  | 倍精度浮動小数点数 | 省略可能。アイテムの海抜をフィート単位で表した高度 (高さ)。読み取り専用です。
-| latitude  | 倍精度浮動小数点数 | 省略可能。アイテムの緯度 (10 進数)。読み取り専用です。
+| altitude  | 2 行分 | 省略可能。アイテムの海抜をフィート単位で表した高度 (高さ)。読み取り専用です。
+| latitude  | 2 行分 | 省略可能。アイテムの緯度 (10 進数)。読み取り専用です。
 | longitude | Double | 省略可能。アイテムの経度 (10 進数)。読み取り専用です。
 
 ## <a name="remarks"></a>注釈

@@ -4,12 +4,13 @@ description: 会議の提案がある場合にはそのコレクションを、�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 3f4aa23e582ead2fc51b9091159e158373be1cd1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 2c5e7461b27168150c21f8fedd5d697e2b8ec5e6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573971"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036198"
 ---
 # <a name="meetingtimesuggestionsresult-resource-type"></a>meetingTimeSuggestionsResult リソースの種類
 
@@ -47,7 +48,7 @@ ms.locfileid: "32573971"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|emptySuggestionsReason|String|会議提案が 1 つも返されない理由。 使用可能な値は`attendeesUnavailable`、 `attendeesUnavailableOrUnknown` `locationsUnavailable`、、 `organizerUnavailable`、、 `unknown`またはです。 会議の**タイム times/ge/アドオン**プロパティに会議の提案が含まれている場合、このプロパティは空の文字列になります。|
+|emptySuggestionsReason|String|会議提案が 1 つも返されない理由。 使用可能な値は`attendeesUnavailable`、 `attendeesUnavailableOrUnknown` `locationsUnavailable`、、 `organizerUnavailable`、、 `unknown`またはです。 会議の**タイム Times/Ge/アドオン**プロパティに会議の提案が含まれている場合、このプロパティは空の文字列になります。|
 |会議のタイムスパン|[meetingTimeSuggestion](meetingtimesuggestion.md) コレクション|会議提案の配列。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

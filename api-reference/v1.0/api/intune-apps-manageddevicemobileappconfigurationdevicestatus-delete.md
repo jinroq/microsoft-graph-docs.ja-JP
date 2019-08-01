@@ -1,21 +1,22 @@
 ---
-title: managedDeviceMobileAppConfigurationDeviceStatus の削除
-description: managedDeviceMobileAppConfigurationDeviceStatus を削除します。
+title: ManagedDeviceMobileAppConfigurationDeviceStatus の削除
+description: ManagedDeviceMobileAppConfigurationDeviceStatus を削除します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1f9faa6ec83c891a43760cf08473ace86d02a78b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: eb97cfdaea3de8a73bc53bed3a56dd718b33bc4f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32578289"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014033"
 ---
-# <a name="delete-manageddevicemobileappconfigurationdevicestatus"></a>managedDeviceMobileAppConfigurationDeviceStatus の削除
+# <a name="delete-manageddevicemobileappconfigurationdevicestatus"></a>ManagedDeviceMobileAppConfigurationDeviceStatus の削除
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md)を削除します。
+[ManagedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md)を削除します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。

@@ -1,22 +1,24 @@
 ---
-title: visualinfo リソースの種類
-description: activity オブジェクトの**visualelements**プロパティを表すための複合型。
+title: visualInfo リソースの種類
+description: Activity オブジェクトの**Visualelements**プロパティを表すための複合型。
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 416109bb1bb6625330ddfbbb32b8fb688b223134
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 9b26fba2e8ea29dab6f753de36e1c981f8e31c2f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579686"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035022"
 ---
-# <a name="visualinfo-resource-type"></a>visualinfo リソースの種類
+# <a name="visualinfo-resource-type"></a>visualInfo リソースの種類
 
-[activity](../resources/projectrome-activity.md)オブジェクトの**visualelements**プロパティを表すための複合型。
+[Activity](../resources/projectrome-activity.md)オブジェクトの**visualelements**プロパティを表すための複合型。
 
 各ユーザーアクティビティは、アダプティブカードとしてタイムラインに表示されます。 アプリ開発者は、アプリで行われたアクティビティの本質をキャプチャするカスタムカードを提供することをお勧めします。 これは、コンテンツプロパティにカスタム JSON カードを提供することによって可能になります。
 
-アプリでは、アダプティブカードを使用したビジュアルメタデータに加えて、コンテンツメタデータを指定できます。これにより、ユーザーのアクティビティに対する推論を構築する際に使用されるデータが提供されます。 これは、アクティビティの contentinfo プロパティを使用して、コンテンツを説明するために schema.org プロパティを活用する JSON オブジェクトを提供することによって可能になります。
+アプリでは、アダプティブカードを使用したビジュアルメタデータに加えて、コンテンツメタデータを指定できます。これにより、ユーザーのアクティビティに対する推論を構築する際に使用されるデータが提供されます。 これは、アクティビティの contentInfo プロパティを使用して、コンテンツを説明するために schema.org プロパティを活用する JSON オブジェクトを提供することによって可能になります。
 
 カスタムカードが提供されていない場合は、表示テキストと説明のプロパティを使用して、簡単なカードが生成されます。 カスタムカードは、アプリ内から最適なコンテンツを示すために推奨されています。
 
@@ -25,7 +27,7 @@ ms.locfileid: "32579686"
 |名前 | 型 | 説明|
 |:----|:------|:-----------|
 |テキスト | String | 必須。 ユーザーの一意のアクティビティの短いテキスト説明 (たとえば、アクティビティがドキュメントの作成を参照する場合のドキュメント名)。|
-|説明 | String | 省略可能。 ユーザー固有のアクティビティに関する長いテキストの説明 (例: ドキュメント名、最初の文、またはメタデータ)|
+|description | String | 省略可能。 ユーザー固有のアクティビティに関する長いテキストの説明 (例: ドキュメント名、最初の文、またはメタデータ)|
 |背景 | String | 省略可能。 アクティビティのアプリケーションソースの UI ブランドカラーでアクティビティをレンダリングするために使用される背景色。 有効な16進カラーである必要があります。|
 |content | 型指定のない JSON オブジェクト | 省略可能。 Windows シェル UI でアクティビティをレンダリングするためにカスタムコンテンツを提供するために使用されるデータ JSON オブジェクトのカスタム部分|
 |帰属 | [imageInfo](../resources/projectrome-imageinfo.md) | 省略可能。 アクティビティの生成に使用されたアプリケーションを表すアイコンを表すために使用される JSON オブジェクト|

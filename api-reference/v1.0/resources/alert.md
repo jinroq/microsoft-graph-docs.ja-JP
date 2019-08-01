@@ -4,12 +4,13 @@ description: Microsoft またはパートナーのセキュリティ ソリュ�
 localization_priority: Priority
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 5e1501609bc7aeacd5bc666ced4ce8825dadcdb3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 7248fb61f62c9b17d639a5e7e2c3d8b4b2e92719
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569488"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033231"
 ---
 # <a name="alert-resource-type"></a>alert リソースの種類
 
