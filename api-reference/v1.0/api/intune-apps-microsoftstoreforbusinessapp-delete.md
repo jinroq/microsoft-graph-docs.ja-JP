@@ -4,16 +4,17 @@ description: microsoftStoreForBusinessApp を削除します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6358c85f23b899faeced5b9963e5f6b50ed2bd17
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: dc4a20755becbb0486c2e4344b5276a486d97de4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32453766"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36002154"
 ---
 # <a name="delete-microsoftstoreforbusinessapp"></a>microsoftStoreForBusinessApp の削除
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [microsoftStoreForBusinessApp](../resources/intune-apps-microsoftstoreforbusinessapp.md) を削除します。
 

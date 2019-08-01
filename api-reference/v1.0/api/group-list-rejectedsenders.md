@@ -4,12 +4,13 @@ description: 'このグループの拒否された送信者リストに含まれ
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 89a3424919dbacdf8e549f49f12db80535145221
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 5a0e669395d71ca4b0c2312147c4a3e93cfb24d2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35889026"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014891"
 ---
 # <a name="list-rejectedsenders"></a>rejectedSenders の一覧表示
 このグループの拒否された送信者リストに含まれるユーザーまたはグループの一覧を取得します。 

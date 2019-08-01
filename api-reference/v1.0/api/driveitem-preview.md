@@ -1,20 +1,22 @@
 ---
 title: 'ドライブアイテム: プレビュー'
-description: このアクションを使用すると、一時的なプレビューを表示するために、短時間に埋め込まれた、アイテムの url を取得できます。
+description: このアクションを使用すると、一時的なプレビューを表示するために、短時間に埋め込まれた、アイテムの Url を取得できます。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: ae5140bf6164aedd051f04c2c43c361f16517e7a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+doc_type: apiPageType
+ms.openlocfilehash: 1de53b8183f4277c0241a08822ef539613b83a45
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32572704"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015342"
 ---
 # <a name="driveitem-preview"></a>ドライブアイテム: プレビュー
 
-このアクションを使用すると、一時的なプレビューを表示するために、短時間に埋め込まれた、アイテムの url を取得できます。
+このアクションを使用すると、一時的なプレビューを表示するために、短時間に埋め込まれた、アイテムの Url を取得できます。
 
-長時間の埋め込み可能なリンクを取得する場合は、代わりに[createlink][] API を使用します。
+長時間の埋め込み可能なリンクを取得する場合は、代わりに[Createlink][] API を使用します。
 
 > **注:** 現在、**プレビュー**アクションは SharePoint および OneDrive for business でのみ使用できます。
 
@@ -68,12 +70,12 @@ POST /shares/{shareId}/driveItem/preview
 | 名前           | 型   | 説明
 |:---------------|:-------|:---------------------------------------------------
 | getUrl         | string | HTTP GET (iframes など) を使用した埋め込みに適した URL
-| posturl        | string | HTTP POST (form post、JS など) を使用した埋め込みに適した URL
-| postparameters | string | posturl を使用する場合に含める POST パラメーター
+| postUrl        | string | HTTP POST (form post、JS など) を使用した埋め込みに適した URL
+| postParameters | string | PostUrl を使用する場合に含める POST パラメーター
 
-指定したオプションの embed サポートの現在の状態に応じて、getUrl、posturl、または both のどちらかが返される場合があります。
+指定したオプションの embed サポートの現在の状態に応じて、getUrl、postUrl、または both のどちらかが返される場合があります。
 
-postparameters はとして`application/x-www-form-urlencoded`書式設定された文字列です。 postparameters への投稿を実行する場合は、コンテンツタイプを適宜設定する必要があります。 次に例を示します。
+postParameters はとして`application/x-www-form-urlencoded`書式設定された文字列です。 postparameters への投稿を実行する場合は、コンテンツタイプを適宜設定する必要があります。 次に例を示します。
 ```
 POST https://www.onedrive.com/embed_by_post
 Content-Type: application/x-www-form-urlencoded

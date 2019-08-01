@@ -4,16 +4,17 @@ description: mobileAppContentFile オブジェクトのプロパティを更新�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1193b50674caa3ecf4f5fc0522664c7868177569
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 9e8e14c92ed790deb84bc1bd17036b32644d2331
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32580595"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36001979"
 ---
 # <a name="update-mobileappcontentfile"></a>mobileAppContentFile の更新
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) オブジェクトのプロパティを更新します。
 
@@ -50,7 +51,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCo
 |:---|:---|:---|
 |azureStorageUri|String|Azure ストレージ URI。|
 |isCommitted|Boolean|ファイルがコミットされたかどうかを示す値。|
-|id|String|ファイル ID。|
+|id|文字列|ファイル ID。|
 |createdDateTime|DateTimeOffset|ファイルが作成された時刻。|
 |name|String|ファイル名。|
 |size|Int64|暗号化する前のファイルのサイズ。|

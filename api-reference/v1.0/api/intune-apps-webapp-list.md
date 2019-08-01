@@ -4,16 +4,17 @@ description: webApp オブジェクトのプロパティとリレーションシ
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 45906e38df00eea269b7e48ab0f906c418699a5b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 993f4aeb76892f8de441c8fae27f3e4b216b7cd0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32580539"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36001965"
 ---
 # <a name="list-webapps"></a>webApps のリスト
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [webApp](../resources/intune-apps-webapp.md) オブジェクトのプロパティとリレーションシップをリストします。
 

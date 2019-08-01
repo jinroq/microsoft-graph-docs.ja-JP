@@ -4,16 +4,17 @@ description: 新しい mobileAppContentFile オブジェクトを作成します
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b6c78f6575a1d5f66e9989e876a03839ab2a8849
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 6135d8fb10b2295c8e654151bdb821a77ab03a95
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554428"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36002014"
 ---
 # <a name="create-mobileappcontentfile"></a>mobileAppContentFile の作成
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい [mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) オブジェクトを作成します。
 
@@ -50,7 +51,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCon
 |:---|:---|:---|
 |azureStorageUri|String|Azure ストレージ URI。|
 |isCommitted|Boolean|ファイルがコミットされたかどうかを示す値。|
-|id|String|ファイル ID。|
+|id|文字列|ファイル ID。|
 |createdDateTime|DateTimeOffset|ファイルが作成された時刻。|
 |name|String|ファイル名。|
 |size|Int64|暗号化する前のファイルのサイズ。|

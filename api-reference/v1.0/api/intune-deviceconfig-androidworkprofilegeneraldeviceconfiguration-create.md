@@ -1,21 +1,22 @@
 ---
-title: androidwork profileて devicの種類を作成する
-description: 新しい androidwork profileの devic/オブジェクトを作成します。
+title: Androidwork Profileて Devicの種類を作成する
+description: 新しい Androidwork Profileの Devic/オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b0e1ae2e8eed358054163295dc8608a1bbaba68f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 62ed82dcfd3892970491296597d414ac7677f9b6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550071"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35997842"
 ---
-# <a name="create-androidworkprofilegeneraldeviceconfiguration"></a>androidwork profileて devicの種類を作成する
+# <a name="create-androidworkprofilegeneraldeviceconfiguration"></a>Androidwork Profileて Devicの種類を作成する
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-新しい[androidwork profileの devic/](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md)オブジェクトを作成します。
+新しい[Androidwork Profileの devic/](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md)オブジェクトを作成します。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -42,19 +43,19 @@ POST /deviceManagement/deviceConfigurations
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求本文で、androidwork profileの devic/devicオブジェクトの JSON 表記を指定します。
+要求本文で、Androidwork Profileの Devic/devicオブジェクトの JSON 表記を指定します。
 
-次の表に、androidwork profile[devic] の作成時に必要なプロパティを示します。
+次の表に、Androidwork Profile[Devic] の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列型 (String)|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|id|文字列|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |description|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|管理者が指定した、デバイス構成の名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|passwordBlockFingerprintUnlock|ブール値|指紋によるロック解除を禁止するかどうかを示します。|
+|passwordBlockFingerprintUnlock|Boolean|指紋によるロック解除を禁止するかどうかを示します。|
 |passwordBlockTrustAgents|Boolean|Smart Lock や他の信頼エージェントをブロックするかどうかを示します。|
 |passwordExpirationDays|Int32|パスワードの有効期限が切れるまでの日数。 有効な値は 1 から 365 までです|
 |passwordMinimumLength|Int32|パスワードの最小の長さ。 有効な値は 4 から 16 までです|
@@ -62,21 +63,21 @@ POST /deviceManagement/deviceConfigurations
 |passwordPreviousPasswordBlockCount|Int32|ブロックする、以前のパスワードの数。 有効な値は 0 から 24 までです|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|出荷時の設定にリセットされるまでの、失敗が許可されるサインインの回数。 有効な値は1から16までです|
 |passwordRequiredType|[androidWorkProfileRequiredPasswordType](../resources/intune-deviceconfig-androidworkprofilerequiredpasswordtype.md)|必要なパスワードの種類。 可能な値は、`deviceDefault`、`lowSecurityBiometric`、`required`、`atLeastNumeric`、`numericComplex`、`atLeastAlphabetic`、`atLeastAlphanumeric`、`alphanumericWithSymbols` です。|
-|workProfileDataSharingType|[androidWorkProfileCrossProfileDataSharingType](../resources/intune-deviceconfig-androidworkprofilecrossprofiledatasharingtype.md)|許可されているデータ共有の種類。 可能な値は、`deviceDefault`、`preventAny`、`allowPersonalToWork`、`noRestrictions` です。|
-|workProfileBlockNotificationsWhileDeviceLocked|ブール値|デバイスがロックされているときに通知をブロックするかどうかを示します。|
-|ワークワークプロファイルのアカウント|ブール値|ユーザーが作業プロファイルでアカウントを追加または削除することを禁止します。|
-|workProfileBluetoothEnableContactSharing|ブール値|bluetooth デバイスがエンタープライズの連絡先にアクセスできるようにします。|
-|workProfileBlockScreenCapture|ブール値|作業プロファイルの画面キャプチャをブロックします。|
-|work profileblockクロスバープロファイル ecallerid|ブール値|[ブロック表示作業プロファイルの発信者番号を個人プロファイルに表示する。|
-|workProfileBlockCamera|ブール値|作業プロファイルカメラをブロックします。|
-|workProfileBlockCrossProfileContactsSearch|ブール値|個人用プロファイルでの作業プロファイルの連絡先の使用を禁止します。|
-|workProfileBlockCrossProfileCopyPaste|ブール値|[クロスプロファイルコピー/貼り付けを許可する] の設定が有効になっているかどうかを示すブール値。|
-|work profiledefaultapppermissionpolicy|[androidWorkProfileDefaultAppPermissionPolicyType](../resources/intune-deviceconfig-androidworkprofiledefaultapppermissionpolicytype.md)|必要なパスワードの種類。 可能な値は、`deviceDefault`、`prompt`、`autoGrant`、`autoDeny` です。|
-|。 workprofilepasswordblockfingerprintunlock|ブール値|ワークプロファイルの指紋のロック解除をブロックするかどうかを示します。|
-|workProfilePasswordBlockTrustAgents|ブール値|ワークプロファイルのスマートロックおよびその他の信頼エージェントを禁止するかどうかを示します。|
+|workProfileDataSharingType|[androidWorkProfileCrossProfileDataSharingType](../resources/intune-deviceconfig-androidworkprofilecrossprofiledatasharingtype.md)|許可されているデータ共有の種類。 使用可能な値は、`deviceDefault`、`preventAny`、`allowPersonalToWork`、`noRestrictions` です。|
+|workProfileBlockNotificationsWhileDeviceLocked|Boolean|デバイスがロックされているときに通知をブロックするかどうかを示します。|
+|ワークワークプロファイルのアカウント|Boolean|ユーザーが作業プロファイルでアカウントを追加または削除することを禁止します。|
+|workProfileBluetoothEnableContactSharing|Boolean|Bluetooth デバイスがエンタープライズの連絡先にアクセスできるようにします。|
+|workProfileBlockScreenCapture|Boolean|作業プロファイルの画面キャプチャをブロックします。|
+|work Profileblockクロスバープロファイル Ecallerid|Boolean|[ブロック表示作業プロファイルの発信者番号を個人プロファイルに表示する。|
+|workProfileBlockCamera|Boolean|作業プロファイルカメラをブロックします。|
+|workProfileBlockCrossProfileContactsSearch|Boolean|個人用プロファイルでの作業プロファイルの連絡先の使用を禁止します。|
+|workProfileBlockCrossProfileCopyPaste|Boolean|[クロスプロファイルコピー/貼り付けを許可する] の設定が有効になっているかどうかを示すブール値。|
+|work Profiledefaultapppermissionpolicy|[androidWorkProfileDefaultAppPermissionPolicyType](../resources/intune-deviceconfig-androidworkprofiledefaultapppermissionpolicytype.md)|必要なパスワードの種類。 使用可能な値は、`deviceDefault`、`prompt`、`autoGrant`、`autoDeny` です。|
+|。 Workprofilepasswordblockfingerprintunlock|Boolean|ワークプロファイルの指紋のロック解除をブロックするかどうかを示します。|
+|workProfilePasswordBlockTrustAgents|Boolean|ワークプロファイルのスマートロックおよびその他の信頼エージェントを禁止するかどうかを示します。|
 |workProfilePasswordExpirationDays|Int32|作業プロファイルのパスワードが期限切れになるまでの日数。 有効な値は 1 から 365 までです|
 |workProfilePasswordMinimumLength|Int32|ワークプロファイルのパスワードの最小の長さ。 有効な値は 4 から 16 までです|
-|ワークプロファイルのパスワード minnumericcharacters|Int32|作業プロファイルのパスワードに必要な数字の最小数。 有効な値は1から10までです|
+|ワークプロファイルのパスワード Minnumericcharacters|Int32|作業プロファイルのパスワードに必要な数字の最小数。 有効な値は1から10までです|
 |workProfilePasswordMinNonLetterCharacters|Int32|作業プロファイルのパスワードに必要な文字以外の文字数の最小値。 有効な値は1から10までです|
 |workProfilePasswordMinLetterCharacters|Int32|作業プロファイルのパスワードに必要な文字数の最小値。 有効な値は1から10までです|
 |workProfilePasswordMinLowerCaseCharacters|Int32|作業プロファイルのパスワードに必要な小文字の最小文字数。 有効な値は1から10までです|
@@ -86,13 +87,13 @@ POST /deviceManagement/deviceConfigurations
 |workProfilePasswordPreviousPasswordBlockCount|Int32|ブロックする、以前の作業プロファイルのパスワードの数。 有効な値は 0 から 24 までです|
 |workProfilePasswordSignInFailureCountBeforeFactoryReset|Int32|作業プロファイルが削除され、すべての企業データが削除されるまでに許可されるサインイン失敗回数。 有効な値は1から16までです|
 |workProfilePasswordRequiredType|[androidWorkProfileRequiredPasswordType](../resources/intune-deviceconfig-androidworkprofilerequiredpasswordtype.md)|必要な業務プロファイルのパスワードの種類。 可能な値は、`deviceDefault`、`lowSecurityBiometric`、`required`、`atLeastNumeric`、`numericComplex`、`atLeastAlphabetic`、`atLeastAlphanumeric`、`alphanumericWithSymbols` です。|
-|次|ブール値|パスワードが必要です。または職場プロファイルでは使用できません|
+|次|Boolean|パスワードが必要です。または職場プロファイルでは使用できません|
 |securityRequireVerifyApps|Boolean|Android の検証アプリ機能をオンにするよう要求します。|
 
 
 
 ## <a name="response"></a>応答
-成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[androidwork profileの devic/](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md)オブジェクトを返します。
+成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[Androidwork profileの devic/](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 

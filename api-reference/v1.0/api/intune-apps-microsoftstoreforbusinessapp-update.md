@@ -4,16 +4,17 @@ description: microsoftStoreForBusinessApp オブジェクトのプロパティ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9acbb9b500f9d4a77e0a9b3cb33746ac3db31b3d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 053721e2bc58258e4f6d4d28478ce1bbd736e520
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534788"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36002112"
 ---
 # <a name="update-microsoftstoreforbusinessapp"></a>microsoftStoreForBusinessApp の更新
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [microsoftStoreForBusinessApp](../resources/intune-apps-microsoftstoreforbusinessapp.md) オブジェクトのプロパティを更新します。
 
@@ -48,8 +49,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列型 (String)|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|displayName|String|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|id|文字列|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|displayName|文字列|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |description|String|アプリの説明。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |publisher|String|アプリの発行元。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|アプリの詳細に表示され、アイコンのアップロードに使用される大きいアイコン。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
@@ -61,11 +62,11 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 |owner|String|アプリの所有者。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |developer|String|アプリの開発者。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |notes|String|アプリ用のメモ。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
-|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 [mobileApp](../resources/intune-apps-mobileapp.md)から継承されます。 使用可能な値は、`notPublished`、`processing`、`published` です。|
+|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 [MobileApp](../resources/intune-apps-mobileapp.md)から継承されます。 可能な値は、`notPublished`、`processing`、`published` です。|
 |usedLicenseCount|Int32|使用中の、ビジネス向け Microsoft Store ライセンスの数。|
 |totalLicenseCount|Int32|ビジネス向け Microsoft Store ライセンスの合計数。|
 |productKey|String|アプリのプロダクト キー|
-|licenseType|[microsoft storeforbusinesslicensetype](../resources/intune-apps-microsoftstoreforbusinesslicensetype.md)|アプリライセンスの種類。 可能な値は、`offline`、`online` です。|
+|licenseType|[Microsoft Storeforbusinesslicensetype](../resources/intune-apps-microsoftstoreforbusinesslicensetype.md)|アプリライセンスの種類。 可能な値は、`offline`、`online` です。|
 |packageIdentityName|String|アプリ パッケージの識別子|
 
 

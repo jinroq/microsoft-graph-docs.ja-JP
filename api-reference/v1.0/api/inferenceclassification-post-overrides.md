@@ -2,12 +2,15 @@
 title: inferenceClassificationOverride を作成する
 description: 'SMTP アドレスで示される送信者のオーバーライドを作成します。 その SMTP アドレスからの今後のメッセージは一貫して分類されます。 '
 localization_priority: Normal
-ms.openlocfilehash: 967f8794a5effa68fc42dae578d4dcf0034aabf2
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+author: ''
+ms.prod: ''
+doc_type: apiPageType
+ms.openlocfilehash: bd9c86e3a283ec63c81eeac9bc19f3968d45d5d6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932478"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014390"
 ---
 # <a name="create-inferenceclassificationoverride"></a>inferenceClassificationOverride を作成する
 

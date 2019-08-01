@@ -1,19 +1,20 @@
 ---
-title: managedDeviceMobileAppConfigurationDeviceStatus を作成する
+title: ManagedDeviceMobileAppConfigurationDeviceStatus を作成する
 description: 新しい managedDeviceMobileAppConfigurationDeviceStatus オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c70d74e1ac98710b8b56c3ca3a262e34c2e39fd2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 3e0db1d11d2d0cd74a7051da030e45940b4d5e62
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32578275"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36002301"
 ---
-# <a name="create-manageddevicemobileappconfigurationdevicestatus"></a>managedDeviceMobileAppConfigurationDeviceStatus を作成する
+# <a name="create-manageddevicemobileappconfigurationdevicestatus"></a>ManagedDeviceMobileAppConfigurationDeviceStatus を作成する
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい[managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md)オブジェクトを作成します。
 
@@ -48,7 +49,7 @@ POST /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigu
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|id|文字列|エンティティのキー。|
 |deviceDisplayName|String|DevicePolicyStatus のデバイス名。|
 |userName|文字列型 (String)|レポートされているユーザー名|
 |deviceModel|String|レポートされているデバイス モデル|

@@ -4,16 +4,17 @@ description: mobileAppContent オブジェクトのプロパティを更新し�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9c2a3a1003ef2cd948778c84dc8dd8f204994ee1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 2718dd551a1d9bf1d5210d3d668e0bd26951c6fb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32541627"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36002028"
 ---
 # <a name="update-mobileappcontent"></a>mobileAppContent の更新
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [mobileAppContent](../resources/intune-apps-mobileappcontent.md) オブジェクトのプロパティを更新します。
 

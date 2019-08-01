@@ -4,16 +4,17 @@ description: iosLobApp を削除します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 03842741ca18f3c640ccf1b1636304ea0ad32aed
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: f85e74400945a00e20d0371320b993319f949048
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32577421"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014299"
 ---
 # <a name="delete-ioslobapp"></a>iosLobApp の削除
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [iosLobApp](../resources/intune-apps-ioslobapp.md) を削除します。
 

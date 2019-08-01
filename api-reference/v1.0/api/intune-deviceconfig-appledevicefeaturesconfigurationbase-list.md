@@ -4,16 +4,17 @@ description: appleDeviceFeaturesConfigurationBase オブジェクトのプロパ
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 788e3b50df2b871146e83d00d578154265536ec8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 4f479fa6bbe26b789ec9f3ecce3616e38930de6a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562812"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35997807"
 ---
 # <a name="list-appledevicefeaturesconfigurationbases"></a>appleDeviceFeaturesConfigurationBases のリスト
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md) オブジェクトのプロパティとリレーションシップをリストします。
 

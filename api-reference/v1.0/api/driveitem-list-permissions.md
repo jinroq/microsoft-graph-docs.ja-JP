@@ -5,12 +5,14 @@ ms.date: 09/10/2017
 title: ファイルへのアクセス権を持つユーザーを一覧表示する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 9ecbb197eb93c6251d5eac0b2bc1baea4b7efe87
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: DriveItem の有効な共有アクセス許可を一覧表示します。
+doc_type: apiPageType
+ms.openlocfilehash: fef9dfc62579569287bb2d6141a64e34f526a8fb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35888035"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015419"
 ---
 # <a name="list-sharing-permissions-on-a-driveitem"></a>DriveItem の共有アクセス許可を一覧表示する
 

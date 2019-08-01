@@ -4,12 +4,13 @@ description: 'このメソッドを呼び出すと、現在のユーザーがそ
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 960524c1bae01a058b734b3d3eca31897ea1798c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 3c0eaeb672ae08a7c7a671c214c726cb0f3cba30
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35885337"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014712"
 ---
 # <a name="group-unsubscribebymail"></a>グループ: unsubscribeByMail
 このメソッドを呼び出すと、現在のユーザーがそのグループ内の新規投稿、イベント、およびファイルに関するメール通知を受信しなくなります。Office 365 のグループのみをサポートします。 

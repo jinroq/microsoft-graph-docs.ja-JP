@@ -4,12 +4,13 @@ description: イベントに添付された Attachment オブジェクトのリ�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: b1156e7a14644867f23b5c0eb3ef95833da0fda5
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: ab3c07333bfaaf87885ba28ac52dff40cb7259e7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35887351"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015048"
 ---
 # <a name="list-attachments"></a>添付ファイルを一覧表示する
 
