@@ -4,26 +4,27 @@ description: 監査のリソースのプロパティが含まれるクラス。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9e2a6b2309e831a872c4cde04a951819cac292ec
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 14ecd6e4772e6d694707bd047899bd6b75720252
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534347"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36028862"
 ---
 # <a name="auditresource-resource-type"></a>auditResource リソースの種類
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 監査のリソースのプロパティが含まれるクラス。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|displayName|String|表示名。|
+|displayName|文字列|表示名。|
 |modifiedProperties|[auditProperty](../resources/intune-auditing-auditproperty.md) コレクション|変更されたプロパティの一覧。|
-|type|String|監査のリソースの種類。|
-|resourceId|文字列型 (String)|監査のリソースの ID。|
+|type|文字列型 (String)|監査のリソースの種類。|
+|resourceId|String|監査のリソースの ID。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

@@ -2,12 +2,15 @@
 title: 名前付きアイテムの追加
 description: ユーザーのロケールを数式に使用して、新しい名前を指定したスコープのコレクションに追加します。
 localization_priority: Normal
-ms.openlocfilehash: 467a1579cb19ea82d1847b38543af5ddd57729c4
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+author: ''
+ms.prod: ''
+doc_type: apiPageType
+ms.openlocfilehash: cc310947070c434d4f942110334e1208c4ed109b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35890352"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36022783"
 ---
 # <a name="add-named-item"></a>名前付きアイテムの追加
 

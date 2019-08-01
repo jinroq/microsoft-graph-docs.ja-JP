@@ -4,12 +4,13 @@ description: 特定のノートブックにセクションをコピーします�
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: f1a69334b10499295649ba09d64b1fa10bcb86b0
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: dc3934fbf4e7a38af81e9065d0edffb195aa9e30
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35884406"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36024764"
 ---
 # <a name="section-copytonotebook"></a>セクション: copyToNotebook
 特定のノートブックにセクションをコピーします。

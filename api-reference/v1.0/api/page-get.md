@@ -1,19 +1,20 @@
 ---
 title: ページを取得する
-description: page オブジェクトのプロパティとリレーションシップを取得します。
+description: Page オブジェクトのプロパティとリレーションシップを取得します。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 963aeeec95b9c57dbb0a024aeca2afdfba16a9d2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: a4605242ca911e9634e79fa5b9761ae2bb8e0ab6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556445"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36022552"
 ---
 # <a name="get-page"></a>ページを取得する
 
-[page](../resources/page.md)オブジェクトのプロパティとリレーションシップを取得します。
+[Page](../resources/page.md)オブジェクトのプロパティとリレーションシップを取得します。
 
 **ページ情報を取得する**
 
@@ -51,7 +52,7 @@ GET /users/{id | userPrincipalName}/onenote/pages/{id}
 GET /groups/{id}/onenote/pages/{id}
 GET /sites/{id}/onenote/pages/{id}
 ```
-## <a name="optional-query-parameters"></a>省略可能なクエリ パラメーター
+## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、 `select`応答`expand`をカスタマイズするためのおよび[OData クエリパラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 
 既定の応答は`parentSection` 、セクションの`id`、 `name`、および`self`プロパティを展開して選択します。 ページ`expand`の有効な値`parentNotebook`は`parentSection`、とです。
@@ -76,7 +77,7 @@ GET /sites/{id}/onenote/pages/{id}
 GET https://graph.microsoft.com/v1.0/me/onenote/pages/{id}
 ```
 ##### <a name="response"></a>応答
-以下は、応答の例です。 注: 簡潔にするために、ここに示す response オブジェクトは切り詰められています。 すべてのプロパティは実際の呼び出しから返されます。
+以下は、応答の例です。 注: 簡潔にするために、ここに示す response オブジェクトは切り詰められています。 実際の呼び出しではすべてのプロパティが返されます。
  <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK

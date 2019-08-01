@@ -4,30 +4,31 @@ description: カナダでのテレビコンテンツの評価のラベル
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b2f8f8815df519f5107360924cfa8532856db77f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 9a8dcf918ff5297be45e0954a43c0503798efcc3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32560824"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027959"
 ---
 # <a name="ratingcanadatelevisiontype-enum-type"></a>ratingCanadaTelevisionType 列挙型
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 カナダでのテレビコンテンツの評価のラベル
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|allallowed|.0|既定値、すべてのテレビ番組にコンテンツを表示する|
-|allblocked|1 |すべてのテレビ番組の内容を許可しない|
-|children|2 |C の分類は、2 ~ 7 年の子供の年齢に適しています。|
-|childrenAbove8|3 |C8 の分類は、8才を超える子供に適しています。|
-|元帳|4 |G 分類は、一般的な対象ユーザーに適しています。|
-|parentalguidance|5 |PG、キッズのガイダンス|
-|agesAbove14|6 |14以上の分類は、14才以上の閲覧者を対象としています。|
-|agesAbove18|7 |18以上の分類は、18才以上の閲覧者を対象としています。|
+|allAllowed|.0|既定値、すべてのテレビ番組にコンテンツを表示する|
+|allBlocked|1-d|すべてのテレビ番組の内容を許可しない|
+|children|pbm-2|C の分類は、2 ~ 7 年の子供の年齢に適しています。|
+|childrenAbove8|1/3|C8 の分類は、8才を超える子供に適しています。|
+|元帳|2/4|G 分類は、一般的な対象ユーザーに適しています。|
+|parentalGuidance|5|PG、キッズのガイダンス|
+|agesAbove14|シックス|14以上の分類は、14才以上の閲覧者を対象としています。|
+|agesAbove18|7|18以上の分類は、18才以上の閲覧者を対象としています。|
 
 
 

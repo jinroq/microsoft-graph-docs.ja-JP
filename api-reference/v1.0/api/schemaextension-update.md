@@ -3,12 +3,14 @@ title: schemaExtension を更新する
 description: 指定した schemaExtension の定義のプロパティを更新します。
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: 56d8ad41dc0e415539eb700469ce0aba0632e0a7
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.prod: ''
+doc_type: apiPageType
+ms.openlocfilehash: eb6b2229644d9212d7568684c1a069072620f5d4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35884427"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36021601"
 ---
 # <a name="update-schemaextension"></a>schemaExtension を更新する
 

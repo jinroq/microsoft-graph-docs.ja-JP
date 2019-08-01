@@ -4,12 +4,13 @@ description: '組織のアプリカタログ (テナントのアプリカタロ�
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 49a45bbd8062aeea0de2d82cfae0032990af65e7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 7fa273be1265c4e0a236688cc4af4a3f695a1477
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549014"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36021141"
 ---
 # <a name="remove-an-app-from-your-organizations-app-catalog"></a>組織のアプリカタログからアプリを削除する
 
@@ -45,7 +46,7 @@ DELETE /appCatalogs/teamsApps/{id}
 
 なし。
 
->**注:** の[発行済みアプリの一覧](./teamsapp-list.md)から返された ID を使用して、更新するアプリを参照します。 zip アプリパッケージのマニフェストからの ID は使用しないでください。
+>**注:** の[発行済みアプリの一覧](./teamsapp-list.md)から返された ID を使用して、更新するアプリを参照します。 Zip アプリパッケージのマニフェストからの ID は使用しないでください。
 
 ## <a name="response"></a>応答
 

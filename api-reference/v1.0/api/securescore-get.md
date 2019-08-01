@@ -4,12 +4,13 @@ description: SecureScore オブジェクトのプロパティとリレーショ�
 author: preetikr
 localization_priority: Normal
 ms.prod: security
-ms.openlocfilehash: 6a6e900a0f64f430debb2f4586daa15d3edee2af
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 516134ef6e6f5159e1c03735bd34120afb21dd26
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35884624"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35975641"
 ---
 # <a name="get-securescore"></a>secureScore の取得
 

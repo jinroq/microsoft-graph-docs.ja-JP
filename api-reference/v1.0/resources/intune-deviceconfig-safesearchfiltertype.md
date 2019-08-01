@@ -4,16 +4,17 @@ description: 安全な検索のレベル (アダルトコンテンツのフィ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c82f80f6081f57a88fcdf26f7639277d72b5e0d8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: c88542d6d06f623d20a294cc49aff321692c75a6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534900"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027854"
 ---
 # <a name="safesearchfiltertype-enum-type"></a>safeSearchFilterType 列挙型
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 安全な検索のレベル (アダルトコンテンツのフィルタリング) を指定します。
 
@@ -21,8 +22,8 @@ ms.locfileid: "32534900"
 |メンバー|値|説明|
 |:---|:---|:---|
 |自分のもの|.0|ユーザー定義、既定値、意図的ではありません。|
-|厳格|1 |アダルトコンテンツに対する厳密で最高のフィルタリング。|
-|多く|2 |成人向けコンテンツに対するフィルター処理を中程度にする (有効な検索結果はフィルター処理されません)。|
+|厳格|1-d|アダルトコンテンツに対する厳密で最高のフィルタリング。|
+|多く|pbm-2|成人向けコンテンツに対するフィルター処理を中程度にする (有効な検索結果はフィルター処理されません)。|
 
 
 

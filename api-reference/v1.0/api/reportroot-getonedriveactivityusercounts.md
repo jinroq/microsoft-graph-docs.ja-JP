@@ -4,12 +4,13 @@ description: アクティブな OneDrive ユーザーの数の傾向を取得し
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: a99f7350a692d016585a7e32f2e4d226e2255ea1
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: cc419695d1191afb52905ee222ecdb757f9791c3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35893770"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36021943"
 ---
 # <a name="reportroot-getonedriveactivityusercounts"></a>reportRoot: getOneDriveActivityUserCounts
 

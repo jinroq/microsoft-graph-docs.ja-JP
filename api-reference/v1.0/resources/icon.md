@@ -2,12 +2,15 @@
 title: アイコン リソースの種類
 description: セルのアイコンを表します。
 localization_priority: Normal
-ms.openlocfilehash: 833fa4cb4061a96b01077c3adeb7dcaed49e0a02
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 734276c4881f4a9c7628afe2a8f6dfa45c308f5d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32567810"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030213"
 ---
 # <a name="icon-resource-type"></a>アイコン リソースの種類
 
@@ -27,7 +30,7 @@ ms.locfileid: "32567810"
 |index|int|指定したセット内のアイコンのインデックスを表します。|
 |set|string|アイコンがその一部であるセットを表します。 使用可能な値は`Invalid`次`ThreeArrows`の`ThreeArrowsGray`とおり`ThreeFlags`です`ThreeTrafficLights1`。 `ThreeTrafficLights2`、 `ThreeSigns` `ThreeSymbols` `ThreeSymbols2` `FourArrows` `FourArrowsGray` `FourRedToBlack` `FourRating` `FourTrafficLights` `FiveQuarters`、、、、、、、、、、、、 `ThreeStars` `FiveArrows` `FiveArrowsGray` `FiveRating`, `ThreeTriangles`, `FiveBoxes`.|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 

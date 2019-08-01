@@ -4,16 +4,17 @@ description: デバイスのインストール状態のプロパティが含ま�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6e737a58fc9547d54feeeeef47136286285c1e99
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 0405bdb5e4a4c53a508f7b81171dd9ede41bdbb1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32565983"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032089"
 ---
 # <a name="deviceinstallstate-resource-type"></a>deviceInstallState リソースの種類
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 デバイスのインストール状態のプロパティが含まれています。
 
@@ -39,7 +40,7 @@ ms.locfileid: "32565983"
 |osDescription|String|OS の説明。|
 |userName|String|デバイスのユーザー名です。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記

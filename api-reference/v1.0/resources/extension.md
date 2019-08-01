@@ -2,12 +2,15 @@
 title: 拡張子リソースの種類
 description: OData v4 のオープン型 openTypeExtension をサポートする抽象型。
 localization_priority: Normal
-ms.openlocfilehash: 2633c8a28c1be1a670a80834ce869b5156fc1de9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: e34076cb7bbeec338e71aab6dc7ca9dc4e6cca37
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575983"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030395"
 ---
 # <a name="extension-resource-type"></a>拡張子リソースの種類
 
@@ -37,7 +40,7 @@ OData v4 のオープン型 [openTypeExtension](opentypeextension.md) をサポ�
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|id|String| 読み取り専用。|
+|id|String| 読み取り専用です。|
 
 ## <a name="relationships"></a>関係
 なし

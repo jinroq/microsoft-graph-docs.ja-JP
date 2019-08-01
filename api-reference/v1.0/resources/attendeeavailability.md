@@ -4,12 +4,13 @@ description: 出席者の空き時間。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 63014553824b833e2e4cdfb03485fcb7962c01a0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: ffdff0945522d04361510cfcc5917381fecfaa03
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569362"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030059"
 ---
 # <a name="attendeeavailability-resource-type"></a>attendeeAvailability リソースの種類
 
@@ -38,7 +39,7 @@ ms.locfileid: "32569362"
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |attendee|[attendeeBase](attendeebase.md)|出席者の電子メールアドレスと種類。個人またはリソースのいずれかを指定します。また、必要かどうかは、ユーザーの場合はオプションです。|
-|availability|freeBusyStatus| 出席者の空き時間の状態。 使用可能な値は`free`、 `tentative`、 `busy` `oof` `workingElsewhere`、、、 `unknown`、です。|
+|availability|freeBusyStatus| 出席者の空き時間の状態。 使用可能な値: `free`、`tentative`、`busy`、`oof`、`workingElsewhere`、`unknown`。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

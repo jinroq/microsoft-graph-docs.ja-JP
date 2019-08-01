@@ -1,29 +1,30 @@
 ---
 title: firewallCertificateRevocationListCheckMethodType 列挙型
-description: firewallCertificateRevocationListCheckMethod に指定できる値
+description: FirewallCertificateRevocationListCheckMethod に指定できる値
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a475f32d4572b0aa8ed2a52befc7a58eb6077253
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 7c5fa3baaeb3d24bc902d733a6c6462fbcf70f33
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32541166"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36028302"
 ---
 # <a name="firewallcertificaterevocationlistcheckmethodtype-enum-type"></a>firewallCertificateRevocationListCheckMethodType 列挙型
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-firewallCertificateRevocationListCheckMethod に指定できる値
+FirewallCertificateRevocationListCheckMethod に指定できる値
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|devicedefault|.0|Intune によって構成された値がない。ユーザーが構成したデバイスの既定値を上書きしない|
-|なし|1 |証明書失効リストをチェックしない|
-|再試行|2 |証明書がチェックで確認されている場合にのみ、CRL の確認と許可を試行します。|
-|要する|3 |証明書を許可する前に、正常な CRL チェックを必要とする|
+|deviceDefault|.0|Intune によって構成された値がない。ユーザーが構成したデバイスの既定値を上書きしない|
+|none|1-d|証明書失効リストをチェックしない|
+|再試行|pbm-2|証明書がチェックで確認されている場合にのみ、CRL の確認と許可を試行します。|
+|要する|1/3|証明書を許可する前に、正常な CRL チェックを必要とする|
 
 
 

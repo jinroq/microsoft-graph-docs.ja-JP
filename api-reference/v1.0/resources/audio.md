@@ -4,12 +4,14 @@ ms.date: 09/10/2017
 title: オーディオ
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8265850a6194938cc3547d081c71256bb2aa9251
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: オーディオ リソースは、アイテムのオーディオ関連のプロパティを単一の構造にグループ化します。
+doc_type: resourcePageType
+ms.openlocfilehash: a71b9ee9c65bacc802244bda2e7757e87d9ff35e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569341"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030024"
 ---
 # <a name="audio-facet"></a>Audio ファセット
 

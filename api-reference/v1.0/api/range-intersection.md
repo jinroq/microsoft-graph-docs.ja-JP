@@ -4,12 +4,13 @@ description: 指定した範囲の長方形の交差を表す範囲オブジェ�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 95e7af555c1ac857272994dc634ed0dc9f1b0fad
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 2eec5e11e22c6c9724ddb3935166b05ad8a1f38c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32453256"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35975859"
 ---
 # <a name="range-intersection"></a>範囲:Intersection
 

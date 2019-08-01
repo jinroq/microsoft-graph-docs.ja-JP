@@ -4,12 +4,13 @@ description: 範囲内のセルをワークシートの 1 つの領域にマー�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 3c2a763ec43f3796b81307a82fad3464fbde365f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 1e20451f0b5230109c5c5bdd2d4f3ca62f7e9f58
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35891291"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36022216"
 ---
 # <a name="range-merge"></a>範囲: マージ
 

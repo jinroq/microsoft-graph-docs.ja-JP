@@ -4,16 +4,17 @@ description: deviceManagementPartner を削除します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a593a08fd836f8618243ffdf5b8e6dfbabfe4a76
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: cdcd730426ad4bd61e74180b376fb1fe2f11e8ed
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32582753"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36024204"
 ---
 # <a name="delete-devicemanagementpartner"></a>deviceManagementPartner の削除
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) を削除します。
 

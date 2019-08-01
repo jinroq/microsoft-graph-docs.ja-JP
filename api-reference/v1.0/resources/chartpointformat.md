@@ -4,12 +4,13 @@ description: グラフのポイントのオブジェクトの書式設定を表�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 1c1b0a4a7d9076771da11061723f275079d429cb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: b17eb84c3de5505a3dfea23ce3fef564dca9aa2b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569068"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029765"
 ---
 # <a name="chartpointformat-resource-type"></a>ChartPointFormat リソースの種類
 
@@ -17,7 +18,7 @@ ms.locfileid: "32569068"
 
 
 ## <a name="methods"></a>メソッド
-なし
+None
 
 ## <a name="properties"></a>プロパティ
 なし
@@ -25,7 +26,7 @@ ms.locfileid: "32569068"
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|fill|[WorkbookChartFill](chartfill.md)|背景の書式設定情報を含むグラフの塗りつぶしの書式を表します。 読み取り専用。|
+|fill|[WorkbookChartFill](chartfill.md)|背景の書式設定情報を含むグラフの塗りつぶしの書式を表します。 読み取り専用です。|
 
 
 ## <a name="json-representation"></a>JSON 表記

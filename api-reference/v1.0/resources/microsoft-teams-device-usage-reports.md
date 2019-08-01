@@ -4,12 +4,13 @@ description: Microsoft Teams デバイスの使用状況レポートを使用し
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: d04e0f96d97ee7b37b3e17bce3fa737296c779d7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.openlocfilehash: ebac2c81b613b967ca6c559a586c349e59d0c552
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458804"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036079"
 ---
 # <a name="microsoft-teams-device-usage-reports"></a>Microsoft Teams デバイスの使用状況レポート
 

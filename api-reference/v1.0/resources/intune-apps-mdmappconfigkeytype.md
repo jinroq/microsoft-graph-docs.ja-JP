@@ -4,27 +4,28 @@ description: アプリ構成キーの種類。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 39dc2aa863af9da2920704ab1c00ac8872c45e90
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: f1d9235d1f5cfd329c695301701023291f933a19
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583929"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36028995"
 ---
 # <a name="mdmappconfigkeytype-enum-type"></a>mdmAppConfigKeyType 列挙型
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 アプリ構成キーの種類。
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|stringtype|.0|まだ文書化されていません|
-|整数型|1 |まだ文書化されていません|
-|realtype|2 |まだ文書化されていません|
-|booleanType|3 |まだ文書化されていません|
-|tokenType|4 |まだ文書化されていません|
+|stringType|.0|まだ文書化されていません|
+|整数型|1-d|まだ文書化されていません|
+|realType|pbm-2|まだ文書化されていません|
+|booleanType|1/3|まだ文書化されていません|
+|tokenType|2/4|まだ文書化されていません|
 
 
 

@@ -4,12 +4,13 @@ description: このトピックでは、iosGeneralDeviceConfiguration リソー�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 39405b941f49595bf39af7e839734e55a518fd71
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+doc_type: resourcePageType
+ms.openlocfilehash: 0763ed1081146d469454fa8861071179e7a0114c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620144"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36031529"
 ---
 # <a name="iosgeneraldeviceconfiguration-resource-type"></a>iosGeneralDeviceConfiguration リソース タイプ
 

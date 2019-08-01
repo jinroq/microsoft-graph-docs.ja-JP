@@ -4,12 +4,13 @@ description: 'メッセージの作成中にユーザーに対して表示され
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: d1ee1af2ae5b62d085942615ae0bd3ec320b19b3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 90f6f1a66631223a45a34797b6d18c13259d6241
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32574013"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036324"
 ---
 # <a name="mailtips-resource-type"></a>メールヒントリソースの種類
 
@@ -20,12 +21,12 @@ ms.locfileid: "32574013"
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 | 自動応答 | [automaticRepliesMailTips](../resources/automaticrepliesmailtips.md) | 受信者によって設定されている場合、自動応答のメールヒント。 |
-| custommailtip | String | 受信者のメールボックスに設定できるカスタムメールヒント。 |
-| deliveryrestricted| Boolean | 受信者のメールボックスが制限されているかどうか。たとえば、事前に定義された送信者の一覧からのメッセージの受信、送信者の定義済みリストからのメッセージの拒否、認証済みの送信者からのメッセージの受信のみを行います。 |
+| customMailTip | String | 受信者のメールボックスに設定できるカスタムメールヒント。 |
+| deliveryRestricted| Boolean | 受信者のメールボックスが制限されているかどうか。たとえば、事前に定義された送信者の一覧からのメッセージの受信、送信者の定義済みリストからのメッセージの拒否、認証済みの送信者からのメッセージの受信のみを行います。 |
 | emailAddress | [emailAddress](../resources/emailaddress.md) | メールヒントを取得する受信者の電子メールアドレス。 |
-| error | [mailTipsError](../resources/mailtipserror.md) | [getmailtips ヒント](../api/user-getmailtips.md)アクション中に発生するエラー。 |
+| error | [mailTipsError](../resources/mailtipserror.md) | [Getmailtips ヒント](../api/user-getmailtips.md)アクション中に発生するエラー。 |
 | externalMemberCount | Int32 | 受信者が配布リストの場合の外部メンバーの数。 |
-| ismoderated |Boolean  | 受信者にメッセージを送信するには承認が必要であるかどうか。 たとえば、受信者が大きな配布リストであり、その配布リストに送信されたメッセージを承認するようにモデレーターが設定されている場合、または受信者にメッセージを送信する場合は、受信者の上司の承認が必要です。 |
+| isModerated |Boolean  | 受信者にメッセージを送信するには承認が必要であるかどうか。 たとえば、受信者が大きな配布リストであり、その配布リストに送信されたメッセージを承認するようにモデレーターが設定されている場合、または受信者にメッセージを送信する場合は、受信者の上司の承認が必要です。 |
 | mailboxFull | Boolean | メールボックスのすべての受信者の状態。 |
 | maxMessageSize | Int32 | 受信者の組織またはメールボックスに対して構成された最大メッセージサイズ。 |
 | [受信者] スコープ | recipientScopeType | 受信者の範囲。 可能な値は、`none`、`internal`、`external`、`externalPartner`、`externalNonParther` です。 たとえば、管理者は別の組織を "パートナー" に設定することができます。 特定の範囲で特定のメールヒントにアクセスできるようにするには、スコープを使用すると便利です。 また、送信者に対して、メッセージが組織を離れていることを通知し、言葉、語調、およびコンテンツについての正しい判断を支援するためにも役立ちます。|
@@ -36,7 +37,7 @@ ms.locfileid: "32574013"
 
 | 値
 |:-------------------------
-| なし
+| none
 | 社外
 | 社外
 | externalPartner

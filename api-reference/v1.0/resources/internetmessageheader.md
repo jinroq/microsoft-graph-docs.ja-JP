@@ -2,12 +2,15 @@
 title: internetMessageHeader リソースの種類
 description: 'RFC5322 で定義されているように、インターネットメッセージヘッダーを表すキーと値のペア。 '
 localization_priority: Normal
-ms.openlocfilehash: 2a8dd616ffe8417a5064c0a98976d512b1279704
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 14d4cb88c79651bbba381206df7d5ff9b26db0bc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32567516"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030199"
 ---
 # <a name="internetmessageheader-resource-type"></a>internetMessageHeader リソースの種類
 

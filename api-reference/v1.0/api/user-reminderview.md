@@ -4,12 +4,13 @@ description: '指定した開始時刻と終了時刻内の予定表のアラー
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 96215dd3de6cf0d25c942f263af9f646f6b96b58
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 1c42138f0e25f5fdecb5d4308245863ce72e7007
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35855178"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36026608"
 ---
 # <a name="user-reminderview"></a>user: reminderView
 指定した開始時刻と終了時刻内の、ユーザーの予定表にあるイベントリマインダーの一覧を返します。 

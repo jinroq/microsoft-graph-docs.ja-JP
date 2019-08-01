@@ -4,12 +4,13 @@ description: アドレスまたは名前で指定された範囲オブジェク�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 4c2e80c70a2e152c9f1f853139ffa4cfd0a1a7a1
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: f7d20ad3de65e04e6d5807db50e2b41a9631a09d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35884349"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36026118"
 ---
 # <a name="worksheet-range"></a>ワークシート:Range
 

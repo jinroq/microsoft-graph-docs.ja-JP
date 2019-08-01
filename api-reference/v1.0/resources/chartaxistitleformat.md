@@ -4,12 +4,13 @@ description: グラフ軸のタイトルの書式設定を表します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 26d305d8bd4a0059123f77bd86cbbf5fd01dcea7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 3ae74b7353a0b4198b42a04fdd420eb3447d4c11
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569082"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029849"
 ---
 # <a name="chartaxistitleformat-resource-type"></a>ChartAxisTitleFormat リソースの種類
 
@@ -17,7 +18,7 @@ ms.locfileid: "32569082"
 
 
 ## <a name="methods"></a>メソッド
-なし
+None
 
 ## <a name="properties"></a>プロパティ
 なし
@@ -25,7 +26,7 @@ ms.locfileid: "32569082"
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|font|[WorkbookChartFont](chartfont.md)|グラフの軸タイトルのオブジェクトのフォント属性 (フォント名、フォント サイズ、色など) を表します。 値の取得のみ可能です。|
+|font|[WorkbookChartFont](chartfont.md)|グラフの軸タイトルのオブジェクトのフォント属性 (フォント名、フォント サイズ、色など) を表します。 読み取り専用です。|
 
 ## <a name="json-representation"></a>JSON 表記
 

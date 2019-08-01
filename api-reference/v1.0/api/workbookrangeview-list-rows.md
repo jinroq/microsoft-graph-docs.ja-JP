@@ -4,12 +4,13 @@ description: 範囲ビュー オブジェクトの一覧を取得します。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: b3c1f8a053172d5313b8f2be6d07d21203e4b6cf
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: bfd439129cac0e4a6548e97a0c0132bf83fd624f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35889709"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36026326"
 ---
 # <a name="list-rangeview-rows"></a>rangeView 行を一覧表示する
 

@@ -2,12 +2,15 @@
 title: recurrenceRange リソースの種類
 description: '定期的なイベントを繰り返す期間について説明します。 '
 localization_priority: Normal
-ms.openlocfilehash: 4129b698e48b01e0208b88fbdc57fb777835cd4e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 0d5fee6ad877958b4861360e4e90fbdd688e0011
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579402"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034805"
 ---
 # <a name="recurrencerange-resource-type"></a>recurrenceRange リソースの種類
 
@@ -19,7 +22,7 @@ ms.locfileid: "32579402"
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|endDate|Date|定期的なパターンの適用を停止する日付。 イベントの定期的なパターンによっては、最後に会議が発生するのは、この日付にならない可能性があります。 **type** が `endDate` の場合、必要です。|
+|endDate|日付|定期的なパターンの適用を停止する日付。 イベントの定期的なパターンによっては、最後に会議が発生するのは、この日付にならない可能性があります。 **type** が `endDate` の場合、必要です。|
 |numberOfOccurrences|Int32|イベントを繰り返す回数を指定します。 必須です。**type** が `numbered` の場合、正の値である必要があります。|
 |recurrenceTimeZone|String |**startDate** プロパティと **endDate** プロパティのタイム ゾーン。 省略可能。 指定されていない場合は、イベントのタイム ゾーンが使用されます。|
 |startDate|Date|定期的なパターンの適用を開始する日付。 イベントの定期的なパターンによっては、最初に会議が発生するのは、この日付以降になる場合があります。 定期的な[イベント](event.md)の **start** プロパティと同じ値である必要があります。 必須。|

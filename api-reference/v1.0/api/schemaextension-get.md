@@ -1,17 +1,19 @@
 ---
 title: schemaExtension を取得する
-description: 指定された schemaextension 定義のプロパティを取得します。
+description: 指定された schemaExtension 定義のプロパティを取得します。
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: 70a4fdc5e51a5965098a6b0331a31c200b553ec9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.prod: ''
+doc_type: apiPageType
+ms.openlocfilehash: b220de863e70c9540915ee6ba42480417576e96e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521034"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36021537"
 ---
 # <a name="get-schemaextension"></a>schemaExtension を取得する
-指定された[schemaextension](../resources/schemaextension.md)定義のプロパティを取得します。
+指定された[Schemaextension](../resources/schemaextension.md)定義のプロパティを取得します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -84,7 +86,7 @@ Content-length: 201
 
 ## <a name="see-also"></a>関連項目
 
-- [拡張機能を使用してカスタム データをリソースに追加する](/graph/extensibility-overview)
+- [拡張機能を使用したリソースへのカスタム データの追加](/graph/extensibility-overview)
 - [スキーマ拡張機能を使用したグループへのカスタム データの追加](/graph/extensibility-schema-groups)
 
 

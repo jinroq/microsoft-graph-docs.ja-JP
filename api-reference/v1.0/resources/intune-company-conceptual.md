@@ -1,15 +1,16 @@
 ---
-title: microsoft Intune での会社の使用条件-microsoft Graph API
-description: 会社の使用条件をサポートする Intune (REST) エンドポイントの Microsoft graph API を一覧表示します。
+title: Microsoft Intune での会社の使用条件-Microsoft Graph API
+description: 会社の使用条件をサポートする Intune (REST) エンドポイントの Microsoft Graph API を一覧表示します。
 localization_priority: Normal
 author: tfitzmac
 ms.prod: intune
-ms.openlocfilehash: 3de3cdf4ac55177bceb56e59743d0bef9bd4cb50
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.openlocfilehash: 31178d6acccdae972ead9941feb2a8f98b51a7ba
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523974"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36028771"
 ---
 # <a name="company-terms-and-conditions-in-microsoft-intune"></a>Microsoft Intune の会社の使用条件
 

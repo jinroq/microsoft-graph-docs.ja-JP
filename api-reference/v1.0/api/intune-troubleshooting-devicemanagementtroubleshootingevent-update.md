@@ -4,16 +4,17 @@ description: deviceManagementTroubleshootingEvent オブジェクトのプロパ
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6681ef7f4cd0082d411a2f5559a5733c9fe55be2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 3efa4e717e006d54e0786b260cc77fd749412622
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576620"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025681"
 ---
 # <a name="update-devicemanagementtroubleshootingevent"></a>deviceManagementTroubleshootingEvent の更新
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) オブジェクトのプロパティを更新します。
 
@@ -48,7 +49,7 @@ PATCH /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEv
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|オブジェクトの UUID|
+|id|文字列|オブジェクトの UUID|
 |eventDateTime|DateTimeOffset|イベントが発生した時刻。|
 |correlationId|String|サービスのエラーをトレースするための ID。|
 

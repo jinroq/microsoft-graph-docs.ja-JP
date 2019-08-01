@@ -1,15 +1,18 @@
 ---
-title: scheduleitem リソースの種類
+title: scheduleItem リソースの種類
 description: ユーザーの既定の予定表にある実際のイベントに対応するユーザーの空き時間情報を示すアイテム。 この項目は、リソース (会議室または備品) にも適用されます。
 localization_priority: Normal
-ms.openlocfilehash: 8a30dcb4394a963e35047fab00391f0cc7eb7715
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: fb544041948d5e46c1ae8c3f6f887f595ddb82e8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579171"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034634"
 ---
-# <a name="scheduleitem-resource-type"></a>scheduleitem リソースの種類
+# <a name="scheduleitem-resource-type"></a>scheduleItem リソースの種類
 
 ユーザーの既定の予定表にある実際のイベントに対応するユーザーの空き時間情報を示すアイテム。 この項目は、リソース (会議室または備品) にも適用されます。
 
@@ -19,8 +22,8 @@ ms.locfileid: "32579171"
 |end |[dateTimeTimeZone](datetimetimezone.md) |対応するイベントが終了する日付、時刻、タイムゾーン。 |
 |isPrivate |Boolean |対応するイベントの感度。 イベントがマーク`private`されている場合は True、それ以外の場合は false。 省略可能。|
 |location |String | 対応するイベントが保持または参加している場所。 省略可能。|
-|start |[dateTimeTimeZone](datetimetimezone.md) |対応するイベントが開始する日付、時刻、タイムゾーン。 |
-|status |freeBusyStatus | 対応するイベント中のユーザーまたはリソースの空き時間状態。 使用可能な値は`free`、 `tentative`、 `busy` `oof` `workingElsewhere`、、、 `unknown`、です。 |
+|開始 |[dateTimeTimeZone](datetimetimezone.md) |対応するイベントが開始する日付、時刻、タイムゾーン。 |
+|status |freeBusyStatus | 対応するイベント中のユーザーまたはリソースの空き時間状態。 使用可能な値: `free`、`tentative`、`busy`、`oof`、`workingElsewhere`、`unknown`。 |
 |subject |String | 対応するイベントの件名行。 省略可能。|
 
 

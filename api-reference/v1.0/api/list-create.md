@@ -5,12 +5,14 @@ ms.date: 09/11/2017
 title: SharePoint リストを作成する
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 0af62965a922d18b6c59b0f35f8e743896a85a77
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: site で新しい list を作成します。
+doc_type: apiPageType
+ms.openlocfilehash: 5228d760981372fa1d2ee7c553675e5a16e336eb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35888361"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025562"
 ---
 # <a name="create-a-new-list"></a>新しいリストを作成する
 

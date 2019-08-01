@@ -4,16 +4,17 @@ description: モバイル アプリの識別子です。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: de59450e19529260175086b085eb54376ba4c2a3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 48e70a45a5d2e43fa83d4895b76f2cb208bc7de6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32465189"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36037843"
 ---
 # <a name="mobileappidentifier-resource-type"></a>mobileAppIdentifier リソースの種類
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 モバイル アプリの識別子です。
 

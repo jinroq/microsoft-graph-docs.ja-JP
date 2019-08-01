@@ -1,15 +1,18 @@
 ---
-title: hostsecuritystate リソースの種類
+title: hostSecurityState リソースの種類
 description: ホストに関するステートフルな情報を含みます (デバイス、コンピューターなどを含む)。
 localization_priority: Normal
-ms.openlocfilehash: 0646547b7f3e31dcf283c1ce423a52b4ae16f013
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: dabe7d0aa026cb1b514e95fbc953dcb1974f8925
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570786"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029275"
 ---
-# <a name="hostsecuritystate-resource-type"></a>hostsecuritystate リソースの種類
+# <a name="hostsecuritystate-resource-type"></a>hostSecurityState リソースの種類
 
 ホストに関するステートフルな情報を含みます (デバイス、コンピューターなどを含む)。
 
@@ -19,12 +22,12 @@ ms.locfileid: "32570786"
 |:---------------|:--------|:----------|
 |fqdn|String|ホストの FQDN (完全修飾ドメイン名) (例: `machine.company.com`)。|
 |isAzureAadJoined|Boolean|ホストが Azure Active Directory ドメインサービスにドメインに参加している場合は True。|
-|isAzureAadRegistered|Boolean|ホストが Azure Active Directory デバイス登録 (byod devices、enterprise によって完全に管理されていない) に登録されている場合は、True。|
+|isAzureAadRegistered|Boolean|ホストが Azure Active Directory デバイス登録 (BYOD devices、enterprise によって完全に管理されていない) に登録されている場合は、True。|
 |isHybridAzureDomainJoined|Boolean|ホストがオンプレミスの Active Directory ドメインに参加しているドメインである場合は True。|
 |netBiosName|String|DNS ドメイン名を除いたローカルホスト名。|
 |hp-ux|String|ホストオペレーティングシステム。 (たとえば、Windows10、MacOS、RHEL など)。|
 |privateIpAddress|String|プライベート (ルーティング可能ではない) IPv4 または IPv6 アドレス ( [RFC 1918](https://tools.ietf.org/html/rfc1918)を参照) 通知時。|
-|publicipaddress|String|通知時に公開ルーティング可能な IPv4 または IPv6 アドレス ( [RFC 1918](https://tools.ietf.org/html/rfc1918)を参照)。|
+|publicIpAddress|String|通知時に公開ルーティング可能な IPv4 または IPv6 アドレス ( [RFC 1918](https://tools.ietf.org/html/rfc1918)を参照)。|
 |riskScore|String|プロバイダーが生成/計算するホストのリスクスコア。  推奨値の範囲0-1。パーセンテージに相当します。|
 
 ## <a name="json-representation"></a>JSON 表記

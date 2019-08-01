@@ -4,12 +4,13 @@ description: 使用範囲とは、値または書式設定が割り当たって�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: bdf2a49f70e1b2e3d50cc45788904feeeef22207
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 756fccce62bab54296e5aa4ba44291ab903e24bf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35884261"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36026111"
 ---
 # <a name="worksheet-usedrange"></a>ワークシート:UsedRange
 

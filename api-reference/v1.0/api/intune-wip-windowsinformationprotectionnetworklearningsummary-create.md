@@ -4,16 +4,17 @@ description: 新しい windowsInformationProtectionNetworkLearningSummary オブ
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 02a38617e2c47bd023ee4044126d0f4cf5308a8a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 9b1dd1d75aea70c7fae3a6d337288213747afd25
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576389"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025611"
 ---
 # <a name="create-windowsinformationprotectionnetworklearningsummary"></a>windowsInformationProtectionNetworkLearningSummary の作成
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい [windowsInformationProtectionNetworkLearningSummary](../resources/intune-wip-windowsinformationprotectionnetworklearningsummary.md) オブジェクトを作成します。
 

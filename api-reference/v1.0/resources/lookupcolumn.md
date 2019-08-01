@@ -4,12 +4,15 @@ ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: LookupColumn
 localization_priority: Normal
-ms.openlocfilehash: dbb2fe0f651a269d69b880d18748b27a5b6f457c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: columnDefinition リソースの lookupColumn は、列の値がサイト内の別のソースから検索されることを示します。
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 5f0299816a1ea53338053708dbd99f7be8428051
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32525475"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036345"
 ---
 # <a name="lookupcolumn-resource-type"></a>LookupColumn リソースの種類
 

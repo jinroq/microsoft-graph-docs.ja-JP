@@ -4,12 +4,13 @@ description: '指定した会話に新しいスレッドを作成します。 '
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: d5a88cae366dc44e30bffdd9b97f7927a6965f4d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: e2156a64ecfa62451e7750bbfd63c0d647926193
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35883693"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36003057"
 ---
 # <a name="create-thread"></a>スレッドを作成する
 

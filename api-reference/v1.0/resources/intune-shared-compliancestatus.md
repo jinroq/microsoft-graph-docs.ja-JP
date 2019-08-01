@@ -4,16 +4,17 @@ description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e25b5d1b84b6a485e4e3cb9753f54dde1ecaa277
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: bad81de95b05c91f63653fc9122bb3031da31fae
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32585342"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36037045"
 ---
 # <a name="compliancestatus-enum-type"></a>complianceStatus 列挙型
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 まだ文書化されていません
 
@@ -21,7 +22,7 @@ ms.locfileid: "32585342"
 |メンバー|値|説明|
 |:---|:---|:---|
 |不明|.0|まだ文書化されていません|
-|notapplicable|1-d|まだ文書化されていません|
+|notApplicable|1-d|まだ文書化されていません|
 |要件|pbm-2|まだ文書化されていません|
 |改善|1/3|まだ文書化されていません|
 |互換性|2/4|まだ文書化されていません|

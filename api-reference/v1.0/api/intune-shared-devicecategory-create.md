@@ -4,16 +4,17 @@ description: 新しい deviceCategory オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 76c1d0c8b22484b3a35d0db49c5a4e578e656880
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: bd5c0a8285ad2b48f208cd3250dde95ceae82160
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32577036"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36023518"
 ---
 # <a name="create-devicecategory"></a>deviceCategory の作成
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい [deviceCategory](../resources/intune-shared-devicecategory.md) オブジェクトを作成します。
 
@@ -23,7 +24,7 @@ ms.locfileid: "32577036"
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
 |委任 (職場または学校のアカウント)||
-| &nbsp; &nbsp; **オンボーディング** | devicemanagementmanaged 対象のデバイス。|
+| &nbsp; &nbsp; **オンボーディング** | DeviceManagementManaged 対象のデバイス。|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -52,7 +53,7 @@ POST /deviceManagement/deviceCategories
 |id|文字列|デバイス カテゴリの一意識別子。 読み取り専用です。|
 |**オンボーディング**|
 |displayName|String|デバイス カテゴリの表示名。|
-|説明|String|デバイス カテゴリに関するオプションの説明。|
+|description|String|デバイス カテゴリに関するオプションの説明。|
 
 
 

@@ -4,12 +4,13 @@ description: 現在の範囲オブジェクトに似た (ただし、右下隅�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 4eb5aad208ecd7c60e45b2419b61570915bb7338
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 1d0870bbcba63e2c1571fcec0a156e2f2ef8f7fd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554647"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36026346"
 ---
 # <a name="workbookrange-resizedrange"></a>workbookRange: resizedRange
 現在の範囲オブジェクトに似た (ただし、右下隅がいくつかの行と列で拡張 (または縮小) されている) 範囲オブジェクトを取得します。

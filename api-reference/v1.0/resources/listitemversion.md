@@ -3,12 +3,14 @@ title: ListItemVersion リソースの種類
 description: '**listItemVersion** リソースは、ListItem リソースの旧バージョンを表しています。'
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 6e21be59b71a8f348931603c799ebbbe225e5d3f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 8523e77fd308ab4863a0c3d90ccacad73cc766cc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32572816"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036450"
 ---
 # <a name="listitemversion-resource-type"></a>ListItemVersion リソースの種類
 
@@ -20,7 +22,7 @@ listItemVersion リソースで使用可能なタスクを次に示します。
 
 |            共通タスク             |         HTTP メソッド         |
 | :--------------------------------- | :-------------------------- |
-| [バージョンの一覧表示][version-list]      | `GET /sites/{site-id}/items/{item-id}/versions`  |
+| [バージョンを一覧表示する][version-list]      | `GET /sites/{site-id}/items/{item-id}/versions`  |
 | [バージョンの取得][version-get]         | `GET /sites/{site-id}/items/{item-id}/versions/{version-id}`     |
 | [バージョンの復元][version-restore] | `POST /sites/{site-id}/items/{item-id}/versions/{version-id}/restore` |
 
@@ -52,10 +54,10 @@ listItemVersion リソースで使用可能なタスクを次に示します。
 
 |      プロパティ名       |                         種類                         |                               説明                               |
 | :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
-| **id**                   | string                                               | バージョンの ID。 読み取り専用。                                       |
+| **id**                   | string                                               | バージョンの ID。 読み取り専用です。                                       |
 | **lastModifiedBy**       | [IdentitySet](../resources/identityset.md)           | 最後にバージョンを変更したユーザーの ID。 読み取り専用。        |
 | **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | バージョンが最後に変更された日時。 読み取り専用です。                 |
-| **published**            | [PublicationFacet](../resources/publicationfacet.md) | 特定のバージョンのパブリケーション ステータスを示します。 読み取り専用。 |
+| **published**            | [PublicationFacet](../resources/publicationfacet.md) | 特定のバージョンのパブリケーション ステータスを示します。 読み取り専用です。 |
 
 
 ## <a name="relationships"></a>関係

@@ -4,12 +4,15 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: アイテムへのアクセスを削除する
 localization_priority: Normal
-ms.openlocfilehash: b2e454515c25aeff2249db69be78ca9d74f6b0ea
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: DriveItem へのアクセスを削除します。
+ms.prod: ''
+doc_type: apiPageType
+ms.openlocfilehash: dfb7d877e6bfd51be5b025147f692cde0830e863
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35886513"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36022559"
 ---
 # <a name="delete-a-sharing-permission-from-a-file-or-folder"></a>ファイルまたはフォルダーの共有アクセス許可を削除する
 

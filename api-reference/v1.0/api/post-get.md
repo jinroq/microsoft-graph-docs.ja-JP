@@ -4,12 +4,13 @@ description: '指定したスレッド内の投稿のプロパティと関係を
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: ed72195bb933ab6cddc77718af09a5a9fa96ad99
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: e6b2a5b027a6e82289ddad83877e1c61115c2233
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35886975"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35976028"
 ---
 # <a name="get-post"></a>投稿を取得する
 

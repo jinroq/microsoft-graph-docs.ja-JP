@@ -1,14 +1,16 @@
 ---
 title: DriveItemVersion リソースの種類
-description: '**drive itemversion**リソースは、ドライブ項目の特定のバージョンを表します。'
+description: '**Drive Itemversion**リソースは、ドライブ項目の特定のバージョンを表します。'
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: fd6052464d40fcce86b83d93601282dda252c69b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+doc_type: resourcePageType
+ms.openlocfilehash: e9521eb549bf84b900e6c49c4dedc5f2199de317
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562686"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029401"
 ---
 # <a name="driveitemversion-resource-type"></a>DriveItemVersion リソースの種類
 
@@ -21,7 +23,7 @@ driveItemVersion リソースで使用可能なタスクを次に示します。
 
 |            共通タスク             |         HTTP メソッド         |
 | :--------------------------------- | :-------------------------- |
-| [バージョンの一覧表示][version-list]      | `GET /drive/items/{item-id}/versions`  |
+| [バージョンを一覧表示する][version-list]      | `GET /drive/items/{item-id}/versions`  |
 | [バージョンの取得][version-get]         | `GET /drive/items/{item-id}/versions/{version-id}`     |
 | [コンテンツの取得][content-get]        | `GET /drive/items/{item-id}/versions/{version-id}/content` |
 | [バージョンの復元][version-restore] | `POST /drive/items/{item-id}/versions/{version-id}/restoreversion` |
@@ -57,9 +59,9 @@ driveItemVersion リソースで使用可能なタスクを次に示します。
 
 |      プロパティ名       |                         種類                         |                               説明                               |
 | :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
-| **id**                   | string                                               | バージョンの ID。 読み取り専用。                                       |
+| **id**                   | string                                               | バージョンの ID。 読み取り専用です。                                       |
 | **lastModifiedBy**       | [IdentitySet](../resources/identityset.md)           | 最後にバージョンを変更したユーザーの ID。 読み取り専用です。        |
-| **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | バージョンが最後に変更された日時。 読み取り専用。                 |
+| **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | バージョンが最後に変更された日時。 読み取り専用です。                 |
 | **publication**          | [PublicationFacet](../resources/publicationfacet.md) | 特定のバージョンのパブリケーション ステータスを示します。 読み取り専用です。 |
 | **size**                 | Int64                                                | アイテムのこのバージョンのコンテンツ ストリームのサイズを示します。  |
 | **content**              | ストリーム                                               | アイテムのこのバージョンのコンテンツストリーム。                        |

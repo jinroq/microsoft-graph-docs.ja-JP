@@ -4,12 +4,13 @@ description: Outlook デスクトップ版ごとの、それぞれ別個のユ�
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 74331d60b04c670d51ec8d1990b8ee666e5dc884
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: fc0bb530bbc3a5940d663810d6c396ffd740cead
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35880401"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025128"
 ---
 # <a name="reportroot-getemailappusageversionsusercounts"></a>reportRoot: getEmailAppUsageVersionsUserCounts
 

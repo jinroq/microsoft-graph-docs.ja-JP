@@ -4,12 +4,13 @@ description: 指定した範囲からのオフセットで範囲を表すオブ�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 86db999cd39275ebb38c653e6dc4dda69fd87433
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: fe1c368eff0c03df0fe454684139720ec8360ac5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32525517"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025289"
 ---
 # <a name="range-offsetrange"></a>範囲:OffsetRange
 

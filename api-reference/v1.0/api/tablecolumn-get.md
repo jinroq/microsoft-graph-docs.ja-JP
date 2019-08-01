@@ -4,12 +4,13 @@ description: tablecolumn オブジェクトのプロパティと関係を取得�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: ac48491fb190016c30610365339c9f12276a77d8
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 048e07c2439d007334380fb8de9746c7d2069e50
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35886618"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36024426"
 ---
 # <a name="get-tablecolumn"></a>TableColumn を取得する
 
