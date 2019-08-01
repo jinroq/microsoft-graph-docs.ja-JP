@@ -4,16 +4,17 @@ description: sharedPCConfiguration を削除します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bee9e1927dba9db7df0b02bfdfbf567fd699ca0d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: c70417b0c281992d8c0f4df6d67ab06c1bcff8cf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32572599"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36020294"
 ---
 # <a name="delete-sharedpcconfiguration"></a>sharedPCConfiguration の削除
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [sharedPCConfiguration](../resources/intune-deviceconfig-sharedpcconfiguration.md) を削除します。
 

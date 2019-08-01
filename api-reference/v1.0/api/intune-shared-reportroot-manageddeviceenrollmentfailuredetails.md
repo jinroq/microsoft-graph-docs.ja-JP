@@ -4,16 +4,17 @@ description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: c234181bb70ca0df11cff01b67eb7d6fa60e27ca
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: da38aa1fb497bc5fb1225f2435ed2bd9c4e4b3c3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576798"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025849"
 ---
 # <a name="manageddeviceenrollmentfailuredetails-function"></a>managedDeviceEnrollmentFailureDetails 関数
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 まだ文書化されていません
 
@@ -66,7 +67,7 @@ GET https://graph.microsoft.com/v1/reports/managedDeviceEnrollmentFailureDetails
 ```
 
 ### <a name="response"></a>応答
-簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 すべてのプロパティは実際の呼び出しから返されます。
+簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
 
 ``` http
 HTTP/1.1 200 OK

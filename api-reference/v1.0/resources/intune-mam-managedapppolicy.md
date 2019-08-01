@@ -4,16 +4,17 @@ description: ManagedAppPolicy リソースは、プラットフォーム特有�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2615d1331c024c1a04bc7db618e36966cc5bcdff
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 4aef589e8667dd3002175b478203384cd7cb2181
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32465343"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36037983"
 ---
 # <a name="managedapppolicy-resource-type"></a>managedAppPolicy リソースの種類
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 ManagedAppPolicy リソースは、プラットフォーム特有のポリシーの基本型を表します。
 
@@ -28,10 +29,10 @@ ManagedAppPolicy リソースは、プラットフォーム特有のポリシー
 |プロパティ|型|説明|
 |:---|:---|:---|
 |displayName|String|ポリシーの表示名。|
-|説明|String|ポリシーの説明。|
+|description|String|ポリシーの説明。|
 |createdDateTime|DateTimeOffset|ポリシーが作成された日時。|
 |lastModifiedDateTime|DateTimeOffset|ポリシーが変更された最終日時。|
-|id|String|エンティティのキー。|
+|id|文字列|エンティティのキー。|
 |version|String|エンティティのバージョン。|
 
 ## <a name="relationships"></a>リレーションシップ

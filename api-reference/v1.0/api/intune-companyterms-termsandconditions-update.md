@@ -4,16 +4,17 @@ description: termsAndConditions オブジェクトのプロパティを更新し
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 708d59565896bb7d4782c156dd4af3ff5599b82c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: b940a595139b2309f5be4678c156f82eeabbe63a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32580234"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36019836"
 ---
 # <a name="update-termsandconditions"></a>Update termsAndConditions
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) オブジェクトのプロパティを更新します。
 
@@ -49,11 +50,11 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStat
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|T&C ポリシーの一意識別子。|
+|id|文字列|T&C ポリシーの一意識別子。|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。|
-|displayName|String|T&C ポリシー用に管理者が提供した名前。 |
-|説明|String|管理者が提供した T&C ポリシーの説明。|
+|displayName|文字列|T&C ポリシー用に管理者が提供した名前。 |
+|description|String|管理者が提供した T&C ポリシーの説明。|
 |title|String|管理者が提供した契約条件のタイトル。 ユーザーが T&C ポリシーを承諾する際のプロンプトに表示されます。|
 |bodyText|String|管理者が提供する契約条件の本文で、通常は条件そのものです。 ユーザーが T&C ポリシーを承諾する際のプロンプトに表示されます。|
 |acceptanceStatement|String|使用条件に関する、管理者指定の説明内容です。通常は、T&C ポリシーに定められた使用条件を受け入れることの意味を記載します。 ユーザーが T&C ポリシーを承諾する際のプロンプトに表示されます。|

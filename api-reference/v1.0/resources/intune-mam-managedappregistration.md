@@ -4,16 +4,17 @@ description: ManagedAppEntity は、アプリ管理ワークフロー下にあ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 559ce934cf669241d4bee1db4e740d7806020f94
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 7a7b10a7d960c449aee4f911f4992955bde18724
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345758"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36037913"
 ---
 # <a name="managedappregistration-resource-type"></a>managedAppRegistration リソース タイプ
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 ManagedAppEntity は、アプリ管理ワークフロー下にある他のすべてのエンティティ タイプの基本型です。
 ManagedAppRegistration リソースは、組織のメンバーに使用されるアプリの詳細を管理機能と共に示します。
@@ -36,10 +37,10 @@ ManagedAppRegistration リソースは、組織のメンバーに使用される
 |deviceType|String|ホスト デバイスの種類|
 |deviceTag|String|アプリ管理 SDK が生成したタグ。同じデバイスでホストされているアプリの関連付けに役立ちます。 あらゆる状況でのアプリの関連付けを保証するものではありません。|
 |deviceName|String|ホスト デバイスの名前|
-|flaggedReasons|[managedappflaggedreason](../resources/intune-mam-managedappflaggedreason.md)コレクション|アプリ登録にフラグが設定された、0 個以上の理由。 例: ルートのデバイスで実行されているアプリ|
+|flaggedReasons|[Managedappflaggedreason](../resources/intune-mam-managedappflaggedreason.md)コレクション|アプリ登録にフラグが設定された、0 個以上の理由。 例: ルートのデバイスで実行されているアプリ|
 |userId|String|このアプリの登録が属するユーザー ID。|
 |appIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|アプリ パッケージの識別子|
-|id|String|エンティティのキー。|
+|id|文字列|エンティティのキー。|
 |version|文字列型 (String)|エンティティのバージョン。|
 
 ## <a name="relationships"></a>リレーションシップ

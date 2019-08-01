@@ -4,16 +4,17 @@ description: OMA 設定の DateTime の定義です。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 20bc82e88480dca1df727e299e62c4274002176f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 71347ecd4a566409d1043c788df70601ffc70a2a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32585399"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36028029"
 ---
 # <a name="omasettingdatetime-resource-type"></a>omaSettingDateTime リソースの種類
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 OMA 設定の DateTime の定義です。
 
@@ -24,7 +25,7 @@ OMA 設定の DateTime の定義です。
 |プロパティ|型|説明|
 |:---|:---|:---|
 |displayName|String|表示名。 [omaSetting](../resources/intune-deviceconfig-omasetting.md) からの継承|
-|説明|String|説明。 [omaSetting](../resources/intune-deviceconfig-omasetting.md) からの継承|
+|description|String|説明。 [omaSetting](../resources/intune-deviceconfig-omasetting.md) からの継承|
 |omaUri|文字列型 (String)|OMA。 [omaSetting](../resources/intune-deviceconfig-omasetting.md) からの継承|
 |値|DateTimeOffset|値。|
 

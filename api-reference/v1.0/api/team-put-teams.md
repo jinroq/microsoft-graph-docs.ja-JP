@@ -4,12 +4,13 @@ description: グループの下に新しいチームを作成します。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: dbd5ee37c101682f4b7352da68ec930074b4a2d2
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+doc_type: apiPageType
+ms.openlocfilehash: 53651a230a6ab6a9d45fb37ec1b587d43aa07e4d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932554"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36021173"
 ---
 # <a name="create-team"></a>チームを作成する
 

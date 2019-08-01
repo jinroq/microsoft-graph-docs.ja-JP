@@ -3,12 +3,14 @@ title: アクティビティフィード REST API を使用する
 description: 'Microsoft Graph のアクティビティフィード API を使用して、デバイスとプラットフォーム間でユーザーのアクティビティを再開できます。 アクティビティフィード API 要求は、委任されたアクセス許可とユーザーアクティビティのアクセス許可を使用してユーザーの代理として実行されます。これは、個人用アカウントまたは職場アカウントまたは学校アカウントで使用できます。 '
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 00b1ac90bd4a1a9fe7cef2a9ffaebcebc2d8d5f4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+doc_type: conceptualPageType
+ms.openlocfilehash: 927e83a57a3b199bddbc05394c58facfff89b25c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569474"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030129"
 ---
 # <a name="use-the-activity-feed-rest-api"></a>アクティビティフィード REST API を使用する
 
@@ -42,7 +44,7 @@ Each activity represents a unique...
 
 *グループ作業のシナリオ:* 複数のユーザーが同じ操作 (Word 文書など) に対して作業を行っている場合、最後に編集した後に別のユーザーがドキュメントを変更した可能性があります。 この場合、アプリ開発者は、ドキュメントに加えられた変更を反映するために、アクティビティ内のビジュアル要素を更新する必要があります。 これを行うために、アプリは新しい履歴アイテムを作成せずに既存のアクティビティを更新する場合があります。 
 
->**注:** web アプリケーションのアクティビティを発行している場合は、アクティビティごと`activationURL` `fallbackURL`にとの両方を含めることが重要です。 アクティビティは、Windows タイムラインのような Microsoft エクスペリエンスから期待したとおりにユーザーをアプリに戻します。 
+>**注:** Web アプリケーションのアクティビティを発行している場合は、アクティビティごと`activationURL` `fallbackURL`にとの両方を含めることが重要です。 アクティビティは、Windows タイムラインのような Microsoft エクスペリエンスから期待したとおりにユーザーをアプリに戻します。 
 
 ## <a name="app-interaction-patterns-and-user-activities"></a>アプリの相互作用パターンとユーザーアクティビティ 
 作成するユーザーアクティビティは、アプリの対話パターンに応じて異なります。 すべてのアプリは異なりますが、ほとんどは次の相互作用パターンのいずれかに分類されます。 
@@ -59,7 +61,7 @@ Each activity represents a unique...
 ## Common use cases 
 -->
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - ユーザーが重要なタスクを再開できるようにするには、[アクティビティリソース](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/projectrome_activity)を参照し、アプリのアクティビティを定義します。
 - アクティビティを**ポップ**するためのアイデアについては、[アダプティブカードサンプル](https://adaptivecards.io/samples/)サンプルを参照してください。  

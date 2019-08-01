@@ -4,16 +4,17 @@ description: windowsInformationProtectionAppLockerFile オブジェクトのプ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 97afdcc7a7d0f0025b19ed33e9df2e10e9b275fa
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 9401e7b56726b59afa90c2764e78281ee152695d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32453596"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996540"
 ---
 # <a name="update-windowsinformationprotectionapplockerfile"></a>windowsInformationProtectionAppLockerFile の更新
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) オブジェクトのプロパティを更新します。
 
@@ -54,7 +55,7 @@ PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsIn
 |displayName|String|フレンドリ名|
 |fileHash|String|ファイルの SHA256 ハッシュ|
 |file|Binary|バイト配列のファイル|
-|id|String|エンティティのキー。|
+|id|文字列|エンティティのキー。|
 |version|String|エンティティのバージョン。|
 
 

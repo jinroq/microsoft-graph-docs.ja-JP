@@ -4,16 +4,17 @@ description: androidCompliancePolicy オブジェクトのプロパティを更�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 86a50cade8b004ae25b5567f86efe85d58804115
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 77177b4f2a2b8df4b6569a697f767b57b3166459
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32524384"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36019717"
 ---
 # <a name="update-androidcompliancepolicy"></a>Update androidCompliancePolicy
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [androidCompliancePolicy](../resources/intune-deviceconfig-androidcompliancepolicy.md) オブジェクトのプロパティを更新します。
 
@@ -48,32 +49,32 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列型 (String)|エンティティのキー。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
+|id|文字列|エンティティのキー。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |description|String|管理者が指定した、デバイス構成についての説明。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |displayName|String|管理者が指定した、デバイス構成の名前。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
-|passwordRequired|ブール値|デバイスのロックを解除するパスワードを要求します。|
+|passwordRequired|Boolean|デバイスのロックを解除するパスワードを要求します。|
 |passwordMinimumLength|Int32|パスワードの最小文字数。 有効な値は 4 から 16 までです|
-|passwordRequiredType|[androidrequiredpasswordtype](../resources/intune-deviceconfig-androidrequiredpasswordtype.md)|パスワードの文字の種類。 可能な値は、`deviceDefault`、`alphabetic`、`alphanumeric`、`alphanumericWithSymbols`、`lowSecurityBiometric`、`numeric`、`numericComplex`、`any` です。|
+|passwordRequiredType|[androidRequiredPasswordType](../resources/intune-deviceconfig-androidrequiredpasswordtype.md)|パスワードの文字の種類。 可能な値は、`deviceDefault`、`alphabetic`、`alphanumeric`、`alphanumericWithSymbols`、`lowSecurityBiometric`、`numeric`、`numericComplex`、`any` です。|
 |passwordMinutesOfInactivityBeforeLock|Int32|パスワードが要求されるまでの非アクティブ時間 (分)。|
 |passwordExpirationDays|Int32|パスワードの有効期限が切れるまでの日数。 有効な値は 1 から 365 までです|
 |passwordPreviousPasswordBlockCount|Int32|禁止する、以前のパスワードの数です。 有効な値は 1 から 24 までです|
-|securityPreventInstallAppsFromUnknownSources|ブール値|デバイスが不明なソースからのアプリのインストールを許可しないことを要求します。|
-|securityDisableUsbDebugging|ブール値|Android デバイスでの USB デバッグを無効にします。|
-|securityRequireVerifyApps|ブール値|Android の検証アプリ機能をオンにするよう要求します。|
-|deviceThreatProtectionEnabled|ブール値|デバイスの脅威保護が有効になっていることを要求します。|
+|securityPreventInstallAppsFromUnknownSources|Boolean|デバイスが不明なソースからのアプリのインストールを許可しないことを要求します。|
+|securityDisableUsbDebugging|Boolean|Android デバイスでの USB デバッグを無効にします。|
+|securityRequireVerifyApps|Boolean|Android の検証アプリ機能をオンにするよう要求します。|
+|deviceThreatProtectionEnabled|Boolean|デバイスの脅威保護が有効になっていることを要求します。|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Mobile Threat Protection に、コンプライアンス違反をレポートするための最小のリスク レベルを要求します。 可能な値は、`unavailable`、`secured`、`low`、`medium`、`high`、`notSet` です。|
-|securityBlockJailbrokenDevices|ブール値|デバイスの脱獄またはルート化を認めません。|
+|securityBlockJailbrokenDevices|Boolean|デバイスの脱獄またはルート化を認めません。|
 |osMinimumVersion|String|Android の最小バージョン。|
 |osMaximumVersion|文字列型 (String)|Android の最大バージョン。|
 |minAndroidSecurityPatchLevel|String|Android セキュリティ パッチの最小レベル。|
-|storageRequireEncryption|ブール値|Android デバイスでの暗号化を要求します。|
-|securityRequireSafetyNetAttestationBasicIntegrity|ブール値|デバイスが SafetyNet の基本整合性チェックに合格することを要求します。|
-|securityRequireSafetyNetAttestationCertifiedDevice|ブール値|デバイスが SafetyNet の認定デバイス チェックに合格することを要求します。|
-|securityRequireGooglePlayServices|ブール値|Google Play 開発者サービスがデバイスにインストールされて有効になっていることを要求します。|
-|securityRequireUpToDateSecurityProviders|ブール値|デバイスに最新のセキュリティ プロバイダーが必要です。 デバイスで Google Play 開発者サービスが有効かつ最新の状態になっている必要があります。|
+|storageRequireEncryption|Boolean|Android デバイスでの暗号化を要求します。|
+|securityRequireSafetyNetAttestationBasicIntegrity|Boolean|デバイスが SafetyNet の基本整合性チェックに合格することを要求します。|
+|securityRequireSafetyNetAttestationCertifiedDevice|Boolean|デバイスが SafetyNet の認定デバイス チェックに合格することを要求します。|
+|securityRequireGooglePlayServices|Boolean|Google Play 開発者サービスがデバイスにインストールされて有効になっていることを要求します。|
+|securityRequireUpToDateSecurityProviders|Boolean|デバイスに最新のセキュリティ プロバイダーが必要です。 デバイスで Google Play 開発者サービスが有効かつ最新の状態になっている必要があります。|
 |securityRequireCompanyPortalAppIntegrity|Boolean|デバイスが会社のポータル クライアント アプリのランタイム整合性チェックに合格することを要求します。|
 
 

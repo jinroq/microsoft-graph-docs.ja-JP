@@ -4,16 +4,17 @@ description: deviceManagementExchangeConnector オブジェクトのプロパテ
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 144b4e8c0e07b3115d4cc56a0e5a6d9005684578
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 847494e92abbd122263cbe2fbd7b658d31fa60a1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561594"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996435"
 ---
 # <a name="list-devicemanagementexchangeconnectors"></a>deviceManagementExchangeConnectors のリスト
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md) オブジェクトのプロパティとリレーションシップをリストします。
 

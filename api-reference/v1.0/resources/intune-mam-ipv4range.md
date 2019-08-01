@@ -4,16 +4,17 @@ description: IPv4 の範囲定義。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 14cb0d88013b13f57b186f5388d5ac89f60db043
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 40845b43a50391613e23bf1c4885c382385b4f5e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32465525"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36038138"
 ---
 # <a name="ipv4range-resource-type"></a>iPv4Range リソースの種類
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 IPv4 の範囲定義。
 

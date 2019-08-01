@@ -3,12 +3,14 @@ title: サブスクリプションを作成する
 description: Microsoft Graph のデータが変更されたときに通知を受信するため、リスナー アプリケーションに登録します。
 localization_priority: Priority
 author: piotrci
-ms.openlocfilehash: dfb96444206cef77f4e58e35968a20168c868432
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.prod: ''
+doc_type: apiPageType
+ms.openlocfilehash: d0658456a52d9eacac29baaf68903ca944f23fa1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35894344"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36024610"
 ---
 # <a name="create-subscription"></a>サブスクリプションを作成する
 
@@ -53,7 +55,7 @@ POST /subscriptions
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

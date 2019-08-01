@@ -3,12 +3,14 @@ title: アクティビティを作成または置換する
 description: アプリの既存のユーザーアクティビティを新規作成するか、置き換えます。 ユーザーアクティビティとそれに関連する**履歴項目**を1つの要求で作成する場合は、deep insert を使用できます。
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 3f0864d5bdd8e393a21df49ec3fade6930fdcbde
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+doc_type: apiPageType
+ms.openlocfilehash: 8f80d17f64b4f04816670d8e007ca7db82755c0c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575311"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025373"
 ---
 # <a name="create-or-replace-an-activity"></a>アクティビティを作成または置換する
 
@@ -32,7 +34,7 @@ ms.locfileid: "32575311"
 PUT /me/activities/{appActivityId}
 ```
 
-> **注:** url の appactivityid は、url セーフである必要があります (RFC 2396 の予約されていない文字を除くすべての文字を16進表記に変換する必要があります) が、元の appactivityid を url セーフにする必要はありません。
+> **注:** URL の appActivityId は、URL セーフである必要があります (RFC 2396 の予約されていない文字を除くすべての文字を16進表記に変換する必要があります) が、元の appActivityId を URL セーフにする必要はありません。
 
 ## <a name="request-headers"></a>要求ヘッダー
 

@@ -4,16 +4,17 @@ description: 設定状態の要約に対する、デバイス コンプライア
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 429ee25a57383b7356948242ce39dcb45b4067ba
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: ed7427e05e8d48f090f991b45e3a46cbc2985b01
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534746"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36031116"
 ---
 # <a name="settingstatedevicesummary-resource-type"></a>settingStateDeviceSummary リソースの種類
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 設定状態の要約に対する、デバイス コンプライアンス ポリシーおよび構成
 

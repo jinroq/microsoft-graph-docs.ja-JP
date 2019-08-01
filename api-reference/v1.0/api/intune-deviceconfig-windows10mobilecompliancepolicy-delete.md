@@ -4,16 +4,17 @@ description: windows10MobileCompliancePolicy を削除します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3aa7d8c20f0474145124828afceddfe2d22002fb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 0ea7a59b4514a62d6fb7b2f4d3ea41edebde82d3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32459718"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36020156"
 ---
 # <a name="delete-windows10mobilecompliancepolicy"></a>windows10MobileCompliancePolicy の削除
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [windows10MobileCompliancePolicy](../resources/intune-deviceconfig-windows10mobilecompliancepolicy.md) を削除します。
 

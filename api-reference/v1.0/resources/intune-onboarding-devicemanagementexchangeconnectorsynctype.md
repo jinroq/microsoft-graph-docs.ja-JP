@@ -4,16 +4,17 @@ description: 要求された Exchange Connector の同期の種類。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cfdd1da2ecec6fb7848787386991ee09741d0b67
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 0066b6b4fce924df8c5101228db8868da7e1b743
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32565931"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36037444"
 ---
 # <a name="devicemanagementexchangeconnectorsynctype-enum-type"></a>deviceManagementExchangeConnectorSyncType 列挙型
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 要求された Exchange Connector の同期の種類。
 
@@ -21,7 +22,7 @@ ms.locfileid: "32565931"
 |メンバー|値|説明|
 |:---|:---|:---|
 |fullSync|.0|Exchange のすべてのデバイスを検出します。|
-|deltasync]|1 |[差分同期] ウィンドウで更新された Exchange のデバイスのみを検出します。|
+|Deltasync]|1-d|[差分同期] ウィンドウで更新された Exchange のデバイスのみを検出します。|
 
 
 

@@ -4,27 +4,28 @@ description: iOS モバイル アプリに必要な最小限のオペレーテ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7490ad7b27d55fa6f2b7c6de12083025e7b4ac93
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: da56780e66e88baaa074c3106997e3b4a3cc3b64
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523883"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032348"
 ---
 # <a name="iosminimumoperatingsystem-resource-type"></a>iosMinimumOperatingSystem リソースの種類
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 iOS モバイル アプリに必要な最小限のオペレーティング システムのプロパティが含まれます。
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|v8_0|ブール値|バージョン 8.0 以降。|
-|v9_0|ブール値|バージョン 9.0 以降。|
-|v10_0|ブール値|バージョン 10.0 以降。|
+|v8_0|Boolean|バージョン 8.0 以降。|
+|v9_0|Boolean|バージョン 9.0 以降。|
+|v10_0|Boolean|バージョン 10.0 以降。|
 |v11_0|ブール型 (Boolean)|バージョン 11.0 以降。|
-|v12_0|ブール値|バージョン12.0 以降。|
+|v12_0|Boolean|バージョン12.0 以降。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

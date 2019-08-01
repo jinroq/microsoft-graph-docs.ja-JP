@@ -4,16 +4,17 @@ description: Windows 情報保護 AppLocker ファイル
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: df994cc8e4dcf698656f617ad2e5959a5ded3f83
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: b50c174f02d8389a61843a2e8fe11729c240c910
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561468"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36037745"
 ---
 # <a name="windowsinformationprotectionapplockerfile-resource-type"></a>windowsInformationProtectionAppLockerFile リソースの種類
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 Windows 情報保護 AppLocker ファイル
 
@@ -32,7 +33,7 @@ Windows 情報保護 AppLocker ファイル
 |displayName|String|フレンドリ名|
 |fileHash|String|ファイルの SHA256 ハッシュ|
 |file|Binary|バイト配列のファイル|
-|id|String|エンティティのキー。|
+|id|文字列|エンティティのキー。|
 |version|String|エンティティのバージョン。|
 
 ## <a name="relationships"></a>リレーションシップ

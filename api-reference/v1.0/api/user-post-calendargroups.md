@@ -4,12 +4,13 @@ description: この API を使用して、新しい CalendarGroup を作成し�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: bba96d63f90577c1d1c5c8604f5865c0cb2c483d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 8f8bf6ba819819b5bdd3fa74e9dc574a09d4949f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35882789"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36026727"
 ---
 # <a name="create-calendargroup"></a>CalendarGroup を作成する　
 

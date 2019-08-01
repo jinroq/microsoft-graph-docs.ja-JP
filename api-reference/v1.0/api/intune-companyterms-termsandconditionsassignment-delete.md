@@ -4,16 +4,17 @@ description: termsAndConditionsAssignment を削除します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 67f8c2a43526bd308b653e3a71a57812dce3f7cd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 7242a8427d5bb4256bc74ed78203515eb868241b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32580304"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36020445"
 ---
 # <a name="delete-termsandconditionsassignment"></a>termsAndConditionsAssignment の削除
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [termsAndConditionsAssignment](../resources/intune-companyterms-termsandconditionsassignment.md) を削除します。
 
