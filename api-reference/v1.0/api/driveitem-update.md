@@ -5,12 +5,14 @@ ms.date: 09/10/2017
 title: ファイルまたはフォルダーを更新する
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 7ec2ff2c438588074783e953598509eed1730f90
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: DriveItem のメタデータを、ID またはパスで更新します。
+doc_type: apiPageType
+ms.openlocfilehash: f1ca58a05bae68bd945d8060820f2b590c659b9b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35881614"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015328"
 ---
 # <a name="update-driveitem-properties"></a>DriveItem プロパティを更新する
 
@@ -42,7 +44,7 @@ PATCH /users/{user-id}/drive/items/{item-id}
 
 ## <a name="optional-request-headers"></a>オプションの要求ヘッダー
 
-| 名前          | 型   | 説明                                                                                                                                                         |
+| 名前          | 種類   | 説明                                                                                                                                                         |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-match      | String | この要求ヘッダーが含まれていて、指定された eTag (または cTag) がフォルダーの現在の eTag に一致しない場合には、`412 Precondition Failed` 応答が返されます。 |
 

@@ -5,12 +5,14 @@ ms.date: 09/10/2017
 title: 共有アイテムのファイルの表示
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: b2aabc84b0842331e6a52677f347a86c0f17740d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: ドライブの所有者と共有されている、DriveItem リソースのコレクションを取得します。
+doc_type: apiPageType
+ms.openlocfilehash: fe55d08eb0f5e9d9c264b3457ac77bfa693ac471
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35883067"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36016473"
 ---
 # <a name="list-items-shared-with-the-signed-in-user"></a>サインイン ユーザーと共有しているアイテムを一覧表示する
 

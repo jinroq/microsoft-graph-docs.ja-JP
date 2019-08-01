@@ -5,12 +5,13 @@ title: DriveItem リソース型
 description: アイテムは、OneDrive API での主要なデータ モデルです。 すべてがアイテムです。
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 2d80c6cf2b121f606938e533a6428e2d85d54033
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+doc_type: resourcePageType
+ms.openlocfilehash: a098da44ea4d6861a7d4372c907452721bfc881b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968794"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029373"
 ---
 # <a name="driveitem-resource-type"></a>driveItem リソース型
 
@@ -105,7 +106,8 @@ URL は短い期間 (1 時間) だけ使用でき、その後は無効になり�
 
 以下は、**driveItem** リソースの JSON 表記です。
 
-**driveItem** リソースは [**baseItem**][baseItem] から派生し、そのリソースからプロパティを継承します。
+
+            **driveItem** リソースは [**baseItem**][baseItem] から派生し、そのリソースからプロパティを継承します。
 
 <!-- { "blockType": "resource", "@type": "microsoft.graph.driveItem", "@type.aka": "oneDrive.item",
        "baseType": "microsoft.graph.baseItem",
@@ -175,7 +177,7 @@ URL は短い期間 (1 時間) だけ使用でき、その後は無効になり�
 |:---------------------------------------------------------|:------------|:------------
 | [アイテムを取得する](../api/driveitem-get.md)                      | driveItem |ドライブ 内の DriveItem 用のメタデータを取得します。
 | [分析を取得する][]                                        | [itemAnalytics][] | このリソースの分析を取得します。 
-| [間隔によりアクティビティを取得する][]                           | [itemActivityStat][] | 指定した時間間隔内に itemActivityStats のコレクションを取得します。
+| [間隔ごとにアクティビティを取得する][]                           | [itemActivityStat][] | 指定した時間間隔内に itemActivityStats のコレクションを取得します。
 | [子を一覧表示する](../api/driveitem-list-children.md)       | DriveItem のコレクション | DriveItem の子リレーションシップで DriveItems のコレクションを返します。
 | [バージョンを一覧表示する](../api/driveitem-list-versions.md)       | [DriveItemVersion][] のコレクション | 現在のユーザーのドライブ内のファイルのバージョンを取得します。
 | [アイテムを作成する](../api/driveitem-post-children.md)         | driveItem | 指定したドライブで driveItem を作成します。
