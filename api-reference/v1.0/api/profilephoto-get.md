@@ -2,12 +2,15 @@
 title: 写真を取得する
 description: 指定した profilePhoto またはそのメタデータ (profilePhoto プロパティ) を取得します。
 localization_priority: Priority
-ms.openlocfilehash: 3ab580436a9262e60ef9ab07bc4d61d9ee6f8d04
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+author: ''
+ms.prod: ''
+doc_type: apiPageType
+ms.openlocfilehash: ae531d0e5bd8aa759f0c72a1fc3ac420467127e1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620613"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36022300"
 ---
 # <a name="get-photo"></a>写真を取得する
 
@@ -78,7 +81,7 @@ GET /groups/{id}/photos/{size}
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
