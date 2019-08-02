@@ -4,16 +4,17 @@ description: deviceEnrollmentWindowsHelloForBusinessConfiguration オブジェ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3225f7fe36f5ec8a66df8424a06d8569b7c92efd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 28524671e2e92bcfc62cf1042b42c12f3329c9b7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561629"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996505"
 ---
 # <a name="update-deviceenrollmentwindowshelloforbusinessconfiguration"></a>deviceEnrollmentWindowsHelloForBusinessConfiguration の更新
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [deviceEnrollmentWindowsHelloForBusinessConfiguration](../resources/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration.md) オブジェクトのプロパティを更新します。
 
@@ -48,19 +49,19 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
+|id|文字列|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
 |displayName|String|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
-|説明|String|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
+|description|String|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
 |priority|Int32|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
 |version|Int32|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
 |pinMinimumLength|Int32|まだ文書化されていません|
 |pinMaximumLength|Int32|まだ文書化されていません|
-|pinUppercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|まだ文書化されていません。 使用可能な値は、`allowed`、`required`、`disallowed` です。|
-|pinLowercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|まだ文書化されていません。 使用可能な値は、`allowed`、`required`、`disallowed` です。|
-|pinSpecialCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|まだ文書化されていません。 使用可能な値は、`allowed`、`required`、`disallowed` です。|
-|state|[購入](../resources/intune-onboarding-enablement.md)|まだ文書化されていません。 使用可能な値は、`notConfigured`、`enabled`、`disabled` です。|
+|pinUppercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|まだ文書化されていません。 可能な値は、`allowed`、`required`、`disallowed` です。|
+|pinLowercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|まだ文書化されていません。 可能な値は、`allowed`、`required`、`disallowed` です。|
+|pinSpecialCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|まだ文書化されていません。 可能な値は、`allowed`、`required`、`disallowed` です。|
+|state|[購入](../resources/intune-onboarding-enablement.md)|まだ文書化されていません。 可能な値は、`notConfigured`、`enabled`、`disabled` です。|
 |securityDeviceRequired|ブール型 (Boolean)|まだ文書化されていません|
 |unlockWithBiometricsEnabled|ブール型 (Boolean)|まだ文書化されていません|
 |remotePassportEnabled|ブール型 (Boolean)|まだ文書化されていません|

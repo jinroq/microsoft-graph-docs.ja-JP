@@ -4,12 +4,13 @@ description: chartseries オブジェクトのプロパティと関係を取得�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: a0c44f015417c1d1a9d29fcf9dc46c47234177d1
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: b51de8ab91b0759080f6bd8c4a5b1ee6052bfb52
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35891477"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36003435"
 ---
 # <a name="get-chartseries"></a>Get ChartSeries
 

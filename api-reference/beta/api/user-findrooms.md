@@ -4,12 +4,13 @@ description: 'ユーザーのテナント内、または特定の部屋の一覧
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f8a106d6e7f33dd8da4efb7d78a3dee589d2af97
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 649bc89181071351ead84bde71aaba573ad812ca
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35867725"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987839"
 ---
 # <a name="user-findrooms"></a>user: findRooms
 
@@ -54,7 +55,7 @@ GET /users/<id>/findRooms(RoomList='{room_list_emailAddress}')
 | RoomList | string | 部屋の一覧に関連付けられている SMTP アドレス。それぞれの部屋の一覧は、SMTP アドレスを含んでいる [emailAddress](../resources/emailaddress.md) インスタンスによって表されます。 |
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明 |
+| 名前       | 種類 | 説明 |
 |:---------------|:----------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type  | string  | application/json. Required. |

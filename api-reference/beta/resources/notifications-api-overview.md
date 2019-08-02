@@ -3,12 +3,14 @@ title: Microsoft Graph の REST API 通知を使用する
 description: プッシュ通知をユーザーに送信するには、Microsoft Graph の API 通知を使用できます。 ターゲットのユーザー アカウントに通知を送信し、プラットフォームはすべてのデバイスのエンドポイントに通知を配布します。 API 通知の要求は、ユーザーの代理アクセス権と [アクセス権許可の通知]( /graph/permissions_reference)を経由して、Microsoft アカウント、または職場 / 学校のアカウントのどちらでも使用することができます。
 localization_priority: Priority
 ms.prod: project-rome
-ms.openlocfilehash: 28aa795b1df9b2f4817c69332dd8bc9bf3afb172
-ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
+doc_type: conceptualPageType
+author: ''
+ms.openlocfilehash: 2faaa7272ce1a093fc855d432c1992b9de150965
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34422522"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009588"
 ---
 # <a name="use-the-notifications-rest-api-in-microsoft-graph"></a>Microsoft Graph の REST API 通知を使用する
 

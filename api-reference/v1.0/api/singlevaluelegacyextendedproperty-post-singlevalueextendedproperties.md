@@ -2,12 +2,15 @@
 title: 単一値の拡張プロパティを作成する
 description: 'リソースの新規または既存のインスタンスに、1 つ以上の単一値の拡張プロパティを作成します。 '
 localization_priority: Normal
-ms.openlocfilehash: cf98c3e2b43192e5c8b636d2f67fc471af82da6b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: apiPageType
+ms.openlocfilehash: c90c8fca501e813635e3e3b208c1a5be6808b728
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32520824"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35975593"
 ---
 # <a name="create-single-value-extended-property"></a>単一値の拡張プロパティを作成する
 
@@ -18,7 +21,7 @@ ms.locfileid: "32520824"
 - [calendar](../resources/calendar.md)
 - [contact](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md) 
-- [イベント](../resources/event.md)
+- [event](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
 - [message](../resources/message.md)
 
@@ -36,12 +39,12 @@ ms.locfileid: "32520824"
 | サポートされているリソース | 委任 (職場または学校のアカウント) | 委任 (個人用 Microsoft アカウント) | アプリケーション |
 |:-----|:-----|:-----|:-----|
 | [calendar](../resources/calendar.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
-| [連絡先](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [contactFolder](../resources/contactfolder.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [イベント](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite |  Calendars.ReadWrite|
-| グループ [calendar](../resources/calendar.md) | Group.ReadWrite.All | 非サポート | 非サポート |
-| グループ [event](../resources/event.md) | Group.ReadWrite.All | 非サポート | 非サポート |
-| グループ [post](../resources/post.md) | Group.ReadWrite.All | 非サポート | 非サポート |
+| グループ [calendar](../resources/calendar.md) | Group.ReadWrite.All | サポート対象外 | 非サポート |
+| グループ [event](../resources/event.md) | Group.ReadWrite.All | サポート対象外 | 非サポート |
+| グループ [post](../resources/post.md) | Group.ReadWrite.All | サポート対象外 | 非サポート |
 | [mailFolder](../resources/mailfolder.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
 | [メッセージ](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
 

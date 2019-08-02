@@ -4,12 +4,13 @@ description: 予定表内のイベントです。
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 0d8e25276613461098f2194daa60bf260cc7887b
-ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
+doc_type: resourcePageType
+ms.openlocfilehash: 16894d38eb5bf211a55a44181e7458b1cb9196e6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2019
-ms.locfileid: "35805271"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972083"
 ---
 # <a name="event-resource-type"></a>event リソースの種類
 

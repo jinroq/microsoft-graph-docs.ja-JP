@@ -4,12 +4,13 @@ description: 指定したチームのプロパティとリレーションシッ�
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4a82949f717fd815aadb6423a7885b3ebe1da769
-ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
+doc_type: apiPageType
+ms.openlocfilehash: 572390cfffbf3f6e0e643d13acc76bc469d4c982
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34812734"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987951"
 ---
 # <a name="get-team"></a>チームを取得する
 

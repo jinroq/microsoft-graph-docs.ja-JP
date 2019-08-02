@@ -5,12 +5,13 @@ title: Drive リソース型
 description: ユーザーの OneDrive または SharePoint のドキュメント ライブラリを表すドライブ リソース
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: f47bacdac64a535ba3d7ff695d1aa0c1c46b06b8
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+doc_type: resourcePageType
+ms.openlocfilehash: 689c020a0c717fb395d13822c2c8de8f265988a3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932012"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012724"
 ---
 # <a name="drive-resource-type"></a>Drive リソース型
 

@@ -4,16 +4,17 @@ description: 指定されたデバイスのデバイス構成設定の状態。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d79d4c35572c98c82f80f8903d42cfa3b983c2e9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: c50ed17421b88f2cb6137458ff853bfa92796c2b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573446"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36031669"
 ---
 # <a name="deviceconfigurationsettingstate-resource-type"></a>deviceConfigurationSettingState リソースの種類
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 指定されたデバイスのデバイス構成設定の状態。
 
@@ -33,7 +34,7 @@ ms.locfileid: "32573446"
 |sources|[settingSource](../resources/intune-deviceconfig-settingsource.md) コレクション|投稿ポリシー|
 |currentValue|String|デバイスに関する設定の現在の値|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記

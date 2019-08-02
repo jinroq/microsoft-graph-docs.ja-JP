@@ -4,16 +4,17 @@ description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bb6186afa6e535f6089709572205b85015bb29d5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 1be4871c1ab74cfbb716a2d042e116a452d32851
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32453724"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36018121"
 ---
 # <a name="assign-action"></a>アクションの割り当て
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 まだ文書化されていません
 

@@ -2,12 +2,15 @@
 title: Microsoft Graph での Azure Active Directory リソースの使用
 description: Azure Active Directory (Azure AD) 用の Microsoft Graph には、組織、リソース、アセットの管理に役立つ REST API が備わっています。
 localization_priority: Priority
-ms.openlocfilehash: 9ae541b2daf608b4b3421268018e00d08be39bc3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 83c9f8b9c1d95139ed2b170dd3df4964add15b1b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339040"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013165"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>Microsoft Graph での Azure Active Directory リソースの使用
 
@@ -41,7 +44,8 @@ Azure AD リソースに Microsoft Graph API を呼び出すには、アプリ�
 | Azure AD ポリシーを、アプリケーション、サービス プリンシパル、グループ、または組織全体に適用します。 現在サポートされているのは、トークンの有効期間およびホーム領域検出に関するポリシーです。  | [ポリシー](../resources/policy.md) | 該当なし |
 | **Azure AD に対する特権アクセスをセキュリティで保護する** | | |
 | Privileged Identity Management (PIM) を使用して管理者および IT プロフェッショナルのディレクトリと Azure リソースに対する期限付きの特権アクセスを管理および監視します。 | [Privileged Identity Management API](../resources/privilegedidentitymanagement-root.md) | [Azure AD Privileged Identity Management とは](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure)|
-| マルウェアに感染したデバイスまたは未知の場所からのユーザーのサインインなど、ID リスク イベントを監視します。 | [Identity Protection Service API](../resources/identityprotection-root.md) | [Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection)<br/><br/>[Azure Active Directory リスク イベント](https://docs.microsoft.com/ja-JP/azure/active-directory/active-directory-reporting-risk-events) |
+| マルウェアに感染したデバイスまたは未知の場所からのユーザーのサインインなど、ID リスク イベントを監視します。 | [Identity Protection Service API](../resources/identityprotection-root.md) | [Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection)<br/><br/>
+  [Azure Active Directory リスク イベント](https://docs.microsoft.com/ja-JP/azure/active-directory/active-directory-reporting-risk-events) |
 | **デバイスの管理** | | |
 | 組織に登録されているデバイスを管理します。 デバイスはユーザーに登録されており、ノート PC、デスクトップ、タブレット、携帯電話などのアイテムを含みます。 デバイスは通常、Device Registration Service を使用するか、Microsoft Intune によって、クラウドで作成されます。 これは、多要素認証の条件付きアクセス ポリシーで使用されます。 | [デバイス](../resources/device.md) | [Azure Active Directory デバイス登録の使用](https://docs.microsoft.com/azure/active-directory/active-directory-device-registration-overview)<br/><br/>[InTune とは](https://docs.microsoft.com/intune-classic/understand-explore/introduction-to-microsoft-intune)<br/><br/>[Intune における管理用にデバイスを登録する](https://docs.microsoft.com/intune-classic/deploy-use/enroll-devices-in-microsoft-intune) |
 | **アプリの管理** | | |
@@ -57,7 +61,8 @@ Azure AD リソースに Microsoft Graph API を呼び出すには、アプリ�
 | 会社のサブスクライブ先のサービス SKU に関する情報を取得します。 | [subscribedSku](../resources/subscribedsku.md) | N/A |
 | 組織に外部 (ゲスト) ユーザーを招待します。 | [invitation](../resources/invitation.md) | [Azure AD B2B コラボレーションとは](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)|
 | **アクセス レビュー** | | |
-| グループのメンバーシップとアプリケーションのアクセス権がアクセス レビューで適切であることを確認します。 | [アクセス レビュー API](../resources/accessreviews-root.md) |[Azure AD アクセス レビュー](https://docs.microsoft.com/ja-JP/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) |
+| グループのメンバーシップとアプリケーションのアクセス権がアクセス レビューで適切であることを確認します。 | [アクセス レビュー API](../resources/accessreviews-root.md) |
+  [Azure AD アクセス レビュー](https://docs.microsoft.com/ja-JP/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) |
 ## <a name="next-steps"></a>次のステップ
 ディレクトリ リソースと API によって、ユーザーとの連携や、ユーザーの Microsoft Graph のエクスペリエンスを管理する新しい方法が見つかります。 詳細情報 
 

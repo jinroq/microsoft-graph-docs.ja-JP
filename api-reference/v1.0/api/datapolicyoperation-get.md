@@ -4,12 +4,13 @@ description: DataPolicyOperation オブジェクトのプロパティを取得�
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 81640966f9dc689e86e41986d8368b5ef3863903
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 60dcf95b33de13b284f72ef06f3c2ea72a4a7409
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35883545"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36003008"
 ---
 # <a name="get-datapolicyoperation"></a>DataPolicyOperation を取得する
 

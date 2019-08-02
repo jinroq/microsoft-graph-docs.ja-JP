@@ -4,12 +4,13 @@ description: '学校を表すリソースで、その学校のクラス、教師
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 2549d8babd000a36f0ff3ccd38541ef3c1b2e466
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 3446b637835facfbe9a03e31dbdb8e9421b2faed
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32463671"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030507"
 ---
 # <a name="educationschool-resource-type"></a>educationSchool リソースの種類
 
@@ -28,15 +29,15 @@ ms.locfileid: "32463671"
 |[List users](../api/educationschool-list-users.md) |[educationUser](educationuser.md) コレクション| **educationUser** オブジェクト コレクションを取得します。|
 |[Remove user](../api/educationschool-delete-users.md) |[educationUser](educationuser.md)| **users** ナビゲーション プロパティによって、学校から **educationUser** を削除します。|
 |[Update](../api/educationschool-update.md) | [educationSchool](educationschool.md) |**educationSchool** オブジェクトを更新します。 |
-|[削除する](../api/educationschool-delete.md) | なし |**educationSchool** オブジェクトを削除します。 |
+|[Delete](../api/educationschool-delete.md) | None |**educationSchool** オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|id|String|この学校の GUID。|
-|displayName| String| 学校の表示名。| 
-|説明| String | 学校の説明。| 
-|status| string| 読み取り専用。 使用可能な値は`inactive`、 `active`、 `expired`、 `deleteable`、です。|
+|id|文字列|この学校の GUID。|
+|displayName| 文字列| 学校の表示名。| 
+|description| String | 学校の説明。| 
+|status| string| 読み取り専用。 使用可能な値: `inactive`、`active`、`expired`、`deleteable`。|
 |externalSource| educationExternalSource| 読み取り専用です。  使用可能な値: `sis`、`manual`、`unknownFutureValue`。|
 |principalEmail| String| プリンシパルの電子メール アドレス。|
 |principalName| String | プリンシパルの名前。|

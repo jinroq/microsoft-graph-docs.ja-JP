@@ -4,26 +4,27 @@ description: 保護者、支援、医師などの情報を提供する education
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 7e3829de2ffeb073d8360976ce70d13985fcae39
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 7a2040bbe357a7cc89dffed1ad4332bf89077204
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579409"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034763"
 ---
-# <a name="realtedcontact-resource-type"></a>realtedcontact リソースの種類
+# <a name="realtedcontact-resource-type"></a>realtedContact リソースの種類
 
 保護者、支援、医師などの情報を提供する[educationUser](../resources/educationuser.md)に関連する連絡先レコード。
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|id|String|Azure Active Directory 内の連絡先の id。|
+|id|文字列|Azure Active Directory 内の連絡先の id。|
 |displayName|String|連絡先の名前。 必須です。|
 |emailAddress|String|連絡先のプライマリ電子メールアドレス。|
 |mobilePhone|String|連絡先の携帯電話番号。|
 |リレーションシップ|`contactRelationship`|ユーザーとの関係。 可能な値`parent`は`relative` `aide` `doctor` `guardian` `other`、、、、、、 `unknownFutureValue`、、です。 `child`|
-|accessconsent|Boolean|ユーザーが学生データにアクセスするために同意されているかどうかを示します。|
+|accessConsent|Boolean|ユーザーが学生データにアクセスするために同意されているかどうかを示します。|
 
 ## <a name="json-representation"></a>JSON 表記
 

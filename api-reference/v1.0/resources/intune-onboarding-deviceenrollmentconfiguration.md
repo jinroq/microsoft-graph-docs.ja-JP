@@ -4,16 +4,17 @@ description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fc515f291e2ab32b744756063869ca3ca0c86cb5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: c406f29b999f507a1214118f9c6c5f2998d37713
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32541300"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36037549"
 ---
 # <a name="deviceenrollmentconfiguration-resource-type"></a>deviceEnrollmentConfiguration リソースの種類
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 まだ文書化されていません
 
@@ -28,7 +29,7 @@ ms.locfileid: "32541300"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|まだ文書化されていません|
+|id|文字列|まだ文書化されていません|
 |displayName|String|まだ文書化されていません|
 |description|String|まだ文書化されていません|
 |priority|Int32|まだ文書化されていません|

@@ -4,12 +4,13 @@ description: スケジュール内のメンバーの論理グループ (通常�
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: fb8ed65991d87780b6250841df8bdbdb089b7992
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType_
+ms.openlocfilehash: 9f4f494b21a1139ba9a9e0771dcbc41d363bab2b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343463"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965300"
 ---
 # <a name="schedulinggroup-resource-type"></a>schedulingGroup リソースの種類
 
@@ -28,7 +29,7 @@ ms.locfileid: "33343463"
 |[Delete schedulingGroup](../api/schedulinggroup-delete.md) | なし | `schedulingGroup` を非アクティブとしてマークします。|
 
 ## <a name="properties"></a>プロパティ
-|名前          |型           |説明                                                                                 |
+|名前          |種類           |説明                                                                                 |
 |--------------|---------------|--------------------------------------------------------------------------------------------|
 | id            | `string`      |`schedulingGroup` の ID。|
 | displayName   | `string`      | `schedulingGroup` の表示名。 必須。 |

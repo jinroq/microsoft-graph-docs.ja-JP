@@ -4,12 +4,13 @@ description: アプリケーション オブジェクトのプロパティと関
 author: davidmu1
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8faa031b06a06fdf0ccd65d36f10925e98a7baf6
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 67a43871a992d9475bf29a7800ad9e0ee50d56fe
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35855285"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945540"
 ---
 # <a name="get-application"></a>アプリケーションを取得する
 
@@ -35,7 +36,7 @@ GET /applications/{id}
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。  |
 

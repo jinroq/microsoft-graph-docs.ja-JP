@@ -4,16 +4,17 @@ description: 新しい managedDeviceMobileAppConfigurationUserStatus オブジ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1b912d21fae21652d9a801443aee7e1d08446dd7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: d679104945c8a283e4eedf2e2147f6e603ec2bd7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32578198"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013984"
 ---
 # <a name="create-manageddevicemobileappconfigurationuserstatus"></a>managedDeviceMobileAppConfigurationUserStatus の作成
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい [managedDeviceMobileAppConfigurationUserStatus](../resources/intune-apps-manageddevicemobileappconfigurationuserstatus.md) オブジェクトを作成します。
 
@@ -48,7 +49,7 @@ POST /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigu
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列型 (String)|エンティティのキー。|
+|id|文字列|エンティティのキー。|
 |userDisplayName|String|DevicePolicyStatus のユーザー名。|
 |devicesCount|Int32|そのユーザーのデバイスの数。|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|ポリシー レポートのコンプライアンスの状態。 可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。|

@@ -2,12 +2,15 @@
 title: Privileged Identity Management
 description: Azure Active Directory の役割と Azure リソースの役割を管理する Azure AD Privileged Identity Management の API。
 localization_priority: Priority
-ms.openlocfilehash: e8d61cb767b5471b76bc956dc5a0aeb9dc5af19f
-ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
+doc_type: conceptualPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: a4ca96d9296843fe716512f6d316d60f6c7b61d7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35133811"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965797"
 ---
 # <a name="privileged-identity-management"></a>Privileged Identity Management
 

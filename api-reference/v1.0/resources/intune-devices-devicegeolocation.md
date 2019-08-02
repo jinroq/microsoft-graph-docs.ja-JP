@@ -4,16 +4,17 @@ description: デバイスの場所
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b51768aea1338486431ceffadd95f8760a7216ab
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 88802f3d4909f07ab96395efdf61ad7e817f4be8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32542033"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030815"
 ---
 # <a name="devicegeolocation-resource-type"></a>deviceGeoLocation リソースの種類
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 デバイスの場所
 
@@ -22,11 +23,11 @@ ms.locfileid: "32542033"
 |:---|:---|:---|
 |lastCollectedDateTime|DateTimeOffset|場所が記録された、UTC を基準とする時刻|
 |longitude|倍精度浮動小数点数|デバイスの場所の経度座標|
-|latitude|倍精度浮動小数点数|デバイスの場所の緯度座標|
-|altitude|倍精度浮動小数点数|海抜標高 (メートル単位)|
-|horizontalAccuracy|倍精度浮動小数点数|経度と緯度の精度 (メートル単位)|
-|verticalAccuracy|倍精度浮動小数点数|標高の精度 (メートル単位)|
-|heading|倍精度浮動小数点数|真北を基準とする方角|
+|latitude|2 行分|デバイスの場所の緯度座標|
+|altitude|2 行分|海抜標高 (メートル単位)|
+|horizontalAccuracy|2 行分|経度と緯度の精度 (メートル単位)|
+|verticalAccuracy|2 行分|標高の精度 (メートル単位)|
+|heading|2 行分|真北を基準とする方角|
 |speed|Double|デバイスの移動速度 (m/秒)|
 
 ## <a name="relationships"></a>リレーションシップ

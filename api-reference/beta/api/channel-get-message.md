@@ -4,12 +4,13 @@ description: チームのチャネルで単一のメッセージを取得しま�
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 7288e3c8ccd233d28f2cc93c9e5f841662d1d9d8
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 5ec9dfd369f207e2f88adf973f441749839ef157
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35864618"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944325"
 ---
 # <a name="get-channel-message"></a>チャネル メッセージを取得する
 

@@ -2,12 +2,15 @@
 title: Azure AD 監査ログ API の概要
 description: Azure Active Directory (Azure AD) は、ユーザーのアクティビティとサインインのメトリックを追跡し、ユーザーが Azure AD サービスにアクセスして使用する方法を把握するのに役立つ監査ログ レポートを作成します。 Azure AD 用の Microsoft Graph API を使用して、これらのレポートの基礎となるデータを分析したり、組織特有のニーズに合わせたカスタム ソリューションを作成したりします。
 localization_priority: Priority
-ms.openlocfilehash: 6e8081e43745fdc5cdfc6d994e0115ea22514a2a
-ms.sourcegitcommit: e0de4e41773e361752870411d1b1a74270738127
+doc_type: conceptualPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 9d739cbe711ad175e485ecb3d9d12173718a1b75
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35348692"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974242"
 ---
 # <a name="azure-ad-audit-log-api-overview"></a>Azure AD 監査ログ API の概要
 

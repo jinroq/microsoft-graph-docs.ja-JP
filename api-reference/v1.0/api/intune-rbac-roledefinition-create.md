@@ -4,16 +4,17 @@ description: 新しい roleDefinition オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4037ad311ed57b1c019f4cce7c423f5f81c4dd56
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 82f009a5dec96f6352780d8db92cf5e35277bf4a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32585357"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025971"
 ---
 # <a name="create-roledefinition"></a>roleDefinition の作成
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい [roleDefinition](../resources/intune-rbac-roledefinition.md) オブジェクトを作成します。
 
@@ -48,9 +49,9 @@ POST /deviceManagement/roleDefinitions
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列型 (String)|エンティティのキー。 これは読み取り専用で、自動生成されます。|
+|id|文字列|エンティティのキー。 これは読み取り専用で、自動生成されます。|
 |displayName|String|ロールの定義の表示名。|
-|説明|String|ロールの定義の説明。|
+|description|String|ロールの定義の説明。|
 |rolePermissions|[rolePermission](../resources/intune-rbac-rolepermission.md) コレクション|このロールに実行が許可されている、ロールのアクセス許可のリスト。 これらは、rolePermission の一部として定義されている actionName と一致する必要があります。|
 |isBuiltIn|Boolean|ロールの種類。 組み込みの場合は True に設定し、カスタム ロールの定義の場合は False に設定します。|
 

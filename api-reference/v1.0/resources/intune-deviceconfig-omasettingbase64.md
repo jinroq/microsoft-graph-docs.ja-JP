@@ -4,16 +4,17 @@ description: OMA 設定の Base64 定義。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 678c6e78070a7aae185a041962083b7908ef1cc1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: a8ab8552205084f41599a37c4a8edf39f329d85d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549402"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36028043"
 ---
 # <a name="omasettingbase64-resource-type"></a>omaSettingBase64 リソースの種類
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 OMA 設定の Base64 定義。
 

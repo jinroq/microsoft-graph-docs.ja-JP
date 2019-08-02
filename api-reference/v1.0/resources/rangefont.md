@@ -4,12 +4,13 @@ description: このオブジェクトは、オブジェクトのフォントの�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 829b391d561aae63ae94972c55039acfdf4c48d7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: fe49cc3209164778bbeed625b3c24c7cc8ee3238
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579523"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034903"
 ---
 # <a name="rangefont-resource-type"></a>RangeFont リソースの種類
 
@@ -33,7 +34,7 @@ ms.locfileid: "32579523"
 |size|double|フォント サイズ|
 |underline|文字列|フォントに適用する下線の種類。 使用可能な値: `None`、`Single`、`Double`、`SingleAccountant`、`DoubleAccountant`。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 

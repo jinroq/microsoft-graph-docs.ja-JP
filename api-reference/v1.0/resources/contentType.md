@@ -4,17 +4,20 @@ ms.author: dspektor
 ms.date: 09/12/2017
 title: ContentType
 localization_priority: Normal
-ms.openlocfilehash: c7d4b3222ec64432d6a2c9921e53ce409de3f139
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: contentType リソースは、SharePoint のコンテンツ タイプを表します。
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: b26f9b7a3bafb7b6185aa781c1f842f7c20adab3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561356"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029639"
 ---
 # <a name="contenttype-resource-type"></a>ContentType リソースの種類
 
 **contentType** リソースは、SharePoint の_コンテンツ タイプ_を表します。
-コンテンツ タイプによって、[**list**][list] 内のすべての [**listItem**][listItem] に存在する必要のある列のセットを定義することができます。
+コンテンツタイプを使用すると、[**リスト**][list]内のすべての[**listItem**][listItem]に存在する必要がある列のセットを定義できます。
 
 [list]: list.md
 [listItem]: listitem.md

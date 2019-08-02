@@ -4,16 +4,17 @@ description: telecomExpenseManagementPartner を削除します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 706a76cc8d3b82ee8873643c4798a44897ffc09a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 881a6ca17ed0c63eb92939937e5088c4fbb15207
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576606"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36023399"
 ---
 # <a name="delete-telecomexpensemanagementpartner"></a>telecomExpenseManagementPartner の削除
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md) を削除します。
 

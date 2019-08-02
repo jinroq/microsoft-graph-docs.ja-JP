@@ -4,16 +4,17 @@ description: windows81CompliancePolicy オブジェクトのプロパティと�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 40ed80b53f7e94942a7c2aa9eca09b66f6d9a576
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 1efc9d59942403b787cea16a0bcf56b7c71907d9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566358"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36020025"
 ---
 # <a name="list-windows81compliancepolicies"></a>windows81CompliancePolicies のリスト
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [windows81CompliancePolicy](../resources/intune-deviceconfig-windows81compliancepolicy.md) オブジェクトのプロパティとリレーションシップをリストします。
 

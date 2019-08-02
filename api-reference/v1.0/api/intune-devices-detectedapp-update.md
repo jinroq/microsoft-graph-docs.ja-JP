@@ -4,16 +4,17 @@ description: detectedApp オブジェクトのプロパティを更新します�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bbd9cb4d4ad26eda487557a8e21df19ad3564118
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 6a66b7ebb07f8f61c5364fc8fdc95cc5b21a8f6f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584680"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996939"
 ---
 # <a name="update-detectedapp"></a>detectedApp の更新
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [detectedApp](../resources/intune-devices-detectedapp.md) オブジェクトのプロパティを更新します。
 
@@ -48,7 +49,7 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|検出されたアプリケーションの一意識別子。 これは、アプリケーションの作成時に、Intune によって自動的に生成されます。 読み取り専用です。|
+|id|文字列|検出されたアプリケーションの一意識別子。 これは、アプリケーションの作成時に、Intune によって自動的に生成されます。 読み取り専用です。|
 |displayName|String|検出されたアプリケーションの名前。 読み取り専用|
 |version|String|検出されたアプリケーションのバージョン。 読み取り専用|
 |sizeInByte|Int64|検出されたアプリケーションのサイズ (バイト単位)。 読み取り専用です|

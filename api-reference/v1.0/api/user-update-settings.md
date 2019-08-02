@@ -1,19 +1,20 @@
 ---
 title: 設定を更新する
-description: 'settings オブジェクトのプロパティを更新します。 '
+description: 'Settings オブジェクトのプロパティを更新します。 '
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: eb739ebe4266dc61246fd39f1b4f053ab08a5a75
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: ac4907867eebd0cf02bf4e978d1a48b1f1b47ce8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573572"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36026517"
 ---
 # <a name="update-settings"></a>設定を更新する
 
-[settings](../resources/user-settings.md)オブジェクトのプロパティを更新します。 同じ組織内のユーザーは、そのユーザーの好みまたは組織のポリシーに基づいて設定を変えることができます。 ユーザーの現在の設定を取得するには、「[現在のユーザーの設定](user-get-settings.md)」を参照してください。 
+[Settings](../resources/user-settings.md)オブジェクトのプロパティを更新します。 同じ組織内のユーザーは、そのユーザーの好みまたは組織のポリシーに基づいて設定を変えることができます。 ユーザーの現在の設定を取得するには、「[現在のユーザーの設定](user-get-settings.md)」を参照してください。 
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -31,7 +32,7 @@ ms.locfileid: "32573572"
 PATCH /me/settings
 ```
 
-' user id ' または ' userPrincipalName ' を持つ要求は、ユーザーまたはすべてのアクセス許可を持つユーザーのみがアクセスできます。 詳細については、「 [Permissions](/graph/permissions-reference)」を参照してください。 
+「user id」または「userPrincipalName」を持つリクエストは、ユーザーまたは User.ReadWrite.All 権限を持つユーザーのみがアクセスできます。 詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。 
 
 ```http
 PATCH /users/{id | userPrincipalName}/settings/
@@ -50,7 +51,7 @@ PATCH /users/{id | userPrincipalName}/settings/
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|contributionToContentDiscoveryDisabled|Boolean|true に設定[トレンド分析](/graph/api/resources/insights-trending?view=graph-rest-beta)API への代理人アクセスを無効にし、ユーザーの Office Delve でドキュメントへのアクセスを無効にします。 true に設定すると、Office 365 に表示されるコンテンツの関連性にも影響します。たとえば、SharePoint ホームのおすすめサイト、OneDrive for business の検出ビューには関連性の低い検索結果が表示されます。 この設定は、 [Office Delve](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout)のコントロールの状態を反映します。|
+|contributionToContentDiscoveryDisabled|ブール値|True に設定[トレンド分析](/graph/api/resources/insights-trending?view=graph-rest-beta)API への代理人アクセスを無効にし、ユーザーの Office Delve でドキュメントへのアクセスを無効にします。 True に設定すると、Office 365 に表示されるコンテンツの関連性にも影響します。たとえば、SharePoint ホームのおすすめサイト、OneDrive for Business の検出ビューには関連性の低い検索結果が表示されます。 この設定は、 [Office Delve](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout)のコントロールの状態を反映します。|
 
 ## <a name="example"></a>例 
 

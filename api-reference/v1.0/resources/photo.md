@@ -4,12 +4,15 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 写真
 localization_priority: Normal
-ms.openlocfilehash: 688bee72464c1e518c60720a7f9ca24da1f7d149
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: 写真リソースは、EXIF メタデータなどの写真とカメラのプロパティを driveItem で提供します。
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: c86190768c10b04bb55f59104368089cf7c77b18
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462446"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035500"
 ---
 # <a name="photo-resource-type"></a>写真リソースの種類
 
@@ -43,8 +46,8 @@ ms.locfileid: "32462446"
 | **takenDateTime**       | DateTimeOffset | 写真の撮影日時を表します。読み取り専用です。
 | **cameraMake**          | String         | カメラの製造元。読み取り専用です。
 | **cameraModel**         | String         | カメラのモデル。読み取り専用です。
-| **fNumber**             | 倍精度浮動小数点数         | カメラの絞り値。読み取り専用です。
-| **exposureDenominator** | 倍精度浮動小数点数         | カメラの露出時間の分数の分母。読み取り専用です。
+| **fNumber**             | 2 行分         | カメラの絞り値。読み取り専用です。
+| **exposureDenominator** | 2 行分         | カメラの露出時間の分数の分母。読み取り専用です。
 | **exposureNumerator**   | Double         | カメラの露出時間の分数の分子。読み取り専用です。
 | **focalLength**         | 倍精度浮動小数点数         | カメラの焦点距離。読み取り専用です。
 | **iso**                 | Int32          | カメラの ISO 値。読み取り専用です。

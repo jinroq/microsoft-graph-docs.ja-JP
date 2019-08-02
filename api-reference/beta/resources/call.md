@@ -4,12 +4,13 @@ description: アプリケーションに関して着信が存在する場合か�
 author: VinodRavichandran
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 9d297a60538901b6117a7e20f32fa0cc437b9b84
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: cd5c4cda918ecc9a9cd317bc610688e0297c0787
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33338802"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973499"
 ---
 # <a name="call-resource-type"></a>call リソースの種類
 
@@ -83,7 +84,7 @@ ms.locfileid: "33338802"
 
 | リレーションシップ        | 型                                                 | 説明                                                         |
 |:--------------------|:-----------------------------------------------------|:--------------------------------------------------------------------|
-| audioRoutingGroups  | [audioRoutingGroup](audioroutinggroup.md) コレクション | 読み取り専用です。 Null 許容型。                                                |
+| audioRoutingGroups  | [audioRoutingGroup](audioroutinggroup.md) コレクション | 読み取り専用。Null 許容型です。                                                |
 | operations          | [commsOperation](commsoperation.md)コレクション       | 読み取り専用。Null 許容型です。                                                |
 | participants        | [participant](participant.md) コレクション             | 読み取り専用。Null 許容型です。                                                |
 

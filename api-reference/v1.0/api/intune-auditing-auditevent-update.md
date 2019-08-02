@@ -4,16 +4,17 @@ description: auditEvent オブジェクトのプロパティを更新します�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a0a11e0d070cfa0faeb8048a44a3d75c036c12f7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: cc81661d6e117b59050c6f69095bb101a5de90d3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579889"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013571"
 ---
 # <a name="update-auditevent"></a>auditEvent の更新
 
-> **注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+> **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [auditEvent](../resources/intune-auditing-auditevent.md) オブジェクトのプロパティを更新します。
 
@@ -48,7 +49,7 @@ PATCH /deviceManagement/auditEvents/{auditEventId}
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列型 (String)|エンティティのキー。|
+|id|文字列|エンティティのキー。|
 |displayName|String|イベントの表示名。|
 |componentName|String|コンポーネント名。|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|監査イベントに関連付けられている AAD ユーザーとアプリケーション。|

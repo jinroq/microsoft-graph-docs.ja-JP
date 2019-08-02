@@ -3,13 +3,14 @@ title: アプリケーションを作成する
 description: この API を使用して、新しいアプリケーションを作成します。
 author: davidmu1
 localization_priority: Priority
+doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 775f7d59ba19ed015b7af5d66e9d52ae817ec65c
-ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
+ms.openlocfilehash: 57c7977799eeca3830adc3b0250dd5c20dbddb23
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "35908321"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945481"
 ---
 # <a name="create-application"></a>アプリケーションを作成する
 
@@ -34,7 +35,7 @@ POST /applications
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
