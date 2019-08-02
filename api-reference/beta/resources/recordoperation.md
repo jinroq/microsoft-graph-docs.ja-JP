@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 00b05cd86eeb9cf8be26cdc09fb8a9b254b510db
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 23fb116a80dcd90206d7a0ae5eeec5d756272c3d
+ms.sourcegitcommit: bbed891d16995b4a8ce866169dddb96abdc28776
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008804"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "36061999"
 ---
 # <a name="recordoperation-resource-type"></a>recordOperation リソースの種類
 
@@ -27,8 +27,8 @@ RecordOperation の種類
 | createdDateTime                | DateTimeOffset              | レコーディングが作成された時刻。                                                                                                          |
 | id                             | 文字列                      | サーバー操作 id。読み取り専用です。 サーバーによって生成されます。                                                                                             |
 | lastActionDateTime             | DateTimeOffset              | 操作の最後の操作の時刻。                                                                                                     |
-| recordResourceAccessToken      | String                      | レコーディングを取得するために必要なアクセストークン。                                                                                              |
-| recordResourceLocation         | String                      | レコーディングが配置されている場所。                                                                                                      |
+| recordingAccessToken           | String                      | レコーディングを取得するために必要なアクセストークン。                                                                                              |
+| recordingLocation              | String                      | レコーディングが配置されている場所。                                                                                                      |
 | resultInfo                     | [resultInfo](resultinfo.md) | 結果の情報。  読み取り専用です。 サーバーによって生成されます。                                                                                             |
 | status                         | String                      | 使用可能な値: `notStarted`、`running`、`completed`、`failed`。 読み取り専用です。 サーバーによって生成されます。                                                 |
 
@@ -53,8 +53,8 @@ RecordOperation の種類
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "lastActionDateTime": "String (timestamp)",
-  "recordResourceAccessToken": "String",
-  "recordResourceLocation": "String",
+  "recordingAccessToken": "String",
+  "recordingLocation": "String",
   "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
   "status": "notStarted | running | completed | failed"
 }
@@ -71,8 +71,8 @@ RecordOperation の種類
 {
   "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
   "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
-  "recordResourceAccessToken": "<access-token>",
-  "recordResourceLocation": "https://resource.location/ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
+  "recordingAccessToken": "<access-token>",
+  "recordingLocation": "https://resource.location/ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
   "status": "completed"
 }
 ```

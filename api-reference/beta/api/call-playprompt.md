@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8ca1a83628ebbb5da2bfec41307b53e01c381883
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fc5c80e633055eb6cc1d1914a756bfb80f4332f9
+ms.sourcegitcommit: bbed891d16995b4a8ce866169dddb96abdc28776
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35944461"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "36062008"
 ---
 # <a name="call-playprompt"></a>呼び出し: playPrompt
 
@@ -19,6 +19,9 @@ ms.locfileid: "35944461"
 呼び出しでプロンプトを再生します。
 
 操作を処理する方法の詳細については、「 [commsOperation](../resources/commsoperation.md) 」を参照してください。
+
+> [!Note]
+> **Playprompt**アクションは、 [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md)で開始された[通話](../resources/call.md)に対してのみサポートされています。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -34,7 +37,6 @@ ms.locfileid: "35944461"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/playPrompt
-POST /applications/{id}/calls/{id}/playPrompt
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
@@ -47,9 +49,9 @@ POST /applications/{id}/calls/{id}/playPrompt
 
 | パラメーター      | 型    |説明|
 |:---------------|:--------|:----------|
-|促し|[prompt](../resources/prompt.md)コレクション| 現時点では、1つのプロンプトと種類[mediaprompt](../resources/mediaprompt.md)のみがサポートされています。|
-|for|bool| ループ値を指定します。 true は、無限にループすることを示します。 既定値は false です。 |
-|clientContext|String|クライアントコンテキスト。|
+|促し|MediaPrompt コレクション| 現時点では、1つのプロンプトと種類[mediaprompt](../resources/mediaprompt.md)のみがサポートされています。|
+|for|Boolean| ループ値を指定します。 True は、無限にループすることを示します。 既定値は false です。 |
+|clientContext|String|一意のクライアントコンテキスト文字列。 最大256文字を使用できます。|
 
 ## <a name="response"></a>応答
 成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[playPromptOperation](../resources/playpromptoperation.md)オブジェクトを返します。
@@ -94,6 +96,7 @@ Content-Length: 166
 
 
 ##### <a name="response"></a>応答
+応答の例を次に示します。
 
 > **注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 

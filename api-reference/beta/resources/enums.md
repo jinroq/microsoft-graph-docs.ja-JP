@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 21723975a73ca7288e65e321a3eaeb323dad77b6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 714873a85951d2f03f602e0742c9f00b5faf0024
+ms.sourcegitcommit: bbed891d16995b4a8ce866169dddb96abdc28776
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972097"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "36062060"
 ---
 ### <a name="registrationauthmethod-values"></a>registrationAuthMethod の値
 
@@ -839,6 +839,14 @@ Windows 定義ごとに、ユーザーアカウントの種類 (グループメ�
 |高額|
 |緊急|
 
+### <a name="stagedfeaturename-values"></a>stagedFeatureName の値
+
+|メンバー|説明|
+|:---|:---|
+|認証|パススルー認証|
+|seamlessSso|シームレスなシングルサインオン|
+|passwordHashSync|パスワードハッシュの同期|
+
 ### <a name="tokenissuertype-values"></a>tokenIssuerType の値
 
 |Member|
@@ -865,3 +873,4 @@ Windows 定義ごとに、ユーザーアカウントの種類 (グループメ�
 |signin|
 |user|
 |Unknownfuturevalue という|
+
