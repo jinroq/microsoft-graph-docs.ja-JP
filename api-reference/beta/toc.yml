@@ -7977,6 +7977,23 @@
                   href: api/domain-update.md
                 - name: ドメインを確認する
                   href: api/domain-verify.md
+            - name: 機能ロールアウトポリシー
+              href: resources/featurerolloutpolicy.md
+              items:
+                - name: リスト
+                  href: api/directory-list-featurerolloutpolicies.md
+                - name: 取得
+                  href: api/featurerolloutpolicy-get.md
+                - name: 作成
+                  href: api/directory-post-featurerolloutpolicies.md
+                - name: 更新
+                  href: api/featurerolloutpolicy-update.md
+                - name: 削除
+                  href: api/featurerolloutpolicy-delete.md
+                - name: AppliesTo の作成
+                  href: api/featurerolloutpolicy-post-appliesto.md
+                - name: AppliesTo の削除
+                  href: api/featurerolloutpolicy-delete-appliesto.md
             - name: Identity Protection
               href: resources/identityprotection-root.md
               items:
@@ -8373,7 +8390,7 @@
             - name: 信頼フレームワークポリシー
               href: resources/trustframeworkpolicy.md
               items:
-                - name: List
+                - name: リスト
                   href: api/trustframework-list-trustframeworkpolicies.md
                 - name: 作成
                   href: api/trustframework-post-trustframeworkpolicy.md
