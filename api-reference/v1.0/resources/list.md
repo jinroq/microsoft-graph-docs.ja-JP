@@ -2,15 +2,17 @@
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/11/2017
-title: List
+title: リスト
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 7946346c5b872cad80eb3b8dc50109862ac15b8e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: list リソースでは、サイト内のリストを表します。
+doc_type: resourcePageType
+ms.openlocfilehash: 51821bb20188c004af3f2aca868c3cfd953ce19c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570800"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036408"
 ---
 # <a name="list-resource"></a>List リソース
 
@@ -115,7 +117,7 @@ list リソースで使用可能なタスクを次に示します。
 
 | リレーションシップ名 | 種類                             | 説明
 |:------------------|:---------------------------------|:----------------------
-| **ドライブ**         | [drive][]                        | ドキュメント ライブラリにのみ存在します。 [driveItems][driveItem] を含む [drive][] リソースとしてリストにアクセスできます。
+| **ドライブ**         | [drive][]                        | ドキュメント ライブラリにのみ存在します。 [driveItems][driveItem] で [drive][] リソースとしてリストへのアクセスを許可します。
 | **items**         | Collection([listItem][])         | リストに含まれているすべてのアイテム。
 | **列**       | Collection([columnDefinition][]) | このリストのフィールド定義のコレクションです。
 | **contentTypes**  | Collection([contentType][])      | このリスト内に存在するコンテンツ タイプのコレクションです。
