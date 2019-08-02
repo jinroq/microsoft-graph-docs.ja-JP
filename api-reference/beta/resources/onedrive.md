@@ -3,25 +3,27 @@ title: Microsoft Graph でのファイルの作業
 description: Microsoft Graph を使用して、OneDrive、OneDrive for Business、および SharePoint のドキュメント ライブラリに配置されるファイルに接続するアプリケーションを作成できます。Microsoft Graph を使用することで、ユーザーのドキュメントを単に格納することから、複雑なファイル共有の複雑なシナリオまで、Office 365 に格納されるファイルに関するさまざまなエクスペリエンスを構築できます。
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 90dd80efecef45f43b21a626244d9314ff4c2f91
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+author: ''
+ms.openlocfilehash: a6a57c2f810d41d6c78590007ffbdb4011415495
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341527"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009434"
 ---
-# <a name="working-with-files-in-microsoft-graph"></a><span data-ttu-id="acaea-104">Microsoft Graph でのファイルの作業</span><span class="sxs-lookup"><span data-stu-id="acaea-104">Working with files in Microsoft Graph</span></span>
+# <a name="working-with-files-in-microsoft-graph"></a><span data-ttu-id="83319-104">Microsoft Graph でのファイルの作業</span><span class="sxs-lookup"><span data-stu-id="83319-104">Working with files in Microsoft Graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="acaea-p102">Microsoft Graph を使用して、OneDrive、OneDrive for Business、および SharePoint のドキュメント ライブラリに配置されるファイルに接続するアプリケーションを作成できます。Microsoft Graph を使用することで、ユーザーのドキュメントを単に格納することから、複雑なファイル共有の複雑なシナリオまで、Office 365 に格納されるファイルに関するさまざまなエクスペリエンスを構築できます。</span><span class="sxs-lookup"><span data-stu-id="acaea-p102">You can use Microsoft Graph to create an app that connects with files across OneDrive, OneDrive for Business, and SharePoint document libraries. With Microsoft Graph, you can build a variety of experiences with files stored in Office 365, from simply storing user documents to complex file sharing scenarios.</span></span>
+<span data-ttu-id="83319-p102">Microsoft Graph を使用して、OneDrive、OneDrive for Business、および SharePoint のドキュメント ライブラリに配置されるファイルに接続するアプリケーションを作成できます。Microsoft Graph を使用することで、ユーザーのドキュメントを単に格納することから、複雑なファイル共有の複雑なシナリオまで、Office 365 に格納されるファイルに関するさまざまなエクスペリエンスを構築できます。</span><span class="sxs-lookup"><span data-stu-id="83319-p102">You can use Microsoft Graph to create an app that connects with files across OneDrive, OneDrive for Business, and SharePoint document libraries. With Microsoft Graph, you can build a variety of experiences with files stored in Office 365, from simply storing user documents to complex file sharing scenarios.</span></span>
 
-<span data-ttu-id="acaea-107">Microsoft Graph では、ファイルを操作するための 2 種類のリソースが公開されています。</span><span class="sxs-lookup"><span data-stu-id="acaea-107">Microsoft Graph exposes two resource types for working with files:</span></span>
+<span data-ttu-id="83319-107">Microsoft Graph では、ファイルを操作するための 2 種類のリソースが公開されています。</span><span class="sxs-lookup"><span data-stu-id="83319-107">Microsoft Graph exposes two resource types for working with files:</span></span>
 
-* <span data-ttu-id="acaea-108">[Drive](drive.md) - ドキュメント ライブラリやユーザーの OneDrive など、ファイルの論理コンテナーを表します。</span><span class="sxs-lookup"><span data-stu-id="acaea-108">[Drive](drive.md) - Represents a logical container of files, like a document library or a user's OneDrive.</span></span>
-* <span data-ttu-id="acaea-109">[DriveItem](driveitem.md) -ドキュメント、写真、ビデオ、フォルダーなど、ドライブ内のアイテムを表します。</span><span class="sxs-lookup"><span data-stu-id="acaea-109">[DriveItem](driveitem.md) - Represents an item within a drive, like a document, photo, video, or folder.</span></span>
+* <span data-ttu-id="83319-108">[Drive](drive.md) - ドキュメント ライブラリやユーザーの OneDrive など、ファイルの論理コンテナーを表します。</span><span class="sxs-lookup"><span data-stu-id="83319-108">[Drive](drive.md) - Represents a logical container of files, like a document library or a user's OneDrive.</span></span>
+* <span data-ttu-id="83319-109">[DriveItem](driveitem.md) -ドキュメント、写真、ビデオ、フォルダーなど、ドライブ内のアイテムを表します。</span><span class="sxs-lookup"><span data-stu-id="83319-109">[DriveItem](driveitem.md) - Represents an item within a drive, like a document, photo, video, or folder.</span></span>
 
-<span data-ttu-id="acaea-p103">ファイル間での相互作用のほとんどは、**DriveItem** リソース間での相互作用によって発生します。次に、DriveItem リソースの例を示します。</span><span class="sxs-lookup"><span data-stu-id="acaea-p103">Most of the interaction with files occurs through interaction with **DriveItem** resources. The following is an example of a DriveItem resource:</span></span>
+<span data-ttu-id="83319-p103">ファイル間での相互作用のほとんどは、**DriveItem** リソース間での相互作用によって発生します。次に、DriveItem リソースの例を示します。</span><span class="sxs-lookup"><span data-stu-id="83319-p103">Most of the interaction with files occurs through interaction with **DriveItem** resources. The following is an example of a DriveItem resource:</span></span>
 
 ```json
 {
@@ -50,61 +52,61 @@ ms.locfileid: "33341527"
 }
 ```
 
-<span data-ttu-id="acaea-112">**Drive** リソースと **DriveItem** リソースでは、次の異なる 3 つの方法でデータを公開します。</span><span class="sxs-lookup"><span data-stu-id="acaea-112">**Drive** and **DriveItem** resources expose data in three different ways:</span></span>
+<span data-ttu-id="83319-112">**Drive** リソースと **DriveItem** リソースでは、次の異なる 3 つの方法でデータを公開します。</span><span class="sxs-lookup"><span data-stu-id="83319-112">**Drive** and **DriveItem** resources expose data in three different ways:</span></span>
 
-* <span data-ttu-id="acaea-113">_プロパティ_ (**ID** や**名前**など) は単純な値 (文字列、数値、ブール値) を公開します。</span><span class="sxs-lookup"><span data-stu-id="acaea-113">_Properties_ (like **id** and **name**) expose simple values (strings, numbers, Booleans).</span></span>
-* <span data-ttu-id="acaea-p104">_ファセット_ (**ファイル**や**写真**など) は複雑な値を公開します。**ファイル**または**フォルダー**のファセットの有無は、**DriveItem** の動作およびプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="acaea-p104">_Facets_ (like **file** and **photo**) expose complex values. The presence of **file** or **folder** facets indicates behaviors and properties of a **DriveItem**.</span></span>
-* <span data-ttu-id="acaea-116">_参照_ (**子**と**サムネイル**など) はその他のリソースのコレクションを指します。</span><span class="sxs-lookup"><span data-stu-id="acaea-116">_References_ (like **children** and **thumbnails**) point to collections of other resources.</span></span>
+* <span data-ttu-id="83319-113">_プロパティ_ (**ID** や**名前**など) は単純な値 (文字列、数値、ブール値) を公開します。</span><span class="sxs-lookup"><span data-stu-id="83319-113">_Properties_ (like **id** and **name**) expose simple values (strings, numbers, Booleans).</span></span>
+* <span data-ttu-id="83319-p104">_ファセット_ (**ファイル**や**写真**など) は複雑な値を公開します。**ファイル**または**フォルダー**のファセットの有無は、**DriveItem** の動作およびプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="83319-p104">_Facets_ (like **file** and **photo**) expose complex values. The presence of **file** or **folder** facets indicates behaviors and properties of a **DriveItem**.</span></span>
+* <span data-ttu-id="83319-116">_参照_ (**子**と**サムネイル**など) はその他のリソースのコレクションを指します。</span><span class="sxs-lookup"><span data-stu-id="83319-116">_References_ (like **children** and **thumbnails**) point to collections of other resources.</span></span>
 
-## <a name="commonly-accessed-resources"></a><span data-ttu-id="acaea-117">一般的にアクセスされるリソース</span><span class="sxs-lookup"><span data-stu-id="acaea-117">Commonly accessed resources</span></span>
+## <a name="commonly-accessed-resources"></a><span data-ttu-id="83319-117">一般的にアクセスされるリソース</span><span class="sxs-lookup"><span data-stu-id="83319-117">Commonly accessed resources</span></span>
 
-<span data-ttu-id="acaea-118">ファイルの相互作用に関するほとんどの API 要求では、**Drive** または **DriveItem** にアクセスするために以下の基本リソースのいずれかを使用します。</span><span class="sxs-lookup"><span data-stu-id="acaea-118">Most API requests for file interactions will use one of these base resources to access a **Drive** or **DriveItem**.</span></span>
+<span data-ttu-id="83319-118">ファイルの相互作用に関するほとんどの API 要求では、**Drive** または **DriveItem** にアクセスするために以下の基本リソースのいずれかを使用します。</span><span class="sxs-lookup"><span data-stu-id="83319-118">Most API requests for file interactions will use one of these base resources to access a **Drive** or **DriveItem**.</span></span>
 
-| <span data-ttu-id="acaea-119">パス</span><span class="sxs-lookup"><span data-stu-id="acaea-119">Path</span></span>    | <span data-ttu-id="acaea-120">リソース</span><span class="sxs-lookup"><span data-stu-id="acaea-120">Resource</span></span>    |
+| <span data-ttu-id="83319-119">パス</span><span class="sxs-lookup"><span data-stu-id="83319-119">Path</span></span>    | <span data-ttu-id="83319-120">リソース</span><span class="sxs-lookup"><span data-stu-id="83319-120">Resource</span></span>    |
 |---------|-------------|
-| `/me/drive` | <span data-ttu-id="acaea-121">ユーザーの OneDrive。</span><span class="sxs-lookup"><span data-stu-id="acaea-121">User's OneDrive</span></span> |
-| `/me/drives` | <span data-ttu-id="acaea-122">そのユーザーに使用できる OneDrive リソースを列挙します。</span><span class="sxs-lookup"><span data-stu-id="acaea-122">Enumerate OneDrive resources available to the user.</span></span> |
-| `/drives/{drive-id}` | <span data-ttu-id="acaea-123">ドライブの ID を使用して特定の **Drive** にアクセスします。</span><span class="sxs-lookup"><span data-stu-id="acaea-123">Access a specific **Drive** by the drive's ID.</span></span> |
-| `/drives/{drive-id}/root/children` | <span data-ttu-id="acaea-124">特定の **Drive** のルートにある **DriveItem** リソースを列挙します。</span><span class="sxs-lookup"><span data-stu-id="acaea-124">Enumerate the **DriveItem** resources in the root of a specific **Drive**.</span></span> |
-| `/me/drive/items/{item-id}` | <span data-ttu-id="acaea-125">一意の ID を使用してユーザーの OneDrive にある **DriveItem** にアクセスします。</span><span class="sxs-lookup"><span data-stu-id="acaea-125">Access a **DriveItem** in the user's OneDrive by its unique ID.</span></span> |
-| `/me/drive/special/{special-id}` | <span data-ttu-id="acaea-126">既知の名前を使用してユーザーの OneDrive にある特別な (名前付き) フォルダーにアクセスします。</span><span class="sxs-lookup"><span data-stu-id="acaea-126">Access a special (named) folder in the user's OneDrive by its known name.</span></span> |
-| `/users/{user-id}/drive` | <span data-ttu-id="acaea-127">別のユーザーの一意の ID を使用してそのユーザーの OneDrive にアクセスします。</span><span class="sxs-lookup"><span data-stu-id="acaea-127">Access another user's OneDrive by using the user's unique ID.</span></span> |
-| `/groups/{group-id}/drive` | <span data-ttu-id="acaea-128">グループの一意の ID を使用してグループの既定のドキュメント ライブラリにアクセスします。</span><span class="sxs-lookup"><span data-stu-id="acaea-128">Access the default document library for a group by the group's unique ID.</span></span> |
-| `/shares/{share-id}` | <span data-ttu-id="acaea-129">**sharedId** や共有 URL を使用して **DriveItem** にアクセスします。</span><span class="sxs-lookup"><span data-stu-id="acaea-129">Access a **DriveItem** by its **sharedId** or sharing URL.</span></span> |
+| `/me/drive` | <span data-ttu-id="83319-121">ユーザーの OneDrive。</span><span class="sxs-lookup"><span data-stu-id="83319-121">User's OneDrive</span></span> |
+| `/me/drives` | <span data-ttu-id="83319-122">そのユーザーに使用できる OneDrive リソースを列挙します。</span><span class="sxs-lookup"><span data-stu-id="83319-122">Enumerate OneDrive resources available to the user.</span></span> |
+| `/drives/{drive-id}` | <span data-ttu-id="83319-123">ドライブの ID を使用して特定の **Drive** にアクセスします。</span><span class="sxs-lookup"><span data-stu-id="83319-123">Access a specific **Drive** by the drive's ID.</span></span> |
+| `/drives/{drive-id}/root/children` | <span data-ttu-id="83319-124">特定の **Drive** のルートにある **DriveItem** リソースを列挙します。</span><span class="sxs-lookup"><span data-stu-id="83319-124">Enumerate the **DriveItem** resources in the root of a specific **Drive**.</span></span> |
+| `/me/drive/items/{item-id}` | <span data-ttu-id="83319-125">一意の ID を使用してユーザーの OneDrive にある **DriveItem** にアクセスします。</span><span class="sxs-lookup"><span data-stu-id="83319-125">Access a **DriveItem** in the user's OneDrive by its unique ID.</span></span> |
+| `/me/drive/special/{special-id}` | <span data-ttu-id="83319-126">既知の名前を使用してユーザーの OneDrive にある特別な (名前付き) フォルダーにアクセスします。</span><span class="sxs-lookup"><span data-stu-id="83319-126">Access a special (named) folder in the user's OneDrive by its known name.</span></span> |
+| `/users/{user-id}/drive` | <span data-ttu-id="83319-127">別のユーザーの一意の ID を使用してそのユーザーの OneDrive にアクセスします。</span><span class="sxs-lookup"><span data-stu-id="83319-127">Access another user's OneDrive by using the user's unique ID.</span></span> |
+| `/groups/{group-id}/drive` | <span data-ttu-id="83319-128">グループの一意の ID を使用してグループの既定のドキュメント ライブラリにアクセスします。</span><span class="sxs-lookup"><span data-stu-id="83319-128">Access the default document library for a group by the group's unique ID.</span></span> |
+| `/shares/{share-id}` | <span data-ttu-id="83319-129">**sharedId** や共有 URL を使用して **DriveItem** にアクセスします。</span><span class="sxs-lookup"><span data-stu-id="83319-129">Access a **DriveItem** by its **sharedId** or sharing URL.</span></span> |
 
-<span data-ttu-id="acaea-p105">一意の ID を使用して **Drive** 内の **DriveItem** にアドレス指定することに加え、既知のリソースからの相対パスを使用することによってアプリで **DriveItem** にアドレス指定することもできます。パスを使用してアドレス指定するには、コロン (`:`) を使用して相対パスをエスケープします。次の表に、コロンを使用してパスでアイテムをアドレス指定するいくつかの方法を示します。</span><span class="sxs-lookup"><span data-stu-id="acaea-p105">In addition to addressing a **DriveItem** within a **Drive** by unique ID, your app can also address a **DriveItem** by relative path from a known resource. To address using a path, the colon (`:`) character is used to escape the relative path. This table provides an example of different ways to use the colon character to address an item by path.</span></span>
+<span data-ttu-id="83319-p105">一意の ID を使用して **Drive** 内の **DriveItem** にアドレス指定することに加え、既知のリソースからの相対パスを使用することによってアプリで **DriveItem** にアドレス指定することもできます。パスを使用してアドレス指定するには、コロン (`:`) を使用して相対パスをエスケープします。次の表に、コロンを使用してパスでアイテムをアドレス指定するいくつかの方法を示します。</span><span class="sxs-lookup"><span data-stu-id="83319-p105">In addition to addressing a **DriveItem** within a **Drive** by unique ID, your app can also address a **DriveItem** by relative path from a known resource. To address using a path, the colon (`:`) character is used to escape the relative path. This table provides an example of different ways to use the colon character to address an item by path.</span></span>
 
-| <span data-ttu-id="acaea-133">Path</span><span class="sxs-lookup"><span data-stu-id="acaea-133">Path</span></span> | <span data-ttu-id="acaea-134">リソース</span><span class="sxs-lookup"><span data-stu-id="acaea-134">Resource</span></span> |
+| <span data-ttu-id="83319-133">Path</span><span class="sxs-lookup"><span data-stu-id="83319-133">Path</span></span> | <span data-ttu-id="83319-134">リソース</span><span class="sxs-lookup"><span data-stu-id="83319-134">Resource</span></span> |
 |---|---|
-| `/me/drive/root:/path/to/file` | <span data-ttu-id="acaea-135">ユーザーの OneDrive ルート フォルダーへの相対パスを使用して **DriveItem** にアクセスします。</span><span class="sxs-lookup"><span data-stu-id="acaea-135">Access a **DriveItem** by path relative to the user's OneDrive root folder.</span></span> |
-| `/me/drive/items/{item-id}:/path/to/file` | <span data-ttu-id="acaea-136">別のアイテム (**folder** ファセットを持つ **DriveItem**) への相対パスを使用して **DriveItem** にアクセスします。</span><span class="sxs-lookup"><span data-stu-id="acaea-136">Access a **DriveItem** by path relative to another item (a **DriveItem** with a **folder** facet).</span></span> |
-| `/me/drive/root:/path/to/folder:/children` | <span data-ttu-id="acaea-137">ユーザーの OneDrive のルートへの相対パスを使用して **DriveItem** の子を一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="acaea-137">List the children of a **DriveItem** by path relative to the root of the user's OneDrive.</span></span> |
-| `/me/drive/items/{item-id}:/path/to/folder:/children` | <span data-ttu-id="acaea-138">別のアイテムへの相対パスを使用して **DriveItem** の子を一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="acaea-138">List the children of a **DriveItem** by path relative to another item.</span></span> |
+| `/me/drive/root:/path/to/file` | <span data-ttu-id="83319-135">ユーザーの OneDrive ルート フォルダーへの相対パスを使用して **DriveItem** にアクセスします。</span><span class="sxs-lookup"><span data-stu-id="83319-135">Access a **DriveItem** by path relative to the user's OneDrive root folder.</span></span> |
+| `/me/drive/items/{item-id}:/path/to/file` | <span data-ttu-id="83319-136">別のアイテム (**folder** ファセットを持つ **DriveItem**) への相対パスを使用して **DriveItem** にアクセスします。</span><span class="sxs-lookup"><span data-stu-id="83319-136">Access a **DriveItem** by path relative to another item (a **DriveItem** with a **folder** facet).</span></span> |
+| `/me/drive/root:/path/to/folder:/children` | <span data-ttu-id="83319-137">ユーザーの OneDrive のルートへの相対パスを使用して **DriveItem** の子を一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="83319-137">List the children of a **DriveItem** by path relative to the root of the user's OneDrive.</span></span> |
+| `/me/drive/items/{item-id}:/path/to/folder:/children` | <span data-ttu-id="83319-138">別のアイテムへの相対パスを使用して **DriveItem** の子を一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="83319-138">List the children of a **DriveItem** by path relative to another item.</span></span> |
 
-## <a name="drive-resource"></a><span data-ttu-id="acaea-139">ドライブ リソース</span><span class="sxs-lookup"><span data-stu-id="acaea-139">Drive resource</span></span>
+## <a name="drive-resource"></a><span data-ttu-id="83319-139">ドライブ リソース</span><span class="sxs-lookup"><span data-stu-id="83319-139">Drive resource</span></span>
 
-<span data-ttu-id="acaea-p106">[ドライブ リソース](drive.md)は、ユーザーの OneDrive または SharePoint ドキュメント ライブラリ内の最上位のオブジェクトです。ほぼすべてのファイル操作は、特定のドライブ リソースをアドレス指定することによって開始されます。</span><span class="sxs-lookup"><span data-stu-id="acaea-p106">The [Drive resource](drive.md) is the top-level object within a user's OneDrive or a SharePoint document library. Nearly all files operations will start by addressing a specific drive resource.</span></span>
+<span data-ttu-id="83319-p106">[ドライブ リソース](drive.md)は、ユーザーの OneDrive または SharePoint ドキュメント ライブラリ内の最上位のオブジェクトです。ほぼすべてのファイル操作は、特定のドライブ リソースをアドレス指定することによって開始されます。</span><span class="sxs-lookup"><span data-stu-id="83319-p106">The [Drive resource](drive.md) is the top-level object within a user's OneDrive or a SharePoint document library. Nearly all files operations will start by addressing a specific drive resource.</span></span>
 
-<span data-ttu-id="acaea-142">ドライブの一意の ID または [User](user.md)、[Group](group.md)、組織の既定のドライブを使用して、ドライブ リソースをアドレス指定できます。</span><span class="sxs-lookup"><span data-stu-id="acaea-142">A drive resource can be addressed either by the drive's unique ID or by the default drive for a [User](user.md), [Group](group.md), or organization.</span></span> 
+<span data-ttu-id="83319-142">ドライブの一意の ID または [User](user.md)、[Group](group.md)、組織の既定のドライブを使用して、ドライブ リソースをアドレス指定できます。</span><span class="sxs-lookup"><span data-stu-id="83319-142">A drive resource can be addressed either by the drive's unique ID or by the default drive for a [User](user.md), [Group](group.md), or organization.</span></span> 
 
-## <a name="driveitem-resource"></a><span data-ttu-id="acaea-143">DriveItem リソース</span><span class="sxs-lookup"><span data-stu-id="acaea-143">DriveItem resource</span></span>
+## <a name="driveitem-resource"></a><span data-ttu-id="83319-143">DriveItem リソース</span><span class="sxs-lookup"><span data-stu-id="83319-143">DriveItem resource</span></span>
 
-<span data-ttu-id="acaea-p107">[DriveItem](driveitem.md) は、ドライブのファイル システム内のオブジェクトです。`/items/{item-id}` 構文で **id** を使用して、または `/root:/path/to/item/` 構文でファイル システム パスを使用して、それらにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="acaea-p107">[DriveItems](driveitem.md) are the objects inside a drive's file system. They can be accessed by their **id** by using `/items/{item-id}` syntax, or by their file system path using the `/root:/path/to/item/` syntax.</span></span>
+<span data-ttu-id="83319-p107">[DriveItem](driveitem.md) は、ドライブのファイル システム内のオブジェクトです。`/items/{item-id}` 構文で **id** を使用して、または `/root:/path/to/item/` 構文でファイル システム パスを使用して、それらにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="83319-p107">[DriveItems](driveitem.md) are the objects inside a drive's file system. They can be accessed by their **id** by using `/items/{item-id}` syntax, or by their file system path using the `/root:/path/to/item/` syntax.</span></span>
 
-<span data-ttu-id="acaea-146">DriveItem には、アイテムの id および機能に関するデータを提供する_ファセット_が存在します。</span><span class="sxs-lookup"><span data-stu-id="acaea-146">DriveItems have _facets_ that provide data about the item's identity and capabilities.</span></span>
+<span data-ttu-id="83319-146">DriveItem には、アイテムの id および機能に関するデータを提供する_ファセット_が存在します。</span><span class="sxs-lookup"><span data-stu-id="83319-146">DriveItems have _facets_ that provide data about the item's identity and capabilities.</span></span>
 
-<span data-ttu-id="acaea-147">**folder** ファセットを持つ DriveItem は、アイテムのコンテナーとして機能し、フォルダーの下のアイテムのコレクションを指す**子**参照を持ちます。</span><span class="sxs-lookup"><span data-stu-id="acaea-147">DriveItems with a **folder** facet act as containers of items, and have a **children** reference, which points to a collection of items under the folder.</span></span>
+<span data-ttu-id="83319-147">**folder** ファセットを持つ DriveItem は、アイテムのコンテナーとして機能し、フォルダーの下のアイテムのコレクションを指す**子**参照を持ちます。</span><span class="sxs-lookup"><span data-stu-id="83319-147">DriveItems with a **folder** facet act as containers of items, and have a **children** reference, which points to a collection of items under the folder.</span></span>
 
-## <a name="shared-folders-and-remote-items"></a><span data-ttu-id="acaea-148">共有フォルダーおよびリモート アイテム</span><span class="sxs-lookup"><span data-stu-id="acaea-148">Shared folders and remote items</span></span>
+## <a name="shared-folders-and-remote-items"></a><span data-ttu-id="83319-148">共有フォルダーおよびリモート アイテム</span><span class="sxs-lookup"><span data-stu-id="83319-148">Shared folders and remote items</span></span>
 
-<span data-ttu-id="acaea-p108">OneDrive 個人ユーザーは、別のドライブから自分の OneDrive に 1 つ以上の共有アイテムを追加できます。これらの共有のアイテムは、[remoteItem](remoteitem.md) ファセットを持つ**子**コレクションの **DriveItem** として表示されます。</span><span class="sxs-lookup"><span data-stu-id="acaea-p108">OneDrive personal users can add one or more shared items from another drive to their own OneDrive. These shared items appear as a **DriveItem** in the **children** collection with a [remoteItem](remoteitem.md) facet.</span></span>
+<span data-ttu-id="83319-p108">OneDrive 個人ユーザーは、別のドライブから自分の OneDrive に 1 つ以上の共有アイテムを追加できます。これらの共有のアイテムは、[remoteItem](remoteitem.md) ファセットを持つ**子**コレクションの **DriveItem** として表示されます。</span><span class="sxs-lookup"><span data-stu-id="83319-p108">OneDrive personal users can add one or more shared items from another drive to their own OneDrive. These shared items appear as a **DriveItem** in the **children** collection with a [remoteItem](remoteitem.md) facet.</span></span>
 
-<span data-ttu-id="acaea-151">共有フォルダーとリモート アイテムの操作方法の詳細については、「[リモート アイテムおよび共有フォルダー](remoteitem.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="acaea-151">For more information about working with shared folders and remote items, see [Remote items and shared folders](remoteitem.md).</span></span>   
+<span data-ttu-id="83319-151">共有フォルダーとリモート アイテムの操作方法の詳細については、「[リモート アイテムおよび共有フォルダー](remoteitem.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="83319-151">For more information about working with shared folders and remote items, see [Remote items and shared folders](remoteitem.md).</span></span>   
 
-## <a name="sharing-and-permissions"></a><span data-ttu-id="acaea-152">共有とアクセス許可</span><span class="sxs-lookup"><span data-stu-id="acaea-152">Sharing and permissions</span></span>
+## <a name="sharing-and-permissions"></a><span data-ttu-id="83319-152">共有とアクセス許可</span><span class="sxs-lookup"><span data-stu-id="83319-152">Sharing and permissions</span></span>
 
-<span data-ttu-id="acaea-p109">OneDrive と SharePoint のドキュメント ライブラリの最も一般的な操作の 1 つは、他のユーザーとコンテンツを共有することです。Microsoft Graph を使用することによって、アプリで[共有リンク](../api/driveitem-createlink.md)を作成し、[アクセス許可を追加してドライブ内のアイテムに招待状を送信](../api/driveitem-invite.md)することができます。</span><span class="sxs-lookup"><span data-stu-id="acaea-p109">One of the most common actions for OneDrive and SharePoint document libraries is sharing content with other people. Microsoft Graph allows your app to create [sharing links](../api/driveitem-createlink.md), [add permissions and send invitations](../api/driveitem-invite.md) to items in a drive.</span></span>
+<span data-ttu-id="83319-p109">OneDrive と SharePoint のドキュメント ライブラリの最も一般的な操作の 1 つは、他のユーザーとコンテンツを共有することです。Microsoft Graph を使用することによって、アプリで[共有リンク](../api/driveitem-createlink.md)を作成し、[アクセス許可を追加してドライブ内のアイテムに招待状を送信](../api/driveitem-invite.md)することができます。</span><span class="sxs-lookup"><span data-stu-id="83319-p109">One of the most common actions for OneDrive and SharePoint document libraries is sharing content with other people. Microsoft Graph allows your app to create [sharing links](../api/driveitem-createlink.md), [add permissions and send invitations](../api/driveitem-invite.md) to items in a drive.</span></span>
 
-<span data-ttu-id="acaea-155">Microsoft Graph では、アプリで共有リンクから[共有コンテンツに直接アクセス](../api/shares-get.md)することもできます。</span><span class="sxs-lookup"><span data-stu-id="acaea-155">Microsoft Graph also provides a way for your app to [access shared content](../api/shares-get.md) directly from a sharing link.</span></span>
+<span data-ttu-id="83319-155">Microsoft Graph では、アプリで共有リンクから[共有コンテンツに直接アクセス](../api/shares-get.md)することもできます。</span><span class="sxs-lookup"><span data-stu-id="83319-155">Microsoft Graph also provides a way for your app to [access shared content](../api/shares-get.md) directly from a sharing link.</span></span>
 
  

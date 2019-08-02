@@ -4,29 +4,30 @@ description: managedAppProtection オブジェクトのプロパティとリレ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3b4cdd615f1201a8ae98961f9f3b1a919d2f05a7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: ceb30e1998232b15e4219594d5eb39dd64493709
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570912"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996715"
 ---
-# <a name="get-managedappprotection"></a><span data-ttu-id="72458-103">Get managedAppProtection</span><span class="sxs-lookup"><span data-stu-id="72458-103">Get managedAppProtection</span></span>
+# <a name="get-managedappprotection"></a><span data-ttu-id="b6a21-103">Get managedAppProtection</span><span class="sxs-lookup"><span data-stu-id="b6a21-103">Get managedAppProtection</span></span>
 
-> <span data-ttu-id="72458-104">**注:** Microsoft graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="72458-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="b6a21-104">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="b6a21-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="72458-105">[managedAppProtection](../resources/intune-mam-managedappprotection.md) オブジェクトのプロパティとリレーションシップを読み取ります。</span><span class="sxs-lookup"><span data-stu-id="72458-105">Read properties and relationships of the [managedAppProtection](../resources/intune-mam-managedappprotection.md) object.</span></span>
+<span data-ttu-id="b6a21-105">[managedAppProtection](../resources/intune-mam-managedappprotection.md) オブジェクトのプロパティとリレーションシップを読み取ります。</span><span class="sxs-lookup"><span data-stu-id="b6a21-105">Read properties and relationships of the [managedAppProtection](../resources/intune-mam-managedappprotection.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="72458-106">前提条件</span><span class="sxs-lookup"><span data-stu-id="72458-106">Prerequisites</span></span>
-<span data-ttu-id="72458-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="72458-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="b6a21-106">前提条件</span><span class="sxs-lookup"><span data-stu-id="b6a21-106">Prerequisites</span></span>
+<span data-ttu-id="b6a21-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b6a21-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="72458-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="72458-109">Permission type</span></span>|<span data-ttu-id="72458-110">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="72458-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="b6a21-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="b6a21-109">Permission type</span></span>|<span data-ttu-id="b6a21-110">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="b6a21-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="72458-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="72458-111">Delegated (work or school account)</span></span>|<span data-ttu-id="72458-112">DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="72458-112">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
-|<span data-ttu-id="72458-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="72458-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="72458-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="72458-114">Not supported.</span></span>|
-|<span data-ttu-id="72458-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="72458-115">Application</span></span>|<span data-ttu-id="72458-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="72458-116">Not supported.</span></span>|
+|<span data-ttu-id="b6a21-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="b6a21-111">Delegated (work or school account)</span></span>|<span data-ttu-id="b6a21-112">DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="b6a21-112">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
+|<span data-ttu-id="b6a21-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="b6a21-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="b6a21-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b6a21-114">Not supported.</span></span>|
+|<span data-ttu-id="b6a21-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="b6a21-115">Application</span></span>|<span data-ttu-id="b6a21-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b6a21-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="72458-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="72458-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b6a21-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="b6a21-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,31 +38,31 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/appl
 GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/intendedPolicies/{managedAppPolicyId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="72458-118">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="72458-118">Optional query parameters</span></span>
-<span data-ttu-id="72458-119">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://docs.microsoft.com/en-us/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="72458-119">This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="b6a21-118">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="b6a21-118">Optional query parameters</span></span>
+<span data-ttu-id="b6a21-119">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://docs.microsoft.com/en-us/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="b6a21-119">This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="72458-120">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="72458-120">Request headers</span></span>
-|<span data-ttu-id="72458-121">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="72458-121">Header</span></span>|<span data-ttu-id="72458-122">値</span><span class="sxs-lookup"><span data-stu-id="72458-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="b6a21-120">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b6a21-120">Request headers</span></span>
+|<span data-ttu-id="b6a21-121">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b6a21-121">Header</span></span>|<span data-ttu-id="b6a21-122">値</span><span class="sxs-lookup"><span data-stu-id="b6a21-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="72458-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="72458-123">Authorization</span></span>|<span data-ttu-id="72458-124">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="72458-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="72458-125">承諾</span><span class="sxs-lookup"><span data-stu-id="72458-125">Accept</span></span>|<span data-ttu-id="72458-126">application/json</span><span class="sxs-lookup"><span data-stu-id="72458-126">application/json</span></span>|
+|<span data-ttu-id="b6a21-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="b6a21-123">Authorization</span></span>|<span data-ttu-id="b6a21-124">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="b6a21-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="b6a21-125">承諾</span><span class="sxs-lookup"><span data-stu-id="b6a21-125">Accept</span></span>|<span data-ttu-id="b6a21-126">application/json</span><span class="sxs-lookup"><span data-stu-id="b6a21-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="72458-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="72458-127">Request body</span></span>
-<span data-ttu-id="72458-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="72458-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b6a21-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="b6a21-127">Request body</span></span>
+<span data-ttu-id="b6a21-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="b6a21-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="72458-129">応答</span><span class="sxs-lookup"><span data-stu-id="72458-129">Response</span></span>
-<span data-ttu-id="72458-130">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [managedAppProtection](../resources/intune-mam-managedappprotection.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="72458-130">If successful, this method returns a `200 OK` response code and [managedAppProtection](../resources/intune-mam-managedappprotection.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="b6a21-129">応答</span><span class="sxs-lookup"><span data-stu-id="b6a21-129">Response</span></span>
+<span data-ttu-id="b6a21-130">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [managedAppProtection](../resources/intune-mam-managedappprotection.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="b6a21-130">If successful, this method returns a `200 OK` response code and [managedAppProtection](../resources/intune-mam-managedappprotection.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="72458-131">例</span><span class="sxs-lookup"><span data-stu-id="72458-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b6a21-131">例</span><span class="sxs-lookup"><span data-stu-id="b6a21-131">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="72458-132">要求</span><span class="sxs-lookup"><span data-stu-id="72458-132">Request</span></span>
-<span data-ttu-id="72458-133">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="72458-133">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="b6a21-132">要求</span><span class="sxs-lookup"><span data-stu-id="b6a21-132">Request</span></span>
+<span data-ttu-id="b6a21-133">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="b6a21-133">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceAppManagement/managedAppPolicies/{managedAppPolicyId}
 ```
 
-### <a name="response"></a><span data-ttu-id="72458-134">応答</span><span class="sxs-lookup"><span data-stu-id="72458-134">Response</span></span>
-<span data-ttu-id="72458-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="72458-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="b6a21-134">応答</span><span class="sxs-lookup"><span data-stu-id="b6a21-134">Response</span></span>
+<span data-ttu-id="b6a21-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="b6a21-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
