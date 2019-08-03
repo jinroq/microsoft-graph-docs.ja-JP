@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 708c8c33d4ae69007a7a1e1e15af71ab69b97e78
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2c3ef3317b513cdcecef4fb0fe402584afe6fa6d
+ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013508"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36173056"
 ---
 # <a name="azure-ad-access-reviews"></a>Azure AD アクセス レビュー
 
@@ -69,8 +69,8 @@ ms.locfileid: "36013508"
 |:----------------|:------------------|:------------|:--------------------------------------------|
 |Azure AD ロールの[Accessreview](accessreview.md) | 読み取り | AccessReview を参照してください。すべてのまたは AccessReview. | 全体管理者、セキュリティ管理者、セキュリティリーダ、または特権ロール管理者 |
 |Azure AD ロールの[Accessreview](accessreview.md) | 作成、更新、または削除 | AccessReview.ReadWrite.All | グローバル管理者または特権ロール管理者 |
-|グループまたはアプリの[Accessreview](accessreview.md) | 読み取り | AccessReview を参照してください。すべてのまたは AccessReview. | グローバル管理者、セキュリティ管理者、セキュリティリーダ、またはユーザー管理者 |
-|グループまたはアプリの[Accessreview](accessreview.md) | 作成、更新、または削除 | AccessReview.ReadWrite.All | 全体管理者またはユーザー管理者 |
+|グループまたはアプリの[Accessreview](accessreview.md) | 読み取り | AccessReview を参照してください。読み取り、accessreview、または AccessReview があります。 | グローバル管理者、セキュリティ管理者、セキュリティリーダ、またはユーザー管理者 |
+|グループまたはアプリの[Accessreview](accessreview.md) | 作成、更新、または削除 | AccessReview を参照してください。読み取り/書き込み。 | 全体管理者またはユーザー管理者 |
 | [プログラム](program.md)および[programcontrol](programcontrol.md)| 読み取り | ProgramControl. すべてのまたはすべてのプログラムを読み取ることができます。 |  グローバル管理者、セキュリティ管理者、セキュリティリーダ、またはユーザー管理者 |
 | [プログラム](program.md)および[programcontrol](programcontrol.md) | 作成、更新、または削除 | ProgramControl.ReadWrite.All | 全体管理者またはユーザー管理者 |
 

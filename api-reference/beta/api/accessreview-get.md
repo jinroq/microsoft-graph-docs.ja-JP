@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2d052357fd5ff609a701753348f6a276d0d12338
-ms.sourcegitcommit: a700f1c283a5d847cd1697e26bcd47bc8625384e
+ms.openlocfilehash: c721fbfbdb335898c3b92b335539df9cf83db825
+ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36049549"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36172736"
 ---
 # <a name="get-accessreview"></a>AccessReview を取得する
 
@@ -27,7 +27,7 @@ Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、 [
 
 |アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント)     | AccessReview を参照してください。  |
+|委任 (職場または学校のアカウント)     | Accessreview を参照してください。この後、accessreview を参照してください。  |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
 |アプリケーション                            | AccessReview を参照してください。  |
 

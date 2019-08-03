@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 84345bd87cb1b4ba02746045d69ba783d1710804
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1f343edec96af2e51d1bb643abb0652425c54624
+ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006480"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36173049"
 ---
 # <a name="educationassignment-resource-type"></a>educationAssignment リソースの種類
 
@@ -26,15 +26,17 @@ ms.locfileid: "36006480"
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[割り当てを取得する](../api/educationassignment-get.md) | [educationAssignment](educationassignment.md) |**EducationAssignment**オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[割り当てリソースを作成する](../api/educationassignment-post-resources.md) |[educationAssignmentResource](educationassignmentresource.md)| Resources コレクションへの投稿によって新しい**educationAssignmentResource**を作成します。|
 |[リソースを一覧表示する](../api/educationassignment-list-resources.md) |[educationAssignmentResource](educationassignmentresource.md)コレクション| **EducationAssignmentResource**オブジェクトのコレクションを取得します。|
 |[送信の一覧表示](../api/educationassignment-list-submissions.md) |[educationSubmission](educationsubmission.md)コレクション| **EducationSubmission**オブジェクトのコレクションを取得します。|
 |[カテゴリの一覧表示](../api/educationassignment-list-categories.md) |[educationCategory](educationcategory.md)コレクション| **EducationCategory**オブジェクトのコレクションを取得します。|
-|[カテゴリを追加する](../api/educationassignment-add-categories.md) |[educationCategory](educationcategory.md) | クラスに属する**educationCategory**をこの割り当てに割り当てます。|
-|[カテゴリを削除する](../api/educationassignment-remove-category.md) |None| クラスに属する**educationCategory**をこの割り当てから削除します。|
+|[割り当てリソースを作成する](../api/educationassignment-post-resources.md) |[educationAssignmentResource](educationassignmentresource.md)| Resources コレクションへの投稿によって新しい**educationAssignmentResource**を作成します。|
+|[割り当てを取得する](../api/educationassignment-get.md) | [educationAssignment](educationassignment.md) |**EducationAssignment**オブジェクトのプロパティとリレーションシップを読み取ります。|
 |[Update](../api/educationassignment-update.md) | [educationAssignment](educationassignment.md) |**EducationAssignment**オブジェクトを更新します。 |
 |[Delete](../api/educationassignment-delete.md) | None |**EducationAssignment**オブジェクトを削除します。 |
+|[カテゴリを追加する](../api/educationassignment-add-categories.md) |[educationCategory](educationcategory.md) | クラスに属する**educationCategory**をこの割り当てに割り当てます。|
+|[カテゴリを削除する](../api/educationassignment-remove-category.md) |None| クラスに属する**educationCategory**をこの割り当てから削除します。|
+|[割り当てを適用する (ic)](../api/educationassignment-put-rubric.md)|None|既存の**educationRubric**をこの割り当てに添付します。|
+|[の削除](../api/educationassignment-delete-rubric.md)|None|この割り当てから**educationRubric**を切断します。|
 |[Publish](../api/educationassignment-publish.md)|[educationAssignment](educationassignment.md)|**EducationAssignment**オブジェクトの状態を下書きから発行済みに変更します。|
 |[リソース フォルダーの URL を取得する](../api/educationassignment-getresourcesfolderurl.md)| string| 割り当てリソースの一部として、ファイルベースのリソースが配置される OneDrive フォルダーです。 ファイルをリソースとして追加するには、このフォルダーに配置する必要があります。|
 
@@ -50,7 +52,7 @@ ms.locfileid: "36006480"
 |classId|String| この割り当てが属するクラス。 |
 |createdBy|[identitySet](identityset.md)| 割り当てを作成したユーザー。 |
 |createdDateTime|DateTimeOffset|割り当てが作成された瞬間。  Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
-|displayName|String|割り当ての名前を指定します。|
+|displayName|文字列|割り当ての名前を指定します。|
 |dueDateTime|DateTimeOffset|学生の割り当てが期限になる日付。  Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |変化|[educationAssignmentGradeType](educationassignmentgradetype.md)|割り当てが採点される方法。 |
 |手順|[itemBody](itembody.md)| 割り当ての手順。  これに加えて、表示名と共に、受講者に実行する操作を指示します。 |
@@ -64,6 +66,7 @@ ms.locfileid: "36006480"
 |リソース|[educationAssignmentResource](educationassignmentresource.md)コレクション| この割り当てに関連付けられているオブジェクトを学習します。  このリストは教師のみが変更できます。 Null 許容型。|
 |投稿|[educationSubmission](educationsubmission.md)コレクション| 発行された後に、各学生の仕事と成績を表す送信オブジェクトがあります。  読み取り専用です。 Null 許容型。|
 |categories|[educationCategory](educationcategory.md)コレクション| 設定されている場合、ユーザーは特定の種類の割り当てを簡単に見つけることができます。  読み取り専用です。 Null 許容型。|
+|rubric|[educationRubric](educationrubric.md)|設定すると、この割り当てに関連付けられている、適用されます。|
 
 ## <a name="json-representation"></a>JSON 表記
 

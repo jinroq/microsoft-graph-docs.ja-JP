@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 069905c8a3391396ee880f98197bd5adfd8e5c72
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8ae2b9ece88fa5f2ae56bcd3d87418a18b11d317
+ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35946022"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36172720"
 ---
 # <a name="list-my-accessreview-decisions"></a>自分の accessReview の決定事項を一覧表示する
 
@@ -22,7 +22,7 @@ Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、�
 
 |アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント)     | AccessReview を参照してください。   |
+|委任 (職場または学校のアカウント)     | Accessreview を参照してください。この後、accessreview を参照してください。   |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
 |アプリケーション                            | サポートされていません。 |
 

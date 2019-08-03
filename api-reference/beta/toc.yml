@@ -7273,12 +7273,16 @@
                   href: api/educationuser-list-schools.md
                 - name: クラスを一覧表示する
                   href: api/educationuser-list-classes.md
+                - name: リストを表示する (ics)
+                  href: api/educationuser-list-rubrics.md
                 - name: ユーザーを取得する
                   href: api/educationuser-get.md
                 - name: ユーザーを削除する
                   href: api/educationuser-delete.md
                 - name: 差分を取得する
                   href: api/educationuser-delta.md
+                - name: の作成
+                  href: api/educationuser-post-rubrics.md
             - name: 割り当て
               href: resources/educationassignment.md
               items:
@@ -7306,12 +7310,18 @@
                   href: api/educationassignment-list-submissions.md
                 - name: リソース フォルダーの URL を取得する
                   href: api/educationassignment-getresourcesfolderurl.md
+                - name: 割り当てに関連付けられているリソースを取得する
+                  href: api/educationassignment-get-rubric.md
                 - name: カテゴリを一覧表示する
                   href: api/educationassignment-list-categories.md
                 - name: カテゴリの追加
                   href: api/educationassignment-add-categories.md
                 - name: カテゴリを削除する
                   href: api/educationassignment-remove-category.md
+                - name: 割り当てへの割り当てを割り当てる
+                  href: api/educationassignment-put-rubric.md
+                - name: 割り当てからの指定を削除する
+                  href: api/educationassignment-delete-rubric.md
             - name: カテゴリ
               href: resources/educationcategory.md
               items:
@@ -7319,6 +7329,15 @@
                   href: api/educationcategory-get.md
                 - name: カテゴリを削除する
                   href: api/educationcategory-delete.md
+            - name: Rubric
+              href: resources/educationrubric.md
+              items:
+                - name: 利用できる ic
+                  href: api/educationrubric-get.md
+                - name: 更新プログラムを更新する
+                  href: api/educationrubric-update.md
+                - name: の削除 (ic)
+                  href: api/educationrubric-delete.md
             - name: 申請
               href: resources/educationsubmission.md
               items:
@@ -7338,12 +7357,19 @@
                   href: api/educationsubmission-unsubmit.md
                 - name: 申請したリソースを一覧表示する
                   href: api/educationsubmission-list-submittedresources.md
+                - name: 結果の一覧表示
+                  href: api/educationsubmission-list-outcomes.md
                 - name: 申請したリソースを取得する
                   href: api/educationsubmittedsubmissionresource-get.md
                 - name: 申請を評価する
                   href: api/educationsubmission-update.md
                 - name: 申請を戻す
                   href: api/educationsubmission-return.md
+            - name: 結果
+              href: resources/educationoutcome.md
+              items:
+                - name: 更新結果
+                  href: api/educationoutcome-update.md
             - name: 同期プロファイル
               href: resources/educationsynchronizationprofile.md
               items:
@@ -9504,15 +9530,15 @@
             - name: Outlook タスク
               href: resources/outlooktask.md
               items:
-                - name: リスト
+                - name: List
                   href: api/outlookuser-list-tasks.md
-                - name: 作成
+                - name: 作成する
                   href: api/outlookuser-post-tasks.md
                 - name: 取得
                   href: api/outlooktask-get.md
                 - name: 更新
                   href: api/outlooktask-update.md
-                - name: 削除
+                - name: 削除する
                   href: api/outlooktask-delete.md
                 - name: 完了
                   href: api/outlooktask-complete.md
@@ -9523,15 +9549,15 @@
             - name: Outlook タスク フォルダー
               href: resources/outlooktaskfolder.md
               items:
-                - name: リスト
+                - name: List
                   href: api/outlookuser-list-taskfolders.md
-                - name: 作成
+                - name: 作成する
                   href: api/outlookuser-post-taskfolders.md
                 - name: 取得
                   href: api/outlooktaskfolder-get.md
                 - name: 更新
                   href: api/outlooktaskfolder-update.md
-                - name: 削除
+                - name: 削除する
                   href: api/outlooktaskfolder-delete.md
                 - name: フォルダー内のタスクを一覧表示する
                   href: api/outlooktaskfolder-list-tasks.md
@@ -9542,13 +9568,13 @@
               items:
                 - name: リスト
                   href: api/outlookuser-list-taskgroups.md
-                - name: 作成
+                - name: 作成する
                   href: api/outlookuser-post-taskgroups.md
                 - name: 取得
                   href: api/outlooktaskgroup-get.md
                 - name: 更新
                   href: api/outlooktaskgroup-update.md
-                - name: 削除
+                - name: 削除する
                   href: api/outlooktaskfolder-delete.md
                 - name: グループ内のタスク フォルダーを一覧表示する
                   href: api/outlooktaskfolder-list-tasks.md

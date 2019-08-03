@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 81c194c08ddc5ed8f5acc38ae84a5478bb7e0229
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 27467548339dc01f7c95fe55bda159c0569c38ba
+ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972524"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36173042"
 ---
 # <a name="educationsubmission-resource-type"></a>educationSubmission リソースの種類
 
@@ -28,6 +28,7 @@ ms.locfileid: "35972524"
 |[EducationSubmission を取得する](../api/educationsubmission-get.md) | [educationSubmission](educationsubmission.md) |**EducationSubmission**オブジェクトのプロパティとリレーションシップを読み取ります。|
 |[リソースを一覧表示する](../api/educationsubmission-list-resources.md) |[educationSubmissionResource](educationsubmissionresource.md)コレクション| **EducationSubmissionResource**オブジェクトのコレクションを取得します。|
 |[SubmittedResources を一覧表示する](../api/educationsubmission-list-submittedresources.md) |[educationSubmissionResource](educationsubmissionresource.md)コレクション| **EducationSubmissionResource**オブジェクトのコレクションを取得します。|
+|[結果の一覧表示](../api/educationsubmission-list-outcomes.md) |[educationOutcome](educationoutcome.md)コレクション| **EducationOutcome**オブジェクトのコレクションを取得します。|
 |[Update](../api/educationsubmission-update.md) | [educationSubmission](educationsubmission.md) |**EducationSubmission**オブジェクトを更新します。 |
 |[Return](../api/educationsubmission-return.md)|[educationSubmission](educationsubmission.md)|教師は、return を使用して、成績/フィードバックを学生に表示できることを示します。|
 |[Submit](../api/educationsubmission-submit.md)|[educationSubmission](educationsubmission.md)|学生は、submit を使用して割り当てを有効にします。 これにより、リソースが [対象] の [ **Submittedresources** ] フォルダーにコピーされ、状態が更新されます。|
@@ -55,7 +56,8 @@ ms.locfileid: "35972524"
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |リソース|[educationSubmissionResource](educationsubmissionresource.md)コレクション| Null 許容型。|
-|submittedResources|[educationSubmissionResource](educationsubmissionresource.md)コレクション| 読み取り専用。Null 許容型です。|
+|submittedResources|[educationSubmissionResource](educationsubmissionresource.md)コレクション| 読み取り専用です。 Null 許容型。|
+|結果|[educationOutcome](educationOutcome.md)コレクション|読み取り専用。Null 許容型です。|
 
 ## <a name="json-representation"></a>JSON 表記
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: adc47fbbee90330af210207470afc25fb859d970
-ms.sourcegitcommit: a700f1c283a5d847cd1697e26bcd47bc8625384e
+ms.openlocfilehash: 6a221127e766e3c2e8e064dea23932800d3bf2e2
+ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36049604"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36172791"
 ---
 # <a name="delete-accessreview"></a>AccessReview の削除
 
@@ -22,7 +22,7 @@ Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、 [
 
 |アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント)     | AccessReview.ReadWrite.All |
+|委任 (職場または学校のアカウント)     | AccessReview を行って、AccessReview を行います。 |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
 |アプリケーション                            | AccessReview の構成 |
 

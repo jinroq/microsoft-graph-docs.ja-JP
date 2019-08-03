@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 8f9c1bc8747d2057374c4aac6809987572475fdf
-ms.sourcegitcommit: a700f1c283a5d847cd1697e26bcd47bc8625384e
+ms.openlocfilehash: c5d3ae6cdb761ea54d30b7821284fb0c2efa7b9b
+ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36049639"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36173021"
 ---
 # <a name="list-businessflowtemplates"></a>BusinessFlowTemplates を一覧表示する
 
@@ -22,7 +22,7 @@ Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、�
 
 |アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント)     | AccessReview を参照してください。  |
+|委任 (職場または学校のアカウント)     | Accessreview を参照してください。この後、accessreview を参照してください。  |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。 |
 |アプリケーション                            | AccessReview を参照してください。 |
 
