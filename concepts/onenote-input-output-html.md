@@ -4,12 +4,12 @@ description: 'OneNote ページを作成または更新する際に、ページ 
 author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-ms.openlocfilehash: 0cc2c0994a5e4d2a45e78c055af466f1c4999de6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fcb4a8127b633ba309212a7160c9e5548836466c
+ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32578756"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "35639221"
 ---
 # <a name="input-and-output-html-in-onenote-pages"></a>OneNote ページの入出力 HTML
 
@@ -162,20 +162,6 @@ OneNote ページの画像は **img** 要素で表されます。入力 HTML お
     data-src-type="image/png"
     data-fullres-src="https://graph.microsoft.com/v1.0/me/onenote/resources/{image-id}/$value"  
     data-fullres-src-type="image/png" ... />
-```
-
-既定では、画像は、ページ コンテンツの残りの部分と同様、それらを取得するために承認を必要とするため、ブラウザーで直接表示されることはありません。ページにある画像リソースへの公開 URL を取得するには、ページ コンテンツを取得する際に、クエリ文字列に **preAuthenticated=true** を含めます (例: `GET ../pages/{page-id}/content?preAuthenticated=true`)。返される公開 URL は 1 時間有効です。 
-
-#### <a name="image-with-public-url-when-preauthenticatedtrue-is-included-in-the-request"></a>要求に _preAuthenticated=true_ が含まれる場合の、パブリック URL を使用する画像
-
-```html
-<img 
-    width="170" height="128" 
-    src="https://graph.microsoft.com/v1.0/me/onenote/resources/{image-id}/content?publicAuth=true&mimeType=image/jpeg" 
-    data-src-type="image/{type}" 
-    data-fullres-src="https://graph.microsoft.com/v1.0/me/onenote/resources/{image-id}/content?publicAuth=true&mimeType=image/jpeg" 
-    data-fullres-src-type="image/{type}"
-/>
 ```
 
 次の例は、**img** 要素が出力 HTML に含む可能性がある情報を示しています。
@@ -417,7 +403,7 @@ Microsoft Graph の OneNote API では、次のリストのスタイルをサポ
 </ol>
 ``` 
 
-これは出力 HTML です。 スタイルが個々の **li** 要素または **span** 要素で、インラインで返されることに注意してください。
+これは出力 HTML です。スタイルが個々の **li** 要素または **span** 要素でインラインで返されることに注目してください。
 
 ```html
 <ol>
