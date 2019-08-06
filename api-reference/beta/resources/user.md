@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: a629124608a02639aa41a13c449bf307af257310
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 02fcc9db35f59ebca3bc85f1ddc65d8d2f7c3d89
+ms.sourcegitcommit: a700f1c283a5d847cd1697e26bcd47bc8625384e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964217"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36049625"
 ---
 # <a name="user-resource-type"></a>user リソースの種類
 
@@ -110,6 +110,7 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |interests|String collection|ユーザーが自分の関心事を記述する一覧。|
 |isResourceAccount|Boolean| ユーザーがリソース アカウントの場合は **true**、それ以外の場合は **false**。 Null 値は **false** とみなされます。|
 |jobTitle|String|ユーザーの役職。$filter をサポートします。|
+|lastPasswordChangeDateTime|DateTimeOffset| この Azure AD ユーザーが最後にパスワードを変更した時刻。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |legalAgeGroupClassification|String| エンタープライズ アプリケーションで使用され、ユーザーの法的年齢グループを示します。 このプロパティは読み取り専用であり、`ageGroup` プロパティと `consentProvidedForMinor` プロパティに基づいて計算されます。 使用できる値: `null`、`minorWithOutParentalConsent`、`minorWithParentalConsent`、`minorNoParentalConsentRequired`、`notAdult`、および `adult`。 詳細については、「[法的年齢グループ プロパティの定義](#legal-age-group-property-definitions)」を参照してください。|
 |licenseAssignmentStates|[licenseAssignmentState](licenseassignmentstate.md) コレクション|このユーザーへのライセンス割り当ての状態です。 読み取り専用です。|
 |mail|String|ユーザーの SMTP アドレス (たとえば、"jeff@contoso.onmicrosoft.com")。読み取り専用。$filter をサポートします。|
