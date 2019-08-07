@@ -3,12 +3,12 @@ title: 'Microsoft Graph のアクセス許可のリファレンス '
 description: Microsoft Graph は、アプリがアクセスするリソース (ユーザー、グループ、メールなど) を制御する詳細なアクセス許可を公開しています。 開発者は、アプリが要求する Microsoft Graph のアクセス許可を決定します。
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: 42febb704147ff8076a85df2233186a494f6fffd
-ms.sourcegitcommit: a700f1c283a5d847cd1697e26bcd47bc8625384e
+ms.openlocfilehash: f71f7a0f880e3897daf7a9ca51502a7d465b3aa2
+ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36049590"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36173063"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph のアクセス許可のリファレンス
 
@@ -53,6 +53,7 @@ Microsoft Graph のアクセス許可名は、「_リソース.操作.制約_」
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _AccessReview.Read.All_ |   すべてのアクセス レビューを読み取る  | サインインしているユーザーの代わりに、アプリでアクセス レビューの読み取りを実行できるようにします。 | はい | いいえ |
 | _AccessReview.ReadWrite.All_ |   すべてのアクセス レビューを管理する  | サインインしているユーザーの代わりに、アプリでアクセス レビューの読み取りと書き込みを実行できるようにします。 | はい | いいえ |
+| _AccessReview.ReadWrite.Membership_ |   グループとアプリのメンバーシップのアクセス レビューを管理する | サインインしているユーザーの代わりに、アプリでグループとアプリのアクセス レビューの読み取りと書き込みを実行できるようにします。 | はい | いいえ |
 
 
 #### <a name="application-permissions"></a>アプリケーションのアクセス許可
@@ -63,9 +64,9 @@ Microsoft Graph のアクセス許可名は、「_リソース.操作.制約_」
 | _AccessReview.ReadWrite.Membership_ | グループとアプリのメンバーシップのアクセス レビューを管理する | サインイン ユーザーなしで、アプリでグループとアプリのアクセス レビューを管理できます。 | はい |
 
 
-### <a name="remarks"></a>注釈
+### <a name="remarks"></a>Remarks
 
-_AccessReview.Read.All_ と _AccessReview.ReadWrite.All_ は、職場または学校アカウントに対してのみ有効です。
+_AccessReview.Read.All_、_AccessReview.ReadWrite.All_ と _AccessReview.ReadWrite.Membership_ は、職場または学校アカウントに対してのみ有効です。
 
 委任されたアクセス許可があるアプリの場合、ID ユーザー リスク情報を読み取るには、サインインしているユーザーが「全体管理者」、「セキュリティ管理者」、または「セキュリティ閲覧者」のいずれかの管理者ロールのメンバーになっている必要があります。 グループまたはアプリのアクセス レビューを書き込むための委任されたアクセス許可があるアプリの場合、サインインしているユーザーが「全体管理者」、または「ユーザー管理者」のいずれかの管理者ロールのメンバーになっている必要があります。
 
@@ -1380,6 +1381,35 @@ _User.ReadBasic.All_ アクセス許可では、基本プロファイルと呼�
 *   _UserActivity.ReadWrite.CreatedByApp_: ユーザーによって開始された要求への応答でユーザー アクティビティを削除します。または、無効なデータを削除します  (DELETE /me/activities/{id})。
 *   _UserActivity.ReadWrite.CreatedByApp_: ユーザーによって開始された要求への応答で履歴項目を削除します。または、無効なデータを削除します  (DELETE /me/activities/{id}/historyItems/{id})。
 
+---
+
+## <a name="feature-rollout-policy-permissions"></a>機能ロールアウト ポリシーのアクセス許可
+
+#### <a name="delegated-permissions"></a>委任されたアクセス許可
+
+|   アクセス許可    |  表示文字列   |  説明 | 管理者の同意が必要 | Microsoft アカウントのサポート |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Policy.Read.All_ | すべての機能ロールアウト ポリシーの読み取り | サインインしているユーザーの代わりに、すべての機能ロールアウト ポリシーをアプリで読み取れるようにします。 | はい | いいえ |
+| _Policy.ReadWrite.FeatureRollout_ | すべての機能ロールアウト ポリシーの読み取りと書き込み | サインインしているユーザーの代わりに、機能ロールアウト ポリシーの読み取りと書き込みがアプリでできるようにします。 | はい | いいえ |
+
+#### <a name="application-permissions"></a>アプリケーションのアクセス許可
+なし。
+
+### <a name="remarks"></a>Remarks
+職場または学校のアカウントは、テナントのグローバル管理者のものである必要があります。
+
+### <a name="example-usage"></a>使用例
+
+#### <a name="delegated"></a>委任
+次に示す使用法は、両方の委任されたアクセス許可に対して有効です。
+
+* _Policy.Read.All_: すべての機能ロールアウト ポリシーの読み取り (`GET /beta/directory/featureRolloutPolicies`)
+* _Policy.ReadWrite.FeatureRollout_: すべての機能ロールアウト ポリシーの読み取りと書き込み (`POST /beta/directory/featureRolloutPolicies`)
+
+複数のアクセス許可を伴うより複雑なシナリオについては、「[アクセス許可のシナリオ](#permission-scenarios)」を参照してください。
+
+---
+
 ## <a name="permission-scenarios"></a>アクセス許可のシナリオ
 
 ここでは、組織内の[ユーザー](/graph/api/resources/user?view=graph-rest-1.0) リソースと[グループ](/graph/api/resources/group?view=graph-rest-1.0) リソースを対象とした、いくつかの一般的なシナリオを示します。この表には、シナリオごとに必要になる特定の操作を実行するために、アプリが必要とするアクセス許可を示しています。場合によっては、特定の操作をアプリが実行できるかどうかは、アクセス許可が、アプリケーションのアクセス許可か、委任されたアクセス許可かによって決まります。委任されたアクセス許可の場合、アプリの有効なアクセス許可は、サインインしているユーザーの組織内の特権にも依存します。詳細については、「[委任されたアクセス許可、アプリケーションのアクセス許可、有効なアクセス許可](auth/auth-concepts.md#microsoft-graph-permissions)」を参照してください。
@@ -1408,3 +1438,4 @@ _User.ReadBasic.All_ アクセス許可では、基本プロファイルと呼�
 | アプリの目的は、ファイルや会話を含むすべての Office 365 グループ内のすべてのコンテンツを読み書きすることです。グループ メンバーシップを表示したり、グループ メンバーシップを更新できたり (所有者の場合) する必要もあります。  |   _Group.ReadWrite.All_, _Sites.ReadWrite.All_ |  すべてのグループの読み取りと書き込み、すべてのサイト コレクション内のアイテムの編集または削除 |
 | アプリの目的は、Office 365 グループを検出 (検索) することです。ユーザーが、特定のグループから検索し、一覧表から選択して、グループに参加できるようにします。     | _Group.ReadWrite.All_ | すべてのグループの読み取りと書き込み|
 | アプリの目的は、AAD グラフを経由してグループを作成すること |   _Group.ReadWrite.All_ | すべてのグループの読み取りと書き込み|
+

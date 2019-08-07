@@ -1,14 +1,14 @@
 ---
 title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
-author: jthake-msft
+author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 60ad1361f5d188beacf4a34b040ee46196fb8304
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+ms.openlocfilehash: b5cd7eae4aeee8c9426c47d0dc1efd0ea480037c
+ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35930567"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36173070"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
@@ -16,9 +16,21 @@ ms.locfileid: "35930567"
 
 Microsoft Graph API に関する既知の問題の詳細については、「[既知の問題](known-issues.md)」を参照してください。
 
+## <a name="august-2019"></a>2019 年 8 月
+
+### <a name="education"></a>教育
+
+| **変更の種類** | **バージョン**   | **説明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 追加 | ベータ版 | 新しい [educationRubric](/graph/api/resources/educationRubric?view=graph-rest-beta) リソースが追加されました。|
+| 追加 | ベータ版 | [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta) と [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta) で [educationRubric](/graph/api/resources/educationRubric?view=graph-rest-beta) リソースを管理するための API を追加しました。|
+| 追加 | ベータ版 | 新しい [educationOutcome](/graph/api/resources/educationOutcome?view=graph-rest-beta) リソースを追加しました。|
+| 追加 | ベータ版 | [educationSubmission](/graph/api/resources/educationSubmission?view=graph-rest-beta) で [educationOutcome](/graph/api/resources/educationOutcome?view=graph-rest-beta) リソースを管理するための API を追加しました。|
+| 追加 | ベータ版 | 新しい [educationMakeCodeResource](/graph/api/resources/educationMakeCodeResource?view=graph-rest-beta) リソースを追加しました。|
+
 ## <a name="july-2019"></a>2019 年 7 月
 
-### <a name="calendar--places"></a>予定表 | 場所
+### <a name="calendar--place"></a>予定表 | 場所
 
 アプリ内の場所に関する詳細情報を提供する Places API の導入。
 
@@ -71,12 +83,15 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | **変更の種類** | **バージョン** | **説明**                  |
 |:----------------|:------------|:-----------------------------------------|
 | 追加 | v1.0 | [組織 API](/graph/api/resources/organization?view=graph-rest-1.0) リソースの取得および更新をして、[subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-1.0) リソースを取得するために、[新しい委任されたアクセス許可とアプリケーションのアクセス許可](/graph/permissions-reference?#organization-permissions) _Organization.Read.All_ および _Organization.ReadWrite.All_を追加しました。 |
-| 追加 | ベータ版 | [組織 API](/graph/api/resources/organization?view=graph-rest-beta) リソースを取得および更新して、[subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-beta) リソースを取得するために、[新しい委任されたアクセス許可とアプリケーションのアクセス許可](/graph/permissions-reference?#organization-permissions)、_Organization.Read.All_ および _Organization.ReadWrite.All_ を追加しました。 |
+| 追加 | ベータ版 | [組織 API](/graph/api/resources/organization?view=graph-rest-beta) リソースを取得および更新し、[subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-beta) リソースを取得するための、_Organization.Read.All_ と _Organization.ReadWrite.All_ という[新しい委任されたアクセス許可とアプリケーションのアクセス許可](/graph/permissions-reference?#organization-permissions)を追加しました。 |
 | 追加 | v1.0 | [グループ:validateProperties 関数](/graph/api/group-validateproperties?view=graph-rest-1.0) と [directoryobject:validateProperties 関数](/graph/api/group-validateproperties?view=graph-rest-1.0) が [グループ](/graph/api/group-delta?view=graph-rest-1.0)に追加されました。そしてそれは、Office 365 グループの表示名またはメール ニックネームが名前付けポリシーに準拠していることを検証します。 |
 | 追加 | ベータ版 |リソースの種類の[directoryDefinition](/graph/api/resources/synchronization-directorydefinition?view=graph-rest-beta)に 'version' プロパティ、'discoveryDateTime' プロパティ、'discoverabilities' プロパティを追加しました。|
 | 追加 | ベータ版 |[directoryDefinition: discover](/graph/api/resources/directorydefinition-discover?view=graph-rest-beta) メソッドを追加しました。|
-| 追加 | ベータ版 | [administrative unit API](/graph/api/resources/administrativeunit?view=graph-rest-beta) リソースを取得する、新しい[委任およびアプリケーションのアクセス許可](/graph/permissions-reference?#organization-permissions) _AdministrativeUnit.Read.All_ および _AdministrativeUnit.ReadWrite.All_ を追加しました。 |
-| 追加 | v1.0 | [directory role API](/graph/api/resources/directoryRole?view=graph-rest-1.0) リソース、[directory role template API](/graph/api/resources/directoryRoleTemplate?view=graph-rest-1.0) リソースを取得する、新しい[委任およびアプリケーションのアクセス許可](/graph/permissions-reference?#organization-permissions) _RoleManagement.Read.Directory_ および _RoleManagement.ReadWrite.Directory_ を追加しました。 |
+| 追加 | ベータ版 | [管理単位 API](/graph/api/resources/administrativeunit?view=graph-rest-beta) リソースの取得と更新を行うための、_AdministrativeUnit.Read.All_ と _AdministrativeUnit.ReadWrite.All_ という[新しい委任されたアクセス許可とアプリケーションのアクセス許可](/graph/permissions-reference?#organization-permissions)を追加しました。 |
+| 追加 | v1.0 | [ディレクトリ ロール API](/graph/api/resources/directoryRole?view=graph-rest-1.0) リソース、[ディレクトリ ロール テンプレート API](/graph/api/resources/directoryRoleTemplate?view=graph-rest-1.0) リソースを取得する、新しい[委任およびアプリケーションのアクセス許可](/graph/permissions-reference?#organization-permissions) _RoleManagement.Read.Directory_ および _RoleManagement.ReadWrite.Directory_ を追加しました。 |
+| 追加 | ベータ版 | [アクセス レビュー API](/graph/api/resources/accessreviews-root?view=graph-rest-beta) で取得、作成、更新、削除を行うための、_AccessReview.ReadWrite.Membership_ という[新しいアプリケーションのアクセス許可](/graph/permissions-reference?#accessreviews-permissions)を追加しました。 |
+| 追加 | ベータ版 | [**featureRolloutPolicy**](/graph/api/resources/featureRolloutPolicy?view=graph-rest-beta) という新しいリソースタイプが[ディレクトリ](/graph/api/resources/directory?view=graph-rest-beta) リソースに追加されました。  機能ロールアウト ポリシーは、テナント管理者が機能を組織全体で有効にする前に特定のグループに対して試験運用を実施するのに役立ちます。|
+
 
 ### <a name="mail-outlook"></a>メール (Outlook)
 
@@ -174,7 +189,13 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 | **変更の種類** | **バージョン**   | **説明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| 追加 | ベータ版 | [teamDiscoverySettings](/api-reference/beta/resources/teamdiscoverysettings.md)リソースと関連メソッドが追加されました。 |
+| 追加 | ベータ版 | [teamDiscoverySettings](/api-reference/beta/resources/teamdiscoverysettings.md)リソースと関連メソッドを追加しました。 |
+
+### <a name="users"></a>ユーザー
+
+| **変更の種類** | **バージョン** | **説明**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| 追加        | ベータ版        | [ユーザー](/graph/api/resources/user?view=graph-rest-beta) エンティティに **lastPasswordChangeDateTime** プロパティを追加しました。 |
 
 ## <a name="may-2019"></a>2019 年 5 月
 

@@ -4,12 +4,12 @@ description: " Office 365 のエンタープライズ ノートブック"
 author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-ms.openlocfilehash: 835cd7ba930c7e8ea2d26f750a85e097db2399f0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bcc25ca130b9a28bf171d8ce2989538e56dfca17
+ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555438"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "35639215"
 ---
 # <a name="get-onenote-content-and-structure-with-microsoft-graph"></a>Microsoft Graph によって OneNote コンテンツと構造を取得する
 
@@ -143,7 +143,7 @@ JSON 応答には、ページに含まれているものを特定するために
 
 **previewText** プロパティには、ページからのテキスト スニペットが含まれています。 Microsoft Graph は、最大 300 文字の完全な文字列を返します。 
 
-ページにプレビュー UI のビルドに使用できる画像が含まれている場合、**previewImageUrl** オブジェクトの **href** プロパティには、事前認証されたパブリックの [image resource](#image-or-other-file-resource) のリンクが含まれます。 このリンクは HTML で使用できます。 それ以外の場合、**href** は、null 値を返します。
+ページにプレビュー UI のビルドに使用できる画像が含まれている場合、**previewImageUrl** オブジェクトの **href** プロパティには、パブリックの [image resource](#image-or-other-file-resource) のリンクが含まれます。 このリンクは HTML で使用できます。 それ以外の場合、**href** は、null 値を返します。
 
 #### <a name="example"></a>例 
 
