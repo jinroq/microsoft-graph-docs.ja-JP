@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e0352e16528c9b7e0a6041649352b7b7486acea7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3c6aba01a6f3b22c8326c05ab40b354b51a6a86a
+ms.sourcegitcommit: eb5f63deafcdd6db44e791f2d1f4c46604ab06fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35944731"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36245635"
 ---
 # <a name="get-calendar"></a>予定表を取得する
 
@@ -25,13 +25,13 @@ ms.locfileid: "35944731"
 
 
 ## <a name="permissions"></a>権限
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+この API を呼び出すには、イベントが含まれる予定表の種類と、要求されたアクセス許可の種類 (委任またはアプリケーション) に応じて、次のいずれかのアクセス許可が必要になります。 アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
-|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
-|:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Calendars.Read    |
-|委任 (個人用 Microsoft アカウント) | Calendars.Read    |
-|アプリケーション | Calendars.Read |
+| カレンダー | 委任 (職場または学校のアカウント) | 委任 (個人用 Microsoft アカウント) | アプリケーション |
+|:-----|:-----|:-----|:-----|
+| ユーザーの予定表 | Calendars.Read、Calendars.ReadWrite | Calendars.Read、Calendars.ReadWrite | Calendars.Read、Calendars.ReadWrite |
+| グループ calendar | Group.Read.All、Group.ReadWrite.All | サポートされていません。 | サポートされていません。 |
+
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -69,7 +69,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で[予定表](../resources/calendar.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
-以下は、要求の例です。
+次の例では、サインインしているユーザーの既定の予定表を取得します。
 
 
 # <a name="httptabhttp"></a>[プロトコル](#tab/http)

@@ -451,9 +451,13 @@
                   href: api/attachment-get.md
                 - name: 添付ファイルを削除する
                   href: api/attachment-delete.md
-            - name: カレンダー
+            - name: 予定表
               href: resources/calendar.md
               items:
+                - name: 予定表を取得する
+                  href: api/calendar-get.md
+                - name: 予定表を更新する
+                  href: api/calendar-update.md
                 - name: イベントを一覧表示する
                   href: api/group-list-events.md
                 - name: イベントを作成する
@@ -3654,7 +3658,7 @@
                   items:
                     - name: リスト
                       href: api/intune-grouppolicy-grouppolicypresentationdropdownlist-list.md
-                    - name: Get
+                    - name: 取得
                       href: api/intune-grouppolicy-grouppolicypresentationdropdownlist-get.md
                     - name: 作成
                       href: api/intune-grouppolicy-grouppolicypresentationdropdownlist-create.md
@@ -5148,7 +5152,7 @@
                   items:
                     - name: リスト
                       href: api/intune-deviceconfig-windowsphone81importedpfxcertificateprofile-list.md
-                    - name: 取得
+                    - name: Get
                       href: api/intune-deviceconfig-windowsphone81importedpfxcertificateprofile-get.md
                     - name: 作成
                       href: api/intune-deviceconfig-windowsphone81importedpfxcertificateprofile-create.md
@@ -6212,7 +6216,7 @@
                   items:
                     - name: リスト
                       href: api/intune-deviceintent-securitybaselinedevicestate-list.md
-                    - name: Get
+                    - name: 取得
                       href: api/intune-deviceintent-securitybaselinedevicestate-get.md
                     - name: 作成
                       href: api/intune-deviceintent-securitybaselinedevicestate-create.md

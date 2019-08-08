@@ -5,26 +5,27 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4e898881563092019e82c58c476d2996fc185c6d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5fa92f7657c69871af2f2661cde00b17d9499886
+ms.sourcegitcommit: eb5f63deafcdd6db44e791f2d1f4c46604ab06fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35944668"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36245555"
 ---
 # <a name="create-event"></a>イベントの作成
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-この API を使用して、既定または指定の予定表に新しいイベントを作成します。
-## <a name="permissions"></a>アクセス許可
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+この API を使用して、予定表に新しいイベントを作成します。 [ユーザー](../resources/user.md)の予定表、または Office 365 [グループ](../resources/group.md)の既定の予定表のいずれかを指定できます。 
 
-|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
-|:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Calendars.ReadWrite    |
-|委任 (個人用 Microsoft アカウント) | Calendars.ReadWrite    |
-|アプリケーション | Calendars.ReadWrite |
+## <a name="permissions"></a>アクセス許可
+イベントが作成されたカレンダーの種類と、要求されたアクセス許可の種類 (委任またはアプリケーション) によっては、この API を呼び出すために次のいずれかのアクセス許可が必要になります。 アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+
+| カレンダー | 委任 (職場または学校のアカウント) | 委任 (個人用 Microsoft アカウント) | アプリケーション |
+|:-----|:-----|:-----|:-----|
+| ユーザーの予定表 | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| グループ calendar | Group.ReadWrite.All | サポートされていません。 | サポートされていません。 |
+
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -62,7 +63,8 @@ POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
-以下は、要求の例です。
+次の例では、サインインしているユーザーの指定された予定表にイベントを作成します。
+
 要求本文で、[イベント](../resources/event.md) オブジェクトの JSON 表記を指定します。
 
 # <a name="httptabhttp"></a>[プロトコル](#tab/http)

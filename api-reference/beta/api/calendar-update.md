@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b8b86179dfe39f3f2f5516b87e0294e4f01be052
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ba8201baa85ec5caf7a36cbf275936c78c7b85ab
+ms.sourcegitcommit: eb5f63deafcdd6db44e791f2d1f4c46604ab06fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35944675"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36245468"
 ---
 # <a name="update-calendar"></a>予定表を更新する
 
@@ -18,13 +18,13 @@ ms.locfileid: "35944675"
 
 [予定表](../resources/calendar.md)オブジェクトのプロパティを更新します。 [ユーザー](../resources/user.md)の予定表、または Office 365 [グループ](../resources/group.md)の既定の予定表のいずれかを指定できます。
 ## <a name="permissions"></a>アクセス許可
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+この API を呼び出すには、イベントが含まれる予定表の種類と、要求されたアクセス許可の種類 (委任またはアプリケーション) に応じて、次のいずれかのアクセス許可が必要になります。 アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
-|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
-|:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Calendars.ReadWrite    |
-|委任 (個人用 Microsoft アカウント) | Calendars.ReadWrite    |
-|アプリケーション | Calendars.ReadWrite |
+| カレンダー | 委任 (職場または学校のアカウント) | 委任 (個人用 Microsoft アカウント) | アプリケーション |
+|:-----|:-----|:-----|:-----|
+| ユーザーの予定表 | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| グループ calendar | Group.ReadWrite.All | サポートされていません。 | サポートされていません。 |
+
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -67,7 +67,7 @@ PATCH /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された[予定表](../resources/calendar.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
-以下は、要求の例です。
+次の例では、サインインしているユーザーの既定の予定表の名前を更新します。
 
 # <a name="httptabhttp"></a>[プロトコル](#tab/http)
 <!-- {

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 22f1eebc24c65ce4d8ddf464d7803567c39237d1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 824ec1b38b440fc36edafad7aeea8c2d39f9f772
+ms.sourcegitcommit: eb5f63deafcdd6db44e791f2d1f4c46604ab06fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35996162"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36245683"
 ---
 # <a name="user-revokesigninsessions"></a>ユーザー: revokeSignInSessions
 
@@ -52,6 +52,9 @@ POST /users/{id | userPrincipalName}/revokeSignInSessions
 ## <a name="response"></a>応答
 
 成功した場合、このメソッドは `204 No Content` 応答コードを返します。
+
+>[!NOTE]
+>この API には[既知の問題](/graph/concepts/known-issues.md#revoke-sign-in-sessions-returns-wrong-HTTP-code)があります。 このメソッドは、異なる HTTP 応答コードを返します。
 
 ## <a name="example"></a>例
 次の例は、この API を呼び出す方法を示しています。
