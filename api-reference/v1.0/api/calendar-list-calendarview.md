@@ -5,32 +5,34 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: bc520c7c27aa3273b87ccffb67484e4f004df76f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 43a0884e8b229facaf98c06160430fb087a89e87
+ms.sourcegitcommit: eb5f63deafcdd6db44e791f2d1f4c46604ab06fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004079"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36245573"
 ---
 # <a name="list-calendarview"></a>calendarView を一覧表示する
 
-ユーザーまたはグループの既定の予定表 `(../me/calendarview)` またはユーザーが所有する他の予定表から、時間範囲で定義した予定表ビューのイベントの発生、例外、および単一インスタンスを取得します。
+ユーザーの既定の予定表`(../me/calendarview)`またはユーザーが所有する他の予定表を元に、時間範囲で定義した予定表ビューから、イベントの発生、例外、および単一のインスタンスを取得します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
-* ユーザーの予定表のイベント:Calendars.Read または Calendars.ReadWrite
-* グループの予定表のイベント:Group.Read.All または Group.ReadWrite.All
+|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
+|:--------------------|:---------------------------------------------------------|
+|委任 (職場または学校のアカウント) | Calendars.Read、Calendars.ReadWrite |
+|委任 (個人用 Microsoft アカウント) | Calendars.Read、Calendars.ReadWrite    |
+|アプリケーション | Calendars.Read、Calendars.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 要求
 
-ユーザーまたはグループの既定の[予定表](../resources/calendar.md)。
+ユーザーの既定の[予定表](../resources/calendar.md)。
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendar/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 GET /users/{id | userPrincipalName}/calendar/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
-GET /groups/{id}/calendar/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 ```
 
 既定の [calendarGroup](../resources/calendargroup.md) のユーザーの[予定表](../resources/calendar.md)。

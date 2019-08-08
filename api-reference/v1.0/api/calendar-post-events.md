@@ -5,24 +5,24 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f27d3ad30f9d37c38046c346db85fb2f25402e3b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 559c37348bd2b594e191ba04faf0668198c6e4dc
+ms.sourcegitcommit: eb5f63deafcdd6db44e791f2d1f4c46604ab06fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36003995"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36245676"
 ---
-# <a name="create-event"></a>イベントの作成
+# <a name="create-event"></a>イベントを作成する
 
-この API を使用して、既定または指定の予定表に新しいイベントを作成します。
+この API を使用して、予定表に新しいイベントを作成します。 [ユーザー](../resources/user.md)の予定表、または Office 365 [グループ](../resources/group.md)の既定の予定表のいずれかを指定できます。 
+
 ## <a name="permissions"></a>アクセス許可
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+作成されたイベントが含まれている予定表の種類および要求されたアクセス許可の種類 (委任またはアプリケーション) に応じて、この API を呼び出すには、次のいずれかの権限が必要です。 アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
-|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
-|:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Calendars.ReadWrite    |
-|委任 (個人用 Microsoft アカウント) | Calendars.ReadWrite    |
-|アプリケーション | Calendars.ReadWrite |
+| 予定表 | 委任 (職場または学校のアカウント) | 委任 (個人用 Microsoft アカウント) | アプリケーション |
+|:-----|:-----|:-----|:-----|
+| ユーザーの予定表 | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| グループ予定表 | Group.ReadWrite.All | サポートされていません。 | サポートされていません。 |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
