@@ -416,6 +416,10 @@
             - name: 予定表
               href: resources/calendar.md
               items:
+                - name: 予定表を取得する
+                  href: api/calendar-get.md
+                - name: 予定表を更新する
+                  href: api/calendar-update.md
                 - name: イベントを一覧表示する
                   href: api/group-list-events.md
                 - name: イベントを作成する
@@ -862,7 +866,7 @@
                   items:
                     - name: リスト
                       href: api/intune-books-iosvppebook-list.md
-                    - name: 取得
+                    - name: Get
                       href: api/intune-books-iosvppebook-get.md
                     - name: 作成
                       href: api/intune-books-iosvppebook-create.md
@@ -1005,7 +1009,7 @@
                 - name: 管理対象電子ブックの割り当て
                   href: resources/intune-books-managedebookassignment.md
                   items:
-                    - name: リスト
+                    - name: 一覧表示
                       href: api/intune-books-managedebookassignment-list.md
                     - name: Get
                       href: api/intune-books-managedebookassignment-get.md
@@ -1079,9 +1083,9 @@
                 - name: モバイル アプリの割り当て
                   href: resources/intune-apps-mobileappassignment.md
                   items:
-                    - name: 一覧表示
+                    - name: リスト
                       href: api/intune-apps-mobileappassignment-list.md
-                    - name: Get
+                    - name: 取得
                       href: api/intune-apps-mobileappassignment-get.md
                     - name: 作成
                       href: api/intune-apps-mobileappassignment-create.md
@@ -2764,7 +2768,7 @@
                 - name: デバイス管理パートナー
                   href: resources/intune-onboarding-devicemanagementpartner.md
                   items:
-                    - name: リスト
+                    - name: 一覧表示
                       href: api/intune-onboarding-devicemanagementpartner-list.md
                     - name: 取得
                       href: api/intune-onboarding-devicemanagementpartner-get.md
@@ -2800,7 +2804,7 @@
                 - name: モバイルの脅威保護コネクタ
                   href: resources/intune-onboarding-mobilethreatdefenseconnector.md
                   items:
-                    - name: 一覧表示
+                    - name: リスト
                       href: api/intune-onboarding-mobilethreatdefenseconnector-list.md
                     - name: 取得
                       href: api/intune-onboarding-mobilethreatdefenseconnector-get.md
