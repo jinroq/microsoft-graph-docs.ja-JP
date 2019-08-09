@@ -5,27 +5,26 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 978d2a0855d3b810cf3700dd05ebc126eef0b99d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6fd8b30c94e103f253d82389c875972072a0b90c
+ms.sourcegitcommit: eb5f63deafcdd6db44e791f2d1f4c46604ab06fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004002"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36245587"
 ---
 # <a name="list-events"></a>イベントを一覧表示する
 
-予定表のイベント一覧を取得します。一覧には、単一インスタンスの会議と定期的なマスターが含まれています。
+予定表のイベント一覧を取得します。  [ユーザー](../resources/user.md)の予定表、または Office 365 [グループ](../resources/group.md)の既定の予定表のいずれかを指定できます。 イベントの一覧には、単一インスタンスの会議と定期的なマスターが含まれています。
 
 拡張イベントのインスタンスを取得すると、[予定表ビューを取得する](calendar-list-calendarview.md)または[イベントのインスタンスを取得する](event-list-instances.md)ことができます。
 
 ## <a name="permissions"></a>アクセス許可
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+イベントが含まれている予定表の種類および要求されたアクセス許可の種類 (委任またはアプリケーション) に応じて、この API を呼び出すには、次のいずれかの権限が必要です。 アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
-|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
-|:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Calendars.Read    |
-|委任 (個人用 Microsoft アカウント) | Calendars.Read    |
-|アプリケーション | Calendars.Read |
+| 予定表 | 委任 (職場または学校のアカウント) | 委任 (個人用 Microsoft アカウント) | アプリケーション |
+|:-----|:-----|:-----|:-----|
+| ユーザーの予定表 | Calendars.Read、Calendars.ReadWrite | Calendars.Read、Calendars.ReadWrite | Calendars.Read、Calendars.ReadWrite |
+| グループ予定表 | Group.Read.All、Group.ReadWrite.All | サポートされていません。 | サポートされていません。 |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

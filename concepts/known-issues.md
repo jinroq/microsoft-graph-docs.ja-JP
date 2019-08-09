@@ -3,12 +3,12 @@ title: Microsoft Graph に関する既知の問題
 description: この記事では、Microsoft Graph に関する既知の問題について説明します。最新の更新プログラムについては、「Microsoft Graph の変更ログ」を参照してください。
 author: ''
 localization_priority: Priority
-ms.openlocfilehash: 13bea7e626232caabb0eb58dc3b9eb7b6d458e9e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6a3d6c583227c1f8a8955fc4fc008e4bab9f55c9
+ms.sourcegitcommit: eb5f63deafcdd6db44e791f2d1f4c46604ab06fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033258"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36245659"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph に関する既知の問題
 
@@ -36,6 +36,10 @@ ms.locfileid: "36033258"
 ### <a name="using-delta-query"></a>デルタ クエリの使用
 
 デルタ クエリの使用に関する既知の問題については、この記事の[「デルタ クエリ」セクション](#delta-query)を参照してください。
+
+### <a name="revoke-sign-in-sessions-returns-wrong-http-code"></a>サインイン セッションの無効化で正しくない HTTP コードが返される
+
+[ユーザー: revokeSignInSessions API](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) では、無効化が成功した場合に `204 No content` の応答が返され、要求に何かしらの問題がある場合には HTTP エラー コード (4xx または 5xx) が返される必要があります。  ただし、サービスの問題により、この API では `200 OK`と常に true のブール値が返されます。  これが修正されるまで、開発者はすべての 2xx リターン コードを、この API の成功として単に受け取ってください。
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
