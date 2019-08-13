@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: fe3397b052fc4dd936080fc248b14da322018d03
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e12d5d727172aa9c3927fcaa0cf03443032f5e73
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969381"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36367527"
 ---
 # <a name="webbrowsercookiesettings-enum-type"></a>webBrowserCookieSettings 列挙型
 
@@ -28,8 +28,6 @@ Web ブラウザーの Cookie 設定。
 |allowCurrentWebSite サイト|pbm-2|現在の Web サイトからの cookie を許可します。|
 |allowFromWebsitesVisited た|1/3|アクセスした web サイトの Cookie を許可します。|
 |allowAlways|2/4|常に cookie を許可します。|
-
-
 
 
 

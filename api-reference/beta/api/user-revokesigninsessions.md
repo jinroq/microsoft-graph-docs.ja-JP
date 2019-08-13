@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 824ec1b38b440fc36edafad7aeea8c2d39f9f772
-ms.sourcegitcommit: eb5f63deafcdd6db44e791f2d1f4c46604ab06fc
+ms.openlocfilehash: 69ae5409e859430f7a3cd3e4b2522d82e5867ed7
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36245683"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36362067"
 ---
 # <a name="user-revokesigninsessions"></a>ユーザー: revokeSignInSessions
 
@@ -54,7 +54,7 @@ POST /users/{id | userPrincipalName}/revokeSignInSessions
 成功した場合、このメソッドは `204 No Content` 応答コードを返します。
 
 >[!NOTE]
->この API には[既知の問題](/graph/concepts/known-issues.md#revoke-sign-in-sessions-returns-wrong-HTTP-code)があります。 このメソッドは、異なる HTTP 応答コードを返します。
+>この API には[既知の問題](/graph/known-issues#revoke-sign-in-sessions-returns-wrong-HTTP-code)があります。 このメソッドは、異なる HTTP 応答コードを返します。
 
 ## <a name="example"></a>例
 次の例は、この API を呼び出す方法を示しています。
@@ -73,7 +73,7 @@ POST https://graph.microsoft.com/beta/me/revokeSignInSessions
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-revokesigninsessionss-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-revokesigninsessionss-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

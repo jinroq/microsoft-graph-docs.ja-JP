@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f45bec04879550382a89c7a1da5d34af38812599
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6550fb18d5696e2e21a7cf2c234ce36d9ea88518
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969773"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368164"
 ---
 # <a name="ratingunitedkingdomtelevisiontype-enum-type"></a>ratingUnitedKingdomTelevisionType 列挙型
 
@@ -26,8 +26,6 @@ ms.locfileid: "35969773"
 |allAllowed|.0|既定値、すべてのテレビ番組にコンテンツを表示する|
 |allBlocked|1-d|すべてのテレビ番組の内容を許可しない|
 |レーティング|pbm-2|警告メッセージを使用してテレビの内容を許可する|
-
-
 
 
 

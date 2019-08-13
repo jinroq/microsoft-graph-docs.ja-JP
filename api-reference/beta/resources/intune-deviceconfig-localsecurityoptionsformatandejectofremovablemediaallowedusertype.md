@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: d833983e0d7fd7f4d2da8e2dea1928748ff2bc74
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a797b21e72cbe27567ce4bafdfc07a9734bfecb7
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970247"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36356712"
 ---
 # <a name="localsecurityoptionsformatandejectofremovablemediaallowedusertype-enum-type"></a>localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUserType 列挙型
 
@@ -27,8 +27,6 @@ LocalSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser に指定できる
 |管理者|1-d|管理者|
 |administratorsAndPowerUsers|pbm-2|管理者とパワーユーザー|
 |administratorsAndInteractiveUsers|1/3|管理者と対話ユーザー |
-
-
 
 
 

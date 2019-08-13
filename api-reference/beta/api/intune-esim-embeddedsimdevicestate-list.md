@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4fbbabaeea8dff050cc6b48359e10c8c6c217f73
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: aade3b2218c2e07bee91b3ed6b4972986e4d98fb
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35990563"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36355718"
 ---
 # <a name="list-embeddedsimdevicestates"></a>リスト embeddedSIMDeviceStates
 
@@ -27,7 +27,7 @@ ms.locfileid: "35990563"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -82,6 +82,7 @@ Content-Length: 602
   ]
 }
 ```
+
 
 
 

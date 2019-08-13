@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4003278bfcd7919ca081b5eaebc2c7627fd8c1b4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 50e1e1fe3124f975b241b271e1d0c001c42d3b71
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004240"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36357062"
 ---
 # <a name="iosgeneraldeviceconfiguration-resource-type"></a>iosGeneralDeviceConfiguration リソース タイプ
 
@@ -58,13 +58,13 @@ ms.locfileid: "36004240"
 |appsVisibilityList|[appListItem](../resources/intune-deviceconfig-applistitem.md) コレクション|可視性リストにあるアプリのリスト (iOS 9.3 以降で、AppVisibilityListType によって制御される、表示可能/起動可能なアプリのリスト、または非表示/起動できないアプリのリスト)。 このコレクションには、最大で 10000 個の要素を含めることができます。|
 |appsVisibilityListType|[アプライアンスの種類](../resources/intune-deviceconfig-applisttype.md)|AppsVisibilityList 内にあるリストの種類です。 可能な値は、`none`、`appsInListCompliant`、`appsNotInListCompliant` です。|
 |appStoreBlockAutomaticDownloads|Boolean|デバイスが監視モードのときに、他のデバイスで購入したアプリの自動ダウンロードをブロックするかどうかを示します (iOS 9.0 以降)。|
-|appStoreBlocked|Boolean|ユーザーによる App Store の使用を禁止するかどうかを示します。|
+|appStoreBlocked|Boolean|ユーザーによる App Store の使用を禁止するかどうかを示します。 IOS 13 以降の監視デバイスが必要です。|
 |appStoreBlockInAppPurchases|Boolean|ユーザーによるアプリの購入を禁止するかどうかを示します。|
 |appStoreBlockUIAppInstallation|Boolean|ホスト アプリによるインストールを制限せずに、App Store アプリをブロックするかどうかを示します。 監視モードのみに適用されます (iOS 9.0 以降)。|
 |appStoreRequirePassword|Boolean|App Store 使用時に、パスワードを要求するかどうかを指定します。|
 |autoFillForceAuthentication|Boolean|Safari や、監視対象デバイスの他のアプリで、パスワードとクレジットカード情報を自動入力する前に、ユーザー認証を強制するかどうかを示します。|
 |bluetoothBlockModification|Boolean|デバイスが監視モードのときに、Bluetooth の設定の変更を許可するかどうかを示します (iOS 10.0 以降)。|
-|cameraBlocked|Boolean|ユーザーによるデバイスのカメラへのアクセスを禁止するかどうかを示します。|
+|cameraBlocked|Boolean|ユーザーによるデバイスのカメラへのアクセスを禁止するかどうかを示します。 IOS 13 以降の監視デバイスが必要です。|
 |cellularBlockDataRoaming|Boolean|データ ローミングをブロックするかどうかを示します。|
 |cellularBlockGlobalBackgroundFetchWhileRoaming|Boolean|ローミング中に、グローバルなバックグラウンド フェッチをブロックするかどうかを示します。|
 |cellularBlockPerAppDataModification|Boolean|デバイスが監視モードのときに、携帯ネットワーク アプリのデータの使用設定の変更を許可するかどうかを示します。|
@@ -91,23 +91,23 @@ ms.locfileid: "36004240"
 |enterpriseAppBlockTrust|Boolean|ユーザーによるエンタープライズ アプリの信頼を禁止するかどうかを示します。|
 |enterpriseAppBlockTrustModification|Boolean|ユーザーによるエンタープライズ アプリの信頼の設定の変更を禁止するかどうかを示します。|
 |esimBlockModification|Boolean|監視対象デバイスの eSIM での携帯電話プランの追加または削除を許可するかどうかを示します。|
-|faceTimeBlocked|Boolean|ユーザーによる FaceTime の使用を禁止するかどうかを示します。|
-|findMyFriendsBlocked|Boolean|デバイスが監視モードのときに、"友達を探す" をブロックするかどうかを示します。|
-|gamingBlockGameCenterFriends|Boolean|ユーザーによる Game Center での友達の追加を禁止するかどうかを示します。|
-|gamingBlockMultiplayer|Boolean|ユーザーによるマルチプレイヤー ゲームの使用を禁止するかどうかを示します。|
+|faceTimeBlocked|Boolean|ユーザーによる FaceTime の使用を禁止するかどうかを示します。 IOS 13 以降の監視デバイスが必要です。|
+|findMyFriendsBlocked|Boolean|デバイスが監視モードのときに、友人を検索するための変更を禁止するかどうかを示します。|
+|gamingBlockGameCenterFriends|Boolean|ユーザーによる Game Center での友達の追加を禁止するかどうかを示します。 IOS 13 以降の監視デバイスが必要です。|
+|gamingBlockMultiplayer|Boolean|ユーザーによるマルチプレイヤー ゲームの使用を禁止するかどうかを示します。 IOS 13 以降の監視デバイスが必要です。|
 |gameCenterBlocked|Boolean|デバイスが監視モードのときに、ユーザーによる Game Center の使用を禁止するかどうかを示します。|
 |hostPairingBlocked|Boolean|iOS デバイスが監視モードのときに、iOS デバイスがペアリングできるデバイスをホスト ペアリングで制御できるようにするかどうかを示します。|
 |iBooksStoreBlocked|Boolean|デバイスが監視モードのときに、ユーザーによる iBooks Store の使用を禁止するかどうかを示します。|
 |iBooksStoreBlockErotica|Boolean|アダルトのフラグが付いている iBookstore からのメディアのダウンロードをブロックするかどうかを示します。|
 |iCloudBlockActivityContinuation|ブール型|ユーザーが iOS デバイスで開始された作業を別の iOS デバイスまたは macOS デバイスに継続して実行することを禁止するかどうかを示します。|
-|iCloudBlockBackup|Boolean|iCloud バックアップを禁止するかどうかを示します。|
-|iCloudBlockDocumentSync|Boolean|iCloud のドキュメントの同期を禁止するかどうかを示します。|
+|iCloudBlockBackup|Boolean|iCloud バックアップを禁止するかどうかを示します。 IOS 13 以降の監視デバイスが必要です。|
+|iCloudBlockDocumentSync|Boolean|ICloud ドキュメントの同期をブロックするかどうかを示します。IOS 13 以降の監視デバイスが必要です。|
 |iCloudBlockManagedAppsSync|Boolean|管理対象アプリのクラウドの同期を禁止するかどうかを示します。|
 |iCloudBlockPhotoLibrary|Boolean|iCloud フォト ライブラリを禁止するかどうかを示します。|
 |iCloudBlockPhotoStreamSync|Boolean|iCloud フォトのストリームの同期を禁止するかどうかを示します。|
 |iCloudBlockSharedPhotoStream|Boolean|共有フォト ストリームの同期を禁止するかどうかを示します。|
 |iCloudRequireEncryptedBackup|Boolean|iCloud のバックアップを暗号化する必要があるかどうかを示します。|
-|iTunesBlockExplicitContent|Boolean|ユーザーによる iTunes および App Store の過激な描写のコンテンツへのアクセスをブロックするかどうかを指定します。|
+|iTunesBlockExplicitContent|Boolean|ユーザーによる iTunes および App Store の過激な描写のコンテンツへのアクセスをブロックするかどうかを指定します。 IOS 13 以降の監視デバイスが必要です。|
 |iTunesBlockMusicService|Boolean|デバイスが監視モードのときに、Music サービスをブロックして Music アプリをクラシック モードに戻すかどうかを示します (iOS 9.3 以降および macOS 10.12 以降)。|
 |iTunesBlockRadio|Boolean|デバイスが監視モードのときに、ユーザーによる iTunes Radio の使用を禁止するかどうかを示します (iOS 9.3 以降)。|
 |keyboardBlockAutoCorrect|Boolean|デバイスが監視モードのときに、キーボードの自動修正を禁止するかどうかを示します (iOS 8.13 以降)。|
@@ -172,12 +172,12 @@ ms.locfileid: "36004240"
 |passcodeRequired|Boolean|パスコードを要求するかどうかを指定します。|
 |podcastsBlocked|Boolean|ユーザーによる監視対象デバイスでのポッドキャストの使用を禁止するかどうかを示します (iOS 8.0 以降)。|
 |proximityBlockSetupToNewDevice|Boolean|監視対象デバイスで近くのデバイスをセットアップするためのプロンプトを有効にするかどうかを示します。|
-|safariBlockAutofill|Boolean|ユーザーによる Safari での自動入力の使用を禁止するかどうかを示します。|
+|safariBlockAutofill|Boolean|ユーザーによる Safari での自動入力の使用を禁止するかどうかを示します。 IOS 13 以降の監視デバイスが必要です。|
 |safariBlockJavaScript|Boolean|Safari 内で JavaScript をブロックするかどうかを示します。|
 |safariBlockPopups|Boolean|Safari 内でポップアップをブロックするかどうかを示します。|
-|safariBlocked|Boolean|ユーザーによる Safari の使用を禁止するかどうかを示します。|
+|safariBlocked|Boolean|ユーザーによる Safari の使用を禁止するかどうかを示します。 IOS 13 以降の監視デバイスが必要です。|
 |safariCookieSettings|[webBrowserCookieSettings](../resources/intune-deviceconfig-webbrowsercookiesettings.md)|Safari の Cookie の設定。 可能な値は、`browserDefault`、`blockAlways`、`allowCurrentWebSite`、`allowFromWebsitesVisited`、`allowAlways` です。|
-|safariManagedDomains|文字列コレクション|ここに記載されているパターンに一致する URL は管理対象と見なされます。|
+|safariManagedDomains|String コレクション|ここに記載されているパターンに一致する URL は管理対象と見なされます。|
 |safariPasswordAutoFillDomains|String コレクション|ユーザーは、ここに記載されているパターンに一致する URL からのみ、パスワードを Safari に保存できます。 監視モードのデバイスに適用されます (iOS 9.3 以降)。|
 |safariRequireFraudWarning|Boolean|Safari での不正行為の警告を必要とするかどうかを示します。|
 |screenCaptureBlocked|Boolean|ユーザーがスクリーンショットを撮ることを禁止するかどうかを示します。|
@@ -192,7 +192,7 @@ ms.locfileid: "36004240"
 |wallpaperBlockModification|Boolean|監視対象デバイスでの壁紙の変更を許可するかどうかを示します (iOS 9.0 以降)。|
 |wiFiConnectOnlyToConfiguredNetworks|Boolean|デバイスが監視モードのときに、構成プロファイルからの Wi-Fi ネットワークのみを使用するようデバイスに強制するかどうかを示します。|
 |classroomForceRequestPermissionToLeaveClasses|Boolean|教室経由で管理されていないコースに登録された学生が、コースを離れるときに教師にアクセス許可を要求するかどうかを示します (iOS 11.3 以降)。|
-|keychainBlockCloudSync|Boolean|ICloud のキーチェーン同期がブロックされるかどうかを示します。|
+|keychainBlockCloudSync|Boolean|ICloud のキーチェーン同期がブロックされるかどうかを示します。 IOS 13 以降の監視デバイスが必要です。|
 |pkiBlockOTAUpdates|Boolean|空軍の PKI 更新がブロックされるかどうかを示します。 この制限を false に設定しても、CRL および OCSP チェック (iOS 7.0 以降) は無効になりません。|
 |privacyForceLimitAdTracking|Boolean|Ad の追跡が制限されているかどうかを示します。(iOS 7.0 以降)。|
 |enterpriseBookBlockBackup|Boolean|エンタープライズブックのバックアップがブロックされるかどうかを示します。|
@@ -213,6 +213,11 @@ ms.locfileid: "36004240"
 |contactsAllowUnmanagedToManagedRead|Boolean|管理対象外アプリが管理された連絡先から読み取ることができるかどうかを示します (iOS 12.0 以降)。|
 |cellularBlockPersonalHotspotModification|Boolean|ユーザーが個人用ホットスポットの設定を変更することを禁止するかどうかを示します (iOS 12.2 以降)。|
 |siriDisableServerLogging|Boolean|サーバー側の Siri ログが無効かどうかを示します (iOS 12.2 以降)。|
+|continuousPathKeyboardBlocked|Boolean|デバイスの監視時に連続したパスキーボードをブロックするかどうかを示します (iOS 13 以降)。|
+|findMyDeviceInFindMyAppBlocked|Boolean|デバイスの監視時にデバイスの検索をブロックするかどうかを示します (iOS 13 以降)。|
+|findMyFriendsInFindMyAppBlocked|Boolean|デバイスの監視時に友人を検索するかどうかを示します (iOS 13 以降)。|
+|wiFiBlockPowerModification|Boolean|デバイスの監視時に WiFi 電源変更をブロックするかどうかを示します (iOS 13 以降)。|
+|ブロック|Boolean|ITunes アプリをブロックするかどうかを示します。 IOS 13 以降の監視デバイスが必要です。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
@@ -514,11 +519,14 @@ ms.locfileid: "36004240"
   "contactsAllowManagedToUnmanagedWrite": true,
   "contactsAllowUnmanagedToManagedRead": true,
   "cellularBlockPersonalHotspotModification": true,
-  "siriDisableServerLogging": true
+  "siriDisableServerLogging": true,
+  "continuousPathKeyboardBlocked": true,
+  "findMyDeviceInFindMyAppBlocked": true,
+  "findMyFriendsInFindMyAppBlocked": true,
+  "wiFiBlockPowerModification": true,
+  "iTunesBlocked": true
 }
 ```
-
-
 
 
 
