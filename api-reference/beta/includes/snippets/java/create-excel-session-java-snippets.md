@@ -1,11 +1,11 @@
 ---
 description: 自動的に生成されたファイル。 変更しない
-ms.openlocfilehash: d03078d9e828ffdff7df013b071893a946a6fa97
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: be431cf334064cbba704d566a2335f74c24b237a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35866584"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36362027"
 ---
 ```java
 
@@ -14,7 +14,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 boolean persistChanges = True;
 
 graphClient.me().drive().items("{id}").workbook()
-    .createSession(this,persistChanges)
+    .createSession(persistChanges)
     .buildRequest()
     .post();
 
