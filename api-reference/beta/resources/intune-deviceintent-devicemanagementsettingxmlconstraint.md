@@ -4,33 +4,34 @@ description: 制約の適用設定が整形式の XML である
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 37622619a916c3168ad3060446d6766561a7b1db
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: d7c78079d48daca37886f3984a5cb4dd8d4dbc10
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34984444"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36364608"
 ---
-# <a name="devicemanagementsettingxmlconstraint-resource-type"></a><span data-ttu-id="62d92-103">deviceManagementSettingXmlConstraint リソースの種類</span><span class="sxs-lookup"><span data-stu-id="62d92-103">deviceManagementSettingXmlConstraint resource type</span></span>
+# <a name="devicemanagementsettingxmlconstraint-resource-type"></a><span data-ttu-id="7cd8b-103">deviceManagementSettingXmlConstraint リソースの種類</span><span class="sxs-lookup"><span data-stu-id="7cd8b-103">deviceManagementSettingXmlConstraint resource type</span></span>
 
-> <span data-ttu-id="62d92-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="62d92-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="7cd8b-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="7cd8b-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="62d92-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="62d92-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="7cd8b-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="7cd8b-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="62d92-106">制約の適用設定が整形式の XML である</span><span class="sxs-lookup"><span data-stu-id="62d92-106">Constraint enforcing the setting is well formed XML</span></span>
+<span data-ttu-id="7cd8b-106">制約の適用設定が整形式の XML である</span><span class="sxs-lookup"><span data-stu-id="7cd8b-106">Constraint enforcing the setting is well formed XML</span></span>
 
 
-<span data-ttu-id="62d92-107">[Devicemanagementconstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)から継承します</span><span class="sxs-lookup"><span data-stu-id="62d92-107">Inherits from [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)</span></span>
+<span data-ttu-id="7cd8b-107">[Devicemanagementconstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)から継承します</span><span class="sxs-lookup"><span data-stu-id="7cd8b-107">Inherits from [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="62d92-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="62d92-108">Properties</span></span>
-|<span data-ttu-id="62d92-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="62d92-109">Property</span></span>|<span data-ttu-id="62d92-110">型</span><span class="sxs-lookup"><span data-stu-id="62d92-110">Type</span></span>|<span data-ttu-id="62d92-111">説明</span><span class="sxs-lookup"><span data-stu-id="62d92-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="7cd8b-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="7cd8b-108">Properties</span></span>
+|<span data-ttu-id="7cd8b-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="7cd8b-109">Property</span></span>|<span data-ttu-id="7cd8b-110">型</span><span class="sxs-lookup"><span data-stu-id="7cd8b-110">Type</span></span>|<span data-ttu-id="7cd8b-111">説明</span><span class="sxs-lookup"><span data-stu-id="7cd8b-111">Description</span></span>|
 |:---|:---|:---|
 
-## <a name="relationships"></a><span data-ttu-id="62d92-112">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="62d92-112">Relationships</span></span>
-<span data-ttu-id="62d92-113">なし</span><span class="sxs-lookup"><span data-stu-id="62d92-113">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="7cd8b-112">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="7cd8b-112">Relationships</span></span>
+<span data-ttu-id="7cd8b-113">なし</span><span class="sxs-lookup"><span data-stu-id="7cd8b-113">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="62d92-114">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="62d92-114">JSON Representation</span></span>
-<span data-ttu-id="62d92-115">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="62d92-115">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="7cd8b-114">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="7cd8b-114">JSON Representation</span></span>
+<span data-ttu-id="7cd8b-115">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="7cd8b-115">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceManagementSettingXmlConstraint"
@@ -41,8 +42,6 @@ ms.locfileid: "34984444"
   "@odata.type": "#microsoft.graph.deviceManagementSettingXmlConstraint"
 }
 ```
-
-
 
 
 

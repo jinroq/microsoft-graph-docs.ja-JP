@@ -5,32 +5,32 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c0f71936eb9f505cd9c8fa0905ac8a0cf1825501
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fcc49b127707a7dddb897657e648a7507c9edc17
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35977498"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36362641"
 ---
-# <a name="get-timeoffreason"></a><span data-ttu-id="99271-103">TimeOffReason を取得する</span><span class="sxs-lookup"><span data-stu-id="99271-103">Get timeOffReason</span></span>
+# <a name="get-timeoffreason"></a><span data-ttu-id="d3c78-103">TimeOffReason を取得する</span><span class="sxs-lookup"><span data-stu-id="d3c78-103">Get timeOffReason</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="99271-104">[Timeoffreason](../resources/timeoffreason.md)オブジェクトのプロパティと関係を ID で取得します。</span><span class="sxs-lookup"><span data-stu-id="99271-104">Retrieve the properties and relationships of a [timeOffReason](../resources/timeoffreason.md) object by ID.</span></span>
+<span data-ttu-id="d3c78-104">[Timeoffreason](../resources/timeoffreason.md)オブジェクトのプロパティと関係を ID で取得します。</span><span class="sxs-lookup"><span data-stu-id="d3c78-104">Retrieve the properties and relationships of a [timeOffReason](../resources/timeoffreason.md) object by ID.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="99271-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="99271-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="d3c78-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="d3c78-105">Permissions</span></span>
 
-<span data-ttu-id="99271-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="99271-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="d3c78-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d3c78-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="99271-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="99271-108">Permission type</span></span>      | <span data-ttu-id="99271-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="99271-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="d3c78-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="d3c78-108">Permission type</span></span>      | <span data-ttu-id="d3c78-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="d3c78-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="99271-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="99271-110">Delegated (work or school account)</span></span> | <span data-ttu-id="99271-111">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="99271-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="99271-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="99271-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="99271-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="99271-113">Not supported.</span></span>    |
-|<span data-ttu-id="99271-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="99271-114">Application</span></span> | <span data-ttu-id="99271-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="99271-115">Not supported.</span></span> |
+|<span data-ttu-id="d3c78-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="d3c78-110">Delegated (work or school account)</span></span> | <span data-ttu-id="d3c78-111">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d3c78-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="d3c78-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="d3c78-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d3c78-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d3c78-113">Not supported.</span></span>    |
+|<span data-ttu-id="d3c78-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="d3c78-114">Application</span></span> | <span data-ttu-id="d3c78-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d3c78-115">Not supported.</span></span> |
 
-> <span data-ttu-id="99271-116">**注**: この API は、管理者のアクセス許可をサポートします。</span><span class="sxs-lookup"><span data-stu-id="99271-116">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="99271-117">グローバル管理者は、所属していないグループにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="99271-117">Global admins can access groups that they are not a member of.</span></span>
+> <span data-ttu-id="d3c78-116">**注**: この API は、管理者のアクセス許可をサポートします。</span><span class="sxs-lookup"><span data-stu-id="d3c78-116">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="d3c78-117">グローバル管理者は、所属していないグループにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="d3c78-117">Global admins can access groups that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="99271-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="99271-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d3c78-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="d3c78-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,27 +38,27 @@ ms.locfileid: "35977498"
 GET /teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="99271-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="99271-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="d3c78-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="d3c78-119">Request headers</span></span>
 
-| <span data-ttu-id="99271-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="99271-120">Header</span></span>       | <span data-ttu-id="99271-121">値</span><span class="sxs-lookup"><span data-stu-id="99271-121">Value</span></span> |
+| <span data-ttu-id="d3c78-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="d3c78-120">Header</span></span>       | <span data-ttu-id="d3c78-121">値</span><span class="sxs-lookup"><span data-stu-id="d3c78-121">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="99271-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="99271-122">Authorization</span></span>  | <span data-ttu-id="99271-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="99271-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="99271-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="99271-125">Content-Type</span></span>  | <span data-ttu-id="99271-126">application/json</span><span class="sxs-lookup"><span data-stu-id="99271-126">application/json</span></span>  |
+| <span data-ttu-id="d3c78-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="d3c78-122">Authorization</span></span>  | <span data-ttu-id="d3c78-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="d3c78-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="d3c78-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="d3c78-125">Content-Type</span></span>  | <span data-ttu-id="d3c78-126">application/json</span><span class="sxs-lookup"><span data-stu-id="d3c78-126">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="99271-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="99271-127">Request body</span></span>
-<span data-ttu-id="99271-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="99271-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d3c78-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="d3c78-127">Request body</span></span>
+<span data-ttu-id="d3c78-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="d3c78-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="99271-129">応答</span><span class="sxs-lookup"><span data-stu-id="99271-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d3c78-129">応答</span><span class="sxs-lookup"><span data-stu-id="d3c78-129">Response</span></span>
 
-<span data-ttu-id="99271-130">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[timeoffreason](../resources/timeoffreason.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="99271-130">If successful, this method returns a `200 OK` response code and a [timeOffReason](../resources/timeoffreason.md) object in the response body.</span></span>
+<span data-ttu-id="d3c78-130">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[timeoffreason](../resources/timeoffreason.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="d3c78-130">If successful, this method returns a `200 OK` response code and a [timeOffReason](../resources/timeoffreason.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="99271-131">例</span><span class="sxs-lookup"><span data-stu-id="99271-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d3c78-131">例</span><span class="sxs-lookup"><span data-stu-id="d3c78-131">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="99271-132">要求</span><span class="sxs-lookup"><span data-stu-id="99271-132">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="d3c78-132">要求</span><span class="sxs-lookup"><span data-stu-id="d3c78-132">Request</span></span>
 
-<span data-ttu-id="99271-133">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="99271-133">The following is an example of the request.</span></span>
+<span data-ttu-id="d3c78-133">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="d3c78-133">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="99271-134">プロトコル</span><span class="sxs-lookup"><span data-stu-id="99271-134">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="d3c78-134">プロトコル</span><span class="sxs-lookup"><span data-stu-id="d3c78-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "timeoffreason-get"
@@ -66,30 +66,30 @@ GET /teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 ```http
 GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="99271-135">C#</span><span class="sxs-lookup"><span data-stu-id="99271-135">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="d3c78-135">C#</span><span class="sxs-lookup"><span data-stu-id="d3c78-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/timeoffreason-get-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="99271-136">Javascript</span><span class="sxs-lookup"><span data-stu-id="99271-136">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="d3c78-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d3c78-136">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/timeoffreason-get-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="99271-137">目的-C</span><span class="sxs-lookup"><span data-stu-id="99271-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="d3c78-137">目的-C</span><span class="sxs-lookup"><span data-stu-id="d3c78-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/timeoffreason-get-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="99271-138">Java</span><span class="sxs-lookup"><span data-stu-id="99271-138">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="d3c78-138">Java</span><span class="sxs-lookup"><span data-stu-id="d3c78-138">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/timeoffreason-get-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="99271-139">応答</span><span class="sxs-lookup"><span data-stu-id="99271-139">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="d3c78-139">応答</span><span class="sxs-lookup"><span data-stu-id="d3c78-139">Response</span></span>
 
-<span data-ttu-id="99271-140">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="99271-140">The following is an example of the response.</span></span> 
+<span data-ttu-id="d3c78-140">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="d3c78-140">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="99271-p104">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="99271-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="d3c78-p104">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="d3c78-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
