@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8b3689a36a081f1d81aa464eb4ac813e13aeffb9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 00a865571b639449c4cc7237c6f9fe7349532ca8
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35947089"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36315191"
 ---
 # <a name="get-macosscepcertificateprofile"></a>MacOSScepCertificateProfile の取得
 
@@ -27,7 +27,7 @@ ms.locfileid: "35947089"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -135,6 +135,7 @@ Content-Length: 2273
   }
 }
 ```
+
 
 
 

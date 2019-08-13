@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: a3c4d4d07a3891167838af6de7ea854883a5b1e5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9f9a882cd1fdc788782a7c68df1ad38c6cc8d37e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967701"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36308135"
 ---
 # <a name="userpfxpaddingscheme-enum-type"></a>Userpfxps/スキーム列挙型
 
@@ -23,14 +23,12 @@ ms.locfileid: "35967701"
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|none|.0|パディングを使用しません。|
-|pkcs1|1-d|PKCS # 1 のパディングを使用します。|
-|oaepSha1|pbm-2|OAEP のパディングを使用します。|
-|oaepSha256|1/3|OAEP 256 のパディングを使用します。|
-|oaepSha384|2/4|OAEP 384 のパディングを使用します。|
-|oaepSha512|5|OAEP 512 のパディングを使用します。|
-
-
+|none|.0|まだ文書化されていません|
+|pkcs1|1-d|まだ文書化されていません|
+|oaepSha1|pbm-2|まだ文書化されていません|
+|oaepSha256|1/3|まだ文書化されていません|
+|oaepSha384|2/4|まだ文書化されていません|
+|oaepSha512|5|まだ文書化されていません|
 
 
 

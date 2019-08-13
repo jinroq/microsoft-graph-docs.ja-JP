@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bc80f105a4ff8f231d5614bf0a2fa259e4d34bfa
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ea7c7f270062efc4d31154232262271803862da5
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35980992"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36309528"
 ---
 # <a name="updatedeviceprofileassignment-action"></a>updateDeviceProfileAssignment アクション
 
@@ -27,7 +27,7 @@ ms.locfileid: "35980992"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementServiceConfig.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -80,6 +80,7 @@ Content-length: 51
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

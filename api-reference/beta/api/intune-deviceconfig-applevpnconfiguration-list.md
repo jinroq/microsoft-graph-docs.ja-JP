@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 31c9494234fecbffb9e3285bb3646c30c3afcccf
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3884a9745cb8b7a7112289453b1ef422d051c718
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35950293"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36310935"
 ---
 # <a name="list-applevpnconfigurations"></a>りんごの構成を一覧表示する
 
@@ -27,7 +27,7 @@ ms.locfileid: "35950293"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -162,6 +162,7 @@ Content-Length: 3191
   ]
 }
 ```
+
 
 
 

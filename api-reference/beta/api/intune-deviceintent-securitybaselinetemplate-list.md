@@ -4,12 +4,13 @@ description: SecurityBaselineTemplate オブジェクトのプロパティとリ
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4b50fba507a4966a67a8be4938b5647fce2deef9
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 8f5d5e938bb4bb0cf64ef4aae0a6b929d67d0886
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34959419"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36310788"
 ---
 # <a name="list-securitybaselinetemplates"></a>リスト securityBaselineTemplates
 
@@ -26,7 +27,7 @@ ms.locfileid: "34959419"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -81,6 +82,7 @@ Content-Length: 452
   ]
 }
 ```
+
 
 
 

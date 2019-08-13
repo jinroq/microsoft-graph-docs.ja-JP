@@ -4,12 +4,13 @@ description: デバイスアプリの管理タスクの優先度。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d9f4067507208f578137155ffe06559c34e9f3c4
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 41e5fc213b17255071c5822e386590c39a9c3406
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "35002596"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36308163"
 ---
 # <a name="deviceappmanagementtaskpriority-enum-type"></a>deviceAppManagementTaskPriority 列挙型
 
@@ -25,8 +26,6 @@ ms.locfileid: "35002596"
 |none|.0|優先度を設定しません。|
 |高額|1-d|高い優先度|
 |低さ|pbm-2|低い優先度|
-
-
 
 
 

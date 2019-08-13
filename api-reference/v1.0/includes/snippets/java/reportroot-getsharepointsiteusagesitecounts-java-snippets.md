@@ -1,18 +1,18 @@
 ---
 description: 自動的に生成されたファイル。 変更しない
-ms.openlocfilehash: 6fd66d797fd4930ea64b8b517503c5e603675f71
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 1ffd8ddcef0355f8af8c752a976332f4937891f4
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35893385"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36357982"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Report report = graphClient.reports()
-    .getSharePointSiteUsageSiteCounts('D7')
+    .getSharePointSiteUsageSiteCounts("D7")
     .buildRequest()
     .get();
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2d145212645283738d1248bd05c50b1f6658460f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 62c57d4ed01ab1f454a5356899f9645927680dfd
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967218"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36313049"
 ---
 # <a name="mobileapptroubleshootingappstatehistory-resource-type"></a>mobileAppTroubleshootingAppStateHistory リソースの種類
 
@@ -27,8 +27,8 @@ ms.locfileid: "35967218"
 |プロパティ|型|説明|
 |:---|:---|:---|
 |occurrenceDateTime|DateTimeOffset|履歴アイテムが発生した時刻。 [MobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)から継承します。|
-|actionType|[mobileAppActionType](../resources/intune-troubleshooting-mobileappactiontype.md)|Intune アプリケーションのアクションの種類。 可能な値は、`unknown`、`installCommandSent`、`installed`、`uninstalled`、`userRequestedInstall` です。|
-|runState|[runState](../resources/intune-shared-runstate.md)|アイテムの状態。 可能な値は、`unknown`、`success`、`fail` です。|
+|actionType|[mobileAppActionType](../resources/intune-troubleshooting-mobileappactiontype.md)|対象となった AAD セキュリティグループ id。 可能な値は、`unknown`、`installCommandSent`、`installed`、`uninstalled`、`userRequestedInstall` です。|
+|runState|[runState](../resources/intune-shared-runstate.md)|アイテムの状態。 可能な値は、`unknown`、`success`、`fail`、`error`、`pending` です。|
 |errorCode|String|失敗のエラーコード。エラーがない場合は空です。|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -50,8 +50,6 @@ ms.locfileid: "35967218"
   "errorCode": "String"
 }
 ```
-
-
 
 
 

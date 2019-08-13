@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9fafd1bf8c1a5d9ff2cb1f263e78eea1bccd2244
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c34794e490dfde03adadb730094f47a9e55ff377
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35981235"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36309885"
 ---
 # <a name="update-windowsmanageddevice"></a>WindowsManagedDevice を更新する
 
@@ -27,7 +27,7 @@ ms.locfileid: "35981235"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementManagedDevices.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -123,6 +123,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |windowsRemediatedMalwareCount|Int32|[Manageddevice](../resources/intune-devices-manageddevice.md)から継承された、この windows デバイスの修復されたマルウェアの数|
 |notes|String|IT 管理者によって作成された、 [manageddevice](../resources/intune-devices-manageddevice.md)から継承したデバイス上のメモ|
 |configurationManagerClientHealthState|[configurationManagerClientHealthState](../resources/intune-devices-configurationmanagerclienthealthstate.md)|構成マネージャークライアントの正常性状態。 MDM/ConfigMgr エージェントによって管理されているデバイスに対してのみ有効。 [Manageddevice](../resources/intune-devices-manageddevice.md)から継承されます。|
+|configurationManagerClientInformation|[configurationManagerClientInformation](../resources/intune-devices-configurationmanagerclientinformation.md)|Configuration manager クライアント情報。管理されたデバイス、または管理されたデバイス、または[Manageddevice](../resources/intune-devices-manageddevice.md)から継承された、ConfigMgr エージェントによって管理されたデバイスに対してのみ有効です。|
 
 
 
@@ -136,7 +137,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}
 Content-type: application/json
-Content-length: 7293
+Content-length: 7520
 
 {
   "@odata.type": "#microsoft.graph.windowsManagedDevice",
@@ -173,7 +174,8 @@ Content-length: 7293
     "deviceFullQualifiedDomainName": "Device Full Qualified Domain Name value",
     "deviceGuardVirtualizationBasedSecurityHardwareRequirementState": "secureBootRequired",
     "deviceGuardVirtualizationBasedSecurityState": "rebootRequired",
-    "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired"
+    "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired",
+    "osBuildNumber": "Os Build Number value"
   },
   "ownerType": "company",
   "managedDeviceOwnerType": "company",
@@ -303,6 +305,10 @@ Content-length: 7293
     "state": "installed",
     "errorCode": 9,
     "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00"
+  },
+  "configurationManagerClientInformation": {
+    "@odata.type": "microsoft.graph.configurationManagerClientInformation",
+    "clientIdentifier": "Client Identifier value"
   }
 }
 ```
@@ -312,7 +318,7 @@ Content-length: 7293
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7342
+Content-Length: 7569
 
 {
   "@odata.type": "#microsoft.graph.windowsManagedDevice",
@@ -350,7 +356,8 @@ Content-Length: 7342
     "deviceFullQualifiedDomainName": "Device Full Qualified Domain Name value",
     "deviceGuardVirtualizationBasedSecurityHardwareRequirementState": "secureBootRequired",
     "deviceGuardVirtualizationBasedSecurityState": "rebootRequired",
-    "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired"
+    "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired",
+    "osBuildNumber": "Os Build Number value"
   },
   "ownerType": "company",
   "managedDeviceOwnerType": "company",
@@ -480,9 +487,14 @@ Content-Length: 7342
     "state": "installed",
     "errorCode": 9,
     "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00"
+  },
+  "configurationManagerClientInformation": {
+    "@odata.type": "microsoft.graph.configurationManagerClientInformation",
+    "clientIdentifier": "Client Identifier value"
   }
 }
 ```
+
 
 
 

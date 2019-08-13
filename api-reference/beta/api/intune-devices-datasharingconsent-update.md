@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 946b4bbb36e34d9c1eb59774b8a7a0ccc93f86c2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 073ab096a3bacdec1e01e44e891baa2802f5bd61
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35981697"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36310634"
 ---
 # <a name="update-datasharingconsent"></a>DataSharingConsent の更新
 
@@ -27,7 +27,7 @@ ms.locfileid: "35981697"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementServiceConfig.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -102,6 +102,7 @@ Content-Length: 382
   "grantedByUserId": "Granted By User Id value"
 }
 ```
+
 
 
 

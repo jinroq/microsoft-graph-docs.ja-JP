@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1d0965d5b193f1e72182a9ea0bebaa641a1ca6da
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6a75417705ba4e841d11aa5fd35217639f3d74ed
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35958068"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36312489"
 ---
 # <a name="update-androiddeviceownerwificonfiguration"></a>AndroidDeviceOwnerWiFiConfiguration の更新
 
@@ -27,7 +27,7 @@ ms.locfileid: "35958068"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -175,6 +175,7 @@ Content-Length: 1454
   "preSharedKeyIsSet": true
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6080578ae14d0446ca725247be6baa9d7633058e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1207a4f26fbfc64f2be23aa3d6779959cc16e9ee
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35976937"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36314617"
 ---
 # <a name="create-windows10endpointprotectionconfiguration"></a>windows10EndpointProtectionConfiguration の作成
 
@@ -27,7 +27,7 @@ ms.locfileid: "35976937"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -94,7 +94,6 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |userRightsRemoteShutdown|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザーの権利は、ネットワーク上のリモートの場所からコンピューターをシャットダウンできるユーザーを決定します。 このユーザーの権利を誤用すると、サービス拒否が発生する可能性があります。 サポートされているのは、NotConfigured と許可の状態のみです。|
 |userRightsRestoreData|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザーの権利は、バックアップされたファイルとディレクトリを復元するときに、ファイル、ディレクトリ、レジストリ、およびその他の固定オブジェクトのアクセス許可をバイパスできるユーザーを決定し、任意のユーザーが任意の有効なセキュリティプリンシパルをオブジェクトの所有者として設定できるようにします。 サポートされているのは、NotConfigured と許可の状態のみです。|
 |userRightsTakeOwnership|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザーの権利は、Active Directory オブジェクト、ファイルとフォルダー、プリンター、レジストリキー、プロセス、スレッドなど、システム内のセキュリティ保護可能なオブジェクトの所有権を取得できるユーザーを決定します。 サポートされているのは、NotConfigured と許可の状態のみです。|
-|userRightsRegisterProcessAsService|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このセキュリティ設定は、サービスとしてのプロセスの登録を禁止するサービスアカウントを決定します。 注: このセキュリティ設定は、システム、ローカルサービス、またはネットワークサービスアカウントには適用されません。 サポートされている状態はブロックされます。|
 |xboxServicesEnableXboxGameSaveTask|Boolean|この設定では、xbox ゲームの保存を有効にするか (1)、無効にするか (0) を指定します。|
 |xboxServicesAccessoryManagementServiceStartupMode|[serviceStartType](../resources/intune-deviceconfig-servicestarttype.md)|この設定では、アクセサリ管理サービスの開始の種類が自動 (2)、手動 (3)、無効 (4) であるかどうかを決定します。 既定値: Manual。 可能な値は、`manual`、`automatic`、`disabled` です。|
 |xboxServicesLiveAuthManagerServiceStartupMode|[serviceStartType](../resources/intune-deviceconfig-servicestarttype.md)|この設定では、Live Auth Manager サービスの開始の種類が自動 (2)、手動 (3)、無効 (4) であるかどうかを決定します。 既定値: Manual。 可能な値は、`manual`、`automatic`、`disabled` です。|
@@ -254,7 +253,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 28958
+Content-length: 28536
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
@@ -664,18 +663,6 @@ Content-length: 28958
       }
     ]
   },
-  "userRightsRegisterProcessAsService": {
-    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
-    "state": "blocked",
-    "localUsersOrGroups": [
-      {
-        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
-        "name": "Name value",
-        "description": "Description value",
-        "securityIdentifier": "Security Identifier value"
-      }
-    ]
-  },
   "xboxServicesEnableXboxGameSaveTask": true,
   "xboxServicesAccessoryManagementServiceStartupMode": "automatic",
   "xboxServicesLiveAuthManagerServiceStartupMode": "automatic",
@@ -953,7 +940,7 @@ Content-length: 28958
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 29130
+Content-Length: 28708
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
@@ -1366,18 +1353,6 @@ Content-Length: 29130
       }
     ]
   },
-  "userRightsRegisterProcessAsService": {
-    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
-    "state": "blocked",
-    "localUsersOrGroups": [
-      {
-        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
-        "name": "Name value",
-        "description": "Description value",
-        "securityIdentifier": "Security Identifier value"
-      }
-    ]
-  },
   "xboxServicesEnableXboxGameSaveTask": true,
   "xboxServicesAccessoryManagementServiceStartupMode": "automatic",
   "xboxServicesLiveAuthManagerServiceStartupMode": "automatic",
@@ -1649,6 +1624,7 @@ Content-Length: 29130
   }
 }
 ```
+
 
 
 

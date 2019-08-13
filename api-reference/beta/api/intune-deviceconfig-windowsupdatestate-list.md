@@ -4,12 +4,13 @@ description: WindowsUpdateState オブジェクトのプロパティとリレー
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 215d3c66756ce9072061fedfeb81b25c647bf7b4
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: 150d37b7ac39280310596c175d77e4e006c58865
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35726113"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36313672"
 ---
 # <a name="list-windowsupdatestates"></a>リスト windowsUpdateStates
 
@@ -26,7 +27,7 @@ ms.locfileid: "35726113"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -82,6 +83,7 @@ Content-Length: 630
   ]
 }
 ```
+
 
 
 

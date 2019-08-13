@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 680dae0510b323f49e33564b2d1260626733f572
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 47f59f3d7d2a0b12d5875937054048b7a0a0d47d
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35958327"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36312853"
 ---
 # <a name="get-androidcertificateprofilebase"></a>AndroidCertificateProfileBase を取得する
 
@@ -27,7 +27,7 @@ ms.locfileid: "35958327"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -120,6 +120,7 @@ Content-Length: 1723
   }
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fc419e3878098eba1fe6b384f85ec63f1d4b3a08
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 08a0379061b6135a9a13a90555d51c94e50e8107
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35987062"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36309997"
 ---
 # <a name="update-remoteactionaudit"></a>RemoteActionAudit の更新
 
@@ -27,7 +27,7 @@ ms.locfileid: "35987062"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementManagedDevices.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -55,11 +55,12 @@ PATCH /deviceManagement/remoteActionAudits/{remoteActionAuditId}
 |deviceDisplayName|String|Intune デバイス名。|
 |userName|文字列型 (String)|\[非\]推奨 InitiatedByUserPrincipalName を代わりに使用してください。|
 |initiatedByUserPrincipalName|String|デバイスのアクションを開始したユーザーの形式は UPN です。|
-|action|[remoteAction](../resources/intune-devices-remoteaction.md)|アクション名。 可能な値は、`unknown`、`factoryReset`、`removeCompanyData`、`resetPasscode`、`remoteLock`、`enableLostMode`、`disableLostMode`、`locateDevice`、`rebootNow`、`recoverPasscode`、`cleanWindowsDevice`、`logoutSharedAppleDeviceActiveUser`、`quickScan`、`fullScan`、`windowsDefenderUpdateSignatures`、`factoryResetKeepEnrollmentData`、`updateDeviceAccount`、`automaticRedeployment`、`shutDown`、`rotateFileVaultKey`、`getFileVaultKey` です。|
+|action|[remoteAction](../resources/intune-devices-remoteaction.md)|アクション名。 可能な値: `unknown`、 `factoryReset` `removeCompanyData` `resetPasscode` `remoteLock` `enableLostMode` `disableLostMode` `locateDevice` `rebootNow` `recoverPasscode` `cleanWindowsDevice` `logoutSharedAppleDeviceActiveUser`、、、、、、、、、、、、 `quickScan` `fullScan` `windowsDefenderUpdateSignatures` `factoryResetKeepEnrollmentData` `updateDeviceAccount` `automaticRedeployment` `shutDown`, `rotateFileVaultKey`, `getFileVaultKey`, `setDeviceName`.|
 |requestDateTime|DateTimeOffset|アクションが発行された日時 (UTC)。|
 |deviceOwnerUserPrincipalName|String|デバイス所有者の Upn。|
 |deviceIMEI|String|デバイスの IMEI。|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|アクションの状態。 可能な値は、`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported` です。|
+|managedDeviceId|String|アクションのターゲット。|
 
 
 
@@ -73,7 +74,7 @@ PATCH /deviceManagement/remoteActionAudits/{remoteActionAuditId}
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/remoteActionAudits/{remoteActionAuditId}
 Content-type: application/json
-Content-length: 455
+Content-length: 504
 
 {
   "@odata.type": "#microsoft.graph.remoteActionAudit",
@@ -84,7 +85,8 @@ Content-length: 455
   "requestDateTime": "2017-01-01T00:03:07.1589002-08:00",
   "deviceOwnerUserPrincipalName": "Device Owner User Principal Name value",
   "deviceIMEI": "Device IMEI value",
-  "actionState": "pending"
+  "actionState": "pending",
+  "managedDeviceId": "Managed Device Id value"
 }
 ```
 
@@ -93,7 +95,7 @@ Content-length: 455
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 504
+Content-Length: 553
 
 {
   "@odata.type": "#microsoft.graph.remoteActionAudit",
@@ -105,9 +107,11 @@ Content-Length: 504
   "requestDateTime": "2017-01-01T00:03:07.1589002-08:00",
   "deviceOwnerUserPrincipalName": "Device Owner User Principal Name value",
   "deviceIMEI": "Device IMEI value",
-  "actionState": "pending"
+  "actionState": "pending",
+  "managedDeviceId": "Managed Device Id value"
 }
 ```
+
 
 
 
