@@ -5,53 +5,53 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 184cf55222a4b783fe038664af92b52f901ff354
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 947fb36ef77f2212491fcceb312960bfbc14306e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35996232"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36326080"
 ---
-# <a name="list-licensedetails"></a><span data-ttu-id="cda8c-103">licenseDetails を一覧表示する</span><span class="sxs-lookup"><span data-stu-id="cda8c-103">List licenseDetails</span></span>
+# <a name="list-licensedetails"></a><span data-ttu-id="0b055-103">licenseDetails を一覧表示する</span><span class="sxs-lookup"><span data-stu-id="0b055-103">List licenseDetails</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="cda8c-104">LicenseDetails オブジェクトの一覧を取得します。</span><span class="sxs-lookup"><span data-stu-id="cda8c-104">Retrieve a list of licenseDetails objects.</span></span>
+<span data-ttu-id="0b055-104">LicenseDetails オブジェクトの一覧を取得します。</span><span class="sxs-lookup"><span data-stu-id="0b055-104">Retrieve a list of licenseDetails objects.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="cda8c-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="cda8c-105">Permissions</span></span>
-<span data-ttu-id="cda8c-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="cda8c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="0b055-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="0b055-105">Permissions</span></span>
+<span data-ttu-id="0b055-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0b055-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="cda8c-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="cda8c-108">Permission type</span></span>      | <span data-ttu-id="cda8c-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="cda8c-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="0b055-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="0b055-108">Permission type</span></span>      | <span data-ttu-id="0b055-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="0b055-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="cda8c-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="cda8c-110">Delegated (work or school account)</span></span> | <span data-ttu-id="cda8c-111">Directory.accessasuser.all、すべてのユーザーが読み取り、すべてのディレクトリを取得します。すべてのユーザーが参照します。すべてのディレクトリ。</span><span class="sxs-lookup"><span data-stu-id="cda8c-111">User.Read, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="cda8c-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="cda8c-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cda8c-113">User.Read</span><span class="sxs-lookup"><span data-stu-id="cda8c-113">User.Read</span></span>    |
-|<span data-ttu-id="cda8c-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="cda8c-114">Application</span></span> | <span data-ttu-id="cda8c-115">User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cda8c-115">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="0b055-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="0b055-110">Delegated (work or school account)</span></span> | <span data-ttu-id="0b055-111">Directory.accessasuser.all、すべてのユーザーが読み取り、すべてのディレクトリを取得します。すべてのユーザーが参照します。すべてのディレクトリ。</span><span class="sxs-lookup"><span data-stu-id="0b055-111">User.Read, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="0b055-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="0b055-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0b055-113">User.Read</span><span class="sxs-lookup"><span data-stu-id="0b055-113">User.Read</span></span>    |
+|<span data-ttu-id="0b055-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="0b055-114">Application</span></span> | <span data-ttu-id="0b055-115">User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0b055-115">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="cda8c-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="cda8c-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0b055-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="0b055-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/licenseDetails
 GET /users/{id}/licenseDetails
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="cda8c-117">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="cda8c-117">Optional query parameters</span></span>
-<span data-ttu-id="cda8c-118">このメソッドは、 [OData クエリパラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートし**ていません**。</span><span class="sxs-lookup"><span data-stu-id="cda8c-118">This method does **not** support [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters).</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="0b055-117">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="0b055-117">Optional query parameters</span></span>
+<span data-ttu-id="0b055-118">このメソッドは、 [OData クエリパラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートし**ていません**。</span><span class="sxs-lookup"><span data-stu-id="0b055-118">This method does **not** support [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="cda8c-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="cda8c-119">Request headers</span></span>
-| <span data-ttu-id="cda8c-120">名前</span><span class="sxs-lookup"><span data-stu-id="cda8c-120">Name</span></span>      |<span data-ttu-id="cda8c-121">説明</span><span class="sxs-lookup"><span data-stu-id="cda8c-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="0b055-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="0b055-119">Request headers</span></span>
+| <span data-ttu-id="0b055-120">名前</span><span class="sxs-lookup"><span data-stu-id="0b055-120">Name</span></span>      |<span data-ttu-id="0b055-121">説明</span><span class="sxs-lookup"><span data-stu-id="0b055-121">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="cda8c-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="cda8c-122">Authorization</span></span>  | <span data-ttu-id="cda8c-123">ベアラー &lt;コード&gt;</span><span class="sxs-lookup"><span data-stu-id="cda8c-123">Bearer &lt;code&gt;</span></span>|
+| <span data-ttu-id="0b055-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="0b055-122">Authorization</span></span>  | <span data-ttu-id="0b055-123">ベアラー &lt;コード&gt;</span><span class="sxs-lookup"><span data-stu-id="0b055-123">Bearer &lt;code&gt;</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="cda8c-124">要求本文</span><span class="sxs-lookup"><span data-stu-id="cda8c-124">Request body</span></span>
-<span data-ttu-id="cda8c-125">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="cda8c-125">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="0b055-124">要求本文</span><span class="sxs-lookup"><span data-stu-id="0b055-124">Request body</span></span>
+<span data-ttu-id="0b055-125">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="0b055-125">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="cda8c-126">応答</span><span class="sxs-lookup"><span data-stu-id="cda8c-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="0b055-126">応答</span><span class="sxs-lookup"><span data-stu-id="0b055-126">Response</span></span>
 
-<span data-ttu-id="cda8c-127">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[licensedetails](../resources/licensedetails.md)オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="cda8c-127">If successful, this method returns a `200 OK` response code and collection of [licenseDetails](../resources/licensedetails.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="cda8c-128">例</span><span class="sxs-lookup"><span data-stu-id="cda8c-128">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="cda8c-129">要求</span><span class="sxs-lookup"><span data-stu-id="cda8c-129">Request</span></span>
+<span data-ttu-id="0b055-127">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[licensedetails](../resources/licensedetails.md)オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="0b055-127">If successful, this method returns a `200 OK` response code and collection of [licenseDetails](../resources/licensedetails.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="0b055-128">例</span><span class="sxs-lookup"><span data-stu-id="0b055-128">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="0b055-129">要求</span><span class="sxs-lookup"><span data-stu-id="0b055-129">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="cda8c-130">プロトコル</span><span class="sxs-lookup"><span data-stu-id="cda8c-130">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="0b055-130">プロトコル</span><span class="sxs-lookup"><span data-stu-id="0b055-130">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_licensedetails"
@@ -59,26 +59,26 @@ GET /users/{id}/licenseDetails
 ```http
 GET https://graph.microsoft.com/beta/me/licenseDetails
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="cda8c-131">C#</span><span class="sxs-lookup"><span data-stu-id="cda8c-131">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="0b055-131">C#</span><span class="sxs-lookup"><span data-stu-id="0b055-131">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-licensedetails-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="cda8c-132">Javascript</span><span class="sxs-lookup"><span data-stu-id="cda8c-132">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="0b055-132">JavaScript</span><span class="sxs-lookup"><span data-stu-id="0b055-132">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-licensedetails-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="cda8c-133">目的-C</span><span class="sxs-lookup"><span data-stu-id="cda8c-133">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="0b055-133">目的-C</span><span class="sxs-lookup"><span data-stu-id="0b055-133">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-licensedetails-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="cda8c-134">Java</span><span class="sxs-lookup"><span data-stu-id="cda8c-134">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="0b055-134">Java</span><span class="sxs-lookup"><span data-stu-id="0b055-134">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-licensedetails-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="cda8c-135">応答</span><span class="sxs-lookup"><span data-stu-id="cda8c-135">Response</span></span>
-<span data-ttu-id="cda8c-p102">注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="cda8c-p102">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="0b055-135">応答</span><span class="sxs-lookup"><span data-stu-id="0b055-135">Response</span></span>
+<span data-ttu-id="0b055-p102">注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="0b055-p102">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
