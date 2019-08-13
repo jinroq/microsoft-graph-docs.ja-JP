@@ -5,30 +5,30 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1771976abc56bb2b39850dcc925003df8965192e
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: d2fe83a3a282c000f7181c9d40272415c4a3e1be
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35878307"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36342594"
 ---
-# <a name="create-onpremisesagentgroup"></a><span data-ttu-id="f4000-103">OnPremisesAgentGroup を作成する</span><span class="sxs-lookup"><span data-stu-id="f4000-103">Create onPremisesAgentGroup</span></span>
+# <a name="create-onpremisesagentgroup"></a><span data-ttu-id="3f2a3-103">OnPremisesAgentGroup を作成する</span><span class="sxs-lookup"><span data-stu-id="3f2a3-103">Create onPremisesAgentGroup</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f4000-104">新しい[onPremisesAgentGroup](../resources/onpremisesagentgroup.md)オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="f4000-104">Create a new [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.</span></span>
+<span data-ttu-id="3f2a3-104">新しい[onPremisesAgentGroup](../resources/onpremisesagentgroup.md)オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="3f2a3-104">Create a new [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f4000-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="f4000-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="3f2a3-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="3f2a3-105">Permissions</span></span>
 
-<span data-ttu-id="f4000-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f4000-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="3f2a3-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="3f2a3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="f4000-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="f4000-108">Permission type</span></span>                        | <span data-ttu-id="f4000-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="f4000-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="3f2a3-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="3f2a3-108">Permission type</span></span>                        | <span data-ttu-id="3f2a3-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="3f2a3-109">Permissions (from least to most privileged)</span></span> |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f4000-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="f4000-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="f4000-111">OnPremisesPublishingProfiles</span><span class="sxs-lookup"><span data-stu-id="f4000-111">OnPremisesPublishingProfiles.ReadWrite.All</span></span> |
-| <span data-ttu-id="f4000-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="f4000-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f4000-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f4000-113">Not supported.</span></span> |
-| <span data-ttu-id="f4000-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="f4000-114">Application</span></span>                            | <span data-ttu-id="f4000-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f4000-115">Not supported.</span></span> |
+|<span data-ttu-id="3f2a3-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="3f2a3-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="3f2a3-111">OnPremisesPublishingProfiles</span><span class="sxs-lookup"><span data-stu-id="3f2a3-111">OnPremisesPublishingProfiles.ReadWrite.All</span></span> |
+| <span data-ttu-id="3f2a3-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="3f2a3-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3f2a3-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="3f2a3-113">Not supported.</span></span> |
+| <span data-ttu-id="3f2a3-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="3f2a3-114">Application</span></span>                            | <span data-ttu-id="3f2a3-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="3f2a3-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f4000-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="f4000-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3f2a3-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="3f2a3-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,15 +36,15 @@ ms.locfileid: "35878307"
 POST ~/onPremisesPublishingProfiles/{publishingType}/agentGroups/{id}/agents
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="f4000-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f4000-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="3f2a3-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="3f2a3-117">Request headers</span></span>
 
-| <span data-ttu-id="f4000-118">名前</span><span class="sxs-lookup"><span data-stu-id="f4000-118">Name</span></span>          | <span data-ttu-id="f4000-119">説明</span><span class="sxs-lookup"><span data-stu-id="f4000-119">Description</span></span>   |
+| <span data-ttu-id="3f2a3-118">名前</span><span class="sxs-lookup"><span data-stu-id="3f2a3-118">Name</span></span>          | <span data-ttu-id="3f2a3-119">説明</span><span class="sxs-lookup"><span data-stu-id="3f2a3-119">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="f4000-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="f4000-120">Authorization</span></span> | <span data-ttu-id="f4000-121">ベアラー {トークン}</span><span class="sxs-lookup"><span data-stu-id="f4000-121">Bearer {token}</span></span> |
+| <span data-ttu-id="3f2a3-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="3f2a3-120">Authorization</span></span> | <span data-ttu-id="3f2a3-121">ベアラー {トークン}</span><span class="sxs-lookup"><span data-stu-id="3f2a3-121">Bearer {token}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f4000-122">要求本文</span><span class="sxs-lookup"><span data-stu-id="f4000-122">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="3f2a3-122">要求本文</span><span class="sxs-lookup"><span data-stu-id="3f2a3-122">Request body</span></span>
 
-<span data-ttu-id="f4000-123">要求本文で、 [onPremisesAgentGroup](../resources/onpremisesagentgroup.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="f4000-123">In the request body, supply a JSON representation of an [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.</span></span>
+<span data-ttu-id="3f2a3-123">要求本文で、 [onPremisesAgentGroup](../resources/onpremisesagentgroup.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="3f2a3-123">In the request body, supply a JSON representation of an [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.</span></span>
 
 ```json
 {
@@ -52,17 +52,17 @@ POST ~/onPremisesPublishingProfiles/{publishingType}/agentGroups/{id}/agents
 }
 ```
 
-## <a name="response"></a><span data-ttu-id="f4000-124">応答</span><span class="sxs-lookup"><span data-stu-id="f4000-124">Response</span></span>
+## <a name="response"></a><span data-ttu-id="3f2a3-124">応答</span><span class="sxs-lookup"><span data-stu-id="3f2a3-124">Response</span></span>
 
-<span data-ttu-id="f4000-125">成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[onPremisesAgentGroup](../resources/onpremisesagentgroup.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="f4000-125">If successful, this method returns a `201 Created` response code and an [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object in the response body.</span></span>
+<span data-ttu-id="3f2a3-125">成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[onPremisesAgentGroup](../resources/onpremisesagentgroup.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="3f2a3-125">If successful, this method returns a `201 Created` response code and an [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="f4000-126">例</span><span class="sxs-lookup"><span data-stu-id="f4000-126">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="3f2a3-126">例</span><span class="sxs-lookup"><span data-stu-id="3f2a3-126">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="f4000-127">要求</span><span class="sxs-lookup"><span data-stu-id="f4000-127">Request</span></span>
+### <a name="request"></a><span data-ttu-id="3f2a3-127">要求</span><span class="sxs-lookup"><span data-stu-id="3f2a3-127">Request</span></span>
 
-<span data-ttu-id="f4000-128">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="f4000-128">The following is an example of the request.</span></span>
+<span data-ttu-id="3f2a3-128">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="3f2a3-128">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="f4000-129">プロトコル</span><span class="sxs-lookup"><span data-stu-id="f4000-129">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="3f2a3-129">プロトコル</span><span class="sxs-lookup"><span data-stu-id="3f2a3-129">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_onpremisesagent_from_onpremisesagentgroup"
@@ -71,18 +71,18 @@ POST ~/onPremisesPublishingProfiles/{publishingType}/agentGroups/{id}/agents
 ```http
 POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/agentGroups
 ```
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f4000-130">Javascript</span><span class="sxs-lookup"><span data-stu-id="f4000-130">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="3f2a3-130">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3f2a3-130">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-onpremisesagent-from-onpremisesagentgroup-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="f4000-131">目的-C</span><span class="sxs-lookup"><span data-stu-id="f4000-131">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="3f2a3-131">目的-C</span><span class="sxs-lookup"><span data-stu-id="3f2a3-131">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-onpremisesagent-from-onpremisesagentgroup-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-<span data-ttu-id="f4000-132">要求本文で、 [onPremisesAgentGroup](../resources/onpremisesagentgroup.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="f4000-132">In the request body, supply a JSON representation of [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.</span></span>
+<span data-ttu-id="3f2a3-132">要求本文で、 [onPremisesAgentGroup](../resources/onpremisesagentgroup.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="3f2a3-132">In the request body, supply a JSON representation of [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.</span></span>
 
 ```json
 {
@@ -90,11 +90,11 @@ POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="f4000-133">応答</span><span class="sxs-lookup"><span data-stu-id="f4000-133">Response</span></span>
+### <a name="response"></a><span data-ttu-id="3f2a3-133">応答</span><span class="sxs-lookup"><span data-stu-id="3f2a3-133">Response</span></span>
 
-<span data-ttu-id="f4000-134">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="f4000-134">The following is an example of the response.</span></span>
+<span data-ttu-id="3f2a3-134">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="3f2a3-134">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="f4000-p102">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="f4000-p102">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="3f2a3-p102">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="3f2a3-p102">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
