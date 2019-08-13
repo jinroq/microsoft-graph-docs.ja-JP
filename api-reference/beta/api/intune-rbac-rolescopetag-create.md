@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 86948b3c82a5198977de7ef799002d1dab69ecbb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fee1c32365569932e4ab7740331099cdfa93069b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35995623"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36351197"
 ---
 # <a name="create-rolescopetag"></a>ロール Copetag の作成
 
@@ -27,7 +27,7 @@ ms.locfileid: "35995623"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementRBAC.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -55,6 +55,7 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleA
 |id|文字列|エンティティのキー。 これは読み取り専用で、自動生成されます。|
 |displayName|String|ロールスコープタグの表示名またはフレンドリ名。|
 |description|String|役割の範囲タグの説明。|
+|isBuiltIn|Boolean|役割の範囲タグの説明。|
 
 
 
@@ -68,12 +69,13 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleA
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/roleScopeTags
 Content-type: application/json
-Content-length: 133
+Content-length: 155
 
 {
   "@odata.type": "#microsoft.graph.roleScopeTag",
   "displayName": "Display Name value",
-  "description": "Description value"
+  "description": "Description value",
+  "isBuiltIn": true
 }
 ```
 
@@ -82,15 +84,17 @@ Content-length: 133
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 182
+Content-Length: 204
 
 {
   "@odata.type": "#microsoft.graph.roleScopeTag",
   "id": "9ed1e179-e179-9ed1-79e1-d19e79e1d19e",
   "displayName": "Display Name value",
-  "description": "Description value"
+  "description": "Description value",
+  "isBuiltIn": true
 }
 ```
+
 
 
 

@@ -4,12 +4,13 @@ description: まだ文書化されていません
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8a023e4f74fe7a0abc96a47b79c7da7104617c9d
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: resourcePageType
+ms.openlocfilehash: 47f2e2668634fed4d24d952d08b2b4a90f33c332
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35726077"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36337679"
 ---
 # <a name="windowsupdatestate-resource-type"></a>windowsUpdateState リソースの種類
 
@@ -68,8 +69,6 @@ ms.locfileid: "35726077"
   "lastSyncDateTime": "String (timestamp)"
 }
 ```
-
-
 
 
 

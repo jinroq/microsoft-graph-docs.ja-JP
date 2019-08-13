@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 023a72bccb11a1a683105c333458ac3f1b30ee7e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7fa1fef0a570beddb96d02afeef7fada25c6155d
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001447"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36325702"
 ---
 # <a name="edgesearchenginetype-enum-type"></a>edgeSearchEngineType 列挙型
 
@@ -25,8 +25,6 @@ MDM で制御されるデバイス用に定義済みの既定の検索エンジ�
 |:---|:---|:---|
 |既定値です。|.0|エッジのファクトリ設定を使用して、ユーザー市場ごとに既定の検索エンジンを割り当てます。|
 |地図|1-d|Bing を既定の検索エンジンとして設定する|
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5c358b844633710e4bc3b039158c54e961db0679
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 161d6151cbf7af15acd0feebbd3fb694e68dd068
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35952843"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36325142"
 ---
 # <a name="update-androidforworkappconfigurationschema"></a>androidForWorkAppConfigurationSchema の更新
 
@@ -27,7 +27,7 @@ ms.locfileid: "35952843"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -132,6 +132,7 @@ Content-Length: 844
   ]
 }
 ```
+
 
 
 

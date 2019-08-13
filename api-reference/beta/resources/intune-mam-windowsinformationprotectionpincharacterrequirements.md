@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c5a2a581d761f849b836ccc6173de0a1a2403624
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a40637157d9040d34e8a28797906c3272a9c27fc
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35998255"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36320763"
 ---
 # <a name="windowsinformationprotectionpincharacterrequirements-enum-type"></a>Windowsinformationprotectionpin文字の要件列挙型
 
@@ -26,8 +26,6 @@ Pin 文字の要件
 |notAllow|.0|許可しない|
 |Requireatall ストーン|1-d|少なくとも1つ必要|
 |使う|pbm-2|任意の番号を許可する|
-
-
 
 
 

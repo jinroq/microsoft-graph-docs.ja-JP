@@ -4,12 +4,13 @@ description: Windows10DeviceFirmwareConfigurationInterface オブジェクトの
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6c35ea40825cebf007f42451b158bd3350f74cbc
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: a703f9573b0ca9b619d018aec4c7bfedb657bc22
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "35001819"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36314673"
 ---
 # <a name="get-windows10devicefirmwareconfigurationinterface"></a>Windows10DeviceFirmwareConfigurationInterface を取得する
 
@@ -26,7 +27,7 @@ ms.locfileid: "35001819"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -113,6 +114,7 @@ Content-Length: 1578
   }
 }
 ```
+
 
 
 

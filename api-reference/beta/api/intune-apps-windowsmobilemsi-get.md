@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 003fa55ccee7844c3d431c611b9513f5d444a190
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 82c13299516a4f421727b75a4a483586751e7a58
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35960091"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36322514"
 ---
 # <a name="get-windowsmobilemsi"></a>Get windowsMobileMSI
 
@@ -27,7 +27,7 @@ ms.locfileid: "35960091"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -109,6 +109,7 @@ Content-Length: 1325
   }
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 59aa8919129e39f02c683a199fd0fe2b5e93ff99
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 467501bcea2a17cdde19201e463dd8c81dd1626f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35946083"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36314701"
 ---
 # <a name="list-windows10customconfigurations"></a>windows10CustomConfigurations のリスト
 
@@ -27,7 +27,7 @@ ms.locfileid: "35946083"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -115,6 +115,7 @@ Content-Length: 1669
   ]
 }
 ```
+
 
 
 

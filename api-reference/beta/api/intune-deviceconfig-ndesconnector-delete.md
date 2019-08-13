@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0c788071240b4379e35579ecc7ceb16de88a4f75
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d2179552beee95db3848a414b9ef3c9586e128fc
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35946629"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36314952"
 ---
 # <a name="delete-ndesconnector"></a>NdesConnector の削除
 
@@ -27,7 +27,7 @@ ms.locfileid: "35946629"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -63,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/ndesConnectors/{ndesCon
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

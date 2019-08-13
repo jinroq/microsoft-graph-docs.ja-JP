@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fb513ce9a2c0c01b9669042607cacfd38b18ae44
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 28815dcd07b77017b5357ae94c1aab7b730f1836
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35959909"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36322297"
 ---
 # <a name="list-windowsphone81storeapps"></a>リスト windowsPhone81StoreApps
 
@@ -27,7 +27,7 @@ ms.locfileid: "35959909"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -98,6 +98,7 @@ Content-Length: 1084
   ]
 }
 ```
+
 
 
 

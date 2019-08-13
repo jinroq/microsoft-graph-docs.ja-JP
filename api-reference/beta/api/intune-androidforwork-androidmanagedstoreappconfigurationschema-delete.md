@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 85f1b449e081a07a2482890006bf8ed884f73b05
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1e57af864c5c0e16bc934f9d29c7548b1f81d86c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35952521"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36322724"
 ---
 # <a name="delete-androidmanagedstoreappconfigurationschema"></a>AndroidManagedStoreAppConfigurationSchema の削除
 
@@ -27,7 +27,7 @@ ms.locfileid: "35952521"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -63,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/androidManagedStoreAppC
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

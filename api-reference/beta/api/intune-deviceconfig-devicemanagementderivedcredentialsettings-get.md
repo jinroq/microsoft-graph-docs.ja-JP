@@ -4,12 +4,13 @@ description: DeviceManagementDerivedCredentialSettings オブジェクトのプ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 74096ea233ad6a79d868124310c3a395f25b6f4e
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: afaea0866f35463a01645ff75bece2c8ec45df68
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34967560"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36316046"
 ---
 # <a name="get-devicemanagementderivedcredentialsettings"></a>DeviceManagementDerivedCredentialSettings を取得する
 
@@ -26,7 +27,7 @@ ms.locfileid: "34967560"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -82,6 +83,7 @@ Content-Length: 321
   }
 }
 ```
+
 
 
 

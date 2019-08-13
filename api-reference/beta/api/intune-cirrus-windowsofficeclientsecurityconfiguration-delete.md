@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 37fc5241a8337b96d9415a4954ad7a6512673a4d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 05720ce00b0dfdff8afa5a582055fd4ecc26876e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35958761"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36322123"
 ---
 # <a name="delete-windowsofficeclientsecurityconfiguration"></a>WindowsOfficeClientSecurityConfiguration の削除
 
@@ -27,7 +27,7 @@ ms.locfileid: "35958761"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -63,6 +63,9 @@ DELETE https://graph.microsoft.com/beta/officeConfiguration/clientConfigurations
 ``` http
 HTTP/1.1 200 OK
 ```
+
+
+
 
 
 

@@ -4,12 +4,13 @@ description: テンプレートの種類
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bd9855bb1d09d804ec8335dac9ebdc94800c3cfa
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 01e4791d0904d40063b2542e0589fc4e7c8ef890
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "35001945"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36319406"
 ---
 # <a name="devicemanagementtemplatetype-enum-type"></a>deviceManagementTemplateType 列挙型
 
@@ -27,8 +28,6 @@ ms.locfileid: "35001945"
 |advancedThreatProtectionSecurityBaseline|pbm-2|脅威保護のセキュリティベースラインテンプレートの繰り上げ|
 |deviceConfiguration|1/3|デバイス構成テンプレート|
 |配色|2/4|カスタム管理者定義テンプレート|
-
-
 
 
 

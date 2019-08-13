@@ -4,12 +4,13 @@ description: DeviceManagementIntent オブジェクトのプロパティを更�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fd8b85ccab0153b749ff29be13187e3fd2fd4ef6
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 3ff66aa59b25333e6dd54605161803f8118e05cf
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34960448"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36313266"
 ---
 # <a name="update-devicemanagementintent"></a>DeviceManagementIntent の更新
 
@@ -26,7 +27,7 @@ ms.locfileid: "34960448"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -104,6 +105,7 @@ Content-Length: 379
   ]
 }
 ```
+
 
 
 

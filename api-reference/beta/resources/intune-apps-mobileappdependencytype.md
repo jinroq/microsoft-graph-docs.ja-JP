@@ -4,12 +4,13 @@ description: 2つのモバイルアプリ間の関係に関連付けられてい
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 65a9c30b1aadbd7003e39e098d4e850675bea718
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: b6ed07fb97910d321711ff02d77a231fd796c3a3
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34957641"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36322633"
 ---
 # <a name="mobileappdependencytype-enum-type"></a>mobileAppDependencyType 列挙型
 
@@ -24,8 +25,6 @@ ms.locfileid: "34957641"
 |:---|:---|:---|
 |検出|.0|親アプリをインストールする前に、子アプリを検出する必要があることを示します。|
 |自動|1-d|親アプリをインストールする前に、子アプリをインストールする必要があることを示します。|
-
-
 
 
 

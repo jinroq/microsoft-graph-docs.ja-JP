@@ -1,16 +1,16 @@
 ---
 title: mobileAppActionType 列挙型
-description: Intune アプリケーションのアクションの種類を定義します。
+description: まだ文書化されていません
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6f4984ad23c5e38def96f35897055ff934ef85a8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d07ff7aad61e9d503c9b34e3d68cf37b1e106d26
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967211"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36324664"
 ---
 # <a name="mobileappactiontype-enum-type"></a>mobileAppActionType 列挙型
 
@@ -18,7 +18,7 @@ ms.locfileid: "35967211"
 
 > **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-Intune アプリケーションのアクションの種類を定義します。
+まだ文書化されていません
 
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
@@ -28,7 +28,6 @@ Intune アプリケーションのアクションの種類を定義します。
 |れる|1/3|アプリケーションがインストールされている。|
 |アンインストール|2/4|アプリケーションがアンインストールされた。|
 |userRequestedInstall|5|ユーザーが要求したインストール|
-
 
 
 

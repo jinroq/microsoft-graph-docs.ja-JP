@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 14b73fc4cfbf9cf53bdab4c2841403cac4077fa2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9e4d3645ea2c0eaa7f8f1cf8138f1c0727cfa0d8
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001426"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36325632"
 ---
 # <a name="emailsyncschedule-enum-type"></a>emailSyncSchedule 列挙型
 
@@ -30,8 +30,6 @@ ms.locfileid: "36001426"
 |thirtyMinutes|2/4|30分ごとに同期します。|
 |sixtyMinutes|5|60分ごとに同期します。|
 |basedOnMyUsage|シックス|自分の使用状況に基づいて同期します。|
-
-
 
 
 

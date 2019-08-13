@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 37bcef2e9b20aff7c58f4461e8feb205e46b52c8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 09252f2a1d9b55d64979c2b34bffa9de07e26c8f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35986506"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36313833"
 ---
 # <a name="create-windowsphone81vpnconfiguration"></a>WindowsPhone81VpnConfiguration を作成する
 
@@ -27,7 +27,7 @@ ms.locfileid: "35986506"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -224,6 +224,7 @@ Content-Length: 2188
   ]
 }
 ```
+
 
 
 

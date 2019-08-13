@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 27ce7e1781d8e12e0063702fc23d3bb4857a4c89
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 183a5fe6a9250315bba668671561bc0b402267ca
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35958110"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36312566"
 ---
 # <a name="update-androiddeviceownergeneraldeviceconfiguration"></a>Androiddeviceowner一般の Devic/デバイスの更新
 
@@ -27,7 +27,7 @@ ms.locfileid: "35958110"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -77,12 +77,20 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |dateTimeConfigurationBlocked|Boolean|ユーザーがデバイスの日付または時刻を手動で変更することを禁止するかどうかを示します。|
 |factoryResetDeviceAdministratorEmails|文字列コレクション|デバイスを設定する前にリセットする必要がある、Google アカウント電子メールの一覧。|
 |factoryResetBlocked|Boolean|設定の出荷時のリセットオプションが無効になっているかどうかを示します。|
+|kioskModeScreenSaverConfigurationEnabled|Boolean|スクリーンセーバーモードを有効にするか、キオスクモードにしないかを指定します。|
+|kioskModeScreenSaverImageUrl|String|キオスクモードでデバイスのスクリーンセーバーになる画像の URL。|
+|kioskModeScreenSaverDisplayTimeInSeconds|Int32|キオスクモードの場合にデバイスがスクリーンセーバーを表示する秒数。 有効な値は 0 ~ 9999999|
+|kioskModeScreenSaverStartDelayInSeconds|Int32|スクリーンセーバーがキオスクモードで表示されるまでに、デバイスが非アクティブになる必要のある時間 (秒数)。 有効な値は 1 ~ 9999999|
+|kioskModeScreenSaverDetectMediaDisabled|Boolean|音声/ビデオがキオスクモードで再生されている場合に、デバイス画面にスクリーンセーバーを表示するかどうかを指定します。|
 |kioskModeApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) コレクション|デバイスがキオスクモードのときに表示される管理対象アプリの一覧。 このコレクションには、最大で 500 個の要素を含めることができます。|
 |kioskModeWallpaperUrl|String|デバイスがキオスクモードのときに壁紙に使用する、公開されている画像の URL。|
 |kioskModeExitCode|String|デバイスがキオスクモードのときに、ユーザーがキオスクモードからのエスケープを許可する終了コード。|
 |kioskModeVirtualHomeButtonEnabled|Boolean|デバイスがキオスクモードのときに仮想ホームボタンを表示するかどうかを指定します。|
+|kioskModeVirtualHomeButtonType|[androidDeviceOwnerVirtualHomeButtonType](../resources/intune-deviceconfig-androiddeviceownervirtualhomebuttontype.md)|仮想ホームボタンが [ホームにスワイプ] ボタンか、またはフローティングの [ホーム] ボタンかどうかを示します。 可能な値は、`notConfigured`、`swipeUp`、`floating` です。|
 |kioskModeBluetoothConfigurationEnabled|Boolean|ユーザーがキオスクモードで Bluetooth 設定を構成することを許可するかどうかを指定します。|
 |kioskModeWiFiConfigurationEnabled|Boolean|ユーザーがキオスクモードで Wi-fi 設定を構成することを許可するかどうかを指定します。|
+|kioskModeFlashlightConfigurationEnabled|Boolean|ユーザーがキオスクモードで懐中電灯を使用できるようにするかどうかを指定します。|
+|kioskModeMediaVolumeConfigurationEnabled|Boolean|ユーザーがキオスクモードでメディアボリュームを変更することを許可するかどうかを指定します。|
 |microphoneForceMute|Boolean|デバイス上でのマイクのミュートをブロックするかどうかを示します。|
 |networkEscapeHatchAllowed|Boolean|ブート時にデバイスが一時的なネットワーク接続に接続することを許可するかどうかを示します。|
 |nfcBlockOutgoingBeam|Boolean|NFC の送信ビームをブロックするかどうかを示します。|
@@ -134,7 +142,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 3678
+Content-length: 4123
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -181,6 +189,11 @@ Content-length: 3678
     "Factory Reset Device Administrator Emails value"
   ],
   "factoryResetBlocked": true,
+  "kioskModeScreenSaverConfigurationEnabled": true,
+  "kioskModeScreenSaverImageUrl": "https://example.com/kioskModeScreenSaverImageUrl/",
+  "kioskModeScreenSaverDisplayTimeInSeconds": 8,
+  "kioskModeScreenSaverStartDelayInSeconds": 7,
+  "kioskModeScreenSaverDetectMediaDisabled": true,
   "kioskModeApps": [
     {
       "@odata.type": "microsoft.graph.appListItem",
@@ -193,8 +206,11 @@ Content-length: 3678
   "kioskModeWallpaperUrl": "https://example.com/kioskModeWallpaperUrl/",
   "kioskModeExitCode": "Kiosk Mode Exit Code value",
   "kioskModeVirtualHomeButtonEnabled": true,
+  "kioskModeVirtualHomeButtonType": "swipeUp",
   "kioskModeBluetoothConfigurationEnabled": true,
   "kioskModeWiFiConfigurationEnabled": true,
+  "kioskModeFlashlightConfigurationEnabled": true,
+  "kioskModeMediaVolumeConfigurationEnabled": true,
   "microphoneForceMute": true,
   "networkEscapeHatchAllowed": true,
   "nfcBlockOutgoingBeam": true,
@@ -245,7 +261,7 @@ Content-length: 3678
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3850
+Content-Length: 4295
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -295,6 +311,11 @@ Content-Length: 3850
     "Factory Reset Device Administrator Emails value"
   ],
   "factoryResetBlocked": true,
+  "kioskModeScreenSaverConfigurationEnabled": true,
+  "kioskModeScreenSaverImageUrl": "https://example.com/kioskModeScreenSaverImageUrl/",
+  "kioskModeScreenSaverDisplayTimeInSeconds": 8,
+  "kioskModeScreenSaverStartDelayInSeconds": 7,
+  "kioskModeScreenSaverDetectMediaDisabled": true,
   "kioskModeApps": [
     {
       "@odata.type": "microsoft.graph.appListItem",
@@ -307,8 +328,11 @@ Content-Length: 3850
   "kioskModeWallpaperUrl": "https://example.com/kioskModeWallpaperUrl/",
   "kioskModeExitCode": "Kiosk Mode Exit Code value",
   "kioskModeVirtualHomeButtonEnabled": true,
+  "kioskModeVirtualHomeButtonType": "swipeUp",
   "kioskModeBluetoothConfigurationEnabled": true,
   "kioskModeWiFiConfigurationEnabled": true,
+  "kioskModeFlashlightConfigurationEnabled": true,
+  "kioskModeMediaVolumeConfigurationEnabled": true,
   "microphoneForceMute": true,
   "networkEscapeHatchAllowed": true,
   "nfcBlockOutgoingBeam": true,
@@ -353,6 +377,7 @@ Content-Length: 3850
   "wifiBlockEditPolicyDefinedConfigurations": true
 }
 ```
+
 
 
 

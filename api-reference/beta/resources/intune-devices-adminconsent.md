@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7f13e8abbaf20f57e94923918a4e5c2bb5bcf9b9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8d78333cd683501a8bf4fea0aa3a2e55944d9b5a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968611"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36319309"
 ---
 # <a name="adminconsent-resource-type"></a>adminConsent リソースの種類
 
@@ -24,6 +24,7 @@ ms.locfileid: "35968611"
 |プロパティ|型|説明|
 |:---|:---|:---|
 |/Sharepoint データの編集|[Adminconの状態](../resources/intune-devices-adminconsentstate.md)|ユーザーとデバイスのデータを Apple に共有するための管理者の同意状態。 可能な値は、`notConfigured`、`granted`、`notGranted` です。|
+|shareUserExperienceAnalyticsData|[Adminconの状態](../resources/intune-devices-adminconsentstate.md)|ユーザー環境分析データの共有に関する管理者の同意を取得または設定します。 可能な値は、`notConfigured`、`granted`、`notGranted` です。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -38,11 +39,10 @@ ms.locfileid: "35968611"
 ``` json
 {
   "@odata.type": "#microsoft.graph.adminConsent",
-  "shareAPNSData": "String"
+  "shareAPNSData": "String",
+  "shareUserExperienceAnalyticsData": "String"
 }
 ```
-
-
 
 
 

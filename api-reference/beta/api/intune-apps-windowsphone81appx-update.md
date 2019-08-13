@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d1878f708c55ed409a241ddd56ff06c4013823ad
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 13626ee41f4ae953f1518f90eaa067cb9a510baf
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35960000"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36322437"
 ---
 # <a name="update-windowsphone81appx"></a>WindowsPhone81AppX の更新
 
@@ -27,7 +27,7 @@ ms.locfileid: "35960000"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementApps.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -202,6 +202,7 @@ Content-Length: 1685
   "identityVersion": "Identity Version value"
 }
 ```
+
 
 
 
