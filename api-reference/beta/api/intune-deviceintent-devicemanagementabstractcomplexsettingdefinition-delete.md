@@ -4,12 +4,13 @@ description: DeviceManagementAbstractComplexSettingDefinition を削除します
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 115c5405ee0d2d8f635a750c0dc354e7a4571327
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 2cdfdb4d9e000864333b53f018859acb90c89f13
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34961099"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36344036"
 ---
 # <a name="delete-devicemanagementabstractcomplexsettingdefinition"></a>DeviceManagementAbstractComplexSettingDefinition の削除
 
@@ -26,7 +27,7 @@ ms.locfileid: "34961099"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -65,6 +66,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/settingDefinitions/{dev
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

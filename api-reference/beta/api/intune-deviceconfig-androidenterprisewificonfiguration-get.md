@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f998dd16bc99db186d1aaff09fb580f530a8e65c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5acb6eaffed0d21cc4b876a9c5cbdd7aa1b4c746
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35957921"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36341663"
 ---
 # <a name="get-androidenterprisewificonfiguration"></a>AndroidEnterpriseWiFiConfiguration を取得する
 
@@ -27,7 +27,7 @@ ms.locfileid: "35957921"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -120,6 +120,7 @@ Content-Length: 1980
   }
 }
 ```
+
 
 
 

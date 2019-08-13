@@ -4,12 +4,13 @@ description: DeviceManagementComplexSettingInstance オブジェクトのプロ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e99f10e23e872fd8ebd890be8794c7b5c5fe0615
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 7f87a9c1830340d63a013beea2f4ab4806dec21b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34960651"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36343791"
 ---
 # <a name="get-devicemanagementcomplexsettinginstance"></a>DeviceManagementComplexSettingInstance を取得する
 
@@ -26,7 +27,7 @@ ms.locfileid: "34960651"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -79,6 +80,7 @@ Content-Length: 234
   }
 }
 ```
+
 
 
 

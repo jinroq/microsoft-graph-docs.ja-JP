@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b30a8dafc6f785a1f15e9af49f6c93d7a09c12e7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f596c6a70b62a4d16edb4ee2b938a4644888b17b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35985197"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36348162"
 ---
 # <a name="exportmobileconfig-function"></a>exportMobileConfig 関数
 
@@ -27,7 +27,7 @@ ms.locfileid: "35985197"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -69,6 +69,7 @@ Content-Length: 45
   "value": "Export Mobile Config value"
 }
 ```
+
 
 
 
