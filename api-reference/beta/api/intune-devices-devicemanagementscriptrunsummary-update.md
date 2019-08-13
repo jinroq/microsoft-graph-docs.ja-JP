@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 944cb13bff433737ec90637d98045d0fa8e1c1fc
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f07a228ce685ae2ec3fcb502131eac5a6d9271af
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35985925"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36310291"
 ---
 # <a name="update-devicemanagementscriptrunsummary"></a>DeviceManagementScriptRunSummary の更新
 
@@ -27,7 +27,7 @@ ms.locfileid: "35985925"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementManagedDevices.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -54,6 +54,9 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runSu
 |id|String|デバイス管理スクリプト実行の概要エンティティのキー。|
 |successDeviceCount|Int32|成功したデバイス数。|
 |errorDeviceCount|Int32|エラーデバイス数。|
+|compliantDeviceCount|Int32|準拠しているデバイスの数。|
+|notCompliantDeviceCount|Int32|準拠していないデバイス数。|
+|pendingDeviceCount|Int32|保留中のデバイス数。|
 |successUserCount|Int32|成功したユーザー数。|
 |errorUserCount|Int32|エラーユーザー数。|
 
@@ -69,12 +72,15 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runSu
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runSummary
 Content-type: application/json
-Content-length: 179
+Content-length: 270
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementScriptRunSummary",
   "successDeviceCount": 2,
   "errorDeviceCount": 0,
+  "compliantDeviceCount": 4,
+  "notCompliantDeviceCount": 7,
+  "pendingDeviceCount": 2,
   "successUserCount": 0,
   "errorUserCount": 14
 }
@@ -85,17 +91,21 @@ Content-length: 179
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 228
+Content-Length: 319
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementScriptRunSummary",
   "id": "514d5d38-5d38-514d-385d-4d51385d4d51",
   "successDeviceCount": 2,
   "errorDeviceCount": 0,
+  "compliantDeviceCount": 4,
+  "notCompliantDeviceCount": 7,
+  "pendingDeviceCount": 2,
   "successUserCount": 0,
   "errorUserCount": 14
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: bf1006197a82d5b1d5d30124e47d7125424f0eee
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 489ad01f0f94eda385f501a39f32cea6996d632b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034882"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36364776"
 ---
 # <a name="rangesort-resource-type"></a>RangeSort リソースの種類
 
@@ -34,7 +34,6 @@ Range オブジェクトの並べ替え操作を管理します。
 以下は、リソースの JSON 表記です。
 
 
-# <a name="httptabhttp"></a>[プロトコル](#tab/http)
 <!-- {
   "blockType": "resource",
   "baseType": "microsoft.graph.entity",
@@ -52,6 +51,8 @@ Range オブジェクトの並べ替え操作を管理します。
 ##### <a name="request"></a>要求
 以下は、要求の例です。
 
+
+# <a name="httptabhttp"></a>[プロトコル](#tab/http)
 <!--{
   "blockType": "request",
   "name": "range_sort"
@@ -63,7 +64,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/r
 [!INCLUDE [sample-code](../includes/snippets/csharp/range-sort-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/range-sort-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
