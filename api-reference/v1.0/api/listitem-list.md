@@ -7,32 +7,32 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: リスト内のアイテムのコレクションを取得します。
 doc_type: apiPageType
-ms.openlocfilehash: 49ca1090411a1a53be3db193821c14df51edef61
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3780797477eeba79f92ce304aa740080844fa8eb
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023115"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36376039"
 ---
-# <a name="enumerate-items-in-a-list"></a><span data-ttu-id="97f4f-103">リスト内のアイテムを列挙する</span><span class="sxs-lookup"><span data-stu-id="97f4f-103">Enumerate items in a list</span></span>
+# <a name="enumerate-items-in-a-list"></a><span data-ttu-id="fd4c0-103">リスト内のアイテムを列挙する</span><span class="sxs-lookup"><span data-stu-id="fd4c0-103">Enumerate items in a list</span></span>
 
-<span data-ttu-id="97f4f-104">[リスト][]内の[アイテム][item]のコレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="97f4f-104">Get the collection of [items][item] in a [list][].</span></span>
+<span data-ttu-id="fd4c0-104">[リスト][]内の[アイテム][item]のコレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="fd4c0-104">Get the collection of [items][item] in a [list][].</span></span>
 
 [リスト]: ../resources/list.md
 [list]: ../resources/list.md
 [item]: ../resources/listitem.md
 
-## <a name="permissions"></a><span data-ttu-id="97f4f-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="97f4f-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="fd4c0-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="fd4c0-106">Permissions</span></span>
 
-<span data-ttu-id="97f4f-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="97f4f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="fd4c0-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="fd4c0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="97f4f-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="97f4f-109">Permission type</span></span>      | <span data-ttu-id="97f4f-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="97f4f-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="fd4c0-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="fd4c0-109">Permission type</span></span>      | <span data-ttu-id="fd4c0-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="fd4c0-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="97f4f-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="97f4f-111">Delegated (work or school account)</span></span> | <span data-ttu-id="97f4f-112">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="97f4f-112">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="97f4f-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="97f4f-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="97f4f-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="97f4f-114">Not supported.</span></span>    |
-|<span data-ttu-id="97f4f-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="97f4f-115">Application</span></span> | <span data-ttu-id="97f4f-116">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="97f4f-116">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="fd4c0-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="fd4c0-111">Delegated (work or school account)</span></span> | <span data-ttu-id="fd4c0-112">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fd4c0-112">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="fd4c0-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="fd4c0-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fd4c0-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="fd4c0-114">Not supported.</span></span>    |
+|<span data-ttu-id="fd4c0-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="fd4c0-115">Application</span></span> | <span data-ttu-id="fd4c0-116">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fd4c0-116">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="97f4f-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="97f4f-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="fd4c0-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="fd4c0-117">HTTP request</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items
@@ -40,37 +40,37 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expan
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Column1,Column2)
 ```
 
-## <a name="example"></a><span data-ttu-id="97f4f-118">例</span><span class="sxs-lookup"><span data-stu-id="97f4f-118">Example</span></span>
+## <a name="example"></a><span data-ttu-id="fd4c0-118">例</span><span class="sxs-lookup"><span data-stu-id="fd4c0-118">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="97f4f-119">要求</span><span class="sxs-lookup"><span data-stu-id="97f4f-119">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="fd4c0-119">要求</span><span class="sxs-lookup"><span data-stu-id="fd4c0-119">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="97f4f-120">HTTP</span><span class="sxs-lookup"><span data-stu-id="97f4f-120">--Http</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="fd4c0-120">HTTP</span><span class="sxs-lookup"><span data-stu-id="fd4c0-120">--Http</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-list-items", "scopes": "sites.read.all" } -->
 
 ```http
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Name,Color,Quantity)
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="97f4f-121">C#</span><span class="sxs-lookup"><span data-stu-id="97f4f-121">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="fd4c0-121">C#</span><span class="sxs-lookup"><span data-stu-id="fd4c0-121">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-list-items-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="97f4f-122">Javascript</span><span class="sxs-lookup"><span data-stu-id="97f4f-122">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="fd4c0-122">JavaScript</span><span class="sxs-lookup"><span data-stu-id="fd4c0-122">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-list-items-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="97f4f-123">Objective-C</span><span class="sxs-lookup"><span data-stu-id="97f4f-123">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="fd4c0-123">Objective-C</span><span class="sxs-lookup"><span data-stu-id="fd4c0-123">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-list-items-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="97f4f-124">Java</span><span class="sxs-lookup"><span data-stu-id="97f4f-124">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="fd4c0-124">Java</span><span class="sxs-lookup"><span data-stu-id="fd4c0-124">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-list-items-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="97f4f-125">応答</span><span class="sxs-lookup"><span data-stu-id="97f4f-125">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="fd4c0-125">応答</span><span class="sxs-lookup"><span data-stu-id="fd4c0-125">Response</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.listItem)", "truncated": true } -->
 
