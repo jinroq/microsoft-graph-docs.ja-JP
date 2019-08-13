@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5dc32cf8f77ffe8c5e9a39d9be9916f236c1b1c3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1d014c907397ec71025363a3c919a07dd5d00844
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35994461"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36353744"
 ---
 # <a name="targetapps-action"></a>targetApps アクション
 
@@ -27,7 +27,7 @@ ms.locfileid: "35994461"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementApps.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -87,6 +87,7 @@ Content-length: 286
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 
