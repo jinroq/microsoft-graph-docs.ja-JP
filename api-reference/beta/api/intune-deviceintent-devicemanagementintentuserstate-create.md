@@ -4,12 +4,13 @@ description: 新しい deviceManagementIntentUserState オブジェクトを作�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 24e8a73e65f7f697931dbb32ae553e157689c356
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 932fd37d2460e6e6d0c967e2afb401a1a424fa08
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34960091"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36343448"
 ---
 # <a name="create-devicemanagementintentuserstate"></a>DeviceManagementIntentUserState の作成
 
@@ -26,7 +27,7 @@ ms.locfileid: "34960091"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -98,6 +99,7 @@ Content-Length: 324
   "state": "notApplicable"
 }
 ```
+
 
 
 

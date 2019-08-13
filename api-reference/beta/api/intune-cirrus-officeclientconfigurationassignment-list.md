@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ea744fad0c0a096157716ec87f5bc8635d4d7c28
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0e7698e34e2b85a45ed3e994fd955b223a86b83f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35958880"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36328239"
 ---
 # <a name="list-officeclientconfigurationassignments"></a>リスト officeClientConfigurationAssignments
 
@@ -27,7 +27,7 @@ ms.locfileid: "35958880"
 |:---|:---|
 |委任 (職場または学校のアカウント)|* * TODO: 範囲を決定します * *|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|* * TODO: 範囲を決定します * *|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -77,6 +77,9 @@ Content-Length: 274
   ]
 }
 ```
+
+
+
 
 
 

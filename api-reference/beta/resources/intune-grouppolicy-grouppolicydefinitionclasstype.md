@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ba3a78ff5a259f5473ea7843e71bcf8e6272aca1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ae3bc2b8509c4007c238779196d0f14ac3ff7749
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010995"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36331477"
 ---
 # <a name="grouppolicydefinitionclasstype-enum-type"></a>groupPolicyDefinitionClassType 列挙型
 
@@ -25,8 +25,6 @@ ms.locfileid: "36010995"
 |:---|:---|:---|
 |user|.0|[ユーザーの構成] ノードの下にあるポリシー設定の配置を指定します。|
 |マシン|1-d|[コンピューターの構成] ノードの下にあるポリシー設定の配置を指定します。|
-
-
 
 
 

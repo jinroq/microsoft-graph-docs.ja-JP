@@ -4,12 +4,13 @@ description: 新しい managedAllDeviceCertificateState オブジェクトを作
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 024aaee657dbb8bd67491e793ceb99f82ca6d0fd
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: 50877255e069c70749ae77b515d7f45a90398a33
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35726068"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36338589"
 ---
 # <a name="create-managedalldevicecertificatestate"></a>ManagedAllDeviceCertificateState を作成する
 
@@ -26,7 +27,7 @@ ms.locfileid: "35726068"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -116,6 +117,7 @@ Content-Length: 784
   "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00"
 }
 ```
+
 
 
 

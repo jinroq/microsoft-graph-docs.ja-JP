@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d8a687727ba1b0c2acf0d0d9ec6ad55b91861aaa
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d2d9d02e028df47bab5b6c0dedd3fe35d37503f6
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35948755"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36345730"
 ---
 # <a name="list-ioscertificateprofilebases"></a>IosCertificateProfileBases のリスト
 
@@ -27,7 +27,7 @@ ms.locfileid: "35948755"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -110,6 +110,7 @@ Content-Length: 1600
   ]
 }
 ```
+
 
 
 

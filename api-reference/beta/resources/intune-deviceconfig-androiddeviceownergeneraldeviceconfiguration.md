@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6e38e7041e67bcaea470352d71bf50d0524a7ba6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 74d6909a275c831190033fd2b6437a9c5fe215da
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011863"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334823"
 ---
 # <a name="androiddeviceownergeneraldeviceconfiguration-resource-type"></a>Androiddeviceowner一般 Devic/リソースの種類
 
@@ -59,12 +59,20 @@ ms.locfileid: "36011863"
 |dateTimeConfigurationBlocked|Boolean|ユーザーがデバイスの日付または時刻を手動で変更することを禁止するかどうかを示します。|
 |factoryResetDeviceAdministratorEmails|文字列コレクション|デバイスを設定する前にリセットする必要がある、Google アカウント電子メールの一覧。|
 |factoryResetBlocked|Boolean|設定の出荷時のリセットオプションが無効になっているかどうかを示します。|
+|kioskModeScreenSaverConfigurationEnabled|Boolean|スクリーンセーバーモードを有効にするか、キオスクモードにしないかを指定します。|
+|kioskModeScreenSaverImageUrl|String|キオスクモードでデバイスのスクリーンセーバーになる画像の URL。|
+|kioskModeScreenSaverDisplayTimeInSeconds|Int32|キオスクモードの場合にデバイスがスクリーンセーバーを表示する秒数。 有効な値は 0 ~ 9999999|
+|kioskModeScreenSaverStartDelayInSeconds|Int32|スクリーンセーバーがキオスクモードで表示されるまでに、デバイスが非アクティブになる必要のある時間 (秒数)。 有効な値は 1 ~ 9999999|
+|kioskModeScreenSaverDetectMediaDisabled|Boolean|音声/ビデオがキオスクモードで再生されている場合に、デバイス画面にスクリーンセーバーを表示するかどうかを指定します。|
 |kioskModeApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) コレクション|デバイスがキオスクモードのときに表示される管理対象アプリの一覧。 このコレクションには、最大で 500 個の要素を含めることができます。|
 |kioskModeWallpaperUrl|String|デバイスがキオスクモードのときに壁紙に使用する、公開されている画像の URL。|
 |kioskModeExitCode|String|デバイスがキオスクモードのときに、ユーザーがキオスクモードからのエスケープを許可する終了コード。|
 |kioskModeVirtualHomeButtonEnabled|Boolean|デバイスがキオスクモードのときに仮想ホームボタンを表示するかどうかを指定します。|
+|kioskModeVirtualHomeButtonType|[androidDeviceOwnerVirtualHomeButtonType](../resources/intune-deviceconfig-androiddeviceownervirtualhomebuttontype.md)|仮想ホームボタンが [ホームにスワイプ] ボタンか、またはフローティングの [ホーム] ボタンかどうかを示します。 可能な値は、`notConfigured`、`swipeUp`、`floating` です。|
 |kioskModeBluetoothConfigurationEnabled|Boolean|ユーザーがキオスクモードで Bluetooth 設定を構成することを許可するかどうかを指定します。|
 |kioskModeWiFiConfigurationEnabled|Boolean|ユーザーがキオスクモードで Wi-fi 設定を構成することを許可するかどうかを指定します。|
+|kioskModeFlashlightConfigurationEnabled|Boolean|ユーザーがキオスクモードで懐中電灯を使用できるようにするかどうかを指定します。|
+|kioskModeMediaVolumeConfigurationEnabled|Boolean|ユーザーがキオスクモードでメディアボリュームを変更することを許可するかどうかを指定します。|
 |microphoneForceMute|Boolean|デバイス上でのマイクのミュートをブロックするかどうかを示します。|
 |networkEscapeHatchAllowed|Boolean|ブート時にデバイスが一時的なネットワーク接続に接続することを許可するかどうかを示します。|
 |nfcBlockOutgoingBeam|Boolean|NFC の送信ビームをブロックするかどうかを示します。|
@@ -172,6 +180,11 @@ ms.locfileid: "36011863"
     "String"
   ],
   "factoryResetBlocked": true,
+  "kioskModeScreenSaverConfigurationEnabled": true,
+  "kioskModeScreenSaverImageUrl": "String",
+  "kioskModeScreenSaverDisplayTimeInSeconds": 1024,
+  "kioskModeScreenSaverStartDelayInSeconds": 1024,
+  "kioskModeScreenSaverDetectMediaDisabled": true,
   "kioskModeApps": [
     {
       "@odata.type": "microsoft.graph.appListItem",
@@ -184,8 +197,11 @@ ms.locfileid: "36011863"
   "kioskModeWallpaperUrl": "String",
   "kioskModeExitCode": "String",
   "kioskModeVirtualHomeButtonEnabled": true,
+  "kioskModeVirtualHomeButtonType": "String",
   "kioskModeBluetoothConfigurationEnabled": true,
   "kioskModeWiFiConfigurationEnabled": true,
+  "kioskModeFlashlightConfigurationEnabled": true,
+  "kioskModeMediaVolumeConfigurationEnabled": true,
   "microphoneForceMute": true,
   "networkEscapeHatchAllowed": true,
   "nfcBlockOutgoingBeam": true,
@@ -230,8 +246,6 @@ ms.locfileid: "36011863"
   "wifiBlockEditPolicyDefinedConfigurations": true
 }
 ```
-
-
 
 
 

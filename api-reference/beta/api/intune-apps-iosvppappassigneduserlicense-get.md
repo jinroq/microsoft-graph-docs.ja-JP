@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c963b70040cb965d192db03fff1c5bc43f5e826e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 17db79b52a5cc96f46e37ee944c6bc7bb84fd35b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35962212"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36330315"
 ---
 # <a name="get-iosvppappassigneduserlicense"></a>IosVppAppAssignedUserLicense を取得する
 
@@ -27,7 +27,7 @@ ms.locfileid: "35962212"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -79,6 +79,7 @@ Content-Length: 318
   }
 }
 ```
+
 
 
 

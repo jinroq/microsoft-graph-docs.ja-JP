@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 0550d3dfd265a6ce6bbbb6c11e63b821c7656d77
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fd46ce2b2f27c9a9e825d9a89c9fd8d7658a5a1a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971439"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334739"
 ---
 # <a name="androideaptype-enum-type"></a>Androide Aptype 列挙型
 
@@ -26,8 +26,6 @@ ms.locfileid: "35971439"
 |eapTls|スリー|拡張認証プロトコル-トランスポート層セキュリティ (EAP-TLS)。|
 |eapTtls|21|拡張認証プロトコル-トンネル転送層セキュリティ (EAP-TLS)。|
 |peap-gtc|まで|保護された拡張認証プロトコル (PEAP)。|
-
-
 
 
 

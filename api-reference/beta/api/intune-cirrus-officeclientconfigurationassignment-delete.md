@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 211bdad30814ba463982d1d30dccff5cd7604baf
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6a8c0a008542d7ecbbb370fee61f78e1bae2d3cb
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35958908"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36328257"
 ---
 # <a name="delete-officeclientconfigurationassignment"></a>OfficeClientConfigurationAssignment の削除
 
@@ -27,7 +27,7 @@ ms.locfileid: "35958908"
 |:---|:---|
 |委任 (職場または学校のアカウント)|* * TODO: 範囲を決定します * *|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|* * TODO: 範囲を決定します * *|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -63,6 +63,9 @@ DELETE https://graph.microsoft.com/beta/officeConfiguration/clientConfigurations
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

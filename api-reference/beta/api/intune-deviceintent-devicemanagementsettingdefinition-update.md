@@ -4,12 +4,13 @@ description: DeviceManagementSettingDefinition オブジェクトのプロパテ
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bccf0e045881c90a76539e0b40b3dbb0c8d77ea8
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: fe92ba56aefc87d8e439ec70191b0c96f9b8d273
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34959909"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36343238"
 ---
 # <a name="update-devicemanagementsettingdefinition"></a>DeviceManagementSettingDefinition の更新
 
@@ -26,7 +27,7 @@ ms.locfileid: "34959909"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -142,6 +143,7 @@ Content-Length: 777
   ]
 }
 ```
+
 
 
 

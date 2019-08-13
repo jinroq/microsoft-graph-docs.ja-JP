@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c12d561af51d2badccc2d19e594566cd709ab1e3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b8f4ca22dffc08089c9f8b2c18ccb793914422a2
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35962639"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36341039"
 ---
 # <a name="create-androidtrustedrootcertificate"></a>AndroidTrustedRootCertificate の作成
 
@@ -27,7 +27,7 @@ ms.locfileid: "35962639"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -159,6 +159,7 @@ Content-Length: 1312
   "certFileName": "Cert File Name value"
 }
 ```
+
 
 
 

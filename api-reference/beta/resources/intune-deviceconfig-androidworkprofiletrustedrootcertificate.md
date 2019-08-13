@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e560f32c22de86729c904724da608d7a4ffce909
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 58973c97fb3fd46ed45a87642985a82a5ab8bd95
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971187"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334081"
 ---
 # <a name="androidworkprofiletrustedrootcertificate-resource-type"></a>Androidwork Profiletrustedrootcertificate リソースの種類
 
@@ -106,8 +106,6 @@ Android の作業プロファイル信頼されたルート証明書の構成プ
   "certFileName": "String"
 }
 ```
-
-
 
 
 

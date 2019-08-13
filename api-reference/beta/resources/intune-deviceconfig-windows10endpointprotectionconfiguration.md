@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8c8386f19a9a6700aafa9b783c973a3c232f9bf8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ff5299072944ba7a9df161e66af72046da537432
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000423"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36337797"
 ---
 # <a name="windows10endpointprotectionconfiguration-resource-type"></a>windows10EndpointProtectionConfiguration リソース タイプ
 
@@ -77,7 +77,6 @@ ms.locfileid: "36000423"
 |userRightsRemoteShutdown|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザーの権利は、ネットワーク上のリモートの場所からコンピューターをシャットダウンできるユーザーを決定します。 このユーザーの権利を誤用すると、サービス拒否が発生する可能性があります。 サポートされているのは、NotConfigured と許可の状態のみです。|
 |userRightsRestoreData|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザーの権利は、バックアップされたファイルとディレクトリを復元するときに、ファイル、ディレクトリ、レジストリ、およびその他の固定オブジェクトのアクセス許可をバイパスできるユーザーを決定し、任意のユーザーが任意の有効なセキュリティプリンシパルをオブジェクトの所有者として設定できるようにします。 サポートされているのは、NotConfigured と許可の状態のみです。|
 |userRightsTakeOwnership|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザーの権利は、Active Directory オブジェクト、ファイルとフォルダー、プリンター、レジストリキー、プロセス、スレッドなど、システム内のセキュリティ保護可能なオブジェクトの所有権を取得できるユーザーを決定します。 サポートされているのは、NotConfigured と許可の状態のみです。|
-|userRightsRegisterProcessAsService|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このセキュリティ設定は、サービスとしてのプロセスの登録を禁止するサービスアカウントを決定します。 注: このセキュリティ設定は、システム、ローカルサービス、またはネットワークサービスアカウントには適用されません。 サポートされている状態はブロックされます。|
 |xboxServicesEnableXboxGameSaveTask|Boolean|この設定では、xbox ゲームの保存を有効にするか (1)、無効にするか (0) を指定します。|
 |xboxServicesAccessoryManagementServiceStartupMode|[serviceStartType](../resources/intune-deviceconfig-servicestarttype.md)|この設定では、アクセサリ管理サービスの開始の種類が自動 (2)、手動 (3)、無効 (4) であるかどうかを決定します。 既定値: Manual。 可能な値は、`manual`、`automatic`、`disabled` です。|
 |xboxServicesLiveAuthManagerServiceStartupMode|[serviceStartType](../resources/intune-deviceconfig-servicestarttype.md)|この設定では、Live Auth Manager サービスの開始の種類が自動 (2)、手動 (3)、無効 (4) であるかどうかを決定します。 既定値: Manual。 可能な値は、`manual`、`automatic`、`disabled` です。|
@@ -656,18 +655,6 @@ ms.locfileid: "36000423"
       }
     ]
   },
-  "userRightsRegisterProcessAsService": {
-    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
-    "state": "String",
-    "localUsersOrGroups": [
-      {
-        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
-        "name": "String",
-        "description": "String",
-        "securityIdentifier": "String"
-      }
-    ]
-  },
   "xboxServicesEnableXboxGameSaveTask": true,
   "xboxServicesAccessoryManagementServiceStartupMode": "String",
   "xboxServicesLiveAuthManagerServiceStartupMode": "String",
@@ -939,8 +926,6 @@ ms.locfileid: "36000423"
   }
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e0570bead06b322377e1ab437b04a6baf3916700
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0a977ac0fe3786a715256997db01bbf36d7a5fb0
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35977273"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36345044"
 ---
 # <a name="update-windows10networkboundaryconfiguration"></a>Windows10NetworkBoundaryConfiguration の更新
 
@@ -27,7 +27,7 @@ ms.locfileid: "35977273"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -217,6 +217,7 @@ Content-Length: 2189
   }
 }
 ```
+
 
 
 

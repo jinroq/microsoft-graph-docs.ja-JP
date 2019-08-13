@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b3889b53c4af086bdc5c3cbd1744caada7e9120b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c7aabd6df9dd2e3c3f383a525af705e54e369edf
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35985610"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36348411"
 ---
 # <a name="list-activedirectorywindowsautopilotdeploymentprofiles"></a>リスト activeDirectoryWindowsAutopilotDeploymentProfiles
 
@@ -27,7 +27,7 @@ ms.locfileid: "35985610"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -105,6 +105,7 @@ Content-Length: 1504
   ]
 }
 ```
+
 
 
 

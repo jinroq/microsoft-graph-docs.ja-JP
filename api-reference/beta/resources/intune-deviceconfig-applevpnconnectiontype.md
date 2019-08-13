@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ecf7a5c439ef66da173307455a445915226b74f8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 19cb7fed4ccdeeffa84aa78c165e95cc2e989afb
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011513"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333969"
 ---
 # <a name="applevpnconnectiontype-enum-type"></a>りんご Evpnconnectiontype 列挙型
 
@@ -38,8 +38,6 @@ Apple VPN 接続の種類。
 |citrixSso|個|Citrix Sso。|
 |paloAltoGlobalProtectV2|スリー|Palo Alto Networks GlobalProtect V2。|
 |対する|第|対する.|
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: fa3fb4f98f20b705c5905eb5fc0f07833815e228
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 74c35df1a4e850e446078b1a293bf98b4f048bbb
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970921"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333535"
 ---
 # <a name="defenderpromptforsamplesubmission-enum-type"></a>defenderPromptForSampleSubmission 列挙型
 
@@ -28,8 +28,6 @@ ms.locfileid: "35970921"
 |promptBeforeSendingPersonalData|pbm-2|個人データを送信する前にメッセージを表示します。|
 |neverSendData|1/3|データを送信しません。|
 |Sendalldataメッセージを表示しない|2/4|メッセージを表示せずにすべてのデータを送信します。|
-
-
 
 
 

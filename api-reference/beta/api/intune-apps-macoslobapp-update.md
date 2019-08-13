@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 69a2a938d142ac98c0eb705abe871228e707eb46
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 22aa215fe9dfc37c6c4e6b89a3abb99e9fef3d2c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35962128"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36330210"
 ---
 # <a name="update-macoslobapp"></a>MacOSLobApp の更新
 
@@ -27,7 +27,7 @@ ms.locfileid: "35962128"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementApps.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -219,6 +219,7 @@ Content-Length: 1746
   "ignoreVersionDetection": true
 }
 ```
+
 
 
 

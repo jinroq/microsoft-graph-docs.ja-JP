@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9ef51c37c67d04e8588f10a0058d351f22e4c9c5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b164626fe908e1a1c31872dc4c3cf367f81bc179
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35952073"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36331008"
 ---
 # <a name="list-androidstoreapps"></a>androidStoreApps のリスト
 
@@ -27,7 +27,7 @@ ms.locfileid: "35952073"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -117,6 +117,7 @@ Content-Length: 1615
   ]
 }
 ```
+
 
 
 

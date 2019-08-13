@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c7269b5a828b1124fd937092140d628369e18549
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 82c5979c73aaef53e00f3b42b26deed67321ac68
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35946725"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36345548"
 ---
 # <a name="delete-manageddeviceencryptionstate"></a>ManagedDeviceEncryptionState の削除
 
@@ -27,7 +27,7 @@ ms.locfileid: "35946725"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -63,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/managedDeviceEncryption
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 
