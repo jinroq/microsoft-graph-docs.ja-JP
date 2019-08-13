@@ -4,12 +4,13 @@ description: 比較結果の設定を表すエンティティ
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f68ffd08945662fc291fb5489de67967d3cd1cbf
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 6e8c886e3464070d0dba8779741ed65681a764de
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "35002001"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36364741"
 ---
 # <a name="devicemanagementsettingcomparison-resource-type"></a>deviceManagementSettingComparison リソースの種類
 
@@ -50,8 +51,6 @@ ms.locfileid: "35002001"
   "comparisonResult": "String"
 }
 ```
-
-
 
 
 

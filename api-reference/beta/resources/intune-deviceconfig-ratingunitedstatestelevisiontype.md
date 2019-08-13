@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 22afb0e2dc6c7f36acbc528dc93669611d762f79
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 142552da06e0c07fca3d8a59e23ebe536c709495
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969759"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368122"
 ---
 # <a name="ratingunitedstatestelevisiontype-enum-type"></a>ratingUnitedStatesTelevisionType 列挙型
 
@@ -31,8 +31,6 @@ ms.locfileid: "35969759"
 |parentalGuidance|5|テレビ-PG、保護者によるガイダンス|
 |childrenAbove14|シックス|TV-14 歳以上の子供|
 |保護者|7|テレビ-MA、大人のみ|
-
-
 
 
 

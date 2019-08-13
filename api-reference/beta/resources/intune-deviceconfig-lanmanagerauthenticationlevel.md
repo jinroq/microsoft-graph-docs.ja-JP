@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f76a0b685a0759a4455d8de805424ddd09758a63
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ade139765c9a362cd0c9f9365af0026c51ecb4ce
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970284"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36356726"
 ---
 # <a name="lanmanagerauthenticationlevel-enum-type"></a>lanManagerAuthenticationLevel 列挙型
 
@@ -29,8 +29,6 @@ LanManagerAuthenticationLevel に指定できる値
 |lmAndNtlmV2|1/3|LM & NTLMv2 応答のみを送信する|
 |lmNtlmV2AndNotLm|2/4|LM & NTLMv2 応答のみを送信します。 LM を拒否する|
 |lmNtlmV2AndNotLmOrNtm|5|LM & NTLMv2 応答のみを送信します。 NTLM & の LM を拒否する|
-
-
 
 
 
