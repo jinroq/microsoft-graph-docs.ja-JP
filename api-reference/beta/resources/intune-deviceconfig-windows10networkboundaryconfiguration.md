@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 255d6343f7330c5f605277e2f84874178d139132
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b01a0cbe1596ccc1bd7a1dfb386df9e675745adc
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969241"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369865"
 ---
 # <a name="windows10networkboundaryconfiguration-resource-type"></a>windows10NetworkBoundaryConfiguration リソースの種類
 
@@ -134,8 +134,6 @@ Windows10 ネットワーク境界の構成
   }
 }
 ```
-
-
 
 
 

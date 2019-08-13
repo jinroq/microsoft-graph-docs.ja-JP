@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: bd0daf4876bfa058a9ec51a5f84414135ef7ecc3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: eaab7f66d35b7251aa9dd4f87a8b24f071d26140
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35998146"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36374149"
 ---
 # <a name="devicemanagementexchangeconnectortype-enum-type"></a>deviceManagementExchangeConnectorType 列挙型
 
@@ -27,8 +27,6 @@ Exchange Connector の種類。
 |さ|1-d|O365 マルチテナントの Exchange 環境に接続します。|
 |serviceToService|pbm-2|Intune サービスが O365 マルチテナントの Exchange 環境に直接接続される|
 |集中的|1/3|O365 専用 Exchange 環境に接続します。|
-
-
 
 
 

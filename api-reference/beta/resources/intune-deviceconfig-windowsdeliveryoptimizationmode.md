@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 1c146b42eab11dab4d90de9b3b134fdd29327323
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b2a66292ec6fb5db3fead93cbda7d24f5e505514
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969073"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36371169"
 ---
 # <a name="windowsdeliveryoptimizationmode-enum-type"></a>windowsDeliveryOptimizationMode 列挙型
 
@@ -30,8 +30,6 @@ ms.locfileid: "35969073"
 |httpWithInternetPeering リング|2/4|インターネットピアリングとの HTTP ブレンディング|
 |simpleDownload|99|ピアリングのない簡易ダウンロードモード|
 |bypassMode|100|バイパスモード。 配信の最適化を使用せず、代わりにビットを使用する|
-
-
 
 
 

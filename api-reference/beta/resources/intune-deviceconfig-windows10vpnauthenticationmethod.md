@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e1a4551dce1f20c55ba91866dccf10a34aba76ee
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0c47dd4432bc39abf3e7e17094dd163703858dd4
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969213"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369732"
 ---
 # <a name="windows10vpnauthenticationmethod-enum-type"></a>windows10VpnAuthenticationMethod 列挙型
 
@@ -26,8 +26,6 @@ Windows 10 の VPN 接続の種類。
 |certificate|.0|証明書を使用して認証します。|
 |usernameAndPassword|1-d|認証にユーザー名とパスワードを使用します。|
 |customEapXml|pbm-2|認証方法は、カスタム EAP XML で指定されています。|
-
-
 
 
 

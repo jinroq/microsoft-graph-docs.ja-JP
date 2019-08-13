@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: d9ae2b3bfb45ff33c5f0a39d746350212db3027c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d0c5db4ffaac3a08edad42e7529b62337bf0ed52
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010638"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369361"
 ---
 # <a name="vpptokenstate-enum-type"></a>vppTokenState 列挙型
 
@@ -28,8 +28,6 @@ Apple Volume Purchase Program のトークンに関連付けられている状�
 |終了|pbm-2|トークンの有効期限が切れています。|
 |無効です|1/3|トークンが無効です。|
 |assignedToExternalMDM|2/4|トークンは別の MDM サービスによって管理されています。|
-
-
 
 
 

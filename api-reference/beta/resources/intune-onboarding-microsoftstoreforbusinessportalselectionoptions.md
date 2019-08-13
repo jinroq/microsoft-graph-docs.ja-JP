@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 4b3168b4c3266c5e5314813c3ae1ea4ef08765a9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b790dbc00adc308cfb745e802e5dbe651d95b042
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35997996"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36375479"
 ---
 # <a name="microsoftstoreforbusinessportalselectionoptions-enum-type"></a>microsoftStoreForBusinessPortalSelectionOptions 列挙型
 
@@ -26,8 +26,6 @@ ms.locfileid: "35997996"
 |none|.0|このオプションはアカウントでは使用できません|
 |会社のポータル|1-d|Intune ポータルサイトのみ。|
 |privateStore|pbm-2|MSFB プライベートストアのみ。|
-
-
 
 
 

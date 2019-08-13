@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ed00b093bdf0390fc8115c28f1ab461b642598f8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 511d7f6258bfe440ec75ba9eb1636a5f19d0c622
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35998038"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36375465"
 ---
 # <a name="mobilethreatpartnertenantstate-enum-type"></a>mobileThreatPartnerTenantState 列挙型
 
@@ -27,8 +27,6 @@ ms.locfileid: "35998038"
 |使用可能|1-d|パートナーが利用できます。|
 |enabled|pbm-2|パートナーが有効になっている。|
 |なかっ|1/3|パートナーが応答していません。|
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 1d935845019e8d90e9f88246bd5c60699b5265e7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2ea9262766b281810f12beca67fab326fc517bc2
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967939"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36373288"
 ---
 # <a name="managedappremediationaction-enum-type"></a>managedAppRemediationAction 列挙型
 
@@ -26,8 +26,6 @@ ms.locfileid: "35967939"
 |拒否|.0|アプリと、ブロックされる対応会社のデータ|
 |ふき|1-d|消去するアプリと対応する会社のデータ|
 |示す|pbm-2|警告対象のアプリと対応するユーザー|
-
-
 
 
 

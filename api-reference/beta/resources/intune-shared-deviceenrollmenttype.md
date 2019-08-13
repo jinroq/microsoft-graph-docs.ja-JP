@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 89efb76eb78121937dd2f0558986af0df1750aa9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0b53d279863ad3e17691b9e4d0397ba5f7d1b408
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967470"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36372084"
 ---
 # <a name="deviceenrollmenttype-enum-type"></a>deviceEnrollmentType 列挙型
 
@@ -33,8 +33,6 @@ ms.locfileid: "35967470"
 |windowsAutoEnrollment 登録|7|Windows 10 の自動登録。 (作業アカウントの追加)|
 |windowsBulkAzureDomainJoin|8 |Windows 10 一括 Azure AD Join。|
 |windowsCoManagement|9 |Windows 10 の共同管理は、自動操縦またはグループポリシーによって開始されます。|
-
-
 
 
 

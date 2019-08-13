@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 95b7bfaf30619850577fa2ac7fe4604958d22ab0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 98f6c112d23c57a532785ad2af0177a4fb8fadc1
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35998149"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36374191"
 ---
 # <a name="devicemanagementexchangeaccessruletype-enum-type"></a>deviceManagementExchangeAccessRuleType 列挙型
 
@@ -25,8 +25,6 @@ ms.locfileid: "35998149"
 |:---|:---|:---|
 |製品|.0|デバイスのファミリ|
 |model|1-d|デバイスの特定のモデル|
-
-
 
 
 

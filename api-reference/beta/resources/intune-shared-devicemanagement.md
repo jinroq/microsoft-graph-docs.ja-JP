@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5c74a17564c4594bf547e5ea606dc5acf2ef83ef
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: be12232d387309992b0e967580dfc8d593c53056
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010491"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36376060"
 ---
 # <a name="devicemanagement-resource-type"></a>deviceManagement リソースの種類
 
@@ -127,7 +127,6 @@ DeviceManagement リソースは、次のようなワークフローに従って
 |depOnboardingSettings|[Deponboardingsetting](../resources/intune-enrollment-deponboardingsetting.md)コレクション|テナントごとの複数の DEP トークンのコレクション。|
 |importedDeviceIdentities|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)コレクション|インポートされたデバイス id。|
 |importedWindowsAutopilotDeviceIdentities|[importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md)コレクション|インポートされたWindows Autopilot デバイスのコレクション。|
-|importedWindowsAutopilotDeviceIdentityUploads|[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)コレクション|Windows 自動操縦デバイスのコレクションをアップロードします。|
 |windowsAutopilotDeploymentProfiles|[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)コレクション|Windows 自動パイロット展開プロファイル|
 |windowsAutopilotDeviceIdentities|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)コレクション|Windows 自動操縦デバイス id にはコレクションが含まれています。|
 |windowsAutopilotSettings|[windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md)|Windows 自動操縦アカウントの設定。|

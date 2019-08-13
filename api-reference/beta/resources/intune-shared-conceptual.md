@@ -4,13 +4,12 @@ description: テナント組織の複数のワークフローをサポートす�
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
-doc_type: conceptualPageType
-ms.openlocfilehash: c8540b7bd183d21a15ad2e38b5f1bef2caa4d983
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0d2252093f222f5908756f312c2e82d591c29920
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010533"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36372805"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Microsoft Intune での共有リソース
 
@@ -34,6 +33,7 @@ ms.locfileid: "36010533"
 - [デバイスのプラットフォームの種類](intune-shared-deviceplatformtype.md)
 - [デバイスのタイプ](intune-shared-devicetype.md)
 - [有効化](intune-shared-enablement.md)
+- [有効化](intune-shared-enablement.md)
 - [除外グループの割り当て先](intune-shared-exclusiongroupassignmenttarget.md)
 - [グループの割り当て先](intune-shared-groupassignmenttarget.md)
 - [インストール目的](intune-shared-installintent.md)
@@ -48,7 +48,6 @@ ms.locfileid: "36010533"
 - [レポートのルート](intune-shared-reportroot.md)
 - [アプリの状態の結果](intune-shared-resultantappstate.md)
 - [RGB カラー](intune-shared-rgbcolor.md)
-- [アカウントの種類として実行](intune-shared-runasaccounttype.md)
 - [実行状態](intune-shared-runstate.md)
 - [保存 UI 状態生成オプション](intune-shared-saveduistategenerationoptions.md)
 - [URI](intune-shared-uri.md)

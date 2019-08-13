@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ae96113e687d406f5c0342b3b71fd63ea6de9918
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 630a3825367cc1850e6793598010a7fdbb027016
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999753"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36372168"
 ---
 # <a name="managementagenttype-enum-type"></a>managementAgentType 列挙型
 
@@ -35,8 +35,6 @@ ms.locfileid: "35999753"
 |jamf|32|デバイス属性は、Jamf から取得されます。|
 |googleCloudDevicePolicyController|64|デバイスは Google の CloudDPC によって管理されています。|
 |microsoft365ManagedMdm|258|このデバイスは、Microsoft 365 によって Intune によって管理されます。|
-
-
 
 
 

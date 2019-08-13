@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9e922634ec08e1fab412c160d2d8fe7f45d0dde5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6063b07ed9361b00315a7c8a2b170cea72f7dff3
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010155"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36371909"
 ---
 # <a name="intunebrandingprofile-resource-type"></a>intuneBrandingProfile リソースの種類
 
@@ -54,6 +54,8 @@ ms.locfileid: "36010155"
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|ロゴの背景が明るい、ポータルサイトアプリに表示されるロゴ画像|
 |landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|会社のポータルアプリのランディングページに表示されるカスタマイズ画像|
 |customPrivacyMessage|String|デバイスで管理者がアクセスできる内容に関するテキストコメント|
+|isRemoveDeviceDisabled|Boolean|Adminsistrator が企業所有のデバイスで [デバイスの削除] アクションを無効にしているかどうかを表すブール値。|
+|isFactoryResetDisabled|Boolean|Adminsistrator が企業所有のデバイスで "出荷時のリセット" アクションを無効にしているかどうかを表すブール値。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
@@ -108,11 +110,11 @@ ms.locfileid: "36010155"
     "type": "String",
     "value": "binary"
   },
-  "customPrivacyMessage": "String"
+  "customPrivacyMessage": "String",
+  "isRemoveDeviceDisabled": true,
+  "isFactoryResetDisabled": true
 }
 ```
-
-
 
 
 

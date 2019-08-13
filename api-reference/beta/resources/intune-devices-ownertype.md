@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: cef679611009c5207265fda8a97527f0ced67221
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a3cfe862f0686a0de9f1e7368402868ffaeef00f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968331"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36372140"
 ---
 # <a name="ownertype-enum-type"></a>ownerType 列挙型
 
@@ -26,8 +26,6 @@ ms.locfileid: "35968331"
 |不明|.0|わかり.|
 |会社|1-d|会社によって所有されます。|
 |personal|pbm-2|ユーザーによって所有されます。|
-
-
 
 
 

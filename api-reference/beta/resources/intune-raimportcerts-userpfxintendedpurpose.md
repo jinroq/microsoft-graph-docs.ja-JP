@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 473f06515b1cb9a1eee966a471c8a8adb81aca7d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 845a3b43acecf4e6ca76f4d00682ec982416b8df
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010610"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369312"
 ---
 # <a name="userpfxintendedpurpose-enum-type"></a>userPfxIntendedPurpose 列挙型
 
@@ -23,13 +23,11 @@ ms.locfileid: "36010610"
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|未定義|.0|役割/使用状況は割り当てられていません。|
-|smimeEncryption|1-d|S/MIME 暗号化に対して有効です。|
-|smimeSigning|pbm-2|S/MIME 署名に対して有効です。|
-|仮想|2/4|VPN で使用する場合に有効です。|
-|wi-fi|8 |WiFi で使用するのに有効です。|
-
-
+|未定義|.0|まだ文書化されていません|
+|smimeEncryption|1-d|まだ文書化されていません|
+|smimeSigning|pbm-2|まだ文書化されていません|
+|仮想|2/4|まだ文書化されていません|
+|wi-fi|8 |まだ文書化されていません|
 
 
 

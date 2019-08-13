@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 170989596004660e14ed5cfbb2296e379bd1c4c4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4e07a78db6d30ed6256f5491c57c0de7e3af0946
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969059"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36371118"
 ---
 # <a name="windowsfirewallrule-resource-type"></a>windowsFirewallRule リソースの種類
 
@@ -31,30 +31,14 @@ Windows ファイアウォールを介したトラフィックを制御するル
 |プロトコール|Int32|0-255 IP プロトコルを表す番号 (TCP = 6、UDP = 17)。 指定しない場合、既定値は All です。 有効な値は 0 ~ 255|
 |localPortRanges|文字列コレクション|ローカルポート範囲のリスト。 たとえば、"100-120"、"200"、"300-320" などです。 指定しない場合、既定値は All です。|
 |remotePortRanges|文字列コレクション|リモートポート範囲の一覧。 たとえば、"100-120"、"200"、"300-320" などです。 指定しない場合、既定値は All です。|
-|localAddressRanges|文字列コレクション|ルールでカバーされているローカルアドレスのリスト。 有効なトークンは次のとおりです。
-- "*" はローカルアドレスを示します。 指定する場合は、このトークンのみが含まれている必要があります。
-- サブネットは、サブネットマスクまたはネットワークプレフィックス表記のどちらかを使用して指定できます。 サブネットマスクもネットワークプレフィックスも指定されていない場合、サブネットマスクは既定で255.255.255.255 になります。
-- 有効な IPv6 アドレス。
-- スペースを含まない「開始アドレスと終了アドレス」の形式の IPv4 アドレス範囲。
-- 「開始アドレス-終了アドレス」の形式の IPv6 アドレス範囲。スペースは含まれません。
-既定は任意のアドレスです。 || remoteAddressRanges |文字列コレクション |ルールの対象となるリモートアドレスを指定するトークンの一覧です。 トークンの大文字と小文字は区別されません。 有効なトークンは次のとおりです。
-- "*" は任意のリモートアドレスを示します。 指定する場合は、このトークンのみが含まれている必要があります。
-- "Defaultgateway"
-- DHCP
-- DSN
-- 獲得
-- "Intranet" (Windows バージョンでサポートされている 1809 +)
-- "RmtIntranet" (Windows バージョンでサポートされている 1809 +)
-- "Internet" (Windows バージョンでサポートされている 1809 +)
-- "Ply2Renders" (Windows バージョン1809以降でサポートされています)
-- "LocalSubnet" は、ローカルサブネット上のローカルアドレスを示します。
-- サブネットは、サブネットマスクまたはネットワークプレフィックス表記のどちらかを使用して指定できます。 サブネットマスクもネットワークプレフィックスも指定されていない場合、サブネットマスクは既定で255.255.255.255 になります。
-- 有効な IPv6 アドレス。
-- スペースを含まない「開始アドレスと終了アドレス」の形式の IPv4 アドレス範囲。
-- 「開始アドレス-終了アドレス」の形式の IPv6 アドレス範囲。スペースは含まれません。
-既定は任意のアドレスです。 || profileTypes |[windowsFirewallRuleNetworkProfileTypes](../resources/intune-deviceconfig-windowsfirewallrulenetworkprofiletypes.md)|ルールが属するプロファイルを指定します。 指定しない場合、既定値は All です。 可能な値: `notConfigured`、 `domain`、 `private`、 `public`。 || action |[Statemanagementsetting](../resources/intune-deviceconfig-statemanagementsetting.md)|ルールによって適用されるアクション。 指定しない場合、既定値を使用できます。 可能な値: `notConfigured`、 `blocked`、 `allowed`. || trafficDirection |[windowsFirewallRuleTrafficDirectionType](../resources/intune-deviceconfig-windowsfirewallruletrafficdirectiontype.md)|ルールが有効になっているトラフィックの方向。 指定しない場合、既定値は "Out" です。可能な値: `notConfigured`、 `out`、 `in`. || interfaceTypes |[windowsFirewallRuleInterfaceTypes](../resources/intune-deviceconfig-windowsfirewallruleinterfacetypes.md)|ルールのインターフェイスの種類。 可能な値: `notConfigured`、 `remoteAccess`、 `wireless`、 `lan`。 || edgeTraversal |[Statemanagementsetting](../resources/intune-deviceconfig-statemanagementsetting.md)|このルールに対してエッジトラバーサルを有効にするか無効にするかを示します。
-EdgeTraversal の設定は、特定の受信トラフィックで、Teredo トンネリングテクノロジを使用して Nat およびその他のエッジデバイスをトンネリングできることを示します。 この設定を正しく動作させるには、受信ファイアウォールルールを持つアプリケーションまたはサービスが IPv6 をサポートする必要があります。 この設定の主なアプリケーションにより、ホスト上のリスナーは Teredo IPv6 アドレスを使用してグローバルにアドレス可能にすることができます。
-新しいルールでは、EdgeTraversal プロパティは既定で無効になっています。 可能な値: `notConfigured`、 `blocked`、 `allowed`. || localUserAuthorizations |文字列 |アプリコンテナーに対して承認されたローカルユーザーのリストを指定します。 これは、セキュリティ記述子定義言語 (SDDL) 形式の文字列です。 |
+|localAddressRanges|文字列コレクション|ルールでカバーされているローカルアドレスのリスト。 既定は任意のアドレスです。 有効なトークンは次のとおりです。<ul><li>"*" はローカルアドレスを示します。 指定する場合は、このトークンのみが含まれている必要があります。</li><li>サブネットは、サブネットマスクまたはネットワークプレフィックス表記のどちらかを使用して指定できます。 サブネットマスクもネットワークプレフィックスも指定されていない場合、サブネットマスクは既定で255.255.255.255 になります。</li><li>有効な IPv6 アドレス。</li><li>スペースを含まない「開始アドレスと終了アドレス」の形式の IPv4 アドレス範囲。</li><li>「開始アドレス-終了アドレス」の形式の IPv6 アドレス範囲。スペースは含まれません。</li></ul>|
+|remoteAddressRanges|文字列コレクション|ルールの対象となるリモートアドレスを指定するトークンの一覧です。 トークンの大文字と小文字は区別されません。 既定は任意のアドレスです。 有効なトークンは次のとおりです。<ul><li>"*" は任意のリモートアドレスを示します。 指定する場合は、このトークンのみが含まれている必要があります。</li><li>"Defaultgateway"</li><li>DHCP</li><li>DSN</li><li>獲得</li><li>"Intranet" (Windows バージョンでサポートされている 1809 +)</li><li>"RmtIntranet" (Windows バージョンでサポートされている 1809 +)</li><li>"Internet" (Windows バージョンでサポートされている 1809 +)</li><li>"Ply2Renders" (Windows バージョン1809以降でサポートされています)</li><li>"LocalSubnet" は、ローカルサブネット上のローカルアドレスを示します。</li><li>サブネットは、サブネットマスクまたはネットワークプレフィックス表記のどちらかを使用して指定できます。 サブネットマスクもネットワークプレフィックスも指定されていない場合、サブネットマスクは既定で255.255.255.255 になります。</li><li>有効な IPv6 アドレス。</li><li>スペースを含まない「開始アドレスと終了アドレス」の形式の IPv4 アドレス範囲。</li><li>「開始アドレス-終了アドレス」の形式の IPv6 アドレス範囲。スペースは含まれません。</li></ul>|
+|profileTypes|[windowsFirewallRuleNetworkProfileTypes](../resources/intune-deviceconfig-windowsfirewallrulenetworkprofiletypes.md)|ルールが属するプロファイルを指定します。 指定しない場合、既定値は All です。 使用可能な値は、`notConfigured`、`domain`、`private`、`public` です。|
+|action|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|ルールによって適用されるアクション。 指定しない場合、既定値を使用できます。 可能な値は、`notConfigured`、`blocked`、`allowed` です。|
+|trafficDirection|[windowsFirewallRuleTrafficDirectionType](../resources/intune-deviceconfig-windowsfirewallruletrafficdirectiontype.md)|ルールが有効になっているトラフィックの方向。 指定しない場合、既定値は "Out" です。可能な値は`notConfigured`、 `out`、 `in`、です。|
+|interfaceTypes|[windowsFirewallRuleInterfaceTypes](../resources/intune-deviceconfig-windowsfirewallruleinterfacetypes.md)|ルールのインターフェイスの種類。 使用可能な値は、`notConfigured`、`remoteAccess`、`wireless`、`lan` です。|
+|edgeTraversal|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|このルールに対してエッジトラバーサルを有効にするか無効にするかを示します。 EdgeTraversal の設定は、特定の受信トラフィックで、Teredo トンネリングテクノロジを使用して Nat およびその他のエッジデバイスをトンネリングできることを示します。 この設定を正しく動作させるには、受信ファイアウォールルールを持つアプリケーションまたはサービスが IPv6 をサポートする必要があります。 この設定の主なアプリケーションにより、ホスト上のリスナーは Teredo IPv6 アドレスを使用してグローバルにアドレス可能にすることができます。 新しいルールでは、EdgeTraversal プロパティは既定で無効になっています。 可能な値は、`notConfigured`、`blocked`、`allowed` です。|
+|localUserAuthorizations|String|アプリコンテナーに対して承認されたローカルユーザーのリストを指定します。 これは、セキュリティ記述子定義言語 (SDDL) 形式の文字列です。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -95,8 +79,6 @@ EdgeTraversal の設定は、特定の受信トラフィックで、Teredo ト�
   "localUserAuthorizations": "String"
 }
 ```
-
-
 
 
 

@@ -4,12 +4,13 @@ description: まだ文書化されていません
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7e307c28e295282c7d6c6572a90bf6a8f5ae1746
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: resourcePageType
+ms.openlocfilehash: aaf13c6c29668b2cf21bd4ce282c71773de69133
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35741470"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368878"
 ---
 # <a name="managedalldevicecertificatestate-resource-type"></a>managedAllDeviceCertificateState リソースの種類
 
@@ -72,8 +73,6 @@ ms.locfileid: "35741470"
   "certificateIssuanceDateTime": "String (timestamp)"
 }
 ```
-
-
 
 
 

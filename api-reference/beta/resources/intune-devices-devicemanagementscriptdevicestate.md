@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a59754e92fc86cf635edaedb575ffa358875c64c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 86f3dcfefb80765ff13bb8742d88fdd869072f66
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999844"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36370047"
 ---
 # <a name="devicemanagementscriptdevicestate-resource-type"></a>deviceManagementScriptDeviceState リソースの種類
 
@@ -33,11 +33,15 @@ ms.locfileid: "35999844"
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|デバイス管理スクリプトのデバイス状態エンティティのキー。|
-|runState|[runState](../resources/intune-shared-runstate.md)|デバイス管理スクリプトの最新の実行の状態。 可能な値は、`unknown`、`success`、`fail` です。|
+|runState|[runState](../resources/intune-shared-runstate.md)|デバイス管理スクリプトの最新の実行の状態。 可能な値は、`unknown`、`success`、`fail`、`error`、`pending` です。|
 |resultMessage|String|実行出力の詳細。|
 |lastStateUpdateDateTime|DateTimeOffset|デバイス管理スクリプトが最後に実行された時刻。|
 |errorCode|Int32|デバイス管理スクリプトの誤った実行に対応するエラーコード。|
 |errorDescription|String|デバイス管理スクリプトの誤った実行に対応するエラーの説明。|
+|lastSyncDateTime|DateTimeOffset|Intune 管理拡張機能が Intune と同期する最新時刻。|
+|preRemediationDetectionScriptOutput|String|修復前の検出スクリプトの出力。|
+|remediationScriptError|String|修復スクリプトのエラー出力。|
+|postRemediationDetectionScriptOutput|String|修復後の検出スクリプトの出力。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
@@ -60,11 +64,13 @@ ms.locfileid: "35999844"
   "resultMessage": "String",
   "lastStateUpdateDateTime": "String (timestamp)",
   "errorCode": 1024,
-  "errorDescription": "String"
+  "errorDescription": "String",
+  "lastSyncDateTime": "String (timestamp)",
+  "preRemediationDetectionScriptOutput": "String",
+  "remediationScriptError": "String",
+  "postRemediationDetectionScriptOutput": "String"
 }
 ```
-
-
 
 
 

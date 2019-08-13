@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 4daa74189c0cba26b74c96fd9cb659b2255e6b5c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ac112c970fd05f7c697402d3cb3a14782890c7fe
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999655"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36372126"
 ---
 # <a name="remoteaction-enum-type"></a>remoteAction 列挙型
 
@@ -44,8 +44,7 @@ ms.locfileid: "35999655"
 |シャット|個|ユーザーがデバイスをシャットダウンするアクションを開始します。|
 |rotateFileVaultKey|1280|ユーザーが mac で FileVaultKey を回転するアクションを開始します。|
 |getFileVaultKey|21|ユーザーが mac で FileVaultKey を取得するアクションを開始します。|
-
-
+|setDeviceName|×|ユーザーがデバイスのデバイス名を設定するアクションを開始します。|
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: d89ddee30e04ac8d22cf0f754139101b858c259b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c7e0f50a830134cea6b4bfc15c6e68b49b86d0a2
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969052"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36371083"
 ---
 # <a name="windowsfirewallrulenetworkprofiletypes-enum-type"></a>windowsFirewallRuleNetworkProfileTypes 列挙型
 
@@ -27,8 +27,6 @@ ms.locfileid: "35969052"
 |domain|1-d|ドメインに接続されているネットワークのプロファイル。|
 |機密性|pbm-2|プライベートネットワークのプロファイル。|
 |public|2/4|パブリックネットワークのプロファイル。|
-
-
 
 
 

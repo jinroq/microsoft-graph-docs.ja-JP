@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 805f130945f4e8b966c35409f6e27fcf55e3f02f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c4eff14cb14bc9edd1a676eeeb543a599c2d032b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967596"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369200"
 ---
 # <a name="rolescopetag-resource-type"></a>ロール Copetag リソースの種類
 
@@ -38,6 +38,7 @@ ms.locfileid: "35967596"
 |id|文字列|エンティティのキー。 これは読み取り専用で、自動生成されます。|
 |displayName|String|ロールスコープタグの表示名またはフレンドリ名。|
 |description|String|役割の範囲タグの説明。|
+|isBuiltIn|Boolean|役割の範囲タグの説明。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
@@ -57,11 +58,10 @@ ms.locfileid: "35967596"
   "@odata.type": "#microsoft.graph.roleScopeTag",
   "id": "String (identifier)",
   "displayName": "String",
-  "description": "String"
+  "description": "String",
+  "isBuiltIn": true
 }
 ```
-
-
 
 
 

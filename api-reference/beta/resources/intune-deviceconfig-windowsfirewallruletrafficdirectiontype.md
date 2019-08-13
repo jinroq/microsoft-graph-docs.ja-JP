@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 1ac35c5868f88c046506f7d7cbd3941cd5780df8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e3c48c8b10c5c0b5c8325764f1e2f676e81f9435
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011205"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36371090"
 ---
 # <a name="windowsfirewallruletrafficdirectiontype-enum-type"></a>windowsFirewallRuleTrafficDirectionType 列挙型
 
@@ -26,8 +26,6 @@ ms.locfileid: "36011205"
 |notConfigured|.0|構成されていません。|
 |読み上げ|1-d|このルールは、送信トラフィックに適用されます。|
 |順番|pbm-2|規則は受信トラフィックに適用されます。|
-
-
 
 
 

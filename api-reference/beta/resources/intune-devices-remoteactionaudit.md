@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5a691997c985de17646a28d3a72262ae3c99c174
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cb00a4d1d160fe4afdfa5c466b3b23e10c693c09
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968324"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36372112"
 ---
 # <a name="remoteactionaudit-resource-type"></a>remoteActionAudit リソースの種類
 
@@ -36,11 +36,12 @@ ms.locfileid: "35968324"
 |deviceDisplayName|String|Intune デバイス名。|
 |userName|文字列型 (String)|\[非\]推奨 InitiatedByUserPrincipalName を代わりに使用してください。|
 |initiatedByUserPrincipalName|String|デバイスのアクションを開始したユーザーの形式は UPN です。|
-|action|[remoteAction](../resources/intune-devices-remoteaction.md)|アクション名。 可能な値は、`unknown`、`factoryReset`、`removeCompanyData`、`resetPasscode`、`remoteLock`、`enableLostMode`、`disableLostMode`、`locateDevice`、`rebootNow`、`recoverPasscode`、`cleanWindowsDevice`、`logoutSharedAppleDeviceActiveUser`、`quickScan`、`fullScan`、`windowsDefenderUpdateSignatures`、`factoryResetKeepEnrollmentData`、`updateDeviceAccount`、`automaticRedeployment`、`shutDown`、`rotateFileVaultKey`、`getFileVaultKey` です。|
+|action|[remoteAction](../resources/intune-devices-remoteaction.md)|アクション名。 可能な値: `unknown`、 `factoryReset` `removeCompanyData` `resetPasscode` `remoteLock` `enableLostMode` `disableLostMode` `locateDevice` `rebootNow` `recoverPasscode` `cleanWindowsDevice` `logoutSharedAppleDeviceActiveUser`、、、、、、、、、、、、 `quickScan` `fullScan` `windowsDefenderUpdateSignatures` `factoryResetKeepEnrollmentData` `updateDeviceAccount` `automaticRedeployment` `shutDown`, `rotateFileVaultKey`, `getFileVaultKey`, `setDeviceName`.|
 |requestDateTime|DateTimeOffset|アクションが発行された日時 (UTC)。|
 |deviceOwnerUserPrincipalName|String|デバイス所有者の Upn。|
 |deviceIMEI|String|デバイスの IMEI。|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|アクションの状態。 可能な値は、`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported` です。|
+|managedDeviceId|String|アクションのターゲット。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -64,11 +65,10 @@ ms.locfileid: "35968324"
   "requestDateTime": "String (timestamp)",
   "deviceOwnerUserPrincipalName": "String",
   "deviceIMEI": "String",
-  "actionState": "String"
+  "actionState": "String",
+  "managedDeviceId": "String"
 }
 ```
-
-
 
 
 

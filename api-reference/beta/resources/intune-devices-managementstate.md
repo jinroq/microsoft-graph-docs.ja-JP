@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 928f2c1c9e7eb1530bdf7839691cf2469af11077
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a61b9d228589f1d0a1e380ed45720f66faa650af
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968338"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36372154"
 ---
 # <a name="managementstate-enum-type"></a>managementState 列挙型
 
@@ -35,8 +35,6 @@ Microsoft Intune でのデバイスの管理状態。
 |wipeCanceled|9 |このデバイスのワイプコマンドは取り消されました|
 |retireCanceled|10 |このデバイスの廃棄コマンドは取り消されました|
 |た|#|デバイスが検出されますが、完全に登録されていません。|
-
-
 
 
 

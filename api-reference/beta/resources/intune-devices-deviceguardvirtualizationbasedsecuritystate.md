@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 1dee315f7c81df22af296a7abcd537596d1bccae
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2e5c2f9a4d1dd58e0bb5292930fcda4e14f95eb2
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968459"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36370124"
 ---
 # <a name="deviceguardvirtualizationbasedsecuritystate-enum-type"></a>deviceGuardVirtualizationBasedSecurityState 列挙型
 
@@ -30,8 +30,6 @@ ms.locfileid: "35968459"
 |notConfigured|2/4|未構成|
 |doesNotMeetHardwareRequirements|5|システムがハードウェア要件を満たしていない|
 |も|42|も. Microsoft-DeviceGuard のイベントログには、詳細が含まれています。|
-
-
 
 
 

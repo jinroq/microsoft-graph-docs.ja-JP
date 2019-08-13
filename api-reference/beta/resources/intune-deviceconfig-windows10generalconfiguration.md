@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c0f637ae7a8adb25ca965b169a1d8e4f92c87478
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 841a61f636e56e05b0d3b38d6172fa55888595fd
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000422"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369858"
 ---
 # <a name="windows10generalconfiguration-resource-type"></a>windows10GeneralConfiguration リソース タイプ
 
@@ -47,6 +47,16 @@ ms.locfileid: "36000422"
 |displayName|String|管理者が指定した、デバイス構成の名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |taskManagerBlockEndTask|Boolean|管理者以外がタスクマネージャーを使用してタスクを終了できるかどうかを指定します。|
+|energySaverOnBatteryThresholdPercentage|Int32|この設定では、省電力を有効にするバッテリの充電レベルを指定できます。 バッテリーでは、電力節約機能は指定されたバッテリの充電レベルで自動的にオンまたはオフになります。 有効な入力範囲 (0-100)。 有効な値は 0 から 100 までです|
+|energySaverPluggedInThresholdPercentage|Int32|この設定では、省電力を有効にするバッテリの充電レベルを指定できます。 電源が接続されている間は、指定したバッテリの充電レベルで省電力機能が自動的に有効になります。 有効な入力範囲 (0-100)。 有効な値は 0 から 100 までです|
+|powerLidCloseActionOnBattery|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|この設定では、ユーザーがバッテリを利用しているときに、モバイル PC のふたを閉じたときに Windows が実行する操作を指定します。 可能な値は、`notConfigured`、`noAction`、`sleep`、`hibernate`、`shutdown` です。|
+|powerLidCloseActionPluggedIn|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|この設定では、ユーザーがモバイル PC の接続中にふたを閉じたときに Windows が実行する操作を指定します。 可能な値は、`notConfigured`、`noAction`、`sleep`、`hibernate`、`shutdown` です。|
+|powerButtonActionOnBattery|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|この設定では、ユーザーがバッテリで電源ボタンを押したときに Windows が実行する操作を指定します。 可能な値は、`notConfigured`、`noAction`、`sleep`、`hibernate`、`shutdown` です。|
+|powerButtonActionPluggedIn|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|この設定では、電源に接続しているときに、ユーザーが電源ボタンを押したときに Windows が実行する操作を指定します。 可能な値は、`notConfigured`、`noAction`、`sleep`、`hibernate`、`shutdown` です。|
+|powerSleepButtonActionOnBattery|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|この設定では、ユーザーがバッテリでスリープボタンを押したときに Windows が実行する操作を指定します。 可能な値は、`notConfigured`、`noAction`、`sleep`、`hibernate`、`shutdown` です。|
+|powerSleepButtonActionPluggedIn|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|この設定では、ユーザーが電源に接続しているときにスリープボタンを押したときに Windows が実行する操作を指定します。 可能な値は、`notConfigured`、`noAction`、`sleep`、`hibernate`、`shutdown` です。|
+|powerHybridSleepOnBattery|[購入](../resources/intune-shared-enablement.md)|この設定では、バッテリでのハイブリッドスリープを無効にすることができます。 この設定を disable に設定すると、システムがスリープ状態 (スタンバイ) に移行するときに hiberfile が生成されません。 このポリシー設定を有効または無効にするように設定した場合、ユーザーはこの設定を制御します。 可能な値は、`notConfigured`、`enabled`、`disabled` です。|
+|powerHybridSleepPluggedIn|[購入](../resources/intune-shared-enablement.md)|この設定では、接続中にハイブリッドスリープを無効にすることができます。 この設定を disable に設定すると、システムがスリープ状態 (スタンバイ) に移行するときに hiberfile が生成されません。 このポリシー設定を有効または無効にするように設定した場合、ユーザーはこの設定を制御します。 可能な値は、`notConfigured`、`enabled`、`disabled` です。|
 |windows10AppsForceUpdateSchedule|[windows10AppsForceUpdateSchedule](../resources/intune-deviceconfig-windows10appsforceupdateschedule.md)|Windows 10 アプリの更新スケジュールを強制します。|
 |Enable自動再展開|Boolean|管理者権限を持つユーザーが、デバイスのロック画面で CTRL + Win + R を使用してすべてのユーザーデータと設定を削除できるようにし、デバイスを自動的に再構成して管理に再登録できるようにします。|
 |Authenticationallowsecondarydevice|[signInAssistantOptions](../resources/intune-deviceconfig-signinassistantoptions.md)|Microsoft アカウントサインインアシスタント (wlidsvc) NT サービスを制御します。 可能な値は、`notConfigured`、`disabled` です。|
@@ -138,7 +148,7 @@ ms.locfileid: "36000422"
 |defenderBlockEndUserAccess|Boolean|エンド ユーザーが Defender にアクセスすることを禁止するかどうか。|
 |defenderDaysBeforeDeletingQuarantinedMalware|Int32|検疫済みのマルウェアを削除するまでの日数。 有効な値は 0 から 90 までです|
 |defenderDetectedMalwareActions|[defenderDetectedMalwareActions](../resources/intune-deviceconfig-defenderdetectedmalwareactions.md)|検出されたマルウェアに対する Defender のアクションを脅威レベルごとに取得または設定します。|
-|defenderSystemScanSchedule|[weeklySchedule](../resources/intune-deviceconfig-weeklyschedule.md)|Defender がシステムをスキャンする曜日。 可能な値は、`userDefined`、`everyday`、`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday` です。|
+|defenderSystemScanSchedule|[weeklySchedule](../resources/intune-deviceconfig-weeklyschedule.md)|Defender がシステムをスキャンする曜日。 可能な値は、`userDefined`、`everyday`、`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday`、`noScheduledScan` です。|
 |defenderFilesAndFoldersToExclude|文字列コレクション|スキャンとリアルタイム保護から除外するファイルとフォルダー。|
 |defenderFileExtensionsToExclude|文字列コレクション|スキャンとリアルタイム保護から除外するファイル拡張子。|
 |defenderScanMaxCpu|Int32|スキャン中の最大 CPU 使用率。 有効な値は 0 から 100 までです|
@@ -370,6 +380,16 @@ ms.locfileid: "36000422"
   "displayName": "String",
   "version": 1024,
   "taskManagerBlockEndTask": true,
+  "energySaverOnBatteryThresholdPercentage": 1024,
+  "energySaverPluggedInThresholdPercentage": 1024,
+  "powerLidCloseActionOnBattery": "String",
+  "powerLidCloseActionPluggedIn": "String",
+  "powerButtonActionOnBattery": "String",
+  "powerButtonActionPluggedIn": "String",
+  "powerSleepButtonActionOnBattery": "String",
+  "powerSleepButtonActionPluggedIn": "String",
+  "powerHybridSleepOnBattery": "String",
+  "powerHybridSleepPluggedIn": "String",
   "windows10AppsForceUpdateSchedule": {
     "@odata.type": "microsoft.graph.windows10AppsForceUpdateSchedule",
     "startDateTime": "String (timestamp)",
@@ -681,8 +701,6 @@ ms.locfileid: "36000422"
   ]
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9d921ffbaca07a790060011a9970b4b02b0e8472
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 812282fdbe6cc6bb329682ab3d95e8e036c512f0
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010701"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36374338"
 ---
 # <a name="intunebrand-resource-type"></a>intuneBrand リソース タイプ
 
@@ -38,6 +38,8 @@ intuneBrand には、会社のポータル アプリケーションとエンド 
 |showNameNextToLogo|Boolean|管理者が指定した表示名がロゴ画像のとなりに表示されるかどうかを表すブール値。|
 |landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|会社のポータルアプリのランディングページに表示されるカスタマイズ画像|
 |customPrivacyMessage|String|カスタムプライバシーメッセージ。|
+|isRemoveDeviceDisabled|Boolean|Adminsistrator が企業所有のデバイスで [デバイスの削除] アクションを無効にしているかどうかを表すブール値。|
+|isFactoryResetDisabled|Boolean|Adminsistrator が企業所有のデバイスで "出荷時のリセット" アクションを無効にしているかどうかを表すブール値。|
 |showDisplayNameNextToLogo|Boolean|管理者が指定した表示名がロゴ画像のとなりに表示されるかどうかを表すブール値。|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -85,11 +87,11 @@ intuneBrand には、会社のポータル アプリケーションとエンド 
     "value": "binary"
   },
   "customPrivacyMessage": "String",
+  "isRemoveDeviceDisabled": true,
+  "isFactoryResetDisabled": true,
   "showDisplayNameNextToLogo": true
 }
 ```
-
-
 
 
 

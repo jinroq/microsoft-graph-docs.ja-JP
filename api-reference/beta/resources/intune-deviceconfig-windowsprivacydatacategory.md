@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 11b7c71ff9368db822ab66bff558b8716615cbc4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 60f1e417b937a629f9069e81e51f64cff508f71f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000250"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369641"
 ---
 # <a name="windowsprivacydatacategory-enum-type"></a>windowsPrivacyDataCategory 列挙型
 
@@ -42,8 +42,6 @@ ms.locfileid: "36000250"
 |tasks|16|アプリでタスクスケジューラにアクセスできるようにします。 Windows 10 バージョン1703で追加されました。|
 |syncWithDevices|インチ|アプリで、ユーザーのデバイスと明示的にペアリングされていないワイヤレスデバイスとの情報を自動的に共有および同期することができます。 Windows 10 バージョン 1607 で追加されました。|
 |trustedDevices|個|アプリが信頼されたデバイスにアクセスできるようにします。 Windows 10 バージョン 1607 で追加されました。|
-
-
 
 
 

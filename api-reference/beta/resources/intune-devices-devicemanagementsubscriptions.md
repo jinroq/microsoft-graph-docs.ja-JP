@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 9705c3d64eae5a9e55cf306ee8dd4b32fa291e3e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e3d199102c5a331561094be69632434d35385746
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999823"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369977"
 ---
 # <a name="devicemanagementsubscriptions-enum-type"></a>deviceManagementSubscriptions 列挙型
 
@@ -29,8 +29,6 @@ ms.locfileid: "35999823"
 |Intアン Epremium|2/4|Microsoft Intune Premium サブスクリプション|
 |intune_EDU|8 |教育機関向け Microsoft Intune サブスクリプション|
 |intune_SMB|16|小規模企業向けの Microsoft Intune サブスクリプション|
-
-
 
 
 

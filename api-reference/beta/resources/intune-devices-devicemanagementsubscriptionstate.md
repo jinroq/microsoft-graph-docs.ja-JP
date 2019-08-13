@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: d25076175f775d78d854534155d45caf6b465df8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b1403b961373aa97ff77e027cdcb088416fe8d3b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968443"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369991"
 ---
 # <a name="devicemanagementsubscriptionstate-enum-type"></a>deviceManagementSubscriptionState 列挙型
 
@@ -30,8 +30,6 @@ ms.locfileid: "35968443"
 |deleted|2/4|Deleted|
 |ブロック|5|Blocked|
 |lockedOut|8 |LockedOut|
-
-
 
 
 

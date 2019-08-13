@@ -4,12 +4,13 @@ description: Windows 10 では、キオスクデバイスの更新スケジュ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6584312503678596a46d606de97ce6f52335d3c5
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: resourcePageType
+ms.openlocfilehash: 4e308d0ea6fc8015281515ce0d60d859ed326c16
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35741474"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36370892"
 ---
 # <a name="windowskioskforceupdateschedule-resource-type"></a>Windowskioskforceて Chedule リソースの種類
 
@@ -48,8 +49,6 @@ Windows 10 では、キオスクデバイスの更新スケジュールを強制
   "runImmediatelyIfAfterStartDateTime": true
 }
 ```
-
-
 
 
 
