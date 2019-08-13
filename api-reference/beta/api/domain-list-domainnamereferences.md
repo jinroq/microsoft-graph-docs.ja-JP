@@ -5,61 +5,61 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 74e062316cb8fa62f30af4c6fdd1ef81ab69a184
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4b9c7e8e0b2c3d152e5ec00b528756168fd6581f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35957466"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36321223"
 ---
-# <a name="list-domainnamereferences"></a><span data-ttu-id="fe488-104">リスト domainNameReferences</span><span class="sxs-lookup"><span data-stu-id="fe488-104">List domainNameReferences</span></span>
+# <a name="list-domainnamereferences"></a><span data-ttu-id="bf6f4-104">リスト domainNameReferences</span><span class="sxs-lookup"><span data-stu-id="bf6f4-104">List domainNameReferences</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="fe488-105">ドメインへの参照を使用して、 [Directoryobject](../resources/directoryobject.md)の一覧を取得します。</span><span class="sxs-lookup"><span data-stu-id="fe488-105">Retrieve a list of [directoryObject](../resources/directoryobject.md) with a reference to the domain.</span></span> <span data-ttu-id="fe488-106">返される一覧には、ドメインに依存しているすべてのディレクトリオブジェクトが含まれています。</span><span class="sxs-lookup"><span data-stu-id="fe488-106">The returned list will contain all directory objects that have a dependency on the domain.</span></span>
+<span data-ttu-id="bf6f4-105">ドメインへの参照を使用して、 [Directoryobject](../resources/directoryobject.md)の一覧を取得します。</span><span class="sxs-lookup"><span data-stu-id="bf6f4-105">Retrieve a list of [directoryObject](../resources/directoryobject.md) with a reference to the domain.</span></span> <span data-ttu-id="bf6f4-106">返される一覧には、ドメインに依存しているすべてのディレクトリオブジェクトが含まれています。</span><span class="sxs-lookup"><span data-stu-id="bf6f4-106">The returned list will contain all directory objects that have a dependency on the domain.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="fe488-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="fe488-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="bf6f4-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="bf6f4-107">Permissions</span></span>
 
-<span data-ttu-id="fe488-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="fe488-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="bf6f4-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="bf6f4-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="fe488-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="fe488-110">Permission type</span></span>      | <span data-ttu-id="fe488-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="fe488-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="bf6f4-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="bf6f4-110">Permission type</span></span>      | <span data-ttu-id="bf6f4-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="bf6f4-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="fe488-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="fe488-112">Delegated (work or school account)</span></span> | <span data-ttu-id="fe488-113">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="fe488-113">Directory.Read.All</span></span>    |
-|<span data-ttu-id="fe488-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="fe488-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fe488-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="fe488-115">Not supported.</span></span>    |
-|<span data-ttu-id="fe488-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="fe488-116">Application</span></span> | <span data-ttu-id="fe488-117">Directory.Read.All、Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fe488-117">Directory.Read.All, Domain.ReadWrite.All</span></span> |
+|<span data-ttu-id="bf6f4-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="bf6f4-112">Delegated (work or school account)</span></span> | <span data-ttu-id="bf6f4-113">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="bf6f4-113">Directory.Read.All</span></span>    |
+|<span data-ttu-id="bf6f4-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="bf6f4-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bf6f4-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="bf6f4-115">Not supported.</span></span>    |
+|<span data-ttu-id="bf6f4-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="bf6f4-116">Application</span></span> | <span data-ttu-id="bf6f4-117">Directory.Read.All、Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bf6f4-117">Directory.Read.All, Domain.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="fe488-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="fe488-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="bf6f4-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="bf6f4-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /domains/{id}/domainNameReferences
 ```
 
-> <span data-ttu-id="fe488-119">{Id} には、ドメインを完全修飾ドメイン名で指定します。</span><span class="sxs-lookup"><span data-stu-id="fe488-119">For {id}, specify the domain with its fully qualified domain name.</span></span>
+> <span data-ttu-id="bf6f4-119">{Id} には、ドメインを完全修飾ドメイン名で指定します。</span><span class="sxs-lookup"><span data-stu-id="bf6f4-119">For {id}, specify the domain with its fully qualified domain name.</span></span>
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="fe488-120">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="fe488-120">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="bf6f4-120">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="bf6f4-120">Optional query parameters</span></span>
 
-<span data-ttu-id="fe488-121">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="fe488-121">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+<span data-ttu-id="bf6f4-121">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="bf6f4-121">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="fe488-122">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="fe488-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="bf6f4-122">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="bf6f4-122">Request headers</span></span>
 
-| <span data-ttu-id="fe488-123">名前</span><span class="sxs-lookup"><span data-stu-id="fe488-123">Name</span></span>      |<span data-ttu-id="fe488-124">説明</span><span class="sxs-lookup"><span data-stu-id="fe488-124">Description</span></span>|
+| <span data-ttu-id="bf6f4-123">名前</span><span class="sxs-lookup"><span data-stu-id="bf6f4-123">Name</span></span>      |<span data-ttu-id="bf6f4-124">説明</span><span class="sxs-lookup"><span data-stu-id="bf6f4-124">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="fe488-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="fe488-125">Authorization</span></span>  | <span data-ttu-id="fe488-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="fe488-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="bf6f4-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="bf6f4-125">Authorization</span></span>  | <span data-ttu-id="bf6f4-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="bf6f4-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="fe488-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="fe488-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="bf6f4-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="bf6f4-128">Request body</span></span>
 
-<span data-ttu-id="fe488-129">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="fe488-129">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="bf6f4-129">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="bf6f4-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="fe488-130">応答</span><span class="sxs-lookup"><span data-stu-id="fe488-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="bf6f4-130">応答</span><span class="sxs-lookup"><span data-stu-id="bf6f4-130">Response</span></span>
 
-<span data-ttu-id="fe488-131">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [directoryObject](../resources/directoryobject.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="fe488-131">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
+<span data-ttu-id="bf6f4-131">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [directoryObject](../resources/directoryobject.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="bf6f4-131">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="fe488-132">例</span><span class="sxs-lookup"><span data-stu-id="fe488-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="fe488-133">要求</span><span class="sxs-lookup"><span data-stu-id="fe488-133">Request</span></span>
+## <a name="example"></a><span data-ttu-id="bf6f4-132">例</span><span class="sxs-lookup"><span data-stu-id="bf6f4-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="bf6f4-133">要求</span><span class="sxs-lookup"><span data-stu-id="bf6f4-133">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="fe488-134">プロトコル</span><span class="sxs-lookup"><span data-stu-id="fe488-134">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="bf6f4-134">プロトコル</span><span class="sxs-lookup"><span data-stu-id="bf6f4-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_domainnamereferences"
@@ -67,27 +67,27 @@ GET /domains/{id}/domainNameReferences
 ```http
 GET https://graph.microsoft.com/beta/domains/contoso.com/domainNameReferences
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="fe488-135">C#</span><span class="sxs-lookup"><span data-stu-id="fe488-135">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="bf6f4-135">C#</span><span class="sxs-lookup"><span data-stu-id="bf6f4-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-domainnamereferences-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="fe488-136">Javascript</span><span class="sxs-lookup"><span data-stu-id="fe488-136">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="bf6f4-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="bf6f4-136">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-domainnamereferences-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="fe488-137">目的-C</span><span class="sxs-lookup"><span data-stu-id="fe488-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="bf6f4-137">目的-C</span><span class="sxs-lookup"><span data-stu-id="bf6f4-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-domainnamereferences-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="fe488-138">Java</span><span class="sxs-lookup"><span data-stu-id="fe488-138">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="bf6f4-138">Java</span><span class="sxs-lookup"><span data-stu-id="bf6f4-138">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-domainnamereferences-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="fe488-139">応答</span><span class="sxs-lookup"><span data-stu-id="fe488-139">Response</span></span>
-<span data-ttu-id="fe488-p105">注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="fe488-p105">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="bf6f4-139">応答</span><span class="sxs-lookup"><span data-stu-id="bf6f4-139">Response</span></span>
+<span data-ttu-id="bf6f4-p105">注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="bf6f4-p105">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

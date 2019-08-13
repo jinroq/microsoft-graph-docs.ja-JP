@@ -5,56 +5,56 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 7cdb76312c05fe1b919bf063a1ff5409a4b62bc5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7fa3a222db138ffd55b75b1f04da7780621a1d3a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35995791"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36325738"
 ---
-# <a name="create-table"></a><span data-ttu-id="dc96d-103">テーブルの作成</span><span class="sxs-lookup"><span data-stu-id="dc96d-103">Create table</span></span>
+# <a name="create-table"></a><span data-ttu-id="ed36e-103">テーブルの作成</span><span class="sxs-lookup"><span data-stu-id="ed36e-103">Create table</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="dc96d-104">この API を使用して、新しいテーブルを作成します。</span><span class="sxs-lookup"><span data-stu-id="dc96d-104">Use this API to create a new Table.</span></span>
-## <a name="permissions"></a><span data-ttu-id="dc96d-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="dc96d-105">Permissions</span></span>
-<span data-ttu-id="dc96d-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="dc96d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ed36e-104">この API を使用して、新しいテーブルを作成します。</span><span class="sxs-lookup"><span data-stu-id="ed36e-104">Use this API to create a new Table.</span></span>
+## <a name="permissions"></a><span data-ttu-id="ed36e-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="ed36e-105">Permissions</span></span>
+<span data-ttu-id="ed36e-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ed36e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="dc96d-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="dc96d-108">Permission type</span></span>      | <span data-ttu-id="dc96d-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="dc96d-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ed36e-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="ed36e-108">Permission type</span></span>      | <span data-ttu-id="ed36e-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="ed36e-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="dc96d-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="dc96d-110">Delegated (work or school account)</span></span> | <span data-ttu-id="dc96d-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="dc96d-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="dc96d-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="dc96d-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="dc96d-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="dc96d-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="dc96d-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="dc96d-114">Application</span></span> | <span data-ttu-id="dc96d-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="dc96d-115">Not supported.</span></span> |
+|<span data-ttu-id="ed36e-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="ed36e-110">Delegated (work or school account)</span></span> | <span data-ttu-id="ed36e-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ed36e-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="ed36e-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="ed36e-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ed36e-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ed36e-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="ed36e-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="ed36e-114">Application</span></span> | <span data-ttu-id="ed36e-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="ed36e-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="dc96d-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="dc96d-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ed36e-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="ed36e-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/worksheets/{id|name}/tables/add
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="dc96d-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="dc96d-117">Request headers</span></span>
-| <span data-ttu-id="dc96d-118">名前</span><span class="sxs-lookup"><span data-stu-id="dc96d-118">Name</span></span>       | <span data-ttu-id="dc96d-119">説明</span><span class="sxs-lookup"><span data-stu-id="dc96d-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="ed36e-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="ed36e-117">Request headers</span></span>
+| <span data-ttu-id="ed36e-118">名前</span><span class="sxs-lookup"><span data-stu-id="ed36e-118">Name</span></span>       | <span data-ttu-id="ed36e-119">説明</span><span class="sxs-lookup"><span data-stu-id="ed36e-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="dc96d-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="dc96d-120">Authorization</span></span>  | <span data-ttu-id="dc96d-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="dc96d-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="dc96d-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="dc96d-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="dc96d-p103">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="dc96d-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="ed36e-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="ed36e-120">Authorization</span></span>  | <span data-ttu-id="ed36e-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="ed36e-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="ed36e-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="ed36e-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="ed36e-p103">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="ed36e-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="dc96d-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="dc96d-126">Request body</span></span>
-<span data-ttu-id="dc96d-127">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="dc96d-127">In the request body, provide a JSON object with the following parameters.</span></span> 
+## <a name="request-body"></a><span data-ttu-id="ed36e-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="ed36e-126">Request body</span></span>
+<span data-ttu-id="ed36e-127">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="ed36e-127">In the request body, provide a JSON object with the following parameters.</span></span> 
 
-| <span data-ttu-id="dc96d-128">パラメーター</span><span class="sxs-lookup"><span data-stu-id="dc96d-128">Parameter</span></span>       | <span data-ttu-id="dc96d-129">型</span><span class="sxs-lookup"><span data-stu-id="dc96d-129">Type</span></span>|<span data-ttu-id="dc96d-130">説明</span><span class="sxs-lookup"><span data-stu-id="dc96d-130">Description</span></span>|
+| <span data-ttu-id="ed36e-128">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed36e-128">Parameter</span></span>       | <span data-ttu-id="ed36e-129">型</span><span class="sxs-lookup"><span data-stu-id="ed36e-129">Type</span></span>|<span data-ttu-id="ed36e-130">説明</span><span class="sxs-lookup"><span data-stu-id="ed36e-130">Description</span></span>|
 |:---------------|:----------|:----------|
-| <span data-ttu-id="dc96d-131">Address</span><span class="sxs-lookup"><span data-stu-id="dc96d-131">Address</span></span>  | <span data-ttu-id="dc96d-132">string</span><span class="sxs-lookup"><span data-stu-id="dc96d-132">string</span></span>| <span data-ttu-id="dc96d-133">範囲のアドレス。</span><span class="sxs-lookup"><span data-stu-id="dc96d-133">Range address.</span></span> <span data-ttu-id="dc96d-134">`worksheets/{id|name}/tables/add` Path からこの API を呼び出さない場合は、アドレスでシート名のプレフィックスをサポートする必要はありません。</span><span class="sxs-lookup"><span data-stu-id="dc96d-134">If you are calling this API off of `worksheets/{id|name}/tables/add` path, there is no need to support the sheet name prefix in the address.</span></span> <span data-ttu-id="dc96d-135">ただし、これを`workbook/tables/add` path で呼び出している場合は、テーブルを作成する必要のあるシート名を指定します (例`sheet1!A1:D4`:)。</span><span class="sxs-lookup"><span data-stu-id="dc96d-135">However, if you are calling this off of `workbook/tables/add` path, then supply the sheet name on which the table needs to be created (example: `sheet1!A1:D4`)</span></span>|
-| <span data-ttu-id="dc96d-136">hasHeaders</span><span class="sxs-lookup"><span data-stu-id="dc96d-136">hasHeaders</span></span>  | <span data-ttu-id="dc96d-137">boolean</span><span class="sxs-lookup"><span data-stu-id="dc96d-137">boolean</span></span>|<span data-ttu-id="dc96d-p105">範囲に列ラベルがあるかどうかを示すブール値。ソースにヘッダーが含まれていない場合 (このプロパティが false に設定されている場合)、Excel はデータを下方向に 1 行シフトして、自動的にヘッダーを生成します。</span><span class="sxs-lookup"><span data-stu-id="dc96d-p105">Boolean value that indicates whether the range has column labels. If the source does not contain headers (i.e,. when this property set to false), Excel will automatically generate header shifting the data down by one row.</span></span>|
+| <span data-ttu-id="ed36e-131">Address</span><span class="sxs-lookup"><span data-stu-id="ed36e-131">Address</span></span>  | <span data-ttu-id="ed36e-132">string</span><span class="sxs-lookup"><span data-stu-id="ed36e-132">string</span></span>| <span data-ttu-id="ed36e-133">範囲のアドレス。</span><span class="sxs-lookup"><span data-stu-id="ed36e-133">Range address.</span></span> <span data-ttu-id="ed36e-134">`worksheets/{id|name}/tables/add` Path からこの API を呼び出さない場合は、アドレスでシート名のプレフィックスをサポートする必要はありません。</span><span class="sxs-lookup"><span data-stu-id="ed36e-134">If you are calling this API off of `worksheets/{id|name}/tables/add` path, there is no need to support the sheet name prefix in the address.</span></span> <span data-ttu-id="ed36e-135">ただし、これを`workbook/tables/add` path で呼び出している場合は、テーブルを作成する必要のあるシート名を指定します (例`sheet1!A1:D4`:)。</span><span class="sxs-lookup"><span data-stu-id="ed36e-135">However, if you are calling this off of `workbook/tables/add` path, then supply the sheet name on which the table needs to be created (example: `sheet1!A1:D4`)</span></span>|
+| <span data-ttu-id="ed36e-136">hasHeaders</span><span class="sxs-lookup"><span data-stu-id="ed36e-136">hasHeaders</span></span>  | <span data-ttu-id="ed36e-137">boolean</span><span class="sxs-lookup"><span data-stu-id="ed36e-137">boolean</span></span>|<span data-ttu-id="ed36e-p105">範囲に列ラベルがあるかどうかを示すブール値。ソースにヘッダーが含まれていない場合 (このプロパティが false に設定されている場合)、Excel はデータを下方向に 1 行シフトして、自動的にヘッダーを生成します。</span><span class="sxs-lookup"><span data-stu-id="ed36e-p105">Boolean value that indicates whether the range has column labels. If the source does not contain headers (i.e,. when this property set to false), Excel will automatically generate header shifting the data down by one row.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="dc96d-141">応答</span><span class="sxs-lookup"><span data-stu-id="dc96d-141">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ed36e-141">応答</span><span class="sxs-lookup"><span data-stu-id="ed36e-141">Response</span></span>
 
-<span data-ttu-id="dc96d-142">成功した場合、この`201 Created`メソッドは応答コードと、応答本文で[workbookTable](../resources/workbooktable.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="dc96d-142">If successful, this method returns `201 Created` response code and [workbookTable](../resources/workbooktable.md) object in the response body.</span></span>
+<span data-ttu-id="ed36e-142">成功した場合、この`201 Created`メソッドは応答コードと、応答本文で[workbookTable](../resources/workbooktable.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="ed36e-142">If successful, this method returns `201 Created` response code and [workbookTable](../resources/workbooktable.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="dc96d-143">例</span><span class="sxs-lookup"><span data-stu-id="dc96d-143">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="dc96d-144">要求</span><span class="sxs-lookup"><span data-stu-id="dc96d-144">Request</span></span>
-<span data-ttu-id="dc96d-145">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="dc96d-145">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="ed36e-143">例</span><span class="sxs-lookup"><span data-stu-id="ed36e-143">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="ed36e-144">要求</span><span class="sxs-lookup"><span data-stu-id="ed36e-144">Request</span></span>
+<span data-ttu-id="ed36e-145">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="ed36e-145">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="dc96d-146">プロトコル</span><span class="sxs-lookup"><span data-stu-id="dc96d-146">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="ed36e-146">プロトコル</span><span class="sxs-lookup"><span data-stu-id="ed36e-146">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_table_from_worksheet"
@@ -69,26 +69,26 @@ Content-length: 109
   "hasHeaders": false
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="dc96d-147">C#</span><span class="sxs-lookup"><span data-stu-id="dc96d-147">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="ed36e-147">C#</span><span class="sxs-lookup"><span data-stu-id="ed36e-147">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-table-from-worksheet-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="dc96d-148">Javascript</span><span class="sxs-lookup"><span data-stu-id="dc96d-148">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ed36e-148">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ed36e-148">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-table-from-worksheet-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="dc96d-149">目的-C</span><span class="sxs-lookup"><span data-stu-id="dc96d-149">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="ed36e-149">目的-C</span><span class="sxs-lookup"><span data-stu-id="ed36e-149">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-table-from-worksheet-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="dc96d-150">Java</span><span class="sxs-lookup"><span data-stu-id="dc96d-150">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="ed36e-150">Java</span><span class="sxs-lookup"><span data-stu-id="ed36e-150">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-table-from-worksheet-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="dc96d-151">応答</span><span class="sxs-lookup"><span data-stu-id="dc96d-151">Response</span></span>
-<span data-ttu-id="dc96d-p106">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="dc96d-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="ed36e-151">応答</span><span class="sxs-lookup"><span data-stu-id="ed36e-151">Response</span></span>
+<span data-ttu-id="ed36e-p106">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="ed36e-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

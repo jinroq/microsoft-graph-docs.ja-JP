@@ -5,26 +5,26 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 87413ae9fb0fc1f4ff0da0299ebc5c6f1c8f478c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d845711c54d219b269a99ccc15417e62f9d159bb
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36021509"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36320071"
 ---
-# <a name="get-sectiongroup"></a><span data-ttu-id="5a356-103">SectionGroup の取得</span><span class="sxs-lookup"><span data-stu-id="5a356-103">Get sectionGroup</span></span>
+# <a name="get-sectiongroup"></a><span data-ttu-id="76974-103">SectionGroup の取得</span><span class="sxs-lookup"><span data-stu-id="76974-103">Get sectionGroup</span></span>
 
-<span data-ttu-id="5a356-104">[SectionGroup](../resources/sectiongroup.md)オブジェクトのプロパティとリレーションシップを取得します。</span><span class="sxs-lookup"><span data-stu-id="5a356-104">Retrieve the properties and relationships of a [sectionGroup](../resources/sectiongroup.md) object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="5a356-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="5a356-105">Permissions</span></span>
-<span data-ttu-id="5a356-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5a356-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="76974-104">[SectionGroup](../resources/sectiongroup.md)オブジェクトのプロパティとリレーションシップを取得します。</span><span class="sxs-lookup"><span data-stu-id="76974-104">Retrieve the properties and relationships of a [sectionGroup](../resources/sectiongroup.md) object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="76974-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="76974-105">Permissions</span></span>
+<span data-ttu-id="76974-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="76974-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="5a356-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="5a356-108">Permission type</span></span>      | <span data-ttu-id="5a356-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="5a356-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="76974-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="76974-108">Permission type</span></span>      | <span data-ttu-id="76974-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="76974-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="5a356-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="5a356-110">Delegated (work or school account)</span></span> | <span data-ttu-id="5a356-111">Notes.Create、Notes.Read、Notes.ReadWrite、Notes.Read.All、Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5a356-111">Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All</span></span>    |
-|<span data-ttu-id="5a356-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="5a356-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5a356-113">Notes.Create、Notes.Read、Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5a356-113">Notes.Create, Notes.Read, Notes.ReadWrite</span></span>    |
-|<span data-ttu-id="5a356-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="5a356-114">Application</span></span> | <span data-ttu-id="5a356-115">Notes.Read.All、Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5a356-115">Notes.Read.All, Notes.ReadWrite.All</span></span> |
+|<span data-ttu-id="76974-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="76974-110">Delegated (work or school account)</span></span> | <span data-ttu-id="76974-111">Notes.Create、Notes.Read、Notes.ReadWrite、Notes.Read.All、Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="76974-111">Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All</span></span>    |
+|<span data-ttu-id="76974-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="76974-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="76974-113">Notes.Create、Notes.Read、Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="76974-113">Notes.Create, Notes.Read, Notes.ReadWrite</span></span>    |
+|<span data-ttu-id="76974-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="76974-114">Application</span></span> | <span data-ttu-id="76974-115">Notes.Read.All、Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="76974-115">Notes.Read.All, Notes.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="5a356-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="5a356-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="76974-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="76974-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onenote/sectionGroups/{id}
@@ -32,28 +32,28 @@ GET /users/{id | userPrincipalName}/onenote/sectionGroups/{id}
 GET /groups/{id}/onenote/sectionGroups/{id}
 GET /sites/{id}/onenote/sectionGroups/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="5a356-117">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="5a356-117">Optional query parameters</span></span>
-<span data-ttu-id="5a356-118">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="5a356-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="76974-117">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="76974-117">Optional query parameters</span></span>
+<span data-ttu-id="76974-118">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="76974-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-<span data-ttu-id="5a356-119">既定のクエリは`parentNotebook` 、、 `id` `name`、および`self`プロパティを展開して選択します。</span><span class="sxs-lookup"><span data-stu-id="5a356-119">The default query expands `parentNotebook` and selects its `id`, `name`, and `self` properties.</span></span> <span data-ttu-id="5a356-120">セクション`expand`グループの有効な値`parentNotebook`は`parentSectionGroup`、とです。</span><span class="sxs-lookup"><span data-stu-id="5a356-120">Valid `expand` values for section groups are `parentNotebook` and `parentSectionGroup`.</span></span>
+<span data-ttu-id="76974-119">既定のクエリは`parentNotebook` 、、 `id` `name`、および`self`プロパティを展開して選択します。</span><span class="sxs-lookup"><span data-stu-id="76974-119">The default query expands `parentNotebook` and selects its `id`, `name`, and `self` properties.</span></span> <span data-ttu-id="76974-120">セクション`expand`グループの有効な値`parentNotebook`は`parentSectionGroup`、とです。</span><span class="sxs-lookup"><span data-stu-id="76974-120">Valid `expand` values for section groups are `parentNotebook` and `parentSectionGroup`.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="5a356-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="5a356-121">Request headers</span></span>
-| <span data-ttu-id="5a356-122">名前</span><span class="sxs-lookup"><span data-stu-id="5a356-122">Name</span></span>       | <span data-ttu-id="5a356-123">型</span><span class="sxs-lookup"><span data-stu-id="5a356-123">Type</span></span> | <span data-ttu-id="5a356-124">説明</span><span class="sxs-lookup"><span data-stu-id="5a356-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="76974-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="76974-121">Request headers</span></span>
+| <span data-ttu-id="76974-122">名前</span><span class="sxs-lookup"><span data-stu-id="76974-122">Name</span></span>       | <span data-ttu-id="76974-123">型</span><span class="sxs-lookup"><span data-stu-id="76974-123">Type</span></span> | <span data-ttu-id="76974-124">説明</span><span class="sxs-lookup"><span data-stu-id="76974-124">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="5a356-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="5a356-125">Authorization</span></span>  | <span data-ttu-id="5a356-126">string</span><span class="sxs-lookup"><span data-stu-id="5a356-126">string</span></span>  | <span data-ttu-id="5a356-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="5a356-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="5a356-129">承諾</span><span class="sxs-lookup"><span data-stu-id="5a356-129">Accept</span></span> | <span data-ttu-id="5a356-130">string</span><span class="sxs-lookup"><span data-stu-id="5a356-130">string</span></span> | `application/json` |
+| <span data-ttu-id="76974-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="76974-125">Authorization</span></span>  | <span data-ttu-id="76974-126">string</span><span class="sxs-lookup"><span data-stu-id="76974-126">string</span></span>  | <span data-ttu-id="76974-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="76974-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="76974-129">承諾</span><span class="sxs-lookup"><span data-stu-id="76974-129">Accept</span></span> | <span data-ttu-id="76974-130">string</span><span class="sxs-lookup"><span data-stu-id="76974-130">string</span></span> | `application/json` |
 
-## <a name="request-body"></a><span data-ttu-id="5a356-131">要求本文</span><span class="sxs-lookup"><span data-stu-id="5a356-131">Request body</span></span>
-<span data-ttu-id="5a356-132">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="5a356-132">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="76974-131">要求本文</span><span class="sxs-lookup"><span data-stu-id="76974-131">Request body</span></span>
+<span data-ttu-id="76974-132">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="76974-132">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="5a356-133">応答</span><span class="sxs-lookup"><span data-stu-id="5a356-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="76974-133">応答</span><span class="sxs-lookup"><span data-stu-id="76974-133">Response</span></span>
 
-<span data-ttu-id="5a356-134">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [sectionGroup](../resources/sectiongroup.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="5a356-134">If successful, this method returns a `200 OK` response code and a [sectionGroup](../resources/sectiongroup.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="5a356-135">例</span><span class="sxs-lookup"><span data-stu-id="5a356-135">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="5a356-136">要求</span><span class="sxs-lookup"><span data-stu-id="5a356-136">Request</span></span>
-<span data-ttu-id="5a356-137">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="5a356-137">Here is an example of the request.</span></span>
+<span data-ttu-id="76974-134">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [sectionGroup](../resources/sectiongroup.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="76974-134">If successful, this method returns a `200 OK` response code and a [sectionGroup](../resources/sectiongroup.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="76974-135">例</span><span class="sxs-lookup"><span data-stu-id="76974-135">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="76974-136">要求</span><span class="sxs-lookup"><span data-stu-id="76974-136">Request</span></span>
+<span data-ttu-id="76974-137">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="76974-137">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="5a356-138">プロトコル</span><span class="sxs-lookup"><span data-stu-id="5a356-138">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="76974-138">プロトコル</span><span class="sxs-lookup"><span data-stu-id="76974-138">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_sectiongroup"
@@ -61,26 +61,26 @@ GET /sites/{id}/onenote/sectionGroups/{id}
 ```http
 GET https://graph.microsoft.com/v1.0/me/onenote/sectionGroups/{id}
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="5a356-139">C#</span><span class="sxs-lookup"><span data-stu-id="5a356-139">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="76974-139">C#</span><span class="sxs-lookup"><span data-stu-id="76974-139">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-sectiongroup-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="5a356-140">Javascript</span><span class="sxs-lookup"><span data-stu-id="5a356-140">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="76974-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="76974-140">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-sectiongroup-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="5a356-141">目的-C</span><span class="sxs-lookup"><span data-stu-id="5a356-141">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="76974-141">目的-C</span><span class="sxs-lookup"><span data-stu-id="76974-141">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-sectiongroup-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="5a356-142">Java</span><span class="sxs-lookup"><span data-stu-id="5a356-142">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="76974-142">Java</span><span class="sxs-lookup"><span data-stu-id="76974-142">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-sectiongroup-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="5a356-143">応答</span><span class="sxs-lookup"><span data-stu-id="5a356-143">Response</span></span>
-<span data-ttu-id="5a356-p104">以下は、応答の例です。注:ここに示す応答オブジェクトは切り詰めて簡略化されています。実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="5a356-p104">Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="76974-143">応答</span><span class="sxs-lookup"><span data-stu-id="76974-143">Response</span></span>
+<span data-ttu-id="76974-p104">以下は、応答の例です。注:ここに示す応答オブジェクトは切り詰めて簡略化されています。実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="76974-p104">Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

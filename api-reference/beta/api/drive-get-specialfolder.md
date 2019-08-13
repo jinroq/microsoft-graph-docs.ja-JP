@@ -6,85 +6,85 @@ title: 特別なフォルダーを取得する
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 557e5f8e3efe822c13fbcdaaad16c6be70fa6568
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f80250e884e804eafe1241d989a7850b5f9f1b7a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35957368"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36321233"
 ---
-# <a name="get-a-special-folder-by-name"></a><span data-ttu-id="7e0e4-103">名前で特殊フォルダーを取得する</span><span class="sxs-lookup"><span data-stu-id="7e0e4-103">Get a special folder by name</span></span>
+# <a name="get-a-special-folder-by-name"></a><span data-ttu-id="98d7d-103">名前で特殊フォルダーを取得する</span><span class="sxs-lookup"><span data-stu-id="98d7d-103">Get a special folder by name</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="7e0e4-104">特殊なコレクションを使用して、名前で特殊フォルダーにアクセスします。</span><span class="sxs-lookup"><span data-stu-id="7e0e4-104">Use the special collection to access a special folder by name.</span></span>
+<span data-ttu-id="98d7d-104">特殊なコレクションを使用して、名前で特殊フォルダーにアクセスします。</span><span class="sxs-lookup"><span data-stu-id="98d7d-104">Use the special collection to access a special folder by name.</span></span>
 
-<span data-ttu-id="7e0e4-p101">特殊フォルダーは、フォルダーを (ローカライズが必要となる) パスで探したり、ID を持つフォルダーを参照したりせずに、OneDrive の既知のフォルダーにアクセスするための、単純なエイリアスを提供します。特殊フォルダーの名前が変更されたりドライブ内の別の場所に移動されたりした場合でも、この構文はそのフォルダーを返し続けます。</span><span class="sxs-lookup"><span data-stu-id="7e0e4-p101">Special folders provide simple aliases to access well-known folders in OneDrive without the need to look up the folder by path (which would require localization), or reference the folder with an ID. If a special folder is renamed or moved to another location within the drive, this syntax will continue to find that folder.</span></span>
+<span data-ttu-id="98d7d-p101">特殊フォルダーは、フォルダーを (ローカライズが必要となる) パスで探したり、ID を持つフォルダーを参照したりせずに、OneDrive の既知のフォルダーにアクセスするための、単純なエイリアスを提供します。特殊フォルダーの名前が変更されたりドライブ内の別の場所に移動されたりした場合でも、この構文はそのフォルダーを返し続けます。</span><span class="sxs-lookup"><span data-stu-id="98d7d-p101">Special folders provide simple aliases to access well-known folders in OneDrive without the need to look up the folder by path (which would require localization), or reference the folder with an ID. If a special folder is renamed or moved to another location within the drive, this syntax will continue to find that folder.</span></span>
 
-<span data-ttu-id="7e0e4-p102">特殊なフォルダーは、まだ存在していない場合、アプリケーションが最初に書き込みを試行したときに自動的に作成されます。ユーザーが削除した場合は、もう一度書き込まれたときに再作成されます。</span><span class="sxs-lookup"><span data-stu-id="7e0e4-p102">Special folders are automatically created the first time an application attempts to write to one, if it doesn't already exist. If a user deletes one, it is recreated when written to again.</span></span>
+<span data-ttu-id="98d7d-p102">特殊なフォルダーは、まだ存在していない場合、アプリケーションが最初に書き込みを試行したときに自動的に作成されます。ユーザーが削除した場合は、もう一度書き込まれたときに再作成されます。</span><span class="sxs-lookup"><span data-stu-id="98d7d-p102">Special folders are automatically created the first time an application attempts to write to one, if it doesn't already exist. If a user deletes one, it is recreated when written to again.</span></span>
 
-> <span data-ttu-id="7e0e4-109">**注:** 読み取り専用のアクセス許可が付与されているときに、存在していない特殊フォルダーを要求すると、`403 Forbidden` エラーが返されます。</span><span class="sxs-lookup"><span data-stu-id="7e0e4-109">**Note:**  If you have read-only permissions and request a special folder that doesn't exist, you'll receive a `403 Forbidden` error.</span></span>
+> <span data-ttu-id="98d7d-109">**注:** 読み取り専用のアクセス許可が付与されているときに、存在していない特殊フォルダーを要求すると、`403 Forbidden` エラーが返されます。</span><span class="sxs-lookup"><span data-stu-id="98d7d-109">**Note:**  If you have read-only permissions and request a special folder that doesn't exist, you'll receive a `403 Forbidden` error.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="7e0e4-110">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="7e0e4-110">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="98d7d-110">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="98d7d-110">Permissions</span></span>
 
-<span data-ttu-id="7e0e4-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7e0e4-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="98d7d-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="98d7d-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|            <span data-ttu-id="7e0e4-113">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="7e0e4-113">Permission type</span></span>             |                                           <span data-ttu-id="7e0e4-114">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="7e0e4-114">Permissions (from least to most privileged)</span></span>                                            |
+|            <span data-ttu-id="98d7d-113">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="98d7d-113">Permission type</span></span>             |                                           <span data-ttu-id="98d7d-114">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="98d7d-114">Permissions (from least to most privileged)</span></span>                                            |
 | :------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------- |
-| <span data-ttu-id="7e0e4-115">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="7e0e4-115">Delegated (work or school account)</span></span>     | <span data-ttu-id="7e0e4-116">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7e0e4-116">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>                            |
-| <span data-ttu-id="7e0e4-117">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="7e0e4-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7e0e4-118">Files.ReadWrite.AppFolder、Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7e0e4-118">Files.ReadWrite.AppFolder, Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
-| <span data-ttu-id="7e0e4-119">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="7e0e4-119">Application</span></span>                            | <span data-ttu-id="7e0e4-120">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7e0e4-120">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>                                                         |
+| <span data-ttu-id="98d7d-115">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="98d7d-115">Delegated (work or school account)</span></span>     | <span data-ttu-id="98d7d-116">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="98d7d-116">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>                            |
+| <span data-ttu-id="98d7d-117">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="98d7d-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="98d7d-118">Files.ReadWrite.AppFolder、Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="98d7d-118">Files.ReadWrite.AppFolder, Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+| <span data-ttu-id="98d7d-119">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="98d7d-119">Application</span></span>                            | <span data-ttu-id="98d7d-120">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="98d7d-120">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>                                                         |
 
-## <a name="http-request"></a><span data-ttu-id="7e0e4-121">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="7e0e4-121">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="98d7d-121">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="98d7d-121">HTTP Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="7e0e4-122">プロトコル</span><span class="sxs-lookup"><span data-stu-id="7e0e4-122">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="98d7d-122">プロトコル</span><span class="sxs-lookup"><span data-stu-id="98d7d-122">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-special-folder", "scopes": "files.read" } -->
 
 ```http
 GET /me/drive/special/{name}
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="7e0e4-123">C#</span><span class="sxs-lookup"><span data-stu-id="7e0e4-123">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="98d7d-123">C#</span><span class="sxs-lookup"><span data-stu-id="98d7d-123">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-special-folder-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7e0e4-124">Javascript</span><span class="sxs-lookup"><span data-stu-id="7e0e4-124">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="98d7d-124">JavaScript</span><span class="sxs-lookup"><span data-stu-id="98d7d-124">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-special-folder-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="7e0e4-125">目的-C</span><span class="sxs-lookup"><span data-stu-id="7e0e4-125">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="98d7d-125">目的-C</span><span class="sxs-lookup"><span data-stu-id="98d7d-125">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-special-folder-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="7e0e4-126">Java</span><span class="sxs-lookup"><span data-stu-id="7e0e4-126">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="98d7d-126">Java</span><span class="sxs-lookup"><span data-stu-id="98d7d-126">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-special-folder-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="special-folder-names"></a><span data-ttu-id="7e0e4-127">特殊フォルダー名</span><span class="sxs-lookup"><span data-stu-id="7e0e4-127">Special folder names</span></span>
+### <a name="special-folder-names"></a><span data-ttu-id="98d7d-127">特殊フォルダー名</span><span class="sxs-lookup"><span data-stu-id="98d7d-127">Special folder names</span></span>
 
-<span data-ttu-id="7e0e4-128">以下の特殊フォルダー名は、OneDrive および OneDrive for Business で使用できます。</span><span class="sxs-lookup"><span data-stu-id="7e0e4-128">The follow special folder names are available in OneDrive and OneDrive for Business.</span></span>
+<span data-ttu-id="98d7d-128">以下の特殊フォルダー名は、OneDrive および OneDrive for Business で使用できます。</span><span class="sxs-lookup"><span data-stu-id="98d7d-128">The follow special folder names are available in OneDrive and OneDrive for Business.</span></span>
 
-| <span data-ttu-id="7e0e4-129">名前</span><span class="sxs-lookup"><span data-stu-id="7e0e4-129">Name</span></span>        | <span data-ttu-id="7e0e4-130">フォルダー ID</span><span class="sxs-lookup"><span data-stu-id="7e0e4-130">Folder id</span></span>    | <span data-ttu-id="7e0e4-131">説明</span><span class="sxs-lookup"><span data-stu-id="7e0e4-131">Description</span></span>                                                              |
+| <span data-ttu-id="98d7d-129">名前</span><span class="sxs-lookup"><span data-stu-id="98d7d-129">Name</span></span>        | <span data-ttu-id="98d7d-130">フォルダー ID</span><span class="sxs-lookup"><span data-stu-id="98d7d-130">Folder id</span></span>    | <span data-ttu-id="98d7d-131">説明</span><span class="sxs-lookup"><span data-stu-id="98d7d-131">Description</span></span>                                                              |
 |:------------|:-------------|:-------------------------------------------------------------------------|
-| <span data-ttu-id="7e0e4-132">Documents</span><span class="sxs-lookup"><span data-stu-id="7e0e4-132">Documents</span></span>   | `documents`  | <span data-ttu-id="7e0e4-133">ドキュメント フォルダー。</span><span class="sxs-lookup"><span data-stu-id="7e0e4-133">The Documents folder.</span></span>                                                    |
-| <span data-ttu-id="7e0e4-134">Photos</span><span class="sxs-lookup"><span data-stu-id="7e0e4-134">Photos</span></span>      | `photos`     | <span data-ttu-id="7e0e4-135">フォト フォルダー。</span><span class="sxs-lookup"><span data-stu-id="7e0e4-135">The Photos folder.</span></span>                                                       |
-| <span data-ttu-id="7e0e4-136">Camera Roll</span><span class="sxs-lookup"><span data-stu-id="7e0e4-136">Camera Roll</span></span> | `cameraroll` | <span data-ttu-id="7e0e4-137">カメラ ロールのバックアップ フォルダー。</span><span class="sxs-lookup"><span data-stu-id="7e0e4-137">The Camera Roll Backup folder.</span></span>                                           |
-| <span data-ttu-id="7e0e4-138">App Root</span><span class="sxs-lookup"><span data-stu-id="7e0e4-138">App Root</span></span>    | `approot`    | <span data-ttu-id="7e0e4-p104">そのアプリケーションの個人用フォルダー。通常は `/Apps/{Application Name}` 内</span><span class="sxs-lookup"><span data-stu-id="7e0e4-p104">The application's personal folder. Usually in `/Apps/{Application Name}`</span></span> |
-| <span data-ttu-id="7e0e4-141">Music</span><span class="sxs-lookup"><span data-stu-id="7e0e4-141">Music</span></span>       | `music`      | <span data-ttu-id="7e0e4-142">ミュージック フォルダー。</span><span class="sxs-lookup"><span data-stu-id="7e0e4-142">The Music folder.</span></span>                                                        |
+| <span data-ttu-id="98d7d-132">Documents</span><span class="sxs-lookup"><span data-stu-id="98d7d-132">Documents</span></span>   | `documents`  | <span data-ttu-id="98d7d-133">ドキュメント フォルダー。</span><span class="sxs-lookup"><span data-stu-id="98d7d-133">The Documents folder.</span></span>                                                    |
+| <span data-ttu-id="98d7d-134">Photos</span><span class="sxs-lookup"><span data-stu-id="98d7d-134">Photos</span></span>      | `photos`     | <span data-ttu-id="98d7d-135">フォト フォルダー。</span><span class="sxs-lookup"><span data-stu-id="98d7d-135">The Photos folder.</span></span>                                                       |
+| <span data-ttu-id="98d7d-136">Camera Roll</span><span class="sxs-lookup"><span data-stu-id="98d7d-136">Camera Roll</span></span> | `cameraroll` | <span data-ttu-id="98d7d-137">カメラ ロールのバックアップ フォルダー。</span><span class="sxs-lookup"><span data-stu-id="98d7d-137">The Camera Roll Backup folder.</span></span>                                           |
+| <span data-ttu-id="98d7d-138">App Root</span><span class="sxs-lookup"><span data-stu-id="98d7d-138">App Root</span></span>    | `approot`    | <span data-ttu-id="98d7d-p104">そのアプリケーションの個人用フォルダー。通常は `/Apps/{Application Name}` 内</span><span class="sxs-lookup"><span data-stu-id="98d7d-p104">The application's personal folder. Usually in `/Apps/{Application Name}`</span></span> |
+| <span data-ttu-id="98d7d-141">Music</span><span class="sxs-lookup"><span data-stu-id="98d7d-141">Music</span></span>       | `music`      | <span data-ttu-id="98d7d-142">ミュージック フォルダー。</span><span class="sxs-lookup"><span data-stu-id="98d7d-142">The Music folder.</span></span>                                                        |
 
 
-### <a name="optional-query-parameters"></a><span data-ttu-id="7e0e4-143">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="7e0e4-143">Optional query parameters</span></span>
+### <a name="optional-query-parameters"></a><span data-ttu-id="98d7d-143">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="98d7d-143">Optional query parameters</span></span>
 
-<span data-ttu-id="7e0e4-144">このメソッドは、応答をカスタマイズするための `$expand` と `$select` の [OData クエリ パラメーター](/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="7e0e4-144">This method supports the `$expand` and `$select` [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
+<span data-ttu-id="98d7d-144">このメソッドは、応答をカスタマイズするための `$expand` と `$select` の [OData クエリ パラメーター](/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="98d7d-144">This method supports the `$expand` and `$select` [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
 
-## <a name="response"></a><span data-ttu-id="7e0e4-145">応答</span><span class="sxs-lookup"><span data-stu-id="7e0e4-145">Response</span></span>
+## <a name="response"></a><span data-ttu-id="98d7d-145">応答</span><span class="sxs-lookup"><span data-stu-id="98d7d-145">Response</span></span>
 
-<span data-ttu-id="7e0e4-146">このメソッドは `200 OK` 応答コードと、応答本文で [driveItem](../resources/driveitem.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="7e0e4-146">This method returns a `200 OK` response code and a [driveItem](../resources/driveitem.md) object in the response body.</span></span>
+<span data-ttu-id="98d7d-146">このメソッドは `200 OK` 応答コードと、応答本文で [driveItem](../resources/driveitem.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="98d7d-146">This method returns a `200 OK` response code and a [driveItem](../resources/driveitem.md) object in the response body.</span></span>
 
-<span data-ttu-id="7e0e4-147">プロパティや driveItem 上のリレーションシップへの付加的な呼び出しを伴う、特殊フォルダーのインラインのアドレス指定のメソッドを使用できます。</span><span class="sxs-lookup"><span data-stu-id="7e0e4-147">You can use this method of addressing a special folder inline with additional calls to properties or relationships on the driveItem.</span></span>
+<span data-ttu-id="98d7d-147">プロパティや driveItem 上のリレーションシップへの付加的な呼び出しを伴う、特殊フォルダーのインラインのアドレス指定のメソッドを使用できます。</span><span class="sxs-lookup"><span data-stu-id="98d7d-147">You can use this method of addressing a special folder inline with additional calls to properties or relationships on the driveItem.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -102,39 +102,39 @@ Content-type: application/json
 }
 ```
 
-## <a name="get-children-of-a-special-folder"></a><span data-ttu-id="7e0e4-148">特殊フォルダーの子を取得します。</span><span class="sxs-lookup"><span data-stu-id="7e0e4-148">Get children of a special folder</span></span>
+## <a name="get-children-of-a-special-folder"></a><span data-ttu-id="98d7d-148">特殊フォルダーの子を取得します。</span><span class="sxs-lookup"><span data-stu-id="98d7d-148">Get children of a special folder</span></span>
 
-<span data-ttu-id="7e0e4-149">特殊フォルダーの子を要求する場合は、`children` コレクションを要求するか、子コレクションを展開する [expand](/graph/query-parameters) オプションを使用します。</span><span class="sxs-lookup"><span data-stu-id="7e0e4-149">To request the children of a special folder, you can request the `children` collection or use the [expand](/graph/query-parameters) option to expand the children collection.</span></span>
+<span data-ttu-id="98d7d-149">特殊フォルダーの子を要求する場合は、`children` コレクションを要求するか、子コレクションを展開する [expand](/graph/query-parameters) オプションを使用します。</span><span class="sxs-lookup"><span data-stu-id="98d7d-149">To request the children of a special folder, you can request the `children` collection or use the [expand](/graph/query-parameters) option to expand the children collection.</span></span>
 
-### <a name="http-request"></a><span data-ttu-id="7e0e4-150">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="7e0e4-150">HTTP request</span></span>
+### <a name="http-request"></a><span data-ttu-id="98d7d-150">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="98d7d-150">HTTP request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="7e0e4-151">プロトコル</span><span class="sxs-lookup"><span data-stu-id="7e0e4-151">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="98d7d-151">プロトコル</span><span class="sxs-lookup"><span data-stu-id="98d7d-151">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-special-children", "scopes": "files.read" } -->
 
 ```http
 GET /me/drive/special/{name}/children
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="7e0e4-152">C#</span><span class="sxs-lookup"><span data-stu-id="7e0e4-152">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="98d7d-152">C#</span><span class="sxs-lookup"><span data-stu-id="98d7d-152">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-special-children-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7e0e4-153">Javascript</span><span class="sxs-lookup"><span data-stu-id="7e0e4-153">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="98d7d-153">JavaScript</span><span class="sxs-lookup"><span data-stu-id="98d7d-153">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-special-children-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="7e0e4-154">目的-C</span><span class="sxs-lookup"><span data-stu-id="7e0e4-154">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="98d7d-154">目的-C</span><span class="sxs-lookup"><span data-stu-id="98d7d-154">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-special-children-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="7e0e4-155">Java</span><span class="sxs-lookup"><span data-stu-id="7e0e4-155">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="98d7d-155">Java</span><span class="sxs-lookup"><span data-stu-id="98d7d-155">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-special-children-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="7e0e4-156">応答</span><span class="sxs-lookup"><span data-stu-id="7e0e4-156">Response</span></span>
+### <a name="response"></a><span data-ttu-id="98d7d-156">応答</span><span class="sxs-lookup"><span data-stu-id="98d7d-156">Response</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "isCollection": true, "truncated": true} -->
 
@@ -152,11 +152,11 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a><span data-ttu-id="7e0e4-157">注釈</span><span class="sxs-lookup"><span data-stu-id="7e0e4-157">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="98d7d-157">注釈</span><span class="sxs-lookup"><span data-stu-id="98d7d-157">Remarks</span></span>
 
-> <span data-ttu-id="7e0e4-158">**注:** `specialFolder` ファセットを伴う DriveItem は、アイテムが特殊フォルダーであり、`special` コレクション経由でアクセスできることを示しています。</span><span class="sxs-lookup"><span data-stu-id="7e0e4-158">**Note:** DriveItems with the `specialFolder` facet indicate the item is a special folder and can be accessed via the `special` collection.</span></span>
+> <span data-ttu-id="98d7d-158">**注:** `specialFolder` ファセットを伴う DriveItem は、アイテムが特殊フォルダーであり、`special` コレクション経由でアクセスできることを示しています。</span><span class="sxs-lookup"><span data-stu-id="98d7d-158">**Note:** DriveItems with the `specialFolder` facet indicate the item is a special folder and can be accessed via the `special` collection.</span></span>
 
-<span data-ttu-id="7e0e4-159">アプリに読み取り専用アクセス許可が付与されている場合、特殊フォルダーまたは特殊フォルダーの子を取得する要求は、その特殊フォルダーが存在していないと、`404 Not Found` エラーまたは `403 Forbidden` エラーで失敗します。</span><span class="sxs-lookup"><span data-stu-id="7e0e4-159">If your app has read-only permissions, the request to get a special folder or the children of a special folder may fail with a `404 Not Found` or a `403 Forbidden` error if the special folder does not already exist.</span></span>
+<span data-ttu-id="98d7d-159">アプリに読み取り専用アクセス許可が付与されている場合、特殊フォルダーまたは特殊フォルダーの子を取得する要求は、その特殊フォルダーが存在していないと、`404 Not Found` エラーまたは `403 Forbidden` エラーで失敗します。</span><span class="sxs-lookup"><span data-stu-id="98d7d-159">If your app has read-only permissions, the request to get a special folder or the children of a special folder may fail with a `404 Not Found` or a `403 Forbidden` error if the special folder does not already exist.</span></span>
 
 <!--
 {

@@ -5,49 +5,49 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c8828daf4243ea7bc51a9492944e7fb0a0ed0bd2
-ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
+ms.openlocfilehash: 3e837dae5d53d6cc5bd796f1044c614e6b798d51
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36172744"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36319131"
 ---
-# <a name="reset-accessreview"></a><span data-ttu-id="f4b5e-105">AccessReview をリセットする</span><span class="sxs-lookup"><span data-stu-id="f4b5e-105">Reset accessReview</span></span>
+# <a name="reset-accessreview"></a><span data-ttu-id="ac5a2-105">AccessReview をリセットする</span><span class="sxs-lookup"><span data-stu-id="ac5a2-105">Reset accessReview</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f4b5e-106">Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、現在アクティブな[accessreview](../resources/accessreview.md)の決定をリセットします。</span><span class="sxs-lookup"><span data-stu-id="f4b5e-106">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, reset the decisions of a currently active [accessReview](../resources/accessreview.md).</span></span>  <span data-ttu-id="f4b5e-107">ターゲットオブジェクトは、1回限りのアクセスレビュー、または定期的なアクセスレビューのインスタンスのいずれかになります。</span><span class="sxs-lookup"><span data-stu-id="f4b5e-107">The target object can be either a one-time access review, or an instance of a recurring access review.</span></span>  <span data-ttu-id="f4b5e-108">以前の決定は記録されなくなりますが、レビューアーは引き続き決定を更新できます。</span><span class="sxs-lookup"><span data-stu-id="f4b5e-108">Previous decisions are no longer recorded, but reviewers can continue to update decisions.</span></span>
+<span data-ttu-id="ac5a2-106">Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、現在アクティブな[accessreview](../resources/accessreview.md)の決定をリセットします。</span><span class="sxs-lookup"><span data-stu-id="ac5a2-106">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, reset the decisions of a currently active [accessReview](../resources/accessreview.md).</span></span>  <span data-ttu-id="ac5a2-107">ターゲットオブジェクトは、1回限りのアクセスレビュー、または定期的なアクセスレビューのインスタンスのいずれかになります。</span><span class="sxs-lookup"><span data-stu-id="ac5a2-107">The target object can be either a one-time access review, or an instance of a recurring access review.</span></span>  <span data-ttu-id="ac5a2-108">以前の決定は記録されなくなりますが、レビューアーは引き続き決定を更新できます。</span><span class="sxs-lookup"><span data-stu-id="ac5a2-108">Previous decisions are no longer recorded, but reviewers can continue to update decisions.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f4b5e-109">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="f4b5e-109">Permissions</span></span>
-<span data-ttu-id="f4b5e-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f4b5e-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="ac5a2-109">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="ac5a2-109">Permissions</span></span>
+<span data-ttu-id="ac5a2-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ac5a2-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f4b5e-112">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="f4b5e-112">Permission type</span></span>                        | <span data-ttu-id="f4b5e-113">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="f4b5e-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ac5a2-112">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="ac5a2-112">Permission type</span></span>                        | <span data-ttu-id="ac5a2-113">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="ac5a2-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f4b5e-114">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="f4b5e-114">Delegated (work or school account)</span></span>     | <span data-ttu-id="f4b5e-115">AccessReview を行って、AccessReview を行います。</span><span class="sxs-lookup"><span data-stu-id="f4b5e-115">AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All</span></span> |
-|<span data-ttu-id="f4b5e-116">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="f4b5e-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f4b5e-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f4b5e-117">Not supported.</span></span> |
-|<span data-ttu-id="f4b5e-118">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="f4b5e-118">Application</span></span>                            | <span data-ttu-id="f4b5e-119">AccessReview の構成</span><span class="sxs-lookup"><span data-stu-id="f4b5e-119">AccessReview.ReadWrite.Membership</span></span> |
+|<span data-ttu-id="ac5a2-114">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="ac5a2-114">Delegated (work or school account)</span></span>     | <span data-ttu-id="ac5a2-115">AccessReview を行って、AccessReview を行います。</span><span class="sxs-lookup"><span data-stu-id="ac5a2-115">AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All</span></span> |
+|<span data-ttu-id="ac5a2-116">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="ac5a2-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ac5a2-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="ac5a2-117">Not supported.</span></span> |
+|<span data-ttu-id="ac5a2-118">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="ac5a2-118">Application</span></span>                            | <span data-ttu-id="ac5a2-119">AccessReview の構成</span><span class="sxs-lookup"><span data-stu-id="ac5a2-119">AccessReview.ReadWrite.Membership</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f4b5e-120">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="f4b5e-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ac5a2-120">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="ac5a2-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /accessReviews('<id>')/resetDecisions()
 ```
-## <a name="request-headers"></a><span data-ttu-id="f4b5e-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f4b5e-121">Request headers</span></span>
-| <span data-ttu-id="f4b5e-122">名前</span><span class="sxs-lookup"><span data-stu-id="f4b5e-122">Name</span></span>         | <span data-ttu-id="f4b5e-123">型</span><span class="sxs-lookup"><span data-stu-id="f4b5e-123">Type</span></span>        | <span data-ttu-id="f4b5e-124">説明</span><span class="sxs-lookup"><span data-stu-id="f4b5e-124">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="ac5a2-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="ac5a2-121">Request headers</span></span>
+| <span data-ttu-id="ac5a2-122">名前</span><span class="sxs-lookup"><span data-stu-id="ac5a2-122">Name</span></span>         | <span data-ttu-id="ac5a2-123">型</span><span class="sxs-lookup"><span data-stu-id="ac5a2-123">Type</span></span>        | <span data-ttu-id="ac5a2-124">説明</span><span class="sxs-lookup"><span data-stu-id="ac5a2-124">Description</span></span> |
 |:-------------|:------------|:------------|
-| <span data-ttu-id="f4b5e-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="f4b5e-125">Authorization</span></span> | <span data-ttu-id="f4b5e-126">string</span><span class="sxs-lookup"><span data-stu-id="f4b5e-126">string</span></span> | <span data-ttu-id="f4b5e-p104">ベアラー \{トークン\}。必須。</span><span class="sxs-lookup"><span data-stu-id="f4b5e-p104">Bearer \{token\}. Required.</span></span> |
+| <span data-ttu-id="ac5a2-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="ac5a2-125">Authorization</span></span> | <span data-ttu-id="ac5a2-126">string</span><span class="sxs-lookup"><span data-stu-id="ac5a2-126">string</span></span> | <span data-ttu-id="ac5a2-p104">ベアラー \{トークン\}。必須。</span><span class="sxs-lookup"><span data-stu-id="ac5a2-p104">Bearer \{token\}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f4b5e-129">要求本文</span><span class="sxs-lookup"><span data-stu-id="f4b5e-129">Request body</span></span>
-<span data-ttu-id="f4b5e-130">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="f4b5e-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ac5a2-129">要求本文</span><span class="sxs-lookup"><span data-stu-id="ac5a2-129">Request body</span></span>
+<span data-ttu-id="ac5a2-130">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="ac5a2-130">Do not supply a request body for this method.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="f4b5e-131">応答</span><span class="sxs-lookup"><span data-stu-id="f4b5e-131">Response</span></span>
-<span data-ttu-id="f4b5e-p105">成功した場合、このメソッドは `204, No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="f4b5e-p105">If successful, this method returns a `204, No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="ac5a2-131">応答</span><span class="sxs-lookup"><span data-stu-id="ac5a2-131">Response</span></span>
+<span data-ttu-id="ac5a2-p105">成功した場合、このメソッドは `204, No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="ac5a2-p105">If successful, this method returns a `204, No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f4b5e-134">例</span><span class="sxs-lookup"><span data-stu-id="f4b5e-134">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="f4b5e-135">要求</span><span class="sxs-lookup"><span data-stu-id="f4b5e-135">Request</span></span>
+## <a name="example"></a><span data-ttu-id="ac5a2-134">例</span><span class="sxs-lookup"><span data-stu-id="ac5a2-134">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="ac5a2-135">要求</span><span class="sxs-lookup"><span data-stu-id="ac5a2-135">Request</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="f4b5e-136">プロトコル</span><span class="sxs-lookup"><span data-stu-id="f4b5e-136">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="ac5a2-136">プロトコル</span><span class="sxs-lookup"><span data-stu-id="ac5a2-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "reset_accessReview"
@@ -55,26 +55,26 @@ POST /accessReviews('<id>')/resetDecisions()
 ```http
 POST https://graph.microsoft.com/beta/accessReviews/2975E9B5-44CE-4E71-93D3-30F03B5AA992/resetDecisions
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="f4b5e-137">C#</span><span class="sxs-lookup"><span data-stu-id="f4b5e-137">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="ac5a2-137">C#</span><span class="sxs-lookup"><span data-stu-id="ac5a2-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/reset-accessreview-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f4b5e-138">Javascript</span><span class="sxs-lookup"><span data-stu-id="f4b5e-138">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ac5a2-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ac5a2-138">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/reset-accessreview-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="f4b5e-139">目的-C</span><span class="sxs-lookup"><span data-stu-id="f4b5e-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="ac5a2-139">目的-C</span><span class="sxs-lookup"><span data-stu-id="ac5a2-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reset-accessreview-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="f4b5e-140">Java</span><span class="sxs-lookup"><span data-stu-id="f4b5e-140">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="ac5a2-140">Java</span><span class="sxs-lookup"><span data-stu-id="ac5a2-140">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/reset-accessreview-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="f4b5e-141">応答</span><span class="sxs-lookup"><span data-stu-id="f4b5e-141">Response</span></span>
-><span data-ttu-id="f4b5e-p106">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="f4b5e-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="ac5a2-141">応答</span><span class="sxs-lookup"><span data-stu-id="ac5a2-141">Response</span></span>
+><span data-ttu-id="ac5a2-p106">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="ac5a2-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

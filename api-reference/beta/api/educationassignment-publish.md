@@ -5,51 +5,51 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 077fe4d57dfc20bb858a964f4be017ec97428955
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a425562009c66c1a406129361a8bc1b2230cf47e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955710"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36320904"
 ---
-# <a name="educationassignment-publish"></a><span data-ttu-id="a4961-106">educationAssignment: 発行</span><span class="sxs-lookup"><span data-stu-id="a4961-106">educationAssignment: publish</span></span>
+# <a name="educationassignment-publish"></a><span data-ttu-id="3c064-106">educationAssignment: 発行</span><span class="sxs-lookup"><span data-stu-id="3c064-106">educationAssignment: publish</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a4961-107">この操作により、割り当ての状態が元の下書き状態から発行済みの状態に変更されます。</span><span class="sxs-lookup"><span data-stu-id="a4961-107">This action changes the state of an assignment from its original draft status to the published status.</span></span> <span data-ttu-id="a4961-108">この呼び出しを行うことができるのは、クラス内の教師だけです。</span><span class="sxs-lookup"><span data-stu-id="a4961-108">Only a teacher in the class can make this call.</span></span> <span data-ttu-id="a4961-109">割り当てが下書き状態になっている場合、学生には割り当てが表示されず、送信オブジェクトもありません。</span><span class="sxs-lookup"><span data-stu-id="a4961-109">When an assignment is in draft status, students will not see the assignment, nor will there be any submission objects.</span></span> <span data-ttu-id="a4961-110">この API を呼び出すと、送信オブジェクトが作成され、学生のリストに割り当てられます。</span><span class="sxs-lookup"><span data-stu-id="a4961-110">When you call this API, submission objects are created and the assignment appears in the student's list.</span></span>
+<span data-ttu-id="3c064-107">この操作により、割り当ての状態が元の下書き状態から発行済みの状態に変更されます。</span><span class="sxs-lookup"><span data-stu-id="3c064-107">This action changes the state of an assignment from its original draft status to the published status.</span></span> <span data-ttu-id="3c064-108">この呼び出しを行うことができるのは、クラス内の教師だけです。</span><span class="sxs-lookup"><span data-stu-id="3c064-108">Only a teacher in the class can make this call.</span></span> <span data-ttu-id="3c064-109">割り当てが下書き状態になっている場合、学生には割り当てが表示されず、送信オブジェクトもありません。</span><span class="sxs-lookup"><span data-stu-id="3c064-109">When an assignment is in draft status, students will not see the assignment, nor will there be any submission objects.</span></span> <span data-ttu-id="3c064-110">この API を呼び出すと、送信オブジェクトが作成され、学生のリストに割り当てられます。</span><span class="sxs-lookup"><span data-stu-id="3c064-110">When you call this API, submission objects are created and the assignment appears in the student's list.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a4961-111">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="a4961-111">Permissions</span></span>
-<span data-ttu-id="a4961-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a4961-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="3c064-111">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="3c064-111">Permissions</span></span>
+<span data-ttu-id="3c064-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="3c064-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a4961-114">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="a4961-114">Permission type</span></span>      | <span data-ttu-id="a4961-115">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="a4961-115">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="3c064-114">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="3c064-114">Permission type</span></span>      | <span data-ttu-id="3c064-115">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="3c064-115">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a4961-116">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="a4961-116">Delegated (work or school account)</span></span> |  <span data-ttu-id="a4961-117">EduAssignments の読み取り/書き込みの EduAssignments</span><span class="sxs-lookup"><span data-stu-id="a4961-117">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span>  |
-|<span data-ttu-id="a4961-118">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="a4961-118">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="a4961-119">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a4961-119">Not supported.</span></span>  |
-|<span data-ttu-id="a4961-120">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="a4961-120">Application</span></span> | <span data-ttu-id="a4961-121">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a4961-121">Not supported.</span></span> | 
+|<span data-ttu-id="3c064-116">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="3c064-116">Delegated (work or school account)</span></span> |  <span data-ttu-id="3c064-117">EduAssignments の読み取り/書き込みの EduAssignments</span><span class="sxs-lookup"><span data-stu-id="3c064-117">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span>  |
+|<span data-ttu-id="3c064-118">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="3c064-118">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="3c064-119">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="3c064-119">Not supported.</span></span>  |
+|<span data-ttu-id="3c064-120">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="3c064-120">Application</span></span> | <span data-ttu-id="3c064-121">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="3c064-121">Not supported.</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="a4961-122">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="a4961-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3c064-122">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="3c064-122">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /education/classes/{id}/assignments/{id}/publish
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="a4961-123">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="a4961-123">Request headers</span></span>
-| <span data-ttu-id="a4961-124">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="a4961-124">Header</span></span>       | <span data-ttu-id="a4961-125">値</span><span class="sxs-lookup"><span data-stu-id="a4961-125">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="3c064-123">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="3c064-123">Request headers</span></span>
+| <span data-ttu-id="3c064-124">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="3c064-124">Header</span></span>       | <span data-ttu-id="3c064-125">値</span><span class="sxs-lookup"><span data-stu-id="3c064-125">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="a4961-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="a4961-126">Authorization</span></span>  | <span data-ttu-id="a4961-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="a4961-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="3c064-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="3c064-126">Authorization</span></span>  | <span data-ttu-id="3c064-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="3c064-p104">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="a4961-129">要求本文</span><span class="sxs-lookup"><span data-stu-id="a4961-129">Request body</span></span>
-<span data-ttu-id="a4961-130">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="a4961-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="3c064-129">要求本文</span><span class="sxs-lookup"><span data-stu-id="3c064-129">Request body</span></span>
+<span data-ttu-id="3c064-130">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="3c064-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a4961-131">応答</span><span class="sxs-lookup"><span data-stu-id="a4961-131">Response</span></span>
-<span data-ttu-id="a4961-p105">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="a4961-p105">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="3c064-131">応答</span><span class="sxs-lookup"><span data-stu-id="3c064-131">Response</span></span>
+<span data-ttu-id="3c064-p105">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="3c064-p105">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a4961-134">例</span><span class="sxs-lookup"><span data-stu-id="a4961-134">Example</span></span>
-<span data-ttu-id="a4961-135">次の例は、この API を呼び出す方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="a4961-135">The following example shows how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="a4961-136">要求</span><span class="sxs-lookup"><span data-stu-id="a4961-136">Request</span></span>
-<span data-ttu-id="a4961-137">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="a4961-137">The following is an example of a request.</span></span>
+## <a name="example"></a><span data-ttu-id="3c064-134">例</span><span class="sxs-lookup"><span data-stu-id="3c064-134">Example</span></span>
+<span data-ttu-id="3c064-135">次の例は、この API を呼び出す方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="3c064-135">The following example shows how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="3c064-136">要求</span><span class="sxs-lookup"><span data-stu-id="3c064-136">Request</span></span>
+<span data-ttu-id="3c064-137">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="3c064-137">The following is an example of a request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="a4961-138">プロトコル</span><span class="sxs-lookup"><span data-stu-id="a4961-138">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="3c064-138">プロトコル</span><span class="sxs-lookup"><span data-stu-id="3c064-138">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "educationassignment_publish"
@@ -57,27 +57,27 @@ POST /education/classes/{id}/assignments/{id}/publish
 ```http
 POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/publish
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="a4961-139">C#</span><span class="sxs-lookup"><span data-stu-id="a4961-139">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="3c064-139">C#</span><span class="sxs-lookup"><span data-stu-id="3c064-139">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/educationassignment-publish-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a4961-140">Javascript</span><span class="sxs-lookup"><span data-stu-id="a4961-140">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="3c064-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3c064-140">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/educationassignment-publish-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="a4961-141">目的-C</span><span class="sxs-lookup"><span data-stu-id="a4961-141">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="3c064-141">目的-C</span><span class="sxs-lookup"><span data-stu-id="3c064-141">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/educationassignment-publish-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="a4961-142">Java</span><span class="sxs-lookup"><span data-stu-id="a4961-142">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="3c064-142">Java</span><span class="sxs-lookup"><span data-stu-id="3c064-142">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/educationassignment-publish-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="a4961-143">応答</span><span class="sxs-lookup"><span data-stu-id="a4961-143">Response</span></span>
-<span data-ttu-id="a4961-144">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="a4961-144">The following is an example of a response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="3c064-143">応答</span><span class="sxs-lookup"><span data-stu-id="3c064-143">Response</span></span>
+<span data-ttu-id="3c064-144">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="3c064-144">The following is an example of a response.</span></span> 
 
 <!-- {
   "blockType": "response",
