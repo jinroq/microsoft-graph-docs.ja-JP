@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: aae50d5061e2b3836801c06337678d4d5082c000
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1cc9a4a929b7b563322e8e2a50855592006ca323
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000635"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368150"
 ---
 # <a name="ratingunitedstatesmoviestype-enum-type"></a>ratingUnitedStatesMoviesType 列挙型
 
@@ -30,8 +30,6 @@ ms.locfileid: "36000635"
 |parentalGuidance13|2/4|PG13 では、いくつかの素材が13の子に対して不適切な場合があります。|
 |しか|5|R、17の下の閲覧者には、親または成人のガーディアンが必要です|
 |保護者|シックス|NC17、大人のみ|
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 2aeed3a074f74ff70421912648c7e3541bff21d7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f5d6fbdcc26dd071387ae3a66d46fafa75c68758
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001181"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36356943"
 ---
 # <a name="iosnotificationalerttype-enum-type"></a>iosNotificationAlertType 列挙型
 
@@ -27,8 +27,6 @@ ms.locfileid: "36001181"
 |尺|1-d|尺.|
 |ポップアップ|pbm-2|ポップアップ.|
 |none|1/3|なし。|
-
-
 
 
 

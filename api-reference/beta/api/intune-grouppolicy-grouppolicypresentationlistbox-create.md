@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6a735edcafcdea881ca0f0291694a7a89a9f8c4a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c895b9d1e935d9e490d4685f3ea9a8669ae679aa
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35989533"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36357804"
 ---
 # <a name="create-grouppolicypresentationlistbox"></a>GroupPolicyPresentationListBox の作成
 
@@ -27,7 +27,7 @@ ms.locfileid: "35989533"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementServiceConfig.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -95,6 +95,7 @@ Content-Length: 278
   "valuePrefix": "Value Prefix value"
 }
 ```
+
 
 
 

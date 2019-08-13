@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 77480c88e6fd210704a47f60293081b1ede2e6ca
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bb4fd7e4a2cded97bdd5d61921cd1819908a4d77
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005934"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36366778"
 ---
 # <a name="iosvppappassignmentsettings-resource-type"></a>iosVppAppAssignmentSettings リソースの種類
 
@@ -28,6 +28,7 @@ ms.locfileid: "36005934"
 |:---|:---|:---|
 |useDeviceLicensing|ブール型 (Boolean)|デバイスのライセンスを使用するかどうか。|
 |vpnConfigurationId|文字列型 (String)|このアプリに適用するための VPN 構成 ID。|
+|uninstallOnDeviceRemoval|Boolean|デバイスが Intune から削除されたときにアプリをアンインストールするかどうかを指定します。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -43,11 +44,10 @@ ms.locfileid: "36005934"
 {
   "@odata.type": "#microsoft.graph.iosVppAppAssignmentSettings",
   "useDeviceLicensing": true,
-  "vpnConfigurationId": "String"
+  "vpnConfigurationId": "String",
+  "uninstallOnDeviceRemoval": true
 }
 ```
-
-
 
 
 

@@ -4,12 +4,13 @@ description: DeviceAppManagementTask オブジェクトのプロパティとリ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 49cf3daa01db58deedf6b929b2dcbea9dcf47d2f
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 8adf6cff47c3b59943fd7f391d6029080a576f78
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "35002330"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36351708"
 ---
 # <a name="get-deviceappmanagementtask"></a>DeviceAppManagementTask の取得
 
@@ -26,7 +27,7 @@ ms.locfileid: "35002330"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -84,6 +85,7 @@ Content-Length: 551
   }
 }
 ```
+
 
 
 

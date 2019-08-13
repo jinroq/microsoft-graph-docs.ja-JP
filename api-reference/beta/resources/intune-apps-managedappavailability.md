@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 05556241a47fe95c296d7f09232b70dbd641ba0d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 156bf3b030e6ad0b6f0a91cb52be8a2e70452ab4
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012535"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36365868"
 ---
 # <a name="managedappavailability-enum-type"></a>managedAppAvailability 列挙型
 
@@ -25,8 +25,6 @@ ms.locfileid: "36012535"
 |:---|:---|:---|
 |全体|.0|すべてのテナントに対してグローバルに利用可能なアプリ。|
 |lineOfBusiness|1-d|組織にとってプライベートな基幹業務アプリ。|
-
-
 
 
 

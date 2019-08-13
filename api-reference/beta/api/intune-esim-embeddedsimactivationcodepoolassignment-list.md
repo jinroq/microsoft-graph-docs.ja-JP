@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e59c4c73e1b9f4d87fc1ad70e5a704697616bec0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 46c82881b3a3571b13677d66fab1207b44ce0f5d
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35995231"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36355830"
 ---
 # <a name="list-embeddedsimactivationcodepoolassignments"></a>リスト embeddedSIMActivationCodePoolAssignments
 
@@ -27,7 +27,7 @@ ms.locfileid: "35995231"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -77,6 +77,7 @@ Content-Length: 281
   ]
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7b6d52ad6fd1f983dec8cdedd9a9dbc1642bffb1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2751aa1a0f8982473f71bba1b0e965e454c5e0d5
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005423"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36366736"
 ---
 # <a name="macosvppapp-resource-type"></a>macOsVppApp リソースの種類
 
@@ -143,8 +143,6 @@ MacOS Volume 購入プログラム (VPP) アプリのプロパティと継承さ
   ]
 }
 ```
-
-
 
 
 

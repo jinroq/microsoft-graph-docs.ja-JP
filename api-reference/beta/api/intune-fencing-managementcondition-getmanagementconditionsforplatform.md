@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 638d6e968f74f5abc05fe0897021c9b6ada54d68
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 75df9f719a33fb356dfd632fc20f9e7ddf5cbb0e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35990359"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36355613"
 ---
 # <a name="getmanagementconditionsforplatform-function"></a>getManagementConditionsForPlatform 関数
 
@@ -27,7 +27,7 @@ ms.locfileid: "35990359"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -91,6 +91,7 @@ Content-Length: 504
   ]
 }
 ```
+
 
 
 

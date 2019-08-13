@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6e9c13ce0acece82e7a890fd021dac4ab5c7fbb0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fc05be47c2adc0764a2cdb1e69f7ec11413320cc
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004387"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36357195"
 ---
 # <a name="emailsyncduration-enum-type"></a>emailSyncDuration 列挙型
 
@@ -30,8 +30,6 @@ ms.locfileid: "36004387"
 |2週間|2/4|2週間のメールを同期します。|
 |オンライン|5|1か月分のメールを同期します。|
 |無制限|シックス|電子メールの期間を無制限に同期します。|
-
-
 
 
 

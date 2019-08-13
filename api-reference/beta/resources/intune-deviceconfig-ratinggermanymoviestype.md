@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 81db226d6cc929b559ec5af4dc82b9dcb070d18e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1fd7a924bde9820f3420926dba0cf2d416729ddb
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969829"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368290"
 ---
 # <a name="ratinggermanymoviestype-enum-type"></a>ratingGermanyMoviesType 列挙型
 
@@ -30,8 +30,6 @@ ms.locfileid: "35969829"
 |agesAbove12|2/4|Ab 12 Jahren、12才以上|
 |agesAbove16|5|Ab 16 Jahren、16才以上|
 |保護者|シックス|Ab 18 Jahren、大人のみ|
-
-
 
 
 

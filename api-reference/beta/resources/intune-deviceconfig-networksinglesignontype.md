@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 196164aa58922d02d4efea9d5301bcb767f900d0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9d6c9c2f2458fc4b2a04afd68856b7fcd8021264
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970032"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368598"
 ---
 # <a name="networksinglesignontype-enum-type"></a>networkSingleSignOnType 列挙型
 
@@ -26,8 +26,6 @@ Wi-fi ネットワークのシングルサインオンの種類の設定。
 |党|.0|無効|
 |prelogon|1-d|ログオン前|
 |postlogon|pbm-2|ログオン後|
-
-
 
 
 

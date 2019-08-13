@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3f101784808e20566deb59b2e3f61cb886371c17
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: eb297bff4c51a23076fb2d6ff2c4505be017989b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005465"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36365952"
 ---
 # <a name="iosvppapprevokelicensesactionresult-resource-type"></a>iosVppAppRevokeLicensesActionResult リソースの種類
 
@@ -57,8 +57,6 @@ IOS Vpp アプリでのアクションの結果を定義します。 ActionResul
   "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
-
-
 
 
 

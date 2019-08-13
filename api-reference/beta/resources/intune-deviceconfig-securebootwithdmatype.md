@@ -4,12 +4,13 @@ description: DMA を使用したセキュアブートの可能な値
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2cffc336503fa683b622540bbf7f941df3bef249
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: da1c44caed134e0f55196106cbc8223fa550e98a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "35001749"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368052"
 ---
 # <a name="securebootwithdmatype-enum-type"></a>secureBootWithDMAType 列挙型
 
@@ -25,8 +26,6 @@ DMA を使用したセキュアブートの可能な値
 |notConfigured|.0|未構成、操作なし|
 |Dma なし|1-d|セキュアブートを使用して VBS を有効にする|
 |withDMA|1/3|セキュリティで保護されたブートと DMA を使用して VBS を有効にする|
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bb1bbd9875ba184bc1c945302a6895529b734da5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: eb68222ef982dcac3ee94bac7a14fe2f4c0bbf5f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35990002"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36355200"
 ---
 # <a name="create-grouppolicyconfigurationassignment"></a>GroupPolicyConfigurationAssignment の作成
 
@@ -27,7 +27,7 @@ ms.locfileid: "35990002"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementServiceConfig.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -93,6 +93,7 @@ Content-Length: 287
   }
 }
 ```
+
 
 
 

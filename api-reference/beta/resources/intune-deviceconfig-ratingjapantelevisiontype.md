@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 10e0a7dc7399a5e4294638e374441ab493354d11
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e9a756dbe12fba4cf78fb3f836b19a0c23d7d926
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000685"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368220"
 ---
 # <a name="ratingjapantelevisiontype-enum-type"></a>ratingJapanTelevisionType 列挙型
 
@@ -26,8 +26,6 @@ ms.locfileid: "36000685"
 |allAllowed|.0|既定値、すべてのテレビ番組にコンテンツを表示する|
 |allBlocked|1-d|すべてのテレビ番組の内容を許可しない|
 |explicitAllowed|pbm-2|すべてのテレビコンテンツが明示的に許可されている|
-
-
 
 
 

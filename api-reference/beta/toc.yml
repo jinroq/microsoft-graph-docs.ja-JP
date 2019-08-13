@@ -983,10 +983,9 @@
                 - name: 削除する
                   href: api/bookingstaffmember-delete.md
         - name: デバイスとアプリ
+          href: resources/intune-graph-overview.md
           displayName: Intune
           items:
-            - name: 概要
-              href: resources/intune-graph-overview.md
             - name: アプリ管理
               href: resources/intune-app-conceptual.md
               items:
@@ -1726,8 +1725,6 @@
                       href: api/intune-apps-mobileappcontentfile-renewupload.md
                 - name: モバイル アプリ コンテンツ ファイルのアップロード状態
                   href: resources/intune-apps-mobileappcontentfileuploadstate.md
-                - name: モバイルアプリの依存関係の種類
-                  href: resources/intune-apps-mobileappdependecytype.md
                 - name: モバイルアプリの依存関係
                   href: resources/intune-apps-mobileappdependency.md
                   items:
@@ -1834,7 +1831,7 @@
                   href: resources/intune-cirrus-officeconfigurationassignmenttarget.md
                 - name: Office の構成のグループ割り当てターゲット
                   href: resources/intune-cirrus-officeconfigurationgroupassignmenttarget.md
-                - name: Office 製品 ID
+                - name: Office のプロダクト id
                   href: resources/intune-apps-officeproductid.md
                 - name: Office スイート アプリ
                   href: resources/intune-apps-officesuiteapp.md
@@ -1992,7 +1989,7 @@
                       href: api/intune-apps-windowsmobilemsi-delete.md
                     - name: 更新
                       href: api/intune-apps-windowsmobilemsi-update.md
-                - name: Windows Office のクライアント構成
+                - name: Windows office クライアントの構成
                   href: resources/intune-cirrus-windowsofficeclientconfiguration.md
                   items:
                     - name: リスト
@@ -2005,7 +2002,7 @@
                       href: api/intune-cirrus-windowsofficeclientconfiguration-delete.md
                     - name: 更新
                       href: api/intune-cirrus-windowsofficeclientconfiguration-update.md
-                - name: Windows Office のクライアント セキュリティ構成
+                - name: Windows office クライアントのセキュリティ構成
                   href: resources/intune-cirrus-windowsofficeclientsecurityconfiguration.md
                   items:
                     - name: リスト
@@ -2370,8 +2367,6 @@
                   href: resources/intune-enrollment-importedwindowsautopilotdeviceidentityimportstatus.md
                 - name: インポートした Windows AutoPilot デバイス ID の状態
                   href: resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md
-                - name: インポートした Windows AutoPilot デバイス ID のアップロード
-                  href: resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md
                 - name: インポートした Windows AutoPilot デバイス ID のアップロードの状態
                   href: resources/intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md
                 - name: iTunes ペアリング モード
@@ -2512,6 +2507,13 @@
                   href: resources/intune-deviceconfig-androiddeviceownerappautoupdatepolicytype.md
                 - name: Android デバイス所有者のバッテリー接続モード
                   href: resources/intune-deviceconfig-androiddeviceownerbatterypluggedmode.md
+                - name: Android デバイス所有者の証明書プロファイルベース
+                  href: resources/intune-deviceconfig-androiddeviceownercertificateprofilebase.md
+                  items:
+                    - name: リスト
+                      href: api/intune-deviceconfig-androiddeviceownercertificateprofilebase-list.md
+                    - name: Get
+                      href: api/intune-deviceconfig-androiddeviceownercertificateprofilebase-get.md
                 - name: Android デバイス所有者コンプライアンスポリシー
                   href: resources/intune-deviceconfig-androiddeviceownercompliancepolicy.md
                   items:
@@ -2527,6 +2529,19 @@
                       href: api/intune-deviceconfig-androiddeviceownercompliancepolicy-update.md
                 - name: Android デバイス所有者の既定アプリ アクセス許可ポリシー タイプ
                   href: resources/intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md
+                - name: Android デバイス所有者エンタープライズ Wi-fi 構成
+                  href: resources/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md
+                  items:
+                    - name: リスト
+                      href: api/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration-list.md
+                    - name: Get
+                      href: api/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration-get.md
+                    - name: 作成
+                      href: api/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration-create.md
+                    - name: 削除
+                      href: api/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration-delete.md
+                    - name: 更新
+                      href: api/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration-update.md
                 - name: Android デバイス所有者の一般デバイス構成
                   href: resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md
                   items:
@@ -2546,12 +2561,40 @@
                   href: resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md
                 - name: Android デバイス所有者のシステム更新のインストールの種類
                   href: resources/intune-deviceconfig-androiddeviceownersystemupdateinstalltype.md
+                - name: Android デバイス所有者信頼されたルート証明書
+                  href: resources/intune-deviceconfig-androiddeviceownertrustedrootcertificate.md
+                  items:
+                    - name: リスト
+                      href: api/intune-deviceconfig-androiddeviceownertrustedrootcertificate-list.md
+                    - name: Get
+                      href: api/intune-deviceconfig-androiddeviceownertrustedrootcertificate-get.md
+                    - name: 作成
+                      href: api/intune-deviceconfig-androiddeviceownertrustedrootcertificate-create.md
+                    - name: 削除
+                      href: api/intune-deviceconfig-androiddeviceownertrustedrootcertificate-delete.md
+                    - name: 更新
+                      href: api/intune-deviceconfig-androiddeviceownertrustedrootcertificate-update.md
+                - name: Android デバイス所有者の仮想ホームボタンの種類
+                  href: resources/intune-deviceconfig-androiddeviceownervirtualhomebuttontype.md
+                - name: Android デバイス所有者の VPN 構成
+                  href: resources/intune-deviceconfig-androiddeviceownervpnconfiguration.md
+                  items:
+                    - name: リスト
+                      href: api/intune-deviceconfig-androiddeviceownervpnconfiguration-list.md
+                    - name: Get
+                      href: api/intune-deviceconfig-androiddeviceownervpnconfiguration-get.md
+                    - name: 作成
+                      href: api/intune-deviceconfig-androiddeviceownervpnconfiguration-create.md
+                    - name: 削除
+                      href: api/intune-deviceconfig-androiddeviceownervpnconfiguration-delete.md
+                    - name: 更新
+                      href: api/intune-deviceconfig-androiddeviceownervpnconfiguration-update.md
                 - name: Android デバイス所有者の Wi-Fi 構成
                   href: resources/intune-deviceconfig-androiddeviceownerwificonfiguration.md
                   items:
                     - name: リスト
                       href: api/intune-deviceconfig-androiddeviceownerwificonfiguration-list.md
-                    - name: Get
+                    - name: 取得
                       href: api/intune-deviceconfig-androiddeviceownerwificonfiguration-get.md
                     - name: 作成
                       href: api/intune-deviceconfig-androiddeviceownerwificonfiguration-create.md
@@ -2568,7 +2611,7 @@
                   items:
                     - name: リスト
                       href: api/intune-deviceconfig-androideasemailprofileconfiguration-list.md
-                    - name: Get
+                    - name: 取得
                       href: api/intune-deviceconfig-androideasemailprofileconfiguration-get.md
                     - name: 作成
                       href: api/intune-deviceconfig-androideasemailprofileconfiguration-create.md
@@ -2581,7 +2624,7 @@
                   items:
                     - name: リスト
                       href: api/intune-deviceconfig-androidenterprisewificonfiguration-list.md
-                    - name: Get
+                    - name: 取得
                       href: api/intune-deviceconfig-androidenterprisewificonfiguration-get.md
                     - name: 作成
                       href: api/intune-deviceconfig-androidenterprisewificonfiguration-create.md
@@ -3023,7 +3066,7 @@
                   items:
                     - name: リスト
                       href: api/intune-deviceconfig-androidworkprofilevpnconfiguration-list.md
-                    - name: Get
+                    - name: 取得
                       href: api/intune-deviceconfig-androidworkprofilevpnconfiguration-get.md
                     - name: 作成
                       href: api/intune-deviceconfig-androidworkprofilevpnconfiguration-create.md
@@ -3038,7 +3081,7 @@
                   items:
                     - name: リスト
                       href: api/intune-deviceconfig-androidworkprofilewificonfiguration-list.md
-                    - name: Get
+                    - name: 取得
                       href: api/intune-deviceconfig-androidworkprofilewificonfiguration-get.md
                     - name: 作成
                       href: api/intune-deviceconfig-androidworkprofilewificonfiguration-create.md
@@ -3059,7 +3102,7 @@
                   items:
                     - name: リスト
                       href: api/intune-deviceconfig-appledevicefeaturesconfigurationbase-list.md
-                    - name: Get
+                    - name: 取得
                       href: api/intune-deviceconfig-appledevicefeaturesconfigurationbase-get.md
                 - name: Apple サブジェクト名の形式
                   href: resources/intune-deviceconfig-applesubjectnameformat.md
@@ -3101,7 +3144,7 @@
                   items:
                     - name: リスト
                       href: api/intune-deviceconfig-carttoclassassociation-list.md
-                    - name: Get
+                    - name: 取得
                       href: api/intune-deviceconfig-carttoclassassociation-get.md
                     - name: 作成
                       href: api/intune-deviceconfig-carttoclassassociation-create.md
@@ -3132,7 +3175,7 @@
                   items:
                     - name: 一覧表示
                       href: api/intune-deviceconfig-defaultdevicecompliancepolicy-list.md
-                    - name: Get
+                    - name: 取得
                       href: api/intune-deviceconfig-defaultdevicecompliancepolicy-get.md
                     - name: 作成
                       href: api/intune-deviceconfig-defaultdevicecompliancepolicy-create.md
@@ -3619,7 +3662,7 @@
                   items:
                     - name: リスト
                       href: api/intune-grouppolicy-grouppolicypresentationcheckbox-list.md
-                    - name: Get
+                    - name: 取得
                       href: api/intune-grouppolicy-grouppolicypresentationcheckbox-get.md
                     - name: 作成
                       href: api/intune-grouppolicy-grouppolicypresentationcheckbox-create.md
@@ -3632,7 +3675,7 @@
                   items:
                     - name: リスト
                       href: api/intune-grouppolicy-grouppolicypresentationcombobox-list.md
-                    - name: Get
+                    - name: 取得
                       href: api/intune-grouppolicy-grouppolicypresentationcombobox-get.md
                     - name: 作成
                       href: api/intune-grouppolicy-grouppolicypresentationcombobox-create.md
@@ -3645,7 +3688,7 @@
                   items:
                     - name: リスト
                       href: api/intune-grouppolicy-grouppolicypresentationdecimaltextbox-list.md
-                    - name: Get
+                    - name: 取得
                       href: api/intune-grouppolicy-grouppolicypresentationdecimaltextbox-get.md
                     - name: 作成
                       href: api/intune-grouppolicy-grouppolicypresentationdecimaltextbox-create.md
@@ -3832,7 +3875,7 @@
                   href: resources/intune-deviceconfig-inkaccesssetting.md
                 - name: 使用目的
                   href: resources/intune-deviceconfig-intendedpurpose.md
-                - name: Internet Explorer のメッセージの設定
+                - name: Internet explorer のメッセージ設定
                   href: resources/intune-deviceconfig-internetexplorermessagesetting.md
                 - name: インターネット サイトのセキュリティ レベル
                   href: resources/intune-deviceconfig-internetsitesecuritylevel.md
@@ -3922,7 +3965,7 @@
                 - name: iOS EDU デバイス構成
                   href: resources/intune-deviceconfig-iosedudeviceconfiguration.md
                   items:
-                    - name: リスト
+                    - name: 一覧表示
                       href: api/intune-deviceconfig-iosedudeviceconfiguration-list.md
                     - name: 取得
                       href: api/intune-deviceconfig-iosedudeviceconfiguration-get.md
@@ -4417,49 +4460,12 @@
                   href: resources/intune-deviceconfig-omasettingstring.md
                 - name: OMA 設定、xml 文字列
                   href: resources/intune-deviceconfig-omasettingstringxml.md
-                - name: オンプレミスの暗号化されたペイロード
-                  href: resources/intune-raimportcerts-onpremencryptedpayload.md
-                  items:
-                    - name: リスト
-                      href: api/intune-raimportcerts-onpremencryptedpayload-list.md
-                    - name: 取得
-                      href: api/intune-raimportcerts-onpremencryptedpayload-get.md
-                    - name: 作成
-                      href: api/intune-raimportcerts-onpremencryptedpayload-create.md
-                    - name: 削除
-                      href: api/intune-raimportcerts-onpremencryptedpayload-delete.md
-                    - name: 更新
-                      href: api/intune-raimportcerts-onpremencryptedpayload-update.md
                 - name: オペレーティング システムのバージョンの範囲
                   href: resources/intune-deviceconfig-operatingsystemversionrange.md
-                - name: Pfx recryption 要求
-                  href: resources/intune-raimportcerts-pfxrecryptionrequest.md
-                  items:
-                    - name: リスト
-                      href: api/intune-raimportcerts-pfxrecryptionrequest-list.md
-                    - name: 取得
-                      href: api/intune-raimportcerts-pfxrecryptionrequest-get.md
-                    - name: 作成
-                      href: api/intune-raimportcerts-pfxrecryptionrequest-create.md
-                    - name: 削除
-                      href: api/intune-raimportcerts-pfxrecryptionrequest-delete.md
-                    - name: 更新
-                      href: api/intune-raimportcerts-pfxrecryptionrequest-update.md
-                - name: Pfx ユーザー証明書
-                  href: resources/intune-raimportcerts-pfxusercertificate.md
-                  items:
-                    - name: リスト
-                      href: api/intune-raimportcerts-pfxusercertificate-list.md
-                    - name: 取得
-                      href: api/intune-raimportcerts-pfxusercertificate-get.md
-                    - name: 作成
-                      href: api/intune-raimportcerts-pfxusercertificate-create.md
-                    - name: 削除
-                      href: api/intune-raimportcerts-pfxusercertificate-delete.md
-                    - name: 更新
-                      href: api/intune-raimportcerts-pfxusercertificate-update.md
                 - name: ポリシー プラットフォームの種類
                   href: resources/intune-deviceconfig-policyplatformtype.md
+                - name: 電源アクションの種類
+                  href: resources/intune-deviceconfig-poweractiontype.md
                 - name: プレリリース機能
                   href: resources/intune-deviceconfig-prereleasefeatures.md
                 - name: アプリの種類の評価
@@ -4509,7 +4515,7 @@
                   items:
                     - name: リスト
                       href: api/intune-deviceconfig-restrictedappsviolation-list.md
-                    - name: 取得
+                    - name: Get
                       href: api/intune-deviceconfig-restrictedappsviolation-get.md
                     - name: 作成
                       href: api/intune-deviceconfig-restrictedappsviolation-create.md
@@ -4521,7 +4527,7 @@
                   href: resources/intune-deviceconfig-safesearchfiltertype.md
                 - name: 安全性評価アカウント タイプ
                   href: resources/intune-deviceconfig-secureassessmentaccounttype.md
-                - name: Dma タイプを使用したセキュアブート
+                - name: D m a 型を使用したセキュアブート
                   href: resources/intune-deviceconfig-securebootwithdmatype.md
                 - name: サービス開始方法の種類
                   href: resources/intune-deviceconfig-servicestarttype.md
@@ -4620,6 +4626,13 @@
                   href: resources/intune-deviceconfig-vpnauthenticationmethod.md
                 - name: VPN クライアントの認証の種類
                   href: resources/intune-deviceconfig-vpnclientauthenticationtype.md
+                - name: VPN 構成
+                  href: resources/intune-deviceconfig-vpnconfiguration.md
+                  items:
+                    - name: リスト
+                      href: api/intune-deviceconfig-vpnconfiguration-list.md
+                    - name: Get
+                      href: api/intune-deviceconfig-vpnconfiguration-get.md
                 - name: VPN デッドピア検出率
                   href: resources/intune-deviceconfig-vpndeadpeerdetectionrate.md
                 - name: VPN DNS 規則
@@ -4710,7 +4723,7 @@
                   items:
                     - name: リスト
                       href: api/intune-deviceconfig-windows10devicefirmwareconfigurationinterface-list.md
-                    - name: Get
+                    - name: 取得
                       href: api/intune-deviceconfig-windows10devicefirmwareconfigurationinterface-get.md
                     - name: 作成
                       href: api/intune-deviceconfig-windows10devicefirmwareconfigurationinterface-create.md
@@ -5139,7 +5152,7 @@
                   items:
                     - name: リスト
                       href: api/intune-deviceconfig-windowsphone81generalconfiguration-list.md
-                    - name: 取得
+                    - name: Get
                       href: api/intune-deviceconfig-windowsphone81generalconfiguration-get.md
                     - name: 作成
                       href: api/intune-deviceconfig-windowsphone81generalconfiguration-create.md
@@ -5358,7 +5371,7 @@
                   items:
                     - name: リスト
                       href: api/intune-troubleshooting-applevpptokentroubleshootingevent-list.md
-                    - name: Get
+                    - name: 取得
                       href: api/intune-troubleshooting-applevpptokentroubleshootingevent-get.md
                     - name: 作成
                       href: api/intune-troubleshooting-applevpptokentroubleshootingevent-create.md
@@ -5412,6 +5425,8 @@
                   href: resources/intune-devices-configurationmanagerclientenabledfeatures.md
                 - name: 構成マネージャーのクライアントの正常性の状態
                   href: resources/intune-devices-configurationmanagerclienthealthstate.md
+                - name: 構成マネージャーのクライアント情報
+                  href: resources/intune-devices-configurationmanagerclientinformation.md
                 - name: 構成マネージャーのクライアントの状態
                   href: resources/intune-devices-configurationmanagerclientstate.md
                 - name: 日単位のスケジュール
@@ -5464,6 +5479,25 @@
                   href: resources/intune-devices-deviceguardvirtualizationbasedsecuritystate.md
                 - name: デバイスの正常性構成証明の状態
                   href: resources/intune-devices-devicehealthattestationstate.md
+                - name: デバイス正常性スクリプト
+                  href: resources/intune-devices-devicehealthscript.md
+                  items:
+                    - name: リスト
+                      href: api/intune-devices-devicehealthscript-list.md
+                    - name: 取得
+                      href: api/intune-devices-devicehealthscript-get.md
+                    - name: 作成
+                      href: api/intune-devices-devicehealthscript-create.md
+                    - name: 削除
+                      href: api/intune-devices-devicehealthscript-delete.md
+                    - name: 更新
+                      href: api/intune-devices-devicehealthscript-update.md
+                - name: デバイス正常性スクリプトのコンプライアンスルール
+                  href: resources/intune-devices-devicehealthscriptcompliancerule.md
+                - name: デバイス正常性スクリプトコンプライアンスルール演算子
+                  href: resources/intune-devices-devicehealthscriptcomplianceruleoperator.md
+                - name: デバイス正常性スクリプトの検出の種類
+                  href: resources/intune-devices-devicehealthscriptdetectiontype.md
                 - name: デバイス管理の抽象複雑な設定の定義
                   href: resources/intune-deviceintent-devicemanagementabstractcomplexsettingdefinition.md
                   items:
@@ -5774,7 +5808,7 @@
                   items:
                     - name: リスト
                       href: api/intune-deviceintent-devicemanagementsettingdefinition-list.md
-                    - name: 取得
+                    - name: Get
                       href: api/intune-deviceintent-devicemanagementsettingdefinition-get.md
                     - name: 作成
                       href: api/intune-deviceintent-devicemanagementsettingdefinition-create.md
@@ -5935,6 +5969,10 @@
                   href: resources/intune-devices-healthstate.md
                 - name: 1 時間ごとのスケジュール
                   href: resources/intune-devices-hourlyschedule.md
+                - name: 洞察の値 double
+                  href: resources/intune-devices-insightvaluedouble.md
+                - name: 洞察値 int
+                  href: resources/intune-devices-insightvalueint.md
                 - name: ローカライズ済み通知メッセージ
                   href: resources/intune-notification-localizednotificationmessage.md
                   items:
@@ -6016,6 +6054,8 @@
                       href: api/intune-devices-manageddevice-updatewindowsdeviceaccount.md
                     - name: revokeAppleVppLicenses アクション
                       href: api/intune-devices-manageddevice-revokeapplevpplicenses.md
+                    - name: sendCustomNotificationToCompanyPortal アクション
+                      href: api/intune-devices-manageddevice-sendcustomnotificationtocompanyportal.md
                 - name: 管理対象デバイスのクリーンアップの設定
                   href: resources/intune-devices-manageddevicecleanupsettings.md
                 - name: 管理対象デバイスのモデルとメーカー
@@ -6201,7 +6241,7 @@
                   items:
                     - name: リスト
                       href: api/intune-deviceintent-securitybaselinecategorystatesummary-list.md
-                    - name: Get
+                    - name: 取得
                       href: api/intune-deviceintent-securitybaselinecategorystatesummary-get.md
                     - name: 作成
                       href: api/intune-deviceintent-securitybaselinecategorystatesummary-create.md
@@ -6252,6 +6292,50 @@
                   href: resources/intune-fencing-unarymanagementconditionexpressionoperatortype.md
                 - name: Windows デバイス アカウントのアクション パラメーターの更新
                   href: resources/intune-devices-updatewindowsdeviceaccountactionparameter.md
+                - name: ユーザー experience analytics のベースライン
+                  href: resources/intune-devices-userexperienceanalyticsbaseline.md
+                  items:
+                    - name: リスト
+                      href: api/intune-devices-userexperienceanalyticsbaseline-list.md
+                    - name: 取得
+                      href: api/intune-devices-userexperienceanalyticsbaseline-get.md
+                    - name: 作成
+                      href: api/intune-devices-userexperienceanalyticsbaseline-create.md
+                    - name: 削除
+                      href: api/intune-devices-userexperienceanalyticsbaseline-delete.md
+                    - name: 更新
+                      href: api/intune-devices-userexperienceanalyticsbaseline-update.md
+                - name: ユーザー experience analytics カテゴリ
+                  href: resources/intune-devices-userexperienceanalyticscategory.md
+                  items:
+                    - name: 取得
+                      href: api/intune-devices-userexperienceanalyticscategory-get.md
+                    - name: 更新
+                      href: api/intune-devices-userexperienceanalyticscategory-update.md
+                - name: ユーザー環境分析の洞察
+                  href: resources/intune-devices-userexperienceanalyticsinsight.md
+                - name: ユーザー experience analytics の洞察価値
+                  href: resources/intune-devices-userexperienceanalyticsinsightvalue.md
+                - name: ユーザー experience analytics の指標
+                  href: resources/intune-devices-userexperienceanalyticsmetric.md
+                  items:
+                    - name: リスト
+                      href: api/intune-devices-userexperienceanalyticsmetric-list.md
+                    - name: 取得
+                      href: api/intune-devices-userexperienceanalyticsmetric-get.md
+                    - name: 作成
+                      href: api/intune-devices-userexperienceanalyticsmetric-create.md
+                    - name: 削除
+                      href: api/intune-devices-userexperienceanalyticsmetric-delete.md
+                    - name: 更新
+                      href: api/intune-devices-userexperienceanalyticsmetric-update.md
+                - name: ユーザー experience analytics の概要
+                  href: resources/intune-devices-userexperienceanalyticsoverview.md
+                  items:
+                    - name: 取得
+                      href: api/intune-devices-userexperienceanalyticsoverview-get.md
+                    - name: 更新
+                      href: api/intune-devices-userexperienceanalyticsoverview-update.md
                 - name: 変数管理条件式
                   href: resources/intune-fencing-variablemanagementconditionexpression.md
                 - name: Windows defender のスキャン アクションの結果
@@ -6343,13 +6427,6 @@
                       href: api/intune-devices-windowsmanagementapphealthstate-delete.md
                     - name: 更新
                       href: api/intune-devices-windowsmanagementapphealthstate-update.md
-                - name: Windows 管理アプリの正常性の要約
-                  href: resources/intune-devices-windowsmanagementapphealthsummary.md
-                  items:
-                    - name: 取得
-                      href: api/intune-devices-windowsmanagementapphealthsummary-get.md
-                    - name: 更新
-                      href: api/intune-devices-windowsmanagementapphealthsummary-update.md
                 - name: Windows 保護の状態
                   href: resources/intune-devices-windowsprotectionstate.md
                   items:
@@ -6365,7 +6442,7 @@
                   items:
                     - name: リスト
                       href: api/intune-mam-androidmanagedappprotection-list.md
-                    - name: 取得
+                    - name: Get
                       href: api/intune-mam-androidmanagedappprotection-get.md
                     - name: 作成
                       href: api/intune-mam-androidmanagedappprotection-create.md
@@ -6378,7 +6455,7 @@
                   items:
                     - name: リスト
                       href: api/intune-mam-androidmanagedappregistration-list.md
-                    - name: 取得
+                    - name: Get
                       href: api/intune-mam-androidmanagedappregistration-get.md
                     - name: 作成
                       href: api/intune-mam-androidmanagedappregistration-create.md
@@ -6397,7 +6474,7 @@
                   items:
                     - name: リスト
                       href: api/intune-mam-defaultmanagedappprotection-list.md
-                    - name: 取得
+                    - name: Get
                       href: api/intune-mam-defaultmanagedappprotection-get.md
                     - name: 作成
                       href: api/intune-mam-defaultmanagedappprotection-create.md
@@ -6410,7 +6487,7 @@
                   items:
                     - name: リスト
                       href: api/intune-wip-intunebrandingprofile-list.md
-                    - name: 取得
+                    - name: Get
                       href: api/intune-wip-intunebrandingprofile-get.md
                     - name: 作成
                       href: api/intune-wip-intunebrandingprofile-create.md
@@ -6425,7 +6502,7 @@
                   items:
                     - name: リスト
                       href: api/intune-wip-intunebrandingprofileassignment-list.md
-                    - name: 取得
+                    - name: Get
                       href: api/intune-wip-intunebrandingprofileassignment-get.md
                     - name: 作成
                       href: api/intune-wip-intunebrandingprofileassignment-create.md
@@ -6541,7 +6618,7 @@
                   items:
                     - name: リスト
                       href: api/intune-mam-managedappstatusraw-list.md
-                    - name: Get
+                    - name: 取得
                       href: api/intune-mam-managedappstatusraw-get.md
                 - name: 管理対象モバイル アプリ
                   href: resources/intune-mam-managedmobileapp.md
@@ -6576,7 +6653,7 @@
                   items:
                     - name: リスト
                       href: api/intune-mam-targetedmanagedappconfiguration-list.md
-                    - name: Get
+                    - name: 取得
                       href: api/intune-mam-targetedmanagedappconfiguration-get.md
                     - name: 作成
                       href: api/intune-mam-targetedmanagedappconfiguration-create.md
@@ -6604,7 +6681,7 @@
                   items:
                     - name: リスト
                       href: api/intune-mam-targetedmanagedappprotection-list.md
-                    - name: Get
+                    - name: 取得
                       href: api/intune-mam-targetedmanagedappprotection-get.md
                     - name: 割り当てのアクション
                       href: api/intune-mam-targetedmanagedappprotection-assign.md
@@ -6613,7 +6690,7 @@
                   items:
                     - name: リスト
                       href: api/intune-mam-windowsinformationprotection-list.md
-                    - name: Get
+                    - name: 取得
                       href: api/intune-mam-windowsinformationprotection-get.md
                     - name: 割り当てのアクション
                       href: api/intune-mam-windowsinformationprotection-assign.md
@@ -6624,7 +6701,7 @@
                   items:
                     - name: リスト
                       href: api/intune-wip-windowsinformationprotectionapplearningsummary-list.md
-                    - name: Get
+                    - name: 取得
                       href: api/intune-wip-windowsinformationprotectionapplearningsummary-get.md
                     - name: 作成
                       href: api/intune-wip-windowsinformationprotectionapplearningsummary-create.md
@@ -6637,7 +6714,7 @@
                   items:
                     - name: リスト
                       href: api/intune-mam-windowsinformationprotectionapplockerfile-list.md
-                    - name: Get
+                    - name: 取得
                       href: api/intune-mam-windowsinformationprotectionapplockerfile-get.md
                     - name: 作成
                       href: api/intune-mam-windowsinformationprotectionapplockerfile-create.md
@@ -6654,7 +6731,7 @@
                   items:
                     - name: リスト
                       href: api/intune-mam-windowsinformationprotectiondeviceregistration-list.md
-                    - name: Get
+                    - name: 取得
                       href: api/intune-mam-windowsinformationprotectiondeviceregistration-get.md
                     - name: 作成
                       href: api/intune-mam-windowsinformationprotectiondeviceregistration-create.md
@@ -6673,7 +6750,7 @@
                   items:
                     - name: リスト
                       href: api/intune-wip-windowsinformationprotectionnetworklearningsummary-list.md
-                    - name: Get
+                    - name: 取得
                       href: api/intune-wip-windowsinformationprotectionnetworklearningsummary-get.md
                     - name: 作成
                       href: api/intune-wip-windowsinformationprotectionnetworklearningsummary-create.md
@@ -6688,7 +6765,7 @@
                   items:
                     - name: リスト
                       href: api/intune-mam-windowsinformationprotectionpolicy-list.md
-                    - name: Get
+                    - name: 取得
                       href: api/intune-mam-windowsinformationprotectionpolicy-get.md
                     - name: 作成
                       href: api/intune-mam-windowsinformationprotectionpolicy-create.md
@@ -6707,7 +6784,7 @@
                   items:
                     - name: リスト
                       href: api/intune-mam-windowsinformationprotectionwipeaction-list.md
-                    - name: Get
+                    - name: 取得
                       href: api/intune-mam-windowsinformationprotectionwipeaction-get.md
                     - name: 作成
                       href: api/intune-mam-windowsinformationprotectionwipeaction-create.md
@@ -6738,7 +6815,7 @@
                   items:
                     - name: リスト
                       href: api/intune-onboarding-deviceenrollmentlimitconfiguration-list.md
-                    - name: Get
+                    - name: 取得
                       href: api/intune-onboarding-deviceenrollmentlimitconfiguration-get.md
                     - name: 作成
                       href: api/intune-onboarding-deviceenrollmentlimitconfiguration-create.md
@@ -6751,9 +6828,9 @@
                 - name: デバイス登録プラットフォームの制限の構成
                   href: resources/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration.md
                   items:
-                    - name: リスト
+                    - name: 一覧表示
                       href: api/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-list.md
-                    - name: Get
+                    - name: 取得
                       href: api/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-get.md
                     - name: 作成
                       href: api/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-create.md
@@ -6766,7 +6843,7 @@
                   items:
                     - name: リスト
                       href: api/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-list.md
-                    - name: Get
+                    - name: 取得
                       href: api/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-get.md
                     - name: 作成
                       href: api/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-create.md
@@ -6785,7 +6862,7 @@
                   items:
                     - name: リスト
                       href: api/intune-onboarding-devicemanagementexchangeconnector-list.md
-                    - name: Get
+                    - name: 取得
                       href: api/intune-onboarding-devicemanagementexchangeconnector-get.md
                     - name: 作成
                       href: api/intune-onboarding-devicemanagementexchangeconnector-create.md
@@ -6815,7 +6892,7 @@
                   items:
                     - name: リスト
                       href: api/intune-onboarding-devicemanagementpartner-list.md
-                    - name: Get
+                    - name: 取得
                       href: api/intune-onboarding-devicemanagementpartner-get.md
                     - name: 作成
                       href: api/intune-onboarding-devicemanagementpartner-create.md
@@ -6832,7 +6909,7 @@
                   items:
                     - name: リスト
                       href: api/intune-onboarding-enrollmentconfigurationassignment-list.md
-                    - name: Get
+                    - name: 取得
                       href: api/intune-onboarding-enrollmentconfigurationassignment-get.md
                     - name: 作成
                       href: api/intune-onboarding-enrollmentconfigurationassignment-create.md
@@ -6849,9 +6926,9 @@
                 - name: モバイルの脅威保護コネクタ
                   href: resources/intune-onboarding-mobilethreatdefenseconnector.md
                   items:
-                    - name: 一覧表示
+                    - name: リスト
                       href: api/intune-onboarding-mobilethreatdefenseconnector-list.md
-                    - name: Get
+                    - name: 取得
                       href: api/intune-onboarding-mobilethreatdefenseconnector-get.md
                     - name: 作成
                       href: api/intune-onboarding-mobilethreatdefenseconnector-create.md
@@ -8420,7 +8497,7 @@
             - name: 信頼フレームワークポリシー
               href: resources/trustframeworkpolicy.md
               items:
-                - name: リスト
+                - name: List
                   href: api/trustframework-list-trustframeworkpolicies.md
                 - name: 作成
                   href: api/trustframework-post-trustframeworkpolicy.md
