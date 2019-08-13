@@ -4,12 +4,13 @@ description: iOS の派生した資格情報プロファイル。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 287fbca36cc1652d63fa7435d348011b144a711a
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: d28d7aa2d9452a17c28ca664174c95fb36727f24
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34989456"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36357146"
 ---
 # <a name="iosderivedcredentialauthenticationconfiguration-resource-type"></a>iosDerivedCredentialAuthenticationConfiguration リソースの種類
 
@@ -102,8 +103,6 @@ iOS の派生した資格情報プロファイル。
   "version": 1024
 }
 ```
-
-
 
 
 

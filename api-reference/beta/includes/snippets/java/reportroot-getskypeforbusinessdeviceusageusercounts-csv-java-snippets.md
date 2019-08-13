@@ -1,18 +1,18 @@
 ---
 description: 自動的に生成されたファイル。 変更しない
-ms.openlocfilehash: 6304b88066df0a8d1a64c3cf2bd0a2752d87611b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: d8a312e19299ed43c7d1162777a2dfe5f12004eb
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35872331"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36359488"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ISkypeForBusinessDeviceUsageUserCountsCollectionPage getSkypeForBusinessDeviceUsageUserCounts = graphClient.reports()
-    .getSkypeForBusinessDeviceUsageUserCounts('D7')
+    .getSkypeForBusinessDeviceUsageUserCounts("D7")
     .buildRequest()
     .get();
 

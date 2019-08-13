@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 454e80f66aaf1cc4421f719df522312b00df1be3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d5c180e0c202f4d7c4bb1aef14a29fcd2eb3cc16
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35990219"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36355438"
 ---
 # <a name="create-networkipv6configurationmanagementcondition"></a>NetworkIPv6ConfigurationManagementCondition を作成する
 
@@ -27,7 +27,7 @@ ms.locfileid: "35990219"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -128,6 +128,7 @@ Content-Length: 651
   ]
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 34396fc9628bd2b77a8735fdce496d28cdea91c8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c1c030b3912a11f77368df537bf50b40549d7902
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969885"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368346"
 ---
 # <a name="ratingcanadamoviestype-enum-type"></a>ratingCanadaMoviesType 列挙型
 
@@ -30,8 +30,6 @@ ms.locfileid: "35969885"
 |agesAbove14|2/4|14A の分類は、14才以上の閲覧者に適しています。|
 |agesAbove18|5|18A 分類は18またはそれ以前の閲覧者に適しています。|
 |しか|シックス|R 分類は18年以上に制限されています。|
-
-
 
 
 

@@ -4,12 +4,13 @@ description: まだ文書化されていません
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4da744d7acd78b31b27238805fb63aa9cb7e3186
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: 15ba6d0ea681a59fcd39a38ff5bc1fd769fb9362
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35730000"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36356222"
 ---
 # <a name="import-action"></a>インポートアクション
 
@@ -26,7 +27,7 @@ ms.locfileid: "35730000"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementServiceConfig.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -121,6 +122,7 @@ Content-Length: 825
   ]
 }
 ```
+
 
 
 

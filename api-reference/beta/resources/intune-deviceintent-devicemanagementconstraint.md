@@ -4,12 +4,13 @@ description: 制約の基本エンティティ
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4679fd44e8a35b555f0cdc495c05ed2c0eaf0364
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 531ab66d1d33053541e17cb4f21927e3d0fe64ef
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34964116"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36366638"
 ---
 # <a name="devicemanagementconstraint-resource-type"></a>deviceManagementConstraint リソースの種類
 
@@ -38,8 +39,6 @@ ms.locfileid: "34964116"
   "@odata.type": "#microsoft.graph.deviceManagementConstraint"
 }
 ```
-
-
 
 
 

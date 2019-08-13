@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6af30bf051691d5c4d9c878dd65af830087f0d1b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 69d410f9670ae82ce9591549df84f04ea8b2ebfa
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000621"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368115"
 ---
 # <a name="requiredpasswordtype-enum-type"></a>requiredPasswordType 列挙型
 
@@ -26,8 +26,6 @@ ms.locfileid: "36000621"
 |deviceDefault|.0|デバイスの既定値。意図的ではありません。|
 |文字|1-d|英数字のパスワードが必要です。|
 |数値|pbm-2|数字のパスワードが必要です。|
-
-
 
 
 

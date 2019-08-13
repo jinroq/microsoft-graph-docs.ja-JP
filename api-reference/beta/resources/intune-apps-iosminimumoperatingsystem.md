@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 43409d7c4f4eb7bedd4a169c5f56d969e2b9d03d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b89c35708a71d176e6563f2d05db9b6016184cc5
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005941"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36366022"
 ---
 # <a name="iosminimumoperatingsystem-resource-type"></a>iosMinimumOperatingSystem リソースの種類
 
@@ -49,8 +49,6 @@ iOS モバイル アプリに必要な最小限のオペレーティング シ�
   "v12_0": true
 }
 ```
-
-
 
 
 

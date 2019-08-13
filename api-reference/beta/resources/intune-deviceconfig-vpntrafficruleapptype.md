@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 576092233498ac86a858a17a6f2e476a72480f36
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1762e952bbebfc985f9af9694bfb14e0bdd7d19f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969388"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36367548"
 ---
 # <a name="vpntrafficruleapptype-enum-type"></a>vpnTrafficRuleAppType 列挙型
 
@@ -26,8 +26,6 @@ VPN トラフィックルールが関連付けられているアプリの種類�
 |none|.0|トラフィックルールがアプリに関連付けられていません。|
 |コンピューター|1-d|トラフィックルールは、デスクトップアプリに関連付けられています。|
 |ユニバーサル|pbm-2|トラフィックルールはユニバーサルアプリに関連付けられています。|
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 494011cf268133e06ffcd7753afe18f9557f8be7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 66ba9caa0039348a251f82b4912392c1a98051b4
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969563"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36367828"
 ---
 # <a name="usernamesource-enum-type"></a>usernameSource 列挙型
 
@@ -26,8 +26,6 @@ ms.locfileid: "35969563"
 |userPrincipalName|.0|ユーザープリンシパル名。|
 |primarySmtpAddress|1-d|プライマリ SMTP アドレス。|
 |samAccountName|pbm-2|ユーザー sam のアカウント名。|
-
-
 
 
 

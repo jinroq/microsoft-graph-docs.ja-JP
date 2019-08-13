@@ -4,12 +4,13 @@ description: Vpn サーバーが認証のために VPN クライアントに提�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d8dfb47dd42056e09c02ca4239ac3a7a2ea12190
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: c6b7b9a915383a1e53889add868ee2fa061a9dc7
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "35002071"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36367576"
 ---
 # <a name="vpnservercertificatetype-enum-type"></a>vpnServerCertificateType 列挙型
 
@@ -26,8 +27,6 @@ Vpn サーバーが認証のために VPN クライアントに提示する証�
 |ecdsa256|1-d|ECDSA256|
 |ecdsa384|pbm-2|ECDSA384|
 |ecdsa521|1/3|ECDSA521|
-
-
 
 
 

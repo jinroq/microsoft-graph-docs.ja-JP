@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c6cb5bbf308aeda967ce54b6016a6ebb2083a66c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0e9c98a40992bd9404f101f07640014a3f4b6ab5
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000530"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36367996"
 ---
 # <a name="sharedpcaccountdeletionpolicytype-enum-type"></a>sharedPCAccountDeletionPolicyType 列挙型
 
@@ -26,8 +26,6 @@ ms.locfileid: "36000530"
 |瞬時|.0|すぐに削除します。|
 |ディスクスペースしきい値|1-d|ディスク容量のしきい値で削除します。|
 |diskSpaceThresholdOrInactiveThreshold|pbm-2|ディスク容量のしきい値または非アクティブなしきい値での削除。|
-
-
 
 
 

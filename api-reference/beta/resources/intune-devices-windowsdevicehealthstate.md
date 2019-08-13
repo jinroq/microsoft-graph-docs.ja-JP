@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 3a12ac4e09981e21b51d97109f72569cafe628ba
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9b37f441a1ded71d3f299d6d38b58543aac130ed
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999608"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36366455"
 ---
 # <a name="windowsdevicehealthstate-enum-type"></a>windowsDeviceHealthState 列挙型
 
@@ -29,8 +29,6 @@ ms.locfileid: "35999608"
 |manualStepsPending|2/4|コンピューターが保留中の手動の手順状態である|
 |offlineScanPending|8 |コンピューターが保留中のオフラインスキャン状態になっている|
 |critical|16|コンピューターは重大なエラー状態です|
-
-
 
 
 

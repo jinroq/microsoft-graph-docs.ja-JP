@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 5c761944bc87622c81da62fc609d5cc54c17e46b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2038eb8cec114203e8a3df6d5eac25ad9707c45e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969479"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36367674"
 ---
 # <a name="vpnondemandruleconnectiondomainaction-enum-type"></a>vpnOnDemandRuleConnectionDomainAction 列挙型
 
@@ -25,8 +25,6 @@ VPN のオンデマンドルールの接続ドメインアクション。
 |:---|:---|:---|
 |/必要|.0|必要に応じて接続します。|
 |neverConnect|1-d|接続しない|
-
-
 
 
 

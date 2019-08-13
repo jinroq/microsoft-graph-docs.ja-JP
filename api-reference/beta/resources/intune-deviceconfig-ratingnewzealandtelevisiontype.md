@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: d3201bd3eb23a30633df61a2446e89e1bdef5a71
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4aa8ef45e3abe74aa235e7340fd21fa73e083099
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969787"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368192"
 ---
 # <a name="ratingnewzealandtelevisiontype-enum-type"></a>ratingNewZealandTelevisionType 列挙型
 
@@ -28,8 +28,6 @@ ms.locfileid: "35969787"
 |元帳|pbm-2|G 分類は、14の下の子に悪影響を与える可能性がある材料を除外します。|
 |parentalGuidance|1/3|PGR 分類は、親とガーディアンによる、若い閲覧者の監督を促進します。|
 |保護者|2/4|AO 分類は、子には適していません|
-
-
 
 
 

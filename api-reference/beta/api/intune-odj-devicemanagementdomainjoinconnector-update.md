@@ -4,12 +4,13 @@ description: DeviceManagementDomainJoinConnector オブジェクトのプロパ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 760683b2b837ac8bcfab40a12b3bf4f84214d2c2
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 3adf6799242ec698b4cb62f4f702bb027e27c0b0
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "35002155"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36353128"
 ---
 # <a name="update-devicemanagementdomainjoinconnector"></a>DeviceManagementDomainJoinConnector の更新
 
@@ -26,7 +27,7 @@ ms.locfileid: "35002155"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -95,6 +96,7 @@ Content-Length: 284
   "version": "Version value"
 }
 ```
+
 
 
 

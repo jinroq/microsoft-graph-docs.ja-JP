@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 68b7882da1c223d3b06dec7082fa2ae9d002f251
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b86d6d6ddad847b1a4b39fd96d61f619e19afaac
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999396"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36365224"
 ---
 # <a name="windowsmanagementapp-resource-type"></a>windowsManagementApp リソースの種類
 
@@ -35,7 +35,6 @@ Windows management app エンティティ。
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
-|healthSummary|[windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md)|Windows management アプリの正常性の概要。|
 |healthStates|[Windowsmanagementapphealthstate](../resources/intune-devices-windowsmanagementapphealthstate.md)コレクション|インストールされている Windows management アプリの正常性状態の一覧。|
 
 ## <a name="json-representation"></a>JSON 表記
@@ -53,8 +52,6 @@ Windows management app エンティティ。
   "availableVersion": "String"
 }
 ```
-
-
 
 
 

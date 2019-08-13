@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 0fdbfced3a6e3024bd0901ca0335bf56708cd242
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d5953d13d8c8219e4b9526b00d58fc96a084305b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012507"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36367149"
 ---
 # <a name="microsoftstoreforbusinesslicensetype-enum-type"></a>Microsoft Storeforbusinesslicensetype 列挙型
 
@@ -25,8 +25,6 @@ ms.locfileid: "36012507"
 |:---|:---|:---|
 |オフライン|.0|まだ文書化されていません|
 |オンライン|1-d|まだ文書化されていません|
-
-
 
 
 

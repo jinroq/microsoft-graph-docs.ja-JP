@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 98de100699da3a0fba9e82995be77fa5bbb9ecd8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fb2be4e3153d6de8e8af9fa540f97f229088146f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000166"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369543"
 ---
 # <a name="windowsupdateforbusinessconfiguration-resource-type"></a>windowsUpdateForBusinessConfiguration リソースの種類
 
@@ -73,6 +73,10 @@ Windows Update for Business の構成です。
 |engagedRestartDeadlineInDays|Int32|アクティブ時間外に保留中の再起動を自動的にスケジュールして実行するまでの期限 (日数は2から30日)|
 |engagedRestartSnoozeScheduleInDays|Int32|ユーザーが参加を再開できるリマインダー通知通知の有効期間が 1 ~ 3 日の場合に、再通知できる日数|
 |engagedRestartTransitionScheduleInDays|Int32|アクティブ時間外に再起動が行われるようにスケジュールされた自動再起動から移行するまでの日数。0から30日の範囲で有効な範囲で、ユーザーのスケジュールを設定する必要があります。|
+|deadlineForFeatureUpdatesInDays|Int32|機能更新プログラムが自動的にインストールされるまでの日数は、2から30日の範囲内です。|
+|deadlineForQualityUpdatesInDays|Int32|品質更新プログラムが自動的にインストールされるまでの日数は、2から30日の範囲内です。|
+|deadlineGracePeriodInDays|Int32|有効範囲が0から7日に設定されると、再起動が自動的に実行されるまでの日数を指定します。|
+|postponeRebootUntilAfterDeadline|Boolean|デバイスがアクティブ時間外の再起動の期限まで待機するかどうかを指定します。|
 |autoRestartNotificationDismissal|[autoRestartNotificationDismissalMethod](../resources/intune-deviceconfig-autorestartnotificationdismissalmethod.md)|自動再起動必須通知を閉じる方法を指定します。 可能な値は、`notConfigured`、`automatic`、`user` です。|
 |scheduleRestartWarningInHours|Int32|自動再起動警告リマインダー通知の期間を指定します。 サポートされている値: 2、4、8、12、または 24 (時間)。|
 |scheduleImminentRestartWarningInMinutes|Int32|差し迫った自動再起動警告通知の期間を指定します。 サポートされている値:15、30または 60 (分)。|
@@ -163,6 +167,10 @@ Windows Update for Business の構成です。
   "engagedRestartDeadlineInDays": 1024,
   "engagedRestartSnoozeScheduleInDays": 1024,
   "engagedRestartTransitionScheduleInDays": 1024,
+  "deadlineForFeatureUpdatesInDays": 1024,
+  "deadlineForQualityUpdatesInDays": 1024,
+  "deadlineGracePeriodInDays": 1024,
+  "postponeRebootUntilAfterDeadline": true,
   "autoRestartNotificationDismissal": "String",
   "scheduleRestartWarningInHours": 1024,
   "scheduleImminentRestartWarningInMinutes": 1024,
@@ -171,8 +179,6 @@ Windows Update for Business の構成です。
   "updateNotificationLevel": "String"
 }
 ```
-
-
 
 
 
