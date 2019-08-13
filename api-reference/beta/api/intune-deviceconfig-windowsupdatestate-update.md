@@ -4,12 +4,13 @@ description: WindowsUpdateState オブジェクトのプロパティを更新し
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f003e5066e0e2b31b1b629067ffacc92efdd36de
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: 35a56a0dea3174a7f196a3cee62a46edd35eafce
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35726111"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36344134"
 ---
 # <a name="update-windowsupdatestate"></a>WindowsUpdateState の更新
 
@@ -26,7 +27,7 @@ ms.locfileid: "35726111"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -110,6 +111,7 @@ Content-Length: 553
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00"
 }
 ```
+
 
 
 

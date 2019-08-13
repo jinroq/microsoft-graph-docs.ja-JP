@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 178ed3ea09358255482ce95fbab51b584cc53bcf
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bbfbbdf6f5dae785a8b2c90a077b7484066b0286
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35993817"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36351113"
 ---
 # <a name="list-rolescopetags"></a>リスト roleScopeTags
 
@@ -27,7 +27,7 @@ ms.locfileid: "35993817"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementRBAC.ReadWrite.All、DeviceManagementRBAC.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementRBAC.ReadWrite.All、DeviceManagementRBAC.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/roleScopeTags
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 231
+Content-Length: 257
 
 {
   "value": [
@@ -72,11 +72,13 @@ Content-Length: 231
       "@odata.type": "#microsoft.graph.roleScopeTag",
       "id": "9ed1e179-e179-9ed1-79e1-d19e79e1d19e",
       "displayName": "Display Name value",
-      "description": "Description value"
+      "description": "Description value",
+      "isBuiltIn": true
     }
   ]
 }
 ```
+
 
 
 

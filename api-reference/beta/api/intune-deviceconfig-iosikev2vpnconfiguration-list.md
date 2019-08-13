@@ -4,12 +4,13 @@ description: IosikEv2VpnConfiguration オブジェクトのプロパティとリ
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c5e951b2d3cd1c18f234283bf368bbf453cc25a3
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: d70d2e1cbdc3cb7e8d06ec83c145fc925cbabd62
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35715369"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36345646"
 ---
 # <a name="list-iosikev2vpnconfigurations"></a>リスト iosikEv2VpnConfigurations
 
@@ -26,7 +27,7 @@ ms.locfileid: "35715369"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -200,6 +201,7 @@ Content-Length: 4949
   ]
 }
 ```
+
 
 
 

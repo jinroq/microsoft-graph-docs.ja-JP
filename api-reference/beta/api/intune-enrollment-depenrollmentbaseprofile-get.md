@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d3c46f8525f5c14eaedb30a15a7dd0a288ad0d4c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 261717ffc78c3dbe731a15961c4d4f8c0d120ff2
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35985505"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36348327"
 ---
 # <a name="get-depenrollmentbaseprofile"></a>DepEnrollmentBaseProfile を取得する
 
@@ -27,7 +27,7 @@ ms.locfileid: "35985505"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -100,6 +100,7 @@ Content-Length: 1136
   }
 }
 ```
+
 
 
 

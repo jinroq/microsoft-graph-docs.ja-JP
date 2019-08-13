@@ -4,13 +4,12 @@ description: テナント組織のモバイルアプリ管理 (MAM) に関連す
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-doc_type: conceptualPageType
-ms.openlocfilehash: 266e5ab4b83a462aec80cf475b2be81e8b1a1269
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 208caa1f421a8e9c9da9e9a8bcce048775e13678
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968057"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332289"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Microsoft Intune で会社のアプリ データを保護する方法
 
@@ -78,3 +77,4 @@ Intune のアプリ保護ポリシーを使用して、会社のデータを保�
 - [Windows 情報保護のリソース コレクション](intune-mam-windowsinformationprotectionresourcecollection.md)
 - [Windows 情報保護ストア アプリ](intune-mam-windowsinformationprotectionstoreapp.md)
 - [Windows 情報保護のワイプ アクション](intune-mam-windowsinformationprotectionwipeaction.md)
+

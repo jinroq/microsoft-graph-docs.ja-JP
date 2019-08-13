@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f72b81597f39b8aa15edbddbd1c01f26c830caaf
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a38036377f74d8c314397a344ff16f9f3600ad68
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004506"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332667"
 ---
 # <a name="eaptype-enum-type"></a>eapType 列挙型
 
@@ -29,8 +29,6 @@ ms.locfileid: "36004506"
 |eapTtls|21|EAP トンネリングトランスポート層セキュリティ (EAP-TLS)。|
 |peap-gtc|まで|保護された拡張認証プロトコル (PEAP)。|
 |eapFast|43|セキュリティで保護されたトンネリング (EAP-FAST) 経由の EAP による柔軟な認証。|
-
-
 
 
 

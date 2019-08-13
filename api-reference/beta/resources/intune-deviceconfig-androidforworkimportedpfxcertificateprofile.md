@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2cb72e8c8e4af997675d49bb1f69e36d55dca9e0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ef72b5a9bc6c7c534e4ecc1b720c79a2478fe75d
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011849"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334585"
 ---
 # <a name="androidforworkimportedpfxcertificateprofile-resource-type"></a>androidForWorkImportedPFXCertificateProfile リソースの種類
 
@@ -124,8 +124,6 @@ Android For Work PFX インポート証明書プロファイル
   "intendedPurpose": "String"
 }
 ```
-
-
 
 
 

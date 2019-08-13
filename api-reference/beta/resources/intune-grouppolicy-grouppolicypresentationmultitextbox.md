@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 301c3735eab78f98e5095f79e50b78bbd2ca1a66
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e616881d8d0a4035d0950d611b869cef36eb356e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35998647"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36331316"
 ---
 # <a name="grouppolicypresentationmultitextbox-resource-type"></a>groupPolicyPresentationMultiTextBox リソースの種類
 
@@ -66,8 +66,6 @@ ADMX multiTextBox 要素と ADMX Multitextbox 要素を表します。
   "maxStrings": 1024
 }
 ```
-
-
 
 
 

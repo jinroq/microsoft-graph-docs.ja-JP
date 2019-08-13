@@ -4,13 +4,12 @@ description: テナント組織の管理デバイスを定義する Intune エ�
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-doc_type: conceptualPageType
-ms.openlocfilehash: fe419355d0e7acd89eab856ed362049629fead13
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 057181a80c90e5c3c20d62c6f14da35fcea02976
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011912"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335011"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Microsoft Intune でのデバイス管理
 
@@ -38,6 +37,7 @@ ms.locfileid: "36011912"
 - [コンプライアンスのステータス](intune-devices-compliancestate.md)
 - [構成マネージャーのクライアントに対応した機能](intune-devices-configurationmanagerclientenabledfeatures.md)
 - [構成マネージャーのクライアントの正常性の状態](intune-devices-configurationmanagerclienthealthstate.md)
+- [構成マネージャーのクライアント情報](intune-devices-configurationmanagerclientinformation.md)
 - [構成マネージャーのクライアントの状態](intune-devices-configurationmanagerclientstate.md)
 - [日単位のスケジュール](intune-devices-dailyschedule.md)
 - [データ共有の同意](intune-devices-datasharingconsent.md)
@@ -51,6 +51,10 @@ ms.locfileid: "36011912"
 - [Device Guard セキュリティ ハードウェア要件の状態に基づく仮想化](intune-devices-deviceguardvirtualizationbasedsecurityhardwarerequirementstate.md)
 - [Device Guard セキュリティ状態に基づく仮想化](intune-devices-deviceguardvirtualizationbasedsecuritystate.md)
 - [デバイスの正常性構成証明の状態](intune-devices-devicehealthattestationstate.md)
+- [デバイス正常性スクリプト](intune-devices-devicehealthscript.md)
+- [デバイス正常性スクリプトのコンプライアンスルール](intune-devices-devicehealthscriptcompliancerule.md)
+- [デバイス正常性スクリプトコンプライアンスルール演算子](intune-devices-devicehealthscriptcomplianceruleoperator.md)
+- [デバイス正常性スクリプトの検出の種類](intune-devices-devicehealthscriptdetectiontype.md)
 - [デバイス管理の抽象複雑な設定の定義](intune-deviceintent-devicemanagementabstractcomplexsettingdefinition.md)
 - [デバイス管理の抽象複雑な設定インスタンス](intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md)
 - [デバイス管理のブール設定インスタンス](intune-deviceintent-devicemanagementbooleansettinginstance.md)
@@ -111,6 +115,8 @@ ms.locfileid: "36011912"
 - [ハードウェア情報](intune-devices-hardwareinformation.md)
 - [正常性の状態](intune-devices-healthstate.md)
 - [1 時間ごとのスケジュール](intune-devices-hourlyschedule.md)
+- [洞察の値 double](intune-devices-insightvaluedouble.md)
+- [洞察値 int](intune-devices-insightvalueint.md)
 - [ローカライズ済み通知メッセージ](intune-notification-localizednotificationmessage.md)
 - [デバイスの検索アクションの結果](intune-devices-locatedeviceactionresult.md)
 - [場所の管理の条件](intune-fencing-locationmanagementcondition.md)
@@ -165,6 +171,12 @@ ms.locfileid: "36011912"
 - [単項管理条件式](intune-fencing-unarymanagementconditionexpression.md)
 - [単項管理条件式演算子の種類](intune-fencing-unarymanagementconditionexpressionoperatortype.md)
 - [Windows のデバイス アカウントのアクション パラメーターの更新](intune-devices-updatewindowsdeviceaccountactionparameter.md)
+- [ユーザー experience analytics のベースライン](intune-devices-userexperienceanalyticsbaseline.md)
+- [ユーザー experience analytics カテゴリ](intune-devices-userexperienceanalyticscategory.md)
+- [ユーザー環境分析の洞察](intune-devices-userexperienceanalyticsinsight.md)
+- [ユーザー experience analytics の洞察価値](intune-devices-userexperienceanalyticsinsightvalue.md)
+- [ユーザー experience analytics の指標](intune-devices-userexperienceanalyticsmetric.md)
+- [ユーザー experience analytics の概要](intune-devices-userexperienceanalyticsoverview.md)
 - [変数管理条件式](intune-fencing-variablemanagementconditionexpression.md)
 - [Windows Defender のスキャン アクションの結果](intune-devices-windowsdefenderscanactionresult.md)
 - [Windows のデバイス アカウント](intune-devices-windowsdeviceaccount.md)
@@ -186,5 +198,5 @@ ms.locfileid: "36011912"
 - [Windows 管理対象デバイス](intune-devices-windowsmanageddevice.md)
 - [Windows 管理アプリ](intune-devices-windowsmanagementapp.md)
 - [Windows 管理アプリの正常性状態](intune-devices-windowsmanagementapphealthstate.md)
-- [Windows 管理アプリの正常性の要約](intune-devices-windowsmanagementapphealthsummary.md)
 - [Windows 保護の状態](intune-devices-windowsprotectionstate.md)
+

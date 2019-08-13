@@ -4,12 +4,13 @@ description: まだ文書化されていません
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 47e2805c96270ddbdbc3fc03028d629f05504f5f
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 39b7a4e902e5a03eca9d8d004a977708989cd1fa
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34958418"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36348761"
 ---
 # <a name="getfilevaultkey-function"></a>getFileVaultKey 関数
 
@@ -26,7 +27,7 @@ ms.locfileid: "34958418"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -71,6 +72,7 @@ Content-Length: 43
   "value": "Get File Vault Key value"
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a0706753aca89e9f570f0041e93e05c1557e4a75
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 942de87c14594cd4b8f08626fe69411543ad841d
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35979400"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36350294"
 ---
 # <a name="update-devicemanagementtroubleshootingevent"></a>deviceManagementTroubleshootingEvent の更新
 
@@ -25,9 +25,9 @@ ms.locfileid: "35979400"
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
-|委任 (職場または学校のアカウント)|DeviceManagementManagedDevices.ReadWrite.All|
+|委任 (職場または学校のアカウント)|* * TODO: 範囲を決定します * *|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|* * TODO: AppOnly スコープを決定します * *|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -137,6 +137,7 @@ Content-Length: 901
   ]
 }
 ```
+
 
 
 

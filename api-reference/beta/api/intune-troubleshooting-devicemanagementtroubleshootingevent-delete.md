@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 087fbb993b5059b0db1f2e63e0cb72a734ab710e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 85c955573048c185cb026b1abd88da4f30a6d8aa
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35979396"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36347340"
 ---
 # <a name="delete-devicemanagementtroubleshootingevent"></a>deviceManagementTroubleshootingEvent の削除
 
@@ -25,9 +25,9 @@ ms.locfileid: "35979396"
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
-|委任 (職場または学校のアカウント)|DeviceManagementManagedDevices.ReadWrite.All|
+|委任 (職場または学校のアカウント)|* * TODO: 範囲を決定します * *|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|* * TODO: AppOnly スコープを決定します * *|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -63,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/troubleshootingEvents/{
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

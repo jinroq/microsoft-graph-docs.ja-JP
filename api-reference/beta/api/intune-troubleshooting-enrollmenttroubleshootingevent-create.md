@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a93cf403e6b23a9c2865f8e77ce7f5a4aedf7fa6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8a0488fa03c4687314934a6b1d3507f493875297
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35979422"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36347347"
 ---
 # <a name="create-enrollmenttroubleshootingevent"></a>enrollmentTroubleshootingEvent の作成
 
@@ -25,9 +25,9 @@ ms.locfileid: "35979422"
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
-|委任 (職場または学校のアカウント)|DeviceManagementManagedDevices.ReadWrite.All|
+|委任 (職場または学校のアカウント)|* * TODO: 範囲を決定します * *|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|* * TODO: AppOnly スコープを決定します * *|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -161,6 +161,7 @@ Content-Length: 1231
   "failureReason": "Failure Reason value"
 }
 ```
+
 
 
 

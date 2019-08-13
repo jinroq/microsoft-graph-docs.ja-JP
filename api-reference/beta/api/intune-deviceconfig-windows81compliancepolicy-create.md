@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ea32e00b3757affdd3b828725f60582d0f98a284
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0c6644d4d648c05d9deae69191e13ba9e583927e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35975075"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36344855"
 ---
 # <a name="create-windows81compliancepolicy"></a>windows81CompliancePolicy の作成
 
@@ -27,7 +27,7 @@ ms.locfileid: "35975075"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -137,6 +137,7 @@ Content-Length: 836
   "storageRequireEncryption": true
 }
 ```
+
 
 
 

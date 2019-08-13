@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 57d66b30e73a17a21499df2a938180e5a75a4e1c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ba65cea5019cf48648cb3d04700c3ab6558a6940
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35985463"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36348278"
 ---
 # <a name="update-depenrollmentprofile"></a>DepEnrollmentProfile の更新
 
@@ -27,7 +27,7 @@ ms.locfileid: "35985463"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementServiceConfig.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -186,6 +186,7 @@ Content-Length: 1403
   "enableSharedIPad": true
 }
 ```
+
 
 
 

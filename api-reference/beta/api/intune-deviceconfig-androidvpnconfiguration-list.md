@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 155dd2a2b72d3d3a76f0bff6c36678d011bafe47
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c08b486836794ed1f9d9bd987be9c52e06ae807d
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35962520"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36340941"
 ---
 # <a name="list-androidvpnconfigurations"></a>AndroidVpnConfigurations のリスト
 
@@ -27,7 +27,7 @@ ms.locfileid: "35962520"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -133,6 +133,7 @@ Content-Length: 2196
   ]
 }
 ```
+
 
 
 

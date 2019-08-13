@@ -1,33 +1,33 @@
 ---
-title: renewUpload アクション
-description: アプリケーション ファイルのアップロード用の SAS URI を更新します。
+title: Enableandroiddeviceアドミニストレーター登録アクション
+description: まだ文書化されていません
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 373d1c5e42c027476cf8028693a17f3217d5ca0e
+ms.openlocfilehash: e50638b6a785ac67c8b852b3efc67ed328cb13cc
 ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/13/2019
-ms.locfileid: "36329202"
+ms.locfileid: "36341238"
 ---
-# <a name="renewupload-action"></a>renewUpload アクション
+# <a name="enableandroiddeviceadministratorenrollment-action"></a>Enableandroiddeviceアドミニストレーター登録アクション
 
 > **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
 > **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-アプリケーション ファイルのアップロード用の SAS URI を更新します。
+まだ文書化されていません
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
-|委任 (職場または学校のアカウント)|DeviceManagementApps.ReadWrite.All|
+|委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|DeviceManagementApps.ReadWrite.All|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -35,7 +35,7 @@ ms.locfileid: "36329202"
 }
 -->
 ``` http
-POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}/files/{mobileAppContentFileId}/renewUpload
+POST /deviceManagement/enableAndroidDeviceAdministratorEnrollment
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
@@ -55,7 +55,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCon
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http
-POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}/files/{mobileAppContentFileId}/renewUpload
+POST https://graph.microsoft.com/beta/deviceManagement/enableAndroidDeviceAdministratorEnrollment
 ```
 
 ### <a name="response"></a>応答

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 778d1f20c9a8c03e64bb0afa6c9aac230d9d0cde
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cf16d4fdd3a226799094cb165b7ca4505fbac483
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35947740"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36339023"
 ---
 # <a name="list-iosvpnconfigurations"></a>IosVpnConfigurations を一覧表示する
 
@@ -27,7 +27,7 @@ ms.locfileid: "35947740"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -169,6 +169,7 @@ Content-Length: 3404
   ]
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d3f832c62adddfabadb1f9f749269d396a8c1a51
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6436f3d72813aae1dd4f1b97a5264a45504ef9d3
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35981823"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36344078"
 ---
 # <a name="create-windowswifienterpriseeapconfiguration"></a>WindowsWifiEnterpriseEAPConfiguration を作成する
 
@@ -27,7 +27,7 @@ ms.locfileid: "35981823"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -235,6 +235,7 @@ Content-Length: 2449
   "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
 }
 ```
+
 
 
 

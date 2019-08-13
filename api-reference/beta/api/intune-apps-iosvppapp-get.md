@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 11b4ab450614efdaf747c4eb74c3f93fad58d058
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b9bb63df09cd3ace432d56dd92756fe5e12c78cc
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35951583"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36330525"
 ---
 # <a name="get-iosvppapp"></a>Get iosVppApp
 
@@ -27,7 +27,7 @@ ms.locfileid: "35951583"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -135,6 +135,7 @@ Content-Length: 2310
   }
 }
 ```
+
 
 
 

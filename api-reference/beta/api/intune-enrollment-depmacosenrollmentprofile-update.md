@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cc3db004a5e204f15b9b1f3496411bdd906b9501
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c3477a8634e1382c4cebd2dcc3127f0fe5eee70d
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35985316"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36348206"
 ---
 # <a name="update-depmacosenrollmentprofile"></a>DepMacOSEnrollmentProfile の更新
 
@@ -27,7 +27,7 @@ ms.locfileid: "35985316"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementServiceConfig.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -174,6 +174,7 @@ Content-Length: 1240
   "chooseYourLockScreenDisabled": true
 }
 ```
+
 
 
 

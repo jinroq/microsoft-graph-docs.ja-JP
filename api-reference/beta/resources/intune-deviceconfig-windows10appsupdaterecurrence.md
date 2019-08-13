@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: a08e871ee701e2026742bdbd4bb81f3e604bc9c8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: eb16e39eff186ad8adae88532aef0b626ace2128
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000523"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36337931"
 ---
 # <a name="windows10appsupdaterecurrence-enum-type"></a>windows10AppsUpdateRecurrence 列挙型
 
@@ -27,8 +27,6 @@ Windows10 の定期的なアプリ更新に使用できる値。
 |定期的|1-d|定期的.|
 |あたり|pbm-2|あたり.|
 |ごと|1/3|ごと.|
-
-
 
 
 

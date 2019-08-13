@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 7345ffbef5d8eb02dd7bbf8595ec933c312ab559
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d77f3ef9a2d7fd37edeaf2b4cc25d5e6d5bfcf4f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967389"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36347851"
 ---
 # <a name="runstate-enum-type"></a>runState 列挙型
 
@@ -26,8 +26,8 @@ ms.locfileid: "35967389"
 |不明|.0|不明な結果です。|
 |success|1-d|スクリプトは正常に実行されます。|
 |fail|pbm-2|スクリプトの実行に失敗しました。|
-
-
+|error|1/3|検出スクリプトヒットエラー。|
+|対する|2/4|スクリプトの実行が保留中です。|
 
 
 

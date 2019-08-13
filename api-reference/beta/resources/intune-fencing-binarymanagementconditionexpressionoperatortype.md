@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e885c1f04db2429869297e9022bf0e45f0f12e9a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 11833fdc640182f628bcc2d08974d01cade4a4f1
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35998738"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36326703"
 ---
 # <a name="binarymanagementconditionexpressionoperatortype-enum-type"></a>Binarymanagementconditionexpression 演算子 Type 列挙型
 
@@ -25,8 +25,6 @@ ms.locfileid: "35998738"
 |:---|:---|:---|
 |または|.0|オペランドが1つ以上 true の場合にのみ、オペランドのセットを true として評価します。|
 |and|1-d|オペランドのセットを true として評価し、そのすべてのオペランドが true の場合にのみ評価します。|
-
-
 
 
 

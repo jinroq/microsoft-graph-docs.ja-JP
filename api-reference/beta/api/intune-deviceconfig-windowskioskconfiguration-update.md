@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3653f04f753cb14791f4fb2a52deeda654c647f2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b54b93434c8bf34852521928265ec23a7e0bc59c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973451"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36344283"
 ---
 # <a name="update-windowskioskconfiguration"></a>WindowsKioskConfiguration の更新
 
@@ -27,7 +27,7 @@ ms.locfileid: "35973451"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -266,6 +266,7 @@ Content-Length: 3001
   }
 }
 ```
+
 
 
 

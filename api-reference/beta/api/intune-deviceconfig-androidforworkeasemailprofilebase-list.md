@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 64f559afbf5495273de9f40a4a9aa989de56585e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7a8a688f658897ee5e7fdb4bb048ade18f83528f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35963718"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36341670"
 ---
 # <a name="list-androidforworkeasemailprofilebases"></a>リスト androidForWorkEasEmailProfileBases
 
@@ -27,7 +27,7 @@ ms.locfileid: "35963718"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -111,6 +111,7 @@ Content-Length: 1619
   ]
 }
 ```
+
 
 
 

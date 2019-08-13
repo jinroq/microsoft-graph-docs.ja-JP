@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: dc06c29545dffe0117687ecf276dbc6568b61546
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5ee279099933bca2c8b0d0461b9226df998dc285
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969248"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36337833"
 ---
 # <a name="windows10editiontype-enum-type"></a>windows10EditionType 列挙型
 
@@ -43,8 +43,6 @@ Windows 10 エディションの種類。
 |windows10Mobile|インチ|Windows 10 Mobile|
 |windows10IoTCore|個|Windows 10 IoT Core|
 |windows10IoTCoreCommercial|年|Windows 10 IoT Core 商用|
-
-
 
 
 

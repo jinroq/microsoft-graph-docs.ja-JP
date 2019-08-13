@@ -4,12 +4,13 @@ description: 新しい iosikEv2VpnConfiguration オブジェクトを作成し�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7635a187a399e74498b91d72b7f8cae6a0678a61
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: 264c897ffe3439a8419c6f12180e1aa0fb864eda
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35715390"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36339219"
 ---
 # <a name="create-iosikev2vpnconfiguration"></a>IosikEv2VpnConfiguration を作成する
 
@@ -26,7 +27,7 @@ ms.locfileid: "35715390"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -385,6 +386,7 @@ Content-Length: 4404
   "allowDefaultChildSecurityAssociationParameters": true
 }
 ```
+
 
 
 
