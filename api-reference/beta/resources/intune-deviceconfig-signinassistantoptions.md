@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 7f7f06865e22263a0b8e082f68808806f8497624
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e770a111ed7182660dc1d1b921a0f9a08920bf95
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000544"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36367940"
 ---
 # <a name="signinassistantoptions-enum-type"></a>signInAssistantOptions 列挙型
 
@@ -25,8 +25,6 @@ SignInAssistantSettings の値。
 |:---|:---|:---|
 |notConfigured|.0|未構成-wlidsvc Start が SERVICE_DEMAND_START に設定されます。|
 |党|1-d|Disabled-wlidsvc Start は SERVICE_DISABLED に設定されます。|
-
-
 
 
 

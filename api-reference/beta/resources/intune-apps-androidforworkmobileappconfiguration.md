@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 73d330ec85747a08187cfd79416bc171f83530aa
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 488f50d5228c9299ff578b8331fbe620d1a99f52
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971677"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36366169"
 ---
 # <a name="androidforworkmobileappconfiguration-resource-type"></a>androidForWorkMobileAppConfiguration リソースの種類
 
@@ -90,8 +90,6 @@ AFW モバイルアプリ構成のプロパティ、継承されたプロパテ�
   ]
 }
 ```
-
-
 
 
 

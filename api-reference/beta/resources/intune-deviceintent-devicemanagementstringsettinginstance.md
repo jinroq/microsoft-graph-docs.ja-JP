@@ -4,12 +4,13 @@ description: 文字列値を表す設定インスタンス
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 02c9800234fb7b8bcd161a825624cfed11310844
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 10f1be9ba78991ee8f5c86ca3de8e746f062f3ca
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34984430"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36364622"
 ---
 # <a name="devicemanagementstringsettinginstance-resource-type"></a>deviceManagementStringSettingInstance リソースの種類
 
@@ -59,8 +60,6 @@ ms.locfileid: "34984430"
   "value": "String"
 }
 ```
-
-
 
 
 

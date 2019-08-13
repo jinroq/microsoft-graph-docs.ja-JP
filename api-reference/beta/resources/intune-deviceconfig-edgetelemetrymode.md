@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: feeecf706a262d38bf956a49bc27d5d32e1e8ddb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fa6ea5a2bf187a753705b369f3f8a2558860c3eb
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001405"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36357272"
 ---
 # <a name="edgetelemetrymode-enum-type"></a>edgeTelemetryMode 列挙型
 
@@ -27,8 +27,6 @@ Microsoft 365 analytics に送信された参照データの種類
 |イントラネット|1-d|イントラネットの履歴のみを送信できるようにする: イントラネットサイトの閲覧履歴データのみを送信する|
 |経由|pbm-2|インターネットの送信履歴のみを許可する: インターネットサイトの閲覧履歴データのみを送信する|
 |intranetAndInternet|1/3|イントラネットとインターネットの両方の履歴を送信できるようにする: イントラネットおよびインターネットサイトの閲覧履歴データを送信する|
-
-
 
 
 

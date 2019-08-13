@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c920ab13e3175423bff9fb409d8cb68683884426
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d9e77b120b809dbcc47cc3b1f2e09bef0e48553a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005325"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36365847"
 ---
 # <a name="manageddevicemobileappconfigurationdevicesummary-resource-type"></a>managedDeviceMobileAppConfigurationDeviceSummary リソースの種類
 
@@ -66,8 +66,6 @@ MDM モバイル アプリ構成のデバイス状態の要約に関する、プ
   "configurationVersion": 1024
 }
 ```
-
-
 
 
 

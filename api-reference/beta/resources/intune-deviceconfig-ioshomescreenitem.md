@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 00e223443e13b70ec8163bbcbdc1a99666976aa2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 427fcd2f063602252eaa9804b9c9678a96a004cc
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004212"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36357006"
 ---
 # <a name="ioshomescreenitem-resource-type"></a>iosHomeScreenItem リソースの種類
 
@@ -41,8 +41,6 @@ IOS ホーム画面上のアイテムを表します
   "displayName": "String"
 }
 ```
-
-
 
 
 

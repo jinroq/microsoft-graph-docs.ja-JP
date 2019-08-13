@@ -4,12 +4,13 @@ description: コレクション設定の定義を表すエンティティ
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 551b80075fce8a1edf93be6299656fdd8bf0735d
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 27d61b1eb2f6ef3f47c1ea9f94594950e0069f6f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34988861"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36365497"
 ---
 # <a name="devicemanagementcollectionsettingdefinition-resource-type"></a>deviceManagementCollectionSettingDefinition リソースの種類
 
@@ -87,8 +88,6 @@ ms.locfileid: "34988861"
   "elementDefinitionId": "String"
 }
 ```
-
-
 
 
 

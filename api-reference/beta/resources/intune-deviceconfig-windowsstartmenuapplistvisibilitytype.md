@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 697859c60a8a1fcf5ed4e37877227b134bf61cd9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b388d34f4de609e50169b7b8dd350798d44a832e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968723"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369592"
 ---
 # <a name="windowsstartmenuapplistvisibilitytype-enum-type"></a>windowsStartMenuAppListVisibilityType 列挙型
 
@@ -27,8 +27,6 @@ ms.locfileid: "35968723"
 |表示|1-d|[スタート] メニューの [アプリ] の一覧を折りたたみます。|
 |remove|pbm-2|[スタート] メニューからアプリの一覧を完全に削除します。|
 |disableSettingsApp|2/4|設定アプリ内の対応するトグル (折りたたみまたは削除) を無効にします。|
-
-
 
 
 

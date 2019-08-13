@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: dd063ec70dd794ffb151036ea7bbbda090829343
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: badbc0aef9af308858b7789db1f5ceab87c81d98
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001257"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36357097"
 ---
 # <a name="ioseducertificatesettings-resource-type"></a>iosEduCertificateSettings リソースの種類
 
@@ -55,8 +55,6 @@ IOS EDU の信頼されたルートおよび PFX 証明書。
   "certificateValidityPeriodScale": "String"
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 1b11ec96553549f5be971d18f69a7e91d88a4bf0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a5fa53c28f743f23a8e8e0544182ab62b98c6ced
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000579"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368080"
 ---
 # <a name="safesearchfiltertype-enum-type"></a>safeSearchFilterType 列挙型
 
@@ -26,8 +26,6 @@ ms.locfileid: "36000579"
 |自分のもの|.0|ユーザー定義、既定値、意図的ではありません。|
 |厳格|1-d|アダルトコンテンツに対する厳密で最高のフィルタリング。|
 |多く|pbm-2|成人向けコンテンツに対するフィルター処理を中程度にする (有効な検索結果はフィルター処理されません)。|
-
-
 
 
 

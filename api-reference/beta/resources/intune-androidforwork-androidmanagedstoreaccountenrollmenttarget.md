@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: dd7366a17fbba75b0f11acaa9e781a5f5179c8d6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5425c8da26a6db8fc4fba3ad5367f0dd2508e650
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005591"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36367016"
 ---
 # <a name="androidmanagedstoreaccountenrollmenttarget-enum-type"></a>androidManagedStoreAccountEnrollmentTarget 列挙型
 
@@ -27,8 +27,6 @@ ms.locfileid: "36005591"
 |すべての|1-d|まだ文書化されていません|
 |おり|pbm-2|まだ文書化されていません|
 |targetedAsEnrollmentRestrictions|1/3|まだ文書化されていません|
-
-
 
 
 

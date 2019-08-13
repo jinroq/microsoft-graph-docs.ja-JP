@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 176117ef52aea7e7cfc70f45147f86ad16810df2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bc2d314f2e18e374e951160d77dcb091be4940d9
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35984623"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36353058"
 ---
 # <a name="list-deviceenrollmentconfigurations"></a>deviceEnrollmentConfigurations のリスト
 
@@ -27,7 +27,7 @@ ms.locfileid: "35984623"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -80,6 +80,7 @@ Content-Length: 422
   ]
 }
 ```
+
 
 
 

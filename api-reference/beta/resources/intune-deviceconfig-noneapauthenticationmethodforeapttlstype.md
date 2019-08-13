@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 06beff5d0e36f44671b6d63e642d962f978b0612
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5ef3a59a678d49cb6a2c7cc60ebaac9967e21b3e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969997"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368584"
 ---
 # <a name="noneapauthenticationmethodforeapttlstype-enum-type"></a>None Apauthenticationmethod_ Apttlstype 列挙型
 
@@ -27,8 +27,6 @@ ms.locfileid: "35969997"
 |challengeHandshakeAuthenticationProtocol|1-d|チャレンジハンドシェイク認証プロトコル (CHAP)。|
 |Microsoft Chap|pbm-2| Microsoft CHAP (ms-chap)。|
 |microsoftChapVersionTwo|1/3|Microsoft CHAP バージョン 2 (ms-chap v2)。|
-
-
 
 
 

@@ -4,12 +4,13 @@ description: 電子メールの署名と暗号化に対してサポートされ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a2ff58f55033660a839a5f28d0244217c62936e0
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: c6c4a6943fada88dc9a30c9e81d45705153dfde1
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34996388"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36357188"
 ---
 # <a name="emailcertificatetype-enum-type"></a>emailCertificateType 列挙型
 
@@ -25,8 +26,6 @@ ms.locfileid: "34996388"
 |none|.0|証明書をソースとして使用しないでください。|
 |certificate|1-d|証明書ソースに証明書を使用します。|
 |derivedCredential|pbm-2|証明書ソースに派生した資格情報を使用します。|
-
-
 
 
 

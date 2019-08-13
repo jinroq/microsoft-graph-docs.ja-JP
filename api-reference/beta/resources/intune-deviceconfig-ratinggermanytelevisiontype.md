@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e91caae5c7da83981b96e84bb432aaf4ed34a452
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 21348c7b54d0ec82f1713f311dc774c8d0d3d275
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969808"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368263"
 ---
 # <a name="ratinggermanytelevisiontype-enum-type"></a>ratingGermanyTelevisionType 列挙型
 
@@ -30,8 +30,6 @@ ms.locfileid: "35969808"
 |agesAbove12|2/4|Ab 12 Jahren、12才以上|
 |agesAbove16|5|Ab 16 Jahren、16才以上|
 |保護者|シックス|Ab 18 Jahren、大人のみ|
-
-
 
 
 

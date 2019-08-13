@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 2eb02ddde8b570a6d68f077ead1123b00e82cfe0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 41a6d23e42d263dd8241e960af693450ac0a7c3d
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000124"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369508"
 ---
 # <a name="windowsupdatetype-enum-type"></a>windowsUpdateType 列挙型
 
@@ -29,8 +29,6 @@ ms.locfileid: "36000124"
 |windowsInsiderBuildFast|1/3|Windows Insider ビルド-Fast|
 |windowsInsiderBuildSlow|2/4|Windows Insider ビルド-低速|
 |windowsInsiderBuildRelease|5|Windows Insider ビルドをリリースする|
-
-
 
 
 

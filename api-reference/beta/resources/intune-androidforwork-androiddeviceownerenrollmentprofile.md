@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f4aa50fdbfeaf4249296c67804dff4e95e3ac8e7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ba0d5bcef1e1580b27fde4292c248879dda14868
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006207"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36366309"
 ---
 # <a name="androiddeviceownerenrollmentprofile-resource-type"></a>androidDeviceOwnerEnrollmentProfile リソースの種類
 
@@ -46,7 +46,7 @@ Google のクラウド管理を使用して COSU デバイスを登録するた�
 |enrolledDeviceCount|Int32|この登録プロファイルを使用して登録した Android デバイスの合計数。|
 |qrCodeContent|String|トークンの QR コードを生成するために使用する文字列。|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|トークンの QR コードを生成するために使用する文字列。|
-|scopeTags|文字列コレクション|このエンティティインスタンスの範囲タグのリスト。|
+|roleScopeTagIds|文字列コレクション|このエンティティインスタンスの範囲タグのリスト。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -78,13 +78,11 @@ Google のクラウド管理を使用して COSU デバイスを登録するた�
     "type": "String",
     "value": "binary"
   },
-  "scopeTags": [
+  "roleScopeTagIds": [
     "String"
   ]
 }
 ```
-
-
 
 
 

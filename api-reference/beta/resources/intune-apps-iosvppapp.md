@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ec1ce39175e7c4901c09ce06d7699f02ec3e9efd
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1bd61ed93672fc8a4527ccdfb2c8c6fc45a5b9e3
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005929"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36366792"
 ---
 # <a name="iosvppapp-resource-type"></a>iosVppApp リソース タイプ
 
@@ -152,8 +152,6 @@ iOS ボリューム購入プログラム (VPP) アプリのプロパティと継
   ]
 }
 ```
-
-
 
 
 

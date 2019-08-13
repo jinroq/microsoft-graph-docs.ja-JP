@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 45e81f5a0884b846f965f66012435f96cc6609a0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c2cf2390fee27c0763760334ce171e37ca28b5e2
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000824"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368570"
 ---
 # <a name="noneapauthenticationmethodforpeap-enum-type"></a>None Apauthenticationmethodforpeap 列挙型
 
@@ -25,8 +25,6 @@ PEAP が選択された EAP の種類である場合の認証に使用する EAP
 |:---|:---|:---|
 |none|.0|なし|
 |microsoftChapVersionTwo|1-d|Microsoft CHAP バージョン 2 (ms-chap v2)。|
-
-
 
 
 

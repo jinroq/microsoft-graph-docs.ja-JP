@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 61b60be87795fed1c33e73a8f9277c27e404ab1c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: edcd8f3c8217c29f1b3488bde90ffc8021464b73
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969647"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36367898"
 ---
 # <a name="statemanagementsetting-enum-type"></a>stateManagementSetting 列挙型
 
@@ -26,8 +26,6 @@ ms.locfileid: "35969647"
 |notConfigured|.0|構成されていません。|
 |ブロック|1-d|ブロック.|
 |れる|pbm-2|れる.|
-
-
 
 
 

@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 47228e6597f24b9a6d662c7d87643322acaed40b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e95a7a54d2cdce7e23bcc4792368cfa250241963
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006235"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36366351"
 ---
 # <a name="sharedinsight-resource-type"></a>/リソースの種類 (Sharepoint)
 
@@ -19,7 +19,7 @@ ms.locfileid: "36006235"
 または特定のユーザーによって共有されているファイルを表す洞察。 次の共有ファイルがサポートされています。
 
 - 電子メールまたは会議の招待に直接添付されたファイル。
-- OneDrive for Bussiness および SharePoint モダン添付ファイル-ユーザーが電子メールのリンクとして共有する、OneDrive for Business および SharePoint に格納されているファイル。
+- OneDrive for Business および SharePoint のモダン添付ファイル-ユーザーが電子メールのリンクとして共有する、OneDrive for business および SharePoint に格納されているファイル。
 
 **注**: 現在、データを使用して共有 API の結果を設定する作業を行っています。 リリース後の最初の週に、一部のデータが欠落している場合があります。
 

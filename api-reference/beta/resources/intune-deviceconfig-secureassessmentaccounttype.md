@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f1f7e2b6b9cbc32ee41840d96b706322660fd2b2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fa4867324541f12113d776e895132b663e0a208b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000558"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368066"
 ---
 # <a name="secureassessmentaccounttype-enum-type"></a>secureAssessmentAccountType 列挙型
 
@@ -27,8 +27,6 @@ Windows10SecureAssessment ConfigurationAccount で許可されているアカウ
 |domainAccount|1-d|ドメインアカウントが domain\user または user@domain.com の形式であることを示します。|
 |localAccount|pbm-2|ユーザー名の形式でローカルアカウントを示します。|
 |localGuestAccount|1/3|テスト名の形式でローカルのゲストアカウントを示します。|
-
-
 
 
 

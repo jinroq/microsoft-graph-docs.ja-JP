@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 0202378f9ad582559dc0a60181ec9b4ca0bbe2c4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b398e6b78946d1d804e61d84d512261a106aa20e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006179"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36366960"
 ---
 # <a name="androidmanagedstoreappconfigurationschemaitemdatatype-enum-type"></a>androidManagedStoreAppConfigurationSchemaItemDataType 列挙型
 
@@ -31,8 +31,6 @@ Android アプリケーションのカスタム構成スキーマ内の構成ア
 |バンドル|5|まだ文書化されていません|
 |bundleArray|シックス|まだ文書化されていません|
 |hidden|7|まだ文書化されていません|
-
-
 
 
 

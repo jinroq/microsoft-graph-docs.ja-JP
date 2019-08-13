@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3a57e6eaa89e91c4ca94717d5cc438fc4b1a7901
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4810595a6b09c49f79a40092d860e5e6b040115e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35984749"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36353575"
 ---
 # <a name="list-windowsinformationprotectionapplockerfiles"></a>windowsInformationProtectionAppLockerFiles のリスト
 
@@ -27,7 +27,7 @@ ms.locfileid: "35984749"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -81,6 +81,7 @@ Content-Length: 317
   ]
 }
 ```
+
 
 
 

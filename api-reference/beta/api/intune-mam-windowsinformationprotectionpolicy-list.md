@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bd0c3aab3d5332ff9d1394289972015ff33857c3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0af460223c8d099305949800a2448cc48e3da06c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35984700"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36353408"
 ---
 # <a name="list-windowsinformationprotectionpolicies"></a>windowsInformationProtectionPolicies のリスト
 
@@ -27,7 +27,7 @@ ms.locfileid: "35984700"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -212,6 +212,7 @@ Content-Length: 5232
   ]
 }
 ```
+
 
 
 

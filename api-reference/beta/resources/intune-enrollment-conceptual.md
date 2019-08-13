@@ -4,13 +4,12 @@ description: テナント組織のデバイスを登録する Intune エンド�
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-doc_type: conceptualPageType
-ms.openlocfilehash: f784f3aa837f13f009bd7520e89e045f8d952292
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 506f85ae59330757f4c6f12cf80795c6678b125e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999312"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36366372"
 ---
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>Intune を使用して会社所有のデバイスを登録する
 
@@ -41,7 +40,6 @@ ms.locfileid: "35999312"
 - [インポートした Windows AutoPilot デバイス ID](intune-enrollment-importedwindowsautopilotdeviceidentity.md)
 - [インポートした Windows AutoPilot デバイス ID のインポート状態](intune-enrollment-importedwindowsautopilotdeviceidentityimportstatus.md)
 - [インポートした Windows AutoPilot デバイス ID の状態](intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)
-- [インポートした Windows AutoPilot デバイス ID のアップロード](intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)
 - [インポートした Windows AutoPilot デバイス ID のアップロードの状態](intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md)
 - [iTunes ペアリング モード](intune-enrollment-itunespairingmode.md)
 - [拇印を含む証明書の管理](intune-enrollment-managementcertificatewiththumbprint.md)
