@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 48c250db3c000d5be99408c70ebf0e8a683a3342
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 78e9a5dc041330fb625568f5de1efeabaac3a833
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971354"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334529"
 ---
 # <a name="androidforworkrequiredpasswordtype-enum-type"></a>Androidforwork Requiredpasswordtype 列挙型
 
@@ -31,8 +31,6 @@ Android 用 Android が必要なパスワードの種類。
 |Atall Stアルファベット|5|少なくとも英字のパスワードが必要です。|
 |atLeastAlphanumeric|シックス|少なくとも英数字のパスワードが必要です。|
 |alphanumericWithSymbols|7|記号パスワードが必要な、少なくとも英数字。|
-
-
 
 
 

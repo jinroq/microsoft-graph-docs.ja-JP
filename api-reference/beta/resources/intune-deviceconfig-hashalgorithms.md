@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: fcc5d419e2a45b9b4212c3edcacc2376bc955482
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0efd1881510089228fc54b46d9d08166aacd7f40
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004317"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36338099"
 ---
 # <a name="hashalgorithms-enum-type"></a>hashAlgorithms の列挙型
 
@@ -25,8 +25,6 @@ ms.locfileid: "36004317"
 |:---|:---|:---|
 |sha1|1-d|SHA-1 ハッシュアルゴリズム。|
 |sha2|pbm-2|SHA-1 ハッシュアルゴリズム。|
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9a1f84da8c416bd8b3d8d496bb2519db8c209161
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 68a0099e6b96cb2c1ab33d7d7118ff1939f75e9a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35981382"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36348712"
 ---
 # <a name="resetpasscode-action"></a>resetPasscode アクション
 
@@ -27,7 +27,7 @@ ms.locfileid: "35981382"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementManagedDevices.PriviligedOperation.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementManagedDevices.PriviligedOperation.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -66,6 +66,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDe
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

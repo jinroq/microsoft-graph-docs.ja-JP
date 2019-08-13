@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 4f394b02eac7e54c7e74a1c6954d6e3a7414e1b9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bb093e222dcdef3fff552416b2593f73a7c51e51
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999186"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36327956"
 ---
 # <a name="enrollmentstate-enum-type"></a>enrollmentState 列挙型
 
@@ -29,8 +29,6 @@ ms.locfileid: "35999186"
 |フェール|1/3|登録されていません。登録エラーレコードがあります。|
 |notContacted|2/4|デバイスはインポートされていますが、登録されていません。|
 |ブロック|5|デバイスは userless として登録されていますが、アプリのインストールが失敗したため、ユーザー登録への移動がブロックされています。|
-
-
 
 
 
