@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 5cbbba22017a40ae2f7db41e25f497c09156a2f1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 529c42722d8ce3827bb9daa4c0f158cfd92d8383
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969374"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36367520"
 ---
 # <a name="vpntrafficruleroutingpolicytype-enum-type"></a>vpnTrafficRuleRoutingPolicyType 列挙型
 
@@ -26,8 +26,6 @@ VPN トラフィックルールのルーティングポリシーを指定しま�
 |none|.0|ルーティングポリシーが指定されていません。|
 |splitTunnel|1-d|指定したアプリのネットワークトラフィックは、VPN 経由でルーティングされます。|
 |forceTunnel|pbm-2|すべてのネットワークトラフィックは、VPN 経由でルーティングされます。|
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 98cdcc5db786de9ca38a9a25bfb21ba00e8418b5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b117e328d5f99f1a382e5a9964fbeec51b594910
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971663"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36367450"
 ---
 # <a name="mobileapppublishingstate-enum-type"></a>mobileAppPublishingState 列挙型
 
@@ -26,8 +26,6 @@ ms.locfileid: "35971663"
 |notPublished|.0|アプリはまだ公開されていません。|
 |プロセッシング|1-d|アプリは、サービス側の処理を保留しています。|
 |済み|pbm-2|アプリが発行されます。|
-
-
 
 
 

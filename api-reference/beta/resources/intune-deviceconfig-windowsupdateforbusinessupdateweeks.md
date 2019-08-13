@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 5b2543f82b10d690467ec6b7c6f199c030b99a6a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e44feac51d218d468cacd050f2c347e0cafb9ad3
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968681"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369536"
 ---
 # <a name="windowsupdateforbusinessupdateweeks-enum-type"></a>windowsUpdateForBusinessUpdateWeeks 列挙型
 
@@ -29,8 +29,6 @@ ms.locfileid: "35968681"
 |thirdWeek|2/4|月の第3週目に更新プログラムのインストールをスケジュールする|
 |4分の1週|8 |月の第4週に更新プログラムのインストールをスケジュールする|
 |全週|約|月の毎週、更新プログラムのインストールをスケジュールする|
-
-
 
 
 

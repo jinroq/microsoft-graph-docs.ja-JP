@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c552143a15c68ae1e94cdfe2e1d0f122b9aae0e7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5246d857ff34226490476488d8af7d648750fedd
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35989309"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36357629"
 ---
 # <a name="get-grouppolicypresentationtextbox"></a>GroupPolicyPresentationTextBox の取得
 
@@ -27,7 +27,7 @@ ms.locfileid: "35989309"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -81,6 +81,7 @@ Content-Length: 327
   }
 }
 ```
+
 
 
 

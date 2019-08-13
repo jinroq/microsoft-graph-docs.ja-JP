@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: dfc9dbb0f60cf6e7bcb9a2f695d9758298150585
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: df996a3267cc31b80456b74ca6002d3a95467e79
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000670"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368206"
 ---
 # <a name="ratingnewzealandmoviestype-enum-type"></a>ratingNewZealandMoviesType 列挙型
 
@@ -34,8 +34,6 @@ ms.locfileid: "36000670"
 |agesAbove18|8 |R18 の分類は、18年以上に制限されています。|
 |しか|9 |R 分類は特定の対象ユーザーに制限されています。|
 |agesAbove16Restricted|10 |RP16 分類には、16以下の閲覧者が親または成人と共に必要|
-
-
 
 
 

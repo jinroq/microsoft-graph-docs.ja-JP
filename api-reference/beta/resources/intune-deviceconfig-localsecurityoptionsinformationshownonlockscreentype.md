@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: df52f848d5167af38aabc621ad5ec4126cd33106
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6137ebd4bfb778b8d8f7e6e28cf38d72274b4761
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970246"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36356684"
 ---
 # <a name="localsecurityoptionsinformationshownonlockscreentype-enum-type"></a>localSecurityOptionsInformationShownOnLockScreenType 列挙型
 
@@ -27,8 +27,6 @@ LocalSecurityOptionsInformationShownOnLockScreenType に指定できる値
 |userDisplayNameDomainUser|1-d|ユーザーの表示名、ドメインおよびユーザー名|
 |userDisplayNameOnly|pbm-2|ユーザーの表示名のみ|
 |Displaydisplayuser|1/3|ユーザー情報を表示しない|
-
-
 
 
 

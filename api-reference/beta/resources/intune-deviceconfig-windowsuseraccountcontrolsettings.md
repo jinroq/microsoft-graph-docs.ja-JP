@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 55346e5946129393ae9302c9fbc582313be9819f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1e26ef18691f457be74d172f9a1fc1671248ca9d
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968674"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369487"
 ---
 # <a name="windowsuseraccountcontrolsettings-enum-type"></a>windowsUserAccountControlSettings 列挙型
 
@@ -28,8 +28,6 @@ Windows ユーザーアカウント制御設定に指定できる値。
 |notifyOnAppChanges|pbm-2|アプリの変更について通知します。|
 |Notifyonappのすべての非追加暗転|1/3|デスクトップを暗転せずに、アプリの変更について通知します。|
 |neverNotify|2/4|通知しません。|
-
-
 
 
 
