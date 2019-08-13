@@ -5,59 +5,59 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: dc3bb039fa005d83738d8fd0a762a465c092048b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 14ec176afd4a76e591f42f318da78a6f34ba0d33
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35992466"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36342377"
 ---
-# <a name="participant-configuremixer"></a><span data-ttu-id="98318-103">参加者: configureMixer</span><span class="sxs-lookup"><span data-stu-id="98318-103">participant: configureMixer</span></span>
+# <a name="participant-configuremixer"></a><span data-ttu-id="b49f5-103">参加者: configureMixer</span><span class="sxs-lookup"><span data-stu-id="b49f5-103">participant: configureMixer</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="98318-104">マルチパーティの会話で、さまざまな参加者に対して音声を混在させる方法を構成します。</span><span class="sxs-lookup"><span data-stu-id="98318-104">Configure how audio is mixed for different participants in a multiparty conversation.</span></span>
+<span data-ttu-id="b49f5-104">マルチパーティの会話で、さまざまな参加者に対して音声を混在させる方法を構成します。</span><span class="sxs-lookup"><span data-stu-id="b49f5-104">Configure how audio is mixed for different participants in a multiparty conversation.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="98318-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="98318-105">Permissions</span></span>
-<span data-ttu-id="98318-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="98318-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="b49f5-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="b49f5-105">Permissions</span></span>
+<span data-ttu-id="b49f5-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b49f5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="98318-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="98318-108">Permission type</span></span> | <span data-ttu-id="98318-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="98318-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="b49f5-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="b49f5-108">Permission type</span></span> | <span data-ttu-id="b49f5-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="b49f5-109">Permissions (from least to most privileged)</span></span> |
 | :-------------- | :------------------------------------------ |
-| <span data-ttu-id="98318-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="98318-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="98318-111">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="98318-111">Not Supported</span></span>        |
-| <span data-ttu-id="98318-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="98318-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="98318-113">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="98318-113">Not Supported</span></span>        |
-| <span data-ttu-id="98318-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="98318-114">Application</span></span>     | <span data-ttu-id="98318-115">JoinGroupCalls を呼び出します。すべて、InitiateGroupCalls を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="98318-115">Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All</span></span> |
+| <span data-ttu-id="b49f5-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="b49f5-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="b49f5-111">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="b49f5-111">Not Supported</span></span>        |
+| <span data-ttu-id="b49f5-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="b49f5-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b49f5-113">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="b49f5-113">Not Supported</span></span>        |
+| <span data-ttu-id="b49f5-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="b49f5-114">Application</span></span>     | <span data-ttu-id="b49f5-115">JoinGroupCalls を呼び出します。すべて、InitiateGroupCalls を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="b49f5-115">Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="98318-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="98318-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b49f5-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="b49f5-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/participants/configureMixer
 POST /applications/{id}/calls/{id}/participants/configureMixer
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="98318-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="98318-117">Request headers</span></span>
-| <span data-ttu-id="98318-118">名前</span><span class="sxs-lookup"><span data-stu-id="98318-118">Name</span></span>          | <span data-ttu-id="98318-119">説明</span><span class="sxs-lookup"><span data-stu-id="98318-119">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="b49f5-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b49f5-117">Request headers</span></span>
+| <span data-ttu-id="b49f5-118">名前</span><span class="sxs-lookup"><span data-stu-id="b49f5-118">Name</span></span>          | <span data-ttu-id="b49f5-119">説明</span><span class="sxs-lookup"><span data-stu-id="b49f5-119">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="98318-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="98318-120">Authorization</span></span> | <span data-ttu-id="98318-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="98318-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="b49f5-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="b49f5-120">Authorization</span></span> | <span data-ttu-id="b49f5-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="b49f5-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="98318-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="98318-123">Request body</span></span>
-<span data-ttu-id="98318-124">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="98318-124">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b49f5-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="b49f5-123">Request body</span></span>
+<span data-ttu-id="b49f5-124">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="b49f5-124">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="98318-125">パラメーター</span><span class="sxs-lookup"><span data-stu-id="98318-125">Parameter</span></span>      | <span data-ttu-id="98318-126">型</span><span class="sxs-lookup"><span data-stu-id="98318-126">Type</span></span>    |<span data-ttu-id="98318-127">説明</span><span class="sxs-lookup"><span data-stu-id="98318-127">Description</span></span>|
+| <span data-ttu-id="b49f5-125">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b49f5-125">Parameter</span></span>      | <span data-ttu-id="b49f5-126">型</span><span class="sxs-lookup"><span data-stu-id="b49f5-126">Type</span></span>    |<span data-ttu-id="b49f5-127">説明</span><span class="sxs-lookup"><span data-stu-id="b49f5-127">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="98318-128">participantMixerLevels</span><span class="sxs-lookup"><span data-stu-id="98318-128">participantMixerLevels</span></span>|<span data-ttu-id="98318-129">[participantMixerLevel](../resources/participantmixerlevel.md)コレクション</span><span class="sxs-lookup"><span data-stu-id="98318-129">[participantMixerLevel](../resources/participantmixerlevel.md) collection</span></span>| <span data-ttu-id="98318-130">特定の音声参加者のミキサーレベルの構成。</span><span class="sxs-lookup"><span data-stu-id="98318-130">Configuration of mixer levels for given audio participant.</span></span>|
-|<span data-ttu-id="98318-131">clientContext</span><span class="sxs-lookup"><span data-stu-id="98318-131">clientContext</span></span>|<span data-ttu-id="98318-132">String</span><span class="sxs-lookup"><span data-stu-id="98318-132">String</span></span>|<span data-ttu-id="98318-133">クライアントコンテキスト。</span><span class="sxs-lookup"><span data-stu-id="98318-133">The client context.</span></span>|
+|<span data-ttu-id="b49f5-128">participantMixerLevels</span><span class="sxs-lookup"><span data-stu-id="b49f5-128">participantMixerLevels</span></span>|<span data-ttu-id="b49f5-129">[participantMixerLevel](../resources/participantmixerlevel.md)コレクション</span><span class="sxs-lookup"><span data-stu-id="b49f5-129">[participantMixerLevel](../resources/participantmixerlevel.md) collection</span></span>| <span data-ttu-id="b49f5-130">特定の音声参加者のミキサーレベルの構成。</span><span class="sxs-lookup"><span data-stu-id="b49f5-130">Configuration of mixer levels for given audio participant.</span></span>|
+|<span data-ttu-id="b49f5-131">clientContext</span><span class="sxs-lookup"><span data-stu-id="b49f5-131">clientContext</span></span>|<span data-ttu-id="b49f5-132">String</span><span class="sxs-lookup"><span data-stu-id="b49f5-132">String</span></span>|<span data-ttu-id="b49f5-133">クライアントコンテキスト。</span><span class="sxs-lookup"><span data-stu-id="b49f5-133">The client context.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="98318-134">応答</span><span class="sxs-lookup"><span data-stu-id="98318-134">Response</span></span>
-<span data-ttu-id="98318-135">この`202 Accepted`要求に対して作成された[commsOperation](../resources/commsoperation.md)への uri を持つ応答コードと位置ヘッダーを返します。</span><span class="sxs-lookup"><span data-stu-id="98318-135">Returns `202 Accepted` response code and a Location header with a uri to the [commsOperation](../resources/commsoperation.md) created for this request.</span></span>
+## <a name="response"></a><span data-ttu-id="b49f5-134">応答</span><span class="sxs-lookup"><span data-stu-id="b49f5-134">Response</span></span>
+<span data-ttu-id="b49f5-135">この`202 Accepted`要求に対して作成された[commsOperation](../resources/commsoperation.md)への uri を持つ応答コードと位置ヘッダーを返します。</span><span class="sxs-lookup"><span data-stu-id="b49f5-135">Returns `202 Accepted` response code and a Location header with a uri to the [commsOperation](../resources/commsoperation.md) created for this request.</span></span>
 
-## <a name="example"></a><span data-ttu-id="98318-136">例</span><span class="sxs-lookup"><span data-stu-id="98318-136">Example</span></span>
-<span data-ttu-id="98318-137">次の例は、この API を呼び出す方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="98318-137">The following example shows how to call this API.</span></span>
+## <a name="example"></a><span data-ttu-id="b49f5-136">例</span><span class="sxs-lookup"><span data-stu-id="b49f5-136">Example</span></span>
+<span data-ttu-id="b49f5-137">次の例は、この API を呼び出す方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="b49f5-137">The following example shows how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="98318-138">要求</span><span class="sxs-lookup"><span data-stu-id="98318-138">Request</span></span>
-<span data-ttu-id="98318-139">次の例は要求を示しています。</span><span class="sxs-lookup"><span data-stu-id="98318-139">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="b49f5-138">要求</span><span class="sxs-lookup"><span data-stu-id="b49f5-138">Request</span></span>
+<span data-ttu-id="b49f5-139">次の例は要求を示しています。</span><span class="sxs-lookup"><span data-stu-id="b49f5-139">The following example shows the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="98318-140">プロトコル</span><span class="sxs-lookup"><span data-stu-id="98318-140">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="b49f5-140">プロトコル</span><span class="sxs-lookup"><span data-stu-id="b49f5-140">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "participant-configureMixer"
@@ -90,28 +90,28 @@ Content-Length: 501
   ]
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="98318-141">C#</span><span class="sxs-lookup"><span data-stu-id="98318-141">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="b49f5-141">C#</span><span class="sxs-lookup"><span data-stu-id="b49f5-141">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/participant-configuremixer-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="98318-142">Javascript</span><span class="sxs-lookup"><span data-stu-id="98318-142">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b49f5-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b49f5-142">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/participant-configuremixer-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="98318-143">目的-C</span><span class="sxs-lookup"><span data-stu-id="98318-143">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="b49f5-143">目的-C</span><span class="sxs-lookup"><span data-stu-id="b49f5-143">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/participant-configuremixer-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="98318-144">Java</span><span class="sxs-lookup"><span data-stu-id="98318-144">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="b49f5-144">Java</span><span class="sxs-lookup"><span data-stu-id="b49f5-144">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/participant-configuremixer-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="98318-145">応答</span><span class="sxs-lookup"><span data-stu-id="98318-145">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="b49f5-145">応答</span><span class="sxs-lookup"><span data-stu-id="b49f5-145">Response</span></span>
 
-> <span data-ttu-id="98318-p103">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="98318-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="b49f5-p103">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="b49f5-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -123,7 +123,7 @@ HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 ```
 
-##### <a name="notification---operation-completed"></a><span data-ttu-id="98318-148">通知-操作が完了しました</span><span class="sxs-lookup"><span data-stu-id="98318-148">Notification - operation completed</span></span>
+##### <a name="notification---operation-completed"></a><span data-ttu-id="b49f5-148">通知-操作が完了しました</span><span class="sxs-lookup"><span data-stu-id="b49f5-148">Notification - operation completed</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls

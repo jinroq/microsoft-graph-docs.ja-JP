@@ -5,31 +5,31 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 97dda4343383a4635cae72b761c0e1e5d252006d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7cb3d474687120749159d9552edd17648515b339
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35950141"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36340367"
 ---
-# <a name="create-defaultdevicecompliancepolicy"></a><span data-ttu-id="64d6b-103">DefaultDeviceCompliancePolicy の作成</span><span class="sxs-lookup"><span data-stu-id="64d6b-103">Create defaultDeviceCompliancePolicy</span></span>
+# <a name="create-defaultdevicecompliancepolicy"></a><span data-ttu-id="110f7-103">DefaultDeviceCompliancePolicy の作成</span><span class="sxs-lookup"><span data-stu-id="110f7-103">Create defaultDeviceCompliancePolicy</span></span>
 
-> <span data-ttu-id="64d6b-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="64d6b-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="110f7-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="110f7-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="64d6b-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="64d6b-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="110f7-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="110f7-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="64d6b-106">新しい[Defaultdevicecompliancepolicy](../resources/intune-deviceconfig-defaultdevicecompliancepolicy.md)オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="64d6b-106">Create a new [defaultDeviceCompliancePolicy](../resources/intune-deviceconfig-defaultdevicecompliancepolicy.md) object.</span></span>
+<span data-ttu-id="110f7-106">新しい[Defaultdevicecompliancepolicy](../resources/intune-deviceconfig-defaultdevicecompliancepolicy.md)オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="110f7-106">Create a new [defaultDeviceCompliancePolicy](../resources/intune-deviceconfig-defaultdevicecompliancepolicy.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="64d6b-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="64d6b-107">Prerequisites</span></span>
-<span data-ttu-id="64d6b-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="64d6b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="110f7-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="110f7-107">Prerequisites</span></span>
+<span data-ttu-id="110f7-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="110f7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="64d6b-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="64d6b-110">Permission type</span></span>|<span data-ttu-id="64d6b-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="64d6b-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="110f7-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="110f7-110">Permission type</span></span>|<span data-ttu-id="110f7-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="110f7-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="64d6b-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="64d6b-112">Delegated (work or school account)</span></span>|<span data-ttu-id="64d6b-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="64d6b-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="64d6b-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="64d6b-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="64d6b-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="64d6b-115">Not supported.</span></span>|
-|<span data-ttu-id="64d6b-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="64d6b-116">Application</span></span>|<span data-ttu-id="64d6b-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="64d6b-117">Not supported.</span></span>|
+|<span data-ttu-id="110f7-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="110f7-112">Delegated (work or school account)</span></span>|<span data-ttu-id="110f7-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="110f7-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="110f7-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="110f7-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="110f7-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="110f7-115">Not supported.</span></span>|
+|<span data-ttu-id="110f7-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="110f7-116">Application</span></span>|<span data-ttu-id="110f7-117">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="110f7-117">DeviceManagementConfiguration.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="64d6b-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="64d6b-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="110f7-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="110f7-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,36 +38,36 @@ ms.locfileid: "35950141"
 POST /deviceManagement/deviceCompliancePolicies
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="64d6b-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="64d6b-119">Request headers</span></span>
-|<span data-ttu-id="64d6b-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="64d6b-120">Header</span></span>|<span data-ttu-id="64d6b-121">値</span><span class="sxs-lookup"><span data-stu-id="64d6b-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="110f7-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="110f7-119">Request headers</span></span>
+|<span data-ttu-id="110f7-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="110f7-120">Header</span></span>|<span data-ttu-id="110f7-121">値</span><span class="sxs-lookup"><span data-stu-id="110f7-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="64d6b-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="64d6b-122">Authorization</span></span>|<span data-ttu-id="64d6b-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="64d6b-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="64d6b-124">承諾</span><span class="sxs-lookup"><span data-stu-id="64d6b-124">Accept</span></span>|<span data-ttu-id="64d6b-125">application/json</span><span class="sxs-lookup"><span data-stu-id="64d6b-125">application/json</span></span>|
+|<span data-ttu-id="110f7-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="110f7-122">Authorization</span></span>|<span data-ttu-id="110f7-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="110f7-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="110f7-124">承諾</span><span class="sxs-lookup"><span data-stu-id="110f7-124">Accept</span></span>|<span data-ttu-id="110f7-125">application/json</span><span class="sxs-lookup"><span data-stu-id="110f7-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="64d6b-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="64d6b-126">Request body</span></span>
-<span data-ttu-id="64d6b-127">要求本文で、defaultDeviceCompliancePolicy オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="64d6b-127">In the request body, supply a JSON representation for the defaultDeviceCompliancePolicy object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="110f7-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="110f7-126">Request body</span></span>
+<span data-ttu-id="110f7-127">要求本文で、defaultDeviceCompliancePolicy オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="110f7-127">In the request body, supply a JSON representation for the defaultDeviceCompliancePolicy object.</span></span>
 
-<span data-ttu-id="64d6b-128">次の表に、defaultDeviceCompliancePolicy の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="64d6b-128">The following table shows the properties that are required when you create the defaultDeviceCompliancePolicy.</span></span>
+<span data-ttu-id="110f7-128">次の表に、defaultDeviceCompliancePolicy の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="110f7-128">The following table shows the properties that are required when you create the defaultDeviceCompliancePolicy.</span></span>
 
-|<span data-ttu-id="64d6b-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="64d6b-129">Property</span></span>|<span data-ttu-id="64d6b-130">型</span><span class="sxs-lookup"><span data-stu-id="64d6b-130">Type</span></span>|<span data-ttu-id="64d6b-131">説明</span><span class="sxs-lookup"><span data-stu-id="64d6b-131">Description</span></span>|
+|<span data-ttu-id="110f7-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="110f7-129">Property</span></span>|<span data-ttu-id="110f7-130">型</span><span class="sxs-lookup"><span data-stu-id="110f7-130">Type</span></span>|<span data-ttu-id="110f7-131">説明</span><span class="sxs-lookup"><span data-stu-id="110f7-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="64d6b-132">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="64d6b-132">roleScopeTagIds</span></span>|<span data-ttu-id="64d6b-133">文字列コレクション</span><span class="sxs-lookup"><span data-stu-id="64d6b-133">String collection</span></span>|<span data-ttu-id="64d6b-134">このエンティティインスタンスの範囲タグのリスト。</span><span class="sxs-lookup"><span data-stu-id="64d6b-134">List of Scope Tags for this Entity instance.</span></span> <span data-ttu-id="64d6b-135">[deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します</span><span class="sxs-lookup"><span data-stu-id="64d6b-135">Inherited from [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)</span></span>|
-|<span data-ttu-id="64d6b-136">id</span><span class="sxs-lookup"><span data-stu-id="64d6b-136">id</span></span>|<span data-ttu-id="64d6b-137">文字列</span><span class="sxs-lookup"><span data-stu-id="64d6b-137">String</span></span>|<span data-ttu-id="64d6b-138">エンティティのキー。</span><span class="sxs-lookup"><span data-stu-id="64d6b-138">Key of the entity.</span></span> <span data-ttu-id="64d6b-139">[deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します</span><span class="sxs-lookup"><span data-stu-id="64d6b-139">Inherited from [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)</span></span>|
-|<span data-ttu-id="64d6b-140">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="64d6b-140">createdDateTime</span></span>|<span data-ttu-id="64d6b-141">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="64d6b-141">DateTimeOffset</span></span>|<span data-ttu-id="64d6b-142">オブジェクトが作成された DateTime。</span><span class="sxs-lookup"><span data-stu-id="64d6b-142">DateTime the object was created.</span></span> <span data-ttu-id="64d6b-143">[deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します</span><span class="sxs-lookup"><span data-stu-id="64d6b-143">Inherited from [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)</span></span>|
-|<span data-ttu-id="64d6b-144">description</span><span class="sxs-lookup"><span data-stu-id="64d6b-144">description</span></span>|<span data-ttu-id="64d6b-145">String</span><span class="sxs-lookup"><span data-stu-id="64d6b-145">String</span></span>|<span data-ttu-id="64d6b-146">管理者が指定した、デバイス構成についての説明。</span><span class="sxs-lookup"><span data-stu-id="64d6b-146">Admin provided description of the Device Configuration.</span></span> <span data-ttu-id="64d6b-147">[deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します</span><span class="sxs-lookup"><span data-stu-id="64d6b-147">Inherited from [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)</span></span>|
-|<span data-ttu-id="64d6b-148">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="64d6b-148">lastModifiedDateTime</span></span>|<span data-ttu-id="64d6b-149">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="64d6b-149">DateTimeOffset</span></span>|<span data-ttu-id="64d6b-150">オブジェクトの最終更新の DateTime。</span><span class="sxs-lookup"><span data-stu-id="64d6b-150">DateTime the object was last modified.</span></span> <span data-ttu-id="64d6b-151">[deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します</span><span class="sxs-lookup"><span data-stu-id="64d6b-151">Inherited from [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)</span></span>|
-|<span data-ttu-id="64d6b-152">displayName</span><span class="sxs-lookup"><span data-stu-id="64d6b-152">displayName</span></span>|<span data-ttu-id="64d6b-153">String</span><span class="sxs-lookup"><span data-stu-id="64d6b-153">String</span></span>|<span data-ttu-id="64d6b-154">管理者が指定した、デバイス構成の名前。</span><span class="sxs-lookup"><span data-stu-id="64d6b-154">Admin provided name of the device configuration.</span></span> <span data-ttu-id="64d6b-155">[deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します</span><span class="sxs-lookup"><span data-stu-id="64d6b-155">Inherited from [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)</span></span>|
-|<span data-ttu-id="64d6b-156">version</span><span class="sxs-lookup"><span data-stu-id="64d6b-156">version</span></span>|<span data-ttu-id="64d6b-157">Int32</span><span class="sxs-lookup"><span data-stu-id="64d6b-157">Int32</span></span>|<span data-ttu-id="64d6b-158">デバイス構成のバージョン。</span><span class="sxs-lookup"><span data-stu-id="64d6b-158">Version of the device configuration.</span></span> <span data-ttu-id="64d6b-159">[deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します</span><span class="sxs-lookup"><span data-stu-id="64d6b-159">Inherited from [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)</span></span>|
+|<span data-ttu-id="110f7-132">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="110f7-132">roleScopeTagIds</span></span>|<span data-ttu-id="110f7-133">文字列コレクション</span><span class="sxs-lookup"><span data-stu-id="110f7-133">String collection</span></span>|<span data-ttu-id="110f7-134">このエンティティインスタンスの範囲タグのリスト。</span><span class="sxs-lookup"><span data-stu-id="110f7-134">List of Scope Tags for this Entity instance.</span></span> <span data-ttu-id="110f7-135">[deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します</span><span class="sxs-lookup"><span data-stu-id="110f7-135">Inherited from [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)</span></span>|
+|<span data-ttu-id="110f7-136">id</span><span class="sxs-lookup"><span data-stu-id="110f7-136">id</span></span>|<span data-ttu-id="110f7-137">文字列</span><span class="sxs-lookup"><span data-stu-id="110f7-137">String</span></span>|<span data-ttu-id="110f7-138">エンティティのキー。</span><span class="sxs-lookup"><span data-stu-id="110f7-138">Key of the entity.</span></span> <span data-ttu-id="110f7-139">[deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します</span><span class="sxs-lookup"><span data-stu-id="110f7-139">Inherited from [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)</span></span>|
+|<span data-ttu-id="110f7-140">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="110f7-140">createdDateTime</span></span>|<span data-ttu-id="110f7-141">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="110f7-141">DateTimeOffset</span></span>|<span data-ttu-id="110f7-142">オブジェクトが作成された DateTime。</span><span class="sxs-lookup"><span data-stu-id="110f7-142">DateTime the object was created.</span></span> <span data-ttu-id="110f7-143">[deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します</span><span class="sxs-lookup"><span data-stu-id="110f7-143">Inherited from [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)</span></span>|
+|<span data-ttu-id="110f7-144">description</span><span class="sxs-lookup"><span data-stu-id="110f7-144">description</span></span>|<span data-ttu-id="110f7-145">String</span><span class="sxs-lookup"><span data-stu-id="110f7-145">String</span></span>|<span data-ttu-id="110f7-146">管理者が指定した、デバイス構成についての説明。</span><span class="sxs-lookup"><span data-stu-id="110f7-146">Admin provided description of the Device Configuration.</span></span> <span data-ttu-id="110f7-147">[deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します</span><span class="sxs-lookup"><span data-stu-id="110f7-147">Inherited from [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)</span></span>|
+|<span data-ttu-id="110f7-148">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="110f7-148">lastModifiedDateTime</span></span>|<span data-ttu-id="110f7-149">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="110f7-149">DateTimeOffset</span></span>|<span data-ttu-id="110f7-150">オブジェクトの最終更新の DateTime。</span><span class="sxs-lookup"><span data-stu-id="110f7-150">DateTime the object was last modified.</span></span> <span data-ttu-id="110f7-151">[deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します</span><span class="sxs-lookup"><span data-stu-id="110f7-151">Inherited from [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)</span></span>|
+|<span data-ttu-id="110f7-152">displayName</span><span class="sxs-lookup"><span data-stu-id="110f7-152">displayName</span></span>|<span data-ttu-id="110f7-153">String</span><span class="sxs-lookup"><span data-stu-id="110f7-153">String</span></span>|<span data-ttu-id="110f7-154">管理者が指定した、デバイス構成の名前。</span><span class="sxs-lookup"><span data-stu-id="110f7-154">Admin provided name of the device configuration.</span></span> <span data-ttu-id="110f7-155">[deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します</span><span class="sxs-lookup"><span data-stu-id="110f7-155">Inherited from [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)</span></span>|
+|<span data-ttu-id="110f7-156">version</span><span class="sxs-lookup"><span data-stu-id="110f7-156">version</span></span>|<span data-ttu-id="110f7-157">Int32</span><span class="sxs-lookup"><span data-stu-id="110f7-157">Int32</span></span>|<span data-ttu-id="110f7-158">デバイス構成のバージョン。</span><span class="sxs-lookup"><span data-stu-id="110f7-158">Version of the device configuration.</span></span> <span data-ttu-id="110f7-159">[deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します</span><span class="sxs-lookup"><span data-stu-id="110f7-159">Inherited from [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="64d6b-160">応答</span><span class="sxs-lookup"><span data-stu-id="64d6b-160">Response</span></span>
-<span data-ttu-id="64d6b-161">成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[Defaultdevicecompliancepolicy](../resources/intune-deviceconfig-defaultdevicecompliancepolicy.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="64d6b-161">If successful, this method returns a `201 Created` response code and a [defaultDeviceCompliancePolicy](../resources/intune-deviceconfig-defaultdevicecompliancepolicy.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="110f7-160">応答</span><span class="sxs-lookup"><span data-stu-id="110f7-160">Response</span></span>
+<span data-ttu-id="110f7-161">成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[Defaultdevicecompliancepolicy](../resources/intune-deviceconfig-defaultdevicecompliancepolicy.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="110f7-161">If successful, this method returns a `201 Created` response code and a [defaultDeviceCompliancePolicy](../resources/intune-deviceconfig-defaultdevicecompliancepolicy.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="64d6b-162">例</span><span class="sxs-lookup"><span data-stu-id="64d6b-162">Example</span></span>
+## <a name="example"></a><span data-ttu-id="110f7-162">例</span><span class="sxs-lookup"><span data-stu-id="110f7-162">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="64d6b-163">要求</span><span class="sxs-lookup"><span data-stu-id="64d6b-163">Request</span></span>
-<span data-ttu-id="64d6b-164">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="64d6b-164">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="110f7-163">要求</span><span class="sxs-lookup"><span data-stu-id="110f7-163">Request</span></span>
+<span data-ttu-id="110f7-164">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="110f7-164">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies
 Content-type: application/json
@@ -84,8 +84,8 @@ Content-length: 229
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="64d6b-165">応答</span><span class="sxs-lookup"><span data-stu-id="64d6b-165">Response</span></span>
-<span data-ttu-id="64d6b-p109">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="64d6b-p109">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="110f7-165">応答</span><span class="sxs-lookup"><span data-stu-id="110f7-165">Response</span></span>
+<span data-ttu-id="110f7-p109">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="110f7-p109">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -104,6 +104,7 @@ Content-Length: 401
   "version": 7
 }
 ```
+
 
 
 
