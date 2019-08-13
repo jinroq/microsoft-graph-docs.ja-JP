@@ -5,31 +5,31 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5af7fee426a3b0630cee30ad7638d622e82af93b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: dc126ec4b7a3d71811eb9ee95ebe0d9bbf2fb04c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35989757"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36357902"
 ---
-# <a name="create-grouppolicypresentationcombobox"></a><span data-ttu-id="ff717-103">GroupPolicyPresentationComboBox の作成</span><span class="sxs-lookup"><span data-stu-id="ff717-103">Create groupPolicyPresentationComboBox</span></span>
+# <a name="create-grouppolicypresentationcombobox"></a><span data-ttu-id="0c50c-103">GroupPolicyPresentationComboBox の作成</span><span class="sxs-lookup"><span data-stu-id="0c50c-103">Create groupPolicyPresentationComboBox</span></span>
 
-> <span data-ttu-id="ff717-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="ff717-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="0c50c-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="0c50c-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="ff717-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="ff717-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="0c50c-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="0c50c-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="ff717-106">新しい[Grouppolicypresentationcombobox](../resources/intune-grouppolicy-grouppolicypresentationcombobox.md)オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="ff717-106">Create a new [groupPolicyPresentationComboBox](../resources/intune-grouppolicy-grouppolicypresentationcombobox.md) object.</span></span>
+<span data-ttu-id="0c50c-106">新しい[Grouppolicypresentationcombobox](../resources/intune-grouppolicy-grouppolicypresentationcombobox.md)オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="0c50c-106">Create a new [groupPolicyPresentationComboBox](../resources/intune-grouppolicy-grouppolicypresentationcombobox.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="ff717-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="ff717-107">Prerequisites</span></span>
-<span data-ttu-id="ff717-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ff717-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="0c50c-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="0c50c-107">Prerequisites</span></span>
+<span data-ttu-id="0c50c-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0c50c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ff717-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="ff717-110">Permission type</span></span>|<span data-ttu-id="ff717-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="ff717-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="0c50c-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="0c50c-110">Permission type</span></span>|<span data-ttu-id="0c50c-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="0c50c-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="ff717-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="ff717-112">Delegated (work or school account)</span></span>|<span data-ttu-id="ff717-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ff717-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="ff717-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="ff717-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="ff717-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="ff717-115">Not supported.</span></span>|
-|<span data-ttu-id="ff717-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="ff717-116">Application</span></span>|<span data-ttu-id="ff717-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="ff717-117">Not supported.</span></span>|
+|<span data-ttu-id="0c50c-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="0c50c-112">Delegated (work or school account)</span></span>|<span data-ttu-id="0c50c-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0c50c-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="0c50c-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="0c50c-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="0c50c-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="0c50c-115">Not supported.</span></span>|
+|<span data-ttu-id="0c50c-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="0c50c-116">Application</span></span>|<span data-ttu-id="0c50c-117">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0c50c-117">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="ff717-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="ff717-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0c50c-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="0c50c-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,36 +38,36 @@ ms.locfileid: "35989757"
 POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation/definition/presentations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="ff717-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="ff717-119">Request headers</span></span>
-|<span data-ttu-id="ff717-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="ff717-120">Header</span></span>|<span data-ttu-id="ff717-121">値</span><span class="sxs-lookup"><span data-stu-id="ff717-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="0c50c-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="0c50c-119">Request headers</span></span>
+|<span data-ttu-id="0c50c-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="0c50c-120">Header</span></span>|<span data-ttu-id="0c50c-121">値</span><span class="sxs-lookup"><span data-stu-id="0c50c-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="ff717-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="ff717-122">Authorization</span></span>|<span data-ttu-id="ff717-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="ff717-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="ff717-124">承諾</span><span class="sxs-lookup"><span data-stu-id="ff717-124">Accept</span></span>|<span data-ttu-id="ff717-125">application/json</span><span class="sxs-lookup"><span data-stu-id="ff717-125">application/json</span></span>|
+|<span data-ttu-id="0c50c-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="0c50c-122">Authorization</span></span>|<span data-ttu-id="0c50c-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="0c50c-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="0c50c-124">承諾</span><span class="sxs-lookup"><span data-stu-id="0c50c-124">Accept</span></span>|<span data-ttu-id="0c50c-125">application/json</span><span class="sxs-lookup"><span data-stu-id="0c50c-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="ff717-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="ff717-126">Request body</span></span>
-<span data-ttu-id="ff717-127">要求本文で、groupPolicyPresentationComboBox オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="ff717-127">In the request body, supply a JSON representation for the groupPolicyPresentationComboBox object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="0c50c-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="0c50c-126">Request body</span></span>
+<span data-ttu-id="0c50c-127">要求本文で、groupPolicyPresentationComboBox オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="0c50c-127">In the request body, supply a JSON representation for the groupPolicyPresentationComboBox object.</span></span>
 
-<span data-ttu-id="ff717-128">次の表に、groupPolicyPresentationComboBox の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="ff717-128">The following table shows the properties that are required when you create the groupPolicyPresentationComboBox.</span></span>
+<span data-ttu-id="0c50c-128">次の表に、groupPolicyPresentationComboBox の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="0c50c-128">The following table shows the properties that are required when you create the groupPolicyPresentationComboBox.</span></span>
 
-|<span data-ttu-id="ff717-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="ff717-129">Property</span></span>|<span data-ttu-id="ff717-130">型</span><span class="sxs-lookup"><span data-stu-id="ff717-130">Type</span></span>|<span data-ttu-id="ff717-131">説明</span><span class="sxs-lookup"><span data-stu-id="ff717-131">Description</span></span>|
+|<span data-ttu-id="0c50c-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="0c50c-129">Property</span></span>|<span data-ttu-id="0c50c-130">型</span><span class="sxs-lookup"><span data-stu-id="0c50c-130">Type</span></span>|<span data-ttu-id="0c50c-131">説明</span><span class="sxs-lookup"><span data-stu-id="0c50c-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="ff717-132">label</span><span class="sxs-lookup"><span data-stu-id="ff717-132">label</span></span>|<span data-ttu-id="ff717-133">String</span><span class="sxs-lookup"><span data-stu-id="ff717-133">String</span></span>|<span data-ttu-id="ff717-134">任意のプレゼンテーションエンティティのローカライズされたテキストラベル。</span><span class="sxs-lookup"><span data-stu-id="ff717-134">Localized text label for any presentation entity.</span></span> <span data-ttu-id="ff717-135">既定値は空白です。</span><span class="sxs-lookup"><span data-stu-id="ff717-135">The default value is empty.</span></span> <span data-ttu-id="ff717-136">[GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。</span><span class="sxs-lookup"><span data-stu-id="ff717-136">Inherited from [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)</span></span>|
-|<span data-ttu-id="ff717-137">id</span><span class="sxs-lookup"><span data-stu-id="ff717-137">id</span></span>|<span data-ttu-id="ff717-138">String</span><span class="sxs-lookup"><span data-stu-id="ff717-138">String</span></span>|<span data-ttu-id="ff717-139">エンティティのキー。</span><span class="sxs-lookup"><span data-stu-id="ff717-139">Key of the entity.</span></span> <span data-ttu-id="ff717-140">[GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。</span><span class="sxs-lookup"><span data-stu-id="ff717-140">Inherited from [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)</span></span>|
-|<span data-ttu-id="ff717-141">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="ff717-141">lastModifiedDateTime</span></span>|<span data-ttu-id="ff717-142">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="ff717-142">DateTimeOffset</span></span>|<span data-ttu-id="ff717-143">エンティティが最後に変更された日付と時刻。</span><span class="sxs-lookup"><span data-stu-id="ff717-143">The date and time the entity was last modified.</span></span> <span data-ttu-id="ff717-144">[GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。</span><span class="sxs-lookup"><span data-stu-id="ff717-144">Inherited from [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)</span></span>|
-|<span data-ttu-id="ff717-145">defaultValue</span><span class="sxs-lookup"><span data-stu-id="ff717-145">defaultValue</span></span>|<span data-ttu-id="ff717-146">String</span><span class="sxs-lookup"><span data-stu-id="ff717-146">String</span></span>|<span data-ttu-id="ff717-147">コンボボックスに表示されるローカライズされた既定の文字列。</span><span class="sxs-lookup"><span data-stu-id="ff717-147">Localized default string displayed in the combo box.</span></span> <span data-ttu-id="ff717-148">既定値は空白です。</span><span class="sxs-lookup"><span data-stu-id="ff717-148">The default value is empty.</span></span>|
-|<span data-ttu-id="ff717-149">助言</span><span class="sxs-lookup"><span data-stu-id="ff717-149">suggestions</span></span>|<span data-ttu-id="ff717-150">文字列コレクション</span><span class="sxs-lookup"><span data-stu-id="ff717-150">String collection</span></span>|<span data-ttu-id="ff717-151">コンボボックスのドロップダウンリストに表示されるローカライズされた文字列。</span><span class="sxs-lookup"><span data-stu-id="ff717-151">Localized strings listed in the drop-down list of the combo box.</span></span> <span data-ttu-id="ff717-152">既定値は空白です。</span><span class="sxs-lookup"><span data-stu-id="ff717-152">The default value is empty.</span></span>|
-|<span data-ttu-id="ff717-153">必須</span><span class="sxs-lookup"><span data-stu-id="ff717-153">required</span></span>|<span data-ttu-id="ff717-154">Boolean</span><span class="sxs-lookup"><span data-stu-id="ff717-154">Boolean</span></span>|<span data-ttu-id="ff717-155">パラメーターに値を指定する必要があるかどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="ff717-155">Specifies whether a value must be specified for the parameter.</span></span> <span data-ttu-id="ff717-156">既定値は false です。</span><span class="sxs-lookup"><span data-stu-id="ff717-156">The default value is false.</span></span>|
-|<span data-ttu-id="ff717-157">maxLength</span><span class="sxs-lookup"><span data-stu-id="ff717-157">maxLength</span></span>|<span data-ttu-id="ff717-158">Int64</span><span class="sxs-lookup"><span data-stu-id="ff717-158">Int64</span></span>|<span data-ttu-id="ff717-159">パラメーターのテキスト文字の最大数を指定する符号なし整数。</span><span class="sxs-lookup"><span data-stu-id="ff717-159">An unsigned integer that specifies the maximum number of text characters for the parameter.</span></span> <span data-ttu-id="ff717-160">既定値は1023です。</span><span class="sxs-lookup"><span data-stu-id="ff717-160">The default value is 1023.</span></span>|
+|<span data-ttu-id="0c50c-132">label</span><span class="sxs-lookup"><span data-stu-id="0c50c-132">label</span></span>|<span data-ttu-id="0c50c-133">String</span><span class="sxs-lookup"><span data-stu-id="0c50c-133">String</span></span>|<span data-ttu-id="0c50c-134">任意のプレゼンテーションエンティティのローカライズされたテキストラベル。</span><span class="sxs-lookup"><span data-stu-id="0c50c-134">Localized text label for any presentation entity.</span></span> <span data-ttu-id="0c50c-135">既定値は空白です。</span><span class="sxs-lookup"><span data-stu-id="0c50c-135">The default value is empty.</span></span> <span data-ttu-id="0c50c-136">[GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。</span><span class="sxs-lookup"><span data-stu-id="0c50c-136">Inherited from [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)</span></span>|
+|<span data-ttu-id="0c50c-137">id</span><span class="sxs-lookup"><span data-stu-id="0c50c-137">id</span></span>|<span data-ttu-id="0c50c-138">String</span><span class="sxs-lookup"><span data-stu-id="0c50c-138">String</span></span>|<span data-ttu-id="0c50c-139">エンティティのキー。</span><span class="sxs-lookup"><span data-stu-id="0c50c-139">Key of the entity.</span></span> <span data-ttu-id="0c50c-140">[GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。</span><span class="sxs-lookup"><span data-stu-id="0c50c-140">Inherited from [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)</span></span>|
+|<span data-ttu-id="0c50c-141">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="0c50c-141">lastModifiedDateTime</span></span>|<span data-ttu-id="0c50c-142">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="0c50c-142">DateTimeOffset</span></span>|<span data-ttu-id="0c50c-143">エンティティが最後に変更された日付と時刻。</span><span class="sxs-lookup"><span data-stu-id="0c50c-143">The date and time the entity was last modified.</span></span> <span data-ttu-id="0c50c-144">[GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)から継承します。</span><span class="sxs-lookup"><span data-stu-id="0c50c-144">Inherited from [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)</span></span>|
+|<span data-ttu-id="0c50c-145">defaultValue</span><span class="sxs-lookup"><span data-stu-id="0c50c-145">defaultValue</span></span>|<span data-ttu-id="0c50c-146">String</span><span class="sxs-lookup"><span data-stu-id="0c50c-146">String</span></span>|<span data-ttu-id="0c50c-147">コンボボックスに表示されるローカライズされた既定の文字列。</span><span class="sxs-lookup"><span data-stu-id="0c50c-147">Localized default string displayed in the combo box.</span></span> <span data-ttu-id="0c50c-148">既定値は空白です。</span><span class="sxs-lookup"><span data-stu-id="0c50c-148">The default value is empty.</span></span>|
+|<span data-ttu-id="0c50c-149">助言</span><span class="sxs-lookup"><span data-stu-id="0c50c-149">suggestions</span></span>|<span data-ttu-id="0c50c-150">文字列コレクション</span><span class="sxs-lookup"><span data-stu-id="0c50c-150">String collection</span></span>|<span data-ttu-id="0c50c-151">コンボボックスのドロップダウンリストに表示されるローカライズされた文字列。</span><span class="sxs-lookup"><span data-stu-id="0c50c-151">Localized strings listed in the drop-down list of the combo box.</span></span> <span data-ttu-id="0c50c-152">既定値は空白です。</span><span class="sxs-lookup"><span data-stu-id="0c50c-152">The default value is empty.</span></span>|
+|<span data-ttu-id="0c50c-153">必須</span><span class="sxs-lookup"><span data-stu-id="0c50c-153">required</span></span>|<span data-ttu-id="0c50c-154">Boolean</span><span class="sxs-lookup"><span data-stu-id="0c50c-154">Boolean</span></span>|<span data-ttu-id="0c50c-155">パラメーターに値を指定する必要があるかどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="0c50c-155">Specifies whether a value must be specified for the parameter.</span></span> <span data-ttu-id="0c50c-156">既定値は false です。</span><span class="sxs-lookup"><span data-stu-id="0c50c-156">The default value is false.</span></span>|
+|<span data-ttu-id="0c50c-157">maxLength</span><span class="sxs-lookup"><span data-stu-id="0c50c-157">maxLength</span></span>|<span data-ttu-id="0c50c-158">Int64</span><span class="sxs-lookup"><span data-stu-id="0c50c-158">Int64</span></span>|<span data-ttu-id="0c50c-159">パラメーターのテキスト文字の最大数を指定する符号なし整数。</span><span class="sxs-lookup"><span data-stu-id="0c50c-159">An unsigned integer that specifies the maximum number of text characters for the parameter.</span></span> <span data-ttu-id="0c50c-160">既定値は1023です。</span><span class="sxs-lookup"><span data-stu-id="0c50c-160">The default value is 1023.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="ff717-161">応答</span><span class="sxs-lookup"><span data-stu-id="ff717-161">Response</span></span>
-<span data-ttu-id="ff717-162">成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[Grouppolicypresentationcombobox](../resources/intune-grouppolicy-grouppolicypresentationcombobox.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="ff717-162">If successful, this method returns a `201 Created` response code and a [groupPolicyPresentationComboBox](../resources/intune-grouppolicy-grouppolicypresentationcombobox.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="0c50c-161">応答</span><span class="sxs-lookup"><span data-stu-id="0c50c-161">Response</span></span>
+<span data-ttu-id="0c50c-162">成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[Grouppolicypresentationcombobox](../resources/intune-grouppolicy-grouppolicypresentationcombobox.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="0c50c-162">If successful, this method returns a `201 Created` response code and a [groupPolicyPresentationComboBox](../resources/intune-grouppolicy-grouppolicypresentationcombobox.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ff717-163">例</span><span class="sxs-lookup"><span data-stu-id="ff717-163">Example</span></span>
+## <a name="example"></a><span data-ttu-id="0c50c-163">例</span><span class="sxs-lookup"><span data-stu-id="0c50c-163">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="ff717-164">要求</span><span class="sxs-lookup"><span data-stu-id="ff717-164">Request</span></span>
-<span data-ttu-id="ff717-165">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="ff717-165">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="0c50c-164">要求</span><span class="sxs-lookup"><span data-stu-id="0c50c-164">Request</span></span>
+<span data-ttu-id="0c50c-165">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="0c50c-165">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation/definition/presentations
 Content-type: application/json
@@ -85,8 +85,8 @@ Content-length: 233
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="ff717-166">応答</span><span class="sxs-lookup"><span data-stu-id="ff717-166">Response</span></span>
-<span data-ttu-id="ff717-p109">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="ff717-p109">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="0c50c-166">応答</span><span class="sxs-lookup"><span data-stu-id="0c50c-166">Response</span></span>
+<span data-ttu-id="0c50c-p109">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="0c50c-p109">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -105,6 +105,7 @@ Content-Length: 346
   "maxLength": 9
 }
 ```
+
 
 
 
