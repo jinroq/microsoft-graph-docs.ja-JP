@@ -7,29 +7,29 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: ドライブ項目の共有への招待を送信します。
 doc_type: apiPageType
-ms.openlocfilehash: 3f245cc3b518502f39a6ca2928ea31719661d27b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 47aa7e49875d4d07ebc8b80a0f86c5939aea13ec
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36015426"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36375045"
 ---
-# <a name="send-a-sharing-invitation"></a><span data-ttu-id="b4739-103">共有の招待状を送信する</span><span class="sxs-lookup"><span data-stu-id="b4739-103">Send a sharing invitation</span></span>
+# <a name="send-a-sharing-invitation"></a><span data-ttu-id="b052c-103">共有の招待状を送信する</span><span class="sxs-lookup"><span data-stu-id="b052c-103">Send a sharing invitation</span></span>
 
-<span data-ttu-id="b4739-104">**ドライブ項目**の共有への招待を送信します。</span><span class="sxs-lookup"><span data-stu-id="b4739-104">Sends a sharing invitation for a **DriveItem**.</span></span>
-<span data-ttu-id="b4739-105">共有への招待では、受信者にアクセス許可が与えられ、必要に応じて[共有リンク][]を使用して電子メールを送信します。</span><span class="sxs-lookup"><span data-stu-id="b4739-105">A sharing invitation provides permissions to the recipients and optionally sends them an email with a [sharing link][].</span></span>
+<span data-ttu-id="b052c-104">**ドライブ項目**の共有への招待を送信します。</span><span class="sxs-lookup"><span data-stu-id="b052c-104">Sends a sharing invitation for a **DriveItem**.</span></span>
+<span data-ttu-id="b052c-105">共有への招待では、受信者にアクセス許可が与えられ、必要に応じて[共有リンク][]を使用して電子メールを送信します。</span><span class="sxs-lookup"><span data-stu-id="b052c-105">A sharing invitation provides permissions to the recipients and optionally sends them an email with a [sharing link][].</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="b4739-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="b4739-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="b052c-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="b052c-106">Permissions</span></span>
 
-<span data-ttu-id="b4739-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4739-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="b052c-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b052c-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b4739-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="b4739-109">Permission type</span></span>      | <span data-ttu-id="b4739-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="b4739-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b052c-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="b052c-109">Permission type</span></span>      | <span data-ttu-id="b052c-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="b052c-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="b4739-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="b4739-111">Delegated (work or school account)</span></span> | <span data-ttu-id="b4739-112">Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b4739-112">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="b4739-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="b4739-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b4739-114">Files.ReadWrite、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b4739-114">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="b4739-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="b4739-115">Application</span></span> | <span data-ttu-id="b4739-116">Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b4739-116">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="b052c-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="b052c-111">Delegated (work or school account)</span></span> | <span data-ttu-id="b052c-112">Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b052c-112">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="b052c-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="b052c-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b052c-114">Files.ReadWrite、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b052c-114">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="b052c-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="b052c-115">Application</span></span> | <span data-ttu-id="b052c-116">Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b052c-116">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="b4739-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="b4739-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b052c-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="b052c-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -41,9 +41,9 @@ POST /sites/{siteId}/drive/items/{itemId}/invite
 POST /users/{userId}/drive/items/{itemId}/invite
 ```
 
-## <a name="request-body"></a><span data-ttu-id="b4739-118">要求本文</span><span class="sxs-lookup"><span data-stu-id="b4739-118">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="b052c-118">要求本文</span><span class="sxs-lookup"><span data-stu-id="b052c-118">Request body</span></span>
 
-<span data-ttu-id="b4739-119">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="b4739-119">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="b052c-119">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="b052c-119">In the request body, provide a JSON object with the following parameters.</span></span>
 
 <!-- { "blockType": "ignored", "scopes": "files.readwrite" } -->
 
@@ -60,25 +60,25 @@ POST /users/{userId}/drive/items/{itemId}/invite
 }
 ```
 
-| <span data-ttu-id="b4739-120">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4739-120">Parameter</span></span>        | <span data-ttu-id="b4739-121">型</span><span class="sxs-lookup"><span data-stu-id="b4739-121">Type</span></span>                           | <span data-ttu-id="b4739-122">説明</span><span class="sxs-lookup"><span data-stu-id="b4739-122">Description</span></span>
+| <span data-ttu-id="b052c-120">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b052c-120">Parameter</span></span>        | <span data-ttu-id="b052c-121">型</span><span class="sxs-lookup"><span data-stu-id="b052c-121">Type</span></span>                           | <span data-ttu-id="b052c-122">説明</span><span class="sxs-lookup"><span data-stu-id="b052c-122">Description</span></span>
 |:-----------------|:-------------------------------|:-------------------------
-| <span data-ttu-id="b4739-123">Recipients</span><span class="sxs-lookup"><span data-stu-id="b4739-123">recipients</span></span>       | <span data-ttu-id="b4739-124">Collection([DriveRecipient][])</span><span class="sxs-lookup"><span data-stu-id="b4739-124">Collection([DriveRecipient][])</span></span> | <span data-ttu-id="b4739-125">アクセスおよび共有の招待状を受信する、受信者のコレクション。</span><span class="sxs-lookup"><span data-stu-id="b4739-125">A collection of recipients who will receive access and the sharing invitation.</span></span>
-| <span data-ttu-id="b4739-126">message</span><span class="sxs-lookup"><span data-stu-id="b4739-126">message</span></span>          | <span data-ttu-id="b4739-127">String</span><span class="sxs-lookup"><span data-stu-id="b4739-127">String</span></span>                         | <span data-ttu-id="b4739-p103">共有の招待状に含まれるプレーンテキスト形式のメッセージ。最大の長さは 2000 文字です。</span><span class="sxs-lookup"><span data-stu-id="b4739-p103">A plain text formatted message that is included in the sharing invitation. Maximum length 2000 characters.</span></span>
-| <span data-ttu-id="b4739-130">requireSignIn</span><span class="sxs-lookup"><span data-stu-id="b4739-130">requireSignIn</span></span>    | <span data-ttu-id="b4739-131">Boolean</span><span class="sxs-lookup"><span data-stu-id="b4739-131">Boolean</span></span>                        | <span data-ttu-id="b4739-132">共有アイテムを表示するために、招待状の受信者がサインインする必要があるかどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="b4739-132">Specifies whether the recipient of the invitation is required to sign-in to view the shared item.</span></span>
-| <span data-ttu-id="b4739-133">sendInvitation</span><span class="sxs-lookup"><span data-stu-id="b4739-133">sendInvitation</span></span>   | <span data-ttu-id="b4739-134">ブール値</span><span class="sxs-lookup"><span data-stu-id="b4739-134">Boolean</span></span>                        | <span data-ttu-id="b4739-135">True の場合、[共有リンク][]は受信者に送信されます。</span><span class="sxs-lookup"><span data-stu-id="b4739-135">If true, a [sharing link][] is sent to the recipient.</span></span> <span data-ttu-id="b4739-136">それ以外の場合は、通知を送信することなく、直接アクセス許可が付与されます。</span><span class="sxs-lookup"><span data-stu-id="b4739-136">Otherwise, a permission is granted directly without sending a notification.</span></span>
-| <span data-ttu-id="b4739-137">roles</span><span class="sxs-lookup"><span data-stu-id="b4739-137">roles</span></span>            | <span data-ttu-id="b4739-138">Collection(String)</span><span class="sxs-lookup"><span data-stu-id="b4739-138">Collection(String)</span></span>             | <span data-ttu-id="b4739-139">共有への招待の受信者に付与する役割を指定します。</span><span class="sxs-lookup"><span data-stu-id="b4739-139">Specify the roles that are to be granted to the recipients of the sharing invitation.</span></span>
+| <span data-ttu-id="b052c-123">Recipients</span><span class="sxs-lookup"><span data-stu-id="b052c-123">recipients</span></span>       | <span data-ttu-id="b052c-124">Collection([DriveRecipient][])</span><span class="sxs-lookup"><span data-stu-id="b052c-124">Collection([DriveRecipient][])</span></span> | <span data-ttu-id="b052c-125">アクセスおよび共有の招待状を受信する、受信者のコレクション。</span><span class="sxs-lookup"><span data-stu-id="b052c-125">A collection of recipients who will receive access and the sharing invitation.</span></span>
+| <span data-ttu-id="b052c-126">message</span><span class="sxs-lookup"><span data-stu-id="b052c-126">message</span></span>          | <span data-ttu-id="b052c-127">String</span><span class="sxs-lookup"><span data-stu-id="b052c-127">String</span></span>                         | <span data-ttu-id="b052c-p103">共有の招待状に含まれるプレーンテキスト形式のメッセージ。最大の長さは 2000 文字です。</span><span class="sxs-lookup"><span data-stu-id="b052c-p103">A plain text formatted message that is included in the sharing invitation. Maximum length 2000 characters.</span></span>
+| <span data-ttu-id="b052c-130">requireSignIn</span><span class="sxs-lookup"><span data-stu-id="b052c-130">requireSignIn</span></span>    | <span data-ttu-id="b052c-131">Boolean</span><span class="sxs-lookup"><span data-stu-id="b052c-131">Boolean</span></span>                        | <span data-ttu-id="b052c-132">共有アイテムを表示するために、招待状の受信者がサインインする必要があるかどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="b052c-132">Specifies whether the recipient of the invitation is required to sign-in to view the shared item.</span></span>
+| <span data-ttu-id="b052c-133">sendInvitation</span><span class="sxs-lookup"><span data-stu-id="b052c-133">sendInvitation</span></span>   | <span data-ttu-id="b052c-134">ブール値</span><span class="sxs-lookup"><span data-stu-id="b052c-134">Boolean</span></span>                        | <span data-ttu-id="b052c-135">True の場合、[共有リンク][]は受信者に送信されます。</span><span class="sxs-lookup"><span data-stu-id="b052c-135">If true, a [sharing link][] is sent to the recipient.</span></span> <span data-ttu-id="b052c-136">それ以外の場合は、通知を送信することなく、直接アクセス許可が付与されます。</span><span class="sxs-lookup"><span data-stu-id="b052c-136">Otherwise, a permission is granted directly without sending a notification.</span></span>
+| <span data-ttu-id="b052c-137">roles</span><span class="sxs-lookup"><span data-stu-id="b052c-137">roles</span></span>            | <span data-ttu-id="b052c-138">Collection(String)</span><span class="sxs-lookup"><span data-stu-id="b052c-138">Collection(String)</span></span>             | <span data-ttu-id="b052c-139">共有への招待の受信者に付与する役割を指定します。</span><span class="sxs-lookup"><span data-stu-id="b052c-139">Specify the roles that are to be granted to the recipients of the sharing invitation.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b4739-140">例</span><span class="sxs-lookup"><span data-stu-id="b4739-140">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b052c-140">例</span><span class="sxs-lookup"><span data-stu-id="b052c-140">Example</span></span>
 
-<span data-ttu-id="b4739-141">この例では、電子メールアドレスが "ryan@contoso.com" のユーザーに、共同作業中のファイルに関するメッセージを含む共有への招待を送信します。</span><span class="sxs-lookup"><span data-stu-id="b4739-141">This example sends a sharing invitation to a user with email address "ryan@contoso.com" with a message about a file being collaborated on.</span></span>
-<span data-ttu-id="b4739-142">この招待により、Ryan にはファイルへの読み取り/書き込みアクセス権が付与されます。</span><span class="sxs-lookup"><span data-stu-id="b4739-142">The invitation grants Ryan read-write access to the file.</span></span>
+<span data-ttu-id="b052c-141">この例では、電子メールアドレスが "ryan@contoso.com" のユーザーに、共同作業中のファイルに関するメッセージを含む共有への招待を送信します。</span><span class="sxs-lookup"><span data-stu-id="b052c-141">This example sends a sharing invitation to a user with email address "ryan@contoso.com" with a message about a file being collaborated on.</span></span>
+<span data-ttu-id="b052c-142">この招待により、Ryan にはファイルへの読み取り/書き込みアクセス権が付与されます。</span><span class="sxs-lookup"><span data-stu-id="b052c-142">The invitation grants Ryan read-write access to the file.</span></span>
 
-### <a name="http-request"></a><span data-ttu-id="b4739-143">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="b4739-143">HTTP Request</span></span>
+### <a name="http-request"></a><span data-ttu-id="b052c-143">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="b052c-143">HTTP Request</span></span>
 
-<span data-ttu-id="b4739-144">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で[アクセス許可](../resources/permission.md)コレクション オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="b4739-144">If successful, this method returns `200 OK` response code and [permission](../resources/permission.md) collection object in the response body.</span></span>
+<span data-ttu-id="b052c-144">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で[アクセス許可](../resources/permission.md)コレクション オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="b052c-144">If successful, this method returns `200 OK` response code and [permission](../resources/permission.md) collection object in the response body.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="b4739-145">プロトコル</span><span class="sxs-lookup"><span data-stu-id="b4739-145">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="b052c-145">プロトコル</span><span class="sxs-lookup"><span data-stu-id="b052c-145">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "send-sharing-invite", "scopes": "files.readwrite", "target": "action" } -->
 
 ```json
@@ -97,28 +97,28 @@ Content-type: application/json
   "roles": [ "write" ]
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="b4739-146">C#</span><span class="sxs-lookup"><span data-stu-id="b4739-146">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="b052c-146">C#</span><span class="sxs-lookup"><span data-stu-id="b052c-146">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/send-sharing-invite-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b4739-147">Javascript</span><span class="sxs-lookup"><span data-stu-id="b4739-147">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b052c-147">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b052c-147">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/send-sharing-invite-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="b4739-148">目的-C</span><span class="sxs-lookup"><span data-stu-id="b4739-148">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="b052c-148">目的-C</span><span class="sxs-lookup"><span data-stu-id="b052c-148">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/send-sharing-invite-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="b4739-149">Java</span><span class="sxs-lookup"><span data-stu-id="b4739-149">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="b052c-149">Java</span><span class="sxs-lookup"><span data-stu-id="b052c-149">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/send-sharing-invite-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="b4739-150">応答</span><span class="sxs-lookup"><span data-stu-id="b4739-150">Response</span></span>
+### <a name="response"></a><span data-ttu-id="b052c-150">応答</span><span class="sxs-lookup"><span data-stu-id="b052c-150">Response</span></span>
 
-<span data-ttu-id="b4739-151">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="b4739-151">Here is an example of the response.</span></span>
+<span data-ttu-id="b052c-151">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="b052c-151">Here is an example of the response.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true } -->
 
@@ -146,14 +146,14 @@ Content-type: application/json
 }
 ```
 
-## <a name="remarks"></a><span data-ttu-id="b4739-152">備考</span><span class="sxs-lookup"><span data-stu-id="b4739-152">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="b052c-152">備考</span><span class="sxs-lookup"><span data-stu-id="b052c-152">Remarks</span></span>
 
-* <span data-ttu-id="b4739-153">`personal` (OneDrive 個人用) の **driveType** を持つ[ドライブ](../resources/drive.md)は、ルートの DriveItem でアクセス許可を作成したり、変更したりすることはできません。</span><span class="sxs-lookup"><span data-stu-id="b4739-153">[Drives](../resources/drive.md) with a **driveType** of `personal` (OneDrive personal) cannot create or modify permissions on the root DriveItem.</span></span>
-* <span data-ttu-id="b4739-154">使用可能なロールの一覧は、「[ロール列挙](../resources/permission.md#roles-enumeration)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4739-154">For a list of available roles, see [Roles enumeration](../resources/permission.md#roles-enumeration).</span></span>
+* <span data-ttu-id="b052c-153">`personal` (OneDrive 個人用) の **driveType** を持つ[ドライブ](../resources/drive.md)は、ルートの DriveItem でアクセス許可を作成したり、変更したりすることはできません。</span><span class="sxs-lookup"><span data-stu-id="b052c-153">[Drives](../resources/drive.md) with a **driveType** of `personal` (OneDrive personal) cannot create or modify permissions on the root DriveItem.</span></span>
+* <span data-ttu-id="b052c-154">使用可能なロールの一覧は、「[ロール列挙](../resources/permission.md#roles-enumeration)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b052c-154">For a list of available roles, see [Roles enumeration](../resources/permission.md#roles-enumeration).</span></span>
 
-## <a name="error-responses"></a><span data-ttu-id="b4739-155">エラー応答</span><span class="sxs-lookup"><span data-stu-id="b4739-155">Error Responses</span></span>
+## <a name="error-responses"></a><span data-ttu-id="b052c-155">エラー応答</span><span class="sxs-lookup"><span data-stu-id="b052c-155">Error Responses</span></span>
 
-<span data-ttu-id="b4739-156">エラーがどのような形で返されるかについては、「[エラー応答][error-response]」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4739-156">Read the [Error Responses][error-response] topic for more information about how errors are returned.</span></span>
+<span data-ttu-id="b052c-156">エラーがどのような形で返されるかについては、「[エラー応答][error-response]」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b052c-156">Read the [Error Responses][error-response] topic for more information about how errors are returned.</span></span>
 
 
 [driveRecipient]: ../resources/driverecipient.md

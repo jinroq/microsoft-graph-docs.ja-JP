@@ -5,31 +5,31 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b012c48c82844d7b7b4037cad664d0375629ca82
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3e83d34f519093dbc6e7b70a2cda385be7426d2c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35981662"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36310543"
 ---
-# <a name="create-devicemanagementscript"></a><span data-ttu-id="b7c77-103">DeviceManagementScript の作成</span><span class="sxs-lookup"><span data-stu-id="b7c77-103">Create deviceManagementScript</span></span>
+# <a name="create-devicemanagementscript"></a><span data-ttu-id="23787-103">DeviceManagementScript の作成</span><span class="sxs-lookup"><span data-stu-id="23787-103">Create deviceManagementScript</span></span>
 
-> <span data-ttu-id="b7c77-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b7c77-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="23787-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="23787-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="b7c77-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="b7c77-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="23787-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="23787-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="b7c77-106">新しい[Devicemanagementscript](../resources/intune-devices-devicemanagementscript.md)オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="b7c77-106">Create a new [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md) object.</span></span>
+<span data-ttu-id="23787-106">新しい[Devicemanagementscript](../resources/intune-devices-devicemanagementscript.md)オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="23787-106">Create a new [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="b7c77-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="b7c77-107">Prerequisites</span></span>
-<span data-ttu-id="b7c77-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b7c77-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="23787-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="23787-107">Prerequisites</span></span>
+<span data-ttu-id="23787-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="23787-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b7c77-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="b7c77-110">Permission type</span></span>|<span data-ttu-id="b7c77-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="b7c77-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="23787-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="23787-110">Permission type</span></span>|<span data-ttu-id="23787-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="23787-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="b7c77-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="b7c77-112">Delegated (work or school account)</span></span>|<span data-ttu-id="b7c77-113">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b7c77-113">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="b7c77-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="b7c77-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="b7c77-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b7c77-115">Not supported.</span></span>|
-|<span data-ttu-id="b7c77-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="b7c77-116">Application</span></span>|<span data-ttu-id="b7c77-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b7c77-117">Not supported.</span></span>|
+|<span data-ttu-id="23787-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="23787-112">Delegated (work or school account)</span></span>|<span data-ttu-id="23787-113">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="23787-113">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="23787-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="23787-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="23787-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="23787-115">Not supported.</span></span>|
+|<span data-ttu-id="23787-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="23787-116">Application</span></span>|<span data-ttu-id="23787-117">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="23787-117">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="b7c77-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="b7c77-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="23787-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="23787-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,41 +38,41 @@ ms.locfileid: "35981662"
 POST /deviceManagement/deviceManagementScripts
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="b7c77-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b7c77-119">Request headers</span></span>
-|<span data-ttu-id="b7c77-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b7c77-120">Header</span></span>|<span data-ttu-id="b7c77-121">値</span><span class="sxs-lookup"><span data-stu-id="b7c77-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="23787-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="23787-119">Request headers</span></span>
+|<span data-ttu-id="23787-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="23787-120">Header</span></span>|<span data-ttu-id="23787-121">値</span><span class="sxs-lookup"><span data-stu-id="23787-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="b7c77-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="b7c77-122">Authorization</span></span>|<span data-ttu-id="b7c77-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="b7c77-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="b7c77-124">承諾</span><span class="sxs-lookup"><span data-stu-id="b7c77-124">Accept</span></span>|<span data-ttu-id="b7c77-125">application/json</span><span class="sxs-lookup"><span data-stu-id="b7c77-125">application/json</span></span>|
+|<span data-ttu-id="23787-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="23787-122">Authorization</span></span>|<span data-ttu-id="23787-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="23787-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="23787-124">承諾</span><span class="sxs-lookup"><span data-stu-id="23787-124">Accept</span></span>|<span data-ttu-id="23787-125">application/json</span><span class="sxs-lookup"><span data-stu-id="23787-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="b7c77-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="b7c77-126">Request body</span></span>
-<span data-ttu-id="b7c77-127">要求本文で、deviceManagementScript オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="b7c77-127">In the request body, supply a JSON representation for the deviceManagementScript object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="23787-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="23787-126">Request body</span></span>
+<span data-ttu-id="23787-127">要求本文で、deviceManagementScript オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="23787-127">In the request body, supply a JSON representation for the deviceManagementScript object.</span></span>
 
-<span data-ttu-id="b7c77-128">次の表に、deviceManagementScript の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="b7c77-128">The following table shows the properties that are required when you create the deviceManagementScript.</span></span>
+<span data-ttu-id="23787-128">次の表に、deviceManagementScript の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="23787-128">The following table shows the properties that are required when you create the deviceManagementScript.</span></span>
 
-|<span data-ttu-id="b7c77-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="b7c77-129">Property</span></span>|<span data-ttu-id="b7c77-130">型</span><span class="sxs-lookup"><span data-stu-id="b7c77-130">Type</span></span>|<span data-ttu-id="b7c77-131">説明</span><span class="sxs-lookup"><span data-stu-id="b7c77-131">Description</span></span>|
+|<span data-ttu-id="23787-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="23787-129">Property</span></span>|<span data-ttu-id="23787-130">型</span><span class="sxs-lookup"><span data-stu-id="23787-130">Type</span></span>|<span data-ttu-id="23787-131">説明</span><span class="sxs-lookup"><span data-stu-id="23787-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="b7c77-132">id</span><span class="sxs-lookup"><span data-stu-id="b7c77-132">id</span></span>|<span data-ttu-id="b7c77-133">文字列</span><span class="sxs-lookup"><span data-stu-id="b7c77-133">String</span></span>|<span data-ttu-id="b7c77-134">デバイス管理スクリプトの一意識別子。</span><span class="sxs-lookup"><span data-stu-id="b7c77-134">Unique Identifier for the device management script.</span></span>|
-|<span data-ttu-id="b7c77-135">displayName</span><span class="sxs-lookup"><span data-stu-id="b7c77-135">displayName</span></span>|<span data-ttu-id="b7c77-136">String</span><span class="sxs-lookup"><span data-stu-id="b7c77-136">String</span></span>|<span data-ttu-id="b7c77-137">デバイス管理スクリプトの名前。</span><span class="sxs-lookup"><span data-stu-id="b7c77-137">Name of the device management script.</span></span>|
-|<span data-ttu-id="b7c77-138">description</span><span class="sxs-lookup"><span data-stu-id="b7c77-138">description</span></span>|<span data-ttu-id="b7c77-139">String</span><span class="sxs-lookup"><span data-stu-id="b7c77-139">String</span></span>|<span data-ttu-id="b7c77-140">デバイス管理スクリプトの省略可能な説明です。</span><span class="sxs-lookup"><span data-stu-id="b7c77-140">Optional description for the device management script.</span></span>|
-|<span data-ttu-id="b7c77-141">runSchedule</span><span class="sxs-lookup"><span data-stu-id="b7c77-141">runSchedule</span></span>|[<span data-ttu-id="b7c77-142">runSchedule</span><span class="sxs-lookup"><span data-stu-id="b7c77-142">runSchedule</span></span>](../resources/intune-devices-runschedule.md)|<span data-ttu-id="b7c77-143">スクリプトを実行する間隔を指定します。</span><span class="sxs-lookup"><span data-stu-id="b7c77-143">The interval for script to run.</span></span> <span data-ttu-id="b7c77-144">定義されていない場合、スクリプトは1回だけ実行されます。</span><span class="sxs-lookup"><span data-stu-id="b7c77-144">If not defined the script will run once</span></span>|
-|<span data-ttu-id="b7c77-145">scriptContent</span><span class="sxs-lookup"><span data-stu-id="b7c77-145">scriptContent</span></span>|<span data-ttu-id="b7c77-146">Binary</span><span class="sxs-lookup"><span data-stu-id="b7c77-146">Binary</span></span>|<span data-ttu-id="b7c77-147">スクリプトの内容。</span><span class="sxs-lookup"><span data-stu-id="b7c77-147">The script content.</span></span>|
-|<span data-ttu-id="b7c77-148">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="b7c77-148">createdDateTime</span></span>|<span data-ttu-id="b7c77-149">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="b7c77-149">DateTimeOffset</span></span>|<span data-ttu-id="b7c77-150">デバイス管理スクリプトが作成された日付と時刻。</span><span class="sxs-lookup"><span data-stu-id="b7c77-150">The date and time the device management script was created.</span></span>|
-|<span data-ttu-id="b7c77-151">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="b7c77-151">lastModifiedDateTime</span></span>|<span data-ttu-id="b7c77-152">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="b7c77-152">DateTimeOffset</span></span>|<span data-ttu-id="b7c77-153">デバイス管理スクリプトが最後に変更された日付と時刻。</span><span class="sxs-lookup"><span data-stu-id="b7c77-153">The date and time the device management script was last modified.</span></span>|
-|<span data-ttu-id="b7c77-154">runAsAccount</span><span class="sxs-lookup"><span data-stu-id="b7c77-154">runAsAccount</span></span>|[<span data-ttu-id="b7c77-155">runAsAccountType</span><span class="sxs-lookup"><span data-stu-id="b7c77-155">runAsAccountType</span></span>](../resources/intune-shared-runasaccounttype.md)|<span data-ttu-id="b7c77-156">実行コンテキストの種類を示します。</span><span class="sxs-lookup"><span data-stu-id="b7c77-156">Indicates the type of execution context.</span></span> <span data-ttu-id="b7c77-157">可能な値は、`system`、`user` です。</span><span class="sxs-lookup"><span data-stu-id="b7c77-157">Possible values are: `system`, `user`.</span></span>|
-|<span data-ttu-id="b7c77-158">enforceSignatureCheck</span><span class="sxs-lookup"><span data-stu-id="b7c77-158">enforceSignatureCheck</span></span>|<span data-ttu-id="b7c77-159">Boolean</span><span class="sxs-lookup"><span data-stu-id="b7c77-159">Boolean</span></span>|<span data-ttu-id="b7c77-160">スクリプト署名をチェックする必要があるかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="b7c77-160">Indicate whether the script signature needs be checked.</span></span>|
-|<span data-ttu-id="b7c77-161">fileName</span><span class="sxs-lookup"><span data-stu-id="b7c77-161">fileName</span></span>|<span data-ttu-id="b7c77-162">String</span><span class="sxs-lookup"><span data-stu-id="b7c77-162">String</span></span>|<span data-ttu-id="b7c77-163">スクリプトファイル名。</span><span class="sxs-lookup"><span data-stu-id="b7c77-163">Script file name.</span></span>|
-|<span data-ttu-id="b7c77-164">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="b7c77-164">roleScopeTagIds</span></span>|<span data-ttu-id="b7c77-165">文字列コレクション</span><span class="sxs-lookup"><span data-stu-id="b7c77-165">String collection</span></span>|<span data-ttu-id="b7c77-166">この PowerShellScript インスタンスの範囲タグ Id のリスト。</span><span class="sxs-lookup"><span data-stu-id="b7c77-166">List of Scope Tag IDs for this PowerShellScript instance.</span></span>|
-|<span data-ttu-id="b7c77-167">runAs32Bit</span><span class="sxs-lookup"><span data-stu-id="b7c77-167">runAs32Bit</span></span>|<span data-ttu-id="b7c77-168">Boolean</span><span class="sxs-lookup"><span data-stu-id="b7c77-168">Boolean</span></span>|<span data-ttu-id="b7c77-169">PowerShell スクリプトを32ビットとして実行する必要があるかどうかを示す値。</span><span class="sxs-lookup"><span data-stu-id="b7c77-169">A value indicating whether the PowerShell script should run as 32-bit</span></span>|
+|<span data-ttu-id="23787-132">id</span><span class="sxs-lookup"><span data-stu-id="23787-132">id</span></span>|<span data-ttu-id="23787-133">文字列</span><span class="sxs-lookup"><span data-stu-id="23787-133">String</span></span>|<span data-ttu-id="23787-134">デバイス管理スクリプトの一意識別子。</span><span class="sxs-lookup"><span data-stu-id="23787-134">Unique Identifier for the device management script.</span></span>|
+|<span data-ttu-id="23787-135">displayName</span><span class="sxs-lookup"><span data-stu-id="23787-135">displayName</span></span>|<span data-ttu-id="23787-136">String</span><span class="sxs-lookup"><span data-stu-id="23787-136">String</span></span>|<span data-ttu-id="23787-137">デバイス管理スクリプトの名前。</span><span class="sxs-lookup"><span data-stu-id="23787-137">Name of the device management script.</span></span>|
+|<span data-ttu-id="23787-138">description</span><span class="sxs-lookup"><span data-stu-id="23787-138">description</span></span>|<span data-ttu-id="23787-139">String</span><span class="sxs-lookup"><span data-stu-id="23787-139">String</span></span>|<span data-ttu-id="23787-140">デバイス管理スクリプトの省略可能な説明です。</span><span class="sxs-lookup"><span data-stu-id="23787-140">Optional description for the device management script.</span></span>|
+|<span data-ttu-id="23787-141">runSchedule</span><span class="sxs-lookup"><span data-stu-id="23787-141">runSchedule</span></span>|[<span data-ttu-id="23787-142">runSchedule</span><span class="sxs-lookup"><span data-stu-id="23787-142">runSchedule</span></span>](../resources/intune-devices-runschedule.md)|<span data-ttu-id="23787-143">スクリプトを実行する間隔を指定します。</span><span class="sxs-lookup"><span data-stu-id="23787-143">The interval for script to run.</span></span> <span data-ttu-id="23787-144">定義されていない場合、スクリプトは1回だけ実行されます。</span><span class="sxs-lookup"><span data-stu-id="23787-144">If not defined the script will run once</span></span>|
+|<span data-ttu-id="23787-145">scriptContent</span><span class="sxs-lookup"><span data-stu-id="23787-145">scriptContent</span></span>|<span data-ttu-id="23787-146">Binary</span><span class="sxs-lookup"><span data-stu-id="23787-146">Binary</span></span>|<span data-ttu-id="23787-147">スクリプトの内容。</span><span class="sxs-lookup"><span data-stu-id="23787-147">The script content.</span></span>|
+|<span data-ttu-id="23787-148">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="23787-148">createdDateTime</span></span>|<span data-ttu-id="23787-149">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="23787-149">DateTimeOffset</span></span>|<span data-ttu-id="23787-150">デバイス管理スクリプトが作成された日付と時刻。</span><span class="sxs-lookup"><span data-stu-id="23787-150">The date and time the device management script was created.</span></span>|
+|<span data-ttu-id="23787-151">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="23787-151">lastModifiedDateTime</span></span>|<span data-ttu-id="23787-152">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="23787-152">DateTimeOffset</span></span>|<span data-ttu-id="23787-153">デバイス管理スクリプトが最後に変更された日付と時刻。</span><span class="sxs-lookup"><span data-stu-id="23787-153">The date and time the device management script was last modified.</span></span>|
+|<span data-ttu-id="23787-154">runAsAccount</span><span class="sxs-lookup"><span data-stu-id="23787-154">runAsAccount</span></span>|[<span data-ttu-id="23787-155">runAsAccountType</span><span class="sxs-lookup"><span data-stu-id="23787-155">runAsAccountType</span></span>](../resources/intune-shared-runasaccounttype.md)|<span data-ttu-id="23787-156">実行コンテキストの種類を示します。</span><span class="sxs-lookup"><span data-stu-id="23787-156">Indicates the type of execution context.</span></span> <span data-ttu-id="23787-157">可能な値は、`system`、`user` です。</span><span class="sxs-lookup"><span data-stu-id="23787-157">Possible values are: `system`, `user`.</span></span>|
+|<span data-ttu-id="23787-158">enforceSignatureCheck</span><span class="sxs-lookup"><span data-stu-id="23787-158">enforceSignatureCheck</span></span>|<span data-ttu-id="23787-159">Boolean</span><span class="sxs-lookup"><span data-stu-id="23787-159">Boolean</span></span>|<span data-ttu-id="23787-160">スクリプト署名をチェックする必要があるかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="23787-160">Indicate whether the script signature needs be checked.</span></span>|
+|<span data-ttu-id="23787-161">fileName</span><span class="sxs-lookup"><span data-stu-id="23787-161">fileName</span></span>|<span data-ttu-id="23787-162">String</span><span class="sxs-lookup"><span data-stu-id="23787-162">String</span></span>|<span data-ttu-id="23787-163">スクリプトファイル名。</span><span class="sxs-lookup"><span data-stu-id="23787-163">Script file name.</span></span>|
+|<span data-ttu-id="23787-164">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="23787-164">roleScopeTagIds</span></span>|<span data-ttu-id="23787-165">文字列コレクション</span><span class="sxs-lookup"><span data-stu-id="23787-165">String collection</span></span>|<span data-ttu-id="23787-166">この PowerShellScript インスタンスの範囲タグ Id のリスト。</span><span class="sxs-lookup"><span data-stu-id="23787-166">List of Scope Tag IDs for this PowerShellScript instance.</span></span>|
+|<span data-ttu-id="23787-167">runAs32Bit</span><span class="sxs-lookup"><span data-stu-id="23787-167">runAs32Bit</span></span>|<span data-ttu-id="23787-168">Boolean</span><span class="sxs-lookup"><span data-stu-id="23787-168">Boolean</span></span>|<span data-ttu-id="23787-169">PowerShell スクリプトを32ビットとして実行する必要があるかどうかを示す値。</span><span class="sxs-lookup"><span data-stu-id="23787-169">A value indicating whether the PowerShell script should run as 32-bit</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="b7c77-170">応答</span><span class="sxs-lookup"><span data-stu-id="b7c77-170">Response</span></span>
-<span data-ttu-id="b7c77-171">成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[devicemanagementscript](../resources/intune-devices-devicemanagementscript.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="b7c77-171">If successful, this method returns a `201 Created` response code and a [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="23787-170">応答</span><span class="sxs-lookup"><span data-stu-id="23787-170">Response</span></span>
+<span data-ttu-id="23787-171">成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[devicemanagementscript](../resources/intune-devices-devicemanagementscript.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="23787-171">If successful, this method returns a `201 Created` response code and a [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b7c77-172">例</span><span class="sxs-lookup"><span data-stu-id="b7c77-172">Example</span></span>
+## <a name="example"></a><span data-ttu-id="23787-172">例</span><span class="sxs-lookup"><span data-stu-id="23787-172">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="b7c77-173">要求</span><span class="sxs-lookup"><span data-stu-id="b7c77-173">Request</span></span>
-<span data-ttu-id="b7c77-174">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="b7c77-174">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="23787-173">要求</span><span class="sxs-lookup"><span data-stu-id="23787-173">Request</span></span>
+<span data-ttu-id="23787-174">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="23787-174">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts
 Content-type: application/json
@@ -96,8 +96,8 @@ Content-length: 443
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="b7c77-175">応答</span><span class="sxs-lookup"><span data-stu-id="b7c77-175">Response</span></span>
-<span data-ttu-id="b7c77-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="b7c77-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="23787-175">応答</span><span class="sxs-lookup"><span data-stu-id="23787-175">Response</span></span>
+<span data-ttu-id="23787-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="23787-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -123,6 +123,7 @@ Content-Length: 615
   "runAs32Bit": true
 }
 ```
+
 
 
 

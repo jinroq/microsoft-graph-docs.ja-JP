@@ -5,29 +5,29 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5fe64500ecdd43ff40602a3fcd80848f918975d7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7f5c98a6a51f2ec363b4777473b678145499a1ba
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36016798"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36371814"
 ---
-# <a name="remove-directory-role-member"></a><span data-ttu-id="961a2-103">ディレクトリ ロールのメンバーを削除する</span><span class="sxs-lookup"><span data-stu-id="961a2-103">Remove directory role member</span></span>
+# <a name="remove-directory-role-member"></a><span data-ttu-id="4c918-103">ディレクトリ ロールのメンバーを削除する</span><span class="sxs-lookup"><span data-stu-id="4c918-103">Remove directory role member</span></span>
 
-<span data-ttu-id="961a2-104">directoryRole からメンバーを削除します。</span><span class="sxs-lookup"><span data-stu-id="961a2-104">Remove a member from a directoryRole.</span></span>
+<span data-ttu-id="4c918-104">directoryRole からメンバーを削除します。</span><span class="sxs-lookup"><span data-stu-id="4c918-104">Remove a member from a directoryRole.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="961a2-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="961a2-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="4c918-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="4c918-105">Permissions</span></span>
 
-<span data-ttu-id="961a2-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="961a2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="4c918-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4c918-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="961a2-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="961a2-108">Permission type</span></span>      | <span data-ttu-id="961a2-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="961a2-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="4c918-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="4c918-108">Permission type</span></span>      | <span data-ttu-id="4c918-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="4c918-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="961a2-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="961a2-110">Delegated (work or school account)</span></span> | <span data-ttu-id="961a2-111">RoleManagement、Directory.accessasuser.all、およびすべてのディレクトリ</span><span class="sxs-lookup"><span data-stu-id="961a2-111">RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="961a2-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="961a2-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="961a2-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="961a2-113">Not supported.</span></span>    |
-|<span data-ttu-id="961a2-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="961a2-114">Application</span></span> | <span data-ttu-id="961a2-115">RoleManagement</span><span class="sxs-lookup"><span data-stu-id="961a2-115">RoleManagement.ReadWrite.Directory</span></span> |
+|<span data-ttu-id="4c918-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="4c918-110">Delegated (work or school account)</span></span> | <span data-ttu-id="4c918-111">RoleManagement、Directory.accessasuser.all、およびすべてのディレクトリ</span><span class="sxs-lookup"><span data-stu-id="4c918-111">RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="4c918-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="4c918-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4c918-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="4c918-113">Not supported.</span></span>    |
+|<span data-ttu-id="4c918-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="4c918-114">Application</span></span> | <span data-ttu-id="4c918-115">RoleManagement</span><span class="sxs-lookup"><span data-stu-id="4c918-115">RoleManagement.ReadWrite.Directory</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="961a2-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="961a2-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4c918-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="4c918-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -35,27 +35,27 @@ ms.locfileid: "36016798"
 DELETE /directoryRoles/{id}/members/{id}/$ref
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="961a2-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="961a2-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="4c918-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="4c918-117">Request headers</span></span>
 
-| <span data-ttu-id="961a2-118">名前</span><span class="sxs-lookup"><span data-stu-id="961a2-118">Name</span></span>       | <span data-ttu-id="961a2-119">型</span><span class="sxs-lookup"><span data-stu-id="961a2-119">Type</span></span> | <span data-ttu-id="961a2-120">説明</span><span class="sxs-lookup"><span data-stu-id="961a2-120">Description</span></span>|
+| <span data-ttu-id="4c918-118">名前</span><span class="sxs-lookup"><span data-stu-id="4c918-118">Name</span></span>       | <span data-ttu-id="4c918-119">型</span><span class="sxs-lookup"><span data-stu-id="4c918-119">Type</span></span> | <span data-ttu-id="4c918-120">説明</span><span class="sxs-lookup"><span data-stu-id="4c918-120">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="961a2-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="961a2-121">Authorization</span></span>  | <span data-ttu-id="961a2-122">string</span><span class="sxs-lookup"><span data-stu-id="961a2-122">string</span></span>  | <span data-ttu-id="961a2-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="961a2-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="4c918-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="4c918-121">Authorization</span></span>  | <span data-ttu-id="4c918-122">string</span><span class="sxs-lookup"><span data-stu-id="4c918-122">string</span></span>  | <span data-ttu-id="4c918-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="4c918-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="961a2-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="961a2-125">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="4c918-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="4c918-125">Request body</span></span>
 
-<span data-ttu-id="961a2-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="961a2-126">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="4c918-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="4c918-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="961a2-127">応答</span><span class="sxs-lookup"><span data-stu-id="961a2-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="4c918-127">応答</span><span class="sxs-lookup"><span data-stu-id="4c918-127">Response</span></span>
 
-<span data-ttu-id="961a2-p103">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="961a2-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="4c918-p103">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="4c918-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="961a2-130">例</span><span class="sxs-lookup"><span data-stu-id="961a2-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="4c918-130">例</span><span class="sxs-lookup"><span data-stu-id="4c918-130">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="961a2-131">要求</span><span class="sxs-lookup"><span data-stu-id="961a2-131">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="4c918-131">要求</span><span class="sxs-lookup"><span data-stu-id="4c918-131">Request</span></span>
 
-<span data-ttu-id="961a2-132">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="961a2-132">Here is an example of the request.</span></span>
+<span data-ttu-id="4c918-132">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="4c918-132">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="961a2-133">プロトコル</span><span class="sxs-lookup"><span data-stu-id="961a2-133">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="4c918-133">プロトコル</span><span class="sxs-lookup"><span data-stu-id="4c918-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_directoryobject_from_directoryrole"
@@ -64,28 +64,28 @@ DELETE /directoryRoles/{id}/members/{id}/$ref
 ```http
 DELETE https://graph.microsoft.com/v1.0/directoryRoles/{id}/members/{id}/$ref
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="961a2-134">C#</span><span class="sxs-lookup"><span data-stu-id="961a2-134">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="4c918-134">C#</span><span class="sxs-lookup"><span data-stu-id="4c918-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-directoryobject-from-directoryrole-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="961a2-135">Javascript</span><span class="sxs-lookup"><span data-stu-id="961a2-135">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="4c918-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4c918-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-directoryobject-from-directoryrole-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="961a2-136">目的-C</span><span class="sxs-lookup"><span data-stu-id="961a2-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="4c918-136">目的-C</span><span class="sxs-lookup"><span data-stu-id="4c918-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-directoryobject-from-directoryrole-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="961a2-137">Java</span><span class="sxs-lookup"><span data-stu-id="961a2-137">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="4c918-137">Java</span><span class="sxs-lookup"><span data-stu-id="4c918-137">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-directoryobject-from-directoryrole-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="961a2-138">応答</span><span class="sxs-lookup"><span data-stu-id="961a2-138">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="4c918-138">応答</span><span class="sxs-lookup"><span data-stu-id="4c918-138">Response</span></span>
 
-<span data-ttu-id="961a2-139">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="961a2-139">Here is an example of the response.</span></span> 
+<span data-ttu-id="4c918-139">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="4c918-139">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true
