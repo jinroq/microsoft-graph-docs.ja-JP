@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 7a0721495a8eb217007c0ee1f18942009614696d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 912c32c737ba289168493cbfddd064e76ca91053
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010316"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36347786"
 ---
 # <a name="deviceenrollmentfailurereason-enum-type"></a>deviceEnrollmentFailureReason 列挙型
 
@@ -35,8 +35,6 @@ ms.locfileid: "36010316"
 |enrollmentRestrictionsEnforced|9 |管理者によって構成された登録の制限は、この登録をブロックしました。|
 |clientDisconnected|10 |クライアントがタイムアウトしたか、登録が enduser によって中止されました。|
 |userAbandonment|#|登録は enduser によって中止されました。 (Enduser が開始されましたが、適切なタイミングで完了できませんでした)|
-
-
 
 
 

@@ -6,12 +6,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c86557fe2f80b8a61a1905d157ebce3eb7251f2a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ba5ce4da691af4eacd06dcf8913842bd9629b1d6
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35987125"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36348670"
 ---
 # <a name="update-manageddevice"></a>managedDevice の更新
 
@@ -29,7 +29,7 @@ ms.locfileid: "35987125"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementManagedDevices.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -126,6 +126,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |windowsRemediatedMalwareCount|Int32|この windows デバイスの修復済みマルウェアの数|
 |notes|String|IT 管理者によって作成されたデバイスのメモ|
 |configurationManagerClientHealthState|[configurationManagerClientHealthState](../resources/intune-devices-configurationmanagerclienthealthstate.md)|構成マネージャークライアントの正常性状態。 MDM/ConfigMgr エージェントによって管理されるデバイスに対してのみ有効です。|
+|configurationManagerClientInformation|[configurationManagerClientInformation](../resources/intune-devices-configurationmanagerclientinformation.md)|Configuration manager クライアント情報。管理されたデバイス、duel で管理されているデバイス、または ConfigMgr エージェントが管理する3つのデバイスに対してのみ有効です。|
 
 
 
@@ -139,7 +140,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}
 Content-type: application/json
-Content-length: 7286
+Content-length: 7513
 
 {
   "@odata.type": "#microsoft.graph.managedDevice",
@@ -176,7 +177,8 @@ Content-length: 7286
     "deviceFullQualifiedDomainName": "Device Full Qualified Domain Name value",
     "deviceGuardVirtualizationBasedSecurityHardwareRequirementState": "secureBootRequired",
     "deviceGuardVirtualizationBasedSecurityState": "rebootRequired",
-    "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired"
+    "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired",
+    "osBuildNumber": "Os Build Number value"
   },
   "ownerType": "company",
   "managedDeviceOwnerType": "company",
@@ -306,6 +308,10 @@ Content-length: 7286
     "state": "installed",
     "errorCode": 9,
     "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00"
+  },
+  "configurationManagerClientInformation": {
+    "@odata.type": "microsoft.graph.configurationManagerClientInformation",
+    "clientIdentifier": "Client Identifier value"
   }
 }
 ```
@@ -315,7 +321,7 @@ Content-length: 7286
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7335
+Content-Length: 7562
 
 {
   "@odata.type": "#microsoft.graph.managedDevice",
@@ -353,7 +359,8 @@ Content-Length: 7335
     "deviceFullQualifiedDomainName": "Device Full Qualified Domain Name value",
     "deviceGuardVirtualizationBasedSecurityHardwareRequirementState": "secureBootRequired",
     "deviceGuardVirtualizationBasedSecurityState": "rebootRequired",
-    "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired"
+    "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired",
+    "osBuildNumber": "Os Build Number value"
   },
   "ownerType": "company",
   "managedDeviceOwnerType": "company",
@@ -483,9 +490,14 @@ Content-Length: 7335
     "state": "installed",
     "errorCode": 9,
     "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00"
+  },
+  "configurationManagerClientInformation": {
+    "@odata.type": "microsoft.graph.configurationManagerClientInformation",
+    "clientIdentifier": "Client Identifier value"
   }
 }
 ```
+
 
 
 

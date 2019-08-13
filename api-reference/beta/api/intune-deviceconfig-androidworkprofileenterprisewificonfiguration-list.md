@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fd77b88a72362af45e0d50d7d90007312997584b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7d7daee8842f1b0390748c6a636b89c18d225e15
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35950848"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36340717"
 ---
 # <a name="list-androidworkprofileenterprisewificonfigurations"></a>リスト Androidwork Profileenterprisewioffonfigur捜索
 
@@ -27,7 +27,7 @@ ms.locfileid: "35950848"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -115,6 +115,7 @@ Content-Length: 1922
   ]
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 77c32eb40299ae81de8988358a1e736bd20b3208
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fb8ea7d6c7c9f41bde00a7d7510d2e3706262c44
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012185"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335425"
 ---
 # <a name="windowsarchitecture-enum-type"></a>windowsArchitecture 列挙型
 
@@ -29,8 +29,6 @@ Windows アーキテクチャのプロパティが含まれています。
 |分岐|2/4|Arm Windows アーキテクチャの種類がサポートされているかどうか。|
 |中性|8 |中立的な Windows アーキテクチャの種類がサポートされているかどうか。|
 |arm64|16|Arm64 Windows アーキテクチャの種類がサポートされているかどうか。|
-
-
 
 
 

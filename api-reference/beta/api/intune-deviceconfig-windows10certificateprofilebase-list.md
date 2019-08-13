@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3862a95d4ed8f9f251c8807e71e95cc8c2e15f94
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 46e1dad206e226e726ea311edbd2d746fd3d7633
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35946230"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36338533"
 ---
 # <a name="list-windows10certificateprofilebases"></a>リスト windows10CertificateProfileBases
 
@@ -27,7 +27,7 @@ ms.locfileid: "35946230"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -111,6 +111,7 @@ Content-Length: 1668
   ]
 }
 ```
+
 
 
 

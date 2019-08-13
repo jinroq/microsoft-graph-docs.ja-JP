@@ -4,12 +4,13 @@ description: 新しい macOSExtensionsConfiguration オブジェクトを作成�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7e29456c5440190ebce0ff5028207f5d3851619b
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: bbce55f3188dcfceaef6c18b53ec19cffd663476
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34963290"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36338729"
 ---
 # <a name="create-macosextensionsconfiguration"></a>MacOSExtensionsConfiguration を作成する
 
@@ -26,7 +27,7 @@ ms.locfileid: "34963290"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -177,6 +178,7 @@ Content-Length: 1555
   ]
 }
 ```
+
 
 
 

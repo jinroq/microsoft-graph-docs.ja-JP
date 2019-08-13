@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: dca4f368f63296ed2fe751080fcce9c51549b280
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b9166ef625387b47f07b56efd197dc22f1f440d0
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011492"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333907"
 ---
 # <a name="applisttype-enum-type"></a>appListType 列挙型
 
@@ -26,8 +26,6 @@ ms.locfileid: "36011492"
 |none|.0|既定値。意図的ではありません。|
 |appsInListCompliant|1-d|リストは、準拠していると見なされるアプリを表します (リスト上のアプリのみが準拠しています)。|
 |appsNotInListCompliant|pbm-2|このリストは、非準拠と見なされるアプリを表します (すべてのアプリはリスト上のアプリ以外に準拠しています)。|
-
-
 
 
 

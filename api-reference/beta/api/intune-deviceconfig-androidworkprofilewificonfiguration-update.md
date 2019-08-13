@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d5ce1b0f71d5f16a378ffe096deb18810d8e097d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 46fcab5a702a60aa93330508b0b5fad88760a2f0
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35950281"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36340465"
 ---
 # <a name="update-androidworkprofilewificonfiguration"></a>AndroidWorkProfileWiFiConfiguration の更新
 
@@ -27,7 +27,7 @@ ms.locfileid: "35950281"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -169,6 +169,7 @@ Content-Length: 1391
   "wiFiSecurityType": "wpaEnterprise"
 }
 ```
+
 
 
 

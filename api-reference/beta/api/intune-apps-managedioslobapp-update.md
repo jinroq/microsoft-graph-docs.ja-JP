@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d4963f94bbf00bb5f67b74b26f338c8a1d7d3078
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 25dbf3d9305e83b11d183d0f7cf0de4320ce7f81
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35961358"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36329587"
 ---
 # <a name="update-managedioslobapp"></a>managedIOSLobApp の更新
 
@@ -27,7 +27,7 @@ ms.locfileid: "35961358"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementApps.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -205,6 +205,7 @@ Content-Length: 1641
   "identityVersion": "Identity Version value"
 }
 ```
+
 
 
 

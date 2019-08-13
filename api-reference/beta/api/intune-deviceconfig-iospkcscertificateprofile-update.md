@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 89f549542e89d95303d09c8ace0c7848eb3c7e52
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 60f33b2de90b069127369938092b42c3d0dc763e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35948055"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36339121"
 ---
 # <a name="update-iospkcscertificateprofile"></a>IosPkcsCertificateProfile の更新
 
@@ -27,7 +27,7 @@ ms.locfileid: "35948055"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -181,6 +181,7 @@ Content-Length: 1706
   "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value"
 }
 ```
+
 
 
 

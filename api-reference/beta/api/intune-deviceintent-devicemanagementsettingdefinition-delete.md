@@ -4,12 +4,13 @@ description: DeviceManagementSettingDefinition を削除します。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9e128a1ba7b476db5120ad01739aa50790fa439d
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 05d69bbf8eb5d8a973704acef0bd45905f54e8e6
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34959916"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36343315"
 ---
 # <a name="delete-devicemanagementsettingdefinition"></a>DeviceManagementSettingDefinition の削除
 
@@ -26,7 +27,7 @@ ms.locfileid: "34959916"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -65,6 +66,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/settingDefinitions/{dev
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

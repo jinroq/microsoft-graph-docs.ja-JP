@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 70e6551d2b6f759c1b4e7c108153b379120531ba
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 58b0fcb1d2314a3b5fd372465f3998c51fd0a063
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35979933"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36351288"
 ---
 # <a name="create-roledefinition"></a>roleDefinition の作成
 
@@ -27,7 +27,7 @@ ms.locfileid: "35979933"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementRBAC.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -181,6 +181,7 @@ Content-Length: 1256
   ]
 }
 ```
+
 
 
 

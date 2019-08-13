@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 484c9dd46d62e2b930ac0377966891a96f7cfd8a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 424a3b54a17b2a8daeec327e5ab0119491d49359
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35951786"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36330749"
 ---
 # <a name="delete-ioslobappprovisioningconfigurationassignment"></a>Ioslobappプロビジョニング Configurationassignment の削除
 
@@ -27,7 +27,7 @@ ms.locfileid: "35951786"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementApps.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -63,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/iosLobAppProvisionin
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

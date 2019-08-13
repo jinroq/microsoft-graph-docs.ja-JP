@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 9409ddebd69d8b046c522de1c3e58baabc15a2ee
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ab26d2b6cda774f3d2cf3284f92d1901cc4bdf82
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970620"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333213"
 ---
 # <a name="devicecomplianceactiontype-enum-type"></a>deviceComplianceActionType 列挙型
 
@@ -31,8 +31,6 @@ ms.locfileid: "35970620"
 |removeResourceAccessProfiles|5|デバイスからリソースアクセスプロファイルを削除する|
 |pushNotification|9 |デバイスへのプッシュ通知の送信|
 |remoteLock|10 |デバイスをリモートでロックする|
-
-
 
 
 

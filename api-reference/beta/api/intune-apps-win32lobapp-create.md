@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a2c6eb2c8989c82320dc5f691ab01b48c19418f1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e10d059e907f5987710c68999d2b7a9981d03119
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35960266"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36328796"
 ---
 # <a name="create-win32lobapp"></a>Win32LobApp を作成する
 
@@ -27,7 +27,7 @@ ms.locfileid: "35960266"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementApps.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -294,6 +294,7 @@ Content-Length: 2950
   "setupFilePath": "Setup File Path value"
 }
 ```
+
 
 
 

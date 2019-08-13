@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 27a42933a7ccb87323837bc3fab012d4ccb92b7b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3b82968b2b0efc16238fe84da61253fcf594ca8a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35993304"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36350189"
 ---
 # <a name="update-intunebrandingprofile"></a>IntuneBrandingProfile の更新
 
@@ -27,7 +27,7 @@ ms.locfileid: "35993304"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementApps.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -72,6 +72,8 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|ロゴの背景が明るい、ポータルサイトアプリに表示されるロゴ画像|
 |landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|会社のポータルアプリのランディングページに表示されるカスタマイズ画像|
 |customPrivacyMessage|String|デバイスで管理者がアクセスできる内容に関するテキストコメント|
+|isRemoveDeviceDisabled|Boolean|Adminsistrator が企業所有のデバイスで [デバイスの削除] アクションを無効にしているかどうかを表すブール値。|
+|isFactoryResetDisabled|Boolean|Adminsistrator が企業所有のデバイスで "出荷時のリセット" アクションを無効にしているかどうかを表すブール値。|
 
 
 
@@ -85,7 +87,7 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 Content-type: application/json
-Content-length: 1264
+Content-length: 1334
 
 {
   "@odata.type": "#microsoft.graph.intuneBrandingProfile",
@@ -123,7 +125,9 @@ Content-length: 1264
     "type": "Type value",
     "value": "dmFsdWU="
   },
-  "customPrivacyMessage": "Custom Privacy Message value"
+  "customPrivacyMessage": "Custom Privacy Message value",
+  "isRemoveDeviceDisabled": true,
+  "isFactoryResetDisabled": true
 }
 ```
 
@@ -132,7 +136,7 @@ Content-length: 1264
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1436
+Content-Length: 1506
 
 {
   "@odata.type": "#microsoft.graph.intuneBrandingProfile",
@@ -173,9 +177,12 @@ Content-Length: 1436
     "type": "Type value",
     "value": "dmFsdWU="
   },
-  "customPrivacyMessage": "Custom Privacy Message value"
+  "customPrivacyMessage": "Custom Privacy Message value",
+  "isRemoveDeviceDisabled": true,
+  "isFactoryResetDisabled": true
 }
 ```
+
 
 
 

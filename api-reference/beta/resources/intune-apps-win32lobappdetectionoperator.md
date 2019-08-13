@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 769d3fa2636591d9322c0dffe6dc4d8eb93147ef
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 48100fc3e1eb67bb620bd0387356094cf8630b27
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012325"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335719"
 ---
 # <a name="win32lobappdetectionoperator-enum-type"></a>win32LobAppDetectionOperator 列挙型
 
@@ -30,8 +30,6 @@ ms.locfileid: "36012325"
 |greaterThanOrEqual|5|演算子より大きいまたは等しい。|
 |lessThan|8 |未満演算子。|
 |不等号 (等しくない)|9 |演算子の値より小さいまたは等しい。|
-
-
 
 
 

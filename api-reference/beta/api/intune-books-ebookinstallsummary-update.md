@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fb5e5c0b14b41f4f3ea5c489f87f130d46b49bcd
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1b61b0b0ca33ca6314cb9f9e4b9672a5493c1747
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35959384"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36336069"
 ---
 # <a name="update-ebookinstallsummary"></a>eBookInstallSummary の更新
 
@@ -27,7 +27,7 @@ ms.locfileid: "35959384"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementApps.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -102,6 +102,7 @@ Content-Length: 285
   "notInstalledUserCount": 5
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a809f6d3c74504669167509b0928a647f53fc70f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: eae60af59be7443b68800bdc033634f4968116cc
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35961253"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36329496"
 ---
 # <a name="list-managedmobilelobapps"></a>managedMobileLobApps のリスト
 
@@ -27,7 +27,7 @@ ms.locfileid: "35961253"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -102,6 +102,7 @@ Content-Length: 1227
   ]
 }
 ```
+
 
 
 

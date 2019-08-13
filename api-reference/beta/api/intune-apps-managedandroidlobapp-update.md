@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0b6af79be40f682c18930a526e82ce123d7762e2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9e2cd5aae6277df1854b6c825f1ad870d5d9519e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35961834"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36330063"
 ---
 # <a name="update-managedandroidlobapp"></a>managedAndroidLobApp の更新
 
@@ -27,7 +27,7 @@ ms.locfileid: "35961834"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementApps.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -212,6 +212,7 @@ Content-Length: 1663
   "identityVersion": "Identity Version value"
 }
 ```
+
 
 
 

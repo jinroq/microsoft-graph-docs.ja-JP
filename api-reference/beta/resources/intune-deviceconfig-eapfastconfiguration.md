@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: a16d1ca711acc95b1d66d295890bca224835426e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7857e5c2f7b2bd8fdb1f7e0754e587f4498c6d0e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001538"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332660"
 ---
 # <a name="eapfastconfiguration-enum-type"></a>eapFastConfiguration 列挙型
 
@@ -27,8 +27,6 @@ EAP-FAST 構成で利用可能な設定。
 |useProtectedAccessCredential|1-d|保護されたアクセス資格情報 (PAC) を使用します。|
 |useProtectedAccessCredentialAndProvision|pbm-2|保護されたアクセス資格情報 (PAC) を使用し、PAC をプロビジョニングします。|
 |useProtectedAccessCredentialAndProvisionAnonymously|1/3|保護されたアクセス資格情報 (PAC) を使用し、PAC をプロビジョニングして、匿名で行います。|
-
-
 
 
 

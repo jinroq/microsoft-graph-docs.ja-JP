@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5bc3d22d7a35b729cae49b25e6dccdd3b26b63aa
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 05b7f9a2ff8eeb99c973e874ab3f085ad91a5bb7
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35993481"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36350532"
 ---
 # <a name="create-telecomexpensemanagementpartner"></a>telecomExpenseManagementPartner の作成
 
@@ -27,7 +27,7 @@ ms.locfileid: "35993481"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementServiceConfig.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -99,6 +99,7 @@ Content-Length: 297
   "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
 }
 ```
+
 
 
 

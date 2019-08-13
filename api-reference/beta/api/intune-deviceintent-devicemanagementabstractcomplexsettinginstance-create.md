@@ -4,12 +4,13 @@ description: 新しい deviceManagementAbstractComplexSettingInstance オブジ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 34993de09d5a0471b2eaccf2a7b5b421c255fbbd
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 0174f36589bf6059e4eeee7fd31b2b9a72bc3a8d
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34961036"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36343994"
 ---
 # <a name="create-devicemanagementabstractcomplexsettinginstance"></a>DeviceManagementAbstractComplexSettingInstance を作成する
 
@@ -26,7 +27,7 @@ ms.locfileid: "34961036"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -95,6 +96,7 @@ Content-Length: 265
   "implementationId": "Implementation Id value"
 }
 ```
+
 
 
 

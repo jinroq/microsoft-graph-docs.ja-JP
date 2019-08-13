@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 76060286b1c22db9375f44a54c5769003a260f02
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2104e2b8baaa04d9ade4b6c8e558d213b25e6d28
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35962191"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36330301"
 ---
 # <a name="list-iosvppappassigneduserlicenses"></a>リスト iosVppAppAssignedUserLicenses
 
@@ -27,7 +27,7 @@ ms.locfileid: "35962191"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -78,6 +78,7 @@ Content-Length: 344
   ]
 }
 ```
+
 
 
 

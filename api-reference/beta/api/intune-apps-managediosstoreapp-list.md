@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c9938ff406eaa70cfe4fb9f76c1f590d0c623542
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4d0a627591f8b130d07dba513e10877622deb442
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35961302"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36329531"
 ---
 # <a name="list-managediosstoreapps"></a>managedIOSStoreApps のリスト
 
@@ -27,7 +27,7 @@ ms.locfileid: "35961302"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -114,6 +114,7 @@ Content-Length: 1591
   ]
 }
 ```
+
 
 
 

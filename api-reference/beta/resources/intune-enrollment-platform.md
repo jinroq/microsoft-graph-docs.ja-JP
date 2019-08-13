@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 0e3f9c5ab02d85b6f0d2ca1610c2f902dc5563d7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e26d2f92cd990951ca2dbff913fc447068e0254b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999039"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36327816"
 ---
 # <a name="platform-enum-type"></a>プラットフォーム列挙型
 
@@ -29,8 +29,6 @@ ms.locfileid: "35999039"
 |ws|1/3|Windows デバイスプラットフォーム|
 |windowsMobile|2/4|WindowsMobile デバイスプラットフォーム|
 |macOS|5|Mac デバイスプラットフォーム|
-
-
 
 
 

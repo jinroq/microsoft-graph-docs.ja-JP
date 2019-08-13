@@ -1,18 +1,18 @@
 ---
 description: 自動的に生成されたファイル。 変更しない
-ms.openlocfilehash: ccc176070b53421392e24b13395244993cb78929
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 0c9b9966b449ed6dd7583fe493f8c23e5b11337f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35893774"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36373997"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Report report = graphClient.reports()
-    .getOneDriveActivityUserCounts('D7')
+    .getOneDriveActivityUserCounts("D7")
     .buildRequest()
     .get();
 

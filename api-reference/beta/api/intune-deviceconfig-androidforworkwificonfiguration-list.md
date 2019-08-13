@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 331761bb7545cd32a25b7df8447c741033bc1c4a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2dac6444ed8b03f021264f4e0bd827eaa6f8e6c7
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35963011"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36341179"
 ---
 # <a name="list-androidforworkwificonfigurations"></a>リスト Androidforwork Wiん Onfigur捜索
 
@@ -27,7 +27,7 @@ ms.locfileid: "35963011"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -110,6 +110,7 @@ Content-Length: 1568
   ]
 }
 ```
+
 
 
 

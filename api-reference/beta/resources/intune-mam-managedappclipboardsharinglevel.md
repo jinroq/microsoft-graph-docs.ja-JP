@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 339dc8a824073f609ee580042895bd3a59f58e43
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1e479f925e8b52ae746180851ce52ad116774367
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35998437"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332212"
 ---
 # <a name="managedappclipboardsharinglevel-enum-type"></a>Managedappクリップボード Sharinglevel 列挙型
 
@@ -27,8 +27,6 @@ ms.locfileid: "35998437"
 |managedAppsWithPasteIn|1-d|[貼り付け] が有効になっているすべての管理対象アプリ間で共有が許可されます。|
 |managedApps|pbm-2|すべての管理対象アプリ間で共有が可能|
 |ブロック|1/3|アプリ間の共有が無効になっている|
-
-
 
 
 

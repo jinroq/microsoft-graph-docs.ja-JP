@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a5b268815e14a53862047342494d484899acdd28
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9032028014468b7e871da2ae6d8c3f780cc10267
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35952017"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36330959"
 ---
 # <a name="get-enterprisecodesigningcertificate"></a>EnterpriseCodeSigningCertificate を取得する
 
@@ -27,7 +27,7 @@ ms.locfileid: "35952017"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -83,6 +83,7 @@ Content-Length: 478
   }
 }
 ```
+
 
 
 

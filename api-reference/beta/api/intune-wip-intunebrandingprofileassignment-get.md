@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b8168a3273993b40d75dce03c8abb1f2169b22b3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c661cb97601e44b44684f9dde4433168e5c957bb
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35979205"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36350119"
 ---
 # <a name="get-intunebrandingprofileassignment"></a>IntuneBrandingProfileAssignment を取得する
 
@@ -27,7 +27,7 @@ ms.locfileid: "35979205"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -78,6 +78,7 @@ Content-Length: 249
   }
 }
 ```
+
 
 
 

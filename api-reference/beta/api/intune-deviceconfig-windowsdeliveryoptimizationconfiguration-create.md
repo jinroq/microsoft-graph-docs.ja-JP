@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 64c0ca78ad24c730d26a30bc104a27c254c58f5e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 837e33b14f7dbca9fba8b366e17c81ca9333d39f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35982327"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36344631"
 ---
 # <a name="create-windowsdeliveryoptimizationconfiguration"></a>WindowsDeliveryOptimizationConfiguration を作成する
 
@@ -27,7 +27,7 @@ ms.locfileid: "35982327"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -226,6 +226,7 @@ Content-Length: 2211
   "cacheServerBackgroundDownloadFallbackToHttpDelayInSeconds": 9
 }
 ```
+
 
 
 

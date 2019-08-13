@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f7078d12f7fcb4f6afc4cdf2182304088df936aa
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a865e58604ed46858c3d02d53d8250988d897e40
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35950547"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36340549"
 ---
 # <a name="create-androidworkprofilescepcertificateprofile"></a>Androidwork プロファイル Cepcertificateprofile の作成
 
@@ -27,7 +27,7 @@ ms.locfileid: "35950547"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -223,6 +223,7 @@ Content-Length: 2154
   ]
 }
 ```
+
 
 
 

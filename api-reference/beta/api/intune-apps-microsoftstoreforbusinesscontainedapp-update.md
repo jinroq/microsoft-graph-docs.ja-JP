@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1ec387bdb0db79766cda0eb6a4dbc482c78bc50b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1dd8b87f550556833fe00c6ed2235687b098ffef
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35961113"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36329398"
 ---
 # <a name="update-microsoftstoreforbusinesscontainedapp"></a>MicrosoftStoreForBusinessContainedApp の更新
 
@@ -27,7 +27,7 @@ ms.locfileid: "35961113"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementApps.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -89,6 +89,7 @@ Content-Length: 176
   "appUserModelId": "App User Model Id value"
 }
 ```
+
 
 
 

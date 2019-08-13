@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e73423acd89e340d045be8ae79ff88b9ea458162
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 32333275d9db2989caa9474a0df69871653ff1d6
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000978"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36325415"
 ---
 # <a name="macosenterprisewificonfiguration-resource-type"></a>macOSEnterpriseWiFiConfiguration リソースの種類
 
@@ -138,8 +138,6 @@ MacOS Wi-fi WPA-エンタープライズ/WPA2-エンタープライズ構成プ�
   "outerIdentityPrivacyTemporaryValue": "String"
 }
 ```
-
-
 
 
 

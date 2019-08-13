@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 575e27e1ab8f26f10894053f65507b9444e31e0c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5f7c5b7f934ccab123dd20f28adef96dc2fa4613
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35947957"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36339079"
 ---
 # <a name="create-iostrustedrootcertificate"></a>IosTrustedRootCertificate を作成する
 
@@ -27,7 +27,7 @@ ms.locfileid: "35947957"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -158,6 +158,7 @@ Content-Length: 1308
   "certFileName": "Cert File Name value"
 }
 ```
+
 
 
 

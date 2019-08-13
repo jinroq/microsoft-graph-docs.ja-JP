@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c672a2f0c81023d3459c9be7d3ae1ef4b21d61f5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 365fbee15aa00e0bfb44d7eba0ef56cf2dd59c5a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35946167"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36338505"
 ---
 # <a name="list-windows10compliancepolicies"></a>windows10CompliancePolicies のリスト
 
@@ -27,7 +27,7 @@ ms.locfileid: "35946167"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -120,6 +120,7 @@ Content-Length: 2087
   ]
 }
 ```
+
 
 
 

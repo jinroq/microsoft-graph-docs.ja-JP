@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ef5cac7f38d11638797dd30a8a42f165a8fcb4e8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 712e6039d276d78c187e6e97128a45aa04e62058
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010358"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36347893"
 ---
 # <a name="resultantappstate-enum-type"></a>Resultの重要 Appstate 列挙型
 
@@ -30,8 +30,6 @@ ms.locfileid: "36010358"
 |pendingInstall|5|アプリケーションのインストールが進行中です。|
 |不明|99|アプリケーションの状態が不明です。|
 |notApplicable|-1|アプリケーションは適用されません。|
-
-
 
 
 

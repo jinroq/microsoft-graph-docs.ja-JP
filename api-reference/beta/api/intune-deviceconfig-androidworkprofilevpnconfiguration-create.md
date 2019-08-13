@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6379ffd3dff6620428e087b9b08e840a39df0c04
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0a764e4cb48fddd1ca8a47132be030b132af5557
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35950400"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36340528"
 ---
 # <a name="create-androidworkprofilevpnconfiguration"></a>Androidwork Profilevpnconfiguration の作成
 
@@ -27,7 +27,7 @@ ms.locfileid: "35950400"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -218,6 +218,7 @@ Content-Length: 1934
   "authenticationMethod": "usernameAndPassword"
 }
 ```
+
 
 
 
