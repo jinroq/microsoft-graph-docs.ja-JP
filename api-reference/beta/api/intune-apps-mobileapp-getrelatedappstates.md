@@ -4,12 +4,13 @@ description: まだ文書化されていません
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1f2cf130b7e205767ddae5a5a7e857a12725d824
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: bd10d0b2b8dde194c6aa394deec081d2966b1d49
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34974308"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36329363"
 ---
 # <a name="getrelatedappstates-function"></a>Getの Appstates 関数
 
@@ -26,7 +27,7 @@ ms.locfileid: "34974308"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -92,6 +93,7 @@ Content-Length: 481
   ]
 }
 ```
+
 
 
 

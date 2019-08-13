@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: de2540fbe744f1edbc3c6d8fb99deb56e904df3b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: dbe26ea66b99b5a3c1117c8ac62fb8433d3ecc73
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004674"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334473"
 ---
 # <a name="androidforworkvpnconnectiontype-enum-type"></a>Androidforwork Vpnconnectiontype 列挙型
 
@@ -29,8 +29,6 @@ Android For Work VPN 接続の種類。
 |dellSonicWallMobileConnect|1/3|Dell SonicWALL モバイル接続。|
 |checkPointCapsuleVpn|2/4|[カプセル接続] VPN をチェックします。|
 |社|5|社|
-
-
 
 
 

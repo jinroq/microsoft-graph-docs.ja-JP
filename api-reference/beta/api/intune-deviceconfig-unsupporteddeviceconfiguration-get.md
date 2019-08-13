@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6440043ace9f4c0332e5ae19ca829a4df5759d3f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 56569b2254e8fee0c269781cabf06da4e129bd0c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35946279"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36338560"
 ---
 # <a name="get-unsupporteddeviceconfiguration"></a>非 Supporteddevicの暗号化の取得
 
@@ -27,7 +27,7 @@ ms.locfileid: "35946279"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -115,6 +115,7 @@ Content-Length: 1562
   }
 }
 ```
+
 
 
 

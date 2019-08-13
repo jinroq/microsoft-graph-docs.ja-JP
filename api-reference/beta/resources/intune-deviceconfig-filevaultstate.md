@@ -4,12 +4,13 @@ description: FileVault 状態
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f122d62f85f90825f5fe3129ec2a314d5886e6f2
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: enumPageType
+ms.openlocfilehash: 54e8076dc4b4f6ab20f7790d2a650de6c07aa702
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35726117"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36325569"
 ---
 # <a name="filevaultstate-enum-type"></a>fileVaultState 列挙型
 
@@ -26,10 +27,6 @@ FileVault 状態
 |ドライブ Encryptedbyuser|1-d|FileVault はユーザーによって有効にされており、ポリシーによって管理されていません|
 |userDeferredEncryption|pbm-2|FileVault ポリシーは正しくインストールされていますが、ユーザーは暗号化を開始していません|
 |escrowNotEnabled|2/4|FileVault 回復キーエスクローが有効になっていません|
-
-
-
-
 
 
 

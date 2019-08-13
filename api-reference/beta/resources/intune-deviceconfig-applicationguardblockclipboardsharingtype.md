@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 09918437827524eeec00b819041a2fadb3705a10
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1c847e8ce2c30e505a41fc7b7b5a7566f44d36eb
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004576"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333955"
 ---
 # <a name="applicationguardblockclipboardsharingtype-enum-type"></a>Applicationgu/Blockクリップの Sharingtype 列挙型
 
@@ -28,8 +28,6 @@ Applicationgu/Blockblocksharingsharingtype に指定できる値
 |blockHostToContainer|pbm-2|データをホストからコンテナーに共有するためのクリップボードをブロックする|
 |blockContainerToHost|1/3|コンテナーからホストへのデータを共有するためのクリップボードをブロックする|
 |blockNone|2/4|データをホストからコンテナーにも、コンテナーからホストへも共有しないようにクリップボードをブロックする|
-
-
 
 
 

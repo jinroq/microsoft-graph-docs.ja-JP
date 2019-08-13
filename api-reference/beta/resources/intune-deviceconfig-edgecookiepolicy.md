@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 9ceb1f551b4f6fb1227409f2e01d2a1720193399
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c08748b271b56b2fcd0f7c0a7868d9c054ef794c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004499"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332618"
 ---
 # <a name="edgecookiepolicy-enum-type"></a>edgeCookiePolicy 列挙型
 
@@ -27,8 +27,6 @@ Microsoft Edge で許可する cookie を指定するための値。
 |使う|1-d|使う.|
 |blockThirdParty|pbm-2|サードパーティの cookie のみをブロックします。|
 |blockAll|1/3|すべての cookie をブロックします。|
-
-
 
 
 

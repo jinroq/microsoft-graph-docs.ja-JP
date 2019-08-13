@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: efb6825c70804fc7116c2dd0aefbe4af327f5d54
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d454ad69737ed870dbd8658f2c0fd6e1be2edc3e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35960364"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36328873"
 ---
 # <a name="create-webapp"></a>webApp の作成
 
@@ -27,7 +27,7 @@ ms.locfileid: "35960364"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementApps.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -151,6 +151,7 @@ Content-Length: 951
   "useManagedBrowser": true
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d019d88b089241aa2256fbf010ee4dc6290323a8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e3f6d16af155f2ead5b3ec07d97b2bb25ac0ebe1
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010862"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332226"
 ---
 # <a name="json-resource-type"></a>Json リソースの種類
 
@@ -39,8 +39,6 @@ JSON 形式で返されるデータを表します
   "@odata.type": "#microsoft.graph.Json"
 }
 ```
-
-
 
 
 

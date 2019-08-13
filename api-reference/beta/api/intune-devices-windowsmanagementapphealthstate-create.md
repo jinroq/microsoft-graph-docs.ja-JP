@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 87874977dff4d573ff473a801f30a7707648fdf1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 37ce5cd27f00a01a8796789c36e0701d6cf4e89a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35981228"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36348474"
 ---
 # <a name="create-windowsmanagementapphealthstate"></a>WindowsManagementAppHealthState を作成する
 
@@ -27,7 +27,7 @@ ms.locfileid: "35981228"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementManagedDevices.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -99,6 +99,7 @@ Content-Length: 349
   "deviceOSVersion": "Device OSVersion value"
 }
 ```
+
 
 
 

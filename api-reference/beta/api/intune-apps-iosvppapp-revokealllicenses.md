@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a3bde036b25cf443570b4a1951a4b3fba09b4e3f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a5acc9f67980c5776c90f606e7ac0806abf9e3a5
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35951555"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36330497"
 ---
 # <a name="revokealllicenses-action"></a>revokeAllLicenses アクション
 
@@ -27,7 +27,7 @@ ms.locfileid: "35951555"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementApps.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -80,6 +80,7 @@ Content-length: 36
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

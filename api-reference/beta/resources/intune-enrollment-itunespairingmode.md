@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ee5185783f7edeb9905da7ff4a2ea83a9ce2c3a9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c4c5014b428ddc82f04a01c6fd852d7aa161d590
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999025"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36327802"
 ---
 # <a name="itunespairingmode-enum-type"></a>iTunesPairingMode 列挙型
 
@@ -26,8 +26,6 @@ ms.locfileid: "35999025"
 |禁止|.0|ペアリングは許可されていません|
 |使う|1-d|ペアリングの許可|
 |requiresCertificate|pbm-2|ITunes とペアにするために必要な証明書|
-
-
 
 
 

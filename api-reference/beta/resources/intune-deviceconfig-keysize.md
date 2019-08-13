@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: b8f21f0b5232b40f2bd8eb028953a6a4bd116ffe
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ecc36100dd2cf0e38836c8e10b09c654038784b6
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970347"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36325500"
 ---
 # <a name="keysize-enum-type"></a>keySize 列挙型
 
@@ -25,8 +25,6 @@ ms.locfileid: "35970347"
 |:---|:---|:---|
 |size1024|.0|1024ビット|
 |size2048|1-d|2048ビット|
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a43b734fcc43e13fd5118a5f0ed475ecc5e977e5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5ec9a7cfa5adb563c32e3f3b792cec4453700c32
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35948342"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36339289"
 ---
 # <a name="list-iosedudeviceconfigurations"></a>Iosedudeviceconfigurduを一覧表示する
 
@@ -27,7 +27,7 @@ ms.locfileid: "35948342"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -138,6 +138,7 @@ Content-Length: 3148
   ]
 }
 ```
+
 
 
 

@@ -4,13 +4,13 @@ description: ピア選択を制限する値。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-doc_type: resourcePageType
-ms.openlocfilehash: 4679ea425d6982665a92094856bd5417ac5c70cc
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+doc_type: enumPageType
+ms.openlocfilehash: 8fbcd42ff9683075dbc88d6c6ed0af103fd9ec4f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970683"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333255"
 ---
 # <a name="deliveryoptimizationrestrictpeerselectionbyoptions-enum-type"></a>deliveryOptimizationRestrictPeerSelectionByOptions 列挙型
 
@@ -25,8 +25,6 @@ ms.locfileid: "35970683"
 |:---|:---|:---|
 |notConfigured|.0|構成されていません。|
 |マスク|1-d|サブネット マスク。|
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b9251e146ff58bf0b88354e36c88b16426aad31b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b3a0c7789e99bd6921e2e338e37b5f4414c4340d
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970754"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333325"
 ---
 # <a name="deliveryoptimizationgroupidsource-resource-type"></a>deliveryOptimizationGroupIdSource リソースの種類
 
@@ -39,8 +39,6 @@ GroupId サポートの種類
   "@odata.type": "#microsoft.graph.deliveryOptimizationGroupIdSource"
 }
 ```
-
-
 
 
 

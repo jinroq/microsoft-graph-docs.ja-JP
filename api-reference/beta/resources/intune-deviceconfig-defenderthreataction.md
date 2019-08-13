@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 368d58c125511f235a82d50e54193f0dacc96757
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 57b5ecf73548bf67bcb1fbfb75ed0730cb308424
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970851"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333416"
 ---
 # <a name="defenderthreataction-enum-type"></a>defenderThreatAction 列挙型
 
@@ -30,8 +30,6 @@ ms.locfileid: "35970851"
 |使う|2/4|検出された脅威を許可します。|
 |自分のもの|5|検出された脅威に対して実行するアクションをユーザーが決定できるようにします。|
 |拒否|シックス|検出された脅威をブロックします。|
-
-
 
 
 

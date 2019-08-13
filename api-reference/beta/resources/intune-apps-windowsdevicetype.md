@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 24c6afeb43ec7b5e4388f2f5e89056db43199b7e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8e6b09eab5a9bbc40eea3d581938394da379d0a3
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005038"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335432"
 ---
 # <a name="windowsdevicetype-enum-type"></a>windowsDeviceType 列挙型
 
@@ -28,8 +28,6 @@ Windows デバイスの種類のプロパティが含まれています。
 |体|pbm-2|モバイル Windows デバイスの種類がサポートされているかどうか。|
 |holographic|2/4|Holographic Windows デバイスの種類がサポートされているかどうか。|
 |team|8 |チーム Windows デバイスの種類がサポートされているかどうか。|
-
-
 
 
 

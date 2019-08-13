@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2146a719776c5aa5547f70b68e1b6d6b06b26345
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 15bb5af32069a45cbb8b0ccd7db125f77f7cd8e4
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35961596"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36329839"
 ---
 # <a name="delete-manageddevicemobileappconfigurationdevicestatus"></a>ManagedDeviceMobileAppConfigurationDeviceStatus の削除
 
@@ -27,7 +27,7 @@ ms.locfileid: "35961596"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementApps.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurati
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

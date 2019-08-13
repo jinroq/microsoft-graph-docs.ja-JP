@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b8bbc56d4b2f9e220e75b0a5290a34156aa3a0d2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 68a56d8358186a21a23739beef15fc23cd5ec38b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35951891"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36330833"
 ---
 # <a name="create-ioslobappprovisioningconfiguration"></a>Ioslobappプロビジョニング構成を作成する
 
@@ -27,7 +27,7 @@ ms.locfileid: "35951891"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementApps.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -113,6 +113,7 @@ Content-Length: 547
   "version": 7
 }
 ```
+
 
 
 

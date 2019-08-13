@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 917711839f5855900c5ccac12b97af067466da35
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 59580a3ee39c8f75087bd4d2b28a6e9d891ade9c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35959279"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36328439"
 ---
 # <a name="delete-iosvppebookassignment"></a>iosVppEBookAssignment の削除
 
@@ -27,7 +27,7 @@ ms.locfileid: "35959279"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementApps.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -63,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks/{manag
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

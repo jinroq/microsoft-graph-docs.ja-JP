@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b455b62853bf0d880acbef0871240444d5cee5ac
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 111392b46b2471f5bc47bfe513023a87f662d95c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35981256"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36348516"
 ---
 # <a name="delete-windowsmanageddevice"></a>WindowsManagedDevice の削除
 
@@ -27,7 +27,7 @@ ms.locfileid: "35981256"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementManagedDevices.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -66,6 +66,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managed
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e740f551c8504fa5786f10f9a4d8ff49aa207cae
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f5b6e4f4270c95dbd321896d7260f03bd22dcfd6
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967281"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36347785"
 ---
 # <a name="applevpptokentroubleshootingevent-resource-type"></a>りんご Evpptokenのトラブルシューティングイベントリソースの種類
 
@@ -85,8 +85,6 @@ Apple Vpp トークントラブルシューティングイベントを表すイ�
   "tokenId": "String"
 }
 ```
-
-
 
 
 

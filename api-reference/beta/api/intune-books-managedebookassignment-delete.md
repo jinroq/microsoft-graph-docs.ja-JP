@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 42a311655132448fc1f1164cb9e3763fdbcb8a51
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 894b6fcd7b0a402787dbd36340b829e170cb1371
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35959174"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36328381"
 ---
 # <a name="delete-managedebookassignment"></a>managedEBookAssignment の削除
 
@@ -27,7 +27,7 @@ ms.locfileid: "35959174"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementApps.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -63,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks/{manag
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 4248f9ec0e773bab165788aa3cfe5adddb67ee41
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4a113e3733a2e8a275f81f1f33aa186257704b2e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970977"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333619"
 ---
 # <a name="dayofweek-enum-type"></a>dayOfWeek 列挙型
 
@@ -30,8 +30,6 @@ ms.locfileid: "35970977"
 |火曜日|2/4|木曜日|
 |金曜日|5|金曜日|
 |土日|シックス|土曜日|
-
-
 
 
 

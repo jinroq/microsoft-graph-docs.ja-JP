@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 94b81dd406e3ed4bb7cc1071f1a9f3604b7b492d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 81cd90e62533d386be223b34b19bcf53a65125b5
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35986296"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36338253"
 ---
 # <a name="create-windowsupdateforbusinessconfiguration"></a>Create windowsUpdateForBusinessConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "35986296"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -88,6 +88,10 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |engagedRestartDeadlineInDays|Int32|アクティブ時間外に保留中の再起動を自動的にスケジュールして実行するまでの期限 (日数は2から30日)|
 |engagedRestartSnoozeScheduleInDays|Int32|ユーザーが参加を再開できるリマインダー通知通知の有効期間が 1 ~ 3 日の場合に、再通知できる日数|
 |engagedRestartTransitionScheduleInDays|Int32|アクティブ時間外に再起動が行われるようにスケジュールされた自動再起動から移行するまでの日数。0から30日の範囲で有効な範囲で、ユーザーのスケジュールを設定する必要があります。|
+|deadlineForFeatureUpdatesInDays|Int32|機能更新プログラムが自動的にインストールされるまでの日数は、2から30日の範囲内です。|
+|deadlineForQualityUpdatesInDays|Int32|品質更新プログラムが自動的にインストールされるまでの日数は、2から30日の範囲内です。|
+|deadlineGracePeriodInDays|Int32|有効範囲が0から7日に設定されると、再起動が自動的に実行されるまでの日数を指定します。|
+|postponeRebootUntilAfterDeadline|Boolean|デバイスがアクティブ時間外の再起動の期限まで待機するかどうかを指定します。|
 |autoRestartNotificationDismissal|[autoRestartNotificationDismissalMethod](../resources/intune-deviceconfig-autorestartnotificationdismissalmethod.md)|自動再起動必須通知を閉じる方法を指定します。 可能な値は、`notConfigured`、`automatic`、`user` です。|
 |scheduleRestartWarningInHours|Int32|自動再起動警告リマインダー通知の期間を指定します。 サポートされている値: 2、4、8、12、または 24 (時間)。|
 |scheduleImminentRestartWarningInMinutes|Int32|差し迫った自動再起動警告通知の期間を指定します。 サポートされている値:15、30または 60 (分)。|
@@ -107,7 +111,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 2676
+Content-length: 2840
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
@@ -168,6 +172,10 @@ Content-length: 2676
   "engagedRestartDeadlineInDays": 12,
   "engagedRestartSnoozeScheduleInDays": 2,
   "engagedRestartTransitionScheduleInDays": 6,
+  "deadlineForFeatureUpdatesInDays": 15,
+  "deadlineForQualityUpdatesInDays": 15,
+  "deadlineGracePeriodInDays": 9,
+  "postponeRebootUntilAfterDeadline": true,
   "autoRestartNotificationDismissal": "automatic",
   "scheduleRestartWarningInHours": 13,
   "scheduleImminentRestartWarningInMinutes": 7,
@@ -182,7 +190,7 @@ Content-length: 2676
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2848
+Content-Length: 3012
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
@@ -246,6 +254,10 @@ Content-Length: 2848
   "engagedRestartDeadlineInDays": 12,
   "engagedRestartSnoozeScheduleInDays": 2,
   "engagedRestartTransitionScheduleInDays": 6,
+  "deadlineForFeatureUpdatesInDays": 15,
+  "deadlineForQualityUpdatesInDays": 15,
+  "deadlineGracePeriodInDays": 9,
+  "postponeRebootUntilAfterDeadline": true,
   "autoRestartNotificationDismissal": "automatic",
   "scheduleRestartWarningInHours": 13,
   "scheduleImminentRestartWarningInMinutes": 7,
@@ -254,6 +266,7 @@ Content-Length: 2848
   "updateNotificationLevel": "defaultNotifications"
 }
 ```
+
 
 
 

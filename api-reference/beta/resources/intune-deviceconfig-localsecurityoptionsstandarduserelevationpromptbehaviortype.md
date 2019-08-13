@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c27c26f374d2fd27056f1dd10c7744969828eab5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bd7752774fdebf40b057463b29c2542829d2c61b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970221"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36325492"
 ---
 # <a name="localsecurityoptionsstandarduserelevationpromptbehaviortype-enum-type"></a>localSecurityOptionsStandardUserElevationPromptBehaviorType 列挙型
 
@@ -27,8 +27,6 @@ LocalSecurityOptionsStandardUserElevationPromptBehavior に指定できる値
 |automaticallyDenyElevationRequests|1-d|昇格要求を自動的に拒否する|
 |promptForCredentialsOnTheSecureDesktop|pbm-2|セキュリティで保護されたデスクトップで資格情報の入力を求める|
 |promptForCredentials|1/3|資格情報の入力を求める|
-
-
 
 
 

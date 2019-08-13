@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5c8ee128df6115821d2c9065da21dda1bb2e15af
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: acc9d9afc0324a9e40604c882245e8c0581f9c52
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35960735"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36336531"
 ---
 # <a name="update-mobileappcontentfile"></a>mobileAppContentFile の更新
 
@@ -27,7 +27,7 @@ ms.locfileid: "35960735"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementApps.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -116,6 +116,7 @@ Content-Length: 503
   "isDependency": true
 }
 ```
+
 
 
 

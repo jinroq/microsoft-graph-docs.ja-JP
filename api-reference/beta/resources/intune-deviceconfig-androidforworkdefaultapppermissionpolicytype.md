@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 54eed413065bedeb757a40d56a0f2bb41f55b4b9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 83817e11f73823419de1654134fe72a0e8f2d688
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971397"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334627"
 ---
 # <a name="androidforworkdefaultapppermissionpolicytype-enum-type"></a>androidForWorkDefaultAppPermissionPolicyType 列挙型
 
@@ -27,8 +27,6 @@ Android 用の既定のアプリのアクセス許可ポリシーの種類。
 |音声ガイダンス|1-d|・.|
 |autoGrant|pbm-2|自動付与|
 |autoDeny|1/3|自動拒否。|
-
-
 
 
 

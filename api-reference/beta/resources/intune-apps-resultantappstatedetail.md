@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: a9014a83f69a6b5429a532dbd22e991c3a049713
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c41d979e311f31ed32b07ff2b607082367114131
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012395"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335845"
 ---
 # <a name="resultantappstatedetail-enum-type"></a>Resultの Appstatedetail 列挙型
 
@@ -43,8 +43,6 @@ ms.locfileid: "36012395"
 |minimumOsVersionNotMet|-1002|ターゲットデバイスの OS のバージョンが、構成されている最小値を下回っています。|
 |Minimumdiskん Enot満たさ|-1001|ターゲットデバイスの使用可能なディスク領域が構成されている最小値を下回っています。|
 |プロセッサアーキテクチャ (該当する場合)|-1000|デバイスアーキテクチャ (x86/amd64 など) は、アプリケーションには適用されません。|
-
-
 
 
 

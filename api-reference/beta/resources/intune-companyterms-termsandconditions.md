@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e6c34f26486e16e695466a476151f917e1940e4e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 277a7ccd90ea6a74ee4b7b1b48be797ad06dae37
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004807"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335075"
 ---
 # <a name="termsandconditions-resource-type"></a>termsAndConditions リソース タイプ
 
@@ -73,8 +73,6 @@ termsAndConditions エンティティは、特定の使用条件 (T&C) ポリシ
   "version": 1024
 }
 ```
-
-
 
 
 

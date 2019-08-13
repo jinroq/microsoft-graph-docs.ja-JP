@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 7ff6c47ac4ad12a3091deb5c6f736768cc082387
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 58dff3acb944ba09ac8c5f4bdbcc9d916ee6ab68
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35998507"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332387"
 ---
 # <a name="grouppolicytype-enum-type"></a>groupPolicyType 列挙型
 
@@ -25,8 +25,6 @@ ms.locfileid: "35998507"
 |:---|:---|:---|
 |の復元|.0|ポリシー構成サービスプロバイダー (CSP) に組み込まれているグループポリシー管理用テンプレート。|
 |admxIngested|1-d|ポリシー構成サービスプロバイダー (CSP) を使用してインストールされたグループポリシー管理用テンプレート。|
-
-
 
 
 

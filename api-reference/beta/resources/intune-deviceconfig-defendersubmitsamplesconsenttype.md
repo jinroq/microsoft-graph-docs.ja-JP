@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 5298c5753e7e870ab56054efa4912b7464468207
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 629a44613938b02f4d1d2d244d31169395c2d33e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970865"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333449"
 ---
 # <a name="defendersubmitsamplesconsenttype-enum-type"></a>defenderSubmitSamplesConsentType 列挙型
 
@@ -27,8 +27,6 @@ DefenderSubmitSamplesConsentType に指定できる値
 |Always プロンプト|1-d|常に確認する|
 |neverSend|pbm-2|送信しない|
 |sendAllSamplesAutomatically|1/3|すべてのサンプルを自動的に送信する|
-
-
 
 
 

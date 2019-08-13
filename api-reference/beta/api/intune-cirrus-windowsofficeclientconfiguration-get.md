@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0c9df4d2f9905979bc7add86b741545098635c1a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7e1f34ead1df597a6b94df224398a6f6c2f77ab3
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35958824"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36328229"
 ---
 # <a name="get-windowsofficeclientconfiguration"></a>WindowsOfficeClientConfiguration を取得する
 
@@ -27,7 +27,7 @@ ms.locfileid: "35958824"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration をすべて取得します。|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration をすべて取得します。|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -101,6 +101,9 @@ Content-Length: 1144
   }
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 2cfc91de723bb10e39545b570d94ec1944221f9c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ff16af165c41103202d870e3a389fd73fc94d804
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971502"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334781"
 ---
 # <a name="androiddeviceownersystemupdateinstalltype-enum-type"></a>androidDeviceOwnerSystemUpdateInstallType 列挙型
 
@@ -27,8 +27,6 @@ Android デバイス所有者のシステム更新の種類。
 |延期|1-d|更新プログラムの自動インストールを最大30日間延期します。|
 |ウィンドウ|pbm-2|毎日のメンテナンス期間内に自動的にインストールします。|
 |自動|1/3|可能な限り早く、更新プログラムを自動的にインストールします。|
-
-
 
 
 

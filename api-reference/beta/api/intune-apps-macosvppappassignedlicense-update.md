@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: db54bb8103f309bac27e7b1a4a40808804dcc833
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: baeb50a0e9d9d21e27bca49e9e1f286e9d0a8b9e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35961904"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36336895"
 ---
 # <a name="update-macosvppappassignedlicense"></a>MacOsVppAppAssignedLicense の更新
 
@@ -27,7 +27,7 @@ ms.locfileid: "35961904"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementApps.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -96,6 +96,7 @@ Content-Length: 285
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
 
 
 

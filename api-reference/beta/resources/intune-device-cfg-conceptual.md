@@ -4,13 +4,12 @@ description: テナント組織のデバイスの構成を定義する Intune �
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-doc_type: conceptualPageType
-ms.openlocfilehash: 138fbf66974a63e258c1e7334db8f4c3f03a05ed
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a2402be0642da8d0f01c30e089fec5947d5260be
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004764"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335019"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Microsoft Intune でのデバイス構成
 
@@ -32,12 +31,17 @@ Microsoft Intune のデバイス構成のワークロードを使用して、管
 - [Android カスタム構成](intune-deviceconfig-androidcustomconfiguration.md)
 - [Android デバイス所有者のアプリの自動更新ポリシーの種類](intune-deviceconfig-androiddeviceownerappautoupdatepolicytype.md)
 - [Android デバイス所有者のバッテリー接続モード](intune-deviceconfig-androiddeviceownerbatterypluggedmode.md)
+- [Android デバイス所有者の証明書プロファイルベース](intune-deviceconfig-androiddeviceownercertificateprofilebase.md)
 - [Android デバイス所有者コンプライアンスポリシー](intune-deviceconfig-androiddeviceownercompliancepolicy.md)
 - [Android デバイス所有者の既定アプリ アクセス許可ポリシー タイプ](intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md)
+- [Android デバイス所有者エンタープライズ Wi-fi 構成](intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md)
 - [Android デバイス所有者の一般デバイス構成](intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)
 - [Android デバイス所有者再生ストアモード](intune-deviceconfig-androiddeviceownerplaystoremode.md)
 - [Android デバイスの所有者に必要なパスワードの種類](intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)
 - [Android デバイス所有者のシステム更新のインストールの種類](intune-deviceconfig-androiddeviceownersystemupdateinstalltype.md)
+- [Android デバイス所有者信頼されたルート証明書](intune-deviceconfig-androiddeviceownertrustedrootcertificate.md)
+- [Android デバイス所有者の仮想ホームボタンの種類](intune-deviceconfig-androiddeviceownervirtualhomebuttontype.md)
+- [Android デバイス所有者の VPN 構成](intune-deviceconfig-androiddeviceownervpnconfiguration.md)
 - [Android デバイス所有者の Wi-Fi 構成](intune-deviceconfig-androiddeviceownerwificonfiguration.md)
 - [Android デバイス所有者の Wi-Fi セキュリティの種類](intune-deviceconfig-androiddeviceownerwifisecuritytype.md)
 - [Android Eap の種類](intune-deviceconfig-androideaptype.md)
@@ -347,11 +351,9 @@ Microsoft Intune のデバイス構成のワークロードを使用して、管
 - [OMA 設定、整数](intune-deviceconfig-omasettinginteger.md)
 - [OMA 設定、文字列](intune-deviceconfig-omasettingstring.md)
 - [OMA 設定、xml 文字列](intune-deviceconfig-omasettingstringxml.md)
-- [オンプレミスの暗号化されたペイロード](intune-raimportcerts-onpremencryptedpayload.md)
 - [オペレーティング システムのバージョンの範囲](intune-deviceconfig-operatingsystemversionrange.md)
-- [Pfx recryption 要求](intune-raimportcerts-pfxrecryptionrequest.md)
-- [Pfx ユーザー証明書](intune-raimportcerts-pfxusercertificate.md)
 - [ポリシー プラットフォームの種類](intune-deviceconfig-policyplatformtype.md)
+- [電源アクションの種類](intune-deviceconfig-poweractiontype.md)
 - [プレリリース機能](intune-deviceconfig-prereleasefeatures.md)
 - [アプリの種類の評価](intune-deviceconfig-ratingappstype.md)
 - [オーストラリアの映画の種類の評価](intune-deviceconfig-ratingaustraliamoviestype.md)
@@ -402,6 +404,7 @@ Microsoft Intune のデバイス構成のワークロードを使用して、管
 - [表示設定](intune-deviceconfig-visibilitysetting.md)
 - [VPN 認証方法](intune-deviceconfig-vpnauthenticationmethod.md)
 - [VPN クライアントの認証の種類](intune-deviceconfig-vpnclientauthenticationtype.md)
+- [VPN 構成](intune-deviceconfig-vpnconfiguration.md)
 - [VPN デッドピア検出率](intune-deviceconfig-vpndeadpeerdetectionrate.md)
 - [VPN DNS 規則](intune-deviceconfig-vpndnsrule.md)
 - [VPN 暗号化アルゴリズムの種類](intune-deviceconfig-vpnencryptionalgorithmtype.md)
@@ -522,3 +525,4 @@ Microsoft Intune のデバイス構成のワークロードを使用して、管
 - [Windows VPN 接続の種類](intune-deviceconfig-windowsvpnconnectiontype.md)
 - [Windows Wi-Fi 構成](intune-deviceconfig-windowswificonfiguration.md)
 - [Windows Wi-Fi Enterprise e a p 構成](intune-deviceconfig-windowswifienterpriseeapconfiguration.md)
+

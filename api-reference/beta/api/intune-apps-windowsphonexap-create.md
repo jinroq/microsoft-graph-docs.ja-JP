@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cd38f3d66bd77dc5a6383bd51ab603f5e63f814b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 31bcaa5d2a8a37f641a4bc84c6baa6bf67469752
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35959846"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36328650"
 ---
 # <a name="create-windowsphonexap"></a>WindowsPhoneXAP を作成する
 
@@ -27,7 +27,7 @@ ms.locfileid: "35959846"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementApps.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -185,6 +185,7 @@ Content-Length: 1409
   "identityVersion": "Identity Version value"
 }
 ```
+
 
 
 

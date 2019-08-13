@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 36cff919a633cce4057306017285565b608f5a97
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7abcadba3d03c924e0fedecaa3f11dbd0f5978bf
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35981606"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36348915"
 ---
 # <a name="create-devicemanagementscriptgroupassignment"></a>DeviceManagementScriptGroupAssignment の作成
 
@@ -27,7 +27,7 @@ ms.locfileid: "35981606"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementManagedDevices.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -87,6 +87,7 @@ Content-Length: 173
   "targetGroupId": "Target Group Id value"
 }
 ```
+
 
 
 

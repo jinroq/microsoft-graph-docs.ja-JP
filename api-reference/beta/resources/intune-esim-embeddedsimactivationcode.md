@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2cc97e88763535ccfcce9b65a6b790e872730a88
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 42183531a1e6e3b110f25d948a830c5ed3af1f7c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35998855"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36326731"
 ---
 # <a name="embeddedsimactivationcode-resource-type"></a>embeddedSIMActivationCode リソースの種類
 
@@ -48,8 +48,6 @@ ms.locfileid: "35998855"
   "smdpPlusServerAddress": "String"
 }
 ```
-
-
 
 
 
