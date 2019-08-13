@@ -5,32 +5,32 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a3df7bf69b31582a197bed55b7b4906a4aef610f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 00745ad903d47b5fafac336e360ae2c9e5cf7668
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35982830"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36363845"
 ---
-# <a name="get-shift"></a><span data-ttu-id="7076a-103">Shift を取得する</span><span class="sxs-lookup"><span data-stu-id="7076a-103">Get shift</span></span>
+# <a name="get-shift"></a><span data-ttu-id="ffea3-103">Shift を取得する</span><span class="sxs-lookup"><span data-stu-id="ffea3-103">Get shift</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="7076a-104">[Shift](../resources/shift.md)オブジェクトのプロパティとリレーションシップを ID で取得します。</span><span class="sxs-lookup"><span data-stu-id="7076a-104">Retrieve the properties and relationships of a [shift](../resources/shift.md) object by ID.</span></span>
+<span data-ttu-id="ffea3-104">[Shift](../resources/shift.md)オブジェクトのプロパティとリレーションシップを ID で取得します。</span><span class="sxs-lookup"><span data-stu-id="ffea3-104">Retrieve the properties and relationships of a [shift](../resources/shift.md) object by ID.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="7076a-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="7076a-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="ffea3-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="ffea3-105">Permissions</span></span>
 
-<span data-ttu-id="7076a-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7076a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ffea3-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ffea3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="7076a-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="7076a-108">Permission type</span></span>      | <span data-ttu-id="7076a-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="7076a-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ffea3-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="ffea3-108">Permission type</span></span>      | <span data-ttu-id="ffea3-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="ffea3-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="7076a-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="7076a-110">Delegated (work or school account)</span></span> | <span data-ttu-id="7076a-111">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7076a-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="7076a-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="7076a-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7076a-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="7076a-113">Not supported.</span></span>    |
-|<span data-ttu-id="7076a-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="7076a-114">Application</span></span> | <span data-ttu-id="7076a-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="7076a-115">Not supported.</span></span> |
+|<span data-ttu-id="ffea3-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="ffea3-110">Delegated (work or school account)</span></span> | <span data-ttu-id="ffea3-111">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ffea3-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="ffea3-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="ffea3-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ffea3-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="ffea3-113">Not supported.</span></span>    |
+|<span data-ttu-id="ffea3-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="ffea3-114">Application</span></span> | <span data-ttu-id="ffea3-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="ffea3-115">Not supported.</span></span> |
 
-> <span data-ttu-id="7076a-116">**注**: この API は、管理者のアクセス許可をサポートします。</span><span class="sxs-lookup"><span data-stu-id="7076a-116">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="7076a-117">グローバル管理者は、所属していないグループにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="7076a-117">Global admins can access groups that they are not a member of.</span></span>
+> <span data-ttu-id="ffea3-116">**注**: この API は、管理者のアクセス許可をサポートします。</span><span class="sxs-lookup"><span data-stu-id="ffea3-116">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="ffea3-117">グローバル管理者は、所属していないグループにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="ffea3-117">Global admins can access groups that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="7076a-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="7076a-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ffea3-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="ffea3-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,27 +38,27 @@ ms.locfileid: "35982830"
 GET /teams/{teamId}/schedule/shifts/{shiftId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="7076a-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="7076a-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="ffea3-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="ffea3-119">Request headers</span></span>
 
-| <span data-ttu-id="7076a-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="7076a-120">Header</span></span>       | <span data-ttu-id="7076a-121">値</span><span class="sxs-lookup"><span data-stu-id="7076a-121">Value</span></span> |
+| <span data-ttu-id="ffea3-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="ffea3-120">Header</span></span>       | <span data-ttu-id="ffea3-121">値</span><span class="sxs-lookup"><span data-stu-id="ffea3-121">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="7076a-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="7076a-122">Authorization</span></span>  | <span data-ttu-id="7076a-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="7076a-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="7076a-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="7076a-125">Content-Type</span></span>  | <span data-ttu-id="7076a-126">application/json</span><span class="sxs-lookup"><span data-stu-id="7076a-126">application/json</span></span>  |
+| <span data-ttu-id="ffea3-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="ffea3-122">Authorization</span></span>  | <span data-ttu-id="ffea3-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="ffea3-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="ffea3-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="ffea3-125">Content-Type</span></span>  | <span data-ttu-id="ffea3-126">application/json</span><span class="sxs-lookup"><span data-stu-id="ffea3-126">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="7076a-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="7076a-127">Request body</span></span>
-<span data-ttu-id="7076a-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="7076a-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ffea3-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="ffea3-127">Request body</span></span>
+<span data-ttu-id="ffea3-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="ffea3-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="7076a-129">応答</span><span class="sxs-lookup"><span data-stu-id="7076a-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ffea3-129">応答</span><span class="sxs-lookup"><span data-stu-id="ffea3-129">Response</span></span>
 
-<span data-ttu-id="7076a-130">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[shift](../resources/shift.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="7076a-130">If successful, this method returns a `200 OK` response code and a [shift](../resources/shift.md) object in the response body.</span></span>
+<span data-ttu-id="ffea3-130">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[shift](../resources/shift.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="ffea3-130">If successful, this method returns a `200 OK` response code and a [shift](../resources/shift.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7076a-131">例</span><span class="sxs-lookup"><span data-stu-id="7076a-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ffea3-131">例</span><span class="sxs-lookup"><span data-stu-id="ffea3-131">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="7076a-132">要求</span><span class="sxs-lookup"><span data-stu-id="7076a-132">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="ffea3-132">要求</span><span class="sxs-lookup"><span data-stu-id="ffea3-132">Request</span></span>
 
-<span data-ttu-id="7076a-133">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="7076a-133">The following is an example of the request.</span></span>
+<span data-ttu-id="ffea3-133">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="ffea3-133">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="7076a-134">プロトコル</span><span class="sxs-lookup"><span data-stu-id="7076a-134">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="ffea3-134">プロトコル</span><span class="sxs-lookup"><span data-stu-id="ffea3-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "shift-get"
@@ -66,30 +66,30 @@ GET /teams/{teamId}/schedule/shifts/{shiftId}
 ```http
 GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/shifts/{shiftId}
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="7076a-135">C#</span><span class="sxs-lookup"><span data-stu-id="7076a-135">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="ffea3-135">C#</span><span class="sxs-lookup"><span data-stu-id="ffea3-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/shift-get-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7076a-136">Javascript</span><span class="sxs-lookup"><span data-stu-id="7076a-136">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ffea3-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ffea3-136">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/shift-get-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="7076a-137">目的-C</span><span class="sxs-lookup"><span data-stu-id="7076a-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="ffea3-137">目的-C</span><span class="sxs-lookup"><span data-stu-id="ffea3-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/shift-get-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="7076a-138">Java</span><span class="sxs-lookup"><span data-stu-id="7076a-138">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="ffea3-138">Java</span><span class="sxs-lookup"><span data-stu-id="ffea3-138">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/shift-get-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="7076a-139">応答</span><span class="sxs-lookup"><span data-stu-id="7076a-139">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="ffea3-139">応答</span><span class="sxs-lookup"><span data-stu-id="ffea3-139">Response</span></span>
 
-<span data-ttu-id="7076a-140">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="7076a-140">The following is an example of the response.</span></span> 
+<span data-ttu-id="ffea3-140">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="ffea3-140">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="7076a-p104">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="7076a-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="ffea3-p104">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="ffea3-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
