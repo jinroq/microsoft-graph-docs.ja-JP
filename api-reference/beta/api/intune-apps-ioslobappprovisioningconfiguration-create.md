@@ -5,31 +5,31 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b8bbc56d4b2f9e220e75b0a5290a34156aa3a0d2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 68a56d8358186a21a23739beef15fc23cd5ec38b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35951891"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36330833"
 ---
-# <a name="create-ioslobappprovisioningconfiguration"></a><span data-ttu-id="e63a9-103">Ioslobappプロビジョニング構成を作成する</span><span class="sxs-lookup"><span data-stu-id="e63a9-103">Create iosLobAppProvisioningConfiguration</span></span>
+# <a name="create-ioslobappprovisioningconfiguration"></a><span data-ttu-id="defc2-103">Ioslobappプロビジョニング構成を作成する</span><span class="sxs-lookup"><span data-stu-id="defc2-103">Create iosLobAppProvisioningConfiguration</span></span>
 
-> <span data-ttu-id="e63a9-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e63a9-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="defc2-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="defc2-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="e63a9-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="e63a9-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="defc2-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="defc2-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="e63a9-106">新しい[Ioslobappプロビジョニング構成](../resources/intune-apps-ioslobappprovisioningconfiguration.md)オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="e63a9-106">Create a new [iosLobAppProvisioningConfiguration](../resources/intune-apps-ioslobappprovisioningconfiguration.md) object.</span></span>
+<span data-ttu-id="defc2-106">新しい[Ioslobappプロビジョニング構成](../resources/intune-apps-ioslobappprovisioningconfiguration.md)オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="defc2-106">Create a new [iosLobAppProvisioningConfiguration](../resources/intune-apps-ioslobappprovisioningconfiguration.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="e63a9-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="e63a9-107">Prerequisites</span></span>
-<span data-ttu-id="e63a9-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e63a9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="defc2-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="defc2-107">Prerequisites</span></span>
+<span data-ttu-id="defc2-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="defc2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e63a9-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="e63a9-110">Permission type</span></span>|<span data-ttu-id="e63a9-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="e63a9-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="defc2-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="defc2-110">Permission type</span></span>|<span data-ttu-id="defc2-111">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="defc2-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="e63a9-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="e63a9-112">Delegated (work or school account)</span></span>|<span data-ttu-id="e63a9-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e63a9-113">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="e63a9-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="e63a9-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="e63a9-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e63a9-115">Not supported.</span></span>|
-|<span data-ttu-id="e63a9-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="e63a9-116">Application</span></span>|<span data-ttu-id="e63a9-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e63a9-117">Not supported.</span></span>|
+|<span data-ttu-id="defc2-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="defc2-112">Delegated (work or school account)</span></span>|<span data-ttu-id="defc2-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="defc2-113">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="defc2-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="defc2-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="defc2-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="defc2-115">Not supported.</span></span>|
+|<span data-ttu-id="defc2-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="defc2-116">Application</span></span>|<span data-ttu-id="defc2-117">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="defc2-117">DeviceManagementApps.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="e63a9-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="e63a9-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="defc2-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="defc2-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,39 +38,39 @@ ms.locfileid: "35951891"
 POST /deviceAppManagement/iosLobAppProvisioningConfigurations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e63a9-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="e63a9-119">Request headers</span></span>
-|<span data-ttu-id="e63a9-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="e63a9-120">Header</span></span>|<span data-ttu-id="e63a9-121">値</span><span class="sxs-lookup"><span data-stu-id="e63a9-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="defc2-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="defc2-119">Request headers</span></span>
+|<span data-ttu-id="defc2-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="defc2-120">Header</span></span>|<span data-ttu-id="defc2-121">値</span><span class="sxs-lookup"><span data-stu-id="defc2-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="e63a9-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="e63a9-122">Authorization</span></span>|<span data-ttu-id="e63a9-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="e63a9-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="e63a9-124">承諾</span><span class="sxs-lookup"><span data-stu-id="e63a9-124">Accept</span></span>|<span data-ttu-id="e63a9-125">application/json</span><span class="sxs-lookup"><span data-stu-id="e63a9-125">application/json</span></span>|
+|<span data-ttu-id="defc2-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="defc2-122">Authorization</span></span>|<span data-ttu-id="defc2-123">ベアラー &lt;トークン&gt; が必要です。</span><span class="sxs-lookup"><span data-stu-id="defc2-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="defc2-124">承諾</span><span class="sxs-lookup"><span data-stu-id="defc2-124">Accept</span></span>|<span data-ttu-id="defc2-125">application/json</span><span class="sxs-lookup"><span data-stu-id="defc2-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="e63a9-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="e63a9-126">Request body</span></span>
-<span data-ttu-id="e63a9-127">要求本文で、Ioslobappプロビジョニング構成オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="e63a9-127">In the request body, supply a JSON representation for the iosLobAppProvisioningConfiguration object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="defc2-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="defc2-126">Request body</span></span>
+<span data-ttu-id="defc2-127">要求本文で、Ioslobappプロビジョニング構成オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="defc2-127">In the request body, supply a JSON representation for the iosLobAppProvisioningConfiguration object.</span></span>
 
-<span data-ttu-id="e63a9-128">次の表に、Ioslobapp/構成の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="e63a9-128">The following table shows the properties that are required when you create the iosLobAppProvisioningConfiguration.</span></span>
+<span data-ttu-id="defc2-128">次の表に、Ioslobapp/構成の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="defc2-128">The following table shows the properties that are required when you create the iosLobAppProvisioningConfiguration.</span></span>
 
-|<span data-ttu-id="e63a9-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="e63a9-129">Property</span></span>|<span data-ttu-id="e63a9-130">型</span><span class="sxs-lookup"><span data-stu-id="e63a9-130">Type</span></span>|<span data-ttu-id="e63a9-131">説明</span><span class="sxs-lookup"><span data-stu-id="e63a9-131">Description</span></span>|
+|<span data-ttu-id="defc2-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="defc2-129">Property</span></span>|<span data-ttu-id="defc2-130">型</span><span class="sxs-lookup"><span data-stu-id="defc2-130">Type</span></span>|<span data-ttu-id="defc2-131">説明</span><span class="sxs-lookup"><span data-stu-id="defc2-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="e63a9-132">id</span><span class="sxs-lookup"><span data-stu-id="e63a9-132">id</span></span>|<span data-ttu-id="e63a9-133">文字列</span><span class="sxs-lookup"><span data-stu-id="e63a9-133">String</span></span>|<span data-ttu-id="e63a9-134">エンティティのキー。</span><span class="sxs-lookup"><span data-stu-id="e63a9-134">Key of the entity.</span></span>|
-|<span data-ttu-id="e63a9-135">expirationDateTime</span><span class="sxs-lookup"><span data-stu-id="e63a9-135">expirationDateTime</span></span>|<span data-ttu-id="e63a9-136">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="e63a9-136">DateTimeOffset</span></span>|<span data-ttu-id="e63a9-137">オプションのプロファイルの有効期限の日付と時刻。</span><span class="sxs-lookup"><span data-stu-id="e63a9-137">Optional profile expiration date and time.</span></span>|
-|<span data-ttu-id="e63a9-138">payloadFileName</span><span class="sxs-lookup"><span data-stu-id="e63a9-138">payloadFileName</span></span>|<span data-ttu-id="e63a9-139">String</span><span class="sxs-lookup"><span data-stu-id="e63a9-139">String</span></span>|<span data-ttu-id="e63a9-140">ペイロードファイル名 (\*. mobileprovision</span><span class="sxs-lookup"><span data-stu-id="e63a9-140">Payload file name (\*.mobileprovision</span></span> | <span data-ttu-id="e63a9-141">\*.xml)。</span><span class="sxs-lookup"><span data-stu-id="e63a9-141">\*.xml).</span></span>|
-|<span data-ttu-id="e63a9-142">payload</span><span class="sxs-lookup"><span data-stu-id="e63a9-142">payload</span></span>|<span data-ttu-id="e63a9-143">Binary</span><span class="sxs-lookup"><span data-stu-id="e63a9-143">Binary</span></span>|<span data-ttu-id="e63a9-144">ペイロード。</span><span class="sxs-lookup"><span data-stu-id="e63a9-144">Payload.</span></span> <span data-ttu-id="e63a9-145">(UTF8 でエンコードされたバイト配列)</span><span class="sxs-lookup"><span data-stu-id="e63a9-145">(UTF8 encoded byte array)</span></span>|
-|<span data-ttu-id="e63a9-146">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="e63a9-146">roleScopeTagIds</span></span>|<span data-ttu-id="e63a9-147">文字列コレクション</span><span class="sxs-lookup"><span data-stu-id="e63a9-147">String collection</span></span>|<span data-ttu-id="e63a9-148">この iOS LOB アプリプロビジョニング構成エンティティのスコープタグのリスト。</span><span class="sxs-lookup"><span data-stu-id="e63a9-148">List of Scope Tags for this iOS LOB app provisioning configuration entity.</span></span>|
-|<span data-ttu-id="e63a9-149">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="e63a9-149">createdDateTime</span></span>|<span data-ttu-id="e63a9-150">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="e63a9-150">DateTimeOffset</span></span>|<span data-ttu-id="e63a9-151">オブジェクトが作成された DateTime。</span><span class="sxs-lookup"><span data-stu-id="e63a9-151">DateTime the object was created.</span></span>|
-|<span data-ttu-id="e63a9-152">description</span><span class="sxs-lookup"><span data-stu-id="e63a9-152">description</span></span>|<span data-ttu-id="e63a9-153">String</span><span class="sxs-lookup"><span data-stu-id="e63a9-153">String</span></span>|<span data-ttu-id="e63a9-154">デバイス構成について管理者が提供した説明です。</span><span class="sxs-lookup"><span data-stu-id="e63a9-154">Admin provided description of the Device Configuration.</span></span>|
-|<span data-ttu-id="e63a9-155">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="e63a9-155">lastModifiedDateTime</span></span>|<span data-ttu-id="e63a9-156">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="e63a9-156">DateTimeOffset</span></span>|<span data-ttu-id="e63a9-157">オブジェクトの最終更新の DateTime。</span><span class="sxs-lookup"><span data-stu-id="e63a9-157">DateTime the object was last modified.</span></span>|
-|<span data-ttu-id="e63a9-158">displayName</span><span class="sxs-lookup"><span data-stu-id="e63a9-158">displayName</span></span>|<span data-ttu-id="e63a9-159">String</span><span class="sxs-lookup"><span data-stu-id="e63a9-159">String</span></span>|<span data-ttu-id="e63a9-160">デバイス構成について管理者が指定した名前です。</span><span class="sxs-lookup"><span data-stu-id="e63a9-160">Admin provided name of the device configuration.</span></span>|
-|<span data-ttu-id="e63a9-161">version</span><span class="sxs-lookup"><span data-stu-id="e63a9-161">version</span></span>|<span data-ttu-id="e63a9-162">Int32</span><span class="sxs-lookup"><span data-stu-id="e63a9-162">Int32</span></span>|<span data-ttu-id="e63a9-163">デバイス構成のバージョン。</span><span class="sxs-lookup"><span data-stu-id="e63a9-163">Version of the device configuration.</span></span>|
+|<span data-ttu-id="defc2-132">id</span><span class="sxs-lookup"><span data-stu-id="defc2-132">id</span></span>|<span data-ttu-id="defc2-133">文字列</span><span class="sxs-lookup"><span data-stu-id="defc2-133">String</span></span>|<span data-ttu-id="defc2-134">エンティティのキー。</span><span class="sxs-lookup"><span data-stu-id="defc2-134">Key of the entity.</span></span>|
+|<span data-ttu-id="defc2-135">expirationDateTime</span><span class="sxs-lookup"><span data-stu-id="defc2-135">expirationDateTime</span></span>|<span data-ttu-id="defc2-136">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="defc2-136">DateTimeOffset</span></span>|<span data-ttu-id="defc2-137">オプションのプロファイルの有効期限の日付と時刻。</span><span class="sxs-lookup"><span data-stu-id="defc2-137">Optional profile expiration date and time.</span></span>|
+|<span data-ttu-id="defc2-138">payloadFileName</span><span class="sxs-lookup"><span data-stu-id="defc2-138">payloadFileName</span></span>|<span data-ttu-id="defc2-139">String</span><span class="sxs-lookup"><span data-stu-id="defc2-139">String</span></span>|<span data-ttu-id="defc2-140">ペイロードファイル名 (\*. mobileprovision</span><span class="sxs-lookup"><span data-stu-id="defc2-140">Payload file name (\*.mobileprovision</span></span> | <span data-ttu-id="defc2-141">\*.xml)。</span><span class="sxs-lookup"><span data-stu-id="defc2-141">\*.xml).</span></span>|
+|<span data-ttu-id="defc2-142">payload</span><span class="sxs-lookup"><span data-stu-id="defc2-142">payload</span></span>|<span data-ttu-id="defc2-143">Binary</span><span class="sxs-lookup"><span data-stu-id="defc2-143">Binary</span></span>|<span data-ttu-id="defc2-144">ペイロード。</span><span class="sxs-lookup"><span data-stu-id="defc2-144">Payload.</span></span> <span data-ttu-id="defc2-145">(UTF8 でエンコードされたバイト配列)</span><span class="sxs-lookup"><span data-stu-id="defc2-145">(UTF8 encoded byte array)</span></span>|
+|<span data-ttu-id="defc2-146">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="defc2-146">roleScopeTagIds</span></span>|<span data-ttu-id="defc2-147">文字列コレクション</span><span class="sxs-lookup"><span data-stu-id="defc2-147">String collection</span></span>|<span data-ttu-id="defc2-148">この iOS LOB アプリプロビジョニング構成エンティティのスコープタグのリスト。</span><span class="sxs-lookup"><span data-stu-id="defc2-148">List of Scope Tags for this iOS LOB app provisioning configuration entity.</span></span>|
+|<span data-ttu-id="defc2-149">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="defc2-149">createdDateTime</span></span>|<span data-ttu-id="defc2-150">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="defc2-150">DateTimeOffset</span></span>|<span data-ttu-id="defc2-151">オブジェクトが作成された DateTime。</span><span class="sxs-lookup"><span data-stu-id="defc2-151">DateTime the object was created.</span></span>|
+|<span data-ttu-id="defc2-152">description</span><span class="sxs-lookup"><span data-stu-id="defc2-152">description</span></span>|<span data-ttu-id="defc2-153">String</span><span class="sxs-lookup"><span data-stu-id="defc2-153">String</span></span>|<span data-ttu-id="defc2-154">デバイス構成について管理者が提供した説明です。</span><span class="sxs-lookup"><span data-stu-id="defc2-154">Admin provided description of the Device Configuration.</span></span>|
+|<span data-ttu-id="defc2-155">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="defc2-155">lastModifiedDateTime</span></span>|<span data-ttu-id="defc2-156">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="defc2-156">DateTimeOffset</span></span>|<span data-ttu-id="defc2-157">オブジェクトの最終更新の DateTime。</span><span class="sxs-lookup"><span data-stu-id="defc2-157">DateTime the object was last modified.</span></span>|
+|<span data-ttu-id="defc2-158">displayName</span><span class="sxs-lookup"><span data-stu-id="defc2-158">displayName</span></span>|<span data-ttu-id="defc2-159">String</span><span class="sxs-lookup"><span data-stu-id="defc2-159">String</span></span>|<span data-ttu-id="defc2-160">デバイス構成について管理者が指定した名前です。</span><span class="sxs-lookup"><span data-stu-id="defc2-160">Admin provided name of the device configuration.</span></span>|
+|<span data-ttu-id="defc2-161">version</span><span class="sxs-lookup"><span data-stu-id="defc2-161">version</span></span>|<span data-ttu-id="defc2-162">Int32</span><span class="sxs-lookup"><span data-stu-id="defc2-162">Int32</span></span>|<span data-ttu-id="defc2-163">デバイス構成のバージョン。</span><span class="sxs-lookup"><span data-stu-id="defc2-163">Version of the device configuration.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="e63a9-164">応答</span><span class="sxs-lookup"><span data-stu-id="e63a9-164">Response</span></span>
-<span data-ttu-id="e63a9-165">成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[Ioslobappプロビジョニング構成](../resources/intune-apps-ioslobappprovisioningconfiguration.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="e63a9-165">If successful, this method returns a `201 Created` response code and a [iosLobAppProvisioningConfiguration](../resources/intune-apps-ioslobappprovisioningconfiguration.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="defc2-164">応答</span><span class="sxs-lookup"><span data-stu-id="defc2-164">Response</span></span>
+<span data-ttu-id="defc2-165">成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[Ioslobappプロビジョニング構成](../resources/intune-apps-ioslobappprovisioningconfiguration.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="defc2-165">If successful, this method returns a `201 Created` response code and a [iosLobAppProvisioningConfiguration](../resources/intune-apps-ioslobappprovisioningconfiguration.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e63a9-166">例</span><span class="sxs-lookup"><span data-stu-id="e63a9-166">Example</span></span>
+## <a name="example"></a><span data-ttu-id="defc2-166">例</span><span class="sxs-lookup"><span data-stu-id="defc2-166">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="e63a9-167">要求</span><span class="sxs-lookup"><span data-stu-id="e63a9-167">Request</span></span>
-<span data-ttu-id="e63a9-168">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="e63a9-168">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="defc2-167">要求</span><span class="sxs-lookup"><span data-stu-id="defc2-167">Request</span></span>
+<span data-ttu-id="defc2-168">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="defc2-168">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/iosLobAppProvisioningConfigurations
 Content-type: application/json
@@ -90,8 +90,8 @@ Content-length: 375
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="e63a9-169">応答</span><span class="sxs-lookup"><span data-stu-id="e63a9-169">Response</span></span>
-<span data-ttu-id="e63a9-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="e63a9-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="defc2-169">応答</span><span class="sxs-lookup"><span data-stu-id="defc2-169">Response</span></span>
+<span data-ttu-id="defc2-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="defc2-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -113,6 +113,7 @@ Content-Length: 547
   "version": 7
 }
 ```
+
 
 
 

@@ -5,30 +5,28 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 306445cd3dcb1d3915f777eeb975c55329255e92
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 77cdcc713b3b3d785d25299fce2afc4cbba3a9dc
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971509"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334849"
 ---
-# <a name="androiddeviceownerdefaultapppermissionpolicytype-enum-type"></a><span data-ttu-id="406e8-103">androidDeviceOwnerDefaultAppPermissionPolicyType 列挙型</span><span class="sxs-lookup"><span data-stu-id="406e8-103">androidDeviceOwnerDefaultAppPermissionPolicyType enum type</span></span>
+# <a name="androiddeviceownerdefaultapppermissionpolicytype-enum-type"></a><span data-ttu-id="6e8e1-103">androidDeviceOwnerDefaultAppPermissionPolicyType 列挙型</span><span class="sxs-lookup"><span data-stu-id="6e8e1-103">androidDeviceOwnerDefaultAppPermissionPolicyType enum type</span></span>
 
-> <span data-ttu-id="406e8-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="406e8-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="6e8e1-104">**重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="6e8e1-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="406e8-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="406e8-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="6e8e1-105">**注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="6e8e1-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="406e8-106">Android デバイス所有者既定のアプリアクセス許可ポリシーの種類。</span><span class="sxs-lookup"><span data-stu-id="406e8-106">Android Device Owner default app permission policy type.</span></span>
+<span data-ttu-id="6e8e1-106">Android デバイス所有者既定のアプリアクセス許可ポリシーの種類。</span><span class="sxs-lookup"><span data-stu-id="6e8e1-106">Android Device Owner default app permission policy type.</span></span>
 
-## <a name="members"></a><span data-ttu-id="406e8-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="406e8-107">Members</span></span>
-|<span data-ttu-id="406e8-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="406e8-108">Member</span></span>|<span data-ttu-id="406e8-109">値</span><span class="sxs-lookup"><span data-stu-id="406e8-109">Value</span></span>|<span data-ttu-id="406e8-110">説明</span><span class="sxs-lookup"><span data-stu-id="406e8-110">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="6e8e1-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="6e8e1-107">Members</span></span>
+|<span data-ttu-id="6e8e1-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="6e8e1-108">Member</span></span>|<span data-ttu-id="6e8e1-109">値</span><span class="sxs-lookup"><span data-stu-id="6e8e1-109">Value</span></span>|<span data-ttu-id="6e8e1-110">説明</span><span class="sxs-lookup"><span data-stu-id="6e8e1-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="406e8-111">deviceDefault</span><span class="sxs-lookup"><span data-stu-id="406e8-111">deviceDefault</span></span>|<span data-ttu-id="406e8-112">.0</span><span class="sxs-lookup"><span data-stu-id="406e8-112">0</span></span>|<span data-ttu-id="406e8-113">デバイスの既定値。意図的ではありません。</span><span class="sxs-lookup"><span data-stu-id="406e8-113">Device default value, no intent.</span></span>|
-|<span data-ttu-id="406e8-114">音声ガイダンス</span><span class="sxs-lookup"><span data-stu-id="406e8-114">prompt</span></span>|<span data-ttu-id="406e8-115">1-d</span><span class="sxs-lookup"><span data-stu-id="406e8-115">1</span></span>|<span data-ttu-id="406e8-116">・.</span><span class="sxs-lookup"><span data-stu-id="406e8-116">Prompt.</span></span>|
-|<span data-ttu-id="406e8-117">autoGrant</span><span class="sxs-lookup"><span data-stu-id="406e8-117">autoGrant</span></span>|<span data-ttu-id="406e8-118">pbm-2</span><span class="sxs-lookup"><span data-stu-id="406e8-118">2</span></span>|<span data-ttu-id="406e8-119">自動付与</span><span class="sxs-lookup"><span data-stu-id="406e8-119">Auto grant.</span></span>|
-|<span data-ttu-id="406e8-120">autoDeny</span><span class="sxs-lookup"><span data-stu-id="406e8-120">autoDeny</span></span>|<span data-ttu-id="406e8-121">1/3</span><span class="sxs-lookup"><span data-stu-id="406e8-121">3</span></span>|<span data-ttu-id="406e8-122">自動拒否。</span><span class="sxs-lookup"><span data-stu-id="406e8-122">Auto deny.</span></span>|
-
-
+|<span data-ttu-id="6e8e1-111">deviceDefault</span><span class="sxs-lookup"><span data-stu-id="6e8e1-111">deviceDefault</span></span>|<span data-ttu-id="6e8e1-112">.0</span><span class="sxs-lookup"><span data-stu-id="6e8e1-112">0</span></span>|<span data-ttu-id="6e8e1-113">デバイスの既定値。意図的ではありません。</span><span class="sxs-lookup"><span data-stu-id="6e8e1-113">Device default value, no intent.</span></span>|
+|<span data-ttu-id="6e8e1-114">音声ガイダンス</span><span class="sxs-lookup"><span data-stu-id="6e8e1-114">prompt</span></span>|<span data-ttu-id="6e8e1-115">1-d</span><span class="sxs-lookup"><span data-stu-id="6e8e1-115">1</span></span>|<span data-ttu-id="6e8e1-116">・.</span><span class="sxs-lookup"><span data-stu-id="6e8e1-116">Prompt.</span></span>|
+|<span data-ttu-id="6e8e1-117">autoGrant</span><span class="sxs-lookup"><span data-stu-id="6e8e1-117">autoGrant</span></span>|<span data-ttu-id="6e8e1-118">pbm-2</span><span class="sxs-lookup"><span data-stu-id="6e8e1-118">2</span></span>|<span data-ttu-id="6e8e1-119">自動付与</span><span class="sxs-lookup"><span data-stu-id="6e8e1-119">Auto grant.</span></span>|
+|<span data-ttu-id="6e8e1-120">autoDeny</span><span class="sxs-lookup"><span data-stu-id="6e8e1-120">autoDeny</span></span>|<span data-ttu-id="6e8e1-121">1/3</span><span class="sxs-lookup"><span data-stu-id="6e8e1-121">3</span></span>|<span data-ttu-id="6e8e1-122">自動拒否。</span><span class="sxs-lookup"><span data-stu-id="6e8e1-122">Auto deny.</span></span>|
 
 
 
