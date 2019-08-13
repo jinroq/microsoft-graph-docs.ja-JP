@@ -4,12 +4,13 @@ description: SecurityBaselineCategoryStateSummary オブジェクトのプロパ
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fe7df266a741f87dc54eba724a7d2d39097527d8
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: d01cb9ea9b3b0a5e6447e7d28e051bef1a845778
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34959573"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36310823"
 ---
 # <a name="list-securitybaselinecategorystatesummaries"></a>リスト securityBaselineCategoryStateSummaries
 
@@ -26,7 +27,7 @@ ms.locfileid: "34959573"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -80,6 +81,7 @@ Content-Length: 379
   ]
 }
 ```
+
 
 
 

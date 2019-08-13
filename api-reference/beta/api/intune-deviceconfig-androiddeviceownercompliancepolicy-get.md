@@ -4,12 +4,13 @@ description: AndroidDeviceOwnerCompliancePolicy オブジェクトのプロパ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c9c9305981a28dd0c863b1e170fba56343a00627
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 0efb04425869138fcd7e2c83c3f391f12972320a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34971438"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36312664"
 ---
 # <a name="get-androiddeviceownercompliancepolicy"></a>AndroidDeviceOwnerCompliancePolicy を取得する
 
@@ -26,7 +27,7 @@ ms.locfileid: "34971438"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -98,6 +99,7 @@ Content-Length: 1175
   }
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d5c8a4eb54ab9c09fe84ab6cf7e40303e4901676
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b4e8824833b4c87eba12a2d9f625e8812a65ec6f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35981732"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36310683"
 ---
 # <a name="delete-datasharingconsent"></a>DataSharingConsent の削除
 
@@ -27,7 +27,7 @@ ms.locfileid: "35981732"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementServiceConfig.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -63,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/dataSharingConsents/{da
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

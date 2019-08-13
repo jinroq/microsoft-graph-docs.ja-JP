@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: eac9e170c178feb6412e633416f08c8b3025f950
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6a864ee07fb8a6540f908592ce8604912e1bdd58
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35958453"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36313007"
 ---
 # <a name="list-termsandconditionsgroupassignments"></a>リスト termsAndConditionsGroupAssignments
 
@@ -27,7 +27,7 @@ ms.locfileid: "35958453"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -75,6 +75,7 @@ Content-Length: 214
   ]
 }
 ```
+
 
 
 

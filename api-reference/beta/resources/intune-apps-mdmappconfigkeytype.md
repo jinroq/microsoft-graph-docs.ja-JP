@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c756868385616bd15cc9726d154f4398a9d62188
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1b0ac132eea990372eb950b9942c77d9d81ae935
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005220"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36308303"
 ---
 # <a name="mdmappconfigkeytype-enum-type"></a>mdmAppConfigKeyType 列挙型
 
@@ -28,8 +28,6 @@ ms.locfileid: "36005220"
 |realType|pbm-2|まだ文書化されていません|
 |booleanType|1/3|まだ文書化されていません|
 |tokenType|2/4|まだ文書化されていません|
-
-
 
 
 

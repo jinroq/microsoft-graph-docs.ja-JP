@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 697aa09ff303ad9c7a3d715c3b3a8148ed479501
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bfae6e19167cdfad88e5a4bf598b92bda627f11b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35981340"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36310095"
 ---
 # <a name="syncdevice-action"></a>syncDevice アクション
 
@@ -27,7 +27,7 @@ ms.locfileid: "35981340"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementManagedDevices.PriviligedOperation.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementManagedDevices.PriviligedOperation.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -66,6 +66,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDe
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 91931de780695a8a47e70143d192123021111294
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8f25a56f8181323fc9c9521ce410113718cb6618
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967785"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36309479"
 ---
 # <a name="notificationtemplatebrandingoptions-enum-type"></a>notificationTemplateBrandingOptions 列挙型
 
@@ -27,8 +27,6 @@ ms.locfileid: "35967785"
 |includeCompanyLogo|1-d|会社のロゴを含めます。|
 |includeCompanyName|pbm-2|会社名を含めます。|
 |情報|2/4|連絡先情報を含めます。|
-
-
 
 
 

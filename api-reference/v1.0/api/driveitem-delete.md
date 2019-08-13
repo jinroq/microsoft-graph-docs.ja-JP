@@ -7,12 +7,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: DriveItem を、ID またはパスを使用して削除します。
 doc_type: apiPageType
-ms.openlocfilehash: c9ee8f0f92625c51e44bca12158822f4054f5004
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0dadc7239356bb4c3ae5f78a25423ef88051e434
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36015524"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36375122"
 ---
 # <a name="delete-a-driveitem"></a>DriveItem を削除する
 
@@ -61,7 +61,7 @@ DELETE /me/drive/items/{item-id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-drive-item-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-drive-item-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

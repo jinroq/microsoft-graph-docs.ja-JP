@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0282fdca49e334857f8b4b114821b5ce804ac3fe
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 71ffcfc26b3ebe868665bc2fae83f455b9cc8c00
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35958446"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36312881"
 ---
 # <a name="get-advancedthreatprotectiononboardingstatesummary"></a>AdvancedThreatProtectionOnboardingStateSummary を取得する
 
@@ -27,7 +27,7 @@ ms.locfileid: "35958446"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -83,6 +83,7 @@ Content-Length: 419
   }
 }
 ```
+
 
 
 

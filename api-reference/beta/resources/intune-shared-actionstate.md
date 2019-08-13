@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c561f3ea046423e26daeb544d92b89a98e4bc55b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d78f74294ae6ed486681e4378665589722dd1aa5
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967519"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36308183"
 ---
 # <a name="actionstate-enum-type"></a>actionState 列挙型
 
@@ -30,8 +30,6 @@ ms.locfileid: "35967519"
 |done|2/4|操作はエラーなしで完了しました。|
 |フェール|5|アクションの失敗|
 |notSupported|シックス|アクションはサポートされていません。|
-
-
 
 
 

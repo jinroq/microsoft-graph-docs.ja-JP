@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 2a9f2d5af545399a02458e174d7c05128a3ef4e6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f69fb5d521654ca8adcb2877698d94fc3da8bb7c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000075"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36319294"
 ---
 # <a name="adminconsentstate-enum-type"></a>Adminconstate State 列挙型
 
@@ -26,8 +26,6 @@ ms.locfileid: "36000075"
 |notConfigured|.0|管理者がアイテムを構成しませんでした|
 |granted|1-d|管理者付与のアイテム|
 |notGranted|pbm-2|管理者がアイテムを付与することはできません|
-
-
 
 
 

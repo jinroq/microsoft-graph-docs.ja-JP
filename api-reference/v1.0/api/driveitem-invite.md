@@ -7,12 +7,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: ドライブ項目の共有への招待を送信します。
 doc_type: apiPageType
-ms.openlocfilehash: 3f245cc3b518502f39a6ca2928ea31719661d27b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 47aa7e49875d4d07ebc8b80a0f86c5939aea13ec
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36015426"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36375045"
 ---
 # <a name="send-a-sharing-invitation"></a>共有の招待状を送信する
 
@@ -101,7 +101,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/send-sharing-invite-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/send-sharing-invite-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

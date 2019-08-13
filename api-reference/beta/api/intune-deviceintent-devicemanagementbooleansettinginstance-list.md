@@ -4,12 +4,13 @@ description: DeviceManagementBooleanSettingInstance オブジェクトのプロ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 099027f076b54ac1665e4b2e03813a16422300e0
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 042022881c853889e46ab1932c9fa85a5d812f46
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34960938"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36313497"
 ---
 # <a name="list-devicemanagementbooleansettinginstances"></a>リスト deviceManagementBooleanSettingInstances
 
@@ -26,7 +27,7 @@ ms.locfileid: "34960938"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -79,6 +80,7 @@ Content-Length: 278
   ]
 }
 ```
+
 
 
 

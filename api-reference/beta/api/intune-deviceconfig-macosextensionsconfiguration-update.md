@@ -4,12 +4,13 @@ description: MacOSExtensionsConfiguration オブジェクトのプロパティ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0e78c317496ee9e116e9319a0ff28ca8a7478224
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 1c852c56daac83609ac044d4c087dc6fc88752a1
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34963227"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36315394"
 ---
 # <a name="update-macosextensionsconfiguration"></a>MacOSExtensionsConfiguration の更新
 
@@ -26,7 +27,7 @@ ms.locfileid: "34963227"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -178,6 +179,7 @@ Content-Length: 1555
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,13 @@ description: 新しい windowsUpdateState オブジェクトを作成します�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0b428197cea201bffc59153d3df561ea7ddacea4
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: 9a5437321741131f2a341c07514e57e50c5ea2be
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35726080"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36313700"
 ---
 # <a name="create-windowsupdatestate"></a>WindowsUpdateState を作成する
 
@@ -26,7 +27,7 @@ ms.locfileid: "35726080"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -110,6 +111,7 @@ Content-Length: 553
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00"
 }
 ```
+
 
 
 

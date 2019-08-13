@@ -4,12 +4,13 @@ description: DeviceManagementCollectionSettingInstance オブジェクトのプ�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 93b1edb40d77c89acd2354869add6bfffbb77257
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: e190d9bbed02da9cdb821a038c7cdb2ded8ac008
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34960770"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36313448"
 ---
 # <a name="list-devicemanagementcollectionsettinginstances"></a>DeviceManagementCollectionSettingInstances を一覧表示する
 
@@ -26,7 +27,7 @@ ms.locfileid: "34960770"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -78,6 +79,7 @@ Content-Length: 259
   ]
 }
 ```
+
 
 
 

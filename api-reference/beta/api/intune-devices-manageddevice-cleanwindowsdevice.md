@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6715715e89840bf970407b7d9c2090aee75a9a76
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 049741b25e875923aeced68bc163f3e72f60d96f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35981473"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36310249"
 ---
 # <a name="cleanwindowsdevice-action"></a>cleanWindowsDevice アクション
 
@@ -27,7 +27,7 @@ Windows デバイスをクリーンにします
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementManagedDevices.PriviligedOperation.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementManagedDevices.PriviligedOperation.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -81,6 +81,7 @@ Content-length: 28
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

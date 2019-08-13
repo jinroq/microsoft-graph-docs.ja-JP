@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 86a23d9a55247308e169c296352f8e704671cf85
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cd92cd473d8ce039085586c6d7200b3d932aa79b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35985842"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36310207"
 ---
 # <a name="enablelostmode-action"></a>enableLostMode アクション
 
@@ -27,7 +27,7 @@ ms.locfileid: "35985842"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementManagedDevices.PriviligedOperation.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementManagedDevices.PriviligedOperation.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -85,6 +85,7 @@ Content-length: 103
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

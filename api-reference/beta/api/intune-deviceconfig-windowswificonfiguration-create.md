@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 06b16d33dc96c283c73f89f6f412a59f44c352a5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b36a2619abeed22bda1f8d1d9ca6ac2c7d4a2755
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35981858"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36313637"
 ---
 # <a name="create-windowswificonfiguration"></a>WindowsWifiConfiguration を作成する
 
@@ -27,7 +27,7 @@ ms.locfileid: "35981858"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -192,6 +192,7 @@ Content-Length: 1731
   "forceFIPSCompliance": true
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bfdade7e7014da121453873349c3a3aee787fe43
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1f0b9c1c2ba51907bc486b5c31460b6b7f5c1dce
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35981599"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36310403"
 ---
 # <a name="create-devicemanagementscriptdevicestate"></a>DeviceManagementScriptDeviceState の作成
 
@@ -27,7 +27,7 @@ ms.locfileid: "35981599"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementManagedDevices.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -53,11 +53,15 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRu
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|デバイス管理スクリプトのデバイス状態エンティティのキー。|
-|runState|[runState](../resources/intune-shared-runstate.md)|デバイス管理スクリプトの最新の実行の状態。 可能な値は、`unknown`、`success`、`fail` です。|
+|runState|[runState](../resources/intune-shared-runstate.md)|デバイス管理スクリプトの最新の実行の状態。 可能な値は、`unknown`、`success`、`fail`、`error`、`pending` です。|
 |resultMessage|String|実行出力の詳細。|
 |lastStateUpdateDateTime|DateTimeOffset|デバイス管理スクリプトが最後に実行された時刻。|
 |errorCode|Int32|デバイス管理スクリプトの誤った実行に対応するエラーコード。|
 |errorDescription|String|デバイス管理スクリプトの誤った実行に対応するエラーの説明。|
+|lastSyncDateTime|DateTimeOffset|Intune 管理拡張機能が Intune と同期する最新時刻。|
+|preRemediationDetectionScriptOutput|String|修復前の検出スクリプトの出力。|
+|remediationScriptError|String|修復スクリプトのエラー出力。|
+|postRemediationDetectionScriptOutput|String|修復後の検出スクリプトの出力。|
 
 
 
@@ -71,7 +75,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRu
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates
 Content-type: application/json
-Content-length: 281
+Content-length: 588
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementScriptDeviceState",
@@ -79,7 +83,11 @@ Content-length: 281
   "resultMessage": "Result Message value",
   "lastStateUpdateDateTime": "2017-01-01T00:02:58.4418045-08:00",
   "errorCode": 9,
-  "errorDescription": "Error Description value"
+  "errorDescription": "Error Description value",
+  "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
+  "preRemediationDetectionScriptOutput": "Pre Remediation Detection Script Output value",
+  "remediationScriptError": "Remediation Script Error value",
+  "postRemediationDetectionScriptOutput": "Post Remediation Detection Script Output value"
 }
 ```
 
@@ -88,7 +96,7 @@ Content-length: 281
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 330
+Content-Length: 637
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementScriptDeviceState",
@@ -97,9 +105,14 @@ Content-Length: 330
   "resultMessage": "Result Message value",
   "lastStateUpdateDateTime": "2017-01-01T00:02:58.4418045-08:00",
   "errorCode": 9,
-  "errorDescription": "Error Description value"
+  "errorDescription": "Error Description value",
+  "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
+  "preRemediationDetectionScriptOutput": "Pre Remediation Detection Script Output value",
+  "remediationScriptError": "Remediation Script Error value",
+  "postRemediationDetectionScriptOutput": "Post Remediation Detection Script Output value"
 }
 ```
+
 
 
 

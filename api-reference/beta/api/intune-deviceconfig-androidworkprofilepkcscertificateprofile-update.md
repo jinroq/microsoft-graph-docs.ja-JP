@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b2a4e9abfe01d000e7b060db03adf7e347f7d3db
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 641b2c3dbd5adea438bfb6e563775f8996e62735
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35950561"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36311124"
 ---
 # <a name="update-androidworkprofilepkcscertificateprofile"></a>AndroidWorkProfilePkcsCertificateProfile の更新
 
@@ -27,7 +27,7 @@ ms.locfileid: "35950561"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -196,6 +196,7 @@ Content-Length: 1914
   "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value"
 }
 ```
+
 
 
 
