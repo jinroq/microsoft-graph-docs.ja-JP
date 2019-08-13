@@ -5,26 +5,26 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 80a190c1e8725479d9e209981f02a4465f710649
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7d619068cc21d07755301a655dc7d5416043b428
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35976279"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36309387"
 ---
-# <a name="delete-page"></a><span data-ttu-id="5eedf-103">ページを削除する</span><span class="sxs-lookup"><span data-stu-id="5eedf-103">Delete page</span></span>
+# <a name="delete-page"></a><span data-ttu-id="77196-103">ページを削除する</span><span class="sxs-lookup"><span data-stu-id="77196-103">Delete page</span></span>
 
-<span data-ttu-id="5eedf-104">OneNote ページを削除します。</span><span class="sxs-lookup"><span data-stu-id="5eedf-104">Delete a OneNote page.</span></span>
-## <a name="permissions"></a><span data-ttu-id="5eedf-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="5eedf-105">Permissions</span></span>
-<span data-ttu-id="5eedf-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5eedf-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="77196-104">OneNote ページを削除します。</span><span class="sxs-lookup"><span data-stu-id="77196-104">Delete a OneNote page.</span></span>
+## <a name="permissions"></a><span data-ttu-id="77196-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="77196-105">Permissions</span></span>
+<span data-ttu-id="77196-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="77196-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="5eedf-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="5eedf-108">Permission type</span></span>      | <span data-ttu-id="5eedf-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="5eedf-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="77196-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="77196-108">Permission type</span></span>      | <span data-ttu-id="77196-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="77196-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="5eedf-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="5eedf-110">Delegated (work or school account)</span></span> | <span data-ttu-id="5eedf-111">メモ書き込み、メモ (すべて)</span><span class="sxs-lookup"><span data-stu-id="5eedf-111">Notes.ReadWrite, Notes.ReadWrite.All</span></span>    |
-|<span data-ttu-id="5eedf-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="5eedf-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5eedf-113">Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5eedf-113">Notes.ReadWrite</span></span>    |
-|<span data-ttu-id="5eedf-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="5eedf-114">Application</span></span> | <span data-ttu-id="5eedf-115">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5eedf-115">Notes.ReadWrite.All</span></span> |
+|<span data-ttu-id="77196-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="77196-110">Delegated (work or school account)</span></span> | <span data-ttu-id="77196-111">メモ書き込み、メモ (すべて)</span><span class="sxs-lookup"><span data-stu-id="77196-111">Notes.ReadWrite, Notes.ReadWrite.All</span></span>    |
+|<span data-ttu-id="77196-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="77196-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="77196-113">Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="77196-113">Notes.ReadWrite</span></span>    |
+|<span data-ttu-id="77196-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="77196-114">Application</span></span> | <span data-ttu-id="77196-115">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="77196-115">Notes.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="5eedf-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="5eedf-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="77196-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="77196-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/onenote/pages/{id}
@@ -32,20 +32,20 @@ DELETE /users/{id | userPrincipalName}/onenote/pages/{id}
 DELETE /groups/{id}/onenote/pages/{id}
 DELETE /sites/{id}/onenote/pages/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="5eedf-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="5eedf-117">Request headers</span></span>
-| <span data-ttu-id="5eedf-118">名前</span><span class="sxs-lookup"><span data-stu-id="5eedf-118">Name</span></span>       | <span data-ttu-id="5eedf-119">型</span><span class="sxs-lookup"><span data-stu-id="5eedf-119">Type</span></span> | <span data-ttu-id="5eedf-120">説明</span><span class="sxs-lookup"><span data-stu-id="5eedf-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="77196-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="77196-117">Request headers</span></span>
+| <span data-ttu-id="77196-118">名前</span><span class="sxs-lookup"><span data-stu-id="77196-118">Name</span></span>       | <span data-ttu-id="77196-119">型</span><span class="sxs-lookup"><span data-stu-id="77196-119">Type</span></span> | <span data-ttu-id="77196-120">説明</span><span class="sxs-lookup"><span data-stu-id="77196-120">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="5eedf-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="5eedf-121">Authorization</span></span>  | <span data-ttu-id="5eedf-122">string</span><span class="sxs-lookup"><span data-stu-id="5eedf-122">string</span></span>  | <span data-ttu-id="5eedf-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="5eedf-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="77196-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="77196-121">Authorization</span></span>  | <span data-ttu-id="77196-122">string</span><span class="sxs-lookup"><span data-stu-id="77196-122">string</span></span>  | <span data-ttu-id="77196-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="77196-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="5eedf-125">応答</span><span class="sxs-lookup"><span data-stu-id="5eedf-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="77196-125">応答</span><span class="sxs-lookup"><span data-stu-id="77196-125">Response</span></span>
 
-<span data-ttu-id="5eedf-p103">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="5eedf-p103">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="77196-p103">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="77196-p103">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="5eedf-128">例</span><span class="sxs-lookup"><span data-stu-id="5eedf-128">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="5eedf-129">要求</span><span class="sxs-lookup"><span data-stu-id="5eedf-129">Request</span></span>
-<span data-ttu-id="5eedf-130">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="5eedf-130">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="77196-128">例</span><span class="sxs-lookup"><span data-stu-id="77196-128">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="77196-129">要求</span><span class="sxs-lookup"><span data-stu-id="77196-129">Request</span></span>
+<span data-ttu-id="77196-130">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="77196-130">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="5eedf-131">プロトコル</span><span class="sxs-lookup"><span data-stu-id="5eedf-131">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="77196-131">プロトコル</span><span class="sxs-lookup"><span data-stu-id="77196-131">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_page"
@@ -53,26 +53,26 @@ DELETE /sites/{id}/onenote/pages/{id}
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/onenote/pages/{id}
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="5eedf-132">C#</span><span class="sxs-lookup"><span data-stu-id="5eedf-132">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="77196-132">C#</span><span class="sxs-lookup"><span data-stu-id="77196-132">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-page-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="5eedf-133">Javascript</span><span class="sxs-lookup"><span data-stu-id="5eedf-133">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="77196-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="77196-133">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-page-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="5eedf-134">目的-C</span><span class="sxs-lookup"><span data-stu-id="5eedf-134">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="77196-134">目的-C</span><span class="sxs-lookup"><span data-stu-id="77196-134">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-page-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="5eedf-135">Java</span><span class="sxs-lookup"><span data-stu-id="5eedf-135">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="77196-135">Java</span><span class="sxs-lookup"><span data-stu-id="77196-135">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-page-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="5eedf-136">応答</span><span class="sxs-lookup"><span data-stu-id="5eedf-136">Response</span></span>
-<span data-ttu-id="5eedf-137">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="5eedf-137">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="77196-136">応答</span><span class="sxs-lookup"><span data-stu-id="77196-136">Response</span></span>
+<span data-ttu-id="77196-137">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="77196-137">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
