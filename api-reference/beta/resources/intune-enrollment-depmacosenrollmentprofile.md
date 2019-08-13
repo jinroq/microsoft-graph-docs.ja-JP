@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 27260614294c553eaa75f3d7e94ec3e54daeedc2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: dec020828cd01fde2b3709d8290c5488e53b67c0
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999298"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36328047"
 ---
 # <a name="depmacosenrollmentprofile-resource-type"></a>depMacOSEnrollmentProfile リソースの種類
 
@@ -114,8 +114,6 @@ DepMacOSEnrollmentProfile リソースは、macOS 構成に固有の Apple Devic
   "chooseYourLockScreenDisabled": true
 }
 ```
-
-
 
 
 

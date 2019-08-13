@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 0fb68d441819614f264db915acb0ed178380dd32
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5768f71faa6bf6056f1f1edd37f8d5b3e06be8fd
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011044"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36331561"
 ---
 # <a name="unarymanagementconditionexpressionoperatortype-enum-type"></a>アン Arymanagementconditionexpression 演算子 Type 列挙型
 
@@ -24,8 +24,6 @@ ms.locfileid: "36011044"
 |メンバー|値|説明|
 |:---|:---|:---|
 |not|.0|オペランドの評価を否定します。|
-
-
 
 
 

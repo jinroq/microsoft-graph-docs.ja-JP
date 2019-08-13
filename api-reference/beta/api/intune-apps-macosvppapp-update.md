@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 34f8da022b48b06da5cec54688a6c9be21270139
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 94dcb03417fd23367b263704bb099c23e5e255ea
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35961974"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36330133"
 ---
 # <a name="update-macosvppapp"></a>MacOsVppApp の更新
 
@@ -27,7 +27,7 @@ ms.locfileid: "35961974"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementApps.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -218,6 +218,7 @@ Content-Length: 2041
   ]
 }
 ```
+
 
 
 

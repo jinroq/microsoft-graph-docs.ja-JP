@@ -6,12 +6,12 @@ description: '**[listItem][]** のプロパティを更新します。'
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: d346e9aedf6a9c7061fcfc2e1093ed6257034345
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e74f0b875232dd51058447a8c9479f5130f8f03f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023126"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36356607"
 ---
 # <a name="update-listitem"></a>リスト アイテムを更新します。
 
@@ -77,7 +77,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-listitem-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-listitem-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

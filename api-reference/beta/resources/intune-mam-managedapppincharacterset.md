@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 413a6b8e229b2f6c441062f7259dc0d0b5a7e385
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3c1b073c77ad346be262c06ece531c8f1ae08b2c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35998374"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332079"
 ---
 # <a name="managedapppincharacterset-enum-type"></a>managedAppPinCharacterSet 列挙型
 
@@ -25,8 +25,6 @@ ms.locfileid: "35998374"
 |:---|:---|:---|
 |数値|.0|数字|
 |alphanumericAndSymbol|1-d|英数字と文字の記号|
-
-
 
 
 

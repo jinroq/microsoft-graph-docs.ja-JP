@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: daff3ad89beb11c7bf158b9b12a5915a3daf5eaa
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 549f8853071d34b70c05a98d7ea1b89c9d499d17
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35946942"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36338645"
 ---
 # <a name="get-macosvpnconfiguration"></a>MacOSVpnConfiguration の取得
 
@@ -27,7 +27,7 @@ ms.locfileid: "35946942"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -164,6 +164,7 @@ Content-Length: 2999
   }
 }
 ```
+
 
 
 

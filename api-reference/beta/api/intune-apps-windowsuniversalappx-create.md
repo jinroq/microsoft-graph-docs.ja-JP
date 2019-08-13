@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fe23f3455ad5495137cf57cf5dcc51400cf3fea9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 52e505e0ab76399dc9a8c6656c2aa2b3ce2e240c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35959706"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36336223"
 ---
 # <a name="create-windowsuniversalappx"></a>Create windowsUniversalAppX
 
@@ -27,7 +27,7 @@ ms.locfileid: "35959706"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementApps.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -200,6 +200,7 @@ Content-Length: 1633
   "identityVersion": "Identity Version value"
 }
 ```
+
 
 
 

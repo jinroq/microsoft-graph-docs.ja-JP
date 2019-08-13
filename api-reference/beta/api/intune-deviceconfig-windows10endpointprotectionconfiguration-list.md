@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 11f79a93c3cdb4acfb173507743d03f348dd329c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7f51e239992395f903f84378f9444bf37b4177dc
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35976881"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36345275"
 ---
 # <a name="list-windows10endpointprotectionconfigurations"></a>windows10EndpointProtectionConfigurations のリスト
 
@@ -27,7 +27,7 @@ ms.locfileid: "35976881"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 31927
+Content-Length: 31457
 
 {
   "value": [
@@ -479,18 +479,6 @@ Content-Length: 31927
           }
         ]
       },
-      "userRightsRegisterProcessAsService": {
-        "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
-        "state": "blocked",
-        "localUsersOrGroups": [
-          {
-            "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
-            "name": "Name value",
-            "description": "Description value",
-            "securityIdentifier": "Security Identifier value"
-          }
-        ]
-      },
       "xboxServicesEnableXboxGameSaveTask": true,
       "xboxServicesAccessoryManagementServiceStartupMode": "automatic",
       "xboxServicesLiveAuthManagerServiceStartupMode": "automatic",
@@ -764,6 +752,7 @@ Content-Length: 31927
   ]
 }
 ```
+
 
 
 

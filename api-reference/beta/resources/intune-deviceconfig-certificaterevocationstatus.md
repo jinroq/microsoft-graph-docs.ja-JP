@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 9a1231373597096905d4e0614d4b1b6e2d70b6c6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 68f510771370e5be95a8360526d0058ff8c307b1
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971012"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333703"
 ---
 # <a name="certificaterevocationstatus-enum-type"></a>certificateRevocationStatus 列挙型
 
@@ -28,8 +28,6 @@ ms.locfileid: "35971012"
 |発行|pbm-2|失効コマンドが発行されました。|
 |フェール|1/3|取り消しに失敗しました。|
 |破棄|2/4|破棄.|
-
-
 
 
 

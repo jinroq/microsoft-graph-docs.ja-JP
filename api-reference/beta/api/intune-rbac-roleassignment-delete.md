@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2158cfcefb8899963428e6d3cc5533439252b7cd
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3fef1468c90ff5612a825fa5c820b6550a3d7f00
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35979989"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36351330"
 ---
 # <a name="delete-roleassignment"></a>Delete roleAssignment
 
@@ -27,7 +27,7 @@ ms.locfileid: "35979989"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementRBAC.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -63,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/roleDefinitions/{roleDe
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

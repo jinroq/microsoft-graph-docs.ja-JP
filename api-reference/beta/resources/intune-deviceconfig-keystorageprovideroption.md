@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e345e5c3b8490c15edd83fd4d7a4eb70e4be40d5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 21a2e72bc226fdd7a965fbfb3f6ddd7735a4f351
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001041"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36325506"
 ---
 # <a name="keystorageprovideroption-enum-type"></a>keyStorageProviderOption 列挙型
 
@@ -27,8 +27,6 @@ ms.locfileid: "36001041"
 |useTpmKspOtherwiseFail|1-d|トラステッドプラットフォームモジュール (TPM) KSP (存在する場合) にインポートします (それ以外の場合は失敗します)。|
 |usePassportForWorkKspOtherwiseFail|pbm-2|利用可能な場合は Passport にインポートし、それ以外の場合は失敗します。|
 |その他の方法|1/3|ソフトウェア KSP にインポートします。|
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 4b75f541180dbbfcd2d1eab107390f0e56d54d1c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6deec7ee23a9942a75fc49510c6c22a0b95343c8
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011667"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334207"
 ---
 # <a name="androidworkprofiledefaultapppermissionpolicytype-enum-type"></a>androidWorkProfileDefaultAppPermissionPolicyType 列挙型
 
@@ -27,8 +27,6 @@ Android 作業プロファイル既定のアプリアクセス許可ポリシー
 |音声ガイダンス|1-d|・.|
 |autoGrant|pbm-2|自動付与|
 |autoDeny|1/3|自動拒否。|
-
-
 
 
 

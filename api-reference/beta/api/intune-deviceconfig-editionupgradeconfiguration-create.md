@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7b7cbd0ff8af9ee9c26f2ef477d1836a93a4030d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f3f0ed6af705fc1de814372c95cb86ecea4a351c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35948853"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36345772"
 ---
 # <a name="create-editionupgradeconfiguration"></a>editionUpgradeConfiguration の作成
 
@@ -27,7 +27,7 @@ ms.locfileid: "35948853"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -168,6 +168,7 @@ Content-Length: 1376
   "windowsSMode": "block"
 }
 ```
+
 
 
 

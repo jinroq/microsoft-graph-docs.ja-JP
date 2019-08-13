@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 7034c9e3f1f746ade93fa9cb1aa4068b49ace26b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fcd30a4ab2dea5dbdd4d452799aa18a5dca799ff
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004520"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332674"
 ---
 # <a name="domainnamesource-enum-type"></a>domainNameSource 列挙型
 
@@ -25,8 +25,6 @@ Domainname source。
 |:---|:---|:---|
 |fullDomainName|.0|完全なドメイン名。|
 |netBiosDomainName|1-d|net bios ドメイン名。|
-
-
 
 
 

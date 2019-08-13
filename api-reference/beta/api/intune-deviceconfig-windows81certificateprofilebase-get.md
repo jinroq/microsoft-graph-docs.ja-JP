@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 32b0ca439e831334d2e54855a526fefeec8b7b80
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b50420f317806d5a5031c4974d83252bbdbf7910
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35975103"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36344883"
 ---
 # <a name="get-windows81certificateprofilebase"></a>Windows81CertificateProfileBase を取得する
 
@@ -27,7 +27,7 @@ ms.locfileid: "35975103"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -127,6 +127,7 @@ Content-Length: 1982
   }
 }
 ```
+
 
 
 

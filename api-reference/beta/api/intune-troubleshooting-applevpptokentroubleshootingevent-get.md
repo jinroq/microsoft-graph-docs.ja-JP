@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8c5897b48984b944a0372d3ddaf2ce33ee6bcfa8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d5d6490bf33733683dbaf4459b6bdc8ff9c2b2fe
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35979513"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36347396"
 ---
 # <a name="get-applevpptokentroubleshootingevent"></a>作業中の作業のトラブルシューティングイベントを取得する
 
@@ -25,9 +25,9 @@ ms.locfileid: "35979513"
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
-|委任 (職場または学校のアカウント)|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
+|委任 (職場または学校のアカウント)|* * TODO: 範囲を決定します * *|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|* * TODO: AppOnly スコープを決定します * *|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -100,6 +100,7 @@ Content-Length: 1003
   }
 }
 ```
+
 
 
 

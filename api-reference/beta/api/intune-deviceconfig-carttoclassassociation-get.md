@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 01e2818fa145a9d66c9d12de840b7f454bfa014b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9f3087274b145dc75d8aac3b32b831c8ff89cebb
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35950253"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36340423"
 ---
 # <a name="get-carttoclassassociation"></a>CartToClassAssociation を取得する
 
@@ -27,7 +27,7 @@ ms.locfileid: "35950253"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -86,6 +86,7 @@ Content-Length: 488
   }
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ed80d89c73683fe9ba1d117d2eafe88dab8ade29
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d6e531b947b08bf8993735d74bb5661189a28093
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35960826"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36336665"
 ---
 # <a name="list-mobileappcontents"></a>mobileAppContents のリスト
 
@@ -27,7 +27,7 @@ ms.locfileid: "35960826"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -76,6 +76,7 @@ Content-Length: 148
   ]
 }
 ```
+
 
 
 

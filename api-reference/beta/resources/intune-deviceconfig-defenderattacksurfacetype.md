@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: a921ecc112a98adda38019ed62bcef78e9151af1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fbea3c2b296c4c557da1da922fcc6bbcbcdbdbed
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970963"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333605"
 ---
 # <a name="defenderattacksurfacetype-enum-type"></a>defenderAttackSurfaceType 列挙型
 
@@ -26,8 +26,6 @@ Defender 攻撃面の削減ルールの可能な値
 |自分のもの|.0|デバイスの既定値。意図的ではありません。|
 |拒否|1-d|機能をブロックする。|
 |auditMode|pbm-2|機能は変更されませんが、ログは生成されません。|
-
-
 
 
 

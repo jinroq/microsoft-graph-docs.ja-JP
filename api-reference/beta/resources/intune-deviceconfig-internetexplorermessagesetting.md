@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f9ae7848ced827342fb556c2ca344261f8f25362
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 917313859cebe050ac340f1119e952b9e5ff4956
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001337"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36338085"
 ---
 # <a name="internetexplorermessagesetting-enum-type"></a>internetExplorerMessageSetting 列挙型
 
@@ -27,8 +27,6 @@ Internet Explorer に切り替える前に、エッジによってどのよう�
 |党|1-d|党.|
 |enabled|pbm-2|い.|
 |keepGoing|1/3|キープを行います。|
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 697dd182aa21d98418cfee056da8cc18b1aa0aee
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 144572ab0d18949ace682681a4939ca17a4538a2
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967309"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36347844"
 ---
 # <a name="vpptokenactionfailurereason-enum-type"></a>vppTokenActionFailureReason 列挙型
 
@@ -28,8 +28,6 @@ Apple ボリューム購入プログラムのトークンアクションが失�
 |internalError|pbm-2|内部エラーが発生しました。|
 |expiredVppToken|1/3|Apple Volume Purchase Program のトークンの有効期限が切れたため、エラーが発生しました。|
 |expiredApplePushNotificationCertificate|2/4|Apple Volume Purchase Program プッシュ通知証明書の有効期限が切れたため、エラーが発生しました。|
-
-
 
 
 

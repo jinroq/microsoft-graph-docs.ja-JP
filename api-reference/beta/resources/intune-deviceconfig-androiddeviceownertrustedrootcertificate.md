@@ -1,36 +1,36 @@
 ---
-title: Androidforwork Gmaileasconfiguration リソースの種類
-description: このプロファイルに構成を提供することで、Android For Work デバイスが Exchange サーバーと通信し、電子メール、連絡先、予定表、タスク、およびメモを取得できるようにすることができます。 さらに、同期する電子メールの量と、デバイスの同期頻度を指定することもできます。
+title: androidDeviceOwnerTrustedRootCertificate リソースの種類
+description: Android デバイス所有者信頼されたルート証明書構成プロファイル
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5896be8746d22e4727a87bfed95e3d056f354177
+ms.openlocfilehash: 170cd0d1055710be7a59dc7809fd9dd1ba2ba1c2
 ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/13/2019
-ms.locfileid: "36334571"
+ms.locfileid: "36336585"
 ---
-# <a name="androidforworkgmaileasconfiguration-resource-type"></a>Androidforwork Gmaileasconfiguration リソースの種類
+# <a name="androiddeviceownertrustedrootcertificate-resource-type"></a>androidDeviceOwnerTrustedRootCertificate リソースの種類
 
 > **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
 > **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-このプロファイルに構成を提供することで、Android For Work デバイスが Exchange サーバーと通信し、電子メール、連絡先、予定表、タスク、およびメモを取得できるようにすることができます。 さらに、同期する電子メールの量と、デバイスの同期頻度を指定することもできます。
+Android デバイス所有者信頼されたルート証明書構成プロファイル
 
 
-[Androidforworkeasemailprofilebase](../resources/intune-deviceconfig-androidforworkeasemailprofilebase.md)から継承します
+[deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します
 
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[Androidforwork Gmaileas構成のリスト](../api/intune-deviceconfig-androidforworkgmaileasconfiguration-list.md)|[Androidforwork Gmaileasconfiguration](../resources/intune-deviceconfig-androidforworkgmaileasconfiguration.md)コレクション|[Androidforwork Gmaileasconfiguration](../resources/intune-deviceconfig-androidforworkgmaileasconfiguration.md)オブジェクトのプロパティとリレーションシップをリストします。|
-|[Androidforwork Gmaileasconfiguration の取得](../api/intune-deviceconfig-androidforworkgmaileasconfiguration-get.md)|[androidForWorkGmailEasConfiguration](../resources/intune-deviceconfig-androidforworkgmaileasconfiguration.md)|[Androidforwork Gmaileasconfiguration](../resources/intune-deviceconfig-androidforworkgmaileasconfiguration.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[Androidforwork Gmaileasconfiguration の作成](../api/intune-deviceconfig-androidforworkgmaileasconfiguration-create.md)|[androidForWorkGmailEasConfiguration](../resources/intune-deviceconfig-androidforworkgmaileasconfiguration.md)|新しい[Androidforwork Gmaileasconfiguration](../resources/intune-deviceconfig-androidforworkgmaileasconfiguration.md)オブジェクトを作成します。|
-|[Androidforwork Gmaileasconfiguration の削除](../api/intune-deviceconfig-androidforworkgmaileasconfiguration-delete.md)|None|[Androidforwork Gmaileasconfiguration](../resources/intune-deviceconfig-androidforworkgmaileasconfiguration.md)を削除します。|
-|[Androidforwork Gmaileasconfiguration の更新](../api/intune-deviceconfig-androidforworkgmaileasconfiguration-update.md)|[androidForWorkGmailEasConfiguration](../resources/intune-deviceconfig-androidforworkgmaileasconfiguration.md)|[Androidforwork Gmaileasconfiguration](../resources/intune-deviceconfig-androidforworkgmaileasconfiguration.md)オブジェクトのプロパティを更新します。|
+|[リスト androidDeviceOwnerTrustedRootCertificates](../api/intune-deviceconfig-androiddeviceownertrustedrootcertificate-list.md)|[Androiddeviceownertrustedrootcertificate](../resources/intune-deviceconfig-androiddeviceownertrustedrootcertificate.md)コレクション|[Androiddeviceownertrustedrootcertificate](../resources/intune-deviceconfig-androiddeviceownertrustedrootcertificate.md)オブジェクトのプロパティとリレーションシップをリストします。|
+|[AndroidDeviceOwnerTrustedRootCertificate の取得](../api/intune-deviceconfig-androiddeviceownertrustedrootcertificate-get.md)|[androidDeviceOwnerTrustedRootCertificate](../resources/intune-deviceconfig-androiddeviceownertrustedrootcertificate.md)|[Androiddeviceownertrustedrootcertificate](../resources/intune-deviceconfig-androiddeviceownertrustedrootcertificate.md)オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[AndroidDeviceOwnerTrustedRootCertificate の作成](../api/intune-deviceconfig-androiddeviceownertrustedrootcertificate-create.md)|[androidDeviceOwnerTrustedRootCertificate](../resources/intune-deviceconfig-androiddeviceownertrustedrootcertificate.md)|新しい[Androiddeviceownertrustedrootcertificate](../resources/intune-deviceconfig-androiddeviceownertrustedrootcertificate.md)オブジェクトを作成します。|
+|[AndroidDeviceOwnerTrustedRootCertificate の削除](../api/intune-deviceconfig-androiddeviceownertrustedrootcertificate-delete.md)|None|[Androiddeviceownertrustedrootcertificate](../resources/intune-deviceconfig-androiddeviceownertrustedrootcertificate.md)を削除します。|
+|[AndroidDeviceOwnerTrustedRootCertificate の更新](../api/intune-deviceconfig-androiddeviceownertrustedrootcertificate-update.md)|[androidDeviceOwnerTrustedRootCertificate](../resources/intune-deviceconfig-androiddeviceownertrustedrootcertificate.md)|[Androiddeviceownertrustedrootcertificate](../resources/intune-deviceconfig-androiddeviceownertrustedrootcertificate.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
@@ -46,12 +46,8 @@ ms.locfileid: "36334571"
 |description|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|管理者が指定した、デバイス構成の名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|authenticationMethod|[easAuthenticationMethod](../resources/intune-deviceconfig-easauthenticationmethod.md)|Exchange ActiveSync の認証方法。 [Androidforworkeasemailprofilebase](../resources/intune-deviceconfig-androidforworkeasemailprofilebase.md)から継承します。 可能な値は、`usernameAndPassword`、`certificate`、`derivedCredential` です。|
-|durationOfEmailToSync|[emailSyncDuration](../resources/intune-deviceconfig-emailsyncduration.md)|電子メールを同期する時間の長さ。 [Androidforworkeasemailprofilebase](../resources/intune-deviceconfig-androidforworkeasemailprofilebase.md)から継承します。 可能な値は、`userDefined`、`oneDay`、`threeDays`、`oneWeek`、`twoWeeks`、`oneMonth`、`unlimited` です。|
-|emailAddressSource|[userEmailSource](../resources/intune-deviceconfig-useremailsource.md)|AAD から選択され、デバイスにインストールする前にこのプロファイルに挿入される電子メール属性。 [Androidforworkeasemailprofilebase](../resources/intune-deviceconfig-androidforworkeasemailprofilebase.md)から継承します。 可能な値は、`userPrincipalName`、`primarySmtpAddress` です。|
-|hostName|String|メールアプリが接続する Exchange の場所 (URL)。 [Androidforworkeasemailprofilebase](../resources/intune-deviceconfig-androidforworkeasemailprofilebase.md)から継承します|
-|requireSsl|Boolean|SSL を使用するかどうかを示します。 [Androidforworkeasemailprofilebase](../resources/intune-deviceconfig-androidforworkeasemailprofilebase.md)から継承します|
-|usernameSource|[androidUsernameSource](../resources/intune-deviceconfig-androidusernamesource.md)|ユーザー名属性。 AAD から選択され、デバイスにインストールする前にこのプロファイルに挿入されます。 [Androidforworkeasemailprofilebase](../resources/intune-deviceconfig-androidforworkeasemailprofilebase.md)から継承します。 可能な値は、`username`、`userPrincipalName`、`samAccountName`、`primarySmtpAddress` です。|
+|trustedRootCertificate|Binary|信頼できるルート証明書|
+|certFileName|String|UI に表示されるファイル名。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
@@ -63,19 +59,18 @@ ms.locfileid: "36334571"
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|デバイス構成のデバイス状態の概要 ([deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承)|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|デバイス構成のユーザー状態の概要 ([deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承)|
 |deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md) コレクション|デバイス構成設定状態のデバイスの要約 ([deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承)|
-|identityCertificate|[androidForWorkCertificateProfileBase](../resources/intune-deviceconfig-androidforworkcertificateprofilebase.md)|Id 証明書。 [Androidforworkeasemailprofilebase](../resources/intune-deviceconfig-androidforworkeasemailprofilebase.md)から継承します|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.androidForWorkGmailEasConfiguration"
+  "@odata.type": "microsoft.graph.androidDeviceOwnerTrustedRootCertificate"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.androidForWorkGmailEasConfiguration",
+  "@odata.type": "#microsoft.graph.androidDeviceOwnerTrustedRootCertificate",
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
   "roleScopeTagIds": [
@@ -107,12 +102,8 @@ ms.locfileid: "36334571"
   "description": "String",
   "displayName": "String",
   "version": 1024,
-  "authenticationMethod": "String",
-  "durationOfEmailToSync": "String",
-  "emailAddressSource": "String",
-  "hostName": "String",
-  "requireSsl": true,
-  "usernameSource": "String"
+  "trustedRootCertificate": "binary",
+  "certFileName": "String"
 }
 ```
 

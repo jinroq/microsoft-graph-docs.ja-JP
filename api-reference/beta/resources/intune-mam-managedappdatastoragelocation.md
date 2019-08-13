@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 596fb9a5a9812cb7ca5919ec1eeb5217b531610d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8bb2af36d5d03c1e6d3662b97602cb7fd0c7e4d3
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35998444"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332163"
 ---
 # <a name="managedappdatastoragelocation-enum-type"></a>managedAppDataStorageLocation 列挙型
 
@@ -26,8 +26,6 @@ ms.locfileid: "35998444"
 |Onedrive Forbusiness|1-d|OneDrive for Business|
 |sharePoint|pbm-2|SharePoint|
 |localStorage|シックス|デバイス上のローカルストレージ|
-
-
 
 
 

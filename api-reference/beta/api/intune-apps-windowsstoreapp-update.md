@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a11523b6772be5ba0e0a4680cff25ac36b65553f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7dd7cf52f12458866bdf9be0e0464792e2eca876
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35959720"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36336244"
 ---
 # <a name="update-windowsstoreapp"></a>WindowsStoreApp の更新
 
@@ -27,7 +27,7 @@ ms.locfileid: "35959720"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementApps.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -150,6 +150,7 @@ Content-Length: 940
   "appStoreUrl": "https://example.com/appStoreUrl/"
 }
 ```
+
 
 
 

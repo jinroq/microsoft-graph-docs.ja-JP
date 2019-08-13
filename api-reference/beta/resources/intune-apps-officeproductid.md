@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 74f57c95e9070fa968f821f131dedd278babeff1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4ed956d1632c5f27f750d5e493673b8e1b1d6d4e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012413"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335866"
 ---
 # <a name="officeproductid-enum-type"></a>officeProductId 列挙型
 
@@ -27,8 +27,6 @@ Office365 スイート Sku を表す Office365 ProductIds を指定する列挙�
 |o365BusinessRetail|1-d|まだ文書化されていません|
 |visioProRetail|pbm-2|まだ文書化されていません|
 |projectProRetail|1/3|まだ文書化されていません|
-
-
 
 
 

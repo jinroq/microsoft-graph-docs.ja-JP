@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ecec43b1d7bb11ea49d1565083ff535e9960342b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 678552f520008856297e6d2e82a5cf5003b0e506
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35982040"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36338379"
 ---
 # <a name="create-windowsphone81trustedrootcertificate"></a>WindowsPhone81TrustedRootCertificate を作成する
 
@@ -27,7 +27,7 @@ ms.locfileid: "35982040"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -159,6 +159,7 @@ Content-Length: 1319
   "certFileName": "Cert File Name value"
 }
 ```
+
 
 
 
