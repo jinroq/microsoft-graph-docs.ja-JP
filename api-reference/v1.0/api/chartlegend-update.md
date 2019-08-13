@@ -5,53 +5,53 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: beb081a33b7651b0285229335d621449215e129a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 60ad27b187c04d473a7880d576244cee156cb1d0
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36003484"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36316543"
 ---
-# <a name="update-chartlegend"></a><span data-ttu-id="4182f-103">Update chartlegend</span><span class="sxs-lookup"><span data-stu-id="4182f-103">Update chartlegend</span></span>
+# <a name="update-chartlegend"></a><span data-ttu-id="002c1-103">Update chartlegend</span><span class="sxs-lookup"><span data-stu-id="002c1-103">Update chartlegend</span></span>
 
-<span data-ttu-id="4182f-104">chartlegend オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="4182f-104">Update the properties of chartlegend object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="4182f-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="4182f-105">Permissions</span></span>
-<span data-ttu-id="4182f-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4182f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="002c1-104">chartlegend オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="002c1-104">Update the properties of chartlegend object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="002c1-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="002c1-105">Permissions</span></span>
+<span data-ttu-id="002c1-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="002c1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4182f-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="4182f-108">Permission type</span></span>      | <span data-ttu-id="4182f-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="4182f-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="002c1-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="002c1-108">Permission type</span></span>      | <span data-ttu-id="002c1-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="002c1-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="4182f-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="4182f-110">Delegated (work or school account)</span></span> | <span data-ttu-id="4182f-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4182f-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="4182f-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="4182f-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4182f-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="4182f-113">Not supported.</span></span>    |
-|<span data-ttu-id="4182f-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="4182f-114">Application</span></span> | <span data-ttu-id="4182f-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="4182f-115">Not supported.</span></span> |
+|<span data-ttu-id="002c1-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="002c1-110">Delegated (work or school account)</span></span> | <span data-ttu-id="002c1-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="002c1-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="002c1-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="002c1-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="002c1-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="002c1-113">Not supported.</span></span>    |
+|<span data-ttu-id="002c1-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="002c1-114">Application</span></span> | <span data-ttu-id="002c1-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="002c1-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="4182f-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="4182f-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="002c1-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="002c1-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/worksheets/{id|name}/charts/{name}/legend
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="4182f-117">オプションの要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="4182f-117">Optional request headers</span></span>
-| <span data-ttu-id="4182f-118">名前</span><span class="sxs-lookup"><span data-stu-id="4182f-118">Name</span></span>       | <span data-ttu-id="4182f-119">説明</span><span class="sxs-lookup"><span data-stu-id="4182f-119">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="002c1-117">オプションの要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="002c1-117">Optional request headers</span></span>
+| <span data-ttu-id="002c1-118">名前</span><span class="sxs-lookup"><span data-stu-id="002c1-118">Name</span></span>       | <span data-ttu-id="002c1-119">説明</span><span class="sxs-lookup"><span data-stu-id="002c1-119">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="4182f-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="4182f-120">Authorization</span></span>  | <span data-ttu-id="4182f-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="4182f-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="4182f-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="4182f-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="4182f-p103">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="4182f-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="002c1-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="002c1-120">Authorization</span></span>  | <span data-ttu-id="002c1-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="002c1-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="002c1-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="002c1-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="002c1-p103">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="002c1-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="4182f-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="4182f-126">Request body</span></span>
-<span data-ttu-id="4182f-p104">要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="4182f-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="002c1-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="002c1-126">Request body</span></span>
+<span data-ttu-id="002c1-p104">要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="002c1-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="4182f-130">プロパティ</span><span class="sxs-lookup"><span data-stu-id="4182f-130">Property</span></span>     | <span data-ttu-id="4182f-131">型</span><span class="sxs-lookup"><span data-stu-id="4182f-131">Type</span></span>   |<span data-ttu-id="4182f-132">説明</span><span class="sxs-lookup"><span data-stu-id="4182f-132">Description</span></span>|
+| <span data-ttu-id="002c1-130">プロパティ</span><span class="sxs-lookup"><span data-stu-id="002c1-130">Property</span></span>     | <span data-ttu-id="002c1-131">型</span><span class="sxs-lookup"><span data-stu-id="002c1-131">Type</span></span>   |<span data-ttu-id="002c1-132">説明</span><span class="sxs-lookup"><span data-stu-id="002c1-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="4182f-133">overlay</span><span class="sxs-lookup"><span data-stu-id="4182f-133">overlay</span></span>|<span data-ttu-id="4182f-134">ブール値</span><span class="sxs-lookup"><span data-stu-id="4182f-134">boolean</span></span>|<span data-ttu-id="4182f-135">グラフの凡例をグラフの本体に重ねるかどうかを指定するブール型の値です。</span><span class="sxs-lookup"><span data-stu-id="4182f-135">Boolean value for whether the chart legend should overlap with the main body of the chart.</span></span>|
-|<span data-ttu-id="4182f-136">position</span><span class="sxs-lookup"><span data-stu-id="4182f-136">position</span></span>|<span data-ttu-id="4182f-137">string</span><span class="sxs-lookup"><span data-stu-id="4182f-137">string</span></span>|<span data-ttu-id="4182f-138">グラフの凡例の位置を表します。</span><span class="sxs-lookup"><span data-stu-id="4182f-138">Represents the position of the legend on the chart.</span></span> <span data-ttu-id="4182f-139">使用可能な値: `Top`、`Bottom`、`Left`、`Right`、`Corner`、`Custom`。</span><span class="sxs-lookup"><span data-stu-id="4182f-139">The possible values are: `Top`, `Bottom`, `Left`, `Right`, `Corner`, `Custom`.</span></span>|
-|<span data-ttu-id="4182f-140">visible</span><span class="sxs-lookup"><span data-stu-id="4182f-140">visible</span></span>|<span data-ttu-id="4182f-141">ブール値</span><span class="sxs-lookup"><span data-stu-id="4182f-141">boolean</span></span>|<span data-ttu-id="4182f-142">ChartLegend オブジェクトを表示または非表示にするかを表すブール型の値。</span><span class="sxs-lookup"><span data-stu-id="4182f-142">A boolean value the represents the visibility of a ChartLegend object.</span></span>|
+|<span data-ttu-id="002c1-133">overlay</span><span class="sxs-lookup"><span data-stu-id="002c1-133">overlay</span></span>|<span data-ttu-id="002c1-134">ブール値</span><span class="sxs-lookup"><span data-stu-id="002c1-134">boolean</span></span>|<span data-ttu-id="002c1-135">グラフの凡例をグラフの本体に重ねるかどうかを指定するブール型の値です。</span><span class="sxs-lookup"><span data-stu-id="002c1-135">Boolean value for whether the chart legend should overlap with the main body of the chart.</span></span>|
+|<span data-ttu-id="002c1-136">position</span><span class="sxs-lookup"><span data-stu-id="002c1-136">position</span></span>|<span data-ttu-id="002c1-137">string</span><span class="sxs-lookup"><span data-stu-id="002c1-137">string</span></span>|<span data-ttu-id="002c1-138">グラフの凡例の位置を表します。</span><span class="sxs-lookup"><span data-stu-id="002c1-138">Represents the position of the legend on the chart.</span></span> <span data-ttu-id="002c1-139">使用可能な値: `Top`、`Bottom`、`Left`、`Right`、`Corner`、`Custom`。</span><span class="sxs-lookup"><span data-stu-id="002c1-139">The possible values are: `Top`, `Bottom`, `Left`, `Right`, `Corner`, `Custom`.</span></span>|
+|<span data-ttu-id="002c1-140">visible</span><span class="sxs-lookup"><span data-stu-id="002c1-140">visible</span></span>|<span data-ttu-id="002c1-141">ブール値</span><span class="sxs-lookup"><span data-stu-id="002c1-141">boolean</span></span>|<span data-ttu-id="002c1-142">ChartLegend オブジェクトを表示または非表示にするかを表すブール型の値。</span><span class="sxs-lookup"><span data-stu-id="002c1-142">A boolean value the represents the visibility of a ChartLegend object.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="4182f-143">応答</span><span class="sxs-lookup"><span data-stu-id="4182f-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="002c1-143">応答</span><span class="sxs-lookup"><span data-stu-id="002c1-143">Response</span></span>
 
-<span data-ttu-id="4182f-144">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で、更新された[WorkbookChartLegend](../resources/chartlegend.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="4182f-144">If successful, this method returns a `200 OK` response code and updated [WorkbookChartLegend](../resources/chartlegend.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="4182f-145">例</span><span class="sxs-lookup"><span data-stu-id="4182f-145">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="4182f-146">要求</span><span class="sxs-lookup"><span data-stu-id="4182f-146">Request</span></span>
-<span data-ttu-id="4182f-147">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="4182f-147">Here is an example of the request.</span></span>
+<span data-ttu-id="002c1-144">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で、更新された[WorkbookChartLegend](../resources/chartlegend.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="002c1-144">If successful, this method returns a `200 OK` response code and updated [WorkbookChartLegend](../resources/chartlegend.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="002c1-145">例</span><span class="sxs-lookup"><span data-stu-id="002c1-145">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="002c1-146">要求</span><span class="sxs-lookup"><span data-stu-id="002c1-146">Request</span></span>
+<span data-ttu-id="002c1-147">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="002c1-147">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="4182f-148">プロトコル</span><span class="sxs-lookup"><span data-stu-id="4182f-148">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="002c1-148">プロトコル</span><span class="sxs-lookup"><span data-stu-id="002c1-148">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_chartlegend"
@@ -67,26 +67,26 @@ Content-length: 72
   "overlay": true
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="4182f-149">C#</span><span class="sxs-lookup"><span data-stu-id="4182f-149">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="002c1-149">C#</span><span class="sxs-lookup"><span data-stu-id="002c1-149">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-chartlegend-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="4182f-150">Javascript</span><span class="sxs-lookup"><span data-stu-id="4182f-150">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="002c1-150">JavaScript</span><span class="sxs-lookup"><span data-stu-id="002c1-150">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-chartlegend-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="4182f-151">目的-C</span><span class="sxs-lookup"><span data-stu-id="4182f-151">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="002c1-151">目的-C</span><span class="sxs-lookup"><span data-stu-id="002c1-151">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-chartlegend-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="4182f-152">Java</span><span class="sxs-lookup"><span data-stu-id="4182f-152">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="002c1-152">Java</span><span class="sxs-lookup"><span data-stu-id="002c1-152">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-chartlegend-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="4182f-153">応答</span><span class="sxs-lookup"><span data-stu-id="4182f-153">Response</span></span>
-<span data-ttu-id="4182f-p106">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="4182f-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="002c1-153">応答</span><span class="sxs-lookup"><span data-stu-id="002c1-153">Response</span></span>
+<span data-ttu-id="002c1-p106">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="002c1-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

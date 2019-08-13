@@ -5,48 +5,48 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 9f7ce06bc976d58878df31150a0ccc5882e45176
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 80a7909561a58c5d7c4ac77e1021f8077fbb368e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36014677"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36373379"
 ---
-# <a name="update-conversation-thread"></a><span data-ttu-id="ebecb-103">会話スレッドを更新する</span><span class="sxs-lookup"><span data-stu-id="ebecb-103">Update conversation thread</span></span>
-<span data-ttu-id="ebecb-104">[thread](../resources/conversationthread.md) オブジェクトを更新します。</span><span class="sxs-lookup"><span data-stu-id="ebecb-104">Update a [thread](../resources/conversationthread.md) object.</span></span>
+# <a name="update-conversation-thread"></a><span data-ttu-id="77c84-103">会話スレッドを更新する</span><span class="sxs-lookup"><span data-stu-id="77c84-103">Update conversation thread</span></span>
+<span data-ttu-id="77c84-104">[thread](../resources/conversationthread.md) オブジェクトを更新します。</span><span class="sxs-lookup"><span data-stu-id="77c84-104">Update a [thread](../resources/conversationthread.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="ebecb-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="ebecb-105">Permissions</span></span>
-<span data-ttu-id="ebecb-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ebecb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="77c84-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="77c84-105">Permissions</span></span>
+<span data-ttu-id="77c84-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="77c84-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ebecb-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="ebecb-108">Permission type</span></span>      | <span data-ttu-id="ebecb-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="ebecb-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="77c84-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="77c84-108">Permission type</span></span>      | <span data-ttu-id="77c84-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="77c84-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ebecb-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="ebecb-110">Delegated (work or school account)</span></span> | <span data-ttu-id="ebecb-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ebecb-111">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="ebecb-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="ebecb-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ebecb-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="ebecb-113">Not supported.</span></span>    |
-|<span data-ttu-id="ebecb-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="ebecb-114">Application</span></span> | <span data-ttu-id="ebecb-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="ebecb-115">Not supported.</span></span> |
+|<span data-ttu-id="77c84-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="77c84-110">Delegated (work or school account)</span></span> | <span data-ttu-id="77c84-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="77c84-111">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="77c84-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="77c84-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="77c84-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="77c84-113">Not supported.</span></span>    |
+|<span data-ttu-id="77c84-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="77c84-114">Application</span></span> | <span data-ttu-id="77c84-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="77c84-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ebecb-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="ebecb-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="77c84-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="77c84-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /groups/{id}/threads/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="ebecb-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="ebecb-117">Request headers</span></span>
-| <span data-ttu-id="ebecb-118">名前</span><span class="sxs-lookup"><span data-stu-id="ebecb-118">Name</span></span>       | <span data-ttu-id="ebecb-119">型</span><span class="sxs-lookup"><span data-stu-id="ebecb-119">Type</span></span> | <span data-ttu-id="ebecb-120">説明</span><span class="sxs-lookup"><span data-stu-id="ebecb-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="77c84-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="77c84-117">Request headers</span></span>
+| <span data-ttu-id="77c84-118">名前</span><span class="sxs-lookup"><span data-stu-id="77c84-118">Name</span></span>       | <span data-ttu-id="77c84-119">型</span><span class="sxs-lookup"><span data-stu-id="77c84-119">Type</span></span> | <span data-ttu-id="77c84-120">説明</span><span class="sxs-lookup"><span data-stu-id="77c84-120">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="ebecb-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="ebecb-121">Authorization</span></span>  | <span data-ttu-id="ebecb-122">string</span><span class="sxs-lookup"><span data-stu-id="ebecb-122">string</span></span>  | <span data-ttu-id="ebecb-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="ebecb-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="77c84-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="77c84-121">Authorization</span></span>  | <span data-ttu-id="77c84-122">string</span><span class="sxs-lookup"><span data-stu-id="77c84-122">string</span></span>  | <span data-ttu-id="77c84-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="77c84-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="ebecb-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="ebecb-125">Request body</span></span>
-<span data-ttu-id="ebecb-p103">要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="ebecb-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="77c84-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="77c84-125">Request body</span></span>
+<span data-ttu-id="77c84-p103">要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="77c84-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ebecb-129">応答</span><span class="sxs-lookup"><span data-stu-id="ebecb-129">Response</span></span>
-<span data-ttu-id="ebecb-130">成功した場合、このメソッドは `204 No Content` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="ebecb-130">If successful, this method returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="77c84-129">応答</span><span class="sxs-lookup"><span data-stu-id="77c84-129">Response</span></span>
+<span data-ttu-id="77c84-130">成功した場合、このメソッドは `204 No Content` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="77c84-130">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ebecb-131">例</span><span class="sxs-lookup"><span data-stu-id="ebecb-131">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="ebecb-132">要求</span><span class="sxs-lookup"><span data-stu-id="ebecb-132">Request</span></span>
-<span data-ttu-id="ebecb-133">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="ebecb-133">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="77c84-131">例</span><span class="sxs-lookup"><span data-stu-id="77c84-131">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="77c84-132">要求</span><span class="sxs-lookup"><span data-stu-id="77c84-132">Request</span></span>
+<span data-ttu-id="77c84-133">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="77c84-133">The following is an example of the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="ebecb-134">プロトコル</span><span class="sxs-lookup"><span data-stu-id="ebecb-134">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="77c84-134">プロトコル</span><span class="sxs-lookup"><span data-stu-id="77c84-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["02bd9fd6-8f93-4758-87c3-1fb73740a315", "AAQkAGI5MWY5ZmUyLTJiNzYtNDE0ZC04OWEwLWM3M2FjYmM3NzNlZgMkABAAG5c7eC4NYEynIoXsuxXB9RAAG5c7eC4NYEynIoXsuxXB9Q=="],
@@ -69,15 +69,15 @@ Content-length: 655
   "isReminderOn": true
 }
 ```
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ebecb-135">Javascript</span><span class="sxs-lookup"><span data-stu-id="ebecb-135">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="77c84-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="77c84-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-group-thread-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="ebecb-136">応答</span><span class="sxs-lookup"><span data-stu-id="ebecb-136">Response</span></span>
-<span data-ttu-id="ebecb-137">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="ebecb-137">The following is an example of the response.</span></span>
+#### <a name="response"></a><span data-ttu-id="77c84-136">応答</span><span class="sxs-lookup"><span data-stu-id="77c84-136">Response</span></span>
+<span data-ttu-id="77c84-137">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="77c84-137">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",

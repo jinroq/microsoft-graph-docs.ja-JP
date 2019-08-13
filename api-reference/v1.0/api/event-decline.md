@@ -5,28 +5,28 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 89a8505e15b258a709c46a2b2ad3867733758967
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6d67a8300d5f419b1aa691393744a22eec754792
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006788"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36372049"
 ---
-# <a name="event-decline"></a><span data-ttu-id="04bfc-103">イベント: 辞退</span><span class="sxs-lookup"><span data-stu-id="04bfc-103">event: decline</span></span>
+# <a name="event-decline"></a><span data-ttu-id="a72fb-103">イベント: 辞退</span><span class="sxs-lookup"><span data-stu-id="a72fb-103">event: decline</span></span>
 
-<span data-ttu-id="04bfc-104">ユーザーの[予定表](../resources/calendar.md)の指定した[イベント](../resources/event.md)への招待を辞退します。</span><span class="sxs-lookup"><span data-stu-id="04bfc-104">Decline invitation to the specified [event](../resources/event.md) in a user [calendar](../resources/calendar.md).</span></span>
+<span data-ttu-id="a72fb-104">ユーザーの[予定表](../resources/calendar.md)の指定した[イベント](../resources/event.md)への招待を辞退します。</span><span class="sxs-lookup"><span data-stu-id="a72fb-104">Decline invitation to the specified [event](../resources/event.md) in a user [calendar](../resources/calendar.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="04bfc-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="04bfc-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="a72fb-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="a72fb-105">Permissions</span></span>
 
-<span data-ttu-id="04bfc-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="04bfc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a72fb-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a72fb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="04bfc-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="04bfc-108">Permission type</span></span>      | <span data-ttu-id="04bfc-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="04bfc-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a72fb-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="a72fb-108">Permission type</span></span>      | <span data-ttu-id="a72fb-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="a72fb-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="04bfc-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="04bfc-110">Delegated (work or school account)</span></span> | <span data-ttu-id="04bfc-111">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="04bfc-111">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="04bfc-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="04bfc-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="04bfc-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="04bfc-113">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="04bfc-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="04bfc-114">Application</span></span> | <span data-ttu-id="04bfc-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="04bfc-115">Calendars.ReadWrite</span></span> |
+|<span data-ttu-id="a72fb-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="a72fb-110">Delegated (work or school account)</span></span> | <span data-ttu-id="a72fb-111">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a72fb-111">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="a72fb-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="a72fb-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a72fb-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a72fb-113">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="a72fb-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="a72fb-114">Application</span></span> | <span data-ttu-id="a72fb-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a72fb-115">Calendars.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="04bfc-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="04bfc-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a72fb-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="a72fb-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -49,36 +49,36 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 
 <br/>
 
-## <a name="request-headers"></a><span data-ttu-id="04bfc-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="04bfc-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="a72fb-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="a72fb-117">Request headers</span></span>
 
-| <span data-ttu-id="04bfc-118">名前</span><span class="sxs-lookup"><span data-stu-id="04bfc-118">Name</span></span>       | <span data-ttu-id="04bfc-119">型</span><span class="sxs-lookup"><span data-stu-id="04bfc-119">Type</span></span> | <span data-ttu-id="04bfc-120">説明</span><span class="sxs-lookup"><span data-stu-id="04bfc-120">Description</span></span>|
+| <span data-ttu-id="a72fb-118">名前</span><span class="sxs-lookup"><span data-stu-id="a72fb-118">Name</span></span>       | <span data-ttu-id="a72fb-119">型</span><span class="sxs-lookup"><span data-stu-id="a72fb-119">Type</span></span> | <span data-ttu-id="a72fb-120">説明</span><span class="sxs-lookup"><span data-stu-id="a72fb-120">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="04bfc-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="04bfc-121">Authorization</span></span>  | <span data-ttu-id="04bfc-122">string</span><span class="sxs-lookup"><span data-stu-id="04bfc-122">string</span></span>  | <span data-ttu-id="04bfc-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="04bfc-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="04bfc-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="04bfc-125">Content-Type</span></span> | <span data-ttu-id="04bfc-126">string</span><span class="sxs-lookup"><span data-stu-id="04bfc-126">string</span></span>  | <span data-ttu-id="04bfc-p103">エンティティ本文内のデータの性質です。必須。</span><span class="sxs-lookup"><span data-stu-id="04bfc-p103">Nature of the data in the body of an entity. Required.</span></span> |
+| <span data-ttu-id="a72fb-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="a72fb-121">Authorization</span></span>  | <span data-ttu-id="a72fb-122">string</span><span class="sxs-lookup"><span data-stu-id="a72fb-122">string</span></span>  | <span data-ttu-id="a72fb-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="a72fb-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="a72fb-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="a72fb-125">Content-Type</span></span> | <span data-ttu-id="a72fb-126">string</span><span class="sxs-lookup"><span data-stu-id="a72fb-126">string</span></span>  | <span data-ttu-id="a72fb-p103">エンティティ本文内のデータの性質です。必須。</span><span class="sxs-lookup"><span data-stu-id="a72fb-p103">Nature of the data in the body of an entity. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="04bfc-129">要求本文</span><span class="sxs-lookup"><span data-stu-id="04bfc-129">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="a72fb-129">要求本文</span><span class="sxs-lookup"><span data-stu-id="a72fb-129">Request body</span></span>
 
-<span data-ttu-id="04bfc-130">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="04bfc-130">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="a72fb-130">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="a72fb-130">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="04bfc-131">パラメーター</span><span class="sxs-lookup"><span data-stu-id="04bfc-131">Parameter</span></span>    | <span data-ttu-id="04bfc-132">型</span><span class="sxs-lookup"><span data-stu-id="04bfc-132">Type</span></span>   |<span data-ttu-id="04bfc-133">説明</span><span class="sxs-lookup"><span data-stu-id="04bfc-133">Description</span></span>|
+| <span data-ttu-id="a72fb-131">パラメーター</span><span class="sxs-lookup"><span data-stu-id="a72fb-131">Parameter</span></span>    | <span data-ttu-id="a72fb-132">型</span><span class="sxs-lookup"><span data-stu-id="a72fb-132">Type</span></span>   |<span data-ttu-id="a72fb-133">説明</span><span class="sxs-lookup"><span data-stu-id="a72fb-133">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="04bfc-134">comment</span><span class="sxs-lookup"><span data-stu-id="04bfc-134">comment</span></span>|<span data-ttu-id="04bfc-135">String</span><span class="sxs-lookup"><span data-stu-id="04bfc-135">String</span></span>|<span data-ttu-id="04bfc-p104">応答に含まれるテキスト。省略可。</span><span class="sxs-lookup"><span data-stu-id="04bfc-p104">Text included in the response. Optional.</span></span>|
-|<span data-ttu-id="04bfc-138">sendResponse</span><span class="sxs-lookup"><span data-stu-id="04bfc-138">sendResponse</span></span>|<span data-ttu-id="04bfc-139">ブール値</span><span class="sxs-lookup"><span data-stu-id="04bfc-139">Boolean</span></span>|<span data-ttu-id="04bfc-p105">応答が開催者に送信される場合は、`true`。それ以外の場合は、`false`。省略可。既定値は `true` です。</span><span class="sxs-lookup"><span data-stu-id="04bfc-p105">`true` if a response is to be sent to the organizer; otherwise, `false`. Optional. Default is `true`.</span></span>|
+|<span data-ttu-id="a72fb-134">comment</span><span class="sxs-lookup"><span data-stu-id="a72fb-134">comment</span></span>|<span data-ttu-id="a72fb-135">String</span><span class="sxs-lookup"><span data-stu-id="a72fb-135">String</span></span>|<span data-ttu-id="a72fb-p104">応答に含まれるテキスト。省略可。</span><span class="sxs-lookup"><span data-stu-id="a72fb-p104">Text included in the response. Optional.</span></span>|
+|<span data-ttu-id="a72fb-138">sendResponse</span><span class="sxs-lookup"><span data-stu-id="a72fb-138">sendResponse</span></span>|<span data-ttu-id="a72fb-139">ブール値</span><span class="sxs-lookup"><span data-stu-id="a72fb-139">Boolean</span></span>|<span data-ttu-id="a72fb-p105">応答が開催者に送信される場合は、`true`。それ以外の場合は、`false`。省略可。既定値は `true` です。</span><span class="sxs-lookup"><span data-stu-id="a72fb-p105">`true` if a response is to be sent to the organizer; otherwise, `false`. Optional. Default is `true`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="04bfc-143">応答</span><span class="sxs-lookup"><span data-stu-id="04bfc-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a72fb-143">応答</span><span class="sxs-lookup"><span data-stu-id="a72fb-143">Response</span></span>
 
-<span data-ttu-id="04bfc-p106">成功した場合、このメソッドは `202 Accepted` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="04bfc-p106">If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="a72fb-p106">成功した場合、このメソッドは `202 Accepted` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="a72fb-p106">If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="04bfc-146">例</span><span class="sxs-lookup"><span data-stu-id="04bfc-146">Example</span></span>
+## <a name="example"></a><span data-ttu-id="a72fb-146">例</span><span class="sxs-lookup"><span data-stu-id="a72fb-146">Example</span></span>
 
-<span data-ttu-id="04bfc-147">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="04bfc-147">Here is an example of how to call this API.</span></span>
+<span data-ttu-id="a72fb-147">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="a72fb-147">Here is an example of how to call this API.</span></span>
 
-### <a name="request"></a><span data-ttu-id="04bfc-148">要求</span><span class="sxs-lookup"><span data-stu-id="04bfc-148">Request</span></span>
+### <a name="request"></a><span data-ttu-id="a72fb-148">要求</span><span class="sxs-lookup"><span data-stu-id="a72fb-148">Request</span></span>
 
-<span data-ttu-id="04bfc-149">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="04bfc-149">Here is an example of the request.</span></span>
+<span data-ttu-id="a72fb-149">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="a72fb-149">Here is an example of the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="04bfc-150">プロトコル</span><span class="sxs-lookup"><span data-stu-id="04bfc-150">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="a72fb-150">プロトコル</span><span class="sxs-lookup"><span data-stu-id="a72fb-150">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "event_decline"
@@ -94,19 +94,19 @@ Content-length: 56
   "sendResponse": true
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="04bfc-151">C#</span><span class="sxs-lookup"><span data-stu-id="04bfc-151">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="a72fb-151">C#</span><span class="sxs-lookup"><span data-stu-id="a72fb-151">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/event-decline-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="04bfc-152">Javascript</span><span class="sxs-lookup"><span data-stu-id="04bfc-152">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a72fb-152">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a72fb-152">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/event-decline-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="04bfc-153">目的-C</span><span class="sxs-lookup"><span data-stu-id="04bfc-153">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="a72fb-153">目的-C</span><span class="sxs-lookup"><span data-stu-id="a72fb-153">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/event-decline-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="04bfc-154">Java</span><span class="sxs-lookup"><span data-stu-id="04bfc-154">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="a72fb-154">Java</span><span class="sxs-lookup"><span data-stu-id="a72fb-154">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/event-decline-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -115,9 +115,9 @@ Content-length: 56
 
 <br/>
 
-### <a name="response"></a><span data-ttu-id="04bfc-155">応答</span><span class="sxs-lookup"><span data-stu-id="04bfc-155">Response</span></span>
+### <a name="response"></a><span data-ttu-id="a72fb-155">応答</span><span class="sxs-lookup"><span data-stu-id="a72fb-155">Response</span></span>
 
-<span data-ttu-id="04bfc-156">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="04bfc-156">Here is an example of the response.</span></span>
+<span data-ttu-id="a72fb-156">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="a72fb-156">Here is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
