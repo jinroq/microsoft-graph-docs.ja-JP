@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: aed58949852ab7f9640e6eec101d002d2ee6bc1a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e6ab7bc7f67a9619233930fd62018e833e90942d
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36024561"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36341747"
 ---
 # <a name="table-databodyrange"></a>Table:DataBodyRange
 
@@ -26,7 +26,6 @@ ms.locfileid: "36024561"
 
 ## <a name="http-request"></a>HTTP 要求
 
-# <a name="httptabhttp"></a>[プロトコル](#tab/http)
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/tables/{id|name}/dataBodyRange
@@ -49,6 +48,8 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/dataBodyRange
 以下は、この API を呼び出す方法の例です。
 ##### <a name="request"></a>要求
 以下は、要求の例です。
+
+# <a name="httptabhttp"></a>[プロトコル](#tab/http)
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -62,7 +63,7 @@ POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|na
 [!INCLUDE [sample-code](../includes/snippets/csharp/table-databodyrange-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/table-databodyrange-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

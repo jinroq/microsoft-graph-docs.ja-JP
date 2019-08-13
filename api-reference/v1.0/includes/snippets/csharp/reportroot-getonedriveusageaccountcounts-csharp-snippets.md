@@ -1,18 +1,18 @@
 ---
 description: 自動的に生成されたファイル。 変更しない
-ms.openlocfilehash: d4e33103c19d58ffbd1c32869b715e5fa619f16c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 2864b5c7a19dc4a1c08e07f7d3731b3443bc01a2
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35893724"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36327617"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var report = await graphClient.Reports
-    .GetOneDriveUsageAccountCounts('D7')
+    .GetOneDriveUsageAccountCounts("D7")
     .Request()
     .GetAsync();
 

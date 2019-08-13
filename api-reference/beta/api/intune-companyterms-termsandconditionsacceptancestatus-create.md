@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 985fdc27e5a8c52b5c8edda2c4b81360eaab8158
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1b89958f5edebfbf5be89d23441c89f8fa8e936a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35958613"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36322052"
 ---
 # <a name="create-termsandconditionsacceptancestatus"></a>termsAndConditionsAcceptanceStatus の作成
 
@@ -27,7 +27,7 @@ ms.locfileid: "35958613"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementServiceConfig.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -93,6 +93,7 @@ Content-Length: 260
   "acceptedDateTime": "2016-12-31T23:57:43.6165506-08:00"
 }
 ```
+
 
 
 

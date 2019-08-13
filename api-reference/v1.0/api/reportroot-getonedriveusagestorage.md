@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 8b834b523116a8f7393b2b3c5040f3cb2b746d70
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c4838820384a8cf37cc0c26cb50cfc698d66ca0e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36021913"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36321873"
 ---
 # <a name="reportroot-getonedriveusagestorage"></a>reportRoot: getOneDriveUsageStorage
 
@@ -31,7 +31,6 @@ OneDrive for Business で使用しているストレージの量の傾向を取�
 ## <a name="http-request"></a>HTTP 要求
 
 
-# <a name="httptabhttp"></a>[プロトコル](#tab/http)
 <!-- { "blockType": "ignored" } --> 
 
 ```http
@@ -73,6 +72,8 @@ GET /reports/getOneDriveUsageStorage(period='{period_value}')
 
 要求の例を次に示します。
 
+
+# <a name="httptabhttp"></a>[プロトコル](#tab/http)
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -86,7 +87,7 @@ GET https://graph.microsoft.com/v1.0/reports/getOneDriveUsageStorage(period='D7'
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getonedriveusagestorage-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getonedriveusagestorage-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

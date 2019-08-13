@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d90a1ee93e95abc24e85832cab7a200cfe57a83f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: aa03e61f1b2ad66aa55ea9dce7aa2ed6c58b5c41
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35985477"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36309724"
 ---
 # <a name="create-depiosenrollmentprofile"></a>DepIOSEnrollmentProfile を作成する
 
@@ -27,7 +27,7 @@ ms.locfileid: "35985477"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementServiceConfig.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -216,6 +216,7 @@ Content-Length: 1840
   "watchMigrationScreenDisabled": true
 }
 ```
+
 
 
 

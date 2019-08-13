@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8ef1ebcfdb92700b1260433b7085ff9db2a14c00
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3e5395074ddf0860527e5fa7183c21832e4f83d7
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35952535"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36324953"
 ---
 # <a name="create-androidmanagedstoreappconfigurationschema"></a>AndroidManagedStoreAppConfigurationSchema の作成
 
@@ -27,7 +27,7 @@ ms.locfileid: "35952535"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -185,6 +185,7 @@ Content-Length: 1634
   ]
 }
 ```
+
 
 
 

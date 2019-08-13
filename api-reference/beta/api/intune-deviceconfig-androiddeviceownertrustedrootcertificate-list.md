@@ -1,24 +1,24 @@
 ---
-title: リスト windows10NetworkBoundaryConfigurations
-description: Windows10NetworkBoundaryConfiguration オブジェクトのプロパティとリレーションシップをリストします。
+title: リスト androidDeviceOwnerTrustedRootCertificates
+description: AndroidDeviceOwnerTrustedRootCertificate オブジェクトのプロパティとリレーションシップをリストします。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9ef2246bb4b90ba5c9f92d75f9d92a9dad74c8e0
+ms.openlocfilehash: 7110905f146352bf863456491a2bf80be5d074c8
 ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/13/2019
-ms.locfileid: "36314449"
+ms.locfileid: "36316993"
 ---
-# <a name="list-windows10networkboundaryconfigurations"></a>リスト windows10NetworkBoundaryConfigurations
+# <a name="list-androiddeviceownertrustedrootcertificates"></a>リスト androidDeviceOwnerTrustedRootCertificates
 
 > **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
 > **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[Windows10NetworkBoundaryConfiguration](../resources/intune-deviceconfig-windows10networkboundaryconfiguration.md)オブジェクトのプロパティとリレーションシップをリストします。
+[Androiddeviceownertrustedrootcertificate](../resources/intune-deviceconfig-androiddeviceownertrustedrootcertificate.md)オブジェクトのプロパティとリレーションシップをリストします。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -49,7 +49,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[windows10NetworkBoundaryConfiguration](../resources/intune-deviceconfig-windows10networkboundaryconfiguration.md)オブジェクトのコレクションを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[Androiddeviceownertrustedrootcertificate](../resources/intune-deviceconfig-androiddeviceownertrustedrootcertificate.md)オブジェクトのコレクションを返します。
 
 ## <a name="example"></a>例
 
@@ -64,13 +64,13 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2474
+Content-Length: 1492
 
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.windows10NetworkBoundaryConfiguration",
-      "id": "afbc9e01-9e01-afbc-019e-bcaf019ebcaf",
+      "@odata.type": "#microsoft.graph.androidDeviceOwnerTrustedRootCertificate",
+      "id": "6efc1a55-1a55-6efc-551a-fc6e551afc6e",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
@@ -101,37 +101,8 @@ Content-Length: 2474
       "description": "Description value",
       "displayName": "Display Name value",
       "version": 7,
-      "windowsNetworkIsolationPolicy": {
-        "@odata.type": "microsoft.graph.windowsNetworkIsolationPolicy",
-        "enterpriseNetworkDomainNames": [
-          "Enterprise Network Domain Names value"
-        ],
-        "enterpriseCloudResources": [
-          {
-            "@odata.type": "microsoft.graph.proxiedDomain",
-            "ipAddressOrFQDN": "Ip Address Or FQDN value",
-            "proxy": "Proxy value"
-          }
-        ],
-        "enterpriseIPRanges": [
-          {
-            "@odata.type": "microsoft.graph.iPv6Range",
-            "lowerAddress": "Lower Address value",
-            "upperAddress": "Upper Address value"
-          }
-        ],
-        "enterpriseInternalProxyServers": [
-          "Enterprise Internal Proxy Servers value"
-        ],
-        "enterpriseIPRangesAreAuthoritative": true,
-        "enterpriseProxyServers": [
-          "Enterprise Proxy Servers value"
-        ],
-        "enterpriseProxyServersAreAuthoritative": true,
-        "neutralDomainResources": [
-          "Neutral Domain Resources value"
-        ]
-      }
+      "trustedRootCertificate": "dHJ1c3RlZFJvb3RDZXJ0aWZpY2F0ZQ==",
+      "certFileName": "Cert File Name value"
     }
   ]
 }

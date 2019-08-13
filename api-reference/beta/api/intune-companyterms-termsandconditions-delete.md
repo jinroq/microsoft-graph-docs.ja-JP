@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: da407f88d1bf6ef72ecb35b80e7bacd8358ca4c9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fd868da71ea1d3be50b2fe7484993e7750bef6c4
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35958691"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36322094"
 ---
 # <a name="delete-termsandconditions"></a>Delete termsAndConditions
 
@@ -27,7 +27,7 @@ ms.locfileid: "35958691"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementServiceConfig.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -65,6 +65,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/termsAndConditions/{ter
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

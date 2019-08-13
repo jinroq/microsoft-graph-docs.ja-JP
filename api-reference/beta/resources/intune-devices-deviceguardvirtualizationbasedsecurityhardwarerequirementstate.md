@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 68e9859bb76cf02cc081ce50c0c54f2726b6616a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5ea7a243ec374d604adab91dcfd0cea025ac97f7
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999970"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36370138"
 ---
 # <a name="deviceguardvirtualizationbasedsecurityhardwarerequirementstate-enum-type"></a>deviceGuardVirtualizationBasedSecurityHardwareRequirementState 列挙型
 
@@ -28,8 +28,6 @@ ms.locfileid: "35999970"
 |dmaProtectionRequired|pbm-2|DMA 保護が必要|
 |hyperVNotSupportedForGuestVM|2/4|HyperV はゲスト VM でサポートされていません|
 |hyperVNotAvailable|8 |HyperV 機能は使用できません|
-
-
 
 
 

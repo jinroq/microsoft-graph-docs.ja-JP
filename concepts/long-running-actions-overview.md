@@ -3,12 +3,12 @@ title: 長時間実行アクションの処理 (ベータ版)
 description: この記事では、長時間実行アクションの処理について説明します。
 localization_priority: Normal
 author: daspek
-ms.openlocfilehash: b975a3601a104f13b5dd6d10203180d3a2ad9166
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 9623dce367514d86e7dc84df672578cd2a77fad3
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35881001"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332002"
 ---
 # <a name="working-with-long-running-actions-beta"></a>長時間実行アクションの処理 (ベータ版)
 
@@ -49,7 +49,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/lro-copy-item-example-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/lro-copy-item-example-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -150,7 +150,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{item-id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/lro-copy-item-example-complete-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/lro-copy-item-example-complete-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

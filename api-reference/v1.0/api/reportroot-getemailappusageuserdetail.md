@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: f23ff3ddfdca6c0ec2c017cb87e33152bae1224c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 82b199177248dbfd459b4963b130e38d91f5e466
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36022055"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36327322"
 ---
 # <a name="reportroot-getemailappusageuserdetail"></a>reportRoot: getEmailAppUsageUserDetail
 
@@ -31,7 +31,6 @@ ms.locfileid: "36022055"
 ## <a name="http-request"></a>HTTP 要求
 
 
-# <a name="httptabhttp"></a>[プロトコル](#tab/http)
 <!-- { "blockType": "samples" } --> 
 
 ```http
@@ -88,6 +87,8 @@ GET /reports/getEmailAppUsageUserDetail(date={date_value})
 
 要求の例を次に示します。
 
+
+# <a name="httptabhttp"></a>[プロトコル](#tab/http)
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -101,7 +102,7 @@ GET https://graph.microsoft.com/v1.0/reports/getEmailAppUsageUserDetail(period='
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getemailappusageuserdetail-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getemailappusageuserdetail-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

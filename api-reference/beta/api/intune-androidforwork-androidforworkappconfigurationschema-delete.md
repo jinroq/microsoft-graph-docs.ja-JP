@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6e406aea517552e1dd648f43b1ab52eab5af2eb8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f2ddd2ed76d25b48d95b967543eaf0f6987fc288
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35952934"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36322864"
 ---
 # <a name="delete-androidforworkappconfigurationschema"></a>androidForWorkAppConfigurationSchema の削除
 
@@ -27,7 +27,7 @@ ms.locfileid: "35952934"
 |:---|:---|
 |委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
-|アプリケーション|サポートされていません。|
+|アプリケーション|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- {
@@ -63,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/androidForWorkAppConfig
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

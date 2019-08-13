@@ -1,24 +1,24 @@
 ---
-title: Windows81SCEPCertificateProfile を取得する
-description: Windows81SCEPCertificateProfile オブジェクトのプロパティとリレーションシップを読み取ります。
+title: AndroidDeviceOwnerEnterpriseWiFiConfiguration を取得する
+description: AndroidDeviceOwnerEnterpriseWiFiConfiguration オブジェクトのプロパティとリレーションシップを読み取ります。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b8372040379f9c1200e26bf2238b63feb4445d36
+ms.openlocfilehash: a19ca9cb4c4a06da2358857fcd7b131a183d42a1
 ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/13/2019
-ms.locfileid: "36314169"
+ms.locfileid: "36317007"
 ---
-# <a name="get-windows81scepcertificateprofile"></a>Windows81SCEPCertificateProfile を取得する
+# <a name="get-androiddeviceownerenterprisewificonfiguration"></a>AndroidDeviceOwnerEnterpriseWiFiConfiguration を取得する
 
 > **重要:** ベータ版の Microsoft Graph Api は変更される可能性があります。運用環境での使用はサポートされていません。
 
 > **注:** Microsoft Graph API for Intune では、テナントに対して[アクティブな intune ライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
-[Windows81SCEPCertificateProfile](../resources/intune-deviceconfig-windows81scepcertificateprofile.md)オブジェクトのプロパティとリレーションシップを読み取ります。
+[AndroidDeviceOwnerEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md)オブジェクトのプロパティとリレーションシップを読み取ります。
 
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -53,7 +53,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[windows81SCEPCertificateProfile](../resources/intune-deviceconfig-windows81scepcertificateprofile.md)オブジェクトを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[androidDeviceOwnerEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 
@@ -68,12 +68,12 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2337
+Content-Length: 1891
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.windows81SCEPCertificateProfile",
-    "id": "2daf8af2-8af2-2daf-f28a-af2df28aaf2d",
+    "@odata.type": "#microsoft.graph.androidDeviceOwnerEnterpriseWiFiConfiguration",
+    "id": "7ef0d9c3-d9c3-7ef0-c3d9-f07ec3d9f07e",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
@@ -104,35 +104,18 @@ Content-Length: 2337
     "description": "Description value",
     "displayName": "Display Name value",
     "version": 7,
-    "renewalThresholdPercentage": 10,
-    "keyStorageProvider": "useTpmKspOtherwiseFail",
-    "subjectNameFormat": "commonNameIncludingEmail",
-    "subjectAlternativeNameType": "emailAddress",
-    "certificateValidityPeriodValue": 14,
-    "certificateValidityPeriodScale": "months",
-    "extendedKeyUsages": [
-      {
-        "@odata.type": "microsoft.graph.extendedKeyUsage",
-        "name": "Name value",
-        "objectIdentifier": "Object Identifier value"
-      }
-    ],
-    "customSubjectAlternativeNames": [
-      {
-        "@odata.type": "microsoft.graph.customSubjectAlternativeName",
-        "sanType": "emailAddress",
-        "name": "Name value"
-      }
-    ],
-    "scepServerUrls": [
-      "Scep Server Urls value"
-    ],
-    "subjectNameFormatString": "Subject Name Format String value",
-    "keyUsage": "digitalSignature",
-    "keySize": "size2048",
-    "hashAlgorithm": "sha2",
-    "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value",
-    "certificateStore": "machine"
+    "networkName": "Network Name value",
+    "ssid": "Ssid value",
+    "connectAutomatically": true,
+    "connectWhenNetworkNameIsHidden": true,
+    "wiFiSecurityType": "wep",
+    "preSharedKey": "Pre Shared Key value",
+    "preSharedKeyIsSet": true,
+    "eapType": "eapTtls",
+    "authenticationMethod": "usernameAndPassword",
+    "innerAuthenticationProtocolForEapTtls": "challengeHandshakeAuthenticationProtocol",
+    "innerAuthenticationProtocolForPeap": "microsoftChapVersionTwo",
+    "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
   }
 }
 ```
