@@ -1,11 +1,11 @@
 ---
-description: 自動的に生成されたファイル。 変更しない
-ms.openlocfilehash: adbe65253762f4563a43860e73794023cb9861cb
+description: 自動生成されたファイル。 変更しないでください
+ms.openlocfilehash: 7e28bf999ad98c2fcd5d04f9dc791906878d27dd
 ms.sourcegitcommit: 3db93e28e215c0e09a65b4705ba956c6ac3b5426
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/14/2019
-ms.locfileid: "36396885"
+ms.locfileid: "36396843"
 ---
 ```java
 
@@ -17,7 +17,7 @@ businessPhonesList.add("businessPhones-value");
 user.businessPhones = businessPhonesList;
 user.officeLocation = "city-value";
 
-graphClient.me()
+graphClient.users("{id}")
     .buildRequest()
     .patch(user);
 

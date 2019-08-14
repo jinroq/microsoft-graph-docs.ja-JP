@@ -1,11 +1,11 @@
 ---
 description: 自動的に生成されたファイル。 変更しない
-ms.openlocfilehash: ce675f51249ab638a885ad83aef1fec763c5b713
+ms.openlocfilehash: f8afe55a1b036fc71a6c80a28f44ecbe724f7b2e
 ms.sourcegitcommit: 3db93e28e215c0e09a65b4705ba956c6ac3b5426
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/14/2019
-ms.locfileid: "36396878"
+ms.locfileid: "36396906"
 ---
 ```javascript
 
@@ -22,7 +22,7 @@ const user = {
   officeLocation: "city-value"
 };
 
-let res = await client.api('/me')
+let res = await client.api('/users/{id}')
     .version('beta')
     .update({user : user});
 
