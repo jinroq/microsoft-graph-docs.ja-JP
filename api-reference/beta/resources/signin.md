@@ -5,12 +5,12 @@ description: ユーザーとアプリケーションのサインイン アクテ
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6197600854833f7887556c35a511fad61b4539d5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0a0f3977c14ce8e0e53cdbd296ea28c4b79f5762
+ms.sourcegitcommit: 3db93e28e215c0e09a65b4705ba956c6ac3b5426
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965062"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "36396745"
 ---
 # <a name="signin-resource-type"></a>サインイン リソースの種類
 
@@ -31,7 +31,7 @@ ms.locfileid: "35965062"
 |appDisplayName|String|Azure ポータルで表示されるアプリケーション名を参照します。|
 |appId|String|Azure Active Directory でのアプリケーション ID を表す一意の GUID を参照します。|
 |clientAppUsed|String|サインインに使用するレガシ クライアントを示します。例: ブラウザー、Exchange Active Sync、先進認証クライアント、IMAP、MAPI、SMTP、POP が含まれます。|
-|appliedConditionalAccessPolicy|[conditionalAccessPolicy](conditionalaccesspolicy.md) コレクション|対応するサインイン アクティビティでトリガーされる条件付きアクセス ポリシーの一覧を示します。|
+|appliedConditionalAccessPolicies|[conditionalAccessPolicy](conditionalaccesspolicy.md) コレクション|対応するサインイン アクティビティでトリガーされる条件付きアクセス ポリシーの一覧を示します。|
 |conditionalAccessStatus|string| トリガーされる条件付きアクセス ポリシーの状態を示します。 使用可能な値は、`success`、`failure`、`notApplied`、`unknownFutureValue` です。|
 |originalRequestId|String|認証シーケンスで最初の要求の要求 ID です。|
 |isInteractive|Boolean|サインインが対話型かどうかを示します。|
@@ -89,7 +89,7 @@ ms.locfileid: "35965062"
   "mfaDetail": {"@odata.type": "microsoft.graph.mfaDetail"},
   "correlationId": "String",
   "conditionalAccessStatus": "string",
-  "appliedConditionalAccessPolicy": [{"@odata.type": "microsoft.graph.appliedConditionalAccessPolicy"}],
+  "appliedConditionalAccessPolicies": [{"@odata.type": "microsoft.graph.appliedConditionalAccessPolicy"}],
   "originalRequestId": "String",
   "isInteractive": "String",
   "tokenIssuerName": "String",

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 892a6de6dd191b43fe139acf7f8340fd14c8da5a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1ed4880d80bd94febc4d12deb04ca10a4cb7dad3
+ms.sourcegitcommit: 3db93e28e215c0e09a65b4705ba956c6ac3b5426
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35990849"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "36396738"
 ---
 # <a name="clone-a-team"></a>チームのクローンを作成する
 
@@ -28,7 +28,7 @@ ms.locfileid: "35990849"
 タブが複製されると、それらは未構成状態になります。これは、Microsoft Teams のタブバーに表示されます。これを最初に開いたときに、構成画面が表示されます。 (タブを開くユーザーがアプリを構成するためのアクセス許可を持っていない場合は、タブがまだ構成されていないことを示すメッセージが表示されます)。
 
 複製は、長時間実行される操作です。
-POST 複製が戻ると、"実行中" または "成功" または "失敗" のどちらであるかを確認するには、[操作](../resources/teamsasyncoperation.md)を取得する必要があります。 状態が "実行中" ではない状態になるまで、この操作を続行する必要があります。 推奨される遅延時間は、5秒です。
+POST クローンが戻ると、Location: header から返される[操作](../resources/teamsasyncoperation.md)を取得して、"実行中" または "成功" または "失敗" のどちらであるかを確認する必要があります。 状態が "実行中" ではない状態になるまで、この操作を続行する必要があります。 推奨される遅延時間は、5秒です。
 
 ## <a name="permissions"></a>アクセス許可
 
