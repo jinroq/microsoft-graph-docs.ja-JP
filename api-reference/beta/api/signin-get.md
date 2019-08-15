@@ -5,12 +5,12 @@ description: テナントの特定の Azure AD ユーザーのサインイン �
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d56d5c9377c3f0252901977738cb1f9f480b979d
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 86aa2762d451faf2598d49b53545ca412ae220a3
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36363826"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36410060"
 ---
 # <a name="get-signin"></a>signIn を取得する
 
@@ -84,10 +84,6 @@ GET https://graph.microsoft.com/beta/auditLogs/signIns/{id}
 
 # <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-signin-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-signin-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
