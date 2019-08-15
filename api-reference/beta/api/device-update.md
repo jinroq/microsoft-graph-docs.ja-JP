@@ -5,68 +5,68 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: bd21560d1cca9a86ca94a66e7593142a7cc7de91
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 2420701202ab4aa3f9e3689f5be8df3d36d0860d
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36321387"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36417586"
 ---
-# <a name="update-device"></a><span data-ttu-id="c2544-103">デバイスを更新する</span><span class="sxs-lookup"><span data-stu-id="c2544-103">Update device</span></span>
+# <a name="update-device"></a><span data-ttu-id="dc822-103">デバイスを更新する</span><span class="sxs-lookup"><span data-stu-id="dc822-103">Update device</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c2544-104">デバイスのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="c2544-104">Update the properties of a device.</span></span>
+<span data-ttu-id="dc822-104">デバイスのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="dc822-104">Update the properties of a device.</span></span>
 
-<span data-ttu-id="c2544-105">承認済みモバイル デバイス管理 (MDM) アプリによって、デバイスの特定のプロパティのみを更新できます。</span><span class="sxs-lookup"><span data-stu-id="c2544-105">Only certain properties of a device can be updated through approved Mobile Device Managment (MDM) apps.</span></span>
+<span data-ttu-id="dc822-105">承認済みモバイル デバイス管理 (MDM) アプリによって、デバイスの特定のプロパティのみを更新できます。</span><span class="sxs-lookup"><span data-stu-id="dc822-105">Only certain properties of a device can be updated through approved Mobile Device Managment (MDM) apps.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c2544-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="c2544-106">Permissions</span></span>
-<span data-ttu-id="c2544-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c2544-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="dc822-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="dc822-106">Permissions</span></span>
+<span data-ttu-id="dc822-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="dc822-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c2544-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="c2544-109">Permission type</span></span>      | <span data-ttu-id="c2544-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="c2544-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="dc822-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="dc822-109">Permission type</span></span>      | <span data-ttu-id="dc822-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="dc822-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c2544-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="c2544-111">Delegated (work or school account)</span></span> | <span data-ttu-id="c2544-112">Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="c2544-112">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
-|<span data-ttu-id="c2544-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="c2544-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c2544-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c2544-114">Not supported.</span></span> |
-|<span data-ttu-id="c2544-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="c2544-115">Application</span></span> | <span data-ttu-id="c2544-116">非サポート</span><span class="sxs-lookup"><span data-stu-id="c2544-116">Not supported</span></span> |
+|<span data-ttu-id="dc822-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="dc822-111">Delegated (work or school account)</span></span> | <span data-ttu-id="dc822-112">Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="dc822-112">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
+|<span data-ttu-id="dc822-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="dc822-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="dc822-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="dc822-114">Not supported.</span></span> |
+|<span data-ttu-id="dc822-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="dc822-115">Application</span></span> | <span data-ttu-id="dc822-116">非サポート</span><span class="sxs-lookup"><span data-stu-id="dc822-116">Not supported</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c2544-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="c2544-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="dc822-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="dc822-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /devices/{id}
 ```
 
-> <span data-ttu-id="c2544-118">注:要求内の"id"は、"deviceId"プロパティではなく、デバイスの id プロパティです。</span><span class="sxs-lookup"><span data-stu-id="c2544-118">Note: The "id" in the request is the "id" property of the device, not the "deviceId" property.</span></span>
+> <span data-ttu-id="dc822-118">注:要求内の"id"は、"deviceId"プロパティではなく、デバイスの id プロパティです。</span><span class="sxs-lookup"><span data-stu-id="dc822-118">Note: The "id" in the request is the "id" property of the device, not the "deviceId" property.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="c2544-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="c2544-119">Request headers</span></span>
-| <span data-ttu-id="c2544-120">名前</span><span class="sxs-lookup"><span data-stu-id="c2544-120">Name</span></span>       | <span data-ttu-id="c2544-121">型</span><span class="sxs-lookup"><span data-stu-id="c2544-121">Type</span></span> | <span data-ttu-id="c2544-122">説明</span><span class="sxs-lookup"><span data-stu-id="c2544-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="dc822-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="dc822-119">Request headers</span></span>
+| <span data-ttu-id="dc822-120">名前</span><span class="sxs-lookup"><span data-stu-id="dc822-120">Name</span></span>       | <span data-ttu-id="dc822-121">型</span><span class="sxs-lookup"><span data-stu-id="dc822-121">Type</span></span> | <span data-ttu-id="dc822-122">説明</span><span class="sxs-lookup"><span data-stu-id="dc822-122">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="c2544-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="c2544-123">Authorization</span></span>  | <span data-ttu-id="c2544-124">string</span><span class="sxs-lookup"><span data-stu-id="c2544-124">string</span></span>  | <span data-ttu-id="c2544-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="c2544-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="dc822-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="dc822-123">Authorization</span></span>  | <span data-ttu-id="dc822-124">string</span><span class="sxs-lookup"><span data-stu-id="dc822-124">string</span></span>  | <span data-ttu-id="dc822-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="dc822-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="c2544-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="c2544-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="dc822-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="dc822-127">Request body</span></span>
 
-<span data-ttu-id="c2544-128">要求本文で、更新する[デバイス](../resources/device.md) プロパティの値を指定します。</span><span class="sxs-lookup"><span data-stu-id="c2544-128">In the request body, supply the values for the [device](../resources/device.md) properties that should be updated.</span></span> <span data-ttu-id="c2544-129">要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。</span><span class="sxs-lookup"><span data-stu-id="c2544-129">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="c2544-130">最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="c2544-130">For best performance you shouldn't include existing values that haven't changed.</span></span>
+<span data-ttu-id="dc822-128">要求本文で、更新する[デバイス](../resources/device.md) プロパティの値を指定します。</span><span class="sxs-lookup"><span data-stu-id="dc822-128">In the request body, supply the values for the [device](../resources/device.md) properties that should be updated.</span></span> <span data-ttu-id="dc822-129">要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。</span><span class="sxs-lookup"><span data-stu-id="dc822-129">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="dc822-130">最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="dc822-130">For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="c2544-131">プロパティ</span><span class="sxs-lookup"><span data-stu-id="c2544-131">Property</span></span>     | <span data-ttu-id="c2544-132">型</span><span class="sxs-lookup"><span data-stu-id="c2544-132">Type</span></span>   |<span data-ttu-id="c2544-133">説明</span><span class="sxs-lookup"><span data-stu-id="c2544-133">Description</span></span>|
+| <span data-ttu-id="dc822-131">プロパティ</span><span class="sxs-lookup"><span data-stu-id="dc822-131">Property</span></span>     | <span data-ttu-id="dc822-132">型</span><span class="sxs-lookup"><span data-stu-id="dc822-132">Type</span></span>   |<span data-ttu-id="dc822-133">説明</span><span class="sxs-lookup"><span data-stu-id="dc822-133">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="c2544-134">accountEnabled</span><span class="sxs-lookup"><span data-stu-id="c2544-134">accountEnabled</span></span>|<span data-ttu-id="c2544-135">Boolean</span><span class="sxs-lookup"><span data-stu-id="c2544-135">Boolean</span></span>| <span data-ttu-id="c2544-136">アカウントが有効な場合は **true**。それ以外の場合は **false**。</span><span class="sxs-lookup"><span data-stu-id="c2544-136">**true** if the account is enabled; otherwise, **false**.</span></span> |
-|<span data-ttu-id="c2544-137">operatingSystem</span><span class="sxs-lookup"><span data-stu-id="c2544-137">operatingSystem</span></span>|<span data-ttu-id="c2544-138">文字列</span><span class="sxs-lookup"><span data-stu-id="c2544-138">String</span></span>|<span data-ttu-id="c2544-139">デバイス上のオペレーティング システムの種類。</span><span class="sxs-lookup"><span data-stu-id="c2544-139">The type of operating system on the device.</span></span>|
-|<span data-ttu-id="c2544-140">operatingSystemVersion</span><span class="sxs-lookup"><span data-stu-id="c2544-140">operatingSystemVersion</span></span>|<span data-ttu-id="c2544-141">String</span><span class="sxs-lookup"><span data-stu-id="c2544-141">String</span></span>|<span data-ttu-id="c2544-142">デバイス上のオペレーティング システムのバージョン</span><span class="sxs-lookup"><span data-stu-id="c2544-142">The version of the operating system on the device</span></span>|
-|<span data-ttu-id="c2544-143">displayName</span><span class="sxs-lookup"><span data-stu-id="c2544-143">displayName</span></span>|<span data-ttu-id="c2544-144">String</span><span class="sxs-lookup"><span data-stu-id="c2544-144">String</span></span>|<span data-ttu-id="c2544-145">デバイスの表示名。</span><span class="sxs-lookup"><span data-stu-id="c2544-145">The display name for the device.</span></span>|
-|<span data-ttu-id="c2544-146">isCompliant</span><span class="sxs-lookup"><span data-stu-id="c2544-146">isCompliant</span></span>|<span data-ttu-id="c2544-147">ブール値</span><span class="sxs-lookup"><span data-stu-id="c2544-147">Boolean</span></span>|<span data-ttu-id="c2544-148">デバイスがモバイル デバイス管理 (MDM) ポリシーに準拠している場合は **true**。それ以外の場合は **false**。</span><span class="sxs-lookup"><span data-stu-id="c2544-148">**true** if the device complies with Mobile Device Management (MDM) policies; otherwise, **false**.</span></span> <span data-ttu-id="c2544-149">これは、任意のデバイスの OS タイプに対して、または Windows OS デバイス用の承認された[MDM アプリ](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm)によってのみ、Intune によって更新できます。</span><span class="sxs-lookup"><span data-stu-id="c2544-149">This can only be updated by Intune for any device OS type or by an [approved MDM app](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) for Windows OS devices.</span></span> |
-|<span data-ttu-id="c2544-150">isManaged</span><span class="sxs-lookup"><span data-stu-id="c2544-150">isManaged</span></span>|<span data-ttu-id="c2544-151">Boolean</span><span class="sxs-lookup"><span data-stu-id="c2544-151">Boolean</span></span>|<span data-ttu-id="c2544-152">デバイスがモバイル デバイス管理 (MDM) アプリで管理されている場合は **true**。それ以外の場合は **false**。</span><span class="sxs-lookup"><span data-stu-id="c2544-152">**true** if the device is managed by a Mobile Device Management (MDM) app; otherwise, **false**.</span></span> <span data-ttu-id="c2544-153">これは、任意のデバイスの OS タイプに対して、または Windows OS デバイス用の承認された[MDM アプリ](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm)によってのみ、Intune によって更新できます。</span><span class="sxs-lookup"><span data-stu-id="c2544-153">This can only be updated by Intune for any device OS type or by an [approved MDM app](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) for Windows OS devices.</span></span> |
+|<span data-ttu-id="dc822-134">accountEnabled</span><span class="sxs-lookup"><span data-stu-id="dc822-134">accountEnabled</span></span>|<span data-ttu-id="dc822-135">Boolean</span><span class="sxs-lookup"><span data-stu-id="dc822-135">Boolean</span></span>| <span data-ttu-id="dc822-136">アカウントが有効な場合は **true**。それ以外の場合は **false**。</span><span class="sxs-lookup"><span data-stu-id="dc822-136">**true** if the account is enabled; otherwise, **false**.</span></span> |
+|<span data-ttu-id="dc822-137">operatingSystem</span><span class="sxs-lookup"><span data-stu-id="dc822-137">operatingSystem</span></span>|<span data-ttu-id="dc822-138">文字列</span><span class="sxs-lookup"><span data-stu-id="dc822-138">String</span></span>|<span data-ttu-id="dc822-139">デバイス上のオペレーティング システムの種類。</span><span class="sxs-lookup"><span data-stu-id="dc822-139">The type of operating system on the device.</span></span>|
+|<span data-ttu-id="dc822-140">operatingSystemVersion</span><span class="sxs-lookup"><span data-stu-id="dc822-140">operatingSystemVersion</span></span>|<span data-ttu-id="dc822-141">String</span><span class="sxs-lookup"><span data-stu-id="dc822-141">String</span></span>|<span data-ttu-id="dc822-142">デバイス上のオペレーティング システムのバージョン</span><span class="sxs-lookup"><span data-stu-id="dc822-142">The version of the operating system on the device</span></span>|
+|<span data-ttu-id="dc822-143">displayName</span><span class="sxs-lookup"><span data-stu-id="dc822-143">displayName</span></span>|<span data-ttu-id="dc822-144">String</span><span class="sxs-lookup"><span data-stu-id="dc822-144">String</span></span>|<span data-ttu-id="dc822-145">デバイスの表示名。</span><span class="sxs-lookup"><span data-stu-id="dc822-145">The display name for the device.</span></span>|
+|<span data-ttu-id="dc822-146">isCompliant</span><span class="sxs-lookup"><span data-stu-id="dc822-146">isCompliant</span></span>|<span data-ttu-id="dc822-147">ブール値</span><span class="sxs-lookup"><span data-stu-id="dc822-147">Boolean</span></span>|<span data-ttu-id="dc822-148">デバイスがモバイル デバイス管理 (MDM) ポリシーに準拠している場合は **true**。それ以外の場合は **false**。</span><span class="sxs-lookup"><span data-stu-id="dc822-148">**true** if the device complies with Mobile Device Management (MDM) policies; otherwise, **false**.</span></span> <span data-ttu-id="dc822-149">これは、任意のデバイスの OS タイプに対して、または Windows OS デバイス用の承認された[MDM アプリ](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm)によってのみ、Intune によって更新できます。</span><span class="sxs-lookup"><span data-stu-id="dc822-149">This can only be updated by Intune for any device OS type or by an [approved MDM app](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) for Windows OS devices.</span></span> |
+|<span data-ttu-id="dc822-150">isManaged</span><span class="sxs-lookup"><span data-stu-id="dc822-150">isManaged</span></span>|<span data-ttu-id="dc822-151">Boolean</span><span class="sxs-lookup"><span data-stu-id="dc822-151">Boolean</span></span>|<span data-ttu-id="dc822-152">デバイスがモバイル デバイス管理 (MDM) アプリで管理されている場合は **true**。それ以外の場合は **false**。</span><span class="sxs-lookup"><span data-stu-id="dc822-152">**true** if the device is managed by a Mobile Device Management (MDM) app; otherwise, **false**.</span></span> <span data-ttu-id="dc822-153">これは、任意のデバイスの OS タイプに対して、または Windows OS デバイス用の承認された[MDM アプリ](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm)によってのみ、Intune によって更新できます。</span><span class="sxs-lookup"><span data-stu-id="dc822-153">This can only be updated by Intune for any device OS type or by an [approved MDM app](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) for Windows OS devices.</span></span> |
 
-<span data-ttu-id="c2544-154">**デバイス**リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため`PATCH` 、操作を使用して、既存の**デバイス**インスタンスの拡張機能のカスタムプロパティで、独自のアプリ固有のデータを追加、更新、または削除することができます。</span><span class="sxs-lookup"><span data-stu-id="c2544-154">Since the **device** resource supports [extensions](/graph/extensibility-overview), you can use the `PATCH` operation to add, update, or delete your own app-specific data in custom properties of an extension in an existing **device** instance.</span></span>
+<span data-ttu-id="dc822-154">**デバイス**リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため`PATCH` 、操作を使用して、既存の**デバイス**インスタンスの拡張機能のカスタムプロパティで、独自のアプリ固有のデータを追加、更新、または削除することができます。</span><span class="sxs-lookup"><span data-stu-id="dc822-154">Since the **device** resource supports [extensions](/graph/extensibility-overview), you can use the `PATCH` operation to add, update, or delete your own app-specific data in custom properties of an extension in an existing **device** instance.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c2544-155">応答</span><span class="sxs-lookup"><span data-stu-id="c2544-155">Response</span></span>
+## <a name="response"></a><span data-ttu-id="dc822-155">応答</span><span class="sxs-lookup"><span data-stu-id="dc822-155">Response</span></span>
 
-<span data-ttu-id="c2544-156">成功した場合、このメソッドは `204 No Content` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="c2544-156">If successful, this method returns a `204 No Content` response code.</span></span>
+<span data-ttu-id="dc822-156">成功した場合、このメソッドは `204 No Content` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="dc822-156">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c2544-157">例</span><span class="sxs-lookup"><span data-stu-id="c2544-157">Example</span></span>
+## <a name="example"></a><span data-ttu-id="dc822-157">例</span><span class="sxs-lookup"><span data-stu-id="dc822-157">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="c2544-158">要求</span><span class="sxs-lookup"><span data-stu-id="c2544-158">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="dc822-158">要求</span><span class="sxs-lookup"><span data-stu-id="dc822-158">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="c2544-159">プロトコル</span><span class="sxs-lookup"><span data-stu-id="c2544-159">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="dc822-159">プロトコル</span><span class="sxs-lookup"><span data-stu-id="dc822-159">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_device"
@@ -80,25 +80,21 @@ Content-length: 31
   "accountEnabled": false
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="c2544-160">C#</span><span class="sxs-lookup"><span data-stu-id="c2544-160">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="dc822-160">C#</span><span class="sxs-lookup"><span data-stu-id="dc822-160">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-device-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="c2544-161">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c2544-161">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="dc822-161">JavaScript</span><span class="sxs-lookup"><span data-stu-id="dc822-161">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-device-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="c2544-162">目的-C</span><span class="sxs-lookup"><span data-stu-id="c2544-162">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="dc822-162">目的-C</span><span class="sxs-lookup"><span data-stu-id="dc822-162">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-device-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="c2544-163">Java</span><span class="sxs-lookup"><span data-stu-id="c2544-163">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-device-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="c2544-164">応答</span><span class="sxs-lookup"><span data-stu-id="c2544-164">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="dc822-163">応答</span><span class="sxs-lookup"><span data-stu-id="dc822-163">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -109,11 +105,11 @@ Content-length: 31
 HTTP/1.1 204 No Content
 ```
 
-## <a name="see-also"></a><span data-ttu-id="c2544-165">関連項目</span><span class="sxs-lookup"><span data-stu-id="c2544-165">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="dc822-164">関連項目</span><span class="sxs-lookup"><span data-stu-id="dc822-164">See also</span></span>
 
-- [<span data-ttu-id="c2544-166">拡張機能を使用してカスタム データをリソースに追加する</span><span class="sxs-lookup"><span data-stu-id="c2544-166">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
-- [<span data-ttu-id="c2544-167">オープン拡張機能を使用したユーザーへのカスタム データの追加 (プレビュー)</span><span class="sxs-lookup"><span data-stu-id="c2544-167">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
-- [<span data-ttu-id="c2544-168">スキーマ拡張機能を使用したグループへのカスタム データの追加 (プレビュー)</span><span class="sxs-lookup"><span data-stu-id="c2544-168">Add custom data to groups using schema extensions (preview)</span></span>](/graph/extensibility-schema-groups)
+- [<span data-ttu-id="dc822-165">拡張機能を使用してカスタム データをリソースに追加する</span><span class="sxs-lookup"><span data-stu-id="dc822-165">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
+- [<span data-ttu-id="dc822-166">オープン拡張機能を使用したユーザーへのカスタム データの追加 (プレビュー)</span><span class="sxs-lookup"><span data-stu-id="dc822-166">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
+- [<span data-ttu-id="dc822-167">スキーマ拡張機能を使用したグループへのカスタム データの追加 (プレビュー)</span><span class="sxs-lookup"><span data-stu-id="dc822-167">Add custom data to groups using schema extensions (preview)</span></span>](/graph/extensibility-schema-groups)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

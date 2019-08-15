@@ -5,28 +5,28 @@ description: ユーザーのサイトまたはサイトをフォローします�
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 4574c885878ddaa12ed723d4664ebf0e77e6a80e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e33e7e9906697df70cab845a8372e9adfb0c6078
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36363775"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36410004"
 ---
-# <a name="follow-site"></a><span data-ttu-id="97110-103">サイトをフォローする</span><span class="sxs-lookup"><span data-stu-id="97110-103">Follow site</span></span> 
+# <a name="follow-site"></a><span data-ttu-id="e7319-103">サイトをフォローする</span><span class="sxs-lookup"><span data-stu-id="e7319-103">Follow site</span></span> 
 
-<span data-ttu-id="97110-104">ユーザーの[サイト](../resources/site.md)または複数のサイトに従います。</span><span class="sxs-lookup"><span data-stu-id="97110-104">Follow a user's [site](../resources/site.md) or multiple sites.</span></span>
+<span data-ttu-id="e7319-104">ユーザーの[サイト](../resources/site.md)または複数のサイトに従います。</span><span class="sxs-lookup"><span data-stu-id="e7319-104">Follow a user's [site](../resources/site.md) or multiple sites.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="97110-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="97110-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="e7319-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="e7319-105">Permissions</span></span>
 
-<span data-ttu-id="97110-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="97110-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e7319-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e7319-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|            <span data-ttu-id="97110-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="97110-108">Permission type</span></span>             | <span data-ttu-id="97110-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="97110-109">Permissions (from least to most privileged)</span></span> |
+|            <span data-ttu-id="e7319-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="e7319-108">Permission type</span></span>             | <span data-ttu-id="e7319-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="e7319-109">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :------------------------------------------ |
-| <span data-ttu-id="97110-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="97110-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="97110-111">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="97110-111">Sites.ReadWrite.All</span></span>                         |
-| <span data-ttu-id="97110-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="97110-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="97110-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="97110-113">Not supported.</span></span>                              |
-| <span data-ttu-id="97110-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="97110-114">Application</span></span>                            | <span data-ttu-id="97110-115">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="97110-115">Sites.ReadWrite.All</span></span>                         |
+| <span data-ttu-id="e7319-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="e7319-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="e7319-111">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e7319-111">Sites.ReadWrite.All</span></span>                         |
+| <span data-ttu-id="e7319-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="e7319-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e7319-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e7319-113">Not supported.</span></span>                              |
+| <span data-ttu-id="e7319-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="e7319-114">Application</span></span>                            | <span data-ttu-id="e7319-115">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e7319-115">Sites.ReadWrite.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="97110-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="97110-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e7319-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="e7319-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -34,29 +34,29 @@ ms.locfileid: "36363775"
 POST /users/{user-id}/followedSites/add
 ```
 
-## <a name="request-body"></a><span data-ttu-id="97110-117">要求本文</span><span class="sxs-lookup"><span data-stu-id="97110-117">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="e7319-117">要求本文</span><span class="sxs-lookup"><span data-stu-id="e7319-117">Request body</span></span>
 
-<span data-ttu-id="97110-118">要求本文で、次の表に記載されている id パラメーターを持つ JSON オブジェクトの配列を指定します。</span><span class="sxs-lookup"><span data-stu-id="97110-118">In the request body, supply an array of JSON objects with the id parameter mentioned in the table below.</span></span> 
+<span data-ttu-id="e7319-118">要求本文で、次の表に記載されている id パラメーターを持つ JSON オブジェクトの配列を指定します。</span><span class="sxs-lookup"><span data-stu-id="e7319-118">In the request body, supply an array of JSON objects with the id parameter mentioned in the table below.</span></span> 
 
 
-| <span data-ttu-id="97110-119">名前</span><span class="sxs-lookup"><span data-stu-id="97110-119">Name</span></span>                 | <span data-ttu-id="97110-120">値</span><span class="sxs-lookup"><span data-stu-id="97110-120">Value</span></span>  | <span data-ttu-id="97110-121">説明</span><span class="sxs-lookup"><span data-stu-id="97110-121">Description</span></span>                                                            |
+| <span data-ttu-id="e7319-119">名前</span><span class="sxs-lookup"><span data-stu-id="e7319-119">Name</span></span>                 | <span data-ttu-id="e7319-120">値</span><span class="sxs-lookup"><span data-stu-id="e7319-120">Value</span></span>  | <span data-ttu-id="e7319-121">説明</span><span class="sxs-lookup"><span data-stu-id="e7319-121">Description</span></span>                                                            |
 |:---------------------|:-------|:-----------------------------------------------------------------------|
-|   <span data-ttu-id="97110-122">id</span><span class="sxs-lookup"><span data-stu-id="97110-122">id</span></span>                 | <span data-ttu-id="97110-123">string</span><span class="sxs-lookup"><span data-stu-id="97110-123">string</span></span> | <span data-ttu-id="97110-124">アイテムの[一意の識別子](../resources/site.md#id-property)。</span><span class="sxs-lookup"><span data-stu-id="97110-124">The [unique identifier](../resources/site.md#id-property) of the item.</span></span> |
+|   <span data-ttu-id="e7319-122">id</span><span class="sxs-lookup"><span data-stu-id="e7319-122">id</span></span>                 | <span data-ttu-id="e7319-123">string</span><span class="sxs-lookup"><span data-stu-id="e7319-123">string</span></span> | <span data-ttu-id="e7319-124">アイテムの[一意の識別子](../resources/site.md#id-property)。</span><span class="sxs-lookup"><span data-stu-id="e7319-124">The [unique identifier](../resources/site.md#id-property) of the item.</span></span> |
 
 
-## <a name="response"></a><span data-ttu-id="97110-125">応答</span><span class="sxs-lookup"><span data-stu-id="97110-125">Response</span></span> 
+## <a name="response"></a><span data-ttu-id="e7319-125">応答</span><span class="sxs-lookup"><span data-stu-id="e7319-125">Response</span></span> 
 
-* <span data-ttu-id="97110-126">要求が成功した場合、このメソッドは、フォローされたサイトの配列を返します。</span><span class="sxs-lookup"><span data-stu-id="97110-126">If the request is successful, this method returns an array of sites that were followed.</span></span>  
-* <span data-ttu-id="97110-127">指定したサイトのフォロー中にエラーが発生した場合、この`207`メソッドは状態コードを返し、応答本文には、フォローできないサイトを示す[Error](/graph/errors)オブジェクトと siteids を含むエントリの配列が含まれます。</span><span class="sxs-lookup"><span data-stu-id="97110-127">If an error occured while following any of the specified sites, this method returns a `207` status code and the response body will contain an array of entries containing [error](/graph/errors) objects and siteIds indicating which sites were unable to be followed.</span></span>
+* <span data-ttu-id="e7319-126">要求が成功した場合、このメソッドは、フォローされたサイトの配列を返します。</span><span class="sxs-lookup"><span data-stu-id="e7319-126">If the request is successful, this method returns an array of sites that were followed.</span></span>  
+* <span data-ttu-id="e7319-127">指定したサイトのフォロー中にエラーが発生した場合、この`207`メソッドは状態コードを返し、応答本文には、フォローできないサイトを示す[Error](/graph/errors)オブジェクトと siteids を含むエントリの配列が含まれます。</span><span class="sxs-lookup"><span data-stu-id="e7319-127">If an error occured while following any of the specified sites, this method returns a `207` status code and the response body will contain an array of entries containing [error](/graph/errors) objects and siteIds indicating which sites were unable to be followed.</span></span>
 
-## <a name="example"></a><span data-ttu-id="97110-128">例</span><span class="sxs-lookup"><span data-stu-id="97110-128">Example</span></span>
+## <a name="example"></a><span data-ttu-id="e7319-128">例</span><span class="sxs-lookup"><span data-stu-id="e7319-128">Example</span></span>
 
-<span data-ttu-id="97110-129">次の例は、複数のサイトをフォローする方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="97110-129">The following example shows how to follow multiple sites.</span></span> 
+<span data-ttu-id="e7319-129">次の例は、複数のサイトをフォローする方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="e7319-129">The following example shows how to follow multiple sites.</span></span> 
 
-### <a name="request"></a><span data-ttu-id="97110-130">要求</span><span class="sxs-lookup"><span data-stu-id="97110-130">Request</span></span>
+### <a name="request"></a><span data-ttu-id="e7319-130">要求</span><span class="sxs-lookup"><span data-stu-id="e7319-130">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="97110-131">プロトコル</span><span class="sxs-lookup"><span data-stu-id="97110-131">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="e7319-131">プロトコル</span><span class="sxs-lookup"><span data-stu-id="e7319-131">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "follow-site", "scopes": "sites.readwrite.all" } -->
 
 ```http
@@ -75,27 +75,23 @@ Content-Type: application/json
     ] 
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="97110-132">C#</span><span class="sxs-lookup"><span data-stu-id="97110-132">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="e7319-132">C#</span><span class="sxs-lookup"><span data-stu-id="e7319-132">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/follow-site-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="97110-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="97110-133">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e7319-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e7319-133">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/follow-site-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="97110-134">目的-C</span><span class="sxs-lookup"><span data-stu-id="97110-134">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="e7319-134">目的-C</span><span class="sxs-lookup"><span data-stu-id="e7319-134">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/follow-site-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="97110-135">Java</span><span class="sxs-lookup"><span data-stu-id="97110-135">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/follow-site-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### <a name="response"></a><span data-ttu-id="97110-136">応答</span><span class="sxs-lookup"><span data-stu-id="97110-136">Response</span></span>
+### <a name="response"></a><span data-ttu-id="e7319-135">応答</span><span class="sxs-lookup"><span data-stu-id="e7319-135">Response</span></span>
 
-<span data-ttu-id="97110-137">成功した場合、次の JSON 応答を返します。</span><span class="sxs-lookup"><span data-stu-id="97110-137">If successful, it returns the following JSON response.</span></span> 
+<span data-ttu-id="e7319-136">成功した場合、次の JSON 応答を返します。</span><span class="sxs-lookup"><span data-stu-id="e7319-136">If successful, it returns the following JSON response.</span></span> 
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
@@ -135,7 +131,7 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="97110-138">エラーが発生した場合は、次の JSON 応答を返します。</span><span class="sxs-lookup"><span data-stu-id="97110-138">If an error occured, it returns the following JSON response</span></span> 
+<span data-ttu-id="e7319-137">エラーが発生した場合は、次の JSON 応答を返します。</span><span class="sxs-lookup"><span data-stu-id="e7319-137">If an error occured, it returns the following JSON response</span></span> 
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 

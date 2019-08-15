@@ -5,57 +5,57 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 7306a49a239a39fc3560ae3f99760eb3434891a7
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d02a17677b5573431a1955b727a57877806d00ea
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36323025"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36419987"
 ---
-# <a name="create-grouplifecyclepolicy"></a><span data-ttu-id="946e1-103">Create groupLifecyclePolicy</span><span class="sxs-lookup"><span data-stu-id="946e1-103">Create groupLifecyclePolicy</span></span>
+# <a name="create-grouplifecyclepolicy"></a><span data-ttu-id="12e9f-103">Create groupLifecyclePolicy</span><span class="sxs-lookup"><span data-stu-id="12e9f-103">Create groupLifecyclePolicy</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="946e1-104">新しい [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) を作成します。</span><span class="sxs-lookup"><span data-stu-id="946e1-104">Creates a new [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md).</span></span>
+<span data-ttu-id="12e9f-104">新しい [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) を作成します。</span><span class="sxs-lookup"><span data-stu-id="12e9f-104">Creates a new [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="946e1-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="946e1-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="12e9f-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="12e9f-105">Permissions</span></span>
 
-<span data-ttu-id="946e1-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="946e1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="12e9f-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="12e9f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="946e1-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="946e1-108">Permission type</span></span>      | <span data-ttu-id="946e1-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="946e1-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="12e9f-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="12e9f-108">Permission type</span></span>      | <span data-ttu-id="12e9f-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="12e9f-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="946e1-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="946e1-110">Delegated (work or school account)</span></span> | <span data-ttu-id="946e1-111">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="946e1-111">Directory.ReadWrite.All</span></span>    |
-|<span data-ttu-id="946e1-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="946e1-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="946e1-113">サポートされていません</span><span class="sxs-lookup"><span data-stu-id="946e1-113">Not supported</span></span> |
-|<span data-ttu-id="946e1-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="946e1-114">Application</span></span> |  <span data-ttu-id="946e1-115">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="946e1-115">Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="12e9f-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="12e9f-110">Delegated (work or school account)</span></span> | <span data-ttu-id="12e9f-111">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="12e9f-111">Directory.ReadWrite.All</span></span>    |
+|<span data-ttu-id="12e9f-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="12e9f-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="12e9f-113">サポートされていません</span><span class="sxs-lookup"><span data-stu-id="12e9f-113">Not supported</span></span> |
+|<span data-ttu-id="12e9f-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="12e9f-114">Application</span></span> |  <span data-ttu-id="12e9f-115">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="12e9f-115">Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="946e1-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="946e1-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="12e9f-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="12e9f-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groupLifecyclePolicies
 
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="946e1-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="946e1-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="12e9f-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="12e9f-117">Request headers</span></span>
 
-| <span data-ttu-id="946e1-118">名前</span><span class="sxs-lookup"><span data-stu-id="946e1-118">Name</span></span> | <span data-ttu-id="946e1-119">説明</span><span class="sxs-lookup"><span data-stu-id="946e1-119">Description</span></span> |
+| <span data-ttu-id="12e9f-118">名前</span><span class="sxs-lookup"><span data-stu-id="12e9f-118">Name</span></span> | <span data-ttu-id="12e9f-119">説明</span><span class="sxs-lookup"><span data-stu-id="12e9f-119">Description</span></span> |
 |:---------------|:----------|
-| <span data-ttu-id="946e1-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="946e1-120">Authorization</span></span> | <span data-ttu-id="946e1-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="946e1-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="946e1-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="946e1-123">Content-Type</span></span>  | <span data-ttu-id="946e1-124">application/json</span><span class="sxs-lookup"><span data-stu-id="946e1-124">application/json</span></span> |
+| <span data-ttu-id="12e9f-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="12e9f-120">Authorization</span></span> | <span data-ttu-id="12e9f-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="12e9f-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="12e9f-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="12e9f-123">Content-Type</span></span>  | <span data-ttu-id="12e9f-124">application/json</span><span class="sxs-lookup"><span data-stu-id="12e9f-124">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="946e1-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="946e1-125">Request body</span></span>
-<span data-ttu-id="946e1-126">要求本文で、[groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="946e1-126">In the request body, supply a JSON representation of [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="12e9f-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="12e9f-125">Request body</span></span>
+<span data-ttu-id="12e9f-126">要求本文で、[groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="12e9f-126">In the request body, supply a JSON representation of [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="946e1-127">応答</span><span class="sxs-lookup"><span data-stu-id="946e1-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="12e9f-127">応答</span><span class="sxs-lookup"><span data-stu-id="12e9f-127">Response</span></span>
 
-<span data-ttu-id="946e1-128">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="946e1-128">If successful, this method returns `201 Created` response code and [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) object in the response body.</span></span>
+<span data-ttu-id="12e9f-128">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="12e9f-128">If successful, this method returns `201 Created` response code and [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="946e1-129">例</span><span class="sxs-lookup"><span data-stu-id="946e1-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="12e9f-129">例</span><span class="sxs-lookup"><span data-stu-id="12e9f-129">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="946e1-130">要求</span><span class="sxs-lookup"><span data-stu-id="946e1-130">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="12e9f-130">要求</span><span class="sxs-lookup"><span data-stu-id="12e9f-130">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="946e1-131">プロトコル</span><span class="sxs-lookup"><span data-stu-id="946e1-131">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="12e9f-131">プロトコル</span><span class="sxs-lookup"><span data-stu-id="12e9f-131">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_grouplifecyclepolicy_from_group"
@@ -71,28 +71,24 @@ Content-length: 125
   "alternateNotificationEmails": "admin@contoso.com"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="946e1-132">C#</span><span class="sxs-lookup"><span data-stu-id="946e1-132">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="12e9f-132">C#</span><span class="sxs-lookup"><span data-stu-id="12e9f-132">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-grouplifecyclepolicy-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="946e1-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="946e1-133">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="12e9f-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="12e9f-133">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-grouplifecyclepolicy-from-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="946e1-134">目的-C</span><span class="sxs-lookup"><span data-stu-id="946e1-134">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="12e9f-134">目的-C</span><span class="sxs-lookup"><span data-stu-id="12e9f-134">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-grouplifecyclepolicy-from-group-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="946e1-135">Java</span><span class="sxs-lookup"><span data-stu-id="946e1-135">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-grouplifecyclepolicy-from-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-<span data-ttu-id="946e1-136">要求本文で、[groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="946e1-136">In the request body, supply a JSON representation of [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="946e1-137">応答</span><span class="sxs-lookup"><span data-stu-id="946e1-137">Response</span></span>
+<span data-ttu-id="12e9f-135">要求本文で、[groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="12e9f-135">In the request body, supply a JSON representation of [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="12e9f-136">応答</span><span class="sxs-lookup"><span data-stu-id="12e9f-136">Response</span></span>
 
-<span data-ttu-id="946e1-p103">注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="946e1-p103">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="12e9f-p103">注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="12e9f-p103">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

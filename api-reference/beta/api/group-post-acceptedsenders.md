@@ -5,51 +5,51 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: dcbe32bf76e7a003048e36a9ab22c953eaaf736b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 827e6d12f8a237718993e49050cb7df2176b0637
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36323305"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36420666"
 ---
-# <a name="create-acceptedsender"></a><span data-ttu-id="ae597-103">AcceptedSender の作成</span><span class="sxs-lookup"><span data-stu-id="ae597-103">Create acceptedSender</span></span>
+# <a name="create-acceptedsender"></a><span data-ttu-id="7da4f-103">AcceptedSender の作成</span><span class="sxs-lookup"><span data-stu-id="7da4f-103">Create acceptedSender</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ae597-104">AcceptedSender リストに新しいユーザーやグループを追加します。</span><span class="sxs-lookup"><span data-stu-id="ae597-104">Add a new user or group to the acceptedSender list.</span></span>
+<span data-ttu-id="7da4f-104">AcceptedSender リストに新しいユーザーやグループを追加します。</span><span class="sxs-lookup"><span data-stu-id="7da4f-104">Add a new user or group to the acceptedSender list.</span></span>
 
-<span data-ttu-id="ae597-p101">`@odata.id` 内のユーザーやグループを要求の本文で指定します。承諾済み送信者リスト内のユーザーは、グループに会話を投稿できません。承認送信者と拒否送信者のリストに同一のユーザーやグループを指定すると、エラーになるので注意してください。</span><span class="sxs-lookup"><span data-stu-id="ae597-p101">Specify the user or group in `@odata.id` in the request body. Users in the accepted senders list can post to conversations of the group . Make sure you do not specify the same user or group in the accepted senders and rejected senders lists, otherwise you will get an error.</span></span>
+<span data-ttu-id="7da4f-p101">`@odata.id` 内のユーザーやグループを要求の本文で指定します。承諾済み送信者リスト内のユーザーは、グループに会話を投稿できません。承認送信者と拒否送信者のリストに同一のユーザーやグループを指定すると、エラーになるので注意してください。</span><span class="sxs-lookup"><span data-stu-id="7da4f-p101">Specify the user or group in `@odata.id` in the request body. Users in the accepted senders list can post to conversations of the group . Make sure you do not specify the same user or group in the accepted senders and rejected senders lists, otherwise you will get an error.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="ae597-108">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="ae597-108">Permissions</span></span>
-<span data-ttu-id="ae597-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ae597-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="7da4f-108">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="7da4f-108">Permissions</span></span>
+<span data-ttu-id="7da4f-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7da4f-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ae597-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="ae597-111">Permission type</span></span>      | <span data-ttu-id="ae597-112">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="ae597-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="7da4f-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="7da4f-111">Permission type</span></span>      | <span data-ttu-id="7da4f-112">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="7da4f-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ae597-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="ae597-113">Delegated (work or school account)</span></span> | <span data-ttu-id="ae597-114">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ae597-114">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="ae597-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="ae597-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ae597-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="ae597-116">Not supported.</span></span>    |
-|<span data-ttu-id="ae597-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="ae597-117">Application</span></span> | <span data-ttu-id="ae597-118">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="ae597-118">Not supported.</span></span> |
+|<span data-ttu-id="7da4f-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="7da4f-113">Delegated (work or school account)</span></span> | <span data-ttu-id="7da4f-114">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7da4f-114">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="7da4f-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="7da4f-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7da4f-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="7da4f-116">Not supported.</span></span>    |
+|<span data-ttu-id="7da4f-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="7da4f-117">Application</span></span> | <span data-ttu-id="7da4f-118">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="7da4f-118">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ae597-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="ae597-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7da4f-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="7da4f-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/acceptedSenders/$ref
 ```
-## <a name="request-headers"></a><span data-ttu-id="ae597-120">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="ae597-120">Request headers</span></span>
-| <span data-ttu-id="ae597-121">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="ae597-121">Header</span></span>       | <span data-ttu-id="ae597-122">値</span><span class="sxs-lookup"><span data-stu-id="ae597-122">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="7da4f-120">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="7da4f-120">Request headers</span></span>
+| <span data-ttu-id="7da4f-121">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="7da4f-121">Header</span></span>       | <span data-ttu-id="7da4f-122">値</span><span class="sxs-lookup"><span data-stu-id="7da4f-122">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="ae597-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="ae597-123">Authorization</span></span>  | <span data-ttu-id="ae597-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="ae597-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="7da4f-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="7da4f-123">Authorization</span></span>  | <span data-ttu-id="7da4f-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="7da4f-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="ae597-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="ae597-126">Request body</span></span>
-<span data-ttu-id="ae597-127">要求の本文で、ユーザーまたはグループのオブジェクトの id を指定します。</span><span class="sxs-lookup"><span data-stu-id="ae597-127">In the request body, supply the id of a user or group object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7da4f-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="7da4f-126">Request body</span></span>
+<span data-ttu-id="7da4f-127">要求の本文で、ユーザーまたはグループのオブジェクトの id を指定します。</span><span class="sxs-lookup"><span data-stu-id="7da4f-127">In the request body, supply the id of a user or group object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ae597-128">応答</span><span class="sxs-lookup"><span data-stu-id="ae597-128">Response</span></span>
-<span data-ttu-id="ae597-129">このメソッドは `204 No Content` 応答コードを返し、応答の本文は返しません。</span><span class="sxs-lookup"><span data-stu-id="ae597-129">This method returns `204 No Content` response code and no response body.</span></span>
+## <a name="response"></a><span data-ttu-id="7da4f-128">応答</span><span class="sxs-lookup"><span data-stu-id="7da4f-128">Response</span></span>
+<span data-ttu-id="7da4f-129">このメソッドは `204 No Content` 応答コードを返し、応答の本文は返しません。</span><span class="sxs-lookup"><span data-stu-id="7da4f-129">This method returns `204 No Content` response code and no response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ae597-130">例</span><span class="sxs-lookup"><span data-stu-id="ae597-130">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="ae597-131">要求</span><span class="sxs-lookup"><span data-stu-id="ae597-131">Request</span></span>
-<span data-ttu-id="ae597-132">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="ae597-132">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="7da4f-130">例</span><span class="sxs-lookup"><span data-stu-id="7da4f-130">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="7da4f-131">要求</span><span class="sxs-lookup"><span data-stu-id="7da4f-131">Request</span></span>
+<span data-ttu-id="7da4f-132">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="7da4f-132">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="ae597-133">プロトコル</span><span class="sxs-lookup"><span data-stu-id="ae597-133">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="7da4f-133">プロトコル</span><span class="sxs-lookup"><span data-stu-id="7da4f-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_acceptedsender"
@@ -63,27 +63,23 @@ Content-length: 30
   "@odata.id":"https://graph.microsoft.com/beta/users/alexd@contoso.com"
 }
 ```
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ae597-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ae597-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7da4f-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7da4f-134">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-acceptedsender-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="ae597-135">目的-C</span><span class="sxs-lookup"><span data-stu-id="ae597-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="7da4f-135">目的-C</span><span class="sxs-lookup"><span data-stu-id="7da4f-135">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-acceptedsender-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="ctabcsharp"></a>[<span data-ttu-id="ae597-136">C#</span><span class="sxs-lookup"><span data-stu-id="ae597-136">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="7da4f-136">C#</span><span class="sxs-lookup"><span data-stu-id="7da4f-136">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-acceptedsender-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="ae597-137">Java</span><span class="sxs-lookup"><span data-stu-id="ae597-137">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-acceptedsender-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="ae597-138">応答</span><span class="sxs-lookup"><span data-stu-id="ae597-138">Response</span></span>
-<span data-ttu-id="ae597-139">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="ae597-139">The following is an example of the response.</span></span>
+#### <a name="response"></a><span data-ttu-id="7da4f-137">応答</span><span class="sxs-lookup"><span data-stu-id="7da4f-137">Response</span></span>
+<span data-ttu-id="7da4f-138">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="7da4f-138">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

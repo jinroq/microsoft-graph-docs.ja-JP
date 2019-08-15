@@ -5,28 +5,28 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 0a1ac84469d43e1d43914ef6815c7cc6d32fe657
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d16b858822681d7ff77fc4cb0ab7db5f7b395642
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36349511"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36413651"
 ---
-# <a name="delete-photo"></a><span data-ttu-id="81d98-103">写真を削除する</span><span class="sxs-lookup"><span data-stu-id="81d98-103">Delete photo</span></span>
+# <a name="delete-photo"></a><span data-ttu-id="bbbed-103">写真を削除する</span><span class="sxs-lookup"><span data-stu-id="bbbed-103">Delete photo</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="81d98-104">写真を削除します。</span><span class="sxs-lookup"><span data-stu-id="81d98-104">Delete a photo.</span></span>
-## <a name="permissions"></a><span data-ttu-id="81d98-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="81d98-105">Permissions</span></span>
-<span data-ttu-id="81d98-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="81d98-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="bbbed-104">写真を削除します。</span><span class="sxs-lookup"><span data-stu-id="bbbed-104">Delete a photo.</span></span>
+## <a name="permissions"></a><span data-ttu-id="bbbed-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="bbbed-105">Permissions</span></span>
+<span data-ttu-id="bbbed-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="bbbed-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="81d98-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="81d98-108">Permission type</span></span>      | <span data-ttu-id="81d98-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="81d98-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="bbbed-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="bbbed-108">Permission type</span></span>      | <span data-ttu-id="bbbed-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="bbbed-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="81d98-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="81d98-110">Delegated (work or school account)</span></span> | <span data-ttu-id="81d98-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="81d98-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="81d98-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="81d98-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="81d98-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="81d98-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="81d98-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="81d98-114">Application</span></span> | <span data-ttu-id="81d98-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="81d98-115">Not supported.</span></span> |
+|<span data-ttu-id="bbbed-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="bbbed-110">Delegated (work or school account)</span></span> | <span data-ttu-id="bbbed-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="bbbed-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="bbbed-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="bbbed-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bbbed-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="bbbed-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="bbbed-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="bbbed-114">Application</span></span> | <span data-ttu-id="bbbed-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="bbbed-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="81d98-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="81d98-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="bbbed-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="bbbed-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /users/{id | userPrincipalName}/photo
@@ -34,24 +34,24 @@ DELETE /groups/{id}/photo
 DELETE /drive/root/createdByUser/photo
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="81d98-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="81d98-117">Request headers</span></span>
-| <span data-ttu-id="81d98-118">名前</span><span class="sxs-lookup"><span data-stu-id="81d98-118">Name</span></span>       | <span data-ttu-id="81d98-119">型</span><span class="sxs-lookup"><span data-stu-id="81d98-119">Type</span></span> | <span data-ttu-id="81d98-120">説明</span><span class="sxs-lookup"><span data-stu-id="81d98-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="bbbed-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="bbbed-117">Request headers</span></span>
+| <span data-ttu-id="bbbed-118">名前</span><span class="sxs-lookup"><span data-stu-id="bbbed-118">Name</span></span>       | <span data-ttu-id="bbbed-119">型</span><span class="sxs-lookup"><span data-stu-id="bbbed-119">Type</span></span> | <span data-ttu-id="bbbed-120">説明</span><span class="sxs-lookup"><span data-stu-id="bbbed-120">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="81d98-121">if-match</span><span class="sxs-lookup"><span data-stu-id="81d98-121">if-match</span></span>  | <span data-ttu-id="81d98-122">string</span><span class="sxs-lookup"><span data-stu-id="81d98-122">string</span></span>  | <span data-ttu-id="81d98-123">この要求ヘッダーが含まれていて、指定された eTag (または cTag) が項目の現在のタグに一致しない場合には、`412 Precondition Failed` 応答が返され、項目は削除されません。</span><span class="sxs-lookup"><span data-stu-id="81d98-123">If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.</span></span>|
-| <span data-ttu-id="81d98-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="81d98-124">Authorization</span></span>  | <span data-ttu-id="81d98-125">string</span><span class="sxs-lookup"><span data-stu-id="81d98-125">string</span></span>  | <span data-ttu-id="81d98-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="81d98-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="bbbed-121">if-match</span><span class="sxs-lookup"><span data-stu-id="bbbed-121">if-match</span></span>  | <span data-ttu-id="bbbed-122">string</span><span class="sxs-lookup"><span data-stu-id="bbbed-122">string</span></span>  | <span data-ttu-id="bbbed-123">この要求ヘッダーが含まれていて、指定された eTag (または cTag) が項目の現在のタグに一致しない場合には、`412 Precondition Failed` 応答が返され、項目は削除されません。</span><span class="sxs-lookup"><span data-stu-id="bbbed-123">If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.</span></span>|
+| <span data-ttu-id="bbbed-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="bbbed-124">Authorization</span></span>  | <span data-ttu-id="bbbed-125">string</span><span class="sxs-lookup"><span data-stu-id="bbbed-125">string</span></span>  | <span data-ttu-id="bbbed-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="bbbed-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="81d98-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="81d98-128">Request body</span></span>
-<span data-ttu-id="81d98-129">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="81d98-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="bbbed-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="bbbed-128">Request body</span></span>
+<span data-ttu-id="bbbed-129">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="bbbed-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="81d98-130">応答</span><span class="sxs-lookup"><span data-stu-id="81d98-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="bbbed-130">応答</span><span class="sxs-lookup"><span data-stu-id="bbbed-130">Response</span></span>
 
-<span data-ttu-id="81d98-p103">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="81d98-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="bbbed-p103">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="bbbed-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="81d98-133">例</span><span class="sxs-lookup"><span data-stu-id="81d98-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="81d98-134">要求</span><span class="sxs-lookup"><span data-stu-id="81d98-134">Request</span></span>
-<span data-ttu-id="81d98-135">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="81d98-135">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="bbbed-133">例</span><span class="sxs-lookup"><span data-stu-id="bbbed-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="bbbed-134">要求</span><span class="sxs-lookup"><span data-stu-id="bbbed-134">Request</span></span>
+<span data-ttu-id="bbbed-135">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="bbbed-135">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="81d98-136">プロトコル</span><span class="sxs-lookup"><span data-stu-id="81d98-136">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="bbbed-136">プロトコル</span><span class="sxs-lookup"><span data-stu-id="bbbed-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_photo"
@@ -59,26 +59,22 @@ DELETE /drive/root/createdByUser/photo
 ```http
 DELETE https://graph.microsoft.com/beta/users/{id|userPrincipalName}/photo
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="81d98-137">C#</span><span class="sxs-lookup"><span data-stu-id="81d98-137">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="bbbed-137">C#</span><span class="sxs-lookup"><span data-stu-id="bbbed-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-photo-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="81d98-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="81d98-138">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="bbbed-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="bbbed-138">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-photo-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="81d98-139">目的-C</span><span class="sxs-lookup"><span data-stu-id="81d98-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="bbbed-139">目的-C</span><span class="sxs-lookup"><span data-stu-id="bbbed-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-photo-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="81d98-140">Java</span><span class="sxs-lookup"><span data-stu-id="81d98-140">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-photo-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="81d98-141">応答</span><span class="sxs-lookup"><span data-stu-id="81d98-141">Response</span></span>
-<span data-ttu-id="81d98-142">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="81d98-142">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="bbbed-140">応答</span><span class="sxs-lookup"><span data-stu-id="bbbed-140">Response</span></span>
+<span data-ttu-id="bbbed-141">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="bbbed-141">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false
