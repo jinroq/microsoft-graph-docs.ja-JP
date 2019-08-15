@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5fb7e0643c8caad977ab99d3dbb4d669c73d8d69
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: af8d2c99d814c8a7b82e905e3fbbc7d5709bb9d6
+ms.sourcegitcommit: 3db93e28e215c0e09a65b4705ba956c6ac3b5426
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36026545"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "36396857"
 ---
 # <a name="update-user"></a>ユーザーを更新する
 
@@ -82,9 +82,14 @@ PATCH /users/{id | userPrincipalName}
 ## <a name="response"></a>応答
 
 成功した場合、このメソッドは `204 No Content` 応答コードを返します。
+
 ## <a name="example"></a>例
-##### <a name="request"></a>要求
-以下は、要求の例です。
+
+### <a name="example-1-update-properties-of-the-signed-in-user"></a>例 1: サインインしているユーザーのプロパティを更新する
+
+#### <a name="request"></a>要求
+
+次の例は要求を示しています。
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
@@ -94,21 +99,19 @@ PATCH /users/{id | userPrincipalName}
 ```http
 PATCH https://graph.microsoft.com/v1.0/me
 Content-type: application/json
-Content-length: 491
 
 {
-  "accountEnabled": true,
   "businessPhones": [
     "businessPhones-value"
   ],
-  "city": "city-value"
+  "officeLocation": "city-value"
 }
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-user-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -122,8 +125,62 @@ Content-length: 491
 
 ---
 
-##### <a name="response"></a>応答
-以下は、応答の例です。
+#### <a name="response"></a>応答
+次の例は応答を示しています。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+### <a name="example-2-update-properties-of-the-specified-user"></a>例 2: 指定したユーザーのプロパティを更新する
+
+#### <a name="request"></a>要求
+
+次の例は要求を示しています。
+
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "update_other_user"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/users/{id}
+Content-type: application/json
+
+{
+  "businessPhones": [
+    "businessPhones-value"
+  ],
+  "officeLocation": "city-value"
+}
+```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-other-user-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-other-user-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-other-user-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-other-user-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a>応答
+
+次の例は応答を示しています。
 <!-- {
   "blockType": "response",
   "truncated": true,
