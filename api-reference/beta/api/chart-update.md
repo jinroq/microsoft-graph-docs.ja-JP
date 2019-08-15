@@ -5,57 +5,57 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 539d6846e3ea8fcfc1eee363e486fea99561977d
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 7e733fbf1f9612bfdaf1d98cdc8d1aca049353cf
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36317310"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36418587"
 ---
-# <a name="update-chart"></a><span data-ttu-id="7feda-103">Update chart</span><span class="sxs-lookup"><span data-stu-id="7feda-103">Update chart</span></span>
+# <a name="update-chart"></a><span data-ttu-id="3be2c-103">Update chart</span><span class="sxs-lookup"><span data-stu-id="3be2c-103">Update chart</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="7feda-104">グラフ オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="7feda-104">Update the properties of chart object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="7feda-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="7feda-105">Permissions</span></span>
-<span data-ttu-id="7feda-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7feda-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="3be2c-104">グラフ オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="3be2c-104">Update the properties of chart object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="3be2c-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="3be2c-105">Permissions</span></span>
+<span data-ttu-id="3be2c-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="3be2c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="7feda-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="7feda-108">Permission type</span></span>      | <span data-ttu-id="7feda-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="7feda-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="3be2c-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="3be2c-108">Permission type</span></span>      | <span data-ttu-id="3be2c-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="3be2c-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="7feda-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="7feda-110">Delegated (work or school account)</span></span> | <span data-ttu-id="7feda-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7feda-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="7feda-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="7feda-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7feda-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7feda-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="7feda-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="7feda-114">Application</span></span> | <span data-ttu-id="7feda-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="7feda-115">Not supported.</span></span> |
+|<span data-ttu-id="3be2c-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="3be2c-110">Delegated (work or school account)</span></span> | <span data-ttu-id="3be2c-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="3be2c-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="3be2c-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="3be2c-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3be2c-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="3be2c-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="3be2c-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="3be2c-114">Application</span></span> | <span data-ttu-id="3be2c-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="3be2c-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="7feda-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="7feda-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3be2c-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="3be2c-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/worksheets/{id|name}/charts/{name}
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="7feda-117">オプションの要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="7feda-117">Optional request headers</span></span>
-| <span data-ttu-id="7feda-118">名前</span><span class="sxs-lookup"><span data-stu-id="7feda-118">Name</span></span>       | <span data-ttu-id="7feda-119">説明</span><span class="sxs-lookup"><span data-stu-id="7feda-119">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="3be2c-117">オプションの要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="3be2c-117">Optional request headers</span></span>
+| <span data-ttu-id="3be2c-118">名前</span><span class="sxs-lookup"><span data-stu-id="3be2c-118">Name</span></span>       | <span data-ttu-id="3be2c-119">説明</span><span class="sxs-lookup"><span data-stu-id="3be2c-119">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="7feda-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="7feda-120">Authorization</span></span>  | <span data-ttu-id="7feda-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="7feda-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="7feda-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="7feda-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="7feda-p103">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="7feda-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="3be2c-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="3be2c-120">Authorization</span></span>  | <span data-ttu-id="3be2c-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="3be2c-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="3be2c-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="3be2c-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="3be2c-p103">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="3be2c-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="7feda-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="7feda-126">Request body</span></span>
-<span data-ttu-id="7feda-p104">要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="7feda-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="3be2c-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="3be2c-126">Request body</span></span>
+<span data-ttu-id="3be2c-p104">要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="3be2c-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="7feda-130">プロパティ</span><span class="sxs-lookup"><span data-stu-id="7feda-130">Property</span></span>     | <span data-ttu-id="7feda-131">型</span><span class="sxs-lookup"><span data-stu-id="7feda-131">Type</span></span>   |<span data-ttu-id="7feda-132">説明</span><span class="sxs-lookup"><span data-stu-id="7feda-132">Description</span></span>|
+| <span data-ttu-id="3be2c-130">プロパティ</span><span class="sxs-lookup"><span data-stu-id="3be2c-130">Property</span></span>     | <span data-ttu-id="3be2c-131">型</span><span class="sxs-lookup"><span data-stu-id="3be2c-131">Type</span></span>   |<span data-ttu-id="3be2c-132">説明</span><span class="sxs-lookup"><span data-stu-id="3be2c-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="7feda-133">height</span><span class="sxs-lookup"><span data-stu-id="7feda-133">height</span></span>|<span data-ttu-id="7feda-134">double</span><span class="sxs-lookup"><span data-stu-id="7feda-134">double</span></span>|<span data-ttu-id="7feda-135">グラフ オブジェクトの高さをポイント単位で表します。</span><span class="sxs-lookup"><span data-stu-id="7feda-135">Represents the height, in points, of the chart object.</span></span>|
-|<span data-ttu-id="7feda-136">left</span><span class="sxs-lookup"><span data-stu-id="7feda-136">left</span></span>|<span data-ttu-id="7feda-137">double</span><span class="sxs-lookup"><span data-stu-id="7feda-137">double</span></span>|<span data-ttu-id="7feda-138">グラフの左側からワークシートの原点までの距離 (ポイント単位)。</span><span class="sxs-lookup"><span data-stu-id="7feda-138">The distance, in points, from the left side of the chart to the worksheet origin.</span></span>|
-|<span data-ttu-id="7feda-139">name</span><span class="sxs-lookup"><span data-stu-id="7feda-139">name</span></span>|<span data-ttu-id="7feda-140">string</span><span class="sxs-lookup"><span data-stu-id="7feda-140">string</span></span>|<span data-ttu-id="7feda-141">グラフ オブジェクトの名前を表します。</span><span class="sxs-lookup"><span data-stu-id="7feda-141">Represents the name of a chart object.</span></span>|
-|<span data-ttu-id="7feda-142">top</span><span class="sxs-lookup"><span data-stu-id="7feda-142">top</span></span>|<span data-ttu-id="7feda-143">double</span><span class="sxs-lookup"><span data-stu-id="7feda-143">double</span></span>|<span data-ttu-id="7feda-144">オブジェクトの上端から (ワークシートの) 1 行目の上部または (グラフの) グラフ領域の上部までの距離をポイント単位で表します。</span><span class="sxs-lookup"><span data-stu-id="7feda-144">Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).</span></span>|
-|<span data-ttu-id="7feda-145">width</span><span class="sxs-lookup"><span data-stu-id="7feda-145">width</span></span>|<span data-ttu-id="7feda-146">double</span><span class="sxs-lookup"><span data-stu-id="7feda-146">double</span></span>|<span data-ttu-id="7feda-147">グラフ オブジェクトの幅をポイント単位で表します。</span><span class="sxs-lookup"><span data-stu-id="7feda-147">Represents the width, in points, of the chart object.</span></span>|
+|<span data-ttu-id="3be2c-133">height</span><span class="sxs-lookup"><span data-stu-id="3be2c-133">height</span></span>|<span data-ttu-id="3be2c-134">double</span><span class="sxs-lookup"><span data-stu-id="3be2c-134">double</span></span>|<span data-ttu-id="3be2c-135">グラフ オブジェクトの高さをポイント単位で表します。</span><span class="sxs-lookup"><span data-stu-id="3be2c-135">Represents the height, in points, of the chart object.</span></span>|
+|<span data-ttu-id="3be2c-136">left</span><span class="sxs-lookup"><span data-stu-id="3be2c-136">left</span></span>|<span data-ttu-id="3be2c-137">double</span><span class="sxs-lookup"><span data-stu-id="3be2c-137">double</span></span>|<span data-ttu-id="3be2c-138">グラフの左側からワークシートの原点までの距離 (ポイント単位)。</span><span class="sxs-lookup"><span data-stu-id="3be2c-138">The distance, in points, from the left side of the chart to the worksheet origin.</span></span>|
+|<span data-ttu-id="3be2c-139">name</span><span class="sxs-lookup"><span data-stu-id="3be2c-139">name</span></span>|<span data-ttu-id="3be2c-140">string</span><span class="sxs-lookup"><span data-stu-id="3be2c-140">string</span></span>|<span data-ttu-id="3be2c-141">グラフ オブジェクトの名前を表します。</span><span class="sxs-lookup"><span data-stu-id="3be2c-141">Represents the name of a chart object.</span></span>|
+|<span data-ttu-id="3be2c-142">top</span><span class="sxs-lookup"><span data-stu-id="3be2c-142">top</span></span>|<span data-ttu-id="3be2c-143">double</span><span class="sxs-lookup"><span data-stu-id="3be2c-143">double</span></span>|<span data-ttu-id="3be2c-144">オブジェクトの上端から (ワークシートの) 1 行目の上部または (グラフの) グラフ領域の上部までの距離をポイント単位で表します。</span><span class="sxs-lookup"><span data-stu-id="3be2c-144">Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).</span></span>|
+|<span data-ttu-id="3be2c-145">width</span><span class="sxs-lookup"><span data-stu-id="3be2c-145">width</span></span>|<span data-ttu-id="3be2c-146">double</span><span class="sxs-lookup"><span data-stu-id="3be2c-146">double</span></span>|<span data-ttu-id="3be2c-147">グラフ オブジェクトの幅をポイント単位で表します。</span><span class="sxs-lookup"><span data-stu-id="3be2c-147">Represents the width, in points, of the chart object.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="7feda-148">応答</span><span class="sxs-lookup"><span data-stu-id="7feda-148">Response</span></span>
+## <a name="response"></a><span data-ttu-id="3be2c-148">応答</span><span class="sxs-lookup"><span data-stu-id="3be2c-148">Response</span></span>
 
-<span data-ttu-id="7feda-149">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で、更新された[workbookChart](../resources/workbookchart.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="7feda-149">If successful, this method returns a `200 OK` response code and updated [workbookChart](../resources/workbookchart.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="7feda-150">例</span><span class="sxs-lookup"><span data-stu-id="7feda-150">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="7feda-151">要求</span><span class="sxs-lookup"><span data-stu-id="7feda-151">Request</span></span>
-<span data-ttu-id="7feda-152">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="7feda-152">Here is an example of the request.</span></span>
+<span data-ttu-id="3be2c-149">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で、更新された[workbookChart](../resources/workbookchart.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="3be2c-149">If successful, this method returns a `200 OK` response code and updated [workbookChart](../resources/workbookchart.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="3be2c-150">例</span><span class="sxs-lookup"><span data-stu-id="3be2c-150">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="3be2c-151">要求</span><span class="sxs-lookup"><span data-stu-id="3be2c-151">Request</span></span>
+<span data-ttu-id="3be2c-152">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="3be2c-152">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="7feda-153">プロトコル</span><span class="sxs-lookup"><span data-stu-id="7feda-153">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="3be2c-153">プロトコル</span><span class="sxs-lookup"><span data-stu-id="3be2c-153">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_chart"
@@ -70,26 +70,22 @@ Content-length: 52
   "left": 99
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="7feda-154">C#</span><span class="sxs-lookup"><span data-stu-id="7feda-154">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="3be2c-154">C#</span><span class="sxs-lookup"><span data-stu-id="3be2c-154">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-chart-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7feda-155">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7feda-155">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="3be2c-155">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3be2c-155">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-chart-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="7feda-156">目的-C</span><span class="sxs-lookup"><span data-stu-id="7feda-156">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="3be2c-156">目的-C</span><span class="sxs-lookup"><span data-stu-id="3be2c-156">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-chart-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="7feda-157">Java</span><span class="sxs-lookup"><span data-stu-id="7feda-157">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-chart-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="7feda-158">応答</span><span class="sxs-lookup"><span data-stu-id="7feda-158">Response</span></span>
-<span data-ttu-id="7feda-p105">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="7feda-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="3be2c-157">応答</span><span class="sxs-lookup"><span data-stu-id="3be2c-157">Response</span></span>
+<span data-ttu-id="3be2c-p105">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="3be2c-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

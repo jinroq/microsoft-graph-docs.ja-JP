@@ -5,30 +5,30 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d312e09794ef5fc1afe0d6b69620492784683c38
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e34d79450468c19bc5e4f008547430e56dc6de96
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36342866"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36415184"
 ---
-# <a name="create-mailsearchfolder"></a><span data-ttu-id="d8b1b-103">MailSearchFolder を作成する</span><span class="sxs-lookup"><span data-stu-id="d8b1b-103">Create mailSearchFolder</span></span>
+# <a name="create-mailsearchfolder"></a><span data-ttu-id="b4980-103">MailSearchFolder を作成する</span><span class="sxs-lookup"><span data-stu-id="b4980-103">Create mailSearchFolder</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d8b1b-104">指定したユーザーのメールボックスに新しい[Mailsearchfolder](../resources/mailsearchfolder.md)を作成します。</span><span class="sxs-lookup"><span data-stu-id="d8b1b-104">Create a new [mailSearchFolder](../resources/mailsearchfolder.md) in the specified user's mailbox.</span></span>
+<span data-ttu-id="b4980-104">指定したユーザーのメールボックスに新しい[Mailsearchfolder](../resources/mailsearchfolder.md)を作成します。</span><span class="sxs-lookup"><span data-stu-id="b4980-104">Create a new [mailSearchFolder](../resources/mailsearchfolder.md) in the specified user's mailbox.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="d8b1b-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="d8b1b-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="b4980-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="b4980-105">Permissions</span></span>
 
-<span data-ttu-id="d8b1b-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d8b1b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="b4980-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4980-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="d8b1b-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="d8b1b-108">Permission type</span></span> | <span data-ttu-id="d8b1b-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="d8b1b-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="b4980-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="b4980-108">Permission type</span></span> | <span data-ttu-id="b4980-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="b4980-109">Permissions (from least to most privileged)</span></span> |
 |:----------------|:--------------------------------------------|
-|<span data-ttu-id="d8b1b-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="d8b1b-110">Delegated (work or school account)</span></span> | <span data-ttu-id="d8b1b-111">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d8b1b-111">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="d8b1b-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="d8b1b-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d8b1b-113">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d8b1b-113">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="d8b1b-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="d8b1b-114">Application</span></span> | <span data-ttu-id="d8b1b-115">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d8b1b-115">Mail.ReadWrite</span></span> |
+|<span data-ttu-id="b4980-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="b4980-110">Delegated (work or school account)</span></span> | <span data-ttu-id="b4980-111">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b4980-111">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="b4980-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="b4980-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b4980-113">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b4980-113">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="b4980-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="b4980-114">Application</span></span> | <span data-ttu-id="b4980-115">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b4980-115">Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="d8b1b-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="d8b1b-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b4980-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="b4980-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -37,38 +37,38 @@ POST /me/mailFolders/{id}/childFolders
 POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ```
 
-<span data-ttu-id="d8b1b-117">クエリの URL 内の親フォルダーをフォルダー ID または既知のフォルダー名として指定します。</span><span class="sxs-lookup"><span data-stu-id="d8b1b-117">Specify the parent folder in the query URL as a folder ID, or a well-known folder name.</span></span> <span data-ttu-id="d8b1b-118">サポートされている既知のフォルダー名の一覧については、「[mailFolder リソースの種類](../resources/mailfolder.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d8b1b-118">For a list of supported well-known folder names, see [mailFolder resource type](../resources/mailfolder.md).</span></span>
+<span data-ttu-id="b4980-117">クエリの URL 内の親フォルダーをフォルダー ID または既知のフォルダー名として指定します。</span><span class="sxs-lookup"><span data-stu-id="b4980-117">Specify the parent folder in the query URL as a folder ID, or a well-known folder name.</span></span> <span data-ttu-id="b4980-118">サポートされている既知のフォルダー名の一覧については、「[mailFolder リソースの種類](../resources/mailfolder.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4980-118">For a list of supported well-known folder names, see [mailFolder resource type](../resources/mailfolder.md).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="d8b1b-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="d8b1b-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="b4980-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b4980-119">Request headers</span></span>
 
-| <span data-ttu-id="d8b1b-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="d8b1b-120">Header</span></span> | <span data-ttu-id="d8b1b-121">値</span><span class="sxs-lookup"><span data-stu-id="d8b1b-121">Value</span></span> |
+| <span data-ttu-id="b4980-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b4980-120">Header</span></span> | <span data-ttu-id="b4980-121">値</span><span class="sxs-lookup"><span data-stu-id="b4980-121">Value</span></span> |
 |:-------|:------|
-| <span data-ttu-id="d8b1b-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="d8b1b-122">Authorization</span></span> | <span data-ttu-id="d8b1b-123">`Bearer {token}`.</span><span class="sxs-lookup"><span data-stu-id="d8b1b-123"></span></span> <span data-ttu-id="d8b1b-124">必須です。</span><span class="sxs-lookup"><span data-stu-id="d8b1b-124">Required.</span></span> |
-| <span data-ttu-id="d8b1b-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="d8b1b-125">Content-Type</span></span> | <span data-ttu-id="d8b1b-126">`application/json`.</span><span class="sxs-lookup"><span data-stu-id="d8b1b-126"></span></span> <span data-ttu-id="d8b1b-127">必須です。</span><span class="sxs-lookup"><span data-stu-id="d8b1b-127">Required.</span></span> |
+| <span data-ttu-id="b4980-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="b4980-122">Authorization</span></span> | <span data-ttu-id="b4980-123">`Bearer {token}`.</span><span class="sxs-lookup"><span data-stu-id="b4980-123"></span></span> <span data-ttu-id="b4980-124">必須です。</span><span class="sxs-lookup"><span data-stu-id="b4980-124">Required.</span></span> |
+| <span data-ttu-id="b4980-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="b4980-125">Content-Type</span></span> | <span data-ttu-id="b4980-126">`application/json`.</span><span class="sxs-lookup"><span data-stu-id="b4980-126"></span></span> <span data-ttu-id="b4980-127">必須です。</span><span class="sxs-lookup"><span data-stu-id="b4980-127">Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="d8b1b-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="d8b1b-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="b4980-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="b4980-128">Request body</span></span>
 
-<span data-ttu-id="d8b1b-129">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="d8b1b-129">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="b4980-129">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="b4980-129">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="d8b1b-130">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d8b1b-130">Parameter</span></span> | <span data-ttu-id="d8b1b-131">型</span><span class="sxs-lookup"><span data-stu-id="d8b1b-131">Type</span></span> | <span data-ttu-id="d8b1b-132">説明</span><span class="sxs-lookup"><span data-stu-id="d8b1b-132">Description</span></span> |
+| <span data-ttu-id="b4980-130">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4980-130">Parameter</span></span> | <span data-ttu-id="b4980-131">型</span><span class="sxs-lookup"><span data-stu-id="b4980-131">Type</span></span> | <span data-ttu-id="b4980-132">説明</span><span class="sxs-lookup"><span data-stu-id="b4980-132">Description</span></span> |
 |:----------|:-----|:------------|
-| <span data-ttu-id="d8b1b-133">@odata.type</span><span class="sxs-lookup"><span data-stu-id="d8b1b-133">@odata.type</span></span> | <span data-ttu-id="d8b1b-134">String</span><span class="sxs-lookup"><span data-stu-id="d8b1b-134">String</span></span> | <span data-ttu-id="d8b1b-135">作成するフォルダーの種類を指定します。</span><span class="sxs-lookup"><span data-stu-id="d8b1b-135">The type of folder to be created.</span></span> <span data-ttu-id="d8b1b-136">"..." フォルダーに設定します。</span><span class="sxs-lookup"><span data-stu-id="d8b1b-136">Set to "microsoft.graph.mailSearchFolder".</span></span> |
-| <span data-ttu-id="d8b1b-137">displayName</span><span class="sxs-lookup"><span data-stu-id="d8b1b-137">displayName</span></span> | <span data-ttu-id="d8b1b-138">String</span><span class="sxs-lookup"><span data-stu-id="d8b1b-138">String</span></span> | <span data-ttu-id="d8b1b-139">新しいフォルダーの表示名です。</span><span class="sxs-lookup"><span data-stu-id="d8b1b-139">The display name of the new folder.</span></span>|
-| <span data-ttu-id="d8b1b-140">includeNestedFolders</span><span class="sxs-lookup"><span data-stu-id="d8b1b-140">includeNestedFolders</span></span> | <span data-ttu-id="d8b1b-141">Boolean</span><span class="sxs-lookup"><span data-stu-id="d8b1b-141">Boolean</span></span> | <span data-ttu-id="d8b1b-142">検索でメールボックスフォルダー階層をスキャンする方法を示します。</span><span class="sxs-lookup"><span data-stu-id="d8b1b-142">Indicates how the mailbox folder hierarchy should be traversed in the search.</span></span> <span data-ttu-id="d8b1b-143">`true`**sourceFolderIds**で明示的に指定された各フォルダーの階層内に子フォルダーを含めるには、詳細検索を実行する必要があることを意味します。</span><span class="sxs-lookup"><span data-stu-id="d8b1b-143">`true` means that a deep search should be done to include child folders in the hierarchy of each folder explicitly specified in **sourceFolderIds**.</span></span> <span data-ttu-id="d8b1b-144">`false`は、 **sourceFolderIds**で明示的に指定された各フォルダーの浅い検索を意味します。</span><span class="sxs-lookup"><span data-stu-id="d8b1b-144">`false` means a shallow search of only each of the folders explicitly specified in **sourceFolderIds**.</span></span> |
-| <span data-ttu-id="d8b1b-145">sourceFolderIds</span><span class="sxs-lookup"><span data-stu-id="d8b1b-145">sourceFolderIds</span></span> | <span data-ttu-id="d8b1b-146">文字列コレクション</span><span class="sxs-lookup"><span data-stu-id="d8b1b-146">String collection</span></span> | <span data-ttu-id="d8b1b-147">マイニングするメールボックスフォルダー。</span><span class="sxs-lookup"><span data-stu-id="d8b1b-147">The mailbox folders that should be mined.</span></span> |
-| <span data-ttu-id="d8b1b-148">filterQuery</span><span class="sxs-lookup"><span data-stu-id="d8b1b-148">filterQuery</span></span> | <span data-ttu-id="d8b1b-149">String</span><span class="sxs-lookup"><span data-stu-id="d8b1b-149">String</span></span> | <span data-ttu-id="d8b1b-150">メッセージをフィルター処理するための OData クエリ。</span><span class="sxs-lookup"><span data-stu-id="d8b1b-150">The OData query to filter the messages.</span></span> |
+| <span data-ttu-id="b4980-133">@odata.type</span><span class="sxs-lookup"><span data-stu-id="b4980-133">@odata.type</span></span> | <span data-ttu-id="b4980-134">String</span><span class="sxs-lookup"><span data-stu-id="b4980-134">String</span></span> | <span data-ttu-id="b4980-135">作成するフォルダーの種類を指定します。</span><span class="sxs-lookup"><span data-stu-id="b4980-135">The type of folder to be created.</span></span> <span data-ttu-id="b4980-136">"..." フォルダーに設定します。</span><span class="sxs-lookup"><span data-stu-id="b4980-136">Set to "microsoft.graph.mailSearchFolder".</span></span> |
+| <span data-ttu-id="b4980-137">displayName</span><span class="sxs-lookup"><span data-stu-id="b4980-137">displayName</span></span> | <span data-ttu-id="b4980-138">String</span><span class="sxs-lookup"><span data-stu-id="b4980-138">String</span></span> | <span data-ttu-id="b4980-139">新しいフォルダーの表示名です。</span><span class="sxs-lookup"><span data-stu-id="b4980-139">The display name of the new folder.</span></span>|
+| <span data-ttu-id="b4980-140">includeNestedFolders</span><span class="sxs-lookup"><span data-stu-id="b4980-140">includeNestedFolders</span></span> | <span data-ttu-id="b4980-141">Boolean</span><span class="sxs-lookup"><span data-stu-id="b4980-141">Boolean</span></span> | <span data-ttu-id="b4980-142">検索でメールボックスフォルダー階層をスキャンする方法を示します。</span><span class="sxs-lookup"><span data-stu-id="b4980-142">Indicates how the mailbox folder hierarchy should be traversed in the search.</span></span> <span data-ttu-id="b4980-143">`true`**sourceFolderIds**で明示的に指定された各フォルダーの階層内に子フォルダーを含めるには、詳細検索を実行する必要があることを意味します。</span><span class="sxs-lookup"><span data-stu-id="b4980-143">`true` means that a deep search should be done to include child folders in the hierarchy of each folder explicitly specified in **sourceFolderIds**.</span></span> <span data-ttu-id="b4980-144">`false`は、 **sourceFolderIds**で明示的に指定された各フォルダーの浅い検索を意味します。</span><span class="sxs-lookup"><span data-stu-id="b4980-144">`false` means a shallow search of only each of the folders explicitly specified in **sourceFolderIds**.</span></span> |
+| <span data-ttu-id="b4980-145">sourceFolderIds</span><span class="sxs-lookup"><span data-stu-id="b4980-145">sourceFolderIds</span></span> | <span data-ttu-id="b4980-146">文字列コレクション</span><span class="sxs-lookup"><span data-stu-id="b4980-146">String collection</span></span> | <span data-ttu-id="b4980-147">マイニングするメールボックスフォルダー。</span><span class="sxs-lookup"><span data-stu-id="b4980-147">The mailbox folders that should be mined.</span></span> |
+| <span data-ttu-id="b4980-148">filterQuery</span><span class="sxs-lookup"><span data-stu-id="b4980-148">filterQuery</span></span> | <span data-ttu-id="b4980-149">String</span><span class="sxs-lookup"><span data-stu-id="b4980-149">String</span></span> | <span data-ttu-id="b4980-150">メッセージをフィルター処理するための OData クエリ。</span><span class="sxs-lookup"><span data-stu-id="b4980-150">The OData query to filter the messages.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="d8b1b-151">応答</span><span class="sxs-lookup"><span data-stu-id="d8b1b-151">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b4980-151">応答</span><span class="sxs-lookup"><span data-stu-id="b4980-151">Response</span></span>
 
-<span data-ttu-id="d8b1b-152">成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[mailsearchfolder](../resources/mailsearchfolder.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="d8b1b-152">If successful, this method returns a `201 Created` response code and a [mailSearchFolder](../resources/mailsearchfolder.md) object in the response body.</span></span>
+<span data-ttu-id="b4980-152">成功した場合、このメソッド`201 Created`は応答コードと、応答本文で[mailsearchfolder](../resources/mailsearchfolder.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="b4980-152">If successful, this method returns a `201 Created` response code and a [mailSearchFolder](../resources/mailsearchfolder.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d8b1b-153">例</span><span class="sxs-lookup"><span data-stu-id="d8b1b-153">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b4980-153">例</span><span class="sxs-lookup"><span data-stu-id="b4980-153">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="d8b1b-154">要求</span><span class="sxs-lookup"><span data-stu-id="d8b1b-154">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="b4980-154">要求</span><span class="sxs-lookup"><span data-stu-id="b4980-154">Request</span></span>
 
-<span data-ttu-id="d8b1b-155">要求の例を次に示します。件名に "weekly digest" という文字列が含まれているメッセージの検索フォルダーを作成します。</span><span class="sxs-lookup"><span data-stu-id="d8b1b-155">The following is an example of the request - it creates a search folder of messages that contain the string "weekly digest" in the subject.</span></span> <span data-ttu-id="d8b1b-156">検索フォルダーは、指定されたフィルタークエリが適用されるのと同じフォルダーにあります。</span><span class="sxs-lookup"><span data-stu-id="d8b1b-156">The search folder is under the same folder on which the specified filter query applies.</span></span>
+<span data-ttu-id="b4980-155">要求の例を次に示します。件名に "weekly digest" という文字列が含まれているメッセージの検索フォルダーを作成します。</span><span class="sxs-lookup"><span data-stu-id="b4980-155">The following is an example of the request - it creates a search folder of messages that contain the string "weekly digest" in the subject.</span></span> <span data-ttu-id="b4980-156">検索フォルダーは、指定されたフィルタークエリが適用されるのと同じフォルダーにあります。</span><span class="sxs-lookup"><span data-stu-id="b4980-156">The search folder is under the same folder on which the specified filter query applies.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="d8b1b-157">プロトコル</span><span class="sxs-lookup"><span data-stu-id="d8b1b-157">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="b4980-157">プロトコル</span><span class="sxs-lookup"><span data-stu-id="b4980-157">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AQMkADYAAAIBDAAAAA=="],
@@ -88,30 +88,26 @@ Content-length: 159
   "filterQuery": "contains(subject, 'weekly digest')"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="d8b1b-158">C#</span><span class="sxs-lookup"><span data-stu-id="d8b1b-158">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="b4980-158">C#</span><span class="sxs-lookup"><span data-stu-id="b4980-158">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-mailsearchfolder-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="d8b1b-159">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d8b1b-159">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b4980-159">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b4980-159">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-mailsearchfolder-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="d8b1b-160">目的-C</span><span class="sxs-lookup"><span data-stu-id="d8b1b-160">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="b4980-160">目的-C</span><span class="sxs-lookup"><span data-stu-id="b4980-160">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-mailsearchfolder-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="d8b1b-161">Java</span><span class="sxs-lookup"><span data-stu-id="d8b1b-161">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-mailsearchfolder-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="d8b1b-162">応答</span><span class="sxs-lookup"><span data-stu-id="d8b1b-162">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="b4980-161">応答</span><span class="sxs-lookup"><span data-stu-id="b4980-161">Response</span></span>
 
-<span data-ttu-id="d8b1b-163">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="d8b1b-163">The following is an example of the response.</span></span>
+<span data-ttu-id="b4980-162">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="b4980-162">The following is an example of the response.</span></span>
 
-><span data-ttu-id="d8b1b-164">**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。</span><span class="sxs-lookup"><span data-stu-id="d8b1b-164">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="d8b1b-165">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="d8b1b-165">All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="b4980-163">**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。</span><span class="sxs-lookup"><span data-stu-id="b4980-163">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="b4980-164">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="b4980-164">All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

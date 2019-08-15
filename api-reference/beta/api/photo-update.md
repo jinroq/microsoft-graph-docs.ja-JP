@@ -5,28 +5,28 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 56706073b37511929cd2f528c8e726d601cfffff
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 111521b59711815e3b447e296c3cfc425347cbd9
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36349506"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36413637"
 ---
-# <a name="update-photo"></a><span data-ttu-id="8ef65-103">写真を更新する</span><span class="sxs-lookup"><span data-stu-id="8ef65-103">Update photo</span></span>
+# <a name="update-photo"></a><span data-ttu-id="7d9bc-103">写真を更新する</span><span class="sxs-lookup"><span data-stu-id="7d9bc-103">Update photo</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="8ef65-104">写真オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="8ef65-104">Update the properties of photo object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="8ef65-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="8ef65-105">Permissions</span></span>
-<span data-ttu-id="8ef65-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8ef65-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="7d9bc-104">写真オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="7d9bc-104">Update the properties of photo object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="7d9bc-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="7d9bc-105">Permissions</span></span>
+<span data-ttu-id="7d9bc-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7d9bc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="8ef65-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="8ef65-108">Permission type</span></span>      | <span data-ttu-id="8ef65-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="8ef65-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="7d9bc-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="7d9bc-108">Permission type</span></span>      | <span data-ttu-id="7d9bc-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="7d9bc-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="8ef65-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="8ef65-110">Delegated (work or school account)</span></span> | <span data-ttu-id="8ef65-111">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="8ef65-111">Not supported.</span></span>    |
-|<span data-ttu-id="8ef65-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="8ef65-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8ef65-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="8ef65-113">Not supported.</span></span>    |
-|<span data-ttu-id="8ef65-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="8ef65-114">Application</span></span> | <span data-ttu-id="8ef65-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="8ef65-115">Not supported.</span></span> |
+|<span data-ttu-id="7d9bc-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="7d9bc-110">Delegated (work or school account)</span></span> | <span data-ttu-id="7d9bc-111">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="7d9bc-111">Not supported.</span></span>    |
+|<span data-ttu-id="7d9bc-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="7d9bc-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7d9bc-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="7d9bc-113">Not supported.</span></span>    |
+|<span data-ttu-id="7d9bc-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="7d9bc-114">Application</span></span> | <span data-ttu-id="7d9bc-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="7d9bc-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="8ef65-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="8ef65-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7d9bc-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="7d9bc-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /users/{id | userPrincipalName}/photo
@@ -34,25 +34,25 @@ PATCH /groups/{id}/photo
 PATCH /drive/root/createdByUser/photo
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="8ef65-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="8ef65-117">Request headers</span></span>
-| <span data-ttu-id="8ef65-118">名前</span><span class="sxs-lookup"><span data-stu-id="8ef65-118">Name</span></span>       | <span data-ttu-id="8ef65-119">型</span><span class="sxs-lookup"><span data-stu-id="8ef65-119">Type</span></span> | <span data-ttu-id="8ef65-120">説明</span><span class="sxs-lookup"><span data-stu-id="8ef65-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="7d9bc-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="7d9bc-117">Request headers</span></span>
+| <span data-ttu-id="7d9bc-118">名前</span><span class="sxs-lookup"><span data-stu-id="7d9bc-118">Name</span></span>       | <span data-ttu-id="7d9bc-119">型</span><span class="sxs-lookup"><span data-stu-id="7d9bc-119">Type</span></span> | <span data-ttu-id="7d9bc-120">説明</span><span class="sxs-lookup"><span data-stu-id="7d9bc-120">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="8ef65-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="8ef65-121">Authorization</span></span>  | <span data-ttu-id="8ef65-122">string</span><span class="sxs-lookup"><span data-stu-id="8ef65-122">string</span></span>  | <span data-ttu-id="8ef65-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="8ef65-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="7d9bc-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="7d9bc-121">Authorization</span></span>  | <span data-ttu-id="7d9bc-122">string</span><span class="sxs-lookup"><span data-stu-id="7d9bc-122">string</span></span>  | <span data-ttu-id="7d9bc-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="7d9bc-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="8ef65-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="8ef65-125">Request body</span></span>
-<span data-ttu-id="8ef65-p103">要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="8ef65-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7d9bc-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="7d9bc-125">Request body</span></span>
+<span data-ttu-id="7d9bc-p103">要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="7d9bc-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="8ef65-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="8ef65-129">Property</span></span>     | <span data-ttu-id="8ef65-130">型</span><span class="sxs-lookup"><span data-stu-id="8ef65-130">Type</span></span>   |<span data-ttu-id="8ef65-131">説明</span><span class="sxs-lookup"><span data-stu-id="8ef65-131">Description</span></span>|
+| <span data-ttu-id="7d9bc-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="7d9bc-129">Property</span></span>     | <span data-ttu-id="7d9bc-130">型</span><span class="sxs-lookup"><span data-stu-id="7d9bc-130">Type</span></span>   |<span data-ttu-id="7d9bc-131">説明</span><span class="sxs-lookup"><span data-stu-id="7d9bc-131">Description</span></span>|
 |:---------------|:--------|:----------|
 
-## <a name="response"></a><span data-ttu-id="8ef65-132">応答</span><span class="sxs-lookup"><span data-stu-id="8ef65-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7d9bc-132">応答</span><span class="sxs-lookup"><span data-stu-id="7d9bc-132">Response</span></span>
 
-<span data-ttu-id="8ef65-133">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された[写真](../resources/photo.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="8ef65-133">If successful, this method returns a `200 OK` response code and updated [photo](../resources/photo.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="8ef65-134">例</span><span class="sxs-lookup"><span data-stu-id="8ef65-134">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="8ef65-135">要求</span><span class="sxs-lookup"><span data-stu-id="8ef65-135">Request</span></span>
-<span data-ttu-id="8ef65-136">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="8ef65-136">Here is an example of the request.</span></span>
+<span data-ttu-id="7d9bc-133">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された[写真](../resources/photo.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="7d9bc-133">If successful, this method returns a `200 OK` response code and updated [photo](../resources/photo.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="7d9bc-134">例</span><span class="sxs-lookup"><span data-stu-id="7d9bc-134">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="7d9bc-135">要求</span><span class="sxs-lookup"><span data-stu-id="7d9bc-135">Request</span></span>
+<span data-ttu-id="7d9bc-136">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="7d9bc-136">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="8ef65-137">プロトコル</span><span class="sxs-lookup"><span data-stu-id="8ef65-137">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="7d9bc-137">プロトコル</span><span class="sxs-lookup"><span data-stu-id="7d9bc-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_photo"
@@ -68,26 +68,22 @@ Content-length: 53
   "id": "id-value"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="8ef65-138">C#</span><span class="sxs-lookup"><span data-stu-id="8ef65-138">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="7d9bc-138">C#</span><span class="sxs-lookup"><span data-stu-id="7d9bc-138">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-photo-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="8ef65-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8ef65-139">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7d9bc-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7d9bc-139">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-photo-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="8ef65-140">目的-C</span><span class="sxs-lookup"><span data-stu-id="8ef65-140">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="7d9bc-140">目的-C</span><span class="sxs-lookup"><span data-stu-id="7d9bc-140">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-photo-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="8ef65-141">Java</span><span class="sxs-lookup"><span data-stu-id="8ef65-141">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-photo-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="8ef65-142">応答</span><span class="sxs-lookup"><span data-stu-id="8ef65-142">Response</span></span>
-<span data-ttu-id="8ef65-143">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="8ef65-143">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="7d9bc-141">応答</span><span class="sxs-lookup"><span data-stu-id="7d9bc-141">Response</span></span>
+<span data-ttu-id="7d9bc-142">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="7d9bc-142">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,

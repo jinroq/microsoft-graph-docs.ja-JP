@@ -5,38 +5,38 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 507672f99022751c82a3b1ea4efd9b0bd2c4b4f0
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 258a1e483b362d6ee1add82f8f03c870a76c6195
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36342540"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36414449"
 ---
-# <a name="delete-open-extension"></a><span data-ttu-id="c921e-103">オープン拡張機能を削除する</span><span class="sxs-lookup"><span data-stu-id="c921e-103">Delete open extension</span></span>
+# <a name="delete-open-extension"></a><span data-ttu-id="7d91e-103">オープン拡張機能を削除する</span><span class="sxs-lookup"><span data-stu-id="7d91e-103">Delete open extension</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c921e-104">指定されたリソースのインスタンスからオープン拡張機能 ([openTypeExtension](../resources/opentypeextension.md) オブジェクト) を削除します。</span><span class="sxs-lookup"><span data-stu-id="c921e-104">Delete an open extension ([openTypeExtension](../resources/opentypeextension.md) object) from the specified instance of a resource.</span></span> 
+<span data-ttu-id="7d91e-104">指定されたリソースのインスタンスからオープン拡張機能 ([openTypeExtension](../resources/opentypeextension.md) オブジェクト) を削除します。</span><span class="sxs-lookup"><span data-stu-id="7d91e-104">Delete an open extension ([openTypeExtension](../resources/opentypeextension.md) object) from the specified instance of a resource.</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="c921e-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="c921e-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="7d91e-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="7d91e-105">Permissions</span></span>
 
-<span data-ttu-id="c921e-106">拡張機能を削除するリソースと、要求されたアクセス許可の種類 (委任またはアプリケーション) に応じて、次の表で指定されているアクセス許可は、この API を呼び出すために必要な最低限の特権です。</span><span class="sxs-lookup"><span data-stu-id="c921e-106">Depending on the resource you're deleting the extension from and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API.</span></span> <span data-ttu-id="c921e-107">アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c921e-107">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="7d91e-106">拡張機能を削除するリソースと、要求されたアクセス許可の種類 (委任またはアプリケーション) に応じて、次の表で指定されているアクセス許可は、この API を呼び出すために必要な最低限の特権です。</span><span class="sxs-lookup"><span data-stu-id="7d91e-106">Depending on the resource you're deleting the extension from and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API.</span></span> <span data-ttu-id="7d91e-107">アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7d91e-107">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="c921e-108">サポートされているリソース</span><span class="sxs-lookup"><span data-stu-id="c921e-108">Supported resource</span></span> | <span data-ttu-id="c921e-109">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="c921e-109">Delegated (work or school account)</span></span> | <span data-ttu-id="c921e-110">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="c921e-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c921e-111">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="c921e-111">Application</span></span> |
+| <span data-ttu-id="7d91e-108">サポートされているリソース</span><span class="sxs-lookup"><span data-stu-id="7d91e-108">Supported resource</span></span> | <span data-ttu-id="7d91e-109">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="7d91e-109">Delegated (work or school account)</span></span> | <span data-ttu-id="7d91e-110">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="7d91e-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7d91e-111">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="7d91e-111">Application</span></span> |
 |:-----|:-----|:-----|:-----|
-| [<span data-ttu-id="c921e-112">device</span><span class="sxs-lookup"><span data-stu-id="c921e-112">device</span></span>](../resources/device.md) | <span data-ttu-id="c921e-113">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="c921e-113">Directory.AccessAsUser.All</span></span> | <span data-ttu-id="c921e-114">サポートされていません</span><span class="sxs-lookup"><span data-stu-id="c921e-114">Not supported</span></span> | <span data-ttu-id="c921e-115">Device.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c921e-115">Device.ReadWrite.All</span></span> |
-| [<span data-ttu-id="c921e-116">イベント</span><span class="sxs-lookup"><span data-stu-id="c921e-116">event</span></span>](../resources/event.md) | <span data-ttu-id="c921e-117">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c921e-117">Calendars.ReadWrite</span></span> | <span data-ttu-id="c921e-118">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c921e-118">Calendars.ReadWrite</span></span> | <span data-ttu-id="c921e-119">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c921e-119">Calendars.ReadWrite</span></span> |
-| [<span data-ttu-id="c921e-120">グループ</span><span class="sxs-lookup"><span data-stu-id="c921e-120">group</span></span>](../resources/group.md) | <span data-ttu-id="c921e-121">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c921e-121">Group.ReadWrite.All</span></span> | <span data-ttu-id="c921e-122">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="c921e-122">Not supported</span></span> | <span data-ttu-id="c921e-123">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c921e-123">Group.ReadWrite.All</span></span> |
-| [<span data-ttu-id="c921e-124">グループ イベント</span><span class="sxs-lookup"><span data-stu-id="c921e-124">group event</span></span>](../resources/event.md) | <span data-ttu-id="c921e-125">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c921e-125">Group.ReadWrite.All</span></span> | <span data-ttu-id="c921e-126">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="c921e-126">Not supported</span></span> | <span data-ttu-id="c921e-127">非サポート</span><span class="sxs-lookup"><span data-stu-id="c921e-127">Not supported</span></span> |
-| [<span data-ttu-id="c921e-128">グループの投稿</span><span class="sxs-lookup"><span data-stu-id="c921e-128">group post</span></span>](../resources/post.md) | <span data-ttu-id="c921e-129">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c921e-129">Group.ReadWrite.All</span></span> | <span data-ttu-id="c921e-130">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="c921e-130">Not supported</span></span> | <span data-ttu-id="c921e-131">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c921e-131">Group.ReadWrite.All</span></span> |
-| [<span data-ttu-id="c921e-132">メッセージ</span><span class="sxs-lookup"><span data-stu-id="c921e-132">message</span></span>](../resources/message.md) | <span data-ttu-id="c921e-133">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c921e-133">Mail.ReadWrite</span></span> | <span data-ttu-id="c921e-134">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c921e-134">Mail.ReadWrite</span></span> | <span data-ttu-id="c921e-135">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c921e-135">Mail.ReadWrite</span></span> | 
-| [<span data-ttu-id="c921e-136">組織</span><span class="sxs-lookup"><span data-stu-id="c921e-136">organization</span></span>](../resources/organization.md) | <span data-ttu-id="c921e-137">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="c921e-137">Directory.AccessAsUser.All</span></span> | <span data-ttu-id="c921e-138">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c921e-138">Not supported</span></span> | <span data-ttu-id="c921e-139">非サポート</span><span class="sxs-lookup"><span data-stu-id="c921e-139">Not supported</span></span> |
-| [<span data-ttu-id="c921e-140">個人用連絡先</span><span class="sxs-lookup"><span data-stu-id="c921e-140">personal contact</span></span>](../resources/contact.md) | <span data-ttu-id="c921e-141">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c921e-141">Contacts.ReadWrite</span></span> | <span data-ttu-id="c921e-142">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c921e-142">Contacts.ReadWrite</span></span> | <span data-ttu-id="c921e-143">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c921e-143">Contacts.ReadWrite</span></span> |
-| [<span data-ttu-id="c921e-144">user</span><span class="sxs-lookup"><span data-stu-id="c921e-144">user</span></span>](../resources/user.md) | <span data-ttu-id="c921e-145">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c921e-145">User.ReadWrite.All</span></span> | <span data-ttu-id="c921e-146">User.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c921e-146">User.ReadWrite</span></span> | <span data-ttu-id="c921e-147">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c921e-147">User.ReadWrite.All</span></span> |
+| [<span data-ttu-id="7d91e-112">device</span><span class="sxs-lookup"><span data-stu-id="7d91e-112">device</span></span>](../resources/device.md) | <span data-ttu-id="7d91e-113">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="7d91e-113">Directory.AccessAsUser.All</span></span> | <span data-ttu-id="7d91e-114">サポートされていません</span><span class="sxs-lookup"><span data-stu-id="7d91e-114">Not supported</span></span> | <span data-ttu-id="7d91e-115">Device.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7d91e-115">Device.ReadWrite.All</span></span> |
+| [<span data-ttu-id="7d91e-116">イベント</span><span class="sxs-lookup"><span data-stu-id="7d91e-116">event</span></span>](../resources/event.md) | <span data-ttu-id="7d91e-117">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7d91e-117">Calendars.ReadWrite</span></span> | <span data-ttu-id="7d91e-118">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7d91e-118">Calendars.ReadWrite</span></span> | <span data-ttu-id="7d91e-119">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7d91e-119">Calendars.ReadWrite</span></span> |
+| [<span data-ttu-id="7d91e-120">グループ</span><span class="sxs-lookup"><span data-stu-id="7d91e-120">group</span></span>](../resources/group.md) | <span data-ttu-id="7d91e-121">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7d91e-121">Group.ReadWrite.All</span></span> | <span data-ttu-id="7d91e-122">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="7d91e-122">Not supported</span></span> | <span data-ttu-id="7d91e-123">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7d91e-123">Group.ReadWrite.All</span></span> |
+| [<span data-ttu-id="7d91e-124">グループ イベント</span><span class="sxs-lookup"><span data-stu-id="7d91e-124">group event</span></span>](../resources/event.md) | <span data-ttu-id="7d91e-125">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7d91e-125">Group.ReadWrite.All</span></span> | <span data-ttu-id="7d91e-126">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="7d91e-126">Not supported</span></span> | <span data-ttu-id="7d91e-127">非サポート</span><span class="sxs-lookup"><span data-stu-id="7d91e-127">Not supported</span></span> |
+| [<span data-ttu-id="7d91e-128">グループの投稿</span><span class="sxs-lookup"><span data-stu-id="7d91e-128">group post</span></span>](../resources/post.md) | <span data-ttu-id="7d91e-129">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7d91e-129">Group.ReadWrite.All</span></span> | <span data-ttu-id="7d91e-130">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="7d91e-130">Not supported</span></span> | <span data-ttu-id="7d91e-131">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7d91e-131">Group.ReadWrite.All</span></span> |
+| [<span data-ttu-id="7d91e-132">メッセージ</span><span class="sxs-lookup"><span data-stu-id="7d91e-132">message</span></span>](../resources/message.md) | <span data-ttu-id="7d91e-133">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7d91e-133">Mail.ReadWrite</span></span> | <span data-ttu-id="7d91e-134">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7d91e-134">Mail.ReadWrite</span></span> | <span data-ttu-id="7d91e-135">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7d91e-135">Mail.ReadWrite</span></span> | 
+| [<span data-ttu-id="7d91e-136">組織</span><span class="sxs-lookup"><span data-stu-id="7d91e-136">organization</span></span>](../resources/organization.md) | <span data-ttu-id="7d91e-137">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="7d91e-137">Directory.AccessAsUser.All</span></span> | <span data-ttu-id="7d91e-138">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="7d91e-138">Not supported</span></span> | <span data-ttu-id="7d91e-139">非サポート</span><span class="sxs-lookup"><span data-stu-id="7d91e-139">Not supported</span></span> |
+| [<span data-ttu-id="7d91e-140">個人用連絡先</span><span class="sxs-lookup"><span data-stu-id="7d91e-140">personal contact</span></span>](../resources/contact.md) | <span data-ttu-id="7d91e-141">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7d91e-141">Contacts.ReadWrite</span></span> | <span data-ttu-id="7d91e-142">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7d91e-142">Contacts.ReadWrite</span></span> | <span data-ttu-id="7d91e-143">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7d91e-143">Contacts.ReadWrite</span></span> |
+| [<span data-ttu-id="7d91e-144">user</span><span class="sxs-lookup"><span data-stu-id="7d91e-144">user</span></span>](../resources/user.md) | <span data-ttu-id="7d91e-145">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7d91e-145">User.ReadWrite.All</span></span> | <span data-ttu-id="7d91e-146">User.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7d91e-146">User.ReadWrite</span></span> | <span data-ttu-id="7d91e-147">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7d91e-147">User.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c921e-148">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="c921e-148">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7d91e-148">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="7d91e-148">HTTP request</span></span>
 
-<span data-ttu-id="c921e-149">要求で、リソース インスタンスを識別し、そのインスタンスの **extensions** ナビゲーション プロパティを使用して拡張機能を識別し、その拡張インスタンスで `DELETE` を行います。</span><span class="sxs-lookup"><span data-stu-id="c921e-149">In the request, identify the resource instance, use the **extensions** navigation property of that instance to identify the extension, and do a `DELETE` on that extension instance.</span></span>
+<span data-ttu-id="7d91e-149">要求で、リソース インスタンスを識別し、そのインスタンスの **extensions** ナビゲーション プロパティを使用して拡張機能を識別し、その拡張インスタンスで `DELETE` を行います。</span><span class="sxs-lookup"><span data-stu-id="7d91e-149">In the request, identify the resource instance, use the **extensions** navigation property of that instance to identify the extension, and do a `DELETE` on that extension instance.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -52,31 +52,31 @@ DELETE /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
 DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
 ```
 
-><span data-ttu-id="c921e-p102">**注:** 上記の構文は、拡張機能の削除元となるリソース インスタンスを特定する一般的な方法を示しています。こうしたリソース インスタンスを特定するために使用できる他の構文すべても、同様の方法でオープン拡張機能を削除できます。</span><span class="sxs-lookup"><span data-stu-id="c921e-p102">**Note:** The above syntax shows some common ways to identify a resource instance, in order to delete an extension from it. All other syntax that allows you to identify these resource instances supports deleting open extensions from them in a similar way.</span></span>
+><span data-ttu-id="7d91e-p102">**注:** 上記の構文は、拡張機能の削除元となるリソース インスタンスを特定する一般的な方法を示しています。こうしたリソース インスタンスを特定するために使用できる他の構文すべても、同様の方法でオープン拡張機能を削除できます。</span><span class="sxs-lookup"><span data-stu-id="7d91e-p102">**Note:** The above syntax shows some common ways to identify a resource instance, in order to delete an extension from it. All other syntax that allows you to identify these resource instances supports deleting open extensions from them in a similar way.</span></span>
 
-## <a name="path-parameters"></a><span data-ttu-id="c921e-152">パス パラメーター</span><span class="sxs-lookup"><span data-stu-id="c921e-152">Path parameters</span></span>
-|<span data-ttu-id="c921e-153">**パラメーター**</span><span class="sxs-lookup"><span data-stu-id="c921e-153">**Parameter**</span></span>|<span data-ttu-id="c921e-154">**型**</span><span class="sxs-lookup"><span data-stu-id="c921e-154">**Type**</span></span>|<span data-ttu-id="c921e-155">**説明**</span><span class="sxs-lookup"><span data-stu-id="c921e-155">**Description**</span></span>|
+## <a name="path-parameters"></a><span data-ttu-id="7d91e-152">パス パラメーター</span><span class="sxs-lookup"><span data-stu-id="7d91e-152">Path parameters</span></span>
+|<span data-ttu-id="7d91e-153">**パラメーター**</span><span class="sxs-lookup"><span data-stu-id="7d91e-153">**Parameter**</span></span>|<span data-ttu-id="7d91e-154">**型**</span><span class="sxs-lookup"><span data-stu-id="7d91e-154">**Type**</span></span>|<span data-ttu-id="7d91e-155">**説明**</span><span class="sxs-lookup"><span data-stu-id="7d91e-155">**Description**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="c921e-156">id</span><span class="sxs-lookup"><span data-stu-id="c921e-156">id</span></span>|<span data-ttu-id="c921e-157">string</span><span class="sxs-lookup"><span data-stu-id="c921e-157">string</span></span>|<span data-ttu-id="c921e-p103">対応するコレクションのインスタンスの一意識別子。必須。</span><span class="sxs-lookup"><span data-stu-id="c921e-p103">A unique identifier for an instance in the corresponding collection. Required.</span></span>|
-|<span data-ttu-id="c921e-160">extensionId</span><span class="sxs-lookup"><span data-stu-id="c921e-160">extensionId</span></span>|<span data-ttu-id="c921e-161">string</span><span class="sxs-lookup"><span data-stu-id="c921e-161">string</span></span>|<span data-ttu-id="c921e-p104">これは、拡張情報の一意のテキスト識別子である拡張情報名、または拡張情報の種類と一意のテキスト識別子を連結した完全修飾名になります。完全修飾名は、拡張情報を作成したときに、`id` プロパティで返されます。必須。</span><span class="sxs-lookup"><span data-stu-id="c921e-p104">This can be an extension name which is a unique text identifier for the extension, or a fully qualified name which concatenates the extension type and unique text identifier. The fully qualified name is returned in the `id` property when you create the extension. Required.</span></span>|
+|<span data-ttu-id="7d91e-156">id</span><span class="sxs-lookup"><span data-stu-id="7d91e-156">id</span></span>|<span data-ttu-id="7d91e-157">string</span><span class="sxs-lookup"><span data-stu-id="7d91e-157">string</span></span>|<span data-ttu-id="7d91e-p103">対応するコレクションのインスタンスの一意識別子。必須。</span><span class="sxs-lookup"><span data-stu-id="7d91e-p103">A unique identifier for an instance in the corresponding collection. Required.</span></span>|
+|<span data-ttu-id="7d91e-160">extensionId</span><span class="sxs-lookup"><span data-stu-id="7d91e-160">extensionId</span></span>|<span data-ttu-id="7d91e-161">string</span><span class="sxs-lookup"><span data-stu-id="7d91e-161">string</span></span>|<span data-ttu-id="7d91e-p104">これは、拡張情報の一意のテキスト識別子である拡張情報名、または拡張情報の種類と一意のテキスト識別子を連結した完全修飾名になります。完全修飾名は、拡張情報を作成したときに、`id` プロパティで返されます。必須。</span><span class="sxs-lookup"><span data-stu-id="7d91e-p104">This can be an extension name which is a unique text identifier for the extension, or a fully qualified name which concatenates the extension type and unique text identifier. The fully qualified name is returned in the `id` property when you create the extension. Required.</span></span>|
 
-## <a name="request-headers"></a><span data-ttu-id="c921e-165">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="c921e-165">Request headers</span></span>
-| <span data-ttu-id="c921e-166">名前</span><span class="sxs-lookup"><span data-stu-id="c921e-166">Name</span></span>       | <span data-ttu-id="c921e-167">値</span><span class="sxs-lookup"><span data-stu-id="c921e-167">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="7d91e-165">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="7d91e-165">Request headers</span></span>
+| <span data-ttu-id="7d91e-166">名前</span><span class="sxs-lookup"><span data-stu-id="7d91e-166">Name</span></span>       | <span data-ttu-id="7d91e-167">値</span><span class="sxs-lookup"><span data-stu-id="7d91e-167">Value</span></span> |
 |:---------------|:----------|
-| <span data-ttu-id="c921e-168">Authorization</span><span class="sxs-lookup"><span data-stu-id="c921e-168">Authorization</span></span> | <span data-ttu-id="c921e-p105">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="c921e-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="7d91e-168">Authorization</span><span class="sxs-lookup"><span data-stu-id="7d91e-168">Authorization</span></span> | <span data-ttu-id="7d91e-p105">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="7d91e-p105">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="c921e-171">要求本文</span><span class="sxs-lookup"><span data-stu-id="c921e-171">Request body</span></span>
-<span data-ttu-id="c921e-172">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="c921e-172">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7d91e-171">要求本文</span><span class="sxs-lookup"><span data-stu-id="7d91e-171">Request body</span></span>
+<span data-ttu-id="7d91e-172">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="7d91e-172">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c921e-173">応答</span><span class="sxs-lookup"><span data-stu-id="c921e-173">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7d91e-173">応答</span><span class="sxs-lookup"><span data-stu-id="7d91e-173">Response</span></span>
 
-<span data-ttu-id="c921e-p106">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="c921e-p106">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="7d91e-p106">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="7d91e-p106">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c921e-176">例</span><span class="sxs-lookup"><span data-stu-id="c921e-176">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="c921e-177">要求</span><span class="sxs-lookup"><span data-stu-id="c921e-177">Request</span></span>
-<span data-ttu-id="c921e-178">最初の例では、名前で拡張情報を参照し、指定されたメッセージの拡張情報を削除します。</span><span class="sxs-lookup"><span data-stu-id="c921e-178">The first example references an extension by its name and deletes the extension in the specified message.</span></span>
+## <a name="example"></a><span data-ttu-id="7d91e-176">例</span><span class="sxs-lookup"><span data-stu-id="7d91e-176">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="7d91e-177">要求</span><span class="sxs-lookup"><span data-stu-id="7d91e-177">Request</span></span>
+<span data-ttu-id="7d91e-178">最初の例では、名前で拡張情報を参照し、指定されたメッセージの拡張情報を削除します。</span><span class="sxs-lookup"><span data-stu-id="7d91e-178">The first example references an extension by its name and deletes the extension in the specified message.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="c921e-179">プロトコル</span><span class="sxs-lookup"><span data-stu-id="c921e-179">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="7d91e-179">プロトコル</span><span class="sxs-lookup"><span data-stu-id="7d91e-179">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_opentypeextension"
@@ -84,26 +84,22 @@ DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
 ```http
 DELETE https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions/Com.Contoso.Referral/
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="c921e-180">C#</span><span class="sxs-lookup"><span data-stu-id="c921e-180">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="7d91e-180">C#</span><span class="sxs-lookup"><span data-stu-id="7d91e-180">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-opentypeextension-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="c921e-181">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c921e-181">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7d91e-181">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7d91e-181">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-opentypeextension-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="c921e-182">目的-C</span><span class="sxs-lookup"><span data-stu-id="c921e-182">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="7d91e-182">目的-C</span><span class="sxs-lookup"><span data-stu-id="7d91e-182">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-opentypeextension-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="c921e-183">Java</span><span class="sxs-lookup"><span data-stu-id="c921e-183">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-opentypeextension-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-<span data-ttu-id="c921e-184">2 番目の例では、指定されたグループ イベントの拡張機能を削除します。</span><span class="sxs-lookup"><span data-stu-id="c921e-184">The second example deletes an extension in the specified group event.</span></span>
+<span data-ttu-id="7d91e-183">2 番目の例では、指定されたグループ イベントの拡張機能を削除します。</span><span class="sxs-lookup"><span data-stu-id="7d91e-183">The second example deletes an extension in the specified group event.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -112,8 +108,8 @@ DELETE https://graph.microsoft.com/beta/groups/f5480dfd-7d77-4d0b-ba2e-3391953cc
 
  
 
-##### <a name="response"></a><span data-ttu-id="c921e-185">応答</span><span class="sxs-lookup"><span data-stu-id="c921e-185">Response</span></span>
-<span data-ttu-id="c921e-186">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="c921e-186">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="7d91e-184">応答</span><span class="sxs-lookup"><span data-stu-id="7d91e-184">Response</span></span>
+<span data-ttu-id="7d91e-185">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="7d91e-185">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false
