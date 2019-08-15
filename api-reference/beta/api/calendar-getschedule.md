@@ -5,61 +5,61 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d152f88e2b29037bf6dcb54dbffebe4b29d8c4cd
-ms.sourcegitcommit: 3db93e28e215c0e09a65b4705ba956c6ac3b5426
+ms.openlocfilehash: c359935d7a18c4ff94b2f037b37d52c675a4708b
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "36396717"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36419147"
 ---
-# <a name="calendar-getschedule"></a><span data-ttu-id="4155d-103">calendar: getSchedule</span><span class="sxs-lookup"><span data-stu-id="4155d-103">calendar: getSchedule</span></span>
+# <a name="calendar-getschedule"></a><span data-ttu-id="ee86b-103">calendar: getSchedule</span><span class="sxs-lookup"><span data-stu-id="ee86b-103">calendar: getSchedule</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4155d-104">指定された期間のユーザー、配布リスト、またはリソース（部屋または備品）のコレクションの空き時間情報を取得します。</span><span class="sxs-lookup"><span data-stu-id="4155d-104">Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.</span></span>
+<span data-ttu-id="ee86b-104">指定された期間のユーザー、配布リスト、またはリソース（部屋または備品）のコレクションの空き時間情報を取得します。</span><span class="sxs-lookup"><span data-stu-id="ee86b-104">Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="4155d-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="4155d-105">Permissions</span></span>
-<span data-ttu-id="4155d-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4155d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="ee86b-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="ee86b-105">Permissions</span></span>
+<span data-ttu-id="ee86b-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ee86b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4155d-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="4155d-108">Permission type</span></span>      | <span data-ttu-id="4155d-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="4155d-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ee86b-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="ee86b-108">Permission type</span></span>      | <span data-ttu-id="ee86b-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="ee86b-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="4155d-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="4155d-110">Delegated (work or school account)</span></span> | <span data-ttu-id="4155d-111">Calendars.Read、Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4155d-111">Calendars.Read, Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="4155d-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="4155d-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4155d-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="4155d-113">Not supported.</span></span> |
-|<span data-ttu-id="4155d-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="4155d-114">Application</span></span> | <span data-ttu-id="4155d-115">Calendars.Read、Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4155d-115">Calendars.Read, Calendars.ReadWrite</span></span> |
+|<span data-ttu-id="ee86b-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="ee86b-110">Delegated (work or school account)</span></span> | <span data-ttu-id="ee86b-111">Calendars.Read、Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ee86b-111">Calendars.Read, Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="ee86b-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="ee86b-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ee86b-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="ee86b-113">Not supported.</span></span> |
+|<span data-ttu-id="ee86b-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="ee86b-114">Application</span></span> | <span data-ttu-id="ee86b-115">Calendars.Read、Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ee86b-115">Calendars.Read, Calendars.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="4155d-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="4155d-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ee86b-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="ee86b-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/calendar/getSchedule 
 POST /users/{id|userPrincipalName}/calendar/getSchedule
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="4155d-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="4155d-117">Request headers</span></span>
-| <span data-ttu-id="4155d-118">名前</span><span class="sxs-lookup"><span data-stu-id="4155d-118">Name</span></span>       | <span data-ttu-id="4155d-119">種類</span><span class="sxs-lookup"><span data-stu-id="4155d-119">Type</span></span> | <span data-ttu-id="4155d-120">説明</span><span class="sxs-lookup"><span data-stu-id="4155d-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="ee86b-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="ee86b-117">Request headers</span></span>
+| <span data-ttu-id="ee86b-118">名前</span><span class="sxs-lookup"><span data-stu-id="ee86b-118">Name</span></span>       | <span data-ttu-id="ee86b-119">種類</span><span class="sxs-lookup"><span data-stu-id="ee86b-119">Type</span></span> | <span data-ttu-id="ee86b-120">説明</span><span class="sxs-lookup"><span data-stu-id="ee86b-120">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="4155d-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="4155d-121">Authorization</span></span>  | <span data-ttu-id="4155d-122">string</span><span class="sxs-lookup"><span data-stu-id="4155d-122">string</span></span>  | <span data-ttu-id="4155d-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="4155d-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="4155d-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="4155d-125">Content-Type</span></span>  | <span data-ttu-id="4155d-126">string</span><span class="sxs-lookup"><span data-stu-id="4155d-126">string</span></span> | <span data-ttu-id="4155d-127">エンティティの本体内にあるデータの性質 (application/json)。</span><span class="sxs-lookup"><span data-stu-id="4155d-127">Nature of the data in the body of an entity, which is application/json.</span></span> <span data-ttu-id="4155d-128">必須。</span><span class="sxs-lookup"><span data-stu-id="4155d-128">Required.</span></span>  |
-| <span data-ttu-id="4155d-129">優先: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="4155d-129">Prefer: outlook.timezone</span></span> | <span data-ttu-id="4155d-130">string</span><span class="sxs-lookup"><span data-stu-id="4155d-130">string</span></span> | <span data-ttu-id="4155d-131">これを使用して、応答内の開始および終了時刻のタイム ゾーンを指定します。</span><span class="sxs-lookup"><span data-stu-id="4155d-131">Use this to specify the time zone for start and end times in the response.</span></span> <span data-ttu-id="4155d-132">指定しない場合、これらの時刻値は UTC で返されます。</span><span class="sxs-lookup"><span data-stu-id="4155d-132">If not specified, those time values are returned in UTC.</span></span> <span data-ttu-id="4155d-133">省略可能。</span><span class="sxs-lookup"><span data-stu-id="4155d-133">Optional.</span></span> |
+| <span data-ttu-id="ee86b-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="ee86b-121">Authorization</span></span>  | <span data-ttu-id="ee86b-122">string</span><span class="sxs-lookup"><span data-stu-id="ee86b-122">string</span></span>  | <span data-ttu-id="ee86b-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="ee86b-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="ee86b-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="ee86b-125">Content-Type</span></span>  | <span data-ttu-id="ee86b-126">string</span><span class="sxs-lookup"><span data-stu-id="ee86b-126">string</span></span> | <span data-ttu-id="ee86b-127">エンティティの本体内にあるデータの性質 (application/json)。</span><span class="sxs-lookup"><span data-stu-id="ee86b-127">Nature of the data in the body of an entity, which is application/json.</span></span> <span data-ttu-id="ee86b-128">必須。</span><span class="sxs-lookup"><span data-stu-id="ee86b-128">Required.</span></span>  |
+| <span data-ttu-id="ee86b-129">優先: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="ee86b-129">Prefer: outlook.timezone</span></span> | <span data-ttu-id="ee86b-130">string</span><span class="sxs-lookup"><span data-stu-id="ee86b-130">string</span></span> | <span data-ttu-id="ee86b-131">これを使用して、応答内の開始および終了時刻のタイム ゾーンを指定します。</span><span class="sxs-lookup"><span data-stu-id="ee86b-131">Use this to specify the time zone for start and end times in the response.</span></span> <span data-ttu-id="ee86b-132">指定しない場合、これらの時刻値は UTC で返されます。</span><span class="sxs-lookup"><span data-stu-id="ee86b-132">If not specified, those time values are returned in UTC.</span></span> <span data-ttu-id="ee86b-133">省略可能。</span><span class="sxs-lookup"><span data-stu-id="ee86b-133">Optional.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="4155d-134">要求本文</span><span class="sxs-lookup"><span data-stu-id="4155d-134">Request body</span></span>
-<span data-ttu-id="4155d-135">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="4155d-135">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ee86b-134">要求本文</span><span class="sxs-lookup"><span data-stu-id="ee86b-134">Request body</span></span>
+<span data-ttu-id="ee86b-135">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="ee86b-135">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="4155d-136">プロパティ</span><span class="sxs-lookup"><span data-stu-id="4155d-136">Property</span></span>     | <span data-ttu-id="4155d-137">型</span><span class="sxs-lookup"><span data-stu-id="4155d-137">Type</span></span>   |<span data-ttu-id="4155d-138">説明</span><span class="sxs-lookup"><span data-stu-id="4155d-138">Description</span></span>|
+| <span data-ttu-id="ee86b-136">プロパティ</span><span class="sxs-lookup"><span data-stu-id="ee86b-136">Property</span></span>     | <span data-ttu-id="ee86b-137">型</span><span class="sxs-lookup"><span data-stu-id="ee86b-137">Type</span></span>   |<span data-ttu-id="ee86b-138">説明</span><span class="sxs-lookup"><span data-stu-id="ee86b-138">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="4155d-139">availabilityViewInterval</span><span class="sxs-lookup"><span data-stu-id="4155d-139">availabilityViewInterval</span></span>|<span data-ttu-id="4155d-140">Int32</span><span class="sxs-lookup"><span data-stu-id="4155d-140">Int32</span></span>|<span data-ttu-id="4155d-141">応答内の **availabilityView** の時間帯の期間を表します。</span><span class="sxs-lookup"><span data-stu-id="4155d-141">Represents the duration of a time slot in an **availabilityView** in the response.</span></span> <span data-ttu-id="4155d-142">既定値は 30 分。最小値 6、最大値は 1440 です。</span><span class="sxs-lookup"><span data-stu-id="4155d-142">The default is 30 minutes, minimum is 6, maximum is 1440.</span></span> <span data-ttu-id="4155d-143">省略可能。</span><span class="sxs-lookup"><span data-stu-id="4155d-143">Optional.</span></span>|
-|<span data-ttu-id="4155d-144">endTime</span><span class="sxs-lookup"><span data-stu-id="4155d-144">endTime</span></span>|[<span data-ttu-id="4155d-145">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="4155d-145">dateTimeTimeZone</span></span>](../resources/datetimetimezone.md)|<span data-ttu-id="4155d-146">期間が終了する日付、時刻、タイムゾーン。</span><span class="sxs-lookup"><span data-stu-id="4155d-146">The date, time, and time zone that the period ends.</span></span>|
-|<span data-ttu-id="4155d-147">スケジュール</span><span class="sxs-lookup"><span data-stu-id="4155d-147">schedules</span></span>|<span data-ttu-id="4155d-148">String コレクション</span><span class="sxs-lookup"><span data-stu-id="4155d-148">String collection</span></span>|<span data-ttu-id="4155d-149">空き時間情報を取得する対象のユーザーの SMTP アドレス、配布リスト、またはリソースのコレクション。</span><span class="sxs-lookup"><span data-stu-id="4155d-149">A collection of SMTP addresses of users, distribution lists, or resources to get availability information for.</span></span>|
-|<span data-ttu-id="4155d-150">startTime</span><span class="sxs-lookup"><span data-stu-id="4155d-150">startTime</span></span>|[<span data-ttu-id="4155d-151">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="4155d-151">dateTimeTimeZone</span></span>](../resources/datetimetimezone.md)|<span data-ttu-id="4155d-152">期間が開始する日付、時刻、タイムゾーン。</span><span class="sxs-lookup"><span data-stu-id="4155d-152">The date, time, and time zone that the period starts.</span></span>|
+|<span data-ttu-id="ee86b-139">availabilityViewInterval</span><span class="sxs-lookup"><span data-stu-id="ee86b-139">availabilityViewInterval</span></span>|<span data-ttu-id="ee86b-140">Int32</span><span class="sxs-lookup"><span data-stu-id="ee86b-140">Int32</span></span>|<span data-ttu-id="ee86b-141">応答内の **availabilityView** の時間帯の期間を表します。</span><span class="sxs-lookup"><span data-stu-id="ee86b-141">Represents the duration of a time slot in an **availabilityView** in the response.</span></span> <span data-ttu-id="ee86b-142">既定値は 30 分。最小値 6、最大値は 1440 です。</span><span class="sxs-lookup"><span data-stu-id="ee86b-142">The default is 30 minutes, minimum is 6, maximum is 1440.</span></span> <span data-ttu-id="ee86b-143">省略可能。</span><span class="sxs-lookup"><span data-stu-id="ee86b-143">Optional.</span></span>|
+|<span data-ttu-id="ee86b-144">endTime</span><span class="sxs-lookup"><span data-stu-id="ee86b-144">endTime</span></span>|[<span data-ttu-id="ee86b-145">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="ee86b-145">dateTimeTimeZone</span></span>](../resources/datetimetimezone.md)|<span data-ttu-id="ee86b-146">期間が終了する日付、時刻、タイムゾーン。</span><span class="sxs-lookup"><span data-stu-id="ee86b-146">The date, time, and time zone that the period ends.</span></span>|
+|<span data-ttu-id="ee86b-147">スケジュール</span><span class="sxs-lookup"><span data-stu-id="ee86b-147">schedules</span></span>|<span data-ttu-id="ee86b-148">String コレクション</span><span class="sxs-lookup"><span data-stu-id="ee86b-148">String collection</span></span>|<span data-ttu-id="ee86b-149">空き時間情報を取得する対象のユーザーの SMTP アドレス、配布リスト、またはリソースのコレクション。</span><span class="sxs-lookup"><span data-stu-id="ee86b-149">A collection of SMTP addresses of users, distribution lists, or resources to get availability information for.</span></span>|
+|<span data-ttu-id="ee86b-150">startTime</span><span class="sxs-lookup"><span data-stu-id="ee86b-150">startTime</span></span>|[<span data-ttu-id="ee86b-151">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="ee86b-151">dateTimeTimeZone</span></span>](../resources/datetimetimezone.md)|<span data-ttu-id="ee86b-152">期間が開始する日付、時刻、タイムゾーン。</span><span class="sxs-lookup"><span data-stu-id="ee86b-152">The date, time, and time zone that the period starts.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="4155d-153">応答</span><span class="sxs-lookup"><span data-stu-id="4155d-153">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ee86b-153">応答</span><span class="sxs-lookup"><span data-stu-id="ee86b-153">Response</span></span>
 
-<span data-ttu-id="4155d-154">成功した場合、このメソッドは `200 OK` 応答コードと、`schedules` パラメーター内の各オブジェクトに対応する [scheduleInformation](../resources/scheduleinformation.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="4155d-154">If successful, this method returns a `200 OK` response code and a collection of [scheduleInformation](../resources/scheduleinformation.md) objects for each object in the `schedules` parameter.</span></span>
-## <a name="example"></a><span data-ttu-id="4155d-155">例</span><span class="sxs-lookup"><span data-stu-id="4155d-155">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="4155d-156">要求</span><span class="sxs-lookup"><span data-stu-id="4155d-156">Request</span></span>
-<span data-ttu-id="4155d-157">次の例では、指定した日時およびタイム ゾーンについて、2 人のユーザーの空き時間情報を取得します。</span><span class="sxs-lookup"><span data-stu-id="4155d-157">The following example gets the availability information for two users for the specified date, time, and time zone.</span></span>
+<span data-ttu-id="ee86b-154">成功した場合、このメソッドは `200 OK` 応答コードと、`schedules` パラメーター内の各オブジェクトに対応する [scheduleInformation](../resources/scheduleinformation.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="ee86b-154">If successful, this method returns a `200 OK` response code and a collection of [scheduleInformation](../resources/scheduleinformation.md) objects for each object in the `schedules` parameter.</span></span>
+## <a name="example"></a><span data-ttu-id="ee86b-155">例</span><span class="sxs-lookup"><span data-stu-id="ee86b-155">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="ee86b-156">要求</span><span class="sxs-lookup"><span data-stu-id="ee86b-156">Request</span></span>
+<span data-ttu-id="ee86b-157">次の例では、指定した日時およびタイム ゾーンについて、2 人のユーザーの空き時間情報を取得します。</span><span class="sxs-lookup"><span data-stu-id="ee86b-157">The following example gets the availability information for two users for the specified date, time, and time zone.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="4155d-158">HTTP</span><span class="sxs-lookup"><span data-stu-id="4155d-158">--Http</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="ee86b-158">HTTP</span><span class="sxs-lookup"><span data-stu-id="ee86b-158">--Http</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "calendar_getSchedule"
@@ -82,27 +82,23 @@ Content-Type: application/json
     "availabilityViewInterval": 60
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="4155d-159">C#</span><span class="sxs-lookup"><span data-stu-id="4155d-159">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="ee86b-159">C#</span><span class="sxs-lookup"><span data-stu-id="ee86b-159">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/calendar-getschedule-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="4155d-160">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4155d-160">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ee86b-160">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ee86b-160">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/calendar-getschedule-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="4155d-161">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4155d-161">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="ee86b-161">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ee86b-161">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/calendar-getschedule-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="4155d-162">Java</span><span class="sxs-lookup"><span data-stu-id="4155d-162">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/calendar-getschedule-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="4155d-163">応答</span><span class="sxs-lookup"><span data-stu-id="4155d-163">Response</span></span>
-<span data-ttu-id="4155d-p106">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="4155d-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="ee86b-162">応答</span><span class="sxs-lookup"><span data-stu-id="ee86b-162">Response</span></span>
+<span data-ttu-id="ee86b-p106">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="ee86b-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

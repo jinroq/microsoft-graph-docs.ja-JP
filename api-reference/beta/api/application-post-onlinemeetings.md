@@ -5,55 +5,55 @@ author: VinodRavichandran
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0cfe5702f49da97e8eb93f854f1c0a976b0aee62
-ms.sourcegitcommit: 3db93e28e215c0e09a65b4705ba956c6ac3b5426
+ms.openlocfilehash: fd21ebd579bf5bff48dc1b973b6f8b4b5e6b7c63
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "36396696"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36408320"
 ---
-# <a name="create-online-meeting"></a><span data-ttu-id="526b8-103">オンライン会議を作成する</span><span class="sxs-lookup"><span data-stu-id="526b8-103">Create online meeting</span></span>
+# <a name="create-online-meeting"></a><span data-ttu-id="916a1-103">オンライン会議を作成する</span><span class="sxs-lookup"><span data-stu-id="916a1-103">Create online meeting</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="526b8-104">要求本文で指定されたユーザーのためにオンライン会議を作成します。</span><span class="sxs-lookup"><span data-stu-id="526b8-104">Creates an online meeting on behalf of a user specified in the request body.</span></span>
+<span data-ttu-id="916a1-104">要求本文で指定されたユーザーのためにオンライン会議を作成します。</span><span class="sxs-lookup"><span data-stu-id="916a1-104">Creates an online meeting on behalf of a user specified in the request body.</span></span>
 
-> <span data-ttu-id="526b8-105">**注**: ユーザーの予定表に、会議が表示されません。</span><span class="sxs-lookup"><span data-stu-id="526b8-105">**Note**: The meeting does not show on the user's calendar.</span></span>
+> <span data-ttu-id="916a1-105">**注**: ユーザーの予定表に、会議が表示されません。</span><span class="sxs-lookup"><span data-stu-id="916a1-105">**Note**: The meeting does not show on the user's calendar.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="526b8-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="526b8-106">Permissions</span></span>
-<span data-ttu-id="526b8-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="526b8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="916a1-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="916a1-106">Permissions</span></span>
+<span data-ttu-id="916a1-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="916a1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="526b8-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="526b8-109">Permission type</span></span>                        | <span data-ttu-id="526b8-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="526b8-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="916a1-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="916a1-109">Permission type</span></span>                        | <span data-ttu-id="916a1-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="916a1-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="526b8-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="526b8-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="526b8-112">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="526b8-112">Not Supported</span></span>                               |
-| <span data-ttu-id="526b8-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="526b8-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="526b8-114">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="526b8-114">Not Supported</span></span>                               |
-| <span data-ttu-id="526b8-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="526b8-115">Application</span></span>                            | <span data-ttu-id="526b8-116">OnlineMeetings.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="526b8-116">OnlineMeetings.ReadWrite.All</span></span>                |
+| <span data-ttu-id="916a1-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="916a1-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="916a1-112">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="916a1-112">Not Supported</span></span>                               |
+| <span data-ttu-id="916a1-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="916a1-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="916a1-114">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="916a1-114">Not Supported</span></span>                               |
+| <span data-ttu-id="916a1-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="916a1-115">Application</span></span>                            | <span data-ttu-id="916a1-116">OnlineMeetings.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="916a1-116">OnlineMeetings.ReadWrite.All</span></span>                |
 
-## <a name="http-request"></a><span data-ttu-id="526b8-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="526b8-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="916a1-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="916a1-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/onlineMeetings
 POST /applications/{id}/onlineMeetings
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="526b8-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="526b8-118">Request headers</span></span>
-| <span data-ttu-id="526b8-119">名前</span><span class="sxs-lookup"><span data-stu-id="526b8-119">Name</span></span>          | <span data-ttu-id="526b8-120">説明</span><span class="sxs-lookup"><span data-stu-id="526b8-120">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="916a1-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="916a1-118">Request headers</span></span>
+| <span data-ttu-id="916a1-119">名前</span><span class="sxs-lookup"><span data-stu-id="916a1-119">Name</span></span>          | <span data-ttu-id="916a1-120">説明</span><span class="sxs-lookup"><span data-stu-id="916a1-120">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="526b8-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="526b8-121">Authorization</span></span> | <span data-ttu-id="526b8-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="526b8-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="916a1-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="916a1-121">Authorization</span></span> | <span data-ttu-id="916a1-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="916a1-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="526b8-124">要求本文</span><span class="sxs-lookup"><span data-stu-id="526b8-124">Request body</span></span>
-<span data-ttu-id="526b8-125">要求本文で、[onlineMeeting](../resources/onlinemeeting.md) オブジェクトの JSON 表現を提供します。</span><span class="sxs-lookup"><span data-stu-id="526b8-125">In the request body, supply a JSON representation of an [onlineMeeting](../resources/onlinemeeting.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="916a1-124">要求本文</span><span class="sxs-lookup"><span data-stu-id="916a1-124">Request body</span></span>
+<span data-ttu-id="916a1-125">要求本文で、[onlineMeeting](../resources/onlinemeeting.md) オブジェクトの JSON 表現を提供します。</span><span class="sxs-lookup"><span data-stu-id="916a1-125">In the request body, supply a JSON representation of an [onlineMeeting](../resources/onlinemeeting.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="526b8-126">応答</span><span class="sxs-lookup"><span data-stu-id="526b8-126">Response</span></span>
-<span data-ttu-id="526b8-127">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [onlineMeeting](../resources/onlinemeeting.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="526b8-127">If successful, this method returns `201 Created` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="916a1-126">応答</span><span class="sxs-lookup"><span data-stu-id="916a1-126">Response</span></span>
+<span data-ttu-id="916a1-127">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [onlineMeeting](../resources/onlinemeeting.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="916a1-127">If successful, this method returns `201 Created` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="526b8-128">例</span><span class="sxs-lookup"><span data-stu-id="526b8-128">Example</span></span>
+## <a name="example"></a><span data-ttu-id="916a1-128">例</span><span class="sxs-lookup"><span data-stu-id="916a1-128">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="526b8-129">要求</span><span class="sxs-lookup"><span data-stu-id="526b8-129">Request</span></span>
-<span data-ttu-id="526b8-130">次の例は要求を示しています。</span><span class="sxs-lookup"><span data-stu-id="526b8-130">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="916a1-129">要求</span><span class="sxs-lookup"><span data-stu-id="916a1-129">Request</span></span>
+<span data-ttu-id="916a1-130">次の例は要求を示しています。</span><span class="sxs-lookup"><span data-stu-id="916a1-130">The following example shows the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="526b8-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="526b8-131">--Http</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="916a1-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="916a1-131">--Http</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create-onlinemeeting-from-application"
@@ -77,30 +77,26 @@ Content-Length: 1553
   "subject": "subject-value"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="526b8-132">C#</span><span class="sxs-lookup"><span data-stu-id="526b8-132">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="916a1-132">C#</span><span class="sxs-lookup"><span data-stu-id="916a1-132">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-onlinemeeting-from-application-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="526b8-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="526b8-133">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="916a1-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="916a1-133">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-onlinemeeting-from-application-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="526b8-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="526b8-134">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="916a1-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="916a1-134">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-onlinemeeting-from-application-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="526b8-135">Java</span><span class="sxs-lookup"><span data-stu-id="526b8-135">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-onlinemeeting-from-application-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-<span data-ttu-id="526b8-136">要求本文で、[onlineMeeting](../resources/onlinemeeting.md) オブジェクトの JSON 表現を提供します。</span><span class="sxs-lookup"><span data-stu-id="526b8-136">In the request body, supply a JSON representation of the [onlineMeeting](../resources/onlinemeeting.md) object.</span></span>
+<span data-ttu-id="916a1-135">要求本文で、[onlineMeeting](../resources/onlinemeeting.md) オブジェクトの JSON 表現を提供します。</span><span class="sxs-lookup"><span data-stu-id="916a1-135">In the request body, supply a JSON representation of the [onlineMeeting](../resources/onlinemeeting.md) object.</span></span>
 
-##### <a name="response"></a><span data-ttu-id="526b8-137">応答</span><span class="sxs-lookup"><span data-stu-id="526b8-137">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="916a1-136">応答</span><span class="sxs-lookup"><span data-stu-id="916a1-136">Response</span></span>
 
-><span data-ttu-id="526b8-p103">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="526b8-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="916a1-p103">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="916a1-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
