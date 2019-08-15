@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1e380428dee107b79a96ddd5cfadd50979cf333b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 8248b1e5026d4bd9be561faa76e74e052cf9a3cb
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36322220"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36420834"
 ---
 # <a name="get-officeclientconfigurationassignment"></a>OfficeClientConfigurationAssignment を取得する
 
@@ -25,7 +25,7 @@ ms.locfileid: "36322220"
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
-|委任 (職場または学校のアカウント)|* * TODO: 範囲を決定します * *|
+|委任 (職場または学校のアカウント)|**TODO: スコープを決定する**|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|* * TODO: 範囲を決定します * *|
 
