@@ -403,11 +403,11 @@
             - name: 添付ファイル
               href: resources/attachment.md
               items:
-                - name: 添付ファイルのリソース
+                - name: 添付ファイルの種類
                   href: resources/fileattachment.md
-                - name: 項目の添付ファイルのリソース
+                - name: アイテムの添付ファイルの種類
                   href: resources/itemattachment.md
-                - name: 参照の添付ファイルのリソース
+                - name: 参照添付ファイルの種類
                   href: resources/referenceattachment.md
                 - name: 添付ファイルを取得する
                   href: api/attachment-get.md
@@ -620,11 +620,11 @@
             - name: 添付ファイル
               href: resources/attachment.md
               items:
-                - name: 添付ファイルのリソース
+                - name: 添付ファイルの種類
                   href: resources/fileattachment.md
-                - name: 項目の添付ファイルのリソース
+                - name: アイテムの添付ファイルの種類
                   href: resources/itemattachment.md
-                - name: 参照の添付ファイルのリソース
+                - name: 参照添付ファイルの種類
                   href: resources/referenceattachment.md
                 - name: 添付ファイルを取得する
                   href: api/attachment-get.md
@@ -3402,11 +3402,11 @@
             - name: 添付ファイル
               href: resources/attachment.md
               items:
-                - name: 添付ファイルのリソース
+                - name: 添付ファイルの種類
                   href: resources/fileattachment.md
-                - name: 項目の添付ファイルのリソース
+                - name: アイテムの添付ファイルの種類
                   href: resources/itemattachment.md
-                - name: 参照の添付ファイルのリソース
+                - name: 参照添付ファイルの種類
                   href: resources/referenceattachment.md
                 - name: 添付ファイルを取得する
                   href: api/attachment-get.md

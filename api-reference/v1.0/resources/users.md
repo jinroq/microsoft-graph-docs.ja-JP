@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: b0744662008b0b82167ce8779f478f260eedee57
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d171a247b980ef2f1b1d762df696699eae7a1890
+ms.sourcegitcommit: 00959f992b9b77c98ec1fe2f185cc7fd098ab24b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033489"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36426406"
 ---
 # <a name="working-with-users-in-microsoft-graph"></a>Microsoft Graph でのユーザーの操作
 
@@ -18,7 +18,7 @@ Microsoft Graph を使用し、ユーザー達、他のユーザーやグルー�
 
 Microsoft Graph を通じて、ふたつの方法で [ユーザー](user.md) にアクセスすることができます。
 
-- 彼らの ID で、`/users/{id | userPrincipalName}` 
+- 彼らの ID で、`/users/{id | userPrincipalName}`
 - `/users/{signed-in user's id}` と同じである、サインインしているユーザーの `/me` エイリアス使用して
 
 ## <a name="authorization"></a>承認
@@ -36,7 +36,7 @@ Microsoft Graph を通じて、ふたつの方法で [ユーザー](user.md) に
 
 ## <a name="common-properties"></a>共通プロパティ
 
-以下は、ユーザーまたはユーザーの一覧を取得するときに返されるプロパティの既定のセットを表します。 これらは、利用可能なすべてのプロパティのサブセットです。 より多くのユーザー プロパティを取得するには、`$select` クエリ パラメーターを使用します。 
+以下は、ユーザーまたはユーザーの一覧を取得するときに返されるプロパティの既定のセットを表します。 これらは、利用可能なすべてのプロパティのサブセットです。 より多くのユーザー プロパティを取得するには、`$select` クエリ パラメーターを使用します。
 
 |プロパティ |説明 |
 |:----------|:-------------|
@@ -51,8 +51,6 @@ Microsoft Graph を通じて、ふたつの方法で [ユーザー](user.md) に
 |preferredLanguage | ユーザーの選択言語。|
 |surname| ユーザーの姓。 |
 |userPrincipalName| ユーザーのプリンシパル名。 |
-
-<br/>
 
 詳細と全プロパティの一覧は、[ユーザー](user.md) オブジェクトを参照してください。
 

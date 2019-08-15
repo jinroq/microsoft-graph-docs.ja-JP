@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: a0a1959607e72397e24065a81b7d2362e05002ec
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4d405dcc5e7881c7a404e5ca16f87c889cd5ccc7
+ms.sourcegitcommit: 00959f992b9b77c98ec1fe2f185cc7fd098ab24b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007404"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36426413"
 ---
 # <a name="working-with-users-in-microsoft-graph"></a>Microsoft Graph でのユーザーの操作
 
@@ -20,10 +20,11 @@ Microsoft Graph を使用し、ユーザー達、他のユーザーやグルー�
 
 Microsoft Graph から 2 つの方法でユーザーにアクセスすることができます。
 
-- ユーザーの ID で、`/users/{id}` 
+- ユーザーの ID で、`/users/{id}`
 - `/users/{signed-in user's id}` と同じである、サインインしているユーザーの `/me` エイリアス使用して
 
 ## <a name="authorization"></a>承認
+
 ユーザー操作へのアクセスには、次のいずれかの [アクセス許可](https://developer.microsoft.com/graph/docs/authorization/permission_scopes) が必要です。最初の 3 つのアクセス許可は、ユーザーがアプリケーションに付与できます。残りは管理者のみがアプリケーションに付与できます。
 
 - User.ReadBasic.All
@@ -48,6 +49,7 @@ Microsoft Graph から 2 つの方法でユーザーにアクセスすること�
 詳細と全プロパティの一覧は、[user](user.md) オブジェクトを参照してください。
 
 ## <a name="common-operations"></a>共通の操作
+
 >**注:** これらの操作のいくつかは、追加のアクセス許可を必要とします。
 
 | パス    | 説明 |
